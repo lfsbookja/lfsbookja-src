@@ -93,7 +93,7 @@
     <xref linkend="kactivities"/>,
     <xref linkend="kde-baseapps"/>,
     <xref linkend="nepomuk-core"/>,
-    <xref linkend="libkexiv2"/> and
+    <xref linkend="libkexiv2"/>, and
     <xref linkend="libjpeg"/>
     </para>
 @y
@@ -102,7 +102,7 @@
     <xref linkend="kactivities"/>,
     <xref linkend="kde-baseapps"/>,
     <xref linkend="nepomuk-core"/>,
-    <xref linkend="libkexiv2"/>,
+    <xref linkend="libkexiv2"/>, and
     <xref linkend="libjpeg"/>
     </para>
 @z

@@ -4013,7 +4013,7 @@ $as_echo "found" >&6; }
   fi
 
 
-TARGETVER=20130824
+TARGETVER=20130829
 
 ORGDAY=`grep 'ENTITY day' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[^\"]*\"\([0-9]*\)\".*$/\1/'`
 ORGMONTH=`grep 'ENTITY month' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[^\"]*\"\([0-9]*\)\".*$/\1/'`

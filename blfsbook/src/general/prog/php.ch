@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY php-time          "2.8 SBU (additional 3.0 SBU to run the test suite)">
+  <!ENTITY php-time          "2.3 SBU (additional 2.9 SBU to run the test suite)">
 @y
-  <!ENTITY php-time          "2.8 SBU (テストスイート実行時は、さらに 3.0 SBU)">
+  <!ENTITY php-time          "2.3 SBU (テストスイート実行時は、さらに 2.9 SBU)">
 @z
 
 @x

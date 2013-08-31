@@ -120,9 +120,19 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      The check command must be run as the <systemitem
+      class="username">root</systemitem> user.  Also the tests are known to
+      hang if at least one partition on a hard drive is not set up as a Linux
+      LVM partition (type 8e00). To test the results, issue: <command>make
+      check</command> as the <systemitem class="username">root</systemitem>
+      user.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      The check command must be run as the <systemitem
+      class="username">root</systemitem> user.  Also the tests are known to
+      hang if at least one partition on a hard drive is not set up as a Linux
+      LVM partition (type 8e00). To test the results, issue: <command>make
+      check</command> as the <systemitem class="username">root</systemitem>
+      user.
 @z
 
 @x

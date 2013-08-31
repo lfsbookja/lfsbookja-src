@@ -85,15 +85,29 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="popt"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="popt"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="popt"/>,
-    <xref linkend="attr"/>,
-    <xref linkend="acl"/></para>
+    <para role="optional">
+      <xref linkend="attr"/> and
+      <xref linkend="acl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="popt"/>,
-    <xref linkend="attr"/>,
-    <xref linkend="acl"/></para>
+    <para role="optional">
+      <xref linkend="attr"/>,
+      <xref linkend="acl"/>
+    </para>
 @z
 
 @x

@@ -79,28 +79,28 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="phonon"/>,  
-    <xref linkend="attica"/>, 
-    <xref linkend="soprano"/>, 
-    <xref linkend="strigi"/>, 
-    <xref linkend="qca"/>, 
-    <xref linkend="libdbusmenu-qt"/>, 
-    <xref linkend="DocBook"/>, 
-    <xref linkend="docbook-xsl"/>, 
-    <xref linkend="shared-desktop-ontologies"/> and
+    <xref linkend="phonon"/>,
+    <xref linkend="attica"/>,
+    <xref linkend="soprano"/>,
+    <xref linkend="strigi"/>,
+    <xref linkend="qca"/>,
+    <xref linkend="libdbusmenu-qt"/>,
+    <xref linkend="DocBook"/>,
+    <xref linkend="docbook-xsl"/>,
+    <xref linkend="shared-desktop-ontologies"/>, and
     <xref linkend="shared-mime-info"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="phonon"/>,  
-    <xref linkend="attica"/>, 
-    <xref linkend="soprano"/>, 
-    <xref linkend="strigi"/>, 
-    <xref linkend="qca"/>, 
-    <xref linkend="libdbusmenu-qt"/>, 
-    <xref linkend="DocBook"/>, 
-    <xref linkend="docbook-xsl"/>, 
+    <xref linkend="phonon"/>,
+    <xref linkend="attica"/>,
+    <xref linkend="soprano"/>,
+    <xref linkend="strigi"/>,
+    <xref linkend="qca"/>,
+    <xref linkend="libdbusmenu-qt"/>,
+    <xref linkend="DocBook"/>,
+    <xref linkend="docbook-xsl"/>,
     <xref linkend="shared-desktop-ontologies"/>,
     <xref linkend="shared-mime-info"/>
     </para>
@@ -109,60 +109,60 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="polkit-qt"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="giflib"/>,
-    <xref linkend="upower"/>, and
-    <xref linkend="udisks"/> or <xref linkend="udisks2"/>
+      <xref linkend="polkit-qt"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="giflib"/>,
+      <xref linkend="upower"/>, and
+      <xref linkend="udisks"/> or <xref linkend="udisks2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="polkit-qt"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="giflib"/>,
-    <xref linkend="upower"/>,
-    <xref linkend="udisks"/> または <xref linkend="udisks2"/>
+      <xref linkend="polkit-qt"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="giflib"/>,
+      <xref linkend="upower"/>,
+      <xref linkend="udisks"/> または <xref linkend="udisks2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="jasper"/>, 
-    <xref linkend="pcre"/>, 
-    <xref linkend="avahi"/>, 
-    <xref linkend="openssl"/>, 
-    <xref linkend="acl"/>, 
-    <xref linkend="aspell"/>, 
-    <xref linkend="enchant"/>, 
-    <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>, 
-    <ulink url="http://www.gitorious.org/grantlee/pages/Home">Grantlee</ulink>, 
-    <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>, 
-    <ulink url="http://www.herqq.org/">HUPnP</ulink>, 
-    <xref linkend="mitkrb"/>,
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink> and
-    <ulink url="http://www.freedesktop.org/wiki/Software/media-player-info">media-player-info</ulink>
+      <xref linkend="jasper"/>,
+      <xref linkend="pcre"/>,
+      <xref linkend="avahi"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="acl"/>,
+      <xref linkend="aspell"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="grantlee"/>,
+      <xref linkend="mitkrb"/>,
+      <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
+      <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>,
+      <ulink url="http://www.herqq.org/">HUPnP</ulink>,
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
+      <ulink url="http://www.freedesktop.org/wiki/Software/media-player-info">media-player-info</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="jasper"/>, 
-    <xref linkend="pcre"/>, 
-    <xref linkend="avahi"/>, 
-    <xref linkend="openssl"/>, 
-    <xref linkend="acl"/>, 
-    <xref linkend="aspell"/>, 
-    <xref linkend="enchant"/>, 
-    <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>, 
-    <ulink url="http://www.gitorious.org/grantlee/pages/Home">Grantlee</ulink>, 
-    <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>, 
-    <ulink url="http://www.herqq.org/">HUPnP</ulink>, 
-    <xref linkend="mitkrb"/>,
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/media-player-info">media-player-info</ulink>
+      <xref linkend="jasper"/>,
+      <xref linkend="pcre"/>,
+      <xref linkend="avahi"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="acl"/>,
+      <xref linkend="aspell"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="grantlee"/>,
+      <xref linkend="mitkrb"/>,
+      <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
+      <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>,
+      <ulink url="http://www.herqq.org/">HUPnP</ulink>,
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
+      <ulink url="http://www.freedesktop.org/wiki/Software/media-player-info">media-player-info</ulink>
     </para>
 @z
 

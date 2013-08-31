@@ -78,42 +78,52 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="freetype2"/>,
-    <xref linkend="libpng"/>, and
-    <xref linkend="libjpeg"/></para>
+    <para role="required">
+      <xref linkend="freetype2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="freetype2"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libjpeg"/></para>
+    <para role="required">
+      <xref linkend="freetype2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="x-window-system"/></para>
+    <para role="recommended">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="libpng"/>, and
+      <xref linkend="libjpeg"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="x-window-system"/></para>
+    <para role="recommended">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="libjpeg"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libtiff"/>,
-    <xref linkend="giflib"/>, and
-    <ulink url="http://sourceforge.net/projects/mad">libid3tag</ulink></para>
+    <para role="optional">
+      <xref linkend="libtiff"/>,
+      <xref linkend="giflib"/>, and
+      <ulink url="http://sourceforge.net/projects/mad">libid3tag</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="libtiff"/>,
-    <xref linkend="giflib"/>,
-    <ulink url="http://sourceforge.net/projects/mad">libid3tag</ulink></para>
+    <para role="optional">
+      <xref linkend="libtiff"/>,
+      <xref linkend="giflib"/>,
+      <ulink url="http://sourceforge.net/projects/mad">libid3tag</ulink>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/imlib2"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/imlib2"/></para>
 @z
 
 @x

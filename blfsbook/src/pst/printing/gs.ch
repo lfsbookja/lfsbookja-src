@@ -15,14 +15,14 @@
 
 @x
   <!ENTITY gs-buildsize
-  "215 MB (includes installing libgs.so and both font tarballs)">
+  "189 MB (includes installing libgs.so, add 5 MB if the fonts are installed)">
   <!ENTITY gs-time
-  "3.3 SBU (includes building and installing libgs.so)">
+  "2.2 SBU (includes building and installing libgs.so)">
 @y
   <!ENTITY gs-buildsize
-  "215 MB (includes installing libgs.so and both font tarballs)">
+  "189 MB (includes installing libgs.so, add 5 MB if the fonts are installed)">
   <!ENTITY gs-time
-  "3.3 SBU (includes building and installing libgs.so)">
+  "2.2 SBU (includes building and installing libgs.so)">
 @z
 
 @x
@@ -34,10 +34,12 @@
 @x
     <para><application>Ghostscript</application> is a versatile processor
     for PostScript data with the ability to render PostScript to different
-    targets.</para>
+    targets. It used to be part of the cups printing stack, but is no longer
+    used for that.</para>
 @y
     <para>
     <application>Ghostscript</application> は、PostScrit データに対する万能なプロセッサーであり、PostScript をさまざまに異なる書式に変換する機能を提供します。
+    これは cups の印刷機能の一部として利用されてきましたが、現在は利用されていません。
     </para>
 @z
 
@@ -172,8 +174,7 @@
       <xref linkend="fontconfig"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="cups"/>,
-      <xref linkend="jasper"/>,
-      <xref linkend="lcms"/>,
+      <xref linkend="lcms"/> (not used by default, nor if lcms2 is present or found),
       <xref linkend="libidn"/>,
       <xref linkend="x-window-system"/> and
       <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>
@@ -185,8 +186,7 @@
       <xref linkend="fontconfig"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="cups"/>,
-      <xref linkend="jasper"/>,
-      <xref linkend="lcms"/>,
+      <xref linkend="lcms"/> (not used by default, nor if lcms2 is present or found),
       <xref linkend="libidn"/>,
       <xref linkend="x-window-system"/>,
       <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>
@@ -237,14 +237,12 @@
       If you have installed these dependencies on your system, remove the
       copies of <application>expat</application>,
       <application>freetype</application>, <application>lcms2</application>,
-      <application>libjpeg</application>, <application>libpng</application>,
-      and <application>libtiff</application>:
+      <application>libjpeg</application>, and <application>libpng</application>:
 @y
       If you have installed these dependencies on your system, remove the
       copies of <application>expat</application>,
       <application>freetype</application>, <application>lcms2</application>,
-      <application>libjpeg</application>, <application>libpng</application>,
-      and <application>libtiff</application>:
+      <application>libjpeg</application>, and <application>libpng</application>:
 @z
 
 @x
@@ -259,22 +257,6 @@
         the <application>Ghostscript</application> build system. You can work
         around that problem by simply running make again (eg,
         <command>make -j4 || make -j1</command>).
-@z
-
-@x
-        If you have installed Cups and your printer is <emphasis>not</emphasis>
-        a postscript printer you will need to add
-        <option>--with-install-cups</option> to the configure options below.
-        (This option makes Ghostscript compile and install the gstoraster filter
-        and the gstoraster.convs configuration file that allow Cups to convert a
-        PostScript file to raster.)
-@y
-        If you have installed Cups and your printer is <emphasis>not</emphasis>
-        a postscript printer you will need to add
-        <option>--with-install-cups</option> to the configure options below.
-        (This option makes Ghostscript compile and install the gstoraster filter
-        and the gstoraster.convs configuration file that allow Cups to convert a
-        PostScript file to raster.)
 @z
 
 @x
@@ -324,13 +306,13 @@
 @z
 
 @x
-    <para>Now install the documentation:</para>
+    <para>Now make the documentation accessible from the normal place:</para>
 @y
-    <para>Now install the documentation:</para>
+    <para>Now make the documentation accessible from the normal place:</para>
 @z
 
 @x
-      To finish the installation, unpack all fonts you've downloaded to
+      If you have downloaded any fonts, unpack them to
       <filename class="directory">/usr/share/ghostscript</filename> and ensure
       the ownerships of the files are
       <systemitem class="username">root</systemitem>:
@@ -338,7 +320,7 @@
       <replaceable>&lt;font-tarball&gt;</replaceable> appropriately in the
       command below for the fonts you wish to install:
 @y
-      To finish the installation, unpack all fonts you've downloaded to
+      If you have downloaded any fonts, unpack them to
       <filename class="directory">/usr/share/ghostscript</filename> and ensure
       the ownerships of the files are
       <systemitem class="username">root</systemitem>:
@@ -351,74 +333,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>rm -rf jasper lcms zlib</command>: The
-      <application>Ghostscript</application> build system defaults to using its
-      own version of <ulink url="http://www.openjpeg.org/">OpenJpeg</ulink> for
-      JPEG 2000 files <!-- I can't get it to compile using a system installed
-      version of openjpeg. It seems the ghostscript version has been heavily
-      modified... --> so jasper source can be removed. The default color
-      management system is now <application>lcms2</application> so the
-      <application>lcms</application> source is not needed.
-      <application>Zlib</application> was installed as part of LFS.
-@y
-      <command>rm -rf jasper lcms zlib</command>: The
-      <application>Ghostscript</application> build system defaults to using its
-      own version of <ulink url="http://www.openjpeg.org/">OpenJpeg</ulink> for
-      JPEG 2000 files <!-- I can't get it to compile using a system installed
-      version of openjpeg. It seems the ghostscript version has been heavily
-      modified... --> so jasper source can be removed. The default color
-      management system is now <application>lcms2</application> so the
-      <application>lcms</application> source is not needed.
-      <application>Zlib</application> was installed as part of LFS.
-@z
-
-@x
-      <option>--with-system-libtiff</option>: Remove this option if you've not
-      installed <xref linkend="libtiff"/>.
-@y
-      <option>--with-system-libtiff</option>: Remove this option if you've not
-      installed <xref linkend="libtiff"/>.
-@z
-
-@x
-      <parameter>LIBS=-lz</parameter>: Use the <envar>LIBS</envar> variable to
-      tell the linker (ld) to link against the system installed
-      <application>zlib</application>.
-@y
-      <parameter>LIBS=-lz</parameter>: Use the <envar>LIBS</envar> variable to
-      tell the linker (ld) to link against the system installed
-      <application>zlib</application>.
-@z
-
-@x
-      <command>install -v -m644 base/*.h...</command>: Some packages
-      (<application>ImageMagick</application> is one) need the
-      <application>Ghostscript</application> interface headers in place to link
-      to the shared library. These commands install the headers.
-@y
-      <command>install -v -m644 base/*.h...</command>: Some packages
-      (<application>ImageMagick</application> is one) need the
-      <application>Ghostscript</application> interface headers in place to link
-      to the shared library. These commands install the headers.
-@z
-
-@x
-      <command>ln -v -s ghostscript /usr/include/ps</command>: Some packages
-      expect to find the interface headers in an alternate location.
-@y
-      <command>ln -v -s ghostscript /usr/include/ps</command>: Some packages
-      expect to find the interface headers in an alternate location.
-@z
-
-@x
-      <command>ln -sfv ../ghostscript-&gs-version;/doc ...</command>: This puts
-      a symbolic link to the documentation where it is expected to be found.
-@y
-      <command>ln -sfv ../ghostscript-&gs-version;/doc ...</command>: This puts
-      a symbolic link to the documentation where it is expected to be found.
 @z
 
 @x
@@ -439,12 +353,15 @@
 
 @x
         <seg>
-          bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
+          bdftops, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
           gsc (from soinstall), gsdj, gsdj500, gslj, gslp, gsnd, gsx
-          (from soinstall), lprsetup.sh, pdf2dsc, pdf2ps, pdfopt,
+          (from soinstall), lprsetup.sh, pdf2dsc, pdf2ps,
           pf2afm, pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12,
           ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, pv.sh, unix-lpr.sh, and
           wftopfa
+          <!-- I don't see bdftops,fixmswrd.pl or pv.sh on my builds [ I don't
+          have any bdf tools from xorg ] but they are still referenced in
+          base/unixinst.mak -->
         </seg>
         <seg>libgs.so</seg>
         <seg>
@@ -455,12 +372,15 @@
         </seg>
 @y
         <seg>
-          bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
-          gsc (soinstall による), gsdj, gsdj500, gslj, gslp, gsnd, gsx
-          (soinstall による), lprsetup.sh, pdf2dsc, pdf2ps, pdfopt,
+          bdftops, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
+          gsc (soinstall より), gsdj, gsdj500, gslj, gslp, gsnd, gsx
+          (from soinstall), lprsetup.sh, pdf2dsc, pdf2ps,
           pf2afm, pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12,
           ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, pv.sh, unix-lpr.sh,
           wftopfa
+          <!-- I don't see bdftops,fixmswrd.pl or pv.sh on my builds [ I don't
+          have any bdf tools from xorg ] but they are still referenced in
+          base/unixinst.mak -->
         </seg>
         <seg>libgs.so</seg>
         <seg>

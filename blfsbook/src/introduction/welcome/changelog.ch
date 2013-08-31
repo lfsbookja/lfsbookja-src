@@ -42,6 +42,128 @@
 @z
 
 @x
+      <para>August 29th, 2013</para>
+@y
+      <para>2013/08/29</para>
+@z
+@x
+          <para>[bdubbs] - Update to raptor2-2.0.10.  Fixes
+          <ulink url="&blfs-ticket-root;4006">#4006</ulink>.</para>
+@y
+          <para>[bdubbs] - raptor2-2.0.10 へのアップデート。
+          <ulink url="&blfs-ticket-root;4006">#4006</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to sqlite-3.8.0.1.  Fixes
+          <ulink url="&blfs-ticket-root;4001">#4001</ulink>.</para>
+@y
+          <para>[bdubbs] - sqlite-3.8.0.1 へのアップデート。
+          <ulink url="&blfs-ticket-root;4001">#4001</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to reiserfsprogs-3.6.24.  Fixes
+          <ulink url="&blfs-ticket-root;4011">#4011</ulink>.</para>
+@y
+          <para>[bdubbs] - reiserfsprogs-3.6.24 へのアップデート。
+          <ulink url="&blfs-ticket-root;4011">#4011</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>August 28th, 2013</para>
+@y
+      <para>2013/08/28</para>
+@z
+@x
+          <para>[igor] - MesaLib-9.2.0 (thanks to Armin's patch).</para>
+@y
+          <para>[igor] - MesaLib-9.2.0 (パッチ提供してくれた Armin に感謝)</para>
+@z
+@x
+          <para>[ken] - note audacious dependencies for CD playing.</para>
+@y
+          <para>[ken] - audacious の依存パッケージにて CD 再生のためのコメントを追加。</para>
+@z
+
+@x
+      <para>August 27th, 2013</para>
+@y
+      <para>2013/08/27</para>
+@z
+@x
+          <para>[bdubbs] - Update to LVM2.2.02.100.  Fixes
+          <ulink url="&blfs-ticket-root;3975">#3975</ulink>.</para>
+@y
+          <para>[bdubbs] - LVM2.2.02.100 へのアップデート。
+          <ulink url="&blfs-ticket-root;3975">#3975</ulink> を Fix に。</para>
+@z
+@x
+          <para>[ken] - Update to rpcbind-0.2.1.  Fixes
+          <ulink url="&blfs-ticket-root;3987">#3987</ulink>.</para>
+@y
+          <para>[ken] - rpcbind-0.2.1 へのアップデート。
+          <ulink url="&blfs-ticket-root;3987">#3987</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>August 26th, 2013</para>
+@y
+      <para>2013/08/26</para>
+@z
+@x
+          <para>[ken] - Update to ghostscript-9.09.  Fixes
+          <ulink url="&blfs-ticket-root;3996">#3996</ulink>.</para>
+@y
+          <para>[ken] - ghostscript-9.09 へのアップデート。
+          <ulink url="&blfs-ticket-root;3996">#3996</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to samba-4.0.9.  Fixes
+          <ulink url="&blfs-ticket-root;3994">#3994</ulink>.</para>
+@y
+          <para>[bdubbs] - samba-4.0.9 へのアップデート。
+          <ulink url="&blfs-ticket-root;3994">#3994</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to php-5.5.3.  Fixes
+          <ulink url="&blfs-ticket-root;3983">#3983</ulink> (again).</para>
+@y
+          <para>[bdubbs] - php-5.5.3 へのアップデート。
+          <ulink url="&blfs-ticket-root;3983">#3983</ulink> (再度) を Fix に。</para>
+@z
+@x
+          <para>[ken] - Going Beyond BLFS : remove defunct link to PLD
+          and add a link to openSUSE factory.</para>
+@y
+          <para>[ken] - BLFS のその先 : PLD に対するリンクは削除し、openSUSE ファクトリへのリンクを追加。</para>
+@z
+
+@x
+      <para>August 25th, 2013</para>
+@y
+      <para>2013/08/25</para>
+@z
+@x
+          <para>[bdubbs] - Added grantlee-0.3.0.  It is now
+          a required dependency of kdepim.</para>
+@y
+          <para>[bdubbs] - grantlee-0.3.0 追加。kdepim の必須パッケージに。</para>
+@z
+@x
+          <para>[bdubbs] - Update to php-5.5.2.  Fixes
+          <ulink url="&blfs-ticket-root;3983">#3983</ulink>.</para>
+@y
+          <para>[bdubbs] - php-5.5.2 へのアップデート。
+          <ulink url="&blfs-ticket-root;3983">#3983</ulink> を Fix に。</para>
+@z
+@x
+          <para>[fernando] - Fix WebKitGTK+-1.10.2 to build with Bison 3.0;
+          more lfs7.4 tags.</para>
+@y
+          <para>[fernando] - WebKitGTK+-1.10.2 にて Bison 3.0 を用いたビルド手順として修正。
+          LFS 7.4 対応をさらに。</para>
+@z
+
+@x
       <para>August 24th, 2013</para>
 @y
       <para>2013/08/24</para>

@@ -187,6 +187,7 @@ CHANGE_FILES = \
 	add.ch              \
 	add-pkgs.ch         \
 	ark.ch              \
+	grantlee.ch         \
 	gwenview.ch         \
 	kate.ch             \
 	kmix.ch             \
@@ -396,6 +397,7 @@ ctie:
 add.xml:               $(BOOKdir)/$@ $(srcdir)/add.ch
 add-pkgs.xml:          $(BOOKdir)/$@ $(srcdir)/add-pkgs.ch
 ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
+grantlee.xml:          $(BOOKdir)/$@ $(srcdir)/grantlee.ch
 gwenview.xml:          $(BOOKdir)/$@ $(srcdir)/gwenview.ch
 kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
 kmix.xml:              $(BOOKdir)/$@ $(srcdir)/kmix.ch

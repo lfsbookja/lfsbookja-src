@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY sqlite-buildsize     "40 MB (includes optional documentation)">
+  <!ENTITY sqlite-buildsize     "31 MB (includes optional documentation)">
 @y
-  <!ENTITY sqlite-buildsize     "40 MB (任意のドキュメントを含む)">
+  <!ENTITY sqlite-buildsize     "31 MB (任意のドキュメントを含む)">
 @z
 
 @x

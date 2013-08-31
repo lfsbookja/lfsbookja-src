@@ -93,19 +93,19 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
     <xref linkend="kactivities"/>,
-    <xref linkend="freetype2"/>, 
-    <xref linkend="qimageblitz"/>, 
-    <xref linkend="libtiff"/>, 
-    <xref linkend="libjpeg"/> and
+    <xref linkend="freetype2"/>,
+    <xref linkend="qimageblitz"/>,
+    <xref linkend="libtiff"/>,
+    <xref linkend="libjpeg"/>, and
     <xref linkend="poppler"/> (required for PDF support)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
     <xref linkend="kactivities"/>,
-    <xref linkend="freetype2"/>, 
-    <xref linkend="qimageblitz"/>, 
-    <xref linkend="libtiff"/>, 
+    <xref linkend="freetype2"/>,
+    <xref linkend="qimageblitz"/>,
+    <xref linkend="libtiff"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="poppler"/> (PDF サポートに必要)
     </para>
@@ -127,22 +127,22 @@
     <para role="optional">
       <ulink url="https://projects.kde.org/projects/extragear/base/plasma-mobile">ActiveApp</ulink>
       (for developing applications for Plasma Active),
-      <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (for PostScript support), 
-      <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>, 
-      <ulink url="http://djvu.org/">DjVuLibre</ulink> and
+      <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (for PostScript support),
+      <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
+      <ulink url="http://djvu.org/">DjVuLibre</ulink>, and
       <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink>
-      
+
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="https://projects.kde.org/projects/extragear/base/plasma-mobile">ActiveApp</ulink>
       (Plasma Active のアプリケーション開発のため),
-      <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (PostScript サポートのため), 
-      <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>, 
+      <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (PostScript サポートのため),
+      <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
       <ulink url="http://djvu.org/">DjVuLibre</ulink>,
       <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink>
-      
+
     </para>
 @z
 

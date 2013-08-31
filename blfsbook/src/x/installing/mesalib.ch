@@ -155,27 +155,30 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="elfutils"/>,
       <xref linkend="libvdpau"/> (to build VDPAU drivers) and
       <xref linkend="llvm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="elfutils"/>,
       <xref linkend="libvdpau"/> (VDPAU ドライバーのビルド時),
       <xref linkend="llvm"/>
     </para>
 @z
 
 @x
-        The instructions below assume that <application>LLVM</application>
-        is installed. You will need to modify the instructions if you
-        choose not to install it. Please note that
-        <application>LLVM</application> is <emphasis>required</emphasis> for
-        Radeon 3D drivers.
+        The instructions below assume that <application>elfutils</application>
+        and <application>LLVM</application> are installed. You will
+        need to modify the instructions if you choose not to install them.
+        Please note that <application>elfutils</application> and
+        <application>LLVM</application> are <emphasis>required</emphasis>
+        for Radeon 3D drivers.
 @y
-        これ以降の手順は <application>LLVM</application> がインストールされていることを前提とします。
-        <application>LLVM</application> をインストールしていない場合には、実行手順を変える必要があります。
-        特に Radeon 3D ドライバーを利用する場合には <application>LLVM</application> が<emphasis>必須</emphasis>です。
+        これ以降の手順は <application>elfutils</application> と <application>LLVM</application> がインストールされていることを前提とします。
+        これらをインストールしていない場合には、実行手順を変える必要があります。
+        特に Radeon 3D ドライバーを利用する場合には <application>elfutils</application> と <application>LLVM</application> が<emphasis>必須</emphasis>です。
 @z
 
 @x
@@ -325,9 +328,9 @@
         </seg>
         <seg>
           libdricore&mesalib-version;.so, libEGL.so, libgbm.so, libglapi.so,
-          libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libllvmradeon&mesalib-version;.so, libOpenVG.so, libOSMesa.so and
-          libxatracker.so
+          libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so, libOpenVG.so,
+          libOSMesa.so, libxatracker.so, libXvMCnouveau.so, libXvMCr300.so,
+          libXvMCr600.so and libXvMCsoftpipe.so
         </seg>
         <seg>
           $XORG_PREFIX/include/EGL,
@@ -338,18 +341,19 @@
           $XORG_PREFIX/include/VG,
           $XORG_PREFIX/lib/dri,
           $XORG_PREFIX/lib/egl,
-          $XORG_PREFIX/lib/gallium-pipe and
-          $XORG_PREFIX/lib/gbm
+          $XORG_PREFIX/lib/gallium-pipe,
+          $XORG_PREFIX/lib/gbm and
+          $XORG_PREFIX/lib/vdpau
         </seg>
 @y
         <seg>
-          glxgears and glxinfo
+          glxgears, glxinfo
         </seg>
         <seg>
           libdricore&mesalib-version;.so, libEGL.so, libgbm.so, libglapi.so,
-          libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libllvmradeon&mesalib-version;.so, libOpenVG.so, libOSMesa.so and
-          libxatracker.so
+          libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so, libOpenVG.so,
+          libOSMesa.so, libxatracker.so, libXvMCnouveau.so, libXvMCr300.so,
+          libXvMCr600.so, libXvMCsoftpipe.so
         </seg>
         <seg>
           $XORG_PREFIX/include/EGL,
@@ -360,8 +364,9 @@
           $XORG_PREFIX/include/VG,
           $XORG_PREFIX/lib/dri,
           $XORG_PREFIX/lib/egl,
-          $XORG_PREFIX/lib/gallium-pipe and
-          $XORG_PREFIX/lib/gbm
+          $XORG_PREFIX/lib/gallium-pipe,
+          $XORG_PREFIX/lib/gbm,
+          $XORG_PREFIX/lib/vdpau
         </seg>
 @z
 
