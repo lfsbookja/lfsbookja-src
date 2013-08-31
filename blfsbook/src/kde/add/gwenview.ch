@@ -23,7 +23,7 @@
     <para>Gwenview is a fast and easy-to-use image viewer for KDE.</para>
 @y
     <para>
-    Gwenview is a fast and easy-to-use image viewer for KDE.
+    Gwenview は KDE における、高速で簡単なイメージビューアーです。
     </para>
 @z
 
@@ -102,7 +102,7 @@
     <xref linkend="kactivities"/>,
     <xref linkend="kde-baseapps"/>,
     <xref linkend="nepomuk-core"/>,
-    <xref linkend="libkexiv2"/>, and
+    <xref linkend="libkexiv2"/>,
     <xref linkend="libjpeg"/>
     </para>
 @z
@@ -119,7 +119,7 @@
     <para role="optional">
       <xref linkend="lcms2"/>,
       <ulink url="http://kde-apps.org/content/show.php/Kipi-Plugins?content=16061">
-      Kipi-Plugins</ulink> (a collection of image manipulation plugins)
+      Kipi-Plugins</ulink> (イメージ操作を行うプラグイン集)
     </para>
 @z
 
