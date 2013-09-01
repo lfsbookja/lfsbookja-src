@@ -48,6 +48,50 @@
 @z
 
 @x
+      <para>2013-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a patch and instructions about
+          how to generate and install a man page for tar.
+          Thanks to Igor for the patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tar において Man ページを生成するためのパッチとその説明を追加。
+          パッチを提供してくれた Igor に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-08-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a sed for glibc to revert an upstream
+          change that causes problems for some architectures.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Linux-3.10.10. Fixes
+          <ulink url="&lfs-ticket-root;3393">#3393</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 特定アーキテクチャーにて問題が発生するため、glibc に対する修正を sed コマンドにより元に戻すことに。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-3.10.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3393">#3393</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-08-22</para>
       <itemizedlist>
         <listitem>

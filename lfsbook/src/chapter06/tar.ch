@@ -26,6 +26,14 @@
 @z
 
 @x
+    <para>Add a program that generates a man page for tar from the source code:</para>
+@y
+    <para>
+    tar の Man ページを生成するプログラムを追加します。
+    </para>
+@z
+
+@x
     <para>Fix an incompatibility between this package and Glibc-&glibc-version;:</para>
 @y
     <para>
@@ -76,6 +84,14 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>Finally, generate the man page and place it in the proper location:</para>
+@y
+    <para>
+    最後に Man ページを生成して、それを所定ディレクトリにインストールします。
+    </para>
 @z
 
 @x

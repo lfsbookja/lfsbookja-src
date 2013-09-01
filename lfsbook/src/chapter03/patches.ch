@@ -71,22 +71,6 @@
         <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
 @z
 
-@x Coreutils Test Fixes Patch
-        <para>Download: <ulink url="&patches-root;&coreutils-test-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-test-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&coreutils-test-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-test-patch-md5;</literal></para>
-@z
-
-@x Flex Regression Tests Patch
-        <para>Download: <ulink url="&patches-root;&flex-bison-patch;"/></para>
-        <para>MD5 sum: <literal>&flex-bison-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&flex-bison-patch;"/></para>
-        <para>MD5 sum: <literal>&flex-bison-patch-md5;</literal></para>
-@z
-
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
@@ -111,20 +95,10 @@
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
 @z
 
-@x Procps HZ Errors Patch
-        <para>Download: <ulink url="&patches-root;&procps-hz_fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&procps-hz_fixes-patch-md5;</literal></para>
+@x Tar Manpage Patch
+        <para>Download: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&procps-hz_fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&procps-hz_fixes-patch-md5;</literal></para>
-@z
-
-@x Procps Watch Patch
-        <para>Download: <ulink url="&patches-root;&procps-watch-patch;"/></para>
-        <para>MD5 sum: <literal>&procps-watch-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&procps-watch-patch;"/></para>
-        <para>MD5 sum: <literal>&procps-watch-patch-md5;</literal></para>
+        <para>&Download;: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
 @z
 
 @x Readline Upstream Fixes Patch

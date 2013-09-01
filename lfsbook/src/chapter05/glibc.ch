@@ -290,13 +290,13 @@
 @z
 
 @x
-  <note><para>Building Binutils in the next section will serve as an additional check that
-  the toolchain has been built properly. If Binutils fails to build, it is an
-  indication that something has gone wrong with the previous Binutils, GCC, or Glibc
-  installations.</para></note>
+  <note><para>Building Binutils in the section after next will serve as an
+  additional check that the toolchain has been built properly. If Binutils
+  fails to build, it is an indication that something has gone wrong with the
+  previous Binutils, GCC, or Glibc installations.</para></note>
 @y
   <note><para>
-  次節にてビルドする Binutils では、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
+  次々節にてビルドする Binutils では、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
   Binutils のビルドに失敗したとしたら、それ以前にインストールしてきた Binutils, GCC, Glibc のいずれかにてビルドがうまくできていないことを意味します。
   </para></note>
 @z
