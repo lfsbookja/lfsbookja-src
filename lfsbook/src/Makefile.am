@@ -153,14 +153,16 @@ profile-html: validate $(ALLXML)
 	  --output $(RENDERTMP)/lfs-html.xml stylesheets/lfs-xsl/profile.xsl \
 	  $(RENDERTMP)/lfs-full.xml
 
-$(BASEDIR)/wget-list: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent
+wget-list: $(BASEDIR)/wget-list
+$(BASEDIR)/wget-list: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent
 	@echo "Generating wget list..."
 	$(MKDIR_P) $(BASEDIR)
 	$(XSLTPROC) --xinclude --nonet --output $(BASEDIR)/wget-list \
 	  $(BOOKdir)/stylesheets/wget-list.xsl ./chapter03/chapter03.xml
 	cp -p $(BASEDIR)/wget-list{,.txt}
 
-$(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent
+md5sums: $(BASEDIR)/md5sums
+$(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent
 	@echo "Generating md5sum file..."
 	$(MKDIR_P) $(BASEDIR)
 	$(XSLTPROC) --xinclude --nonet --output $(BASEDIR)/md5sums \
