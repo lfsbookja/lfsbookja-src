@@ -46,7 +46,7 @@
 
 @x
   <para>It is also a good idea to create a file to show the status of your
-  new system with resopect to the Linux Standards Base (LSB).  To create
+  new system with respect to the Linux Standards Base (LSB).  To create
   this file, run:</para>
 @y
   <para>
