@@ -81,11 +81,11 @@
 @z
 
 @x
-      <para><emphasis role="strong">Gawk-3.1.5</emphasis> (/usr/bin/awk
+      <para><emphasis role="strong">Gawk-4.0.1</emphasis> (/usr/bin/awk
       should be a link to gawk)</para>
 @y
       <para>
-      <emphasis role="strong">Gawk-3.1.5</emphasis> (/usr/bin/awk が gawk へのリンクである必要があります。)
+      <emphasis role="strong">Gawk-4.0.1</emphasis> (/usr/bin/awk が gawk へのリンクである必要があります。)
       </para>
 @z
 

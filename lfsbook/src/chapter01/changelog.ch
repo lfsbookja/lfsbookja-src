@@ -48,6 +48,26 @@
 @z
 
 @x
+      <para>2013-09-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Increase version of Gawk required on the host to
+          4.0.1.  Gawk-3.1.8 from Ubuntu-12.04 hangs during the build of Glibc.
+          Thanks to Walter P. Little for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-09-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - ホスト上にて必要となる Gawk のバージョンを 4.0.1 に。
+          Ubuntu-12.04 の Gawk-3.1.8 では、Glibc のビルド中にハングする。
+          報告をあげてくれた Walter P. Little に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-08-31</para>
       <itemizedlist>
         <listitem>
