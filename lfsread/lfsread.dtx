@@ -1,0 +1,68 @@
+% \iffalse
+%%
+%% File `lfsread.dtx'.
+%% Copyright (C) 2013 by Michio Matsuyama
+%%
+%% This is part of LFSread.
+%%
+%% $Author$
+%% $Rev$
+%% $Date::                           $
+%%
+%<*dtx>
+\ProvidesFile{lfsread.dtx}
+%</dtx>
+%<class>\NeedsTeXFormat{pLaTeX2e}
+%<class>\ProvidesClass{lfsread}
+%<driver>\ProvidesFile{lfsread.drv}
+%\ProvidesFile{lfsread.dtx}
+              [2013/09/07 v1.0 defines class for LFS reading]
+%
+%<*driver>
+\documentclass{ltxdoc}
+\begin{document}
+\DocInput{lfsread.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+%  \GetFileInfo{lfsread.dtx}
+%  \title{The \texttt{lfsread} class}
+%  \author{Michio Matsuyama}
+%  \date{\filedate}
+%  \maketitle
+%
+% \CheckSum{9}
+% \StopEventually{}
+%
+% \section{Loading base class}
+%
+% This document class is based on the \emph{jsarticle} class.
+%
+%<*class>
+%    \begin{macrocode}
+\LoadClass{jsarticle}
+%    \end{macrocode}
+%</class>
+%
+% \section{Macros}
+%
+% 
+%
+%<*class>
+%    \begin{macrocode}
+\DeclareRobustCommand{\LFStitle}[2]{%
+\title{{\small LFS読み物 No.#1}\\#2}}
+%    \end{macrocode}
+%</class>
+%
+% 
+%
+%<*class>
+%    \begin{macrocode}
+\renewcommand{\abstractname}{概　要}
+%    \end{macrocode}
+%</class>
+%
+% \Finale
+\endinput
