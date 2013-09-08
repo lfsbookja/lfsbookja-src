@@ -16,10 +16,10 @@
 %<class>\ProvidesClass{lfsread}
 %<driver>\ProvidesFile{lfsread.drv}
 %\ProvidesFile{lfsread.dtx}
-              [2013/09/07 v1.0 defines class for LFS reading]
+              [2013/09/08 v1.0 defines class for LFS reading]
 %
 %<*driver>
-\documentclass{ltxdoc}
+\documentclass{jltxdoc}
 \begin{document}
 \DocInput{lfsread.dtx}
 \end{document}
@@ -27,42 +27,42 @@
 % \fi
 %
 %  \GetFileInfo{lfsread.dtx}
-%  \title{The \texttt{lfsread} class}
-%  \author{Michio Matsuyama}
+%  \title{\texttt{lfsread} クラス}
+%  \author{松 山 道 夫}
 %  \date{\filedate}
 %  \maketitle
 %
 % \CheckSum{9}
 % \StopEventually{}
 %
-% \section{Loading base class}
+% \section{ベースクラス}
 %
-% This document class is based on the \emph{jsarticle} class.
+% 本クラスはベースクラスとして \emph{jsarticle} クラスを取り込みます。
 %
-%<*class>
 %    \begin{macrocode}
+%<*class>
 \LoadClass{jsarticle}
-%    \end{macrocode}
 %</class>
+%    \end{macrocode}
 %
-% \section{Macros}
+% \section{マクロ}
 %
 % 
 %
-%<*class>
 %    \begin{macrocode}
+%<*class>
 \DeclareRobustCommand{\LFStitle}[2]{%
 \title{{\small LFS読み物 No.#1}\\#2}}
-%    \end{macrocode}
 %</class>
+%    \end{macrocode}
 %
 % 
 %
-%<*class>
 %    \begin{macrocode}
+%<*class>
 \renewcommand{\abstractname}{概　要}
-%    \end{macrocode}
 %</class>
+%    \end{macrocode}
 %
 % \Finale
 \endinput

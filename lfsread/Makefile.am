@@ -5,9 +5,9 @@
 ## $Rev$
 ## $Date::                           $
 ##
-docs = lfsread01.tex
+docs = lfsread01.tex lfsread02.tex
+dvis = $(docs:.tex=.dvi)
 tgts = $(docs:.tex=.pdf)
-clss = lfsread.dtx
 
 EXTRA_DIST = $(docs) $(clss)
 
@@ -26,7 +26,7 @@ SUFFIXES = .tex .dvi .pdf
 
 all: lfsread.cls $(tgts)
 
-$(srcs): lfsread.cls
+$(dvis): lfsread.cls
 
 lfsread.cls: lfsread.ins $(srcdir)/lfsread.dtx
 	TEXINPUTS="$(srcdir):" $(PLATEX) lfsread.ins

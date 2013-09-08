@@ -175,9 +175,9 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-docs = lfsread01.tex
+docs = lfsread01.tex lfsread02.tex
+dvis = $(docs:.tex=.dvi)
 tgts = $(docs:.tex=.pdf)
-clss = lfsread.dtx
 EXTRA_DIST = $(docs) $(clss)
 CLEANFILES = lfsread*.log lfsread*.aux \
 	texput.log missfont.log config.log
@@ -517,7 +517,7 @@ uninstall-am:
 
 all: lfsread.cls $(tgts)
 
-$(srcs): lfsread.cls
+$(dvis): lfsread.cls
 
 lfsread.cls: lfsread.ins $(srcdir)/lfsread.dtx
 	TEXINPUTS="$(srcdir):" $(PLATEX) lfsread.ins
