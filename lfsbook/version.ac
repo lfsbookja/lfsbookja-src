@@ -7,4 +7,4 @@ dnl  $Date::                           $
 dnl 
 dnl
 dnl m4-include this file to define the current LFS version
-m4_define([lfs_version], [svn-20130907])
+m4_define([lfs_version], [svn-20130908])
