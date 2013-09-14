@@ -48,6 +48,66 @@
 @z
 
 @x
+      <para>2013-09-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-207. Fixes
+          <ulink url="&lfs-ticket-root;3396">#3396</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-09-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd-207 へのアップデート。
+          <ulink url="&lfs-ticket-root;3396">#3396</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-09-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.18.3.1. Fixes
+          <ulink url="&lfs-ticket-root;3389">#3389</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-15. Fixes
+          <ulink url="&lfs-ticket-root;3392">#3392</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-3.11.0. Fixes
+          <ulink url="&lfs-ticket-root;3395">#3395</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.11.0. Fixes
+          <ulink url="&lfs-ticket-root;3394">#3394</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-09-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gettext-0.18.3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3389">#3389</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-15 へのアップデート。
+          <ulink url="&lfs-ticket-root;3392">#3392</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-3.11.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3395">#3395</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.11.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3394">#3394</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-09-08</para>
       <itemizedlist>
         <listitem>
