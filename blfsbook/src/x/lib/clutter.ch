@@ -79,7 +79,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="atk"/>,
-      <xref linkend="cogl"/> and
+      <xref linkend="cogl"/>, and
       <xref linkend="json-glib"/>
     </para>
 @y
@@ -112,7 +112,7 @@
       <ulink url="http://xkbcommon.org/">libxkbcommon</ulink>,
       <ulink url="http://tslib.berlios.de/">Tslib</ulink>,
       <xref linkend="udev"/> or
-      <xref linkend="udev-extras"/> (for GUdev) and
+      <xref linkend="udev-extras"/> (for GUdev), and
       <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
 @y
@@ -121,7 +121,7 @@
       <xref linkend="gtk-doc"/>,
       <ulink url="http://xkbcommon.org/">libxkbcommon</ulink>,
       <ulink url="http://tslib.berlios.de/">Tslib</ulink>,
-      <xref linkend="udev"/> または
+      <xref linkend="udev"/> or
       <xref linkend="udev-extras"/> (GUdev のため),
       <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>

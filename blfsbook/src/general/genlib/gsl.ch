@@ -124,14 +124,14 @@
           libgslcblas.so and libgsl.so.
         </seg>
         <seg>
-          /usr/include/gsl.
+          /usr/include/gsl
         </seg>
 @y
         <seg>
           gsl-config, gsl-histogram, gsl-randist
         </seg>
         <seg>
-          libgslcblas.so, libgsl.so
+          libgslcblas.so, libgsl.so.
         </seg>
         <seg>
           /usr/include/gsl

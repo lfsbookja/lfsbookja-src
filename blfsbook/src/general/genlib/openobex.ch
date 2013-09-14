@@ -100,7 +100,7 @@
     <para role="optional">
       <xref linkend="doxygen"/>,
       <xref linkend="libxslt"/>,
-      <xref linkend="openjdk"/> and
+      <xref linkend="openjdk"/>, and
       <xref linkend="xmlto"/>
     </para>
 @y

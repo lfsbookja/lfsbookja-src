@@ -185,11 +185,11 @@
 @z
 
 @x
-    <para>Install all of the applications by running the following
+    <para>Install all of the packages by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行してすべてのアプリケーションをインストールします。
+    以下のコマンドを実行してすべてのパッケージをインストールします。
     </para>
 @z
 

@@ -119,7 +119,7 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mysql"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/> and
+      <xref linkend="sqlite"/>, and
       <xref linkend="linux-pam"/>
     </para>
 @y
@@ -521,7 +521,7 @@
         <seg>exicyclog, exigrep, exim, exim-4.43-2, exim_checkaccess,
         exim_dbmbuild, exim_dumpdb, exim_fixdb, exim_lock, exim_tidydb,
         eximstats, exinext, exipick, exiqgrep, exiqsumm, exiwhat, and
-        optionally, eximon, and eximon.bin</seg>
+        optionally, eximon and eximon.bin</seg>
         <seg>None</seg>
         <seg>/usr/share/doc/exim-&exim-version; and /var/spool/exim</seg>
 @y

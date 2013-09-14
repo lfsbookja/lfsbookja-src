@@ -29,6 +29,7 @@ CHANGE_FILES = \
 	libpeas.ch                   \
 	libsecret.ch                 \
 	libwnck.ch                   \
+	notification-daemon.ch       \
 	platform.ch                  \
 	polkit-gnome.ch              \
 	totem-pl-parser.ch           \
@@ -70,6 +71,7 @@ libgtop.xml:                   $(BOOKdir)/$@ $(srcdir)/libgtop.ch
 libpeas.xml:                   $(BOOKdir)/$@ $(srcdir)/libpeas.ch
 libsecret.xml:                 $(BOOKdir)/$@ $(srcdir)/libsecret.ch
 libwnck.xml:                   $(BOOKdir)/$@ $(srcdir)/libwnck.ch
+notification-daemon.xml:       $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
 platform.xml:                  $(BOOKdir)/$@ $(srcdir)/platform.ch
 polkit-gnome.xml:              $(BOOKdir)/$@ $(srcdir)/polkit-gnome.ch
 totem-pl-parser.xml:           $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch

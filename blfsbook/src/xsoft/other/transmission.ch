@@ -82,7 +82,7 @@
     <para role="required">
       <xref linkend="curl"/>,
       <xref linkend="intltool"/>,
-      <xref linkend="libevent"/> and
+      <xref linkend="libevent"/>, and
       <xref linkend="openssl"/>
     </para>
 @y
@@ -98,28 +98,30 @@
 @x
     <bridgehead renderas="sect4">Recommended (to build a GUI)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/> or
-      <xref linkend="qt5"/> and
-      <xref linkend="gdb"/>
+      <xref linkend="gtk3"/> and either
+      <xref linkend="qt4"/> or
+      <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (GUI ビルド時)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/> または
-      <xref linkend="qt5"/>,
-      <xref linkend="gdb"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="qt4"/> または
+      <xref linkend="qt5"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/>
+      <xref linkend="doxygen"/> and
+      <xref linkend="gdb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/>
+      <xref linkend="doxygen"/>,
+      <xref linkend="gdb"/>
     </para>
 @z
 
@@ -143,10 +145,10 @@
 @z
 
 @x
-      If you have installed <xref linkend="qt5"/> and would like to compile the
+      If you have installed Qt and would like to compile the
       Qt GUI, run the following commands:
 @y
-      <xref linkend="qt5"/> をインストールしていて Qt GUI をビルドする場合は以下を実行します。
+      Qt をインストールしていて Qt GUI をビルドする場合は以下を実行します。
 @z
 
 @x

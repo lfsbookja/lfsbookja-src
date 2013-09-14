@@ -117,8 +117,8 @@
     <para role="required">
     <xref linkend="python2"/>,
     <xref linkend="dbus-python"/>,
-    <xref linkend="wireless_tools"/> and
-    <xref linkend="net-tools"/> (Wicd needs <command>ifconfig</command> and 
+    <xref linkend="wireless_tools"/>, and
+    <xref linkend="net-tools"/> (Wicd needs <command>ifconfig</command> and
     <command>mii-tool</command> from this package)
     </para>
 @y
@@ -127,7 +127,7 @@
     <xref linkend="python2"/>,
     <xref linkend="dbus-python"/>,
     <xref linkend="wireless_tools"/>,
-    <xref linkend="net-tools"/> (Wicd にはこのパッケージが提供する <command>ifconfig</command> と <command>mii-tool</command> が必要です)
+    <xref linkend="net-tools"/> (Wicd にはこのパッケージが提供する <command>ifconfig</command> と <command>mii-tool</command> が必要です。)
     </para>
 @z
 
@@ -135,7 +135,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
     <xref linkend="pygtk"/> (for the GTK frontend),
-    <xref linkend="wpa_supplicant"/> (for WPA support) and
+    <xref linkend="wpa_supplicant"/> (for WPA support), and
     <xref linkend="dhcpcd"/> or <xref linkend="dhcp"/> (for DHCP support)
     </para>
 @y
@@ -151,7 +151,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
     <xref linkend="pm-utils"/> (for suspend/resume integration),
-    <ulink url="http://excess.org/urwid/">Urwid</ulink> (for the Curses-based frontend) and
+    <ulink url="http://excess.org/urwid/">Urwid</ulink> (for the Curses-based frontend), and
     <ulink url="http://babel.edgewall.org/">Babel</ulink> (for internationalization)
     </para>
 @y
@@ -377,14 +377,14 @@
 @z
 
 @x
-        <seg>wicd, wicd-cli, wicd-client, wicd-curses and wicd-gtk</seg>
+        <seg>wicd, wicd-cli, wicd-client, wicd-curses, and wicd-gtk</seg>
         <seg>none</seg>
-        <seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd, 
-        /usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd and /var/log/wicd</seg>
+        <seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd,
+        /usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd, and /var/log/wicd</seg>
 @y
         <seg>wicd, wicd-cli, wicd-client, wicd-curses, wicd-gtk</seg>
         <seg>&None;</seg>
-        <seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd, 
+        <seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd,
         /usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd, /var/log/wicd</seg>
 @z
 

@@ -14,7 +14,7 @@
 @z
 
 @x
-  <!ENTITY compface-time "Less than 0.1 SBU">
+  <!ENTITY compface-time "less than 0.1 SBU">
 @y
   <!ENTITY compface-time "&LessThan1;0.1 SBU&LessThan2;">
 @z

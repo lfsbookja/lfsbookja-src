@@ -134,11 +134,11 @@
 
 @x
         <seg>keyctl, key.dns_resolver, and request-key</seg>
-        <seg>libkeyutils.so.1</seg>
+        <seg>libkeyutils.so</seg>
         <seg>/usr/share/keyutils</seg>
 @y
         <seg>keyctl, key.dns_resolver, request-key</seg>
-        <seg>libkeyutils.so.1</seg>
+        <seg>libkeyutils.so</seg>
         <seg>/usr/share/keyutils</seg>
 @z
 

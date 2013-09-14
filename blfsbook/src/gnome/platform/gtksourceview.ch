@@ -177,7 +177,7 @@
         </seg>
         <seg>
           /usr/include/gtksourceview-3.0,
-          /usr/share/gtk-doc/html/gtksourceview-3.0 and
+          /usr/share/gtk-doc/html/gtksourceview-3.0, and
           /usr/share/gtksourceview-3.0
         </seg>
 @y

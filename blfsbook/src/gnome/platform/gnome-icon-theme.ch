@@ -80,7 +80,7 @@
       <xref linkend="gtk3"/> or
       <xref linkend="gtk2"/>,
       <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="icon-naming-utils"/> and
+      <xref linkend="icon-naming-utils"/>, and
       <xref linkend="intltool"/>
     </para>
 @y

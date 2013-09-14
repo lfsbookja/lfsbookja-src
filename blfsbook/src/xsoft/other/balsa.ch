@@ -122,7 +122,7 @@
       <xref linkend="compface"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="sqlite"/>, and and
+      <xref linkend="sqlite"/>, and 
       <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command, note that it is only used if you
       didn't install the recommended <application>libESMTP</application>

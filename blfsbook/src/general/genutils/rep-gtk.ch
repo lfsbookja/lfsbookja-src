@@ -87,12 +87,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libglade"/> and
-    <xref linkend="librep"/></para>
+    <para role="required">
+      <xref linkend="libglade"/> and
+      <xref linkend="librep"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libglade"/>,
-    <xref linkend="librep"/></para>
+    <para role="required">
+      <xref linkend="libglade"/>,
+      <xref linkend="librep"/>
+    </para>
 @z
 
 @x

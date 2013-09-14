@@ -81,7 +81,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gmime"/>,
-      <xref linkend="intltool"/> and
+      <xref linkend="intltool"/>, and
       <xref linkend="libsoup"/>
     </para>
 @y
@@ -97,7 +97,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libarchive"/> and
+      <xref linkend="libarchive"/>, and
       <xref linkend="libgcrypt"/>
     </para>
 @y

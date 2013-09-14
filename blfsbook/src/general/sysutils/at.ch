@@ -87,7 +87,8 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      An MTA such as <xref linkend="postfix"/>, <xref linkend="sendmail"/>, or 
+      An MTA such as <xref linkend="postfix"/>, 
+      <xref linkend="sendmail"/>, or 
       <xref linkend="exim"/>
     </para>
 @y

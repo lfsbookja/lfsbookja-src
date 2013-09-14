@@ -81,7 +81,7 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-icon-theme"/>,
       <xref linkend="libpeas"/>,
-      <xref linkend="shared-mime-info"/> and
+      <xref linkend="shared-mime-info"/>, and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
@@ -114,7 +114,7 @@
     <para role="optional">
       <xref linkend="exempi"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="lcms2"/> and
+      <xref linkend="lcms2"/>, and
       <xref linkend="libexif"/>
     </para>
 @y
@@ -191,7 +191,7 @@
           /usr/include/eog-3.0,
           /usr/lib/eog,
           /usr/share/eog,
-          /usr/share/gtk-doc/html/eog and
+          /usr/share/gtk-doc/html/eog, and
           /usr/share/help/*/eog
         </seg>
 @y

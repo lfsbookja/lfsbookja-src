@@ -84,7 +84,7 @@
     <para role="required">
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libnotify"/> and
+      <xref linkend="libnotify"/>, and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
@@ -103,7 +103,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libburn"/> and
       <xref linkend="libisofs"/>,
-      <xref linkend="nautilus"/> and
+      <xref linkend="nautilus"/>, and
       <xref linkend="totem-pl-parser"/>
     </para>
 @y
@@ -203,14 +203,15 @@
           brasero
         </seg>
         <seg>
-          libbrasero-burn3.so, libbrasero-media3.so and
+          libbrasero-burn3.so, 
+          libbrasero-media3.so, and
           libbrasero-utils3.so
         </seg>
         <seg>
           /usr/include/brasero3,
           /usr/lib/brasero3,
           /usr/share/brasero,
-          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media} and
+          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media}, and
           /usr/share/help/*/brasero
         </seg>
 @y
@@ -218,7 +219,8 @@
           brasero
         </seg>
         <seg>
-          libbrasero-burn3.so, libbrasero-media3.so,
+          libbrasero-burn3.so, 
+          libbrasero-media3.so,
           libbrasero-utils3.so
         </seg>
         <seg>

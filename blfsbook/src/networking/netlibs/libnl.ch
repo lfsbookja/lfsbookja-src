@@ -131,28 +131,36 @@
 
 @x
         <seg>
-          genl-ctrl-list, nl-class-add, nl-class-delete, nl-classid-lookup,
-          nl-class-list, nl-cls-add, nl-cls-delete, nl-cls-list, nl-link-list,
-          nl-pktloc-lookup, nl-qdisc-add, nl-qdisc-delete and nl-qdisc-list
+          genl-ctrl-list, nl-class-add,     nl-class-delete, nl-classid-lookup,
+          nl-class-list,  nl-cls-add,       nl-cls-delete,   nl-cls-list, 
+          nl-link-list,   nl-pktloc-lookup, nl-qdisc-add,    nl-qdisc-delete, and 
+          nl-qdisc-list
         </seg>
         <seg>
-          libnl-3.so, libnl-cli-3.so, libnl-genl-3.so,
-          libnl-nf-3.so and libnl-route-3.so
+          libnl-3.so, 
+          libnl-cli-3.so, 
+          libnl-genl-3.so,
+          libnl-nf-3.so, and 
+          libnl-route-3.so
         </seg>
         <seg>
           /etc/libnl,
-          /usr/include/libnl3 and
+          /usr/include/libnl3, and
           /usr/lib/libnl
         </seg>
 @y
         <seg>
-          genl-ctrl-list, nl-class-add, nl-class-delete, nl-classid-lookup,
-          nl-class-list, nl-cls-add, nl-cls-delete, nl-cls-list, nl-link-list,
-          nl-pktloc-lookup, nl-qdisc-add, nl-qdisc-delete, nl-qdisc-list
+          genl-ctrl-list, nl-class-add,     nl-class-delete, nl-classid-lookup,
+          nl-class-list,  nl-cls-add,       nl-cls-delete,   nl-cls-list, 
+          nl-link-list,   nl-pktloc-lookup, nl-qdisc-add,    nl-qdisc-delete,
+          nl-qdisc-list
         </seg>
         <seg>
-          libnl-3.so, libnl-cli-3.so, libnl-genl-3.so,
-          libnl-nf-3.so, libnl-route-3.so
+          libnl-3.so, 
+          libnl-cli-3.so, 
+          libnl-genl-3.so,
+          libnl-nf-3.so,
+          libnl-route-3.so
         </seg>
         <seg>
           /etc/libnl,

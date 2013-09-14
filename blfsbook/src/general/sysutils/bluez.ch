@@ -93,9 +93,8 @@
     <para role="optional">
       <xref linkend="alsa-lib"/>,
       <xref linkend="check"/>,
-      <!-- <xref linkend="cups"/>, -->
       <xref linkend="gst-plugins-base"/>,
-      <xref linkend="libsndfile"/> and
+      <xref linkend="libsndfile"/>, and
       <xref linkend="libusb-compat"/>
     </para>
 @y
@@ -103,7 +102,6 @@
     <para role="optional">
       <xref linkend="alsa-lib"/>,
       <xref linkend="check"/>,
-      <!-- <xref linkend="cups"/>, -->
       <xref linkend="gst-plugins-base"/>,
       <xref linkend="libsndfile"/>,
       <xref linkend="libusb-compat"/>
@@ -353,7 +351,7 @@
         <seg>
           bccmd, bluetoothd, ciptool, dfutool, dund, gatttool,
           hciattach, hciconfig, hcitool, hid2hci, hidd, l2ping,
-          pand, rfcomm and sdptool
+          pand, rfcomm, and sdptool
         </seg>
         <seg>
           libbluetooth.so
@@ -362,7 +360,7 @@
           /etc/bluetooth,
           /usr/include/bluetooth,
           /usr/lib/bluetooth,
-          /usr/share/doc/bluez-&bluez-version; and
+          /usr/share/doc/bluez-&bluez-version;, and
           /var/lib/bluetooth
         </seg>
 @y

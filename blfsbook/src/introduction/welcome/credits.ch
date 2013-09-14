@@ -49,15 +49,15 @@
 @z
 
 @x
-    <title>Editors</title>
+    <title>Current Editors</title>
 @y
-    <title>編集</title>
+    <title>編集者</title>
 @z
 
 @x
-    <title>Contributors</title>
+    <title>Contributors and Past Editors</title>
 @y
-    <title>情報提供</title>
+    <title>情報提供者および旧編集者</title>
 @z
 
 @x

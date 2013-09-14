@@ -90,16 +90,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="fontconfig"/>,
-    <xref linkend="xorg7-proto"/>,
-    <xref linkend="libXdmcp"/>, and
-    <xref linkend="libxcb"/></para>
+    <para role="required">
+      <xref linkend="fontconfig"/> and
+      <xref linkend="libxcb"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="fontconfig"/>,
-    <xref linkend="xorg7-proto"/>,
-    <xref linkend="libXdmcp"/>,
-    <xref linkend="libxcb"/></para>
+    <para role="required">
+      <xref linkend="fontconfig"/>,
+      <xref linkend="libxcb"/>
+    </para>
 @z
 
 @x
@@ -168,7 +168,7 @@
 @z
 
 @x
-    <para>Install all of the applications by running the following
+    <para>Install all of the packages by running the following
     commands:</para>
 @y
     <para>

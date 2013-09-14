@@ -135,12 +135,12 @@
 
 @x
     <para>At this point, make sure Apache-Ant is installed and then continue
-    with the source build and instalation.  From the directory created when
+    with the source build and installation.  From the directory created when
     extracting the JUnit sources, place the required hamcrest jar files where
     needed and build the package:</para> 
 @y
     <para>At this point, make sure Apache-Ant is installed and then continue
-    with the source build and instalation.  From the directory created when
+    with the source build and installation.  From the directory created when
     extracting the JUnit sources, place the required hamcrest jar files where
     needed and build the package:</para> 
 @z

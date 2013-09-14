@@ -79,13 +79,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/> and
-      <xref linkend="libpng"/>
+      <xref linkend="libpng"/> (for tests and demos)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/>,
-      <xref linkend="libpng"/>
+      <xref linkend="libpng"/> (テストおよびデモにて必要)
     </para>
 @z
 

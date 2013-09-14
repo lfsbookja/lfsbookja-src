@@ -80,7 +80,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="pkgconfig"/>,
-      <xref linkend="sdl"/> and
+      <xref linkend="sdl"/>, and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
@@ -162,22 +162,30 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+	<seg>
+	  None
+	</seg>
         <seg>
           libagg.so,
           libaggfontfreetype.so,
-          libaggplatformsdl.so and
-          libaggplatformX11.so.
+          libaggplatformsdl.so, and
+          libaggplatformX11.so
         </seg>
-        <seg>/usr/include/agg2.</seg>
+        <seg>/usr/include/agg2</seg>
 @y
+	<seg>
+	  &None;
+	</seg>
         <seg>
           libagg.so,
           libaggfontfreetype.so,

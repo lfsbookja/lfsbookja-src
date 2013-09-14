@@ -95,7 +95,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libcap2"/>,
-      <xref linkend="libxml2"/> and
+      <xref linkend="libxml2"/>, and
       <xref linkend="openssl"/>
     </para>
 @y

@@ -89,16 +89,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="mesalib"/>,
       <xref linkend="openssl"/>,
       <xref linkend="pixman"/>,
-      <xref linkend="xorg7-font"/> and
+      <xref linkend="xorg7-font"/>, and
       <xref linkend="xkeyboard-config"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="mesalib"/>,
       <xref linkend="openssl"/>,
       <xref linkend="pixman"/>,
       <xref linkend="xorg7-font"/>,
@@ -112,7 +110,7 @@
       <xref linkend="acpid"/> (runtime),
       <xref linkend="doxygen"/> (to build API documentation),
       <xref linkend="fop"/>, (to build documentation),
-      <xref linkend="gs"/> (to build documentation) and
+      <xref linkend="gs"/> (to build documentation), and
       <xref linkend="xmlto"/>, (to build documentation)
     </para>
 @y
@@ -120,9 +118,9 @@
     <para>
       <xref linkend="acpid"/> (実行時),
       <xref linkend="doxygen"/> (API ドキュメント生成のため),
-      <xref linkend="fop"/> (ドキュメント生成のため),
+      <xref linkend="fop"/>, (ドキュメント生成のため),
       <xref linkend="gs"/> (ドキュメント生成のため),
-      <xref linkend="xmlto"/> (ドキュメント生成のため)
+      <xref linkend="xmlto"/>, (ドキュメント生成のため)
     </para>
 @z
 
@@ -213,7 +211,7 @@
         <seg>
           cvt, dmxaddinput, dmxaddscreen, dmxinfo, dmxreconfig, dmxresize,
           dmxrminput, dmxrmscreen, dmxtodmx, dmxwininfo, gtf, vdltodmx, X,
-          Xdmx, xdmxconfig, Xnest, Xorg and Xvfb
+          Xdmx, xdmxconfig, Xnest, Xorg, and Xvfb
         </seg>
         <seg>
           None
@@ -221,7 +219,7 @@
         <seg>
           $XORG_PREFIX/include/xorg,
           $XORG_PREFIX/lib/xorg,
-          $XORG_PREFIX/share/X11/xorg.conf.d and
+          $XORG_PREFIX/share/X11/xorg.conf.d, and
           /var/lib/xkb
         </seg>
 @y

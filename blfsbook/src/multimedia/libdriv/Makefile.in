@@ -197,6 +197,7 @@ CHANGE_FILES = \
 	faad2.ch              \
 	farstream.ch          \
 	flac.ch               \
+	grilo.ch              \
 	gst-ffmpeg.ch         \
 	gst-plugins-bad.ch    \
 	gst-plugins-base.ch   \
@@ -447,6 +448,7 @@ faac.xml:                    $(BOOKdir)/$@ $(srcdir)/faac.ch
 faad2.xml:                   $(BOOKdir)/$@ $(srcdir)/faad2.ch
 farstream.xml:               $(BOOKdir)/$@ $(srcdir)/farstream.ch
 flac.xml:                    $(BOOKdir)/$@ $(srcdir)/flac.ch
+grilo.xml:                   $(BOOKdir)/$@ $(srcdir)/grilo.ch
 gst-ffmpeg.xml:              $(BOOKdir)/$@ $(srcdir)/gst-ffmpeg.ch
 gst-plugins-bad.xml:         $(BOOKdir)/$@ $(srcdir)/gst-plugins-bad.ch $(srcdir)/gst-plugins-bad.sed
 	sed -f $(srcdir)/gst-plugins-bad.sed $(BOOKdir)/gst-plugins-bad.xml > $(BOOKdir)/gst-plugins-bad_lfsbookja.xml

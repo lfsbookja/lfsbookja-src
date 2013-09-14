@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY xinit-time          "less than 0.1 SBU">
-@y
-  <!ENTITY xinit-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to xinit</title>
 @y
     <title>&IntroductionTo1;xinit&IntroductionTo2;</title>
@@ -137,7 +131,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>

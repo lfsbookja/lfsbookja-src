@@ -137,9 +137,8 @@
     <para role="required">
       <xref linkend="expat"/>,
       <xref linkend="libdrm"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="makedepend"/> and
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="libxml2"/>, and
+      <xref linkend="makedepend"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -147,24 +146,27 @@
       <xref linkend="expat"/>,
       <xref linkend="libdrm"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="makedepend"/>,
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="makedepend"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="elfutils"/>,
-      <xref linkend="libvdpau"/> (to build VDPAU drivers) and
-      <xref linkend="llvm"/>
+      <xref linkend="elfutils"/> (required for radeon 3d drivers),
+      <xref linkend="libvdpau"/> (to build VDPAU drivers),
+      <xref linkend="llvm"/> (required for radeon 3d drivers and also for
+      llvmpipe which is intended to be the fastest of the three sw rasterizers,
+      see <ulink url="http://www.mesa3d.org/faq.html#part3"></ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="elfutils"/>,
-      <xref linkend="libvdpau"/> (VDPAU ドライバーのビルド時),
-      <xref linkend="llvm"/>
+      <xref linkend="elfutils"/> (required for radeon 3d drivers),
+      <xref linkend="libvdpau"/> (to build VDPAU drivers),
+      <xref linkend="llvm"/> (required for radeon 3d drivers and also for
+      llvmpipe which is intended to be the fastest of the three sw rasterizers,
+      see <ulink url="http://www.mesa3d.org/faq.html#part3"></ulink>
     </para>
 @z
 
@@ -174,11 +176,13 @@
         need to modify the instructions if you choose not to install them.
         Please note that <application>elfutils</application> and
         <application>LLVM</application> are <emphasis>required</emphasis>
-        for Radeon 3D drivers.
+        for Radeon 3D drivers.  For an explanation of gallium please see
+        <ulink url="https://en.wikipedia.org/wiki/Gallium3D"></ulink>.
 @y
         これ以降の手順は <application>elfutils</application> と <application>LLVM</application> がインストールされていることを前提とします。
         これらをインストールしていない場合には、実行手順を変える必要があります。
         特に Radeon 3D ドライバーを利用する場合には <application>elfutils</application> と <application>LLVM</application> が<emphasis>必須</emphasis>です。
+        Gallium についての説明は <ulink url="https://en.wikipedia.org/wiki/Gallium3D"></ulink> を参照してください。
 @z
 
 @x

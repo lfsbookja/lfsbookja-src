@@ -77,26 +77,30 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/> and
-      <xref linkend="libtasn1"/>
+      <xref linkend="cacerts"/>,
+      <xref linkend="libtasn1"/>, and
+      <xref linkend="libffi"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="cacerts"/>,
-      <xref linkend="libtasn1"/>
+      <xref linkend="libtasn1"/>,
+      <xref linkend="libffi"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="nss"/>,
       <xref linkend="gtk-doc"/> and
       <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="nss"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>
     </para>
@@ -166,7 +170,7 @@
 
 @x
         <seg>
-          p11-kit
+          p11-kit and trust
         </seg>
         <seg>
           libp11-kit.so and p11-kit-proxy.so
@@ -181,10 +185,10 @@
         </seg>
 @y
         <seg>
-          p11-kit
+          p11-kit, trust
         </seg>
         <seg>
-          libp11-kit.so and p11-kit-proxy.so
+          libp11-kit.so, p11-kit-proxy.so
         </seg>
         <seg>
           /etc/pkcs11,

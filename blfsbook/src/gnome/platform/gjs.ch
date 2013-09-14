@@ -78,7 +78,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>,
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>, and
       <xref linkend="JS"/>
     </para>
 @y

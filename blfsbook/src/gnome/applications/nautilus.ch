@@ -105,7 +105,7 @@
     <para role="optional">
       <xref linkend="exempi"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="libexif"/> and
+      <xref linkend="libexif"/>, and
       <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
     </para>
 @y
@@ -196,7 +196,7 @@
           /usr/include/nautilus,
           /usr/lib/nautilus,
           /usr/share/gnome-shell/search-providers,
-          /usr/share/gtk-doc/html/libnautilus-extension and
+          /usr/share/gtk-doc/html/libnautilus-extension, and
           /usr/share/nautilus
         </seg>
 @y

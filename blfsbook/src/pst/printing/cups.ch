@@ -93,7 +93,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="colord"/>,
-      <xref linkend="dbus"/> and
+      <xref linkend="dbus"/>, and
       <xref linkend="libusb"/>
     </para>
 @y
@@ -117,7 +117,7 @@
       <xref linkend="mitkrb"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="php"/>,
-      <xref linkend="python2"/> and
+      <xref linkend="python2"/>, and
       <xref linkend="xdg-utils"/>
     </para>
 @y

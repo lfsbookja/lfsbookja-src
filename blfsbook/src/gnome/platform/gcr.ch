@@ -85,7 +85,7 @@
       <xref linkend="glib2"/>,
       <xref linkend="intltool"/>,
       <xref linkend="libgcrypt"/>,
-      <xref linkend="libtasn1"/> and
+      <xref linkend="libtasn1"/>, and
       <xref linkend="p11-kit"/>
     </para>
 @y
@@ -104,13 +104,13 @@
     <para role="recommended">
       <xref linkend="gnupg"/> or
       <xref linkend="gnupg2"/>,
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>, and
       <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gnupg"/> or
+      <xref linkend="gnupg"/> または
       <xref linkend="gnupg2"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>
@@ -189,7 +189,7 @@
           gcr-viewer
         </seg>
         <seg>
-          libgck-1.so, libgcr-3.so, libgcr-base-3.so and
+          libgck-1.so, libgcr-3.so, libgcr-base-3.so, and
           libmock-test-module.so
         </seg>
         <seg>
@@ -197,7 +197,7 @@
           /usr/include/gcr-3,
           /usr/lib/gnome-keyring,
           /usr/share/gcr-3,
-          /usr/share/gtk-doc/html/gck and
+          /usr/share/gtk-doc/html/gck, and
           /usr/share/gtk-doc/html/gcr-3
         </seg>
 @y

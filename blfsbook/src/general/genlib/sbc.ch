@@ -142,7 +142,7 @@
 
 @x
         <seg>
-          sbcdec, sbcenc and sbcinfo
+          sbcdec, sbcenc, and sbcinfo
         </seg>
         <seg>
           libsbc.so

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "181 MB (additional 151 MB to run the testsuite)">
-  <!ENTITY postgresql-time          "1.4 SBU (additional 0.2 SBU to run the testsuite)">
+  <!ENTITY postgresql-buildsize     "169 MB (additional 170 MB to run the testsuite)">
+  <!ENTITY postgresql-time          "1.3 SBU (additional 0.2 SBU to run the testsuite)">
 @y
-  <!ENTITY postgresql-buildsize     "181 MB (テストスイート実行時はさらに 151 MB)">
-  <!ENTITY postgresql-time          "1.4 SBU (テストスイート実行時はさらに 0.2 SBU)">
+  <!ENTITY postgresql-buildsize     "169 MB (テストスイート実行時はさらに 170 MB)">
+  <!ENTITY postgresql-time          "1.3 SBU (テストスイート実行時はさらに 0.2 SBU)">
 @z
 
 @x
@@ -377,9 +377,11 @@
 @x
         <seg>clusterdb, createdb, createlang, createuser, dropdb, droplang,
         dropuser, ecpg, initdb, pg_basebackup, pg_config, pg_controldata, pg_ctl,
-        pg_dump, pg_dumpall, pg_resetxlog, pg_restore, pltcl_delmod,
+        pg_dump, pg_dumpall, pg_isready, pg_resetxlog, pg_restore, pltcl_delmod,
         pltcl_listmod, pltcl_loadmod, postgres, postmaster, psql,
-        reindexdb, and vacuumdb</seg>
+        reindexdb, and vacuumdb. Optionally (in contrib/) oid2name, pg_archivecleanup,
+        pgbench, pg_standby, pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump,
+        vacuumlo,</seg>
         <seg>libecpg.{so,a}, libecpg_compat.{so,a}, libpgport.a, libpgtypes.{so,a},
         libpq.{so,a}, and various charset (and optionally, programming language)
         modules.</seg>
@@ -389,9 +391,11 @@
 @y
         <seg>clusterdb, createdb, createlang, createuser, dropdb, droplang,
         dropuser, ecpg, initdb, pg_basebackup, pg_config, pg_controldata, pg_ctl,
-        pg_dump, pg_dumpall, pg_resetxlog, pg_restore, pltcl_delmod,
+        pg_dump, pg_dumpall, pg_isready, pg_resetxlog, pg_restore, pltcl_delmod,
         pltcl_listmod, pltcl_loadmod, postgres, postmaster, psql,
-        reindexdb, vacuumdb</seg>
+        reindexdb, and vacuumdb. Optionally (in contrib/) oid2name, pg_archivecleanup,
+        pgbench, pg_standby, pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump,
+        vacuumlo,</seg>
         <seg>libecpg.{so,a}, libecpg_compat.{so,a}, libpgport.a, libpgtypes.{so,a},
         libpq.{so,a}, and various charset (and optionally, programming language)
         modules.</seg>

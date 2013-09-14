@@ -197,7 +197,6 @@ CHANGE_FILES = \
 	cogl.ch                 \
 	freeglut.ch             \
 	gdk-pixbuf.ch           \
-	goffice.ch              \
 	goffice010.ch           \
 	gtk+2.ch                \
 	gtk+3.ch                \
@@ -426,7 +425,6 @@ clutter-gtk.xml:          $(BOOKdir)/$@ $(srcdir)/clutter-gtk.ch
 cogl.xml:                 $(BOOKdir)/$@ $(srcdir)/cogl.ch
 freeglut.xml:             $(BOOKdir)/$@ $(srcdir)/freeglut.ch
 gdk-pixbuf.xml:           $(BOOKdir)/$@ $(srcdir)/gdk-pixbuf.ch
-goffice.xml:              $(BOOKdir)/$@ $(srcdir)/goffice.ch
 goffice010.xml:           $(BOOKdir)/$@ $(srcdir)/goffice010.ch
 gtk+2.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+2.ch
 gtk+3.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+3.ch

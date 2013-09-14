@@ -82,28 +82,24 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="samba"/></para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="samba"/></para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="keyutils"/>,
-      <xref linkend="libcap2"/>, and
-      <xref linkend="mitkrb"/> and
+      <xref linkend="mitkrb"/>,
+      <xref linkend="talloc"/>,
+      <xref linkend="samba"/>, and
+      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> or
+      <xref linkend="libcap2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="keyutils"/>,
-      <xref linkend="libcap2"/>,
-      <xref linkend="mitkrb"/> and
+      <xref linkend="mitkrb"/>,
+      <xref linkend="talloc"/>,
+      <xref linkend="samba"/>,
+      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> または
+      <xref linkend="libcap2"/>
     </para>
 @z
 

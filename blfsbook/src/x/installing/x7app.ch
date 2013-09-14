@@ -95,18 +95,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libpng"/>,
-    <xref linkend="mesalib"/> (required for OpenGL support),
-    <xref linkend="xbitmaps"/>,
-    <xref linkend="xcb-util"/>, and
-    <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="libpng"/>,
+      <xref linkend="mesalib"/>,
+      <xref linkend="xbitmaps"/>, and
+      <xref linkend="xcb-util"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libpng"/>,
-    <xref linkend="mesalib"/> (OpenGL サポートに必要),
-    <xref linkend="xbitmaps"/>,
-    <xref linkend="xcb-util"/>,
-    <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="libpng"/>,
+      <xref linkend="mesalib"/>,
+      <xref linkend="xbitmaps"/>,
+      <xref linkend="xcb-util"/>
+    </para>
 @z
 
 @x
@@ -166,11 +168,11 @@
 @z
 
 @x
-    <para>Install all of the applications by running the following
+    <para>Install all of the packages by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して個々のアプリケーションのインストールを行います。
+    以下のコマンドを実行して個々のパッケージのインストールを行います。
     </para>
 @z
 
@@ -202,18 +204,18 @@
         <seg>bdftopcf, iceauth, luit, mkfontdir, mkfontscale, sessreg,
         setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
-        xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
-        xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh,
-        xset, xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
+        xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkeystone, xkill,
+        xlsatoms, xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb,
+        xrefresh, xset, xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
         <seg>bdftopcf, iceauth, luit, mkfontdir, mkfontscale, sessreg,
         setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
-        xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
-        xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh,
-        xset, xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
+        xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkeystone, xkill,
+        xlsatoms, xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb,
+        xrefresh, xset, xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z
@@ -222,14 +224,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x appres
-          <para>lists the X application resource database.</para>
-@y
-          <para>
-          X アプリケーションのリソースデータベース (resource database) を一覧表示します。
-          </para>
 @z
 
 @x bdftopcf

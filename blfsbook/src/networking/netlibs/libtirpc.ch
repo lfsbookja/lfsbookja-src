@@ -84,7 +84,7 @@
 @z
 
 @x
-          Required Patch (Remove nis dependencies):
+          Required patch (Remove nis dependencies):
 @y
           必須のパッチ (nis への依存を削除):
 @z

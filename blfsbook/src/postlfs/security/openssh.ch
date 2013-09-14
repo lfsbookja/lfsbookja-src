@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "31 MB (additional 10 MB if running the tests)">
+  <!ENTITY openssh-buildsize     "35 MB (additional 10 MB if running the tests)">
   <!ENTITY openssh-time          "0.4 SBU (running the tests takes at least 10 minutes, irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "31 MB (テスト実施時は 10MB 追加)">
+  <!ENTITY openssh-buildsize     "35 MB (テスト実施時は 10MB 追加)">
   <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理性能には関係なく 10分ほど必要)">
 @z
 
@@ -103,7 +103,7 @@
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
-      <ulink url="http://www.opensc-project.org/">OpenSC</ulink> and
+      <ulink url="http://www.opensc-project.org/">OpenSC</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
 @y
@@ -122,7 +122,7 @@
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
     <para role="optional">
       <xref linkend="openjdk"/>,
-      <xref linkend="net-tools"/> and
+      <xref linkend="net-tools"/>, and
       <xref linkend="sysstat"/>.
     </para>
 @y
@@ -130,7 +130,7 @@
     <para role="optional">
       <xref linkend="openjdk"/>,
       <xref linkend="net-tools"/>,
-      <xref linkend="sysstat"/>
+      <xref linkend="sysstat"/>.
     </para>
 @z
 
@@ -395,7 +395,7 @@
 @x
         <seg>
           scp, sftp, sftp-server, slogin, ssh, sshd, ssh-add, ssh-agent,
-          ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign and
+          ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign, and
           ssh-pkcs11-helper
         </seg>
         <seg>
@@ -404,7 +404,7 @@
         <seg>
           /etc/ssh,
           /var/lib/sshd,
-          /usr/lib/openssh and
+          /usr/lib/openssh, and
           /usr/share/doc/openssh-&openssh-version;
         </seg>
 @y

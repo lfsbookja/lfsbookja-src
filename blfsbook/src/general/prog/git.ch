@@ -147,14 +147,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/> and
+      <xref linkend="pcre"/>,
+      <xref linkend="subversion"/> with Perl bindings (for <command>git svn</command>), and
       <xref linkend="tk"/> (gitk, a simple <application>Git</application>
       repository viewer, uses <application>Tk</application> at runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/> and
+      <xref linkend="pcre"/>,
+      Perl バインディングがビルドされた <xref linkend="subversion"/> (<command>git svn</command> にて必要),
       <xref linkend="tk"/> (簡易な <application>Git</application>リポジトリビューワー gitk が実行時に <application>Tk</application> を必要とします)
     </para>
 @z
@@ -334,13 +336,6 @@
     <sect3><title>Configuration Information</title>
 @y
     <sect3><title>&ConfigInfo;</title>
-@z
-
-@x
-        If you want to use <command>git svn</command> you will need to
-        install <xref linkend="subversion"/> and its Perl bindings.
-@y
-        <command>git svn</command> コマンドを利用したい場合は、<xref linkend="subversion"/> とその Perl バインディングをインストールする必要があります。
 @z
 
 @x

@@ -113,7 +113,9 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="apache"/>,
+<!-- support for berkeley db is deprecated since 1.8
       <xref linkend="db"/>,
+-->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
       <xref linkend="libgnome-keyring"/>,
@@ -125,7 +127,9 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="apache"/>,
+<!-- support for berkeley db is deprecated since 1.8
       <xref linkend="db"/>,
+-->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
       <xref linkend="libgnome-keyring"/>,

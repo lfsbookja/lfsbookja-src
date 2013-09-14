@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY notification-daemon-time          "less than 0.1 SBU">
-@y
-  <!ENTITY notification-daemon-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to Notification Daemon</title>
 @y
     <title>&IntroductionTo1;Notification Daemon&IntroductionTo2;</title>
@@ -137,9 +131,11 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -148,11 +144,17 @@
           notification-daemon
         </seg>
         <seg>
+          none
+        </seg>
+        <seg>
           /usr/lib/notification-daemon
         </seg>
 @y
         <seg>
           notification-daemon
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/lib/notification-daemon

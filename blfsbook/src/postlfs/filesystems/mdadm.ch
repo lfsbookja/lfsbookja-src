@@ -161,11 +161,11 @@
 @z
 
 @x
-        <seg>mdadm and mdmon</seg>
+        <seg>mdadm, mdmon and optionally mdassemble</seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>mdadm, mdmon</seg>
+        <seg>mdadm, mdmon, 任意ビルドにより mdassemble</seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z

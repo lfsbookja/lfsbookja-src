@@ -179,7 +179,7 @@
 
 @x
         <seg>
-          gnome-keyring, gnome-keyring-3 and gnome-keyring-daemon
+          gnome-keyring, gnome-keyring-3, and gnome-keyring-daemon
         </seg>
         <seg>
           gnome-keyring-pkcs11.so and pam_gnome_keyring.so

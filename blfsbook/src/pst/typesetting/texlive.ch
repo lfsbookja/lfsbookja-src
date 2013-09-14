@@ -175,9 +175,9 @@
     until their specific dependencies are installed.</para></note>
 @y
     <note><para>
+    以降においてインストールされる配布バイナリでは、<application>TeX Live</application> 内部ライブラリに対してのスタティックリンクが利用されています。
     
-The distribution binaries installed below use static linking
-    for internal <application>TeX Live</application> libraries.  Additional
+Additional
     libraries as specified in the dependencies section do not need to be
     present during the install, but the programs that need them will not run
     until their specific dependencies are installed.</para></note>
@@ -199,11 +199,11 @@ The distribution binaries installed below use static linking
     the download will depend on your internet connection speed and the
     number of packages selected.</para>
 @y
-    <para>This command is interactive and allows selection or modification of
-    platform, packages, directories, and other options.  The full installation
-    scheme will require about 3.5 gigabytes of disk space.  The time to complete
-    the download will depend on your internet connection speed and the
-    number of packages selected.</para>
+    <para>
+    このコマンドは対話実行を行うものであり、プラットフォーム、パッケージ、ディレクトリなどのオプション指定を行うことができます。
+    すべてのものをインストールするには 3.5 GB のディスク容量を必要とします。
+    ダウンロードに要する時間は、ご利用のインターネット接続の速度や、選択パッケージの量に依存します。
+    </para>
 @z
 
 @x

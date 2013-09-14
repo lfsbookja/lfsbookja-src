@@ -79,7 +79,7 @@
     <para role="required">
       <xref linkend="dconf"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="vte"/> and
+      <xref linkend="vte"/>, and
       <xref linkend="yelp-xsl"/>
     </para>
 @y

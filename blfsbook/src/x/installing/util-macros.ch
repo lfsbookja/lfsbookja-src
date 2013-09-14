@@ -133,11 +133,25 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg><envar>$XORG_PREFIX</envar>/share/util-macros</seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/share/pkgconfig and
+          <envar>$XORG_PREFIX</envar>/share/util-macros
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg><envar>$XORG_PREFIX</envar>/share/util-macros</seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/share/pkgconfig,
+          <envar>$XORG_PREFIX</envar>/share/util-macros
+        </seg>
 @z

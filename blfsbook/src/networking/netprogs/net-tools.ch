@@ -72,36 +72,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required Patch: <ulink
-        url="&patch-root;/net-tools-&net-tools-version;-gcc34-3.patch"/></para>
-@y
-        <para>必須のパッチ: <ulink
-        url="&patch-root;/net-tools-&net-tools-version;-gcc34-3.patch"/></para>
-@z
-
-@x
-        <para>Required Patch: <ulink
-        url="&patch-root;/net-tools-&net-tools-version;-kernel_headers-2.patch"/></para>
-@y
-        <para>必須のパッチ: <ulink
-        url="&patch-root;/net-tools-&net-tools-version;-kernel_headers-2.patch"/></para>
-@z
-
-@x
-        <para>Required Patch: <ulink
-        url="&patch-root;/net-tools-&net-tools-version;-mii_ioctl-1.patch"/></para>
-@y
-        <para>必須のパッチ: <ulink
-        url="&patch-root;/net-tools-&net-tools-version;-mii_ioctl-1.patch"/></para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/net-tools"/></para>
 @y

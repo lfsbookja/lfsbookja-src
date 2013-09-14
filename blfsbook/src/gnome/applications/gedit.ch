@@ -80,7 +80,7 @@
     <para role="required">
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtksourceview"/>,
-      <xref linkend="libpeas"/> and
+      <xref linkend="libpeas"/>, and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
@@ -96,10 +96,10 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="enchant"/> and
+      <xref linkend="enchant"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="gvfs"/>,
-      <xref linkend="libsoup"/> and
+      <xref linkend="libsoup"/>, and
       <xref linkend="pygobject3"/>
       (<application>Python</application> 3 module)
     </para>
@@ -111,7 +111,7 @@
       <xref linkend="gvfs"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="pygobject3"/>
-      (<application>Python</application> 3 モジュール)
+      (<application>Python</application> 3 module)
     </para>
 @z
 
@@ -207,7 +207,7 @@
           /usr/include/gedit-3.0,
           /usr/lib/gedit,
           /usr/share/gedit,
-          /usr/share/gtk-doc/html/gedit and
+          /usr/share/gtk-doc/html/gedit, and
           /usr/share/help/*/gedit
         </seg>
 @y

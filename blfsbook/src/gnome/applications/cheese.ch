@@ -86,7 +86,7 @@
       <xref linkend="libcanberra"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="udev"/> or
-      <xref linkend="udev-extras"/> (for GUdev) and
+      <xref linkend="udev-extras"/> (for GUdev), and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
@@ -100,8 +100,8 @@
       <xref linkend="gst10-plugins-good"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="librsvg"/>,
-      <xref linkend="udev"/> または
-      <xref linkend="udev-extras"/> (GUdev が必要),
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (GUdev のため),
       <xref linkend="yelp-xsl"/>
     </para>
 @z
@@ -154,9 +154,13 @@
 @z
 
 @x
-      To test the results, issue <command>make check</command>.
+      To test the results, issue <command>make check</command>.  The tests
+      must be run from a local xterm.  They cannot be run over a ssh
+      connection.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストはローカルの xterm から実行してください。
+      ssh 接続を通じての実行はできません。
 @z
 
 @x
@@ -197,7 +201,7 @@
         <seg>
           /usr/include/cheese,
           /usr/share/cheese,
-          /usr/share/gtk-doc/html/cheese and
+          /usr/share/gtk-doc/html/cheese, and
           /usr/share/help/*/cheese
         </seg>
 @y

@@ -155,32 +155,6 @@
 @z
 
 @x
-    <para><parameter>--enable-luit</parameter>: Enables the luit filter for
-    translation between Unicode (used by xterm internally in the configuration
-    below) and the locale encoding. If <command>luit</command> is not found
-    in the PATH, the default of
-    <filename>/usr/X11R6/bin/luit</filename> will be used.</para>
-@y
-    <para>
-    <parameter>--enable-luit</parameter>: Enables the luit filter for
-    translation between Unicode (used by xterm internally in the configuration
-    below) and the locale encoding. If <command>luit</command> is not found
-    in the PATH, the default of
-    <filename>/usr/X11R6/bin/luit</filename> will be used.
-    </para>
-@z
-
-@x
-    <para><parameter>--enable-wide-chars</parameter>: Adds support for wide
-    characters.</para>
-@y
-    <para>
-    <parameter>--enable-wide-chars</parameter>:
-    ワイド文字 (wide characters) の機能を追加します。
-    </para>
-@z
-
-@x
     <para><parameter>--with-app-defaults=...</parameter>: Sets the location
     for the <filename class="directory">app-defaults</filename>
     directory.</para>

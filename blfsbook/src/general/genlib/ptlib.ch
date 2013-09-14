@@ -93,7 +93,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="alsa-lib"/>,
-      <xref linkend="expat"/> and
+      <xref linkend="expat"/>, and
       <xref linkend="openssl"/>
     </para>
 @y
@@ -115,7 +115,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="sdl"/>,
-      <xref linkend="unixodbc"/> and
+      <xref linkend="unixodbc"/>, and
       <ulink url="http://linuxtv.org/downloads/v4l-utils/">Video4Linux</ulink>
     </para>
 @y
@@ -190,7 +190,7 @@
         <seg>
           /usr/include/ptclib,
           /usr/include/ptlib,
-          /usr/lib/ptlib-&ptlib-version; and
+          /usr/lib/ptlib-&ptlib-version;, and
           /usr/share/ptlib
         </seg>
 @y

@@ -83,7 +83,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="mesalib"/> and
+      <xref linkend="mesalib"/>, and
       <xref linkend="pango"/>
     </para>
 @y
@@ -112,7 +112,7 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="sdl"/>,
-      <ulink url="http://www.libsdl.org/tmp/release/">SDL2</ulink> and
+      <ulink url="http://www.libsdl.org/tmp/release/">SDL2</ulink>, and
       <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
 @y
@@ -187,7 +187,9 @@
           None
         </seg>
         <seg>
-          libcogl-gles2.so, libcogl-pango.so and libcogl.so
+          libcogl-gles2.so, 
+          libcogl-pango.so, and 
+          libcogl.so
        </seg>
         <seg>
          /usr/include/cogl and
@@ -198,7 +200,9 @@
           &None;
         </seg>
         <seg>
-          libcogl-gles2.so, libcogl-pango.so, libcogl.so
+          libcogl-gles2.so, 
+          libcogl-pango.so,
+          libcogl.so
        </seg>
         <seg>
          /usr/include/cogl,

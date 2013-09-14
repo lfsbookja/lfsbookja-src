@@ -208,7 +208,7 @@
         <seg>diffpp, enscript, mkafmmap, over, sliceprint,
         and states</seg>
         <seg>None</seg>
-        <seg>/etc/enscript, /usr/share/doc/enscript-&enscript-version; and
+        <seg>/etc/enscript, /usr/share/doc/enscript-&enscript-version;, and
         /usr/share/enscript</seg>
 @y
         <seg>diffpp, enscript, mkafmmap, over, sliceprint,

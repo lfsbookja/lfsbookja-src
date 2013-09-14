@@ -83,7 +83,7 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
-      <xref linkend="xkeyboard-config"/> and
+      <xref linkend="xkeyboard-config"/>, and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
@@ -197,7 +197,7 @@
           /usr/share/gtk-doc/html/gnome-desktop3,
           /usr/share/help/*/gpl,
           /usr/share/help/*/lgpl,
-          /usr/share/help/*/fdl and
+          /usr/share/help/*/fdl, and
           /usr/share/libgnome-desktop-3.0
         </seg>
 @y

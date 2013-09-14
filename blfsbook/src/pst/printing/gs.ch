@@ -15,14 +15,14 @@
 
 @x
   <!ENTITY gs-buildsize
-  "189 MB (includes installing libgs.so, add 5 MB if the fonts are installed)">
+  "127 MB (includes installing libgs.so, add 5 MB if the fonts are installed)">
   <!ENTITY gs-time
-  "2.2 SBU (includes building and installing libgs.so)">
+  "2.3 SBU (includes building and installing libgs.so)">
 @y
   <!ENTITY gs-buildsize
-  "189 MB (includes installing libgs.so, add 5 MB if the fonts are installed)">
+  "127 MB (includes installing libgs.so, add 5 MB if the fonts are installed)">
   <!ENTITY gs-time
-  "2.2 SBU (includes building and installing libgs.so)">
+  "2.3 SBU (includes building and installing libgs.so)">
 @z
 
 @x

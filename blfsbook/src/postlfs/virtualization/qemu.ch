@@ -73,18 +73,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required Patch: <ulink
-@y
-        <para>必須のパッチ: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">Qemu Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Qemu&Dependencies2;</bridgehead>

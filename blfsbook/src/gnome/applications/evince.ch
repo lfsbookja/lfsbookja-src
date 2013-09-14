@@ -84,7 +84,7 @@
     <para role="required">
       <xref linkend="gnome-icon-theme"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gtk3"/> and
+      <xref linkend="gtk3"/>, and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
@@ -102,7 +102,7 @@
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="nautilus"/> and
+      <xref linkend="nautilus"/>, and
       <xref linkend="poppler"/>
     </para>
 @y
@@ -122,7 +122,7 @@
       <xref linkend="gtk-doc"/>,
       <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
       <ulink url="http://live.gnome.org/libgxps">libgxps</ulink>,
-      <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink> and
+      <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
       <xref linkend="texlive"/>
     </para>
 @y
@@ -222,7 +222,7 @@
 
 @x
         <seg>
-          evince, evince-previewer and evince-thumbnailer
+          evince, evince-previewer, and evince-thumbnailer
         </seg>
         <seg>
           libevdocument3.so and libevview3.so
@@ -231,7 +231,7 @@
           /usr/include/evince,
           /usr/lib/evince,
           /usr/share/evince,
-          /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0} and
+          /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0}, and
           /usr/share/help/*/evince
         </seg>
 @y

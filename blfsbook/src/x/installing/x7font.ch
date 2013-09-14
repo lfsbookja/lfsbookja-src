@@ -88,12 +88,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-app"/> and
-    <xref linkend="xcursor-themes"/></para>
+    <para role="required">
+      <xref linkend="xcursor-themes"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="required"><xref linkend="xorg7-app"/>,
-    <xref linkend="xcursor-themes"/></para>
+    <para role="required">
+      <xref linkend="xcursor-themes"/>
+    </para>
 @z
 
 @x
@@ -145,11 +147,11 @@
 @z
 
 @x
-    <para>Install all of the applications by running the following
+    <para>Install all of the packages by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して個々のアプリケーションのインストールを行います。
+    以下のコマンドを実行して個々のパッケージのインストールを行います。
     </para>
 @z
 

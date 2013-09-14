@@ -78,22 +78,28 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libgsf"/>, <xref linkend="libpng"/>
+    <para role="required">
+      <xref linkend="libgsf"/> and
+      <xref linkend="libpng"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libgsf"/>, <xref linkend="libpng"/>
+    <para role="required">
+      <xref linkend="libgsf"/>,
+      <xref linkend="libpng"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><ulink
-    url="http://wvware.sourceforge.net/libwmf.html">libwmf</ulink></para>
+    <para role="optional">
+      <ulink url="http://wvware.sourceforge.net/libwmf.html">libwmf</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><ulink
-    url="http://wvware.sourceforge.net/libwmf.html">libwmf</ulink></para>
+    <para role="optional">
+      <ulink url="http://wvware.sourceforge.net/libwmf.html">libwmf</ulink>
+    </para>
 @z
 
 @x
@@ -158,7 +164,7 @@
 @z
 
 @x
-        <seg>wvSummary, and several other wv* programs which are deprecated in
+        <seg>wvSummary and several other wv* programs which are deprecated in
         favour of abiword: see
         <ulink url="http://wvware.sourceforge.net/"></ulink></seg>
         <seg>libwv-1.2.so</seg>

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "208 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "1.9 SBU (typical build - additional 20 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "150 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "1.9 SBU (typical build - additional 4 SBU to run the test suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "208 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "1.9 SBU (typical build - additional 20 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "150 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "1.9 SBU (typical build - additional 4 SBU to run the test suite)">
 @z
 
 @x

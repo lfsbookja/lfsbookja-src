@@ -153,7 +153,6 @@
       <xref linkend="gnutls"/>,
       <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>,
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
-      <!-- <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>, -->
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
       <xref linkend="lua"/>
     </para>
@@ -161,7 +160,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="pkgconfig"/>,
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (GUI フロントエンドをビルドするため),
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (GUI フロントエンドのビルドのため),
       <xref linkend="openssl"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="python2"/>,
@@ -169,7 +168,6 @@
       <xref linkend="gnutls"/>,
       <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>,
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
-      <!-- <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>, -->
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
       <xref linkend="lua"/>
     </para>
@@ -249,14 +247,6 @@
     ensure that only trusted users are allowed to view network traffic.  First,
     set up a system group for wireshark.  As the <systemitem
     class="username">root</systemitem> user:</para>
-@z
-
-@x
-    <para>There is one issues that prevents the build from completing
-    when generating the man pages.  Fix it up with:</para>
-@y
-    <para>There is one issues that prevents the build from completing
-    when generating the man pages.  Fix it up with:</para>
 @z
 
 @x

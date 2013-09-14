@@ -189,7 +189,7 @@
         </seg>
         <seg>
           /usr/include/vte-2.90,
-          /usr/lib/vte-2.90 and
+          /usr/lib/vte-2.90, and
           /usr/share/gtk-doc/html/vte-2.90
         </seg>
 @y

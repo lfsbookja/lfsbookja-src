@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY poppler-buildsize          "180 MB (excluding the encoding data) and
-           205 MB (including the encoding data)">
-@y
-  <!ENTITY poppler-buildsize          "180 MB (エンコーディングデータを除いた場合),
-           205 MB (エンコーディングデータを含めた場合)">
-@z
-
-@x
     <title>Introduction to Poppler</title>
 @y
     <title>&IntroductionTo1;Poppler&IntroductionTo2;</title>
@@ -142,7 +134,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="cairo"/>,
-      <xref linkend="libjpeg"/> and
+      <xref linkend="libjpeg"/>, and
       <xref linkend="libpng"/>
     </para>
 @y
@@ -164,7 +156,7 @@
       <xref linkend="libxml2"/>,
       <xref linkend="openjpeg"/>,
       <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
-      is needed for PDF support in <application>Okular</application>) and
+      is needed for PDF support in <application>Okular</application>), and
       <xref linkend="qt5"/>
     </para>
 @y
@@ -172,7 +164,7 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
+      <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="openjpeg"/>,

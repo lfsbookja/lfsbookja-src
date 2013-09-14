@@ -22,7 +22,7 @@
 @x
       <application>Polkit</application> is a toolkit for defining and handling
       authorizations. It is used for allowing unprivileged processes to
-      comminicate with privileged processes.
+      communicate with privileged processes.
 @y
       <application>Polkit</application> パッケージは、権限情報を定義し操作するためのツールキットです。
       非特権 (unprivileged) プロセス から特権 (privileged) プロセスへのアクセスを行う際に利用されます。

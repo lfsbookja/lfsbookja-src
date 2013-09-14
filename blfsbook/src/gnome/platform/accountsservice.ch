@@ -190,7 +190,7 @@
         <seg>
           /usr/include/accountsservice-1.0,
           /usr/lib/accountsservice,
-          /usr/share/gtk-doc/html/libaccountsservice and
+          /usr/share/gtk-doc/html/libaccountsservice, and
           /var/lib/AccountsService
         </seg>
 @y

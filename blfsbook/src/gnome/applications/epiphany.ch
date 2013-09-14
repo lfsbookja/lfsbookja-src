@@ -83,7 +83,7 @@
       <xref linkend="gcr"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="libwnck"/> and
+      <xref linkend="libwnck"/>, and
       <xref linkend="webkitgtk2"/>
     </para>
 @y
@@ -101,12 +101,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="nss"/>
+      <xref linkend="nss"/>,
+      <xref linkend="seahorse"/> (at runtime, for managing stored passwords)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="nss"/>
+      <xref linkend="nss"/>,
+      <xref linkend="seahorse"/> (at runtime, for managing stored passwords)
     </para>
 @z
 
