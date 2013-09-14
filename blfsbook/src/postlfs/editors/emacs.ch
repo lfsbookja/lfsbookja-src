@@ -87,14 +87,14 @@
     <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>,
     <xref linkend="libtiff"/>, and
-    <ulink url="http://sourceforge.net/projects/libungif">libungif</ulink></para>
+    <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>,
     <xref linkend="libtiff"/>,
-    <ulink url="http://sourceforge.net/projects/libungif">libungif</ulink></para>
+    <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink></para>
 @z
 
 @x
@@ -138,6 +138,17 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--with-gif=no</option>: This option is required if 
+    <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>
+    is not installed.</para>
+@y
+    <para><option>--with-gif=no</option>:
+    このオプションは <ulink
+    url="http://directory.fsf.org/wiki/Libungif">libungif</ulink> をインストールしていない場合に指定します。
+    </para>
 @z
 
 @x
