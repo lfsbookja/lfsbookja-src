@@ -63,13 +63,6 @@ AC_CONFIG_FILES([Makefile
 		 src/Makefile
 		 src/userconfig.xml
 		 src/appendices/Makefile
-		 src/bootscripts/Makefile
-		 src/bootscripts/lfs/Makefile
-		 src/bootscripts/lfs/init.d/Makefile
-		 src/bootscripts/lfs/lib/Makefile
-		 src/bootscripts/lfs/lib/services/Makefile
-		 src/bootscripts/lfs/sbin/Makefile
-		 src/bootscripts/lfs/sysconfig/Makefile
 		 src/chapter01/Makefile
 		 src/chapter02/Makefile
 		 src/chapter03/Makefile

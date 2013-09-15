@@ -248,7 +248,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
 	chapter06 chapter07 chapter08 chapter09 prologue stylesheets \
-	udev-lfs bootscripts
+	udev-lfs
 
 EXTRA_DIST = general.ch index.ch packages.ch patches.ch tidy.ch
 BOOKdir = @abs_bookdir@
@@ -604,7 +604,7 @@ stylesheets:
 
 _bootscripts:
 	$(MKDIR_P) bootscripts
-#cp -R $(BOOKdir)/bootscripts/* bootscripts
+	cp -pR $(BOOKdir)/bootscripts/* bootscripts
 
 udev-lfs:
 	$(MKDIR_P) udev-lfs
