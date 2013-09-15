@@ -145,10 +145,10 @@
     <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Note that if you have already installed <application>GnuPG
-    2</application>, the instructions below will overwrite
-    <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
-    <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <application>GnuPG 2</application> をインストールしている場合、以降の手順により <filename>/usr/share/man/man1/gpg-zip.1</filename> は上書きされます。
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x

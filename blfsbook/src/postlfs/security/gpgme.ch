@@ -140,6 +140,21 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-fd-passing</option>: This option disables
+    a problem causing a hang for some operations on some systems.</para>
+@y
+    <para><option>--disable-fd-passing</option>:
+    このオプションは、特定のシステムにて特定操作によりハングする問題を回避します。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

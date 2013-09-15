@@ -94,6 +94,14 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional"><xref linkend="linux-pam"/></para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional"><xref linkend="linux-pam"/></para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libcap2"/></para>
 @y
@@ -142,7 +150,16 @@
     <title>&CommandExplanations;</title>
 @z
 
-%%%
+@x
+    <para><parameter>RAISE_SETFCAP=no</parameter>: This parameter skips trying
+    to use <application>setcap</application> on itself.  This avoids an installation
+    error if the kernel or file system do not support extended capabilities.</para>
+@y
+    <para><parameter>RAISE_SETFCAP=no</parameter>:
+    このパラメーターは <application>setcap</application> を自身へは適用しないことを指示します。
+    これはカーネルあるいはファイルシステムが拡張属性をサポートしていない場合のインストールエラーを回避させるためです。
+    </para>
+@z
 
 @x
     <title>Contents</title>
@@ -179,14 +196,17 @@
 @x capsh
           <para>is a shell wrapper to explore and constrain capability support.</para>
 @y
-          <para>is a shell wrapper to explore and constrain capability support.</para>
+          <para>
+          
+          is a shell wrapper to explore and constrain capability support.
+          </para>
 @z
 
 @x getcap
           <para>examines file capabilities.</para>
 @y
           <para>
-          examines file capabilities.
+          ファイルの拡張属性を検査します。
           </para>
 @z
 
