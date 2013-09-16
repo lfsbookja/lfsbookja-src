@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          bootscript の md5sum 適正化。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           訳出漏れ修正。(src/appendices/dependencies.ch)
           </para>
         </listitem>
