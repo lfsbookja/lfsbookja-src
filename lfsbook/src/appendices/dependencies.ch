@@ -142,6 +142,30 @@
 @z
 
 %----------------------------------------------------------------------
+@x bc
+          <seg>Bash, Binutils, Bison, Coreutils, GCC, Glibc,
+          Grep, Make, and Readline</seg>
+@y
+          <seg>Bash, Binutils, Bison, Coreutils, GCC, Glibc,
+          Grep, Make, Readline</seg>
+@z
+@x
+          <seg>Gawk</seg>
+@y
+          <seg>Gawk</seg>
+@z
+@x
+          <seg>Linux Kernel</seg>
+@y
+          <seg>Linux カーネル</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x binutils
          <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc, Grep,
          Make, Perl, Sed, Texinfo and Zlib</seg>
@@ -196,6 +220,28 @@
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Make,
          Patch</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Check
+         <seg>GCC, Grep, Make, Sed, and Texinfo</seg>
+@y
+         <seg>GCC, Grep, Make, Sed, Texinfo</seg>
 @z
 @x
           <seg>None</seg>
@@ -796,6 +842,11 @@ Typo ですが日本語訳には影響ありません。
           <seg>Man-DB</seg>
 @y
           <seg>Man-DB</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 
 %----------------------------------------------------------------------
