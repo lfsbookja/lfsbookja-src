@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2013-09-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.11.1. Fixes
+          <ulink url="&lfs-ticket-root;3397">#3397</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Kbd-2.0.0. Fixes
+          <ulink url="&lfs-ticket-root;3390">#3390</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-09-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.11.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3397">#3397</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Kbd-2.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3390">#3390</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-09-13</para>
       <itemizedlist>
         <listitem>

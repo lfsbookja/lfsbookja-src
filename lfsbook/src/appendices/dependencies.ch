@@ -714,11 +714,11 @@ Typo ですが日本語訳には影響ありません。
 
 %----------------------------------------------------------------------
 @x Kbd
-         <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-         Gzip, Make, Patch, and Sed</seg>
+         <seg>Bash, Binutils, Bison, Check, Coreutils, Flex, GCC, Gettext,
+         Glibc, Gzip, Make, Patch, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-         Gzip, Make, Patch, Sed</seg>
+         <seg>Bash, Binutils, Bison, Check, Coreutils, Flex, GCC, Gettext,
+         Glibc, Gzip, Make, Patch, Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>

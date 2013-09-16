@@ -49,12 +49,6 @@
 @z
 
 @x
-    <para>Fix a bug that causes some keymaps not to be loaded correctly:</para>
-@y
-    <para>キーマップが正しくロードされないものがあるため、これを修正します。</para>
-@z
-
-@x
     <para>Remove the redundant <command>resizecons</command> program (it requires
     the defunct svgalib to provide the video mode files - for normal use
     <command>setfont</command> sizes the console appropriately) together with its
@@ -107,9 +101,11 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>&NotExistTestsuite;</para>
+    <para>
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
 @z
 
 @x
