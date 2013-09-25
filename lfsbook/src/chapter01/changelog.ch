@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2013-09-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.54. Fixes
+          <ulink url="&lfs-ticket-root;3398">#3398</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tcl-8.6.1. Fixes
+          <ulink url="&lfs-ticket-root;3399">#3399</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to M4-1.4.17. Fixes
+          <ulink url="&lfs-ticket-root;3401">#3401</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-09-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.54 へのアップデート。
+          <ulink url="&lfs-ticket-root;3398">#3398</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl-8.6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3399">#3399</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - M4-1.4.17 へのアップデート。
+          <ulink url="&lfs-ticket-root;3401">#3401</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-09-15</para>
       <itemizedlist>
         <listitem>
