@@ -47,7 +47,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib
+subdir = src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
@@ -185,14 +185,18 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib
-EXTRA_DIST = lib.ch
-srcs = lib.xsl
-SUFFIXES = .ch .xsl
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling
+EXTRA_DIST = profile.ch profile-mode.ch strip-attributes.ch \
+	xsl2profile.ch
+
+srcs = profile.xsl profile-mode.xsl strip-attributes.xsl \
+	xsl2profile.xsl
+
+SUFFIXES = .ch .xsl .xml
 all: all-am
 
 .SUFFIXES:
-.SUFFIXES: .ch .xsl
+.SUFFIXES: .ch .xsl .xml
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -202,9 +206,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile
+	  $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -381,7 +385,10 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-lib.xsl: $(BOOKdir)/$@ $(srcdir)/lib.ch
+profile.xsl:          $(BOOKdir)/$@ $(srcdir)/profile.ch
+profile-mode.xsl:     $(BOOKdir)/$@ $(srcdir)/profile-mode.ch
+strip-attributes.xsl: $(BOOKdir)/$@ $(srcdir)/strip-attributes.ch
+xsl2profile.xsl:      $(BOOKdir)/$@ $(srcdir)/xsl2profile.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -75,14 +75,14 @@ AC_CONFIG_FILES([Makefile
 		 src/prologue/Makefile
 		 src/stylesheets/Makefile
 		 src/stylesheets/lfs-xsl/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/common/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/common/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/highlighting/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/html/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/lib/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/xhtml/Makefile
 		 src/stylesheets/lfs-xsl/pdf/Makefile
 		 src/stylesheets/lfs-xsl/xhtml/Makefile
 		 src/udev-lfs/Makefile

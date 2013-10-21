@@ -79,14 +79,6 @@
         <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
 @z
 
-@x Make Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&make-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&make-fixes-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&make-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&make-fixes-patch-md5;</literal></para>
-@z
-
 @x Perl Libc Patch
         <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>

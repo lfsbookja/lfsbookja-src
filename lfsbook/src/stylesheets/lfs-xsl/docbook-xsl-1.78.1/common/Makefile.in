@@ -47,7 +47,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html
+subdir = src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/common
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
@@ -185,14 +185,24 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/html
-EXTRA_DIST = chunker.ch
-srcs = chunker.xsl
-SUFFIXES = .ch .xsl
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/common
+EXTRA_DIST = common.ch gentext.ch insertfile.ch l10n.ch labels.ch \
+	olink.ch pi.ch refentry.ch stripns.ch subtitles.ch \
+	table.ch targets.ch titles.ch utility.ch \
+	l10n_xml.ch ja_xml.ch
+
+srcs = common.xsl gentext.xsl insertfile.xsl l10n.xsl labels.xsl \
+	olink.xsl pi.xsl refentry.xsl stripns.xsl subtitles.xsl \
+	table.xsl targets.xsl titles.xsl utility.xsl \
+	l10n.xml ja.xml l10n.dtd \
+	de.xml en.xml es.xml fr.xml it.xml zh_cn.xml zh_tw.xml \
+	entities.ent
+
+SUFFIXES = .ch .xsl .xml
 all: all-am
 
 .SUFFIXES:
-.SUFFIXES: .ch .xsl
+.SUFFIXES: .ch .xsl .xml
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -202,9 +212,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/common/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile
+	  $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/common/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -375,13 +385,52 @@ uninstall-am:
 
 .ch.xsl:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+.ch.xml:
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 
 all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-chunker.xsl: $(BOOKdir)/$@ $(srcdir)/chunker.ch
+common.xsl:     $(BOOKdir)/$@ $(srcdir)/common.ch
+gentext.xsl:    $(BOOKdir)/$@ $(srcdir)/gentext.ch
+insertfile.xsl: $(BOOKdir)/$@ $(srcdir)/insertfile.ch
+l10n.xsl:       $(BOOKdir)/$@ $(srcdir)/l10n.ch
+labels.xsl:     $(BOOKdir)/$@ $(srcdir)/labels.ch
+olink.xsl:      $(BOOKdir)/$@ $(srcdir)/olink.ch
+pi.xsl:         $(BOOKdir)/$@ $(srcdir)/pi.ch
+refentry.xsl:   $(BOOKdir)/$@ $(srcdir)/refentry.ch
+stripns.xsl:    $(BOOKdir)/$@ $(srcdir)/stripns.ch
+subtitles.xsl:  $(BOOKdir)/$@ $(srcdir)/subtitles.ch
+table.xsl:      $(BOOKdir)/$@ $(srcdir)/table.ch
+targets.xsl:    $(BOOKdir)/$@ $(srcdir)/targets.ch
+titles.xsl:     $(BOOKdir)/$@ $(srcdir)/titles.ch
+utility.xsl:    $(BOOKdir)/$@ $(srcdir)/utility.ch
+
+l10n.xml: $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch
+ja.xml: $(srcdir)/ja_xml.ch
+	cp $(srcdir)/ja_xml.ch $@
+
+l10n.dtd: $(BOOKdir)/$@
+	cp $(BOOKdir)/$@ $@
+de.xml: $(BOOKdir)/$@
+	cp $(BOOKdir)/$@ $@
+en.xml: $(BOOKdir)/$@
+	cp $(BOOKdir)/$@ $@
+es.xml: $(BOOKdir)/$@
+	cp $(BOOKdir)/$@ $@
+fr.xml: $(BOOKdir)/$@
+	cp $(BOOKdir)/$@ $@
+it.xml: $(BOOKdir)/$@
+	cp $(BOOKdir)/$@ $@
+zh_cn.xml: $(BOOKdir)/$@
+	cp $(BOOKdir)/$@ $@
+zh_tw.xml: $(BOOKdir)/$@
+	cp $(BOOKdir)/$@ $@
+entities.ent:
+	cp -p $(BOOKdir)/$@ $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

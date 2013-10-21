@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/xhtml
 EXTRA_DIST = admon.ch annotations.ch autoidx-kimber.ch autoidx-kosek.ch \
 	autoidx-ng.ch autoidx.ch autotoc.ch biblio-iso690.ch \
 	biblio.ch block.ch callout.ch changebars.ch chunk-code.ch \
@@ -55,7 +55,8 @@ biblio-iso690.xsl: $(BOOKdir)/$@ $(srcdir)/biblio-iso690.ch
 biblio.xsl: $(BOOKdir)/$@ $(srcdir)/biblio.ch
 block.xsl: $(BOOKdir)/$@ $(srcdir)/block.ch
 callout.xsl: $(BOOKdir)/$@ $(srcdir)/callout.ch
-changebars.xsl: $(BOOKdir)/$@ $(srcdir)/changebars.ch
+changebars.xsl: $(BOOKdir)/$@
+	cp -p $(BOOKdir)/$@ $@
 chunk-code.xsl: $(BOOKdir)/$@ $(srcdir)/chunk-code.ch
 chunk-common.xsl: $(BOOKdir)/$@ $(srcdir)/chunk-common.ch
 	cp -p $(BOOKdir)/$@ $@
@@ -69,12 +70,14 @@ docbook.xsl: $(BOOKdir)/$@ $(srcdir)/docbook.ch
 ebnf.xsl: $(BOOKdir)/$@ $(srcdir)/ebnf.ch
 footnote.xsl: $(BOOKdir)/$@ $(srcdir)/footnote.ch
 formal.xsl: $(BOOKdir)/$@ $(srcdir)/formal.ch
-glossary.xsl: $(BOOKdir)/$@ $(srcdir)/glossary.ch
+glossary.xsl: $(BOOKdir)/$@
+	cp -p $(BOOKdir)/$@ $@
 graphics.xsl: $(BOOKdir)/$@ $(srcdir)/graphics.ch
 highlight.xsl: $(BOOKdir)/$@ $(srcdir)/highlight.ch
 html-rtf.xsl: $(BOOKdir)/$@ $(srcdir)/html-rtf.ch
 html.xsl: $(BOOKdir)/$@ $(srcdir)/html.ch
-htmltbl.xsl: $(BOOKdir)/$@ $(srcdir)/htmltbl.ch
+htmltbl.xsl: $(BOOKdir)/$@
+	cp -p $(BOOKdir)/$@ $@
 index.xsl: $(BOOKdir)/$@ $(srcdir)/index.ch
 info.xsl: $(BOOKdir)/$@ $(srcdir)/info.ch
 inline.xsl: $(BOOKdir)/$@ $(srcdir)/inline.ch

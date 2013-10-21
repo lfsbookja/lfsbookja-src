@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>Fix an incompatibility between the test suite and Perl-&perl-version;:</para>
-@y
-    <para>
-    テストスイートと Perl-&perl-version; が非互換である点を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Texinfo for compilation:</para>
 @y
     <para>&PreparePackage1;Texinfo&PreparePackage2;</para>
@@ -46,14 +38,6 @@
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
-@z
-
-@x
-    <note><para>One test in the test suite fails due to out of date
-    perl code.</para></note>
-@y
-    <note><para>テストスイートにて１つのテストは失敗します。
-    これは古くなった perl コードが用いられているためです。</para></note>
 @z
 
 @x

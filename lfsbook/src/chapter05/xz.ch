@@ -15,12 +15,12 @@
 
 @x
   <indexterm zone="ch-tools-xz">
-    <primary sortas="a-xz">xz</primary>
+    <primary sortas="a-xz">Xz</primary>
     <secondary>tools</secondary>
   </indexterm>
 @y
   <indexterm zone="ch-tools-xz">
-    <primary sortas="a-xz">xz</primary>
+    <primary sortas="a-xz">Xz</primary>
     <secondary>&Tools;</secondary>
   </indexterm>
 @z

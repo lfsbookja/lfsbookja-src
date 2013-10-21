@@ -74,6 +74,14 @@
     <para>アップストリームの変更の中に、元に戻すことが必要なものがあります。</para>
 @z
 
+@x
+    <para>Allow Glibc to be built with Make-&make-version;:</para>
+@y
+    <para>
+    Make-&make-version; を用いて Glibc がビルドできるようにします。
+    </para>
+@z
+
 % @x
 %     <para>Fix a problem that causes the build to fail in the LFS environment:</para>
 % @y

@@ -49,6 +49,14 @@
 @z
 
 @x
+    <para>Allow Glibc to be built using Make-&make-version;:</para>
+@y
+    <para>
+    Make-&make-version; を用いて Glibc がビルドできるようにします。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y

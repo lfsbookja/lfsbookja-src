@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling
 EXTRA_DIST = profile.ch profile-mode.ch strip-attributes.ch \
 	xsl2profile.ch
 srcdir = @srcdir@

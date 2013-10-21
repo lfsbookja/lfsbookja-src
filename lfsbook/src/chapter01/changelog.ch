@@ -48,6 +48,184 @@
 @z
 
 @x
+      <para>2013-10-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.11.6. Fixes
+          <ulink url="&lfs-ticket-root;3414">#3414</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-10-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.11.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3414">#3414</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-10-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to GCC-4.8.2. Fixes
+          <ulink url="&lfs-ticket-root;3413">#3413</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-10-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - GCC-4.8.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3413">#3413</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.11.5. Fixes
+          <ulink url="&lfs-ticket-root;3411">#3411</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.11.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3411">#3411</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-10-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Make 4.0. Fixes
+          <ulink url="&lfs-ticket-root;3410">#3410</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Tar 1.27. Fixes
+          <ulink url="&lfs-ticket-root;3409">#3409</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-10-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Make 4.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3410">#3410</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tar 1.27 へのアップデート。
+          <ulink url="&lfs-ticket-root;3409">#3409</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-10-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update stylesheets to docbook-xsl-1.78.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-10-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - スタイルシートを docbook-xsl-1.78.1 へアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-10-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Use xz version of M4 tarball.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Linux 3.11.4. Fixes
+          <ulink url="&lfs-ticket-root;3408">#3408</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-10-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - M4 tarball の xz 版を利用することに。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux 3.11.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3408">#3408</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Udev 208 (extracted from systemd-208). Fixes
+          <ulink url="&lfs-ticket-root;3406">#3406</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2013g. Fixes
+          <ulink url="&lfs-ticket-root;3400">#3400</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to File-5.15. Fixes
+          <ulink url="&lfs-ticket-root;3402">#3402</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.11.3. Fixes
+          <ulink url="&lfs-ticket-root;3403">#3403</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-5.2. Fixes
+          <ulink url="&lfs-ticket-root;3404">#3404</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-5.1.3. Fixes
+          <ulink url="&lfs-ticket-root;3405">#3405</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Udev 208 へのアップデート。(systemd-208 より)
+          <ulink url="&lfs-ticket-root;3406">#3406</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2013g へのアップデート。
+          <ulink url="&lfs-ticket-root;3400">#3400</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - File-5.15 へのアップデート。
+          <ulink url="&lfs-ticket-root;3402">#3402</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.11.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3403">#3403</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - texinfo-5.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3404">#3404</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gmp-5.1.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3405">#3405</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-09-23</para>
       <itemizedlist>
         <listitem>

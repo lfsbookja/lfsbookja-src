@@ -38,6 +38,23 @@
 @z
 
 @x
+      <title>The meaning of the configure option:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+@z
+
+@x --without-guile
+          <para>This ensures that Make-&make-version; won't link against Guile libraries, which
+          may be present on the host system, but won't be available within the
+          <command>chroot</command> environment in the next chapter.</para>
+@y
+          <para>
+          Make-&make-version; のビルドにおいて Guile ライブラリはリンクしないようにします。
+          そのライブラリはホストシステム上に存在しているかもしれませんが、次節での <command>chroot</command> 環境では利用できないかもしれません。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

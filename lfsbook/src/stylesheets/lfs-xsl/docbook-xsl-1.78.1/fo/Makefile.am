@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo
 srcdir = @srcdir@
 EXTRA_DIST = lists.ch param.ch titlepage.ch xref.ch
 srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl

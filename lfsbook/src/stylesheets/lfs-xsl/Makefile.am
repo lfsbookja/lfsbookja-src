@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=docbook-xsl-snapshot pdf xhtml
+SUBDIRS=docbook-xsl-1.78.1 pdf xhtml
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl
 EXTRA_DIST = chunk-master.ch chunk-slave.ch chunkfast.ch common.ch \
 	nochunks.ch pdf.ch profile.ch lfs-l10n.ch \
