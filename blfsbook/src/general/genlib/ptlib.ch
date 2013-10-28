@@ -72,21 +72,21 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Ptlib Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Ptlib&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="pkgconfig"/>
-    </para>
+          Required patch:
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="pkgconfig"/>
-    </para>
+          必須のパッチ:
+@z
+
+@x
+    <bridgehead renderas="sect3">Ptlib Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Ptlib&Dependencies2;</bridgehead>
 @z
 
 @x

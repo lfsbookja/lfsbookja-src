@@ -205,6 +205,7 @@ CHANGE_FILES = \
 	gtk-engines.ch          \
 	hicolor-icon-theme.ch   \
 	lib.ch                  \
+	libdrm.ch               \
 	libnotify.ch            \
 	libxklavier.ch          \
 	pango.ch                \
@@ -438,6 +439,7 @@ hicolor-icon-theme.xml:   $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
 #	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 #	cp -p $(BOOKdir)/$@{.orig,}
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
+libdrm.xml:               $(BOOKdir)/$@ $(srcdir)/libdrm.ch
 libnotify.xml:            $(BOOKdir)/$@ $(srcdir)/libnotify.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch

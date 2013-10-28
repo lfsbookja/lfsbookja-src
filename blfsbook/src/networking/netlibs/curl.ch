@@ -84,10 +84,23 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="cacerts"/> and
+      <xref linkend="openssl"/> or <xref linkend="gnutls"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="cacerts"/>,
+      <xref linkend="openssl"/> または <xref linkend="gnutls"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
-      <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
       <xref linkend="libidn"/>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="http://www.libssh2.org">libssh2</ulink>,
@@ -100,7 +113,6 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
-      <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
       <xref linkend="libidn"/>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="http://www.libssh2.org">libssh2</ulink>,

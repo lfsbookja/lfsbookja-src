@@ -83,15 +83,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
-      <xref linkend="qt4"/>, and
-      <xref linkend="redland"/>
+      <xref linkend="qt4"/>,
+      <xref linkend="redland"/>, and
+      <xref linkend="clucene"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
       <xref linkend="qt4"/>,
-      <xref linkend="redland"/>
+      <xref linkend="redland"/>,
+      <xref linkend="clucene"/>
     </para>
 @z
 
@@ -115,17 +117,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (to build the documentation),
-      <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
-      (no longer required to use Soprano in KDE), and
+      <xref linkend="doxygen"/> (to build the documentation) and
       <ulink url="http://www.openrdf.org/">Sesame2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (ドキュメントビルドのため),
-      <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
-      (no longer required to use Soprano in KDE),
+      <xref linkend="doxygen"/> (to build the documentation) and
       <ulink url="http://www.openrdf.org/">Sesame2</ulink>
     </para>
 @z
@@ -242,7 +240,7 @@
           onto2vocabularyclass, sopranocmd, and sopranod
         </seg>
         <seg>
-          libsopranoclient.so, libsopranoserver.so, and libsoprano.so
+          libsopranoclient.so, libsopranoindex.so, libsopranoserver.so, and libsoprano.so
         </seg>
         <seg>
           /usr/include/soprano,
@@ -255,7 +253,7 @@
           onto2vocabularyclass, sopranocmd, sopranod
         </seg>
         <seg>
-          libsopranoclient.so, libsopranoserver.so, libsoprano.so
+          libsopranoclient.so, libsopranoindex.so, libsopranoserver.so, libsoprano.so
         </seg>
         <seg>
           /usr/include/soprano,

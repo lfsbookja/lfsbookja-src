@@ -94,14 +94,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libcap2"/>,
+      <xref linkend="libcap"/>,
       <xref linkend="libxml2"/>, and
       <xref linkend="openssl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libcap2"/>,
+      <xref linkend="libcap"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="openssl"/>
     </para>

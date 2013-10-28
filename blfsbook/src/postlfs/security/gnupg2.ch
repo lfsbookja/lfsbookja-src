@@ -14,31 +14,27 @@
 @z
 
 @x
-    <title>Introduction to GnuPG 2</title>
+    <title>Introduction to GnuPG</title>
 @y
-    <title>&IntroductionTo1;GnuPG 2&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GnuPG&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>GnuPG 2</application> package is GNU's tool for
+    <para>The <application>GnuPG</application> package is GNU's tool for
     secure communication and data storage. It can be used to encrypt data and
     to create digital signatures. It includes an advanced key management
     facility and is compliant with the proposed OpenPGP Internet standard as
     described in RFC2440 and the S/MIME standard as described by several RFCs.
     GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP and
-    S/MIME. It does not conflict with an installed <xref linkend="gnupg"/>
-    OpenPGP-only version.</para>
+    S/MIME.</para>
 @y
-    <para>
-    The <application>GnuPG 2</application> package is GNU's tool for
+    <para>The <application>GnuPG</application> package is GNU's tool for
     secure communication and data storage. It can be used to encrypt data and
     to create digital signatures. It includes an advanced key management
     facility and is compliant with the proposed OpenPGP Internet standard as
     described in RFC2440 and the S/MIME standard as described by several RFCs.
     GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP and
-    S/MIME. It does not conflict with an installed <xref linkend="gnupg"/>
-    OpenPGP-only version.
-    </para>
+    S/MIME.</para>
 @z
 
 @x
@@ -139,13 +135,13 @@
 @z
 
 @x
-    <title>Installation of GnuPG 2</title>
+    <title>Installation of GnuPG</title>
 @y
-    <title>&InstallationOf1;GnuPG 2&InstallationOf2;</title>
+    <title>&InstallationOf1;GnuPG&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>GnuPG 2</application> by running the following
+    <para>Install <application>GnuPG</application> by running the following
     commands:</para>
 @y
     <para>

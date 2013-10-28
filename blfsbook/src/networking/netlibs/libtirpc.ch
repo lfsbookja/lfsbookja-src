@@ -78,12 +78,6 @@
 @z
 
 @x
-          Required header tar file (Add rpc/nis headers):
-@y
-          必須のヘッダー tar ファイル (rpc/nis ヘッダーの追加):
-@z
-
-@x
           Required patch (Remove nis dependencies):
 @y
           必須のパッチ (nis への依存を削除):
@@ -93,18 +87,6 @@
     <bridgehead renderas="sect3">libtirpc Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libtirpc&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="pkgconfig"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="pkgconfig"/>
-    </para>
 @z
 
 @x
@@ -129,15 +111,6 @@
     <title>Installation of libtirpc</title>
 @y
     <title>&InstallationOf1;libtirpc&InstallationOf2;</title>
-@z
-
-@x
-      In LFS-7.1 the NIS and RPC related headers were not installed by default.
-      If that applies to your system, install them by running the following
-      command as the <systemitem class="username">root</systemitem> user:
-@y
-      LFS-7.1 において、NIS および RPC に関連するヘッダーファイルは、デフォルトではインストールされません。
-      これらを導入するには <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行しインストールします。
 @z
 
 @x
@@ -204,7 +177,7 @@
           None
         </seg>
         <seg>
-          libtirpc.{so,a}
+          libtirpc.so
         </seg>
         <seg>
           /usr/include/libtirpc
@@ -214,7 +187,7 @@
           &None;
         </seg>
         <seg>
-          libtirpc.{so,a}
+          libtirpc.so
         </seg>
         <seg>
           /usr/include/libtirpc

@@ -35,10 +35,8 @@ CHANGE_FILES = \
 	libXau.ch              \
 	libxcb.ch              \
 	libXdmcp.ch            \
-	libXp.ch               \
 	makedepend.ch          \
 	mesalib.ch             \
-	printproto.ch          \
 	twm.ch                 \
 	util-macros.ch         \
 	x7app.ch               \
@@ -103,10 +101,8 @@ libvdpau.xml:            $(BOOKdir)/$@ $(srcdir)/libvdpau.ch
 libXau.xml:              $(BOOKdir)/$@ $(srcdir)/libXau.ch
 libxcb.xml:              $(BOOKdir)/$@ $(srcdir)/libxcb.ch
 libXdmcp.xml:            $(BOOKdir)/$@ $(srcdir)/libXdmcp.ch
-libXp.xml:               $(BOOKdir)/$@ $(srcdir)/libXp.ch
 makedepend.xml:          $(BOOKdir)/$@ $(srcdir)/makedepend.ch
 mesalib.xml:             $(BOOKdir)/$@ $(srcdir)/mesalib.ch
-printproto.xml:          $(BOOKdir)/$@ $(srcdir)/printproto.ch
 twm.xml:                 $(BOOKdir)/$@ $(srcdir)/twm.ch
 util-macros.xml:         $(BOOKdir)/$@ $(srcdir)/util-macros.ch
 x7app.xml:               $(BOOKdir)/$@ $(srcdir)/x7app.ch

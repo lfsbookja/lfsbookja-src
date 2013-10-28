@@ -92,11 +92,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="which"/> (Required for test suite)
+      <xref linkend="lua"/> and
+      <xref linkend="which"/> (required for test suite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="lua"/> and
       <xref linkend="which"/> (テストスイート実行時に必要)
     </para>
 @z

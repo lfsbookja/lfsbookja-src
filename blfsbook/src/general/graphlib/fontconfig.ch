@@ -122,11 +122,11 @@
         If you have <application>DocBook Utils</application> installed and
         you remove the <parameter>--disable-docs</parameter> parameter from
         the <command>configure</command> command below, you must have
-        <xref linkend="perl-sgmlspm"/> installed also, or the 
-        <application>Fontconfig</application> build will fail.
+        <xref linkend="perl-sgmlspm"/> and <xref linkend="texlive"/> installed
+        also, or the <application>Fontconfig</application> build will fail.
 @y
         <application>DocBook Utils</application> をインストール済であって、以下の <command>configure</command> スクリプトにおいてパラメーター <parameter>--disable-docs</parameter> を取り除くのであれば、<xref
-        linkend="perl-sgmlspm"/> をインストールしておかなければなりません。
+        linkend="perl-sgmlspm"/> と <xref linkend="texlive"/> をインストールしておかなければなりません。
         そうしておかないと <application>Fontconfig</application> のビルドは失敗します。
 @z
 

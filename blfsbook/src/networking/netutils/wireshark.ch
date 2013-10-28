@@ -144,7 +144,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pkgconfig"/>,
       <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (to build the GUI front-end),
       <xref linkend="openssl"/>,
       <xref linkend="mitkrb"/>,
@@ -159,8 +158,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pkgconfig"/>,
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (GUI フロントエンドのビルドのため),
+      <xref linkend="gtk2"/> または <xref linkend="gtk3"/> (GUI フロントエンド生成のため),
       <xref linkend="openssl"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="python2"/>,
@@ -294,12 +292,12 @@
 @z
 
 @x
-    <para><option>--with-ssl</option>: This parameter is required if you
+    <para><option>--with-ssl</option>: This option is required if you
     are linking Kerberos libraries into the build so that the
     <application>OpenSSL</application>
     <filename class='libraryfile'>libcrypto</filename> library is found.</para>
 @y
-    <para><option>--with-ssl</option>: This parameter is required if you
+    <para><option>--with-ssl</option>: This option is required if you
     are linking Kerberos libraries into the build so that the
     <application>OpenSSL</application>
     <filename class='libraryfile'>libcrypto</filename> library is found.</para>

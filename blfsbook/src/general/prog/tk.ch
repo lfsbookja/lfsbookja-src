@@ -108,16 +108,19 @@
 @z
 
 @x
-      Running the tests is not recommended. Some tests may crash your X
-      Server. To test the results anyway, issue: <command>make test</command>.
-      Ensure you run it from an X Window display device with the GLX extensions
-      loaded, otherwise the tests will hang.
+      Running the tests is not recommended. Failures will occur in the tests,
+      depending on the screen resolution/capabilities, fonts installed and
+      other X related parameters. Some tests may crash your X Server. To test
+      the results anyway, issue: <command>make test</command>. Ensure you run
+      it from an X Window display device with the GLX extensions loaded, but
+      even so, tests may hang.
 @y
-      テストを実施することはお勧めしません。
-      テストの中には X サーバーをクラッシュさせるものもあります。
-      それでもテストする場合には <command>make test</command> を実行します。
-      ただしテストの実行は X ウィンドウディスプレイにて GLX 拡張モジュールがロードされている状態で行ってください。
-      これを行っておかないとテストがハングします。
+      Running the tests is not recommended. Failures will occur in the tests,
+      depending on the screen resolution/capabilities, fonts installed and
+      other X related parameters. Some tests may crash your X Server. To test
+      the results anyway, issue: <command>make test</command>. Ensure you run
+      it from an X Window display device with the GLX extensions loaded, but
+      even so, tests may hang.
 @z
 
 @x

@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY rsync-buildsize     "35 MB (includes installing all documentation)">
-@y
-  <!ENTITY rsync-buildsize     "35 MB (すべてのドキュメントのインストールを含む)">
-@z
-
-@x
     <title>Introduction to rsync</title>
 @y
     <title>&IntroductionTo1;rsync&IntroductionTo2;</title>
@@ -153,16 +147,6 @@
 @y
     <para>
     <xref linkend="doxygen"/> をインストールしていて、HTML API ドキュメントをビルドしたい場合は <command>doxygen</command> を実行します。
-    </para>
-@z
-
-@x
-    <para>If you have <xref linkend="docbook-utils"/> installed and wish to
-    build the user documentation, issue any or all of the following
-    commands:</para>
-@y
-    <para>
-    <xref linkend="docbook-utils"/> をインストールしていて、ユーザードキュメントをビルドした場合は、以下のいずれかのコマンドを実行します。
     </para>
 @z
 

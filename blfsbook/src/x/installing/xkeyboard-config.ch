@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY xkeyboard-config-time          "less than 0.1 SBU">
-@y
-  <!ENTITY xkeyboard-config-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to XKeyboardConfig</title>
 @y
     <title>&IntroductionTo1;XKeyboardConfig&IntroductionTo2;</title>

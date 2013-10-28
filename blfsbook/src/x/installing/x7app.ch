@@ -202,7 +202,7 @@
 
 @x
         <seg>bdftopcf, iceauth, luit, mkfontdir, mkfontscale, sessreg,
-        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
+        setxkbmap, smproxy, test_xauth, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
         xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkeystone, xkill,
         xlsatoms, xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb,
@@ -211,11 +211,11 @@
         <seg>None</seg>
 @y
         <seg>bdftopcf, iceauth, luit, mkfontdir, mkfontscale, sessreg,
-        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
+        setxkbmap, smproxy, test_xauth, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
         xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkeystone, xkill,
         xlsatoms, xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb,
-        xrefresh, xset, xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
+        xrefresh, xset, xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z

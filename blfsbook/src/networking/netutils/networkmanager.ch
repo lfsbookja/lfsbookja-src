@@ -88,7 +88,6 @@
       <xref linkend="intltool"/>,
       <xref linkend="libnl"/>,
       <xref linkend="nss"/>, and
-      <xref linkend="udev"/> or
       <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @y
@@ -98,7 +97,6 @@
       <xref linkend="intltool"/>,
       <xref linkend="libnl"/>,
       <xref linkend="nss"/>,
-      <xref linkend="udev"/> または
       <xref linkend="udev-extras"/> (GUdev 用)
     </para>
 @z
@@ -284,8 +282,9 @@
           /usr/lib/NetworkManager,
           /usr/share/gtk-doc/html/libnm-glib,
           /usr/share/gtk-doc/html/libnm-util,
-          /usr/share/gtk-doc/html/NetworkManager, and
-          /var/lib/NetworkManager
+          /usr/share/gtk-doc/html/NetworkManager,
+          /var/lib/NetworkManager, and
+          /var/run/NetworkManager
         </seg>
 @y
         <seg>
@@ -302,7 +301,8 @@
           /usr/share/gtk-doc/html/libnm-glib,
           /usr/share/gtk-doc/html/libnm-util,
           /usr/share/gtk-doc/html/NetworkManager,
-          /var/lib/NetworkManager
+          /var/lib/NetworkManager,
+          /var/run/NetworkManager
         </seg>
 @z
 

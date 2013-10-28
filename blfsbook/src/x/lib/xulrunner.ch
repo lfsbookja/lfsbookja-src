@@ -127,7 +127,8 @@
       <xref linkend="curl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="gst-plugins-good"/> and
+      <xref linkend="gst-ffmpeg"/>,
       <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <xref linkend="libnotify"/>,
       <xref linkend="startup-notification"/>,
@@ -140,11 +141,12 @@
       <xref linkend="curl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="gst-plugins-good"/>,
+      <xref linkend="gst-ffmpeg"/>,
       <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <xref linkend="libnotify"/>,
       <xref linkend="startup-notification"/>,
-      <xref linkend="wget"/> and
+      <xref linkend="wget"/>,
       <xref linkend="wireless_tools"/>
     </para>
 @z

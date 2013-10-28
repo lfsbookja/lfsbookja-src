@@ -90,7 +90,7 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="cups"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="gamin"/>,
+      <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
       <xref linkend="acl"/>,
       <xref linkend="xfsprogs"/>,
       <xref linkend="mitkrb"/>,
@@ -98,7 +98,7 @@
       <xref linkend="libxslt"/> (used only for documentation),
       <ulink url="http://tdb.samba.org/">tdb</ulink>,
       <ulink url="http://ctdb.samba.org/">ctdb</ulink>,
-      <xref linkend="libcap2"/>,
+      <xref linkend="libcap"/>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <xref linkend="avahi"/>,
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>, and
@@ -111,7 +111,7 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="cups"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="gamin"/>,
+      <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
       <xref linkend="acl"/>,
       <xref linkend="xfsprogs"/>,
       <xref linkend="mitkrb"/>,
@@ -119,10 +119,10 @@
       <xref linkend="libxslt"/> (used only for documentation),
       <ulink url="http://tdb.samba.org/">tdb</ulink>,
       <ulink url="http://ctdb.samba.org/">ctdb</ulink>,
-      <xref linkend="libcap2"/>,
+      <xref linkend="libcap"/>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <xref linkend="avahi"/>,
-      <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
+      <ulink url="http://www.openafs.org/">OpenAFS</ulink>, and
       <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
         used by the test suite)</para>
 @z
@@ -215,11 +215,11 @@
 @z
 
 @x
-    <para><parameter>--with-fhs</parameter>: Assigns all other file paths in
+    <para><parameter>--enable-fhs</parameter>: Assigns all other file paths in
     a manner compliant with the Filesystem Hierarchy Standard (FHS).</para>
 @y
     <para>
-    <parameter>--with-fhs</parameter>:
+    <parameter>--enable-fhs</parameter>:
     インストール先とするパスを、ファイルシステム階層標準 (Filesystem Hierarchy Standard; FHS) にならうようにします。
     </para>
 @z
@@ -497,8 +497,7 @@
         bootscript. Be sure to run <command>smbpasswd</command> (with the
         <option>-a</option> option to add users) to enable and
         set passwords for all accounts that need
-        <application>Samba</application> access, or use the SWAT web interface
-        (see below) to do the same. Using the default
+        <application>Samba</application> access. Using the default
         <application>Samba</application> passdb backend, any user you attempt
         to add will also be required to exist in the
         <filename>/etc/passwd</filename> file.</para>
@@ -508,8 +507,7 @@
         bootscript. Be sure to run <command>smbpasswd</command> (with the
         <option>-a</option> option to add users) to enable and
         set passwords for all accounts that need
-        <application>Samba</application> access, or use the SWAT web interface
-        (see below) to do the same. Using the default
+        <application>Samba</application> access. Using the default
         <application>Samba</application> passdb backend, any user you attempt
         to add will also be required to exist in the
         <filename>/etc/passwd</filename> file.</para>
@@ -577,29 +575,5 @@
             <para>Samba-3 by Example
             <ulink url="http://www.samba.org/samba/docs/man/Samba-Guide/"/>
             </para>
-@z
-
-@x
-            <para>The Samba-3 man Pages
-            <ulink url="file:///usr/share/samba/swat/help/manpages/samba.7.html"/></para>
-@y
-            <para>The Samba-3 man Pages
-            <ulink url="file:///usr/share/samba/swat/help/manpages/samba.7.html"/></para>
-@z
-
-@x
-      <title>Configuring SWAT</title>
-@y
-      <title>SWAT の設定</title>
-@z
-
-@x
-      <para>The SWAT (<application>Samba</application> Web Administration Tool)
-      utility can be used for configuration of the
-      <application>Samba</application> installation.</para>
-@y
-      <para>The SWAT (<application>Samba</application> Web Administration Tool)
-      utility can be used for configuration of the
-      <application>Samba</application> installation.</para>
 @z
 

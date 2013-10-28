@@ -121,7 +121,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus-glib"/> (to run tests),
-      <xref linkend="python2"/> (to run tests) and
+      <xref linkend="python2"/> (to run tests),
+      <xref linkend="dbus-python"/> (to run tests), and
       <xref linkend="doxygen"/> (to generate the API documentation)
     </para>
 @y
@@ -129,7 +130,8 @@
     <para role="optional">
       <xref linkend="dbus-glib"/> (テスト実行のため),
       <xref linkend="python2"/> (テスト実行のため),
-      <xref linkend="doxygen"/> (API ドキュメント生成時に必要)
+      <xref linkend="dbus-python"/> (テスト実行のため),
+      <xref linkend="doxygen"/> (API ドキュメント生成のため)
     </para>
 @z
 
@@ -186,19 +188,51 @@
 @z
 
 @x
+      If you are still building your system in chroot or you did not start the
+      daemon yet, but you want to compile some packages that require
+      <application>D-Bus</application>, generate
+      <application>D-Bus</application> UUID to avoid warnings when compiling
+      some packages with the following command as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      If you are still building your system in chroot or you did not start the
+      daemon yet, but you want to compile some packages that require
+      <application>D-Bus</application>, generate
+      <application>D-Bus</application> UUID to avoid warnings when compiling
+      some packages with the following command as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
       The dbus tests cannot be run until after <xref linkend="dbus-glib"/>
-      has been installed. The tests require passing additional parameters to
-      <command>configure</command> and exposing additional functionality in the
-      binaries. These interfaces are not intended to be used in a production
-      build of <application>D-Bus</application>.  If you would like to run the
-      unit tests, issue the following commands:
+      has been installed.  If you want to run only the unit tests, replace,
+      below, <parameter>--enable-tests</parameter> by
+      <parameter>--enable-embedded-tests</parameter>, otherwise,
+      <xref linkend="dbus-python"/> has to be installed, before.
+      The tests require passing additional parameters to
+      <command>configure</command> and exposing additional functionality in
+      the binaries. These interfaces are not intended to be used in a
+      production build of <application>D-Bus</application>.  If you would
+      like to run the tests, issue the following commands:
 @y
       The dbus tests cannot be run until after <xref linkend="dbus-glib"/>
-      has been installed. The tests require passing additional parameters to
-      <command>configure</command> and exposing additional functionality in the
-      binaries. These interfaces are not intended to be used in a production
-      build of <application>D-Bus</application>.  If you would like to run the
-      unit tests, issue the following commands:
+      has been installed.  If you want to run only the unit tests, replace,
+      below, <parameter>--enable-tests</parameter> by
+      <parameter>--enable-embedded-tests</parameter>, otherwise,
+      <xref linkend="dbus-python"/> has to be installed, before.
+      The tests require passing additional parameters to
+      <command>configure</command> and exposing additional functionality in
+      the binaries. These interfaces are not intended to be used in a
+      production build of <application>D-Bus</application>.  If you would
+      like to run the tests, issue the following commands:
+@z
+
+@x
+      If <command>run-test.sh</command> fails, it can be disabled with the
+      following sed, before running the commands for the tests:
+@y
+      If <command>run-test.sh</command> fails, it can be disabled with the
+      following sed, before running the commands for the tests:
 @z
 
 @x
@@ -230,41 +264,43 @@
 @z
 
 @x
-      <option>--without-systemdsystemunitdir</option>: This switch prevents
-      installation of systemd unit files.
+      <parameter>--without-systemdsystemunitdir</parameter>: This switch
+      prevents installation of systemd unit files.
 @y
-      <option>--without-systemdsystemunitdir</option>: This switch prevents
-      installation of systemd unit files.
+      <parameter>--without-systemdsystemunitdir</parameter>: This switch
+      prevents installation of systemd unit files.
 @z
 
 @x
-      <option>--disable-systemd</option>: This switch disables systemd
+      <parameter>--disable-systemd</parameter>: This switch disables systemd
       support in <application>D-Bus</application>
 @y
-      <option>--disable-systemd</option>: This switch disables systemd
+      <parameter>--disable-systemd</parameter>: This switch disables systemd
       support in <application>D-Bus</application>
 @z
 
 @x
-      <option>--enable-tests</option>: Build extra parts of the code to support
-      testing. Configure will end with a NOTE warning about this.
+      <parameter>--enable-tests</parameter>: Build extra parts of the code to
+      support all tests. Configure will end with a NOTE warning about increased
+      size of libraries and decreased security.
 @y
-      <option>--enable-tests</option>: Build extra parts of the code to support
-      testing. Configure will end with a NOTE warning about this.
+      <parameter>--enable-tests</parameter>: Build extra parts of the code to
+      support all tests. Configure will end with a NOTE warning about increased
+      size of libraries and decreased security.
 @z
 
 @x
-      <option>--enable-asserts</option>: Enable debugging code to run assertions for
-      statements normally assumed to be true. This prevents a warning that 
-      '<parameter>--enable-tests</parameter>' on its own is only useful for profiling
-      and might not give true results for all tests, but adds its own NOTE that this
-      should not be used in a production build.
+      <parameter>--enable-asserts</parameter>: Enable debugging code to run
+      assertions for statements normally assumed to be true. This prevents a
+      warning that '<parameter>--enable-tests</parameter>' on its own is only
+      useful for profiling and might not give true results for all tests, but
+      adds its own NOTE that this should not be used in a production build.
 @y
-      <option>--enable-asserts</option>: Enable debugging code to run assertions for
-      statements normally assumed to be true. This prevents a warning that 
-      '<parameter>--enable-tests</parameter>' on its own is only useful for profiling
-      and might not give true results for all tests, but adds its own NOTE that this
-      should not be used in a production build.
+      <parameter>--enable-asserts</parameter>: Enable debugging code to run
+      assertions for statements normally assumed to be true. This prevents a
+      warning that '<parameter>--enable-tests</parameter>' on its own is only
+      useful for profiling and might not give true results for all tests, but
+      adds its own NOTE that this should not be used in a production build.
 @z
 
 @x

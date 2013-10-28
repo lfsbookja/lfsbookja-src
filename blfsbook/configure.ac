@@ -80,6 +80,9 @@ AC_CONFIG_FILES([Makefile
 		 src/kde/add/Makefile
 		 src/kde/core/Makefile
 		 src/kde/intro/Makefile
+		 src/lxde/Makefile
+		 src/lxde/apps/Makefile
+		 src/lxde/desktop/Makefile
 		 src/multimedia/Makefile
 		 src/multimedia/audioutils/Makefile
 		 src/multimedia/cdwriteutils/Makefile

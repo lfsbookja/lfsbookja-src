@@ -151,12 +151,13 @@
 @z
 
 @x
-      <option>--system-libs</option>: This switch forces the build system to
-      link against <application>Zlib</application>, <application>Bzip2</application>,
-      <application>cURL</application>, <application>Expat</application> and
-      <application>libarchive</application> installed on the system.
+      <parameter>--system-libs</parameter>: This switch forces the build system
+      to link against <application>Zlib</application>,
+      <application>Bzip2</application>, <application>cURL</application>,
+      <application>Expat</application> and <application>libarchive</application>
+      installed on the system.
 @y
-      <option>--system-libs</option>:
+      <parameter>--system-libs</parameter>:
       このオプションは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application>, <application>libarchive</application> をリンクすることを指示します。
 @z
 

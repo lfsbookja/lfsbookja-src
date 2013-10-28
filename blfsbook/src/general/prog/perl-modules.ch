@@ -72,25 +72,6 @@
           Archive::Zip-&Archive-Zip-version;</ulink> (MD5 sum: 40153666e7538b410e001aa8a810e702)
 @z
 
-% ----------
-% Date::Manip
-% ----------
-@x
-    <para>Date::Manip is a set of routines designed to make any common
-    date/time manipulation easy to do. Operations such as comparing two times,
-    calculating a time a given amount of time from another, or parsing
-    international times are all easily done. From the very beginning, the
-    main focus of Date::Manip has been to be able to do ANY desired date/time
-    operation easily. This module and the dependency module use the standard
-    <xref linkend="perl-standard-install"/>.</para>
-@y
-    <para>
-    Date::Manip は、日付、時刻に関する操作を容易に実現する汎用的なルーチン群を提供します。
-    ２つの時刻を比較したり、ある時刻からの一定時間後の時刻を計算したり、あるいは各国の時刻を算出したりするなどの操作を簡単に行うことができます。
-    Date::Manip では、その開発当初より、日付、時刻に関する、ありとあらゆる操作を簡単に実現することを目指して構築されています。
-    本モジュールおよび依存モジュールは標準的な<xref linkend="perl-standard-install"/>に従います。
-    </para>
-@z
 
 
 % ----------

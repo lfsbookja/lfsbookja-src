@@ -92,33 +92,31 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="qt4"/> and
-    <xref linkend="dbus"/>
+    <xref linkend="dbus"/> and
+    <xref linkend="qt4"/> (compiled with D-Bus support)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="qt4"/>,
-    <xref linkend="dbus"/>
+    <xref linkend="dbus"/> and
+    <xref linkend="qt4"/> (compiled with D-Bus support)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="gamin"/> (or FAM), 
-    <xref linkend="ffmpeg"/>, 
+    <xref linkend="ffmpeg"/>,
     <xref linkend="exiv2"/>,
-    <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink> and
+    <xref linkend="clucene"/>, and
     <ulink url="http://logging.apache.org/log4cxx/">log4cxx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="gamin"/> (または FAM), 
-    <xref linkend="ffmpeg"/>, 
+    <xref linkend="ffmpeg"/>,
     <xref linkend="exiv2"/>,
-    <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>,
+    <xref linkend="clucene"/>,
     <ulink url="http://logging.apache.org/log4cxx/">log4cxx</ulink>
     </para>
 @z

@@ -143,12 +143,12 @@
 
 @x
       After unpacking the distribution tarball and if you have
-      <xref linkend="gnupg"/> installed, you can
+      <xref linkend="gnupg2"/> installed, you can
       authenticate the package.  First, check the contents of the file
       <filename>krb5-&mitkrb-version;.tar.gz.asc</filename>.
 @y
       After unpacking the distribution tarball and if you have
-      <xref linkend="gnupg"/> installed, you can
+      <xref linkend="gnupg2"/> installed, you can
       authenticate the package.  First, check the contents of the file
       <filename>krb5-&mitkrb-version;.tar.gz.asc</filename>.
 @z

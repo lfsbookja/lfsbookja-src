@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY keyutils-time          "less than 0.1 SBU">
-@y
-  <!ENTITY keyutils-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to keyutils</title>
 @y
     <title>&IntroductionTo1;keyutils&IntroductionTo2;</title>

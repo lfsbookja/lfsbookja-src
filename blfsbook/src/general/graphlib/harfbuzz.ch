@@ -94,13 +94,17 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cairo"/> and
+      <xref linkend="cairo"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>, and
       <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>, and
       <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>
     </para>
 @z
@@ -158,8 +162,8 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -168,13 +172,14 @@
 
 @x
         <seg>
-          hb-ot-shape-closure, hb-shape and hb-view
+          hb-ot-shape-closure, hb-shape, and hb-view
         </seg>
         <seg>
           libharfbuzz.so and libharfbuzz-icu.so
         </seg>
         <seg>
-          /usr/include/harfbuzz
+          /usr/include/harfbuzz and
+          /usr/share/gtk-doc/html/harfbuzz
         </seg>
 @y
         <seg>
@@ -184,7 +189,8 @@
           libharfbuzz.so, libharfbuzz-icu.so
         </seg>
         <seg>
-          /usr/include/harfbuzz
+          /usr/include/harfbuzz,
+          /usr/share/gtk-doc/html/harfbuzz
         </seg>
 @z
 

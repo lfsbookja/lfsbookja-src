@@ -7,6 +7,7 @@
 ##
 BOOKdir = @abs_bookdir@/server/mail
 CHANGE_FILES = \
+	dovecot.ch \
 	exim.ch    \
 	mail.ch    \
 	postfix.ch \
@@ -26,6 +27,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+dovecot.xml:  $(BOOKdir)/$@ $(srcdir)/dovecot.ch
 exim.xml:     $(BOOKdir)/$@ $(srcdir)/exim.ch
 mail.xml:     $(BOOKdir)/$@ $(srcdir)/mail.ch
 postfix.xml:  $(BOOKdir)/$@ $(srcdir)/postfix.ch

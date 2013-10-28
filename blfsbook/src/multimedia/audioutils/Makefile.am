@@ -12,9 +12,9 @@ CHANGE_FILES = \
 	audioutils.ch  \
 	cdparanoia.ch  \
 	freetts.ch     \
-	gvolwheel.ch   \
 	lame.ch        \
 	mpg123.ch      \
+	pnmixer.ch     \
 	vorbistools.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
@@ -35,7 +35,7 @@ audacious.xml:   $(BOOKdir)/$@ $(srcdir)/audacious.ch
 audioutils.xml:  $(BOOKdir)/$@ $(srcdir)/audioutils.ch
 cdparanoia.xml:  $(BOOKdir)/$@ $(srcdir)/cdparanoia.ch
 freetts.xml:     $(BOOKdir)/$@ $(srcdir)/freetts.ch
-gvolwheel.xml:   $(BOOKdir)/$@ $(srcdir)/gvolwheel.ch
 lame.xml:        $(BOOKdir)/$@ $(srcdir)/lame.ch
 mpg123.xml:      $(BOOKdir)/$@ $(srcdir)/mpg123.ch
+pnmixer.xml:     $(BOOKdir)/$@ $(srcdir)/pnmixer.ch
 vorbistools.xml: $(BOOKdir)/$@ $(srcdir)/vorbistools.ch

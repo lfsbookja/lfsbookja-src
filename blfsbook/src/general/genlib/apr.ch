@@ -112,14 +112,6 @@
 @z
 
 @x
-      <option>-&#45;disable-static</option>: This stops it from compiling a static
-      version of <filename class="libraryfile">libapr-1</filename>.
-@y
-      <option>-&#45;disable-static</option>:
-      このオプションの指定により、<filename class="libraryfile">libapr-1</filename> のスタティック版をビルドしないようにします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -136,13 +128,27 @@
 @z
 
 @x
-        <seg>apr-1-config</seg>
-        <seg>libapr-1.so</seg>
-        <seg>/usr/include/apr-1 and /usr/share/apr-1</seg>
+        <seg>
+          apr-1-config
+        </seg>
+        <seg>
+          libapr-1.so
+        </seg>
+        <seg>
+          /usr/include/apr-1 and 
+          /usr/share/apr-1
+        </seg>
 @y
-        <seg>apr-1-config</seg>
-        <seg>libapr-1.so</seg>
-        <seg>/usr/include/apr-1, /usr/share/apr-1</seg>
+        <seg>
+          apr-1-config
+        </seg>
+        <seg>
+          libapr-1.so
+        </seg>
+        <seg>
+          /usr/include/apr-1,
+          /usr/share/apr-1
+        </seg>
 @z
 
 @x

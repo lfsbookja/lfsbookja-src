@@ -215,14 +215,16 @@
 @x
       <title>Config Files</title>
       <para>
-        <filename>~/.gtkrc-2.0</filename> and
-        <filename>/etc/gtk-2.0/gtkrc</filename>
+        <filename>~/.gtkrc-2.0</filename>,
+        <filename>/etc/gtk-2.0/gtkrc</filename>, and
+        <filename>/usr/share/gtk-2.0/gtkrc</filename>
       </para>
 @y
       <title>&ConfigFiles;</title>
       <para>
         <filename>~/.gtkrc-2.0</filename>,
-        <filename>/etc/gtk-2.0/gtkrc</filename>
+        <filename>/etc/gtk-2.0/gtkrc</filename>,
+        <filename>/usr/share/gtk-2.0/gtkrc</filename>
       </para>
 @z
 
@@ -275,13 +277,11 @@
 @z
 
 @x
-        <ulink url="http://sourceforge.net/projects/lxde/files/LXAppearance/">
-        LXAppearance</ulink> is a <application>GTK+ 2</application> application
-        that can help you choose the themes you like.
+        <xref linkend="lxappearance"/> is a <application>GTK+ 2</application>
+        application that can help you choose the themes you like.
 @y
-        <ulink url="http://sourceforge.net/projects/lxde/files/LXAppearance/">
-        LXAppearance</ulink> is a <application>GTK+ 2</application> application
-        that can help you choose the themes you like.
+        <xref linkend="lxappearance"/> is a <application>GTK+ 2</application>
+        application that can help you choose the themes you like.
 @z
 
 @x

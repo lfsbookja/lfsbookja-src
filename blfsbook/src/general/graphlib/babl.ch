@@ -75,18 +75,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="pkgconfig"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="pkgconfig"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gobject-introspection"/> and
@@ -178,12 +166,12 @@
 
 @x
         <seg>None</seg>
-        <seg>libbabl.so, and libraries in /usr/lib/babl-0.1/</seg>
-        <seg>/usr/include/babl-0.1/</seg>
+        <seg>libbabl.so and libraries in /usr/lib/babl-0.1</seg>
+        <seg>/usr/include/babl-0.1</seg>
 @y
         <seg>&None;</seg>
-        <seg>libbabl.so と /usr/lib/babl-0.1 内のライブラリ</seg>
-        <seg>/usr/include/babl-0.1/</seg>
+        <seg>libbabl.so and libraries in /usr/lib/babl-0.1</seg>
+        <seg>/usr/include/babl-0.1</seg>
 @z
 
 @x

@@ -114,16 +114,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="expat"/>,
-      <xref linkend="libffi"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="expat"/> and
+      <xref linkend="libffi"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="expat"/>,
-      <xref linkend="libffi"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="libffi"/>
     </para>
 @z
 

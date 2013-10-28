@@ -80,7 +80,7 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/> and
+      <xref linkend="intltool"/>, and
       <xref linkend="libgcrypt"/>
     </para>
 @y

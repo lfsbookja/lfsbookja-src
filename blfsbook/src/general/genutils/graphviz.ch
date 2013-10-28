@@ -283,31 +283,31 @@
 @x
         <seg>
           acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
-          dot, dot2gxl, dot_builtins, dotty, fdp, gc, gml2gv, gv2gxl,
-          gvcolor, gvedit, gvgen, gvmap, gvmap.sh, gvpack, gvpr,
+          dot, dot2gxl, dot_builtins, dotty, fdp, gc, gml2gv, graphml2gv,
+          gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh, gvpack, gvpr,
           gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop, osage,
-          patchwork, prune, sccmap, sfdp, tred, twopi, unflatten and vimdot
+          patchwork, prune, sccmap, sfdp, tred, twopi, unflatten and, vimdot
         </seg>
         <seg>
-          libcdt.so, libcgraph.so, libgraph.so, libgvc.so, libgvpr.so,
-          libpathplan.so and libxdot.so
+          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so, and
+          libxdot.so
         </seg>
         <seg>
           /usr/include/graphviz,
-          /usr/lib/graphviz and
+          /usr/lib/graphviz, and
           /usr/share/graphviz
         </seg>
 @y
         <seg>
           acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
-          dot, dot2gxl, dot_builtins, dotty, fdp, gc, gml2gv, gv2gxl,
-          gvcolor, gvedit, gvgen, gvmap, gvmap.sh, gvpack, gvpr,
+          dot, dot2gxl, dot_builtins, dotty, fdp, gc, gml2gv, graphml2gv,
+          gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh, gvpack, gvpr,
           gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop, osage,
           patchwork, prune, sccmap, sfdp, tred, twopi, unflatten, vimdot
         </seg>
         <seg>
-          libcdt.so, libcgraph.so, libgraph.so, libgvc.so, libgvpr.so,
-          libpathplan.so, libxdot.so
+          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so,
+          libxdot.so
         </seg>
         <seg>
           /usr/include/graphviz,

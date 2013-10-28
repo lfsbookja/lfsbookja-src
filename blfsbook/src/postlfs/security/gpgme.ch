@@ -97,14 +97,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gnupg"/> or
       <xref linkend="gnupg2"/> (used during the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gnupg"/> または
-      <xref linkend="gnupg2"/> (テストスイートにて利用される)
+      <xref linkend="gnupg2"/> (テストスイートにて利用)
     </para>
 @z
 

@@ -150,12 +150,12 @@
 
 @x
       To test the results, issue <command>make check</command>. Note
-      that you should run tests from an already active
-      <application>GNOME</application> session.
+      that you should run tests from an already active graphical session
+      (<application>GNOME</application>, <application>LXDE</application>, etc.).
 @y
       To test the results, issue <command>make check</command>. Note
-      that you should run tests from an already active
-      <application>GNOME</application> session.
+      that you should run tests from an already active graphical session
+      (<application>GNOME</application>, <application>LXDE</application>, etc.).
 @z
 
 @x

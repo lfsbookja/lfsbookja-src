@@ -141,9 +141,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      A session bus address is necessary to run the tests. To test the results,
+      issue: <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      A session bus address is necessary to run the tests. To test the results,
+      issue: <command>make check</command>.
 @z
 
 @x

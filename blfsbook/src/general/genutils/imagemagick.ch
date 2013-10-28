@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "150 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "1.9 SBU (typical build - additional 4 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "182 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "2.6 SBU (typical build - additional 4 SBU to run the test suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "150 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "1.9 SBU (typical build - additional 4 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "182 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "2.6 SBU (typical build - additional 4 SBU to run the test suite)">
 @z
 
 @x
@@ -152,15 +152,14 @@
 @x
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional">
-      <xref linkend="pkgconfig"/>,
       <xref linkend="cups"/>,
       <xref linkend="curl"/>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
       <xref linkend="ffmpeg"/>,
       <ulink url="http://www.fftw.org/">FFTW</ulink>,
-      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink>
-      or <xref linkend="gnupg"/> or <xref linkend="gnupg2"/>
+      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink> or
+      <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
       <xref linkend="sane"/>,
       <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
@@ -171,15 +170,14 @@
 @y
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional">
-      <xref linkend="pkgconfig"/>,
       <xref linkend="cups"/>,
       <xref linkend="curl"/>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
       <xref linkend="ffmpeg"/>,
       <ulink url="http://www.fftw.org/">FFTW</ulink>,
-      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink>
-      or <xref linkend="gnupg"/> or <xref linkend="gnupg2"/>
+      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink> or
+      <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
       <xref linkend="sane"/>,
       <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
@@ -498,31 +496,31 @@
         identify, import, Magick-config, Magic++-config, MagickCore-config,
         MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
 
-        <seg>libMagickCore-Q16.so, libMagickWand-Q16.so, libMagick++-Q16.so,
+        <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so, libMagick++-6.Q16.so,
         and numerous plugin modules</seg>
-        
-        <seg>/etc/ImageMagick,
-        /usr/include/ImageMagick, 
+
+        <seg>/etc/ImageMagick-6,
+        /usr/include/ImageMagick-6,
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/Image/Magick,
-        /usr/share/ImageMagick-&imagemagick-version; and
-        /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
+        /usr/share/ImageMagick-6 and
+        /usr/share/doc/ImageMagick-6</seg>
 @y
         <seg>animate, compare, composite, conjure, convert, display,
         identify, import, Magick-config, Magic++-config, MagickCore-config,
-        MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
+        MagickWand-config, mogrify, montage, stream, Wand-config</seg>
 
-        <seg>libMagickCore-Q16.so, libMagickWand-Q16.so, libMagick++-Q16.so,
+        <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so, libMagick++-6.Q16.so,
         and numerous plugin modules</seg>
-        
-        <seg>/etc/ImageMagick,
-        /usr/include/ImageMagick, 
+
+        <seg>/etc/ImageMagick-6,
+        /usr/include/ImageMagick-6,
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/Image/Magick,
-        /usr/share/ImageMagick-&imagemagick-version;,
-        /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
+        /usr/share/ImageMagick-6,
+        /usr/share/doc/ImageMagick-6</seg>
 @z
 
 @x

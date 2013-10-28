@@ -128,10 +128,10 @@
 @z
 
 @x
-      <parameter>--with-iodbc-inidir</parameter>: <application>libiodbc</application>
+      <parameter>--with-iodbc-inidir=/etc/iodbc</parameter>: <application>libiodbc</application>
       will install configuration files in this directory.
 @y
-      <parameter>--with-iodbc-inidir</parameter>:
+      <parameter>--with-iodbc-inidir=/etc/iodbc</parameter>:
       <application>libiodbc</application> は設定ファイルをこのディレクトリにインストールします。
 @z
 
@@ -153,13 +153,13 @@
 
 @x
         <seg>iodbc-config, iodbctest, iodbctestw, and iodbcadm</seg>
-        <seg>libiodbc.{a,so}, libiodbcinst.{a,so}, and
-        libiodbcadm.{a,so}</seg>
+        <seg>libiodbc.so, libiodbcinst.so, and
+        libiodbcadm.so</seg>
         <seg>/usr/include/iodbc, /usr/share/libiodbc, and /etc/iodbc</seg>
 @y
         <seg>iodbc-config, iodbctest, iodbctestw, iodbcadm</seg>
-        <seg>libiodbc.{a,so}, libiodbcinst.{a,so},
-        libiodbcadm.{a,so}</seg>
+        <seg>libiodbc.so, libiodbcinst.so,
+        libiodbcadm.so</seg>
         <seg>/usr/include/iodbc, /usr/share/libiodbc, /etc/iodbc</seg>
 @z
 

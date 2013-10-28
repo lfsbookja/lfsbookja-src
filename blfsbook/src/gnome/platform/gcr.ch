@@ -102,7 +102,6 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gnupg"/> or
       <xref linkend="gnupg2"/>,
       <xref linkend="gobject-introspection"/>, and
       <xref linkend="gtk3"/>
@@ -110,7 +109,6 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gnupg"/> または
       <xref linkend="gnupg2"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>
@@ -151,9 +149,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      A session bus address is necessary to run the tests. To test the results,
+      issue: <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      A session bus address is necessary to run the tests. To test the results,
+      issue: <command>make check</command>.
 @z
 
 @x
@@ -189,8 +189,7 @@
           gcr-viewer
         </seg>
         <seg>
-          libgck-1.so, libgcr-3.so, libgcr-base-3.so, and
-          libmock-test-module.so
+          libgck-1.so, libgcr-3.so, and libgcr-base-3.so
         </seg>
         <seg>
           /usr/include/gck-1,
@@ -205,8 +204,7 @@
           gcr-viewer
         </seg>
         <seg>
-          libgck-1.so, libgcr-3.so, libgcr-base-3.so,
-          libmock-test-module.so
+          libgck-1.so, libgcr-3.so, libgcr-base-3.so
         </seg>
         <seg>
           /usr/include/gck-1,

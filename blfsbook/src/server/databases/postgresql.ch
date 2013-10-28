@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY postgresql-buildsize     "169 MB (additional 170 MB to run the testsuite)">
-  <!ENTITY postgresql-time          "1.3 SBU (additional 0.2 SBU to run the testsuite)">
+  <!ENTITY postgresql-time          "1.2 SBU (additional 0.2 SBU to run the testsuite)">
 @y
   <!ENTITY postgresql-buildsize     "169 MB (テストスイート実行時はさらに 170 MB)">
-  <!ENTITY postgresql-time          "1.3 SBU (テストスイート実行時はさらに 0.2 SBU)">
+  <!ENTITY postgresql-time          "1.2 SBU (テストスイート実行時はさらに 0.2 SBU)">
 @z
 
 @x
@@ -35,22 +35,6 @@
     <para>
     <application>PostgreSQL</application> は先進的なオブジェクトリレーショナルデータベース管理システム (object-relational database management system; ORDBMS) です。
     これは Berkeley Postgres データベース管理システムからの派生です。
-    </para>
-@z
-
-@x
-    <para>There may be a more recent release available from the
-    <application>PostgreSQL</application> home page. You can check
-    <ulink url="http://www.postgresql.org/"/> and probably use the
-    existing BLFS instructions. Note that versions other than the one shown
-    in the download URLs have not been tested in a BLFS environment.</para>
-@y
-    <para>
-    There may be a more recent release available from the
-    <application>PostgreSQL</application> home page. You can check
-    <ulink url="http://www.postgresql.org/"/> and probably use the
-    existing BLFS instructions. Note that versions other than the one shown
-    in the download URLs have not been tested in a BLFS environment.
     </para>
 @z
 
@@ -377,13 +361,13 @@
 @x
         <seg>clusterdb, createdb, createlang, createuser, dropdb, droplang,
         dropuser, ecpg, initdb, pg_basebackup, pg_config, pg_controldata, pg_ctl,
-        pg_dump, pg_dumpall, pg_isready, pg_resetxlog, pg_restore, pltcl_delmod,
+        pg_dump, pg_dumpall, pg_isready, pg_receivexlog, pg_resetxlog, pg_restore, pltcl_delmod,
         pltcl_listmod, pltcl_loadmod, postgres, postmaster, psql,
-        reindexdb, and vacuumdb. Optionally (in contrib/) oid2name, pg_archivecleanup,
+        reindexdb, vacuumdb, and optionally (in contrib/) oid2name, pg_archivecleanup,
         pgbench, pg_standby, pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump,
         vacuumlo,</seg>
         <seg>libecpg.{so,a}, libecpg_compat.{so,a}, libpgport.a, libpgtypes.{so,a},
-        libpq.{so,a}, and various charset (and optionally, programming language)
+        libpq.{so,a}, various charset modules, and optionally programming language
         modules.</seg>
         <seg>/srv/pgsql, /usr/include/libpq, /usr/include/postgresql,
         /usr/lib/postgresql, /usr/share/doc/postgresql-&postgresql-version;, and
@@ -391,13 +375,13 @@
 @y
         <seg>clusterdb, createdb, createlang, createuser, dropdb, droplang,
         dropuser, ecpg, initdb, pg_basebackup, pg_config, pg_controldata, pg_ctl,
-        pg_dump, pg_dumpall, pg_isready, pg_resetxlog, pg_restore, pltcl_delmod,
+        pg_dump, pg_dumpall, pg_isready, pg_receivexlog, pg_resetxlog, pg_restore, pltcl_delmod,
         pltcl_listmod, pltcl_loadmod, postgres, postmaster, psql,
-        reindexdb, and vacuumdb. Optionally (in contrib/) oid2name, pg_archivecleanup,
+        reindexdb, vacuumdb, and optionally (in contrib/) oid2name, pg_archivecleanup,
         pgbench, pg_standby, pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump,
         vacuumlo,</seg>
         <seg>libecpg.{so,a}, libecpg_compat.{so,a}, libpgport.a, libpgtypes.{so,a},
-        libpq.{so,a}, and various charset (and optionally, programming language)
+        libpq.{so,a}, various charset modules, and optionally programming language
         modules.</seg>
         <seg>/srv/pgsql, /usr/include/libpq, /usr/include/postgresql,
         /usr/lib/postgresql, /usr/share/doc/postgresql-&postgresql-version;,

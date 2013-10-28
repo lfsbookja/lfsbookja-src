@@ -101,13 +101,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="nss"/>,
+      <xref linkend="nss"/> and
       <xref linkend="seahorse"/> (at runtime, for managing stored passwords)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="nss"/>,
+      <xref linkend="nss"/> and
       <xref linkend="seahorse"/> (at runtime, for managing stored passwords)
     </para>
 @z
@@ -167,8 +167,9 @@
           None
         </seg>
         <seg>
-          /usr/lib/epiphany and
-          /usr/share/epiphany
+          /usr/lib/epiphany,
+          /usr/share/epiphany, and
+          /usr/share/help/*/epiphany
         </seg>
 @y
         <seg>
@@ -179,7 +180,8 @@
         </seg>
         <seg>
           /usr/lib/epiphany,
-          /usr/share/epiphany
+          /usr/share/epiphany,
+          /usr/share/help/*/epiphany
         </seg>
 @z
 

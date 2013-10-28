@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/general/genutils
 CHANGE_FILES = \
-	bc.ch                 \
 	compface.ch           \
 	desktop-file-utils.ch \
 	genutils.ch           \
@@ -41,7 +40,6 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-bc.xml:                 $(BOOKdir)/$@ $(srcdir)/bc.ch
 compface.xml:           $(BOOKdir)/$@ $(srcdir)/compface.ch
 desktop-file-utils.xml: $(BOOKdir)/$@ $(srcdir)/desktop-file-utils.ch
 genutils.xml:           $(BOOKdir)/$@ $(srcdir)/genutils.ch

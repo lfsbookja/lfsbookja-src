@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY tcl-buildsize     "80 MB (includes documentation installation)">
+  <!ENTITY tcl-buildsize     "60 MB (includes documentation installation)">
 @y
-  <!ENTITY tcl-buildsize     "80 MB (ドキュメントのインストールを含む)">
+  <!ENTITY tcl-buildsize     "60 MB (ドキュメントのインストールを含む)">
 @z
 
 @x

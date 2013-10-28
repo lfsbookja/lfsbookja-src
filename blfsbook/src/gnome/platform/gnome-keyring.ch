@@ -103,15 +103,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">
-      libcap-ng</ulink> and
+      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> and
       <ulink url="http://www.valgrind.org">Valgrind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">
-      libcap-ng</ulink>,
+      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
       <ulink url="http://www.valgrind.org">Valgrind</ulink>
     </para>
 @z

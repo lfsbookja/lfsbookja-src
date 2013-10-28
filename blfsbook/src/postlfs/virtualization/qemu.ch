@@ -103,7 +103,6 @@
       <xref linkend="attr"/>,
       <xref linkend="check"/>,
       <xref linkend="curl"/>,
-      <xref linkend="esound"/>,
       <xref linkend="mesalib"/>, and
       <xref linkend="cyrus-sasl"/>.
       Note that this optional dependencies list is not comprehensive.  See the
@@ -116,9 +115,8 @@
       <xref linkend="attr"/>,
       <xref linkend="check"/>,
       <xref linkend="curl"/>,
-      <xref linkend="esound"/>,
       <xref linkend="mesalib"/>,
-      <xref linkend="cyrus-sasl"/>.
+      <xref linkend="cyrus-sasl"/> 
       ここに示すオプションパッケージの一覧は十分ではありません。
       正確な一覧については <command>./configure --help</command> の出力結果を確認してください。
     </para>

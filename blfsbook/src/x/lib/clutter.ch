@@ -109,9 +109,10 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <ulink url="http://www.freedesktop.org/wiki/Software/libevdev/">
+      libevdev</ulink>,
       <ulink url="http://xkbcommon.org/">libxkbcommon</ulink>,
       <ulink url="http://tslib.berlios.de/">Tslib</ulink>,
-      <xref linkend="udev"/> or
       <xref linkend="udev-extras"/> (for GUdev), and
       <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
@@ -119,10 +120,11 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <ulink url="http://www.freedesktop.org/wiki/Software/libevdev/">
+      libevdev</ulink>,
       <ulink url="http://xkbcommon.org/">libxkbcommon</ulink>,
       <ulink url="http://tslib.berlios.de/">Tslib</ulink>,
-      <xref linkend="udev"/> or
-      <xref linkend="udev-extras"/> (GUdev のため),
+      <xref linkend="udev-extras"/> (for GUdev), and
       <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
 @z

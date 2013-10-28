@@ -135,9 +135,10 @@
 @z
 
 @x
-      To test the results, issue <command>make check</command>.
+      If the test suite is run before this package is installed, one test
+      may fail.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      本パッケージのインストールよりも前にテストスイートを実行すると、失敗するテストが１つあります。
 @z
 
 @x

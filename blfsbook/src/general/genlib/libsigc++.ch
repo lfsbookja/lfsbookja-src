@@ -131,7 +131,7 @@
         <seg>
           /usr/include/sigc++-2.0,
           /usr/lib/sigc++-2.0,
-          /usr/share/share/devhelp/books/libsigc++-2.0 and
+          /usr/share/devhelp/books/libsigc++-2.0 and
           /usr/share/doc/libsigc++-2.0
         </seg>
 @y
@@ -144,7 +144,7 @@
         <seg>
           /usr/include/sigc++-2.0,
           /usr/lib/sigc++-2.0,
-          /usr/share/share/devhelp/books/libsigc++-2.0,
+          /usr/share/devhelp/books/libsigc++-2.0,
           /usr/share/doc/libsigc++-2.0
         </seg>
 @z

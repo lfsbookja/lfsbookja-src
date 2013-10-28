@@ -8,14 +8,12 @@
 BOOKdir = @abs_bookdir@/general/prog
 CHANGE_FILES_pythonmodules = \
 	dbus-python.ch   \
-	notify-python.ch \
 	py2cairo.ch      \
 	pycairo.ch       \
 	pygobject2.ch    \
 	pygobject3.ch    \
 	pygtk.ch         \
 	pyatspi2.ch      \
-	pyrex.ch         \
 	pyxdg.ch
 
 CHANGE_FILES = \
@@ -43,11 +41,11 @@ CHANGE_FILES = \
 	lua.ch            \
 	mercurial.ch      \
 	nasm.ch           \
+	npapi-sdk.ch      \
 	openjdk.ch        \
 	other-tools.ch    \
 	perl-modules.ch   \
 	php.ch            \
-	pkgconfig.ch      \
 	prog.ch           \
 	python-modules.ch \
 	python2.ch        \
@@ -76,14 +74,12 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 dbus-python.xml:   $(BOOKdir)/$@ $(srcdir)/dbus-python.ch
-notify-python.xml: $(BOOKdir)/$@ $(srcdir)/notify-python.ch
 py2cairo.xml:      $(BOOKdir)/$@ $(srcdir)/py2cairo.ch
 pycairo.xml:       $(BOOKdir)/$@ $(srcdir)/pycairo.ch
 pygobject2.xml:    $(BOOKdir)/$@ $(srcdir)/pygobject2.ch
 pygobject3.xml:    $(BOOKdir)/$@ $(srcdir)/pygobject3.ch
 pygtk.xml:         $(BOOKdir)/$@ $(srcdir)/pygtk.ch
 pyatspi2.xml:      $(BOOKdir)/$@ $(srcdir)/pyatspi2.ch
-pyrex.xml:         $(BOOKdir)/$@ $(srcdir)/pyrex.ch
 pyxdg.xml:         $(BOOKdir)/$@ $(srcdir)/pyxdg.ch
 
 apache-ant.xml:     $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
@@ -109,11 +105,11 @@ llvm.xml:           $(BOOKdir)/$@ $(srcdir)/llvm.ch
 lua.xml:            $(BOOKdir)/$@ $(srcdir)/lua.ch
 mercurial.xml:      $(BOOKdir)/$@ $(srcdir)/mercurial.ch
 nasm.xml:           $(BOOKdir)/$@ $(srcdir)/nasm.ch
+npapi-sdk.xml:      $(BOOKdir)/$@ $(srcdir)/npapi-sdk.ch
 openjdk.xml:        $(BOOKdir)/$@ $(srcdir)/openjdk.ch
 other-tools.xml:    $(BOOKdir)/$@ $(srcdir)/other-tools.ch
 perl-modules.xml:   $(BOOKdir)/$@ $(srcdir)/perl-modules.ch
 php.xml:            $(BOOKdir)/$@ $(srcdir)/php.ch
-pkgconfig.xml:      $(BOOKdir)/$@ $(srcdir)/pkgconfig.ch
 prog.xml:           $(BOOKdir)/$@ $(srcdir)/prog.ch
 python-modules.xml: $(BOOKdir)/$@ $(srcdir)/python-modules.ch
 python2.xml:        $(BOOKdir)/$@ $(srcdir)/python2.ch

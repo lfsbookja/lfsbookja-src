@@ -82,33 +82,39 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus"/>,
-      <xref linkend="libgusb"/>,
-      <xref linkend="lcms2"/> and
-      <xref linkend="sqlite"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="lcms2"/>,
+      <xref linkend="sqlite"/>, and
+      <xref linkend="dbus"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="dbus"/>,
-      <xref linkend="libgusb"/>,
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>,
       <xref linkend="lcms2"/>,
-      <xref linkend="sqlite"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="dbus"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="polkit"/> and
+      <xref linkend="libgusb"/>,
+      <xref linkend="udev-extras"/> (for GUdev),
+      <xref linkend="polkit"/>,
+      <xref linkend="gobject-introspection"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libgusb"/>,
+      <xref linkend="udev-extras"/> (for GUdev),
       <xref linkend="polkit"/>,
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>
 @z

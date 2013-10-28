@@ -80,32 +80,30 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="x-window-system"/></para>
+    <para role="required">
+      <xref linkend="x-window-system"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="x-window-system"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="pkgconfig"/></para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="x-window-system"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="gdk-pixbuf"/>, or <ulink
-    url="http://sourceforge.net/projects/afterstep">libAfterImage</ulink>
-    (these add support for background images and simulated transparency)</para>
+      <xref linkend="gdk-pixbuf"/>, or 
+      <ulink url="http://sourceforge.net/projects/afterstep">libAfterImage</ulink>
+      (these add support for background images and simulated transparency)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="gdk-pixbuf"/>, または <ulink
-    url="http://sourceforge.net/projects/afterstep">libAfterImage</ulink>
-    (バックグラウンドイメージやシミュレートされた透過をサポートする際に必要。)</para>
+      <xref linkend="gdk-pixbuf"/> または
+      <ulink url="http://sourceforge.net/projects/afterstep">libAfterImage</ulink>
+      (バックグラウンドイメージやシミュレートされた透過をサポートする際に必要。)
+    </para>
 @z
 
 @x

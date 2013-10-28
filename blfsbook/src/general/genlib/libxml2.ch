@@ -76,12 +76,12 @@
 
 @x
           Optional Testsuite:
-          <ulink url="http://www.w3.org/XML/Test/xmlts20080827.tar.gz"/> - This
+          <ulink url="http://www.w3.org/XML/Test/xmlts&testsuite-version;.tar.gz"/> - This
           enables <command>make check</command> to do complete testing.
 @y
-          任意のテストスイート: <ulink
-            url="http://www.w3.org/XML/Test/xmlts20080827.tar.gz"/> -
-            これを利用すると <command>make check</command> により完全なテストを行うことができます。
+          任意のテストスイート:
+          <ulink url="http://www.w3.org/XML/Test/xmlts&testsuite-version;.tar.gz"/> - 
+          これを利用すると <command>make check</command> により完全なテストを行うことができます。
 @z
 
 @x

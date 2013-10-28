@@ -79,14 +79,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>,
-      <xref linkend="sdl"/>, and
+      <xref linkend="sdl"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>,
       <xref linkend="sdl"/>,
       <xref linkend="xorg7-lib"/>
     </para>

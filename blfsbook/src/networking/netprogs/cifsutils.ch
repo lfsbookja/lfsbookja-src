@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY cifsutils-time          "less than 0.1 SBU">
-@y
-  <!ENTITY cifsutils-time          "0.1 SBU 以下">
-@z
-
-@x
    <title>Introduction to cifs-utils</title>
 @y
    <title>cifs-utils の概要</title>
@@ -89,7 +83,7 @@
       <xref linkend="talloc"/>,
       <xref linkend="samba"/>, and
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> or
-      <xref linkend="libcap2"/>
+      <xref linkend="libcap"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -99,7 +93,7 @@
       <xref linkend="talloc"/>,
       <xref linkend="samba"/>,
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> または
-      <xref linkend="libcap2"/>
+      <xref linkend="libcap"/>
     </para>
 @z
 
@@ -149,7 +143,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -157,15 +151,15 @@
 @z
 
 @x
-        <seg>cifs.idmap, cifs.upcall, cifscreds, getcifsacl, mount.cifs, 
-        and setcifsacl</seg>
+        <seg>cifs.idmap, cifs.upcall, cifscreds, getcifsacl, mount.cifs,
+        and, setcifsacl</seg>
         <seg>None</seg>
-        <seg>None</seg>
+        <seg>/usr/lib/cifs-utils</seg>
 @y
-        <seg>cifs.idmap, cifs.upcall, cifscreds, getcifsacl, mount.cifs, 
+        <seg>cifs.idmap, cifs.upcall, cifscreds, getcifsacl, mount.cifs,
         setcifsacl</seg>
         <seg>&None;</seg>
-        <seg>&None;</seg>
+        <seg>/usr/lib/cifs-utils</seg>
 @z
 
 @x cifs.idmap

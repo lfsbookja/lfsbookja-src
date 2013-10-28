@@ -85,14 +85,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="xorg7-proto"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="xorg7-proto"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="xorg7-proto"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="xorg7-proto"/>
     </para>
 @z
 

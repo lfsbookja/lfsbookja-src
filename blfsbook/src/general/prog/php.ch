@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY php-time          "2.3 SBU (additional 2.9 SBU to run the test suite)">
+  <!ENTITY php-time          "3.7 SBU (additional 2.9 SBU to run the test suite)">
 @y
-  <!ENTITY php-time          "2.3 SBU (テストスイート実行時は、さらに 2.9 SBU)">
+  <!ENTITY php-time          "3.7 SBU (テストスイート実行時は、さらに 2.9 SBU)">
 @z
 
 @x
@@ -101,19 +101,17 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="apache"/></para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="apache"/></para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libxml2"/></para>
+    <para role="recommended">
+      <xref linkend="apache"/> and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libxml2"/></para>
+    <para role="recommended">
+      <xref linkend="apache"/>,
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
@@ -123,8 +121,6 @@
     <xref linkend="pcre"/>,
     <xref linkend="aspell"/>,
     <xref linkend="enchant"/>,
-    <xref linkend="pkgconfig"/>,
-    <!-- <xref linkend="recode"/>, -->
     <xref linkend="expat"/> (deprecated alternative to <xref linkend="libxml2"/>),
     <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
     <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
@@ -141,16 +137,15 @@
     <xref linkend="pcre"/>,
     <xref linkend="aspell"/>,
     <xref linkend="enchant"/>,
-    <xref linkend="pkgconfig"/>,
-    <!-- <xref linkend="recode"/>, -->
-    <xref linkend="expat"/> (かつての選択肢としては <xref linkend="libxml2"/>),
+    <xref linkend="expat"/> (deprecated alternative to <xref linkend="libxml2"/>),
     <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
     <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
     <xref linkend="pth"/>,
     <ulink url="http://re2c.org/">re2c</ulink>,
     <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>,
-    <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
-    <xref linkend="server-mail"/> (<command>sendmail</command> コマンドを提供するもの)</para>
+    <ulink url="http://dmalloc.com/">Dmalloc</ulink>, and
+    an <xref linkend="server-mail"/> (that provides a
+    <command>sendmail</command> command)</para>
 @z
 
 @x
@@ -162,7 +157,7 @@
     <xref linkend="freetype2"/>,
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
-    <ulink url="http://fossies.org/unix/www/gd-2.0.35.tar.gz/">GD (has bugs)</ulink>,
+    <ulink url="https://bitbucket.org/libgd/gd-libgd/downloads">GD</ulink>,
     <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @y
@@ -174,8 +169,8 @@
     <xref linkend="freetype2"/>,
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
-    <ulink url="http://fossies.org/unix/www/gd-2.0.35.tar.gz/">GD (バグあり)</ulink>,
-    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>,
+    <ulink url="https://bitbucket.org/libgd/gd-libgd/downloads">GD</ulink>,
+    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @z
 
@@ -619,13 +614,13 @@
 @z
 
 @x
-        <seg>pear, peardev, pecl, php, php-config and phpize</seg>
+        <seg>pear, peardev, pecl, phar, phar.phar, php, php-cgi, php-config, and phpize</seg>
         <seg>libphp5.so Apache module</seg>
         <seg>/usr/include/php, /usr/lib/php and
         /usr/share/doc/php-&php-version;</seg>
 @y
-        <seg>pear, peardev, pecl, php, php-config, phpize</seg>
-        <seg>libphp5.so Apache モジュール</seg>
+        <seg>pear, peardev, pecl, phar, phar.phar, php, php-cgi, php-config, phpize</seg>
+        <seg>libphp5.so Apache module</seg>
         <seg>/usr/include/php, /usr/lib/php,
         /usr/share/doc/php-&php-version;</seg>
 @z

@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY xorg-evdev-driver-time          "less than 0.1 SBU">
-@y
-  <!ENTITY xorg-evdev-driver-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
       <title>Introduction to Xorg Evdev Driver</title>
 @y
       <title>&IntroductionTo1;Xorg Evdev Driver&IntroductionTo2;</title>

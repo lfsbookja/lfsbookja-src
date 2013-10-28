@@ -86,7 +86,6 @@
       <xref linkend="intltool"/>,
       <xref linkend="libusb"/>,
       <xref linkend="polkit"/>, and
-      <xref linkend="udev"/> or
       <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @y
@@ -96,8 +95,7 @@
       <xref linkend="intltool"/>,
       <xref linkend="libusb"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="udev"/> または
-      <xref linkend="udev-extras"/> (GUdev のため)
+      <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @z
 

@@ -113,13 +113,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <ulink url="http://sourceforge.net/projects/quvi">libquvi</ulink>
+      <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9)</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://sourceforge.net/projects/quvi">libquvi</ulink>
+      <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9)</ulink>
     </para>
 @z
 
@@ -186,7 +186,8 @@
           libtotem-plparser-mini.so and libtotem-plparser.so
         </seg>
         <seg>
-          /usr/include/totem-pl-parser and
+          /usr/include/totem-pl-parser,
+          /usr/lib/totem-pl-parser, and
           /usr/share/gtk-doc/html/totem-pl-parser
         </seg>
 @y
@@ -198,6 +199,7 @@
         </seg>
         <seg>
           /usr/include/totem-pl-parser,
+          /usr/lib/totem-pl-parser,
           /usr/share/gtk-doc/html/totem-pl-parser
         </seg>
 @z

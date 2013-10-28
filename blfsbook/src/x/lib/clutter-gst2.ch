@@ -158,7 +158,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -171,7 +171,7 @@
           None
         </seg>
         <seg>
-          libclutter-gst-2.0.so and libgstclutter.so
+          libclutter-gst-2.0.so
         </seg>
         <seg>
           /usr/include/clutter-gst-2.0 and
@@ -182,7 +182,7 @@
           &None;
         </seg>
         <seg>
-          libclutter-gst-2.0.so, libgstclutter.so
+          libclutter-gst-2.0.so
         </seg>
         <seg>
           /usr/include/clutter-gst-2.0,

@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY libdiscid-time          "less than 0.1 SBU">
-@y
-  <!ENTITY libdiscid-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to libdiscid</title>
 @y
     <title>&IntroductionTo1;libdiscid&IntroductionTo2;</title>

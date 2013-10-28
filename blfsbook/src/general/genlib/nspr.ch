@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY nspr-time          "less than 0.1 SBU">
-@y
-  <!ENTITY nspr-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to NSPR</title>
 @y
     <title>&IntroductionTo1;NSPR&IntroductionTo2;</title>
@@ -115,38 +109,6 @@
 @z
 
 @x
-      <option>--with-mozilla</option>: This parameter adds Mozilla support
-      to the libraries (required if you want to build any other Mozilla
-      products and link them to these libraries).
-@y
-      <option>--with-mozilla</option>:
-      このパラメーターは Mozilla サポート機能を追加します。
-      (Mozilla 関連ソフトウェアをビルドし、ライブラリをリンクしたい場合に必要です。)
-@z
-
-@x
-      <option>--with-pthreads</option>: This parameter forces use of the
-      system pthread library.
-@y
-      <option>--with-pthreads</option>:
-      システムにインストールされている pthreads ライブラリを利用することを指定します。
-@z
-
-@x
-      <option>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
-      --enable-64bit)</option>: The --enable-64bit option is
-      <emphasis>required</emphasis> on an x86_64 system to prevent
-      <command>configure</command> failing with a claim that this is a system
-      without pthread support. The [ $(uname -m) = x86_64 ] test ensures it has
-      no effect on a 32 bit system.
-@y
-      <option>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
-      --enable-64bit)</option>: 
-      この --enable-64bit オプションは、x86_64 システム上にて <command>configure</command> コマンドを実行した際に pthread サポートが無効であることを示す警告が発生するのを防ぐものです。
-      32 ビットシステムではこの指定は意味がないため [ $(uname -m) = x86_64 ] という確認を行っています。
-@z
-
-@x
       <command>sed -ri 's#^(RELEASE_BINS =).*#\1#'
       pr/src/misc/Makefile.in</command>: This sed disables installing two unneeded
       scripts.
@@ -162,6 +124,38 @@
 @y
       <command>sed -i 's#$(LIBRARY) ##' config/rules.mk</command>: 
       これはスタティックライブラリをインストールしないようにします。
+@z
+
+@x
+      <parameter>--with-mozilla</parameter>: This parameter adds Mozilla support
+      to the libraries (required if you want to build any other Mozilla
+      products and link them to these libraries).
+@y
+      <parameter>--with-mozilla</parameter>:
+      このパラメーターは Mozilla サポート機能を追加します。
+      (Mozilla 関連ソフトウェアをビルドし、ライブラリをリンクしたい場合に必要です。)
+@z
+
+@x
+      <parameter>--with-pthreads</parameter>: This parameter forces use of the
+      system pthread library.
+@y
+      <parameter>--with-pthreads</parameter>:
+      システムにインストールされている pthreads ライブラリを利用することを指定します。
+@z
+
+@x
+      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
+      --enable-64bit)</parameter>: The --enable-64bit parameter is
+      <emphasis>required</emphasis> on an x86_64 system to prevent
+      <command>configure</command> failing with a claim that this is a system
+      without pthread support. The [ $(uname -m) = x86_64 ] test ensures it has
+      no effect on a 32 bit system.
+@y
+      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
+      --enable-64bit)</parameter>: 
+      この --enable-64bit パラメーターは、x86_64 システム上にて <command>configure</command> コマンドを実行した際に pthread サポートが無効であることを示す警告が発生するのを防ぐものです。
+      32 ビットシステムではこの指定は意味がないため [ $(uname -m) = x86_64 ] という確認を行っています。
 @z
 
 @x

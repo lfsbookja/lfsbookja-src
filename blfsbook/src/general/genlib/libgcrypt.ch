@@ -93,13 +93,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libcap2"/> and
+      <xref linkend="libcap"/> and
       <xref linkend="pth"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libcap2"/>,
+      <xref linkend="libcap"/>,
       <xref linkend="pth"/>
     </para>
 @z

@@ -77,12 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-desktop"/> and
+      <xref linkend="exempi"/>,
+      <xref linkend="gnome-desktop"/>, and
       <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="exempi"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="libnotify"/>
     </para>
@@ -91,11 +93,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="libexif"/> and
       <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="libexif"/>,
       <xref linkend="gobject-introspection"/>
     </para>
 @z
@@ -103,17 +107,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="exempi"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libexif"/>, and
+      <xref linkend="gtk-doc"/> and
       <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="exempi"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="libexif"/>,
       <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
     </para>
 @z
@@ -150,9 +150,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. The tests
+      need to be run in a graphical environment.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストはグラフィック環境にて実行する必要があります。
 @z
 
 @x
@@ -162,10 +164,10 @@
 @z
 
 @x
-      <option>--disable-packagekit</option>: This switch disables use
+      <parameter>--disable-packagekit</parameter>: This switch disables use
       of PackageKit which isn't suitable for BLFS.
 @y
-      <option>--disable-packagekit</option>:
+      <parameter>--disable-packagekit</parameter>:
       本スイッチは BLFS には含めていない PackageKit を利用しないようにします。
 @z
 
@@ -187,7 +189,9 @@
 
 @x
         <seg>
-          nautilus, nautilus-autorun-software and nautilus-connect-server
+          nautilus, 
+          nautilus-autorun-software, and 
+          nautilus-connect-server
         </seg>
         <seg>
           libnautilus-extension.so
@@ -201,7 +205,9 @@
         </seg>
 @y
         <seg>
-          nautilus, nautilus-autorun-software, nautilus-connect-server
+          nautilus, 
+          nautilus-autorun-software,
+          nautilus-connect-server
         </seg>
         <seg>
           libnautilus-extension.so

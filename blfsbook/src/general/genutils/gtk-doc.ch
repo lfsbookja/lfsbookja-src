@@ -105,16 +105,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="pkgconfig"/>
-    (to use some of the optional deps)</para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="pkgconfig"/>
-    (任意の依存パッケージ利用時に必要となる場合あり)</para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or

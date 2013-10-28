@@ -15,10 +15,10 @@ CHANGE_FILES = \
 	alsa-utils.ch         \
 	alsa.ch               \
 	audiofile.ch          \
-	esound.ch             \
 	faac.ch               \
 	faad2.ch              \
 	farstream.ch          \
+	fdk-aac.ch            \
 	flac.ch               \
 	grilo.ch              \
 	gst-ffmpeg.ch         \
@@ -35,6 +35,7 @@ CHANGE_FILES = \
 	gstreamer10.ch        \
 	liba52.ch             \
 	libao.ch              \
+	libass.ch             \
 	libcanberra.ch        \
 	libdiscid.ch          \
 	libdriv.ch            \
@@ -44,7 +45,6 @@ CHANGE_FILES = \
 	libdvdnav.ch          \
 	libmad.ch             \
 	libmpeg2.ch           \
-	libmpeg3.ch           \
 	libmusicbrainz.ch     \
 	libmusicbrainz5.ch    \
 	libogg.ch             \
@@ -55,11 +55,13 @@ CHANGE_FILES = \
 	libvorbis.ch          \
 	libvpx.ch             \
 	opal.ch               \
+	opus.ch               \
 	pulseaudio.ch         \
 	sdl.ch                \
 	soundtouch.ch         \
 	speex.ch              \
 	taglib.ch             \
+	x264.ch               \
 	xine-lib.ch           \
 	xvid.ch
 
@@ -84,10 +86,10 @@ alsa-tools.xml:              $(BOOKdir)/$@ $(srcdir)/alsa-tools.ch
 alsa-utils.xml:              $(BOOKdir)/$@ $(srcdir)/alsa-utils.ch
 alsa.xml:                    $(BOOKdir)/$@ $(srcdir)/alsa.ch
 audiofile.xml:               $(BOOKdir)/$@ $(srcdir)/audiofile.ch
-esound.xml:                  $(BOOKdir)/$@ $(srcdir)/esound.ch
 faac.xml:                    $(BOOKdir)/$@ $(srcdir)/faac.ch
 faad2.xml:                   $(BOOKdir)/$@ $(srcdir)/faad2.ch
 farstream.xml:               $(BOOKdir)/$@ $(srcdir)/farstream.ch
+fdk-aac.xml:                 $(BOOKdir)/$@ $(srcdir)/fdk-aac.ch
 flac.xml:                    $(BOOKdir)/$@ $(srcdir)/flac.ch
 grilo.xml:                   $(BOOKdir)/$@ $(srcdir)/grilo.ch
 gst-ffmpeg.xml:              $(BOOKdir)/$@ $(srcdir)/gst-ffmpeg.ch
@@ -106,6 +108,7 @@ gstreamer.xml:               $(BOOKdir)/$@ $(srcdir)/gstreamer.ch
 gstreamer10.xml:             $(BOOKdir)/$@ $(srcdir)/gstreamer10.ch
 liba52.xml:                  $(BOOKdir)/$@ $(srcdir)/liba52.ch
 libao.xml:                   $(BOOKdir)/$@ $(srcdir)/libao.ch
+libass.xml:                  $(BOOKdir)/$@ $(srcdir)/libass.ch
 libcanberra.xml:             $(BOOKdir)/$@ $(srcdir)/libcanberra.ch
 libdiscid.xml:               $(BOOKdir)/$@ $(srcdir)/libdiscid.ch
 libdriv.xml:                 $(BOOKdir)/$@ $(srcdir)/libdriv.ch
@@ -115,7 +118,6 @@ libdvdnav.xml:               $(BOOKdir)/$@ $(srcdir)/libdvdnav.ch
 libdvdread.xml:              $(BOOKdir)/$@ $(srcdir)/libdvdread.ch
 libmad.xml:                  $(BOOKdir)/$@ $(srcdir)/libmad.ch
 libmpeg2.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg2.ch
-libmpeg3.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg3.ch
 libmusicbrainz.xml:          $(BOOKdir)/$@ $(srcdir)/libmusicbrainz.ch
 libmusicbrainz5.xml:         $(BOOKdir)/$@ $(srcdir)/libmusicbrainz5.ch
 libogg.xml:                  $(BOOKdir)/$@ $(srcdir)/libogg.ch
@@ -126,10 +128,12 @@ libtheora.xml:               $(BOOKdir)/$@ $(srcdir)/libtheora.ch
 libvorbis.xml:               $(BOOKdir)/$@ $(srcdir)/libvorbis.ch
 libvpx.xml:                  $(BOOKdir)/$@ $(srcdir)/libvpx.ch
 opal.xml:                    $(BOOKdir)/$@ $(srcdir)/opal.ch
+opus.xml:                    $(BOOKdir)/$@ $(srcdir)/opus.ch
 pulseaudio.xml:              $(BOOKdir)/$@ $(srcdir)/pulseaudio.ch
 sdl.xml:                     $(BOOKdir)/$@ $(srcdir)/sdl.ch
 soundtouch.xml:              $(BOOKdir)/$@ $(srcdir)/soundtouch.ch
 speex.xml:                   $(BOOKdir)/$@ $(srcdir)/speex.ch
 taglib.xml:                  $(BOOKdir)/$@ $(srcdir)/taglib.ch
+x264.xml:                    $(BOOKdir)/$@ $(srcdir)/x264.ch
 xine-lib.xml:                $(BOOKdir)/$@ $(srcdir)/xine-lib.ch
 xvid.xml:                    $(BOOKdir)/$@ $(srcdir)/xvid.ch

@@ -304,16 +304,10 @@
 
 @x
       <para>For a full explanation of the commands and syntax used in the
-      configuration file, run <command>man stunnel</command>. To see a
-      BLFS example of an actual setup of an <command>stunnel</command> encrypted
-      service, read the <xref linkend="samba-swat-config"/> in the
-      <application>Samba</application> instructions.</para>
+      configuration file, run <command>man stunnel</command>.</para>
 @y
       <para>For a full explanation of the commands and syntax used in the
-      configuration file, run <command>man stunnel</command>. To see a
-      BLFS example of an actual setup of an <command>stunnel</command> encrypted
-      service, read the <xref linkend="samba-swat-config"/> in the
-      <application>Samba</application> instructions.</para>
+      configuration file, run <command>man stunnel</command>.</para>
 @z
 
 @x

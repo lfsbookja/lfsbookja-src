@@ -333,24 +333,6 @@
 @z
 
 @x
-    <sect3><title>Configuration Information</title>
-@y
-    <sect3><title>&ConfigInfo;</title>
-@z
-
-@x
-        To be able to use git to pull from a https source you need first install
-        the <xref linkend="cacerts"/> and then configure git to know where they
-        are. To set the default location of the SSL certificates, as the
-        <systemitem class="username">root</systemitem> user:
-@y
-        To be able to use git to pull from a https source you need first install
-        the <xref linkend="cacerts"/> and then configure git to know where they
-        are. To set the default location of the SSL certificates, as the
-        <systemitem class="username">root</systemitem> user:
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

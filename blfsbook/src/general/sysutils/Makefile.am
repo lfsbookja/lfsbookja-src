@@ -14,15 +14,12 @@ CHANGE_FILES = \
 	colord.ch        \
 	cpio.ch          \
 	dbus.ch          \
-	eject.ch         \
 	fcron.ch         \
 	gpm.ch           \
 	hdparm.ch        \
-	ibus.ch          \
 	initdtools.ch    \
 	lm_sensors.ch    \
 	mc.ch            \
-	obexd.ch         \
 	obex-data-server.ch \
 	pciutils.ch      \
 	pm-utils.ch      \
@@ -33,7 +30,6 @@ CHANGE_FILES = \
 	strigi.ch        \
 	sysstat.ch       \
 	sysutils.ch      \
-	udev.ch          \
 	udev-extras.ch   \
 	udisks.ch        \
 	udisks2.ch       \
@@ -64,15 +60,12 @@ bluez.xml:         $(BOOKdir)/$@ $(srcdir)/bluez.ch
 colord.xml:        $(BOOKdir)/$@ $(srcdir)/colord.ch
 cpio.xml:          $(BOOKdir)/$@ $(srcdir)/cpio.ch
 dbus.xml:          $(BOOKdir)/$@ $(srcdir)/dbus.ch
-eject.xml:         $(BOOKdir)/$@ $(srcdir)/eject.ch
 fcron.xml:         $(BOOKdir)/$@ $(srcdir)/fcron.ch
 gpm.xml:           $(BOOKdir)/$@ $(srcdir)/gpm.ch
 hdparm.xml:        $(BOOKdir)/$@ $(srcdir)/hdparm.ch
-ibus.xml:          $(BOOKdir)/$@ $(srcdir)/ibus.ch
 initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch
 mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
-obexd.xml:         $(BOOKdir)/$@ $(srcdir)/obexd.ch
 obex-data-server.xml: $(BOOKdir)/$@ $(srcdir)/obex-data-server.ch
 pciutils.xml:      $(BOOKdir)/$@ $(srcdir)/pciutils.ch
 pm-utils.xml:      $(BOOKdir)/$@ $(srcdir)/pm-utils.ch
@@ -83,7 +76,6 @@ sg3_utils.xml:     $(BOOKdir)/$@ $(srcdir)/sg3_utils.ch
 strigi.xml:        $(BOOKdir)/$@ $(srcdir)/strigi.ch
 sysstat.xml:       $(BOOKdir)/$@ $(srcdir)/sysstat.ch
 sysutils.xml:      $(BOOKdir)/$@ $(srcdir)/sysutils.ch
-udev.xml:          $(BOOKdir)/$@ $(srcdir)/udev.ch
 udev-extras.xml:   $(BOOKdir)/$@ $(srcdir)/udev-extras.ch
 udisks.xml:        $(BOOKdir)/$@ $(srcdir)/udisks.ch
 udisks2.xml:       $(BOOKdir)/$@ $(srcdir)/udisks2.ch

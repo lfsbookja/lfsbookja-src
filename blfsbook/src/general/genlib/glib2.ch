@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-time          "1.9 SBU (additional 4.8 SBU to run the test suite)">
+  <!ENTITY glib2-buildsize     "116 MB (plus 41MB installed)">
+  <!ENTITY glib2-time          "0.9 SBU (additional 5.6 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-time          "1.9 SBU (テストスイート実行時は追加で 4.8 SBU)">
+  <!ENTITY glib2-buildsize     "116 MB (plus 41MB installed)">
+  <!ENTITY glib2-time          "0.9 SBU (テストスイート実行時は追加で 5.6 SBU)">
 @z
 
 @x
@@ -88,17 +90,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libffi"/>,
-      <xref linkend="pkgconfig"/> and
+      <xref linkend="libffi"/> and
       <xref linkend="python2"/>
-    </para> 
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libffi"/>,
-      <xref linkend="pkgconfig"/>,
       <xref linkend="python2"/>
-    </para> 
+    </para>
 @z
 
 @x
@@ -117,7 +117,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="attr"/>,
-      <xref linkend="dbus"/> (required to run the tests) and
+      <xref linkend="dbus"/> (required to run the tests), and
       <xref linkend="gtk-doc"/>
     </para>
 @y
@@ -132,10 +132,10 @@
 @x
     <bridgehead renderas="sect4">Additional Runtime Dependencies</bridgehead>
     <para role="optional">
-      Quoted directly from the <filename>INSTALL</filename> file; 
+      Quoted directly from the <filename>INSTALL</filename> file:
       <quote>Some of the mimetype-related functionality in GIO requires the
       <command>update-mime-database</command> and
-      <command>update-desktop-database</command> utilities</quote>, 
+      <command>update-desktop-database</command> utilities</quote>,
       which are part of
       <xref linkend="shared-mime-info"/> and
       <xref linkend="desktop-file-utils"/>, respectively.
@@ -143,12 +143,12 @@
 @y
     <bridgehead renderas="sect4">実行時のその他の依存パッケージ</bridgehead>
     <para role="optional">
-      Quoted directly from the <filename>INSTALL</filename> file; 
+      Quoted directly from the <filename>INSTALL</filename> file:
       <quote>Some of the mimetype-related functionality in GIO requires the
       <command>update-mime-database</command> and
-      <command>update-desktop-database</command> utilities</quote>, 
+      <command>update-desktop-database</command> utilities</quote>,
       which are part of
-      <xref linkend="shared-mime-info"/> and
+      <xref linkend="shared-mime-info"/>,
       <xref linkend="desktop-file-utils"/>, respectively.
     </para>
 @z
@@ -200,10 +200,14 @@
 
 @x
       To test the results, issue: <command>make -k check</command>.  The
-      tests need to be run in a graphical environment.
+      tests need to be run in a graphical environment.  One test (regex)
+      fails when using the system pcre package. Test "gdatetime" has been
+      reported to fail.
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
       ただしテストはグラフィック環境下にて実行する必要があります。
+      システムにインストールされちる pcre パッケージを使った場合には、失敗するテスト (regex) が１つあります。
+      また "gdatetime" テストも失敗するという報告があります。
 @z
 
 @x
@@ -243,12 +247,12 @@
           gdbus, gdbus-codegen, gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal, glib-gettextize, glib-mkenums,
-          gobject-query, gresource, gsettings, gtester 
+          gobject-query, gresource, gsettings, gtester,
           and gtester-report
         </seg>
         <seg>
           libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-          libgobject-2.0.so and libgthread-2.0.so
+          libgobject-2.0.so, and libgthread-2.0.so
         </seg>
         <seg>
           /usr/include/gio-unix-2.0,
@@ -258,7 +262,7 @@
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
           /usr/share/gtk-doc/html/gio,
-          /usr/share/gtk-doc/html/glib and
+          /usr/share/gtk-doc/html/glib, and
           /usr/share/gtk-doc/html/gobject
         </seg>
 @y

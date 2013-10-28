@@ -26,27 +26,15 @@
 @z
 
 @x
-    <para>The <application>Autofs</application> package contains userspace
-    tools that work with the kernel to mount and un-mount removable file
-    systems. The primary use is to mount external network file systems like
-    NFS (see <xref linkend="nfs-utils"/>) or Samba (see <xref linkend="samba"/>)
-    on demand.</para>
+      <application>Autofs</application> controls the operation of the automount
+      daemons. The automount daemons automatically mount filesystems when they
+      are accessed and unmount them after a period of inactivity. This is done
+      based on a set of pre-configured maps.
 @y
-    <para>The <application>Autofs</application> package contains userspace
-    tools that work with the kernel to mount and un-mount removable file
-    systems. The primary use is to mount external network file systems like
-    NFS (see <xref linkend="nfs-utils"/>) or Samba (see <xref linkend="samba"/>)
-    on demand.</para>
-@z
-
-@x
-    <para>It may also be useful for allowing users to mount floppies, cdroms and
-    other removable storage devices without requiring the system
-    administrator to mount the devices.</para>
-@y
-    <para>It may also be useful for allowing users to mount floppies, cdroms and
-    other removable storage devices without requiring the system
-    administrator to mount the devices.</para>
+      <application>Autofs</application> controls the operation of the automount
+      daemons. The automount daemons automatically mount filesystems when they
+      are accessed and unmount them after a period of inactivity. This is done
+      based on a set of pre-configured maps.
 @z
 
 @x
@@ -92,47 +80,31 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-    <para>Recommended Patches: There are frequent patches issued for
-    <application>autofs</application>. One method you can use to get the
-    current patches requires first installing the <xref linkend="wget"/>
-    package. After ensuring the <command>wget</command> command is installed
-    in a directory identified in the <envar>PATH</envar> variable, start in
-    the same directory as the main tar file and issue the following
-    commands:</para>
-@y
-    <para>Recommended Patches: There are frequent patches issued for
-    <application>autofs</application>. One method you can use to get the
-    current patches requires first installing the <xref linkend="wget"/>
-    package. After ensuring the <command>wget</command> command is installed
-    in a directory identified in the <envar>PATH</envar> variable, start in
-    the same directory as the main tar file and issue the following
-    commands:</para>
-@z
-
-@x
     <bridgehead renderas="sect3">Autofs Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Autofs&Dependencies2;</bridgehead>
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="openldap"/>,
-      <xref linkend="cyrus-sasl"/>, and 
-      <xref linkend="mitkrb"/></para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="libtirpc"/>,
+      <xref linkend="nfs-utils"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="openldap"/> (client only), and
+      <xref linkend="cyrus-sasl"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="openldap"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="mitkrb"/></para>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="libtirpc"/>,
+      <xref linkend="nfs-utils"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="openldap"/> (client only),
+      <xref linkend="cyrus-sasl"/>
+    </para>
 @z
 
 @x
@@ -150,26 +122,35 @@
 @z
 
 @x
-    <para>Verify that kernel support has been compiled in or built as
-    modules in the following areas:</para>
+      Verify that automounter kernel support has been enabled:
 @y
-    <para>
-    以下に示すカーネル設定が、カーネルモジュールに組み込み済であるか、モジュールとしてコンパイル済であることを確認してください。
-    </para>
+      カーネルにて自動マウント (automaounter) サポートが有効になっていることを確認してください。
 @z
 
 @x
-<screen><literal>File systems &rArr;
-    Kernel automounter version 4 support  Y or M
-    Network File Systems &rArr;
-        NFS client support   Y or M (optional)
-        CIFS support         Y or M (optional)</literal></screen>
+<screen><literal>File systems ---&gt;
+  Kernel automounter version 4 support (also supports v3): Y or M</literal></screen>
 @y
-<screen><literal>File systems &rArr;
-    Kernel automounter version 4 support  Y または M
-    Network File Systems &rArr;
-        NFS client support   Y または M (任意)
-        CIFS support         Y または M (任意)</literal></screen>
+<screen><literal>File systems ---&gt;
+  Kernel automounter version 4 support (also supports v3): Y or M</literal></screen>
+@z
+
+@x
+      Optionally, enable the following options in the kernel configuration:
+@y
+      Optionally, enable the following options in the kernel configuration:
+@z
+
+@x
+<screen><literal>File systems  ---&gt;
+  Network File Systems  ---&gt;
+    NFS client support: Y or M
+    CIFS support (advanced network filesystem, SMBFS successor): Y or M</literal></screen>
+@y
+<screen><literal>File systems  ---&gt;
+  Network File Systems  ---&gt;
+    NFS client support: Y or M
+    CIFS support (advanced network filesystem, SMBFS successor): Y or M</literal></screen>
 @z
 
 @x
@@ -216,23 +197,11 @@
 @z
 
 @x
-    <para><command>for f in `cat ../patch_order-&autofs-version;`; do
-    patch -Np1 -i ../$f;  done</command>: This command applies all the
-    patches downloaded earlier in the correct order.</para>
+      <option>--with-libtirpc</option>: This switch enables libtirpc support if
+      available.
 @y
-    <para><command>for f in `cat ../patch_order-&autofs-version;`; do
-    patch -Np1 -i ../$f;  done</command>: This command applies all the
-    patches downloaded earlier in the correct order.</para>
-@z
-
-@x
-    <para><command>ln -sf  ../init.d/autofs
-    /etc/rc.d/rcsysinit.d/S52autofs</command>: This command sets the
-    link to properly start autofs upon boot.</para>
-@y
-    <para><command>ln -sf  ../init.d/autofs
-    /etc/rc.d/rcsysinit.d/S52autofs</command>: This command sets the
-    link to properly start autofs upon boot.</para>
+      <option>--with-libtirpc</option>: This switch enables libtirpc support if
+      available.
 @z
 
 @x

@@ -228,8 +228,7 @@
           libgnutlsxx.so
         </seg>
         <seg>
-          /usr/include/gnutls,
-          /usr/share/doc/gnutls-3.2.1, and
+          /usr/include/gnutls and
           /usr/share/gtk-doc/html/gnutls
         </seg>
 @y
@@ -243,7 +242,6 @@
         </seg>
         <seg>
           /usr/include/gnutls,
-          /usr/share/doc/gnutls-3.2.1,
           /usr/share/gtk-doc/html/gnutls
         </seg>
 @z

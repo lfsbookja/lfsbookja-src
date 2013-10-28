@@ -14,19 +14,19 @@
 @z
 
 @x
-  <!ENTITY libcap2-time          "less than 0.1 SBU">
+  <!ENTITY libcap-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libcap2-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY libcap-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
-    <title>Introduction to libcap2</title>
+    <title>Introduction to libcap</title>
 @y
-    <title>&IntroductionTo1;libcap2&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libcap&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>libcap2</application> package implements the
+    <para>The <application>libcap</application> package implements the
     user-space interfaces to the POSIX 1003.1e capabilities available in Linux
     kernels. These capabilities are a partitioning of the all powerful root
     privilege into a set of distinct privileges.  </para>
@@ -44,45 +44,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libcap2-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&libcap-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&libcap2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libcap-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libcap2-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&libcap-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&libcap2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libcap-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &libcap2-md5sum;</para>
+        <para>Download MD5 sum: &libcap-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &libcap2-md5sum;</para>
+        <para>&Download; MD5 sum: &libcap-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &libcap2-size;</para>
+        <para>Download size: &libcap-size;</para>
 @y
-        <para>&DownloadSize;: &libcap2-size;</para>
+        <para>&DownloadSize;: &libcap-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &libcap2-buildsize;</para>
+        <para>Estimated disk space required: &libcap-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &libcap2-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libcap-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &libcap2-time;</para>
+        <para>Estimated build time: &libcap-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &libcap2-time;</para>
+        <para>&Estimatedbuildtime;: &libcap-time;</para>
 @z
 
 @x
-    <bridgehead renderas="sect3">libcap2 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libcap Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;libcap2&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libcap&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,24 +103,22 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libcap2"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libcap2"/></para>
 @z
 
 @x
-    <title>Installation of libcap2</title>
+    <title>Installation of libcap</title>
 @y
-    <title>&InstallationOf1;libcap2&InstallationOf2;</title>
+    <title>&InstallationOf1;libcap&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>libcap2</application> by running the following
+    <para>Install <application>libcap</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>libcap2</application> をビルドします。
+    以下のコマンドを実行して <application>libcap</application> をビルドします。
     </para>
 @z
 
@@ -222,10 +220,10 @@
           <para>sets file file capabilities.</para>
 @z
 
-@x libcap2.{so,a}
-          <para>contains the <application>libcap2</application> API functions.</para>
+@x libcap.{so,a}
+          <para>contains the <application>libcap</application> API functions.</para>
 @y
           <para>
-          <application>libcap2</application> API 関数を提供します。
+          <application>libcap</application> API 関数を提供します。
           </para>
 @z

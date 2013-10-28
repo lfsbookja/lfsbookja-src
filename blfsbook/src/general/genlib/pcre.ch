@@ -128,47 +128,42 @@
 @z
 
 @x
-      <option>--enable-utf</option>: This switch includes the code for
-      handling UTF-8 character strings in the library.
-@y
-      <option>--enable-utf</option>:
-      このスイッチは UTF-8 文字を取り扱えるようにします。
-@z
-
-@x
-      <option>--enable-unicode-properties</option>: This switch enables
-      Unicode properties support. Note: You need this switch if you are
-      going to build <xref linkend="glib2"/> with the
+      <parameter>--enable-unicode-properties</parameter>: This switch enables
+      Unicode properties support and includes the code for handling UTF-8/16/32
+      character strings in the library. You need this switch if you are going to
+      build <xref linkend="glib2"/> with the
       <parameter>--with-pcre=system</parameter> switch.
 @y
-      <option>--enable-unicode-properties</option>:
-      このスイッチは Unicode プロパティのサポートを有効にします。
-      <xref linkend="glib2"/> のビルドにあたって <parameter>--with-pcre=system</parameter> スイッチを指定する場合は、本スイッチの指定が必要です。
+      <parameter>--enable-unicode-properties</parameter>: This switch enables
+      Unicode properties support and includes the code for handling UTF-8/16/32
+      character strings in the library. You need this switch if you are going to
+      build <xref linkend="glib2"/> with the
+      <parameter>--with-pcre=system</parameter> switch.
 @z
 
 @x
-      <option>--enable-pcregrep-libz</option>: This switch adds
+      <parameter>--enable-pcregrep-libz</parameter>: This switch adds
       support to <command>pcregrep</command> to read
       <filename class="extension">.gz</filename> compressed files.
 @y
-      <option>--enable-pcregrep-libz</option>:
+      <parameter>--enable-pcregrep-libz</parameter>:
       このスイッチは <command>pcregrep</command> に対して、<filename class="extension">.gz</filename> により圧縮されたファイルの読込機能を付与します。
 @z
 
 @x
-      <option>--enable-pcregrep-libbz2</option>: This switch adds
+      <parameter>--enable-pcregrep-libbz2</parameter>: This switch adds
       support to <command>pcregrep</command> to read
       <filename class="extension">.bz2</filename> compressed files.
 @y
-      <option>--enable-pcregrep-libbz2</option>:
+      <parameter>--enable-pcregrep-libbz2</parameter>:
       このスイッチは <command>pcregrep</command> に対して、<filename class="extension">.bz2</filename> により圧縮されたファイルの読込機能を付与します。
 @z
 
 @x
-      <option>--enable-pcretest-libreadline</option>: This switch adds line
+      <parameter>--enable-pcretest-libreadline</parameter>: This switch adds line
       editing and history features to <command>pcretest</command> program.
 @y
-      <option>--enable-pcretest-libreadline</option>:
+      <parameter>--enable-pcretest-libreadline</parameter>:
       このスイッチは <command>pcretest</command> プログラムにおいて、行編集および履歴機能を付与します。
 @z
 

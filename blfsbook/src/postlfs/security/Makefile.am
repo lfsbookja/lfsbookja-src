@@ -14,12 +14,11 @@ CHANGE_FILES = \
 	cracklib.ch        \
 	cyrus-sasl.ch      \
 	firewalling.ch     \
-	gnupg.ch           \
 	gnupg2.ch          \
 	gnutls.ch          \
 	gpgme.ch           \
 	iptables.ch        \
-	libcap2.ch         \
+	libcap.ch          \
 	linux-pam.ch       \
 	mitkrb.ch          \
 	nessus.ch          \
@@ -60,12 +59,11 @@ firewalling.xml:      $(BOOKdir)/$@ $(srcdir)/firewalling.ch $(srcdir)/firewalli
 	sed -f $(srcdir)/firewalling.sed < $(BOOKdir)/$@ > $@.tmp
 	$(top_builddir)/$(CTIE) -m $@ $@.tmp $(srcdir)/$*.ch
 	rm -f $@.tmp
-gnupg.xml:            $(BOOKdir)/$@ $(srcdir)/gnupg.ch
 gnupg2.xml:           $(BOOKdir)/$@ $(srcdir)/gnupg2.ch
 gnutls.xml:           $(BOOKdir)/$@ $(srcdir)/gnutls.ch
 gpgme.xml:            $(BOOKdir)/$@ $(srcdir)/gpgme.ch
 iptables.xml:         $(BOOKdir)/$@ $(srcdir)/iptables.ch
-libcap2.xml:          $(BOOKdir)/$@ $(srcdir)/libcap2.ch
+libcap.xml:           $(BOOKdir)/$@ $(srcdir)/libcap.ch
 linux-pam.xml:        $(BOOKdir)/$@ $(srcdir)/linux-pam.ch
 mitkrb.xml:           $(BOOKdir)/$@ $(srcdir)/mitkrb.ch
 nessus.xml:           $(BOOKdir)/$@ $(srcdir)/nessus.ch

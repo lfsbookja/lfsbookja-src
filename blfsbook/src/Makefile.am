@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=appendices book general gnome introduction kde \
+SUBDIRS=appendices book general gnome introduction kde lxde \
 	networking \
 	multimedia postlfs pst server stylesheets template x \
 	xfce xincludes xsoft

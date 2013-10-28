@@ -179,14 +179,6 @@
 @z
 
 @x
-      <command>sed -e '274cerr ...</command>: Fixes building against
-      <application>FFMpeg</application> 0.11.1.
-@y
-      <command>sed -e '274cerr ...</command>:
-      <application>FFMpeg</application> 0.11.1 とともにビルドするための修正を行います。
-@z
-
-@x
       <parameter>install -v -m644/docs/*/{css,html} ...</parameter>:
       This and the subsequent commands install all the provided documentation
       instead of only <filename>operations.html</filename> and the stylesheet
@@ -225,12 +217,12 @@
 
 @x
         <seg>gegl</seg>
-        <seg>libgegl-0.2.so, and libraries in /usr/lib/gegl-0.2/</seg>
-        <seg>/usr/include/gegl-0.2/</seg>
+        <seg>libgegl-0.2.so and libraries in /usr/lib/gegl-0.2</seg>
+        <seg>/usr/include/gegl-0.2</seg>
 @y
         <seg>gegl</seg>
         <seg>libgegl-0.2.so と /usr/lib/gegl-0.2 内のライブラリ</seg>
-        <seg>/usr/include/gegl-0.2/</seg>
+        <seg>/usr/include/gegl-0.2</seg>
 @z
 
 @x

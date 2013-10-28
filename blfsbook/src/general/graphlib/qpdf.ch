@@ -165,7 +165,7 @@
         </seg>
         <seg>
           /usr/include/qpdf and
-          /usr/share/doc/qpdf
+          /usr/share/doc/qpdf-&qpdf-version;
         </seg>
 @y
         <seg>
@@ -176,7 +176,7 @@
         </seg>
         <seg>
           /usr/include/qpdf,
-          /usr/share/doc/qpdf
+          /usr/share/doc/qpdf-&qpdf-version;
         </seg>
 @z
 

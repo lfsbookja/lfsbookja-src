@@ -82,14 +82,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-       <xref linkend="libtirpc"/> and
-       <xref linkend="pkgconfig"/>
+       <xref linkend="libtirpc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-       <xref linkend="libtirpc"/>,
-       <xref linkend="pkgconfig"/>
+       <xref linkend="libtirpc"/>
     </para>
 @z
 

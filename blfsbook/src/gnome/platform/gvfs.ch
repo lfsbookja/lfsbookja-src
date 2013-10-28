@@ -80,7 +80,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/> and
+      <xref linkend="glib2"/>, and
       <xref linkend="intltool"/>
     </para>
 @y
@@ -98,8 +98,7 @@
       <xref linkend="gtk3"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="udev"/> or
-      <xref linkend="udev-extras"/> (for GUdev) and
+      <xref linkend="udev-extras"/> (for GUdev), and
       <xref linkend="udisks2"/>
     </para>
 @y
@@ -108,8 +107,7 @@
       <xref linkend="gtk3"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="udev"/> または
-      <xref linkend="udev-extras"/> (GUdev のため),
+      <xref linkend="udev-extras"/> (for GUdev),
       <xref linkend="udisks2"/>
     </para>
 @z
@@ -132,14 +130,14 @@
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
       <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>,
-      <xref linkend="openssh"/> and
+      <xref linkend="openssh"/>, and
       <xref linkend="samba"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
+      <xref linkend="bluez"/> and
       <xref linkend="dbus-glib"/>,
       <xref linkend="fuse"/>,
       <ulink url="&gnome-download-http;/gnome-online-accounts">
@@ -153,7 +151,7 @@
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
       <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>,
-      <xref linkend="openssh"/>,
+      <xref linkend="openssh"/>, and
       <xref linkend="samba"/>
     </para>
 @z
@@ -161,14 +159,12 @@
 @x
     <bridgehead renderas="sect4">Optional (Runtime)</bridgehead>
     <para role="optional">
-      <xref linkend="obex-data-server"/> and
-      <xref linkend="obexd"/>
+      <xref linkend="obex-data-server"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (実行時)</bridgehead>
     <para role="optional">
-      <xref linkend="obex-data-server"/>,
-      <xref linkend="obexd"/>
+      <xref linkend="obex-data-server"/>
     </para>
 @z
 
@@ -242,14 +238,14 @@
           gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file,
           gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm,
           gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree,
-          gvfsd, gvfsd-fuse and gvfsd-metadata
+          gvfsd, gvfsd-fuse, and gvfsd-metadata
         </seg>
         <seg>
           libgvfscommon.so
         </seg>
         <seg>
           /usr/include/gvfs-client,
-          /usr/lib/gvfs and
+          /usr/lib/gvfs, and
           /usr/share/gvfs
         </seg>
 @y

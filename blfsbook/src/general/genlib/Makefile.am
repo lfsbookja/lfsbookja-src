@@ -11,11 +11,11 @@ CHANGE_FILES = \
 	apr-util.ch \
 	aspell.ch \
 	boost.ch \
+	clucene.ch \
 	dbus-glib.ch \
 	enchant.ch \
 	exempi.ch \
 	expat.ch \
-	gamin.ch \
 	genlib.ch \
 	glib2.ch \
 	glibmm.ch \
@@ -35,7 +35,6 @@ CHANGE_FILES = \
 	libdaemon.ch \
 	libdbusmenuqt.ch \
 	libcroco.ch \
-	libdrm.ch \
 	libesmtp.ch \
 	libffi.ch \
 	libgcrypt.ch \
@@ -45,7 +44,6 @@ CHANGE_FILES = \
 	libgsf.ch \
 	libgusb.ch \
 	libical.ch \
-	libidl.ch \
 	libidn.ch \
 	libiodbc.ch \
 	libksba.ch \
@@ -68,7 +66,6 @@ CHANGE_FILES = \
 	qca.ch \
 	qjson.ch \
 	sbc.ch \
-	slib.ch \
 	talloc.ch \
 	wv.ch
 EXTRA_DIST = $(CHANGE_FILES)
@@ -88,11 +85,11 @@ apr.xml:                   $(BOOKdir)/$@ $(srcdir)/apr.ch
 apr-util.xml:              $(BOOKdir)/$@ $(srcdir)/apr-util.ch
 aspell.xml:                $(BOOKdir)/$@ $(srcdir)/aspell.ch
 boost.xml:                 $(BOOKdir)/$@ $(srcdir)/boost.ch
+clucene.xml:               $(BOOKdir)/$@ $(srcdir)/clucene.ch
 dbus-glib.xml:             $(BOOKdir)/$@ $(srcdir)/dbus-glib.ch
 enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
 exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
 expat.xml:                 $(BOOKdir)/$@ $(srcdir)/expat.ch
-gamin.xml:                 $(BOOKdir)/$@ $(srcdir)/gamin.ch
 genlib.xml:                $(BOOKdir)/$@ $(srcdir)/genlib.ch
 glib2.xml:                 $(BOOKdir)/$@ $(srcdir)/glib2.ch
 glibmm.xml:                $(BOOKdir)/$@ $(srcdir)/glibmm.ch
@@ -112,7 +109,6 @@ libatomic_ops.xml:         $(BOOKdir)/$@ $(srcdir)/libatomic_ops.ch
 libcroco.xml:              $(BOOKdir)/$@ $(srcdir)/libcroco.ch
 libdaemon.xml:             $(BOOKdir)/$@ $(srcdir)/libdaemon.ch
 libdbusmenuqt.xml:         $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch
-libdrm.xml:                $(BOOKdir)/$@ $(srcdir)/libdrm.ch
 libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
 libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
 libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
@@ -122,7 +118,6 @@ libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
 libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch
 libgusb.xml:               $(BOOKdir)/$@ $(srcdir)/libgusb.ch
 libical.xml:               $(BOOKdir)/$@ $(srcdir)/libical.ch
-libidl.xml:                $(BOOKdir)/$@ $(srcdir)/libidl.ch
 libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
 libiodbc.xml:              $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
 libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
@@ -145,6 +140,5 @@ ptlib.xml:                 $(BOOKdir)/$@ $(srcdir)/ptlib.ch
 qca.xml:                   $(BOOKdir)/$@ $(srcdir)/qca.ch
 qjson.xml:                 $(BOOKdir)/$@ $(srcdir)/qjson.ch
 sbc.xml:                   $(BOOKdir)/$@ $(srcdir)/sbc.ch
-slib.xml:                  $(BOOKdir)/$@ $(srcdir)/slib.ch
 talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch
 wv.xml:                    $(BOOKdir)/$@ $(srcdir)/wv.ch
