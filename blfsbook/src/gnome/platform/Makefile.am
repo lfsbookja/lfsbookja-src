@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/gnome/platform
 CHANGE_FILES = \
-	accountsservice.ch           \
 	dconf.ch                     \
 	dummy-platform.ch            \
 	dummy-runtime.ch             \
@@ -24,7 +23,6 @@ CHANGE_FILES = \
 	gsettings-desktop-schemas.ch \
 	gtksourceview.ch             \
 	gvfs.ch                      \
-	libgnome-keyring.ch          \
 	libgtop.ch                   \
 	libpeas.ch                   \
 	libsecret.ch                 \
@@ -50,7 +48,6 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-accountsservice.xml:       $(BOOKdir)/$@ $(srcdir)/accountsservice.ch
 dconf.xml:                 $(BOOKdir)/$@ $(srcdir)/dconf.ch
 dummy-platform.xml:        $(BOOKdir)/$@ $(srcdir)/dummy-platform.ch
 dummy-runtime.xml:         $(BOOKdir)/$@ $(srcdir)/dummy-runtime.ch
@@ -66,7 +63,6 @@ gnome-video-effects.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-video-effects.ch
 gtksourceview.xml:             $(BOOKdir)/$@ $(srcdir)/gtksourceview.ch
 gsettings-desktop-schemas.xml: $(BOOKdir)/$@ $(srcdir)/gsettings-desktop-schemas.ch
 gvfs.xml:                      $(BOOKdir)/$@ $(srcdir)/gvfs.ch
-libgnome-keyring.xml:          $(BOOKdir)/$@ $(srcdir)/libgnome-keyring.ch
 libgtop.xml:                   $(BOOKdir)/$@ $(srcdir)/libgtop.ch
 libpeas.xml:                   $(BOOKdir)/$@ $(srcdir)/libpeas.ch
 libsecret.xml:                 $(BOOKdir)/$@ $(srcdir)/libsecret.ch

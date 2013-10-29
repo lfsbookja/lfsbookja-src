@@ -118,7 +118,6 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
-      <xref linkend="libgnome-keyring"/>,
       <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support),
       <xref linkend="python2"/> (required to run the test suite) and
       <xref linkend="ruby"/>
@@ -132,9 +131,8 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
-      <xref linkend="libgnome-keyring"/>,
-      <xref linkend="kdelibs"/> (<ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> サポートのため),
-      <xref linkend="python2"/> (テストスイート実行に必要),
+      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support),
+      <xref linkend="python2"/> (required to run the test suite),
       <xref linkend="ruby"/>
     </para>
 @z

@@ -47,7 +47,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/gnome/platform
+subdir = src/lxde/desktop
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
@@ -182,35 +182,19 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = @abs_bookdir@/gnome/platform
+BOOKdir = @abs_bookdir@/lxde/desktop
 CHANGE_FILES = \
-	dconf.ch                     \
-	dummy-platform.ch            \
-	dummy-runtime.ch             \
-	gconf.ch                     \
-	gcr.ch                       \
-	gjs.ch                       \
-	gnome-desktop.ch             \
-	gnome-icon-theme.ch          \
-	gnome-icon-theme-symbolic.ch \
-	gnome-icon-theme-extras.ch   \
-	gnome-keyring.ch             \
-	gnome-themes-standard.ch     \
-	gnome-video-effects.ch       \
-	gsettings-desktop-schemas.ch \
-	gtksourceview.ch             \
-	gvfs.ch                      \
-	libgtop.ch                   \
-	libpeas.ch                   \
-	libsecret.ch                 \
-	libwnck.ch                   \
-	notification-daemon.ch       \
-	platform.ch                  \
-	polkit-gnome.ch              \
-	totem-pl-parser.ch           \
-	vte.ch                       \
-	yelp.ch                      \
-	yelp-xsl.ch
+	desktop.ch         \
+	libfm.ch           \
+	lxappearance.ch    \
+	lxde-common.ch     \
+	lxde-icon-theme.ch \
+	lxmenu-data.ch     \
+	lxpanel.ch         \
+	lxpolkit.ch        \
+	lxsession.ch       \
+	menu-cache.ch      \
+	pcmanfm.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -228,9 +212,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/gnome/platform/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/lxde/desktop/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/gnome/platform/Makefile
+	  $(AUTOMAKE) --gnu src/lxde/desktop/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -407,32 +391,17 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-dconf.xml:                 $(BOOKdir)/$@ $(srcdir)/dconf.ch
-dummy-platform.xml:        $(BOOKdir)/$@ $(srcdir)/dummy-platform.ch
-dummy-runtime.xml:         $(BOOKdir)/$@ $(srcdir)/dummy-runtime.ch
-gconf.xml:                 $(BOOKdir)/$@ $(srcdir)/gconf.ch
-gcr.xml:                   $(BOOKdir)/$@ $(srcdir)/gcr.ch
-gjs.xml:                   $(BOOKdir)/$@ $(srcdir)/gjs.ch
-gnome-desktop.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-desktop.ch
-gnome-icon-theme.xml:          $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme.ch
-gnome-icon-theme-symbolic.xml: $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-symbolic.ch
-gnome-icon-theme-extras.xml:   $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-extras.ch
-gnome-keyring.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-keyring.ch
-gnome-video-effects.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-video-effects.ch
-gtksourceview.xml:             $(BOOKdir)/$@ $(srcdir)/gtksourceview.ch
-gsettings-desktop-schemas.xml: $(BOOKdir)/$@ $(srcdir)/gsettings-desktop-schemas.ch
-gvfs.xml:                      $(BOOKdir)/$@ $(srcdir)/gvfs.ch
-libgtop.xml:                   $(BOOKdir)/$@ $(srcdir)/libgtop.ch
-libpeas.xml:                   $(BOOKdir)/$@ $(srcdir)/libpeas.ch
-libsecret.xml:                 $(BOOKdir)/$@ $(srcdir)/libsecret.ch
-libwnck.xml:                   $(BOOKdir)/$@ $(srcdir)/libwnck.ch
-notification-daemon.xml:       $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
-platform.xml:                  $(BOOKdir)/$@ $(srcdir)/platform.ch
-polkit-gnome.xml:              $(BOOKdir)/$@ $(srcdir)/polkit-gnome.ch
-totem-pl-parser.xml:           $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
-vte.xml:                       $(BOOKdir)/$@ $(srcdir)/vte.ch
-yelp.xml:                      $(BOOKdir)/$@ $(srcdir)/yelp.ch
-yelp-xsl.xml:                  $(BOOKdir)/$@ $(srcdir)/yelp-xsl.ch
+desktop.xml:         $(BOOKdir)/$@ $(srcdir)/desktop.ch
+libfm.xml:           $(BOOKdir)/$@ $(srcdir)/libfm.ch
+lxappearance.xml:    $(BOOKdir)/$@ $(srcdir)/lxappearance.ch
+lxde-common.xml:     $(BOOKdir)/$@ $(srcdir)/lxde-common.ch
+lxde-icon-theme.xml: $(BOOKdir)/$@ $(srcdir)/lxde-icon-theme.ch
+lxmenu-data.xml:     $(BOOKdir)/$@ $(srcdir)/lxmenu-data.ch
+lxpanel.xml:         $(BOOKdir)/$@ $(srcdir)/lxpanel.ch
+lxpolkit.xml:        $(BOOKdir)/$@ $(srcdir)/lxpolkit.ch
+lxsession.xml:       $(BOOKdir)/$@ $(srcdir)/lxsession.ch
+menu-cache.xml:      $(BOOKdir)/$@ $(srcdir)/menu-cache.ch
+pcmanfm.xml:         $(BOOKdir)/$@ $(srcdir)/pcmanfm.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
