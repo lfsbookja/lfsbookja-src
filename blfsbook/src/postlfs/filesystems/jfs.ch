@@ -141,6 +141,20 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>sed "s@&lt;unistd.h&gt;@&amp;\n#include &lt;sys/types.h&gt;@g" -i
+      fscklog/extract.c</command>: Fixes building with Glibc 2.17.
+@y
+      <command>sed "s@&lt;unistd.h&gt;@&amp;\n#include &lt;sys/types.h&gt;@g" -i
+      fscklog/extract.c</command>: Glibc 2.17 にてビルドするための修正を行います。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -185,19 +199,19 @@
 @x jfs_fsck
           <para>is a hard link to fsck.jfs.</para>
 @y
-          <para>is a hard link to fsck.jfs.</para>
+          <para>fsck.jfs へのハードリンク。</para>
 @z
 
 @x mkfs.jfs
           <para>constructs an JFS file system.</para>
 @y
-          <para>constructs an JFS file system.</para>
+          <para>JFS ファイルシステムを構築します。</para>
 @z
 
 @x jfs_mkfs
           <para>is a hard link to mkfs.jfs.</para>
 @y
-          <para>is a hard link to mkfs.jfs.</para>
+          <para>mkfs.jfs へのハードリンク。</para>
 @z
 
 @x jfs_debugfs

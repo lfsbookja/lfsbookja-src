@@ -73,6 +73,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">ICU Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;ICU&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="llvm"/> (with Clang)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="llvm"/> (Clang がビルドされたもの)
+    </para>
+@z
+
+@x
       User Notes: <ulink url="&blfs-wiki;/icu"/>
 @y
       &UserNotes;: <ulink url="&blfs-wiki;/icu"/>

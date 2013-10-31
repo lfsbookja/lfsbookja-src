@@ -144,30 +144,32 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (to build the GUI front-end),
-      <xref linkend="openssl"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="pcre"/>,
-      <xref linkend="gnutls"/>,
-      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>,
+      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
-      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
-      <xref linkend="lua"/>
+      <xref linkend="gnutls"/>,
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (to build the GUI front-end),
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="lua"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="pcre"/>,
+      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>, and
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk2"/> または <xref linkend="gtk3"/> (GUI フロントエンド生成のため),
-      <xref linkend="openssl"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="pcre"/>,
-      <xref linkend="gnutls"/>,
-      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>,
-      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
-      <xref linkend="lua"/>
+      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (to build the GUI front-end),
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="lua"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="pcre"/>,
+      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>, and
+      <xref linkend="python2"/>
     </para>
 @z
 

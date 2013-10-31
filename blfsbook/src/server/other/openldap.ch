@@ -181,89 +181,89 @@
 @z
 
 @x
-      <option>--disable-debug</option>: This switch disables
+      <parameter>--disable-debug</parameter>: This switch disables
       the debugging code in <application>OpenLDAP</application>.
 @y
-      <option>--disable-debug</option>:
+      <parameter>--disable-debug</parameter>:
       このスイッチは <application>OpenLDAP</application> におけるデバッグコードを無効にします。
 @z
 
 @x
-      <option>--enable-dynamic</option>: This switch forces the
+      <parameter>--enable-dynamic</parameter>: This switch forces the
       <application>OpenLDAP</application> libraries to be dynamically
       linked to the executable programs.
 @y
-      <option>--enable-dynamic</option>: This switch forces the
+      <parameter>--enable-dynamic</parameter>: This switch forces the
       <application>OpenLDAP</application> libraries to be dynamically
       linked to the executable programs.
 @z
 
 @x
-      <option>--enable-crypt</option>: This switch enables using of
+      <parameter>--enable-crypt</parameter>: This switch enables using of
       <command>crypt(3)</command> passwords.
 @y
-      <option>--enable-crypt</option>: This switch enables using of
+      <parameter>--enable-crypt</parameter>: This switch enables using of
       <command>crypt(3)</command> passwords.
 @z
 
 @x
-      <option>--enable-spasswd</option>: This switch enables
+      <parameter>--enable-spasswd</parameter>: This switch enables
       <application>SASL</application> password verification.
 @y
-      <option>--enable-spasswd</option>: This switch enables
+      <parameter>--enable-spasswd</parameter>: This switch enables
       <application>SASL</application> password verification.
 @z
 
 @x
-      <option>--enable-modules</option>: This switch enables dynamic
+      <parameter>--enable-modules</parameter>: This switch enables dynamic
       module support.
 @y
-      <option>--enable-modules</option>: This switch enables dynamic
+      <parameter>--enable-modules</parameter>: This switch enables dynamic
       module support.
 @z
 
 @x
-      <option>--enable-rlookups</option>: This switch enables
+      <parameter>--enable-rlookups</parameter>: This switch enables
       reverse lookups of client hostnames.
 @y
-      <option>--enable-rlookups</option>: This switch enables
+      <parameter>--enable-rlookups</parameter>: This switch enables
       reverse lookups of client hostnames.
 @z
 
 @x
-      <option>--enable-backends</option>: This switch enables
+      <parameter>--enable-backends</parameter>: This switch enables
       all available backends.
 @y
-      <option>--enable-backends</option>: This switch enables
+      <parameter>--enable-backends</parameter>: This switch enables
       all available backends.
 @z
 
 @x
-      <option>--enable-overlays</option>: This switch enables
+      <parameter>--enable-overlays</parameter>: This switch enables
       all available overlays.
 @y
-      <option>--enable-overlays</option>: This switch enables
+      <parameter>--enable-overlays</parameter>: This switch enables
       all available overlays.
 @z
 
 @x
-      <option>--disable-ndb</option>: This switch disables
+      <parameter>--disable-ndb</parameter>: This switch disables
       <application>MySQL</application> NDB Cluster backend
       which causes configure to fail if
       <application>MySQL</application> is present.
 @y
-      <option>--disable-ndb</option>: This switch disables
+      <parameter>--disable-ndb</parameter>: This switch disables
       <application>MySQL</application> NDB Cluster backend
       which causes configure to fail if
       <application>MySQL</application> is present.
 @z
 
 @x
-      <option>--disable-sql</option>: This switch explicitly
+      <parameter>--disable-sql</parameter>: This switch explicitly
       disables the SQL backend.  Omit this switch if a SQL server is
       installed and you are going to use a SQL backend.
 @y
-      <option>--disable-sql</option>: This switch explicitly
+      <parameter>--disable-sql</parameter>: This switch explicitly
       disables the SQL backend.  Omit this switch if a SQL server is
       installed and you are going to use a SQL backend.
 @z

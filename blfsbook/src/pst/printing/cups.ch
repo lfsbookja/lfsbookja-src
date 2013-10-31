@@ -329,41 +329,53 @@
 @z
 
 @x
-      Configuration of <application>Cups</application> is dependent on
-      the type of printer and can be complex. Generally, PostScript printers
-      are easier. For detailed instructions on configuration and use of
-      <application>Cups</application>, see <ulink
-      url="http://www.cups.org/documentation.php"/>. The Software
-      Administrators Manual and Software Users Manual are particularly useful.
+      <title>Config Files</title>
 @y
-      Configuration of <application>Cups</application> is dependent on
-      the type of printer and can be complex. Generally, PostScript printers
-      are easier. For detailed instructions on configuration and use of
-      <application>Cups</application>, see <ulink
-      url="http://www.cups.org/documentation.php"/>. The Software
-      Administrators Manual and Software Users Manual are particularly useful.
+      <title>Config Files</title>
 @z
 
 @x
-      For non-PostScript printers to print with
-      <application>Cups</application>, you need to install <xref linkend="gs"/>
-      to convert PostScript to raster images and a driver (e.g., from
-      <xref linkend="gutenprint"/>) to convert the resulting raster images to a
-      form that the printer understands.
-      <ulink url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
-      drivers use Ghostscript to convert PostScript to a printable form directly,
-      but this is considered to be a hack by <application>Cups</application>
-      developers.
+      <title>Configuration Information</title>
 @y
-      For non-PostScript printers to print with
-      <application>Cups</application>, you need to install <xref linkend="gs"/>
-      to convert PostScript to raster images and a driver (e.g., from
-      <xref linkend="gutenprint"/>) to convert the resulting raster images to a
-      form that the printer understands.
-      <ulink url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
-      drivers use Ghostscript to convert PostScript to a printable form directly,
-      but this is considered to be a hack by <application>Cups</application>
-      developers.
+      <title>Configuration Information</title>
+@z
+
+@x
+        Configuration of <application>Cups</application> is dependent on
+        the type of printer and can be complex. Generally, PostScript printers
+        are easier. For detailed instructions on configuration and use of
+        <application>Cups</application>, see <ulink
+        url="http://www.cups.org/documentation.php"/>. The Software
+        Administrators Manual and Software Users Manual are particularly useful.
+@y
+        Configuration of <application>Cups</application> is dependent on
+        the type of printer and can be complex. Generally, PostScript printers
+        are easier. For detailed instructions on configuration and use of
+        <application>Cups</application>, see <ulink
+        url="http://www.cups.org/documentation.php"/>. The Software
+        Administrators Manual and Software Users Manual are particularly useful.
+@z
+
+@x
+        For non-PostScript printers to print with
+        <application>Cups</application>, you need to install <xref linkend="gs"/>
+        to convert PostScript to raster images and a driver (e.g., from
+        <xref linkend="gutenprint"/>) to convert the resulting raster images to a
+        form that the printer understands.
+        <ulink url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
+        drivers use Ghostscript to convert PostScript to a printable form directly,
+        but this is considered to be a hack by <application>Cups</application>
+        developers.
+@y
+        For non-PostScript printers to print with
+        <application>Cups</application>, you need to install <xref linkend="gs"/>
+        to convert PostScript to raster images and a driver (e.g., from
+        <xref linkend="gutenprint"/>) to convert the resulting raster images to a
+        form that the printer understands.
+        <ulink url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
+        drivers use Ghostscript to convert PostScript to a printable form directly,
+        but this is considered to be a hack by <application>Cups</application>
+        developers.
 @z
 
 @x

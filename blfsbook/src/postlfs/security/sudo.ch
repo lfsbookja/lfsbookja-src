@@ -143,6 +143,14 @@
 @z
 
 @x
+      <option>--with-timedir=/var/lib/sudo</option>: This switch places
+      the variable time stamp files in a FHS compatible location.
+@y
+      <option>--with-timedir=/var/lib/sudo</option>:
+      本スイッチはタイムスタンプファイルを FHS 互換のディレクトリに配置することを指示します。
+@z
+
+@x
       <option>--with-all-insults</option>: This switch includes all the
       <application>sudo</application> insult sets.
 @y

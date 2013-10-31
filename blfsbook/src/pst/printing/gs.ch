@@ -286,11 +286,11 @@
 @x
       This package does not come with a test suite. However, you may test the
       operation of the newly built <command>gs</command> program by issuing the
-      following command (issue from an X Windows terminal):
+      following command (issue from an X Window System terminal):
 @y
       This package does not come with a test suite. However, you may test the
       operation of the newly built <command>gs</command> program by issuing the
-      following command (issue from an X Windows terminal):
+      following command (issue from an X Window System terminal):
 @z
 
 @x
