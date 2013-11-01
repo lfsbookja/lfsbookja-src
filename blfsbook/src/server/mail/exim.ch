@@ -97,34 +97,36 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="db"/> or
-      GDBM (GDBM built in LFS) or
-      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
+      <xref linkend="pcre"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="db"/> または
-      GDBM (LFS において構築) または
-      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
+      <xref linkend="pcre"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="db"/> or
+      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink> (as an
+      alternative to GDBM, built in LFS),
       <xref linkend="x-window-system"/>,
       <xref linkend="openldap"/>,
       <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mysql"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>, and
-      <xref linkend="linux-pam"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="linux-pam"/>, and
+      <ulink url="http://www.trusteddomain.org/opendmarc/">OpenDMARC</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="db"/> または
+      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink> (LFS でビルドしている GDBM の代用),
       <xref linkend="x-window-system"/>,
       <xref linkend="openldap"/>,
       <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
@@ -132,7 +134,8 @@
       <xref linkend="mysql"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="linux-pam"/>
+      <xref linkend="linux-pam"/>,
+      <ulink url="http://www.trusteddomain.org/opendmarc/">OpenDMARC</ulink>
     </para>
 @z
 
@@ -260,12 +263,12 @@
 @z
 
 @x
-    <para><command>ln -sv exim /usr/sbin/sendmail</command>: Creates a link to
+    <para><command>ln -sfv exim /usr/sbin/sendmail</command>: Creates a link to
     <command>sendmail</command> for applications which need it.
     <application>Exim</application> will accept most
     <application>Sendmail</application> command-line options.</para>
 @y
-    <para><command>ln -sv exim /usr/sbin/sendmail</command>: Creates a link to
+    <para><command>ln -sfv exim /usr/sbin/sendmail</command>: Creates a link to
     <command>sendmail</command> for applications which need it.
     <application>Exim</application> will accept most
     <application>Sendmail</application> command-line options.</para>
@@ -518,17 +521,17 @@
 @z
 
 @x
-        <seg>exicyclog, exigrep, exim, exim-4.43-2, exim_checkaccess,
+        <seg>exicyclog, exigrep, exim, exim-4.82-3, exim_checkaccess,
         exim_dbmbuild, exim_dumpdb, exim_fixdb, exim_lock, exim_tidydb,
         eximstats, exinext, exipick, exiqgrep, exiqsumm, exiwhat, and
         optionally, eximon and eximon.bin</seg>
         <seg>None</seg>
         <seg>/usr/share/doc/exim-&exim-version; and /var/spool/exim</seg>
 @y
-        <seg>exicyclog, exigrep, exim, exim-4.43-2, exim_checkaccess,
+        <seg>exicyclog, exigrep, exim, exim-4.82-3, exim_checkaccess,
         exim_dbmbuild, exim_dumpdb, exim_fixdb, exim_lock, exim_tidydb,
         eximstats, exinext, exipick, exiqgrep, exiqsumm, exiwhat,
-        任意のビルドとして eximon, eximon.bin</seg>
+        任意ビルドとして eximon, eximon.bin</seg>
         <seg>&None;</seg>
         <seg>/usr/share/doc/exim-&exim-version;, /var/spool/exim</seg>
 @z

@@ -90,16 +90,22 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/aalib"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/aalib"/></para>
 @z
 
 @x
     <title>Installation of AAlib</title>
 @y
     <title>&InstallationOf1;AAlib&InstallationOf2;</title>
+@z
+
+@x
+    <para>Fix a minor problem with the included m4 file:</para>
+@y
+    <para>
+    インクルードしている m4 ファイルに関する問題を修正します。
+    </para>
 @z
 
 @x

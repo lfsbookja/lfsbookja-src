@@ -150,6 +150,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
@@ -163,6 +164,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
