@@ -23,8 +23,7 @@
       The <application>Harfbuzz</application> package contains an OpenType text
       shaping engine.
 @y
-      The <application>Harfbuzz</application> package contains an OpenType text
-      shaping engine.
+      <application>Harfbuzz</application> パッケージは OpenType テキストシェーピングエンジンを提供します。
 @z
 
 @x
@@ -104,7 +103,7 @@
     <para role="optional">
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk-doc"/>, and
+      <xref linkend="gtk-doc"/>,
       <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>
     </para>
 @z
@@ -116,11 +115,9 @@
         with this package if you <emphasis>have not</emphasis>
         installed the recommended dependencies.
 @y
-        Recommended dependencies are not strictly required to build
-        the package. However, you might not get expected results at
-        runtime if you don't install them. Please do not report bugs
-        with this package if you <emphasis>have not</emphasis>
-        installed the recommended dependencies.
+        推奨パッケージは、本パッケージのビルドにてすべて必要となるわけではありません。
+        しかしそれらをインストールしていない場合、適正な処理結果が得られないかもしれません。
+        したがってそれらをインストールして<emphasis>いない</emphasis>場合には、バグ報告をあげないでください。
 @z
 
 @x
@@ -152,6 +149,30 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--with-gobject</parameter>: This switch enables building
+      of the <application>Harfbuzz</application> GObject wrapper. Remove
+      it if you did not install <application>GLib</application>.
+@y
+      <parameter>--with-gobject</parameter>:
+      本スイッチは <application>Harfbuzz</application> GObject ラッパーのビルドを指示します。
+      <application>GLib</application> をインストールしていない場合はこれを取り除いてください。
+@z
+
+@x
+      <option>--with-graphite2</option>: This switch enables
+      <application>Graphite2</application> support.
+@y
+      <option>--with-graphite2</option>:
+      本スイッチは <application>Graphite2</application> サポートを有効にします。
 @z
 
 @x
@@ -203,5 +224,5 @@
 @x libharfbuzz.so
             contains functions for complex text shaping.
 @y
-            contains functions for complex text shaping.
+            高度なテキストシェーピング関数を提供します。
 @z
