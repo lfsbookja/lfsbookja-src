@@ -162,6 +162,15 @@
 @z
 
 @x
+      <command>sed -i "/DGifOpen/s:fd:&amp;, NULL:" ...</command>:
+      This sed fixes building with recent versions of
+      <application>Giflib</application>.
+@y
+      <command>sed -i "/DGifOpen/s:fd:&amp;, NULL:" ...</command>:
+      この sed コマンドは、最新の <application>Giflib</application> によりビルドできるようにします。
+@z
+
+@x
     <para><parameter>--without-x</parameter>: Add this parameter if you do not
     have an X Window System installed.</para>
 @y

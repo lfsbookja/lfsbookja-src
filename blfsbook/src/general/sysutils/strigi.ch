@@ -98,8 +98,8 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="dbus"/> and
-    <xref linkend="qt4"/> (compiled with D-Bus support)
+    <xref linkend="dbus"/>,
+    <xref linkend="qt4"/> (D-Bus サポートがビルドされたもの)
     </para>
 @z
 
@@ -170,6 +170,16 @@
 @y
       <option>-DENABLE_DBUS=OFF</option>:
       この <command>cmake</command> 変数は <application>D-Bus</application> をインストールしていない場合に指定します。
+@z
+
+@x
+      <option>-DENABLE_QT4=OFF</option>: Use this <command>cmake</command>
+      variable if you don't have <application>Qt4</application> installed or if
+      you compiled <application>Qt4</application> without
+      <application>D-Bus</application> support.
+@y
+      <option>-DENABLE_QT4=OFF</option>:
+      <application>Qt4</application> をインストールしていない場合、あるいは <application>Qt4</application> にて <application>D-Bus</application> サポートをビルドしていない場合に、この <command>cmake</command> 変数を指定します。
 @z
 
 @x

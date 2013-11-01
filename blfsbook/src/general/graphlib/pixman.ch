@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY pixman-time          "0.5 SBU (additional 0.8 SBU for tests)">
+@y
+  <!ENTITY pixman-time          "0.5 SBU (テスト時はさらに 0.8 SBU)">
+@z
+
+@x
     <title>Introduction to Pixman</title>
 @y
     <title>&IntroductionTo1;Pixman&IntroductionTo2;</title>

@@ -3,9 +3,9 @@
 #
 # This is part of BLFSbookja package.
 #
-# $Author: matsuand $
-# $Rev: 456 $
-# $Date:: 2012-02-26 00:38:21 +0900#$
+# $Author$
+# $Rev$
+# $Date::                           $
 #
 
 m4_include([version.ac])[] dnl define blfs_version

@@ -119,6 +119,16 @@
 @z
 
 @x
+    <para>If you generated html documentation, install it as the
+    <systemitem class="username">root</systemitem> user:</para>
+@y
+    <para>
+    html ドキュメントを生成した場合は、これらをインストールするために <systemitem
+    class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>

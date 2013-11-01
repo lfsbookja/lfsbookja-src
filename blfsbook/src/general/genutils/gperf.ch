@@ -78,10 +78,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gperf"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gperf"/></para>
 @z
 
 @x
@@ -144,6 +142,15 @@
     <command>install -m644 -v doc/gperf.{dvi,ps,pdf,txt} ...</command>:
     このコマンドはドキュメントをインストールします。
     テキスト版ドキュメントのビルドが不要である場合は、コマンドを修正してください。 (',txt' を取り除いてください。)
+    </para>
+@z
+
+@x
+    <para><command>install -m644 -v doc/gperf.{dvi,ps,pdf} ...</command>:
+    This command installs documentation.</para>
+@y
+    <para><command>install -m644 -v doc/gperf.{dvi,ps,pdf} ...</command>:
+    このコマンドによりドキュメントをインストールします。
     </para>
 @z
 
