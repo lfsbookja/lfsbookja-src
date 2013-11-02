@@ -156,17 +156,15 @@
 @z
 
 @x --libexecdir=/usr/lib
-          <para>This changes the location of the <command>pt_chown</command>
-          program and <filename class="directory">getconf</filename> directory
-          from their default install location of <filename
-          class="directory">/usr/libexec</filename> to <filename
-          class="directory">/usr/lib</filename>.</para>
+          <para>This changes the location of some auxillary files from the
+          default of <filename class="directory">/usr/libexec</filename> to
+          <filename class="directory">/usr/lib/glibc</filename>.</para>
 @y
           <para>
-          このパラメーターは <command>pt_chown</command> プログラムと <filename
-          class="directory">getconf</filename> ディレクトリのデフォルトのインストール場所 <filename
-          class="directory">/usr/libexec</filename> を <filename
-          class="directory">/usr/lib</filename> に変更します。</para>
+          このオプションはいくつかの補助ファイル群のインストール先を、デフォルトの <filename
+          class="directory">/usr/libexec</filename> から <filename
+          class="directory">/usr/lib/glibc</filename> に変更します。
+          </para>
 @z
 
 @x
@@ -598,7 +596,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
-        pldd, pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
+        pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -620,7 +618,7 @@ minor timing issues が何を意味するのか不明であった。
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
-        pldd, pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
+        pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,

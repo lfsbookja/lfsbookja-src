@@ -26,14 +26,6 @@
 @z
 
 @x
-    <para>Fix an incompatibility between this package and Glibc-&glibc-version;:</para>
-@y
-    <para>
-    本パッケージと Glibc-&glibc-version; との互換性がないため、これを修正します。
-    </para>
-@z
-
-@x
     <para>Prepare M4 for compilation:</para>
 @y
     <para>&PreparePackage1;M4&PreparePackage2;</para>
@@ -46,9 +38,9 @@
 @z
 
 @x
-    <para>To test the results, first fix a test program and then run the test programs:</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>コンパイル結果をテストするためには、まず修正を行ってからテストプログラムを実行します。</para>
+    <para>コンパイル結果をテストする場合は以下を実行します。</para>
 @z
 
 @x

@@ -110,12 +110,12 @@
 @z
 
 @x
-        <seg>depmod (link to kmod), insmod (link to kmod), kmod, kmod-nolib,
+        <seg>depmod (link to kmod), insmod (link to kmod), kmod, 
         lsmod (link to kmod), modinfo (link to kmod), modprobe (link to kmod),
         and rmmod (link to kmod)</seg>
         <seg>libkmod.so</seg>
 @y
-        <seg>depmod (kmod へのリンク), insmod (kmod へのリンク), kmod, kmod-nolib,
+        <seg>depmod (kmod へのリンク), insmod (kmod へのリンク), kmod, 
         lsmod (kmod へのリンク), modinfo (kmod へのリンク), modprobe (kmod へのリンク),
         rmmod (kmod へのリンク)</seg>
         <seg>libkmod.so</seg>

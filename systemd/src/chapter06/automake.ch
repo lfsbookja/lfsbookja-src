@@ -41,14 +41,10 @@
 @z
 
 @x
-    <note><para>The tests take a very long time: over 30 SBUs.  Running
-    the tests is not recommended. At least one test (of over 3000) is
-    known to intermittently fail.</para></note>
+    <note><para>The tests take a very long time: over 30 SBUs.</para></note>
 @y
     <note><para>
     テスト処理には 30 SBU 以上の時間を要します。
-    テストを実施することは、あまりお勧めしません。
-    特に (3000 にも及ぶテストの中の) １つのテストは、断続的に失敗するものになっています。
     </para></note>
 @z
 
@@ -81,15 +77,15 @@
 @x
         <seg>acinstall, aclocal, aclocal-&am-minor-version;, automake,
         automake-&am-minor-version;, compile, config.guess, config.sub,
-        depcomp, elisp-comp, install-sh, mdate-sh, missing, mkinstalldirs,
-        py-compile, symlink-tree, and ylwrap</seg>
+        depcomp, install-sh, mdate-sh, missing, mkinstalldirs,
+        py-compile, and ylwrap</seg>
         <seg>/usr/share/aclocal-&am-minor-version;, /usr/share/automake-&am-minor-version;,
         /usr/share/doc/automake-&automake-version;</seg>
 @y
         <seg>acinstall, aclocal, aclocal-&am-minor-version;, automake,
         automake-&am-minor-version;, compile, config.guess, config.sub,
-        depcomp, elisp-comp, install-sh, mdate-sh, missing, mkinstalldirs,
-        py-compile, symlink-tree, ylwrap</seg>
+        depcomp, install-sh, mdate-sh, missing, mkinstalldirs,
+        py-compile, ylwrap</seg>
         <seg>/usr/share/aclocal-&am-minor-version;, /usr/share/automake-&am-minor-version;,
         /usr/share/doc/automake-&automake-version;</seg>
 @z
@@ -185,14 +181,6 @@
           </para>
 @z
 
-@x elisp-comp
-          <para>Byte-compiles Emacs Lisp code</para>
-@y
-          <para>
-          Emacs Lisp コードをバイトコンパイルします。
-          </para>
-@z
-
 @x install-sh
           <para>A script that installs a program, script, or data file</para>
 @y
@@ -232,14 +220,6 @@
 @y
           <para>
           Python プログラムをコンパイルします。
-          </para>
-@z
-
-@x symlink-tree
-          <para>A script to create a symlink tree of a directory tree</para>
-@y
-          <para>
-          ディレクトリツリーに対するシンボリックリンクのツリーを生成するスクリプト。
           </para>
 @z
 

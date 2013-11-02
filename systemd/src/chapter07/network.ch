@@ -367,7 +367,7 @@
     it would be using the first 28 bits.  Prefixes longer than 24 bits are
     commonly used by DSL and cable-based Internet Service Providers (ISPs).
     In this example (PREFIX=24), the netmask is 255.255.255.0. Adjust the
-    <envar>PREFIX</envar> variable according to your specific subnet.i
+    <envar>PREFIX</envar> variable according to your specific subnet.
     If omitted, the PREFIX defaults to 24.</para>
 @y
     <para>

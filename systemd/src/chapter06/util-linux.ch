@@ -110,14 +110,17 @@
 
 @x
     <warning><para>Running the test suite as the root user can be harmful to
-    your system.  To run it, the kernel CONFIG_SCSI_DEBUG option for the 
-    kernel must be available in the currently running system.  For complete
-    coverage, other BLFS packages must be installed.  If desired, this
-    test can be run after rebooting into the completed LFS system and running:</para>
+    your system.  To run it, the kernel CONFIG_SCSI_DEBUG option for the kernel
+    must be available in the currently running system.  The CONFIG_SCSI_DEBUG
+    option must be built as a module.  Building it into the kernel will prevent
+    booting.  For complete coverage, other BLFS packages must be installed.  If
+    desired, this test can be run after rebooting into the completed LFS system
+    and running:</para>
 @y
     <warning><para>
     root ユーザーによりテストスイートを実行すると、システムに悪影響を及ぼすことがあります。
     テストスイートを実行するためには、カーネルオプション CONFIG_SCSI_DEBUG が現環境にて有効でなければなりません。
+    CONFIG_SCSI_DEBUG オプションはモジュールとしてビルドしておかなければならず、カーネルに組み込んでいるとブートできません。
     またテストを完全に実施するには BLFS での各種パッケージのインストールも必要になります。
     テストが必要であるなら、LFS システムを完成した後に、再起動したシステムにて以下を実行します。
     </para>
@@ -156,7 +159,7 @@
         pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
         rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
         sulogin, swaplabel, swapoff (link to swapon), swapon, switch_root, tailf,
-        taskset, tunelp, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
+        taskset, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
         wdctl, whereis, wipefs, and x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
@@ -174,7 +177,7 @@
         pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
         rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
         sulogin, swaplabel, swapoff (swapon へのリンク), swapon, switch_root, tailf,
-        taskset, tunelp, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
+        taskset, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
         wdctl, whereis, wipefs, x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
@@ -892,14 +895,6 @@
 @y
           <para>
           プロセスの CPU 親和性 (affinity) を表示または設定します。
-          </para>
-@z
-
-@x tunelp
-          <para>Tunes the parameters of the line printer</para>
-@y
-          <para>
-          ラインプリンターのパラメーターを設定します。
           </para>
 @z
 

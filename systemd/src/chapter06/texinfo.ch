@@ -41,14 +41,6 @@
 @z
 
 @x
-    <note><para>Two tests in the test suite fail due to out of date
-    perl code.</para></note>
-@y
-    <note><para>テストスイートにて２つのテストは失敗します。
-    これは古くなった perl コードが用いられているためです。</para></note>
-@z
-
-@x
     <para>To test the results, issue:</para>
 @y
     <para>コンパイル結果をテストするには以下を実行します。</para>

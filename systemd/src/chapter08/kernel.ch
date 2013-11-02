@@ -78,10 +78,22 @@
 @z
 
 @x
-    <note><para>Due to recent changes in <application>udev</application>, be sure to
-    select:</para>
+    <note><para>A good starting place for setting up the kernel configuration
+    is to run <command>make defconfig</command>. This will set the base
+    configuration to a good state that takes your current system architecture
+    into account.</para>
 @y
     <note><para>
+    カーネル設定を行うにあたって、分かりやすいやり方として <command>make defconfig</command> を実行する方法があります。
+    これを実行することで基本的な設定がなされ、現在のシステム構成が考慮された、より良い設定が得られるかもしれません。
+    </para>
+@z
+
+@x
+    <para>Due to recent changes in <application>udev</application>, be sure to
+    select:</para>
+@y
+    <para>
     <application>udev</application> の最近の更新に合わせて、以下のカーネル設定項目が選択されていることを確認してください。
     </para>
 @z
@@ -357,13 +369,13 @@
 @z
 
 @x
-        <seg>config-&linux-version;, 
-        vmlinux-&linux-version;-lfs-&version;-&linux-version;, and
+        <seg>config-&linux-version;,
+        vmlinuz-&linux-version;-lfs-&version;, and
         System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @y
-        <seg>config-&linux-version;, 
-        vmlinux-&linux-version;-lfs-&version;-&linux-version;,
+        <seg>config-&linux-version;,
+        vmlinuz-&linux-version;-lfs-&version;,
         System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @z

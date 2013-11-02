@@ -26,10 +26,10 @@
 @z
 
 @x
-    <para>Fix an incompatibility between this package and Glibc-&glibc-version;:</para>
+    <para>Add a program that generates a man page for tar from the source code:</para>
 @y
     <para>
-    本パッケージと Glibc-&glibc-version; との互換性がないため、これを修正します。
+    tar の Man ページを生成するプログラムを追加します。
     </para>
 @z
 

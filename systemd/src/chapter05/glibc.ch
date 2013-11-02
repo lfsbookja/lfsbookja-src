@@ -109,11 +109,11 @@
 
 @x
           <para>This tells Glibc to compile the library with support
-          for 2.6.25 and later Linux kernels.  Workarounds for older
+          for &min-kernel; and later Linux kernels.  Workarounds for older
           kernels are not enabled.</para>
 @y
           <para>
-          Linux カーネル 2.6.25 以上のサポートを行うよう指示します。
+          Linux カーネル &min-kernel; 以上のサポートを行うよう指示します。
           これ以前のカーネルは利用することができません。
           </para>
 @z
@@ -284,13 +284,13 @@
 @z
 
 @x
-  <note><para>Building Binutils in the next section will serve as an additional check that
-  the toolchain has been built properly. If Binutils fails to build, it is an
-  indication that something has gone wrong with the previous Binutils, GCC, or Glibc
-  installations.</para></note>
+  <note><para>Building Binutils in the section after next will serve as an
+  additional check that the toolchain has been built properly. If Binutils
+  fails to build, it is an indication that something has gone wrong with the
+  previous Binutils, GCC, or Glibc installations.</para></note>
 @y
   <note><para>
-  次節にてビルドする Binutils では、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
+  次々節にてビルドする Binutils では、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
   Binutils のビルドに失敗したとしたら、それ以前にインストールしてきた Binutils, GCC, Glibc のいずれかにてビルドがうまくできていないことを意味します。
   </para></note>
 @z

@@ -46,9 +46,8 @@
 @z
 
 @x
-    <para>First, change the default location of the
-    <filename>vimrc</filename> configuration file to <filename
-    class="directory">/etc</filename>:</para>
+    <para>First, change the default location of the <filename>vimrc</filename>
+    configuration file to <filename class="directory">/etc</filename>:</para>
 @y
     <para>
     設定ファイル <filename>vimrc</filename> がインストールされるデフォルトディレクトリを <filename
@@ -57,7 +56,7 @@
 @z
 
 @x
-    <para>Now prepare Vim for compilation:</para>
+    <para>Prepare Vim for compilation:</para>
 @y
     <para>&PreparePackage1;Vim&PreparePackage2;</para>
 @z
