@@ -126,6 +126,23 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to
+    build without debugging symbols and apply a higher level of compiler 
+    optimizations.</para>
+@y
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>:
+    本スイッチは、デバッグ情報を含めずにビルドすることを指示します。
+    また、より高レベルのコンパイラー最適化オプションを採用することを指定します。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

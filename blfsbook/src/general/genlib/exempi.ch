@@ -89,11 +89,21 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="required">
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="required">
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/exempi"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/exempi"/></para>
 @z
 
 @x

@@ -148,6 +148,16 @@
 @z
 
 @x
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to
+    build without debugging symbols and apply a higher level of compiler 
+    optimizations.</para>
+@y
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>:
+    本スイッチによりデバッグシンボルを取り除き、コンパイラーの最適化レベルを上げて処理します。
+    </para>
+@z
+
+@x
     <para><option>-DWITH_DOC=OFF</option>: This option is set to avoid building
     the API documentation. Omit it if you have <application>doxygen</application>
     installed and want the documentation.</para>

@@ -121,6 +121,22 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <envar>CXX=g++</envar>: This environment variable forces use of
+      <command>g++</command> compiler since building with
+      <command>clang++</command> is currently broken.
+@y
+      <envar>CXX=g++</envar>:
+      本環境変数により <command>g++</command> を強制的に利用します。
+      <command>clang++</command> によるビルドでは処理できないためです。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

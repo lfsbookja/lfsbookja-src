@@ -111,6 +111,32 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>NO_ARLIB=1</parameter>: This make flag disables installing the
+      static library.
+@y
+      <parameter>NO_ARLIB=1</parameter>:
+      これはスタティックライブラリをインストールしないようにします。
+@z
+
+@x
+    <title>Configuring keyutils</title>
+@y
+    <title>&Configuring1;keyutils&Configuring2;</title>
+@z
+
+@x
+      <title>Config Files</title>
+@y
+      <title>&ConfigFiles;</title>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

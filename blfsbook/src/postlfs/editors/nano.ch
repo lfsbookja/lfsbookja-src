@@ -128,6 +128,14 @@
 @z
 
 @x
+      <option>--enable-utf8</option>: This switch enables unicode support
+      in <application>Nano</application>.
+@y
+      <option>--enable-utf8</option>:
+      <application>Nano</application> にて unicode サポートを有効にします。
+@z
+
+@x
       <parameter>--with-slang=/usr</parameter>: This forces
       <application>Nano</application> to use <application>S-Lang</application>.
       Use this if installed.

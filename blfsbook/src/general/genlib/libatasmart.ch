@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY libatasmart-time          "less than 0.1 SBU">
+@y
+  <!ENTITY libatasmart-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to libatasmart</title>
 @y
     <title>&IntroductionTo1;libatasmart&IntroductionTo2;</title>

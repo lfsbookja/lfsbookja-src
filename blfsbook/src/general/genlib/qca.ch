@@ -159,6 +159,15 @@
 @z
 
 @x
+    <para><option>--no-separate-debug-info</option>: Prevents installation
+    of a separate library and program file with debug information.</para>
+@y
+    <para><option>--no-separate-debug-info</option>:
+    個々のライブラリやプログラムにてデバッグ情報を含めないようにします。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -194,8 +203,9 @@
           <para>is a command line tool for performing various cryptographic
 	  operations with Qca.</para>
 @y
-          <para>is a command line tool for performing various cryptographic
-	  operations with Qca.</para>
+          <para>
+          Qca による種々の暗号化処理を実現するコマンドラインツール。
+          </para>
 @z
 
 @x libqca.so
