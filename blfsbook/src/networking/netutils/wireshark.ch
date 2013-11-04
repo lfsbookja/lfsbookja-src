@@ -120,13 +120,15 @@
 @z
 
 @x
-    <para>Note that if you don't have <application>Gtk+</application>
-    installed, you will need to pass <option>--disable-wireshark</option>
-    to the <command>configure</command> command.</para>
+    <para>Note that you need <application>Gtk+</application> or
+    <application>Qt4</application> installed, otherwise, you will need to pass
+    <option>--disable-wireshark</option> to the
+    <command>configure</command> command.</para>
 @y
-    <para>Note that if you don't have <application>Gtk+</application>
-    installed, you will need to pass <option>--disable-wireshark</option>
-    to the <command>configure</command> command.</para>
+    <para>Note that you need <application>Gtk+</application> or
+    <application>Qt4</application> installed, otherwise, you will need to pass
+    <option>--disable-wireshark</option> to the
+    <command>configure</command> command.</para>
 @z
 
 @x
@@ -147,14 +149,12 @@
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <xref linkend="gnutls"/>,
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (to build the GUI front-end),
       <xref linkend="libgcrypt"/>,
       <xref linkend="lua"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openssl"/>,
-      <xref linkend="pcre"/>,
-      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>, and
-      <xref linkend="python2"/>
+      <xref linkend="pcre"/>, and
+      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -162,23 +162,19 @@
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <xref linkend="gnutls"/>,
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (to build the GUI front-end),
       <xref linkend="libgcrypt"/>,
       <xref linkend="lua"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openssl"/>,
       <xref linkend="pcre"/>,
-      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>, and
-      <xref linkend="python2"/>
+      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/wireshark"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/wireshark"/></para>
 @z
 
 @x
@@ -380,19 +376,19 @@
 @z
 
 @x
-        <seg>capinfos, dftest, dumpcap, editcap, idl2wrs, mergecap, randpkt,
-        rawshark, text2pcap, tshark, and wireshark</seg>
+        <seg>capinfos, dftest, dumpcap, editcap, mergecap, randpkt, rawshark,
+        reordercap, text2pcap, tshark, and wireshark</seg>
         <seg>libwireshark.so, libwiretap.so, libwsutil.so, and
         numerous plugin modules</seg>
         <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
         /usr/share/pixmaps/wireshark, and /usr/share/wireshark</seg>
 @y
-        <seg>capinfos, dftest, dumpcap, editcap, idl2wrs, mergecap, randpkt,
-        rawshark, text2pcap, tshark, and wireshark</seg>
+        <seg>capinfos, dftest, dumpcap, editcap, mergecap, randpkt, rawshark,
+        reordercap, text2pcap, tshark, wireshark</seg>
         <seg>libwireshark.so, libwiretap.so, libwsutil.so, and
         numerous plugin modules</seg>
         <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
-        /usr/share/pixmaps/wireshark, and /usr/share/wireshark</seg>
+        /usr/share/pixmaps/wireshark, /usr/share/wireshark</seg>
 @z
 
 @x
@@ -437,18 +433,6 @@
           including those of <command>tcpdump</command>,
           <application>Wireshark</application> and other tools that write
           captures in that format.</para>
-@z
-
-@x idl2wrs
-          <para>takes a user specified CORBA
-          IDL file and generates <quote>C</quote> source code that
-          can be used to create an <application>Wireshark</application>
-          plugin.</para>
-@y
-          <para>takes a user specified CORBA
-          IDL file and generates <quote>C</quote> source code that
-          can be used to create an <application>Wireshark</application>
-          plugin.</para>
 @z
 
 @x mergecap

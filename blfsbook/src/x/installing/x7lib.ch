@@ -262,7 +262,7 @@
           libXfixes.so, libXfont.so, libXft.so, libXinerama.so,
           libXi.so, libxkbfile.so, libXmu.so, libXmuu.so,
           libXpm.so, libXrandr.so, libXrender.so, libXRes.so,
-          libXss.so, libXt.so, libXtst.so, libXvMC.so,
+          libxshmfence.so, libXss.so, libXt.so, libXtst.so, libXvMC.so,
           libXvMCW.so, libXv.so, libXxf86dga.so and
           libXxf86vm.so
         </seg>
@@ -294,7 +294,7 @@
           libXfixes.so, libXfont.so, libXft.so, libXinerama.so,
           libXi.so, libxkbfile.so, libXmu.so, libXmuu.so,
           libXpm.so, libXrandr.so, libXrender.so, libXRes.so,
-          libXss.so, libXt.so, libXtst.so, libXvMC.so,
+          libxshmfence.so, libXss.so, libXt.so, libXtst.so, libXvMC.so,
           libXvMCW.so, libXv.so, libXxf86dga.so,
           libXxf86vm.so
         </seg>

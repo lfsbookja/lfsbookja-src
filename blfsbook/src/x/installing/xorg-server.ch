@@ -169,11 +169,11 @@
 @z
 
 @x
-      <option>--enable-install-setuid</option>: The Xorg binary must run as
+      <parameter>--enable-install-setuid</parameter>: The Xorg binary must run as
       the root user. This switch ensures that the binary is installed
       setuid when <command>make</command> is run by an unprivileged user.
 @y
-      <option>--enable-install-setuid</option>:
+      <parameter>--enable-install-setuid</parameter>:
       Xorg の実行モジュールは root ユーザーにて実行される必要があります。
       このパラメーターは一般ユーザーによって <command>make</command> によりビルドを行っても、実行モジュールに対して正しく setuid がセットされるようにします。
 @z

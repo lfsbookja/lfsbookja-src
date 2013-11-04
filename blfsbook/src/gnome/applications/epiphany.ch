@@ -101,14 +101,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="nss"/> and
-      <xref linkend="seahorse"/> (at runtime, for managing stored passwords)
+      <xref linkend="nss"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="nss"/> and
-      <xref linkend="seahorse"/> (at runtime, for managing stored passwords)
+      <xref linkend="nss"/>
     </para>
 @z
 

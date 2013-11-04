@@ -246,9 +246,11 @@
           <envar>$XORG_PREFIX</envar>/share/doc/compositeproto,
           <envar>$XORG_PREFIX</envar>/share/doc/damageproto,
           <envar>$XORG_PREFIX</envar>/share/doc/dri2proto,
+          <envar>$XORG_PREFIX</envar>/share/doc/dri3proto,
           <envar>$XORG_PREFIX</envar>/share/doc/fixesproto,
           <envar>$XORG_PREFIX</envar>/share/doc/fontsproto,
           <envar>$XORG_PREFIX</envar>/share/doc/kbproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/presentproto,
           <envar>$XORG_PREFIX</envar>/share/doc/randrproto,
           <envar>$XORG_PREFIX</envar>/share/doc/recordproto,
           <envar>$XORG_PREFIX</envar>/share/doc/renderproto,
@@ -269,9 +271,11 @@
           <envar>$XORG_PREFIX</envar>/share/doc/compositeproto,
           <envar>$XORG_PREFIX</envar>/share/doc/damageproto,
           <envar>$XORG_PREFIX</envar>/share/doc/dri2proto,
+          <envar>$XORG_PREFIX</envar>/share/doc/dri3proto,
           <envar>$XORG_PREFIX</envar>/share/doc/fixesproto,
           <envar>$XORG_PREFIX</envar>/share/doc/fontsproto,
           <envar>$XORG_PREFIX</envar>/share/doc/kbproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/presentproto,
           <envar>$XORG_PREFIX</envar>/share/doc/randrproto,
           <envar>$XORG_PREFIX</envar>/share/doc/recordproto,
           <envar>$XORG_PREFIX</envar>/share/doc/renderproto,
@@ -279,7 +283,7 @@
           <envar>$XORG_PREFIX</envar>/share/doc/scrnsaverproto,
           <envar>$XORG_PREFIX</envar>/share/doc/videoproto,
           <envar>$XORG_PREFIX</envar>/share/doc/xcmiscproto,
-          <envar>$XORG_PREFIX</envar>/share/doc/xextproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/xextproto and
           <envar>$XORG_PREFIX</envar>/share/doc/xproto
         </seg>
 @z

@@ -8,6 +8,7 @@
 BOOKdir = @abs_bookdir@/gnome/applications
 CHANGE_FILES = \
 	applications.ch         \
+	baobab.ch               \
 	brasero.ch              \
 	cheese.ch               \
 	eog.ch                  \
@@ -40,6 +41,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 applications.xml:         $(BOOKdir)/$@ $(srcdir)/applications.ch
+baobab.xml:               $(BOOKdir)/$@ $(srcdir)/baobab.ch
 brasero.xml:              $(BOOKdir)/$@ $(srcdir)/brasero.ch
 cheese.xml:               $(BOOKdir)/$@ $(srcdir)/cheese.ch
 eog.xml:                  $(BOOKdir)/$@ $(srcdir)/eog.ch
