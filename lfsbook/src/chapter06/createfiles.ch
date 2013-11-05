@@ -35,9 +35,9 @@
 
 @x
   <para>Historically, Linux maintains a list of the mounted file systems in the
-  file <filename>/etc/mtab</filename>.  Modern kernels maintain this list
+  file <filename>/etc/mtab</filename>. Modern kernels maintain this list
   internally and exposes it to the user via the <filename
-  class="directory">/proc</filename> filesystem.  To satisfy utilities that
+  class="directory">/proc</filename> filesystem. To satisfy utilities that
   expect the presence of <filename>/etc/mtab</filename>, create the following
   symbolic link:</para>
 @y

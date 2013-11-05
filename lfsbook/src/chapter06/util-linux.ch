@@ -108,6 +108,18 @@
 @z
 
 @x
+    <note><para>Two tests, last/ipv6 and last/last, fail in the chroot environment
+    due to the DNS resolver not being active yet.  If the tests are rerun after
+    booting, they pass.</para></note>
+@y
+    <note><para>
+    last/ipv6 と last/last という二つのテストは、chroot 環境では失敗します。
+    これは DNS リゾルバーがまだ稼動していないためです。
+    ブート後にテストを再実行すれば成功します。
+    </para></note>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

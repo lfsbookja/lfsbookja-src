@@ -8,13 +8,13 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version         "SVN-20131019">
-<!ENTITY releasedate     "October 19, 2013">
+<!ENTITY version         "SVN-20131104">
+<!ENTITY releasedate     "November 4, 2013">
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version         "SVN-20131019">
-<!ENTITY releasedate     "2013年10月19日">
-<!ENTITY jversion        "20131021">
+<!ENTITY version         "SVN-20131104">
+<!ENTITY releasedate     "2013年11月04日">
+<!ENTITY jversion        "20131105">
 @z
 
 @x

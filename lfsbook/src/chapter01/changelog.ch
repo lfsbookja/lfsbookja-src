@@ -48,6 +48,44 @@
 @z
 
 @x
+      <para>2013-11-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Disable pkg-config lookups in the 
+          Chapter 5 check program that may cause unwanted 
+          host system libraries to be linked into check.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-11-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第5章の check プログラムにて pkg-config の情報を無効化します。
+          これは check プログラムに対してホストシステムの不要なライブラリがリンクされないようにするためです。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-10-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.24. Fixes
+          <ulink url="&lfs-ticket-root;3415">#3415</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-10-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.24 へのアップデート。
+          <ulink url="&lfs-ticket-root;3415">#3415</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-10-19</para>
       <itemizedlist>
         <listitem>

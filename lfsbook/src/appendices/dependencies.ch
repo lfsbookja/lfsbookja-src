@@ -673,7 +673,7 @@ Typo ですが日本語訳には影響ありません。
          Sed, Texinfo</seg>
 @z
 @x
-          <seg>Diffutils. Less</seg>
+          <seg>Diffutils, Less</seg>
 @y
           <seg>Diffutils, Less</seg>
 @z
