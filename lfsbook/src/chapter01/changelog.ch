@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2013-11-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.12. Fixes
+          <ulink url="&lfs-ticket-root;3421">#3421</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Kbd-2.0.1. Fixes
+          <ulink url="&lfs-ticket-root;3420">#3420</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Tzdata-2013h. Fixes
+          <ulink url="&lfs-ticket-root;3416">#3416</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-11-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;3421">#3421</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Kbd-2.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3420">#3420</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tzdata-2013h へのアップデート。
+          <ulink url="&lfs-ticket-root;3416">#3416</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-11-04</para>
       <itemizedlist>
         <listitem>
