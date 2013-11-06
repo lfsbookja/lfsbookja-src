@@ -14,19 +14,37 @@
 @z
 
 @x
-  <title>GNOME Core Packages</title>
+  <title>GNOME Libraries and Utilities</title>
 @y
-  <title>GNOME のコアパッケージ</title>
+  <title>GNOME のライブラリとユーティリティー</title>
 @z
 
 @x
-    This section contains required packages for the
-    <application>GNOME</application> applications to build and
-    function properly. We don't provide any desktop related
-    packages due to dependency on Systemd which BLFS doesn't
-    support.
+    The objective of this section is not to build a
+    <application>GNOME</application> desktop, because it depends on
+    <application>Systemd</application>, which BLFS doesn't support. Rather, it
+    provides packages required for some platform independent
+    <application>GNOME</application> applications to build and run properly
+    under any Window Manager (e.g.
+    <application>Fluxbox</application>,
+    <application>Icewm</application>,
+    <application>Openbox</application>,
+    <application>Sawfish</application>), or Desktop Environment (e.g.
+    <application>KDE</application>,
+    <application>XFCE</application>,
+    <application>LXDE</application>).
 @y
-    本節は <application>GNOME</application> アプリケーションをビルドし適切に動作させるために必要となるパッケージを示します。
-    本書ではデスクトップに関連するパッケージは取り上げないことにします。
-    それらは Systemd に依存しており BLFS では Systemd をサポートしていないからです。
+    The objective of this section is not to build a
+    <application>GNOME</application> desktop, because it depends on
+    <application>Systemd</application>, which BLFS doesn't support. Rather, it
+    provides packages required for some platform independent
+    <application>GNOME</application> applications to build and run properly
+    under any Window Manager (e.g.
+    <application>Fluxbox</application>,
+    <application>Icewm</application>,
+    <application>Openbox</application>,
+    <application>Sawfish</application>), or Desktop Environment (e.g.
+    <application>KDE</application>,
+    <application>XFCE</application>,
+    <application>LXDE</application>).
 @z

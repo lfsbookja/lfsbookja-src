@@ -110,9 +110,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      The package comes with a testsuite, but it fails for yet unknown reasons.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      本パッケージにテストスイートがありますが、正常動作はしません。その理由は不明です。
 @z
 
 @x
@@ -146,8 +146,7 @@
         </seg>
         <seg>
           /usr/include/gjs-1.0,
-          /usr/lib/gjs,
-          /usr/lib/gjs-1.0 and
+          /usr/lib/gjs, and
           /usr/share/gjs-1.0
         </seg>
 @y
@@ -160,7 +159,6 @@
         <seg>
           /usr/include/gjs-1.0,
           /usr/lib/gjs,
-          /usr/lib/gjs-1.0,
           /usr/share/gjs-1.0
         </seg>
 @z

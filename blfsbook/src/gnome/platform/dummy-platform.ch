@@ -14,7 +14,7 @@
 @z
 
 @x
-  <title>Platform</title>
+  <title>Libraries</title>
 @y
-  <title>プラットフォーム</title>
+  <title>ライブラリ</title>
 @z

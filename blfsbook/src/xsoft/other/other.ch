@@ -20,7 +20,7 @@
 @z
 
 @x
-    <para>These programs use the X window system and don't fit easily into any
+    <para>These programs use the X Window System and don't fit easily into any
     of the other chapters.</para>
 @y
     <para>

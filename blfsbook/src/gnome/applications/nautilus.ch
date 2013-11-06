@@ -77,14 +77,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="exempi"/>,
-      <xref linkend="gnome-desktop"/>, and
+      <xref linkend="gnome-desktop"/> and
       <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="exempi"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="libnotify"/>
     </para>
@@ -93,12 +91,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="exempi"/>,
       <xref linkend="libexif"/> and
       <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="exempi"/>,
       <xref linkend="libexif"/>,
       <xref linkend="gobject-introspection"/>
     </para>
