@@ -140,6 +140,7 @@
           libnl-3.so, 
           libnl-cli-3.so, 
           libnl-genl-3.so,
+          libnl-idiag-3.so,
           libnl-nf-3.so, and 
           libnl-route-3.so
         </seg>
@@ -159,6 +160,7 @@
           libnl-3.so, 
           libnl-cli-3.so, 
           libnl-genl-3.so,
+          libnl-idiag-3.so,
           libnl-nf-3.so,
           libnl-route-3.so
         </seg>

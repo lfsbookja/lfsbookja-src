@@ -120,7 +120,8 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus-glib"/> (to run tests),
+      <xref linkend="dbus-glib"/> (to run tests - it may be necessary to
+      reinstall it, after upgrading this package),
       <xref linkend="python2"/> (to run tests),
       <xref linkend="dbus-python"/> (to run tests), and
       <xref linkend="doxygen"/> (to generate the API documentation)
@@ -128,7 +129,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dbus-glib"/> (テスト実行のため),
+      <xref linkend="dbus-glib"/> (テスト実行のため。このパッケージ導入後に本パッケージを再インストールする必要があります。),
       <xref linkend="python2"/> (テスト実行のため),
       <xref linkend="dbus-python"/> (テスト実行のため),
       <xref linkend="doxygen"/> (API ドキュメント生成のため)
@@ -485,7 +486,7 @@
 
 @x
         <seg>
-          dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor, 
+          dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
           dbus-send and dbus-uuidgen
         </seg>
         <seg>
@@ -494,14 +495,15 @@
         <seg>
           /etc/dbus-1,
           /usr/include/dbus-1.0,
-          /usr/lib/dbus-1.0, 
+          /usr/lib/dbus-1.0,
           /usr/share/dbus-1,
-          /usr/share/doc/dbus-&dbus-version; and
-          /var/lib/dbus
+          /usr/share/doc/dbus-&dbus-version;,
+          /var/lib/dbus and
+          /var/run/dbus
         </seg>
 @y
         <seg>
-          dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor, 
+          dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
           dbus-send, dbus-uuidgen
         </seg>
         <seg>
@@ -510,10 +512,11 @@
         <seg>
           /etc/dbus-1,
           /usr/include/dbus-1.0,
-          /usr/lib/dbus-1.0, 
+          /usr/lib/dbus-1.0,
           /usr/share/dbus-1,
           /usr/share/doc/dbus-&dbus-version;,
-          /var/lib/dbus
+          /var/lib/dbus,
+          /var/run/dbus
         </seg>
 @z
 

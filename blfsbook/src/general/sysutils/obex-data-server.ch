@@ -92,7 +92,8 @@
     <para role="required">
       <xref linkend="dbus-glib"/>,
       <xref linkend="imagemagick"/> or
-      <xref linkend="gdk-pixbuf"/>, and
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="libusb-compat"/>, and
       <xref linkend="openobex"/>
     </para>
 @y
@@ -101,6 +102,7 @@
       <xref linkend="dbus-glib"/>,
       <xref linkend="imagemagick"/> または
       <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="libusb-compat"/>,
       <xref linkend="openobex"/>
     </para>
 @z
