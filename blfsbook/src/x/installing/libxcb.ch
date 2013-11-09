@@ -76,18 +76,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-@y
-        <para>必須のパッチ: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">libxcb Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libxcb&Dependencies2;</bridgehead>
@@ -182,76 +170,32 @@
 @z
 
 @x
-    <para><option>--enable-xinput</option>: This switch enables XCB Xinput
+    <para><parameter>--enable-xinput</parameter>: This switch enables XCB Xinput
     extension.</para>
 @y
-    <para><option>--enable-xinput</option>:
+    <para><parameter>--enable-xinput</parameter>:
     本スイッチは XCB Xinput 拡張を有効にします。
     </para>
 @z
 
 @x
-    <para><option>--enable-xkb</option>: This switch enables XCB XKB
+    <para><parameter>--enable-xkb</parameter>: This switch enables XCB XKB
     extension.</para>
 @y
-    <para><option>--enable-xkb</option>:
+    <para><parameter>--enable-xkb</parameter>:
     本スイッチは XCB の XKB 拡張を有効にします。
     </para>
 @z
 
 @x
-    <para><parameter>--without-doxygen</parameter>: This switch can be used
+    <para><option>--without-doxygen</option>: This switch can be used
     to disable the API documentation if <xref linkend="doxygen"/> is
     installed.</para>
 @y
     <para>
-    <parameter>--without-doxygen</parameter>:
+    <option>--without-doxygen</option>:
     このスイッチは <xref linkend="doxygen"/> がインストールされていて、かつ API ドキュメントを必要としない時に指定します。
     </para>
-@z
-
-@x
-    <title>Configuring libxcb</title>
-@y
-    <title>&Configuring1;libxcb&Configuring2;</title>
-@z
-
-@x
-      <title>Configuration Information</title>
-@y
-      <title>&ConfigInfo;</title>
-@z
-
-@x
-      <para>The <application>libxcb</application> developers have decided
-      to be strict in asserting locking bugs in X11 applications. This is
-      different than the behavior of <application>libX11</application> when
-      used on its own, and it will cause some applications to crash when
-      they previously did not. When an application has these types of bugs,
-      it will crash with the following assertion:</para>
-@y
-      <para>
-      <application>libxcb</application> developers have decided
-      to be strict in asserting locking bugs in X11 applications. This is
-      different than the behavior of <application>libX11</application> when
-      used on its own, and it will cause some applications to crash when
-      they previously did not. When an application has these types of bugs,
-      it will crash with the following assertion:
-      </para>
-@z
-
-@x
-      <para>An environment variable, <envar>LIBXCB_ALLOW_SLOPPY_LOCK</envar>,
-      can be set which will allow the locking bugs to not crash the
-      application. It is a workaround that is known to be needed in a few
-      cases. If it is found that these bugs affect an application in use, add
-      the following to your system or personal profile:</para>
-@y
-      <para>An environment variable, <envar>LIBXCB_ALLOW_SLOPPY_LOCK</envar>,
-      can be set which will allow the locking bugs to not crash the
-      application. It is a workaround that is known to be needed in a few
-      cases. If it is found that these bugs affect an application in use, add
-      the following to your system or personal profile:</para>
 @z
 
 @x

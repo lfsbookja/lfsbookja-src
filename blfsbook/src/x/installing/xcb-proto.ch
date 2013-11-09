@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY xcb-proto-time          "less than 0.1 SBU">
-@y
-  <!ENTITY xcb-proto-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to xcb-proto</title>
 @y
     <title>&IntroductionTo1;xcb-proto&IntroductionTo2;</title>

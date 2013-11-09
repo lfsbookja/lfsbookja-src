@@ -79,9 +79,10 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libesmtp"/>, 
-      <xref linkend="rarian"/>,
-      <xref linkend="gmime"/>, and
+      <xref linkend="enchant"/>,
+      <xref linkend="gmime"/>,
+      <xref linkend="libesmtp"/>,
+      <xref linkend="rarian"/>, and
       <xref linkend="aspell"/> or
       <ulink url="http://gtkspell.sourceforge.net/">GtkSpell</ulink>
       (<application>GtkSpell</application> provides on-the-fly as you type
@@ -90,9 +91,10 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libesmtp"/>, 
-      <xref linkend="rarian"/>,
+      <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
+      <xref linkend="libesmtp"/>,
+      <xref linkend="rarian"/>,
       <xref linkend="aspell"/> または
       <ulink url="http://gtkspell.sourceforge.net/">GtkSpell</ulink>
       (<application>GtkSpell</application> provides on-the-fly as you type
