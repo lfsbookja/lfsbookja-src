@@ -169,14 +169,14 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Note
-      that system-wide <application>D-Bus</application> daemon must
-      be running or the tests will fail.
+      To test the results, issue: <command>make -k check</command>. For unknown
+      reasons, one test (cd-self-test) fails. Note that system-wide
+      <application>D-Bus</application> daemon must be running or the tests will
+      fail.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      Note
-      that system-wide <application>D-Bus</application> daemon must
-      be running or the tests will fail.
+      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      テストの一つ (cd-self-test) は理由不明ながら失敗します。
+      システムワイドな <application>D-Bus</application> デーモンの稼動が必要なのかもしれず、そうでないときにテストが失敗するのかもしれません。
 @z
 
 @x

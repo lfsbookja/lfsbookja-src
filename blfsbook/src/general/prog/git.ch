@@ -225,7 +225,7 @@
       user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-.@z
+@z
 
 @x
       If you created the man pages, install them as the
@@ -247,16 +247,16 @@
       Alternatively, If you downloaded the man pages untar them as the
       <systemitem class="username">root</systemitem> user:
 @y
-      Alternatively, If you downloaded the man pages untar them as the
-      <systemitem class="username">root</systemitem> user:
+      man ページをダウンロードしている場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下のように伸張 (解凍) します。
 @z
 
 @x
       If you downloaded the html docs untar them as the
       <systemitem class="username">root</systemitem> user:
 @y
-      If you downloaded the html docs untar them as the
-      <systemitem class="username">root</systemitem> user:
+      html ドキュメントをダウンロードしている場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下のように伸張 (解凍) します。
 @z
 
 @x

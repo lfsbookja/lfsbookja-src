@@ -133,9 +133,17 @@
 @z
 
 @x
-      To test the results, issue: <userinput>make test</userinput>.
+      To test the results, issue: <userinput>make -k test</userinput>. Almost
+      99% of the tests passes. The following tests fail, for unknown reasons:
+      CTestTestFailedSubmit-ftp (known to fail),
+      CTestTestFailedSubmit-http and
+      CTestTestFailedSubmit-https.
 @y
       ビルド結果をテストする場合は <userinput>make test</userinput> を実行します。
+      99% のテストは成功しますが、以下については失敗します。その理由は不明です。
+      CTestTestFailedSubmit-ftp (理由は判明しています),
+      CTestTestFailedSubmit-http,
+      CTestTestFailedSubmit-https
 @z
 
 @x
