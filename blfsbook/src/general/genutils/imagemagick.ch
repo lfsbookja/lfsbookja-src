@@ -14,11 +14,17 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "182 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "2.5 SBU (typical build - additional 4 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "154 MB (with typical dependencies,
+                                      additional 29 MB to run the test suite,
+                                      reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "2.3 SBU (typical build - additional 1.9
+                                      SBU to run the test suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "182 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "2.5 SBU (typical build - additional 4 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "154 MB (with typical dependencies,
+                                      additional 29 MB to run the test suite,
+                                      reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "2.3 SBU (typical build - additional 1.9
+                                      SBU to run the test suite)">
 @z
 
 @x
@@ -503,7 +509,7 @@
         /usr/include/ImageMagick-6,
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
-        /usr/lib/perl5/site_perl/&lfs-perl-version;/Image/Magick,
+        /usr/lib/perl5/site_perl/&lfs-perl-version;/Image,
         /usr/share/ImageMagick-6 and
         /usr/share/doc/ImageMagick-6</seg>
 @y
@@ -512,13 +518,13 @@
         MagickWand-config, mogrify, montage, stream, Wand-config</seg>
 
         <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so, libMagick++-6.Q16.so,
-        and numerous plugin modules</seg>
+        この他に多数のプラグインモジュール</seg>
 
         <seg>/etc/ImageMagick-6,
         /usr/include/ImageMagick-6,
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
-        /usr/lib/perl5/site_perl/&lfs-perl-version;/Image/Magick,
+        /usr/lib/perl5/site_perl/&lfs-perl-version;/Image,
         /usr/share/ImageMagick-6,
         /usr/share/doc/ImageMagick-6</seg>
 @z

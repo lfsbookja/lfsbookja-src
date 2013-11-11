@@ -82,62 +82,50 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-       <xref linkend="libtirpc"/>
+      <xref linkend="libtirpc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-       <xref linkend="libtirpc"/>
+      <xref linkend="libtirpc"/>
     </para>
 @z
 
 @x
-       <xref linkend="rpcbind"/> (Runtime dependency)
-@y
-       <xref linkend="rpcbind"/> (実行時の依存パッケージ)
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional for NFSv4 Support</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libevent"/>,
-      <xref linkend="sqlite"/>, and
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink>
-    </para>
-@y
-    <bridgehead renderas="sect4">NFSv4 サポートのための任意のパッケージ</bridgehead>
-    <para role="optional">
-      <xref linkend="libevent"/>,
-      <xref linkend="sqlite"/>,
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional for GSS (RPC Security) Support</bridgehead>
-    <para role="optional">
+      <xref linkend="sqlite"/> and
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink> (for NFSv4 support),
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>, and
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink>
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support)
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">SPKM-3</ulink> (for SPKM-3 support), and
+      <xref linkend="libcap"/>
     </para>
 @y
-    <bridgehead renderas="sect4">GSS (RPC Security) サポートのための任意のパッケージ</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="mitkrb"/> または
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>,
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink>
+      <xref linkend="libevent"/>,
+      <xref linkend="sqlite"/> and
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink> (for NFSv4 support),
+      <xref linkend="mitkrb"/> or
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>, and
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support)
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">SPKM-3</ulink> (for SPKM-3 support), and
+      <xref linkend="libcap"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional for SPKM-3 Support</bridgehead>
-    <para>
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">SPKM-3</ulink>
+    <bridgehead renderas="sect4">Required (runtime)</bridgehead>
+    <para role="required">
+      <xref linkend="rpcbind"/>
     </para>
 @y
-    <bridgehead renderas="sect4">SPKM-3 サポートのための任意のパッケージ</bridgehead>
-    <para>
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">SPKM-3</ulink>
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="required">
+      <xref linkend="rpcbind"/>
     </para>
 @z
 
@@ -164,15 +152,15 @@
 @z
 
 @x
-<screen><literal>File systems:
-  Network File Systems:
-    NFS File System Support: M or Y
-    NFS Server Support: M or Y</literal></screen>
+<screen><literal>File systems  ---&gt;
+  Network File Systems  ---&gt;
+    NFS client support: Y or M
+    NFS server support: Y or M</literal></screen>
 @y
-<screen><literal>File systems:
-  Network File Systems:
-    NFS File System Support: M または Y
-    NFS Server Support: M または Y</literal></screen>
+<screen><literal>File systems  ---&gt;
+  Network File Systems  ---&gt;
+    NFS client support: Y または M
+    NFS server support: Y または M</literal></screen>
 @z
 
 @x
