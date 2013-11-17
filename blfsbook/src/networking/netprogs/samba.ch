@@ -257,34 +257,6 @@
 @z
 
 @x
-      <title>Mounting Shares by Unprivileged Users</title>
-@y
-      <title>Mounting Shares by Unprivileged Users</title>
-@z
-
-@x
-      <para>If it is desired for unprivileged users to directly mount (and
-      unmount) CIFS shares, the <command>mount.cifs</command> and
-      <command>umount.cifs</command> commands must be setuid
-      <systemitem class='username'>root</systemitem>. Note that users can
-      only mount CIFS shares on a mount point owned by that user (requires
-      write access also). If desired, change these programs to setuid
-      <systemitem class='username'>root</systemitem> by issuing the following
-      command as the <systemitem class='username'>root</systemitem>
-      user:</para>
-@y
-      <para>If it is desired for unprivileged users to directly mount (and
-      unmount) CIFS shares, the <command>mount.cifs</command> and
-      <command>umount.cifs</command> commands must be setuid
-      <systemitem class='username'>root</systemitem>. Note that users can
-      only mount CIFS shares on a mount point owned by that user (requires
-      write access also). If desired, change these programs to setuid
-      <systemitem class='username'>root</systemitem> by issuing the following
-      command as the <systemitem class='username'>root</systemitem>
-      user:</para>
-@z
-
-@x
       <title>Printing to SMB Clients</title>
 @y
       <title>Printing to SMB Clients</title>

@@ -206,20 +206,34 @@
 
 @x
         <seg>
-          dmsetup, fsadm, lvm, lvmconf, lvmdump, vgimportclone. There
-          are also numerous symbolic links to lvm that implement
-          specific functionality.
+          dmeventd (optional), dmsetup, fsadm, lvm, lvmconf, lvmdump,
+          vgimportclone. There are also numerous symbolic links to lvm that
+          implement specific functionality.
         </seg>
         <seg>
-          libdevmapper.so, liblvm2app.so and liblvm2cmd.so
+          libdevmapper.so, liblvm2app.so and liblvm2cmd.so; optional:
+          libdevmapper-event.so, libdevmapper-event-lvm2.so,
+          libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2snapshot.so,
+          libdevmapper-event-lvm2raid.so and some under /lib/device-mapper
+        </seg>
+        <seg>
+          /etc/lvm and
+          /lib/device-mapper (optional)
         </seg>
 @y
         <seg>
-          dmsetup, fsadm, lvm, lvmconf, lvmdump, vgimportclone. 
-          この他に lvm に対してのシンボリックリンクが数多くあり、それらは特定の機能を提供します。
+          dmeventd (任意), dmsetup, fsadm, lvm, lvmconf, lvmdump,
+          vgimportclone, この他に lvm に対してのシンボリックリンクが数多くあり、それらは特定の機能を提供します。
         </seg>
         <seg>
-          libdevmapper.so, liblvm2app.so, liblvm2cmd.so
+          libdevmapper.so, liblvm2app.so and liblvm2cmd.so; optional:
+          libdevmapper-event.so, libdevmapper-event-lvm2.so,
+          libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2snapshot.so,
+          libdevmapper-event-lvm2raid.so, /lib/device-mapper 配下にいくつかのライブラリ。
+        </seg>
+        <seg>
+          /etc/lvm,
+          /lib/device-mapper (任意)
         </seg>
 @z
 

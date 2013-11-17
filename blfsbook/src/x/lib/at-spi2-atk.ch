@@ -109,9 +109,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. An already
+      active graphical session with bus address is necessary to run the tests.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テスト実行にあたっては、バスアドレスが既に割り当てられているアクティブなグラフィックセッションが必要です。
 @z
 
 @x

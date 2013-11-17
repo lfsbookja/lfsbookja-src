@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "116 MB (plus 41MB installed)">
-  <!ENTITY glib2-time          "0.9 SBU (additional 5.6 SBU to run the test suite)">
+  <!ENTITY glib2-buildsize     "157 MB (additional 47 MB to run the test suite)">
+  <!ENTITY glib2-time          "0.9 SBU (additional 3.5 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-buildsize     "116 MB (plus 41MB installed)">
-  <!ENTITY glib2-time          "0.9 SBU (テストスイート実行時は追加で 5.6 SBU)">
+  <!ENTITY glib2-buildsize     "157 MB (テストスイート実行時はさらに 47 MB)">
+  <!ENTITY glib2-time          "0.9 SBU (テストスイート実行時はさらに 3.5 SBU)">
 @z
 
 @x
@@ -201,13 +201,11 @@
 @x
       To test the results, issue: <command>make -k check</command>.  The
       tests need to be run in a graphical environment.  One test (regex)
-      fails when using the system pcre package. Test "gdatetime" has been
-      reported to fail.
+      fails when using the system pcre package.
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
       ただしテストはグラフィック環境下にて実行する必要があります。
       システムにインストールされちる pcre パッケージを使った場合には、失敗するテスト (regex) が１つあります。
-      また "gdatetime" テストも失敗するという報告があります。
 @z
 
 @x
@@ -257,7 +255,6 @@
         <seg>
           /usr/include/gio-unix-2.0,
           /usr/include/glib-2.0,
-          /usr/lib/gdbus-2.0,
           /usr/lib/gio,
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
@@ -280,7 +277,6 @@
         <seg>
           /usr/include/gio-unix-2.0,
           /usr/include/glib-2.0,
-          /usr/lib/gdbus-2.0,
           /usr/lib/gio,
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,

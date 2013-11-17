@@ -86,7 +86,7 @@
     <xref linkend="boost"/>,
     <xref linkend="soprano"/>, and one of:
     <xref linkend="sqlite"/>,
-    <xref linkend="mysql"/>, or
+    <xref linkend="mariadb"/>, <xref linkend="mysql"/>, or
     <xref linkend="postgresql"/>
     </para>
 @y
@@ -94,9 +94,9 @@
     <para role="required">
     <xref linkend="shared-mime-info"/>,
     <xref linkend="boost"/>,
-    <xref linkend="soprano"/>, と以下のいずれか:
+    <xref linkend="soprano"/> と以下のいずれか：
     <xref linkend="sqlite"/>,
-    <xref linkend="mysql"/>,
+    <xref linkend="mariadb"/>, <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>
     </para>
 @z

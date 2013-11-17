@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY php-time          "3.7 SBU (additional 2.9 SBU to run the test suite)">
+  <!ENTITY php-time          "3.8 SBU (additional 2.9 SBU to run the test suite)">
 @y
-  <!ENTITY php-time          "3.7 SBU (テストスイート実行時は、さらに 2.9 SBU)">
+  <!ENTITY php-time          "3.8 SBU (テストスイート実行時は、さらに 2.9 SBU)">
 @z
 
 @x
@@ -199,7 +199,7 @@
     <para role="optional"><xref linkend="openldap"/>,
     <!-- <xref linkend="gdbm"/>, -->
     <xref linkend="db"/>,
-    <xref linkend="mysql"/>,
+    <xref linkend="mariadb"/> or <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>,
     <xref linkend="unixodbc"/>,
     <xref linkend="sqlite"/>,
@@ -217,7 +217,7 @@
     <para role="optional"><xref linkend="openldap"/>,
     <!-- <xref linkend="gdbm"/>, -->
     <xref linkend="db"/>,
-    <xref linkend="mysql"/>,
+    <xref linkend="mariadb"/> または <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>,
     <xref linkend="unixodbc"/>,
     <xref linkend="sqlite"/>,

@@ -118,9 +118,9 @@ Download (HTTP): <ulink url="&libarchive-download-http;"/>
 @z
 
 @x
-      To test the results, issue: <userinput>make check</userinput>.
+      To test the results, issue: <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <userinput>make check</userinput> を実行します。
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x

@@ -21,12 +21,9 @@
 
 @x
         The <application>Glamor EGL</application> package contains a
-        GL-based rendering acceleration library for X server. It is
-        only useful if you are using newer AMD Radeon cards with
-        <application>Xorg ATI Driver</application>.
+        GL-based rendering acceleration library for X server.
 @y
         <application>Glamor EGL</application> パッケージは X サーバーにおける GLベースのレンダリングアクセラレーションライブラリを提供します。
-        これは <application>Xorg ATI ドライバー</application> とともに最新の AMD Radeon カードを利用している場合に活用できるものです。
 @z
 
 @x
@@ -69,18 +66,6 @@
             Estimated build time: &glamor-egl-time;
 @y
             &Estimatedbuildtime;: &glamor-egl-time;
-@z
-
-@x
-      <bridgehead renderas="sect4">Additional Downloads</bridgehead>
-@y
-      <bridgehead renderas="sect4">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-            Required patch:
-@y
-            必須のパッチ:
 @z
 
 @x

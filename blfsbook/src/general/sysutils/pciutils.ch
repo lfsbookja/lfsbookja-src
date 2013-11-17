@@ -116,11 +116,11 @@
 @z
 
 @x
-      <parameter>ZLIB=no</parameter>: This parameter prevents compression of
+      <option>ZLIB=no</option>: This option prevents compression of
       the <filename>pci.ids</filename> file.
 @y
-      <parameter>ZLIB=no</parameter>:
-      このパラメーターは <filename>pci.ids</filename> ファイルが圧縮されないようにします。
+      <option>ZLIB=no</option>:
+      このオプションは <filename>pci.ids</filename> ファイルが圧縮されないようにします。
 @z
 
 @x

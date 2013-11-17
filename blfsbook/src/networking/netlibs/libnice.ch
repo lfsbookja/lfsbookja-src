@@ -21,12 +21,12 @@
 
 @x
       The <application>libnice</application> package is an implementation of
-      the IETF's draft Interactice Connectivity Establishment standard (ICE). It
+      the IETF's draft Interactive Connectivity Establishment standard (ICE). It
       provides <application>GLib</application>-based library,
       <application>libnice</application> and <application>GStreamer</application>,
       elements.
 @y
-      <application>libnice</application> パッケージは IETF による ICE (Interactice Connectivity Establishment) ドラフトに対する実装ライブラリであり、<application>GLib</application> ベースのライブラリ <application>libnice</application>ライブラリ, <application>GStreamer</application> ライブラリを提供します。
+      <application>libnice</application> パッケージは IETF による ICE (Interactive Connectivity Establishment) ドラフトに対する実装ライブラリであり、<application>GLib</application> ベースのライブラリ <application>libnice</application>ライブラリ, <application>GStreamer</application> ライブラリを提供します。
 @z
 
 @x

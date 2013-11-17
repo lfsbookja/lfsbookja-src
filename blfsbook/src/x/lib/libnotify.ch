@@ -82,14 +82,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>, and
-      <xref linkend="notification-daemon"/> (runtime)
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="notification-daemon"/> (実行時)
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -115,6 +113,27 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>
     </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required (runtime)</bridgehead>
+    <para role="required">
+      <xref linkend="notification-daemon"/> or
+      <xref linkend="xfce4-notifyd"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="required">
+      <xref linkend="notification-daemon"/> または
+      <xref linkend="xfce4-notifyd"/>
+    </para>
+@z
+
+@x
+        <application>GNOME Shell</application> and <application>KDE KWin</application>
+        provide their own notification daemons.
+@y
+        <application>GNOME Shell</application> と <application>KDE KWin</application> には独自の通知デーモン (notification daemons) があります。
 @z
 
 @x

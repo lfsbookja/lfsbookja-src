@@ -116,7 +116,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> or <xref linkend="mysql"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="linux-pam"/>, and
@@ -131,7 +131,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> または <xref linkend="mysql"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="linux-pam"/>,

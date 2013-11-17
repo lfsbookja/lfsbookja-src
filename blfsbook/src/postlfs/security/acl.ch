@@ -88,10 +88,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/acl"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/acl"/></para>
 @z
 
 @x
@@ -155,16 +153,40 @@
     configured with the appropriate ACL options (there are nine different
     options).</para>
 @y
-    <para>There are three sets of tests that come with this package. The local
-    partition where the tests are run must be mounted with acl configured as
-    described below.  Additionally, the users <systemitem
-    class="username">bin</systemitem> and <systemitem
-    class="username">daemon</systemitem> must be created or modified to have a
-    proper shell and home directory and the group <systemitem
-    class="groupname">daemon</systemitem> must be a member of the <systemitem
-    class="groupname">bin</systemitem> group.  The kernel must also be
-    configured with the appropriate ACL options (there are nine different
-    options).</para>
+    <para>
+    本パッケージには三セットのテストがあります。
+    テストを実行するローカルパーティションは、以下に示すように acl が設定されマウントされていなければなりません。
+    また <systemitem
+    class="username">bin</systemitem> と <systemitem
+    class="username">daemon</systemitem> ユーザーが生成済であり、適切なシェル設定とホームディレクトリを持っている必要があります。
+    さらに <systemitem
+    class="groupname">daemon</systemitem> グループは <systemitem
+    class="groupname">bin</systemitem> グループのメンバーである必要もあります。
+    そしてカーネルにおいても、適切な ACL オプション (全部で 9つのオプションがあります) が設定されている必要があります。
+    </para>
+@z
+
+@x
+    <para>To run the standard tests run <command>make tests </command>.  As
+    <systemitem class="username">root</systemitem> user, run <command>make
+    root-tests</command>.</para>
+@y
+    <para>
+    標準的なテストは <command>make tests</command> により実行します。
+    また <systemitem class="username">root</systemitem> ユーザーになって <command>make
+    root-tests</command> を実行します。
+    </para>
+@z
+
+@x
+    <para>The third set of tests are Network File System (NFS) specific.  See
+    the contents of the test files in the test/nfs/ directory for the setup
+    requirements.</para>
+@y
+    <para>
+    三セットめのテストは NFS (Network File System) に関するものです。
+    設定方法については、test/nfs/ ディレクトリにあるテストファイルの内容を参照してください。
+    </para>
 @z
 
 @x

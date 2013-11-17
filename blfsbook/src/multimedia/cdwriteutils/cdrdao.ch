@@ -117,8 +117,8 @@
 @x
     <para role="optional">
       <xref linkend="libsigc"/>,
-      <ulink url="http://www.gtkmm.org/">glibmm</ulink>,
-      <ulink url="http://www.gtkmm.org/">gtkmm</ulink>,
+      <xref linkend="glibmm"/>,
+      <xref linkend="gtkmm2"/>,
       <ulink url="http://www.gtkmm.org/">libglademm</ulink>,
       <ulink url="http://www.gtkmm.org/">libgnomecanvasmm</ulink>,
       <ulink url="http://www.gtkmm.org/">gconfmm</ulink>,
@@ -129,8 +129,8 @@
 @y
     <para role="optional">
       <xref linkend="libsigc"/>,
-      <ulink url="http://www.gtkmm.org/">glibmm</ulink>,
-      <ulink url="http://www.gtkmm.org/">gtkmm</ulink>,
+      <xref linkend="glibmm"/>,
+      <xref linkend="gtkmm2"/>,
       <ulink url="http://www.gtkmm.org/">libglademm</ulink>,
       <ulink url="http://www.gtkmm.org/">libgnomecanvasmm</ulink>,
       <ulink url="http://www.gtkmm.org/">gconfmm</ulink>,

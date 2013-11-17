@@ -109,7 +109,7 @@
       <xref linkend="db"/>,
       <xref linkend="expat"/>,
       <ulink url="http://www.freetds.org/">FreeTDS</ulink>,
-      <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> or <xref linkend="mysql"/>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/> and
@@ -121,7 +121,7 @@
       <xref linkend="db"/>,
       <xref linkend="expat"/>,
       <ulink url="http://www.freetds.org/">FreeTDS</ulink>,
-      <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> または <xref linkend="mysql"/>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,

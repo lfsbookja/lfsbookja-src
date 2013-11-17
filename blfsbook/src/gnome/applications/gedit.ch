@@ -97,8 +97,8 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="enchant"/>,
+      <xref linkend="gvfs"/> (runtime),
       <xref linkend="iso-codes"/>,
-      <xref linkend="gvfs"/>,
       <xref linkend="libsoup"/>, and
       <xref linkend="pygobject3"/>
       (<application>Python</application> 3 module)
@@ -107,11 +107,11 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="enchant"/>,
+      <xref linkend="gvfs"/> (実行時),
       <xref linkend="iso-codes"/>,
-      <xref linkend="gvfs"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="pygobject3"/>
-      (<application>Python</application> 3 module)
+      (<application>Python</application>3 モジュール)
     </para>
 @z
 
@@ -149,13 +149,10 @@
 @z
 
 @x
-      To test the results, issue <command>make check</command>. Note
-      that you should run tests from an already active graphical session
-      (<application>GNOME</application>, <application>LXDE</application>, etc.).
+      To test the results, issue <command>make check</command> from an
+      X terminal emulator.
 @y
-      To test the results, issue <command>make check</command>. Note
-      that you should run tests from an already active graphical session
-      (<application>GNOME</application>, <application>LXDE</application>, etc.).
+      ビルド結果をテストする場合は、X端末エミュレーター上にて <command>make check</command> を実行します。
 @z
 
 @x

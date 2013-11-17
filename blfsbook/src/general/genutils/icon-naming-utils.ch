@@ -30,18 +30,15 @@
     a <application>Perl</application> script used for maintaining backwards
     compatibility with current desktop icon themes, while migrating to the
     names specified in the <ulink
-    url="http://www.freedesktop.org/wiki/Standards_2ficon_2dnaming_2dspec">
+    url="http://standards.freedesktop.org/icon-naming-spec/latest/">
     Icon Naming Specification</ulink>.</para>
 @y
-<para>
-<application>icon-naming-utils</application>
-パッケージは、
-a <application>Perl</application> script used for maintaining backwards
-compatibility with current desktop icon themes, while migrating to the
-names specified in the <ulink
-url="http://www.freedesktop.org/wiki/Standards_2ficon_2dnaming_2dspec">
-Icon Naming Specification</ulink>.
-</para>
+    <para>The <application>icon-naming-utils</application> package contains
+    a <application>Perl</application> script used for maintaining backwards
+    compatibility with current desktop icon themes, while migrating to the
+    names specified in the <ulink
+    url="http://standards.freedesktop.org/icon-naming-spec/latest/">
+    Icon Naming Specification</ulink>.</para>
 @z
 
 @x

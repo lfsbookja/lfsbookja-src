@@ -212,7 +212,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -225,7 +225,8 @@
           evince, evince-previewer, and evince-thumbnailer
         </seg>
         <seg>
-          libevdocument3.so and libevview3.so
+          libevdocument3.so and libevview3.so and some libraries under
+          /usr/lib/evince/4/backends
         </seg>
         <seg>
           /usr/include/evince,
@@ -239,7 +240,7 @@
           evince, evince-previewer, evince-thumbnailer
         </seg>
         <seg>
-          libevdocument3.so, libevview3.so
+          libevdocument3.so, libevview3.so, /usr/lib/evince/4/backends 配下のいくつかのライブラリ
         </seg>
         <seg>
           /usr/include/evince,

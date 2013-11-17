@@ -65,11 +65,11 @@
 @z
 
 @x
-          <ulink url="http://www.cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-&Archive-Zip-version;.tar.gz">
-          Archive::Zip-&Archive-Zip-version;</ulink> (MD5 sum: 40153666e7538b410e001aa8a810e702)
+          <ulink url="http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Archive-Zip-&Archive-Zip-version;.tar.gz">
+          Archive::Zip-&Archive-Zip-version;</ulink> (MD5 sum: b732d154306efc85260c9b47cb567d10)
 @y
-          <ulink url="http://www.cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-&Archive-Zip-version;.tar.gz">
-          Archive::Zip-&Archive-Zip-version;</ulink> (MD5 sum: 40153666e7538b410e001aa8a810e702)
+          <ulink url="http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Archive-Zip-&Archive-Zip-version;.tar.gz">
+          Archive::Zip-&Archive-Zip-version;</ulink> (MD5 sum: b732d154306efc85260c9b47cb567d10)
 @z
 
 

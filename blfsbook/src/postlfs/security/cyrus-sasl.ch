@@ -127,7 +127,7 @@
     <para role="optional">
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> or <xref linkend="mysql"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
@@ -140,7 +140,7 @@
     <para role="optional">
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> または <xref linkend="mysql"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,

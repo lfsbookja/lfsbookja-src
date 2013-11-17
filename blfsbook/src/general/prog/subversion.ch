@@ -279,40 +279,40 @@
           /usr/include/subversion-1,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
           /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
-<!--      /usr/lib/python&python2-majorver;/site-packages/libsvn (optional),
+          /usr/lib/python&python2-majorver;/site-packages/libsvn (optional),
           /usr/lib/python&python2-majorver;/site-packages/svn (optional),
--->
           /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (optional),
           /usr/lib/ruby/site_ruby/&lt;x.y&gt;/svn (optional),
-          /usr/lib/svn-python/libsvn (optional),
+<!--      /usr/lib/svn-python/libsvn (optional),
           /usr/lib/svn-python/svn (optional),
+-->
           /usr/lib/svn-javahl (optional), and
           /usr/share/doc/subversion-&subversion-version;
         </seg>
 @y
         <seg>
           svn, svnadmin, svndumpfilter, svnlook, svnmucc, svnrdump, svnserve,
-          svnsync, svnversion
+          svnsync, and svnversion
         </seg>
         <seg>
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
           and mod_authz_svn.so <application>Apache HTTP</application> DSO
           modules and various <application>Perl</application>,
-          <application>Python</application>,
-          <application>Ruby</application> モジュール
+          <application>Python</application> and
+          <application>Ruby</application> modules.
         </seg>
         <seg>
           /usr/include/subversion-1,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
           /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
-<!--      /usr/lib/python&python2-majorver;/site-packages/libsvn (optional),
+          /usr/lib/python&python2-majorver;/site-packages/libsvn (optional),
           /usr/lib/python&python2-majorver;/site-packages/svn (optional),
--->
           /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (optional),
           /usr/lib/ruby/site_ruby/&lt;x.y&gt;/svn (optional),
-          /usr/lib/svn-python/libsvn (optional),
+<!--      /usr/lib/svn-python/libsvn (optional),
           /usr/lib/svn-python/svn (optional),
-          /usr/lib/svn-javahl (optional),
+-->
+          /usr/lib/svn-javahl (optional), and
           /usr/share/doc/subversion-&subversion-version;
         </seg>
 @z
