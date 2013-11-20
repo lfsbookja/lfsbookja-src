@@ -105,6 +105,7 @@ lfs: validate profile-html
 @TXT@	${SHELL} $(BOOKdir)/obfuscate.sh                 $(BASEDIR)/$(NOCHUNKS_OUTPUT)
 @TXT@	sed -i -e "s@text/html@application/xhtml+xml@g"  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
 @TXT@	sed -i -e "s@../wget-list@wget-list@"            $(BASEDIR)/$(NOCHUNKS_OUTPUT)
+@TXT@	sed -i -e "s@../md5sums@md5sums@"                $(BASEDIR)/$(NOCHUNKS_OUTPUT)
 @TXT@	make $(BASEDIR)/wget-list $(BASEDIR)/md5sums
 
 @TXT@txt: nochunks

@@ -164,10 +164,10 @@
 @z
 
 @x
-  <para id="version-check">To see whether your host system has all the appropriate versions, and
+  <para >To see whether your host system has all the appropriate versions, and
   the ability to compile programs, run the following:</para>
 @y
-  <para id="version-check" xreflabel="version-check">
+  <para>
   ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のスクリプトを実行して確認することができます。
   </para>
 @z
