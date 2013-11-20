@@ -86,12 +86,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="bluez"/>
+      <xref linkend="bluez"/> and
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="bluez"/>
+      <xref linkend="bluez"/>,
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @z
 
@@ -133,9 +135,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue: <command>make -k test</command>. One test
+      (test_gdb) has been reported to fail.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      ビルド結果をテストする場合は <command>make -k test</command> を実行します。
+      ただ一つのテスト (test_gdb) は失敗すると報告されています。
 @z
 
 @x
@@ -200,16 +204,19 @@
           pydoc3 (symbolic link to pydoc&python3-majorver;),
           pydoc&python3-majorver;,
 
-          python3 (hard link to python&python3-majorver;m),
+          python3 (symbolic link to python&python3-majorver;),
           python&python3-majorver; (hard link to python&python3-majorver;m),
           python&python3-majorver;m,
 
           python3-config (symbolic link to python&python3-majorver;-config),
-          python&python3-majorver;-config (symbolic link to python3-config),
+          python&python3-majorver;-config (symbolic link to python3m-config),
           python&python3-majorver;m-config,
 
-          and optionally if Tk is installed,
-          idle3 (symbolic link to idle&python3-majorver;),
+          pyvenv (symbolic link to pyvenv&python3-majorver;),
+          pyvenv&python3-majorver;,
+
+          and optionally, if Tk is installed,
+          idle3 (symbolic link to idle&python3-majorver;) and
           idle&python3-majorver;
         </seg>
         <seg>
@@ -228,16 +235,19 @@
           pydoc3 (symbolic link to pydoc&python3-majorver;),
           pydoc&python3-majorver;,
 
-          python3 (hard link to python&python3-majorver;m),
+          python3 (symbolic link to python&python3-majorver;),
           python&python3-majorver; (hard link to python&python3-majorver;m),
           python&python3-majorver;m,
 
           python3-config (symbolic link to python&python3-majorver;-config),
-          python&python3-majorver;-config (symbolic link to python3-config),
+          python&python3-majorver;-config (symbolic link to python3m-config),
           python&python3-majorver;m-config,
 
-          and optionally if Tk is installed,
-          idle3 (symbolic link to idle&python3-majorver;),
+          pyvenv (symbolic link to pyvenv&python3-majorver;),
+          pyvenv&python3-majorver;,
+
+          and optionally, if Tk is installed,
+          idle3 (symbolic link to idle&python3-majorver;) and
           idle&python3-majorver;
         </seg>
         <seg>

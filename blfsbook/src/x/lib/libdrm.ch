@@ -154,10 +154,10 @@
 @z
 
 @x
-      <option>--enable-udev</option>: This option enables support for using
+      <parameter>--enable-udev</parameter>: This parameter enables support for using
       <application>Udev</application> instead of <command>mknod</command>.
 @y
-      <option>--enable-udev</option>:
+      <parameter>--enable-udev</parameter>:
       このオプションは <command>mknod</command> サポートではなく <application>Udev</application> サポートを利用することを指示します。
 @z
 

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY pixman-time          "0.5 SBU (additional 0.8 SBU for tests)">
+  <!ENTITY pixman-time          "0.4 SBU (additional 0.8 SBU for tests)">
 @y
-  <!ENTITY pixman-time          "0.5 SBU (テスト時はさらに 0.8 SBU)">
+  <!ENTITY pixman-time          "0.4 SBU (テスト時はさらに 0.8 SBU)">
 @z
 
 @x
