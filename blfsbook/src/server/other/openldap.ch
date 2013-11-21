@@ -98,12 +98,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="db"/>
+      <xref linkend="db"/> (only if building server)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="db"/>
+      <xref linkend="db"/> (サーバー構築時のみ)
     </para>
 @z
 

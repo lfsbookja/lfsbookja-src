@@ -149,7 +149,7 @@
 
 @x
         <seg>
-          libpng-config and libpng16-config
+          libpng-config, libpng16-config, pngfix and png-fix-itxt
         </seg>
         <seg>
           libpng.so and libpng16.so
@@ -160,7 +160,7 @@
         </seg>
 @y
         <seg>
-          libpng-config, libpng16-config
+          libpng-config, libpng16-config, pngfix, png-fix-itxt
         </seg>
         <seg>
           libpng.so, libpng16.so

@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY midori-buildsize     "95 MB (10 MB installed)">
+  <!ENTITY midori-buildsize     "54 MB (additional 2 MB for the tests)">
+  <!ENTITY midori-time          "0.5 SBU (additional 0.3 SBU for the tests)">
 @y
-  <!ENTITY midori-buildsize     "95 MB (10 MB installed)">
+  <!ENTITY midori-buildsize     "54 MB (additional 2 MB for the tests)">
+  <!ENTITY midori-time          "0.5 SBU (additional 0.3 SBU for the tests)">
 @z
 
 @x
@@ -84,6 +86,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="cmake"/>,
       <xref linkend="libzeitgeist"/>,
       <xref linkend="webkitgtk"/> or
       <xref linkend="webkitgtk2"/> and
@@ -92,6 +95,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="cmake"/>,
       <xref linkend="libzeitgeist"/>,
       <xref linkend="webkitgtk"/> または
       <xref linkend="webkitgtk2"/>,
@@ -149,9 +153,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command> from an X
+      terminal emulator. Two tests fail for unknown reasons.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は、X端末エミュレーター上にて <command>make -k check</command> を実行します。
+      テストのうち二つのテストは原因不明により失敗します。
 @z
 
 @x
@@ -203,13 +209,12 @@
           midori
         </seg>
         <seg>
-          None
+          libmidori-core.so and several libraries under /usr/lib/midori
         </seg>
         <seg>
           /etc/xdg/midori,
-          /usr/include/midori-0.5,
           /usr/lib/midori,
-          /usr/share/doc/midori-&midori-version; and
+          /usr/share/doc/midori and
           /usr/share/midori
         </seg>
 @y
@@ -217,13 +222,12 @@
           midori
         </seg>
         <seg>
-          &None;
+          libmidori-core.so, /usr/lib/midori 配下に数種のライブラリ。
         </seg>
         <seg>
           /etc/xdg/midori,
-          /usr/include/midori-0.5,
           /usr/lib/midori,
-          /usr/share/doc/midori-&midori-version;,
+          /usr/share/doc/midori,
           /usr/share/midori
         </seg>
 @z
