@@ -224,13 +224,13 @@
           gnutls-serv, ocsptool, p11tool, psktool and srptool
         </seg>
         <seg>
-          libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so and
-          libgnutlsxx.so
+          libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so, libgnutlsxx.so
+          and /usr/lib/guile/2.0/guile-gnutls-v-2.so (optional)
         </seg>
         <seg>
           /usr/include/gnutls,
           /usr/share/gtk-doc/html/gnutls and
-          /usr/share/guile/site/gnutls
+          /usr/share/guile/site/gnutls (optional)
         </seg>
 @y
         <seg>
@@ -238,13 +238,13 @@
           gnutls-serv, ocsptool, p11tool, psktool, srptool
         </seg>
         <seg>
-          libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so,
-          libgnutlsxx.so
+          libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so, libgnutlsxx.so
+          /usr/lib/guile/2.0/guile-gnutls-v-2.so (任意)
         </seg>
         <seg>
           /usr/include/gnutls,
           /usr/share/gtk-doc/html/gnutls,
-          /usr/share/guile/site/gnutls
+          /usr/share/guile/site/gnutls (任意)
         </seg>
 @z
 

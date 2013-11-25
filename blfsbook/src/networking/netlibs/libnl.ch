@@ -109,8 +109,8 @@
       <option>--disable-cli</option>: Use this parameter if you
       don't want to install cli tools provided by the package.
 @y
-      <option>--disable-cli</option>: Use this parameter if you
-      don't want to install cli tools provided by the package.
+      <option>--disable-cli</option>:
+      本パッケージにより提供される cli ツールをインストールしたくない場合に指定します。
 @z
 
 @x
@@ -169,4 +169,17 @@
           /usr/include/libnl3,
           /usr/lib/libnl
         </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x libnl*-3.so
+            These libraries contain API functions used to access Netlink
+            interfaces in Linux kernel.
+@y
+            これらのライブラリは、Linux カーネルにおける Netlink にアクセスするための API 関数を提供します。
 @z

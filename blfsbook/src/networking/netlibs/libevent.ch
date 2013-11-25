@@ -94,6 +94,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (for API documentation)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (API ドキュメント生成のため)
+    </para>
+@z
+
+@x
       User Notes: <ulink url="&blfs-wiki;/libevent"/>
 @y
       &UserNotes;: <ulink url="&blfs-wiki;/libevent"/>
@@ -113,6 +125,13 @@
 @z
 
 @x
+      If you have <xref linkend="doxygen"/> installed and wish to build API
+      documentation, issue <command>doxygen Doxyfile</command>.
+@y
+      <xref linkend="doxygen"/> をインストールしていて API ドキュメントを生成したい場合は <command>doxygen Doxyfile</command> を実行します。
+@z
+
+@x
       To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
@@ -122,6 +141,14 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      If you built the API documentation, install it by issuing the following
+      commands as the <systemitem class="username">root</systemitem> user:
+@y
+      API ドキュメントを生成した場合は <systemitem
+      class="username">root</systemitem> ユーザーになって以下のコマンドを実行してインストールします。
 @z
 
 @x

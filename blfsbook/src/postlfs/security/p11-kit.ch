@@ -144,6 +144,15 @@
 @z
 
 @x
+      <option>--with-hash-impl=freebl</option>: Use this switch if you want to
+      use Freebl library from <application>NSS</application> for SHA1 and MD5
+      hashing.
+@y
+      <option>--with-hash-impl=freebl</option>:
+      SHA1 や MD5 のハッシングに <application>NSS</application> の Freebl ライブラリを利用したい場合に指定します。
+@z
+
+@x
       <option>--enable-doc</option>: Use this switch if you have installed
       <xref linkend="gtk-doc"/> and <xref linkend="libxslt"/> and wish to
       rebuild the documentation and generate manual pages.

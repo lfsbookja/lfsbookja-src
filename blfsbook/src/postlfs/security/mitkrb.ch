@@ -188,34 +188,6 @@
 @z
 
 @x
-      <option>--enable-dns-for-realm</option>: This switch allows
-      realms to be resolved using the DNS server.
-@y
-      <option>--enable-dns-for-realm</option>: This switch allows
-      realms to be resolved using the DNS server.
-@z
-
-@x
-      <option>--with-system-et</option>: This switch causes the build
-      to use the system-installed versions of the error-table support
-      software.
-@y
-      <option>--with-system-et</option>: This switch causes the build
-      to use the system-installed versions of the error-table support
-      software.
-@z
-
-@x
-      <option>--with-system-ss</option>: This switch causes the build
-      to use the system-installed versions of the subsystem command-line
-      interface software.
-@y
-      <option>--with-system-ss</option>: This switch causes the build
-      to use the system-installed versions of the subsystem command-line
-      interface software.
-@z
-
-@x
       <parameter>--localstatedir=/var/lib</parameter>: This parameter is
       used so that the Kerberos variable run-time data is located in
       <filename class="directory">/var/lib</filename> instead of
@@ -225,6 +197,34 @@
       used so that the Kerberos variable run-time data is located in
       <filename class="directory">/var/lib</filename> instead of
       <filename class="directory">/usr/var</filename>.
+@z
+
+@x
+      <parameter>--with-system-et</parameter>: This switch causes the build
+      to use the system-installed versions of the error-table support
+      software.
+@y
+      <parameter>--with-system-et</parameter>: This switch causes the build
+      to use the system-installed versions of the error-table support
+      software.
+@z
+
+@x
+      <parameter>--with-system-ss</parameter>: This switch causes the build
+      to use the system-installed versions of the subsystem command-line
+      interface software.
+@y
+      <parameter>--with-system-ss</parameter>: This switch causes the build
+      to use the system-installed versions of the subsystem command-line
+      interface software.
+@z
+
+@x
+      <parameter>--enable-dns-for-realm</parameter>: This switch allows
+      realms to be resolved using the DNS server.
+@y
+      <parameter>--enable-dns-for-realm</parameter>: This switch allows
+      realms to be resolved using the DNS server.
 @z
 
 @x
@@ -501,15 +501,15 @@
 
 @x
         <seg>
-          gss-client, gss-server, k5srvutil, kadmin, kadmin.local, 
-          kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist, 
-          kpasswd, kprop, kpropd, krb5-config, krb5kdc, krb5-send-pr, 
-          ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server, 
+          gss-client, gss-server, k5srvutil, kadmin, kadmin.local,
+          kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist,
+          kpasswd, kprop, kpropd, kproplog, krb5-config, krb5kdc, krb5-send-pr,
+          ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server,
           sserver, uuclient and uuserver
         </seg>
         <seg>
-          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
-          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
+          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so,
+          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so,
           libkrb5.so, libkrb5support.so, and libverto.so
         </seg>
         <seg>
@@ -517,22 +517,22 @@
           /usr/include/gssrpc,
           /usr/include/kadm5,
           /usr/include/krb5,
-          /usr/lib/krb5, 
+          /usr/lib/krb5,
           /usr/share/doc/krb5-&mitkrb-version;,
           /usr/share/examples/krb5 and
           /var/lib/krb5kdc
         </seg>
 @y
         <seg>
-          gss-client, gss-server, k5srvutil, kadmin, kadmin.local, 
-          kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist, 
-          kpasswd, kprop, kpropd, krb5-config, krb5kdc, krb5-send-pr, 
-          ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server, 
+          gss-client, gss-server, k5srvutil, kadmin, kadmin.local,
+          kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist,
+          kpasswd, kprop, kpropd, kproplog, krb5-config, krb5kdc, krb5-send-pr,
+          ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server,
           sserver, uuclient, uuserver
         </seg>
         <seg>
-          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
-          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
+          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so,
+          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so,
           libkrb5.so, libkrb5support.so, libverto.so
         </seg>
         <seg>
@@ -540,7 +540,7 @@
           /usr/include/gssrpc,
           /usr/include/kadm5,
           /usr/include/krb5,
-          /usr/lib/krb5, 
+          /usr/lib/krb5,
           /usr/share/doc/krb5-&mitkrb-version;,
           /usr/share/examples/krb5,
           /var/lib/krb5kdc

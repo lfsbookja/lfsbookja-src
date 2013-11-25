@@ -70,6 +70,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">WebKitGTK+ Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;WebKitGTK+&Dependencies2;</bridgehead>
@@ -175,9 +187,14 @@
 @z
 
 @x
-      This package does not have a working testsuite.
+      This package does not have a working testsuite. However, there is a
+      useable basic graphical web browser in the source directory,
+      <application>Programs/GtkLauncher</application>. If it fails, there is a
+      problem with the build.
 @y
       このパッケージには有効なテストスイートがありません。
+      しかしソースディレクトリ内には、単純なウェブブラウザー <application>Programs/GtkLauncher</application> が含まれています。
+      この起動に失敗したとしたら、ビルドに問題があることが分かります。
 @z
 
 @x
@@ -193,15 +210,22 @@
 @z
 
 @x
+      <command>sed ... Source/ThirdParty/ANGLE/src/compiler/glslang.y</command>:
+      This command corrects a problem caused by the most recent version of
+      Bison.
+@y
+      <command>sed ... Source/ThirdParty/ANGLE/src/compiler/glslang.y</command>:
+      このコマンドは、ほぼ最新版の Bison にて発生する問題を修正するものです。
+@z
+
+@x
       <parameter>--with-gtk=2.0 --disable-webkit2</parameter>: These parameters
       force <application>WebKitGTK+</application> to compile against
       <application>GTK+ 2</application>, even if
       <application>GTK+ 3</application> is also installed.
 @y
-      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>: These parameters
-      force <application>WebKitGTK+</application> to compile against
-      <application>GTK+ 2</application>, even if
-      <application>GTK+ 3</application> is also installed.
+      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>:
+      このパラメーターは、たとえ <application>GTK+ 3</application> がインストールされていても <application>GTK+ 2</application> により <application>WebKitGTK+</application> をビルドすることを指示します。
 @z
 
 @x
@@ -272,14 +296,13 @@
             contains core JavaScript API functions used by <command>jsc-1</command>
             and <filename class="libraryfile">libwebkitgtk-1.0.so</filename>.
 @y
-            contains core JavaScript API functions used by <command>jsc-1</command>
-            and <filename class="libraryfile">libwebkitgtk-1.0.so</filename>.
+            <command>jsc-1</command> と <filename
+            class="libraryfile">libwebkitgtk-1.0.so</filename> により利用されるコアな JavaScript API 関数を提供します。
 @z
 
 @x libwebkit-1.0.so
             contains the <application>WebKitGTK+</application> API functions for
             <application>GTK+ 2</application>.
 @y
-            contains the <application>WebKitGTK+</application> API functions for
-            <application>GTK+ 2</application>.
+            <application>GTK+ 2</application> に対応する <application>WebKitGTK+</application> API 関数を提供します。
 @z
