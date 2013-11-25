@@ -247,6 +247,15 @@
           </para>
 @z
 
+@x --with-mpfr-*
+          <para>These options enable the build system to correctly use the
+          in-tree copy of the MPFR sources.</para>
+@y
+          <para>
+          これらのオプションは、MPFR のソースコピーを適切に用いてシステムビルドを行うことを指示します。
+          </para>
+@z
+
 @x
     <para>Compile GCC by running:</para>
 @y

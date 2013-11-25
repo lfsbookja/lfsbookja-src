@@ -48,6 +48,56 @@
 @z
 
 @x
+      <para>2013-11-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to IPRoute2-3.12.0. Fixes
+          <ulink url="&lfs-ticket-root;3431">#3431</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.12.1. Fixes
+          <ulink url="&lfs-ticket-root;3428">#3428</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Tar-1.27.1. Fixes
+          <ulink url="&lfs-ticket-root;3425">#3425</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Bison-3.0.1. Fixes
+          <ulink url="&lfs-ticket-root;3423">#3423</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Check-0.9.11. Fixes
+          <ulink url="&lfs-ticket-root;3422">#3422</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-11-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.12.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3431">#3431</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.12.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3428">#3428</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tar-1.27.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3425">#3425</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bison-3.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3423">#3423</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Check-0.9.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;3422">#3422</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-11-05</para>
       <itemizedlist>
         <listitem>
