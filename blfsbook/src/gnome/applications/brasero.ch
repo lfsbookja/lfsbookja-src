@@ -204,8 +204,10 @@
         </seg>
         <seg>
           libbrasero-burn3.so, 
-          libbrasero-media3.so, and
-          libbrasero-utils3.so
+          libbrasero-media3.so,
+          libbrasero-utils3.so,
+          several under /usr/lib/brasero3/plugins/, and
+          /usr/lib/nautilus/extensions-3.0/libnautilus-brasero-extension.so
         </seg>
         <seg>
           /usr/include/brasero3,
@@ -221,7 +223,9 @@
         <seg>
           libbrasero-burn3.so, 
           libbrasero-media3.so,
-          libbrasero-utils3.so
+          libbrasero-utils3.so,
+          /usr/lib/brasero3/plugins/ 配下に数種のライブラリ,
+          /usr/lib/nautilus/extensions-3.0/libnautilus-brasero-extension.so
         </seg>
         <seg>
           /usr/include/brasero3,
