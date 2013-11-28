@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY glibmm-buildsize     "151 MB (additional 18 MB to run the test suite)">
+  <!ENTITY glibmm-time          "1.0 SBU (additional 0.4 SBU to run the test suite)">
+@y
+  <!ENTITY glibmm-buildsize     "151 MB (テストスイート実行時はさらに 18 MB)">
+  <!ENTITY glibmm-time          "1.0 SBU (テストスイート実行時はさらに 0.4 SBU)">
+@z
+
+@x
     <title>Introduction to GLibmm</title>
 @y
     <title>&IntroductionTo1;GLibmm&IntroductionTo2;</title>
