@@ -157,14 +157,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+	<seg>
+	  None
+	</seg>
         <seg>
           libatk-1.0.so
         </seg>
@@ -173,6 +178,9 @@
           /usr/share/gtk-doc/html/atk
         </seg>
 @y
+	<seg>
+	  &None;
+	</seg>
         <seg>
           libatk-1.0.so
         </seg>

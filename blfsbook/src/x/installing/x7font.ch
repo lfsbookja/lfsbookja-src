@@ -87,6 +87,12 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Xorg Fonts Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Xorg Fonts&Dependencies2;</bridgehead>
+@z
+
+@x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="xcursor-themes"/>

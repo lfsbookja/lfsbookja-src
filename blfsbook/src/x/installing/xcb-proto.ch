@@ -78,6 +78,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch (if compiling against <xref linkend="python3"/>):
+@y
+          必須のパッチ (<xref linkend="python3"/> をリンクしてビルドする場合):
+@z
+
+@x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="python2"/> or
@@ -113,6 +125,15 @@
     <title>Installation of xcb-proto</title>
 @y
     <title>&InstallationOf1;xcb-proto&InstallationOf2;</title>
+@z
+
+@x
+    <para>If you are compiling against <xref linkend="python3"/>, use the
+    following commands:</para>
+@y
+    <para>
+    <xref linkend="python3"/> を用いてビルドを行う場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x

@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY at-spi2-atk-time          "less than 0.1 SBU">
+@y
+  <!ENTITY at-spi2-atk-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to At-Spi2 Atk</title>
 @y
     <title>&IntroductionTo1;At-Spi2 Atk&IntroductionTo2;</title>
@@ -23,8 +29,7 @@
       The <application>At-Spi2 Atk</application> package contains a library
       that bridges <application>ATK</application> to At-Spi2 D-Bus service.
 @y
-      The <application>At-Spi2 Atk</application> package contains a library
-      that bridges <application>ATK</application> to At-Spi2 D-Bus service.
+      <application>At-Spi2 Atk</application> パッケージは、<application>ATK</application> から At-Spi2 D-Bus サービスへのブリッジとなるライブラリを提供します。
 @z
 
 @x
@@ -129,14 +134,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+	<seg>
+	  None
+	</seg>
         <seg>
           libatk-bridge.so and libatk-bridge-2.0.so
         </seg>
@@ -144,6 +154,9 @@
           /usr/include/at-spi2-atk
         </seg>
 @y
+	<seg>
+	  &None;
+	</seg>
         <seg>
           libatk-bridge.so, libatk-bridge-2.0.so
         </seg>
@@ -161,13 +174,12 @@
 @x libatk-bridge.so
             is the Accessibility Toolkit <application>GTK+</application> module.
 @y
-            is the Accessibility Toolkit <application>GTK+</application> module.
+            <application>GTK+</application> モジュールであるアクセサビリティーツールキット (Accessibility Toolkit) です。
 @z
 
 @x libatk-bridge-2.0.so
             Contains the common functions used by <application>GTK+</application>
             Accessibility Toolkit Bridge.
 @y
-            Contains the common functions used by <application>GTK+</application>
-            Accessibility Toolkit Bridge.
+            <application>GTK+</application> アクセサビリティーツールキットのブリッジとして用いられる共通関数を提供します。
 @z

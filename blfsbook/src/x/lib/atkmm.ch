@@ -126,14 +126,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+	<seg>
+	  None
+	</seg>
         <seg>
           libatkmm-1.6.so
         </seg>
@@ -144,6 +149,9 @@
           /usr/share/doc/atkmm-1.6
         </seg>
 @y
+	<seg>
+	  &None;
+	</seg>
         <seg>
           libatkmm-1.6.so
         </seg>

@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY mesalib-buildsize     "384 MB (additional 1 MB for the docs)">
+@y
+  <!ENTITY mesalib-buildsize     "384 MB (ドキュメントインストール時はさらに 1 MB)">
+@z
+
+@x
     <title>Introduction to MesaLib</title>
 @y
     <title>&IntroductionTo1;MesaLib&IntroductionTo2;</title>
@@ -157,16 +163,16 @@
       <xref linkend="libvdpau"/> (to build VDPAU drivers),
       <xref linkend="llvm"/> (required for radeon 3d drivers and also for
       llvmpipe which is intended to be the fastest of the three sw rasterizers,
-      see <ulink url="http://www.mesa3d.org/faq.html#part3"></ulink>
+      see <ulink url="http://www.mesa3d.org/faq.html#part3"></ulink> )
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="elfutils"/> (required for radeon 3d drivers),
-      <xref linkend="libvdpau"/> (to build VDPAU drivers),
+      <xref linkend="elfutils"/> (radeon 3d ドライバーに必要),
+      <xref linkend="libvdpau"/> (VDPAU ドライバーに必要),
       <xref linkend="llvm"/> (required for radeon 3d drivers and also for
       llvmpipe which is intended to be the fastest of the three sw rasterizers,
-      see <ulink url="http://www.mesa3d.org/faq.html#part3"></ulink>
+      see <ulink url="http://www.mesa3d.org/faq.html#part3"></ulink> )
     </para>
 @z
 
@@ -300,14 +306,91 @@
 @z
 
 @x
+      <parameter>CFLAGS="-O2" CXXFLAGS="-O2"</parameter>: By default,
+      <application>Autoconf</application> sets CFLAGS and CXXFLAGS to
+      "-g -O2". That results in binaries and libraries being built with
+      debugging symbols which make them bigger. Override the default
+      flags to omit -g compiler flag so the final libraries are smaller.
+@y
+      <parameter>CFLAGS="-O2" CXXFLAGS="-O2"</parameter>:
+      デフォルトにおいて <application>Autoconf</application> は CFLAGS および CXXFLAGS を "-g -O2" に設定します。
+      これに従うと、実行モジュールやライブラリにはデバッグシンボルが含まれてビルドされ、それはファイルサイズを大きくします。
+      そこでこのデフォルトフラグを上書きして、コンパイラーフラグ -g を取り除き、ファイルサイズを小さくします。
+@z
+
+@x
       <option>--enable-texture-float</option>: This switch enables
       floating-point textures and render buffers. Please consult
       <filename>docs/patents.txt</filename> to see if there are
       any legal issues if you use this feature.
 @y
       <option>--enable-texture-float</option>:
-      このスイッチは浮動小数点によるテクスチャーとレンダーバッファーを有効にします。
+      本スイッチは浮動小数点によるテクスチャーとレンダーバッファーを有効にします。
       本機能を利用する際の法的な問題に関しては <filename>docs/patents.txt</filename> を参照してください。
+@z
+
+@x
+      <option>--enable-gles1</option>: This switch enables support for
+      OpenGL ES 1.x API.
+@y
+      <option>--enable-gles1</option>:
+      本スイッチは OpenGL ES 1.x API へのサポートを有効にします。
+@z
+
+@x
+      <option>--enable-gles2</option>: This switch enables support for
+      OpenGL ES 2.x API.
+@y
+      <option>--enable-gles2</option>:
+      本スイッチは OpenGL ES 2.x API へのサポートを有効にします。
+@z
+
+@x
+      <option>--enable-openvg</option>: This switch enables support for
+      OpenVG API.
+@y
+      <option>--enable-openvg</option>:
+      本スイッチは OpenVG API へのサポートを有効にします。
+@z
+
+@x
+      <option>--enable-osmesa</option>: This switch enables building of
+      the <filename class="libraryfile">libOSMesa</filename> library.
+@y
+      <option>--enable-osmesa</option>:
+      本スイッチは <filename class="libraryfile">libOSMesa</filename> ライブラリをビルドすることを指示します。
+@z
+
+@x
+      <option>--enable-xa</option>: This switch enables building of the
+      XA X Acceleration API (Required for VMware 3D Driver).
+@y
+      <option>--enable-xa</option>:
+      本スイッチは XA X Acceleration API ライブラリ (VMware 3D ドライバーに必要) をビルドすることを指示します。
+@z
+
+@x
+      <option>--enable-gbm</option>: This switch enables building of the
+      <application>Mesa</application> Graphics Buffer Manager library.
+@y
+      <option>--enable-gbm</option>:
+      本スイッチは <application>Mesa</application> グラフィックバッファーマネージャーライブラリをビルドすることを指示します。
+@z
+
+@x
+      <option>--enable-gallium-egl</option>: This switch enables optional
+      EGL state tracker for Gallium.
+@y
+      <option>--enable-gallium-egl</option>:
+      本スイッチは Gallium に対する EGL ステートトラッカーを有効にします。
+@z
+
+@x
+      <option>--enable-gallium-gbm</option>: This switch enables optional
+      GBM state tracker for Gallium.
+@y
+      <option>--enable-gallium-gbm</option>:
+      本スイッチは Gallium に対する GBM ステートトラッカーを有効にします。
 @z
 
 @x
@@ -346,8 +429,9 @@
           $XORG_PREFIX/lib/dri,
           $XORG_PREFIX/lib/egl,
           $XORG_PREFIX/lib/gallium-pipe,
-          $XORG_PREFIX/lib/gbm and
-          $XORG_PREFIX/lib/vdpau
+          $XORG_PREFIX/lib/gbm,
+          $XORG_PREFIX/lib/vdpau and
+          /usr/share/doc/MesaLib-&mesalib-version; (optional)
         </seg>
 @y
         <seg>
@@ -370,7 +454,8 @@
           $XORG_PREFIX/lib/egl,
           $XORG_PREFIX/lib/gallium-pipe,
           $XORG_PREFIX/lib/gbm,
-          $XORG_PREFIX/lib/vdpau
+          $XORG_PREFIX/lib/vdpau,
+          /usr/share/doc/MesaLib-&mesalib-version; (任意)
         </seg>
 @z
 

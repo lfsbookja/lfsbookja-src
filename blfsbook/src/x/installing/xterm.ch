@@ -148,10 +148,11 @@
     system terminfo database when the installation prefix is not
     <filename class="directory">/usr</filename>.</para>
 @y
-    <para><parameter>TERMINFO=/usr/share/terminfo</parameter>: This ensures
-    that the <command>xterm</command> terminfo files are installed to the
-    system terminfo database when the installation prefix is not
-    <filename class="directory">/usr</filename>.</para>
+    <para>
+    <parameter>TERMINFO=/usr/share/terminfo</parameter>:
+    <filename class="directory">/usr</filename> 以外にインストールしている場合に、<command>xterm</command> の terminfo
+    ファイルをシステム terminfo データベースにインストールするようにします。
+    </para>
 @z
 
 @x
@@ -160,9 +161,8 @@
     directory.</para>
 @y
     <para>
-    <parameter>--with-app-defaults=...</parameter>: Sets the location
-    for the <filename class="directory">app-defaults</filename>
-    directory.
+    <parameter>--with-app-defaults=...</parameter>:
+    <filename class="directory">app-defaults</filename> ディレクトリを設定します。
     </para>
 @z
 
@@ -172,9 +172,8 @@
     <application>xterm</application>.</para>
 @y
     <para>
-    <command>make install-ti</command>: This command installs corrected
-    terminfo description files for use with
-    <application>xterm</application>.
+    <command>make install-ti</command>:
+    本コマンドは <application>xterm</application> にて用いられる terminfo 記述ファイルを適正なものにします。
     </para>
 @z
 
@@ -191,10 +190,9 @@
     <filename>$XORG_PREFIX/share/X11/app-defaults/Xterm</filename> file.</para>
 @y
     <para>
-    There are two ways to configure xterm.  You can add X resource
-    definitions to the user's <filename>~/.Xresources</filename> file, or
-    add them to the system-wide
-    <filename>$XORG_PREFIX/share/X11/app-defaults/Xterm</filename> file.
+    xterm の設定方法は二通りあります。
+    X リソースの定義はユーザー向けとして <filename>~/.Xresources</filename> ファイルに設定することができます。
+    またはシステムワイドな <filename>$XORG_PREFIX/share/X11/app-defaults/Xterm</filename> ファイルに設定することもできます。
     </para>
 @z
 
@@ -205,10 +203,9 @@
     <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
-    In order for xterm to follow the locale settings in the environment,
-    use TrueType fonts, and follow the Linux convention about the code sent by
-    the Backspace key, add the following definitions as the
-    <systemitem class="username">root</systemitem> user:
+    xterm が適切にロケール設定に従うように、フォントは TrueType を用います。
+    バックスペースキーの送信コードは Linux の慣例に従います。
+    <systemitem class="username">root</systemitem> ユーザーになって以下の定義を設定します。
     </para>
 @z
 
@@ -220,14 +217,22 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>koi8rxterm, resize, uxterm, and xterm</seg>
+        <seg>None</seg>
+        <seg>None</seg>
 @y
         <seg>koi8rxterm, resize, uxterm, xterm</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -239,7 +244,9 @@
 @x koi8rxterm
           <para>is a wrapper script to set up xterm with a KOI8-R locale.</para>
 @y
-          <para>is a wrapper script to set up xterm with a KOI8-R locale.</para>
+          <para>
+          xterm に対して KOI8-R ロケールを設定するためのラッパースクリプト。
+          </para>
 @z
 
 @x resize
@@ -248,9 +255,7 @@
           window.</para>
 @y
           <para>
-          prints a shell command for setting the TERM and TERMCAP
-          environment  variables to indicate the current size of xterm
-          window.
+          xterm ウィンドウの現サイズを示す環境変数 TERM, TERMCAP を設定するためのシェルコマンドを表示します。
           </para>
 @z
 
@@ -258,8 +263,9 @@
           <para>is a wrapper script that modifies the current locale to use UTF-8
           and starts xterm with the proper settings.</para>
 @y
-          <para>is a wrapper script that modifies the current locale to use UTF-8
-          and starts xterm with the proper settings.</para>
+          <para>
+          ロケールを UTF-8 に変更して xterm を起動するためのラッパースクリプト。
+          </para>
 @z
 
 @x xterm
