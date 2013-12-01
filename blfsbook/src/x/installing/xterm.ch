@@ -130,13 +130,13 @@
 
 @x
     <para><command>sed -i ... termcap</command>,
-    <command>echo ... >>terminfo</command>: These commands modify the terminal
+    <command>echo ... >> terminfo</command>: These commands modify the terminal
     description, so that the Backspace key is expected to send the character
     with ASCII code 127, for consistency with the Linux console.</para>
 @y
     <para>
     <command>sed -i ... termcap</command>,
-    <command>echo ... >>terminfo</command>:
+    <command>echo ... >> terminfo</command>:
     このコマンドは端末記述 (terminal description) を修正します。
     これはバックスペースキーが ASCII コードの 127 を送信するようにするもので Linux コンソールとして一貫したものとします。
     </para>
@@ -145,13 +145,11 @@
 @x
     <para><parameter>TERMINFO=/usr/share/terminfo</parameter>: This ensures
     that the <command>xterm</command> terminfo files are installed to the
-    system terminfo database when the installation prefix is not
-    <filename class="directory">/usr</filename>.</para>
+    system terminfo database.</para>
 @y
     <para>
     <parameter>TERMINFO=/usr/share/terminfo</parameter>:
-    <filename class="directory">/usr</filename> 以外にインストールしている場合に、<command>xterm</command> の terminfo
-    ファイルをシステム terminfo データベースにインストールするようにします。
+    <command>xterm</command> の terminfo ファイルをシステム terminfo データベースにインストールするようにします。
     </para>
 @z
 

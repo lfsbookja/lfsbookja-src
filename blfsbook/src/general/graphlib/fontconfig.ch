@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY fontconfig-buildsize     "13 MB (plus 4.2 MB installed)">
+@y
+  <!ENTITY fontconfig-buildsize     "13 MB (インストールによりさらに 4.2 MB)">
+@z
+
+@x
     <title>Introduction to Fontconfig</title>
 @y
     <title>&IntroductionTo1;Fontconfig&IntroductionTo2;</title>

@@ -195,6 +195,5 @@ Download (HTTP): <ulink url="&libarchive-download-http;"/>
             is a library that can create and read several streaming
             archive formats.
 @y
-            is a library that can create and read several streaming
-            archive formats.
+            数々のストリーミングアーカイブ形式を生成、読み込みを行うライブラリを提供します。
 @z

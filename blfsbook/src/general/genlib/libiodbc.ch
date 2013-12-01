@@ -71,6 +71,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">libiodbc Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libiodbc&Dependencies2;</bridgehead>
@@ -133,6 +145,26 @@
 @y
       <parameter>--with-iodbc-inidir=/etc/iodbc</parameter>:
       <application>libiodbc</application> は設定ファイルをこのディレクトリにインストールします。
+@z
+
+@x
+      <parameter>--includedir=/usr/include/iodbc</parameter>: This installs the
+      interface headers to a private directory to avoid a conflict with headers
+      installed by <application>unixODBC</application>.
+@y
+      <parameter>--includedir=/usr/include/iodbc</parameter>:
+      インターフェースヘッダーファイルを独自のディレクトリにインストールすることを指示します。
+      こうするのは <application>unixODBC</application> がインストールするヘッダーファイルとの衝突を避けるものです。
+@z
+
+@x
+      <parameter>--disable-libodbc</parameter>: This prevents the installation
+      of the <filename class="symlink">libodbc.so</filename> symbolic link to
+      avoid a conflict with <application>unixODBC</application>.
+@y
+      <parameter>--disable-libodbc</parameter>:
+      <filename class="symlink">libodbc.so</filename> に対するシンボリックリンクをインストールしないようにします。
+      <application>unixODBC</application> との衝突を避けるためです。
 @z
 
 @x

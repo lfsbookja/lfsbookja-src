@@ -104,9 +104,7 @@
       <xref linkend="check"/>,
       <xref linkend="curl"/>,
       <xref linkend="mesalib"/>, and
-      <xref linkend="cyrus-sasl"/>.
-      Note that this optional dependencies list is not comprehensive.  See the
-      output of <command>./configure --help</command> for a more complete list.
+      <xref linkend="cyrus-sasl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -116,9 +114,7 @@
       <xref linkend="check"/>,
       <xref linkend="curl"/>,
       <xref linkend="mesalib"/>,
-      <xref linkend="cyrus-sasl"/> 
-      ここに示すオプションパッケージの一覧は十分ではありません。
-      正確な一覧については <command>./configure --help</command> の出力結果を確認してください。
+      <xref linkend="cyrus-sasl"/>
     </para>
 @z
 
@@ -173,15 +169,15 @@
 @z
 
 @x
-<screen><literal>Virtualization: Y
-  Kernel-based Virtual Machine (KVM) support: M or Y
-  KVM for Intel processors support:           M or Y
-  KVM for AMD processors support:             M or Y</literal></screen>
+<screen><literal>Virtualization:  ---&gt;
+  Kernel-based Virtual Machine (KVM) support: Y or M
+    KVM for Intel processors support: Y or M
+    KVM for AMD processors support: Y or M</literal></screen>
 @y
-<screen><literal>Virtualization: Y
-  Kernel-based Virtual Machine (KVM) support: M または Y
-  KVM for Intel processors support:           M または Y
-  KVM for AMD processors support:             M または Y</literal></screen>
+<screen><literal>Virtualization:  ---&gt;
+  Kernel-based Virtual Machine (KVM) support: Y または M
+    KVM for Intel processors support: Y または M
+    KVM for AMD processors support: Y または M</literal></screen>
 @z
 
 @x
@@ -195,13 +191,12 @@
 @z
 
 @x
-    <para>For networking, check that the settings CONFIG_BRIDGE, CONFIG_STP,
-    CONFIG_TUN are enabled and <xref linkend='bridgeutils'/> is
-    installed.</para>
+    <para>For networking, check that <xref linkend='bridgeutils'/> is installed
+    and the following options in the kernel configuration are enabled:</para>
 @y
     <para>
-    ネットワーク接続にて必要な CONFIG_BRIDGE, CONFIG_STP, CONFIG_TUN が有効であることを確認してください。
-    また <xref linkend='bridgeutils'/> がインストールされていることを確認してください。
+    ネットワーク接続のために、<xref linkend='bridgeutils'/> がインストールされていることを確認してください。
+    またカーネルオプションとして以下が有効であることを確認してください。
     </para>
 @z
 
@@ -264,15 +259,27 @@
 @z
 
 @x
-    <para><parameter>--target-list=x86_64-softmmu</parameter>: This option
+    <para><parameter>--target-list=x86_64-softmmu</parameter>: This switch
     limits the build target to the x86_64 architecture.  For other 
     hardware emulation see the --target-list list in <command>configure</command>'s
     help output.  Omitting this option will build all architectures.</para>
 @y
-    <para><parameter>--target-list=x86_64-softmmu</parameter>: This option
+    <para><parameter>--target-list=x86_64-softmmu</parameter>: This switch
     limits the build target to the x86_64 architecture.  For other 
     hardware emulation see the --target-list list in <command>configure</command>'s
     help output.  Omitting this option will build all architectures.</para>
+@z
+
+@x
+      <option>--audio-drv-list=alsa</option>: This switch sets the audio driver
+      to ALSA. For other drivers see the --audio-drv-list list in
+      <command>configure</command>'s help output. The default audio driver is
+      OSS.
+@y
+      <option>--audio-drv-list=alsa</option>: This switch sets the audio driver
+      to ALSA. For other drivers see the --audio-drv-list list in
+      <command>configure</command>'s help output. The default audio driver is
+      OSS.
 @z
 
 @x
@@ -464,8 +471,8 @@ If a connection, such as ssh, from the local network to the
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -474,13 +481,41 @@ If a connection, such as ssh, from the local network to the
 @z
 
 @x
-        <seg>qemu-ga, qemu-img, qemu-io, qemu-nbd, qemu-system-x86_64</seg>
-        <seg>None</seg>
-        <seg>/etc/qemu, /usr/share/qemu, /usr/share/doc/qemu</seg>
+        <seg>
+          qemu-ga,
+          qemu-img,
+          qemu-io,
+          qemu-nbd,
+          qemu-system-x86_64,
+          virtfs-proxy-helper, and
+          vscclient
+        </seg>
+        <seg>libcacard.so</seg>
+        <seg>
+          /etc/qemu,
+          /usr/include/cacard,
+          /usr/lib/qemu,
+          /usr/share/qemu, and
+          /usr/share/doc/qemu-&qemu-version;
+        </seg>
 @y
-        <seg>qemu-ga, qemu-img, qemu-io, qemu-nbd, qemu-system-x86_64</seg>
-        <seg>&None;s</seg>
-        <seg>/etc/qemu, /usr/share/qemu, /usr/share/doc/qemu</seg>
+        <seg>
+          qemu-ga,
+          qemu-img,
+          qemu-io,
+          qemu-nbd,
+          qemu-system-x86_64,
+          virtfs-proxy-helper,
+          vscclient
+        </seg>
+        <seg>libcacard.so</seg>
+        <seg>
+          /etc/qemu,
+          /usr/include/cacard,
+          /usr/lib/qemu,
+          /usr/share/qemu,
+          /usr/share/doc/qemu-&qemu-version;
+        </seg>
 @z
 
 @x

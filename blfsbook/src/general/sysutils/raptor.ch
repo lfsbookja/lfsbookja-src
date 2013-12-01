@@ -143,11 +143,11 @@
 @z
 
 @x
-      <parameter>--with-icu-config=/usr/bin/icu-config</parameter>: Use
+      <option>--with-icu-config=/usr/bin/icu-config</option>: Use
       this switch if you have installed <xref linkend="icu"/> and wish
       to build <application>Raptor</application> with its support.
 @y
-      <parameter>--with-icu-config=/usr/bin/icu-config</parameter>:
+      <option>--with-icu-config=/usr/bin/icu-config</option>:
       <xref linkend="icu"/> をインストールしていて、<xref linkend="icu"/> サポートをビルドしたい場合に本スイッチを指定します。
 @z
 

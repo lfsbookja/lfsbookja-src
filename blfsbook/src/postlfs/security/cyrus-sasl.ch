@@ -132,7 +132,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink> and
+      <ulink url="ftp://ftp.pdc.kth.se/pub/krb/src/">krb4</ulink> and
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>
     </para>
 @y
@@ -145,7 +145,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
+      <ulink url="ftp://ftp.pdc.kth.se/pub/krb/src/">krb4</ulink>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>
     </para>
 @z

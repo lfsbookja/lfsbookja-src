@@ -36,15 +36,10 @@
       was designed to be flexible enough to meet the demands of many
       transaction based environments with non-persistent servers.
 @y
-      The <application>libassuan</application> package contains an inter
-      process communication library used by some of the other
-      <application>GnuPG</application> related packages.
-      <application>libassuan</application>'s primary use is to allow a
-      client to interact with a non-persistent server.
-      <application>libassuan</application> is not, however, limited to
-      use with <application>GnuPG</application> servers and clients. It
-      was designed to be flexible enough to meet the demands of many
-      transaction based environments with non-persistent servers.
+      <application>libassuan</application> パッケージは、<application>GnuPG</application> 関連パッケージにて利用されるプロセス間通信ライブラリを提供します。
+      <application>libassuan</application> の主目的は、非永続的な (non-persistent) サーバーへのクライアント接続を可能とすることです。
+      ただし <application>libassuan</application> は、<application>GnuPG</application> サーバーおよびクライアントと共に利用することに対しての制限はありません。
+      非永続的なサーバー環境に基づく多くのトランザクション要求に、柔軟に対応できるように設計されています。
 @z
 
 @x
@@ -143,9 +138,8 @@
       <xref linkend="texlive"/> installed, then issue
       the following command:
 @y
-      If you wish to build documentation, you must have
-      <xref linkend="texlive"/> installed, then issue
-      the following command:
+      ドキュメントをビルドする場合は、<xref linkend="texlive"/> をインストールしておく必要があります。
+      その上で以下のコマンドを実行します。
 @z
 
 @x
@@ -165,9 +159,8 @@
       following commands as the
       <systemitem class="username">root</systemitem> user:
 @y
-      If you built the documentation, install it by running the
-      following commands as the
-      <systemitem class="username">root</systemitem> user:
+      ドキュメントをビルドした場合は、<systemitem
+       class="username">root</systemitem> ユーザーになり以下のコマンドを実行することでインストールします。
 @z
 
 @x
@@ -218,6 +211,5 @@
             is an inter process communication library which
             implements the Assuan protocol.
 @y
-            is an inter process communication library which
-            implements the Assuan protocol.
+            Assuan プロトコルを実装したプロセス間通信ライブラリ。
 @z
