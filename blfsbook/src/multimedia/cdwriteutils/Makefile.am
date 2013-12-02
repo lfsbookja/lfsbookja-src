@@ -13,7 +13,8 @@ CHANGE_FILES = \
 	k3b.ch          \
 	libburn.ch      \
 	libisoburn.ch   \
-	libisofs.ch
+	libisofs.ch     \
+	simpleburn.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -35,3 +36,4 @@ k3b.xml:          $(BOOKdir)/$@ $(srcdir)/k3b.ch
 libburn.xml:      $(BOOKdir)/$@ $(srcdir)/libburn.ch
 libisoburn.xml:   $(BOOKdir)/$@ $(srcdir)/libisoburn.ch
 libisofs.xml:     $(BOOKdir)/$@ $(srcdir)/libisofs.ch
+simpleburn.xml:   $(BOOKdir)/$@ $(srcdir)/simpleburn.ch

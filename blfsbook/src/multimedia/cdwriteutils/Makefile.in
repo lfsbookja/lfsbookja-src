@@ -190,7 +190,8 @@ CHANGE_FILES = \
 	k3b.ch          \
 	libburn.ch      \
 	libisoburn.ch   \
-	libisofs.ch
+	libisofs.ch     \
+	simpleburn.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -394,6 +395,7 @@ k3b.xml:          $(BOOKdir)/$@ $(srcdir)/k3b.ch
 libburn.xml:      $(BOOKdir)/$@ $(srcdir)/libburn.ch
 libisoburn.xml:   $(BOOKdir)/$@ $(srcdir)/libisoburn.ch
 libisofs.xml:     $(BOOKdir)/$@ $(srcdir)/libisofs.ch
+simpleburn.xml:   $(BOOKdir)/$@ $(srcdir)/simpleburn.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
