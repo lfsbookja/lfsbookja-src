@@ -383,9 +383,9 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-sane.ch.xml:     $(BOOKdir)/$@ $(srcdir)/sane.ch.ch
-scanning.ch.xml: $(BOOKdir)/$@ $(srcdir)/scanning.ch.ch
-xsane.ch.xml:    $(BOOKdir)/$@ $(srcdir)/xsane.ch.ch
+sane.xml:     $(BOOKdir)/$@ $(srcdir)/sane.ch
+scanning.xml: $(BOOKdir)/$@ $(srcdir)/scanning.ch
+xsane.xml:    $(BOOKdir)/$@ $(srcdir)/xsane.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

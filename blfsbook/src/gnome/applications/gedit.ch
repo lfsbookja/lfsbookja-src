@@ -23,8 +23,7 @@
       The <application>Gedit</application> package contains a lightweight
       UTF-8 text editor for the <application>GNOME</application> Desktop.
 @y
-      The <application>Gedit</application> package contains a lightweight
-      UTF-8 text editor for the <application>GNOME</application> Desktop.
+      <application>Gedit</application> パッケージは <application>GNOME</application> デスクトップでの軽量な UTF-8 テキストエディターを提供します。
 @z
 
 @x
@@ -172,9 +171,9 @@
       spell-checking capability. It is required if
       <application>Enchant</application> is not installed.
 @y
-      <option>--disable-spell</option>: Use this switch to disable
-      spell-checking capability. It is required if
-      <application>Enchant</application> is not installed.
+      <option>--disable-spell</option>:
+      本スイッチを指定することで、スペルチェック機能を無効にします。
+      <application>Enchant</application> をインストールしていない場合はこの指定が必要です。
 @z
 
 @x
@@ -233,6 +232,5 @@
             is a lightweight text editor integrated with the
             <application>GNOME</application> Desktop.
 @y
-            is a lightweight text editor integrated with the
-            <application>GNOME</application> Desktop.
+            <application>GNOME</application> デスクトップにて利用される軽量なテキストエディターです。
 @z

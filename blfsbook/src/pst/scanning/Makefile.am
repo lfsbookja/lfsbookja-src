@@ -24,6 +24,6 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-sane.ch.xml:     $(BOOKdir)/$@ $(srcdir)/sane.ch.ch
-scanning.ch.xml: $(BOOKdir)/$@ $(srcdir)/scanning.ch.ch
-xsane.ch.xml:    $(BOOKdir)/$@ $(srcdir)/xsane.ch.ch
+sane.xml:     $(BOOKdir)/$@ $(srcdir)/sane.ch
+scanning.xml: $(BOOKdir)/$@ $(srcdir)/scanning.ch
+xsane.xml:    $(BOOKdir)/$@ $(srcdir)/xsane.ch

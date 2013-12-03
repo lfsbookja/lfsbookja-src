@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY cmake-buildsize     "247 MB (additional 176 MB for tests)">
+  <!ENTITY cmake-time          "0.9 SBU (additional 5.5 SBU for tests)">
+@y
+  <!ENTITY cmake-buildsize     "247 MB (テスト実行時はさらに 176 MB)">
+  <!ENTITY cmake-time          "0.9 SBU (テスト実行時はさらに 5.5 SBU)">
+@z
+
+@x
     <title>Introduction to CMake</title>
 @y
     <title>&IntroductionTo1;CMake&IntroductionTo2;</title>
@@ -29,10 +37,8 @@
 @y
       <application>CMake</application> パッケージは Makefile を生成するための最新のツールセットを提供します。
       これは自動生成される <command>configure</command> スクリプトに続けて利用します。
-      and aims to be platform-
-      and compiler-independent. A significant user of 
-      <application>CMake</application> is <application>KDE</application> since 
-      version 4.
+      こうすることでプラットフォームやコンパイラーには依存しないスクリプトを生成します。
+      <application>CMake</application> を活用している代表例が、バージョン 4 以降の <application>KDE</application> です。
 @z
 
 @x
@@ -75,6 +81,18 @@
           Estimated build time: &cmake-time;
 @y
           &Estimatedbuildtime;: &cmake-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
 @z
 
 @x
@@ -163,7 +181,7 @@
       installed on the system.
 @y
       <parameter>--system-libs</parameter>:
-      このオプションは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application>, <application>libarchive</application> をリンクすることを指示します。
+      本スイッチは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application>, <application>libarchive</application> をリンクすることを指示します。
 @z
 
 @x
@@ -171,9 +189,8 @@
       <application>Qt</application>-based  GUI for
       <application>CMake</application>.
 @y
-      <option>--qt-gui</option>: This switch enables building of the
-      <application>Qt</application>-based  GUI for
-      <application>CMake</application>.
+      <option>--qt-gui</option>:
+      本スイッチは <application>CMake</application> の <application>Qt</application>-ベースの GUI プログラムを生成することを指示します。
 @z
 
 @x
@@ -239,8 +256,7 @@
             is the <application>Qt</application>-based frontent to 
             <command>cmake</command>.
 @y
-            is the <application>Qt</application>-based frontent to 
-            <command>cmake</command>.
+            <command>cmake</command> の <application>Qt</application>-ベースのフロントエンドです。
 @z
 
 @x cpack

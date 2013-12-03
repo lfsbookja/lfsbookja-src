@@ -15,12 +15,12 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "December 1st, &year;">
+<!ENTITY releasedate  "December 3rd, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20131202">
-<!ENTITY jratio       "54.0 &percnt;">
+<!ENTITY jversion     "20131203">
+<!ENTITY jratio       "55.6 &percnt;">
 @z
 
 @x
@@ -36,6 +36,7 @@
 <!ENTITY UserNotes            "ユーザー情報">
 <!ENTITY AdditionalDownloads  "追加のダウンロード">
 <!ENTITY notTestSuite         "このパッケージにテストスイートはありません。">
+<!ENTITY notParallelBuild     "本パッケージは並行ビルドがサポートされていません。">
 <!ENTITY ConfigFiles          "設定ファイル">
 <!ENTITY ConfigInfo           "設定情報">
 

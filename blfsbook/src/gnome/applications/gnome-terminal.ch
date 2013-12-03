@@ -124,6 +124,34 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--with-nautilus-extension</option>: This switch enables
+      building of the <application>Nautilus</application> extension.
+      Remove it if you don't have <application>Nautilus</application>
+      installed.
+@y
+      <option>--with-nautilus-extension</option>:
+      本スイッチは <application>Nautilus</application> 拡張をビルドすることを指示します。
+      <application>Nautilus</application> をインストールしていない場合は、本スイッチを取り除いてください。
+@z
+
+@x
+      <option>--disable-migration</option>: This switch disables
+      building of the <application>GNOME Terminal</application>
+      <application>GConf</application> migration tool which is
+      not necessary for BLFS.
+@y
+      <option>--disable-migration</option>:
+      本スイッチは <application>GNOME Terminal</application> の <application>GConf</application> 互換ツールをビルドしないことを指示します。
+      これは BLFS においては不要なものです。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

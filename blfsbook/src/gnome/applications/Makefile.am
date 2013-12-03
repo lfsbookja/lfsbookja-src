@@ -19,6 +19,7 @@ CHANGE_FILES = \
 	gnome-calculator.ch     \
 	gnome-nettool.ch        \
 	gnome-power-manager.ch  \
+	gnome-screenshot.ch     \
 	gnome-system-monitor.ch \
 	gnome-terminal.ch       \
 	gucharmap.ch            \
@@ -57,6 +58,7 @@ gedit.xml:                $(BOOKdir)/$@ $(srcdir)/gedit.ch
 gnome-calculator.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-calculator.ch
 gnome-nettool.xml:        $(BOOKdir)/$@ $(srcdir)/gnome-nettool.ch
 gnome-power-manager.xml:  $(BOOKdir)/$@ $(srcdir)/gnome-power-manager.ch
+gnome-screenshot.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-screenshot.ch
 gnome-system-monitor.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-monitor.ch
 gnome-terminal.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-terminal.ch
 gucharmap.xml:            $(BOOKdir)/$@ $(srcdir)/gucharmap.ch

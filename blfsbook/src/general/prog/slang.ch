@@ -110,6 +110,12 @@
 @z
 
 @x
+        This package does not support parallel build.
+@y
+        &notParallelBuild;
+@z
+
+@x
     <para>Install <application>S-Lang</application> by running the following
     commands:</para>
 @y

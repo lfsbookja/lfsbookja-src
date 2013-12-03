@@ -111,6 +111,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
+    <para role="optional">
+      <xref linkend="gnome-keyring"/> (for storing passwords) and
+      <xref linkend="seahorse"/> (for managing stored passwords)
+    </para>
+@y
+    <bridgehead renderas="sect4">実行時の依存パッケージ</bridgehead>
+    <para role="optional">
+      <xref linkend="gnome-keyring"/> (強力なパスワードのため),
+      <xref linkend="seahorse"/> (パスワード管理のため)
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:

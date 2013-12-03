@@ -24,7 +24,6 @@
     the <application>GNOME</application> project. Feel free to
     install them on an as needed or as desired basis.
 @y
-    These packages are desktop applications and assorted utilities from
-    the <application>GNOME</application> project. Feel free to
-    install them on an as needed or as desired basis.
+    以下は <application>GNOME</application> プロジェクトのデスクトップアプリケーションや、いくつか取り上げてきたユーティリティープログラムです。
+    必要に応じて、あるいはお望みに応じて、自由にインストールしてください。
 @z

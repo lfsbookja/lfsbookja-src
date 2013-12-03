@@ -129,6 +129,12 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

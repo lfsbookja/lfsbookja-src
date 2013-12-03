@@ -119,6 +119,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
+    <para role="recommended">
+      <xref linkend="gvfs"/> (For hotplugging and device mounting to work)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended; (実行時)</bridgehead>
+    <para role="recommended">
+      <xref linkend="gvfs"/> (ホットプラグ、デバイスマッピングを動作させるため)
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -169,6 +181,31 @@
 @y
       <parameter>--disable-packagekit</parameter>:
       本スイッチは BLFS には含めていない PackageKit を利用しないようにします。
+@z
+
+@x
+      <parameter>--disable-tracker</parameter>: This switch disables
+      use of <application>Tracker</application> which isn't part of
+      BLFS.
+@y
+      <parameter>--disable-tracker</parameter>:
+      本スイッチは BLFS には含めていない <application>Tracker</application> は利用しないことを指示します。
+@z
+
+@x
+      <option>--disable-xmp</option>: Use this switch if
+      you did not install <application>Exempi</application>.
+@y
+      <option>--disable-xmp</option>:
+      <application>Exempi</application> をインストールしていない場合、本スイッチを指定します。
+@z
+
+@x
+      <option>--disable-libexif</option>: Use this switch if
+      you did not install <application>libexif</application>.
+@y
+      <option>--disable-libexif</option>:
+      <application>libexif</application> をインストールしていない場合、本スイッチを指定します。
 @z
 
 @x
