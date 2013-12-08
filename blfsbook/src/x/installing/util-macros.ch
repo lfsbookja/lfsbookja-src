@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY util-macros-time          "less than 0.1 SBU">
-@y
-  <!ENTITY util-macros-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to util-macros</title>
 @y
     <title>&IntroductionTo1;util-macros&IntroductionTo2;</title>

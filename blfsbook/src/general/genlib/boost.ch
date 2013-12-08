@@ -72,18 +72,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">Boost Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Boost&Dependencies2;</bridgehead>
@@ -184,9 +172,9 @@
           None
         </seg>
         <seg>
-          libboost_atomic.so, libboost_chrono.so, libboost_context.so,
+          libboost_atomic.so, libboost_chrono.so, libboost_context.so, libboost_coroutine.so,
           libboost_date_time.so, libboost_exception.a, libboost_filesystem.so,
-          libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
+          libboost_graph.so, libboost_iostreams.so, libboost_locale.so, libboost_log_setup.so, libboost_log.so,
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_c99.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so, libboost_math_tr1.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so, libboost_python.so,
@@ -203,9 +191,9 @@
           &None;
         </seg>
         <seg>
-          libboost_atomic.so, libboost_chrono.so, libboost_context.so,
+          libboost_atomic.so, libboost_chrono.so, libboost_context.so, libboost_coroutine.so,
           libboost_date_time.so, libboost_exception.a, libboost_filesystem.so,
-          libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
+          libboost_graph.so, libboost_iostreams.so, libboost_locale.so, libboost_log_setup.so, libboost_log.so,
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_c99.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so, libboost_math_tr1.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so, libboost_python.so,

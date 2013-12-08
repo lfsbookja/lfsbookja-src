@@ -14,10 +14,14 @@
 @z
 
 @x
+  <!ENTITY git-buildsize     "190 MB (203 MB with downloaded docs and man
+                              pages - 214 MB building docs and man pages)">
   <!ENTITY git-time          "0.7 SBU (additional 8 SBU for tests and 2.7 SBU
-                              for docs and man creation)">
+                              for docs and man pages creation)">
 @y
-  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 8 SBU、ドキュメント生成時は 2.7 SBU)">
+  <!ENTITY git-buildsize     "190 MB (203 MB with downloaded docs and man
+                              pages - 214 MB building docs and man pages)">
+  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 8 SBU、ドキュメントおよびmanページ生成時は 2.7 SBU)">
 @z
 
 @x
@@ -362,8 +366,10 @@
           /usr/share/doc/git-&git-version;,
           /usr/share/git-core,
           /usr/share/git-gui,
-          /usr/share/gitk and
-          /usr/share/gitweb
+          /usr/share/gitk,
+          /usr/share/gitweb,
+          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;/Git and
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Git
         </seg>
 @y
         <seg>
@@ -379,7 +385,9 @@
           /usr/share/git-core,
           /usr/share/git-gui,
           /usr/share/gitk,
-          /usr/share/gitweb
+          /usr/share/gitweb,
+          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;/Git,
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Git
         </seg>
 @z
 
