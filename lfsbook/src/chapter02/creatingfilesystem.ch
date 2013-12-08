@@ -59,7 +59,7 @@
 
 @x ext4
       <listitem><para>is the latest version of the ext file system family of
-      partition types.  It provides several new capabilties including
+      partition types.  It provides several new capabilities including
       nano-second timestamps, creation and use of very large files (16 TB), and
       speed improvements.</para>
 @y

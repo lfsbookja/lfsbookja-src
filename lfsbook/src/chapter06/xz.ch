@@ -52,9 +52,13 @@
 @z
 
 @x
-  <para>Install the package:</para>
+  <para>Install the package and make sure that all libraries are in the
+  correct directory:</para>
 @y
-  <para>&InstallThePackage;</para>
+  <para>
+  パッケージをインストールします。
+  ライブラリはすべて適切なディレクトリに配置します。
+</para>
 @z
 
 @x

@@ -48,6 +48,65 @@
 @z
 
 @x
+      <para>2013-12-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Enable building sulogin in util-linux.
+          Supress installing sysvinit's sulogin.
+          Fixes
+          <ulink url="&lfs-ticket-root;3435">#3435</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Supress installing sysvinit's mesg and last 
+          that overwrite the versions installed by util-linux. 
+          Thanks to Chris Staub.  Fixes
+          <ulink url="&lfs-ticket-root;3434">#3434</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a sed to diffutils so locales are
+          properly installed.  Fixes
+          <ulink url="&lfs-ticket-root;3433">#3433</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updates to the installed programs lists 
+          for several packages. Thanks to Chris Staub.  Fixes
+          <ulink url="&lfs-ticket-root;3432">#3432</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix location of binaries and libraries 
+          for kmod and xz.  Fixes
+          <ulink url="&lfs-ticket-root;3443">#3443</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-12-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - util-linux での sulogin のビルドを行うものとし sysvinit の sulogin はインストールしないことに。
+          <ulink url="&lfs-ticket-root;3435">#3435</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sysvinit の mesg と last は util-linux によるものを上書きしてしまうため、インストールしないように。
+          Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;3434">#3434</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - diffutils にてロケールを正しくインストールされるように sed コマンドを追加。
+          <ulink url="&lfs-ticket-root;3433">#3433</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 各種パッケージにてインストールプログラムを更新。
+          Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;3432">#3432</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod と xz にて実行モジュールやライブラリの配置を適正に。
+          <ulink url="&lfs-ticket-root;3443">#3443</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-11-23</para>
       <itemizedlist>
         <listitem>

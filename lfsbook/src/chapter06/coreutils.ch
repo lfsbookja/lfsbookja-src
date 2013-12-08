@@ -196,7 +196,7 @@
         comm, cp, csplit, cut, date, dd, df, dir, dircolors, dirname, du, echo,
         env, expand, expr, factor, false, fmt, fold, groups, head, hostid,
         id, install, join, link, ln, logname, ls, md5sum, mkdir, mkfifo, mknod,
-        mktemp, mv, nice, nl, nohup, nproc, od, paste, pathchk, pinky, pr,
+        mktemp, mv, nice, nl, nohup, nproc, numfmt, od, paste, pathchk, pinky, pr,
         printenv, printf, ptx, pwd, readlink, realpath, rm, rmdir, runcon, seq,
         sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, shred, shuf, sleep,
         sort, split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test,
@@ -209,12 +209,12 @@
         comm, cp, csplit, cut, date, dd, df, dir, dircolors, dirname, du, echo,
         env, expand, expr, factor, false, fmt, fold, groups, head, hostid,
         id, install, join, link, ln, logname, ls, md5sum, mkdir, mkfifo, mknod,
-        mktemp, mv, nice, nl, nohup, nproc, od, paste, pathchk, pinky, pr,
+        mktemp, mv, nice, nl, nohup, nproc, numfmt, od, paste, pathchk, pinky, pr,
         printenv, printf, ptx, pwd, readlink, realpath, rm, rmdir, runcon, seq,
         sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, shred, shuf, sleep,
         sort, split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test,
         timeout, touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq,
-        unlink, users, vdir, wc, who, whoami, and yes</seg>
+        unlink, users, vdir, wc, who, whoami, yes</seg>
         <seg>libstdbuf.so</seg>
         <seg>/usr/lib/coreutils</seg>
 @z
@@ -648,6 +648,14 @@
 @y
           <para>
           プロセスが利用可能なプロセスユニット (processing unit) の数を表示します。
+          </para>
+@z
+
+@x numfmt
+          <para>Converts numbers to or from human-readable strings</para>
+@y
+          <para>
+          記述された文字列と数値を互いに変換します。
           </para>
 @z
 

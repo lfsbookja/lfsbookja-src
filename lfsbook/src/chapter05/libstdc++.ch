@@ -102,7 +102,7 @@
           searched by the C++ compiler. In a normal build, this information
           is automatically passed to the Libstdc++ <command>configure</command>
           options from the toplevel directory. In our case, this information
-          must be explicitely given.</para>
+          must be explicitly given.</para>
 @y
           <para>
           C++ コンパイラーが標準インクルードファイルを探すディレクトリを指定します。

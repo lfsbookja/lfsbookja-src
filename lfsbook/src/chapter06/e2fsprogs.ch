@@ -212,8 +212,8 @@
 @z
 
 @x
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, 
-        e2fsck, e2image, e2label, e2undo, fsck.ext2,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs,e2freefrag,
+        e2fsck, e2image, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, 
         resize2fs, and tune2fs</seg>
@@ -222,8 +222,8 @@
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
         /usr/include/quota, /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @y
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, 
-        e2fsck, e2image, e2label, e2undo, fsck.ext2,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs,e2freefrag,
+        e2fsck, e2image, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, 
         resize2fs, tune2fs</seg>
@@ -294,6 +294,14 @@
           </para>
 @z
 
+@x e2freefrag
+          <para> Reports free space fragmentation information</para>
+@y
+          <para>
+          フリースペースのフラグメント情報を表示します。
+          </para>
+@z
+
 @x e2fsck
           <para>Is used to check, and optionally repair <systemitem
           class="filesystem">ext2</systemitem> file systems and <systemitem
@@ -333,6 +341,22 @@
           <para>
           デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
           これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
+          </para>
+@z
+
+@x e4defrag
+          <para>Online defragmenter for ext4 filesystems</para>
+@y
+          <para>
+          ext4 ファイルシステムにたいするオンラインのデフラグプログラム。
+          </para>
+@z
+
+@x filefrag
+          <para>Reports on how badly fragmented a particular file might be</para>
+@y
+          <para>
+          特定のファイルがどのようにデフラグ化しているかを表示します。
           </para>
 @z
 
@@ -462,6 +486,19 @@
           デフォルトでは <systemitem
           class="filesystem">ext4</systemitem> ファイルシステム開発版を生成します。
           これは <command>mke2fs</command> へのハードリンクです。
+          </para>
+@z
+
+@x mklost+found
+          <para>Used to create a <filename class="directory">lost+found</filename>
+          directory on an <systemitem class="filesystem">ext2</systemitem> file
+          system; it pre-allocates disk blocks to this directory to lighten the
+          task of <command>e2fsck</command></para>
+@y
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上に <filename
+          class="directory">lost+found</filename> ディレクトリを作成します。
+          これはそのディレクトリ内にあらかじめディスクブロックを割り当てておくことにより <command>e2fsck</command> コマンド処理を軽減させます。
           </para>
 @z
 

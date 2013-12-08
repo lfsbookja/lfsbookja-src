@@ -53,26 +53,9 @@
 @z
 
 @x
-      <title>The meaning of the configure option:</title>
+    <para>Prepare Util-linux for compilation:</para>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
-@z
-
-@x
-          <para>These switches disable building su, sulogin, and login.  They
-          duplicate the same programs provided by <xref
-          linkend='ch-system-shadow'/> and <xref linkend='ch-system-sysvinit'/>.
-          They also require
-          <ulink url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink>
-          which is not available in LFS.</para>
-@y
-          <para>
-          これらのスイッチは su, sulogin, login をビルドしないようにするものです。
-          同名のプログラムが <xref linkend='ch-system-shadow'/> と <xref linkend='ch-system-sysvinit'/> により提供されます。
-          このプログラムは <ulink
-          url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink> を必要とします。
-          Linux-PAM は LFS ではビルドしません。
-          </para>
+    <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
 @z
 
 @x
@@ -91,17 +74,16 @@
 
 @x
     <warning><para>Running the test suite as the root user can be harmful to
-    your system.  To run it, the kernel CONFIG_SCSI_DEBUG option for the kernel
-    must be available in the currently running system.  The CONFIG_SCSI_DEBUG
-    option must be built as a module.  Building it into the kernel will prevent
-    booting.  For complete coverage, other BLFS packages must be installed.  If
-    desired, this test can be run after rebooting into the completed LFS system
-    and running:</para>
+    your system.  To run it, the CONFIG_SCSI_DEBUG option for the kernel must
+    be available in the currently running system, and must be built as a
+    module.  Building it into the kernel will prevent booting.  For complete
+    coverage, other BLFS packages must be installed.  If desired, this test can
+    be run after rebooting into the completed LFS system and running:</para>
 @y
     <warning><para>
     root ユーザーによりテストスイートを実行すると、システムに悪影響を及ぼすことがあります。
-    テストスイートを実行するためには、カーネルオプション CONFIG_SCSI_DEBUG が現環境にて有効でなければなりません。
-    CONFIG_SCSI_DEBUG オプションはモジュールとしてビルドしておかなければならず、カーネルに組み込んでいるとブートできません。
+    テストスイートを実行するためには、カーネルオプション CONFIG_SCSI_DEBUG が現環境にて有効であり、かつモジュールとしてビルドされていなければなりません。
+    カーネルに組み込んでいるとブートできません。
     またテストを完全に実施するには BLFS での各種パッケージのインストールも必要になります。
     テストが必要であるなら、LFS システムを完成した後に、再起動したシステムにて以下を実行します。
     </para>
@@ -142,41 +124,43 @@
 @z
 
 @x
-        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
-        dmesg, eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
-        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
-        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
-        logger, look, losetup, lsblk, lscpu, lslocks, mcookie, mkfs, mkfs.bfs,
-        mkfs.cramfs, mkfs.minix, mkswap, more, mount, mountpoint, namei, partx,
-        pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
-        rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
-        swaplabel, swapoff (link to swapon), swapon, switch_root, tailf,
-        taskset, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
-        wdctl, whereis, wipefs, and x86_64</seg>
+        <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
+        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart, dmesg,
+        eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
+        i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
+        last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
+        lslocks, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        more, mount, mountpoint, namei, partx, pg, pivot_root, prlimit, raw,
+        readprofile, rename, renice, resizepart, rev, rtcwake, script,
+        scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
+        swapoff (link to swapon), swapon, switch_root, tailf, taskset, ul,
+        umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
+        wipefs, and x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
 
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
-        /usr/share/getopt, /var/lib/hwclock</seg>
+        /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
 @y
-        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
-        dmesg, eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
-        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
-        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
-        logger, look, losetup, lsblk, lscpu, lslocks, mcookie, mkfs, mkfs.bfs,
-        mkfs.cramfs, mkfs.minix, mkswap, more, mount, mountpoint, namei, partx,
-        pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
-        rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
-        swaplabel, swapoff (swapon へのリンク), swapon, switch_root, tailf,
-        taskset, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
-        wdctl, whereis, wipefs, x86_64</seg>
+        <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
+        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart, dmesg,
+        eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
+        i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (last へのリンク),
+        ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
+        lslocks, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        more, mount, mountpoint, namei, partx, pg, pivot_root, prlimit, raw,
+        readprofile, rename, renice, resizepart, rev, rtcwake, script,
+        scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
+        swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, ul,
+        umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
+        wipefs, x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
 
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
-        /usr/share/getopt, /var/lib/hwclock</seg>
+        /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
 @z
 
 @x
@@ -200,6 +184,14 @@
           <para>
           tty ポートを開いてログイン名の入力を受け付けます。
           そして <command>login</command> プログラムを起動します。
+          </para>
+@z
+
+@x blkdiscard
+          <para>Discards sectors on a device</para>
+@y
+          <para>
+          デバイス上のセクターを取り除きます。
           </para>
 @z
 
@@ -508,6 +500,28 @@
           </para>
 @z
 
+@x last
+          <para>Shows which users last logged in (and out), searching back 
+          through the <filename>/var/log/wtmp</filename> file; it also shows 
+          system boots, shutdowns, and run-level changes</para>
+@y
+          <para>
+          ユーザーの最新のログイン (ログアウト) の情報を表示します。
+          これは <filename>/var/log/wtmp</filename> ファイルの終わりから調べているものです。
+          またシステムブート、シャットダウン、ランレベルの変更時の情報も示します。
+          </para>
+@z
+
+@x lastb
+          <para>Shows the failed login attempts, as logged in 
+          <filename>/var/log/btmp</filename></para>
+@y
+          <para>
+          ログインに失敗した情報を表示します。
+          これは <filename>/var/log/btmp</filename> に記録されています。
+          </para>
+@z
+
 @x ldattach
           <para>Attaches a line discipline to a serial line</para>
 @y
@@ -593,6 +607,15 @@
           </para>
 @z
 
+@x mesg
+          <para>Controls whether other users can send messages to the current 
+          user's terminal</para>
+@y
+          <para>
+          現在のユーザーの端末に対して、他のユーザーがメッセージ送信できるかどうかを制御します。
+          </para>
+@z
+
 @x mkfs
           <para>Builds a file system on a device (usually a hard disk
           partition)</para>
@@ -666,6 +689,14 @@
 @y
           <para>
           指定されたパスに存在するシンボリックリンクを表示します。
+          </para>
+@z
+
+@x nsenter
+          <para>Runs a program with namespaces of other processes</para>
+@y
+          <para>
+          他プロセスの名前空間にてプログラムを実行します。
           </para>
 @z
 
@@ -812,6 +843,17 @@
 @y
           <para>
           ディスクパーティションテーブルを操作します。
+          </para>
+@z
+
+@x sulogin
+          <para>Allows <systemitem class="username">root</systemitem> to log in;
+          it is normally invoked by <command>init</command> when the system goes
+          into single user mode</para>
+@y
+          <para>
+          <systemitem class="username">root</systemitem> ユーザーでのログインを行います。
+          通常は <command>init</command> が起動するもので、システムがシングルユーザーモードで起動する際に利用されます。
           </para>
 @z
 

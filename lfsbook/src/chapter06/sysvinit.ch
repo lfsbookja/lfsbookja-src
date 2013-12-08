@@ -51,12 +51,14 @@
 
 @x
     <para>Maintained versions of the <command>wall</command>,
-    <command>mountpoint</command>, and <command>utmpdump</command> programs were
-    installed earlier by Util-linux. Suppress the installation of Sysvinit's
-    versions of these programs and their man pages:</para>
+    <command>mountpoint</command>, <command>last</command>,
+    <command>mesg</command>, <command>sulogin</command>, and
+    <command>utmpdump</command> programs were installed earlier by Util-linux.
+    Suppress the installation of Sysvinit's versions of these programs and
+    their man pages:</para>
 @y
     <para>
-    <command>wall</command>, <command>mountpoint</command>, <command>utmpdump</command> は Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
+    <command>wall</command>, <command>mountpoint</command>, <command>last</command>, <command>mesg</command>, <command>sulogin</command>, <command>utmpdump</command> は Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
     そこで Sysvinit が提供するこれらのコマンドはインストールせず、その man ページもインストールしないようにします。
     </para>
 @z
@@ -92,15 +94,13 @@
 @z
 
 @x
-        <seg>bootlogd, fstab-decode, halt, init, killall5, last, 
-        lastb (link to last), mesg, pidof (link to killall5),
-        poweroff (link to halt), reboot (link to halt), runlevel, shutdown,
-        sulogin, and telinit (link to init)</seg>
+        <seg>bootlogd, fstab-decode, halt, init, killall5, pidof (link to
+        killall5), poweroff (link to halt), reboot (link to halt), runlevel,
+        shutdown, and telinit (link to init)</seg>
 @y
-        <seg>bootlogd, fstab-decode, halt, init, killall5, last, 
-        lastb (last へのリンク), mesg, pidof (killall5 へのリンク),
-        poweroff (halt へのリンク), reboot (halt へのリンク), runlevel, shutdown,
-        sulogin, telinit (init へのリンク)</seg>
+        <seg>bootlogd, fstab-decode, halt, init, killall5, pidof (killall5 へのリンク),
+        poweroff (halt へのリンク), reboot (halt へのリンク), runlevel,
+        shutdown, telinit (init へのリンク)</seg>
 @z
 
 @x
@@ -162,37 +162,6 @@
           </para>
 @z
 
-@x last
-          <para>Shows which users last logged in (and out), searching back
-          through the <filename>/var/log/wtmp</filename> file; it also shows
-          system boots, shutdowns, and run-level changes</para>
-@y
-          <para>
-          ユーザーの最新のログイン (ログアウト) の情報を表示します。
-          これは <filename>/var/log/wtmp</filename> ファイルの終わりから調べているものです。
-          またシステムブート、シャットダウン、ランレベルの変更時の情報も示します。
-          </para>
-@z
-
-@x lastb
-          <para>Shows the failed login attempts, as logged in
-          <filename>/var/log/btmp</filename></para>
-@y
-          <para>
-          ログインに失敗した情報を表示します。
-          これは <filename>/var/log/btmp</filename> に記録されています。
-          </para>
-@z
-
-@x mesg
-          <para>Controls whether other users can send messages to the current
-          user's terminal</para>
-@y
-          <para>
-          現在のユーザーの端末に対して、他のユーザーがメッセージ送信できるかどうかを制御します。
-          </para>
-@z
-
 @x pidof
           <para>Reports the PIDs of the given programs</para>
 @y
@@ -236,17 +205,6 @@
           <para>
           システムの終了を安全に行います。
           その際にはプロセスすべてへのシグナル送信を行い、ログインユーザーへの通知も行います。
-          </para>
-@z
-
-@x sulogin
-          <para>Allows <systemitem class="username">root</systemitem> to log in;
-          it is normally invoked by <command>init</command> when the system goes
-          into single user mode</para>
-@y
-          <para>
-          <systemitem class="username">root</systemitem> ユーザーでのログインを行います。
-          通常は <command>init</command> が起動するもので、システムがシングルユーザーモードで起動する際に利用されます。
           </para>
 @z
 

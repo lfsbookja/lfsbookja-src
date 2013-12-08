@@ -79,7 +79,7 @@
     <application>systemd</application> source code that have explicit directory
     paths embedded.  For instance, the binary version of the hardware
     database's path and file name used at run time,
-    <filename>/etc/udev/hwdb.bin</filename>, cannot be changed without explict
+    <filename>/etc/udev/hwdb.bin</filename>, cannot be changed without explicit
     changes to the source code.</para></caution>
 @y
     <caution><para>

@@ -109,12 +109,12 @@
 @z
 
 @x
-        <seg>info, infokey, install-info, makeinfo, pdftexi2dvi, 
-        pod2texi, texi2any, texi2dvi, texi2pdf, and texindex</seg>
+        <seg>info, infokey, install-info, makeinfo (link to texi2any),
+        pdftexi2dvi, pod2texi, texi2any, texi2dvi, texi2pdf, and texindex</seg>
         <seg>/usr/share/texinfo</seg>
 @y
-        <seg>info, infokey, install-info, makeinfo, pdftexi2dvi, 
-        pod2texi, texi2any, texi2dvi, texi2pdf, texindex</seg>
+        <seg>info, infokey, install-info, makeinfo (texi2any へのリンク),
+        pdftexi2dvi, pod2texi, texi2any, texi2dvi, texi2pdf, texindex</seg>
         <seg>/usr/share/texinfo</seg>
 @z
 

@@ -73,13 +73,23 @@
 
 @x
     <para>Install the package, and create symlinks for compatibility with
-    Module-Init-Tools, the package that previously handled Linux kernel modules:
+    Module-Init-Tools, the package that previously handled Linux kernel modules.
+    Also make sure that all libraries are in the correct directory:
     </para>
 @y
     <para>
     パッケージをインストールします。
     また Module-Init-Tools パッケージとの互換性を保つためにシンボリックリンクを生成します。
     Module-Init-Tools パッケージは、これまで Linux カーネルモジュールを取り扱っていたものです。
+    ライブラリはすべて適切なディレクトリに配置します。
+    </para>
+@z
+
+@x
+    <para> Make sure that all libraries are in the correct directory: </para>
+@y
+    <para>
+    ライブラリをすべて適切なディレクトリに配置するようにします。
     </para>
 @z
 
