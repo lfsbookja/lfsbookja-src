@@ -107,6 +107,15 @@
 @z
 
 @x
+    <para>If you have <xref linkend="texlive"/> installed and wish to create
+    PDF and Postcript documentation issue the following commands:</para>
+@y
+    <para>
+    <xref linkend="texlive"/> をインストールしていて PDF と Postscript のドキュメントを生成したい場合は、以下のコマンドを実行します。
+    </para>
+@z
+
+@x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
     <para>
@@ -118,6 +127,17 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <para>Install the optional PDF and Postscript documentation by issuing
+    the following command as the <systemitem class="username">root</systemitem>
+    user:</para>
+@y
+    <para>
+    PDF と Postscript ドキュメントを生成していた場合は、<systemitem
+    class="username">root</systemitem> ユーザーとなり以下のコマンドを実行してドキュメントをインストールします。
+    </para>
 @z
 
 @x

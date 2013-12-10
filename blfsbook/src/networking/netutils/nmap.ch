@@ -25,9 +25,8 @@
     TCP/IP fingerprinting.</para>
 @y
     <para>
-    <application>Nmap</application> is a utility for network exploration
-    and security auditing. It supports ping scanning, port scanning and
-    TCP/IP fingerprinting.
+    <application>Nmap</application> はネットワーク探査やセキュリティ監査を行うユーティリティーです。
+    ping スキャン、ポートスキャン、TCP/IP フィンガープリント取得などを行います。
     </para>
 @z
 
@@ -80,6 +79,45 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <note>
+      <para>
+        These packages are recommended because if they're not installed, the
+        build process will compile and link against its own (often older)
+        version.
+      </para>
+    </note>
+
+    <para role="recommended">
+      <xref linkend="libpcap"/>,
+      <xref linkend="lua"/>,
+      <xref linkend="pcre"/>, and
+      <xref linkend="liblinear"/>
+<!-- This is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
+      <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
+-->
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <note>
+      <para>
+        以下のパッケージを推奨するのは以下の理由によります。
+        これらのパッケージがインストールされていない場合は、本パッケージに含まれるものを用いてコンパイルおよびリンクが行われますが、それらはしばしば古いものであるためです。
+      </para>
+    </note>
+
+    <para role="recommended">
+      <xref linkend="libpcap"/>,
+      <xref linkend="lua"/>,
+      <xref linkend="pcre"/>,
+      <xref linkend="liblinear"/>
+<!-- This is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
+      <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
+-->
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="openssl"/>,
@@ -91,9 +129,9 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="openssl"/>,
-      <xref linkend="pygtk"/> (required for <command>zenmap</command>),
-      <xref linkend="python2"/> (required for <command>ndiff</command>) and
-      <xref linkend="subversion"/> (required for <command>nmap-update</command>)
+      <xref linkend="pygtk"/> (<command>zenmap</command> に必要),
+      <xref linkend="python2"/> (<command>ndiff</command> に必要),
+      <xref linkend="subversion"/> (<command>nmap-update</command> に必要)
     </para>
 @z
 
@@ -108,7 +146,13 @@
 @x
     <title>Installation of Nmap</title>
 @y
-    <title>Nmap のインストール</title>
+    <title>&InstallationOf1;Nmap&InstallationOf2;</title>
+@z
+
+@x
+        This package does not support parallel build.
+@y
+        &notParallelBuild;
 @z
 
 @x
@@ -168,20 +212,48 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+@x ncat
+          <para>is a utility for reading and writing data across networks from
+          the command line.</para>
+@y
+          <para>
+          コマンドラインからネットワークを通じたデータの読み書きを行うユーティリティーです。
+          </para>
+@z
+
+@x ndiff
+          <para>is a tool to aid in the comparison of Nmap scans.</para>
+@y
+          <para>
+          Nmap によるスキャン結果の比較に用いられるツールです。
+          </para>
+@z
+
 @x nmap
           <para>is a utility for network exploration and security auditing. It
           supports ping scanning, port scanning and TCP/IP
           fingerprinting.</para>
 @y
-          <para>is a utility for network exploration and security auditing. It
-          supports ping scanning, port scanning and TCP/IP
-          fingerprinting.</para>
+          <para>
+          ネットワーク探査やセキュリティ監査を行うユーティリティーです。
+          ping スキャン、ポートスキャン、TCP/IP フィンガープリント取得などを行います。
+          </para>
 @z
 
 @x nmapfe
           <para>is a symbolic link to <command>zenmap</command>.</para>
 @y
-          <para>is a symbolic link to <command>zenmap</command>.</para>
+          <para>
+          <command>zenmap</command> へのシンボリックリンク。
+          </para>
+@z
+
+@x nmap-update
+          <para>is an updater for Nmap architecture-independent files.</para>
+@y
+          <para>
+          Nmap のアーキテクチャーには依存しないファイルの更新プログラムです。
+          </para>
 @z
 
 @x xnmap
@@ -189,5 +261,15 @@
 @y
           <para>
           <command>zenmap</command> へのシンボリックリンク。
+          </para>
+@z
+
+@x zenmap
+          <para>is a Python based graphical nmap frontend viewer.
+          <xref linkend='gtk2'/> is a required run time dependency.</para>
+@y
+          <para>
+          Python ベースによる Nmap のフロントエンドグラフィックビューアー。
+          実行時の依存パッケージとして <xref linkend='gtk2'/> が必要です。
           </para>
 @z

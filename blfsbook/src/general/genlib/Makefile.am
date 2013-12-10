@@ -47,6 +47,7 @@ CHANGE_FILES = \
 	libidn.ch \
 	libiodbc.ch \
 	libksba.ch \
+	liblinear.ch \
 	libsigc++.ch \
 	libtasn1.ch \
 	libunistring.ch \
@@ -121,6 +122,7 @@ libical.xml:               $(BOOKdir)/$@ $(srcdir)/libical.ch
 libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
 libiodbc.xml:              $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
 libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
+liblinear.xml:             $(BOOKdir)/$@ $(srcdir)/liblinear.ch
 libsigc++.xml:             $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
 libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
 libunistring.xml:          $(BOOKdir)/$@ $(srcdir)/libunistring.ch
