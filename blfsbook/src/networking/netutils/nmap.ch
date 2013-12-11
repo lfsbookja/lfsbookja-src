@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Nmap</title>
 @y
-    <title>Nmap の概要</title>
+    <title>&IntroductionTo1;Nmap&IntroductionTo2;</title>
 @z
 
 @x
@@ -265,11 +265,9 @@
 @z
 
 @x zenmap
-          <para>is a Python based graphical nmap frontend viewer.
-          <xref linkend='gtk2'/> is a required run time dependency.</para>
+          <para>is a Python based graphical nmap frontend viewer.</para>
 @y
           <para>
           Python ベースによる Nmap のフロントエンドグラフィックビューアー。
-          実行時の依存パッケージとして <xref linkend='gtk2'/> が必要です。
           </para>
 @z
