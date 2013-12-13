@@ -48,6 +48,33 @@
 @z
 
 @x
+      <para>2013-12-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to procps-ng-3.3.9. Fixes
+          <ulink url="&lfs-ticket-root;3439">#3439</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Install non-essential programs from
+          the xz package in /usr/bin.  Fixes
+          <ulink url="&lfs-ticket-root;3445">#3445</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-12-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-ng-3.3.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;3439">#3439</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz パッケージにて、さほど必要でないプログラムも /usr/bin にインストールすることに。
+          <ulink url="&lfs-ticket-root;3445">#3445</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-12-07</para>
       <itemizedlist>
         <listitem>

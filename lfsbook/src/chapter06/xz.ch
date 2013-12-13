@@ -52,12 +52,12 @@
 @z
 
 @x
-  <para>Install the package and make sure that all libraries are in the
+  <para>Install the package and make sure that all essential files are in the
   correct directory:</para>
 @y
   <para>
   パッケージをインストールします。
-  ライブラリはすべて適切なディレクトリに配置します。
+  重要なファイルはすべて適切なディレクトリに配置します。
 </para>
 @z
 

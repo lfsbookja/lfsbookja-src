@@ -87,18 +87,26 @@
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
 @z
 
-@x Tar Manpage Patch
-        <para>Download: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
-@z
-
 @x Readline Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
+@z
+
+@x Sysvinit Consolidated Patch
+        <para>Download: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
+        <para>MD5 sum: <literal>&sysvinit-consolidated-patch-md5;</literal></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
+        <para>MD5 sum: <literal>&sysvinit-consolidated-patch-md5;</literal></para>
+@z
+
+@x Tar Manpage Patch
+        <para>Download: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
 @z
 
 @x Texinfo Test Patch

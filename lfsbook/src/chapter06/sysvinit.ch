@@ -64,6 +64,15 @@
 @z
 
 @x
+    <para>First, apply a patch that removes several programs installed by other
+    packages, clarifies a message, and fixes a compiler warning:</para>
+@y
+    <para>
+    まず他のパッケージによりインストールされるプログラムを取り除いたり、出力メッセージの明確化、警告メッセージの修正などを行うパッチを適用します。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
@@ -94,11 +103,11 @@
 @z
 
 @x
-        <seg>bootlogd, fstab-decode, halt, init, killall5, pidof (link to
-        killall5), poweroff (link to halt), reboot (link to halt), runlevel,
+        <seg>bootlogd, fstab-decode, halt, init, killall5, 
+        poweroff (link to halt), reboot (link to halt), runlevel,
         shutdown, and telinit (link to init)</seg>
 @y
-        <seg>bootlogd, fstab-decode, halt, init, killall5, pidof (killall5 へのリンク),
+        <seg>bootlogd, fstab-decode, halt, init, killall5, 
         poweroff (halt へのリンク), reboot (halt へのリンク), runlevel,
         shutdown, telinit (init へのリンク)</seg>
 @z
@@ -159,14 +168,6 @@
           プロセスすべてに対してシグナルを送信します。
           ただし自分のセッション内の起動プロセスは除きます。
           つまり本コマンドを実行したスクリプトは停止されません。
-          </para>
-@z
-
-@x pidof
-          <para>Reports the PIDs of the given programs</para>
-@y
-          <para>
-          指定されたプログラムの PID を表示します。
           </para>
 @z
 
