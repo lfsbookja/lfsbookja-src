@@ -270,13 +270,13 @@
         The <application>PAM</application> man page (<command>man
         pam</command>) provides a good starting point for descriptions
         of fields and allowable entries. The <ulink
-        url="&debian-pam-docs;/Linux-PAM-html/Linux-PAM_SAG.html">Linux-PAM
+        url="http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html">Linux-PAM
         System Administrators' Guide</ulink> is recommended for additional
         information.
 @y
         <application>PAM</application> パッケージの Man ページ (<command>man pam</command>) を見れば、各項目と可能な記述内容がよく分かるようになっています。
         <ulink
-        url="http://www.kernel.org/pub/linux/libs/pam/Linux-PAM-html/Linux-PAM_SAG.html">
+        url="http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html">
         Linux-PAM システム管理者ガイド (Linux-PAM System Administrators' Guide)</ulink> を参照して、より詳細な情報を確認してください。
 @z
 

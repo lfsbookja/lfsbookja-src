@@ -528,13 +528,13 @@
           <para>is a support script used to delete a module from a
           PL/<application>Tcl</application> table. The command
           requires the <ulink
-          url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+          url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
           package to be installed also.</para>
 @y
           <para>is a support script used to delete a module from a
           PL/<application>Tcl</application> table. The command
           requires the <ulink
-          url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+          url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
           package to be installed also.</para>
 @z
 

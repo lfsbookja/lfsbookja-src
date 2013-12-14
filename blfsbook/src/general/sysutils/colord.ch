@@ -207,8 +207,8 @@
           colord-sane, colord-session, and colormgr
         </seg>
         <seg>
-          libcolordprivate.so, libcolord.so and
-          libcolorhug.so
+          libcolordprivate.so, libcolord.so, libcolorhug.so and
+          several under /usr/lib/colord-plugin
         </seg>
         <seg>
           /usr/include/colord-1,
@@ -226,8 +226,8 @@
           colord-sane, colord-session, colormgr
         </seg>
         <seg>
-          libcolordprivate.so, libcolord.so,
-          libcolorhug.so
+          libcolordprivate.so, libcolord.so, libcolorhug.so,
+          /usr/lib/colord-plugin 配下に数種のライブラリ
         </seg>
         <seg>
           /usr/include/colord-1,

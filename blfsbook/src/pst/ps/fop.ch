@@ -126,7 +126,7 @@
       <xref linkend="junit"/> (to run tests),
       <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
       <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
-      <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
+      <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
       <ulink url="http://pmd.sourceforge.net">PMD</ulink>
           (requires <ulink url="http://jaxen.codehaus.org/">Jaxen</ulink>), and
@@ -139,7 +139,7 @@
       <xref linkend="junit"/> (テスト実行のため),
       <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
       <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
-      <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
+      <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
       <ulink url="http://pmd.sourceforge.net">PMD</ulink>
           (<ulink url="http://jaxen.codehaus.org/">Jaxen</ulink> が必要),
@@ -342,16 +342,24 @@
       <para>Replace <replaceable>&lt;RAM_Installed&gt;</replaceable> with a
       number representing the amount of RAM installed in your computer (in
       megabytes). An example would be
-      <userinput>FOP_OPTS="-Xmx768m"</userinput>. For more information about
+      <userinput>FOP_OPTS="-Xmx768m"</userinput>.
+      <!--  the URL is broken 
+      For more information about
       memory issues running <application>fop</application>, see
-      <ulink url="http://xml.apache.org/fop/running.html#memory"/>.</para>
+      <ulink url="http://xml.apache.org/fop/running.html#memory"/>.
+      -->
+      </para>
 @y
       <para>Replace <replaceable>&lt;RAM_Installed&gt;</replaceable> with a
       number representing the amount of RAM installed in your computer (in
       megabytes). An example would be
-      <userinput>FOP_OPTS="-Xmx768m"</userinput>. For more information about
+      <userinput>FOP_OPTS="-Xmx768m"</userinput>.
+      <!--  the URL is broken 
+      For more information about
       memory issues running <application>fop</application>, see
-      <ulink url="http://xml.apache.org/fop/running.html#memory"/>.</para>
+      <ulink url="http://xml.apache.org/fop/running.html#memory"/>.
+      -->
+      </para>
 @z
 
 @x

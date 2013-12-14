@@ -65,12 +65,12 @@
 
 @x
   <para>Additionally, the <ulink
-  url='http://refspecs.freestandards.org/LSB_3.0.0/LSB-Core-generic/LSB-Core-generic/usernames.html'>
+  url='http://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html'>
   Linux Standard Base</ulink> recommends that system uid and gid values should be
   below 100.</para>
 @y
   <para>Additionally, the <ulink
-  url='http://refspecs.freestandards.org/LSB_3.0.0/LSB-Core-generic/LSB-Core-generic/usernames.html'>
+  url='http://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html'>
   Linux Standard Base</ulink> recommends that system uid and gid values should be
   below 100.</para>
 @z

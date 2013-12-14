@@ -398,12 +398,12 @@
       <para>For additional information on setting up
       <application>Vim</application> configuration files, see <xref
       linkend="postlfs-config-vimrc"/> and <ulink
-      url='http://www.vi-improved.org/vimrc.php'/>.</para>
+      url='http://vim.wikia.com/wiki/Example_vimrc'/>.</para>
 @y
       <para>
       <application>Vim</application> の設定ファイルについての詳細は <xref
       linkend="postlfs-config-vimrc"/> や <ulink
-      url='http://www.vi-improved.org/vimrc.php'/> を参照してください。
+      url='http://vim.wikia.com/wiki/Example_vimrc'/> を参照してください。
       </para>
 @z
 

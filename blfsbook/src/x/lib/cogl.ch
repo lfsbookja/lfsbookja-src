@@ -146,12 +146,12 @@
 
 @x
       To test the results, issue: <command>make check</command>. The
-      tests should be ran from an X terminal running on the hardware
-      accelerated Xorg Server.
+      tests should be run from an X terminal on the hardware accelerated
+      Xorg Server.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      The tests should be ran from an X terminal running on the hardware
-      accelerated Xorg Server.
+      The tests should be run from an X terminal on the hardware accelerated
+      Xorg Server.
 @z
 
 @x

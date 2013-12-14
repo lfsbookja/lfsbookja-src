@@ -250,7 +250,7 @@
     <para role="optional">
       <ulink url="http://www.blender.org/">Blender</ulink>,
       <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
-      <ulink url="http://www.artifex.com/downloads/">GhostPCL</ulink> or
+      <ulink url="http://www.ghostscript.com/download/gpcldnld.html/">GhostPCL</ulink> or
       <ulink url="http://www.ghostscript.com/GhostPCL.html">GhostPDL</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gimp"/>,
@@ -265,14 +265,14 @@
     <para role="optional">
       <ulink url="http://www.blender.org/">Blender</ulink>,
       <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
-      <ulink url="http://www.artifex.com/downloads/">GhostPCL</ulink> or
+      <ulink url="http://www.ghostscript.com/download/gpcldnld.html/">GhostPCL</ulink> or
       <ulink url="http://www.ghostscript.com/GhostPCL.html">GhostPDL</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gimp"/>,
       <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
       <xref linkend="graphviz"/>,
       <xref linkend="inkscape"/>,
-      <ulink url="http://www.povray.org/">POV-Ray</ulink>, and
+      <ulink url="http://www.povray.org/">POV-Ray</ulink>,
       <ulink url="http://radsite.lbl.gov/radiance/HOME.html">Radiance</ulink>
     </para>
 @z

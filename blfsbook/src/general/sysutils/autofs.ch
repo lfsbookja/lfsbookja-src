@@ -343,14 +343,14 @@
       feature is not configured in these instructions.  For additional
       configuration information, see the man pages for auto.master(5).  There
       are also web resources such as this <ulink
-      url='http://en.gentoo-wiki.com/wiki/Autofs'>AUTOFS
+      url='http://wiki.gentoo.org/wiki/Autofs'>AUTOFS
       HOWTO</ulink> available.</para>
 @y
       <para>This package could also be used to mount SMB shares, however that
       feature is not configured in these instructions.  For additional
       configuration information, see the man pages for auto.master(5).  There
       are also web resources such as this <ulink
-      url='http://en.gentoo-wiki.com/wiki/Autofs'>AUTOFS
+      url='http://wiki.gentoo.org/wiki/Autofs'>AUTOFS
       HOWTO</ulink> available.</para>
 @z
 

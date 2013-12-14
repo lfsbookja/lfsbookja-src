@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY mesalib-buildsize     "384 MB (additional 1 MB for the docs)">
+  <!ENTITY mesalib-buildsize     "324 MB (additional 1 MB for the docs)">
 @y
-  <!ENTITY mesalib-buildsize     "384 MB (ドキュメントインストール時はさらに 1 MB)">
+  <!ENTITY mesalib-buildsize     "324 MB (ドキュメントインストール時はさらに 1 MB)">
 @z
 
 @x

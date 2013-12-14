@@ -308,12 +308,12 @@
 @x
     <note><para>The following instructions assume you have created the optional
     symbolic link, <userinput>qemu</userinput>.  Additionally, you must run
-    <userinput>qemu</userinput> from an X-Windows based terminal.</para></note>
+    <userinput>qemu</userinput> from an X Window System based terminal.</para></note>
 @y
     <note><para>
     これ以降の手順においては、以下を前提として説明を進めます。
     まずシンボリックリンク <userinput>qemu</userinput> を生成しているものとします。
-    また <userinput>qemu</userinput> は X-Windows ベースの端末から実行するものとします。
+    また <userinput>qemu</userinput> は X ウィンドウシステムベースの端末から実行するものとします。
     </para></note>
 @z
 

@@ -88,7 +88,7 @@
       an <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command),
       <xref linkend="openldap"/>,
-      <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink> and
+      <ulink url="http://sourceforge.net/projects/opie/files/">Opie</ulink> and
       <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>
     </para>
 @y
@@ -98,9 +98,9 @@
       <ulink url="http://www.fwtk.org/">FWTK</ulink>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="server-mail"/> (これは <command>sendmail</command> コマンドを提供するものです),
+      an <xref linkend="server-mail"/> (これは <command>sendmail</command> コマンドを提供するものです),
       <xref linkend="openldap"/>,
-      <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink>,
+      <ulink url="http://sourceforge.net/projects/opie/files/">Opie</ulink>,
       <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>
     </para>
 @z

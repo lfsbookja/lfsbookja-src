@@ -106,14 +106,14 @@
     <para role="optional">
       <xref linkend="gst-plugins-base"/>,
       <xref linkend="gtk-doc"/>, and
-      <ulink url="http://gupnp.org/">gupnp-igd</ulink>
+      <ulink url="https://wiki.gnome.org/action/show/Projects/GUPnP">gupnp-igd</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gst-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://gupnp.org/">gupnp-igd</ulink>
+      <ulink url="https://wiki.gnome.org/action/show/Projects/GUPnP">gupnp-igd</ulink>
     </para>
 @z
 

@@ -192,13 +192,13 @@
         installations. For extra functionality and/or advanced control of your
         sound device, you may need to create additional configuration files.
         For information on the available configuration parameters, visit
-        <ulink url="http://www.alsa-project.org/alsa-doc/doc-php/asoundrc.php"/>.
+        <ulink url="http://www.alsa-project.org/main/index.php/Asoundrc"/>.
 @y
         The default <filename>alsa.conf</filename> is adequate for most
         installations. For extra functionality and/or advanced control of your
         sound device, you may need to create additional configuration files.
         For information on the available configuration parameters, visit
-        <ulink url="http://www.alsa-project.org/alsa-doc/doc-php/asoundrc.php"/>.
+        <ulink url="http://www.alsa-project.org/main/index.php/Asoundrc"/>.
 @z
 
 @x

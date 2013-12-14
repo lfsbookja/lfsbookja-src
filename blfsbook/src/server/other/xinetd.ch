@@ -235,12 +235,18 @@
 
 @x
       <para>The format of the <filename>/etc/xinetd.conf</filename> is
-      documented in the <filename>xinetd.conf.5</filename> man page. Further
-      information can be found at <ulink url="http://www.xinetd.org"/>.</para>
+      documented in the <filename>xinetd.conf.5</filename> man page.
+      <!-- 13-12-12 the http://www.xinetd.org is broken 
+      Further
+      information can be found at <ulink url="http://www.xinetd.org"/>.
+      -->
+     </para>
 @y
       <para>
       <filename>/etc/xinetd.conf</filename> ファイルの記述書式は man ページ <filename>xinetd.conf.5</filename> に説明されています。
+      <!--
       さらに詳細な情報については <ulink url="http://www.xinetd.org"/> を参照してください。
+      -->
       </para>
 @z
 

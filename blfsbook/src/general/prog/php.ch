@@ -158,7 +158,7 @@
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
     <ulink url="https://bitbucket.org/libgd/gd-libgd/downloads">GD</ulink>,
-    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
+    <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>, and
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @y
     <bridgehead renderas="sect4">任意のグラフィックユーティリティーおよびライブラリ</bridgehead>
@@ -170,7 +170,7 @@
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
     <ulink url="https://bitbucket.org/libgd/gd-libgd/downloads">GD</ulink>,
-    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
+    <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>,
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @z
 
@@ -182,7 +182,7 @@
     <ulink url="http://www.hyperwave.com/">Hyperwave</ulink>,
     <ulink url="http://www.roxen.com/products/webserver/">Roxen WebServer</ulink>,
     <ulink url="http://caudium.net/">Caudium</ulink>, and
-    <ulink url="http://www.openwddx.org/">WDDX</ulink></para>
+    <ulink url="https://wddxnet.codeplex.com/">WDDX</ulink></para>
 @y
     <bridgehead renderas="sect4">任意のウェブユーティリティー</bridgehead>
     <para role="optional"><xref linkend="curl"/>,
@@ -191,7 +191,7 @@
     <ulink url="http://www.hyperwave.com/">Hyperwave</ulink>,
     <ulink url="http://www.roxen.com/products/webserver/">Roxen WebServer</ulink>,
     <ulink url="http://caudium.net/">Caudium</ulink>,
-    <ulink url="http://www.openwddx.org/">WDDX</ulink></para>
+    <ulink url="https://wddxnet.codeplex.com/">WDDX</ulink></para>
 @z
 
 @x
