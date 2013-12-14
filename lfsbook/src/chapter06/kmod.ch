@@ -86,14 +86,6 @@
 @z
 
 @x
-    <para> Make sure that all libraries are in the correct directory: </para>
-@y
-    <para>
-    ライブラリをすべて適切なディレクトリに配置するようにします。
-    </para>
-@z
-
-@x
     <title>Contents of Kmod</title>
 @y
     <title>&ContentsOf1;Kmod&ContentsOf2;</title>

@@ -92,22 +92,11 @@
 @z
 
 @x
-    <para>Now move the static libraries to a more appropriate location:</para>
+    <para>Now move the dynamic libraries to a more appropriate location
+    and fix up some symbolic links:</para>
 @y
     <para>
-    スタティックライブラリを適切なディレクトリに移動します。
-    </para>
-@z
-
-@x
-    <para>Next, remove the <filename class="extension">.so</filename> files in
-    <filename class="directory">/lib</filename> and relink them into <filename
-    class="directory">/usr/lib</filename>:</para>
-@y
-    <para>
-    次に <filename class="directory">/lib</filename> ディレクトリにある <filename
-    class="extension">.so</filename> ファイルを削除して、それらを <filename
-    class="directory">/usr/lib</filename> にリンクし直します。
+    スタティックライブラリを適切なディレクトリに移動し、シンボリックリンクを適正にします。
     </para>
 @z
 

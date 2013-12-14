@@ -14,7 +14,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ENTITY version         "SVN-20131213">
 <!ENTITY releasedate     "2013年12月13日">
-<!ENTITY jversion        "20131213">
+<!ENTITY jversion        "20131214">
 @z
 
 @x

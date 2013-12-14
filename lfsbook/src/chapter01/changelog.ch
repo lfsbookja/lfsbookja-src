@@ -51,6 +51,11 @@
       <para>2013-12-13</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Fix kmod, procps-ng, zlib, readline, ncurses, 
+          and xz methods of establishing correct symbolic links
+          for libraries.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - Update to procps-ng-3.3.9. Fixes
           <ulink url="&lfs-ticket-root;3439">#3439</ulink>.</para>
         </listitem>
@@ -63,6 +68,11 @@
 @y
       <para>2013-12-13</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 以下のパッケージに対し、ライブラリに対するシンボリックリンクを適正化する方法を採用。
+          kmod, procps-ng, zlib, readline, ncurses, xz
+          </para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - procps-ng-3.3.9 へのアップデート。
           <ulink url="&lfs-ticket-root;3439">#3439</ulink> を Fix に。</para>
