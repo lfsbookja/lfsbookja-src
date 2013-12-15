@@ -59,6 +59,15 @@
           </para>
 @z
 
+@x --with-rootlibdir=/lib
+          <para>This option ensures different library related files are placed 
+          in the correct directories.</para>
+@y
+          <para>
+          このオプションは、他のライブラリに関連するファイルが適切なディレクトリに配置されるようにします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
