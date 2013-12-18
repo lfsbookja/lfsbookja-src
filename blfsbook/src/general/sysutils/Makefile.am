@@ -21,6 +21,7 @@ CHANGE_FILES = \
 	lm_sensors.ch    \
 	mc.ch            \
 	obex-data-server.ch \
+	p7zip.ch         \
 	pciutils.ch      \
 	pm-utils.ch      \
 	raptor.ch        \
@@ -67,6 +68,7 @@ initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch
 mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
 obex-data-server.xml: $(BOOKdir)/$@ $(srcdir)/obex-data-server.ch
+p7zip.xml:         $(BOOKdir)/$@ $(srcdir)/p7zip.ch
 pciutils.xml:      $(BOOKdir)/$@ $(srcdir)/pciutils.ch
 pm-utils.xml:      $(BOOKdir)/$@ $(srcdir)/pm-utils.ch
 raptor.xml:        $(BOOKdir)/$@ $(srcdir)/raptor.ch

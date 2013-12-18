@@ -81,13 +81,13 @@
     <para role="optional"><xref linkend="libtiff"/>,
     <xref linkend="libjpeg"/>, and
     <xref linkend="python2"/> (with
-    <ulink url="http://www.swig.org/">SWIG</ulink> also)</para>
+    <xref linkend="swig"/> also)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="libtiff"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="python2"/>
-    (<ulink url="http://www.swig.org/">SWIG</ulink> も必要)</para>
+    (<xref linkend="swig"/> も必要)</para>
 @z
 
 @x

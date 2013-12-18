@@ -414,10 +414,9 @@
           glxgears and glxinfo
         </seg>
         <seg>
-          libdricore&mesalib-version;.so, libEGL.so, libgbm.so, libglapi.so,
-          libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so, libOpenVG.so,
-          libOSMesa.so, libxatracker.so, libXvMCnouveau.so, libXvMCr300.so,
-          libXvMCr600.so and libXvMCsoftpipe.so
+          libEGL.so, libgbm.so, libglapi.so, libGLESv1_CM.so, libGLESv2.so,
+          libGL.so, libGLU.so, libOpenVG.so, libOSMesa.so, libxatracker.so,
+          libXvMCnouveau.so and libXvMCr600.so 
         </seg>
         <seg>
           $XORG_PREFIX/include/EGL,
@@ -438,10 +437,9 @@
           glxgears, glxinfo
         </seg>
         <seg>
-          libdricore&mesalib-version;.so, libEGL.so, libgbm.so, libglapi.so,
-          libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so, libOpenVG.so,
-          libOSMesa.so, libxatracker.so, libXvMCnouveau.so, libXvMCr300.so,
-          libXvMCr600.so, libXvMCsoftpipe.so
+          libEGL.so, libgbm.so, libglapi.so, libGLESv1_CM.so, libGLESv2.so,
+          libGL.so, libGLU.so, libOpenVG.so, libOSMesa.so, libxatracker.so,
+          libXvMCnouveau.so, libXvMCr600.so 
         </seg>
         <seg>
           $XORG_PREFIX/include/EGL,
@@ -477,13 +475,6 @@
             graphics hardware and installed GL libraries.
 @y
             グラフィックハードウェアや、インストールされている GL ライブラリの情報を表示する診断プログラムです。
-@z
-
-@x libdricore9.1.0.so
-            contains common DRI routines used by <application>Mesa</application>
-            DRI drivers.
-@y
-            <application>Mesa</application> DRI ドライバーによって利用されている共通 DRI ルーチンを提供します。
 @z
 
 @x libEGL.so

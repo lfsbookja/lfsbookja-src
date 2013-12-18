@@ -91,12 +91,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="apr-util"/>
+      <xref linkend="apr-util"/> and
+      <xref linkend="pcre"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="apr-util"/>
+      <xref linkend="apr-util"/>,
+      <xref linkend="pcre"/>
     </para>
 @z
 
@@ -119,7 +121,6 @@
       <xref linkend="doxygen"/>,
       <xref linkend="lynx"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="pcre"/>,
       <xref linkend="rsync"/>,
       <ulink url="http://www.distcache.org/">Distcache</ulink>, and
       <xref linkend="lua"/>
@@ -131,7 +132,6 @@
       <xref linkend="doxygen"/>,
       <xref linkend="lynx"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="pcre"/>,
       <xref linkend="rsync"/>,
       <ulink url="http://www.distcache.org/">Distcache</ulink>,
       <xref linkend="lua"/>

@@ -144,8 +144,8 @@
 @x
     <bridgehead renderas="sect4">Optional (To Build Language Bindings)</bridgehead>
     <para role="optional">
-      <ulink url="http://www.swig.org/">SWIG</ulink>
-      (<application>SWIG</application> must be installed or no bindings will be built),
+      <xref linkend="swig"/> (<application>SWIG</application> must be
+      installed or no bindings will be built),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
       <ulink url="http://www.iolanguage.org/">Io</ulink>,
@@ -162,8 +162,8 @@
 @y
     <bridgehead renderas="sect4">&Optional; (言語バインディング構築に必要)</bridgehead>
     <para role="optional">
-      <ulink url="http://www.swig.org/">SWIG</ulink>
-      (<application>SWIG</application> must be installed or no bindings will be built),
+      <xref linkend="swig"/> (<application>SWIG</application> must be
+      installed or no bindings will be built),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
       <ulink url="http://www.iolanguage.org/">Io</ulink>,

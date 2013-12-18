@@ -81,18 +81,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="freeglut"/>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <xref linkend="libjpeg"/> and
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="libjpeg"/>,
+      <xref linkend="freeglut"/> (required for <command>tiffgt</command>), and
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="freeglut"/>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <xref linkend="libjpeg"/>,
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="freeglut"/> (<command>tiffgt</command> に必要),
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
     </para>
 @z
 

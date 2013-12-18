@@ -55,6 +55,7 @@ CHANGE_FILES = \
 	slang.ch          \
 	subversion.ch     \
 	svnserver.ch      \
+	swig.ch           \
 	tcl.ch            \
 	tk.ch             \
 	vala.ch           \
@@ -119,6 +120,7 @@ scons.xml:          $(BOOKdir)/$@ $(srcdir)/scons.ch
 slang.xml:          $(BOOKdir)/$@ $(srcdir)/slang.ch
 subversion.xml:     $(BOOKdir)/$@ $(srcdir)/subversion.ch
 svnserver.xml:      $(BOOKdir)/$@ $(srcdir)/svnserver.ch
+swig.xml:           $(BOOKdir)/$@ $(srcdir)/swig.ch
 tcl.xml:            $(BOOKdir)/$@ $(srcdir)/tcl.ch
 tk.xml:             $(BOOKdir)/$@ $(srcdir)/tk.ch
 vala.xml:           $(BOOKdir)/$@ $(srcdir)/vala.ch

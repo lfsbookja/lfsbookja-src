@@ -20,14 +20,14 @@
 @z
 
 @x
-      The <application>cURL</application> package contains an utility
+      The <application>cURL</application> package contains a utility
       and a library used for transferring files with URL syntax to any of
       the following protocols: FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP,
       TELNET, DICT, LDAP, LDAPS and FILE. Its ability to both download
       and upload files can be incorporated into other programs to support
       functions like streaming media.
 @y
-      The <application>cURL</application> package contains an utility
+      The <application>cURL</application> package contains a utility
       and a library used for transferring files with URL syntax to any of
       the following protocols: FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP,
       TELNET, DICT, LDAP, LDAPS and FILE. Its ability to both download

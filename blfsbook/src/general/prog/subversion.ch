@@ -119,11 +119,9 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
       <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support),
-      <xref linkend="python2"/> (required to run the test suite) and
       <xref linkend="ruby"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="apache"/>,
 <!-- support for berkeley db is deprecated since 1.8
@@ -132,7 +130,6 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
       <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support),
-      <xref linkend="python2"/> (required to run the test suite),
       <xref linkend="ruby"/>
     </para>
 @z
@@ -277,10 +274,10 @@
         </seg>
         <seg>
           /usr/include/subversion-1,
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
-          /usr/lib/python&python2-majorver;/site-packages/libsvn (optional),
-          /usr/lib/python&python2-majorver;/site-packages/svn (optional),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN,
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN,
+          /usr/lib/python&python2-majorver;/site-packages/libsvn,
+          /usr/lib/python&python2-majorver;/site-packages/svn,
           /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (optional),
           /usr/lib/ruby/site_ruby/&lt;x.y&gt;/svn (optional),
 <!--      /usr/lib/svn-python/libsvn (optional),
@@ -292,7 +289,7 @@
 @y
         <seg>
           svn, svnadmin, svndumpfilter, svnlook, svnmucc, svnrdump, svnserve,
-          svnsync, and svnversion
+          svnsync, svnversion
         </seg>
         <seg>
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
@@ -303,16 +300,16 @@
         </seg>
         <seg>
           /usr/include/subversion-1,
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
-          /usr/lib/python&python2-majorver;/site-packages/libsvn (optional),
-          /usr/lib/python&python2-majorver;/site-packages/svn (optional),
-          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (optional),
-          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/svn (optional),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN,
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN,
+          /usr/lib/python&python2-majorver;/site-packages/libsvn,
+          /usr/lib/python&python2-majorver;/site-packages/svn,
+          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (任意),
+          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/svn (任意),
 <!--      /usr/lib/svn-python/libsvn (optional),
           /usr/lib/svn-python/svn (optional),
 -->
-          /usr/lib/svn-javahl (optional), and
+          /usr/lib/svn-javahl (任意),
           /usr/share/doc/subversion-&subversion-version;
         </seg>
 @z
