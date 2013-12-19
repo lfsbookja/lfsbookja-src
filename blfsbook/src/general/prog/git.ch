@@ -14,14 +14,13 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "190 MB (203 MB with downloaded docs and man
-                              pages - 214 MB building docs and man pages)">
-  <!ENTITY git-time          "0.7 SBU (additional 8 SBU for tests and 2.7 SBU
+  <!ENTITY git-buildsize     "175 MB (additional 10 MB with downloaded docs and
+                              man pages, or 20 MB building docs and man pages)">
+  <!ENTITY git-time          "0.7 SBU (additional 8.7 SBU for tests and 2.7 SBU
                               for docs and man pages creation)">
 @y
-  <!ENTITY git-buildsize     "190 MB (203 MB with downloaded docs and man
-                              pages - 214 MB building docs and man pages)">
-  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 8 SBU、ドキュメントおよびmanページ生成時は 2.7 SBU)">
+  <!ENTITY git-buildsize     "175 MB (さらにダウンロードしたドキュメントと man ページ利用の場合 10MB、それらをビルドする場合は 20MB)">
+  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 8.7 SBU、ドキュメントおよび man ページ生成時は 2.7 SBU)">
 @z
 
 @x

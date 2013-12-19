@@ -183,7 +183,7 @@
 
 @x
         <seg>
-          dumpsexp, hmac256 and libgcrypt-config
+          dumpsexp, hmac256, libgcrypt-config, and mpicalc
         </seg>
         <seg>
           libgcrypt.so
@@ -193,7 +193,7 @@
         </seg>
 @y
         <seg>
-          dumpsexp, hmac256, libgcrypt-config
+          dumpsexp, hmac256, libgcrypt-config, mpicalc
         </seg>
         <seg>
           libgcrypt.so

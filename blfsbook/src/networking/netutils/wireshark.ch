@@ -379,14 +379,14 @@
         <seg>capinfos, dftest, dumpcap, editcap, mergecap, randpkt, rawshark,
         reordercap, text2pcap, tshark, and wireshark</seg>
         <seg>libwireshark.so, libwiretap.so, libwsutil.so, and
-        numerous plugin modules</seg>
+        numerous plugin modules under /usr/lib/wireshark/plugins</seg>
         <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
         /usr/share/pixmaps/wireshark, and /usr/share/wireshark</seg>
 @y
         <seg>capinfos, dftest, dumpcap, editcap, mergecap, randpkt, rawshark,
         reordercap, text2pcap, tshark, wireshark</seg>
-        <seg>libwireshark.so, libwiretap.so, libwsutil.so, and
-        numerous plugin modules</seg>
+        <seg>libwireshark.so, libwiretap.so, libwsutil.so,
+        /usr/lib/wireshark/plugins ディレクトリ配下に多くのプラグインモジュール</seg>
         <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
         /usr/share/pixmaps/wireshark, /usr/share/wireshark</seg>
 @z
