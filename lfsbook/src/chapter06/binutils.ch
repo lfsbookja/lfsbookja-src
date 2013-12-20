@@ -68,15 +68,6 @@
 @z
 
 @x
-    <para>Fix a couple of syntax errors that prevent the documentation from
-    building with Texinfo-&texinfo-version;:</para>
-@y
-    <para>
-    Texinfo-&texinfo-version; にてドキュメントビルドが文法エラーにより失敗する点を修正します。
-    </para>
-@z
-
-@x
     <para>The Binutils documentation recommends building Binutils outside of the
     source directory in a dedicated build directory:</para>
 @y

@@ -48,6 +48,72 @@
 @z
 
 @x
+      <para>2013-12-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Coreutils-8.22. Fixes
+          <ulink url="&lfs-ticket-root;3447">#3447</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Man-Pages-3.55. Fixes
+          <ulink url="&lfs-ticket-root;3446">#3446</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Bison-3.0.2. Fixes
+          <ulink url="&lfs-ticket-root;3442">#3442</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Libpipeline-1.2.5. Fixes
+          <ulink url="&lfs-ticket-root;3440">#3440</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Binutils-2.24. Fixes
+          <ulink url="&lfs-ticket-root;3438">#3438</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to File-5.16. Fixes
+          <ulink url="&lfs-ticket-root;3437">#3437</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.12.5. Fixes
+          <ulink url="&lfs-ticket-root;3436">#3436</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-12-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Coreutils-8.22 へのアップデート。
+          <ulink url="&lfs-ticket-root;3447">#3447</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.55 へのアップデート。
+          <ulink url="&lfs-ticket-root;3446">#3446</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bison-3.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3442">#3442</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Libpipeline-1.2.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3440">#3440</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Binutils-2.24 へのアップデート。
+          <ulink url="&lfs-ticket-root;3438">#3438</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - File-5.16 へのアップデート。
+          <ulink url="&lfs-ticket-root;3437">#3437</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.12.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3436">#3436</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-12-13</para>
       <itemizedlist>
         <listitem>
