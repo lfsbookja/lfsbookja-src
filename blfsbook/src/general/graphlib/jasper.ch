@@ -109,14 +109,26 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="optional"><xref linkend="libjpeg"/>,
-    <xref linkend="x-window-system"/>, and
-    <xref linkend="freeglut"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="optional"><xref linkend="libjpeg"/>,
-    <xref linkend="x-window-system"/>,
-    <xref linkend="freeglut"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="freeglut"/> (required for <command>jiv</command>)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="freeglut"/> (<command>jiv</command> に必要)
+    </para>
 @z
 
 @x
@@ -175,10 +187,10 @@
 @z
 
 @x
-    <para><option>--enable-shared</option>: This command
+    <para><parameter>--enable-shared</parameter>: This command
     causes the shared library to be built.</para>
 @y
-    <para><option>--enable-shared</option>: This command
+    <para><parameter>--enable-shared</parameter>: This command
     causes the shared library to be built.</para>
 @z
 

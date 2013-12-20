@@ -21,6 +21,7 @@ CHANGE_FILES = \
 	fdk-aac.ch            \
 	flac.ch               \
 	grilo.ch              \
+	grilo-plugins.ch      \
 	gst-ffmpeg.ch         \
 	gst-plugins-bad.ch    \
 	gst-plugins-base.ch   \
@@ -92,6 +93,7 @@ farstream.xml:               $(BOOKdir)/$@ $(srcdir)/farstream.ch
 fdk-aac.xml:                 $(BOOKdir)/$@ $(srcdir)/fdk-aac.ch
 flac.xml:                    $(BOOKdir)/$@ $(srcdir)/flac.ch
 grilo.xml:                   $(BOOKdir)/$@ $(srcdir)/grilo.ch
+grilo-plugins.xml:           $(BOOKdir)/$@ $(srcdir)/grilo-plugins.ch
 gst-ffmpeg.xml:              $(BOOKdir)/$@ $(srcdir)/gst-ffmpeg.ch
 gst-plugins-bad.xml:         $(BOOKdir)/$@ $(srcdir)/gst-plugins-bad.ch $(srcdir)/gst-plugins-bad.sed
 	sed -f $(srcdir)/gst-plugins-bad.sed $(BOOKdir)/gst-plugins-bad.xml > $(BOOKdir)/gst-plugins-bad_lfsbookja.xml
