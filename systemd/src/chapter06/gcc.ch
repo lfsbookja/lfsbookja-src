@@ -313,18 +313,18 @@
         libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
         liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
         libquadmath.{a,so}, libssp.{a,so},
-        libssp_nonshared.a, libstdc++.{a,so} and libsupc++.a</seg>
+        libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a and libtsan.{a,so}</seg>
 
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/share/gcc-&gcc-version;</seg>
 @y
-        <seg>c++, cc (gcc へのリンク), cpp, g++, gcc, 
+        <seg>c++, cc (gcc へのリンク), cpp, g++, gcc,
         gcc-ar, gcc-nm, gcc-ranlib, gcov</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
         libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
         liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
         libquadmath.{a,so}, libssp.{a,so},
-        libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a</seg>
+        libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, libtsan.{a,so}</seg>
 
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/share/gcc-&gcc-version;</seg>
 @z

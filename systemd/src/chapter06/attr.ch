@@ -66,23 +66,15 @@
 @z
 
 @x
-    <para>Remove static library and libtool archive from
-    <filename class="directory">/lib</filename>, they exist in
-    <filename class="directory">/usr/lib</filename>:</para>
+    <para>The shared library needs to be moved to
+    <filename class="directory">/lib</filename>, and as a result the
+    <filename class="extension">.so</filename> file in
+    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
 @y
     <para>
-    <filename class="directory">/lib</filename> にある共有ライブラリと libtool アーカイブは削除します。
-    これらは <filename class="directory">/usr/lib</filename> に存在しています。
-    </para>
-@z
-
-@x
-    <para>Change default location for the libtool archive and recreate
-    symlink to shared library since it points to removed file:</para>
-@y
-    <para>
-    libtool アーカイブのデフォルトのインストール先を変更します。
-    また上で削除したファイルに対してシンボリックリンクが張られているため再生成します。
+    共有ライブラリは <filename class="directory">/lib</filename> へ移動させます。
+    そのため <filename class="directory">/usr/lib</filename> にある <filename
+    class="extension">.so</filename> ファイルを再生成します。
     </para>
 @z
 
@@ -105,7 +97,7 @@
 @x
         <seg>attr, getfattr, and setattr</seg>
         <seg>libattr.{so,a}</seg>
-        <seg>/usr/include/attr and /usr/share/doc/attr-&attr-version;</seg>
+        <seg>/usr/include/attr, /usr/share/doc/attr-&attr-version;</seg>
 @y
         <seg>attr, getfattr, setattr</seg>
         <seg>libattr.{so,a}</seg>

@@ -47,7 +47,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting
+subdir = src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
@@ -185,9 +185,10 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting
-EXTRA_DIST = common.ch
-srcs = common.xsl
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo
+EXTRA_DIST = lists.ch param.ch titlepage.ch xref.ch
+srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl
+srcs_change = lists.xsl param.xsl titlepage.xsl xref.xsl
 SUFFIXES = .ch .xsl
 all: all-am
 
@@ -202,9 +203,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile
+	  $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -373,15 +374,32 @@ uninstall-am:
 	maintainer-clean-generic mostlyclean mostlyclean-generic pdf \
 	pdf-am ps ps-am tags-am uninstall uninstall-am
 
+	autoidx-ng.xsl autoidx.xsl autotoc.xsl axf.xsl 
+	biblio-iso690.xsl biblio.xsl block.xsl callout.xsl
+	component.xsl division.xsl docbook.xsl ebnf.xsl fo-rtf.xsl
+	fo.xsl footnote.xsl fop.xsl fop1.xsl formal.xsl glossary.xsl
+	graphics.xsl highlight.xsl htmltbl.xsl index.xsl info.xsl
+	inline.xsl keywords.xsl lists.xsl math.xsl pagesetup.xsl
+	passivetex.xsl pdf2index pi.xsl profile-docbook.xsl
+	ptc.xsl qandaset.xsl refentry.xsl sections.xsl spaces.xsl
+	synop.xsl table.xsl task.xsl titlepage.templates.xml
+	titlepage.templates.xsl toc.xsl verbatim.xsl
+	xep.xsl
 .ch.xsl:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 
-all: ctie $(srcs)
+all: ctie $(srcs) $(srcs_change)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-common.xsl: $(BOOKdir)/$@ $(srcdir)/common.ch
+$(srcs):
+	cp -p $(BOOKdir)/* .
+
+lists.xsl:     $(BOOKdir)/$@ $(srcdir)/lists.ch
+param.xsl:     $(BOOKdir)/$@ $(srcdir)/param.ch
+titlepage.xsl: $(BOOKdir)/$@ $(srcdir)/titlepage.ch
+xref.xsl:      $(BOOKdir)/$@ $(srcdir)/xref.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

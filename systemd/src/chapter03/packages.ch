@@ -630,15 +630,15 @@
         <para>MD5 sum: <literal>&shadow-md5;</literal></para>
 @z
 
-@x Sysvinit
-        <para>Home page: <ulink url="&sysvinit-home;"/></para>
-        <para>Download: <ulink url="&sysvinit-url;"/></para>
-        <para>MD5 sum: <literal>&sysvinit-md5;</literal></para>
-@y
-        <para>&Homepage;: <ulink url="&sysvinit-home;"/></para>
-        <para>&Download;: <ulink url="&sysvinit-url;"/></para>
-        <para>MD5 sum: <literal>&sysvinit-md5;</literal></para>
-@z
+% @x Sysvinit
+%         <para>Home page: <ulink url="&sysvinit-home;"/></para>
+%         <para>Download: <ulink url="&sysvinit-url;"/></para>
+%         <para>MD5 sum: <literal>&sysvinit-md5;</literal></para>
+% @y
+%         <para>&Homepage;: <ulink url="&sysvinit-home;"/></para>
+%         <para>&Download;: <ulink url="&sysvinit-url;"/></para>
+%         <para>MD5 sum: <literal>&sysvinit-md5;</literal></para>
+% @z
 
 @x
         <para>Home page: <ulink url="&tar-home;"/></para>

@@ -158,12 +158,12 @@
 @x --libexecdir=/usr/lib
           <para>This changes the location of some auxillary files from the
           default of <filename class="directory">/usr/libexec</filename> to
-          <filename class="directory">/usr/lib/glibc</filename>.</para>
+          <filename class="directory">/usr/lib</filename>.</para>
 @y
           <para>
           このオプションはいくつかの補助ファイル群のインストール先を、デフォルトの <filename
           class="directory">/usr/libexec</filename> から <filename
-          class="directory">/usr/lib/glibc</filename> に変更します。
+          class="directory">/usr/lib</filename> に変更します。
           </para>
 @z
 

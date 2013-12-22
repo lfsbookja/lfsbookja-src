@@ -206,8 +206,8 @@
 @z
 
 @x
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, 
-        e2fsck, e2image, e2label, e2undo, fsck.ext2,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs,e2freefrag,
+        e2fsck, e2image, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, 
         resize2fs, and tune2fs</seg>
@@ -216,8 +216,8 @@
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
         /usr/include/quota, /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @y
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, 
-        e2fsck, e2image, e2label, e2undo, fsck.ext2,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs,e2freefrag,
+        e2fsck, e2image, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, 
         resize2fs, tune2fs</seg>

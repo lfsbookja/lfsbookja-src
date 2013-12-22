@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/highlighting
 EXTRA_DIST = common.ch
 srcdir = @srcdir@
 srcs = common.xsl

@@ -20,7 +20,7 @@
 @z
 
 @x
-  <title>Setting Up System Bootscripts</title>
+  <title>Basic System Configuration</title>
 @y
-  <title>ブートスクリプトの設定</title>
+  <title>基本的なシステムの設定</title>
 @z

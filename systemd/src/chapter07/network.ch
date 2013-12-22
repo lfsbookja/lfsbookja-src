@@ -266,12 +266,12 @@
 @x
     <para>Which interfaces are brought up and down by the network script
     depends on the files in <filename
-    class="directory">/etc/sysconfig/</filename>.  This directory should
+    class="directory">/etc/sysconfig/</filename>. This directory should
     contain a file for each interface to be configured, such as
     <filename>ifconfig.xyz</filename>, where <quote>xyz</quote> is
-    meaningful to the administrator such as the device name (e.g. eth0).
+    required to be a Network Card Interface name (e.g. eth0).
     Inside this file are attributes to this interface, such as its IP
-    address(es), subnet masks, and so forth.  It is necessary that 
+    address(es), subnet masks, and so forth.  It is necessary that
     the stem of the filename be <emphasis>ifconfig</emphasis>.</para>
 @y
     <para>
@@ -279,7 +279,7 @@
     class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルの指定によります。
     このディレクトリには、設定を行ないたい各ネットワークインターフェースに対するファイルを準備します。
     例えばネットワークインターフェースの名が<quote>xyz</quote>である場合 <filename>ifconfig.xyz</filename> というファイルとします。
-    <quote>xyz</quote>は管理者が識別できるデバイス名、例えば eth0 などとなります。
+    <quote>xyz</quote>はネットワークカードインターフェース名、例えば eth0 などとなります。
     このファイルにはネットワークインターフェースの属性、つまり IP アドレスやサブネットマスクなどを定義します。
     ファイルベース名は <emphasis>ifconfig</emphasis> とすることが必要です。
     </para>
@@ -303,26 +303,26 @@
     </para>
 @z
 
-@x
-    <para>If the <envar>ONBOOT</envar> variable is set to <quote>yes</quote> the
-    network script will bring up the Network Interface Card (NIC) during
-    booting of the system. If set to anything but <quote>yes</quote> the NIC
-    will be ignored by the network script and not be automatically brought up.
-    The interface can be manually started or stopped with the
-    <command>ifup</command> and <command>ifdown</command> commands.</para>
-@y
-    <para>
-    <envar>ONBOOT</envar> 変数を<quote>yes</quote>に設定した場合、システム起動時にネットワークスクリプトがネットワークインターフェースカード (network
-    interface card; NIC) を起動します。
-    <quote>yes</quote>以外に設定すると、ネットワークスクリプトからの NIC の起動がなくなり、NIC は自動では起動しなくなります。
-    ネットワークインターフェースは <command>ifup</command> や <command>ifdown</command> といったコマンドを使って、起動や停止を行うことができます。
-    </para>
-@z
+% @x
+%     <para>If the <envar>ONBOOT</envar> variable is set to <quote>yes</quote> the
+%     network script will bring up the Network Interface Card (NIC) during
+%     booting of the system. If set to anything but <quote>yes</quote> the NIC
+%     will be ignored by the network script and not be automatically brought up.
+%     The interface can be manually started or stopped with the
+%     <command>ifup</command> and <command>ifdown</command> commands.</para>
+% @y
+%     <para>
+%     <envar>ONBOOT</envar> 変数を<quote>yes</quote>に設定した場合、システム起動時にネットワークスクリプトがネットワークインターフェースカード (network
+%     interface card; NIC) を起動します。
+%     <quote>yes</quote>以外に設定すると、ネットワークスクリプトからの NIC の起動がなくなり、NIC は自動では起動しなくなります。
+%     ネットワークインターフェースは <command>ifup</command> や <command>ifdown</command> といったコマンドを使って、起動や停止を行うことができます。
+%     </para>
+% @z
 
 @x
     <para>The <envar>IFACE</envar> variable defines the interface name,
-    for example, eth0.  It is required for all network device configuration 
-    files. </para>
+    for example, eth0. It is required for all network device configuration
+    files.</para>
 @y
     <para>
     <envar>IFACE</envar> 変数は、インターフェース名を定義します。
@@ -333,15 +333,15 @@
 
 @x
     <para>The <envar>SERVICE</envar> variable defines the method used for
-    obtaining the IP address. The LFS-Bootscripts package has a modular IP
-    assignment format, and creating additional files in the <filename
+    obtaining the IP address. The LFS-Network-Scripts package has a modular
+    IP assignment format, and creating additional files in the <filename
     class="directory">/lib/services/</filename> directory allows other IP
     assignment methods. This is commonly used for Dynamic Host Configuration
     Protocol (DHCP), which is addressed in the BLFS book.</para>
 @y
     <para>
     <envar>SERVICE</envar> 変数はIP アドレスの取得方法を指定します。
-    LFS-ブートスクリプトは IP アドレス割り当て方法をモジュール化しています。
+    LFS-ネットワークスクリプトは IP アドレス割り当て方法をモジュール化しています。
     そして <filename class="directory">/lib/services/</filename> ディレクトリに追加でファイルを生成すれば、他の IP アドレス割り当て方法をとることもできます。
     通常は DHCP (Dynamic Host Configuration Protocol) において利用されるものです。
     これについては BLFS ブックにて説明しています。

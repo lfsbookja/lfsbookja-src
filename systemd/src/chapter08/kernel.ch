@@ -90,12 +90,23 @@
 @z
 
 @x
-    <para>Due to recent changes in <application>udev</application>, be sure to
-    select:</para>
+    <para>Be sure to enable or disable following features or the system might not
+    work correctly or boot at all:</para>
 @y
     <para>
-    <application>udev</application> の最近の更新に合わせて、以下のカーネル設定項目が選択されていることを確認してください。
+    以下のカーネル設定のオン・オフを確認してください。
+    適切に行わないと、システムが正しく動作しなかったり、起動すらしないことにもなります。
     </para>
+@z
+
+@x
+    <note><para>While "The IPv6 Protocol" is not strictly required, it is
+    highly recommended by the Systemd developers.</para></note>
+@y
+    <note><para>
+    "The IPv6 Protocol" は厳密には必要ありません。
+    ただし Systemd の開発者にとっては強く推奨するものです。
+    </para></note>
 @z
 
 @x

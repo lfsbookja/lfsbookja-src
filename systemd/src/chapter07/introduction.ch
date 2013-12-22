@@ -72,9 +72,9 @@
 @z
 
 @x
-  <para>Third, configuring the hostname, and keyboard layout.</para>
+  <para>Third, configuring the hostname, system clock, and keyboard layout.</para>
 @y
-  <para>ホスト名、キーボードレイアウトについても設定します。</para>
+  <para>ホスト名、システムクロック、キーボードレイアウトについても設定します。</para>
 @z
 
 @x
@@ -82,11 +82,17 @@
        <para><xref linkend="ch-scripts-hostname" role="."/></para>
      </listitem>
      <listitem>
+       <para><xref linkend="ch-scripts-clock" role="."/></para>
+     </listitem>
+     <listitem>
        <para><xref linkend="ch-scripts-console" role="."/></para>
      </listitem>
 @y
      <listitem>
        <para><xref linkend="ch-scripts-hostname" role=""/></para>
+     </listitem>
+     <listitem>
+       <para><xref linkend="ch-scripts-clock" role=""/></para>
      </listitem>
      <listitem>
        <para><xref linkend="ch-scripts-console" role=""/></para>

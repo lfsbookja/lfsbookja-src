@@ -52,22 +52,13 @@
 @z
 
 @x
-  <para>Install the package:</para>
+  <para>Install the package and make sure that all essential files are in the
+  correct directory:</para>
 @y
-  <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>The shared library needs to be moved to
-    <filename class="directory">/lib</filename>, and as a result the
-    <filename class="extension">.so</filename> file in
-    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
-@y
-    <para>
-    共有ライブラリは <filename class="directory">/lib</filename> へ移す必要があります。
-    これに伴って <filename class="directory">/usr/lib</filename> にある <filename
-    class="extension">.so</filename> ファイルも再生成する必要があります。
-    </para>
+  <para>
+  パッケージをインストールします。
+  重要なファイルはすべて適切なディレクトリに配置します。
+  </para>
 @z
 
 @x

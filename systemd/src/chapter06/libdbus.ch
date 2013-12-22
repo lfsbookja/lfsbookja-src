@@ -77,7 +77,7 @@
 @x
         <seg>none</seg>
         <seg>libdbus-1.so</seg>
-        <seg>/usr/include/dbus-1.0 and /usr/lib/dbus-1.0</seg>
+        <seg>/usr/include/dbus-1.0, /usr/lib/dbus-1.0</seg>
 @y
         <seg>&None;</seg>
         <seg>libdbus-1.so</seg>

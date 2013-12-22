@@ -39,15 +39,6 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x --disable-skill
-          <para>This switch disables the obsolete and unportable
-          skill and snice commands.</para> 
-@y
-          <para>
-          本スイッチは、可搬性のない古いコマンド skill と snice をビルドしないようにします。
-          </para> 
-@z
-
 @x --disable-kill
           <para>This switch disables building the kill command that
           was installed in the util-linux package.</para>
@@ -83,28 +74,12 @@
 @z
 
 @x
-<para>Finally, move the library to a location that can be found if
+<para>Finally, move essential files to a location that can be found if
 <filename class="directory">/usr</filename> is not mounted.</para>
 @y
 <para>
-<filename class="directory">/usr</filename> がマウントされていない場合でもライブラリが識別されるように、ライブラリの収容ディレクトリを移動させます。
+<filename class="directory">/usr</filename> がマウントされていない場合でも重要なファイルが識別されるように、それらのファイルを移動させます。
 </para>
-@z
-
-@x
-    <title>Configuring Procps</title>
-@y
-    <title>&Configuring1;Procps&Configuring2;</title>
-@z
-
-@x
-    <para>The <filename>/etc/sysctl.conf</filename> file needs to be present,
-    otherwise Systemd will output an error when booting:</para>
-@y
-    <para>
-    <filename>/etc/sysctl.conf</filename> ファイルが存在していることが必要になります。
-    もしない場合は Systemd がブート時にエラーを出力します。
-    </para>
 @z
 
 @x
@@ -122,11 +97,11 @@
 @z
 
 @x
-        <seg>free, pgrep, pkill, pmap, ps, pwdx, slabtop, 
+        <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop,
         sysctl, tload, top, uptime, vmstat, w, and, watch</seg>
         <seg>libprocps.so</seg>
 @y
-        <seg>free, pgrep, pkill, pmap, ps, pwdx, slabtop, 
+        <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop,
         sysctl, tload, top, uptime, vmstat, w, watch</seg>
         <seg>libprocps.so</seg>
 @z

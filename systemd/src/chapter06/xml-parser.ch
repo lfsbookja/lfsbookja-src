@@ -61,23 +61,15 @@
 @z
 
 @x
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Installed Perl module</segtitle>
 @y
-      <segtitle>&InstalledProgram;</segtitle>
-      <segtitle>&InstalledLibrary;</segtitle>
-      <segtitle>&InstalledDirectory;</segtitle>
+      <segtitle>インストール Perl モジュール</segtitle>
 @z
 
 @x
-        <seg>none</seg>
         <seg>Expat.so</seg>
-        <seg>none</seg>
 @y
-        <seg>&None;</seg>
         <seg>Expat.so</seg>
-        <seg>&None;</seg>
 @z
 
 @x

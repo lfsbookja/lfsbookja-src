@@ -71,7 +71,7 @@
 @x
         <seg>intltool-extract, intltool-merge, intltool-prepare,
         intltool-update, and intltoolize</seg>
-        <seg>/usr/share/doc/intltool-&intltool-version; and
+        <seg>/usr/share/doc/intltool-&intltool-version;,
         /usr/share/intltool</seg>
 @y
         <seg>intltool-extract, intltool-merge, intltool-prepare,

@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2013-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SYSTEMD-20131221,
+          <ulink url="&lfs-rev-root;10410">10410</ulink> まで対応。訳出未完あり。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2013-07-21</para>
       <itemizedlist>
         <listitem>

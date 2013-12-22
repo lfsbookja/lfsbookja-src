@@ -32,13 +32,13 @@
 @z
 
 @x
-  <para>In <xref linkend="chapter-building-system"/>, we installed the Udev
-  package. Before we go into the details regarding how this works,
-  a brief history of previous methods of handling devices is in
-  order.</para>
+  <para>In <xref linkend="chapter-building-system"/>, we installed Udev
+  from the Systemd source package. Before we go into the details regarding
+  how this works, a brief history of previous methods of handling devices
+  is in order.</para>
 @y
   <para>
-  <xref linkend="chapter-building-system"/>にて Udev パッケージをインストールしました。
+  <xref linkend="chapter-building-system"/>にて、Systemd パッケージのソースから Udev をインストールしました。
   このパッケージがどのように動作するかの詳細を説明する前に、デバイスを取り扱うかつての方法について順を追って説明していきます。
   </para>
 @z
@@ -231,13 +231,13 @@
       merged together. If <command>udevd</command> can't find a rule for the
       device it is creating, it will leave the permissions and ownership at
       whatever <systemitem class="filesystem">devtmpfs</systemitem> used
-      initially.</para> </sect3>
+      initially.</para>
 @y
       <para>
       上の三つのディレクトリ内にて指定されるルールは、LFS ブートスクリプトパッケージと同様の方法で番号づけされており、三つのディレクトリの内容は一つにまとめられます。
       デバイスノードの生成時に <command>udevd</command> がそのルールを見つけ出せなかった時は、<systemitem
       class="filesystem">devtmpfs</systemitem> が利用される際の初期のパーミッションと所有者の情報のままとなります。
-      </para> </sect3>
+      </para>
 @z
 
 % @x
@@ -726,16 +726,5 @@
         <para>
         <systemitem class="filesystem">sysfs</systemitem> ファイルシステム
         <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/>
-        </para>
-@z
-
-@x
-        <para>Pointers to further reading
-        <ulink url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
-        </para>
-@y
-        <para>
-        より詳細なドキュメントへのリンク <ulink
-        url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
         </para>
 @z

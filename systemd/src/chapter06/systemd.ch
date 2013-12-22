@@ -50,15 +50,6 @@
           </para>
 @z
 
-@x --with-firmware-path=...
-          <para>This switch enables Udev firmware loader and
-          sets the default firmware search path.</para>
-@y
-          <para>
-          このスイッチは、Udev ファームウェアローダーを有効にし、ファームウェアの探索パスのデフォルトを設定します。
-          </para>
-@z
-
 @x --enable-split-usr
           <para>This switch ensures that Systemd will work on
           systems where /bin, /lib and /sbin directories are not
@@ -145,39 +136,39 @@
 @z
 
 @x
-        <seg>halt, hostnamectl, init, journalctl, kernel-install, localectl,
-        loginctl, poweroff, reboot, runlevel, shutdown, systemctl,
-        systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls,
-        systemd-cgtop, systemd-coredumpctl, systemd-delta, systemd-detect-virt,
-        systemd-inhibit, systemd-machine-id-setup, systemd-notify,
-        systemd-nspawn, systemd-stdio-bridge, systemd-tmpfiles,
-        systemd-tty-ask-password-agent, telinit, timedatectl and
-        udevadm</seg>
-        <seg>libnss_myhostname.so.2, libsystemd-daemon.so, libsystemd-id128.so,
-        libsystemd-journal.so, libsystemd-login.so and libudev.so</seg>
-        <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d, /etc/rpm,
-        /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
-        /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d, /usr/lib/sysctl.d,
-        /usr/lib/systemd, /usr/lib/tmpfiles.d, /usr/share/doc/systemd-&systemd-version;,
-        /usr/share/systemd, /var/lib/systemd and /var/log/journal</seg>
-@y
-        <seg>halt, hostnamectl, init, journalctl, kernel-install, localectl,
-        loginctl, poweroff, reboot, runlevel, shutdown, systemctl,
-        systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls,
-        systemd-cgtop, systemd-coredumpctl, systemd-delta, systemd-detect-virt,
-        systemd-inhibit, systemd-machine-id-setup, systemd-notify,
-        systemd-nspawn, systemd-stdio-bridge, systemd-tmpfiles,
-        systemd-tty-ask-password-agent, telinit, timedatectl,
-        udevadm</seg>
+        <seg>bootctl, halt, hostnamectl, init, journalctl, kernel-install, localectl,
+        loginctl, machinectl, poweroff, reboot, runlevel, shutdown, systemctl,
+        systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
+        systemd-coredumpctl, systemd-delta, systemd-detect-virt, systemd-inhibit,
+        systemd-machine-id-setup, systemd-notify, systemd-nspawn, systemd-run,
+        systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent, telinit,
+        timedatectl, and udevadm</seg>
         <seg>libnss_myhostname.so.2, libsystemd-daemon.so, libsystemd-id128.so,
         libsystemd-journal.so, libsystemd-login.so, libudev.so</seg>
-        <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d, /etc/rpm,
+        <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d, /usr/lib/sysctl.d,
-        /usr/lib/systemd, /usr/lib/tmpfiles.d, /usr/share/doc/systemd-&systemd-version;,
-        /usr/share/systemd, /var/lib/systemd, /var/log/journal</seg>
+        /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d, /usr/lib/rpm,
+        /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
+        /usr/share/doc/systemd-&systemd-version;, /usr/share/systemd,
+        /var/lib/systemd, /var/log/journal</seg>
+@y
+        <seg>bootctl, halt, hostnamectl, init, journalctl, kernel-install, localectl,
+        loginctl, machinectl, poweroff, reboot, runlevel, shutdown, systemctl,
+        systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
+        systemd-coredumpctl, systemd-delta, systemd-detect-virt, systemd-inhibit,
+        systemd-machine-id-setup, systemd-notify, systemd-nspawn, systemd-run,
+        systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent, telinit,
+        timedatectl, udevadm</seg>
+        <seg>libnss_myhostname.so.2, libsystemd-daemon.so, libsystemd-id128.so,
+        libsystemd-journal.so, libsystemd-login.so, libudev.so</seg>
+        <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
+        /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
+        /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
+        /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d, /usr/lib/rpm,
+        /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
+        /usr/share/doc/systemd-&systemd-version;, /usr/share/systemd,
+        /var/lib/systemd, /var/log/journal</seg>
 @z
 
 @x

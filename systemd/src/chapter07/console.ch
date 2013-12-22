@@ -45,23 +45,21 @@
 @x
   <para>The <command>systemd-vconsole-setup</command> service reads the
   <filename>/etc/vconsole.conf</filename> file for configuration
-  information.  Decide which keymap and screen font will be used. Various
+  information. Decide which keymap and screen font will be used. Various
   language-specific HOWTOs can also help with this, see <ulink
-  url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. If still in
-  doubt, look in the <filename class="directory">/usr/share/keymaps</filename> 
-  and <filename class="directory">/usr/share/consolefonts</filename> directories
-  for valid keymaps and screen fonts. Read <filename>loadkeys(1)</filename> and
-  <filename>setfont(8)</filename> manual pages to determine the correct
-  arguments for these programs.</para>
+  url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>.
+  Examine <command>localectl list-keymaps</command> output for a list of
+  valid console keymaps. Look in
+  <filename class="directory">/usr/share/consolefonts</filename>
+  directory for valid screen fonts.</para>
 @y
   <para>
   <command>systemd-vconsole-setup</command> サービスは、設定情報を <filename>/etc/vconsole.conf</filename> ファイルから読み込みます。
   まずは利用するキーボードマップとスクリーンフォントを定めます。
   さまざまな言語に応じた設定方法については <ulink url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/> を参照してください。
-  よく分からない場合は <filename
-  class="directory">/usr/share/keymaps</filename> ディレクトリや <filename
-  class="directory">/usr/share/consolefonts</filename> ディレクトリを見て、正しいキーマップとスクリーンフォントを探してください。
-  マニュアルページ <filename>loadkeys(1)</filename> と <filename>setfont(8)</filename> を見て、これらのプログラムに対する適切な引数を決定してください。
+  <command>localectl list-keymaps</command> を実行してみてその出力結果を見れば、正しいコンソールキーマップの一覧を見ることができます。
+  スクリーンフォントについては <filename
+  class="directory">/usr/share/consolefonts</filename> ディレクトリ内を確認してください。
   </para>
 @z
 
@@ -128,14 +126,14 @@
   </para>
 @z
 
-@x
-    <para>The <filename>/etc/vconsole.conf</filename> file only controls
-    localization of the Linux text console. It has nothing to do with setting
-    the proper keyboard layout and terminal fonts in the X Window System, with
-    ssh sessions, or with a serial console.</para>
-@y
-    <para>
-    <filename>/etc/vconsole.conf</filename> ファイルは Linux のテキストコンソールにおける国際化のみを制御します。
-    SSH セッションを通じた、あるいはシリアルコンソールを通じた X ウィンドウシステムにおけるキーボードレイアウトや端末フォントに関しての設定を行うものではありません。
-    </para>
-@z
+% @x
+%     <para>The <filename>/etc/vconsole.conf</filename> file only controls
+%     localization of the Linux text console. It has nothing to do with setting
+%     the proper keyboard layout and terminal fonts in the X Window System, with
+%     ssh sessions, or with a serial console.</para>
+% @y
+%     <para>
+%     <filename>/etc/vconsole.conf</filename> ファイルは Linux のテキストコンソールにおける国際化のみを制御します。
+%     SSH セッションを通じた、あるいはシリアルコンソールを通じた X ウィンドウシステムにおけるキーボードレイアウトや端末フォントに関しての設定を行うものではありません。
+%     </para>
+% @z

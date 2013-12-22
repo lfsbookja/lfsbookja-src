@@ -627,7 +627,7 @@ Typo ですが日本語訳には影響ありません。
          Sed, Texinfo</seg>
 @z
 @x
-          <seg>Diffutils. Less</seg>
+          <seg>Diffutils, Less</seg>
 @y
           <seg>Diffutils, Less</seg>
 @z
@@ -769,9 +769,9 @@ Typo ですが日本語訳には影響ありません。
          Ncurses, Sed</seg>
 @z
 @x
-          <seg>Check</seg>
+          <seg>No test suite available</seg>
 @y
-          <seg>Check</seg>
+          <seg>テストスイートはありません</seg>
 @z
 @x
           <seg>Gzip</seg>
@@ -793,14 +793,9 @@ Typo ですが日本語訳には影響ありません。
          Make, Sed, Texinfo</seg>
 @z
 @x
-        <segtitle>&testsuites;</segtitle>
+          <seg>Check</seg>
 @y
-        <segtitle>&testsuites;</segtitle>
-@z
-@x
-          <seg>No test suite available</seg>
-@y
-          <seg>テストスイートはありません</seg>
+          <seg>Check</seg>
 @z
 @x
           <seg>None</seg>
@@ -1007,9 +1002,9 @@ Typo ですが日本語訳には影響ありません。
          Make, Patch, Sed</seg>
 @z
 @x
-          <seg>Diffutils</seg>
+          <seg>No test suite available</seg>
 @y
-          <seg>Diffutils</seg>
+          <seg>テストスイートはありません</seg>
 @z
 @x
           <seg>Bash, GRUB, Inetutils, Less, Procps-ng, Psmisc, Readline, Texinfo,
@@ -1031,9 +1026,9 @@ Typo ですが日本語訳には影響ありません。
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>Diffutils</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>Diffutils</seg>
 @z
 @x
           <seg>None</seg>
@@ -1203,26 +1198,26 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-@x Sysvinit
-         <seg>Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
-@y
-         <seg>Binutils, Coreutils, GCC, Glibc, Make, Sed</seg>
-@z
-@x
-          <seg>No test suite available</seg>
-@y
-          <seg>テストスイートはありません</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>&None;</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>&None;</seg>
-@z
+% @x Sysvinit
+%          <seg>Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
+% @y
+%          <seg>Binutils, Coreutils, GCC, Glibc, Make, Sed</seg>
+% @z
+% @x
+%           <seg>No test suite available</seg>
+% @y
+%           <seg>テストスイートはありません</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>&None;</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>&None;</seg>
+% @z
 
 %----------------------------------------------------------------------
 @x Tar

@@ -5,10 +5,10 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/html
-EXTRA_DIST = chunker.ch
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/lib
+EXTRA_DIST = lib.ch
 srcdir = @srcdir@
-srcs = chunker.xsl
+srcs = lib.xsl
 
 SUFFIXES = .ch .xsl
 .ch.xsl:
@@ -19,4 +19,4 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-chunker.xsl: $(BOOKdir)/$@ $(srcdir)/chunker.ch
+lib.xsl: $(BOOKdir)/$@ $(srcdir)/lib.ch

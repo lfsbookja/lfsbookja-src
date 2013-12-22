@@ -69,23 +69,15 @@
 @z
 
 @x
-    <para>Remove static library and libtool archive from
-    <filename class="directory">/lib</filename>, they exist in
-    <filename class="directory">/usr/lib</filename>:</para>
+    <para>The shared library needs to be moved to
+    <filename class="directory">/lib</filename>, and as a result the
+    <filename class="extension">.so</filename> file in
+    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
 @y
     <para>
-    <filename class="directory">/lib</filename> ディレクトリから、スタティックライブラリと libtool アーカイブを削除します。
-    これらは <filename class="directory">/usr/lib</filename> ディレクトリにあります。
-    </para>
-@z
-
-@x
-    <para>Change default location for the libtool archive and recreate
-    symlink to shared library since it points to removed file:</para>
-@y
-    <para>
-    libtool アーカイブのインストール先を変更します。
-    そして共有ライブラリが削除したファイルを参照しているため、シンボリックリンクを作り直します。
+    共有ライブラリは <filename class="directory">/lib</filename> へ移動させます。
+    そのため <filename class="directory">/usr/lib</filename> にある <filename
+    class="extension">.so</filename> ファイルを再生成します。
     </para>
 @z
 
@@ -108,7 +100,7 @@
 @x
         <seg>chacl, getfacl, and setacl</seg>
         <seg>libacl.{so,a}</seg>
-        <seg>/usr/include/acl and /usr/share/doc/acl-&acl-version;</seg>
+        <seg>/usr/include/acl, /usr/share/doc/acl-&acl-version;</seg>
 @y
         <seg>chacl, getfacl, setacl</seg>
         <seg>libacl.{so,a}</seg>

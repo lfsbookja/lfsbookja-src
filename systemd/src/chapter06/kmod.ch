@@ -40,19 +40,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x --with-rootlibdir
-          <para>This switch ensures that shared library is installed in
-          <filename class="directory">/lib</filename> instead of
-          <filename class="directory">/usr/lib</filename>.</para>
-@y
-          <para>
-          本スイッチは共有ライブラリのインストール先を <filename
-          class="directory">/usr/lib</filename> ではなく <filename
-          class="directory">/lib</filename> とします。
-          .</para>
-@z
-
-@x --with-*
+@x --with-xz, --with-zlib
           <para>These options enable Kmod to handle compressed kernel modules.</para>
 @y
           <para>
@@ -71,6 +59,15 @@
           </para>
 @z
 
+@x --with-rootlibdir
+          <para>This option ensures different library related files are placed 
+          in the correct directories.</para>
+@y
+          <para>
+          本オプションは、ライブラリ関連のファイルを適切なディレクトリに配置します。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -80,18 +77,22 @@
 @x
     <para>To test the results, issue:</para>
 @y
-    <para>コンパイル結果をテストする場合は以下を実行します。</para>
+    <para>
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
 @z
 
 @x
     <para>Install the package, and create symlinks for compatibility with
-    Module-Init-Tools, the package that previously handled Linux kernel modules:
+    Module-Init-Tools, the package that previously handled Linux kernel modules.
+    Also make sure that all libraries are in the correct directory:
     </para>
 @y
     <para>
     パッケージをインストールします。
     また Module-Init-Tools パッケージとの互換性を保つためにシンボリックリンクを生成します。
     Module-Init-Tools パッケージは、これまで Linux カーネルモジュールを取り扱っていたものです。
+    すべてのライブラリは適切なディレクトリに配置します。
     </para>
 @z
 

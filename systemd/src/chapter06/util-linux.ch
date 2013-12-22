@@ -53,45 +53,9 @@
 @z
 
 @x
-      <title>The meaning of the configure option:</title>
+    <para>Prepare Util-linux for compilation:</para>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
-@z
-
-@x
-          <para>These switches disable building su and login. They
-          duplicate the same programs provided by <xref
-          linkend='ch-system-shadow'/>.
-          They also require
-          <ulink url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink>
-          which is not available in LFS.</para>
-@y
-          <para>
-          これらのスイッチは su, login をビルドしないようにするものです。
-          同名のプログラムが <xref linkend='ch-system-shadow'/> により提供されます。
-          このプログラムは <ulink
-          url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink> を必要とします。
-          Linux-PAM は LFS ではビルドしません。
-          </para>
-@z
-
-@x --enable-mesg
-          <para>This switch enables building of the mesg utility which
-          was previously provided by Sysvinit package.</para>
-@y
-          <para>
-          本スイッチは mesg ユーティリティをビルドするようにします。
-          これはかつては Sysvinit パッケージにより提供されていたものです。
-          </para>
-@z
-
-@x --with-systemdsystemunitdir=/lib/systemd/system
-          <para>This switch sets install location for the Systemd units provided
-          with the package.</para>
-@y
-          <para>
-          本スイッチは Systemd ユニットファイルの収容ディレクトリを指定します。
-          </para>
+    <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
 @z
 
 @x
@@ -110,17 +74,16 @@
 
 @x
     <warning><para>Running the test suite as the root user can be harmful to
-    your system.  To run it, the kernel CONFIG_SCSI_DEBUG option for the kernel
-    must be available in the currently running system.  The CONFIG_SCSI_DEBUG
-    option must be built as a module.  Building it into the kernel will prevent
-    booting.  For complete coverage, other BLFS packages must be installed.  If
-    desired, this test can be run after rebooting into the completed LFS system
-    and running:</para>
+    your system.  To run it, the CONFIG_SCSI_DEBUG option for the kernel must
+    be available in the currently running system, and must be built as a
+    module.  Building it into the kernel will prevent booting.  For complete
+    coverage, other BLFS packages must be installed.  If desired, this test can
+    be run after rebooting into the completed LFS system and running:</para>
 @y
     <warning><para>
     root ユーザーによりテストスイートを実行すると、システムに悪影響を及ぼすことがあります。
-    テストスイートを実行するためには、カーネルオプション CONFIG_SCSI_DEBUG が現環境にて有効でなければなりません。
-    CONFIG_SCSI_DEBUG オプションはモジュールとしてビルドしておかなければならず、カーネルに組み込んでいるとブートできません。
+    テストスイートを実行するためには、カーネルオプション CONFIG_SCSI_DEBUG が現環境にて有効であり、かつモジュールとしてビルドされていなければなりません。
+    カーネルに組み込んでいるとブートできません。
     またテストを完全に実施するには BLFS での各種パッケージのインストールも必要になります。
     テストが必要であるなら、LFS システムを完成した後に、再起動したシステムにて以下を実行します。
     </para>
@@ -149,41 +112,43 @@
 @z
 
 @x
-        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
-        dmesg, eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
-        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
-        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
-        logger, look, losetup, lsblk, lscpu, lslocks, mcookie, mesg, mkfs, mkfs.bfs,
-        mkfs.cramfs, mkfs.minix, mkswap, more, mount, mountpoint, namei, partx,
-        pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
-        rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
-        sulogin, swaplabel, swapoff (link to swapon), swapon, switch_root, tailf,
-        taskset, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
-        wdctl, whereis, wipefs, and x86_64</seg>
+        <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
+        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart, dmesg,
+        eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
+        i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
+        last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
+        lslocks, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        more, mount, mountpoint, namei, partx, pg, pivot_root, prlimit, raw,
+        readprofile, rename, renice, resizepart, rev, rtcwake, script,
+        scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
+        swapoff (link to swapon), swapon, switch_root, tailf, taskset, ul,
+        umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
+        wipefs, and x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
 
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
-        /usr/share/getopt, /var/lib/hwclock</seg>
+        /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
 @y
-        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
-        dmesg, eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
-        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
-        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
-        logger, look, losetup, lsblk, lscpu, lslocks, mcookie, mesg, mkfs, mkfs.bfs,
-        mkfs.cramfs, mkfs.minix, mkswap, more, mount, mountpoint, namei, partx,
-        pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
-        rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
-        sulogin, swaplabel, swapoff (swapon へのリンク), swapon, switch_root, tailf,
-        taskset, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
-        wdctl, whereis, wipefs, x86_64</seg>
+        <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
+        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart, dmesg,
+        eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
+        i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
+        last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
+        lslocks, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        more, mount, mountpoint, namei, partx, pg, pivot_root, prlimit, raw,
+        readprofile, rename, renice, resizepart, rev, rtcwake, script,
+        scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
+        swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, ul,
+        umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
+        wipefs, x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
 
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
-        /usr/share/getopt, /var/lib/hwclock</seg>
+        /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
 @z
 
 @x
