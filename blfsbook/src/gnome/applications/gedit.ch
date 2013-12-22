@@ -194,10 +194,12 @@
 
 @x
         <seg>
-          gedit
+          gedit and
+          gnome-text-editor (symlink to gedit)
         </seg>
         <seg>
-          None
+          /usr/lib/gedit/libgedit-private.so and
+          several under /usr/lib/gedit/plugins
         </seg>
         <seg>
           /usr/include/gedit-3.0,
@@ -208,10 +210,12 @@
         </seg>
 @y
         <seg>
-          gedit
+          gedit,
+          gnome-text-editor (&LinkTo1;gedit&LinkTo2;)
         </seg>
         <seg>
-          &None;
+          /usr/lib/gedit/libgedit-private.so,
+          /usr/lib/gedit/plugins 配下に数種のライブラリ
         </seg>
         <seg>
           /usr/include/gedit-3.0,

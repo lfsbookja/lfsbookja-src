@@ -128,6 +128,7 @@
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
       <xref linkend="p11-kit"/>,
+      <ulink url="http://sourceforge.net/projects/trousers/files/trousers/">Trousers</ulink> (Trusted Platform Module support),
       <xref linkend="unbound"/> (to build the DANE library), and 
       <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)
     </para>
@@ -138,7 +139,8 @@
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
       <xref linkend="p11-kit"/>,
-      <xref linkend="unbound"/> (to build the DANE library),
+      <ulink url="http://sourceforge.net/projects/trousers/files/trousers/">Trousers</ulink> (Trusted Platform モジュールサポート),
+      <xref linkend="unbound"/> (DANE ライブラリ生成のため),
       <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて利用)
     </para>
 @z
