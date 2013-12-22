@@ -48,6 +48,50 @@
 @z
 
 @x
+      <para>2013-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.12.6. Fixes
+          <ulink url="&lfs-ticket-root;3452">#3452</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Tzdata-2013i. Fixes
+          <ulink url="&lfs-ticket-root;3451">#3451</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Libpipeline-1.2.6. Fixes
+          <ulink url="&lfs-ticket-root;3449">#3449</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Fix the coreutils-i18n patch, which introduced a
+          regression in cut. Fixes
+          <ulink url="&lfs-ticket-root;3448">#3448</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.12.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3452">#3452</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tzdata-2013i へのアップデート。
+          <ulink url="&lfs-ticket-root;3451">#3451</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Libpipeline-1.2.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3449">#3449</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - coreutils-i18n パッチを修正。
+          cut プログラムに影響があったため。
+          <ulink url="&lfs-ticket-root;3448">#3448</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-12-16</para>
       <itemizedlist>
         <listitem>

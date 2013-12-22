@@ -112,12 +112,12 @@
         <seg>depmod (link to kmod), insmod (link to kmod), kmod, 
         lsmod (link to kmod), modinfo (link to kmod), modprobe (link to kmod),
         and rmmod (link to kmod)</seg>
-        <seg>/lib/kmod.so</seg>
+        <seg>libkmod.so</seg>
 @y
         <seg>depmod (kmod へのリンク), insmod (kmod へのリンク), kmod, 
         lsmod (kmod へのリンク), modinfo (kmod へのリンク), modprobe (kmod へのリンク),
         rmmod (kmod へのリンク)</seg>
-        <seg>/lib/kmod.so</seg>
+        <seg>libkmod.so</seg>
 @z
 
 @x
@@ -150,15 +150,6 @@
           <para>カーネルモジュールのロード、アンロードを行います。</para>
 @z
 
-@x libkmod
-          <para>This library is used by other programs to load and unload kernel
-           modules</para>
-@y
-          <para>
-          このライブラリは、カーネルモジュールのロード、アンロードを行う他のプログラムが利用します。
-          </para>
-@z
-
 @x lsmod
           <para>Lists currently loaded modules</para>
 @y
@@ -189,5 +180,14 @@
 @y
           <para>
           稼動中のカーネルからモジュールをアンロードします。
+          </para>
+@z
+
+@x libkmod
+          <para>This library is used by other programs to load and unload kernel
+           modules</para>
+@y
+          <para>
+          このライブラリは、カーネルモジュールのロード、アンロードを行う他のプログラムが利用します。
           </para>
 @z
