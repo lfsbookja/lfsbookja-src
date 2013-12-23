@@ -61,3 +61,16 @@
     <trademark class='registered'>Linux</trademark> は Linus Torvalds の登録商標です。
     </para>
 @z
+
+@x
+  </legalnotice>
+@y
+  </legalnotice>
+
+  <abstract>
+  <title>日本語訳情報</title>
+  <para>
+  本書では未訳出部分があります。順次訳出を進める予定です。
+  </para>
+  </abstract>
+@z

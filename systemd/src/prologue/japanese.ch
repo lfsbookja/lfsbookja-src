@@ -31,6 +31,13 @@
    </para>
   </note>
 
+  <warning>
+   <title>日本語訳情報</title>
+   <para>
+    本書では未訳出部分があります。順次訳出を進める予定です。
+   </para>
+  </warning>
+
   <sect2 role="introduction">
     <title>はじめに</title>
 
