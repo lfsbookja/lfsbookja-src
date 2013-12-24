@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY cracklib-time          "less than 0.1 SBU">
-@y
-  <!ENTITY cracklib-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to CrackLib</title>
 @y
     <title>&IntroductionTo1;CrackLib&IntroductionTo2;</title>

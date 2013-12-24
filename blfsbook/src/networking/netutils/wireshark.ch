@@ -152,8 +152,7 @@
       <xref linkend="libgcrypt"/>,
       <xref linkend="lua"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="pcre"/>, and
+      <xref linkend="openssl"/>, and
       <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>
     </para>
 @y
@@ -166,7 +165,6 @@
       <xref linkend="lua"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openssl"/>,
-      <xref linkend="pcre"/>,
       <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>
     </para>
 @z

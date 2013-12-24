@@ -75,26 +75,24 @@ In Linux, just
   topics&mdash;<xref linkend="postlfs-config-profile"/> and
   <xref linkend="postlfs-config-vimrc"/>.</para>
 @y
-<para>The first task is making a recovery boot device in
-<xref linkend="postlfs-config-bootdisk"/> because it's the most critical need.
-Then the system is configured to ease addition of new users, because this
-can affect the choices you make in the two subsequent
-topics&mdash;<xref linkend="postlfs-config-profile"/> and
-<xref linkend="postlfs-config-vimrc"/>.</para>
+  <para>The first task is making a recovery boot device in
+  <xref linkend="postlfs-config-bootdisk"/> because it's the most critical need.
+  Then the system is configured to ease addition of new users, because this
+  can affect the choices you make in the two subsequent
+  topics&mdash;<xref linkend="postlfs-config-profile"/> and
+  <xref linkend="postlfs-config-vimrc"/>.</para>
 @z
 
 @x
   <para> The remaining topics, <xref linkend="postlfs-config-logon"/>,
   <xref linkend="postlfs-config-shells"/>, <xref linkend="postlfs-config-random"/>,
-  <xref linkend="compressdoc"/>, <xref linkend="autofs"/>, and
+  <xref linkend="autofs"/>, and
   <xref linkend="postlfs-config-netfs"/> are then addressed, in that order. They
   don't have much interaction with the other topics in this chapter.</para>
 @y
-<para>
- The remaining topics, <xref linkend="postlfs-config-logon"/>,
-<xref linkend="postlfs-config-shells"/>, <xref linkend="postlfs-config-random"/>,
-<xref linkend="compressdoc"/>, <xref linkend="autofs"/>, and
-<xref linkend="postlfs-config-netfs"/> are then addressed, in that order. They
-don't have much interaction with the other topics in this chapter.</para>
+  <para> この他のトピックとして <xref linkend="postlfs-config-logon"/>、<xref
+  linkend="postlfs-config-shells"/>、<xref linkend="postlfs-config-random"/>、<xref
+  linkend="autofs"/>、<xref linkend="postlfs-config-netfs"/> について順に説明します。
+  これらについては互いに関連はありません。
+  </para>
 @z
-

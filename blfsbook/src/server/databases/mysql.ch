@@ -238,11 +238,13 @@
 @z
 
 @x
-      <command>sed -i ...</command>: First two seds fix client-only builds. Last
-      two seds set correct installation directories for some components.
+      <command>sed -i ...</command>: First two seds fix client-only builds.
+        Following two seds set correct installation directories for some
+        components. Last one fixes a bug in the code.
 @y
-      <command>sed -i ...</command>: First two seds fix client-only builds. Last
-      two seds set correct installation directories for some components.
+      <command>sed -i ...</command>: First two seds fix client-only builds.
+        Following two seds set correct installation directories for some
+        components. Last one fixes a bug in the code.
 @z
 
 @x
@@ -420,8 +422,8 @@
           resolve_stack_dump
         </seg>
         <seg>
-          libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqld.{so,a} and
-          libmysqlservices.a
+          libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqld.{so,a},
+          libmysqlservices.a and several under /usr/lib/mysql/plugin/
         </seg>
         <seg>
           /etc/mysql,
@@ -447,7 +449,7 @@
         </seg>
         <seg>
           libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqld.{so,a},
-          libmysqlservices.a
+          libmysqlservices.a, /usr/lib/mysql/plugin/ 配下に数種のライブラリ
         </seg>
         <seg>
           /etc/mysql,

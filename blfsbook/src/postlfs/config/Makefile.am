@@ -8,7 +8,6 @@
 BOOKdir = @abs_bookdir@/postlfs/config
 CHANGE_FILES = \
 	bootdisk.ch    \
-	compressdoc.ch \
 	config.ch      \
 	devices.ch     \
 	etcshells.ch   \
@@ -35,7 +34,6 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 bootdisk.xml:    $(BOOKdir)/$@ $(srcdir)/bootdisk.ch
-compressdoc.xml: $(BOOKdir)/$@ $(srcdir)/compressdoc.ch
 config.xml:      $(BOOKdir)/$@ $(srcdir)/config.ch
 devices.xml:     $(BOOKdir)/$@ $(srcdir)/devices.ch
 etcshells.xml:   $(BOOKdir)/$@ $(srcdir)/etcshells.ch

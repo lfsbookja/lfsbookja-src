@@ -150,6 +150,15 @@
 @z
 
 @x
+      <parameter>--with-readline=gnu</parameter>: This parameter sets GNU
+      <application>Readline</application> to be used by the parser interface
+      instead of the <application>S-Lang</application> internal version.
+@y
+      <parameter>--with-readline=gnu</parameter>:
+      このパラメーターは <application>S-Lang</application> が内部に持っている <application>Readline</application> モジュールではなく Gnu <application>Readline</application> モジュールを利用することを指示します。
+@z
+
+@x
     <para><command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
     SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
     This command installs the static library as well as
@@ -161,17 +170,6 @@
     SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
     このコマンドは、動的な共有ライブラリや関連モジュールをインストールし、さらにスタティックライブラリもインストールします。
     またドキュメントを収めるディレクトリの名前にバージョン番号をつけた上でドキュメントをインストールします。
-    </para>
-@z
-
-@x
-    <para><option>--with-readline=gnu</option>: Use this parameter to use the
-    Gnu <application>Readline</application> parser instead of the
-    <application>S-Lang</application> internal version.</para>
-@y
-    <para>
-    <option>--with-readline=gnu</option>:
-    このパラメーターは <application>S-Lang</application> が内部に持っている <application>Readline</application> モジュールではなく Gnu <application>Readline</application> モジュールを利用することを指示します。
     </para>
 @z
 
