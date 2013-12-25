@@ -85,8 +85,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libXau"/>,
-      <xref linkend="libXdmcp"/>,
-      <xref linkend="libxslt"/>, and
+      <xref linkend="libXdmcp"/> and
       <xref linkend="xcb-proto"/>
     </para>
 @y
@@ -94,7 +93,6 @@
     <para role="required">
       <xref linkend="libXau"/>,
       <xref linkend="libXdmcp"/>,
-      <xref linkend="libxslt"/>,
       <xref linkend="xcb-proto"/>
     </para>
 @z
@@ -102,23 +100,23 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (to generate API documentation) and 
-      <xref linkend="check"/> (to run tests)
+      <xref linkend="doxygen"/> (to generate API documentation)
+      <xref linkend="check"/> (to run tests) and
+      <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (API ドキュメント生成のため),
-      <xref linkend="check"/> (テスト実行のため)
+      <xref linkend="doxygen"/> (API ドキュメント生成のため)
+      <xref linkend="check"/> (テスト実行のため),
+      <xref linkend="libxslt"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libxcb"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libxcb"/></para>
 @z
 
 @x
@@ -178,14 +176,14 @@
     </para>
 @z
 
-@x
-    <para><parameter>--enable-xkb</parameter>: This switch enables XCB XKB
-    extension.</para>
-@y
-    <para><parameter>--enable-xkb</parameter>:
-    本スイッチは XCB の XKB 拡張を有効にします。
-    </para>
-@z
+% @x
+%     <para><parameter>--enable-xkb</parameter>: This switch enables XCB XKB
+%     extension.</para>
+% @y
+%     <para><parameter>--enable-xkb</parameter>:
+%     本スイッチは XCB の XKB 拡張を有効にします。
+%     </para>
+% @z
 
 @x
     <para><option>--without-doxygen</option>: This switch can be used

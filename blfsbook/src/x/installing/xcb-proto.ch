@@ -78,28 +78,18 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch (if compiling against <xref linkend="python3"/>):
-@y
-          必須のパッチ (<xref linkend="python3"/> をリンクしてビルドする場合):
-@z
-
-@x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="python2"/> or
-      <xref linkend="python3"/>
+      <xref linkend="python3"/> and
+      <xref linkend="xorg7"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="python2"/> または
-      <xref linkend="python3"/>
+      <xref linkend="python3"/>,
+      <xref linkend="xorg7"/>
     </para>
 @z
 
@@ -127,14 +117,14 @@
     <title>&InstallationOf1;xcb-proto&InstallationOf2;</title>
 @z
 
-@x
-    <para>If you are compiling against <xref linkend="python3"/>, use the
-    following commands:</para>
-@y
-    <para>
-    <xref linkend="python3"/> を用いてビルドを行う場合は、以下のコマンドを実行します。
-    </para>
-@z
+% @x
+%     <para>If you are compiling against <xref linkend="python3"/>, use the
+%     following commands:</para>
+% @y
+%     <para>
+%     <xref linkend="python3"/> を用いてビルドを行う場合は、以下のコマンドを実行します。
+%     </para>
+% @z
 
 @x
     <para>Install <application>xcb-proto</application> by running the following
@@ -180,9 +170,13 @@
 @x
         <seg>None</seg>
         <seg>None</seg>
-        <seg><envar>$XORG_PREFIX</envar>/share/xcb</seg>
+        <seg><envar>$XORG_PREFIX</envar>/share/xcb and
+             <envar>$XORG_PREFIX</envar>/lib/python&python2-majorver;/site-packages/xcbgen or
+             <envar>$XORG_PREFIX</envar>/lib/python&python3-majorver;/site-packages/xcbgen</seg>
 @y
         <seg>&None;</seg>
         <seg>&None;</seg>
-        <seg><envar>$XORG_PREFIX</envar>/share/xcb</seg>
+        <seg><envar>$XORG_PREFIX</envar>/share/xcb,
+             <envar>$XORG_PREFIX</envar>/lib/python&python2-majorver;/site-packages/xcbgen または
+             <envar>$XORG_PREFIX</envar>/lib/python&python3-majorver;/site-packages/xcbgen</seg>
 @z
