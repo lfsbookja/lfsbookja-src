@@ -48,6 +48,90 @@
 @z
 
 @x
+      <para>2013-12-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.42.9.  Fixes
+          <ulink url="&lfs-ticket-root;3462">#3462</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.11.  Fixes
+          <ulink url="&lfs-ticket-root;3459">#3459</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-16.  Fixes
+          <ulink url="&lfs-ticket-root;3455">#3455</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.14.1.  Fixes
+          <ulink url="&lfs-ticket-root;3458">#3458</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update readline patch to upstream level.  Fixes
+          <ulink url="&lfs-ticket-root;3461">#3461</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Use gcc version of libiberty.a.  Fixes
+          <ulink url="&lfs-ticket-root;3456">#3456</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Use different URL for shadow.  Fixes
+          <ulink url="&lfs-ticket-root;3453">#3453</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update coreutils i18n patch to fix problem
+          with uniq. Fixes
+          <ulink url="&lfs-ticket-root;3457">#3457</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove no longer needed makeinfo from Host System
+          Requirements. Fixes
+          <ulink url="&lfs-ticket-root;3460">#3460</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-12-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.42.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;3462">#3462</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;3459">#3459</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-16 へのアップデート。
+          <ulink url="&lfs-ticket-root;3455">#3455</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.14.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3458">#3458</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline のパッチをアップストリームレベルに更新。
+          <ulink url="&lfs-ticket-root;3461">#3461</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc バージョンの libiberty.a を利用することに。
+          <ulink url="&lfs-ticket-root;3456">#3456</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow の URL を別のものに変更。
+          <ulink url="&lfs-ticket-root;3453">#3453</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - coreutils にて uniq の問題を解消するための i18n パッチを更新。
+          <ulink url="&lfs-ticket-root;3457">#3457</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ホストシステム要件にて makeinfo を取り除く。
+          <ulink url="&lfs-ticket-root;3460">#3460</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-12-22</para>
       <itemizedlist>
         <listitem>

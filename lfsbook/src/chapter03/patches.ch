@@ -41,66 +41,46 @@
 </note>
 @z
 
-@x Automake Test Fix Patch
-        <para>Download: <ulink url="&patches-root;&automake-test-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&automake-test-patch;"/></para>
-@z
-
 @x Bash Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
 @z
 
 @x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
-        <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
-        <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>
 @z
 
 @x Coreutils Internationalization Fixes Patch
         <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
 @z
 
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
-        <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
-        <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
 @z
 
 @x Perl Libc Patch
         <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&perl-libc-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
 @z
 
 @x Readline Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
 @z
 
 @x Sysvinit Consolidated Patch
         <para>Download: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
-        <para>MD5 sum: <literal>&sysvinit-consolidated-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
-        <para>MD5 sum: <literal>&sysvinit-consolidated-patch-md5;</literal></para>
 @z
 
 @x Tar Manpage Patch

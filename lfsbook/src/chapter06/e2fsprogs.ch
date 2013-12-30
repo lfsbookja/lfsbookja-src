@@ -35,12 +35,6 @@
 @z
 
 @x
-    <para>First, fix a regression test:</para>
-@y
-    <para>はじめに縮退テストに対する修正を行います。</para>
-@z
-
-@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
@@ -218,7 +212,7 @@
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, 
         resize2fs, and tune2fs</seg>
         <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so},
-        libquota.a and libss.{a,so}</seg>
+        libquota.a, and libss.{a,so}</seg>
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
         /usr/include/quota, /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @y

@@ -309,7 +309,7 @@
         gcc-ar, gcc-nm, gcc-ranlib, and gcov</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
         liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a and libtsan.{a,so}</seg>
@@ -320,7 +320,7 @@
         gcc-ar, gcc-nm, gcc-ranlib, gcov</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
         liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, libtsan.{a,so}</seg>
@@ -453,7 +453,23 @@
           </para>
 @z
 
-@x
+@x libiberty
+          <para>Contains routines used by various GNU programs, including
+          <command>getopt</command>, <command>obstack</command>,
+          <command>strerror</command>, <command>strtol</command>, and
+          <command>strtoul</command></para>
+@y
+          <para>
+          以下に示すような数多くの GNU プログラムが利用する処理ルーチンを提供します。
+          <command>getopt</command>、
+          <command>obstack</command>、
+          <command>strerror</command>、
+          <command>strtol</command>、
+          <command>strtoul</command>
+          </para>
+@z
+
+@x liblto_plugin
           <para>GCC's Link Time Optimization (LTO) plugin allows GCC to perform
           optimizations across compilation units.</para>
 @y

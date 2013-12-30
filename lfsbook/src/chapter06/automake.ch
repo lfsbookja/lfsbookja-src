@@ -29,12 +29,6 @@
 @z
 
 @x
-    <para>Fix an intermittent test failure:</para>
-@y
-    <para>断続的にテストが失敗する点を修正します。</para>
-@z
-
-@x
     <para>Prepare Automake for compilation:</para>
 @y
     <para>&PreparePackage1;Automake&PreparePackage2;</para>
