@@ -32,7 +32,7 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Package information</bridgehead>
+    <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z

@@ -125,7 +125,7 @@
 @z
 
 @x
-    <title>KVM Prerequsites</title>
+    <title>KVM Prerequisites</title>
 @y
     <title>KVM の利用前提</title>
 @z

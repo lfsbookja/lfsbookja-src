@@ -105,11 +105,11 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="required"> <xref linkend="sudo"/> and
+    <para role="recommended"> <xref linkend="sudo"/> and
     <xref linkend="wget"/></para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="required"> <xref linkend="sudo"/>,
+    <para role="recommended"> <xref linkend="sudo"/>,
     <xref linkend="wget"/></para>
 @z
 

@@ -14,18 +14,40 @@
 @z
 
 @x
+  <!ENTITY libdrm-buildsize     "11 MB (additional 1 MB for the tests)">
+  <!ENTITY libdrm-time          "0.2 SBU (additional 0.1 SBU for the tests)">
+@y
+  <!ENTITY libdrm-buildsize     "11 MB (テスト実行時はさらに 1 MB)">
+  <!ENTITY libdrm-time          "0.2 SBU (テスト実行時はさらに 0.1 SBU)">
+@z
+
+@x
     <title>Introduction to libdrm</title>
 @y
     <title>&IntroductionTo1;libdrm&IntroductionTo2;</title>
 @z
 
+% @x
+%       <application>libdrm</application> provides core library routines
+%       for the X Window System to directly interface with video hardware using
+%       the Linux kernel's Direct Rendering Manager (DRM).
+% @y
+%       <application>libdrm</application> は X ウィンドウシステムにおける重要なライブラリルーチンを提供します。
+%       これは Linux カーネルのダイレクトレンダリングモジュール  (Direct Rendering Modules) を利用してビデオハードウェアとの直接のインターフェースを提供するものです。
+% @z
+
 @x
-      <application>libdrm</application> provides core library routines
-      for the X Window System to directly interface with video hardware using
-      the Linux kernel's Direct Rendering Manager (DRM).
+      <application>libdrm</application> provides a user space library for
+      accessing the DRM, direct rendering manager, on operating systems that
+      support the ioctl interface. libdrm is a low-level library, typically used
+      by graphics drivers such as the Mesa DRI drivers, the X drivers, libva and
+      similar projects.
 @y
-      <application>libdrm</application> は X ウィンドウシステムにおける重要なライブラリルーチンを提供します。
-      これは Linux カーネルのダイレクトレンダリングモジュール  (Direct Rendering Modules) を利用してビデオハードウェアとの直接のインターフェースを提供するものです。
+      <application>libdrm</application> provides a user space library for
+      accessing the DRM, direct rendering manager, on operating systems that
+      support the ioctl interface. libdrm is a low-level library, typically used
+      by graphics drivers such as the Mesa DRI drivers, the X drivers, libva and
+      similar projects.
 @z
 
 @x
@@ -77,14 +99,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="xorg7-lib"/>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="xorg7-lib"/> (for Intel KMS API support required by Mesa) <!-- libpciaccess -->
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="xorg7-lib"/>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="xorg7-lib"/> (for Intel KMS API support required by Mesa) <!-- libpciaccess -->
     </para>
 @z
 

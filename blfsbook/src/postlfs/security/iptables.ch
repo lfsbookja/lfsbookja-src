@@ -160,16 +160,6 @@
 @z
 
 @x
-      <parameter>--exec-prefix=</parameter>: Ensure all binaries and
-      libraries end up in <filename class="directory">/</filename>
-      directory tree.
-@y
-      <parameter>--exec-prefix=</parameter>:
-      実行バイナリやライブラリをすべて <filename class="directory">/</filename> ディレクトリツリー配下となるようにします。
-      directory tree.
-@z
-
-@x
       <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all 
       <application>Iptables</application> modules are installed in the 
       <filename class="directory">/lib/xtables</filename> directory.
@@ -177,14 +167,6 @@
       <parameter>--with-xtlibdir=/lib/xtables</parameter>:
       <application>Iptables</application> モジュールをすべて <filename
       class="directory">/lib/xtables</filename> ディレクトリにインストールするようにします。
-@z
-
-@x
-      <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
-      Ensure all the pkgconfig files are in the standard location.
-@y
-      <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
-      pkgconfig ファイルの配置をすべて標準的なディレクトリとします。
 @z
 
 @x
@@ -198,18 +180,16 @@
 @z
 
 @x
-      <option>--enable-devel</option>: This switch enables installation
-      of <application>Iptables</application> development headers that
-      can be used by some packages outside of BLFS.
+      <option>--enable-nfsynproxy</option>: This switch enables installation
+      of <application>nfsynproxy</application> SYNPROXY configuration tool.
 @y
-      <option>--enable-devel</option>:
-      本スイッチは <application>Iptables</application> の開発用ヘッダーをインストールするようにします。
-      これは BLFS には含めていない他のパッケージにて利用されています。
+      <option>--enable-nfsynproxy</option>: This switch enables installation
+      of <application>nfsynproxy</application> SYNPROXY configuration tool.
 @z
 
 @x
       <command>ln -sfv ../../sbin/xtables-multi /usr/bin/iptables-xml</command>:
-      Ensure  the symbolic link for <command>iptables-xml</command> is relative.
+      Ensure the symbolic link for <command>iptables-xml</command> is relative.
 @y
       <command>ln -sfv ../../sbin/xtables-multi /usr/bin/iptables-xml</command>:
       <command>iptables-xml</command> へのシンボリックリンクを相対的なものとします。

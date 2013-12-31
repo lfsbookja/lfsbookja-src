@@ -162,21 +162,21 @@
 @z
 
 @x
-      <command>sed -i "/DGifOpen/s:fd:&amp;, NULL:" ...</command>:
-      This sed fixes building with recent versions of
-      <application>Giflib</application>.
+      <command>sed -i ...</command>: First command fixes building with recent
+      versions of <application>Giflib</application> and the second one corrects
+      linker flags for libImlib2 usage.
 @y
-      <command>sed -i "/DGifOpen/s:fd:&amp;, NULL:" ...</command>:
-      この sed コマンドは、最新の <application>Giflib</application> によりビルドできるようにします。
+      <command>sed -i ...</command>:
+      １つめのコマンドは、最新の <application>Giflib</application> によりビルドできるようにします。
+      また２つめのコマンドは libImlib2 利用のためのリンカーフラグを正しくします。
 @z
 
 @x
-    <para><parameter>--without-x</parameter>: Add this parameter if you do not
+    <para><option>--without-x</option>: Add this switch if you do not
     have an X Window System installed.</para>
 @y
-    <para>
-    <parameter>--without-x</parameter>:
-    X ウィンドウシステムをインストールしていない場合は、このパラメーターを指定します。
+    <para><option>--without-x</option>:
+    X ウィンドウシステムをインストールしていない場合は、このスイッチを指定します。
     </para>
 @z
 

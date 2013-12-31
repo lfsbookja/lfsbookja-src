@@ -72,11 +72,28 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">util-macros Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;util-macros&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="xorg-env"/> (should be set for the following instructions
+      to work)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="xorg-env"/> (本節での内容が適切に動作するように設定が必要)
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/util-macros"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/util-macros"/></para>
 @z
 
 @x

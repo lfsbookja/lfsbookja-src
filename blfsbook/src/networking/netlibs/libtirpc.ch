@@ -139,12 +139,15 @@
 @z
 
 @x
-      <command>sed "s@AM_CONFIG_HEADER@AC_CONFIG_HEADERS@g"
-      -i configure.ac</command>: This sed fixes some issues with
-      <application>Automake</application> 1.13 and later.
+      <parameter>--disable-gssapi</parameter>: This switch is needed if 
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/libgssapi">
+      libgssapi</ulink> is not installed. Remove it if libgssapi is installed
+      and you want to use it.
 @y
-      <command>sed "s@AM_CONFIG_HEADER@AC_CONFIG_HEADERS@g"
-      -i configure.ac</command>: この sed コマンドは <application>Automake</application> 1.13 以降にて発生する問題を修正します。
+      <parameter>--disable-gssapi</parameter>: This switch is needed if 
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/libgssapi">
+      libgssapi</ulink> is not installed. Remove it if libgssapi is installed
+      and you want to use it.
 @z
 
 @x

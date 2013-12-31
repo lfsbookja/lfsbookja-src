@@ -78,11 +78,11 @@
 
 @x
     <bridgehead renderas="sect4">Required (runtime only)</bridgehead>
-    <para role="required"><xref linkend="xclock"/> and
+    <para role="required"><xref linkend="twm"/>, <xref linkend="xclock"/>, and
     <xref linkend="xterm2"/></para>
 @y
     <bridgehead renderas="sect4">&Required; (実行時のみ)</bridgehead>
-    <para role="required"><xref linkend="xclock"/>,
+    <para role="required"><xref linkend="twm"/>, <xref linkend="xclock"/>,
     <xref linkend="xterm2"/></para>
 @z
 

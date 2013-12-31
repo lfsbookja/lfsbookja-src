@@ -17,14 +17,16 @@
   <!ENTITY imagemagick-buildsize     "154 MB (with typical dependencies,
                                       additional 29 MB to run the test suite,
                                       reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "2.3 SBU (typical build - additional 8.8
-                                      SBU to run the test suite)">
+  <!ENTITY imagemagick-time          "2.3 SBU (typical build - additional 5.2
+                                      SBU to run the test suite and 29 SBU to
+                                      run the validation suite)">
 @y
   <!ENTITY imagemagick-buildsize     "154 MB (with typical dependencies,
                                       additional 29 MB to run the test suite,
                                       reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "2.3 SBU (typical build - additional 8.8
-                                      SBU to run the test suite)">
+  <!ENTITY imagemagick-time          "2.3 SBU (typical build - additional 5.2
+                                      SBU to run the test suite and 29 SBU to
+                                      run the validation suite)">
 @z
 
 @x
@@ -164,9 +166,12 @@
       <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
       <xref linkend="ffmpeg"/>,
       <ulink url="http://www.fftw.org/">FFTW</ulink>,
-      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink> or
+      <ulink url="http://www.mupdf.com/">MuPDF</ulink>,
+<!--      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink> or -->
+      <ulink url="http://www.openpgp.org/resources/downloads">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/profiles.zip">Profiles</ulink>,
       <xref linkend="sane"/>,
       <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
       <filename>www/formats.html</filename>),
@@ -182,9 +187,12 @@
       <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
       <xref linkend="ffmpeg"/>,
       <ulink url="http://www.fftw.org/">FFTW</ulink>,
-      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink> or
+      <ulink url="http://www.mupdf.com/">MuPDF</ulink>,
+<!--      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink> or -->
+      <ulink url="http://www.openpgp.org/resources/downloads">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/profiles.zip">Profiles</ulink>,
       <xref linkend="sane"/>,
       <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
       <filename>www/formats.html</filename>),
@@ -199,8 +207,8 @@
       <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <!-- <ulink url="http://www.i3a.org/i_flashpix.html">FlashPIX</ulink> (or -->
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/libfpx-1.3.1-2.tar.bz2">
-      FlashPIX</ulink>,
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
+      FlashPIX (libfpx)</ulink>,
       <!-- Added already from the Xorg recommended dependency <xref linkend="freetype2"/>, -->
       <xref linkend="jasper"/>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
@@ -224,8 +232,8 @@
       <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <!-- <ulink url="http://www.i3a.org/i_flashpix.html">FlashPIX</ulink> (or -->
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/libfpx-1.3.1-2.tar.bz2">
-      FlashPIX</ulink>,
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
+      FlashPIX (libfpx)</ulink>,
       <!-- Added already from the Xorg recommended dependency <xref linkend="freetype2"/>, -->
       <xref linkend="jasper"/>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
@@ -250,8 +258,8 @@
     <para role="optional">
       <ulink url="http://www.blender.org/">Blender</ulink>,
       <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
-      <ulink url="http://www.ghostscript.com/download/gpcldnld.html/">GhostPCL</ulink> or
-      <ulink url="http://www.ghostscript.com/GhostPCL.html">GhostPDL</ulink>,
+      <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink> or
+      <ulink url="http://www.ghostscript.com/download/gpdldnld.html">GhostPDL</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gimp"/>,
       <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
@@ -265,14 +273,14 @@
     <para role="optional">
       <ulink url="http://www.blender.org/">Blender</ulink>,
       <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
-      <ulink url="http://www.ghostscript.com/download/gpcldnld.html/">GhostPCL</ulink> or
-      <ulink url="http://www.ghostscript.com/GhostPCL.html">GhostPDL</ulink>,
+      <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink> or
+      <ulink url="http://www.ghostscript.com/download/gpdldnld.html">GhostPDL</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gimp"/>,
       <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
       <xref linkend="graphviz"/>,
       <xref linkend="inkscape"/>,
-      <ulink url="http://www.povray.org/">POV-Ray</ulink>,
+      <ulink url="http://www.povray.org/">POV-Ray</ulink>, and
       <ulink url="http://radsite.lbl.gov/radiance/HOME.html">Radiance</ulink>
     </para>
 @z
@@ -344,23 +352,23 @@
 @z
 
 @x
-      The validation suite is intended to be run after the package is installed.
-@y
-      The validation suite is intended to be run after the package is installed.
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-      To test the installation, issue: <command>make check</command>. Note that the
-      EPS, PS, and PDF tests require a working <application>Ghostscript</application>.
+      To test the installation, issue: <command>make check</command>. For a more
+      comprehensive test, run the <application>ImageMagick</application>
+      validation suite, also after the package is installed. Note that the EPS,
+      PS, and PDF tests require a working
+      <application>Ghostscript</application>.
 @y
-      To test the installation, issue: <command>make check</command>. Note that the
-      EPS, PS, and PDF tests require a working <application>Ghostscript</application>.
+      To test the installation, issue: <command>make check</command>. For a more
+      comprehensive test, run the <application>ImageMagick</application>
+      validation suite, also after the package is installed. Note that the EPS,
+      PS, and PDF tests require a working
+      <application>Ghostscript</application>.
 @z
 
 @x
@@ -502,8 +510,10 @@
         identify, import, Magick-config, Magic++-config, MagickCore-config,
         MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
 
-        <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so, libMagick++-6.Q16.so,
-        and numerous plugin modules</seg>
+        <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so,
+        libMagick++-6.Q16.so,
+        and numerous plugin modules under
+        /usr/lib/ImageMagick-&imagemagick-version;/modules-Q16/coders/</seg>
 
         <seg>/etc/ImageMagick-6,
         /usr/include/ImageMagick-6,
@@ -515,17 +525,19 @@
 @y
         <seg>animate, compare, composite, conjure, convert, display,
         identify, import, Magick-config, Magic++-config, MagickCore-config,
-        MagickWand-config, mogrify, montage, stream, Wand-config</seg>
+        MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
 
-        <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so, libMagick++-6.Q16.so,
-        この他に多数のプラグインモジュール</seg>
+        <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so,
+        libMagick++-6.Q16.so,
+        and numerous plugin modules under
+        /usr/lib/ImageMagick-&imagemagick-version;/modules-Q16/coders/</seg>
 
         <seg>/etc/ImageMagick-6,
         /usr/include/ImageMagick-6,
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/Image,
-        /usr/share/ImageMagick-6,
+        /usr/share/ImageMagick-6 and
         /usr/share/doc/ImageMagick-6</seg>
 @z
 

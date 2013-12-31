@@ -295,6 +295,7 @@
           /etc/fonts,
           /usr/include/fontconfig,
           /usr/share/doc/fontconfig-&fontconfig-version;,
+          /usr/share/fontconfig,
           /usr/share/xml/fontconfig and
           /var/cache/fontconfig
         </seg>
@@ -310,6 +311,7 @@
           /etc/fonts,
           /usr/include/fontconfig,
           /usr/share/doc/fontconfig-&fontconfig-version;,
+          /usr/share/fontconfig,
           /usr/share/xml/fontconfig,
           /var/cache/fontconfig
         </seg>

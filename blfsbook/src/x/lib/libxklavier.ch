@@ -175,14 +175,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+	<seg>
+	  None
+	</seg>
         <seg>
           libxklavier.so
         </seg>
@@ -191,6 +196,9 @@
           /usr/share/gtk-doc/html/libxklavier
         </seg>
 @y
+	<seg>
+	  &None;
+	</seg>
         <seg>
           libxklavier.so
         </seg>

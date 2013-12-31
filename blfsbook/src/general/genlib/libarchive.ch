@@ -81,8 +81,8 @@ Download (HTTP): <ulink url="&libarchive-download-http;"/>
       <xref linkend="attr"/>,
       <xref linkend="libxml2"/> or
       <xref linkend="expat"/>,
-      <xref linkend="LZO"/>,
-      <xref linkend="nettle"/> and
+      <xref linkend="LZO"/>, and
+      <xref linkend="nettle"/> or
       <xref linkend="openssl"/>
     </para>
 @y
@@ -93,7 +93,7 @@ Download (HTTP): <ulink url="&libarchive-download-http;"/>
       <xref linkend="libxml2"/> または
       <xref linkend="expat"/>,
       <xref linkend="LZO"/>,
-      <xref linkend="nettle"/>,
+      <xref linkend="nettle"/> または
       <xref linkend="openssl"/>
     </para>
 @z

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY ruby-time          "3.4 SBU (additional 0.3 SBU for tests)">
+  <!ENTITY ruby-time          "3.1 SBU (additional 0.2 SBU for tests)">
 @y
-  <!ENTITY ruby-time          "3.4 SBU (テスト実行の場合はさらに 0.3 SBU)">
+  <!ENTITY ruby-time          "3.1 SBU (テスト実行の場合はさらに 0.2 SBU)">
 @z
 
 @x

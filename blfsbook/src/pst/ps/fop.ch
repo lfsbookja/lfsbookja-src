@@ -109,13 +109,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="xorg7"/> and 
       <xref linkend="apache-ant"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="xorg7"/>,
       <xref linkend="apache-ant"/>
     </para>
 @z
@@ -124,6 +122,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="junit"/> (to run tests),
+      <xref linkend="x-window-system"/> (to run tests),
       <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
       <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
       <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
@@ -137,6 +136,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="junit"/> (テスト実行のため),
+      <xref linkend="x-window-system"/> (テスト実行のため),
       <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
       <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
       <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
@@ -149,10 +149,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/fop"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/fop"/></para>
 @z
 
 @x
@@ -161,16 +159,16 @@
     <title>&InstallationOf1;fop&InstallationOf2;</title>
 @z
 
-@x
-      <para>You must run this installation from an X-window using a GL-aware
-      <application>Xorg</application> server or some of the
-      <application>JUnit</application> tests will hang.</para>
-@y
-      <para>
-      ここに示すインストール手順は、GL 機能を実装した <application>Xorg</application> サーバーのもとで X ウィンドウシステムから実施する必要があります。
-      そうしないと <application>JUnit</application> のテストが失敗します。
-      </para>
-@z
+% @x
+%       <para>You must run this installation from an X-window using a GL-aware
+%       <application>Xorg</application> server or some of the
+%       <application>JUnit</application> tests will hang.</para>
+% @y
+%       <para>
+%       ここに示すインストール手順は、GL 機能を実装した <application>Xorg</application> サーバーのもとで X ウィンドウシステムから実施する必要があります。
+%       そうしないと <application>JUnit</application> のテストが失敗します。
+%       </para>
+% @z
 
 @x
     <para>Ensure <envar>$JAVA_HOME</envar> is set correctly before beginning

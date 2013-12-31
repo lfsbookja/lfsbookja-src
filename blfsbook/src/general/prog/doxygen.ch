@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY doxygen-time          "1.2 SBU (includes building the GUI frontend)">
-@y
-  <!ENTITY doxygen-time          "1.2 SBU (GUI フロントエンドのビルドを含む)">
-@z
-
-@x
     <title>Introduction to Doxygen</title>
 @y
     <title>&IntroductionTo1;Doxygen&IntroductionTo2;</title>

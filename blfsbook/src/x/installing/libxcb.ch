@@ -14,6 +14,16 @@
 @z
 
 @x
+  <!ENTITY libxcb-buildsize     "42 MB (124 MB with doxygen
+                                 generated documentation)">
+  <!ENTITY libxcb-time          "0.3 SBU (additional 0.1 to generate
+                                 API documentation)">
+@y
+  <!ENTITY libxcb-buildsize     "42 MB (doxygen によるドキュメント生成時は 124 MB)">
+  <!ENTITY libxcb-time          "0.3 SBU (API ドキュメント生成時はさらに 0.1)">
+@z
+
+@x
     <title>Introduction to libxcb</title>
 @y
     <title>&IntroductionTo1;libxcb&IntroductionTo2;</title>
@@ -84,15 +94,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libXau"/>,
-      <xref linkend="libXdmcp"/> and
+      <xref linkend="libXau"/> and
       <xref linkend="xcb-proto"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libXau"/>,
-      <xref linkend="libXdmcp"/>,
       <xref linkend="xcb-proto"/>
     </para>
 @z

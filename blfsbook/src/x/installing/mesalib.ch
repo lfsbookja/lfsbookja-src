@@ -141,18 +141,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="expat"/>,
-      <xref linkend="libdrm"/>,
-      <xref linkend="libxml2"/>, and
-      <xref linkend="makedepend"/>
+      <xref linkend="libxml2"/>,
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="libdrm"/>, and
+      <xref linkend="expat"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="expat"/>,
-      <xref linkend="libdrm"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="makedepend"/>
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="libdrm"/>,
+      <xref linkend="expat"/>
     </para>
 @z
 

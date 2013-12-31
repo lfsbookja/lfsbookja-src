@@ -26,11 +26,13 @@
 @z
 
 @x
-    <para>Theora is a free and open video compression format.</para>
+      <application>libtheora</application> is a reference implementation of the
+      Theora video compression format being developed by the Xiph.Org
+      Foundation.
 @y
-    <para>
-    Theora はフリーでオープンなビデオ圧縮フォーマットです。
-    </para>
+      <application>libtheora</application> is a reference implementation of the
+      Theora video compression format being developed by the Xiph.Org
+      Foundation.
 @z
 
 @x

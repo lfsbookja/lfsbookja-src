@@ -190,9 +190,9 @@
 @x
       If you passed the <option>--enable-javahl</option> parameter to
       <command>configure</command> and wish to build the Java bindings, issue
-      the following command: <command>make javahl</command>
+      the following command:
 @y
-      <command>configure</command> において <option>--enable-javahl</option> を指定していて、Java バインディングをビルドしたい場合は <command>make javahl</command> を実行します。
+      <command>configure</command> において <option>--enable-javahl</option> を指定していて、Java バインディングをビルドしたい場合は以下を実行します。
 @z
 
 @x

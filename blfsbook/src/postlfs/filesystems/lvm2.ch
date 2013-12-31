@@ -148,36 +148,36 @@
 @z
 
 @x
-      <option>--enable-applib</option>: This switch enables
+      <parameter>--enable-applib</parameter>: This switch enables
       building of the shared application library.
 @y
-      <option>--enable-applib</option>:
+      <parameter>--enable-applib</parameter>:
       このスイッチは共有アプリケーションライブラリをビルドすることを指示します。
 @z
 
 @x
-      <option>--enable-cmdlib</option>: This switch enables
+      <parameter>--enable-cmdlib</parameter>: This switch enables
       building of the shared command library. It is required
       when building the event daemon.
 @y
-      <option>--enable-cmdlib</option>:
+      <parameter>--enable-cmdlib</parameter>:
       このスイッチは共有コマンドライブラリをビルドすることを指示します。
       デーモンをビルドする際にはこれが必要になります。
 @z
 
 @x
-      <option>--enable-pkgconfig</option>: This switch enables
+      <parameter>--enable-pkgconfig</parameter>: This switch enables
       installation of <command>pkg-config</command> support files.
 @y
-      <option>--enable-pkgconfig</option>:
+      <parameter>--enable-pkgconfig</parameter>:
       このスイッチの指定により pkgconfig サポートファイルをインストールします。
 @z
 
 @x
-     <option>--enable-udev_sync</option>: This switch enables
+     <parameter>--enable-udev_sync</parameter>: This switch enables
       synchronisation with <application>Udev</application> processing.
 @y
-     <option>--enable-udev_sync</option>:
+     <parameter>--enable-udev_sync</parameter>:
      このスイッチは <application>Udev</application> との同期処理を有効にします。
 @z
 

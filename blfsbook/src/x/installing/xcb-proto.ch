@@ -81,15 +81,16 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="python2"/> or
-      <xref linkend="python3"/> and
-      <xref linkend="xorg7"/>
+      <xref linkend="python3"/>, and
+      <xref linkend="xorg-env"/> (should be set for the following instructions
+      to work)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="python2"/> または
       <xref linkend="python3"/>,
-      <xref linkend="xorg7"/>
+      <xref linkend="xorg-env"/> (本節での内容が適切に動作するように設定が必要)
     </para>
 @z
 
