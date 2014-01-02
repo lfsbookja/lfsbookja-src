@@ -77,12 +77,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>
+      <xref linkend="openssl"/> (for examples)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>
+      <xref linkend="openssl"/> (example プログラムのため)
     </para>
 @z
 

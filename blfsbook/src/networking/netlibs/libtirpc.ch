@@ -92,12 +92,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/libgssapi">libgssapi</ulink>
+      <xref linkend="mitkrb"/> for the GSSAPI
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/libgssapi">libgssapi</ulink>
+      <xref linkend="mitkrb"/> GSSAPI のために
     </para>
 @z
 
@@ -140,14 +140,12 @@
 
 @x
       <parameter>--disable-gssapi</parameter>: This switch is needed if 
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/libgssapi">
-      libgssapi</ulink> is not installed. Remove it if libgssapi is installed
-      and you want to use it.
+      no GSSAPI is installed. Remove this switch if you have one
+      installed (for example <xref linkend="mitkrb"/>) and you wish to use it.
 @y
       <parameter>--disable-gssapi</parameter>: This switch is needed if 
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/libgssapi">
-      libgssapi</ulink> is not installed. Remove it if libgssapi is installed
-      and you want to use it.
+      no GSSAPI is installed. Remove this switch if you have one
+      installed (for example <xref linkend="mitkrb"/>) and you wish to use it.
 @z
 
 @x

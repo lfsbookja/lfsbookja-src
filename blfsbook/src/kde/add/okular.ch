@@ -125,24 +125,26 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="libkexiv2"/>,
       <ulink url="https://projects.kde.org/projects/extragear/base/plasma-mobile">ActiveApp</ulink>
       (for developing applications for Plasma Active),
       <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (for PostScript support),
       <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
-      <ulink url="http://djvu.org/">DjVuLibre</ulink>, and
-      <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink>
-
+      <ulink url="http://djvu.org/">DjVuLibre</ulink>,
+      <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink> and
+      <ulink url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket">Mobipocket</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="libkexiv2"/>,
       <ulink url="https://projects.kde.org/projects/extragear/base/plasma-mobile">ActiveApp</ulink>
       (Plasma Active のアプリケーション開発のため),
       <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (PostScript サポートのため),
       <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
       <ulink url="http://djvu.org/">DjVuLibre</ulink>,
-      <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink>
-
+      <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink>,
+      <ulink url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket">Mobipocket</ulink>
     </para>
 @z
 

@@ -180,15 +180,15 @@
       LFS 構築時に <application>Coreutils</application> パッケージによってインストールされた man ページを置き換えないようにするものです。
 @z
 
-@x
-      <command>sed -i -e '...' -e '...' man/Makefile.in</command>: This command
-      disables the installation of Chinese and Korean manual pages, since
-      <application>Man-DB</application> cannot format them properly.
-@y
-      <command>sed -i -e '...' -e '...' man/Makefile.in</command>:
-      このコマンドは中国語および韓国語による man ページをインストールしないようにします。
-      これらのページは <application>Man-DB</application> が適切に取り扱うことができないためです。
-@z
+% @x
+%       <command>sed -i -e '...' -e '...' man/Makefile.in</command>: This command
+%       disables the installation of Chinese and Korean manual pages, since
+%       <application>Man-DB</application> cannot format them properly.
+% @y
+%       <command>sed -i -e '...' -e '...' man/Makefile.in</command>:
+%       このコマンドは中国語および韓国語による man ページをインストールしないようにします。
+%       これらのページは <application>Man-DB</application> が適切に取り扱うことができないためです。
+% @z
 
 @x
       <command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e

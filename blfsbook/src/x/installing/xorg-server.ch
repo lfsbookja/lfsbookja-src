@@ -89,7 +89,9 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="openssl"/>,
+      <xref linkend="openssl"/> or
+      <xref linkend="nettle"/> or
+      <xref linkend="libgcrypt"/>,
       <xref linkend="pixman"/>,
       <xref linkend="xorg7-font"/>, and
       <xref linkend="xkeyboard-config"/>
@@ -97,7 +99,9 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="openssl"/>,
+      <xref linkend="openssl"/> または
+      <xref linkend="nettle"/> または
+      <xref linkend="libgcrypt"/>,
       <xref linkend="pixman"/>,
       <xref linkend="xorg7-font"/>,
       <xref linkend="xkeyboard-config"/>

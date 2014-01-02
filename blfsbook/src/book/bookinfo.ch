@@ -56,6 +56,12 @@
 @z
 
 @x
+      <revremark>Eighth release</revremark>
+@y
+      <revremark>第8次リリース</revremark>
+@z
+
+@x
       <revremark>Seventh release</revremark>
 @y
       <revremark>第7次リリース</revremark>

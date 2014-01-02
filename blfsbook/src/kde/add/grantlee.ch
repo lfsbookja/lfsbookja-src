@@ -21,9 +21,9 @@
 
 % opening the door for theming. がうまく訳せそうにない・・・
 @x
-       Grantlee is a set of Free Software libraries written using the Qt
-       framework.  Currently two libraries are shipped with Grantlee: Grantlee
-       Templates and Grantlee TextDocument.  The goal of Grantlee Templates is
+       Grantlee is a set of free software libraries written using the Qt
+       framework. Currently two libraries are shipped with Grantlee: Grantlee
+       Templates and Grantlee TextDocument. The goal of Grantlee Templates is
        to make it easier for application developers to separate the structure
        of documents from the data they contain, opening the door for theming.
 @y
@@ -152,7 +152,7 @@
         </seg>
         <seg>
            &kde-dir;/lib/cmake/grantlee, 
-           &kde-dir;/lib/grantlee/0.3, and
+           &kde-dir;/lib/grantlee/0.4, and
            &kde-dir;/include/grantlee</seg>
 @y
         <seg>&None;</seg>
@@ -162,6 +162,6 @@
         </seg>
         <seg>
            &kde-dir;/lib/cmake/grantlee, 
-           &kde-dir;/lib/grantlee/0.3,
+           &kde-dir;/lib/grantlee/0.4,
            &kde-dir;/include/grantlee</seg>
 @z
