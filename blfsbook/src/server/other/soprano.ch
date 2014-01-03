@@ -83,31 +83,31 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
-      <xref linkend="qt4"/>,
-      <xref linkend="redland"/>, and
-      <xref linkend="clucene"/>
+      <xref linkend="qt4"/>, and
+      <xref linkend="redland"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
       <xref linkend="qt4"/>,
-      <xref linkend="redland"/>,
-      <xref linkend="clucene"/>
+      <xref linkend="redland"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended (Required if building KDE)</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="clucene"/>,
       <xref linkend="dbus"/>,
       <xref linkend="libiodbc"/> (required for the Virtuoso backend. Additionally,
       <xref linkend="virtuoso"/> is required as a runtime dependency for this
       backend.)
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended; (KDE ビルド時に必要)</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="clucene"/>,
       <xref linkend="dbus"/>,
       <xref linkend="libiodbc"/> (Virtuoso バックエンドにて必要。
       またランタイムの依存パッケージとして <xref linkend="virtuoso"/> が必要。)

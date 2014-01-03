@@ -85,13 +85,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="git"/> and
       <xref linkend="cmake"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="git"/>,
       <xref linkend="cmake"/>
     </para>
 @z
@@ -118,16 +116,6 @@
     <title>Installation of CLucene</title>
 @y
     <title>&InstallationOf1;CLucene&InstallationOf2;</title>
-@z
-
-@x
-      Since <application>CLucene</application> developers haven't released any
-      tarballs yet, to obtain the source code first clone
-      <application>CLucene</application> git repository then checkout the
-      &clucene-version; version:
-@y
-      <application>CLucene</application> の開発者は tarball を提供していません。
-      したがってソースコードを入手するためには <application>CLucene</application> の git リポジトリをクローン取得し、バージョン &clucene-version; をチェックアウトする必要があります。
 @z
 
 @x
