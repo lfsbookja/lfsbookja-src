@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2014-01-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to grep-2.16.  Fixes
+          <ulink url="&lfs-ticket-root;3418">#3418</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-01-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grep-2.16 へのアップデート。
+          <ulink url="&lfs-ticket-root;3418">#3418</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-12-29</para>
       <itemizedlist>
         <listitem>
