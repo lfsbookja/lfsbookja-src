@@ -198,9 +198,9 @@ CHANGE_FILES = \
 	glibmm.ch \
 	gobject-introspection.ch \
 	gmime.ch \
+        grantlee.ch \
 	gsl.ch \
 	icu.ch \
-	iso-codes.ch \
 	js.ch \
 	json-c.ch \
 	json-glib.ch \
@@ -243,7 +243,6 @@ CHANGE_FILES = \
 	ptlib.ch \
 	qca.ch \
 	qjson.ch \
-	sbc.ch \
 	talloc.ch \
 	wv.ch
 
@@ -456,9 +455,9 @@ glib2.xml:                 $(BOOKdir)/$@ $(srcdir)/glib2.ch
 glibmm.xml:                $(BOOKdir)/$@ $(srcdir)/glibmm.ch
 gmime.xml:                 $(BOOKdir)/$@ $(srcdir)/gmime.ch
 gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch
+grantlee.xml:              $(BOOKdir)/$@ $(srcdir)/grantlee.ch
 gsl.xml:                   $(BOOKdir)/$@ $(srcdir)/gsl.ch
 icu.xml:                   $(BOOKdir)/$@ $(srcdir)/icu.ch
-iso-codes.xml:             $(BOOKdir)/$@ $(srcdir)/iso-codes.ch
 js.xml:                    $(BOOKdir)/$@ $(srcdir)/js.ch
 json-c.xml:                $(BOOKdir)/$@ $(srcdir)/json-c.ch
 json-glib.xml:             $(BOOKdir)/$@ $(srcdir)/json-glib.ch
@@ -501,7 +500,6 @@ pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
 ptlib.xml:                 $(BOOKdir)/$@ $(srcdir)/ptlib.ch
 qca.xml:                   $(BOOKdir)/$@ $(srcdir)/qca.ch
 qjson.xml:                 $(BOOKdir)/$@ $(srcdir)/qjson.ch
-sbc.xml:                   $(BOOKdir)/$@ $(srcdir)/sbc.ch
 talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch
 wv.xml:                    $(BOOKdir)/$@ $(srcdir)/wv.ch
 

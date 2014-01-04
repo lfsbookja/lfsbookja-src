@@ -82,29 +82,31 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/> and
-    <xref linkend="glib2"/>
+      <xref linkend="automoc4"/> and
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>,
-    <xref linkend="glib2"/>
+      <xref linkend="automoc4"/>,
+      <xref linkend="glib2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend='pulseaudio'/> and
-    <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
-    </para>   
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="qt5"/> and
+      <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend='pulseaudio'/>,
-    <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
-    </para>   
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="qt5"/>,
+      <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
+    </para>
 @z
 
 @x
@@ -156,23 +158,41 @@
 @z
 
 @x
-    <para><option>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</option>: 
-    This option ensures that the plugins and mkspecs files get installed in 
-    the correct location.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply higher level of the compiler optimizations.
 @y
-    <para><option>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</option>:
-    このオプションは、プラグインと mkspecs ファイルを適切なディレクトリにインストールします。
-    </para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
+      本スイッチは、最適なコンパイラーオプションを利用します。
 @z
 
 @x
-    <para><option>-DDBUS_INTERFACES_INSTALL_DIR=/usr/share/dbus-1/interfaces</option>:
-    This option sets the correct installation path for a D-Bus interfaces file.
-    </para>
+      <parameter>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</parameter>:
+      This switch ensures that the plugins and mkspecs files get installed in
+      the correct location.
 @y
-    <para><option>-DDBUS_INTERFACES_INSTALL_DIR=/usr/share/dbus-1/interfaces</option>:
-    このオプションは D-Bus インターフェースファイルを、適切なパスにインストールします。
-    </para>
+      <parameter>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</parameter>:
+      本スイッチは、プラグインと mkspecs ファイルを適切なディレクトリにインストールします。
+@z
+
+@x
+     <parameter>-DDBUS_INTERFACES_INSTALL_DIR=/usr/share/dbus-1/interfaces</parameter>:
+      This switch sets the correct installation path for the 
+      <application>D-Bus</application> interfaces file.
+@y
+      <parameter>-DDBUS_INTERFACES_INSTALL_DIR=/usr/share/dbus-1/interfaces</parameter>:
+      このオプションは <application>D-Bus</application> インターフェースファイルを、適切なパスにインストールします。
+@z
+
+@x
+      <option>-DPHONON_BUILD_PHONON4QT5=ON</option>: Use this switch if you want to
+      build <application>Phonon</application> against <application>Qt5</application>.
+      Note that both <application>Qt4</application> and <application>Qt5</application>
+      versions can be installed at the same time without any conflicts.
+@y
+      <option>-DPHONON_BUILD_PHONON4QT5=ON</option>: Use this switch if you want to
+      build <application>Phonon</application> against <application>Qt5</application>.
+      Note that both <application>Qt4</application> and <application>Qt5</application>
+      versions can be installed at the same time without any conflicts.
 @z
 
 @x
@@ -192,11 +212,29 @@
 @z
 
 @x
-        <seg>none</seg>
-        <seg>libphonon.so and libphononexperimental.so</seg>
-        <seg>none</seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          libphonon.so and
+          libphononexperimental.so
+        </seg>
+        <seg>
+          &qt4-dir;/include/KDE/Phonon,
+          &qt4-dir;/include/phonon, and
+          &qt4-dir;/share/phonon
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libphonon.so, libphononexperimental.so</seg>
-        <seg>&None;</seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          libphonon.so,
+          libphononexperimental.so
+        </seg>
+        <seg>
+          &qt4-dir;/include/KDE/Phonon,
+          &qt4-dir;/include/phonon,
+          &qt4-dir;/share/phonon
+        </seg>
 @z

@@ -26,7 +26,6 @@ CHANGE_FILES = \
 	gtkmm2.ch               \
 	gtkmm3.ch               \
 	gtk-engines.ch          \
-	hicolor-icon-theme.ch   \
 	lib.ch                  \
 	libdrm.ch               \
 	libnotify.ch            \
@@ -35,7 +34,6 @@ CHANGE_FILES = \
 	pangomm.ch              \
 	qt4.ch                  \
 	qt5.ch                  \
-	shared-mime-info.ch     \
 	startup-notification.ch \
 	xulrunner.ch            \
 	webkitgtk.ch            \
@@ -73,7 +71,6 @@ gtk+3.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+3.ch
 gtk-engines.xml:          $(BOOKdir)/$@ $(srcdir)/gtk-engines.ch
 gtkmm2.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm2.ch
 gtkmm3.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm3.ch
-hicolor-icon-theme.xml:   $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
 #lesstif.xml:              $(BOOKdir)/$@ $(srcdir)/lesstif.ch
 #	cp -p $(BOOKdir)/$@{,.orig}
 #	sed -e 's/®/\&reg;/g' $(BOOKdir)/$@.orig > $(BOOKdir)/$@
@@ -87,7 +84,6 @@ pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch
 pangomm.xml:              $(BOOKdir)/$@ $(srcdir)/pangomm.ch
 qt4.xml:                  $(BOOKdir)/$@ $(srcdir)/qt4.ch
 qt5.xml:                  $(BOOKdir)/$@ $(srcdir)/qt5.ch
-shared-mime-info.xml:     $(BOOKdir)/$@ $(srcdir)/shared-mime-info.ch
 startup-notification.xml: $(BOOKdir)/$@ $(srcdir)/startup-notification.ch
 xulrunner.xml:            $(BOOKdir)/$@ $(srcdir)/xulrunner.ch
 webkitgtk.xml:            $(BOOKdir)/$@ $(srcdir)/webkitgtk.ch

@@ -58,6 +58,7 @@ CHANGE_FILES = \
 	opal.ch               \
 	opus.ch               \
 	pulseaudio.ch         \
+	sbc.ch                \
 	sdl.ch                \
 	soundtouch.ch         \
 	speex.ch              \
@@ -132,6 +133,7 @@ libvpx.xml:                  $(BOOKdir)/$@ $(srcdir)/libvpx.ch
 opal.xml:                    $(BOOKdir)/$@ $(srcdir)/opal.ch
 opus.xml:                    $(BOOKdir)/$@ $(srcdir)/opus.ch
 pulseaudio.xml:              $(BOOKdir)/$@ $(srcdir)/pulseaudio.ch
+sbc.xml:                     $(BOOKdir)/$@ $(srcdir)/sbc.ch
 sdl.xml:                     $(BOOKdir)/$@ $(srcdir)/sdl.ch
 soundtouch.xml:              $(BOOKdir)/$@ $(srcdir)/soundtouch.ch
 speex.xml:                   $(BOOKdir)/$@ $(srcdir)/speex.ch
