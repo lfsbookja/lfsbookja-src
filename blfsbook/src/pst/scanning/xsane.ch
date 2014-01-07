@@ -93,30 +93,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="required">
-      <xref linkend="xdg-utils"/> (for the help docummentation at runtime)
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="required">
-      <xref linkend="xdg-utils"/> (実行時のヘルプドキュメントのため)
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libtiff"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="lcms"/>, and
+      <xref linkend="lcms"/> and
       <xref linkend="gimp"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libtiff"/>,
-      <xref linkend="libjpeg"/>,
       <xref linkend="lcms"/>,
       <xref linkend="gimp"/>
     </para>
@@ -158,12 +142,13 @@
 @z
 
 @x
-    <para>If you have not installed <xref linkend="xdg-utils"/> and have not
-    issued the first sed:</para>
+    <para>A browser of your choice can be used to get inline help, using the
+    following command,  as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
-    <para>
-    <xref linkend="xdg-utils"/> をインストールしていない場合で、冒頭の sed コマンドを実行していない場合は、以下を実行します。
-    </para>
+    <para>A browser of your choice can be used to get inline help, using the
+    following command,  as the <systemitem class="username">root</systemitem>
+    user:</para>
 @z
 
 @x
@@ -191,15 +176,15 @@
     <title>&CommandExplanations;</title>
 @z
 
-@x
-    <para><command>sed -i -e 's/netscape/xdg-open/' src/xsane.h </command>:
-    This is to use <command>xdg-open</command> for the help documentation,
-    instead of the hardcoded browser.</para>
-@y
-    <para><command>sed -i -e 's/netscape/xdg-open/' src/xsane.h </command>:
-    これはヘルプドキュメントとして、ハードコーディングされたブラウザーではなく <command>xdg-open</command> を利用することを指定します。
-    </para>
-@z
+% @x
+%     <para><command>sed -i -e 's/netscape/xdg-open/' src/xsane.h </command>:
+%     This is to use <command>xdg-open</command> for the help documentation,
+%     instead of the hardcoded browser.</para>
+% @y
+%     <para><command>sed -i -e 's/netscape/xdg-open/' src/xsane.h </command>:
+%     これはヘルプドキュメントとして、ハードコーディングされたブラウザーではなく <command>xdg-open</command> を利用することを指定します。
+%     </para>
+% @z
 
 @x
     <para><command>ln -v -s ../../doc/xsane-&xsane-version;

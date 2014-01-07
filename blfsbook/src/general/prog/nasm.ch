@@ -37,39 +37,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&NASM-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&nasm-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&NASM-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&nasm-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&NASM-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&nasm-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&NASM-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&nasm-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &NASM-md5sum;</para>
+        <para>Download MD5 sum: &nasm-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &NASM-md5sum;</para>
+        <para>&Download; MD5 sum: &nasm-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &NASM-size;</para>
+        <para>Download size: &nasm-size;</para>
 @y
-        <para>&DownloadSize;: &NASM-size;</para>
+        <para>&DownloadSize;: &nasm-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &NASM-buildsize;</para>
+        <para>Estimated disk space required: &nasm-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &NASM-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &nasm-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &NASM-time;</para>
+        <para>Estimated build time: &nasm-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &NASM-time;</para>
+        <para>&Estimatedbuildtime;: &nasm-time;</para>
 @z
 
 @x
@@ -160,11 +160,11 @@
 @x
         <seg>nasm and ndisasm</seg>
         <seg>None</seg>
-        <seg>/usr/share/doc/nasm-&NASM-version;</seg>
+        <seg>/usr/share/doc/nasm-&nasm-version;</seg>
 @y
         <seg>nasm, ndisasm</seg>
         <seg>&None;</seg>
-        <seg>/usr/share/doc/nasm-&NASM-version;</seg>
+        <seg>/usr/share/doc/nasm-&nasm-version;</seg>
 @z
 
 @x

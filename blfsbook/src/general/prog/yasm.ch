@@ -21,12 +21,12 @@
 
 @x
     <para><application>Yasm</application> is a complete rewrite of the
-    <xref linkend="NASM"/> assembler. It supports the x86 and AMD64 instruction
+    <xref linkend="nasm"/> assembler. It supports the x86 and AMD64 instruction
     sets, accepts NASM and GAS assembler syntaxes and outputs binary, ELF32 and
     ELF64 object formats.</para>
 @y
     <para>
-    <application>Yasm</application> は <xref linkend="NASM"/> アセンブラーの完全な書き直しにより構築されています。
+    <application>Yasm</application> は <xref linkend="nasm"/> アセンブラーの完全な書き直しにより構築されています。
     これは x86 と AMD64 の命令セットをサポートします。
     NASM アセンブラーと GAS アセンブラーの文法との互換性があり、ELF32 および ELF64 のオブジェクト形式を出力します。
     </para>

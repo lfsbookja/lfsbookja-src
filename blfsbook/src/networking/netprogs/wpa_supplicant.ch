@@ -128,11 +128,13 @@
 @z
 
 @x
-      Enable the following options in the kernel configuration
-      and recompile the kernel if necessary:
+      Enable the following options in the kernel configuration as well as
+      specific device drivers for your hardware and recompile the kernel if
+      necessary:
 @y
-      Enable the following options in the kernel configuration
-      and recompile the kernel if necessary:
+      Enable the following options in the kernel configuration as well as
+      specific device drivers for your hardware and recompile the kernel if
+      necessary:
 @z
 
 @x
