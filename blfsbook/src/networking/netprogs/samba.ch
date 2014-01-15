@@ -164,14 +164,14 @@
 
 @x
     <para>To test the results, as the <systemitem
-    class="username">root</systemitem> user,issue: <command>make
-    quicktest</command> (about 8 SBU).  There are other targets (test,
-    subunit-test) available, but take a very long (over 100 SBU) time.</para>
+    class="username">root</systemitem> user, issue: <command>make
+    quicktest</command>.  There are other targets (test, subunit-test)
+    available, but take a very long time (over 100 SBU).</para>
 @y
     <para>To test the results, as the <systemitem
-    class="username">root</systemitem> user,issue: <command>make
-    quicktest</command> (about 8 SBU).  There are other targets (test,
-    subunit-test) available, but take a very long (over 100 SBU) time.</para>
+    class="username">root</systemitem> user, issue: <command>make
+    quicktest</command>.  There are other targets (test, subunit-test)
+    available, but take a very long time (over 100 SBU).</para>
 @z
 
 @x
@@ -424,13 +424,31 @@
         file may be a good template to start from. Also add
         <quote>dos charset</quote> and <quote>unix charset</quote> parameters
         to the <quote>[global]</quote> section as described in Scenario 1 in
-        order to prevent filename corruption.</para>
+        order to prevent filename corruption. For security reasons, you may
+        wish to define
+        <replaceable>path = /home/alice/shared-files</replaceable>,
+        assuming your user name is <replaceable>alice</replaceable> and you
+        only want to share the files in that directory, instead of your entire
+        home. Then, replace <replaceable>homes</replaceable> by
+        <replaceable>shared-files</replaceable> and change also the
+        <quote><literal>comment</literal></quote> if used the configuration
+        file below or the <filename>/etc/samba/smb.conf.default</filename>
+        to create yours.</para>
 @y
         <para>In this case, the <filename>/etc/samba/smb.conf.default</filename>
         file may be a good template to start from. Also add
         <quote>dos charset</quote> and <quote>unix charset</quote> parameters
         to the <quote>[global]</quote> section as described in Scenario 1 in
-        order to prevent filename corruption.</para>
+        order to prevent filename corruption. For security reasons, you may
+        wish to define
+        <replaceable>path = /home/alice/shared-files</replaceable>,
+        assuming your user name is <replaceable>alice</replaceable> and you
+        only want to share the files in that directory, instead of your entire
+        home. Then, replace <replaceable>homes</replaceable> by
+        <replaceable>shared-files</replaceable> and change also the
+        <quote><literal>comment</literal></quote> if used the configuration
+        file below or the <filename>/etc/samba/smb.conf.default</filename>
+        to create yours.</para>
 @z
 
 @x

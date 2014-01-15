@@ -203,6 +203,7 @@ CHANGE_FILES = \
 	gtkmm2.ch               \
 	gtkmm3.ch               \
 	gtk-engines.ch          \
+        imlib2.ch               \
 	lib.ch                  \
 	libdrm.ch               \
 	libnotify.ch            \
@@ -435,6 +436,7 @@ gtkmm3.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm3.ch
 #	sed -e 's/®/\&reg;/g' $(BOOKdir)/$@.orig > $(BOOKdir)/$@
 #	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 #	cp -p $(BOOKdir)/$@{.orig,}
+imlib2.xml:               $(BOOKdir)/$@ $(srcdir)/imlib2.ch
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
 libdrm.xml:               $(BOOKdir)/$@ $(srcdir)/libdrm.ch
 libnotify.xml:            $(BOOKdir)/$@ $(srcdir)/libnotify.ch

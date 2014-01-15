@@ -30,6 +30,7 @@ CHANGE_FILES = \
 	polkit.ch          \
 	security.ch        \
 	shadow.ch          \
+        ssh-askpass.ch     \
 	stunnel.ch         \
 	sudo.ch            \
 	syslog.ch          \
@@ -75,6 +76,7 @@ p11-kit.xml:          $(BOOKdir)/$@ $(srcdir)/p11-kit.ch
 polkit.xml:           $(BOOKdir)/$@ $(srcdir)/polkit.ch
 security.xml:         $(BOOKdir)/$@ $(srcdir)/security.ch
 shadow.xml:           $(BOOKdir)/$@ $(srcdir)/shadow.ch
+ssh-askpass.xml:      $(BOOKdir)/$@ $(srcdir)/ssh-askpass.ch
 stunnel.xml:          $(BOOKdir)/$@ $(srcdir)/stunnel.ch
 sudo.xml:             $(BOOKdir)/$@ $(srcdir)/sudo.ch
 syslog.xml:           $(BOOKdir)/$@ $(srcdir)/syslog.ch

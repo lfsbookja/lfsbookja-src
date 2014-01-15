@@ -93,17 +93,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gdk-pixbuf"/> or 
-      <ulink url="http://sourceforge.net/projects/afterstep">libAfterImage</ulink>
-      (these add support for background images and simulated transparency), and
+      <xref linkend="gdk-pixbuf"/> (for background images) and
       <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gdk-pixbuf"/> または
-      <ulink url="http://sourceforge.net/projects/afterstep">libAfterImage</ulink>
-      (バックグラウンドイメージやシミュレートされた透過をサポートする際に必要),
+      <xref linkend="gdk-pixbuf"/> (バックグラウンドイメージのため),
       <xref linkend="startup-notification"/>
     </para>
 @z

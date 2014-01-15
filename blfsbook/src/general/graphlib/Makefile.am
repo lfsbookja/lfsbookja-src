@@ -18,7 +18,6 @@ CHANGE_FILES = \
 	giflib.ch        \
 	graphlib.ch      \
 	ijs.ch           \
-	imlib2.ch        \
 	jasper.ch        \
 	lcms.ch          \
 	lcms2.ch         \
@@ -58,7 +57,6 @@ gegl.xml:          $(BOOKdir)/$@ $(srcdir)/gegl.ch
 giflib.xml:        $(BOOKdir)/$@ $(srcdir)/giflib.ch
 graphlib.xml:      $(BOOKdir)/$@ $(srcdir)/graphlib.ch
 ijs.xml:           $(BOOKdir)/$@ $(srcdir)/ijs.ch
-imlib2.xml:        $(BOOKdir)/$@ $(srcdir)/imlib2.ch
 jasper.xml:        $(BOOKdir)/$@ $(srcdir)/jasper.ch
 lcms.xml:          $(BOOKdir)/$@ $(srcdir)/lcms.ch
 lcms2.xml:         $(BOOKdir)/$@ $(srcdir)/lcms2.ch

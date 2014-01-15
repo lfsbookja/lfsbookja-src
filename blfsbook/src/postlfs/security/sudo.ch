@@ -118,16 +118,15 @@
 @z
 
 @x
-      Install <application>Sudo</application> by running
-      the following commands:
+      Install <application>Sudo</application> by running the following commands:
 @y
       以下のコマンドを実行して <application>sudo</application> をビルドします。
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>env LC_ALL=C make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>env LC_ALL=C make check</command> を実行します。
 @z
 
 @x
@@ -263,11 +262,10 @@
 
 @x
         <seg>
-          sudo, sudoedit, sudoreplay, and visudo
+          sudo, sudoedit (symlink), sudoreplay, and visudo
         </seg>
         <seg>
-          group_file.so, sudoers.so, system_group.so, and
-          sudo_noexec.so
+          group_file.so, sudoers.so, sudo_noexec.so, and system_group.so
         </seg>
         <seg>
           /etc/sudoers.d,
@@ -277,11 +275,10 @@
         </seg>
 @y
         <seg>
-          sudo, sudoedit, sudoreplay, visudo
+          sudo, sudoedit (シンボリックリンク), sudoreplay, visudo
         </seg>
         <seg>
-          group_file.so, sudoers.so, system_group.so,
-          sudo_noexec.so
+          group_file.so, sudoers.so, sudo_noexec.so, system_group.so
         </seg>
         <seg>
           /etc/sudoers.d,
@@ -305,10 +302,10 @@
 @z
 
 @x sudoedit
-            is a hard link to <command>sudo</command> that implies the
+            is a symlink to <command>sudo</command> that implies the
             <option>-e</option> option to invoke an editor as another user.
 @y
-            <command>sudo</command> コマンドに対して <option>-e</option> オプションをつけたハードリンクであり、他ユーザーとなってエディターを起動します。
+            <command>sudo</command> コマンドに対して <option>-e</option> オプションをつけたシンボリックリンクであり、他ユーザーとなってエディターを起動します。
 @z
 
 @x visudo

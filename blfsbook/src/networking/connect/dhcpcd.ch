@@ -143,9 +143,9 @@
 @z
 
 @x
-      <title>Configuration Information</title>
+      <title>General Configuration Information</title>
 @y
-      <title>&ConfigInfo;</title>
+      <title>全般的な&ConfigInfo;</title>
 @z
 
 @x

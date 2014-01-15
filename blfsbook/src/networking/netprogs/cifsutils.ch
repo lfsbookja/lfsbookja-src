@@ -79,6 +79,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="keyutils"/>,
+      <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="talloc"/>,
       <xref linkend="samba"/>, and
@@ -89,6 +90,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="keyutils"/>,
+      <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="talloc"/>,
       <xref linkend="samba"/>,
@@ -142,7 +144,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -151,14 +153,14 @@
 @z
 
 @x
-        <seg>cifs.idmap, cifs.upcall, cifscreds, getcifsacl, mount.cifs,
-        and, setcifsacl</seg>
-        <seg>None</seg>
+        <seg> getcifsacl, mount.cifs and setcifsacl;
+        optional: cifs.idmap, cifs.upcall and cifscreds</seg>
+        <seg>/usr/lib/cifs-utils/idmapwb.so</seg>
         <seg>/usr/lib/cifs-utils</seg>
 @y
-        <seg>cifs.idmap, cifs.upcall, cifscreds, getcifsacl, mount.cifs,
-        setcifsacl</seg>
-        <seg>&None;</seg>
+        <seg> getcifsacl, mount.cifs, setcifsacl;
+        任意ビルド時: cifs.idmap, cifs.upcall, cifscreds</seg>
+        <seg>/usr/lib/cifs-utils/idmapwb.so</seg>
         <seg>/usr/lib/cifs-utils</seg>
 @z
 

@@ -87,16 +87,14 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
-      <xref linkend="libzeitgeist"/>,
       <xref linkend="webkitgtk"/> or
-      <xref linkend="webkitgtk2"/> and
+      <xref linkend="webkitgtk2"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
-      <xref linkend="libzeitgeist"/>,
       <xref linkend="webkitgtk"/> または
       <xref linkend="webkitgtk2"/>,
       <xref linkend="vala"/>
@@ -120,7 +118,8 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libzeitgeist"/>, and
       <xref linkend="libunique"/> or
       <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>
     </para>
@@ -128,6 +127,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libzeitgeist"/>,
       <xref linkend="libunique"/> または
       <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>
     </para>

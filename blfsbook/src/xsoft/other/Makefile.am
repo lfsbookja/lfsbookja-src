@@ -17,6 +17,7 @@ CHANGE_FILES = \
 	other.ch        \
 	pidgin.ch       \
 	rox-filer.ch    \
+        rxvt-unicode.ch \
 	transmission.ch \
 	thunderbird.ch  \
 	xchat.ch        \
@@ -44,6 +45,7 @@ inkscape.xml:     $(BOOKdir)/$@ $(srcdir)/inkscape.ch
 other.xml:        $(BOOKdir)/$@ $(srcdir)/other.ch
 pidgin.xml:       $(BOOKdir)/$@ $(srcdir)/pidgin.ch
 rox-filer.xml:    $(BOOKdir)/$@ $(srcdir)/rox-filer.ch
+rxvt-unicode.xml: $(BOOKdir)/$@ $(srcdir)/rxvt-unicode.ch
 thunderbird.xml:  $(BOOKdir)/$@ $(srcdir)/thunderbird.ch
 transmission.xml: $(BOOKdir)/$@ $(srcdir)/transmission.ch
 xchat.xml:        $(BOOKdir)/$@ $(srcdir)/xchat.ch

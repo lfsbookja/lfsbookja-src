@@ -14,13 +14,13 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "175 MB (additional 10 MB with downloaded docs and
-                              man pages, or 20 MB building docs and man pages)">
-  <!ENTITY git-time          "0.7 SBU (additional 8.7 SBU for tests and 2.7 SBU
+  <!ENTITY git-buildsize     "190 MB (additional 14 MB with downloaded docs and
+                              man pages, or 24 MB building docs and man pages)">
+  <!ENTITY git-time          "0.7 SBU (additional 8.4 SBU for tests and 2.6 SBU
                               for docs and man pages creation)">
 @y
-  <!ENTITY git-buildsize     "175 MB (さらにダウンロードしたドキュメントと man ページ利用の場合 10MB、それらをビルドする場合は 20MB)">
-  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 8.7 SBU、ドキュメントおよび man ページ生成時は 2.7 SBU)">
+  <!ENTITY git-buildsize     "190 MB (さらにダウンロードしたドキュメントと man ページ利用の場合 14MB、それらをビルドする場合は 24MB)">
+  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 8.4 SBU、ドキュメントおよび man ページ生成時は 2.6 SBU)">
 @z
 
 @x
@@ -354,8 +354,10 @@
 
 @x
         <seg>
-          git, git-cvsserver, gitk, git-receive-pack, git-shell,
-          git-upload-archive and git-upload-pack
+          git, git-receive-pack and git-upload-archive
+          (hardlinked to each other);
+          git-shell, git-cvsserver, git-upload-pack and
+          gitk (this one is optional)
         </seg>
         <seg>
           None
@@ -365,15 +367,17 @@
           /usr/share/doc/git-&git-version;,
           /usr/share/git-core,
           /usr/share/git-gui,
-          /usr/share/gitk,
+          /usr/share/gitk (optional),
           /usr/share/gitweb,
           /usr/lib/perl5/site_perl/&lt;5.x.y&gt;/Git and
           /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Git
         </seg>
 @y
         <seg>
-          git, git-cvsserver, gitk, git-receive-pack, git-shell,
-          git-upload-archive, git-upload-pack
+          git, git-receive-pack and git-upload-archive
+          (hardlinked to each other);
+          git-shell, git-cvsserver, git-upload-pack,
+          gitk (this one is optional)
         </seg>
         <seg>
           &None;
@@ -383,7 +387,7 @@
           /usr/share/doc/git-&git-version;,
           /usr/share/git-core,
           /usr/share/git-gui,
-          /usr/share/gitk,
+          /usr/share/gitk (optional),
           /usr/share/gitweb,
           /usr/lib/perl5/site_perl/&lt;5.x.y&gt;/Git,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Git
@@ -409,10 +413,10 @@
 @z
 
 @x gitk
-            is a graphical <application>Git</application> repository browser
-            (needs <xref linkend="tk"/>).
+            (optional) is a graphical <application>Git</application> repository
+            browser (needs <xref linkend="tk"/>).
 @y
-            <application>Git</application> リポジトリブラウザー (<xref linkend="tk"/> が必要)
+            (任意ビルド) <application>Git</application> リポジトリブラウザー (<xref linkend="tk"/> が必要)
 @z
 
 @x git-receive-pack

@@ -286,11 +286,11 @@
           dot, dot2gxl, dot_builtins, dotty, fdp, gc, gml2gv, graphml2gv,
           gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh, gvpack, gvpr,
           gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop, osage,
-          patchwork, prune, sccmap, sfdp, tred, twopi, unflatten and, vimdot
+          patchwork, prune, sccmap, sfdp, tred, twopi, unflatten, and vimdot
         </seg>
         <seg>
-          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so, and
-          libxdot.so
+          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so,
+          libxdot.so, and several plugins in /usr/lib/graphviz
         </seg>
         <seg>
           /usr/include/graphviz,
@@ -307,7 +307,7 @@
         </seg>
         <seg>
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so,
-          libxdot.so
+          libxdot.so, /usr/lib/graphviz 配下に数種のプラグイン
         </seg>
         <seg>
           /usr/include/graphviz,

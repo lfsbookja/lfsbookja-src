@@ -416,8 +416,8 @@
         <seg>
           accept, cancel, cupsaccept, cupsaddsmb, cups-config,
           cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter,
-          cupsreject, cupstestdsc, cupstestppd, ipptool, lp,
-          lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
+          cupsreject, cupstestdsc, cupstestppd, ippfind, ipptool,
+          lp, lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
           lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge,
           ppdpo and reject
         </seg>
@@ -440,8 +440,8 @@
         <seg>
           accept, cancel, cupsaccept, cupsaddsmb, cups-config,
           cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter,
-          cupsreject, cupstestdsc, cupstestppd, ipptool, lp,
-          lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
+          cupsreject, cupstestdsc, cupstestppd, ippfind, ipptool,
+          lp, lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
           lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge,
           ppdpo, reject
         </seg>

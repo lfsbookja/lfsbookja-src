@@ -79,34 +79,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="freetype2"/>
+      <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="freetype2"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="libpng"/>, and
-      <xref linkend="libjpeg"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libjpeg"/>
+      <xref linkend="xorg7-lib"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="libpng"/>,
+      <xref linkend="libjpeg"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="giflib"/>, and
       <ulink url="http://sourceforge.net/projects/mad">libid3tag</ulink>
@@ -114,6 +100,8 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="libpng"/>,
+      <xref linkend="libjpeg"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="giflib"/>,
       <ulink url="http://sourceforge.net/projects/mad">libid3tag</ulink>
@@ -169,15 +157,6 @@
       <command>sed -i ...</command>:
       １つめのコマンドは、最新の <application>Giflib</application> によりビルドできるようにします。
       また２つめのコマンドは libImlib2 利用のためのリンカーフラグを正しくします。
-@z
-
-@x
-    <para><option>--without-x</option>: Add this switch if you do not
-    have an X Window System installed.</para>
-@y
-    <para><option>--without-x</option>:
-    X ウィンドウシステムをインストールしていない場合は、このスイッチを指定します。
-    </para>
 @z
 
 @x

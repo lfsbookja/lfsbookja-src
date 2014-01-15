@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-time          "13.0 SBU (Additional 7.0 SBU for Clang)">
+  <!ENTITY llvm-buildsize     "519 MB (1.1 GB with Clang)">
+  <!ENTITY llvm-time          "11.4 SBU and 0.4 for tests (22.7 SBU with Clang)">
 @y
-  <!ENTITY llvm-time          "13.0 SBU (Additional 7.0 SBU for Clang)">
+  <!ENTITY llvm-buildsize     "519 MB (1.1 GB with Clang)">
+  <!ENTITY llvm-time          "11.4 SBU and 0.4 for tests (22.7 SBU with Clang)">
 @z
 
 @x
@@ -161,6 +163,7 @@
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="texlive"/>,
       <xref linkend="zip"/>,
       <ulink url="http://www.ocaml.org/">OCaml</ulink>,
       <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink> and
@@ -172,9 +175,10 @@
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="texlive"/>,
       <xref linkend="zip"/>,
       <ulink url="http://www.ocaml.org/">OCaml</ulink>,
-      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink> and
+      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>,
       <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @z
@@ -254,16 +258,16 @@
 
 @x
         <seg>
-          bugpoint, c-index-test, clang, clang++, clang-check, clang-format, clang-tblgen,
-          llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff,
+          bugpoint, c-index-test, clang, clang++ (symlink), clang-check, clang-format, clang-tblgen,
+          llc, lli, lli-child-target, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff,
           llvm-dis, llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup,
-          llvm-nm, llvm-objdump, llvm-prof, llvm-ranlib, llvm-readobj, llvm-rtdyld,
+          llvm-nm, llvm-objdump,<!-- llvm-prof,--> llvm-ranlib (symlink), llvm-readobj, llvm-rtdyld,
           llvm-size, llvm-stress, llvm-symbolizer, llvm-tblgen, macho-dump, opt, 
-          scan-build and scan-view
+          scan-build (symlink) and scan-view (symlink)
         </seg>
         <seg>
           BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so, 
-          libLTO.so, libprofile_rt.so, LLVMHello.so and numerous
+          libLTO.so,<!-- libprofile_rt.so,--> LLVMHello.so and numerous
           static libraries in /usr/lib
         </seg>
         <seg>
@@ -272,22 +276,23 @@
           /usr/include/llvm,
           /usr/include/llvm-c,
           /usr/lib/clang,
-          /usr/lib/clang-analyzer and
+          /usr/lib/clang-analyzer,
+          /usr/share/doc/html/clang, and
           /usr/share/doc/llvm-&llvm-version;
         </seg>
 @y
         <seg>
-          bugpoint, c-index-test, clang, clang++, clang-check, clang-format, clang-tblgen,
-          llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff,
+          bugpoint, c-index-test, clang, clang++ (symlink), clang-check, clang-format, clang-tblgen,
+          llc, lli, lli-child-target, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff,
           llvm-dis, llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup,
-          llvm-nm, llvm-objdump, llvm-prof, llvm-ranlib, llvm-readobj, llvm-rtdyld,
+          llvm-nm, llvm-objdump,<!-- llvm-prof,--> llvm-ranlib (symlink), llvm-readobj, llvm-rtdyld,
           llvm-size, llvm-stress, llvm-symbolizer, llvm-tblgen, macho-dump, opt, 
-          scan-build, scan-view
+          scan-build (symlink), scan-view (symlink)
         </seg>
         <seg>
           BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so, 
-          libLTO.so, libprofile_rt.so, LLVMHello.so,
-          /usr/lib 配下に多くのスタティックライブラリ
+          libLTO.so,<!-- libprofile_rt.so,--> LLVMHello.so and numerous
+          static libraries in /usr/lib
         </seg>
         <seg>
           /usr/include/clang,
@@ -296,6 +301,7 @@
           /usr/include/llvm-c,
           /usr/lib/clang,
           /usr/lib/clang-analyzer,
+          /usr/share/doc/html/clang,
           /usr/share/doc/llvm-&llvm-version;
         </seg>
 @z
