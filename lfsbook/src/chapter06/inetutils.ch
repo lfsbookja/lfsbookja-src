@@ -28,10 +28,11 @@
 @z
 
 @x
-    <para>Fix an incompatibility between this package and Glibc-&glibc-version;</para>
+    <para>Create a definition to allow the <command>ifconfig</command> program
+    to build properly.</para>
 @y
     <para>
-    本パッケージと Glibc-&glibc-version; との互換性がないため、これを修正します。
+    <command>ifconfig</command> プログラムが適切にビルドできるような定義を生成します。
     </para>
 @z
 
@@ -47,20 +48,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
-          <para>This option prevents Inetutils from installing the
-          <command>ifconfig</command> program, which can be used to configure network
-          interfaces. LFS uses <command>ip</command> from IPRoute2 to perform
-          this task.</para>
-@y
-          <para>
-          このオプションは <command>ifconfig</command> プログラムをインストールしないようにします。
-          このプログラムはネットワークインターフェースを設定するために利用するものです。
-          LFS では IPRoute2 パッケージが提供する <command>ip</command> コマンドを使うことにしています。
-          </para>
-@z
-
-@x
+@x --disable-logger
           <para>This option prevents Inetutils from installing the
           <command>logger</command> program, which is used by scripts to
           pass messages to the System Log Daemon. Do not install it because
@@ -73,7 +61,7 @@
           </para>
 @z
 
-@x
+@x --disable-syslogd
           <para>This option prevents Inetutils from installing the System Log
           Daemon, which is installed with the Sysklogd package.</para>
 @y
@@ -83,7 +71,7 @@
           </para>
 @z
 
-@x
+@x --disable-whois
           <para>This option disables the building of the Inetutils
           <command>whois</command> client, which is out of date. Instructions for
           a better <command>whois</command> client are in the BLFS book.</para>
@@ -95,19 +83,17 @@
           </para>
 @z
 
-@x
+@x --disable-servers
           <para>This disables the installation of the various network servers
           included as part of the Inetutils package. These servers are deemed not
           appropriate in a basic LFS system. Some are insecure by nature and are
-          only considered safe on trusted networks. More information can be found
-          at <ulink url="&blfs-root;view/svn/basicnet/inetutils.html"/>. Note that
+          only considered safe on trusted networks. Note that
           better replacements are available for many of these servers.</para>
 @y
           <para>
           このオプションは Inetutils パッケージに含まれるさまざまなネットワークサーバーをインストールしないようにします。
           これらのサーバーは基本的な LFS システムには不要なものと考えられます。
           サーバーの中には本質的にセキュアでないものがあり、信頼のあるネットワーク内でのみしか安全に扱うことができないものもあります。
-          より詳細な情報は <ulink url="&blfs-root;view/svn/basicnet/inetutils.html"/> を参照してください。
           サーバーの多くは、これに代わる他の適切なものが存在します。
           </para>
 @z
@@ -152,11 +138,11 @@
 @z
 
 @x
-        <seg>ftp, hostname, ping, ping6, rcp, rexec, rlogin, rsh, talk, telnet,
-        tftp, and traceroute</seg>
+        <seg>ftp, ifconfig, hostname, ping, ping6, rcp, rexec, rlogin, 
+        rsh, talk, telnet, tftp, and traceroute</seg>
 @y
-        <seg>ftp, hostname, ping, ping6, rcp, rexec, rlogin, rsh, talk, telnet,
-        tftp, traceroute</seg>
+        <seg>ftp, ifconfig, hostname, ping, ping6, rcp, rexec, rlogin, 
+        rsh, talk, telnet, tftp, traceroute</seg>
 @z
 
 @x
@@ -170,6 +156,14 @@
 @y
         <para>
         ファイル転送プロトコル (file transfer protocol) に基づくプログラム。
+        </para>
+@z
+
+@x ifconfig
+        <para>Manages network interfaces</para>
+@y
+        <para>
+        ネットワークインターフェースを管理します。
         </para>
 @z
 
@@ -207,7 +201,7 @@
 @z
 
 @x rexec
-          <para>executes commands on a remote host</para>
+          <para>Executes commands on a remote host</para>
 @y
           <para>
           リモートホスト上にてコマンドを実行します。

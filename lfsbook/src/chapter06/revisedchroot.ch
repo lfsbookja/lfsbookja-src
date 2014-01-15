@@ -20,6 +20,14 @@
 @z
 
 @x
+  <para>Finally, clean up some extra files left around from running tests:</para>
+@y
+  <para>
+  テストを通じて生成された不要なファイル等を削除します。
+  </para>
+@z
+
+@x
   <para>From now on, when reentering the chroot environment after
   exiting, use the following modified chroot command:</para>
 @y

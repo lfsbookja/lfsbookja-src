@@ -156,7 +156,16 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
+@x SED=sed
+          <para>Setting this environment variable prevents a hard-coded
+          path to /tools/bin/sed.</para>
+@y
+          <para>
+          ハードコーディングされているパスを /tools/bin/sed とするために、環境変数を設定します。
+          </para>
+@z
+
+@x --libexecdir=/usr/lib/glibc
           <para>This changes the location of some auxillary files from the
           default of <filename class="directory">/usr/libexec</filename> to
           <filename class="directory">/usr/lib/glibc</filename>.</para>

@@ -48,6 +48,45 @@
 @z
 
 @x
+      <para>2014-01-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to inetutils-1.9.2 and remove
+          referece to old BLFS page. Fixes
+          <ulink url="&lfs-ticket-root;3471">#3471</ulink> and
+          <ulink url="&lfs-ticket-root;3473">#3473</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix hardcoded reference to /tools in
+          Chapter 6 glibc.  Fixes
+          <ulink url="&lfs-ticket-root;3466">#3466</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Clean up /run and /tmp.  Fixes
+          <ulink url="&lfs-ticket-root;3463">#3463</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-01-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - inetutils-1.9.2 へのアップデート。
+          また古い BLFS へのページ参照を削除。
+          <ulink url="&lfs-ticket-root;3471">#3471</ulink> と
+          <ulink url="&lfs-ticket-root;3473">#3473</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第6章の glibc にてハードコーディングされたパスを /tools へ変更。
+          <ulink url="&lfs-ticket-root;3466">#3466</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - /run と /tmp をクリアする。
+          <ulink url="&lfs-ticket-root;3463">#3463</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-01-02</para>
       <itemizedlist>
         <listitem>
