@@ -48,6 +48,54 @@
 @z
 
 @x
+      <para>2014-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Moved util-linux final build to be after
+          udev.  Fixed up e2fsprogs and udev to use the Chapter 5
+          build of util-linux.  Fixes
+          <ulink url="&lfs-ticket-root;3467">#3467</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - udev をビルドした後に util-linux をビルドする。
+          また e2fsprogs、udev が、第5章でビルドした util-linux を利用するようにする。
+          <ulink url="&lfs-ticket-root;3467">#3467</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added a Chapter 5 build of util-linux in 
+          preparation for moving the Chapter 6 build to after udev.
+          This is not the complete fix as this build has not yet
+          been incorporated into Chapter 6.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Mount /run as a tmpfs for Chapter 6.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第6章にて udev の後に util-linux をビルドすることに合わせて、第5章に util-linux を追加。
+          この変更はまだ完成ではなく、第6章との整合は取れていない。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第6章にて /run を tmpfs としてマウント。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-01-14</para>
       <itemizedlist>
         <listitem>
@@ -58,7 +106,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - Fix hardcoded reference to /tools in
-          Chapter 6 glibc.  Fixes
+          Chapter 6 gcc.  Fixes
           <ulink url="&lfs-ticket-root;3466">#3466</ulink>.</para>
         </listitem>
         <listitem>
@@ -76,7 +124,7 @@
           <ulink url="&lfs-ticket-root;3473">#3473</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - 第6章の glibc にてハードコーディングされたパスを /tools へ変更。
+          <para>[bdubbs] - 第6章の gcc にてハードコーディングされたパスを /tools へ変更。
           <ulink url="&lfs-ticket-root;3466">#3466</ulink> を Fix に。</para>
         </listitem>
         <listitem>

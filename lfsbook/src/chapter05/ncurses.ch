@@ -69,6 +69,26 @@
           </para>
 @z
 
+@x --enable-widec
+          <para>This switch causes wide-character libraries (e.g., <filename
+          class="libraryfile">libncursesw.so.&ncurses-version;</filename>)
+          to be built instead of normal ones (e.g., <filename
+          class="libraryfile">libncurses.so.&ncurses-version;</filename>).
+          These wide-character libraries are usable in both multibyte and
+          traditional 8-bit locales, while normal libraries work properly
+          only in 8-bit locales. Wide-character and normal libraries are
+          source-compatible, but not binary-compatible.</para>
+@y
+          <para>
+          本スイッチは通常のライブラリ (<filename
+          class="libraryfile">libncurses.so.&ncurses-version;</filename>) ではなくワイド文字対応のライブラリ (<filename
+          class="libraryfile">libncursesw.so.&ncurses-version;</filename>) をビルドすることを指示します。
+          ワイド文字対応のライブラリは、マルチバイトロケールと従来の 8ビットロケールの双方に対して利用可能です。
+          通常のライブラリでは 8ビットロケールに対してしか動作しません。
+          ワイド文字対応と通常のものとでは、ソース互換があるもののバイナリ互換がありません。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y

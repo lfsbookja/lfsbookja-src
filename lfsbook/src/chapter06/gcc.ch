@@ -91,13 +91,12 @@
       <title>&MeaningOfOption1;Configure&MeaningOfOption2;:</title>
 @z
 
-@x --disable-install-libiberty
-          <para>This prevents GCC from installing its own copy of libiberty,
-          which is already provided by Binutils-&binutils-version;.</para>
+@x SED=sed
+          <para>Setting this environment variable prevents a hard-coded
+          path to /tools/bin/sed.</para>
 @y
           <para>
-          libiberty をインストールしないようにします。
-          これは Binutils-&binutils-version; により既に提供されています。
+          ハードコーディングされているパスを /tools/bin/sed とするために、環境変数を設定します。
           </para>
 @z
 

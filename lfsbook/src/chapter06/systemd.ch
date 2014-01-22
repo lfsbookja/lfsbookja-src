@@ -63,7 +63,17 @@
 @z
 
 @x
-    <para>Compile the package:</para>
+    <para>Create two symbolic links to header files and set an
+    environment variable to properly use <xref linkend="ch-tools-util-linux"/>.</para>
+@y
+    <para>
+    ヘッダーファイルへのシンボリックリンクを二つ生成します。
+    そして <xref linkend="ch-tools-util-linux"/> を適切に利用するように環境変数を設定します。
+    </para>
+@z
+
+@x
+    <para>Install the package:</para>
 @y
     <para>&CompileThePackage;</para>
 @z
@@ -108,6 +118,14 @@
     本章のはじめにて説明しているように、<filename class='directory'>/sys</filename> と <filename
     class='directory'>/proc</filename> は chroot 環境にてマウントされている必要があります。
     これは以下のスクリプトを実行する際に必要となります。
+    </para>
+@z
+
+@x
+    <para>Do some cleanup:</para>
+@y
+    <para>
+    不要なものを消去します。
     </para>
 @z
 

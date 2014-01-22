@@ -154,14 +154,14 @@
 @z
 
 @x
-      <para>In some host systems, <filename>/dev/shm</filename> is a 
+      <para>In some host systems, <filename>/dev/shm</filename> is a
       symbolic link to <filename class="directory">/run/shm</filename>.
-      Inside a chroot environment, this temporary file system needs
-      to be mounted separate from the host file system:</para>
+      The /run tmpfs was mounted above so in this case only a 
+      directory needs to be created.</para>
 @y
       <para>
       ホストシステムによっては <filename>/dev/shm</filename> が <filename
       class="directory">/run/shm</filename> へのシンボリックリンクになっているものがあります。
-      chroot 環境内では、ホストファイルシステムとは別のファイルシステムとして、テンポラリファイルシステムをマウントしておく必要があります。
+      上の作業にて /run tmpfs がマウントされましたが、これはこのディレクトリを生成する必要がある時のみです。
       </para>
 @z

@@ -20,6 +20,12 @@
 @z
 
 @x
+    <primary sortas="a-Bootscripts">Bootscripts</primary>
+@y
+    <primary sortas="a-Bootscripts">ブートスクリプト</primary>
+@z
+
+@x
     <para>The LFS-Bootscripts package contains a set of scripts to start/stop the
     LFS system at bootup/shutdown.</para>
 @y

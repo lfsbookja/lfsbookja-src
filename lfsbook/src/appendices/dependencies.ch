@@ -1384,10 +1384,10 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Udev
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Kmod, Make, and Sed</seg>
+         Kmod, Make, Sed, and Util-linux</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Kmod, Make, Sed</seg>
+         Kmod, Make, Sed, Util-linux</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -1408,15 +1408,15 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Util-linux
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Ncurses, Sed, and Zlib</seg>
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, Udev, and Zlib</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Ncurses, Sed, Zlib</seg>
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, Udev, Zlib</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>

@@ -48,7 +48,7 @@ CHANGE_FILES = \
 	tcl.ch                 \
 	texinfo.ch             \
 	toolchaintechnotes.ch  \
-	util-linux-ng.ch       \
+	util-linux.ch          \
 	xz.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
@@ -105,5 +105,5 @@ tar.xml:                 $(BOOKdir)/$@  $(srcdir)/tar.ch
 tcl.xml:                 $(BOOKdir)/$@  $(srcdir)/tcl.ch
 texinfo.xml:             $(BOOKdir)/$@  $(srcdir)/texinfo.ch
 toolchaintechnotes.xml:  $(BOOKdir)/$@  $(srcdir)/toolchaintechnotes.ch
-util-linux-ng.xml:       $(BOOKdir)/$@  $(srcdir)/util-linux-ng.ch
+util-linux.xml:          $(BOOKdir)/$@  $(srcdir)/util-linux.ch
 xz.xml:                  $(BOOKdir)/$@  $(srcdir)/xz.ch

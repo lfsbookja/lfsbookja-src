@@ -50,17 +50,17 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+      <title>The meaning of the environment variable and configure options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>環境変数と configure&MeaningOfOption2;:</title>
 @z
 
-@x PKG_CONFIG...
-          <para>This enables E2fsprogs to be built without requiring Pkg-config
-          to be built and installed first.</para>
+@x PKG_CONFIG_PATH, LIBS, CFLAGS
+          <para>These variables enable e2fsprogs to be built using the 
+          <xref linkend="ch-tools-util-linux"/> package built earlier.</para>
 @y
           <para>
-          このオプションは、Pkg-config がビルドおよびインストールされていなくても、E2fsprogs をビルドできるようにするものです。
+          これらのオプションは、既にビルドした <xref linkend="ch-tools-util-linux"/> パッケージを使って E2fsprogs をビルドできるようにするものです。
           </para>
 @z
 
@@ -149,7 +149,7 @@
 @z
 
 @x
-    <para>Install the static libraries and headers:</para>
+    <para>Install the static libraries and headers and do some clean up:</para>
 @y
     <para>
     スタティックライブラリとヘッダーファイルをインストールします。
