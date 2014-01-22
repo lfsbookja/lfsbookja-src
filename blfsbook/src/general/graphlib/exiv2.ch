@@ -132,7 +132,7 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -147,7 +147,7 @@
           libexiv2.so
         </seg>
         <seg>
-          None
+          /usr/include/exiv2
         </seg>
 @y
         <seg>
@@ -157,7 +157,7 @@
           libexiv2.so
         </seg>
         <seg>
-          &None;
+          /usr/include/exiv2
         </seg>
 @z
 

@@ -110,6 +110,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="sdl"/>,
       <ulink url="http://www.libsdl.org/tmp/release/">SDL2</ulink>, and
@@ -118,6 +119,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="sdl"/>,
       <ulink url="http://www.libsdl.org/tmp/release/">SDL2</ulink>,
@@ -188,8 +190,9 @@
         </seg>
         <seg>
           libcogl-gles2.so, 
-          libcogl-pango.so, and 
-          libcogl.so
+          libcogl-pango.so and 
+          libcogl.so, and optional libraries
+          libcogl-gst.so and /usr/lib/gstreamer-1.0/libgstcogl.so
        </seg>
         <seg>
          /usr/include/cogl and
@@ -202,7 +205,8 @@
         <seg>
           libcogl-gles2.so, 
           libcogl-pango.so,
-          libcogl.so
+          libcogl.so, 任意ビルドとして
+          libcogl-gst.so, /usr/lib/gstreamer-1.0/libgstcogl.so
        </seg>
         <seg>
          /usr/include/cogl,

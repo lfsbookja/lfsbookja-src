@@ -11,7 +11,6 @@ CHANGE_FILES = \
 	config.ch      \
 	devices.ch     \
 	etcshells.ch   \
-	inputrc.ch     \
 	logon.ch       \
 	lsb-release.ch \
 	profile.ch     \
@@ -37,7 +36,6 @@ bootdisk.xml:    $(BOOKdir)/$@ $(srcdir)/bootdisk.ch
 config.xml:      $(BOOKdir)/$@ $(srcdir)/config.ch
 devices.xml:     $(BOOKdir)/$@ $(srcdir)/devices.ch
 etcshells.xml:   $(BOOKdir)/$@ $(srcdir)/etcshells.ch
-inputrc.xml:     $(BOOKdir)/$@ $(srcdir)/inputrc.ch
 logon.xml:       $(BOOKdir)/$@ $(srcdir)/logon.ch
 lsb-release.xml: $(BOOKdir)/$@ $(srcdir)/lsb-release.ch
 profile.xml:     $(BOOKdir)/$@ $(srcdir)/profile.ch

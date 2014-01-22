@@ -171,7 +171,7 @@
           None
         </seg>
         <seg>
-          libclutter-gst-2.0.so
+          libclutter-gst-2.0.so and /usr/lib/gstreamer-1.0/libgstclutter.so
         </seg>
         <seg>
           /usr/include/clutter-gst-2.0 and
@@ -182,7 +182,7 @@
           &None;
         </seg>
         <seg>
-          libclutter-gst-2.0.so
+          libclutter-gst-2.0.so, /usr/lib/gstreamer-1.0/libgstclutter.so
         </seg>
         <seg>
           /usr/include/clutter-gst-2.0,

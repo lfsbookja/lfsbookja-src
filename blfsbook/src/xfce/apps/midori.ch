@@ -14,11 +14,13 @@
 @z
 
 @x
-  <!ENTITY midori-buildsize     "54 MB (additional 2 MB for the tests)">
-  <!ENTITY midori-time          "0.5 SBU (additional 0.3 SBU for the tests)">
+  <!ENTITY midori-buildsize     "55 MB (additional 2 MB for the tests)">
+  <!ENTITY midori-time          "0.5 SBU (additional less than 0.1 SBU
+                                 for the tests)">
 @y
-  <!ENTITY midori-buildsize     "54 MB (additional 2 MB for the tests)">
-  <!ENTITY midori-time          "0.5 SBU (additional 0.3 SBU for the tests)">
+  <!ENTITY midori-buildsize     "55 MB (additional 2 MB for the tests)">
+  <!ENTITY midori-time          "0.5 SBU (additional less than 0.1 SBU
+                                 for the tests)">
 @z
 
 @x
@@ -118,18 +120,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libzeitgeist"/>, and
-      <xref linkend="libunique"/> or
-      <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="libzeitgeist"/>
+<!--      <xref linkend="libunique"/> or
+      <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="libzeitgeist"/>,
-      <xref linkend="libunique"/> または
-      <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>
+      <xref linkend="libzeitgeist"/>
+<!--      <xref linkend="libunique"/> or
+      <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>-->
     </para>
 @z
 
@@ -153,11 +155,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command> from an X
-      terminal emulator. Two tests fail for unknown reasons.
+      To test the results, issue: <command>make check</command> from an X
+      terminal emulator.
 @y
-      ビルド結果をテストする場合は、X端末エミュレーター上にて <command>make -k check</command> を実行します。
-      テストのうち二つのテストは原因不明により失敗します。
+      ビルド結果をテストする場合は、X端末エミュレーター上にて <command>make check</command> を実行します。
 @z
 
 @x

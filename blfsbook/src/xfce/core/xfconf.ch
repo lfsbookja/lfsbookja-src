@@ -93,13 +93,21 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <xref linkend="perl-glib"/>
+      Perl Module
+      <ulink url="http://sourceforge.net/projects/gtk2-perl/files/Glib/">Glib</ulink>
+      (you may want to use <xref linkend="perl-standard-install"/> or
+      <xref linkend="perl-auto-install"/>)
+<!--      <xref linkend="perl-glib"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <xref linkend="perl-glib"/>
+      Perl Module
+      <ulink url="http://sourceforge.net/projects/gtk2-perl/files/Glib/">Glib</ulink>
+      (you may want to use <xref linkend="perl-standard-install"/> or
+      <xref linkend="perl-auto-install"/>)
+<!--      <xref linkend="perl-glib"/>-->
     </para>
 @z
 

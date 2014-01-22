@@ -134,7 +134,7 @@
         <seg>
           eu-addr2line, eu-ar, eu-elfcmp, eu-elflint, eu-findtextrel, eu-ld,
           eu-make-debug-archive, eu-nm, eu-objdump, eu-ranlib, eu-readelf,
-          eu-size, eu-strings, eu-strip, and eu-unstrip
+          eu-size, eu-stack, eu-strings, eu-strip, and eu-unstrip
         </seg>
         <seg>
           libasm.{a,so}, libdw.{a,so}, libebl.a, and libelf.{a,so}
@@ -147,7 +147,7 @@
         <seg>
           eu-addr2line, eu-ar, eu-elfcmp, eu-elflint, eu-findtextrel, eu-ld,
           eu-make-debug-archive, eu-nm, eu-objdump, eu-ranlib, eu-readelf,
-          eu-size, eu-strings, eu-strip, eu-unstrip
+          eu-size, eu-stack, eu-strings, eu-strip, eu-unstrip
         </seg>
         <seg>
           libasm.{a,so}, libdw.{a,so}, libebl.a, libelf.{a,so}

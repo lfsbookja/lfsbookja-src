@@ -182,7 +182,7 @@
           p11-kit and trust
         </seg>
         <seg>
-          libp11-kit.so and p11-kit-proxy.so
+          libp11-kit.so, p11-kit-proxy.so and /usr/lib/pkcs11/p11-kit-trust.so
         </seg>
         <seg>
           /etc/pkcs11,
@@ -197,7 +197,7 @@
           p11-kit, trust
         </seg>
         <seg>
-          libp11-kit.so, p11-kit-proxy.so
+          libp11-kit.so, p11-kit-proxy.so, /usr/lib/pkcs11/p11-kit-trust.so
         </seg>
         <seg>
           /etc/pkcs11,

@@ -92,14 +92,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="expat"/> or
-      <xref linkend="libxml2"/>
+      <xref linkend="expat"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="expat"/> または
-      <xref linkend="libxml2"/>
+      <xref linkend="expat"/>
     </para>
 @z
 
@@ -487,7 +485,7 @@
 @x
         <seg>
           dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-          dbus-send and dbus-uuidgen
+          dbus-run-session, dbus-send and dbus-uuidgen
         </seg>
         <seg>
            libdbus-1.so
@@ -504,7 +502,7 @@
 @y
         <seg>
           dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-          dbus-send, dbus-uuidgen
+          dbus-run-session, dbus-send, dbus-uuidgen
         </seg>
         <seg>
            libdbus-1.so

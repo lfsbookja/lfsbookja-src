@@ -142,26 +142,26 @@
 @z
 
 @x
-      <option>--with-timedir=/var/lib/sudo</option>: This switch places
+      <parameter>--with-timedir=/var/lib/sudo</parameter>: This switch places
       the variable time stamp files in a FHS compatible location.
 @y
-      <option>--with-timedir=/var/lib/sudo</option>:
+      <parameter>--with-timedir=/var/lib/sudo</parameter>:
       本スイッチはタイムスタンプファイルを FHS 互換のディレクトリに配置することを指示します。
 @z
 
 @x
-      <option>--with-all-insults</option>: This switch includes all the
+      <parameter>--with-all-insults</parameter>: This switch includes all the
       <application>sudo</application> insult sets.
 @y
-      <option>--with-all-insults</option>:
+      <parameter>--with-all-insults</parameter>:
       このスイッチは <application>sudo</application> が表示する侮辱の文言をすべて含めます。
 @z
 
 @x
-      <option>--with-env-editor</option>: This switch enables use of the 
+      <parameter>--with-env-editor</parameter>: This switch enables use of the
       environment variable EDITOR for <command>visudo</command>.
 @y
-      <option>--with-env-editor</option>:
+      <parameter>--with-env-editor</parameter>:
       このスイッチは <command>visudo</command> において環境変数 EDITOR の利用を有効にします。
 @z
 
