@@ -48,7 +48,73 @@
 @z
 
 @x
-      <para>2014-01-15</para>
+      <para>2014-01-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to check-0.9.12.  Fixes
+          <ulink url="&lfs-ticket-root;3477">#3477</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.24.1.  Fixes
+          <ulink url="&lfs-ticket-root;3476">#3476</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpc-1.0.2.  Fixes
+          <ulink url="&lfs-ticket-root;3474">#3474</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.56.  Fixes
+          <ulink url="&lfs-ticket-root;3470">#3470</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.12.7.  Fixes
+          <ulink url="&lfs-ticket-root;3469">#3469</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.18.2.  Fixes
+          <ulink url="&lfs-ticket-root;3465">#3465</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.18.3.2.  Fixes
+          <ulink url="&lfs-ticket-root;3464">#3464</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-01-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - check-0.9.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;3477">#3477</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.24.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3476">#3476</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpc-1.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3474">#3474</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.56 へのアップデート。
+          <ulink url="&lfs-ticket-root;3470">#3470</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.12.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;3469">#3469</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.18.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3465">#3465</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.18.3.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3464">#3464</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-01-21</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Moved util-linux final build to be after
@@ -58,7 +124,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>2014-01-15</para>
+      <para>2014-01-21</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - udev をビルドした後に util-linux をビルドする。
