@@ -48,6 +48,59 @@
 @z
 
 @x
+      <para>2014-01-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.57.  Fixes
+          <ulink url="&lfs-ticket-root;3480">#3480</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.6.6.  Fixes
+          <ulink url="&lfs-ticket-root;3479">#3479</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.13.  Fixes
+          <ulink url="&lfs-ticket-root;3478">#3478</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-01-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.57 へのアップデート。
+          <ulink url="&lfs-ticket-root;3480">#3480</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.6.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3479">#3479</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;3478">#3478</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-01-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a configure switch to util-linux
+          in Chapter 5 to prevent an installation error for 
+          hosts that have systemd installed.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-01-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd を有するホストにてインストールエラーが発生するため、第5章での util-linux の configure にスイッチ追加。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-01-22</para>
       <itemizedlist>
         <listitem>

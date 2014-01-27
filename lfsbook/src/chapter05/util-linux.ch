@@ -51,6 +51,17 @@
           </para>
 @z
 
+@x --without-systemdsystemunitdir
+          <para>On systems that use systemd, the package tries to install 
+          a systemd specific file to a non-existent directory in /tools.
+          This switch disables the unnecessary action.</para>
+@y
+          <para>
+          systemd を利用しているシステムにおいては、systemd に関連するファイルを /tools 内に存在しないディレクトリにインストールしようとします。
+          本スイッチはそのような不要な処理をなくします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
