@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY soundtouch-time          "less than 0.1 SBU">
-@y
-  <!ENTITY soundtouch-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to SoundTouch</title>
 @y
     <title>&IntroductionTo1;SoundTouch&IntroductionTo2;</title>

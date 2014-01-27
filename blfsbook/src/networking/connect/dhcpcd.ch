@@ -272,11 +272,11 @@
 
 @x
         <seg>dhcpcd</seg>
-        <seg>none</seg>
+        <seg>/lib/dhcpcd/dev/udev.so</seg>
         <seg>/lib/dhcpcd</seg>
 @y
         <seg>dhcpcd</seg>
-        <seg>&None;</seg>
+        <seg>/lib/dhcpcd/dev/udev.so</seg>
         <seg>/lib/dhcpcd</seg>
 @z
 

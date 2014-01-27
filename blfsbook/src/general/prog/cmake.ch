@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "247 MB (additional 176 MB for tests)">
-  <!ENTITY cmake-time          "0.9 SBU (additional 5.5 SBU for tests)">
+  <!ENTITY cmake-buildsize     "222 MB (additional 175 MB for tests)">
+  <!ENTITY cmake-time          "1.5 SBU (additional 3.5 SBU for tests)">
 @y
-  <!ENTITY cmake-buildsize     "247 MB (テスト実行時はさらに 176 MB)">
-  <!ENTITY cmake-time          "0.9 SBU (テスト実行時はさらに 5.5 SBU)">
+  <!ENTITY cmake-buildsize     "222 MB (テスト実行時はさらに 175 MB)">
+  <!ENTITY cmake-time          "1.5 SBU (テスト実行時はさらに 3.5 SBU)">
 @z
 
 @x
@@ -211,7 +211,7 @@
 
 @x
         <seg>
-          ccmake, cmake, cmake-gui, cpack and ctest
+          ccmake, cmake, cmake-gui (optional), cpack and ctest
         </seg>
         <seg>
           None
@@ -222,7 +222,7 @@
         </seg>
 @y
         <seg>
-          ccmake, cmake, cmake-gui, cpack, ctest
+          ccmake, cmake, cmake-gui (任意ビルド), cpack, ctest
         </seg>
         <seg>
           &None;
@@ -253,10 +253,10 @@
 @z
 
 @x cmake-gui
-            is the <application>Qt</application>-based frontent to 
+            (optional) is the <application>Qt</application>-based frontent to
             <command>cmake</command>.
 @y
-            <command>cmake</command> の <application>Qt</application>-ベースのフロントエンドです。
+            (任意ビルド) <command>cmake</command> の <application>Qt</application>-ベースのフロントエンドです。
 @z
 
 @x cpack

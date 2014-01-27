@@ -151,13 +151,13 @@
 @x
       To test the results, issue: <command>make -k check</command> (you must be
       in an xterm or similar to do this, because it launches some windows). The
-      abicheck.sh test fails, due to the use of the parameter
-      <parameter>--enable-egl-backend</parameter>. Without that switch, the
-      tests pass.
+      abicheck.sh test fails, if experimental backends have been enabled by the
+      use of the parameter <parameter>--enable-egl-backend</parameter>. Without
+      that switch, the tests pass.
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
       (この際にはウィンドウ起動が行われるため、xterm などから実行することが必要です。)
-      また abicheck.sh テストは、パラメーター <parameter>--enable-egl-backend</parameter> が指定されているために失敗します。
+      また abicheck.sh テストは、パラメーター <parameter>--enable-egl-backend</parameter> により実験的なバックエンドが有効にされている場合に失敗します。
       このパラメーターを取り除けば、テストは成功します。
 @z
 

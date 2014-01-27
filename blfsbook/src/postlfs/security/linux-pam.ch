@@ -172,30 +172,16 @@
 @z
 
 @x
-      To test the results, a configuration file must be created. This file
-      will be removed after the tests have completed. Ensure there are no errors
-      produced by the tests before continuing the installation. First create the
-      configuration file by issuing the following commands as the
-      <systemitem class="username">root</systemitem> user:
+      To test the results, a suitable <filename>/etc/pam.d/other</filename>
+      configuration file must exist.
 @y
-      コンパイル結果をテストするには設定ファイルがなければなりません。
-      その設定ファイルはテスト終了時に削除します。
-      インストール作業を進めるには、テストにてエラーがないことを確認してからにしてください。
-      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し、設定ファイルを生成します。
+      コンパイル結果をテストするには、設定ファイル <filename>/etc/pam.d/other</filename> が適切に用意されていなければなりません。
 @z
 
 @x
       Now run the tests by issuing <command>make check</command>.
 @y
       <command>make check</command> によりテストを実行します。
-@z
-
-@x
-      Remove the configuration file created earlier by issuing the
-      following command as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      <systemitem class="username">root</systemitem> ユーザーになり以下のコマンドを実行して、上で作成した設定ファイルを削除します。
 @z
 
 @x

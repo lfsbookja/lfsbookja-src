@@ -14,13 +14,10 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "190 MB (additional 14 MB with downloaded docs and
-                              man pages, or 24 MB building docs and man pages)">
-  <!ENTITY git-time          "0.7 SBU (additional 8.4 SBU for tests and 2.6 SBU
-                              for docs and man pages creation)">
+  <!ENTITY git-time          "0.7 SBU (additional 8 SBU for tests and 2.7 SBU
+                              for docs and man creation)">
 @y
-  <!ENTITY git-buildsize     "190 MB (さらにダウンロードしたドキュメントと man ページ利用の場合 14MB、それらをビルドする場合は 24MB)">
-  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 8.4 SBU、ドキュメントおよび man ページ生成時は 2.6 SBU)">
+  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 8 SBU、ドキュメントおよび man ページ生成時は 2.7 SBU)">
 @z
 
 @x
@@ -104,22 +101,22 @@
 @z
 
 @x
-          <ulink url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
-          http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink>
+          <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
+          &git-root;/git-manpages-&git-version;.tar.gz</ulink>
           (only needed if you've not installed asciidoc and xmlto)
 @y
-          <ulink url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
-          http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink>
+          <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
+          &git-root;/git-manpages-&git-version;.tar.gz</ulink>
           (only needed if you've not installed asciidoc and xmlto)
 @z
 
 @x
-          <ulink url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
-          http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink>
+          <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
+          &git-root;/git-htmldocs-&git-version;.tar.gz</ulink>
           and other docs (only needed if you've not installed asciidoc).
 @y
-          <ulink url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
-          http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink>
+          <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
+          &git-root;/git-htmldocs-&git-version;.tar.gz</ulink>
           and other docs (only needed if you've not installed asciidoc).
 @z
 
@@ -354,10 +351,8 @@
 
 @x
         <seg>
-          git, git-receive-pack and git-upload-archive
-          (hardlinked to each other);
-          git-shell, git-cvsserver, git-upload-pack and
-          gitk (this one is optional)
+          git, git-receive-pack and git-upload-archive (hardlinked to each other),
+          git-shell, git-cvsserver, git-upload-pack, and gitk
         </seg>
         <seg>
           None
@@ -367,17 +362,16 @@
           /usr/share/doc/git-&git-version;,
           /usr/share/git-core,
           /usr/share/git-gui,
-          /usr/share/gitk (optional),
+          /usr/share/gitk,
           /usr/share/gitweb,
           /usr/lib/perl5/site_perl/&lt;5.x.y&gt;/Git and
           /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Git
+       
         </seg>
 @y
         <seg>
-          git, git-receive-pack and git-upload-archive
-          (hardlinked to each other);
-          git-shell, git-cvsserver, git-upload-pack,
-          gitk (this one is optional)
+          git, git-receive-pack and git-upload-archive (hardlinked to each other),
+          git-shell, git-cvsserver, git-upload-pack, gitk
         </seg>
         <seg>
           &None;
@@ -387,10 +381,11 @@
           /usr/share/doc/git-&git-version;,
           /usr/share/git-core,
           /usr/share/git-gui,
-          /usr/share/gitk (optional),
+          /usr/share/gitk,
           /usr/share/gitweb,
           /usr/lib/perl5/site_perl/&lt;5.x.y&gt;/Git,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Git
+       
         </seg>
 @z
 
@@ -413,10 +408,10 @@
 @z
 
 @x gitk
-            (optional) is a graphical <application>Git</application> repository
-            browser (needs <xref linkend="tk"/>).
+            is a graphical <application>Git</application> repository browser
+            (needs <xref linkend="tk"/>).
 @y
-            (任意ビルド) <application>Git</application> リポジトリブラウザー (<xref linkend="tk"/> が必要)
+            <application>Git</application> リポジトリブラウザー (<xref linkend="tk"/> が必要)
 @z
 
 @x git-receive-pack

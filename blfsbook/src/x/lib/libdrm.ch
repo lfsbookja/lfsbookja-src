@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY libdrm-buildsize     "11 MB (additional 1 MB for the tests)">
-  <!ENTITY libdrm-time          "0.5 SBU (additional 0.1 SBU for the tests)">
+  <!ENTITY libdrm-time          "0.3 SBU (additional 0.1 SBU for the tests)">
 @y
   <!ENTITY libdrm-buildsize     "11 MB (テスト実行時はさらに 1 MB)">
-  <!ENTITY libdrm-time          "0.5 SBU (テスト実行時はさらに 0.1 SBU)">
+  <!ENTITY libdrm-time          "0.3 SBU (テスト実行時はさらに 0.1 SBU)">
 @z
 
 @x
