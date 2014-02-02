@@ -48,7 +48,26 @@
 @z
 
 @x
-      <para>2014-01-25</para>
+      <para>2014-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add an environment variable to util-linux
+          in Chapter 5 to prevent an installation error for 
+          hosts that have unneeded capabilities availible.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 不要な機能がホストにある場合にインストールエラーが発生するため、第5章での util-linux に環境変数を追加。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-01-26</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to man-pages-3.57.  Fixes
@@ -64,7 +83,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>2014-01-25</para>
+      <para>2014-01-26</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - man-pages-3.57 へのアップデート。

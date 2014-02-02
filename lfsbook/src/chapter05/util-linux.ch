@@ -62,6 +62,15 @@
           </para>
 @z
 
+@x PKG_CONFIG=""
+          <para>Setting this envronment variable prevents adding unneeded
+          features that may be available on the host.</para>
+@y
+          <para>
+          ホスト上での不要な機能を取り込まないように、環境変数を設定します。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
