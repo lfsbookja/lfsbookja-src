@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "January 26th, &year;">
+<!ENTITY releasedate  "February 1st, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20140127">
+<!ENTITY jversion     "20140202">
 <!ENTITY jratio       "55.9 &percnt;">
 @z
 

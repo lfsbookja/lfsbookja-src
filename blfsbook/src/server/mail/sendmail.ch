@@ -79,12 +79,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="openldap"/>
+      <xref linkend="openldap"/> (client)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="openldap"/>
+      <xref linkend="openldap"/> (クライアント)
     </para>
 @z
 

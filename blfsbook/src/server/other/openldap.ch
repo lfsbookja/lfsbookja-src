@@ -163,9 +163,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue: <command>make test</command>. Tests may fail
+      after a long time (~ 5 SBU).
 @y
       ビルド結果をテストする場合は <command>make test</command> を実行します。
+      このテストは相当時間 (5SBU 以内) の後に失敗することがあります。
 @z
 
 @x
@@ -460,29 +462,35 @@
 @x
         <seg>
           ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
-          ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
-          slapcat, slapd, slapdn, slapindex, slappasswd, slapschema and slaptest
+          ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd,
+          slapauth, slapcat, slapd, slapdn, slapindex, slappasswd, slapschema,
+          and slaptest
         </seg>
         <seg>
-          liblber.so, libldap.so and libldap_r.so
+          liblber.so, libldap.so, libldap_r.so,
+          and several under /usr/lib/openldap
         </seg>
         <seg>
           /etc/openldap,
-          /usr/lib/openldap and
+          /usr/lib/openldap,
+          /usr/share/doc/openldap-&openldap-version;, and
           /var/lib/openldap
         </seg>
 @y
         <seg>
           ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
-          ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
-          slapcat, slapd, slapdn, slapindex, slappasswd, slapschema, slaptest
+          ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd,
+          slapauth, slapcat, slapd, slapdn, slapindex, slappasswd, slapschema,
+          slaptest
         </seg>
         <seg>
-          liblber.so, libldap.so, libldap_r.so
+          liblber.so, libldap.so, libldap_r.so,
+          /usr/lib/openldap 配下に数種のライブラリ
         </seg>
         <seg>
           /etc/openldap,
           /usr/lib/openldap,
+          /usr/share/doc/openldap-&openldap-version;,
           /var/lib/openldap
         </seg>
 @z

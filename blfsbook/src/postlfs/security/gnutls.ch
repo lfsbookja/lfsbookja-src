@@ -124,6 +124,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <ulink url="http://ftp.gnu.org/gnu/autogen/">autogen</ulink>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
@@ -135,6 +136,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <ulink url="http://ftp.gnu.org/gnu/autogen/">autogen</ulink>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
@@ -227,12 +229,12 @@
         </seg>
         <seg>
           libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so, libgnutlsxx.so
-          and /usr/lib/guile/2.0/guile-gnutls-v-2.so (optional)
+          and /usr/lib/guile/2.0/guile-gnutls-v-2.so
         </seg>
         <seg>
           /usr/include/gnutls,
           /usr/share/gtk-doc/html/gnutls and
-          /usr/share/guile/site/gnutls (optional)
+          /usr/share/guile/site/gnutls
         </seg>
 @y
         <seg>
@@ -240,13 +242,13 @@
           gnutls-serv, ocsptool, p11tool, psktool, srptool
         </seg>
         <seg>
-          libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so, libgnutlsxx.so
-          /usr/lib/guile/2.0/guile-gnutls-v-2.so (任意)
+          libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so, libgnutlsxx.so,
+          /usr/lib/guile/2.0/guile-gnutls-v-2.so
         </seg>
         <seg>
           /usr/include/gnutls,
           /usr/share/gtk-doc/html/gnutls,
-          /usr/share/guile/site/gnutls (任意)
+          /usr/share/guile/site/gnutls
         </seg>
 @z
 

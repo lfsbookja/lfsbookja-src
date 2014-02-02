@@ -14,11 +14,12 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "25 MB (additional 8 MB if running the tests)">
-  <!ENTITY openssh-time          "0.4 SBU (running the tests takes at least 10 minutes, irrespective of processor speed)">
+  <!ENTITY openssh-buildsize     "32 MB (additional 2 MB if running the tests)">
+  <!ENTITY openssh-time          "0.5 SBU (running the tests takes at least 10
+                                  minutes, irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "25 MB (テスト実施時は 8MB 追加)">
-  <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理性能には関係なく 10分ほど必要)">
+  <!ENTITY openssh-buildsize     "32 MB (テスト実施時は 2MB 追加)">
+  <!ENTITY openssh-time          "0.5 SBU (テスト実施はプロセッサーの処理スピードとは無関係に、最低でも 10分)">
 @z
 
 @x
@@ -394,23 +395,23 @@
 
 @x
         <seg>
-          scp, sftp, sftp-server, slogin, ssh, sshd, ssh-add, ssh-agent,
-          ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign, and
-          ssh-pkcs11-helper
+          scp, sftp, sftp-server, slogin (symlink to ssh), ssh, sshd, ssh-add,
+          ssh-agent, ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign,
+          and ssh-pkcs11-helper
         </seg>
         <seg>
           None
         </seg>
         <seg>
           /etc/ssh,
-          /var/lib/sshd,
-          /usr/lib/openssh, and
-          /usr/share/doc/openssh-&openssh-version;
+          /usr/lib/openssh,
+          /usr/share/doc/openssh-&openssh-version;, and
+          /var/lib/sshd
         </seg>
 @y
         <seg>
-          scp, sftp, sftp-server, slogin, ssh, sshd, ssh-add, ssh-agent,
-          ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign,
+          scp, sftp, sftp-server, slogin (ssh へのシンボリックリンク), ssh, sshd, ssh-add,
+          ssh-agent, ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign,
           ssh-pkcs11-helper
         </seg>
         <seg>
@@ -418,9 +419,9 @@
         </seg>
         <seg>
           /etc/ssh,
-          /var/lib/sshd,
           /usr/lib/openssh,
-          /usr/share/doc/openssh-&openssh-version;
+          /usr/share/doc/openssh-&openssh-version;,
+          /var/lib/sshd
         </seg>
 @z
 

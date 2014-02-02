@@ -166,7 +166,7 @@
           bluefish
         </seg>
         <seg>
-          None
+          several under /usr/lib/bluefish/
         </seg>
         <seg>
           /usr/lib/bluefish,
@@ -179,7 +179,7 @@
           bluefish
         </seg>
         <seg>
-          &None;
+          /usr/lib/bluefish/ 配下に数種のライブラリ
         </seg>
         <seg>
           /usr/lib/bluefish,

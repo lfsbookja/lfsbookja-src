@@ -102,7 +102,6 @@
     <xref linkend="libxml2"/>,
     <xref linkend="openssl"/>, and
     <xref linkend="openldap"/>
-   <!--<xref linkend="jdk"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -111,7 +110,6 @@
     <xref linkend="libxml2"/>,
     <xref linkend="openssl"/>,
     <xref linkend="openldap"/>
-   <!--<xref linkend="jdk"/>-->
     </para>
 @z
 
@@ -305,19 +303,51 @@
 @z
 
 @x
-        <seg>inifile, isql-v, isql-vw, virt_maili, and virtuoso-t</seg>
-        <seg>libvirtuoso-t.a, virtodbc.so, virtodbc_r.so, virtodbcu.so, 
-             and virtodbcu_r.so</seg>
-        <seg>/var/lib/virtuoso, 
-             /usr/lib/{hibernate,jdbc-{2,3,4}.0,jena,sesame,virtuoso}, and
-             /usr/share/virtuoso</seg>
+        <seg>
+          inifile, isql-v, isql-v-iodbc, isql-vw, isql-vw-iodbc, odbc_mail,
+          virt_mail, virtuoso-iodbc-t, and virtuoso-t
+        </seg>
+        <seg>
+          libvirtuoso-iodbc-t.a, libvirtuoso-t.a, virtodbc.so, virtodbc_r.so,
+          virtodbcu.so, and virtodbcu_r.so
+        </seg>
+        <seg>
+          /usr/lib/hibernate,
+          /usr/lib/jdbc-2.0,
+          /usr/lib/jdbc-3.0,
+          /usr/lib/jdbc-4.0,
+          /usr/lib/jdbc-4.1,
+          /usr/lib/jena,
+          /usr/lib/jena2,
+          /usr/lib/sesame,
+          /usr/lib/virtuoso
+          /usr/share/doc/virtuoso-&virtuoso-version;,
+          /usr/share/virtuoso, and
+          /var/lib/virtuoso
+        </seg>
 @y
-        <seg>inifile, isql-v, isql-vw, virt_maili, virtuoso-t</seg>
-        <seg>libvirtuoso-t.a, virtodbc.so, virtodbc_r.so, virtodbcu.so, 
-             virtodbcu_r.so</seg>
-        <seg>/var/lib/virtuoso, 
-             /usr/lib/{hibernate,jdbc-{2,3,4}.0,jena,sesame,virtuoso},
-             /usr/share/virtuoso</seg>
+        <seg>
+          inifile, isql-v, isql-v-iodbc, isql-vw, isql-vw-iodbc, odbc_mail,
+          virt_mail, virtuoso-iodbc-t, virtuoso-t
+        </seg>
+        <seg>
+          libvirtuoso-iodbc-t.a, libvirtuoso-t.a, virtodbc.so, virtodbc_r.so,
+          virtodbcu.so, virtodbcu_r.so
+        </seg>
+        <seg>
+          /usr/lib/hibernate,
+          /usr/lib/jdbc-2.0,
+          /usr/lib/jdbc-3.0,
+          /usr/lib/jdbc-4.0,
+          /usr/lib/jdbc-4.1,
+          /usr/lib/jena,
+          /usr/lib/jena2,
+          /usr/lib/sesame,
+          /usr/lib/virtuoso
+          /usr/share/doc/virtuoso-&virtuoso-version;,
+          /usr/share/virtuoso,
+          /var/lib/virtuoso
+        </seg>
 @z
 
 @x

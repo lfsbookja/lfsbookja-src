@@ -102,21 +102,21 @@
 
 @x
           <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
-          &git-root;/git-manpages-&git-version;.tar.gz</ulink>
+          &git-root;/git-manpages-&git-version;.tar.xz</ulink>
           (only needed if you've not installed asciidoc and xmlto)
 @y
           <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
-          &git-root;/git-manpages-&git-version;.tar.gz</ulink>
+          &git-root;/git-manpages-&git-version;.tar.xz</ulink>
           (only needed if you've not installed asciidoc and xmlto)
 @z
 
 @x
           <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
-          &git-root;/git-htmldocs-&git-version;.tar.gz</ulink>
+          &git-root;/git-htmldocs-&git-version;.tar.xz</ulink>
           and other docs (only needed if you've not installed asciidoc).
 @y
           <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
-          &git-root;/git-htmldocs-&git-version;.tar.gz</ulink>
+          &git-root;/git-htmldocs-&git-version;.tar.xz</ulink>
           and other docs (only needed if you've not installed asciidoc).
 @z
 
