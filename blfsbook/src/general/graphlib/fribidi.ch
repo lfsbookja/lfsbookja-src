@@ -130,16 +130,6 @@
 @z
 
 @x
-    <para><option>--with-glib=yes</option>: Add this option to the
-    <command>configure</command> script so that the build will link against the
-    <application>GLib-2</application> library.</para>
-@y
-    <para><option>--with-glib=yes</option>:
-    <command>configure</command> スクリプトにこのオプションを追加することで <application>GLib-2</application> ライブラリへリンクしビルドします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

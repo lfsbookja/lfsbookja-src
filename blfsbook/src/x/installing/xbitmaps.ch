@@ -75,6 +75,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">xbitmaps Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;xbitmaps&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="util-macros"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="util-macros"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:

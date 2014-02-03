@@ -158,6 +158,15 @@
 @z
 
 @x
+      The tests must be run from a local X Terminal, after
+      <application>Cheese</application> has been installed.
+      To test the results, issue <command>make check</command>.
+@y
+      テストはローカルの X ターミナルから実行する必要があり、かつ <application>Cheese</application> がインストール済でなければなりません。
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>

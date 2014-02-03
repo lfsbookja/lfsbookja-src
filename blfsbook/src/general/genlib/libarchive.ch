@@ -136,6 +136,22 @@ Download (HTTP): <ulink url="&libarchive-download-http;"/>
 @z
 
 @x
+      <option>--without-xml2</option>: This switch sets expat for xar archive
+      format support instead of preferred libxml2 if both packages are installed.
+@y
+      <option>--without-xml2</option>:
+      expat と libxml2 の双方がインストールされている場合に、xar アーカイブフォーマットへのサポートとして、本来なら適切な libxml2 ではなく expat を利用することを指定します。
+@z
+
+@x
+      <option>--without-nettle</option>: This switch sets OpenSSL for crypto
+      support instead of preferred Nettle if both packages are installed.
+@y
+      <option>--without-nettle</option>:
+      OpenSSL と Nettle の双方がインストールされている場合に、暗号化サポートとして、本来なら適切な Nettle ではなく OpenSSL を利用することを指定します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

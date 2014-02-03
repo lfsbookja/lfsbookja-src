@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY libtasn1-buildsize     "9.5 MB (11 MB with tests)">
+@y
+  <!ENTITY libtasn1-buildsize     "9.5 MB (テスト実施時は 11 MB)">
+@z
+
+@x
     <title>Introduction to libtasn1</title>
 @y
     <title>&IntroductionTo1;libtasn1&IntroductionTo2;</title>

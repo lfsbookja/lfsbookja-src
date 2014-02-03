@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY libgsf-buildsize     "14 MB (additional 1 MB for tests)">
+@y
+  <!ENTITY libgsf-buildsize     "14 MB (テストにはさらに 1 MB)">
+@z
+
+@x
     <title>Introduction to libgsf</title>
 @y
     <title>&IntroductionTo1;libgsf&IntroductionTo2;</title>
