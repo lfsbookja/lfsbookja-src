@@ -35,6 +35,15 @@
 @z
 
 @x
+    <para>First fix a problem with running regression tests in the LFS chroot
+    environment:</para>
+@y
+    <para>
+    LFS の chroot 環境にて正規表現テストの実行が失敗するため修正します。
+    </para>
+@z
+
+@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
@@ -149,7 +158,7 @@
 @z
 
 @x
-    <para>Install the static libraries and headers and do some clean up:</para>
+    <para>Install the static libraries and headers:</para>
 @y
     <para>
     スタティックライブラリとヘッダーファイルをインストールします。

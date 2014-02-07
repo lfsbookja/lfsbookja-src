@@ -64,10 +64,16 @@
 
 @x PKG_CONFIG=""
           <para>Setting this envronment variable prevents adding unneeded
-          features that may be available on the host.</para>
+          features that may be available on the host. Note that the location
+          shown for setting this environment variable is different from other
+          LFS sections where variables are set preceeding the command.  This
+          location is shown to demonstrate an alternative way of setting an
+          environment variable when using configure.</para>
 @y
           <para>
           ホスト上での不要な機能を取り込まないように、環境変数を設定します。
+          環境変数を設定するこの方法は、LFS の他の節ではコマンド実行前に行っており、やり方が異なります。
+          これは configure の際に環境変数を設定するという一例を示しているものです。
           </para>
 @z
 

@@ -155,7 +155,7 @@
           </para>
 @z
 
-@x libexpect-5.43.a
+@x libexpect-&expect-lib-version;.so
           <para>Contains functions that allow Expect to be used as a Tcl
           extension or to be used directly from C or C++ (without Tcl)</para>
 @y

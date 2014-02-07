@@ -48,6 +48,57 @@
 @z
 
 @x
+      <para>2014-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change expect library type in Chapter 5.
+          Thanks to kammet for the report.  Fixes
+          <ulink url="&lfs-ticket-root;3484">#3484</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix e2fsprogs tests to run properly
+          in the LFS chroot environment.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove unnecessary mkdir in groff.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第5章における expect ライブラリのタイプを変更。
+          報告をあげてくれた kammet に感謝。
+          <ulink url="&lfs-ticket-root;3484">#3484</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs のテストに対し、LFS の chroot 環境でも適切に実行できるように修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - groff にて不要な mkdir を削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.13.1.  Fixes
+          <ulink url="&lfs-ticket-root;3483">#3483</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.13.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3483">#3483</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-01-27</para>
       <itemizedlist>
         <listitem>
