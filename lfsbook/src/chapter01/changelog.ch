@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2014-02-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.13.2.  Fixes
+          <ulink url="&lfs-ticket-root;3485">#3485</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.13.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3485">#3485</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-02-05</para>
       <itemizedlist>
         <listitem>
