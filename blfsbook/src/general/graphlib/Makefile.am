@@ -16,6 +16,7 @@ CHANGE_FILES = \
 	harfbuzz.ch      \
 	gegl.ch          \
 	giflib.ch        \
+	graphite2.ch     \
 	graphlib.ch      \
 	ijs.ch           \
 	jasper.ch        \
@@ -55,6 +56,7 @@ fribidi.xml:       $(BOOKdir)/$@ $(srcdir)/fribidi.ch
 harfbuzz.xml:      $(BOOKdir)/$@ $(srcdir)/harfbuzz.ch
 gegl.xml:          $(BOOKdir)/$@ $(srcdir)/gegl.ch
 giflib.xml:        $(BOOKdir)/$@ $(srcdir)/giflib.ch
+graphite2.xml:     $(BOOKdir)/$@ $(srcdir)/graphite2.ch
 graphlib.xml:      $(BOOKdir)/$@ $(srcdir)/graphlib.ch
 ijs.xml:           $(BOOKdir)/$@ $(srcdir)/ijs.ch
 jasper.xml:        $(BOOKdir)/$@ $(srcdir)/jasper.ch

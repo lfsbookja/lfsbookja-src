@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "359 MB (472 MB with checks)">
-  <!ENTITY gdb-time          "2.2 SBU (5.5 SBU with checks)">
+  <!ENTITY gdb-buildsize     "321 MB (559 MB with checks)">
+  <!ENTITY gdb-time          "1.8 SBU (6.3 SBU with checks)">
 @y
-  <!ENTITY gdb-buildsize     "359 MB (テスト実施時は 472 MB)">
-  <!ENTITY gdb-time          "2.2 SBU (テスト実施時は 5.5 SBU)">
+  <!ENTITY gdb-buildsize     "321 MB (テスト実施時は 559 MB)">
+  <!ENTITY gdb-time          "1.8 SBU (テスト実施時は 6.3 SBU)">
 @z
 
 @x
@@ -151,7 +151,7 @@
 
 @x
         <seg>
-          gdb and gdbserver
+          gcore, gdb and gdbserver
         </seg>
         <seg>
           libinproctrace.so
@@ -162,7 +162,7 @@
         </seg>
 @y
         <seg>
-          gdb, gdbserver
+          gcore, gdb, gdbserver
         </seg>
         <seg>
           libinproctrace.so

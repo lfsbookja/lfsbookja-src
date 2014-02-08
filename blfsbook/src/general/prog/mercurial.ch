@@ -149,12 +149,15 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. One test 
-    (test-archive-symlinks.t) is known to fail.</para>
+    <para>To test the results, issue: <command>make check</command>. During the
+    tests, the build directory size increases above the
+    <quote>Estimated disk space required</quote>, even when considering the
+    additional values, due to temporary test files.</para>
 @y
     <para>
     ビルド結果をテストする場合は <command>make check</command> を実行します。
-    テストの１つ (test-archive-symlinks.t) は失敗します。
+    テスト中はビルドディレクトリのサイズが<quote>&Estimateddiskspacerequired;</quote>に示す分だけ増幅します。
+    一時的に生成されるテストファイルなどによるものです。
     </para>
 @z
 

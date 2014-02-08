@@ -91,12 +91,18 @@
 @x
     <bridgehead renderas="sect3">TeX Live Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">TeX Live の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;TeX Live&Dependencies2;</bridgehead>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gs"/>,
+    <bridgehead renderas="sect4">Optional (to build from source)</bridgehead>
+    <para role="optional">
+      The source ships with its own versions of <emphasis>many</emphasis> of
+      these libraries, and will use them unless it is forced to use the system
+      versions.  Work is in progress to deal with this, in the meantime please
+      see<ulink url="http://wiki.linuxfromscratch.org/blfs/ticket/4647"> ticket
+      #4647</ulink>.
+      <xref linkend="gs"/>,
       <xref linkend="poppler"/>,
       <xref linkend="freetype2"/>,
       <xref linkend="fontconfig"/>,
@@ -109,11 +115,17 @@
       <ulink url="http://www.gnu.org/software/clisp/">CLISP</ulink>,
       <xref linkend="lua"/>,
       <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>, and
-      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=RenderingGraphite">
-    Graphite</ulink></para>
+      <xref linkend="graphite2"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gs"/>,
+    <bridgehead renderas="sect4">&Optional; (to build from source)</bridgehead>
+    <para role="optional">
+      The source ships with its own versions of <emphasis>many</emphasis> of
+      these libraries, and will use them unless it is forced to use the system
+      versions.  Work is in progress to deal with this, in the meantime please
+      see<ulink url="http://wiki.linuxfromscratch.org/blfs/ticket/4647"> ticket
+      #4647</ulink>.
+      <xref linkend="gs"/>,
       <xref linkend="poppler"/>,
       <xref linkend="freetype2"/>,
       <xref linkend="fontconfig"/>,
@@ -125,9 +137,9 @@
       <ulink url="http://sourceforge.net/projects/zziplib/">ZZIPlib</ulink>,
       <ulink url="http://www.gnu.org/software/clisp/">CLISP</ulink>,
       <xref linkend="lua"/>,
-      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>,
-      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=RenderingGraphite">
-    Graphite</ulink></para>
+      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>, and
+      <xref linkend="graphite2"/>
+    </para>
 @z
 
 @x

@@ -96,7 +96,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>, and
-      <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>
+      <xref linkend="graphite2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -104,7 +104,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>
+      <xref linkend="graphite2"/>
     </para>
 @z
 

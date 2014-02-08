@@ -230,7 +230,8 @@
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangox-1.0.so and libpangoxft-1.0.so
+          libpangox-1.0.so and libpangoxft-1.0.so;
+          several modules under /usr/lib/pango/1.8.0/modules/
         </seg>
         <seg>
           /etc/pango,
@@ -244,7 +245,8 @@
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangox-1.0.so, libpangoxft-1.0.so
+          libpangox-1.0.so, libpangoxft-1.0.so,
+          /usr/lib/pango/1.8.0/modules/ 配下に数種のライブラリ
         </seg>
         <seg>
           /etc/pango,

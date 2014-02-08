@@ -75,48 +75,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          GLU Download (HTTP): <ulink url="&glu-download-http;"/>
-@y
-          GLU &Download; (HTTP): <ulink url="&glu-download-http;"/>
-@z
-
-@x
-          GLU Download (FTP): <ulink url="&glu-download-ftp;"/>
-@y
-          GLU &Download; (FTP): <ulink url="&glu-download-ftp;"/>
-@z
-
-@x
-          GLU Download MD5 sum: &glu-md5sum;
-@y
-          GLU &Download; MD5 sum: &glu-md5sum;
-@z
-
-@x
-          GLU Download size: &glu-size;
-@y
-          GLU &DownloadSize;: &glu-size;
-@z
-
-@x
-          Estimated GLU disk space required: &glu-buildsize;
-@y
-          GLU &Estimateddiskspacerequired;: &glu-buildsize;
-@z
-
-@x
-          Estimated GLU build time: &glu-time;
-@y
-          GLU &Estimatedbuildtime;: &glu-time;
-@z
-
-@x
     <bridgehead renderas="sect3">Additional Patches</bridgehead>
 @y
     <bridgehead renderas="sect3">追加のパッチ</bridgehead>
@@ -275,31 +233,6 @@
 @z
 
 @x
-    <title>Installation of GLU</title>
-@y
-    <title>&InstallationOf1;GLU&InstallationOf2;</title>
-@z
-
-@x
-      Install <application>GLU</application> by running the following
-      commands:
-@y
-      以下のコマンドを実行して <application>GLU</application> をビルドします。
-@z
-
-@x
-      This package does not come with a test suite.
-@y
-      &notTestSuite;
-@z
-
-@x
-      Now, as the <systemitem class="username">root</systemitem> user:
-@y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
@@ -415,7 +348,7 @@
         </seg>
         <seg>
           libEGL.so, libgbm.so, libglapi.so, libGLESv1_CM.so, libGLESv2.so,
-          libGL.so, libGLU.so, libOpenVG.so, libOSMesa.so, libxatracker.so,
+          libGL.so, libOpenVG.so, libOSMesa.so, libxatracker.so,
           libXvMCnouveau.so and libXvMCr600.so 
         </seg>
         <seg>
@@ -438,7 +371,7 @@
         </seg>
         <seg>
           libEGL.so, libgbm.so, libglapi.so, libGLESv1_CM.so, libGLESv2.so,
-          libGL.so, libGLU.so, libOpenVG.so, libOSMesa.so, libxatracker.so,
+          libGL.so, libOpenVG.so, libOSMesa.so, libxatracker.so,
           libXvMCnouveau.so, libXvMCr600.so 
         </seg>
         <seg>
@@ -453,7 +386,7 @@
           $XORG_PREFIX/lib/gallium-pipe,
           $XORG_PREFIX/lib/gbm,
           $XORG_PREFIX/lib/vdpau,
-          /usr/share/doc/MesaLib-&mesalib-version; (任意)
+          /usr/share/doc/MesaLib-&mesalib-version; (任意ビルド)
         </seg>
 @z
 
@@ -491,9 +424,3 @@
             主要な <application>Mesa</application> OpenGL ライブラリ。
 @z
 
-@x libGLU.so
-            is the <application>Mesa</application> OpenGL
-            Utility library.
-@y
-            <application>Mesa</application> OpenGL ユーティリティライブラリ。
-@z

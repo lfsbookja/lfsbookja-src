@@ -203,6 +203,7 @@ CHANGE_FILES = \
 	gtkmm2.ch               \
 	gtkmm3.ch               \
 	gtk-engines.ch          \
+        glu.ch                  \
         imlib2.ch               \
 	lib.ch                  \
 	libdrm.ch               \
@@ -425,6 +426,7 @@ clutter-gtk.xml:          $(BOOKdir)/$@ $(srcdir)/clutter-gtk.ch
 cogl.xml:                 $(BOOKdir)/$@ $(srcdir)/cogl.ch
 freeglut.xml:             $(BOOKdir)/$@ $(srcdir)/freeglut.ch
 gdk-pixbuf.xml:           $(BOOKdir)/$@ $(srcdir)/gdk-pixbuf.ch
+glu.xml:                  $(BOOKdir)/$@ $(srcdir)/glu.ch
 goffice010.xml:           $(BOOKdir)/$@ $(srcdir)/goffice010.ch
 gtk+2.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+2.ch
 gtk+3.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+3.ch

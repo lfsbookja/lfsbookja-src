@@ -162,25 +162,27 @@
 @z
 
 @x
-        There is a conflict between the <application>Cups</application>
+        There used to be a conflict between the <application>Cups</application>
         <application>libusb</application> backend and the usblp kernel
-        driver. If you want to use <application>Cups</application> with
-        <application>libusb</application>, <emphasis>do not</emphasis>
-        enable USB Printer support in your kernel.
+        driver.  This is no longer the case and cups will work with both of these
+        enabled.
 @y
-        There is a conflict between the <application>Cups</application>
+        There used to be a conflict between the <application>Cups</application>
         <application>libusb</application> backend and the usblp kernel
-        driver. If you want to use <application>Cups</application> with
-        <application>libusb</application>, <emphasis>do not</emphasis>
-        enable USB Printer support in your kernel.
+        driver.  This is no longer the case and cups will work with both of these
+        enabled.
 @z
 
 @x
-      If you want to use the kernel usblp driver, enable the following
-      options in your kernel configuration and recompile the kernel:
+      If you want to use the kernel usblp driver (for example, if you wish to
+      use <application>escputil</application> from <xref linkend="gutenprint"/>)
+      enable the following options in your kernel configuration and recompile the
+      kernel:
 @y
-      If you want to use the kernel usblp driver, enable the following
-      options in your kernel configuration and recompile the kernel:
+      If you want to use the kernel usblp driver (for example, if you wish to
+      use <application>escputil</application> from <xref linkend="gutenprint"/>)
+      enable the following options in your kernel configuration and recompile the
+      kernel:
 @z
 
 @x
