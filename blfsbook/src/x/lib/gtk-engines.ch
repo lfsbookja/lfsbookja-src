@@ -98,7 +98,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="lua"/> and
+      <xref linkend="lua"/>,
       <xref linkend="which"/> (テストスイート実行時に必要)
     </para>
 @z
@@ -137,22 +137,42 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--enable-lua --with-system-lua</option>: Use these switches if you
+      installed <application>Lua</application> and want to build Lua theming
+      engine.
+@y
+      <option>--enable-lua --with-system-lua</option>:
+      <application>Lua</application> をインストールしていて Lua テーマエンジンをビルドする場合にこれらのスイッチを指定します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
       <segtitle>Installed Themes</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
       <segtitle>&InstalledThemes;</segtitle>
 @z
 
 @x
+	<seg>
+	  None
+	</seg>
         <seg>
           libclearlooks.so,
           libcrux-engine.so,
@@ -182,6 +202,9 @@
           ThinIce
         </seg>
 @y
+	<seg>
+	  &None;
+	</seg>
         <seg>
           libclearlooks.so,
           libcrux-engine.so,

@@ -26,9 +26,7 @@
       with no namespace conflicts.
 @y
       <application>Gtkmm</application> パッケージは <application>GTK+ 2</application> に対する C++ インターフェースを提供します。
-      It can be installed alongside
-      <xref linkend="gtkmm3"/> (the <application>GTK+ 3</application> version)
-      with no namespace conflicts.
+      これは <xref linkend="gtkmm3"/> (<application>GTK+ 3</application> 版) との間で名前空間が衝突することなくインストールすることができます。
 @z
 
 @x
@@ -133,14 +131,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+	<seg>
+	  None
+	</seg>
         <seg>
           libgdkmm-2.4.so and libgtkmm-2.4.so
         </seg>
@@ -153,6 +156,9 @@
           /usr/share/doc/gtkmm-2.4
         </seg>
 @y
+	<seg>
+	  &None;
+	</seg>
         <seg>
           libgdkmm-2.4.so, libgtkmm-2.4.so
         </seg>

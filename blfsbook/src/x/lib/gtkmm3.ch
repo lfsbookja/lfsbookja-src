@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY gtkmm3-buildsize     "376 MB (Additional 15 MB for tests)">
+  <!ENTITY gtkmm3-time          "2.3 SBU (Additional 0.6 SBU for tests)">
+@y
+  <!ENTITY gtkmm3-buildsize     "376 MB (テスト実行時はさらに 15 MB)">
+  <!ENTITY gtkmm3-time          "2.3 SBU (テスト実行時はさらに 0.6 SBU)">
+@z
+
+@x
     <title>Introduction to Gtkmm</title>
 @y
     <title>&IntroductionTo1;Gtkmm&IntroductionTo2;</title>
