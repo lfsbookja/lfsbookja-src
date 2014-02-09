@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2014-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.19.  Fixes
+          <ulink url="&lfs-ticket-root;3486">#3486</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc-2.19 へのアップデート。
+          <ulink url="&lfs-ticket-root;3486">#3486</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-02-07</para>
       <itemizedlist>
         <listitem>

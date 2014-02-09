@@ -43,20 +43,6 @@
 @z
 
 @x
-    <para>An upstream change needs to be reverted:</para>
-@y
-    <para>アップストリームの変更の中に、元に戻すことが必要なものがあります。</para>
-@z
-
-@x
-    <para>Allow Glibc to be built using Make-&make-version;:</para>
-@y
-    <para>
-    Make-&make-version; を用いて Glibc がビルドできるようにします。
-    </para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
