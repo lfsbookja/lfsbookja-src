@@ -205,12 +205,24 @@
             ICU の break iteration rules のソースファイルをバイナリデータファイルにコンパイルします。
 @z
 
+@x genccode
+            generates C or platform specific assembly code from an ICU data
+            file.
+@y
+            ICU データファイルから C 言語コード、あるいは特定のアセンブリ言語コードを生成します。
+@z
+
 @x gencfu
             reads in Unicode confusable character definitions and writes out the
             binary data.
 @y
-            reads in Unicode confusable character definitions and writes out the
-            binary data.
+            Unicode にて混同を生じ易い文字 (confusable character) の定義を読み込んで、バイナリデータを出力します。
+@z
+
+@x gencmn
+            generates an ICU memory-mappable data file.
+@y
+            ICU のメモリマッピングデータファイルを生成します。
 @z
 
 @x gencnval
@@ -231,6 +243,12 @@
             リソースバンドル (resource bundle) をコンパイルします。
 @z
 
+@x gensprep
+            compiles StringPrep data from filtered RFC 3454 files.
+@y
+            フィルタリングされた RFC 3454 ファイルから StringPrep データを収集します。
+@z
+
 @x icu-config
             outputs ICU build options.
 @y
@@ -241,6 +259,12 @@
             outputs configuration information about the current ICU.
 @y
             ICU に対しての設定情報を表示します。
+@z
+
+@x icupkg
+            extracts or modifies an ICU .dat archive.
+@y
+            ICU の .dat アーカイブを抽出または修正します。
 @z
 
 @x makeconv

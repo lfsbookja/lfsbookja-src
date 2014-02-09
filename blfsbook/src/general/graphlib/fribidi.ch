@@ -73,6 +73,12 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">FriBidi Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;FriBidi&Dependencies2;</bridgehead>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="glib2"/>

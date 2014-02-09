@@ -30,9 +30,7 @@
       library which implements a protocol for transmission
       of raster page images.
 @y
-      The <application>IJS</application> package contains a
-      library which implements a protocol for transmission
-      of raster page images.
+      <application>IJS</application> パッケージは、ラスターページイメージを転送するプロトコルを実装したライブラリを提供します。
 @z
 
 @x
@@ -163,9 +161,7 @@
             linker flags that should be used to compile and link
             programs that use IJS.
 @y
-            is a program that is used to determine the compiler and
-            linker flags that should be used to compile and link
-            programs that use IJS.
+            IJS を用いるプログラムのコンパイルとリンクに使用べきコンパイラーフラグ、リンカーフラグを決定するプログラムです。
 @z
 
 @x libijs.so

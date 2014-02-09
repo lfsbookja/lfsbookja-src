@@ -14,6 +14,13 @@
 @z
 
 @x
+  <!ENTITY harfbuzz-buildsize     "24 MB (additional 1 MB for the tests and
+                                   1 MB for the API documentation)">
+@y
+  <!ENTITY harfbuzz-buildsize     "24 MB (テスト実行時はさらに 1 MB、API ドキュメント生成時はさらに 1 MB)">
+@z
+
+@x
     <title>Introduction to Harfbuzz</title>
 @y
     <title>&IntroductionTo1;Harfbuzz&IntroductionTo2;</title>

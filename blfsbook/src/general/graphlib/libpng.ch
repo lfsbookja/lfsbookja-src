@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libpng-buildsize     "12 MB (additional 1 MB for the tests)">
+  <!ENTITY libpng-time          "0.1 SBU (additional 0.1 SBU for the tests)">
+@y
+  <!ENTITY libpng-buildsize     "12 MB (テスト実行時はさらに 1 MB)">
+  <!ENTITY libpng-time          "0.1 SBU (テスト実行時はさらに 0.1 SBU)">
+@z
+
+@x
     <title>Introduction to libpng</title>
 @y
     <title>&IntroductionTo1;libpng&IntroductionTo2;</title>

@@ -133,6 +133,14 @@
 @z
 
 @x
+      <command>sed -i ...</command>: This command fixes a bug which is causing
+      <command>tiffgt</command> to open blank windows in some cases.
+@y
+      <command>sed -i ...</command>:
+      本コマンドは、特定条件下にて <command>tiffgt</command> が空のウィンドウを開いてしまうバグを修正します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -298,6 +306,12 @@
             prints verbatim information about TIFF files.
 @y
             TIFF ファイルのそのままの情報を出力します。
+@z
+
+@x tiffgt
+            displays an image stored in a TIFF file.
+@y
+            TIFF ファイルに保存されたイメージを表示します。
 @z
 
 @x tiffinfo
