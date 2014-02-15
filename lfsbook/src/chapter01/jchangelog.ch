@@ -54,11 +54,11 @@
 -->
 
     <listitem>
-      <para>2014-02-14</para>
+      <para>2014-02-15</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20140215,
+          SVN-20140214,
           Changeset
           <ulink url="&lfs-rev-root;10463">10463</ulink> ～
           <ulink url="&lfs-rev-root;10467">10467</ulink>
