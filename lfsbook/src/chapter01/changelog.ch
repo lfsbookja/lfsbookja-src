@@ -48,6 +48,107 @@
 @z
 
 @x
+      <para>2014-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Make sed for omit-frame-pointers the
+          same in Chapters 5 and 6. Fixes
+          <ulink url="&lfs-ticket-root;3497">#3497</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Simplify zimesone configuration in glibc.
+          Thanks to Chris Staub for the patch.  Fixes
+          <ulink url="&lfs-ticket-root;3496">#3496</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Let the glibc Makefile install rpc headers.
+          Thanks to Chris Staub for the patch.  Fixes
+          <ulink url="&lfs-ticket-root;3495">#3495</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.13.3. Fixes
+          <ulink url="&lfs-ticket-root;3493">#3493</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - omit-frame-pointers フラグに対する sed 処理を第5章、第6章で同一とする。
+          <ulink url="&lfs-ticket-root;3497">#3497</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc におけるタイムゾーンの設定を簡略化。
+          パッチを提供してくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;3496">#3496</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc の Makefile にて rpc ヘッダーをインストールするものに。
+          パッチを提供してくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;3495">#3495</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.13.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3493">#3493</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.17. Fixes
+          <ulink url="&lfs-ticket-root;3491">#3491</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flex-2.5.38. Fixes
+          <ulink url="&lfs-ticket-root;3492">#3492</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.58. Fixes
+          <ulink url="&lfs-ticket-root;3490">#3490</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - file-5.17 へのアップデート。
+          <ulink url="&lfs-ticket-root;3491">#3491</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flex-2.5.38 へのアップデート。
+          <ulink url="&lfs-ticket-root;3492">#3492</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.58 へのアップデート。
+          <ulink url="&lfs-ticket-root;3490">#3490</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update coreutils i18n patch.  
+          Thanks to Igor Izivkov for pointing it out.  Fixes
+          <ulink url="&lfs-ticket-root;3488">#3488</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - coreutils の i18n パッチを更新。
+          指摘してくれた Igor Izivkov に感謝。
+          <ulink url="&lfs-ticket-root;3488">#3488</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-02-08</para>
       <itemizedlist>
         <listitem>

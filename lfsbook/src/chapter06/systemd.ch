@@ -73,7 +73,7 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Build the package:</para>
 @y
     <para>&CompileThePackage;</para>
 @z

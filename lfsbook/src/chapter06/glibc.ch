@@ -109,6 +109,18 @@
           </para>
 @z
 
+@x --enable-obsolete-rpc
+          <para>Installs NIS and RPC related headers that are not installed by
+          default; these are required to rebuild Glibc and by several BLFS
+          packages.</para>
+@y
+          <para>
+          NIS と RPC に関連するヘッダーファイルをインストールします。
+          これらはデフォルトではインストールされません。
+          これは Glibc の再構築や、いくつかの BLFS パッケージにて必要となるものです。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -230,17 +242,6 @@ minor timing issues が何を意味するのか不明であった。
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Install NIS and RPC related headers that are not installed by
-    default; these are required to rebuild glibc and by several BLFS 
-    packages:</para>
-@y
-    <para>
-    デフォルトではインストールされない、NIS と RPC に関するヘッダーファイルをインストールします。
-    これは glibc の再ビルド時や BLFS の各種パッケージにて必要となります。
-    </para>
 @z
 
 @x
@@ -437,27 +438,6 @@ minor timing issues が何を意味するのか不明であった。
 @y
     <para>
     <replaceable>&lt;xxx&gt;</replaceable> の部分は設定するタイムゾーンの名前 (例えば Canada/Eastern など) に置き換えてください。
-    </para>
-@z
-
-@x
-      <title>The meaning of the cp option:</title>
-@y
-      <title>&MeaningOfOption1;cp&MeaningOfOption2;:</title>
-@z
-
-@x
-          <para>This is needed to force removal of the already existing symbolic
-          link. The reason for copying the file instead of using a symlink is to
-          cover the situation where <filename class="directory">/usr</filename>
-          is on a separate partition. This could be important when booted into
-          single user mode.</para>
-@y
-    <para>
-    このオプションは既に存在するシンボリックリンクを削除します。
-    ここではシンボリックリンクを再生成するのではなく、ファイルのコピーを行います。
-    これは別パーティション内に <filename class="directory">/usr</filename> ディレクトリが存在するケースに対応するためです。
-    シングルユーザーモードでシステムを起動する際にはこのことが必要となります。
     </para>
 @z
 
