@@ -48,6 +48,94 @@
 @z
 
 @x
+      <para>2014-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.5.9.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Incorporate beta FHS.  Add 
+          /usr/share/ppd, /usr/libexec, /usr/share/color, 
+          /usr/local/share/color, /var/lib/color, and /usr/share/dict. 
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Incorporate beta FHS.  Remove overrides
+          for /usr/libexec: coreutils, findutils, gawk, gcc, glibc, 
+          inetutils, man-db, and tar.  Also fixes 
+          <ulink url="&lfs-ticket-root;3498">#3498</ulink>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Incorporate beta FHS.  Move grub sbin
+          executables from /usr/sbin to /sbin.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Document two new glibc errors in the
+          regression tests.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Move man-db after util-linux to satisfy
+          a test dependency.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update automake tests to accomodate util-linux
+          in /tools and to speed the test up.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Restore building the flex static library.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.5.9 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - FHS ベータ版に追随。
+          以下のディレクトリを追加。
+          /usr/share/ppd, /usr/libexec, /usr/share/color, usr/local/share/color, /var/lib/color, /usr/share/dict
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - FHS ベータ版に追随。
+          以下のパッケージについて /usr/libexec へのモジュールインストールを削除。
+          <ulink url="&lfs-ticket-root;3498">#3498</ulink> を Fix に。
+          coreutils, findutils, gawk, gcc, glibc, inetutils, man-db, tar
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - FHS ベータ版に追随。
+          grub の sbin 実行モジュールを /usr/sbin から /sbin に。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc にて縮退テストに関する新たなテスト失敗について説明追加。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db を util-linux の次にビルドすることで、テストの依存関係を満たすことに。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake のテストにて util-linux が /tools にあることに対応。
+          またテスト処理を早めるように。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flex にてスタティックライブラリを生成するように戻す。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-02-14</para>
       <itemizedlist>
         <listitem>

@@ -38,11 +38,13 @@
 @z
 
 @x
-        <para><ulink url="http://www.pathname.com/fhs/pub/fhs-2.3.html">Filesystem 
-        Hierarchy Standard (FHS)</ulink></para>
+        <para><ulink 
+        url="http://www.linuxfoundation.org/collaborate/workgroups/lsb/fhs-30-draft-1">
+        Filesystem Hierarchy Standard version 3.0 Draft 1 (FHS)</ulink></para>
 @y
-        <para><ulink url="http://www.pathname.com/fhs/pub/fhs-2.3.html">Filesystem 
-        Hierarchy Standard (FHS)</ulink></para>
+        <para><ulink 
+        url="http://www.linuxfoundation.org/collaborate/workgroups/lsb/fhs-30-draft-1">
+        Filesystem Hierarchy Standard version 3.0 Draft 1 (FHS)</ulink></para>
 @z
 
 @x

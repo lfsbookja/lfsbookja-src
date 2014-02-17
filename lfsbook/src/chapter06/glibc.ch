@@ -97,18 +97,6 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x --libexecdir=/usr/lib/glibc
-          <para>This changes the location of some auxillary files from the
-          default of <filename class="directory">/usr/libexec</filename> to
-          <filename class="directory">/usr/lib/glibc</filename>.</para>
-@y
-          <para>
-          このオプションはいくつかの補助ファイル群のインストール先を、デフォルトの <filename
-          class="directory">/usr/libexec</filename> から <filename
-          class="directory">/usr/lib/glibc</filename> に変更します。
-          </para>
-@z
-
 @x --enable-obsolete-rpc
           <para>Installs NIS and RPC related headers that are not installed by
           default; these are required to rebuild Glibc and by several BLFS
@@ -219,12 +207,25 @@ minor timing issues が何を意味するのか不明であった。
 @z
 
 @x
-        <para>Other tests known to fail on some architectures are posix/bug-regex32, 
-        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, and stdio-common/bug22.</para>
+        <para>libio/tst-ftell-partial-wide.out fails because it needs a locale
+        that has not yet been generated.</para>
+@y
+        <para>
+        libio/tst-ftell-partial-wide.out のテストは失敗します。
+        ロケールを必要としており、まだ生成していないからです。
+        </para>
+@z
+
+@x
+        <para>Other tests known to fail on some architectures are posix/bug-regex32,
+        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, nptl/tst-robust8,
+        and stdio-common/bug22.</para>
 @y
         <para>
         上記以外に特定のアーキテクチャーにてテストが失敗することが分かっています。
-        失敗するのは posix/bug-regex32, misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, stdio-common/bug22 です。</para>
+        失敗するのは posix/bug-regex32,
+        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, nptl/tst-robust8, stdio-common/bug22 です。
+        </para>
 @z
 
 @x

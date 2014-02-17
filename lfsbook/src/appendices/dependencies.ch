@@ -954,9 +954,9 @@ Typo ですが日本語訳には影響ありません。
          Glibc, Grep, Groff, Gzip, Less, Libpipeline, Make, Sed, Xz</seg>
 @z
 @x
-          <seg>Not run. Requires Man-DB test suite package</seg>
+          <seg>Util-linux</seg>
 @y
-          <seg>動かすためには Man-DB テストスイートパッケージが必要</seg>
+          <seg>Util-linux</seg>
 @z
 @x
           <seg>None</seg>
