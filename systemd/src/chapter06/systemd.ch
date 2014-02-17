@@ -29,6 +29,24 @@
 @z
 
 @x
+    <para>First, create a file to allow Systemd to build when using Util-Linux
+    built in Chapter 5:</para>
+@y
+    <para>
+    第5章にてビルドした Util-Linux を利用して Systemd をビルドするように、以下のファイルを生成します。
+    </para>
+@z
+
+@x
+    <para>Aditionally, fix a build error when using Util-Linux built in
+    Chapter 5:</para>
+@y
+    <para>
+    さらに第5章でビルドした Util-Linux を用いた際のビルドエラーを解消します。
+    </para>
+@z
+
+@x
     <para>Prepare Systemd for compilation:</para>
 @y
     <para>&PreparePackage1;Systemd&PreparePackage2;</para>
@@ -38,6 +56,16 @@
       <title>The meaning of the configure options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+@z
+
+@x --config-cache
+          <para>This switch tells the build system to use
+          the <filename>config.cache</filename> file which
+          was created earlier.</para>
+@y
+          <para>
+          このスイッチは上で作成した <filename>config.cache</filename> ファイルを使って本パッケージをビルドすることを指示します。
+          </para>
 @z
 
 @x --with-root*
@@ -90,6 +118,26 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>Install manual pages which are shipped in the tarball, but were
+    not installed by install process:</para>
+@y
+    <para>
+    Man ページをインストールします。
+    これらは tarball 内に含まれていますが、インストール処理ではインストールされません。
+    </para>
+@z
+
+@x
+    <para>Move NSS myhostname library to <filename
+    class="directory">/lib</filename>:</para>
+@y
+    <para>
+    NSS の myhostname ライブラリを <filename
+    class="directory">/lib</filename> に移動します。
+    </para>
 @z
 
 @x

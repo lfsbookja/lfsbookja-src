@@ -38,6 +38,16 @@
 @z
 
 @x
+    <para>Prevent installation of manual pages that were already installed by
+    Man-Pages package:</para>
+@y
+    <para>
+    man ページをインストールしないようにします。
+    これは Man-Pages パッケージにより既にインストールされているからです。
+    </para>
+@z
+
+@x
     <para>Prepare Attr for compilation:</para>
 @y
     <para>&PreparePackage1;Attr&PreparePackage2;</para>

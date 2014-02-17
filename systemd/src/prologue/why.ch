@@ -105,6 +105,16 @@
         </para>
 @z
 
+@x Bc
+        <para>This package provides an arbitrary precision numeric processing language. 
+        It satisfies a requirement needed when building the Linux kernel.</para>
+@y
+        <para>
+        このパッケージは、任意精度 (arbitrary precision) の演算処理言語を提供します。
+        Linux カーネルの構築に必要となります。
+        </para>
+@z
+
 @x Binutils
         <para>This package contains a linker, an assembler, and other 
         tools for handling object files. The programs in this package are

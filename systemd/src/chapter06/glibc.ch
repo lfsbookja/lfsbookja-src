@@ -52,6 +52,14 @@
 @z
 
 @x
+    <para>First fix a minor problem when installing the tzselect script:</para>
+@y
+    <para>
+    tzselect スクリプトのインストール時での問題を修正します。
+    </para>
+@z
+
+@x
     <para>The Glibc build system is self-contained and will install
     perfectly, even though the compiler specs file and linker are still
     pointing at <filename class="directory">/tools</filename>. The specs
@@ -70,8 +78,8 @@
 
 @x
     <para>Some of the Glibc programs use non-FHS compilant
-    <filename class="directory">/var/db</filename> directory
-    to store their runtime data. Apply the following patch to make such programs
+    <filename class="directory">/var/db</filename> directory to store
+    their runtime data. Apply the following patch to make such programs
     store their runtime data in the FHS-compliant locations:</para>
 @y
     <para>
@@ -81,48 +89,6 @@
     </para>
 @z
 
-% @x
-%     <para>Fix a problem that causes the build to fail in the LFS environment:</para>
-% @y
-%     <para>LFS 環境にて種々のビルド不備を引き起こす問題を修正します。</para>
-% @z
-
-% @x
-%     <para>When running <command>make install</command>, a script called
-%     <filename>test-installation.pl</filename> performs a small sanity test on
-%     our newly installed Glibc. Use a patch to fix the bug that causes it to
-%     fail:</para>
-% @y
-%     <para>
-%     <command>make install</command> の実行時には <filename>test-installation.pl</filename> スクリプトが呼び出され、ここで作り出された新たな Glibc に対しての健全性テスト (sanity test) が実行されます。
-%     テストが失敗するバグが含まれるため、テストが正常実行できません。
-%     そこでこれを回避するために以下のパッチを適用します。
-%     </para>
-% @z
-
-% @x
-%     <para>The <command>ldd</command> shell script contains Bash-specific
-%     syntax. Change its default program interpreter to <command>/bin/bash</command>
-%     in case another <command>/bin/sh</command> is installed as described in the
-%     <ulink url="&blfs-root;view/svn/postlfs/shells.html">Shells</ulink>
-%     chapter of the BLFS book:</para>
-% @y
-%     <para>
-%     <command>ldd</command> シェルスクリプトは Bash が定める文法書式により構成されています。
-%     デフォルトで記述されているインタープリターを <command>/bin/bash</command> に変更します。
-%     BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink> で説明しているように、別の <command>/bin/sh</command> がインストールされている場合もあるからです。
-%     </para>
-% @z
-
-% @x
-%     <para>Now fix a problem that causes some applications to crash when 
-%     utilizing problem nameservers:</para>
-% @y
-%     <para>
-%     ネームサーバーの利用時に特定のアプリケーションがクラッシュする問題を解消します。
-%     </para>
-% @z
-
 @x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
@@ -131,17 +97,6 @@
     Glibc のドキュメントではソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
     </para>
 @z
-
-% @x
-%     <para>As in Chapter 5, add the needed compiler flags to CFLAGS for x86 machines.
-%     Here, the optimization of the library is also set for the gcc compiler to
-%     enhance compilation speed (-pipe) and package performance (-O3).</para>
-% @y
-%     <para>
-%     第5章と同じように x86 マシンにおいては CFLAGS に対してコンパイラーフラグの追加が必要です。
-%     ライブラリ構築においても gcc コンパイラーに対して最適化フラグをセットすることで、コンパイル時間を向上 (-pipe) させ、パッケージのパフォーマンスも向上 (-O3) させます。
-%     </para>
-% @z
 
 @x
     <para>Prepare Glibc for compilation:</para>
@@ -155,15 +110,15 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x --libexecdir=/usr/lib
-          <para>This changes the location of some auxillary files from the
-          default of <filename class="directory">/usr/libexec</filename> to
-          <filename class="directory">/usr/lib</filename>.</para>
+@x --enable-obsolete-rpc
+          <para>Installs NIS and RPC related headers that are not installed by
+          default; these are required to rebuild Glibc and by several BLFS
+          packages.</para>
 @y
           <para>
-          このオプションはいくつかの補助ファイル群のインストール先を、デフォルトの <filename
-          class="directory">/usr/libexec</filename> から <filename
-          class="directory">/usr/lib</filename> に変更します。
+          NIS と RPC に関連するヘッダーファイルをインストールします。
+          これらはデフォルトではインストールされません。
+          これは Glibc の再構築や、いくつかの BLFS パッケージにて必要となるものです。
           </para>
 @z
 
@@ -208,15 +163,6 @@
     </para>
 @z
 
-% @x
-%         <para>The <emphasis>nptl/tst-cancel1</emphasis> test will fail when
-%         using the 4.1 series of GCC.</para>
-% @y
-%         <para>
-%         <emphasis>nptl/tst-cancel1</emphasis> テストは GCC 4.1 シリーズでは失敗します。
-%         </para>
-% @z
-
 @x
         <para>The <emphasis>nptl/tst-clock2</emphasis>,
         <emphasis>nptl/tst-attr3</emphasis>, 
@@ -250,18 +196,6 @@ minor timing issues が何を意味するのか不明であった。
         </para>
 @z
 
-% @x
-%         <para>If you have mounted the LFS partition with the
-%         <parameter>noatime</parameter> option, the <emphasis>atime</emphasis>
-%         test will fail. As mentioned in <xref linkend="space-mounting"/>, do not
-%         use the <parameter>noatime</parameter> option while building LFS.</para>
-% @y
-%         <para>
-%         LFS パーティションを <parameter>noatime</parameter> オプションを用いてマウントしている場合 <emphasis>atime</emphasis> テストが失敗します。
-%         <xref linkend="space-mounting"/>で説明しているように、LFS のビルド中は <parameter>noatime</parameter> オプションを使わないようにしてください。
-%         </para>
-% @z
-
 @x
         <para>When running on older and slower hardware or on systems under
         load, some tests can fail because of test timeouts being exceeded.
@@ -277,12 +211,34 @@ minor timing issues が何を意味するのか不明であった。
 @z
 
 @x
-        <para>Other tests known to fail on some architectures are posix/bug-regex32, 
-        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, and stdio-common/bug22.</para>
+        <para>posix/tst-getaddrinfo4 will always fail due to not having a network
+        connection when the test is run.</para>
+@y
+        <para>
+        posix/tst-getaddrinfo4 は、テスト実行時にネットワークに接続されていないため失敗します。
+        </para>
+@z
+
+@x
+        <para>libio/tst-ftell-partial-wide.out fails because it needs a locale
+        that has not yet been generated.</para>
+@y
+        <para>
+        libio/tst-ftell-partial-wide.out のテストは失敗します。
+        ロケールを必要としており、まだ生成していないからです。
+        </para>
+@z
+
+@x
+        <para>Other tests known to fail on some architectures are posix/bug-regex32,
+        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, nptl/tst-robust8,
+        and stdio-common/bug22.</para>
 @y
         <para>
         上記以外に特定のアーキテクチャーにてテストが失敗することが分かっています。
-        失敗するのは posix/bug-regex32, misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, stdio-common/bug22 です。</para>
+        失敗するのは posix/bug-regex32,
+        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, nptl/tst-robust8, stdio-common/bug22 です。
+        </para>
 @z
 
 @x
@@ -303,22 +259,19 @@ minor timing issues が何を意味するのか不明であった。
 @z
 
 @x
-    <para>Install NIS and RPC related headers that are not installed by
-    default; these are required to rebuild glibc and by several BLFS 
-    packages:</para>
-@y
-    <para>
-    デフォルトではインストールされない、NIS と RPC に関するヘッダーファイルをインストールします。
-    これは glibc の再ビルド時や BLFS の各種パッケージにて必要となります。
-    </para>
-@z
-
-@x
     <para>Install the configuration file and runtime directory for
     <command>nscd</command>:</para>
 @y
     <para>
     <command>nscd</command> に対しての設定ファイルと実行時ディレクトリを、以下のようにインストールします。
+    </para>
+@z
+
+@x
+    <para>Install the Systemd support files for <command>nscd</command>:</para>
+@y
+    <para>
+    <command>nscd</command> コマンドに対する Systemd サポートファイルをインストールします。
     </para>
 @z
 
@@ -599,7 +552,7 @@ minor timing issues が何を意味するのか不明であった。
         pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
-        libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
+        libc.{a,so}, libc_nonshared.a, libcidn.so,
         libcrypt.{a,so}, libdl.{a,so}, libg.a, libieee.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libnsl.{a,so}, libnss_compat.so,
         libnss_dns.so, libnss_files.so, libnss_hesiod.so, libnss_nis.so,
@@ -621,7 +574,7 @@ minor timing issues が何を意味するのか不明であった。
         pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
-        libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
+        libc.{a,so}, libc_nonshared.a, libcidn.so,
         libcrypt.{a,so}, libdl.{a,so}, libg.a, libieee.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libnsl.{a,so}, libnss_compat.so,
         libnss_dns.so, libnss_files.so, libnss_hesiod.so, libnss_nis.so,
@@ -895,15 +848,6 @@ minor timing issues が何を意味するのか不明であった。
 @y
           <para>
           非同期の名前解決 (asynchronous name lookup) ライブラリ。
-          </para>
-@z
-
-@x libbsd-compat
-          <para>Provides the portability needed in order to run certain
-          Berkeley Software Distribution (BSD) programs under Linux</para>
-@y
-          <para>
-          特定の BSD (Berkeley Software Distribution) プログラムを Linux 上で動作させるために必要な可搬ライブラリを提供します。
           </para>
 @z
 

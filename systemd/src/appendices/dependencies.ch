@@ -908,9 +908,9 @@ Typo ですが日本語訳には影響ありません。
          Glibc, Grep, Groff, Gzip, Less, Libpipeline, Make, Sed, Xz</seg>
 @z
 @x
-          <seg>Not run. Requires Man-DB test suite package</seg>
+          <seg>Util-linux</seg>
 @y
-          <seg>動かすためには Man-DB テストスイートパッケージが必要</seg>
+          <seg>Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -1294,15 +1294,15 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Util-linux
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Ncurses, Sed, and Zlib</seg>
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, Udev, and Zlib</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Ncurses, Sed, Zlib</seg>
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, Udev, Zlib</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>

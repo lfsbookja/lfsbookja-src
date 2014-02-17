@@ -27,6 +27,14 @@
   </para>
 @z
 
+@x Acl
+        <para>Home page: <ulink url="&acl-home;"/></para>
+        <para>Download: <ulink url="&acl-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&acl-home;"/></para>
+        <para>&Download;: <ulink url="&acl-url;"/></para>
+@z
+
 @x Attr
         <para>Home page: <ulink url="&attr-home;"/></para>
         <para>Download: <ulink url="&attr-url;"/></para>
@@ -413,6 +421,14 @@
         <para>MD5 sum: <literal>&less-md5;</literal></para>
 @z
 
+@x LFS-Network-Scripts
+        <para>Home page: <ulink url="&lfs-network-scripts-home;"/></para>
+        <para>Download: <ulink url="&lfs-network-scripts-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&lfs-network-scripts-home;"/></para>
+        <para>&Download;: <ulink url="&lfs-network-scripts-url;"/></para>
+@z
+
 @x Libcap
         <para>Home page: <ulink url="&libcap-home;"/></para>
         <para>Download: <ulink url="&libcap-url;"/></para>
@@ -621,11 +637,11 @@
 @z
 
 @x
-        <para>Home page: <ulink url="&shadow-home;"/></para>
+        <!-- <para>Home page: <ulink url="&shadow-home;"/></para> -->
         <para>Download: <ulink url="&shadow-url;"/></para>
         <para>MD5 sum: <literal>&shadow-md5;</literal></para>
 @y
-        <para>&Homepage;: <ulink url="&shadow-home;"/></para>
+        <!-- <para>&Homepage;: <ulink url="&shadow-home;"/></para> -->
         <para>&Download;: <ulink url="&shadow-url;"/></para>
         <para>MD5 sum: <literal>&shadow-md5;</literal></para>
 @z

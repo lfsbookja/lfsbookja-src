@@ -53,13 +53,25 @@
 
 @x
     <para>The Acl tests need to be run on a filesystem that supports access
-    controls. You will see lot of failures because Coreutils weren't compiled
-    with ACL support. To test the results, issue:</para>
+    controls. You will see lot of failures because Coreutils wasn't compiled
+    with ACL support. To anyways test the results, issue:</para>
 @y
     <para>
     Acl のテストは、アクセスコントロールリストをサポートしているファイルシステム上にて実行する必要があります。
     Coreutils を ACL サポートつきではビルドしていないため、失敗するテストが多々あります。
     ビルド結果をテストする場合は以下を実行します。</para>
+@z
+
+@x
+    <note><para>Even if you run Acl tests after Coreutils has been built with
+    Acl support, at least 11 tests will still fail for unknown reasons.</para>
+    </note>
+@y
+    <note><para>
+    Coreutils のビルドを Acl サポートを伴って行っている場合は、少なくとも 11 個のテストが失敗します。
+    その原因は分かっていません。
+    </para>
+    </note>
 @z
 
 @x

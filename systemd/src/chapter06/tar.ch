@@ -79,6 +79,14 @@
 @z
 
 @x
+    <para>Finally, generate the man page and place it in the proper location:</para>
+@y
+    <para>
+    最後に Man ページを生成して、それを所定ディレクトリにインストールします。
+    </para>
+@z
+
+@x
     <title>Contents of Tar</title>
 @y
     <title>&ContentsOf1;Tar&ContentsOf2;</title>

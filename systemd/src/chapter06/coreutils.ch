@@ -636,6 +636,14 @@
           </para>
 @z
 
+@x numfmt
+          <para>Converts numbers to or from human-readable strings</para>
+@y
+          <para>
+          記述された文字列と数値を互いに変換します。
+          </para>
+@z
+
 @x od
           <para>Dumps files in octal and other formats</para>
 @y

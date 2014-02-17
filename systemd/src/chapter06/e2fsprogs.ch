@@ -35,6 +35,15 @@
 @z
 
 @x
+    <para>First fix a problem with running regression tests in the LFS chroot
+    environment:</para>
+@y
+    <para>
+    LFS の chroot 環境にて正規表現テストの実行が失敗するため修正します。
+    </para>
+@z
+
+@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
@@ -50,17 +59,17 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+      <title>The meaning of the environment variable and configure options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>環境変数と configure&MeaningOfOption2;:</title>
 @z
 
-@x PKG_CONFIG...
-          <para>This enables E2fsprogs to be built without requiring Pkg-config
-          to be built and installed first.</para>
+@x PKG_CONFIG_PATH, LIBS, CFLAGS
+          <para>These variables enable e2fsprogs to be built using the 
+          <xref linkend="ch-tools-util-linux"/> package built earlier.</para>
 @y
           <para>
-          このオプションは、Pkg-config がビルドおよびインストールされていなくても、E2fsprogs をビルドできるようにするものです。
+          これらのオプションは、既にビルドした <xref linkend="ch-tools-util-linux"/> パッケージを使って E2fsprogs をビルドできるようにするものです。
           </para>
 @z
 
@@ -212,7 +221,7 @@
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, 
         resize2fs, and tune2fs</seg>
         <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so},
-        libquota.a and libss.{a,so}</seg>
+        libquota.a, and libss.{a,so}</seg>
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
         /usr/include/quota, /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @y
@@ -288,6 +297,14 @@
           </para>
 @z
 
+@x e2freefrag
+          <para> Reports free space fragmentation information</para>
+@y
+          <para>
+          フリースペースのフラグメント情報を表示します。
+          </para>
+@z
+
 @x e2fsck
           <para>Is used to check, and optionally repair <systemitem
           class="filesystem">ext2</systemitem> file systems and <systemitem
@@ -327,6 +344,22 @@
           <para>
           デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
           これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
+          </para>
+@z
+
+@x e4defrag
+          <para>Online defragmenter for ext4 filesystems</para>
+@y
+          <para>
+          ext4 ファイルシステムにたいするオンラインのデフラグプログラム。
+          </para>
+@z
+
+@x filefrag
+          <para>Reports on how badly fragmented a particular file might be</para>
+@y
+          <para>
+          特定のファイルがどのようにデフラグ化しているかを表示します。
           </para>
 @z
 
@@ -456,6 +489,19 @@
           デフォルトでは <systemitem
           class="filesystem">ext4</systemitem> ファイルシステム開発版を生成します。
           これは <command>mke2fs</command> へのハードリンクです。
+          </para>
+@z
+
+@x mklost+found
+          <para>Used to create a <filename class="directory">lost+found</filename>
+          directory on an <systemitem class="filesystem">ext2</systemitem> file
+          system; it pre-allocates disk blocks to this directory to lighten the
+          task of <command>e2fsck</command></para>
+@y
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上に <filename
+          class="directory">lost+found</filename> ディレクトリを作成します。
+          これはそのディレクトリ内にあらかじめディスクブロックを割り当てておくことにより <command>e2fsck</command> コマンド処理を軽減させます。
           </para>
 @z
 

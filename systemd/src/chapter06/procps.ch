@@ -129,6 +129,14 @@
           </para>
 @z
 
+@x pidof
+          <para>Looks up processes based on their name and other attributes</para>
+@y
+          <para>
+          プロセス名や他の属性に基づいてプロセスを調べます。
+          </para>
+@z
+
 @x pkill
           <para>Signals processes based on their name and other attributes</para>
 @y

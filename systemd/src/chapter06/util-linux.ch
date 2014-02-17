@@ -90,6 +90,18 @@
 @z
 
 @x
+    <note><para>Two tests, last/ipv6 and last/last, fail in the chroot environment
+    due to the DNS resolver not being active yet.  If the tests are rerun after
+    booting, they pass.</para></note>
+@y
+    <note><para>
+    last/ipv6 と last/last という二つのテストは chroot 環境では失敗します。
+    これは DNS リゾルバーがまだ稼動していないためです。
+    ブート後にテストを再実行すれば成功します。
+    </para></note>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
@@ -172,6 +184,14 @@
           <para>
           tty ポートを開いてログイン名の入力を受け付けます。
           そして <command>login</command> プログラムを起動します。
+          </para>
+@z
+
+@x blkdiscard
+          <para>Discards sectors on a device</para>
+@y
+          <para>
+          デバイス上のセクターを取り除きます。
           </para>
 @z
 
@@ -480,6 +500,28 @@
           </para>
 @z
 
+@x last
+          <para>Shows which users last logged in (and out), searching back 
+          through the <filename>/var/log/wtmp</filename> file; it also shows 
+          system boots, shutdowns, and run-level changes</para>
+@y
+          <para>
+          ユーザーの最新のログイン (ログアウト) の情報を表示します。
+          これは <filename>/var/log/wtmp</filename> ファイルの終わりから調べているものです。
+          またシステムブート、シャットダウン、ランレベルの変更時の情報も示します。
+          </para>
+@z
+
+@x lastb
+          <para>Shows the failed login attempts, as logged in 
+          <filename>/var/log/btmp</filename></para>
+@y
+          <para>
+          ログインに失敗した情報を表示します。
+          これは <filename>/var/log/btmp</filename> に記録されています。
+          </para>
+@z
+
 @x ldattach
           <para>Attaches a line discipline to a serial line</para>
 @y
@@ -647,6 +689,14 @@
 @y
           <para>
           指定されたパスに存在するシンボリックリンクを表示します。
+          </para>
+@z
+
+@x nsenter
+          <para>Runs a program with namespaces of other processes</para>
+@y
+          <para>
+          他プロセスの名前空間にてプログラムを実行します。
           </para>
 @z
 

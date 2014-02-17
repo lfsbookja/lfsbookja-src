@@ -137,7 +137,7 @@
         <seg>tclsh (link to tclsh&tcl-major-version;) and tclsh&tcl-major-version;</seg>
         <seg>libtcl&tcl-major-version;.so, libtclstub&tcl-major-version;.a</seg>
 @y
-        <seg>tclsh (tclsh&tcl-major-version;へのリンク) and tclsh&tcl-major-version;</seg>
+        <seg>tclsh (tclsh&tcl-major-version;へのリンク), tclsh&tcl-major-version;</seg>
         <seg>libtcl&tcl-major-version;.so, libtclstub&tcl-major-version;.a</seg>
 @z
 

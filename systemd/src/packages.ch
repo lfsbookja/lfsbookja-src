@@ -14,9 +14,9 @@
 @z
 
 @x
-<!ENTITY automake-ch6-sbu "less than 0.1 SBU (34.1 SBU with tests)">
+<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 12 SBU with tests)">
 @y
-<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テストスイートを含めると 34.1 SBU)">
+<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テストスイートを含めると約 12 SBU)">
 @z
 
 @x
@@ -77,4 +77,10 @@
 <!ENTITY psmisc-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY psmisc-ch6-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY zlib-ch6-sbu "less than 0.1 SBU">
+@y
+<!ENTITY zlib-ch6-sbu "0.1 SBU 以下">
 @z

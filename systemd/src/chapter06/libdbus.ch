@@ -31,6 +31,17 @@
 @z
 
 @x
+      <para><application>Libdbus</application> is part of the D-Bus sources.
+      You should first unpack the D-Bus tarball and change to the
+      <filename>dbus-&dbus-version;</filename> directory.</para>
+@y
+      <para>
+      <application>Libdbus</application> は D-Bus ソースの一部に含まれるものです。
+      まずは D-Bus tarball を伸張 (解凍) し、<filename>dbus-&dbus-version;</filename> ディレクトリに移動します。
+      </para>
+@z
+
+@x
     <para>Prepare Libdbus for compilation:</para>
 @y
     <para>&PreparePackage1;Libdbus&PreparePackage2;</para>
@@ -56,6 +67,19 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>The shared library needs to be moved to
+    <filename class="directory">/lib</filename>, and as a result the
+    <filename class="extension">.so</filename> file in
+    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
+@y
+    <para>
+    共有ライブラリは <filename class="directory">/lib</filename> へ移動させます。
+    したがって <filename class="directory">/usr/lib</filename> にある <filename
+    class="extension">.so</filename> ファイルは再生成する必要があります。
+    </para>
 @z
 
 @x

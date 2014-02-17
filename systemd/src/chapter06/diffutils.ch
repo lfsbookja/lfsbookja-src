@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>First fix a file so locale files are installed:</para>
+@y
+    <para>
+    ロケールファイルをインストールするように修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Diffutils for compilation:</para>
 @y
     <para>&PreparePackage1;Diffutils&PreparePackage2;</para>

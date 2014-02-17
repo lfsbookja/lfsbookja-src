@@ -92,13 +92,12 @@
       <title>&MeaningOfOption1;Configure&MeaningOfOption2;:</title>
 @z
 
-@x --disable-install-libiberty
-          <para>This prevents GCC from installing its own copy of libiberty,
-          which is already provided by Binutils-&binutils-version;.</para>
+@x SED=sed
+          <para>Setting this environment variable prevents a hard-coded
+          path to /tools/bin/sed.</para>
 @y
           <para>
-          libiberty をインストールしないようにします。
-          これは Binutils-&binutils-version; により既に提供されています。
+          ハードコーディングされているパスを /tools/bin/sed とするために、環境変数を設定します。
           </para>
 @z
 
@@ -310,7 +309,7 @@
         gcc-ar, gcc-nm, gcc-ranlib, and gcov</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
         liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a and libtsan.{a,so}</seg>
@@ -321,7 +320,7 @@
         gcc-ar, gcc-nm, gcc-ranlib, gcov</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
         liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, libtsan.{a,so}</seg>
@@ -418,6 +417,14 @@
           </para>
 @z
 
+@x libasan
+          <para>The Address Sanitizer runtime library</para>
+@y
+          <para>
+          アドレスサニタイザー (Address Sanitizer) のランタイムライブラリ。
+          </para>
+@z
+
 @x libgcc
           <para>Contains run-time support for <command>gcc</command></para>
 @y
@@ -443,6 +450,20 @@
           C/C++ や Fortran において、マルチプラットフォームでの共有メモリ並行プログラミング
           (multi-platform shared-memory parallel programming)
           を行うための、GNU による OpenMP API インプリメンテーションです。
+          </para>
+@z
+
+@x libiberty
+          <para>Contains routines used by various GNU programs, including
+          <command>getopt</command>, <command>obstack</command>,
+          <command>strerror</command>, <command>strtol</command>, and
+          <command>strtoul</command></para>
+@y
+          <para>
+          以下に示すような数多くの GNU プログラムが利用する処理ルーチンを提供します。
+          <command>getopt</command>, <command>obstack</command>,
+          <command>strerror</command>, <command>strtol</command>,
+          <command>strtoul</command>
           </para>
 @z
 
@@ -494,5 +515,13 @@
 @y
           <para>
           C++ プログラミング言語のためのサポートルーチンを提供します。
+          </para>
+@z
+
+@x
+          <para>The Thread Sanitizer runtime library</para>
+@y
+          <para>
+          スレッドサニタイザー (Thread Sanitizer) のランタイムライブラリ。
           </para>
 @z
