@@ -35,11 +35,13 @@
 
 @x
   <para>These commands will skip a number of files, reporting that it does not
-  recognize their file format. Most of these are scripts instead of binaries.</para>
+  recognize their file format. Most of these are scripts instead of binaries.
+  Also use the system strip command to include the strip binary in /tools.</para>
 @y
   <para>
   上のコマンド実行ではいくつものファイルがフォーマット不明となって処理がスキップされます。
   それらはたいてい、バイナリではなくスクリプトであることを示しています。
+  またストリップのコマンドはシステム上のものを用い、/tools ディレクトリ内のバイナリモジュールをストリップします。
   </para>
 @z
 

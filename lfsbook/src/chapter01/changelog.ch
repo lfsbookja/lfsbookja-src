@@ -48,6 +48,25 @@
 @z
 
 @x
+      <para>2014-02-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change kmod instructions to allow
+          installation of man pages.  Fixes
+          <ulink url="&lfs-ticket-root;3502">#3502</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-02-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - kmod にて man ページをインストールするように変更。
+          <ulink url="&lfs-ticket-root;3502">#3502</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-02-16</para>
       <itemizedlist>
         <listitem>

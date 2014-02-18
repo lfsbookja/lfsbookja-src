@@ -90,10 +90,10 @@
 
 @x
         <seg>testgdbm</seg>
-        <seg>libgdbm.{so,a} and libgdbm_compat.{so,a}</seg>
+        <seg>libgdbm.{a,so} and libgdbm_compat.{a,so}</seg>
 @y
         <seg>testgdbm</seg>
-        <seg>libgdbm.{so,a}, libgdbm_compat.{so,a}</seg>
+        <seg>libgdbm.{a,so}, libgdbm_compat.{a,so}</seg>
 @z
 
 @x
