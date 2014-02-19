@@ -60,6 +60,19 @@
 @z
 
 @x
+    <para>Some of the Glibc programs use non-FHS compilant
+    <filename class="directory">/var/db</filename> directory to store
+    their runtime data. Apply the following patch to make such programs
+    store their runtime data in the FHS-compliant locations:</para>
+@y
+    <para>
+    Glibc のプログラムの中には <filename
+    class="directory">/var/db</filename> ディレクトリに実行中データを収容するものがあり、これは FHS に準拠していません。
+    以下のパッチを適用することで、実行中データの収容先を FHS 準拠のディレクトリとします。
+    </para>
+@z
+
+@x
     <para>The Glibc build system is self-contained and will install
     perfectly, even though the compiler specs file and linker are still
     pointing at <filename class="directory">/tools</filename>. The specs
@@ -243,6 +256,15 @@ minor timing issues が何を意味するのか不明であった。
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>Install the configuration file and runtime directory for
+    <command>nscd</command>:</para>
+@y
+    <para>
+    <command>nscd</command> コマンドに対する設定ファイルや実行ディレクトリをインストールします。
+    </para>
 @z
 
 @x
@@ -535,8 +557,9 @@ minor timing issues が何を意味するのか不明であった。
         /usr/include/netipx, /usr/include/netiucv, /usr/include/netpacket,
         /usr/include/netrom, /usr/include/netrose, /usr/include/nfs,
         /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
-        /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/glibc,
-        /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo, /var/db</seg>
+        /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
+        /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
+        /var/cache/nscd, and /var/lib/nss_db</seg>
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
@@ -556,8 +579,9 @@ minor timing issues が何を意味するのか不明であった。
         /usr/include/netipx, /usr/include/netiucv, /usr/include/netpacket,
         /usr/include/netrom, /usr/include/netrose, /usr/include/nfs,
         /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
-        /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/glibc,
-        /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo, /var/db</seg>
+        /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
+        /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
+        /var/cache/nscd, /var/lib/nss_db</seg>
 @z
 
 @x

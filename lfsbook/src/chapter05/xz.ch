@@ -26,9 +26,9 @@
 @z
 
 @x
-    <title>Installation of Xz-Utils</title>
+    <title>Installation of Xz</title>
 @y
-    <title>&InstallationOf1;Xz-Utils&InstallationOf2;</title>
+    <title>&InstallationOf1;Xz&InstallationOf2;</title>
 @z
 
 @x

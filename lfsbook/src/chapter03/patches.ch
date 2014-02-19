@@ -59,6 +59,12 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
+@x Glibc FHS Patch
+        <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
+@z
+
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @y
