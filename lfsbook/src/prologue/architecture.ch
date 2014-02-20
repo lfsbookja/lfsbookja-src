@@ -22,37 +22,21 @@
 @x
 <para>The primary target architectures of LFS are the AMD/Intel x86 (32-bit)
 and x86_64 (64-bit) CPUs.  On the other hand, the instructions in this book are
-also known to work, with some modifications, with the Power PC CPU. To build a
-system that utilizes one of these CPUs, the main prerequisite, in addition to
-those on the next few pages, is an existing Linux system such as an earlier LFS
-installation, Ubuntu, Red Hat/Fedora, SuSE, or other distribution that targets
-the architecture that you have. Also note that a 32-bit distribution can be
-installed and used as a host system on a 64-bit AMD/Intel computer.</para>
+also known to work, with some modifications, with the Power PC and ARM CPUs. To
+build a system that utilizes one of these CPUs, the main prerequisite, in
+addition to those on the next few pages, is an existing Linux system such as an
+earlier LFS installation, Ubuntu, Red Hat/Fedora, SuSE, or other distribution
+that targets the architecture that you have. Also note that a 32-bit
+distribution can be installed and used as a host system on a 64-bit AMD/Intel
+computer.</para>
 @y
 <para>
 LFS が対象としている CPU アーキテクチャーは AMD/インテル x86 CPU (32ビット) と x86_64 CPU (64ビット) です。
-Power PC CPU については、本書の手順を多少修正することで動作することが確認されています。
+Power PC や ARM については、本書の手順を多少修正することで動作することが確認されています。
 これらの CPU を利用したシステムをビルドする場合は、この後に示す諸条件を満たす必要がありますが、まずはそのアーキテクチャーをターゲットとする、LFS システムそのものや Ubuntu、Red Hat/Fedora、SuSE などの Linux システムが必要です。
 ホストが 64 ビット AMD/インテルによるシステムであったとしても 32 ビットシステムは問題なくインストールできます。
 </para>
 @z
-
-% @x
-% <para>On the other hand, the instructions in this book are known to work, with
-% some modifications, with both Power PC and 64-bit AMD/Intel CPUs. To build a
-% system that utilizes one of these CPUs, the main prerequisite, in addition to
-% those on the next few pages, is an existing Linux system such as an earlier LFS
-% installation, Ubuntu, Red Hat/Fedora, SuSE, or other distribution that targets
-% the architecture that you have. Also note that a 32-bit distribution can be
-% installed and used as a host system on a 64-bit AMD/Intel computer.</para>
-% @y
-% <para>
-% 本書の作業手順は、多少の変更を加えれば Power PC や 64 ビットAMD／インテル CPU でも動作することは検証されています。
-% その CPU を使ったシステムをビルドするには、これ以降の数ページで説明している条件以外に必要となることがあります。
-% LFS システムそのものや Ubuntu、Red Hat/Fedora、SuSE などのディストリビューションをホストとするわけですが、それは 64 ビットシステムである必要があるということです。
-% ホストが 64 ビットAMD／インテルによるシステムであったとしても 32 ビットシステムは問題なくインストールできます。
-% </para>
-% @z
 
 @x
 <para>Some other facts about 64-bit systems need to be added here. When

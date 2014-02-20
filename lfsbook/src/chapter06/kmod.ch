@@ -81,16 +81,16 @@
 @z
 
 @x
-    <para>Install the package, create symlinks for compatibility with
-    Module-Init-Tools (the package that previously handled Linux kernel
-    modules), and manually install the man pages.  Also make sure that all
-    libraries are in the correct directory: </para>
+    <para>Install the package, man pages, and create symlinks for
+    compatibility with Module-Init-Tools (the package that previously handled
+    Linux kernel modules).  Also make sure that all libraries are in the
+    correct directory: </para>
 @y
     <para>
-    パッケージをインストールします。
+    パッケージと man ページをインストールします。
     また Module-Init-Tools パッケージとの互換性を保つためにシンボリックリンクを生成します。
     Module-Init-Tools パッケージは、これまで Linux カーネルモジュールを取り扱っていたものです。
-    Man ページは手動でインストールし、ライブラリはすべて適切なディレクトリに配置します。
+    ライブラリはすべて適切なディレクトリに配置します。
     </para>
 @z
 
