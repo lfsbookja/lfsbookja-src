@@ -423,12 +423,12 @@
         <seg>accessdb, apropos (link to whatis), catman, lexgrog, man, mandb,
         manpath, whatis, and zsoelim</seg>
         <seg>libman.so, libmandb.so</seg>
-        <seg>/usr/lib/man-db, /usr/share/doc/man-db-&man-db-version;</seg>
+        <seg>/usr/lib/man-db, /usr/libexec/man-db, /usr/share/doc/man-db-&man-db-version;</seg>
 @y
         <seg>accessdb, apropos (whatis へのリンク), catman, lexgrog, man, mandb,
         manpath, whatis, zsoelim</seg>
         <seg>libman.so, libmandb.so</seg>
-        <seg>/usr/lib/man-db, /usr/share/doc/man-db-&man-db-version;</seg>
+        <seg>/usr/lib/man-db, /usr/libexec/man-db, /usr/share/doc/man-db-&man-db-version;</seg>
 @z
 
 @x

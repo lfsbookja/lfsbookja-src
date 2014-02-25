@@ -305,17 +305,22 @@
 @z
 
 @x
-      <para>The headers in the system's
-      <filename class="directory">include</filename> directory should
+      <para>The headers in the system's <filename
+      class="directory">include</filename> directory (<filename
+      class="directory">/usr/include</filename>) should
       <emphasis>always</emphasis> be the ones against which Glibc was compiled,
-      that is, the sanitised headers from this Linux kernel tarball.
-      Therefore, they should <emphasis>never</emphasis> be replaced by either
-      the raw kernel headers or any other kernel sanitized headers.</para>
+      that is, the sanitised headers installed in <xref
+      linkend="ch-system-linux-headers"/>.  Therefore, they should
+      <emphasis>never</emphasis> be replaced by either the raw kernel headers
+      or any other kernel sanitized headers.</para>
 @y
       <para>
       さらに <filename
-      class="directory">include</filename> ディレクトリにあるヘッダーファイルは、<emphasis>必ず</emphasis> Glibc のコンパイルによって得られるものでなければならず、つまりは Linux カーネルの tarball によって提供されるものでなければなりません。
-      したがってカーネルヘッダーによって上書きされてしまうのは避けなければなりません。
+      class="directory">include</filename> ディレクトリ (<filename
+      class="directory">/usr/include</filename>) にあるヘッダーファイルは、<emphasis>必ず</emphasis> Glibc のコンパイルによって得られるものでなければなりません。
+      つまり <xref
+      linkend="ch-system-linux-headers"/> によってインストールされた、健全化 (sanitizing) したものです。
+      したがって生のカーネルヘッダーや他のカーネルにて健全化されたヘッダーによって上書きされてしまうのは避けなければなりません。
       </para>
 @z
 

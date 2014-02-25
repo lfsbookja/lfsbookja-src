@@ -313,7 +313,8 @@
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a and libtsan.{a,so}</seg>
 
-        <seg>/usr/include/c++, /usr/lib/gcc, /usr/share/gcc-&gcc-version;</seg>
+        <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, 
+        /usr/share/gcc-&gcc-version;</seg>
 @y
         <seg>c++, cc (gcc へのリンク), cpp, g++, gcc,
         gcc-ar, gcc-nm, gcc-ranlib, gcov</seg>
@@ -324,7 +325,8 @@
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, libtsan.{a,so}</seg>
 
-        <seg>/usr/include/c++, /usr/lib/gcc, /usr/share/gcc-&gcc-version;</seg>
+        <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, 
+        /usr/share/gcc-&gcc-version;</seg>
 @z
 
 @x

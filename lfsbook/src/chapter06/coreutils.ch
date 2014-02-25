@@ -203,7 +203,7 @@
         timeout, touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq,
         unlink, users, vdir, wc, who, whoami, and yes</seg>
         <seg>libstdbuf.so</seg>
-        <seg>/usr/lib/coreutils</seg>
+        <seg>/usr/libexec/coreutils</seg>
 @y
         <seg>[, base64, basename, cat, chcon, chgrp, chmod, chown, chroot, cksum,
         comm, cp, csplit, cut, date, dd, df, dir, dircolors, dirname, du, echo,
@@ -216,7 +216,7 @@
         timeout, touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq,
         unlink, users, vdir, wc, who, whoami, yes</seg>
         <seg>libstdbuf.so</seg>
-        <seg>/usr/lib/coreutils</seg>
+        <seg>/usr/libexec/coreutils</seg>
 @z
 
 @x
