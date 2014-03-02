@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2014-03-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update host system requirements to address
+          possible host installation of inconsistent libraries.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ホスト要件の更新。ホストにて矛盾したライブラリのインストール状況があることについて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-02-18</para>
       <itemizedlist>
         <listitem>

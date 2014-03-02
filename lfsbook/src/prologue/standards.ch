@@ -191,13 +191,13 @@
 @x
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
-          <para>At, Batch (a part of At), Cpio, Fcrontab, Initd-tools,
+          <para>At, Batch (a part of At), Cpio, Ed, Fcrontab, Initd-tools,
           Lsb_release, PAM, Sendmail (or Postfix or Exim) </para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
-          <para>At, Batch (At の一部), Cpio, Fcrontab, Initd-tools,
+          <para>At, Batch (At の一部), Cpio, Ed, Fcrontab, Initd-tools,
           Lsb_release, PAM, Sendmail (Postfix または Exim) </para>
         </listitem>
 @z
@@ -267,7 +267,7 @@
 @z
 
 @x
-      <bridgehead renderas="sect3">Packages not supplied by LFS or BLFS 
+      <bridgehead renderas="sect3">Packages not supplied by LFS or BLFS
       needed to satisfy the LSB Requirements</bridgehead>
 @y
       <bridgehead renderas="sect3">LFS, BLFS で提供しないパッケージで LSB 要求に従うもの</bridgehead>
@@ -276,12 +276,12 @@
 @x
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
-          <para>None</para>
+          <para>time (executable) and pax</para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
-          <para>なし</para>
+          <para>time (実行モジュール), pax</para>
         </listitem>
 @z
 

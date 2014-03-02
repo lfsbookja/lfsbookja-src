@@ -78,7 +78,7 @@
 @z
 
 @x
-    <para>As only three prograsm have been compiled, it is not possible to run the
+    <para>As only three programs have been compiled, it is not possible to run the
     test suite without compiling additional support libraries from the Gettext
     package. It is therefore not recommended to attempt to run the test suite at
     this stage.</para>
