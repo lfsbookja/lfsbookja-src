@@ -34,11 +34,11 @@
     <title>アップグレード:</title>
 @z
 
-@x
-      <para>Udev &systemd-version; (extracted from systemd-&systemd-version;)</para>
-@y
-      <para>Udev &systemd-version; (systemd-&systemd-version; からの抽出)</para>
-@z
+% @x
+%       <para>Udev &systemd-version; (extracted from systemd-&systemd-version;)</para>
+% @y
+%       <para>Udev &systemd-version; (systemd-&systemd-version; からの抽出)</para>
+% @z
 
 @x
     <title>Added:</title>
