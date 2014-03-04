@@ -95,12 +95,6 @@
         <para>&Download;: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
 @z
 
-@x Texinfo Test Patch
-        <para>Download: <ulink url="&patches-root;&texinfo-test-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&texinfo-test-patch;"/></para>
-@z
-
 @x
   <para>Total size of these patches: about <returnvalue/></para>
 @y

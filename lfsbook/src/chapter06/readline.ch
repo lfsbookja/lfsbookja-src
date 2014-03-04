@@ -42,14 +42,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix a known bug that has been fixed upstream:</para>
-@y
-    <para>
-    アップストリームにより提供されているバグフィックスのパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Prepare Readline for compilation:</para>
 @y
     <para>&PreparePackage1;Readline&PreparePackage2;</para>

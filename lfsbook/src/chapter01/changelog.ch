@@ -48,6 +48,64 @@
 @z
 
 @x
+      <para>2014-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to grep-2.18. Fixes 
+          <ulink url="&lfs-ticket-root;3487">#3487</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.61. Fixes 
+          <ulink url="&lfs-ticket-root;3490">#3490</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to psmisc-22.21. Fixes 
+          <ulink url="&lfs-ticket-root;3500">#3500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Linux-3.13.5. Fixes 
+          <ulink url="&lfs-ticket-root;3505">#3505</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bash-4.3. Fixes 
+          <ulink url="&lfs-ticket-root;3509">#3509</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to readline-6.3. Fixes 
+          <ulink url="&lfs-ticket-root;3510">#3510</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grep-2.18 へのアップデート。
+          <ulink url="&lfs-ticket-root;3487">#3487</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.61 へのアップデート。
+          <ulink url="&lfs-ticket-root;3490">#3490</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - psmisc-22.21 へのアップデート。
+          <ulink url="&lfs-ticket-root;3500">#3500</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-3.13.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3505">#3505</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash-4.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3509">#3509</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline-6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3510">#3510</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-03-02</para>
       <itemizedlist>
         <listitem>
