@@ -24,6 +24,7 @@ CHANGE_FILES = \
 	db.ch                \
 	diffutils.ch         \
 	e2fsprogs.ch         \
+        eudev.ch             \
 	file.ch              \
 	findutils.ch         \
 	flex.ch              \
@@ -108,6 +109,7 @@ creatingdirs.xml:      $(BOOKdir)/$@ $(srcdir)/creatingdirs.ch
 db.xml:                $(BOOKdir)/$@ $(srcdir)/db.ch
 diffutils.xml:         $(BOOKdir)/$@ $(srcdir)/diffutils.ch
 e2fsprogs.xml:         $(BOOKdir)/$@ $(srcdir)/e2fsprogs.ch
+eudev.xml:             $(BOOKdir)/$@ $(srcdir)/eudev.ch
 file.xml:              $(BOOKdir)/$@ $(srcdir)/file.ch
 findutils.xml:         $(BOOKdir)/$@ $(srcdir)/findutils.ch
 flex.xml:              $(BOOKdir)/$@ $(srcdir)/flex.ch

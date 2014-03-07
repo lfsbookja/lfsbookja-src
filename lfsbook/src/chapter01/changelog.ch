@@ -51,6 +51,25 @@
       <para>2014-03-03</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Remove udev from systemd and 
+          replace with eudev.  Addresses 
+          <ulink url="&lfs-ticket-root;3504">#3504</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd からの udev 利用をなくし eudev に置き換える。
+          <ulink url="&lfs-ticket-root;3504">#3504</ulink> にて詳述。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-03-03</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to grep-2.18. Fixes 
           <ulink url="&lfs-ticket-root;3487">#3487</ulink>.</para>
         </listitem>
