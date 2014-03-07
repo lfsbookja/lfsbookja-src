@@ -131,6 +131,20 @@
         <para>&Download;: <ulink url="&expect-url;"/></para>
 @z
 
+@x Eudev
+        <para>Home page: <ulink url="&eudev-home;"/></para>
+        <para>Download: <ulink url="&eudev-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&eudev-home;"/></para>
+        <para>&Download;: <ulink url="&eudev-url;"/></para>
+@z
+
+@x Eudev Manpages
+        <para>Download: <ulink url="&eudev-manpages-url;"/></para>
+@y
+        <para>&Download;: <ulink url="&eudev-manpages-url;"/></para>
+@z
+
 @x file
         <para>Home page: <ulink url="&file-home;"/></para>
         <para>Download: <ulink url="&file-url;"/></para>
