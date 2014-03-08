@@ -54,6 +54,25 @@
 -->
 
     <listitem>
+      <para>2014-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - lfs ブートスクリプトの md5sum 値取得を、オリジナルと同じにする。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20140307,
+          Changeset
+          <ulink url="&lfs-rev-root;10506">10506</ulink>,
+          <ulink url="&lfs-rev-root;10507">10507</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2014-03-07</para>
       <itemizedlist>
         <listitem>

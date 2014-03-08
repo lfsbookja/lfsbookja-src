@@ -299,6 +299,11 @@
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Diffutils
@@ -312,6 +317,25 @@
           <seg>Diffutils, Perl</seg>
 @y
           <seg>Diffutils, Perl</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Eudev
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Kmod, Make, Sed, and Util-linux</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Kmod, Make, Sed, Util-linux</seg>
 @z
 @x
           <seg>None</seg>

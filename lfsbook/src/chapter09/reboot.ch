@@ -134,7 +134,7 @@
 @z
 
 @x
-  <para>Now that we have said that, lets move on to booting our shiny new LFS
+  <para>Now that we have said that, let's move on to booting our shiny new LFS
   installation for the first time! First exit from the chroot environment:</para>
 @y
   <para>

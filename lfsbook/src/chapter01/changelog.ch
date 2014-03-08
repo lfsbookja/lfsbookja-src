@@ -48,7 +48,23 @@
 @z
 
 @x
-      <para>2014-03-03</para>
+      <para>2014-03-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update location of udevd in bootscripts.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトにて udevd の配置を変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-03-06</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Remove udev from systemd and 
