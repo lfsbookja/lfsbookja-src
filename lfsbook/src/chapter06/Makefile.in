@@ -188,7 +188,9 @@ top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/chapter06
 CHANGE_FILES = \
 	aboutdebug.ch        \
+        acl.ch               \
 	adjusting.ch         \
+        attr.ch              \
 	autoconf.ch          \
 	automake.ch          \
 	bash.ch              \
@@ -205,6 +207,7 @@ CHANGE_FILES = \
 	diffutils.ch         \
 	e2fsprogs.ch         \
         eudev.ch             \
+        expat.ch             \
 	file.ch              \
 	findutils.ch         \
 	flex.ch              \
@@ -214,18 +217,21 @@ CHANGE_FILES = \
 	gettext.ch           \
 	glibc.ch             \
 	gmp.ch               \
+        gperf.ch             \
 	grep.ch              \
 	groff.ch             \
 	grub.ch              \
 	gzip.ch              \
 	iana-etc.ch          \
 	inetutils.ch         \
+        intltool.ch          \
 	introduction.ch      \
 	iproute2.ch          \
 	kbd.ch               \
 	kernfs.ch            \
 	kmod.ch              \
 	less.ch              \
+        libcap.ch            \
 	libpipeline.ch       \
 	libtool.ch           \
 	linux-headers.ch     \
@@ -252,10 +258,12 @@ CHANGE_FILES = \
 	sysklogd.ch          \
 	systemd.ch           \
 	sysvinit.ch          \
+        sysvinit-header.ch   \
 	tar.ch               \
 	texinfo.ch           \
 	util-linux.ch        \
 	vim.ch               \
+        xml-parser.ch        \
 	xz.ch                \
 	zlib.ch
 
@@ -455,7 +463,9 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 aboutdebug.xml:        $(BOOKdir)/$@ $(srcdir)/aboutdebug.ch
+acl.xml:               $(BOOKdir)/$@ $(srcdir)/acl.ch
 adjusting.xml:         $(BOOKdir)/$@ $(srcdir)/adjusting.ch
+attr.xml:              $(BOOKdir)/$@ $(srcdir)/attr.ch
 autoconf.xml:          $(BOOKdir)/$@ $(srcdir)/autoconf.ch
 automake.xml:          $(BOOKdir)/$@ $(srcdir)/automake.ch
 bash.xml:              $(BOOKdir)/$@ $(srcdir)/bash.ch
@@ -472,6 +482,7 @@ db.xml:                $(BOOKdir)/$@ $(srcdir)/db.ch
 diffutils.xml:         $(BOOKdir)/$@ $(srcdir)/diffutils.ch
 e2fsprogs.xml:         $(BOOKdir)/$@ $(srcdir)/e2fsprogs.ch
 eudev.xml:             $(BOOKdir)/$@ $(srcdir)/eudev.ch
+expat.xml:             $(BOOKdir)/$@ $(srcdir)/expat.ch
 file.xml:              $(BOOKdir)/$@ $(srcdir)/file.ch
 findutils.xml:         $(BOOKdir)/$@ $(srcdir)/findutils.ch
 flex.xml:              $(BOOKdir)/$@ $(srcdir)/flex.ch
@@ -481,18 +492,21 @@ gdbm.xml:              $(BOOKdir)/$@ $(srcdir)/gdbm.ch
 gettext.xml:           $(BOOKdir)/$@ $(srcdir)/gettext.ch
 glibc.xml:             $(BOOKdir)/$@ $(srcdir)/glibc.ch
 gmp.xml:               $(BOOKdir)/$@ $(srcdir)/gmp.ch
+gperf.xml:             $(BOOKdir)/$@ $(srcdir)/gperf.ch
 grep.xml:              $(BOOKdir)/$@ $(srcdir)/grep.ch
 groff.xml:             $(BOOKdir)/$@ $(srcdir)/groff.ch
 grub.xml:              $(BOOKdir)/$@ $(srcdir)/grub.ch
 gzip.xml:              $(BOOKdir)/$@ $(srcdir)/gzip.ch
 iana-etc.xml:          $(BOOKdir)/$@ $(srcdir)/iana-etc.ch
 inetutils.xml:         $(BOOKdir)/$@ $(srcdir)/inetutils.ch
+intltool.xml:          $(BOOKdir)/$@ $(srcdir)/intltool.ch
 introduction.xml:      $(BOOKdir)/$@ $(srcdir)/introduction.ch
 iproute2.xml:          $(BOOKdir)/$@ $(srcdir)/iproute2.ch
 kbd.xml:               $(BOOKdir)/$@ $(srcdir)/kbd.ch
 kernfs.xml:            $(BOOKdir)/$@ $(srcdir)/kernfs.ch
 kmod.xml:              $(BOOKdir)/$@ $(srcdir)/kmod.ch
 less.xml:              $(BOOKdir)/$@ $(srcdir)/less.ch
+libcap.xml:            $(BOOKdir)/$@ $(srcdir)/libcap.ch
 libpipeline.xml:       $(BOOKdir)/$@ $(srcdir)/libpipeline.ch
 libtool.xml:           $(BOOKdir)/$@ $(srcdir)/libtool.ch
 linux-headers.xml:     $(BOOKdir)/$@ $(srcdir)/linux-headers.ch
@@ -519,10 +533,12 @@ strippingagain.xml:    $(BOOKdir)/$@ $(srcdir)/strippingagain.ch
 sysklogd.xml:          $(BOOKdir)/$@ $(srcdir)/sysklogd.ch
 systemd.xml:           $(BOOKdir)/$@ $(srcdir)/systemd.ch
 sysvinit.xml:          $(BOOKdir)/$@ $(srcdir)/sysvinit.ch
+sysvinit-header.xml:   $(BOOKdir)/$@ $(srcdir)/sysvinit-header.ch
 tar.xml:               $(BOOKdir)/$@ $(srcdir)/tar.ch
 texinfo.xml:           $(BOOKdir)/$@ $(srcdir)/texinfo.ch
 util-linux.xml:        $(BOOKdir)/$@ $(srcdir)/util-linux.ch
 vim.xml:               $(BOOKdir)/$@ $(srcdir)/vim.ch
+xml-parser.xml:        $(BOOKdir)/$@ $(srcdir)/xml-parser.ch
 xz.xml:                $(BOOKdir)/$@ $(srcdir)/xz.ch
 zlib.xml:              $(BOOKdir)/$@ $(srcdir)/zlib.ch
 

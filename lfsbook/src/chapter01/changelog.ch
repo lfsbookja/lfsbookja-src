@@ -48,6 +48,150 @@
 @z
 
 @x
+      <para>2014-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added libcap-2.24.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libcap-2.24 追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-03-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added expat-2.1.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added gperf-3.0.4.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added intltool-0.50.2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added XML::Parser-2.42_01.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - expat-2.1.0 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gperf-3.0.4 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - intltool-0.50.2 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - XML::Parser-2.42_01 追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-03-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-1.5.3. Fixes 
+          <ulink url="&lfs-ticket-root;3514">#3514</ulink> and
+          <ulink url="&lfs-ticket-root;3520">#3520</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.63. Fixes 
+          <ulink url="&lfs-ticket-root;3522">#3522</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - eudev-1.5.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3514">#3514</ulink> と
+          <ulink url="&lfs-ticket-root;3520">#3520</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.63 へのアップデート。
+          <ulink url="&lfs-ticket-root;3522">#3522</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-03-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added acl and attr to the book.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - acl と attr を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-03-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Tweaked bash docs installation. Fixes 
+          <ulink url="&lfs-ticket-root;3519">#3519</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Tweaked readline docs installation. Fixes 
+          <ulink url="&lfs-ticket-root;3518">#3518</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.13.6. Fixes 
+          <ulink url="&lfs-ticket-root;3512">#3512</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.62. Fixes 
+          <ulink url="&lfs-ticket-root;3517">#3517</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to txdata-2014a. Fixes 
+          <ulink url="&lfs-ticket-root;3517">#3517</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash のドキュメントインストールを調整。
+          <ulink url="&lfs-ticket-root;3519">#3519</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline のドキュメントインストールを調整。
+          <ulink url="&lfs-ticket-root;3518">#3518</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.13.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3512">#3512</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.62 へのアップデート。
+          <ulink url="&lfs-ticket-root;3517">#3517</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - txdata-2014a へのアップデート。
+          <ulink url="&lfs-ticket-root;3517">#3517</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-03-07</para>
       <itemizedlist>
         <listitem>

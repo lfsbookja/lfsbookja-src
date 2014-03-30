@@ -8,7 +8,8 @@
 SUBDIRS=appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
 	chapter06 chapter07 chapter08 chapter09 prologue stylesheets \
 	udev-lfs
-EXTRA_DIST = general.ch index.ch packages.ch patches.ch tidy.ch
+EXTRA_DIST = general.ch index.ch packages.ch patches.ch tidy.ch \
+	make-aux-files.ch
 BOOKdir = @abs_bookdir@
 srcdir = @srcdir@
 srcs = general.ent index.xml packages.ent patches.ent process-scripts.sh \
@@ -48,8 +49,8 @@ process-scripts.sh: $(BOOKdir)/process-scripts.sh
 aux-file-data.sh: $(BOOKdir)/aux-file-data.sh
 	cp -p $^ $@
 #	sed -i '/.\/make-aux-files.sh/d' $@
-make-aux-files.sh: $(BOOKdir)/make-aux-files.sh
-	cp -p $^ $@
+make-aux-files.sh: $(BOOKdir)/make-aux-files.sh $(srcdir)/make-aux-files.ch
+	$(top_builddir)/$(CTIE) -m $@ $^
 pdf-fixups.sh: $(BOOKdir)/pdf-fixups.sh
 	cp -p $^ $@
 

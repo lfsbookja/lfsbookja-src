@@ -71,11 +71,20 @@ will also be used as a part of installation:</para>
 @z
 
 @x
-<para>Finally, install the man pages:</para>
+<para>Now, install the man pages:</para>
 @y
 <para>
-最後に man ページをインストールします。
+man ページをインストールします。
 </para>
+@z
+
+@x
+    <para>Finally, create some custom rules that are not covered as a part of the
+    defaults:</para>
+@y
+    <para>
+    最後にデフォルトでは提供されていないルールを生成します。
+    </para>
 @z
 
 @x

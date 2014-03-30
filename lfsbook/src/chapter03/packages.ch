@@ -27,6 +27,22 @@
   </para>
 @z
 
+@x acl
+        <para>Home page: <ulink url="&acl-home;"/></para>
+        <para>Download: <ulink url="&acl-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&acl-home;"/></para>
+        <para>&Download;: <ulink url="&acl-url;"/></para>
+@z
+
+@x attr
+        <para>Home page: <ulink url="&attr-home;"/></para>
+        <para>Download: <ulink url="&attr-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&attr-home;"/></para>
+        <para>&Download;: <ulink url="&attr-url;"/></para>
+@z
+
 @x autoconf
         <para>Home page: <ulink url="&autoconf-home;"/></para>
         <para>Download: <ulink url="&autoconf-url;"/></para>
@@ -121,6 +137,14 @@
 @y
         <para>&Homepage;: <ulink url="&e2fsprogs-home;"/></para>
         <para>&Download;: <ulink url="&e2fsprogs-url;"/></para>
+@z
+
+@x Expat
+        <para>Home page: <ulink url="&expat-home;"/></para>
+        <para>Download: <ulink url="&expat-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&expat-home;"/></para>
+        <para>&Download;: <ulink url="&expat-url;"/></para>
 @z
 
 @x expect
@@ -233,6 +257,14 @@
         <para>&Download;: <ulink url="&gmp-url;"/></para>
 @z
 
+@x gperf
+        <para>Home page: <ulink url="&gperf-home;"/></para>
+        <para>Download: <ulink url="&gperf-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&gperf-home;"/></para>
+        <para>&Download;: <ulink url="&gperf-url;"/></para>
+@z
+
 @x grep
         <para>Home page: <ulink url="&grep-home;"/></para>
         <para>Download: <ulink url="&grep-url;"/></para>
@@ -273,12 +305,28 @@
         <para>&Download;: <ulink url="&iana-etc-url;"/></para>
 @z
 
+@x Libcap
+        <para>Home page: <ulink url="&libcap-home;"/></para>
+        <para>Download: <ulink url="&libcap-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&libcap-home;"/></para>
+        <para>&Download;: <ulink url="&libcap-url;"/></para>
+@z
+
 @x inetutils
         <para>Home page: <ulink url="&inetutils-home;"/></para>
         <para>Download: <ulink url="&inetutils-url;"/></para>
 @y
         <para>&Homepage;: <ulink url="&inetutils-home;"/></para>
         <para>&Download;: <ulink url="&inetutils-url;"/></para>
+@z
+
+@x Intltool
+        <para>Home page: <ulink url="&intltool-home;"/></para>
+        <para>Download: <ulink url="&intltool-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&intltool-home;"/></para>
+        <para>&Download;: <ulink url="&intltool-url;"/></para>
 @z
 
 @x iproute2
@@ -568,6 +616,14 @@
 @y
         <para>&Homepage;: <ulink url="&vim-home;"/></para>
         <para>&Download;: <ulink url="&vim-url;"/></para>
+@z
+
+@x XML::Parser
+        <para>Home page: <ulink url="&xml-parser-home;"/></para>
+        <para>Download: <ulink url="&xml-parser-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&xml-parser-home;"/></para>
+        <para>&Download;: <ulink url="&xml-parser-url;"/></para>
 @z
 
 @x Xz

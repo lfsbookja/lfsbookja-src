@@ -88,6 +88,44 @@
 @z
 
 %----------------------------------------------------------------------
+@x acl
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
+          Perl, Sed, and Texinfo</seg>
+@y
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
+          Perl, Sed, Texinfo</seg>
+@z
+@x
+          <seg>Automake, Diffutils, Findutils, and Libtool</seg>
+@y
+          <seg>Automake, Diffutils, Findutils, Libtool</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x attr
+          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
+          Perl, Sed, and Texinfo</seg>
+@y
+          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
+          Perl, Sed, Texinfo</seg>
+@z
+@x
+          <seg>Automake, Diffutils, Findutils, and Libtool</seg>
+@y
+          <seg>Automake, Diffutils, Findutils, Libtool</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x autoconf
           <seg>Bash, Coreutils, Grep, M4, Make, Perl, Sed, and Texinfo</seg>
 @y
@@ -336,6 +374,25 @@
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
          Kmod, Make, Sed, Util-linux</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Expat
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep,
+         Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep,
+         Make, Sed</seg>
 @z
 @x
           <seg>None</seg>
@@ -622,6 +679,23 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
+@x gperf
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Grep
          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc, Grep,
          Make, Patch, Sed, and Texinfo</seg>
@@ -759,6 +833,23 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
+@x Intltool
+         <seg>Bash, Gawk, Glibc, Make, Perl, Sed, and XML::Parser</seg>
+@y
+         <seg>Bash, Gawk, Glibc, Make, Perl, Sed, XML::Parser</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x IProute2
          <seg>Bash, Bison, Coreutils, Flex, GCC, Glibc, Make,
          and Linux API Headers</seg>
@@ -847,6 +938,18 @@ Typo ですが日本語訳には影響ありません。
           <seg>Gzip</seg>
 @y
           <seg>Gzip</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Libcap
+         <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Perl, Make, and Sed</seg>
+@y
+         <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Perl, Make, Sed</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1475,6 +1578,23 @@ Typo ですが日本語訳には影響ありません。
           <seg>Xorg, GTK+2, LessTif, Python, Tcl, Ruby, and GPM</seg>
 @y
           <seg>Xorg, GTK+2, LessTif, Python, Tcl, Ruby, GPM</seg>
+@z
+
+%----------------------------------------------------------------------
+@x XML Parser
+         <seg>Bash, Binutils, Coreutils, Expat, GCC, Glibc, Make, and Perl</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Expat, GCC, Glibc, Make, Perl</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 
 %----------------------------------------------------------------------

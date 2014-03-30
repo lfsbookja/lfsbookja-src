@@ -92,7 +92,7 @@
 @x
     <listitem><para>If you want to access your new system from a remote system
     within a comfortable GUI environment, install <ulink
-    url='&blfs-root;/view/svn/postlfs/openssh.html'>openssh</ulink> and it's
+    url='&blfs-root;/view/svn/postlfs/openssh.html'>openssh</ulink> and its
     prerequsite, <ulink
     url='&blfs-root;/view/svn/postlfs/openssl.html'>openssl</ulink>.
     </para></listitem>
