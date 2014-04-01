@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2014-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Remove remaining references to headers-check when
+          installing the linux API headers.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - linux API ヘッダーのインストールにて、ヘッダーチェックへの参照を削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-03-28</para>
       <itemizedlist>
         <listitem>

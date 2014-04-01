@@ -59,13 +59,13 @@
 @z
 
 @x
-    <para>Now test and extract the user-visible kernel headers from the source.
+    <para>Now extract the user-visible kernel headers from the source.
     They are placed in an intermediate local directory and copied to the needed
-    location because the extraction process removes any existing files in 
+    location because the extraction process removes any existing files in
     the target directory.</para>
 @y
     <para>
-    そしてユーザーが利用するカーネルヘッダーファイルをテストし、ソースから抽出します。
+    そしてユーザーが利用するカーネルヘッダーファイルをソースから抽出します。
     それらはいったん中間的なローカルディレクトリに置かれ、必要な場所にコピーされます。
     ターゲットディレクトリに既にあるファイルは削除されてからソースからの抽出処理が行われます。
     </para>
