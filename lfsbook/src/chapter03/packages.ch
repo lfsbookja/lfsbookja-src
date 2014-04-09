@@ -115,6 +115,14 @@
         <para>&Download;: <ulink url="&coreutils-url;"/></para>
 @z
 
+@x D-Bus
+        <para>Home page: <ulink url="&dbus-home;"/></para>
+        <para>Download: <ulink url="&dbus-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&dbus-home;"/></para>
+        <para>&Download;: <ulink url="&dbus-url;"/></para>
+@z
+
 @x dejagnu
         <para>Home page: <ulink url="&dejagnu-home;"/></para>
         <para>Download: <ulink url="&dejagnu-url;"/></para>
@@ -153,20 +161,6 @@
 @y
         <para>&Homepage;: <ulink url="&expect-home;"/></para>
         <para>&Download;: <ulink url="&expect-url;"/></para>
-@z
-
-@x Eudev
-        <para>Home page: <ulink url="&eudev-home;"/></para>
-        <para>Download: <ulink url="&eudev-url;"/></para>
-@y
-        <para>&Homepage;: <ulink url="&eudev-home;"/></para>
-        <para>&Download;: <ulink url="&eudev-url;"/></para>
-@z
-
-@x Eudev Manpages
-        <para>Download: <ulink url="&eudev-manpages-url;"/></para>
-@y
-        <para>&Download;: <ulink url="&eudev-manpages-url;"/></para>
 @z
 
 @x file
@@ -305,14 +299,6 @@
         <para>&Download;: <ulink url="&iana-etc-url;"/></para>
 @z
 
-@x Libcap
-        <para>Home page: <ulink url="&libcap-home;"/></para>
-        <para>Download: <ulink url="&libcap-url;"/></para>
-@y
-        <para>&Homepage;: <ulink url="&libcap-home;"/></para>
-        <para>&Download;: <ulink url="&libcap-url;"/></para>
-@z
-
 @x inetutils
         <para>Home page: <ulink url="&inetutils-home;"/></para>
         <para>Download: <ulink url="&inetutils-url;"/></para>
@@ -367,6 +353,14 @@
 @y
         <para>&Homepage;: <ulink url="&lfs-bootscripts-home;"/></para>
         <para>&Download;: <ulink url="&lfs-bootscripts-url;"/></para>
+@z
+
+@x Libcap
+        <para>Home page: <ulink url="&libcap-home;"/></para>
+        <para>Download: <ulink url="&libcap-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&libcap-home;"/></para>
+        <para>&Download;: <ulink url="&libcap-url;"/></para>
 @z
 
 @x libpipeline
@@ -548,6 +542,14 @@
         <para>&Download;: <ulink url="&sysklogd-url;"/></para>
 @z
 
+@x Systemd
+        <para>Home page: <ulink url="&systemd-home;"/></para>
+        <para>Download: <ulink url="&systemd-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&systemd-home;"/></para>
+        <para>&Download;: <ulink url="&systemd-url;"/></para>
+@z
+
 @x sysvinit
         <para>Home page: <ulink url="&sysvinit-home;"/></para>
         <para>Download: <ulink url="&sysvinit-url;"/></para>
@@ -586,14 +588,6 @@
 @y
         <para>&Homepage;: <ulink url="&texinfo-home;"/></para>
         <para>&Download;: <ulink url="&texinfo-url;"/></para>
-@z
-
-@x Systemd
-        <para>Home page: <ulink url="&systemd-home;"/></para>
-        <para>Download: <ulink url="&systemd-url;"/></para>
-@y
-        <para>&Homepage;: <ulink url="&systemd-home;"/></para>
-        <para>&Download;: <ulink url="&systemd-url;"/></para>
 @z
 
 @x Udev-lfs Tarball

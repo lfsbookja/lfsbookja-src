@@ -91,6 +91,16 @@
 @z
 
 @x
+    <para>Move files that have a name conflict with <xref linkend="ch-system-systemd"/>
+    so that both packages can be installed side-by-side:</para>
+@y
+    <para>
+    <xref linkend="ch-system-systemd"/> との間で名称が重複しているファイルを移動させます。
+    こうすることで両パッケージを支障なくインストールできるようにします。
+    </para>
+@z
+
+@x
     <title>Contents of Sysvinit</title>
 @y
     <title>&ContentsOf1;Sysvinit&ContentsOf2;</title>

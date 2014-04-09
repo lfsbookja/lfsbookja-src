@@ -78,14 +78,14 @@
 @x
     <para>A few programs do not know about <command>flex</command> yet and
     try to run its predecessor, <command>lex</command>. To support those
-    programs, create a wrapper script named <filename>lex</filename> that
-    calls <filename>flex</filename> in <command>lex</command> emulation
+    programs, create a symbolic link named <filename>lex</filename> that
+    runs <filename>flex</filename> in <command>lex</command> emulation
     mode:</para>
 @y
     <para>
     プログラムの中には <command>flex</command> コマンドが用いられず、その前身である <command>lex</command> コマンドを実行しようとするものがあります。
-    そういったプログラムへ対応するために <filename>lex</filename> という名のラッパースクリプトを生成します。
-    このスクリプトは <filename>lex</filename> のエミュレーションモードとして <filename>flex</filename> を実行します。
+    そういったプログラムへ対応するために <filename>lex</filename> という名のシンボリックリンクを生成します。
+    このリンクが <filename>lex</filename> のエミュレーションモードとして <filename>flex</filename> を呼び出します。
     </para>
 @z
 
@@ -106,11 +106,11 @@
 @z
 
 @x
-        <seg>flex, flex++ (link to flex), and lex</seg>
+        <seg>flex, flex++ (link to flex), and lex (link to flex)</seg>
         <seg>libfl.{a,so} and libfl_pic.{a,so}</seg>
         <seg>/usr/share/doc/flex-&flex-version;</seg>
 @y
-        <seg>flex, flex++ (flex へのリンク), lex</seg>
+        <seg>flex, flex++ (flex へのリンク), lex (flex へのリンク)</seg>
         <seg>libfl.{a,so}, libfl_pic.{a,so}</seg>
         <seg>/usr/share/doc/flex-&flex-version;</seg>
 @z

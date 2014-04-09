@@ -26,11 +26,13 @@
 @z
 
 @x
-    <para>The LFS-Bootscripts package contains a set of scripts to start/stop the
-    LFS system at bootup/shutdown.</para>
+    <para>The LFS-Bootscripts package contains a set of scripts to start/stop
+    the LFS system at bootup/shutdown.  The networking systemd unit file is
+    also installed.</para>
 @y
     <para>
     LFS-ブートスクリプトパッケージは LFS システムの起動、終了時に利用するスクリプトを提供します。
+    ネットワークに関する systemd ユニットファイルもインストールされます。
     </para>
 @z
 
@@ -54,9 +56,11 @@
 
 @x
       <segtitle>Installed scripts</segtitle>
+      <segtitle>Installed unit</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledScripts;</segtitle>
+      <segtitle>インストールユニット</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
@@ -65,6 +69,7 @@
         ifup, localnet, modules, mountfs, mountvirtfs, network, rc, reboot,
         sendsignals, setclock, ipv4-static, swap, sysctl, sysklogd, template,
         udev, and udev_retry</seg>
+        <seg>ifupdown@.service</seg>
         <seg>/etc/rc.d, /etc/init.d (symbolic link), /etc/sysconfig,
         /lib/services, /lib/lsb (symbolic link)</seg>
 @y
@@ -72,6 +77,7 @@
         ifup, localnet, modules, mountfs, mountvirtfs, network, rc, reboot,
         sendsignals, setclock, ipv4-static, swap, sysctl, sysklogd, template,
         udev, udev_retry</seg>
+        <seg>ifupdown@.service</seg>
         <seg>/etc/rc.d, /etc/init.d (シンボリックリンク), /etc/sysconfig,
         /lib/services, /lib/lsb (シンボリックリンク)</seg>
 @z

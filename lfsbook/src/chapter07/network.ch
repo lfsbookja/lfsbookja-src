@@ -97,14 +97,21 @@
 @z
 
 @x
-    <para>The rules were pre-generated in the build instructions for
-    <application>udev (systemd)</application> in the last chapter.  Inspect the
+    <para>If using the traditional network interface names such as eth0 is desired,
+    generate a custom Udev rule:</para>
+@y
+    <para>
+    ネットワークインターフェース名として従来の eth0 といった名前を用いる場合は、以下の Udev ルールを生成します。
+    </para>
+@z
+
+@x
+    <para> Now, inspect the
     <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> file, to
     find out which name was assigned to which network device:</para>
 @y
     <para>
-    このルールは、前章の <application>udev (systemd)</application> におけるビルド手順にて事前生成されています。
-    <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> を確認すれば、どんな名前がどのネットワークデバイスに割り当てられているかが分かります。
+    そして <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> ファイルを参照し、どういった名前によりネットワークデバイスが定められているかを確認します。
     </para>
 @z
 
@@ -268,21 +275,38 @@
     depends on the files in <filename
     class="directory">/etc/sysconfig/</filename>.  This directory should
     contain a file for each interface to be configured, such as
-    <filename>ifconfig.xyz</filename>, where <quote>xyz</quote> is
-    meaningful to the administrator such as the device name (e.g. eth0).
-    Inside this file are attributes to this interface, such as its IP
-    address(es), subnet masks, and so forth.  It is necessary that 
-    the stem of the filename be <emphasis>ifconfig</emphasis>.</para>
+    <filename>ifconfig.xyz</filename>, where <quote>xyz</quote> is required to
+    be a Network Card Interface name (e.g. eth0).  Inside this file are
+    attributes to this interface, such as its IP address(es), subnet masks, and
+    so forth.  It is necessary that the stem of the filename be
+    <emphasis>ifconfig</emphasis>.</para>
 @y
     <para>
     どのネットワークインターフェースが起動したり停止したりするかは <filename
     class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルの指定によります。
-    このディレクトリには、設定を行ないたい各ネットワークインターフェースに対するファイルを準備します。
-    例えばネットワークインターフェースの名が<quote>xyz</quote>である場合 <filename>ifconfig.xyz</filename> というファイルとします。
-    <quote>xyz</quote>は管理者が識別できるデバイス名、例えば eth0 などとなります。
+    このディレクトリには、設定を行ないたい各ネットワークインターフェースに対するファイル <filename>ifconfig.xyz</filename> を準備します。
+    この<quote>xyz</quote>はネットワークカードインターフェースに対する名称 (例えば eth0 など) です。
     このファイルにはネットワークインターフェースの属性、つまり IP アドレスやサブネットマスクなどを定義します。
     ファイルベース名は <emphasis>ifconfig</emphasis> とすることが必要です。
     </para>
+@z
+
+@x
+    <note><para>If the procedure in the previous section was not used, Udev
+    will assign network card interface names based on system physical
+    characteristics such as enp2s1. If you are not sure what your interface
+    name is, you can always run <command>ip link</command>  after you have
+    booted your system.  Again, it is important that ifconfig.xyz is named
+    after correct network card interface name (e.g. ifconfig.enp2s1 or
+    ifconfig.eth0) or your network interface will not be initialized during
+    the boot process.</para></note>
+@y
+    <note><para>
+    前節に示した手順を実施しなかった場合、Udev は、システムの物理的な特性に従った enp2s1 などのような名称をネットワークカードインターフェースに割り当てます。
+    インタフェース名がよく分からない場合は、システム起動直後に常に <command>ip link</command> を実行してください。
+    繰り返しますが ifconfig.xyz という名称はネットワークカードインターフェースを示す正しい名称 (つまり ifconfig.enp2s1 や ifconfig.eth0) としなければなりません。
+    これを行っていない場合には、システム起動時にネットワークインターフェースが初期化されないことになります。
+    </para></note>
 @z
 
 @x
@@ -305,14 +329,14 @@
 
 @x
     <para>If the <envar>ONBOOT</envar> variable is set to <quote>yes</quote> the
-    network script will bring up the Network Interface Card (NIC) during
+    System V network script will bring up the Network Interface Card (NIC) during
     booting of the system. If set to anything but <quote>yes</quote> the NIC
     will be ignored by the network script and not be automatically brought up.
     The interface can be manually started or stopped with the
     <command>ifup</command> and <command>ifdown</command> commands.</para>
 @y
     <para>
-    <envar>ONBOOT</envar> 変数を<quote>yes</quote>に設定した場合、システム起動時にネットワークスクリプトがネットワークインターフェースカード (network
+    <envar>ONBOOT</envar> 変数を<quote>yes</quote>に設定した場合、システム起動時に System V ネットワークスクリプトがネットワークインターフェースカード (network
     interface card; NIC) を起動します。
     <quote>yes</quote>以外に設定すると、ネットワークスクリプトからの NIC の起動がなくなり、NIC は自動では起動しなくなります。
     ネットワークインターフェースは <command>ifup</command> や <command>ifdown</command> といったコマンドを使って、起動や停止を行うことができます。
@@ -388,6 +412,60 @@
     <para>
     より詳しくは <command>ifup</command> の man ページを参照してください。
     </para>
+@z
+
+@x
+    <title>Configuring the Network Interface Card at boot (systemd)</title>
+@y
+    <title>起動時のネットワークインターフェースカードの設定 (Systemd 利用時)</title>
+@z
+
+@x
+    <para>Enabling of the network interface card configuration 
+    in systemd is done per interface. To enable network interface card
+    configuration at boot, run:</para>
+@y
+    <para>
+    Sysmted においては、ネットワークインターフェースカードに対する設定を個々のインターフェースごとに行うことができます。
+    システム起動時のネットワークインターフェースカードへの設定を有効とするためには以下を実行します。
+    </para>
+@z
+
+@x
+    <para>To disable a previously enabled network interface
+    card configuration at boot, run:</para>
+@y
+    <para>
+    上で有効にしたネットワークインターフェースカードを逆に無効とするには、システム起動時に以下を実行します。
+    </para>
+@z
+
+@x
+    <para>To manually start the network interface card configuration,
+    run:</para>
+@y
+    <para>
+    ネットワークインターフェースカードの設定を手動で有効化するには、以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Replace eth0 with the correct network interface card
+    name as described on the beginning of this page.</para>
+@y
+    <para>
+    冒頭で説明したように、eth0 の部分は適切なネットワークインターフェースカード名としてください。
+    </para>
+@z
+
+@x
+    <note><para>The network card can also be started or stopped
+    with the traditional <command>ifup &lt;device&gt;</command> or
+    <command>ifdown &lt;device&gt;</command> commands.</para></note>
+@y
+    <note><para>
+    ネットワークカードの起動、停止は、従来からのコマンド <command>ifup &lt;device&gt;</command>、あるいは <command>ifdown &lt;device&gt;</command> を用いることもできます。
+    </para></note>
 @z
 
 @x

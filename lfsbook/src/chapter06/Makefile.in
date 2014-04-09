@@ -204,6 +204,7 @@ CHANGE_FILES = \
 	createfiles.ch       \
 	creatingdirs.ch      \
 	db.ch                \
+	dbus.ch              \
 	diffutils.ch         \
 	e2fsprogs.ch         \
         eudev.ch             \
@@ -258,7 +259,6 @@ CHANGE_FILES = \
 	sysklogd.ch          \
 	systemd.ch           \
 	sysvinit.ch          \
-        sysvinit-header.ch   \
 	tar.ch               \
 	texinfo.ch           \
 	util-linux.ch        \
@@ -479,6 +479,7 @@ coreutils.xml:         $(BOOKdir)/$@ $(srcdir)/coreutils.ch
 createfiles.xml:       $(BOOKdir)/$@ $(srcdir)/createfiles.ch
 creatingdirs.xml:      $(BOOKdir)/$@ $(srcdir)/creatingdirs.ch
 db.xml:                $(BOOKdir)/$@ $(srcdir)/db.ch
+dbus.xml:              $(BOOKdir)/$@ $(srcdir)/dbus.ch
 diffutils.xml:         $(BOOKdir)/$@ $(srcdir)/diffutils.ch
 e2fsprogs.xml:         $(BOOKdir)/$@ $(srcdir)/e2fsprogs.ch
 eudev.xml:             $(BOOKdir)/$@ $(srcdir)/eudev.ch
@@ -533,7 +534,6 @@ strippingagain.xml:    $(BOOKdir)/$@ $(srcdir)/strippingagain.ch
 sysklogd.xml:          $(BOOKdir)/$@ $(srcdir)/sysklogd.ch
 systemd.xml:           $(BOOKdir)/$@ $(srcdir)/systemd.ch
 sysvinit.xml:          $(BOOKdir)/$@ $(srcdir)/sysvinit.ch
-sysvinit-header.xml:   $(BOOKdir)/$@ $(srcdir)/sysvinit-header.ch
 tar.xml:               $(BOOKdir)/$@ $(srcdir)/tar.ch
 texinfo.xml:           $(BOOKdir)/$@ $(srcdir)/texinfo.ch
 util-linux.xml:        $(BOOKdir)/$@ $(srcdir)/util-linux.ch

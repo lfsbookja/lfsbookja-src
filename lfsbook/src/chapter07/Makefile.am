@@ -19,6 +19,7 @@ CHANGE_FILES = \
 	setclock.ch     \
 	site.ch         \
 	symlinks.ch     \
+        sysd-custom.ch  \
 	sysklogd.ch     \
 	udev.ch         \
 	usage.ch
@@ -48,6 +49,7 @@ profile.xml:      $(BOOKdir)/$@ $(srcdir)/profile.ch
 setclock.xml:     $(BOOKdir)/$@ $(srcdir)/setclock.ch
 site.xml:         $(BOOKdir)/$@ $(srcdir)/site.ch
 symlinks.xml:     $(BOOKdir)/$@ $(srcdir)/symlinks.ch
+sysd-custom.xml:  $(BOOKdir)/$@ $(srcdir)/sysd-custom.ch
 sysklogd.xml:     $(BOOKdir)/$@ $(srcdir)/sysklogd.ch
 udev.xml:         $(BOOKdir)/$@ $(srcdir)/udev.ch
 usage.xml:        $(BOOKdir)/$@ $(srcdir)/usage.ch

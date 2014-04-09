@@ -48,17 +48,6 @@
           </para>
 @z
 
-@x --disable-manpages
-          <para>This option prevents the man pages from being built, as they
-          rely on libxslt, which isn't available in the chroot
-          environment.</para>
-@y
-          <para>
-          このオプションは man ページをビルドしないようにします。
-          libxslt パッケージに依存するものであり、chroot 環境では利用できないためです。
-          </para>
-@z
-
 @x --with-rootlibdir=/lib
           <para>This option ensures different library related files are placed 
           in the correct directories.</para>

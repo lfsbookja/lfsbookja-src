@@ -28,10 +28,10 @@
 @x
   <para>The rules from <!-- &eudev-lfs;.tar.bz2 -->in this appendix are listed for
   convenience.  Installation is normally done via instructions in <xref
-  linkend='ch-system-eudev'/>.  </para>
+  linkend='ch-system-systemd'/>.  </para>
 @y
   <para>
-  本付録にて eudev-&eudev-version;.tar.gz に含まれるルールを列記します。
-  インストール手順は <xref linkend='ch-system-eudev'/>を参照してください。
+  本付録にて systemd-&systemd-version;.tar.xz に含まれるルールを列記します。
+  インストール手順は <xref linkend='ch-system-systemd'/>を参照してください。
   </para>
 @z

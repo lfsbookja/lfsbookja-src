@@ -32,23 +32,22 @@
 @z
 
 @x
-  <para>Part of the job of the <command>localnet</command> script is setting the
-  system's hostname. This needs to be configured in the
-  <filename>/etc/sysconfig/network</filename> file.</para>
+  <para>During the boot process, both Systemd and System V use the same
+  file for establishing the system's hostname.  This needs to be configured by
+  creating <filename>/etc/hostname</filename>.</para>
 @y
   <para>
-  <command>localnet</command>
-  スクリプトの行う作業の１つが、システムのホスト名を定めることです。
-  この設定は <filename>/etc/sysconfig/network</filename> ファイルにて行います。
+  ブート過程において Systemd と System V は、システムのホスト名を決定するために同一の設定ファイルを利用しています。
+  <filename>/etc/hostname</filename> ファイルによりこれを設定します。
   </para>
 @z
 
 @x
-  <para>Create the <filename>/etc/sysconfig/network</filename> file and enter a
+  <para>Create the <filename>/etc/hostname</filename> file and enter a
   hostname by running:</para>
 @y
   <para>
-  以下のコマンドにより <filename>/etc/sysconfig/network</filename> ファイルを生成しホスト名を定めます。
+  以下のコマンドにより <filename>/etc/hostname</filename> ファイルを生成しホスト名を定めます。
   </para>
 @z
 

@@ -77,10 +77,10 @@
         <para>&Download;: <ulink url="&patches-root;&perl-libc-patch;"/></para>
 @z
 
-@x Readline Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+@x Systemd Compat Patch
+        <para>Download: <ulink url="&patches-root;&systemd-compat-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&systemd-compat-patch;"/></para>
 @z
 
 @x Sysvinit Consolidated Patch

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>How Do These Bootscripts Work?</title>
+  <title>How Do the System V Bootscripts Work?</title>
 @y
-  <title>ブートスクリプトはどのようにして動くのか</title>
+  <title>System V ブートスクリプトはどのようにして動くのか</title>
 @z
 
 @x

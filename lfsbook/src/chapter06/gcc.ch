@@ -272,11 +272,11 @@
 @z
 
 @x
-   <para>A 64-bit system may see a few more directories. For example, here
+   <para>A 64-bit system may see a few different directories. For example, here
    is the output from an x86_64 machine:</para>
 @y
    <para>
-   64 ビットシステムではさらにいくつかのディレクトリが出力されます。
+   64 ビットシステムではいくつか異なるディレクトリが出力されます。
    例えば x86_64 マシンであれば、その出力は以下のようになります。
    </para>
 @z

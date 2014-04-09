@@ -21,8 +21,8 @@
 
 @x
   <para>The optional <filename>/etc/sysconfig/rc.site</filename> file contains
-  settings that are automatically set for each boot script.  It can alternatively
-  set the values specified in the <filename>hostname</filename>,
+  settings that are automatically set for each SystemV boot script.  It can
+  alternatively set the values specified in the <filename>hostname</filename>,
   <filename>console</filename>, and <filename>clock</filename> files in the
   <filename class='directory'>/etc/sysconfig/</filename> directory.  If the
   associated variables are present in both these separate files and
@@ -30,7 +30,7 @@
   precedence. </para>
 @y
   <para>
-  オプションファイル <filename>/etc/sysconfig/rc.site</filename> は、各ブートスクリプトにて自動的に設定される内容を含んでいます。
+  オプションファイル <filename>/etc/sysconfig/rc.site</filename> は、System V の各ブートスクリプトにて自動的に設定される内容を含んでいます。
   <filename class='directory'>/etc/sysconfig/</filename> ディレクトリにおける <filename>hostname</filename>,
   <filename>console</filename>, <filename>clock</filename> の各ファイルにて値の設定を行うこともできます。
   関係する変数が、これらのファイルと <filename>rc.site</filename> の双方に存在する場合、スクリプトにて指定されたファイル内の値が優先されます。

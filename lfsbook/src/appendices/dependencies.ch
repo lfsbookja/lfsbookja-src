@@ -368,25 +368,6 @@
 @z
 
 %----------------------------------------------------------------------
-@x Eudev
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Kmod, Make, Sed, and Util-linux</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Kmod, Make, Sed, Util-linux</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-
-%----------------------------------------------------------------------
 @x Expat
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep,
          Make, and Sed</seg>
@@ -1402,6 +1383,32 @@ Typo ですが日本語訳には影響ありません。
           <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Systemd
+         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk, 
+         GCC, Glibc, Gperf, Grep, Intltool, Libcap,
+         Make, Sed, and Util-linux</seg>
+@y
+         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk, 
+         GCC, Glibc, Gperf, Grep, Intltool, Libcap,
+         Make, Sed, Util-linux</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>

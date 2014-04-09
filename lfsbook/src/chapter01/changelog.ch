@@ -48,6 +48,136 @@
 @z
 
 @x
+      <para>2014-04-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change lex rwapper script to a symbolic 
+          link. Completes 
+          <ulink url="&lfs-ticket-root;3523">#3523</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.14. Fixes 
+          <ulink url="&lfs-ticket-root;3523">#3523</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.18. Fixes 
+          <ulink url="&lfs-ticket-root;3526">#3526</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flex-2.5.39. Addresses 
+          <ulink url="&lfs-ticket-root;3527">#3527</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-6.0.0a. Fixes 
+          <ulink url="&lfs-ticket-root;3528">#3528</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.64. Fixes 
+          <ulink url="&lfs-ticket-root;3539">#3539</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-212. Fixes 
+          <ulink url="&lfs-ticket-root;3540">#3540</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - lex のラッパースクリプトをシンボリックリンクに。
+          <ulink url="&lfs-ticket-root;3523">#3523</ulink>を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;3523">#3523</ulink>を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.18 へのアップデート。
+          <ulink url="&lfs-ticket-root;3526">#3526</ulink>を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flex-2.5.39 へのアップデート。
+          <ulink url="&lfs-ticket-root;3527">#3527</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gmp-6.0.0a へのアップデート。
+          <ulink url="&lfs-ticket-root;3528">#3528</ulink>を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.64 へのアップデート。
+          <ulink url="&lfs-ticket-root;3539">#3539</ulink>を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-212 へのアップデート。
+          <ulink url="&lfs-ticket-root;3540">#3540</ulink>を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-04-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update the example SEARCH_DIR output for i686
+          in the GCC text. Fixes 
+          <ulink url="&lfs-ticket-root;3524">#3524</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata2014b. Fixes 
+          <ulink url="&lfs-ticket-root;3525">#3525</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-17. Fixes 
+          <ulink url="&lfs-ticket-root;3538">#3538</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add section on systemd customization.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - GCC の説明にて i686 での SEARCH_DIR の出力例を更新。
+          <ulink url="&lfs-ticket-root;3524">#3524</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata2014b へのアップデート。
+          <ulink url="&lfs-ticket-root;3525">#3525</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-17 へのアップデート。
+          <ulink url="&lfs-ticket-root;3538">#3538</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd のカスタマイズについての節を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - THIS IS A MAJOR CHANGE.
+          Added systemd and dbus to the book. 
+          Rewrote Chapters 6 and 7 to install systemd and
+          SystemV side by side with the option to reconfigure
+          and come up in the other boot method upon reboot.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - これは大規模な変更であり、本ブックに systemd と dbus を追加。
+          第6章と第7章における systemd と SystemV のインストール手順を書き直し、再起動時での新たな起動方法を示すことに。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-03-31</para>
       <itemizedlist>
         <listitem>

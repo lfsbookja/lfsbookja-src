@@ -50,6 +50,12 @@
 @z
 
 @x
+    <title>Systemd V</title>
+@y
+    <title>System V</title>
+@z
+
+@x
   <para>The <command>console</command> script reads the
   <filename>/etc/sysconfig/console</filename> file for configuration
   information.  Decide which keymap and screen font will be used. Various
@@ -276,10 +282,11 @@
 @z
 
 @x
-    <para>The <filename>/etc/sysconfig/console</filename> file only controls the    Linux text console localization. It has nothing to do with setting the
-    proper keyboard layout and terminal fonts in the X Window System, with ssh
-    sessions or with a serial console. In such situations, limitations mentioned
-    in the last two list items above do not apply.</para>
+    <para>The <filename>/etc/sysconfig/console</filename> file only controls
+    the Linux text console localization. It has nothing to do with setting
+    the proper keyboard layout and terminal fonts in the X Window System, with
+    ssh sessions or with a serial console. In such situations, limitations
+    mentioned in the last two list items above do not apply.</para>
 @y
     <para>
     <filename>/etc/sysconfig/console</filename> ファイルは Linux のテキストコンソール上の言語設定を行うだけです。
@@ -288,30 +295,155 @@
     </para>
 @z
 
+% @x
+%   <sect2 id="ch-scripts-systemd-console">
+% @y
+% <note>
+% <title>日本語訳情報</title>
+% <para>
+% 日本の方であれば<quote>日本語106キーボード</quote>をほぼ間違いなくお使いかと思いますので KEYMAP 変数には<quote>jp106</quote>を設定することになるでしょう。
+% FONT 変数について訳者は十分な知識がありません。
+% ここに何を設定すべきか分からない (調べていない) ため、何も設定しないでいる状態です。
+% 訳者は LFS システム構築後は SSH 接続によりシステムアクセスしており、その場合ここでのフォントの設定がどうであろうと (おそらく) 無関係であるため、あまり気にせずにいます。
+% 何か情報を頂けるようであればご教示よろしくお願いいたします。
+% </para>
+% <para>
+% 訳者が行っている設定は以下のとおりです。
+% </para>
+% <screen role="nodump"><userinput>cat &gt; /etc/sysconfig/console &lt;&lt; "EOF"
+% <literal># Begin /etc/sysconfig/console
+% 
+% KEYMAP="jp106"
+% 
+% # End /etc/sysconfig/console</literal>
+% EOF</userinput></screen>
+% 
+% </note>
+% 
+%   <sect2 id="ch-scripts-systemd-console">
+% @z
+
 @x
-</sect1>
+  <indexterm zone="ch-scripts-systemd-console">
+    <primary sortas="d-console">systemd console</primary>
+    <secondary>configuring</secondary>
+  </indexterm>
 @y
-<note>
-<title>日本語訳情報</title>
-<para>
-日本の方であれば<quote>日本語106キーボード</quote>をほぼ間違いなくお使いかと思いますので KEYMAP 変数には<quote>jp106</quote>を設定することになるでしょう。
-FONT 変数について訳者は十分な知識がありません。
-ここに何を設定すべきか分からない (調べていない) ため、何も設定しないでいる状態です。
-訳者は LFS システム構築後は SSH 接続によりシステムアクセスしており、その場合ここでのフォントの設定がどうであろうと (おそらく) 無関係であるため、あまり気にせずにいます。
-何か情報を頂けるようであればご教示よろしくお願いいたします。
-</para>
-<para>
-訳者が行っている設定は以下のとおりです。
-</para>
-<screen role="nodump"><userinput>cat &gt; /etc/sysconfig/console &lt;&lt; "EOF"
-<literal># Begin /etc/sysconfig/console
+  <indexterm zone="ch-scripts-systemd-console">
+    <primary sortas="d-console">systemd console</primary>
+    <secondary>設定</secondary>
+  </indexterm>
+@z
 
-KEYMAP="jp106"
+@x
+  <para>This section discusses how to configure the
+  <command>systemd-vconsole-setup</command> system service, which configures
+  the virtual console font and console keymap.</para>
+@y
+  <para>
+  この節では <command>systemd-vconsole-setup</command> システムサービスによる設定、つまり仮想端末フォント、コンソールマップの設定について説明します。
+  </para>
+@z
 
-# End /etc/sysconfig/console</literal>
-EOF</userinput></screen>
+@x
+  <para>The <command>systemd-vconsole-setup</command> service reads the
+  <filename>/etc/vconsole.conf</filename> file for configuration
+  information. Decide which keymap and screen font will be used. Various
+  language-specific HOWTOs can also help with this, see <ulink
+  url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>.
+  Examine <command>localectl list-keymaps</command> output for a list of
+  valid console keymaps. Look in
+  <filename class="directory">/usr/share/consolefonts</filename>
+  directory for valid screen fonts.</para>
+@y
+  <para>
+  <command>systemd-vconsole-setup</command> サービスは設定方法を指示した <filename>/etc/vconsole.conf</filename> ファイルを読み込みます。
+  したがってキーマップとスクリーンフォントに何を使うかを定めてください。
+  各種言語における固有の設定方法については <ulink
+  url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/> を参照してください。
+  <command>localectl list-keymaps</command> を実行すれば、その出力結果から適正なコンソールキーマップを確認することができます。
+  スクリーンフォントについては <filename
+  class="directory">/usr/share/consolefonts</filename> ディレクトリ内を確認してください。
+  </para>
+@z
 
-</note>
+@x
+  <para>The <filename>/etc/vconsole.conf</filename> file should contain lines
+  of the form: VARIABLE="value". The following variables are recognized:</para>
+@y
+  <para>
+  <filename>/etc/vconsole.conf</filename> ファイルの各行には、変数 = "値" という記述を行います。
+  そして変数には以下に示すものが利用可能です。
+  </para>
+@z
 
-</sect1>
+@x KEYMAP
+        <para>This variable specifies the key mapping table for the keyboard. If
+        unset, it defaults to <literal>us</literal>.</para>
+@y
+        <para>
+        この変数はキーボードに対するキーマッピングテーブルを指定します。
+        未設定の場合、デフォルトで <literal>us</literal> となります。
+        </para>
+@z
+
+@x KEYMAP_TOGGLE
+        <para>This variable can be used to configure a second toggle keymap and
+        is unset by default.</para>
+@y
+        <para>
+        この変数は、二つめのトグルキーマップ (toggle keymap) を設定します。
+        デフォルトでは未設定となります。
+        </para>
+@z
+
+@x FONT
+        <para>This variable specifies the font used by the virtual
+        console.</para>
+@y
+        <para>
+        この変数は仮想端末にて用いられるフォントを指定します。
+        </para>
+@z
+
+@x FONT_MAP
+        <para>This variable specifies the console map to be used.</para>
+@y
+        <para>
+        この変数はコンソールマップを指定します。
+        </para>
+@z
+
+@x FONT_UNIMAP
+        <para>This variable specifies the unicode font map.</para>
+@y
+        <para>
+        この変数はユニコードのフォントマップを指定します。
+        </para>
+@z
+
+@x
+  <para>An example for a German keyboard and console is given below:</para>
+@y
+  <para>
+  ドイツのキーボードおよびコンソールに対する設定例は以下のようになります。
+  </para>
+@z
+
+@x
+  <para>You can change KEYMAP value at runtime by using the
+  <command>localectl</command> utility:</para>
+@y
+  <para>
+  システム稼動中であれば <command>localectl</command> ユーティリティーにより KEYMAP の値を変更することができます。
+  </para>
+@z
+
+@x
+  <note><para>Please note that <command>localectl</command> command can
+  be used  only on a system booted with Systemd.</para></note>
+@y
+  <note><para>
+  <command>localectl</command> コマンドは、Systemd により起動したシステム上でのみ実行するものですので注意してください。
+  </para></note>
 @z
