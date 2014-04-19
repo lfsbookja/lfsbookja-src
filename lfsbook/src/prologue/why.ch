@@ -45,6 +45,28 @@
     </para>
 @z
 
+@x Acl
+        <para>This package contains utilities to administer Access 
+        Control Lists, which are used to define more fine-grained 
+        discretionary access rights for files and directories. 
+        </para>
+@y
+        <para>
+        このパッケージはアクセス制御リスト (Access Control Lists) を管理するツールを提供します。
+        これはファイルやディレクトリに対して、きめ細かく様々なアクセス権限を定義するために利用されます。
+        </para>
+@z
+
+@x Attr
+        <para>This package contains programs for administering  
+        extended attributes on filesystem objects. 
+        </para>
+@y
+        <para>
+        このパッケージはファイルシステムオブジェクト上の拡張属性を管理するプログラムを提供します。
+        </para>
+@z
+
 @x Autoconf
         <para>This package contains programs for producing shell scripts that
         can automatically configure source code from a developer's
@@ -145,6 +167,17 @@
         </para>
 @z
 
+@x D-Bus
+        <para>This package contains programs to implement a message bus system, 
+        which a simple way for applications to talk to one another.
+        </para>
+@y
+        <para>
+        このパッケージはメッセージバスシステムを実装しています。
+        これはアプリケーション間での通信手段を容易にするものです。
+        </para>
+@z
+
 @x DejaGNU
         <para>This package contains a framework for testing other programs.
         It is only installed in the temporary toolchain.</para>
@@ -175,6 +208,17 @@
         <para>
         このパッケージは ext2, ext3, ext4 の各ファイルシステムを取り扱うユーティリティを提供します。
         各ファイルシステムは Linux がサポートする一般的なものであり、十分なテストが実施されているものです。
+        </para>
+@z
+
+@x Expat
+        <para>This package contains programs for parsing XML.  It is
+        required for systemd.
+        </para>
+@y
+        <para>
+        このパッケージは XML を解析するプログラムを提供します。
+        systemd がこれを必要とします。
         </para>
 @z
 
@@ -285,6 +329,17 @@
         </para>
 @z
 
+@x Gperf
+        <para>This package a program that generates a perfect hash function 
+        from a key set.  It is required for systemd.
+        </para>
+@y
+        <para>
+        このパッケージは、キーセットを利用して完全なハッシュ関数を生成するプログラムを提供します。
+        systemd がこれを必要としています。
+        </para>
+@z
+
 @x Grep
         <para>This package contains programs for searching through files. These
         programs are used by most packages' build scripts.</para>
@@ -346,6 +401,15 @@
         </para>
 @z
 
+@x Intltools
+        <para>This package contains tools for extracting translatable 
+        strings from source files.</para>
+@y
+        <para>
+        本パッケージはソースファイルから翻訳対象となる文字列を抽出するツールを提供します。
+        </para>
+@z
+
 @x IProute2
         <para>This package contains programs for basic and advanced IPv4 and
         IPv6 networking.  It was chosen over the other common network
@@ -384,6 +448,16 @@
         <para>
         このパッケージはテキストファイルを表示する機能を提供するものであり、表示中にスクロールを可能とします。
         また Man-DB において man ページを表示する際にも利用されます。
+        </para>
+@z
+
+@x Libcap
+        <para>This package implements the user-space interfaces to 
+        the POSIX 1003.1e capabilities available in Linux kernels. 
+        </para>
+@y
+        <para>
+        このパッケージは Linux カーネルにて利用される POSIX 1003.1e 機能へのユーザー空間からのインターフェースを実装します。
         </para>
 @z
 
@@ -591,6 +665,20 @@
         </para>
 @z
 
+@x Systemd
+        <para>This package provides and <application>init</application> program
+        and several additional boot and system control capabilites as an
+        alternative to Sysvinit.  It is used by many commercial distributions.
+        In LFS it is installed side-by-side with Sysvinit to provide the user with
+        alternative boot systems for comparison.</para>
+@y
+        <para>
+        このパッケージは Sysvinit の代替として、<application>init</application> プログラムなど数種のプログラムにより、システム起動やシステム制御を実現します。
+        商用ディストリビューションにおいてもよく利用されています。
+        LFS では Sysvinit も同時にインストールできるようにしているため、システム起動方法を比較し利用することができます。
+        </para>
+@z
+
 @x Sysvinit
         <para>This package provides the <application>init</application>
         program, which is the parent of all other processes on the Linux
@@ -666,6 +754,14 @@
         このパッケージはテキストエディターを提供します。
         これを採用しているのは、従来の vi エディタとの互換性があり、しかも数々の有用な機能を提供するものだからです。
         テキストエディターは個人により好みはさまざまですから、もし別のエディターを利用したいなら、そちらを用いても構いません。
+        </para>
+@z
+
+@x XML::Parser
+        <para>This package is a Perl module that interfaces with Expat.</para>
+@y
+        <para>
+        このパッケージは Expat とのインターフェースを実現する Perl モジュールです。
         </para>
 @z
 

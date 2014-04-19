@@ -53,7 +53,7 @@
 @z
 
 @x
-    <para>Aditionally, fix a build error when using Util-Linux built in
+    <para>Additionally, fix a build error when using Util-Linux built in
     Chapter 5:</para>
 @y
     <para>

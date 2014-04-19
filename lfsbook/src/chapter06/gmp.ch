@@ -82,11 +82,11 @@
 @z
 
 @x
-    <para>Ensure that all 185 tests in the test suite passed.
+    <para>Ensure that all 188 tests in the test suite passed.
     Check the results by issuing the following command:</para>
 @y
     <para>
-    185個のテストが完了することを確認してください。
+    188個のテストが完了することを確認してください。
     テスト結果は以下のコマンドにより確認することができます。
     </para>
 @z

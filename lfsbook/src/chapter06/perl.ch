@@ -80,11 +80,11 @@
 @z
 
 @x -Dpager="/usr/bin/less -isR"
-          <para>This corrects an error in the way that <command>perldoc</command>
-          invokes the <command>less</command> program.</para>
+          <para>This ensures that <userinput>less</userinput> is used instead 
+          of <userinput>more</userinput>.</para>
 @y
           <para>
-          このオプションは <command>perldoc</command> プログラムが <command>less</command> プログラムを呼び出す際のエラーを正します。
+          このオプションは <command>more</command> プログラムでなく <command>less</command> プログラムが利用されるようにします。
           </para>
 @z
 

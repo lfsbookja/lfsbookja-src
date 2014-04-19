@@ -48,10 +48,84 @@
 @z
 
 @x
+      <para>2014-04-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to linux-3.14.1. Fixes 
+          <ulink url="&lfs-ticket-root;3545">#3545</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to man-db-2.6.7.1. Fixes 
+          <ulink url="&lfs-ticket-root;3543">#3543</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to iproute2-3.14.0. Fixes 
+          <ulink url="&lfs-ticket-root;3542">#3542</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to gawk-4.1.1. Fixes 
+          <ulink url="&lfs-ticket-root;3541">#3541</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added mpfr upstream patch. Fixes 
+          <ulink url="&lfs-ticket-root;3537">#3537</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added readline upstream patch. Fixes 
+          <ulink url="&lfs-ticket-root;3532">#3532</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added bash upstream patch. Fixes 
+          <ulink url="&lfs-ticket-root;3531">#3531</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added bc patch to address memory leaks. Fixes 
+          <ulink url="&lfs-ticket-root;3536">#3536</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.14.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3545">#3545</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.6.7.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3543">#3543</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-3.14.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3542">#3542</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gawk-4.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3541">#3541</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpfr のアップストリームによるパッチを追加。
+          <ulink url="&lfs-ticket-root;3537">#3537</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline のアップストリームによるパッチを追加。
+          <ulink url="&lfs-ticket-root;3532">#3532</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash のアップストリームによるパッチを追加。
+          <ulink url="&lfs-ticket-root;3531">#3531</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc においてメモリリークに関するパッチを追加。
+          <ulink url="&lfs-ticket-root;3536">#3536</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-04-08</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Change lex rwapper script to a symbolic 
+          <para>[bdubbs] - Change lex wrapper script to a symbolic 
           link. Completes 
           <ulink url="&lfs-ticket-root;3523">#3523</ulink>.</para>
         </listitem>

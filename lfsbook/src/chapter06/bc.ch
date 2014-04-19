@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -26,6 +26,14 @@
     <title>Installation of Bc</title>
 @y
     <title>&InstallationOf1;Bc&InstallationOf2;</title>
+@z
+
+@x
+    <para>First, fix some minor memory leaks in the code:</para>
+@y
+    <para>
+    はじめにメモリーリークに関する修正を行います。
+    </para>
 @z
 
 @x
