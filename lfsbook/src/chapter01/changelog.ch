@@ -48,6 +48,147 @@
 @z
 
 @x
+      <para>2014-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.14.2. Fixes
+          <ulink url="&lfs-ticket-root;3559">#3559</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.14.2. Fixes
+          <ulink url="&lfs-ticket-root;3559">#3559</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove unneeded symlink in gcc-pass1. Fixes
+          <ulink url="&lfs-ticket-root;3555">#3555</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.24.2. Fixes
+          <ulink url="&lfs-ticket-root;3554">#3554</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc １回めにて不要なシンボリックリンクを削除。
+          <ulink url="&lfs-ticket-root;3555">#3555</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.24.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3554">#3554</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-04-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-4.9. Fixes
+          <ulink url="&lfs-ticket-root;3553">#3553</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-4.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;3553">#3553</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.65. Fixes
+          <ulink url="&lfs-ticket-root;3547">#3547</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.65 へのアップデート。
+          <ulink url="&lfs-ticket-root;3547">#3547</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-04-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Removed unneeded groff symlinks. Fixes
+          <ulink url="&lfs-ticket-root;3551">#3551</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update users so all acl tests pass. Fixes
+          <ulink url="&lfs-ticket-root;3548">#3548</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Fix a segfault in shuf program from
+          Coreutils. Fixes
+          <ulink url="&lfs-ticket-root;3550">#3550</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Fix a segfault in Acl package. Fixes
+          <ulink url="&lfs-ticket-root;3549">#3549</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Removed unneeded groff symlinks. Fixes
+          <ulink url="&lfs-ticket-root;3551">#3551</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update users so all acl tests pass. Fixes
+          <ulink url="&lfs-ticket-root;3548">#3548</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Fix a segfault in shuf program from
+          Coreutils. Fixes
+          <ulink url="&lfs-ticket-root;3550">#3550</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Fix a segfault in Acl package. Fixes
+          <ulink url="&lfs-ticket-root;3549">#3549</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-04-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Rewrote and reorganized Chapter 7.
+          Updated systemd customization.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-04-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第7章の構成および記述を再考。systemd のカスタマイズに関して更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-04-18</para>
       <itemizedlist>
         <listitem>

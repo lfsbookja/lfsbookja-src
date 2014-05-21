@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>Creating Custom Symlinks to Devices</title>
+  <title>Managing Devices</title>
 @y
-  <title>デバイスへのシンボリックリンクの生成</title>
+  <title>デバイスの管理</title>
 @z
 
 @x
@@ -205,7 +205,7 @@
     <filename>/dev/video1</filename> refers to the tuner, and sometimes
     after a reboot the order changes to the opposite one.
     For all classes of hardware except sound cards and network cards, this is
-    fixable by creating udev rules for custom persistent symlinks.
+    fixable by creating Udev rules for custom persistent symlinks.
     The case of network cards is covered separately in
     <xref linkend="ch-scripts-network"/>, and sound card configuration can
     be found in <ulink url="&blfs-root;view/svn/postlfs/devices.html">BLFS</ulink>.</para>

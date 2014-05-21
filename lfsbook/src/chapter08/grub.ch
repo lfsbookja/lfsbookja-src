@@ -223,9 +223,9 @@
 @z
 
 @x
-    <title>Creating the Configuration File</title>
+    <title>Creating the GRUB Configuration File</title>
 @y
-    <title>設定ファイルの生成</title>
+    <title>GRUB 設定ファイルの生成</title>
 @z
 
 @x

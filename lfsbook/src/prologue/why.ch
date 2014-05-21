@@ -211,6 +211,17 @@
         </para>
 @z
 
+@x Eudev
+        <para>This package is a device manager.  It dynamically controls the entries
+        in the /dev directory as devices are added or removed from the system.
+        </para>
+@y
+        <para>
+        このパッケージはデバイスマネージャーです。
+        /dev ディレクトリにデバイスとして登録された項目の追加削除を動的に制御します。
+        </para>
+@z
+
 @x Expat
         <para>This package contains programs for parsing XML.  It is
         required for systemd.

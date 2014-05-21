@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>Systemd Customization</title>
+  <title>Systemd Usage and Confiuration</title>
 @y
-  <title>Systemd のカスタマイズ</title>
+  <title>Systemd の利用と設定</title>
 @z
 
 @x

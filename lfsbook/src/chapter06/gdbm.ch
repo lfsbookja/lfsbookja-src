@@ -14,16 +14,16 @@
 @z
 
 @x
-    <para>The GDBM package contains the GNU Database Manager.  This is a disk
-    file format database which stores key/data-pairs in single files.  The
-    actual data of any record being stored is indexed by a unique key, which can
-    be retrieved in less time than if it was stored in a text file.</para>
+    <para>The GDBM package contains the GNU Database Manager.  It is a library
+    of database functions that use extensible hashing and work similar to the
+    standard UNIX dbm.  The library provides primitives for storing key/data
+    pairs, searching and retrieving the data by its key and deleting a key
+    along with its data. </para>
 @y
     <para>
     GDBM パッケージは GNU データベースマネージャーを提供します。
-    このデータベースはディスクファイル形式 (disk file format) のデータベースで、キーとデータのペア情報を一つのファイルに保持します。
-    各レコードのデータはユニークキーによりインデックスづけされます。
-    テキストファイルに保存された状態に比べて、より早く情報を抽出することができます。
+    これは拡張性のあるハッシングなど、従来の UNIX dbm と同様のデータベース機能を実現するライブラリです。
+    このライブラリにより、キーデータペアの収容、キーによるデータ検索と抽出、キーに基づいたデータ削除などを行うことができます。
     </para>
 @z
 
@@ -89,10 +89,10 @@
 @z
 
 @x
-        <seg>testgdbm</seg>
+        <seg>gdbm_dump, gdbm_load, and gdbmtool</seg>
         <seg>libgdbm.{a,so} and libgdbm_compat.{a,so}</seg>
 @y
-        <seg>testgdbm</seg>
+        <seg>gdbm_dump, gdbm_load, gdbmtool</seg>
         <seg>libgdbm.{a,so}, libgdbm_compat.{a,so}</seg>
 @z
 

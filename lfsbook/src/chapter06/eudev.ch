@@ -79,11 +79,11 @@ man ページをインストールします。
 @z
 
 @x
-    <para>Finally, create some custom rules that are not covered as a part of the
-    defaults:</para>
+    <para>Finally, install some custom rules and support files useful in an LFS 
+    environment:</para>
 @y
     <para>
-    最後にデフォルトでは提供されていないルールを生成します。
+    最後に、LFS 環境にて有用なカスタムルールやサポートファイルをインストールします。
     </para>
 @z
 

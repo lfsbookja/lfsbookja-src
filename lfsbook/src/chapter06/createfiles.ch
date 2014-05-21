@@ -91,7 +91,8 @@
   <para>The created groups are not part of any standard&mdash;they are groups
   decided on in part by the requirements of the Udev configuration in this
   chapter, and in part by common convention employed by a number of existing
-  Linux distributions. The Linux Standard Base (LSB, available at <ulink
+  Linux distributions. In addition, some test suites rely on specific users
+  or groups.  The Linux Standard Base (LSB, available at <ulink
   url="http://www.linuxbase.org"/>) recommends only that, besides the group
   <systemitem class="groupname">root</systemitem> with a Group ID (GID) of 0,
   a group <systemitem class="groupname">bin</systemitem> with a GID of 1 be
@@ -102,6 +103,7 @@
   <para>
   作成するグループは何かの標準に基づいたものではありません。
   一部は本章の Udev の設定に必要となるものですし、一部は既存の Linux ディストリビューションが採用している慣用的なものです。
+  またテストスイートにて特定のユーザーやグループを必要としているものがあります。
   Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照) では <systemitem
   class="groupname">root</systemitem> グループのグループID (GID) は 0、<systemitem
   class="groupname">bin</systemitem> グループの GID は 1 を定めているにすぎません。

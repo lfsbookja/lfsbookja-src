@@ -35,19 +35,19 @@
     </para>
 @z
 
-@x
-    <para>In the packages that were installed in Chapter 6, there were two
-    different boot systems installed.  LFS provides the ability to easily
-    select which system the user wants to use and to compare and contrast the
-    two systems by actually running each system on the local computer.  The
-    advantages and disadvantages of these systems is presented below.</para>
-@y
-    <para>
-    第6章にてインストールしたパッケージの中に、二つの異なるブートシステムをインストールしました。
-    読者がどちらを望むか、あるいは読者のシステム上にて実際に処理実行してみて両者を比較するか、LFS では容易に選択できるようにしています。
-    二つのシステムの長所と短所を以下に示します。
-    </para>
-@z
+% @x
+%     <para>In the packages that were installed in Chapter 6, there were two
+%     different boot systems installed.  LFS provides the ability to easily
+%     select which system the user wants to use and to compare and contrast the
+%     two systems by actually running each system on the local computer.  The
+%     advantages and disadvantages of these systems is presented below.</para>
+% @y
+%     <para>
+%     第6章にてインストールしたパッケージの中に、二つの異なるブートシステムをインストールしました。
+%     読者がどちらを望むか、あるいは読者のシステム上にて実際に処理実行してみて両者を比較するか、LFS では容易に選択できるようにしています。
+%     二つのシステムの長所と短所を以下に示します。
+%     </para>
+% @z
 
 %     <title>System V</title>
 
@@ -80,21 +80,25 @@
 @z
 
 @x
-      <listitem><para>0 &mdash; halt</para></listitem>
-      <listitem><para>1 &mdash; Single user mode</para></listitem>
-      <listitem><para>2 &mdash; Multiuser, without networking</para></listitem>
-      <listitem><para>3 &mdash; Full multiuser mode</para></listitem>
-      <listitem><para>4 &mdash; User definable</para></listitem>
-      <listitem><para>5 &mdash; Full multiuser mode with display manager</para></listitem>
-      <listitem><para>6 &mdash; reboot</para></listitem>
+<literallayout>
+0 &mdash; halt
+1 &mdash; Single user mode
+2 &mdash; Multiuser, without networking
+3 &mdash; Full multiuser mode
+4 &mdash; User definable
+5 &mdash; Full multiuser mode with display manager
+6 &mdash; reboot
+</literallayout>
 @y
-      <listitem><para>0 &mdash; 停止 (halt)</para></listitem>
-      <listitem><para>1 &mdash; シングルユーザーモード</para></listitem>
-      <listitem><para>2 &mdash; マルチユーザー、ネットワークなし</para></listitem>
-      <listitem><para>3 &mdash; フルマルチユーザーモード</para></listitem>
-      <listitem><para>4 &mdash; ユーザー定義</para></listitem>
-      <listitem><para>5 &mdash; フルマルチユーザーモード、ディスプレイマネージャーあり</para></listitem>
-      <listitem><para>6 &mdash; 再起動 (reboot)</para></listitem>
+<literallayout>
+0 &mdash; 停止 (halt)
+1 &mdash; シングルユーザーモード
+2 &mdash; マルチユーザー、ネットワークなし
+3 &mdash; フルマルチユーザーモード
+4 &mdash; ユーザー定義
+5 &mdash; フルマルチユーザーモード、ディスプレイマネージャーあり
+6 &mdash; 再起動 (reboot)
+</literallayout>
 @z
 
 @x
@@ -319,6 +323,18 @@
     為すべきことと言えば、採用するシステムに応じたファイルを正しく利用することです。
     以下のスクリプトがこれを実現します。
     </para>
+@z
+
+@x
+  <note><para>The comment about the correct command to reboot in the 
+  above scripts is correct.  The reboot command for the current boot
+  system must be used after the script changes the default reboot command.
+  </para></note>
+@y
+  <note><para>
+  上記のスクリプト内にてコメントとして、システム再起動を行うコマンドが示されていますが、これに間違いはありません。
+  スクリプトが実行される時点でのブートシステムに対する再起動コマンドは、デフォルトの再起動コマンドが変更されてから実行されるものになります。
+  </para></note>
 @z
 
 @x

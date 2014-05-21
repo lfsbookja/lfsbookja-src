@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>Device and Module Handling on an LFS System</title>
+  <title>Overview of Device and Module Handling</title>
 @y
-  <title>LFS システムにおけるデバイスとモジュールの扱い</title>
+  <title>デバイスとモジュールの扱いについて</title>
 @z
 
 @x
@@ -33,22 +33,22 @@
 
 @x
   <para>In <xref linkend="chapter-building-system"/>, we installed the Udev
-  package. Before we go into the details regarding how this works,
-  a brief history of previous methods of handling devices is in
+  package as a part of systemd. Before we go into the details regarding how
+  this works, a brief history of previous methods of handling devices is in
   order.</para>
 @y
   <para>
-  <xref linkend="chapter-building-system"/>にて Udev パッケージをインストールしました。
+  <xref linkend="chapter-building-system"/>にて systemd の一部として Udev パッケージをインストールしました。
   このパッケージがどのように動作するかの詳細を説明する前に、デバイスを取り扱うかつての方法について順を追って説明していきます。
   </para>
 @z
 
 @x
-  <para>Linux systems in general traditionally use a static device creation
-  method, whereby a great many device nodes are created under <filename
+  <para>Linux systems in general traditionally used a static device creation
+  method, whereby a great many device nodes were created under <filename
   class="directory">/dev</filename> (sometimes literally thousands of nodes),
-  regardless of whether the corresponding hardware devices actually exist. This
-  is typically done via a <command>MAKEDEV</command> script, which contains a
+  regardless of whether the corresponding hardware devices actually existed. This
+  was typically done via a <command>MAKEDEV</command> script, which contains a
   number of calls to the <command>mknod</command> program with the relevant
   major and minor device numbers for every possible device that might exist in
   the world.</para>
@@ -108,8 +108,8 @@
     device names are allowed to be configurable, then the device naming policy
     should be up to a system administrator, not imposed on them by any
     particular developer(s). The <systemitem
-    class="filesystem">devfs</systemitem> file system also suffers from race
-    conditions that are inherent in its design and cannot be fixed without a
+    class="filesystem">devfs</systemitem> file system also suffered from race
+    conditions that were inherent in its design and could not be fixed without a
     substantial revision to the kernel. It was marked as deprecated for a long
     period &ndash; due to a lack of maintenance &ndash; and was finally removed
     from the kernel in June, 2006.</para>
@@ -129,7 +129,7 @@
     <systemitem class="filesystem">sysfs</systemitem> came to be. The job of
     <systemitem class="filesystem">sysfs</systemitem> is to export a view of
     the system's hardware configuration to userspace processes. With this
-    userspace-visible representation, the possibility of seeing a userspace
+    userspace-visible representation, the possibility of developing a userspace
     replacement for <systemitem class="filesystem">devfs</systemitem> became
     much more realistic.</para>
 @y
@@ -137,7 +137,7 @@
     開発版の 2.5 系カーネルと、後にリリースされた安定版のカーネル 2.6 系を経て、新しい仮想ファイルシステム <systemitem
     class="filesystem">sysfs</systemitem> が登場しました。
     <systemitem class="filesystem">sysfs</systemitem> が実現したのは、システムのハードウェア設定をユーザー空間のプロセスとして表に出したことです。
-    ユーザー空間での設定を可視化したことによって <systemitem class="filesystem">devfs</systemitem> が為していたことを、ユーザー空間にて現実に見ることが可能になったわけです。
+    ユーザー空間での設定を可視化したことによって <systemitem class="filesystem">devfs</systemitem> が為していたことを、ユーザー空間にて開発することが可能になったわけです。
     </para>
 @z
 
@@ -189,7 +189,7 @@
 @x
       <para>Device files are created by the kernel by the <systemitem
       class="filesystem">devtmpfs</systemitem> filesystem.  Any driver that
-      wishes to register a device node will go through <systemitem
+      wishes to register a device node will go through the <systemitem
       class="filesystem">devtmpfs</systemitem> (via the driver core) to do it.
       When a <systemitem class="filesystem">devtmpfs</systemitem> instance is
       mounted on <filename class="directory">/dev</filename>, the device node
@@ -226,93 +226,92 @@
 @z
 
 @x
-      <para>The rules in these three directories are numbered in a similar
-      fashion to the LFS-Bootscripts package and all three directories are
-      merged together. If <command>udevd</command> can't find a rule for the
-      device it is creating, it will leave the permissions and ownership at
-      whatever <systemitem class="filesystem">devtmpfs</systemitem> used
-      initially.</para> </sect3>
+      <para>The rules in these three directories are numbered and all three
+      directories are merged together. If <command>udevd</command> can't find a
+      rule for the device it is creating, it will leave the permissions and
+      ownership at whatever <systemitem
+      class="filesystem">devtmpfs</systemitem> used initially.</para> </sect3>
 @y
       <para>
-      上の三つのディレクトリ内にて指定されるルールは、LFS ブートスクリプトパッケージと同様の方法で番号づけされており、三つのディレクトリの内容は一つにまとめられます。
+      上の三つのディレクトリ内にて指定されるルールは番号づけされており、三つのディレクトリの内容は一つにまとめられます。
       デバイスノードの生成時に <command>udevd</command> がそのルールを見つけ出せなかった時は、<systemitem
       class="filesystem">devtmpfs</systemitem> が利用される際の初期のパーミッションと所有者の情報のままとなります。
       </para> </sect3>
 @z
 
-@x
-      <title>Udev Bootscripts</title>
-@y
-      <title>Udev ブートスクリプト</title>
-@z
+% @x
+%       <title>Udev Bootscripts</title>
+% @y
+%       <title>Udev ブートスクリプト</title>
+% @z
 
-@x
-      <para>The first LFS bootscript,
-      <filename>/etc/init.d/mountvirtfs</filename> will copy any devices
-      located in <filename class="directory">/lib/udev/devices</filename> to
-      <filename class="directory">/dev</filename>. This is necessary because
-      some devices, directories, and symlinks are needed before the dynamic
-      device handling processes are available during the early stages of
-      booting a system, or are required by <command>udevd</command> itself.
-      Creating static device nodes in <filename
-      class="directory">/lib/udev/devices</filename> also provides an easy
-      workaround for devices that are not supported by the dynamic device
-      handling infrastructure.</para> 
-@y
-      <para>
-      初期に起動される LFS ブートスクリプト <filename>/etc/init.d/mountvirtfs</filename> は、<filename
-      class="directory">/lib/udev/devices</filename> に存在するデバイスノードを、すべて <filename
-      class="directory">/dev</filename> にコピーします。
-      デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
-      あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
-      <filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
-      </para>
-@z
+% @x
+%       <para>The first LFS bootscript,
+%       <filename>/etc/init.d/mountvirtfs</filename> will copy any devices
+%       located in <filename class="directory">/lib/udev/devices</filename> to
+%       <filename class="directory">/dev</filename>. This is necessary because
+%       some devices, directories, and symlinks are needed before the dynamic
+%       device handling processes are available during the early stages of
+%       booting a system, or are required by <command>udevd</command> itself.
+%       Creating static device nodes in <filename
+%       class="directory">/lib/udev/devices</filename> also provides an easy
+%       workaround for devices that are not supported by the dynamic device
+%       handling infrastructure.</para> 
+% @y
+%       <para>
+%       初期に起動される LFS ブートスクリプト <filename>/etc/init.d/mountvirtfs</filename> は、<filename
+%       class="directory">/lib/udev/devices</filename> に存在するデバイスノードを、すべて <filename
+%       class="directory">/dev</filename> にコピーします。
+%       デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
+%       あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
+%       <filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
+%       </para>
+% @z
 
-@x
-      <para>The <filename>/etc/rc.d/init.d/udev</filename> initscript starts
-      <command>udevd</command>, triggers any "coldplug" devices that have
-      already been created by the kernel and waits for any rules to complete.
-      The script also unsets the uevent handler from the default of
-      <filename>/sbin/hotplug </filename>.  This is done because the kernel no
-      longer needs to call out to an external binary.  Instead
-      <command>udevd</command> will listen on a netlink socket for uevents that
-      the kernel raises.</para> 
-@y
-      <para>
-      初期起動スクリプト <filename>/etc/rc.d/init.d/udev</filename> は <command>udevd</command> を起動し、カーネルにより既に生成されている "コールドプラグ" のデバイスをすべて稼動させます。
-      そしてすべてのルールが起動完了するのを待ちます。
-      このスクリプトは <filename>/sbin/hotplug</filename> のデフォルトから uevent ハンドラーを取り除きます。
-      この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
-      そのかわりに、<command>udevd</command>は、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
-      </para>
-@z
+% @x
+%       <para>The <filename>/etc/rc.d/init.d/udev</filename> initscript starts
+%       <command>udevd</command>, triggers any "coldplug" devices that have
+%       already been created by the kernel and waits for any rules to complete.
+%       The script also unsets the uevent handler from the default of
+%       <filename>/sbin/hotplug </filename>.  This is done because the kernel no
+%       longer needs to call out to an external binary.  Instead
+%       <command>udevd</command> will listen on a netlink socket for uevents that
+%       the kernel raises.</para> 
+% @y
+%       <para>
+%       初期起動スクリプト <filename>/etc/rc.d/init.d/udev</filename> は <command>udevd</command> を起動し、カーネルにより既に生成されている "コールドプラグ" のデバイスをすべて稼動させます。
+%       そしてすべてのルールが起動完了するのを待ちます。
+%       このスクリプトは <filename>/sbin/hotplug</filename> のデフォルトから uevent ハンドラーを取り除きます。
+%       この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
+%       そのかわりに、<command>udevd</command>は、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
+%       </para>
+% @z
 
-@x
-      <para>The <command>/etc/rc.d/init.d/udev_retry</command> initscript takes
-      care of re-triggering events for subsystems whose rules may rely on
-      filesystems that are not mounted until the <command>mountfs</command>
-      script is run (in particular, <filename class="directory">/usr</filename>
-      and <filename class="directory">/var</filename> may cause this).  This
-      script runs after the <command>mountfs</command> script, so those rules
-      (if re-triggered) should succeed the second time around.  It is
-      configured from the <filename>/etc/sysconfig/udev_retry</filename> file;
-      any words in this file other than comments are considered subsystem names
-      to trigger at retry time.  To find the subsystem of a device, use
-      <command>udevadm info --attribute-walk &lt;device&gt;</command> where
-      &lt;device&gt; is an absolute path in /dev or /sys such as /dev/sr0 or
-      /sys/class/rtc.</para>
-@y
-      <para>
-      初期起動スクリプト <command>/etc/rc.d/init.d/udev_retry</command> は、サブシステムに対するイベントの再起動を行ないます。
-      そのサブシステムとはファイルシステムに依存するもので、<command>mountfs</command> が実行されるまでマウントされません。
-      (特に <filename class="directory">/usr</filename> や <filename class="directory">/var</filename> がこれに該当します。)
-      <command>mountfs</command> スクリプトの後にこのスクリプトが実行されるので、(イベントが再起動されるものであれば) 二度目には成功します。
-      このスクリプトは <filename>/etc/sysconfig/udev_retry</filename> ファイルにより設定が可能で、コメントを除く記述項目はすべてサブシステム名を表わし、二度目の起動時のリトライ対象となります。
-      (デバイスのサブシステムを知るには <command>udevadm info --attribute-walk &lt;device&gt;</command> を実行します。
-      ここで &lt;device&gt; は、/dev や /sys から始まる絶対パスであり /dev/sr0 や /sys/class/rtc などを表します。)
-      </para>
-@z
+% @x
+%       <para>The <command>/etc/rc.d/init.d/udev_retry</command> initscript takes
+%       care of re-triggering events for subsystems whose rules may rely on
+%       filesystems that are not mounted until the <command>mountfs</command>
+%       script is run (in particular, <filename class="directory">/usr</filename>
+%       and <filename class="directory">/var</filename> may cause this).  This
+%       script runs after the <command>mountfs</command> script, so those rules
+%       (if re-triggered) should succeed the second time around.  It is
+%       configured from the <filename>/etc/sysconfig/udev_retry</filename> file;
+%       any words in this file other than comments are considered subsystem names
+%       to trigger at retry time.  To find the subsystem of a device, use
+%       <command>udevadm info --attribute-walk &lt;device&gt;</command> where
+%       &lt;device&gt; is an absolute path in /dev or /sys such as /dev/sr0 or
+%       /sys/class/rtc.</para>
+% @y
+%       <para>
+%       初期起動スクリプト <command>/etc/rc.d/init.d/udev_retry</command> は、サブシステムに対するイベントの再起動を行ないます。
+%       そのサブシステムとはファイルシステムに依存するもので、<command>mountfs</command> が実行されるまでマウントされません。
+%       (特に <filename class="directory">/usr</filename> や <filename class="directory">/var</filename> がこれに該当します。)
+%       <command>mountfs</command> スクリプトの後にこのスクリプトが実行されるので、(イベントが再起動されるものであれば) 二度目には成功します。
+%       このスクリプトは <filename>/etc/sysconfig/udev_retry</filename> ファイルにより設定が可能で、コメントを除く記述項目はすべてサブシステム名を表わし、二度目の起動時のリトライ対象となります。
+%       (デバイスのサブシステムを知るには <command>udevadm info --attribute-walk &lt;device&gt;</command> を実行します。
+%       ここで &lt;device&gt; は、/dev や /sys から始まる絶対パスであり /dev/sr0 や /sys/class/rtc などを表します。)
+%       </para>
+% @z
 
 @x
       <title>Module Loading</title>
@@ -624,47 +623,47 @@
       </para>
 @z
 
-@x
-      <title>Udev does not create a device</title>
-@y
-      <title>
-      Udev がデバイスを生成しない問題
-      </title>
-@z
+% @x
+%       <title>Udev does not create a device</title>
+% @y
+%       <title>
+%       Udev がデバイスを生成しない問題
+%       </title>
+% @z
 
-@x
-      <para>Further text assumes that the driver is built statically into the
-      kernel or already loaded as a module, and that you have already checked
-      that Udev doesn't create a misnamed device.</para>
-@y
-      <para>
-      ここでは以下のことを前提としています。
-      まずドライバーがカーネル内に静的に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
-      そして Udev が異なった名前のデバイスを生成していないことです。
-      </para>
-@z
+% @x
+%       <para>Further text assumes that the driver is built statically into the
+%       kernel or already loaded as a module, and that you have already checked
+%       that Udev doesn't create a misnamed device.</para>
+% @y
+%       <para>
+%       ここでは以下のことを前提としています。
+%       まずドライバーがカーネル内に静的に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
+%       そして Udev が異なった名前のデバイスを生成していないことです。
+%       </para>
+% @z
 
-@x
-      <para>Udev has no information needed to create a device node if a kernel
-      driver does not export its data to <systemitem
-      class="filesystem">sysfs</systemitem>.
-      This is most common with third party drivers from outside the kernel
-      tree. Create a static device node in
-      <filename>/lib/udev/devices</filename> with the appropriate major/minor
-      numbers (see the file <filename>devices.txt</filename> inside the kernel
-      documentation or the documentation provided by the third party driver
-      vendor). The static device node will be copied to
-      <filename class="directory">/dev</filename> by the
-      <command>udev</command> bootscript.</para>
-@y
-      <para>
-      Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
-      これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
-      したがって <filename>/lib/udev/devices</filename> において、適切なメジャー、マイナー番号を用いた静的なデバイスノードを生成してください。
-      (カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
-      この静的デバイスノードは、<command>udev</command> ブートスクリプトによって <filename class="directory">/dev</filename> にコピーされます。
-      </para>
-@z
+% @x
+%       <para>Udev has no information needed to create a device node if a kernel
+%       driver does not export its data to <systemitem
+%       class="filesystem">sysfs</systemitem>.
+%       This is most common with third party drivers from outside the kernel
+%       tree. Create a static device node in
+%       <filename>/lib/udev/devices</filename> with the appropriate major/minor
+%       numbers (see the file <filename>devices.txt</filename> inside the kernel
+%       documentation or the documentation provided by the third party driver
+%       vendor). The static device node will be copied to
+%       <filename class="directory">/dev</filename> by the
+%       <command>udev</command> bootscript.</para>
+% @y
+%       <para>
+%       Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
+%       これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
+%       したがって <filename>/lib/udev/devices</filename> において、適切なメジャー、マイナー番号を用いた静的なデバイスノードを生成してください。
+%       (カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
+%       この静的デバイスノードは、<command>udev</command> ブートスクリプトによって <filename class="directory">/dev</filename> にコピーされます。
+%       </para>
+% @z
 
 @x
       <title>Device naming order changes randomly after rebooting</title>

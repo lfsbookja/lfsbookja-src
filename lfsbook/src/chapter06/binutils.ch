@@ -142,16 +142,6 @@
 @z
 
 @x
-    <para>Install the <filename class="headerfile">libiberty</filename> header
-    file that is needed by some packages:</para>
-@y
-    <para>
-    <filename class="headerfile">libiberty</filename> ヘッダーファイルをインストールします。
-    他のパッケージがこれを必要としている場合があるためです。
-    </para>
-@z
-
-@x
     <title>Contents of Binutils</title>
 @y
     <title>&ContentsOf1;Binutils&ContentsOf2;</title>

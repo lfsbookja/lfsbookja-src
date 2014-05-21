@@ -71,15 +71,6 @@
 @z
 
 @x
-    <para>Some documentation programs, such as <command>xman</command>,
-    will not work properly without the following symlinks:</para>
-@y
-    <para>
-    <command>xman</command> のようなドキュメント関連プログラムが正しく動作するように、以下のようなシンボリックリンクを作成します。
-    </para>
-@z
-
-@x
   <title>Contents of Groff</title>
 @y
   <title>&ContentsOf1;Groff&ContentsOf2;</title>

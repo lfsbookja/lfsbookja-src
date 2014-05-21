@@ -40,26 +40,6 @@
 @z
 
 @x
-    <para>Workaround a bug so that GCC doesn't install
-    <filename class="libraryfile">libiberty.a</filename>, which is already
-    provided by Binutils:</para>
-@y
-    <para>
-    GCC パッケージでは <filename class="libraryfile">libiberty.a</filename> をインストールしないようにします。
-    これは Binutils にて既に提供されています。
-    </para>
-@z
-
-@x
-    <para>Also fix an error in one of the check Makefiles and disable one test in
-    the g++ libmudflap test suite:</para>
-@y
-    <para>
-    Makefile のチェックにおける誤りを一つ修正し、また g++ libmudflap のテストスイートは実行しないようにします。
-    </para>
-@z
-
-@x
     <para>The GCC documentation recommends building GCC outside of the source
     directory in a dedicated build directory:</para>
 @y

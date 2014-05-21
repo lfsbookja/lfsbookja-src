@@ -29,10 +29,10 @@
 @z
 
 @x
-    <para>Fix a couple of test failures:</para>
+    <para>First, fix a segfault in <command>shuf</command> program:</para>
 @y
     <para>
-    テスト処理がいくつか失敗するのを修正します。
+    <command>shuf</command> プログラムにて segfault が発生するものを修正します。
     </para>
 @z
 

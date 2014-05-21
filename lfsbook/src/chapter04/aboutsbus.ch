@@ -78,16 +78,6 @@
 @z
 
 @x
-  <para>To view actual timings for a number of specific machines, we recommend
-  The LinuxFromScratch SBU Home Page at <ulink url="&lfs-root;~sbu/"/>.</para>
-@y
-  <para>
-  特定マシンにおける実際の処理時間については、以下の LinuxFromScratch SBU ホームページに示していますので参照してください。
-  <ulink url="&lfs-root;~sbu/"/>
-  </para>
-@z
-
-@x
   <note><para>For many modern systems with multiple processors (or cores) the
   compilation time for a package can be reduced by performing a "parallel make"
   by either setting an environment variable or telling the

@@ -91,14 +91,14 @@
 @z
 
 @x
-        <seg>acinstall, aclocal, aclocal-&am-minor-version;, automake,
+        <seg>aclocal, aclocal-&am-minor-version;, automake,
         automake-&am-minor-version;, compile, config.guess, config.sub,
         depcomp, install-sh, mdate-sh, missing, mkinstalldirs,
         py-compile, and ylwrap</seg>
         <seg>/usr/share/aclocal-&am-minor-version;, /usr/share/automake-&am-minor-version;,
         /usr/share/doc/automake-&automake-version;</seg>
 @y
-        <seg>acinstall, aclocal, aclocal-&am-minor-version;, automake,
+        <seg>aclocal, aclocal-&am-minor-version;, automake,
         automake-&am-minor-version;, compile, config.guess, config.sub,
         depcomp, install-sh, mdate-sh, missing, mkinstalldirs,
         py-compile, ylwrap</seg>
@@ -110,14 +110,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x acinstall
-          <para>A script that installs aclocal-style M4 files</para>
-@y
-          <para>
-          aclocal 風の M4 ファイルをインストールするスクリプト。
-          </para>
 @z
 
 @x aclocal

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>How Do the System V Bootscripts Work?</title>
+  <title>System V Bootscript Usage and Configuration</title>
 @y
-  <title>System V ブートスクリプトはどのようにして動くのか</title>
+  <title>System V ブートスクリプトの利用と設定</title>
 @z
 
 @x
@@ -32,37 +32,43 @@
 @z
 
 @x
-  <para>Linux uses a special booting facility named SysVinit that is based on a
-  concept of <emphasis>run-levels</emphasis>. It can be quite different from one
-  system to another, so it cannot be assumed that because things worked in one
-  particular Linux distribution, they should work the same in LFS too. LFS has its
-  own way of doing things, but it respects generally accepted standards.</para>
+    <title>How Do the System V Bootscripts Work?</title>
 @y
-  <para>
-  Linux では SysVinit という特別なブート機能があり <emphasis>ランレベル (run-levels)</emphasis> という考え方に基づいています。
-  ランレベルの扱いはシステムによって異なりますので、ある Linux において動作しているからといって LFS においても全く同じように動くわけではありません。
-  LFS では独自の方法でこれを取り入れることにします。
-  ただし標準として受け入れられるような方法を取ります。
-  </para>
+    <title>System V ブートスクリプトはどのようにして動くのか</title>
 @z
 
 @x
-  <para>SysVinit (which will be referred to as <quote>init</quote> from now on)
-  works using a run-levels scheme. There are seven (numbered 0 to 6) run-levels
-  (actually, there are more run-levels, but they are for special cases and are
-  generally not used. See <filename>init(8)</filename> for more details), and
-  each one of those corresponds to the actions the computer is supposed to
-  perform when it starts up. The default run-level is 3. Here are the
-  descriptions of the different run-levels as they are implemented:</para>
+    <para>Linux uses a special booting facility named SysVinit that is based on a
+    concept of <emphasis>run-levels</emphasis>. It can be quite different from one
+    system to another, so it cannot be assumed that because things worked in one
+    particular Linux distribution, they should work the same in LFS too. LFS has its
+    own way of doing things, but it respects generally accepted standards.</para>
 @y
-  <para>
-  SysVinit (これ以降は<quote>init</quote>と表現します) はランレベルという仕組みにより動作します。
-  ランレベルには7つのレベル (0 から 6) があります。
-  (実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
-  詳しくは <filename>init(8)</filename> を参照してください。)
-  各レベルは、コンピューターの起動時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
-  ランレベルの詳細を以下に説明します。
-  </para>
+    <para>
+    Linux では SysVinit という特別なブート機能があり <emphasis>ランレベル (run-levels)</emphasis> という考え方に基づいています。
+    ランレベルの扱いはシステムによって異なりますので、ある Linux において動作しているからといって LFS においても全く同じように動くわけではありません。
+    LFS では独自の方法でこれを取り入れることにします。
+    ただし標準として受け入れられるような方法を取ります。
+    </para>
+@z
+
+@x
+    <para>SysVinit (which will be referred to as <quote>init</quote> from now on)
+    works using a run-levels scheme. There are seven (numbered 0 to 6) run-levels
+    (actually, there are more run-levels, but they are for special cases and are
+    generally not used. See <filename>init(8)</filename> for more details), and
+    each one of those corresponds to the actions the computer is supposed to
+    perform when it starts up. The default run-level is 3. Here are the
+    descriptions of the different run-levels as they are implemented:</para>
+@y
+    <para>
+    SysVinit (これ以降は<quote>init</quote>と表現します) はランレベルという仕組みにより動作します。
+    ランレベルには7つのレベル (0 から 6) があります。
+    (実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
+    詳しくは <filename>init(8)</filename> を参照してください。)
+    各レベルは、コンピューターの起動時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
+    ランレベルの詳細を以下に説明します。
+    </para>
 @z
 
 @x

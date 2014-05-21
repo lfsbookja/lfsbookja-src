@@ -61,21 +61,21 @@
     </para>
 @z
 
-@x
-    <para>For x86 machines, a bootstrap build of GCC uses the
-    <option>-fomit-frame-pointer</option> compiler flag.  Non-bootstrap builds
-    omit this flag by default, and the goal should be to produce a compiler
-    that is exactly the same as if it were bootstrapped.  Apply the following
-    <command>sed</command> command to force the build to use the flag:</para>
-@y
-    <para>
-    x86 マシンにおいてブートストラップビルドを行うと、コンパイラーフラグ
-    <option>-fomit-frame-pointer</option> が設定されます。
-    しかしブートストラップではないビルドの場合はデフォルトではこのフラグが無効化されてしまいます。
-    ここで実現したいのは、ブートストラップビルドを行った場合とまったく同じコンパイラーをビルドすることです。
-    そこで以下の <command>sed</command> コマンドにより、強制的に上のフラグを利用するようにします。
-    </para>
-@z
+% @x
+%     <para>For x86 machines, a bootstrap build of GCC uses the
+%     <option>-fomit-frame-pointer</option> compiler flag.  Non-bootstrap builds
+%     omit this flag by default, and the goal should be to produce a compiler
+%     that is exactly the same as if it were bootstrapped.  Apply the following
+%     <command>sed</command> command to force the build to use the flag:</para>
+% @y
+%     <para>
+%     x86 マシンにおいてブートストラップビルドを行うと、コンパイラーフラグ
+%     <option>-fomit-frame-pointer</option> が設定されます。
+%     しかしブートストラップではないビルドの場合はデフォルトではこのフラグが無効化されてしまいます。
+%     ここで実現したいのは、ブートストラップビルドを行った場合とまったく同じコンパイラーをビルドすることです。
+%     そこで以下の <command>sed</command> コマンドにより、強制的に上のフラグを利用するようにします。
+%     </para>
+% @z
 
 @x
     <para>Once again, change the location of GCC's default dynamic linker to

@@ -68,13 +68,13 @@
     <para>This package does come with a testsuite, but it requires several
     packages that are not included in LFS. Instructions for running the
     testsuite can be found in the BLFS book at
-    <ulink url="&blfs-root;/view/svn/general/dbus.html"/>.</para>
+    <ulink url="&blfs-root;/view/&short-version;/general/dbus.html"/>.</para>
 @y
     <para>
     本パッケージにはテストスイートがあります。
     ただし実行するためには LFS には含まれていないパッケージをいくつか必要とします。
     テストの実行方法については <ulink
-    url="&blfs-root;/view/svn/general/dbus.html"/> に示されています。
+    url="&blfs-root;/view/&short-version;/general/dbus.html"/> に示されています。
     </para>
 @z
 
