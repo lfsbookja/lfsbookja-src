@@ -68,6 +68,16 @@
 @z
 
 @x
+    <para>Add an upstream patch to use gcc's link time optimization (LTO) 
+    the default:</para>
+@y
+    <para>
+    アップストリームが提供するパッチを適用します。
+    これにより gcc のリンク時における最適化オプション (LTO) をデフォルトにします。
+    </para>
+@z
+
+@x
     <para>The Binutils documentation recommends building Binutils outside of the
     source directory in a dedicated build directory:</para>
 @y
@@ -133,6 +143,15 @@
     <para>Test the results:</para>
 @y
     <para>コンパイル結果をテストします。</para>
+@z
+
+@x
+    <para>Six tests in the lto.exp testsuite are known to fail due
+    to changes in the most recent version of gcc.</para>
+@y
+    <para>
+    テストスイート lto.exp においては、最新の gcc の更新内容が影響し、６つのテストが失敗します。
+    </para>
 @z
 
 @x

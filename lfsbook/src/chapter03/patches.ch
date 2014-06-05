@@ -36,7 +36,7 @@
 <note>
 <title>日本語訳情報</title>
 <para>
-各パッチには簡略な名称がつけられていますが、これを日本語に訳してしまうと、パッチの特定ができなくなることが考えられるため、訳出せずそのまま表記することにします。
+各パッチに付けられている簡略な名称については、訳出せずそのまま表記することにします。
 </para>
 </note>
 @z
@@ -45,6 +45,18 @@
         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+@z
+
+@x Bc Memory Leak Patch
+        <para>Download: <ulink url="&patches-root;&bc-memory-leak-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&bc-memory-leak-patch;"/></para>
+@z
+
+@x Binutils LTO Patch
+        <para>Download: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
 @z
 
 @x Bzip2 Documentation Patch

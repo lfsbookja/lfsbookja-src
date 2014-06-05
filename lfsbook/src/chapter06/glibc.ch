@@ -543,7 +543,7 @@ minor timing issues が何を意味するのか不明であった。
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
         pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
-        <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
+        <seg>ld-&glibc-version;.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a, libcidn.so,
         libcrypt.{a,so}, libdl.{a,so}, libg.a, libieee.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libnsl.{a,so}, libnss_compat.so,
@@ -565,7 +565,7 @@ minor timing issues が何を意味するのか不明であった。
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
         pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
-        <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
+        <seg>ld-&glibc-version;.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a, libcidn.so,
         libcrypt.{a,so}, libdl.{a,so}, libg.a, libieee.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libnsl.{a,so}, libnss_compat.so,

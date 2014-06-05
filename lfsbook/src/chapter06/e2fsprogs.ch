@@ -35,11 +35,11 @@
 @z
 
 @x
-    <para>First fix a problem with running regression tests in the LFS chroot
+    <para>First fix some problems with running regression tests in the LFS chroot
     environment:</para>
 @y
     <para>
-    LFS の chroot 環境にて正規表現テストの実行が失敗するため修正します。
+    LFS の chroot 環境にて正規表現テストの実行が失敗することがあるため修正します。
     </para>
 @z
 
