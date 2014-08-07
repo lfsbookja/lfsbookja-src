@@ -32,7 +32,6 @@
 @z
 
 @x
-
   <para>This section discusses how to configure the <command>console</command>
   bootscript that sets up the keyboard map, console font and console kernel log
   level. If non-ASCII characters (e.g., the copyright sign, the British pound
@@ -47,12 +46,6 @@
   非アスキー文字 (例えば著作権、ポンド記号、ユーロ記号など) を使わず、キーボードが US 配列であるなら、本節は読み飛ばしてください。
   <command>console</command> ブートスクリプトの設定ファイルが存在しない場合 (あるいはこれと同等の設定が <filename>rc.site</filename> にない場合) は、このスクリプトは何も行いません。
   </para>
-@z
-
-@x
-    <title>Systemd V</title>
-@y
-    <title>System V</title>
 @z
 
 @x

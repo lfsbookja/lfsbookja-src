@@ -34,7 +34,7 @@
     common requirement on a base Linux system, remove the dependency on Berkeley
     DB by applying the commands below.  If the <command>arpd</command> binary is
     needed, instructions for compiling Berkeley DB can be found in the BLFS Book
-    at <ulink url="&blfs-root;view/svn/server/databases.html#db"/>.
+    at <ulink url="&blfs-root;view/&short-version;/server/databases.html#db"/>.
     </para>
 @y
     <para>
@@ -42,7 +42,7 @@
     <command>arpd</command> はベースとする Linux システムにとって普通は必要となりません。
     そこで Berkeley DB への依存を取り除くために、以下の <command>sed</command> コマンドを実行します。
     <command>arpd</command> プログラムを必要とする場合は BLFS ブックの <ulink
-    url="&blfs-root;view/svn/server/databases.html#db"/> に示される Berkeley DB の構築手順に従ってください。
+    url="&blfs-root;view/&short-version;/server/databases.html#db"/> に示される Berkeley DB の構築手順に従ってください。
     </para>
 @z
 
@@ -61,36 +61,19 @@
 @z
 
 @x
-      <title>The meaning of the make option:</title>
-@y
-      <title>&MeaningOfOption1;make&MeaningOfOption2;:</title>
-@z
-
-@x
-          <para>This ensures that the IPRoute2 binaries will install into
-          the correct directory. By default, <parameter>DESTDIR</parameter> is
-          set to <filename class="directory">/usr</filename>.</para>
-@y
-          <para>
-          このオプションにより IPRoute2 の実行モジュール類を適切なディレクトリにインストールします。
-          デフォルトでは <parameter>DESTDIR</parameter> は <filename class="directory">/usr</filename> ディレクトリに設定されています。
-          </para>
-@z
-
-@x
     <para>This package comes with a test suite, but due to assumptions it makes,
     it is not possible to reliably run these tests from within the chroot
     environment. If you wish to run these tests after booting into your new LFS
-    system, ensure you select <filename>/proc/config.gz</filename>
-    CONFIG_IKCONFIG_PROC (&quot;General setup&quot; -> &quot;Enable access to
-    .config through /proc/config.gz&quot;) support into your kernel then run
+    system, ensure you enable <filename>/proc/config.gz</filename> support
+    in your kernel (&quot;General setup&quot; -> &quot;Enable access to
+    .config through /proc/config.gz&quot; [CONFIG_IKCONFIG_PROC]), then run
     'make alltests' from the <filename class="directory">testsuite/</filename>
     subdirectory.</para>
 @y
     <para>
-    このパッケージにテストスイートはありますが、このテストの前提条件からすると chroot 環境のもとでは信頼のあるテスト結果を得ることには無理があります。
-    もし LFS システムを構築した後にテストスイートを実施したいなら、カーネル設定において <filename>/proc/config.gz</filename> CONFIG_IKCONFIG_PROC (&quot;General setup&quot; -> &quot;Enable access to
-    .config through /proc/config.gz&quot;) のサポートを有効にしてカーネルをビルドしてください。
+    このパッケージにテストスイートはありますが、テストの前提条件からすると chroot 環境のもとでは信頼のあるテスト結果を得ることには無理があります。
+    もし LFS システムを構築した後にテストスイートを実施したいなら、カーネル設定において <filename>/proc/config.gz</filename> のサポート (&quot;General setup&quot; -> &quot;Enable access to
+    .config through /proc/config.gz&quot; [CONFIG_IKCONFIG_PROC]) を有効にしてください。
     そしてサブディレクトリ <filename class="directory">testsuite/</filename> にて 'make alltests' を実行してください。
     </para>
 @z

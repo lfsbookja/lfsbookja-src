@@ -33,12 +33,12 @@
 
 @x
   <para>In <xref linkend="chapter-building-system"/>, we installed the Udev
-  package as a part of systemd. Before we go into the details regarding how
+  package when eudev was built. Before we go into the details regarding how
   this works, a brief history of previous methods of handling devices is in
   order.</para>
 @y
   <para>
-  <xref linkend="chapter-building-system"/>にて systemd の一部として Udev パッケージをインストールしました。
+  <xref linkend="chapter-building-system"/>にて eudev のビルドを通じて Udev パッケージをインストールしました。
   このパッケージがどのように動作するかの詳細を説明する前に、デバイスを取り扱うかつての方法について順を追って説明していきます。
   </para>
 @z

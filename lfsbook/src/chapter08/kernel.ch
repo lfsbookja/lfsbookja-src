@@ -64,7 +64,7 @@
     url="&hints-root;kernel-configuration.txt"/>.  BLFS has some information
     regarding particular kernel configuration requirements of packages outside
     of LFS at <ulink
-    url="&blfs-root;view/svn/longindex.html#kernel-config-index"/>.  Additional
+    url="&blfs-root;view/&short-version;/longindex.html#kernel-config-index"/>.  Additional
     information about configuring and building the kernel can be found at
     <ulink url="http://www.kroah.com/lkn/"/> </para>
 @y
@@ -72,7 +72,7 @@
     メニュー形式のインターフェースによりカーネルを設定します。
     カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
     BLFS では LFS が取り扱わない各種パッケージに対して、必要となるカーネル設定項目を説明しています。
-    <ulink url="&blfs-root;view/svn/longindex.html#kernel-config-index"/> を参照してください。
+    <ulink url="&blfs-root;view/&short-version;/longindex.html#kernel-config-index"/> を参照してください。
     さらに詳しくカーネルの構築や設定を説明している <ulink url="http://www.kroah.com/lkn/"/> もあります。
     </para>
 @z
@@ -90,10 +90,10 @@
 @z
 
 @x
-    <para>Be sure to enable or disable following features:</para>
+    <para>Be sure to configure the following features as shown:</para>
 @y
     <para>
-    以下のカーネル設定項目の選択状況を確認してください。
+    以下のカーネル項目を設定してください。
     </para>
 @z
 
@@ -171,13 +171,13 @@
     located in <xref linkend="ch-scripts-udev"/> and in the kernel
     documentation in the <filename
     class="directory">linux-&linux-version;/Documentation</filename> directory.
-    Also, <filename>modprobe.conf(5)</filename> may be of interest.</para>
+    Also, <filename>modprobe.d(5)</filename> may be of interest.</para>
 @y
     <para>
     カーネルモジュールを利用する場合 <filename class="directory">/etc/modprobe.d</filename> ディレクトリ内での設定を必要とします。
     モジュールやカーネル設定に関する情報は <xref linkend="ch-scripts-udev"/>や <filename
     class="directory">linux-&linux-version;/Documentation</filename> ディレクトリにあるカーネルドキュメントを参照してください。
-    また <filename>modprobe.conf(5)</filename> も有用です。
+    また <filename>modprobe.d(5)</filename> も有用です。
     </para>
 @z
 

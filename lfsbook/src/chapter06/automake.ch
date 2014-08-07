@@ -40,25 +40,11 @@
     <para>&CompileThePackage;</para>
 @z
 
-% @x
-%     <note><para>The tests take a very long time: over 30 SBUs.</para></note>
-% @y
-%     <note><para>
-%     テスト処理には 30 SBU 以上の時間を要します。
-%     </para></note>
-% @z
-
-% @x
-%     <para>To test the results, issue:</para>
-% @y
-%     <para>ビルド結果をテストするには、以下を実行します。</para>
-% @z
-
 @x
     <para>There are a couple of tests that incorrectly link to the 
     wrong version of the flex library, so we temporarily work around
     the problem.  Also, using the -j4 make option speeds up the tests, even on
-    systems with only one processor due to internal delays in individual
+    systems with only one processor, due to internal delays in individual
     tests.  To test the results, issue:</para>
 @y
     <para>

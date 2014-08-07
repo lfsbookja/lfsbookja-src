@@ -29,10 +29,10 @@
 @z
 
 @x
-    <para>First, skip running three regression tests that require bison.</para>
+    <para>First, skip running three regression tests that require Bison:</para>
 @y
     <para>
-    bison を必要としている三つの縮退テストを実行しないようにします。
+    Bison を必要としている三つの縮退テストを実行しないようにします。
     </para>
 @z
 
@@ -98,7 +98,7 @@
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledLibrary;</segtitle>

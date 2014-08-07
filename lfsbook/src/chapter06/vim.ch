@@ -30,12 +30,12 @@
 @x
       <para>If you prefer another editor&mdash;such as Emacs, Joe, or
       Nano&mdash;please refer to <ulink
-      url="&blfs-root;view/svn/postlfs/editors.html"/> for suggested
+      url="&blfs-root;view/&short-version;/postlfs/editors.html"/> for suggested
       installation instructions.</para>
 @y
       <para>
       もし Emacs、Joe、Nano など他のエディターを用いたい場合は <ulink
-      url="&blfs-root;view/svn/postlfs/editors.html"/> に示される手順に従ってインストールしてください。
+      url="&blfs-root;view/&short-version;/postlfs/editors.html"/> に示される手順に従ってインストールしてください。
       </para>
 @z
 
@@ -149,13 +149,13 @@
     additional libraries to be installed. For more information on this
     process, refer to the Vim documentation and the Vim installation page
     in the BLFS book at <ulink
-    url="&blfs-root;view/svn/postlfs/editors.html#postlfs-editors-vim"/>.</para>
+    url="&blfs-root;view/&short-version;/postlfs/vim.html"/>.</para>
 @y
     <para>
     LFS システムに対して X ウィンドウシステムをインストールする場合 X のインストールの後で Vim を再コンパイルする必要があります。
     Vim には GUI 版があり X や他のライブラリがインストールされていて 初めて構築できるためです。
     この作業の詳細については Vim のドキュメントと BLFS ブックの <ulink
-    url="&blfs-root;view/svn/postlfs/editors.html#postlfs-editors-vim"/> に示されている Vim のインストール説明のページを参照してください。
+    url="&blfs-root;view/&short-version;/postlfs/vim.html"/> に示されている Vim のインストール説明のページを参照してください。
     </para>
 @z
 

@@ -63,7 +63,7 @@
 @z
 
 @x
-    <para>Only a few of the utilities and libraries, need to be installed at this
+    <para>Only a few of the utilities and libraries need to be installed at this
     time:</para>
 @y
     <para>

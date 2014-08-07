@@ -83,10 +83,10 @@
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @z
 
-@x Perl Libc Patch
-        <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
+@x Mpfr Upstream Fixes Patch
+        <para>Download: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&perl-libc-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
 @z
 
 @x Readline Upstream Fixes Patch

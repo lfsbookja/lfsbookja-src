@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,13 +31,13 @@
       <para>There are instructions to build this package in the BLFS book if you
       need to build the RPC server or additional language bindings. The
       additional language bindings will require additional packages to be
-      installed. See <ulink url="&blfs-root;view/svn/server/databases.html#db"/>
+      installed. See <ulink url="&blfs-root;view/&short-version;/server/databases.html#db"/>
       for suggested installation instructions.</para>
 @y
       <para>There are instructions to build this package in the BLFS book if you
       need to build the RPC server or additional language bindings. The
       additional language bindings will require additional packages to be
-      installed. See <ulink url="&blfs-root;view/svn/server/databases.html#db"/>
+      installed. See <ulink url="&blfs-root;view/&short-version;/server/databases.html#db"/>
       for suggested installation instructions.</para>
 @z
 
@@ -40,7 +49,7 @@
       installed, not with GDBM. If you fully understand the risks versus
       benefits of using GDBM and wish to use it anyway, see the BLFS
       instructions located at <ulink
-      url="&blfs-root;view/svn/general/gdbm.html"/></para>
+      url="&blfs-root;view/&short-version;/general/gdbm.html"/></para>
 @y
       <para>Also, GDBM <emphasis>could</emphasis> be used in place of Berkeley
       DB to satisfy Man-DB. However, since Berkeley DB is considered a core part
@@ -49,7 +58,7 @@
       installed, not with GDBM. If you fully understand the risks versus
       benefits of using GDBM and wish to use it anyway, see the BLFS
       instructions located at <ulink
-      url="&blfs-root;view/svn/general/gdbm.html"/></para>
+      url="&blfs-root;view/&short-version;/general/gdbm.html"/></para>
 @z
 
 @x

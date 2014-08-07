@@ -60,7 +60,7 @@
 @z
 
 @x
-      <segtitle>Installed programs</segtitle>
+      <segtitle>Installed program</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
 @z

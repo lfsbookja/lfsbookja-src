@@ -68,12 +68,12 @@
 @z
 
 @x
-    <para>Add an upstream patch to use gcc's link time optimization (LTO) 
-    the default:</para>
+    <para>Add an upstream patch to use GCC's link time optimization (LTO) 
+    by default:</para>
 @y
     <para>
     アップストリームが提供するパッチを適用します。
-    これにより gcc のリンク時における最適化オプション (LTO) をデフォルトにします。
+    これにより GCC のリンク時における最適化オプション (LTO) をデフォルトにします。
     </para>
 @z
 

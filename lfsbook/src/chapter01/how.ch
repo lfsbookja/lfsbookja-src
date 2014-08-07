@@ -21,7 +21,7 @@
 
 @x
   <para>The LFS system will be built by using an already installed
-  Linux distribution (such as Debian, Mandriva, Red Hat, or SUSE). This
+  Linux distribution (such as Debian, OpenMandriva, Fedora, or openSUSE). This
   existing Linux system (the host) will be used as a starting point to
   provide necessary programs, including a compiler, linker, and shell,
   to build the new system. Select the <quote>development</quote> option
@@ -29,7 +29,7 @@
   tools.</para>
 @y
   <para>
-  LFS システムは、既にインストールされている Linux ディストリビューション (Debian、Mandriva、Red Hat、SUSE など) を利用して構築していきます。
+  LFS システムは、既にインストールされている Linux ディストリビューション (Debian、OpenMandriva、Fedora、openSUSE など) を利用して構築していきます。
   この既存の Linux システム（ホスト）は、LFS 構築のためにさまざまなプログラム類を利用する基盤となります。
   プログラム類とはコンパイラー、リンカー、シェルなどです。
   したがってそのディストリビューションのインストール時には<quote>開発 (development)</quote>オプションを選択し、それらのプログラム類が利用できるようにしておく必要があります。

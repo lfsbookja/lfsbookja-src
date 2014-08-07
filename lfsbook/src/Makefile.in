@@ -598,6 +598,7 @@ aux-file-data.sh: $(BOOKdir)/aux-file-data.sh
 #	sed -i '/.\/make-aux-files.sh/d' $@
 make-aux-files.sh: $(BOOKdir)/make-aux-files.sh $(srcdir)/make-aux-files.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
+	chmod +x $@
 pdf-fixups.sh: $(BOOKdir)/pdf-fixups.sh
 	cp -p $^ $@
 

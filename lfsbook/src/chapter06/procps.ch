@@ -130,10 +130,10 @@
 @z
 
 @x pidof
-          <para>Looks up processes based on their name and other attributes</para>
+          <para>Reports the PIDs of the given programs</para>
 @y
           <para>
-          プロセス名や他の属性に基づいてプロセスを調べます。
+          指定されたプログラムの PID を表示します。
           </para>
 @z
 

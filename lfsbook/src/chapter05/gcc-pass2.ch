@@ -39,7 +39,7 @@
 
 @x
     <para>Our first build of GCC has installed a couple of internal system
-    headers.  Normally one of them, <filename>limits.h</filename> will in turn
+    headers.  Normally one of them, <filename>limits.h</filename>, will in turn
     include the corresponding system <filename>limits.h</filename> header, in
     this case, <filename>/tools/include/limits.h</filename>. However, at the
     time of the first build of gcc <filename>/tools/include/limits.h</filename>

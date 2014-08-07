@@ -307,13 +307,13 @@
 
 @x udev_retry
           <para>Retries failed udev uevents, and copies generated rules
-          files from to
+          files from <filename class="directory">/run/udev</filename> to
           <filename class="directory">/etc/udev/rules.d</filename> if required</para>
 @y
           <para>
           Udev の uevent が失敗した場合にこれを再実行します。
           そして必要に応じて、生成されたルールファイルを <filename
-          class="directory">/dev/.udev</filename> から <filename
+          class="directory">/run/udev</filename> から <filename
           class="directory">/etc/udev/rules.d</filename> へコピーします。
           </para>
 @z

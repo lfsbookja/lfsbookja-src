@@ -117,17 +117,13 @@
 @x
   <para>The <envar>LC_ALL</envar> variable controls the localization of certain
   programs, making their messages follow the conventions of a specified country.
-  If the host system uses a version of Glibc older than 2.2.4, having
-  <envar>LC_ALL</envar> set to something other than <quote>POSIX</quote> or
-  <quote>C</quote> (during this chapter) may cause issues if you exit the chroot
-  environment and wish to return later. Setting <envar>LC_ALL</envar> to
-  <quote>POSIX</quote> or <quote>C</quote> (the two are equivalent) ensures that
-  everything will work as expected in the chroot environment.</para>
+  Setting <envar>LC_ALL</envar> to <quote>POSIX</quote> or <quote>C</quote>
+  (the two are equivalent) ensures that everything will work as expected in
+  the chroot environment.</para>
 @y
   <para>
   <envar>LC_ALL</envar> 変数は特定のプログラムが扱う国情報を制御します。
   そのプログラムが出力するメッセージを、指定された国情報に基づいて構成します。
-  ホストシステムの Glibc が 2.2.4 よりも古いものであって、この <envar>LC_ALL</envar> を (本章の作業中に)<quote>POSIX</quote>でもなく<quote>C</quote>でもない値にセットしていた場合、chroot 環境からの exit と再度の環境移行を行う際に問題が発生します。
   <envar>LC_ALL</envar> 変数は<quote>POSIX</quote>か<quote>C</quote>にセットしてください。
   (両者は同じです。) そのようにセットしておけば、chroot 環境下での作業が問題なく進められます。
   </para>

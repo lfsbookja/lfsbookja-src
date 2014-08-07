@@ -38,8 +38,7 @@
 @z
 
 @x
-          <para>This sets the directory where the HTML documentation will be
-          installed to.</para>
+          <para>This sets the installation directory for the HTML documentation.</para>
 @y
           <para>
           HTML ドキュメントをインストールするディレクトリを指定します。
@@ -47,15 +46,9 @@
 @z
 
 @x
-    <para>Compile the package:</para>
+    <para>Compile the package and generate the HTML documentation:</para>
 @y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Generate the HTML documentation:</para>
-@y
-    <para>HTML ドキュメントを生成します。</para>
+    <para>パッケージをコンパイルし HTML ドキュメントを生成します。</para>
 @z
 
 @x
@@ -65,15 +58,9 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package and its documentation:</para>
 @y
-    <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Install the HTML documentation:</para>
-@y
-    <para>HTML ドキュメントをインストールします。</para>
+    <para>パッケージとドキュメントをインストールします。</para>
 @z
 
 @x

@@ -34,15 +34,14 @@
     <para>The FHS recommends using the <filename
     class="directory">/var/lib/hwclock</filename> directory instead of the
     usual <filename class="directory">/etc</filename> directory as the
-    location for the <filename>adjtime</filename> file. To make the
-    <command>hwclock</command> program FHS-compliant, run the
-    following:</para>
+    location for the <filename>adjtime</filename> file.  First create a directory
+    to enable storage for the <command>hwclock</command> program:</para>
 @y
     <para>
     FHS では <filename>adjtime</filename> ファイルの配置場所として <filename
     class="directory">/etc</filename> ディレクトリではなく <filename
     class="directory">/var/lib/hwclock</filename> ディレクトリを推奨しています。
-    <command>hwclock</command> プログラムを FHS 準拠とするために以下を実行します。
+    <command>hwclock</command> プログラムが利用するディレクトリをまず生成します。
     </para>
 @z
 
@@ -90,18 +89,6 @@
 @z
 
 @x
-    <note><para>Two tests, last/ipv6 and last/last, fail in the chroot environment
-    due to the DNS resolver not being active yet.  If the tests are rerun after
-    booting, they pass.</para></note>
-@y
-    <note><para>
-    last/ipv6 と last/last という二つのテストは、chroot 環境では失敗します。
-    これは DNS リゾルバーがまだ稼動していないためです。
-    ブート後にテストを再実行すれば成功します。
-    </para></note>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
@@ -125,12 +112,12 @@
 
 @x
         <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart, dmesg,
+        chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
         eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
         last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lslocks, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        lslocks, lslogins, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
         more, mount, mountpoint, namei, partx, pg, pivot_root, prlimit, raw,
         readprofile, rename, renice, resizepart, rev, rtcwake, script,
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
@@ -140,16 +127,16 @@
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
 
-        <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
-        /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
+        <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
+        /usr/include/uuid, /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart, dmesg,
+        chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
         eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (last へのリンク),
         ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lslocks, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        lslocks, lslogins, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
         more, mount, mountpoint, namei, partx, pg, pivot_root, prlimit, raw,
         readprofile, rename, renice, resizepart, rev, rtcwake, script,
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
@@ -159,8 +146,8 @@
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
 
-        <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
-        /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
+        <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
+        /usr/include/uuid, /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
 @z
 
 @x
@@ -282,15 +269,6 @@
 @y
           <para>
           ハードリセットまたはソフトリセットを行うために Ctrl+Alt+Del キー押下時の機能を設定します。
-          </para>
-@z
-
-@x cytune
-          <para>Tunes the parameters of the serial line drivers for
-          Cyclades cards</para>
-@y
-          <para>
-          Cyclades カード用のシリアルラインドライバーのパラメーターを設定します。
           </para>
 @z
 

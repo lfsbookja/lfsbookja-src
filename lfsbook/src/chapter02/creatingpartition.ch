@@ -96,20 +96,20 @@
 @x
   <note><para>For experienced users, other partitioning schemes are possible.
   The new LFS system can be on a software <ulink
-  url="&blfs-root;/view/svn/postlfs/raid.html">RAID</ulink> array or an <ulink
-  url="&blfs-root;/view/svn/postlfs/aboutlvm.html">LVM</ulink> logical volume.
+  url="&blfs-root;/view/&short-version;/postlfs/raid.html">RAID</ulink> array or an <ulink
+  url="&blfs-root;/view/&short-version;/postlfs/aboutlvm.html">LVM</ulink> logical volume.
   However, some of these options require an <ulink
-  url="&blfs-root;/view/svn/postlfs/initramfs.html">initramfs</ulink>, which is
+  url="&blfs-root;/view/&short-version;/postlfs/initramfs.html">initramfs</ulink>, which is
   an advanced topic.  These partitioning methodologies are not recommended for
   first time LFS users.</para></note>
 @y
   <note><para>
   上級者の方であれば別のパーティション設定も可能です。
   最新の LFS システムは、ソフトウェア <ulink
-  url="&blfs-root;/view/svn/postlfs/raid.html">RAID</ulink> アレーや、<ulink
-  url="&blfs-root;/view/svn/postlfs/aboutlvm.html">LVM</ulink> 論理ボリュームを利用することができます。
+  url="&blfs-root;/view/&short-version;/postlfs/raid.html">RAID</ulink> アレーや、<ulink
+  url="&blfs-root;/view/&short-version;/postlfs/aboutlvm.html">LVM</ulink> 論理ボリュームを利用することができます。
   ただしこれらを実現するには <ulink
-  url="&blfs-root;/view/svn/postlfs/initramfs.html">initramfs</ulink> が必要であり、高度なトピックです。
+  url="&blfs-root;/view/&short-version;/postlfs/initramfs.html">initramfs</ulink> が必要であり、高度なトピックです。
   こういったパーティション設定は、LFS 初心者にはお勧めしません。
   </para></note>
 @z

@@ -71,16 +71,7 @@
 
 @x
     <para>The directory tree is based on the Filesystem Hierarchy Standard (FHS)
-    (available at <ulink url="http://www.pathname.com/fhs/"/>). In addition to
-    the FHS, we create compatibility symlinks for the <filename
-    class="directory">man</filename>, <filename
-    class="directory">doc</filename>, and <filename
-    class="directory">info</filename> directories since many packages still try
-    to install their documentation into <filename
-    class="directory">/usr/&lt;directory&gt;</filename> or <filename
-    class="directory">/usr/local/&lt;directory&gt;</filename> as opposed to
-    <filename class="directory">/usr/share/&lt;directory&gt;</filename> or
-    <filename class="directory">/usr/local/share/&lt;directory&gt;</filename>.
+    (available at <ulink url="http://www.pathname.com/fhs/"/>).
     The FHS also stipulates the existence of <filename
     class="directory">/usr/local/games</filename> and <filename
     class="directory">/usr/share/games</filename>. The FHS is not precise as to
@@ -91,14 +82,7 @@
 @y
     <para>
     本書のディレクトリ構成は標準ファイルシステム構成 (Filesystem Hierarchy Standard; FHS) に基づいています。(その情報は <ulink 
-    url="http://www.pathname.com/fhs/"/> に示されています。) FHS に加えて <filename
-    class="directory">man</filename>、<filename class="directory">doc</filename>、<filename
-    class="directory">info</filename> の各ディレクトリに対するシンボリックリンクも作成します。
-    これは多くのパッケージがドキュメントファイルをインストールする先として <filename
-    class="directory">/usr/share/</filename>&lt;ディレクトリ&gt; や <filename
-    class="directory">/usr/local/share/</filename>&lt;ディレクトリ&gt;ではなく、いまだに <filename
-    class="directory">/usr/</filename>&lt;ディレクトリ&gt; や <filename
-    class="directory">/usr/local/</filename>&lt;ディレクトリ&gt;としているためです。
+    url="http://www.pathname.com/fhs/"/> に示されています。)
     また FHS では <filename class="directory">/usr/local/games</filename> や <filename
     class="directory">/usr/share/games</filename> を規定していますが、一方で <filename
     class="directory">/usr/local/share</filename> については明確なものがありません。

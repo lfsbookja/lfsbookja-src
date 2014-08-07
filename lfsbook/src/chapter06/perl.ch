@@ -40,15 +40,16 @@
 @z
 
 @x
-    <para>This version of Perl now builds the Compress::Raw::Zlib module. By
-    default Perl will use an internal copy of the Zlib source for the build.
-    Issue the following command so that Perl will use the Zlib library
+    <para>This version of Perl now builds the Compress::Raw::Zlib and 
+    Compress::Raw::BZip2 modules. By
+    default Perl will use an internal copy of the sources for the build.
+    Issue the following command so that Perl will use the libraries
     installed on the system:</para>
 @y
     <para>
-    ここでビルドするバージョンの Perl は Compress::Raw::Zlib モジュールをビルドします。
-    デフォルトではビルドの際に Zlib のソースを内部的にコピーします。
-    以下のコマンドは、既にインストールされている Zlib ライブラリを用いるようにします。
+    ここでビルドするバージョンの Perl は Compress::Raw::Zlib と Compress::Raw::Bzip2 モジュールをビルドします。
+    デフォルトではビルドの際にそれらのソースを内部的にコピーします。
+    以下のコマンドは、既にインストールされているライブラリを用いるようにします。
     </para>
 @z
 
@@ -122,9 +123,9 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package and clean up:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>パッケージはインストールしクリーンアップします。</para>
 @z
 
 @x

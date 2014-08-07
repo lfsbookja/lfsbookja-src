@@ -7,6 +7,7 @@
 ##
 BOOKdir = @abs_bookdir@/chapter02
 CHANGE_FILES = \
+        aboutlfs.ch           \
 	chapter02.ch          \
 	creatingfilesystem.ch \
 	creatingpartition.ch  \
@@ -26,6 +27,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+aboutlfs.xml:           $(BOOKdir)/$@ $(srcdir)/aboutlfs.ch
 chapter02.xml:          $(BOOKdir)/$@ $(srcdir)/chapter02.ch
 creatingfilesystem.xml: $(BOOKdir)/$@ $(srcdir)/creatingfilesystem.ch
 creatingpartition.xml:  $(BOOKdir)/$@ $(srcdir)/creatingpartition.ch

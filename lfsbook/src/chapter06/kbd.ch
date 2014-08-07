@@ -287,31 +287,33 @@
 @z
 
 @x psfaddtable
-          <para>A link to <command>psfxtable</command></para>
+          <para>Adds a Unicode character table to a console font</para>
 @y
           <para>
-          <command>psfxtable</command> へのリンク。
+          Unicode キャラクターテーブルをコンソールフォントに追加します。
           </para>
 @z
 
 @x psfgettable
-          <para>A link to <command>psfxtable</command></para>
+          <para>Extracts the embedded Unicode character table from a console
+          font</para>
 @y
           <para>
-          <command>psfxtable</command> へのリンク。
+          コンソールフォントから埋め込まれた Unicode キャラクターテーブルを抽出します。
           </para>
 @z
 
 @x psfstriptable
-          <para>A link to <command>psfxtable</command></para>
+          <para>Removes the embedded Unicode character table from a console
+          font</para>
 @y
           <para>
-          <command>psfxtable</command> へのリンク。
+          コンソールフォントから埋め込められた Unicode キャラクターテーブルを削除します。
           </para>
 @z
 
 @x psfxtable
-          <para>Handle Unicode character tables for console fonts</para>
+          <para>Handles Unicode character tables for console fonts</para>
 @y
           <para>
           コンソールフォント用のユニコード文字テーブルを取り扱います。

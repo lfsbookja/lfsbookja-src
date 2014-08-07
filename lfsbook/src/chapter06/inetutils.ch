@@ -29,7 +29,7 @@
 
 @x
     <para>Create a definition to allow the <command>ifconfig</command> program
-    to build properly.</para>
+    to build properly:</para>
 @y
     <para>
     <command>ifconfig</command> プログラムが適切にビルドできるような定義を生成します。
@@ -58,16 +58,6 @@
           このオプションは <command>logger</command> プログラムをインストールしないようにします。
           このプログラムはシステムログデーモンに対してメッセージ出力を行うスクリプトにて利用されます。
           ここでこれをインストールしないのは、後に Util-linux パッケージにおいて、以前のバージョンをインストールするためです。
-          </para>
-@z
-
-@x --disable-syslogd
-          <para>This option prevents Inetutils from installing the System Log
-          Daemon, which is installed with the Sysklogd package.</para>
-@y
-          <para>
-          このオプションは Inetutils がシステムログデーモンをインストールしないようにします。
-          これらは Sysklogd パッケージにおいてインストールします。
           </para>
 @z
 

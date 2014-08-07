@@ -74,7 +74,7 @@
 @z
 
 @x
-      <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed library</segtitle>
 @y
       <segtitle>&InstalledLibrary;</segtitle>
 @z

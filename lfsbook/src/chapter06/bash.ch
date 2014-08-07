@@ -41,21 +41,12 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+      <title>The meaning of the new configure option:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
-          <para>This option designates the directory into which HTML formatted
-          documentation will be installed.</para>
-@y
-          <para>
-          このオプションは HTML ドキュメントをインストールするディレクトリを指定します。
-          </para>
-@z
-
-@x
+@x --with-installed-readline
           <para>This option tells Bash to use the <filename
           class="libraryfile">readline</filename> library that is already
           installed on the system rather than using its own readline

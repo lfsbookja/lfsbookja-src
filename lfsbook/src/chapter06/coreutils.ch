@@ -38,12 +38,16 @@
 
 @x
     <para>POSIX requires that programs from Coreutils recognize character
-    boundaries correctly even in multibyte locales. The following patch
-    fixes this non-compliance and other internationalization-related bugs:</para>
+    boundaries correctly even in multibyte locales. The following patch fixes
+    this non-compliance and other internationalization-related bugs.
+    Afterwards make sure the timestamp for <filename>Makefile.in</filename> is
+    later than all other files to prevent a <command>make</command>
+    error:</para>
 @y
     <para>
     POSIX では Coreutils により生成されるプログラムは、マルチバイトロケールであっても、文字データを正しく取り扱うことを求めています。
     以下のパッチは標準に準拠することと、国際化処理に関連するバグを解消することを行います。
+    これを行うことにより <filename>Makefile.in</filename> のタイムスタンプがどのファイルよりも最新となり、<command>make</command> 実行時のエラーを回避されます。
     </para>
 @z
 

@@ -43,9 +43,9 @@
 @z
 
 @x
-    <para>Compile the package:</para>
+    <para>Compile the package and generate the HTML documentation:</para>
 @y
-    <para>&CompileThePackage;</para>
+    <para>パッケージをコンパイルし HTML ドキュメントを生成します。</para>
 @z
 
 @x
@@ -67,15 +67,9 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package and its documentation:</para>
 @y
-    <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Install the documentation:</para>
-@y
-    <para>ドキュメントをインストールします。</para>
+    <para>パッケージとドキュメントをインストールします。</para>
 @z
 
 @x

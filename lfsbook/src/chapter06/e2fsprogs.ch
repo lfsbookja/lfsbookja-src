@@ -35,15 +35,6 @@
 @z
 
 @x
-    <para>First fix some problems with running regression tests in the LFS chroot
-    environment:</para>
-@y
-    <para>
-    LFS の chroot 環境にて正規表現テストの実行が失敗することがあるため修正します。
-    </para>
-@z
-
-@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
@@ -125,9 +116,15 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>To set up and run the test suite we need to first link some 
+    libraries from /tools/lib to a location where the test programs look.
+    To run the tests, issue:</para>
 @y
-    <para>コンパイル結果をテストするには以下を実行します。</para>
+    <para>
+    テストスイートを実行するにはまずライブラリへのリンクを作成する必要があります。
+    テストプログラムが参照するライブラリを /tools/lib 内のライブラリとするためです。
+    そしてコンパイル結果をテストするには以下を実行します。
+    </para>
 @z
 
 @x
@@ -135,17 +132,13 @@
     If you do not have significantly more RAM than this, be sure to enable
     sufficient swap space for the test. See <xref
     linkend="space-creatingfilesystem"/> and <xref linkend="space-mounting"/>
-    for details on creating and enabling swap space.  Additionally,
-    three tests try to allocate a two terabyte partition and will fail
-    unless you have at least that much unused disk space available.</para>
+    for details on creating and enabling swap space.</para>
 @y
     <para>
     E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
     この容量を確保できるだけの RAM がない場合は、十分なスワップ領域が利用可能であることを確認してください。
     スワップ領域の生成と有効化については <xref
     linkend="space-creatingfilesystem"/>と <xref linkend="space-mounting"/>を参照してください。
-    またテストの中に、以下のようなものが三つあります。
-    そのテストとは、テラバイトの容量を有する二つのパーティションを割り当てようとし、未使用のそのようなディスクがなければテストに失敗するというものです。
     </para>
 @z
 
@@ -207,7 +200,7 @@
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledLibrary;</segtitle>

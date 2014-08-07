@@ -56,12 +56,14 @@
 
 @x
     <para>Note that for other languages, there are some prerequisites that
-    are not available. See the BLFS Book for instructions on how to
-    build all the GCC supported languages.</para>
+    are not yet available. See the
+    <ulink url="&blfs-root;view/&short-version;/general/gcc.html">BLFS Book</ulink>
+    for instructions on how to build all of GCC's supported languages.</para>
 @y
     <para>
     他のプログラミング言語は、また別の依存パッケージなどを要しますが、現時点では準備できていません。
-    GCC がサポートする他のプログラム言語の構築方法については BLFS ブックの説明を参照してください。
+    GCC がサポートする他のプログラム言語の構築方法については <ulink
+    url="&blfs-root;view/&short-version;/general/gcc.html">BLFS ブック</ulink> の説明を参照してください。
     </para>
 @z
 
@@ -154,18 +156,17 @@
 
 @x
     <para>A few unexpected failures cannot always be avoided. The GCC developers
-    are usually aware of these issues, but have not resolved them yet. In
+    are usually aware of these issues, but have not resolved them yet. <!-- In
     particular, the <filename class="libraryfile">libmudflap</filename> tests
     are known to be particularly problematic as a result of a bug in GCC
-    (<ulink url="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=20003"/>).
+    (<ulink url="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=20003"/>). -->
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
 @y
     <para>
     テストに失敗することがありますが、これを回避することはできません。
     GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
-    特に <filename class="libraryfile">libmudflap</filename> のテストは大いに問題があり GCC のバグとして知られています。
-    (<ulink url="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=20003"/>) この URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
+    上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
 @z
 
@@ -289,7 +290,7 @@
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
         libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
-        liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
+        liblto_plugin.so, 
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a and libtsan.{a,so}</seg>
 
@@ -301,7 +302,7 @@
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
         libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
-        liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
+        liblto_plugin.so, 
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, libtsan.{a,so}</seg>
 

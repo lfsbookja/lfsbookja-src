@@ -105,21 +105,14 @@
 @z
 
 @x
-        <para>If one of the toolchain packages (Glibc, GCC or Binutils) needs
-        to be upgraded to a newer minor version, it is safer to rebuild LFS.
-        Though you <emphasis>may</emphasis> be able to get by rebuilding all
-        the packages in their dependency order, we do not recommend it. For
-        example, if glibc-2.2.x needs to be updated to glibc-2.3.x, it is safer
-        to rebuild. For micro version updates, a simple reinstallation usually
-        works, but is not guaranteed. For example, upgrading from glibc-2.3.4
-        to glibc-2.3.5 will not usually cause any problems.</para>
+        <para>If Glibc needs to be upgraded to a newer version, (e.g.  from
+        glibc-2.19 to glibc-2.20, it is safer to rebuild LFS.  Though you
+        <emphasis>may</emphasis> be able to rebuild all the packages in their
+        dependency order, we do not recommend it.  </para>
 @y
         <para>
-        ツールチェーン (Glibc、GCC、Binutils) のいずれかについて、マイナーバージョンをアップグレードする必要がある場合は、LFS を再構築するのが無難です。
-        この場合、すべてのパッケージの依存関係を考慮して順番に作り直せば実現できる<emphasis>はず </emphasis> ですが、これはあまりお勧めしません。
-        例えば glibc-2.2.x を glibc-2.3.x にアップグレードする必要がある場合は、再構築するのが無難です。
-        マイクロバージョンをアップグレードする場合は、もっと単純にそのパッケージをインストールし直すだけで動作すると思いますが、保証はありません。
-        例えば glibc-2.3.4 を glibc-2.3.5 にアップグレードする場合、普通は何も問題ないでしょう。
+        Glibc を新しいバージョン (例えば glibc-2.19 から glibc-2.20) にアップグレードする必要が発生した場合は LFS を再構築することが安全です。
+        必要なパッケージの依存順を知っていれば再構築できるかもしれませんが、これはお勧めしません。
         </para>
 @z
 

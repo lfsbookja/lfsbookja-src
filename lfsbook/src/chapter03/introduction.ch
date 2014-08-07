@@ -173,9 +173,9 @@ wget -N -i wget-list.orig -P $LFS/sources</userinput></screen>
 @z
 
 @x
-  <para>Additionally, starting with LFS-7.0, there is a separate file, 
-  <ulink url="../md5sums">md5sums</ulink>, can be used to verify that all
-  the correct packages are available before proceeding.  Place that file in 
+  <para>Additionally, starting with LFS-7.0, there is a separate file,
+  <ulink url="../md5sums">md5sums</ulink>, which can be used to verify that all
+  the correct packages are available before proceeding.  Place that file in
   <filename class="directory">$LFS/sources</filename> and run:</para>
 @y
   <para>

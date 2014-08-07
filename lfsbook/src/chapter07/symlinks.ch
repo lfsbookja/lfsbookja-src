@@ -208,7 +208,7 @@
     fixable by creating Udev rules for custom persistent symlinks.
     The case of network cards is covered separately in
     <xref linkend="ch-scripts-network"/>, and sound card configuration can
-    be found in <ulink url="&blfs-root;view/svn/postlfs/devices.html">BLFS</ulink>.</para>
+    be found in <ulink url="&blfs-root;view/&short-version;/postlfs/devices.html">BLFS</ulink>.</para>
 @y
     <para>
     <xref linkend="ch-scripts-udev"/>で説明したように、<filename
@@ -216,7 +216,8 @@
     例えば USB 接続のウェブカメラと TV チューナーがあったとして、<filename>/dev/video0</filename> がウェブカメラを、また <filename>/dev/video1</filename> がチューナーをそれぞれ参照していたとしても、システム起動後はその順が逆になることがあります。
     サウンドカードやネットワークカードを除いた他のハードウェアであれば、Udev ルールを適切に記述することで、固定的なシンボリックリンクを作り出すことができます。
     ネットワークカードについては、別途 <xref linkend="ch-scripts-network"/>にて説明しています。
-    またサウンドカードの設定方法は <ulink url="&blfs-root;view/svn/postlfs/devices.html">BLFS</ulink> にて説明しています。
+    またサウンドカードの設定方法は <ulink
+    url="&blfs-root;view/&short-version;/postlfs/devices.html">BLFS</ulink> にて説明しています。
     </para>
 @z
 

@@ -224,12 +224,12 @@
 
 @x Expat
         <para>This package contains programs for parsing XML.  It is
-        required for systemd.
+        required for XML-Parser.
         </para>
 @y
         <para>
         このパッケージは XML を解析するプログラムを提供します。
-        systemd がこれを必要とします。
+        XML-Parser がこれを必要とします。
         </para>
 @z
 
@@ -342,12 +342,12 @@
 
 @x Gperf
         <para>This package a program that generates a perfect hash function 
-        from a key set.  It is required for systemd.
+        from a key set.  It is required for Eudev.
         </para>
 @y
         <para>
         このパッケージは、キーセットを利用して完全なハッシュ関数を生成するプログラムを提供します。
-        systemd がこれを必要としています。
+        Eudev がこれを必要としています。
         </para>
 @z
 
@@ -733,16 +733,16 @@
         </para>
 @z
 
-@x Udev
-        <para>This package contains programs for dynamic creation of 
-        device nodes.  It is an alternative to creating thousands of
-        static devices in the /dev directory.</para>
-@y
-        <para>
-        このパッケージはデバイスノードの動的生成を行うプログラムを提供します。
-        /dev ディレクトリに、デバイスを静的にいくつも作り出す方法を取らないためのものです。
-        </para>
-@z
+% @x Udev
+%         <para>This package contains programs for dynamic creation of 
+%         device nodes.  It is an alternative to creating thousands of
+%         static devices in the /dev directory.</para>
+% @y
+%         <para>
+%         このパッケージはデバイスノードの動的生成を行うプログラムを提供します。
+%         /dev ディレクトリに、デバイスを静的にいくつも作り出す方法を取らないためのものです。
+%         </para>
+% @z
 
 @x Util-linux-ng
         <para>This package contains miscellaneous utility programs. 
@@ -777,9 +777,9 @@
 @z
 
 @x Xz utils
-        <para>This package contains programs for compressing and decompressing 
+        <para>This package contains programs for compressing and decompressing
         files.  It provides the highest compression generally available
-        and is useful for decompressing packages XZ or LZMA format.</para>
+        and is useful for decompressing packages in XZ or LZMA format.</para>
 @y
         <para>
         このパッケージはファイルの圧縮、伸張 (解凍) を行うプログラムを提供します。

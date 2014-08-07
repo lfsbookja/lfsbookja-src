@@ -30,13 +30,14 @@
 
 @x
       <para>If you would like to enforce the use of strong passwords, refer to
-      <ulink url="&blfs-root;view/svn/postlfs/cracklib.html"/> for installing
+      <ulink url="&blfs-root;view/&short-version;/postlfs/cracklib.html"/> for installing
       CrackLib prior to building Shadow. Then add
       <parameter>--with-libcrack</parameter> to the <command>configure</command>
       command below.</para>
 @y
       <para>
-      もっと強力なパスワードを利用したい場合は <ulink url="&blfs-root;view/svn/postlfs/cracklib.html"/> にて示している Cracklib パッケージを参照してください。
+      もっと強力なパスワードを利用したい場合は <ulink
+      url="&blfs-root;view/&short-version;/postlfs/cracklib.html"/> にて示している Cracklib パッケージを参照してください。
       Cracklib パッケージは Shadow パッケージよりも前にインストールします。
       その場合 Shadow パッケージの <command>configure</command> スクリプトでは <parameter>--with-libcrack</parameter> パラメーターをつけて実行する必要があります。
       </para>
