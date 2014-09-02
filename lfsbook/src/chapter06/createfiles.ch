@@ -34,6 +34,102 @@
 @z
 
 @x
+    <title>The purpose of each link:</title>
+@y
+    <title>各リンクの目的</title>
+@z
+
+@x /bin/bash
+        <para>Many <command>bash</command> scripts specify
+        <filename>/bin/bash</filename>.</para>
+@y
+        <para>
+        <command>bash</command> スクリプトはたいてい <filename>/bin/bash</filename> として記述されます。
+        </para>
+@z
+
+@x /bin/cat
+        <para>This pathname is hard-coded into Glibc's configure script.</para>
+@y
+        <para>
+        このパス名は Glibc の configure スクリプトにてハードコーディングされています。
+        </para>
+@z
+
+@x /bin/echo
+        <para>This is to satisfy one of the tests in Glibc's test suite, which
+        expects <filename>/bin/echo</filename>.</para>
+@y
+        <para>
+        Glibc のテストスイートの中に <filename>/bin/echo</filename> を用いているものがあり、これを成功させるためです。
+        </para>
+@z
+
+@x /bin/pwd
+        <para>Some <command>configure</command> scripts, particularly Glibc's,
+        have this pathname hard-coded.</para>
+@y
+        <para>
+        特に Glibc などの <command>configure</command> スクリプトにて、このパス名がハードコーディングされています。
+        </para>
+@z
+
+@x /bin/stty
+        <para>This pathname is hard-coded into Expect, therefore it is needed
+        for Binutils and GCC test suites to pass.</para>
+@y
+        <para>
+        このパス名は Expect にてハードコーディングされています。
+        したがって Binutils と GCC のテストスイートを成功させるために必要となります。
+        </para>
+@z
+
+@x /usr/bin/perl
+        <para>Many Perl scripts hard-code this path to the
+        <command>perl</command> program.</para>
+@y
+        <para>
+        <command>perl</command> コマンドに対して Perl スクリプトはたいていこのパス名を用いています。
+        </para>
+@z
+
+@x /usr/lib/libgcc_s.so{,.1}
+        <para>Glibc needs this for the pthreads library to work.</para>
+@y
+        <para>
+        pthreads ライブラリが正常動作するように Glibc にとって必要となります。
+        </para>
+@z
+
+@x /usr/lib/libstdc++{,.6}
+        <para>This is needed by several tests in Glibc's test suite, as well as
+        for C++ support in GMP.</para>
+@y
+        <para>
+        Glibc のテストスイート、例えば GMP における C++ サポートなどにおいて、これを必要とするものがあります。
+        </para>
+@z
+
+@x /usr/lib/libstdc++.la
+        <para>This prevents a <filename class="directory">/tools</filename>
+        reference that would otherwise be in
+        <filename>/usr/lib/libstdc++.la</filename> after GCC is installed.</para>
+@y
+        <para>
+        GCC がインストールされた後には <filename
+        class="directory">/tools</filename> への参照ではなく、<filename>/usr/lib/libstdc++.la</filename> を必要とします。
+        </para>
+@z
+
+@x /bin/sh
+        <para>Many shell scripts hard-code <filename>/bin/sh</filename>.</para>
+@y
+        <para>
+        シェルスクリプトはたいてい <filename>/bin/sh</filename> がハードコーディングされています。
+        </para>
+@z
+
+@x
   <para>Historically, Linux maintains a list of the mounted file systems in the
   file <filename>/etc/mtab</filename>. Modern kernels maintain this list
   internally and exposes it to the user via the <filename

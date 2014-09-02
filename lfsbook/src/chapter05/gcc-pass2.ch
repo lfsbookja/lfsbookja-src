@@ -61,22 +61,6 @@
     </para>
 @z
 
-% @x
-%     <para>For x86 machines, a bootstrap build of GCC uses the
-%     <option>-fomit-frame-pointer</option> compiler flag.  Non-bootstrap builds
-%     omit this flag by default, and the goal should be to produce a compiler
-%     that is exactly the same as if it were bootstrapped.  Apply the following
-%     <command>sed</command> command to force the build to use the flag:</para>
-% @y
-%     <para>
-%     x86 マシンにおいてブートストラップビルドを行うと、コンパイラーフラグ
-%     <option>-fomit-frame-pointer</option> が設定されます。
-%     しかしブートストラップではないビルドの場合はデフォルトではこのフラグが無効化されてしまいます。
-%     ここで実現したいのは、ブートストラップビルドを行った場合とまったく同じコンパイラーをビルドすることです。
-%     そこで以下の <command>sed</command> コマンドにより、強制的に上のフラグを利用するようにします。
-%     </para>
-% @z
-
 @x
     <para>Once again, change the location of GCC's default dynamic linker to
     use the one installed in <filename
@@ -96,6 +80,14 @@
     <para>
     GCC を初めてビルドする際には GMP、MPFR、MPC の各パッケージを必要とします。
     tarball を解凍して、所定のディレクトリ名に移動させます。
+    </para>
+@z
+
+@x
+    <para>As in the first build of GCC, fix a problem identified upstream:</para>
+@y
+    <para>
+    1回目と同様、アップストリームが認識している問題を修正します。
     </para>
 @z
 
@@ -128,48 +120,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
-          <para>This option ensures the correct locale model is selected
-          for the C++ libraries under all circumstances. If the configure
-          script finds the <emphasis>de_DE</emphasis> locale installed,
-          it will select the correct gnu locale model. However, if the
-          <emphasis>de_DE</emphasis> locale is not installed, there is the
-          risk of building Application Binary Interface (ABI)-incompatible
-          C++ libraries because the incorrect generic locale model may be
-          selected.</para>
-@y
-          <para>
-          このオプションはあらゆる状況において C++ ライブラリに対するロケールモデルが正しく設定されるようにします。
-          configure スクリプト実行時に <emphasis>de_DE</emphasis> ロケールがインストール済みであることが分かれば、正しい GNU ロケールモデルが設定されます。
-          しかし <emphasis>de_DE</emphasis> ロケールがインストールされていなかったら、誤った汎用ロケールモデルが設定されてしまうため、アプリケーションバイナリインターフェース (Application Binary Interface; ABI) とは非互換の C++ ライブラリが生成されてしまう可能性があります。
-          </para>
-@z
-
-@x
-          <para>This enables C++ exception handling for multi-threaded code.</para>
-@y
-          <para>
-          マルチスレッドコードを扱う C++ の例外処理を有効にします。
-          </para>
-@z
-
-@x
-          <para>This option allows use of <function>__cxa_atexit</function>,
-          rather than <function>atexit</function>, to register C++ destructors
-          for local statics and global objects. This option is essential for
-          fully standards-compliant handling of destructors. It also affects
-          the C++ ABI, and therefore results in C++ shared libraries and C++
-          programs that are interoperable with other Linux distributions.</para>
-@y
-          <para>
-          このオプションは <function>atexit</function> を使用せず <function>__cxa_atexit</function> の使用を有効にします。
-          これによりローカルなスタティックオブジェクトおよびグローバルオブジェクトに対する C++ デストラクターを登録します。
-          このオプションは、標準に完全準拠したデストラクタ実装のために必要です。
-          またこれは C++ ABI に影響するものであり C++ 共有ライブラリ、C++ プログラムを作り出し、他の Linux ディストリビューションとの互換性を実現します。
-          </para>
-@z
-
-@x
+@x --enable-languages=c,c++
           <para>This option ensures that both the C and C++ compilers are
           built.</para>
 @y
@@ -178,7 +129,7 @@
           </para>
 @z
 
-@x
+@x --disable-libstdcxx-pch
           <para>Do not build the pre-compiled header (PCH) for
           <filename class="libraryfile">libstdc++</filename>. It takes up a
           lot of space, and we have no use for it.</para>
@@ -189,7 +140,7 @@
           </para>
 @z
 
-@x
+@x --disable-bootstrap
           <para>For native builds of GCC, the default is to do a "bootstrap"
           build. This does not just compile GCC, but compiles it several times.
           It uses the programs compiled in a first round to compile itself a

@@ -78,40 +78,40 @@
 @z
 
 @x
-  <note><para>For many modern systems with multiple processors (or cores) the
-  compilation time for a package can be reduced by performing a "parallel make"
-  by either setting an environment variable or telling the
-  <command>make</command> program how many processors are available.  For
-  instance, a Core2Duo can support two simultaneous processes with:</para>
+    <para>For many modern systems with multiple processors (or cores) the
+    compilation time for a package can be reduced by performing a "parallel
+    make" by either setting an environment variable or telling the
+    <command>make</command> program how many processors are available.  For
+    instance, a Core2Duo can support two simultaneous processes with:</para>
 @y
-  <note>
-  <para>
-  最新のシステムは複数プロセッサー (デュアルコアとも言います) であることが多く、パッケージのビルドにあたっては「同時並行のビルド」によりビルド時間を削減できます。
-  その場合プロセッサー数がいくつなのかを環境変数に指定するか、あるいは <command>make</command> プログラムの実行時に指定する方法があります。
-  例えばコア2デュオであれば、以下のようにして同時並行の二つのプロセスを実行することができます。
-  </para>
+    <para>
+    最新のシステムは複数プロセッサー (デュアルコアとも言います) であることが多く、パッケージのビルドにあたっては「同時並行のビルド」によりビルド時間を削減できます。
+    その場合プロセッサー数がいくつなのかを環境変数に指定するか、あるいは <command>make</command> プログラムの実行時に指定する方法があります。
+    例えばコア2デュオであれば、以下のようにして同時並行の二つのプロセスを実行することができます。
+    </para>
 @z
 
 @x
-  <para>or just building with:</para>
+    <para>or just building with:</para>
 @y
-  <para>
-  あるいはビルド時の指定として以下のようにすることもできます。
-  </para>
+    <para>
+    あるいはビルド時の指定として以下のようにすることもできます。
+    </para>
 @z
 
 @x
-  <para>When multiple processors are used in this way, the SBU units in the
-  book will vary even more than they normally would.  Analyzing the output of
-  the build process will also be more difficult because the lines of different
-  processes will be interleaved.  If you run into a problem with a build step,
-  revert back to a single processor build to properly analyze the error
-  messages.</para>
+    <para>When multiple processors are used in this way, the SBU units in the
+    book will vary even more than they normally would.  In some cases, the make
+    step will simply fail.  Analyzing the output of the build process will also
+    be more difficult because the lines of different processes will be
+    interleaved.  If you run into a problem with a build step, revert back to a
+    single processor build to properly analyze the error messages.</para>
 @y
-  <para>
-  上のようにして複数プロセッサーが利用されると、本書に示している SBU 単位は、通常の場合に比べて大きく変化します。
-  したがってビルド結果を検証するにしても話が複雑になります。
-  複数のプロセスラインがインターリーブにより多重化されるためです。
-  ビルド時に何らかの問題が発生したら、単一プロセッサー処理を行ってエラーメッセージを分析してください。
-  </para>
+    <para>
+    上のようにして複数プロセッサーが利用されると、本書に示している SBU 単位は、通常の場合に比べて大きく変化します。
+    そればかりか場合により make 処理に失敗することもあります。
+    したがってビルド結果を検証するにしても話が複雑になります。
+    複数のプロセスラインがインターリーブにより多重化されるためです。
+    ビルド時に何らかの問題が発生したら、単一プロセッサー処理を行ってエラーメッセージを分析してください。
+    </para>
 @z

@@ -29,6 +29,15 @@
 @z
 
 @x
+    <para>First, fix a problem that causes a segmentation fault under
+    some conditions in klogd:</para>
+@y
+    <para>
+    特定の条件において klogd がセグメンテーションフォールトを起こすため、この問題を修正します。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

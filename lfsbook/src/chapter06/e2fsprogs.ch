@@ -84,7 +84,7 @@
           </para>
 @z
 
-@x
+@x --enable-elf-shlibs
           <para>This creates the shared libraries which some programs
           in this package use.</para>
 @y
@@ -93,19 +93,19 @@
           </para>
 @z
 
-@x
+@x --disable-*
           <para>This prevents E2fsprogs from building and installing the
           <systemitem class="library">libuuid</systemitem> and
           <systemitem class="library">libblkid</systemitem> libraries, the
           <systemitem class="daemon">uuidd</systemitem> daemon, and the
-          <command>fsck</command> wrapper, as Util-Linux installed all of
-          them earlier.</para>
+          <command>fsck</command> wrapper, as Util-Linux installs more
+          recent versions.</para>
 @y
           <para>
           このオプションは <systemitem class="library">libuuid</systemitem> ライブラリ、<systemitem
           class="library">libblkid</systemitem> ライブラリ、<systemitem
           class="daemon">uuidd</systemitem> デーモン、<command>fsck</command> ラッパーをいずれもビルドせずインストールしないようにします。
-          これらは Util-Linux パッケージによって既にインストールされています。
+          これらは Util-Linux パッケージによって、より最新のものがインストールされています。
           </para>
 @z
 

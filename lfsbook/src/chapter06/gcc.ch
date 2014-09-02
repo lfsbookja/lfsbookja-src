@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>As in Chapter 5, fix a problem identified upstream:</para>
+@y
+    <para>
+    第5章と同じように、アップストリームが認識している問題を修正します。
+    </para>
+@z
+
+@x
     <para>As in <xref linkend="ch-tools-gcc-pass2"/>, apply the following
     <command>sed</command> to force the build to use the
     <option>-fomit-frame-pointer</option> compiler flag in order to ensure
@@ -195,6 +203,15 @@
     <para>
     パッケージの多くは C コンパイラーとして <command>cc</command> を呼び出しています。
     これに対応するため、以下のシンボリックリンクを作成します。
+    </para>
+@z
+
+@x
+    <para>Add a compatibility symlink to enable building programs with
+    Link Time Optimization (LTO):</para> 
+@y
+    <para>
+    リンク時の最適化 (Link Time Optimization; LTO) によりプログラム構築できるように、シンボリックリンクを作ります。
     </para>
 @z
 

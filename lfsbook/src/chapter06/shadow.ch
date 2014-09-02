@@ -80,9 +80,33 @@
 @z
 
 @x
+    <para>Make a minor change to make the default useradd consistent with the LFS
+    groups file:</para>
+@y
+    <para>
+    LFS のグループファイルと整合が取れるように、デフォルトの useradd を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Shadow for compilation:</para>
 @y
     <para>&PreparePackage1;Shadow&PreparePackage2;</para>
+@z
+
+@x
+      <title>The meaning of the configure option:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x --with-group-name-max-length=32
+          <para>The maximum user name is 32 characters.  Make the maximum
+          group name the same.</para>
+@y
+          <para>
+          ユーザー名とグループ名の最大文字数を 32 とします。
+          </para>
 @z
 
 @x

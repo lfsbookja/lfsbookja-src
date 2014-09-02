@@ -48,6 +48,15 @@
 @z
 
 @x
+    <para>Additionally, fix a bug that causes <command>getfacl -e</command>
+    to segfault on overly long group name:</para>
+@y
+    <para>
+    長いグループ名に対して <command>getfacl -e</command> が segfault を起こすため、これを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Acl for compilation:</para>
 @y
     <para>&PreparePackage1;Acl&PreparePackage2;</para>
@@ -62,13 +71,13 @@
 @x
     <para>The Acl tests need to be run on a filesystem that supports access
     controls after <application>Coreutils</application> has been built with the
-    Acl libraries.  If desired, return to this package and run <command>make
+    Acl libraries.  If desired, return to this package and run <command>make -j1
     tests</command> after <application>Coreutils</application> has been built
     later in this chapter.</para>
 @y
     <para>
     Acl のテストは、Acl のライブラリによって <application>Coreutils</application> をビルドした後に、アクセス制御がサポートされたファイルシステム上にて実施する必要があります。
-    テスト実施が必要である場合は、後に生成する <application>Coreutils</application> のビルドが終わってから、再び本パッケージに戻って <command>make
+    テスト実施が必要である場合は、後に生成する <application>Coreutils</application> のビルドが終わってから、再び本パッケージに戻って <command>make -j1
     tests</command> を実行してください。
     </para>
 @z

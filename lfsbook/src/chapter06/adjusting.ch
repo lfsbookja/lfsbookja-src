@@ -79,12 +79,12 @@
 @z
 
 @x
-  <para os="b">If everything is working correctly, there should be no errors,
+  <para os="b">There should be no errors,
   and the output of the last command will be (allowing for
   platform-specific differences in dynamic linker name):</para>
 @y
   <para os="b">
-  問題なく動作した場合はエラーがなかったということで、最後のコマンドから出力される結果は以下のようになるはずです。
+  問題なく動作するはずで、最後のコマンドから出力される結果は以下のようになるはずです。
   (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。)
   </para>
 @z
@@ -107,11 +107,10 @@
 @z
 
 @x
-  <para os="f">If everything is working correctly, there should be no errors,
-    and the output of the last command will be:</para>
+  <para os="f">The output of the last command should be:</para>
 @y
   <para os="f">
-  問題なく動作した場合はエラーがなかったということで、上のコマンドの出力は以下のようになるはずです。
+  上のコマンドの出力は以下のようになるはずです。
   </para>
 @z
 
@@ -125,10 +124,10 @@
 @z
 
 @x
-  <para os="h">This command should return successfully with the following output:</para>
+  <para os="h">This command should return the following output:</para>
 @y
   <para os="h">
-  上のコマンドは正常に終了すると、以下の出力を返します。
+  上のコマンドは以下の出力を返します。
   </para>
 @z
 
@@ -141,12 +140,10 @@
 @z
 
 @x
-  <para os="k">If everything is working correctly, there should be no errors,
-  and the output of the last command
-  will be:</para>
+  <para os="k">The output of the last command should be:</para>
 @y
   <para os="k">
-  問題なく動作した場合はエラーがなかったということで、最後のコマンドの出力は以下のようになるはずです。
+  最後のコマンドの出力は以下のようになるはずです。
   </para>
 @z
 
@@ -159,13 +156,12 @@
 @z
 
 @x
-  <para os="n">If everything is working correctly, there should be no errors,
-  and the output of the last command (allowing for a lib64 directory on 64-bit hosts)
-  will be:</para>
+  <para os="n">The output of the last command (allowing for a lib64 directory 
+  on 64-bit hosts) should be:</para>
 @y
   <para os="n">
-  問題なく動作した場合はエラーがなかったということで、最後のコマンドの出力は以下のようになるはずです。
-  (64 ビットマシンであれば lib64 ディレクトリとなるはずです。)
+  最後のコマンドの出力は以下のようになるはずです。
+  (64 ビットマシンであれば lib64 ディレクトリになります。)
   </para>
 @z
 
@@ -178,15 +174,14 @@
 @z
 
 @x
-  <para os="r">If everything is working correctly, there should be no errors,
-  and the output of the last command will be (allowing for
-  platform-specific differences in dynamic linker name and a lib64 directory
-  on 64-bit hosts):</para>
+  <para os="r"> The output of the last command should be (allowing for
+  platform-specific differences in dynamic linker name and a lib64 directory on
+  64-bit hosts):</para>
 @y
   <para os="r">
-  問題なく動作した場合はエラーがなかったということで、上のコマンドの出力は以下のようになるはずです。
+  上のコマンドの出力は以下のようになるはずです。
   (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。
-  また 64 ビットマシンであれば lib64 ディレクトリとなるはずです。)
+  また 64 ビットマシンであれば lib64 ディレクトリとなります。)
   </para>
 @z
 

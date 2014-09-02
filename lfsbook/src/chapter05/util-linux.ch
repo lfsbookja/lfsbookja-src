@@ -39,6 +39,17 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
+@x --without-python
+          <para>This switch disables using <application>Python</application>
+          if it is installed on the host system.  It avoids trying to build
+          unneeded bindings.</para>
+@y
+          <para>
+          本スイッチはホストシステムに <application>Python</application> がインストールされていても、これを用いないようにします。
+          ビルドの際に不要なバインディングを作らないようにするためです。
+          </para>
+@z
+
 @x --disable-makeinstall-chown
           <para>This switch disables using the <command>chown</command> command
           during installation.  This is not needed when installing into the

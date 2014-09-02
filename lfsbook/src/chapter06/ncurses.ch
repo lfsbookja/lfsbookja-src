@@ -35,7 +35,7 @@
 @z
 
 @x
-      <title>The meaning of the configure option:</title>
+      <title>The meaning of the new configure options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z

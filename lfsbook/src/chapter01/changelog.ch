@@ -48,6 +48,243 @@
 @z
 
 @x
+      <para>2014-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.42.12.  Fixes 
+          <ulink url="&lfs-ticket-root;3663">#3663</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata2014g. </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.42.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;3663">#3663</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata2014g へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-1.10.  Fixes 
+          <ulink url="&lfs-ticket-root;3661">#3661</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - eudev-1.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;3661">#3661</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update bash patches.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.71.  Fixes 
+          <ulink url="&lfs-ticket-root;3660">#3660</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash のパッチをアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.71 へのアップデート。
+          <ulink url="&lfs-ticket-root;3660">#3660</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove redundant options in gcc instructions.
+          Fixes 
+          <ulink url="&lfs-ticket-root;3655">#3655</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc のビルド作業にて不要なオプションを削除。
+          <ulink url="&lfs-ticket-root;3655">#3655</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove redundant wording in checking 
+          toolchain values.  Fixes 
+          <ulink url="&lfs-ticket-root;3654">#3654</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Reword bootscripts README file.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ツールチェーンのチェック時における不要な説明を削除。
+          <ulink url="&lfs-ticket-root;3654">#3654</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bootscripts の README ファイルを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata2014f.  Fixes 
+          <ulink url="&lfs-ticket-root;3653">#3653</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.16.1.  Fixes 
+          <ulink url="&lfs-ticket-root;3643">#3643</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-3.16.0.  Fixes 
+          <ulink url="&lfs-ticket-root;3651">#3651</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update bison dependencies.  Fixes 
+          <ulink url="&lfs-ticket-root;3652">#3652</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata2014f へのアップデート。
+          <ulink url="&lfs-ticket-root;3653">#3653</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.16.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3643">#3643</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-3.16.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3651">#3651</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison の依存関係をアップデート。
+          <ulink url="&lfs-ticket-root;3652">#3652</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update patches for bash, readline, and mpfr.  Fixes 
+          <ulink url="&lfs-ticket-root;3648">#3648</ulink>, 
+          <ulink url="&lfs-ticket-root;3649">#3649</ulink>, and
+          <ulink url="&lfs-ticket-root;3650">#3650</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash,、readline、mpfr のパッチをアップデート。
+          <ulink url="&lfs-ticket-root;3648">#3648</ulink>, 
+          <ulink url="&lfs-ticket-root;3649">#3649</ulink>,
+          <ulink url="&lfs-ticket-root;3650">#3650</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Remove --enable-multibyte from vim, it is the
+          default. Addresses part of
+          <ulink url="&lfs-ticket-root;3647">#3647</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Util-Linux-2.25 needs a filename in ADJTIME_PATH,
+          fixes <ulink url="&lfs-ticket-root;3656">#3656</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - vim にてデフォルトである --enable-multibyte を削除。
+          <ulink url="&lfs-ticket-root;3647">#3647</ulink> 内にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Util-Linux-2.25 にて ADJTIME_PATH にはファイル名指定が必要。
+          fixes <ulink url="&lfs-ticket-root;3656">#3656</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[Chris] - Install Util-linux documentation in a versioned
+          directory.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[Chris] - Util-linux のドキュメントをバージョン付きディレクトリへインストールすることに。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-08-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[Chris] - Reversed change to Vim's docs location, so that
+          Vim can find its help files.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-08-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[Chris] - Reversed change to Vim's docs location, so that
+          Vim can find its help files.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-04-28</para>
       <itemizedlist>
         <listitem>
@@ -59,8 +296,8 @@
       <para>2014-04-28</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to linux-3.14.2. Fixes
-          <ulink url="&lfs-ticket-root;3559">#3559</ulink>.</para>
+          <para>[bdubbs] - linux-3.14.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3559">#3559</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z

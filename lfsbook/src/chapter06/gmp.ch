@@ -53,10 +53,19 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
+@x --enable-cxx
           <para>This parameter enables C++ support</para>
 @y
           <para>C++ サポートを有効にします。</para>
+@z
+
+@x --docdir=/usr/share/doc-gmp&gmp-version;
+          <para>This variable specifies the correct place for the
+          documentation.</para>
+@y
+          <para>
+          ドキュメントのインストール先を適切に設定します。
+          </para>
 @z
 
 @x

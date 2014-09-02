@@ -230,10 +230,10 @@
 %----------------------------------------------------------------------
 @x bison
          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc,
-         Grep, M4, Make, and Sed</seg>
+         Grep, M4, Make, Perl, and Sed</seg>
 @y
          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc,
-         Grep, M4, Make, Sed</seg>
+         Grep, M4, Make, Perl, Sed</seg>
 @z
 @x
           <seg>Diffutils, Findutils, and Flex</seg>
@@ -355,6 +355,30 @@
           <seg>Diffutils, Perl</seg>
 @y
           <seg>Diffutils, Perl</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Eudev
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep,
+         Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep,
+         Make, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -1445,10 +1469,10 @@ Typo ですが日本語訳には影響ありません。
 
 %----------------------------------------------------------------------
 @x Tar
-         <seg>Bash, Binutils, Bison, Coreutils, GCC, Gettext, Glibc,
+         <seg>Acl, Attr, Bash, Binutils, Bison, Coreutils, GCC, Gettext, Glibc,
          Grep, Inetutils, Make, Sed, and Texinfo</seg>
 @y
-         <seg>Bash, Binutils, Bison, Coreutils, GCC, Gettext, Glibc,
+         <seg>Acl, Attr, Bash, Binutils, Bison, Coreutils, GCC, Gettext, Glibc,
          Grep, Inetutils, Make, Sed, Texinfo</seg>
 @z
 @x
@@ -1565,11 +1589,11 @@ Typo ですが日本語訳には影響ありません。
 
 %----------------------------------------------------------------------
 @x Vim
-         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
-         Ncurses, and Sed</seg>
+         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, GCC, Glibc,
+         Grep, Make, Ncurses, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
-         Ncurses, Sed</seg>
+         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, GCC, Glibc,
+         Grep, Make, Ncurses, Sed</seg>
 @z
 @x
           <seg>None</seg>

@@ -29,10 +29,10 @@
 @z
 
 @x
-    <para>First, clean up a few warnings and fix a test script:</para>
+    <para>First, fix a test script:</para>
 @y
     <para>
-    はじめに警告エラーやテストスクリプトを修正します。
+    はじめにテストスクリプトを修正します。
     </para>
 @z
 

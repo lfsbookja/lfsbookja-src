@@ -40,11 +40,11 @@
 @z
 
 @x --disable-kill
-          <para>This switch disables building the kill command that
-          was installed in the util-linux package.</para>
+          <para>This switch disables building the <command>kill</command>
+          command that will be installed by the Util-linux package.</para>
 @y
           <para>
-          本スイッチは kill コマンドをビルドしないようにします。
+          本スイッチは <command>kill</command> コマンドをビルドしないようにします。
           このコマンドは util-linux パッケージにてインストールされます。
           </para>
 @z

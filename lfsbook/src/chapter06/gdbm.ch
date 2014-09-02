@@ -102,7 +102,23 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x testgdbm
+@x gdbm_dump
+          <para>Dumps a GDBM database to a file.</para>
+@y
+          <para>
+          GDBM データベースをファイルにダンプします。
+          </para>
+@z
+
+@x gdbm_load
+          <para>Recreates a GDBM database from a dump file.</para>
+@y
+          <para>
+          GDBM のダンプファイルからデータベースを再生成します。
+          </para>
+@z
+
+@x gdbmtool
           <para>Tests and modifies a GDBM database</para>
 @y
           <para>
@@ -115,5 +131,13 @@
 @y
           <para>
           ハッシュデータベースを取り扱う関数を提供します。
+          </para>
+@z
+
+@x libgdbm_compat
+          <para>Compatibility library containing older DBM functions</para>
+@y
+          <para>
+          古い DBM 関数を含んだ互換ライブラリ。
           </para>
 @z

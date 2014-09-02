@@ -35,11 +35,11 @@
 <!ENTITY dejagnu-ch5-sbu "0.1 SBU 以下">
 @z
 
-@x
-<!ENTITY dbus-ch6-sbu "less than 0.4 SBU">
-@y
-<!ENTITY dbus-ch6-sbu "0.4 SBU 以下">
-@z
+% @x
+% <!ENTITY dbus-ch6-sbu "less than 0.4 SBU">
+% @y
+% <!ENTITY dbus-ch6-sbu "0.4 SBU 以下">
+% @z
 
 @x
 <!ENTITY iana-etc-ch6-sbu "less than 0.1 SBU">

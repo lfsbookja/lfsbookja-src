@@ -586,20 +586,20 @@
         <para>&Download;: <ulink url="&tcl-url;"/></para>
 @z
 
-@x tzdata
-        <para>Home page: <ulink url="&tzdata-home;"/></para>
-        <para>Download: <ulink url="&tzdata-url;"/></para>
-@y
-        <para>&Homepage;: <ulink url="&tzdata-home;"/></para>
-        <para>&Download;: <ulink url="&tzdata-url;"/></para>
-@z
-
 @x texinfo
         <para>Home page: <ulink url="&texinfo-home;"/></para>
         <para>Download: <ulink url="&texinfo-url;"/></para>
 @y
         <para>&Homepage;: <ulink url="&texinfo-home;"/></para>
         <para>&Download;: <ulink url="&texinfo-url;"/></para>
+@z
+
+@x tzdata
+        <para>Home page: <ulink url="&tzdata-home;"/></para>
+        <para>Download: <ulink url="&tzdata-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&tzdata-home;"/></para>
+        <para>&Download;: <ulink url="&tzdata-url;"/></para>
 @z
 
 @x Udev-lfs Tarball

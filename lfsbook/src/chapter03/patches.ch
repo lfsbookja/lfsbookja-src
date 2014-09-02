@@ -59,6 +59,14 @@
         <para>&Download;: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
 @z
 
+@x Binutils LTO Testsuite Patch
+        <para>Download: <ulink url="&patches-root;&binutils-lto-testsuite-patch;"/></para>
+        <para>MD5 sum: <literal>&binutils-lto-testsuite-patch-md5;</literal></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&binutils-lto-testsuite-patch;"/></para>
+        <para>MD5 sum: <literal>&binutils-lto-testsuite-patch-md5;</literal></para>
+@z
+
 @x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
 @y

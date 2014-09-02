@@ -20,6 +20,225 @@
 @z
 
 @x
+    <title>Network Devices</title>
+@y
+    <title>ネットワークデバイス</title>
+@z
+
+@x
+    <para>Udev, by default, names network devices according to Firmware/BIOS
+    data or physical characteristics like the bus, slot, or MAC address.  The
+    purpose of this naming convention is to ensure that network devices are
+    named consistently and not based on the time the network card was
+    discovered.  For example, on a computer having two network cards made by
+    Intel and Realtek, the network card manufactured by Intel may become eth0
+    and the Realtek card becomes eth1. In some cases, after a reboot the cards
+    get renumbered the other way around.</para>
+@y
+    <para>
+    Udev はデフォルトにおいて、ネットワークデバイスの名前づけを、ファームウェア/BIOS データや物理的特性、つまりバス、スロット、MACアドレスに基づいて取り決めます。
+    このような命名規則とする目的は、複数のネットワークデバイスの命名を正確に行うためであり、検出した順番に命名することがないようにするためです。
+    例えば Intel 製と Realtek 製の二つのネットワークカードを持つコンピューターにおいて、 Intel 製が eth0、Realtek 製が eth1 となったとします。
+    システムを再起動した際には、番号割り振りが逆転することもあります。
+    </para>
+@z
+
+@x
+    <para>In the new naming scheme, typical network device names would then
+    be something like enp5s0 or wlp3s0.  If this naming convention is not
+    desired, the traditional naming scheme or a custom scheme can be
+    implemented.</para>
+@y
+    <para>
+    新たな命名スキーマでは、ネットワークデバイス名が例えば enp5s0 や wlp3s0 といったものになります。
+    もしこの命名規則を望まない場合は、従来の命名規則とすることもできます。
+    またはカスタムスキーマを定義することもできます。
+    </para>
+@z
+
+@x
+      <title>Disabling Persistent Naming on the Kernel Command Line</title>
+@y
+      <title>カーネルコマンドラインによる持続的命名の回避</title>
+@z
+
+@x
+      <para>The traditional naming scheme using eth0, eth1, etc can be
+      restored by adding <userinput>net.ifnames=0</userinput> on the 
+      kernel command line.  This is most appropriate for those systems
+      that have only one ethernet device of the same type.  Laptops
+      often have multiple ethernet connections that are named eth0 and 
+      wlan0 and are also candidates for this method.  The command line 
+      is passed in the GRUB configuration file. 
+      See <xref linkend="grub-cfg"/>.</para>
+@y
+<!-- 日本語版注釈: candidates for method の意味が分からなかったので訳出スキップ -->
+      <para>
+      従来の命名スキーマ、例えば eth0、eth1 といったものは、カーネルコマンドラインに <userinput>net.ifnames=0</userinput> を加えることで利用できます。
+      この設定は、イーサネットデバイスをただ一つしか持たないシステムでは適正なものとなります。
+      一方ラップトップでは、eth0 と wlan0 といった複数のイーサネット接続が利用されることが多いものです。
+      カーネルコマンドラインは GRUB の設定ファイルにて設定できます。
+      詳しくは<xref linkend="grub-cfg"/>を参照してください。
+      </para>
+@z
+
+@x
+      <title>Creating Custom Udev Rules</title>
+@y
+      <title>Udev カスタムルールの生成</title>
+@z
+
+@x
+      <para>The naming scheme can be customized by creating custom Udev
+      rules.  A script has been included that generates the initial rules.
+      Generate these rules by running:</para>
+@y
+      <para>
+      命名スキーマは Udev カスタムルールを生成することによってカスタマイズが可能です。
+      Udev には初期ルールを生成するスクリプトが含まれています。
+      このルールを生成するには以下を実行します。
+      </para>
+@z
+
+@x
+      <para> Now, inspect the
+      <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> file, to
+      find out which name was assigned to which network device:</para>
+@y
+      <para>
+      そして <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> ファイルを参照し、どういった名前によりネットワークデバイスが定められているかを確認します。
+      </para>
+@z
+
+@x
+      <note><para>In some cases such as when MAC addresess have been assigned to
+      a network card manually or in a virtual environment such as Qemu or Xen,
+      the network rules file may not have been generated because addresses
+      are not consistently assigned.  In these cases, this method cannot
+      be used.</para></note>
+@y
+      <note><para>
+      ネットワークカードに対して手動で MAC アドレスを割り当てた場合、あるいは Qemu や Xen のような仮想環境における場合においては、ネットワークルールファイルが生成されないことがあります。
+      これはアドレスの割り当てが確定されないためです。
+      こういった場合は本方法を利用することはできません。
+      </para></note>
+@z
+
+@x
+      <para>The file begins with a comment block followed by two lines for each
+      NIC. The first line for each NIC is a commented description showing its
+      hardware IDs (e.g. its PCI vendor and device IDs, if it's a PCI card),
+      along with its driver in parentheses, if the driver can be found. Neither
+      the hardware ID nor the driver is used to determine which name to give an
+      interface; this information is only for reference. The second line is the
+      Udev rule that matches this NIC and actually assigns it a name.</para>
+@y
+      <para>
+      このファイルの先頭にはコメントが数行あり、続いてそれぞれの NIC に対する行があります。
+      NIC ごとの記述では一行めがコメントで、そのハードウェア ID が記されています。
+      (PCI カードである場合、PCI ベンダとデバイス ID が記述されます。)
+      またドライバーが検出できている場合には、カッコ書きでドライバー名も示されます。
+      ハードウェア ID もドライバー名も、インターフェースに対して与えられる名称とは無関係で、単に分かりやすくするために記されているにすぎません。
+      二行めは Udev ルールであり、その NIC を定め、名称を割り当てている記述です。
+      </para>
+@z
+
+@x
+      <para>All Udev rules are made up of several keys, separated by commas and
+      optional whitespace. This rule's keys and an explanation of each of them
+      are as follows:</para>
+@y
+      <para>
+      Udev ルールはいくつかのキー項目で構成され、それぞれがカンマで区切られるか、場合によっては空白文字で区切られています。
+      このキー項目とその内容は以下のようになります。
+      </para>
+@z
+
+@x
+          <para><literal>SUBSYSTEM=="net"</literal> - This tells Udev to ignore
+          devices that are not network cards.</para>
+@y
+          <para>
+          <literal>SUBSYSTEM=="net"</literal> - 
+          ネットワークカードではないデバイスは無視することを指示します。
+          </para>
+@z
+
+@x
+          <para><literal>ACTION=="add"</literal> - This tells Udev to ignore this
+          rule for a uevent that isn't an add ("remove" and "change" uevents also
+          happen, but don't need to rename network interfaces).</para>
+@y
+          <para>
+          <literal>ACTION=="add"</literal> - 
+          uevent の add イベントではないものは無視することを指示します。
+          (uevent の "remove" イベントや "change" イベントも発生しますが、これらはネットワークインターフェースの名前を変更するものではありません。)
+          </para>
+@z
+
+@x
+          <para><literal>DRIVERS=="?*"</literal> - This exists so that Udev will
+          ignore VLAN or bridge sub-interfaces (because these sub-interfaces do
+          not have drivers). These sub-interfaces are skipped because the name
+          that would be assigned would collide with their parent devices.</para>
+@y
+          <para>
+          <literal>DRIVERS=="?*"</literal> - 
+          Udev に対して VLAN やブリッジサブインターフェース (bridge sub-interfaces) を無視することを指示します。
+          (サブインターフェースにはドライバーがないためです。)
+          サブインターフェースに名前が割り当てられたとすると、親デバイスの名前と衝突してしまうため、サブインターフェースの名前割り当てはスキップされます。
+          </para>
+@z
+
+@x
+          <para><literal>ATTR{address}</literal> - The value of this key is the
+          NIC's MAC address.</para>
+@y
+          <para>
+          <literal>ATTR{address}</literal> - 
+          このキーの値は NIC の MAC アドレスを表します。
+          </para>
+@z
+
+@x
+          <para><literal>ATTR{type}=="1"</literal> - This ensures the rule only
+          matches the primary interface in the case of certain wireless drivers,
+          which create multiple virtual interfaces. The secondary interfaces are
+          skipped for the same reason that VLAN and bridge sub-interfaces are
+          skipped: there would be a name collision otherwise.</para>
+@y
+          <para>
+          <literal>ATTR{type}=="1"</literal> - 
+          特定のワイヤレスドライバーでは複数の仮想インターフェースが生成されますが、そのうちの主となるインターフェースにのみルールが合致するようにします。
+          二つめ以降のインターフェースに対する処理は、VLAN やブリッジサブインターフェースがスキップされるのと同じくスキップされます。
+          名前割り当てが行われてしまうと名前衝突を起こすためです。
+          </para>
+@z
+
+@x
+          <para><literal>NAME</literal> - The value of this key is the name that
+          Udev will assign to this interface.</para>
+@y
+          <para>
+          <literal>NAME</literal> - 
+          Udev がインターフェースに対して割り当てる名前をキーの値として指定します。
+          </para>
+@z
+
+@x
+      <para>The value of <literal>NAME</literal> is the important part. Make sure
+      you know which name has been assigned to each of your network cards before
+      proceeding, and be sure to use that <literal>NAME</literal> value when
+      creating your configuration files below.</para>
+@y
+      <para>
+      <literal>NAME</literal> に定義される値が重要です。
+      どのネットワークカードにどんな名前が割り当てられているかをよく確認してください。
+      そして以下において設定ファイルを生成する際には <literal>NAME</literal> に定義されている名称を利用してください。
+      </para>
+@z
+
+@x
     <title>CD-ROM symlinks</title>
 @y
     <title>CD-ROM のシンボリックリンク</title>

@@ -89,6 +89,16 @@
 @z
 
 @x
+    <note><para>One test above, tests/ts/ipcs/limits2, will fail when the host 
+    is using a recent kernel.  The failure can safely be ignored.</para></note>
+@y
+    <note><para>
+    上において tests/ts/ipcs/limits2 というテストは、ホストが最新のカーネルを用いている場合に失敗します。
+    この失敗は無視して構いません。
+    </para></note>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
@@ -128,7 +138,7 @@
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
 
         <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
-        /usr/include/uuid, /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
+        /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
         chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
@@ -147,7 +157,7 @@
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
 
         <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
-        /usr/include/uuid, /usr/share/doc/util-linux/getopt, /var/lib/hwclock</seg>
+        /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, /var/lib/hwclock</seg>
 @z
 
 @x
@@ -568,11 +578,19 @@
           </para>
 @z
 
-@x
+@x lslocks
           <para>Lists local system locks</para>
 @y
           <para>
           ローカルのシステムロックを一覧表示します。
+          </para>
+@z
+
+@x lslogins
+          <para>Lists information about users, groups and system accounts</para>
+@y
+          <para>
+          ユーザー、グループ、システムアカウントの情報を一覧表示します。
           </para>
 @z
 

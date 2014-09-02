@@ -50,6 +50,23 @@
 @z
 
 @x
+      <title>The meaning of the make option:</title>
+@y
+      <title>&MeaningOfOption1;make&MeaningOfOption2;</title>
+@z
+
+@x RAISE_SETFCAP=no
+          <para>This parameter skips trying to use <command>setcap</command>
+          on itself. This avoids an installation error if the kernel or file
+          system does not support extended capabilities.</para>
+@y
+          <para>
+          このパラメーターは <command>setcap</command> が自分を利用しないようにします。
+          このことにより、カーネルやファイルシステムが拡張属性をサポートしていなくても、インストールエラーが発生しないようにします。
+          </para>
+@z
+
+@x
     <para>The shared library needs to be moved to
     <filename class="directory">/lib</filename>, and as a result the
     <filename class="extension">.so</filename> file in

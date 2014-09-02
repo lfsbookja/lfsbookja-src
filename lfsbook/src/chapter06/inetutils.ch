@@ -52,12 +52,12 @@
           <para>This option prevents Inetutils from installing the
           <command>logger</command> program, which is used by scripts to
           pass messages to the System Log Daemon. Do not install it because
-          Util-linux installed a version earlier.</para>
+          Util-linux installs a more recent version.</para>
 @y
           <para>
           このオプションは <command>logger</command> プログラムをインストールしないようにします。
           このプログラムはシステムログデーモンに対してメッセージ出力を行うスクリプトにて利用されます。
-          ここでこれをインストールしないのは、後に Util-linux パッケージにおいて、以前のバージョンをインストールするためです。
+          ここでこれをインストールしないのは、後に Util-linux パッケージにおいて、より最新のバージョンをインストールするためです。
           </para>
 @z
 

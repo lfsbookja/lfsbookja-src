@@ -51,12 +51,14 @@
 
 @x
     <para>The tests need to be run on a filesystem that supports extended
-    attributes such as the ext2, ext3, or ext4 filesystems. To test the
-    results, issue:</para>
+    attributes such as the ext2, ext3, or ext4 filesystems. The tests are also
+    known to fail if running multiple simultaneous tests (-j option greater than
+    1).  To test the results, issue:</para>
 @y
     <para>
     テストは、ext2, ext3, ext4 のような拡張属性をサポートしているファイルシステム上にて実施する必要があります。
-    テストする場合は以下を実行します。
+    また同時並行のテスト (-j オプションに 1以上を指定した場合) では失敗します。
+    テストを実施するには以下を実行します。
     </para>
 @z
 

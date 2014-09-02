@@ -62,26 +62,6 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
-@y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
-@z
-
-@x
-          <para>This switch enables support for editing files in multibyte
-          character encodings. This is needed if using a locale with a
-          multibyte character set. This switch is also helpful to be able
-          to edit text files initially created in Linux distributions like
-          Fedora that use UTF-8 as a default character set.</para>
-@y
-          <para>
-          このスイッチは、マルチバイトエンコーディングによるファイルの編集をサポートする指示を行います。
-          マルチバイト文字を用いるロケールにとってはこれが必要です。
-          例えば Fedora Core のようにデフォルトで UTF-8 を採用している Linux ディストリビューションにおいては、新規に生成するテキストファイルを編集できるようにするために、このオプションを指定することが有用です。
-          </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

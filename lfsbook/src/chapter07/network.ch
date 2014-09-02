@@ -54,214 +54,6 @@
   </para>
 @z
 
-% @x
-%     <title>Creating Network Interface Configuration Files</title>
-% @y
-%     <title>
-%     ネットワークインターフェースに対する設定ファイルの作成
-%     </title>
-% @z
-% 
-% @x
-%     <para>If there is only one network interface in the system to be
-%     configured, this section is optional, although it will never be wrong to do
-%     it.  In many cases (e.g. a laptop with a wireless and a wired interface),
-%     accomplishing the configuration in this section is necessary.</para>  
-% @y
-%     <para>
-%     設定を行うべきネットワークインターフェースが、システム内にただ一つであるなら、本節に示す内容は任意となります。
-%     設定を行ったとしても間違いにはなりません。
-%     ラップトップＰＣでのワイヤレスネットワークやケーブル接続のネットワークにおいては、たいていは本節における設定が必要となるでしょう。
-%     </para>  
-% @z
-% 
-% @x
-%     <para>With Udev and modular network drivers, the network interface numbering
-%     is not persistent across reboots by default, because the drivers are loaded
-%     in parallel and, thus, in random order. For example, on a computer having
-%     two network cards made by Intel and Realtek, the network card manufactured
-%     by Intel may become <filename class="devicefile">eth0</filename> and the
-%     Realtek card becomes  <filename class="devicefile">eth1</filename>. In some
-%     cases, after a reboot the cards get renumbered the other way around. To
-%     avoid this, Udev comes with a script and some rules to assign stable names
-%     to network cards based on their MAC address.</para>
-% @y
-%     <para>
-%     Udev やモジュラー化されたネットワークドライバーにおいて、ネットワークインターフェースの番号の割振りは再起動により変更されます。
-%     ドライバーモジュールの読み込みが並列で行われるためランダムになるからです。
-%     例えば Intel 製と Realtek 製の二つのネットワークカードを持つコンピューターにおいて、
-%     Intel 製が <filename class="devicefile">eth0</filename>、Realtek 製が <filename class="devicefile">eth1</filename> となったとします。
-%     しかし時にはシステムの再起動によって番号割り振りが逆転することもあります。
-%     これを避けるには Udev ルールを生成して、ネットワークカードの MAC アドレスに基づいて固定的に名称を定める方法があります。
-%     </para>
-% @z
-% 
-% @x
-%     <para>If using the traditional network interface names such as eth0 is desired,
-%     generate a custom Udev rule:</para>
-% @y
-%     <para>
-%     ネットワークインターフェース名として従来の eth0 といった名前を用いる場合は、以下の Udev ルールを生成します。
-%     </para>
-% @z
-% 
-% @x
-%     <para> Now, inspect the
-%     <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> file, to
-%     find out which name was assigned to which network device:</para>
-% @y
-%     <para>
-%     そして <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> ファイルを参照し、どういった名前によりネットワークデバイスが定められているかを確認します。
-%     </para>
-% @z
-% 
-% @x
-%     <note><para>In some cases such as when MAC addresess have been assigned to
-%     a network card manually or in a virtual environment such as Xen,
-%     the network rules file may not have been generated because addresses 
-%     are not consistently assigned.  In these cases, just continue to
-%     the next section.</para></note>
-% @y
-%     <note><para>
-%     ネットワークカードに対して手動で MAC アドレスを割り当てた場合や Xen のような仮想環境における場合などにおいて、ネットワークルールファイルが生成されないことがあります。
-%     これはアドレスの割り当てが確定されないためです。
-%     こういった場合は次節に進んでください。
-%     </para></note>
-% @z
-% 
-% @x
-%     <para>The file begins with a comment block followed by two lines for each
-%     NIC. The first line for each NIC is a commented description showing its
-%     hardware IDs (e.g. its PCI vendor and device IDs, if it's a PCI card),
-%     along with its driver in parentheses, if the driver can be found. Neither
-%     the hardware ID nor the driver is used to determine which name to give an
-%     interface; this information is only for reference. The second line is the
-%     Udev rule that matches this NIC and actually assigns it a name.</para>
-% @y
-%     <para>
-%     このファイルの先頭にはコメントが数行あり、続いてそれぞれの NIC に対する行があります。
-%     NIC ごとの記述では一行めがコメントで、そのハードウェア ID が記されています。
-%     (PCI カードである場合、PCI ベンダとデバイス ID が記述されます。)
-%     またドライバーが検出できている場合には、カッコ書きでドライバー名も示されます。
-%     ハードウェア ID もドライバー名も、インターフェースに対して与えられる名称とは無関係で、単に分かりやすくするために記されているにすぎません。
-%     二行めは Udev ルールであり、その NIC を定め、名称を割り当てている記述です。
-%     </para>
-% @z
-% 
-% @x
-%     <para>All Udev rules are made up of several keys, separated by commas and
-%     optional whitespace. This rule's keys and an explanation of each of them
-%     are as follows:</para>
-% @y
-%     <para>
-%     Udev ルールはいくつかのキー項目で構成され、それぞれがカンマで区切られるか、場合によっては空白文字で区切られています。
-%     このキー項目とその内容は以下のようになります。
-%     </para>
-% @z
-% 
-% @x
-%         <para><literal>SUBSYSTEM=="net"</literal> - This tells Udev to ignore
-%         devices that are not network cards.</para>
-% @y
-%         <para>
-%         <literal>SUBSYSTEM=="net"</literal> - 
-%         ネットワークカードではないデバイスは無視することを指示します。
-%         </para>
-% @z
-% 
-% @x
-%         <para><literal>ACTION=="add"</literal> - This tells Udev to ignore this
-%         rule for a uevent that isn't an add ("remove" and "change" uevents also
-%         happen, but don't need to rename network interfaces).</para>
-% @y
-%         <para>
-%         <literal>ACTION=="add"</literal> - 
-%         uevent の add イベントではないものは無視することを指示します。
-%         (uevent の "remove" イベントや "change" イベントも発生しますが、これらはネットワークインターフェースの名前を変更するものではありません。)
-%         </para>
-% @z
-% 
-% @x
-%         <para><literal>DRIVERS=="?*"</literal> - This exists so that Udev will
-%         ignore VLAN or bridge sub-interfaces (because these sub-interfaces do
-%         not have drivers). These sub-interfaces are skipped because the name
-%         that would be assigned would collide with their parent devices.</para>
-% @y
-%         <para>
-%         <literal>DRIVERS=="?*"</literal> - 
-%         Udev に対して VLAN やブリッジサブインターフェース (bridge sub-interfaces) を無視することを指示します。
-%         (サブインターフェースにはドライバーがないためです。)
-%         サブインターフェースに名前が割り当てられたとすると、親デバイスの名前と衝突してしまうため、サブインターフェースの名前割り当てはスキップされます。
-%         </para>
-% @z
-% 
-% @x
-%         <para><literal>ATTR{address}</literal> - The value of this key is the
-%         NIC's MAC address.</para>
-% @y
-%         <para>
-%         <literal>ATTR{address}</literal> - 
-%         このキーの値は NIC の MAC アドレスを表します。
-%         </para>
-% @z
-% 
-% @x
-%         <para><literal>ATTR{type}=="1"</literal> - This ensures the rule only
-%         matches the primary interface in the case of certain wireless drivers,
-%         which create multiple virtual interfaces. The secondary interfaces are
-%         skipped for the same reason that VLAN and bridge sub-interfaces are
-%         skipped: there would be a name collision otherwise.</para>
-% @y
-%         <para>
-%         <literal>ATTR{type}=="1"</literal> - 
-%         特定のワイヤレスドライバーでは複数の仮想インターフェースが生成されますが、そのうちの主となるインターフェースにのみルールが合致するようにします。
-%         二つめ以降のインターフェースに対する処理は、VLAN やブリッジサブインターフェースがスキップされるのと同じくスキップされます。
-%         名前割り当てが行われてしまうと名前衝突を起こすためです。
-%         </para>
-% @z
-% 
-% @x
-%         <para><literal>KERNEL=="eth*"</literal> - This key was added to the
-%         Udev rule generator to handle machines that have multiple network
-%         interfaces, all with the same MAC address (the PS3 is one such
-%         machine).  If the independent interfaces have different basenames,
-%         this key will allow Udev to tell them apart.  This is generally not
-%         necessary for most Linux From Scratch users, but does not hurt.</para>
-% @y
-%         <para>
-%         <literal>KERNEL=="eth*"</literal> - 
-%         複数のネットワークインターフェースを有するマシンを取り扱うためのルールを加えます。
-%         このルールでは全インターフェースに同一の MAC アドレスが用いられます。
-%         (PS3 などがそういったマシンになります。)
-%         各インターフェースに対して個別の命名が行われたとすると Udev はそれぞれを別のものとして取り扱います。
-%         これはたいていの Linux From Scratch ユーザーにとって必要ありません。
-%         ただそうなったとしても問題はありません。
-%         </para>
-% @z
-% 
-% @x
-%         <para><literal>NAME</literal> - The value of this key is the name that
-%         Udev will assign to this interface.</para>
-% @y
-%         <para>
-%         <literal>NAME</literal> - 
-%         Udev がインターフェースに対して割り当てる名前をキーの値として指定します。
-%         </para>
-% @z
-% 
-% @x
-%     <para>The value of <literal>NAME</literal> is the important part. Make sure
-%     you know which name has been assigned to each of your network cards before
-%     proceeding, and be sure to use that <literal>NAME</literal> value when
-%     creating your configuration files below.</para>
-% @y
-%     <para>
-%     <literal>NAME</literal> に定義される値が重要です。
-%     どのネットワークカードにどんな名前が割り当てられているかをよく確認してください。
-%     そして以下において設定ファイルを生成する際には <literal>NAME</literal> に定義されている名称を利用してください。
-%     </para>
-% @z
-
 @x
     <title>Creating Network Interface Configuration Files</title>
 @y
@@ -524,4 +316,141 @@
     <note><para>The Google Public IPv4 DNS addresses are 8.8.8.8 and 8.8.4.4.</para></note>
 @y
     <note><para>Google Public IPv4 DNS アドレスは 8.8.8.8 と 8.8.4.4 です。</para></note>
+@z
+
+@x
+    <title>Configuring the system hostname</title>
+@y
+    <title>ホスト名の設定</title>
+@z
+
+@x
+      <primary sortas="d-hostname">hostname</primary>
+      <secondary>configuring</secondary>
+@y
+      <primary sortas="d-hostname">hostname</primary>
+      <secondary>設定</secondary>
+@z
+
+@x
+     <para>During the boot process, the file <filename>/etc/hostname</filename>
+     is used for establishing the system's hostname.</para>
+@y
+     <para>
+     システム起動時には <filename>/etc/hostname</filename> が参照されてシステムのホスト名が決定されます。
+     </para>
+@z
+
+@x
+     <para>Create the <filename>/etc/hostname</filename> file and enter a
+     hostname by running:</para>
+@y
+     <para>
+     以下のコマンドを実行することで <filename>/etc/hostname</filename> ファイルを生成するとともに、ホスト名を設定します。
+     </para>
+@z
+
+@x
+     <para><replaceable>&lt;lfs&gt;</replaceable> needs to be replaced with the
+     name given to the computer. Do not enter the Fully Qualified Domain Name
+     (FQDN) here. That information is put in the
+     <filename>/etc/hosts</filename> file.</para>
+@y
+     <para>
+     <replaceable>&lt;lfs&gt;</replaceable> の部分は、各システムにおいて定めたい名称に置き換えてください。
+     ここでは完全修飾ドメイン名 (Fully Qualified Domain Name; FQDN) は指定しないでください。
+     その情報は <filename>/etc/hosts</filename> ファイルにて行います。
+     </para>
+@z
+
+@x
+     <title>Customizing the /etc/hosts File</title>
+@y
+     <title>/etc/hosts ファイルの設定</title>
+@z
+
+@x
+     <para>Decide on the IP address, fully-qualified domain name (FQDN), and
+     possible aliases for use in the <filename>/etc/hosts</filename> file. The
+     syntax is:</para>
+@y
+     <para>
+     IPアドレス、完全修飾ドメイン名 (Fully Qualified Domain Name; FQDN)、エイリアスの各設定を <filename>/etc/hosts</filename> ファイルにて行います。
+     その文法は以下のようになります。
+     </para>
+@z
+
+@x
+     <para>Unless the computer is to be visible to the Internet (i.e., there is
+     a registered domain and a valid block of assigned IP addresses&mdash;most
+     users do not have this), make sure that the IP address is in the private
+     network IP address range. Valid ranges are:</para>
+@y
+     <para>
+     インターネットに公開されていないコンピューターである場合
+     (つまり登録ドメインであったり、あらかじめ IP アドレスが割り当てられていたりする場合。 普通のユーザーはこれを持ちません。)
+     IP アドレスはプライベートネットワーク IP アドレスの範囲で指定します。
+     以下がそのアドレス範囲です。
+     </para>
+@z
+
+@x
+     <para>x can be any number in the range 16-31. y can be any number in the
+     range 0-255.</para>
+@y
+     <para>
+     x は 16 から 31、y は 0 から 255 の範囲の数値です。
+     </para>
+@z
+
+@x
+     <para>A valid private IP address could be 192.168.1.1. A valid FQDN for
+     this IP could be lfs.example.org.</para>
+@y
+     <para>
+     IP アドレスの例は 192.168.1.1 となります。
+     また FQDN の例としては lfs.example.org となります。
+     </para>
+@z
+
+@x
+     <para>Even if not using a network card, a valid FQDN is still required.
+     This is necessary for certain programs to operate correctly.</para>
+@y
+     <para>
+     ネットワークカードを用いない場合でも FQDN の記述は行ってください。
+     特定のプログラムが動作する際に必要となることがあるからです。
+     </para>
+@z
+
+@x
+     <para>Create the  <filename>/etc/hosts</filename> file by running:</para>
+@y
+     <para>
+     以下のようにして <filename>/etc/hosts</filename> ファイルを生成します。
+     </para>
+@z
+
+@x
+     <para>The <replaceable>&lt;192.168.1.1&gt;</replaceable> and
+     <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable> values need to be
+     changed for specific uses or requirements (if assigned an IP address by a
+     network/system administrator and the machine will be connected to an
+     existing network). The optional alias name(s) can be omitted.</para>
+@y
+     <para>
+     <replaceable>&lt;192.168.1.1&gt;</replaceable> や
+     <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
+     (ネットワーク管理者から IP アドレスを指定されている場合や、既存のネットワーク環境に接続する場合など。). 
+     エイリアスの記述は省略しても構いません。
+     </para>
+@z
+
+@x
+     <para>If a network card is not going to be configured, create the
+     <filename>/etc/hosts</filename> file by running:</para>
+@y
+     <para>
+     ネットワークカードを設定しない場合は、以下のようにして <filename>/etc/hosts</filename> ファイルを生成します。
+     </para>
 @z
