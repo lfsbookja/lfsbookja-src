@@ -14,6 +14,18 @@
 @z
 
 @x
+  <indexterm zone="ch-tools-util-linux">
+    <primary sortas="a-Util-linux">Util-linux</primary>
+    <secondary>tools</secondary>
+  </indexterm>
+@y
+  <indexterm zone="ch-tools-util-linux">
+    <primary sortas="a-Util-linux">Util-linux</primary>
+    <secondary>ツール</secondary>
+  </indexterm>
+@z
+
+@x
     <para>The Util-linux package contains miscellaneous utility programs.</para>
 @y
     <para>

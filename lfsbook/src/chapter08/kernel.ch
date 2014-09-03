@@ -98,6 +98,53 @@
 @z
 
 @x
+    <para>There are several other options that may be desired depending
+    on the requirements for the system. For a list of options needed
+    for BLFS packages, see the <ulink 
+    url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS 
+    Index of Kernel Settings</ulink> 
+    (&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index).</para>
+@y
+    <para>
+    システムに特定の機能性が必要になれば、それだけ多くのオプションが必要となります。
+    例えば BLFS パッケージにて必要となるオプションについては <ulink 
+    url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS 
+    Index of Kernel Settings</ulink> 
+    (&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index)
+    を参照してください。
+    </para>
+@z
+
+@x
+      <title>The rationale for the above configuration items:</title>
+@y
+      <title>上の設定項目の説明</title>
+@z
+
+@x Support for uevent helper
+          <para>Having this opion set may interfere with device
+          management when using Udev/Eudev. </para>
+@y
+          <para>
+          本項目を有効にすることで、デバイス管理を Udev/Eudev により行ないます。
+          </para>
+@z
+
+@x Maintain a devtmpfs
+          <para>This will create automated device nodes which are populated by the
+          kernel, even without Udev running.  Udev then runs on top of this,
+          managing permissions and adding symlinks.  This configuration
+          item is required for all users of Udev/Eudev.</para>
+@y
+          <para>
+          本項目は、カーネルにより事前登録される自動化デバイスノードを生成します。
+          これは Udev が動作していなくても行われます。
+          Udev はその上で起動し、パーミッション管理やシンボリックリンクの追加を行います。
+          Udev/Eudev を利用する場合には本項目を有効にすることが必要です。
+          </para>
+@z
+
+@x
       <title>The meaning of the make parameters:</title>
 @y
       <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
