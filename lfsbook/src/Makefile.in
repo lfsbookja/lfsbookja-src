@@ -257,7 +257,7 @@ BOOKdir = @abs_bookdir@
 srcs = general.ent index.xml packages.ent patches.ent process-scripts.sh \
 	aux-file-data.sh tidy.conf pdf-fixups.sh make-aux-files.sh
 
-EXTRACLEANFILES = $(srcs)
+DISTCLEANFILES = $(srcs)
 BASEDIR = ../svn.ja
 DUMPDIR = ../lfs-commands
 ROOT_ID = 
@@ -490,6 +490,7 @@ clean-generic:
 distclean-generic:
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
+	-test -z "$(DISTCLEANFILES)" || rm -f $(DISTCLEANFILES)
 
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"

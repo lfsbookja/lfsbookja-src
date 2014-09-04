@@ -12,6 +12,8 @@ EXTRA_DIST = wget-list.ch lfs-nochunks.ch lfs-pdf.ch lfs-chunked.ch \
 srcdir = @srcdir@
 srcs = wget-list.xsl lfs-nochunks.xsl lfs-pdf.xsl lfs-chunked.xsl \
 	dump-commands.xsl patcheslist.xsl md5sum.xsl
+DISTCLEANFILES = $(srcs)
+
 SUFFIXES = .ch .xsl
 .ch.xsl:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch

@@ -14,7 +14,7 @@ BOOKdir = @abs_bookdir@
 srcdir = @srcdir@
 srcs = general.ent index.xml packages.ent patches.ent process-scripts.sh \
 	aux-file-data.sh tidy.conf pdf-fixups.sh make-aux-files.sh
-EXTRACLEANFILES = $(srcs)
+DISTCLEANFILES = $(srcs)
 
 SVNVER=@SVNVER@
 BASEDIR=../svn.ja

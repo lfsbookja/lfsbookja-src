@@ -253,6 +253,7 @@ EXTRA_DIST = wget-list.ch lfs-nochunks.ch lfs-pdf.ch lfs-chunked.ch \
 srcs = wget-list.xsl lfs-nochunks.xsl lfs-pdf.xsl lfs-chunked.xsl \
 	dump-commands.xsl patcheslist.xsl md5sum.xsl
 
+DISTCLEANFILES = $(srcs)
 SUFFIXES = .ch .xsl
 all: all-recursive
 
@@ -475,6 +476,7 @@ clean-generic:
 distclean-generic:
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
+	-test -z "$(DISTCLEANFILES)" || rm -f $(DISTCLEANFILES)
 
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
