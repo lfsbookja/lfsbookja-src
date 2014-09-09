@@ -52,6 +52,14 @@
 @z
 
 @x
+    <para>First, fix one of the regression tests:</para>
+@y
+    <para>
+    まずは縮退テスト (regression test) の不備を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Util-linux for compilation:</para>
 @y
     <para>&PreparePackage1;Util-linux&PreparePackage2;</para>

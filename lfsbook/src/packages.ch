@@ -35,11 +35,17 @@
 <!ENTITY dejagnu-ch5-sbu "0.1 SBU 以下">
 @z
 
-% @x
-% <!ENTITY dbus-ch6-sbu "less than 0.4 SBU">
-% @y
-% <!ENTITY dbus-ch6-sbu "0.4 SBU 以下">
-% @z
+@x
+<!ENTITY gcc-ch6-sbu "84 SBU (with tests)">
+@y
+<!ENTITY gcc-ch6-sbu "84 SBU (テスト込み)">
+@z
+
+@x
+<!ENTITY gperf-ch6-sbu "less than 0.1 SBU">
+@y
+<!ENTITY gperf-ch6-sbu "0.1 SBU 以下">
+@z
 
 @x
 <!ENTITY iana-etc-ch6-sbu "less than 0.1 SBU">
@@ -48,15 +54,21 @@
 @z
 
 @x
-<!ENTITY less-ch6-sbu "less than 0.1 SBU">
+<!ENTITY intltool-ch6-sbu "less than 0.1 SBU">
 @y
-<!ENTITY less-ch6-sbu "0.1 SBU 以下">
+<!ENTITY intltool-ch6-sbu "0.1 SBU 以下">
 @z
 
 @x
 <!ENTITY lfs-bootscripts-ch7-sbu "less than 0.1 SBU">
 @y
 <!ENTITY lfs-bootscripts-ch7-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY libcap-ch6-sbu "less than 0.1 SBU">
+@y
+<!ENTITY libcap-ch6-sbu "0.1 SBU 以下">
 @z
 
 @x
@@ -71,12 +83,6 @@
 <!ENTITY man-pages-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY man-pages-ch6-sbu "0.1 SBU 以下">
-@z
-
-@x
-<!ENTITY patch-ch6-sbu "less than 0.1 SBU">
-@y
-<!ENTITY patch-ch6-sbu "0.1 SBU 以下">
 @z
 
 @x
@@ -95,6 +101,12 @@
 <!ENTITY sysvinit-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY sysvinit-ch6-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY xml-parser-ch6-sbu "less than 0.1 SBU">
+@y
+<!ENTITY xml-parser-ch6-sbu "0.1 SBU 以下">
 @z
 
 @x

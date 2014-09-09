@@ -52,14 +52,6 @@
 @z
 
 @x
-    <para>First fix a minor problem when installing the tzselect script:</para>
-@y
-    <para>
-    tzselect スクリプトのインストール時での問題を修正します。
-    </para>
-@z
-
-@x
     <para>Some of the Glibc programs use non-FHS compilant
     <filename class="directory">/var/db</filename> directory to store
     their runtime data. Apply the following patch to make such programs
@@ -149,21 +141,19 @@
 @z
 
 @x
-    <para>You will probably see an expected (ignored) failure in the
-    <emphasis>posix/annexc</emphasis> and
-    <emphasis>conform/run-conformtest</emphasis> tests.  In addition the Glibc
-    test suite is somewhat dependent on the host system.  This is a list of the
-    most common issues:</para>
+    <para>You will probably see some test failures.  The Glibc test suite is
+    somewhat dependent on the host system.  This is a list of the most common
+    issues seen for this version of LFS:</para>
 @y
     <para>
-    <emphasis>posix/annexc</emphasis> と <emphasis>conform/run-conformtest</emphasis> のテストはおそらく失敗します。
-    これは想定されていることであり無視することができます。
-    そもそも Glibc のテストスイートはホストシステムにある程度依存します。
-    発生しがちな問題を以下に示します。
+    テストを実施すると、失敗するものも出てきます。
+    これは Glibc のテストスイートがホストシステムにある程度依存しているためです。
+    LFS の当バージョンにおいて発生しがちな問題を以下に示します。
     </para>
 @z
 
 @x
+      <listitem>
         <para>The <emphasis>nptl/tst-clock2</emphasis>,
         <emphasis>nptl/tst-attr3</emphasis>, 
         <emphasis>tst/tst-cputimer1</emphasis>, and 
@@ -172,10 +162,7 @@
         reason is not completely understood, but indications are that minor
         timing issues can trigger these failures.</para>
 @y
-<!--
-minor timing issues が何を意味するのか不明であった。
-訳出不十分
--->
+      <listitem>
         <para>
         <emphasis>nptl/tst-clock2</emphasis>,
         <emphasis>nptl/tst-attr3</emphasis>,

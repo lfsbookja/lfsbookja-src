@@ -61,21 +61,6 @@
 @z
 
 @x
-          <para>Freecode (<ulink url="http://freecode.com/"/>)</para>
-@y
-          <para>Freecode (<ulink url="http://freecode.com/"/>)</para>
-@z
-
-@x
-          <para>Freecode can notify you (via email) of new versions of packages
-          installed on your system.</para>
-@y
-          <para>
-          Freecode は、システムにインストールされているパッケージの新しいバージョンが提供されると、それを (電子メールで) 通知してくれます。
-          </para>
-@z
-
-@x
           <para><ulink url="http://www.cert.org/">CERT</ulink> (Computer
           Emergency Response Team)</para>
 @y

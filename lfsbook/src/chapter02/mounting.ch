@@ -88,14 +88,13 @@
   too restrictive (such as the <option>nosuid</option> or
   <option>nodev</option> options). Run the <command>mount</command> command
   without any parameters to see what options are set for the mounted LFS
-  partition. If <option>nosuid</option>, <option>nodev</option>, and/or
-  <option>noatime</option> are set, the partition will need to be
-  remounted.</para>
+  partition. If <option>nosuid</option> and/or <option>nodev</option> are set,
+  the partition will need to be remounted.</para>
 @y
   <para>
   この新しいパーティションは特別な制限オプション (<option>nosuid</option>、<option>nodev</option> など) は設定せずにマウントします。
   <command>mount</command> コマンドの実行時に引数を与えずに実行すれば、LFS パーティションがどのようなオプション設定によりマウントされているかが分かります。
-  もし <option>nosuid</option>、<option>nodev</option>、<option>noatime</option> といったオプションが設定されていたら、マウントし直してください。
+  もし <option>nosuid</option>、<option>nodev</option>オプションが設定されていたら、マウントし直してください。
   </para>
 @z
 

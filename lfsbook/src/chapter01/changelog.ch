@@ -48,6 +48,60 @@
 @z
 
 @x
+      <para>2014-09-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.6-rc1 released.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.72. Fixes
+          <ulink url="&lfs-ticket-root;3669">#3669</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add upstream patches to gcc.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.16.2.  Fixes 
+          <ulink url="&lfs-ticket-root;3668">#3668</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.25.1.  Fixes 
+          <ulink url="&lfs-ticket-root;3666">#3666</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove reference to defunct web site.  Fixes 
+          <ulink url="&lfs-ticket-root;3665">#3665</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-09-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.6-rc1 リリース。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.72 へのアップデート。
+          <ulink url="&lfs-ticket-root;3669">#3669</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc のアップストリームによるパッチを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.16.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3668">#3668</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.25.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3666">#3666</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 存在しない URL への参照を削除。
+          <ulink url="&lfs-ticket-root;3665">#3665</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-08-31</para>
       <itemizedlist>
         <listitem>

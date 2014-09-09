@@ -37,6 +37,15 @@
 @z
 
 @x
+    <para>First fix a problem identified upstream that causes some 
+    programs to fail:</para>
+@y
+    <para>
+    さらにアップストリームが認識しているバグを修正します。
+    </para>
+@z
+
+@x
     <para>As in <xref linkend="ch-tools-gcc-pass2"/>, apply the following
     <command>sed</command> to force the build to use the
     <option>-fomit-frame-pointer</option> compiler flag in order to ensure
