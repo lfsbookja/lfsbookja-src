@@ -48,21 +48,41 @@
 @z
 
 @x
+      <para>2014-09-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Simplify glibc testing.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-09-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc テストの簡略化。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-09-08</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - LFS-7.6-rc1 released.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to man-pages-3.72. Fixes
-          <ulink url="&lfs-ticket-root;3669">#3669</ulink>.</para>
+          <para>[bdubbs] - Add upstream patches to gcc.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Add upstream patches to gcc.</para>
+          <para>[bdubbs] - Update to glibc-2.20  Fixes
+          <ulink url="&lfs-ticket-root;3667">#3667</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-3.16.2.  Fixes 
           <ulink url="&lfs-ticket-root;3668">#3668</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.72. Fixes
+          <ulink url="&lfs-ticket-root;3669">#3669</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to util-linux-2.25.1.  Fixes 
@@ -80,15 +100,19 @@
           <para>[bdubbs] - LFS-7.6-rc1 リリース。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - man-pages-3.72 へのアップデート。
-          <ulink url="&lfs-ticket-root;3669">#3669</ulink> を Fix に。</para>
+          <para>[bdubbs] - gcc のアップストリームによるパッチを追加。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - gcc のアップストリームによるパッチを追加。</para>
+          <para>[bdubbs] - glibc-2.20 へのアップデート。
+          <ulink url="&lfs-ticket-root;3667">#3667</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - linux-3.16.2 へのアップデート。
           <ulink url="&lfs-ticket-root;3668">#3668</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.72 へのアップデート。
+          <ulink url="&lfs-ticket-root;3669">#3669</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - util-linux-2.25.1 へのアップデート。

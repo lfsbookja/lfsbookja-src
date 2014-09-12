@@ -223,13 +223,12 @@
 @z
 
 @x Expat
-        <para>This package contains programs for parsing XML.  It is
-        required for XML-Parser.
-        </para>
+        <para>This package contains a relatively small XML parsing library.  It
+        is required by the XML::Parser Perl module.</para>
 @y
         <para>
-        このパッケージは XML を解析するプログラムを提供します。
-        XML-Parser がこれを必要とします。
+        このパッケージは比較的小規模の XML 解析ライブラリを提供します。
+        XML-Parser Perl モジュールがこれを必要とします。
         </para>
 @z
 
@@ -341,12 +340,11 @@
 @z
 
 @x Gperf
-        <para>This package a program that generates a perfect hash function 
-        from a key set.  It is required for Eudev.
-        </para>
+        <para>This package contains a program that generates a perfect hash
+        function from a key set. It is required for Eudev.</para>
 @y
         <para>
-        このパッケージは、キーセットを利用して完全なハッシュ関数を生成するプログラムを提供します。
+        このパッケージは、キーセットから完全なハッシュ関数を生成するプログラムを提供します。
         Eudev がこれを必要としています。
         </para>
 @z

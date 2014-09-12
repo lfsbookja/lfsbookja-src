@@ -149,14 +149,14 @@
   <option>barrier=1</option> mount option to the appropriate entry in
   <filename>/etc/fstab</filename>.  To check if the disk drive supports
   this option, run
-  <ulink url="http://www.linuxfromscratch.org/blfs/view/cvs/general/hdparm.html">hdparm</ulink>
+  <ulink url="&blfs-root;view/&short-version;/general/hdparm.html">hdparm</ulink>
   on the applicable disk drive.  For example, if:</para>
 @y
   <para>
   特定のハードディスクにおいて ext3 ファイルシステムでの電源供給不足時の信頼性を向上させることができます。
   これは <filename>/etc/fstab</filename> での定義においてマウントオプション <option>barrier=1</option> を指定します。
   ハードディスクがこのオプションをサポートしているかどうかは <ulink
-  url="http://www.linuxfromscratch.org/blfs/view/cvs/general/hdparm.html">hdparm</ulink> を実行することで確認できます。
+  url="&blfs-root;view/&short-version;/general/hdparm.html">hdparm</ulink> を実行することで確認できます。
   例えば以下のコマンドを実行します。
   </para>
 @z
