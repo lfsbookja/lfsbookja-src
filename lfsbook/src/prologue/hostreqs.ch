@@ -182,6 +182,12 @@
 @z
 
 @x
+  <sect2 id="version-check" xreflabel="Section vii, Host System Requirements">
+@y
+  <sect2 id="version-check" xreflabel="vii 節、ホストシステム要件">
+@z
+
+@x
   <para >To see whether your host system has all the appropriate versions, and
   the ability to compile programs, run the following:</para>
 @y

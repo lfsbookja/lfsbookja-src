@@ -95,9 +95,9 @@
 @z
 
 @x
-        <para>The output from the <xref linkend='version-check'/></para>
+        <para>The output from the <xref linkend='version-check'/> script</para>
 @y
-        <para><xref linkend='version-check'/> の出力結果。</para>
+        <para><xref linkend='version-check'/> におけるスクリプトの出力結果。</para>
 @z
 
 @x
