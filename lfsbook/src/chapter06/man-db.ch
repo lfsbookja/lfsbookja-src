@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>Disable two tests that fail:</para>
-@y
-    <para>
-    テストの中で失敗するものを無効化します。
-    </para>
-@z
-
-@x
     <para>Prepare Man-DB for compilation:</para>
 @y
     <para>&PreparePackage1;Man-DB&PreparePackage2;</para>

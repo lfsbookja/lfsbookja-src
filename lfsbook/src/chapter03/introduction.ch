@@ -119,9 +119,9 @@
 @z
 
 @x
-<screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
+<screen role="nodump"><userinput>wget --input-file=wget-list --continue --directory-prefix=$LFS/sources</userinput></screen>
 @y
-<screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
+<screen role="nodump"><userinput>wget --input-file=wget-list --continue --directory-prefix=$LFS/sources</userinput></screen>
 
 <note>
 <title>日本語訳情報</title>
@@ -165,8 +165,8 @@ rm wget-list-ja.sed</userinput></screen>
 その場合にはパッケージ取得に失敗してしまいます。
 そこで wget-list と wget-list.orig を順に利用し、かつ <application>wget</application> コマンドにて -N オプションを使って (取得済のものはスキップするようにして) 以下のコマンドを実行すれば、確実にすべてのパッケージを入手することができます。
 </para>
-<screen><userinput remap="sed-wgetlist">wget -N -i wget-list -P $LFS/sources
-wget -N -i wget-list.orig -P $LFS/sources</userinput></screen>
+<screen role="nodump"><userinput remap="sed-wgetlist">wget -N --input-file=wget-list --continue --directory-prefix=$LFS/sources
+wget -N --input-file=wget-list.orig --continue --directory-prefix=$LFS/sources</userinput></screen>
 
 </note>
 

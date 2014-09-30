@@ -48,6 +48,68 @@
 @z
 
 @x
+      <para>2014-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated bash upstream patches and added fixes for
+          CVE-2014-6271, CVE-2014-7169, and CVE-2014-7187 (through upstream
+          patch bash43-027).</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2014h. Fixes 
+          <ulink url="&lfs-ticket-root;3682">#3682</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.7.0.2. Fixes 
+          <ulink url="&lfs-ticket-root;3683">#3683</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Improved wget command line in Section 3.1. Fixes 
+          <ulink url="&lfs-ticket-root;3684">#3684</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash のアップストリームによるパッチを更新し CVE-2014-6271, CVE-2014-7169, CVE-2014-7187 への対応を追加。
+          (アップストリームによるパッチ bash43-027 に基づく。)</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2014h へのアップデート。
+          <ulink url="&lfs-ticket-root;3682">#3682</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.7.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3683">#3683</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第3.1節における wget コマンドを改善。
+          <ulink url="&lfs-ticket-root;3684">#3684</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-09-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Updated bash upstream patches and added fixes for
+          CVE-2014-7169. Fixes <ulink
+          url="&lfs-ticket-root;3680">#3680</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-09-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - bash のアップストリームによるパッチを更新し CVE-2014-7169 への対応を追加。
+          <ulink url="&lfs-ticket-root;3680">#3680</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-09-24</para>
       <itemizedlist>
         <listitem>
@@ -117,7 +179,7 @@
       <para>2014-09-23</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - LFS-7.r65 released.</para>
+          <para>[bdubbs] - LFS-7.6 released.</para>
         </listitem>
       </itemizedlist>
 @y

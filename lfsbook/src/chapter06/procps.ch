@@ -91,7 +91,7 @@
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed library</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledLibrary;</segtitle>
@@ -100,7 +100,7 @@
 
 @x
         <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop,
-        sysctl, tload, top, uptime, vmstat, w, and, watch</seg>
+        sysctl, tload, top, uptime, vmstat, w, and watch</seg>
         <seg>libprocps.so</seg>
         <seg>/usr/include/proc, /usr/share/doc/procps-ng-&procps-ng-version;</seg>
 @y
