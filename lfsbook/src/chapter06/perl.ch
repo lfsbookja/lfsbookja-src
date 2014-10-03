@@ -54,6 +54,14 @@
 @z
 
 @x
+    <para>Fix a potential security problem:</para>
+@y
+    <para>
+    セキュリティに関する根本的な問題を修正します。
+    </para>
+@z
+
+@x
     <para>To have full control over the way Perl is set up, you can remove the
     <quote>-des</quote> options from the following command and hand-pick the way
     this package is built. Alternatively, use the command exactly as below to

@@ -154,20 +154,13 @@
 
 @x
       <listitem>
-        <para>The <emphasis>nptl/tst-clock2</emphasis>,
-        <emphasis>nptl/tst-attr3</emphasis>, 
-        <emphasis>tst/tst-cputimer1</emphasis>, and 
-        <emphasis>rt/tst-cpuclock2</emphasis>
-        tests have been known to fail.  The
-        reason is not completely understood, but indications are that minor
-        timing issues can trigger these failures.</para>
+        <para>The <emphasis>tst/tst-cputimer1</emphasis> test has been known to
+        fail.  The reason is not completely understood, but indications are
+        that minor timing issues can trigger this failure.</para>
 @y
       <listitem>
         <para>
-        <emphasis>nptl/tst-clock2</emphasis>,
-        <emphasis>nptl/tst-attr3</emphasis>,
-        <emphasis>tst/tst-cputimer1</emphasis>,
-        <emphasis>rt/tst-cpuclock2</emphasis> の各テストは失敗することがあります。
+        <emphasis>tst/tst-cputimer1</emphasis> のテストは失敗することが知られています。
         失敗の理由は明確ではありません。
         ただ処理速度が原因してそれらが発生すると思われます。
         </para>
@@ -217,14 +210,12 @@
 @z
 
 @x
-        <para>Other tests known to fail on some architectures are posix/bug-regex32,
-        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, nptl/tst-robust8,
-        and stdio-common/bug22.</para>
+        <para>Other tests known to fail on some architectures are
+        malloc/tst-malloc-usable and  nptl/tst-cleanupx4. </para>
 @y
         <para>
         上記以外に特定のアーキテクチャーにてテストが失敗することが分かっています。
-        失敗するのは posix/bug-regex32,
-        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, nptl/tst-robust8, stdio-common/bug22 です。
+        失敗するのは malloc/tst-malloc-usable, nptl/tst-cleanupx4 です。
         </para>
 @z
 
