@@ -48,6 +48,33 @@
 @z
 
 @x
+      <para>2014-09-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Updated bash upstream patches and added fixes for
+          CVE-2014-6277. Fixes <ulink
+          url="&lfs-ticket-root;3680">#3686</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated reaadline upstream patches. Fixes <ulink
+          url="&lfs-ticket-root;3680">#3687</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-10-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - bash のアップストリームによるパッチを更新し CVE-2014-6277 への対応を追加。
+          <ulink url="&lfs-ticket-root;3680">#3686</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - readline のアップストリームによるパッチへの更新。<ulink
+          url="&lfs-ticket-root;3680">#3687</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-10-02</para>
       <itemizedlist>
         <listitem>
@@ -69,18 +96,17 @@
       <para>2014-10-02</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Added perl patch to fix CVE-2014-4330.
-          to prevent infinite recursion in Data::Dumper.  Fixes
-          <ulink url="&lfs-ticket-root;3681">#3681</ulink>.</para>
+          <para>[bdubbs] - perl にて CVE-2014-4330 を解消するパッチを追加。
+          これにより Data::Dumper での無限再帰処理を回避。
+          <ulink url="&lfs-ticket-root;3681">#3681</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to grub-2.02~beta2.  It's been
-          in beta for over 9 months and a 'stable' does not seem
-          to be forthcoming.  Fixes 
-          <ulink url="&lfs-ticket-root;3450">#3450</ulink>.</para>
+          <para>[bdubbs] - grub-2.02~beta2 へのアップデート。
+          9ヶ月間ベータ版のままであるが "安定版" が出そうにないため。
+          <ulink url="&lfs-ticket-root;3450">#3450</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update glibc tests known to sometimes fail.</para>
+          <para>[bdubbs] - glibc にて失敗するテストを修正。</para>
         </listitem>
       </itemizedlist>
 @z
