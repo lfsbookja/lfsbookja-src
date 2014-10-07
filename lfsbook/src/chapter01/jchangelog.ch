@@ -54,10 +54,25 @@
 -->
 
     <listitem>
+      <para>2014-10-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20141008,
+          Changeset
+          <ulink url="&lfs-rev-root;10773">10773</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2014-10-05</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          SVN-20141004,
           Changeset
           <ulink url="&lfs-rev-root;10771">10771</ulink>
           対応。
@@ -71,6 +86,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          SVN-20140929,
           Changeset
           <ulink url="&lfs-rev-root;10769">10769</ulink>
           対応。
@@ -84,6 +100,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          SVN-20140929,
           Changeset
           <ulink url="&lfs-rev-root;10764">10764</ulink> ～
           <ulink url="&lfs-rev-root;10768">10768</ulink>
@@ -98,6 +115,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          SVN-20140924,
           Changeset
           <ulink url="&lfs-rev-root;10759">10759</ulink> ～
           <ulink url="&lfs-rev-root;10763">10763</ulink>
@@ -112,6 +130,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          SVN-20140923,
           Changeset
           <ulink url="&lfs-rev-root;10758">10758</ulink>
           対応。(LFS 7.6 リリース対応。)

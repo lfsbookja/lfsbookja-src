@@ -8,15 +8,15 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version         "SVN-20141004">
+<!ENTITY version         "SVN-20141008">
 <!ENTITY short-version   "svn">  <!-- Used in dbus chapter, change to x.y for release -->
-<!ENTITY releasedate     "October 4, 2014">
+<!ENTITY releasedate     "October 8, 2014">
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version         "SVN-20141004">
+<!ENTITY version         "SVN-20141008">
 <!ENTITY short-version   "svn">  <!-- Used in dbus chapter, change to x.y for release -->
-<!ENTITY releasedate     "2014年10月4日">
-<!ENTITY jversion        "20141005">
+<!ENTITY releasedate     "2014年10月8日">
+<!ENTITY jversion        "20141008">
 @z
 
 @x
