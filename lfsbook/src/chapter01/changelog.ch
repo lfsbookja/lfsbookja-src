@@ -51,6 +51,24 @@
       <para>2014-10-08</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to file-5.20. Fixes 
+          <ulink url="&lfs-ticket-root;3691">#3691</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-10-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - file-5.20 へのアップデート。
+          <ulink url="&lfs-ticket-root;3691">#3691</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-10-08</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to man-pages-3.74. Fixes 
           <ulink url="&lfs-ticket-root;3685">#3685</ulink>.</para>
         </listitem>
