@@ -48,11 +48,15 @@
 @z
 
 @x
-      <para>2014-10-08</para>
+      <para>2014-10-11</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to file-5.20. Fixes 
           <ulink url="&lfs-ticket-root;3691">#3691</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated bash upstream patches and added fixes for
+          CVE-2014-6278.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -61,6 +65,9 @@
         <listitem>
           <para>[bdubbs] - file-5.20 へのアップデート。
           <ulink url="&lfs-ticket-root;3691">#3691</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - bash のアップストリームによるパッチを更新し CVE-2014-6278 への対応を追加。</para>
         </listitem>
       </itemizedlist>
 @z
