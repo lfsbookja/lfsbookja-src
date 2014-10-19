@@ -72,7 +72,7 @@
     conditions that are not fully understood. Therefore, test suite failures
     here are not surprising, and are not considered critical. The
     <parameter>TZ=UTC</parameter> parameter sets the time zone to Coordinated
-    Universal Time (UTC), also known as Greenwich Mean Time (GMT), but only
+    Universal Time (UTC), but only
     for the duration of the test suite run. This ensures that the clock tests
     are exercised correctly. Details on the <envar>TZ</envar> environment
     variable are provided in <xref linkend="chapter-bootscripts"/>.</para>
@@ -80,7 +80,7 @@
     <para>
     Tcl のテストスイートは、特定のホスト環境において失敗することがありますが、その原因はよく分かっていません。
     したがってテストスイートの失敗は驚くことではなく、さして重大なことではありません。
-    <parameter>TZ=UTC</parameter> はタイムゾーンを協定世界時間 (Coordinated Universal Time; UTC) あるいはグリニッジ標準時間としても知られる時間に設定します。
+    <parameter>TZ=UTC</parameter> はタイムゾーンを協定世界時間 (Coordinated Universal Time; UTC) としても知られる時間に設定します。
     ただしこれはテストスイートを実行する時だけの設定です。
     こうしておけば時刻に関するテストが正しく処理されます。
     環境変数 <envar>TZ</envar> については <xref linkend="chapter-bootscripts"/>にて詳しく説明しています。

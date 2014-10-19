@@ -48,6 +48,49 @@
 @z
 
 @x
+      <para>2014-10-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove reference to GMT in Chapter 5
+          tcl page. Fixes 
+          <ulink url="&lfs-ticket-root;3692">#3692</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.17.1. Fixes 
+          <ulink url="&lfs-ticket-root;3693">#3693</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.19.3. Fixes 
+          <ulink url="&lfs-ticket-root;3694">#3694</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.75. Fixes 
+          <ulink url="&lfs-ticket-root;3695">#3695</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-10-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第5章の tcl ページにて GMT の説明を削除。
+          <ulink url="&lfs-ticket-root;3692">#3692</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.17.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3693">#3693</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.19.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3694">#3694</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.75 へのアップデート。
+          <ulink url="&lfs-ticket-root;3695">#3695</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-10-11</para>
       <itemizedlist>
         <listitem>
