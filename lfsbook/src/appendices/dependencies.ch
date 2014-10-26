@@ -1582,9 +1582,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg><ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink></seg>
 @y
-          <seg>なし</seg>
+          <seg><ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink></seg>
 @z
 
 %----------------------------------------------------------------------

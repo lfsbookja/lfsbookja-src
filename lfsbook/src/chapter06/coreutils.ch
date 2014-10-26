@@ -74,6 +74,16 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
+@x FORCE_UNSAFE_CONFIGURE=1
+          <para>This environment variable allows the package to be 
+          built as the root user.
+          </para>
+@y
+          <para>
+          この環境変数は root ユーザーによりパッケージをビルドできるようにします。
+          </para>
+@z
+
 @x
           <para>The purpose of this switch is to prevent Coreutils from
           installing binaries that will be installed by other packages later.
@@ -139,6 +149,16 @@
     <para>
     テストを実行します。
     <userinput>su</userinput> 環境において PATH に /tools/bin が含まれていることを確認してください。
+    </para>
+@z
+
+@x
+    <para>The stty-pairs test is known to fail on a virtual console, but
+    passes if run in a X terminal.</para>
+@y
+    <para>
+    stty-pairs テストは仮想端末上では失敗します。
+    しかし X 端末では成功します。
     </para>
 @z
 

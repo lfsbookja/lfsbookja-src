@@ -66,6 +66,16 @@
 @z
 
 @x
+    <para>The --disable and --without options prevent warnings about
+    building components that require packages not in LFS or are 
+    inconsistent with programs installed by other packages.</para>
+@y
+    <para>
+    --disable と --without のオプションは、LFS では必要のないパッケージ、あるいは他のパッケージのインストールによって不整合となったパッケージに対して出力される警告をなくします。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

@@ -65,9 +65,12 @@ will also be used as a part of installation:</para>
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package and create the initial
+    <filename>/etc/udev/hwdb.bin</filename> file:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    パッケージをインストールし、初期ファイル <filename>/etc/udev/hwdb.bin</filename> を生成します。
+    </para>
 @z
 
 @x

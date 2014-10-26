@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2014-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add an instruction to the eudev install
+          to create the initial /etc/udev/hwdb.bin file.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2014i. Fixes 
+          <ulink url="&lfs-ticket-root;3696">#3696</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.25.2. Fixes 
+          <ulink url="&lfs-ticket-root;3697">#3697</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - eudev のインストールにて初期ファイル /etc/udev/hwdb.bin 生成の説明を追加。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2014i へのアップデート。
+          <ulink url="&lfs-ticket-root;3696">#3696</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.25.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3697">#3697</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-10-19</para>
       <itemizedlist>
         <listitem>
