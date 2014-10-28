@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2014-10-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.4.0. Fixes 
+          <ulink url="&lfs-ticket-root;3698">#3698</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-10-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.4.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3698">#3698</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-10-25</para>
       <itemizedlist>
         <listitem>
