@@ -49,6 +49,15 @@
 @z
 
 @x
+    <para>Five tests are known to fail in the LFS build envronment,
+    but all tests pass if rechecked after Chapter 6 is complete.</para>
+@y
+    <para>
+    LFS ビルド環境下では５つのテストが失敗しますが、第6章をすべて終えた後に再テストすれば、全テストが成功します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

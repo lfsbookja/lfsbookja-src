@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2014-10-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to libtool-2.4.3. Fixes 
+          <ulink url="&lfs-ticket-root;3699">#3699</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-2.1. Fixes 
+          <ulink url="&lfs-ticket-root;3700">#3700</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-10-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libtool-2.4.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3699">#3699</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3700">#3700</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-10-26</para>
       <itemizedlist>
         <listitem>
