@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2014-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.17.2. Fixes 
+          <ulink url="&lfs-ticket-root;3704">#3704</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-3.17.0. Fixes 
+          <ulink url="&lfs-ticket-root;3703">#3703</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.17.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3704">#3704</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-3.17.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3703">#3703</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-10-31</para>
       <itemizedlist>
         <listitem>
