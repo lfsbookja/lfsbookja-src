@@ -190,6 +190,7 @@ CHANGE_FILES = \
 	bootscripts.ch  \
 	chapter07.ch    \
 	console.ch      \
+	etcshells.ch    \
 	hostname.ch     \
 	hosts.ch        \
 	inputrc.ch      \
@@ -404,6 +405,7 @@ ctie:
 bootscripts.xml:  $(BOOKdir)/$@ $(srcdir)/bootscripts.ch
 chapter07.xml:    $(BOOKdir)/$@ $(srcdir)/chapter07.ch
 console.xml:      $(BOOKdir)/$@ $(srcdir)/console.ch
+etcshells.xml:    $(BOOKdir)/$@ $(srcdir)/etcshells.ch
 hostname.xml:     $(BOOKdir)/$@ $(srcdir)/hostname.ch
 hosts.xml:        $(BOOKdir)/$@ $(srcdir)/hosts.ch
 inputrc.xml:      $(BOOKdir)/$@ $(srcdir)/inputrc.ch
