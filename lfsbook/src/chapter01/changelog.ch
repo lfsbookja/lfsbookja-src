@@ -48,7 +48,25 @@
 @z
 
 @x
-      <para>2014-11-01</para>
+      <para>2014-11-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to groff-1.22.3. Fixes 
+          <ulink url="&lfs-ticket-root;3706">#3706</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-11-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - groff-1.22.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3706">#3706</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-11-03</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Move the page concerning /etc/shells
