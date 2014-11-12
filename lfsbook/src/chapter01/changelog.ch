@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2014-11-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change default permissions for /run/lock to 1777.</para> 
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-11-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /run/lock のデフォルトパーミッションを 1777 に。</para> 
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-11-05</para>
       <itemizedlist>
         <listitem>
