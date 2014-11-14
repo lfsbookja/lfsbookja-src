@@ -83,7 +83,15 @@
     <para>
     テストスイート内の LTO に関するテストをいくつか修正します。
     </para>
-@zx
+@z
+
+@x
+    <para>Enable binutils to recognize multiple plugins:</para>
+@y
+    <para>
+    マルチプラグイン (multiple plugins) を認識するように修正します。
+    </para>
+@z
 
 @x
     <para>The Binutils documentation recommends building Binutils outside of the

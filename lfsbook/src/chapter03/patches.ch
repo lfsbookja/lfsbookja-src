@@ -67,6 +67,12 @@
         <para>MD5 sum: <literal>&binutils-lto-testsuite-patch-md5;</literal></para>
 @z
 
+@x Binutils Multiple Plugins Patch
+        <para>Download: <ulink url="&patches-root;&binutils-multiple-plugins-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&binutils-multiple-plugins-patch;"/></para>
+@z
+
 @x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
 @y
@@ -101,6 +107,12 @@
         <para>Download: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
+@z
+
+@x Perl Data::Dumper Patch
+        <para>Download: <ulink url="&patches-root;&perl-fix-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&perl-fix-patch;"/></para>
 @z
 
 @x Readline Upstream Fixes Patch

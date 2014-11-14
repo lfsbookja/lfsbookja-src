@@ -48,6 +48,68 @@
 @z
 
 @x
+      <para>2014-11-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2014j. Fixes 
+          <ulink url="&lfs-ticket-root;3710">#3710</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tcl-8.6.3. Fixes 
+          <ulink url="&lfs-ticket-root;3711">#3711</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-11-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata-2014j へのアップデート。
+          <ulink url="&lfs-ticket-root;3710">#3710</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl-8.6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3711">#3711</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-11-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bash-4.3.30. Fixes 
+          <ulink url="&lfs-ticket-root;3708">#3708</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.7.1. Fixes 
+          <ulink url="&lfs-ticket-root;3709">#3709</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add binutils-2.24-multiple_plugins-1.patch. 
+          Thanks to Miklos Karacsony fro the patch.  Fixes 
+          <ulink url="&lfs-ticket-root;3707">#3707</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-11-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash-4.3.30 へのアップデート。
+          <ulink url="&lfs-ticket-root;3708">#3708</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.7.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3709">#3709</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.24-multiple_plugins-1.patch の追加。
+          パッチを作成してくれた Miklos Karacsony に感謝。
+          <ulink url="&lfs-ticket-root;3707">#3707</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-11-10</para>
       <itemizedlist>
         <listitem>
