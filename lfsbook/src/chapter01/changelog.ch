@@ -48,6 +48,82 @@
 @z
 
 @x
+      <para>2014-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update acknowledgements. Fixes 
+          <ulink url="&lfs-ticket-root;3716">#3716</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libtool-2.4.4. Fixes 
+          <ulink url="&lfs-ticket-root;3715">#3715</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 謝辞 (acknowledgements) の更新。
+          <ulink url="&lfs-ticket-root;3716">#3716</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtool-2.4.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3715">#3715</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-11-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Reformat eudev to support jhalfs.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-11-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - eudev にて jhalfs をサポートするように修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-11-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.17.4. Fixes 
+          <ulink url="&lfs-ticket-root;3712">#3712</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-19. Fixes 
+          <ulink url="&lfs-ticket-root;3713">#3713</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-2.21. Fixes 
+          <ulink url="&lfs-ticket-root;3714">#3714</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-11-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.17.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3712">#3712</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-19 へのアップデート。
+          <ulink url="&lfs-ticket-root;3713">#3713</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-2.21 へのアップデート。
+          <ulink url="&lfs-ticket-root;3714">#3714</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-11-13</para>
       <itemizedlist>
         <listitem>

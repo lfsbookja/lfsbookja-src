@@ -990,9 +990,9 @@ Typo ですが日本語訳には影響ありません。
          Make, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Findutils</seg>
+          <seg>Autoconf, Automake, Findutils</seg>
 @y
-          <seg>Findutils</seg>
+          <seg>Autoconf, Automake, Findutils</seg>
 @z
 @x
           <seg>None</seg>

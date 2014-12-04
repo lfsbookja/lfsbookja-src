@@ -149,11 +149,10 @@
 @x
       <para><ulink url="mailto:johan@linuxfromscratch.org">Johan
       Lenglet</ulink> &lt;johan@linuxfromscratch.org&gt; &ndash; French LFS
-      translation project</para>
+      translation project until 2008</para>
 @y
       <para><ulink url="mailto:johan@linuxfromscratch.org">Johan
-      Lenglet</ulink> &lt;johan@linuxfromscratch.org&gt; &ndash;
-      フランスの LFS 翻訳プロジェクト</para>
+      Lenglet</ulink> &lt;johan@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2008年より</para>
 @z
 
 @x

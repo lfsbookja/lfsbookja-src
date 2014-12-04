@@ -43,17 +43,20 @@
 @z
 
 @x
-    <para>To test the results (about 3.0 SBU), issue:</para>
+    <para>To test the results (about 11.0 SBU), issue:</para>
 @y
-    <para>コンパイル結果をテストするには以下を実行します。(約 3.0 SBU)</para>
+    <para>コンパイル結果をテストするには以下を実行します。(約 11.0 SBU)</para>
 @z
 
 @x
-    <para>Five tests are known to fail in the LFS build envronment,
-    but all tests pass if rechecked after Chapter 6 is complete.</para>
+    <para>Five tests are known to fail in the LFS build envronment due
+    to a circular dependency, but all tests pass if rechecked after 
+    automake is installed.</para>
 @y
     <para>
-    LFS ビルド環境下では５つのテストが失敗しますが、第6章をすべて終えた後に再テストすれば、全テストが成功します。
+    LFS ビルド環境下では５つのテストが失敗します。
+    これはパッケージ間の相互依存のためです。
+    automake をインストールした後に再テストすれば、全テストが成功します。
     </para>
 @z
 

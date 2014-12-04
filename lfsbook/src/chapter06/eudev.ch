@@ -59,26 +59,25 @@ will also be used as a part of installation:</para>
 @z
 
 @x
-<para>To test the results, run issue:</para>
+<para>To test the results, issue:</para>
 @y
 <para>コンパイル結果をテストするには以下を実行します。</para>
 @z
 
 @x
-    <para>Install the package and create the initial
-    <filename>/etc/udev/hwdb.bin</filename> file:</para>
+    <para>Install the package:</para>
 @y
     <para>
-    パッケージをインストールし、初期ファイル <filename>/etc/udev/hwdb.bin</filename> を生成します。
+    &InstallThePackage;
     </para>
 @z
 
 @x
-<para>Now, install the man pages:</para>
+    <para>Now, install the man pages:</para>
 @y
-<para>
-man ページをインストールします。
-</para>
+    <para>
+    man ページをインストールします。
+    </para>
 @z
 
 @x
