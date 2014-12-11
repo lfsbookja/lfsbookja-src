@@ -90,6 +90,44 @@ will also be used as a part of installation:</para>
 @z
 
 @x
+    <title>Configuring Eudev</title>
+@y
+    <title>&Configuring1;Eudev&Configuring2;</title>
+@z
+
+@x
+      <secondary>configuring</secondary>
+@y
+      <secondary>設定</secondary>
+@z
+
+@x
+    <para>Information about hardware devices is maintained in the
+    <filename class="directory">/etc/udev/hwdb.d</filename> and
+    <filename class="directory">/usr/lib/udev/hwdb.d</filename> directories.
+    <application>Eudev</application> needs that information to be compiled
+    into a binary database <filename>/etc/udev/hwdb.bin</filename>. Create the
+    initial database:</para>
+@y
+    <para>
+    ハードウェアデバイスに関する情報は、<filename
+    class="directory">/etc/udev/hwdb.d</filename> ディレクトリおよび <filename
+    class="directory">/usr/lib/udev/hwdb.d</filename> ディレクトリに収容されています。
+    <application>Eudev</application> はこの情報をとりまとめて、バイナリデータベース <filename>/etc/udev/hwdb.bin</filename> を作成しています。
+    このデータベース初期化は以下により実現します。
+    </para>
+@z
+
+@x
+    <para>This command needs to be run each time the hardware information is
+    updated.</para>
+@y
+    <para>
+    このコマンドはハードウェア情報が更新された際には必ず実行してください。
+    </para>
+@z
+
+@x
     <title>Contents of Eudev</title>
 @y
     <title>&ContentsOf1;Eudev&ContentsOf2;</title>
