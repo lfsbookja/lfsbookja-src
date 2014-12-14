@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2014-12-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linix-3.18. Fixes 
+          <ulink url="&lfs-ticket-root;3717">#3717</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.21. Fixes 
+          <ulink url="&lfs-ticket-root;3718">#3718</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to XML-Parser-2.43. Fixes 
+          <ulink url="&lfs-ticket-root;3720">#3720</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-12-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.18 へのアップデート。
+          <ulink url="&lfs-ticket-root;3717">#3717</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.21 へのアップデート。
+          <ulink url="&lfs-ticket-root;3718">#3718</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - XML-Parser-2.43 へのアップデート。
+          <ulink url="&lfs-ticket-root;3720">#3720</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-12-03</para>
       <itemizedlist>
         <listitem>
