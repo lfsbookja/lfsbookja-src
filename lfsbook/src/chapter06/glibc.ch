@@ -154,13 +154,14 @@
 
 @x
       <listitem>
-        <para>The <emphasis>tst/tst-cputimer1</emphasis> test has been known to
+        <para>The <emphasis>tst/tst-cputimer1</emphasis> and 
+        <emphasis>rt/tst-cpuclock2</emphasis> tests have been known to
         fail.  The reason is not completely understood, but indications are
-        that minor timing issues can trigger this failure.</para>
+        that minor timing issues can trigger these failures.</para>
 @y
       <listitem>
         <para>
-        <emphasis>tst/tst-cputimer1</emphasis> のテストは失敗することが知られています。
+        <emphasis>tst/tst-cputimer1</emphasis> と <emphasis>rt/tst-cpuclock2</emphasis> のテストは失敗することが知られています。
         失敗の理由は明確ではありません。
         ただ処理速度が原因してそれらが発生すると思われます。
         </para>

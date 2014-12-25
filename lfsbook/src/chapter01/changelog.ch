@@ -48,10 +48,78 @@
 @z
 
 @x
+      <para>2014-12-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-3.18.0. Fixes 
+          <ulink url="&lfs-ticket-root;3726">#3726</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.19.4. Fixes 
+          <ulink url="&lfs-ticket-root;3725">#3725</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-12-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iproute2-3.18.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3726">#3726</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.19.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3725">#3725</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2014-12-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.18.1. Fixes 
+          <ulink url="&lfs-ticket-root;3721">#3721</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.2.0. Fixes 
+          <ulink url="&lfs-ticket-root;3723">#3723</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.25. Fixes 
+          <ulink url="&lfs-ticket-root;3724">#3724</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update comments for sysklogd boot script. Fixes 
+          <ulink url="&lfs-ticket-root;3722">#3722</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2014-12-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.18.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3721">#3721</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz-5.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3723">#3723</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.25 へのアップデート。
+          <ulink url="&lfs-ticket-root;3724">#3724</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sysklogd ブートスクリプトのコメントを更新。
+          <ulink url="&lfs-ticket-root;3722">#3722</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-12-13</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to linix-3.18. Fixes 
+          <para>[bdubbs] - Update to linux-3.18. Fixes 
           <ulink url="&lfs-ticket-root;3717">#3717</ulink>.</para>
         </listitem>
         <listitem>

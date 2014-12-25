@@ -57,27 +57,6 @@
 @z
 
 @x
-    <para>Suppress the installation of an outdated
-    <filename>standards.info</filename> file as a newer one is installed later
-    on in the Autoconf instructions:</para>
-@y
-    <para>
-    <filename>standards.info</filename> ファイルの日付が古いため、インストールしないことにします。
-    より新しいものが Autoconf の作業を通じてインストールされます。
-    </para>
-@z
-
-@x
-    <para>Add an upstream patch to use GCC's link time optimization (LTO) 
-    by default:</para>
-@y
-    <para>
-    アップストリームが提供するパッチを適用します。
-    これにより GCC のリンク時における最適化オプション (LTO) をデフォルトにします。
-    </para>
-@z
-
-@x
     <para>Fix some LTO tests in the test suite:</para>
 @y
     <para>
