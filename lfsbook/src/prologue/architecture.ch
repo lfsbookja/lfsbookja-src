@@ -82,7 +82,7 @@ data that exceeds 4GB, the advantages of a 64-bit system are substantial.</para>
 32-bit system and once for a 64-bit system. This is not directly supported in
 LFS because it would interfere with the educational objective of providing the
 instructions needed for a straightforward base Linux system.  You can refer to
-the <ulink url="http://trac.cross-lfs.org/">Cross Linux From Scratch</ulink>
+the <ulink url="http://trac.clfs.org/">Cross Linux From Scratch</ulink>
 project for this advanced topic.</para>
 @y
 <para>
@@ -92,7 +92,7 @@ LFS の手順に従って作り出す 64 ビットシステムは、"純粋な"6
 一度は 32 ビット用であり、一度は 64 ビット用です。
 現時点にて本書はこの点をサポートしませんが、後々のリリースに向けて検討中です。
 さしあたりそのような応用的なトピックに関しては <ulink
-url="http://trac.cross-lfs.org/">Cross Linux From Scratch</ulink> プロジェクトを参照してください。
+url="http://trac.clfs.org/">Cross Linux From Scratch</ulink> プロジェクトを参照してください。
 </para>
 @z
 

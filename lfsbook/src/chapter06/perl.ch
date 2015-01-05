@@ -47,7 +47,7 @@
     installed on the system:</para>
 @y
     <para>
-    ここでビルドするバージョンの Perl は Compress::Raw::Zlib と Compress::Raw::Bzip2 モジュールをビルドします。
+    ここでビルドするバージョンの Perl は Compress::Raw::Zlib モジュールと Compress::Raw::Bzip2 モジュールをビルドします。
     デフォルトではビルドの際にそれらのソースを内部的にコピーします。
     以下のコマンドは、既にインストールされているライブラリを用いるようにします。
     </para>

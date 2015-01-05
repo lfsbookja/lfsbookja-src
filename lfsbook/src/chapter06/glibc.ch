@@ -59,8 +59,8 @@
 @y
     <para>
     Glibc のプログラムの中には <filename
-    class="directory">/var/db</filename> ディレクトリに実行中データを収容するものがあり、これは FHS に準拠していません。
-    以下のパッチを適用することで、実行中データの収容先を FHS 準拠のディレクトリとします。
+    class="directory">/var/db</filename> ディレクトリに実行データを収容するものがあり、これは FHS に準拠していません。
+    以下のパッチを適用することで、実行データの収容先を FHS 準拠のディレクトリとします。
     </para>
 @z
 

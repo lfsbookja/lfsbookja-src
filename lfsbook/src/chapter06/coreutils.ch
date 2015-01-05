@@ -47,7 +47,7 @@
     <para>
     POSIX では Coreutils により生成されるプログラムは、マルチバイトロケールであっても、文字データを正しく取り扱うことを求めています。
     以下のパッチは標準に準拠することと、国際化処理に関連するバグを解消することを行います。
-    これを行うことにより <filename>Makefile.in</filename> のタイムスタンプがどのファイルよりも最新となり、<command>make</command> 実行時のエラーを回避されます。
+    これを行うことにより <filename>Makefile.in</filename> のタイムスタンプがどのファイルよりも最新となり、<command>make</command> 実行時のエラーが回避されます。
     </para>
 @z
 

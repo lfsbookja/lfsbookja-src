@@ -83,7 +83,7 @@
     <para>
     本書のディレクトリ構成は標準ファイルシステム構成 (Filesystem Hierarchy Standard; FHS) に基づいています。(その情報は <ulink 
     url="http://www.pathname.com/fhs/"/> に示されています。)
-    また FHS では <filename class="directory">/usr/local/games</filename> や <filename
+    FHS では <filename class="directory">/usr/local/games</filename> や <filename
     class="directory">/usr/share/games</filename> を規定していますが、一方で <filename
     class="directory">/usr/local/share</filename> については明確なものがありません。
     したがって本書では必要なディレクトリのみを作成していくことにします。

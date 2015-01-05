@@ -93,7 +93,7 @@
         </para>
 @z
 
-@x /usr/lib/libgcc_s.so{,.1}
+@x /usr/lib/libgcc_s.so
         <para>Glibc needs this for the pthreads library to work.</para>
 @y
         <para>

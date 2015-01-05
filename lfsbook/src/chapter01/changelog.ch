@@ -48,6 +48,44 @@
 @z
 
 @x
+      <para>2015-01-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.76. Fixes 
+          <ulink url="&lfs-ticket-root;3728">#3728</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix URL for CLFS. Fixes 
+          <ulink url="&lfs-ticket-root;3727">#3727</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update copyright year.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Make version-check script more robust.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-01-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.76 へのアップデート。
+          <ulink url="&lfs-ticket-root;3728">#3728</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - CLFS の URL を更新。
+          <ulink url="&lfs-ticket-root;3727">#3727</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - コピーライトの年度を更新。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - version-check スクリプトをより確実なものに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2014-12-25</para>
       <itemizedlist>
         <listitem>
