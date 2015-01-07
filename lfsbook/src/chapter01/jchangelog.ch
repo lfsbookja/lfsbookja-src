@@ -57,6 +57,10 @@
       <para>2015-01-07</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] - 国内ミラーサイトからのダウンロードを行う sed 文にて、www.kernel.org の https プロトコルに対し、日本国内からは http プロトコルでのゲットを行うように変更。
+          </para>
+        </listitem>
+        <listitem>
           <para>[matsuand] -
           SVN-20150106,
           Changeset
