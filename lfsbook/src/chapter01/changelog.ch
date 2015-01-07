@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2015-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.22. Fixes 
+          <ulink url="&lfs-ticket-root;3729">#3729</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.15. Fixes 
+          <ulink url="&lfs-ticket-root;3727">#3727</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - file-5.22 へのアップデート。
+          <ulink url="&lfs-ticket-root;3729">#3729</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.15 へのアップデート。
+          <ulink url="&lfs-ticket-root;3727">#3727</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-01-02</para>
       <itemizedlist>
         <listitem>
