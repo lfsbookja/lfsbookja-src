@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2015-01-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to XML-Parser-2.44.tar.gz. Fixes 
+          <ulink url="&lfs-ticket-root;3733">#3733</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.77.tar.xz. Fixes 
+          <ulink url="&lfs-ticket-root;3732">#3732</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.18.2.tar.xz. Fixes 
+          <ulink url="&lfs-ticket-root;3731">#3731</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-01-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - XML-Parser-2.44.tar.gz へのアップデート。
+          <ulink url="&lfs-ticket-root;3733">#3733</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.77.tar.xz へのアップデート。
+          <ulink url="&lfs-ticket-root;3732">#3732</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.18.2.tar.xz へのアップデート。
+          <ulink url="&lfs-ticket-root;3731">#3731</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-01-06</para>
       <itemizedlist>
         <listitem>
