@@ -32,15 +32,27 @@
 @z
 
 @x
-    <para>The --disable-werror option allows the build to complete with
-    warnings introduced by more recent flex versions.  The other --disable
-    switches minimize what is built by disabling features and testing programs
-    not needed for LFS.</para>
+      <title>The meaning of the new configure options:</title>
 @y
-    <para>
-    --disable-werror オプションは、最新の flex によって警告が出力されても、ビルドを成功させるためのものです。
-    その他の --disable スイッチは LFS においては必要のない機能やテストを最小限とするためのものです。
-    </para>
+      <title>The meaning of the new configure options:</title>
+@z
+
+@x --disable-werror
+          <para>This allows the build to complete with warnings introduced
+          by more recent Flex versions.</para>
+@y
+          <para>
+          本オプションは、最新の flex によって警告が出力されても、ビルドを成功させるために指定します。
+          </para>
+@z
+
+@x --disable-grub-emu-usb --disable-efiemu
+          <para>These options minimize what is built by disabling features and
+          testing programs not needed for LFS.</para>
+@y
+          <para>
+          これらのオプションは LFS にとって不要な機能やテストプログラムをビルドしないようにします。
+          </para>
 @z
 
 @x
