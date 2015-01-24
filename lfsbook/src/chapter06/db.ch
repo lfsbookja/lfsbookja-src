@@ -31,13 +31,13 @@
       <para>There are instructions to build this package in the BLFS book if you
       need to build the RPC server or additional language bindings. The
       additional language bindings will require additional packages to be
-      installed. See <ulink url="&blfs-root;view/&short-version;/server/databases.html#db"/>
+      installed. See <ulink url="&blfs-book;server/databases.html#db"/>
       for suggested installation instructions.</para>
 @y
       <para>There are instructions to build this package in the BLFS book if you
       need to build the RPC server or additional language bindings. The
       additional language bindings will require additional packages to be
-      installed. See <ulink url="&blfs-root;view/&short-version;/server/databases.html#db"/>
+      installed. See <ulink url="&blfs-book;server/databases.html#db"/>
       for suggested installation instructions.</para>
 @z
 
@@ -49,7 +49,7 @@
       installed, not with GDBM. If you fully understand the risks versus
       benefits of using GDBM and wish to use it anyway, see the BLFS
       instructions located at <ulink
-      url="&blfs-root;view/&short-version;/general/gdbm.html"/></para>
+      url="&blfs-book;general/gdbm.html"/></para>
 @y
       <para>Also, GDBM <emphasis>could</emphasis> be used in place of Berkeley
       DB to satisfy Man-DB. However, since Berkeley DB is considered a core part
@@ -58,7 +58,7 @@
       installed, not with GDBM. If you fully understand the risks versus
       benefits of using GDBM and wish to use it anyway, see the BLFS
       instructions located at <ulink
-      url="&blfs-root;view/&short-version;/general/gdbm.html"/></para>
+      url="&blfs-book;general/gdbm.html"/></para>
 @z
 
 @x

@@ -64,7 +64,7 @@
     url="&hints-root;kernel-configuration.txt"/>.  BLFS has some information
     regarding particular kernel configuration requirements of packages outside
     of LFS at <ulink
-    url="&blfs-root;view/&short-version;/longindex.html#kernel-config-index"/>.  Additional
+    url="&blfs-book;longindex.html#kernel-config-index"/>.  Additional
     information about configuring and building the kernel can be found at
     <ulink url="http://www.kroah.com/lkn/"/> </para>
 @y
@@ -72,7 +72,7 @@
     メニュー形式のインターフェースによりカーネルを設定します。
     カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
     BLFS では LFS が取り扱わない各種パッケージに対して、必要となるカーネル設定項目を説明しています。
-    <ulink url="&blfs-root;view/&short-version;/longindex.html#kernel-config-index"/> を参照してください。
+    <ulink url="&blfs-book;longindex.html#kernel-config-index"/> を参照してください。
     さらに詳しくカーネルの構築や設定を説明している <ulink url="http://www.kroah.com/lkn/"/> もあります。
     </para>
 @z

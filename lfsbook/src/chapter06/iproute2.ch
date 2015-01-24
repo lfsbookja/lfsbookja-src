@@ -34,7 +34,7 @@
     common requirement on a base Linux system, remove the dependency on Berkeley
     DB by applying the commands below.  If the <command>arpd</command> binary is
     needed, instructions for compiling Berkeley DB can be found in the BLFS Book
-    at <ulink url="&blfs-root;view/&short-version;/server/databases.html#db"/>.
+    at <ulink url="&blfs-book;server/databases.html#db"/>.
     </para>
 @y
     <para>
@@ -42,7 +42,7 @@
     <command>arpd</command> はベースとする Linux システムにとって普通は必要となりません。
     そこで Berkeley DB への依存を取り除くために、以下の <command>sed</command> コマンドを実行します。
     <command>arpd</command> プログラムを必要とする場合は BLFS ブックの <ulink
-    url="&blfs-root;view/&short-version;/server/databases.html#db"/> に示される Berkeley DB の構築手順に従ってください。
+    url="&blfs-book;server/databases.html#db"/> に示される Berkeley DB の構築手順に従ってください。
     </para>
 @z
 

@@ -42,87 +42,87 @@
 
 @x
     <listitem><para>A text mode browser such as <ulink
-    url='&blfs-root;view/&short-version;/basicnet/lynx.html'>Lynx</ulink>
+    url='&blfs-book;basicnet/lynx.html'>Lynx</ulink>
     will allow you to easily view the BLFS book in one virtual terminal, while
     building packages in another.</para></listitem>
 @y
     <listitem><para>
     <ulink
-    url='&blfs-root;view/&short-version;/basicnet/lynx.html'>Lynx</ulink> のようなテキストブラウザーをインストールしておけば、仮想端末からでも BLFS ブックを簡単に参照しながらパッケージビルド作業を進めることができます。
+    url='&blfs-book;basicnet/lynx.html'>Lynx</ulink> のようなテキストブラウザーをインストールしておけば、仮想端末からでも BLFS ブックを簡単に参照しながらパッケージビルド作業を進めることができます。
     </para></listitem>
 @z
 
 @x
     <listitem><para>The <ulink
-    url='&blfs-root;view/&short-version;/general/gpm.html'>GPM</ulink> package will allow
+    url='&blfs-book;general/gpm.html'>GPM</ulink> package will allow
     you to perform copy/paste actions in your virtual
     terminals.</para></listitem>
 @y
     <listitem><para><ulink
-    url='&blfs-root;view/&short-version;/general/gpm.html'>GPM</ulink> パッケージをインストールすれば、仮想端末内にてコピーペースト操作を行うことができます。
+    url='&blfs-book;general/gpm.html'>GPM</ulink> パッケージをインストールすれば、仮想端末内にてコピーペースト操作を行うことができます。
     </para></listitem>
 @z
 
 @x
     <listitem><para>If you are in a situation where static IP configuration
     does not meet your networking requirements, installing a package
-    such as <ulink url='&blfs-root;view/&short-version;/basicnet/dhcpcd.html'>dhcpcd</ulink>
+    such as <ulink url='&blfs-book;basicnet/dhcpcd.html'>dhcpcd</ulink>
     or the client portion of <ulink
-    url='&blfs-root;view/&short-version;/basicnet/dhcp.html'>dhcp</ulink> may be
+    url='&blfs-book;basicnet/dhcp.html'>dhcp</ulink> may be
     useful.</para></listitem>
 @y
     <listitem><para>
     ネットワーク環境内にて固定 IP アドレスを用いることが適当ではない場合は、<ulink
-    url='&blfs-root;view/&short-version;/basicnet/dhcpcd.html'>dhcpcd</ulink> パッケージや <ulink
-    url='&blfs-root;view/&short-version;/basicnet/dhcp.html'>dhcp</ulink> パッケージのクライアントモジュール部分を利用することが考えられます。
+    url='&blfs-book;basicnet/dhcpcd.html'>dhcpcd</ulink> パッケージや <ulink
+    url='&blfs-book;basicnet/dhcp.html'>dhcp</ulink> パッケージのクライアントモジュール部分を利用することが考えられます。
     </para></listitem>
 @z
 
 @x
     <listitem><para>Installing <ulink
-    url='&blfs-root;view/&short-version;/postlfs/sudo.html'>sudo</ulink> may be useful for
+    url='&blfs-book;postlfs/sudo.html'>sudo</ulink> may be useful for
     building packages as a non-root user and easily installing the resulting
     packages in your new system.  </para></listitem>
 @y
     <listitem><para><ulink
-    url='&blfs-root;view/&short-version;/postlfs/sudo.html'>sudo</ulink> をインストールすれば、ルートユーザー以外であっても、パッケージビルドとインストールを容易に行うことができます。
+    url='&blfs-book;postlfs/sudo.html'>sudo</ulink> をインストールすれば、ルートユーザー以外であっても、パッケージビルドとインストールを容易に行うことができます。
     </para></listitem>
 @z
 
 @x
     <listitem><para>If you want to access your new system from a remote system
     within a comfortable GUI environment, install <ulink
-    url='&blfs-root;view/&short-version;/postlfs/openssh.html'>openssh</ulink> and its
+    url='&blfs-book;postlfs/openssh.html'>openssh</ulink> and its
     prerequsite, <ulink
-    url='&blfs-root;view/&short-version;/postlfs/openssl.html'>openssl</ulink>.
+    url='&blfs-book;postlfs/openssl.html'>openssl</ulink>.
     </para></listitem>
 @y
     <listitem><para>利用しやすい GUI 操作を通じてリモート接続を行いたい場合は <ulink
-    url='&blfs-root;view/&short-version;/postlfs/openssh.html'>openssh</ulink> とその依存パッケージである <ulink
-    url='&blfs-root;view/&short-version;/postlfs/openssl.html'>openssl</ulink> をインストールします。
+    url='&blfs-book;postlfs/openssh.html'>openssh</ulink> とその依存パッケージである <ulink
+    url='&blfs-book;postlfs/openssl.html'>openssl</ulink> をインストールします。
     </para></listitem>
 @z
 
 @x
     <listitem><para>To make fetching files over the internet easier, install
-    <ulink url='&blfs-root;view/&short-version;/basicnet/wget.html'>wget</ulink>.
+    <ulink url='&blfs-book;basicnet/wget.html'>wget</ulink>.
     </para></listitem>
 @y
     <listitem><para>インターネット経由により簡単にファイル取得を行うために <ulink
-    url='&blfs-root;view/&short-version;/basicnet/wget.html'>wget</ulink> をインストールします。
+    url='&blfs-book;basicnet/wget.html'>wget</ulink> をインストールします。
     </para></listitem>
 @z
 
 @x
     <listitem><para>If one or more of your disk drives have a GUID partition
     table (GPT), either <ulink
-    url='&blfs-root;view/&short-version;/postlfs/gptfdisk.html'>gptfdisk</ulink> or <ulink
-    url='&blfs-root;view/&short-version;/postlfs/parted.html'>parted</ulink> will be useful.
+    url='&blfs-book;postlfs/gptfdisk.html'>gptfdisk</ulink> or <ulink
+    url='&blfs-book;postlfs/parted.html'>parted</ulink> will be useful.
     </para></listitem>
 @y
     <listitem><para>ハードディスクドライブに GUID パーティションテーブル (GPT) があるなら、<ulink
-    url='&blfs-root;view/&short-version;/postlfs/gptfdisk.html'>gptfdisk</ulink> または <ulink
-    url='&blfs-root;view/&short-version;/postlfs/parted.html'>parted</ulink> が有用なものとなります。
+    url='&blfs-book;postlfs/gptfdisk.html'>gptfdisk</ulink> または <ulink
+    url='&blfs-book;postlfs/parted.html'>parted</ulink> が有用なものとなります。
     </para></listitem>
 @z
 

@@ -63,13 +63,13 @@
 @x
     <para>Note that for other languages, there are some prerequisites that
     are not yet available. See the
-    <ulink url="&blfs-root;view/&short-version;/general/gcc.html">BLFS Book</ulink>
+    <ulink url="&blfs-book;general/gcc.html">BLFS Book</ulink>
     for instructions on how to build all of GCC's supported languages.</para>
 @y
     <para>
     他のプログラミング言語は、また別の依存パッケージなどを要しますが、現時点では準備できていません。
     GCC がサポートする他のプログラム言語の構築方法については <ulink
-    url="&blfs-root;view/&short-version;/general/gcc.html">BLFS ブック</ulink> の説明を参照してください。
+    url="&blfs-book;general/gcc.html">BLFS ブック</ulink> の説明を参照してください。
     </para>
 @z
 

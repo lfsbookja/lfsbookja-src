@@ -298,11 +298,11 @@
 @x
   <para>UTF-8 based locales are not supported well by some programs.
   Work is in progress to document and, if possible, fix such problems, see
-  <ulink url="&blfs-root;view/&short-version;/introduction/locale-issues.html"/>.</para>
+  <ulink url="&blfs-book;introduction/locale-issues.html"/>.</para>
 @y
   <para>
   UTF-8 ベースのロケールは、プログラムによってはサポートしていないものもあります。
   この問題については <ulink
-   url="&blfs-root;view/&short-version;/introduction/locale-issues.html"/> にて説明しており、可能なものは解決を図っていこうとしているところです。
+   url="&blfs-book;introduction/locale-issues.html"/> にて説明しており、可能なものは解決を図っていこうとしているところです。
   </para>
 @z
