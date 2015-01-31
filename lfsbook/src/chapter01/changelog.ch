@@ -48,6 +48,64 @@
 @z
 
 @x
+      <para>2015-01-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-2.1.1. Fixes 
+          <ulink url="&lfs-ticket-root;3735">#3735</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.0.4. Fixes 
+          <ulink url="&lfs-ticket-root;3735">#3735</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libtool-2.4.5. Fixes 
+          <ulink url="&lfs-ticket-root;3737">#3737</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to patch-2.7.3. Fixes 
+          <ulink url="&lfs-ticket-root;3738">#3738</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.18.5. Fixes 
+          <ulink url="&lfs-ticket-root;3739">#3739</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.78. Fixes 
+          <ulink url="&lfs-ticket-root;3740">#3740</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-01-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - eudev-2.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3735">#3735</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.0.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3735">#3735</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtool-2.4.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3737">#3737</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - patch-2.7.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3738">#3738</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.18.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3739">#3739</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.78 へのアップデート。
+          <ulink url="&lfs-ticket-root;3740">#3740</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-01-12</para>
       <itemizedlist>
         <listitem>
