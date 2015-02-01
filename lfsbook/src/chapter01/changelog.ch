@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2015-01-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to patch-2.7.4. Fixes 
+          <ulink url="&lfs-ticket-root;3742">#3742</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2015a. Fixes 
+          <ulink url="&lfs-ticket-root;3741">#3741</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-01-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - patch-2.7.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3742">#3742</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2015a へのアップデート。
+          <ulink url="&lfs-ticket-root;3741">#3741</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-01-29</para>
       <itemizedlist>
         <listitem>
