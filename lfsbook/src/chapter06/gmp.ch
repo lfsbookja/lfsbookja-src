@@ -134,16 +134,16 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x
-          <para>Contains precision math functions.</para>
+@x libgmp
+          <para>Contains precision math functions</para>
 @y
           <para>
           精度演算関数 (precision math functions) を提供します。
           </para>
 @z
 
-@x
-          <para>Contains C++ precision math functions.</para>
+@x libgmpxx
+          <para>Contains C++ precision math functions</para>
 @y
           <para>
           C++ 用の精度演算関数を提供します。

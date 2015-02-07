@@ -144,7 +144,7 @@
           <para>A shell script wrapper for the <command>ip</command> command.
           Note that it requires the <command>arping</command> and
           <command>rdisk</command> programs from the
-          iputils package found at <ulink url="http://www.skbuff.net/iputils/"/>.</para>
+          iputils package found at <ulink url="http://www.skbuff.net/iputils/"/></para>
 @y
           <para>
           <command>ip</command> コマンドに対するシェルスクリプトラッパー。

@@ -128,7 +128,7 @@
           <para>Used to read info pages which are similar to man pages, but
           often go much deeper than just explaining all the available command
           line options. For example, compare <command>man bison</command> and
-          <command>info bison</command>.</para>
+          <command>info bison</command></para>
 @y
           <para>
           info ページを見るために利用します。

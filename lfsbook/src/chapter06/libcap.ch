@@ -132,9 +132,9 @@
 @z
 
 @x libcap
-          <para>Contains the libcap API functions</para>
+          <para>Contains the library functions for manipulating capabilities</para>
 @y
           <para>
-          libcap API 関数を提供します。
+          拡張属性を制御するライブラリ関数を提供します。
           </para>
 @z

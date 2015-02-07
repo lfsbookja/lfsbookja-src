@@ -388,7 +388,7 @@
 @x preloadable_libintl
           <para>A library, intended to be used by LD_PRELOAD that assists
           <filename class="libraryfile">libintl</filename> in logging
-          untranslated messages.</para>
+          untranslated messages</para>
 @y
           <!--
           日本語訳註： 2009-09-07 matsuand

@@ -291,7 +291,7 @@
 @z
 
 @x e2freefrag
-          <para> Reports free space fragmentation information</para>
+          <para>Reports free space fragmentation information</para>
 @y
           <para>
           フリースペースのフラグメント情報を表示します。
@@ -332,7 +332,7 @@
 @x e2undo
           <para>Replays the undo log undo_log for an ext2/ext3/ext4 filesystem 
           found on a device. This can be used to undo a failed operation by an 
-          e2fsprogs program.</para>
+          e2fsprogs program</para>
 @y
           <para>
           デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
@@ -358,7 +358,7 @@
 
 @x fsck.ext2
           <para>By default checks <systemitem class="filesystem">ext2</systemitem>
-          file systems. This is a hard link to <command>e2fsck</command>.</para>
+          file systems. This is a hard link to <command>e2fsck</command></para>
 @y
           <para>
           デフォルトでは <systemitem
@@ -369,7 +369,7 @@
 
 @x fsck.ext3
           <para>By default checks <systemitem class="filesystem">ext3</systemitem>
-          file systems. This is a hard link to <command>e2fsck</command>.</para>
+          file systems. This is a hard link to <command>e2fsck</command></para>
 @y
           <para>
           デフォルトでは <systemitem
@@ -380,7 +380,7 @@
 
 @x fsck.ext4
           <para>By default checks <systemitem class="filesystem">ext4</systemitem>
-          file systems. This is a hard link to <command>e2fsck</command>.</para>
+          file systems. This is a hard link to <command>e2fsck</command></para>
 @y
           <para>
           デフォルトでは <systemitem
@@ -392,7 +392,7 @@
 @x fsck.ext4dev
           <para>By default checks <systemitem class="filesystem">ext4</systemitem>
           development file systems. This is a hard link to 
-          <command>e2fsck</command>.</para>
+          <command>e2fsck</command></para>
 @y
           <para>
           デフォルトでは <systemitem
@@ -443,7 +443,7 @@
 
 @x mkfs.ext2
           <para>By default creates <systemitem class="filesystem">ext2</systemitem>
-          file systems.  This is a hard link to <command>mke2fs</command>.</para>
+          file systems. This is a hard link to <command>mke2fs</command></para>
 @y
           <para>
           デフォルトでは <systemitem
@@ -454,7 +454,7 @@
 
 @x mkfs.ext3
           <para>By default creates <systemitem class="filesystem">ext3</systemitem>
-          file systems.  This is a hard link to <command>mke2fs</command>.</para>
+          file systems. This is a hard link to <command>mke2fs</command></para>
 @y
           <para>
           デフォルトでは <systemitem
@@ -465,7 +465,7 @@
 
 @x mkfs.ext4
           <para>By default creates <systemitem class="filesystem">ext4</systemitem>
-          file systems.  This is a hard link to <command>mke2fs</command>.</para>
+          file systems. This is a hard link to <command>mke2fs</command></para>
 @y
           <para>
           デフォルトでは <systemitem
@@ -476,7 +476,7 @@
 
 @x mkfs.ext4dev
           <para>By default creates <systemitem class="filesystem">ext4</systemitem>
-          development file systems.  This is a hard link to <command>mke2fs</command>.</para>
+          development file systems. This is a hard link to <command>mke2fs</command></para>
 @y
           <para>
           デフォルトでは <systemitem

@@ -78,7 +78,7 @@
           <para>Modifies files according to a patch file. A patch file is
           normally a difference listing created with the <command>diff</command>
           program. By applying these differences to the original files,
-          <command>patch</command> creates the patched versions.</para>
+          <command>patch</command> creates the patched versions</para>
 @y
           <para>
           パッチファイルに従って対象ファイルを修正します。

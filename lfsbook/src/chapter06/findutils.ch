@@ -122,7 +122,7 @@
 
 @x code
           <para>Was formerly used to produce <command>locate</command>
-          databases; it is the ancestor of <command>frcode</command>.</para>
+          databases; it is the ancestor of <command>frcode</command></para>
 @y
           <para>
           かつて利用されていたコマンドで <command>locate</command> データベースを生成します。
@@ -142,7 +142,7 @@
 @x frcode
           <para>Is called by <command>updatedb</command> to compress the list
           of file names; it uses front-compression, reducing the database size
-          by a factor of four to five.</para>
+          by a factor of four to five</para>
 @y
           <para>
           <command>updatedb</command> コマンドから呼び出され、ファイル名の一覧を圧縮します。

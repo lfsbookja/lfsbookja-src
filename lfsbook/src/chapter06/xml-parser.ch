@@ -79,7 +79,7 @@
 @z
 
 @x Expat.so
-          <para>provides the Perl Expat interface.</para>
+          <para>provides the Perl Expat interface</para>
 @y
           <para>
           Perl Expat インターフェースを提供します。

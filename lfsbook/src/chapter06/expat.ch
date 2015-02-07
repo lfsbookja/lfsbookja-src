@@ -96,7 +96,7 @@
 
 @x xmlwf
           <para>is a non-validating utility to check whether or not
-          XML documents are well formed.</para>
+          XML documents are well formed</para>
 @y
           <para>
           XML ドキュメントが整形されているかどうかをチェックするユーティリティです。
@@ -104,7 +104,7 @@
 @z
 
 @x libexpat
-          <para> contains API functions for parsing XML.</para>
+          <para> contains API functions for parsing XML</para>
 @y
           <para>
           XML を処理する API 関数を提供します。

@@ -77,7 +77,7 @@
 @z
 
 @x libpopt
-          <para>is used to parse command-line options.</para>
+          <para>is used to parse command-line options</para>
 @y
           <para>コマンドラインオプションを処理するために利用します。</para>
 @z

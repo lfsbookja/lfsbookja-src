@@ -100,7 +100,7 @@
 @x
         <seg>attr, getfattr, and setattr</seg>
         <seg>libattr.{a,so}</seg>
-        <seg>/usr/include/attr, /usr/share/doc/attr-&attr-version;</seg>
+        <seg>/usr/include/attr and /usr/share/doc/attr-&attr-version;</seg>
 @y
         <seg>attr, getfattr, setattr</seg>
         <seg>libattr.{a,so}</seg>
@@ -122,7 +122,7 @@
 @z
 
 @x getfattr
-          <para>Gets the extended attributes of filesystem objects.</para>
+          <para>Gets the extended attributes of filesystem objects</para>
 @y
           <para>
           ファイルシステム上のオブジェクトに対して、拡張属性の情報を取得します。
@@ -138,9 +138,9 @@
 @z
 
 @x libattr
-          <para>Contains the <application>Attr</application> API functions.</para>
+          <para>Contains the libbrary functions for manipulating extended attributes</para>
 @y
           <para>
-          <application>Attr</application> API 関数を提供します。
+          拡張属性を制御するライブラリ関数を提供します。
           </para>
 @z

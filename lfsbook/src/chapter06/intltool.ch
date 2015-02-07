@@ -87,7 +87,7 @@
 @z
 
 @x intltoolize
-          <para>Prepares a package to use intltool.</para>
+          <para>Prepares a package to use intltool</para>
 @y
           <para>
           パッケージに対して intltool を利用できるようにします。
@@ -95,7 +95,7 @@
 @z
 
 @x intltool-extract
-          <para>Generates header files that can be read by <command>gettext</command>.</para>
+          <para>Generates header files that can be read by <command>gettext</command></para>
 @y
           <para>
           <command>gettext</command>  が読み込むことの出来るヘッダーファイルを生成します。
@@ -103,7 +103,7 @@
 @z
 
 @x intltool-merge
-          <para>Merges translated strings into various file types.</para>
+          <para>Merges translated strings into various file types</para>
 @y
           <para>
           翻訳された文字列を様々な種類のファイルにマージします。
@@ -111,7 +111,7 @@
 @z
 
 @x intltool-prepare
-          <para>Updates pot files and merges them with translation files.</para>
+          <para>Updates pot files and merges them with translation files</para>
 @y
           <para>
           pot ファイルを更新し、翻訳ファイルにマージします。
@@ -119,7 +119,7 @@
 @z
 
 @x intltool-update
-          <para>Updates the po template files and merges them with the translations.</para>
+          <para>Updates the po template files and merges them with the translations</para>
 @y
           <para>
           po テンプレートファイルを更新し、翻訳ファイルにマージします。

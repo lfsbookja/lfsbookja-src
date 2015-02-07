@@ -93,7 +93,7 @@
 @z
 
 @x
-          <para>Contains multiple-precision math functions.</para>
+          <para>Contains multiple-precision math functions</para>
 @y
           <para>
           倍精度演算の関数を提供します。

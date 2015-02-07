@@ -363,10 +363,10 @@
           <para>A library for dealing with opcodes&mdash;the <quote>readable
           text</quote> versions of instructions for the processor;
           it is used for building utilities like
-          <command>objdump</command>.</para>
+          <command>objdump</command></para>
 @y
           <para>
           opcodes (オペレーションコード; プロセッサー命令を<quote>認識可能なテキスト</quote>として表現したもの) を取り扱うライブラリ。
-          このライブラリは <command>objdump</command> などのように、ビルド作業にて利用するユーティリティプログラムが利用しています。
+          このライブラリは <command>objdump</command> のような、ビルド作業に用いるユーティリティプログラムが利用しています。
           </para>
 @z

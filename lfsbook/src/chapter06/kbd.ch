@@ -383,7 +383,7 @@
 @x unicode_start
           <para>Puts the keyboard and console in UNICODE mode. Don't use this
           program unless your keymap file is in the ISO-8859-1 encoding. For
-          other encodings, this utility produces incorrect results.</para>
+          other encodings, this utility produces incorrect results</para>
 @y
           <para>
           キーボードとコンソールをユニコードモードにします。

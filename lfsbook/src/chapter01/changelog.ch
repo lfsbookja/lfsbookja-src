@@ -48,6 +48,64 @@
 @z
 
 @x
+      <para>2015-02-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add bash patches through patch-033.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update mpfr patches through patch-11.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.26-rc2. Intermediate 
+          fix prior to stable util-linux-2.26.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.79. Fixes 
+          <ulink url="&lfs-ticket-root;3743">#3743</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to dejagnu-1.5.2. Fixes 
+          <ulink url="&lfs-ticket-root;3744">#3744</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.21. Fixes 
+          <ulink url="&lfs-ticket-root;3745">#3745</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-02-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] -
+          bash のパッチを patch-033 まで適用。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -
+          mpfr のパッチを patch-11 に更新。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.26-rc2 へのアップデート。
+          安定版 util-linux-2.26 に対する暫定的な修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.79 へのアップデート。
+          <ulink url="&lfs-ticket-root;3743">#3743</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - dejagnu-1.5.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3744">#3744</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.21 へのアップデート。
+          <ulink url="&lfs-ticket-root;3745">#3745</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-01-31</para>
       <itemizedlist>
         <listitem>

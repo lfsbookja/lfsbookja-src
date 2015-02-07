@@ -152,9 +152,7 @@
         swapoff (link to swapon), swapon, switch_root, tailf, taskset, ul,
         umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
         wipefs, and x86_64</seg>
-
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
-
         <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
         /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, /var/lib/hwclock</seg>
 @y
@@ -171,9 +169,7 @@
         swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, ul,
         umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
         wipefs, x86_64</seg>
-
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
-
         <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
         /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, /var/lib/hwclock</seg>
 @z
@@ -578,7 +574,7 @@
 
 @x lsblk
           <para>Lists information about all or selected block devices in
-           a tree-like format.</para>
+           a tree-like format</para>
 @y
           <!--
           日本語訳註： 意味不理解
@@ -968,7 +964,7 @@
 
 @x uuidd
           <para>A daemon used by the UUID library to generate time-based
-          UUIDs in a secure and guranteed-unique fashion.</para>
+          UUIDs in a secure and guranteed-unique fashion</para>
 @y
           <para>
           UUID ライブラリから利用されるデーモン。

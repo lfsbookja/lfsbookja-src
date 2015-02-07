@@ -103,7 +103,7 @@
 @z
 
 @x gdbm_dump
-          <para>Dumps a GDBM database to a file.</para>
+          <para>Dumps a GDBM database to a file</para>
 @y
           <para>
           GDBM データベースをファイルにダンプします。
@@ -111,7 +111,7 @@
 @z
 
 @x gdbm_load
-          <para>Recreates a GDBM database from a dump file.</para>
+          <para>Recreates a GDBM database from a dump file</para>
 @y
           <para>
           GDBM のダンプファイルからデータベースを再生成します。

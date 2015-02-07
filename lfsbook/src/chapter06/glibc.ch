@@ -192,11 +192,11 @@
 @z
 
 @x
-        <para>posix/tst-getaddrinfo4 will always fail due to not having a network
-        connection when the test is run.</para>
+        <para>posix/tst-getaddrinfo4 and posix/tst-getaddrinfo5 will always fail 
+        due to not having a network connection when the tests are run.</para>
 @y
         <para>
-        posix/tst-getaddrinfo4 は、テスト実行時にネットワークに接続されていないため失敗します。
+        posix/tst-getaddrinfo4 と posix/tst-getaddrinfo5 は、テスト実行時にネットワークに接続されていないため失敗します。
         </para>
 @z
 
@@ -538,7 +538,7 @@
         /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
         /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
-        /var/cache/nscd, and /var/lib/nss_db</seg>
+        /var/cache/nscd, /var/lib/nss_db</seg>
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,

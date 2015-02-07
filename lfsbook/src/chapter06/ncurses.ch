@@ -300,15 +300,15 @@
           </para>
 @z
 
-@x libcurses
-          <para>A link to <filename>libncurses</filename></para>
+@x libcursew
+          <para>A link to <filename>libncursesw</filename></para>
 @y
           <para>
-          <filename>libncurses</filename> へのリンク。
+          <filename>libncursesw</filename> へのリンク。
           </para>
 @z
 
-@x libncurses
+@x libncursesw
           <para>Contains functions to display text in many complex ways on a
           terminal screen; a good example of the use of these functions is the
           menu displayed during the kernel's <command>make
@@ -320,7 +320,7 @@
           </para>
 @z
 
-@x libform
+@x libformw
           <para>Contains functions to implement forms</para>
 @y
           <para>
@@ -328,7 +328,7 @@
           </para>
 @z
 
-@x libmenu
+@x libmenuw
           <para>Contains functions to implement menus</para>
 @y
           <para>
@@ -336,7 +336,7 @@
           </para>
 @z
 
-@x libpanel
+@x libpanelw
           <para>Contains functions to implement panels</para>
 @y
           <para>

@@ -100,7 +100,7 @@
           <para>Produces shell scripts that automatically configure software
           source code packages to adapt to many kinds of Unix-like systems.
           The configuration scripts it produces are independent&mdash;running
-          them does not require the <command>autoconf</command> program.</para>
+          them does not require the <command>autoconf</command> program</para>
 @y
           <para>
           ソースコードを提供するソフトウェアパッケージを自動的に設定する (configure する) シェルスクリプトを生成します。

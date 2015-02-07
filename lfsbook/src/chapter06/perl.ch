@@ -453,7 +453,7 @@
 
 @x prove
           <para>Command line tool for running tests against the Test::Harness
-          module.</para>
+          module</para>
 @y
           <para>
           Test::Harness モジュールのテストを行うコマンドラインツール。

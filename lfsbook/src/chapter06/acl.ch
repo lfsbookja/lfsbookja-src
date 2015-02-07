@@ -121,7 +121,7 @@
 @x
         <seg>chacl, getfacl, and setacl</seg>
         <seg>libacl.{a,so}</seg>
-        <seg>/usr/include/acl, /usr/share/doc/acl-&acl-version;</seg>
+        <seg>/usr/include/acl and /usr/share/doc/acl-&acl-version;</seg>
 @y
         <seg>chacl, getfacl, setacl</seg>
         <seg>libacl.{a,so}</seg>
@@ -136,7 +136,7 @@
 
 @x chacl
           <para>Changes the access control list of a file
-          or directory.</para>
+          or directory</para>
 @y
           <para>
           ファイルまたはディレクトリに対するアクセスコントロールリストを設定します。
@@ -144,7 +144,7 @@
 @z
 
 @x getfacl
-          <para>Gets file access control lists.</para>
+          <para>Gets file access control lists</para>
 @y
           <para>
           ファイルアクセスコントロールリストを取得します。
@@ -152,7 +152,7 @@
 @z
 
 @x setacl
-          <para>Sets file access control lists.</para>
+          <para>Sets file access control lists</para>
 @y
           <para>
           ファイルアクセスコントロールリストを設定します。
@@ -160,9 +160,9 @@
 @z
 
 @x libacl
-          <para>Contains the <application>Acl</application> API functions.</para>
+          <para>Contains the  library functions for manipulating Access Control Lists</para>
 @y
           <para>
-          <application>Acl</application> API 関数を提供します。
+          アクセスコントロールリスト (Access Control Lists) を制御するライブラリ関数を提供します。
           </para>
 @z

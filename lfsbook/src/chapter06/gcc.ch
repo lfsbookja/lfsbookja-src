@@ -367,9 +367,9 @@
 
 @x gcc-ar
           <para>A wrapper around <command>ar</command> that adds a
-          plugin to the command line.  This program is only used
+          plugin to the command line. This program is only used
           to add "link time optization" and is not useful with the
-          default build options.</para>
+          default build options</para>
 @y
           <para>
           <command>ar</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
@@ -380,9 +380,9 @@
 
 @x gcc-nm
           <para>A wrapper around <command>nm</command> that adds a
-          plugin to the command line.  This program is only used
+          plugin to the command line. This program is only used
           to add "link time optization" and is not useful with the
-          default build options.</para>
+          default build options</para>
 @y
           <para>
           <command>nm</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
@@ -393,9 +393,9 @@
 
 @x
           <para>A wrapper around <command>ranlib</command> that adds a
-          plugin to the command line.  This program is only used
+          plugin to the command line. This program is only used
           to add "link time optization" and is not useful with the
-          default build options.</para>
+          default build options</para>
 @y
           <para>
           <command>ranlib</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
@@ -468,7 +468,7 @@
 
 @x liblto_plugin
           <para>GCC's Link Time Optimization (LTO) plugin allows GCC to perform
-          optimizations across compilation units.</para>
+          optimizations across compilation units</para>
 @y
           <para>
           GCC のリンク時における最適化 (Link Time Optimization; LTO) プラグイン。

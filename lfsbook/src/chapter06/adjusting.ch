@@ -140,10 +140,11 @@
 @z
 
 @x
-  <para os="k">The output of the last command should be:</para>
+  <para os="k">References to paths that have components with '-linux-gnu' should
+  be ignored, but otherwise the output of the last command should be:</para>
 @y
   <para os="k">
-  最後のコマンドの出力は以下のようになるはずです。
+  '-linux-gnu' を含んだパスは無視すれば、最後のコマンドの出力は以下となるはずです。
   </para>
 @z
 
