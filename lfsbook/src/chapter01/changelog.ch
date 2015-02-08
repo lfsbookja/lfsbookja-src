@@ -48,6 +48,30 @@
 @z
 
 @x
+      <para>2015-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update ipv4-static, ifup, and ifup.8
+          in bootscripts to better support multiple IP addresses
+          on an interface.</para>
+        </listitem>
+        <listitem>
+          <para>[Chris] - Updated FHS URL to new location.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトにて、１インターフェース上でのマルチ IP アドレスをより適切にサポートするために ipv4-static, ifup, ifup.8 を更新。</para>
+        </listitem>
+        <listitem>
+          <para>[Chris] - FHS の URL を最新のものに更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-02-06</para>
       <itemizedlist>
         <listitem>

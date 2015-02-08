@@ -71,7 +71,7 @@
 
 @x
     <para>The directory tree is based on the Filesystem Hierarchy Standard (FHS)
-    (available at <ulink url="http://www.pathname.com/fhs/"/>).
+    (available at <ulink url="https://wiki.linuxfoundation.org/en/FHS"/>).
     The FHS also stipulates the existence of <filename
     class="directory">/usr/local/games</filename> and <filename
     class="directory">/usr/share/games</filename>. The FHS is not precise as to
@@ -82,7 +82,7 @@
 @y
     <para>
     本書のディレクトリ構成は標準ファイルシステム構成 (Filesystem Hierarchy Standard; FHS) に基づいています。(その情報は <ulink 
-    url="http://www.pathname.com/fhs/"/> に示されています。)
+    url="https://wiki.linuxfoundation.org/en/FHS"/> に示されています。)
     FHS では <filename class="directory">/usr/local/games</filename> や <filename
     class="directory">/usr/share/games</filename> を規定していますが、一方で <filename
     class="directory">/usr/local/share</filename> については明確なものがありません。
