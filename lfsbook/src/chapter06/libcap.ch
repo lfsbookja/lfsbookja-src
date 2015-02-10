@@ -132,9 +132,10 @@
 @z
 
 @x libcap
-          <para>Contains the library functions for manipulating capabilities</para>
+          <para>Contains the library functions for manipulating POSIX 1003.1e
+          capabilities</para>
 @y
           <para>
-          拡張属性を制御するライブラリ関数を提供します。
+          POSIX 1003.1e 拡張属性を制御するライブラリ関数を提供します。
           </para>
 @z

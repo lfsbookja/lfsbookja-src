@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2015-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[Chris] - Added --docdir switch to Chapter 6 Bison to
+          put docs in versioned directory.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[Chris] - 第6章の Bison にて --docdir スイッチを追加し、バージョン番号付きディレクトリへドキュメントを置くように。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-02-08</para>
       <itemizedlist>
         <listitem>
