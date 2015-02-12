@@ -182,9 +182,9 @@
         ncursesw5-config, reset (link to tset), tabs, tic, toe, tput, and tset</seg>
         <seg>libcursesw.{a,so} (symlink and linker script to libncursesw.{a,so}),
         libformw.{a,so}, libmenuw.{a,so}, libncurses++w.a, libncursesw.{a,so},
-        libpanelw.{a,so} and their non-wide-character counterparts without "w"
+        libpanelw.{a,so}, and their non-wide-character counterparts without "w"
         in the library names.</seg>
-        <seg>/usr/share/tabset, /usr/share/terminfo,
+        <seg>/usr/share/tabset, /usr/share/terminfo, and
         /usr/share/doc/ncurses-&ncurses-version;</seg>
 @y
         <seg>captoinfo (tic へのリンク), clear, infocmp, infotocap (tic へのリンク),
@@ -261,8 +261,8 @@
 @x tic
           <para>The terminfo entry-description compiler that translates a
           terminfo file from source format into the binary format needed for the
-          ncurses library routines. A terminfo file contains information on the
-          capabilities of a certain terminal</para>
+          ncurses library routines [A terminfo file contains information on the
+          capabilities of a certain terminal.]</para>
 @y
           <para>
           terminfo の定義項目に対するコンパイラーです。

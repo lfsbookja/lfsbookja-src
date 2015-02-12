@@ -168,7 +168,7 @@
         setfont, setkeycodes, setleds, setmetamode,
         showconsolefont, showkey, unicode_start, and unicode_stop</seg>
         <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps,
-        /usr/share/unimaps</seg>
+        and /usr/share/unimaps</seg>
 @y
         <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbdinfo,
         kbd_mode, kbdrate, loadkeys, loadunimap,
@@ -381,9 +381,9 @@
 @z
 
 @x unicode_start
-          <para>Puts the keyboard and console in UNICODE mode. Don't use this
+          <para>Puts the keyboard and console in UNICODE mode [Don't use this
           program unless your keymap file is in the ISO-8859-1 encoding. For
-          other encodings, this utility produces incorrect results</para>
+          other encodings, this utility produces incorrect results.]</para>
 @y
           <para>
           キーボードとコンソールをユニコードモードにします。

@@ -82,7 +82,7 @@
         ngettext, recode-sr-latin, and xgettext</seg>
         <seg>libasprintf.{a,so}, libgettextlib.so, libgettextpo.{a,so},
         libgettextsrc.so, and preloadable_libintl.so</seg>
-        <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;,
+        <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;, and
         /usr/share/gettext</seg>
 @y
         <seg>autopoint, config.charset, config.rpath, envsubst, gettext, gettext.sh,

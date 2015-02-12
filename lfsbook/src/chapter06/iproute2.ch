@@ -103,7 +103,7 @@
         nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (link to lnstat), ss,
         and tc</seg>
         <seg>/etc/iproute2, /usr/lib/tc, /usr/share/doc/iproute2-&iproute2-version;,
-        /usr/lib/tc</seg>
+        and /usr/lib/tc</seg>
 @y
         <seg>bridge, ctstat (lnstat へのリンク), genl, ifcfg, ifstat, ip, lnstat,
         nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (lnstat へのリンク), ss,
@@ -141,10 +141,10 @@
 @z
 
 @x ifcfg
-          <para>A shell script wrapper for the <command>ip</command> command.
-          Note that it requires the <command>arping</command> and
+          <para>A shell script wrapper for the <command>ip</command> command
+          [Note that it requires the <command>arping</command> and
           <command>rdisk</command> programs from the
-          iputils package found at <ulink url="http://www.skbuff.net/iputils/"/></para>
+          iputils package found at <ulink url="http://www.skbuff.net/iputils/"/>.]</para>
 @y
           <para>
           <command>ip</command> コマンドに対するシェルスクリプトラッパー。
@@ -234,7 +234,7 @@
 @z
 
 @x lnstat
-          <para>Provides Linux network statistics.  It is a generalized and more
+          <para>Provides Linux network statistics; it is a generalized and more
           feature-complete replacement for the old <command>rtstat</command>
           program</para>
 @y

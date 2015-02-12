@@ -488,7 +488,7 @@
 @z
 
 @x nologin
-          <para>Displays a message that an account is not available. Designed
+          <para>Displays a message that an account is not available; it is designed
           to be used as the default shell for accounts that have been
           disabled</para>
 @y

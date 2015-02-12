@@ -152,9 +152,10 @@
         swapoff (link to swapon), swapon, switch_root, tailf, taskset, ul,
         umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
         wipefs, and x86_64</seg>
-        <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
+        <seg>libblkid.{a,so}, libmount.{a,so}, and libuuid.{a,so}</seg>
         <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
-        /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, /var/lib/hwclock</seg>
+        /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, 
+        and /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
         chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
@@ -171,7 +172,8 @@
         wipefs, x86_64</seg>
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
         <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
-        /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, /var/lib/hwclock</seg>
+        /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, 
+        /var/lib/hwclock</seg>
 @z
 
 @x
@@ -905,7 +907,7 @@
 @z
 
 @x tailf
-          <para>Tracks the growth of a log file. Displays the last 10 lines
+          <para>Tracks the growth of a log file; displays the last 10 lines
           of a log file, then continues displaying any new entries in the
           log file as they are created</para>
 @y

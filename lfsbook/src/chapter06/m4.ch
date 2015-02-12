@@ -69,13 +69,13 @@
 
 @x m4
           <para>copies the given files while expanding the macros that they
-          contain. These macros are either built-in or user-defined and can
+          contain [These macros are either built-in or user-defined and can
           take any number of arguments. Besides performing macro expansion,
           <command>m4</command> has built-in functions for including named
           files, running Unix commands, performing integer arithmetic,
           manipulating text, recursion, etc. The <command>m4</command> program
           can be used either as a front-end to a compiler or as a macro processor
-          in its own right</para>
+          in its own right.]</para>
 @y
           <para>
           指定されたファイル内のマクロ定義を展開して、そのコピーを生成します。

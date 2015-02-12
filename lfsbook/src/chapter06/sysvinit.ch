@@ -151,23 +151,22 @@
 @x init
           <para>The first process to be started when the kernel has initialized
           the hardware which takes over the boot process and starts all the
-          proceses it is instructed to</para>
+          proceses specified in its configuration file</para>
 @y
           <para>
           カーネルがハードウェアを初期化した後に、最初に起動するプロセスです。
-          ブート処理がこのプロセスに引き継がれ、指示されたプロセスをすべて起動していきます。
+          ブート処理がこのプロセスに引き継がれ、設定ファイルにて指定されたプロセスをすべて起動していきます。
           </para>
 @z
 
 @x killall5
           <para>Sends a signal to all processes, except the processes in its own
-          session so it will not kill the shell running the script that called
-          it</para>
+          session so it will not kill its parent shell</para>
 @y
           <para>
           プロセスすべてに対してシグナルを送信します。
           ただし自分のセッション内の起動プロセスは除きます。
-          つまり本コマンドを実行したスクリプトは停止されません。
+          つまり本コマンドを実行した親シェルは停止しません。
           </para>
 @z
 

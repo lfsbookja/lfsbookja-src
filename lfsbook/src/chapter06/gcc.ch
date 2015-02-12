@@ -307,9 +307,9 @@
         libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
         liblto_plugin.so, 
         libquadmath.{a,so}, libssp.{a,so},
-        libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a and libtsan.{a,so}</seg>
+        libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, and libtsan.{a,so}</seg>
 
-        <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, 
+        <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, and 
         /usr/share/gcc-&gcc-version;</seg>
 @y
         <seg>c++, cc (gcc へのリンク), cpp, g++, gcc,
@@ -321,7 +321,7 @@
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, libtsan.{a,so}</seg>
 
-        <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, 
+        <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc,
         /usr/share/gcc-&gcc-version;</seg>
 @z
 
@@ -473,15 +473,6 @@
           <para>
           GCC のリンク時における最適化 (Link Time Optimization; LTO) プラグイン。
           コンパイルユニット間での最適化を実現します。
-          </para>
-@z
-
-@x libmudflap
-          <para>Contains routines that support GCC's bounds checking
-          functionality</para>
-@y
-          <para>
-          GCC の配列境界チェック (bounds checking) 機能をサポートするルーチンを提供します。
           </para>
 @z
 

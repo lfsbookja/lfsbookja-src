@@ -102,7 +102,7 @@
         <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop,
         sysctl, tload, top, uptime, vmstat, w, and watch</seg>
         <seg>libprocps.so</seg>
-        <seg>/usr/include/proc, /usr/share/doc/procps-ng-&procps-ng-version;</seg>
+        <seg>/usr/include/proc and /usr/share/doc/procps-ng-&procps-ng-version;</seg>
 @y
         <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop,
         sysctl, tload, top, uptime, vmstat, w, watch</seg>

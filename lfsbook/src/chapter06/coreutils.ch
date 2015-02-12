@@ -604,12 +604,12 @@
 @z
 
 @x mkfifo
-          <para>Creates First-In, First-Outs (FIFOs), a <quote>named
-          pipe</quote> in UNIX parlance, with the given names</para>
+          <para>Creates First-In, First-Outs (FIFOs), a "named
+          pipe" in UNIX parlance, with the given names</para>
 @y
           <para>
           指定された名前の FIFO (First-In, First-Out) を生成します。
-          これは UNIX の用語で<quote>名前付きパイプ (named pipe)</quote>とも呼ばれます。
+          これは UNIX の用語で "名前付きパイプ (named pipe)" とも呼ばれます。
           </para>
 @z
 

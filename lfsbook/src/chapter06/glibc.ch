@@ -359,8 +359,8 @@
           test-suites will report errors. On an embedded system, where space is
           tight and you do not intend to ever update the timezones, you could save
           1.9MB by not using the <filename class="directory">posix</filename>
-          directory, but some applications or test-suites might give less good
-          results</para>
+          directory, but some applications or test-suites might produce some
+          failures.</para>
 @y
           <para>
           これは、うるう秒を含まない posix タイムゾーンデータを生成します。
@@ -369,7 +369,7 @@
           <filename class="directory">zoneinfo</filename> へは POSIX 準拠のタイムゾーンデータを含めることが必要であり、こうしておかないと数々のテストスイートにてエラーが発生してしまいます。
           組み込みシステムなどでは容量の制約が厳しいため、タイムゾーンデータはあまり更新したくない場合があり、<filename
           class="directory">posix</filename> ディレクトリを設けなければ 1.9 MB もの容量を節約できます。
-          ただしアプリケーションやテストスイートによっては、適正な結果が得られないかもしれません。
+          ただしアプリケーションやテストスイートによっては、エラーが発生するかもしれません。
           </para>
 @z
 
@@ -538,7 +538,7 @@
         /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
         /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
-        /var/cache/nscd, /var/lib/nss_db</seg>
+        /var/cache/nscd, and /var/lib/nss_db</seg>
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,

@@ -85,7 +85,7 @@
 @x
         <seg>libtool and libtoolize</seg>
         <seg>libltdl.{a,so}</seg>
-        <seg>/usr/include/libltdl, /usr/share/libtool</seg>
+        <seg>/usr/include/libltdl and /usr/share/libtool</seg>
 @y
         <seg>libtool,libtoolize</seg>
         <seg>libltdl.{a,so}</seg>

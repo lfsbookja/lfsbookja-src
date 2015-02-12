@@ -84,7 +84,7 @@
         lzmadec, lzmainfo, lzmore (link to xzmore),
         unlzma (link to xz), unxz, (link to xz), xz, xzcat (link to xz),
         xzcmp (link to xzdiff), xzdec, xzdiff, xzegrep (link to xzgrep),
-        xzfgrep (link to xzgrep), xzgrep, xzless, xzmore</seg>
+        xzfgrep (link to xzgrep), xzgrep, xzless, and xzmore</seg>
         <seg>liblzma.{a,so}</seg>
         <seg>/usr/include/lzma and /usr/share/doc/xz-&xz-version;</seg>
 @y
