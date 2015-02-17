@@ -48,6 +48,57 @@
 @z
 
 @x
+      <para>2015-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.19. Fixes 
+          <ulink url="&lfs-ticket-root;3746">#3746</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-3.19.0. Fixes 
+          <ulink url="&lfs-ticket-root;3748">#3748</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.20.2. Fixes 
+          <ulink url="&lfs-ticket-root;3749">#3749</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libtool-2.4.6. Fixes 
+          <ulink url="&lfs-ticket-root;3750">#3750</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added a note to glibc about potential 
+          problems with parallel build. Fixes 
+          <ulink url="&lfs-ticket-root;3747">#3747</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.19 へのアップデート。
+          <ulink url="&lfs-ticket-root;3746">#3746</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-3.19.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3748">#3748</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.20.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3749">#3749</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtool-2.4.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3750">#3750</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Glibc にて並行ビルドする際の本質的な問題について情報追記。
+          <ulink url="&lfs-ticket-root;3747">#3747</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-02-09</para>
       <itemizedlist>
         <listitem>

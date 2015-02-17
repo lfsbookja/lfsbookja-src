@@ -189,6 +189,16 @@
 @z
 
 @x
+    <note><para>There have been reports that this package may fail when 
+    building as a "parallel make".  If this occurs, rerun the make command
+    with a "-j1" option.</para></note>
+@y
+    <note><para>本パッケージは "並行ビルド (parallel make)" を行うとビルドに失敗するとの報告例があります。
+    もしビルドに失敗した場合は make コマンドに "-j1" オプションをつけて再ビルドしてください。
+    </para></note>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
