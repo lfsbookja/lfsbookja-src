@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2015-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.26. Fixes 
+          <ulink url="&lfs-ticket-root;3734">#3734</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.26 へのアップデート。
+          <ulink url="&lfs-ticket-root;3734">#3734</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-02-16</para>
       <itemizedlist>
         <listitem>
