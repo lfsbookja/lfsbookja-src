@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2015-02-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Cosmetic changes to output messages
+          by network boot scripts.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-02-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ネットワークブートスクリプトが出力するメッセージを変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-02-19</para>
       <itemizedlist>
         <listitem>

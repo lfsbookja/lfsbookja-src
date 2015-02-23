@@ -151,8 +151,9 @@
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
         swapoff (link to swapon), swapon, switch_root, tailf, taskset, ul,
         umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
-        wipefs, and x86_64</seg>
-        <seg>libblkid.{a,so}, libmount.{a,so}, and libuuid.{a,so}</seg>
+        wipefs, x86_64, and zramctl</seg>
+        <seg>libblkid.{a,so}, libfdisk.{a,so}, libmount.{a,so}, 
+        libsmartcols.{a,so}, and libuuid.{a,so}</seg>
         <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
         /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, 
         and /var/lib/hwclock</seg>
@@ -169,8 +170,9 @@
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
         swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, ul,
         umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
-        wipefs, x86_64</seg>
-        <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
+        wipefs, x86_64, zramctl</seg>
+        <seg>libblkid.{a,so}, libfdisk.{a,so}, libmount.{a,so}, 
+        libsmartcols.{a,so}, libuuid.{a,so}</seg>
         <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
         /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, 
         /var/lib/hwclock</seg>
@@ -1019,11 +1021,20 @@
           </para>
 @z
 
-@x
+@x x86_64
           <para>A symbolic link to setarch</para>
 @y
           <para>
           setarch へのシンボリックリンク。
+          </para>
+@z
+
+@x zramctl
+          <para>A program to set up and control zram (compressed ram disk) 
+          devices</para>
+@y
+          <para>
+          zram (compressed ram disk) デバイスを初期化し制御するためのプログラム。
           </para>
 @z
 
@@ -1036,12 +1047,28 @@
           </para>
 @z
 
+@x libfdisk
+          <para>Contains routines for manipulating partition tables</para>
+@y
+          <para>
+          パーティションテーブルを操作する処理ルーチンを提供します。
+          </para>
+@z
+
 @x libmount
           <para>Contains routines for block device mounting and
           unmounting</para>
 @y
           <para>
           ブロックデバイスのマウントとアンマウントに関する処理ルーチンを提供します。
+          </para>
+@z
+
+@x libsmartcols
+          <para>Contains routines for aiding screen output in tabular form</para>
+@y
+          <para>
+          タブラー形式 (tabular form) による画面出力を補助する処理ルーチンを提供します。
           </para>
 @z
 
