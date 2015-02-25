@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2015-02-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a fix to glibc for 32-bit architectures.  Fixes
+          <ulink url="&lfs-ticket-root;3755">#3755</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-02-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc にて32ビットアーキテクチャーに対する修正。
+          <ulink url="&lfs-ticket-root;3755">#3755</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-02-22</para>
       <itemizedlist>
         <listitem>

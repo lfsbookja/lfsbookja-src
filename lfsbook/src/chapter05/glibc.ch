@@ -43,6 +43,14 @@
 @z
 
 @x
+    <para>Fix is regression in the package that affects 32-bit architectures:</para>
+@y
+    <para>
+    32ビットアーキテクチャーに影響する部分を修正します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
