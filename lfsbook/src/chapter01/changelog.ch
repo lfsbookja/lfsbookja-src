@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2015-02-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add texinfo-4.7 or later to host system requirements. Fixes
+          <ulink url="&lfs-ticket-root;3756">#3756</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-02-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ホストシステム要件に texinfo-4.7 以上を追加。
+          <ulink url="&lfs-ticket-root;3756">#3756</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-02-23</para>
       <itemizedlist>
         <listitem>
