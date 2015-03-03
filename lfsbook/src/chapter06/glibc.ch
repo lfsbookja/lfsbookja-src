@@ -82,7 +82,7 @@
 @z
 
 @x
-    <para>Fix is regression in the package that affects 32-bit architectures:</para>
+    <para>Fix a regression in the package that affects 32-bit architectures:</para>
 @y
     <para>
     32ビットアーキテクチャーに影響する部分を修正します。
