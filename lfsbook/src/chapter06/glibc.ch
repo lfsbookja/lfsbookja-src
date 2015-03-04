@@ -220,7 +220,7 @@
 
 @x
         <para>Other tests known to fail on some architectures are
-        malloc/tst-malloc-usable and  nptl/tst-cleanupx4. </para>
+        malloc/tst-malloc-usable and nptl/tst-cleanupx4. </para>
 @y
         <para>
         上記以外に特定のアーキテクチャーにてテストが失敗することが分かっています。

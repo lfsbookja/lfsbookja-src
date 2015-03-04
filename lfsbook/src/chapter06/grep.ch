@@ -28,6 +28,14 @@
 @z
 
 @x
+    <para>First fix a potential security issue identified upstream:</para>
+@y
+    <para>
+    アップストリームが認識している潜在的なセキュリティ問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Grep for compilation:</para>
 @y
     <para>&PreparePackage1;Grep&PreparePackage2;</para>

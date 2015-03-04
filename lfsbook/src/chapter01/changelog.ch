@@ -48,6 +48,34 @@
 @z
 
 @x
+      <para>2015-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a sed to fix an upstream security issue
+          in e2fsprogs. Fixes
+          <ulink url="&lfs-ticket-root;3759">#3759</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a sed to fix an upstream security issue
+          in grep. Fixes
+          <ulink url="&lfs-ticket-root;3760">#3760</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs にて、アップストリームが認識しているセキュリティ問題を修正するための sed 文を追加。
+          <ulink url="&lfs-ticket-root;3759">#3759</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep にて、アップストリームが認識しているセキュリティ問題を修正するための sed 文を追加。
+          <ulink url="&lfs-ticket-root;3760">#3760</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-02-25</para>
       <itemizedlist>
         <listitem>

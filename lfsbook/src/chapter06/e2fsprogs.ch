@@ -35,6 +35,14 @@
 @z
 
 @x
+    <para>First, fix a potential security issue identified upstream:</para>
+@y
+    <para>
+    アップストリームが認識している潜在的なセキュリティ問題を修正します。
+    </para>
+@z
+
+@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
