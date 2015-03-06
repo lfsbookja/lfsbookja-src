@@ -14,9 +14,17 @@
 @z
 
 @x
-<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 12 SBU with tests)">
+<!ENTITY attr-ch6-du "4.2 MB">
+<!ENTITY attr-ch6-sbu "less than 0.1 SBU">
 @y
-<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テストスイートを含めると約 12 SBU)">
+<!ENTITY attr-ch6-du "4.2 MB">
+<!ENTITY attr-ch6-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 8.4 SBU with tests)">
+@y
+<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テスト込みで約 8.4 SBU)">
 @z
 
 @x
@@ -36,9 +44,9 @@
 @z
 
 @x
-<!ENTITY gcc-ch6-sbu "84 SBU (with tests)">
+<!ENTITY gcc-ch6-sbu "63 SBU (with tests)">
 @y
-<!ENTITY gcc-ch6-sbu "84 SBU (テスト込み)">
+<!ENTITY gcc-ch6-sbu "63 SBU (テスト込み)">
 @z
 
 @x
@@ -60,6 +68,12 @@
 @z
 
 @x
+<!ENTITY less-ch6-sbu "less than 0.1 SBU">
+@y
+<!ENTITY less-ch6-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY lfs-bootscripts-ch7-sbu "less than 0.1 SBU">
 @y
 <!ENTITY lfs-bootscripts-ch7-sbu "0.1 SBU 以下">
@@ -77,6 +91,12 @@
 @y
 <!ENTITY linux-ch8-du "700 - 6800 MB (一般的には 800-900 MB)">
 <!ENTITY linux-ch8-sbu "3.0 - 49.0 SBU (一般的には 6 SBU 程度)">
+@z
+
+@x
+<!ENTITY linux-headers-ch6-sbu "less than 0.1 SBU">
+@y
+<!ENTITY linux-headers-ch6-sbu "0.1 SBU 以下">
 @z
 
 @x
