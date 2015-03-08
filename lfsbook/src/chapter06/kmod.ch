@@ -64,6 +64,17 @@
 @z
 
 @x
+    <para>This package does not come with a test suite that can be run in the
+    LFS chroot environment.  At a minimum the git program is required and
+    several tests will not run outside of a git repository. </para>
+@y
+    <para>
+    本パッケージにあるテストスイートは、LFS の chroot 環境下にて動作させることができません。
+    最低でも git が必要であり、git リポジトリ配下でテストしないと失敗するものがあります。
+    </para>
+@z
+
+@x
     <para>To test the results, issue:</para>
 @y
     <para>コンパイル結果をテストする場合は以下を実行します。</para>

@@ -48,6 +48,48 @@
 @z
 
 @x
+      <para>2015-03-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to mpc-1.0.3. Fixes
+          <ulink url="&lfs-ticket-root;3753">#3753</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.8.1. Fixes
+          <ulink url="&lfs-ticket-root;3754">#3754</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.2.1. Fixes
+          <ulink url="&lfs-ticket-root;3757">#3757</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-20. Fixes
+          <ulink url="&lfs-ticket-root;3758">#3758</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-03-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - mpc-1.0.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3753">#3753</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3754">#3754</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz-5.2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3757">#3757</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-20 へのアップデート。
+          <ulink url="&lfs-ticket-root;3758">#3758</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-03-06</para>
       <itemizedlist>
         <listitem>
