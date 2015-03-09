@@ -20,9 +20,9 @@
 @z
 
 @x
-    <title>Installation of Tcl</title>
+    <title>Installation of Tcl-core</title>
 @y
-    <title>&InstallationOf1;Tcl&InstallationOf2;</title>
+    <title>&InstallationOf1;Tcl-core&InstallationOf2;</title>
 @z
 
 @x
@@ -40,6 +40,17 @@
     ただ本質的ではないことであっても、重要なツール類が正常に動作するという確認が得られれば安心できます。
     本章ではテストスイートを実行することは必須ではないため、実行しないものとしていますが、それら四つのパッケージは <xref
     linkend="chapter-building-system"/>で行うテストのために必要となるものです。
+    </para>
+@z
+
+@x
+    <para>Note that the Tcl package used here is a minimal version needed
+    to run the LFS tests.  For the full package, see the  
+    <ulink url='&blfs-book;general/tcl.html'>BLFS Tcl procedures</ulink>.</para>
+@y
+    <para>
+    ここで利用する Tcl パッケージは LFS におけるテストを実施するための最低限必要なバージョンです。
+    完全なパッケージについては <ulink url='&blfs-book;general/tcl.html'>BLFS Tcl procedures</ulink> を参照してください。
     </para>
 @z
 
@@ -120,9 +131,9 @@
 @z
 
 @x
-    <title>Contents of Tcl</title>
+    <title>Contents of Tcl-core</title>
 @y
-    <title>&ContentsOf1;Tcl&ContentsOf2;</title>
+    <title>&ContentsOf1;Tcl-core&ContentsOf2;</title>
 @z
 
 @x

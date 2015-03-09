@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2015-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.19.1. Fixes
+          <ulink url="&lfs-ticket-root;3763">#3763</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to patch-2.7.5. Fixes
+          <ulink url="&lfs-ticket-root;3762">#3762</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Change tcl to minimal tcl-core package. Fixes
+          <ulink url="&lfs-ticket-root;3752">#3752</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.19.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3763">#3763</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - patch-2.7.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3762">#3762</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl を最小限の tcl-core に変更。
+          <ulink url="&lfs-ticket-root;3752">#3752</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-03-07</para>
       <itemizedlist>
         <listitem>
