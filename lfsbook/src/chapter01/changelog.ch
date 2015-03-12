@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2015-03-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to intltool-0.51.0. Fixes
+          <ulink url="&lfs-ticket-root;3763">#3764</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-03-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - intltool-0.51.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3763">#3764</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-03-08</para>
       <itemizedlist>
         <listitem>
