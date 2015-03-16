@@ -51,6 +51,14 @@
       <para>2015-03-15</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to tcl-core-8.6.4. Fixes
+          <ulink url="&lfs-ticket-root;3766">#3766</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.26.1. Fixes
+          <ulink url="&lfs-ticket-root;3767">#3767</ulink>.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - Remove non-essential static libraries
           from the installation. Added a new section in Chapter 6 
           Introduction, suppressed many static libraries in different
@@ -62,6 +70,14 @@
 @y
       <para>2015-03-15</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tcl-core-8.6.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3766">#3766</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.26.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3767">#3767</ulink> を Fix に。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - スタティックライブラリのインストールが不要なものは削除。
           第6章のはじめに (Introduction) にて新たな節を追加。
