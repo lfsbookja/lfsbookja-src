@@ -48,6 +48,30 @@
 @z
 
 @x
+      <para>2015-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove non-essential static libraries
+          from the installation. Added a new section in Chapter 6 
+          Introduction, suppressed many static libraries in different
+          packages, and removed the remaining in the Cleaning Up section.
+          Fixes
+          <ulink url="&lfs-ticket-root;3751">#3751</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - スタティックライブラリのインストールが不要なものは削除。
+          第6章のはじめに (Introduction) にて新たな節を追加。
+          多くのパッケージにてスタティックライブラリをインストールしないようにし、仕切り直し (Cleaning Up) にて残りのスタティックライブラリの削除手順を追加。
+          <ulink url="&lfs-ticket-root;3751">#3751</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-03-11</para>
       <itemizedlist>
         <listitem>

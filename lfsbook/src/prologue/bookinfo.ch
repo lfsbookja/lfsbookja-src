@@ -20,8 +20,8 @@
       <surname>Beekmans</surname>
     </author>
     <author>
-      <firstname>Edited by Matthew Burgess</firstname>
-      <surname>and Bruce Dubbs</surname>
+      <firstname>Managing Editor is Bruce</firstname>
+      <surname>Dubbs</surname>
     </author>
   </authorgroup>
 @y
@@ -31,8 +31,8 @@
       <surname>Beekmans</surname>
     </author>
     <author>
-      <firstname>編集： Matthew Burgess</firstname>
-      <surname>、Bruce Dubbs</surname>
+      <firstname>編集総括： Bruce</firstname>
+      <surname>Dubbs</surname>
     </author>
     <author>
       <firstname>日本語訳： 松山 道夫 (&jversion; 版)</firstname>

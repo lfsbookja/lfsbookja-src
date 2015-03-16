@@ -74,3 +74,16 @@
   その作業手順は<xref linkend="ch-system-bindmount"/>と<xref linkend="ch-system-kernfsmount"/>で説明しています。
   </para>
 @z
+
+@x
+  <para>Finally, thre were several static libraries that were not supressed earlier
+  in the chapter in order to satisfy the regression tests in several packages. These 
+  libraries are from binutils, bzip2, e2fsprogs, flex, libtool, and zlib.  If desired,
+  remove them now:</para>
+@y
+  <para>
+  これまでのパッケージビルドにて、縮退テスト (regressoin tests) を実現するために生成していたスタティックライブラリがいくらか残っています。
+  これは binutils, bzip2, e2fsprogs, flex, libtool, zlib から作られたものです。
+  もし不要なら以下により削除します。
+  </para>
+@z

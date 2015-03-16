@@ -116,3 +116,54 @@
   本章にて導入するパッケージにおいて SBU 値と必要ディスク容量には、テストスイート実施による時間や容量をすべて含んでいます。
   </para></note>
 @z
+
+@x
+    <title>About libraries</title>
+@y
+    <title>ライブラリについて</title>
+@z
+
+@x
+    <para>In general, the LFS editors discourage building and installing static
+    libraries.  The original purpose for most static libraries has been made
+    obsolete in a modern Linux system.  In addition linking a static library
+    into a program can be detrimental.  If an update to the library is needed
+    to remove a security problem, all programs that use the static library will
+    need to be relinked to the new library.  Since the use of static libraries
+    is not always obvious, deciding which programs (and the procedures needed to
+    do the linking) may not even be known.</para>
+@y
+    <para>
+    LFS 編集者は全般にスタティックライブラリは作らないものとしています。
+    スタティックライブラリが作られたそもそもの目的は、現在の Linux システムにとってはもはや古いものです。
+    スタティックライブラリをリンクすると障害となることすらあります。
+    例えばセキュリティ問題を解決するためにライブラリリンクを更新しなければならなくなったら、スタティックライブラリにリンクしていたプログラムはすべて再構築しなければなりません。
+    したがってスタティックライブラリを使うべきかどうかは、いつも迷うところであり、よく分からないプログラム (あるいはリンクされるプロシージャ) であってもどちらかに定めなければなりません。
+    </para>
+@z
+
+@x
+    <para>In the prcedures in Chapter 6, we remove or disable installation of
+    most static libraries.  In a few cases, especially glibc and gcc, the use
+    of static libraries remains essential to the general package building
+    process.  Usually this is done by passing a
+    <option>--disable-static</option> option to <command>configure</command>.
+    In other cases, alternate means are needed.</para>
+@y
+    <para>
+    第6章の手順では、スタティックライブラリのインストールはたいてい行わないようにしています。
+    ただし glibc や gcc においては、一般的なパッケージビルドに必要であるため、スタティックライブラリを利用します。
+    多くのケースでは <command>configure</command> に対して <option>--disable-static</option> を与えることで実現しますが、これができない場合には他の方法を取ります。
+    </para>
+@z
+
+@x
+    <para>For a more complete discussion of libraries, see the discussion
+    <ulink url="&blfs-root;/view/&short-version;/introduction/libraries.html">
+    Libraries: Static or shared?</ulink> in the BLFS book.</para>
+@y
+    <para>
+    ライブラリに関してのより詳細な議論については BLFS ブックの <ulink url="&blfs-root;/view/&short-version;/introduction/libraries.html">
+    Libraries: Static or shared?</ulink> を参照してください。
+    </para>
+@z

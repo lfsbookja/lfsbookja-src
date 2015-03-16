@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>Don't install a static library that is not handled by configure:</para>
+@y
+    <para>
+    configure では制御できないため、以下によりスタティックライブラリをインストールしないようにします。
+    </para>
+@z
+
+@x
     <para>Prepare Ncurses for compilation:</para>
 @y
     <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
@@ -66,6 +74,15 @@
 @y
           <para>
           本スイッチは pkg-config 用の .pc ファイルを生成しインストールすることを指示します。
+          </para>
+@z
+
+@x --without-normal
+          <para>This switch disables building and installing most static libraries.
+          </para>
+@y
+          <para>
+          本スイッチはたいていのスタティックライブラリをビルド、インストールしないようにします。
           </para>
 @z
 
@@ -178,22 +195,56 @@
 @z
 
 @x
-        <seg>captoinfo (link to tic), clear, infocmp, infotocap (link to tic),
-        ncursesw5-config, reset (link to tset), tabs, tic, toe, tput, and tset</seg>
-        <seg>libcursesw.{a,so} (symlink and linker script to libncursesw.{a,so}),
-        libformw.{a,so}, libmenuw.{a,so}, libncurses++w.a, libncursesw.{a,so},
-        libpanelw.{a,so}, and their non-wide-character counterparts without "w"
-        in the library names.</seg>
-        <seg>/usr/share/tabset, /usr/share/terminfo, and
-        /usr/share/doc/ncurses-&ncurses-version;</seg>
+        <seg>
+           captoinfo (link to tic), 
+           clear, 
+           infocmp, 
+           infotocap (link to tic),
+           ncursesw5-config, 
+           reset (link to tset), 
+           tabs, 
+           tic, 
+           toe, 
+           tput, and 
+           tset
+        </seg>
+        <seg>
+           libcursesw.so (symlink and linker script to libncursesw.so),
+           libformw.so, 
+           libmenuw.so, 
+           libncursesw.so,
+           libpanelw.so, and their non-wide-character counterparts without "w"
+              in the library names.</seg>
+        <seg>
+           /usr/share/tabset, 
+           /usr/share/terminfo, and
+           /usr/share/doc/ncurses-&ncurses-version;
+        </seg>
 @y
-        <seg>captoinfo (tic へのリンク), clear, infocmp, infotocap (tic へのリンク),
-        ncursesw5-config, reset (tset へのリンク), tabs, tic, toe, tput, tset</seg>
-        <seg>libcursesw.{a,so} (libncursesw.{a,so} へのシンボリックリンクおよびリンカースクリプト),
-        libformw.{a,so}, libmenuw.{a,so}, libncurses++w.a, libncursesw.{a,so},
-        libpanelw.{a,so} これらに加えてワイド文字対応ではない通常のライブラリで、その名称から "w" を取り除いたもの。</seg>
-        <seg>/usr/share/tabset, /usr/share/terminfo,
-        /usr/share/doc/ncurses-&ncurses-version;</seg>
+        <seg>
+           captoinfo (tic へのリンク), 
+           clear, 
+           infocmp, 
+           infotocap (tic へのリンク),
+           ncursesw5-config, 
+           reset (tset へのリンク), 
+           tabs, 
+           tic, 
+           toe, 
+           tput,
+           tset
+        </seg>
+        <seg>
+           libcursesw.so (libncursesw.so へのシンボリックリンクおよびリンカースクリプト),
+           libformw.so, 
+           libmenuw.so, 
+           libncursesw.so,
+           libpanelw.so, これらに加えてワイド文字対応ではない通常のライブラリで、その名称から "w" を取り除いたもの。</seg>
+        <seg>
+           /usr/share/tabset, 
+           /usr/share/terminfo,
+           /usr/share/doc/ncurses-&ncurses-version;
+        </seg>
 @z
 
 @x

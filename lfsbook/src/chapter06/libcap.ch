@@ -32,6 +32,14 @@
 @z
 
 @x
+    <para>Prevent a static library from being installed:</para>
+@y
+    <para>
+    スタティックライブラリをインストールしないようにします。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

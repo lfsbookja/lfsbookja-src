@@ -26,21 +26,17 @@
 @z
 
 @x
-    <para>Prepare Bison for compilation:</para>
+    <para>Inhibit static library installation:</para>
 @y
-    <para>&PreparePackage1;Bison&PreparePackage2;</para>
+    <para>
+    スタティックライブラリをインストールしないようにします。
+    </para>
 @z
 
 @x
-    <para>The configure system causes Bison to be built without support for
-    internationalization of error messages if a <command>bison</command>
-    program is not already in $PATH. The following addition will correct
-    this:</para>
+    <para>Prepare Bison for compilation:</para>
 @y
-    <para>
-    <command>bison</command> プログラムが $PATH 上にない場合に、この Bison の configure を行ってビルドすると、国際化されたエラーメッセージのサポートがないままビルドされてしまいます。
-    これを正すために以下の設定を追加します。
-    </para>
+    <para>&PreparePackage1;Bison&PreparePackage2;</para>
 @z
 
 @x
