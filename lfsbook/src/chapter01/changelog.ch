@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2015-03-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.19.2. Fixes
+          <ulink url="&lfs-ticket-root;3768">#3768</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.0. Fixes
+          <ulink url="&lfs-ticket-root;3769">#3769</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-03-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.19.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3768">#3768</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3769">#3769</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-03-15</para>
       <itemizedlist>
         <listitem>
@@ -92,7 +118,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to intltool-0.51.0. Fixes
-          <ulink url="&lfs-ticket-root;3763">#3764</ulink>.</para>
+          <ulink url="&lfs-ticket-root;3764">#3764</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -100,7 +126,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - intltool-0.51.0 へのアップデート。
-          <ulink url="&lfs-ticket-root;3763">#3764</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;3764">#3764</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z

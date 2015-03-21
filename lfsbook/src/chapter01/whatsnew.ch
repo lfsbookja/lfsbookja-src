@@ -34,12 +34,6 @@
     <title>アップグレード:</title>
 @z
 
-% @x
-%       <para>Udev &systemd-version; (extracted from systemd-&systemd-version;)</para>
-% @y
-%       <para>Udev &systemd-version; (systemd-&systemd-version; からの抽出)</para>
-% @z
-
 @x
     <title>Added:</title>
 @y
@@ -50,4 +44,10 @@
     <title>Removed:</title>
 @y
     <title>削除:</title>
+@z
+
+@x
+      <para>Eudev-manpages separate tarball</para>
+@y
+      <para>Eudev の 個別の manpages tarball</para>
 @z
