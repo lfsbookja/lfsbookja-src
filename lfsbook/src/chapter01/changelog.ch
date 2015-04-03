@@ -48,6 +48,63 @@
 @z
 
 @x
+      <para>2015-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Adjust discussion of LFS envronment variable to be
+          before first use.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Use --with-glibc-version=2.11 in gcc-pass1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to dejagnu-1.5.3. Fixes
+          <ulink url="&lfs-ticket-root;3773">#3773</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 環境変数 LFS を説明してから利用する順とする。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc 1回目にて --with-glibc-version=2.11 を指定することに。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - dejagnu-1.5.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3773">#3773</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.19.3. Fixes
+          <ulink url="&lfs-ticket-root;3772">#3772</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata2015b. Fixes
+          <ulink url="&lfs-ticket-root;3770">#3770</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.19.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3772">#3772</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata2015b へのアップデート。
+          <ulink url="&lfs-ticket-root;3770">#3770</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-03-20</para>
       <itemizedlist>
         <listitem>

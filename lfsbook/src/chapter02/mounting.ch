@@ -23,33 +23,22 @@
   <para>Now that a file system has been created, the partition needs to
   be made accessible. In order to do this, the partition needs to be
   mounted at a chosen mount point. For the purposes of this book, it is
-  assumed that the file system is mounted under <filename
-  class="directory">/mnt/lfs</filename>, but the directory choice is up
-  to you.</para>
+  assumed that the file system is mounted under the directory specified by the
+  <envar>LFS</envar> envronment varibale as described in the previous section.
+  </para>
 @y
   <para>
   ファイルシステムが生成できたら、パーティションをアクセスできるようにします。
   これを行うためにはマウントポイントを定める必要があります。
-  本書ではファイルシステムを <filename class="directory">/mnt/lfs</filename> にマウントすることにします。
-  このディレクトリは各自で取り決めて変えることもできます。
+  本書では前に示したように、環境変数 <envar>LFS</envar> に指定されたディレクトリに対してファイルシステムがマウントされるものとします。
   </para>
 @z
 
 @x
-  <para>Choose a mount point and assign it to the <envar>LFS</envar>
-  environment variable by running:</para>
+  <para>Create the mount point and mount the LFS file system by running:</para>
 @y
   <para>
-  マウントポイントを定めたら、そのディレクトリを指し示すような環境変数 <envar>LFS</envar> を以下のようにして設定します。
-  </para>
-@z
-
-@x
-  <para>Next, create the mount point and mount the LFS file system by
-  running:</para>
-@y
-  <para>
-  次にマウントポイントを生成し、LFS ファイルシステムをマウントします。
+  マウントポイントを生成し、LFS ファイルシステムをマウントします。
   </para>
 @z
 
