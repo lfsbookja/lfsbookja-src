@@ -50,11 +50,10 @@
 @z
 
 @x
-    <para>Make sure there are no stale files and dependencies lying around
-    from previous activity:</para>
+    <para>Make sure there are no stale files embedded in the package:</para>
 @y
     <para>
-    これより前に一度処理を行っていたとしても、不適切なファイルや誤った依存関係を残さないように、以下を処理します。
+    本パッケージ内にある不適切なファイルを残さないように、以下を処理します。
     </para>
 @z
 

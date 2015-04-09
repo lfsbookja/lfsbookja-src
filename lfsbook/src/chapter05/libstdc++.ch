@@ -79,8 +79,8 @@
 @z
 
 @x --disable-libstdcxx-threads
-          <para>Since we have not built the thread C library, the C++
-          one cannot be built as well.</para>
+          <para>Since we have not yet built the C threads library, the C++
+          one cannot be built either.</para>
 @y
           <para>
           C スレッドライブラリはまだ生成していないため、C++ スレッドライブラリも生成しないようにします。

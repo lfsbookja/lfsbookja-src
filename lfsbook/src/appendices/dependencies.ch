@@ -369,10 +369,10 @@
 
 %----------------------------------------------------------------------
 @x Eudev
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep,
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf,
          Make, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep,
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf,
          Make, Sed</seg>
 @z
 @x

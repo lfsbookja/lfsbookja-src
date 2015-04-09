@@ -324,15 +324,19 @@
 @z
 
 @x
+  <title>Adding nsswitch.conf</title>
+@y
+  <title>nsswitch.conf の追加</title>
+@z
+
+@x
     <para>The <filename>/etc/nsswitch.conf</filename> file needs to be created
-    because, although Glibc provides defaults when this file is missing or corrupt,
-    the Glibc defaults do not work well in a networked environment. The time zone
-    also needs to be configured.</para>
+    because the Glibc defaults do not work well in a networked environment.
+    </para>
 @y
     <para>
     <filename>/etc/nsswitch.conf</filename> ファイルを作成しておく必要があります。
-    Glibc はこのファイルが無い場合や誤っている場合でもデフォルト設定を用いて動作しますが、ネットワーク環境下ではデフォルト設定であっても正しく動作しません。
-    またタイムゾーンの設定も必要になります。
+    Glibc はデフォルトでは、このファイルが無い場合にネットワーク環境が正しく動作しません。
     </para>
 @z
 
@@ -346,9 +350,15 @@
 @z
 
 @x
-    <para>Install timezone data:</para>
+    <title>Adding time zone data</title>
 @y
-    <para>タイムゾーンデータをインストールします。</para>
+    <title>タイムゾーンデータの追加</title>
+@z
+
+@x
+    <para>Install and set up the timezone data with the following:</para>
+@y
+    <para>以下によりタイムゾーンデータをインストールし設定します。</para>
 @z
 
 @x
