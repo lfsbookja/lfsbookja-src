@@ -37,6 +37,15 @@
 @z
 
 @x
+    <para>Next, add a workaround to prevent the /tools directory from being 
+    hard coded into Eudev binary files library locations:</para>
+@y
+    <para>
+    Eudev バイナリにライブラリのディレクトリがハードコーディングされないように処置します。
+    </para>
+@z
+
+@x
 <para>Prepare Eudev for compilation:</para>
 @y
 <para>&PreparePackage1;Eudev&PreparePackage2;</para>
@@ -81,11 +90,11 @@ will also be used as a part of installation:</para>
 @z
 
 @x
-    <para>Finally, install some custom rules and support files useful in an LFS 
+    <para>Install some custom rules and support files useful in an LFS 
     environment:</para>
 @y
     <para>
-    最後に、LFS 環境にて有用なカスタムルールやサポートファイルをインストールします。
+    LFS 環境にて有用なカスタムルールやサポートファイルをインストールします。
     </para>
 @z
 

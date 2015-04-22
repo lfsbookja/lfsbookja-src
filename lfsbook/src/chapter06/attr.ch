@@ -38,6 +38,15 @@
 @z
 
 @x
+    <para>Prevent installation of manual pages that were already installed by
+    the <xref linkend="man-pages"/> package:</para>
+@y
+    <para>
+    <xref linkend="man-pages"/> パッケージによって既にインストールされた man ページを、ここで再インストールされないようにします。
+    </para>
+@z
+
+@x
     <para>Prepare Attr for compilation:</para>
 @y
     <para>&PreparePackage1;Attr&PreparePackage2;</para>

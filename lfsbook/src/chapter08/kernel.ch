@@ -322,16 +322,28 @@
 @z
 
 @x
-    <para>If the kernel source tree is going to be retained, run
-    <command>chown -R 0:0</command> on the <filename
-    class="directory">linux-&linux-version;</filename> directory to ensure
-    all files are owned by user <emphasis>root</emphasis>.</para>
+      <para>In many cases, the configuration of the kernel will need to be 
+      updated for packages that will be installed later in BLFS.  Unlike
+      other packages, it is not necessary to remove the kernel source tree
+      after the newly built kernel is installed.</para>  
 @y
-    <para>
-    カーネルのソースファイルを保持しておくつもりなら <filename
-    class="directory">linux-&linux-version;</filename> ディレクトリにおいて <command>chown -R 0:0</command> を実行しておいてください。
-    これによりそのディレクトリの所有者は <emphasis>root</emphasis> ユーザーとなります。
-    </para>
+      <para>
+      カーネルの設定は、BLFS をインストールしていくにつれて、設定を更新していかなければならないことが多々あります。
+      一般にパッケージのソースは削除することが通常ですが、カーネルのソースに関しては、カーネルをもう一度新たにインストールするなら、削除しなくて構いません。
+      </para>
+@z
+
+@x
+      <para>If the kernel source tree is going to be retained, run
+      <command>chown -R 0:0</command> on the <filename
+      class="directory">linux-&linux-version;</filename> directory to ensure
+      all files are owned by user <emphasis>root</emphasis>.</para>
+@y
+      <para>
+      カーネルのソースファイルを保持しておくつもりなら <filename
+      class="directory">linux-&linux-version;</filename> ディレクトリにおいて <command>chown -R 0:0</command> を実行しておいてください。
+      これによりそのディレクトリの所有者は <emphasis>root</emphasis> ユーザーとなります。
+      </para>
 @z
 
 @x

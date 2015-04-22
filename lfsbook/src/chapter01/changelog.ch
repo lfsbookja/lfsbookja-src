@@ -48,6 +48,37 @@
 @z
 
 @x
+      <para>2015-04-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Prevent /tools from being hard coded into
+          eudev binaries.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.8.3. Fixes
+          <ulink url="&lfs-ticket-root;3778">#3778</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Suppress duplicate installation of attr man pages.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-04-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - eudev バイナリに /tools ディレクトリがハードコーディングされないように。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.8.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3778">#3778</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - attr の man ページが再インストールされないように。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-04-16</para>
       <itemizedlist>
         <listitem>
