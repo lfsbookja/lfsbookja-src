@@ -48,6 +48,42 @@
 @z
 
 @x
+      <para>2015-04-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Added a fix for security issue
+          in Glibc (CVE-2015-1781). Thanks to Ken Moffat
+          for identifying the problem and the fix.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Fixed Ncurses and Perl build
+          with GCC 5. Thanks to Ken Moffat and Douglas
+          R. Reno for providing the patches.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to GCC-5.1.0. Fixes
+          <ulink url="&lfs-ticket-root;3779">#3779</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-04-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Glibc のセキュリティ問題 (CVE-2015-1781) の解消のための修正。
+          Ken Moffat が問題を同定し修正してくれたことに感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - GCC 5 に対して Ncurses と Perl のビルド方法を修正。
+          パッチを提供してくれた Ken Moffat と Douglas R. Reno に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - GCC-5.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3779">#3779</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-04-21</para>
       <itemizedlist>
         <listitem>

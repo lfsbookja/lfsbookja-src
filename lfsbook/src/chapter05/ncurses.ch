@@ -32,6 +32,15 @@
 @z
 
 @x
+    <para>First, apply a patch to prevent a build failure
+    when building with GCC 5:</para>
+@y
+    <para>
+    GCC 5 を用いた場合にビルドに失敗するため、これを解消するパッチを適用します。
+    </para>
+@z
+
+@x
     <para>Prepare Ncurses for compilation:</para>
 @y
     <para>&PreparePackage1;Ncurses&PreparePackage2;</para>

@@ -94,7 +94,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
+@x --host=$LFS_TGT, --build=$(../glibc-&glibc-version;/scripts/config.guess)
           <para>The combined effect of these switches is that Glibc's build system
           configures itself to cross-compile, using the cross-linker and
           cross-compiler in <filename class="directory">/tools</filename>.</para>
@@ -105,7 +105,7 @@
           </para>
 @z
 
-@x
+@x --disable-profile
           <para>This builds the libraries without profiling information. Omit
           this option if profiling on the temporary tools is necessary.</para>
 @y
@@ -115,7 +115,7 @@
           </para>
 @z
 
-@x
+@x --enable-kernel
           <para>This tells Glibc to compile the library with support
           for &min-kernel; and later Linux kernels.  Workarounds for older
           kernels are not enabled.</para>
@@ -126,7 +126,19 @@
           </para>
 @z
 
-@x
+@x --enable-obsolete-rpc
+          <para>This installs NIS and RPC related headers that are not
+          installed by default. They are required to build GCC and by
+          several BLFS packages.</para>
+@y
+          <para>
+          NIS と RPC に関連するヘッダーファイルをインストールします。
+          これらはデフォルトではインストールされません。
+          これは GCC のビルドや、いくつかの BLFS パッケージにて必要となるものです。
+          </para>
+@z
+
+@x --with-headers=/tools/include
           <para>This tells Glibc to compile itself against the headers recently
           installed to the tools directory, so that it knows exactly what
           features the kernel has and can optimize itself accordingly.</para>

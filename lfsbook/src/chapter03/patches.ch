@@ -109,10 +109,16 @@
         <para>&Download;: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
 @z
 
-@x Perl Data::Dumper Patch
-        <para>Download: <ulink url="&patches-root;&perl-fix-patch;"/></para>
+@x Ncurses GCC 5 Fixes Patch
+        <para>Download: <ulink url="&patches-root;&ncurses-gcc5-buildfixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&perl-fix-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&ncurses-gcc5-buildfixes-patch;"/></para>
+@z
+
+@x Perl GCC 5 Fixes Patch
+        <para>Download: <ulink url="&patches-root;&perl-gcc5-fixes-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&perl-gcc5-fixes-patch;"/></para>
 @z
 
 @x Readline Upstream Fixes Patch

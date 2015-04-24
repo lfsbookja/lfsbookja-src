@@ -29,6 +29,15 @@
 @z
 
 @x
+    <para>First, apply a patch to prevent a build failure
+    when building with GCC 5:</para>
+@y
+    <para>
+    GCC 5 を用いた場合にビルドに失敗するため、これを解消するパッチを適用します。
+    </para>
+@z
+
+@x
     <para>Don't install a static library that is not handled by configure:</para>
 @y
     <para>

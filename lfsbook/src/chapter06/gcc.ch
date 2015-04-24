@@ -29,23 +29,6 @@
 @z
 
 @x
-    <para>As in Chapter 5, fix a problem identified upstream:</para>
-@y
-    <para>
-    第5章と同じように、アップストリームが認識している問題を修正します。
-    </para>
-@z
-
-@x
-    <para>Now fix another problem identified upstream that causes some 
-    programs to fail:</para>
-@y
-    <para>
-    さらにアップストリームが認識しているバグを修正します。
-    </para>
-@z
-
-@x
     <para>The GCC documentation recommends building GCC outside of the source
     directory in a dedicated build directory:</para>
 @y
@@ -162,16 +145,15 @@
 
 @x
     <para>A few unexpected failures cannot always be avoided. The GCC developers
-    are usually aware of these issues, but have not resolved them yet. <!-- In
-    particular, the <filename class="libraryfile">libmudflap</filename> tests
-    are known to be particularly problematic as a result of a bug in GCC
-    (<ulink url="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=20003"/>). -->
+    are usually aware of these issues, but have not resolved them yet.
+    In particular, four tests in the libgomp test suite are known to fail.
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
 @y
     <para>
     テストに失敗することがありますが、これを回避することはできません。
     GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
+    特に libgomp のテストスイートにて 4つのテストが失敗します。
     上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
 @z

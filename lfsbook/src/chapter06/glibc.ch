@@ -90,6 +90,22 @@
 @z
 
 @x
+    <para>Fix a potential security issue identified upstream:</para>
+@y
+    <para>
+    アップストリームにより認識されているセキュリティ問題を解消します。
+    </para>
+@z
+
+@x
+    <para>Fix a test case that fails when built using GCC 5:</para>
+@y
+    <para>
+    GCC 5 を用いてビルドした際にテストケースが失敗するため、これを修正します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
@@ -102,24 +118,6 @@
     <para>Prepare Glibc for compilation:</para>
 @y
     <para>&PreparePackage1;Glibc&PreparePackage2;</para>
-@z
-
-@x
-      <title>The meaning of the new configure options:</title>
-@y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
-@z
-
-@x --enable-obsolete-rpc
-          <para>Installs NIS and RPC related headers that are not installed by
-          default; these are required to rebuild Glibc and by several BLFS
-          packages.</para>
-@y
-          <para>
-          NIS と RPC に関連するヘッダーファイルをインストールします。
-          これらはデフォルトではインストールされません。
-          これは Glibc の再構築や、いくつかの BLFS パッケージにて必要となるものです。
-          </para>
 @z
 
 @x
@@ -161,13 +159,20 @@
 @z
 
 @x
-      <listitem>
+        <para>posix/tst-getaddrinfo4 will always fail 
+        due to not having a network connection when the tests are run.</para>
+@y
+        <para>
+        posix/tst-getaddrinfo4 は、テスト実行時にネットワークに接続されていないため失敗します。
+        </para>
+@z
+
+@x
         <para>The <emphasis>tst/tst-cputimer1</emphasis> and 
         <emphasis>rt/tst-cpuclock2</emphasis> tests have been known to
         fail.  The reason is not completely understood, but indications are
         that minor timing issues can trigger these failures.</para>
 @y
-      <listitem>
         <para>
         <emphasis>tst/tst-cputimer1</emphasis> と <emphasis>rt/tst-cpuclock2</emphasis> のテストは失敗することが知られています。
         失敗の理由は明確ではありません。
@@ -196,15 +201,6 @@
         旧式のハードウェアや性能の低いハードウェア、あるいは負荷の高いシステムにおいてテストを行うと、処理時間をオーバーしてタイムアウトが発生しテストが失敗します。
         make check コマンドにて TIMEOUTFACTOR をセットするものに修正すれば、それらのエラーは回避できると報告されています。
         (例： <command>TIMEOUTFACTOR=16 make -k check</command>)
-        </para>
-@z
-
-@x
-        <para>posix/tst-getaddrinfo4 and posix/tst-getaddrinfo5 will always fail 
-        due to not having a network connection when the tests are run.</para>
-@y
-        <para>
-        posix/tst-getaddrinfo4 と posix/tst-getaddrinfo5 は、テスト実行時にネットワークに接続されていないため失敗します。
         </para>
 @z
 

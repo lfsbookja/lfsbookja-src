@@ -54,10 +54,12 @@
 @z
 
 @x
-    <para>Fix a potential security problem:</para>
+    <para>Apply a patch to allow the Errno.pm module and the h2ph
+    program to build correctly when building with GCC 5:</para>
 @y
     <para>
-    セキュリティに関する根本的な問題を修正します。
+    Errno.pm モジュールと h2ph プログラムが GCC 5 を用いてビルドした場合に、正しくビルドされません。
+    以下のパッチによりこれを修正します。
     </para>
 @z
 
