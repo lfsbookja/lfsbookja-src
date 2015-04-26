@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2015-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to tzdata-2015d. Fixes
+          <ulink url="&lfs-ticket-root;3780">#3780</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata-2015d へのアップデート。
+          <ulink url="&lfs-ticket-root;3780">#3780</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-04-24</para>
       <itemizedlist>
         <listitem>
