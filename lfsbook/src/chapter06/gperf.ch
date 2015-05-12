@@ -40,9 +40,12 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>The tests are known to fail if running multiple
+    simultaneous tests (-j option greater than 1). To test
+    the results, issue:</para>
 @y
     <para>
+    同時実行によるテスト (-j オプションを 1 より大きくした場合) ではテストに失敗します。
     ビルド結果をテストする場合は以下を実行します。
     </para>
 @z
