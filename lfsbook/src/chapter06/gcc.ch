@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>First fix some problems with the libgomp library:</para>
+@y
+    <para>
+    libgomp ライブラリに関する問題を修正します。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC outside of the source
     directory in a dedicated build directory:</para>
 @y
@@ -146,14 +154,14 @@
 @x
     <para>A few unexpected failures cannot always be avoided. The GCC developers
     are usually aware of these issues, but have not resolved them yet.
-    In particular, four tests in the libgomp test suite are known to fail.
+    In particular, one test in the libgomp test suite is known to fail.
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
 @y
     <para>
     テストに失敗することがありますが、これを回避することはできません。
     GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
-    特に libgomp のテストスイートにて 4つのテストが失敗します。
+    特に libgomp のテストスイートにてテストが1つ失敗します。
     上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
 @z

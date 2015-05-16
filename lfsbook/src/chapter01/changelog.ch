@@ -48,6 +48,73 @@
 @z
 
 @x
+      <para>2015-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a patch from upstream to fix 
+          some libgomp (gcc) problems.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libgomp (gcc) に関する問題を修正するためのアップストリームによるパッチを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-05-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gawk-4.1.2. Fixes
+          <ulink url="&lfs-ticket-root;3781">#3781</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.0.3. Fixes
+          <ulink url="&lfs-ticket-root;3782">#3782</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.26.2. Fixes
+          <ulink url="&lfs-ticket-root;3783">#3783</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.00. Fixes
+          <ulink url="&lfs-ticket-root;3784">#3784</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to inetutils-1.9.3. Fixes
+          <ulink url="&lfs-ticket-root;3785">#3785</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-05-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gawk-4.1.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3781">#3781</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.0.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3782">#3782</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.26.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3783">#3783</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.00 へのアップデート。
+          <ulink url="&lfs-ticket-root;3784">#3784</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inetutils-1.9.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3785">#3785</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-04-26</para>
       <itemizedlist>
         <listitem>
