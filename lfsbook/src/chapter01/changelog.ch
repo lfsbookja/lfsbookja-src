@@ -48,6 +48,47 @@
 @z
 
 @x
+      <para>2015-05-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.0.4. Fixes
+          <ulink url="&lfs-ticket-root;3786">#3786</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.42.13. Fixes
+          <ulink url="&lfs-ticket-root;3787">#3787</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gawk-4.1.3. Fixes
+          <ulink url="&lfs-ticket-root;3788">#3788</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added a new patch for gcc to fix inline
+          issues and some libgomp problems.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-05-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.0.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3786">#3786</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.42.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;3787">#3787</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gawk-4.1.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3788">#3788</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc にてインライン (inline) に関する問題、libgomp に関する問題を修正する新たなパッチを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-05-15</para>
       <itemizedlist>
         <listitem>
