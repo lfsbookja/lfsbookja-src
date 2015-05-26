@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2015-05-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bash-4.3.30-upstream_fixes-2.patch. 
+          Fixes <ulink url="&lfs-ticket-root;3789">#3789</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-05-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash-4.3.30-upstream_fixes-2.patch へのアップデート。
+          Fixes <ulink url="&lfs-ticket-root;3789">#3789</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-05-23</para>
       <itemizedlist>
         <listitem>
