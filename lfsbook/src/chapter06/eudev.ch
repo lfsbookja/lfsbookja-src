@@ -82,14 +82,6 @@ will also be used as a part of installation:</para>
 @z
 
 @x
-    <para>Now, install the man pages:</para>
-@y
-    <para>
-    man ページをインストールします。
-    </para>
-@z
-
-@x
     <para>Install some custom rules and support files useful in an LFS 
     environment:</para>
 @y

@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2015-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.1. Fixes 
+          Fixes <ulink url="&lfs-ticket-root;3790">#3790</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - eudev-3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3790">#3790</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-05-25</para>
       <itemizedlist>
         <listitem>
@@ -60,7 +78,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - bash-4.3.30-upstream_fixes-2.patch へのアップデート。
-          Fixes <ulink url="&lfs-ticket-root;3789">#3789</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;3789">#3789</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z
