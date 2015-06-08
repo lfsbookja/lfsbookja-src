@@ -48,11 +48,55 @@
 @z
 
 @x
+      <para>2015-06-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.0.5. Fixes 
+          <ulink url="&lfs-ticket-root;3793">#3793</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to  eudev-3.1.1. Fixes 
+          <ulink url="&lfs-ticket-root;3792">#3792</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-06-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.0.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3793">#3793</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3792">#3792</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-06-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.22.0. Fixes 
+          <ulink url="&lfs-ticket-root;3791">#3791</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-06-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - perl-5.22.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3791">#3791</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-05-31</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to eudev-3.1. Fixes 
-          Fixes <ulink url="&lfs-ticket-root;3790">#3790</ulink>.</para>
+          <ulink url="&lfs-ticket-root;3790">#3790</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
