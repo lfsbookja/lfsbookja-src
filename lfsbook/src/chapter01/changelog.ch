@@ -48,6 +48,47 @@
 @z
 
 @x
+      <para>2015-06-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update standards discussion for FHS 3.0
+          and LSB-5.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to inet-utils. Fixes 
+          <ulink url="&lfs-ticket-root;3796">#3796</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.23. Fixes 
+          <ulink url="&lfs-ticket-root;3795">#3795</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-21. Fixes 
+          <ulink url="&lfs-ticket-root;3794">#3794</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-06-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - FHS 3.0, LSB-5.0 の標準に関する議論を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inet-utils のアップデート。
+          <ulink url="&lfs-ticket-root;3796">#3796</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.23 へのアップデート。
+          <ulink url="&lfs-ticket-root;3795">#3795</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-21 へのアップデート。
+          <ulink url="&lfs-ticket-root;3794">#3794</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-06-07</para>
       <itemizedlist>
         <listitem>

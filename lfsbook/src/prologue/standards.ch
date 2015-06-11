@@ -39,32 +39,34 @@
 
 @x
         <para><ulink 
-        url="http://www.linuxfoundation.org/collaborate/workgroups/lsb/fhs-30-draft-1">
-        Filesystem Hierarchy Standard version 3.0 Draft 1 (FHS)</ulink></para>
+        url="http://refspecs.linuxfoundation.org/fhs.shtml">
+        Filesystem Hierarchy Standard (FHS) Version 3.0</ulink></para>
 @y
         <para><ulink 
-        url="http://www.linuxfoundation.org/collaborate/workgroups/lsb/fhs-30-draft-1">
-        Filesystem Hierarchy Standard version 3.0 Draft 1 (FHS)</ulink></para>
+        url="http://refspecs.linuxfoundation.org/fhs.shtml">
+        Filesystem Hierarchy Standard (FHS) Version 3.0</ulink></para>
 @z
 
 @x
         <para><ulink url="http://refspecs.linuxfoundation.org/lsb.shtml">Linux
-        Standard Base (LSB) Specifications</ulink></para>
+        Standard Base (LSB) Version 5.0</ulink></para>
 @y
         <para><ulink url="http://refspecs.linuxfoundation.org/lsb.shtml">Linux
-        Standard Base (LSB) Specifications</ulink></para>
+        Standard Base (LSB) Version 5.0</ulink></para>
 @z
 
 @x
-        <para>The LSB has five separate standards: Core, C++, Desktop,
-        Runtime Languages, and Printing. In addition to generic requirements
-        there are also architecture specific requirements.  LFS attempts to
-        conform to the architectures discussed in the previous section.</para>
+        <para>The LSB has four separate standards: Core, Desktop,
+        Runtime Languages, and Imaging. In addition to generic requirements
+        there are also architecture specific requirements.  There are also two
+        areas for trial use: Gtk3 and Graphics.  LFS attempts to conform to the
+        architectures discussed in the previous section.</para>
 @y
         <para>
-        LSB はさらに以下の５つの標準から構成されます。
-        コア (Core)、C++、デスクトップ (Desktop)、ランタイム言語 (Runtime Languages)、印刷 (Printing) です。
+        LSB はさらに以下の４つの標準から構成されます。
+        コア (Core)、デスクトップ (Desktop)、ランタイム言語 (Runtime Languages)、画像処理 (Imaging) です。
         また一般的な要求事項に加えて、アーキテクチャーに固有の要求事項もあります。
+        Gtk3 やグラフィックスという二項目に関しての試用も含んでいます。
         LFS では前節にて示したように、各アーキテクチャーに適合することを目指します。
         </para>
 @z
@@ -109,27 +111,15 @@
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
           <para>Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
-                Grep, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
+                Grep, GTK+2, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
                 Shadow, Tar, Util-linux, Zlib</para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
           <para>Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
-                Grep, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
+                Grep, GTK+2, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
                 Shadow, Tar, Util-linux, Zlib</para>
-        </listitem>
-@z
-
-@x
-        <term><emphasis>LSB C++:</emphasis></term>
-        <listitem>
-          <para>Gcc</para>
-        </listitem>
-@y
-        <term><emphasis>LSB C++:</emphasis></term>
-        <listitem>
-          <para>Gcc</para>
         </listitem>
 @z
 
@@ -158,24 +148,24 @@
 @z
 
 @x
-        <term><emphasis>LSB Printing:</emphasis></term>
+        <term><emphasis>LSB Imaging:</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB 印刷:</emphasis></term>
+        <term><emphasis>LSB 画像処理:</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Multimeda:</emphasis></term>
+        <term><emphasis>LSB Gtk3 and LSB Graphics (Trial Use):</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB マルチメディア:</emphasis></term>
+        <term><emphasis>LSB Gtk3、LSB グラフィックス (試用):</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>
@@ -192,77 +182,67 @@
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
           <para>At, Batch (a part of At), Cpio, Ed, Fcrontab, Initd-tools,
-          Lsb_release, PAM, Pax, Sendmail (or Postfix or Exim), time </para>
+          Lsb_release, NSPR, NSS, PAM, Pax, Sendmail (or Postfix or Exim), time
+          </para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
           <para>At, Batch (At の一部), Cpio, Ed, Fcrontab, Initd-tools,
-          Lsb_release, PAM, Pax, Sendmail (または Postfix または Exim), time </para>
-        </listitem>
-@z
-
-@x
-        <term><emphasis>LSB C++:</emphasis></term>
-        <listitem>
-          <para>None</para>
-        </listitem>
-@y
-        <term><emphasis>LSB C++:</emphasis></term>
-        <listitem>
-          <para>なし</para>
+          Lsb_release, NSPR, NSS, PAM, Pax, Sendmail (または Postfix または Exim), time
+          </para>
         </listitem>
 @z
 
 @x
         <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
-          <para>ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
-                Glib2, GTK+2, Icon-naming-utils, Libjpeg, Libpng, Libxml2,
-                MesaLib, Pango, Qt4, Xorg</para>
+          <para>Alsa, ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
+          Gdk-pixbuf, Glib2, Icon-naming-utils, Libjpeg-turbo, Libpng, Libtiff,
+          Libxml2, MesaLib, Pango, Qt4, Xdg-utils, Xorg</para>
         </listitem>
 @y
         <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
-          <para>ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
-                Glib2, GTK+2, Icon-naming-utils, Libjpeg, Libpng, Libxml2,
-                MesaLib, Pango, Qt4, Xorg</para>
+          <para>Alsa, ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
+          Gdk-pixbuf, Glib2, Icon-naming-utils, Libjpeg-turbo, Libpng, Libtiff,
+          Libxml2, MesaLib, Pango, Qt4, Xdg-utils, Xorg</para>
         </listitem>
 @z
 
 @x
         <term><emphasis>LSB Runtime Languages:</emphasis></term>
         <listitem>
-          <para>Python</para>
+          <para>Python, Libxml2, Libxslt </para>
         </listitem>
 @y
         <term><emphasis>LSB ランタイム言語:</emphasis></term>
         <listitem>
-          <para>Python</para>
+          <para>Python, Libxml2, Libxslt </para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Printing:</emphasis></term>
+        <term><emphasis>LSB Imaging:</emphasis></term>
         <listitem>
-          <para>CUPS</para>
+          <para>CUPS, Cups-filters, Ghostscript, SANE</para>
         </listitem>
 @y
-        <term><emphasis>LSB 印刷:</emphasis></term>
+        <term><emphasis>LSB 画像処理:</emphasis></term>
         <listitem>
-          <para>CUPS</para>
+          <para>CUPS, Cups-filters, Ghostscript, SANE</para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Multimeda:</emphasis></term>
+        <term><emphasis>LSB Gtk3 and LSB Graphics (Trial Use):</emphasis></term>
         <listitem>
-          <para>Alsa Libraries, NSPR, NSS, OpenSSL, Java, Xdg-utils</para>
+          <para>GTK+3</para>
         </listitem>
 @y
-        <term><emphasis>LSB マルチメディア:</emphasis></term>
+        <term><emphasis>LSB Gtk3、LSB グラフィックス (試用):</emphasis></term>
         <listitem>
-          <para>Alsa 関連ライブラリ, NSPR, NSS, OpenSSL, Java, Xdg-utils</para>
+          <para>GTK+3</para>
         </listitem>
 @z
 
@@ -286,26 +266,14 @@
 @z
 
 @x
-        <term><emphasis>LSB C++:</emphasis></term>
+        <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB C++:</emphasis></term>
-        <listitem>
-          <para>なし</para>
-        </listitem>
-@z
-
-@x
-        <term><emphasis>LSB Desktop:</emphasis></term>
-        <listitem>
-          <para>Qt3</para>
-        </listitem>
-@y
         <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
-          <para>Qt3</para>
+          <para>なし</para>
         </listitem>
 @z
 
@@ -322,24 +290,24 @@
 @z
 
 @x
-        <term><emphasis>LSB Printing:</emphasis></term>
+        <term><emphasis>LSB Imaging:</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB 印刷:</emphasis></term>
+        <term><emphasis>LSB 画像処理:</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Multimeda:</emphasis></term>
+        <term><emphasis>LSB Gtk3 and LSB Graphics (Trial Use):</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB マルチメディア:</emphasis></term>
+        <term><emphasis>LSB Gtk3、LSB グラフィックス (試用):</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>
