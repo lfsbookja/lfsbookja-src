@@ -220,16 +220,15 @@
           </para>
 @z
 
-@x --disable-decimal-float, --disable-threads, --disable-libssp, --disable-libgomp, --disable-libquadmath
+@x --disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx
           <para>These switches disable support for the decimal floating point
-          extension, threading, libatomic, libgomp, libitm, 
-          libquadmath, libsanitizer, libssp, libvtv, libcilkrts
-          and the C++ standard library respectively. These features will fail
-          to compile when building a cross-compiler and are not necessary for
-          the task of cross-compiling the temporary libc.</para>
+          extension, threading, libatomic, libgomp, libquadmath, libssp,
+          libvtv, and the C++ standard library respectively. These features
+          will fail to compile when building a cross-compiler and are not
+          necessary for the task of cross-compiling the temporary libc.</para>
 @y
           <para>
-          これらのオプションは順に、十進浮動小数点制御、スレッド処理、libatomic, libgomp, libitm, libquadmath, libsanitizer, libssp, libvtv, libcilkrts, C++ 標準ライブラリのサポートをいずれも無効にすることを指示します。
+          これらのオプションは順に、十進浮動小数点制御、スレッド処理、libatomic, libgomp, libquadmath, libssp, libvtv, C++ 標準ライブラリのサポートをいずれも無効にすることを指示します。
           これらの機能を含めていると、クロスコンパイラーをビルドする際にはコンパイルに失敗します。
           またクロスコンパイルによって一時的な libc ライブラリを構築する際には不要なものです。
           </para>

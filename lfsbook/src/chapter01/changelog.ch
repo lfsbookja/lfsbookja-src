@@ -48,6 +48,67 @@
 @z
 
 @x
+      <para>2015-06-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2015e. Fixes
+          <ulink url="&lfs-ticket-root;3798">*3798</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.1.2. Fixes
+          <ulink url="&lfs-ticket-root;3799">*3799</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpfr-3.1.3. Fixes
+          <ulink url="&lfs-ticket-root;3800">#3800</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.1. Fixes
+          <ulink url="&lfs-ticket-root;3801">#3801</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-06-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata-2015e へのアップデート。
+          <ulink url="&lfs-ticket-root;3798">*3798</ulink>を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.1.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3799">*3799</ulink>を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpfr-3.1.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3800">#3800</ulink>を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3801">#3801</ulink>を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-06-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Simplify gcc-pass1 instructions. Thanks to
+          Pierre Labastie for the patch. Fixes 
+          <ulink url="&lfs-ticket-root;3797">#3797</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-06-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc 1回めの手順を簡素化。パッチを適用してくれた Pierre Labastie に感謝。
+          <ulink url="&lfs-ticket-root;3797">#3797</ulink>を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-06-10</para>
       <itemizedlist>
         <listitem>

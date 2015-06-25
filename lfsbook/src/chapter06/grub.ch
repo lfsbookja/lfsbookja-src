@@ -34,7 +34,7 @@
 @x
       <title>The meaning of the new configure options:</title>
 @y
-      <title>The meaning of the new configure options:</title>
+      <title>configure オプションの意味</title>
 @z
 
 @x --disable-werror

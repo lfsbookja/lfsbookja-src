@@ -64,8 +64,10 @@
 
 @x
       <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
