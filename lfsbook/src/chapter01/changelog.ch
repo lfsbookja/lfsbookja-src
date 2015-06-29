@@ -116,7 +116,7 @@
           and LSB-5.0.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to inet-utils. Fixes 
+          <para>[bdubbs] - Update to inetutils-1.9.4. Fixes 
           <ulink url="&lfs-ticket-root;3796">#3796</ulink>.</para>
         </listitem>
         <listitem>
@@ -135,7 +135,7 @@
           <para>[bdubbs] - FHS 3.0, LSB-5.0 の標準に関する議論を追加。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - inet-utils のアップデート。
+          <para>[bdubbs] - inetutils-1.9.4 へのアップデート。
           <ulink url="&lfs-ticket-root;3796">#3796</ulink> を Fix に。</para>
         </listitem>
         <listitem>

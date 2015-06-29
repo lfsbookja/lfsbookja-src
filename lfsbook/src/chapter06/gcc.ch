@@ -29,10 +29,10 @@
 @z
 
 @x
-    <para>First fix some problems with the libgomp library:</para>
+    <para>First apply some fixes from the upstream repository:</para>
 @y
     <para>
-    libgomp ライブラリに関する問題を修正します。
+    アップストリーム提供の修正をいくつか適用します。
     </para>
 @z
 
