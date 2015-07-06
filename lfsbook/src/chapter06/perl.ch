@@ -155,7 +155,7 @@
 @z
 
 @x
-        <seg>a2p, c2ph, config_data, corelist, cpan, cpan2dist, cpanp,
+        <seg>a2p, c2ph, corelist, cpan, cpan2dist, cpanp,
         cpanp-run-perl, enc2xs, find2perl, h2ph, h2xs,
         instmodsh, json_pp, libnetcfg, perl, perl&perl-version; (link to perl),
         perlbug, perldoc, perlivp, perlthanks (link to perlbug), piconv, pl2pm,
@@ -165,7 +165,7 @@
         <seg>Several hundred which cannot all be listed here</seg>
         <seg>/usr/lib/perl5</seg>
 @y
-        <seg>a2p, c2ph, config_data, corelist, cpan, cpan2dist, cpanp,
+        <seg>a2p, c2ph, corelist, cpan, cpan2dist, cpanp,
         cpanp-run-perl, enc2xs, find2perl, h2ph, h2xs,
         instmodsh, json_pp, libnetcfg, perl, perl&perl-version; (perl へのリンク),
         perlbug, perldoc, perlivp, perlthanks (perlbug へのリンク), piconv, pl2pm,
@@ -196,14 +196,6 @@
 @y
           <para>
           <command>cc -g -S</command> によって生成されるような C 言語構造体をダンプします。
-          </para>
-@z
-
-@x config_data
-          <para>Queries or changes configuration of Perl modules</para>
-@y
-          <para>
-          Perl モジュールの設定を検索または変更します。
           </para>
 @z
 

@@ -55,6 +55,19 @@
 @z
 
 @x
+    <para>Do not build the unneeded tipc program.  Transparent Inter-process
+    Communication (TIPC) is a network communications protocol for Inter-process
+    communication (IPC) that was designed for intra-cluster
+    communication.</para>
+@y
+    <para>
+    不要なプログラム tipc はビルドしません。
+    透過なプロセス間通信 (Transparent Inter-process Communication; TIPC) はプロセス間通信 (Inter-process communication;
+    IPC) のプロトコルであり、クラスタ内通信に対して設計されたものです。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
@@ -102,14 +115,14 @@
         <seg>bridge, ctstat (link to lnstat), genl, ifcfg, ifstat, ip, lnstat,
         nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (link to lnstat), ss,
         and tc</seg>
-        <seg>/etc/iproute2, /usr/lib/tc, /usr/share/doc/iproute2-&iproute2-version;,
-        and /usr/lib/tc</seg>
+        <seg>/etc/iproute2, /usr/lib/tc, and /usr/share/doc/iproute2-&iproute2-version;,
+        </seg>
 @y
         <seg>bridge, ctstat (lnstat へのリンク), genl, ifcfg, ifstat, ip, lnstat,
         nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (lnstat へのリンク), ss,
         tc</seg>
         <seg>/etc/iproute2, /usr/lib/tc, /usr/share/doc/iproute2-&iproute2-version;,
-        /usr/lib/tc</seg>
+        </seg>
 @z
 
 @x

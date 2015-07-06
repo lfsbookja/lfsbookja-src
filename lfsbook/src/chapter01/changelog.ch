@@ -48,6 +48,56 @@
 @z
 
 @x
+      <para>2015-07-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.1.0. Fixes
+          <ulink url="&lfs-ticket-root;3802">*3802</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-6.0. Fixes
+          <ulink url="&lfs-ticket-root;3803">*3803</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.1.1. Fixes
+          <ulink url="&lfs-ticket-root;3805">#3805</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-8.24. Fixes
+          <ulink url="&lfs-ticket-root;3806">#3806</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update perl installed files. Fixes
+          <ulink url="&lfs-ticket-root;3804">#3804</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-07-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3802">*3802</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - texinfo-6.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3803">*3803</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3805">#3805</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - coreutils-8.24 へのアップデート。
+          <ulink url="&lfs-ticket-root;3806">#3806</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl のインストールファイルを更新。
+          <ulink url="&lfs-ticket-root;3804">#3804</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-06-23</para>
       <itemizedlist>
         <listitem>
