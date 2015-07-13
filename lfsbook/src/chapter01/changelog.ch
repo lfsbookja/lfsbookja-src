@@ -48,6 +48,57 @@
 @z
 
 @x
+      <para>2015-07-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.1.1. Fixes
+          <ulink url="&lfs-ticket-root;3811">*3811</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.24. Fixes
+          <ulink url="&lfs-ticket-root;3812">*3812</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.1.2. Fixes
+          <ulink url="&lfs-ticket-root;3814">#3814</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.19.5. Fixes
+          <ulink url="&lfs-ticket-root;3813">#3813</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix a warning in the installed automake 
+          perl script.
+          <ulink url="&lfs-ticket-root;3809">#3809</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-07-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3811">*3811</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.24 へのアップデート。s
+          <ulink url="&lfs-ticket-root;3812">*3812</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.1.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3814">#3814</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.19.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3813">#3813</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake にてインストールされる perl スクリプトにて警告メッセージを修正。
+          <ulink url="&lfs-ticket-root;3809">#3809</ulink></para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-07-04</para>
       <itemizedlist>
         <listitem>
