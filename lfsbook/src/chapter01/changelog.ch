@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2015-07-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-5.2.0. Fixes
+          <ulink url="&lfs-ticket-root;3819">*3819</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.19.5.1. Fixes
+          <ulink url="&lfs-ticket-root;3818">*3818</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.0.3. Fixes
+          <ulink url="&lfs-ticket-root;3815">#3815</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-07-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-5.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3819">*3819</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.19.5.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3818">*3818</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.0.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3815">#3815</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-07-12</para>
       <itemizedlist>
         <listitem>
