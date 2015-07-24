@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>First fix a warning that is caused by perl-5.22 and later:</para>
+@y
+    <para>
+    perl-5.22 以降にて発生する警告メッセージを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Intltool for compilation:</para>
 @y
     <para>&PreparePackage1;Intltool&PreparePackage2;</para>

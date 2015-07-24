@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2015-07-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Fixed a warning in the intltool-update
+          perl script caused by perl-5.22.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-07-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - perl-5.22 にて発生する perl スクリプト intltool-update の警告メッセージを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-07-16</para>
       <itemizedlist>
         <listitem>
