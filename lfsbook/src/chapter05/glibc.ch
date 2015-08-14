@@ -32,51 +32,11 @@
 @z
 
 @x
-    <para>In some cases, particularly LFS 7.1, the rpc headers were not
-    installed properly.  Test to see if they are installed in the host system
-    and install if they are not:</para>
-@y
-    <para>
-    例えば LFS 7.1 などにおいて、rpc ヘッダーが適切にインストールされていない場合があります。
-    ホストシステムにそれらがインストールされているかを確認し、なければそれらをインストールするようにします。
-    </para>
-@z
-
-@x
-    <para>Fix a regression in the package that affects 32-bit architectures:</para>
-@y
-    <para>
-    32ビットアーキテクチャーに影響する部分を修正します。
-    </para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
     <para>
     Glibc のドキュメントでは、ソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
-    </para>
-@z
-
-@x
-    <para>Because Glibc no longer supports i386, its developers say to use the
-    compiler flag <parameter>-march=i486</parameter> when building it for x86
-    machines. There are several ways to accomplish that, but testing shows that
-    the flag is best placed inside the build variable <quote>CFLAGS</quote>.
-    Instead of overriding completely what Glibc's internal build system uses
-    for CFLAGS, append the new flag to the existing contents of CFLAGS by
-    making use of the special file <filename>configparms</filename>. The
-    -mtune=native flag is also necessary to reset a reasonable value for -mtune
-    that is changed when setting -march.</para>
-@y
-    <para>
-    Glibc は i386 をサポートしなくなりました。
-    開発者によると x86 マシンに対してはコンパイラーフラグとして <parameter>-march=i486 </parameter> を指定する必要があります。
-    これを実際に指定する方法はいくつかあります。
-    もっとも試してみれば分かりますが、ビルド時の変数<quote>CFLAGS</quote>にて設定しておくのが一番です。
-    Glibc の内部的なビルドシステムが利用する CFLAGS を上書き設定するのとは別に <filename>configparms</filename> ファイルという特別なファイルを使って CFLAGS に対して追加設定を行うこともできます。
-    -mtune=native というフラグも必要で -march を設定した際に変更される -mtune の値を適切にリセットします。
     </para>
 @z
 

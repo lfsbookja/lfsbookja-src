@@ -53,26 +53,6 @@
         <para>&Download;: <ulink url="&patches-root;&bc-memory-leak-patch;"/></para>
 @z
 
-@x Binutils LTO Patch
-        <para>Download: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
-@z
-
-@x Binutils LTO Testsuite Patch
-        <para>Download: <ulink url="&patches-root;&binutils-lto-testsuite-patch;"/></para>
-        <para>MD5 sum: <literal>&binutils-lto-testsuite-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&binutils-lto-testsuite-patch;"/></para>
-        <para>MD5 sum: <literal>&binutils-lto-testsuite-patch-md5;</literal></para>
-@z
-
-@x Binutils Multiple Plugins Patch
-        <para>Download: <ulink url="&patches-root;&binutils-multiple-plugins-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&binutils-multiple-plugins-patch;"/></para>
-@z
-
 @x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
 @y
@@ -83,12 +63,6 @@
         <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
-@z
-
-@x Gcc Upstream Patch
-        <para>Download: <ulink url="&patches-root;&gcc-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&gcc-upstream-patch;"/></para>
 @z
 
 @x Glibc FHS Patch
@@ -103,22 +77,10 @@
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @z
 
-@x Mpfr Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
-@z
-
 @x Ncurses GCC 5 Fixes Patch
         <para>Download: <ulink url="&patches-root;&ncurses-gcc5-buildfixes-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&ncurses-gcc5-buildfixes-patch;"/></para>
-@z
-
-@x Perl GCC 5 Fixes Patch
-        <para>Download: <ulink url="&patches-root;&perl-gcc5-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&perl-gcc5-fixes-patch;"/></para>
 @z
 
 @x Readline Upstream Fixes Patch
@@ -131,12 +93,6 @@
         <para>Download: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
-@z
-
-@x Tar Manpage Patch
-        <para>Download: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&tar-manpage-patch;"/></para>
 @z
 
 @x

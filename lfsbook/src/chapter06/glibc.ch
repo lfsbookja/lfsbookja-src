@@ -82,30 +82,6 @@
 @z
 
 @x
-    <para>Fix a regression in the package that affects 32-bit architectures:</para>
-@y
-    <para>
-    32ビットアーキテクチャーに影響する部分を修正します。
-    </para>
-@z
-
-@x
-    <para>Fix a potential security issue identified upstream:</para>
-@y
-    <para>
-    アップストリームにより認識されているセキュリティ問題を解消します。
-    </para>
-@z
-
-@x
-    <para>Fix a test case that fails when built using GCC 5:</para>
-@y
-    <para>
-    GCC 5 を用いてビルドした際にテストケースが失敗するため、これを修正します。
-    </para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y

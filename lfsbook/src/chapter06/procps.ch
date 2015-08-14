@@ -74,11 +74,11 @@
 @z
 
 @x
-<para>Finally, move essential files to a location that can be found if
+<para>Finally, move essential libraries to a location that can be found if
 <filename class="directory">/usr</filename> is not mounted.</para>
 @y
 <para>
-<filename class="directory">/usr</filename> がマウントされていない場合でも重要なファイルが識別されるように、それらの収容ディレクトリを移動させます。
+<filename class="directory">/usr</filename> がマウントされていない場合でも重要なライブラリが識別されるように、それらの収容ディレクトリを移動させます。
 </para>
 @z
 

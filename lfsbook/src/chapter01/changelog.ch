@@ -48,6 +48,56 @@
 @z
 
 @x
+      <para>2015-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to procps-ng-3.3.11. Fixes
+          <ulink url="&lfs-ticket-root;3829">#3829</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.02. Fixes
+          <ulink url="&lfs-ticket-root;3828">#3828</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ncurses-6.0. Fixes
+          <ulink url="&lfs-ticket-root;3827">#3827</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.22. Fixes
+          <ulink url="&lfs-ticket-root;3826">*3826</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.1.5. Fixes
+          <ulink url="&lfs-ticket-root;3825">*3825</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-ng-3.3.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;3829">#3829</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.02 へのアップデート。
+          <ulink url="&lfs-ticket-root;3828">#3828</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ncurses-6.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3827">#3827</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.22 へのアップデート。
+          <ulink url="&lfs-ticket-root;3826">*3826</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.1.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3825">*3825</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-08-03</para>
       <itemizedlist>
         <listitem>
