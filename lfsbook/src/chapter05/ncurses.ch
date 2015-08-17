@@ -32,6 +32,14 @@
 @z
 
 @x
+    <para>First, ensure that gawk is found first during configuration:</para>
+@y
+    <para>
+    ビルドにあたって gawk が必ず最初に見つかるようにします。
+    </para>
+@z
+
+@x
     <para>Prepare Ncurses for compilation:</para>
 @y
     <para>&PreparePackage1;Ncurses&PreparePackage2;</para>

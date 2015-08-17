@@ -135,12 +135,14 @@
 @z
 
 @x
-        <para>posix/tst-getaddrinfo4 will always fail 
-        due to not having a network connection when the tests are run.</para>
+        <para><emphasis>posix/tst-getaddrinfo4</emphasis> will always fail due
+        to not having the necessary  networking applications when the tests are
+        run.</para>
 @y
-        <para>
-        posix/tst-getaddrinfo4 は、テスト実行時にネットワークに接続されていないため失敗します。
-        </para>
+        <para><emphasis>
+        posix/tst-getaddrinfo4</emphasis> は、テスト時に必要なネットワークアプリケーションがないため失敗します。
+        to not having the necessary  networking applications when the tests are
+        run.</para>
 @z
 
 @x
@@ -163,6 +165,16 @@
 @y
         <para>
         math テストは、純正 Intel プロセッサーや AMD プロセッサーが最新のものではない場合に失敗することがあります。
+        </para>
+@z
+
+@x
+        <para>The <emphasis>elf/tst-protected1a</emphasis> and
+        <emphasis>elf/tst-protected1a</emphasis> tests are known to
+        fail with the current stable version of binutils.</para>
+@y
+        <para>
+        <emphasis>elf/tst-protected1a</emphasis> テストと <emphasis>elf/tst-protected1a</emphasis> テストは、binutils の現バージョンでは失敗します。
         </para>
 @z
 

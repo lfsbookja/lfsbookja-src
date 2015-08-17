@@ -51,6 +51,31 @@
       <para>2015-08-11</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to tzdata-2015f. Fixes
+          <ulink url="&lfs-ticket-root;3830">#3830</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a workaround to ncurses in 
+          Chapter 5 for hosts that have mawk installed.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-08-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata-2015f へのアップデート。
+          <ulink url="&lfs-ticket-root;3830">#3830</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第5章の ncurses にて、mawk を有するホストでの対処を加える。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-08-11</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to procps-ng-3.3.11. Fixes
           <ulink url="&lfs-ticket-root;3829">#3829</ulink>.</para>
         </listitem>

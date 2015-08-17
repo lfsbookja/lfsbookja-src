@@ -101,6 +101,18 @@
 @z
 
 @x
+    <para>One test, <emphasis>libls.sh</emphasis>, is known to fail due to hard
+    coding of some support program paths.  All tests pass if the tests are
+    rerun at the end of Chapter 6.</para>
+@y
+    <para>
+    テストの中で <emphasis>libls.sh</emphasis> だけは失敗します。
+    これは特定のプログラムへのパスがハードコーディングされているためです。
+    第6章を終えた後であればすべてのテストが成功します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

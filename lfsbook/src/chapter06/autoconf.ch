@@ -49,14 +49,14 @@
 @x
     <para>This takes a long time, about 4.7 SBUs. In addition, 6 tests are skipped
     that use Automake. For full test coverage, Autoconf can be re-tested
-    after Automake has been installed.  In addition, one test fails due to
+    after Automake has been installed.  In addition, two tests fail due to
     changes in libtool-2.4.3 and later.</para>
 @y
     <para>
     このテストはおよそ 4.7 SBU ほど要します。
     そのうちの 6つのテストは Automake を利用するものであるためスキップされます。
     すべてのテストを網羅したいなら、Automake をインストールした後に、再度テストを実行することが必要です。
-    なお libtool-2.4.3 以降では１つのテストが失敗します。
+    なお libtool-2.4.3 以降では2つのテストが失敗します。
     </para>
 @z
 
