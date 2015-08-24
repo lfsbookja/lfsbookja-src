@@ -51,6 +51,53 @@
       <para>2015-08-11</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.4.1. Fixes
+          <ulink url="&lfs-ticket-root;3829">#3829</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.1.6. Fixes
+          <ulink url="&lfs-ticket-root;3832">*3832</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.7.2. Fixes
+          <ulink url="&lfs-ticket-root;3833">*3833</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a patch to allow glibc to build
+          properly on i386 systems.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove obsolete r* programs from inetutils.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-08-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.4.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3829">#3829</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.1.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3832">*3832</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.7.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3833">*3833</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - i386 システムにて適正にビルドが出来るようパッチを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inetutils にて古い r* プログラムを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-08-11</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to tzdata-2015f. Fixes
           <ulink url="&lfs-ticket-root;3830">#3830</ulink>.</para>
         </listitem>

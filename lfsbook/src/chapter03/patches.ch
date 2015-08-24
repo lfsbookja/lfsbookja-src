@@ -71,16 +71,16 @@
         <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @z
 
+@x Glibc i386 Patch
+        <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+@z
+
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
-@z
-
-@x Ncurses GCC 5 Fixes Patch
-        <para>Download: <ulink url="&patches-root;&ncurses-gcc5-buildfixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&ncurses-gcc5-buildfixes-patch;"/></para>
 @z
 
 @x Readline Upstream Fixes Patch

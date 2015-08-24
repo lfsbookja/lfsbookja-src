@@ -82,6 +82,14 @@
 @z
 
 @x
+    <para>Now fix a build problem that affects i386 systems:</para>
+@y
+    <para>
+    i386 システムに影響する問題を解消します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y

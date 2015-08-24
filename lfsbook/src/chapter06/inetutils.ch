@@ -73,6 +73,18 @@
           </para>
 @z
 
+@x --disable-r*
+          <para>These parameters disable building obsolete programs that should not
+          be used due to security issues. The functions provided by these
+          programs can be provided by the <application>openssh</application>
+          package in the BLFS book.</para>
+@y
+          <para>
+          これらのパラメーターは、セキュリティの問題により用いるべきではない古いプログラムを作らないようにします。
+          古いプログラムによる機能は BLFS ブックにて示す <application>openssh</application> でも提供されています。
+          </para>
+@z
+
 @x --disable-servers
           <para>This disables the installation of the various network servers
           included as part of the Inetutils package. These servers are deemed not
@@ -191,38 +203,6 @@
 @y
           <para>
           IPv6 ネットワーク向けの <command>ping</command>
-          </para>
-@z
-
-@x rcp
-          <para>Performs remote file copy</para>
-@y
-          <para>
-          リモートファイルコピーを行います。
-          </para>
-@z
-
-@x rexec
-          <para>Executes commands on a remote host</para>
-@y
-          <para>
-          リモートホスト上にてコマンドを実行します。
-          </para>
-@z
-
-@x rlogin
-          <para>Performs remote login</para>
-@y
-          <para>
-          リモートログインを行います。
-          </para>
-@z
-
-@x rsh
-          <para>Runs a remote shell</para>
-@y
-          <para>
-          リモートシェルを起動します。
           </para>
 @z
 
