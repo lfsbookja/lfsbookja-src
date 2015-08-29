@@ -18,7 +18,7 @@
 <!ENTITY short-version   "svn">  <!-- Used in dbus chapter, change to x.y for release 
                                       but not -rc releases -->
 <!ENTITY releasedate     "2015年08月23日">
-<!ENTITY jversion        "20150824">
+<!ENTITY jversion        "20150829">
 @z
 
 @x

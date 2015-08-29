@@ -48,7 +48,23 @@
 @z
 
 @x
-      <para>2015-08-11</para>
+      <para>2015-08-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add MPFR upstream fixes.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-08-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - MPFR のアップストリームによるパッチを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-08-23</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to libpipeline-1.4.1. Fixes
