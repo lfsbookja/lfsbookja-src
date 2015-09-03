@@ -53,11 +53,10 @@
 @z
 
 @x
-  <para>Before building an LFS system, we recommend reading the following
-  HOWTOs:</para>
+  <para>Before building an LFS system, we recommend reading the following:</para>
 @y
   <para>
-  LFS システムの構築作業に入る前に、以下の<quote>ハウツー</quote>を読むことをお勧めします。
+  LFS システムの構築作業に入る前に、以下を読むことをお勧めします。
   </para>
 @z
 
@@ -80,19 +79,18 @@
 @z
 
 @x
-      <para>The Linux Users' Guide
+      <para>Beginner's Guide to Installing from Source
 @y
-      <para>Linux ユーザーガイド (The Linux Users's Guide)
+      <para>ソースコードからのインストール入門ガイド (Beginner's Guide to Installing from Source)
 @z
 
 @x
-      <para>This guide covers the usage of assorted Linux software. This
-      reference is also fairly old, but still valid.</para>
+      <para>This guide provides a good summary of basic skills and
+      techniques needed to build software from source code.</para>
 @y
-  <para>
-  このガイドには Linux ソフトウェアの利用方法が分類され説明されています。
-  若干古いものですが内容に間違いはありません。
-  </para>
+      <para>
+      このガイドは、ソフトウェアをソースコードからビルドするために必要な基本的スキルや技術をほど良くまとめています。
+      </para>
 @z
 
 @x

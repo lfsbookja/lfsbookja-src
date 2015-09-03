@@ -48,6 +48,31 @@
 @z
 
 @x
+      <para>2015-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Increase host requirement for tar to version 1.22. 
+          Fixes <ulink url="&lfs-ticket-root;3835">#3835</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Replace an old link to building software
+          in Prerequisites section.  Thanks to Simon Kitching. </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ホスト要件にて tar バージョンを 1.22 に上げる。
+          Fixes <ulink url="&lfs-ticket-root;3835">#3835</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 必要な知識の節にて、ソフトウェアビルドの参照リンクを更新。Simon Kitching に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-08-25</para>
       <itemizedlist>
         <listitem>
