@@ -86,7 +86,7 @@
 @z
 
 @x PKG_CONFIG=""
-          <para>Setting this envronment variable prevents adding unneeded
+          <para>Setting this environment variable prevents adding unneeded
           features that may be available on the host. Note that the location
           shown for setting this environment variable is different from other
           LFS sections where variables are set preceding the command.  This

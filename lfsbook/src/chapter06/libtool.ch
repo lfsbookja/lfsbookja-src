@@ -49,7 +49,7 @@
 @z
 
 @x
-    <para>Five tests are known to fail in the LFS build envronment due
+    <para>Five tests are known to fail in the LFS build environment due
     to a circular dependency, but all tests pass if rechecked after 
     automake is installed.</para>
 @y
