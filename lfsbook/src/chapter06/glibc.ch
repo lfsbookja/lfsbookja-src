@@ -178,11 +178,11 @@
 
 @x
         <para>The <emphasis>elf/tst-protected1a</emphasis> and
-        <emphasis>elf/tst-protected1a</emphasis> tests are known to
+        <emphasis>elf/tst-protected1b</emphasis> tests are known to
         fail with the current stable version of binutils.</para>
 @y
         <para>
-        <emphasis>elf/tst-protected1a</emphasis> テストと <emphasis>elf/tst-protected1a</emphasis> テストは、binutils の現バージョンでは失敗します。
+        <emphasis>elf/tst-protected1a</emphasis> テストと <emphasis>elf/tst-protected1b</emphasis> テストは、binutils の現バージョンでは失敗します。
         </para>
 @z
 
