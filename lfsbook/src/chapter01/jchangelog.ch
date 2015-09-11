@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          OSDN.jpサイトへの変更。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           SVN-20150907,
           Changeset
           <ulink url="&lfs-rev-root;10948">10948</ulink>
