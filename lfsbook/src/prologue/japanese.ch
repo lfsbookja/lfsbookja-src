@@ -10,7 +10,7 @@
 
  $Author$
  $Rev$
- $Date:: 2011-03-31 16:51:52 +0900$
+ $Date::                           $
 -->
 
 <sect1 id="pre-japanese">
@@ -18,7 +18,7 @@
 
   <sect1info>
     <othername>$LastChangedBy$</othername>
-    <date>$Date:: 2011-03-31 16:51:52 +0900$</date>
+    <date>$Date::                           $</date>
   </sect1info>
 
   <title>日本語訳について</title>
