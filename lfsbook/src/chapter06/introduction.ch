@@ -130,7 +130,7 @@
     into a program can be detrimental.  If an update to the library is needed
     to remove a security problem, all programs that use the static library will
     need to be relinked to the new library.  Since the use of static libraries
-    is not always obvious, deciding which programs (and the procedures needed to
+    is not always obvious, the relevant programs (and the procedures needed to
     do the linking) may not even be known.</para>
 @y
     <para>
@@ -138,12 +138,12 @@
     スタティックライブラリが作られたそもそもの目的は、現在の Linux システムにとってはもはや古いものです。
     スタティックライブラリをリンクすると障害となることすらあります。
     例えばセキュリティ問題を解決するためにライブラリリンクを更新しなければならなくなったら、スタティックライブラリにリンクしていたプログラムはすべて再構築しなければなりません。
-    したがってスタティックライブラリを使うべきかどうかは、いつも迷うところであり、よく分からないプログラム (あるいはリンクされるプロシージャ) であってもどちらかに定めなければなりません。
+    したがってスタティックライブラリを使うべきかどうかは、いつも迷うところであり、関連するプログラム (あるいはリンクされるプロシージャ) であってもどちらかに定めなければなりません。
     </para>
 @z
 
 @x
-    <para>In the prcedures in Chapter 6, we remove or disable installation of
+    <para>In the procedures in Chapter 6, we remove or disable installation of
     most static libraries.  In a few cases, especially glibc and gcc, the use
     of static libraries remains essential to the general package building
     process.  Usually this is done by passing a
