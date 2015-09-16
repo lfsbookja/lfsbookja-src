@@ -168,8 +168,8 @@ $(BASEDIR)/wget-list: stylesheets/wget-list.xsl chapter03/chapter03.xml packages
 	  $(BOOKdir)/stylesheets/wget-list.xsl ./chapter03/chapter03.xml
 	cp -p $(BASEDIR)/wget-list{,.txt}
 
-md5sums: $(BASEDIR)/md5sums general.ch
-$(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent
+md5sums: $(BASEDIR)/md5sums
+$(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent $(srcdir)/general.ch
 	@echo "Generating md5sum file..."
 	$(MKDIR_P) $(BASEDIR)
 	$(XSLTPROC) --xinclude --nonet --output $(BASEDIR)/md5sums \

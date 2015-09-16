@@ -48,8 +48,27 @@
 @z
 
 @x
+      <para>2015-09-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove unneeded sed in e2fsprogs.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-09-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs にて不要な sed 処理を削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-09-07</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.8-rc1 released.</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - Update to util-linux 2.27. Fixes
           <ulink url="&lfs-ticket-root;3823">#3823</ulink>.</para>
@@ -66,6 +85,9 @@
 @y
       <para>2015-09-07</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.8-rc1 リリース。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - util-linux 2.27 へのアップデート。
           <ulink url="&lfs-ticket-root;3823">#3823</ulink> を Fix に。</para>

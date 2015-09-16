@@ -54,6 +54,25 @@
 -->
 
     <listitem>
+      <para>2015-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          md5sums 生成不備を修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20150916,
+          Changeset
+          <ulink url="&lfs-rev-root;10950">10950</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2015-09-13</para>
       <itemizedlist>
         <listitem>
