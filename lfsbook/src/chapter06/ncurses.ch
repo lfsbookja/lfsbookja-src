@@ -166,14 +166,16 @@
 
 @x
       <para>The instructions above don't create non-wide-character Ncurses
-      libraries since no package installed by compiling from sources would
-      link against them at runtime. If you must have such libraries because
-      of some binary-only application or to be compliant with LSB, build 
-      the package again with the following commands:</para>
+      libraries since no package installed by compiling from sources would link
+      against them at runtime. Currently, the only known binary-only
+      applications that link against non-wide-character Ncurses require version
+      5.  If you must have such libraries because of some binary-only
+      application or to be compliant with LSB, build the package again with the
+      following commands:</para>
 @y
       <para>
       ここまでの作業手順では、ワイド文字対応ではない Ncurses ライブラリは生成しませんでした。
-      ソースからコンパイルして構築するパッケージなら、実行時にそのようなライブラリにリンクするものはないからです。
+      ソースからコンパイルして構築するパッケージなら、実行時にそのようなライブラリにリンクするものはないからであり、バイナリコードのアプリケーションで非ワイド文字対応のものは Ncurses 5 にリンクされています。
       バイナリコードしかないアプリケーションを取り扱う場合、あるいは LSB 対応を要する場合で、それがワイド文字対応ではないライブラリを必要とするなら、以下のコマンドによりそのようなライブラリを生成してください。
       </para>
 @z

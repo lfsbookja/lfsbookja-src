@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2015-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Provide non-wide-character ncurses 
+          instructions that are complient with version 5 of ncurses.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Ncurses にてワイド文字対応でないものはバージョン5に対応する旨の説明を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-09-16</para>
       <itemizedlist>
         <listitem>
