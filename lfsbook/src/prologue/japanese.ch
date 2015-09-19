@@ -77,7 +77,7 @@
 
       <para>
       XML ソースは <ulink
-      url="http://www.linuxfromscratch.org/blfs/view/svn/pst/DocBook.html">
+      url="http://www.linuxfromscratch.org/blfs/view/svn/pst/docbook.html">
       <citetitle>DocBook XML DTD</citetitle>
       </ulink> の書式に従ったファイル形式です。
       日本語版では、ソースに記述された原文を日本語訳文に変えて、同様の処理により生成しています。
