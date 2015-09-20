@@ -21,7 +21,7 @@
 
 @x
     <para>The <application>enchant</application> package provide a generic
-    interface into various existing spell checking libaries.</para>
+    interface into various existing spell checking libraries.</para>
 @y
     <para>
     <application>enchant</application> パッケージは、スペルチェックを行うさまざまなライブラリへの汎用的なインターフェースを提供します。
@@ -166,11 +166,37 @@
 @z
 
 @x
-      <para>See more details in the enchant(1) manual page.</para>
+        If you whish to use the <xref linkend="aspell"/> backend, create a
+        symlink, as the <systemitem class="username">root</systemitem> user:
 @y
-      <para>
-      詳しくは man ページ enchant(1) を参照してください。
-      </para>
+        If you whish to use the <xref linkend="aspell"/> backend, create a
+        symlink, as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        You can test your installation and configuration by creating a test
+        file and running the commands in the following (you can replace the
+        en_GB dictionary by any other downloaded when installing <xref
+        linkend="aspell"/>):
+@y
+        You can test your installation and configuration by creating a test
+        file and running the commands in the following (you can replace the
+        en_GB dictionary by any other downloaded when installing <xref
+        linkend="aspell"/>):
+@z
+
+@x
+        You will see a list of the misspelled words followed by a list of
+        alternatives for them.
+@y
+        You will see a list of the misspelled words followed by a list of
+        alternatives for them.
+@z
+
+@x
+        See more details in the enchant manual page.
+@y
+        詳しくは enchant の man ページを参照してください。
 @z
 
 @x
@@ -191,12 +217,12 @@
 
 @x
         <seg>enchant and enchant-lsmod</seg>
-        <seg>libenchant.{so,a} and various backend libraries</seg>
-        <seg>/usr/{include/enchant,lib/enchant,share/enchant}</seg>
+        <seg>libenchant.so and various backend libraries</seg>
+        <seg>/usr/{include,lib,share}/enchant</seg>
 @y
-        <seg>enchant, enchant-lsmod</seg>
-        <seg>libenchant.{so,a} とさまざまなバックエンドライブラリ</seg>
-        <seg>/usr/{include/enchant,lib/enchant,share/enchant}</seg>
+        <seg>enchant and enchant-lsmod</seg>
+        <seg>libenchant.so とさまざまなバックエンドライブラリ</seg>
+        <seg>/usr/{include,lib,share}/enchant</seg>
 @z
 
 @x

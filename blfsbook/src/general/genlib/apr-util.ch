@@ -107,9 +107,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
-      <xref linkend="expat"/>,
       <ulink url="http://www.freetds.org/">FreeTDS</ulink>,
-      <xref linkend="mariadb"/> or <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/> and
@@ -119,12 +118,11 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
-      <xref linkend="expat"/>,
       <ulink url="http://www.freetds.org/">FreeTDS</ulink>,
-      <xref linkend="mariadb"/> または <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>,
+      <xref linkend="sqlite"/> and
       <xref linkend="unixodbc"/>
     </para>
 @z
@@ -187,11 +185,11 @@
 @z
 
 @x
-      <parameter>--with-berkeley-db=/usr</parameter>: If you have
-      installed <xref linkend="db"/>, use this switch to compile the
+      <option>--with-berkeley-db=/usr</option>: If you have installed
+      <xref linkend="db"/>, use this switch to compile the
       <filename class="libraryfile">apr_dbm_db-1.so</filename> plugin.
 @y
-      <parameter>--with-berkeley-db=/usr</parameter>:
+      <option>--with-berkeley-db=/usr</option>:
       <xref linkend="db"/> をインストールしている場合、このスイッチによりプラグイン <filename
       class="libraryfile">apr_dbm_db-1.so</filename> をビルドすることを指示します。
 @z

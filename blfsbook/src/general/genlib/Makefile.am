@@ -15,7 +15,6 @@ CHANGE_FILES = \
 	dbus-glib.ch \
 	enchant.ch \
 	exempi.ch \
-	expat.ch \
 	genlib.ch \
 	glib2.ch \
 	glibmm.ch \
@@ -90,7 +89,6 @@ clucene.xml:               $(BOOKdir)/$@ $(srcdir)/clucene.ch
 dbus-glib.xml:             $(BOOKdir)/$@ $(srcdir)/dbus-glib.ch
 enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
 exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
-expat.xml:                 $(BOOKdir)/$@ $(srcdir)/expat.ch
 genlib.xml:                $(BOOKdir)/$@ $(srcdir)/genlib.ch
 glib2.xml:                 $(BOOKdir)/$@ $(srcdir)/glib2.ch
 glibmm.xml:                $(BOOKdir)/$@ $(srcdir)/glibmm.ch

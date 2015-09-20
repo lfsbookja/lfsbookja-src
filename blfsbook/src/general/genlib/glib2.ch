@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "157 MB (additional 47 MB to run the test suite)">
-  <!ENTITY glib2-time          "0.9 SBU (additional 3.5 SBU to run the test suite)">
+  <!ENTITY glib2-buildsize     "187 MB (additional 72 MB to run the test suite)">
+  <!ENTITY glib2-time          "0.8 SBU (additional 3.1 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-buildsize     "157 MB (テストスイート実行時はさらに 47 MB)">
-  <!ENTITY glib2-time          "0.9 SBU (テストスイート実行時はさらに 3.5 SBU)">
+  <!ENTITY glib2-buildsize     "157 MB (テストスイート実行時はさらに 72 MB)">
+  <!ENTITY glib2-time          "0.8 SBU (テストスイート実行時はさらに 3.1 SBU)">
 @z
 
 @x
@@ -28,13 +28,13 @@
 @z
 
 @x
-      The <application>GLib</application> package contains a low-level
-      libraries useful for providing data structure handling for C, portability 
+      The <application>GLib</application> package contains low-level
+      libraries useful for providing data structure handling for C, portability
       wrappers and interfaces for such runtime functionality as an
       event loop, threads, dynamic loading and an object system.
 @y
-      The <application>GLib</application> package contains a low-level
-      libraries useful for providing data structure handling for C, portability 
+      The <application>GLib</application> package contains low-level
+      libraries useful for providing data structure handling for C, portability
       wrappers and interfaces for such runtime functionality as an
       event loop, threads, dynamic loading and an object system.
 @z
@@ -91,13 +91,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libffi"/> and
-      <xref linkend="python2"/>
+      <xref linkend="python2"/> or <xref linkend="python3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libffi"/>,
-      <xref linkend="python2"/>
+      <xref linkend="python2"/> または <xref linkend="python3"/>
     </para>
 @z
 
@@ -116,16 +116,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="attr"/>,
-      <xref linkend="dbus"/> (required to run the tests), and
-      <xref linkend="gtk-doc"/>
+      <xref linkend="dbus"/> (required for some tests),
+      <xref linkend="elfutils"/>,
+      <xref linkend="gtk-doc"/>, and
+      <ulink url="ftp://oss.sgi.com/projects/fam/download/stable/">FAM library</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="attr"/>,
-      <xref linkend="dbus"/> (テストスイート実行時に必要),
-      <xref linkend="gtk-doc"/>
+      <xref linkend="dbus"/> (いくつかのテストにて必要),
+      <xref linkend="elfutils"/>,
+      <xref linkend="gtk-doc"/>,
+      <ulink url="ftp://oss.sgi.com/projects/fam/download/stable/">FAM library</ulink>
     </para>
 @z
 
@@ -174,7 +176,7 @@
 
 @x
       The <application>GLib</application> test suite requires
-      <application>desktop-file-utils</application> in order to run. However,
+      <application>desktop-file-utils</application> for some tests. However,
       <application>desktop-file-utils</application> requires
       <application>GLib</application> in order to compile; therefore, you must
       first install <application>GLib</application> and then run the test
@@ -199,13 +201,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>.  The
-      tests need to be run in a graphical environment.  One test (regex)
-      fails when using the system pcre package.
+      To test the results, after having installed the package, issue:
+      <command>make -k check</command>. 
 @y
-      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-      ただしテストはグラフィック環境下にて実行する必要があります。
-      システムにインストールされちる pcre パッケージを使った場合には、失敗するテスト (regex) が１つあります。
+      ビルド結果をテストする場合は、本パッケージをインストールした後に <command>make -k check</command> を実行します。
 @z
 
 @x
@@ -242,7 +241,7 @@
 
 @x
         <seg>
-          gdbus, gdbus-codegen, gio-querymodules,
+          gapplication, gdbus, gdbus-codegen, gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal, glib-gettextize, glib-mkenums,
           gobject-query, gresource, gsettings, gtester,
@@ -264,7 +263,7 @@
         </seg>
 @y
         <seg>
-          gdbus, gdbus-codegen, gio-querymodules,
+          gapplication, gdbus, gdbus-codegen, gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal, glib-gettextize, glib-mkenums,
           gobject-query, gresource, gsettings, gtester,
@@ -394,9 +393,9 @@
         <term>GLib ライブラリ</term>
 @z
 @x
-            contain a low-level core libraries for the
+            contain low-level core libraries for the
             <application>GIMP</application> Toolkit.
 @y
-            contain a low-level core libraries for the
+            contain low-level core libraries for the
             <application>GIMP</application> Toolkit.
 @z

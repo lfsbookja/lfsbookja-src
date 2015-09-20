@@ -91,12 +91,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="required">
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="required">
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+      <xref linkend="valgrind"/>
     </para>
 @z
 
@@ -122,13 +122,15 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. If
+    <para>To test the results, issue: <command>make check</command>.<!--
     Valgrind is installed, mosts tests will indicate a failure, but
-    that is a test problem and not a package problem.</para>
+    that is a test problem and not a package problem.--></para>
 @y
     <para>
     ビルド結果をテストする場合は <command>make check</command> を実行します。
+    <!--
     Valgrind をインストールしている場合、多くのテストが失敗しますが、これはテストの問題であってパッケージの問題ではありません。
+    -->
     </para>
 @z
 

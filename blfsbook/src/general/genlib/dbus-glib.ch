@@ -78,15 +78,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus"/>,
-      <xref linkend="expat"/> and
+      <xref linkend="dbus"/> and
       <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="expat"/>,
       <xref linkend="glib2"/>
     </para>
 @z
@@ -94,12 +92,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 

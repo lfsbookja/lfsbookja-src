@@ -80,14 +80,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="icu"/> and
-      <xref linkend="python2"/>
+      <xref linkend="icu"/>,
+      <xref linkend="python2"/> and
+      <ulink url="https://www.open-mpi.org/">Open MPI</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
-      <xref linkend="python2"/>
+      <xref linkend="python2"/>,
+      <ulink url="https://www.open-mpi.org/">Open MPI</ulink>
     </para>
 @z
 
@@ -111,9 +113,27 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To run the Boost.Build's regression test (<xref linkend="python2"/>
+      required), issue <command>pushd tools/build/test; python test_all.py;
+      popd</command>. One test out of 130 fails.
 @y
-      &notTestSuite;
+      To run the Boost.Build's regression test (<xref linkend="python2"/>
+      required), issue <command>pushd tools/build/test; python test_all.py;
+      popd</command>. One test out of 130 fails.
+@z
+
+@x
+      To run every library's regression tests, issue <command>pushd status;
+      ../b2; popd</command>.  A few tests may fail. They take very long (over
+      120/50 SBU, one/four cores) and use a very large disk space (up to
+      40 GB). You can use the <parameter>-jN</parameter> switch to
+      speed them up.
+@y
+      To run every library's regression tests, issue <command>pushd status;
+      ../b2; popd</command>.  A few tests may fail. They take very long (over
+      120/50 SBU, one/four cores) and use a very large disk space (up to
+      40 GB). You can use the <parameter>-jN</parameter> switch to
+      speed them up.
 @z
 
 @x
@@ -137,11 +157,12 @@
 @z
 
 @x
-      <parameter>link=shared</parameter>: This parameter ensures that only shared
-      libraries are created, except for libboost_exception and libboost_test_exec_monitor
-      which are created as static. Most people will not need the static libraries, indeed
-      most programs using <application>Boost</application> only use the headers, but omit
-      this parameter if you do need them.
+      <parameter>link=shared</parameter>: This parameter ensures that only
+      shared libraries are created, except for libboost_exception and
+      libboost_test_exec_monitor which are created as static. Most people
+      will not need the static libraries. Indeed most programs using
+      <application>Boost</application> only use the headers. 0mit
+      this parameter if you do need static libraries.
 @y
       <parameter>link=shared</parameter>:
       このパラメーターは共有ライブラリのみを生成するようにします。
@@ -172,16 +193,19 @@
           None
         </seg>
         <seg>
-          libboost_atomic.so, libboost_chrono.so, libboost_context.so, libboost_coroutine.so,
+          libboost_atomic.so, libboost_chrono.a, libboost_chrono.so,
+          libboost_container.so, libboost_context.so, libboost_coroutine.so,
           libboost_date_time.so, libboost_exception.a, libboost_filesystem.so,
-          libboost_graph.so, libboost_iostreams.so, libboost_locale.so, libboost_log_setup.so, libboost_log.so,
-          libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_c99.so,
-          libboost_math_tr1f.so, libboost_math_tr1l.so, libboost_math_tr1.so,
-          libboost_prg_exec_monitor.so, libboost_program_options.so, libboost_python.so,
-          libboost_random.so, libboost_regex.so, libboost_serialization.so,
-          libboost_signals.so, libboost_system.so, libboost_test_exec_monitor.a,
-          libboost_thread.so, libboost_timer.so, libboost_unit_test_framework.so,
-          libboost_wave.so and libboost_wserialization.so
+          libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
+          libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
+          libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
+          libboost_math_tr1f.so, libboost_math_tr1l.so,
+          libboost_prg_exec_monitor.so, libboost_program_options.so,
+          libboost_python.so, libboost_random.so, libboost_regex.so,
+          libboost_serialization.so, libboost_signals.so, libboost_system.a,
+          libboost_system.so, libboost_test_exec_monitor.a, libboost_thread.so,
+          libboost_timer.a, libboost_timer.so, libboost_unit_test_framework.so,
+          libboost_wave.so, and libboost_wserialization.so
         </seg>
         <seg>
           /usr/include/boost
@@ -191,15 +215,18 @@
           &None;
         </seg>
         <seg>
-          libboost_atomic.so, libboost_chrono.so, libboost_context.so, libboost_coroutine.so,
+          libboost_atomic.so, libboost_chrono.a, libboost_chrono.so,
+          libboost_container.so, libboost_context.so, libboost_coroutine.so,
           libboost_date_time.so, libboost_exception.a, libboost_filesystem.so,
-          libboost_graph.so, libboost_iostreams.so, libboost_locale.so, libboost_log_setup.so, libboost_log.so,
-          libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_c99.so,
-          libboost_math_tr1f.so, libboost_math_tr1l.so, libboost_math_tr1.so,
-          libboost_prg_exec_monitor.so, libboost_program_options.so, libboost_python.so,
-          libboost_random.so, libboost_regex.so, libboost_serialization.so,
-          libboost_signals.so, libboost_system.so, libboost_test_exec_monitor.a,
-          libboost_thread.so, libboost_timer.so, libboost_unit_test_framework.so,
+          libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
+          libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
+          libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
+          libboost_math_tr1f.so, libboost_math_tr1l.so,
+          libboost_prg_exec_monitor.so, libboost_program_options.so,
+          libboost_python.so, libboost_random.so, libboost_regex.so,
+          libboost_serialization.so, libboost_signals.so, libboost_system.a,
+          libboost_system.so, libboost_test_exec_monitor.a, libboost_thread.so,
+          libboost_timer.a, libboost_timer.so, libboost_unit_test_framework.so,
           libboost_wave.so, libboost_wserialization.so
         </seg>
         <seg>
