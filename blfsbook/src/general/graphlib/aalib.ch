@@ -173,18 +173,12 @@
           </para>
 @z
 
-@x aainfo
-          <para>provides information for your current settings related to
-          <application>AAlib</application>.</para>
-@y
-          <para>provides information for your current settings related to
-          <application>AAlib</application>.</para>
-@z
-
 @x aalib-config
-          <para>provides configuration info for <application>AAlib</application>.</para>
+          <para>provides configuration info for
+          <application>AAlib</application>.</para>
 @y
-          <para>provides configuration info for <application>AAlib</application>.</para>
+          <para>provides configuration info for
+          <application>AAlib</application>.</para>
 @z
 
 @x aatest

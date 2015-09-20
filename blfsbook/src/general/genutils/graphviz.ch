@@ -86,7 +86,6 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="expat"/>,
       <xref linkend="freetype2"/>,
       <xref linkend="fontconfig"/>,
       <xref linkend="freeglut"/>,
@@ -100,7 +99,6 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="expat"/>,
       <xref linkend="freetype2"/>,
       <xref linkend="fontconfig"/>,
       <xref linkend="freeglut"/>,
@@ -117,7 +115,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="http://www.perens.com/FreeSoftware/ElectricFence/">Electric Fence</ulink>,
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <xref linkend="libglade"/>,
       <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
       <ulink url="http://www.libgd.org/">GD Library</ulink>,
@@ -130,7 +128,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="http://www.perens.com/FreeSoftware/ElectricFence/">Electric Fence</ulink>,
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <xref linkend="libglade"/>,
       <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
       <ulink url="http://www.libgd.org/">GD Library</ulink>,
@@ -148,7 +146,7 @@
       installed or no bindings will be built),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
-      <ulink url="http://www.iolanguage.org/">Io</ulink>,
+      <ulink url="http://iolanguage.org/">Io</ulink>,
       <xref linkend="lua"/>,
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
       <ulink url="http://ocaml.org/">OCaml</ulink>,
@@ -166,7 +164,7 @@
       installed or no bindings will be built),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
-      <ulink url="http://www.iolanguage.org/">Io</ulink>,
+      <ulink url="http://iolanguage.org/">Io</ulink>,
       <xref linkend="lua"/>,
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
       <ulink url="http://ocaml.org/">OCaml</ulink>,
@@ -199,7 +197,8 @@
 @z
 
 @x
-      This package does not come with a test suite that provides meaningful results.
+      This package does not come with a test suite that provides
+      meaningful results.
 @y
       このパッケージには十分な結果が得られるテストスイートはありません。
 @z
@@ -283,35 +282,46 @@
 @x
         <seg>
           acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
-          dot, dot2gxl, dot_builtins, dotty, fdp, gc, gml2gv, graphml2gv,
-          gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh, gvpack, gvpr,
-          gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop, osage,
-          patchwork, prune, sccmap, sfdp, tred, twopi, unflatten, and vimdot
+          dot, dot2gxl, dot_builtins, dotty, edgepaint, fdp, gc, gml2gv,
+          graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh,
+          gvpack, gvpr, gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop,
+          osage, patchwork, prune, sccmap, sfdp, tred, twopi,
+          unflatten, and vimdot
         </seg>
         <seg>
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so,
-          libxdot.so, and several plugins in /usr/lib/graphviz
+          libxdot.so, and several plugins in /usr/lib/graphviz.
+          There are also several in subdirectories of
+          /usr/lib/{lua,perl5,php,python&python2-majorver;,tcl8.6}.
+          Unfortunately, some libraries are duplicated.
         </seg>
         <seg>
           /usr/include/graphviz,
-          /usr/lib/graphviz, and
+          /usr/lib/graphviz,
+          /usr/lib/tcl8.6/graphviz, 
+          /usr/share/doc/graphviz-&graphviz-version;, and
           /usr/share/graphviz
         </seg>
 @y
         <seg>
           acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
-          dot, dot2gxl, dot_builtins, dotty, fdp, gc, gml2gv, graphml2gv,
-          gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh, gvpack, gvpr,
-          gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop, osage,
-          patchwork, prune, sccmap, sfdp, tred, twopi, unflatten, vimdot
+          dot, dot2gxl, dot_builtins, dotty, edgepaint, fdp, gc, gml2gv,
+          graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh,
+          gvpack, gvpr, gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop,
+          osage, patchwork, prune, sccmap, sfdp, tred, twopi,
+          unflatten, vimdot
         </seg>
         <seg>
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so,
-          libxdot.so, /usr/lib/graphviz 配下に数種のプラグイン
+          libxdot.so, /usr/lib/graphviz 配下に数種のプラグイン,
+          /usr/lib/{lua,perl5,php,python&python2-majorver;,tcl8.6} 配下にサブディレクトリ。
+          ただしライブラリの中には重複しているものあり。
         </seg>
         <seg>
           /usr/include/graphviz,
           /usr/lib/graphviz,
+          /usr/lib/tcl8.6/graphviz, 
+          /usr/share/doc/graphviz-&graphviz-version;,
           /usr/share/graphviz
         </seg>
 @z

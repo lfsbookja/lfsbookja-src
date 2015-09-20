@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libusb-buildsize     "5.2 MB (additional 2.8 MB for API documentation)">
+  <!ENTITY libusb-buildsize     "7.3 MB (additional 2.8 MB for API documentation)">
   <!ENTITY libusb-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libusb-buildsize     "5.2 MB (API ドキュメント生成時はさらに 2.8 MB)">
+  <!ENTITY libusb-buildsize     "7.3 MB (API ドキュメント生成時はさらに 2.8 MB)">
   <!ENTITY libusb-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
@@ -148,13 +148,9 @@
 @x
       To access raw USB devices (those not treated as a disk by the mass-storage
       driver), appropriate support must be available in the kernel.  Check your
-      kernel configuration for Device Drivers &rArr; USB support &rArr; Support
-      for Host-side USB.  Select any USB hardware device drivers you may need
-      on the same page.
+      kernel configuration:
 @y
-      USB のローデバイス (大容量ディスクドライバーでは扱うことができない) へアクセスするには、カーネルによる適切な機能サポートが必要となります。
-      カーネルの設定にて Device Drivers &rArr; USB support &rArr; Support for Host-side USB を確認してください。
-      設定ページでは、必要としている USB ハードウェアデバイスをすべて選択してください。
+      USB のローデバイス (大容量ディスクドライバーでは扱うことができない) へアクセスするには、カーネルによる適切な機能サポートが必要となりますので、カーネル設定を確認してください。
 @z
 
 @x

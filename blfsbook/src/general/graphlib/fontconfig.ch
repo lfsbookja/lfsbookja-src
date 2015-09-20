@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY fontconfig-buildsize     "13 MB (plus 4.2 MB installed)">
-@y
-  <!ENTITY fontconfig-buildsize     "13 MB (インストールによりさらに 4.2 MB)">
-@z
-
-@x
     <title>Introduction to Fontconfig</title>
 @y
     <title>&IntroductionTo1;Fontconfig&IntroductionTo2;</title>
@@ -99,28 +93,28 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="freetype2"/> and either
-      <xref linkend="expat"/> or
-      <xref linkend="libxml2"/>
+      <xref linkend="freetype2"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="freetype2"/>,
-      <xref linkend="expat"/> または
-      <xref linkend="libxml2"/>
+      <xref linkend="freetype2"/> 
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>
+      <xref linkend="docbook-utils"/> and
+      <xref linkend="libxml2"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
     </para>
 @z
 

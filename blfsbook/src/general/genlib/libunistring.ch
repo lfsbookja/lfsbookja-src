@@ -79,10 +79,12 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="texlive"/> (to rebuild the documentation)</para>
+    <para role="optional"><xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+     (to rebuild the documentation)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="texlive"/> (ドキュメントの再ビルド時に必要)</para>
+    <para role="optional"><xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
+     (ドキュメントの再ビルド時に必要)</para>
 @z
 
 @x
@@ -142,12 +144,18 @@
 
 @x
         <seg>None</seg>
-        <seg>libunistring.{a,so}</seg>
-        <seg>/usr/share/libunistring</seg>
+        <seg>libunistring.so</seg>
+        <seg>
+          /usr/include/unistring and
+          /usr/share/doc/libunistring-&libunistring-version;
+        </seg>
 @y
         <seg>&None;</seg>
-        <seg>libunistring.{a,so}</seg>
-        <seg>/usr/share/libunistring</seg>
+        <seg>libunistring.so</seg>
+        <seg>
+          /usr/include/unistring,
+          /usr/share/doc/libunistring-&libunistring-version;
+        </seg>
 @z
 
 @x

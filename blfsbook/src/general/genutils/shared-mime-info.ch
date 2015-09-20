@@ -79,15 +79,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>, and
+      <xref linkend="glib2"/> and
       <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="libxml2"/>
     </para>
 @z
@@ -133,9 +131,11 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -144,11 +144,17 @@
           update-mime-database
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/mime
         </seg>
 @y
         <seg>
           update-mime-database
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/mime

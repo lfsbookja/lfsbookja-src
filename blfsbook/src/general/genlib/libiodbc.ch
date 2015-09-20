@@ -71,18 +71,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">libiodbc Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libiodbc&Dependencies2;</bridgehead>
@@ -184,13 +172,13 @@
 @z
 
 @x
-        <seg>iodbc-config, iodbctest, iodbctestw, and iodbcadm</seg>
-        <seg>libiodbc.so, libiodbcinst.so, and
+        <seg>iodbc-config, iodbctest, iodbctestw, and iodbcadm-gtk</seg>
+        <seg>libdrvproxy.so, libiodbc.so, libiodbcinst.so, and
         libiodbcadm.so</seg>
         <seg>/usr/include/iodbc, /usr/share/libiodbc, and /etc/iodbc</seg>
 @y
-        <seg>iodbc-config, iodbctest, iodbctestw, iodbcadm</seg>
-        <seg>libiodbc.so, libiodbcinst.so,
+        <seg>iodbc-config, iodbctest, iodbctestw, iodbcadm-gtk</seg>
+        <seg>libdrvproxy.so, libiodbc.so, libiodbcinst.so,
         libiodbcadm.so</seg>
         <seg>/usr/include/iodbc, /usr/share/libiodbc, /etc/iodbc</seg>
 @z

@@ -166,7 +166,7 @@
 
 @x
         <seg>
-          None
+          json-glib-format and json-glib-validate
         </seg>
         <seg>
           libjson-glib-1.0.so
@@ -177,7 +177,7 @@
         </seg>
 @y
         <seg>
-          &None;
+          json-glib-format, json-glib-validate
         </seg>
         <seg>
           libjson-glib-1.0.so

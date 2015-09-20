@@ -81,12 +81,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://valgrind.org/">Valgrind</ulink>
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://valgrind.org/">Valgrind</ulink>
+      <xref linkend="valgrind"/>
     </para>
 @z
 

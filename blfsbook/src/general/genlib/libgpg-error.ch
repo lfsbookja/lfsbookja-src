@@ -40,9 +40,9 @@
 @z
 
 @x
-Download (HTTP): <ulink url="&libgpg-error-download-http;"/>
+          Download (HTTP): <ulink url="&libgpg-error-download-http;"/>
 @y
-&Download; (HTTP): <ulink url="&libgpg-error-download-http;"/>
+          &Download; (HTTP): <ulink url="&libgpg-error-download-http;"/>
 @z
 
 @x
@@ -136,7 +136,7 @@ Download (HTTP): <ulink url="&libgpg-error-download-http;"/>
           libgpg-error.so
         </seg>
         <seg>
-          /usr/share/common-lisp and
+          /usr/share/common-lisp/source/gpg-error and
           /usr/share/doc/libgpg-error-&libgpg-error-version;
         </seg>
 @y
@@ -147,7 +147,7 @@ Download (HTTP): <ulink url="&libgpg-error-download-http;"/>
           libgpg-error.so
         </seg>
         <seg>
-          /usr/share/common-lisp,
+          /usr/share/common-lisp/source/gpg-error,
           /usr/share/doc/libgpg-error-&libgpg-error-version;
         </seg>
 @z

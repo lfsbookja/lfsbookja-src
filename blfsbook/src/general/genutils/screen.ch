@@ -139,15 +139,11 @@
 @z
 
 @x
-    <para><parameter>--with-socket-dir=/var/run/screen</parameter>: This option
+    <para><parameter>--with-socket-dir=/run/screen</parameter>: This option
     places the per-user sockets in a standard location.</para>
 @y
-    <para>
-    <parameter>--with-socket-dir=/var/run/screen</parameter>:
-    
-    This option
-    places the per-user sockets in a standard location.
-    </para>
+    <para><parameter>--with-socket-dir=/run/screen</parameter>: This option
+    places the per-user sockets in a standard location.</para>
 @z
 
 @x
@@ -234,13 +230,13 @@
 @z
 
 @x
-        <seg>screen</seg>
+        <seg>screen (symlink) and screen-&screen-version;</seg>
         <seg>None</seg>
-        <seg>/var/run/screen</seg>
+        <seg>/usr/share/screen and /run/screen</seg>
 @y
-        <seg>screen</seg>
+        <seg>screen (シンボリックリンク), screen-&screen-version;</seg>
         <seg>&None;</seg>
-        <seg>/var/run/screen</seg>
+        <seg>/usr/share/screen, /run/screen</seg>
 @z
 
 @x

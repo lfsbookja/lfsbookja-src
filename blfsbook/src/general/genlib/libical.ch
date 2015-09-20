@@ -152,20 +152,22 @@
           None
         </seg>
         <seg>
-          libical.{so,a}, libicalss.{so,a} and libicalvcal.{so,a}
+          libical.so, libicalss.so and libicalvcal.so
         </seg>
         <seg>
-          /usr/include/libical
+          /usr/include/libical and
+          /usr/share/doc/libical-&libical-version;/html
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libical.{so,a}, libicalss.{so,a}, libicalvcal.{so,a}
+          libical.so, libicalss.so, libicalvcal.so
         </seg>
         <seg>
-          /usr/include/libical
+          /usr/include/libical,
+          /usr/share/doc/libical-&libical-version;/html
         </seg>
 @z
 

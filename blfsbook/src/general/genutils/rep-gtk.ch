@@ -88,13 +88,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libglade"/> and
+      <xref linkend="gtk2"/> and
       <xref linkend="librep"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libglade"/>,
+      <xref linkend="gtk2"/>,
       <xref linkend="librep"/>
     </para>
 @z
@@ -155,11 +155,11 @@
 @x
         <seg>None</seg>
         <seg>Lisp bindings</seg>
-        <seg>/usr/lib/rep/gui/</seg>
+        <seg>/usr/include/rep-gtk and /usr/lib/rep/gui</seg>
 @y
         <seg>&None;</seg>
         <seg>Lisp バインディング</seg>
-        <seg>/usr/lib/rep/gui/</seg>
+        <seg>/usr/include/rep-gtk, /usr/lib/rep/gui</seg>
 @z
 
 @x

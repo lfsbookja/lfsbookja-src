@@ -77,14 +77,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> and
-      <xref linkend="vala"/> 
+      <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="vala"/> 
+      <xref linkend="gobject-introspection"/>
     </para>
 @z
 
@@ -125,27 +123,26 @@
 @z
 
 @x
-      <parameter>install -v -m755 -d
-      /usr/share/gtk-doc/html/babl/graphics</parameter>: This and the subsequent
-      commands install the library html documentation under
-      <filename class="directory">/usr/share/gtk-doc/html</filename> where other
-      gtk packages put the programmer-oriented documentation.
+      <parameter>--disable-docs</parameter>: This switch disables
+      <filename>BablFishPath.html</filename> and
+      <filename>index.html</filename> generation. Remove it, if you want them.
 @y
-      <parameter>install -v -m755 -d
-      /usr/share/gtk-doc/html/babl/graphics</parameter>:
-      このコマンドとそれに続くコマンドは、ライブラリの HTML ドキュメントをインストールするものであり、多くの gtk パッケージにて、プログラマー向けのドキュメントが配置されるディレクトリ <filename
-      class="directory">/usr/share/gtk-doc/html</filename> にインストールするものです。
+      <parameter>--disable-docs</parameter>: This switch disables
+      <filename>BablFishPath.html</filename> and
+      <filename>index.html</filename> generation. Remove it, if you want them.
 @z
 
 @x
-      <option>--with-vala</option>: Use <command>vapigen</command> so that
-      <application>vala</application> programs can use this application - not
-      enabled by default, may cause breakage when building
-      <application>gegl</application>.
+      <command>install -v -m755 -d
+      /usr/share/gtk-doc/html/babl/graphics</command>: This and the subsequent
+      commands install the library html documentation under
+      <filename class="directory">/usr/share/gtk-doc/html</filename> where
+      other gtk packages put the programmer-oriented documentation.
 @y
-      <option>--with-vala</option>:
-      <command>vapigen</command> を用いることで <application>vala</application> プログラムがこのアプリケーションを利用できるようにします。
-      デフォルトでは利用不可となっているため、この指定がないと <application>gegl</application> のビルドに失敗することがあります。
+      <command>install -v -m755 -d
+      /usr/share/gtk-doc/html/babl/graphics</command>:
+      このコマンドとそれに続くコマンドは、ライブラリの HTML ドキュメントをインストールするものであり、多くの gtk パッケージにて、プログラマー向けのドキュメントが配置されるディレクトリ <filename
+      class="directory">/usr/share/gtk-doc/html</filename> にインストールするものです。
 @z
 
 @x
@@ -167,11 +164,19 @@
 @x
         <seg>None</seg>
         <seg>libbabl.so and libraries in /usr/lib/babl-0.1</seg>
-        <seg>/usr/include/babl-0.1</seg>
+        <seg>
+          /usr/include/babl-0.1,
+          /usr/lib/babl-0.1 and
+          /usr/share/gtk-doc/html/babl
+        </seg>
 @y
         <seg>&None;</seg>
-        <seg>libbabl.so and libraries in /usr/lib/babl-0.1</seg>
-        <seg>/usr/include/babl-0.1</seg>
+        <seg>libbabl.so, /usr/lib/babl-0.1 配下に数種のライブラリ</seg>
+        <seg>
+          /usr/include/babl-0.1,
+          /usr/lib/babl-0.1,
+          /usr/share/gtk-doc/html/babl
+        </seg>
 @z
 
 @x

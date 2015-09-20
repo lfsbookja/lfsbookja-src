@@ -155,11 +155,11 @@
 @x
         <seg>keyctl, key.dns_resolver, and request-key</seg>
         <seg>libkeyutils.so</seg>
-        <seg>/usr/share/keyutils</seg>
+        <seg>/etc/request-key.d and /usr/share/keyutils</seg>
 @y
         <seg>keyctl, key.dns_resolver, request-key</seg>
         <seg>libkeyutils.so</seg>
-        <seg>/usr/share/keyutils</seg>
+        <seg>/etc/request-key.d, /usr/share/keyutils</seg>
 @z
 
 @x
@@ -178,7 +178,7 @@
 @z
 
 @x libkeyutils.so.1
-          <para> contains the keyuils library API instantiation.</para>
+            contains the keyutils library API instantiation.
 @y
-          <para>keyuils API ライブラリ。</para>
+            keyuils API ライブラリ。
 @z

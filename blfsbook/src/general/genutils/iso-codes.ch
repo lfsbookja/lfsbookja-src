@@ -108,9 +108,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x

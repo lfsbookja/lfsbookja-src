@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY libtasn1-buildsize     "9.5 MB (11 MB with tests)">
+  <!ENTITY libtasn1-buildsize     "12 MB (with tests)">
+  <!ENTITY libtasn1-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libtasn1-buildsize     "9.5 MB (テスト実施時は 11 MB)">
+  <!ENTITY libtasn1-buildsize     "12 MB (テスト込み)">
+  <!ENTITY libtasn1-time          "0.2 SBU (テスト込み)">
 @z
 
 @x
@@ -84,13 +86,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <ulink url="http://valgrind.org/">Valgrind</ulink>
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://valgrind.org/">Valgrind</ulink>
+      <xref linkend="valgrind"/>
     </para>
 @z
 

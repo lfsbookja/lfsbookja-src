@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY json-c-time          "less than 0.1 SBU">
+  <!ENTITY json-c-time          "less than 0.1 SBU (add 1.0 SBU for tests)">
 @y
-  <!ENTITY json-c-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY json-c-time          "&LessThan1;0.1 SBU&LessThan2; (テストにさらに 1.0 SBU)">
 @z
 
 @x

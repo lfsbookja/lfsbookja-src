@@ -14,11 +14,10 @@
 @z
 
 @x
-  <!ENTITY libatomic_ops-buildsize     "4.5 MB (additional 0.6 MB for tests)">
-  <!ENTITY libatomic_ops-time          "Less than 0.1 SBU (additional less than
-                                        0.1 SBU for tests)">
+  <!ENTITY libatomic_ops-buildsize     "5.3 MB (additional 1.9 MB for tests)">
+  <!ENTITY libatomic_ops-time          "less than 0.1 SBU (additional less than 0.1 SBU for tests)">
 @y
-  <!ENTITY libatomic_ops-buildsize     "4.5 MB (テスト実行時はさらに 0.6 MB)">
+  <!ENTITY libatomic_ops-buildsize     "5.3 MB (テスト実行時はさらに 1.9 MB)">
   <!ENTITY libatomic_ops-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実行時はさらに&LessThan1;0.1 SBU&LessThan2;)">
 @z
 
@@ -122,31 +121,20 @@
 @z
 
 @x
-      <command>sed -i 's#AM_CONFIG_HEADER ...</command>: This
-      <command>sed</command> fixes building with
-      <application>Automake</application> 1.13.
+      <command>sed -i ...</command>: This <command>sed</command> makes the docs
+      to be installed in an appropriate directory.
 @y
-      <command>sed -i 's#AM_CONFIG_HEADER ...</command>:
-      この <command>sed</command> コマンドは <application>Automake</application> 1.13 にてビルドできるようにします。
-@z
-
-@x
-      <command>sed -i 's#AC_PROG_RANLIB ...</command>: These
-      <command>sed</command>s massage the autotool files so that a shared 
-      library is built, the tests pass, and the docs are installed in an
-      appropriate directory.
-@y
-      <command>sed -i 's#AC_PROG_RANLIB ...</command>:
-      この <command>sed</command> コマンドは、共有ライブラリのビルド、テストの正常実行、ドキュメントインストール先の適正化をそれぞれ行うように autotool ファイル類を修正します。
+      <command>sed -i ...</command>:
+      この sed コマンドはドキュメントを適正なディレクトリにインストールするためのものです。
 @z
 
 @x
       <command>autoreconf -fi</command>: This regenerates the
-      <command>configure</command> script and the <filename>Makefile.in</filename>
-      files and installs a missing file.
+      <command>configure</command> script and the
+      <filename>Makefile.in</filename>.
 @y
       <command>autoreconf -fi</command>:
-      このコマンドにより <command>configure</command> スクリプトや <filename>Makefile.in</filename> を再生成し、インストールするべきファイルを適切にインストールするようにします。
+      このコマンドにより <command>configure</command> スクリプトや <filename>Makefile.in</filename> を再生成します。
 @z
 
 @x

@@ -127,13 +127,15 @@
 @z
 
 @x
-      <envar>CXX=g++</envar>: This environment variable forces use of
-      <command>g++</command> compiler since building with
-      <command>clang++</command> is currently broken.
+      <envar>CC=gcc CXX=g++</envar>: If you prefer to use
+      <command>gcc</command> and/or <command>g++</command> instead of
+      <command>clang</command> and/or <command>clang++</command>, if they are
+      installed, use one or both variables in the configure line.
 @y
-      <envar>CXX=g++</envar>:
-      本環境変数により <command>g++</command> を強制的に利用します。
-      <command>clang++</command> によるビルドでは処理できないためです。
+      <envar>CC=gcc CXX=g++</envar>:
+      <command>clang</command> や <command>clang++</command> をインストールしていて、<command>clang</command> や <command>clang++</command> を用いずに
+      <command>gcc</command> and/or <command>g++</command> を用いたい場合は
+      configure スクリプトの実行においてこの環境変数を指定してください。
 @z
 
 @x

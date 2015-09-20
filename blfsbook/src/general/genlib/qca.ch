@@ -83,12 +83,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+    <xref linkend="cacerts"/>,
+    <xref linkend="cmake"/>,
     <xref linkend="qt4"/> and
     <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+    <xref linkend="cacerts"/>,
+    <xref linkend="cmake"/>,
     <xref linkend="qt4"/>,
     <xref linkend="which"/>
     </para>
@@ -138,33 +142,27 @@
 @z
 
 @x
-    <para><command>sed -i '217s@set@...</command>: This sed fixes compiling with
-    <application>GCC</application> 4.7 and newer. It is safe to omit when compiling
-    with older <application>GCC</application> versions.</para>
+    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+    used to apply a higher level of compiler optimizations.</para>
 @y
-    <para><command>sed -i '217s@set@...</command>:
-    この sed コマンドは <application>GCC</application> 4.7 またはそれ以上を用いてコンパイルできるようにするものです。
-    <application>GCC</application> の古いバージョンを使ってコンパイルする場合には、このコマンド実行を省略するのが無難です。
-    </para>
+    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+    used to apply a higher level of compiler optimizations.</para>
 @z
 
 @x
-    <para><option>--certstore-path=/etc/ssl/ca-bundle.crt</option>: Causes
-    the build to use the system-installed CA Certificates instead of a bundled
-    copy.</para>
+    <para><parameter>-DQT4_BUILD=ON</parameter>: This switch is used to force
+    building with Qt4 even if Qt5 is found.</para>
 @y
-    <para><option>--certstore-path=/etc/ssl/ca-bundle.crt</option>:
-    本パッケージのビルドにおいて、バンドルされている電子証明書データを用いず、システムにインストールされたものを用いるようにします。
-    </para>
+    <para><parameter>-DQT4_BUILD=ON</parameter>: This switch is used to force
+    building with Qt4 even if Qt5 is found.</para>
 @z
 
 @x
-    <para><option>--no-separate-debug-info</option>: Prevents installation
-    of a separate library and program file with debug information.</para>
+    <para><parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>: 
+    Install the qca man page in the normal location.</para>
 @y
-    <para><option>--no-separate-debug-info</option>:
-    個々のライブラリやプログラムにてデバッグ情報を含めないようにします。
-    </para>
+    <para><parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>: 
+    Install the qca man page in the normal location.</para>
 @z
 
 @x
@@ -184,13 +182,21 @@
 @z
 
 @x
-        <seg>qcatool2</seg>
-        <seg>libqca.so</seg>
-        <seg>&qt4-dir;/include/QtCrypto</seg>
+        <seg>mozcerts and qcatool</seg>
+        <seg>libqca.so and plugins at &qt4-dir;/lib/qca/crypto</seg>
+        <seg>
+          &qt4-dir;/include/QtCrypto,
+          &qt4-dir;/lib/cmake/Qca and
+          &qt4-dir;/lib/qca
+        </seg>
 @y
-        <seg>qcatool2</seg>
-        <seg>libqca.so</seg>
-        <seg>&qt4-dir;/include/QtCrypto</seg>
+        <seg>mozcerts, qcatool</seg>
+        <seg>libqca.so と &qt4-dir;/lib/qca/crypto にプラグイン</seg>
+        <seg>
+          &qt4-dir;/include/QtCrypto,
+          &qt4-dir;/lib/cmake/Qca,
+          &qt4-dir;/lib/qca
+        </seg>
 @z
 
 @x
@@ -199,9 +205,17 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x qcatool2
+@x mozcerts
+          <para>is a command line tool for converting certdata.txt into
+          outfile.pem files.</para>
+@y
+          <para>is a command line tool for converting certdata.txt into
+          outfile.pem files.</para>
+@z
+
+@x qcatool
           <para>is a command line tool for performing various cryptographic
-	  operations with Qca.</para>
+          operations with Qca.</para>
 @y
           <para>
           Qca による種々の暗号化処理を実現するコマンドラインツール。

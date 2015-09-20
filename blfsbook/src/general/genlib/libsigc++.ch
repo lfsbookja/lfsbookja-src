@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY libsigc-time          "less than 0.1 SBU">
+  <!ENTITY libsigc-buildsize     "35 MB (additional 17 MB for the tests)">
+  <!ENTITY libsigc-time          "less than 0.1 SBU (additional 0.1 SBU for the tests)">
 @y
-  <!ENTITY libsigc-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY libsigc-buildsize     "35 MB (テスト実行時はさらに 17 MB)">
+  <!ENTITY libsigc-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実行時はさらに 0.1 SBU)">
 @z
 
 @x
@@ -114,7 +116,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -156,7 +158,7 @@
 @z
 
 @x libsigc-2.0.so
-            contains the <application>libsigc++</application> API methods.
+            contains the <application>libsigc++</application> API functions.
 @y
-            <application>libsigc++</application> API メソッドを提供します。
+            <application>libsigc++</application> API 関数を提供します。
 @z

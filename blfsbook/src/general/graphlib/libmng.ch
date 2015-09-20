@@ -136,16 +136,6 @@
 @z
 
 @x
-      <command>sed -i "..." libmng_types.h</command>: This command adds a
-      missing header which would cause other apps that link to this
-      package fail to compile.
-@y
-      <command>sed -i "..." libmng_types.h</command>:
-      このコマンドは不足するヘッダーファイル指定を追加するものです。
-      これを行っていないと、他のアプリケーションが当パッケージをリンクする際にコンパイルエラーとなります。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

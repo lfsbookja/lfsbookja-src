@@ -86,8 +86,9 @@
     <para role="optional">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/> and
-      <xref linkend="libxslt"/> (To generate man pages) and
-      <xref linkend="python2"/> (To build Python module).
+      <xref linkend="libxslt"/> (To generate man pages),
+      <xref linkend="python2"/> (To build Python-2 module) and
+      <xref linkend="python3"/> (To build Python-3 module)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -95,7 +96,8 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="libxslt"/> (man ページ生成のため),
-      <xref linkend="python2"/> (Python モジュール構築のため)
+      <xref linkend="python2"/> (Python-2 モジュール生成時),
+      <xref linkend="python3"/> (Python-3 モジュール生成時)
     </para>
 @z
 
@@ -151,8 +153,11 @@
           None
         </seg>
         <seg>
-          libpytalloc-util.so, libtalloc.so and
-          talloc.so (Python Module)
+          libpytalloc-util.cpython-34m.so,
+          libpytalloc-util.so,
+          libtalloc.so,
+          talloc.so (Python-2 Module) and
+          talloc.cpython-34m.so (Python-3 Module)
         </seg>
         <seg>
           None
@@ -162,8 +167,11 @@
           &None;
         </seg>
         <seg>
-          libpytalloc-util.so, libtalloc.so,
-          talloc.so (Python &Module;)
+          libpytalloc-util.cpython-34m.so,
+          libpytalloc-util.so,
+          libtalloc.so,
+          talloc.so (Python-2 モジュール),
+          talloc.cpython-34m.so (Python-3 モジュール)
         </seg>
         <seg>
           &None;

@@ -30,6 +30,7 @@ CHANGE_FILES = \
         imlib2.ch               \
 	lib.ch                  \
 	libdrm.ch               \
+	libglade.ch             \
 	libnotify.ch            \
 	libxklavier.ch          \
 	pango.ch                \
@@ -82,6 +83,7 @@ gtkmm3.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm3.ch
 imlib2.xml:               $(BOOKdir)/$@ $(srcdir)/imlib2.ch
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
 libdrm.xml:               $(BOOKdir)/$@ $(srcdir)/libdrm.ch
+libglade.xml:             $(BOOKdir)/$@ $(srcdir)/libglade.ch
 libnotify.xml:            $(BOOKdir)/$@ $(srcdir)/libnotify.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch

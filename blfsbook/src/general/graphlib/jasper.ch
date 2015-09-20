@@ -87,10 +87,8 @@
 
 @x
         <para>Required patch: <ulink
-        url="&patch-root;/jasper-&jasper-version;-security_fixes-1.patch"/></para>
 @y
         <para>必須のパッチ: <ulink
-        url="&patch-root;/jasper-&jasper-version;-security_fixes-1.patch"/></para>
 @z
 
 @x

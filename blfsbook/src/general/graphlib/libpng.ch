@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libpng-buildsize     "12 MB (additional 1 MB for the tests)">
-  <!ENTITY libpng-time          "0.1 SBU (additional 0.1 SBU for the tests)">
+  <!ENTITY libpng-buildsize     "14 MB (additional 1 MB for the tests)">
+  <!ENTITY libpng-time          "0.3 SBU (including tests)">
 @y
-  <!ENTITY libpng-buildsize     "12 MB (テスト実行時はさらに 1 MB)">
-  <!ENTITY libpng-time          "0.1 SBU (テスト実行時はさらに 0.1 SBU)">
+  <!ENTITY libpng-buildsize     "14 MB (テスト実行時はさらに 1 MB)">
+  <!ENTITY libpng-time          "0.3 SBU (テスト込み)">
 @z
 
 @x
@@ -157,7 +157,7 @@
 
 @x
         <seg>
-          libpng-config, libpng16-config, pngfix and png-fix-itxt
+          libpng-config (symlink), libpng16-config, pngfix and png-fix-itxt
         </seg>
         <seg>
           libpng.so and libpng16.so
@@ -168,7 +168,7 @@
         </seg>
 @y
         <seg>
-          libpng-config, libpng16-config, pngfix, png-fix-itxt
+          libpng-config (symlink), libpng16-config, pngfix, png-fix-itxt
         </seg>
         <seg>
           libpng.so, libpng16.so

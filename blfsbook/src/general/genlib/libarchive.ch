@@ -33,9 +33,9 @@
 @z
 
 @x
-Download (HTTP): <ulink url="&libarchive-download-http;"/>
+          Download (HTTP): <ulink url="&libarchive-download-http;"/>
 @y
-&Download; (HTTP): <ulink url="&libarchive-download-http;"/>
+          &Download; (HTTP): <ulink url="&libarchive-download-http;"/>
 @z
 
 @x
@@ -77,22 +77,16 @@ Download (HTTP): <ulink url="&libarchive-download-http;"/>
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="acl"/>,
-      <xref linkend="attr"/>,
-      <xref linkend="libxml2"/> or
-      <xref linkend="expat"/>,
-      <xref linkend="LZO"/>, and
+      <xref linkend="libxml2"/>,
+      <xref linkend="lzo"/>, and
       <xref linkend="nettle"/> or
       <xref linkend="openssl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="acl"/>,
-      <xref linkend="attr"/>,
-      <xref linkend="libxml2"/> または
-      <xref linkend="expat"/>,
-      <xref linkend="LZO"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="lzo"/>,
       <xref linkend="nettle"/> または
       <xref linkend="openssl"/>
     </para>

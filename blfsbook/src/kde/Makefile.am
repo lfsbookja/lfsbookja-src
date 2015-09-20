@@ -8,7 +8,8 @@
 SUBDIRS=add core intro
 BOOKdir = @abs_bookdir@/kde
 CHANGE_FILES = \
-	kde.ch
+	kde.ch           \
+	libdbusmenuqt.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -23,4 +24,5 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-kde.xml: $(BOOKdir)/$@ $(srcdir)/kde.ch
+kde.xml:           $(BOOKdir)/$@ $(srcdir)/kde.ch
+libdbusmenuqt.xml: $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch

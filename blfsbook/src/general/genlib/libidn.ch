@@ -104,9 +104,9 @@
       <xref linkend="emacs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
+      <xref linkend="valgrind"/>, and
       <ulink url="http://www.gnu.org/software/dotgnu/">DotGNU Portable.NET</ulink> or
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>, and
-      <ulink url="http://valgrind.org/">Valgrind</ulink>
+      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -115,9 +115,9 @@
       <xref linkend="emacs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
+      <xref linkend="valgrind"/>,
       <ulink url="http://www.gnu.org/software/dotgnu/">DotGNU Portable.NET</ulink> または
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://valgrind.org/">Valgrind</ulink>
+      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>
     </para>
 @z
 

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY LZO-time          "0.3 SBU (additional 0.3 SBU to run the tests)">
+  <!ENTITY lzo-time          "0.2 SBU (additional 0.2 SBU to run the tests)">
 @y
-  <!ENTITY LZO-time          "0.3 SBU (テスト実行時はさらに 0.3 SBU)">
+  <!ENTITY LZO-time          "0.2 SBU (テスト実行時はさらに 0.2 SBU)">
 @z
 
 @x
@@ -45,39 +45,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&LZO-download-http;"/>
+          Download (HTTP): <ulink url="&lzo-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&LZO-download-http;"/>
+          &Download; (HTTP): <ulink url="&lzo-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&LZO-download-ftp;"/>
+          Download (FTP): <ulink url="&lzo-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&LZO-download-ftp;"/>
+          &Download; (FTP): <ulink url="&lzo-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &LZO-md5sum;
+          Download MD5 sum: &lzo-md5sum;
 @y
-          &Download; MD5 sum: &LZO-md5sum;
+          &Download; MD5 sum: &lzo-md5sum;
 @z
 
 @x
-          Download size: &LZO-size;
+          Download size: &lzo-size;
 @y
-          &DownloadSize;: &LZO-size;
+          &DownloadSize;: &lzo-size;
 @z
 
 @x
-          Estimated disk space required: &LZO-buildsize;
+          Estimated disk space required: &lzo-buildsize;
 @y
-          &Estimateddiskspacerequired;: &LZO-buildsize;
+          &Estimateddiskspacerequired;: &lzo-buildsize;
 @z
 
 @x
-          Estimated build time: &LZO-time;
+          Estimated build time: &lzo-time;
 @y
-          &Estimatedbuildtime;: &LZO-time;
+          &Estimatedbuildtime;: &lzo-time;
 @z
 
 @x

@@ -194,7 +194,9 @@
           libopenobex.so
         </seg>
         <seg>
-          /usr/include/openobex
+          /usr/include/openobex,
+          /usr/lib/cmake/OpenObex-1.7.1, and
+          /usr/share/doc/openobex-1.7.1
         </seg>
 @y
         <seg>
@@ -204,7 +206,9 @@
           libopenobex.so
         </seg>
         <seg>
-          /usr/include/openobex
+          /usr/include/openobex,
+          /usr/lib/cmake/OpenObex-1.7.1,
+          /usr/share/doc/openobex-1.7.1
         </seg>
 @z
 

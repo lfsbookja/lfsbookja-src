@@ -135,26 +135,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--libexecdir=/usr/lib/icon-naming-utils</parameter>:
-    This parameter is used so that the main program script is placed in
-    <filename class='directory'>/usr/lib/icon-naming-utils</filename>
-    instead of <filename class='directory'>/usr/libexec</filename>.</para>
-@y
-    <para>
-    <parameter>--libexecdir=/usr/lib/icon-naming-utils</parameter>:
-    このパラメーターを指定することで、メインプログラムスクリプトのインストール先を <filename
-    class='directory'>/usr/libexec</filename> ではなく <filename
-    class='directory'>/usr/lib/icon-naming-utils</filename> にします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

@@ -181,7 +181,7 @@
         </seg>
         <seg>
           /usr/include/gmime-2.6 and
-          /usr/share/gtk-doc/html/gmime
+          /usr/share/gtk-doc/html/gmime-2.6
         </seg>
 @y
         <seg>
@@ -192,7 +192,7 @@
         </seg>
         <seg>
           /usr/include/gmime-2.6,
-          /usr/share/gtk-doc/html/gmime
+          /usr/share/gtk-doc/html/gmime-2.6
         </seg>
 @z
 

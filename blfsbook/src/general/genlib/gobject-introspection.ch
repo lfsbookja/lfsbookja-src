@@ -156,7 +156,8 @@
           g-ir-generate, and g-ir-scanner
         </seg>
         <seg>
-          libgirepository-1.0.so
+          libgirepository-1.0.so and
+          /usr/lib/gobject-introspection/giscanner/_giscanner.so
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,
@@ -171,7 +172,8 @@
           g-ir-generate, g-ir-scanner
         </seg>
         <seg>
-          libgirepository-1.0.so
+          libgirepository-1.0.so,
+          /usr/lib/gobject-introspection/giscanner/_giscanner.so
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,

@@ -136,7 +136,7 @@
           libatasmart.so
         </seg>
         <seg>
-          /usr/share/doc/libatasmart
+          /usr/share/doc/libatasmart-&libatasmart-version;
         </seg>
 @y
         <seg>
@@ -146,7 +146,7 @@
           libatasmart.so
         </seg>
         <seg>
-          /usr/share/doc/libatasmart
+          /usr/share/doc/libatasmart-&libatasmart-version;
         </seg>
 @z
 

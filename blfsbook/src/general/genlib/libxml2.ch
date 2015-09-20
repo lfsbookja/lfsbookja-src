@@ -93,14 +93,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="python2"/> (to build and install a
+      <xref linkend="python2"/> or <xref linkend="python3"/> (to build and install a
       <application>Python</application> library module, additionally it is
       required to run the full suite of tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="python2"/>
+      <xref linkend="python2"/> または <xref linkend="python3"/>
       (<application>Python</application> ライブラリモジュールビルドしインストールする場合には必要です。
       またテストスイートをすべて実施する際にも必要です。)
     </para>
@@ -110,13 +110,12 @@
         Some packages which utilize <application>libxml2</application> (such as
         <application>GNOME Doc Utils</application>) need the
         <application>Python</application> module installed to function properly
-        and some packages (such as MesaLib) will not build properly if the
+        and some packages will not build properly if the
         <application>Python</application> module is not available.
 @y
         <application>libxml2</application> を利用するパッケージの中には <application>Python</application> モジュールがないと正しく動作しないものがあります。
         (例えば <application>GNOME Doc Utils</application> など。)
         また <application>Python</application> モジュールがないとビルドができないパッケージもあります。
-        (例えば GNOME Panel など。)
 @z
 
 @x
@@ -132,6 +131,13 @@
 @z
 
 @x
+      Install <application>libxml2</application> by running the following
+      commands:
+@y
+      以下のコマンドを実行して <application>libxml2</application> をビルドします。
+@z
+
+@x
     <para>If you downloaded the testsuite, issue the following command:</para>
 @y
     <para>
@@ -140,16 +146,13 @@
 @z
 
 @x
-      Install <application>libxml2</application> by running the following
-      commands:
+      To test the results, issue: <command>make check &gt;
+      ../check.log</command>. A summary of the results can be obtained with
+      <command>grep -E '^Total|expected' ../check.log</command>.
 @y
-      以下のコマンドを実行して <application>libxml2</application> をビルドします。
-@z
-
-@x
-      To test the results, issue: <command>make check</command>.
-@y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make check &gt;
+      ../check.log</command> を実行します。
+      <command>grep -E '^Total|expected' ../check.log</command> を実行して結果を確認することができます。
 @z
 
 @x
@@ -165,7 +168,7 @@
 @z
 
 @x
-      <option>--with-history</option>: This switch enables
+      <parameter>--with-history</parameter>: This switch enables
       <application>Readline</application> support when running
       <command>xmlcatalog</command> or <command>xmllint</command> in shell mode.
 @y

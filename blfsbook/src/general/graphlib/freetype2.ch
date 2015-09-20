@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY freetype2-buildsize     "28 MB (includes installing additional documentation)">
+  <!ENTITY freetype2-buildsize     "33 MB (includes installing additional documentation)">
+  <!ENTITY freetype2-time          "0.2 SBU (includes installing additional documentation)">
 @y
-  <!ENTITY freetype2-buildsize     "28 MB (追加ドキュメントのインストールを含む)">
+  <!ENTITY freetype2-buildsize     "33 MB (追加ドキュメントのインストールを含む)">
+  <!ENTITY freetype2-time          "0.2 SBU (追加ドキュメントのインストールを含む)">
 @z
 
 @x
@@ -120,14 +122,19 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="which"/> and
-      <xref linkend="libpng"/>
+      <xref linkend="harfbuzz"/>
+      (first, install without it, after it is installed, reinstall
+      <xref linkend="freetype2"/>),
+      <xref linkend="libpng"/>, and
+      <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="which"/>,
-      <xref linkend="libpng"/>
+      <xref linkend="harfbuzz"/>
+      (初めはこれをなしとしてインストールし、インストール後に本パッケージを再インストール),
+      <xref linkend="libpng"/>,
+      <xref linkend="which"/>
     </para>
 @z
 
@@ -176,13 +183,13 @@
 @z
 
 @x
-      <command>sed -e ...</command>: 
-      First command enables GX/AAT and OpenType table validation and second
-      command enables Subpixel Rendering and Subpixel Hinting in order to
-      improve font rendering. Note that Subpixel Rendering may have patent issues.
-      Be sure to read the <literal>'Other patent issues'</literal> part of
-      <ulink url="http://www.freetype.org/patents.html"/> before enabling this
-      option.
+      <command>sed -e ...</command>: First command enables GX/AAT and OpenType
+      table validation and second command enables Subpixel Rendering and
+      Subpixel Hinting in order to improve font rendering. Note that Subpixel
+      Rendering may have patent issues.  Be sure to read the <literal>'Other
+      patent issues'</literal> part of
+      <ulink url="http://www.freetype.org/patents.html"/>
+      before enabling this option.
 @y
       <command>sed -e ...</command>: 
       １つめのコマンドは GX/AAT と OpenType テーブルの検証を有効にします。

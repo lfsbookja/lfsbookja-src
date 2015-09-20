@@ -105,9 +105,13 @@
 @z
 
 @x
-    <para>This package does not have a working test suite.</para>
+    <para>To test the results, issue: <command>make check</command>. Test suite
+    results are kept in <filename>test.sh.log</filename>.</para>
 @y
-    <para>このパッケージに有効なテストスイートはありません。</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    テスト結果は <filename>test.sh.log</filename> に出力されます。
+    </para>
 @z
 
 @x
@@ -119,13 +123,15 @@
 @z
 
 @x
-    <para>If you generated html documentation, install it as the
+    <para>If <xref linkend="xmlto"/> is installed, then the API documentation
+    has been built.  If you wish to install the distributed and the just built
+    documentations, issue, as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>
-    html ドキュメントを生成した場合は、これらをインストールするために <systemitem
-    class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+    <para>If <xref linkend="xmlto"/> is installed, then the API documentation
+    has been built.  If you wish to install the distributed and the just built
+    documentations, issue, as the
+    <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
@@ -151,12 +157,12 @@
 @z
 
 @x
-        <seg>gif2raw, gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto,
+        <seg>gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto,
         giftext and giftool</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @y
-        <seg>gif2raw, gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto,
+        <seg>gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto,
         giftext, giftool</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>

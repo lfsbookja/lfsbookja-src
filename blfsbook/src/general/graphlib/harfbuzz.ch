@@ -14,10 +14,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "24 MB (additional 1 MB for the tests and
-                                   1 MB for the API documentation)">
+  <!ENTITY harfbuzz-buildsize     "34 MB (with tests)">
+  <!ENTITY harfbuzz-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "24 MB (テスト実行時はさらに 1 MB、API ドキュメント生成時はさらに 1 MB)">
+  <!ENTITY harfbuzz-buildsize     "34 MB (テスト込み)">
+  <!ENTITY harfbuzz-time          "0.3 SBU (テスト込み)">
 @z
 
 @x
@@ -84,16 +85,19 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (required for Pango),
       <xref linkend="icu"/> and
       <xref linkend="freetype2"/>
+      (after <xref linkend="harfbuzz"/> is installed, reinstall
+      <xref linkend="freetype2"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (Pango に必要),
       <xref linkend="icu"/>,
       <xref linkend="freetype2"/>
+      (<xref linkend="harfbuzz"/> をインストールした後に <xref linkend="freetype2"/> をインストール)
     </para>
 @z
 
@@ -200,25 +204,25 @@
 
 @x
         <seg>
-          hb-ot-shape-closure, hb-shape, and hb-view
+          hb-ot-shape-closure, hb-shape, and
+          hb-view (only if cairo is installed)
         </seg>
         <seg>
           libharfbuzz.so, libharfbuzz-gobject.so and libharfbuzz-icu.so
         </seg>
         <seg>
-          /usr/include/harfbuzz and
-          /usr/share/gtk-doc/html/harfbuzz
+          /usr/{include,share/gtk-doc/html}/harfbuzz
         </seg>
 @y
         <seg>
-          hb-ot-shape-closure, hb-shape, hb-view
+          hb-ot-shape-closure, hb-shape,
+          hb-view (cairo インストール時のみ)
         </seg>
         <seg>
           libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-icu.so
         </seg>
         <seg>
-          /usr/include/harfbuzz,
-          /usr/share/gtk-doc/html/harfbuzz
+          /usr/{include,share/gtk-doc/html}/harfbuzz
         </seg>
 @z
 

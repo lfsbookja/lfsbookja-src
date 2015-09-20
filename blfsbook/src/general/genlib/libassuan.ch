@@ -105,12 +105,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="texlive"/>
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="texlive"/>
+      <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
     </para>
 @z
 
@@ -135,8 +135,7 @@
 
 @x
       If you wish to build documentation, you must have
-      <xref linkend="texlive"/> installed, then issue
-      the following command:
+      <xref linkend="texlive"/> installed and issue the following commands:
 @y
       ドキュメントをビルドする場合は、<xref linkend="texlive"/> をインストールしておく必要があります。
       その上で以下のコマンドを実行します。

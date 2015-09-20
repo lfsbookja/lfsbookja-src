@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glibmm-buildsize     "151 MB (additional 18 MB to run the test suite)">
-  <!ENTITY glibmm-time          "1.0 SBU (additional 0.4 SBU to run the test suite)">
+  <!ENTITY glibmm-buildsize     "126 MB (additional 25 MB to run the test suite)">
+  <!ENTITY glibmm-time          "1.1 SBU (additional 0.3 SBU to run the test suite)">
 @y
-  <!ENTITY glibmm-buildsize     "151 MB (テストスイート実行時はさらに 18 MB)">
-  <!ENTITY glibmm-time          "1.0 SBU (テストスイート実行時はさらに 0.4 SBU)">
+  <!ENTITY glibmm-buildsize     "126 MB (テストスイート実行時はさらに 25 MB)">
+  <!ENTITY glibmm-time          "1.1 SBU (テストスイート実行時はさらに 0.3 SBU)">
 @z
 
 @x
@@ -85,13 +85,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
+      <xref linkend="glib2"/>,
+      <xref linkend="gnutls"/> (for the tests), and
       <xref linkend="libsigc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
+      <xref linkend="gnutls"/> (テストに必要),
       <xref linkend="libsigc"/>
     </para>
 @z

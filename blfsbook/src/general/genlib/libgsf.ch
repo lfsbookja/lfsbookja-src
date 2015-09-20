@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY libgsf-buildsize     "14 MB (additional 1 MB for tests)">
+  <!ENTITY libgsf-buildsize     "16 MB (with tests)">
+  <!ENTITY libgsf-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY libgsf-buildsize     "14 MB (テストにはさらに 1 MB)">
+  <!ENTITY libgsf-buildsize     "16 MB (テスト込み)">
+  <!ENTITY libgsf-time          "0.3 SBU (テスト込み)">
 @z
 
 @x
@@ -26,7 +28,7 @@
 @z
 
 @x
-      The <application>libgsf</application> package contains the library 
+      The <application>libgsf</application> package contains a library
       used for providing an extensible input/output abstraction layer for
       structured file formats.
 @y
@@ -84,15 +86,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="intltool"/> and
+      <xref linkend="glib2"/> and
       <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="libxml2"/>
     </para>
 @z
@@ -100,14 +100,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gdk-pixbuf"/> 
-      (To build gsf-office-thumbnailer)
+      <xref linkend="gdk-pixbuf"/>
+      (To build <command>gsf-office-thumbnailer</command>)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gdk-pixbuf"/> 
-      (gsf-office-thumbnailer のビルドに必要)
+      <xref linkend="gdk-pixbuf"/>
+      (<command>gsf-office-thumbnailer</command> のビルドに必要)
     </para>
 @z
 
@@ -145,9 +145,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>. Some tests
+      may fail for unknown reasons.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      テストの中には理由不明で失敗するものがあります。
 @z
 
 @x
@@ -186,19 +188,21 @@
           libgsf-1.so
         </seg>
         <seg>
-          /usr/include/libgsf-1 and
-          /usr/share/gtk-doc/html/gsf
+          /usr/include/libgsf-1,
+          /usr/share/gtk-doc/html/gsf and
+          /usr/share/thumbnailers
         </seg>
 @y
         <seg>
-          gsf, gsf-office-thumbnailer, and gsf-vba-dump
+          gsf, gsf-office-thumbnailer, gsf-vba-dump
         </seg>
         <seg>
           libgsf-1.so
         </seg>
         <seg>
           /usr/include/libgsf-1,
-          /usr/share/gtk-doc/html/gsf
+          /usr/share/gtk-doc/html/gsf,
+          /usr/share/thumbnailers
         </seg>
 @z
 

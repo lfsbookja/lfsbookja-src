@@ -82,14 +82,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/> and
-      <xref linkend="udev-extras"/> (for GUdev)
+      <xref linkend="libusb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/>,
-      <xref linkend="udev-extras"/> (GUdev のため)
+      <xref linkend="libusb"/>
     </para>
 @z
 

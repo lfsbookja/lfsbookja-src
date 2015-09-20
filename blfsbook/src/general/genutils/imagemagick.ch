@@ -14,19 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "154 MB (with typical dependencies,
-                                      additional 29 MB to run the test suite,
-                                      reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "2.3 SBU (typical build - additional 5.2
-                                      SBU to run the test suite and 29 SBU to
-                                      run the validation suite)">
+  <!ENTITY imagemagick-buildsize     "192 MB, with typical dependencies (227 MB with the test suite, reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "2.2 SBU - typical build (additional 3.4 SBU to run the test suite and 3.3 SBU to run the validation suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "154 MB (with typical dependencies,
-                                      additional 29 MB to run the test suite,
-                                      reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "2.3 SBU (typical build - additional 5.2
-                                      SBU to run the test suite and 29 SBU to
-                                      run the validation suite)">
+  <!ENTITY imagemagick-buildsize     "192 MB, with typical dependencies (227 MB with the test suite, reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "2.2 SBU - typical build (additional 3.4 SBU to run the test suite and 3.3 SBU to run the validation suite)">
 @z
 
 @x
@@ -122,12 +114,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="x-window-system"/>
+      <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="x-window-system"/>
+      <xref linkend="xorg7-lib"/>
     </para>
 @z
 
@@ -162,56 +154,49 @@
     <para role="optional">
       <xref linkend="cups"/>,
       <xref linkend="curl"/>,
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
-      <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
       <xref linkend="ffmpeg"/>,
+      <xref linkend="p7zip"/> (LZMA),
+      <xref linkend="sane"/>,
+      <xref linkend="wget"/>,
+      <xref linkend="xdg-utils"/>,
+      <xref linkend="xterm2"/>,
+      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <ulink url="http://www.fftw.org/">FFTW</ulink>,
-      <ulink url="http://www.mupdf.com/">MuPDF</ulink>,
-<!--      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink> or -->
       <ulink url="http://www.openpgp.org/resources/downloads">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/profiles.zip">Profiles</ulink>,
-      <xref linkend="sane"/>,
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/profiles.zip">Profiles</ulink>, and
       <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
-      <filename>www/formats.html</filename>),
-      <xref linkend="wget"/>, and
-      <xref linkend="xdg-utils"/>
+      <filename>www/formats.html</filename>)
     </para>
 @y
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional">
       <xref linkend="cups"/>,
       <xref linkend="curl"/>,
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
-      <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
       <xref linkend="ffmpeg"/>,
+      <xref linkend="p7zip"/> (LZMA),
+      <xref linkend="sane"/>,
+      <xref linkend="wget"/>,
+      <xref linkend="xdg-utils"/>,
+      <xref linkend="xterm2"/>,
+      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <ulink url="http://www.fftw.org/">FFTW</ulink>,
-      <ulink url="http://www.mupdf.com/">MuPDF</ulink>,
-<!--      <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink> or -->
-      <ulink url="http://www.openpgp.org/resources/downloads">PGP</ulink> or
+      <ulink url="http://www.openpgp.org/resources/downloads">PGP</ulink> または
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/profiles.zip">Profiles</ulink>,
-      <xref linkend="sane"/>,
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/profiles.zip">Profiles</ulink>, and
       <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
-      <filename>www/formats.html</filename>),
-      <xref linkend="wget"/>, and
-      <xref linkend="xdg-utils"/>
+      <filename>www/formats.html</filename>)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
     <para role="optional">
-      <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <!-- <ulink url="http://www.i3a.org/i_flashpix.html">FlashPIX</ulink> (or -->
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
-      FlashPIX (libfpx)</ulink>,
-      <!-- Added already from the Xorg recommended dependency <xref linkend="freetype2"/>, -->
       <xref linkend="jasper"/>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <xref linkend="lcms"/> or
       <xref linkend="lcms2"/>,
       <xref linkend="libexif"/>,
@@ -220,23 +205,22 @@
       <xref linkend="librsvg"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
+      <xref linkend="openjpeg2"/>,
+      <xref linkend="pango"/>,
+      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
+      FlashPIX (libfpx)</ulink>,
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
+      <ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
-      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-      <xref linkend="pango"/>, and
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
       <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
       (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
     </para>
 @y
     <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
     <para role="optional">
-      <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <!-- <ulink url="http://www.i3a.org/i_flashpix.html">FlashPIX</ulink> (or -->
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
-      FlashPIX (libfpx)</ulink>,
-      <!-- Added already from the Xorg recommended dependency <xref linkend="freetype2"/>, -->
       <xref linkend="jasper"/>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <xref linkend="lcms"/> or
       <xref linkend="lcms2"/>,
       <xref linkend="libexif"/>,
@@ -245,9 +229,15 @@
       <xref linkend="librsvg"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
+      <xref linkend="openjpeg2"/>,
+      <xref linkend="pango"/>,
+      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
+      FlashPIX (libfpx)</ulink>,
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
+      <ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
-      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-      <xref linkend="pango"/>, and
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
       <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
       (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
     </para>
@@ -256,53 +246,46 @@
 @x
     <bridgehead renderas="sect4">Optional Graphics Utilities</bridgehead>
     <para role="optional">
-      <ulink url="http://www.blender.org/">Blender</ulink>,
-      <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
-      <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink> or
-      <ulink url="http://www.ghostscript.com/download/gpdldnld.html">GhostPDL</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gimp"/>,
-      <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
       <xref linkend="graphviz"/>,
       <xref linkend="inkscape"/>,
+      <ulink url="http://www.blender.org/">Blender</ulink>,
+      <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
+      <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
+      <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink>,
+      <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
       <ulink url="http://www.povray.org/">POV-Ray</ulink>, and
-      <ulink url="http://radsite.lbl.gov/radiance/HOME.html">Radiance</ulink>
+      <ulink url="http://www.radiance-online.org/">Radiance</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">Optional Graphics Utilities</bridgehead>
     <para role="optional">
-      <ulink url="http://www.blender.org/">Blender</ulink>,
-      <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
-      <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink> or
-      <ulink url="http://www.ghostscript.com/download/gpdldnld.html">GhostPDL</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gimp"/>,
-      <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
       <xref linkend="graphviz"/>,
       <xref linkend="inkscape"/>,
+      <ulink url="http://www.blender.org/">Blender</ulink>,
+      <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
+      <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
+      <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink>,
+      <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
       <ulink url="http://www.povray.org/">POV-Ray</ulink>, and
-      <ulink url="http://radsite.lbl.gov/radiance/HOME.html">Radiance</ulink>
+      <ulink url="http://www.radiance-online.org/">Radiance</ulink>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
     <para role="optional">
-      <ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
       <xref linkend="enscript"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
       <ulink url="http://www.lizardtech.com/downloads/category/">
       GeoExpress Command Line Utilities, AKA MrSID Utilities (binary package)</ulink>,
       <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
       <ulink url="http://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
       <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
-      <ulink url="http://www.mpeg.org/MSSG/">MPEG-2 Video Codec</ulink>,
-      <ulink url="http://netpbm.sourceforge.net/">Netpbm</ulink>,
-      <xref linkend="texlive"/>,
-      <ulink url="http://www.xfig.org/">Transfig</ulink>,
-      <!-- <ulink url="http://txt2html.sourceforge.net/">txt2html</ulink>
-      (requires Perl Module
-      <ulink url="http://cpan.org/authors/id/J/JS/JSTENZEL/Getopt-ArgvFile-1.11.tar.gz">
-      Getopt::ArgvFile</ulink>), and -->
       <ulink url="http://sk1project.org/modules.php?name=products&amp;product=uniconvertor">
       UniConvertor</ulink>, and
       <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
@@ -311,21 +294,14 @@
 @y
     <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
     <para role="optional">
-      <ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
       <xref linkend="enscript"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
       <ulink url="http://www.lizardtech.com/downloads/category/">
       GeoExpress Command Line Utilities, AKA MrSID Utilities (binary package)</ulink>,
       <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
       <ulink url="http://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
       <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
-      <ulink url="http://www.mpeg.org/MSSG/">MPEG-2 Video Codec</ulink>,
-      <ulink url="http://netpbm.sourceforge.net/">Netpbm</ulink>,
-      <xref linkend="texlive"/>,
-      <ulink url="http://www.xfig.org/">Transfig</ulink>,
-      <!-- <ulink url="http://txt2html.sourceforge.net/">txt2html</ulink>
-      (requires Perl Module
-      <ulink url="http://cpan.org/authors/id/J/JS/JSTENZEL/Getopt-ArgvFile-1.11.tar.gz">
-      Getopt::ArgvFile</ulink>), and -->
       <ulink url="http://sk1project.org/modules.php?name=products&amp;product=uniconvertor">
       UniConvertor</ulink>, and
       <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
@@ -346,9 +322,9 @@
 @z
 
 @x
-      Install <application>Imagemagick</application> by running the following commands:
+      Install <application>ImageMagick</application> by running the following commands:
 @y
-      以下のコマンドを実行して <application>Imagemagick</application> をビルドします。
+      以下のコマンドを実行して <application>ImageMagick</application> をビルドします。
 @z
 
 @x
@@ -358,17 +334,27 @@
 @z
 
 @x
-      To test the installation, issue: <command>make check</command>. For a more
-      comprehensive test, run the <application>ImageMagick</application>
-      validation suite, also after the package is installed. Note that the EPS,
-      PS, and PDF tests require a working
-      <application>Ghostscript</application>.
+      To test the installation, issue: <command>make check</command>. A more
+      comprehensive test is the <application>ImageMagick</application>
+      validation suite. If <command>make check</command> has not been executed,
+      run <command>make tests/validate</command> to compile it.  Issue
+      <command>tests/validate 2>&amp;1 | tee validate.log</command> to run the
+      validation suite. The result summary may be obtained with <command>grep
+      "validation suite" validate.log</command>. Note that the EPS, PS, and PDF
+      tests require a working <application>Ghostscript</application>. One test
+      needs <quote>Helvetica</quote> from <quote>Ghostscript Standard
+      Fonts</quote>, which are optionally installed in <xref linkend="gs"/>.
 @y
-      To test the installation, issue: <command>make check</command>. For a more
-      comprehensive test, run the <application>ImageMagick</application>
-      validation suite, also after the package is installed. Note that the EPS,
-      PS, and PDF tests require a working
-      <application>Ghostscript</application>.
+      To test the installation, issue: <command>make check</command>. A more
+      comprehensive test is the <application>ImageMagick</application>
+      validation suite. If <command>make check</command> has not been executed,
+      run <command>make tests/validate</command> to compile it.  Issue
+      <command>tests/validate 2>&amp;1 | tee validate.log</command> to run the
+      validation suite. The result summary may be obtained with <command>grep
+      "validation suite" validate.log</command>. Note that the EPS, PS, and PDF
+      tests require a working <application>Ghostscript</application>. One test
+      needs <quote>Helvetica</quote> from <quote>Ghostscript Standard
+      Fonts</quote>, which are optionally installed in <xref linkend="gs"/>.
 @z
 
 @x
@@ -378,46 +364,26 @@
 @z
 
 @x
-      <parameter>--sysconfdir=/etc</parameter>: Install the
-      <filename class="extension">.xml</filename> configuration files into
-      <filename class='directory'>/etc/ImageMagick</filename> instead of the
-      default <filename class='directory'>/usr/etc/ImageMagick</filename>.
+      <parameter>--with-modules</parameter>: Enables support for
+      dynamically loadable modules.
 @y
-      <parameter>--sysconfdir=/etc</parameter>: Install the
-      <filename class="extension">.xml</filename> configuration files into
-      <filename class='directory'>/etc/ImageMagick</filename> instead of the
-      default <filename class='directory'>/usr/etc/ImageMagick</filename>.
+      <parameter>--with-modules</parameter>: Enables support for
+      dynamically loadable modules.
 @z
 
 @x
-      <parameter>--with-modules</parameter>: Enables support for dynamically
-      loadable modules.
+      <parameter>--with-perl</parameter>: Enables building and
+      installing of PerlMagick.
 @y
-      <parameter>--with-modules</parameter>: Enables support for dynamically
-      loadable modules.
+      <parameter>--with-perl</parameter>: Enables building and
+      installing of PerlMagick.
 @z
 
 @x
-      <parameter>--with-perl</parameter>: Enables building and installing
-      PerlMagick.
-@y
-      <parameter>--with-perl</parameter>: Enables building and installing
-      PerlMagick.
-@z
-
-@x
-      <parameter>--disable-static</parameter>: Prevents the static
-      libraries being built and installed.
-@y
-      <parameter>--disable-static</parameter>: Prevents the static
-      libraries being built and installed.
-@z
-
-@x
-      <option>--with-gslib=/usr/lib</option>: Enables support to use the
+      <option>--with-gslib</option>: Enables support to use the
       <application>Ghostscript</application> shared library.
 @y
-      <option>--with-gslib=/usr/lib</option>: Enables support to use the
+      <option>--with-gslib</option>: Enables support to use the
       <application>Ghostscript</application> shared library.
 @z
 
@@ -430,11 +396,11 @@
 @z
 
 @x
-      <option>--with-autotrace</option>: Enables support to use the
-      <application>Autotrace</application> library.
+      <option>--with-autotrace</option>: Enables support to use
+      the <application>Autotrace</application> library.
 @y
-      <option>--with-autotrace</option>: Enables support to use the
-      <application>Autotrace</application> library.
+      <option>--with-autotrace</option>: Enables support to use
+      the <application>Autotrace</application> library.
 @z
 
 @x
@@ -506,39 +472,43 @@
 @z
 
 @x
-        <seg>animate, compare, composite, conjure, convert, display,
-        identify, import, Magick-config, Magic++-config, MagickCore-config,
-        MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
-
-        <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so,
-        libMagick++-6.Q16.so,
-        and numerous plugin modules under
-        /usr/lib/ImageMagick-&imagemagick-version;/modules-Q16/coders/</seg>
-
-        <seg>/etc/ImageMagick-6,
-        /usr/include/ImageMagick-6,
-        /usr/lib/ImageMagick-&imagemagick-version;,
-        /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
-        /usr/lib/perl5/site_perl/&lfs-perl-version;/Image,
-        /usr/share/ImageMagick-6 and
-        /usr/share/doc/ImageMagick-6</seg>
+        <seg>
+          animate, compare, composite, conjure, convert, display,
+          identify, import, Magick-config, Magick++-config, MagickCore-config,
+          MagickWand-config, mogrify, montage, stream, and Wand-config
+        </seg>
+        <seg>
+          libMagickCore-6.Q16HDRI.so,
+          libMagickWand-6.Q16HDRI.so and
+          libMagick++-6.Q16HDRI.so
+        </seg>
+        <seg>
+          /etc/ImageMagick-6,
+          /usr/include/ImageMagick-6,
+          /usr/lib/ImageMagick-&imagemagick-version;,
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto}/Image/Magick,
+          /usr/share/doc/ImageMagick-&imagemagick-version;, and
+          /usr/share/ImageMagick-6
+        </seg>
 @y
-        <seg>animate, compare, composite, conjure, convert, display,
-        identify, import, Magick-config, Magic++-config, MagickCore-config,
-        MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
-
-        <seg>libMagickCore-6.Q16.so, libMagickWand-6.Q16.so,
-        libMagick++-6.Q16.so,
-        and numerous plugin modules under
-        /usr/lib/ImageMagick-&imagemagick-version;/modules-Q16/coders/</seg>
-
-        <seg>/etc/ImageMagick-6,
-        /usr/include/ImageMagick-6,
-        /usr/lib/ImageMagick-&imagemagick-version;,
-        /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
-        /usr/lib/perl5/site_perl/&lfs-perl-version;/Image,
-        /usr/share/ImageMagick-6 and
-        /usr/share/doc/ImageMagick-6</seg>
+        <seg>
+          animate, compare, composite, conjure, convert, display,
+          identify, import, Magick-config, Magick++-config, MagickCore-config,
+          MagickWand-config, mogrify, montage, stream, and Wand-config
+        </seg>
+        <seg>
+          libMagickCore-6.Q16HDRI.so,
+          libMagickWand-6.Q16HDRI.so and
+          libMagick++-6.Q16HDRI.so
+        </seg>
+        <seg>
+          /etc/ImageMagick-6,
+          /usr/include/ImageMagick-6,
+          /usr/lib/ImageMagick-&imagemagick-version;,
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto}/Image/Magick,
+          /usr/share/doc/ImageMagick-&imagemagick-version;, and
+          /usr/share/ImageMagick-6
+        </seg>
 @z
 
 @x

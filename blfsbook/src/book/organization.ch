@@ -191,11 +191,11 @@
 @z
 
 @x
-  <para><application>Xfce</application> is an lightweight alternative to
+  <para><application>Xfce</application> is a lightweight alternative to
   <application>GNOME</application> and <application>KDE</application>.
   </para>
 @y
-  <para><application>Xfce</application> is an lightweight alternative to
+  <para><application>Xfce</application> is a lightweight alternative to
   <application>GNOME</application> and <application>KDE</application>.
   </para>
 @z

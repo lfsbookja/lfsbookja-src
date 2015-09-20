@@ -20,10 +20,10 @@
 @z
 
 @x
-      <application>Exiv2</application> is a C++ library and a command 
-      line utility for managing image metadata.
+      <application>Exiv2</application> is a C++ library and a command
+      line utility for managing image and video metadata.
 @y
-      <application>Exiv2</application> は、イメージメタデータ (image metadata) を管理する C++ library およびコマンドラインユーティリティです。
+      <application>Exiv2</application> は、イメージおよび画像のメタデータを管理する C++ library およびコマンドラインユーティリティです。
 @z
 
 @x
@@ -69,20 +69,50 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Exiv2 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Exiv2 dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Exiv2&Dependencies2;</bridgehead>
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="expat"/>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+      <para role="recommended">
+      <xref linkend="curl"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="expat"/>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+      <para role="recommended">
+      <xref linkend="curl"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <ulink url="http://www.libssh.org/">libssh</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <ulink url="http://www.libssh.org/">libssh</ulink>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional for documentation</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="graphviz"/>,
+      <xref linkend="python3"/>, and
+      <xref linkend="libxslt"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">ドキュメント生成における&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="graphviz"/>,
+      <xref linkend="python3"/>,
+      <xref linkend="libxslt"/>
     </para>
 @z
 
@@ -168,7 +198,7 @@
 @z
 
 @x exiv2
-            is an utility used to dump Exif data.
+            is a utility used to dump Exif data.
 @y
             Exif データをダンプするユーティリティです。
 @z

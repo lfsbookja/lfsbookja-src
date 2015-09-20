@@ -195,16 +195,16 @@
 
 @x
         <seg>gtkdoc-check,  gtkdoc-depscan, gtkdoc-fixxref,      gtkdocize,
-             gtkdoc-mkdb,   gtkdoc-mkhtml,  gtkdoc-mkman,        gtkdoc-mkpdf, gtkdoc-mktmpl,
-             gtkdoc-rebase, gtkdoc-scan,    gtkdoc-scangobj, and gtkdoc-scanobj</seg>
+        gtkdoc-mkdb,   gtkdoc-mkhtml,  gtkdoc-mkman,        gtkdoc-mkpdf,
+        gtkdoc-mktmpl, gtkdoc-rebase, gtkdoc-scan,  and gtkdoc-scangobj</seg>
         <seg>None</seg>
-        <seg>/usr/share/{gtk-doc,help,sgml/gtk-doc} </seg>
+        <seg>/usr/share/{gtk-doc,help/*/gtk-doc-manual,sgml/gtk-doc}</seg>
 @y
         <seg>gtkdoc-check,  gtkdoc-depscan, gtkdoc-fixxref,      gtkdocize,
-             gtkdoc-mkdb,   gtkdoc-mkhtml,  gtkdoc-mkman,        gtkdoc-mkpdf, gtkdoc-mktmpl,
-             gtkdoc-rebase, gtkdoc-scan,    gtkdoc-scangobj,     gtkdoc-scanobj</seg>
+        gtkdoc-mkdb,   gtkdoc-mkhtml,  gtkdoc-mkman,        gtkdoc-mkpdf,
+        gtkdoc-mktmpl, gtkdoc-rebase, gtkdoc-scan,  gtkdoc-scangobj</seg>
         <seg>&None;</seg>
-        <seg>/usr/share/{gtk-doc,help,sgml/gtk-doc} </seg>
+        <seg>/usr/share/{gtk-doc,help/*/gtk-doc-manual,sgml/gtk-doc}</seg>
 @z
 
 @x

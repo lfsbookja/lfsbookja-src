@@ -156,7 +156,7 @@
         rarian-sk-rebuild, and rarian-sk-update</seg>
         <seg>librarian.{so,a}</seg>
         <seg>/usr/include/rarian, /usr/share/help, /usr/share/librarian/manual,
-        /usr/share/librarian/Templates/C, and /usr/var/lib/rarian</seg>
+        /usr/share/librarian/Templates/C, and /var/lib/rarian</seg>
 @y
         <seg>rarian-example, rarian-sk-config, rarian-sk-extract,
         rarian-sk-gen-uuid, rarian-sk-get-cl, rarian-sk-get-content-list,
@@ -165,7 +165,7 @@
         rarian-sk-rebuild, rarian-sk-update</seg>
         <seg>librarian.{so,a}</seg>
         <seg>/usr/include/rarian, /usr/share/help, /usr/share/librarian/manual,
-        /usr/share/librarian/Templates/C, /usr/var/lib/rarian</seg>
+        /usr/share/librarian/Templates/C, /var/lib/rarian</seg>
 @z
 
 @x

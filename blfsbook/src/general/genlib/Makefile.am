@@ -32,13 +32,10 @@ CHANGE_FILES = \
 	libatasmart.ch \
 	libatomic_ops.ch \
 	libdaemon.ch \
-	libdbusmenuqt.ch \
 	libcroco.ch \
 	libesmtp.ch \
 	libffi.ch \
 	libgcrypt.ch \
-	libgee.ch \
-	libglade.ch \
 	libgpg-error.ch \
 	libgsf.ch \
 	libgusb.ch \
@@ -54,7 +51,6 @@ CHANGE_FILES = \
 	libusb-compat.ch \
 	libxml2.ch \
 	libxslt.ch \
-	libzeitgeist.ch \
 	lzo.ch \
 	mtdev.ch \
 	nspr.ch \
@@ -107,12 +103,9 @@ libatasmart.xml:           $(BOOKdir)/$@ $(srcdir)/libatasmart.ch
 libatomic_ops.xml:         $(BOOKdir)/$@ $(srcdir)/libatomic_ops.ch
 libcroco.xml:              $(BOOKdir)/$@ $(srcdir)/libcroco.ch
 libdaemon.xml:             $(BOOKdir)/$@ $(srcdir)/libdaemon.ch
-libdbusmenuqt.xml:         $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch
 libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
 libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
 libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
-libgee.xml:                $(BOOKdir)/$@ $(srcdir)/libgee.ch
-libglade.xml:              $(BOOKdir)/$@ $(srcdir)/libglade.ch
 libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
 libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch
 libgusb.xml:               $(BOOKdir)/$@ $(srcdir)/libgusb.ch
@@ -128,7 +121,6 @@ libusb.xml:                $(BOOKdir)/$@ $(srcdir)/libusb.ch
 libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
 libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
 libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
-libzeitgeist.xml:          $(BOOKdir)/$@ $(srcdir)/libzeitgeist.ch
 lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
 mtdev.xml:                 $(BOOKdir)/$@ $(srcdir)/mtdev.ch
 nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch
