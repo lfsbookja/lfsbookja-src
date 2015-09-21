@@ -87,12 +87,12 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required (Run-time Only)</bridgehead>
+    <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="expect"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required; (ランタイム利用時のみ)</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="expect"/>
     </para>

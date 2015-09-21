@@ -134,15 +134,17 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="cairo"/>,
-      <xref linkend="libjpeg"/>, and
-      <xref linkend="libpng"/>
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>, and
+      <xref linkend="openjpeg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="cairo"/>,
       <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>
+      <xref linkend="libpng"/>,
+      <xref linkend="openjpeg"/>
     </para>
 @z
 
@@ -151,10 +153,12 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="openjpeg"/>,
+      <xref linkend="openjpeg2"/>
+      (preference is for OpenJPEG1, due to regressions with OpenJPEG2),
       <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
       is needed for PDF support in <application>Okular</application>), and
       <xref linkend="qt5"/>
@@ -164,11 +168,13 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
+      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="openjpeg"/>,
-      <xref linkend="qt4"/> (ライブラリ <filename>libpoppler-qt4.so</filename> は <application>Okular</application> の PDF サポートにおいて必要となります),
+      <xref linkend="openjpeg2"/>
+      (preference is for OpenJPEG1, due to regressions with OpenJPEG2),
+      <xref linkend="qt4"/> (<filename>libpoppler-qt4.so</filename> ライブラリは <application>Okular</application>) の PDF サポートにおいて必要),
       <xref linkend="qt5"/>
     </para>
 @z
@@ -193,9 +199,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>LC_ALL=en_US.UTF-8 make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>LC_ALL=en_US.UTF-8 make check</command> を実行します。
 @z
 
 @x
@@ -205,10 +211,19 @@
 @z
 
 @x
-      If you downloaded the additional encoding data package, install it by
-      issuing the following commands:
+      To install the documentation, run the following commands as
+      <systemitem class="username">root</systemitem>:
 @y
-      追加のエンコーディングデータをダウンロードしている場合は、以下のコマンドを実行してインストールします。
+      ドキュメントをインストールするために  <systemitem class="username">root</systemitem> となって以下を実行します。
+@z
+
+@x
+      If you downloaded the additional encoding data package, install it by
+      issuing the following commands as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      追加のエンコーディングデータをダウンロードしている場合は、<systemitem
+      class="username">root</systemitem> となって以下のコマンドを実行してインストールします。
 @z
 
 @x
@@ -262,10 +277,8 @@
           libpoppler-qt5.so
         </seg>
         <seg>
-          /usr/include/poppler,
-          /usr/share/doc/poppler-&poppler-version;,
-          /usr/share/gtk-doc/html/poppler, and
-          /usr/share/poppler
+          /usr/{include,share/{gtk-doc/html,}}/poppler and
+          /usr/share/doc/poppler-&poppler-version;
         </seg>
 @y
         <seg>
@@ -280,10 +293,8 @@
           libpoppler-qt5.so
         </seg>
         <seg>
-          /usr/include/poppler,
-          /usr/share/doc/poppler-&poppler-version;,
-          /usr/share/gtk-doc/html/poppler,
-          /usr/share/poppler
+          /usr/{include,share/{gtk-doc/html,}}/poppler,
+          /usr/share/doc/poppler-&poppler-version;
         </seg>
 @z
 

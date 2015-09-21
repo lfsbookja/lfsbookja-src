@@ -110,18 +110,24 @@
     <para role="optional">
       <xref linkend="graphviz"/>,
       <xref linkend="gs"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="qt4"/> (for doxywizard) and
-      <xref linkend="texlive"/>
+      <xref linkend="libxml2"/>,
+      <xref linkend="llvm"/> (with clang),
+      <xref linkend="python2"/> or <xref linkend="python3"/>,
+      <xref linkend="qt4"/> (for doxywizard),
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>) and
+      <xref linkend="xapian"/> (for doxyindexer)
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="graphviz"/>,
       <xref linkend="gs"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="qt4"/> (doxywizard に必要),
-      <xref linkend="texlive"/>
+      <xref linkend="libxml2"/>,
+      <xref linkend="llvm"/> (clang 込み),
+      <xref linkend="python2"/> または <xref linkend="python3"/>,
+      <xref linkend="qt4"/> (doxywizard のため),
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
+      <xref linkend="xapian"/> (doxyindexer のため)
     </para>
 @z
 
@@ -145,9 +151,21 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make tests</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make tests</command> を実行します。
+@z
+
+@x
+      If you wish to generate the package documentation, you must have
+      <application>Python</application>, <application>TeX Live</application>
+      (for HTML docs) and <application>Ghostscript</application> (for PDF docs)
+      installed, then issue the following command:
+@y
+      If you wish to generate the package documentation, you must have
+      <application>Python</application>, <application>TeX Live</application>
+      (for HTML docs) and <application>Ghostscript</application> (for PDF docs)
+      installed, then issue the following command:
 @z
 
 @x
@@ -157,37 +175,49 @@
 @z
 
 @x
-      If you wish to generate and install the package documentation
-      (note that man pages have already been installed), you must have
-      <application>Python</application>, 
-      <application>TeX Live</application> (for HTML docs) and
-      <application>Ghostscript</application> (for PDF docs)
-      installed, then issue the following command as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      If you wish to generate and install the package documentation
-      (note that man pages have already been installed), you must have
-      <application>Python</application>, 
-      <application>TeX Live</application> (for HTML docs) and
-      <application>Ghostscript</application> (for PDF docs)
-      installed, then issue the following command as the
-      <systemitem class="username">root</systemitem> user:
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
 @z
 
 @x
-      <option>--with-doxywizard</option>: Use this parameter if
-      <application>Qt</application> is installed and you wish to
-      build the GUI front-end.
+      <command>sed -i ... CMakeLists.txt</command>: Fixes the directory where
+      the man pages are installed.
 @y
-      <option>--with-doxywizard</option>: Use this parameter if
-      <application>Qt</application> is installed and you wish to
-      build the GUI front-end.
+      <command>sed -i ... CMakeLists.txt</command>: Fixes the directory where
+      the man pages are installed.
+@z
+
+@x
+      <option>-Dbuild_wizard=ON</option>: Use this switch if
+      <application>Qt4</application> is installed and you wish to build the GUI
+      front-end.
+@y
+      <option>-Dbuild_wizard=ON</option>: Use this switch if
+      <application>Qt4</application> is installed and you wish to build the GUI
+      front-end.
+@z
+
+@x
+      <option>-Dbuild_search=ON</option>: Use this switch if
+      <application>xapian</application> is installed and you wish to build
+      external search tools (<command>doxysearch.cgi</command> and
+      <command>doxyindexer)</command>.
+@y
+      <option>-Dbuild_search=ON</option>: Use this switch if
+      <application>xapian</application> is installed and you wish to build
+      external search tools (<command>doxysearch.cgi</command> and
+      <command>doxyindexer)</command>.
+@z
+
+@x
+      <option>-Duse_libclang=ON</option>: Use this switch if
+      <application>llvm</application> with <application>clang</application> are
+      installed, to add support for libclang parsing.
+@y
+      <option>-Duse_libclang=ON</option>: Use this switch if
+      <application>llvm</application> with <application>clang</application> are
+      installed, to add support for libclang parsing.
 @z
 
 @x
@@ -234,7 +264,8 @@
 
 @x
         <seg>
-          doxygen and optionally, doxywizard
+          doxygen and optionally,
+          doxywizard, doxyindexer and doxysearch.cgi
         </seg>
         <seg>
           None
@@ -244,7 +275,7 @@
         </seg>
 @y
         <seg>
-          doxygen, 任意ビルドとして doxywizard
+          doxygen, 任意ビルドとして doxywizard, doxyindexer, doxysearch.cgi
         </seg>
         <seg>
           &None;

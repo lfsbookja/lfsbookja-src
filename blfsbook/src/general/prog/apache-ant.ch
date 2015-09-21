@@ -21,8 +21,8 @@
 
 @x
     <para>The <application>Apache Ant</application> package is a
-    <application>Java</application>-based build tool. In theory, it is kind of
-    like <command>make</command>, but without <command>make</command>'s
+    <application>Java</application>-based build tool. In theory, it is 
+    like the <command>make</command> command, but without <command>make</command>'s
     wrinkles. <application>Ant</application> is different. Instead of a model
     that is extended with shell-based commands, <application>Ant</application>
     is extended using <application>Java</application> classes. Instead of
@@ -91,24 +91,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      A JDK (<xref linkend="java-bin"/> or <xref linkend="openjdk"/>) 
+      A JDK (<xref linkend="java-bin"/> or <xref linkend="openjdk"/>) and
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      JDK (<xref linkend="java-bin"/> または <xref linkend="openjdk"/>) 
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="junit"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="junit"/>
+      JDK (<xref linkend="java-bin"/> または <xref linkend="openjdk"/>).
+      <xref linkend="glib2"/>
     </para>
 @z
 
@@ -141,24 +131,12 @@
 @z
 
 @x
-    <para>If it is not possible to install the recommended
-    <application>JUnit</application> package, install
-    <application>Apache Ant</application> by removing the reference to the test
-    instructions (note that the tests will not be performed):</para>
-@y
-    <para>
-    推奨パッケージである <application>JUnit</application> がインストールできない場合は <application>Apache
-    Ant</application> のインストールにあたって、以下のようにテスト手順への参照を削除してください。
-    (こうすることでテストが実施されなくなります。)
-    </para>
-@z
-
-@x
-    <para>otherwise copy the <application>junit</application> jar file to the 
+    <para>Unpack and copy the <application>junit</application> and
+    <application>hamcrest</application> jar files to the
     local directory tree.</para>
 @y
     <para>
-    あるいは <application>junit</application> jar ファイルをローカルディレクトリにコピーしても構いません。
+    <application>junit</application>, <application>hamcrest</application> jar ファイルを伸張 (解凍) してローカルディレクトリに置きます。
     </para>
 @z
 
@@ -183,12 +161,12 @@
 @z
 
 @x
-  <note><para>Make sure the JAVA_HOME environment variable is set for the
-  <systemitem class="username">root</systemitem> user.</para></note>
+    <note><para>Make sure the JAVA_HOME environment variable is set for the
+    <systemitem class="username">root</systemitem> user.</para></note>
 @y
-  <note><para>
-  <systemitem class="username">root</systemitem> ユーザーにおいて、環境変数 JAVA_HOME が設定されていることを確認してください。
-  </para></note>
+    <note><para>
+    <systemitem class="username">root</systemitem> ユーザーにおいて、環境変数 JAVA_HOME が設定されていることを確認してください。
+    </para></note>
 @z
 
 @x
@@ -198,24 +176,13 @@
 @z
 
 @x
-    <para><command>sed -i 's/jars...</command>: If the
-    <application>JUnit</application> package is not installed, the regression
-    tests cannot be performed.</para>
-@y
-    <para><command>sed -i 's/jars...</command>:
-    <application>JUnit</application> パッケージがインストールされていなければ、縮退テスト (regression tests) は実施されません。
-    </para>
-@z
-
-@x
-    <para><command>cp -v
-    /usr/share/java/junit-&junit-version;.jar ...</command>:
-    This command copies the JUnit jar file into the directory where Apache Ant
-    will look for it.</para>
+    <para><command>cp -v ... lib/optional</command>:
+    This command copies the JUnit and hamcrest jar files into the directory where
+    Apache Ant will look for them.</para>
 @y
     <para><command>cp -v
     /usr/share/java/junit-&junit-version;.jar ...</command>:
-    このコマンドは JUnit jar ファイルを Apache Ant が見つけ出せるディレクトリにコピーします。
+    このコマンドは JUnit jar ファイル、hamcrest jar ファイルを Apache Ant が見つけ出せるディレクトリにコピーします。
     </para>
 @z
 
@@ -271,14 +238,14 @@
 
 @x
       <para>Some packages will require <command>ant</command> to be in the
-      search path and the <envar>$ANT_HOME</envar> environment variable
-      defined. Satisfy these requirements by adding the following lines to
-      <filename>/etc/profile</filename> or to individual user's
-      <filename>~/.profile</filename> or <filename>~/.bashrc</filename> files:</para>
+      search path and the <envar>ANT_HOME</envar> environment variable
+      defined. Satisfy these requirements by issuing, as the <systemitem
+      class="username">root</systemitem> user:</para>
 @y
       <para>
-      他のパッケージの中には、<command>ant</command> のインストール場所を、実行パスと環境変数 <envar>$ANT_HOME</envar> の定義を参照するものがあります。
-      そこで <filename>/etc/profile</filename> か、各ユーザーごとの <filename>~/.profile</filename> ファイル、あるいは <filename>~/.bashrc</filename> ファイルに、以下を追加します。
+      他のパッケージの中には、<command>ant</command> のインストール場所を、実行パスと環境変数 <envar>ANT_HOME</envar> の定義を参照するものがあります。
+      そこでこの状況への対処を行うため <systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行します。
       </para>
 @z
 

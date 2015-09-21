@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "321 MB (559 MB with checks)">
-  <!ENTITY gdb-time          "1.8 SBU (6.3 SBU with checks)">
+  <!ENTITY gdb-buildsize     "421 MB (additional 170 MB for tests)">
+  <!ENTITY gdb-time          "2.4 SBU (add up to 7.0 SBU for tests)">
 @y
-  <!ENTITY gdb-buildsize     "321 MB (テスト実施時は 559 MB)">
-  <!ENTITY gdb-time          "1.8 SBU (テスト実施時は 6.3 SBU)">
+  <!ENTITY gdb-buildsize     "421 MB (テスト実施時はさらに 170 MB)">
+  <!ENTITY gdb-time          "2.4 SBU (テスト実施時は 7.0 SBU 以上)">
 @z
 
 @x
@@ -91,14 +91,24 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (for tests) and
-      <xref linkend="python2"/>
+      <xref linkend="dejagnu"/> (for tests),
+      <xref linkend="doxygen"/>,
+      <xref linkend="guile"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="valgrind"/>, and
+      <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
+      (run-time dependency, also used in a few tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (テスト時に利用),
-      <xref linkend="python2"/>
+      <xref linkend="dejagnu"/> (テスト時),
+      <xref linkend="doxygen"/>,
+      <xref linkend="guile"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
+      (ランタイム時での依存、テスト内にて利用するものもあり)
     </para>
 @z
 
@@ -122,9 +132,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>.
+      To test the results, issue:
 @y
-      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      ビルド結果をテストする場合は以下を実行します。
 @z
 
 @x
@@ -157,8 +167,7 @@
           libinproctrace.so
         </seg>
         <seg>
-          /usr/include/gdb and
-          /usr/share/gdb
+          /usr/{include,share}/gdb and /usr/share/doc/gdb-&gdb-version;
         </seg>
 @y
         <seg>
@@ -168,8 +177,7 @@
           libinproctrace.so
         </seg>
         <seg>
-          /usr/include/gdb,
-          /usr/share/gdb
+          /usr/{include,share}/gdb, /usr/share/doc/gdb-&gdb-version;
         </seg>
 @z
 

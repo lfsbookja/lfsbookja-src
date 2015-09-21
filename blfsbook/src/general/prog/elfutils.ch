@@ -20,8 +20,9 @@
 @z
 
 @x
-      The <application>elfutils</application> package contains set of utilities
-      and libraries for handling ELF (Executable and Linkable Format) files.
+      The <application>elfutils</application> package contains a set of 
+      utilities and libraries for handling ELF (Executable and Linkable Format)
+      files.
 @y
       <application>elfutils</application> パッケージは ELF (Executable and Linkable Format) ファイルを取り扱うためのユーティリティーツールおよびライブラリを提供します。
 @z
@@ -88,9 +89,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+       To test the results, issue: <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+       ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -106,9 +107,9 @@
 @z
 
 @x
-      <parameter>--program-prefix="eu-"</parameter>: This switch renames installed
-      programs to avoid conflict with <application>Binutils</application> programs
-      installed in LFS.
+      <parameter>--program-prefix="eu-"</parameter>: This switch renames
+      installed programs to avoid conflict with
+      <application>Binutils</application> programs installed in LFS.
 @y
       <parameter>--program-prefix="eu-"</parameter>:
       このスイッチは、インストールするプログラムの名称が、LFS にてインストールした <application>Binutils</application> のプログラムと重なるため、名称変更を行うものです。
@@ -137,7 +138,8 @@
           eu-size, eu-stack, eu-strings, eu-strip, and eu-unstrip
         </seg>
         <seg>
-          libasm.{a,so}, libdw.{a,so}, libebl.a, and libelf.{a,so}
+          libasm.{a,so}, libdw.{a,so}, libebl.a, libelf.{a,so}, and
+          some for different architectures under /usr/lib/elfutils
         </seg>
         <seg>
           /usr/include/elfutils and
@@ -150,7 +152,8 @@
           eu-size, eu-stack, eu-strings, eu-strip, eu-unstrip
         </seg>
         <seg>
-          libasm.{a,so}, libdw.{a,so}, libebl.a, libelf.{a,so}
+          libasm.{a,so}, libdw.{a,so}, libebl.a, libelf.{a,so},
+          /usr/lib/elfutils 配下にアーキテクチャー別のライブラリ
         </seg>
         <seg>
           /usr/include/elfutils,

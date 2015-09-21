@@ -13,17 +13,13 @@ CHANGE_FILES_pythonmodules = \
 	pygobject2.ch    \
 	pygobject3.ch    \
 	pygtk.ch         \
-	pyatspi2.ch      \
 	pyxdg.ch
 
 CHANGE_FILES = \
 	${CHANGE_FILES_pythonmodules} \
 	apache-ant.ch     \
-	bazaar.ch         \
 	check.ch          \
 	cmake.ch          \
-	cvs.ch            \
-	cvsserver.ch      \
 	dejagnu.ch        \
 	doxygen.ch        \
 	dummy-java.ch     \
@@ -80,15 +76,11 @@ pycairo.xml:       $(BOOKdir)/$@ $(srcdir)/pycairo.ch
 pygobject2.xml:    $(BOOKdir)/$@ $(srcdir)/pygobject2.ch
 pygobject3.xml:    $(BOOKdir)/$@ $(srcdir)/pygobject3.ch
 pygtk.xml:         $(BOOKdir)/$@ $(srcdir)/pygtk.ch
-pyatspi2.xml:      $(BOOKdir)/$@ $(srcdir)/pyatspi2.ch
 pyxdg.xml:         $(BOOKdir)/$@ $(srcdir)/pyxdg.ch
 
 apache-ant.xml:     $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
-bazaar.xml:         $(BOOKdir)/$@ $(srcdir)/bazaar.ch
 check.xml:          $(BOOKdir)/$@ $(srcdir)/check.ch
 cmake.xml:          $(BOOKdir)/$@ $(srcdir)/cmake.ch
-cvs.xml:            $(BOOKdir)/$@ $(srcdir)/cvs.ch
-cvsserver.xml:      $(BOOKdir)/$@ $(srcdir)/cvsserver.ch
 dejagnu.xml:        $(BOOKdir)/$@ $(srcdir)/dejagnu.ch
 doxygen.xml:        $(BOOKdir)/$@ $(srcdir)/doxygen.ch
 dummy-java.xml:     $(BOOKdir)/$@ $(srcdir)/dummy-java.ch

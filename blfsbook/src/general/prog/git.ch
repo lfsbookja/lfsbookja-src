@@ -14,12 +14,11 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "190 MB (additional 15 MB with downloaded docs and man pages, or 24 MB building docs and man pages)">
-  <!ENTITY git-time          "0.7 SBU (additional 4.7 SBU for tests and 2.6 SBU
-                              for docs and man creation)">
+  <!ENTITY git-buildsize     "343 MB (357 MB, with tests and downloaded documents)">
+  <!ENTITY git-time          "0.7 SBU (4.8 SBU, using -j8, with tests and downloaded documents)">
 @y
-  <!ENTITY git-buildsize     "190 MB (additional 15 MB with downloaded docs and man pages, or 24 MB building docs and man pages)">
-  <!ENTITY git-time          "0.7 SBU (さらにテスト実行時は 4.7 SBU、ドキュメントおよび man ページ生成時は 2.6 SBU)">
+  <!ENTITY git-buildsize     "343 MB (テスト込みドキュメント込みで 357 MB)">
+  <!ENTITY git-time          "0.7 SBU (テスト込みドキュメント込みで、-j8 利用時は 4.8 SBU)">
 @z
 
 @x
@@ -33,24 +32,26 @@
       version control system designed to handle everything from small to very
       large projects with speed and efficiency. Every
       <application>Git</application> clone is a full-fledged repository with
-      complete history and full revision tracking capabilities, not dependent on
-      network access or a central server. Branching and merging are fast and easy
-      to do. <application>Git</application> is used for version control of files,
-      much like tools such as <application>Mercurial</application>,
+      complete history and full revision tracking capabilities, not dependent
+      on network access or a central server. Branching and merging are fast and
+      easy to do. <application>Git</application> is used for version control of
+      files, much like tools such as <xref linkend="mercurial"/>,
       <application>Bazaar</application>, <xref linkend="subversion"/>,
-      <xref linkend="cvs"/>, <application>Perforce</application>, and
+      <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
+      <application>Perforce</application>, and
       <application>Team Foundation Server</application>.
 @y
       <application>Git</application> is a free and open source, distributed
       version control system designed to handle everything from small to very
       large projects with speed and efficiency. Every
       <application>Git</application> clone is a full-fledged repository with
-      complete history and full revision tracking capabilities, not dependent on
-      network access or a central server. Branching and merging are fast and easy
-      to do. <application>Git</application> is used for version control of files,
-      much like tools such as <application>Mercurial</application>,
+      complete history and full revision tracking capabilities, not dependent
+      on network access or a central server. Branching and merging are fast and
+      easy to do. <application>Git</application> is used for version control of
+      files, much like tools such as <xref linkend="mercurial"/>,
       <application>Bazaar</application>, <xref linkend="subversion"/>,
-      <xref linkend="cvs"/>, <application>Perforce</application>, and
+      <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
+      <application>Perforce</application>, and
       <application>Team Foundation Server</application>.
 @z
 
@@ -105,21 +106,25 @@
 @x
           <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
           &git-root;/git-manpages-&git-version;.tar.xz</ulink>
-          (only needed if you've not installed asciidoc and xmlto)
+          (if you prefer the original, not needed if you've installed asciidoc
+          and xmlto and prefer to build them).
 @y
           <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
           &git-root;/git-manpages-&git-version;.tar.xz</ulink>
-          (only needed if you've not installed asciidoc and xmlto)
+          (if you prefer the original, not needed if you've installed asciidoc
+          and xmlto and prefer to build them).
 @z
 
 @x
           <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
           &git-root;/git-htmldocs-&git-version;.tar.xz</ulink>
-          and other docs (only needed if you've not installed asciidoc).
+          and other docs (if you prefer the original, not needed if you've
+          installed asciidoc and prefer to build them).
 @y
           <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
           &git-root;/git-htmldocs-&git-version;.tar.xz</ulink>
-          and other docs (only needed if you've not installed asciidoc).
+          and other docs (if you prefer the original, not needed if you've
+          installed asciidoc and prefer to build them).
 @z
 
 @x
@@ -133,15 +138,13 @@
     <para role="recommended">
       <xref linkend="curl"/> (needed to use <application>Git</application> over http,
       https, ftp or ftps),
-      <xref linkend="expat"/>,
-      <xref linkend="openssl"/> and
+      <xref linkend="openssl"/>, and
       <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/> (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要),
-      <xref linkend="expat"/>,
       <xref linkend="openssl"/>,
       <xref linkend="python2"/>
     </para>
@@ -151,30 +154,34 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="pcre"/>,
-      <xref linkend="subversion"/> with Perl bindings (for <command>git svn</command>), and
+      <xref linkend="subversion"/> with Perl bindings (for <command>git svn</command>),
       <xref linkend="tk"/> (gitk, a simple <application>Git</application>
-      repository viewer, uses <application>Tk</application> at runtime)
+      repository viewer, uses <application>Tk</application> at runtime), and
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="pcre"/>,
-      Perl バインディングがビルドされた <xref linkend="subversion"/> (<command>git svn</command> にて必要),
-      <xref linkend="tk"/> (簡易な <application>Git</application>リポジトリビューワー gitk が実行時に <application>Tk</application> を必要とします)
+      <xref linkend="subversion"/> Perl バインディング込み (<command>git svn</command> コマンドのため),
+      <xref linkend="tk"/> (簡易な <application>Git</application> リポジトリビューワー gitk が実行時に <application>Tk</application> を必要とする),
+      <xref linkend="valgrind"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (to create the man pages and html docs)</bridgehead>
     <para>
-      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
-      <xref linkend="xmlto"/>
+      <xref linkend="xmlto"/> and
+      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> or
+      <ulink url="http://asciidoctor.org/">AsciiDoctor</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (man ページと html ドキュメントを生成する場合)</bridgehead>
     <para>
-      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
-      <xref linkend="xmlto"/>
+      <xref linkend="xmlto"/>,
+      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> または
+      <ulink url="http://asciidoctor.org/">AsciiDoctor</ulink>
     </para>
 @z
 
@@ -217,8 +224,10 @@
 @z
 
 @x
-      To check the results, issue: <command>make test</command>.
+      The test suite can be run in parallel mode. To run the test suite, issue:
+      <command>make test</command>.
 @y
+      テストスイートは並行モードでの実行も可能です。
       ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
@@ -230,23 +239,21 @@
 @z
 
 @x
-      If you created the man pages, install them as the
+      Install the man pages as
       <systemitem class="username">root</systemitem> user:
 @y
-      man ページを生成した場合は、<systemitem
-      class="username">root</systemitem> ユーザーになって以下のコマンドを実行してインストールします。
+      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し man ページをインストールします。
 @z
 
 @x
-      If you created the html docs, install them as the
+      Install the html docs as
       <systemitem class="username">root</systemitem> user:
 @y
-      html ドキュメントを生成した場合は、<systemitem
-      class="username">root</systemitem>  ユーザーになって以下のコマンドを実行してインストールします。
+      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し html ドキュメントをインストールします。
 @z
 
 @x
-      Alternatively, If you downloaded the man pages untar them as the
+      If you downloaded the man pages untar them as the
       <systemitem class="username">root</systemitem> user:
 @y
       man ページをダウンロードしている場合は、<systemitem
@@ -354,40 +361,28 @@
 @x
         <seg>
           git, git-receive-pack and git-upload-archive (hardlinked to each other),
-          git-shell, git-cvsserver, git-upload-pack, and gitk
+          git-cvsserver, git-shell, git-upload-pack, and gitk
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          /usr/lib/git-core,
-          /usr/share/doc/git-&git-version;,
-          /usr/share/git-core,
-          /usr/share/git-gui,
-          /usr/share/gitk,
-          /usr/share/gitweb,
-          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;/Git and
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Git
-       
+          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;{,&lt;arch-linux&gt;/auto}/Git,
+          /usr/libexec/git-core and
+          /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>
 @y
         <seg>
-          git, git-receive-pack and git-upload-archive (hardlinked to each other),
-          git-shell, git-cvsserver, git-upload-pack, gitk
+          git, git-receive-pack と git-upload-archive (互いにハードリンクされている),
+          git-cvsserver, git-shell, git-upload-pack, gitk
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
-          /usr/lib/git-core,
-          /usr/share/doc/git-&git-version;,
-          /usr/share/git-core,
-          /usr/share/git-gui,
-          /usr/share/gitk,
-          /usr/share/gitweb,
-          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;/Git,
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Git
-       
+          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;{,&lt;arch-linux&gt;/auto}/Git,
+          /usr/libexec/git-core,
+          /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>
 @z
 

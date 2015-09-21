@@ -91,11 +91,9 @@
 @z
 
 @x
-      To test the installation, issue <command>make check</command>. Some tests
-      may fail for unknown reasons.
+      To test the installation, issue <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストがいくつか失敗しますが理由は不明です。
 @z
 
 @x

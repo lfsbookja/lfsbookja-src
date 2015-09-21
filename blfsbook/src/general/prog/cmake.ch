@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "222 MB (additional 175 MB for tests)">
-  <!ENTITY cmake-time          "1.5 SBU (additional 3.5 SBU for tests)">
+  <!ENTITY cmake-buildsize     "669 MB (with test suite and Qt5 <command>cmake-gui</command>)">
+  <!ENTITY cmake-time          "3.8 SBU, using parallelism=4 (with test suite and Qt5 <command>cmake-gui</command>)">
 @y
-  <!ENTITY cmake-buildsize     "222 MB (テスト実行時はさらに 175 MB)">
-  <!ENTITY cmake-time          "1.5 SBU (テスト実行時はさらに 3.5 SBU)">
+  <!ENTITY cmake-buildsize     "669 MB (テスト実行と Qt5 <command>cmake-gui</command> コマンドのビルドを含む)">
+  <!ENTITY cmake-time          "3.8 SBU, parallelism=4 指定時 (テスト実行と Qt5 <command>cmake-gui</command> コマンドのビルドを含む)">
 @z
 
 @x
@@ -84,18 +84,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">CMake Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;CMake&Dependencies2;</bridgehead>
@@ -104,30 +92,32 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="curl"/>,
-      <xref linkend="libarchive"/> and
-      <xref linkend="expat"/>
+      <xref linkend="curl"/> and
+      <xref linkend="libarchive"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="expat"/>
+      <xref linkend="libarchive"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="subversion"/> (for testing) and
-      <xref linkend="qt4"/> (for the Qt-based GUI)
+      <xref linkend="qt4"/> or <xref linkend="qt5"/> (for the Qt-based GUI),
+      <xref linkend="subversion"/> (for testing), and
+      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
+      (for building documents)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="qt4"/> or <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
       <xref linkend="subversion"/> (テスト時),
-      <xref linkend="qt4"/> (Qt ベースの GUI 構築に必要)
+      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
+      (ドキュメント構築に必要)
     </para>
 @z
 
@@ -151,14 +141,18 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k test</command>. Some
-      tests may fail for unknown reasons. Other tests depend on the
-      availability of remote sites, and may fail if those sites are
-      not available.
+      To test the results, issue: <command>bin/ctest
+      -j<replaceable>&lt;N&gt;</replaceable> -O
+      ../cmake-&cmake-version;-test.log</command>, where
+      <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
+      number of threads of your processor, inclusive. Current results: 99% tests
+      passed, 1 test failed out of 433.
 @y
-      ビルド結果をテストする場合は <command>make -k test</command> を実行します。
-      テストの中には失敗するものがありますが理由は不明です。
-      また特定サイトに依存テストが存在するため、そのサイトへのアクセスができない場合には、そのテストも失敗します。
+      ビルド結果をテストする場合は <command>bin/ctest
+      -j<replaceable>&lt;N&gt;</replaceable> -O
+      ../cmake-&cmake-version;-test.log</command> を実行します。
+      <replaceable>&lt;N&gt;</replaceable> は 1以上、プロセッサのスレッド数までの整数値を指定します。
+      現状においてテストの433個、99% は成功します。そして 1つのテストが失敗します。
 @z
 
 @x

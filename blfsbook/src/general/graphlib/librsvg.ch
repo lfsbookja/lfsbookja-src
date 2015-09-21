@@ -94,25 +94,15 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/> (For the <command>rsvg-view-3</command>)
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/> (For the <command>rsvg-view-3</command>), and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/> (For the <command>rsvg-view-3</command>)
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/> and
-      <xref linkend="vala"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
-    <para role="optional">
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/> (<command>rsvg-view-3</command> コマンドのため),
       <xref linkend="vala"/>
     </para>
 @z
@@ -221,9 +211,9 @@
 @z
 
 @x rsvg-convert
-            is used to covert SVG images into PNG, JPEG and ICO raster images.
+            is used to convert images into PNG, PDF, PS, SVG and other formats.
 @y
-            is used to covert SVG images into PNG, JPEG and ICO raster images.
+            is used to convert images into PNG, PDF, PS, SVG and other formats.
 @z
 
 @x rsvg-view-3

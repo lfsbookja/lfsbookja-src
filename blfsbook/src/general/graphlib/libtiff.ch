@@ -81,15 +81,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libjpeg"/>,
-      <xref linkend="freeglut"/> (required for <command>tiffgt</command>), and
+      <xref linkend="freeglut"/> (required for <command>tiffgt</command>),
+      <xref linkend="libjpeg"/> and
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libjpeg"/>,
       <xref linkend="freeglut"/> (<command>tiffgt</command> に必要),
+      <xref linkend="libjpeg"/>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
     </para>
 @z
@@ -133,14 +133,6 @@
 @z
 
 @x
-      <command>sed -i ...</command>: This command fixes a bug which is causing
-      <command>tiffgt</command> to open blank windows in some cases.
-@y
-      <command>sed -i ...</command>:
-      本コマンドは、特定条件下にて <command>tiffgt</command> が空のウィンドウを開いてしまうバグを修正します。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -160,7 +152,7 @@
         <seg>
           bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
           raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps,
-          tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffgt
+          tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffgt,
           tiffinfo, tiffmedian, tiffset and tiffsplit
         </seg>
         <seg>
@@ -173,7 +165,7 @@
         <seg>
           bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
           raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps,
-          tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffgt
+          tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffgt,
           tiffinfo, tiffmedian, tiffset, tiffsplit
         </seg>
         <seg>
