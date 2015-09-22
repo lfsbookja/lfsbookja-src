@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY at-time "less than 0.1 SBU">
+  <!ENTITY at-time          "less than 0.1 SBU">
 @y
-  <!ENTITY at-time "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY at-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -87,14 +87,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      An MTA such as <xref linkend="postfix"/>, 
-      <xref linkend="sendmail"/>, or 
-      <xref linkend="exim"/>
+      An <xref linkend="server-mail"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      以下のような MTA のいずれか： <xref linkend="postfix"/>, <xref linkend="sendmail"/>, <xref linkend="exim"/>
+      An <xref linkend="server-mail"/>
     </para>
 @z
 
@@ -215,13 +213,19 @@
 @z
 
 @x
-        <seg>at, atd, atrun, and batch</seg>
+        <seg>at, atd, atq (symlink), atrm (symlink), atrun, and batch</seg>
         <seg>None</seg>
-        <seg>/var/spool/{atjobs,atspool}</seg>
+        <seg>
+          /var/spool/{atjobs,atspool} and
+          /usr/share/doc/at-&at-version;
+        </seg>
 @y
-        <seg>at, atd, atrun, batch</seg>
+        <seg>at, atd, atq (シンボリックリンク), atrm (シンボリックリンク), atrun, batch</seg>
         <seg>&None;</seg>
-        <seg>/var/spool/{atjobs,atspool}</seg>
+        <seg>
+          /var/spool/{atjobs,atspool},
+          /usr/share/doc/at-&at-version;
+        </seg>
 @z
 
 @x

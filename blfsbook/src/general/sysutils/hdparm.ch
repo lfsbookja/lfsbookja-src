@@ -26,7 +26,7 @@
 @z
 
 @x
-      The <application>Hdparm</application> package contains an utility that
+      The <application>Hdparm</application> package contains a utility that
       is useful for controlling ATA/IDE controllers and hard drives both to
       increase performance and sometimes to increase stability.
 @y

@@ -31,7 +31,6 @@ CHANGE_FILES = \
 	strigi.ch        \
 	sysstat.ch       \
 	sysutils.ch      \
-	udev-extras.ch   \
 	udisks.ch        \
 	udisks2.ch       \
 	unrar.ch         \
@@ -78,7 +77,6 @@ sg3_utils.xml:     $(BOOKdir)/$@ $(srcdir)/sg3_utils.ch
 strigi.xml:        $(BOOKdir)/$@ $(srcdir)/strigi.ch
 sysstat.xml:       $(BOOKdir)/$@ $(srcdir)/sysstat.ch
 sysutils.xml:      $(BOOKdir)/$@ $(srcdir)/sysutils.ch
-udev-extras.xml:   $(BOOKdir)/$@ $(srcdir)/udev-extras.ch
 udisks.xml:        $(BOOKdir)/$@ $(srcdir)/udisks.ch
 udisks2.xml:       $(BOOKdir)/$@ $(srcdir)/udisks2.ch
 unrar.xml:         $(BOOKdir)/$@ $(srcdir)/unrar.ch

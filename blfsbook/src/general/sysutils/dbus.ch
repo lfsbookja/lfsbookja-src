@@ -20,25 +20,25 @@
 @z
 
 @x
-      <application>D-Bus</application> is a message bus system, a simple
-      way for applications to talk to one another.
-      <application>D-Bus</application> supplies both a system daemon (for events
-      such as <quote>new hardware device added</quote> or <quote>printer queue
-      changed</quote>) and a per-user-login-session daemon (for general IPC needs
-      among user applications). Also, the message bus is built on top of a
-      general one-to-one message passing framework, which can be used by any two
-      applications to communicate directly (without going through the message bus
-      daemon).
+      <application>D-Bus</application> is a message bus system, a simple way
+      for applications to talk to one another.
+      <application>D-Bus</application> supplies both a system daemon (for
+      events such as <quote>new hardware device added</quote> or <quote>printer
+      queue changed</quote>) and a per-user-login-session daemon (for general
+      IPC needs among user applications). Also, the message bus is built on top
+      of a general one-to-one message passing framework, which can be used by
+      any two applications to communicate directly (without going through the
+      message bus daemon).
 @y
-      <application>D-Bus</application> is a message bus system, a simple
-      way for applications to talk to one another.
-      <application>D-Bus</application> supplies both a system daemon (for events
-      such as <quote>new hardware device added</quote> or <quote>printer queue
-      changed</quote>) and a per-user-login-session daemon (for general IPC needs
-      among user applications). Also, the message bus is built on top of a
-      general one-to-one message passing framework, which can be used by any two
-      applications to communicate directly (without going through the message bus
-      daemon).
+      <application>D-Bus</application> is a message bus system, a simple way
+      for applications to talk to one another.
+      <application>D-Bus</application> supplies both a system daemon (for
+      events such as <quote>new hardware device added</quote> or <quote>printer
+      queue changed</quote>) and a per-user-login-session daemon (for general
+      IPC needs among user applications). Also, the message bus is built on top
+      of a general one-to-one message passing framework, which can be used by
+      any two applications to communicate directly (without going through the
+      message bus daemon).
 @z
 
 @x
@@ -104,43 +104,46 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="xorg7-lib"/>
-      (for <command>dbus-launch</command> program)
+      <xref linkend="xorg7-lib"/> (for <command>dbus-launch</command> program)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="xorg7-lib"/>
-      (<command>dbus-launch</command> プログラムのため)
+      <xref linkend="xorg7-lib"/> (<command>dbus-launch</command> プログラムのため)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus-glib"/> (to run tests - it may be necessary to
-      reinstall it, after upgrading this package),
-      <xref linkend="python2"/> (to run tests),
-      <xref linkend="dbus-python"/> (to run tests), and
-      <xref linkend="doxygen"/> (to generate the API documentation)
+      For the tests:
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="dbus-python"/>,
+      <xref linkend="pygobject2"/>, and
+      <xref linkend="valgrind"/>;
+
+      for documentation:
+      <xref linkend="doxygen"/>,
+      <xref linkend="xmlto"/>,
+      <ulink url="https://pypi.python.org/pypi/mallard-ducktype">Ducktype</ulink>,
+      and
+      <ulink url="http://ftp.gnome.org/pub/gnome/sources/yelp-tools/">Yelp Tools</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dbus-glib"/> (テスト実行のため。このパッケージ導入後に本パッケージを再インストールする必要があります。),
-      <xref linkend="python2"/> (テスト実行のため),
-      <xref linkend="dbus-python"/> (テスト実行のため),
-      <xref linkend="doxygen"/> (API ドキュメント生成のため)
-    </para>
-@z
+      テストのために:
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="dbus-python"/>,
+      <xref linkend="pygobject2"/>,
+      <xref linkend="valgrind"/>;
 
-@x
-      Note that the <command>configure</command> script will look for
-      <xref linkend="xmlto"/> but it does nothing as the XML/HTML documentation is
-      already shipped in the source tree.
-@y
-      <command>configure</command> スクリプトは <xref
-      linkend="xmlto"/> を探すものになっていますが、特に何もするわけでなく、XML/HTML ドキュメントがソースツリー内にあるものが用いられます。
+      ドキュメント生成のために:
+      <xref linkend="doxygen"/>,
+      <xref linkend="xmlto"/>,
+      <ulink url="https://pypi.python.org/pypi/mallard-ducktype">Ducktype</ulink>,
+      <ulink url="http://ftp.gnome.org/pub/gnome/sources/yelp-tools/">Yelp Tools</ulink>
+    </para>
 @z
 
 @x
@@ -156,18 +159,20 @@
 @z
 
 @x
-      As the <systemitem class="username">root</systemitem> user, create a
+      If they do not already exist,
+      as the <systemitem class="username">root</systemitem> user, create a
       system user and group to handle the system message bus activity:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって、システムユーザーとグループを生成します。
+      以下のシステムユーザーとグループがまだ存在していない場合は <systemitem
+      class="username">root</systemitem> ユーザーになって生成します。
       これはシステムメッセージバスの処理を取り扱うためです。
 @z
 
 @x
       Install <application>D-Bus</application> by running the following
-      commands (you may wish to review the output from
-      <command>./configure --help</command> first and add any desired parameters
-      to the <command>configure</command> command shown below):
+      commands (you may wish to review the output from <command>./configure
+      --help</command> first and add any desired parameters to the
+      <command>configure</command> command shown below):
 @y
       以下のコマンドを実行して <application>D-Bus</application> をビルドします。
       (<command>configure</command> コマンドに対しては、以下に示すパラメーター以外のものも必要になるかもしれません。
@@ -203,27 +208,31 @@
 @z
 
 @x
-      The dbus tests cannot be run until after <xref linkend="dbus-glib"/>
-      has been installed.  If you want to run only the unit tests, replace,
-      below, <parameter>--enable-tests</parameter> by
-      <parameter>--enable-embedded-tests</parameter>, otherwise,
-      <xref linkend="dbus-python"/> has to be installed, before.
-      The tests require passing additional parameters to
-      <command>configure</command> and exposing additional functionality in
-      the binaries. These interfaces are not intended to be used in a
-      production build of <application>D-Bus</application>.  If you would
-      like to run the tests, issue the following commands:
+      The dbus tests cannot be run until after <xref linkend="dbus-glib"/> has
+      been installed.  They must be run as an unprivileged user from a local
+      session with bus address. Tests fail through ssh. If you want to run only
+      the unit tests, replace, below, <parameter>--enable-tests</parameter> by
+      <parameter>--enable-embedded-tests</parameter>, otherwise, <xref
+      linkend="dbus-python"/> has to be installed, before.  The tests require
+      passing additional parameters to <command>configure</command> and
+      exposing additional functionality in the binaries. These interfaces are
+      not intended to be used in a production build of
+      <application>D-Bus</application>.  If you would like to run the tests,
+      issue the following commands (for the tests, you don't need to build the
+      docs):
 @y
-      The dbus tests cannot be run until after <xref linkend="dbus-glib"/>
-      has been installed.  If you want to run only the unit tests, replace,
-      below, <parameter>--enable-tests</parameter> by
-      <parameter>--enable-embedded-tests</parameter>, otherwise,
-      <xref linkend="dbus-python"/> has to be installed, before.
-      The tests require passing additional parameters to
-      <command>configure</command> and exposing additional functionality in
-      the binaries. These interfaces are not intended to be used in a
-      production build of <application>D-Bus</application>.  If you would
-      like to run the tests, issue the following commands:
+      The dbus tests cannot be run until after <xref linkend="dbus-glib"/> has
+      been installed.  They must be run as an unprivileged user from a local
+      session with bus address. Tests fail through ssh. If you want to run only
+      the unit tests, replace, below, <parameter>--enable-tests</parameter> by
+      <parameter>--enable-embedded-tests</parameter>, otherwise, <xref
+      linkend="dbus-python"/> has to be installed, before.  The tests require
+      passing additional parameters to <command>configure</command> and
+      exposing additional functionality in the binaries. These interfaces are
+      not intended to be used in a production build of
+      <application>D-Bus</application>.  If you would like to run the tests,
+      issue the following commands (for the tests, you don't need to build the
+      docs):
 @z
 
 @x
@@ -235,15 +244,13 @@
 @z
 
 @x
-      Note there has been a report that the tests may fail if running
-      inside a Midnight Commander shell.
-      You may get out-of-memory error messages when running the tests. 
-      These are normal and can be safely ignored.
+      There has been a report that the tests may fail if running inside a
+      Midnight Commander shell.  You may get out-of-memory error messages when
+      running the tests.  These are normal and can be safely ignored.
 @y
-      Note there has been a report that the tests may fail if running
-      inside a Midnight Commander shell.
-      You may get out-of-memory error messages when running the tests. 
-      These are normal and can be safely ignored.
+      There has been a report that the tests may fail if running inside a
+      Midnight Commander shell.  You may get out-of-memory error messages when
+      running the tests.  These are normal and can be safely ignored.
 @z
 
 @x
@@ -253,13 +260,11 @@
 @z
 
 @x
-      <parameter>--with-console-auth-dir=/run/console/</parameter>: This
-      parameter specifies location of the
-      <application>ConsoleKit</application> auth dir.
+      <parameter>--disable-systemd</parameter>: This switch disables systemd
+      support in <application>D-Bus</application>.
 @y
-      <parameter>--with-console-auth-dir=/run/console/</parameter>: This
-      parameter specifies location of the
-      <application>ConsoleKit</application> auth dir.
+      <parameter>--disable-systemd</parameter>: This switch disables systemd
+      support in <application>D-Bus</application>.
 @z
 
 @x
@@ -271,11 +276,13 @@
 @z
 
 @x
-      <parameter>--disable-systemd</parameter>: This switch disables systemd
-      support in <application>D-Bus</application>
+      <parameter>--with-console-auth-dir=/run/console/</parameter>: This
+      parameter specifies location of the
+      <application>ConsoleKit</application> auth dir.
 @y
-      <parameter>--disable-systemd</parameter>: This switch disables systemd
-      support in <application>D-Bus</application>
+      <parameter>--with-console-auth-dir=/run/console/</parameter>: This
+      parameter specifies location of the
+      <application>ConsoleKit</application> auth dir.
 @z
 
 @x
@@ -485,36 +492,32 @@
 @x
         <seg>
           dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-          dbus-run-session, dbus-send and dbus-uuidgen
+          dbus-run-session, dbus-send, dbus-test-tool,
+          dbus-update-activation-environment, and dbus-uuidgenn
         </seg>
         <seg>
            libdbus-1.so
         </seg>
         <seg>
-          /etc/dbus-1,
-          /usr/include/dbus-1.0,
-          /usr/lib/dbus-1.0,
-          /usr/share/dbus-1,
-          /usr/share/doc/dbus-&dbus-version;,
-          /var/lib/dbus and
-          /var/run/dbus
+          /{etc,/usr/share}/dbus-1,
+          /usr/{include,lib}/dbus-1.0,
+          /usr/share/doc/dbus-&dbus-version; and
+          /var/{lib,run}/dbus
         </seg>
 @y
         <seg>
           dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-          dbus-run-session, dbus-send, dbus-uuidgen
+          dbus-run-session, dbus-send, dbus-test-tool,
+          dbus-update-activation-environment, dbus-uuidgenn
         </seg>
         <seg>
            libdbus-1.so
         </seg>
         <seg>
-          /etc/dbus-1,
-          /usr/include/dbus-1.0,
-          /usr/lib/dbus-1.0,
-          /usr/share/dbus-1,
+          /{etc,/usr/share}/dbus-1,
+          /usr/{include,lib}/dbus-1.0,
           /usr/share/doc/dbus-&dbus-version;,
-          /var/lib/dbus,
-          /var/run/dbus
+          /var/{lib,run}/dbus
         </seg>
 @z
 

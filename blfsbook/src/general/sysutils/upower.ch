@@ -83,19 +83,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="intltool"/>,
-      <xref linkend="libusb"/>,
-      <xref linkend="polkit"/>, and
-      <xref linkend="udev-extras"/> (for GUdev)
+      <xref linkend="libgudev"/>,
+      <xref linkend="libusb"/>, and
+      <xref linkend="polkit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="intltool"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="libusb"/>,
-      <xref linkend="polkit"/>,
-      <xref linkend="udev-extras"/> (for GUdev)
+      <xref linkend="polkit"/>
     </para>
 @z
 
@@ -146,10 +144,12 @@
 
 @x
       To test the results, issue: <command>make check</command>. Some
-      checks may not pass due to missing files.
+      checks may not pass due to missing files. Test suite should be run from
+      a local GUI session started with dbus-launch.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       テストの中には、必要なファイルがないために失敗するものがあります。
+      テストは、dbus-launch から起動されたローカル GUI セッションにおいて実行する必要があります。
 @z
 
 @x
@@ -172,13 +172,13 @@
 
 @x
       To use the command <command>upower -w</command> for information about
-      processor wakeups (this command is used by <xref linkend="gnome-power-manager"/>)
+      processor wakeups (this command is used by <ulink url="http://ftp.gnome.org/pub/gnome/sources/gnome-power-manager/">gnome-power-manager</ulink>)
       you need to enable CONFIG_TIMER_STATS.  This is achieved in
       <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
       menu and selecting &apos;Collect kernel timers statistics&apos;.
 @y
       To use the command <command>upower -w</command> for information about
-      processor wakeups (this command is used by <xref linkend="gnome-power-manager"/>)
+      processor wakeups (this command is used by <ulink url="http://ftp.gnome.org/pub/gnome/sources/gnome-power-manager/">gnome-power-manager</ulink>)
       you need to enable CONFIG_TIMER_STATS.  This is achieved in
       <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
       menu and selecting &apos;Collect kernel timers statistics&apos;.
@@ -191,7 +191,7 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
@@ -202,20 +202,19 @@
 
 @x
         <seg>
-          upower and upowerd
+          upower
         </seg>
         <seg>
           libupower-glib.so
         </seg>
         <seg>
           /etc/UPower,
-          /usr/include/libupower-glib,
-          /usr/lib/upower and
+          /usr/include/libupower-glib, and
           /var/lib/upower
         </seg>
 @y
         <seg>
-          upower and upowerd
+          upower
         </seg>
         <seg>
           libupower-glib.so
@@ -223,7 +222,6 @@
         <seg>
           /etc/UPower,
           /usr/include/libupower-glib,
-          /usr/lib/upower and
           /var/lib/upower
         </seg>
 @z
@@ -238,14 +236,6 @@
             is the <application>UPower</application> command line tool.
 @y
             <application>UPower</application> のコマンドラインツール。
-@z
-
-@x upowerd
-            is the <application>UPower</application> Daemon. It provides the
-            org.freedesktop.UPower service on the system message bus.
-@y
-            <application>UPower</application> デーモン。
-            これはシステムメッセージバス上の org.freedesktop.UPower サービスを提供します。
 @z
 
 @x libupower-glib.so

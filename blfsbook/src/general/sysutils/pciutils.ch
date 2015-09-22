@@ -202,17 +202,17 @@
 @z
 
 @x lspci
-            is an utility for displaying information about all PCI buses
+            is a utility for displaying information about all PCI buses
             in the system and all devices connected to them.
 @y
-            is an utility for displaying information about all PCI buses
+            is a utility for displaying information about all PCI buses
             in the system and all devices connected to them.
 @z
 
 @x setpci
-            is an utility for querying and configuring PCI devices.
+            is a utility for querying and configuring PCI devices.
 @y
-            is an utility for querying and configuring PCI devices.
+            is a utility for querying and configuring PCI devices.
 @z
 
 @x update-pciids

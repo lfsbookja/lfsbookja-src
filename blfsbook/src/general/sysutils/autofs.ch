@@ -128,29 +128,9 @@
 @z
 
 @x
-<screen><literal>File systems ---&gt;
-  Kernel automounter version 4 support (also supports v3): Y or M</literal></screen>
-@y
-<screen><literal>File systems ---&gt;
-  Kernel automounter version 4 support (also supports v3): Y or M</literal></screen>
-@z
-
-@x
       Optionally, enable the following options in the kernel configuration:
 @y
       Optionally, enable the following options in the kernel configuration:
-@z
-
-@x
-<screen><literal>File systems  ---&gt;
-  Network File Systems  ---&gt;
-    NFS client support: Y or M
-    CIFS support (advanced network filesystem, SMBFS successor): Y or M</literal></screen>
-@y
-<screen><literal>File systems  ---&gt;
-  Network File Systems  ---&gt;
-    NFS client support: Y or M
-    CIFS support (advanced network filesystem, SMBFS successor): Y or M</literal></screen>
 @z
 
 @x
@@ -372,19 +352,25 @@
 
 @x
         <seg>automount</seg>
-        <seg>lookup_dir.so, lookup_file.so, lookup_hosts.so, lookup_ldap.so,
-             lookup_multi.so, lookup_nisplus.so, lookup_program.so, 
-             lookup_userhome.so, lookup_yp.so, mount_afs.so, mount_autofs.so, 
-             mount_bind.so, mount_changer.so, mount_ext2.so, mount_generic.so,
-             mount_nfs.so, parse_sun.so</seg>
+        <seg>
+          lookup_dir.so, lookup_file.so, lookup_files.so, lookup_hosts.so,
+          lookup_ldap.so, lookup_multi.so, lookup_nis.so, lookup_nisplus.so,
+          lookup_program.so, lookup_userhome.so, lookup_yp.so, mount_afs.so,
+          mount_autofs.so, mount_bind.so, mount_changer.so, mount_ext2.so,
+          mount_ext3.so, mount_ext4.so, mount_generic.so, mount_nfs.so,
+          mount_nfs4.so, parse_amd.so, and parse_sun.so
+           </seg>
         <seg>/lib/autofs</seg>
 @y
         <seg>automount</seg>
-        <seg>lookup_dir.so, lookup_file.so, lookup_hosts.so, lookup_ldap.so,
-             lookup_multi.so, lookup_nisplus.so, lookup_program.so, 
-             lookup_userhome.so, lookup_yp.so, mount_afs.so, mount_autofs.so, 
-             mount_bind.so, mount_changer.so, mount_ext2.so, mount_generic.so,
-             mount_nfs.so, parse_sun.so</seg>
+        <seg>
+          lookup_dir.so, lookup_file.so, lookup_files.so, lookup_hosts.so,
+          lookup_ldap.so, lookup_multi.so, lookup_nis.so, lookup_nisplus.so,
+          lookup_program.so, lookup_userhome.so, lookup_yp.so, mount_afs.so,
+          mount_autofs.so, mount_bind.so, mount_changer.so, mount_ext2.so,
+          mount_ext3.so, mount_ext4.so, mount_generic.so, mount_nfs.so,
+          mount_nfs4.so, parse_amd.so, parse_sun.so
+           </seg>
         <seg>/lib/autofs</seg>
 @z
 

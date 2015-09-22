@@ -20,11 +20,15 @@
 @z
 
 @x
-    <para><application>Strigi</application> is a desktop search engine.</para>
+    <para><application>Strigi</application> is a program for fast indexing and
+    searching of personal data. It can gather and index information from
+    files in the filesystem even if they are hidden in emails or
+    archives.</para>
 @y
-    <para>
-    <application>Strigi</application> はデスクトップサーチエンジンです。
-    </para>
+    <para><application>Strigi</application> is a program for fast indexing and
+    searching of personal data. It can gather and index information from
+    files in the filesystem even if they are hidden in emails or
+    archives.</para>
 @z
 
 @x
@@ -78,46 +82,48 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="cmake"/>,
-    <xref linkend="expat"/> or <xref linkend="libxml2"/>
+      <xref linkend="cmake"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="cmake"/>,
-    <xref linkend="expat"/> または <xref linkend="libxml2"/>
+      <xref linkend="cmake"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="dbus"/> and
-    <xref linkend="qt4"/> (compiled with D-Bus support)
+      <xref linkend="dbus"/> and
+      <xref linkend="qt4"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="dbus"/>,
-    <xref linkend="qt4"/> (D-Bus サポートがビルドされたもの)
+      <xref linkend="dbus"/>,
+      <xref linkend="qt4"/> 
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="ffmpeg"/>,
-    <xref linkend="exiv2"/>,
-    <xref linkend="clucene"/>, and
-    <ulink url="http://logging.apache.org/log4cxx/">log4cxx</ulink>
+      <xref linkend="ffmpeg"/>,
+      <xref linkend="exiv2"/>,
+      <xref linkend="libxml2"/>,
+      <ulink url="http://sourceforge.net/projects/clucene/files/clucene-core-stable/">
+         CLucene version 0.9x</ulink> , and
+      <ulink url="http://logging.apache.org/log4cxx/">log4cxx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="ffmpeg"/>,
-    <xref linkend="exiv2"/>,
-    <xref linkend="clucene"/>,
-    <ulink url="http://logging.apache.org/log4cxx/">log4cxx</ulink>
+      <xref linkend="ffmpeg"/>,
+      <xref linkend="exiv2"/>,
+      <xref linkend="libxml2"/>,
+      <ulink url="http://sourceforge.net/projects/clucene/files/clucene-core-stable/">
+         CLucene version 0.9x</ulink> ,
+      <ulink url="http://logging.apache.org/log4cxx/">log4cxx</ulink>
     </para>
 @z
 
@@ -200,11 +206,11 @@
 
 @x
         <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd,
-        strigidaemon and xmlindexer</seg>
+        strigidaemon, and xmlindexer</seg>
         <seg>libsearchclient.so, libstreamanalyzer.so, libstreams.so,
-        libstrigihtmlgui.so, libstrigiqtdbusclient.so and several in
+        libstrigihtmlgui.so, libstrigiqtdbusclient.so, and several in
         /usr/lib/strigi</seg>
-        <seg>/usr/include/strigi, /usr/lib/strigi and /usr/share/strigi</seg>
+        <seg>/usr/include/strigi, /usr/lib/strigi, and /usr/share/strigi</seg>
 @y
         <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd,
         strigidaemon, xmlindexer</seg>

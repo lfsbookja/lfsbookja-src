@@ -82,39 +82,37 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="sqlite"/>, and
-      <xref linkend="dbus"/>
+      <xref linkend="lcms2"/>, and
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="lcms2"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="dbus"/>
+      <xref linkend="sqlite"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <xref linkend="udev-extras"/> (for GUdev),
-      <xref linkend="polkit"/>,
-      <xref linkend="gobject-introspection"/>, and
+      <xref linkend="polkit"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libgusb"/>,
-      <xref linkend="udev-extras"/> (for GUdev),
-      <xref linkend="polkit"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="libgudev"/>,
+      <xref linkend="libgusb"/>,
+      <xref linkend="polkit"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -122,24 +120,28 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="bash-completion.alioth.debian.org">Bash Completion</ulink>,
-      <ulink url="http://www.freedesktop.org/software/colord/releases/">
-      colord-gtk</ulink> and <xref linkend="gnome-desktop"/>
-      (To build the example tools),
       <xref linkend="docbook-utils"/>,
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="sane"/>
+      <xref linkend="gnome-desktop"/> and
+      <ulink url="http://www.freedesktop.org/software/colord/releases/">
+      colord-gtk</ulink> (to build the example tools),
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="sane"/>,
+      <ulink url="http://www.argyllcms.com/">ArgllCMS</ulink>, and
+      <ulink url="http://bash-completion.alioth.debian.org/">Bash Completion</ulink>,
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="bash-completion.alioth.debian.org">Bash Completion</ulink>,
-      <ulink url="http://www.freedesktop.org/software/colord/releases/">
-      colord-gtk</ulink>, <xref linkend="gnome-desktop"/>
-      (サンプルツール構築のため),
       <xref linkend="docbook-utils"/>,
+      <xref linkend="gnome-desktop"/> and
+      <ulink url="http://www.freedesktop.org/software/colord/releases/">
+      colord-gtk</ulink> (to build the example tools),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="sane"/>
+      <xref linkend="libxslt"/>,
+      <xref linkend="sane"/>,
+      <ulink url="http://www.argyllcms.com/">ArgllCMS</ulink>, and
+      <ulink url="http://bash-completion.alioth.debian.org/">Bash Completion</ulink>,
     </para>
 @z
 
@@ -170,12 +172,12 @@
 
 @x
       To test the results, issue: <command>make -k check</command>. For unknown
-      reasons, one test (cd-self-test) fails. Note that system-wide
-      <application>D-Bus</application> daemon must be running or the tests will
-      fail.
+      reasons, some tests may fail. Note that the system-wide
+      <application>D-Bus</application> daemon must be running or the tests
+      will fail.
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-      テストの一つ (cd-self-test) は理由不明ながら失敗します。
+      テストの中には理由不明により失敗するものがあります。
       システムワイドな <application>D-Bus</application> デーモンの稼動が必要なのかもしれず、そうでないときにテストが失敗するのかもしれません。
 @z
 
@@ -203,39 +205,29 @@
 
 @x
         <seg>
-          cd-create-profile, cd-fix-profile, cd-iccdump, colord,
-          colord-sane, colord-session, and colormgr
+          cd-create-profile, cd-fix-profile, cd-iccdump, cd-it8, and colormgr
         </seg>
         <seg>
-          libcolordprivate.so, libcolord.so, libcolorhug.so and
-          several under /usr/lib/colord-plugin
+          libcolord.so, libcolordprivate.so, and libcolorhug.so
         </seg>
         <seg>
           /usr/include/colord-1,
-          /usr/lib/colord,
-          /usr/lib/colord-plugins,
-          /usr/lib/colord-sensors,
-          /usr/share/color,
-          /usr/share/colord,
-          /usr/share/gtk-doc/html/colord and
+          /usr/lib/colord-{plugins,sensors},
+          /usr/share/color{,d},
+          /usr/share/gtk-doc/html/colord, and
           /var/lib/colord
         </seg>
 @y
         <seg>
-          cd-create-profile, cd-fix-profile, cd-iccdump, colord,
-          colord-sane, colord-session, colormgr
+          cd-create-profile, cd-fix-profile, cd-iccdump, cd-it8, colormgr
         </seg>
         <seg>
-          libcolordprivate.so, libcolord.so, libcolorhug.so,
-          /usr/lib/colord-plugin 配下に数種のライブラリ
+          libcolord.so, libcolordprivate.so, libcolorhug.so
         </seg>
         <seg>
           /usr/include/colord-1,
-          /usr/lib/colord,
-          /usr/lib/colord-plugins,
-          /usr/lib/colord-sensors,
-          /usr/share/color,
-          /usr/share/colord,
+          /usr/lib/colord-{plugins,sensors},
+          /usr/share/color{,d},
           /usr/share/gtk-doc/html/colord,
           /var/lib/colord
         </seg>

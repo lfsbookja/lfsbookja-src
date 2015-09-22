@@ -20,7 +20,7 @@
 @z
 
 @x
-      The <application>USB Utils</application> package contains an utility
+      The <application>USB Utils</application> package contains utilities
       used to display information about USB buses in the system and the
       devices connected to them.
 @y
@@ -125,13 +125,11 @@
 @z
 
 @x
-      <option>--disable-zlib</option>: This stops
-      <application>USB Utils</application> from installing a 
-      compressed <filename>usb.ids</filename>  alongside the
-      uncompressed one.
+      <command>sed ... lsusb.py</command>: Instructs lsusb.py where to search
+      <filename>usb.ids</filename>.
 @y
-      <option>--disable-zlib</option>:
-      本オプションの指定により、非圧縮版 <filename>usb.ids</filename> とともに提供される圧縮版 <filename>usb.ids</filename> はインストールしないようにします。
+      <command>sed ... lsusb.py</command>: Instructs lsusb.py where to search
+      <filename>usb.ids</filename>.
 @z
 
 @x
@@ -141,34 +139,25 @@
 @z
 
 @x
-      The <filename>usb.ids</filename> data file is constantly being
-      updated. To get a current version of this file, run
-      <command>update-usbids</command> as the <systemitem
-      class="username">root</systemitem> user. This program requires the
-      <xref linkend="which"/> script or program to find <xref linkend="lynx"/>
-      or <xref linkend="wget"/> which are used to download the most current file,
-      and replace the existing file in
-      <filename class="directory">/usr/share/misc</filename>.
+      The <filename>usb.ids</filename> data file is constantly being updated.
+      To get a current version of this file, using <xref linkend="wget"/>, run,
+      as the <systemitem class="username">root</systemitem> user:</para>
 @y
       <filename>usb.ids</filename> というデータファイルは常に更新されています。
       最新版を入手するには <systemitem
-      class="username">root</systemitem> ユーザーになって <command>update-usbids</command> コマンドを実行します。
-      このプログラムは <xref linkend="which"/> に示すスクリプトまたはプログラムが必要であり、<xref 
-      linkend="wget"/> あるいは <xref linkend="lynx"/> を見つけ出すために利用されます。
-      <xref linkend="wget"/> や <xref linkend="lynx"/> はデータファイル最新版をダウンロードするために必要となります。
-      ファイルをダウンロードすると <filename class='directory'>/usr/share/misc</filename> ディレクトリ内の既存のファイルを上書き更新します。
+      class="username">root</systemitem> ユーザーになり <xref linkend="wget"/> コマンドを使って以下を実行します。
 @z
 
 @x
       You may wish to add an entry to
       <systemitem class="username">root</systemitem>'s (or any other user who has
-      write privilege to <filename class="directory">/usr/share/misc</filename>)
+      write privilege to <filename class="directory">/usr/share/hwdata</filename>)
       crontab to automatically update the <filename>usb.ids</filename> file
       periodically.
 @y
       crontab において <systemitem
       class="username">root</systemitem> ユーザー (あるいは <filename
-      class='directory'>/usr/share</filename> ディレクトリに対する書き込み権限を有するユーザー) に対する項目を追加して、<filename>usb.ids</filename> ファイルを定期的に自動更新することもできます。
+      class='directory'>/usr/share/hwdata</filename> ディレクトリに対する書き込み権限を有するユーザー) に対する項目を追加して <filename>usb.ids</filename> ファイルを定期的に自動更新することもできます。
 @z
 
 @x
@@ -189,7 +178,7 @@
 
 @x
         <seg>
-          lsusb, update-usbids, usb-devices, and usbhid-dump
+          lsusb, lsusb.py, usb-devices, and usbhid-dump
         </seg>
         <seg>
           None
@@ -199,7 +188,7 @@
         </seg>
 @y
         <seg>
-          lsusb, update-usbids, usb-devices, usbhid-dump
+          lsusb, lsusb.py, usb-devices, and usbhid-dump
         </seg>
         <seg>
           &None;
@@ -216,19 +205,13 @@
 @z
 
 @x lsusb
-            is an utility for displaying information about all USB buses
-            in the system and all devices connected to them.
+            is a utility for displaying information about all USB buses
+            in the system and all devices connected to them, but not in human
+            friendly form.
 @y
-            is an utility for displaying information about all USB buses
-            in the system and all devices connected to them.
-@z
-
-@x update-usbids
-            downloads the current version of the USB ID list. Requires
-            <xref linkend="lynx"/> or <xref linkend="wget"/>.
-@y
-            downloads the current version of the USB ID list. Requires
-            <xref linkend="lynx"/> or <xref linkend="wget"/>.
+            is a utility for displaying information about all USB buses
+            in the system and all devices connected to them, but not in human
+            friendly form.
 @z
 
 @x usb-devices

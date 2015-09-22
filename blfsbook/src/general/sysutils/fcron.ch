@@ -95,14 +95,14 @@
     <para role="optional">An <xref linkend="server-mail"/>,
     <ulink url="../postlfs/editors.html">text editor</ulink> (default is
     <command>vi</command> from the <xref linkend="vim"/> package),
-    <xref linkend="linux-pam"/>,
+    <xref linkend="linux-pam"/>, and
     <xref linkend="docbook-utils"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="server-mail"/>,
+    <para role="optional">An <xref linkend="server-mail"/>,
     <ulink url="../postlfs/editors.html">テキストエディター</ulink>
-    (デフォルトは <xref linkend="vim"/> パッケージの <command>vi</command> ),
+    (デフォルトは <xref linkend="vim"/> パッケージの <command>vi</command>),
     <xref linkend="linux-pam"/>,
     <xref linkend="docbook-utils"/>
     </para>
@@ -188,13 +188,13 @@
     <title>&CommandExplanations;</title>
 @z
 
-@x
-    <para><command>autoconf</command>: This command is required to rebuild 
-    <filename>configure</filename> using the fixed input file.</para>
-@y
-    <para><command>autoconf</command>:
-    修正したファイルに基づいて <filename>configure</filename> を再生成するために本コマンドを実行します。</para>
-@z
+% @x
+%     <para><command>autoconf</command>: This command is required to rebuild 
+%     <filename>configure</filename> using the fixed input file.</para>
+% @y
+%     <para><command>autoconf</command>:
+%     修正したファイルに基づいて <filename>configure</filename> を再生成するために本コマンドを実行します。</para>
+% @z
 
 @x
     <para><parameter>--without-sendmail</parameter>: By default,
@@ -216,8 +216,8 @@
 @z
 
 @x
-    <para><parameter>--with-boot-install=no</parameter>: This prevents installation
-    of the bootscript included with the package.</para>
+    <para><parameter>--with-boot-install=no</parameter>: This prevents
+    installation of the bootscript included with the package.</para>
 @y
     <para><parameter>--with-boot-install=no</parameter>:
     本パッケージに含まれるブートスクリプトをインストールしないようにします。
@@ -235,11 +235,14 @@
 
 @x
     <para><option>--with-dsssl-dir=<replaceable>&lt;/path/to/dsssl-stylesheets&gt;</replaceable></option>:
-    Avoid a warning message about not finding the DSSSL stylesheets.</para>
+    May be used if you have <xref linkend="docbook-utils"/> installed.
+    Currently, the dsssl stylesheets are located at
+    <filename class="directory">/usr/share/sgml/docbook/dsssl-stylesheets-1.79</filename>.</para>
 @y
-    <para><option>--with-dsssl-dir=<replaceable>&lt;dsssl スタイルシートへのパス&gt;</replaceable></option>:
-    DSSSL スタイルシートが見つからなかった時の警告メッセージを出力しないようにします。
-    </para>
+    <para><option>--with-dsssl-dir=<replaceable>&lt;/path/to/dsssl-stylesheets&gt;</replaceable></option>:
+    May be used if you have <xref linkend="docbook-utils"/> installed.
+    Currently, the dsssl stylesheets are located at
+    <filename class="directory">/usr/share/sgml/docbook/dsssl-stylesheets-1.79</filename>.</para>
 @z
 
 @x

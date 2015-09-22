@@ -82,35 +82,37 @@
     <para role="required">
       <xref linkend="dbus-glib"/>,
       <xref linkend="libatasmart"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="lvm2"/>,
       <xref linkend="parted"/>,
-      <xref linkend="polkit"/>,
-      <xref linkend="sg3_utils"/>, and
-      <xref linkend="udev-extras"/> (for gudev)
+      <xref linkend="polkit"/>, and
+      <xref linkend="sg3_utils"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
       <xref linkend="libatasmart"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="lvm2"/>,
       <xref linkend="parted"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="sg3_utils"/>,
-      <xref linkend="udev-extras"/> (for gudev)
+      <xref linkend="sg3_utils"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/> and
       <xref linkend="sudo"/> (to run the test)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/>,
       <xref linkend="sudo"/> (テスト実行時)
     </para>
 @z
@@ -170,27 +172,29 @@
 
 @x
         <seg>
-          udisks, udisks-daemon, udisks-tcp-bridge and
+          udisks, 
+          udisks-daemon, 
+          udisks-tcp-bridge, and
           umount.udisks
         </seg>
         <seg>
           None
         </seg>
-        <seg> 
-          /usr/lib/udisks,
+        <seg>
           /usr/share/gtk-doc/html/udisks and
           /var/lib/udisks
         </seg>
 @y
         <seg>
-          udisks, udisks-daemon, udisks-tcp-bridge,
+          udisks, 
+          udisks-daemon, 
+          udisks-tcp-bridge,
           umount.udisks
         </seg>
         <seg>
-          &None;
+          &None:
         </seg>
-        <seg> 
-          /usr/lib/udisks,
+        <seg>
           /usr/share/gtk-doc/html/udisks,
           /var/lib/udisks
         </seg>

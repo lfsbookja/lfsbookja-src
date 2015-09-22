@@ -310,9 +310,9 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>The test suite does not work for present target <quote>generic</quote>.</para>
 @y
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>The test suite does not work for present target <quote>generic</quote>.</para>
 @z
 
 @x
@@ -328,29 +328,17 @@
 @z
 
 @x
-    <para><parameter>linux, linux_noasm</parameter>:
-    The linux target in the <filename>Makefile</filename> makes assumptions
-    that are useful for a Linux system when compiling the executables, but
-    also uses some 32-bit x86 assembler code. The linux_noasm target will
-    build on all linux hosts. To obtain alternatives to these targets, use
-    <command>make -f unix/Makefile list</command></para>
+    <para><parameter>make -f unix/Makefile generic</parameter>:
+    This target begins by running a configure script (unlike the older targets
+    such as linux and linux_noasm) which creates a flags file that is then used
+    in the build. This ensures that the 32-bit x86 build receives the right
+    flags to unzip files which which are larger than 2GB when extracted.</para>
 @y
-    <para><parameter>linux, linux_noasm</parameter>:
-    The linux target in the <filename>Makefile</filename> makes assumptions
-    that are useful for a Linux system when compiling the executables, but
-    also uses some 32-bit x86 assembler code. The linux_noasm target will
-    build on all linux hosts. To obtain alternatives to these targets, use
-    <command>make -f unix/Makefile list</command></para>
-@z
-
-@x
-    <!-- <para><parameter>LOCAL_UNZIP=...</parameter>:
-    This sets the compilation flags to allow <application>UnZip</application>
-    to handle files up to 4 GB.</para> -->
-@y
-    <!-- <para><parameter>LOCAL_UNZIP=...</parameter>:
-    This sets the compilation flags to allow <application>UnZip</application>
-    to handle files up to 4 GB.</para> -->
+    <para><parameter>make -f unix/Makefile generic</parameter>:
+    This target begins by running a configure script (unlike the older targets
+    such as linux and linux_noasm) which creates a flags file that is then used
+    in the build. This ensures that the 32-bit x86 build receives the right
+    flags to unzip files which which are larger than 2GB when extracted.</para>
 @z
 
 @x

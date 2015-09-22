@@ -125,11 +125,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>. Several
-      tests are expected to fail.
+      To test the results, issue: <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-      失敗することが判明しているテストもあります。
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x

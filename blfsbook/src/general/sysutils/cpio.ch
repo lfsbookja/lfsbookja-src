@@ -162,17 +162,6 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/tmp</parameter>: This parameter is used so
-    that <filename class='directory'>/usr/libexec</filename> is not
-    created.</para>
-@y
-    <para>
-    <parameter>--libexecdir=/tmp</parameter>:
-    このパラメーターは <filename class='directory'>/usr/libexec</filename> ディレクトリを生成しないようにします。
-    </para>
-@z
-
-@x
     <para><parameter>--enable-mt</parameter>: This parameter forces the
     building and installation of the <command>mt</command> program.</para>
 @y
@@ -183,12 +172,12 @@
 @z
 
 @x
-    <para><parameter>--with-rmt=/usr/sbin/rmt</parameter>: This parameter
+    <para><parameter>--with-rmt=/usr/libexec/rmt</parameter>: This parameter
     inhibits building the <command>rmt</command> program as it is already
     installed by the <application>Tar</application> package in LFS.</para>
 @y
     <para>
-    <parameter>--with-rmt=/usr/sbin/rmt</parameter>:
+    <parameter>--with-rmt=/usr/libexec/rmt</parameter>:
     このパラメーターは <command>rmt</command> プログラムをビルドしないようにします。
     そのプログラムは LFS における <application>Tar</application> パッケージにて既にインストールされています。
     </para>

@@ -90,6 +90,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="imagemagick"/> or
       <xref linkend="gdk-pixbuf"/>,
@@ -99,6 +100,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="imagemagick"/> または
       <xref linkend="gdk-pixbuf"/>,
