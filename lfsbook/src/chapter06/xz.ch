@@ -168,7 +168,7 @@
 @z
 
 @x lzegrep
-          <para>Runs <command>egrep</command> on LZMA compressed files files</para>
+          <para>Runs <command>egrep</command> on LZMA compressed files</para>
 @y
           <para>LZMA 圧縮されたファイルに対して <command>egrep</command> を実行します。</para>
 @z
