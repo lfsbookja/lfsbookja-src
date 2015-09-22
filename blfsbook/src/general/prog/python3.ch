@@ -86,14 +86,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="bluez"/> and
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+      <xref linkend="bluez"/>,
+      <xref linkend="gdb"/> (required for some tests), and
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+      <xref linkend="gdb"/> (いくつかのテストに必要),
+      <xref linkend="valgrind"/>
     </para>
 @z
 
@@ -135,11 +137,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k test</command>. One test
-      (test_gdb) has been reported to fail.
+      The test suite must be run separately, using an X terminal (see below).
 @y
-      ビルド結果をテストする場合は <command>make -k test</command> を実行します。
-      ただ一つのテスト (test_gdb) は失敗すると報告されています。
+      The test suite must be run separately, using an X terminal (see below).
 @z
 
 @x
@@ -198,25 +198,23 @@
 
 @x
         <seg>
-          2to3 (symbolic link to 2to3-&python3-majorver;),
+          2to3 (symlink),
           2to3-&python3-majorver;,
 
-          pydoc3 (symbolic link to pydoc&python3-majorver;),
+          pydoc3 (symlink),
           pydoc&python3-majorver;,
 
-          python3 (symbolic link to python&python3-majorver;),
-          python&python3-majorver; (hard link to python&python3-majorver;m),
-          python&python3-majorver;m,
+          python3 (symlink);
+          python&python3-majorver; and python&python3-majorver;m (hardlinked);
 
-          python3-config (symbolic link to python&python3-majorver;-config),
-          python&python3-majorver;-config (symbolic link to python3m-config),
+          python3-config (symlink),
+          python&python3-majorver;-config (symlink),
           python&python3-majorver;m-config,
 
-          pyvenv (symbolic link to pyvenv&python3-majorver;),
+          pyvenv (symlink),
           pyvenv&python3-majorver;,
 
-          and optionally, if Tk is installed,
-          idle3 (symbolic link to idle&python3-majorver;) and
+          idle3 (symlink), and
           idle&python3-majorver;
         </seg>
         <seg>
@@ -229,33 +227,31 @@
         </seg>
 @y
         <seg>
-          2to3 (symbolic link to 2to3-&python3-majorver;),
+          2to3 (シンボリックリンク),
           2to3-&python3-majorver;,
 
-          pydoc3 (symbolic link to pydoc&python3-majorver;),
+          pydoc3 (シンボリックリンク),
           pydoc&python3-majorver;,
 
-          python3 (symbolic link to python&python3-majorver;),
-          python&python3-majorver; (hard link to python&python3-majorver;m),
-          python&python3-majorver;m,
+          python3 (シンボリックリンク);
+          python&python3-majorver; and python&python3-majorver;m (ハードリンク);
 
-          python3-config (symbolic link to python&python3-majorver;-config),
-          python&python3-majorver;-config (symbolic link to python3m-config),
+          python3-config (シンボリックリンク),
+          python&python3-majorver;-config (シンボリックリンク),
           python&python3-majorver;m-config,
 
-          pyvenv (symbolic link to pyvenv&python3-majorver;),
+          pyvenv (シンボリックリンク),
           pyvenv&python3-majorver;,
 
-          and optionally, if Tk is installed,
-          idle3 (symbolic link to idle&python3-majorver;) and
+          idle3 (シンボリックリンク),
           idle&python3-majorver;
         </seg>
         <seg>
-          libpython&python3-majorver;m.so and libpython3.so
+          libpython&python3-majorver;m.so, libpython3.so
         </seg>
         <seg>
           /usr/include/python&python3-majorver;m,
-          /usr/lib/python&python3-majorver;, and
+          /usr/lib/python&python3-majorver;,
           /usr/share/doc/python-&python3-version;
         </seg>
 @z
@@ -267,11 +263,15 @@
 @z
 
 @x idle3
-            is a wrapper script that opens a
-            <application>Python</application> aware GUI editor.
+            is a wrapper script that opens a <application>Python</application>
+            aware GUI editor. For this script to run, you must have installed
+            <application>Tk</application> before Python so that the Tkinter
+            Python module is built.
 @y
-            is a wrapper script that opens a
-            <application>Python</application> aware GUI editor.
+            is a wrapper script that opens a <application>Python</application>
+            aware GUI editor. For this script to run, you must have installed
+            <application>Tk</application> before Python so that the Tkinter
+            Python module is built.
 @z
 
 @x pydoc3

@@ -134,16 +134,9 @@
 @z
 
 @x
-    <para><parameter>- -libexecdir=/usr/lib</parameter>: This parameter installs
-    files to <filename class="directory">/usr/lib/rep</filename> instead of
-    <filename class="directory">/usr/libexec/rep</filename>.</para>
+      <command>sed -i...</command>: This command fixes a build error with GCC 5.
 @y
-    <para>
-    <parameter>- -libexecdir=/usr/lib</parameter>:
-    このパラメーターは、各種ファイルのインストール先を <filename
-    class="directory">/usr/libexec/rep</filename> ではなく <filename
-    class="directory">/usr/lib/rep</filename> とします。
-    </para>
+      <command>sed -i...</command>: This command fixes a build error with GCC 5.
 @z
 
 @x
@@ -163,13 +156,13 @@
 @z
 
 @x
-        <seg>rep, rep-config, rep-remote, rep-xgettext, and repdoc</seg>
+        <seg>rep, <!--rep-config, -->rep-remote, rep-xgettext, and repdoc</seg>
         <seg>librep.so and numerous modules installed in the /usr/lib/rep
         hierarchy</seg>
         <seg>/usr/lib/rep, /usr/share/emacs/site-lisp, and /usr/share/rep</seg>
 @y
-        <seg>rep, rep-config, rep-remote, rep-xgettext, repdoc</seg>
-        <seg>librep.so と /usr/lib/rep 配下に多くのモジュール</seg>
+        <seg>rep, <!--rep-config, -->rep-remote, rep-xgettext, repdoc</seg>
+        <seg>librep.so, /usr/lib/rep 配下に数多くのモジュール</seg>
         <seg>/usr/lib/rep, /usr/share/emacs/site-lisp, /usr/share/rep</seg>
 @z
 

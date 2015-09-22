@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "519 MB (1.1 GB with Clang)">
-  <!ENTITY llvm-time          "11.4 SBU and 0.4 for tests (22.7 SBU with Clang)">
+  <!ENTITY llvm-buildsize     "1.2 GB (with Clang), and 300 MB for tests">
+  <!ENTITY llvm-time          "47 SBU (with Clang)">
 @y
-  <!ENTITY llvm-buildsize     "519 MB (1.1 GB with Clang)">
-  <!ENTITY llvm-time          "11.4 SBU and 0.4 for tests (22.7 SBU with Clang)">
+  <!ENTITY llvm-buildsize     "1.2 GB (with Clang), and 300 MB for tests">
+  <!ENTITY llvm-time          "47 SBU (with Clang)">
 @z
 
 @x
@@ -28,29 +28,33 @@
 @z
 
 @x
-      The <application>LLVM</application> package contains a collection of modular and 
-      reusable compiler and toolchain technologies. The Low Level Virtual Machine
-      (LLVM) Core libraries provide a modern source and target-independent optimizer,
-      along with code generation support for many popular CPUs (as well as some less
-      common ones!). These libraries are built around a well specified code
-      representation known as the LLVM intermediate representation ("LLVM IR").
+      The <application>LLVM</application> package contains a collection of
+      modular and reusable compiler and toolchain technologies. The Low Level
+      Virtual Machine (LLVM) Core libraries provide a modern source and
+      target-independent optimizer, along with code generation support for many
+      popular CPUs (as well as some less common ones!). These libraries are
+      built around a well specified code representation known as the LLVM
+      intermediate representation ("LLVM IR").
 @y
-      The <application>LLVM</application> package contains a collection of modular and 
-      reusable compiler and toolchain technologies. The Low Level Virtual Machine
-      (LLVM) Core libraries provide a modern source and target-independent optimizer,
-      along with code generation support for many popular CPUs (as well as some less
-      common ones!). These libraries are built around a well specified code
-      representation known as the LLVM intermediate representation ("LLVM IR").
+      The <application>LLVM</application> package contains a collection of
+      modular and reusable compiler and toolchain technologies. The Low Level
+      Virtual Machine (LLVM) Core libraries provide a modern source and
+      target-independent optimizer, along with code generation support for many
+      popular CPUs (as well as some less common ones!). These libraries are
+      built around a well specified code representation known as the LLVM
+      intermediate representation ("LLVM IR").
 @z
 
 @x
-      The optional <application>Clang</application> and <application>Compiler RT</application>
-      packages provide a new C, C++, Objective C and Objective C++ front-ends and runtime
-      libraries for the <application>LLVM</application>.
+      The optional <application>Clang</application> and <application>Compiler
+      RT</application> packages provide a new C, C++, Objective C and Objective
+      C++ front-ends and runtime libraries for the
+      <application>LLVM</application>.
 @y
-      The optional <application>Clang</application> and <application>Compiler RT</application>
-      packages provide a new C, C++, Objective C and Objective C++ front-ends and runtime
-      libraries for the <application>LLVM</application>.
+      The optional <application>Clang</application> and <application>Compiler
+      RT</application> packages provide a new C, C++, Objective C and Objective
+      C++ front-ends and runtime libraries for the
+      <application>LLVM</application>.
 @z
 
 @x
@@ -160,26 +164,28 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="cmake"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="texlive"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
+      <xref linkend="valgrind"/>,
       <xref linkend="zip"/>,
-      <ulink url="http://www.ocaml.org/">OCaml</ulink>,
-      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink> and
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+      <ulink url="http://www.ocaml.org/">OCaml</ulink>, and
+      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="cmake"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="texlive"/>,
+      <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>),
+      <xref linkend="valgrind"/>,
       <xref linkend="zip"/>,
       <ulink url="http://www.ocaml.org/">OCaml</ulink>,
-      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
     </para>
 @z
 
@@ -219,9 +225,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check-all</command>.
+      Some tests may fail for unknown reasons.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストの中には失敗するものがありますが原因不明です。
 @z
 
 @x
@@ -258,51 +266,47 @@
 
 @x
         <seg>
-          bugpoint, c-index-test, clang, clang++ (symlink), clang-check, clang-format, clang-tblgen,
-          llc, lli, lli-child-target, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff,
-          llvm-dis, llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup,
-          llvm-nm, llvm-objdump,<!-- llvm-prof,--> llvm-ranlib (symlink), llvm-readobj, llvm-rtdyld,
-          llvm-size, llvm-stress, llvm-symbolizer, llvm-tblgen, macho-dump, opt, 
-          scan-build (symlink) and scan-view (symlink)
+          bugpoint, c-index-test, clang, clang++ (symlink), count, FileCheck,
+          clang-check, clang-format, clang-tblgen, llc, lli, lli-child-target,
+          llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov,
+          llvm-cxxdump, llvm-diff, llvm-dis, llvm-dsymutil, llvm-dwarfdump,
+          llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup, llvm-nm,
+          llvm-objdump, llvm-pdbdump, llvm-profdata, llvm-ranlib (symlink),
+          llvm-readobj, llvm-rtdyld, llvm-size, llvm-stress, llvm-symbolizer,
+          llvm-tblgen, macho-dump, not, obj2yaml, opt, scan-build (symlink),
+          scan-view (symlink), verify-uselistorder, and yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so, 
+          BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so,
           libLTO.so,<!-- libprofile_rt.so,--> LLVMHello.so and numerous
           static libraries in /usr/lib
         </seg>
         <seg>
-          /usr/include/clang,
-          /usr/include/clang-c,
-          /usr/include/llvm,
-          /usr/include/llvm-c,
-          /usr/lib/clang,
-          /usr/lib/clang-analyzer,
-          /usr/share/doc/html/clang, and
-          /usr/share/doc/llvm-&llvm-version;
+          /usr/include/{clang,clang-c,llvm,llvm-c},
+          /usr/lib/{clang,clang-analyzer}, and
+          /usr/share/{doc/llvm-&llvm-version;,llvm}
         </seg>
 @y
         <seg>
-          bugpoint, c-index-test, clang, clang++ (symlink), clang-check, clang-format, clang-tblgen,
-          llc, lli, lli-child-target, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff,
-          llvm-dis, llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup,
-          llvm-nm, llvm-objdump,<!-- llvm-prof,--> llvm-ranlib (symlink), llvm-readobj, llvm-rtdyld,
-          llvm-size, llvm-stress, llvm-symbolizer, llvm-tblgen, macho-dump, opt, 
-          scan-build (symlink), scan-view (symlink)
+          bugpoint, c-index-test, clang, clang++ (symlink), count, FileCheck,
+          clang-check, clang-format, clang-tblgen, llc, lli, lli-child-target,
+          llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov,
+          llvm-cxxdump, llvm-diff, llvm-dis, llvm-dsymutil, llvm-dwarfdump,
+          llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup, llvm-nm,
+          llvm-objdump, llvm-pdbdump, llvm-profdata, llvm-ranlib (symlink),
+          llvm-readobj, llvm-rtdyld, llvm-size, llvm-stress, llvm-symbolizer,
+          llvm-tblgen, macho-dump, not, obj2yaml, opt, scan-build (symlink),
+          scan-view (symlink), verify-uselistorder, yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so, 
+          BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so,
           libLTO.so,<!-- libprofile_rt.so,--> LLVMHello.so and numerous
           static libraries in /usr/lib
         </seg>
         <seg>
-          /usr/include/clang,
-          /usr/include/clang-c,
-          /usr/include/llvm,
-          /usr/include/llvm-c,
-          /usr/lib/clang,
-          /usr/lib/clang-analyzer,
-          /usr/share/doc/html/clang,
-          /usr/share/doc/llvm-&llvm-version;
+          /usr/include/{clang,clang-c,llvm,llvm-c},
+          /usr/lib/{clang,clang-analyzer},
+          /usr/share/{doc/llvm-&llvm-version;,llvm}
         </seg>
 @z
 

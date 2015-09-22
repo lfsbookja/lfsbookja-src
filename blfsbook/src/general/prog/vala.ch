@@ -128,12 +128,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Note
-      that a <application>D-Bus</application> session daemon must be
-      running for the tests to succeed.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストを行う際には <application>D-Bus</application> セッションデーモンを起動させておく必要があります。
 @z
 
 @x
@@ -160,11 +157,13 @@
 
 @x
         <seg>
-          vala, vala-&vala-major-version;, valac,
-          valac-&vala-major-version;, vala-gen-introspect,
+          vala, valac, vala-gen-introspect,
+          vapicheck, and vapigen (symlinks);
+
+          vala-&vala-major-version;, valac-&vala-major-version;,
           vala-gen-introspect-&vala-major-version;,
-          vapicheck, vapicheck-&vala-major-version;,
-          vapigen and vapigen-&vala-major-version;
+          vapicheck-&vala-major-version;, and
+          vapigen-&vala-major-version;
         </seg>
         <seg>
           libvala-&vala-major-version;.so
@@ -178,11 +177,13 @@
         </seg>
 @y
         <seg>
-          vala, vala-&vala-major-version;, valac,
-          valac-&vala-major-version;, vala-gen-introspect,
+          vala, valac, vala-gen-introspect,
+          vapicheck, vapigen (シンボリックリンク);
+
+          vala-&vala-major-version;, valac-&vala-major-version;,
           vala-gen-introspect-&vala-major-version;,
-          vapicheck, vapicheck-&vala-major-version;,
-          vapigen, vapigen-&vala-major-version;
+          vapicheck-&vala-major-version;,
+          vapigen-&vala-major-version;
         </seg>
         <seg>
           libvala-&vala-major-version;.so

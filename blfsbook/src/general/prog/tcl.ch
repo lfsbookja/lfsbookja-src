@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY tcl-buildsize     "60 MB (includes documentation installation)">
+  <!ENTITY tcl-buildsize     "69 MB (includes documentation installation)(add 10MB for tests)">
+  <!ENTITY tcl-time          "0.4 SBU (using parallelism=8, additional 0.5 SBU for the tests)">
 @y
-  <!ENTITY tcl-buildsize     "60 MB (ドキュメントのインストールを含む)">
+  <!ENTITY tcl-buildsize     "69 MB (ドキュメントのインストールを含む)(テスト実行時はさらに 10MB)">
+  <!ENTITY tcl-time          "0.4 SBU (parallelism=8 利用時, テスト実行時はさらに 0.5 SBU)">
 @z
 
 @x
@@ -202,17 +204,17 @@
 @z
 
 @x
-      <command>sed -e ... tclConfig.sh</command>: The
-      <application>Tcl</application> package expects that its source tree is
-      preserved so that packages depending on it for their compilation
-      can utilize it. This <command>sed</command> removes the references to the
-      build directory and replaces them with saner system-wide locations.
+      <command>sed -e ...</command>: The <application>Tcl</application> package
+      expects that its source tree is preserved so that packages depending on
+      it for their compilation can utilize it. These <command>sed</command>
+      remove the references to the build directory and replace them with saner
+      system-wide locations.
 @y
-      <command>sed -e ... tclConfig.sh</command>: The
-      <application>Tcl</application> package expects that its source tree is
-      preserved so that packages depending on it for their compilation
-      can utilize it. This <command>sed</command> removes the references to the
-      build directory and replaces them with saner system-wide locations.
+      <command>sed -e ...</command>: The <application>Tcl</application> package
+      expects that its source tree is preserved so that packages depending on
+      it for their compilation can utilize it. These <command>sed</command>
+      remove the references to the build directory and replace them with saner
+      system-wide locations.
 @z
 
 @x
@@ -239,37 +241,37 @@
           libtcl&tcl-ver;.so and libtclstub&tcl-ver;.a
         </seg>
         <seg>
+          /usr/lib/itcl4.0.1,
+          /usr/lib/sqlite3.8.6
           /usr/lib/tcl8,
-          /usr/lib/thread2.7.0,
-          /usr/lib/tdbcodbc1.0.0,
-          /usr/lib/tdbc1.0.0,
-          /usr/lib/sqlite3.7.15.1,
-          /usr/lib/tdbcpostgres1.0.0,
           /usr/lib/tcl&tcl-ver;,
-          /usr/lib/tdbcmysql1.0.0,
-          /usr/lib/itcl4.0.0,
-          /usr/share/man/mann and optionaly
-          /usr/share/doc/&tcl-version;
+          /usr/lib/tdbc1.0.1,
+          /usr/lib/tdbcmysql1.0.1,
+          /usr/lib/tdbcodbc1.0.1,
+          /usr/lib/tdbcpostgres1.0.1,
+          /usr/lib/thread2.7.1,
+          /usr/share/doc/tcl-&tcl-version;, and
+          /usr/share/man/mann
         </seg>
 @y
         <seg>
-          tclsh and tclsh&tcl-ver;
+          tclsh, tclsh&tcl-ver;
         </seg>
         <seg>
           libtcl&tcl-ver;.so, libtclstub&tcl-ver;.a
         </seg>
         <seg>
+          /usr/lib/itcl4.0.1,
+          /usr/lib/sqlite3.8.6
           /usr/lib/tcl8,
-          /usr/lib/thread2.7.0,
-          /usr/lib/tdbcodbc1.0.0,
-          /usr/lib/tdbc1.0.0,
-          /usr/lib/sqlite3.7.15.1,
-          /usr/lib/tdbcpostgres1.0.0,
           /usr/lib/tcl&tcl-ver;,
-          /usr/lib/tdbcmysql1.0.0,
-          /usr/lib/itcl4.0.0,
-          /usr/share/man/mann and optionaly
-          /usr/share/doc/&tcl-version;
+          /usr/lib/tdbc1.0.1,
+          /usr/lib/tdbcmysql1.0.1,
+          /usr/lib/tdbcodbc1.0.1,
+          /usr/lib/tdbcpostgres1.0.1,
+          /usr/lib/thread2.7.1,
+          /usr/share/doc/tcl-&tcl-version;,
+          /usr/share/man/mann
         </seg>
 @z
 

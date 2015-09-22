@@ -144,7 +144,7 @@
     <para role="optional">
       One of <xref linkend="openjdk"/>,
       <ulink url="http://www.inet.no/dante/">Dante</ulink> or
-      <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink>,
+      <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
       and <xref linkend="junit"/> (to test the Java bindings)
     </para>
 @y
@@ -152,7 +152,7 @@
     <para role="optional">
       One of <xref linkend="openjdk"/>,
       <ulink url="http://www.inet.no/dante/">Dante</ulink> または
-      <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink>,
+      <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
       and <xref linkend="junit"/> (Java バインディングのテスト時に必要)
     </para>
 @z
@@ -267,8 +267,8 @@
 
 @x
         <seg>
-          svn, svnadmin, svndumpfilter, svnlook, svnmucc, svnrdump, svnserve,
-          svnsync, and svnversion
+          svn, svnadmin, svnbench, svndumpfilter, svnfsfs, svnlook, svnmucc,
+          svnrdump, svnserve, svnsync, and svnversion
         </seg>
         <seg>
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
@@ -279,43 +279,37 @@
         </seg>
         <seg>
           /usr/include/subversion-1,
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
-          /usr/lib/python&python2-majorver;/site-packages/libsvn (optional),
-          /usr/lib/python&python2-majorver;/site-packages/svn (optional),
-          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (optional),
-          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/svn (optional),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto/}SVN,
+          /usr/lib/python2.7/site-packages/{libsvn,svn},
+          /usr/lib/ruby/site_ruby/&lt;x.y.z&gt;/{,&lt;arch-linux&gt;-linux/}svn,
+          /usr/lib/svn-javahl, and
+          /usr/share/doc/subversion-&subversion-version;
 <!--      /usr/lib/svn-python/libsvn (optional),
           /usr/lib/svn-python/svn (optional),
 -->
-          /usr/lib/svn-javahl (optional), and
-          /usr/share/doc/subversion-&subversion-version;
         </seg>
 @y
         <seg>
-          svn, svnadmin, svndumpfilter, svnlook, svnmucc, svnrdump, svnserve,
-          svnsync, svnversion
+          svn, svnadmin, svnbench, svndumpfilter, svnfsfs, svnlook, svnmucc,
+          svnrdump, svnserve, svnsync, and svnversion
         </seg>
         <seg>
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
           and mod_authz_svn.so <application>Apache HTTP</application> DSO
           modules and various <application>Perl</application>,
-          <application>Python</application>,
+          <application>Python</application> and
           <application>Ruby</application> modules.
         </seg>
         <seg>
           /usr/include/subversion-1,
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (任意),
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (任意),
-          /usr/lib/python&python2-majorver;/site-packages/libsvn (任意),
-          /usr/lib/python&python2-majorver;/site-packages/svn (任意),
-          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (任意),
-          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/svn (任意),
-<!--      /usr/lib/svn-python/libsvn (任意),
-          /usr/lib/svn-python/svn (任意),
--->
-          /usr/lib/svn-javahl (任意),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto/}SVN,
+          /usr/lib/python2.7/site-packages/{libsvn,svn},
+          /usr/lib/ruby/site_ruby/&lt;x.y.z&gt;/{,&lt;arch-linux&gt;-linux/}svn,
+          /usr/lib/svn-javahl, and
           /usr/share/doc/subversion-&subversion-version;
+<!--      /usr/lib/svn-python/libsvn (optional),
+          /usr/lib/svn-python/svn (optional),
+-->
         </seg>
 @z
 

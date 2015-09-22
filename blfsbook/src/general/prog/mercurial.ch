@@ -96,26 +96,26 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
     <xref linkend="git"/>,
     <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
     <xref linkend="subversion"/> (with Python bindings),
-    <xref linkend="bazaar"/>,
-    <xref linkend="cvs"/>,
+    <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
+    <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
+    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
     <ulink url="http://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
     <ulink url="http://pygments.org/">pygments</ulink>, and
     <ulink url="https://launchpad.net/pyopenssl">pyOpenSSL</ulink>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (ドキュメントのビルド時に必要),
     <xref linkend="git"/>,
-    <xref linkend="gnupg2"/> (Python バインディングによりビルドされた <command>gpg2</command>),
-    <xref linkend="subversion"/> (Python バインディングを含む),
-    <xref linkend="bazaar"/>,
-    <xref linkend="cvs"/>,
+    <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
+    <xref linkend="subversion"/> (with Python bindings),
+    <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
+    <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
+    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
     <ulink url="http://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="http://pygments.org/">pygments</ulink>,
+    <ulink url="http://pygments.org/">pygments</ulink>, and
     <ulink url="https://launchpad.net/pyopenssl">pyOpenSSL</ulink>
 @z
 
@@ -149,30 +149,28 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. During the
-    tests, the build directory size increases above the
-    <quote>Estimated disk space required</quote>, even when considering the
-    additional values, due to temporary test files.</para>
+    <para>Running the test suite is optional. If there are failures, e.g.
+    test-parse-date.t, those tests can be disabled. To test the results in the
+    subdiretory <filename class="directory">tests/tmp</filename>, skipping
+    failing tests, issue:</para>
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    テスト中はビルドディレクトリのサイズが<quote>&Estimateddiskspacerequired;</quote>に示す分だけ増幅します。
-    一時的に生成されるテストファイルなどによるものです。
-    </para>
+    <para>Running the test suite is optional. If there are failures, e.g.
+    test-parse-date.t, those tests can be disabled. To test the results in the
+    subdiretory <filename class="directory">tests/tmp</filename>, skipping
+    failing tests, issue:</para>
 @z
 
 @x
-    <para>Install <application>Mercurial</application> by running
-    the following command (as <systemitem class="username">root</systemitem>):</para>
+    <para>Install <application>Mercurial</application> by running the following
+    command (as <systemitem class="username">root</systemitem>):</para>
 @y
-    <para>
-    (<systemitem class="username">root</systemitem> ユーザーになって) 以下を実行し <application>Mercurial</application> をインストールします。
-    </para>
+    <para>Install <application>Mercurial</application> by running the following
+    command (as <systemitem class="username">root</systemitem>):</para>
 @z
 
 @x
-    <para>If you built the documentation, install it by running
-    the following command (as <systemitem class="username">root</systemitem>):</para>
+    <para>If you built the documentation, install it by running the following
+    command (as <systemitem class="username">root</systemitem>):</para>
 @y
     <para>
     ドキュメントをビルドした場合 (<systemitem class="username">root</systemitem> ユーザーになり) 以下のコマンドを実行してドキュメントをインストールします。
@@ -196,17 +194,28 @@
 @z
 
 @x
-        <seg>hg</seg>
-        <seg>/usr/lib/python2.7/site-packages/hgext/inotify/linux/_inotify.so and
-             several under /usr/lib/python2.7/site-packages/mercurial</seg>
-        <seg>/etc/mercurial, /usr/lib/python2.7/site-packages/hgext and
-             /usr/lib/python2.7/site-packages/mercurial</seg>
+        <seg>
+          hg
+        </seg>
+        <seg>
+          several internal modules under
+          /usr/lib/python&python2-majorver;/site-packages/mercurial
+        </seg>
+        <seg>
+          /etc/mercurial and
+          /usr/lib/python&python2-majorver;/site-packages/{hgext,mercurial}
+        </seg>
 @y
-        <seg>hg</seg>
-        <seg>/usr/lib/python2.7/site-packages/hgext/inotify/linux/_inotify.so,
-             /usr/lib/python2.7/site-packages/mercurial 配下に数種のライブラリ</seg>
-        <seg>/etc/mercurial, /usr/lib/python2.7/site-packages/hgext,
-             /usr/lib/python2.7/site-packages/mercurial</seg>
+        <seg>
+          hg
+        </seg>
+        <seg>
+          /usr/lib/python&python2-majorver;/site-packages/mercurial 配下に数種のライブラリ
+        </seg>
+        <seg>
+          /etc/mercurial,
+          /usr/lib/python&python2-majorver;/site-packages/{hgext,mercurial}
+        </seg>
 @z
 
 @x

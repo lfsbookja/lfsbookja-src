@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY ruby-time          "3.1 SBU (additional 0.2 SBU for tests)">
+  <!ENTITY ruby-buildsize     "585 MB, with checks (additional 466 MB for C API docs)">
+  <!ENTITY ruby-time          "2.4 SBU (additional 3 SBU for checks and 0.4 SBU for C API docs)">
 @y
-  <!ENTITY ruby-time          "3.1 SBU (テスト実行の場合はさらに 0.2 SBU)">
+  <!ENTITY ruby-buildsize     "585 MB, with checks (additional 466 MB for C API docs)">
+  <!ENTITY ruby-time          "2.4 SBU (additional 3 SBU for checks and 0.4 SBU for C API docs)">
 @z
 
 @x
@@ -88,9 +90,10 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
-      <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>,
-      <xref linkend="openssl"/>, and
-      <xref linkend="tk"/>
+      <xref linkend="openssl"/>,
+      <xref linkend="tk"/>,
+      <xref linkend="valgrind"/>, and
+      <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -98,9 +101,10 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
-      <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>,
       <xref linkend="openssl"/>,
-      <xref linkend="tk"/>
+      <xref linkend="tk"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>
     </para>
 @z
 
@@ -118,15 +122,25 @@
 
 @x
       Install <application>Ruby</application> by running the following
-      commands:
+      command:
 @y
       以下のコマンドを実行して <application>Ruby</application> をビルドします。
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      Optionally, build the CAPI documents by running the following
+      commands:
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      Optionally, build the CAPI documents by running the following
+      commands:
+@z
+
+@x
+      To test the results, issue: <command>make -k check</command>. One out of
+      16059 tests fails.
+@y
+      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      16059個のテストのうち、１つは失敗します。
 @z
 
 @x
@@ -142,11 +156,35 @@
 @z
 
 @x
-      <option>--enable-shared</option>: This switch enables building of
+      <parameter>--enable-shared</parameter>: This switch enables building of
       the <filename class="libraryfile">libruby</filename> shared library.
 @y
-      <option>--enable-shared</option>:
+      <parameter>--enable-shared</parameter>:
       このスイッチは <filename class='libraryfile'>libruby</filename> の共有ライブラリをビルドします。
+@z
+
+@x
+      <option>--disable-install-doc</option>: This switch disables building and
+      installing rdoc indexes and C API documents.
+@y
+      <option>--disable-install-doc</option>: This switch disables building and
+      installing rdoc indexes and C API documents.
+@z
+
+@x
+      <option>--disable-install-rdoc</option>: This switch disables building
+      and installing rdoc indexes.
+@y
+      <option>--disable-install-rdoc</option>: This switch disables building
+      and installing rdoc indexes.
+@z
+
+@x
+      <option>--disable-install-capi</option>: This switch disables building
+      and installing C API documents.
+@y
+      <option>--disable-install-capi</option>: This switch disables building
+      and installing C API documents.
 @z
 
 @x
@@ -167,29 +205,28 @@
 
 @x
         <seg>
-          erb, gem, irb, rake, rdoc, ri, ruby, and testrb
+          erb, gem, irb, rake, rdoc, ri, and ruby
         </seg>
         <seg>
-          libruby.so, libruby-static.a, and numerous modules located in the
-          <filename class="directory">/usr/lib/ruby</filename> hierarchy.
+          libruby.so and libruby-static.a
         </seg>
         <seg>
-          /usr/include/ruby-&ruby-version;,
+          /usr/include/ruby-2.2.0
           /usr/lib/ruby,
           /usr/share/doc/ruby-&ruby-version; and
           /usr/share/ri
         </seg>
 @y
         <seg>
-          erb, gem, irb, rake, rdoc, ri, ruby, testrb
+          erb, gem, irb, rake, rdoc, ri, ruby
         </seg>
         <seg>
-          libruby.so, libruby-static.a, <filename class="directory">/usr/lib/ruby</filename>  配下にある数多くのモジュール
+          libruby.so, libruby-static.a
         </seg>
         <seg>
-          /usr/include/ruby-&ruby-version;,
+          /usr/include/ruby-2.2.0
           /usr/lib/ruby,
-          /usr/share/doc/ruby-&ruby-version;,
+          /usr/share/doc/ruby-&ruby-version;
           /usr/share/ri
         </seg>
 @z

@@ -64,13 +64,6 @@
     </para>
 @z
 
-@x
-          <ulink url="http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Archive-Zip-&Archive-Zip-version;.tar.gz">
-          Archive::Zip-&Archive-Zip-version;</ulink> (MD5 sum: e804985def2c1f0ed640ab4ca6aa85a1)
-@y
-          <ulink url="http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Archive-Zip-&Archive-Zip-version;.tar.gz">
-          Archive::Zip-&Archive-Zip-version;</ulink> (MD5 sum: e804985def2c1f0ed640ab4ca6aa85a1)
-@z
 
 
 

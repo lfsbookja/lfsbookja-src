@@ -20,20 +20,17 @@
 @z
 
 @x
-    <para>The <application>JUnit</application> package contains a simple, open
-    source framework to write and run repeatable tests. It is an instance of
-    the xUnit architecture for unit testing frameworks. JUnit features include
-    assertions for testing expected results, test fixtures for sharing common
-    test data, and test runners for running tests.</para>
+      The <application>JUnit</application> package contains a simple, open
+      source framework to write and run repeatable tests. It is an instance of
+      the xUnit architecture for unit testing frameworks. JUnit features include
+      assertions for testing expected results, test fixtures for sharing common
+      test data, and test runners for running tests.
 @y
-    <para>
-    <application>JUnit</application> パッケージは、
-    package contains a simple, open
-    source framework to write and run repeatable tests. It is an instance of
-    the xUnit architecture for unit testing frameworks. JUnit features include
-    assertions for testing expected results, test fixtures for sharing common
-    test data, and test runners for running tests.
-    </para>
+      The <application>JUnit</application> package contains a simple, open
+      source framework to write and run repeatable tests. It is an instance of
+      the xUnit architecture for unit testing frameworks. JUnit features include
+      assertions for testing expected results, test fixtures for sharing common
+      test data, and test runners for running tests.
 @z
 
 @x
@@ -113,56 +110,51 @@
 @z
 
 @x
-    <para>To do a full build of JUnit from source, <xref linkend='apache-ant'/>
-    is required.  However JUnit is useful in building Apache Ant.  Copy the
-    JUnit-&junit-version; jar file to get started.  Then come back to build
-    from source, if desired.</para>
+      The <command>javadoc</command> command coming with OpenJDK 8 has become
+      much stricter than before regarding the conformance of the Javadoc
+      comments in source code to HTML. The <application>Junit</application>
+      documentation does not meet that standard, so the conformance checks
+      have to be disabled. This can be done with the following command:
 @y
-    <para>To do a full build of JUnit from source, <xref linkend='apache-ant'/>
-    is required.  However JUnit is useful in building Apache Ant.  Copy the
-    JUnit-&junit-version; jar file to get started.  Then come back to build
-    from source, if desired.</para>
+      The <command>javadoc</command> command coming with OpenJDK 8 has become
+      much stricter than before regarding the conformance of the Javadoc
+      comments in source code to HTML. The <application>Junit</application>
+      documentation does not meet that standard, so the conformance checks
+      have to be disabled. This can be done with the following command:
 @z
 
 @x
-    <para>Install the <application>JUnit</application> jar file by running the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      Now place the required hamcrest jar files where needed and build the
+      package:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し <application>JUnit</application> をインストールします。
-    </para>
+      Now place the required hamcrest jar files where needed and build the
+      package:
 @z
 
 @x
-    <para>At this point, make sure Apache-Ant is installed and then continue
-    with the source build and installation.  From the directory created when
-    extracting the JUnit sources, place the required hamcrest jar files where
-    needed and build the package:</para> 
+      Test the package by issuing <command>ant dist</command>. One test fails
+      for unknown reason.
 @y
-    <para>At this point, make sure Apache-Ant is installed and then continue
-    with the source build and installation.  From the directory created when
-    extracting the JUnit sources, place the required hamcrest jar files where
-    needed and build the package:</para> 
+      Test the package by issuing <command>ant dist</command>. One test fails
+      for unknown reason.
 @z
 
 @x
-    <para>Testing is automatically done as a part of the build step.</para>
+      Install the files in the final location as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>Testing is automatically done as a part of the build step.</para>
+      Install the files in the final location as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>Install the files in the final location as the 
-    <systemitem class="username">root</systemitem> user:</para>
+      If you have followed the instructions in <xref linkend="ojdk-conf"/>,
+      there is nothing more to do: the <envar>CLASSPATH</envar> variable
+      whould be automatically updated.
 @y
-    <para>Install the files in the final location as the 
-    <systemitem class="username">root</systemitem> user:</para>
-@z
-
-@x
-    <para>Finally, update the <envar>CLASSPATH</envar> variable:</para>
-@y
-    <para>Finally, update the <envar>CLASSPATH</envar> variable:</para>
+      If you have followed the instructions in <xref linkend="ojdk-conf"/>,
+      there is nothing more to do: the <envar>CLASSPATH</envar> variable
+      whould be automatically updated.
 @z
 
 @x
@@ -173,7 +165,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraies</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>

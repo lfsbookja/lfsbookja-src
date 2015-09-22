@@ -95,12 +95,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="emacs"/>  
+      <xref linkend="emacs"/> and
+      <xref linkend="gdb"/> (run-time only dependencies).
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="emacs"/>  
+      <xref linkend="emacs"/>,
+      <xref linkend="gdb"/> (実行時のみの依存).
     </para>
 @z
 
@@ -124,14 +126,6 @@
 @z
 
 @x
-      If you have <xref linkend="texlive"/> installed and wish to build alternate
-      formats (PDF and postscript) of the documentation, issue the following
-      commands:
-@y
-      <xref linkend="texlive"/> をインストールしていて、各種形式 (PDF と PostScript) のドキュメントをビルドする場合は、以下のコマンドを実行します。
-@z
-
-@x
       To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
@@ -141,15 +135,6 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      If you built the alternate formats of the documentation, install them
-      using the following commands issued by the
-      <systemitem class="username">root</systemitem> user:
-@y
-      各種形式のドキュメントをビルドした場合は <systemitem
-      class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
 @z
 
 @x

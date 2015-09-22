@@ -94,18 +94,6 @@
 @z
 
 @x
-          Download MD5 sum: &python2htmldoc-md5sum;
-@y
-          &Download; MD5 sum: &python2htmldoc-md5sum;
-@z
-
-@x
-          Download size: &python2htmldoc-size;
-@y
-          &DownloadSize;: &python2htmldoc-size;
-@z
-
-@x
     <bridgehead renderas="sect3">Python 2 Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Python 2&Dependencies2;</bridgehead>
@@ -114,13 +102,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="expat"/> and
       <xref linkend="libffi"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="expat"/>,
       <xref linkend="libffi"/>
     </para>
 @z
@@ -128,19 +114,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="bluez"/>
+      <xref linkend="bluez"/> and
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="bluez"/>
+      <xref linkend="bluez"/>,
+      <xref linkend="valgrind"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="openssl"/>,
       <xref linkend="sqlite"/> and
       <xref linkend="tk"/>
@@ -148,7 +135,6 @@
 @y
     <bridgehead renderas="sect4">&Optional; (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="openssl"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="tk"/>
@@ -175,28 +161,12 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue: <command>make -k test</command>.
+      One test fails for unknown reasons.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      ビルド結果をテストする場合は <command>make -k test</command> を実行します。
+      １つのテストが失敗しますが理由は不明です。
 @z
-
-% @x
-%       In order to use the <command>help ('name_string')</command> feature of the
-%       <command>python</command> interpreter with some statements and keywords,
-%       you must create or download the optional HTML documentation.
-% @y
-%       In order to use the <command>help ('name_string')</command> feature of the
-%       <command>python</command> interpreter with some statements and keywords,
-%       you must create or download the optional HTML documentation.
-% @z
-
-% @x
-%       If you have installed <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
-%       and wish to create the HTML documentation:
-% @y
-%       If you have installed <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
-%       and wish to create the HTML documentation:
-% @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
@@ -205,34 +175,28 @@
 @z
 
 @x
-      If you have downloaded the preformatted documentation from
-      <ulink url="http://docs.python.org/download.html"/>, install it
+      Since <application>Python 2</application> is in maintenance mode, and
+      <application>Python 3</application> is recommended by upstream for
+      development, you probably do not need to install the documentation.
+      However, if you still want to install documentation for both
+      <application>Python</application> versions, be sure to define the
+      <envar>PYTHONDOCS</envar>
+      variable for the version you want to use, each time you need to consult
+      the documentation. If you have downloaded the preformatted documentation
+      from <ulink url="http://docs.python.org/download.html"/>, install it
       as the <systemitem class="username">root</systemitem> user:
 @y
-      If you have downloaded the preformatted documentation from
-      <ulink url="http://docs.python.org/download.html"/>, install it
+      Since <application>Python 2</application> is in maintenance mode, and
+      <application>Python 3</application> is recommended by upstream for
+      development, you probably do not need to install the documentation.
+      However, if you still want to install documentation for both
+      <application>Python</application> versions, be sure to define the
+      <envar>PYTHONDOCS</envar>
+      variable for the version you want to use, each time you need to consult
+      the documentation. If you have downloaded the preformatted documentation
+      from <ulink url="http://docs.python.org/download.html"/>, install it
       as the <systemitem class="username">root</systemitem> user:
 @z
-
-% @x
-%       If you created the html documentation with
-%       <application>Sphinx</application> then install it as the
-%       <systemitem class="username">root</systemitem> user:
-% @y
-%       If you created the html documentation with
-%       <application>Sphinx</application> then install it as the
-%       <systemitem class="username">root</systemitem> user:
-% @z
-
-% @x
-%       Alternatively, you can download preformatted documentation from
-%       <ulink url="http://docs.python.org/download.html"/> and install it as the
-%       <systemitem class="username">root</systemitem> user:
-% @y
-%       Alternatively, you can download preformatted documentation from
-%       <ulink url="http://docs.python.org/download.html"/> and install it as the
-%       <systemitem class="username">root</systemitem> user:
-% @z
 
 @x
     <title>Command Explanations</title>
@@ -292,10 +256,10 @@
 
 @x
         <seg>
-          2to3, pydoc, python, python-config, python2, python2-config,
+          2to3, pydoc, python (symlink), python-config (symlink),
+          python2 (symlink), python2-config (symlink),
           python&python2-majorver;, python&python2-majorver;-config,
-          smtpd.py, and optionally if <application>Tk</application>
-          is installed, idle
+          smtpd.py, and idle
         </seg>
         <seg>
           libpython&python2-majorver;.so
@@ -306,10 +270,10 @@
           /usr/share/doc/python-&python2-version;</seg>
 @y
         <seg>
-          2to3, pydoc, python, python-config, python2, python2-config,
+          2to3, pydoc, python (シンボリックリンク), python-config (シンボリックリンク),
+          python2 (シンボリックリンク), python2-config (シンボリックリンク),
           python&python2-majorver;, python&python2-majorver;-config,
-          smtpd.py, and optionally if <application>Tk</application>
-          is installed, idle
+          smtpd.py, idle
         </seg>
         <seg>
           libpython&python2-majorver;.so
@@ -326,12 +290,28 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+@x 2to3
+            is a <application>Python</application> program that reads
+            <application>Python 2.x</application> source code and applies a series of
+            fixers to transform it into valid <application>Python 3.x</application>
+            code.
+@y
+            is a <application>Python</application> program that reads
+            <application>Python 2.x</application> source code and applies a series of
+            fixers to transform it into valid <application>Python 3.x</application>
+            code.
+@z
+
 @x idle
             is a wrapper script that opens a <application>Python</application>
-            aware GUI editor.
+            aware GUI editor. For this script to run, you must have installed
+            <application>Tk</application> before Python so that the Tkinter
+            Python module is built.
 @y
             is a wrapper script that opens a <application>Python</application>
-            aware GUI editor.
+            aware GUI editor. For this script to run, you must have installed
+            <application>Tk</application> before Python so that the Tkinter
+            Python module is built.
 @z
 
 @x pydoc
