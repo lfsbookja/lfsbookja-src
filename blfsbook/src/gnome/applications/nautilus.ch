@@ -121,11 +121,13 @@
 @x
     <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
     <para role="recommended">
+      <xref linkend="adwaita-icon-theme"/>, and
       <xref linkend="gvfs"/> (For hotplugging and device mounting to work)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (実行時)</bridgehead>
     <para role="recommended">
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gvfs"/> (ホットプラグ、デバイスマッピングを動作させるため)
     </para>
 @z
@@ -150,9 +152,9 @@
 @z
 
 @x
-      This package needs to be installed before its testsuite can be run.
+      This package does not come with a test suite. 
 @y
-      本パッケージはまずインストールしてからでないと、テストスイートを実行することはできません。
+      &notTestSuite;
 @z
 
 @x
@@ -227,7 +229,7 @@
 @x
         <seg>
           nautilus, 
-          nautilus-autorun-software, and 
+          nautilus-autorun-software,  and
           nautilus-connect-server
         </seg>
         <seg>
@@ -236,9 +238,8 @@
         <seg>
           /usr/include/nautilus,
           /usr/lib/nautilus,
-          /usr/share/gnome-shell/search-providers,
-          /usr/share/gtk-doc/html/libnautilus-extension, and
-          /usr/share/nautilus
+          /usr/share/gnome-shell/search-providers, and
+          /usr/share/gtk-doc/html/libnautilus-extension
         </seg>
 @y
         <seg>
@@ -253,8 +254,7 @@
           /usr/include/nautilus,
           /usr/lib/nautilus,
           /usr/share/gnome-shell/search-providers,
-          /usr/share/gtk-doc/html/libnautilus-extension,
-          /usr/share/nautilus
+          /usr/share/gtk-doc/html/libnautilus-extension
         </seg>
 @z
 

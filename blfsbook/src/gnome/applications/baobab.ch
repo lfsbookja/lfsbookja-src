@@ -77,16 +77,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="vala"/> and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/> and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="vala"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 

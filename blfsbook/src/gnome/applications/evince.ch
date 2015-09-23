@@ -82,18 +82,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-icon-theme"/>,
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>, and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-icon-theme"/>,
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>
     </para>
 @z
 
@@ -118,22 +118,22 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,
-      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>, and
-      <xref linkend="texlive"/>
+      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>, and
+      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,
-      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>,
-      <xref linkend="texlive"/>
+      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
+      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>
     </para>
 @z
 
@@ -225,13 +225,13 @@
           evince, evince-previewer, and evince-thumbnailer
         </seg>
         <seg>
-          libevdocument3.so and libevview3.so and some libraries under
-          /usr/lib/evince/4/backends
+          libevdocument3.so,
+          libevview3.so,
+          /usr/lib/mozilla/plugins/libevbrowserplugin.so, and
+          /usr/lib/nautilus/extensions-3.0/libevince-properties-page.so
         </seg>
         <seg>
-          /usr/include/evince,
-          /usr/lib/evince,
-          /usr/share/evince,
+          /usr/{include,lib,share}/evince,
           /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0}, and
           /usr/share/help/*/evince
         </seg>
@@ -240,12 +240,13 @@
           evince, evince-previewer, evince-thumbnailer
         </seg>
         <seg>
-          libevdocument3.so, libevview3.so, /usr/lib/evince/4/backends 配下のいくつかのライブラリ
+          libevdocument3.so,
+          libevview3.so,
+          /usr/lib/mozilla/plugins/libevbrowserplugin.so,
+          /usr/lib/nautilus/extensions-3.0/libevince-properties-page.so
         </seg>
         <seg>
-          /usr/include/evince,
-          /usr/lib/evince,
-          /usr/share/evince,
+          /usr/{include,lib,share}/evince,
           /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0},
           /usr/share/help/*/evince
         </seg>

@@ -79,16 +79,16 @@
     <para role="required">
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtksourceview"/>,
-      <xref linkend="libpeas"/>, and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>, and
+      <xref linkend="libpeas"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtksourceview"/>,
-      <xref linkend="libpeas"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libpeas"/>
     </para>
 @z
 
@@ -117,14 +117,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <ulink url="https://launchpad.net/zeitgeist/">Zeitgeist</ulink>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="vala"/>, and
+      <ulink url="http://launchpad.net/zeitgeist">zeitgeist</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="https://launchpad.net/zeitgeist/">Zeitgeist</ulink>
+      <xref linkend="vala"/>,
+      <ulink url="http://launchpad.net/zeitgeist">zeitgeist</ulink>
     </para>
 @z
 
@@ -148,10 +150,9 @@
 @z
 
 @x
-      To test the results, issue <command>make check</command> from an
-      X terminal emulator.
+      This package does not come with a test suite.
 @y
-      ビルド結果をテストする場合は、X端末エミュレーター上にて <command>make check</command> を実行します。
+      &notTestSuite;
 @z
 
 @x
@@ -198,31 +199,23 @@
           gnome-text-editor (symlink to gedit)
         </seg>
         <seg>
-          /usr/lib/gedit/libgedit-private.so and
-          several under /usr/lib/gedit/plugins
+          libgedit.so
         </seg>
         <seg>
-          /usr/include/gedit-3.0,
-          /usr/lib/gedit,
-          /usr/share/gedit,
-          /usr/share/gtk-doc/html/gedit, and
-          /usr/share/help/*/gedit
+          /usr/include/gedit-3.14 and
+          /usr/{lib,libexec,share{,/gtk-doc/html,/help/*}}/gedit
         </seg>
 @y
         <seg>
           gedit,
-          gnome-text-editor (&LinkTo1;gedit&LinkTo2;)
+          gnome-text-editor (gedit へのシンボリックリンク)
         </seg>
         <seg>
-          /usr/lib/gedit/libgedit-private.so,
-          /usr/lib/gedit/plugins 配下に数種のライブラリ
+          libgedit.so
         </seg>
         <seg>
-          /usr/include/gedit-3.0,
-          /usr/lib/gedit,
-          /usr/share/gedit,
-          /usr/share/gtk-doc/html/gedit,
-          /usr/share/help/*/gedit
+          /usr/include/gedit-3.14,
+          /usr/{lib,libexec,share{,/gtk-doc/html,/help/*}}/gedit
         </seg>
 @z
 

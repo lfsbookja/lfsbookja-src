@@ -81,13 +81,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/> and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>
     </para>
 @z
 
@@ -123,9 +123,13 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make check</command>. In 32bit
+      systems, Number.float and Number.double tests might fail due to floating
+      point round off errors.
 @y
-      &notTestSuite;
+      To test the results, issue: <command>make check</command>. In 32bit
+      systems, Number.float and Number.double tests might fail due to floating
+      point round off errors.
 @z
 
 @x

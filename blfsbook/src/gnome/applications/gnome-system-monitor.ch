@@ -78,22 +78,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-icon-theme"/>,
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gtkmm3"/>,
-      <xref linkend="libgtop"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libwnck"/>, and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libgtop"/>, and
+      <xref linkend="librsvg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-icon-theme"/>,
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gtkmm3"/>,
+      <xref linkend="itstool"/>,
       <xref linkend="libgtop"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libwnck"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="librsvg"/>
     </para>
 @z
 
@@ -152,7 +150,7 @@
           None
         </seg>
         <seg>
-          /usr/lib/gnome-system-monitor and
+          /usr/libexec/gnome-system-monitor and
           /usr/share/help/*/gnome-system-monitor
         </seg>
 @y
@@ -163,7 +161,7 @@
           &None;
         </seg>
         <seg>
-          /usr/lib/gnome-system-monitor,
+          /usr/libexec/gnome-system-monitor,
           /usr/share/help/*/gnome-system-monitor
         </seg>
 @z

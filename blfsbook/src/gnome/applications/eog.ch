@@ -22,9 +22,10 @@
 @x
       <application>EOG</application> is an application used for
       viewing and cataloging image files on the
-      <application>GNOME</application> Desktop.
+      <application>GNOME</application> Desktop. It has basic editing
+      capabilites.
 @y
-      <application>EOG</application> は、<application>GNOME</application> デスクトップ環境上にて、イメージファイルを表示しカタログ化するアプリケーションです。
+      <application>EOG</application> は、<application>GNOME</application> デスクトップ環境上にて、イメージファイルを表示しカタログ化するアプリケーションであり、基本的な編集機能を提供します。
 @z
 
 @x
@@ -78,20 +79,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="gnome-icon-theme"/>,
-      <xref linkend="libpeas"/>,
-      <xref linkend="shared-mime-info"/>, and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libpeas"/>, and
+      <xref linkend="shared-mime-info"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="gnome-icon-theme"/>,
+      <xref linkend="itstool"/>,
       <xref linkend="libpeas"/>,
-      <xref linkend="shared-mime-info"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="shared-mime-info"/>
     </para>
 @z
 
@@ -172,7 +173,7 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -185,28 +186,22 @@
           eog
         </seg>
         <seg>
-          None
+          libeog.so
         </seg>
         <seg>
-          /usr/include/eog-3.0,
-          /usr/lib/eog,
-          /usr/share/eog,
-          /usr/share/gtk-doc/html/eog, and
-          /usr/share/help/*/eog
+          /usr/include/eog-3.0 and
+          /usr/{lib,share{,/gtk-doc/html,/help/*}}/eog
         </seg>
 @y
         <seg>
           eog
         </seg>
         <seg>
-          &None;
+          libeog.so
         </seg>
         <seg>
           /usr/include/eog-3.0,
-          /usr/lib/eog,
-          /usr/share/eog,
-          /usr/share/gtk-doc/html/eog,
-          /usr/share/help/*/eog
+          /usr/{lib,share{,/gtk-doc/html,/help/*}}/eog
         </seg>
 @z
 
@@ -218,8 +213,8 @@
 
 @x eog
             is a fast and functional image viewer as well as an
-            image cataloging program.
+            image cataloging program.  It has basic editing capabilites.
 @y
             is a fast and functional image viewer as well as an
-            image cataloging program.
+            image cataloging program.  It has basic editing capabilites.
 @z

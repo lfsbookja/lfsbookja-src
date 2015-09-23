@@ -79,16 +79,16 @@
     <para role="required">
       <xref linkend="dconf"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="vte"/>, and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>, and
+      <xref linkend="vte"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dconf"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="vte"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="vte"/>
     </para>
 @z
 
@@ -130,14 +130,15 @@
 @z
 
 @x
-      <option>--with-nautilus-extension</option>: This switch enables
-      building of the <application>Nautilus</application> extension.
-      Remove it if you don't have <application>Nautilus</application>
-      installed.
+      <parameter>--disable-search-provider</parameter>: This switch disables
+      <quote>search <application>gnome-shell</application></quote> provider.
+      Necessary, because <application>gnome-shell</application> is not in BLFS.
+      Remove it, if you have <application>gnome-shell</application> installed.
 @y
-      <option>--with-nautilus-extension</option>:
-      本スイッチは <application>Nautilus</application> 拡張をビルドすることを指示します。
-      <application>Nautilus</application> をインストールしていない場合は、本スイッチを取り除いてください。
+      <parameter>--disable-search-provider</parameter>: This switch disables
+      <quote>search <application>gnome-shell</application></quote> provider.
+      Necessary, because <application>gnome-shell</application> is not in BLFS.
+      Remove it, if you have <application>gnome-shell</application> installed.
 @z
 
 @x
@@ -172,10 +173,9 @@
           gnome-terminal
         </seg>
        <seg>
-          None
+          /usr/lib/nautilus/extensions-3.0/libterminal-nautilus.so
         </seg>
         <seg>
-          /usr/lib/gnome-terminal and
           /usr/share/help/*/gnome-terminal
         </seg>
 @y
@@ -183,10 +183,9 @@
           gnome-terminal
         </seg>
        <seg>
-          &None;
+          /usr/lib/nautilus/extensions-3.0/libterminal-nautilus.so
         </seg>
         <seg>
-          /usr/lib/gnome-terminal and
           /usr/share/help/*/gnome-terminal
         </seg>
 @z

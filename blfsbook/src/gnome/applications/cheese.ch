@@ -77,30 +77,30 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="clutter-gst2"/>,
+      <xref linkend="clutter-gst"/>,
       <xref linkend="clutter-gtk"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-video-effects"/>,
       <xref linkend="gst10-plugins-bad"/>,
-      <xref linkend="gst10-plugins-good"/>,
+      <xref linkend="gst10-plugins-good"/> (built with <xref linkend="v4l-utils"/>),
+      <xref linkend="itstool"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="udev-extras"/> (for GUdev), and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="libgudev"/>, and
+      <xref linkend="librsvg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="clutter-gst2"/>,
+      <xref linkend="clutter-gst"/>,
       <xref linkend="clutter-gtk"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-video-effects"/>,
       <xref linkend="gst10-plugins-bad"/>,
-      <xref linkend="gst10-plugins-good"/>,
+      <xref linkend="gst10-plugins-good"/> (built with <xref linkend="v4l-utils"/>),
+      <xref linkend="itstool"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="udev-extras"/> (for GUdev),
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="libgudev"/>,
+      <xref linkend="librsvg"/>
     </para>
 @z
 
@@ -152,18 +152,15 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      This package does not have a working testsuite.
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      This package does not have a working testsuite.
 @z
 
 @x
-      The tests must be run from a local X Terminal, after
-      <application>Cheese</application> has been installed.
-      To test the results, issue <command>make check</command>.
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      テストはローカルの X ターミナルから実行する必要があり、かつ <application>Cheese</application> がインストール済でなければなりません。
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -197,7 +194,6 @@
         </seg>
         <seg>
           /usr/include/cheese,
-          /usr/share/cheese,
           /usr/share/gtk-doc/html/cheese, and
           /usr/share/help/*/cheese
         </seg>
@@ -210,7 +206,6 @@
         </seg>
         <seg>
           /usr/include/cheese,
-          /usr/share/cheese,
           /usr/share/gtk-doc/html/cheese,
           /usr/share/help/*/cheese
         </seg>

@@ -83,17 +83,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libnotify"/>, and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libcanberra"/>, and
+      <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="itstool"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libnotify"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="libnotify"/>
     </para>
 @z
 
@@ -203,17 +203,14 @@
           brasero
         </seg>
         <seg>
-          libbrasero-burn3.so, 
-          libbrasero-media3.so,
-          libbrasero-utils3.so,
-          several under /usr/lib/brasero3/plugins/, and
+          libbrasero-{burn,media,utils}3.so, and
           /usr/lib/nautilus/extensions-3.0/libnautilus-brasero-extension.so
         </seg>
         <seg>
           /usr/include/brasero3,
           /usr/lib/brasero3,
           /usr/share/brasero,
-          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media}, and
+          /usr/share/gtk-doc/html/libbrasero-{burn,media}, and
           /usr/share/help/*/brasero
         </seg>
 @y
@@ -221,17 +218,14 @@
           brasero
         </seg>
         <seg>
-          libbrasero-burn3.so, 
-          libbrasero-media3.so,
-          libbrasero-utils3.so,
-          /usr/lib/brasero3/plugins/ 配下に数種のライブラリ,
+          libbrasero-{burn,media,utils}3.so,
           /usr/lib/nautilus/extensions-3.0/libnautilus-brasero-extension.so
         </seg>
         <seg>
           /usr/include/brasero3,
           /usr/lib/brasero3,
           /usr/share/brasero,
-          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media},
+          /usr/share/gtk-doc/html/libbrasero-{burn,media},
           /usr/share/help/*/brasero
         </seg>
 @z

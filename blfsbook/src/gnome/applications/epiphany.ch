@@ -84,7 +84,7 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libwnck"/>, and
-      <xref linkend="webkitgtk2"/>
+      <xref linkend="webkitgtk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -94,7 +94,7 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libwnck"/>,
-      <xref linkend="webkitgtk2"/>
+      <xref linkend="webkitgtk"/>
     </para>
 @z
 
@@ -173,10 +173,10 @@
 
 @x
         <seg>
-          epiphany
+          epiphany and ephy-profile-migrator
         </seg>
         <seg>
-          None
+          libephywebextension.so
         </seg>
         <seg>
           /usr/lib/epiphany,
@@ -185,10 +185,10 @@
         </seg>
 @y
         <seg>
-          epiphany
+          epiphany, ephy-profile-migrator
         </seg>
         <seg>
-          &None;
+          libephywebextension.so
         </seg>
         <seg>
           /usr/lib/epiphany,

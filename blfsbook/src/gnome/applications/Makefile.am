@@ -18,15 +18,13 @@ CHANGE_FILES = \
 	gedit.ch                \
 	gnome-calculator.ch     \
 	gnome-nettool.ch        \
-	gnome-power-manager.ch  \
 	gnome-screenshot.ch     \
 	gnome-system-monitor.ch \
 	gnome-terminal.ch       \
 	gucharmap.ch            \
 	nautilus.ch             \
 	network-manager-applet.ch \
-	seahorse.ch             \
-	totem.ch
+	seahorse.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -57,7 +55,6 @@ gedit.xml:                $(BOOKdir)/$@ $(srcdir)/gedit.ch
 #	rm -f $@.tmp
 gnome-calculator.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-calculator.ch
 gnome-nettool.xml:        $(BOOKdir)/$@ $(srcdir)/gnome-nettool.ch
-gnome-power-manager.xml:  $(BOOKdir)/$@ $(srcdir)/gnome-power-manager.ch
 gnome-screenshot.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-screenshot.ch
 gnome-system-monitor.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-monitor.ch
 gnome-terminal.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-terminal.ch
@@ -65,4 +62,3 @@ gucharmap.xml:            $(BOOKdir)/$@ $(srcdir)/gucharmap.ch
 nautilus.xml:             $(BOOKdir)/$@ $(srcdir)/nautilus.ch
 network-manager-applet.xml: $(BOOKdir)/$@ $(srcdir)/network-manager-applet.ch
 seahorse.xml:             $(BOOKdir)/$@ $(srcdir)/seahorse.ch
-totem.xml:                $(BOOKdir)/$@ $(srcdir)/totem.ch

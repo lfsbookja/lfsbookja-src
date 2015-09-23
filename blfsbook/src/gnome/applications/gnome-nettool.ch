@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -80,22 +80,23 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="libgtop"/>, and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>, and
+      <xref linkend="libgtop"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="libgtop"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libgtop"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref linkend="bind"/>,
+      <xref linkend="bind-utils"/>,
+      <xref linkend="nmap"/>,
       <xref linkend="net-tools"/>,
       <xref linkend="traceroute"/>, and
       <xref linkend="whois"/>
@@ -103,7 +104,8 @@
 @y
     <bridgehead renderas="sect4">実行時の依存パッケージ</bridgehead>
     <para role="optional">
-      <xref linkend="bind"/>,
+      <xref linkend="bind-utils"/>,
+      <xref linkend="nmap"/>,
       <xref linkend="net-tools"/>,
       <xref linkend="traceroute"/>,
       <xref linkend="whois"/>
