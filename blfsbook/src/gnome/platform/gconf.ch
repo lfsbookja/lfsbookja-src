@@ -78,15 +78,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="intltool"/> and
+      <xref linkend="dbus-glib"/> and
       <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="libxml2"/>
     </para>
 @z
@@ -197,7 +195,6 @@
           /etc/gconf,
           /usr/include/gconf,
           /usr/lib/GConf,
-          /usr/share/GConf,
           /usr/share/gtk-doc/html/gconf and
           /usr/share/sgml/gconf
         </seg>
@@ -213,7 +210,6 @@
           /etc/gconf,
           /usr/include/gconf,
           /usr/lib/GConf,
-          /usr/share/GConf,
           /usr/share/gtk-doc/html/gconf,
           /usr/share/sgml/gconf
         </seg>

@@ -21,7 +21,6 @@ CHANGE_FILES = \
 	gnome-themes-standard.ch     \
 	gnome-video-effects.ch       \
 	gsettings-desktop-schemas.ch \
-	gtksourceview.ch             \
 	gvfs.ch                      \
 	libgtop.ch                   \
 	libpeas.ch                   \
@@ -60,7 +59,6 @@ gnome-icon-theme-symbolic.xml: $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-symbolic
 gnome-icon-theme-extras.xml:   $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-extras.ch
 gnome-keyring.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-keyring.ch
 gnome-video-effects.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-video-effects.ch
-gtksourceview.xml:             $(BOOKdir)/$@ $(srcdir)/gtksourceview.ch
 gsettings-desktop-schemas.xml: $(BOOKdir)/$@ $(srcdir)/gsettings-desktop-schemas.ch
 gvfs.xml:                      $(BOOKdir)/$@ $(srcdir)/gvfs.ch
 libgtop.xml:                   $(BOOKdir)/$@ $(srcdir)/libgtop.ch

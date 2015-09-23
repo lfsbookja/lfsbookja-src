@@ -25,6 +25,7 @@ CHANGE_FILES = \
 	gtk+3.ch                \
 	gtkmm2.ch               \
 	gtkmm3.ch               \
+        gtksourceview.ch        \
 	gtk-engines.ch          \
         glu.ch                  \
         imlib2.ch               \
@@ -80,6 +81,7 @@ gtkmm3.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm3.ch
 #	sed -e 's/®/\&reg;/g' $(BOOKdir)/$@.orig > $(BOOKdir)/$@
 #	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 #	cp -p $(BOOKdir)/$@{.orig,}
+gtksourceview.xml:        $(BOOKdir)/$@ $(srcdir)/gtksourceview.ch
 imlib2.xml:               $(BOOKdir)/$@ $(srcdir)/imlib2.ch
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
 libdrm.xml:               $(BOOKdir)/$@ $(srcdir)/libdrm.ch

@@ -79,14 +79,14 @@
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>, and
-      <xref linkend="JS"/>
+      <xref linkend="JS2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="JS"/>
+      <xref linkend="JS2"/>
     </para>
 @z
 
@@ -110,9 +110,9 @@
 @z
 
 @x
-      The package comes with a testsuite, but it fails for yet unknown reasons.
+      To test the results, issue: <command>make check</command>.
 @y
-      本パッケージにテストスイートがありますが、正常動作はしません。その理由は不明です。
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -139,7 +139,7 @@
 
 @x
         <seg>
-          gjs and gjs-console
+          gjs (symlink) and gjs-console
         </seg>
         <seg>
           libgjs.so
@@ -147,11 +147,11 @@
         <seg>
           /usr/include/gjs-1.0,
           /usr/lib/gjs, and
-          /usr/share/gjs-1.0
+          /usr/libexec/gjs
         </seg>
 @y
         <seg>
-          gjs, gjs-console
+          gjs (シンボリックリンク), gjs-console
         </seg>
         <seg>
           libgjs.so
@@ -159,7 +159,7 @@
         <seg>
           /usr/include/gjs-1.0,
           /usr/lib/gjs,
-          /usr/share/gjs-1.0
+          /usr/libexec/gjs
         </seg>
 @z
 

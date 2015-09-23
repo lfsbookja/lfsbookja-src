@@ -77,18 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="intltool"/> and
-      <xref linkend="libcanberra"/>
-      (Built with <xref linkend="gtk3"/> support).
+      <xref linkend="gtk3"/> and
+      <xref linkend="libcanberra"/> (Built with <xref linkend="gtk3"/> support).
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="intltool"/>,
-      <xref linkend="libcanberra"/>
-      (<xref linkend="gtk3"/> サポートがビルドされたもの)
+      <xref linkend="libcanberra"/> (Built with <xref linkend="gtk3"/> support).
     </para>
 @z
 
@@ -141,34 +137,22 @@
 
 @x
         <seg>
-          notification-daemon
+          none
         </seg>
         <seg>
           none
         </seg>
         <seg>
-          /usr/lib/notification-daemon
+          none
         </seg>
 @y
         <seg>
-          notification-daemon
+          &None;
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
-          /usr/lib/notification-daemon
+          &None;
         </seg>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x notification-daemon
-            is the <application>Notification Daemon</application> itself.
-@y
-            <application>Notification Daemon</application> (通知デーモン)。
 @z

@@ -80,12 +80,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/> and
+      <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="libxml2"/>
     </para>
 @z
 
@@ -104,14 +106,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://glade.gnome.org/">Glade</ulink> and
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gnutls"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="vala"/>, and
+      <ulink url="http://glade.gnome.org/">Glade</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://glade.gnome.org/">Glade</ulink>,
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gnutls"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="vala"/>,
+      <ulink url="http://glade.gnome.org/">Glade</ulink>
     </para>
 @z
 
@@ -182,27 +188,25 @@
 
 @x
         <seg>
-          vte2_90
+          vte-2.&vte-nano;
         </seg>
         <seg>
-          libvte2_90.so
+          libvte-2.&vte-nano;.so
         </seg>
         <seg>
-          /usr/include/vte-2.90,
-          /usr/lib/vte-2.90, and
-          /usr/share/gtk-doc/html/vte-2.90
+          /usr/include/vte-2.&vte-nano; and
+          /usr/share/gtk-doc/html/vte-2.&vte-nano;
         </seg>
 @y
         <seg>
-          vte2_90
+          vte-2.&vte-nano;
         </seg>
         <seg>
-          libvte2_90.so
+          libvte-2.&vte-nano;.so
         </seg>
         <seg>
-          /usr/include/vte-2.90,
-          /usr/lib/vte-2.90,
-          /usr/share/gtk-doc/html/vte-2.90
+          /usr/include/vte-2.&vte-nano;,
+          /usr/share/gtk-doc/html/vte-2.&vte-nano;
         </seg>
 @z
 

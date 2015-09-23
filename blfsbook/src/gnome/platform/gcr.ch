@@ -83,7 +83,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libtasn1"/>, and
       <xref linkend="p11-kit"/>
@@ -92,7 +91,6 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libtasn1"/>,
       <xref linkend="p11-kit"/>
@@ -103,15 +101,19 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gnupg2"/>,
-      <xref linkend="gobject-introspection"/>, and
-      <xref linkend="gtk3"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libxslt"/>, and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gnupg2"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -119,13 +121,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <ulink url="http://www.valgrind.org">Valgrind</ulink>
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://www.valgrind.org">Valgrind</ulink>
+      <xref linkend="valgrind"/>
     </para>
 @z
 
@@ -149,11 +151,11 @@
 @z
 
 @x
-      A session bus address is necessary to run the tests. To test the results,
-      issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>.
+      Some tests fail for unknown reasons.
 @y
-      A session bus address is necessary to run the tests. To test the results,
-      issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>.
+      Some tests fail for unknown reasons.
 @z
 
 @x
@@ -189,12 +191,11 @@
           gcr-viewer
         </seg>
         <seg>
-          libgck-1.so, libgcr-3.so, and libgcr-base-3.so
+          libgck-1.so, libgcr-3.so, libgcr-base-3.so and libgcr-ui-3.so
         </seg>
         <seg>
           /usr/include/gck-1,
           /usr/include/gcr-3,
-          /usr/lib/gnome-keyring,
           /usr/share/gcr-3,
           /usr/share/gtk-doc/html/gck, and
           /usr/share/gtk-doc/html/gcr-3
@@ -204,12 +205,11 @@
           gcr-viewer
         </seg>
         <seg>
-          libgck-1.so, libgcr-3.so, libgcr-base-3.so
+          libgck-1.so, libgcr-3.so, libgcr-base-3.so, libgcr-ui-3.so
         </seg>
         <seg>
           /usr/include/gck-1,
           /usr/include/gcr-3,
-          /usr/lib/gnome-keyring,
           /usr/share/gcr-3,
           /usr/share/gtk-doc/html/gck,
           /usr/share/gtk-doc/html/gcr-3

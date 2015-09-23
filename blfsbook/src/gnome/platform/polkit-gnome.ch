@@ -179,7 +179,7 @@
           None
         </seg>
         <seg>
-          /usr/lib/polkit-gnome
+          None
         </seg>
 @y
         <seg>
@@ -189,7 +189,7 @@
           &None;
         </seg>
         <seg>
-          /usr/lib/polkit-gnome
+          &None;
         </seg>
 @z
 

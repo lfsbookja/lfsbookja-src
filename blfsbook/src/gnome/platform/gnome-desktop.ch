@@ -83,8 +83,8 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
-      <xref linkend="xkeyboard-config"/>, and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>, and
+      <xref linkend="xkeyboard-config"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -92,8 +92,8 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
-      <xref linkend="xkeyboard-config"/>,
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="xkeyboard-config"/>
     </para>
 @z
 
@@ -193,11 +193,9 @@
         </seg>
         <seg>
           /usr/include/gnome-desktop-3.0,
-          /usr/lib/gnome-desktop-3.0,
+          /usr/share/gnome,
           /usr/share/gtk-doc/html/gnome-desktop3,
-          /usr/share/help/*/gpl,
-          /usr/share/help/*/lgpl,
-          /usr/share/help/*/fdl, and
+          /usr/share/help/*/{gpl,lgpl,fdl}, and
           /usr/share/libgnome-desktop-3.0
         </seg>
 @y
@@ -209,11 +207,9 @@
         </seg>
         <seg>
           /usr/include/gnome-desktop-3.0,
-          /usr/lib/gnome-desktop-3.0,
+          /usr/share/gnome,
           /usr/share/gtk-doc/html/gnome-desktop3,
-          /usr/share/help/*/gpl,
-          /usr/share/help/*/lgpl,
-          /usr/share/help/*/fdl,
+          /usr/share/help/*/{gpl,lgpl,fdl},
           /usr/share/libgnome-desktop-3.0
         </seg>
 @z

@@ -80,15 +80,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gmime"/>,
-      <xref linkend="intltool"/>, and
+      <xref linkend="gmime"/> and
       <xref linkend="libsoup"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gmime"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="libsoup"/>
     </para>
 @z
@@ -112,14 +110,22 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9)</ulink>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> lcov</ulink>, and
+      <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9) and libquvi-scripts</ulink>
+      - if they are installed, then
+      <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
+      is necessary for the tests
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9)</ulink>
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> lcov</ulink>, and
+      <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9) and libquvi-scripts</ulink>
+      - if they are installed, then
+      <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
+      is necessary for the tests
     </para>
 @z
 
@@ -143,11 +149,19 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. You will need
-      an active internet connection in order to successfully complete all tests.
+      If you wish to run the test suite, disable two tests which fail,
+      by running:
+@y
+      ビルド結果のテストにあたっては、2つのテストが失敗するためこれを実行しないようにします。
+@z
+
+@x
+      To test the results, issue: <command>make check</command>. You will
+      need an active internet connection in order to successfully complete all
+      tests.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      すべてのテストを成功させるためには、インターネット接続環境が必要です。
+      すべてのテストを成功させるためにはインターネット接続環境が必要です。
 @z
 
 @x
@@ -186,8 +200,7 @@
           libtotem-plparser-mini.so and libtotem-plparser.so
         </seg>
         <seg>
-          /usr/include/totem-pl-parser,
-          /usr/lib/totem-pl-parser, and
+          /usr/include/totem-pl-parser and
           /usr/share/gtk-doc/html/totem-pl-parser
         </seg>
 @y
@@ -199,7 +212,6 @@
         </seg>
         <seg>
           /usr/include/totem-pl-parser,
-          /usr/lib/totem-pl-parser,
           /usr/share/gtk-doc/html/totem-pl-parser
         </seg>
 @z

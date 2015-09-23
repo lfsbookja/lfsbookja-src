@@ -79,16 +79,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>, and
-      <xref linkend="intltool"/>
+      <xref linkend="dbus"/> and
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="glib2"/>
     </para>
 @z
 
@@ -96,18 +94,18 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>,
-      <xref linkend="udev-extras"/> (for GUdev), and
+      <xref linkend="libsoup"/>, and
       <xref linkend="udisks2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="udev-extras"/> (for GUdev),
       <xref linkend="udisks2"/>
     </para>
 @z
@@ -115,44 +113,48 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
-      <xref linkend="bluez"/> and
+      <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="fuse"/>,
-      <ulink url="&gnome-download-http;/gnome-online-accounts">
-      GNOME Online Accounts</ulink>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
-      <ulink url="http://www.videolan.org/developers/libbluray.html">
-      libbluray</ulink>,
-      <ulink url="http://www.gnu.org/software/libcdio/">libcdio-paranoia</ulink>,
+      <xref linkend="libcdio"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openssh"/>,
+      <xref linkend="samba"/>,
+      <ulink url="&gnome-download-http;/gnome-online-accounts">GNOME Online Accounts</ulink>,
+      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>,
-      <xref linkend="openssh"/>, and
-      <xref linkend="samba"/>
+      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, and
+      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
-      <xref linkend="bluez"/> and
+      <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="fuse"/>,
-      <ulink url="&gnome-download-http;/gnome-online-accounts">
-      GNOME Online Accounts</ulink>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
-      <ulink url="http://www.videolan.org/developers/libbluray.html">
-      libbluray</ulink>,
-      <ulink url="http://www.gnu.org/software/libcdio/">libcdio-paranoia</ulink>,
+      <xref linkend="libcdio"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openssh"/>,
+      <xref linkend="samba"/>,
+      <ulink url="&gnome-download-http;/gnome-online-accounts">GNOME Online Accounts</ulink>,
+      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>,
-      <xref linkend="openssh"/>, and
-      <xref linkend="samba"/>
+      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, and
+      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
     </para>
 @z
 
@@ -188,7 +190,10 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      <!--To test the results, issue: <command>make -k check</command>.
+      Some tests (potentially half) may fail, normally due to a missing
+      optional dependency.-->This package does not come with a working
+      test suite.
 @y
       &notTestSuite;
 @z
@@ -234,14 +239,15 @@
 
 @x
         <seg>
-          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls,
-          gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file,
-          gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm,
-          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree,
-          gvfsd, gvfsd-fuse, and gvfsd-metadata
+          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mime,
+          gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
+          gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
+          gvfs-set-attribute, gvfs-trash, and gvfs-tree
         </seg>
         <seg>
-          libgvfscommon.so
+          libgvfscommon.so,
+          libgvfsdaemon.so and
+          some under /usr/lib/gio/modules/
         </seg>
         <seg>
           /usr/include/gvfs-client,
@@ -250,14 +256,15 @@
         </seg>
 @y
         <seg>
-          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls,
-          gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file,
-          gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm,
-          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree,
-          gvfsd, gvfsd-fuse, gvfsd-metadata
+          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mime,
+          gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
+          gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
+          gvfs-set-attribute, gvfs-trash, gvfs-tree
         </seg>
         <seg>
-          libgvfscommon.so
+          libgvfscommon.so,
+          libgvfsdaemon.so,
+          /usr/lib/gio/modules/ 配下に数種のライブラリ
         </seg>
         <seg>
           /usr/include/gvfs-client,

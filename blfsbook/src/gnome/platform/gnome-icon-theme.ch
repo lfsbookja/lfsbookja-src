@@ -79,10 +79,8 @@
     <para role="required">
       <xref linkend="gtk3"/> or
       <xref linkend="gtk2"/>,
-      <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="icon-naming-utils"/>, 
-      <xref linkend="intltool"/>, and
-      <xref linkend="perl-xml-simple"/>
+      <xref linkend="hicolor-icon-theme"/>, and
+      <xref linkend="icon-naming-utils"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -90,9 +88,7 @@
       <xref linkend="gtk3"/> または
       <xref linkend="gtk2"/>,
       <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="icon-naming-utils"/>, 
-      <xref linkend="intltool"/>,
-      <xref linkend="perl-xml-simple"/>
+      <xref linkend="icon-naming-utils"/>
     </para>
 @z
 

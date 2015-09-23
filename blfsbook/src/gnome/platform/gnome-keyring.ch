@@ -91,26 +91,32 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="linux-pam"/>
+      <xref linkend="linux-pam"/> and
+      <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="linux-pam"/>
+      <xref linkend="linux-pam"/>,
+      <xref linkend="libxslt"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> and
-      <ulink url="http://www.valgrind.org">Valgrind</ulink>
+      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
+      <xref linkend="gnupg2"/>,
+      <xref linkend="openssh"/> and
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
-      <ulink url="http://www.valgrind.org">Valgrind</ulink>
+      <xref linkend="gnupg2"/>,
+      <xref linkend="openssh"/>,
+      <xref linkend="valgrind"/>
     </para>
 @z
 
@@ -134,9 +140,11 @@
 @z
 
 @x
-      To test the results, issue <command>make check</command>.
+      A session bus address is necessary to run the tests. To test the results,
+      issue: <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする際にはセッションバスアドレスが必要です。
+      テストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -177,23 +185,23 @@
 
 @x
         <seg>
-          gnome-keyring, gnome-keyring-3, and gnome-keyring-daemon
+          gnome-keyring (symlink), gnome-keyring-3, and gnome-keyring-daemon
         </seg>
         <seg>
           gnome-keyring-pkcs11.so and pam_gnome_keyring.so
         </seg>
         <seg>
-          /usr/lib/gnome-keyring/devel
+          /usr/lib/gnome-keyring
         </seg>
 @y
         <seg>
-          gnome-keyring, gnome-keyring-3, gnome-keyring-daemon
+          gnome-keyring (シンボリックリンク), gnome-keyring-3, gnome-keyring-daemon
         </seg>
         <seg>
           gnome-keyring-pkcs11.so, pam_gnome_keyring.so
         </seg>
         <seg>
-          /usr/lib/gnome-keyring/devel
+          /usr/lib/gnome-keyring
         </seg>
 @z
 
