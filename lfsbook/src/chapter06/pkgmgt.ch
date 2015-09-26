@@ -507,7 +507,7 @@
 @x
     <para>One of the advantages of an LFS system is that there are no files that
     depend on the position of files on a disk system.  Cloning an LFS build to
-    another computer with an architecture similar to the base system is as
+    another computer with the same architecture as the base system is as
     simple as using <command>tar</command> on the LFS partition that contains
     the root directory (about 250MB uncompressed for a base LFS build), copying
     that file via network transfer or CD-ROM to the new system and expanding
@@ -550,6 +550,19 @@
       <para>
       新しいシステムのハードウェアと元のカーネルに差異があるかもしれないため、カーネルを再ビルドする必要があるでしょう。
       </para>
+@z
+
+@x
+    <note><para>There have been some reports of issues when copying between 
+    similar but not identical architectures.  For instance the instruction set
+    for Intel architectures is not identical with AMD processors and later
+    versions of some processors may have instructions not available in
+    earlier versions.</para></note>
+@y
+    <note><para>
+    類似するアーキテクチャーのシステム間にてコピーを行う際には問題が生じるとの報告があります。
+    例えばインテルアーキテクチャーに対する命令セットは AMD プロセッサーに対するものと完全に一致しているわけではないため、一方の命令セットが後に他方で動作しなくなることも考えられます。
+    </para></note>
 @z
 
 @x

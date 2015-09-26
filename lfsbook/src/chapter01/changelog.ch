@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2015-09-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add additional discussion about copying an LFS 
+          system from one machine to another.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-09-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 他のマシンへの LFS システムのコピーについての問題点を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-09-17</para>
       <itemizedlist>
         <listitem>
