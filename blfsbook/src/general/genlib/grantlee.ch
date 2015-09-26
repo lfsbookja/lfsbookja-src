@@ -151,9 +151,9 @@
            libgrantlee_gui.so
         </seg>
         <seg>
-           &kde-dir;/lib/cmake/grantlee, 
-           &kde-dir;/lib/grantlee/0.4, and
-           &kde-dir;/include/grantlee</seg>
+           /usr/lib/cmake/grantlee, 
+           /usr/lib/grantlee/0.4, and
+           /usr/include/grantlee</seg>
 @y
         <seg>&None;</seg>
         <seg>
@@ -161,7 +161,7 @@
            libgrantlee_gui.so
         </seg>
         <seg>
-           &kde-dir;/lib/cmake/grantlee, 
-           &kde-dir;/lib/grantlee/0.4,
-           &kde-dir;/include/grantlee</seg>
+           /usr/lib/cmake/grantlee, 
+           /usr/lib/grantlee/0.4,
+           /usr/include/grantlee</seg>
 @z

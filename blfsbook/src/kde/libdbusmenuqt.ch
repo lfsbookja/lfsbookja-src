@@ -21,11 +21,17 @@
 
 @x
     <para>This library provides a <application>Qt</application> implementation
-    of the DBusMenu specs, which goal is to expose menus on DBus.</para>
+    of the DBusMenu specification that exposes menus via DBus.  Its
+    libraries are used by both KDE4 and KF5, but they must be linked to <xref
+    linkend='qt4'/> and <xref linkend='qt5'/> respectively. The two versions do
+    not conflict with each other. </para>
 @y
     <para>
     このライブラリは DBusMenu 仕様の <application>Qt</application> による実装です。
     DBus 上にてメニュー表示を行うことを目的としています。
+    Its libraries are used by both KDE4 and KF5, but they must be linked to <xref
+    linkend='qt4'/> and <xref linkend='qt5'/> respectively. The two versions do
+    not conflict with each other. 
     </para>
 @z
 
@@ -80,12 +86,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>
+    <xref linkend="qt4"/> or <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>
+    <xref linkend="qt4"/> または <xref linkend="qt5"/>
     </para>
 @z
 
@@ -116,22 +122,23 @@
 @z
 
 @x
-    <para>Install <application>libdbusmenu-qt</application> by running the following
+    <para>Install the qt4 based version of
+    <application>libdbusmenu-qt</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>libdbusmenu-qt</application> をビルドします。
+    以下のコマンドを実行して qt4 ベースの <application>libdbusmenu-qt</application> をビルドします。
     </para>
 @z
 
 @x
     <para>To test the results
-    (<ulink url="http://qjson.sourceforge.net/">QJson</ulink> must be installed),
-    issue: <command>make check</command>.</para>
+    (<xref linkend="qjson"/> must be installed),
+    issue: <command>make -k check</command>. One test is known to fail.</para>
 @y
     <para>
-    ビルド結果をテストする場合 (その場合は <ulink
-    url="http://qjson.sourceforge.net/">QJson</ulink> のインストールが必要であり)、<command>make check</command> を実行します。
+    ビルド結果をテストする場合 (その場合は <xref
+    linkend="qjson"/> のインストールが必要であり)、<command>make -k check</command> を実行します。
     </para>
 @z
 
@@ -186,10 +193,12 @@
 
 @x
         <seg>None</seg>
-        <seg>libdbusmenu-qt.so</seg>
-        <seg>&qt4-dir;/include/dbusmenu-qt</seg>
+        <seg>libdbusmenu-qt.so and libdbusmenu-qt5.so</seg>
+        <seg>/usr/include/dbusmenu-qt and
+             /usr/include/dbusmenu-qt5</seg>
 @y
         <seg>&None;</seg>
-        <seg>libdbusmenu-qt.so</seg>
-        <seg>&qt4-dir;/include/dbusmenu-qt</seg>
+        <seg>libdbusmenu-qt.so, libdbusmenu-qt5.so</seg>
+        <seg>/usr/include/dbusmenu-qt,
+             /usr/include/dbusmenu-qt5</seg>
 @z

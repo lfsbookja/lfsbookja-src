@@ -80,38 +80,38 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="nepomuk-core"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="gpgme"/>,
-    <xref linkend="libical"/>,
-    <xref linkend="akonadi"/>,
-    <xref linkend="cyrus-sasl"/>,
-    <xref linkend="boost"/> and
-    <xref linkend="qjson"/>
+      <xref linkend="kdelibs"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="gpgme"/>,
+      <xref linkend="libical"/>,
+      <xref linkend="akonadi"/>,
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="boost"/>, and
+      <xref linkend="qjson"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="nepomuk-core"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="gpgme"/>,
-    <xref linkend="libical"/>,
-    <xref linkend="akonadi"/>,
-    <xref linkend="cyrus-sasl"/>,
-    <xref linkend="boost"/>,
-    <xref linkend="qjson"/>
+      <xref linkend="kdelibs"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="gpgme"/>,
+      <xref linkend="libical"/>,
+      <xref linkend="akonadi"/>,
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="boost"/>,
+      <xref linkend="qjson"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="openldap"/>
+      <xref linkend="openldap"/> (if connecting to an LDAP server)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="openldap"/>
+      <xref linkend="openldap"/> (LDAP サーバー接続時)
     </para>
 @z
 
@@ -170,11 +170,13 @@
 @z
 
 @x
-        <seg>akonadi_benchmarker and akonaditest</seg>
+        <seg>akonadi2xml, akonadi_benchmarker, and akonaditest</seg>
         <seg>several in &kde-dir;/lib</seg>
         <seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
+        </seg>
 @y
-        <seg>akonadi_benchmarker, akonaditest</seg>
+        <seg>akonadi2xml, akonadi_benchmarker, akonaditest</seg>
         <seg>&kde-dir;/lib 配下に数種のライブラリ</seg>
         <seg>&kde-dir;/include, &kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ
+        </seg>
 @z

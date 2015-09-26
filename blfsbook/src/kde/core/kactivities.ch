@@ -78,24 +78,24 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/> 
+      <xref linkend="kdelibs"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/> 
+      <xref linkend="kdelibs"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-    <xref linkend="nepomuk-core"/> 
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <ulink url="&kde-download-http;&kde-version;/src">nepomuk-core</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-    <xref linkend="nepomuk-core"/> 
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <ulink url="&kde-download-http;&kde-version;/src">nepomuk-core</ulink>
     </para>
 @z
 

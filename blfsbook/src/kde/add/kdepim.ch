@@ -82,12 +82,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="grantlee"/> and
+      <xref linkend="boost"/>, 
+      <xref linkend="grantlee"/>, and
       <xref linkend="kdepim-runtime"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="boost"/>, 
       <xref linkend="grantlee"/>,
       <xref linkend="kdepim-runtime"/>
     </para>
@@ -96,15 +98,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="nepomuk-widgets"/>,
-      <xref linkend="boost"/>, and
       <xref linkend="libassuan"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="nepomuk-widgets"/>,
-      <xref linkend="boost"/>,
       <xref linkend="libassuan"/>
     </para>
 @z
@@ -112,14 +110,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <ulink url="&kde-download-http;&kde-version;/src">nepomuk-widgets</ulink>,
       <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>,
-      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>
+      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>, and
+      <ulink url="http://www.abisource.com/projects/link-grammar/">LinkGrammar</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <ulink url="&kde-download-http;&kde-version;/src">nepomuk-widgets</ulink>,
       <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>,
-      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>
+      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>, and
+      <ulink url="http://www.abisource.com/projects/link-grammar/">LinkGrammar</ulink>
     </para>
 @z
 
@@ -169,27 +171,33 @@
 @z
 
 @x
-        <seg>akonadi_archivemail_agent, akonadi_mailfilter_agent,
+        <seg>akonadi_archivemail_agent, akonadi_followupreminder_agent, 
+        akonadi_mailfilter_agent, akonadi_notes_agent, akonadi_sendlater_agent,
         akonadiconsole, akregator, akregatorstorageexporter,
-        blogilo, ical2vcal, importwizard, kabc2mutt, kabcclient,
-        kaddressbook, kaddressbook-mobile, kalarm, kalarmautostart, karm,
-        kgpgconf, kincidenceeditor, kleopatra, kmail, kmail-mobile,
+        calendarjanitor, contactthemeeditor, headerthemeeditor,
+        ical2vcal, importwizard, kabc2mutt, kabcclient, kaddressbook, 
+        kaddressbook-mobile, kalarm, kalarmautostart, karm,
+        kgpgconf, kincidenceeditor, kjotes, kleopatra, kmail, kmail-mobile,
         kmail_antivir.sh, kmail_clamav.sh, kmail_fprot.sh, kmail_sav.sh,
         kmailcvt, knode, knotes, konsolekalendar, kontact, korgac, korganizer,
-        korganizer-mobile, ksendemail, ktimetracker, ktnef, kwatchgnupg,
-        notes-mobile, pimsettingexporter and tasks-mobile</seg>
+        korganizer-mobile, ksendemail, ktimetracker, ktnef, kwatchgnupg, 
+        mboximporter, notes-mobile, pimsettingexporter, sieveeditor, storageservicemanger,
+        and tasks-mobile</seg>
         <seg>several in &kde-dir;/lib</seg>
         <seg>several in &kde-dir;/share</seg>
 @y
-        <seg>akonadi_archivemail_agent, akonadi_mailfilter_agent,
+        <seg>akonadi_archivemail_agent, akonadi_followupreminder_agent, 
+        akonadi_mailfilter_agent, akonadi_notes_agent, akonadi_sendlater_agent,
         akonadiconsole, akregator, akregatorstorageexporter,
-        blogilo, ical2vcal, importwizard, kabc2mutt, kabcclient,
-        kaddressbook, kaddressbook-mobile, kalarm, kalarmautostart, karm,
-        kgpgconf, kincidenceeditor, kleopatra, kmail, kmail-mobile,
+        calendarjanitor, contactthemeeditor, headerthemeeditor,
+        ical2vcal, importwizard, kabc2mutt, kabcclient, kaddressbook, 
+        kaddressbook-mobile, kalarm, kalarmautostart, karm,
+        kgpgconf, kincidenceeditor, kjotes, kleopatra, kmail, kmail-mobile,
         kmail_antivir.sh, kmail_clamav.sh, kmail_fprot.sh, kmail_sav.sh,
         kmailcvt, knode, knotes, konsolekalendar, kontact, korgac, korganizer,
-        korganizer-mobile, ksendemail, ktimetracker, ktnef, kwatchgnupg,
-        notes-mobile, pimsettingexporter, tasks-mobile</seg>
+        korganizer-mobile, ksendemail, ktimetracker, ktnef, kwatchgnupg, 
+        mboximporter, notes-mobile, pimsettingexporter, sieveeditor, storageservicemanger,
+        tasks-mobile</seg>
         <seg>&kde-dir;/lib 配下に数種のライブラリ</seg>
         <seg>&kde-dir;/share 配下に数種のディレクトリ</seg>
 @z

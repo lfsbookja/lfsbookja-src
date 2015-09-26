@@ -91,14 +91,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://projects.kde.org/libkgapi">LibKGAPI</ulink> (to access Google services) and
-    <ulink url="http://git.kolab.org">KolabLibraries</ulink>
+    <ulink url="http://git.kolab.org">KolabLibraries</ulink> (for Kolab Groupware Resource),
+    <ulink url="http://projects.kde.org/libkgapi">libKGAPI</ulink> (to access Google services), and
+    <ulink url="http://projects.kde.org/libkfbapi">libKFbAPI</ulink> (to access Facebook services)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <ulink url="http://projects.kde.org/libkgapi">LibKGAPI</ulink> (Google サービスへのアクセスのため),
-    <ulink url="http://git.kolab.org">KolabLibraries</ulink>
+    <ulink url="http://git.kolab.org">KolabLibraries</ulink> (for Kolab Groupware Resource),
+    <ulink url="http://projects.kde.org/libkgapi">libKGAPI</ulink> (to access Google services),
+    <ulink url="http://projects.kde.org/libkfbapi">libKFbAPI</ulink> (to access Facebook services)
     </para>
 @z
 
@@ -148,21 +150,19 @@
 @z
 
 @x
-        <seg>accountwizard, akonadi2xml, akonadi_nepomuk_feeder,
-        akonadi_*_agent, akonadi_*_resource, akonaditray,
-        kaddressbookmigrator, kjotsmigrator, kmail-migrator, kres-migrator and
-        nepomukpimindexerutility</seg>
-        <seg>libakonadi-filestore.so, libakonadi-xml.so, libkdepim-copy.so,
-        libkmindexreader.so, libmaildir.so, libnepomukfeederpluginlib.a and
-        several in &kde-dir;/lib/kde4</seg>
+        <seg>accountwizard, akonadi_nepomuk_feeder, akonadi_*_agent, 
+        akonadi_*_resource, akonaditray, gidmigrator, 
+        kaddressbookmigrator, kjotsmigrator, kmail-migrator, 
+        knotes-migrator, and kres-migrator</seg>
+        <seg>libakonadi-xml.so, libkdepim-copy.so, libkmindexreader.so, 
+        libmaildir.so, and several in &kde-dir;/lib/kde4</seg>
         <seg>several in &kde-dir;/share</seg>
 @y
-        <seg>accountwizard, akonadi2xml, akonadi_nepomuk_feeder,
-        akonadi_*_agent, akonadi_*_resource, akonaditray,
-        kaddressbookmigrator, kjotsmigrator, kmail-migrator, kres-migrator,
-        nepomukpimindexerutility</seg>
-        <seg>libakonadi-filestore.so, libakonadi-xml.so, libkdepim-copy.so,
-        libkmindexreader.so, libmaildir.so, libnepomukfeederpluginlib.a,
-        &kde-dir;/lib/kde4 配下に数種のライブラリ</seg>
+        <seg>accountwizard, akonadi_nepomuk_feeder, akonadi_*_agent, 
+        akonadi_*_resource, akonaditray, gidmigrator, 
+        kaddressbookmigrator, kjotsmigrator, kmail-migrator, 
+        knotes-migrator, kres-migrator</seg>
+        <seg>libakonadi-xml.so, libkdepim-copy.so, libkmindexreader.so, 
+        libmaildir.so, &kde-dir;/lib/kde4 配下に数種のライブラリ</seg>
         <seg>&kde-dir;/share 配下に数種のディレクトリ</seg>
 @z

@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	lxde-icon-theme.ch \
 	lxmenu-data.ch     \
 	lxpanel.ch         \
-	lxpolkit.ch        \
 	lxsession.ch       \
 	menu-cache.ch      \
 	pcmanfm.ch
@@ -39,7 +38,6 @@ lxde-common.xml:     $(BOOKdir)/$@ $(srcdir)/lxde-common.ch
 lxde-icon-theme.xml: $(BOOKdir)/$@ $(srcdir)/lxde-icon-theme.ch
 lxmenu-data.xml:     $(BOOKdir)/$@ $(srcdir)/lxmenu-data.ch
 lxpanel.xml:         $(BOOKdir)/$@ $(srcdir)/lxpanel.ch
-lxpolkit.xml:        $(BOOKdir)/$@ $(srcdir)/lxpolkit.ch
 lxsession.xml:       $(BOOKdir)/$@ $(srcdir)/lxsession.ch
 menu-cache.xml:      $(BOOKdir)/$@ $(srcdir)/menu-cache.ch
 pcmanfm.xml:         $(BOOKdir)/$@ $(srcdir)/pcmanfm.ch

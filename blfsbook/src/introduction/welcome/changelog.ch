@@ -41,24 +41,3 @@
     <title>変更履歴</title>
 @z
 
-@x
-      <para>September 15th, 2013</para>
-@y
-      <para>2013/09/15</para>
-@z
-@x
-          <para>[igor] - Update to libpng-1.6.5.</para>
-@y
-          <para>[igor] - libpng-1.6.5 へのアップデート。</para>
-@z
-
-@x
-      <para>September 13th, 2013</para>
-@y
-      <para>2013/09/13</para>
-@z
-@x
-          <para>[bdubbs] - Release of BLFS-7.4.</para>
-@y
-          <para>[bdubbs] - BLFS-7.4 リリース。</para>
-@z

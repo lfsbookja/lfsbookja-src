@@ -19,16 +19,9 @@ CHANGE_FILES = \
 	kdepimlibs.ch               \
 	kde-runtime.ch              \
 	kde-workspace.ch            \
-	nepomuk-core.ch             \
-	nepomuk-widgets.ch          \
 	oxygen-icons.ch             \
-	phonon.ch                   \
-	phonon-backend-gstreamer.ch \
-	phonon-backend-vlc.ch       \
 	polkit-kde-agent.ch         \
-	polkit-qt.ch                \
-	qimageblitz.ch              \
-	shrdesktopontologies.ch
+	qimageblitz.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -55,13 +48,6 @@ kdelibs.xml:                  $(BOOKdir)/$@ $(srcdir)/kdelibs.ch
 kdepimlibs.xml:               $(BOOKdir)/$@ $(srcdir)/kdepimlibs.ch
 kde-runtime.xml:              $(BOOKdir)/$@ $(srcdir)/kde-runtime.ch
 kde-workspace.xml:            $(BOOKdir)/$@ $(srcdir)/kde-workspace.ch
-nepomuk-core.xml:             $(BOOKdir)/$@ $(srcdir)/nepomuk-core.ch
-nepomuk-widgets.xml:          $(BOOKdir)/$@ $(srcdir)/nepomuk-widgets.ch
 oxygen-icons.xml:             $(BOOKdir)/$@ $(srcdir)/oxygen-icons.ch
-phonon.xml:                   $(BOOKdir)/$@ $(srcdir)/phonon.ch
-phonon-backend-gstreamer.xml: $(BOOKdir)/$@ $(srcdir)/phonon-backend-gstreamer.ch
-phonon-backend-vlc.xml:       $(BOOKdir)/$@ $(srcdir)/phonon-backend-vlc.ch
 polkit-kde-agent.xml:         $(BOOKdir)/$@ $(srcdir)/polkit-kde-agent.ch
-polkit-qt.xml:                $(BOOKdir)/$@ $(srcdir)/polkit-qt.ch
 qimageblitz.xml:              $(BOOKdir)/$@ $(srcdir)/qimageblitz.ch
-shrdesktopontologies.xml:     $(BOOKdir)/$@ $(srcdir)/shrdesktopontologies.ch

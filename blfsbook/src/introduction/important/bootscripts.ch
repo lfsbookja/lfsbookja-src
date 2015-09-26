@@ -89,12 +89,26 @@
 @z
 
 @x
-    <para>It is advisable to peruse each bootscript before installation to
+    <para>You should review each bootscript before installation to
     ascertain that it satisfies your need. Also verify that the start and stop
     symlinks it creates match your preferences.</para>
 @y
     <para>
     各スクリプトをインストールする前には、それが本当に必要かどうかをよく確認することをお勧めします。
     またインストール後は、その起動と停止のシンボリックリンクが望んでいる動作を行うかどうかも確認してください。
+    </para>
+@z
+
+@x
+    <para>From time to time the bootscripts are updated to accomodate
+    new packages or to make minor corrections.  All versions of the 
+    bootscripts are located at <ulink 
+    url="http://anduin.linuxfromscratch.org/sources/BLFS/conglomeration/blfs-bootscripts/"/>.</para>
+@y
+    <para>
+    ブートスクリプトは新パッケージへの対応や機能修正などのために日々更新されます。
+    ブートスクリプトの全バージョンは <ulink 
+    url="http://anduin.linuxfromscratch.org/sources/BLFS/conglomeration/blfs-bootscripts/"/>
+    から入手することができます。
     </para>
 @z

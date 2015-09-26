@@ -84,7 +84,7 @@
       <xref linkend="qimageblitz"/>,
       <xref linkend="xcb-util-image"/>,
       <xref linkend="xcb-util-renderutil"/>,
-      <xref linkend="xcb-util-keysyms"/> and
+      <xref linkend="xcb-util-keysyms"/>, and
       <xref linkend="xcb-util-wm"/>      
     </para>
 @y
@@ -103,7 +103,6 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="kdepimlibs"/>,
-      <xref linkend="nepomuk-core"/>,
       <xref linkend="boost"/>,
       <xref linkend="freetype2"/>,
       <xref linkend="pciutils"/>, and
@@ -113,10 +112,9 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="kdepimlibs"/>,
-      <xref linkend="nepomuk-core"/>,
       <xref linkend="boost"/>,
       <xref linkend="freetype2"/>,
-      <xref linkend="pciutils"/>,
+      <xref linkend="pciutils"/>, and
       <xref linkend="consolekit"/>
     </para>
 @z
@@ -134,9 +132,10 @@
       <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>,
       <ulink url="http://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
       <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>,
-      <ulink url="http://www.xmms.org/">XMMS</ulink> and
+      <ulink url="http://www.xmms.org/">XMMS</ulink>,
       <ulink url="http://qalculate.sourceforge.net/">libqalculate</ulink>
-      (wants <ulink url="http://www.ginac.de/CLN/">CLN</ulink>)
+      (wants <ulink url="http://www.ginac.de/CLN/">CLN</ulink>), and
+      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -153,7 +152,8 @@
       <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>,
       <ulink url="http://www.xmms.org/">XMMS</ulink>,
       <ulink url="http://qalculate.sourceforge.net/">libqalculate</ulink>
-      (<ulink url="http://www.ginac.de/CLN/">CLN</ulink> が必要)
+      (<ulink url="http://www.ginac.de/CLN/">CLN</ulink> が必要),
+      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
 @z
 

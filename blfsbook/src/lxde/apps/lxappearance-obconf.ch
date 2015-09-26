@@ -128,7 +128,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -141,7 +141,7 @@
           None
         </seg>
         <seg>
-          None
+          /usr/lib/lxappearance/plugins/obconf.so
         </seg>
         <seg>
           /usr/lib/lxappearance and
@@ -152,7 +152,7 @@
           &None;
         </seg>
         <seg>
-          &None;
+          /usr/lib/lxappearance/plugins/obconf.so
         </seg>
         <seg>
           /usr/lib/lxappearance,

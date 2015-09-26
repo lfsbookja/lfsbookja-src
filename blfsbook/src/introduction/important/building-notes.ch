@@ -574,16 +574,17 @@
         <para><emphasis>Recommended</emphasis> means that BLFS strongly
         suggests this package is installed first for a clean and trouble-free
         build, that won't have issues either during the build process, or at
-        run-time.</para>
+        run-time.  The instructions in the book assume these packages are
+        installed.  Some changes or workarounds may be required if these
+        packages are not installed.</para>
 @y
         <para>
-        <emphasis>推奨</emphasis>
-        は、
-        means that BLFS strongly
+        <para><emphasis>Recommended</emphasis> means that BLFS strongly
         suggests this package is installed first for a clean and trouble-free
         build, that won't have issues either during the build process, or at
-        run-time.
-        </para>
+        run-time.  The instructions in the book assume these packages are
+        installed.  Some changes or workarounds may be required if these
+        packages are not installed.</para>
 @z
 
 @x

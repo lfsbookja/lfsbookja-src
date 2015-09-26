@@ -71,18 +71,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-@y
-        <para>必須のパッチ: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">Kde-runtime Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Kde-runtime&Dependencies2;</bridgehead>
@@ -91,64 +79,66 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/> and
-    <xref linkend="libtirpc"/>
+      <xref linkend="kdelibs"/> and
+      <xref linkend="libgcrypt"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>,
-    <xref linkend="libtirpc"/>
+      <xref linkend="kdelibs"/>,
+      <xref linkend="libgcrypt"/> 
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-    <xref linkend="kactivities"/>,
-    <xref linkend="kdepimlibs"/>,
-    <xref linkend="alsa-lib"/>,
-    <xref linkend="libjpeg"/> and
-    <xref linkend="exiv2"/>
+      <para role="recommended">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="exiv2"/>,
+      <xref linkend="kactivities"/>,
+      <xref linkend="kdepimlibs"/>, and
+      <xref linkend="libjpeg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="kactivities"/>,
-    <xref linkend="kdepimlibs"/>,
-    <xref linkend="alsa-lib"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="exiv2"/>
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="exiv2"/>,
+      <xref linkend="kactivities"/>,
+      <xref linkend="kdepimlibs"/>,
+      <xref linkend="libjpeg"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="gdb"/>,
-    <xref linkend="pulseaudio"/>,
-    <xref linkend="xine-lib"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="samba"/>,
-    <xref linkend="NetworkManager"/>,
-    <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-    <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>,
-    <ulink url="http://www.libssh.org/">LibSSH</ulink> and
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>
+      <xref linkend="libcanberra"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="samba"/>,
+      <xref linkend="xine-lib"/>,
+      <ulink url="http://www.libssh.org/">libssh</ulink>,
+<!--  <ulink url="&kde-download-http;&kde-version;/src/">nepomuk-core</ulink>,-->
+      <ulink url="https://projects.kde.org/projects/kde/kdelibs/nepomuk-core">nepomuk-core</ulink>,
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>, and
+      <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="gdb"/>,
-    <xref linkend="pulseaudio"/>,
-    <xref linkend="xine-lib"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="samba"/>,
-    <xref linkend="NetworkManager"/>,
-    <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-    <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>,
-    <ulink url="http://www.libssh.org/">LibSSH</ulink>,
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>
+      <xref linkend="libcanberra"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="samba"/>,
+      <xref linkend="xine-lib"/>,
+      <ulink url="http://www.libssh.org/">libssh</ulink>,
+<!--  <ulink url="&kde-download-http;&kde-version;/src/">nepomuk-core</ulink>,-->
+      <ulink url="https://projects.kde.org/projects/kde/kdelibs/nepomuk-core">nepomuk-core</ulink>,
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+      <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>
     </para>
 @z
 
@@ -182,7 +172,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para> Now as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -211,7 +202,7 @@
         khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
         kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,
         ktraderclient, ktrash, kuiserver, kwalletd, kwriteconfig,
-        nepomukcontroller, plasma-remote-helper, plasmapkg and solid-hardware.
+        plasma-remote-helper, plasmapkg and solid-hardware.
         </seg>
         <seg>several in &kde-dir;/lib</seg>
         <seg>several in &kde-dir;/lib and &kde-dir;/share</seg>
@@ -221,7 +212,7 @@
         khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
         kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,
         ktraderclient, ktrash, kuiserver, kwalletd, kwriteconfig,
-        nepomukcontroller, plasma-remote-helper, plasmapkg, solid-hardware.
+        plasma-remote-helper, plasmapkg, solid-hardware.
         </seg>
         <seg>&kde-dir;/lib 配下に数種のライブラリ</seg>
         <seg>&kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ</seg>

@@ -83,21 +83,23 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
     <xref linkend="shared-mime-info"/>,
-    <xref linkend="boost"/>,
-    <xref linkend="soprano"/>, and one of:
-    <xref linkend="sqlite"/>,
-    <xref linkend="mariadb"/>, <xref linkend="mysql"/>, or
-    <xref linkend="postgresql"/>
+    <xref linkend="libxslt"/>,
+    <xref linkend="boost"/>, and one of:
+     <xref linkend="sqlite"/>,
+     <xref linkend="mariadb"/>, 
+     <ulink url="http://www.mysql.com/">MySQL</ulink>, or
+     <xref linkend="postgresql"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="shared-mime-info"/>,
-    <xref linkend="boost"/>,
-    <xref linkend="soprano"/> と以下のいずれか：
-    <xref linkend="sqlite"/>,
-    <xref linkend="mariadb"/>, <xref linkend="mysql"/>,
-    <xref linkend="postgresql"/>
+    <xref linkend="libxslt"/>,
+    <xref linkend="boost"/>, 以下のいずれか:
+     <xref linkend="sqlite"/>,
+     <xref linkend="mariadb"/>, 
+     <ulink url="http://www.mysql.com/">MySQL</ulink>,
+     <xref linkend="postgresql"/>
     </para>
 @z
 
@@ -137,11 +139,21 @@
 @z
 
 @x
-    <para><option>-DCMAKE_PREFIX_PATH=&qt4-dir;</option>: This switch is used to
-    help <command>cmake</command> find <command>automoc4</command>.</para>
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to apply
+    a higher level of compiler optimizations.</para>
 @y
-    <para><option>-DCMAKE_PREFIX_PATH=&qt4-dir;</option>:
-    このスイッチにより <command>cmake</command> が <command>automoc4</command> を見出せるようにします。</para>
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to apply
+    a higher level of compiler optimizations.</para>
+@z
+
+@x
+    <para><option>-DINSTALL_QSQLITE_IN_QT_PREFIX=TRUE</option>: This switch ensures
+    that <application>Akonadi</application> SQLite extension is installed into
+    the <application>Qt</application> plugins directory.</para>
+@y
+    <para><option>-DINSTALL_QSQLITE_IN_QT_PREFIX=TRUE</option>: This switch ensures
+    that <application>Akonadi</application> SQLite extension is installed into
+    the <application>Qt</application> plugins directory.</para>
 @z
 
 @x
@@ -162,13 +174,13 @@
 
 @x
         <seg>akonadi_agent_launcher, akonadi_agent_server, akonadi_control,
-        akonadi_rds, akonadictl and akonadiserver</seg>
+        akonadi_rds, akonadictl, akonadiserver and asapcat</seg>
         <seg>libakonadiprotocolinternals.so and libqsqlite3.so</seg>
-        <seg>&kde-dir;/include/akonadi, &kde-dir;/lib/cmake/Akonadi and 
+        <seg>&kde-dir;/include/akonadi, &kde-dir;/lib/cmake/Akonadi and
         &kde-dir;/share/config/akonadi</seg>
 @y
         <seg>akonadi_agent_launcher, akonadi_agent_server, akonadi_control,
-        akonadi_rds, akonadictl, akonadiserver</seg>
+        akonadi_rds, akonadictl, akonadiserver, asapcat</seg>
         <seg>libakonadiprotocolinternals.so, libqsqlite3.so</seg>
         <seg>&kde-dir;/include/akonadi, &kde-dir;/lib/cmake/Akonadi,
         &kde-dir;/share/config/akonadi</seg>

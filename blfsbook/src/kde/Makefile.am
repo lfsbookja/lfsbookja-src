@@ -5,9 +5,10 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=add core intro
+SUBDIRS=add core
 BOOKdir = @abs_bookdir@/kde
 CHANGE_FILES = \
+	introduction.ch  \
 	kde.ch           \
 	libdbusmenuqt.ch
 
@@ -24,5 +25,6 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+introduction.xml:  $(BOOKdir)/$@ $(srcdir)/introduction.ch
 kde.xml:           $(BOOKdir)/$@ $(srcdir)/kde.ch
 libdbusmenuqt.xml: $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch

@@ -93,14 +93,18 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="kactivities"/> and
-    <xref linkend="nepomuk-widgets"/>
+    <xref linkend="kactivities"/>,
+    <xref linkend="kfilemetadata"/>,
+    <xref linkend="baloo"/>, and
+    <xref linkend="baloo-widgets"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
     <xref linkend="kactivities"/>,
-    <xref linkend="nepomuk-widgets"/>
+    <xref linkend="kfilemetadata"/>,
+    <xref linkend="baloo"/>,
+    <xref linkend="baloo-widgets"/>
     </para>
 @z
 
@@ -148,7 +152,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para> Now as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。

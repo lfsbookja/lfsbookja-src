@@ -14,7 +14,7 @@
 @z
 
 @x
-  <title>Introduction</title>
+  <title>Introduction to KDE</title>
 @y
   <title>はじめに</title>
 @z

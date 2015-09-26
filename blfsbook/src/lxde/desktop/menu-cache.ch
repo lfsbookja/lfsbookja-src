@@ -78,12 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="libfm-extra"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="libfm-extra"/>
     </para>
 @z
 
@@ -161,7 +161,7 @@
         </seg>
         <seg>
           /usr/include/menu-cache,
-          /usr/lib/menu-cache and
+          /usr/libexec/menu-cache and
           /usr/share/gtk-doc/html/libmenu-cache
         </seg>
 @y
@@ -173,7 +173,7 @@
         </seg>
         <seg>
           /usr/include/menu-cache,
-          /usr/lib/menu-cache,
+          /usr/libexec/menu-cache,
           /usr/share/gtk-doc/html/libmenu-cache
         </seg>
 @z

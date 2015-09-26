@@ -14,7 +14,7 @@
 @z
 
 @x
-  <title>KDE Additional Packages</title>
+  <title>KDE4 Additional Packages</title>
 @y
-  <title>KDE 追加パッケージ</title>
+  <title>KDE4 追加パッケージ</title>
 @z

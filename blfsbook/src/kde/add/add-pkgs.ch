@@ -14,32 +14,39 @@
 @z
 
 @x
-<sect1 id="kde-add-pkgs" xreflabel="Further KDE packages">
+<sect1 id="kde-add-pkgs" xreflabel="Further KDE4 packages">
 @y
-<sect1 id="kde-add-pkgs" xreflabel="その他の KDE パッケージ">
+<sect1 id="kde-add-pkgs" xreflabel="その他の KDE4 パッケージ">
 @z
 
 @x
-  <title>Further KDE packages</title>
+  <title>Further KDE4 packages</title>
 @y
-  <title>その他の KDE パッケージ</title>
+  <title>その他の KDE4 パッケージ</title>
 @z
 
 @x
   <para>This section did not provide instructions for all of the available
-  packages in the KDE Software Compilation. The included packages were selected
+  packages in the KDE4 Software Compilation. The included packages were selected
   based on what most people would want to use on a standard desktop computer.</para>
-  <para>For a full list of available packages, have a look on the KDE servers
-  (<ulink url="&kde-download-http;&kde-version;/src/">http</ulink>
-  or <ulink url="&kde-download-ftp;&kde-version;/src/">ftp</ulink>).</para>
 @y
   <para>
   本節は、利用可能な KDE ソフトウェアコンパイレーション (KDE Software Compilation) のビルド手順までは説明しません。
   ここに示すパッケージは、多くの方が標準的なデスクトップコンピューターにおいて利用したいと思うパッケージを選んでいます。
   </para>
+@z
+
+@x
+  <para>For a full list of available packages, have a look on the KDE4 servers at
+  <ulink url="&kde-download-http;applications/&kde-version;/src/">
+              &kde-download-http;applications/&kde-version;/src/</ulink>
+  or <ulink url="&kde-download-ftp;applications/&kde-apps-version;/src/">
+                 &kde-download-ftp;applications/&kde-apps-version;/src/</ulink>.</para>
+@y
   <para>
-  利用可能な全パッケージの詳細については、KDE サーバー (<ulink url="&kde-download-http;&kde-version;/src/">http</ulink> または <ulink
-  url="&kde-download-ftp;&kde-version;/src/">ftp</ulink>) を参照してください。
+  利用可能な全パッケージの詳細については KDE4 サーバー (<ulink
+  url="&kde-download-http;applications/&kde-version;/src/">&kde-download-http;applications/&kde-version;/src/</ulink> または <ulink
+  url="&kde-download-ftp;applications/&kde-apps-version;/src/">&kde-download-ftp;applications/&kde-apps-version;/src/</ulink>) を参照してください。
   </para>
 @z
 

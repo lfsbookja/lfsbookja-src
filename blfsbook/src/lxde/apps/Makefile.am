@@ -12,7 +12,6 @@ CHANGE_FILES = \
 	lxappearance-obconf.ch \
 	lxinput.ch             \
 	lxrandr.ch             \
-	lxshortcut.ch          \
 	lxtask.ch              \
 	lxterminal.ch
 
@@ -34,6 +33,5 @@ gpicview.xml:            $(BOOKdir)/$@ $(srcdir)/gpicview.ch
 lxappearance-obconf.xml: $(BOOKdir)/$@ $(srcdir)/lxappearance-obconf.ch
 lxinput.xml:             $(BOOKdir)/$@ $(srcdir)/lxinput.ch
 lxrandr.xml:             $(BOOKdir)/$@ $(srcdir)/lxrandr.ch
-lxshortcut.xml:          $(BOOKdir)/$@ $(srcdir)/lxshortcut.ch
 lxtask.xml:              $(BOOKdir)/$@ $(srcdir)/lxtask.ch
 lxterminal.xml:          $(BOOKdir)/$@ $(srcdir)/lxterminal.ch

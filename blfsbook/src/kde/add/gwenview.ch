@@ -78,32 +78,32 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>
+       <xref linkend="libkdcraw"/> and 
+       <xref linkend="kdelibs"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>
+       <xref linkend="libkdcraw"/>,
+       <xref linkend="kdelibs"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-    <xref linkend="kactivities"/>,
-    <xref linkend="kde-baseapps"/>,
-    <xref linkend="nepomuk-core"/>,
-    <xref linkend="libkexiv2"/>, and
-    <xref linkend="libjpeg"/>
+      <para role="recommended">
+      <xref linkend="kactivities"/>,
+      <xref linkend="kde-baseapps"/>,
+      <xref linkend="libkexiv2"/>, and
+      <xref linkend="libjpeg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-    <xref linkend="kactivities"/>,
-    <xref linkend="kde-baseapps"/>,
-    <xref linkend="nepomuk-core"/>,
-    <xref linkend="libkexiv2"/>,
-    <xref linkend="libjpeg"/>
+      <para role="recommended">
+      <xref linkend="kactivities"/>,
+      <xref linkend="kde-baseapps"/>,
+      <xref linkend="libkexiv2"/>,
+      <xref linkend="libjpeg"/>
     </para>
 @z
 

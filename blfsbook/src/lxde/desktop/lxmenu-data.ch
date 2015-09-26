@@ -78,24 +78,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">LXMenu Data Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;LXMenu Data&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="intltool"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="intltool"/>
-    </para>
-@z
-
-@x
       User Notes: <ulink url="&blfs-wiki;/lxmenu-data"/>
 @y
       &UserNotes;: <ulink url="&blfs-wiki;/lxmenu-data"/>

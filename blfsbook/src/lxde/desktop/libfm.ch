@@ -177,27 +177,27 @@
 
 @x
         <seg>
-          libfm-pref-apps
+          libfm-pref-apps and lxshortcut
         </seg>
         <seg>
-          libfm.so and libfm-gtk.so
+          libfm.so, libfm-extra.so and libfm-gtk.so
         </seg>
         <seg>
           /etc/xdg/libfm,
-          /usr/include/libfm-1.0,
+          /usr/lib/libfm,
           /usr/share/gtk-doc/html/libfm and
           /usr/share/libfm
         </seg>
 @y
         <seg>
-          libfm-pref-apps
+          libfm-pref-apps, lxshortcut
         </seg>
         <seg>
-          libfm.so, libfm-gtk.so
+          libfm.so, libfm-extra.so, libfm-gtk.so
         </seg>
         <seg>
           /etc/xdg/libfm,
-          /usr/include/libfm-1.0,
+          /usr/lib/libfm,
           /usr/share/gtk-doc/html/libfm,
           /usr/share/libfm
         </seg>
