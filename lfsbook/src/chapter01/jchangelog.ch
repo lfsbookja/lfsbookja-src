@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          テキスト版にてローカルディレクトリ表記の改正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           SVN-20150926,
           Changeset
           <ulink url="&lfs-rev-root;10954">10954</ulink>

@@ -22,8 +22,10 @@ DUMPDIR=../lfs-commands
 ROOT_ID =
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
-NOCHUNKS_OUTPUT = ../lfsbookja-svn.html
+NOCHUNKS_NAME=lfsbookja-svn
+NOCHUNKS_OUTPUT = ../$(NOCHUNKS_NAME).html
 PDF_OUTPUT = ../lfsbookja-svn.pdf
+URLTOP = http\:\/\/lfsbookja.osdn.jp\/svn\.ja
 
 ALLXML := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xml ./*/*.xml))
@@ -112,7 +114,8 @@ lfs: validate profile-html
 @TXT@	make $(BASEDIR)/wget-list $(BASEDIR)/md5sums
 
 @TXT@txt: nochunks
-@TXT@	$(LYNX) -width=44 -dump ../lfsbookja-svn.html > ../lfsbookja-svn.txt
+@TXT@	$(LYNX) -width=44 -dump $(BASEDIR)/$(NOCHUNKS_OUTPUT) > ../$(NOCHUNKS_NAME).txt
+@TXT@	sed -i -E "s@file\:///[A-Za-z/\-]+\.html@$(URLTOP)/$(NOCHUNKS_NAME)-nochunks.html@g" ../$(NOCHUNKS_NAME).txt
 
 @PDF@@TAKAO@pdf: validate userconfig.xml
 @PDF@@TAKAO@	@echo "Generating profiled XML for PDF..."
