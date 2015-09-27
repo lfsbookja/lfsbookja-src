@@ -181,7 +181,7 @@
           libtirpc.so
         </seg>
         <seg>
-          /usr/include/libtirpc
+          /usr/include/tirpc
         </seg>
 @y
         <seg>
@@ -191,7 +191,7 @@
           libtirpc.so
         </seg>
         <seg>
-          /usr/include/libtirpc
+          /usr/include/tirpc
         </seg>
 @z
 

@@ -22,8 +22,8 @@
 @x
       The <application>libsoup</application> is HTTP client/server library for
       <application>GNOME</application>. It uses GObject and the GLib main loop
-      to integrate with <application>GNOME</application> applications and 
-      it also has asynchronous API for use in threaded applications.
+      to integrate with <application>GNOME</application> applications and
+      it also has an asynchronous API for use in threaded applications.
 @y
       <application>libsoup</application> は <application>GNOME</application> に対しての HTTP クライアント/サーバーライブラリです。
       GObject と GLib メインループの利用により GNOME アプリケーションをサポートします。

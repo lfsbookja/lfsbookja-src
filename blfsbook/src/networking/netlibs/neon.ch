@@ -75,20 +75,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="libxml2"/> or
-      <xref linkend="expat"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="libxml2"/> または
-      <xref linkend="expat"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="openssl"/> or
@@ -105,16 +91,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://code.google.com/p/libproxy/">libproxy</ulink>,
-      <xref linkend="mitkrb"/> and
-      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
+      <xref linkend="libxml2"/>,
+      <xref linkend="mitkrb"/>,
+      <ulink url="http://code.google.com/p/libproxy/">libproxy</ulink>, and
+      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>,
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://code.google.com/p/libproxy/">libproxy</ulink>,
+      <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
+      <ulink url="http://code.google.com/p/libproxy/">libproxy</ulink>,
+      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>,
     </para>
 @z
 
@@ -138,11 +126,12 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>.
-      Some tests are known to fail.
+      To test the results, issue: <command>make check</command>.
+      Most of the <parameter>ssl</parameter> tests fail, using
+      <option>--with-ssl=gnutls</option>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストの中には失敗するものがあります。
+      <option>--with-ssl=gnutls</option> の指定時に <parameter>ssl</parameter> テストの多くは失敗します。
 @z
 
 @x
@@ -158,20 +147,20 @@
 @z
 
 @x
-      <option>--with-ssl</option>: This switch enables SSL support
+      <parameter>--with-ssl</parameter>: This switch enables SSL support
       using <application>OpenSSL</application> or
       <application>GnuTLS</application> respectively. Remove it if
       you don't have any of these installed. To force
       <application>GnuTLS</application> usage when both are present,
-      simply pass <parameter>--with-ssl=gnutls</parameter> to the
+      simply pass <option>--with-ssl=gnutls</option> to the
       <command>configure</command> script.
 @y
-      <option>--with-ssl</option>: This switch enables SSL support
+      <parameter>--with-ssl</parameter>: This switch enables SSL support
       using <application>OpenSSL</application> or
       <application>GnuTLS</application> respectively. Remove it if
       you don't have any of these installed. To force
       <application>GnuTLS</application> usage when both are present,
-      simply pass <parameter>--with-ssl=gnutls</parameter> to the
+      simply pass <option>--with-ssl=gnutls</option> to the
       <command>configure</command> script.
 @z
 

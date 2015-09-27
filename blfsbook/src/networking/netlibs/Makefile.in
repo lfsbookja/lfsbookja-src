@@ -228,7 +228,6 @@ CHANGE_FILES = \
 	glib-networking.ch \
 	ldns.ch            \
 	libevent.ch        \
-	libnice.ch         \
 	libnl.ch           \
 	libpcap.ch         \
 	libsoup.ch         \
@@ -438,7 +437,6 @@ geoclue.xml:          $(BOOKdir)/$@ $(srcdir)/geoclue.ch
 glib-networking.xml:  $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
 ldns.xml:             $(BOOKdir)/$@ $(srcdir)/ldns.ch
 libevent.xml:         $(BOOKdir)/$@ $(srcdir)/libevent.ch
-libnice.xml:          $(BOOKdir)/$@ $(srcdir)/libnice.ch
 libnl.xml:            $(BOOKdir)/$@ $(srcdir)/libnl.ch
 libpcap.xml:          $(BOOKdir)/$@ $(srcdir)/libpcap.ch
 libsoup.xml:          $(BOOKdir)/$@ $(srcdir)/libsoup.ch

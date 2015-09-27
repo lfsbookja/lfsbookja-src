@@ -100,25 +100,27 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
       <xref linkend="libidn"/>,
-      <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="http://www.libssh2.org">libssh2</ulink>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="openldap"/> and
-      <ulink url="http://www.vintela.com/resources/topics/spnego/">
+      <xref linkend="openldap"/>,
+      <xref linkend="samba"/>,
+      <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
+      <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
+      <ulink url="http://www.libssh2.org">libssh2</ulink>, and
+      <ulink url="http://spnego.sourceforge.net/">
       SPNEGO</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
       <xref linkend="libidn"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="samba"/>,
+      <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="http://www.libssh2.org">libssh2</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="openldap"/> and
-      <ulink url="http://www.vintela.com/resources/topics/spnego/">
+      <ulink url="http://spnego.sourceforge.net/">
       SPNEGO</ulink>
     </para>
 @z
@@ -126,12 +128,14 @@
 @x
     <bridgehead renderas="sect4">Optional for Running the Test Suite</bridgehead>
     <para role="optional">
-      <xref linkend="stunnel"/> (for the HTTPS and FTPS tests)
+      <xref linkend="stunnel"/> (for the HTTPS and FTPS tests) and
+      <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">Optional for Running the Test Suite</bridgehead>
     <para role="optional">
-      <xref linkend="stunnel"/> (for the HTTPS and FTPS tests)
+      <xref linkend="stunnel"/> (HTTPS, FTPS テストのため),
+      <xref linkend="valgrind"/>
     </para>
 @z
 
@@ -155,7 +159,7 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To run the test suite, issue: <command>make test</command>.
 @y
       ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
@@ -192,14 +196,11 @@
 @z
 
 @x
-      <command>find docs \( -name "Makefile*" -o -name "*.1" -o -name "*.3"
-      \) -exec rm {} \;</command>: This command removes
+      <command>find docs ... -exec rm {} \;</command>: This command removes
       <filename>Makefiles</filename> and man files from the documentation
-      directory that would otherwise be installed by the commands that
-      follow.
+      directory that would otherwise be installed by the commands that follow.
 @y
-      <command>find docs \( -name "Makefile*" -o -name "*.1" -o -name "*.3"
-      \) -exec rm {} \;</command>:
+      <command>find docs ... -exec rm {} \;</command>:
       このコマンドはドキュメントディレクトリにある <filename>Makefiles</filename> ファイルと man ファイルを削除します。
       そして以下に示すコマンドによりドキュメントをインストールします。
 @z

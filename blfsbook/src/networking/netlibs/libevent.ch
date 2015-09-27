@@ -132,9 +132,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make verify</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make verify</command> を実行します。
 @z
 
 @x
@@ -185,7 +185,8 @@
           libevent.so
         </seg>
         <seg>
-         /usr/include/event2
+         /usr/include/event2 and
+         /usr/share/doc/libevent-&libevent-version;
         </seg>
 @y
         <seg>
@@ -199,6 +200,7 @@
           libevent.so
         </seg>
         <seg>
-         /usr/include/event2
+         /usr/include/event2,
+         /usr/share/doc/libevent-&libevent-version;
         </seg>
 @z

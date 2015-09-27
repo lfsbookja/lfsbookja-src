@@ -78,21 +78,21 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
-      Software distribution for the
-      <ulink url="http://www.endace.com/">DAG</ulink>,
       <xref linkend="libnl"/>,
-      <xref linkend="libusb"/> and
+      <xref linkend="libusb"/>,
+      Software distribution for the
+      <ulink url="http://www.endace.com/">DAG</ulink>, and
       <ulink url="http://www.intel.com/">Septel</ulink> range of passive
       network monitoring cards.
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
       <xref linkend="bluez"/>,
-      <ulink url="http://www.endace.com/">DAG</ulink>,
       <xref linkend="libnl"/>,
       <xref linkend="libusb"/>,
-      <ulink url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア。
+      Software distribution for the
+      <ulink url="http://www.endace.com/">DAG</ulink>,
+      <ulink url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア
     </para>
 @z
 
@@ -151,20 +151,20 @@
 
 @x
         <seg>
-          libpcap-config
+          pcap-config
         </seg>
         <seg>
-          libpcap.{a,so}
+          libpcap.so, libpcap.a (optional)
         </seg>
         <seg>
           /usr/include/pcap
         </seg>
 @y
         <seg>
-          libpcap-config
+          pcap-config
         </seg>
         <seg>
-          libpcap.{a,so}
+          libpcap.so, libpcap.a (任意ビルド)
         </seg>
         <seg>
           /usr/include/pcap
