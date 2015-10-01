@@ -249,14 +249,11 @@
 @z
 
 @x
-    <para>Note that <filename class="directory">/tools/lib</filename>, or
-    <filename class="directory">/tools/lib64</filename> for 64-bit machines
-    appears as the prefix of the dynamic linker.</para>
+    <para>Note that for 64-bit machines, the interpreter name will be
+    <filename>/tools/lib64/ld-linux-x86-64.so.2</filename>.</para>
 @y
     <para>
-    ダイナミックリンカーのプリフィックスは <filename
-    class="directory">/tools/lib</filename>、あるいは 64 ビットマシンであれば <filename
-    class="directory">/tools/lib64</filename> となります。
+    インタープリター名は 64ビットマシンの場合 <filename>/tools/lib64/ld-linux-x86-64.so.2</filename> となります。
     </para>
 @z
 
