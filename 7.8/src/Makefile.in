@@ -701,7 +701,7 @@ lfs: validate profile-html
 
 @TXT@txt: nochunks
 @TXT@	$(LYNX) -width=44 -dump $(BASEDIR)/$(NOCHUNKS_OUTPUT) > ../$(NOCHUNKS_NAME).txt
-@TXT@	sed -i -E "s@file\:///[A-Za-z/\-]+\.html@$(URLTOP)/$(NOCHUNKS_NAME)-nochunks.html@g" ../$(NOCHUNKS_NAME).txt
+@TXT@	sed -i -E "s@file\:///[0-9A-Za-z/\.\-]+\.html@$(URLTOP)/$(NOCHUNKS_NAME)-nochunks.html@g" ../$(NOCHUNKS_NAME).txt
 
 @PDF@@TAKAO@pdf: validate userconfig.xml
 @PDF@@TAKAO@	@echo "Generating profiled XML for PDF..."
