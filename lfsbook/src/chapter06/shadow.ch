@@ -290,16 +290,16 @@
 @x
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog, gpasswd,
         groupadd, groupdel, groupmems, groupmod, grpck, grpconv, grpunconv,
-        lastlog, login, logoutd, newgrp, newusers, nologin, passwd, pwck,
-        pwconv, pwunconv, sg (link to newgrp), su, useradd, userdel, usermod,
-        vigr (link to vipw), and vipw</seg>
+        lastlog, login, logoutd, newgidmap, newgrp, newuidmap, newusers,
+        nologin, passwd, pwck, pwconv, pwunconv, sg (link to newgrp), su,
+        useradd, userdel, usermod, vigr (link to vipw), and vipw</seg>
         <seg>/etc/default</seg>
 @y
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog, gpasswd,
         groupadd, groupdel, groupmems, groupmod, grpck, grpconv, grpunconv,
-        lastlog, login, logoutd, newgrp, newusers, nologin, passwd, pwck,
-        pwconv, pwunconv, sg (newgrp へのリンク), su, useradd, userdel, usermod,
-        vigr (vipw へのリンク), vipw</seg>
+        lastlog, login, logoutd, newgidmap, newgrp, newuidmap, newusers,
+        nologin, passwd, pwck, pwconv, pwunconv, sg (newgrp へのリンク), su,
+        useradd, userdel, usermod, vigr (vipw へのリンク), vipw</seg>
         <seg>/etc/default</seg>
 @z
 
@@ -466,11 +466,27 @@
           </para>
 @z
 
+@x newgidmap
+          <para>Is used to set the gid mapping of a user namespace</para>
+@y
+          <para>
+          ユーザー空間における gid マッピングを設定します。
+          </para>
+@z
+
 @x newgrp
           <para>Is used to change the current GID during a login session</para>
 @y
           <para>
           ログインセッション中に現在の GID を変更します。
+          </para>
+@z
+
+@x
+          <para>Is used to set the uid mapping of a user namespace</para>
+@y
+          <para>
+          ユーザー空間における uid マッピングを設定します。
           </para>
 @z
 

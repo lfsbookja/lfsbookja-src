@@ -97,23 +97,28 @@
 @z
 
 @x
-       <seg>                      grub-bios-setup, grub-editenv,     grub-fstest,
-            grub-install,         grub-kbdcomp,    grub-menulst2cfg, grub-mkconfig,
+       <seg>grub-bios-setup,      grub-editenv,    grub-file,        grub-fstest,
+            grub-glue-efi,        grub-install,    grub-kbdcomp,     grub-macbless,   
+            grub-menulst2cfg,     grub-mkconfig,
                                   grub-mkimage,    grub-mklayout,    grub-mknetdir,
             grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
-            grub-ofpathname,      grub-probe,      grub-reboot,      grub-script-check,
-            grub-set-default,                      grub-sparc64-setup </seg>
+            grub-ofpathname,      grub-probe,      grub-reboot,      grub-render-label, 
+            grub-script-check,
+            grub-set-default,     grub-sparc64-setup, and grub-syslinux2cfg</seg>
 
-        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /boot/grub</seg>
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, and boot/grub (when grub-install
+        is first run)</seg>
 @y
-       <seg>                      grub-bios-setup, grub-editenv,     grub-fstest,
-            grub-install,         grub-kbdcomp,    grub-menulst2cfg, grub-mkconfig,
+       <seg>grub-bios-setup,      grub-editenv,    grub-file,        grub-fstest,
+            grub-glue-efi,        grub-install,    grub-kbdcomp,     grub-macbless,   
+            grub-menulst2cfg,     grub-mkconfig,
                                   grub-mkimage,    grub-mklayout,    grub-mknetdir,
             grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
-            grub-ofpathname,      grub-probe,      grub-reboot,      grub-script-check,
-            grub-set-default,                      grub-sparc64-setup </seg>
+            grub-ofpathname,      grub-probe,      grub-reboot,      grub-render-label, 
+            grub-script-check,
+            grub-set-default,     grub-sparc64-setup, grub-syslinux2cfg</seg>
 
-        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /boot/grub</seg>
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, boot/grub (grub-install が初めに起動される時)</seg>
 @z
 
 @x
@@ -149,6 +154,15 @@
 @y
           <para>
           ファイルシステムドライバーをデバッグするツール。
+          </para>
+@z
+
+@x grub-glue-efi
+          <para>Processes ia32 and amd64 EFI images and glues them
+          according to Apple format.</para>
+@y
+          <para>
+          ia32 および amd64 の EFI イメージを処理し Apple フォーマットに従って結合します。
           </para>
 @z
 
@@ -270,6 +284,14 @@
           </para>
 @z
 
+@x grub-render-label
+          <para>Render Apple .disk_label for Apple Macs</para>
+@y
+          <para>
+          Apple Mac に対して Apple .disk_label を提供します。
+          </para>
+@z
+
 @x grub-script-check
           <para>Checks GRUB configuration script for syntax errors</para>
 @y
@@ -286,16 +308,16 @@
           </para>
 @z
 
-% @x grub-setup
-%           <para>Set up images to boot from a device</para>
-% @y
-%           <para>
-%           デバイスからのブートを行うためにイメージファイルをセットアップします。
-%           </para>
-% @z
-
 @x grub-sparc64-setup
           <para>Is a helper program for grub-setup</para>
 @y
           <para>grub-setup に対するヘルパープログラム。</para>
+@z
+
+@x grub-syslinux2cfg
+          <para>Transform a syslinux config file into grub.cfg format</para>
+@y
+          <para>
+          syslinux の設定ファイルを grub.cfg フォーマットに変換します。
+          </para>
 @z

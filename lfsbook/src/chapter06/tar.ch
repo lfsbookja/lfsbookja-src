@@ -79,14 +79,6 @@
 @z
 
 @x
-    <para>Finally, generate the man page and place it in the proper location:</para>
-@y
-    <para>
-    最後に Man ページを生成して、それを所定ディレクトリにインストールします。
-    </para>
-@z
-
-@x
     <title>Contents of Tar</title>
 @y
     <title>&ContentsOf1;Tar&ContentsOf2;</title>
@@ -101,9 +93,11 @@
 @z
 
 @x
-        <seg>rmt and tar</seg>
+        <seg>tar</seg>
+        <seg>/usr/share/doc/tar-&tar-version;</seg>
 @y
-        <seg>rmt, tar</seg>
+        <seg>tar</seg>
+        <seg>/usr/share/doc/tar-&tar-version;</seg>
 @z
 
 @x
@@ -112,14 +106,14 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x rmt
-          <para>Remotely manipulates a magnetic
-          tape drive through an interprocess communication connection</para>
-@y
-          <para>
-          プロセス間通信のコネクションを通じて磁気テープドライブを遠隔操作します。
-          </para>
-@z
+% @x rmt
+%           <para>Remotely manipulates a magnetic
+%           tape drive through an interprocess communication connection</para>
+% @y
+%           <para>
+%           プロセス間通信のコネクションを通じて磁気テープドライブを遠隔操作します。
+%           </para>
+% @z
 
 @x tar
           <para>Creates, extracts files from, and lists the contents of archives,

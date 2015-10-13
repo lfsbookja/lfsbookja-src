@@ -103,10 +103,10 @@
 
 @x
         <seg>capsh, getcap, getpcaps, and setcap</seg>
-        <seg>libcap.{a,so}</seg>
+        <seg>libcap.so</seg>
 @y
         <seg>capsh, getcap, getpcaps, setcap</seg>
-        <seg>libcap.{a,so}</seg>
+        <seg>libcap.so</seg>
 @z
 
 @x

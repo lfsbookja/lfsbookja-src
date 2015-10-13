@@ -152,17 +152,25 @@
 @z
 
 @x
-        <seg>ftp, ifconfig, hostname, ping, ping6, rcp, rexec, rlogin, 
-        rsh, talk, telnet, tftp, and traceroute</seg>
+        <seg>dnsdomainname, ftp, ifconfig, hostname, ping, ping6, 
+        talk, telnet, tftp, and traceroute</seg>
 @y
-        <seg>ftp, ifconfig, hostname, ping, ping6, rcp, rexec, rlogin, 
-        rsh, talk, telnet, tftp, traceroute</seg>
+        <seg>dnsdomainname, ftp, ifconfig, hostname, ping, ping6, 
+        talk, telnet, tftp, traceroute</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x
+        <para>Show the system's DNS domain name</para>
+@y
+        <para>
+        システムの DNS ドメイン名を表示します。
+        </para>
 @z
 
 @x ftp
@@ -173,19 +181,19 @@
         </para>
 @z
 
-@x ifconfig
-        <para>Manages network interfaces</para>
-@y
-        <para>
-        ネットワークインターフェースを管理します。
-        </para>
-@z
-
 @x hostname
           <para>Reports or sets the name of the host</para>
 @y
         <para>
         ホスト名の表示または設定を行います。
+        </para>
+@z
+
+@x ifconfig
+        <para>Manages network interfaces</para>
+@y
+        <para>
+        ネットワークインターフェースを管理します。
         </para>
 @z
 

@@ -85,22 +85,22 @@
 @z
 
 @x
-        <seg>addftinfo, afmtodit, chem, eqn, eqn2graph, gdiffmk,
-        geqn (link to eqn), grap2graph, grn, grodvi, groff, groffer, grog,
-        grolbp, grolj4, grops, grotty, gtbl (link to tbl), hpftodit,
-        indxbib, lkbib, lookbib, mmroff, neqn, nroff, pdfroff, pfbtops, pic,
-        pic2graph, post-grohtml, preconv, pre-grohtml, refer, roff2dvi,
-        roff2html, roff2pdf, roff2ps, roff2text, roff2x, soelim, tbl, tfmtodit,
-        and troff</seg>
+        <seg>addftinfo, afmtodit, chem, eqn, eqn2graph, gdiffmk, glilypond,
+        gperl, gpinyin, grap2graph, grn, grodvi, groff, groffer, grog, grolbp,
+        grolj4, gropdf, grops, grotty, hpftodit, indxbib, lkbib, lookbib,
+        mmroff, neqn, nroff, pdfmom, pdfroff, pfbtops, pic, pic2graph,
+        post-grohtml, preconv, pre-grohtml, refer, roff2dvi, roff2html,
+        roff2pdf, roff2ps, roff2text, roff2x, soelim, tbl, tfmtodit, and
+        troff</seg>
         <seg>/usr/lib/groff and /usr/share/doc/groff-&groff-version;,
         /usr/share/groff</seg>
 @y
-        <seg>addftinfo, afmtodit, chem, eqn, eqn2graph, gdiffmk,
-        geqn (eqn へのリンク), grap2graph, grn, grodvi, groff, groffer, grog,
-        grolbp, grolj4, grops, grotty, gtbl (tbl へのリンク), hpftodit,
-        indxbib, lkbib, lookbib, mmroff, neqn, nroff, pdfroff, pfbtops, pic,
-        pic2graph, post-grohtml, preconv, pre-grohtml, refer, roff2dvi,
-        roff2html, roff2pdf, roff2ps, roff2text, roff2x, soelim, tbl, tfmtodit,
+        <seg>addftinfo, afmtodit, chem, eqn, eqn2graph, gdiffmk, glilypond,
+        gperl, gpinyin, grap2graph, grn, grodvi, groff, groffer, grog, grolbp,
+        grolj4, gropdf, grops, grotty, hpftodit, indxbib, lkbib, lookbib,
+        mmroff, neqn, nroff, pdfmom, pdfroff, pfbtops, pic, pic2graph,
+        post-grohtml, preconv, pre-grohtml, refer, roff2dvi, roff2html,
+        roff2pdf, roff2ps, roff2text, roff2x, soelim, tbl, tfmtodit,
         troff</seg>
         <seg>/usr/lib/groff, /usr/share/doc/groff-&groff-version;,
         /usr/share/groff</seg>
@@ -168,11 +168,30 @@
           </para>
 @z
 
-@x geqn
-          <para>A link to <command>eqn</command></para>
+@x glilypond
+          <para>Transforms sheet music written in the lilypond language into
+          the groff language</para>
 @y
           <para>
-          <command>eqn</command> へのリンク。
+          lilypond 言語で書かれたシートミュージック (sheet music) を groff 言語に変換します。
+          </para>
+@z
+
+@x gperl
+          <para>Preprocesor for groff, allowing addition of perl code
+          into groff files</para>
+@y
+          <para>
+          groff プリプロセッサーであり groff ファイルへの perl コード追加を行います。
+          </para>
+@z
+
+@x gpinyin
+          <para>Preprocesor for groff, allowing addition of Chinese
+          European-like language Pinyin into groff files.</para>
+@y
+          <para>
+          groff プリプロセッサーであり groff ファイルへの中国語発音 Pinyin 追加を行います。
           </para>
 @z
 
@@ -253,6 +272,15 @@
           </para>
 @z
 
+@x
+          <para>Translates the output of GNU <command>troff</command> to
+          PDF</para>
+@y
+          <para>
+          GNU <command>troff</command> の出力を PDF に変換します。
+          </para>
+@z
+
 @x grops
           <para>Translates the output of GNU <command>troff</command> to
           PostScript</para>
@@ -271,13 +299,13 @@
           </para>
 @z
 
-@x gtbl
-          <para>A link to <command>tbl</command></para>
-@y
-          <para>
-          <command>tbl</command> へのリンク。
-          </para>
-@z
+% @x gtbl
+%           <para>A link to <command>tbl</command></para>
+% @y
+%           <para>
+%           <command>tbl</command> へのリンク。
+%           </para>
+% @z
 
 @x hpftodit
           <para>Creates a font file for use with <command>groff -Tlj4</command>
@@ -353,6 +381,15 @@
 @y
           <para>
           <command>groff</command> を利用して <command>nroff</command> コマンドをエミュレートするスクリプト。
+          </para>
+@z
+
+@x pdfmom
+          <para>Is a wrapper around groff that facilitates the production of PDF
+          documents from files formatted with the mom macros.</para>
+@y
+          <para>
+          groff 関連ラッパー。mom マクロによるファイルから PDF を生成します。
           </para>
 @z
 

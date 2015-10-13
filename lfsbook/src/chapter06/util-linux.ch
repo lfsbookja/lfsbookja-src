@@ -145,37 +145,45 @@
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
         last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lslocks, lslogins, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
-        more, mount, mountpoint, namei, partx, pg, pivot_root, prlimit, raw,
+        lsipc, lslocks, lslogins, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        more, mount, mountpoint, namei, nsenter, partx, pg, pivot_root, prlimit, raw,
         readprofile, rename, renice, resizepart, rev, rtcwake, script,
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
         swapoff (link to swapon), swapon, switch_root, tailf, taskset, ul,
-        umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
+        umount, uname26, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
         wipefs, x86_64, and zramctl</seg>
-        <seg>libblkid.{a,so}, libfdisk.{a,so}, libmount.{a,so}, 
-        libsmartcols.{a,so}, and libuuid.{a,so}</seg>
-        <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
-        /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, 
-        and /var/lib/hwclock</seg>
+        <seg>libblkid.so, libfdisk.so, libmount.so, 
+        libsmartcols.so, and libuuid.so</seg>
+        <seg>/usr/include/blkid, 
+             /usr/include/libfdisk, 
+             /usr/include/libmount, 
+             /usr/include/libsmartcols, 
+             /usr/include/uuid, 
+             /usr/share/doc/util-linux-&util-linux-version;, 
+         and /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
         chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
         eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (last へのリンク),
-        ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lslocks, lslogins, mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
-        more, mount, mountpoint, namei, partx, pg, pivot_root, prlimit, raw,
+         ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
+        lsipc, lslocks, lslogins, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        more, mount, mountpoint, namei, nsenter, partx, pg, pivot_root, prlimit, raw,
         readprofile, rename, renice, resizepart, rev, rtcwake, script,
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
         swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, ul,
-        umount, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
+        umount, uname26, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
         wipefs, x86_64, zramctl</seg>
-        <seg>libblkid.{a,so}, libfdisk.{a,so}, libmount.{a,so}, 
-        libsmartcols.{a,so}, libuuid.{a,so}</seg>
-        <seg>/etc/terminal-colors.d, /usr/include/blkid, /usr/include/libmount, 
-        /usr/include/uuid, /usr/share/doc/util-linux-&util-linux-version;/getopt, 
-        /var/lib/hwclock</seg>
+        <seg>libblkid.so, libfdisk.so, libmount.so, 
+        libsmartcols.so, libuuid.so</seg>
+        <seg>/usr/include/blkid, 
+             /usr/include/libfdisk, 
+             /usr/include/libmount, 
+             /usr/include/libsmartcols, 
+             /usr/include/uuid, 
+             /usr/share/doc/util-linux-&util-linux-version;, 
+             /var/lib/hwclock</seg>
 @z
 
 @x
@@ -596,6 +604,15 @@
           </para>
 @z
 
+@x lsipc
+          <para>Prints information on IPC facilities currently employed
+          in the system</para>
+@y
+          <para>
+          システムに搭載されている IPC 機能の情報を表示します。
+          </para>
+@z
+
 @x lslocks
           <para>Lists local system locks</para>
 @y
@@ -941,6 +958,14 @@
 @y
           <para>
           システムのファイルツリーからファイルシステムを切断します。
+          </para>
+@z
+
+@x uname26
+          <para>A symbolic link to setarch</para>
+@y
+          <para>
+          setarch へのシンボリックリンク。
           </para>
 @z
 

@@ -108,11 +108,11 @@
 
 @x
         <seg>attr, getfattr, and setattr</seg>
-        <seg>libattr.{a,so}</seg>
+        <seg>libattr.so</seg>
         <seg>/usr/include/attr and /usr/share/doc/attr-&attr-version;</seg>
 @y
         <seg>attr, getfattr, setattr</seg>
-        <seg>libattr.{a,so}</seg>
+        <seg>libattr.so</seg>
         <seg>/usr/include/attr, /usr/share/doc/attr-&attr-version;</seg>
 @z
 

@@ -121,10 +121,10 @@
 @z
 
 @x
-        <seg>libgmp.{a,so} and libgmpxx.{a,so}</seg>
+        <seg>libgmp.so and libgmpxx.so</seg>
         <seg>/usr/share/doc/gmp-&gmp-version;</seg>
 @y
-        <seg>libgmp.{a,so}, libgmpxx.{a,so}</seg>
+        <seg>libgmp.so, libgmpxx.so</seg>
         <seg>/usr/share/doc/gmp-&gmp-version;</seg>
 @z
 

@@ -109,11 +109,11 @@
 @z
 
 @x
-        <seg>info, infokey, install-info, makeinfo (link to texi2any),
+        <seg>info, install-info, makeinfo (link to texi2any),
         pdftexi2dvi, pod2texi, texi2any, texi2dvi, texi2pdf, and texindex</seg>
         <seg>/usr/share/texinfo</seg>
 @y
-        <seg>info, infokey, install-info, makeinfo (texi2any へのリンク),
+        <seg>info, install-info, makeinfo (texi2any へのリンク),
         pdftexi2dvi, pod2texi, texi2any, texi2dvi, texi2pdf, texindex</seg>
         <seg>/usr/share/texinfo</seg>
 @z
@@ -137,14 +137,14 @@
           </para>
 @z
 
-@x infokey
-          <para>Compiles a source file containing Info customizations into a
-          binary format</para>
-@y
-          <para>
-          Info のカスタマイズ情報を設定したソースファイルをバイナリ形式にコンパイルします。
-          </para>
-@z
+% @x infokey
+%           <para>Compiles a source file containing Info customizations into a
+%           binary format</para>
+% @y
+%           <para>
+%           Info のカスタマイズ情報を設定したソースファイルをバイナリ形式にコンパイルします。
+%           </para>
+% @z
 
 @x install-info
           <para>Used to install info pages; it updates entries in the

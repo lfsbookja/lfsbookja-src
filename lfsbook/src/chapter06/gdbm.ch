@@ -90,10 +90,10 @@
 
 @x
         <seg>gdbm_dump, gdbm_load, and gdbmtool</seg>
-        <seg>libgdbm.{a,so} and libgdbm_compat.{a,so}</seg>
+        <seg>libgdbm.so and libgdbm_compat.so</seg>
 @y
         <seg>gdbm_dump, gdbm_load, gdbmtool</seg>
-        <seg>libgdbm.{a,so}, libgdbm_compat.{a,so}</seg>
+        <seg>libgdbm.so, libgdbm_compat.so</seg>
 @z
 
 @x

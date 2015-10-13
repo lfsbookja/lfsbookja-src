@@ -165,19 +165,19 @@
         kbd_mode, kbdrate, loadkeys, loadunimap,
         mapscrn, openvt, psfaddtable (link to psfxtable), psfgettable (link to
         psfxtable), psfstriptable (link to psfxtable), psfxtable, <!--resizecons,-->
-        setfont, setkeycodes, setleds, setmetamode,
+        setfont, setkeycodes, setleds, setmetamode, setvtrgb,
         showconsolefont, showkey, unicode_start, and unicode_stop</seg>
-        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps,
-        and /usr/share/unimaps</seg>
+        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps, 
+        /usr/share/doc/kbd-&kbd-version;,  and /usr/share/unimaps</seg>
 @y
         <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbdinfo,
         kbd_mode, kbdrate, loadkeys, loadunimap,
         mapscrn, openvt, psfaddtable (psfxtable へのリンク), psfgettable (psfxtable へのリンク),
         psfstriptable (psfxtable へのリンク), psfxtable, <!--resizecons,-->
-        setfont, setkeycodes, setleds, setmetamode,
+        setfont, setkeycodes, setleds, setmetamode, setvtrgb,
         showconsolefont, showkey, unicode_start, unicode_stop</seg>
-        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps,
-        /usr/share/unimaps</seg>
+        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps, 
+        /usr/share/doc/kbd-&kbd-version;, /usr/share/unimaps</seg>
 @z
 
 @x
@@ -320,13 +320,13 @@
           </para>
 @z
 
-@x resizecons
-          <para>Changes the kernel idea of the console size</para>
-@y
-          <para>
-          カーネルが認識しているコンソールサイズを変更します。
-          </para>
-@z
+% @x resizecons
+%           <para>Changes the kernel idea of the console size</para>
+% @y
+%           <para>
+%           カーネルが認識しているコンソールサイズを変更します。
+%           </para>
+% @z
 
 @x setfont
           <para>Changes the Enhanced Graphic Adapter (EGA) and Video Graphics
@@ -360,6 +360,14 @@
 @y
           <para>
           キーボードのメタキー (meta-key) 設定を定義します。
+          </para>
+@z
+
+@x setvtrgb
+          <para>Sets the console color map in all virtual terminals</para>
+@y
+          <para>
+          仮想端末すべてに対してコンソールのカラーマップを設定します。
           </para>
 @z
 

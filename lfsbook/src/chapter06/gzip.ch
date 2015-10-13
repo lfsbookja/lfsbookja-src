@@ -71,11 +71,11 @@
 @z
 
 @x
-        <seg>gunzip, gzexe, gzip, uncompress, zcat, zcmp, zdiff, zegrep, zfgrep,
-        zforce, zgrep, zless, zmore, and znew</seg>
+        <seg>gunzip, gzexe, gzip, uncompress (hard link with gunzip), zcat, zcmp, 
+        zdiff, zegrep, zfgrep, zforce, zgrep, zless, zmore, and znew</seg>
 @y
-        <seg>gunzip, gzexe, gzip, uncompress, zcat, zcmp, zdiff, zegrep, zfgrep,
-        zforce, zgrep, zless, zmore, znew</seg>
+        <seg>gunzip, gzexe, gzip, uncompress (gunzip へのハードリンク), zcat, zcmp, 
+        zdiff, zegrep, zfgrep, zforce, zgrep, zless, zmore, znew</seg>
 @z
 
 @x

@@ -120,11 +120,11 @@
 
 @x
         <seg>chacl, getfacl, and setacl</seg>
-        <seg>libacl.{a,so}</seg>
+        <seg>libacl.so</seg>
         <seg>/usr/include/acl and /usr/share/doc/acl-&acl-version;</seg>
 @y
         <seg>chacl, getfacl, setacl</seg>
-        <seg>libacl.{a,so}</seg>
+        <seg>libacl.so</seg>
         <seg>/usr/include/acl, /usr/share/doc/acl-&acl-version;</seg>
 @z
 

@@ -202,7 +202,7 @@
            clear, 
            infocmp, 
            infotocap (link to tic),
-           ncursesw5-config, 
+           ncursesw6-config, 
            reset (link to tset), 
            tabs, 
            tic, 
@@ -215,6 +215,7 @@
            libformw.so, 
            libmenuw.so, 
            libncursesw.so,
+           libncurses++w.a,
            libpanelw.so, and their non-wide-character counterparts without "w"
               in the library names.</seg>
         <seg>
@@ -228,7 +229,7 @@
            clear, 
            infocmp, 
            infotocap (tic へのリンク),
-           ncursesw5-config, 
+           ncursesw6-config, 
            reset (tset へのリンク), 
            tabs, 
            tic, 
@@ -241,7 +242,9 @@
            libformw.so, 
            libmenuw.so, 
            libncursesw.so,
-           libpanelw.so, これらに加えてワイド文字対応ではない通常のライブラリで、その名称から "w" を取り除いたもの。</seg>
+           libncurses++w.a,
+           libpanelw.so, 
+           これらに加えてワイド文字対応ではない通常のライブラリでその名称から "w" を取り除いたもの。</seg>
         <seg>
            /usr/share/tabset, 
            /usr/share/terminfo,

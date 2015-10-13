@@ -288,12 +288,12 @@ SUBDIRS = appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
 	chapter06 chapter07 chapter08 chapter09 prologue stylesheets \
 	udev-lfs
 
-EXTRA_DIST = general.ch index.ch packages.ch patches.ch tidy.ch \
-	make-aux-files.ch
+EXTRA_DIST = general.ch index.ch packages.ch patches.ch pdf-fixups.ch \
+	tidy.ch make-aux-files.ch
 
 BOOKdir = @abs_bookdir@
-srcs = general.ent index.xml packages.ent patches.ent process-scripts.sh \
-	aux-file-data.sh tidy.conf pdf-fixups.sh make-aux-files.sh
+srcs = general.ent index.xml packages.ent patches.ent pdf-fixups.sh \
+	process-scripts.sh aux-file-data.sh tidy.conf make-aux-files.sh
 
 DISTCLEANFILES = $(srcs)
 BASEDIR = ../svn.ja
@@ -640,8 +640,8 @@ aux-file-data.sh: $(BOOKdir)/aux-file-data.sh
 make-aux-files.sh: $(BOOKdir)/make-aux-files.sh $(srcdir)/make-aux-files.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
 	chmod +x $@
-pdf-fixups.sh: $(BOOKdir)/pdf-fixups.sh
-	cp -p $^ $@
+pdf-fixups.sh: $(BOOKdir)/pdf-fixups.sh $(srcdir)/pdf-fixups.ch
+	$(top_builddir)/$(CTIE) -m $@ $^
 
 stylesheets:
 	$(MKDIR_P) stylesheets

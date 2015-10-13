@@ -48,6 +48,84 @@
 @z
 
 @x
+      <para>2015-10-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.7.4. Fixes
+          <ulink url="&lfs-ticket-root;3850">#3850</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.2.3. Fixes
+          <ulink url="&lfs-ticket-root;3844">#3844</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata2015g. Fixes
+          <ulink url="&lfs-ticket-root;3845">#3845</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Many updates to installed files and 
+          directories.  Huge thanks to Fernando. Fixes
+          <ulink url="&lfs-ticket-root;3849">#3849</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-10-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-db-2.7.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3850">#3850</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.2.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3844">#3844</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata2015g へのアップデート。
+          <ulink url="&lfs-ticket-root;3845">#3845</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - インストールファイル、インストールディレクトリを大幅に改訂。
+          Fernando に感謝。
+          <ulink url="&lfs-ticket-root;3849">#3849</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-10-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Reset location of anduin hosted files.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-10-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - auduin ホストのファイル位置を再構成。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change references to ncursesw5 to
+          ncursesw6.  Thanks to Pierre Labastie for the patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ncursesw5 から ncursesw6 への参照変更。
+          パッチを提供してくれた Pierre Labastie に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-10-01</para>
       <itemizedlist>
         <listitem>

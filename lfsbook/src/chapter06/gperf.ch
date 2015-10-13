@@ -64,8 +64,10 @@
 
 @x
       <segtitle>Installed program</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x

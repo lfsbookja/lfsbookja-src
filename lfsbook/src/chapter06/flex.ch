@@ -107,11 +107,11 @@
 
 @x
         <seg>flex, flex++ (link to flex), and lex (link to flex)</seg>
-        <seg>libfl.{a,so} and libfl_pic.{a,so}</seg>
+        <seg>libfl.so and libfl_pic.so</seg>
         <seg>/usr/share/doc/flex-&flex-version;</seg>
 @y
         <seg>flex, flex++ (flex へのリンク), lex (flex へのリンク)</seg>
-        <seg>libfl.{a,so}, libfl_pic.{a,so}</seg>
+        <seg>libfl.so, libfl_pic.so</seg>
         <seg>/usr/share/doc/flex-&flex-version;</seg>
 @z
 

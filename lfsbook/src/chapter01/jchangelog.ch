@@ -54,6 +54,26 @@
 -->
 
     <listitem>
+      <para>2015-10-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - パッケージとパッチにて日本語訳情報の PDF 改行位置を調整。
+          (version-check.sh に対して取られた手法を採用。)
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20151012,
+          Changeset
+          <ulink url="&lfs-rev-root;10962">10962</ulink> ～
+          <ulink url="&lfs-rev-root;10964">10964</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2015-10-02</para>
       <itemizedlist>
         <listitem>

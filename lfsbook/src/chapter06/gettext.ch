@@ -76,20 +76,20 @@
 @z
 
 @x
-        <seg>autopoint, config.charset, config.rpath, envsubst, gettext, gettext.sh,
+        <seg>autopoint, envsubst, gettext, gettext.sh,
         gettextize, hostname, msgattrib, msgcat, msgcmp, msgcomm, msgconv, msgen,
         msgexec, msgfilter, msgfmt, msggrep, msginit, msgmerge, msgunfmt, msguniq,
         ngettext, recode-sr-latin, and xgettext</seg>
-        <seg>libasprintf.{a,so}, libgettextlib.so, libgettextpo.{a,so},
+        <seg>libasprintf.so, libgettextlib.so, libgettextpo.so,
         libgettextsrc.so, and preloadable_libintl.so</seg>
         <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;, and
         /usr/share/gettext</seg>
 @y
-        <seg>autopoint, config.charset, config.rpath, envsubst, gettext, gettext.sh,
+        <seg>autopoint, envsubst, gettext, gettext.sh,
         gettextize, hostname, msgattrib, msgcat, msgcmp, msgcomm, msgconv, msgen,
         msgexec, msgfilter, msgfmt, msggrep, msginit, msgmerge, msgunfmt, msguniq,
         ngettext, recode-sr-latin, xgettext</seg>
-        <seg>libasprintf.{a,so}, libgettextlib.so, libgettextpo.{a,so},
+        <seg>libasprintf.so, libgettextlib.so, libgettextpo.so,
         libgettextsrc.so, preloadable_libintl.so</seg>
         <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;,
         /usr/share/gettext</seg>
@@ -110,33 +110,33 @@
           </para>
 @z
 
-@x config.charset
-          <para>Outputs a system-dependent table of character encoding
-          aliases</para>
-@y
-          <!--
-          日本語訳註： 2009-09-07 matsuand
-          とりあえずの訳。本コマンドの意味が分からない。
-          -->
-          <para>
-          システム依存の、キャラクターエンコーディングのエイリアス対応表を出力します。
-          </para>
-@z
+% @x config.charset
+%           <para>Outputs a system-dependent table of character encoding
+%           aliases</para>
+% @y
+%           <!--
+%           日本語訳註： 2009-09-07 matsuand
+%           とりあえずの訳。本コマンドの意味が分からない。
+%           -->
+%           <para>
+%           システム依存の、キャラクターエンコーディングのエイリアス対応表を出力します。
+%           </para>
+% @z
 
-@x config.rpath
-          <para>Outputs a system-dependent set of variables, describing how
-          to set the runtime search path of shared libraries in an
-          executable</para>
-@y
-          <!--
-          日本語訳註： 2009-09-07 matsuand
-          とりあえずの訳。本コマンドの意味が分からない。
-          -->
-          <para>
-          システムに依存する変数一覧を出力します。
-          その変数とは、実行モジュールにおける共有ライブラリの検索パスをどのように設定するかを示すものです。
-          </para>
-@z
+% @x config.rpath
+%           <para>Outputs a system-dependent set of variables, describing how
+%           to set the runtime search path of shared libraries in an
+%           executable</para>
+% @y
+%           <!--
+%           日本語訳註： 2009-09-07 matsuand
+%           とりあえずの訳。本コマンドの意味が分からない。
+%           -->
+%           <para>
+%           システムに依存する変数一覧を出力します。
+%           その変数とは、実行モジュールにおける共有ライブラリの検索パスをどのように設定するかを示すものです。
+%           </para>
+% @z
 
 @x envsubst
           <para>Substitutes environment variables in shell format strings</para>

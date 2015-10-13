@@ -151,7 +151,7 @@ will also be used as a part of installation:</para>
 
         <seg>libudev.so</seg>
 
-        <seg>/etc/udev, /lib/udev, and /lib/firmware</seg>
+        <seg>/etc/udev, /lib/udev, and /usr/share/doc/udev-20140408</seg>
 @y
         <seg><!-- These are in /lib/udev and not to be called by the user:
          accelerometer, ata_id, cdrom_id, collect, mtd_probe,
@@ -159,7 +159,7 @@ will also be used as a part of installation:</para>
 
         <seg>libudev.so</seg>
 
-        <seg>/etc/udev, /lib/udev, /lib/firmware</seg>
+        <seg>/etc/udev, /lib/udev, /usr/share/doc/udev-20140408</seg>
 @z
 
 @x

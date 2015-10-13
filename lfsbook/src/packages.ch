@@ -26,6 +26,12 @@
 @z
 
 @x
+<!ENTITY autoconf-ch6-sbu "less than 0.1 SBU (about 4.7 SBU with tests)">
+@y
+<!ENTITY autoconf-ch6-sbu "0.1 SBU 以下 (テスト込みで約 4.7 SBU)">
+@z
+
+@x
 <!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 9.2 SBU with tests)">
 @y
 <!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テスト込みで約 9.2 SBU)">

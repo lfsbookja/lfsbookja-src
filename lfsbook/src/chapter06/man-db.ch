@@ -421,15 +421,15 @@
 
 @x
         <seg>accessdb, apropos (link to whatis), catman, lexgrog, man, mandb,
-        manpath, whatis, and zsoelim</seg>
+        manpath, and whatis</seg>
         <seg>libman.so and libmandb.so</seg>
-        <seg>/usr/lib/man-db, /usr/libexec/man-db,
+        <seg>/usr/lib/man-db, /usr/lib/tmpfiles.d, /usr/libexec/man-db,
         and /usr/share/doc/man-db-&man-db-version;</seg>
 @y
         <seg>accessdb, apropos (whatis へのリンク), catman, lexgrog, man, mandb,
-        manpath, whatis, zsoelim</seg>
+        manpath, whatis</seg>
         <seg>libman.so, libmandb.so</seg>
-        <seg>/usr/lib/man-db, /usr/libexec/man-db,
+        <seg>/usr/lib/man-db, /usr/lib/tmpfiles.d, /usr/libexec/man-db,
         /usr/share/doc/man-db-&man-db-version;</seg>
 @z
 
@@ -516,15 +516,15 @@
           </para>
 @z
 
-@x zsoelim
-          <para>Reads files and replaces lines of the form <emphasis>.so
-          file</emphasis> by the contents of the mentioned
-          <emphasis>file</emphasis></para>
-@y
-          <para>
-          ファイルの内容を読み込んで、<emphasis>.so file</emphasis> の形で書かれている記述行を、その <emphasis>file</emphasis> の内容に置き換えます。
-          </para>
-@z
+% @x zsoelim
+%           <para>Reads files and replaces lines of the form <emphasis>.so
+%           file</emphasis> by the contents of the mentioned
+%           <emphasis>file</emphasis></para>
+% @y
+%           <para>
+%           ファイルの内容を読み込んで、<emphasis>.so file</emphasis> の形で書かれている記述行を、その <emphasis>file</emphasis> の内容に置き換えます。
+%           </para>
+% @z
 
 @x libman
           <para>Contains run-time support for <command>man</command></para>

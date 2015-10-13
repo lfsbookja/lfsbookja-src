@@ -155,23 +155,21 @@
 @z
 
 @x
-        <seg>a2p, c2ph, corelist, cpan, cpan2dist, cpanp,
-        cpanp-run-perl, enc2xs, find2perl, h2ph, h2xs,
-        instmodsh, json_pp, libnetcfg, perl, perl&perl-version; (link to perl),
-        perlbug, perldoc, perlivp, perlthanks (link to perlbug), piconv, pl2pm,
-        pod2html, pod2latex, pod2man, pod2text, pod2usage, podchecker,
-        podselect, prove, psed (link to s2p), pstruct (link to c2ph), ptar,
-        ptardiff, ptargrep, s2p, shasum, splain, xsubpp, and zipdetails</seg>
-        <seg>Several hundred which cannot all be listed here</seg>
+        <seg>c2ph, corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh,
+        json_pp, libnetcfg, perl, perl&perl-version; (hard link to perl),
+        perlbug, perldoc, perlivp, perlthanks (hard link to perlbug), piconv,
+        pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, podselect,
+        prove, pstruct (hard link to c2ph), ptar, ptardiff, ptargrep, shasum,
+        splain, xsubpp, and zipdetails</seg>
+        <seg>Many which cannot all be listed here</seg>
         <seg>/usr/lib/perl5</seg>
 @y
-        <seg>a2p, c2ph, corelist, cpan, cpan2dist, cpanp,
-        cpanp-run-perl, enc2xs, find2perl, h2ph, h2xs,
-        instmodsh, json_pp, libnetcfg, perl, perl&perl-version; (perl へのリンク),
-        perlbug, perldoc, perlivp, perlthanks (perlbug へのリンク), piconv, pl2pm,
-        pod2html, pod2latex, pod2man, pod2text, pod2usage, podchecker,
-        podselect, prove, psed (s2p へのリンク), pstruct (c2ph へのリンク), ptar,
-        ptardiff, ptargrep, s2p, shasum, splain, xsubpp, zipdetails</seg>
+        <seg>c2ph, corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh,
+        json_pp, libnetcfg, perl, perl&perl-version; (perl へのハードリンク),
+        perlbug, perldoc, perlivp, perlthanks (perlbug へのハードリンク), piconv,
+        pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, podselect,
+        prove, pstruct (hard c2ph へのハードリンク), ptar, ptardiff, ptargrep, shasum,
+        splain, xsubpp, zipdetails</seg>
         <seg>ここでは列記できないほどの数多くのライブラリ</seg>
         <seg>/usr/lib/perl5</seg>
 @z
@@ -247,6 +245,14 @@
 @y
           <para>
           Unicode キャラクターマッピングまたは Tcl エンコーディングファイルから、Perl の Encode 拡張モジュールを構築します。
+          </para>
+@z
+
+@x encguess
+          <para>Guess the encoding type of one or several files</para>
+@y
+          <para>
+          複数ファイルのエンコーディングを調査します。
           </para>
 @z
 
@@ -454,13 +460,13 @@
           </para>
 @z
 
-@x psed
-          <para>A Perl version of the stream editor <command>sed</command></para>
-@y
-          <para>
-          ストリームエディター <command>sed</command> の Perl バージョン。
-          </para>
-@z
+% @x psed
+%           <para>A Perl version of the stream editor <command>sed</command></para>
+% @y
+%           <para>
+%           ストリームエディター <command>sed</command> の Perl バージョン。
+%           </para>
+% @z
 
 @x pstruct
           <para>Dumps C structures as generated from <command>cc -g -S</command>
