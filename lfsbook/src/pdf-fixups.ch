@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original shell source of the LFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
