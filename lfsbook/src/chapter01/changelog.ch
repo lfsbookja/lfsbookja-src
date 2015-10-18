@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2015-10-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to less-481. Fixes
+          <ulink url="&lfs-ticket-root;3853">#3853</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.1.5. Fixes
+          <ulink url="&lfs-ticket-root;3851">#3851</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-10-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - less-481 へのアップデート。
+          <ulink url="&lfs-ticket-root;3853">#3853</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.1.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3851">#3851</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-10-12</para>
       <itemizedlist>
         <listitem>
