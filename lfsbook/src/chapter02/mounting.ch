@@ -24,7 +24,7 @@
   be made accessible. In order to do this, the partition needs to be
   mounted at a chosen mount point. For the purposes of this book, it is
   assumed that the file system is mounted under the directory specified by the
-  <envar>LFS</envar> environment varibale as described in the previous section.
+  <envar>LFS</envar> environment variable as described in the previous section.
   </para>
 @y
   <para>

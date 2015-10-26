@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2015-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Revise version-check.sh to flag
+          bad /bin/sh symlinks.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - version-check.sh にて /bin/sh のシンボリックリンクが誤っている場合への対処。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-10-17</para>
       <itemizedlist>
         <listitem>
