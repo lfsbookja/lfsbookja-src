@@ -70,7 +70,7 @@
 @z
 
 @x
-  <para>Other file sytems, including FAT32, NTFS, ReiserFS, JFS, and XFS are
+  <para>Other file systems, including FAT32, NTFS, ReiserFS, JFS, and XFS are
   useful for specialized purposes.  More information about these file systems
   can be found at <ulink
   url="http://en.wikipedia.org/wiki/Comparison_of_file_systems"/>.</para>
