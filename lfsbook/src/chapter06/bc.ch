@@ -70,7 +70,7 @@
 @x
     <para>To test bc, run the commands below. There is quite a bit of output,
     so you may want to redirect it to a file. There are a very small percentage
-    of tests (10 of 12,144) that will indicate a roundoff error at the last
+    of tests (10 of 12,144) that will indicate a round off error at the last
     digit.</para>
 @y
     <para>

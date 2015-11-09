@@ -349,7 +349,7 @@
 @z
 
 @x fdisk
-          <para>Manipulates the paritition table of the given device</para>
+          <para>Manipulates the partition table of the given device</para>
 @y
           <para>
           指定されたデバイスのパーティションテーブルを操作します。

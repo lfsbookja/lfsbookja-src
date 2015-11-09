@@ -48,6 +48,72 @@
 @z
 
 @x
+      <para>2015-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add glibc-2.22-largefile-1.patch.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.3. Fixes
+          <ulink url="&lfs-ticket-root;3857">#3857</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.3.0. Fixes
+          <ulink url="&lfs-ticket-root;3858">#3858</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc-2.22-largefile-1.patch の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3857">#3857</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3858">#3858</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to grep-2.22. Fixes
+          <ulink url="&lfs-ticket-root;3855">#3855</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.2.5. Fixes
+          <ulink url="&lfs-ticket-root;3854">#3854</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.27.1. Fixes
+          <ulink url="&lfs-ticket-root;3856">#3856</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grep-2.22 へのアップデート。
+          <ulink url="&lfs-ticket-root;3855">#3855</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.2.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3854">#3854</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.27.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3856">#3856</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-10-25</para>
       <itemizedlist>
         <listitem>

@@ -408,7 +408,7 @@
 @z
 
 @x FONT_UNIMAP
-        <para>This variable specifies the unicode font map.</para>
+        <para>This variable specifies the Unicode font map.</para>
 @y
         <para>
         この変数はユニコードのフォントマップを指定します。

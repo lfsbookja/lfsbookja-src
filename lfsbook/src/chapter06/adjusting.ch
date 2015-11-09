@@ -99,7 +99,7 @@
 @z
 
 @x
-  <para os="d">Now make sure that we're setup to use the correct startfiles:</para>
+  <para os="d">Now make sure that we're setup to use the correct start files:</para>
 @y
   <para os="d">
   ここで起動ファイルが正しく用いられていることを確認します。

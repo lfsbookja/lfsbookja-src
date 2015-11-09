@@ -136,7 +136,7 @@
 @z
 
 @x
-          <para>Simlarly, we pass libc_cv_c_cleanup=yes through to the
+          <para>Similarly, we pass libc_cv_c_cleanup=yes through to the
           <command>configure</command> script so that the test is skipped and C
           cleanup handling support is configured.</para>
 @y
@@ -147,7 +147,7 @@
 @z
 
 @x libc_cv_ctors_header=yes
-          <para>Simlarly, we pass libc_cv_ctors_header=yes through to the
+          <para>Similarly, we pass libc_cv_ctors_header=yes through to the
           <command>configure</command> script so that the test is skipped and
           gcc constructor support is configured.</para>
 @y

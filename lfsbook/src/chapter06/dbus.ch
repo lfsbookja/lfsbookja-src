@@ -65,9 +65,9 @@
 @z
 
 @x
-    <para>This package does come with a testsuite, but it requires several
+    <para>This package does come with a test suite, but it requires several
     packages that are not included in LFS. Instructions for running the
-    testsuite can be found in the BLFS book at
+    test suite can be found in the BLFS book at
     <ulink url="&blfs-root;/view/&short-version;/general/dbus.html"/>.</para>
 @y
     <para>

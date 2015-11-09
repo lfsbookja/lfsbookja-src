@@ -122,7 +122,7 @@
 @z
 
 @x Support for uevent helper
-          <para>Having this opion set may interfere with device
+          <para>Having this option set may interfere with device
           management when using Udev/Eudev. </para>
 @y
           <para>

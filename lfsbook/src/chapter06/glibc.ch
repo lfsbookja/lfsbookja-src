@@ -90,6 +90,16 @@
 @z
 
 @x
+    <para>The most recent stable version of Glibc does not handle large files
+    correctly.  Fix the problem with this patch:</para>
+@y
+    <para>
+    最新の Glibc は大容量ファイルの取り扱いに不備があります。
+    以下のパッチによりこれを修正します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
@@ -149,8 +159,7 @@
 @y
         <para><emphasis>
         posix/tst-getaddrinfo4</emphasis> は、テスト時に必要なネットワークアプリケーションがないため失敗します。
-        to not having the necessary  networking applications when the tests are
-        run.</para>
+        </para>
 @z
 
 @x
@@ -348,7 +357,7 @@
 @z
 
 @x
-    <para>Install and set up the timezone data with the following:</para>
+    <para>Install and set up the time zone data with the following:</para>
 @y
     <para>以下によりタイムゾーンデータをインストールし設定します。</para>
 @z
@@ -360,14 +369,14 @@
 @z
 
 @x
-          <para>This creates posix timezones, without any leap seconds.  It is
+          <para>This creates posix time zones, without any leap seconds.  It is
           conventional to put these in both
           <filename class="directory">zoneinfo</filename> and
           <filename class="directory">zoneinfo/posix</filename>. It is
-          necessary to put the POSIX timezones in
+          necessary to put the POSIX time zones in
           <filename class="directory">zoneinfo</filename>, otherwise various
           test-suites will report errors. On an embedded system, where space is
-          tight and you do not intend to ever update the timezones, you could save
+          tight and you do not intend to ever update the time zones, you could save
           1.9MB by not using the <filename class="directory">posix</filename>
           directory, but some applications or test-suites might produce some
           failures.</para>
@@ -384,9 +393,9 @@
 @z
 
 @x
-          <para>This creates right timezones, including leap seconds. On an
+          <para>This creates right time zones, including leap seconds. On an
           embedded system, where space is tight and you do not intend to
-          ever update the timezones, or care about the correct time, you could
+          ever update the time zones, or care about the correct time, you could
           save 1.9MB by omitting the <filename class="directory">right</filename>
           directory.</para>
 @y
@@ -422,7 +431,7 @@
     <para>After answering a few questions about the location, the script will
     output the name of the time zone (e.g.,
     <emphasis>America/Edmonton</emphasis>). There are also some other possible
-    timezones listed in <filename
+    time zones listed in <filename
     class='directory'>/usr/share/zoneinfo</filename> such as
     <emphasis>Canada/Eastern</emphasis> or <emphasis>EST5EDT</emphasis> that
     are not identified by the script but can be used.</para>
