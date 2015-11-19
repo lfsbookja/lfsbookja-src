@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2015-11-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to flex-2.6.0. Fixes
+          <ulink url="&lfs-ticket-root;3860">#3860</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.7.5. Fixes
+          <ulink url="&lfs-ticket-root;3859">#3859</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-22. Fixes
+          <ulink url="&lfs-ticket-root;3861">#3861</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-11-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - flex-2.6.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3860">#3860</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.7.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3859">#3859</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-22 へのアップデート。
+          <ulink url="&lfs-ticket-root;3861">#3861</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-11-06</para>
       <itemizedlist>
         <listitem>

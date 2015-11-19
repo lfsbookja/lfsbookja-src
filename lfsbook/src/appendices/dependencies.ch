@@ -515,9 +515,9 @@
          Patch, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Bison (suppressed) and Gawk</seg>
+          <seg>Bison and Gawk</seg>
 @y
-          <seg>Bison (suppressed), Gawk</seg>
+          <seg>Bison, Gawk</seg>
 @z
 @x
           <seg>IPRoute2, Kbd, and Man-DB</seg>

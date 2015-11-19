@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>First, skip running three regression tests that require Bison:</para>
-@y
-    <para>
-    Bison を必要としている三つの縮退テストを実行しないようにします。
-    </para>
-@z
-
-@x
     <para>Prepare Flex for compilation:</para>
 @y
     <para>&PreparePackage1;Flex&PreparePackage2;</para>
@@ -60,19 +52,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>There are some packages that expect to find the
-    <filename class="libraryfile">lex</filename> library in <filename
-    class="directory">/usr/lib</filename>. Create a symlink to account for
-    this:</para>
-@y
-    <para>
-    パッケージの中には <filename class="libraryfile">lex</filename> ライブラリが <filename
-    class="directory">/usr/lib</filename> ディレクトリにあるものとして動作しているものがあります。
-    これに対応するためシンボリックリンクを作成します。
-    </para>
 @z
 
 @x
