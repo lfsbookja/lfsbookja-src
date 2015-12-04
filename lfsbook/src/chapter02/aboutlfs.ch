@@ -1,7 +1,7 @@
 %
 % This is part of LFSbookja package.
 %
-% This is a CTIE change file for the LFS hint text files.
+% This is a CTIE change file for the original XML source of the LFSbook.
 %
 % $Author$
 % $Rev$
@@ -86,10 +86,16 @@
   <note><para>One way to ensure that the <envar>LFS</envar> variable is always
   set is to edit the <filename>.bash_profile</filename> file in both your
   personal home directory and in  <filename>/root/.bash_profile</filename> and
-  enter the export command above.  </para></note>
+  enter the export command above.  In addition, the shell specified in the
+  <filename>/etc/passwd</filename> file for all users that need the
+  <envar>LFS</envar> variable needs to be bash to ensure that the
+  <filename>/root/.bash_profile</filename> file is incorporated as a part of
+  the login process.</para></note>
 @y
   <note><para>
   <envar>LFS</envar> 変数を確実に設定しておくために、ローカルな <filename>.bash_profile</filename>
   および <filename>/root/.bash_profile</filename> に上記変数を export するコマンドを記述しておく方法もあります。
+  なお <filename>/etc/passwd</filename> ファイルにて <envar>LFS</envar> 変数を必要とするユーザーは、シェルとして bash を利用するようにしてください。
+  <filename>/root/.bash_profile</filename> ファイルはログインプロセスの一部として機能するためです。
   </para></note>
 @z

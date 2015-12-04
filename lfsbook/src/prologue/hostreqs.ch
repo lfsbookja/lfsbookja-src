@@ -90,12 +90,12 @@
 @z
 
 @x
-      <para><emphasis role="strong">GCC-4.1.2</emphasis> including the C++
+      <para><emphasis role="strong">GCC-4.7</emphasis> including the C++
       compiler, <command>g++</command> (Versions greater than &gcc-version; are
       not recommended as they have not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">GCC-4.1.2</emphasis> と C++ コンパイラである <command>g++</command> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">GCC-4.7</emphasis> と C++ コンパイラである <command>g++</command> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
 @z
 
@@ -194,6 +194,11 @@
   <para>
   ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のスクリプトを実行して確認することができます。
   </para>
+@z
+
+@x
+<?hard-pagebreak?>
+@y
 @z
 
 @x

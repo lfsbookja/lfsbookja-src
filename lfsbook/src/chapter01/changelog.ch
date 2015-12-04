@@ -48,6 +48,45 @@
 @z
 
 @x
+      <para>2015-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-6.1.0. Fixes
+          <ulink url="&lfs-ticket-root;3862">#3862</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Clean up Eudev configure options. Fixes
+          <ulink url="&lfs-ticket-root;3865">#3865</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update host requirements to require GCC-4.7 or later.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Clarify that setting and using the LFS variable 
+          assumes the bash shell.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gmp-6.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3862">#3862</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Eudev の configure オプションを整理。
+          <ulink url="&lfs-ticket-root;3865">#3865</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ホスト要件を GCC-4.7 以降に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - LFS 変数の設定および利用にあたって bash シェルが前提であることを明記。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-11-18</para>
       <itemizedlist>
         <listitem>
