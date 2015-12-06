@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2015-12-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-5.3.0. Fixes
+          <ulink url="&lfs-ticket-root;3866">#3866</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-12-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-5.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3866">#3866</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-12-03</para>
       <itemizedlist>
         <listitem>

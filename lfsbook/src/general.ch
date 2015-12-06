@@ -8,17 +8,17 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version         "SVN-20151203">
+<!ENTITY version         "SVN-20151205">
 <!ENTITY short-version   "svn">  <!-- Used below in &blfs-book;. Change to x.y for release 
                                       but not -rc releases -->
-<!ENTITY releasedate     "December 3, 2015">
+<!ENTITY releasedate     "December 5, 2015">
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version         "SVN-20151203">
+<!ENTITY version         "SVN-20151205">
 <!ENTITY short-version   "svn">  <!-- Used below in &blfs-book;. Change to x.y for release 
                                       but not -rc releases -->
-<!ENTITY releasedate     "2015年12月03日">
-<!ENTITY jversion        "20151204">
+<!ENTITY releasedate     "2015年12月05日">
+<!ENTITY jversion        "20151206">
 @z
 
 @x

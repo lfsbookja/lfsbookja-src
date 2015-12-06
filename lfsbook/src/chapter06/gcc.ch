@@ -154,14 +154,15 @@
 @x
     <para>A few unexpected failures cannot always be avoided. The GCC developers
     are usually aware of these issues, but have not resolved them yet.
-    In particular, one test in the libgomp test suite is known to fail.
+    In particular, two tests in the libstdc++ test suite are known to fail
+    when running as the root user as we do here.
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
 @y
     <para>
     テストに失敗することがありますが、これを回避することはできません。
     GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
-    特に libgomp のテストスイートにてテストが1つ失敗します。
+    特に今行っているように root ユーザーにてテストを実施すると libstdc++ に関するテストが２つ失敗します。
     上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
 @z
