@@ -34,6 +34,14 @@
 @z
 
 @x
+    <para>First, fix an internal problem:</para>
+@y
+    <para>
+    はじめに内部にて発生する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Xz for compilation with:</para>
 @y
     <para>&PreparePackage1;Xz&PreparePackage2;</para>

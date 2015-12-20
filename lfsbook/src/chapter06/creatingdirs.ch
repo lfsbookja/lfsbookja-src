@@ -70,23 +70,21 @@
 @z
 
 @x
-    <para>The directory tree is based on the Filesystem Hierarchy Standard (FHS)
-    (available at <ulink url="https://wiki.linuxfoundation.org/en/FHS"/>).
-    The FHS also stipulates the existence of <filename
+    <para>The directory tree is based on the Filesystem Hierarchy Standard
+    (FHS) (available at <ulink
+    url="https://wiki.linuxfoundation.org/en/FHS"/>).  The FHS also stipulates
+    the optional existence some directories such as <filename
     class="directory">/usr/local/games</filename> and <filename
-    class="directory">/usr/share/games</filename>. The FHS is not precise as to
-    the structure of the <filename class="directory">/usr/local/share</filename>
-    subdirectory, so we create only the directories that are needed. However,
-    feel free to create these directories if you prefer to conform more strictly
-    to the FHS.</para>
+    class="directory">/usr/share/games</filename>.  We create only the
+    directories that are needed. However, feel free to create these
+    directories.  </para>
 @y
     <para>
-    本書のディレクトリ構成は標準ファイルシステム構成 (Filesystem Hierarchy Standard; FHS) に基づいています。(その情報は <ulink 
+    本書のディレクトリ構成は標準ファイルシステム構成 (Filesystem Hierarchy Standard; FHS) に基づいています。(その情報は <ulink
     url="https://wiki.linuxfoundation.org/en/FHS"/> に示されています。)
-    FHS では <filename class="directory">/usr/local/games</filename> や <filename
-    class="directory">/usr/share/games</filename> を規定していますが、一方で <filename
-    class="directory">/usr/local/share</filename> については明確なものがありません。
+    FHS では、任意のディレクトリとして <filename class="directory">/usr/local/games</filename> や <filename
+    class="directory">/usr/share/games</filename> などを規定しています。
     したがって本書では必要なディレクトリのみを作成していくことにします。
-    もっとも FHS に準拠した構成を望むなら、どうぞ自由に作成してください。
+    他のディレクトリについては、どうぞ自由に取り決めて作成してください。
     </para>
 @z

@@ -48,6 +48,60 @@
 @z
 
 @x
+      <para>2015-12-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Reword FHS Compliance Note. Fixes
+          <ulink url="&lfs-ticket-root;3871">#3871</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.22.1. Fixes
+          <ulink url="&lfs-ticket-root;3870">#3870</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.22.1. Fixes
+          <ulink url="&lfs-ticket-root;3870">#3870</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.3.1. Fixes
+          <ulink url="&lfs-ticket-root;3868">#3868</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.03. Fixes
+          <ulink url="&lfs-ticket-root;3867">#3867</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix xz problem identified upstream. Fixes
+          <ulink url="&lfs-ticket-root;3869">#3869</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-12-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - FHS コンプライアンスノートを修正。
+          <ulink url="&lfs-ticket-root;3871">#3871</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.22.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3870">#3870</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3868">#3868</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.03 へのアップデート。
+          <ulink url="&lfs-ticket-root;3867">#3867</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz のアップストリームが認識している問題を修正。
+          <ulink url="&lfs-ticket-root;3869">#3869</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-12-06</para>
       <itemizedlist>
         <listitem>
