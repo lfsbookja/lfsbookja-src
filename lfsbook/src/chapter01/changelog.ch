@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2015-12-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.3.3.</para> 
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-12-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.3.3 へのアップデート。</para> 
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-12-19</para>
       <itemizedlist>
         <listitem>
