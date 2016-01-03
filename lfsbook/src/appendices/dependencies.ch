@@ -1019,9 +1019,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>OpenSSL</seg>
 @y
-          <seg>なし</seg>
+          <seg>OpenSSL</seg>
 @z
 @x
           <seg>None</seg>

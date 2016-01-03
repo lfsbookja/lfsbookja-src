@@ -48,6 +48,58 @@
 @z
 
 @x
+      <para>2016-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.04. Fixes
+          <ulink url="&lfs-ticket-root;3875">#3875</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.04 へのアップデート。
+          <ulink url="&lfs-ticket-root;3875">#3875</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2015-12-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add OpenSSL as optional kernel dependency. Fixes
+          <ulink url="&lfs-ticket-root;3872">#3872</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to findutils-4.6.0. Fixes
+          <ulink url="&lfs-ticket-root;3873">#3873</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.19.7. Fixes
+          <ulink url="&lfs-ticket-root;3874">#3874</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2015-12-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - カーネルの依存パッケージとして OpenSSL を追加。
+          <ulink url="&lfs-ticket-root;3872">#3872</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - findutils-4.6.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3873">#3873</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.19.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;3874">#3874</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2015-12-21</para>
       <itemizedlist>
         <listitem>
