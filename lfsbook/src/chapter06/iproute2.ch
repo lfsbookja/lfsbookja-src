@@ -29,41 +29,22 @@
 @z
 
 @x
-    <para>The <command>arpd</command> binary included in this package is
-    dependent on Berkeley DB.  Because <command>arpd</command> is not a very
-    common requirement on a base Linux system, remove the dependency on Berkeley
-    DB by applying the commands below.  If the <command>arpd</command> binary is
-    needed, instructions for compiling Berkeley DB can be found in the BLFS Book
-    at <ulink url="&blfs-book;server/databases.html#db"/>.
+    <para>The <command>arpd</command> program included in this package will not
+    be built since it is dependent on Berkeley DB, which is not installed in
+    LFS. However, documentation files and a directory for
+    <command>arpd</command> will still be installed. Prevent this by running
+    the commands below. If the <command>arpd</command> binary is needed,
+    instructions for compiling Berkeley DB can be found in the BLFS Book at
+    <ulink url="&blfs-book;server/databases.html#db"/>.
     </para>
 @y
     <para>
-    本パッケージにて提供している <command>arpd</command> プログラムは Berkeley DB に依存しています。
-    <command>arpd</command> はベースとする Linux システムにとって普通は必要となりません。
-    そこで Berkeley DB への依存を取り除くために、以下の <command>sed</command> コマンドを実行します。
+    本パッケージにて提供している <command>arpd</command> プログラムは LFS では取り扱わない Berkeley DB に依存しています。
+    したがって <command>arpd</command> プログラムはインストールしません。
+    ただし <command>arpd</command> プログラムに対応するドキュメントファイルやディレクトリはインストールされてしまいます。
+    これをインストールしないように、以下のコマンドを実行します。
     <command>arpd</command> プログラムを必要とする場合は BLFS ブックの <ulink
     url="&blfs-book;server/databases.html#db"/> に示される Berkeley DB の構築手順に従ってください。
-    </para>
-@z
-
-@x
-    <para>Remove a compiler flag that causes the compilation to fail:</para>
-@y
-    <para>
-    コンパイルに失敗しないように、コンパイラーフラグは取り除いておきます。
-    </para>
-@z
-
-@x
-    <para>Do not build the unneeded tipc program.  Transparent Inter-process
-    Communication (TIPC) is a network communications protocol for Inter-process
-    communication (IPC) that was designed for intra-cluster
-    communication.</para>
-@y
-    <para>
-    不要なプログラム tipc はビルドしません。
-    透過なプロセス間通信 (Transparent Inter-process Communication; TIPC) はプロセス間通信 (Inter-process communication;
-    IPC) のプロトコルであり、クラスタ内通信に対して設計されたものです。
     </para>
 @z
 

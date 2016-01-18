@@ -51,6 +51,32 @@
       <para>2016-01-01</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to linux-4.4. Fixes
+          <ulink url="&lfs-ticket-root;3877">#3877</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.4.0. Fixes
+          <ulink url="&lfs-ticket-root;3878">#3878</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-01-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3877">#3877</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.4.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3878">#3878</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-01-01</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to man-pages-4.04. Fixes
           <ulink url="&lfs-ticket-root;3875">#3875</ulink>.</para>
         </listitem>
