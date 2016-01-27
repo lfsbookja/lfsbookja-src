@@ -93,9 +93,12 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package and move the main executable to
+    <filename class='directory'>/bin</filename>:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    &InstallThePackage;
+    そして実行モジュールを <filename class='directory'>/bin</filename> へ移動します。</para>
 @z
 
 @x

@@ -48,7 +48,33 @@
 @z
 
 @x
-      <para>2016-01-01</para>
+      <para>2016-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-8.25. Fixes
+          <ulink url="&lfs-ticket-root;3880">#3880</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Simplify bash installation procedures. Fixes
+          <ulink url="&lfs-ticket-root;3879">#3879</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - coreutils-8.25 へのアップデート。
+          <ulink url="&lfs-ticket-root;3880">#3880</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash のインストール手順を簡素化。
+          <ulink url="&lfs-ticket-root;3879">#3879</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-01-17</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to linux-4.4. Fixes
