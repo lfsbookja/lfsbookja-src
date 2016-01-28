@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2016-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Move external build directories into 
+          dedicated build directories inside the source tree for 
+          binutils, gcc, and glibc.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils, gcc, glibc において、専用のビルドディレクトリを作る場所をソースディレクトリの外から中に変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-01-24</para>
       <itemizedlist>
         <listitem>

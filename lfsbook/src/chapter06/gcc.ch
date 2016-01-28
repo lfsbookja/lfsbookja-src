@@ -37,11 +37,10 @@
 @z
 
 @x
-    <para>The GCC documentation recommends building GCC outside of the source
-    directory in a dedicated build directory:</para>
+    <para>The GCC documentation recommends building GCC in a dedicated build directory:</para>
 @y
     <para>
-    GCC のドキュメントによると GCC のビルドにあたっては、ソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。 
+    GCC のドキュメントによると GCC のビルドにあたっては、専用のビルドディレクトリを作成することが推奨されています。 
     </para>
 @z
 

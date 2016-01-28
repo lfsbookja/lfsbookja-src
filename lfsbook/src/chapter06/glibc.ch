@@ -100,11 +100,11 @@
 @z
 
 @x
-    <para>The Glibc documentation recommends building Glibc outside of the source
-    directory in a dedicated build directory:</para>
+    <para>The Glibc documentation recommends building Glibc 
+    in a dedicated build directory:</para>
 @y
     <para>
-    Glibc のドキュメントではソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
+    Glibc のドキュメントでは専用のビルドディレクトリを作成することが推奨されています。
     </para>
 @z
 

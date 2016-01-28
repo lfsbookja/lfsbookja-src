@@ -73,11 +73,11 @@
 @z
 
 @x
-    <para>The Binutils documentation recommends building Binutils outside of the
-    source directory in a dedicated build directory:</para>
+    <para>The Binutils documentation recommends building Binutils 
+    in a dedicated build directory:</para>
 @y
     <para>
-    Binutils のドキュメントによると Binutils のビルドにあたっては、ソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
+    Binutils のドキュメントによると Binutils のビルドにあたっては専用のビルドディレクトリを作成することが推奨されています。
     </para>
 @z
 

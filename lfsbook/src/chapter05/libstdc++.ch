@@ -50,7 +50,7 @@
 @z
 
 @x
-    <para>Create a directory for Libstdc++ and enter it:</para>
+    <para>Create a separate build directory for Libstdc++ and enter it:</para>
 @y
     <para>
     Libstdc++ のためのディレクトリを新たに生成して移動します。

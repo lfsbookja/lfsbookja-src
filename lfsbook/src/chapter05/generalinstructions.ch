@@ -209,13 +209,9 @@
 @z
 
 @x
-              <para>Delete the extracted source directory and any
-              <filename class="directory"><replaceable>&lt;package&gt;</replaceable>-build</filename>
-              directories that were created in the build process unless instructed otherwise.</para>
+              <para>Delete the extracted source directory unless instructed otherwise.</para>
 @y
               <para>
               ビルド作業を通じて生成されたパッケージディレクトリを削除します。
-              さらに <filename 
-              class="directory"><replaceable>&lt;package&gt;</replaceable>-build</filename> なるディレクトリを生成していた場合は、特に指定がない限りはそれも削除します。
               </para>
 @z
