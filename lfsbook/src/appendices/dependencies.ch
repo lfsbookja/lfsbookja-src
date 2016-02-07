@@ -719,9 +719,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>Man-DB</seg>
 @z
 @x
-          <seg>Pcre, Xorg, and CUPS</seg>
+          <seg>Pcre</seg>
 @y
-          <seg>Pcre, Xorg, CUPS</seg>
+          <seg>Pcre</seg>
 @z
 
 %----------------------------------------------------------------------

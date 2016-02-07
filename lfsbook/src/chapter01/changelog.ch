@@ -48,6 +48,48 @@
 @z
 
 @x
+      <para>2016-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.26. Fixes
+          <ulink url="&lfs-ticket-root;3882">#3882</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2016a. Fixes
+          <ulink url="&lfs-ticket-root;3883">#3883</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.25. Fixes
+          <ulink url="&lfs-ticket-root;3884">#3884</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.4.1. Fixes
+          <ulink url="&lfs-ticket-root;3885">#3885</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.26 へのアップデート。
+          <ulink url="&lfs-ticket-root;3882">#3882</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2016a へのアップデート。
+          <ulink url="&lfs-ticket-root;3883">#3883</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.25 へのアップデート。
+          <ulink url="&lfs-ticket-root;3884">#3884</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.4.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3885">#3885</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-01-27</para>
       <itemizedlist>
         <listitem>

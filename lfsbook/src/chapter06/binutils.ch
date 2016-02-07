@@ -57,18 +57,10 @@
 @z
 
 @x
-    <para>Fix some LTO tests in the test suite:</para>
+    <para>Fix a problem identified upstream:</para>
 @y
     <para>
-    テストスイート内の LTO に関するテストをいくつか修正します。
-    </para>
-@z
-
-@x
-    <para>Enable binutils to recognize multiple plugins:</para>
-@y
-    <para>
-    マルチプラグイン (multiple plugins) を認識するように修正します。
+    アップストリームが把握している不具合を修正します。
     </para>
 @z
 

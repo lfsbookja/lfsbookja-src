@@ -57,16 +57,18 @@
     name of the target triplet is to run the <command>config.guess</command>
     script that comes with the source for many packages. Unpack the Binutils
     sources and run the script: <userinput>./config.guess</userinput> and note
-    the output. For example, for a modern 32-bit Intel processor the
-    output will likely be <emphasis>i686-pc-linux-gnu</emphasis>.</para>
+    the output. For example, for a 32-bit Intel processor the
+    output will be <emphasis>i686-pc-linux-gnu</emphasis>. On a 64-bit
+    system it will be <emphasis>x86_64-pc-linux-gnu</emphasis>.</para>
 @y
-  <para>
-  これより先に進む前に、作業するプラットフォームの<quote>三つの組 (target triplet)</quote>で表される名称を確認してください。
-  <quote>三つの組</quote>は <command>config.guess</command> スクリプトを実行することで簡単に確認できます。
-  そのスクリプトは多くのパッケージのソースに含まれています。
-  Binutils パッケージのソースを伸張 (解凍) し <userinput>./config.guess</userinput> スクリプトを実行してその出力を確認してみてください。
-  例えば最近の 32 ビット Intel プロセッサーでは <emphasis>i686-pc-linux-gnu</emphasis> のような出力が得られます。
-  </para>
+    <para>
+    これより先に進む前に、作業するプラットフォームの<quote>三つの組 (target triplet)</quote>で表される名称を確認してください。
+    <quote>三つの組</quote>は <command>config.guess</command> スクリプトを実行することで簡単に確認できます。
+    そのスクリプトは多くのパッケージのソースに含まれています。
+    Binutils パッケージのソースを伸張 (解凍) し <userinput>./config.guess</userinput> スクリプトを実行してその出力を確認してみてください。
+    例えば 32 ビット Intel プロセッサーでは <emphasis>i686-pc-linux-gnu</emphasis> のような出力が得られます。
+    64 ビット システムでは <emphasis>x86_64-pc-linux-gnu</emphasis> のようになります。
+    </para>
 @z
 
 @x
@@ -75,21 +77,25 @@
     linker <command>ld</command> that is part of Binutils). The dynamic linker
     provided by Glibc finds and loads the shared libraries needed by a program,
     prepares the program to run, and then runs it. The name of the dynamic
-    linker for a 32-bit Intel machine will be
-    <filename class="libraryfile">ld-linux.so.2</filename>.
-    A sure-fire way to determine the name of the dynamic linker is to
-    inspect a random binary from the host system by running:
-    <userinput>readelf -l &lt;name of binary&gt; | grep interpreter</userinput>
-    and noting the output. The authoritative reference covering all platforms
-    is in the <filename>shlib-versions</filename> file in the root of the Glibc
-    source tree.</para>
+    linker for a 32-bit Intel machine will be <filename
+    class="libraryfile">ld-linux.so.2</filename> (<filename
+    class="libraryfile">ld-linux-x86-64.so.2</filename> for 64-bit systems).  A
+    sure-fire way to determine the name of the dynamic linker is to inspect a
+    random binary from the host system by running: <userinput>readelf -l
+    &lt;name of binary&gt; | grep interpreter</userinput> and noting the
+    output. The authoritative reference covering all platforms is in the
+    <filename>shlib-versions</filename> file in the root of the Glibc source
+    tree.</para>
 @y
     <para>
     利用しているプラットフォームに応じたダイナミックリンカー (dynamic linker) の名前についても確認してください。
     ダイナミックローダー (dynamic loader) とも表現されるものです。(Binutils
     が提供する標準的なリンカー <command>ld</command> とは異なりますので注意してください。)
     Glibc が提供するこのダイナミックリンカーは、プログラムが必要としている共有ライブラリを見つけ出してロードし、実行のための準備を行った上で実際に実行します。
-    32 ビットマシンのダイナミックリンカーの名前は <filename class="libraryfile">ld-linux.so.2</filename> といったものになります。
+    32 ビットマシンのダイナミックリンカーの名前は <filename
+    class="libraryfile">ld-linux.so.2</filename> といったものになります
+    (64 ビットシステムでは <filename
+    class="libraryfile">ld-linux-x86-64.so.2</filename>)。
     確実にその名前を調べるなら、ホストシステム内のどれでも良いので実行モジュールを選んで <userinput>readelf -l &lt;</userinput>実行モジュール名<userinput>&gt; | grep interpreter</userinput> と入力します。
     出力される結果を確認してください。
     あらゆるプラットフォームの情報を知りたいなら Glibc のソースディレクトリのルートにある <filename>shlib-versions</filename> ファイルに記されています。

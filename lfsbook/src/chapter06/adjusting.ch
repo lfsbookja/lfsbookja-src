@@ -34,12 +34,12 @@
 @x
   <para>First, backup the <filename class="directory">/tools</filename> linker,
   and replace it with the adjusted linker we made in chapter 5. We'll also create
-  a link to its counterpart in <filename class="directory">/tools/$(gcc
-  -dumpmachine)/bin</filename>:</para>
+  a link to its counterpart in
+  <filename class="directory">/tools/$(uname -m)-pc-linux-gnu/bin</filename>:</para>
 @y
   <para>
   まず <filename class="directory">/tools</filename> ディレクトリにあるリンカーのバックアップをとっておき、第5章にて作成した調整済みリンカーに置き換えます。
-  <filename class="directory">/tools/$(gcc-dumpmachine)/bin</filename> ディレクトリにあるリンカーに対してのシンボリックリンクも正しく生成しておきます。
+  <filename class="directory">/tools/$(uname -m)-pc-linux-gnu/bin</filename> ディレクトリにあるリンカーに対してのシンボリックリンクも正しく生成しておきます。
   </para>
 @z
 
