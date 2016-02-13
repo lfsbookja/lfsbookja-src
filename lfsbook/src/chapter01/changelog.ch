@@ -48,6 +48,30 @@
 @z
 
 @x
+      <para>2016-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update coreutils-i18n patch.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-6.1. Fixes
+          <ulink url="&lfs-ticket-root;3886">#3886</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - coreutils-i18n のパッチを更新。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - texinfo-6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3886">#3886</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-02-05</para>
       <itemizedlist>
         <listitem>
