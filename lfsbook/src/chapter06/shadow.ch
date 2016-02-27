@@ -45,11 +45,14 @@
 
 @x
     <para>Disable the installation of the <command>groups</command> program
-    and its man pages, as Coreutils provides a better version:</para>
+    and its man pages, as Coreutils provides a better version. Also 
+    Prevent the installation of manual pages that were already installed by the
+    <xref linkend="man-pages"/> package:</para>
 @y
     <para>
     <command>groups</command> コマンドとその man ページをインストールしないようにします。
     これは Coreutils パッケージにて、より良いバージョンが提供されているからです。
+    また <xref linkend="man-pages"/> にてインストールされる man ページはインストールしないようにします。
     </para>
 @z
 

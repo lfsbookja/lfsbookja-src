@@ -100,6 +100,14 @@
 @z
 
 @x
+    <para>Finally, update some recent changes from the upstream repository:</para>
+@y
+    <para>
+    またアップストリームによる最新の変更を適用します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc 
     in a dedicated build directory:</para>
 @y
@@ -153,23 +161,24 @@
 @z
 
 @x
-        <para><emphasis>posix/tst-getaddrinfo4</emphasis> will always fail due
-        to not having the necessary  networking applications when the tests are
+        <para><emphasis>posix/tst-getaddrinfo4</emphasis> and 
+        <emphasis>posix/tst-getaddrinfo5</emphasis> will always fail due
+        to not having the necessary networking applications when the tests are
         run.</para>
 @y
         <para><emphasis>
-        posix/tst-getaddrinfo4</emphasis> は、テスト時に必要なネットワークアプリケーションがないため失敗します。
+        posix/tst-getaddrinfo4</emphasis> と <emphasis>posix/tst-getaddrinfo5</emphasis> は、テスト時に必要なネットワークアプリケーションがないため失敗します。
         </para>
 @z
 
 @x
-        <para>The <emphasis>tst/tst-cputimer1</emphasis> and 
+        <para>The <emphasis>rt/tst-cputimer1</emphasis> and 
         <emphasis>rt/tst-cpuclock2</emphasis> tests have been known to
         fail.  The reason is not completely understood, but indications are
         that minor timing issues can trigger these failures.</para>
 @y
         <para>
-        <emphasis>tst/tst-cputimer1</emphasis> と <emphasis>rt/tst-cpuclock2</emphasis> のテストは失敗することが知られています。
+        <emphasis>rt/tst-cputimer1</emphasis> と <emphasis>rt/tst-cpuclock2</emphasis> のテストは失敗することが知られています。
         失敗の理由は明確ではありません。
         ただ処理速度が原因してそれらが発生すると思われます。
         </para>
@@ -177,11 +186,11 @@
 
 @x
         <para>The math tests sometimes fail when running on
-        systems where the CPU is not a relatively new genuine Intel or
-        authentic AMD processor.</para>
+        systems where the CPU is not a relatively new Intel or
+        AMD processor.</para>
 @y
         <para>
-        math テストは、純正 Intel プロセッサーや AMD プロセッサーが最新のものではない場合に失敗することがあります。
+        math テストは、Intel プロセッサーや AMD プロセッサーが最新のものではない場合に失敗することがあります。
         </para>
 @z
 

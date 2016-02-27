@@ -45,9 +45,3 @@
 @y
     <title>削除:</title>
 @z
-
-@x
-      <para>Eudev-manpages separate tarball</para>
-@y
-      <para>Eudev の 個別の manpages tarball</para>
-@z

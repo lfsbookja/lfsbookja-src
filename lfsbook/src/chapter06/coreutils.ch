@@ -212,29 +212,31 @@
 @z
 
 @x
-        <seg>[, base64, basename, cat, chcon, chgrp, chmod, chown, chroot, cksum,
-        comm, cp, csplit, cut, date, dd, df, dir, dircolors, dirname, du, echo,
-        env, expand, expr, factor, false, fmt, fold, groups, head, hostid,
-        id, install, join, link, ln, logname, ls, md5sum, mkdir, mkfifo, mknod,
-        mktemp, mv, nice, nl, nohup, nproc, numfmt, od, paste, pathchk, pinky, pr,
-        printenv, printf, ptx, pwd, readlink, realpath, rm, rmdir, runcon, seq,
-        sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, shred, shuf, sleep,
-        sort, split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test,
-        timeout, touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq,
-        unlink, users, vdir, wc, who, whoami, and yes</seg>
+        <seg>[, base32, base64, basename, cat, chcon, chgrp, chmod, chown,
+        chroot, cksum, comm, cp, csplit, cut, date, dd, df, dir, dircolors,
+        dirname, du, echo, env, expand, expr, factor, false, fmt, fold, groups,
+        head, hostid, id, install, join, link, ln, logname, ls, md5sum, mkdir,
+        mkfifo, mknod, mktemp, mv, nice, nl, nohup, nproc, numfmt, od, paste,
+        pathchk, pinky, pr, printenv, printf, ptx, pwd, readlink, realpath, rm,
+        rmdir, runcon, seq, sha1sum, sha224sum, sha256sum, sha384sum,
+        sha512sum, shred, shuf, sleep, sort, split, stat, stdbuf, stty, sum,
+        sync, tac, tail, tee, test, timeout, touch, tr, true, truncate, tsort,
+        tty, uname, unexpand, uniq, unlink, users, vdir, wc, who, whoami, and
+        yes</seg>
         <seg>libstdbuf.so</seg>
         <seg>/usr/libexec/coreutils</seg>
 @y
-        <seg>[, base64, basename, cat, chcon, chgrp, chmod, chown, chroot, cksum,
-        comm, cp, csplit, cut, date, dd, df, dir, dircolors, dirname, du, echo,
-        env, expand, expr, factor, false, fmt, fold, groups, head, hostid,
-        id, install, join, link, ln, logname, ls, md5sum, mkdir, mkfifo, mknod,
-        mktemp, mv, nice, nl, nohup, nproc, numfmt, od, paste, pathchk, pinky, pr,
-        printenv, printf, ptx, pwd, readlink, realpath, rm, rmdir, runcon, seq,
-        sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, shred, shuf, sleep,
-        sort, split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test,
-        timeout, touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq,
-        unlink, users, vdir, wc, who, whoami, yes</seg>
+        <seg>[, base32, base64, basename, cat, chcon, chgrp, chmod, chown,
+        chroot, cksum, comm, cp, csplit, cut, date, dd, df, dir, dircolors,
+        dirname, du, echo, env, expand, expr, factor, false, fmt, fold, groups,
+        head, hostid, id, install, join, link, ln, logname, ls, md5sum, mkdir,
+        mkfifo, mknod, mktemp, mv, nice, nl, nohup, nproc, numfmt, od, paste,
+        pathchk, pinky, pr, printenv, printf, ptx, pwd, readlink, realpath, rm,
+        rmdir, runcon, seq, sha1sum, sha224sum, sha256sum, sha384sum,
+        sha512sum, shred, shuf, sleep, sort, split, stat, stdbuf, stty, sum,
+        sync, tac, tail, tee, test, timeout, touch, tr, true, truncate, tsort,
+        tty, uname, unexpand, uniq, unlink, users, vdir, wc, who, whoami,
+        yes</seg>
         <seg>libstdbuf.so</seg>
         <seg>/usr/libexec/coreutils</seg>
 @z
@@ -245,12 +247,21 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x base64
-          <para>Encodes and decodes data according to the base64 (RFC 3548)
-            specification</para>
+@x base32
+          <para>Encodes and decodes data according to the base32 specification
+          (RFC 4648)</para>
 @y
           <para>
-          base64 (RFC 3548) 規格に従ってデータのエンコード、デコードを行います。
+          base32 規格 (RFC 4648) に従ってデータのエンコード、デコードを行います。
+          </para>
+@z
+
+@x base64
+          <para>Encodes and decodes data according to the base64 specification
+          (RFC 4648)</para>
+@y
+          <para>
+          base64 規格 (RFC 3548) に従ってデータのエンコード、デコードを行います。
           </para>
 @z
 

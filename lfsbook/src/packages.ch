@@ -26,24 +26,26 @@
 @z
 
 @x
-<!ENTITY autoconf-ch6-sbu "less than 0.1 SBU (about 4.7 SBU with tests)">
+<!ENTITY autoconf-ch6-sbu "less than 0.1 SBU (about 3.6 SBU with tests)">
 @y
-<!ENTITY autoconf-ch6-sbu "0.1 SBU 以下 (テスト込みで約 4.7 SBU)">
+<!ENTITY autoconf-ch6-sbu "0.1 SBU 以下 (テスト込みで約 3.6 SBU)">
 @z
 
 @x
-<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 9.2 SBU with tests)">
+<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 8.3 SBU with tests)">
 @y
-<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テスト込みで約 9.2 SBU)">
+<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テスト込みで約 8.3 SBU)">
 @z
 
 @x
 <!ENTITY bzip2-ch5-sbu "less than 0.1 SBU">
-<!ENTITY bzip2-ch6-du "6.9 MB">
-<!ENTITY bzip2-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY bzip2-ch5-sbu "0.1 SBU 以下">
-<!ENTITY bzip2-ch6-du "6.9 MB">
+@z
+
+@x
+<!ENTITY bzip2-ch6-sbu "less than 0.1 SBU">
+@y
 <!ENTITY bzip2-ch6-sbu "0.1 SBU 以下">
 @z
 
@@ -54,9 +56,9 @@
 @z
 
 @x
-<!ENTITY gcc-ch6-sbu "82 SBU (with tests)">
+<!ENTITY gcc-ch6-sbu "76 SBU (with tests)">
 @y
-<!ENTITY gcc-ch6-sbu "82 SBU (テスト込み)">
+<!ENTITY gcc-ch6-sbu "76 SBU (テスト込み)">
 @z
 
 @x

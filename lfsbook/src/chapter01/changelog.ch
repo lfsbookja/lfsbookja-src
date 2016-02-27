@@ -48,6 +48,106 @@
 @z
 
 @x
+      <para>2016-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Prevent attr and shadow from overwriting
+          man pages installed by the man-pages package.  Fixes
+          <ulink url="&lfs-ticket-root;3890">#3890</ulink>, 
+          <ulink url="&lfs-ticket-root;3891">#3891</ulink>, and 
+          <ulink url="&lfs-ticket-root;3892">#3892</ulink></para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Retain flex static library for automake
+          regression tests.  Remove at the end of Chapter 6. Fixes
+          <ulink url="&lfs-ticket-root;3894">#3894</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - attr と shadow にて、man-pages によりインストールされる man ページを上書きしないように。
+          <ulink url="&lfs-ticket-root;3890">#3890</ulink>,
+          <ulink url="&lfs-ticket-root;3891">#3891</ulink>,
+          <ulink url="&lfs-ticket-root;3892">#3892</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake の縮退テストに必要なため flex のスタティックライブラリを作成することに。
+          これは第6章の終わりにて削除する。
+          <ulink url="&lfs-ticket-root;3894">#3894</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.9-rc2 released.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.23.  Fixes
+          <ulink url="&lfs-ticket-root;3889">#3889</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.4.2.  Fixes
+          <ulink url="&lfs-ticket-root;3888">#3888</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.9-rc2 リリース。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.23 へのアップデート。
+          <ulink url="&lfs-ticket-root;3889">#3889</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.4.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3888">#3888</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update patches for bash, binutils, 
+          glibc, mpfr, and gcc from upstream repositories. Fixes (among other 
+          things) <ulink url="&lfs-ticket-root;3887">#3887</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash, binutils, glibc, mpfr, gcc に対するパッチをアップストリームのものに更新。
+          その他修正。<ulink url="&lfs-ticket-root;3887">#3887</ulink></para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.9-rc1 released.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.9-rc1 リリース。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-02-09</para>
       <itemizedlist>
         <listitem>

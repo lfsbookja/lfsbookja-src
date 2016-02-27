@@ -54,6 +54,14 @@
 @z
 
 @x
+    <para>Nine tests fail due to missing dependencies.</para>
+@y
+    <para>
+    依存パッケージが存在していないために 9つのテストは失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

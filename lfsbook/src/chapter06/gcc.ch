@@ -371,7 +371,7 @@
 @x gcc-nm
           <para>A wrapper around <command>nm</command> that adds a
           plugin to the command line. This program is only used
-          to add "link time optimization"" and is not useful with the
+          to add "link time optimization" and is not useful with the
           default build options</para>
 @y
           <para>
@@ -384,7 +384,7 @@
 @x
           <para>A wrapper around <command>ranlib</command> that adds a
           plugin to the command line. This program is only used
-          to add "link time optimization"" and is not useful with the
+          to add "link time optimization" and is not useful with the
           default build options</para>
 @y
           <para>
