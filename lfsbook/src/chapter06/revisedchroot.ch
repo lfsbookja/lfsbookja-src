@@ -76,7 +76,7 @@
 @z
 
 @x
-  <para>Finally, there were several static libraries that were not supressed earlier
+  <para>Finally, there were several static libraries that were not suppressed earlier
   in the chapter in order to satisfy the regression tests in several packages. These 
   libraries are from binutils, bzip2, e2fsprogs, flex, libtool, and zlib.  If desired,
   remove them now:</para>

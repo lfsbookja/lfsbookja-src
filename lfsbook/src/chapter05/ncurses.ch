@@ -32,10 +32,10 @@
 @z
 
 @x
-    <para>First, ensure that gawk is found first during configuration:</para>
+    <para>First, ensure that <command>gawk</command> is found first during configuration:</para>
 @y
     <para>
-    ビルドにあたって gawk が必ず最初に見つかるようにします。
+    ビルドにあたって <command>gawk</command> が必ず最初に見つかるようにします。
     </para>
 @z
 
