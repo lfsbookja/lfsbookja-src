@@ -49,6 +49,15 @@
 @z
 
 @x
+    <para>It is also necessary to disable building one module that 
+    requires <ulink url="&blfs-book;postlfs/iptables.html"/>.</para>
+@y
+    <para>
+    <ulink url="&blfs-book;postlfs/iptables.html"/> に必要となるモジュールをここではビルドしないこととします。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

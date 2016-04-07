@@ -52,6 +52,22 @@
 @z
 
 @x
+    <note><para>The Glibc build system is self-contained and will install
+    perfectly, even though the compiler specs file and linker are still
+    pointing to <filename class="directory">/tools</filename>. The specs
+    and linker cannot be adjusted before the Glibc install because the
+    Glibc autoconf tests would give false results and defeat the goal
+    of achieving a clean build.</para></note>
+@y
+    <note><para>
+    Glibc ビルドシステムは自らによってビルドされるものであり、コンパイラースペックファイルがたとえ <filename
+    class="directory">/tools</filename> を指し示していたままであっても完璧にビルドされます。
+    スペックやリンカーは Glibc のインストール後でないと調整できません。
+    これは Glibc の autoconf テストが失敗するからであり、クリーンビルドを成功させるという目標が達成できないためです。
+    </para></note>
+@z
+
+@x
     <para>Some of the Glibc programs use non-FHS compilant
     <filename class="directory">/var/db</filename> directory to store
     their runtime data. Apply the following patch to make such programs
@@ -64,48 +80,23 @@
     </para>
 @z
 
-@x
-    <para>The Glibc build system is self-contained and will install
-    perfectly, even though the compiler specs file and linker are still
-    pointing at <filename class="directory">/tools</filename>. The specs
-    and linker cannot be adjusted before the Glibc install because the
-    Glibc autoconf tests would give false results and defeat the goal
-    of achieving a clean build.</para>
-@y
-    <para>
-    Glibc は自らによってビルドされるものであり、そうして完全な形でインストールされます。
-    ただしコンパイラーのスペックファイルやリンカーは、まだ <filename
-    class="directory">/tools</filename> ディレクトリを示したままです。
-    スペックファイルやリンカーを再調整するのは Glibc をインストールした後になります。
-    これは Glibc の autoconf テストが失敗するためであり、最終的にきれいなビルド結果を得るという目的が達成できないためです。
-    </para>
-@z
+% @x
+%     <para>The most recent stable version of Glibc does not handle large files
+%     correctly.  Fix the problem with this patch:</para>
+% @y
+%     <para>
+%     最新の Glibc は大容量ファイルの取り扱いに不備があります。
+%     以下のパッチによりこれを修正します。
+%     </para>
+% @z
 
-@x
-    <para>Now fix a build problem that affects i386 systems:</para>
-@y
-    <para>
-    i386 システムに影響する問題を解消します。
-    </para>
-@z
-
-@x
-    <para>The most recent stable version of Glibc does not handle large files
-    correctly.  Fix the problem with this patch:</para>
-@y
-    <para>
-    最新の Glibc は大容量ファイルの取り扱いに不備があります。
-    以下のパッチによりこれを修正します。
-    </para>
-@z
-
-@x
-    <para>Finally, update some recent changes from the upstream repository:</para>
-@y
-    <para>
-    またアップストリームによる最新の変更を適用します。
-    </para>
-@z
+% @x
+%     <para>Finally, update some recent changes from the upstream repository:</para>
+% @y
+%     <para>
+%     またアップストリームによる最新の変更を適用します。
+%     </para>
+% @z
 
 @x
     <para>The Glibc documentation recommends building Glibc 
@@ -195,38 +186,48 @@
 @z
 
 @x
-        <para>The <emphasis>elf/tst-protected1a</emphasis> and
-        <emphasis>elf/tst-protected1b</emphasis> tests are known to
-        fail with the current stable version of binutils.</para>
+        <para>The
+        <emphasis>nptl/tst-thread-affinity-{pthread,pthread2,sched}</emphasis>
+        tests may fail for reasons that have not been determined.  </para>
 @y
         <para>
-        <emphasis>elf/tst-protected1a</emphasis> テストと <emphasis>elf/tst-protected1b</emphasis> テストは、binutils の現バージョンでは失敗します。
+        <emphasis>nptl/tst-thread-affinity-{pthread,pthread2,sched}</emphasis> テストは失敗しますが、その理由は不明です。
         </para>
 @z
 
-@x
-        <para>When running on older and slower hardware or on systems under
-        load, some tests can fail because of test timeouts being exceeded.
-        Modifying the make check command to set a TIMEOUTFACTOR is reported to 
-        help eliminate these errors (e.g. <command>TIMEOUTFACTOR=16
-        make -k check</command>).</para>
-@y
-        <para>
-        旧式のハードウェアや性能の低いハードウェア、あるいは負荷の高いシステムにおいてテストを行うと、処理時間をオーバーしてタイムアウトが発生しテストが失敗します。
-        make check コマンドにて TIMEOUTFACTOR をセットするものに修正すれば、それらのエラーは回避できると報告されています。
-        (例： <command>TIMEOUTFACTOR=16 make -k check</command>)
-        </para>
-@z
+% @x
+%         <para>The <emphasis>elf/tst-protected1a</emphasis> and
+%         <emphasis>elf/tst-protected1b</emphasis> tests are known to
+%         fail with the current stable version of binutils.</para>
+% @y
+%         <para>
+%         <emphasis>elf/tst-protected1a</emphasis> テストと <emphasis>elf/tst-protected1b</emphasis> テストは、binutils の現バージョンでは失敗します。
+%         </para>
+% @z
 
-@x
-        <para>libio/tst-ftell-partial-wide.out fails because it needs a locale
-        that has not yet been generated.</para>
-@y
-        <para>
-        libio/tst-ftell-partial-wide.out のテストは失敗します。
-        ロケールを必要としており、まだ生成していないからです。
-        </para>
-@z
+% @x
+%         <para>When running on older and slower hardware or on systems under
+%         load, some tests can fail because of test timeouts being exceeded.
+%         Modifying the make check command to set a TIMEOUTFACTOR is reported to 
+%         help eliminate these errors (e.g. <command>TIMEOUTFACTOR=16
+%         make -k check</command>).</para>
+% @y
+%         <para>
+%         旧式のハードウェアや性能の低いハードウェア、あるいは負荷の高いシステムにおいてテストを行うと、処理時間をオーバーしてタイムアウトが発生しテストが失敗します。
+%         make check コマンドにて TIMEOUTFACTOR をセットするものに修正すれば、それらのエラーは回避できると報告されています。
+%         (例： <command>TIMEOUTFACTOR=16 make -k check</command>)
+%         </para>
+% @z
+
+% @x
+%         <para>libio/tst-ftell-partial-wide.out fails because it needs a locale
+%         that has not yet been generated.</para>
+% @y
+%         <para>
+%         libio/tst-ftell-partial-wide.out のテストは失敗します。
+%         ロケールを必要としており、まだ生成していないからです。
+%         </para>
+% @z
 
 @x
         <para>Other tests known to fail on some architectures are
@@ -265,14 +266,14 @@
 @z
 
 @x
-    <para>The locales that can make the system respond in a different language
-    were not installed by the above command. None of the locales are required,
-    but if some of them are missing, test suites of the future packages would
-    skip important testcases.</para>
+    <para>Next, install the locales that can make the system respond in a
+    different language.  None of the locales are required, but if some of them
+    are missing, the test suites of future packages would skip important
+    testcases.</para>
 @y
     <para>
-    システムを各種の言語に対応させるためのロケールは、今までのコマンドではインストールされませんが、テストスイートにおいてロケールは必要ではありません。
-    ただ将来的にはロケールがないことによって、重要なテストを逃してしまうかもしれません。
+    システムを各種の言語に対応させるためのロケールをインストールします。
+    テストスイートにおいてロケールは必要ではありませんが、将来的にはロケールがないことによって、重要なテストを逃してしまうかもしれません。
     </para>
 @z
 
@@ -547,7 +548,7 @@
 
 @x
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
-        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
+        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, 
         pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld-&glibc-version;.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
@@ -555,7 +556,7 @@
         libcrypt.{a,so}, libdl.{a,so}, libg.a, libieee.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libnsl.{a,so}, libnss_compat.so,
         libnss_dns.so, libnss_files.so, libnss_hesiod.so, libnss_nis.so,
-        libnss_nisplus.so, libpcprofile.so, libpthread.{a,so},
+        libnss_nisplus.so, libpthread.{a,so},
         libpthread_nonshared.a, libresolv.{a,so}, librpcsvc.a, librt.{a,so},
         libthread_db.so, and libutil.{a,so}</seg>
         <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu,
@@ -569,7 +570,7 @@
         /var/cache/nscd, and /var/lib/nss_db</seg>
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
-        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
+        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, 
         pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld-&glibc-version;.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
@@ -577,7 +578,7 @@
         libcrypt.{a,so}, libdl.{a,so}, libg.a, libieee.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libnsl.{a,so}, libnss_compat.so,
         libnss_dns.so, libnss_files.so, libnss_hesiod.so, libnss_nis.so,
-        libnss_nisplus.so, libpcprofile.so, libpthread.{a,so},
+        libnss_nisplus.so, libpthread.{a,so},
         libpthread_nonshared.a, libresolv.{a,so}, librpcsvc.a, librt.{a,so},
         libthread_db.so, libutil.{a,so}</seg>
         <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu,

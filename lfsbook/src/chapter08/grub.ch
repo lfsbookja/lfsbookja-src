@@ -59,6 +59,27 @@
 @z
 
 @x
+    <note><para>Most newer systems now come with system firmware that is in
+    UEFI ((Unified Extensible Firmware Interface) mode by default.  To boot LFS
+    on these systems using the instructions here, the UEFI Mode and Secure Boot
+    capabilities need to be turned off.  There are ways to boot with these
+    capabilities still enabled, but are not covered here.  For details, see
+    <ulink
+    url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt">the
+    lfs-uefi.txt hint</ulink> at
+    http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt.</para></note>
+@y
+    <note><para>
+    最新のシステムにはシステムファームウェアに UEFI ((Unified Extensible Firmware Interface) モードがデフォルトで採用されています。
+    本節に示す手順に基づいてそのような最新システム上にて LFS を起動させる場合、UEFI モードやセキュアブート機能は無効にする必要があります。
+    一方、それらの機能を有効にしつつ起動できるようにする方法はいくつかあるのですが、ここでは詳細に説明しません。
+    詳しくは <ulink
+    url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt">the
+    lfs-uefi.txt hint</ulink> を参照してください。
+    </para></note>
+@z
+
+@x
     <title>GRUB Naming Conventions</title>
 @y
     <title>GRUB の命名規則</title>

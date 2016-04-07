@@ -257,12 +257,14 @@
 @x
   <para>The <filename>/var/log/wtmp</filename> file records all logins and
   logouts. The <filename>/var/log/lastlog</filename> file records when each
-  user last logged in. The <filename>/var/log/btmp</filename> file records the
-  bad login attempts.</para>
+  user last logged in. The <filename>/var/log/faillog</filename> file records
+  failed login attempts.  The <filename>/var/log/btmp</filename> file records
+  the bad login attempts.</para>
 @y
   <para>
   <filename>/var/log/wtmp</filename> ファイルはすべてのログイン、ログアウトの情報を保持します。
   <filename>/var/log/lastlog</filename> ファイルは各ユーザーが最後にログインした情報を保持します。
+  <filename>/var/log/faillog</filename> ファイルはログインに失敗した情報を保持します。
   <filename>/var/log/btmp</filename> ファイルは不正なログイン情報を保持します。
   </para>
 @z

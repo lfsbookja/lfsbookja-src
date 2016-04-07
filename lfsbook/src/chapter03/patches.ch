@@ -71,34 +71,16 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
-@x Gcc Upstream Patch
-        <para>Download: <ulink url="&patches-root;&gcc-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&gcc-upstream-patch;"/></para>
-@z
-
 @x Glibc FHS Patch
         <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @z
 
-@x Glibc i386 Patch
-        <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
-@z
-
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
-@z
-
-@x MPFR Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&mpfr-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&mpfr-upstream-patch;"/></para>
 @z
 
 @x Readline Upstream Fixes Patch

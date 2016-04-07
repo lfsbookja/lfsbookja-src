@@ -311,9 +311,9 @@
           <seg>Diffutils, E2fsprogs, Findutils, Shadow, Util-linux</seg>
 @z
 @x
-          <seg>Bash, Diffutils, Findutils, Man-DB, and Udev</seg>
+          <seg>Bash, Diffutils, Findutils, Man-DB, and Eudev</seg>
 @y
-          <seg>Bash, Diffutils, Findutils, Man-DB, Udev</seg>
+          <seg>Bash, Diffutils, Findutils, Man-DB, Eudev</seg>
 @z
 @x
           <seg>Perl Expect and IO:Tty modules (for test suite)</seg>
@@ -532,16 +532,11 @@
 
 %----------------------------------------------------------------------
 @x Gawk
-         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
-         Patch, Sed and, Texinfo</seg>
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Make,
+         MPFR, Patch, Readline, Sed and Texinfo</seg>
 @y
-<!--
-日本語訳註：2009-08-28
-"Sed and, Texinfo"
-Typo ですが日本語訳には影響ありません。
--->
-         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
-         Patch, Sed, Texinfo</seg>
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Make,
+         MPFR, Patch, Readline, Sed, Texinfo</seg>
 @z
 @x
           <seg>Diffutils</seg>
@@ -916,9 +911,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Udev</seg>
+          <seg>Eudev</seg>
 @y
-          <seg>Udev</seg>
+          <seg>Eudev</seg>
 @z
 @x
           <seg>None</seg>
@@ -1161,9 +1156,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC</seg>
+          <seg>Gawk, GCC</seg>
 @y
-          <seg>GCC</seg>
+          <seg>Gawk, GCC</seg>
 @z
 @x
           <seg>None</seg>
@@ -1344,9 +1339,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Bash</seg>
+          <seg>Bash, Gawk</seg>
 @y
-          <seg>Bash</seg>
+          <seg>Bash, Gawk</seg>
 @z
 @x
           <seg>None</seg>
@@ -1540,36 +1535,12 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-@x Udev
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Kmod, Make, Sed, and Util-linux</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Kmod, Make, Sed, Util-linux</seg>
-@z
-@x
-          <seg>No test suite available</seg>
-@y
-          <seg>テストスイートはありません</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>Glib, Pci-Utils, Python, Systemd, USB-Utils</seg>
-@y
-          <seg>Glib, Pci-Utils, Python, Systemd, USB-Utils</seg>
-@z
-
-%----------------------------------------------------------------------
 @x Util-linux
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Ncurses, Sed, Udev, and Zlib</seg>
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, Eudev, and Zlib</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Ncurses, Sed, Udev, Zlib</seg>
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, Eudev, Zlib</seg>
 @z
 @x
           <seg>None</seg>
@@ -1635,9 +1606,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>GRUB, Kmod, Man-DB, Udev</seg>
+          <seg>GRUB, Kmod, Man-DB, Eudev</seg>
 @y
-          <seg>GRUB, Kmod, Man-DB, Udev</seg>
+          <seg>GRUB, Kmod, Man-DB, Eudev</seg>
 @z
 @x
           <seg>None</seg>

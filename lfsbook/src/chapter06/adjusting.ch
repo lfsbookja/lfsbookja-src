@@ -99,6 +99,13 @@
 @z
 
 @x
+  <note><para>On 64-bit systems the interpreter should be
+  /lib64/ld-linux-x86-64.so.2.</para></note>
+@y
+  <note><para>64ビットシステムでは /lib64/ld-linux-x86-64.so.2 になります。</para></note>
+@z
+
+@x
   <para os="d">Now make sure that we're setup to use the correct start files:</para>
 @y
   <para os="d">
@@ -112,6 +119,18 @@
   <para os="f">
   上のコマンドの出力は以下のようになるはずです。
   </para>
+@z
+
+@x
+   <note><para>On 64-bit systems, the path above will be
+   /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib64/.  This
+   reduces to /usr/lib64 and /usr/lib64 is a symlink that points to
+   /usr/lib.</para></note>
+@y
+   <note><para>64ビットシステムでは、上のパスは /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib64/ となります。
+   これは /usr/lib64 を意味します。
+   /usr/lib64 はそもそもシンボリックリンクであり、結局はそれが指し示す /usr/lib になります。
+   </para></note>
 @z
 
 @x
