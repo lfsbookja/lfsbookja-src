@@ -53,9 +53,9 @@
 @z
 
 @x
-    <para>Move some programs that do not need to be on the root filesystem:</para>
+    <para>Move a program that needs to be on the root filesystem:</para>
 @y
-    <para>ルートファイルシステム上に置く必要のないプログラムを移動させます。</para>
+    <para>ルートファイルシステム上に置くべきプログラムを移動させます。</para>
 @z
 
 @x

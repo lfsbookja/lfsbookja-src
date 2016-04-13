@@ -91,6 +91,23 @@
 @z
 
 @x
+    <caution><para>The code in gmp is highly optimized for the processor where
+    it is built. Occasionally the code that detects the processor misidentifies
+    the system capabilities and there will be errors in the tests or other
+    applications using the gmp libraries with the message "Illegal
+    instruction".  In this case, gmp should be reconfigured with the option
+    --build=x86_64-unknown-linux-gnu and rebuilt.</para></caution>
+@y
+    <caution><para>
+    gmp のコードはビルドするプロセッサー向けに高度に最適化されます。
+    このためプロセッサーを特定したコードが実はシステム性能を的確に制御できないことも起こりえます。
+    それはテストにおいてエラーを引き起こしたり、gmp を利用する他のアプリケーションにおいて "Illegal
+    instruction" というエラーとして発生したりすることがあります。
+    そういった場合は gmp の再ビルドが必要であり、その際にはオプション --build=x86_64-unknown-linux-gnu をつける必要があります。
+    </para></caution>
+@z
+
+@x
     <para>Ensure that all 190 tests in the test suite passed.
     Check the results by issuing the following command:</para>
 @y

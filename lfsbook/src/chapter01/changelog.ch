@@ -48,6 +48,52 @@
 @z
 
 @x
+      <para>2016-04-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.28. Fixes
+          <ulink url="&lfs-ticket-root;3906">#3906</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Simlify gzip instructions. Fixes
+          <ulink url="&lfs-ticket-root;3914">#3914</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-04-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.28 へのアップデート。
+          <ulink url="&lfs-ticket-root;3906">#3906</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gzip の手順を簡略化。
+          <ulink url="&lfs-ticket-root;3914">#3914</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-04-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a caution in the gmp section
+          about possible "Illegal Instruction" errors if
+          the host is misidentified or the libraries are
+          copied to different systems.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-04-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gmp において、ホスト認識に失敗した場合やライブラリを異なるシステムからコピーした場合に "Illegal
+          Instruction" のエラーが発生する可能性について言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-04-05</para>
       <itemizedlist>
         <listitem>
