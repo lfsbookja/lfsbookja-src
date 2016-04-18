@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>First apply some fixes from the upstream repository:</para>
-@y
-    <para>
-    アップストリーム提供の修正をいくつか適用します。
-    </para>
-@z
-
-@x
     <para>The GCC documentation recommends building GCC in a dedicated build directory:</para>
 @y
     <para>
@@ -173,14 +165,14 @@
 @z
 
 @x
-    <para>Some packages expect the C preprocessor to be installed in the
-    <filename class="directory">/lib</filename> directory.
-    To support those packages, create this symlink:</para>
+    <para>Create a symlink required by the <ulink
+    url="http://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s09.html">FHS</ulink>
+    for "historical" reasons.</para>
 @y
     <para>
-    パッケージの中には C プリプロセッサーが <filename
-    class="directory">/lib</filename> ディレクトリにあることを前提にしているものがあります。
-    そのようなものに対応するため、以下のシンボリックリンクを作成します。
+    <ulink url="http://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s09.html">FHS</ulink>
+    の求めるところに応じてシンボリックリンクを作成します。
+    これは慣例によるものです
     </para>
 @z
 

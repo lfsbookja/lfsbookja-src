@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2016-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to dejagnu-1.6. Fixes
+          <ulink url="&lfs-ticket-root;3918">#3918</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.5.1. Fixes
+          <ulink url="&lfs-ticket-root;3917">#3917</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Wording change in Chapter 6 GCC. Fixes
+          <ulink url="&lfs-ticket-root;3915">#3915</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - dejagnu-1.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3918">#3918</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.5.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3917">#3917</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第6章の gcc における文章変更。
+          <ulink url="&lfs-ticket-root;3915">#3915</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-04-12</para>
       <itemizedlist>
         <listitem>
