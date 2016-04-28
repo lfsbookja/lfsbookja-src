@@ -80,23 +80,13 @@
     </para>
 @z
 
-% @x
-%     <para>The most recent stable version of Glibc does not handle large files
-%     correctly.  Fix the problem with this patch:</para>
-% @y
-%     <para>
-%     最新の Glibc は大容量ファイルの取り扱いに不備があります。
-%     以下のパッチによりこれを修正します。
-%     </para>
-% @z
-
-% @x
-%     <para>Finally, update some recent changes from the upstream repository:</para>
-% @y
-%     <para>
-%     またアップストリームによる最新の変更を適用します。
-%     </para>
-% @z
+@x
+    <para>Fix some problems identified upstream:</para>
+@y
+    <para>
+    アップストリームが把握している不具合を修正します。
+    </para>
+@z
 
 @x
     <para>The Glibc documentation recommends building Glibc 

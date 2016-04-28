@@ -51,6 +51,16 @@
           </para>
 @z
 
+@x --disable-compile-warnings
+          <para>This option prevents the build system from using
+          compiler flags which cause build failure when building
+          with GCC 6.</para>
+@y
+          <para>
+          GCC 6 を用いてビルドする際、ビルドが失敗しないように、コンパイラーフラグを利用しないようにします。
+          </para>
+@z
+
 @x --disable-host-tool
           <para>This option disables the creation of an undesired hard link
           to the pkg-config program.</para>

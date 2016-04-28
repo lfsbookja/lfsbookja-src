@@ -77,6 +77,12 @@
         <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @z
 
+@x Glibc Upstream Patch
+        <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+@z
+
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @y

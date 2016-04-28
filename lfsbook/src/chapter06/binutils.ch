@@ -57,7 +57,7 @@
 @z
 
 @x
-    <para>Fix a problem identified upstream:</para>
+    <para>Fix some problems identified upstream:</para>
 @y
     <para>
     アップストリームが把握している不具合を修正します。

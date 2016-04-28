@@ -48,6 +48,79 @@
 @z
 
 @x
+      <para>2016-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Updated to file-5.26. Fixes
+          <ulink url="&lfs-ticket-root;3919">#3919</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gcc-6.1.0. Fixes
+          <ulink url="&lfs-ticket-root;3924">#3924</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to grep-2.25. Fixes
+          <ulink url="&lfs-ticket-root;3922">#3922</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gzip-1.8. Fixes
+          <ulink url="&lfs-ticket-root;3923">#3923</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to linux-4.5.2. Fixes
+          <ulink url="&lfs-ticket-root;3921">#3921</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to tzdata-2016d. Fixes
+          <ulink url="&lfs-ticket-root;3920">#3920</ulink>.</para>
+        </listitem>
+        <listitem> 
+          <para>[krejzi] - Updated binutils upstream fixes
+          patch.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added a patch for glibc which
+          addresses a security issue and a build failure
+          with GCC 6.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - file-5.26 へのアップデート。
+          <ulink url="&lfs-ticket-root;3919">#3919</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gcc-6.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3924">#3924</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - grep-2.25 へのアップデート。
+          <ulink url="&lfs-ticket-root;3922">#3922</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gzip-1.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;3923">#3923</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - linux-4.5.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3921">#3921</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - tzdata-2016d へのアップデート。
+          <ulink url="&lfs-ticket-root;3920">#3920</ulink> を Fix に。</para>
+        </listitem>
+        <listitem> 
+          <para>[krejzi] - binutils にアップストリームによるパッチを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - glibc にパッチを追加。セキュリティ問題および GCC 6 でのビルド失敗を回避。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-04-16</para>
       <itemizedlist>
         <listitem>
