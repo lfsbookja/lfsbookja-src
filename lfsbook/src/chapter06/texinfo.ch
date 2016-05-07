@@ -35,6 +35,28 @@
 @z
 
 @x
+      <title>The meaning of the configure options:</title>
+@y
+      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;:</title>
+@z
+
+@x
+          <para>In this case, the top-level configure script will complain that
+          this is an unrecognized option, but the configure script for
+          XSParagraph recognizes it and uses it to disable installing a static
+          <filename class="libraryfile">XSParagraph.a</filename> to <filename
+          class="directory">/usr/lib/texinfo</filename>.</para>
+@y
+          <para>
+          上のようにして処理した場合にトップレベルの configure スクリプトは、認識不能なオプションであると示してきます。
+          しかしこのオプションは XSParagraph の configure スクリプトにおいて認識されます。
+          そして <filename
+          class="directory">/usr/lib/texinfo</filename> 内にスタティックライブラリ <filename
+          class="libraryfile">XSParagraph.a</filename> を生成しないようになります。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2016-05-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Note that configure in texinfo-6.1 incorrectly
+          complains about the --disable-static switch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-05-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - texinfo-6.1 では --disable-static が不適当なメッセージを表示することに言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-04-28</para>
       <itemizedlist>
         <listitem>
