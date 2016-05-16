@@ -48,6 +48,48 @@
 @z
 
 @x
+      <para>2016-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to file-5.27. Fixes
+          <ulink url="&lfs-ticket-root;3929">#3929</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to man-pages-4.06. Fixes
+          <ulink url="&lfs-ticket-root;3928">#3928</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to linux-4.5.4. Fixes
+          <ulink url="&lfs-ticket-root;3927">#3927</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to perl-5.22.2. Fixes
+          <ulink url="&lfs-ticket-root;3926">#3926</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - file-5.27 へのアップデート。
+          <ulink url="&lfs-ticket-root;3929">#3929</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.06 へのアップデート。
+          <ulink url="&lfs-ticket-root;3928">#3928</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.5.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3927">#3927</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.22.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3926">#3926</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-05-03</para>
       <itemizedlist>
         <listitem>
