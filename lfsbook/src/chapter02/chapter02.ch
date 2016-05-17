@@ -20,7 +20,7 @@
 @z
 
 @x
-  <title>Preparing a New Partition</title>
+  <title>Preparing the Host System</title>
 @y
-  <title>新しいパーティションの準備</title>
+  <title>ホストシステムの準備</title>
 @z

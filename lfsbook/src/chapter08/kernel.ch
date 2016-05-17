@@ -145,15 +145,15 @@
 @z
 
 @x
-      <title>The meaning of the make parameters:</title>
+      <title>The meaning of optional make environment variables:</title>
 @y
-      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
+      <title>追加する make 環境変数の意味:</title>
 @z
 
 @x
-          <para>This establishes the locale setting to the one used on the host.
-          This is needed for a proper menuconfig ncurses interface line
-          drawing on UTF-8 linux text console.</para>
+          <para>This establishes the locale setting to the one used on the
+          host.  This may be needed for a proper menuconfig ncurses interface
+          line drawing on a UTF-8 linux text console.</para>
 @y
           <para>
           これはホストのロケール設定を指示するものです。
@@ -162,17 +162,15 @@
 @z
 
 @x
-          <para>Be sure to replace <replaceable>&lt;host_LANG_value&gt;</replaceable>
-          by the value of the <envar>$LANG</envar> variable from your host.
-          If not set, you could use instead the host's value of <envar>$LC_ALL</envar>
+          <para>If used, be sure to replace
+          <replaceable>&lt;host_LANG_value&gt;</replaceable> by the value of
+          the <envar>$LANG</envar> variable from your host.  You can
+          alternatively use instead the host's value of <envar>$LC_ALL</envar>
           or <envar>$LC_CTYPE</envar>.</para>
 @y
           <para>
-          <replaceable>&lt;host_LANG_value&gt;</replaceable>
-          の部分は、ホストの <envar>$LANG</envar> 変数の値に置き換えてください。
-          ホストにてその値が設定されていない場合は <envar>$LC_ALL</envar>
-          あるいは <envar>$LC_CTYPE</envar>
-          の値を設定してください。
+          <replaceable>&lt;host_LANG_value&gt;</replaceable> の部分は、ホストの <envar>$LANG</envar> 変数の値に置き換えてください。
+          <envar>$LC_ALL</envar> あるいは <envar>$LC_CTYPE</envar> の値を設定することもできます。
           </para>
 @z
 
@@ -243,6 +241,17 @@
     カーネルのコンパイルが終わったら、インストールの完了に向けてあと少し作業を行います。
     <filename class="directory">/boot</filename> ディレクトリにいくつかのファイルをコピーします。
     </para>
+@z
+
+@x
+      <para>If the host system has a separate /boot partition, the
+      files copied below should go there. The easiest way to do that 
+      is to bind /boot on the host to /mnt/lfs/boot before proceeding:</para>
+@y
+      <para>
+      ホストシステムが独立した /boot パーティションを用いている場合はファイルをそこにコピーします。
+      これを簡単に行うために、作業前に /boot をホストの /mnt/lfs/boot にバインドしておく方法があります。
+      </para>
 @z
 
 @x

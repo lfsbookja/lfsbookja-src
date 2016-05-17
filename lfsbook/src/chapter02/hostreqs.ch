@@ -44,8 +44,8 @@
 @z
 
 @x
-   <para>Earlier versions of the listed software packages may work, but has not
-   been tested.</para>
+   <para>Earlier versions of the listed software packages may work, but have
+   not been tested.</para>
 @y
    <para>
    各パッケージにて、示しているバージョンより古いものでも動作するかもしれませんが、テストは行っていません。
@@ -166,25 +166,31 @@
 @z
 
 @x
-  <para>Note that the symlinks mentioned above are required to build an LFS
-  system using the instructions contained within this book. Symlinks that
-  point to other software (such as dash, mawk, etc.) may work, but are not
-  tested or supported by the LFS development team, and may require either
-  deviation from the instructions or additional patches to some
-  packages.</para>
+    <para>Note that the symlinks mentioned above are required to build an LFS
+    system using the instructions contained within this book. Symlinks that
+    point to other software (such as dash, mawk, etc.) may work, but are not
+    tested or supported by the LFS development team, and may require either
+    deviation from the instructions or additional patches to some
+    packages.</para>
 @y
-  <para>
-  上で示しているシンボリックリンクは、本書の説明を通じて LFS を構築するために必要となるものです。
-  シンボリックリンクが別のソフトウェア (例えば dash や mawk) を指し示している場合でもうまく動作するかもしれません。
-  しかしそれらに対して LFS 開発チームはテストを行っていませんしサポート対象としていません。
-  そのような状況に対しては作業手順の変更が必要となり、特定のパッケージに対しては追加のパッチを要するかもしれません。
-  </para>
+    <para>
+    上で示しているシンボリックリンクは、本書の説明を通じて LFS を構築するために必要となるものです。
+    シンボリックリンクが別のソフトウェア (例えば dash や mawk) を指し示している場合でもうまく動作するかもしれません。
+    しかしそれらに対して LFS 開発チームはテストを行っていませんしサポート対象としていません。
+    そのような状況に対しては作業手順の変更が必要となり、特定のパッケージに対しては追加のパッチを要するかもしれません。
+    </para>
 @z
 
 @x
-  <sect2 id="version-check" xreflabel="Section vii, Host System Requirements">
+  <bridgehead renderas="sect2" 
+              id="version-check" 
+              xreflabel="Host System Requirements">
+  </bridgehead>
 @y
-  <sect2 id="version-check" xreflabel="vii 節、ホストシステム要件">
+  <bridgehead renderas="sect2" 
+              id="version-check" 
+              xreflabel="ホストシステム要件">
+  </bridgehead>
 @z
 
 @x

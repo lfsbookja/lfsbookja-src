@@ -48,6 +48,61 @@
 @z
 
 @x
+      <para>2016-05-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Enhance the stripping commands at the end
+          of Chapter 6.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Made editorial changes to the kernel section.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Moved Host System Requirements to Chapter 2
+          and made minor editorial changes.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to tar-1.29. Fixes
+          <ulink url="&lfs-ticket-root;3932">#3932</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to linux-4.6. Fixes
+          <ulink url="&lfs-ticket-root;3930">#3930</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to perl-5.24.0. Fixes
+          <ulink url="&lfs-ticket-root;3931">#3931</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-05-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第6章の最後でのストリップコマンドの改正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - カーネルの説明において若干の修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ホストシステム要件を第2章へ移動し若干の修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tar-1.29 へのアップデート。
+          <ulink url="&lfs-ticket-root;3932">#3932</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3930">#3930</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.24.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3931">#3931</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-05-15</para>
       <itemizedlist>
         <listitem>

@@ -20,12 +20,14 @@
 @z
 
 @x
-  <para>In this chapter, the partition which will host the LFS system is
-  prepared. We will create the partition itself, create a file system
-  on it, and mount it.</para>
+  <para>In this chapter, the host tools needed for building LFS
+  are checked and, if necessary, installed.  Then a partition which will 
+  host the LFS system is prepared. We will create the partition 
+  itself, create a file system on it, and mount it.</para>
 @y
   <para>
-  この章では LFS システムをインストールするパーティションを準備します。
+  この章では LFS システムの構築に必要となるホストツールを確認し、必要に応じてインストールします。
+  そして LFS システムをインストールするパーティションを準備します。
   パーティションを生成しファイルシステムを構築した上で、これをマウントします。
   </para>
 @z

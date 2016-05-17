@@ -11,8 +11,10 @@ CHANGE_FILES = \
 	chapter02.ch          \
 	creatingfilesystem.ch \
 	creatingpartition.ch  \
+	hostreqs.ch           \
 	introduction.ch       \
-	mounting.ch
+	mounting.ch           \
+	stages.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -32,5 +34,7 @@ aboutlfs.xml:           $(BOOKdir)/$@ $(srcdir)/aboutlfs.ch
 chapter02.xml:          $(BOOKdir)/$@ $(srcdir)/chapter02.ch
 creatingfilesystem.xml: $(BOOKdir)/$@ $(srcdir)/creatingfilesystem.ch
 creatingpartition.xml:  $(BOOKdir)/$@ $(srcdir)/creatingpartition.ch
+hostreqs.xml:           $(BOOKdir)/$@ $(srcdir)/hostreqs.ch
 introduction.xml:       $(BOOKdir)/$@ $(srcdir)/introduction.ch
 mounting.xml:           $(BOOKdir)/$@ $(srcdir)/mounting.ch
+stages.xml:             $(BOOKdir)/$@ $(srcdir)/stages.ch

@@ -32,16 +32,6 @@
 @z
 
 @x
-    <para>First apply the following patch to adapt some hard-wired paths to the
-    C library:</para>
-@y
-    <para>
-    以下のパッチを適用します。
-    これは C ライブラリに対してのハードコーディングされたパスに対応するものです。
-    </para>
-@z
-
-@x
     <para>Prepare Perl for compilation:</para>
 @y
     <para>&PreparePackage1;Perl&PreparePackage2;</para>

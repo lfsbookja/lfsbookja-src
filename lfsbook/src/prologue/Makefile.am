@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	errata.ch        \
 	foreword.ch      \
 	japanese.ch      \
-	hostreqs.ch      \
 	organization.ch  \
 	preface.ch       \
 	prerequisites.ch \
@@ -44,7 +43,6 @@ errata.xml:        $(BOOKdir)/$@ $(srcdir)/errata.ch
 foreword.xml:      $(BOOKdir)/$@ $(srcdir)/foreword.ch
 japanese.xml:      $(srcdir)/japanese.ch
 	cp -p $^ $@
-hostreqs.xml:      $(BOOKdir)/$@ $(srcdir)/hostreqs.ch
 organization.xml:  $(BOOKdir)/$@ $(srcdir)/organization.ch
 preface.xml:       $(BOOKdir)/$@ $(srcdir)/preface.ch
 prerequisites.xml: $(BOOKdir)/$@ $(srcdir)/prerequisites.ch
