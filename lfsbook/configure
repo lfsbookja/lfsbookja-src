@@ -595,6 +595,7 @@ LYNX
 SVNVER
 DUMPDIR
 NOCHUNKS_OUTPUT
+NOCHUNKS_NAME
 PDF_OUTPUT
 BASEDIR
 revspec
@@ -4004,24 +4005,27 @@ if test "${with_rev+set}" = set; then :
 
 fi
 
-
-if test "x${with_rev}" != "xsysv" -a "x${with_rev}" != "xsystemd"; then
-  as_fn_error $? "REV must be 'sysv' (default) or 'systemd." "$LINENO" 5
+if test "x${with_rev}" != "x"; then
+  if test "x${with_rev}" != "xsysv" -a "x${with_rev}" != "xsystemd"; then
+    as_fn_error $? "REV must be 'sysv' (default) or 'systemd.'" "$LINENO" 5
+  fi
 fi
 
 
-
-if test "x${with_rev}" = "xsysv"; then
+if test "x${with_rev}" = "xsystemd"; then
+  BASEDIR=../systemd.ja
+  PDF_OUTPUT=../lfssysdja-svn.pdf
+  NOCHUNKS_NAME=../lfssysdja-svn
+  NOCHUNKS_OUTPUT=../lfssysdja-svn.html
+  DUMPDIR=../lfs-sysd-commands
+else
   BASEDIR=../svn.ja
   PDF_OUTPUT=../lfsbookja-svn.pdf
+  NOCHUNKS_NAME=../lfsbookja-svn
   NOCHUNKS_OUTPUT=../lfsbookja-svn.html
   DUMPDIR=../lfs-commands
-else
-  BASEDIR=../systemd.ja
-  PDF_OUTPUT=../lfs-sysd-svn-ja.pdf
-  NOCHUNKS_OUTPUT=../lfs-sysd-svn-ja.html
-  DUMPDIR=../lfs-sysd-commands
 fi
+
 
 
 
