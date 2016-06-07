@@ -17,13 +17,13 @@ AC_SUBST(revspec)
 if test "x${with_rev}" = "xsystemd"; then
   BASEDIR=../systemd.ja
   PDF_OUTPUT=../lfssysdja-svn.pdf
-  NOCHUNKS_NAME=../lfssysdja-svn
+  NOCHUNKS_NAME=lfssysdja-svn
   NOCHUNKS_OUTPUT=../lfssysdja-svn.html
   DUMPDIR=../lfs-sysd-commands
 else
   BASEDIR=../svn.ja
   PDF_OUTPUT=../lfsbookja-svn.pdf
-  NOCHUNKS_NAME=../lfsbookja-svn
+  NOCHUNKS_NAME=lfsbookja-svn
   NOCHUNKS_OUTPUT=../lfsbookja-svn.html
   DUMPDIR=../lfs-commands
 fi
