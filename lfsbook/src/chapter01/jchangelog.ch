@@ -61,6 +61,21 @@
           SVN-20160516,
           Changeset
           <ulink url="&lfs-rev-root;11060">11060</ulink> ～
+          <ulink url="&lfs-rev-root;11086">11086</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2016-06-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20160527,
+          Changeset
+          <ulink url="&lfs-rev-root;11060">11060</ulink> ～
           <ulink url="&lfs-rev-root;11064">11064</ulink>
           対応。
           </para>

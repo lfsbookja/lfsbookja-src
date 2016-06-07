@@ -54,6 +54,101 @@
 @z
 
 @x
+      <para>2016-05-27</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[dj] - Update to dbus-1.10.8. Fixes
+          <ulink url="&lfs-ticket-root;3938">#3938</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to e2fsprogs-1.43. Fixes
+          <ulink url="&lfs-ticket-root;3935">#3935</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to gdbm-1.12. Fixes
+          <ulink url="&lfs-ticket-root;3933">#3933</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to iproute2-4.6.0. Fixes
+          <ulink url="&lfs-ticket-root;3934">#3934</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to make-4.2. Fixes
+          <ulink url="&lfs-ticket-root;3936">#3936</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Update to systemd-230. Fixes
+          <ulink url="&lfs-ticket-root;3937">#3937</ulink>.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-05-27</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[dj] - dbus-1.10.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;3938">#3938</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - e2fsprogs-1.43 へのアップデート。
+          <ulink url="&lfs-ticket-root;3935">#3935</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - gdbm-1.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;3933">#3933</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - iproute2-4.6.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3934">#3934</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - make-4.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3936">#3936</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - systemd-230 へのアップデート。
+          <ulink url="&lfs-ticket-root;3937">#3937</ulink> を Fix に。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
+      <para>2016-05-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Add additional explanatory text for sytemctl and
+          journalctl commands.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-05-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - sytemctl コマンドと journalctl コマンドについて記述追加。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
+      <para>2016-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Adjust hosts file instructions to account for hosts
+          using automatic configuration. Ajusted eplanatory text to account
+for
+          additional configurations.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - ホストが自動的な設定を行うものを考慮してホスト設定ファイルの設定手順を改正。
+          さらなる設定手順について追加。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
       <para>2016-05-16</para>
       <itemizedlist>
         <listitem>
