@@ -50,7 +50,7 @@
     <para>This takes a long time, about &autoconf-ch6-sbu-tests; SBUs. In addition,
     several tests are skipped that use Automake. For full test coverage,
     Autoconf can be re-tested after Automake has been installed.  In addition,
-    two fail due to changes in libtool-2.4.3 and later.</para>
+    two tests fail due to changes in libtool-2.4.3 and later.</para>
 @y
     <para>
     このテストはおよそ &autoconf-ch6-sbu-tests; SBU ほど要します。

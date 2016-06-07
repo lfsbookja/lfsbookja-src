@@ -93,7 +93,7 @@ am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
 	$(top_srcdir)/m4/ac_check_takaofontdir.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/ac_check_rev.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -129,6 +129,7 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+BASEDIR = @BASEDIR@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -137,6 +138,7 @@ CTIE = @CTIE@
 CYGPATH_W = @CYGPATH_W@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DUMPDIR = @DUMPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -155,6 +157,7 @@ LYNX = @LYNX@
 MAINT = @MAINT@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
@@ -165,6 +168,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -216,6 +220,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+revspec = @revspec@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@

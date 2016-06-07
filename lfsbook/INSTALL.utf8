@@ -39,15 +39,21 @@
     * LFS ブックのオリジナル XML ソースを、同じように展開(解凍)します。
 
       % cd /usr/local/src
-      % tar -xf /path/to/download/LFS-BOOK-6.5-XML.tar.bz2
+      % tar -xf /path/to/download/LFS-BOOK-VER-XML.tar.bz2
 
-    * 本配布のソースディレクトリに入って configure, make を実行します。
+    * 本配布のソースディレクトリに入って configure を実行します。
 
       % cd /usr/local/src/lfsbookja-YYYYMMDD
-      % ./configure && make
+      % ./configure
+
+    * configure により builddir ディレクトリが生成されるので、その
+      ディレクトリに入って make を実行します。
+
+      % cd builddir
+      % make
 
     * 現時点において make install は整備できていません。
-      上の make コマンド実行により、ソースディレクトリ配下に 6.5.ja
+      上の make コマンド実行により、ソースディレクトリ配下に VER.ja
       のようなサブディレクトリが生成され、そこに HTML ソース一式が
       生成されます。これが成果物となります。 
 
@@ -56,3 +62,9 @@
       横並びの場所に配置するものとしており、さらにディレクトリ名を固定的に
       決めうちしています。--with-bookdir オプションを指定すれば、
       そのディレクトリパスを変更することができます。 
+
+    * configure のオプションとして --with-rev を設けています。
+      --with-rev=sysv か --with-rev=systemd のいずれかを指定できます。
+      sysv により通常LFSブック、systemd により systemd版LFSブックを
+      ビルドすることができます。--with-rev の指定がない場合は、
+      --with-rev=sysv が指定されたものとして動作します。

@@ -17,20 +17,21 @@ srcs = general.ent index.xml packages.ent patches.ent pdf-fixups.sh \
 DISTCLEANFILES = $(srcs)
 
 SVNVER=@SVNVER@
-BASEDIR=../svn.ja
-DUMPDIR=../lfs-commands
+BASEDIR=@BASEDIR@
+DUMPDIR=@DUMPDIR@
 ROOT_ID =
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
-NOCHUNKS_NAME=lfsbookja-svn
-NOCHUNKS_OUTPUT = ../$(NOCHUNKS_NAME).html
-PDF_OUTPUT = ../lfsbookja-svn.pdf
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
+PDF_OUTPUT = @PDF_OUTPUT@
 URLTOP = http\:\/\/lfsbookja.osdn.jp\/svn\.ja
 
 ALLXML := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xml ./*/*.xml))
 
-all: ctie $(srcs) stylesheets _bootscripts udev-lfs lfs dump-commands
+REV=@revspec@
+
+all: ctie $(srcs) stylesheets _bootscripts udev-lfs book dump-commands
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
@@ -69,34 +70,35 @@ udev-lfs:
 	$(MKDIR_P) udev-lfs
 #	cp -R $(BOOKdir)/udev-lfs/* udev-lfs
 
-lfs: validate profile-html
-	@echo "Generating chunked XHTML files..."
-	$(XSLTPROC) --nonet -stringparam chunk.quietly $(CHUNK_QUIET) \
-	  -stringparam rootid "$(ROOT_ID)" -stringparam base.dir $(BASEDIR)/ \
-	  stylesheets/lfs-chunked.xsl $(RENDERTMP)/lfs-html.xml
+book: validate profile-html
+	@echo "Generating chunked XHTML files at $(BASEDIR)/ ..."
+	$(XSLTPROC) --nonet                          \
+	  --stringparam chunk.quietly $(CHUNK_QUIET) \
+	  --stringparam rootid "$(ROOT_ID)"          \
+	  --stringparam base.dir $(BASEDIR)/         \
+	  stylesheets/lfs-chunked.xsl                \
+	  $(RENDERTMP)/lfs-html2.xml
 
 	@echo "Copying CSS code and images..."
-	if [ ! -e $(BASEDIR)/stylesheets ]; then \
-	  $(MKDIR_P) $(BASEDIR)/stylesheets; \
-	fi;
-	pushd $(BASEDIR)/; sed -i -e "s@../stylesheets@stylesheets@g" *.html; popd
-
+	$(MKDIR_P) $(BASEDIR)/stylesheets
 	cp stylesheets/lfs-xsl/*.css $(BASEDIR)/stylesheets
-	if [ ! -e $(BASEDIR)/images ]; then \
-	  $(MKDIR_P) $(BASEDIR)/images; \
-	fi;
-	cp $(BOOKdir)/images/*.png $(BASEDIR)/images
-	pushd $(BASEDIR)/; sed -i -e "s@../images@images@g" *.html; popd
+	pushd $(BASEDIR)/ > /dev/null;                     \
+	sed -i -e "s@../stylesheets@stylesheets@g" *.html; \
+	popd > /dev/null
+
+	$(MKDIR_P) $(BASEDIR)/images
+	cp -p $(BOOKdir)/images/*.png $(BASEDIR)/images
 
 	@echo "Running Tidy and obfuscate.sh..."
 	for filename in `find $(BASEDIR) -name "*.html"`; do \
-	  $(TIDY) -config tidy.conf $$filename; \
-	  true; \
-	  ${SHELL} $(BOOKdir)/obfuscate.sh $$filename; \
-	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
+         $(TIDY) -config tidy.conf $$filename;           \
+         true;                                        \
+         ${SHELL} $(BOOKdir)/obfuscate.sh $$filename;           \
+         sed -e "s@text/html@application/xhtml+xml@g" \
+             -i $$filename;                           \
 	done;
 
-	make $(BASEDIR)/wget-list $(BASEDIR)/md5sums
+	make --no-print-directory $(BASEDIR)/wget-list $(BASEDIR)/md5sums
 
 @TXT@nochunks: validate profile-html
 @TXT@	@echo "Generating non chunked XHTML file..."
@@ -146,12 +148,25 @@ tmpdir: $(ALLXML)
 validate: tmpdir $(ALLXML)
 	@echo "Processing bootscripts..."
 	bash process-scripts.sh
+
+	@echo "Adjusting for revision $(REV)..."
+	$(XSLTPROC) --nonet                           \
+                --xinclude                            \
+                --output $(RENDERTMP)/lfs-html2.xml   \
+                --stringparam profile.revision $(REV) \
+                stylesheets/lfs-xsl/profile.xsl       \
+                index.xml
+
 	@echo "Validating the book..."
-	$(XMLLINT) --nonet --noent --xinclude --postvalid \
-	  -o $(RENDERTMP)/lfs-full.xml index.xml
+	$(XMLLINT) --nonet                  \
+               --noent                      \
+               --postvalid                  \
+	       -o $(RENDERTMP)/lfs-full.xml \
+               $(RENDERTMP)/lfs-html2.xml
+
 	rm -f appendices/*.script
-#	$(srcdir)/make-aux-files-ja.sh
 	./aux-file-data.sh $(RENDERTMP)/lfs-full.xml
+	@echo "Validation complete."
 
 maketar:
 	@echo "Making tarballs..."

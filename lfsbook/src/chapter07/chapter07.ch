@@ -20,7 +20,7 @@
 @z
 
 @x
-  <title>System Configuration and Bootscripts</title>
+  <title>System Configuration</title>
 @y
-  <title>システム設定とブートスクリプト</title>
+  <title>システム設定</title>
 @z

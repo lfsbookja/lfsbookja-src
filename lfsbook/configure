@@ -593,6 +593,11 @@ TAKAOGFONTDIR
 FOP
 LYNX
 SVNVER
+DUMPDIR
+NOCHUNKS_OUTPUT
+PDF_OUTPUT
+BASEDIR
+revspec
 TIDY
 XMLLINT
 XSLTPROC
@@ -697,6 +702,7 @@ enable_silent_rules
 enable_maintainer_mode
 with_bookdir
 enable_dependency_tracking
+with_rev
 with_takaogfontdir
 '
       ac_precious_vars='build_alias
@@ -1335,6 +1341,7 @@ Optional Packages:
   --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
   --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
   --with-bookdir=DIR      Specify BOOK sources directory [DIR=../BOOK]
+  --with-rev=REV          Specify BOOK revision [REV=sysv]
   --with-takaogfontdir=DIR
                           Path to directory for TakaoFont files
 
@@ -3985,9 +3992,46 @@ if test "$TIDY" = no; then
  as_fn_error $? "tidy not found in $PATH" "$LINENO" 5
 fi;
 
-TARGETVER=svn-20160516
+revspec=sysv
 
-SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version         \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
+# Check whether --with-rev was given.
+if test "${with_rev+set}" = set; then :
+  withval=$with_rev;
+  if test "x${with_rev}" != "x"; then
+    revspec=${with_rev}
+  fi
+
+
+fi
+
+
+if test "x${with_rev}" != "xsysv" -a "x${with_rev}" != "xsystemd"; then
+  as_fn_error $? "REV must be 'sysv' (default) or 'systemd." "$LINENO" 5
+fi
+
+
+
+if test "x${with_rev}" = "xsysv"; then
+  BASEDIR=../svn.ja
+  PDF_OUTPUT=../lfsbookja-svn.pdf
+  NOCHUNKS_OUTPUT=../lfsbookja-svn.html
+  DUMPDIR=../lfs-commands
+else
+  BASEDIR=../systemd.ja
+  PDF_OUTPUT=../lfs-sysd-svn-ja.pdf
+  NOCHUNKS_OUTPUT=../lfs-sysd-svn-ja.html
+  DUMPDIR=../lfs-sysd-commands
+fi
+
+
+
+
+
+
+
+TARGETVER=svn-20160527
+
+SVNVER=`grep 'ENTITY version ' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version         \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5
 $as_echo_n "checking for the original XML version... " >&6; }
 if test ! "$SVNVER" = "$TARGETVER"; then

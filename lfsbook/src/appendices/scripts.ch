@@ -14,11 +14,11 @@
 @z
 
 @x
-<appendix id="scripts" xreflabel="Appendix D">
+<appendix id="scripts" xreflabel="Appendix D" revision="sysv">
   <?dbhtml dir="scripts"?>
   <?dbhtml filename="scripts.html"?>
 @y
-<appendix id="scripts" xreflabel="付録 D">
+<appendix id="scripts" xreflabel="付録 D" revision="sysv">
   <?dbhtml dir="scripts"?>
   <?dbhtml filename="scripts.html"?>
 @z

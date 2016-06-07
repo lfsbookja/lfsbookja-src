@@ -32,14 +32,6 @@
 @z
 
 @x
-    <para>First fix a build problem that affects i386 systems:</para>
-@y
-    <para>
-    i386 システムに影響する問題を解消します。
-    </para>
-@z
-
-@x
     <para>Fix some problems identified upstream:</para>
 @y
     <para>
@@ -81,16 +73,6 @@
           </para>
 @z
 
-@x --disable-profile
-          <para>This builds the libraries without profiling information. Omit
-          this option if profiling on the temporary tools is necessary.</para>
-@y
-          <para>
-          プロファイル情報を含めずにライブラリをビルドすることを指示します。
-          一時的なツールにてプロファイル情報が必要な場合は、このオプションを取り除いてください。
-          </para>
-@z
-
 @x --enable-kernel
           <para>This tells Glibc to compile the library with support
           for &min-kernel; and later Linux kernels.  Workarounds for older
@@ -99,18 +81,6 @@
           <para>
           Linux カーネル &min-kernel; 以上のサポートを行うよう指示します。
           これ以前のカーネルは利用することができません。
-          </para>
-@z
-
-@x --enable-obsolete-rpc
-          <para>This installs NIS and RPC related headers that are not
-          installed by default. They are required to build GCC and by
-          several BLFS packages.</para>
-@y
-          <para>
-          NIS と RPC に関連するヘッダーファイルをインストールします。
-          これらはデフォルトではインストールされません。
-          これは GCC のビルドや、いくつかの BLFS パッケージにて必要となるものです。
           </para>
 @z
 
@@ -198,35 +168,6 @@
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>This package does come with a test suite, however, it cannot be
-    run at this time because we do not have a C++ compiler yet.</para>
-@y
-    <para>
-    このパッケージにテストスイートは存在しますが、ここで実行することはできません。
-    この時点ではまだ C++ コンパイラーを構築していないためです。
-    </para>
-@z
-
-@x
-      <para>The test suite also requires locale data to be installed in order to run
-      successfully. Locale data provides information to the system regarding
-      such things as the date, time, and currency formats accepted and output by
-      system utilities. If the test suites are not being run in this chapter
-      (as per the recommendation), there is no need to install the locales now.
-      The appropriate locales will be installed in the next chapter. To install
-      the Glibc locales anyway, use instructions from <xref
-      linkend="ch-system-glibc" role="."/></para>
-@y
-      <para>
-      テストスイートを正しく実行するためには、さらにロケールデータも必要になります。
-      ロケールデータは、システム内の各種ユーティリティが、日付、時刻、通貨などの情報を利用したり出力したりするために用いられるものです。
-      テストスイートの実行は不要と説明していることから、これに従って実行しない場合はロケールデータをここでインストールする必要はありません。
-      適切なロケールデータは次章にてインストールします。
-      それでもここでインストールするなら <xref linkend="ch-system-glibc" role=""/>に示される手順に従ってください。
-      </para>
 @z
 
 @x

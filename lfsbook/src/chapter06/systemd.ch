@@ -14,67 +14,81 @@
 @z
 
 @x
-    <para>The Systemd package contains programs for controlling the startup,
+    <para>The systemd package contains programs for controlling the startup,
     running, and shutdown of the system.</para>
 @y
     <para>
-    Systemd パッケージは、システムの起動、稼動、終了の制御を行うプログラムを提供します。
+    systemd パッケージは、システムの起動、稼動、終了の制御を行うプログラムを提供します。
     </para>
 @z
 
 @x
-    <title>Installation of Systemd</title>
+    <title>Installation of systemd</title>
 @y
-    <title>&InstallationOf1;Systemd&InstallationOf2;</title>
+    <title>&InstallationOf1;systemd&InstallationOf2;</title>
 @z
 
 @x
-    <note><para>If systemd is not desired at all, it can be skipped.  However a
-    udev replacement must be installed.  See the hint at <ulink
-    url="http://www.linuxfromscratch.org/hints/downloads/files/eudev-alt-hint.txt"/>
-    to find procedures to install
-    <application>eudev</application>.</para></note>
-@y
-    <note><para>
-    systemd は不適当である場合、これをインストールしないこともできます。
-    ただしその代わりに udev をインストールすることになります。
-    <application>eudev</application> のインストール手順を示したヒント情報が <ulink
-    url="http://www.linuxfromscratch.org/hints/downloads/files/eudev-alt-hint.txt"/> にあります。
-    </para></note>
-@z
-
-@x
-    <para>First, create a file to allow Systemd to build when using Util-Linux
-    built in Chapter 5:</para>
-@y
-    <para>
-    まず、第5章にてビルドした Util-Linux を利用して Systemd をビルドできるようにファイルを生成します。
-    </para>
-@z
-
-@x
-    <para>Additionally, fix a build error when using Util-Linux built in
+    <para>First, fix a build error when using Util-Linux built in
     Chapter 5:</para>
 @y
     <para>
-    さらに第5章にてビルドした Util-Linux を用いた際のビルドエラーを修正します。
+    まず第5章でビルドした Util-Linux を用いた際のビルドエラーを修正します。
     </para>
 @z
 
 @x
-    <para>Apply a patch so that compat <command>pkg-config</command> files get
-    installed without installing compat libs which are useless on LFS:</para>
+    <para>Fix a potential security issue with framebuffer devices:</para>
 @y
     <para>
-    compat パッケージは LFS にて不要であるためインストールしません。
-    インストールしなくても compat の <command>pkg-config</command> がインストールされるようにパッチを当てます。
+    フレームバッファーに関するセキュリティ問題を修正します。
     </para>
 @z
 
 @x
-    <para>Prepare Systemd for compilation:</para>
+    <para>Disable two tests that always fail:</para>
 @y
-    <para>&PreparePackage1;Systemd&PreparePackage2;</para>
+    <para>
+    二つのテストが常時失敗するため、実行しないようにします。
+    </para>
+@z
+
+@x
+    <para>Rebuild generated files after modifying Makefile.am and 
+    Makefile.in:</para>
+@y
+    <para>
+    Makefile.am と Makefile.in を修正したことにより各種ファイルを再生成します。
+    </para>
+@z
+
+@x
+    <para>Create a file to allow systemd to build when using Util-Linux
+    built in Chapter 5, to disable LTO by default, and to build without
+    xlstproc:</para>
+@y
+    <para>
+    第5章にてビルドした Util-Linux を用いて systemd がビルドできるように、ファイルを一つ生成します。
+    これはデフォルトで LTO を無効とし、また xlstproc がなくてもビルドができるようにするものです。
+    </para>
+@z
+
+@x
+    <para>LTO is disabled by default because it causes
+    <command>systemd</command> and other auxiliary programs to link to
+    <filename class="libraryfile">libgcc_s.so</filename>, slows the build down
+    and makes the compiled code larger.</para>
+@y
+    <para>
+    LTO がデフォルトで無効化されているのは、<command>systemd</command> や関連プログラムが <filename
+    class="libraryfile">libgcc_s.so</filename> にリンクしているからであり、ビルドに時間を要し、またビルドされたコードがより大きくなってしまうためです。
+    </para>
+@z
+
+@x
+    <para>Prepare systemd for compilation:</para>
+@y
+    <para>&PreparePackage1;systemd&PreparePackage2;</para>
 @z
 
 @x
@@ -104,32 +118,70 @@
 @z
 
 @x --enable-split-usr
-          <para>This switch ensures that Systemd will work on
+          <para>This switch ensures that systemd will work on
           systems where /bin, /lib and /sbin directories are not
           symlinks to their /usr counterparts.</para>
 @y
           <para>
-          本スイッチは、/bin, /lib, /sbin の各ディレクトリが /usr 配下の同一サブディレクトリ名によるシンボリックリンクでない場合でも Systemd が稼動するようにするものです。
+          本スイッチは、/bin, /lib, /sbin の各ディレクトリが /usr 配下の同一サブディレクトリ名によるシンボリックリンクでない場合でも systemd が稼動するようにするものです。
           </para>
 @z
 
-@x --disable-gudev --without-python
-          <para>These switches disable optional features because
-          LFS does not provide their dependencies.</para>
+@x --without-python
+          <para>This switch prevents <command>configure</command>
+          from trying to use Python which isn't built
+          in LFS.</para>
 @y
           <para>
-          これらのスイッチは、任意ビルドとなっている機能を無効とします。
-          これは LFS において提供していないからです。
+          このスイッチは <command>configure</command> が Python を利用しないようにします。
+          Python は LFS においてビルドしていないからです。
           </para>
 @z
 
-@x --with-dbus*
-          <para>These switches ensure that D-Bus configuratil files
-          get installed in the correct locations.</para>
+@x --disable-firstboot
+          <para>This switch prevents installation of systemd
+          services responsible for setting up the system for
+          the first time. They are not useful for LFS because
+          everything is done manually.</para>
 @y
-          <para>
-          これらのスイッチは D-Bus の設定ファイルを適切なディレクトリにインストールすることを指示します。
-          </para>
+          <para>This switch prevents installation of systemd
+          services responsible for setting up the system for
+          the first time. They are not useful for LFS because
+          everything is done manually.</para>
+@z
+
+@x --disable-ldconfig
+          <para>This switch prevents installation of a systemd
+          unit that runs <command>ldconfig</command> at
+          boot, making the boot time longer. Remove it if the
+          described feature is desired, even though it's not
+          useful for source distributions such as LFS.</para>
+@y
+          <para>This switch prevents installation of a systemd
+          unit that runs <command>ldconfig</command> at
+          boot, making the boot time longer. Remove it if the
+          described feature is desired, even though it's not
+          useful for source distributions such as LFS.</para>
+@z
+
+@x --disable-sysusers
+          <para>This switch prevents installation of systemd
+          services responsible for setting up the
+          <filename>/etc/group</filename> and
+          <filename>/etc/passwd</filename> files. Both files
+          were created early in this chapter.</para>
+@y
+          <para>This switch prevents installation of systemd
+          services responsible for setting up the
+          <filename>/etc/group</filename> and
+          <filename>/etc/passwd</filename> files. Both files
+          were created early in this chapter.</para>
+@z
+
+@x --with-default-dnssec=no
+          <para>This switch turns off the experimental DNSSEC suport.</para>
+@y
+          <para>This switch turns off the experimental DNSSEC suport.</para>
 @z
 
 @x
@@ -139,29 +191,11 @@
 @z
 
 @x
-    <para>First prevent few broken test cases from running:</para>
+    <para>This package has a test suite, but it can only be run after the
+    package has been installed.</para>
 @y
     <para>
-    実行できないテストを修正します。
-    </para>
-@z
-
-@x
-    <para>To test the results, issue:</para>
-@y
-    <para>
-    ビルド結果をテストする場合は以下を実行します。
-    </para>
-@z
-
-@x
-    <para>Note that some tests might fail because the test are being run in a
-    chroot environment. For full test coverage, the test suite should be run
-    from a system booted using Systemd.</para>
-@y
-    <para>
-    テストの中には失敗するものが出てきますが、これは chroot 環境下にて実行しているためです。
-    すべてのテストを正常に実行するためには、Systemd によって起動されたシステム上にてテストスイートを実行する必要があります。
+    このパッケージにテストスイートはありますが、パッケージをインストールした後でなければ実行することはできません。
     </para>
 @z
 
@@ -172,12 +206,10 @@
 @z
 
 @x
-    <para>Move NSS myhostname library to <filename
-    class="directory">/lib</filename>:</para>
+    <para>Move NSS libraries to <filename class="directory">/lib</filename>:</para>
 @y
     <para>
-    NSS myhostname ライブラリを <filename
-    class="directory">/lib</filename> へ移動します。
+    NSS ライブラリを <filename class="directory">/lib</filename> へ移動します。
     </para>
 @z
 
@@ -190,14 +222,12 @@
 @z
 
 @x
-    <para>Create the Sysvinit compatibility symlinks, and move some man pages
-    and a library that conflict with <xref linkend="ch-system-sysvinit"/> so
-    both systems can be installed side-by-side:</para>
+    <para>Create the Sysvinit compatibility symlinks, so systemd is used
+    as the default init system:</para>
 @y
     <para>
     Sysvinit と互換性のあるシンボリックリンクを生成します。
-    そして <xref linkend="ch-system-sysvinit"/> との間で、名称が重複している man ページとライブラリを移動させます。
-    こうすることで両パッケージを支障なくインストールできるようにします。
+    これにより systemd がデフォルトの init システムとして用いられるようになります。
     </para>
 @z
 
@@ -211,25 +241,30 @@
 
 @x
     <para>Create the <filename>/etc/machine-id</filename> file needed by
-    Journald:</para>
+    <command>systemd-journald</command>:</para>
 @y
     <para>
-    Journald に対して必要となる <filename>/etc/machine-id</filename> ファイルを生成します。
+    <command>systemd-journald</command> に対して必要となる <filename>/etc/machine-id</filename> ファイルを生成します。
     </para>
 @z
 
 @x
-    <para>Finally install some LFS specific udev rules:</para>
+    <para>Since the testsuite largely depends on the host system kernel
+    configuration, some tests may fail. It also needs a modification in
+    order not to look for a program that will be installed by Util-Linux
+    package later in this chapter. To test the results, issue:</para>
 @y
     <para>
-    最後に LFS 固有の udev ルールをインストールします。
+    テストスイートはホストシステムのカーネル設定に大きく依存するため、失敗するテストが出てきます。
+    また本章にて後にインストールする Util-Linux パッケージによってインストールされるプログラムを、テストスイートが用いないようにする修正が必要となります。
+    テストスイートは以下により実行します。
     </para>
 @z
 
 @x
-    <title>Contents of Systemd</title>
+    <title>Contents of systemd</title>
 @y
-    <title>&ContentsOf1;Systemd&ContentsOf2;</title>
+    <title>&ContentsOf1;systemd&ContentsOf2;</title>
 @z
 
 @x
@@ -243,39 +278,43 @@
 @z
 
 @x
-        <seg>bootctl, busctl, halt, hostnamectl, init, journalctl, kernel-install,
-        localectl, loginctl, machinectl, poweroff, reboot, runlevel, shutdown,
-        systemctl, systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls,
-        systemd-cgtop, systemd-coredumpctl, systemd-delta, systemd-detect-virt,
-        systemd-inhibit, systemd-machine-id-setup, systemd-notify, systemd-nspawn,
-        systemd-run, systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
+        <seg>bootctl, busctl, coredumpctl, halt, hostnamectl, init, journalctl,
+        kernel-install, localectl, loginctl, machinectl, networkctl, poweroff,
+        reboot, runlevel, shutdown, systemctl, systemd-analyze,
+        systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
+        systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
+        systemd-inhibit, systemd-machine-id-setup, systemd-notify,
+        systemd-nspawn, systemd-path, systemd-resolve, systemd-run,
+        systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
         telinit, timedatectl, and udevadm</seg>
-
-        <seg>libnss_myhostname.so.2, libsystemd.so, libudev.so</seg>
+        <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
+        libnss_resolve.so.2, libsystemd.so, and libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
         /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d,
         /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
-        /usr/share/doc/systemd-&systemd-version;, /usr/share/systemd,
-        /var/lib/systemd, /var/log/journal</seg>
+        /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
+        /usr/share/systemd, /var/lib/systemd, and /var/log/journal</seg>
 @y
-        <seg>bootctl, busctl, halt, hostnamectl, init, journalctl, kernel-install,
-        localectl, loginctl, machinectl, poweroff, reboot, runlevel, shutdown,
-        systemctl, systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls,
-        systemd-cgtop, systemd-coredumpctl, systemd-delta, systemd-detect-virt,
-        systemd-inhibit, systemd-machine-id-setup, systemd-notify, systemd-nspawn,
-        systemd-run, systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
+        <seg>bootctl, busctl, coredumpctl, halt, hostnamectl, init, journalctl,
+        kernel-install, localectl, loginctl, machinectl, networkctl, poweroff,
+        reboot, runlevel, shutdown, systemctl, systemd-analyze,
+        systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
+        systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
+        systemd-inhibit, systemd-machine-id-setup, systemd-notify,
+        systemd-nspawn, systemd-path, systemd-resolve, systemd-run,
+        systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
         telinit, timedatectl, udevadm</seg>
-
-        <seg>libnss_myhostname.so.2, libsystemd.so, libudev.so</seg>
+        <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
+        libnss_resolve.so.2, libsystemd.so, libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
         /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d,
         /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
-        /usr/share/doc/systemd-&systemd-version;, /usr/share/systemd,
-        /var/lib/systemd, /var/log/journal</seg>
+        /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
+        /usr/share/systemd, /var/lib/systemd, /var/log/journal</seg>
 @z
 
 @x
@@ -285,7 +324,7 @@
 @z
 
 @x bootctl
-          <para>used to query the firmware and boot manager settings.</para>
+          <para>used to query the firmware and boot manager settings</para>
 @y
           <para>
           ファームウェアやブートマネージャーの設定内容を確認します。
@@ -293,10 +332,18 @@
 @z
 
 @x busctl
-          <para>used to introspect and monitor the D-Bus bus.</para>
+          <para>Used to introspect and monitor the D-Bus bus</para>
 @y
           <para>
           D-Bus のバスを監視するために用います。
+          </para>
+@z
+
+@x coredumpctl
+          <para>Used to retrieve coredumps from the systemd Journal</para>
+@y
+          <para>
+          systemd Journal よりコアダンプを抽出します。
           </para>
 @z
 
@@ -305,7 +352,7 @@
           <parameter>-h</parameter> option, except when already in run-level 0,
           then it tells the kernel to halt the system; it notes in the
           file <filename>/var/log/wtmp</filename> that the system is being
-          brought down.</para>
+          brought down</para>
 @y
           <para>
           普通は <command>shutdown</command> にオプション <parameter>-h</parameter> をつけて実行します。
@@ -316,8 +363,8 @@
 @z
 
 @x hostnamectl
-          <para>used to query and change the system hostname and related
-          settings.</para>
+          <para>Used to query and change the system hostname and related
+          settings</para>
 @y
           <para>
           システムのホスト名および関連設定を確認し変更します。
@@ -327,7 +374,7 @@
 @x init
           <para>The first process to be started when the kernel has initialized
           the hardware which takes over the boot process and starts all the
-          proceses it is instructed to.</para>
+          proceses it is instructed to</para>
 @y
           <para>
           カーネルがハードウェアを初期化する際に起動される最初のプロセスであり、この後の起動処理を担い、指示されたすべてのブートプロセスを起動します。
@@ -335,7 +382,7 @@
 @z
 
 @x journalctl
-          <para>used to query the contents of the Systemd Journal.</para>
+          <para>Used to query the contents of the systemd Journal</para>
 @y
           <para>
           Systemd の Journal の内容を確認します。
@@ -343,8 +390,8 @@
 @z
 
 @x kernel-install
-          <para>used to add and remove kernel and initramfs images to and
-          from /boot.</para>
+          <para>Used to add and remove kernel and initramfs images to and
+          from /boot</para>
 @y
           <para>
           カーネルや initramfs イメージを /boot ディレクトリに対して追加、削除します。
@@ -352,8 +399,8 @@
 @z
 
 @x localectl
-          <para>used to query and change the system locale and keyboard layout
-          settings.</para>
+          <para>Used to query and change the system locale and keyboard layout
+          settings</para>
 @y
           <para>
           システムロケールやキーボードレイアウト設定を確認し変更します。
@@ -361,8 +408,8 @@
 @z
 
 @x loginctl
-          <para>used to introspect and control the state of the Systemd Login
-          Manager.</para>
+          <para>Used to introspect and control the state of the systemd Login
+          Manager</para>
 @y
           <para>
           Systemd のログインマネージャーの状態を確認し制御します。
@@ -370,7 +417,7 @@
 @z
 
 @x machinectl
-          <para>used to introspect and control the state of the Systemd Virtual
+          <para>Used to introspect and control the state of the systemd Virtual
           Machine and Container Registration Manager</para>
 @y
           <para>
@@ -378,9 +425,18 @@
           </para>
 @z
 
+@x networkctl
+          <para>Used to introspect the state of the network links as seen by
+          systemd-networkd</para>
+@y
+          <para>
+          systemd-netword から見えるネットワークリンクの状態を確認 (introspect) します。
+          </para>
+@z
+
 @x poweroff
           <para>Tells the kernel to halt the system and switch off the computer
-          (see <command>halt</command>).</para>
+          (see <command>halt</command>)</para>
 @y
           <para>
           カーネルに対してシステム停止を指示し、コンピューターの電源を落とします。(<command>halt</command>参照)
@@ -389,7 +445,7 @@
 
 @x reboot
           <para>Tells the kernel to reboot the system (see
-          <command>halt</command>).</para>
+          <command>halt</command>)</para>
 @y
           <para>
           カーネルに対してシステム再起動を指示します。(<command>halt</command>参照)
@@ -398,7 +454,7 @@
 
 @x runlevel
           <para>Reports the previous and the current run-level, as noted in the
-          last run-level record in <filename>/var/run/utmp</filename>.</para>
+          last run-level record in <filename>/var/run/utmp</filename></para>
 @y
           <para>
           現時点とその直前のランレベルを表示します。
@@ -408,7 +464,7 @@
 
 @x shutdown
           <para>Brings the system down in a secure way, signaling all processes
-          and notifying all logged-in users.</para>
+          and notifying all logged-in users</para>
 @y
           <para>
           すべてのプロセスとすべてのログインユーザーへの通知を行なった上で、システムを安全に停止します。
@@ -416,8 +472,8 @@
 @z
 
 @x systemctl
-          <para>used to introspect and control the state of the Systemd system and
-          service manager.</para>
+          <para>Used to introspect and control the state of the systemd system
+          and service manager</para>
 @y
           <para>
           Systemd システムとサービスマネージャーの状態について確認し制御します。
@@ -425,8 +481,8 @@
 @z
 
 @x systemd-analyze
-          <para>used to determine system boot-up performance of the current boot.
-          </para>
+          <para>Used to determine system boot-up performance of the current
+          boot</para>
 @y
           <para>
           現在のシステム起動において、起動処理パフォーマンスを決定します。
@@ -434,8 +490,8 @@
 @z
 
 @x systemd-ask-password
-          <para>used to query a system password or passphrase from the user, using a
-          question message specified on the command line.</para>
+          <para>Used to query a system password or passphrase from the user,
+          using a question message specified on the command line</para>
 @y
           <para>
           コマンドラインから指定された質問文を用いて、システムパスワードやユーザーのパスフレーズを確認します。
@@ -443,7 +499,7 @@
 @z
 
 @x systemd-cat
-          <para>used to connect STDOUT and STDERR of a process with the Journal.
+          <para>Used to connect STDOUT and STDERR of a process with the Journal
           </para>
 @y
           <para>
@@ -452,8 +508,8 @@
 @z
 
 @x systemd-cgls
-          <para>recursively shows the contents of the selected Linux control group
-          hierarchy in a tree.</para>
+          <para>Recursively shows the contents of the selected Linux control
+          group hierarchy in a tree</para>
 @y
           <para>
           指定された Linux コントロールグループ (control group) の階層を再帰的に表示します。
@@ -461,26 +517,18 @@
 @z
 
 @x systemd-cgtop
-          <para>shows the top control groups of the local Linux control group hierarchy,
-          ordered by their CPU, memory and disk I/O load.</para>
+          <para>Shows the top control groups of the local Linux control group
+          hierarchy, ordered by their CPU, memory and disk I/O load</para>
 @y
           <para>
           ローカル Linux コントロールグループ (control group) の最上位を表示し、CPU、メモリ、ディスクI/Oロードの並びにより示します。
           </para>
 @z
 
-@x systemd-coredumpctl
-          <para>used to retrieve coredumps from the Systemd Journal</para>
-@y
-          <para>
-          Systemd の Journal からコアダンプを抽出します。
-          </para>
-@z
-
 @x systemd-delta
-          <para>used to identify and compare configuration files in
+          <para>Used to identify and compare configuration files in
           <filename class="directory">/etc</filename> that override default
-          counterparts in <filename class="directory">/usr</filename>.</para>
+          counterparts in <filename class="directory">/usr</filename></para>
 @y
           <para>
           <filename class="directory">/etc</filename> ディレクトリにある設定ファイルを同定したり比較したりします。
@@ -489,16 +537,33 @@
 @z
 
 @x systemd-detect-virt
-          <para>detects execution in a virtualized environment.</para>
+          <para>Detects execution in a virtualized environment</para>
 @y
           <para>
           仮想化環境での実行を検出します。
           </para>
 @z
 
+@x systemd-escape
+          <para>Used to escape strings for inclusion in systemd unit
+          names</para>
+@y
+          <para>
+          systemd ユニット名での文字エスケープを行います。
+          </para>
+@z
+
+@x
+          <para>Used to manage hardware database (hwdb)</para>
+@y
+          <para>
+          ハードウェアデータベース (hwdb) を管理します。
+          </para>
+@z
+
 @x systemd-inhibit
-          <para>used to execute a program with a shutdown, sleep or idle inhibitor lock
-          taken.</para>
+          <para>Used to execute a program with a shutdown, sleep or idle
+          inhibitor lock taken</para>
 @y
           <para>
           システム停止、休止、アイドル禁止ロックを行うプログラムを実行します。
@@ -506,9 +571,9 @@
 @z
 
 @x systemd-machine-id-setup
-          <para>used by system installer tools to initialize the machine ID stored in
-          <filename>/etc/machine-id</filename> at install time with a randomly
-          generated ID.</para>
+          <para>Used by system installer tools to initialize the machine ID
+          stored in <filename>/etc/machine-id</filename> at install time with a
+          randomly generated ID</para>
 @y
           <para>
           システムインストールツールがマシンIDを初期化するために利用します。
@@ -517,8 +582,8 @@
 @z
 
 @x systemd-notify
-          <para>used by daemon scripts to notify the init system about status changes.
-          </para>
+          <para>Used by daemon scripts to notify the init system about status
+          changes</para>
 @y
           <para>
           init システムに対してステータス変更が発生したことを通知するデーモンスクリプトが利用します。
@@ -526,16 +591,34 @@
 @z
 
 @x systemd-nspawn
-          <para>used to run a command or OS in a light-weight namespace container.</para>
+          <para>Used to run a command or OS in a light-weight namespace
+          container</para>
 @y
           <para>
           軽量な名前空間コンテナー (light-weight namepspace container) においてコマンドや OS の実行に用いられます。
           </para>
 @z
 
+@x systemd-path
+          <para>Used to query system and user paths</para>
+@y
+          <para>
+          システムパスやユーザーパスを検索します。
+          </para>
+@z
+
+@x systemd-resolve
+          <para>Used to resolve domain names, IPV4 and IPv6 addresses, DNS
+          resource records, and services</para>
+@y
+          <para>
+          ドメイン名、IPV4 と IPv6 アドレス、DNSリソースレコード、サービスの名前解決を行います。
+          </para>
+@z
+
 @x systemd-run
-          <para>used to create and start a transient .service or a .scope unit and
-          run the specified command in it.</para>
+          <para>Used to create and start a transient .service or a .scope unit
+          and run the specified command in it</para>
 @y
           <para>
           一時的な .service ユニットや .scope ユニットを生成および起動し、その指定コマンドを実行します。
@@ -543,9 +626,10 @@
 @z
 
 @x systemd-tmpfiles
-          <para>creates, deletes and cleans up volatile and temporary files and directories,
-          based on the configuration file format and location specified in
-          <filename class="directory">tmpfiles.d</filename> directories.</para>
+          <para>Creates, deletes and cleans up volatile and temporary files and
+          directories, based on the configuration file format and location
+          specified in
+          <filename class="directory">tmpfiles.d</filename> directories</para>
 @y
           <para>
           <filename class="directory">tmpfiles.d</filename> ディレクトリにて指定された設定ファイルの内容に基づいて、テンポラリファイルなどの生成削除等を行います。
@@ -553,7 +637,7 @@
 @z
 
 @x systemd-tty-ask-password-agent
-          <para>used to list or process pending Systemd password requests</para>
+          <para>Used to list or process pending systemd password requests</para>
 @y
           <para>
           未定となっている Systemd のパスワード変更指示の一覧を表示し処理します。
@@ -561,7 +645,8 @@
 @z
 
 @x telinit
-          <para>Tells <command>init</command> which run-level to change to.</para>
+          <para>Tells <command>init</command> which run-level to change
+          to</para>
 @y
           <para>
           <command>init</command> コマンドに対してランレベルを何にするかを指示します。
@@ -569,7 +654,7 @@
 @z
 
 @x timedatectl
-          <para>used to query and change the system clock and its settings.
+          <para>Used to query and change the system clock and its settings
           </para>
 @y
           <para>
@@ -581,7 +666,7 @@
           <para>Generic Udev administration tool: controls the udevd daemon,
           provides info from the Udev database, monitors uevents, waits for
           uevents to finish, tests Udev configuration, and triggers uevents
-          for a given device.</para>
+          for a given device</para>
 @y
           <para>
           汎用的な Udev 管理ツール。
@@ -590,7 +675,7 @@
 @z
 
 @x libsystemd
-          <para>Systemd utility library.</para>
+          <para>systemd utility library</para>
 @y
           <para>
           Systemd ユーティリティライブラリ。
@@ -598,7 +683,7 @@
 @z
 
 @x libudev
-          <para>A library to access Udev device information.</para>
+          <para>A library to access Udev device information</para>
 @y
           <para>
           Udev デバイス情報にアクセスするためのライブラリ。

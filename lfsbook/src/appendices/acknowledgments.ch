@@ -332,10 +332,10 @@
 @z
 
 @x
-      <para><ulink url="mailto:baque@cict.fr">Philippe Baqu&eacute;</ulink>
+      <para><ulink url="mailto:baque@cict.fr">Philippe Baque</ulink>
       &lt;baque@cict.fr&gt; &ndash; lfs.cict.fr mirror</para>
 @y
-      <para><ulink url="mailto:baque@cict.fr">Philippe Baqu&eacute;</ulink>
+      <para><ulink url="mailto:baque@cict.fr">Philippe Baque</ulink>
       &lt;baque@cict.fr&gt; &ndash; lfs.cict.fr ミラー</para>
 @z
 

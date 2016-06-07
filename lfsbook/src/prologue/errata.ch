@@ -24,8 +24,10 @@
   and enhanced. Security warnings and bug fixes may become available after
   the LFS book has been released. To check whether the package versions or
   instructions in this release of LFS need any modifications to accommodate
-  security vulnerabilities or other bug fixes, please visit <ulink
-  url="&errata;"/> before proceeding with your build. You should note any
+  security vulnerabilities or other bug fixes, please visit
+  <ulink revision="sysv" url="&errata;"/>
+  <ulink revision="systemd" url="&erratad;"/>
+  before proceeding with your build. You should note any
   changes shown and apply them to the relevant section of the book as you
   progress with building the LFS system.</para>
 @y
@@ -33,7 +35,7 @@
   LFS システムを構築するためのソフトウェアは日々拡張され更新されています。
   LFS ブックがリリースされた後に、セキュリティフィックスやバグフィックスが公開されているかもしれません。
   本版にて説明するパッケージや作業手順に対して、セキュリティフィックスやバグフィックス等が必要かどうか、ビルド作業を行う前に <ulink
-  url="&errata;"/>を確認してください。
+  revision="sysv" url="&errata;"/><ulink revision="systemd" url="&erratad;"/>を確認してください。
   そして LFS ビルド作業を進めながら、対応する節においての変更を確認し適用してください。
   </para>
 @z

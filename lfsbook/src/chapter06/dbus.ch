@@ -68,13 +68,12 @@
     <para>This package does come with a test suite, but it requires several
     packages that are not included in LFS. Instructions for running the
     test suite can be found in the BLFS book at
-    <ulink url="&blfs-root;/view/&short-version;/general/dbus.html"/>.</para>
+    <ulink url="&blfs-book;general/dbus.html"/>.</para>
 @y
     <para>
     本パッケージにはテストスイートがあります。
     ただし実行するためには LFS には含まれていないパッケージをいくつか必要とします。
-    テストの実行方法については <ulink
-    url="&blfs-root;/view/&short-version;/general/dbus.html"/> に示されています。
+    テストの実行方法については <ulink url="&blfs-book;general/dbus.html"/> に示されています。
     </para>
 @z
 
@@ -99,12 +98,12 @@
 @z
 
 @x
-    <para>Create a symlink, so that D-Bus and Systemd can use the same
+    <para>Create a symlink, so that D-Bus and systemd can use the same
     <filename>machine-id</filename> file:</para>
 @y
     <para>
     シンボリックリンクを生成します。
-    D-Bus と Systemd が同一の <filename>machine-id</filename> ファイルを利用できるようにするためです。
+    D-Bus と systemd が同一の <filename>machine-id</filename> ファイルを利用できるようにするためです。
     </para>
 @z
 
@@ -126,18 +125,18 @@
 
 @x
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-        dbus-send, and dbus-uuidgen</seg>
+        dbus-run-session, dbus-send, and dbus-uuidgen</seg>
         <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
-        /var/lib/dbus</seg>
+        and /var/lib/dbus</seg>
 @y
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-        dbus-send, dbus-uuidgen</seg>
+        dbus-run-session, dbus-send, dbus-uuidgen</seg>
         <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
-        /var/lib/dbus</seg>
+        and /var/lib/dbus</seg>
 @z
 
 @x
@@ -147,7 +146,7 @@
 @z
 
 @x dbus-cleanup-sockets
-          <para>Used to clean up leftover sockets in a directory.</para>
+          <para>Used to clean up leftover sockets in a directory</para>
 @y
           <para>
           ディレクトリ内に取り残されたソケットをクリアします。
@@ -155,7 +154,7 @@
 @z
 
 @x dbus-daemon
-          <para>The D-Bus message bus daemon.</para>
+          <para>The D-Bus message bus daemon</para>
 @y
           <para>
           D-Bus メッセージバスデーモン。
@@ -164,7 +163,7 @@
 
 @x dbus-launch
           <para>Starts <command>dbus-daemon</command> from a shell
-          script.</para>
+          script</para>
 @y
           <para>
           シェルスクリプトから <command>dbus-daemon</command> を起動します。
@@ -172,15 +171,26 @@
 @z
 
 @x dbus-monitor
-          <para>Monitors messages passing through a D-Bus message bus.</para>
+          <para>Monitors messages passing through a D-Bus message bus</para>
 @y
           <para>
           D-Bus メッセージバスを通じたメッセージ送信を監視します。
           </para>
 @z
 
+@x dbus-run-session
+          <para>Starts a session bus instance of <command>dbus-daemon</command>
+          from a shell script and starts a specified program in that
+          session</para>
+@y
+          <para>
+          シェルスクリプトから <command>dbus-daemon</command> のセッションバスインスタンスを起動します。
+          そしてそのセッションにて指定されたプログラムを起動します。
+          </para>
+@z
+
 @x dbus-send
-          <para>Sends a message to a D-Bus message bus.</para>
+          <para>Sends a message to a D-Bus message bus</para>
 @y
           <para>
           D-Bus メッセージバスにメッセージを送ります。
@@ -188,9 +198,18 @@
 @z
 
 @x dbus-uuidgen
-          <para>Generates a universally unique ID.</para>
+          <para>Generates a universally unique ID</para>
 @y
           <para>
           ユニークIDを生成します。
+          </para>
+@z
+
+@x
+          <para>Contains API functions used to communicate with the D-Bus
+          message bus</para>
+@y
+          <para>
+          D-Bus メッセージバスとの通信を行う API 関数を提供します。
           </para>
 @z

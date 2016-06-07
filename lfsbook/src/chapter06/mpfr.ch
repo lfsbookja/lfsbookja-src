@@ -27,16 +27,6 @@
 @z
 
 @x
-    <para>First, apply the following patch to fix various bugs that have been
-    addressed upstream:</para>
-@y
-    <para>
-    まず以下のパッチを適用します。
-    これは種々のバグを修正するものとしてアップストリームにより提供されているものです。
-    </para>
-@z
-
-@x
     <para>Prepare MPFR for compilation:</para>
 @y
     <para>&PreparePackage1;MPFR&PreparePackage2;</para>

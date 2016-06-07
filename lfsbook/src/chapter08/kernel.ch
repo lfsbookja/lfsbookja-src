@@ -78,34 +78,44 @@
 @z
 
 @x
-    <note><para>A good starting place for setting up the kernel configuration
-    is to run <command>make defconfig</command>. This will set the base
-    configuration to a good state that takes your current system architecture
-    into account.</para>
+      <para>A good starting place for setting up the kernel configuration is to
+      run <command>make defconfig</command>. This will set the base
+      configuration to a good state that takes your current system architecture
+      into account.</para>
 @y
-    <note><para>
-    カーネル設定を行うにあたって、分かりやすいやり方として <command>make defconfig</command> を実行する方法があります。
-    これを実行することで基本的な設定がなされ、現在のシステム構成が考慮された、より良い設定が得られるかもしれません。
-    </para>
+      <para>
+      カーネル設定を行うにあたって、分かりやすいやり方として <command>make defconfig</command> を実行する方法があります。
+      これを実行することで基本的な設定がなされ、現在のシステム構成が考慮された、より良い設定が得られるかもしれません。
+      </para>
 @z
 
 @x
-    <para>Be sure to configure the following features as shown:</para>
+      <para>Be sure to enable or disable following features or the system might
+      not work correctly or boot at all:</para>
 @y
-    <para>
-    以下のカーネル項目を設定してください。
-    </para>
+      <para>
+      以下の機能項目についての有効無効を確認してください。
+      不適切である場合にはシステムが正常動作しなかったり起動できなかったりするかもしれません。
+      </para>
 @z
 
 @x
-    <para>There are several other options that may be desired depending
-    on the requirements for the system. For a list of options needed
-    for BLFS packages, see the <ulink 
-    url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS 
-    Index of Kernel Settings</ulink> 
+      <para>While "The IPv6 Protocol" is not strictly
+      required, it is highly recommended by the systemd developers.</para>
+@y
+      <para>
+      "The IPv6 Protocol" については厳密には不要としても良いものですが、システム開発者は強く推奨しているものです。</para>
+@z
+
+@x
+    <para revision="sysv">There are several other options that may be desired
+    depending on the requirements for the system. For a list of options needed
+    for BLFS packages, see the <ulink
+    url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS
+    Index of Kernel Settings</ulink>
     (&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index).</para>
 @y
-    <para>
+    <para revision="sysv">
     システムに特定の機能性が必要になれば、それだけ多くのオプションが必要となります。
     例えば BLFS パッケージにて必要となるオプションについては <ulink 
     url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS 
@@ -442,12 +452,14 @@
 
 @x
         <seg>config-&linux-version;,
-        vmlinuz-&linux-version;-lfs-&version;, and
-        System.map-&linux-version;</seg>
+        <phrase revision="sysv">vmlinuz-&linux-version;-lfs-&version;,</phrase>
+        <phrase revision="systemd">vmlinuz-&linux-version;-lfs-&versiond;,</phrase>
+        and System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @y
         <seg>config-&linux-version;,
-        vmlinuz-&linux-version;-lfs-&version;,
+        <phrase revision="sysv">vmlinuz-&linux-version;-lfs-&version;,</phrase>
+        <phrase revision="systemd">vmlinuz-&linux-version;-lfs-&versiond;,</phrase>
         System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @z

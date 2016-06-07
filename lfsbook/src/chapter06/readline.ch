@@ -124,11 +124,11 @@
 
 @x
         <seg>libhistory.so and libreadline.so</seg>
-        <seg>/usr/include/readline and
+        <seg>/usr/include/readline, /usr/share/readline, and
         /usr/share/doc/readline-&readline-version;</seg>
 @y
         <seg>libhistory.so, libreadline.so</seg>
-        <seg>/usr/include/readline,
+        <seg>/usr/include/readline, /usr/share/readline,
         /usr/share/doc/readline-&readline-version;</seg>
 @z
 

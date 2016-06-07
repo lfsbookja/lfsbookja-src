@@ -517,11 +517,17 @@
     <filename>/etc/fstab</filename>,
     <filename>/etc/passwd</filename>,
     <filename>/etc/group</filename>,
-    <filename>/etc/shadow</filename>,
-    <filename>/etc/ld.so.conf</filename>,
-    <filename>/etc/sysconfig/rc.site</filename>,
-    <filename>/etc/sysconfig/network</filename>, and
-    <filename>/etc/sysconfig/ifconfig.eth0</filename>.    
+    <phrase revision="systemd">
+      <filename>/etc/shadow</filename>, and
+      <filename>/etc/ld.so.conf</filename>.
+    </phrase>
+    <phrase revision="sysv">
+      <filename>/etc/shadow</filename>,
+      <filename>/etc/ld.so.conf</filename>,
+      <filename>/etc/sysconfig/rc.site</filename>,
+      <filename>/etc/sysconfig/network</filename>, and
+      <filename>/etc/sysconfig/ifconfig.eth0</filename>.
+    </phrase>
     </para>
 @y
     <para>
@@ -534,11 +540,17 @@
     <filename>/etc/fstab</filename>,
     <filename>/etc/passwd</filename>,
     <filename>/etc/group</filename>,
-    <filename>/etc/shadow</filename>,
-    <filename>/etc/ld.so.conf</filename>,
-    <filename>/etc/sysconfig/rc.site</filename>,
-    <filename>/etc/sysconfig/network</filename>,
-    <filename>/etc/sysconfig/ifconfig.eth0</filename>
+    <phrase revision="systemd">
+      <filename>/etc/shadow</filename>,
+      <filename>/etc/ld.so.conf</filename>
+    </phrase>
+    <phrase revision="sysv">
+      <filename>/etc/shadow</filename>,
+      <filename>/etc/ld.so.conf</filename>,
+      <filename>/etc/sysconfig/rc.site</filename>,
+      <filename>/etc/sysconfig/network</filename>,
+      <filename>/etc/sysconfig/ifconfig.eth0</filename>
+    </phrase>
     </para>
 @z
 
@@ -553,10 +565,10 @@
 @z
 
 @x
-    <note><para>There have been some reports of issues when copying between 
-    similar but not identical architectures.  For instance the instruction set
-    for Intel architectures is not identical with AMD processors and later
-    versions of some processors may have instructions not available in
+    <note><para>There have been some reports of issues when copying between
+    similar but not identical architectures. For instance, the instruction set
+    for an Intel system is not identical with an AMD processor and later
+    versions of some processors may have instructions that are unavailable in
     earlier versions.</para></note>
 @y
     <note><para>

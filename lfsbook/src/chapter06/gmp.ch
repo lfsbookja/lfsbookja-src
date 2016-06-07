@@ -92,7 +92,7 @@
 
 @x
     <caution><para>The code in gmp is highly optimized for the processor where
-    it is built. Occasionally the code that detects the processor misidentifies
+    it is built. Occasionally, the code that detects the processor misidentifies
     the system capabilities and there will be errors in the tests or other
     applications using the gmp libraries with the message "Illegal
     instruction".  In this case, gmp should be reconfigured with the option

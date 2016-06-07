@@ -181,13 +181,13 @@
 @z
 
 @x
-    <para>Some of the scripts in the LFS-Bootscripts package depend on
-    <command>head</command>, <command>sleep</command>, and
+    <para revision="sysv">Some of the scripts in the LFS-Bootscripts package
+    depend on <command>head</command>, <command>sleep</command>, and
     <command>nice</command>.  As <filename class="directory">/usr</filename>
     may not be available during the early stages of booting, those binaries
     need to be on the root partition:</para>
 @y
-    <para>
+    <para revision="sysv">
     LFS-ブートスクリプトパッケージにあるスクリプトでは、<command>head</command>、
     <command>sleep</command>、
     <command>nice</command> に依存しているものがあります。

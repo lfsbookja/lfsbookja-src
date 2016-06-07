@@ -541,15 +541,6 @@
           </para>
 @z
 
-@x libquota
-          <para>Provides an interface for creating and updating quota files
-          and ext4 superblock fields</para>
-@y
-          <para>
-          クォータ (quota) ファイルや ext4 スーパーブロックフィールドの生成更新を行うインターフェースを提供します。
-          </para>
-@z
-
 @x libss
           <para>Used by <command>debugfs</command></para>
 @y

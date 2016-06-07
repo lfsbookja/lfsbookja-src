@@ -83,9 +83,13 @@
 @z
 
 @x
-        <para>The version of the book being used (in this case &version;)</para>
+        <para>The version of the book being used (in this case 
+              <phrase revision="sysv">&version;</phrase>
+              <phrase revision="systemd">&versiond;</phrase>)</para>
 @y
-        <para>お使いの LFS ブックのバージョン。 (本書の場合 &version;)</para>
+        <para>お使いの LFS ブックのバージョン。 (本書の場合
+              <phrase revision="sysv">&version;</phrase>
+              <phrase revision="systemd">&versiond;</phrase>)</para>
 @z
 
 @x

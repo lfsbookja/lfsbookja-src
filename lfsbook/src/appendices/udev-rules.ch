@@ -14,9 +14,9 @@
 @z
 
 @x
-<appendix id="rules" xreflabel="Appendix E">
+<appendix id="rules" xreflabel="Appendix E" revision="sysv">
 @y
-<appendix id="rules" xreflabel="付録 E">
+<appendix id="rules" xreflabel="付録 E" revision="sysv">
 @z
 
 @x

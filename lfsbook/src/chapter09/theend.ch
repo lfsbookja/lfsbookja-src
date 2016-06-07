@@ -31,12 +31,22 @@
 @z
 
 @x
-  <para>It may be a good idea to create an <filename>/etc/lfs-release</filename>
-  file. By having this file, it is very easy for you (and for us if you need to
-  ask for help at some point) to find out which LFS version is installed on the
-  system. Create this file by running:</para>
+  <para revision="systemd">Create an <filename>/etc/os-release</filename> 
+        file required by systemd:</para>
 @y
-  <para>
+  <para revision="systemd">
+  systemd において必要となる <filename>/etc/os-release</filename> ファイルを生成します。
+  </para>
+@z
+
+@x
+  <para revision="sysv">It may be a good idea to create an
+  <filename>/etc/lfs-release</filename> file. By having this file, it is very
+  easy for you (and for us if you need to ask for help at some point) to find
+  out which LFS version is installed on the system. Create this file by
+  running:</para>
+@y
+  <para revision="sysv">
   <filename>/etc/lfs-release</filename> というファイルをここで作成することにします。
   このファイルを作っておけば、どのバージョンの LFS をインストールしたのか、すぐに判別できます。
   (もしあなたが質問を投げた時には、我々もすぐに判別できることになります。)

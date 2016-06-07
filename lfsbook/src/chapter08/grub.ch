@@ -60,13 +60,13 @@
 
 @x
     <note><para>Most newer systems now come with system firmware that is in
-    UEFI ((Unified Extensible Firmware Interface) mode by default.  To boot LFS
+    UEFI (Unified Extensible Firmware Interface) mode by default. To boot LFS
     on these systems using the instructions here, the UEFI Mode and Secure Boot
-    capabilities need to be turned off.  There are ways to boot with these
-    capabilities still enabled, but are not covered here.  For details, see
-    <ulink
-    url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt">the
-    lfs-uefi.txt hint</ulink> at
+    capabilities need to be turned off. There are ways to boot with these
+    capabilities still enabled, but then are not covered here. For details, 
+    see <ulink
+    url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt"> 
+    the lfs-uefi.txt hint</ulink> at
     http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt.</para></note>
 @y
     <note><para>
