@@ -625,47 +625,46 @@
       </para>
 @z
 
-% @x
-%       <title>Udev does not create a device</title>
-% @y
-%       <title>
-%       Udev がデバイスを生成しない問題
-%       </title>
-% @z
+@x
+      <title>Udev does not create a device</title>
+@y
+      <title>
+      Udev がデバイスを生成しない問題
+      </title>
+@z
 
-% @x
-%       <para>Further text assumes that the driver is built statically into the
-%       kernel or already loaded as a module, and that you have already checked
-%       that Udev doesn't create a misnamed device.</para>
-% @y
-%       <para>
-%       ここでは以下のことを前提としています。
-%       まずドライバーがカーネル内に静的に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
-%       そして Udev が異なった名前のデバイスを生成していないことです。
-%       </para>
-% @z
+@x
+      <para>Further text assumes that the driver is built statically into the
+      kernel or already loaded as a module, and that you have already checked
+      that Udev doesn't create a misnamed device.</para>
+@y
+      <para>
+      ここでは以下のことを前提としています。
+      まずドライバーがカーネル内に静的に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
+      そして Udev が異なった名前のデバイスを生成していないことです。
+      </para>
+@z
 
-% @x
-%       <para>Udev has no information needed to create a device node if a kernel
-%       driver does not export its data to <systemitem
-%       class="filesystem">sysfs</systemitem>.
-%       This is most common with third party drivers from outside the kernel
-%       tree. Create a static device node in
-%       <filename>/lib/udev/devices</filename> with the appropriate major/minor
-%       numbers (see the file <filename>devices.txt</filename> inside the kernel
-%       documentation or the documentation provided by the third party driver
-%       vendor). The static device node will be copied to
-%       <filename class="directory">/dev</filename> by the
-%       <command>udev</command> bootscript.</para>
-% @y
-%       <para>
-%       Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
-%       これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
-%       したがって <filename>/lib/udev/devices</filename> において、適切なメジャー、マイナー番号を用いた静的なデバイスノードを生成してください。
-%       (カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
-%       この静的デバイスノードは、<command>udev</command> ブートスクリプトによって <filename class="directory">/dev</filename> にコピーされます。
-%       </para>
-% @z
+@x
+      <para>Udev has no information needed to create a device node if a kernel
+      driver does not export its data to
+      <systemitem class="filesystem">sysfs</systemitem>. This is most common
+      with third party drivers from outside the kernel tree. Create a static
+      device node in <filename>/lib/udev/devices</filename> with the
+      appropriate major/minor numbers (see the file
+      <filename>devices.txt</filename> inside the kernel documentation or the
+      documentation provided by the third party driver vendor). The static
+      device node will be copied to <filename class="directory">/dev</filename>
+      by <command>udev</command>.</para>
+@y
+      <para>
+      Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
+      これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
+      したがって <filename>/lib/udev/devices</filename> において、適切なメジャー、マイナー番号を用いた静的なデバイスノードを生成してください。
+      (カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
+      この静的デバイスノードは、<command>udev</command> によって <filename class="directory">/dev</filename> にコピーされます。
+      </para>
+@z
 
 @x
       <title>Device naming order changes randomly after rebooting</title>

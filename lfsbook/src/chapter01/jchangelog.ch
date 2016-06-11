@@ -57,6 +57,9 @@
       <para>2016-06-11</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] - 訳出漏れ修正。</para>
+        </listitem>
+        <listitem>
           <para>[matsuand] -
           SVN-20160527,
           Changeset

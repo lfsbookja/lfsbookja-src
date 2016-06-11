@@ -35,6 +35,14 @@
 @z
 
 @x
+    <para>First, fix a script that adjusts testing output:</para>
+@y
+    <para>
+    テスト時の出力を調整しているスクリプトを修正します。
+    </para>
+@z
+
+@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y

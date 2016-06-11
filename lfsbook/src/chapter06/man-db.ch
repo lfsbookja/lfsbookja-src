@@ -92,6 +92,14 @@
 @z
 
 @x
+    <para>Remove a reference to a non-existent user:</para>
+@y
+    <para>
+    存在しないユーザーへの参照を削除します。
+    </para>
+@z
+
+@x
     <title>Non-English Manual Pages in LFS</title>
 @y
     <title>LFS における英語以外のマニュアルページ</title>

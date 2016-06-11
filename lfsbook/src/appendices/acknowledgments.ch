@@ -152,7 +152,16 @@
       translation project until 2008</para>
 @y
       <para><ulink url="mailto:johan@linuxfromscratch.org">Johan
-      Lenglet</ulink> &lt;johan@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2008年より</para>
+      Lenglet</ulink> &lt;johan@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2008年まで</para>
+@z
+
+@x
+      <para><ulink url="mailto:jmengual@linuxfromscratch.org">Jean-Philippe 
+      Mengual </ulink> &lt;jmengual@linuxfromscratch.org&gt; &ndash; French LFS
+      translation project 2008-present</para>
+@y
+      <para><ulink url="mailto:jmengual@linuxfromscratch.org">Jean-Philippe 
+      Mengual </ulink> &lt;jmengual@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2008年以降、現在</para>
 @z
 
 @x
