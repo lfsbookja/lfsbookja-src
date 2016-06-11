@@ -89,6 +89,12 @@
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @z
 
+@x Make Upstream Patch
+        <para>Download: <ulink url="&patches-root;&make-upstream-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&make-upstream-patch;"/></para>
+@z
+
 @x Readline Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
 @y

@@ -26,6 +26,14 @@
 @z
 
 @x
+    <para>Fix some problems identified upstream:</para>
+@y
+    <para>
+    アップストリームが認識している問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Make for compilation:</para>
 @y
     <para>&PreparePackage1;Make&PreparePackage2;</para>

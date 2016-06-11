@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2016-06-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.43.1. Fixes
+          <ulink url="&lfs-ticket-root;3942">#3942</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.6.2. Fixes
+          <ulink url="&lfs-ticket-root;3940">#3940</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.19.8. Fixes
+          <ulink url="&lfs-ticket-root;3943">#3943</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2. Fixes
+          <ulink url="&lfs-ticket-root;3939">#3939</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add make-4.2-upstream_fixes-1.patch. Fixes
+          <ulink url="&lfs-ticket-root;3941">#3941</ulink>.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-06-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.43.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3942">#3942</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.6.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3940">#3940</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.19.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;3943">#3943</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3939">#3939</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - make-4.2-upstream_fixes-1.patch を追加。
+          <ulink url="&lfs-ticket-root;3941">#3941</ulink> を Fix に。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
       <para>2016-05-27</para>
       <itemizedlist>
         <listitem revision="systemd">
