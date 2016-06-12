@@ -256,6 +256,15 @@
 @z
 
 @x
+    <para revision="systemd">Install the systemd support files for 
+    <command>nscd</command>:</para>
+@y
+    <para revision="systemd">
+    <command>nscd</command> コマンドに対しての systemd サポートファイルをインストールします。
+    </para>
+@z
+
+@x
     <para>Next, install the locales that can make the system respond in a
     different language.  None of the locales are required, but if some of them
     are missing, the test suites of future packages would skip important

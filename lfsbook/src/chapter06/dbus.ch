@@ -136,7 +136,7 @@
         <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
-        and /var/lib/dbus</seg>
+        /var/lib/dbus</seg>
 @z
 
 @x

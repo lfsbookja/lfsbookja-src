@@ -144,10 +144,10 @@
           the first time. They are not useful for LFS because
           everything is done manually.</para>
 @y
-          <para>This switch prevents installation of systemd
-          services responsible for setting up the system for
-          the first time. They are not useful for LFS because
-          everything is done manually.</para>
+          <para>
+          このスイッチは、システム起動初期にシステム設定を行う systemd サービスをインストールしないようにします。
+          LFS ではすべてを手作業で設定していくためです。
+          </para>
 @z
 
 @x --disable-ldconfig
@@ -157,11 +157,11 @@
           described feature is desired, even though it's not
           useful for source distributions such as LFS.</para>
 @y
-          <para>This switch prevents installation of a systemd
-          unit that runs <command>ldconfig</command> at
-          boot, making the boot time longer. Remove it if the
-          described feature is desired, even though it's not
-          useful for source distributions such as LFS.</para>
+          <para>
+          このスイッチは、ブート時に <command>ldconfig</command> を実行する systemd ユニットをインストールしないようにします。
+          これがあるとブート処理に時間もかかります。
+          LFS のようにソースから作り出すディストリビューションにとっては無用なものですが、もし必要であれば本スイッチを除いてください。
+          </para>
 @z
 
 @x --disable-sysusers
@@ -171,17 +171,19 @@
           <filename>/etc/passwd</filename> files. Both files
           were created early in this chapter.</para>
 @y
-          <para>This switch prevents installation of systemd
-          services responsible for setting up the
-          <filename>/etc/group</filename> and
-          <filename>/etc/passwd</filename> files. Both files
-          were created early in this chapter.</para>
+          <para>
+          このスイッチは、システム起動初期に <filename>/etc/group</filename> ファイルと
+          <filename>/etc/passwd</filename> ファイルを設定する systemd サービスをインストールしないようにします。
+          この二つのファイルは本章にて生成済です。
+          </para>
 @z
 
 @x --with-default-dnssec=no
           <para>This switch turns off the experimental DNSSEC suport.</para>
 @y
-          <para>This switch turns off the experimental DNSSEC suport.</para>
+          <para>
+          このスイッチは DNSSEC に関する実験的なサポートを無効にします。
+          </para>
 @z
 
 @x

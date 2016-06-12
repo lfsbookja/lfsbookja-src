@@ -89,6 +89,18 @@
 @z
 
 @x
+    <para revision="systemd"> Some packages in BLFS and beyond expect the
+    <command>find</command> program in <filename
+    class="directory">/bin</filename>, so make sure it's placed there:</para>
+@y
+    <para revision="systemd">
+    BLFS 以降のパッケージの中には <command>find</command> プログラムが <filename
+    class="directory">/bin</filename> ディレクトリに存在していることが必要なものもあります。
+    このためそのプログラムを移動させます。
+    </para>
+@z
+
+@x
     <title>Contents of Findutils</title>
 @y
     <title>&ContentsOf1;Findutils&ContentsOf2;</title>
