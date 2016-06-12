@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2016-06-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to make-4.2.1. Fixes
+          <ulink url="&lfs-ticket-root;3944">#3944</ulink>.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-06-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - make-4.2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3944">#3944</ulink> を Fix に。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
       <para>2016-06-10</para>
       <itemizedlist>
         <listitem>
@@ -68,7 +86,7 @@
           <para>[bdubbs] - Update to gettext-0.19.8. Fixes
           <ulink url="&lfs-ticket-root;3943">#3943</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - Update to eudev-3.2. Fixes
           <ulink url="&lfs-ticket-root;3939">#3939</ulink>.</para>
         </listitem>
@@ -92,7 +110,7 @@
           <para>[bdubbs] - gettext-0.19.8 へのアップデート。
           <ulink url="&lfs-ticket-root;3943">#3943</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - eudev-3.2 へのアップデート。
           <ulink url="&lfs-ticket-root;3939">#3939</ulink> を Fix に。</para>
         </listitem>
