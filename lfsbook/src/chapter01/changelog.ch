@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2016-06-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-6.1.1. Fixes
+          <ulink url="&lfs-ticket-root;3949">#3949</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.2.0. Fixes
+          <ulink url="&lfs-ticket-root;3948">#3948</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2016e. Fixes
+          <ulink url="&lfs-ticket-root;3947">#3947</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.28. Fixes
+          <ulink url="&lfs-ticket-root;3946">#3946</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.19.8.1. Fixes
+          <ulink url="&lfs-ticket-root;3945">#3945</ulink>.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-06-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gmp-6.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3949">#3949</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3948">#3948</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2016e へのアップデート。
+          <ulink url="&lfs-ticket-root;3947">#3947</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.28 へのアップデート。
+          <ulink url="&lfs-ticket-root;3946">#3946</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.19.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3945">#3945</ulink> を Fix に。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
       <para>2016-06-11</para>
       <itemizedlist>
         <listitem>
