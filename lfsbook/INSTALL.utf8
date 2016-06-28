@@ -46,10 +46,8 @@
       % cd /usr/local/src/lfsbookja-YYYYMMDD
       % ./configure
 
-    * configure により builddir ディレクトリが生成されるので、その
-      ディレクトリに入って make を実行します。
+    * make を実行します。
 
-      % cd builddir
       % make
 
     * 現時点において make install は整備できていません。
