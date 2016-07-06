@@ -78,22 +78,21 @@
     <filename>systemd-network(5)</filename> manual pages.</para>
 @y
     <para>
-    
-    Configuration files for <command>systemd-networkd</command> (and
-    <command>systemd-resolved</command>) can be placed in
-    <filename class="directory">/usr/lib/systemd/network</filename>
-    or <filename class="directory">/etc/systemd/network</filename>. Files in
-    <filename class="directory">/etc/systemd/network</filename> have a
-    higher priority than the ones in
-    <filename class="directory">/usr/lib/systemd/network</filename>.
-    There are three types of configuration files:
+    <command>systemd-networkd</command> (および <command>systemd-resolved</command>)
+    に対する設定ファイルは <filename
+    class="directory">/usr/lib/systemd/network</filename> ディレクトリまたは <filename
+    class="directory">/etc/systemd/network</filename> ディレクトリに置きます。
+    <filename class="directory">/usr/lib/systemd/network</filename> ディレクトリにある設定ファイルよりも <filename
+    class="directory">/etc/systemd/network</filename> ディレクトリにある設定ファイルの方が優先されます。
+    設定ファイルには
     <filename class="extension">.link</filename>,
-    <filename class="extension">.netdev</filename> and
-    <filename class="extension">.network</filename> files. For detailed
-    descriptions and example contents of these configuration files, consult 
-    the <filename>systemd-link(5)</filename>,
-    <filename>systemd-netdev(5)</filename> and
-    <filename>systemd-network(5)</filename> manual pages.
+    <filename class="extension">.netdev</filename>,
+    <filename class="extension">.network</filename>
+    の三種類があります。
+    これらの説明や設定例については man ページ <filename>systemd-link(5)</filename>,
+    <filename>systemd-netdev(5)</filename>,
+    <filename>systemd-network(5)</filename>
+    を参照してください。
     </para>
 @z
 
@@ -105,11 +104,8 @@
     </para></note>
 @y
     <note><para>
-    
-    Udev may assign network card interface names based
-    on system physical characteristics such as enp2s1. If you are
-    not sure what your interface name is, you can always run
-    <command>ip link</command> after you have booted your system.
+    Udev は、システムの物理的な特性に従った enp2s1 などのような名称をネットワークカードインターフェースに割り当てます。
+    インタフェース名がよく分からない場合は、システム起動直後に <command>ip link</command> を実行して確認してください。
     </para></note>
 @z
 
@@ -125,10 +121,8 @@
       systemd-resolved):</para>
 @y
       <para>
-      
-      The command below creates a basic configuration file for a
-      Static IP setup (using both systemd-networkd and
-      systemd-resolved):
+      以下のコマンドは固定IPアドレスの設定を行う設定ファイルを生成するものです。
+      (systemd-networkd と systemd-resolved を利用します。)
       </para>
 @z
 
@@ -138,10 +132,8 @@
       static <filename>/etc/reslov.conf</filename> file.</para>
 @y
       <para>
-      
-      Multiple DNS entries can be added if you have more than one DNS
-      server. Do not include DNS or Domains entries if you intend to use a
-      static <filename>/etc/reslov.conf</filename> file.
+      複数のDNSサーバーを有している場合は、DNS設定行を複数指定することができます。
+      固定的に <filename>/etc/reslov.conf</filename> ファイルを利用する場合は DNS および Domains の設定行は記載しません。
       </para>
 @z
 
@@ -156,9 +148,7 @@
       DHCP setup:</para>
 @y
       <para>
-      
-      The command below creates a basic configuration file for an IPv4
-      DHCP setup:
+      以下のコマンドは IPv4 DHCP 設定を行う設定ファイルを生成します。
       </para>
 @z
 
@@ -177,20 +167,16 @@
     <filename>/etc/resolv.conf</filename>.</para>
 @y
     <para>
-    
-    If the system is going to be connected to the Internet, it will
-    need some means of Domain Name Service (DNS) name resolution to
-    resolve Internet domain names to IP addresses, and vice versa. This is
-    best achieved by placing the IP address of the DNS server, available
-    from the ISP or network administrator, into
-    <filename>/etc/resolv.conf</filename>.
+    インターネットへの接続を行う場合には、ドメイン名サービス (domain name service; DNS) による名前解決を必要とします。
+    これによりインターネットドメイン名を IP アドレスに、あるいはその逆の変換を行います。
+    これを行うには ISP やネットワーク管理者が指定する DNS サーバーの割り振り IP アドレスを <filename>/etc/resolv.conf</filename> ファイルに設定します。
     </para>
 @z
 
 @x
       <title>systemd-resolved Configuration</title>
 @y
-      <title>systemd-resolved Configuration</title>
+      <title>systemd 解決による設定</title>
 @z
 
 @x
@@ -340,10 +326,9 @@
 @y
      <para>
      完全修飾ドメイン名 (Fully Qualified Domain Name; FQDN)、エイリアスの各設定は <filename>/etc/hosts</filename> ファイルにて行います。
-     
-If using static
-     addresses, you'll also need to decide on an IP address. The syntax
-     for a hosts file entry is:</para>
+     固定アドレスを用いる場合は IPアドレスを定める必要があります。
+     ホストファイルの文法は以下のとおりです。
+     </para>
 @z
 
 @x
@@ -352,34 +337,41 @@ If using static
      users do not have this), make sure that the IP address is in the private
      network IP address range. Valid ranges are:</para>
 @y
-     <para>Unless the computer is to be visible to the Internet (i.e., there is
-     a registered domain and a valid block of assigned IP addresses&mdash;most
-     users do not have this), make sure that the IP address is in the private
-     network IP address range. Valid ranges are:</para>
+     <para>
+     インターネットに公開されていないコンピューターである場合
+     (つまり登録ドメインであったり、あらかじめ IP アドレスが割り当てられていたりする場合。 普通のユーザーはこれを持ちません。)
+     IP アドレスはプライベートネットワーク IP アドレスの範囲で指定します。
+     以下がそのアドレス範囲です。
+     </para>
 @z
 
 @x
      <para>x can be any number in the range 16-31. y can be any number in the
      range 0-255.</para>
 @y
-     <para>x can be any number in the range 16-31. y can be any number in the
-     range 0-255.</para>
+     <para>
+     x は 16 から 31、y は 0 から 255 の範囲の数値です。
+     </para>
 @z
 
 @x
      <para>A valid private IP address could be 192.168.1.1. A valid FQDN for
      this IP could be lfs.example.org.</para>
 @y
-     <para>A valid private IP address could be 192.168.1.1. A valid FQDN for
-     this IP could be lfs.example.org.</para>
+     <para>
+     IP アドレスの例は 192.168.1.1 となります。
+     また FQDN の例としては lfs.example.org となります。
+     </para>
 @z
 
 @x
      <para>Even if not using a network card, a valid FQDN is still required.
      This is necessary for certain programs to operate correctly.</para>
 @y
-     <para>Even if not using a network card, a valid FQDN is still required.
-     This is necessary for certain programs to operate correctly.</para>
+     <para>
+     ネットワークカードを用いない場合でも FQDN の記述は行ってください。
+     特定のプログラムが動作する際に必要となることがあるからです。
+     </para>
 @z
 
 @x

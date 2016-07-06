@@ -57,14 +57,6 @@
 @z
 
 @x
-    <para>Fix some problems identified upstream:</para>
-@y
-    <para>
-    アップストリームが把握している不具合を修正します。
-    </para>
-@z
-
-@x
     <para>The Binutils documentation recommends building Binutils 
     in a dedicated build directory:</para>
 @y

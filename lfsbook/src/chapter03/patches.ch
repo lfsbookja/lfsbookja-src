@@ -53,12 +53,6 @@
         <para>&Download;: <ulink url="&patches-root;&bc-memory-leak-patch;"/></para>
 @z
 
-@x Binutils Upstream Patch
-        <para>Download: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
-@z
-
 @x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
 @y

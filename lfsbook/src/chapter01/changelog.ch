@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2016-07-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.26.1. Fixes
+          <ulink url="&lfs-ticket-root;3951">#3951</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.6.3. Fixes
+          <ulink url="&lfs-ticket-root;3950">#3950</ulink>.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-07-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.26.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3951">#3951</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3950">#3950</ulink> を Fix に。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
       <para>2016-06-22</para>
       <itemizedlist>
         <listitem>
