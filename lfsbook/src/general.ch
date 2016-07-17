@@ -24,8 +24,8 @@
 <!ENTITY releasedate     "July 2, 2016">
 @y
 <!ENTITY releasedate     "2016年07月02日">
-<!ENTITY jversion        "20160706">
-<!ENTITY jversiond       "20160706-systemd">
+<!ENTITY jversion        "20160717">
+<!ENTITY jversiond       "20160717-systemd">
 @z
 
 @x

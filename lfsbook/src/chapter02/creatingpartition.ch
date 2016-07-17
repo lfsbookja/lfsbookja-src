@@ -204,14 +204,55 @@
     reacts to commands.  The first reaction to swapping should be to check for
     an unreasonable command such as trying to edit a five gigabyte file.  If
     swapping becomes a normal occurrence, the best solution is to purchase more
-    RAM for your system.</para> </sect3>
+    RAM for your system.</para> 
+    </sect3>
 @y
     <para>
     スワップは好ましいことではありません。
     一般にスワップが発生しているかどうかは、ディスクアクセスの様子やコマンド実行時にシステムがどのように反応するかを見てみれば分かります。
     例えば 5GB くらいのファイルを編集するといった極端なコマンド実行を行ってみて、スワップが起きるかどうかを確認することが重要です。
     スワップがごく普通に発生するようであれば、RAMを増設するのが適切です。
-    </para> </sect3>
+    </para>
+    </sect3>
+@z
+
+@x
+    <title>The Grub Bios Partition</title>
+@y
+    <title>Grub バイオスパーティション</title>
+@z
+
+@x
+    <para>If the <emphasis>boot disk</emphasis> has been partitioned with a
+    GUID Partition Table (GPT), then a small, typically 1 MB, partition must be
+    created if it does not already exist.  This partition is not formatted, but
+    must be available for GRUB to to use during installation of the boot
+    loader. This partition will normally be labeled 'BIOS Boot' if using
+    <command>fdisk</command> or have a code of <emphasis>EF02</emphasis> if
+    using <command>gdisk</command>.</para>
+@y
+    <para>GUID パーティションテーブル (GUID Partition Table; GPT) において<emphasis>ブートディスク</emphasis> をパーティショニングした場合、1MB 程度の小さなパーティションを生成しておく必要があります。
+    このパーティションはフォーマットされておらず、ブートローダーのインストール中に GRUB によって利用されます。
+    通常このパーティションは、 <command>fdisk</command> を用いた場合には 'BIOS Boot' と名付けられます。
+    また <command>gdisk</command> を用いた場合は<emphasis>EF02</emphasis> というコード名が与えられます。
+    </para>
+@z
+
+@x
+    <note><para>The Grub Bios partition must be on the drive that the BIOS 
+    uses to boot the system.  This is not necessarily the same drive where the 
+    LFS root partition is located. Disks on a system may use different
+    partition table types.  The requirment for this partition depends
+    only on the partition table type of the boot disk.</para></note>
+    </sect3>
+@y
+    <note><para>
+    Grub バイオスパーティションは BIOS がシステムをブートするために用いているドライブ上にある必要があります。
+    これは必ずしも LFS ルートパーティションがあるドライブと同一であるわけではありません。
+    システム上のドライブはすべてがパーティションテーブルタイプが同一であるとは限りません。
+    Grub バイオスパーティションに対して求められることは、ブートディスクのパーティションタイプに対して必要になることです。
+    </para></note>
+    </sect3>
 @z
 
 @x

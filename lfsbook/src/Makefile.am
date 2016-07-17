@@ -78,7 +78,7 @@ book: validate profile-html
 	  --stringparam rootid "$(ROOT_ID)"          \
 	  --stringparam base.dir $(BASEDIR)/         \
 	  stylesheets/lfs-chunked.xsl                \
-	  $(RENDERTMP)/lfs-html2.xml
+	  $(RENDERTMP)/lfs-html.xml
 
 	@echo "Copying CSS code and images..."
 	$(MKDIR_P) $(BASEDIR)/stylesheets

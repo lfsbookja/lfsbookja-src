@@ -54,6 +54,31 @@
 @z
 
 @x
+      <para>2016-07-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add discussion of Grub Bios Partition
+          to Section 2.4 - Creating a New Partition.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2016f. Fixes
+          <ulink url="&lfs-ticket-root;3952">#3952</ulink>.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-07-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Grub バイオスパーティションについての議論を 2.4 節「新しいパーティションの生成」に追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2016f へのアップデート。
+          <ulink url="&lfs-ticket-root;3952">#3952</ulink> を Fix に。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
       <para>2016-07-02</para>
       <itemizedlist>
         <listitem>
