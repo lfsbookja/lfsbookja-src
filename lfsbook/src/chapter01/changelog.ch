@@ -54,6 +54,65 @@
 @z
 
 @x
+      <para>2016-07-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.07. Fixes
+          <ulink url="&lfs-ticket-root;3956">#3956</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-23. Fixes
+          <ulink url="&lfs-ticket-root;3955">#3955</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update systemd kernel configuration page to disable
+          CONFIG_SYSFS_DEPRECATED{,_V2}.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-07-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.07 へのアップデート。
+          <ulink url="&lfs-ticket-root;3956">#3956</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-23 へのアップデート。
+          <ulink url="&lfs-ticket-root;3955">#3955</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd のカーネル設定にて CONFIG_SYSFS_DEPRECATED{,_V2} を無効に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-07-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to procps-ng-3.3.12. Fixes
+          <ulink url="&lfs-ticket-root;3953">#3953</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.6.4. Fixes
+          <ulink url="&lfs-ticket-root;3954">#3954</ulink>.</para>
+        </listitem>
+     </itemizedlist>
+@y
+      <para>2016-07-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-ng-3.3.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;3953">#3953</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.6.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3954">#3954</ulink> を Fix に。</para>
+        </listitem>
+     </itemizedlist>
+@z
+
+@x
       <para>2016-07-10</para>
       <itemizedlist>
         <listitem>

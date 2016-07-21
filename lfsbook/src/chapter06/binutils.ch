@@ -125,14 +125,6 @@
 @z
 
 @x
-    <para>The test 'Link with zlib-gabi compressed debug output' is known to fail.</para>
-@y
-    <para>
-    "Link with zlib-gabi compressed debug output" というテストは失敗します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
