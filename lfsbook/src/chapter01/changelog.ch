@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2016-07-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.7. Fixes
+          <ulink url="&lfs-ticket-root;3957">#3957</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flex-2.6.1. Fixes
+          <ulink url="&lfs-ticket-root;3959">#3959</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tcl-core8.6.6. Fixes
+          <ulink url="&lfs-ticket-root;3969">#3960</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-07-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;3957">#3957</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flex-2.6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3959">#3959</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl-core8.6.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3969">#3960</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-07-20</para>
       <itemizedlist>
         <listitem>

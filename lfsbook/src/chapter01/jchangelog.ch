@@ -54,6 +54,21 @@
 -->
 
     <listitem>
+      <para>2016-07-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20160728,
+          Changeset
+          <ulink url="&lfs-rev-root;11098">11098</ulink>,
+          <ulink url="&lfs-rev-root;11099">11099</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2016-07-21</para>
       <itemizedlist>
         <listitem>

@@ -767,23 +767,34 @@ profile-html: validate $(ALLXML)
 
 wget-list: $(BASEDIR)/wget-list
 $(BASEDIR)/wget-list: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent
-	@echo "Generating wget list..."
+	@echo "Generating consolidated wget list at $(BASEDIR)/wget-list ..."
 	$(MKDIR_P) $(BASEDIR)
-	$(XSLTPROC) --xinclude --nonet --output $(BASEDIR)/wget-list \
-	  $(BOOKdir)/stylesheets/wget-list.xsl ./chapter03/chapter03.xml
-	cp -p $(BASEDIR)/wget-list{,.txt}
+	$(XSLTPROC) --nonet --xinclude                     \
+                --stringparam profile.revision $(REV)      \
+                --output $(RENDERTMP)/sysd-wget.xml        \
+                $(BOOKdir)/stylesheets/lfs-xsl/profile.xsl \
+                ./chapter03/chapter03.xml
+	$(XSLTPROC) --xinclude --nonet                     \
+                --output $(BASEDIR)/wget-list              \
+	             $(BOOKdir)/stylesheets/wget-list.xsl  \
+                ./chapter03/chapter03.xml
 
 md5sums: $(BASEDIR)/md5sums
 $(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent $(srcdir)/general.ch
-	@echo "Generating md5sum file..."
+	@echo "Generating consolidated md5sum file at $(BASEDIR)/md5sums ..."
 	$(MKDIR_P) $(BASEDIR)
-	$(XSLTPROC) --xinclude --nonet --output $(BASEDIR)/md5sums \
-	  stylesheets/md5sum.xsl chapter03/chapter03.xml
+	$(XSLTPROC) --nonet --xinclude                \
+                --stringparam profile.revision $(REV) \
+                --output $(RENDERTMP)/sysv-md5sum.xml \
+                stylesheets/lfs-xsl/profile.xsl       \
+                chapter03/chapter03.xml
+	$(XSLTPROC) --xinclude --nonet      \
+                --output $(BASEDIR)/md5sums \
+                stylesheets/md5sum.xsl      \
+                $(RENDERTMP)/sysv-md5sum.xml
 	sed -i -e \
            "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.bz2 | cut -d' ' -f1)/" \
            $(BASEDIR)/md5sums
-#	sed -i -e "s/UDEV-MD5SUM/$(shell md5sum udev-lfs*.tar.bz2 | cut -d' ' -f1)/" \
-#     $(BASEDIR)/md5sums
 
 dump-commands: validate
 	@echo "Dumping book commands..."
