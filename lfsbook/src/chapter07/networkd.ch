@@ -187,12 +187,11 @@
       <command>systemd-resolved</command> service should not be
       used.</para></note>
 @y
-      <note><para>If using another means to configure your network
-      interfaces (ex: ppp, network-manager, etc.), or if using any type of
-      local resolver (ex: bind, dnsmasq, etc.), or any other software that
-      generates an <filename>/etc/resolv.conf</filename> (ex: resolvconf), the
-      <command>systemd-resolved</command> service should not be
-      used.</para></note>
+      <note><para>
+      ネットワークインターフェース設定を別の方法 (例えば ppp や network-manager など) で行う場合、
+      またはローカルリゾルバー (local resolver; 例えば bind や dnsmasq など) や <filename>/etc/resolv.conf</filename> を生成するソフトウェア (例えば resolvconf) などを用いる場合、
+      <command>systemd-resolved</command> サービスは用いてはなりません。
+      </para></note>
 @z
 
 @x
@@ -202,11 +201,10 @@
       symlink for <filename>/etc/resolv.conf</filename> is created by systemd
       when needed, so no further configuration is necessary.</para>
 @y
-      <para>When using <command>systemd-resolved</command> for DNS
-      configuration, it is responsible for creating the
-      <filename>/etc/resolv.conf</filename> file. Since version 226, the
-      symlink for <filename>/etc/resolv.conf</filename> is created by systemd
-      when needed, so no further configuration is necessary.</para>
+      <para>
+      DNS 設定に <command>systemd-resolved</command> を用いる場合は <filename>/etc/resolv.conf</filename> ファイルを生成することが必要です。
+      systemd のバージョン 226 以降は、必要に応じて <filename>/etc/resolv.conf</filename> ファイルへのシンボリックリンクを生成されるので、それ以上の設定は不要です。
+      </para>
 @z
 
 @x
@@ -219,8 +217,9 @@
       <para>If a static <filename>/etc/resolv.conf</filename> is desired,
       create it by running the following command:</para>
 @y
-      <para>If a static <filename>/etc/resolv.conf</filename> is desired,
-      create it by running the following command:</para>
+      <para>
+      スタティックな <filename>/etc/resolv.conf</filename> ファイルを必要とする場合は、以下のコマンドにより生成します。
+      </para>
 @z
 
 @x
@@ -228,9 +227,10 @@
       or replaced with a <varname>search</varname> statement.  See the man page
       for resolv.conf for more details.</para>
 @y
-      <para>The <varname>domain</varname> statement can be omitted
-      or replaced with a <varname>search</varname> statement.  See the man page
-      for resolv.conf for more details.</para>
+      <para>
+      <varname>domain</varname> ステートメントは省略するか、<varname>search</varname> ステートメントで代用することが可能です。
+      詳しくは resolv.conf の man ページを参照してください。
+      </para>
 @z
 
 @x
@@ -242,13 +242,12 @@
       second <emphasis>nameserver</emphasis> line from the file. The IP address
       may also be a router on the local network.</para>
 @y
-      <para>Replace
-      <replaceable>&lt;IP address of the nameserver&gt;</replaceable>
-      with the IP address of the DNS most appropriate for the setup. There will
-      often be more than one entry (requirements demand secondary servers for
-      fallback capability). If you only need or want one DNS server, remove the
-      second <emphasis>nameserver</emphasis> line from the file. The IP address
-      may also be a router on the local network.</para>
+      <para>
+      <replaceable>&lt;IP address of the nameserver&gt;</replaceable> (ネームサーバーの IP アドレス) の部分には、DNS が割り振る適切な IP アドレスを記述します。
+      IP アドレスの設定は複数行う場合もあります。(代替構成を必要とするなら二次サーバーを設けることでしょう。)
+      一つのサーバーのみで十分な場合は、二つめの <emphasis>nameserver</emphasis> の行は削除します。
+      ローカルネットワークにおいてはルーターの IP アドレスを設定することになるでしょう。
+      </para>
 @z
 
 @x
@@ -257,10 +256,9 @@
       for IPv4, and <parameter>2001:4860:4860::8888</parameter> and
       <parameter>2001:4860:4860::8844</parameter> for IPv6.</para></note>
 @y
-      <note><para>The Google Public IPv4 DNS addresses are
-      <parameter>8.8.8.8</parameter> and <parameter>8.8.4.4</parameter>
-      for IPv4, and <parameter>2001:4860:4860::8888</parameter> and
-      <parameter>2001:4860:4860::8844</parameter> for IPv6.</para></note>
+      <note><para>Google Public IPv4 DNS アドレスは <parameter>8.8.8.8</parameter> と <parameter>8.8.4.4</parameter> です。
+      また IPv6 では <parameter>2001:4860:4860::8888</parameter> と <parameter>2001:4860:4860::8844</parameter> です。
+      </para></note>
 @z
 
 @x
@@ -379,25 +377,27 @@
      is not going to be configured, create the <filename>/etc/hosts</filename>
      file by running the following command:</para>
 @y
-     <para>If using DHCP, DHCPv6, IPv6 Autoconfiguration, or if a network card
-     is not going to be configured, create the <filename>/etc/hosts</filename>
-     file by running the following command:</para>
+     <para>
+     DHCP、DHCPv6 IPv6 Autoconfiguration を利用する場合あるいはネットワークカードを設定しない場合は、以下のコマンドにより <filename>/etc/hosts</filename> を生成します。
+     </para>
 @z
 
 @x
      <para>The ::1 entry is the IPv6 counterpart of 127.0.0.1 and represents
 the IPv6 loopback interface.</para>
 @y
-     <para>The ::1 entry is the IPv6 counterpart of 127.0.0.1 and represents
-the IPv6 loopback interface.</para>
+     <para>
+     ::1 という項目は IPv6 における 127.0.0.1 に相当し、IPv6 のループバックインターフェースを表します。
+     </para>
 @z
 
 @x
      <para>If ussing a staic address, create the <filename>/etc/hosts</filename>
      file by running this command instead:</para>
 @y
-     <para>If ussing a staic address, create the <filename>/etc/hosts</filename>
-     file by running this command instead:</para>
+     <para>
+     スタティックアドレスを利用する場合は、以下のコマンドにより <filename>/etc/hosts</filename> を生成します。
+     </para>
 @z
 
 @x
@@ -408,10 +408,11 @@ the IPv6 loopback interface.</para>
      network/system administrator and the machine will be connected to an
      existing network). The optional alias name(s) can be omitted.</para>
 @y
-     <para>The <replaceable>&lt;192.168.0.2&gt;</replaceable>,
-     <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable>, and
-     <replaceable>&lt;HOSTNAME&gt;</replaceable> values need to be
-     changed for specific uses or requirements (if assigned an IP address by a
-     network/system administrator and the machine will be connected to an
-     existing network). The optional alias name(s) can be omitted.</para>
+     <para>
+     <replaceable>&lt;192.168.0.2&gt;</replaceable>,
+     <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable>,
+     <replaceable>&lt;HOSTNAME&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
+     (ネットワーク管理者から IP アドレスを指定されている場合や、既存のネットワーク環境に接続する場合など。). 
+     エイリアスの記述は省略しても構いません。
+     </para>
 @z

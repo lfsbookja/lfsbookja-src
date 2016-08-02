@@ -196,6 +196,18 @@
 @z
 
 @x
+    <para revision="systemd">Some packages in BLFS and beyond expect the
+    following programs in <filename class="directory">/bin</filename>, so make
+    sure they are placed there:</para>
+@y
+    <para revision="systemd">
+    BLFSブック以降で利用するパッケージの中には、以下に示すプログラムが <filename
+    class="directory">/bin</filename> に存在することを前提としているものがあります。
+    そこでそれらのプログラムを移動させます。
+    </para>
+@z
+
+@x
     <title>Contents of Coreutils</title>
 @y
     <title>&ContentsOf1;Coreutils&ContentsOf2;</title>

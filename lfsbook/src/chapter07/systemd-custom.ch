@@ -187,11 +187,10 @@
     are some examples of frequently used commands:</para>
 @y
     <para>
-    Rather than plain shell scripts used in SysVinit or BSD style init
-    systems, systemd uses a unified format for different types of startup
-    files (or units). The command <command>systemctl</command> is used to
-    enable, disable, controll state, and obtain status of unit files. Here 
-    are some examples of frequently used commands:
+    SysVinit や BSD スタイルの起動システムにおいては単純なシェルスクリプトが用いられていますが、
+    systemd ではさまざまな形式の起動ファイル (あるいはユニット) を統一化するフォーマットが用いられています。
+    <command>systemctl</command> コマンドがユニットファイルの有効/無効、状態制御/参照を行います。
+    以下に示すものがよく用いられます。
     </para>
 @z
 
@@ -199,8 +198,10 @@
          <para><command>systemctl list-units -t <replaceable>&lt;service&gt;</replaceable> [--all]</command>:
          lists loaded unit files of type service.</para>
 @y
-         <para><command>systemctl list-units -t <replaceable>&lt;service&gt;</replaceable> [--all]</command>:
-         lists loaded unit files of type service.</para>
+         <para>
+         <command>systemctl list-units -t <replaceable>&lt;service&gt;</replaceable> [--all]</command>:
+         サービスタイプのユニットファイルをロードします。
+         </para>
 @z
 
 @x
@@ -208,7 +209,8 @@
          lists loaded unit files of type target.</para>
 @y
          <para><command>systemctl list-units -t <replaceable>&lt;target&gt;</replaceable> [--all]</command>:
-         lists loaded unit files of type target.</para>
+         ターゲットタイプのユニットファイルをロードします。
+         </para>
 @z
 
 @x
@@ -218,9 +220,9 @@
          SysVinit.</para>
 @y
          <para><command>systemctl show -p Wants <replaceable>&lt;multi-user.target&gt;</replaceable></command>:
-         shows all units that depend on the multi-user target. Targets are
-         special unit files that are anogalous to runlevels under
-         SysVinit.</para>
+         マルチユーザーターゲットに依存するユニットをすべて表示します。
+         ターゲットは特別なユニットファイルであり、SysVinit におけるランレベルに相当します。
+         </para>
 @z
 
 @x
@@ -231,16 +233,16 @@
          similar functionality to inetd/xinetd).</para>
 @y
          <para><command>systemctl status <replaceable>&lt;servicename.service&gt;</replaceable></command>:
-         shows the status of the servicename service. The .service extension
-         can be omitted if there are no other unit files with the same name,
-         such as .socket files (which create a listening socket that provides
-         similar functionality to inetd/xinetd).</para>
+         servicename で示されるサービスの状態を表示します。
+         拡張子 .service は、他に同名のサービスがない限り、例えば .socket ファイルであるような場合は省略することができます。
+         (.socket ファイルは inetd/xinetd と同様の機能を提供するソケットを生成します。)
+         </para>
 @z
 
 @x
     <title>Working with the Systemd Journal</title>
 @y
-    <title>Working with the Systemd Journal</title>
+    <title>Systemd ジャーナル関連の操作</title>
 @z
 
 @x
@@ -252,21 +254,22 @@
     parsing the file, the command <command>journalctl</command> is provided.
     Here are some examples of frequently used commands:</para>
 @y
-    <para>Logging on a system booted with systemd is handled with
-    systemd-journald (by default), rather than a typical unix syslog daemon.
-    You can also add a normal syslog daemon and have both work side by
-    side if desired. The systemd-journald program stores journal entries in a
-    binary format rather than a plain text log file. To assist with
-    parsing the file, the command <command>journalctl</command> is provided.
-    Here are some examples of frequently used commands:</para>
+    <para>
+    systemd により起動したシステムのシステムログは、従来の unix syslog デーモンとは異なり、デフォルトで systemd-journald により扱われます。
+    必要に応じて標準的な syslog デーモンを追加することも可能で、両者を併用することもできます。
+    systemd-journald プログラムはジャーナル項目を保存しますが、それはテキストログファイルではなく、バイナリフォーマットファイルです。
+    そのファイル内容を確認するために <command>journalctl</command> コマンドが提供されています。
+    以下に示すものがよく用いられます。
+    </para>
 @z
 
 @x
          <para><command>journalctl -r</command>: shows all contents of the
          journal in reverse chronological order.</para>
 @y
-         <para><command>journalctl -r</command>: shows all contents of the
-         journal in reverse chronological order.</para>
+         <para><command>journalctl -r</command>:
+         ジャーナル項目すべてを日付の昇順により表示します。
+         </para>
 @z
 
 @x
@@ -275,8 +278,8 @@
          file.</para>
 @y
          <para><command>journalctl -u <replaceable>UNIT</replaceable></command>:
-         shows the journal entries associated with the specified UNIT
-         file.</para>
+         指定された UNIT ファイルに関連したジャーナル項目を表示します。
+         </para>
 @z
 
 @x
@@ -284,15 +287,16 @@
          entries since last successfull boot (or for boot ID) in reverse
          chronological order.</para>
 @y
-         <para><command>journalctl -b[=ID] -r</command>: shows the journal
-         entries since last successfull boot (or for boot ID) in reverse
-         chronological order.</para>
+         <para><command>journalctl -b[=ID] -r</command>:
+         直近の起動成功から (あるいはブートIDから) のジャーナル項目を、日付の昇順により表示します。
+         </para>
 @z
 
 @x
          <para><command>journalctl -f</command>: povides functionality similar
          to tail -f (follow).</para>
 @y
-         <para><command>journalctl -f</command>: povides functionality similar
-         to tail -f (follow).</para>
+         <para><command>journalctl -f</command>:
+         tail -f と同様の機能を提供します。
+         </para>
 @z

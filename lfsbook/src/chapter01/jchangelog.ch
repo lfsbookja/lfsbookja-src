@@ -19,7 +19,11 @@
   <title>変更履歴 (日本語版)</title>
 
 <para>
-ここに示すのは LFS ブック &version; 日本語版 (バージョン &jversion;) の変更履歴です。
+ここに示すのは LFS ブック
+<phrase revision="sysv">&version;</phrase>
+<phrase revision="systemd">&versiond;</phrase>
+日本語版 (バージョン
+<phrase revision="sysv">&jversion;</phrase><phrase revision="systemd">&jversiond;</phrase>) の変更履歴です。
 </para>
 
   <note>
@@ -52,6 +56,16 @@
     </listitem>
 
 -->
+
+    <listitem revision="systemd">
+      <para>2016-08-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - マージ対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
 
     <listitem>
       <para>2016-07-31</para>

@@ -77,8 +77,9 @@
   <para>Create the <filename>/etc/adjtime</filename> file with the following contents
   if your hardware clock is set to local time:</para>
 @y
-  <para>Create the <filename>/etc/adjtime</filename> file with the following contents
-  if your hardware clock is set to local time:</para>
+  <para>
+  ハードウェアクロックをローカル時刻に設定する場合は、以下の内容により <filename>/etc/adjtime</filename> ファイルを生成します。
+  </para>
 @z
 
 @x
@@ -86,9 +87,9 @@
   <command>systemd-timedated</command> will assume that hardware clock is
   set to UTC and adjust the file according to that.</para>
 @y
-  <para>If <filename>/etc/adjtime</filename> isn't present at first boot,
-  <command>systemd-timedated</command> will assume that hardware clock is
-  set to UTC and adjust the file according to that.</para>
+  <para>
+  起動時に <filename>/etc/adjtime</filename> ファイルが存在しなかった場合、ハードウェアクロックは UTC に設定されているものとして <command>systemd-timedated</command> が判断し、このファイルを調整します。
+  </para>
 @z
 
 @x
@@ -96,55 +97,66 @@
   <command>systemd-timedated</command> if your hardware clock is set to
   UTC or local time:</para>
 @y
-  <para>You can also use the <command>timedatectl</command> utility to tell
-  <command>systemd-timedated</command> if your hardware clock is set to
-  UTC or local time:</para>
+  <para>
+  <command>timedatectl</command> ユーティリティーを用いる方法もあります。
+  これを使って <command>systemd-timedated</command> に対し、ハードウェアクロックが UTC かローカル時刻かを設定することができます。
+  </para>
 @z
 
 @x
   <para><command>timedatectl</command> can also be used to change system time and
   time zone.</para>
 @y
-  <para><command>timedatectl</command> can also be used to change system time and
-  time zone.</para>
+  <para>
+  <command>timedatectl</command> コマンドを用いれば、システム時刻やタイムゾーンを変更することもできます。
+  </para>
 @z
 
 @x
   <para>To change your current system time, issue:</para>
 @y
-  <para>To change your current system time, issue:</para>
+  <para>
+  システム時刻を変更するには以下を実行します。
+  </para>
 @z
 
 @x
   <para>Hardware clock will also be updated accordingly.</para>
 @y
-  <para>Hardware clock will also be updated accordingly.</para>
+  <para>
+  ハードウェアクロックも同様に設定することができます。
+  </para>
 @z
 
 @x
   <para>To change your current time zone, issue:</para>
 @y
-  <para>To change your current time zone, issue:</para>
+  <para>
+  タイムゾーンを変更するには以下を実行します。
+  </para>
 @z
 
 @x
   <para>You can get list of available time zones by running:</para>
 @y
-  <para>You can get list of available time zones by running:</para>
+  <para>
+  利用可能なタイムゾーンの一覧は以下を実行して確認できます。
+  </para>
 @z
 
 @x
   <note><para>Please note that <command>timedatectl</command> command can
   be used only on a system booted with systemd.</para></note>
 @y
-  <note><para>Please note that <command>timedatectl</command> command can
-  be used only on a system booted with systemd.</para></note>
+  <note><para>
+  <command>timedatectl</command> コマンドはあくまで systemd により起動されたシステムにおいて利用できる点に注意してください。
+  </para></note>
 @z
 
 @x
     <title>Network Time Synchronization</title>
 @y
-    <title>Network Time Synchronization</title>
+    <title>ネットワークによる時刻同期</title>
 @z
 
 @x
@@ -152,9 +164,10 @@
     <command>systemd-timesyncd</command> which can be used to
     synchronize the system time with remote NTP servers.</para>
 @y
-    <para>Starting with version 213, systemd ships a daemon called
-    <command>systemd-timesyncd</command> which can be used to
-    synchronize the system time with remote NTP servers.</para>
+    <para>
+    systemd のバージョン 213 からは <command>systemd-timesyncd</command> というデーモンが提供されています。
+    これはシステム時刻とリモートの NTP サーバーの時刻同期を行うものです。
+    </para>
 @z
 
 @x
@@ -163,10 +176,10 @@
     of the SNTP protocol which can be used for less advanced
     tasks and on resource limited systems.</para>
 @y
-    <para>The daemon is not intended as a replacement for the well
-    established NTP daemon, but as a client only implementation
-    of the SNTP protocol which can be used for less advanced
-    tasks and on resource limited systems.</para>
+    <para>
+    このデーモンは、NTP デーモンとして充実したものではありません。
+    NTP デーモンに代わるものと位置づけられるものではなく、SNTP プロトコルのクライアントのみの実装であり、簡単なタスクの処理やリソースが限られているシステム上にて用いられます。
+    </para>
 @z
 
 @x
@@ -175,10 +188,10 @@
     default. If you want to disable it, issue the following
     command:</para>
 @y
-    <para>Starting with systemd version 216, the
-    <command>systemd-timesyncd</command> daemon is enabled by
-    default. If you want to disable it, issue the following
-    command:</para>
+    <para>
+    systemd のバージョン 216 からはデフォルトで <command>systemd-timesyncd</command> デーモンが用いられます。
+    これを無効にしたい場合は以下を実行します。
+    </para>
 @z
 
 @x
@@ -186,9 +199,9 @@
     can be used to change the NTP servers that
     <command>systemd-timesyncd</command> synchronizes with.</para>
 @y
-    <para>The <filename>/etc/systemd/timesyncd.conf</filename> file
-    can be used to change the NTP servers that
-    <command>systemd-timesyncd</command> synchronizes with.</para>
+    <para>
+    <command>systemd-timesyncd</command> が利用する NTP サーバーを変更するには <filename>/etc/systemd/timesyncd.conf</filename> ファイルを用います。
+    </para>
 @z
 
 @x
@@ -196,7 +209,7 @@
     <command>systemd-timesyncd</command> won't update hardware
     clock.</para>
 @y
-    <para>Please note that when system clock is set to Local Time,
-    <command>systemd-timesyncd</command> won't update hardware
-    clock.</para>
+    <para>
+    システムクロックがローカル時刻に設定されている場合、<command>systemd-timesyncd</command> はハードウェアクロックを更新しない点に注意してください。
+    </para>
 @z

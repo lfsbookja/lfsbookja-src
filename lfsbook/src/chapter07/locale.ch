@@ -239,12 +239,9 @@
   en_US.UTF-8 but <envar>LC_CTYPE</envar> is set as just en_US is:</para>
 @y
   <para>
-  
-  You can also specify other language specific environment variables such
-  as <envar>LANG</envar>, <envar>LC_CTYPE</envar>, <envar>LC_NUMERIC</envar> or
-  any other environment variable from <command>locale</command> output. Just
-  separate them with a space. An example where <envar>LANG</envar> is set as
-  en_US.UTF-8 but <envar>LC_CTYPE</envar> is set as just en_US is:
+  言語に関連する環境変数、例えば <envar>LANG</envar>, <envar>LC_CTYPE</envar>, <envar>LC_NUMERIC</envar> などや、<command>locale</command> が出力する環境変数を指定することもできます。
+  その場合は各設定をスペースにより区切ります。
+  例として <envar>LANG</envar> を en_US.UTF-8 とし <envar>LC_CTYPE</envar> を単に en_US とする場合は以下のようにします。
   </para>
 @z
 
@@ -253,9 +250,7 @@
   be used  only on a system booted with systemd.</para></note>
 @y
   <note><para>
-  
-  Please note that <command>localectl</command> command can
-  be used  only on a system booted with systemd.
+  <command>localectl</command> コマンドはあくまで systemd により起動されたシステムにおいて利用できる点に注意してください。
   </para></note>
 @z
 
