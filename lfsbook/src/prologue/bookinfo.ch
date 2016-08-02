@@ -51,7 +51,7 @@
       <surname>Lucas</surname>
     </author>
     <author>
-      <firstname>日本語訳： 松山 道夫 (&jversion; 版)</firstname>
+      <firstname>日本語訳： 松山 道夫</firstname>
     </author>
   </authorgroup>
 @z
