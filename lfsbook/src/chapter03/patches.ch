@@ -65,16 +65,16 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
+@x Gccc ASAN Patch
+        <para>Download: <ulink url="&patches-root;&gcc-asan-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&gcc-asan-patch;"/></para>
+@z
+
 @x Glibc FHS Patch
         <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
-@z
-
-@x Glibc Upstream Patch
-        <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
 @z
 
 @x Kbd Backspace/Delete Fix Patch

@@ -29,11 +29,12 @@
 @z
 
 @x
-    <para>First, fix a problem that causes a segmentation fault under
-    some conditions in klogd:</para>
+    <para>First, fix problems that causes a segmentation fault under
+    some conditions in klogd and fix an obsolete program construct:</para>
 @y
     <para>
     特定の条件において klogd がセグメンテーションフォールトを起こすため、この問題を修正します。
+    また古いプログラム構造を修正します。
     </para>
 @z
 

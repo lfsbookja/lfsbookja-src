@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2016-08-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to grub-2.02~beta3. Fixes
+          <ulink url="&lfs-ticket-root;3897">#3897</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.24. Fixes
+          <ulink url="&lfs-ticket-root;3963">#3963</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-08-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grub-2.02~beta3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3897">#3897</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.24 へのアップデート。
+          <ulink url="&lfs-ticket-root;3963">#3963</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-07-29</para>
       <itemizedlist>
         <listitem>

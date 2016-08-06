@@ -32,26 +32,6 @@
 @z
 
 @x
-      <para>Some packages outside of LFS suggest installing GNU libiconv in
-      order to translate data from one encoding to another. The project's
-      home page (<ulink url="http://www.gnu.org/software/libiconv/"/>) says
-      <quote>This library provides an <function>iconv()</function>
-      implementation, for use on systems which don't have one, or whose
-      implementation cannot convert from/to Unicode.</quote> Glibc provides
-      an <function>iconv()</function> implementation and can convert from/to
-      Unicode, therefore libiconv is not required on an LFS system.</para>
-@y
-      <para>
-      LFS が取り扱っていないパッケージの中には GNU libiconv の導入を推奨しているものがあります。
-      これは文字データのエンコーディングを変換する機能を持ちます。
-      プロジェクトのホームページ (<ulink url="http://www.gnu.org/software/libiconv/"/>) には以下のような説明があります。
-      <quote>このライブラリは <function>iconv()</function> 関数を提供します。
-      この関数を持たないシステムや、Unicode を取り扱うことができないシステムにて、この関数を利用することができます。</quote>
-      Glibc が <function>iconv()</function> 関数を用意しており Unicode の変換を実現しているため LFS では libiconv は用いないことにします。
-      </para>
-@z
-
-@x
     <note><para>The Glibc build system is self-contained and will install
     perfectly, even though the compiler specs file and linker are still
     pointing to <filename class="directory">/tools</filename>. The specs
@@ -77,14 +57,6 @@
     Glibc のプログラムの中には <filename
     class="directory">/var/db</filename> ディレクトリに実行データを収容するものがあり、これは FHS に準拠していません。
     以下のパッチを適用することで、実行データの収容先を FHS 準拠のディレクトリとします。
-    </para>
-@z
-
-@x
-    <para>Fix some problems identified upstream:</para>
-@y
-    <para>
-    アップストリームが把握している不具合を修正します。
     </para>
 @z
 
@@ -142,13 +114,12 @@
 @z
 
 @x
-        <para><emphasis>posix/tst-getaddrinfo4</emphasis> and 
-        <emphasis>posix/tst-getaddrinfo5</emphasis> will always fail due
+        <para><emphasis>posix/tst-getaddrinfo4</emphasis> will always fail due
         to not having the necessary networking applications when the tests are
         run.</para>
 @y
         <para><emphasis>
-        posix/tst-getaddrinfo4</emphasis> と <emphasis>posix/tst-getaddrinfo5</emphasis> は、テスト時に必要なネットワークアプリケーションがないため失敗します。
+        posix/tst-getaddrinfo4</emphasis> は、テスト時に必要なネットワークアプリケーションがないため失敗します。
         </para>
 @z
 

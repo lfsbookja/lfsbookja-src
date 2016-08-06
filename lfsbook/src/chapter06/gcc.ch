@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>First fix a problem identified upstream:</para>
+@y
+    <para>
+    はじめにアップストリームが認識している不具合を修正します。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC in a dedicated build directory:</para>
 @y
     <para>
