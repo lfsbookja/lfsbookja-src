@@ -15,17 +15,17 @@
 @z
 
 @x
-<!ENTITY versiond        "20160805-systemd">
+<!ENTITY versiond        "20160806-systemd">
 @y
-<!ENTITY versiond        "20160805-systemd">
+<!ENTITY versiond        "20160806-systemd">
 @z
 
 @x
-<!ENTITY releasedate     "August 5, 2016">
+<!ENTITY releasedate     "August 6, 2016">
 @y
-<!ENTITY releasedate     "2016年08月05日">
-<!ENTITY jversion        "20160806">
-<!ENTITY jversiond       "20160806-systemd">
+<!ENTITY releasedate     "2016年08月06日">
+<!ENTITY jversion        "20160807">
+<!ENTITY jversiond       "20160807-systemd">
 @z
 
 @x

@@ -116,10 +116,12 @@
 @x
         <para><emphasis>posix/tst-getaddrinfo4</emphasis> will always fail due
         to not having the necessary networking applications when the tests are
-        run.</para>
+        run.  <emphasis>posix/tst-getaddrinfo5</emphasis> is also known
+        to fail on some architectures.</para>
 @y
         <para><emphasis>
         posix/tst-getaddrinfo4</emphasis> は、テスト時に必要なネットワークアプリケーションがないため失敗します。
+        また <emphasis>posix/tst-getaddrinfo5</emphasis> は特定の CPU アーキテクチャーでは失敗します。
         </para>
 @z
 

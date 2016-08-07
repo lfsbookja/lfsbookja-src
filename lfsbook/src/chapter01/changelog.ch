@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2016-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.27. Fixes
+          <ulink url="&lfs-ticket-root;3962">#3962</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.27 へのアップデート。
+          <ulink url="&lfs-ticket-root;3962">#3962</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-08-05</para>
       <itemizedlist>
         <listitem>
