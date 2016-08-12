@@ -221,7 +221,7 @@
 @z
 
 @x msgcomm
-          <para>Finds the messages that are common to to the given
+          <para>Finds the messages that are common to the given
           <filename class="extension">.po</filename> files</para>
 @y
           <para>

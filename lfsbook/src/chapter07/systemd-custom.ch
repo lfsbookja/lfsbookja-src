@@ -300,3 +300,84 @@
          tail -f と同様の機能を提供します。
          </para>
 @z
+
+@x
+    <title>Long Running Processes</title>
+@y
+    <title>稼動し続けるプロセス</title>
+@z
+
+@x
+    <para>Beginning with systemd-230, all user processes are killed when a
+    user session is ended, even if nohup is used, or the process uses
+    <function>daemon()</function> or <function>setsid()</function>. This is a
+    deliberate change from a historically permissive environment to a more
+    restrictive one. The new behavior may cause issues if you depend on long
+    running programs (e.g., <command>screen</command> or
+    <command>tmux</command>) to remain active after ending your user
+    session. There are three ways to enable lingering processes to remain after
+    a user session is ended.</para>
+@y
+    <para>
+    systemd-230 より取り入れられた機能として、ユーザープロセスは、たとえ nohup が用いられたり、あるいは <function>daemon()</function> や <function>setsid()</function> が利用されたプロセスであっても、ユーザーセッションが終了するとともに終了します。
+    この機能変更は、従来からの柔軟な実装を厳格なものとする意図で行われたものです。
+    したがって稼動し続けるプロセスが利用されていると (例えば <command>screen</command> や <command>tmux</command> など)、この機能変更が問題を引き起こすことになるかもしれません。
+    つまりユーザーセッションが終了した後にもプロセスをアクティブにしておくことが必要になります。
+    ユーザーセッション終了後にプロセスを継続させる方法として、以下の三つの方法があります。
+    </para>
+@z
+
+@x
+          <emphasis>Enable process lingering for only needed users</emphasis>:
+          normal users have permission to enable process lingering
+          with the command <command>loginctl enable-linger</command> for their
+          own user. System administrators can use the same command with a
+          <parameter>user</parameter> argument to enable for a user. That user
+          can then use the <command>systemd-run</command> command to start
+          long running processes. For example: <command>systemd-run --scope
+          --user /usr/bin/screen</command>. If you enable lingering for your
+          user, the user@.service will remain even after all login sessions are
+          closed, and will automatically start at system boot. This has the
+          advantage of explicitly allowing and disallowing processes to run
+          after the user session has ended, but breaks backwards compatibility
+          with tools like <command>nohup</command> and utilities that use
+          <function>deamon()</function>.
+@y
+<!--
+日本語訳：意味不明な訳出になってしまった.. 意味内容がよくわからない..
+-->
+          <emphasis>特定ユーザーのプロセスを継続させる方法</emphasis>:
+          標準的なユーザーは自身のユーザー権限においてコマンド <command>loginctl enable-linger</command> を実行して、プロセスを継続させることができます。
+          システム管理者は <parameter>user</parameter> 引数を利用して、そのユーザーに対して同一のコマンドを実行可能です。
+          そしてそのユーザーは <command>systemd-run</command> コマンドを実行することでプロセスを継続的に稼動させます。
+          例えば <command>systemd-run --scope
+          --user /usr/bin/screen</command> などとします。
+          特定ユーザーに対してのプロセス継続を行った場合、ログインセッションがすべて終了しても user@.service が残ります。
+          そしてこれはシステム起動時にも自動実行されます。
+          つまりユーザーセッションが終了した後にもプロセスの有効無効の制御が明示的に行えるものであり、<command>nohup</command> や <function>deamon()</function> を利用するユーティリティーなどの下位互換性をなくすものです。
+@z
+
+@x
+          <emphasis>Enable system-wide process lingering</emphasis>:
+          you can set <parameter>KillUserProcesses=no</parameter> in
+          <filename>/etc/logind.conf</filename> to enable process lingering
+          globally for all users. This has the benefit of leaving the old
+          method available to all users at the expense of explicit control.
+@y
+          <emphasis>システムワイドなプロセスを継続させる方法</emphasis>:
+          <filename>/etc/logind.conf</filename> ファイル内に <parameter>KillUserProcesses=no</parameter> を指定すれば、全ユーザーに対してグローバルにプロセスを継続起動させることができます。
+          これは明示的に制御する方法を無用とし、従来どおり全ユーザーに対しての方式を残すメリットがあります。
+@z
+
+@x
+          <emphasis>Disable at build-time</emphasis>: You can enable
+          lingering by default while building systemd by adding the switch
+          <parameter>--without-kill-user-processes</parameter> to the
+          <command>configure</command> command for systemd. This completely
+          disables the ability of systemd to kill user processes at session
+          end.
+@y
+          <emphasis>機能変更をビルド時に無効化する方法</emphasis>:
+          プロセス継続をデフォルトとするために systemd のビルド時に <command>configure</command> コマンドにおいて <parameter>--without-kill-user-processes</parameter> スイッチを指定する方法があります。
+          この方法をとれば、systemd がセッション終了時にユーザープロセスを終了させてしまう機能を完全に無効化することができます。
+@z

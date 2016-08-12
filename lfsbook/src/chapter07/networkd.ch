@@ -50,7 +50,7 @@
     basic network configuration. Additionally, since version 213, DNS name
     resolution can be handled by <command>systemd-resolved</command> in place
     of a static <filename>/etc/resolv.conf</filename> file. Both services are
-    enabled by defualt, and absolutely should not be disabled.</para>
+    enabled by default, and absolutely should not be disabled.</para>
 @y
     <para>
     systemd はバージョン 209 から、ネットワーク設定を行うデーモン <command>systemd-networkd</command> を提供するようになりました。
@@ -129,11 +129,11 @@
 @x
       <para>Multiple DNS entries can be added if you have more than one DNS
       server. Do not include DNS or Domains entries if you intend to use a
-      static <filename>/etc/reslov.conf</filename> file.</para>
+      static <filename>/etc/resolv.conf</filename> file.</para>
 @y
       <para>
       複数のDNSサーバーを有している場合は、DNS設定行を複数指定することができます。
-      固定的に <filename>/etc/reslov.conf</filename> ファイルを利用する場合は DNS および Domains の設定行は記載しません。
+      固定的に <filename>/etc/resolv.conf</filename> ファイルを利用する場合は DNS および Domains の設定行は記載しません。
       </para>
 @z
 
@@ -392,7 +392,7 @@ the IPv6 loopback interface.</para>
 @z
 
 @x
-     <para>If ussing a staic address, create the <filename>/etc/hosts</filename>
+     <para>If using a staic address, create the <filename>/etc/hosts</filename>
      file by running this command instead:</para>
 @y
      <para>

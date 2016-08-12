@@ -119,7 +119,7 @@
           <para>Logs the messages that system programs offer for logging [Every
           logged message contains at least a date stamp and a hostname, and
           normally the program's name too, but that depends on how trusting the
-          logging daemon is told to bei.]</para>
+          logging daemon is told to be.]</para>
 @y
           <para>
           システムプログラムが出力するログ情報を出力します。

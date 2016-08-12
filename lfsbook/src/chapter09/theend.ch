@@ -55,6 +55,22 @@
 @z
 
 @x
+  <para revision="systemd">Creating the file
+  <filename>/etc/lfs-release</filename> is recommended for compatibility with
+  the non-systemd branch. By having this file, it is very easy for you (and for
+  us if you need to ask for help at some point) to find out which LFS version
+  is installed on the system. Create this file by running:</para>
+@y
+  <para revision="systemd">
+  <filename>/etc/lfs-release</filename> というファイルを生成することをお勧めします。
+  これにより systemd 版ではないものとの対比ができます。
+  またこのファイルを作っておけば、どのバージョンの LFS をインストールしたのか、すぐに判別できます。
+  (もしあなたが質問を投げた時には、我々もすぐに判別できることになります。)
+  以下のコマンドによりこのファイルを生成します。
+  </para>
+@z
+
+@x
   <para>It is also a good idea to create a file to show the status of your
   new system with respect to the Linux Standards Base (LSB).  To create
   this file, run:</para>

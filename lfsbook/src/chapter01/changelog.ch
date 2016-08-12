@@ -54,6 +54,41 @@
 @z
 
 @x
+      <para>2016-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to systemd-231. Fixes
+          <ulink url="&lfs-ticket-root;3958">#3958</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd-231 へのアップデート。
+          <ulink url="&lfs-ticket-root;3958">#3958</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-08-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Added explanatory text for systemd-230+ process
+          lingering changes.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-08-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - systemd-230 以降に導入されたプロセス継続方法の変更について記述追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-08-06</para>
       <itemizedlist>
         <listitem>
@@ -439,7 +474,7 @@
       <itemizedlist>
         <listitem>
           <para>[dj] - Adjust hosts file instructions to account for hosts
-          using automatic configuration. Ajusted eplanatory text to account
+          using automatic configuration. Adjusted explanatory text to account
 for
           additional configurations.</para>
         </listitem>

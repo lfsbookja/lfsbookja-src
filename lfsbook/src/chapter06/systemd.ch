@@ -208,7 +208,7 @@
 @z
 
 @x
-    <para>Move NSS libraries to <filename class="directory">/lib</filename>:</para>
+    <para>Move the NSS libraries to <filename class="directory">/lib</filename>:</para>
 @y
     <para>
     NSS ライブラリを <filename class="directory">/lib</filename> へ移動します。
@@ -247,6 +247,14 @@
 @y
     <para>
     <command>systemd-journald</command> に対して必要となる <filename>/etc/machine-id</filename> ファイルを生成します。
+    </para>
+@z
+
+@x
+    <para>Fix a broken symlink created by the systemd installation process:</para>
+@y
+    <para>
+    systemd のインストールによって生成される不適切なシンボリックリンクを再構成します。
     </para>
 @z
 
@@ -290,7 +298,8 @@
         systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
         telinit, timedatectl, and udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
-        libnss_resolve.so.2, libsystemd.so, and libudev.so</seg>
+        libnss_resolve.so.2, libsystemd.so, libsystemd-shared-231.so,
+        and libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
@@ -309,7 +318,8 @@
         systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
         telinit, timedatectl, udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
-        libnss_resolve.so.2, libsystemd.so, libudev.so</seg>
+        libnss_resolve.so.2, libsystemd.so, libsystemd-shared-231.so,
+        libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
