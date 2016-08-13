@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2016-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to diffutils-3.4. Fixes
+          <ulink url="&lfs-ticket-root;3964">#3964</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.7.0. Fixes
+          <ulink url="&lfs-ticket-root;3965">#3965</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux 2.28.1. Fixes
+          <ulink url="&lfs-ticket-root;3966">#3966</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - diffutils-3.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3964">#3964</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.7.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3965">#3965</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux 2.28.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3966">#3966</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-08-11</para>
       <itemizedlist>
         <listitem>

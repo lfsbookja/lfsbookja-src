@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/chapter05
 CHANGE_FILES = \
-	adjusting.ch           \
 	bash.ch                \
 	binutils-pass1.ch      \
 	binutils-pass2.ch      \
@@ -65,7 +64,6 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-adjusting.xml:           $(BOOKdir)/$@ $(srcdir)/adjusting.ch
 bash.xml:                $(BOOKdir)/$@  $(srcdir)/bash.ch
 binutils-pass1.xml:      $(BOOKdir)/$@  $(srcdir)/binutils-pass1.ch
 binutils-pass2.xml:      $(BOOKdir)/$@  $(srcdir)/binutils-pass2.ch
