@@ -57,6 +57,32 @@
       <para>2016-08-22</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to linux-4.7.2. Fixes
+          <ulink url="&lfs-ticket-root;3972">#3972</ulink>.</para>
+        </listitem>
+    <listitem revision="systemd">
+          <para>[bdubbs] - Update to dbus-1.10.10. Fixes
+          <ulink url="&lfs-ticket-root;3967">#3967</ulink>.</para>
+        </listitem> 
+      </itemizedlist>
+@y
+      <para>2016-08-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.7.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3972">#3972</ulink> を Fix に。</para>
+        </listitem>
+    <listitem revision="systemd">
+          <para>[bdubbs] - dbus-1.10.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;3967">#3967</ulink> を Fix に。</para>
+        </listitem> 
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-08-22</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to diffutils-3.5. Fixes
           <ulink url="&lfs-ticket-root;3968">#3968</ulink>.</para>
         </listitem>

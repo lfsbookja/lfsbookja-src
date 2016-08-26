@@ -46,12 +46,12 @@
           </para>
 @z
 
-@x --disable-grub-emu-usb --disable-efiemu
-          <para>These options minimize what is built by disabling features and
+@x --disable-efiemu
+          <para>This option minimizes what is built by disabling a feature and
           testing programs not needed for LFS.</para>
 @y
           <para>
-          これらのオプションは LFS にとって不要な機能やテストプログラムをビルドしないようにします。
+          このオプションは LFS にとって不要な機能やテストプログラムをビルドしないようにします。
           </para>
 @z
 
