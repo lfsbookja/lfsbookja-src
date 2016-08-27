@@ -256,7 +256,7 @@
   for building Glibc are the compiler, binary tools, and kernel headers. The
   compiler is generally not an issue since Glibc will always use the compiler
   relating to the <parameter>--host</parameter> parameter passed to its
-  configure script, e.g. in our case,
+  configure script; e.g. in our case, the compiler will be
   <command>i686-lfs-linux-gnu-gcc</command>. The binary tools and kernel
   headers can be a bit more complicated. Therefore, take no risks and use the
   available configure switches to enforce the correct selections. After the run
@@ -275,7 +275,7 @@
   Glibc 構築の際に気にかけるべき重要なものは、コンパイラー、バイナリツール、カーネルヘッダーです。
   コンパイラーについては、一般にはあまり問題にはなりません。
   Glibc は常に configure スクリプトにて指定される <parameter>--host</parameter> パラメーターに関連づけしたコンパイラーを用いるからです。
-  我々の作業では <command>i686-lfs-linux-gnu-gcc</command> になります。
+  我々の作業においてそのコンパイラーとは <command>i686-lfs-linux-gnu-gcc</command> になります。
   バイナリツールとカーネルヘッダーは多少複雑です。
   従って無理なことはせずに有効な configure オプションを選択することが必要です。
   <command>configure</command> 実行の後は <filename

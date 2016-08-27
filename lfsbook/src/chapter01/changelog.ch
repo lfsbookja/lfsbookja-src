@@ -57,10 +57,13 @@
       <para>2016-08-22</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Release LFS-7.10-rc1.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - Update to linux-4.7.2. Fixes
           <ulink url="&lfs-ticket-root;3972">#3972</ulink>.</para>
         </listitem>
-    <listitem revision="systemd">
+        <listitem revision="systemd">
           <para>[bdubbs] - Update to dbus-1.10.10. Fixes
           <ulink url="&lfs-ticket-root;3967">#3967</ulink>.</para>
         </listitem> 
@@ -68,6 +71,9 @@
 @y
       <para>2016-08-24</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.10-rc1 リリース。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - linux-4.7.2 へのアップデート。
           <ulink url="&lfs-ticket-root;3972">#3972</ulink> を Fix に。</para>
