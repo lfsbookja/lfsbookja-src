@@ -54,15 +54,6 @@
 @z
 
 @x
-    <para>Rebuild generated files after modifying Makefile.am and 
-    Makefile.in:</para>
-@y
-    <para>
-    Makefile.am と Makefile.in を修正したことにより各種ファイルを再生成します。
-    </para>
-@z
-
-@x
     <para>Create a file to allow systemd to build when using Util-Linux
     built in Chapter 5, to disable LTO by default, and to build without
     xlstproc:</para>
