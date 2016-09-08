@@ -24,8 +24,8 @@
 <!ENTITY releasedate     "September 7, 2016">
 @y
 <!ENTITY releasedate     "2016年09月07日">
-<!ENTITY jversion        "20160907">
-<!ENTITY jversiond       "20160907">
+<!ENTITY jversion        "20160908">
+<!ENTITY jversiond       "20160908">
 @z
 
 @x

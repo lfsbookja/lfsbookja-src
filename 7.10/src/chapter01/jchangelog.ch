@@ -57,6 +57,17 @@
 
 -->
 
+    <listitem>
+      <para>2016-09-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          LFS 7.10 リリース対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
    <listitem revision="systemd">
       <para>2016-08-28</para>
       <itemizedlist>
