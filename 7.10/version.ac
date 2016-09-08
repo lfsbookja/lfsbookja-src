@@ -1,0 +1,11 @@
+dnl 
+dnl  This is part of LFSbookja package.
+dnl 
+dnl  $Author$
+dnl  $Rev$
+dnl  $Date::                           $
+dnl 
+dnl
+dnl m4-include this file to define the current LFS version
+m4_define([lfs_version], [7.10])
+m4_define([lfsd_version], [7.10-systemd])
