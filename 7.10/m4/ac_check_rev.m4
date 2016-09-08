@@ -17,7 +17,7 @@ AC_SUBST(revspec)
 TGT=7.10
 
 if test "x${with_rev}" = "xsystemd"; then
-  BASEDIR=../$TGT
+  BASEDIR=../$TGT-systemd
   PDF_OUTPUT=../lfssysdja-$TGT.pdf
   NOCHUNKS_NAME=lfssysdja-$TGT
   NOCHUNKS_OUTPUT=../lfssysdja-$TGT.html
