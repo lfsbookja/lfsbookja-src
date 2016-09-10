@@ -57,6 +57,48 @@
       <para>2016-09-07</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to gawk-4.1.4. Fixes 
+          <ulink url="&lfs-ticket-root;3973">#3973</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.43.2. Fixes 
+          <ulink url="&lfs-ticket-root;3974">#3974</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.7.3. Fixes 
+          <ulink url="&lfs-ticket-root;3975">#3975</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.28.2. Fixes 
+          <ulink url="&lfs-ticket-root;3976">#3976</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-09-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gawk-4.1.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3973">#3973</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.43.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3974">#3974</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.7.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3975">#3975</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.28.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3976">#3976</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-09-07</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - LFS-7.10 released.</para>
         </listitem>
       </itemizedlist>
