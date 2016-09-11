@@ -392,7 +392,7 @@ the IPv6 loopback interface.</para>
 @z
 
 @x
-     <para>If using a staic address, create the <filename>/etc/hosts</filename>
+     <para>If using a static address, create the <filename>/etc/hosts</filename>
      file by running this command instead:</para>
 @y
      <para>
