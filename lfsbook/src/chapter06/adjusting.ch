@@ -123,11 +123,11 @@
 
 @x
    <note><para>On 64-bit systems, the path above will be
-   /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib64/.  This
+   /usr/lib/gcc/x86_64-pc-linux-gnu/&gcc-version;/../../../../lib64/.  This
    reduces to /usr/lib64 and /usr/lib64 is a symlink that points to
    /usr/lib.</para></note>
 @y
-   <note><para>64ビットシステムでは、上のパスは /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib64/ となります。
+   <note><para>64ビットシステムでは、上のパスは /usr/lib/gcc/x86_64-pc-linux-gnu/&gcc-version;/../../../../lib64/ となります。
    これは /usr/lib64 を意味します。
    /usr/lib64 はそもそもシンボリックリンクであり、結局はそれが指し示す /usr/lib になります。
    </para></note>

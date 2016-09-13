@@ -54,7 +54,25 @@
 @z
 
 @x
-      <para>2016-09-010</para>
+      <para>2016-09-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-6.3. Fixes 
+          <ulink url="&lfs-ticket-root;3978">#3978</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-09-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - texinfo-6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3978">#3978</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-09-10</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to e2fsprogs-1.43.3. Fixes 
