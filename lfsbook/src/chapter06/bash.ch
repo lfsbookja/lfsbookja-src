@@ -26,15 +26,6 @@
 @z
 
 @x
-    <para>First, apply the following patch to fix various bugs that have been
-    addressed upstream:</para>
-@y
-    <para>
-    まずはアップストリームにより提供されている以下のパッチを適用し、種々のバグを修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Bash for compilation:</para>
 @y
     <para>&PreparePackage1;Bash&PreparePackage2;</para>

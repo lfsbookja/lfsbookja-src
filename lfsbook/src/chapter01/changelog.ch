@@ -54,6 +54,58 @@
 @z
 
 @x
+      <para>2016-09-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bash-4.4. Fixes 
+          <ulink url="&lfs-ticket-root;3981">#381</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to readline-7.0. Fixes 
+          <ulink url="&lfs-ticket-root;3982">#382</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.7.4. Fixes 
+          <ulink url="&lfs-ticket-root;3980">#380</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-09-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash-4.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3981">#381</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline-7.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3982">#382</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.7.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3980">#380</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-09-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.0. Fixes 
+          <ulink url="&lfs-ticket-root;3979">#3979</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-09-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3979">#3979</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-09-12</para>
       <itemizedlist>
         <listitem>

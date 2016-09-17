@@ -29,16 +29,6 @@
 @z
 
 @x
-    <para>First install some patches to fix various bugs that have been
-    addressed upstream:</para>
-@y
-    <para>
-    まず以下のパッチを適用します。
-    これは種々のバグを修正するものとしてアップストリームにより提供されているものです。
-    </para>
-@z
-
-@x
     <para>Reinstalling Readline will cause the old libraries to be moved to
     &lt;libraryname&gt;.old. While this is normally not a problem, in some cases
     it can trigger a linking bug in <command>ldconfig</command>. This can be
