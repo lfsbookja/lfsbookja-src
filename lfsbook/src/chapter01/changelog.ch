@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2016-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Added a security patch for systemd. Fixes
+          <ulink url="&lfs-ticket-root;3986">#3986</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd にセキュリティパッチを追加。
+          <ulink url="&lfs-ticket-root;3986">#3986</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-09-16</para>
       <itemizedlist>
         <listitem>

@@ -95,6 +95,12 @@
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @z
 
+@x Systemd security patch
+        <para>Download: <ulink url="&patches-root;&systemd-security-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&systemd-security-patch;"/></para>
+@z
+
 @x
   <para>Total size of these patches: about <returnvalue/></para>
 @y

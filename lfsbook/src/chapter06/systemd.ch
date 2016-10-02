@@ -54,6 +54,14 @@
 @z
 
 @x
+    <para>Apply a patch to fix a security issue:</para>
+@y
+    <para>
+    セキュリティ問題を解消するパッチを適用します。
+    </para>
+@z
+
+@x
     <para>Create a file to allow systemd to build when using Util-Linux
     built in Chapter 5, to disable LTO by default, and to build without
     xlstproc:</para>
