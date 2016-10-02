@@ -85,7 +85,7 @@
 
 @x
         <seg>autopoint, envsubst, gettext, gettext.sh,
-        gettextize, hostname, msgattrib, msgcat, msgcmp, msgcomm, msgconv, msgen,
+        gettextize, msgattrib, msgcat, msgcmp, msgcomm, msgconv, msgen,
         msgexec, msgfilter, msgfmt, msggrep, msginit, msgmerge, msgunfmt, msguniq,
         ngettext, recode-sr-latin, and xgettext</seg>
         <seg>libasprintf.so, libgettextlib.so, libgettextpo.so,
@@ -94,7 +94,7 @@
         /usr/share/gettext</seg>
 @y
         <seg>autopoint, envsubst, gettext, gettext.sh,
-        gettextize, hostname, msgattrib, msgcat, msgcmp, msgcomm, msgconv, msgen,
+        gettextize, msgattrib, msgcat, msgcmp, msgcomm, msgconv, msgen,
         msgexec, msgfilter, msgfmt, msggrep, msginit, msgmerge, msgunfmt, msguniq,
         ngettext, recode-sr-latin, xgettext</seg>
         <seg>libasprintf.so, libgettextlib.so, libgettextpo.so,
@@ -181,14 +181,6 @@
 @y
           <para>
           パッケージの国際化対応を始めるにあたり、標準的な Gettext 関連ファイルを、指定されたパッケージのトップディレクトリにコピーします。
-          </para>
-@z
-
-@x hostname
-          <para>Displays a network hostname in various forms</para>
-@y
-          <para>
-          さまざまな書式のネットワークホスト名を表示します。
           </para>
 @z
 

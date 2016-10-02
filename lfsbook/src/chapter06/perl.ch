@@ -180,14 +180,6 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x a2p
-          <para>Translates awk to Perl</para>
-@y
-          <para>
-          awk スクリプトを Perl スクリプトに変換します。
-          </para>
-@z
-
 @x c2ph
           <para>Dumps C structures as generated from
           <command>cc -g -S</command></para>
@@ -214,31 +206,6 @@
           </para>
 @z
 
-@x cpan2dist
-          <para>The CPANPLUS distribution creator</para>
-@y
-          <para>
-          CPANPLUS の配布物生成ツール。
-          </para>
-@z
-
-@x cpanp
-          <para>The CPANPLUS launcher</para>
-@y
-          <para>
-          CPANPLUS ランチャー。
-          </para>
-@z
-
-@x cpanp-run-perl
-          <para>Perl script that is used to enable flushing of the output 
-          buffer after each write in spawned processes</para>
-@y
-          <para>
-          Spawn プロセスにおいて出力処理が行われた後に、出力バッファをクリアするために利用するPerl スクリプト。
-          </para>
-@z
-
 @x enc2xs
           <para>Builds a Perl extension for the Encode module from either
           Unicode Character Mappings or Tcl Encoding Files</para>
@@ -253,14 +220,6 @@
 @y
           <para>
           複数ファイルのエンコーディングを調査します。
-          </para>
-@z
-
-@x find2perl
-          <para>Translates <command>find</command> commands to Perl</para>
-@y
-          <para>
-          <command>find</command> コマンドを Perl に変換します。
           </para>
 @z
 
@@ -403,14 +362,6 @@
           </para>
 @z
 
-@x pod2latex
-          <para>Converts files from pod format to LaTeX format</para>
-@y
-          <para>
-          pod フォーマットから LaTeX フォーマットへ変換します。
-          </para>
-@z
-
 @x pod2man
           <para>Converts pod data to formatted *roff input</para>
 @y
@@ -500,14 +451,6 @@
 @y
           <para>
           tar アーカイブ内のファイルに対してパターンマッチングを適用するための Perl プログラム。
-          </para>
-@z
-
-@x s2p
-          <para>Translates <command>sed</command> scripts to Perl</para>
-@y
-          <para>
-          <command>sed</command> スクリプトを Perl スクリプトに変換します。
           </para>
 @z
 

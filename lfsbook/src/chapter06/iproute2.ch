@@ -138,9 +138,11 @@
 @z
 
 @x genl
-          <para></para>
+          <para>Generic netlink utility frontend</para>
 @y
-          <para></para>
+          <para>
+          汎用的な netlink ユーティリティフロントエンド。
+          </para>
 @z
 
 @x ifcfg
