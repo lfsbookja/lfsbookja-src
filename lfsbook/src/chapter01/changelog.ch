@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2016-10-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.8.1. Fixes 
+          <ulink url="&lfs-ticket-root;3983">#3983</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpfr-3.1.5. Fixes 
+          <ulink url="&lfs-ticket-root;3984">#3984</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2016g. Fixes 
+          <ulink url="&lfs-ticket-root;3985">#3985</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-2.26. Fixes 
+          <ulink url="&lfs-ticket-root;3988">#3988</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.08. Fixes 
+          <ulink url="&lfs-ticket-root;3991">#3991</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-10-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3983">#3983</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpfr-3.1.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3984">#3984</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2016g へのアップデート。
+          <ulink url="&lfs-ticket-root;3985">#3985</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-2.26 へのアップデート。
+          <ulink url="&lfs-ticket-root;3988">#3988</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.08 へのアップデート。
+          <ulink url="&lfs-ticket-root;3991">#3991</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-09-29</para>
       <itemizedlist>
         <listitem>
@@ -76,15 +126,15 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to bash-4.4. Fixes 
-          <ulink url="&lfs-ticket-root;3981">#381</ulink>.</para>
+          <ulink url="&lfs-ticket-root;3981">#3981</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to readline-7.0. Fixes 
-          <ulink url="&lfs-ticket-root;3982">#382</ulink>.</para>
+          <ulink url="&lfs-ticket-root;3982">#3982</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-4.7.4. Fixes 
-          <ulink url="&lfs-ticket-root;3980">#380</ulink>.</para>
+          <ulink url="&lfs-ticket-root;3980">#3980</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -92,15 +142,15 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - bash-4.4 へのアップデート。
-          <ulink url="&lfs-ticket-root;3981">#381</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;3981">#3981</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - readline-7.0 へのアップデート。
-          <ulink url="&lfs-ticket-root;3982">#382</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;3982">#3982</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - linux-4.7.4 へのアップデート。
-          <ulink url="&lfs-ticket-root;3980">#380</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;3980">#3980</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z
