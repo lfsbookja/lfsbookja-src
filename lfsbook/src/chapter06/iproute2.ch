@@ -64,6 +64,8 @@
 @z
 
 @x
+    <para>This package does not have a working test suite.</para>
+<!-- currently not useful, no tests actually run
     <para>This package comes with a test suite, but due to assumptions it makes,
     it is not possible to reliably run these tests from within the chroot
     environment. If you wish to run these tests after booting into your new LFS
@@ -71,14 +73,19 @@
     in your kernel (&quot;General setup&quot; -> &quot;Enable access to
     .config through /proc/config.gz&quot; [CONFIG_IKCONFIG_PROC]), then run
     'make alltests' from the <filename class="directory">testsuite/</filename>
-    subdirectory.</para>
+    subdirectory.</para>-->
 @y
+    <para>
+    本パッケージには有効なテストスイートはありません。
+    </para>
+<!--
     <para>
     このパッケージにテストスイートはありますが、テストの前提条件からすると chroot 環境のもとでは信頼のあるテスト結果を得ることには無理があります。
     もし LFS システムを構築した後にテストスイートを実施したいなら、カーネル設定において <filename>/proc/config.gz</filename> のサポート (&quot;General setup&quot; -> &quot;Enable access to
     .config through /proc/config.gz&quot; [CONFIG_IKCONFIG_PROC]) を有効にしてください。
     そしてサブディレクトリ <filename class="directory">testsuite/</filename> にて 'make alltests' を実行してください。
     </para>
+-->
 @z
 
 @x

@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2016-10-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Update to iproute2-4.8.0. Fixes
+          <ulink url="&lfs-ticket-root;3992">#3992</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Update to tzdata-2016h. Fixes
+          <ulink url="&lfs-ticket-root;3995">#3995</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Update to linux-4.8.3. Fixes
+          <ulink url="&lfs-ticket-root;3994">#3994</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-10-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - iproute2-4.8.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3992">#3992</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - tzdata-2016h へのアップデート。
+          <ulink url="&lfs-ticket-root;3995">#3995</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - linux-4.8.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3994">#3994</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-10-10</para>
       <itemizedlist>
         <listitem>
