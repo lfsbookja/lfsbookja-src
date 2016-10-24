@@ -125,14 +125,16 @@
 
 @x
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-        dbus-run-session, dbus-send, and dbus-uuidgen</seg>
+        dbus-run-session, dbus-send, dbus-test-tool, 
+        dbus-update-activation-environment, and dbus-uuidgen</seg>
         <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
         and /var/lib/dbus</seg>
 @y
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-        dbus-run-session, dbus-send, dbus-uuidgen</seg>
+        dbus-run-session, dbus-send, dbus-test-tool, 
+        dbus-update-activation-environment, dbus-uuidgen</seg>
         <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
@@ -146,7 +148,7 @@
 @z
 
 @x dbus-cleanup-sockets
-          <para>Used to clean up leftover sockets in a directory</para>
+          <para>is used to clean up leftover sockets in a directory</para>
 @y
           <para>
           ディレクトリ内に取り残されたソケットをクリアします。
@@ -154,7 +156,7 @@
 @z
 
 @x dbus-daemon
-          <para>The D-Bus message bus daemon</para>
+          <para>is the D-Bus message bus daemon</para>
 @y
           <para>
           D-Bus メッセージバスデーモン。
@@ -162,7 +164,7 @@
 @z
 
 @x dbus-launch
-          <para>Starts <command>dbus-daemon</command> from a shell
+          <para>starts <command>dbus-daemon</command> from a shell
           script</para>
 @y
           <para>
@@ -171,7 +173,7 @@
 @z
 
 @x dbus-monitor
-          <para>Monitors messages passing through a D-Bus message bus</para>
+          <para>monitors messages passing through a D-Bus message bus</para>
 @y
           <para>
           D-Bus メッセージバスを通じたメッセージ送信を監視します。
@@ -179,7 +181,7 @@
 @z
 
 @x dbus-run-session
-          <para>Starts a session bus instance of <command>dbus-daemon</command>
+          <para>starts a session bus instance of <command>dbus-daemon</command>
           from a shell script and starts a specified program in that
           session</para>
 @y
@@ -190,15 +192,33 @@
 @z
 
 @x dbus-send
-          <para>Sends a message to a D-Bus message bus</para>
+          <para>sends a message to a D-Bus message bus</para>
 @y
           <para>
           D-Bus メッセージバスにメッセージを送ります。
           </para>
 @z
 
+@x dbus-test-tool
+          <para>is a tool to help packages test
+          <application>D-Bus</application>.</para>
+@y
+          <para>
+          <application>D-Bus</application> のテストを補助するツールです。
+          </para>
+@z
+
+@x dbus-update-activation-environment
+          <para>updates environment variables that will be set for
+          <application>D-Bus</application> session services.</para>
+@y
+          <para>
+          <application>D-Bus</application> のセッションサービスに対して設定される環境変数を更新します。
+          </para>
+@z
+
 @x dbus-uuidgen
-          <para>Generates a universally unique ID</para>
+          <para>generates a universally unique ID</para>
 @y
           <para>
           ユニークIDを生成します。
@@ -206,7 +226,7 @@
 @z
 
 @x
-          <para>Contains API functions used to communicate with the D-Bus
+          <para>contains API functions used to communicate with the D-Bus
           message bus</para>
 @y
           <para>

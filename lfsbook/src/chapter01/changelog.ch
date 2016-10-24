@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2016-10-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to D-Bus-1.10.12. Fixes
+          <ulink url="&lfs-ticket-root;3993">#3993</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-10-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - D-Bus-1.10.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;3993">#3993</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-10-22</para>
       <itemizedlist>
         <listitem>
