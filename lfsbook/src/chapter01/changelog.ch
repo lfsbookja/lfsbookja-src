@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2016-10-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Moved /etc/resolv.conf symlink to Chapter 7.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-10-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - /etc/resolv.conf のシンボリックリンクを第7章に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-10-23</para>
       <itemizedlist>
         <listitem>

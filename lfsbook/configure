@@ -4033,7 +4033,7 @@ fi
 
 
 
-TARGETVER=svn-20161023
+TARGETVER=svn-20161027
 
 SVNVER=`grep 'ENTITY version ' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version         \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5

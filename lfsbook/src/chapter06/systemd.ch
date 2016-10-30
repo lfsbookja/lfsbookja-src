@@ -250,14 +250,6 @@
 @z
 
 @x
-    <para>Fix a broken symlink created by the systemd installation process:</para>
-@y
-    <para>
-    systemd のインストールによって生成される不適切なシンボリックリンクを再構成します。
-    </para>
-@z
-
-@x
     <para>Since the testsuite largely depends on the host system kernel
     configuration, some tests may fail. It also needs a modification in
     order not to look for a program that will be installed by Util-Linux

@@ -50,13 +50,13 @@
     basic network configuration. Additionally, since version 213, DNS name
     resolution can be handled by <command>systemd-resolved</command> in place
     of a static <filename>/etc/resolv.conf</filename> file. Both services are
-    enabled by default, and absolutely should not be disabled.</para>
+    enabled by default.</para>
 @y
     <para>
     systemd はバージョン 209 から、ネットワーク設定を行うデーモン <command>systemd-networkd</command> を提供するようになりました。
     このデーモンが基本的なネットワーク設定を行います。
     さらにバージョン 213 からは、DNS 名前解決を固定的に <filename>/etc/resolv.conf</filename> ファイルによって行っていたものが <command>systemd-resolved</command> により行うよう変更されています。
-    いずれのデーモンもデフォルトで有効となっており、無効化することは原則ありません。
+    いずれのデーモンもデフォルトで有効となっています。
     </para>
 @z
 
@@ -196,14 +196,13 @@
 
 @x
       <para>When using <command>systemd-resolved</command> for DNS
-      configuration, it is responsible for creating the
-      <filename>/etc/resolv.conf</filename> file. Since version 226, the
-      symlink for <filename>/etc/resolv.conf</filename> is created by systemd
-      when needed, so no further configuration is necessary.</para>
+      configuration, it creates the file
+      <filename>/run/systemd/resolve/resolv.conf</filename>. Create a
+      symlink in <filename>/etc</filename> to use the generatd file:</para>
 @y
       <para>
-      DNS 設定に <command>systemd-resolved</command> を用いる場合は <filename>/etc/resolv.conf</filename> ファイルを生成することが必要です。
-      systemd のバージョン 226 以降は、必要に応じて <filename>/etc/resolv.conf</filename> ファイルへのシンボリックリンクを生成されるので、それ以上の設定は不要です。
+      DNS 設定に <command>systemd-resolved</command> を用いると <filename>/run/systemd/resolve/resolv.conf</filename> ファイルが生成されます。
+      このファイルを利用するためのシンボリックリンクを <filename>/etc</filename> に生成します。
       </para>
 @z
 
