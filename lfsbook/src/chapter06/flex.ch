@@ -29,9 +29,25 @@
 @z
 
 @x
-    <para>Prepare Flex for compilation:</para>
+    <para>Fix an issue that was discovered after release:</para>
 @y
-    <para>&PreparePackage1;Flex&PreparePackage2;</para>
+    <para>
+    パッケージリリースの後に判明した問題をまず修正します。
+    </para>
+@z
+
+@x
+    <para>The build procedure assumes the <application>help2man</application>
+    program is available to create a man page from the executable --help option.
+    This is not present, so we use an environment variable to skip this process.
+    Now, prepare Flex for compilation:</para>
+@y
+    <para>
+    実行モジュールに --help オプションを指定した場合には man ページを生成するプログラム <application>help2man</application> が存在していることが前提となっています。
+    しかし現時点においてこのプログラムは存在していません。
+    そこで環境変数を用いて man ページの生成工程を回避することにします。
+    以下により Flex をコンパイルするための準備をします。
+    </para>
 @z
 
 @x
@@ -45,6 +61,14 @@
 @y
     <para>
     コンパイル結果をテストするために以下を実行します。(約 0.5 SBU)
+    </para>
+@z
+
+@x
+    <para>One test, <emphasis>cxx_restart</emphasis>, is known to fail.</para>
+@y
+    <para>
+    <emphasis>cxx_restart</emphasis> というテストだけは失敗します。
     </para>
 @z
 

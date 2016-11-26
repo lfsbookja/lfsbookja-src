@@ -284,12 +284,14 @@
         reboot, runlevel, shutdown, systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
-        systemd-inhibit, systemd-machine-id-setup, systemd-notify,
-        systemd-nspawn, systemd-path, systemd-resolve, systemd-run,
+        systemd-inhibit, systemd-machine-id-setup, systemd-mount, 
+        systemd-notify, systemd-nspawn, systemd-path, systemd-resolve, 
+        systemd-run, systemd-socket-activate,
         systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
         telinit, timedatectl, and udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
-        libnss_resolve.so.2, libsystemd.so, libsystemd-shared-231.so,
+        libnss_resolve.so.2, libnss_systemd.so.2, 
+        libsystemd.so, libsystemd-shared-231.so,
         and libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
@@ -304,12 +306,14 @@
         reboot, runlevel, shutdown, systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
-        systemd-inhibit, systemd-machine-id-setup, systemd-notify,
-        systemd-nspawn, systemd-path, systemd-resolve, systemd-run,
+        systemd-inhibit, systemd-machine-id-setup, systemd-mount, 
+        systemd-notify, systemd-nspawn, systemd-path, systemd-resolve, 
+        systemd-run, systemd-socket-activate,
         systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
         telinit, timedatectl, udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
-        libnss_resolve.so.2, libsystemd.so, libsystemd-shared-231.so,
+        libnss_resolve.so.2, libnss_systemd.so.2, 
+        libsystemd.so, libsystemd-shared-231.so,
         libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
@@ -584,6 +588,14 @@
           </para>
 @z
 
+@x systemd-mount
+          <para>is a tool to temporarily mount or auto-mount a drive.</para>
+@y
+          <para>
+          ドライブの一時的マウント、あるいは一時的な自動マウントを行うツールです。
+          </para>
+@z
+
 @x systemd-notify
           <para>Used by daemon scripts to notify the init system about status
           changes</para>
@@ -625,6 +637,15 @@
 @y
           <para>
           一時的な .service ユニットや .scope ユニットを生成および起動し、その指定コマンドを実行します。
+          </para>
+@z
+
+@x systemd-socket-activate
+          <para>is a tool to listen on socket devices and launch a process upon
+          connection.</para>
+@y
+          <para>
+          ソケットデバイスの情報を読み取ってコネクション上にてプロセスを起動するツールです。
           </para>
 @z
 

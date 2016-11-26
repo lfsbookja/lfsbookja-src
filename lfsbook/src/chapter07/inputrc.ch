@@ -20,25 +20,29 @@
 @z
 
 @x
-  <para>The <filename>inputrc</filename> file handles keyboard mapping for
-  specific situations. This file is the startup file used by Readline &mdash; the
-  input-related library &mdash; used by Bash and most other shells.</para>
+  <para>The <filename>inputrc</filename> file is the configuration file for
+  Readline library, which provides editing capabilities while the user is
+  entering  a line from the terminal. It works by tranlating keyboard inputs
+  into specific actions.  Readline is used by Bash and most other shells as
+  well as many other applications.</para>
 @y
   <para>
-  <filename>inputrc</filename> ファイルはキーボードに応じたキーボードマップを定めます。
-  このファイルは入力に関連するライブラリ Readline が利用するもので、このライブラリは Bash などのシェルから呼び出されます。
+  <filename>inputrc</filename> ファイルは Readline ライブラリに対する設定ファイルです。
+  この Readline ライブラリは、ユーザーが端末から文字列入力を行う際の編集機能を提供するものです。
+  キーボード入力内容は所定の処理動作に変換され解釈されます。
+  Readline ライブラリは Bash をはじめとする各種シェルや他の多くのアプリケーションにおいて利用されています。
   </para>
 @z
 
 @x
-  <para>Most people do not need user-specific keyboard mappings so the command
+  <para>Most people do not need user-specific functionality so the command
   below creates a global <filename>/etc/inputrc</filename> used by everyone who
   logs in. If you later decide you need to override the defaults on a per-user
   basis, you can create a <filename>.inputrc</filename> file in the user's home
   directory with the modified mappings.</para>
 @y
   <para>
-  ユーザー固有のキーボードマップを必要となるのはまれなので、以下の <filename>/etc/inputrc</filename> ファイルによって、ログインユーザーすべてに共通するグローバルな定義を生成します。
+  ユーザー固有の機能を必要となるのはまれなので、以下の <filename>/etc/inputrc</filename> ファイルによって、ログインユーザーすべてに共通するグローバルな定義を生成します。
   各ユーザーごとにこのデフォルト定義を上書きする必要が出てきた場合は、ユーザーのホームディレクトリに <filename>.inputrc</filename> ファイルを生成して、修正マップを定義することもできます。
   </para>
 @z

@@ -54,6 +54,142 @@
 @z
 
 @x
+      <para>2016-11-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to Linux-4.8.10. Fixes
+          <ulink url="&lfs-ticket-root;4005">#4005</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added flex-2.6.2-fixes-1.patch. Fixes
+          <ulink url="&lfs-ticket-root;4003">#4003</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Fix issue with systemd and sulogin. Fixes
+          <ulink url="&lfs-ticket-root;4006">#4006</ulink>. Thanks to
+          Eric S. Stone for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-11-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Linux-4.8.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4005">#4005</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - flex-2.6.2-fixes-1.patch の追加。
+          <ulink url="&lfs-ticket-root;4003">#4003</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - systemd と sulogin の問題を修正。
+          <ulink url="&lfs-ticket-root;4006">#4006</ulink> を Fix に。
+          報告者 Eric S. Stone に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-11-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to Linux-4.8.8. Fixes
+          <ulink url="&lfs-ticket-root;4002">#4002</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-232. Fixes
+          <ulink url="&lfs-ticket-root;4000">#4000</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-11-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Linux-4.8.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4002">#4002</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-232 へのアップデート。
+          <ulink url="&lfs-ticket-root;4000">#4000</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-11-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.0.069. Fixes 
+          <ulink url="&lfs-ticket-root;4001">#4001</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2016i. Fixes 
+          <ulink url="&lfs-ticket-root;3999">#3999</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.29. Fixes 
+          <ulink url="&lfs-ticket-root;3909">#3998</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flex-2.6.2. Fixes 
+          <ulink url="&lfs-ticket-root;3997">#3997</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.8.6. Fixes 
+          <ulink url="&lfs-ticket-root;3996">#3996</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.29. Fixes 
+          <ulink url="&lfs-ticket-root;3987">#3987</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-11-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.0.069 へのアップデート。
+          <ulink url="&lfs-ticket-root;4001">#4001</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2016i へのアップデート。
+          <ulink url="&lfs-ticket-root;3999">#3999</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.29 へのアップデート。
+          <ulink url="&lfs-ticket-root;3909">#3998</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flex-2.6.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3997">#3997</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.8.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3996">#3996</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.29 へのアップデート。
+          <ulink url="&lfs-ticket-root;3987">#3987</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-11-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Clarified the function of /etc/inputrc.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-11-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /etc/inputrc の機能を明確化。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-10-27</para>
       <itemizedlist>
         <listitem>

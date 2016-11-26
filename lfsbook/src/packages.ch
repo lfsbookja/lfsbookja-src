@@ -113,11 +113,11 @@
 
 @x
 <!ENTITY linux-headers-ch5-sbu "less than 0.1 SBU">
-<!ENTITY linux-headers-ch6-du "755 MB">
+<!ENTITY linux-headers-ch6-du "764 MB">
 <!ENTITY linux-headers-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY linux-headers-ch5-sbu "0.1 SBU 以下">
-<!ENTITY linux-headers-ch6-du "755 MB">
+<!ENTITY linux-headers-ch6-du "764 MB">
 <!ENTITY linux-headers-ch6-sbu "0.1 SBU 以下">
 @z
 
