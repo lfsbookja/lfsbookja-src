@@ -214,6 +214,14 @@
 @z
 
 @x
+    <para>Fix an out of memory issue that affects recent kernels:</para>
+@y
+    <para>
+    最新のカーネルでの out of memory 問題を修正します。
+    </para>
+@z
+
+@x
     <para>Compile the kernel image and modules:</para>
 @y
     <para>カーネルイメージとモジュールをコンパイルします。</para>

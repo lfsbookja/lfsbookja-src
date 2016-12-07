@@ -54,10 +54,52 @@
 @z
 
 @x
+      <para>2016-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to coreutils-8.26. Fixes
+          <ulink url="&lfs-ticket-root;4010">#4010</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Update to dbus-1.10.14. Fixes
+          <ulink url="&lfs-ticket-root;4009">#4009</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to linux-4.8.12 and fix recent OOM issue. Fixes
+          <ulink url="&lfs-ticket-root;4008">#4008</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to tzdata-2016j. Fixes
+          <ulink url="&lfs-ticket-root;4007">#4007</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - coreutils-8.26 へのアップデート。
+          <ulink url="&lfs-ticket-root;4010">#4010</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - dbus-1.10.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;4009">#4009</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - linux-4.8.12 へのアップデートと最新の out of memory 問題への対処。
+          <ulink url="&lfs-ticket-root;4008">#4008</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - tzdata-2016j へのアップデート。
+          <ulink url="&lfs-ticket-root;4007">#4007</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-11-22</para>
       <itemizedlist>
         <listitem>
-          <para>[dj] - Update to Linux-4.8.10. Fixes
+          <para>[dj] - Update to linux-4.8.10. Fixes
           <ulink url="&lfs-ticket-root;4005">#4005</ulink>.</para>
         </listitem>
         <listitem>
@@ -74,7 +116,7 @@
       <para>2016-11-22</para>
       <itemizedlist>
         <listitem>
-          <para>[dj] - Linux-4.8.10 へのアップデート。
+          <para>[dj] - linux-4.8.10 へのアップデート。
           <ulink url="&lfs-ticket-root;4005">#4005</ulink> を Fix に。</para>
         </listitem>
         <listitem>
@@ -93,7 +135,7 @@
       <para>2016-11-17</para>
       <itemizedlist>
         <listitem>
-          <para>[renodr] - Update to Linux-4.8.8. Fixes
+          <para>[renodr] - Update to linux-4.8.8. Fixes
           <ulink url="&lfs-ticket-root;4002">#4002</ulink>.</para>
         </listitem>
         <listitem revision="systemd">
@@ -105,7 +147,7 @@
       <para>2016-11-17</para>
       <itemizedlist>
         <listitem>
-          <para>[renodr] - Linux-4.8.8 へのアップデート。
+          <para>[renodr] - linux-4.8.8 へのアップデート。
           <ulink url="&lfs-ticket-root;4002">#4002</ulink> を Fix に。</para>
         </listitem>
         <listitem revision="systemd">
@@ -209,7 +251,7 @@
       <para>2016-10-23</para>
       <itemizedlist>
         <listitem>
-          <para>[renodr] - Update to D-Bus-1.10.12. Fixes
+          <para>[renodr] - Update to dbus-1.10.12. Fixes
           <ulink url="&lfs-ticket-root;3993">#3993</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -217,7 +259,7 @@
       <para>2016-10-23</para>
       <itemizedlist>
         <listitem>
-          <para>[renodr] - D-Bus-1.10.12 へのアップデート。
+          <para>[renodr] - dbus-1.10.12 へのアップデート。
           <ulink url="&lfs-ticket-root;3993">#3993</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
