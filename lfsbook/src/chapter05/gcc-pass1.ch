@@ -98,7 +98,7 @@
     Finally, we use <command>touch</command> to update the timestamp on the
     copied files.  When used in conjunction with <command>cp -u</command>, this
     prevents unexpected changes to the original files in case the commands are
-    inadvertently run twice.  </para>
+    inadvertently run twice.</para>
 @y
     <para>
     上のコマンドがよく分からない場合は一つ一つ読み下していってください。
@@ -110,6 +110,15 @@
     この際に<quote>/tools/lib/</quote>の終わりには<quote>/</quote>が必要となります。
     最後に <command>touch</command> によってコピーしたファイルのタイムスタンプを更新します。
     <command>cp -u</command> を用いるのは、誤ってコマンドを二度起動したとしてもオリジナルファイルを壊さないようにするためです。
+    </para>
+@z
+
+@x
+    <para>Finally, on x86_64 hosts, set the default directory name for
+    64-bit libraries to <quote>lib</quote>:</para>
+@y
+    <para>
+    そしてホストが x86_64 である場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>とします。
     </para>
 @z
 

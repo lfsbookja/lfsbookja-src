@@ -73,6 +73,15 @@
 @z
 
 @x
+    <para>If building on x86_64, change the default directory name for 64-bit
+    libraries to <quote>lib</quote>:</para>
+@y
+    <para>
+    x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
+    </para>
+@z
+
+@x
     <para>As in the first build of GCC it requires the GMP, MPFR and MPC
     packages. Unpack the tarballs and move them into the required directory
     names:</para>

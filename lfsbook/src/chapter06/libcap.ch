@@ -74,6 +74,18 @@
           </para>
 @z
 
+@x lib=lib
+          <para>This parameter installs the library in
+          <filename>$prefix/lib</filename> rather than
+          <filename>$prefix/lib64</filename> on x86_64. It has no effect on
+          x86.</para>
+@y
+          <para>
+          このパラメーターは x86_64 においてライブラリを <filename>$prefix/lib64</filename> ではなく <filename>$prefix/lib</filename> にインストールします。
+          x86 においては何も効果はありません。
+          </para>
+@z
+
 @x
     <para>The shared library needs to be moved to
     <filename class="directory">/lib</filename>, and as a result the

@@ -37,6 +37,15 @@
 @z
 
 @x
+    <para>If building on x86_64, change the default direcotory name for 64-bit
+    libraries to <quote>lib</quote>:</para>
+@y
+    <para>
+    x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC in a dedicated build directory:</para>
 @y
     <para>
@@ -218,20 +227,16 @@
 @x
   <para>Depending on your machine architecture, the above may differ slightly,
   the difference usually being the name of the directory
-  after <filename class="directory">/usr/lib/gcc</filename>. If your machine is
-  a 64-bit system, you may also see a directory named <filename class="directory">lib64</filename>
-  towards the end of the string. The important thing to
-  look for here is that <command>gcc</command> has found all three
+  after <filename class="directory">/usr/lib/gcc</filename>. The important
+  thing to look for here is that <command>gcc</command> has found all three
   <filename>crt*.o</filename> files under the
   <filename class="directory">/usr/lib</filename> directory.</para>
 @y
   <para>
   作業しているマシンアーキテクチャーによっては、上の結果が微妙に異なるかもしれません。
   その違いは、たいていは <filename class="directory">/usr/lib/gcc</filename> の次のディレクトリ名にあります。
-  作業マシンが 64 ビット機である場合、ディレクトリ名の後ろの方に <filename
-  class="directory">lib64</filename> という名が出てくることになります。
-  ここで確認すべき重要なポイントは <command>gcc</command> が <filename
-  class="directory">/usr/lib</filename> ディレクトリ配下に三つのファイル <filename>crt*.o</filename> を見つけ出しているかどうかです。
+  注意すべき重要な点は <command>gcc</command> が <filename>crt*.o</filename> という三つのファイルを <filename
+  class="directory">/usr/lib</filename> 配下から探し出しているということです。
   </para>
 @z
 

@@ -54,6 +54,61 @@
 @z
 
 @x
+      <para>2016-12-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Remove {,/usr}/lib64 symlinks for x86_64 builds. Add
+          /lib64 directory with symlinks to dynamic loader. Adjust installation
+          of glibc, gcc, and libcap to account for filesystemd changes.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-12-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - x86_64 ビルドにて {,/usr}/lib64 シンボリックリンクを削除。
+          ダイナミックローダーに対しては /lib64 ディレクトリへのシンボリックリンクを追加。
+          filesystemd 変更に伴い glibc, gcc, libcap のインストール手順を調整。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2016-12-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.8.14. Fixes
+          <ulink url="&lfs-ticket-root;4012">#4012</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-2.27. Fixes
+          <ulink url="&lfs-ticket-root;4011">#4011</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a note about a false Error in texinfo 
+          configure phase in Chapter 5. Fixes
+          <ulink url="&lfs-ticket-root;4004">#4004</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-12-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.8.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;4012">#4012</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-2.27 へのアップデート。
+          <ulink url="&lfs-ticket-root;4011">#4011</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第5章の texinfo の configure 処理での false エラーについて言及。
+          <ulink url="&lfs-ticket-root;4004">#4004</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-12-03</para>
       <itemizedlist>
         <listitem>

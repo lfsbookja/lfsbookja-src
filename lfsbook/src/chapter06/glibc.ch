@@ -61,6 +61,17 @@
 @z
 
 @x
+    <para>Create a symlink for LSB compliance and, for x86_64, a
+    compatibility symlink required for the dynamic loader to function
+    correctly:</para>
+@y
+    <para>
+    LSB コンプライアンスに従ったシンボリックリンクを作成します。
+    また x86_64 に対してはダイナミックローダーが正しく機能するために必要なシンボリックリンクを作成します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc 
     in a dedicated build directory:</para>
 @y

@@ -38,6 +38,17 @@
 @z
 
 @x
+      <para>As part of the configure process, a test is made that indicates an
+      error for TestXS_la-TestXS.lo.  This is not relevant for LFS and should be
+      ignored.</para>
+@y
+      <para>
+      configure 処理の途中にテストが実行され TestXS_la-TestXS.lo に対してのエラーが示されます。
+      これは LFS においては関係がないため無視して構いません。
+      </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
