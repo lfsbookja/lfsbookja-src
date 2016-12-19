@@ -54,12 +54,30 @@
 @z
 
 @x
+      <para>2016-12-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update toolchain sanity checks to use values for
+          x86_64.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-12-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - x86_64 の出力を利用しているツールチェーンの健全性チェックを更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-12-17</para>
       <itemizedlist>
         <listitem>
           <para>[dj] - Remove {,/usr}/lib64 symlinks for x86_64 builds. Add
           /lib64 directory with symlinks to dynamic loader. Adjust installation
-          of glibc, gcc, and libcap to account for filesystemd changes.</para>
+          of glibc, gcc, and libcap to account for directory layout
+          changes.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -68,7 +86,7 @@
         <listitem>
           <para>[dj] - x86_64 ビルドにて {,/usr}/lib64 シンボリックリンクを削除。
           ダイナミックローダーに対しては /lib64 ディレクトリへのシンボリックリンクを追加。
-          filesystemd 変更に伴い glibc, gcc, libcap のインストール手順を調整。</para>
+          ディレクトリ配置の変更に伴い glibc, gcc, libcap のインストール手順を調整。</para>
         </listitem>
       </itemizedlist>
 @z

@@ -99,10 +99,12 @@
 @z
 
 @x
-  <note><para>On 64-bit systems the interpreter should be
-  /lib64/ld-linux-x86-64.so.2.</para></note>
+  <note><para>On 32-bit systems the interpreter should be
+  /lib/ld-linux.so.2.</para></note>
 @y
-  <note><para>64ビットシステムでは /lib64/ld-linux-x86-64.so.2 になります。</para></note>
+  <note><para>
+  32ビットシステムでは /lib/ld-linux.so.2 になります。
+  </para></note>
 @z
 
 @x
@@ -119,18 +121,6 @@
   <para os="f">
   上のコマンドの出力は以下のようになるはずです。
   </para>
-@z
-
-@x
-   <note><para>On 64-bit systems, the path above will be
-   /usr/lib/gcc/x86_64-pc-linux-gnu/&gcc-version;/../../../../lib64/.  This
-   reduces to /usr/lib64 and /usr/lib64 is a symlink that points to
-   /usr/lib.</para></note>
-@y
-   <note><para>64ビットシステムでは、上のパスは /usr/lib/gcc/x86_64-pc-linux-gnu/&gcc-version;/../../../../lib64/ となります。
-   これは /usr/lib64 を意味します。
-   /usr/lib64 はそもそもシンボリックリンクであり、結局はそれが指し示す /usr/lib になります。
-   </para></note>
 @z
 
 @x
@@ -176,12 +166,10 @@
 @z
 
 @x
-  <para os="n">The output of the last command (allowing for a lib64 directory 
-  on 64-bit hosts) should be:</para>
+  <para os="n">The output of the last command should be:</para>
 @y
   <para os="n">
   最後のコマンドの出力は以下のようになるはずです。
-  (64 ビットマシンであれば lib64 ディレクトリになります。)
   </para>
 @z
 
@@ -194,14 +182,12 @@
 @z
 
 @x
-  <para os="r"> The output of the last command should be (allowing for
-  platform-specific differences in dynamic linker name and a lib64 directory on
-  64-bit hosts):</para>
+  <para os="r">The output of the last command should be (allowing for
+  platform-specific differences in dynamic linker name):</para>
 @y
   <para os="r">
   上のコマンドの出力は以下のようになるはずです。
-  (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。
-  また 64 ビットマシンであれば lib64 ディレクトリとなります。)
+  (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。)
   </para>
 @z
 

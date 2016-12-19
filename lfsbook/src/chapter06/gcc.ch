@@ -37,7 +37,7 @@
 @z
 
 @x
-    <para>If building on x86_64, change the default direcotory name for 64-bit
+    <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
     <para>
@@ -150,7 +150,8 @@
 
 @x
     <para>Results can be compared with those located at <ulink
-    url="&test-results;"/> and <ulink url="http://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
+    url="&test-results;"/> and
+    <ulink url="http://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
 @y
     <para>
     テスト結果については <ulink
@@ -263,12 +264,12 @@
 @z
 
 @x
-   <para>A 64-bit system may see a few different directories. For example, here
-   is the output from an x86_64 machine:</para>
+   <para>A 32-bit system may see a few different directories. For example, here
+   is the output from an i686 machine:</para>
 @y
    <para>
-   64 ビットシステムではいくつか異なるディレクトリが出力されます。
-   例えば x86_64 マシンであれば、その出力は以下のようになります。
+   32ビットシステムではディレクトリが多少異なります。
+   以下は i686 マシンでの出力例です。
    </para>
 @z
 
