@@ -54,6 +54,72 @@
 @z
 
 @x
+      <para>2016-12-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-6.3.0. Fixes
+          <ulink url="&lfs-ticket-root;4018">#4018</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-6.1.2. Fixes
+          <ulink url="&lfs-ticket-root;4017">#4017</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.9.0. Fixes
+          <ulink url="&lfs-ticket-root;4016">#4016</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.09. Fixes
+          <ulink url="&lfs-ticket-root;4015">#4015</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.7.6.1. Fixes
+          <ulink url="&lfs-ticket-root;4014">#4014</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.9. Fixes
+          <ulink url="&lfs-ticket-root;4013">#4013</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2.1. Fixes
+          <ulink url="&lfs-ticket-root;4013">#4013</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2016-12-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-6.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4018">#4018</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gmp-6.1.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4017">#4017</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.9.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4016">#4016</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.09 へのアップデート。
+          <ulink url="&lfs-ticket-root;4015">#4015</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.7.6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4014">#4014</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4013">#4013</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4013">#4013</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-12-18</para>
       <itemizedlist>
         <listitem>

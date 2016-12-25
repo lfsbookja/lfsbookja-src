@@ -65,6 +65,14 @@
 @z
 
 @x
+    <para>Three tests are known ot fail.</para>
+@y
+    <para>
+    テストが失敗するものが3つあります。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

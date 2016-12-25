@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>First, fix a segfault in <command>shuf</command> program:</para>
-@y
-    <para>
-    <command>shuf</command> プログラムにて segfault が発生するものを修正します。
-    </para>
-@z
-
-@x
     <para>POSIX requires that programs from Coreutils recognize character
     boundaries correctly even in multibyte locales. The following patch fixes
     this non-compliance and other internationalization-related bugs.</para>
@@ -149,11 +141,11 @@
 @z
 
 @x
-    <para>The stty-pairs test is known to fail on a virtual console, but
+    <para>The test-getlogin test is known to fail on a virtual console, but
     passes if run in a X terminal.</para>
 @y
     <para>
-    stty-pairs テストは仮想端末上では失敗します。
+    test-getlogin テストは仮想端末上では失敗します。
     しかし X 端末では成功します。
     </para>
 @z

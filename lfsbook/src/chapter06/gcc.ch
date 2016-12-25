@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>First fix a problem identified upstream:</para>
-@y
-    <para>
-    はじめにアップストリームが認識している不具合を修正します。
-    </para>
-@z
-
-@x
     <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
@@ -163,7 +155,7 @@
 @x
     <para>A few unexpected failures cannot always be avoided. The GCC developers
     are usually aware of these issues, but have not resolved them yet.
-    In particular, two tests in the libstdc++ test suite are known to fail
+    In particular, five tests in the libstdc++ test suite are known to fail
     when running as the root user as we do here.
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
@@ -171,7 +163,7 @@
     <para>
     テストに失敗することがありますが、これを回避することはできません。
     GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
-    特に今行っているように root ユーザーにてテストを実施すると libstdc++ に関するテストが２つ失敗します。
+    特に今行っているように root ユーザーにてテストを実施すると libstdc++ に関するテストが5つ失敗します。
     上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
 @z

@@ -40,7 +40,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
+@x --disable-setuid
           <para>This disables making the <command>man</command> program setuid
           to user <systemitem class="username">man</systemitem>.</para>
 @y
@@ -50,7 +50,16 @@
           </para>
 @z
 
-@x
+@x --enable-cache-owner=bin
+          <para>This makes the system-wide cache files be owned by user
+          bin.</para>
+@y
+          <para>
+          システムワイドなキャッシュファイルの所有ユーザーを bin とします。
+          </para>
+@z
+
+@x --with-...
           <para>These three parameters are used to set some default programs.
           <command>lynx</command> is a text-based web browser (see
           BLFS for installation instructions), <command>vgrind</command>
