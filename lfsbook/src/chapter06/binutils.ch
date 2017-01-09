@@ -72,6 +72,29 @@
 @z
 
 @x
+      <title>The meaning of the configure parameters:</title>
+@y
+      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;:</title>
+@z
+
+@x --enable-plugins
+          <para>Enables plugin support for the linker.</para>
+@y
+          <para>
+          リンカーに対してプラグインサポートを有効にします。
+          </para>
+@z
+
+@x --with-system-zlib
+          <para>Use the installed zlib library rather than building the
+          included version.</para>
+@y
+          <para>
+          本パッケージに含まれる zlib をビルドするのではなく、既にインストール済の zlib を用いるようにします。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

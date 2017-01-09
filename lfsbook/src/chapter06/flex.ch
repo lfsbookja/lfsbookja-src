@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>Fix an issue that was discovered after release:</para>
-@y
-    <para>
-    パッケージリリースの後に判明した問題をまず修正します。
-    </para>
-@z
-
-@x
     <para>The build procedure assumes the <application>help2man</application>
     program is available to create a man page from the executable --help option.
     This is not present, so we use an environment variable to skip this process.

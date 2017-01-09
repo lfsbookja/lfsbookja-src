@@ -54,6 +54,99 @@
 @z
 
 @x
+      <para>2017-01-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.9.1.tar.xz. Fixes
+          <ulink url="&lfs-ticket-root;4028">#4028</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sed-4.3.tar.xz. Fixes
+          <ulink url="&lfs-ticket-root;4025">#4025</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gperf-3.1. Fixes
+          <ulink url="&lfs-ticket-root;4026">#4026</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-01-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.9.1.tar.xz へのアップデート。
+          <ulink url="&lfs-ticket-root;4028">#4028</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sed-4.3.tar.xz へのアップデート。
+          <ulink url="&lfs-ticket-root;4025">#4025</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gperf-3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4026">#4026</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-01-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to zlib-1.2.10. Fixes
+          <ulink url="&lfs-ticket-root;4023">#4023</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to m4-1.4.18. Fixes
+          <ulink url="&lfs-ticket-root;4022">#4022</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Make binutils build against system zlib and enable
+          plugins for LTO.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-01-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - zlib-1.2.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4023">#4023</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - m4-1.4.18 へのアップデート。
+          <ulink url="&lfs-ticket-root;4022">#4022</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - binutils のビルドにおいてインストール済の zlib を用いるようにし、LTO プラグインを有効に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to flex-2.6.3. Fixes
+          <ulink url="&lfs-ticket-root;4020">#4020</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.2.3. Fixes
+          <ulink url="&lfs-ticket-root;4021">#4021</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - flex-2.6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4020">#4020</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz-5.2.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4021">#4021</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2016-12-21</para>
       <itemizedlist>
         <listitem>

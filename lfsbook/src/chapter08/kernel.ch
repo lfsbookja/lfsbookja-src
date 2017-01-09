@@ -126,6 +126,39 @@
 @z
 
 @x
+      <para>If your host hardware is using UEFI, then the 'make defconfig'
+      above should automatically add in some EFI-related kernel options.</para>
+@y
+      <para>
+      ホストシステムが UEFI を利用している場合は、上の 'make
+      defconfig' によって EFI に関連するカーネルオプションが自動的に追加されます。
+      </para>
+@z
+
+@x
+      <para>In order to allow your LFS kernel to be booted from within your
+      host's UEFI boot environment, your kernel must have this option
+      selected:</para>
+@y
+      <para>
+      LFS のカーネルを UEFI を利用したホストシステム環境内からブートする場合は本オプションを指定する必要があります。
+      </para>
+@z
+
+@x
+      <para>A fuller description of managing UEFI environments from within LFS
+      is covered by the lfs-uefi.txt hint at
+      <ulink 
+        url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt"/>.
+      </para>
+@y
+      <para>
+      LFS 環境にて UEFI を取り扱う詳細な方法は lfs-uefi.txt ヒント <ulink 
+        url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt"/> に示されているので参照してください。
+      </para>
+@z
+
+@x
       <title>The rationale for the above configuration items:</title>
 @y
       <title>上の設定項目の説明</title>

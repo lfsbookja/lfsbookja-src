@@ -37,6 +37,14 @@
 @z
 
 @x
+    <para>Next, remove an unneeded line that causes a build failure:</para>
+@y
+    <para>
+    そしてビルド失敗の原因となる不要な行を削除します。
+    </para>
+@z
+
+@x
     <para>Next, add a workaround to prevent the /tools directory from being 
     hard coded into Eudev binary files library locations:</para>
 @y

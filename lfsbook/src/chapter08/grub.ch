@@ -59,24 +59,20 @@
 @z
 
 @x
-    <note><para>Most newer systems now come with system firmware that is in
-    UEFI (Unified Extensible Firmware Interface) mode by default. To boot LFS
-    on these systems using the instructions here, the UEFI Mode and Secure Boot
-    capabilities need to be turned off. There are ways to boot with these
-    capabilities still enabled, but then are not covered here. For details, 
-    see <ulink
-    url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt"> 
-    the lfs-uefi.txt hint</ulink> at
-    http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt.</para></note>
+        To boot LFS on host systems that have UEFI enabled, the kernel needs to
+        have been built with the CONFIG_EFI_STUB capabality described in the
+        previous section.  However, LFS can be booted using GRUB2 without such
+        an addition. To do this, the UEFI Mode and Secure Boot capabilities in
+        the host system's BIOS need to be turned off.  For details, see <ulink
+        url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt">
+        the lfs-uefi.txt hint</ulink> at
+        http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt.
 @y
-    <note><para>
-    最新のシステムにはシステムファームウェアに UEFI ((Unified Extensible Firmware Interface) モードがデフォルトで採用されています。
-    本節に示す手順に基づいてそのような最新システム上にて LFS を起動させる場合、UEFI モードやセキュアブート機能は無効にする必要があります。
-    一方、それらの機能を有効にしつつ起動できるようにする方法はいくつかあるのですが、ここでは詳細に説明しません。
-    詳しくは <ulink
-    url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt">the
-    lfs-uefi.txt hint</ulink> を参照してください。
-    </para></note>
+        UEFI ((Unified Extensible Firmware Interface) モードを有効にしたホストにて LFS をビルドする場合は、前節で説明した CONFIG_EFI_STUB を有効にしてカーネルをビルドする必要があります。
+        しかし LFS は GRUB2 にそのような機能がなくても起動できます。
+        これを為すには、ホストシステムの UEFI モードやセキュアブート機能は無効にする必要があります。
+        詳しくは <ulink
+        url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt">http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt</ulink> を参照してください。
 @z
 
 @x
