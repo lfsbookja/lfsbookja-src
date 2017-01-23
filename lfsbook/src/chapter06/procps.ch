@@ -68,6 +68,16 @@
 @z
 
 @x
+    <para>One ps test may fail, but passes if the tests are rerun at 
+    the end of Chapter 6.</para>
+@y
+    <para>
+    ps に関するテストが1つ失敗します。
+    しかしこれは第6章をすべて終えてから実行すれば成功します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

@@ -133,6 +133,16 @@
 @z
 
 @x
+    <note><para>Several tests related to zlib will fail due to using
+    the system version of zlib instead of the internal version.</para></note>
+@y
+    <note><para>
+    zlib を利用しているテストの中には失敗するものが出てきます。
+    これは同時配布される zlib ではなくシステムにインストール済の zlib を利用することが原因です。
+    </para></note>
+@z
+
+@x
     <para>Install the package and clean up:</para>
 @y
     <para>パッケージはインストールしクリーンアップします。</para>

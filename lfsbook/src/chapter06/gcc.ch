@@ -65,9 +65,9 @@
 @z
 
 @x
-      <title>The meaning of the new configure option:</title>
+      <title>The meaning of the new configure parameters:</title>
 @y
-      <title>&MeaningOfOption1;Configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfParameter1;Configure&MeaningOfParameter2;:</title>
 @z
 
 @x SED=sed

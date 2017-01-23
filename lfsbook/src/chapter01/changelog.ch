@@ -57,6 +57,56 @@
       <para>2017-01-08</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to linux-4.9.5.tar.xz. Fixes
+          <ulink url="&lfs-ticket-root;4030">#4030</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.0.4. Fixes
+          <ulink url="&lfs-ticket-root;4029">#4029</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.24.1. Fixes
+          <ulink url="&lfs-ticket-root;4031">#4031</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zlib-1.2.11. Fixes
+          <ulink url="&lfs-ticket-root;4032">#4032</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.29.1. Fixes
+          <ulink url="&lfs-ticket-root;4034">#4034</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-01-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.9.5.tar.xz へのアップデート。
+          <ulink url="&lfs-ticket-root;4030">#4030</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.0.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4029">#4029</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.24.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4031">#4031</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - zlib-1.2.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4032">#4032</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.29.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4034">#4034</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-01-08</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to linux-4.9.1.tar.xz. Fixes
           <ulink url="&lfs-ticket-root;4028">#4028</ulink>.</para>
         </listitem>

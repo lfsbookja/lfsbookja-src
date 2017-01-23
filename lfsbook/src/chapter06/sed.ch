@@ -26,7 +26,7 @@
 @z
 
 @x
-    <para>First fix an issue in the LFS envronment and remove a failing test:</para>
+    <para>First fix an issue in the LFS environment and remove a failing test:</para>
 @y
     <para>
     はじめに LFS 環境にて問題となる箇所を修正し、失敗するテストを削除します。
