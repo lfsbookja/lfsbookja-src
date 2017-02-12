@@ -111,14 +111,14 @@
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
           <para>Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
-                Grep, GTK+2, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
+                Grep, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
                 Shadow, Tar, Util-linux, Zlib</para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
           <para>Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
-                Grep, GTK+2, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
+                Grep, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
                 Shadow, Tar, Util-linux, Zlib</para>
         </listitem>
 @z
@@ -198,14 +198,14 @@
         <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
           <para>Alsa, ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
-          Gdk-pixbuf, Glib2, Icon-naming-utils, Libjpeg-turbo, Libpng, Libtiff,
+          Gdk-pixbuf, Glib2, GTK+2, Icon-naming-utils, Libjpeg-turbo, Libpng, Libtiff,
           Libxml2, MesaLib, Pango, Qt4, Xdg-utils, Xorg</para>
         </listitem>
 @y
         <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
           <para>Alsa, ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
-          Gdk-pixbuf, Glib2, Icon-naming-utils, Libjpeg-turbo, Libpng, Libtiff,
+          Gdk-pixbuf, Glib2, GTK+2, Icon-naming-utils, Libjpeg-turbo, Libpng, Libtiff,
           Libxml2, MesaLib, Pango, Qt4, Xdg-utils, Xorg</para>
         </listitem>
 @z

@@ -92,6 +92,14 @@
 @z
 
 @x
+    <para>Fix a security issue identified upstream:</para>
+@y
+    <para>
+    アップストリームが認識しているセキュリティ問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Shadow for compilation:</para>
 @y
     <para>&PreparePackage1;Shadow&PreparePackage2;</para>

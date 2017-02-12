@@ -54,7 +54,139 @@
 @z
 
 @x
-      <para>2017-01-08</para>
+      <para>2017-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to grep-3.0.  Fixes
+          <ulink url="&lfs-ticket-root;4045">#4045</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.9.9.  Fixes
+          <ulink url="&lfs-ticket-root;4046">#4046</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grep-3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4045">#4045</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.9.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4046">#4046</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Restore chapter 5 build of bison for binutils.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Build gold linker with binutils. The bfd linker remains
+          default.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - binutils のために第5章での bison ビルドを復活。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - binutils にてゴールドリンカー (gold linker) をビルドする。
+          bfd リンカーはデフォルトのままに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-02-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add bash-4.4 upstream fixes patch. </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-02-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash-4.4 のアップストリームによるパッチを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.25.  Fixes
+          <ulink url="&lfs-ticket-root;4043">#4043</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Revert gperf to version 3.0.4. Fixes
+          <ulink url="&lfs-ticket-root;4044">#4044</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.9.8.tar.xz. Fixes
+          <ulink url="&lfs-ticket-root;4036">#4036</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to check-0.11.0. Fixes
+          <ulink url="&lfs-ticket-root;4035">#4035</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.4. Fixes
+          <ulink url="&lfs-ticket-root;4037">#4037</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.43.4. Fixes
+          <ulink url="&lfs-ticket-root;4039">#4039</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sed-4.4. Fixes
+          <ulink url="&lfs-ticket-root;4041">#4041</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc-2.25 へのアップデート。
+          <ulink url="&lfs-ticket-root;4043">#4043</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gperf のバージョンを 3.0.4 へ戻す。
+          <ulink url="&lfs-ticket-root;4044">#4044</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.9.8.tar.xz へのアップデート。
+          <ulink url="&lfs-ticket-root;4036">#4036</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - check-0.11.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4035">#4035</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4037">#4037</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.43.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4039">#4039</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sed-4.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4041">#4041</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-01-22</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to linux-4.9.5.tar.xz. Fixes

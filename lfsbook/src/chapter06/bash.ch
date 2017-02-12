@@ -26,6 +26,14 @@
 @z
 
 @x
+    <para>Incorporate some upstream fixes:</para>
+@y
+    <para>
+    アップストリームのパッチを適用します。
+    </para>
+@z
+
+@x
     <para>Prepare Bash for compilation:</para>
 @y
     <para>&PreparePackage1;Bash&PreparePackage2;</para>

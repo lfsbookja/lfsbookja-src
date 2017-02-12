@@ -77,6 +77,24 @@
       <title>&MeaningOfParameter1;configure&MeaningOfParameter2;:</title>
 @z
 
+@x --enable-gold
+          <para>Build the gold linker and install it as ld.gold (along side the
+          default linker).</para>
+@y
+          <para>
+          ゴールドリンカー (gold linker) をビルドし ld.gold としてインストールします。
+          </para>
+@z
+
+@x --enable-ld=default
+          <para>Build the original bdf linker and install it as both ld (the
+          default linker) and ld.bfd.</para>
+@y
+          <para>
+          オリジナルの bdf リンカーをビルドし ld (デフォルトリンカー) と ld.bfd としてインストールします。
+          </para>
+@z
+
 @x --enable-plugins
           <para>Enables plugin support for the linker.</para>
 @y

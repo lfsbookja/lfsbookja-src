@@ -65,10 +65,10 @@
 @z
 
 @x
-    <para>Three tests are known ot fail.</para>
+    <para>Four tests are known to fail.</para>
 @y
     <para>
-    テストが失敗するものが3つあります。
+    テスト失敗するものが4つあります。
     </para>
 @z
 

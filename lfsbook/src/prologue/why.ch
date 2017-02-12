@@ -678,13 +678,11 @@
         <para>This package provides and <application>init</application> program
         and several additional boot and system control capabilities as an
         alternative to Sysvinit.  It is used by many commercial distributions.
-        In LFS it is installed side-by-side with Sysvinit to provide the user with
-        alternative boot systems for comparison.</para>
+        </para>
 @y
         <para>
         このパッケージは Sysvinit の代替として、<application>init</application> プログラムなど数種のプログラムにより、システム起動やシステム制御を実現します。
         商用ディストリビューションにおいてもよく利用されています。
-        LFS では Sysvinit も同時にインストールできるようにしているため、システム起動方法を比較し利用することができます。
         </para>
 @z
 

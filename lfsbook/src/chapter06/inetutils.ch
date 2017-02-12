@@ -28,15 +28,6 @@
 @z
 
 @x
-    <para>Create a definition to allow the <command>ifconfig</command> program
-    to build properly:</para>
-@y
-    <para>
-    <command>ifconfig</command> プログラムが適切にビルドできるような定義を生成します。
-    </para>
-@z
-
-@x
     <para>Prepare Inetutils for compilation:</para>
 @y
     <para>&PreparePackage1;Inetutils&PreparePackage2;</para>
@@ -110,18 +101,6 @@
     <para>To test the results, issue:</para>
 @y
     <para>コンパイル結果をテストするには以下を実行します。</para>
-@z
-
-@x
-    <para>One test, <emphasis>libls.sh</emphasis>, is known to fail due to hard
-    coding of some support program paths.  All tests pass if the tests are
-    rerun at the end of Chapter 6.</para>
-@y
-    <para>
-    テストの中で <emphasis>libls.sh</emphasis> だけは失敗します。
-    これは特定のプログラムへのパスがハードコーディングされているためです。
-    第6章を終えた後であればすべてのテストが成功します。
-    </para>
 @z
 
 @x

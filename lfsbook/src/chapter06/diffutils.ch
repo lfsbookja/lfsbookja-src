@@ -55,14 +55,6 @@
 @z
 
 @x
-    <para>The test-update-copyright.sh failure can be safely ignored.</para>
-@y
-    <para>
-    test-update-copyright.sh は失敗しますが無視して構いません。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
