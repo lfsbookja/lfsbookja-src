@@ -33,6 +33,15 @@
 @z
 
 @x
+   <para>First, suppress two invocations of test-lock which on some machines
+   can loop forever:</para>
+@y
+   <para>
+   特定のマシンにおいてテストが無限ループに陥るため test-lock を呼び出す二箇所を省略します。
+   </para>
+@z
+
+@x
     <para>Prepare Gettext for compilation:</para>
 @y
     <para>&PreparePackage1;Gettext&PreparePackage2;</para>

@@ -90,11 +90,13 @@
 @z
 
 @x
-  <para>Note that <filename class="directory">/lib</filename> is now
-  the prefix of our dynamic linker.</para>
+  <para>Note that on 64-bit systems <filename class="directory">/lib</filename> is
+  the location of our dynamic linker, but is accessed via a symbolic link
+  in /lib64.</para>
 @y
   <para>
-  ダイナミックリンカーのディレクトリは、今度は <filename class="directory">/lib</filename> となっているはずです。
+  64ビットシステムのダイナミックリンカーのディレクトリは、今度は <filename class="directory">/lib</filename> となっているはずです。
+  ただしアクセスはシンボリックリンク /lib64 から行われています。
   </para>
 @z
 

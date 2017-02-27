@@ -51,6 +51,14 @@
 @z
 
 @x
+   <para>Suppress a test which on some machines can loop forever:</para>
+@y
+   <para>
+   特定のマシンにおいてテストが無限ループに陥るため省略します。
+   </para>
+@z
+
+@x
     <para>Now prepare Coreutils for compilation:</para>
 @y
     <para>&PreparePackage1;Coreutils&PreparePackage2;</para>
@@ -141,11 +149,11 @@
 @z
 
 @x
-    <para>The test-getlogin test is known to fail on a virtual console, but
-    passes if run in a X terminal.</para>
+    <para>The test-getlogin test is known to fail on a virtual console such as
+    the chroot environment here, but passes if run in an X terminal.</para>
 @y
     <para>
-    test-getlogin テストは仮想端末上では失敗します。
+    test-getlogin テストは、ここで行っている chroot 環境のような仮想端末上では失敗します。
     しかし X 端末では成功します。
     </para>
 @z

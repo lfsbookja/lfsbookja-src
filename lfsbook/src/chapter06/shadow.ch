@@ -75,6 +75,18 @@
 @z
 
 @x
+    <para>Now fix a bug that prevents <command>useradd</command> from 
+    setting the shell entry in the /etc/passwd file.  In this case we need a 
+    short patch, but can include it directly here without the need for a
+    separate file:</para>
+@y
+    <para>
+    コマンド <command>useradd</command> が /etc/passwd ファイルのシェルエントリを実行できないバグを修正します。
+    この対応には以下のようなパッチが必要であり、個別のファイルとしてでなくそのままここで実行することで提供します。
+    </para>
+@z
+
+@x
       <para>If you chose to build Shadow with Cracklib support, run the following:</para>
 @y
       <para>

@@ -101,9 +101,9 @@
 @z
 
 @x
-    <para>Remove a reference to a non-existent user:</para>
+    <para revision="systemd">Remove a reference to a non-existent user:</para>
 @y
-    <para>
+    <para revision="systemd">
     存在しないユーザーへの参照を削除します。
     </para>
 @z

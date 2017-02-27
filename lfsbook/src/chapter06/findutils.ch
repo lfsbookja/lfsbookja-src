@@ -33,6 +33,14 @@
 @z
 
 @x
+   <para>First, suppress a test which on some machines can loop forever:</para>
+@y
+   <para>
+   特定のマシンにおいてテストが無限ループに陥るため省略します。
+   </para>
+@z
+
+@x
     <para>Prepare Findutils for compilation:</para>
 @y
     <para>&PreparePackage1;Findutils&PreparePackage2;</para>
