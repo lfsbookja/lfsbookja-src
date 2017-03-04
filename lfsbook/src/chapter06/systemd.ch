@@ -186,6 +186,14 @@
 @z
 
 @x
+    <para>Fix a generated file:</para>
+@y
+    <para>
+    生成されたファイルを修正します。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

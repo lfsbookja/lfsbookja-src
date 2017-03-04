@@ -54,6 +54,59 @@
 @z
 
 @x
+      <para>2017-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.28. Moved m4 and 
+          bc to before binutils to accomodate the gold linker 
+          regression tests. Fixes
+          <ulink url="&lfs-ticket-root;4059">#4059</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to dbus-1.10.16. Fixes
+          <ulink url="&lfs-ticket-root;4050">#4050</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to linux-4.10.1. Fixes
+          <ulink url="&lfs-ticket-root;4056">#4056</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to tzdata2017a. Fixes
+          <ulink url="&lfs-ticket-root;4057">#4057</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-233. Fixes
+          <ulink url="&lfs-ticket-root;4058">#4058</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.28 へのアップデート。
+          m4 と bc を binutils のビルド前に移動し、ゴールドリンカー (gold linker) による縮退テストを可能とする。
+          <ulink url="&lfs-ticket-root;4059">#4059</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - dbus-1.10.16 へのアップデート。
+          <ulink url="&lfs-ticket-root;4050">#4050</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - linux-4.10.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4056">#4056</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - tzdata2017a へのアップデート。
+          <ulink url="&lfs-ticket-root;4057">#4057</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-233 へのアップデート。
+          <ulink url="&lfs-ticket-root;4058">#4058</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-02-28</para>
       <itemizedlist>
         <listitem>
