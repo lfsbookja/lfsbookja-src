@@ -69,7 +69,7 @@
 @z
 
 @x
-    <para>The boot messages can always be revied by using the
+    <para>The boot messages can always be reviewed by using the
     <userinput>journalctl -b</userinput> command as the root user.</para>
 @y
     <para>

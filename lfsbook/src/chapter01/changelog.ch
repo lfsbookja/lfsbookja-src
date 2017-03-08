@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2017-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update /etc/hosts in network configuration.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - ネットワーク設定にて /etc/hosts を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-03-03</para>
       <itemizedlist>
         <listitem>

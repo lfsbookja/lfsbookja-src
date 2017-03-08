@@ -432,14 +432,16 @@
 @z
 
 @x
-     <para>The <replaceable>&lt;192.168.1.1&gt;</replaceable> and
-     <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable> values need to be
+     <para>The <replaceable>&lt;192.168.1.1&gt;</replaceable>,
+     <replaceable>&lt;FQDN&gt;</replaceable>, and 
+     <replaceable>&lt;HOSTNAME&gt;</replaceable> values need to be
      changed for specific uses or requirements (if assigned an IP address by a
      network/system administrator and the machine will be connected to an
      existing network). The optional alias name(s) can be omitted.</para>
 @y
      <para>
-     <replaceable>&lt;192.168.1.1&gt;</replaceable> や
+     <replaceable>&lt;192.168.1.1&gt;</replaceable>,
+     <replaceable>&lt;FQDN&gt;</replaceable>,
      <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
      (ネットワーク管理者から IP アドレスを指定されている場合や、既存のネットワーク環境に接続する場合など。). 
      エイリアスの記述は省略しても構いません。

@@ -198,7 +198,7 @@
       <para>When using <command>systemd-resolved</command> for DNS
       configuration, it creates the file
       <filename>/run/systemd/resolve/resolv.conf</filename>. Create a
-      symlink in <filename>/etc</filename> to use the generatd file:</para>
+      symlink in <filename>/etc</filename> to use the generated file:</para>
 @y
       <para>
       DNS 設定に <command>systemd-resolved</command> を用いると <filename>/run/systemd/resolve/resolv.conf</filename> ファイルが生成されます。
@@ -383,10 +383,12 @@
 
 @x
      <para>The ::1 entry is the IPv6 counterpart of 127.0.0.1 and represents
-the IPv6 loopback interface.</para>
+     the IPv6 loopback interface. 127.0.1.1 is a loopback entry reserved
+     specifically for the FQDN.</para>
 @y
      <para>
      ::1 という項目は IPv6 における 127.0.0.1 に相当し、IPv6 のループバックインターフェースを表します。
+     127.0.1.1 は FQDN に対して特別に割り当てられたループバック項目です。
      </para>
 @z
 
@@ -401,7 +403,7 @@ the IPv6 loopback interface.</para>
 
 @x
      <para>The <replaceable>&lt;192.168.0.2&gt;</replaceable>,
-     <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable>, and
+     <replaceable>&lt;FQDN&gt;</replaceable>, and
      <replaceable>&lt;HOSTNAME&gt;</replaceable> values need to be
      changed for specific uses or requirements (if assigned an IP address by a
      network/system administrator and the machine will be connected to an
@@ -409,7 +411,7 @@ the IPv6 loopback interface.</para>
 @y
      <para>
      <replaceable>&lt;192.168.0.2&gt;</replaceable>,
-     <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable>,
+     <replaceable>&lt;FQDN&gt;</replaceable>,
      <replaceable>&lt;HOSTNAME&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
      (ネットワーク管理者から IP アドレスを指定されている場合や、既存のネットワーク環境に接続する場合など。). 
      エイリアスの記述は省略しても構いません。
