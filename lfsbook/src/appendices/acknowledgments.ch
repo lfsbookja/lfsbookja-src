@@ -31,30 +31,20 @@
 @x
       <para><ulink url="mailto:gerard@linuxfromscratch.org">Gerard
       Beekmans</ulink> &lt;gerard@linuxfromscratch.org&gt; &ndash;
-      LFS Creator, LFS Project Leader</para>
+      LFS Creator</para>
 @y
       <para><ulink url="mailto:gerard@linuxfromscratch.org">Gerard
       Beekmans</ulink> &lt;gerard@linuxfromscratch.org&gt; &ndash;
-      LFS 構築者、LFS プロジェクトリーダー</para>
-@z
-
-@x
-      <para><ulink url="mailto:matthew@linuxfromscratch.org">Matthew
-      Burgess</ulink> &lt;matthew@linuxfromscratch.org&gt; &ndash;
-      LFS Project Leader, LFS Technical Writer/Editor</para>
-@y
-      <para><ulink url="mailto:matthew@linuxfromscratch.org">Matthew
-      Burgess</ulink> &lt;matthew@linuxfromscratch.org&gt; &ndash;
-      LFS プロジェクトリーダー、LFS テクニカルライター/編集者</para>
+      LFS 構築者</para>
 @z
 
 @x
       <para><ulink url="mailto:bdubbs@linuxfromscratch.org">Bruce
-      Dubbs</ulink> &lt;bdubbs@linuxfromscratch.org&gt; &ndash; LFS Release 
-      Manager, LFS Technical Writer/Editor</para>
+      Dubbs</ulink> &lt;bdubbs@linuxfromscratch.org&gt; &ndash; LFS Managing
+      Editor</para>
 @y
       <para><ulink url="mailto:bdubbs@linuxfromscratch.org">Bruce
-      Dubbs</ulink> &lt;bdubbs@linuxfromscratch.org&gt; &ndash; LFS リリース管理者、LFS テクニカルライター/編集者
+      Dubbs</ulink> &lt;bdubbs@linuxfromscratch.org&gt; &ndash; LFS 編集管理者
       </para>
 @z
 
@@ -69,27 +59,11 @@
 @z
 
 @x
-      <para><ulink url="mailto:bryan@linuxfromscratch.org">Bryan
-      Kadzban</ulink> &lt;bryan@linuxfromscratch.org&gt; &ndash; LFS
-      Technical Writer</para>
+      <para><ulink url="mailto:pierre@linuxfromscratch.org">Pierre Labastie</ulink>
+      &lt;pierre@linuxfromscratch.org&gt; &ndash; BLFS Editor and ALFS Lead</para>
 @y
-      <para><ulink url="mailto:bryan@linuxfromscratch.org">Bryan
-      Kadzban</ulink> &lt;bryan@linuxfromscratch.org&gt; &ndash; LFS
-      テクニカルライター</para>
-@z
-
-@x
-    <listitem>
-      <para><ulink url="mailto:randy@linuxfromscratch.org">Randy
-      McMurchy</ulink> &lt;randy@linuxfromscratch.org&gt; &ndash; BLFS
-      Project Leader, LFS Editor</para>
-    </listitem>
-@y
-    <listitem>
-      <para><ulink url="mailto:randy@linuxfromscratch.org">Randy
-      McMurchy</ulink> &lt;randy@linuxfromscratch.org&gt; &ndash; BLFS
-      プロジェクトリーダー、LFS 編集者</para>
-    </listitem>
+      <para><ulink url="mailto:pierre@linuxfromscratch.org">Pierre Labastie</ulink>
+      &lt;pierre@linuxfromscratch.org&gt; &ndash; BLFS 編集者、ALFS リーダー</para>
 @z
 
 @x
@@ -102,20 +76,18 @@
 
 @x
       <para><ulink url="mailto:ken@linuxfromscratch.org">Ken Moffat</ulink>
-      &lt;ken@linuxfromscratch.org&gt; &ndash; LFS and CLFS Editor</para>
+      &lt;ken@linuxfromscratch.org&gt; &ndash; BLFS Editor</para>
 @y
       <para><ulink url="mailto:ken@linuxfromscratch.org">Ken Moffat</ulink>
-      &lt;ken@linuxfromscratch.org&gt; &ndash; LFS、CLFS 編集者</para>
+      &lt;ken@linuxfromscratch.org&gt; &ndash; BLFS 編集者</para>
 @z
 
 @x
-      <para><ulink url="mailto:ryan@linuxfromscratch.org">Ryan
-      Oliver</ulink> &lt;ryan@linuxfromscratch.org&gt; &ndash; CLFS Project
-      Co-Leader</para>
+      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
+      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd Editor</para>
 @y
-      <para><ulink url="mailto:ryan@linuxfromscratch.org">Ryan
-      Oliver</ulink> &lt;ryan@linuxfromscratch.org&gt; &ndash;
-      CLFS プロジェクト共同リーダー</para>
+      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
+      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd 編集者</para>
 @z
 
 @x
@@ -158,10 +130,19 @@
 @x
       <para><ulink url="mailto:jmengual@linuxfromscratch.org">Jean-Philippe 
       Mengual </ulink> &lt;jmengual@linuxfromscratch.org&gt; &ndash; French LFS
-      translation project 2008-present</para>
+      translation project 2008-2016</para>
 @y
       <para><ulink url="mailto:jmengual@linuxfromscratch.org">Jean-Philippe 
-      Mengual </ulink> &lt;jmengual@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2008年以降、現在</para>
+      Mengual </ulink> &lt;jmengual@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2008年～2016年まで</para>
+@z
+
+@x
+      <para><ulink url="mailto:jlepiller@linuxfromscratch.org">Julien 
+      Lepiller </ulink> &lt;jlepiller@linuxfromscratch.org&gt; &ndash; French LFS
+      translation project 2017-present</para>
+@y
+      <para><ulink url="mailto:jlepiller@linuxfromscratch.org">Julien 
+      Lepiller </ulink> &lt;jlepiller@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2017年から現在まで</para>
 @z
 
 @x
@@ -436,6 +417,16 @@
 @z
 
 @x
+      <para><ulink url="mailto:matthew@linuxfromscratch.org">Matthew
+      Burgess</ulink> &lt;matthew@linuxfromscratch.org&gt; &ndash;
+      LFS Project Leader, LFS Technical Writer/Editor</para>
+@y
+      <para><ulink url="mailto:matthew@linuxfromscratch.org">Matthew
+      Burgess</ulink> &lt;matthew@linuxfromscratch.org&gt; &ndash;
+      LFS プロジェクトリーダー、LFS テクニカルライター/編集者</para>
+@z
+
+@x
       <para><ulink url="mailto:nathan@linuxfromscratch.org">Nathan
       Coulson</ulink> &lt;nathan@linuxfromscratch.org&gt; &ndash;
       LFS-Bootscripts Maintainer</para>
@@ -506,6 +497,16 @@
 @z
 
 @x
+      <para><ulink url="mailto:bryan@linuxfromscratch.org">Bryan
+      Kadzban</ulink> &lt;bryan@linuxfromscratch.org&gt; &ndash; LFS
+      Technical Writer</para>
+@y
+      <para><ulink url="mailto:bryan@linuxfromscratch.org">Bryan
+      Kadzban</ulink> &lt;bryan@linuxfromscratch.org&gt; &ndash; LFS
+      テクニカルライター</para>
+@z
+
+@x
       <para>Mark Hymers</para>
 @y
       <para>Mark Hymers</para>
@@ -535,6 +536,20 @@
       <para><ulink url="mailto:lizardo@linuxfromscratch.org">Anderson
       Lizardo</ulink> &lt;lizardo@linuxfromscratch.org&gt; &ndash;
       ウェブサイトのバックエンドスクリプトの管理者</para>
+@z
+
+@x
+    <listitem>
+      <para><ulink url="mailto:randy@linuxfromscratch.org">Randy
+      McMurchy</ulink> &lt;randy@linuxfromscratch.org&gt; &ndash; BLFS
+      Project Leader, LFS Editor</para>
+    </listitem>
+@y
+    <listitem>
+      <para><ulink url="mailto:randy@linuxfromscratch.org">Randy
+      McMurchy</ulink> &lt;randy@linuxfromscratch.org&gt; &ndash; BLFS
+      プロジェクトリーダー、LFS 編集者</para>
+    </listitem>
 @z
 
 @x
@@ -572,6 +587,16 @@
       <para><ulink url="mailto:scot@linuxfromscratch.org">Scot Mc
       Pherson</ulink> &lt;scot@linuxfromscratch.org&gt; &ndash;
       LFS NNTP ゲートウェイ管理者</para>
+@z
+
+@x
+      <para><ulink url="mailto:ryan@linuxfromscratch.org">Ryan
+      Oliver</ulink> &lt;ryan@linuxfromscratch.org&gt; &ndash; CLFS Project
+      Co-Leader</para>
+@y
+      <para><ulink url="mailto:ryan@linuxfromscratch.org">Ryan
+      Oliver</ulink> &lt;ryan@linuxfromscratch.org&gt; &ndash;
+      CLFS プロジェクト共同リーダー</para>
 @z
 
 @x

@@ -84,10 +84,9 @@
 
 @x
     <para>In case the above seems hard to follow, let's break it down a bit.
-    First we find all the files under the <filename
-    class="directory">gcc/config</filename> directory that are named either
-    <filename>linux.h</filename>, <filename>linux64.h</filename> or
-    <filename>sysv4.h</filename>.  For each file found, we copy it to a file of
+    First we copy the files <filename>gcc/config/linux.h</filename>,
+    <filename>gcc/config/i386/linux.h</filename>, and
+    <filename>gcc/config/i368/linux64.h</filename>. to a file of
     the same name but with an added suffix of <quote>.orig</quote>. Then the
     first sed expression prepends <quote>/tools</quote> to every instance of
     <quote>/lib/ld</quote>, <quote>/lib64/ld</quote> or
@@ -102,8 +101,9 @@
 @y
     <para>
     上のコマンドがよく分からない場合は一つ一つ読み下していってください。
-    まず <filename class="directory">gcc/config</filename> ディレクトリには <filename>linux.h</filename>, <filename>linux64.h</filename>, <filename>sysv4.h</filename> といったファイルのいずれかがあります。
-    それらが存在したら、ファイル名称の末尾に<quote>.orig</quote>をつけたファイルとしてコピーします。
+    まず <filename>gcc/config/linux.h</filename>,
+    <filename>gcc/config/i386/linux.h</filename>, and
+    <filename>gcc/config/i368/linux64.h</filename> というファイルを、ファイル名称の末尾に <quote>.orig</quote> を付け加えてコピーします。
     そして一つめの sed コマンドでは、そのファイル内にある<quote>/lib/ld</quote>, <quote>/lib64/ld</quote>, <quote>/lib32/ld</quote>という記述部分の頭に<quote>/tools</quote>を付与します。
     また二つめの sed コマンドによってハードコーディングされている<quote>/usr</quote>という部分を書き換えます。
     そしてここで加えるべき定義文をファイルの末尾に追加し、検索パスと startfile プリフィックスを変更します。

@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2017-03-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Fix description of modifications to
+          <filename>gcc/config/{linux,i386/linux{,64}}.h</filename> in
+          <application>gcc</application> pass 1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-03-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - <application>gcc</application> 1回めの手順において <filename>gcc/config/{linux,i386/linux{,64}}.h</filename> の説明を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-03-08</para>
       <itemizedlist>
         <listitem>
