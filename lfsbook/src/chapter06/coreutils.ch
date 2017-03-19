@@ -149,12 +149,13 @@
 @z
 
 @x
-    <para>The test-getlogin test is known to fail on a virtual console such as
-    the chroot environment here, but passes if run in an X terminal.</para>
+    <para>The test programs test-getlogin and date-debug are known to fail in a
+    partially built system environment like the chroot environment here, but
+    pass if run at the end of this chapter.</para>
 @y
     <para>
-    test-getlogin テストは、ここで行っている chroot 環境のような仮想端末上では失敗します。
-    しかし X 端末では成功します。
+    test-getlogin と date-debug テストは、ここで行っている chroot 環境のようなビルド途上の環境では失敗します。
+    しかし本章の最後に実行すれば成功します。
     </para>
 @z
 

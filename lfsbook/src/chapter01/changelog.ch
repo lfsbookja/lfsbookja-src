@@ -54,6 +54,57 @@
 @z
 
 @x
+      <para>2017-03-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update formats of error messages in checkfs 
+          boot script. Fixes
+          <ulink url="&lfs-ticket-root;4064">#4064</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.10. Fixes
+          <ulink url="&lfs-ticket-root;4063">#4063</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.10.3. Fixes
+          <ulink url="&lfs-ticket-root;4062">#4062</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.13. Fixes
+          <ulink url="&lfs-ticket-root;4061">#4061</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-8.27. Fixes
+          <ulink url="&lfs-ticket-root;4060">#4060</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-03-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - checkfs ブートスクリプトにてエラーメッセージのフォーマットを更新。
+          <ulink url="&lfs-ticket-root;4064">#4064</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4063">#4063</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.10.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4062">#4062</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4061">#4061</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - coreutils-8.27 へのアップデート。
+          <ulink url="&lfs-ticket-root;4060">#4060</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-03-11</para>
       <itemizedlist>
         <listitem>
