@@ -8,25 +8,49 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version         "SVN-20170318">
+<!ENTITY version         "SVN-20170325">
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version         "SVN-20170318">
+<!ENTITY version         "SVN-20170325">
 @z
 
 @x
-<!ENTITY versiond        "20170318-systemd">
+<!ENTITY versiond        "20170325-systemd">
 @y
-<!ENTITY versiond        "20170318-systemd">
+<!ENTITY versiond        "20170325-systemd">
 @z
 
 @x
-<!ENTITY releasedate     "March 18, 2017">
+<!ENTITY releasedate     "March 25, 2017">
 @y
-<!ENTITY releasedate     "2017年3月18日">
-<!ENTITY jversion        "20170319">
-<!ENTITY jversiond       "20170319">
+<!ENTITY releasedate     "2017年3月25日">
+<!ENTITY jversion        "20170325">
+<!ENTITY jversiond       "20170325">
+<!ENTITY dir-jversion    "svn-ja">
+<!ENTITY dir-jversiond   "svn-sysdja">
 @z
+
+@x
+<!ENTITY lfs-root        "http://www.linuxfromscratch.org/">
+@y
+<!ENTITY lfs-root        "http://www.linuxfromscratch.org/">
+<!ENTITY lfs-rootja      "http://lfsbookja.osdn.jp/">
+@z
+
+@x
+<!ENTITY downloads-root  "&lfs-root;lfs/downloads/&generic-version;/">
+@y
+<!ENTITY downloads-root  "&lfs-root;lfs/downloads/&generic-version;/">
+<!ENTITY download-scripts  "&lfs-rootja;&dir-jversion;/">
+@z
+
+% systemd版には lfs-bootscripts が不要なので以下も不要
+%@x
+%<!ENTITY downloads-rootd "&lfs-root;lfs/downloads/&generic-versiond;/">
+%@y
+%<!ENTITY downloads-rootd "&lfs-root;lfs/downloads/&generic-versiond;/">
+%<!ENTITY download-scriptsd "&lfs-rootja;&dir-jversiond;/">
+%@z
 
 @x
 <!ENTITY lfs-ticket-root "http://wiki.linuxfromscratch.org/lfs/ticket/">

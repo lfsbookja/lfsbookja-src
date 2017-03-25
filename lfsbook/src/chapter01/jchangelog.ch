@@ -58,6 +58,25 @@
 -->
 
    <listitem>
+      <para>2017-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170325,
+          Changeset
+          <ulink url="&lfs-rev-root;11210">11210</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[matsuand] - lfs-bootscripts-YYYYMMDD.tar.bz2 を osdn.jp サイトから入手するように wget-list を修正。
+          SVN 開発途上時でも md5sum 値を正常に保つため。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2017-03-19</para>
       <itemizedlist>
         <listitem>

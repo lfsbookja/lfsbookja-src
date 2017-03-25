@@ -92,6 +92,11 @@
 @z
 
 @x
+<!ENTITY lfs-bootscripts-url "&downloads-root;lfs-bootscripts-&lfs-bootscripts-version;.tar.bz2">
+@y
+<!ENTITY lfs-bootscripts-url "&download-scripts;lfs-bootscripts-&lfs-bootscripts-version;.tar.bz2">
+@z
+@x
 <!ENTITY lfs-bootscripts-ch7-sbu "less than 0.1 SBU">
 @y
 <!ENTITY lfs-bootscripts-ch7-sbu "0.1 SBU 以下">

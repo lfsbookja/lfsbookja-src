@@ -54,6 +54,26 @@
 @z
 
 @x
+      <para>2017-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to lfs-bootscripts-20170825. Fix a scope issue in
+          the rc script. Thanks to "quesker" in #lfs-support for the report and
+          subsequent testing.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - lfs-bootscripts-20170325 へのアップデート。
+          rc スクリプトにてスコープの問題を修正。
+          #lfs-support の "quesker" に対し報告とテストしてくれたことを感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-03-18</para>
       <itemizedlist>
         <listitem>
