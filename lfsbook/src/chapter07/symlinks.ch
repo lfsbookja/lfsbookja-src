@@ -111,7 +111,7 @@
 @z
 
 @x
-      <note><para>In some cases such as when MAC addresess have been assigned to
+      <note><para>In some cases such as when MAC addresses have been assigned to
       a network card manually or in a virtual environment such as Qemu or Xen,
       the network rules file may not have been generated because addresses
       are not consistently assigned.  In these cases, this method cannot

@@ -61,13 +61,11 @@
 
 @x
           <para>This option forces Readline to link against the
-          <filename class="libraryfile">libncurses</filename> (really,
-          <filename class="libraryfile">libncursesw</filename>) library.</para>
+          <filename class="libraryfile">libncursesw</filename> library.</para>
 @y
           <para>
           このオプションにより Readline を <filename
-          class="libraryfile">libncurses</filename> ライブラリ (その実体は <filename
-          class="libraryfile">libncursesw</filename> ライブラリ) にリンクします。
+          class="libraryfile">libncursesw</filename> ライブラリにリンクします。
           </para>
 @z
 

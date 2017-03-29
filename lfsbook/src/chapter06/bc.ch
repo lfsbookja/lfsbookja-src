@@ -37,6 +37,19 @@
 @z
 
 @x
+    <para>Create a temporary symbolic link so the package can find
+    the readline library and confirm that its required libncurses
+    library is available. Even though the libraries are in /tools/lib
+    at this point, the system will use /usr/lib at the end of
+    this chapter.</para>
+@y
+    <para>
+    一時的なシンボリックリンクを生成して、本パッケージが readline ライブラリを見出せるようにし、また libncurses ライブラリの適切なものを利用できるようにします。
+    ライブラリはこの時点で /tools/lib にあるわけですが、本章を終えた後には /usr/lib のものが用いられるようになります。
+    </para>
+@z
+
+@x
     <para>Prepare Bc for compilation:</para>
 @y
     <para>&PreparePackage1;Bc&PreparePackage2;</para>

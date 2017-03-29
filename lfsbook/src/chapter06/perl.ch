@@ -118,6 +118,14 @@
           </para>
 @z
 
+@x -Dusethreads
+          <para>Build perl with support for threads.</para>
+@y
+          <para>
+          スレッドサポートをビルドします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y

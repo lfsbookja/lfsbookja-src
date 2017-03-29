@@ -54,6 +54,54 @@
 @z
 
 @x
+      <para>2017-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Move realline to be before bc in Cahpater 6. Fixes
+          <ulink url="&lfs-ticket-root;4068">#4068</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.10.6. Fixes
+          <ulink url="&lfs-ticket-root;4065">#4065</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkg-config-0.29.2. Fixes
+          <ulink url="&lfs-ticket-root;4066">#4066</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2017b. Fixes
+          <ulink url="&lfs-ticket-root;4067">#4067</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add option -Dusethreads to perl in Chapter 6.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第6章にて bc の前に readline を移動。
+          <ulink url="&lfs-ticket-root;4068">#4068</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.10.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4065">#4065</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkg-config-0.29.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4066">#4066</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2017b へのアップデート。
+          <ulink url="&lfs-ticket-root;4067">#4067</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第6章の perl に -Dusethreads オプション追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-03-25</para>
       <itemizedlist>
         <listitem>
