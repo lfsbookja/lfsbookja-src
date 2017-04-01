@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2017-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.10.8. Fixes
+          <ulink url="&lfs-ticket-root;4070">#4070</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-487. Fixes
+          <ulink url="&lfs-ticket-root;4069">#4069</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.10.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4070">#4070</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-487 へのアップデート。
+          <ulink url="&lfs-ticket-root;4069">#4069</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-03-28</para>
       <itemizedlist>
         <listitem>
