@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2017-04-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bc-1.07. Fixes
+          <ulink url="&lfs-ticket-root;4071">#4071</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bc-1.07 へのアップデート。
+          <ulink url="&lfs-ticket-root;4071">#4071</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-03-31</para>
       <itemizedlist>
         <listitem>
