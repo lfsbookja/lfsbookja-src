@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2017-04-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix an error in bc-1.07. </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bc-1.07 のエラーを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-04-03</para>
       <itemizedlist>
         <listitem>

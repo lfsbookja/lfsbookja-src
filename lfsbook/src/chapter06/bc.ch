@@ -38,6 +38,14 @@
 @z
 
 @x
+    <para>Now fix an error in the code:</para>
+@y
+    <para>
+    またコーディングミスを修正します。
+    </para>
+@z
+
+@x
     <para>Create temporary symbolic links so the package can find
     the readline library and confirm that its required libncurses
     library is available. Even though the libraries are in /tools/lib
