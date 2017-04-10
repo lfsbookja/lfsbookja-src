@@ -75,7 +75,7 @@
           path to /tools/bin/sed.</para>
 @y
           <para>
-          ハードコーディングされているパスを /tools/bin/sed とするために、環境変数を設定します。
+          /tools/bin/sed へのパスがハードコーディングされないようにするため、環境変数を設定します。
           </para>
 @z
 

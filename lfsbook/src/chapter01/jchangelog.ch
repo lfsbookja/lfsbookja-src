@@ -58,6 +58,15 @@
 -->
 
    <listitem>
+      <para>2017-04-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - 第6章の gcc にて誤訳修正。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2017-04-08</para>
       <itemizedlist>
         <listitem>
