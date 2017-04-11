@@ -57,6 +57,32 @@
       <para>2017-04-07</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to linux-4.10.9. Fixes
+          <ulink url="&lfs-ticket-root;4073">#4073</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-1.07.1. Fixes
+          <ulink url="&lfs-ticket-root;4074">#4074</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.10.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4073">#4073</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-1.07.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4074">#4074</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-04-07</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Fix an error in bc-1.07. </para>
         </listitem>
       </itemizedlist>
