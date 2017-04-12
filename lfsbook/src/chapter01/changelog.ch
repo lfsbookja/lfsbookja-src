@@ -54,7 +54,34 @@
 @z
 
 @x
-      <para>2017-04-07</para>
+      <para>2017-04-11</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[dj] - Update to dbus-1.10.18. Fixes
+          <ulink url="&lfs-ticket-root;4072">#4072</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove unneeded --disable-compile-warnings
+          from pkg-config instructions.  Thanks to Jeffery Smith
+          for pointing this out.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-11</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[dj] - dbus-1.10.18 へのアップデート。
+          <ulink url="&lfs-ticket-root;4072">#4072</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkg-config の説明において不要なオプション --disable-compile-warnings を削除。
+          指摘をしてくれた Jeffery Smith に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-04-10</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to linux-4.10.9. Fixes
