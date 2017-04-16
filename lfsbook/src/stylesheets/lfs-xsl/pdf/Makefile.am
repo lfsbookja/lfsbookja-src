@@ -14,18 +14,12 @@ srcs = lfs-admon.xsl lfs-index.xsl lfs-lists.xsl lfs-mixed.xsl \
 
 SUFFIXES = .ch .xsl .xml
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-lfs-admon.xsl:     $(BOOKdir)/$@ $(srcdir)/lfs-admon.ch
-lfs-index.xsl:     $(BOOKdir)/$@
+lfs-index.xsl: $(BOOKdir)/$@
 	cp -p $(BOOKdir)/$@ $@
-lfs-lists.xsl:     $(BOOKdir)/$@ $(srcdir)/lfs-lists.ch
-lfs-mixed.xsl:     $(BOOKdir)/$@ $(srcdir)/lfs-mixed.ch
-lfs-pagesetup.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-pagesetup.ch
-lfs-xref.xsl:      $(BOOKdir)/$@ $(srcdir)/lfs-xref.ch
-

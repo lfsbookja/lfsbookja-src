@@ -24,17 +24,12 @@ srcs_change = lists.xsl param.xsl titlepage.xsl xref.xsl
 
 SUFFIXES = .ch .xsl
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs) $(srcs_change)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs):
 	cp -p $(BOOKdir)/* .
-
-lists.xsl:     $(BOOKdir)/$@ $(srcdir)/lists.ch
-param.xsl:     $(BOOKdir)/$@ $(srcdir)/param.ch
-titlepage.xsl: $(BOOKdir)/$@ $(srcdir)/titlepage.ch
-xref.xsl:      $(BOOKdir)/$@ $(srcdir)/xref.ch

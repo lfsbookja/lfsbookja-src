@@ -14,14 +14,9 @@ srcs = profile.xsl profile-mode.xsl strip-attributes.xsl \
 
 SUFFIXES = .ch .xsl .xml
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-profile.xsl:          $(BOOKdir)/$@ $(srcdir)/profile.ch
-profile-mode.xsl:     $(BOOKdir)/$@ $(srcdir)/profile-mode.ch
-strip-attributes.xsl: $(BOOKdir)/$@ $(srcdir)/strip-attributes.ch
-xsl2profile.xsl:      $(BOOKdir)/$@ $(srcdir)/xsl2profile.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

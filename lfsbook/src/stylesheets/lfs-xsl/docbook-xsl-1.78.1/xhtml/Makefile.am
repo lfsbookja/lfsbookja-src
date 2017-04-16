@@ -36,75 +36,24 @@ srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl \
 
 SUFFIXES = .ch .xsl
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-admon.xsl: $(BOOKdir)/$@ $(srcdir)/admon.ch
-annotations.xsl: $(BOOKdir)/$@ $(srcdir)/annotations.ch
-autoidx-kimber.xsl: $(BOOKdir)/$@ $(srcdir)/autoidx-kimber.ch
-autoidx-kosek.xsl: $(BOOKdir)/$@ $(srcdir)/autoidx-kosek.ch
-autoidx-ng.xsl: $(BOOKdir)/$@ $(srcdir)/autoidx-ng.ch
 autoidx.xsl: $(BOOKdir)/$@ $(srcdir)/autoidx.ch
 	cp -p $(BOOKdir)/$@ $@
-autotoc.xsl: $(BOOKdir)/$@ $(srcdir)/autotoc.ch
-biblio-iso690.xsl: $(BOOKdir)/$@ $(srcdir)/biblio-iso690.ch
-biblio.xsl: $(BOOKdir)/$@ $(srcdir)/biblio.ch
-block.xsl: $(BOOKdir)/$@ $(srcdir)/block.ch
-callout.xsl: $(BOOKdir)/$@ $(srcdir)/callout.ch
 changebars.xsl: $(BOOKdir)/$@
 	cp -p $(BOOKdir)/$@ $@
-chunk-code.xsl: $(BOOKdir)/$@ $(srcdir)/chunk-code.ch
 chunk-common.xsl: $(BOOKdir)/$@ $(srcdir)/chunk-common.ch
 	cp -p $(BOOKdir)/$@ $@
-chunk.xsl: $(BOOKdir)/$@ $(srcdir)/chunk.ch
-chunker.xsl: $(BOOKdir)/$@ $(srcdir)/chunker.ch
-chunkfast.xsl: $(BOOKdir)/$@ $(srcdir)/chunkfast.ch
-chunktoc.xsl: $(BOOKdir)/$@ $(srcdir)/chunktoc.ch
-component.xsl: $(BOOKdir)/$@ $(srcdir)/component.ch
-division.xsl: $(BOOKdir)/$@ $(srcdir)/division.ch
-docbook.xsl: $(BOOKdir)/$@ $(srcdir)/docbook.ch
-ebnf.xsl: $(BOOKdir)/$@ $(srcdir)/ebnf.ch
-footnote.xsl: $(BOOKdir)/$@ $(srcdir)/footnote.ch
-formal.xsl: $(BOOKdir)/$@ $(srcdir)/formal.ch
 glossary.xsl: $(BOOKdir)/$@
 	cp -p $(BOOKdir)/$@ $@
-graphics.xsl: $(BOOKdir)/$@ $(srcdir)/graphics.ch
-highlight.xsl: $(BOOKdir)/$@ $(srcdir)/highlight.ch
-html-rtf.xsl: $(BOOKdir)/$@ $(srcdir)/html-rtf.ch
-html.xsl: $(BOOKdir)/$@ $(srcdir)/html.ch
 htmltbl.xsl: $(BOOKdir)/$@
 	cp -p $(BOOKdir)/$@ $@
-index.xsl: $(BOOKdir)/$@ $(srcdir)/index.ch
-info.xsl: $(BOOKdir)/$@ $(srcdir)/info.ch
 inline.xsl: $(BOOKdir)/$@ $(srcdir)/inline.ch
 	cp -p $(BOOKdir)/$@ $@
-keywords.xsl: $(BOOKdir)/$@ $(srcdir)/keywords.ch
-lists.xsl: $(BOOKdir)/$@ $(srcdir)/lists.ch
-ls.txt.xsl: $(BOOKdir)/$@ $(srcdir)/ls.txt.ch
-maketoc.xsl: $(BOOKdir)/$@ $(srcdir)/maketoc.ch
-manifest.xsl: $(BOOKdir)/$@ $(srcdir)/manifest.ch
-math.xsl: $(BOOKdir)/$@ $(srcdir)/math.ch
-oldchunker.xsl: $(BOOKdir)/$@ $(srcdir)/oldchunker.ch
-onechunk.xsl: $(BOOKdir)/$@ $(srcdir)/onechunk.ch
-param.xsl: $(BOOKdir)/$@ $(srcdir)/param.ch
-pi.xsl: $(BOOKdir)/$@ $(srcdir)/pi.ch
-profile-chunk-code.xsl: $(BOOKdir)/$@ $(srcdir)/profile-chunk-code.ch
-profile-chunk.xsl: $(BOOKdir)/$@ $(srcdir)/profile-chunk.ch
-profile-docbook.xsl: $(BOOKdir)/$@ $(srcdir)/profile-docbook.ch
-profile-onechunk.xsl: $(BOOKdir)/$@ $(srcdir)/profile-onechunk.ch
-qandaset.xsl: $(BOOKdir)/$@ $(srcdir)/qandaset.ch
-refentry.xsl: $(BOOKdir)/$@ $(srcdir)/refentry.ch
-sections.xsl: $(BOOKdir)/$@ $(srcdir)/sections.ch
-synop.xsl: $(BOOKdir)/$@ $(srcdir)/synop.ch
-table.xsl: $(BOOKdir)/$@ $(srcdir)/table.ch
-task.xsl: $(BOOKdir)/$@ $(srcdir)/task.ch
-titlepage.templates.xsl: $(BOOKdir)/$@ $(srcdir)/titlepage.templates.ch
-titlepage.xsl: $(BOOKdir)/$@ $(srcdir)/titlepage.ch
-toc.xsl: $(BOOKdir)/$@ $(srcdir)/toc.ch
-verbatim.xsl: $(BOOKdir)/$@ $(srcdir)/verbatim.ch
 xref.xsl: $(BOOKdir)/$@ $(srcdir)/xref.ch
 	cp -p $(BOOKdir)/$@ $@

@@ -28,24 +28,12 @@ DISTCLEANFILES = $(srcs)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-architecture.xml:  $(BOOKdir)/$@ $(srcdir)/architecture.ch
-audience.xml:      $(BOOKdir)/$@ $(srcdir)/audience.ch
-bookinfo.xml:      $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
-dedication.xml:    $(BOOKdir)/$@ $(srcdir)/dedication.ch
-errata.xml:        $(BOOKdir)/$@ $(srcdir)/errata.ch
-foreword.xml:      $(BOOKdir)/$@ $(srcdir)/foreword.ch
 japanese.xml:      $(srcdir)/japanese.ch
 	cp -p $^ $@
-organization.xml:  $(BOOKdir)/$@ $(srcdir)/organization.ch
-preface.xml:       $(BOOKdir)/$@ $(srcdir)/preface.ch
-prerequisites.xml: $(BOOKdir)/$@ $(srcdir)/prerequisites.ch
-standards.xml:     $(BOOKdir)/$@ $(srcdir)/standards.ch
-typography.xml:    $(BOOKdir)/$@ $(srcdir)/typography.ch
-why.xml:           $(BOOKdir)/$@ $(srcdir)/why.ch

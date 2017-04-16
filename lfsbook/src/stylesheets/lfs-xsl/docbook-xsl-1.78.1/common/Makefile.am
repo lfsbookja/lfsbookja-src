@@ -20,32 +20,17 @@ srcs = common.xsl gentext.xsl insertfile.xsl l10n.xsl labels.xsl \
 
 SUFFIXES = .ch .xsl .xml
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-common.xsl:     $(BOOKdir)/$@ $(srcdir)/common.ch
-gentext.xsl:    $(BOOKdir)/$@ $(srcdir)/gentext.ch
-insertfile.xsl: $(BOOKdir)/$@ $(srcdir)/insertfile.ch
-l10n.xsl:       $(BOOKdir)/$@ $(srcdir)/l10n.ch
-labels.xsl:     $(BOOKdir)/$@ $(srcdir)/labels.ch
-olink.xsl:      $(BOOKdir)/$@ $(srcdir)/olink.ch
-pi.xsl:         $(BOOKdir)/$@ $(srcdir)/pi.ch
-refentry.xsl:   $(BOOKdir)/$@ $(srcdir)/refentry.ch
-stripns.xsl:    $(BOOKdir)/$@ $(srcdir)/stripns.ch
-subtitles.xsl:  $(BOOKdir)/$@ $(srcdir)/subtitles.ch
-table.xsl:      $(BOOKdir)/$@ $(srcdir)/table.ch
-targets.xsl:    $(BOOKdir)/$@ $(srcdir)/targets.ch
-titles.xsl:     $(BOOKdir)/$@ $(srcdir)/titles.ch
-utility.xsl:    $(BOOKdir)/$@ $(srcdir)/utility.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 l10n.xml: $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch >/dev/null
 ja.xml: $(srcdir)/ja_xml.ch
 	cp $(srcdir)/ja_xml.ch $@
 

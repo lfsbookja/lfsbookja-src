@@ -769,10 +769,10 @@ uninstall-am:
 
 
 nochunks:
-	cd src && make nochunks
+	@$(MAKE) -C src nochunks
 
 @TXT@txt:
-@TXT@	cd src && make txt
+@TXT@	@$(MAKE) -C src txt
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

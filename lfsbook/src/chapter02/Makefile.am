@@ -23,18 +23,9 @@ DISTCLEANFILES = $(srcs)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-aboutlfs.xml:           $(BOOKdir)/$@ $(srcdir)/aboutlfs.ch
-chapter02.xml:          $(BOOKdir)/$@ $(srcdir)/chapter02.ch
-creatingfilesystem.xml: $(BOOKdir)/$@ $(srcdir)/creatingfilesystem.ch
-creatingpartition.xml:  $(BOOKdir)/$@ $(srcdir)/creatingpartition.ch
-hostreqs.xml:           $(BOOKdir)/$@ $(srcdir)/hostreqs.ch
-introduction.xml:       $(BOOKdir)/$@ $(srcdir)/introduction.ch
-mounting.xml:           $(BOOKdir)/$@ $(srcdir)/mounting.ch
-stages.xml:             $(BOOKdir)/$@ $(srcdir)/stages.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

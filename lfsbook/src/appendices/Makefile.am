@@ -23,18 +23,9 @@ DISTCLEANFILES = $(srcs)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-acknowledgments.xml: $(BOOKdir)/$@ $(srcdir)/acknowledgments.ch
-acronymlist.xml:     $(BOOKdir)/$@ $(srcdir)/acronymlist.ch
-creat-comm.xml:      $(BOOKdir)/$@ $(srcdir)/creat-comm.ch
-dependencies.xml:    $(BOOKdir)/$@ $(srcdir)/dependencies.ch
-license.xml:         $(BOOKdir)/$@ $(srcdir)/license.ch
-mit-lic.xml:         $(BOOKdir)/$@ $(srcdir)/mit-lic.ch
-scripts.xml:         $(BOOKdir)/$@ $(srcdir)/scripts.ch
-udev-rules.xml:      $(BOOKdir)/$@ $(srcdir)/udev-rules.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

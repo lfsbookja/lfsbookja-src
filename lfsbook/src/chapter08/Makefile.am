@@ -20,15 +20,9 @@ DISTCLEANFILES = $(srcs)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-chapter08.xml:    $(BOOKdir)/$@ $(srcdir)/chapter08.ch
-fstab.xml:        $(BOOKdir)/$@ $(srcdir)/fstab.ch
-grub.xml:         $(BOOKdir)/$@ $(srcdir)/grub.ch
-introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
-kernel.xml:       $(BOOKdir)/$@ $(srcdir)/kernel.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

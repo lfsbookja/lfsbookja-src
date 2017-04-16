@@ -35,18 +35,18 @@ REV=@revspec@
 all: ctie $(srcs) stylesheets _bootscripts udev-lfs book dump-commands
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 general.ent: $(BOOKdir)/general.ent $(srcdir)/general.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 index.xml: $(BOOKdir)/index.xml $(srcdir)/index.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 packages.ent: $(BOOKdir)/packages.ent $(srcdir)/packages.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 patches.ent: $(BOOKdir)/patches.ent $(srcdir)/patches.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 
 process-scripts.sh: $(BOOKdir)/process-scripts.sh
 	cp -p $^ $@
@@ -54,10 +54,10 @@ aux-file-data.sh: $(BOOKdir)/aux-file-data.sh
 	cp -p $^ $@
 #	sed -i '/.\/make-aux-files.sh/d' $@
 make-aux-files.sh: $(BOOKdir)/make-aux-files.sh $(srcdir)/make-aux-files.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 	chmod +x $@
 pdf-fixups.sh: $(BOOKdir)/pdf-fixups.sh $(srcdir)/pdf-fixups.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 
 stylesheets:
 	$(MKDIR_P) stylesheets
@@ -99,7 +99,7 @@ book: validate profile-html
              -i $$filename;                           \
 	done;
 
-	make --no-print-directory $(BASEDIR)/wget-list $(BASEDIR)/md5sums
+	$(MAKE) --no-print-directory $(BASEDIR)/wget-list $(BASEDIR)/md5sums
 
 @TXT@nochunks: validate profile-html
 @TXT@	@echo "Generating non chunked XHTML file..."

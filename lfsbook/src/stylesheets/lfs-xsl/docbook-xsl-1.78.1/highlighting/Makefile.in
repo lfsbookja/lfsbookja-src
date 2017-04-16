@@ -420,14 +420,12 @@ uninstall-am:
 .PRECIOUS: Makefile
 
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-common.xsl: $(BOOKdir)/$@ $(srcdir)/common.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

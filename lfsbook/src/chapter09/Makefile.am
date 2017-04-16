@@ -20,15 +20,9 @@ DISTCLEANFILES = $(srcs)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-chapter09.xml:  $(BOOKdir)/$@ $(srcdir)/chapter09.ch
-getcounted.xml: $(BOOKdir)/$@ $(srcdir)/getcounted.ch
-reboot.xml:     $(BOOKdir)/$@ $(srcdir)/reboot.ch
-theend.xml:     $(BOOKdir)/$@ $(srcdir)/theend.ch
-whatnow.xml:    $(BOOKdir)/$@ $(srcdir)/whatnow.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

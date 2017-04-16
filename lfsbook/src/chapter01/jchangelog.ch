@@ -58,6 +58,15 @@
 -->
 
    <listitem>
+      <para>2017-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - 日本語化ビルドソースの整理。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2017-04-12</para>
       <itemizedlist>
         <listitem>
