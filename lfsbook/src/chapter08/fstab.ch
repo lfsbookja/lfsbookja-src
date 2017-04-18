@@ -47,7 +47,7 @@
   <replaceable>&lt;fff&gt;</replaceable> の部分はシステムに合わせて正しい記述に書き換えてください。
   例えば <filename class="partition">sda2</filename>、<filename class="partition">sda5</filename>、<systemitem
   class="filesystem">ext4</systemitem> といったものです。
-  上のファイルの6行分の記述内容の詳細は <command>man 5 fstab</command> により確認してください。
+  上記各行の6項目の記述内容については <command>man 5 fstab</command> により確認してください。
   </para>
 @z
 
