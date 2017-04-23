@@ -110,7 +110,7 @@
     meant to be run as user <systemitem class="username">root</systemitem>:</para>
 @y
     <para>
-    テストスイートを実行します。
+    ここからテストスイートを実施していきます。
     まずは <systemitem class="username">root</systemitem> ユーザーに対するテストを実行します。
     </para>
 @z
@@ -123,9 +123,9 @@
     user <systemitem class="username">nobody</systemitem> a part of it:</para>
 @y
     <para>
-    ここからのテストは <systemitem class="username">nobody</systemitem> ユーザーにより実行します。
+    ここからは <systemitem class="username">nobody</systemitem> ユーザー向けのテストを実行します。
     ただしテストの中には、複数のグループに属するユーザーを必要とするものがあります。
-    そのようなテストを確実に実施するために、一時的なグループを作って <systemitem class="username">nobody</systemitem> ユーザーがそれに属するようにします。
+    そのようなテストが確実に実施されるように、一時的なグループを作って <systemitem class="username">nobody</systemitem> ユーザーがそれに属するようにします。
     </para>
 @z
 
@@ -316,8 +316,8 @@
           octal number representing the new permissions</para>
 @y
           <para>
-          指定されたファイルのパーミッションを、指定されたモードに変更します。
-          モードは、変更内容を表す文字表現か、8進数表現を用いることができます。
+          指定されたファイルのパーミッションを指定されたモードに変更します。
+          モードは、変更内容を表す文字表現か8進数表現を用いることができます。
           </para>
 @z
 
@@ -345,7 +345,7 @@
           counts of each specified file</para>
 @y
           <para>
-          指定された複数のファイルについて、CRC (Cyclic Redundancy Check; 巡回冗長検査) チェックサム値とバイト数を表示します。
+          指定された複数ファイルについて、CRC (Cyclic Redundancy Check; 巡回冗長検査) チェックサム値とバイト数を表示します。
           </para>
 @z
 
@@ -380,10 +380,6 @@
           <para>Prints sections of lines, selecting the parts according to given
           fields or positions</para>
 @y
-          <!--
-          日本語訳註： 2009-09-01 matsuand
-          この手の、平明な単語が並ぶ短い文が難しい。訳出が適当かどうか自信なし。
-          -->
           <para>
           指定されたフィールド位置や文字位置によってテキスト行を部分的に取り出します。
           </para>
@@ -444,7 +440,7 @@
           <para>Strips the non-directory suffix from a file name</para>
 @y
           <para>
-          ファイル名から、ディレクトリ名以外のサフィックスを取り除きます。
+          ファイル名からディレクトリ名以外のサフィックスを取り除きます。
           </para>
 @z
 
@@ -503,7 +499,8 @@
           indicating failure</para>
 @y
           <para>
-          何も行わず処理に失敗します。これは常に失敗を意味するステータスコードを返して終了します。
+          何も行わず処理に失敗します。
+          これは常に失敗を意味するステータスコードを返して終了します。
           </para>
 @z
 
@@ -579,7 +576,7 @@
           <para>Creates a hard link with the given name to a file</para>
 @y
           <para>
-          指定された名称により、ファイルへのハードリンクを生成します。
+          指定された名称によりファイルへのハードリンクを生成します。
           </para>
 @z
 
@@ -926,12 +923,8 @@
           <para>Runs commands with altered buffering operations for its standard
           streams</para>
 @y
-          <!--
-          日本語訳註： 2009-09-18 matsuand
-          どんなコマンドなのか不明。訳出も内容理解できていないため不十分。
-          -->
           <para>
-          本コマンド実行により、標準ストリームに対するバッファリング操作を変更します。
+          標準ストリームのバッファリング操作を変更してコマンド実行します。
           </para>
 @z
 
