@@ -54,6 +54,26 @@
 @z
 
 @x
+      <para>2017-04-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add instructions to save debugging
+          information for selected libraries when stripping at
+          the end of Chapter 6. Fixes
+          <ulink url="&lfs-ticket-root;4076">#4076</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第6章の最後、ストリップにおいて所定ライブラリのデバッグ情報を温存するための手順を追加。
+          <ulink url="&lfs-ticket-root;4076">#4076</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-04-11</para>
       <itemizedlist>
         <listitem revision="systemd">

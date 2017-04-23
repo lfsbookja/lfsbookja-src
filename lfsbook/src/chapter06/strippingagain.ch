@@ -41,9 +41,19 @@
   backup of the LFS system in its current state.</para>
 @y
   <para>
-  以下に示すコマンドは、いとも簡単なものです。
+  以下に示すコマンドは簡単なものです。
   ただし入力つづりは簡単に間違いやすいので、もし誤った入力をするとシステムを利用不能にしてしまいます。
   したがって <command>strip</command> コマンドを実行する前に、現時点の LFS システムのバックアップを取っておくことをお勧めします。
+  </para>
+@z
+
+@x
+  <para>First back up some libraries who's debug symbols are needed when
+  running regression tests in BLFS packages:</para>
+@y
+  <para>
+  まずはライブラリのいくつかについてバックアップをとっておきます。
+  BLFS パッケージの中で縮退テストの実行時にライブラリのデバッグシンボルを必要とするものがあるためです。
   </para>
 @z
 
@@ -81,5 +91,20 @@
   <para>
   ファイルフォーマットが認識できないファイルがいくつも警告表示されますが、無視して構いません。
   この警告は、処理したファイルが実行モジュールではなくスクリプトファイルであることを示しています。
+  </para>
+@z
+
+@x
+  <para>If desired, restore the saved libraries with the debug data
+  intact.  The files can restored now or just held for later use.  Note
+  that several of the files cannot be copied directly after rebooting
+  to the new LFS system. Later use requires booting to another system,
+  mounting the LFS partition, and then copying the files.</para>
+@y
+  <para>
+  先ほどデバッグシンボルを含むライブラリをバックアップしていましたが、必要な方はこれを元に戻してください。
+  ここで戻すのでもよいですし、後々のためにそのまま残しておくのでも構いません。
+  ただし新しく構築した LFS システムを再起動した後であると、ライブラリの中には単純にコピーできないものが出てきます。
+  その場合は他のシステムを起動させて LFS パーティションをマウントし、その状態でライブラリをコピーする必要があります。
   </para>
 @z

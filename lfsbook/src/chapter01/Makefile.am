@@ -13,22 +13,26 @@ CHANGE_FILES = \
 	how.ch        \
 	livecd.ch     \
 	resources.ch  \
-	whatsnew.ch   \
+	whatsnew.ch
+COPY_FILES = \
 	jchangelog.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
+EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES:.ch=.xml)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
+cpys = $(COPY_FILES:.ch=.xml)
 DISTCLEANFILES = $(srcs)
 
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
-all: ctie $(srcs)
+all: ctie $(srcs) $(cpys)
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-jchangelog.xml: $(srcdir)/jchangelog.ch
-	cp -p $^ $@
+
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+$(cpys): $(srcdir)/$(@:.xml=.ch)
+	cp -p $(srcdir)/$(@:.xml=.ch) $@
