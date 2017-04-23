@@ -522,7 +522,7 @@
           an entire series は何を意図しているのか
           -->
           <para>
-          ユーザーアカウントの情報を生成または更新します。
+          複数ユーザーのアカウント情報を生成または更新します。
           </para>
 @z
 
@@ -622,7 +622,7 @@
           <filename>/etc/gshadow</filename> files</para>
 @y
           <para>
-          <filename>/etc/group</filename> ファイル、あるいは <filename>/etc/gshadow</filename> ファイルを編集します。
+          <filename>/etc/group</filename> ファイルあるいは <filename>/etc/gshadow</filename> ファイルを編集します。
           </para>
 @z
 
@@ -631,6 +631,6 @@
           <filename>/etc/shadow</filename> files</para>
 @y
           <para>
-          <filename>/etc/passwd</filename> ファイル、あるいは <filename>/etc/shadow</filename> ファイルを編集します。
+          <filename>/etc/passwd</filename> ファイルあるいは <filename>/etc/shadow</filename> ファイルを編集します。
           </para>
 @z

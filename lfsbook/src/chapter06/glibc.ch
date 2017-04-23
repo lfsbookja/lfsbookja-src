@@ -169,40 +169,6 @@
         </para>
 @z
 
-% @x
-%         <para>The <emphasis>elf/tst-protected1a</emphasis> and
-%         <emphasis>elf/tst-protected1b</emphasis> tests are known to
-%         fail with the current stable version of binutils.</para>
-% @y
-%         <para>
-%         <emphasis>elf/tst-protected1a</emphasis> テストと <emphasis>elf/tst-protected1b</emphasis> テストは、binutils の現バージョンでは失敗します。
-%         </para>
-% @z
-
-% @x
-%         <para>When running on older and slower hardware or on systems under
-%         load, some tests can fail because of test timeouts being exceeded.
-%         Modifying the make check command to set a TIMEOUTFACTOR is reported to 
-%         help eliminate these errors (e.g. <command>TIMEOUTFACTOR=16
-%         make -k check</command>).</para>
-% @y
-%         <para>
-%         旧式のハードウェアや性能の低いハードウェア、あるいは負荷の高いシステムにおいてテストを行うと、処理時間をオーバーしてタイムアウトが発生しテストが失敗します。
-%         make check コマンドにて TIMEOUTFACTOR をセットするものに修正すれば、それらのエラーは回避できると報告されています。
-%         (例： <command>TIMEOUTFACTOR=16 make -k check</command>)
-%         </para>
-% @z
-
-% @x
-%         <para>libio/tst-ftell-partial-wide.out fails because it needs a locale
-%         that has not yet been generated.</para>
-% @y
-%         <para>
-%         libio/tst-ftell-partial-wide.out のテストは失敗します。
-%         ロケールを必要としており、まだ生成していないからです。
-%         </para>
-% @z
-
 @x
         <para>Other tests known to fail on some architectures are
         malloc/tst-malloc-usable and nptl/tst-cleanupx4. </para>
@@ -256,7 +222,7 @@
 @y
     <para>
     システムを各種の言語に対応させるためのロケールをインストールします。
-    テストスイートにおいてロケールは必要ではありませんが、将来的にはロケールがないことによって、重要なテストを逃してしまうかもしれません。
+    テストスイートにおいてロケールは必要ではありませんが、将来的にはロケールが不足していることによって、重要なテストが実施されずに見逃してしまうかもしれません。
     </para>
 @z
 
@@ -330,7 +296,7 @@
 @y
     <para>
     <filename>/etc/nsswitch.conf</filename> ファイルを作成しておく必要があります。
-    Glibc はデフォルトでは、このファイルが無い場合にネットワーク環境が正しく動作しません。
+    このファイルが無い場合、Glibc のデフォルト値ではネットワーク環境下にて Glibc が正しく動作しません。
     </para>
 @z
 
@@ -375,7 +341,7 @@
           failures.</para>
 @y
           <para>
-          これは、うるう秒を含まない posix タイムゾーンデータを生成します。
+          うるう秒を含まない posix タイムゾーンデータを生成します。
           これらは <filename class="directory">zoneinfo</filename> や <filename
           class="directory">zoneinfo/posix</filename> に収容するものとして適切なものです。
           <filename class="directory">zoneinfo</filename> へは POSIX 準拠のタイムゾーンデータを含めることが必要であり、こうしておかないと数々のテストスイートにてエラーが発生してしまいます。
@@ -393,7 +359,7 @@
           directory.</para>
 @y
           <para>
-          これは、うるう秒を含んだ正しいタイムゾーンデータを生成します。
+          うるう秒を含んだ正しいタイムゾーンデータを生成します。
           組み込みシステムなどでは容量の制約が厳しいため、タイムゾーンデータはあまり更新したくない場合や、さほど気にかけない場合もあります。
           <filename class="directory">right</filename> ディレクトリを省略することにすれば 1.9MB の容量を節約することができます。
           </para>
@@ -405,7 +371,7 @@
           to be in accordance with US rules.</para>
 @y
           <para>
-          これは <filename>posixrules</filename> ファイルを生成します。
+          <filename>posixrules</filename> ファイルを生成します。
           ここでは New York を用います。
           POSIX では、日中の保存時刻として US ルールに従うことを規程しているためです。
           </para>
@@ -477,11 +443,11 @@
     dynamic loader's search path.</para>
 @y
     <para>
-    デフォルトにおいてダイナミックリンカー (<filename
-    class="libraryfile">/lib/ld-linux.so.2</filename>) は <filename
+    ダイナミックリンカー (<filename
+    class="libraryfile">/lib/ld-linux.so.2</filename>) がダイナミックライブラリを検索するデフォルトのディレクトリが <filename
     class="directory">/lib</filename> ディレクトリと <filename
-    class="directory">/usr/lib</filename> ディレクトリを検索しにいきます。
-    これに従って、他のプログラムが実行される際に必要となるダイナミックライブラリがリンクされます。
+    class="directory">/usr/lib</filename> ディレクトリです。
+    各種プログラムが実行される際にはここから検索されたダイナミックライブラリがリンクされます。
     もし <filename class="directory">/lib</filename> や <filename
     class="directory">/usr/lib</filename> 以外のディレクトリにライブラリファイルがあるなら <filename>/etc/ld.so.conf</filename> ファイルに記述を追加して、ダイナミックローダーがそれらを探し出せるようにしておくことが必要です。
     追加のライブラリが配置されるディレクトリとしては <filename
@@ -590,7 +556,7 @@
           </para>
 @z
 
-@x
+@x gencat
           <para>Generates message catalogues</para>
 @y
           <para>
@@ -636,7 +602,7 @@
           <para>Configures the dynamic linker runtime bindings</para>
 @y
           <para>
-          プログラム実行時におけるダイナミックリンカーのリンクを設定します。
+          ダイナミックリンカーの実行時バインディングを設定します。
           </para>
 @z
 
@@ -704,7 +670,7 @@
           <para>Lists dynamic shared objects used by running processes</para>
 @y
           <para>
-          稼動中のプロセスにて利用されている、動的共有オブジェクト (dynamic shared objects) を一覧出力します。
+          稼動中のプロセスにて利用されている動的共有オブジェクト (dynamic shared objects) を一覧出力します。
           </para>
 @z
 
@@ -944,7 +910,7 @@
           by the POSIX.1b Realtime Extension</para>
 @y
           <para>
-          POSIX.1b リアルタイム拡張 (Realtime Extension) にて既定されている、インターフェースをほぼ網羅した関数を提供します。
+          POSIX.1b リアルタイム拡張 (Realtime Extension) にて既定されているインターフェースをほぼ網羅した関数を提供します。
           </para>
 @z
 

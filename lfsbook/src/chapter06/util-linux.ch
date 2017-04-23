@@ -19,7 +19,7 @@
     and messages.</para>
 @y
     <para>
-    Util-linux パッケージは、さまざまなユーティリティプログラムを提供します。
+    Util-linux パッケージはさまざまなユーティリティプログラムを提供します。
     ファイルシステム、コンソール、パーティション、カーネルメッセージなどを取り扱うユーティリティです。
     </para>
 @z
@@ -270,7 +270,7 @@
           <para>Filters out reverse line feeds</para>
 @y
           <para>
-          逆改行 (resverse line feeds) を取り除きます。
+          逆改行 (reverse line feeds) を取り除きます。
           </para>
 @z
 
@@ -380,7 +380,7 @@
           held</para>
 @y
           <para>
-          ファイルロックを取得して、ロックしたままコマンドを実行します。
+          ファイルロックを取得してロックしたままコマンドを実行します。
           </para>
 @z
 
@@ -891,11 +891,8 @@
 @x swaplabel
           <para>Allows to change swaparea UUID and label</para>
 @y
-          <!--
-          日本語訳註： 意味不理解
-          -->
           <para>
-          スワップエリアの UUID とラベルを変更します。
+          スワップ領域の UUID とラベルを変更します。
           </para>
 @z
 

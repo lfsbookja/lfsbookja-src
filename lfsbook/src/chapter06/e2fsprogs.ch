@@ -518,7 +518,7 @@
           class="filesystem">ext2</systemitem> file system</para>
 @y
           <para>
-          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上にて調整可能なシステムパラメータを調整します。
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上にて調整可能なシステムパラメーターを調整します。
           </para>
 @z
 
@@ -535,7 +535,7 @@
           and <command>lsattr</command></para>
 @y
           <para>
-          以下のコマンド <command>dumpe2fs</command>、<command>chattr</command>、<command>lsattr</command> が利用します。
+          <command>dumpe2fs</command>、<command>chattr</command>、<command>lsattr</command> の各コマンドが利用します。
           </para>
 @z
 

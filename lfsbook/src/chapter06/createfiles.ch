@@ -16,7 +16,7 @@
 @x
   <title>Creating Essential Files and Symlinks</title>
 @y
-  <title>基本的なファイルとリンクの生成</title>
+  <title>重要なファイルとシンボリックリンクの生成</title>
 @z
 
 @x
@@ -217,8 +217,8 @@
   work:</para>
 @y
   <para>
-  プロンプトに表示される<quote>I have no name!</quote>を正しくするため、新たなシェルを起動します。
-  <xref linkend="chapter-temporary-tools"/>にて完全に Glibc をインストールし、<filename>/etc/passwd</filename> ファイルと <filename>/etc/group</filename> ファイルを作ったので、ユーザー名とグループ名の名前解決が適切に動作します。
+  プロンプトの<quote>I have no name!</quote>を取り除くために新たなシェルを起動します。
+  <xref linkend="chapter-temporary-tools"/>にて完全に Glibc をインストールし <filename>/etc/passwd</filename> ファイルと <filename>/etc/group</filename> ファイルを作ったので、ユーザー名とグループ名の名前解決が適切に動作します。
   </para>
 @z
 
@@ -234,7 +234,7 @@
   ディレクティブ <parameter>+h</parameter> について触れておきます。
   これは <command>bash</command> に対して実行パスの内部ハッシュ機能を利用しないよう指示するものです。
   もしこのディレクティブを指定しなかった場合 <command>bash</command> は一度実行したファイルのパスを記憶します。
-  コンパイルしてインストールした実行ファイルはすぐに利用していくために、本章での作業では
+  コンパイルしてインストールした実行ファイルはすぐに利用していくために、本章の作業では
   <parameter>+h</parameter> ディレクティブを常に使っていくことにします。
   </para>
 @z

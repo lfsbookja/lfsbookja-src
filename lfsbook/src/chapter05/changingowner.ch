@@ -46,8 +46,8 @@
 @y
   <para>
   <filename class="directory">$LFS/tools</filename> ディレクトリの所有者は今は <systemitem
-  class="username">lfs</systemitem> ユーザーであり、これはホストシステム上に存在するユーザーです。
-  この <filename class="directory">$LFS/tools</filename> ディレクトリをこのままにしておくということは、そこにあるファイル群が、存在しないアカウントに対するユーザーIDによって所有される形を生み出すことになります。
+  class="username">lfs</systemitem> ユーザーであり、これはホストシステム上にのみ存在するユーザーです。
+  この <filename class="directory">$LFS/tools</filename> ディレクトリをこのままにしておくということは、そこにあるファイル群が、存在しないユーザーによって所有される形を生み出すことになります。
   これは危険なことです。
   後にユーザーアカウントが生成され同一のユーザーIDを持ったとすると <filename
   class="directory">$LFS/tools</filename> の所有者となってしまい、そこにあるファイルすべてを所有することになって、悪意のある操作に利用されてしまいます。
@@ -66,10 +66,11 @@
   <para>
   この問題を解消するためには、新しく作り出される LFS システムに <systemitem
   class="username">lfs</systemitem> ユーザーを作成することが考えられます。
-  その場合には同一のユーザーID、グループIDとなるように作ります。
-  もっと良い方法があります。
+  このときには同一のユーザーID、グループIDとなるように作ることが必要です。
+  別の方法もあります。
   <filename class="directory">$LFS/tools</filename> ディレクトリの所有者を <systemitem
-  class="username">root</systemitem> ユーザーにすることです。以下のコマンドによりこれを実現します。
+  class="username">root</systemitem> ユーザーにすることです。
+  以下のコマンドによりこれを実現します。
   </para>
 @z
 

@@ -69,7 +69,7 @@
      <listitem>
 
       <para>
-      そもそも LFS ブックのソースは、LFS のサイト <ulink url="&lfs-root;"/> において、Static 版として公開されていると同時に Subversion により、日々開発更新されているソース (XMLソース) が公開されています。
+      そもそも LFS ブックのソースは、LFS のサイト <ulink url="&lfs-root;"/> において、Stable 版として公開されていると同時に Subversion により、日々開発更新されているソース (XMLソース) が公開されています。
       日本語版はその XML ソースに基づいて作成しています。
       </para>
 

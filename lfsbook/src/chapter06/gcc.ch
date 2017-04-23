@@ -191,7 +191,7 @@
     compiler. To satisfy those packages, create a symlink:</para>
 @y
     <para>
-    パッケージの多くは C コンパイラーとして <command>cc</command> を呼び出しています。
+    各種パッケージは C コンパイラーとして <command>cc</command> を呼び出しているものが数多くあります。
     これに対応するため、以下のシンボリックリンクを作成します。
     </para>
 @z
@@ -268,7 +268,9 @@
 @x
     <para>Finally, move a misplaced file:</para>
 @y
-    <para>最後に誤ったディレクトリにあるファイルを移動します。</para>
+    <para>
+    最後に誤ったディレクトリにあるファイルを移動します。
+    </para>
 @z
 
 @x
@@ -432,9 +434,9 @@
           shared-memory parallel programming in C/C++ and Fortran</para>
 @y
           <para>
-          C/C++ や Fortran において、マルチプラットフォームでの共有メモリ並行プログラミング
+          C/C++ や Fortran においてマルチプラットフォームでの共有メモリ並行プログラミング
           (multi-platform shared-memory parallel programming)
-          を行うための、GNU による OpenMP API インプリメンテーションです。
+          を行うための GNU による OpenMP API インプリメンテーションです。
           </para>
 @z
 
