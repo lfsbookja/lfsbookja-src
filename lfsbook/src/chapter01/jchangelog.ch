@@ -34,7 +34,7 @@
    </para>
    <para>
    「SVN-20150123」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
-   また「Changeset 12345」という表記は、オリジナル XML ソースファイルの Subversion 管理下でのリビジョン (その参照ページ) を意味します。
+   また「チェンジセット 12345」という表記は、オリジナル XML ソースファイルの Subversion 管理下でのリビジョン (その参照ページ) を意味します。
    </para>
   </note>
 
@@ -61,6 +61,15 @@
       <para>2017-04-25</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] -
+          SVN-20170422,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11228">11228</ulink>,
+          <ulink url="&lfs-rev-root;11229">11229</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem>
           <para>[matsuand] - 引き続き全般的な整備。</para>
         </listitem>
       </itemizedlist>
@@ -72,7 +81,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170422,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11226">11226</ulink>,
           <ulink url="&lfs-rev-root;11227">11227</ulink>
           対応。
@@ -99,7 +108,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170411,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11223">11223</ulink> ～
           <ulink url="&lfs-rev-root;11225">11225</ulink>
           対応。
@@ -114,7 +123,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170410,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11221">11221</ulink>,
           <ulink url="&lfs-rev-root;11222">11222</ulink>
           対応。
@@ -138,7 +147,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170407,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11219">11219</ulink>,
           <ulink url="&lfs-rev-root;11220">11220</ulink>
           対応。
@@ -153,7 +162,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170403,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11216">11216</ulink> ～
           <ulink url="&lfs-rev-root;11218">11218</ulink>
           対応。
@@ -168,7 +177,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170331,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11213">11213</ulink> ～
           <ulink url="&lfs-rev-root;11215">11215</ulink>
           対応。
@@ -183,7 +192,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170328,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11211">11211</ulink>,
           <ulink url="&lfs-rev-root;11212">11212</ulink>
           対応。
@@ -198,7 +207,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170325,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11210">11210</ulink>
           対応。
           </para>
@@ -217,7 +226,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170318,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11209">11209</ulink>
           対応。
           </para>
@@ -231,7 +240,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170311,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11205">11205</ulink> ～
           <ulink url="&lfs-rev-root;11208">11208</ulink>
           対応。
@@ -246,7 +255,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170308,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11202">11202</ulink> ～
           <ulink url="&lfs-rev-root;11204">11204</ulink>
           対応。
@@ -261,7 +270,7 @@
         <listitem>
           <para>[matsuand] -
           SVN-20170303,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11200">11200</ulink>,
           <ulink url="&lfs-rev-root;11201">11201</ulink>
           対応。
@@ -276,7 +285,7 @@
         <listitem>
           <para>[matsuand] -
           LFS-8.0 リリース対応,
-          Changeset
+          チェンジセット
           <ulink url="&lfs-rev-root;11174">11174</ulink> ～
           <ulink url="&lfs-rev-root;11199">11199</ulink>
           対応。

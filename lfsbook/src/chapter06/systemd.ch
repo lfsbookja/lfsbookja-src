@@ -178,7 +178,7 @@
 @z
 
 @x --with-default-dnssec=no
-          <para>This switch turns off the experimental DNSSEC suport.</para>
+          <para>This switch turns off the experimental DNSSEC support.</para>
 @y
           <para>
           このスイッチは DNSSEC に関する実験的なサポートを無効にします。
