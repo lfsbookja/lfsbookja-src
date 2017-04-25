@@ -32,7 +32,6 @@ all: ctie $(srcs) $(cpys)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
 $(cpys): $(srcdir)/$(@:.xml=.ch)
 	cp -p $(srcdir)/$(@:.xml=.ch) $@

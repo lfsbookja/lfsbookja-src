@@ -58,7 +58,7 @@
           which is FHS-compliant.</para>
 @y
           <para>
-          <command>locate</command> データベースの場所を FHS コンプライアンスが定めているディレクトリ <filename
+          <command>locate</command> データベースの場所を FHS コンプライアンスに準拠するディレクトリ <filename
           class="directory">/var/lib/locate</filename> に変更します。
           </para>
 @z
@@ -184,7 +184,7 @@
           <para>Older version of find, using a different algorithm</para>
 @y
           <para>
-          find の古い版であり、find とは異なるアルゴリズムを用いています。
+          find の古い版であり find とは異なるアルゴリズムを用いています。
           </para>
 @z
 

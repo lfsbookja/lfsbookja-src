@@ -176,72 +176,82 @@
 
 @x ip
           <para>The main executable. It has several different functions:</para>
-
-          <para><command>ip link <replaceable>&lt;device&gt;</replaceable></command>
-          allows users to look at the state of devices and to make changes</para>
-
-          <para><command>ip addr</command> allows users to look at addresses and
-          their properties, add new addresses, and delete old ones</para>
-
-          <para><command>ip neighbor</command> allows users to look at neighbor
-          bindings and their properties, add new neighbor entries, and delete
-          old ones</para>
-
-          <para><command>ip rule</command> allows users to look at the routing
-          policies and change them</para>
-
-          <para><command>ip route</command> allows users to look at the routing
-          table and change routing table rules</para>
-
-          <para><command>ip tunnel</command> allows users to look at the IP
-          tunnels and their properties, and change them</para>
-
-          <para><command>ip maddr</command> allows users to look at the multicast
-          addresses and their properties, and change them</para>
-
-          <para><command>ip mroute</command> allows users to set, change, or
-          delete the multicast routing</para>
-
-          <para><command>ip monitor</command> allows users to continuously monitor
-          the state of devices, addresses and routes</para>
 @y
           <para>
           主となる実行モジュールで、複数の機能性を持ちます。
           </para>
-
+@z
+@x
+          <para><command>ip link <replaceable>&lt;device&gt;</replaceable></command>
+          allows users to look at the state of devices and to make changes</para>
+@y
           <para>
-          <command>ip link &lt;デバイス名&gt;</command> はデバイスのステータスを参照し、またステータスの変更を行います。
+          <command>ip link <replaceable>&lt;デバイス名&gt;</replaceable></command> はデバイスのステータスを参照し、またステータスの変更を行います。
           </para>
-
-          <para><command>ip addr</command> はアドレスとその属性を参照し、新しいアドレスの追加、古いアドレスの削除を行います。
-          </para>
-
+@z
+@x
+          <para><command>ip addr</command> allows users to look at addresses and
+          their properties, add new addresses, and delete old ones</para>
+@y
           <para>
-          <command>ip neighbor</command> は、隣接ルーター (neighbor) の割り当てや属性を参照し、隣接ルーターの項目追加や古いものの削除を行います。
+          <command>ip addr</command> はアドレスとその属性を参照し、新しいアドレスの追加、古いアドレスの削除を行います。
           </para>
-
+@z
+@x
+          <para><command>ip neighbor</command> allows users to look at neighbor
+          bindings and their properties, add new neighbor entries, and delete
+          old ones</para>
+@y
           <para>
-          <command>ip rule</command> は、ルーティングポリシー (routing policy) を参照し、変更を行います。
+          <command>ip neighbor</command> は隣接ルーター (neighbor) の割り当てや属性を参照し、隣接ルーターの項目追加や古いものの削除を行います。
           </para>
-
+@z
+@x
+          <para><command>ip rule</command> allows users to look at the routing
+          policies and change them</para>
+@y
           <para>
-          <command>ip route</command> は、ルーティングテーブル (routing table) を参照し、ルーティングルール (routing table rule) を変更します。
+          <command>ip rule</command> はルーティングポリシー (routing policy) を参照し、変更を行います。
           </para>
-
+@z
+@x
+          <para><command>ip route</command> allows users to look at the routing
+          table and change routing table rules</para>
+@y
           <para>
-          <command>ip tunnel</command> は、IP トンネル (IP tunnel) やその属性を参照し、変更を行います。
+          <command>ip route</command> はルーティングテーブル (routing table) を参照し、ルーティングルール (routing table rule) を変更します。
           </para>
-
+@z
+@x
+          <para><command>ip tunnel</command> allows users to look at the IP
+          tunnels and their properties, and change them</para>
+@y
           <para>
-          <command>ip maddr</command> は、マルチキャストアドレス (multicast address) やその属性を参照し、変更を行います。
+          <command>ip tunnel</command> は IP トンネル (IP tunnel) やその属性を参照し、変更を行います。
           </para>
-
+@z
+@x
+          <para><command>ip maddr</command> allows users to look at the multicast
+          addresses and their properties, and change them</para>
+@y
           <para>
-          <command>ip mroute</command> は、マルチキャストルーティング (multicast routing) の設定、変更、削除を行います。
+          <command>ip maddr</command> はマルチキャストアドレス (multicast address) やその属性を参照し、変更を行います。
           </para>
-
+@z
+@x
+          <para><command>ip mroute</command> allows users to set, change, or
+          delete the multicast routing</para>
+@y
           <para>
-          <command>ip monitor</command> は、デバイスの状態、アドレス、ルートを継続的に監視します。
+          <command>ip mroute</command> はマルチキャストルーティング (multicast routing) の設定、変更、削除を行います。
+          </para>
+@z
+@x
+          <para><command>ip monitor</command> allows users to continuously monitor
+          the state of devices, addresses and routes</para>
+@y
+          <para>
+          <command>ip monitor</command> はデバイスの状態、アドレス、ルートを継続的に監視します。
           </para>
 @z
 
@@ -331,21 +341,6 @@
 @x tc
           <para>Traffic Controlling Executable; this is for Quality Of Service
           (QOS) and Class Of Service (COS) implementations</para>
-
-          <para><command>tc qdisc</command> allows users to setup the queueing
-          discipline</para>
-
-          <para><command>tc class</command> allows users to setup classes based
-          on the queuing discipline scheduling</para>
-
-          <para><command>tc estimator</command> allows users to estimate the
-          network flow into a network</para>
-
-          <para><command>tc filter</command> allows users to setup the QOS/COS
-          packet filtering</para>
-
-          <para><command>tc policy</command> allows users to setup the QOS/COS
-          policies</para>
 @y
           <!--
           日本語訳註： 2009-09-07 matsuand
@@ -355,23 +350,44 @@
           トラフィック制御プログラム (Traffic Controlling Executable)。
           これは QOS (Quality Of Service) と COS (Class Of Service) を実装するプログラムです。
           </para>
-
+@z
+@x
+          <para><command>tc qdisc</command> allows users to setup the queueing
+          discipline</para>
+@y
           <para>
-          <command>tc qdisc</command> は、キューイング規則 (queueing discipline) の設定を行います。
+          <command>tc qdisc</command> はキューイング規則 (queueing discipline) の設定を行います。
           </para>
-
+@z
+@x
+          <para><command>tc class</command> allows users to setup classes based
+          on the queuing discipline scheduling</para>
+@y
           <para>
-          <command>tc class</command> は、キューイング規則スケジューリング (queueing discipline scheduling) に基づくクラスの設定を行います。
+          <command>tc class</command> はキューイング規則スケジューリング (queueing discipline scheduling) に基づくクラスの設定を行います。
           </para>
-
+@z
+@x
+          <para><command>tc estimator</command> allows users to estimate the
+          network flow into a network</para>
+@y
           <para>
-          <command>tc estimator</command> は、ネットワークフローを見積もります。
+          <command>tc estimator</command> はネットワークフローを見積もります。
           </para>
-
+@z
+@x
+          <para><command>tc filter</command> allows users to setup the QOS/COS
+          packet filtering</para>
+@y
           <para>
           <command>tc filter</command> は、QOS/COS パケットのフィルタリング設定を行います。
           </para>
+@z
 
+@x
+          <para><command>tc policy</command> allows users to setup the QOS/COS
+          policies</para>
+@y
           <para>
           <command>tc policy</command> は、QOS/COS ポリシーの設定を行います。
           </para>

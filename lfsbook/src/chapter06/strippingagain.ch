@@ -48,7 +48,7 @@
 @z
 
 @x
-  <para>First back up some libraries who's debug symbols are needed when
+  <para>First back up some libraries whose debug symbols are needed when
   running regression tests in BLFS packages:</para>
 @y
   <para>

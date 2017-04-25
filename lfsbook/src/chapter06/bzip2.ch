@@ -74,7 +74,7 @@
 @y
           <para>
           このパラメーターは Bzip2 のビルドにあたって通常の <filename>Makefile</filename> ファイルではなく <filename>Makefile-libbz2_so</filename> ファイルを利用することを指示します。
-          これはダイナミックライブラリ <filename class="libraryfile">libbz2.so</filename> ライブラリをビルドし、Bzip2 の各種プログラムをこれにリンクします。
+          これはダイナミックライブラリ <filename class="libraryfile">libbz2.so</filename> をビルドし Bzip2 の各種プログラムをこれにリンクします。
           </para>
 @z
 

@@ -48,7 +48,7 @@
 @y
     <para>
     ここでビルドするバージョンの Perl は Compress::Raw::Zlib モジュールと Compress::Raw::Bzip2 モジュールをビルドします。
-    デフォルトではビルドの際にそれらのソースを内部的にコピーします。
+    しかしデフォルトでは内部にコピーされたライブラリソースを用いてビルドを行います。
     以下のコマンドは、既にインストールされているライブラリを用いるようにします。
     </para>
 @z
@@ -70,8 +70,8 @@
     use the defaults that Perl auto-detects:</para>
 @y
     <para>
-    Perl のビルド設定を完全に制御したい場合は、以下のコマンドから<quote>-des</quote>オプションを取り除くことで手作業により操作を進めます。
-    Perl が自動的に判別するデフォルト設定に従うので良いのであれば、以下のコマンドにより Perl をコンパイルするための準備をします。
+    Perl のビルド設定を完全に制御したい場合は、以下のコマンドから<quote>-des</quote>オプションを取り除くことで手動設定を進めることもできます。
+    Perl が自動判別するデフォルト設定に従うので良ければ、以下のコマンドにより Perl をコンパイルするための準備をします。
     </para>
 @z
 
@@ -188,7 +188,7 @@
         pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, podselect,
         prove, pstruct (hard c2ph へのハードリンク), ptar, ptardiff, ptargrep, shasum,
         splain, xsubpp, zipdetails</seg>
-        <seg>ここでは列記できないほどの数多くのライブラリ</seg>
+        <seg>ここで示しきれないほど多くのライブラリ</seg>
         <seg>/usr/lib/perl5</seg>
 @z
 
@@ -203,7 +203,7 @@
           <command>cc -g -S</command></para>
 @y
           <para>
-          <command>cc -g -S</command> によって生成されるような C 言語構造体をダンプします。
+          <command>cc -g -S</command> によって生成される C 言語構造体をダンプします。
           </para>
 @z
 
@@ -229,7 +229,7 @@
           Unicode Character Mappings or Tcl Encoding Files</para>
 @y
           <para>
-          Unicode キャラクターマッピングまたは Tcl エンコーディングファイルから、Perl の Encode 拡張モジュールを構築します。
+          Unicode キャラクターマッピングまたは Tcl エンコーディングファイルから Perl の Encode 拡張モジュールを構築します。
           </para>
 @z
 
@@ -428,14 +428,6 @@
           Test::Harness モジュールのテストを行うコマンドラインツール。
           </para>
 @z
-
-% @x psed
-%           <para>A Perl version of the stream editor <command>sed</command></para>
-% @y
-%           <para>
-%           ストリームエディター <command>sed</command> の Perl バージョン。
-%           </para>
-% @z
 
 @x pstruct
           <para>Dumps C structures as generated from <command>cc -g -S</command>

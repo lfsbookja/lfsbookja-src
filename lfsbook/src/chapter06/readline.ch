@@ -18,7 +18,7 @@
     editing and history capabilities.</para>
 @y
     <para>
-    Readline パッケージは、コマンドラインの編集や履歴管理を行うライブラリを提供します。
+    Readline パッケージはコマンドラインの編集や履歴管理を行うライブラリを提供します。
     </para>
 @z
 

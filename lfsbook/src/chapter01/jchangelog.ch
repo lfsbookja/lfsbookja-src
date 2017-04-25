@@ -58,6 +58,15 @@
 -->
 
    <listitem>
+      <para>2017-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - 引き続き全般的な整備。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2017-04-23</para>
       <itemizedlist>
         <listitem>

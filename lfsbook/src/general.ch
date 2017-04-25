@@ -24,8 +24,8 @@
 <!ENTITY releasedate     "April 11, 2017">
 @y
 <!ENTITY releasedate     "2017年4月22日">
-<!ENTITY jversion        "20170423">
-<!ENTITY jversiond       "20170423">
+<!ENTITY jversion        "20170425">
+<!ENTITY jversiond       "20170425">
 <!ENTITY dir-jversion    "svn-ja">
 <!ENTITY dir-jversiond   "svn-sysdja">
 @z
