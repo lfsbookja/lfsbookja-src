@@ -159,12 +159,8 @@
 @x gdiffmk
           <para>Marks differences between groff/nroff/troff files</para>
 @y
-          <!--
-          日本語訳註 2009-08-28： "mark" がよく分からない。
-          ファイルの差異を示すコマンド(?)を出力結果に追加する様子。
-          -->
           <para>
-          groff、nroff、troff の入力ファイルを比較して、その差異を出力します。
+          groff、nroff、troff の入力ファイルを比較して、その差異を変更マークとして出力します。
           </para>
 @z
 
@@ -267,9 +263,8 @@
           <para>Is a driver for <command>groff</command> that produces output
           in PCL5 format suitable for an HP LaserJet 4 printer</para>
 @y
-          <para>
-          HP LaserJet 4 プリンターにて利用される PCL5 フォーマットの出力を生成する <command>groff</command> のドライバープログラム。
-          </para>
+          <para>Is a driver for <command>groff</command> that produces output
+          in PCL5 format suitable for an HP LaserJet 4 printer</para>
 @z
 
 @x
@@ -312,7 +307,7 @@
           from an HP-tagged font metric file</para>
 @y
           <para>
-          HP のタグ付けが行われたフォントメトリックファイルから、<command>groff -Tlj4</command> コマンドにて利用されるフォントファイルを生成します。
+          HP のタグ付けが行われたフォントメトリックファイルから <command>groff -Tlj4</command> コマンドにて利用されるフォントファイルを生成します。
           </para>
 @z
 
@@ -321,13 +316,6 @@
           specified file for use with <command>refer</command>,
           <command>lookbib</command>, and <command>lkbib</command></para>
 @y
-          <!--
-          日本語訳註：2009-08-28
-          bibliographics database は JM Project (http://www.linux.or.jp/JM/index.html)
-          における訳語「文献目録データベース」が存在していましたが、
-          (その元は http://www.jp.freebsd.org/man-jp/ ？）
-          非常に堅苦しい用語に感じられたため「参考文献データベース」としました。
-          -->
           <para>
           指定されたファイル内に示される参考文献データベース (bibliographic database) に対しての逆引きインデックス (inverted index) を生成します。
           これは <command>refer</command>、<command>lookbib</command>、<command>lkbib</command> といったコマンドが利用します。
@@ -396,10 +384,6 @@
 @x pdfroff
           <para>Creates pdf documents using groff</para>
 @y
-          <!--
-          日本語訳註：2009-08-28
-          groff => <command>groff</command>
-          -->
           <para>
           <command>groff</command> を利用して pdf 文書ファイルを生成します。
           </para>

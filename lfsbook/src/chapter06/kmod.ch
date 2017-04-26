@@ -131,7 +131,7 @@
 @y
           <para>
           存在しているモジュール内に含まれるシンボル名に基づいて、モジュールの依存関係を記述したファイル (dependency file) を生成します。
-          これは <command>modprobe</command> が、必要なモジュールを自動的にロードするために利用します。
+          これは <command>modprobe</command> が必要なモジュールを自動的にロードするために利用します。
           </para>
 @z
 

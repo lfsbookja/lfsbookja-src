@@ -114,7 +114,7 @@
           <para>Merges translated strings into various file types</para>
 @y
           <para>
-          翻訳された文字列を様々な種類のファイルにマージします。
+          翻訳された文字列をさまざまな種類のファイルにマージします。
           </para>
 @z
 
@@ -122,7 +122,7 @@
           <para>Updates pot files and merges them with translation files</para>
 @y
           <para>
-          pot ファイルを更新し、翻訳ファイルにマージします。
+          pot ファイルを更新し翻訳ファイルにマージします。
           </para>
 @z
 
@@ -130,6 +130,6 @@
           <para>Updates the po template files and merges them with the translations</para>
 @y
           <para>
-          po テンプレートファイルを更新し、翻訳ファイルにマージします。
+          po テンプレートファイルを更新し翻訳ファイルにマージします。
           </para>
 @z
