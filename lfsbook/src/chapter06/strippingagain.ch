@@ -20,13 +20,15 @@
 @z
 
 @x
-  <para>If the intended user is not a programmer and does not plan to do
+  <para>This section is optional.  If the intended user is not a 
+  programmer and does not plan to do
   any debugging on the system software, the system size can be decreased
   by about 90 MB by removing the debugging symbols from binaries and
   libraries. This causes no inconvenience other than not being able to
   debug the software fully anymore.</para>
 @y
   <para>
+  本節での作業を行うかどうかは任意です。
   対象ユーザーがプログラマーではなく、プログラム類をデバッグするような使い方をしないのであれば、実行ファイルやライブラリに含まれるデバッグシンボルを削除しても構いません。
   そうすれば 90 MB ものサイズ削減を図ることができます。
   たとえデバッグできなくなっても困らないはずです。
@@ -34,10 +36,10 @@
 @z
 
 @x
-  <para>Most people who use the command mentioned below do not
+  <para>Most people who use the commands mentioned below do not
   experience any difficulties. However, it is easy to make a typo and
   render the new system unusable, so before running the
-  <command>strip</command> command, it is a good idea to make a
+  <command>strip</command> commands, it is a good idea to make a
   backup of the LFS system in its current state.</para>
 @y
   <para>
@@ -48,12 +50,18 @@
 @z
 
 @x
-  <para>First back up some libraries whose debug symbols are needed when
-  running regression tests in BLFS packages:</para>
+  <para>First place the debugging symbols for selected libraries 
+  in separate files.  This debugging information is needed if running 
+  regression tests that use <ulink 
+  url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink 
+  url='&blfs-book;/general/gdb.html'>gdb</ulink> later in BLFS.
+  </para>
 @y
   <para>
-  まずはライブラリのいくつかについてバックアップをとっておきます。
-  BLFS パッケージの中で縮退テストの実行時にライブラリのデバッグシンボルを必要とするものがあるためです。
+  まずはライブラリのいくつかについてデバッグシンボルを持つような別ファイルを生成します。
+  このデバッグ情報を必要とするのは BLFS における <ulink 
+  url='&blfs-book;/general/valgrind.html'>valgrind</ulink> または <ulink 
+  url='&blfs-book;/general/gdb.html'>gdb</ulink> の縮退テストを実施するのに必要であるからです。
   </para>
 @z
 
@@ -94,17 +102,17 @@
   </para>
 @z
 
-@x
-  <para>If desired, restore the saved libraries with the debug data
-  intact.  The files can restored now or just held for later use.  Note
-  that several of the files cannot be copied directly after rebooting
-  to the new LFS system. Later use requires booting to another system,
-  mounting the LFS partition, and then copying the files.</para>
-@y
-  <para>
-  先ほどデバッグシンボルを含むライブラリをバックアップしていましたが、必要な方はこれを元に戻してください。
-  ここで戻すのでもよいですし、後々のためにそのまま残しておくのでも構いません。
-  ただし新しく構築した LFS システムを再起動した後であると、ライブラリの中には単純にコピーできないものが出てきます。
-  その場合は他のシステムを起動させて LFS パーティションをマウントし、その状態でライブラリをコピーする必要があります。
-  </para>
-@z
+% @x
+%   <para>If desired, restore the saved libraries with the debug data
+%   intact.  The files can restored now or just held for later use.  Note
+%   that several of the files cannot be copied directly after rebooting
+%   to the new LFS system. Later use requires booting to another system,
+%   mounting the LFS partition, and then copying the files.</para>
+% @y
+%   <para>
+%   先ほどデバッグシンボルを含むライブラリをバックアップしていましたが、必要な方はこれを元に戻してください。
+%   ここで戻すのでもよいですし、後々のためにそのまま残しておくのでも構いません。
+%   ただし新しく構築した LFS システムを再起動した後であると、ライブラリの中には単純にコピーできないものが出てきます。
+%   その場合は他のシステムを起動させて LFS パーティションをマウントし、その状態でライブラリをコピーする必要があります。
+%   </para>
+% @z

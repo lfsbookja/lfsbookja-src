@@ -54,6 +54,58 @@
 @z
 
 @x
+      <para>2017-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.0.586. Fixes
+          <ulink url="&lfs-ticket-root;4078">#4078</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2.2. Fixes
+          <ulink url="&lfs-ticket-root;4077">#4077</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.10.12. Fixes
+          <ulink url="&lfs-ticket-root;4075">#4075</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gperf-3.1. Fixes
+          <ulink url="&lfs-ticket-root;4053">#4053</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Improve instructions to save debugging
+          information for selected libraries when stripping at
+          the end of Chapter 6. Fixes 
+          <ulink url="&lfs-ticket-root;4076">#4076</ulink> (again).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.0.586 へのアップデート。
+          <ulink url="&lfs-ticket-root;4078">#4078</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4077">#4077</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.10.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4075">#4075</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gperf-3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4053">#4053</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第6章の最後、ストリップにおいて所定ライブラリのデバッグ情報を温存する手順を改正。
+          <ulink url="&lfs-ticket-root;4076">#4076</ulink>を (再度) Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-04-22</para>
       <itemizedlist>
         <listitem>
