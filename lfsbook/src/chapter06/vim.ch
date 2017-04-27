@@ -77,13 +77,15 @@
     <para>However, this test suite outputs a lot of binary data to the screen,
     which can cause issues with the settings of the current terminal. This can
     be resolved by redirecting the output to a log file.  A successful test
-    will result in the words "ALL DONE" at completion.</para>
+    will result in the words "ALL DONE" at completion. One test, 
+    Test_recover_root_dir() is known to fail, but is harmless.</para>
 @y
     <para>
     このテストスイートは数多くのバイナリデータを端末画面上に出力します。
     これは端末画面の設定によっては問題を引き起こします。
     これを避けるには出力をリダイレクトしてログファイルに出力するようにしてください。
     テストが成功すれば、最後に "ALL DONE" と表示されます。
+    なお Test_recover_root_dir() というテストは失敗しますが問題はありません。
     </para>
 @z
 

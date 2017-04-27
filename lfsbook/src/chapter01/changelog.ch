@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2017-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to grub-2.02. Fixes
+          <ulink url="&lfs-ticket-root;4042">#4042</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grub-2.02 へのアップデート。
+          <ulink url="&lfs-ticket-root;4042">#4042</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-04-25</para>
       <itemizedlist>
         <listitem>
