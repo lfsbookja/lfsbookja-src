@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>First, fix a problem with the latest version:</para>
+@y
+    <para>
+    最新バージョンにおける問題を修正します。
+    </para>
+@z
+
+@x
     <para>The build procedure assumes the <application>help2man</application>
     program is available to create a man page from the executable --help option.
     This is not present, so we use an environment variable to skip this process.

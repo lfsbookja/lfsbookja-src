@@ -186,14 +186,6 @@
 @z
 
 @x
-    <para>Fix a generated file:</para>
-@y
-    <para>
-    生成されたファイルを修正します。
-    </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
@@ -536,7 +528,7 @@
           hierarchy, ordered by their CPU, memory and disk I/O load</para>
 @y
           <para>
-          ローカル Linux コントロールグループ (control group) の最上位を表示し、CPU、メモリ、ディスクI/Oロードの並びにより示します。
+          最上位のローカル Linux コントロールグループ (control group) を表示し、CPU、メモリ、ディスクI/Oロードの並びにより示します。
           </para>
 @z
 

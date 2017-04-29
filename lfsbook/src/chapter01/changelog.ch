@@ -54,6 +54,46 @@
 @z
 
 @x
+      <para>2017-04-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Remove fix for systemd with with gperf &lt; 3.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - gperf &lt; 3.1 を用いた systemd の修正を削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a patch to fix a flex regresion in version 2.6.3.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.10.13. Fixes
+          <ulink url="&lfs-ticket-root;4079">#4079</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - flex 2.6.3 の不具合を修正するパッチを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.10.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4079">#4079</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-04-26</para>
       <itemizedlist>
         <listitem>
