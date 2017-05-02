@@ -39,7 +39,7 @@
   handling devices is in order.</para>
 @y
   <para>
-  <xref linkend="chapter-building-system"/>にて <phrase revision="sysv">eudev</phrase>
+  <xref linkend="chapter-building-system"/>の <phrase revision="sysv">eudev</phrase>
   <phrase revision="systemd">systemd</phrase> のビルドを通じて Udev パッケージをインストールしました。
   このパッケージがどのように動作するかの詳細を説明する前に、デバイスを取り扱うかつての方法について順を追って説明していきます。
   </para>
@@ -58,7 +58,7 @@
   <para>
   Linux システムは一般に、スタティックなデバイス生成方法を採用していました。
   この方法では <filename class="directory">/dev</filename> のもとに膨大な量の (場合によっては何千にもおよぶ) デバイスノードが生成されます。
-  現実に存在するハードウェアデバイスが存在するかどうかに関わらずです。
+  実際にハードウェアデバイスが存在するかどうかに関わらずです。
   これは <command>MAKEDEV</command> スクリプトを通じて生成されます。
   このスクリプトからは <command>mknod</command> プログラムが呼び出されますが、その呼び出しは、この世に存在するありとあらゆるデバイスのメジャー/マイナー番号を用いて行われます。
   </para>
@@ -95,11 +95,11 @@
     dynamically never received overwhelming support from the core kernel
     developers.</para>
 @y
-  <para>
-  2000年2月に新しいファイルシステム <systemitem
-  class="filesystem">devfs</systemitem> がカーネル 2.3.46 に導入され、2.4系の安定版カーネルにて利用できるようになりました。
-  このファイルシステムはカーネルのソース内に含まれ実現されていましたが、デバイスを動的に生成するこの手法は、主要なカーネル開発者の十分な支援は得られませんでした。
-  </para>
+    <para>
+    2000年2月に新しいファイルシステム <systemitem
+    class="filesystem">devfs</systemitem> がカーネル 2.3.46 に導入され、2.4系の安定版カーネルにて利用できるようになりました。
+    このファイルシステムはカーネルのソース内に含まれ実現されていましたが、デバイスを動的に生成するこの手法は、主要なカーネル開発者の十分な支援は得られませんでした。
+    </para>
 @z
 
 @x
@@ -318,9 +318,7 @@
 @x
       <title>Module Loading</title>
 @y
-      <title>
-      モジュールのロード
-      </title>
+      <title>モジュールのロード</title>
 @z
 
 @x
@@ -403,26 +401,22 @@
 @x
     <title>Problems with Loading Modules and Creating Devices</title>
 @y
-      <title>
-      モジュールロードとデバイス生成の問題
-      </title>
+    <title>モジュールロードとデバイス生成の問題</title>
 @z
 
 @x
     <para>There are a few possible problems when it comes to automatically
     creating device nodes.</para>
 @y
-      <para>
-      自動的にデバイスが生成される際には、いくつか問題が発生します。
-      </para>
+    <para>
+    自動的にデバイスが生成される際には、いくつか問題が発生します。
+    </para>
 @z
 
 @x
       <title>A kernel module is not loaded automatically</title>
 @y
-      <title>
-      カーネルモジュールが自動的にロードされない問題
-      </title>
+      <title>カーネルモジュールが自動的にロードされない問題</title>
 @z
 
 @x
@@ -549,9 +543,7 @@
 @x
       <title>Udev loads some unwanted module</title>
 @y
-      <title>
-      Udev が不必要なモジュールをロードする問題
-      </title>
+      <title>Udev が不必要なモジュールをロードする問題</title>
 @z
 
 @x
@@ -600,9 +592,7 @@
 @x
       <title>Udev rule works unreliably</title>
 @y
-      <title>
-      Udev 規則が不審な動きをする問題
-      </title>
+      <title>Udev 規則が不審な動きをする問題</title>
 @z
 
 @x
@@ -628,9 +618,7 @@
 @x
       <title>Udev does not create a device</title>
 @y
-      <title>
-      Udev がデバイスを生成しない問題
-      </title>
+      <title>Udev がデバイスを生成しない問題</title>
 @z
 
 @x
@@ -669,9 +657,7 @@
 @x
       <title>Device naming order changes randomly after rebooting</title>
 @y
-      <title>
-      再起動後にデバイスの命名順がランダムに変わってしまう問題
-      </title>
+      <title>再起動後にデバイスの命名順がランダムに変わってしまう問題</title>
 @z
 
 @x

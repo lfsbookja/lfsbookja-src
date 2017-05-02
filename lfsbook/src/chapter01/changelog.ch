@@ -54,6 +54,30 @@
 @z
 
 @x
+      <para>2017-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.11. Fixes
+          <ulink url="&lfs-ticket-root;4080">#4080</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update flex patch. </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4080">#4080</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flex のパッチを更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-04-29</para>
       <itemizedlist>
         <listitem>
