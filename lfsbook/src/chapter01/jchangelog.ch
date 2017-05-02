@@ -64,7 +64,8 @@
           <para>[matsuand] -
           SVN-20170501,
           チェンジセット
-          <ulink url="&lfs-rev-root;11237">11237</ulink>
+          <ulink url="&lfs-rev-root;11237">11237</ulink>,
+          <ulink url="&lfs-rev-root;11238">11238</ulink>
           対応。
           </para>
         </listitem>
