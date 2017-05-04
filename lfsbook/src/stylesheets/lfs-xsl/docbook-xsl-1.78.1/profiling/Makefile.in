@@ -237,11 +237,11 @@ EXTRA_DIST = profile.ch profile-mode.ch strip-attributes.ch \
 srcs = profile.xsl profile-mode.xsl strip-attributes.xsl \
 	xsl2profile.xsl
 
-SUFFIXES = .ch .xsl .xml
+SUFFIXES = .ch .xsl
 all: all-am
 
 .SUFFIXES:
-.SUFFIXES: .ch .xsl .xml
+.SUFFIXES: .ch .xsl
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \

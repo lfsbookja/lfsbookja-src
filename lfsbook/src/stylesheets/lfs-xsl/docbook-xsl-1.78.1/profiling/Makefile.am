@@ -12,7 +12,7 @@ srcdir = @srcdir@
 srcs = profile.xsl profile-mode.xsl strip-attributes.xsl \
 	xsl2profile.xsl
 
-SUFFIXES = .ch .xsl .xml
+SUFFIXES = .ch .xsl
 .ch.xsl:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 

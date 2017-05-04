@@ -27,5 +27,5 @@ ctie:
 
 lfs.css: $(BOOKdir)/$@ $(srcdir)/lfs_css.ch
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/lfs_css.ch >/dev/null
-lfs-print.css: $(BOOKdir)/$@
+lfs-print.css: $(BOOKdir)/lfs-print.css
 	cp -p $(BOOKdir)/$@ $@

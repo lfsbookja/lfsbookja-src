@@ -21,5 +21,5 @@ all: ctie $(srcs)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-lfs-index.xsl: $(BOOKdir)/$@
+lfs-index.xsl: $(BOOKdir)/lfs-index.xsl
 	cp -p $(BOOKdir)/$@ $@

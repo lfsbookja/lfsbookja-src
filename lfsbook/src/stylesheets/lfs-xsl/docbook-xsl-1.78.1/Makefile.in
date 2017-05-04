@@ -600,7 +600,7 @@ uninstall-am:
 
 all: $(srcs)
 
-VERSION.xsl: $(BOOKdir)/$@
+VERSION.xsl: $(BOOKdir)/VERSION.xsl
 	cp -p $(BOOKdir)/$@ $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

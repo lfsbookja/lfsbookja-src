@@ -12,5 +12,5 @@ srcs = VERSION.xsl
 
 all: $(srcs)
 
-VERSION.xsl: $(BOOKdir)/$@
+VERSION.xsl: $(BOOKdir)/VERSION.xsl
 	cp -p $(BOOKdir)/$@ $@

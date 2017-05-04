@@ -21,39 +21,43 @@ EXTRA_DIST = admon.ch annotations.ch autoidx-kimber.ch autoidx-kosek.ch \
 	verbatim.ch xref.ch
 srcdir = @srcdir@
 srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl \
-	autoidx-ng.xsl autoidx.xsl autotoc.xsl biblio-iso690.xsl \
-	biblio.xsl block.xsl callout.xsl changebars.xsl chunk-code.xsl \
-	chunk-common.xsl chunk.xsl chunker.xsl chunkfast.xsl chunktoc.xsl \
+	autoidx-ng.xsl autotoc.xsl biblio-iso690.xsl \
+	biblio.xsl block.xsl callout.xsl chunk-code.xsl \
+	chunk.xsl chunker.xsl chunkfast.xsl chunktoc.xsl \
 	component.xsl division.xsl docbook.xsl ebnf.xsl footnote.xsl \
-	formal.xsl glossary.xsl graphics.xsl highlight.xsl html-rtf.xsl \
-	html.xsl htmltbl.xsl index.xsl info.xsl inline.xsl keywords.xsl \
+	formal.xsl graphics.xsl highlight.xsl html-rtf.xsl \
+	html.xsl index.xsl info.xsl keywords.xsl \
 	lists.xsl maketoc.xsl manifest.xsl math.xsl oldchunker.xsl \
 	onechunk.xsl param.xsl pi.xsl profile-chunk-code.xsl \
 	profile-chunk.xsl profile-docbook.xsl profile-onechunk.xsl \
 	qandaset.xsl refentry.xsl sections.xsl synop.xsl table.xsl \
 	task.xsl titlepage.templates.xsl titlepage.xsl toc.xsl \
-	verbatim.xsl xref.xsl
+	verbatim.xsl
+cpys = \
+	autoidx.xsl changebars.xsl chunk-common.xsl glossary.xsl \
+	htmltbl.xsl inline.xsl xref.xsl
 
 SUFFIXES = .ch .xsl
 .ch.xsl:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
-all: ctie $(srcs)
+all: ctie $(srcs) $(cpys)
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-autoidx.xsl: $(BOOKdir)/$@ $(srcdir)/autoidx.ch
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xsl=.ch)
+autoidx.xsl: $(BOOKdir)/autoidx.xsl
 	cp -p $(BOOKdir)/$@ $@
-changebars.xsl: $(BOOKdir)/$@
+changebars.xsl: $(BOOKdir)/changebars.xsl
 	cp -p $(BOOKdir)/$@ $@
-chunk-common.xsl: $(BOOKdir)/$@ $(srcdir)/chunk-common.ch
+chunk-common.xsl: $(BOOKdir)/chunk-common.xsl
 	cp -p $(BOOKdir)/$@ $@
-glossary.xsl: $(BOOKdir)/$@
+glossary.xsl: $(BOOKdir)/glossary.xsl
 	cp -p $(BOOKdir)/$@ $@
-htmltbl.xsl: $(BOOKdir)/$@
+htmltbl.xsl: $(BOOKdir)/htmltbl.xsl
 	cp -p $(BOOKdir)/$@ $@
-inline.xsl: $(BOOKdir)/$@ $(srcdir)/inline.ch
+inline.xsl: $(BOOKdir)/inline.xsl
 	cp -p $(BOOKdir)/$@ $@
-xref.xsl: $(BOOKdir)/$@ $(srcdir)/xref.ch
+xref.xsl: $(BOOKdir)/xref.xsl
 	cp -p $(BOOKdir)/$@ $@
