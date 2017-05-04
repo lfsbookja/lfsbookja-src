@@ -166,6 +166,14 @@
 @z
 
 @x
+    <para>One test, debug_msg.sh, is known ot fail.</para>
+@y
+    <para>
+    debug_msg.sh というテストは失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

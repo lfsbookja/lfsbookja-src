@@ -32,6 +32,14 @@
 @z
 
 @x
+    <para>First, fix some errors in the included gnulib code:</para>
+@y
+    <para>
+    まずは gnulib コード部分にあるエラーを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Diffutils for compilation:</para>
 @y
     <para>&PreparePackage1;Diffutils&PreparePackage2;</para>

@@ -56,6 +56,14 @@
 @z
 
 @x
+    <para>Disable a test that fails:</para>
+@y
+    <para>
+    失敗するテストを無効にします。
+    </para>
+@z
+
+@x
     <para>Prepare Vim for compilation:</para>
 @y
     <para>&PreparePackage1;Vim&PreparePackage2;</para>
