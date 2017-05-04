@@ -77,15 +77,13 @@
     <para>However, this test suite outputs a lot of binary data to the screen,
     which can cause issues with the settings of the current terminal. This can
     be resolved by redirecting the output to a log file.  A successful test
-    will result in the words "ALL DONE" at completion. One test, 
-    Test_recover_root_dir() is known to fail, but is harmless.</para>
+    will result in the words "ALL DONE" at completion.</para>
 @y
     <para>
     このテストスイートは数多くのバイナリデータを端末画面上に出力します。
     これは端末画面の設定によっては問題を引き起こします。
     これを避けるには出力をリダイレクトしてログファイルに出力するようにしてください。
     テストが成功すれば、最後に "ALL DONE" と表示されます。
-    なお Test_recover_root_dir() というテストは失敗しますが問題はありません。
     </para>
 @z
 
@@ -191,6 +189,17 @@
     <parameter>set mouse=r</parameter> を指定すると chroot 環境やリモート接続時であってもマウスによるテキスト選択が適切になります。
     最後にある <emphasis>if</emphasis> 文は、<parameter>set background=dark</parameter> を指定した場合に、特定の端末エミュレーター上において <command>vim</command> が背景色を誤って認識しないようにするためのものです。
     エミュレーターの背景色が黒色であった場合に、より適切なハイライトが実現できます。
+    </para>
+@z
+
+@x
+    <para>Creating an empty <filename>~/.vimrc</filename> prevents vim from
+    overriding settings in <filename>/etc/vimrc</filename> by using
+    <filename>/usr/share/vim/vim80/defaults.vim</filename>.</para>
+@y
+    <para>
+    空の <filename>~/.vimrc</filename> を生成します。
+    こうすることで <filename>/usr/share/vim/vim80/defaults.vim</filename> を用いる <filename>/etc/vimrc</filename> の設定内容をオーバーライドさせないようにします。
     </para>
 @z
 

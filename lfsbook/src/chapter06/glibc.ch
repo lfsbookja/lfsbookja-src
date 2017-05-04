@@ -87,6 +87,53 @@
 @z
 
 @x
+      <title>The meaning of the new configure options:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+@z
+
+@x --disable-werror
+          <para>This option disables the -Werror option passed to 
+          GCC.  This is necessary for running the test suite.</para>
+@y
+          <para>
+          GCC に対して -Werror オプションを利用しないようにします。
+          テストスイートを実行するために必要となります。
+          </para>
+@z
+
+@x --enable-obsolete-rpc
+          <para>This option builds older RPC code for use with
+          network file system utilities (nfs).</para>
+@y
+          <para>
+          ネットワークファイルシステム (nfs) ユーティリティーが利用する、かつての RPC コードをビルドします。
+          </para>
+@z
+
+@x --enable-stack-protector=strong
+          <para>This option increases system security by adding  a known canary
+          (a random integer) to the stack during a function preamble, and checks
+          it when the function returns. If it changed, there was a stack
+          overflow, and the program aborts.</para>
+@y
+          <para>
+          このオプション指定によりスタックに積まれる関数プリアンブル内に、ランダムな整数であるカナリア (canary) 値を付与し、システムセキュリティを向上させます。
+          関数から戻る際にこの値がチェックされるため、値が変わっていればスタックオーバーフローがあったということでプログラムが異常終了します。
+          </para>
+@z
+
+@x libc_cv_slibdir=/lib
+          <para>This variable sets the correct library for all
+          systems.  We do not want lib64 to be used.</para>
+@y
+          <para>
+          この変数によってあらゆるシステムにおいて正しいライブラリを設定します。
+          lib64 は利用しません。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
@@ -113,26 +160,24 @@
 @z
 
 @x
-    <para>You will probably see some test failures.  The Glibc test suite is
+    <para>You may see some test failures.  The Glibc test suite is
     somewhat dependent on the host system.  This is a list of the most common
-    issues seen for this version of LFS:</para>
+    issues seen for some versions of LFS:</para>
 @y
     <para>
-    テストを実施すると、失敗するものも出てきます。
+    テストに失敗する場合があります。
     これは Glibc のテストスイートがホストシステムにある程度依存しているためです。
     LFS の当バージョンにおいて発生しがちな問題を以下に示します。
     </para>
 @z
 
 @x
-        <para><emphasis>posix/tst-getaddrinfo4</emphasis> will always fail due
-        to not having the necessary networking applications when the tests are
-        run.  <emphasis>posix/tst-getaddrinfo5</emphasis> is also known
-        to fail on some architectures.</para>
+        <para><emphasis>posix/tst-getaddrinfo4</emphasis> and
+        <emphasis>posix/tst-getaddrinfo5</emphasis>
+        may fail on some architectures.</para>
 @y
         <para><emphasis>
-        posix/tst-getaddrinfo4</emphasis> は、テスト時に必要なネットワークアプリケーションがないため失敗します。
-        また <emphasis>posix/tst-getaddrinfo5</emphasis> は特定の CPU アーキテクチャーでは失敗します。
+        posix/tst-getaddrinfo4</emphasis> と <emphasis>posix/tst-getaddrinfo5</emphasis> は特定の CPU アーキテクチャーでは失敗します。
         </para>
 @z
 

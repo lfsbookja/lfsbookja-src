@@ -303,12 +303,13 @@ srcs = general.ent index.xml packages.ent patches.ent pdf-fixups.sh \
 
 DISTCLEANFILES = $(srcs)
 ROOT_ID = 
-RENDERTMP = ./tmp
+RENDERTMP = tmp
 CHUNK_QUIET = 1
 URLTOP = http\:\/\/lfsbookja.osdn.jp\/svn\.ja
-ALLXML := $(filter-out $(RENDERTMP)/%, \
-	$(wildcard ./*.xml ./*/*.xml))
 
+#ALLXML := $(filter-out $(RENDERTMP)/%, \
+#	$(wildcard ./*.xml ./*/*.xml))
+ALLXML = $(shell find . -type d -name $(RENDERTMP) -prune -o -type f -name '*.xml' -print)
 REV = @revspec@
 all: all-recursive
 
@@ -649,7 +650,7 @@ stylesheets:
 	$(MKDIR_P) stylesheets
 	cp -R $(BOOKdir)/stylesheets/* stylesheets
 
-_bootscripts:
+_bootscripts: $(ALLXML)
 	$(MKDIR_P) bootscripts
 	cp -pR $(BOOKdir)/bootscripts/* bootscripts
 

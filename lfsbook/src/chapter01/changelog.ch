@@ -54,6 +54,47 @@
 @z
 
 @x
+      <para>2017-05-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-7.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4082">#4082</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.11.0. Fixes
+          <ulink url="&lfs-ticket-root;4081">#4081</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix a problem with glibc tests and 
+          add some explanations to the configure options.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a command to touch /root/.vimrc
+          so that the default vim options don't override those
+          in /etc/vimrc.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-05-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-7.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4082">#4082</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.11.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4081">#4081</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc のテスト時における問題を修正。さらに coufigure オプションの説明を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vi にて /root/.vimrc を touch するコマンドを追加。デフォルト設定が /etc/vimrc をオーバーライドしないように。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-05-01</para>
       <itemizedlist>
         <listitem>

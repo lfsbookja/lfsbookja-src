@@ -20,15 +20,16 @@ SVNVER=@SVNVER@
 BASEDIR=@BASEDIR@
 DUMPDIR=@DUMPDIR@
 ROOT_ID =
-RENDERTMP = ./tmp
+RENDERTMP = tmp
 CHUNK_QUIET = 1
 NOCHUNKS_NAME = @NOCHUNKS_NAME@
 NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 PDF_OUTPUT = @PDF_OUTPUT@
 URLTOP = http\:\/\/lfsbookja.osdn.jp\/svn\.ja
 
-ALLXML := $(filter-out $(RENDERTMP)/%, \
-	$(wildcard ./*.xml ./*/*.xml))
+#ALLXML := $(filter-out $(RENDERTMP)/%, \
+#	$(wildcard ./*.xml ./*/*.xml))
+ALLXML=$(shell find . -type d -name $(RENDERTMP) -prune -o -type f -name '*.xml' -print)
 
 REV=@revspec@
 
@@ -63,7 +64,7 @@ stylesheets:
 	$(MKDIR_P) stylesheets
 	cp -R $(BOOKdir)/stylesheets/* stylesheets
 
-_bootscripts:
+_bootscripts: $(ALLXML)
 	$(MKDIR_P) bootscripts
 	cp -pR $(BOOKdir)/bootscripts/* bootscripts
 
