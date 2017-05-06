@@ -166,7 +166,7 @@
 @z
 
 @x
-    <para>One test, debug_msg.sh, is known ot fail.</para>
+    <para>One test, debug_msg.sh, is known to fail.</para>
 @y
     <para>
     debug_msg.sh というテストは失敗します。

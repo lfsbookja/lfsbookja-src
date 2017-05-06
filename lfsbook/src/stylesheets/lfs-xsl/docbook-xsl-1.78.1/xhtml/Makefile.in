@@ -232,18 +232,18 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-1.78.1/xhtml
 EXTRA_DIST = admon.ch annotations.ch autoidx-kimber.ch autoidx-kosek.ch \
-	autoidx-ng.ch autoidx.ch autotoc.ch biblio-iso690.ch \
-	biblio.ch block.ch callout.ch changebars.ch chunk-code.ch \
-	chunk-common.ch chunk.ch chunker.ch chunkfast.ch chunktoc.ch \
+	autoidx-ng.ch autotoc.ch biblio-iso690.ch \
+	biblio.ch block.ch callout.ch chunk-code.ch \
+	chunk.ch chunker.ch chunkfast.ch chunktoc.ch \
 	component.ch division.ch docbook.ch ebnf.ch footnote.ch \
-	formal.ch glossary.ch graphics.ch highlight.ch html-rtf.ch \
-	html.ch htmltbl.ch index.ch info.ch inline.ch keywords.ch \
+	formal.ch graphics.ch highlight.ch html-rtf.ch \
+	html.ch index.ch info.ch keywords.ch \
 	lists.ch maketoc.ch manifest.ch math.ch oldchunker.ch \
 	onechunk.ch param.ch pi.ch profile-chunk-code.ch \
 	profile-chunk.ch profile-docbook.ch profile-onechunk.ch \
 	qandaset.ch refentry.ch sections.ch synop.ch table.ch \
 	task.ch titlepage.templates.ch titlepage.ch toc.ch \
-	verbatim.ch xref.ch
+	verbatim.ch
 
 srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl \
 	autoidx-ng.xsl autotoc.xsl biblio-iso690.xsl \

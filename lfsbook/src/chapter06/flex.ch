@@ -65,14 +65,6 @@
 @z
 
 @x
-    <para>One test, <emphasis>cxx_restart</emphasis>, is known to fail.</para>
-@y
-    <para>
-    <emphasis>cxx_restart</emphasis> というテストだけは失敗します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

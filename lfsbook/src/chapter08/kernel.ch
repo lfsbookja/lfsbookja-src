@@ -429,7 +429,7 @@
       <para>
       さらに <filename
       class="directory">include</filename> ディレクトリ (<filename
-      class="directory">/usr/include</filename>) にあるヘッダーファイルは、<emphasis>必ず</emphasis> Glibc のコンパイルによって得られるものでなければなりません。
+      class="directory">/usr/include</filename>) にあるヘッダーファイルは、<emphasis>必ず</emphasis> Glibc のコンパイル時のものでなければなりません。
       つまり <xref
       linkend="ch-system-linux-headers"/> によってインストールされた、健全化 (sanitizing) したものです。
       したがって生のカーネルヘッダーや他のカーネルにて健全化されたヘッダーによって上書きされてしまうのは避けなければなりません。

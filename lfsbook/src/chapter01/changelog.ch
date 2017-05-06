@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2017-05-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.11. Fixes
+          <ulink url="&lfs-ticket-root;4083">#4083</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-05-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4083">#4083</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-05-03</para>
       <itemizedlist>
         <listitem>
