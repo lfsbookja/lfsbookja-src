@@ -238,7 +238,6 @@ CHANGE_FILES = \
 	dedication.ch    \
 	errata.ch        \
 	foreword.ch      \
-	japanese.ch      \
 	organization.ch  \
 	preface.ch       \
 	prerequisites.ch \
@@ -246,8 +245,12 @@ CHANGE_FILES = \
 	typography.ch    \
 	why.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
+COPY_FILES = \
+	japanese.ch
+
+EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES:.ch=.xml)
 srcs = $(CHANGE_FILES:.ch=.xml)
+cpys = $(COPY_FILES:.ch=.xml)
 DISTCLEANFILES = $(srcs)
 SUFFIXES = .ch .xml
 all: all-am
@@ -439,13 +442,14 @@ uninstall-am:
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
-all: ctie $(srcs)
+all: ctie $(srcs) $(cpys)
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-japanese.xml:      $(srcdir)/japanese.ch
-	cp -p $^ $@
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+$(cpys): $(srcdir)/$(@:.xml=.ch)
+	cp -p $(srcdir)/$(@:.xml=.ch) $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -22,3 +22,5 @@ all: ctie $(srcs)
 
 ctie:
 	$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
+
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xsl=.ch)

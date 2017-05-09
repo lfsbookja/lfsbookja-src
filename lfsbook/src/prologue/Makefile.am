@@ -13,27 +13,30 @@ CHANGE_FILES = \
 	dedication.ch    \
 	errata.ch        \
 	foreword.ch      \
-	japanese.ch      \
 	organization.ch  \
 	preface.ch       \
 	prerequisites.ch \
 	standards.ch     \
 	typography.ch    \
 	why.ch
+COPY_FILES = \
+	japanese.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
+EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES:.ch=.xml)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
+cpys = $(COPY_FILES:.ch=.xml)
 DISTCLEANFILES = $(srcs)
 
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
-all: ctie $(srcs)
+all: ctie $(srcs) $(cpys)
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-japanese.xml:      $(srcdir)/japanese.ch
-	cp -p $^ $@
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+$(cpys): $(srcdir)/$(@:.xml=.ch)
+	cp -p $(srcdir)/$(@:.xml=.ch) $@

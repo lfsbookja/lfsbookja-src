@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2017-05-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to flex-2.6.4. Fixes
+          <ulink url="&lfs-ticket-root;4084">#4084</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-05-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - flex-2.6.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4084">#4084</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-05-05</para>
       <itemizedlist>
         <listitem>
