@@ -58,7 +58,7 @@
       <itemizedlist>
         <listitem>
           <para>[dj] - Introduce -isystem to use the final system location of
-          gcc's internel headers in the GlibC build.</para>
+          gcc's internal headers in the Glibc build.</para>
         </listitem>
         <listitem>
           <para>[ken] - Update some library versions in Stripping Again, partly
@@ -587,7 +587,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to binutils-2.28. Moved m4 and 
-          bc to before binutils to accomodate the gold linker 
+          bc to before binutils to accommodate the gold linker 
           regression tests. Fixes
           <ulink url="&lfs-ticket-root;4059">#4059</ulink>.</para>
         </listitem>

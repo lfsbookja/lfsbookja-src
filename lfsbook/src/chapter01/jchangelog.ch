@@ -65,7 +65,7 @@
           SVN-20170513,
           チェンジセット
           <ulink url="&lfs-rev-root;11246">11246</ulink> ～
-          <ulink url="&lfs-rev-root;11250">11250</ulink>
+          <ulink url="&lfs-rev-root;11252">11252</ulink>
           対応。
           </para>
         </listitem>

@@ -183,7 +183,7 @@
     <para>Rather than plain shell scripts used in SysVinit or BSD style init
     systems, systemd uses a unified format for different types of startup
     files (or units). The command <command>systemctl</command> is used to
-    enable, disable, controll state, and obtain status of unit files. Here 
+    enable, disable, control state, and obtain status of unit files. Here 
     are some examples of frequently used commands:</para>
 @y
     <para>
@@ -284,7 +284,7 @@
 
 @x
          <para><command>journalctl -b[=ID] -r</command>: shows the journal
-         entries since last successfull boot (or for boot ID) in reverse
+         entries since last successful boot (or for boot ID) in reverse
          chronological order.</para>
 @y
          <para><command>journalctl -b[=ID] -r</command>:

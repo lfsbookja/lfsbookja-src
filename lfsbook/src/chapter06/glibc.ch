@@ -114,7 +114,7 @@
 
 @x CC="gcc -isystem $GCC_INCDIR -isystem /usr/include"
           <para>Setting the location of both gcc and system include directories
-          avoids introduction of invalid paths in debuging symbols.</para>
+          avoids introduction of invalid paths in debugging symbols.</para>
 @y
           <para>
           gcc とシステムのインクルードディレクトリを指定します。
