@@ -54,6 +54,38 @@
 @z
 
 @x
+      <para>2017-05-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Introduce -isystem to use the final system location of
+          gcc's internel headers in the GlibC build.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Update some library versions in Stripping Again, partly
+          fixes <ulink url="&lfs-ticket-root;4085">#4085</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Add additional symlinks to avoid "/tools" references
+          in final system.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-05-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Glibc のビルドにおいて最終の gcc 内部ヘッダーの所在を -isystem により明示。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - 再度のストリップにてライブラリバージョンを更新。
+          <ulink url="&lfs-ticket-root;4085">#4085</ulink> は一部完了。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - 最終システムにおいて "/tools" への参照がなくなるように、さらにシンボリックリンクを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-05-07</para>
       <itemizedlist>
         <listitem>

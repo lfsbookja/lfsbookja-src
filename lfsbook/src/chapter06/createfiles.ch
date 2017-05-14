@@ -20,10 +20,10 @@
 @z
 
 @x
-  <para>Some programs use hard-wired paths to programs which do not exist yet. In
-  order to satisfy these programs, create a number of symbolic links which will be
-  replaced by real files throughout the course of this chapter after the software
-  has been installed:</para>
+  <para>Some programs use hard-wired paths to programs which do not exist yet.
+  In order to satisfy these programs, create a number of symbolic links which
+  will be replaced by real files throughout the course of this chapter after the
+  software has been installed:</para>
 @y
   <para>
   プログラムの中には固定的に他のプログラムへのパスを保持しているものがあります。
@@ -56,6 +56,15 @@
         </para>
 @z
 
+@x /bin/dd
+        <para>The path to <filename>dd</filename> will be hard-coded into the
+        <filename>/usr/bin/libtool</filename> utility.</para>
+@y
+        <para>
+        <filename>dd</filename> へのパスが <filename>/usr/bin/libtool</filename> ユーティリティーにハードコーディングされます。
+        </para>
+@z
+
 @x /bin/echo
         <para>This is to satisfy one of the tests in Glibc's test suite, which
         expects <filename>/bin/echo</filename>.</para>
@@ -65,12 +74,41 @@
         </para>
 @z
 
+@x /usr/bin/install
+        <para>The path to <filename>install</filename> will be hard-coded into
+        the <filename>/usr/lib/bash/Makefile.inc</filename> file.</para>
+@y
+        <para>
+        <filename>install</filename> へのパスが <filename>/usr/lib/bash/Makefile.inc</filename> ファイル内にてハードコーディングされます。
+        </para>
+@z
+
+@x /bin/ln
+        <para>The path to <filename>ln</filename> will be hard-coded into the
+        <filename>/usr/lib/perl5/&perl-version;/&lt;target-triplet&gt;/Config_heavy.pl</filename>
+         file.</para>
+@y
+        <para>
+        <filename>ln</filename> へのパスが <filename>/usr/lib/perl5/&perl-version;/&lt;target-triplet&gt;/Config_heavy.pl</filename> ファイル内にてハードコーディングされます。
+        </para>
+@z
+
 @x /bin/pwd
         <para>Some <command>configure</command> scripts, particularly Glibc's,
         have this pathname hard-coded.</para>
 @y
         <para>
         特に Glibc などの <command>configure</command> スクリプトにて、このパス名がハードコーディングされています。
+        </para>
+@z
+
+@x /bin/rm
+        <para>The path to <filename>rm</filename> will be hard-coded into the
+        <filename>/usr/lib/perl5/&perl-version;/&lt;target-triplet&gt;/Config_heavy.pl</filename>
+         file.</para>
+@y
+        <para>
+        <filename>rm</filename> へのパスが <filename>/usr/lib/perl5/&perl-version;/&lt;target-triplet&gt;/Config_heavy.pl</filename> ファイル内にてハードコーディングされます。
         </para>
 @z
 
@@ -118,6 +156,17 @@
         <para>
         GCC がインストールされた後には <filename
         class="directory">/tools</filename> への参照ではなく、<filename>/usr/lib/libstdc++.la</filename> を必要とします。
+        </para>
+@z
+
+@x /usr/lib/lib{blkid,lzma,mount,uuid}.{a,la,so*}
+        <para>These links prevent systemd utilities from being acquiring an
+        unnecessary reference to the
+        <filename class="directory">/tools</filename> directory.</para>
+@y
+        <para>
+        このリンクにより systemd のユーティリティーが、不要な <filename
+        class="directory">/tools</filename> へのリンクを用いないようにします。
         </para>
 @z
 

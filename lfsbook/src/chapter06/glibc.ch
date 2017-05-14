@@ -60,14 +60,34 @@
     </para>
 @z
 
+%@x
+%    <para>Create a symlink for LSB compliance and, for x86_64, a
+%    compatibility symlink required for the dynamic loader to function
+%    correctly:</para>
+%@y
+%    <para>
+%    LSB コンプライアンスに従ったシンボリックリンクを作成します。
+%    また x86_64 に対してはダイナミックローダーが正しく機能するために必要なシンボリックリンクを作成します。
+%    </para>
+%@z
+
 @x
-    <para>Create a symlink for LSB compliance and, for x86_64, a
-    compatibility symlink required for the dynamic loader to function
-    correctly:</para>
+    <para>First create a compatibility symlink to avoid references to /tools in
+    our final glibc:</para>
 @y
     <para>
-    LSB コンプライアンスに従ったシンボリックリンクを作成します。
-    また x86_64 に対してはダイナミックローダーが正しく機能するために必要なシンボリックリンクを作成します。
+    最終の glibc において /tools への参照をなくすためにシンボリックリンクを生成します。
+    </para>
+@z
+
+@x
+    <para>Determine the GCC include directory and create a symlink for LSB
+    compliance. Additionally, for x86_64, create a compatibility symlink
+    required for the dynamic loader to function correctly:</para>
+@y
+    <para>
+    GCC のインクルードディレクトリを明示して LSB コンプライアンスに従ったシンボリックリンクを作成します。
+    さらに x86_64 向けにダイナミックローダーが正しく機能するために必要なシンボリックリンクを作成します。
     </para>
 @z
 
@@ -87,9 +107,19 @@
 @z
 
 @x
-      <title>The meaning of the new configure options:</title>
+      <title>The meaning of the options and new configure parameters:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>configure オプションおよびパラメーターの意味:</title>
+@z
+
+@x CC="gcc -isystem $GCC_INCDIR -isystem /usr/include"
+          <para>Setting the location of both gcc and system include directories
+          avoids introduction of invalid paths in debuging symbols.</para>
+@y
+          <para>
+          gcc とシステムのインクルードディレクトリを指定します。
+          これによりデバッグシンボル内に誤ったパスが含まれないようにします。
+          </para>
 @z
 
 @x --disable-werror

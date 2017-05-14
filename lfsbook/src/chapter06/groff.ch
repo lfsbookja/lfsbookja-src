@@ -263,8 +263,9 @@
           <para>Is a driver for <command>groff</command> that produces output
           in PCL5 format suitable for an HP LaserJet 4 printer</para>
 @y
-          <para>Is a driver for <command>groff</command> that produces output
-          in PCL5 format suitable for an HP LaserJet 4 printer</para>
+          <para>
+          HP LaserJet 4 プリンターに対しての PCL5 フォーマットを出力する <command>groff</command> ドライバープログラム。
+          </para>
 @z
 
 @x
