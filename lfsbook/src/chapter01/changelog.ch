@@ -54,6 +54,41 @@
 @z
 
 @x
+      <para>2017-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Move library versions for presevation 
+          of debugging symbols to packages.ent. Fixes
+          <ulink url="&lfs-ticket-root;4085">#4085</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.11.1. Fixes
+          <ulink url="&lfs-ticket-root;4086">#4086</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.5. Fixes
+          <ulink url="&lfs-ticket-root;4087">#4087</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ライブラリのデバッグシンボルを保持するように、ライブラリのパージョンを packages.ent へ移動。
+          <ulink url="&lfs-ticket-root;4085">#4085</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.11.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4086">#4086</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4087">#4087</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-05-13</para>
       <itemizedlist>
         <listitem>
