@@ -54,6 +54,25 @@
 @z
 
 @x
+      <para>2017-05-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fix the build for i686 systems. Includes a
+          modification to Chapter 06 Glibc.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-05-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - 
+          i686 システム向けビルドの修正。
+          第6章の Glibc における修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-05-19</para>
       <itemizedlist>
         <listitem>
