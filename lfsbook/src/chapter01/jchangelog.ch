@@ -62,6 +62,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          国内サイト用 wget-list の sed コマンド変更。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           SVN-20170525,
           チェンジセット
           <ulink url="&lfs-rev-root;11254">11254</ulink>

@@ -143,15 +143,14 @@ url="../wget-list">wget-list</ulink> を書き換えて利用しています。
 また同じ方法で Linux カーネル、<application>Perl</application>、<application>Vim</application> の入手先も変更します。
 </para>
 
-<screen><userinput remap="sed-wgetlist">mv wget-list{,.orig}
-cat &gt; wget-list-ja.sed &lt;&lt; "EOF"
+<screen><userinput remap="sed-wgetlist">cat &gt; wl.sed &lt;&lt; "EOF"
 <literal>s|ftp\.gnu\.org/gnu/|ftp.riken.jp/GNU/gnu/|g
 s|https://www\.kernel\.org/pub/linux/|http://ftp.riken.jp/Linux/kernel.org/linux/|g
 s|www\.cpan\.org|ftp.riken.jp/lang/CPAN|g
 s|ftp\.vim\.org|ftp.jp.vim.org|g</literal>
 EOF
-sed -f wget-list-ja.sed wget-list.orig > wget-list
-rm wget-list-ja.sed</userinput></screen>
+sed -f wl.sed -i.orig wget-list
+rm wl.sed</userinput></screen>
 
 <para>
 上記はあくまで一例です。しかもすべてのパッケージについて、国内サイトからの入手となるわけではありません。
