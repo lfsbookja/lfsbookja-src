@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2017-06-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.30. Fixes
+          <ulink url="&lfs-ticket-root;4092">#4092</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.26.0. Fixes
+          <ulink url="&lfs-ticket-root;4091">#4091</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.31. Fixes
+          <ulink url="&lfs-ticket-root;4090">#4090</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to diffutils-3.6. Fixes
+          <ulink url="&lfs-ticket-root;4089">#4089</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.11.3. Fixes
+          <ulink url="&lfs-ticket-root;4088">#4088</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-06-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.30 へのアップデート。
+          <ulink url="&lfs-ticket-root;4092">#4092</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.26.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4091">#4091</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.31 へのアップデート。
+          <ulink url="&lfs-ticket-root;4090">#4090</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - diffutils-3.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4089">#4089</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.11.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4088">#4088</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-05-25</para>
       <itemizedlist>
         <listitem>

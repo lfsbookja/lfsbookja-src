@@ -32,6 +32,14 @@
 @z
 
 @x
+    <para>First, fix a build issue that arises only in the LFS environment:</para>
+@y
+    <para>
+    LFS 環境においてのみ発生する問題をここで修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Perl for compilation:</para>
 @y
     <para>&PreparePackage1;Perl&PreparePackage2;</para>

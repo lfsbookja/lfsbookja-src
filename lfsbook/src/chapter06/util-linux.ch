@@ -107,12 +107,13 @@
 @z
 
 @x
-    <note><para>One test above, tests/ts/ipcs/limits2, will fail when the host 
-    is using a recent kernel.  The failure can safely be ignored.</para></note>
+    <note><para>One test, fincore/count, may fail in the initial chroot
+    environment but will pass if the test is rerun after the LFS system
+    is complete.</para></note>
 @y
     <note><para>
-    上において tests/ts/ipcs/limits2 というテストは、ホストが最新のカーネルを用いている場合に失敗します。
-    この失敗は無視して構いません。
+    fincore/count というテストは初めて chroot に入った状態の時には失敗します。
+    ただし LFS システムの構築を終えて再テストすれば成功します。
     </para></note>
 @z
 

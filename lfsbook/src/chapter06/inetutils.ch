@@ -104,6 +104,17 @@
 @z
 
 @x
+    <note><para>One test, libls.sh, may fail in the initial chroot
+    environment but will pass if the test is rerun after the LFS system
+    is complete.</para></note>
+@y
+    <note><para>
+    libls.sh というテストは初めて chroot に入った状態の時には失敗します。
+    ただし LFS システムの構築を終えて再テストすれば成功します。
+    </para></note>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
