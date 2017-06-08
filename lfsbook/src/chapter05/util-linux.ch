@@ -74,6 +74,17 @@
           </para>
 @z
 
+@x --without-ncurses
+          <para>This switch disables using the ncurses library for
+          the build process. This is not needed when installing into the
+          /tools directory and avoids problems on some host distros.</para>
+@y
+          <para>
+          本スイッチはビルド中に ncurses ライブラリを用いないようにします。
+          /tools へインストールする際には不要なものであり、特定のディストリビューションでは問題が発生するためです。
+          </para>
+@z
+
 @x --without-systemdsystemunitdir
           <para>On systems that use systemd, the package tries to install 
           a systemd specific file to a non-existent directory in /tools.

@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2017-06-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.11.4. Fixes
+          <ulink url="&lfs-ticket-root;4093">#4093</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-06-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.11.4 へのアップデート
+          <ulink url="&lfs-ticket-root;4093">#4093</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-06-02</para>
       <itemizedlist>
         <listitem>

@@ -196,14 +196,14 @@
 @z
 
 @x
-        <seg>addr2line, ar, as, c++filt, elfedit, gprof, ld, ld.bfd, nm,
+        <seg>addr2line, ar, as, c++filt, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
         <seg>libbfd.{a,so} and libopcodes.{a,so}</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
-        <seg>addr2line, ar, as, c++filt, elfedit, gprof, ld, ld.bfd, nm,
-        objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
-        <seg>libbfd.{a,so}, libopcodes.{a,so}</seg>
+        <seg>addr2line, ar, as, c++filt, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
+        objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
+        <seg>libbfd.{a,so} and libopcodes.{a,so}</seg>
         <seg>/usr/lib/ldscripts</seg>
 @z
 
@@ -276,6 +276,15 @@
           <para>
           複数のオブジェクトファイルやアーカイブファイルから、一つのファイルを生成するリンカー。
           データの再配置やシンボル参照情報の結合を行います。
+          </para>
+@z
+
+@x ld.gold
+          <para>A cut down version of ld that only supports the 
+          elf object file format</para>
+@y
+          <para>
+          elf オブジェクト向けファイルフォーマットのサポートにのみ特化した ld の限定バージョン。
           </para>
 @z
 
