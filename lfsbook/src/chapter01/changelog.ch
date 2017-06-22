@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2017-06-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.15.1. Fixes
+          <ulink url="&lfs-ticket-root;4098">#4098</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.2.1. Fixes
+          <ulink url="&lfs-ticket-root;4096">#4096</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to psmisc-23.1. Fixes
+          <ulink url="&lfs-ticket-root;4094">#4094</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.11.6. Fixes
+          <ulink url="&lfs-ticket-root;4095">#4095</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-06-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - automake-1.15.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4098">#4098</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4096">#4096</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - psmisc-23.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4094">#4094</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.11.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4095">#4095</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-06-07</para>
       <itemizedlist>
         <listitem>

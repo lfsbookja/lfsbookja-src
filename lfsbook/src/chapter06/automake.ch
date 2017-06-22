@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>First fix a warning that is caused by perl-5.22 and later:</para>
-@y
-    <para>
-    perl-5.22 以降にて発生する警告メッセージを修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Automake for compilation:</para>
 @y
     <para>&PreparePackage1;Automake&PreparePackage2;</para>
@@ -65,10 +57,10 @@
 @z
 
 @x
-    <para>Four tests are known to fail.</para>
+    <para>Three tests are known to fail in the LFS environment.</para>
 @y
     <para>
-    テスト失敗するものが4つあります。
+    LFS環境では失敗するテストが3つあります。
     </para>
 @z
 

@@ -119,7 +119,7 @@
 @z
 
 @x
-        <seg>chacl, getfacl, and setacl</seg>
+        <seg>chacl, getfacl, and setfacl</seg>
         <seg>libacl.so</seg>
         <seg>/usr/include/acl and /usr/share/doc/acl-&acl-version;</seg>
 @y
@@ -151,7 +151,7 @@
           </para>
 @z
 
-@x setacl
+@x setfacl
           <para>Sets file access control lists</para>
 @y
           <para>
