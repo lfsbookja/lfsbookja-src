@@ -67,18 +67,19 @@
     usually depends on the files in <filename
     class="directory">/etc/sysconfig/</filename>.  This directory should
     contain a file for each interface to be configured, such as
-    <filename>ifconfig.xyz</filename>, where <quote>xyz</quote> is required to
-    be a Network Card Interface name (e.g. eth0).  Inside this file are
-    attributes to this interface, such as its IP address(es), subnet masks, and
-    so forth.  It is necessary that the stem of the filename be
-    <emphasis>ifconfig</emphasis>.</para>
+    <filename>ifconfig.xyz</filename>, where <quote>xyz</quote> should describe
+    the network card.  The interface name (e.g. eth0) is usually appropriate.
+    Inside this file are attributes to this interface, such as its IP
+    address(es), subnet masks, and so forth.  It is necessary that the stem of
+    the filename be <emphasis>ifconfig</emphasis>.</para>
 @y
     <para>
-    どのネットワークインターフェースが起動したり停止したりするかは <filename
-    class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルの指定によります。
+    ネットワークインターフェースの起動、停止は <filename
+    class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルによって決まります。。
     このディレクトリには、設定を行ないたい各ネットワークインターフェースに対するファイル <filename>ifconfig.xyz</filename> を準備します。
-    この<quote>xyz</quote>はネットワークカードインターフェースに対する名称 (例えば eth0 など) です。
-    このファイルにはネットワークインターフェースの属性、つまり IP アドレスやサブネットマスクなどを定義します。
+    <quote>xyz</quote>はネットワークカードを指します。
+    通常はインターフェース名（例えばeth0）を用います。
+    そしてこのファイルにはネットワークインターフェースの属性、つまり IP アドレスやサブネットマスクなどを定義します。
     ファイルベース名は <emphasis>ifconfig</emphasis> とすることが必要です。
     </para>
 @z
@@ -87,17 +88,14 @@
     <note><para>If the procedure in the previous section was not used, Udev
     will assign network card interface names based on system physical
     characteristics such as enp2s1. If you are not sure what your interface
-    name is, you can always run <command>ip link</command>  after you have
-    booted your system.  Again, it is important that ifconfig.xyz is named
-    after correct network card interface name (e.g. ifconfig.enp2s1 or
-    ifconfig.eth0) or your network interface will not be initialized during
-    the boot process.</para></note>
+    name is, you can always run <command>ip link</command> or <command>ls
+    /sys/class/net</command> after you have booted your system.  
+    </para></note>
 @y
     <note><para>
     前節に示した手順を実施しなかった場合、Udev は、システムの物理的な特性に従った enp2s1 などのような名称をネットワークカードインターフェースに割り当てます。
-    インタフェース名がよく分からない場合は、システム起動直後に常に <command>ip link</command> を実行してください。
-    繰り返しますが ifconfig.xyz という名称はネットワークカードインターフェースを示す正しい名称 (つまり ifconfig.enp2s1 や ifconfig.eth0) としなければなりません。
-    これを行っていない場合には、システム起動時にネットワークインターフェースが初期化されないことになります。
+    インタフェース名がよく分からない場合は、システム起動した後に <command>ip link</command> または <command>ls
+    /sys/class/net</command> を実行すれば確認できます。
     </para></note>
 @z
 
@@ -207,60 +205,6 @@
 @z
 
 @x
-    <title>Configuring the Network Interface Card at boot (systemd)</title>
-@y
-    <title>起動時のネットワークインターフェースカードの設定 (Systemd 利用時)</title>
-@z
-
-@x
-    <para>Enabling of the network interface card configuration 
-    in systemd is done per interface. To enable network interface card
-    configuration at boot, run:</para>
-@y
-    <para>
-    Sysmted においては、ネットワークインターフェースカードに対する設定を個々のインターフェースごとに行うことができます。
-    システム起動時のネットワークインターフェースカードへの設定を有効とするためには以下を実行します。
-    </para>
-@z
-
-@x
-    <para>To disable a previously enabled network interface
-    card configuration at boot, run:</para>
-@y
-    <para>
-    上で有効にしたネットワークインターフェースカードを逆に無効とするには、システム起動時に以下を実行します。
-    </para>
-@z
-
-@x
-    <para>To manually start the network interface card configuration,
-    run:</para>
-@y
-    <para>
-    ネットワークインターフェースカードの設定を手動で有効化するには、以下を実行します。
-    </para>
-@z
-
-@x
-    <para>Replace eth0 with the correct network interface card
-    name as described on the beginning of this page.</para>
-@y
-    <para>
-    冒頭で説明したように、eth0 の部分は適切なネットワークインターフェースカード名としてください。
-    </para>
-@z
-
-@x
-    <note><para>The network card can also be started or stopped
-    with the traditional <command>ifup &lt;device&gt;</command> or
-    <command>ifdown &lt;device&gt;</command> commands.</para></note>
-@y
-    <note><para>
-    ネットワークカードの起動、停止は、従来からのコマンド <command>ifup &lt;device&gt;</command>、あるいは <command>ifdown &lt;device&gt;</command> を用いることもできます。
-    </para></note>
-@z
-
-@x
     <title>Creating the /etc/resolv.conf File</title>
 @y
     <title>
@@ -269,17 +213,15 @@
 @z
 
 @x
-    <para>If the system is going to be connected to the Internet, it will
-    need some means of Domain Name Service (DNS) name resolution to
-    resolve Internet domain names to IP addresses, and vice versa. This is
-    best achieved by placing the IP address of the DNS server, available
-    from the ISP or network administrator, into
+    <para>The system will need some means of obtaining Domain Name Service
+    (DNS) name resolution to resolve Internet domain names to IP addresses, and
+    vice versa. This is best achieved by placing the IP address of the DNS
+    server, available from the ISP or network administrator, into
     <filename>/etc/resolv.conf</filename>. Create the file by running the
     following:</para>
 @y
     <para>
-    インターネットへの接続を行う場合には、ドメイン名サービス (domain name service; DNS) による名前解決を必要とします。
-    これによりインターネットドメイン名を IP アドレスに、あるいはその逆の変換を行います。
+    インターネットドメイン名を IP アドレスに、あるいはその逆の変換を行なうには、ドメイン名サービス (domain name service; DNS) による名前解決を必要とします。
     これを行うには ISP やネットワーク管理者が指定する DNS サーバーの割り振り IP アドレスを <filename>/etc/resolv.conf</filename> ファイルに設定します。
     以下のコマンドによりこのファイルを生成します。
     </para>
@@ -313,9 +255,9 @@
 @z
 
 @x
-    <note><para>The Google Public IPv4 DNS addresses are 8.8.8.8 and 8.8.4.4.</para></note>
+      <para>The Google Public IPv4 DNS addresses are 8.8.8.8 and 8.8.4.4.</para>
 @y
-    <note><para>Google Public IPv4 DNS アドレスは 8.8.8.8 と 8.8.4.4 です。</para></note>
+      <para>Google Public IPv4 DNS アドレスは 8.8.8.8 と 8.8.4.4 です。</para>
 @z
 
 @x

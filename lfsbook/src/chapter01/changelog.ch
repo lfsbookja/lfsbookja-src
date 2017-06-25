@@ -54,6 +54,46 @@
 @z
 
 @x
+      <para>2017-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-6.4. Fixes
+          <ulink url="&lfs-ticket-root;4100">#4100</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.11.7. Fixes
+          <ulink url="&lfs-ticket-root;4090">#4099</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove section disussing configuration
+          without a network card.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update boot scripts to unmount network
+          file systems before bringing down the network.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - texinfo-6.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4100">#4100</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.11.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4090">#4099</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ネットワークカードがないときの設定に関する節を削除。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ネットワーク停止の前にネットワークファイルシステムをアンマウントするようにスクリプトを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-06-21</para>
       <itemizedlist>
         <listitem>
