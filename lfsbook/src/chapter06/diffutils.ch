@@ -29,16 +29,6 @@
 @z
 
 @x
-    <para>First fix a file so locale files are installed and fix the
-    included gnulib code:</para>
-@y
-    <para>
-    ロケールファイルをインストールするように修正します。
-    また gnulib コード部分を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Diffutils for compilation:</para>
 @y
     <para>&PreparePackage1;Diffutils&PreparePackage2;</para>

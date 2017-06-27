@@ -54,6 +54,29 @@
 @z
 
 @x
+      <para>2017-06-26</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Fix an error in the mountfs bootscript.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove outdated seds for diffutils in
+          both Chapters 5 and 6.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-06-26</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - ブートスクリプト mountfs の誤り修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第5章と第6章の diffutils にて古くなった sed コマンドを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-06-24</para>
       <itemizedlist>
         <listitem>
@@ -64,11 +87,11 @@
           <para>[bdubbs] - Update to linux-4.11.7. Fixes
           <ulink url="&lfs-ticket-root;4090">#4099</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - Remove section disussing configuration
           without a network card.</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - Update boot scripts to unmount network
           file systems before bringing down the network.</para>
         </listitem>
@@ -84,10 +107,10 @@
           <para>[bdubbs] - linux-4.11.7 へのアップデート。
           <ulink url="&lfs-ticket-root;4090">#4099</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - ネットワークカードがないときの設定に関する節を削除。</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - ネットワーク停止の前にネットワークファイルシステムをアンマウントするようにスクリプトを修正。</para>
         </listitem>
       </itemizedlist>
