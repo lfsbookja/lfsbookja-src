@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2017-06-30</para>
+      <itemizedlist>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - Update to dbus-1.10.20. Fixes
+          <ulink url="&lfs-ticket-root;4101">#4101</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.11.8. Fixes
+          <ulink url="&lfs-ticket-root;4090">#4099</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-06-30</para>
+      <itemizedlist>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - dbus-1.10.20 へのアップグレード。
+          <ulink url="&lfs-ticket-root;4101">#4101</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.11.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;4090">#4099</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-06-26</para>
       <itemizedlist>
         <listitem revision='sysv'>

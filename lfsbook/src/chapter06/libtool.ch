@@ -49,6 +49,20 @@
 @z
 
 @x
+    <note><para>The test time for libtool can ibe reduced significantly on a
+    system with multiple cores.  To do this, append
+    <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> to the line above.  For
+    instance, using -j4 can reduce the test time by over 60
+    percent.</para></note>
+@y
+    <note><para>
+    マルチコアのシステム上で libtool のテストをすると、その処理時間は大幅に減ります。
+    実行する際には、上のコマンドに <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> を加えます。
+    例えば -j4 を指定するとテスト時間は 6 割以上減ります。
+    </para></note>
+@z
+
+@x
     <para>Five tests are known to fail in the LFS build environment due
     to a circular dependency, but all tests pass if rechecked after 
     automake is installed.</para>
