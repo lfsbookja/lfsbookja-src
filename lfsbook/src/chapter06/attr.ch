@@ -47,6 +47,14 @@
 @z
 
 @x
+    <para>Fix a problem in the test procedures caused by changes in perl-5.26:</para>
+@y
+    <para>
+    perl が 5.26 になったことでテストにて発生する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Attr for compilation:</para>
 @y
     <para>&PreparePackage1;Attr&PreparePackage2;</para>

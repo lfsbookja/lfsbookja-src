@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2017-07-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix the test procedure in attr. Fixes
+          <ulink url="&lfs-ticket-root;4103">#4103</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-3.1. Fixes
+          <ulink url="&lfs-ticket-root;4104">#4104</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-07-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - attr におけるテストに関して修正。
+          <ulink url="&lfs-ticket-root;4103">#4103</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4104">#4104</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-06-30</para>
       <itemizedlist>
         <listitem revision='systemd'>
