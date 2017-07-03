@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2017-07-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.12.</para> 
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-07-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.12 へのアップデート。</para> 
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-07-02</para>
       <itemizedlist>
         <listitem>
