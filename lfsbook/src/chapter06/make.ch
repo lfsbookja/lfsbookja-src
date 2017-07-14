@@ -38,9 +38,15 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>The test suite needs to know where supporting perl files are located.
+    We use an envronment variable to accomplish this.  To test the 
+    results, issue:</para>
 @y
-    <para>コンパイル結果をテストするには以下を実行します。</para>
+    <para>
+    テストスイートの実行の際には、サポートされている perl ファイルがどこにあるかを示す必要があります。
+    ここでは環境変数を用いて指定することにします。
+    コンパイル結果をテストするには以下を実行します。
+    </para>
 @z
 
 @x

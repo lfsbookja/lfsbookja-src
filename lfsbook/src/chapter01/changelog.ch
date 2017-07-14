@@ -54,6 +54,64 @@
 @z
 
 @x
+      <para>2017-07-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.12.1. Fixes
+          <ulink url="&lfs-ticket-root;4110">#4110</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.4.2. Fixes
+          <ulink url="&lfs-ticket-root;4109">#4109</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.12.0. Fixes
+          <ulink url="&lfs-ticket-root;4108">#4108</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix the test procedure in make. Fixes
+          <ulink url="&lfs-ticket-root;4105">#4105</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix the test procedure in procps-ng. Fixes
+          <ulink url="&lfs-ticket-root;4106">#4106</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.25+adc7e06. Fixes
+          <ulink url="&lfs-ticket-root;4097">#4097</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-07-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.12.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4110">#4110</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.4.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4109">#4109</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.12.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4108">#4108</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - make におけるテスト手順を修正。
+          <ulink url="&lfs-ticket-root;4105">#4105</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - procps-ng におけるテスト手順を修正。
+          <ulink url="&lfs-ticket-root;4106">#4106</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.25+adc7e06 へのアップデート。
+          <ulink url="&lfs-ticket-root;4097">#4097</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-07-03</para>
       <itemizedlist>
         <listitem>
