@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2017-07-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to linux-4.12.2. Fixes
+          <ulink url="&lfs-ticket-root;4113">#4113</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to expat-2.2.2. Fixes
+          <ulink url="&lfs-ticket-root;4112">#4112</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Update to systemd-234. Fixes
+          <ulink url="&lfs-ticket-root;4111">#4111</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Postpone systemd test suite until BLFS. Fixes
+          <ulink url="&lfs-ticket-root;4107">#4107</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-07-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - linux-4.12.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4113">#4113</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - expat-2.2.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4112">#4112</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - systemd-234 へのアップデート。
+          <ulink url="&lfs-ticket-root;4111">#4111</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - systemd のテストスイートは BLFS で実施するように後送り。
+          <ulink url="&lfs-ticket-root;4107">#4107</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-07-13</para>
       <itemizedlist>
         <listitem>

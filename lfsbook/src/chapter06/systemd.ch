@@ -29,35 +29,10 @@
 @z
 
 @x
-    <para>First, fix a build error when using Util-Linux built in
-    Chapter 5:</para>
-@y
-    <para>
-    まず第5章でビルドした Util-Linux を用いた際のビルドエラーを修正します。
-    </para>
-@z
-
-@x
-    <para>Fix a potential security issue with framebuffer devices:</para>
-@y
-    <para>
-    フレームバッファーに関するセキュリティ問題を修正します。
-    </para>
-@z
-
-@x
-    <para>Disable two tests that always fail:</para>
+    <para>First, disable two tests that always fail:</para>
 @y
     <para>
     二つのテストが常時失敗するため、実行しないようにします。
-    </para>
-@z
-
-@x
-    <para>Apply a patch to fix a security issue:</para>
-@y
-    <para>
-    セキュリティ問題を解消するパッチを適用します。
     </para>
 @z
 
@@ -193,10 +168,10 @@
 
 @x
     <para>This package has a test suite, but it can only be run after the
-    package has been installed.</para>
+    package has been reinstalled in BLFS.</para>
 @y
     <para>
-    このパッケージにテストスイートはありますが、パッケージをインストールした後でなければ実行することはできません。
+    このパッケージにテストスイートはありますが、BLFS においてパッケージを再インストールした後でなければ実行することはできません。
     </para>
 @z
 
