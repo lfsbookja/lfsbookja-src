@@ -15,17 +15,17 @@
 @z
 
 @x
-<!ENTITY versiond        "20170718-systemd">
+<!ENTITY versiond        "20170721-systemd">
 @y
-<!ENTITY versiond        "20170718-systemd">
+<!ENTITY versiond        "20170721-systemd">
 @z
 
 @x
-<!ENTITY releasedate     "July 18, 2017">
+<!ENTITY releasedate     "July 21, 2017">
 @y
-<!ENTITY releasedate     "2017年7月18日">
-<!ENTITY jversion        "20170719">
-<!ENTITY jversiond       "20170719">
+<!ENTITY releasedate     "2017年7月21日">
+<!ENTITY jversion        "20170721">
+<!ENTITY jversiond       "20170721">
 <!ENTITY dir-jversion    "svn-ja">
 <!ENTITY dir-jversiond   "svn-sysdja">
 @z

@@ -57,6 +57,21 @@
 
 -->
 
+    <listitem revision="systemd">
+      <para>2017-07-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          20170721-systemd,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11271">11271</ulink>,
+          <ulink url="&lfs-rev-root;11272">11272</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
    <listitem>
       <para>2017-07-19</para>
       <itemizedlist>

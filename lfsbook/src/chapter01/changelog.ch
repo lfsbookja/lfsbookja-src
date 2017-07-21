@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2017-07-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Fix EXTRA_DIST files in systemd tarball.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@y
+      <para>2017-07-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - systemd の tarball 内にある EXTRA_DIST ファイルを調整。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@z
+
+@x
       <para>2017-07-18</para>
       <itemizedlist>
         <listitem>

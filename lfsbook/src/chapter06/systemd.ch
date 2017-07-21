@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>First, disable two tests that always fail:</para>
-@y
-    <para>
-    二つのテストが常時失敗するため、実行しないようにします。
-    </para>
-@z
-
-@x
     <para>Create a file to allow systemd to build when using Util-Linux
     built in Chapter 5, to disable LTO by default, and to build without
     xlstproc:</para>
@@ -208,32 +200,11 @@
 @z
 
 @x
-    <para>Remove a reference to a non-existent group:</para>
-@y
-    <para>
-    存在しないグループへの参照を削除します。
-    </para>
-@z
-
-@x
     <para>Create the <filename>/etc/machine-id</filename> file needed by
     <command>systemd-journald</command>:</para>
 @y
     <para>
     <command>systemd-journald</command> に対して必要となる <filename>/etc/machine-id</filename> ファイルを生成します。
-    </para>
-@z
-
-@x
-    <para>Since the testsuite largely depends on the host system kernel
-    configuration, some tests may fail. It also needs a modification in
-    order not to look for a program that will be installed by Util-Linux
-    package later in this chapter. To test the results, issue:</para>
-@y
-    <para>
-    テストスイートはホストシステムのカーネル設定に大きく依存するため、失敗するテストが出てきます。
-    また本章にて後にインストールする Util-Linux パッケージによってインストールされるプログラムを、テストスイートが用いないようにする修正が必要となります。
-    テストスイートは以下により実行します。
     </para>
 @z
 
