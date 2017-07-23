@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2017-07-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to util-linux-2.30.1. Fixes
+          <ulink url="&lfs-ticket-root;4114">#4114</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to linux-4.12.3. Fixes
+          <ulink url="&lfs-ticket-root;4115">#4115</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to man-pages-4.12. Fixes
+          <ulink url="&lfs-ticket-root;4116">#4116</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-07-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - util-linux-2.30.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4114">#4114</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - linux-4.12.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4115">#4115</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - man-pages-4.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4116">#4116</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-07-21</para>
       <itemizedlist>
         <listitem>
