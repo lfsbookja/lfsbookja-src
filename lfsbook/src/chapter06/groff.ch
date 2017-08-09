@@ -53,9 +53,12 @@
 @z
 
 @x
-    <para>Compile the package:</para>
+    <para>This package does not support parallel build. Compile the package:</para>
 @y
-    <para>&CompileThePackage;</para>
+    <para>
+    このパッケージでは並行ビルドはサポートされていません。
+    &CompileThePackage;
+    </para>
 @z
 
 @x

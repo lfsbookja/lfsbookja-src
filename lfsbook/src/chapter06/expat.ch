@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>First fix a problem with the regession tests in the LFS environment:</para>
+@y
+    <para>
+    LFS 環境にて発生する、縮退テストに対する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Expat for compilation:</para>
 @y
     <para>&PreparePackage1;Expat&PreparePackage2;</para>

@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2017-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.43.5. Fixes
+          <ulink url="&lfs-ticket-root;4122">#4122</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.2.3. Fixes
+          <ulink url="&lfs-ticket-root;4121">#4121</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.12.5. Fixes
+          <ulink url="&lfs-ticket-root;4119">#4119</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.43.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4122">#4122</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.2.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4121">#4121</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.12.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4119">#4119</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-07-23</para>
       <itemizedlist>
         <listitem>
