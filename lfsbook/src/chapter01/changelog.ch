@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2017-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tcl-core-8.6.7. Fixes
+          <ulink url="&lfs-ticket-root;4123">#4123</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tcl-core-8.6.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4123">#4123</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-08-08</para>
       <itemizedlist>
         <listitem>
