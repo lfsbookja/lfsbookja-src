@@ -92,6 +92,15 @@
 @z
 
 @x
+    <para>Remove a file that may be left over from a previous build attempt:
+    </para>
+@y
+    <para>
+    直前にビルドをやりかけていた場合に、残ってしまうファイルを削除します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc 
     in a dedicated build directory:</para>
 @y
@@ -262,6 +271,17 @@
     <para>
     支障が出る話ではありませんが Glibc のインストール時には <filename>/etc/ld.so.conf</filename> ファイルが存在していないとして警告メッセージが出力されます。
     これをなくすために以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Fix the generated Makefile to skip an uneeded sanity check
+    that fails in the LFS partial environment:
+    </para>
+@y
+    <para>
+    Makefile に生成された不要な健全性チェックを無効にします。
+    これは、この段階での LFS 環境では失敗するためです。
     </para>
 @z
 

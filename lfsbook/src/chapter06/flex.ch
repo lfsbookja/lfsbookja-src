@@ -29,10 +29,10 @@
 @z
 
 @x
-    <para>First, fix a problem with the latest version:</para>
+    <para>First, fix a problem introduced with glibc-2.26:</para>
 @y
     <para>
-    最新バージョンにおける問題を修正します。
+    glibc-2.26 によって発生する問題を修正します。
     </para>
 @z
 

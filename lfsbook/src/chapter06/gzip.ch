@@ -47,6 +47,15 @@
 @z
 
 @x
+    <para>Two tests are known to fail in the LFS environment:
+    help-version and zmore.</para>
+@y
+    <para>
+    LFS 環境では help-version と zmore という 2 つのテストは失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

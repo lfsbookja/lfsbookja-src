@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2017-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-7.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4125">#4125</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.12.7. Fixes
+          <ulink url="&lfs-ticket-root;4124">#4124</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.26. Fixes
+          <ulink url="&lfs-ticket-root;4120">#4120</ulink>.</para>
+        </listitem>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - Update to dbus-1.10.22. Fixes
+          <ulink url="&lfs-ticket-root;4118">#4118</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.29. Fixes
+          <ulink url="&lfs-ticket-root;4117">#4117</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-7.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4125">#4125</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.12.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4124">#4124</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.26 へのアップデート。
+          <ulink url="&lfs-ticket-root;4120">#4120</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - dbus-1.10.22 へのアップデート。
+          <ulink url="&lfs-ticket-root;4118">#4118</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.29 へのアップデート。
+          <ulink url="&lfs-ticket-root;4117">#4117</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-08-11</para>
       <itemizedlist>
         <listitem>
