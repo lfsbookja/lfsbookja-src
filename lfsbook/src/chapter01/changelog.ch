@@ -54,6 +54,23 @@
 @z
 
 @x
+      <para>2017-08-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a note to gmp that shows how
+          to create genereic gmp libraries. </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-08-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gmp にメモを追加。汎用 gmp ライブラリの生成方法を示す。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-08-15</para>
       <itemizedlist>
         <listitem>

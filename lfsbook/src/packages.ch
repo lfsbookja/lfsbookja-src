@@ -32,9 +32,9 @@
 @z
 
 @x
-<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 7.5 SBU with tests)">
+<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 8.5 SBU with tests)">
 @y
-<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テスト込みで約 7.5 SBU)">
+<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テスト込みで約 8.5 SBU)">
 @z
 
 @x
@@ -118,11 +118,11 @@
 
 @x
 <!ENTITY linux-headers-ch5-sbu "less than 0.1 SBU">
-<!ENTITY linux-headers-ch6-du "767 MB">
+<!ENTITY linux-headers-ch6-du "865 MB">
 <!ENTITY linux-headers-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY linux-headers-ch5-sbu "0.1 SBU 以下">
-<!ENTITY linux-headers-ch6-du "767 MB">
+<!ENTITY linux-headers-ch6-du "865 MB">
 <!ENTITY linux-headers-ch6-sbu "0.1 SBU 以下">
 @z
 

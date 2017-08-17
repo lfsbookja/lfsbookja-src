@@ -42,6 +42,17 @@
 @z
 
 @x
+      <para>The default settings of GMP produce libraries optimized for
+      the host processor.  If libraries suitable for processors less
+      capable than the host's CPU are desired, generic libraries can be 
+      created by running the following:
+@y
+      <para>
+      GMP のデフォルト設定に従うと、ホストのプロセッサー向けに最適化したライブラリを生成してしまいます。
+      ホストに比べて、やや性能の劣るプロセッサーに向けたライブラリを必要とする場合は、汎用ライブラリを生成するために以下を実行します。
+@z
+
+@x
     <para>Prepare GMP for compilation:</para>
 @y
     <para>&PreparePackage1;GMP&PreparePackage2;</para>
