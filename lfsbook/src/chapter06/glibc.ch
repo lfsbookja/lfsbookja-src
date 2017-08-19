@@ -141,15 +141,6 @@
           </para>
 @z
 
-@x --enable-obsolete-rpc
-          <para>This option builds older RPC code for use with
-          network file system utilities (nfs).</para>
-@y
-          <para>
-          ネットワークファイルシステム (nfs) ユーティリティーが利用する、かつての RPC コードをビルドします。
-          </para>
-@z
-
 @x --enable-stack-protector=strong
           <para>This option increases system security by adding  a known canary
           (a random integer) to the stack during a function preamble, and checks
