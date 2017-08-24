@@ -54,6 +54,28 @@
 @z
 
 @x
+      <para>2017-08-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Remove rpcgen from GlibC index.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Fix acl's testsuite for perl-5.26.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-08-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - GlibC の概略説明から rpcgen を削除。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - acl のテストスイートを perl-5.26 向けに修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-08-16</para>
       <itemizedlist>
         <listitem>
@@ -74,7 +96,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Add a note to gmp that shows how
-          to create genereic gmp libraries. </para>
+          to create generic gmp libraries. </para>
         </listitem>
       </itemizedlist>
 @y

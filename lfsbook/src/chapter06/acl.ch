@@ -48,6 +48,14 @@
 @z
 
 @x
+    <para>Fix a problem in the test procedures caused by changes in perl-5.26:</para>
+@y
+    <para>
+    perl-5.26 の変更にともなって発生するテストの不備を修正します。
+    </para>
+@z
+
+@x
     <para>Additionally, fix a bug that causes <command>getfacl -e</command>
     to segfault on overly long group name:</para>
 @y

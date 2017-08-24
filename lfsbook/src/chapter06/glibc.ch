@@ -584,7 +584,7 @@
 @x
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, 
-        pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
+        pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld-&glibc-version;.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -606,7 +606,7 @@
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, 
-        pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
+        pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld-&glibc-version;.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -757,15 +757,6 @@
 @y
           <para>
           稼動中のプロセスにて利用されている動的共有オブジェクト (dynamic shared objects) を一覧出力します。
-          </para>
-@z
-
-@x rpcgen
-          <para>Generates C code to implement the Remote Procedure Call (RPC)
-          protocol</para>
-@y
-          <para>
-          リモートプロシジャーコール (Remote Procedure Call; RPC) を実装するための C 言語コードを生成します。
           </para>
 @z
 
