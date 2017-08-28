@@ -54,6 +54,23 @@
 @z
 
 @x
+      <para>2017-08-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove invalid option from systemd book's 
+          util-linux.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-08-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd 版の util-linux にて不要なオプションを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-08-24</para>
       <itemizedlist>
         <listitem>
