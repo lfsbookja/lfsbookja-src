@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY % general-entities SYSTEM "../general.ent">
+  %general-entities;
+]>
+
+<!--
+ This is part of LFSbookja package.
+
+ $Author$
+ $Rev$
+ $Date::                           $
+-->
+
+<sect1 id="ch-scatter-jchangelog">
+  <?dbhtml filename="jchangelog.html"?>
+
+  <title>変更履歴 (日本語版)</title>
+
+<para>
+ここに示すのは LFS ブック
+<phrase revision="sysv">&version;</phrase>
+<phrase revision="systemd">&versiond;</phrase>
+日本語版 (バージョン
+<phrase revision="sysv">&jversion;</phrase><phrase revision="systemd">&jversiond;</phrase>) の変更履歴です。
+</para>
+
+  <note>
+   <title>日本語訳情報</title>
+   <para>
+    本節はオリジナルの LFS ブックにはないものです。
+    LFS ブック日本語版の変更履歴を示すために設けています。
+   </para>
+   <para>
+   「SVN-20150123」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
+   また「チェンジセット 12345」という表記は、オリジナル XML ソースファイルの Subversion 管理下でのリビジョン (その参照ページ) を意味します。
+   </para>
+  </note>
+
+  <itemizedlist>
+    <title>変更履歴：</title>
+
+<!-- Changelog template
+
+    <listitem>
+      <para>Date</para>
+      <itemizedlist>
+        <listitem>
+          <para>[name] - New changelog entry.</para>
+        </listitem>
+        <listitem>
+          <para>[name] - Previous changelog entry.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+-->
+
+   <listitem>
+      <para>2017-09-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          LFS-8.1 リリース対応,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11294">11294</ulink>,
+          <ulink url="&lfs-rev-root;11295">11295</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-08-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170827,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11292">11292</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-08-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170824,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11289">11289</ulink> ～
+          <ulink url="&lfs-rev-root;11291">11291</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-08-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170818,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11286">11286</ulink>,
+          <ulink url="&lfs-rev-root;11287">11287</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-08-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170816,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11282">11282</ulink> ～
+          <ulink url="&lfs-rev-root;11285">11285</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170815,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11279">11279</ulink> ～
+          <ulink url="&lfs-rev-root;11281">11281</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170811,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11277">11277</ulink>,
+          <ulink url="&lfs-rev-root;11278">11278</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-08-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170808,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11275">11275</ulink>,
+          <ulink url="&lfs-rev-root;11276">11276</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-07-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170723,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11273">11273</ulink>,
+          <ulink url="&lfs-rev-root;11274">11274</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+    <listitem revision="systemd">
+      <para>2017-07-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          20170721-systemd,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11271">11271</ulink>,
+          <ulink url="&lfs-rev-root;11272">11272</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-07-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170718,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11270">11270</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-07-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170713,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11268">11268</ulink>,
+          <ulink url="&lfs-rev-root;11269">11269</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-07-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170703,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11267">11267</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-07-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170702,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11265">11265</ulink>,
+          <ulink url="&lfs-rev-root;11266">11266</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170626,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11264">11264</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-06-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170626,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11262">11262</ulink>,
+          <ulink url="&lfs-rev-root;11263">11263</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-06-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170624,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11260">11260</ulink>,
+          <ulink url="&lfs-rev-root;11261">11261</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-06-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170621,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11258">11258</ulink>,
+          <ulink url="&lfs-rev-root;11259">11259</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-06-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170607,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11257">11257</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-06-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170602,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11255">11255</ulink>,
+          <ulink url="&lfs-rev-root;11256">11256</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-05-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          国内サイト用 wget-list の sed コマンド変更。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170525,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11254">11254</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170518,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11253">11253</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-05-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170513,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11246">11246</ulink> ～
+          <ulink url="&lfs-rev-root;11252">11252</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-05-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170505,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11245">11245</ulink>
+          対応。全般的な整備。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-05-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170505,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11243">11243</ulink>,
+          <ulink url="&lfs-rev-root;11244">11244</ulink>
+          対応。若干の整備。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-05-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170503,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11239">11239</ulink>,
+          <ulink url="&lfs-rev-root;11242">11242</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - 引き続き全般的な整備。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-05-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170501,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11237">11237</ulink>,
+          <ulink url="&lfs-rev-root;11238">11238</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170428,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11234">11234</ulink> ～
+          <ulink url="&lfs-rev-root;11236">11236</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170426,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11232">11232</ulink>,
+          <ulink url="&lfs-rev-root;11233">11233</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170425,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11230">11230</ulink>,
+          <ulink url="&lfs-rev-root;11231">11231</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - 引き続き全般的な整備。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170422,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11228">11228</ulink>,
+          <ulink url="&lfs-rev-root;11229">11229</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - 引き続き全般的な整備。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170422,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11226">11226</ulink>,
+          <ulink url="&lfs-rev-root;11227">11227</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - 全般的な整備。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - 日本語化ビルドソースの整理。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170411,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11223">11223</ulink> ～
+          <ulink url="&lfs-rev-root;11225">11225</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170410,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11221">11221</ulink>,
+          <ulink url="&lfs-rev-root;11222">11222</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - 第6章の gcc にて誤訳修正。</para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170407,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11219">11219</ulink>,
+          <ulink url="&lfs-rev-root;11220">11220</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170403,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11216">11216</ulink> ～
+          <ulink url="&lfs-rev-root;11218">11218</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170331,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11213">11213</ulink> ～
+          <ulink url="&lfs-rev-root;11215">11215</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-03-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170328,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11211">11211</ulink>,
+          <ulink url="&lfs-rev-root;11212">11212</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170325,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11210">11210</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[matsuand] - lfs-bootscripts-YYYYMMDD.tar.bz2 を osdn.jp サイトから入手するように wget-list を修正。
+          SVN 開発途上時でも md5sum 値を正常に保つため。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-03-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170318,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11209">11209</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-03-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170311,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11205">11205</ulink> ～
+          <ulink url="&lfs-rev-root;11208">11208</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170308,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11202">11202</ulink> ～
+          <ulink url="&lfs-rev-root;11204">11204</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-03-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20170303,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11200">11200</ulink>,
+          <ulink url="&lfs-rev-root;11201">11201</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2017-02-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          LFS-8.0 リリース対応,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11174">11174</ulink> ～
+          <ulink url="&lfs-rev-root;11199">11199</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+  </itemizedlist>
+
+</sect1>
