@@ -179,6 +179,18 @@
 @z
 
 @x
+      On some combinations of kernel configuration and AMD processors
+      there may be more than 1100 failures in the gcc.target/i386/mpx
+      tests (which are designed to test the MPX option on recent
+      Intel processors). These can safely be ignored on AMD
+      processors.
+@y
+      カーネル設定の組み合わせにより、あるいは AMD プロセッサーを利用している場合に、gcc.target/i386/mpx に関するテストが 1100 個以上失敗します。
+      （これは最新の Intel プロセッサーにおいて MPX オプションをテストするものです。）
+      AMD プロセッサーを利用している場合は無視して構いません。
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
