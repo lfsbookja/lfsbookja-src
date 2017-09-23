@@ -149,13 +149,15 @@
 @z
 
 @x
-    <para>The test programs test-getlogin and date-debug are known to fail in a
+    <para>The test program test-getlogin is known to fail in a
     partially built system environment like the chroot environment here, but
-    pass if run at the end of this chapter.</para>
+    passes if run at the end of this chapter.  The test program tty.sh is
+    also known to fail.</para>
 @y
     <para>
-    test-getlogin と date-debug テストは、ここで行っている chroot 環境のようなビルド途上の環境では失敗します。
+    テストプログラム test-getlogin は、ここで行っている chroot 環境のようなビルド途上の環境では失敗します。
     しかし本章の最後に実行すれば成功します。
+    テストプログラム tty.sh は失敗します。
     </para>
 @z
 

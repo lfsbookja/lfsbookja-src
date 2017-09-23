@@ -54,6 +54,122 @@
 @z
 
 @x
+      <para>2017-09-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux 2.30.2.  Fixes
+          <ulink url="&lfs-ticket-root;4139">#4139</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.13.  Fixes
+          <ulink url="&lfs-ticket-root;4138">#4138</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-6.5.  Fixes
+          <ulink url="&lfs-ticket-root;4137">#4137</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpfr-3.1.6.  Fixes
+          <ulink url="&lfs-ticket-root;4136">#4136</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.13.0.  Fixes
+          <ulink url="&lfs-ticket-root;4135">#4135</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2.3.  Fixes
+          <ulink url="&lfs-ticket-root;4133">#4133</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.13.3.  Fixes
+          <ulink url="&lfs-ticket-root;4134">#4134</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-09-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - util-linux 2.30.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4139">#4139</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4138">#4138</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - texinfo-6.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4137">#4137</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpfr-3.1.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4136">#4136</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.13.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4135">#4135</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4133">#4133</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.13.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4134">#4134</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-09-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.32.  Fixes
+          <ulink url="&lfs-ticket-root;4132">#4132</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-8.28.  Fixes
+          <ulink url="&lfs-ticket-root;4131">#4131</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.43.6.  Fixes
+          <ulink url="&lfs-ticket-root;4130">#4130</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.2.4.  Fixes
+          <ulink url="&lfs-ticket-root;4127">#4127</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.12.10.  Fixes
+          <ulink url="&lfs-ticket-root;4126">#4126</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-09-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - file-5.32 へのアップデート。
+          <ulink url="&lfs-ticket-root;4132">#4132</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - coreutils-8.28 へのアップデート。
+          <ulink url="&lfs-ticket-root;4131">#4131</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.43.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4130">#4130</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.2.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4127">#4127</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.12.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4126">#4126</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-09-01</para>
       <itemizedlist>
         <listitem>
