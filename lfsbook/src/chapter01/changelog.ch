@@ -54,6 +54,81 @@
 @z
 
 @x
+      <para>2017-09-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Reorder packages in Chapter 6 so Python can use
+          gdbm.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Use upstream systemd tarball with meson build system and
+          supply only prebuilt man pages.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-09-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第 6 章にて Python が gdbm を利用できるように、パッケージ順を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - meson ビルドシステムを利用した systemd のアップストリームによる tarball を利用することに。
+          ただし man ページは事前生成したものを提供。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-09-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.26.1.  Fixes
+          <ulink url="&lfs-ticket-root;4141">#4141</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add Meson-0.42.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add Ninja-1.8.2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add Python-3.6.2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add libffi-3.2.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2.4.  Fixes
+          <ulink url="&lfs-ticket-root;4140">#4140</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-09-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - perl-5.26.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4141">#4141</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Meson-0.42.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Ninja-1.8.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.6.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libffi-3.2.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4140">#4140</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-09-22</para>
       <itemizedlist>
         <listitem>

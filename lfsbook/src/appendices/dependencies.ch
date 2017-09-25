@@ -953,6 +953,23 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Libffi dependency info -->
+@y
+<!-- Begin Libffi dependency info -->
+@z
+@x
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Libpipeline
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
          Make, Sed, and Texinfo</seg>
@@ -1117,7 +1134,32 @@
 @y
           <seg>なし</seg>
 @z
-
+%----------------------------------------------------------------------
+@x
+<!-- Begin Meson dependency info -->
+@y
+<!-- Begin Meson dependency info -->
+@z
+@x
+         <seg>Ninja and Python</seg>
+@y
+         <seg>Ninja, Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 %----------------------------------------------------------------------
 @x MPC
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
@@ -1192,6 +1234,27 @@
           <seg>なし</seg>
 @z
 
+%----------------------------------------------------------------------
+@x
+<!-- Begin Ninja dependency info -->
+@y
+<!-- Begin Ninja dependency info -->
+@z
+@x
+         <seg>Binutils, Coreutils, Gcc, Python</seg>
+@y
+         <seg>Binutils, Coreutils, Gcc, Python</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>Asciidoc, Doxygen, Emacs, and re2c</seg>
+@y
+          <seg>Asciidoc, Doxygen, Emacs, re2c</seg>
+@z
 %----------------------------------------------------------------------
 @x Patch
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed</seg>
@@ -1323,6 +1386,35 @@
           <seg>None</seg>
 @y
           <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x
+<!-- Begin Python dependency info -->
+@y
+<!-- Begin Python dependency info -->
+@z
+@x
+         <seg>Bash, Binutils, Coreutils, GCC, Gdbm, Gettext, Glibc, Grep, 
+         Libffi, Make, Ncurses, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Gdbm, Gettext, Glibc, Grep, 
+         Libffi, Make, Ncurses, Sed</seg>
+@z
+@x
+          <seg>GDB and Valgrind</seg>
+@y
+          <seg>GDB, Valgrind</seg>
+@z
+@x
+          <seg>Ninja</seg>
+@y
+          <seg>Ninja</seg>
+@z
+@x
+          <seg>Berkeley DB, OpenSSL, SQLite, and Tk</seg>
+@y
+          <seg>Berkeley DB, OpenSSL, SQLite, Tk</seg>
 @z
 
 %----------------------------------------------------------------------

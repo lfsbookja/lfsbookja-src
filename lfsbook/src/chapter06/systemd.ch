@@ -29,25 +29,10 @@
 @z
 
 @x
-    <para>Create a file to allow systemd to build when using Util-Linux
-    built in Chapter 5, to disable LTO by default, and to build without
-    xlstproc:</para>
+    <para>Create a symlink to work around missing xsltproc:</para>
 @y
     <para>
-    第5章にてビルドした Util-Linux を用いて systemd がビルドできるように、ファイルを一つ生成します。
-    これはデフォルトで LTO を無効とし、また xlstproc がなくてもビルドができるようにするものです。
-    </para>
-@z
-
-@x
-    <para>LTO is disabled by default because it causes
-    <command>systemd</command> and other auxiliary programs to link to
-    <filename class="libraryfile">libgcc_s.so</filename>, slows the build down
-    and makes the compiled code larger.</para>
-@y
-    <para>
-    LTO がデフォルトで無効化されているのは、<command>systemd</command> や関連プログラムが <filename
-    class="libraryfile">libgcc_s.so</filename> にリンクしているからであり、ビルドに時間を要し、またビルドされたコードがより大きくなってしまうためです。
+    xlstproc がなくてもビルドができるように、シンボリックリンクを生成します。
     </para>
 @z
 
@@ -58,22 +43,59 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+      <title>The meaning of the meson options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;meson&MeaningOfOption2;:</title>
 @z
 
-@x --config-cache
-          <para>This switch tells the build system to use
-          the <filename>config.cache</filename> file which
-          was created earlier.</para>
+@x -D*-path=*
+          <para>These switches provide location of binaries needed by
+          systemd at runtime that have not yet been installed, or who's
+          pkgconfig files are currently only in
+          <filename>/tools/lib/pkgconfig</filename>.</para>
 @y
           <para>
-          本スイッチは、先ほど作成した <filename>config.cache</filename> ファイルを使ってシステムをビルドすることを指示します。
+          各スイッチは systemd が実行時に必要としているバイナリであって、まだインストールされていないもの、
+          あるいはその pkcconfig ファイルが現時点にて <filename>/tools/lib/pkgconfig</filename> にしかないものに関して、
+          そのパスを指定します。
           </para>
 @z
 
-@x --with-root*
+@x -Ddefault-dnssec=no
+          <para>This switch turns off the experimental DNSSEC support.</para>
+@y
+          <para>
+          本スイッチは、実験的な DNSSEC サポートを無効にします。
+          </para>
+@z
+
+@x -Dfirstboot=false
+          <para>This switch prevents installation of systemd
+          services responsible for setting up the system for
+          the first time. They are not useful for LFS because
+          everything is done manually.</para>
+@y
+          <para>
+          本スイッチは、systemd サービスを、システムの初回構築用としてインストールしないようにします。
+          LFS ではすべて手作業で行うため、この機能が必要ないからです。
+          </para>
+@z
+
+@x -Dldconfig=no
+          <para>This switch prevents installation of a systemd
+          unit that runs <command>ldconfig</command> at
+          boot, making the boot time longer. Remove it if the
+          described feature is desired, even though it's not
+          useful for source distributions such as LFS.</para>
+@y
+          <para>
+          本スイッチは、システム起動時に <command>ldconfig</command> を実行するような systemd ユニットはインストールしないようにします。
+          <command>ldconfig</command> を実行すると、起動時間が長くなります。
+          LFS のようにソースから作り出すディストリビューションにとっては無用なものですが、もし必要であれば本スイッチを除いてください。
+          </para>
+@z
+
+@x -Droot*
           <para>These switches ensure that core programs and
           shared libraries are installed in the subdirectories
           of the root partition.</para>
@@ -83,54 +105,17 @@
           </para>
 @z
 
-@x --enable-split-usr
+@x -Dsplit-usr=true
           <para>This switch ensures that systemd will work on
           systems where /bin, /lib and /sbin directories are not
           symlinks to their /usr counterparts.</para>
 @y
           <para>
-          本スイッチは、/bin, /lib, /sbin の各ディレクトリが /usr 配下の同一サブディレクトリ名によるシンボリックリンクでない場合でも systemd が稼動するようにするものです。
+          本スイッチは、/bin、/lib、/sbin の各ディレクトリが /usr 配下の同一サブディレクトリ名によるシンボリックリンクでない場合でも systemd が稼動するようにするものです。
           </para>
 @z
 
-@x --without-python
-          <para>This switch prevents <command>configure</command>
-          from trying to use Python which isn't built
-          in LFS.</para>
-@y
-          <para>
-          このスイッチは <command>configure</command> が Python を利用しないようにします。
-          Python は LFS においてビルドしていないからです。
-          </para>
-@z
-
-@x --disable-firstboot
-          <para>This switch prevents installation of systemd
-          services responsible for setting up the system for
-          the first time. They are not useful for LFS because
-          everything is done manually.</para>
-@y
-          <para>
-          このスイッチは、システム起動初期にシステム設定を行う systemd サービスをインストールしないようにします。
-          LFS ではすべてを手作業で設定していくためです。
-          </para>
-@z
-
-@x --disable-ldconfig
-          <para>This switch prevents installation of a systemd
-          unit that runs <command>ldconfig</command> at
-          boot, making the boot time longer. Remove it if the
-          described feature is desired, even though it's not
-          useful for source distributions such as LFS.</para>
-@y
-          <para>
-          このスイッチは、ブート時に <command>ldconfig</command> を実行する systemd ユニットをインストールしないようにします。
-          これがあるとブート処理に時間もかかります。
-          LFS のようにソースから作り出すディストリビューションにとっては無用なものですが、もし必要であれば本スイッチを除いてください。
-          </para>
-@z
-
-@x --disable-sysusers
+@x -Dsysusers=false
           <para>This switch prevents installation of systemd
           services responsible for setting up the
           <filename>/etc/group</filename> and
@@ -138,17 +123,32 @@
           were created early in this chapter.</para>
 @y
           <para>
-          このスイッチは、システム起動初期に <filename>/etc/group</filename> ファイルと
+          本スイッチは、システム起動初期に <filename>/etc/group</filename> ファイルと
           <filename>/etc/passwd</filename> ファイルを設定する systemd サービスをインストールしないようにします。
           この二つのファイルは本章にて生成済です。
           </para>
 @z
 
-@x --with-default-dnssec=no
-          <para>This switch turns off the experimental DNSSEC support.</para>
+@x -Dc_link_args="-lblkid -lmount"
+          <para>This switch manually adds libblkid and libmount to the
+          linker flags as they only exist in <filename>/tools/lib</filename>
+          until <application>Util-Linux</application> is installed later in
+          this chapter.</para>
 @y
           <para>
-          このスイッチは DNSSEC に関する実験的なサポートを無効にします。
+          本スイッチは libblkid と libmount に対してリンカーフラグをつけます。
+          このライブラリは <filename>/tools/lib</filename> にだけ存在していて、本章での <application>Util-Linux</application> の作業時に改めてインストールされます。
+          </para>
+@z
+
+@x -Dc_args="-I/tools/include/blkid -I/tools/include/libmount"
+          <para>This switch manually adds the include paths for libblkid and
+          libmount to the CFLAGS variable as the packages are not yet installed
+          in the final system.</para>
+@y
+          <para>
+          本スイッチは libblkid と libmount に対するインクルードパスを CFLAGS 変数に加えます。
+          各パッケージはまだインストールされていないためです。
           </para>
 @z
 
@@ -159,11 +159,10 @@
 @z
 
 @x
-    <para>This package has a test suite, but it can only be run after the
-    package has been reinstalled in BLFS.</para>
+    <para>To test the package, execute the following command:</para>
 @y
     <para>
-    このパッケージにテストスイートはありますが、BLFS においてパッケージを再インストールした後でなければ実行することはできません。
+    パッケージをテストする場合は、以下のコマンドを実行します。
     </para>
 @z
 
@@ -171,14 +170,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Move the NSS libraries to <filename class="directory">/lib</filename>:</para>
-@y
-    <para>
-    NSS ライブラリを <filename class="directory">/lib</filename> へ移動します。
-    </para>
 @z
 
 @x
@@ -196,6 +187,14 @@
     <para>
     Sysvinit と互換性のあるシンボリックリンクを生成します。
     これにより systemd がデフォルトの init システムとして用いられるようになります。
+    </para>
+@z
+
+@x
+    <para>Remove our earlier created symlink for xsltproc:</para>
+@y
+    <para>
+    上で作り出していた xlstproc に対するシンボリックリンクを削除します。
     </para>
 @z
 

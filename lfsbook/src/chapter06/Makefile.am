@@ -53,6 +53,7 @@ CHANGE_FILES = \
 	kmod.ch              \
 	less.ch              \
         libcap.ch            \
+	libffi.ch            \
 	libpipeline.ch       \
 	libtool.ch           \
 	linux-headers.ch     \
@@ -60,10 +61,12 @@ CHANGE_FILES = \
 	make.ch              \
 	man-db.ch            \
 	man-pages.ch         \
+	meson.ch             \
 	module-init-tools.ch \
 	mpc.ch               \
 	mpfr.ch              \
 	ncurses.ch           \
+	ninja.ch             \
 	patch.ch             \
 	perl.ch              \
 	pkgconfig.ch         \
@@ -71,6 +74,7 @@ CHANGE_FILES = \
 	popt.ch              \
 	procps.ch            \
 	psmisc.ch            \
+	python.ch            \
 	readline.ch          \
 	revisedchroot.ch     \
 	sed.ch               \
