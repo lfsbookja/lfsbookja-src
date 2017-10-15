@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2017-10-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bash-4.4.12.  Fixes
+          <ulink url="&lfs-ticket-root;4149">#4149</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.43.0.  Fixes
+          <ulink url="&lfs-ticket-root;4148">#4148</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to python3-3.6.3.  Fixes
+          <ulink url="&lfs-ticket-root;4146">#4146</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.13.7.  Fixes
+          <ulink url="&lfs-ticket-root;4144">#4144</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.29.1.  Fixes
+          <ulink url="&lfs-ticket-root;4142">#4142</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-10-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash-4.4.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4149">#4149</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.43.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4148">#4148</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - python3-3.6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4146">#4146</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.13.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4144">#4144</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.29.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4142">#4142</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-09-24</para>
       <itemizedlist>
         <listitem>
