@@ -208,6 +208,17 @@
 @z
 
 @x
+    <para>Create the <filename>/lib/systemd/systemd-user-sessions</filename>
+    script to allow unprivileged user logins without
+    <application>systemd-logind</application>:</para>
+@y
+    <para>
+    <filename>/lib/systemd/systemd-user-sessions</filename> を生成します。
+    これにより、<application>systemd-logind</application> がなくても、一般ユーザーがログインできるようにします。
+    </para>
+@z
+
+@x
     <title>Contents of systemd</title>
 @y
     <title>&ContentsOf1;systemd&ContentsOf2;</title>

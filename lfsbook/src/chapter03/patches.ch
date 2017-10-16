@@ -83,6 +83,12 @@
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @z
 
+@x Ninja Limit Jobs Patch
+        <para>Download: <ulink url="&patches-root;&ninja-limit-jobs-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&ninja-limit-jobs-patch;"/></para>
+@z
+
 @x Readline Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
 @y

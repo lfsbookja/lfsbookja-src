@@ -606,12 +606,12 @@
 @z
 
 @x
-          <para>The Linux From Scratch systemd team generates its own tarball
-          of the man pages using the systemd source. This is done in order to
-          avoid unnecessary dependencies.</para>
+          <para>The Linux From Scratch team generates its own tarball of the
+          man pages using the systemd source. This is done in order to avoid
+          unnecessary dependencies.</para>
 @y
           <para>
-          Linux From Scratch の systemd チームは、systemd ソースにおいて提供される man ページの tarball を独自に生成しています。
+          Linux From Scratch チームは、systemd ソースにおいて提供される man ページの tarball を独自に生成しています。
           これは、不要な依存関係を取り除くためです。
           </para>
 @z

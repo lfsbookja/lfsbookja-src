@@ -28,15 +28,59 @@
 @z
 
 @x
-    <para>Prepare Ninja for compilation:</para>
+    <para>When run, ninja normally runs a maximum number of processes
+    in parallel.  By default this is the number of cores on the system 
+    plus two.  In some cases this can overheat a CPU or run a system out
+    of memory.  If run from the command line, passing a -jN parameter
+    will limit the number of parallel processes, but some packages
+    embed the execution of ninja and do not pass a -j parameter.</para>
 @y
-    <para>&PreparePackage1;Ninja&PreparePackage2;:</para>
+    <para>
+    ninja は同時に最大数のプロセスにより処理実行します。
+    そのプロセス数はデフォルトでは、システムのコア数に 2 を加えたものとなります。
+    このことが CPU をオーバーヒートさせたり、out of memory を引き起こす場合があります。
+    コマンドラインから実行する場合には -jN パラメーターを使って、並行プロセスの数を制御することもできます。
+    ただ ninja の実行を組み込んでいるパッケージの場合は -j パラメーターを与えることができません。
+    </para>
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+    <para>Using the <emphasis>optional</emphasis> patch below allows a user to
+    limit the number of parallel processes via an environment variable, 
+    NINJAJOBS.  <command>For example</command> setting:
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+    <para>
+    以降に示す <emphasis>任意</emphasis> のパッチを用いると、並行プロセス数を環境変数 NINJAJOBS から制御できるようになります。
+    例えば以下のように設定します。
+@z
+
+@x
+    will limit ninja to four parallel processes.</para>
+@y
+    こうすると ninja の並行プロセスを 4 つに制限できます。
+    </para>
+@z
+
+@x
+    <para>If desired, install the patch by running:</para>
+@y
+    <para>
+    必要な場合はこのパッチを適用します。
+    </para>
+@z
+
+@x
+    <para>Build Ninja with:</para>
+@y
+    <para>
+    以下を実行して ninja をビルドします。
+    </para>
+@z
+
+@x
+      <title>The meaning of the build option:</title>
+@y
+      <title>&MeaningOfOption1;build&MeaningOfOption2;:</title>
 @z
 
 @x --bootstrap

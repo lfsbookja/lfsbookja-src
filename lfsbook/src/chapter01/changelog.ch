@@ -54,7 +54,49 @@
 @z
 
 @x
-      <para>2017-10-24</para>
+      <para>2017-10-15</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[dj] - Update to D-Bus-1.10.24. Fixes
+          <ulink url="&lfs-ticket-root;4143">#4143</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Update to Systemd-235.  Fixes
+          <ulink url="&lfs-ticket-root;4147">#4147</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Create a simple replacement for
+          <filename>/lib/systemd/systemd-user-sessions</filename>, to enable
+          uprivileged user logins without
+          <application>systemd-logind</application>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add optional patch to ninja.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-10-15</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[dj] - D-Bus-1.10.24 へのアップデート。
+          <ulink url="&lfs-ticket-root;4143">#4143</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Systemd-235 へのアップデート。
+          <ulink url="&lfs-ticket-root;4147">#4147</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - <filename>/lib/systemd/systemd-user-sessions</filename> の単純な代替スクリプトを生成。
+          <application>systemd-logind</application> がなくても一般ユーザーがログインできるように。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ninja に任意のパッチ追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-10-14</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to bash-4.4.12.  Fixes
@@ -78,7 +120,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>2017-10-24</para>
+      <para>2017-10-14</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - bash-4.4.12 へのアップデート。
