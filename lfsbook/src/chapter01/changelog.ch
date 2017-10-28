@@ -54,6 +54,23 @@
 @z
 
 @x
+      <para>2017-10-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update rule in 83-cdrom-symlinks.rules
+          in udev-lfs tarball.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-10-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - udev-lfs tarball 内の 83-cdrom-symlinks.rules を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-10-20</para>
       <itemizedlist>
         <listitem>
