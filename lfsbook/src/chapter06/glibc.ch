@@ -266,7 +266,7 @@
 @z
 
 @x
-    <para>Fix the generated Makefile to skip an uneeded sanity check
+    <para>Fix the generated Makefile to skip an unneeded sanity check
     that fails in the LFS partial environment:
     </para>
 @y

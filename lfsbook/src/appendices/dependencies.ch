@@ -1459,6 +1459,11 @@
 @y
           <seg>E2fsprogs, File, Libtool, Shadow</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Shadow
