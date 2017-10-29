@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2017-10-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2017c.  Fixes
+          <ulink url="&lfs-ticket-root;4159">#4159</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.13.10.  Fixes
+          <ulink url="&lfs-ticket-root;4158">#4158</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to check-0.12.0.  Fixes
+          <ulink url="&lfs-ticket-root;4156">#4155</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-10-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata-2017c へのアップデート。
+          <ulink url="&lfs-ticket-root;4159">#4159</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.13.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4158">#4158</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - check-0.12.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4156">#4155</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-10-27</para>
       <itemizedlist>
         <listitem>
