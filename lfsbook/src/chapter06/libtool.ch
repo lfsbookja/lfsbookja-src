@@ -49,7 +49,7 @@
 @z
 
 @x
-    <note><para>The test time for libtool can ibe reduced significantly on a
+    <note><para>The test time for libtool can be reduced significantly on a
     system with multiple cores.  To do this, append
     <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> to the line above.  For
     instance, using -j4 can reduce the test time by over 60

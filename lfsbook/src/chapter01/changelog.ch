@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2017-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to linux-4.13.11.  Fixes
+          <ulink url="&lfs-ticket-root;4162">#4162</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to expat-2.2.5. Fixes
+          <ulink url="&lfs-ticket-root;4161">#4161</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Update to dbus-1.12.0.  Fixes
+          <ulink url="&lfs-ticket-root;4160">#4160</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - linux-4.13.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4162">#4162</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - expat-2.2.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4161">#4161</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - dbus-1.12.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4160">#4160</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-10-28</para>
       <itemizedlist>
         <listitem>
