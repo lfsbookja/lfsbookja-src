@@ -33,7 +33,7 @@
     LFS ブック日本語版の変更履歴を示すために設けています。
    </para>
    <para>
-   「SVN-20150123」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
+   「SVN-20170123」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
    また「チェンジセット 12345」という表記は、オリジナル XML ソースファイルの Subversion 管理下でのリビジョン (その参照ページ) を意味します。
    </para>
   </note>
@@ -57,12 +57,27 @@
 
 -->
 
+   <listitem revision="systemd">
+      <para>2017-11-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          20171108-systemd,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11325">11325</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
    <listitem>
       <para>2017-11-06</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20171106,
+          <phrase revision="sysv">SVN-20171106</phrase>
+          <phrase revision="systemd">20171106-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11320">11320</ulink> ～
           <ulink url="&lfs-rev-root;11324">11324</ulink>
@@ -77,7 +92,8 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20171028,
+          <phrase revision="sysv">SVN-20171028</phrase>
+          <phrase revision="systemd">20171028-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11319">11319</ulink>
           対応。
@@ -91,7 +107,8 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20171027,
+          <phrase revision="sysv">SVN-20171027</phrase>
+          <phrase revision="systemd">20171027-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11317">11317</ulink>,
           <ulink url="&lfs-rev-root;11318">11318</ulink>
@@ -106,7 +123,8 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20171020,
+          <phrase revision="sysv">SVN-20171020</phrase>
+          <phrase revision="systemd">20171020-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11313">11313</ulink> ～
           <ulink url="&lfs-rev-root;11316">11316</ulink>
@@ -121,7 +139,8 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20171015,
+          <phrase revision="sysv">SVN-20171015</phrase>
+          <phrase revision="systemd">20171015-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11311">11311</ulink>,
           <ulink url="&lfs-rev-root;11312">11312</ulink>
@@ -136,7 +155,8 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20171014,
+          <phrase revision="sysv">SVN-20171014</phrase>
+          <phrase revision="systemd">20171014-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11309">11309</ulink>,
           <ulink url="&lfs-rev-root;11310">11310</ulink>
@@ -151,7 +171,8 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20170924,
+          <phrase revision="sysv">SVN-20170924</phrase>
+          <phrase revision="systemd">20170924-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11306">11306</ulink> ～
           <ulink url="&lfs-rev-root;11308">11308</ulink>
@@ -166,7 +187,8 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20170923,
+          <phrase revision="sysv">SVN-20170923</phrase>
+          <phrase revision="systemd">20170923-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11303">11303</ulink> ～
           <ulink url="&lfs-rev-root;11305">11305</ulink>
@@ -181,7 +203,8 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20170922,
+          <phrase revision="sysv">SVN-20170922</phrase>
+          <phrase revision="systemd">20170922-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;11300">11300</ulink> ～
           <ulink url="&lfs-rev-root;11302">11302</ulink>

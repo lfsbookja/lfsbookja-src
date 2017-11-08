@@ -15,9 +15,9 @@
 @z
 
 @x
-<!ENTITY versiond        "20171106-systemd">
+<!ENTITY versiond        "20171108-systemd">
 @y
-<!ENTITY versiond        "20171106-systemd">
+<!ENTITY versiond        "20171108-systemd">
 @z
 
 @x
@@ -25,7 +25,7 @@
 @y
 <!ENTITY releasedate     "2017年11月6日">
 <!ENTITY jversion        "20171106">
-<!ENTITY jversiond       "20171106">
+<!ENTITY jversiond       "20171108">
 <!ENTITY dir-jversion    "svn-ja">
 <!ENTITY dir-jversiond   "svn-sysdja">
 @z

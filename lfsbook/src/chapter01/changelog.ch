@@ -54,6 +54,25 @@
 @z
 
 @x
+      <para>2017-11-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Remove invalid links to util-linux static archives in
+          <filename class="directory">/tools/lib</filename>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-11-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - util-linux にて 
+          <filename class="directory">/tools/lib</filename>
+          にあるスタティックライブラリへのリンクが誤っていたので削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-11-06</para>
       <itemizedlist>
         <listitem>
