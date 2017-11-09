@@ -60,6 +60,14 @@
 @z
 
 @x
+    <para revision="systemd">Remove the earlier created symlinks:</para>
+@y
+    <para revision="systemd">
+    以前に作成していたシンボリックリンクを削除します。
+    </para>
+@z
+
+@x
     <para>Prepare Util-linux for compilation:</para>
 @y
     <para>&PreparePackage1;Util-linux&PreparePackage2;</para>

@@ -50,7 +50,31 @@
 @x
     <title>Changelog Entries:</title>
 @y
-    <title>変更履歴：</title>
+    <title>変更履歴</title>
+@z
+
+@x
+      <para>2017-11-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Create additional symlinks to simplify build of systemd
+          and remove text references to
+          <filename class="directory">/tools/include</filename>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+@y
+      <para>2017-11-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - シンボリックリンクを追加することで、systemd のビルドを簡略化し <filename
+          class="directory">/tools/include</filename> への参照を取り除く。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
 @z
 
 @x

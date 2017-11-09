@@ -129,28 +129,28 @@
           </para>
 @z
 
-@x -Dc_link_args="-lblkid -lmount"
-          <para>This switch manually adds libblkid and libmount to the
-          linker flags as they only exist in <filename>/tools/lib</filename>
-          until <application>Util-Linux</application> is installed later in
-          this chapter.</para>
-@y
-          <para>
-          本スイッチは libblkid と libmount に対してリンカーフラグをつけます。
-          このライブラリは <filename>/tools/lib</filename> にだけ存在していて、本章での <application>Util-Linux</application> の作業時に改めてインストールされます。
-          </para>
-@z
+% @x -Dc_link_args="-lblkid -lmount"
+%           <para>This switch manually adds libblkid and libmount to the
+%           linker flags as they only exist in <filename>/tools/lib</filename>
+%           until <application>Util-Linux</application> is installed later in
+%           this chapter.</para>
+% @y
+%           <para>
+%           本スイッチは libblkid と libmount に対してリンカーフラグをつけます。
+%           このライブラリは <filename>/tools/lib</filename> にだけ存在していて、本章での <application>Util-Linux</application> の作業時に改めてインストールされます。
+%           </para>
+% @z
 
-@x -Dc_args="-I/tools/include/blkid -I/tools/include/libmount"
-          <para>This switch manually adds the include paths for libblkid and
-          libmount to the CFLAGS variable as the packages are not yet installed
-          in the final system.</para>
-@y
-          <para>
-          本スイッチは libblkid と libmount に対するインクルードパスを CFLAGS 変数に加えます。
-          各パッケージはまだインストールされていないためです。
-          </para>
-@z
+% @x -Dc_args="-I/tools/include/blkid -I/tools/include/libmount"
+%           <para>This switch manually adds the include paths for libblkid and
+%           libmount to the CFLAGS variable as the packages are not yet installed
+%           in the final system.</para>
+% @y
+%           <para>
+%           本スイッチは libblkid と libmount に対するインクルードパスを CFLAGS 変数に加えます。
+%           各パッケージはまだインストールされていないためです。
+%           </para>
+% @z
 
 @x
     <para>Compile the package:</para>

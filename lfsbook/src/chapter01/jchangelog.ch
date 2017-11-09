@@ -39,7 +39,7 @@
   </note>
 
   <itemizedlist>
-    <title>変更履歴：</title>
+    <title>変更履歴</title>
 
 <!-- Changelog template
 
@@ -56,6 +56,22 @@
     </listitem>
 
 -->
+
+   <listitem>
+      <para>2017-11-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          <phrase revision="sysv">SVN-20171109</phrase>
+          <phrase revision="systemd">20171109-systemd</phrase>,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11325">11325</ulink> ～
+          <ulink url="&lfs-rev-root;11327">11327</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
 
    <listitem revision="systemd">
       <para>2017-11-08</para>
