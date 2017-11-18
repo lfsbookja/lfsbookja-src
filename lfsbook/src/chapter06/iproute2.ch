@@ -31,9 +31,9 @@
 @x
     <para>The <command>arpd</command> program included in this package will not
     be built since it is dependent on Berkeley DB, which is not installed in
-    LFS. However, documentation files and a directory for
-    <command>arpd</command> will still be installed. Prevent this by running
-    the commands below. If the <command>arpd</command> binary is needed,
+    LFS. However, a directory for <command>arpd</command> and a man page will still 
+    be installed. Prevent this by running the commands below. 
+    If the <command>arpd</command> binary is needed,
     instructions for compiling Berkeley DB can be found in the BLFS Book at
     <ulink url="&blfs-book;server/databases.html#db"/>.
     </para>
@@ -41,7 +41,7 @@
     <para>
     本パッケージにて提供している <command>arpd</command> プログラムは LFS では取り扱わない Berkeley DB に依存しています。
     したがって <command>arpd</command> プログラムはインストールしません。
-    ただし <command>arpd</command> プログラムに対応するドキュメントファイルやディレクトリはインストールされてしまいます。
+    ただし <command>arpd</command> プログラムに対応するディレクトリや man ページはインストールされてしまいます。
     これをインストールしないように、以下のコマンドを実行します。
     <command>arpd</command> プログラムを必要とする場合は BLFS ブックの <ulink
     url="&blfs-book;server/databases.html#db"/> に示される Berkeley DB の構築手順に従ってください。

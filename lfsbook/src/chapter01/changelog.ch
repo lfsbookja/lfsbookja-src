@@ -54,6 +54,66 @@
 @z
 
 @x
+      <para>2017-11-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.5.0.  Fixes
+          <ulink url="&lfs-ticket-root;4167">#4167</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to dbus-1.12.2.  Fixes
+          <ulink url="&lfs-ticket-root;4166">#4166</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.14.1.  Fixes
+          <ulink url="&lfs-ticket-root;4164">#4164</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.14.  Fixes
+          <ulink url="&lfs-ticket-root;4165">#4165</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-11-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.5.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4167">#4167</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - dbus-1.12.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4166">#4166</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.14.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4164">#4164</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;4165">#4165</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-11-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to linux-4.13.12.  Fixes
+          <ulink url="&lfs-ticket-root;4163">#4163</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-11-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - linux-4.13.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4163">#4163</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-11-09</para>
       <itemizedlist>
         <listitem>

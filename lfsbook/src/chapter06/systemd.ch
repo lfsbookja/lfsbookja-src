@@ -37,6 +37,12 @@
 @z
 
 @x
+    <para>Set up the man pages:</para>
+@y
+    <para>man ページの準備をします。</para>
+@z
+
+@x
     <para>Prepare systemd for compilation:</para>
 @y
     <para>&PreparePackage1;systemd&PreparePackage2;</para>
