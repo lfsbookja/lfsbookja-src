@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2017-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.14.  Fixes
+          <ulink url="&lfs-ticket-root;4170">#4170</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2.5.  Fixes
+          <ulink url="&lfs-ticket-root;4169">#4169</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.14.3.  Fixes
+          <ulink url="&lfs-ticket-root;4168">#4168</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;4170">#4170</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4169">#4169</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.14.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4168">#4168</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-11-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Prevent installation of unneeded gawk files.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-11-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gawk の不要ファイルをインストールしないように。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-11-17</para>
       <itemizedlist>
         <listitem>
