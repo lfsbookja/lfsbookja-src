@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2017-12-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update tar-1.30.  Fixes
+          <ulink url="&lfs-ticket-root;4175">#4175</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update meson-0.44.0.  Fixes
+          <ulink url="&lfs-ticket-root;4173">#4173</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-236.  Fixes
+          <ulink url="&lfs-ticket-root;4174">#4174</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.14.6.  Fixes
+          <ulink url="&lfs-ticket-root;4171">#4171</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-12-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tar-1.30 へのアップデート。
+          <ulink url="&lfs-ticket-root;4175">#4175</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.44.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4173">#4173</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-236 へのアップデート。
+          <ulink url="&lfs-ticket-root;4174">#4174</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.14.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4171">#4171</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-12-03</para>
       <itemizedlist>
         <listitem>

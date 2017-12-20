@@ -76,7 +76,7 @@
 @z
 
 @x
-  <para>Finally, there were several static libraries that were not suppressed earlier
+  <para>There were several static libraries that were not suppressed earlier
   in the chapter in order to satisfy the regression tests in several packages. These 
   libraries are from binutils, bzip2, e2fsprogs, flex, libtool, and zlib.  If desired,
   remove them now:</para>
@@ -86,4 +86,27 @@
   これは binutils, bzip2, e2fsprogs, flex, libtool, zlib から作られたものです。
   もし不要なら以下により削除します。
   </para>
+@z
+
+@x
+  <para>There are also several files installed in the /usr/lib directory with a
+  file name extention of .la.  These are "libtool archive" files and generally
+  unneeded on a linux system.  None of these are necessary at this point.  To
+  remove them, run: 
+@y
+  <para>
+  また /usr/lib ディレクトリには、拡張子が .la であるようなファイルがいくつかインストールされます。
+  これは "libtool アーカイブ" ファイルというものであり、linux システムにとっては普通不要です。
+  そしてこの時点において必要になるものは 1 つもありません。
+  削除する場合は以下を実行します。
+@z
+
+@x
+   For more information about libtool archive files, see the <ulink
+   url="&blfs-book;/introduction/la-files.html">BLFS section "About Libtool
+   Archive (.la) files"</ulink>.
+@y
+   libtool アーカイブファイルについての詳細は <ulink
+   url="&blfs-book;/introduction/la-files.html">BLFS の節 "About Libtool
+   Archive (.la) files"</ulink> を参照してください。
 @z
