@@ -54,6 +54,30 @@
 @z
 
 @x
+      <para>2017-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to util-linux-2.31.1.  Fixes
+          <ulink url="&lfs-ticket-root;4176">#4176</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Correct build issue with systemd-236 tests.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - util-linux-2.31.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4176">#4176</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - systemd-236 のテストに関してのビルド問題を適正化。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-12-19</para>
       <itemizedlist>
         <listitem>
@@ -64,7 +88,7 @@
           <para>[bdubbs] - Update meson-0.44.0.  Fixes
           <ulink url="&lfs-ticket-root;4173">#4173</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision="systemd">
           <para>[bdubbs] - Update to systemd-236.  Fixes
           <ulink url="&lfs-ticket-root;4174">#4174</ulink>.</para>
         </listitem>
@@ -84,7 +108,7 @@
           <para>[bdubbs] - meson-0.44.0 へのアップデート。
           <ulink url="&lfs-ticket-root;4173">#4173</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision="systemd">
           <para>[bdubbs] - systemd-236 へのアップデート。
           <ulink url="&lfs-ticket-root;4174">#4174</ulink> を Fix に。</para>
         </listitem>
@@ -102,7 +126,7 @@
           <para>[bdubbs] - Update to man-pages-4.14.  Fixes
           <ulink url="&lfs-ticket-root;4170">#4170</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - Update to eudev-3.2.5.  Fixes
           <ulink url="&lfs-ticket-root;4169">#4169</ulink>.</para>
         </listitem>
@@ -118,7 +142,7 @@
           <para>[bdubbs] - man-pages-4.14 へのアップデート。
           <ulink url="&lfs-ticket-root;4170">#4170</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - eudev-3.2.5 へのアップデート。
           <ulink url="&lfs-ticket-root;4169">#4169</ulink> を Fix に。</para>
         </listitem>
@@ -152,7 +176,7 @@
           <para>[bdubbs] - Update to libpipeline-1.5.0.  Fixes
           <ulink url="&lfs-ticket-root;4167">#4167</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision="systemd">
           <para>[bdubbs] - Update to dbus-1.12.2.  Fixes
           <ulink url="&lfs-ticket-root;4166">#4166</ulink>.</para>
         </listitem>
@@ -172,7 +196,7 @@
           <para>[bdubbs] - libpipeline-1.5.0 へのアップデート。
           <ulink url="&lfs-ticket-root;4167">#4167</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision="systemd">
           <para>[bdubbs] - dbus-1.12.2 へのアップデート。
           <ulink url="&lfs-ticket-root;4166">#4166</ulink> を Fix に。</para>
         </listitem>

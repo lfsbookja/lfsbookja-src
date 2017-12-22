@@ -43,6 +43,25 @@
 @z
 
 @x
+    <para>Remove tests that cannot be built in chroot:</para>
+@y
+    <para>
+    chroot 環境ではビルドできないテストを削除します。
+    </para>
+@z
+
+@x
+    <para>Remove an unneeded group,
+    <systemitem class="groupname">render</systemitem>, from the default udev
+    rules:</para>
+@y
+    <para>
+    デフォルトの udev ルールから、不要なグループ <systemitem
+    class="groupname">render</systemitem> を削除します。
+    </para>
+@z
+
+@x
     <para>Prepare systemd for compilation:</para>
 @y
     <para>&PreparePackage1;systemd&PreparePackage2;</para>
@@ -84,6 +103,14 @@
           <para>
           本スイッチは、systemd サービスを、システムの初回構築用としてインストールしないようにします。
           LFS ではすべて手作業で行うため、この機能が必要ないからです。
+          </para>
+@z
+
+@x -Dinstall-tests=false
+          <para>This switch prevents installation of the compiled tests.</para>
+@y
+          <para>
+          本スイッチはコンパイルされたテストをインストールしないようにします。
           </para>
 @z
 
@@ -134,29 +161,6 @@
           この二つのファイルは本章にて生成済です。
           </para>
 @z
-
-% @x -Dc_link_args="-lblkid -lmount"
-%           <para>This switch manually adds libblkid and libmount to the
-%           linker flags as they only exist in <filename>/tools/lib</filename>
-%           until <application>Util-Linux</application> is installed later in
-%           this chapter.</para>
-% @y
-%           <para>
-%           本スイッチは libblkid と libmount に対してリンカーフラグをつけます。
-%           このライブラリは <filename>/tools/lib</filename> にだけ存在していて、本章での <application>Util-Linux</application> の作業時に改めてインストールされます。
-%           </para>
-% @z
-
-% @x -Dc_args="-I/tools/include/blkid -I/tools/include/libmount"
-%           <para>This switch manually adds the include paths for libblkid and
-%           libmount to the CFLAGS variable as the packages are not yet installed
-%           in the final system.</para>
-% @y
-%           <para>
-%           本スイッチは libblkid と libmount に対するインクルードパスを CFLAGS 変数に加えます。
-%           各パッケージはまだインストールされていないためです。
-%           </para>
-% @z
 
 @x
     <para>Compile the package:</para>
