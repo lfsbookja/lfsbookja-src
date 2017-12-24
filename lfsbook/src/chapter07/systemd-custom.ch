@@ -95,14 +95,24 @@
 @z
 
 @x
-    <para>This is not necessary if there is a separate partition for
-    <filename class="directory">/tmp</filename> specified in
-    <filename>/etc/fstab</filename>.</para>
+    <para>Alternatively, if a a separate partition for
+    <filename class="directory">/tmp</filename> is desired, specify that 
+    partition in an <filename>/etc/fstab</filename> entry.</para>
 @y
     <para>
-    <filename>/etc/fstab</filename> ファイルにて <filename
-    class="directory">/tmp</filename> が別パーティションに割り当てられているなら、上の設定は不要です。
+    それとは別に <filename
+    class="directory">/tmp</filename> を別パーティションとする場合は、<filename>/etc/fstab</filename> にそのパーティションを指定します。
     </para>
+@z
+
+@x
+        Do not create the symbolic link above if a separate partition is used
+        for <filename class="directory">/tmp</filename>.  This will prvent the
+        root file system (/) from being remounted r/w and make the system
+        unusable when booted.
+@y
+        <filename class="directory">/tmp</filename> を別パーティションとした場合、このパーティションに対してシンボリックリンクを作成することは避けてください。
+        これを行ってしまうと、ルートファイルシステム（/）を r/w として再マウントすることができなくなり、システムを再起動すると利用できなくなります。
 @z
 
 @x
@@ -138,6 +148,42 @@
     class="directory">/usr/lib/tmpfiles.d</filename> にある同名ファイルによりオーバーライドされます。
     ファイル書式の詳細については man ページ <filename>tmpfiles.d(5)</filename> を参照してください。
     </para>
+@z
+
+@x
+      Note that the syntax for the
+      <filename>/usr/lib/tmpfiles.d/*.conf</filename> files can be 
+      confusing.  For example, the default deletion of files in the /tmp directory
+      is located in <filename>/usr/lib/tmpfiles.d/tmp.conf</filename> with 
+      the line:
+@y
+      <filename>/usr/lib/tmpfiles.d/*.conf</filename> ファイルの文法はやっかいなものです。
+      例えば /tmp ディレクトリ内のファイルを消去するためのデフォルト設定は <filename>/usr/lib/tmpfiles.d/tmp.conf</filename> ファイルに以下のように記述されます。
+@z
+
+@x
+      The type field, q, discusses creating a subvolume with quotas which
+      is really only applicable to btrfs filesystems.  It references type v
+      which in turn references type d (directory). This then creates the
+      specified directory if is is not present and adjusts the permissions
+      and ownership as specified.  Contents of the directory will be
+      subject to time based cleanup if the age argument is specified.
+@y
+      型を表わす q はクォータを用いたサブボリュームを生成するものとして説明されています。
+      ただこれが適用できるのは btrfs ファイルシステムのみです。
+      この型は v を参照し、次に d（ディレクトリ）を参照します。
+      指定されたディレクトリが存在しない場合はそれが生成されて、パーミッションと所有者が指定されたものに設定されます。
+      時間指定が行われた場合、そのディレクトリ内のファイルは、それに応じて削除されます。
+@z
+
+@x
+      If the default parameters are not desired, then the file should
+      be copied to <filename class="directory">/etc/tmpfiles.d</filename>
+      and edited as desired.  For example:
+@y
+      デフォルトパラーメーターを必要としない場合は、設定ファイルを <filename
+      class="directory">/etc/tmpfiles.d</filename> にコピーして必要な設定を行っておきます。
+      例えば以下です。
 @z
 
 @x

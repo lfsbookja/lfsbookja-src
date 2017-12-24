@@ -97,16 +97,70 @@
 @z
 
 @x
-    <note><para>Udev may assign network card interface names based
-    on system physical characteristics such as enp2s1. If you are
-    not sure what your interface name is, you can always run
-    <command>ip link</command> after you have booted your system.
-    </para></note>
+      <title>Network Device Naming</title>
 @y
-    <note><para>
-    Udev は、システムの物理的な特性に従った enp2s1 などのような名称をネットワークカードインターフェースに割り当てます。
-    インタフェース名がよく分からない場合は、システム起動直後に <command>ip link</command> を実行して確認してください。
-    </para></note>
+      <title>ネットワークデバイスの命名</title>
+@z
+
+@x
+        Udev normally assigns network card interface names based
+        on system physical characteristics such as enp2s1. If you are
+        not sure what your interface name is, you can always run
+        <command>ip link</command> after you have booted your system.
+@y
+        通常 Udev は、システムの物理的な特性に従った enp2s1 などのような名称をネットワークカードインターフェースに割り当てます。
+        インタフェース名が分からない場合は、システム起動直後に <command>ip link</command> を実行して確認してください。
+@z
+
+@x
+        For most systems, there is only one network interface for
+        each type of connection.  For example, the classic interface
+        name for a wired connection is eth0.  A wireless connection
+        will usually have the name wifi0 or wlan0. 
+@y
+        システムにおいて、接続タイプに応じたネットワークインターフェースは、それぞれに 1 つであるのが通常です。
+        例えば有線接続のインターフェース名は、従来より eth0 とされます。
+        また無線接続の場合は wifi0 や wlan0 といった名前が用いられます。
+@z
+
+@x
+        If you prefer to use the classic or customized network interface names,
+        there are three alternative ways to do that:</para>
+@y
+        ネットワークインターフェース名を従来どおりとしたり、カスタマイズしたりするには、以下に示す 3 通りの方法があります。
+        </para>
+@z
+
+@x
+            Mask udev's .link file for the default policy:
+@y
+            udev のデフォルトポリシーに対する .link ファイルをマスクして無効にします。
+@z
+
+@x
+             Create a manual naming scheme, for example by naming the
+             interfaces something like "internet0", "dmz0", or "lan0". 
+             For that, create .link
+             files in /etc/systemd/network/, that choose an explicit name or a
+             better naming scheme for one, some, or all of your interfaces. 
+             For example:
+@y
+             インターフェースに対する名前として "internet0", "dmz0", "lan0" といった命名スキームを自分で定めます。
+             これを行うには /etc/systemd/network/ ディレクトリに .link ファイルを生成し、必要なインターフェースに対して具体的な名前、つまりより良い命名スキームを定めます。
+             例えば以下のようにします。
+@z
+
+@x
+             See the man page systemd.link(5) for more information. 
+@y
+             詳細は man ページ systemd.link(5) を確認してください。
+@z
+
+@x
+            In /boot/grub/grub.cfg, pass the option net.ifnames=0 on the 
+            kernel command line.
+@y
+            /boot/grub/grub.cfg ファイル内において、カーネルの設定行に net.ifnames=0 を追加します。
 @z
 
 @x
