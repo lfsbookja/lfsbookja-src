@@ -60,16 +60,13 @@
     </para>
 @z
 
-%@x
-%    <para>Create a symlink for LSB compliance and, for x86_64, a
-%    compatibility symlink required for the dynamic loader to function
-%    correctly:</para>
-%@y
-%    <para>
-%    LSB コンプライアンスに従ったシンボリックリンクを作成します。
-%    また x86_64 に対してはダイナミックローダーが正しく機能するために必要なシンボリックリンクを作成します。
-%    </para>
-%@z
+@x
+    <para>Fix a minor security issue with glob functions:</para>
+@y
+    <para>
+    glob 関数に関するセキュリティ問題を修正します。
+    </para>
+@z
 
 @x
     <para>First create a compatibility symlink to avoid references to /tools in

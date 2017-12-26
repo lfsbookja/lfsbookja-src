@@ -54,6 +54,50 @@
 @z
 
 @x
+      <para>2017-12-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tcl-8.6.8. Fixes
+          <ulink url="&lfs-ticket-root;4183">#4183</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-12-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tcl-8.6.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4183">#4183</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2017-12-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to Python-3.6.4. Fixes
+          <ulink url="&lfs-ticket-root;4178">#4178</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Add glibc-2.26-local_glob_exploits-2.patch. Fixes
+          <ulink url="&lfs-ticket-root;4157">#4157</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2017-12-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Python-3.6.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4178">#4178</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - glibc-2.26-local_glob_exploits-2.patch の追加。
+          <ulink url="&lfs-ticket-root;4157">#4157</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-12-22</para>
       <itemizedlist>
         <listitem>
