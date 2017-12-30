@@ -144,16 +144,16 @@
 
 @x
     <para>In the procedures in Chapter 6, we remove or disable installation of
-    most static libraries.  In a few cases, especially glibc and gcc, the use
-    of static libraries remains essential to the general package building
-    process.  Usually this is done by passing a
+    most static libraries. Usually this is done by passing a
     <option>--disable-static</option> option to <command>configure</command>.
-    In other cases, alternate means are needed.</para>
+    In other cases, alternate means are needed. In a few cases, especially
+    glibc and gcc, the use of static libraries remains essential to the general
+    package building process. </para>
 @y
     <para>
-    第6章の手順では、スタティックライブラリのインストールはたいてい行わないようにしています。
-    ただし glibc や gcc においては、一般的なパッケージビルドに必要であるため、スタティックライブラリを利用します。
+    第 6 章の手順では、スタティックライブラリのインストールはたいてい行わないようにしています。
     多くのケースでは <command>configure</command> に対して <option>--disable-static</option> を与えることで実現しますが、これができない場合には他の方法を取ります。
+    ただし glibc や gcc においては、一般的なパッケージビルドに必要であるため、スタティックライブラリを利用します。
     </para>
 @z
 

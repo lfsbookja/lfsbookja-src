@@ -136,8 +136,8 @@
 @z
 
 @x
-  <note><para>Please note that <command>localectl</command> command can
-  be used  only on a system booted with systemd.</para></note>
+  <note><para>Please note that the <command>localectl</command> command can
+  be used only on a system booted with systemd.</para></note>
 @y
   <note><para>
   <command>localectl</command> コマンドはあくまで systemd により起動されたシステムにおいて利用できる点に注意してください。
@@ -197,7 +197,7 @@
 @z
 
 @x
-  <note><para>Using any of the parameters listed above requires
+  <note><para>Using any of the parameters listed above requires the
   XKeyboard Config package from BLFS.</para></note>
 @y
   <note><para>

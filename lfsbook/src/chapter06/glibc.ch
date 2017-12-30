@@ -48,7 +48,7 @@
 @z
 
 @x
-    <para>Some of the Glibc programs use non-FHS compilant
+    <para>Some of the Glibc programs use the non-FHS compilant
     <filename class="directory">/var/db</filename> directory to store
     their runtime data. Apply the following patch to make such programs
     store their runtime data in the FHS-compliant locations:</para>
@@ -139,14 +139,13 @@
 @z
 
 @x --enable-stack-protector=strong
-          <para>This option increases system security by adding  a known canary
-          (a random integer) to the stack during a function preamble, and checks
-          it when the function returns. If it changed, there was a stack
-          overflow, and the program aborts.</para>
+          <para>This option increases system security by adding 
+          extra code to check for buffer overflows, such as stack
+          smashing attacks.</para>
 @y
           <para>
-          このオプション指定によりスタックに積まれる関数プリアンブル内に、ランダムな整数であるカナリア (canary) 値を付与し、システムセキュリティを向上させます。
-          関数から戻る際にこの値がチェックされるため、値が変わっていればスタックオーバーフローがあったということでプログラムが異常終了します。
+          このオプション指定によりスタックに積まれる関数プリアンブル内に、追加のコードを付与することにより、システムセキュリティを向上させます。
+          その追加コードは、スタック破壊攻撃（stack smashing attacks）のようなバッファーオーバーフローをチェックします。
           </para>
 @z
 
@@ -177,12 +176,11 @@
 @z
 
 @x
-    <para>Generally a few tests do not pass, but you can generally ignore
-    any of the test failures listed below. Now test the build results:</para>
+    <para>Generally a few tests do not pass. The test failures listed below
+    are usually safe to ignore.</para>
 @y
     <para>
     全般にテストの中には失敗するものがありますが、以下に示すものであれば無視しても構いません。
-    ビルド結果のテストは以下のようにします。
     </para>
 @z
 

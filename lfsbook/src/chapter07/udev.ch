@@ -498,18 +498,19 @@
 @z
 
 @x
-      <para>If the <quote>wrapper</quote> module only enhances the functionality
-      provided by some other module (e.g., <emphasis>snd-pcm-oss</emphasis>
-      enhances the functionality of <emphasis>snd-pcm</emphasis> by making the
-      sound cards available to OSS applications), configure
-      <command>modprobe</command> to load the wrapper after Udev loads the
-      wrapped module. To do this, add a <quote>softdep</quote> line in any
+      <para>If the <quote>wrapper</quote> module only enhances the
+      functionality provided by some other module (e.g.,
+      <emphasis>snd-pcm-oss</emphasis> enhances the functionality of
+      <emphasis>snd-pcm</emphasis> by making the sound cards available to OSS
+      applications), configure <command>modprobe</command> to load the wrapper
+      after Udev loads the wrapped module. To do this, add a
+      <quote>softdep</quote> line to the corresponding
       <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename>
       file. For example:</para>
 @y
       <para>
       <quote>ラッパー (wrapper)</quote>モジュールが単に他のモジュールの機能を拡張するだけのものであるなら (例えば <emphasis>snd-pcm-oss</emphasis> は <emphasis>snd-pcm</emphasis> の機能拡張を行うもので、OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため) <command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
-      これは以下のように <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename> ファイル内にて<quote>softdep</quote>の記述行を加えることで実現します。
+      これは以下のように、対応する <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename> ファイル内にて<quote>softdep</quote>の記述行を加えることで実現します。
       </para>
 @z
 

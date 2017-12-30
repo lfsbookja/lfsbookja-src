@@ -137,7 +137,7 @@
 @z
 
 @x
-  <para>You can get list of available time zones by running:</para>
+  <para>You can get a list of available time zones by running:</para>
 @y
   <para>
   利用可能なタイムゾーンの一覧は以下を実行して確認できます。
@@ -145,7 +145,7 @@
 @z
 
 @x
-  <note><para>Please note that <command>timedatectl</command> command can
+  <note><para>Please note that the <command>timedatectl</command> command can
   be used only on a system booted with systemd.</para></note>
 @y
   <note><para>

@@ -28,7 +28,7 @@
 @z
 
 @x
-    <para>Now prepare procps-ng for compilation:</para>
+    <para>Prepare procps-ng for compilation:</para>
 @y
     <para>procps-ng をコンパイルするための準備をします。</para>
 @z
@@ -185,10 +185,10 @@
 @z
 
 @x slabtop
-          <para>Displays detailed kernel slap cache information in real time</para>
+          <para>Displays detailed kernel slab cache information in real time</para>
 @y
           <para>
-          リアルタイムにカーネルのスラブキャッシュ (slab cache) 情報を詳細に示します。
+          リアルタイムにカーネルのスラブキャッシュ（slab cache）情報を詳細に示します。
           </para>
 @z
 

@@ -82,16 +82,17 @@
 @z
 
 @x
-    <para>However, this test suite outputs a lot of binary data to the screen,
-    which can cause issues with the settings of the current terminal. This can
-    be resolved by redirecting the output to a log file.  A successful test
-    will result in the words "ALL DONE" at completion.</para>
+    <para>The test suite outputs a lot of binary data to the screen.  This can
+    cause issues with the settings of the current terminal.  The problem can be
+    avoided by redirecting the output to a log file as shown above.  A
+    successful test will result in the words "ALL DONE" in the log file
+    at completion.</para>
 @y
     <para>
     このテストスイートは数多くのバイナリデータを端末画面上に出力します。
     これは端末画面の設定によっては問題を引き起こします。
-    これを避けるには出力をリダイレクトしてログファイルに出力するようにしてください。
-    テストが成功すれば、最後に "ALL DONE" と表示されます。
+    これを避けるには、上に示すように出力をリダイレクトしてログファイルに出力するようにしてください。
+    テストが成功すれば、ログファイルの最後に "ALL DONE" と表示されます。
     </para>
 @z
 
@@ -338,12 +339,12 @@
           </para>
 @z
 
-@x
+@x vimdiff
           <para>Edits two or three versions of a file with <command>vim</command>
-          and show differences</para>
+          and shows differences</para>
 @y
           <para>
-          <command>vim</command> により、同一ファイルにおける２つまたは３つの版を同時に編集し、差異を表示します。
+          <command>vim</command> により、同一ファイルにおける 2 つまたは 3 つの版を同時に編集し、差異を表示します。
           </para>
 @z
 

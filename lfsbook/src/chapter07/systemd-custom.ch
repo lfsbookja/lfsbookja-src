@@ -40,8 +40,8 @@
     of options to control basic systemd operations. The default file has all
     entries commented out with the default settings indicated. This file is
     where the log level may be changed as well as some basic logging settings.
-    See <filename>systemd-system.conf(5)</filename> manual page for details on
-    each configuration option.</para>
+    See the <filename>systemd-system.conf(5)</filename> manual page for details
+    on each configuration option.</para>
 @y
     <para>
     <filename>/etc/systemd/system.conf</filename> ファイルには、基本的な systemd 動作を制御するための設定オプション項目があります。
@@ -354,15 +354,15 @@
 @z
 
 @x
-    <para>Beginning with systemd-230, all user processes are killed when a
-    user session is ended, even if nohup is used, or the process uses
-    <function>daemon()</function> or <function>setsid()</function>. This is a
-    deliberate change from a historically permissive environment to a more
-    restrictive one. The new behavior may cause issues if you depend on long
-    running programs (e.g., <command>screen</command> or
-    <command>tmux</command>) to remain active after ending your user
-    session. There are three ways to enable lingering processes to remain after
-    a user session is ended.</para>
+    <para>Beginning with systemd-230, all user processes are killed when a user
+    session is ended, even if nohup is used, or the process uses the
+    <function>daemon()</function> or <function>setsid()</function> functions.
+    This is a deliberate change from a historically permissive environment to a
+    more restrictive one. The new behavior may cause issues if you depend on
+    long running programs (e.g., <command>screen</command> or
+    <command>tmux</command>) to remain active after ending your user session.
+    There are three ways to enable lingering processes to remain after a user
+    session is ended.</para>
 @y
     <para>
     systemd-230 より取り入れられた機能として、ユーザープロセスは、たとえ nohup が用いられたり、あるいは <function>daemon()</function> や <function>setsid()</function> が利用されたプロセスであっても、ユーザーセッションが終了するとともに終了します。
@@ -374,8 +374,8 @@
 @z
 
 @x
-          <emphasis>Enable process lingering for only needed users</emphasis>:
-          normal users have permission to enable process lingering
+          <emphasis>Enable process lingering for only selected users</emphasis>:
+          Normal users have permission to enable process lingering
           with the command <command>loginctl enable-linger</command> for their
           own user. System administrators can use the same command with a
           <parameter>user</parameter> argument to enable for a user. That user
@@ -392,7 +392,7 @@
 <!--
 日本語訳：意味不明な訳出になってしまった.. 意味内容がよくわからない..
 -->
-          <emphasis>特定ユーザーのプロセスを継続させる方法</emphasis>:
+          <emphasis>指定ユーザーのプロセスを継続させる方法</emphasis>:
           標準的なユーザーは自身のユーザー権限においてコマンド <command>loginctl enable-linger</command> を実行して、プロセスを継続させることができます。
           システム管理者は <parameter>user</parameter> 引数を利用して、そのユーザーに対して同一のコマンドを実行可能です。
           そしてそのユーザーは <command>systemd-run</command> コマンドを実行することでプロセスを継続的に稼動させます。
@@ -405,7 +405,7 @@
 
 @x
           <emphasis>Enable system-wide process lingering</emphasis>:
-          you can set <parameter>KillUserProcesses=no</parameter> in
+          You can set <parameter>KillUserProcesses=no</parameter> in
           <filename>/etc/logind.conf</filename> to enable process lingering
           globally for all users. This has the benefit of leaving the old
           method available to all users at the expense of explicit control.

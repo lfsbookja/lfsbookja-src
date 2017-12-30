@@ -263,7 +263,7 @@
 
 @x instmodsh
           <para>Shell script for examining installed Perl modules,
-          and can even create a tarball from an installed module</para>
+          and can create a tarball from an installed module</para>
 @y
           <para>
           インストールされている Perl モジュールを調査するシェルスクリプト。

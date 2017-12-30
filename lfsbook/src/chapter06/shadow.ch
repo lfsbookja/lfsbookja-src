@@ -83,11 +83,11 @@
 @z
 
 @x
-    <para>Make a minor change to make the default useradd consistent with the LFS
-    groups file:</para>
+    <para>Make a minor change to make the first group number generated
+    by useradd 1000:</para>
 @y
     <para>
-    LFS のグループファイルと整合が取れるように、デフォルトの useradd を修正します。
+    useradd が生成する最初のグループ番号を 1000 とするような修正をします。
     </para>
 @z
 

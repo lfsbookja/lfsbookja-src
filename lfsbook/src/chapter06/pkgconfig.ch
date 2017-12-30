@@ -107,7 +107,10 @@
 @z
 
 @x pkg-config
-          <para>returns meta information for the specified library or package
+          <para>Returns meta information for the specified library or package
+          </para>
 @y
-          <para>指定されたライブラリやパッケージに対するメタ情報を返します。
+          <para>
+          指定されたライブラリやパッケージに対するメタ情報を返します。
+          </para>
 @z

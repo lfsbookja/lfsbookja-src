@@ -86,7 +86,7 @@
 @z
 
 @x
-    <para>Finally, two last important items must be emphasized:</para>
+    <para>Finally, two important items must be emphasized:</para>
 @y
     <para>
     最後に以下の二つの点にも注意してください。

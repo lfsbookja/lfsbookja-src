@@ -151,19 +151,19 @@
           </para>
 @z
 
+@x setcap
+          <para>Sets file capabilities</para>
+@y
+          <para>
+          ファイルの拡張属性を設定します。
+          </para>
+@z
+
 @x libcap
           <para>Contains the library functions for manipulating POSIX 1003.1e
           capabilities</para>
 @y
           <para>
           POSIX 1003.1e 拡張属性を制御するライブラリ関数を提供します。
-          </para>
-@z
-
-@x setcap
-          <para>Sets file capabilities</para>
-@y
-          <para>
-          ファイルの拡張属性を設定します。
           </para>
 @z

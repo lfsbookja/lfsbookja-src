@@ -221,9 +221,9 @@
 @z
 
 @x
-  <para>Note that you can modify <filename>/etc/locale.conf</filename> with
-  systemd <command>localectl</command> utility. To use <command>localectl</command>
-  for the example above, run:</para>
+  <para>Note that you can modify <filename>/etc/locale.conf</filename> with the
+  systemd <command>localectl</command> utility. To use
+  <command>localectl</command> for the example above, run:</para>
 @y
   <para>
   <filename>/etc/locale.conf</filename> ファイルは systemd のユーティリティープログラム <command>localectl</command> を使って定めることもできます。
@@ -246,8 +246,8 @@
 @z
 
 @x
-  <note><para>Please note that <command>localectl</command> command can
-  be used  only on a system booted with systemd.</para></note>
+  <note><para>Please note that the <command>localectl</command> command can
+  be used only on a system booted with systemd.</para></note>
 @y
   <note><para>
   <command>localectl</command> コマンドはあくまで systemd により起動されたシステムにおいて利用できる点に注意してください。

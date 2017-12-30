@@ -198,7 +198,7 @@
   at all, then something is seriously wrong. Investigate and retrace the
   steps to find out where the problem is and correct it. The most likely
   reason is that something went wrong with the specs file adjustment. Any
-  issues will need to be resolved before continuing on with the process.</para>
+  issues will need to be resolved before continuing with the process.</para>
 @y
   <para os="t">
   出力結果が上と異なっていたり、出力が全く得られなかったりした場合は、何かが根本的に間違っているということです。

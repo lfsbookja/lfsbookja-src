@@ -148,7 +148,7 @@
 @z
 
 @x dbus-cleanup-sockets
-          <para>is used to clean up leftover sockets in a directory</para>
+          <para>Used to clean up leftover sockets in a directory</para>
 @y
           <para>
           ディレクトリ内に取り残されたソケットをクリアします。
@@ -156,7 +156,7 @@
 @z
 
 @x dbus-daemon
-          <para>is the D-Bus message bus daemon</para>
+          <para>The D-Bus message bus daemon</para>
 @y
           <para>
           D-Bus メッセージバスデーモン。
@@ -164,7 +164,7 @@
 @z
 
 @x dbus-launch
-          <para>starts <command>dbus-daemon</command> from a shell
+          <para>Starts <command>dbus-daemon</command> from a shell
           script</para>
 @y
           <para>
@@ -173,7 +173,7 @@
 @z
 
 @x dbus-monitor
-          <para>monitors messages passing through a D-Bus message bus</para>
+          <para>Monitors messages passing through a D-Bus message bus</para>
 @y
           <para>
           D-Bus メッセージバスを通じたメッセージ送信を監視します。
@@ -181,7 +181,7 @@
 @z
 
 @x dbus-run-session
-          <para>starts a session bus instance of <command>dbus-daemon</command>
+          <para>Starts a session bus instance of <command>dbus-daemon</command>
           from a shell script and starts a specified program in that
           session</para>
 @y
@@ -192,7 +192,7 @@
 @z
 
 @x dbus-send
-          <para>sends a message to a D-Bus message bus</para>
+          <para>Sends a message to a D-Bus message bus</para>
 @y
           <para>
           D-Bus メッセージバスにメッセージを送ります。
@@ -200,8 +200,8 @@
 @z
 
 @x dbus-test-tool
-          <para>is a tool to help packages test
-          <application>D-Bus</application>.</para>
+          <para>A tool to help packages test
+          <application>D-Bus</application></para>
 @y
           <para>
           <application>D-Bus</application> のテストを補助するツールです。
@@ -209,8 +209,8 @@
 @z
 
 @x dbus-update-activation-environment
-          <para>updates environment variables that will be set for
-          <application>D-Bus</application> session services.</para>
+          <para>Updates environment variables that will be set for
+          <application>D-Bus</application> session services</para>
 @y
           <para>
           <application>D-Bus</application> のセッションサービスに対して設定される環境変数を更新します。
@@ -218,15 +218,15 @@
 @z
 
 @x dbus-uuidgen
-          <para>generates a universally unique ID</para>
+          <para>Generates a universally unique ID</para>
 @y
           <para>
-          ユニークIDを生成します。
+          ユニーク ID を生成します。
           </para>
 @z
 
 @x
-          <para>contains API functions used to communicate with the D-Bus
+          <para>Contains API functions used to communicate with the D-Bus
           message bus</para>
 @y
           <para>

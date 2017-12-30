@@ -86,7 +86,7 @@
     <para>In case the above seems hard to follow, let's break it down a bit.
     First we copy the files <filename>gcc/config/linux.h</filename>,
     <filename>gcc/config/i386/linux.h</filename>, and
-    <filename>gcc/config/i368/linux64.h</filename>. to a file of
+    <filename>gcc/config/i368/linux64.h</filename> to a file of
     the same name but with an added suffix of <quote>.orig</quote>. Then the
     first sed expression prepends <quote>/tools</quote> to every instance of
     <quote>/lib/ld</quote>, <quote>/lib64/ld</quote> or
@@ -202,12 +202,14 @@
 @z
 
 @x --with-native-system-header-dir=/tools/include
-          <para>By default GCC searches <filename>/usr/include</filename> for system
-          headers. In conjunction with the sysroot switch, this would translate normally
-          to <filename>$LFS/usr/include</filename>. However the headers that will be installed
-          in the next two sections will go to <filename>$LFS/tools/include</filename>. This
-          switch ensures that gcc will find them correctly. In the second pass of GCC, this
-          same switch will ensure that no headers from the host system are found.</para>
+          <para>By default GCC searches <filename>/usr/include</filename> for
+          system headers. In conjunction with the sysroot switch, this would
+          normally translate to <filename>$LFS/usr/include</filename>. However
+          the headers that will be installed in the next two sections will go
+          to <filename>$LFS/tools/include</filename>. This switch ensures that
+          gcc will find them correctly. In the second pass of GCC, this same
+          switch will ensure that no headers from the host system are
+          found.</para>
 @y
           <para>
           GCC がシステムヘッダーを探し出すデフォルトのパスは <filename>/usr/include</filename> です。

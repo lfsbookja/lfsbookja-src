@@ -68,7 +68,7 @@
 @z
 
 @x m4
-          <para>copies the given files while expanding the macros that they
+          <para>Copies the given files while expanding the macros that they
           contain [These macros are either built-in or user-defined and can
           take any number of arguments. Besides performing macro expansion,
           <command>m4</command> has built-in functions for including named
@@ -79,7 +79,7 @@
 @y
           <para>
           指定されたファイル内のマクロ定義を展開して、そのコピーを生成します。
-          マクロ定義には埋め込み (built-in) マクロとユーザー定義マクロがあり、いくらでも引数を定義することができます。
+          マクロ定義には埋め込み（built-in）マクロとユーザー定義マクロがあり、いくらでも引数を定義することができます。
           マクロ定義の展開だけでなく <command>m4</command> には以下のような埋め込み関数があります。
           指定ファイルの読み込み、Unix コマンド実行、整数演算処理、テキスト操作、再帰処理などです。
           <command>m4</command> プログラムはコンパイラーのフロントエンドとして利用することができ、それ自体でマクロプロセッサーとして用いることもできます。

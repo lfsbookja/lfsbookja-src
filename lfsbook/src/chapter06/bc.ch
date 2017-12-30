@@ -134,17 +134,17 @@
 @z
 
 @x
-          <para>is a command line calculator</para>
+          <para>A command line calculator</para>
 @y
           <para>
-          コマンドラインから実行する計算機 (calculator) です。
+          コマンドラインから実行する計算機（calculator）。
           </para>
 @z
 
 @x
-          <para>is a reverse-polish command line calculator</para>
+          <para>A reverse-polish command line calculator</para>
 @y
           <para>
-          逆ポーランド (reverse-polish) 記法による計算機です。
+          逆ポーランド（reverse-polish）記法による計算機。
           </para>
 @z

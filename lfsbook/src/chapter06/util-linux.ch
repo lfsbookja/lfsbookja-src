@@ -999,7 +999,7 @@
 
 @x uuidd
           <para>A daemon used by the UUID library to generate time-based
-          UUIDs in a secure and guranteed-unique fashion</para>
+          UUIDs in a secure and guaranteed-unique fashion</para>
 @y
           <para>
           UUID ライブラリから利用されるデーモン。

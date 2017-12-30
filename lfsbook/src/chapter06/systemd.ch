@@ -114,17 +114,16 @@
           </para>
 @z
 
-@x -Dldconfig=no
-          <para>This switch prevents installation of a systemd
-          unit that runs <command>ldconfig</command> at
-          boot, making the boot time longer. Remove it if the
-          described feature is desired, even though it's not
-          useful for source distributions such as LFS.</para>
+@x -Dldconfig=false
+          <para>This switch prevents installation of a systemd unit that runs
+          <command>ldconfig</command> at boot, which is not useful for source
+          distributions such as LFS and makes the boot time longer. Remove it
+          if the described feature is desired.</para>
 @y
           <para>
           本スイッチは、システム起動時に <command>ldconfig</command> を実行するような systemd ユニットはインストールしないようにします。
-          <command>ldconfig</command> を実行すると、起動時間が長くなります。
-          LFS のようにソースから作り出すディストリビューションにとっては無用なものですが、もし必要であれば本スイッチを除いてください。
+          LFS のようにソースから作り出すディストリビューションにとっては無用なものであり、起動時間も長くなります。
+          もし必要であれば本スイッチを除いてください。
           </para>
 @z
 
@@ -153,7 +152,7 @@
           services responsible for setting up the
           <filename>/etc/group</filename> and
           <filename>/etc/passwd</filename> files. Both files
-          were created early in this chapter.</para>
+          were created earlier in this chapter.</para>
 @y
           <para>
           本スイッチは、システム起動初期に <filename>/etc/group</filename> ファイルと
@@ -297,7 +296,7 @@
 @z
 
 @x bootctl
-          <para>used to query the firmware and boot manager settings</para>
+          <para>Used to query the firmware and boot manager settings</para>
 @y
           <para>
           ファームウェアやブートマネージャーの設定内容を確認します。
@@ -346,19 +345,19 @@
 
 @x init
           <para>The first process to be started when the kernel has initialized
-          the hardware which takes over the boot process and starts all the
-          proceses it is instructed to</para>
+          the hardware which takes over the boot process and starts all 
+          processes according to its configuration files</para>
 @y
           <para>
-          カーネルがハードウェアを初期化する際に起動される最初のプロセスであり、この後の起動処理を担い、指示されたすべてのブートプロセスを起動します。
+          カーネルがハードウェアを初期化する際に起動される最初のプロセスであり、この後の起動処理を担い、設定ファイルに応じたすべてのブートプロセスを起動します。
           </para>
-@z
+W@z
 
 @x journalctl
-          <para>Used to query the contents of the systemd Journal</para>
+          <para>Used to query the contents of the systemd journal</para>
 @y
           <para>
-          Systemd の Journal の内容を確認します。
+          Systemd のジャーナルの内容を確認します。
           </para>
 @z
 
@@ -555,7 +554,7 @@
 @z
 
 @x systemd-mount
-          <para>is a tool to temporarily mount or auto-mount a drive.</para>
+          <para>A tool to temporarily mount or auto-mount a drive.</para>
 @y
           <para>
           ドライブの一時的マウント、あるいは一時的な自動マウントを行うツールです。
@@ -607,7 +606,7 @@
 @z
 
 @x systemd-socket-activate
-          <para>is a tool to listen on socket devices and launch a process upon
+          <para>A tool to listen on socket devices and launch a process upon
           connection.</para>
 @y
           <para>
@@ -653,22 +652,22 @@
 @z
 
 @x udevadm
-          <para>Generic Udev administration tool: controls the udevd daemon,
+          <para>Generic udev administration tool: controls the udevd daemon,
           provides info from the Udev database, monitors uevents, waits for
-          uevents to finish, tests Udev configuration, and triggers uevents
+          uevents to finish, tests udev configuration, and triggers uevents
           for a given device</para>
 @y
           <para>
-          汎用的な Udev 管理ツール。
-          udevd デーモンの制御、Udev データベースデータの提供、uevent の監視、uevent の完了までの待機、Udev 設定のテスト、指定デバイスに対する uevent の起動、といったことを行います。
+          汎用的な udev 管理ツール。
+          udevd デーモンの制御、Udev データベースデータの提供、uevent の監視、uevent の完了までの待機、udev 設定のテスト、指定デバイスに対する uevent の起動、といったことを行います。
           </para>
 @z
 
 @x libsystemd
-          <para>systemd utility library</para>
+          <para>The main systemd utility library</para>
 @y
           <para>
-          Systemd ユーティリティライブラリ。
+          主となる systemd ユーティリティライブラリ。
           </para>
 @z
 

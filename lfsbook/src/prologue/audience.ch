@@ -98,7 +98,7 @@ fixes the problem.</para>
 @x
 <para>The goal of Linux From Scratch is to build a complete and usable
 foundation-level system. If you do not wish to build your own Linux system
-from scratch, you may not entirely benefit from the information in this
+from scratch, you may nevertheless benefit from the information in this
 book.</para>
 @y
 <para>

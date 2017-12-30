@@ -41,13 +41,13 @@ Power PC や ARM については、本書の手順を多少修正することで
 @x
 <para>Some other facts about 64-bit systems need to be added here. When
 compared to a 32-bit system, the sizes of executable programs are slightly
-larger and the execution speeds are only slightly faster. For example, in a
-test build of LFS-6.5 on a Core2Duo CPU based system, the following statistics
-were measured:</para>
+larger and the execution speeds of arbitrary programs are only slightly faster.
+For example, in a test build of LFS-6.5 on a Core2Duo CPU based system, the
+following statistics were measured:</para>
 @y
 <para>
 64 ビットシステムにて明らかなことをここに記しておきます。
-32 ビットシステムに比べると、実行プログラムのサイズは多少大きくなり、実行速度は若干速くなります。
+32 ビットシステムに比べると、実行プログラムのサイズは多少大きくなり、どのようなプログラムでも実行速度は若干速くなります。
 例えば Core2Duo CPU をベースとするシステム上に、LFS 6.5 をビルドしてみたところ、以下のような情報が得られました。
 </para>
 @z
@@ -73,6 +73,19 @@ data that exceeds 4GB, the advantages of a 64-bit system are substantial.</para>
 つまり 64ビットシステムによって得られることは比較的小さいということです。
 もちろん 4GB 以上の RAM を利用していたり、4GB を超えるデータを取り扱いたいならば、64 ビットシステムを用いるメリットが大きいのは間違いありません。
 </para>
+@z
+
+@x
+<note><para>The above discussion is only appropriate when comparing 
+builds on the same hardware.  Modern 64-bit systems are considerably
+faster than older 64-bit systems and the LFS authors recommend building
+on a 64-bit system when given a choice.</para></note>
+@y
+<note><para>
+上の説明は、同一のハードウェア上に構築した場合の話です。
+最近の 64 ビットシステムは、かつての 64 ビットシステムに比べて格段に速くなっています。
+したがって LFS 開発者も、可能なら 64 ビットシステム上においてビルドしていくことを推奨しています。
+</para></note>
 @z
 
 @x

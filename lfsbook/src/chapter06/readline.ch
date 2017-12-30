@@ -136,10 +136,10 @@
 @z
 
 @x
-          <para>Aids in the consistency of user interface across discrete
-          programs that need to provide a command line interface</para>
+          <para>Provides a set of commands for manipulating text entered in an
+          interactive session of a program.</para>
 @y
           <para>
-          コマンドラインインターフェースを提供しているさまざまなコマンドにおいて、適切なインターフェースを提供します。
+          プログラムの対話セッションから入力されるテキストを処理するための一連のコマンドを提供します。
           </para>
 @z
