@@ -54,6 +54,57 @@
 @z
 
 @x
+      <para>2018-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add comments to the kernel section
+          to change the unwinder option.  Fixes
+          <ulink url="&lfs-ticket-root;4186">#4186</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.14.10.  Fixes
+          <ulink url="&lfs-ticket-root;4184">#4184</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-8.29.  Fixes
+          <ulink url="&lfs-ticket-root;4189">#4189</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove old footer from non-chunks book. Fixes
+          <ulink url="&lfs-ticket-root;4188">#4188</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Make spacing between "Chapter" and digit non breaking. Fixes
+          <ulink url="&lfs-ticket-root;4187">#4187</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - カーネルの unwinder オプションが変更されたことをコメント。
+          <ulink url="&lfs-ticket-root;4186">#4186</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.14.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4184">#4184</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - coreutils-8.29 へのアップデート。
+          <ulink url="&lfs-ticket-root;4189">#4189</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - no chunks 版にて古いフッターを削除。
+          <ulink url="&lfs-ticket-root;4188">#4188</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - "章" と章番号の間の空白が改行されないようにする。
+          <ulink url="&lfs-ticket-root;4187">#4187</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2017-12-26</para>
       <itemizedlist>
         <listitem>
@@ -597,7 +648,7 @@
       <para>2017-09-24</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Reorder packages in Chapter 6 so Python can use
+          <para>[bdubbs] - Reorder packages in Chapter&nbsp;6 so Python can use
           gdbm.</para>
         </listitem>
         <listitem>
@@ -609,7 +660,7 @@
       <para>2017-09-24</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - 第 6 章にて Python が gdbm を利用できるように、パッケージ順を修正。</para>
+          <para>[bdubbs] - 第&nbsp;6&nbsp;章にて Python が gdbm を利用できるように、パッケージ順を修正。</para>
         </listitem>
         <listitem>
           <para>[dj] - meson ビルドシステムを利用した systemd のアップストリームによる tarball を利用することに。

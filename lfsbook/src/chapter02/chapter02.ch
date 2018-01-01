@@ -14,9 +14,9 @@
 @z
 
 @x
-<chapter id="chapter-partitioning" xreflabel="Chapter 2">
+<chapter id="chapter-partitioning" xreflabel="Chapter&nbsp;2">
 @y
-<chapter id="chapter-partitioning" xreflabel="第2章">
+<chapter id="chapter-partitioning" xreflabel="第&nbsp;2&nbsp;章">
 @z
 
 @x

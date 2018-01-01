@@ -38,10 +38,10 @@
 @z
 
 @x
-  <sect2 id="ch-intro-maillists" xreflabel="Chapter 1 - Mailing Lists">
+  <sect2 id="ch-intro-maillists" xreflabel="Chapter&nbsp;1 - Mailing Lists">
     <title>Mailing Lists</title>
 @y
-  <sect2 id="ch-intro-maillists" xreflabel="第1章 - メーリングリスト">
+  <sect2 id="ch-intro-maillists" xreflabel="第&nbsp;1&nbsp;章 - メーリングリスト">
     <title>メーリングリスト</title>
 @z
 
@@ -91,8 +91,10 @@
 @z
 
 @x
+  <sect2 id="ch-intro-mirrors" xreflabel="Chapter&nbsp;1 - Mirror sites">
     <title>Mirror Sites</title>
 @y
+  <sect2 id="ch-intro-mirrors" xreflabel="第&nbsp;1&nbsp;章 - ミラーサイト">
     <title>ミラーサイト</title>
 @z
 

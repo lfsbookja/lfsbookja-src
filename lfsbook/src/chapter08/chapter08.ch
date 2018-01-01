@@ -14,9 +14,9 @@
 @z
 
 @x
-<chapter id="chapter-bootable" xreflabel="Chapter 8">
+<chapter id="chapter-bootable" xreflabel="Chapter&nbsp;8">
 @y
-<chapter id="chapter-bootable" xreflabel="第8章">
+<chapter id="chapter-bootable" xreflabel="第&nbsp;8&nbsp;章">
 @z
 
 @x

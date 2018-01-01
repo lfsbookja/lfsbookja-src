@@ -135,12 +135,12 @@
 
 @x
       <para>The reason for the kernel version requirement is that we specify
-      that version when building <application>glibc</application> in Chapter 6
+      that version when building <application>glibc</application> in Chapter&nbsp;6
       at the recommendation of the developers.  It is also required by
       udev.</para>
 @y
       <para>
-      カーネルのバージョンを指定しているのは、第6章にて <application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
+      カーネルのバージョンを指定しているのは、第&nbsp;6&nbsp;章にて <application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
       これは udev においても必要になります。
       </para>
 @z

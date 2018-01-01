@@ -174,12 +174,12 @@
 
 @x
               <para>Using the <command>tar</command> program, extract the package
-              to be built.  In Chapter 5, ensure you are the <emphasis>lfs</emphasis> 
+              to be built.  In Chapter&nbsp;5, ensure you are the <emphasis>lfs</emphasis> 
               user when extracting the package.</para>
 @y
               <para>
-              tar コマンドを使ってパッケージの tarball を伸張 (解凍) します。
-              第5章では、パッケージを伸張 (解凍) するのは <emphasis>lfs</emphasis> ユーザーとします。
+              tar コマンドを使ってパッケージの tarball を伸張（解凍）します。
+              第&nbsp;5&nbsp;章では、パッケージを伸張（解凍）するのは <emphasis>lfs</emphasis> ユーザーとします。
               </para>
 @z
 

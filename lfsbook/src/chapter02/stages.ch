@@ -36,9 +36,9 @@
 @z
 
 @x
-  <title>Chapters 1-4</title>
+  <title>Chapters&nbsp;1&ndash;4</title>
 @y
-  <title>第1章～第4章</title>
+  <title>第&nbsp;1&nbsp;章～第&nbsp;4&nbsp;章</title>
 @z
 
 @x
@@ -63,9 +63,9 @@
 @z
 
 @x
-  <title>Chapter 5</title>
+  <title>Chapter&nbsp;5</title>
 @y
-  <title>第5章</title>
+  <title>第&nbsp;5&nbsp;章</title>
 @z
 
 @x
@@ -77,14 +77,14 @@
 @z
 
 @x
-         <para><emphasis>ALL</emphasis> instructions in Chapter 5 
+         <para><emphasis>ALL</emphasis> instructions in Chapter&nbsp;5 
          must be done by user <emphasis>lfs</emphasis>.  
          A  <command>su - lfs</command> needs to be done before any 
-         task in Chapter 5.</para>
+         task in Chapter&nbsp;5.</para>
 @y
          <para>
-         第5章における処理を<emphasis>すべて</emphasis>、ユーザー <emphasis>lfs</emphasis> により実施することが必要です。
-         第5章における処理の実施前には <command>su - lfs</command> を行うことが必要です。
+         第&nbsp;5&nbsp;章における処理を<emphasis>すべて</emphasis>、ユーザー <emphasis>lfs</emphasis> により実施することが必要です。
+         第&nbsp;5&nbsp;章における処理の実施前には <command>su - lfs</command> を行うことが必要です。
          </para>
 @z
 
@@ -102,9 +102,9 @@
 @z
 
 @x
-  <title>Chapters 6-8</title>
+  <title>Chapters&nbsp;6&ndash;8</title>
 @y
-  <title>第6章～第8章</title>
+  <title>第&nbsp;6&nbsp;章～第&nbsp;8&nbsp;章</title>
 @z
 
 @x

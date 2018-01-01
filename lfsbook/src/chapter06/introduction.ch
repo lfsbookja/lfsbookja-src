@@ -110,7 +110,7 @@
 
 @x
   <note><para>The SBU values and required disk space includes
-  test suite data for all applicable packages in Chapter 6.</para></note>
+  test suite data for all applicable packages in Chapter&nbsp;6.</para></note>
 @y
   <note><para>
   本章にて導入するパッケージにおいて SBU 値と必要ディスク容量には、テストスイート実施による時間や容量をすべて含んでいます。
@@ -143,7 +143,7 @@
 @z
 
 @x
-    <para>In the procedures in Chapter 6, we remove or disable installation of
+    <para>In the procedures in Chapter&nbsp;6, we remove or disable installation of
     most static libraries. Usually this is done by passing a
     <option>--disable-static</option> option to <command>configure</command>.
     In other cases, alternate means are needed. In a few cases, especially
@@ -151,7 +151,7 @@
     package building process. </para>
 @y
     <para>
-    第 6 章の手順では、スタティックライブラリのインストールはたいてい行わないようにしています。
+    第&nbsp;6&nbsp;章の手順では、スタティックライブラリのインストールはたいてい行わないようにしています。
     多くのケースでは <command>configure</command> に対して <option>--disable-static</option> を与えることで実現しますが、これができない場合には他の方法を取ります。
     ただし glibc や gcc においては、一般的なパッケージビルドに必要であるため、スタティックライブラリを利用します。
     </para>

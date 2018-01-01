@@ -78,14 +78,14 @@
 @x
   <para>The created symlink enables the toolchain to be compiled so that it
   always refers to <filename class="directory">/tools</filename>, meaning
-  that the compiler, assembler, and linker will work both in Chapter 5
+  that the compiler, assembler, and linker will work both in Chapter&nbsp;5
   (when we are still using some tools from the host) and in the next (when
   we are <quote>chrooted</quote> to the LFS partition).</para>
 @y
     <para>
     シンボリックリンクを作成することで、ツールチェーンをコンパイルする準備が整いました。
     これにより常に <filename class="directory">/tools</filename> ディレクトリを参照したツールチェーンが生成できます。
-    コンパイラー、アセンブラー、リンカーは本章において動作し (いくつかのツール類は依然ホストシステムのものを利用しますが)、次章においても同様に動作します。
-    (次章では<quote>chroot</quote>によって LFS パーティションに移動して利用します。)
+    コンパイラー、アセンブラー、リンカーは本章において動作し（いくつかのツール類は依然ホストシステムのものを利用しますが）、次章においても同様に動作します。
+    （次章では<quote>chroot</quote>によって LFS パーティションに移動して利用します。）
     </para>
 @z

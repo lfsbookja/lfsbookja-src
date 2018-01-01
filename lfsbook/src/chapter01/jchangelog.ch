@@ -33,7 +33,7 @@
     LFS ブック日本語版の変更履歴を示すために設けています。
    </para>
    <para>
-   「SVN-20170123」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
+   「SVN-20180123」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
    また「チェンジセット 12345」という表記は、オリジナル XML ソースファイルの Subversion 管理下でのリビジョン (その参照ページ) を意味します。
    </para>
   </note>
@@ -56,6 +56,22 @@
     </listitem>
 
 -->
+
+   <listitem>
+      <para>2018-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          <phrase revision="sysv">SVN-20180101</phrase>
+          <phrase revision="systemd">20180101-systemd</phrase>,
+          チェンジセット
+          <ulink url="&lfs-rev-root;11344">11344</ulink> ～
+          <ulink url="&lfs-rev-root;11346">11346</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
 
    <listitem>
       <para>2017-12-30</para>

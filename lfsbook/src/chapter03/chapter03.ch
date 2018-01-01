@@ -14,9 +14,9 @@
 @z
 
 @x
-<chapter id="chapter-getting-materials" xreflabel="Chapter 3">
+<chapter id="chapter-getting-materials" xreflabel="Chapter&nbsp;3">
 @y
-<chapter id="chapter-getting-materials" xreflabel="第3章">
+<chapter id="chapter-getting-materials" xreflabel="第&nbsp;3&nbsp;章">
 @z
 
 @x

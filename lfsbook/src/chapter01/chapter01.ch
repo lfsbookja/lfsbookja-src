@@ -14,9 +14,9 @@
 @z
 
 @x
-<chapter id="chapter-intro" xreflabel="Chapter 1">
+<chapter id="chapter-intro" xreflabel="Chapter&nbsp;1">
 @y
-<chapter id="chapter-intro" xreflabel="第1章">
+<chapter id="chapter-intro" xreflabel="第&nbsp;1&nbsp;章">
 @z
 
 @x

@@ -14,9 +14,9 @@
 @z
 
 @x
-<chapter id="chapter-building-system" xreflabel="Chapter 6">
+<chapter id="chapter-building-system" xreflabel="Chapter&nbsp;6">
 @y
-<chapter id="chapter-building-system" xreflabel="第6章">
+<chapter id="chapter-building-system" xreflabel="第&nbsp;6&nbsp;章">
 @z
 
 @x

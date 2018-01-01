@@ -70,7 +70,7 @@
 
 @x
     <para>One ps test may fail, but passes if the tests are rerun at 
-    the end of Chapter 6.</para>
+    the end of Chapter&nbsp;6.</para>
 @y
     <para>
     ps に関するテストが1つ失敗します。

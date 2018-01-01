@@ -36,14 +36,14 @@
 @z
 
 % @x
-%     <para>In the packages that were installed in Chapter 6, there were two
+%     <para>In the packages that were installed in Chapter&nbsp;6, there were two
 %     different boot systems installed.  LFS provides the ability to easily
 %     select which system the user wants to use and to compare and contrast the
 %     two systems by actually running each system on the local computer.  The
 %     advantages and disadvantages of these systems is presented below.</para>
 % @y
 %     <para>
-%     第6章にてインストールしたパッケージの中に、二つの異なるブートシステムをインストールしました。
+%     第&nbsp;6&nbsp;章にてインストールしたパッケージの中に、二つの異なるブートシステムをインストールしました。
 %     読者がどちらを望むか、あるいは読者のシステム上にて実際に処理実行してみて両者を比較するか、LFS では容易に選択できるようにしています。
 %     二つのシステムの長所と短所を以下に示します。
 %     </para>

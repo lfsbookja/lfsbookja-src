@@ -90,11 +90,11 @@
 @z
 
 @x
-      <para>Be sure to enable or disable the following features or the system might
+      <para>Be sure to enable/disable/set the following features or the system might
       not work correctly or boot at all:</para>
 @y
       <para>
-      以下の機能項目についての有効無効を確認してください。
+      以下の機能項目についての有効、無効、設定状況を確認してください。
       不適切である場合にはシステムが正常動作しなかったり起動できなかったりするかもしれません。
       </para>
 @z

@@ -108,14 +108,14 @@
 @x
     <para>Some host distributions use custom features in their filesystem
     creation tools (E2fsprogs). This can cause problems when booting into your new
-    LFS in Chapter 9, as those features will not be supported by the LFS-installed
+    LFS in Chapter&nbsp;9, as those features will not be supported by the LFS-installed
     E2fsprogs; you will get an error similar to <quote>unsupported filesystem
     features, upgrade your e2fsprogs</quote>. To check if your host system
     uses custom enhancements, run the following command:</para>
 @y
     <para>
     ホストとして利用する Linux ディストリビューションの中には、ファイルシステムを生成するツール (E2fsprogs) に特別な機能を実装しているものがあります。
-    第9章にて LFS システムをブートする際に、それらの機能が原因で問題が発生する場合があります。
+    第&nbsp;9&nbsp;章にて LFS システムをブートする際に、それらの機能が原因で問題が発生する場合があります。
     そのような機能は LFS においてインストールする E2fsprogs ではサポートしていません。
     おそらくは<quote>unsupported filesystem features, upgrade your e2fsprogs</quote>(サポートされていないファイルシステムです。 e2fsprogs をアップグレードしてください) といったエラーメッセージが表示されるはずです。
     ホストシステムが機能拡張しているかどうかを確認するには以下のコマンドを実行します。

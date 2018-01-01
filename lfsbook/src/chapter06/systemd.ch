@@ -351,7 +351,7 @@
           <para>
           カーネルがハードウェアを初期化する際に起動される最初のプロセスであり、この後の起動処理を担い、設定ファイルに応じたすべてのブートプロセスを起動します。
           </para>
-W@z
+@z
 
 @x journalctl
           <para>Used to query the contents of the systemd journal</para>

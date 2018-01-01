@@ -14,9 +14,9 @@
 @z
 
 @x
-<chapter id="chapter-temporary-tools" xreflabel="Chapter 5">
+<chapter id="chapter-temporary-tools" xreflabel="Chapter&nbsp;5">
 @y
-<chapter id="chapter-temporary-tools" xreflabel="第5章">
+<chapter id="chapter-temporary-tools" xreflabel="第&nbsp;5&nbsp;章">
 @z
 
 @x
