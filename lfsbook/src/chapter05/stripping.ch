@@ -66,6 +66,12 @@
 @z
 
 @x
+  <para>Remove unneeded files:</para>
+@y
+  <para>不要なファイルを削除します。</para>
+@z
+
+@x
   <para>At this point, you should have at least 3 GB of free space in
   <envar>$LFS</envar> that can be used to build and install Glibc and Gcc in
   the next phase. If you can build and install Glibc, you can build and install

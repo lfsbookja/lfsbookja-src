@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2018-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.14.12.  Fixes
+          <ulink url="&lfs-ticket-root;4192">#4192</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.14.1.  Fixes
+          <ulink url="&lfs-ticket-root;4191">#4191</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.43.8.  Fixes
+          <ulink url="&lfs-ticket-root;4190">#4190</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.14.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4192">#4192</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.14.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4191">#4191</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.43.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4190">#4190</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-01-01</para>
       <itemizedlist>
         <listitem>
