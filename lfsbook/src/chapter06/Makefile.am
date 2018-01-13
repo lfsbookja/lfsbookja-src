@@ -53,6 +53,7 @@ CHANGE_FILES = \
 	kmod.ch              \
 	less.ch              \
         libcap.ch            \
+	libelf.ch            \
 	libffi.ch            \
 	libpipeline.ch       \
 	libtool.ch           \

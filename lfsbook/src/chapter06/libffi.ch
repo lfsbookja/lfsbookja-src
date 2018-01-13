@@ -14,20 +14,20 @@
 @z
 
 @x
-    <para>The libffi library provides a portable, high level programming
+    <para>The Libffi library provides a portable, high level programming
     interface to various calling conventions. This allows a programmer to call
     any function specified by a call interface description at run time.</para>
 @y
     <para>
-    libffi ライブラリは、さまざまな呼出規約（calling conventions）に対しての、移植性に優れた高レベルのプログラミングインターフェースを提供します。
+    Libffi ライブラリは、さまざまな呼出規約（calling conventions）に対しての、移植性に優れた高レベルのプログラミングインターフェースを提供します。
     このライブラリを用いることで、プログラム実行時に呼出インターフェース記述（call interface description）による関数を指定して呼び出すことができるようになります。
     </para>
 @z
 
 @x
-    <title>Installation of libffi</title>
+    <title>Installation of Libffi</title>
 @y
-    <title>&InstallationOf1;libffi&InstallationOf2;</title>
+    <title>&InstallationOf1;Libffi&InstallationOf2;</title>
 @z
 
 @x
@@ -69,9 +69,9 @@
 @z
 
 @x
-    <title>Contents of libffi</title>
+    <title>Contents of Libffi</title>
 @y
-    <title>&ContentsOf1;libffi&ContentsOf2;</title>
+    <title>&ContentsOf1;Libffi&ContentsOf2;</title>
 @z
 
 @x

@@ -54,6 +54,72 @@
 @z
 
 @x
+      <para>2018-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Simplify and correct Libelf instructions.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - libelf ビルド手順の単純化と適正化。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-01-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Add Libelf (Elfutils) 0.170.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to Linux-4.14.13. Fixes
+          <ulink url="&lfs-ticket-root;4195">#4195</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - libelf (elfutils) 0.170 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - linux-4.14.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4195">#4195</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-01-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to kmod-25.  Fixes
+          <ulink url="&lfs-ticket-root;4194">#4194</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to gzip-1.9.  Fixes
+          <ulink url="&lfs-ticket-root;4193">#4193</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - kmod-25 へのアップデート。
+          <ulink url="&lfs-ticket-root;4194">#4194</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - gzip-1.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4193">#4193</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-01-06</para>
       <itemizedlist>
         <listitem>
