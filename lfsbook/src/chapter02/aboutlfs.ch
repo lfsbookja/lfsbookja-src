@@ -90,12 +90,31 @@
   <filename>/etc/passwd</filename> file for all users that need the
   <envar>LFS</envar> variable needs to be bash to ensure that the
   <filename>/root/.bash_profile</filename> file is incorporated as a part of
-  the login process.</para></note>
+  the login process.</para>
 @y
   <note><para>
   <envar>LFS</envar> 変数を確実に設定しておくために、ローカルな <filename>.bash_profile</filename>
   および <filename>/root/.bash_profile</filename> に上記変数を export するコマンドを記述しておく方法もあります。
   なお <filename>/etc/passwd</filename> ファイルにて <envar>LFS</envar> 変数を必要とするユーザーは、シェルとして bash を利用するようにしてください。
   <filename>/root/.bash_profile</filename> ファイルはログインプロセスの一部として機能するためです。
-  </para></note>
+  </para>
+@z
+
+@x
+  <para>Another consideration is the method that is used to log into the
+  host system.  If logging in through a graphical display manager, the
+  user's <filename>.bash_profile</filename> is not normally used when
+  a virtual terminal is started.  In this case, add the export command to
+  the <filename>.bashrc</filename> file for the user and root.  In addition, 
+  some distributions have instructions to not run the <filename>.bashrc</filename> 
+  instructions in a non-interactive bash invocation.  Be sure to add the
+  export command before the test for non-interactive use.</para>
+@y
+  <para>
+  もう一つ気にかけることとして、ホストシステム上にログ出力を行う方法に関してです。
+  グラフィカルディスプレイマネージャーを通じてログ出力を行うと、仮想端末が起動する際に、ユーザー独自の <filename>.bash_profile</filename> は普通は用いられません。
+  この場合は、各ユーザー用と root 用の <filename>.bashrc</filename> に export コマンドを追加してください。
+  ここでディストリビューションの中には、非対話形式での bash の実行時には <filename>.bashrc</filename> を実行しないように求めているものがあります。
+  その場合は、非対話形式の利用をテストする前に export コマンドを追加してください。
+  </para>
 @z

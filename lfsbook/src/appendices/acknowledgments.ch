@@ -83,14 +83,6 @@
 @z
 
 @x
-      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
-      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd Editor</para>
-@y
-      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
-      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd 編集者</para>
-@z
-
-@x
       <para>Countless other people on the various LFS and BLFS mailing lists
       who helped make this book possible by giving their suggestions, testing
       the book, and submitting bug reports, instructions, and their
@@ -587,6 +579,14 @@
       <para><ulink url="mailto:scot@linuxfromscratch.org">Scot Mc
       Pherson</ulink> &lt;scot@linuxfromscratch.org&gt; &ndash;
       LFS NNTP ゲートウェイ管理者</para>
+@z
+
+@x
+      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
+      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd Editor</para>
+@y
+      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
+      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd 編集者</para>
 @z
 
 @x

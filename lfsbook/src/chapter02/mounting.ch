@@ -83,8 +83,28 @@
   <para>
   この新しいパーティションは特別な制限オプション (<option>nosuid</option>、<option>nodev</option> など) は設定せずにマウントします。
   <command>mount</command> コマンドの実行時に引数を与えずに実行すれば、LFS パーティションがどのようなオプション設定によりマウントされているかが分かります。
-  もし <option>nosuid</option>、<option>nodev</option>オプションが設定されていたら、マウントし直してください。
+  もし <option>nosuid</option>、<option>nodev</option> オプションが設定されていたら、マウントし直してください。
   </para>
+@z
+
+@x
+  <warning><para>The above instructions assume that you will not be restarting
+  your computer throughout the LFS process.  If you shut down your system,
+  you will either need to remount the LFS partition each time you restart 
+  the build process or modify your host system's /etc/fstab file to automatically 
+  remount it upon boot.  For example:
+@y
+  <warning><para>
+  上で説明した内容は、LFS 構築作業においてコンピューターを再起動しない場合の話です。
+  コンピューターを一度シャットダウンした場合は、LFS 構築作業の再開のたびに LFS パーティションを再マウントする必要があります。
+  あるいはブート時に自動マウントをしたいのであれば、ホストシステムの /etc/fstab ファイルを書き換えておく必要があります。
+  書き換えは例えば以下のようになります。
+@z
+
+@x
+  If you use additional optional partitions, be sure to add them also.
+@y
+  追加のパーティションを利用している場合は、それらを書き加えることも忘れないでください。
 @z
 
 @x

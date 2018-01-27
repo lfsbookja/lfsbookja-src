@@ -23,10 +23,12 @@
       <firstname>Managing Editor: Bruce</firstname>
       <surname>Dubbs</surname>
     </author>
+    <!--
     <author revision="systemd">
       <firstname>Editor: Douglas R.</firstname>
       <surname>Reno</surname>
     </author>
+    -->
     <author revision="systemd">
       <firstname>Editor: DJ</firstname>
       <surname>Lucas</surname>
@@ -42,10 +44,12 @@
       <firstname>編集総括： Bruce</firstname>
       <surname>Dubbs</surname>
     </author>
+    <!--
     <author revision="systemd">
       <firstname>編集： Douglas R.</firstname>
       <surname>Reno</surname>
     </author>
+    -->
     <author revision="systemd">
       <firstname>編集： DJ</firstname>
       <surname>Lucas</surname>

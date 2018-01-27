@@ -57,6 +57,51 @@
       <para>2018-01-13</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Add warnings about mounting /mnt/lfs and
+          the export of $LFS if restarting the host system. Add
+          comments to automate those actions.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /mnt/lfs のマウント時と、ホストシステム再起動時の $LFS エクスポートについて、それぞれ警告を追加。
+          これを自動化する方法を追記。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to mpfr-4.0.0.  Fixes
+          <ulink url="&lfs-ticket-root;4185">#4185</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpc-1.1.0.  Fixes
+          <ulink url="&lfs-ticket-root;4196">#4196</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - mpfr-4.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4185">#4185</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpc-1.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4196">#4196</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-01-13</para>
+      <itemizedlist>
+        <listitem>
           <para>[dj] - Simplify and correct Libelf instructions.</para>
         </listitem>
       </itemizedlist>
