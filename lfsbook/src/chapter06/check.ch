@@ -31,23 +31,23 @@
     <para>&PreparePackage1;Check&PreparePackage2;</para>
 @z
 
-@x
-      <title>The meaning of the configure parameter:</title>
-@y
-      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;:</title>
-@z
+%@x
+%      <title>The meaning of the configure parameter:</title>
+%@y
+%      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;:</title>
+%@z
 
-@x PKG_CONFIG=
-          <para>This tells the configure script to ignore any
-          pkg-config options that may cause the system to try to link
-          with libraries not in the <filename class="directory">/tools</filename>
-          directory.</para>
-@y
-          <para>
-          このパラメーターの指定により、configure スクリプトにて pkg-config のオプションが指定されてもすべて無視するようにします。
-          こうしておかないと、<filename class="directory">/tools</filename> ディレクトリに存在しないライブラリをリンクしようとしてしまうためです。
-          </para>
-@z
+%@x PKG_CONFIG=
+%          <para>This tells the configure script to ignore any
+%          pkg-config options that may cause the system to try to link
+%          with libraries not in the <filename class="directory">/tools</filename>
+%          directory.</para>
+%@y
+%          <para>
+%          このパラメーターの指定により、configure スクリプトにて pkg-config のオプションが指定されてもすべて無視するようにします。
+%          こうしておかないと、<filename class="directory">/tools</filename> ディレクトリに存在しないライブラリをリンクしようとしてしまうためです。
+%          </para>
+%@z
 
 @x
     <para>Build the package:</para>
@@ -56,14 +56,12 @@
 @z
 
 @x
-    <para>Compilation is now complete. As discussed earlier, running the test
-    suite is not mandatory for the temporary tools here in this chapter. To run
-    the Check test suite anyway, issue the following command:</para>
+    <para>Compilation is now complete.  To run the Check test suite, issue the
+    following command:</para>
 @y
     <para>
     コンパイルが終了しました。
-    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
-    しかしテストスイートを実行するなら、以下を実行します。
+    テストスイートを実行する場合は、以下を実行します。
     </para>
 @z
 

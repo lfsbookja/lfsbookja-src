@@ -239,7 +239,6 @@ CHANGE_FILES = \
 	bzip2.ch               \
 	changingowner.ch       \
 	chapter05.ch           \
-	check.ch               \
 	coreutils.ch           \
 	dejagnu.ch             \
 	diffutils.ch           \

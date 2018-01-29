@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2018-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.30.0.  Fixes
+          <ulink url="&lfs-ticket-root;4200">#4200</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-7.3.0.  Fixes
+          <ulink url="&lfs-ticket-root;4199">#4199</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2018c.  Fixes
+          <ulink url="&lfs-ticket-root;4198">#4198</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.14.15.  Fixes
+          <ulink url="&lfs-ticket-root;4197">#4197</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.30.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4200">#4200</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-7.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4199">#4199</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2018c へのアップデート。
+          <ulink url="&lfs-ticket-root;4198">#4198</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.14.15 へのアップデート。
+          <ulink url="&lfs-ticket-root;4197">#4197</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-01-13</para>
       <itemizedlist>
         <listitem>

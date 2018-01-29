@@ -244,6 +244,7 @@ CHANGE_FILES = \
 	bison.ch             \
 	bzip2.ch             \
 	chapter06.ch         \
+	check.ch             \
 	chroot.ch            \
 	coreutils.ch         \
 	createfiles.ch       \
