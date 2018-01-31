@@ -54,6 +54,46 @@
 @z
 
 @x
+      <para>2018-01-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Make /etc/vimrc set defaults properly.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Update to systemd-237. Fixes
+          <ulink url="&lfs-ticket-root;4203">#4203</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to linux-4.15. Fixes
+          <ulink url="&lfs-ticket-root;4202">#4202</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to ncurses-6.1. Fixes
+          <ulink url="&lfs-ticket-root;4201">#4201</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-01-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /etc/vimrc のデフォルトを適切に設定。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - systemd-237 へのアップデート。
+          <ulink url="&lfs-ticket-root;4203">#4203</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - linux-4.15 へのアップデート。
+          <ulink url="&lfs-ticket-root;4202">#4202</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - ncurses-6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4201">#4201</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-01-28</para>
       <itemizedlist>
         <listitem>

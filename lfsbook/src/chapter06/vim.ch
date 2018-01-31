@@ -181,7 +181,7 @@
     <command>vi</command> behavior. The <parameter>set backspace=2</parameter>
     setting allows backspacing over line breaks, autoindents, and the start of
     insert. The <parameter>syntax on</parameter> parameter enables vim's syntax
-    highlighting.  The <parameter>set mouse=r</parameter> setting enables
+    highlighting.  The <parameter>set mouse=</parameter> setting enables
     proper pasting of text with the mouse when working in chroot or over a
     remote connection.  Finally, the <emphasis>if</emphasis> statement with the
     <parameter>set background=dark</parameter> setting corrects
@@ -195,7 +195,7 @@
     <parameter>set backspace=2</parameter> を設定しておくと、行を超えてもバックスペースキーによる編集が可能となります。
     またインデントが自動的に行われ、コマンド起動時には自動的に挿入モードとなります。
     <parameter>syntax on</parameter> パラメーターを指定すれば vim の文法ハイライト (syntax highlighting) 機能が有効になります。
-    <parameter>set mouse=r</parameter> を指定すると chroot 環境やリモート接続時であってもマウスによるテキスト選択が適切になります。
+    <parameter>set mouse=</parameter> を指定すると chroot 環境やリモート接続時であってもマウスによるテキスト選択が適切になります。
     最後にある <emphasis>if</emphasis> 文は、<parameter>set background=dark</parameter> を指定した場合に、特定の端末エミュレーター上において <command>vim</command> が背景色を誤って認識しないようにするためのものです。
     エミュレーターの背景色が黒色であった場合に、より適切なハイライトが実現できます。
     </para>
