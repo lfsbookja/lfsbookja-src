@@ -197,6 +197,15 @@
 @z
 
 @x
+        <para><emphasis>misc/tst-ttyname</emphasis> 
+        is known to fail in the LFS chroot environment.</para>
+@y
+        <para>
+        <emphasis>misc/tst-ttyname</emphasis> は LFS の chroot 環境においては失敗します。
+        </para>
+@z
+
+@x
         <para><emphasis>posix/tst-getaddrinfo4</emphasis> and
         <emphasis>posix/tst-getaddrinfo5</emphasis>
         may fail on some architectures.</para>

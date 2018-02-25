@@ -26,19 +26,19 @@
 @z
 
 @x
-    <para>This package and the next three (Expect, DejaGNU, and Check) are
+    <para>This package and the next two (Expect and DejaGNU) are
     installed to support running the test suites for GCC and Binutils and other
-    packages.  Installing four packages for testing purposes may seem
+    packages.  Installing three packages for testing purposes may seem
     excessive, but it is very reassuring, if not essential, to know that the
     most important tools are working properly. Even if the test suites are not
     run in this chapter (they are not mandatory), these packages are required
     to run the test suites in <xref linkend="chapter-building-system"/>.</para>
 @y
     <para>
-    本パッケージとこれに続く三つのパッケージ (Expect と DejaGNU と Check) は、GCC および Binutils などにおけるテストスイートを実行するのに必要となるためインストールするものです。
-    テスト目的のためにこれら四つのパッケージをインストールするというのは、少々大げさなことかもしれません。
+    本パッケージとこれに続く 2 つのパッケージ (Expect と DejaGNU) は、GCC および Binutils などにおけるテストスイートを実行するのに必要となるためインストールするものです。
+    テスト目的のためにこれら 3 つのパッケージをインストールするというのは、少々大げさなことかもしれません。
     ただ本質的ではないことであっても、重要なツール類が正常に動作するという確認が得られれば安心できます。
-    本章ではテストスイートを実行することは必須ではないため、実行しないものとしていますが、それら四つのパッケージは <xref
+    本章ではテストスイートを実行することは必須ではないため、実行しないものとしていますが、それら 3 つのパッケージは <xref
     linkend="chapter-building-system"/>で行うテストのために必要となるものです。
     </para>
 @z

@@ -32,6 +32,14 @@
 @z
 
 @x
+    <para>First, work around an error caused by glibc-2.27:</para>
+@y
+    <para>
+    まずは glibc-2.27 が原因で発生するエラーを回避します。
+    </para>
+@z
+
+@x
     <para>Prepare Make for compilation:</para>
 @y
     <para>&PreparePackage1;Make&PreparePackage2;</para>

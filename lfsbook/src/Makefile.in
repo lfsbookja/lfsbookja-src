@@ -724,6 +724,10 @@ book: validate profile-html
 @PDF@@TAKAO@	@echo "Generating PDF file..."
 @PDF@@TAKAO@	cp -R $(BASEDIR)/images .;
 @PDF@@TAKAO@	$(FOP) -c userconfig.xml $(RENDERTMP)/lfs-pdf.fo ./$(PDF_OUTPUT)
+@PDF@@TAKAO@
+@PDF@@TAKAO@	@echo "Copying images to destination..."
+@PDF@@TAKAO@	$(Q)mkdir -p $(BASEDIR)/images
+@PDF@@TAKAO@	$(Q)cp images/*.png $(BASEDIR)/images
 
 @PDF@@TAKAO@userconfig.xml: $(srcdir)/userconfig.xml.in
 

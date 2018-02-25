@@ -103,6 +103,16 @@
           </para>
 @z
 
+@x --enable-64-bit-bfd
+           <para>Enables 64-bit support (on hosts with narrower word sizes).
+           May not be needed on 64-bit systems, but does no harm.</para>
+@y
+           <para>
+           64 ビットサポート（ホスト上でのワードサイズの縮小）を有効にします。
+           64 ビットシステムでも不要な場合がありますが、指定しておいて支障はありません。
+           </para>
+@z
+
 @x --with-system-zlib
           <para>Use the installed zlib library rather than building the
           included version.</para>

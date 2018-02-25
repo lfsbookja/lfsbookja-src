@@ -73,6 +73,12 @@
 @z
 
 @x
+    <para>One test, link mismatch, is known to fail.</para>
+@y
+    <para>link mismatch というテストは失敗します。</para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

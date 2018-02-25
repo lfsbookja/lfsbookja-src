@@ -1020,10 +1020,10 @@
 %----------------------------------------------------------------------
 @x Linux Kernel
          <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
-         Gzip, Kmod, Make, Ncurses, Perl, and Sed</seg>
+         Gzip, Kmod, Make, Ncurses, OpenSSL, Perl, and Sed</seg>
 @y
          <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
-         Gzip, Kmod, Make, Ncurses, Perl, Sed</seg>
+         Gzip, Kmod, Make, Ncurses, OpenSSL, Perl, Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -1031,9 +1031,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>OpenSSL</seg>
+          <seg>None</seg>
 @y
-          <seg>OpenSSL</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -1254,6 +1254,22 @@
           <seg>Asciidoc, Doxygen, Emacs, and re2c</seg>
 @y
           <seg>Asciidoc, Doxygen, Emacs, re2c</seg>
+@z
+%----------------------------------------------------------------------
+@x Openssl
+         <seg>Binutils, Coreutils, Gcc, Make, Perl</seg>
+@y
+         <seg>Binutils, Coreutils, Gcc, Make, Perl</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 %----------------------------------------------------------------------
 @x Patch

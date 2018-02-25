@@ -54,6 +54,175 @@
 @z
 
 @x
+      <para>2018-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.15.3. Fixes
+          <ulink url="&lfs-ticket-root;4218">#4218</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.15.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4218">#4218</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.8.1. Fixes
+          <ulink url="&lfs-ticket-root;4216">#4216</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-db-2.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4216">#4216</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Move OpenSSL-1.1.0g from BLFS to LFS
+             to support wireless operations in the linux kernel.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.43.9. Fixes
+          <ulink url="&lfs-ticket-root;4215">#4215</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[bdubbs] - Update to dbus-1.12.4. Fixes
+          <ulink url="&lfs-ticket-root;4214">#4214</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpfr-4.0.1. Fixes
+          <ulink url="&lfs-ticket-root;4213">#4213</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.15.2. Fixes
+          <ulink url="&lfs-ticket-root;4212">#4212</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to patch-2.7.6. Fixes
+          <ulink url="&lfs-ticket-root;4211">#4211</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux カーネルにおけるワイアレス操作をサポートするため OpenSSL-1.1.0g を BLFS から LFS に移動。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.43.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4215">#4215</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[bdubbs] - dbus-1.12.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4214">#4214</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpfr-4.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4213">#4213</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.15.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4212">#4212</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - patch-2.7.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4211">#4211</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to expect-5.45.4. Fixes
+          <ulink url="&lfs-ticket-root;4208">#4208</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.15.1. Fixes
+          <ulink url="&lfs-ticket-root;4209">#4209</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.8.0. Fixes
+          <ulink url="&lfs-ticket-root;4210">#4210</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - expect-5.45.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4208">#4208</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.15.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4209">#4209</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.8.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4210">#4210</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.27. Fixes
+          <ulink url="&lfs-ticket-root;4207">#4207</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-4.15. Fixes
+          <ulink url="&lfs-ticket-root;4206">#4206</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bash-4.4.18. Fixes
+          <ulink url="&lfs-ticket-root;4205">#4205</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.15.0. Fixes
+          <ulink url="&lfs-ticket-root;4204">#4204</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc-2.27 へのアップデート。
+          <ulink url="&lfs-ticket-root;4207">#4207</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-4.15 へのアップデート。
+          <ulink url="&lfs-ticket-root;4206">#4206</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash-4.4.18 へのアップデート。
+          <ulink url="&lfs-ticket-root;4205">#4205</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.15.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4204">#4204</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-01-30</para>
       <itemizedlist>
         <listitem>

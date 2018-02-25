@@ -69,6 +69,7 @@ CHANGE_FILES = \
 	mpfr.ch              \
 	ncurses.ch           \
 	ninja.ch             \
+	openssl.ch           \
 	patch.ch             \
 	perl.ch              \
 	pkgconfig.ch         \
