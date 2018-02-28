@@ -218,15 +218,12 @@
 @z
 
 @x
-    <para>Note that <filename class="directory">/tools/lib</filename>, or
-    <filename class="directory">/tools/lib64</filename> for 64-bit machines
-    appears as the prefix of the dynamic linker.</para>
+    <para>Note that <filename class="directory">/tools/lib</filename> wiil
+    be the prefix of the dynamic linker for 32-bit machines.</para>
 @y
     <para>
-    ここでダイナミックリンカーのディレクトリが <filename
-    class="directory">/tools/lib</filename> であることを確認してください。
-    あるいは 64 ビットマシンであれば <filename
-    class="directory">/tools/lib64</filename> であることを確認してください。
+    ここでダイナミックリンカーのプレフィックスは、32 ビットマシンに対しては <filename
+    class="directory">/tools/lib</filename> となります。
     </para>
 @z
 

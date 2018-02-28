@@ -190,11 +190,11 @@
 @z
 
 @x
-    <para>Note that for 64-bit machines, the interpreter name will be
-    <filename>/tools/lib64/ld-linux-x86-64.so.2</filename>.</para>
+    <para>Note that for 32-bit machines, the interpreter name will be
+    <filename>/tools/lib/ld-linux.so.2</filename>.</para>
 @y
     <para>
-    インタープリター名は 64ビットマシンの場合 <filename>/tools/lib64/ld-linux-x86-64.so.2</filename> となります。
+    インタープリター名は 32 ビットマシンの場合 <filename>/tools/lib/ld-linux.so.2</filename> となります。
     </para>
 @z
 

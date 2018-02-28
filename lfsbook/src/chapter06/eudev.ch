@@ -66,6 +66,21 @@
 @z
 
 @x
+<note><para>The LIBRARY_PATH variable here and the LD_LIBRARY_PATH variable
+below are needed to allow the use of libraries that were installed in /tools,
+but have not yet been installed in the main system.  LIBRARY_PATH is
+used to find libraries during the linking process.  LD_LIBRARY_PATH is
+used to find libraries during program execution.</para></note>
+@y
+<note><para>
+ここにある LIBRARY_PATH 変数と以降に示す LD_LIBRARY_PATH 変数は、いずれも /tools にインストールされているライブラリを用いるために必要となります。
+ただし構築システム内にはまだインストールしていません。
+LIBRARY_PATH はリンク時にライブラリを探すために必要となります。
+LD_LIBRARY_PATH は実行時にライブラリを探すために必要となります。
+</para></note>
+@z
+
+@x
 <para>Create some directories now that are needed for tests, but
 will also be used as a part of installation:</para>
 @y
