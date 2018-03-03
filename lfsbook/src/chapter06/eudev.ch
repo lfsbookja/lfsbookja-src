@@ -128,7 +128,7 @@ will also be used as a part of installation:</para>
 @x
     <para>Information about hardware devices is maintained in the
     <filename class="directory">/etc/udev/hwdb.d</filename> and
-    <filename class="directory">/usr/lib/udev/hwdb.d</filename> directories.
+    <filename class="directory">/lib/udev/hwdb.d</filename> directories.
     <application>Eudev</application> needs that information to be compiled
     into a binary database <filename>/etc/udev/hwdb.bin</filename>. Create the
     initial database:</para>
@@ -136,7 +136,7 @@ will also be used as a part of installation:</para>
     <para>
     ハードウェアデバイスに関する情報は、<filename
     class="directory">/etc/udev/hwdb.d</filename> ディレクトリおよび <filename
-    class="directory">/usr/lib/udev/hwdb.d</filename> ディレクトリに収容されています。
+    class="directory">/lib/udev/hwdb.d</filename> ディレクトリに収容されています。
     <application>Eudev</application> はこの情報をとりまとめて、バイナリデータベース <filename>/etc/udev/hwdb.bin</filename> を作成しています。
     このデータベース初期化は以下により実現します。
     </para>
