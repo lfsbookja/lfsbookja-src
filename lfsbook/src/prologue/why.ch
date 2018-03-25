@@ -617,6 +617,17 @@
         </para>
 @z
 
+@x Openssl
+        <para>This package provides management tools and libraries relating to
+        cryptography. These are useful for providing cryptographic functions to
+        other packages, including the Linux kernel.</para>
+@y
+        <para>
+        このパッケージは暗号化に関する管理ツールやライブラリを提供します。
+        Linux カーネルや他のパッケージに対して、暗号化機能を提供するものとして有用です。
+        </para>
+@z
+
 @x Patch
         <para>This package contains a program for modifying or creating files by
         applying a <emphasis>patch</emphasis> file typically created 

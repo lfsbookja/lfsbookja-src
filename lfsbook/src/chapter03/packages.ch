@@ -248,15 +248,6 @@
         <para>&Homepage;: <ulink url="&glibc-home;"/></para>
         <para>&Download;: <ulink url="&glibc-url;"/></para>
 @z
-@x
-          <para>This version of glibc addresses a security issue 
-          not yet in the latest stable release.  
-          </para>
-@y
-          <para>
-          glibc のこのバージョンはセキュリティ問題へ対処したものであり、まだ最新の安定版には取り込まれていないものです。
-          </para>
-@z
 
 @x gmp
         <para>Home page: <ulink url="&gmp-home;"/></para>

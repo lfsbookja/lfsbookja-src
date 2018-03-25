@@ -41,18 +41,32 @@
 @z
 
 @x
-    <para>There are a couple of tests that incorrectly link to the 
+<!--<para>There are a couple of tests that incorrectly link to the 
     wrong version of the flex library, so we temporarily work around
     the problem.  Also, using the -j4 make option speeds up the tests, even on
     systems with only one processor, due to internal delays in individual
     tests.  To test the results, issue:</para>
+ -->
 @y
-    <para>
+<!--<para>
     テストの中に flex ライブラリへの誤ったバージョンへのリンクがなされているものがいくつかあります。
     ここでは一時的にこの問題を解消します。
     また make のオプションとして -j4 を加えることで、テスト処理を早めます。
     たとえただ一つのプロセッサーしか持たないシステムであっても、個々のテストにて内部遅延があるためです。
     テストは以下を実行します。
+    </para>
+ -->
+@z
+
+@x
+    <para> Using the -j4 make option speeds up the tests, even on systems with
+    only one processor, due to internal delays in individual tests.  To test
+    the results, issue:</para>
+@y
+    <para>
+    make オプションの -j4 を用いるとテストを速く進めることができます。
+    たとえ 1 つのプロセッサーであっても有用であり、個々のテストにおける内部遅延に関係するためです。
+    ビルド結果をテストするには以下を実行します。
     </para>
 @z
 

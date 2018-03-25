@@ -126,7 +126,7 @@
 @z
 @x
         <para>Ensure the installed files have the correct ownership and 
-        prermissions.  Without these options, using <application>tar</application>
+        permissions.  Without these options, using <application>tar</application>
         will install the package files with the upstream creator's values. 
         </para>
 @y

@@ -62,21 +62,21 @@
 @z
 
 @x
-      <para><emphasis role="strong">Binutils-2.17</emphasis> (Versions
+      <para><emphasis role="strong">Binutils-2.25</emphasis> (Versions
       greater than &binutils-version; are not recommended as they have
       not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">Binutils-2.17</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">Binutils-2.25</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
 @z
 
 @x
-      <para><emphasis role="strong">Bison-2.3</emphasis> (/usr/bin/yacc
+      <para><emphasis role="strong">Bison-2.7</emphasis> (/usr/bin/yacc
       should be a link to bison or small script that executes bison)</para>
 @y
       <para>
-      <emphasis role="strong">Bison-2.3</emphasis> (/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)
+      <emphasis role="strong">Bison-2.7</emphasis> (/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)
       </para>
 @z
 
@@ -90,31 +90,13 @@
 @z
 
 @x
-      <para><emphasis role="strong">GCC-4.7</emphasis> including the C++
+      <para><emphasis role="strong">GCC-4.9</emphasis> including the C++
       compiler, <command>g++</command> (Versions greater than &gcc-version; are
       not recommended as they have not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">GCC-4.7</emphasis> と C++ コンパイラである <command>g++</command> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">GCC-4.9</emphasis> と C++ コンパイラである <command>g++</command> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
-@z
-
-@x
-      <note><para>On some distributions, there have been reports that some
-      libraries used by gcc can be in an inconsistent state and that this
-      interferes with building some LFS packages.  To check this, look in
-      /usr/lib and possibly /usr/lib64 for libgmp.la, libmpfr.la, and
-      libmpc.la.  Either all three should be present or absent, but not only
-      one or two.  If the problem exists on your system, either rename or
-      delete the .la files or install the appropriate missing
-      package.</para></note>
-@y
-      <note><para>
-      gcc が利用しているライブラリが矛盾した状態になっていて、LFS パッケージのビルドに失敗するという、そのようなディストリビューションがあることが報告されています。
-      そうであるかどうかは、/usr/lib または /usr/lib64 の中にある libgmp.la, libmpfr.la, libmpc.la を見てみてください。
-      これらは三つともすべて存在するか、逆にすべて存在しないことが正しいことであって、１つだけや２つだけという状態であってはなりません。
-      もしシステムがそのような状態になっていたら、 .la ファイルをリネームするか削除するか、あるいは存在していないライブラリのパッケージを再インストールしてください。
-      </para></note>
 @z
 
 @x

@@ -92,14 +92,11 @@
 @x
     <listitem><para>If you want to access your new system from a remote system
     within a comfortable GUI environment, install <ulink
-    url='&blfs-book;postlfs/openssh.html'>openssh</ulink> and its
-    prerequisite, <ulink
-    url='&blfs-book;postlfs/openssl.html'>openssl</ulink>.
+    url='&blfs-book;postlfs/openssh.html'>openssh</ulink>. 
     </para></listitem>
 @y
     <listitem><para>利用しやすい GUI 操作を通じてリモート接続を行いたい場合は <ulink
-    url='&blfs-book;postlfs/openssh.html'>openssh</ulink> とその依存パッケージである <ulink
-    url='&blfs-book;postlfs/openssl.html'>openssl</ulink> をインストールします。
+    url='&blfs-book;postlfs/openssh.html'>openssh</ulink> をインストールします。
     </para></listitem>
 @z
 

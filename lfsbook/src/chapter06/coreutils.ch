@@ -70,6 +70,16 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
+@x autoreconf
+          <para>This command updates generated configuration files 
+          consistent with the latest version of automake.
+          </para>
+@y
+          <para>
+          このコマンドは automake 最新版との整合を図るために、既に生成されている設定ファイル類を更新します。
+          </para>
+@z
+
 @x FORCE_UNSAFE_CONFIGURE=1
           <para>This environment variable allows the package to be 
           built as the root user.

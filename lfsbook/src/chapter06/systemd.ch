@@ -51,6 +51,12 @@
 @z
 
 @x
+    <para>Make some fixes from upstream:</para>
+@y
+    <para>アップストリームが示す修正を行います。</para>
+@z
+
+@x
     <para>Remove an unneeded group,
     <systemitem class="groupname">render</systemitem>, from the default udev
     rules:</para>
