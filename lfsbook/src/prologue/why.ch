@@ -735,7 +735,7 @@
 @z
 
 @x Systemd
-        <para>This package provides and <application>init</application> program
+        <para>This package provides an <application>init</application> program
         and several additional boot and system control capabilities as an
         alternative to Sysvinit.  It is used by many commercial distributions.
         </para>

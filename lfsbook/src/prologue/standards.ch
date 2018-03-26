@@ -49,10 +49,10 @@
 
 @x
         <para><ulink url="http://refspecs.linuxfoundation.org/lsb.shtml">Linux
-        Standard Base (LSB) Version 5.0</ulink></para>
+        Standard Base (LSB) Version 5.0 (2015)</ulink></para>
 @y
         <para><ulink url="http://refspecs.linuxfoundation.org/lsb.shtml">Linux
-        Standard Base (LSB) Version 5.0</ulink></para>
+        Standard Base (LSB) Version 5.0 (2015)</ulink></para>
 @z
 
 @x
@@ -199,7 +199,7 @@
         <listitem>
           <para>Alsa, ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
           Gdk-pixbuf, Glib2, GTK+2, Icon-naming-utils, Libjpeg-turbo, Libpng, Libtiff,
-          Libxml2, MesaLib, Pango, Qt4, Xdg-utils, Xorg</para>
+          Libxml2, MesaLib, Pango, Xdg-utils, Xorg</para>
         </listitem>
 @y
         <term><emphasis>LSB デスクトップ:</emphasis></term>
@@ -268,12 +268,12 @@
 @x
         <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
-          <para>None</para>
+          <para>Qt4 (but Qt5 is provided)</para>
         </listitem>
 @y
         <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
-          <para>なし</para>
+          <para>Qt4 (Qt5 が提供されている)</para>
         </listitem>
 @z
 
