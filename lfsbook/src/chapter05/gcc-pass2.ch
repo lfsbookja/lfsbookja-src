@@ -218,12 +218,11 @@
 @z
 
 @x
-    <para>Note that <filename class="directory">/tools/lib</filename> wiil
-    be the prefix of the dynamic linker for 32-bit machines.</para>
+    <para>Note that the dynamic linker will be /tools/lib/ld-linux.so.2 
+    for 32-bit machines.</para>
 @y
     <para>
-    ここでダイナミックリンカーのプレフィックスは、32 ビットマシンに対しては <filename
-    class="directory">/tools/lib</filename> となります。
+    32 ビットマシンに対するダイナミックリンカーは /tools/lib/ld-linux.so.2 となります。
     </para>
 @z
 

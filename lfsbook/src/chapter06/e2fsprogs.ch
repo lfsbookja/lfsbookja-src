@@ -140,13 +140,15 @@
     If you do not have significantly more RAM than this, be sure to enable
     sufficient swap space for the test. See <xref
     linkend="space-creatingfilesystem"/> and <xref linkend="space-mounting"/>
-    for details on creating and enabling swap space.</para>
+    for details on creating and enabling swap space.  Two tests, f_bigalloc_badinode
+    and f_bigalloc_orphan_list, are known ot fail.</para>
 @y
     <para>
     E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
     この容量を確保できるだけの RAM がない場合は、十分なスワップ領域が利用可能であることを確認してください。
     スワップ領域の生成と有効化については <xref
     linkend="space-creatingfilesystem"/>と <xref linkend="space-mounting"/>を参照してください。
+    f_bigalloc_badinode と f_bigalloc_orphan_list というテスト 2 つは失敗します。
     </para>
 @z
 

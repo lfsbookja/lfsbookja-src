@@ -20,9 +20,9 @@
 @z
 
 @x
-    <title>Installation of Tcl-core</title>
+    <title>Installation of Tcl</title>
 @y
-    <title>&InstallationOf1;Tcl-core&InstallationOf2;</title>
+    <title>&InstallationOf1;Tcl&InstallationOf2;</title>
 @z
 
 @x
@@ -131,9 +131,9 @@
 @z
 
 @x
-    <title>Contents of Tcl-core</title>
+    <title>Contents of Tcl</title>
 @y
-    <title>&ContentsOf1;Tcl-core&ContentsOf2;</title>
+    <title>&ContentsOf1;Tcl&ContentsOf2;</title>
 @z
 
 @x
