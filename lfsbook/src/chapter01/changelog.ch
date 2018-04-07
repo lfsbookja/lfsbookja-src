@@ -54,6 +54,64 @@
 @z
 
 @x
+      <para>2018-04-06</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Add libelf to rationale. Fixes 
+           <ulink url="&lfs-ticket-root;4252">#4252</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to man-db-2.8.3.  Fixes 
+           <ulink url="&lfs-ticket-root;4255">#4255</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to iproute2-4.16.0.  Fixes 
+           <ulink url="&lfs-ticket-root;4254">#4254</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.16.  Fixes 
+           <ulink url="&lfs-ticket-root;4250">#4250</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to procps-ng-3.3.13.  Fixes 
+           <ulink url="&lfs-ticket-root;4263">#4253</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to sed-4.5.  Fixes 
+           <ulink url="&lfs-ticket-root;4251">#4251</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-04-06</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - 各パッケージを用いる理由の節に libelf を追加。
+           <ulink url="&lfs-ticket-root;4252">#4252</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - man-db-2.8.3 へのアップデート。
+           <ulink url="&lfs-ticket-root;4255">#4255</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - iproute2-4.16.0 へのアップデート。
+           <ulink url="&lfs-ticket-root;4254">#4254</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.16 へのアップデート。
+           <ulink url="&lfs-ticket-root;4250">#4250</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - procps-ng-3.3.13 へのアップデート。
+           <ulink url="&lfs-ticket-root;4263">#4253</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - sed-4.5 へのアップデート。
+           <ulink url="&lfs-ticket-root;4251">#4251</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-03-23</para>
       <itemizedlist>
         <listitem>

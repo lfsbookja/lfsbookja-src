@@ -470,7 +470,19 @@
         </para>
 @z
 
-@x libffi
+@x Libelf
+        <para>The elfutils project provides libraries and tools for ELF files
+        and DWARF data.  Most utilities in this package are available in
+        other packages, but the library is needed to build the Linux
+        kernel using the default (and most efficient) configuration.</para>
+@y
+        <para>
+        elfutils プロジェクトでは、ELF ファイルや DWARF データに対するライブラリやツールを提供しています。
+        他のパッケージに対して各種ユーティリティーは有用なものですが、ライブラリは Linux カーネルのビルドに必要であり、デフォルトの（最も効果的な）カーネル設定にて利用されます。
+        </para>
+@z
+
+@x Libffi
         <para>This package implements a portable, high level programming
         interface to various calling conventions.  Some programs may not know
         at the time of compilation what arguments are to be passed to a
