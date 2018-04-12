@@ -54,6 +54,38 @@
 @z
 
 @x
+      <para>2018-04-11</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Fix appdata.loc file in gettext.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.16.1.  Fixes 
+           <ulink url="&lfs-ticket-root;4256">#4256</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to procps-ng-3.3.14.  Fixes 
+           <ulink url="&lfs-ticket-root;4267">#4257</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-04-11</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - gettext における appdata.loc ファイルを修正。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.16.1 へのアップデート。
+           <ulink url="&lfs-ticket-root;4256">#4256</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - procps-ng-3.3.14 へのアップデート。
+           <ulink url="&lfs-ticket-root;4267">#4257</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-04-06</para>
       <itemizedlist>
         <listitem>

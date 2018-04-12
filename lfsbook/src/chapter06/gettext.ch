@@ -42,6 +42,14 @@
 @z
 
 @x
+   <para>Now fix a configuration file:</para>
+@y
+   <para>
+   設定ファイルを修正します。
+   </para>
+@z
+
+@x
     <para>Prepare Gettext for compilation:</para>
 @y
     <para>&PreparePackage1;Gettext&PreparePackage2;</para>
