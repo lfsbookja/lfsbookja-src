@@ -54,25 +54,33 @@
 @z
 
 @x
+    <para>At last, move Meson man pages to correct location:</para>
+@y
+    <para>
+    最後に Meson の man ページを適切なディレクトリに移動します。
+    </para>
+@z
+
+@x
     <title>Contents of Meson</title>
 @y
     <title>&ContentsOf1;Meson&ContentsOf2;</title>
 @z
 
 @x
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed programs</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
-        <seg>libmeson.so</seg>
-        <seg>/usr/share/doc/meson-&meson-version;</seg>
+        <seg>meson, mesonconf, mesonintrospect, mesontest, and wraptool</seg>
+		<seg>/usr/lib/python3.6/site-packages/meson-&meson-version;-py3.6.egg</seg>
 @y
-        <seg>libmeson.so</seg>
-        <seg>/usr/share/doc/meson-&meson-version;</seg>
+        <seg>meson, mesonconf, mesonintrospect, mesontest, wraptool</seg>
+		<seg>/usr/lib/python3.6/site-packages/meson-&meson-version;-py3.6.egg</seg>
 @z
 
 @x
@@ -81,10 +89,34 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libmeson
-          <para>Contains multiple-precision math functions</para>
+@x meson
+          <para>A high productivity build system</para>
 @y
           <para>
-          倍精度演算（multiple precision） の関数を提供します。
+          生産性の高いビルドシステム。
+          </para>
+@z
+
+@x mesonconf
+          <para>A tool to configure Meson builds</para>
+@y
+          <para>
+          Meson ビルドを設定するツール。
+          </para>
+@z
+
+@x mesonintrospect
+          <para>A tool to extract information about a Meson build</para>
+@y
+          <para>
+          Meson ビルドの情報を抽出するツール。
+          </para>
+@z
+
+@x wraptool
+          <para>Test tool for the Meson build system</para>
+@y
+          <para>
+          Meson ビルドシステム用のテストツール。
           </para>
 @z

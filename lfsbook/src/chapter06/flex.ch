@@ -102,11 +102,11 @@
 
 @x
         <seg>flex, flex++ (link to flex), and lex (link to flex)</seg>
-        <seg>libfl.so and libfl_pic.so</seg>
+        <seg>libfl.so</seg>
         <seg>/usr/share/doc/flex-&flex-version;</seg>
 @y
         <seg>flex, flex++ (flex へのリンク), lex (flex へのリンク)</seg>
-        <seg>libfl.so, libfl_pic.so</seg>
+        <seg>libfl.so</seg>
         <seg>/usr/share/doc/flex-&flex-version;</seg>
 @z
 
@@ -140,11 +140,11 @@
 @z
 
 @x lex
-          <para>A script that runs <command>flex</command> in
+          <para>A symbolic link that runs <command>flex</command> in
           <command>lex</command> emulation mode</para>
 @y
           <para>
-          <command>lex</command> のエミュレーションモードとして <command>flex</command> を実行するスクリプト。
+          <command>lex</command> のエミュレーションモードとして <command>flex</command> を実行するシンボリックリンク。
           </para>
 @z
 

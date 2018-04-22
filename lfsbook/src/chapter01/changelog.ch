@@ -54,6 +54,58 @@
 @z
 
 @x
+      <para>2018-04-20</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.16.2.  Fixes 
+           <ulink url="&lfs-ticket-root;4258">#4258</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to file-5.33.  Fixes 
+           <ulink url="&lfs-ticket-root;4261">#4261</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to perl-5.26.2.  Fixes 
+           <ulink url="&lfs-ticket-root;4260">#4260</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-04-20</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - linux-4.16.2 へのアップデート。
+           <ulink url="&lfs-ticket-root;4258">#4258</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - file-5.33 へのアップデート。
+           <ulink url="&lfs-ticket-root;4261">#4261</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - perl-5.26.2 へのアップデート。
+           <ulink url="&lfs-ticket-root;4260">#4260</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-04-16</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Fix man pages and descriptions in meson.
+           Thanks to Xi Ruoyao for the patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-04-16</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - meson の man ページと説明を改正。
+           パッチを提供してくれた Xi Ruoyao に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-04-11</para>
       <itemizedlist>
         <listitem>

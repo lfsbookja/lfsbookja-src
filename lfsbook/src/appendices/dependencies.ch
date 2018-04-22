@@ -101,6 +101,11 @@
           <seg>Automake, Diffutils, Findutils, Libtool</seg>
 @z
 @x
+          <seg>Coreutils, Sed, Tar, and Vim</seg>
+@y
+          <seg>Coreutils, Sed, Tar, Vim</seg>
+@z
+@x
           <seg>None</seg>
 @y
           <seg>なし</seg>
@@ -118,6 +123,11 @@
           <seg>Automake, Diffutils, Findutils, and Libtool</seg>
 @y
           <seg>Automake, Diffutils, Findutils, Libtool</seg>
+@z
+@x
+          <seg>Acl and Libcap</seg>
+@y
+          <seg>Acl, Libcap</seg>
 @z
 @x
           <seg>None</seg>
@@ -147,12 +157,10 @@
 @z
 @x
           <seg>Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
-          Flex, GCC, Gettext, Gzip, Libtool, and Tar.</seg>
+          Flex, GCC, Gettext, Gzip, Libtool, and Tar</seg>
 @y
-          <seg>
-          Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
-          Flex, GCC, Gettext, Gzip, Libtool, Tar
-          </seg>
+          <seg>Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
+          Flex, GCC, Gettext, Gzip, Libtool, Tar</seg>
 @z
 @x
           <seg>None</seg>
@@ -205,11 +213,11 @@
 
 %----------------------------------------------------------------------
 @x binutils
-         <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc, Grep,
-         Make, Perl, Sed, Texinfo and Zlib</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc,
+         Grep, Make, Perl, Sed, Texinfo and Zlib</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc, Grep,
-         Make, Perl, Sed, Texinfo, Zlib</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc,
+         Grep, Make, Perl, Sed, Texinfo, Zlib</seg>
 @z
 @x
           <seg>DejaGNU and Expect</seg>
@@ -311,9 +319,9 @@
           <seg>Diffutils, E2fsprogs, Findutils, Shadow, Util-linux</seg>
 @z
 @x
-          <seg>Bash, Diffutils, Findutils, Man-DB, and Eudev</seg>
+          <seg>Bash, Diffutils, Eudev, Findutils, and Man-DB</seg>
 @y
-          <seg>Bash, Diffutils, Findutils, Man-DB, Eudev</seg>
+          <seg>Bash, Diffutils, Eudev, Findutils, Man-DB</seg>
 @z
 @x
           <seg>Perl Expect and IO:Tty modules (for test suite)</seg>
@@ -352,9 +360,9 @@
           Make, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Diffutils, Perl</seg>
+          <seg>Perl</seg>
 @y
-          <seg>Diffutils, Perl</seg>
+          <seg>Perl</seg>
 @z
 @x
           <seg>None</seg>
@@ -443,9 +451,9 @@
          Gzip, Make, Sed, Texinfo, Util-linux</seg>
 @z
 @x
-          <seg>Procps-ng,Psmisc</seg>
+          <seg>Procps-ng and Psmisc</seg>
 @y
-          <seg>Procps-ng,Psmisc</seg>
+          <seg>Procps-ng, Psmisc</seg>
 @z
 @x
           <seg>None</seg>
@@ -533,7 +541,7 @@
 %----------------------------------------------------------------------
 @x Gawk
          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Make,
-         MPFR, Patch, Readline, Sed and Texinfo</seg>
+         MPFR, Patch, Readline, Sed, and Texinfo</seg>
 @y
          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Make,
          MPFR, Patch, Readline, Sed, Texinfo</seg>
@@ -576,7 +584,7 @@
 @z
 @x
           <seg><ulink url="http://gcc.gnu.org/wiki/Graphite">CLooG-PPL</ulink>,
-               <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink> and
+               <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>, and
                <ulink url="http://gcc.gnu.org/wiki/Graphite">PPL</ulink></seg>
 @y
           <seg><ulink url="http://gcc.gnu.org/wiki/Graphite">CLooG-PPL</ulink>,
@@ -586,9 +594,11 @@
 
 %----------------------------------------------------------------------
 @x GDBM
-         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Grep, Make, and Sed</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Grep, Make, 
+         and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Grep, Make, Sed</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Grep, Make, 
+         Sed</seg>
 @z
 @x
           <seg>None</seg>
@@ -656,11 +666,11 @@
 
 %----------------------------------------------------------------------
 @x GMP
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, M4, Make,
-         Sed and Texinfo</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         M4, Make, Sed, and Texinfo</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, M4, Make,
-         Sed, Texinfo</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         M4, Make, Sed, Texinfo</seg>
 @z
 @x
           <seg>None</seg>
@@ -668,7 +678,7 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>MPFR, GCC</seg>
+          <seg>MPFR and GCC</seg>
 @y
           <seg>MPFR, GCC</seg>
 @z
@@ -679,10 +689,15 @@
 @z
 
 %----------------------------------------------------------------------
-@x gperf
-         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+@x Gperf
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, and Make</seg>
 @y
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+@z
+@x
+          <seg>Diffutils and Expect</seg>
+@y
+          <seg>Diffutils, Expect</seg>
 @z
 @x
           <seg>None</seg>
@@ -771,7 +786,7 @@
          Sed, Texinfo</seg>
 @z
 @x
-          <seg>Diffutils, Less</seg>
+          <seg>Diffutils and Less</seg>
 @y
           <seg>Diffutils, Less</seg>
 @z
@@ -900,7 +915,7 @@
 %----------------------------------------------------------------------
 @x Kmod
          <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-         Gzip, Make, Sed, Xz-Utils, Zlib</seg>
+         Gzip, Make, Sed, Xz-Utils, and Zlib</seg>
 @y
          <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
          Gzip, Make, Sed, Xz-Utils, Zlib</seg>
@@ -942,9 +957,11 @@
 
 %----------------------------------------------------------------------
 @x Libcap
-         <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Perl, Make, and Sed</seg>
+         <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Perl, Make,
+         and Sed</seg>
 @y
-         <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Perl, Make, Sed</seg>
+         <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Perl, Make,
+         Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -1002,7 +1019,7 @@
          Make, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Autoconf, Automake, Findutils</seg>
+          <seg>Autoconf, Automake, and Findutils</seg>
 @y
           <seg>Autoconf, Automake, Findutils</seg>
 @z
@@ -1019,11 +1036,11 @@
 
 %----------------------------------------------------------------------
 @x Linux Kernel
-         <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
-         Gzip, Kmod, Make, Ncurses, OpenSSL, Perl, and Sed</seg>
+         <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc,
+         Grep, Gzip, Kmod, Make, Ncurses, OpenSSL, Perl, and Sed</seg>
 @y
-         <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
-         Gzip, Kmod, Make, Ncurses, OpenSSL, Perl, Sed</seg>
+         <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc,
+         Grep, Gzip, Kmod, Make, Ncurses, OpenSSL, Perl, Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -1163,7 +1180,7 @@
 %----------------------------------------------------------------------
 @x MPC
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
-         Make, MPFR, Sed and Texinfo</seg>
+         Make, MPFR, Sed, and Texinfo</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
          Make, MPFR, Sed, Texinfo</seg>
@@ -1187,7 +1204,7 @@
 %----------------------------------------------------------------------
 @x MPFR
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
-         Make, Sed and Texinfo</seg>
+         Make, Sed, and Texinfo</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
          Make, Sed, Texinfo</seg>
@@ -1198,7 +1215,7 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>Gawk, GCC</seg>
+          <seg>Gawk and GCC</seg>
 @y
           <seg>Gawk, GCC</seg>
 @z
@@ -1222,11 +1239,11 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Bash, GRUB, Inetutils, Less, Procps-ng, Psmisc, Readline, Texinfo,
-          Util-linux, and Vim</seg>
+          <seg>Bash, GRUB, Inetutils, Less, Procps-ng, Psmisc, Readline,
+          Texinfo, Util-linux, and Vim</seg>
 @y
-          <seg>Bash, GRUB, Inetutils, Less, Procps-ng, Psmisc, Readline, Texinfo,
-          Util-linux, Vim</seg>
+          <seg>Bash, GRUB, Inetutils, Less, Procps-ng, Psmisc, Readline,
+          Texinfo, Util-linux, Vim</seg>
 @z
 @x
           <seg>None</seg>
@@ -1241,7 +1258,7 @@
 <!-- Begin Ninja dependency info -->
 @z
 @x
-         <seg>Binutils, Coreutils, Gcc, Python</seg>
+         <seg>Binutils, Coreutils, Gcc, and Python</seg>
 @y
          <seg>Binutils, Coreutils, Gcc, Python</seg>
 @z
@@ -1257,7 +1274,7 @@
 @z
 %----------------------------------------------------------------------
 @x Openssl
-         <seg>Binutils, Coreutils, Gcc, Make, Perl</seg>
+         <seg>Binutils, Coreutils, Gcc, Make, and Perl</seg>
 @y
          <seg>Binutils, Coreutils, Gcc, Make, Perl</seg>
 @z
@@ -1343,7 +1360,7 @@
 
 %----------------------------------------------------------------------
 @x Popt
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make</seg>
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, and Make</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make</seg>
 @z
@@ -1382,11 +1399,11 @@
 
 %----------------------------------------------------------------------
 @x Psmisc
-         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Ncurses,
-         and Sed</seg>
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
+         Ncurses, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Ncurses,
-         Sed</seg>
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
+         Ncurses, Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -1447,7 +1464,7 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Bash, Gawk</seg>
+          <seg>Bash and Gawk</seg>
 @y
           <seg>Bash, Gawk</seg>
 @z
@@ -1500,7 +1517,7 @@
           <seg>Coreutils</seg>
 @z
 @x
-          <seg>Acl, Attr, Cracklib, PAM</seg>
+          <seg>Acl, Attr, Cracklib, and PAM</seg>
 @y
           <seg>Acl, Attr, Cracklib, PAM</seg>
 @z
@@ -1649,11 +1666,11 @@
 
 %----------------------------------------------------------------------
 @x Util-linux
-         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Ncurses, Sed, Eudev, and Zlib</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, Eudev, Findutils, Gawk, GCC,
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, and Zlib</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Ncurses, Sed, Eudev, Zlib</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, Eudev, Findutils, Gawk, GCC,
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, Zlib</seg>
 @z
 @x
           <seg>None</seg>
@@ -1708,8 +1725,8 @@
 @z
 
 %----------------------------------------------------------------------
-@x Xz
-         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, and Make.</seg>
+@x Xz-utils
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, and Make</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Make</seg>
 @z
@@ -1719,9 +1736,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GRUB, Kmod, Man-DB, Eudev</seg>
+          <seg>Eudev, GRUB, Kmod, and Man-DB</seg>
 @y
-          <seg>GRUB, Kmod, Man-DB, Eudev</seg>
+          <seg>Eudev, GRUB, Kmod, Man-DB</seg>
 @z
 @x
           <seg>None</seg>

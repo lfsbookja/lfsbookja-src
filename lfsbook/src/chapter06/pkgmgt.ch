@@ -106,7 +106,7 @@
 
 @x
         <para>If Glibc needs to be upgraded to a newer version, (e.g.  from
-        glibc-2.19 to glibc-2.20, it is safer to rebuild LFS.  Though you
+        glibc-2.19 to glibc-2.20), it is safer to rebuild LFS.  Though you
         <emphasis>may</emphasis> be able to rebuild all the packages in their
         dependency order, we do not recommend it.  </para>
 @y

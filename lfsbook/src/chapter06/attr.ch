@@ -155,7 +155,7 @@
 @z
 
 @x libattr
-          <para>Contains the libbrary functions for manipulating extended attributes</para>
+          <para>Contains the library functions for manipulating extended attributes</para>
 @y
           <para>
           拡張属性を制御するライブラリ関数を提供します。
