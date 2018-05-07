@@ -54,6 +54,72 @@
 @z
 
 @x
+      <para>2018-05-05</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to gcc-8.1.0.  Fixes 
+           <ulink url="&lfs-ticket-root;4268">#4268</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.16.7.  Fixes 
+           <ulink url="&lfs-ticket-root;4262">#4262</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to man-pages-4.16.  Fixes 
+           <ulink url="&lfs-ticket-root;4266">#4266</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to meson-0.46.0.  Fixes 
+           <ulink url="&lfs-ticket-root;4263">#4263</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to shadow-4.6.  Fixes 
+           <ulink url="&lfs-ticket-root;4264">#4264</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to tzdata-2018e.  Fixes 
+           <ulink url="&lfs-ticket-root;4269">#4269</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to xz-5.2.4.  Fixes 
+           <ulink url="&lfs-ticket-root;4265">#4265</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-05-05</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - gcc-8.1.0 へのアップデート。
+           <ulink url="&lfs-ticket-root;4268">#4268</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.16.7 へのアップデート。
+           <ulink url="&lfs-ticket-root;4262">#4262</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - man-pages-4.16 へのアップデート。
+           <ulink url="&lfs-ticket-root;4266">#4266</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - meson-0.46.0 へのアップデート。
+           <ulink url="&lfs-ticket-root;4263">#4263</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - shadow-4.6 へのアップデート。
+           <ulink url="&lfs-ticket-root;4264">#4264</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - tzdata-2018e へのアップデート。
+           <ulink url="&lfs-ticket-root;4269">#4269</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - xz-5.2.4 へのアップデート。
+           <ulink url="&lfs-ticket-root;4265">#4265</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-04-20</para>
       <itemizedlist>
         <listitem>

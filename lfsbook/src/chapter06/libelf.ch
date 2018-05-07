@@ -39,6 +39,14 @@
 @z
 
 @x
+    <para>Fiirst, fix a file to be compatible with gcc-8"</para>
+@y
+    <para>
+    gcc-8 との互換性をもつためにファイルを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Libelf for compilation:</para>
 @y
     <para>&PreparePackage1;Libelf&PreparePackage2;</para>
