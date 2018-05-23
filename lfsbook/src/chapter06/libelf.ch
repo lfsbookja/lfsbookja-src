@@ -39,7 +39,7 @@
 @z
 
 @x
-    <para>Fiirst, fix a file to be compatible with gcc-8"</para>
+    <para>First, fix a file to be compatible with gcc-8"</para>
 @y
     <para>
     gcc-8 との互換性をもつためにファイルを修正します。

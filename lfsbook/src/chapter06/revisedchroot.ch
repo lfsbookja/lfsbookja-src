@@ -28,18 +28,20 @@
 @z
 
 @x
-  <para>From now on, when reentering the chroot environment after
-  exiting, use the following modified chroot command:</para>
+  <para>Now log out and reenter the chroot environment with an updated
+  chroot command.  From now on, use this updated chroot command any time 
+  you need to reenter the chroot environment after exiting:</para>
 @y
   <para>
-  それまで入っていた chroot 環境からいったん抜け出て、以下の chroot コマンドにより入り直します。
+  これまで入っていた chroot 環境からいったん抜け出て、新たな chroot コマンドにより入り直します。
+  これ以降 chroot 環境に入るには、ここで用いる chroot コマンドを用いていくことにします。
   </para>
 @z
 
 @x
   <para>The reason for this is that the programs in <filename
-  class="directory">/tools</filename> are no longer needed.  Since they are no
-  longer needed you can delete the <filename class="directory">/tools</filename>
+  class="directory">/tools</filename> are no longer needed.  For this reason
+  you can delete the <filename class="directory">/tools</filename>
   directory if so desired.</para>
 @y
   <para>

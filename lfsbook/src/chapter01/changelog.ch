@@ -54,6 +54,99 @@
 @z
 
 @x
+      <para>2018-05-22</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update several urls to https.  Fixes 
+           <ulink url="&lfs-ticket-root;4274">#4274</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to procps-ng-3.3.15.  Fixes 
+           <ulink url="&lfs-ticket-root;4279">#4279</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to vim-8,1.  Fixes 
+           <ulink url="&lfs-ticket-root;4278">#4278</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to meson-0.46.1.  Fixes 
+           <ulink url="&lfs-ticket-root;4277">#4277</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to e2fsprogs-1.44.2.  Fixes 
+           <ulink url="&lfs-ticket-root;4275">#4275</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.16.10.  Fixes 
+           <ulink url="&lfs-ticket-root;4276">#4276</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-05-22</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - URL の多くを https に変更。
+           <ulink url="&lfs-ticket-root;4274">#4274</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - procps-ng-3.3.15 へのアップデート。
+           <ulink url="&lfs-ticket-root;4279">#4279</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - vim-8,1 へのアップデート。
+           <ulink url="&lfs-ticket-root;4278">#4278</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - meson-0.46.1 へのアップデート。
+           <ulink url="&lfs-ticket-root;4277">#4277</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - e2fsprogs-1.44.2 へのアップデート。
+           <ulink url="&lfs-ticket-root;4275">#4275</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.16.10 へのアップデート。
+           <ulink url="&lfs-ticket-root;4276">#4276</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-05-11</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.16.8.  Fixes 
+           <ulink url="&lfs-ticket-root;4267">#4267</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-05-11</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - linux-4.16.8 へのアップデート。
+           <ulink url="&lfs-ticket-root;4267">#4267</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-05-07</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Change stripping in Chapter 6 to not
+           require logout.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-05-07</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - 第 6 章のストリップにてログアウトを不要に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-05-05</para>
       <itemizedlist>
         <listitem>

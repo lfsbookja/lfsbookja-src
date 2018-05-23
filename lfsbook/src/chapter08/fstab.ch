@@ -52,23 +52,30 @@
 @z
 
 @x
-  <para>Filesystems with MS-DOS or Windows origin (i.e.: vfat, ntfs, smbfs, cifs,
-  iso9660, udf) need the <quote>iocharset</quote> mount option in order for
-  non-ASCII characters in file names to be interpreted properly. The value
-  of this option should be the same as the character set of your locale,
-  adjusted in such a way that the kernel understands it. This works if the
-  relevant character set definition (found under File systems -&gt;
-  Native Language Support) has been compiled into the kernel
-  or built as a module. The <quote>codepage</quote> option is also needed for
-  vfat and smbfs filesystems. It should be set to the codepage number used
-  under MS-DOS in your country. E.g., in order to mount USB flash drives, a
-  ru_RU.KOI8-R user would need the following in the options portion of its
-  mount line in <filename>/etc/fstab</filename>:</para>
+  <para>Filesystems with MS-DOS or Windows origin (i.e. vfat, ntfs, smbfs,
+  cifs, iso9660, udf) need a special option, utf8, in order for non-ASCII
+  characters in file names to be interpreted properly. For non-UTF-8 locales,
+  the value of <option>iocharset</option> should be set to be the same as the
+  character set of the locale, adjusted in such a way that the kernel
+  understands it.  This works if the relevant character set definition (found
+  under File systems -&gt; Native Language Support when configuring the kernel)
+  has been compiled into the kernel or built as a module. However, if the
+  character set of the locale is UTF-8, the corresponding option
+  <option>iocharset=utf8</option> would make the file system case sensitive. To
+  fix this, use the special option <option>utf8</option> instead of
+  <option>iocharset=utf8</option>, for UTF-8 locales. The
+  <quote>codepage</quote> option is also needed for vfat and smbfs filesystems.
+  It should be set to the codepage number used under MS-DOS in your country.
+  For example, in order to mount USB flash drives, a ru_RU.KOI8-R user would
+  need the following in the options portion of its mount line in
+  <filename>/etc/fstab</filename>:</para>
 @y
   <para>
-  MS-DOS や Windows において利用されるファイルシステム (例えば vfat、ntfs、smbfs、cifs、iso9660、udf) では、ファイル名称内に用いられた非アスキー文字を正しく認識させるために、マウントオプションとして<quote>iocharset</quote>を指定することが必要となります。
-  オプションに設定する値は利用するロケールとすることが必要で、カーネルが理解できる形でなければなりません。
-  またこれを動作させるために、対応するキャラクタセット定義 (File systems -&gt;Native Language Support にあります) をカーネルに組み入れるか、モジュールとしてビルドすることが必要です。
+  MS-DOS や Windows において利用されるファイルシステム（つまり vfat、ntfs、smbfs、cifs、iso9660、udfなど）では、ファイル名称内に用いられた非アスキー文字を正しく認識させるために、特別なマウントオプション<quote>utf8</quote>の指定が必要になります。
+  UTF-8 以外のロケールの場合 <option>iocharset</option> オプションには、文字ロケールと同じ値を設定することが必要であり、カーネルが理解できる形でなければなりません。
+  またこれを動作させるために、対応するキャラクターセット定義（File systems -&gt;Native Language Support にあります）をカーネルに組み入れるか、モジュールとしてビルドすることが必要です。
+  ただし <option>iocharset=utf8</option> というオプション指定によって文字ロケールを UTF-8 とした場合、ファイルシステムの英大文字小文字は区別されるようになります。
+  これを避けるのであれば、<option>iocharset=utf8</option> ではなく特別なオプション <option>utf8</option> を指定します。
   vfat や smbfs ファイルシステムを用いるなら、さらに<quote>codepage</quote>オプションも必要です。
   このオプションには、国情報に基づいて MS-DOS にて用いられるコードページ番号をセットします。
   例えば USB フラッシュドライブをマウントし ru_RU.KOI8-R をセットするユーザーであれば <filename>/etc/fstab</filename> ファイルの設定は以下のようになります。
@@ -80,6 +87,20 @@
 @y
   <para>
   ru_RU.UTF-8 をセットするなら以下のように変わります。
+  </para>
+@z
+
+@x
+  <para>Note that using <option>iocharset</option> is the default for
+  <literal>iso8859-1</literal> (which keeps the file system case
+  insensitive), and the <option>utf8</option> option tells
+  the kernel to convert the file names using UTF-8 so they can be
+  interpreted in the UTF-8 locale.</para>
+@y
+  <para>
+  <option>iocharset</option> オプションは <literal>iso8859-1</literal> に対してのデフォルト設定です。
+  （その場合、ファイルシステムの英大文字小文字は区別されません。）
+  <option>utf8</option> オプションは、ファイル名称が UTF-8 ロケール内にて正しく認識されるように、カーネルが UTF-8 ロケールに変換して取り扱うことを指示するものです。
   </para>
 @z
 

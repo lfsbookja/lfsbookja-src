@@ -56,8 +56,9 @@
 @z
 
 @x
-    <para>Disable a test that fails:</para>
+<!--    <para>Disable a test that fails:</para>
 @y
+<!--
     <para>
     失敗するテストを無効にします。
     </para>

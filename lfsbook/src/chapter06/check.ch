@@ -66,7 +66,7 @@
 @z
 
 @x
-    <para>Note that the Check test suite may take a relatively long 
+    <para>Note that the Check test suite may take a relatively long
     (up to 4 SBU) time.</para>
 @y
     <para>
@@ -75,9 +75,11 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package and fix a script:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    パッケージをインストールし、スクリプトを修正します。
+    </para>
 @z
 
 @x

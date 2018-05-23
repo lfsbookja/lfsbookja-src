@@ -67,21 +67,11 @@
 
 @x
   <para>Before performing the stripping, take special care to ensure that
-  none of the binaries that are about to be stripped are running. If
-  unsure whether the user entered chroot with the command given in
-  <xref linkend="ch-system-chroot" role=","/> first exit from
-  chroot:</para>
+  none of the binaries that are about to be stripped are running:</para>
 @y
   <para>
   ストリップを実行する前には、ストリップしようとしている実行ファイルが実行中でないことを十分確認してください。
-  また <xref linkend="ch-system-chroot" role=""/>に示したコマンドにより chroot 環境に入っているかどうか定かでない場合は、いったんログアウトしてください。
   </para>
-@z
-
-@x
-  <para>Then reenter it with:</para>
-@y
-  <para>再度 chroot 環境に入ります。</para>
 @z
 
 @x
