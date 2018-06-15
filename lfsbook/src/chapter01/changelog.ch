@@ -54,6 +54,54 @@
 @z
 
 @x
+      <para>2018-06-12</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Typo fix in xz page.  Fixes 
+           <ulink url="&lfs-ticket-root;4285">#4285</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Change some http references to https in gcc.  Fixes 
+           <ulink url="&lfs-ticket-root;4281">#4281</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to iproute2-4.17.0.  Fixes 
+           <ulink url="&lfs-ticket-root;4288">#4288</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to bison-3.0.5.  Fixes 
+           <ulink url="&lfs-ticket-root;4284">#4284</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.17.1.  Fixes 
+           <ulink url="&lfs-ticket-root;4280">#4280</ulink>.</para>
+        </listitem>
+@y
+      <para>2018-06-12</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - xz ページのタイポ修正。
+           <ulink url="&lfs-ticket-root;4285">#4285</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - gcc ページにて http 参照 URL を https に変更。
+           <ulink url="&lfs-ticket-root;4281">#4281</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - iproute2-4.17.0 へのアップデート。
+           <ulink url="&lfs-ticket-root;4288">#4288</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - bison-3.0.5 へのアップデート。
+           <ulink url="&lfs-ticket-root;4284">#4284</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.17.1 へのアップデート。
+           <ulink url="&lfs-ticket-root;4280">#4280</ulink> を Fix に。</para>
+        </listitem>
+@z
+
+@x
       <para>2018-05-22</para>
       <itemizedlist>
         <listitem>

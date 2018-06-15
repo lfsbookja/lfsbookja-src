@@ -26,14 +26,6 @@
 @z
 
 @x
-    <para>Inhibit static library installation:</para>
-@y
-    <para>
-    スタティックライブラリをインストールしないようにします。
-    </para>
-@z
-
-@x
     <para>Prepare Bison for compilation:</para>
 @y
     <para>&PreparePackage1;Bison&PreparePackage2;</para>
@@ -54,13 +46,11 @@
 @x
     <para>There is a circular dependency between bison and flex with regard to
     the checks.  If desired, after installing flex in the next section, the
-    bison checks can be run with <command>make check</command>.  Three
-    tests related to lalr1.cc fail for unknown reasons.</para>
+    bison checks can be run with <command>make check</command>.</para>
 @y
     <para>
     テストに関連しては bison と flex の間に循環的な依存があります。
     テストが必要な場合は次節に示す flex をインストールした後に <command>make check</command> を実行します。
-    lalr1.cc に関するテスト 3 つが失敗しますが、理由は不明です。
     </para>
 @z
 

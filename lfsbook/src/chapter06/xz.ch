@@ -258,7 +258,7 @@
 @z
 
 @x xzegrep
-          <para>Runs <command>egrep</command> on XZ compressed files files</para>
+          <para>Runs <command>egrep</command> on XZ compressed files</para>
 @y
           <para>XZ 圧縮されたファイルに対して <command>egrep</command> を実行します。</para>
 @z

@@ -47,7 +47,7 @@
 
 @x
     <para>The test suite needs to know where supporting perl files are located.
-    We use an envronment variable to accomplish this.  To test the 
+    We use an environment variable to accomplish this.  To test the 
     results, issue:</para>
 @y
     <para>

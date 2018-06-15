@@ -153,12 +153,12 @@
 @x
     <para>Results can be compared with those located at <ulink
     url="&test-results;"/> and
-    <ulink url="http://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
+    <ulink url="https://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
 @y
     <para>
     テスト結果については <ulink
     url="&test-results;"/> と <ulink
-    url="http://gcc.gnu.org/ml/gcc-testresults/"/> にある情報と比較することができます。
+    url="https://gcc.gnu.org/ml/gcc-testresults/"/> にある情報と比較することができます。
     </para>
 @z
 
@@ -198,11 +198,11 @@
 
 @x
     <para>Create a symlink required by the <ulink
-    url="http://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s09.html">FHS</ulink>
+    url="https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s09.html">FHS</ulink>
     for "historical" reasons.</para>
 @y
     <para>
-    <ulink url="http://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s09.html">FHS</ulink>
+    <ulink url="https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s09.html">FHS</ulink>
     の求めるところに応じてシンボリックリンクを作成します。
     これは慣例によるものです
     </para>

@@ -35,14 +35,6 @@
 @z
 
 @x
-    <para>First, fix a script that adjusts testing output:</para>
-@y
-    <para>
-    テスト時の出力を調整しているスクリプトを修正します。
-    </para>
-@z
-
-@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
@@ -183,7 +175,7 @@
     <filename class="extension">.info</filename> file but doesn't update the
     system-wide <filename>dir</filename> file. Unzip this file and then update
     the system <filename>dir</filename> file using the following
-    commands.</para>
+    commands:</para>
 @y
     <para>
     本パッケージは gzip 圧縮された<filename
