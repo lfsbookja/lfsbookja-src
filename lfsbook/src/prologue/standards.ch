@@ -39,11 +39,11 @@
 
 @x
         <para><ulink 
-        url="http://refspecs.linuxfoundation.org/fhs.shtml">
+        url="http://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html">
         Filesystem Hierarchy Standard (FHS) Version 3.0</ulink></para>
 @y
         <para><ulink 
-        url="http://refspecs.linuxfoundation.org/fhs.shtml">
+        url="http://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html">
         Filesystem Hierarchy Standard (FHS) Version 3.0</ulink></para>
 @z
 

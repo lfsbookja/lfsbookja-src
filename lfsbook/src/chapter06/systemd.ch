@@ -51,9 +51,11 @@
 @z
 
 @x
-    <para>Make some fixes from upstream:</para>
+    <para>Apply a patch to fix a build failure with glibc-2.28:</para>
 @y
-    <para>アップストリームが示す修正を行います。</para>
+    <para>
+    glibc-2.28 に対してビルドできない不具合を修正するためにパッチを適用します。
+    </para>
 @z
 
 @x
@@ -318,10 +320,10 @@
 @z
 
 @x coredumpctl
-          <para>Used to retrieve coredumps from the systemd Journal</para>
+          <para>Used to retrieve coredumps from the systemd journal</para>
 @y
           <para>
-          systemd Journal よりコアダンプを抽出します。
+          systemd journal よりコアダンプを抽出します。
           </para>
 @z
 

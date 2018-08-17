@@ -54,6 +54,531 @@
 @z
 
 @x
+      <para>2018-08-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.2.6. Fixes
+          <ulink url="&lfs-ticket-root;4334">#4334</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-1.1.0i. Fixes
+          <ulink url="&lfs-ticket-root;4335">#4335</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-4.18.0. Fixes
+          <ulink url="&lfs-ticket-root;4333">#4333</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.18.1. Fixes
+          <ulink url="&lfs-ticket-root;4336">#4336</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-08-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - expat-2.2.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4334">#4334</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-1.1.0i へのアップデート。
+          <ulink url="&lfs-ticket-root;4335">#4335</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-4.18.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4333">#4333</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.18.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4336">#4336</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.18. Fixes
+          <ulink url="&lfs-ticket-root;4330">#4332</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.18 へのアップデート。
+          <ulink url="&lfs-ticket-root;4330">#4332</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-08-12</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[bdubbs] - Update to dbus-1.12.10. Fixes
+          <ulink url="&lfs-ticket-root;4328">#4328</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a note to glibc about using libidn2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add LANG to vim test instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Ensure grep tests run to completion.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Run gcc tests in Chapter 6 as a non-privileged user.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Move shadow to before gcc so the gcc tests can 
+          use su to run as a non-privileged user.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add perl Configure options in Chapter 5 to ensure
+          no host system libraries are used.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update minimum make version to 4.0 required by
+          glibc-2.28.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update bzip2 url to a new location. Fixes
+          <ulink url="&lfs-ticket-root;4331">#4331</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.17.14. Fixes
+          <ulink url="&lfs-ticket-root;4330">#4330</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-08-12</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[bdubbs] - dbus-1.12.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4328">#4328</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc が libidn2 を利用することに関してメモを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim のテスト実行に際して LANG 変数を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep のテスト実行を確実に終了するように。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第 6 章における gcc のテストを一般ユーザーで実行することに。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow のビルドを gcc に前に。
+          これにより、gcc のテスト実行を一般ユーザーでもできるようにする。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第 5 章の perl において、ホストシステムに必要なライブラリが存在していなくてもビルドてきるようにオプションを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - make の最低バージョンは、glibc-2.28 に対して必要となるバージョン 4.0 に更新。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bzip2 の URL を更新。
+          <ulink url="&lfs-ticket-root;4331">#4331</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.17.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;4330">#4330</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to linux-4.17.13. Fixes
+          <ulink url="&lfs-ticket-root;4327">#4327</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - linux-4.17.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4327">#4327</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-08-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Add patch to systemd to fix a build failure with
+          glibc-2.28.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-08-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - glibc-2.28 に対してビルドに失敗する不具合を修正するパッチを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-08-02</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to glibc-2.28.  Fixes
+           <ulink url="&lfs-ticket-root;4326">#4326</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to gdbm-1.17.  Fixes
+           <ulink url="&lfs-ticket-root;4325">#4325</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.17.11.  Fixes
+           <ulink url="&lfs-ticket-root;4322">#4322</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to man-db-2.8.4.  Fixes
+           <ulink url="&lfs-ticket-root;4321">#4321</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-08-02</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - glibc-2.28 へのアップデート。
+           <ulink url="&lfs-ticket-root;4326">#4326</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - gdbm-1.17 へのアップデート。
+           <ulink url="&lfs-ticket-root;4325">#4325</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.17.11 へのアップデート。
+           <ulink url="&lfs-ticket-root;4322">#4322</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - man-db-2.8.4 へのアップデート。
+           <ulink url="&lfs-ticket-root;4321">#4321</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-07-26</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update mirror and translation info.  Fixes
+           <ulink url="&lfs-ticket-root;4318">#4318</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to gcc-8.2.0.  Fixes
+           <ulink url="&lfs-ticket-root;4320">#4320</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to file-5.34.  Fixes
+           <ulink url="&lfs-ticket-root;4319">#4319</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.17.10.  Fixes
+           <ulink url="&lfs-ticket-root;4316">#4316</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-07-26</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - ミラーおよび翻訳情報の更新。
+           <ulink url="&lfs-ticket-root;4318">#4318</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - gcc-8.2.0 へのアップデート。
+           <ulink url="&lfs-ticket-root;4320">#4320</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - file-5.34 へのアップデート。
+           <ulink url="&lfs-ticket-root;4319">#4319</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.17.10 へのアップデート。
+           <ulink url="&lfs-ticket-root;4316">#4316</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-07-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to systemd-239. Fixes
+          <ulink url="&lfs-ticket-root;4298">#4298</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-07-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd-239 へのアップデート。
+          <ulink url="&lfs-ticket-root;4298">#4298</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-07-18</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to util-linux 2.32.1.  Fixes
+           <ulink url="&lfs-ticket-root;4315">#4315</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to binutils-2.31.1.  Fixes
+           <ulink url="&lfs-ticket-root;4314">#4314</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to meson-0.47.1.  Fixes
+           <ulink url="&lfs-ticket-root;4313">#4313</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Document some new regression test failures.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.17.8.  Fixes
+           <ulink url="&lfs-ticket-root;4312">#4312</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to e2fsprogs-1.44.3.  Fixes
+           <ulink url="&lfs-ticket-root;4310">#4310</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-07-18</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - util-linux 2.32.1 へのアップデート。
+           <ulink url="&lfs-ticket-root;4315">#4315</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - binutils-2.31.1 へのアップデート。
+           <ulink url="&lfs-ticket-root;4314">#4314</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - meson-0.47.1 へのアップデート。
+           <ulink url="&lfs-ticket-root;4313">#4313</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - 縮退テストが失敗する例を説明。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.17.8 へのアップデート。
+           <ulink url="&lfs-ticket-root;4312">#4312</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - e2fsprogs-1.44.3 へのアップデート。
+           <ulink url="&lfs-ticket-root;4310">#4310</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-07-08</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Fix failures in texinfo regression tests.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.17.5.  Fixes
+           <ulink url="&lfs-ticket-root;4300">#4300</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to meson-0.47.0.  Fixes
+           <ulink url="&lfs-ticket-root;4306">#4306</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-07-08</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - texinfo における縮退テストの失敗を修正。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.17.5 へのアップデート。
+           <ulink url="&lfs-ticket-root;4300">#4300</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - meson-0.47.0 へのアップデート。
+           <ulink url="&lfs-ticket-root;4306">#4306</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-07-07</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Add a configuration option to libffi to
+           ensure proper architecture selection.  Include an explanation
+           and how to select alternative options.  Fixes 
+           <ulink url="&lfs-ticket-root;4303">#4303</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-07-07</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - libffi にてアーキテクチャーが適切に選択されるように configure オプションを追加。
+           これに応じた説明と、他の選択肢についての説明を追加。
+           <ulink url="&lfs-ticket-root;4303">#4303</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-07-06</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Make symbolic links in inital part of
+           Chapter 6 consistent for all versions of the book.  Allows
+           removing environment variables no longer needed with e2fsprogs.
+           </para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to Python-3.7.0.  Fixes 
+           <ulink url="&lfs-ticket-root;4301">#4301</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to gdbm-1.16.  Fixes 
+           <ulink url="&lfs-ticket-root;4302">#4302</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to elfutils-0.173.  Fixes 
+           <ulink url="&lfs-ticket-root;4304">#4304</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to coreutils-8.30.  Fixes 
+           <ulink url="&lfs-ticket-root;4305">#4305</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-07-06</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - 第 6 章前半、本書の各版に対して共通的に行っているシンボリックリンクを恒常的なものに。
+           これにより e2fsprogs にて必要であった環境変数削除を不要とする。
+           </para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Python-3.7.0 へのアップデート。
+           <ulink url="&lfs-ticket-root;4301">#4301</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - gdbm-1.16 へのアップデート。
+           <ulink url="&lfs-ticket-root;4302">#4302</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - elfutils-0.173 へのアップデート。
+           <ulink url="&lfs-ticket-root;4304">#4304</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - coreutils-8.30 へのアップデート。
+           <ulink url="&lfs-ticket-root;4305">#4305</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-07-03</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to attr-2.4.48.  Fixes 
+           <ulink url="&lfs-ticket-root;4308">#4308</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to acl-2.2.53.  Fixes 
+           <ulink url="&lfs-ticket-root;4307">#4307</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-07-03</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - attr-2.4.48 へのアップデート。
+           <ulink url="&lfs-ticket-root;4308">#4308</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - acl-2.2.53 へのアップデート。
+           <ulink url="&lfs-ticket-root;4307">#4307</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-06-25</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Various URL updates.  Fixes 
+           <ulink url="&lfs-ticket-root;4299">#4293</ulink> and
+           <ulink url="&lfs-ticket-root;4299">#4294</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to perl-5.28.0.  Fixes 
+           <ulink url="&lfs-ticket-root;4299">#4299</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to Sysvinit 2.90.  Fixes 
+           <ulink url="&lfs-ticket-root;4297">#4297</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to gdbm-1.15.  Fixes 
+           <ulink url="&lfs-ticket-root;4296">#4296</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to elfutils-0.172.  Fixes 
+           <ulink url="&lfs-ticket-root;4292">#4292</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-4.17.2.  Fixes 
+           <ulink url="&lfs-ticket-root;4280">#4295</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-06-25</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - URL をいろいろ修正。
+           <ulink url="&lfs-ticket-root;4299">#4293</ulink> と
+           <ulink url="&lfs-ticket-root;4299">#4294</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - perl-5.28.0 へのアップデート。
+           <ulink url="&lfs-ticket-root;4299">#4299</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Sysvinit 2.90 へのアップデート。
+           <ulink url="&lfs-ticket-root;4297">#4297</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - gdbm-1.15 へのアップデート。
+           <ulink url="&lfs-ticket-root;4296">#4296</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - elfutils-0.172 へのアップデート。
+           <ulink url="&lfs-ticket-root;4292">#4292</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-4.17.2 へのアップデート。
+           <ulink url="&lfs-ticket-root;4280">#4295</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-06-12</para>
       <itemizedlist>
         <listitem>

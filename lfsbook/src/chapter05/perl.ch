@@ -38,6 +38,36 @@
 @z
 
 @x
+      <title>The meaning of the Configure options:</title>
+@y
+      <title>&MeaningOfOption1;Configure&MeaningOfOption2;</title>
+@z
+
+@x -des
+          <para>This is a combination of three options: -d uses defaults for 
+          all items; -e ensures completion of all tasks; -s silences
+          non-essential output.</para>
+@y
+          <para>
+          これは三つのオプションを組み合わせたものです。
+          -d はあらゆる項目に対してデフォルト設定を用います。
+          -e はタスクをすべて実施します。
+          -s は不要な出力は行わないようにします。
+          </para>
+@z
+
+@x -Uloclibpth amd -Ulocincpth
+          <para>These entries undefine variables that cause the configuration
+          to search for locally installed components that may exist on the
+          host system.</para>
+@y
+          <para>
+          この指定は所定の変数定義を無効にします。
+          これにより、ホストシステム上にインストールされたコンポーネントが存在していても、それを用いないようにします。
+          </para>
+@z
+
+@x
     <para>Build the package:</para>
 @y
     <para>パッケージをビルドします。</para>

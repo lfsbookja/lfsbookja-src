@@ -71,12 +71,12 @@
 @z
 
 @x
-    <para>Two tests are known to fail in the LFS environment:
-    check12.sh and check12-w.sh.</para>
+    <para>One test is known to fail in the LFS environment:
+    subobj.sh.</para>
 @y
     <para>
-    LFS 環境では失敗するテストが 2 つあります。
-    check12.sh、check12-w.sh です。
+    LFS 環境では失敗するテストが 1 つあります。
+    subobj.sh です。
     </para>
 @z
 

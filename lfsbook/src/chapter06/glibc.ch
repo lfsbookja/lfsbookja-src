@@ -368,6 +368,21 @@
 @z
 
 @x
+    <note><para>Glibc now uses libidn2 when resolving internationalized 
+    domain names.  This is a run time dependency.  If this capability
+    is needed, the instrucions for installing libidn2 are in the 
+    <ulink url="&blfs-book;general/libidn2.html">BLFS libidn2 page</ulink>.
+    </para></note>
+@y
+    <note><para>
+    現状の Glibc は、国際ドメイン名の解決に libidn2 を利用します。
+    これは実行時に依存するパッケージです。
+    この機能が必要である場合は、BLFS にある <ulink
+    url="&blfs-book;general/libidn2.html">libidn2</ulink> ページに示されているインストール手順を参照してください。
+    </para></note>
+@z
+
+@x
     <title>Configuring Glibc</title>
 @y
     <title>&Configuring1;Glibc&Configuring2;</title>

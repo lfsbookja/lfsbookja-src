@@ -20,12 +20,18 @@
 @z
 
 @x
-    <para>Libstdc++ is the standard C++ library. It is needed for the correct
-    operation of the g++ compiler.</para>
+    <para>Libstdc++ is the standard C++ library. It is needed 
+    to compile C++ code
+    (part of GCC is written in C++), but we had to defer its installation
+    when we built <xref linkend="ch-tools-gcc-pass1"/>
+    because it depends on glibc, which was not yet available in /tools.
+    </para>
 @y
     <para>
     Libstdc++ は標準 C++ ライブラリです。
-    これは g++ コンパイラーの処理制御を適正に行うために必要となります。
+    （GCC の一部が C++ によって書かれているため）C++ をコンパイルするために必要となります。
+    ただし <xref linkend="ch-tools-gcc-pass1"/> をビルドするにあたっては、このライブラリのインストールを個別に行わなければなりません。
+    それはこのライブラリが glibc に依存していて、/tools ディレクトリ内ではまだ glibc が利用できない状態であるからです。
     </para>
 @z
 

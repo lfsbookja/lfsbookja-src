@@ -36,8 +36,16 @@
    <para>First, suppress a test which on some machines can loop forever:</para>
 @y
    <para>
-   特定のマシンにおいてテストが無限ループに陥るため省略します。
+   特定のマシンにおいて特定のテストが無限ループに陥るため、そのテストを省略します。
    </para>
+@z
+
+@x
+    <para>Next, make some fixes required by glibc-2.28:</para>
+@y
+    <para>
+    glibc-2.28 に対して必要となる修正を行います。
+    </para>
 @z
 
 @x

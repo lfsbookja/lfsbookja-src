@@ -133,20 +133,19 @@
 @z
 
 @x
-    <para>To test the results (approximately 2.5 SBU), issue:</para>
+    <para>To test the results (approximately 11 SBU), issue:</para>
 @y
     <para>
-    コンパイル結果をテストするには以下を実行します。(約 2.5 SBU)
+    コンパイル結果をテストするには以下を実行します。(約 11 SBU)
     </para>
 @z
 
 @x
-    <note><para>Several tests related to zlib will fail due to using
-    the system version of zlib instead of the internal version.</para></note>
+    <note><para>One test fails due to using the most recent version of gdbm.
+    </para></note>
 @y
     <note><para>
-    zlib を利用しているテストの中には失敗するものが出てきます。
-    これは同時配布される zlib ではなくシステムにインストール済の zlib を利用することが原因です。
+    gdbm の最新バージョンを用いていることから、テストが 1 つ失敗します。
     </para></note>
 @z
 

@@ -28,31 +28,31 @@
     <title>&InstallationOf1;Attr&InstallationOf2;</title>
 @z
 
-@x
-    <para>Modify the documentation directory so that it is a versioned
-    directory:</para>
-@y
-    <para>
-    ドキュメントを収容するディレクトリ名にバージョンをつけるようにします。
-    </para>
-@z
+% @x
+%     <para>Modify the documentation directory so that it is a versioned
+%     directory:</para>
+% @y
+%     <para>
+%     ドキュメントを収容するディレクトリ名にバージョンをつけるようにします。
+%     </para>
+% @z
 
-@x
-    <para>Prevent installation of manual pages that were already installed by
-    the <xref linkend="man-pages"/> package:</para>
-@y
-    <para>
-    <xref linkend="man-pages"/> パッケージによって既にインストールされた man ページを、ここで再インストールされないようにします。
-    </para>
-@z
+% @x
+%     <para>Prevent installation of manual pages that were already installed by
+%     the <xref linkend="man-pages"/> package:</para>
+% @y
+%     <para>
+%     <xref linkend="man-pages"/> パッケージによって既にインストールされた man ページを、ここで再インストールされないようにします。
+%     </para>
+% @z
 
-@x
-    <para>Fix a problem in the test procedures caused by changes in perl-5.26:</para>
-@y
-    <para>
-    perl が 5.26 になったことでテストにて発生する問題を修正します。
-    </para>
-@z
+% @x
+%     <para>Fix a problem in the test procedures caused by changes in perl-5.26:</para>
+% @y
+%     <para>
+%     perl が 5.26 になったことでテストにて発生する問題を修正します。
+%     </para>
+% @z
 
 @x
     <para>Prepare Attr for compilation:</para>
@@ -68,13 +68,11 @@
 
 @x
     <para>The tests need to be run on a filesystem that supports extended
-    attributes such as the ext2, ext3, or ext4 filesystems. The tests are also
-    known to fail if running multiple simultaneous tests (-j option greater than
-    1).  To test the results, issue:</para>
+    attributes such as the ext2, ext3, or ext4 filesystems. 
+    To test the results, issue:</para>
 @y
     <para>
     テストは、ext2, ext3, ext4 のような拡張属性をサポートしているファイルシステム上にて実施する必要があります。
-    また同時並行のテスト (-j オプションに 1以上を指定した場合) では失敗します。
     テストを実施するには以下を実行します。
     </para>
 @z

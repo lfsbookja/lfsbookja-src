@@ -125,12 +125,20 @@
 @z
 
 @x
-    <para>Test the results, but do not stop at errors:</para>
+    <para>Remove one test known to cause a problem:</para>
 @y
-   <para>
-   コンパイル結果をテストします。
-   エラーが発生しても停止しないようにします。
-   </para>
+    <para>
+    支障のあるテストを削除します。
+    </para>
+@z
+
+@x
+    <para>Test the results as a non-privileged user, but do not stop at errors:</para>
+@y
+    <para>
+    一般ユーザーにてテストを行います。
+    ただしエラーがあっても停止しないようにします。
+    </para>
 @z
 
 @x
@@ -165,15 +173,12 @@
 @x
     <para>A few unexpected failures cannot always be avoided. The GCC developers
     are usually aware of these issues, but have not resolved them yet.
-    In particular, six tests in the libstdc++ test suite are known to fail
-    when running as the root user as we do here.
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
 @y
     <para>
     テストに失敗することがありますが、これを回避することはできません。
     GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
-    特に今行っているように root ユーザーにてテストを実施すると libstdc++ に関するテストが 6 つ失敗します。
     上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
 @z
@@ -183,11 +188,13 @@
       there may be more than 1100 failures in the gcc.target/i386/mpx
       tests (which are designed to test the MPX option on recent
       Intel processors). These can safely be ignored on AMD
-      processors.
+      processors. These tests will also fail on Intel processors if MPX support
+      is not enabled in the kernel even though it is present on the CPU.
 @y
       カーネル設定の組み合わせにより、あるいは AMD プロセッサーを利用している場合に、gcc.target/i386/mpx に関するテストが 1100 個以上失敗します。
       （これは最新の Intel プロセッサーにおいて MPX オプションをテストするものです。）
       AMD プロセッサーを利用している場合は無視して構いません。
+      上のテストは Inter プロセッサーであっても、カーネル上にて MPX サポートが無効になっていると、たとえ CPU がサポートしていても発生します。
 @z
 
 @x

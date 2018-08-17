@@ -30,39 +30,39 @@
     <title>&InstallationOf1;Acl&InstallationOf2;</title>
 @z
 
-@x
-    <para>Modify the documentation directory so that it is a versioned
-    directory:</para>
-@y
-    <para>
-    ドキュメントを収容するディレクトリ名にバージョンをつけるようにします。
-    </para>
-@z
+% @x
+%     <para>Modify the documentation directory so that it is a versioned
+%     directory:</para>
+% @y
+%     <para>
+%     ドキュメントを収容するディレクトリ名にバージョンをつけるようにします。
+%     </para>
+% @z
 
-@x
-    <para>Fix some broken tests:</para>
-@y
-    <para>
-    不適切なテストを修正します。
-    </para>
-@z
+% @x
+%     <para>Fix some broken tests:</para>
+% @y
+%     <para>
+%     不適切なテストを修正します。
+%     </para>
+% @z
 
-@x
-    <para>Fix a problem in the test procedures caused by changes in perl-5.26:</para>
-@y
-    <para>
-    perl-5.26 の変更にともなって発生するテストの不備を修正します。
-    </para>
-@z
+% @x
+%     <para>Fix a problem in the test procedures caused by changes in perl-5.26:</para>
+% @y
+%     <para>
+%     perl-5.26 の変更にともなって発生するテストの不備を修正します。
+%     </para>
+% @z
 
-@x
-    <para>Additionally, fix a bug that causes <command>getfacl -e</command>
-    to segfault on overly long group name:</para>
-@y
-    <para>
-    長いグループ名に対して <command>getfacl -e</command> が segfault を起こすため、これを修正します。
-    </para>
-@z
+% @x
+%     <para>Additionally, fix a bug that causes <command>getfacl -e</command>
+%     to segfault on overly long group name:</para>
+% @y
+%     <para>
+%     長いグループ名に対して <command>getfacl -e</command> が segfault を起こすため、これを修正します。
+%     </para>
+% @z
 
 @x
     <para>Prepare Acl for compilation:</para>
@@ -79,14 +79,14 @@
 @x
     <para>The Acl tests need to be run on a filesystem that supports access
     controls after <application>Coreutils</application> has been built with the
-    Acl libraries.  If desired, return to this package and run <command>make -j1
-    tests</command> after <application>Coreutils</application> has been built
+    Acl libraries.  If desired, return to this package and run <command>make
+    check</command> after <application>Coreutils</application> has been built
     later in this chapter.</para>
 @y
     <para>
     Acl のテストは、Acl のライブラリによって <application>Coreutils</application> をビルドした後に、アクセス制御がサポートされたファイルシステム上にて実施する必要があります。
-    テスト実施が必要である場合は、後に生成する <application>Coreutils</application> のビルドが終わってから、再び本パッケージに戻って <command>make -j1
-    tests</command> を実行してください。
+    テスト実施が必要である場合は、後に生成する <application>Coreutils</application> のビルドが終わってから、再び本パッケージに戻って <command>make
+    check</command> を実行してください。
     </para>
 @z
 

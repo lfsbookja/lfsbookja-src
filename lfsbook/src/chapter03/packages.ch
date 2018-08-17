@@ -92,10 +92,10 @@
 @z
 
 @x bzip2
-        <para>Home page: <ulink url="&bzip2-home;"/></para>
+        <!--<para>Home page: <ulink url="&bzip2-home;"/></para>-->
         <para>Download: <ulink url="&bzip2-url;"/></para>
 @y
-        <para>&Homepage;: <ulink url="&bzip2-home;"/></para>
+        <!--<para>&Homepage;: <ulink url="&bzip2-home;"/></para>-->
         <para>&Download;: <ulink url="&bzip2-url;"/></para>
 @z
 
@@ -151,6 +151,14 @@
 @y
         <para>&Homepage;: <ulink url="&e2fsprogs-home;"/></para>
         <para>&Download;: <ulink url="&e2fsprogs-url;"/></para>
+@z
+
+@x Elfutils
+        <para>Home page: <ulink url="&elfutils-home;"/></para>
+        <para>Download: <ulink url="&elfutils-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&elfutils-home;"/></para>
+        <para>&Download;: <ulink url="&elfutils-url;"/></para>
 @z
 
 @x Expat
@@ -500,6 +508,14 @@
         <para>&Download;: <ulink url="&ncurses-url;"/></para>
 @z
 
+@x OpenSSL
+        <para>Home page: <ulink url="&openssl-home;"/></para>
+        <para>Download: <ulink url="&openssl-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&openssl-home;"/></para>
+        <para>&Download;: <ulink url="&openssl-url;"/></para>
+@z
+
 @x patch
         <para>Home page: <ulink url="&patch-home;"/></para>
         <para>Download: <ulink url="&patch-url;"/></para>
@@ -546,6 +562,12 @@
 @y
         <para>&Homepage;: <ulink url="&python-home;"/></para>
         <para>&Download;: <ulink url="&python-url;"/></para>
+@z
+
+@x Python Documentation
+        <para>Download: <ulink url="&python-docs-url;"/></para>
+@y
+        <para>&Download;: <ulink url="&python-docs-url;"/></para>
 @z
 
 @x readline

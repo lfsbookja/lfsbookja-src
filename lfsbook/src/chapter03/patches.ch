@@ -113,6 +113,12 @@
         <para>&Download;: <ulink url="&patches-root;&systemd-security-patch;"/></para>
 @z
 
+@x systemd glibc patch
+        <para>Download: <ulink url="&patches-root;&systemd-glibc-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&systemd-glibc-patch;"/></para>
+@z
+
 @x
   <para>Total size of these patches: about <returnvalue/></para>
 @y

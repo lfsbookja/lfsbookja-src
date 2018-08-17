@@ -149,6 +149,14 @@
           </para>
 @z
 
+@x grub-file
+          <para>Checks if FILE is of the specified type.</para>
+@y
+          <para>
+          FILE が指定されたタイプであるかどうかをチェックします。
+          </para>
+@z
+
 @x grub-fstest
           <para>Tool to debug the filesystem driver</para>
 @y

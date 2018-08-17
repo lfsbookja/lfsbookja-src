@@ -160,12 +160,12 @@
 @z
 
 @x /usr/lib/lib{blkid,lzma,mount,uuid}.{a,la,so*}
-        <para>These links prevent systemd utilities from acquiring an
+        <para>These links prevent <!--systemd--> utilities from acquiring an
         unnecessary reference to the
         <filename class="directory">/tools</filename> directory.</para>
 @y
         <para>
-        このリンクにより systemd のユーティリティーが、不要な <filename
+        このリンクにより各種ユーティリティーが、不要な <filename
         class="directory">/tools</filename> へのリンクを用いないようにします。
         </para>
 @z

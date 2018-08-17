@@ -38,13 +38,13 @@
       </para>
 @z
 
-@x
-    <para>First, fix a file to be compatible with gcc-8"</para>
-@y
-    <para>
-    gcc-8 との互換性をもつためにファイルを修正します。
-    </para>
-@z
+% @x
+%     <para>First, fix a file to be compatible with gcc-8"</para>
+% @y
+%     <para>
+%     gcc-8 との互換性をもつためにファイルを修正します。
+%     </para>
+% @z
 
 @x
     <para>Prepare Libelf for compilation:</para>
@@ -59,10 +59,10 @@
 @z
 
 @x
-    <para>To test the results, issue <command>make check</command>.</para>
+    <para>To test the results, issue:</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    ビルド結果をテストする場合は以下を実行します。
     </para>
 @z
 
