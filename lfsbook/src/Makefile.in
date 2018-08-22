@@ -774,11 +774,11 @@ wget-list: $(BASEDIR)/wget-list
 $(BASEDIR)/wget-list: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent
 	@echo "Generating consolidated wget list at $(BASEDIR)/wget-list ..."
 	$(MKDIR_P) $(BASEDIR)
-	$(XSLTPROC) --nonet --xinclude                     \
-                --stringparam profile.revision $(REV)      \
-                --output $(RENDERTMP)/sysd-wget.xml        \
-                $(BOOKdir)/stylesheets/lfs-xsl/profile.xsl \
-                ./chapter03/chapter03.xml
+#	$(XSLTPROC) --nonet --xinclude                     \
+#                --stringparam profile.revision $(REV)      \
+#                --output $(RENDERTMP)/sysd-wget.xml        \
+#                $(BOOKdir)/stylesheets/lfs-xsl/profile.xsl \
+#                ./chapter03/chapter03.xml
 	$(XSLTPROC) --xinclude --nonet                     \
                 --output $(BASEDIR)/wget-list              \
 	             $(BOOKdir)/stylesheets/wget-list.xsl  \

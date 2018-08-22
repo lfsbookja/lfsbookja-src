@@ -53,6 +53,23 @@
     <title>変更履歴</title>
 @z
 
+@x revision="sysv"
+      <para>2018-08-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Ensure loop devices are detached when
+          shutting down.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-08-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - シャットダウン時にループデバイスが確実にデタッチされるようにする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x
       <para>2018-08-16</para>
       <itemizedlist>
