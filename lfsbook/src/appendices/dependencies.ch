@@ -573,9 +573,9 @@
          Texinfo</seg>
 @z
 @x
-          <seg>DejaGNU and Expect</seg>
+          <seg>DejaGNU, Expect, and Shadow</seg>
 @y
-          <seg>DejaGNU, Expect</seg>
+          <seg>DejaGNU, Expect, Shadow</seg>
 @z
 @x
           <seg>None</seg>
