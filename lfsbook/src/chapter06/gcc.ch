@@ -89,6 +89,18 @@
           </para>
 @z
 
+@x --disable-libmpx
+          <para>This switch tells GCC to not build mpx (Memory Protection
+          Extensions) that can cause problems on some processors. It has
+          been removed from the next version of gcc.</para>
+@y
+          <para>
+          このスイッチは mpx (Memory Protection Extensions) をビルドしないようにします。
+          この機能があるとプロセッサーによっては問題が発生するものがあります。
+          gcc の次バージョンからこの機能は削除されます。
+          </para>
+@z
+
 @x --with-system-zlib
           <para>This switch tells GCC to link to the system installed copy of
           the Zlib library, rather than its own internal copy.</para>

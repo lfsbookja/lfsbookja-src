@@ -53,6 +53,22 @@
     <title>変更履歴</title>
 @z
 
+@x
+      <para>2018-08-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Disable deprecated mpx code in gcc.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-08-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc において古くなった mpx コードを無効に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x revision="sysv"
       <para>2018-08-20</para>
       <itemizedlist>
