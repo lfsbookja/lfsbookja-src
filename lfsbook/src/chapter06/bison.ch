@@ -46,11 +46,12 @@
 @x
     <para>There is a circular dependency between bison and flex with regard to
     the checks.  If desired, after installing flex in the next section, the
-    bison checks can be run with <command>make check</command>.</para>
+    bison can be rebuilt and the bison checks can be run with 
+    <command>make check</command>.</para>
 @y
     <para>
     テストに関連しては bison と flex の間に循環的な依存があります。
-    テストが必要な場合は次節に示す flex をインストールした後に <command>make check</command> を実行します。
+    テストが必要な場合は次節に示す flex をインストールした後に bison を再ビルドし <command>make check</command> を実行します。
     </para>
 @z
 
