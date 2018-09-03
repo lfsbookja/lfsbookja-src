@@ -376,6 +376,30 @@
 @z
 
 %----------------------------------------------------------------------
+@x E2fsprogs
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Gzip, Make, Sed, Texinfo, and Util-linux</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Gzip, Make, Sed, Texinfo, Util-linux</seg>
+@z
+@x
+          <seg>Procps-ng and Psmisc</seg>
+@y
+          <seg>Procps-ng, Psmisc</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Eudev
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf,
          Make, and Sed</seg>
@@ -430,30 +454,6 @@
           <seg>None</seg>
 @y
           <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-
-%----------------------------------------------------------------------
-@x E2fsprogs
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Gzip, Make, Sed, Texinfo, and Util-linux</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Gzip, Make, Sed, Texinfo, Util-linux</seg>
-@z
-@x
-          <seg>Procps-ng and Psmisc</seg>
-@y
-          <seg>Procps-ng, Psmisc</seg>
 @z
 @x
           <seg>None</seg>
@@ -1037,10 +1037,10 @@
 %----------------------------------------------------------------------
 @x Linux Kernel
          <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc,
-         Grep, Gzip, Kmod, Make, Ncurses, OpenSSL, Perl, and Sed</seg>
+         Grep, Gzip, Kmod, Libelf, Make, Ncurses, OpenSSL, Perl, and Sed</seg>
 @y
          <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc,
-         Grep, Gzip, Kmod, Make, Ncurses, OpenSSL, Perl, Sed</seg>
+         Grep, Gzip, Kmod, Libelf, Make, Ncurses, OpenSSL, Perl, Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -1683,9 +1683,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg><ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink></seg>
+          <seg><ulink url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-ng</ulink></seg>
 @y
-          <seg><ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink></seg>
+          <seg><ulink url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-ng</ulink></seg>
 @z
 
 %----------------------------------------------------------------------

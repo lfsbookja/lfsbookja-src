@@ -46,7 +46,7 @@
 @x
     <para>There is a circular dependency between bison and flex with regard to
     the checks.  If desired, after installing flex in the next section, the
-    bison can be rebuilt and the bison checks can be run with 
+    bison package can be rebuilt and the bison checks can be run with 
     <command>make check</command>.</para>
 @y
     <para>
