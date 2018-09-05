@@ -30,11 +30,11 @@
 
 @x
       <para>Libelf is part of elfutils-&elfutils-version; package. Use
-      the elfutils-&elfutils-version;.tar.xz as the source tarball.</para>
+      the elfutils-&elfutils-version;.tar.bz2 as the source tarball.</para>
 @y
       <para>
       Libelf は elfutils-&elfutils-version; パッケージに含まれます。
-      ソース tarball として elfutils-&elfutils-version;.tar.xz を利用します。
+      ソース tarball として elfutils-&elfutils-version;.tar.bz2 を利用します。
       </para>
 @z
 
