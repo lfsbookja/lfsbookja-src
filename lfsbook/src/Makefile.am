@@ -33,7 +33,7 @@ ALLXML=$(shell find . -type d -name $(RENDERTMP) -prune -o -type f -name '*.xml'
 
 REV=@revspec@
 
-all: ctie $(srcs) stylesheets _bootscripts udev-lfs book dump-commands
+all: ctie $(srcs) stylesheets _bootscripts udev-lfs book
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
@@ -215,12 +215,12 @@ $(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.e
            "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.bz2 | cut -d' ' -f1)/" \
            $(BASEDIR)/md5sums
 
-dump-commands: validate
-	@echo "Dumping book commands..."
-	$(XSLTPROC) --output $(DUMPDIR)/ \
-	   stylesheets/dump-commands.xsl $(RENDERTMP)/lfs-full.xml
+#dump-commands: validate
+#	@echo "Dumping book commands..."
+#	$(XSLTPROC) --output $(DUMPDIR)/ \
+#	   stylesheets/dump-commands.xsl $(RENDERTMP)/lfs-full.xml
 
 
 #all: lfs nochunks pdf dump-commands
 
-.PHONY : all dump-commands lfs nochunks pdf profile-html tmpdir validate 
+.PHONY : all lfs nochunks pdf profile-html tmpdir validate 

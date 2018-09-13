@@ -418,12 +418,12 @@
 @x
           <emphasis>Disable at build-time</emphasis>: You can enable
           lingering by default while building systemd by adding the switch
-          <parameter>--without-kill-user-processes</parameter> to the
-          <command>configure</command> command for systemd. This completely
+          <parameter>-Ddefault-kill-user-processes=no</parameter> to the
+          <command>meson</command> command for systemd. This completely
           disables the ability of systemd to kill user processes at session
           end.
 @y
           <emphasis>機能変更をビルド時に無効化する方法</emphasis>:
-          プロセス継続をデフォルトとするために systemd のビルド時に <command>configure</command> コマンドにおいて <parameter>--without-kill-user-processes</parameter> スイッチを指定する方法があります。
+          プロセス継続をデフォルトとするために systemd のビルド時に <command>meson</command> コマンドにおいて <parameter>-Ddefault-kill-user-processes=no</parameter> スイッチを指定する方法があります。
           この方法をとれば、systemd がセッション終了時にユーザープロセスを終了させてしまう機能を完全に無効化することができます。
 @z
