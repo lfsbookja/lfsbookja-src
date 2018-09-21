@@ -54,6 +54,71 @@
 @z
 
 @x
+      <para>2018-09-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Clean up of unneeded symbolic links.
+          Reordered packages so version specific packages are
+          built as late as possible in Chapter 6. Now building
+          util-linux in Chapter 5 is unneeded and has been removed.
+          Fixes <ulink url="&lfs-ticket-root;4345">#4345</ulink> and
+          <ulink url="&lfs-ticket-root;4349">#4349</ulink>.</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Update to eudev-3.2.6. Fixes
+          <ulink url="&lfs-ticket-root;4350">#4350</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.174 (libelf). Fixes
+          <ulink url="&lfs-ticket-root;4348">#4348</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to psmisc-23.2. Fixes
+          <ulink url="&lfs-ticket-root;4347">#4347</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-1.1.1. Fixes
+          <ulink url="&lfs-ticket-root;4346">#4346</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.18.9. Fixes
+          <ulink url="&lfs-ticket-root;4344">#4344</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-09-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 不要なシンボリックリンクを削除。
+          第 6 章でのパッケージのビルド順を入れ替えて、特定のパッケージは出来るだけ後ろで行うことに。
+          第 5 章での util-linux は不要であることから削除。
+          <ulink url="&lfs-ticket-root;4345">#4345</ulink> と <ulink
+          url="&lfs-ticket-root;4349">#4349</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - eudev-3.2.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4350">#4350</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.174 (libelf) へのアップデート。
+          <ulink url="&lfs-ticket-root;4348">#4348</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - psmisc-23.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4347">#4347</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-1.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4346">#4346</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.18.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4344">#4344</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-09-02</para>
       <itemizedlist>
         <listitem>

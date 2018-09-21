@@ -107,59 +107,59 @@
 @x
           <para>The Linux API ASM Headers</para>
 @y
-          <para>The Linux API ASM ヘッダーファイル</para>
+          <para>Linux API ASM ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API ASM Generic Headers</para>
 @y
-          <para>The Linux API ASM の汎用的なヘッダーファイル</para>
+          <para>Linux API ASM の汎用的なヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API DRM Headers</para>
 @y
-          <para>The Linux API DRM ヘッダーファイル</para>
+          <para>Linux API DRM ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API Linux Headers</para>
 @y
-          <para>The Linux API Linux ヘッダーファイル</para>
+          <para>Linux API Linux ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API MTD Headers</para>
 @y
-          <para>The Linux API MTD ヘッダーファイル</para>
+          <para>Linux API MTD ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API RDMA Headers</para>
 @y
-          <para>The Linux API RDMA ヘッダーファイル</para>
+          <para>Linux API RDMA ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API SCSI Headers</para>
 @y
-          <para>The Linux API SCSI ヘッダーファイル</para>
+          <para>Linux API SCSI ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API Sound Headers</para>
 @y
-          <para>The Linux API Sound ヘッダーファイル</para>
+          <para>Linux API Sound ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API Video Headers</para>
 @y
-          <para>The Linux API Video ヘッダーファイル</para>
+          <para>Linux API Video ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API Xen Headers</para>
 @y
-          <para>The Linux API Xen ヘッダーファイル</para>
+          <para>Linux API Xen ヘッダーファイル</para>
 @z

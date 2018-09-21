@@ -14,6 +14,12 @@
 @z
 
 @x
+  <title>Libstdc++ from GCC-&gcc-version;</title>
+@y
+  <title>GCC-&gcc-version; から取り出した libstdc++</title>
+@z
+
+@x
     <secondary>tools, libstdc++</secondary>
 @y
     <secondary>&Tools;, libstdc++</secondary>

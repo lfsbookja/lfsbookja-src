@@ -14,6 +14,12 @@
 @z
 
 @x
+  <title>Libelf from Elfutils-&elfutils-version;</title>
+@y
+  <title>Elfutils-&elfutils-version; から取り出した libelf</title>
+@z
+
+@x
     <para>Libelf is a library for handling ELF (Executable and Linkable Format)
     files.</para>
 @y

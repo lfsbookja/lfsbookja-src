@@ -74,6 +74,16 @@
         </para>
 @z
 
+@x /usr/bin/env
+        <para>This pathname is hard-coded into some packages build procedures.
+        <!-- systemd  This may not be needed if we move sysd to the end--></para>
+@y
+        <para>
+        このパスは、パッケージのビルドを通じてハードコーディングされることがあります。
+        <!-- systemd  This may not be needed if we move sysd to the end-->
+        </para>
+@z
+
 @x /usr/bin/install
         <para>The path to <filename>install</filename> will be hard-coded into
         the <filename>/usr/lib/bash/Makefile.inc</filename> file.</para>
@@ -160,7 +170,7 @@
 @z
 
 @x /usr/lib/lib{blkid,lzma,mount,uuid}.{a,la,so*}
-        <para>These links prevent <!--systemd--> utilities from acquiring an
+        <para>These links prevent utilities from acquiring an
         unnecessary reference to the
         <filename class="directory">/tools</filename> directory.</para>
 @y

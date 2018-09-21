@@ -26,10 +26,10 @@
 @z
 
 @x
-    <para>Again, work around an error caused by glibc-2.27:</para>
+    <para>Again, work around an error caused by glibc-2.27 and later:</para>
 @y
     <para>
-    glibc-2.27 が原因で発生するエラーを回避します。
+    glibc-2.27 以降に起因するエラーを回避します。
     </para>
 @z
 

@@ -128,6 +128,14 @@
 @z
 
 @x
+    <para>To run the tests, issue:</para>
+@y
+    <para>
+    コンパイル結果をテストするには以下を実行します。
+    </para>
+@z
+
+@x
     <para>One of the E2fsprogs tests will attempt to allocate 256 MB of memory.
     If you do not have significantly more RAM than this, be sure to enable
     sufficient swap space for the test. See <xref
