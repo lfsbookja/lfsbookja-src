@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2018-09-30</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[dj] - Restore build of Util-Linux in chapter5 to avoid
+          reciprocal dependency for Systemd.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Moved installation of Util-Linux and E2fsprogs after
+          Procps to satisfy build order in the Systemd book. This has no effect
+          on the SysV book.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-09-30</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[dj] - 第 5 章での Util-Linux ビルドを復活。Systemd との相互依存を避けるため。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Util-Linux と E2fsprogs を Procps の後ろにすることで Systemd 版のビルド順を満たすことに。
+          これは SysV 版では意味はない。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-09-20</para>
       <itemizedlist>
         <listitem>
