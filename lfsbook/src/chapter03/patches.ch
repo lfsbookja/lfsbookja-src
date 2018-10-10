@@ -119,6 +119,12 @@
         <para>&Download;: <ulink url="&patches-root;&systemd-glibc-patch;"/></para>
 @z
 
+@x systemd meson fixes patch
+        <para>Download: <ulink url="&patches-root;&systemd-meson-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&systemd-meson-patch;"/></para>
+@z
+
 @x
   <para>Total size of these patches: about <returnvalue/></para>
 @y

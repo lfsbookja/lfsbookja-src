@@ -68,6 +68,14 @@
 @z
 
 @x
+    <para>Apply a patch to fix a build failure with meson-0.40.0:</para>
+@y
+    <para>
+    meson-0.40.0 でのビルド失敗を修正するパッチを適用します。
+    </para>
+@z
+
+@x
     <para>Remove an unneeded group,
     <systemitem class="groupname">render</systemitem>, from the default udev
     rules:</para>
