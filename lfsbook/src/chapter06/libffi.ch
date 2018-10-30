@@ -61,7 +61,7 @@
           will be copied from the native system to a less capable 
           system, use the less capable system as a parameter. For details 
           about alternative system types, see <ulink 
-          url='https://gcc.gnu.org/onlinedocs/gcc-8.1.0/gcc/x86-Options.html'>
+          url='https://gcc.gnu.org/onlinedocs/gcc-&gcc-version;/gcc/x86-Options.html'>
           the x86 options in the gcc manual</ulink>.</para>
 @y
           <para>
@@ -69,7 +69,7 @@
           仮にこれを指定しなかった場合、システムを誤認して誤ったコードを生成してしまう場合があります。
           生成されたコードが、より劣ったシステム向けのネイティブコードをコピーしていたとすると、より劣ったシステムに対するパラメーターを指定することとなります。
           システムに応じた詳細は <ulink 
-          url='https://gcc.gnu.org/onlinedocs/gcc-8.1.0/gcc/x86-Options.html'>
+          url='https://gcc.gnu.org/onlinedocs/gcc-&gcc-version;/gcc/x86-Options.html'>
           the x86 options in the gcc manual</ulink>
           を参照してください。
           </para>

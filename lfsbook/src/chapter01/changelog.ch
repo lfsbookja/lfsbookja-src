@@ -54,6 +54,82 @@
 @z
 
 @x
+      <para>2018-10-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to gdbm-1.18.1. Fixes
+          <ulink url="&lfs-ticket-root;4364">#4364</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to Python-3.7.1. Fixes
+          <ulink url="&lfs-ticket-root;4361">#4361</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-10-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - gdbm-1.18.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4364">#4364</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Python-3.7.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4361">#4361</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-10-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to iproute2-4.19.0. Fixes
+          <ulink url="&lfs-ticket-root;4363">#4363</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to file-5.35. Fixes
+          <ulink url="&lfs-ticket-root;4359">#4359</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to tzdata-2018f. Fixes
+          <ulink url="&lfs-ticket-root;4358">#4358</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to meson-0.48.1. Fixes
+          <ulink url="&lfs-ticket-root;4357">#4357</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to linux-4.19. Fixes
+          <ulink url="&lfs-ticket-root;4356">#4356</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-10-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - iproute2-4.19.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4363">#4363</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - file-5.35 へのアップデート。
+          <ulink url="&lfs-ticket-root;4359">#4359</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - tzdata-2018f へのアップデート。
+          <ulink url="&lfs-ticket-root;4358">#4358</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - meson-0.48.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4357">#4357</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - linux-4.19 へのアップデート。
+          <ulink url="&lfs-ticket-root;4356">#4356</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-10-10</para>
       <itemizedlist>
         <listitem revision="systemd">
@@ -62,11 +138,11 @@
           <ulink url="&lfs-ticket-root;4355">#4355</ulink>.</para>
         </listitem>
         <listitem revision="systemd">
-          <para>[dj] - Added systemd-239-meson-0.40.0_fixes-1.patch to resolve
+          <para>[dj] - Added systemd-239-meson-0.48.0_fixes-1.patch to resolve
           build errors with meson.</para>
         </listitem>
         <listitem>
-          <para>[dj] - Update to meson-0.40.0. Fixes
+          <para>[dj] - Update to meson-0.48.0. Fixes
           <ulink url="&lfs-ticket-root;4351">#4351</ulink>.</para>
         </listitem>
         <listitem>
@@ -82,10 +158,10 @@
           <ulink url="&lfs-ticket-root;4355">#4355</ulink> を Fix に。</para>
         </listitem>
         <listitem revision="systemd">
-          <para>[dj] - meson に対するビルドエラーを解消するために systemd-239-meson-0.40.0_fixes-1.patch を追加。</para>
+          <para>[dj] - meson に対するビルドエラーを解消するために systemd-239-meson-0.48.0_fixes-1.patch を追加。</para>
         </listitem>
         <listitem>
-          <para>[dj] - meson-0.40.0 へのアップデート。
+          <para>[dj] - meson-0.48.0 へのアップデート。
           <ulink url="&lfs-ticket-root;4351">#4351</ulink> を Fix に。</para>
         </listitem>
         <listitem>
