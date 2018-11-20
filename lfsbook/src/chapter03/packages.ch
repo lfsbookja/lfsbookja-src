@@ -139,12 +139,6 @@
         <para>&Download;: <ulink url="&diffutils-url;"/></para>
 @z
 
-@x Eudev
-        <para>Download: <ulink url="&eudev-url;"/></para>
-@y
-        <para>&Download;: <ulink url="&eudev-url;"/></para>
-@z
-
 @x e2fsprogs
         <para>Home page: <ulink url="&e2fsprogs-home;"/></para>
         <para>Download: <ulink url="&e2fsprogs-url;"/></para>
@@ -159,6 +153,12 @@
 @y
         <para>&Homepage;: <ulink url="&elfutils-home;"/></para>
         <para>&Download;: <ulink url="&elfutils-url;"/></para>
+@z
+
+@x Eudev
+        <para>Download: <ulink url="&eudev-url;"/></para>
+@y
+        <para>&Download;: <ulink url="&eudev-url;"/></para>
 @z
 
 @x Expat

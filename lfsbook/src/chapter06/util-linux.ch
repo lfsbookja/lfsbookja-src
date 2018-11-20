@@ -138,7 +138,7 @@
 
 @x
         <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
+        choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
         eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
@@ -161,7 +161,7 @@
          and /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
+        choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
         eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (last へのリンク),
@@ -254,6 +254,12 @@
           <para>Modifies the state of CPUs</para>
 @y
           <para>CPU の状態を変更します。</para>
+@z
+
+@x choom
+          <para>Displays and adjusts OOM-killer score</para>
+@y
+          <para>OOM-killer スコアを表示し調整します。</para>
 @z
 
 @x chrt

@@ -54,6 +54,108 @@
 @z
 
 @x
+      <para>2018-11-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] -  Update to libcap-2.26. Fixes
+          <ulink url="&lfs-ticket-root;4378">#4378</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-11-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] -  libcap-2.26 へのアップデート。
+          <ulink url="&lfs-ticket-root;4378">#4378</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-11-09</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Update groups file for new eudev. Fixes
+          <ulink url="&lfs-ticket-root;4369">#4369</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.48.2. Fixes
+          <ulink url="&lfs-ticket-root;4371">#4371</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.2.1. Fixes
+          <ulink url="&lfs-ticket-root;4370">#4370</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-11-09</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - 新たな eudev に対してのグループファイルの更新。
+          <ulink url="&lfs-ticket-root;4369">#4369</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.48.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4371">#4371</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4370">#4370</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-11-06</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Update to eudev-3.2.7. Fixes
+          <ulink url="&lfs-ticket-root;4365">#4365</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.2. Fixes
+          <ulink url="&lfs-ticket-root;4367">#4367</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.19.1. Fixes
+          <ulink url="&lfs-ticket-root;4368">#4368</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2018g. Fixes
+          <ulink url="&lfs-ticket-root;4366">#4366</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-v2.33. Fixes
+          <ulink url="&lfs-ticket-root;4353">#4353</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-11-06</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - eudev-3.2.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4365">#4365</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4367">#4367</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.19.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4368">#4368</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2018g へのアップデート。
+          <ulink url="&lfs-ticket-root;4366">#4366</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-v2.33 へのアップデート。
+          <ulink url="&lfs-ticket-root;4353">#4353</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-10-29</para>
       <itemizedlist>
         <listitem>
