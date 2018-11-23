@@ -54,6 +54,79 @@
 @z
 
 @x
+      <para>2018-11-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Add "wheel" group to satisfy systemd
+          requirements. Fixes
+          <ulink url="&lfs-ticket-root;4376">#4376</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Add a sed to fix a bug in autoconf's test suite.
+          Fixes
+          <ulink url="&lfs-ticket-root;4372">#4372</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to tcl-8.6.9. Security update. Fixes
+          <ulink url="&lfs-ticket-root;4375">#4375</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to openssl-1.1.1a. This is a security
+          update. Fixes
+          <ulink url="&lfs-ticket-root;4379">#4379</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-239-25d1ba1. This fixes
+          three security problems in systemd. Fixes
+          <ulink url="&lfs-ticket-root;4377">#4377</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to linux-4.19.3. Fixes
+          <ulink url="&lfs-ticket-root;4373">#4373</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to elfutils-0.175. Fixes
+          <ulink url="&lfs-ticket-root;4374">#4374</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-11-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd からの要請を満たすため "wheel" グループを追加。
+          <ulink url="&lfs-ticket-root;4376">#4376</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - autoconf のテストスイートにおけるバグを修正する sed を追加。
+          <ulink url="&lfs-ticket-root;4372">#4372</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - tcl-8.6.9 へのアップデート。
+          セキュリティに関する更新。
+          <ulink url="&lfs-ticket-root;4375">#4375</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - openssl-1.1.1a へのアップデート。
+          セキュリティに関する更新。
+          <ulink url="&lfs-ticket-root;4379">#4379</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-239-25d1ba1 へのアップデート。
+          systemd におけるセキュリティ問題を三つ解消。
+          <ulink url="&lfs-ticket-root;4377">#4377</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - linux-4.19.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4373">#4373</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - elfutils-0.175 へのアップデート。
+          <ulink url="&lfs-ticket-root;4374">#4374</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-11-19</para>
       <itemizedlist>
         <listitem>
