@@ -195,28 +195,16 @@
 
 @x
     <para revision="sysv">Some of the scripts in the LFS-Bootscripts package
-    depend on <command>head</command>, <command>sleep</command>, and
-    <command>nice</command>.  As <filename class="directory">/usr</filename>
-    may not be available during the early stages of booting, those binaries
-    need to be on the root partition:</para>
+    depend on <command>head</command>, <command>nice</command>,
+    <command>sleep</command>, and <command>touch</command>.  As <filename
+    class="directory">/usr</filename> may not be available during the early and
+    late stages of booting, those binaries need to be on the root partition to
+    maintain FHS compliance:</para>
 @y
     <para revision="sysv">
-    LFS-ブートスクリプトパッケージにあるスクリプトでは、<command>head</command>、
-    <command>sleep</command>、
-    <command>nice</command> に依存しているものがあります。
-    ブート処理の初期段階においては <filename class="directory">/usr</filename> ディレクトリは認識されないため、上のプログラムはルートパーティションに移す必要があります。
-    </para>
-@z
-
-@x
-    <para revision="systemd">Some packages in BLFS and beyond expect the
-    following programs in <filename class="directory">/bin</filename>, so make
-    sure they are placed there:</para>
-@y
-    <para revision="systemd">
-    BLFSブック以降で利用するパッケージの中には、以下に示すプログラムが <filename
-    class="directory">/bin</filename> に存在することを前提としているものがあります。
-    そこでそれらのプログラムを移動させます。
+    LFS-ブートスクリプトパッケージにあるスクリプトでは、<command>head</command>、<command>nice</command> に依存しているものがあります。
+    ブート処理の初期段階や最終段階においては <filename class="directory">/usr</filename> ディレクトリが認識されないため、FHS
+    コンプライアンスのためにも上のプログラムはルートパーティションに移す必要があります。
     </para>
 @z
 

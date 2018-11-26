@@ -54,6 +54,70 @@
 @z
 
 @x
+      <para>2018-11-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.2.2. Fixes
+          <ulink url="&lfs-ticket-root;4380">#4380</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to sysvinit-2.93. Fixes
+          <ulink url="&lfs-ticket-root;4360">#4360</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-11-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bison-3.2.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4380">#4380</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - sysvinit-2.93 へのアップデート。
+          <ulink url="&lfs-ticket-root;4360">#4360</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-11-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to linux-4.19.4. Fixes
+          <ulink url="&lfs-ticket-root;4381">#4381</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Update to systemd-239-6b4878d.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - Add "wheel" group to systemd groups.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Add touch to the list of moved coreutils programs, and
+          clarify necessity of the moves to meet FHS compliance.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-11-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - linux-4.19.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4381">#4381</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - systemd-239-6b4878d へのアップデート。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[dj] - systemd グループに "wheel" グループを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Add touch to the list of moved coreutils programs, and
+          clarify necessity of the moves to meet FHS compliance.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-11-21</para>
       <itemizedlist>
         <listitem>
