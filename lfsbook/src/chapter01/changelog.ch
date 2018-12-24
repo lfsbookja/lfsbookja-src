@@ -54,6 +54,103 @@
 @z
 
 @x
+      <para>2018-12-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Add a note to libffi about optimizing for the
+          specific CPU in use at compile time. Similar to GMP, this causes
+          Illegal Operation errors if the installation is moved to another
+          system.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-12-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - 特定の CPU において libffi をコンパイルする際の最適化について説明。
+          GMP と同様、他システム向けにインストールした場合に Illegal Operation エラーが発生することを示す。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-12-11</para>
+      <itemizedlist>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - Update to dbus-1.12.12. Fixes
+          <ulink url="&lfs-ticket-root;4385">#4385</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.19.8. Fixes
+          <ulink url="&lfs-ticket-root;4387">#4387</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.49.0. Fixes
+          <ulink url="&lfs-ticket-root;4388">#4388</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-12-11</para>
+      <itemizedlist>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - dbus-1.12.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4385">#4385</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.19.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4387">#4387</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.49.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4388">#4388</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2018-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Move /etc/bash_completions.d/grub to a 
+          better location. Fixes
+          <ulink url="&lfs-ticket-root;4385">#4385</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to dejagnu-1.6.2. Fixes
+          <ulink url="&lfs-ticket-root;4382">#4382</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.19.6. Fixes
+          <ulink url="&lfs-ticket-root;4383">#4383</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.28.1. Fixes
+          <ulink url="&lfs-ticket-root;4384">#4384</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /etc/bash_completions.d/grub を適切なところへ移動。
+          <ulink url="&lfs-ticket-root;4385">#4385</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - dejagnu-1.6.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4382">#4382</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.19.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4383">#4383</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.28.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4384">#4384</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-11-25</para>
       <itemizedlist>
         <listitem>

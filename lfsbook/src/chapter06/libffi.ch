@@ -31,6 +31,20 @@
 @z
 
 @x
+      <para>Similar to GMP, libffi builds with optimizations specific
+      to the proccesor in use. If building for another system, export
+      CFLAGS and CXXFLAGS to specify a generic build for your architecture.
+      If this is not done, all applications that link to libffi will trigger
+      Illegal Operation Errors.</para>
+@y
+      <para>
+      GMP と同じように libffi では、利用中のプロセッサーに応じた最適化を行いビルドされます。
+      異なるシステムに向けてのビルドを行う場合は CFLAGS と CXXFLAGS に対して、そのアーキテクチャー向けの汎用的なビルドを行うものにしてください。
+      そうしなかった場合には、libffi をリンクするアプリケーションにおいて Illegal Operation エラーを発生させることになります。
+      </para>
+@z
+
+@x
     <para>Modify the Makefile to install headers into the standard
     <filename class="directory">/usr/include</filename> directory instead of
     <filename class="directory">/usr/lib/libffi-3.2.1/include</filename>.</para>
