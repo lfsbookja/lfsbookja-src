@@ -54,6 +54,81 @@
 @z
 
 @x
+      <para>2018-12-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to linux-4.19.12. Fixes
+          <ulink url="&lfs-ticket-root;4389">#4389</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to e2fsprogs-1.44.5. Fixes
+          <ulink url="&lfs-ticket-root;4390">#4390</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to bison-3.2.4. Fixes
+          <ulink url="&lfs-ticket-root;4391">#4391</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to sed-4.7. Fixes
+          <ulink url="&lfs-ticket-root;4392">#4392</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to grep-3.3. Fixes
+          <ulink url="&lfs-ticket-root;4393">#4393</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-240. Contains a critical fix for
+          systemd-tmpfiles (privilege escalation). Fixes
+          <ulink url="&lfs-ticket-root;4394">#4394</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to Python-3.7.2. Fixes
+          <ulink url="&lfs-ticket-root;4395">#4395</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to groff-1.22.4. Fixes
+          <ulink url="&lfs-ticket-root;4396">#4396</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2018-12-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - linux-4.19.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4389">#4389</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - e2fsprogs-1.44.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4390">#4390</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - bison-3.2.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4391">#4391</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - sed-4.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4392">#4392</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - grep-3.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4393">#4393</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-240. systemd-tmpfiles (特権の昇格 privilege escalation) に対する重要な修正を含む。
+          <ulink url="&lfs-ticket-root;4394">#4394</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Python-3.7.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4395">#4395</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - groff-1.22.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4396">#4396</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-12-12</para>
       <itemizedlist>
         <listitem>
@@ -208,8 +283,8 @@
           <para>[dj] - systemd グループに "wheel" グループを追加。</para>
         </listitem>
         <listitem>
-          <para>[dj] - Add touch to the list of moved coreutils programs, and
-          clarify necessity of the moves to meet FHS compliance.</para>
+          <para>[dj] - coreutils プログラムにおいて移動するものへの touch を追加。
+          FHS コンプライアンスを満たすための移動であることを明確化。</para>
         </listitem>
       </itemizedlist>
 @z

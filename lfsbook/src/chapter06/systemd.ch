@@ -60,22 +60,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix a build failure with glibc-2.28:</para>
-@y
-    <para>
-    glibc-2.28 に対してビルドできない不具合を修正するためにパッチを適用します。
-    </para>
-@z
-
-@x
-    <para>Apply a patch to fix a build failure with meson-0.48.0:</para>
-@y
-    <para>
-    meson-0.48.0 でのビルド失敗を修正するパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Remove an unneeded group,
     <systemitem class="groupname">render</systemitem>, from the default udev
     rules:</para>
@@ -211,24 +195,6 @@
 @y
     <para>
     不要なディレクトリを削除します。
-    </para>
-@z
-
-@x
-    <para>Create the Sysvinit compatibility symlinks, so systemd is used
-    as the default init system:</para>
-@y
-    <para>
-    Sysvinit と互換性のあるシンボリックリンクを生成します。
-    これにより systemd がデフォルトの init システムとして用いられるようになります。
-    </para>
-@z
-
-@x
-    <para>Remove our earlier created symlink for xsltproc:</para>
-@y
-    <para>
-    上で作り出していた xlstproc に対するシンボリックリンクを削除します。
     </para>
 @z
 
