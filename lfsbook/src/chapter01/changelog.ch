@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2019-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gzip-1.10. Fixes
+          <ulink url="&lfs-ticket-root;4400">#4400</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2018i. Fixes
+          <ulink url="&lfs-ticket-root;4399">#4399</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gzip-1.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4400">#4400</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2018i へのアップデート。
+          <ulink url="&lfs-ticket-root;4399">#4399</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2018-12-27</para>
       <itemizedlist>
         <listitem>
@@ -114,7 +140,8 @@
           <ulink url="&lfs-ticket-root;4393">#4393</ulink> を Fix に。</para>
         </listitem>
         <listitem revision="systemd">
-          <para>[renodr] - systemd-240. systemd-tmpfiles (特権の昇格 privilege escalation) に対する重要な修正を含む。
+          <para>[renodr] - systemd-240 へのアップデート。
+          systemd-tmpfiles (特権の昇格 privilege escalation) に対する重要な修正を含む。
           <ulink url="&lfs-ticket-root;4394">#4394</ulink> を Fix に。</para>
         </listitem>
         <listitem>
