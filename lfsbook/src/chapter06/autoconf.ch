@@ -49,9 +49,13 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>The test suite is currently broken by bash-5 and libtool-2.4.3.
+    To run the tests anyway, issue:</para>
 @y
-    <para>コンパイル結果をテストするには以下を実行します。</para>
+    <para>
+    テストスイートは現時点での bash-5 や libtool-2.4.3 のもとでは機能しません。
+    それでもテストを実行するなら以下を実行します。
+    </para>
 @z
 
 @x
