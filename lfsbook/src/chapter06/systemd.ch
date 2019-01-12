@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>Apply a patch to fix two critical security vulnerabilities:</para>
+@y
+    <para>
+    重大なセキュリティぜい弱性を修正するパッチを適用します。
+    </para>
+@z
+
+@x
     <para>Create a symlink to work around missing xsltproc:</para>
 @y
     <para>

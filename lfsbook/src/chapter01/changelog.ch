@@ -54,6 +54,30 @@
 @z
 
 @x
+      <para>2019-01-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Add a security patch for systemd-240. This fixes
+          CVE-2018-16865 and CVE-2018-16864 (memory corruption in journald
+          leading to stack overflows / arbitrary code execution).
+          Apply this as soon as you can. Fixes
+          <ulink url="&lfs-ticket-root;4408">#4408</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-01-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd-240 へのセキュリティパッチを追加。
+          これにより CVE-2018-16865 と CVE-2018-16864 に対応。
+          （journald にてメモリ破壊が発生しスタックオーバーフロー／任意コードの実行）
+          すぐにこれを適用すること。
+          <ulink url="&lfs-ticket-root;4408">#4408</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-01-10</para>
       <itemizedlist>
         <listitem>
