@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2019-01-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Regenerate the systemd man pages tarball with
+          the Non-namespaced versions of the Docbook XSL Stylesheets.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-01-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd の man ページ tarball を再作成。
+          Docbook XSL スタイルシートにおける namespace 指定のないバージョンとする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-01-11</para>
       <itemizedlist>
         <listitem>
