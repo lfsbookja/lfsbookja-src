@@ -54,6 +54,117 @@
 @z
 
 @x
+      <para>2019-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix psmisc URL. Fixes
+          <ulink url="&lfs-ticket-root;4418">#4418</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.32. Fixes
+          <ulink url="&lfs-ticket-root;4417">#4417</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - psmisc の URL を修正。
+          <ulink url="&lfs-ticket-root;4418">#4418</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.32 へのアップデート。
+          <ulink url="&lfs-ticket-root;4417">#4417</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.3.1. Fixes
+          <ulink url="&lfs-ticket-root;4412">#4412</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.29. Fixes
+          <ulink url="&lfs-ticket-root;4415">#4415</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.5.1. Fixes
+          <ulink url="&lfs-ticket-root;4413">#4413</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.20.6. Fixes
+          <ulink url="&lfs-ticket-root;4409">#4409</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.49.1. Fixes
+          <ulink url="&lfs-ticket-root;4410">#4410</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpfr-4.0.2. Fixes
+          <ulink url="&lfs-ticket-root;4416">#4416</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ninja-1.9.0. Fixes
+          <ulink url="&lfs-ticket-root;4414">#4414</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bison-3.3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4412">#4412</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.29 へのアップデート。
+          <ulink url="&lfs-ticket-root;4415">#4415</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.5.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4413">#4413</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-4.20.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4409">#4409</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.49.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4410">#4410</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpfr-4.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4416">#4416</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ninja-1.9.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4414">#4414</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Fix a bug introduced in tar-1.31, by adding
+          a sed to the build instructions. Also remove an obsolete comment
+          about a failing test.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - tar-1.31 にて sed によるインストール手順を追加しバグを修正。
+          またテスト失敗に関する古いコメントを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-01-20</para>
       <itemizedlist>
         <listitem>

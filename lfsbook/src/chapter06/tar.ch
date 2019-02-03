@@ -26,11 +26,9 @@
 @z
 
 @x
-    <para>Add a program that generates a man page for tar from the source code:</para>
+    <para>Fix a bug introduced in tar-1.31:</para>
 @y
-    <para>
-    tar の Man ページを生成するプログラムを追加します。
-    </para>
+    <para>tar-1.31 にて発生するバグを修正。</para>
 @z
 
 @x

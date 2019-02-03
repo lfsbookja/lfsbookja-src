@@ -185,6 +185,17 @@
 @z
 
 @x
+    <note><para>The symbolic link above is needed to run the tests at this
+    stage of building in the chroot envirnment.  It will be overwritten
+    in the install phase below.</para></note>
+@y
+    <note><para>
+    上のシンボリックリンクは chroot 環境下のこの時点においてテストを実行するために必要となるものです。
+    以降のインストール手順によりこれは上書きされます。
+    </para></note>
+@z
+
+@x
     <para>You may see some test failures.  The Glibc test suite is
     somewhat dependent on the host system.  This is a list of the most common
     issues seen for some versions of LFS:</para>
@@ -216,15 +227,15 @@
 @z
 
 @x
-        <para>The <emphasis>rt/tst-cputimer1</emphasis> and 
-        <emphasis>rt/tst-cpuclock2</emphasis> tests have been known to
-        fail.  The reason is not completely understood, but indications are
-        that minor timing issues can trigger these failures.</para>
+        <para>The <emphasis>rt/tst-cputimer{1,2,3}</emphasis> tests depend on
+        the host system kernel. Kernels 4.14.91&ndash;4.14.96,
+        4.19.13&ndash;4.19.18, and 4.20.0&ndash;4.20.5 are known to 
+        casue these tests to fail.
+        </para>
 @y
         <para>
-        <emphasis>rt/tst-cputimer1</emphasis> と <emphasis>rt/tst-cpuclock2</emphasis> のテストは失敗することが知られています。
-        失敗の理由は明確ではありません。
-        ただ処理速度が原因してそれらが発生すると思われます。
+        <emphasis>rt/tst-cputimer{1,2,3}</emphasis> のテストはホストシステムのカーネルに依存します。
+        カーネル 4.14.91&ndash;4.14.96, 4.19.13&ndash;4.19.18, 4.20.0&ndash;4.20.5 ではテストが失敗します。
         </para>
 @z
 

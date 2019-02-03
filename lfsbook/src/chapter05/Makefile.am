@@ -40,6 +40,7 @@ CHANGE_FILES = \
 	ncurses.ch             \
 	patch.ch               \
 	perl.ch                \
+	python.ch              \
 	sed.ch                 \
 	stripping.ch           \
 	tar.ch                 \
