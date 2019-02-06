@@ -41,10 +41,10 @@
 @z
 
 @x
-    <para>Next, make some fixes required by glibc-2.28:</para>
+    <para>Next, make some fixes required by glibc-2.28 and later:</para>
 @y
     <para>
-    glibc-2.28 に対して必要となる修正を行います。
+    glibc-2.28 以降に対して必要となる修正を行います。
     </para>
 @z
 

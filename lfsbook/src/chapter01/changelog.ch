@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2019-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.3.2. Fixes
+          <ulink url="&lfs-ticket-root;4418">#4419</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.49.2. Fixes
+          <ulink url="&lfs-ticket-root;4420">#4420</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bison-3.3.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4418">#4419</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.49.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4420">#4420</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-02-02</para>
       <itemizedlist>
         <listitem>

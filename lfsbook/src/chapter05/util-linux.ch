@@ -122,3 +122,12 @@
 @y
     <para>&InstallThePackage;</para>
 @z
+
+@x
+    <para>Details on this package are located in
+    <xref linkend="contents-utillinux" role="."/></para>
+@y
+    <para>
+    &Details1;<xref linkend="contents-utillinux" role=""/>&Details2;
+    </para>
+@z
