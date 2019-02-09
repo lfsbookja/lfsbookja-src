@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2019-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update host system requirements.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - ホストシステム要件を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-02-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Simlify instructions for glibc in Chapter 5.
+          Thanks to Romain Geissler for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第 5 章における glibc の手順を簡略化。
+          報告をあげてくれた Romain Geissler に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-02-05</para>
       <itemizedlist>
         <listitem>

@@ -90,22 +90,22 @@
 @z
 
 @x
-      <para><emphasis role="strong">GCC-4.9</emphasis> including the C++
+      <para><emphasis role="strong">GCC-5.2</emphasis> including the C++
       compiler, <command>g++</command> (Versions greater than &gcc-version; are
       not recommended as they have not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">GCC-4.9</emphasis> と C++ コンパイラである <command>g++</command> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">GCC-5.2</emphasis> と C++ コンパイラである <command>g++</command> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
 @z
 
 @x
-      <para><emphasis role="strong">Glibc-2.11</emphasis> (Versions
+      <para><emphasis role="strong">Glibc-2.26</emphasis> (Versions
       greater than &glibc-version; are not recommended as they have
       not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">Glibc-2.11</emphasis> (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">Glibc-2.26</emphasis> (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
 @z
 

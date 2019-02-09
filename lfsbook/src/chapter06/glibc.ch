@@ -230,7 +230,7 @@
         <para>The <emphasis>rt/tst-cputimer{1,2,3}</emphasis> tests depend on
         the host system kernel. Kernels 4.14.91&ndash;4.14.96,
         4.19.13&ndash;4.19.18, and 4.20.0&ndash;4.20.5 are known to 
-        casue these tests to fail.
+        cause these tests to fail.
         </para>
 @y
         <para>
@@ -381,7 +381,7 @@
 @x
     <note><para>Glibc now uses libidn2 when resolving internationalized 
     domain names.  This is a run time dependency.  If this capability
-    is needed, the instrucions for installing libidn2 are in the 
+    is needed, the instructions for installing libidn2 are in the 
     <ulink url="&blfs-book;general/libidn2.html">BLFS libidn2 page</ulink>.
     </para></note>
 @y
