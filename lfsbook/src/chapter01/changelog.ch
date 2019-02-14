@@ -54,6 +54,32 @@
 @z
 
 @x
+      <para>2019-02-011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-4.20.7. Fixes
+          <ulink url="&lfs-ticket-root;4421">#4421</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-26. Fixes
+          <ulink url="&lfs-ticket-root;4422">#4422</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.20.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4421">#4421</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-26 へのアップデート。
+          <ulink url="&lfs-ticket-root;4422">#4422</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-02-08</para>
       <itemizedlist>
         <listitem>
