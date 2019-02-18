@@ -57,6 +57,32 @@
       <para>2019-02-011</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to linux-4.20.8. Fixes
+          <ulink url="&lfs-ticket-root;4423">#4423</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix a problem when building Python in
+          Chapter 5 where some hosts may use host dependent 
+          headers.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-4.20.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4423">#4423</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第 5 章での Python ビルド時の問題を修正。ホストによってはホストに依存したヘッダーを用いる場合があったため。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-02-011</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to linux-4.20.7. Fixes
           <ulink url="&lfs-ticket-root;4421">#4421</ulink>.</para>
         </listitem>

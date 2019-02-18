@@ -100,12 +100,12 @@
 @z
 
 @x
-      <para><emphasis role="strong">Glibc-2.26</emphasis> (Versions
+      <para><emphasis role="strong">Glibc-2.11</emphasis> (Versions
       greater than &glibc-version; are not recommended as they have
       not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">Glibc-2.26</emphasis> (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">Glibc-2.11</emphasis> (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
 @z
 

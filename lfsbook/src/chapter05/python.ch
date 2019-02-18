@@ -26,9 +26,42 @@
 @z
 
 @x
+    <para>This package first builds the Python interpreter, then some
+    standard Python modules. The main script for building modules is
+    written in Python, and uses hard-coded paths to the host <filename
+    class="directory">/usr/include</filename> and <filename
+    class="directory">/usr/lib</filename> directories. To prevent them
+    from being used, issue:</para>
+@y
+    <para>
+    このパッケージは初めに Python インタープリターをビルドし、その後に Python モジュール類をビルドします。
+    モジュール類をビルドする主要なスクリプトは Python により記述されており、ホストシステムの <filename
+    class="directory">/usr/include</filename> と <filename
+    class="directory">/usr/lib</filename> というこの 2 つのディレクトリパスがハードコーディングされています。
+    これが利用されないように以下を実行します。
+    </para>
+@z
+
+@x
     <para>Prepare Python for compilation:</para>
 @y
     <para>&PreparePackage1;Python&PreparePackage2;</para>
+@z
+
+@x
+      <title>The meaning of the configure option:</title>
+@y
+      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;</title>
+@z
+
+@x --without-ensurepip
+          <para>This switch disables the Python installer, which is not needed
+          at this stage.</para>
+@y
+          <para>
+          このスイッチは Python インストーラーを無効にします。
+          この段階では必要がないからです。
+          </para>
 @z
 
 @x

@@ -113,11 +113,11 @@
 @z
 
 @x
-        <seg>attr, getfattr, and setattr</seg>
+        <seg>attr, getfattr, and setfattr</seg>
         <seg>libattr.so</seg>
         <seg>/usr/include/attr and /usr/share/doc/attr-&attr-version;</seg>
 @y
-        <seg>attr, getfattr, setattr</seg>
+        <seg>attr, getfattr, setfattr</seg>
         <seg>libattr.so</seg>
         <seg>/usr/include/attr, /usr/share/doc/attr-&attr-version;</seg>
 @z
@@ -144,7 +144,7 @@
           </para>
 @z
 
-@x setattr
+@x setfattr
           <para>Sets the extended attributes of filesystem objects</para>
 @y
           <para>
