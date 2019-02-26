@@ -217,12 +217,30 @@
 @z
 
 @x
+        <para><emphasis>inet/tst-idna_name_classify</emphasis> 
+        is known to fail in the LFS chroot environment.</para>
+@y
+        <para>
+        <emphasis>inet/tst-idna_name_classify</emphasis> は LFS の chroot 環境においては失敗します。
+        </para>
+@z
+
+@x
         <para><emphasis>posix/tst-getaddrinfo4</emphasis> and
         <emphasis>posix/tst-getaddrinfo5</emphasis>
         may fail on some architectures.</para>
 @y
         <para><emphasis>
         posix/tst-getaddrinfo4</emphasis> と <emphasis>posix/tst-getaddrinfo5</emphasis> は特定の CPU アーキテクチャーでは失敗します。
+        </para>
+@z
+
+@x
+        <para>The <emphasis>nss/tst-nss-files-hosts-multi</emphasis>
+        test may fail for reasons that have not been determined.</para>
+@y
+        <para>
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> は失敗することがありますが、理由は不明です。
         </para>
 @z
 

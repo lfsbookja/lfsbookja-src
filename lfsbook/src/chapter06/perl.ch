@@ -176,7 +176,7 @@
         json_pp, libnetcfg, perl, perl&perl-version; (hard link to perl),
         perlbug, perldoc, perlivp, perlthanks (hard link to perlbug), piconv,
         pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, podselect,
-        prove, pstruct (hard link to c2ph), ptar, ptardiff, ptargrep, shasum,
+        prove, ptar, ptardiff, ptargrep, shasum,
         splain, xsubpp, and zipdetails</seg>
         <seg>Many which cannot all be listed here</seg>
         <seg>/usr/lib/perl5</seg>
@@ -185,7 +185,7 @@
         json_pp, libnetcfg, perl, perl&perl-version; (perl へのハードリンク),
         perlbug, perldoc, perlivp, perlthanks (perlbug へのハードリンク), piconv,
         pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, podselect,
-        prove, pstruct (hard c2ph へのハードリンク), ptar, ptardiff, ptargrep, shasum,
+        prove, ptar, ptardiff, ptargrep, shasum,
         splain, xsubpp, zipdetails</seg>
         <seg>ここで示しきれないほど多くのライブラリ</seg>
         <seg>/usr/lib/perl5</seg>

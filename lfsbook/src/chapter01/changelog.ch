@@ -54,7 +54,62 @@
 @z
 
 @x
-      <para>2019-02-011</para>
+      <para>2019-02-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Add a security patch for systemd-240
+          to fix a PID1 crash over D-Bus. Fixes
+          <ulink url="&lfs-ticket-root;4428">#4428</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd-240 に対するセキュリティパッチを追加。
+          D-Bus 上での PID1 クラッシュを修正する。
+          <ulink url="&lfs-ticket-root;4428">#4428</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-02-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Suppress /lib/systemd/ directory created by
+          man-db-2.8.5.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - man-db-2.8.5 にて /lib/systemd/ ディレクトリが生成されないようにする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add an optional modification to the build
+          procedure for ninja to allow use the the environment
+          variable NINJAJOBS.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ninja にて、環境変数 NINJAJOBS を用いたビルド手順の変更方法を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-02-14</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to linux-4.20.8. Fixes
@@ -80,7 +135,7 @@
 @z
 
 @x
-      <para>2019-02-011</para>
+      <para>2019-02-11</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to linux-4.20.7. Fixes

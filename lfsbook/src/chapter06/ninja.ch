@@ -45,12 +45,12 @@
 @z
 
 @x
-    <para>Using the <emphasis>optional</emphasis> patch below allows a user to
+    <para>Using the <emphasis>optional</emphasis> procedure below allows a user to
     limit the number of parallel processes via an environment variable, 
-    NINJAJOBS.  <command>For example</command> setting:
+    NINJAJOBS.  <command>For example</command>, setting:
 @y
     <para>
-    以降に示す <emphasis>任意</emphasis> のパッチを用いると、並行プロセス数を環境変数 NINJAJOBS から制御できるようになります。
+    以降に示す <emphasis>任意</emphasis> の手順を用いると、並行プロセス数を環境変数 NINJAJOBS から制御できるようになります。
     例えば以下のように設定します。
 @z
 
@@ -62,10 +62,11 @@
 @z
 
 @x
-    <para>If desired, install the patch by running:</para>
+    <para>If desired, add the capability to use the environment variable 
+    NINJAJOBS by running:</para>
 @y
     <para>
-    必要な場合はこのパッチを適用します。
+    必要な場合は、環境変数 NINJAJOBS を利用するために以下を実行します。
     </para>
 @z
 

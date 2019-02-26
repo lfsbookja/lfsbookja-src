@@ -82,6 +82,15 @@
           </para>
 @z
 
+@x --with-systemd...
+          <para>These parameters prevent installing unneeded systemd 
+          directories and files.</para>
+@y
+          <para>
+          これらのパラメーターは systemd に関する不要なディレクトリやファイルはインストールしないようにします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y

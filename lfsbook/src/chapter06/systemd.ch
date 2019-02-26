@@ -255,7 +255,7 @@
         telinit, timedatectl, and udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2, 
-        libsystemd.so, libsystemd-shared-231.so,
+        libsystemd.so, libsystemd-shared-&systemd-version;.so,
         and libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
@@ -277,7 +277,7 @@
         telinit, timedatectl, udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2, 
-        libsystemd.so, libsystemd-shared-231.so,
+        libsystemd.so, libsystemd-shared-&systemd-version;.so,
         libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
