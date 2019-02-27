@@ -80,14 +80,14 @@
 @z
 
 @x
-        <seg>awk (link to gawk), gawk, gawk-&gawk-version;, and igawk</seg>
+        <seg>awk (link to gawk), gawk, gnd awk-&gawk-version;</seg>
         <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, ordchr.so,
         readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
         testext.so, and time.so</seg>
         <seg>/usr/lib/gawk, /usr/libexec/awk, /usr/share/awk, and
         /usr/share/doc/gawk-&gawk-version;</seg>
 @y
-        <seg>awk (gawk へのリンク), gawk, gawk-&gawk-version;, igawk</seg>
+        <seg>awk (gawk へのリンク), gawk, awk-&gawk-version;</seg>
         <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, ordchr.so,
         readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
         testext.so, time.so</seg>
@@ -123,10 +123,10 @@
           <para><command>gawk</command> へのハードリンク。</para>
 @z
 
-@x
-          <para>Gives <command>gawk</command> the ability to include files</para>
-@y
-          <para>
-          <command>gawk</command> に対してファイルをインクルードする機能を付与します。
-          </para>
-@z
+%@x
+%          <para>Gives <command>gawk</command> the ability to include files</para>
+%@y
+%          <para>
+%          <command>gawk</command> に対してファイルをインクルードする機能を付与します。
+%          </para>
+%@z

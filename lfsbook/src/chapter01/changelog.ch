@@ -57,6 +57,18 @@
       <para>2019-02-25</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to linux-4.20.12. Fixes
+          <ulink url="&lfs-ticket-root;4425">#4425</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.176. Fixes
+          <ulink url="&lfs-ticket-root;4426">#4426</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.36. Fixes
+          <ulink url="&lfs-ticket-root;4429">#4429</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
           <para>[renodr] - Add a security patch for systemd-240
           to fix a PID1 crash over D-Bus. Fixes
           <ulink url="&lfs-ticket-root;4428">#4428</ulink>.</para>
@@ -66,6 +78,18 @@
       <para>2019-02-25</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - linux-4.20.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4425">#4425</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.176 へのアップデート。
+          <ulink url="&lfs-ticket-root;4426">#4426</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.36 へのアップデート。
+          <ulink url="&lfs-ticket-root;4429">#4429</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
           <para>[renodr] - systemd-240 に対するセキュリティパッチを追加。
           D-Bus 上での PID1 クラッシュを修正する。
           <ulink url="&lfs-ticket-root;4428">#4428</ulink> を Fix に。</para>

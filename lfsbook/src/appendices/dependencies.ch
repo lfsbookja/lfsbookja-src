@@ -583,13 +583,11 @@
           <seg>なし</seg>
 @z
 @x
-          <seg><ulink url="http://gcc.gnu.org/wiki/Graphite">CLooG-PPL</ulink>,
-               <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>, and
-               <ulink url="http://gcc.gnu.org/wiki/Graphite">PPL</ulink></seg>
+          <seg><ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink> and 
+               <ulink url="https://repo.or.cz/isl.git">ISL</ulink> 
 @y
-          <seg><ulink url="http://gcc.gnu.org/wiki/Graphite">CLooG-PPL</ulink>,
-               <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
-               <ulink url="http://gcc.gnu.org/wiki/Graphite">PPL</ulink></seg>
+          <seg><ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
+               <ulink url="https://repo.or.cz/isl.git">ISL</ulink> 
 @z
 
 %----------------------------------------------------------------------
@@ -641,12 +639,17 @@
 @z
 
 %----------------------------------------------------------------------
-@x Glibc
+@x
+<!-- Begin Glibc dependency info -->
+@y
+<!-- Begin Glibc dependency info -->
+@z
+@x
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
-         Grep, Gzip, Linux API Headers, Make, Perl, Sed, and Texinfo</seg>
+         Grep, Gzip, Linux API Headers, Make, Perl, Python, Sed, and Texinfo</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
-         Grep, Gzip, Linux API ヘッダー, Make, Perl, Sed, Texinfo</seg>
+         Grep, Gzip, Linux API ヘッダー, Make, Perl, Python, Sed, Texinfo</seg>
 @z
 @x
           <seg>File</seg>

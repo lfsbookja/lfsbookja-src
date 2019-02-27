@@ -129,9 +129,9 @@
 @z
 
 @x
-        <seg>code, find, locate, oldfind, updatedb, and xargs</seg>
+        <seg>find, locate, updatedb, and xargs</seg>
 @y
-        <seg>code, find, locate, oldfind, updatedb, xargs</seg>
+        <seg>find, locate, updatedb, xargs</seg>
 @z
 
 @x
@@ -140,24 +140,15 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-% @x bigram
-%           <para>Was formerly used to produce <command>locate</command>
-%           databases</para>
-% @y
-%           <para>
-%           かつて利用されていたコマンドで <command>locate</command> データベースを生成します。
-%           </para>
-% @z
-
-@x code
-          <para>Was formerly used to produce <command>locate</command>
-          databases; it is the ancestor of <command>frcode</command></para>
-@y
-          <para>
-          かつて利用されていたコマンドで <command>locate</command> データベースを生成します。
-          これは <command>frcode</command> の前身です。
-          </para>
-@z
+%@x code
+%          <para>Was formerly used to produce <command>locate</command>
+%          databases; it is the ancestor of <command>frcode</command></para>
+%@y
+%          <para>
+%          かつて利用されていたコマンドで <command>locate</command> データベースを生成します。
+%          これは <command>frcode</command> の前身です。
+%          </para>
+%@z
 
 @x find
           <para>Searches given directory trees for files matching the specified
@@ -168,17 +159,6 @@
           </para>
 @z
 
-% @x frcode
-%           <para>Is called by <command>updatedb</command> to compress the list
-%           of file names; it uses front-compression, reducing the database size
-%           by a factor of four to five</para>
-% @y
-%           <para>
-%           <command>updatedb</command> コマンドから呼び出され、ファイル名の一覧を圧縮します。
-%           これは前置圧縮 (front-compression) を行うもので、データベースサイズを 1/4 から 1/5 に減らします。
-%           </para>
-% @z
-
 @x locate
           <para>Searches through a database of file names and reports the names
           that contain a given string or match a given pattern</para>
@@ -188,13 +168,13 @@
           </para>
 @z
 
-@x oldfind
-          <para>Older version of find, using a different algorithm</para>
-@y
-          <para>
-          find の古い版であり find とは異なるアルゴリズムを用いています。
-          </para>
-@z
+%@x oldfind
+%          <para>Older version of find, using a different algorithm</para>
+%@y
+%          <para>
+%          find の古い版であり find とは異なるアルゴリズムを用いています。
+%          </para>
+%@z
 
 @x updatedb
           <para>Updates the <command>locate</command> database; it scans the
