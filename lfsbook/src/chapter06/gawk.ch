@@ -80,7 +80,7 @@
 @z
 
 @x
-        <seg>awk (link to gawk), gawk, gnd awk-&gawk-version;</seg>
+        <seg>awk (link to gawk), gawk, and awk-&gawk-version;</seg>
         <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, ordchr.so,
         readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
         testext.so, and time.so</seg>
