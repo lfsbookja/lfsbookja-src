@@ -47,11 +47,11 @@
 @x
     <para>Modify the Makefile to install headers into the standard
     <filename class="directory">/usr/include</filename> directory instead of
-    <filename class="directory">/usr/lib/libffi-3.2.1/include</filename>.</para>
+    <filename class="directory">/usr/lib/libffi-&libffi-version;/include</filename>.</para>
 @y
     <para>
     Makefile を修正して、ヘッダーファイルのインストール先を <filename
-    class="directory">/usr/lib/libffi-3.2.1/include</filename> でなく、標準的な <filename
+    class="directory">/usr/lib/libffi-&libffi-version;/include</filename> でなく、標準的な <filename
     class="directory">/usr/include</filename> とします。
     </para>
 @z

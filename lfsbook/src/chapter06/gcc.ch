@@ -183,6 +183,16 @@
 @z
 
 @x
+    <para>Six tests related to get_time are known to fail.  These are
+    apparantly related to the en_HK locale.</para>
+@y
+    <para>
+    get_time に関連するテスト 6 つが失敗します。
+    これは en_HK ロケールに関係するためです。
+    </para>
+@z
+
+@x
     <para>A few unexpected failures cannot always be avoided. The GCC developers
     are usually aware of these issues, but have not resolved them yet.
     Unless the test results are vastly different from those at the above URL,
