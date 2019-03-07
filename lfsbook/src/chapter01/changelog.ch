@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2019-03-05</para>
+      <itemizedlist>
+      <listitem>
+        <para>[bdubbs] - Update to linux-5.0. Fixes
+        <ulink url="&lfs-ticket-root;4437">#4437</ulink>.</para>
+      </listitem>
+      </itemizedlist>
+@y
+      <para>2019-03-05</para>
+      <itemizedlist>
+      <listitem>
+        <para>[bdubbs] - linux-5.0 へのアップデート。
+        <ulink url="&lfs-ticket-root;4437">#4437</ulink> を Fix に。</para>
+      </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-03-01</para>
       <itemizedlist>
       <listitem>

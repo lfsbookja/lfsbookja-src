@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>Fix a file that creates a lot of failures in the regression checks:</para>
-@y
-    <para>
-    縮退テストを失敗させる原因となるファイルを修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Texinfo for compilation:</para>
 @y
     <para>&PreparePackage1;Texinfo&PreparePackage2;</para>

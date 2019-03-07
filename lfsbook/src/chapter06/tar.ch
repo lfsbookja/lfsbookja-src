@@ -26,12 +26,6 @@
 @z
 
 @x
-    <para>Fix a bug introduced in tar-1.31:</para>
-@y
-    <para>tar-1.31 にて発生するバグを修正。</para>
-@z
-
-@x
     <para>Prepare Tar for compilation:</para>
 @y
     <para>&PreparePackage1;Tar&PreparePackage2;</para>
