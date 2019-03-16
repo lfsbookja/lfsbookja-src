@@ -99,8 +99,8 @@
         ngettext, recode-sr-latin, and xgettext</seg>
         <seg>libasprintf.so, libgettextlib.so, libgettextpo.so,
         libgettextsrc.so, and preloadable_libintl.so</seg>
-        <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;, and
-        /usr/share/gettext</seg>
+        <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;,
+        /usr/share/gettext, and /usr/share/gettext-0.19.8</seg>
 @y
         <seg>autopoint, envsubst, gettext, gettext.sh,
         gettextize, msgattrib, msgcat, msgcmp, msgcomm, msgconv, msgen,
@@ -109,7 +109,7 @@
         <seg>libasprintf.so, libgettextlib.so, libgettextpo.so,
         libgettextsrc.so, preloadable_libintl.so</seg>
         <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;,
-        /usr/share/gettext</seg>
+        /usr/share/gettext, /usr/share/gettext-0.19.8</seg>
 @z
 
 @x

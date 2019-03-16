@@ -225,7 +225,7 @@
 @z
 
 @x
-        <seg>[, base32, base64, basename, cat, chcon, chgrp, chmod, chown,
+        <seg>[, b2sum, base32, base64, basename, basenc, cat, chcon, chgrp, chmod, chown,
         chroot, cksum, comm, cp, csplit, cut, date, dd, df, dir, dircolors,
         dirname, du, echo, env, expand, expr, factor, false, fmt, fold, groups,
         head, hostid, id, install, join, link, ln, logname, ls, md5sum, mkdir,
@@ -236,10 +236,10 @@
         sync, tac, tail, tee, test, timeout, touch, tr, true, truncate, tsort,
         tty, uname, unexpand, uniq, unlink, users, vdir, wc, who, whoami, and
         yes</seg>
-        <seg>libstdbuf.so</seg>
+        <seg>libstdbuf.so (in /usr/libexec/coreutils)</seg>
         <seg>/usr/libexec/coreutils</seg>
 @y
-        <seg>[, base32, base64, basename, cat, chcon, chgrp, chmod, chown,
+        <seg>[, b2sum, base32, base64, basename, basenc, cat, chcon, chgrp, chmod, chown,
         chroot, cksum, comm, cp, csplit, cut, date, dd, df, dir, dircolors,
         dirname, du, echo, env, expand, expr, factor, false, fmt, fold, groups,
         head, hostid, id, install, join, link, ln, logname, ls, md5sum, mkdir,
@@ -250,7 +250,7 @@
         sync, tac, tail, tee, test, timeout, touch, tr, true, truncate, tsort,
         tty, uname, unexpand, uniq, unlink, users, vdir, wc, who, whoami,
         yes</seg>
-        <seg>libstdbuf.so</seg>
+        <seg>libstdbuf.so (/usr/libexec/coreutils ディレクトリ内)</seg>
         <seg>/usr/libexec/coreutils</seg>
 @z
 
@@ -283,6 +283,14 @@
 @y
           <para>
           ファイル名からパス部分と指定されたサフィックスを取り除きます。
+          </para>
+@z
+
+@x basenc
+          <para>Encodes or decodes data using various algorithms</para>
+@y
+          <para>
+          各種アルゴリズムを利用したデータのエンコード、出コードを行います。
           </para>
 @z
 

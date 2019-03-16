@@ -86,16 +86,24 @@
 
 @x
       <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
         <seg>
           libelf.so
         </seg>
+        <seg>
+          /usr/include/elfutils
+        </seg>
 @y
         <seg>
           libelf.so
+        </seg>
+        <seg>
+          /usr/include/elfutils
         </seg>
 @z

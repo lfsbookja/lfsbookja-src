@@ -342,25 +342,27 @@
 
 @x
         <seg>c++, cc (link to gcc), cpp, g++, gcc,
-        gcc-ar, gcc-nm, gcc-ranlib, and gcov</seg>
+        gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump, and gcov-tool</seg>
 
-        <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
-        liblto_plugin.so, 
-        libquadmath.{a,so}, libssp.{a,so},
-        libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, and libtsan.{a,so}</seg>
+        <seg>libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a,
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        liblsan.{a,so}, liblto_plugin.so,
+        libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a,
+        libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
+        and libubsan.{a,so}</seg>
 
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, and 
         /usr/share/gcc-&gcc-version;</seg>
 @y
         <seg>c++, cc (gcc へのリンク), cpp, g++, gcc,
-        gcc-ar, gcc-nm, gcc-ranlib, gcov</seg>
+        gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump, gcov-tool</seg>
 
-        <seg>libasan.{a,so}, libatomic.{a,so}, libgcc.a, libgcc_eh.a, 
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libiberty.a, libitm.{a,so},
-        liblto_plugin.so, 
-        libquadmath.{a,so}, libssp.{a,so},
-        libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a, libtsan.{a,so}</seg>
+        <seg>libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a,
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        liblsan.{a,so}, liblto_plugin.so,
+        libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a,
+        libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
+        libubsan.{a,so}</seg>
 
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc,
         /usr/share/gcc-&gcc-version;</seg>
@@ -455,11 +457,43 @@
           </para>
 @z
 
+@x gcov-dump
+          <para>Offline gcda and gcno profile dump tool</para>
+@y
+          <para>
+          オフラインの gcda および gcno プロファイルダンプツール。
+          </para>
+@z
+
+@x gcov-tool
+          <para>Offline gcda profile processing tool</para>
+@y
+          <para>
+          オフラインの gcda プロファイル処理ツール。
+          </para>
+@z
+
 @x libasan
           <para>The Address Sanitizer runtime library</para>
 @y
           <para>
           アドレスサニタイザー (Address Sanitizer) のランタイムライブラリ。
+          </para>
+@z
+
+@x libatomic
+          <para>GCC atomic built-in runtime library</para>
+@y
+          <para>
+          GCC 不可分 (アトミック) ビルトインランタイムライブラリ。
+          </para>
+@z
+
+@x libcc1
+          <para>The C preprocessing library</para>
+@y
+          <para>
+          C 言語プリプロセスライブラリ。
           </para>
 @z
 
@@ -491,19 +525,11 @@
           </para>
 @z
 
-@x libiberty
-          <para>Contains routines used by various GNU programs, including
-          <command>getopt</command>, <command>obstack</command>,
-          <command>strerror</command>, <command>strtol</command>, and
-          <command>strtoul</command></para>
+@x liblsan
+          <para>The Leak Sanitizer runtime library</para>
 @y
           <para>
-          以下に示すような数多くの GNU プログラムが利用する処理ルーチンを提供します。
-          <command>getopt</command>、
-          <command>obstack</command>、
-          <command>strerror</command>、
-          <command>strtol</command>、
-          <command>strtoul</command>
+          リークサニタイザー (Leak Sanitizer) のランタイムライブラリ。
           </para>
 @z
 
@@ -540,6 +566,14 @@
           <para>標準 C++ ライブラリ</para>
 @z
 
+@x libstdc++fs
+          <para>ISO/IEC TS 18822:2015 Filesystem library</para>
+@y
+          <para>
+          ISO/IEC TS 18822:2015 ファイルシステムライブラリ。
+          </para>
+@z
+
 @x libsupc++
           <para>Provides supporting routines for the C++ programming
           language</para>
@@ -554,5 +588,13 @@
 @y
           <para>
           スレッドサニタイザー (Thread Sanitizer) のランタイムライブラリ。
+          </para>
+@z
+
+@x libubsan
+          <para>The Undefined Behavior Sanitizer runtime library</para>
+@y
+          <para>
+          Undefined Behavior Sanitizer ランタイムライブラリ。
           </para>
 @z

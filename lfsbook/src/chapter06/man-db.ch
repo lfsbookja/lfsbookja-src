@@ -448,14 +448,14 @@
 @x
         <seg>accessdb, apropos (link to whatis), catman, lexgrog, man, mandb,
         manpath, and whatis</seg>
-        <seg>libman.so and libmandb.so</seg>
-        <seg>/usr/lib/man-db, /usr/lib/tmpfiles.d, /usr/libexec/man-db,
+        <seg>libman.so and libmandb.so (both in /usr/lib/man-db)</seg>
+        <seg>/usr/lib/man-db, /usr/libexec/man-db,
         and /usr/share/doc/man-db-&man-db-version;</seg>
 @y
         <seg>accessdb, apropos (whatis へのリンク), catman, lexgrog, man, mandb,
         manpath, whatis</seg>
-        <seg>libman.so, libmandb.so</seg>
-        <seg>/usr/lib/man-db, /usr/lib/tmpfiles.d, /usr/libexec/man-db,
+        <seg>libman.so, libmandb.so (いずれも /usr/lib/man-db ディレクトリ内)</seg>
+        <seg>/usr/lib/man-db, /usr/libexec/man-db,
         /usr/share/doc/man-db-&man-db-version;</seg>
 @z
 

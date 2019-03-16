@@ -382,6 +382,15 @@
 @z
 
 @x
+      <para>For information on kernel module loading and udev, see 
+      <xref linkend="module-loading"/>.</para>
+@y
+      <para>
+      カーネルモジュールのロードや udev に関しては <xref linkend="module-loading"/> を参照してください。
+      </para>
+@z
+
+@x
       <title>Module Loading</title>
 @y
       <title>モジュールのロード</title>

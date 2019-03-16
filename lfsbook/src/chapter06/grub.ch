@@ -106,7 +106,7 @@
             grub-script-check,
             grub-set-default,     grub-sparc64-setup, and grub-syslinux2cfg</seg>
 
-        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, and boot/grub (when grub-install
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, and /boot/grub (when grub-install
         is first run)</seg>
 @y
        <seg>grub-bios-setup,      grub-editenv,    grub-file,        grub-fstest,
@@ -118,7 +118,7 @@
             grub-script-check,
             grub-set-default,     grub-sparc64-setup, grub-syslinux2cfg</seg>
 
-        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, boot/grub (grub-install が初めに起動される時)</seg>
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /boot/grub (grub-install が初めに起動される時)</seg>
 @z
 
 @x

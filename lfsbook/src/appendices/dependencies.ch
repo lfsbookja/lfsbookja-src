@@ -971,6 +971,38 @@
 @y
           <seg>テストスイートはありません</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x
+<!-- Begin Libelf dependency info -->
+@y
+<!-- Begin Libelf dependency info -->
+@z
+@x
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, and Make</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Linux Kernel</seg>
+@y
+          <seg>Linux カーネル</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x

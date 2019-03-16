@@ -136,10 +136,12 @@
 
 @x
         <seg>bash, bashbug, and sh (link to bash)</seg>
-        <seg>/usr/share/doc/bash-&bash-version;</seg>
+        <seg>/usr/include/bash, /usr/lib/bash, and
+        /usr/share/doc/bash-&bash-version;</seg>
 @y
         <seg>bash, bashbug, sh (bash へのリンク)</seg>
-        <seg>/usr/share/doc/bash-&bash-version;</seg>
+        <seg>/usr/include/bash, /usr/lib/bash,
+        /usr/share/doc/bash-&bash-version;</seg>
 @z
 
 @x

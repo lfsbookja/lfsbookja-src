@@ -243,19 +243,24 @@
 @z
 
 @x
-        <seg>bootctl, busctl, coredumpctl, halt, hostnamectl, init, journalctl,
-        kernel-install, localectl, loginctl, machinectl, networkctl, poweroff,
-        reboot, runlevel, shutdown, systemctl, systemd-analyze,
+        <seg>bootctl, busctl, coredumpctl, halt (symlink to systemctl),
+        hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
+        machinectl, networkctl, portablectl, poweroff (symlink to
+        systemctl), reboot (symlink to systemctl), resolvconf (symlink to
+        resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
+        (symlink to systemctl), systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
-        systemd-inhibit, systemd-machine-id-setup, systemd-mount, 
-        systemd-notify, systemd-nspawn, systemd-path, systemd-resolve, 
-        systemd-run, systemd-socket-activate,
-        systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
-        telinit, timedatectl, and udevadm</seg>
+        systemd-id128, systemd-inhibit, systemd-machine-id-setup,
+        systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
+        systemd-resolve (symlink to resolvectl), systemd-run,
+        systemd-socket-activate, systemd-stdio-bridge, systemd-tmpfiles,
+        systemd-tty-ask-password-agent, systemd-umount (symlink to
+        systemd-mount), telinit (symlink to systemctl), timedatectl, and
+        udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
-        libnss_resolve.so.2, libnss_systemd.so.2, 
-        libsystemd.so, libsystemd-shared-&systemd-version;.so,
+        libnss_resolve.so.2, libnss_systemd.so.2,
+        libsystemd.so, libsystemd-shared-&systemd-version;.so (in /lib/systemd),
         and libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
@@ -265,19 +270,24 @@
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, and /var/log/journal</seg>
 @y
-        <seg>bootctl, busctl, coredumpctl, halt, hostnamectl, init, journalctl,
-        kernel-install, localectl, loginctl, machinectl, networkctl, poweroff,
-        reboot, runlevel, shutdown, systemctl, systemd-analyze,
+        <seg>bootctl, busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
+        hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
+        machinectl, networkctl, portablectl, poweroff (systemctl へのシンボリックリンク),
+        reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
+        resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
+        (systemctl へのシンボリックリンク), systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
-        systemd-inhibit, systemd-machine-id-setup, systemd-mount, 
-        systemd-notify, systemd-nspawn, systemd-path, systemd-resolve, 
-        systemd-run, systemd-socket-activate,
-        systemd-stdio-bridge, systemd-tmpfiles, systemd-tty-ask-password-agent,
-        telinit, timedatectl, udevadm</seg>
+        systemd-id128, systemd-inhibit, systemd-machine-id-setup,
+        systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
+        systemd-resolve (resolvectl へのシンボリックリンク), systemd-run,
+        systemd-socket-activate, systemd-stdio-bridge, systemd-tmpfiles,
+        systemd-tty-ask-password-agent, systemd-umount (systemd-mount へのシンボリックリンク),
+        telinit (systemctl へのシンボリックリンク), timedatectl,
+        udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
-        libnss_resolve.so.2, libnss_systemd.so.2, 
-        libsystemd.so, libsystemd-shared-&systemd-version;.so,
+        libnss_resolve.so.2, libnss_systemd.so.2,
+        libsystemd.so, libsystemd-shared-&systemd-version;.so (/lib/systemd ディレクトリ内),
         libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
@@ -405,6 +415,15 @@
           </para>
 @z
 
+@x portablectl
+          <para>Used to attach or detach portable services from the local
+          system</para>
+@y
+          <para>
+          ローカルシステムにおいてポータブルサービスのアタッチ、デタッチを行います。
+          </para>
+@z
+
 @x poweroff
           <para>Tells the kernel to halt the system and switch off the computer
           (see <command>halt</command>)</para>
@@ -420,6 +439,26 @@
 @y
           <para>
           カーネルに対してシステム再起動を指示します。(<command>halt</command>参照)
+          </para>
+@z
+
+@x resolvconf
+          <para>Register DNS server and domain configuration with
+          <command>systemd-resolved</command></para>
+@y
+          <para>
+          <command>systemd-resolved</command> に対する DNS サーバーやドメイン設定を登録します。
+          </para>
+@z
+
+@x resolvectl
+          <para>Send control commands to the network name resolution
+          manager, or resolve domain names, IPv4 and IPv6 addresses,
+          DNS records, and services.</para>
+@y
+          <para>
+          ネットワーク名前解決マネージャーに対して制御コマンドを送信します。
+          あるいはドメイン名、IPv4、IPv6 アドレス、DNS レコードやサービスなどを解決します。
           </para>
 @z
 
@@ -524,11 +563,19 @@
           </para>
 @z
 
-@x
+@x systemd-hwdb
           <para>Used to manage hardware database (hwdb)</para>
 @y
           <para>
           ハードウェアデータベース (hwdb) を管理します。
+          </para>
+@z
+
+@x systemd-id128
+          <para>Generate and print id128 strings</para>
+@y
+          <para>
+          id128 文字列を生成し表示します。
           </para>
 @z
 
@@ -621,6 +668,14 @@
 @y
           <para>
           <filename class="directory">tmpfiles.d</filename> ディレクトリにて指定された設定ファイルの内容に基づいて、テンポラリファイルなどの生成削除等を行います。
+          </para>
+@z
+
+@x systemd-umount
+          <para>Unmount mount points</para>
+@y
+          <para>
+          マウントポイントをアンマウントします。
           </para>
 @z
 

@@ -154,7 +154,7 @@
 
 @x
         <seg>
-          2to3, idle3, pydoc3, python3, python3-config, pyvenv
+          2to3, idle3, pip3, pydoc3, python3, python3-config, and pyvenv
         </seg>
         <seg>
           libpython&python-minor;m.so and libpython3.so
@@ -165,7 +165,7 @@
         </seg>
 @y
         <seg>
-          2to3, idle3, pydoc3, python3, python3-config, pyvenv
+          2to3, idle3, pip3, pydoc3, python3, python3-config, pyvenv
         </seg>
         <seg>
           libpython&python-minor;m.so, libpython3.so
@@ -199,6 +199,14 @@
 @y
             <application>Python</application> に特化した GUI エディターを起動するラッパースクリプト。
             このスクリプトを実行するには、Python より前に <application>Tk</application> をインストールして、Python モジュールである Tkinter をビルドしておく必要があります。
+@z
+
+@x pip3
+            The package installer for Python. You can use pip to install
+            packages from Python Package Index and other indexes.
+@y
+            Python のパッケージインストーラー。
+            この pip を使って Python Package Index などのインデックスサイトから各種パッケージをインストールできます。
 @z
 
 @x pydoc3

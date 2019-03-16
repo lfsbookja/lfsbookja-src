@@ -54,6 +54,93 @@
 @z
 
 @x
+      <para>2019-03-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update contents and short descriptions of
+          packages. Fixes
+          <ulink url="&lfs-ticket-root;4443">#4443</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-03-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - 各パッケージの構成や概略説明を更新。
+          <ulink url="&lfs-ticket-root;4443">#4443</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-03-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.50.0. Fixes
+          <ulink url="&lfs-ticket-root;4442">#4442</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-8.31. Fixes
+          <ulink url="&lfs-ticket-root;4441">#4441</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.0.1. Fixes
+          <ulink url="&lfs-ticket-root;4440">#4440</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.00. Fixes
+          <ulink url="&lfs-ticket-root;4439">#4439</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.45.0. Fixes
+          <ulink url="&lfs-ticket-root;4438">#4438</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-03-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-0.50.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4442">#4442</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - coreutils-8.31 へのアップデート。
+          <ulink url="&lfs-ticket-root;4441">#4441</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4440">#4440</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.00 へのアップデート。
+          <ulink url="&lfs-ticket-root;4439">#4439</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.45.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4438">#4438</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to systemd-241. Fixes
+          <ulink url="&lfs-ticket-root;4424">#4424</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd-241 へのアップデート。
+          <ulink url="&lfs-ticket-root;4424">#4424</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-03-05</para>
       <itemizedlist>
       <listitem>
@@ -84,7 +171,7 @@
       </listitem>
       <listitem revision='sysv'>
         <para>[bdubbs] - Update to sysvinit-2.94. Fixes
-        <ulink url="&lfs-ticket-root;4433">#4433</ulink>.</para>
+        <ulink url="&lfs-ticket-root;4432">#4432</ulink>.</para>
       </listitem>
       <listitem>
         <para>[bdubbs] - Update to openssl-1.1.1b. Fixes
@@ -112,7 +199,7 @@
       </listitem>
       <listitem revision='sysv'>
         <para>[bdubbs] - sysvinit-2.94 へのアップデート。
-        <ulink url="&lfs-ticket-root;4433">#4433</ulink> を Fix に。</para>
+        <ulink url="&lfs-ticket-root;4432">#4432</ulink> を Fix に。</para>
       </listitem>
       <listitem>
         <para>[bdubbs] - openssl-1.1.1b へのアップデート。

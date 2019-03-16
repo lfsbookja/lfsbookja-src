@@ -137,18 +137,18 @@
 @z
 
 @x
-        <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
-        choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
-        eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        <seg>addpart, agetty, blkdiscard, blkid, blkzone, blockdev, cal, cfdisk, chcpu,
+        chmem, choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
+        eject, fallocate, fdformat, fdisk, fincore, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
         last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lsipc, lslocks, lslogins, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
-        more, mount, mountpoint, namei, nsenter, partx, pg, pivot_root, prlimit, raw,
-        readprofile, rename, renice, resizepart, rev, rtcwake, script,
+        lsipc, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit, raw,
+        readprofile, rename, renice, resizepart, rev, rfkill, rtcwake, script,
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
-        swapoff (link to swapon), swapon, switch_root, tailf, taskset, ul,
-        umount, uname26, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
+        swapoff (link to swapon), swapon, switch_root, taskset, ul,
+        umount, uname26, unshare, utmpdump, uuidd, uuidgen, uuidparse, wall, wdctl, whereis,
         wipefs, x86_64, and zramctl</seg>
         <seg>libblkid.so, libfdisk.so, libmount.so, 
         libsmartcols.so, and libuuid.so</seg>
@@ -160,18 +160,18 @@
              /usr/share/doc/util-linux-&util-linux-version;, 
          and /var/lib/hwclock</seg>
 @y
-        <seg>addpart, agetty, blkdiscard, blkid, blockdev, cal, cfdisk, chcpu,
-        choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
-        eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        <seg>addpart, agetty, blkdiscard, blkid, blkzone, blockdev, cal, cfdisk, chcpu,
+        chmem, choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
+        eject, fallocate, fdformat, fdisk, fincore, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (last へのリンク),
-         ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lsipc, lslocks, lslogins, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
-        more, mount, mountpoint, namei, nsenter, partx, pg, pivot_root, prlimit, raw,
-        readprofile, rename, renice, resizepart, rev, rtcwake, script,
+        ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
+        lsipc, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit, raw,
+        readprofile, rename, renice, resizepart, rev, rfkill, rtcwake, script,
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
-        swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, ul,
-        umount, uname26, unshare, utmpdump, uuidd, uuidgen, wall, wdctl, whereis,
+        swapoff (swapon へのリンク), swapon, switch_root, taskset, ul,
+        umount, uname26, unshare, utmpdump, uuidd, uuidgen, uuidparse, wall, wdctl, whereis,
         wipefs, x86_64, zramctl</seg>
         <seg>libblkid.so, libfdisk.so, libmount.so, 
         libsmartcols.so, libuuid.so</seg>
@@ -225,6 +225,14 @@
           </para>
 @z
 
+@x blkzone
+          <para>Runs zone command on the given block device</para>
+@y
+          <para>
+          指定されたブロックデバイスにおいてゾーンコマンドを実行します。
+          </para>
+@z
+
 @x blockdev
           <para>Allows users to call block device ioctls from the command
           line</para>
@@ -254,6 +262,14 @@
           <para>Modifies the state of CPUs</para>
 @y
           <para>CPU の状態を変更します。</para>
+@z
+
+@x chmem
+          <para>Configures memory</para>
+@y
+          <para>
+          メモリを設定します。
+          </para>
 @z
 
 @x choom
@@ -357,6 +373,14 @@
 @y
           <para>
           指定されたデバイスのパーティションテーブルを操作します。
+          </para>
+@z
+
+@x fincore
+          <para>Counts pages of file contents in core</para>
+@y
+          <para>
+          メモリコア内にあるファイル情報のページ数を調べます。
           </para>
 @z
 
@@ -633,6 +657,23 @@
           </para>
 @z
 
+@x lsmem
+          <para>Lists the ranges of available memory with their online
+          status</para>
+@y
+          <para>
+          オンライン状態にある利用可能なメモリ範囲を一覧表示します。
+          </para>
+@z
+
+@x lsns
+          <para>Lists namespaces</para>
+@y
+          <para>
+          名前空間を一覧表示します。
+          </para>
+@z
+
 @x mcookie
           <para>Generates magic cookies (128-bit random hexadecimal numbers) for
           <command>xauth</command></para>
@@ -744,13 +785,13 @@
           </para>
 @z
 
-@x pg
-          <para>Displays a text file one screen full at a time</para>
-@y
-          <para>
-          テキストファイルを一度に一画面分表示します。
-          </para>
-@z
+%@x pg
+%          <para>Displays a text file one screen full at a time</para>
+%@y
+%          <para>
+%          テキストファイルを一度に一画面分表示します。
+%          </para>
+%@z
 
 @x pivot_root
           <para>Makes the given file system the new root file system of the
@@ -819,6 +860,14 @@
 @y
           <para>
           指定されたファイル内の行の並びを入れ替えます。
+          </para>
+@z
+
+@x rkfill
+          <para>Tool for enabling and disabling wireless devices</para>
+@y
+          <para>
+          ワイアレスデバイスの有効化、無効化を行うツール。
           </para>
 @z
 
@@ -1010,6 +1059,14 @@
           <para>
           新しい UUID を生成します。
           生成される UUID は当然、他に生成されている UUID とは異なり、自他システムでも過去現在にわたってもユニークなものです。
+          </para>
+@z
+
+@x uuidparse
+          <para>An utility to parse unique identifiers</para>
+@y
+          <para>
+          ユニークな識別子を解析するためのユーティリティー。
           </para>
 @z
 

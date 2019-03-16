@@ -172,7 +172,7 @@
 @z
 
 @x
-        <seg>c2ph, corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh,
+        <seg>corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh,
         json_pp, libnetcfg, perl, perl&perl-version; (hard link to perl),
         perlbug, perldoc, perlivp, perlthanks (hard link to perlbug), piconv,
         pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, podselect,
@@ -181,7 +181,7 @@
         <seg>Many which cannot all be listed here</seg>
         <seg>/usr/lib/perl5</seg>
 @y
-        <seg>c2ph, corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh,
+        <seg>corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh,
         json_pp, libnetcfg, perl, perl&perl-version; (perl へのハードリンク),
         perlbug, perldoc, perlivp, perlthanks (perlbug へのハードリンク), piconv,
         pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, podselect,

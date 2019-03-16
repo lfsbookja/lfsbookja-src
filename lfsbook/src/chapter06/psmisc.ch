@@ -74,9 +74,9 @@
 @z
 
 @x
-        <seg>fuser, killall, peekfd, prtstat, pstree, and pstree.x11 (link to pstree)</seg>
+        <seg>fuser, killall, peekfd, prtstat, pslog, pstree, and pstree.x11 (link to pstree)</seg>
 @y
-        <seg>fuser, killall, peekfd, prtstat, pstree, pstree.x11 (pstree へのリンク)</seg>
+        <seg>fuser, killall, peekfd, prtstat, pslog, pstree, pstree.x11 (pstree へのリンク)</seg>
 @z
 
 @x
@@ -118,6 +118,14 @@
 @y
           <para>
           プロセスに関する情報を表示します。
+          </para>
+@z
+
+@x pslog
+          <para>Reports current logs path of a process</para>
+@y
+          <para>
+          プロセスに対する現状のログパスを表示します。
           </para>
 @z
 

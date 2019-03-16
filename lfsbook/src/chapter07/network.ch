@@ -109,11 +109,11 @@
 @z
 
 @x
-    <para>The values of these variables must be changed in every file to match
+    <para>The values in italics must be changed in every file to match
     the proper setup.</para>
 @y
     <para>
-    各変数の値は各ファイルごとに適切なものに設定してください。
+    イタリックで示す変数の値は、各ファイルごとに適切なものに設定してください。
     </para>
 @z
 
@@ -135,13 +135,14 @@
 
 @x
     <para>The <envar>IFACE</envar> variable defines the interface name,
-    for example, eth0.  It is required for all network device configuration 
-    files. </para>
+    for example, eth0.  It is required for all network device configuration
+    files. The filename extension must match this value.</para>
 @y
     <para>
     <envar>IFACE</envar> 変数は、インターフェース名を定義します。
     例えば eth0 といったものです。
     これはネットワークデバイスの設定を行うすべてのファイルにて必要な定義です。
+    ファイル拡張子もこの設定に合わせます。
     </para>
 @z
 

@@ -235,11 +235,8 @@ CHANGE_FILES = \
 	bootscripts.ch    \
 	chapter07.ch      \
 	clock.ch          \
-	console.ch        \
 	consoled.ch       \
 	etcshells.ch      \
-	hostname.ch       \
-	hosts.ch          \
 	inputrc.ch        \
 	introduction.ch   \
 	introductiond.ch  \
@@ -247,11 +244,8 @@ CHANGE_FILES = \
 	network.ch        \
 	networkd.ch       \
 	profile.ch        \
-	setclock.ch       \
-	site.ch           \
 	symlinks.ch       \
         systemd-custom.ch \
-	sysklogd.ch       \
 	udev.ch           \
 	usage.ch
 

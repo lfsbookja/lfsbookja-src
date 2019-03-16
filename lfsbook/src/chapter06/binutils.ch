@@ -206,13 +206,13 @@
 @z
 
 @x
-        <seg>addr2line, ar, as, c++filt, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
         <seg>libbfd.{a,so} and libopcodes.{a,so}</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
-        <seg>addr2line, ar, as, c++filt, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
-        objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
+        objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
         <seg>libbfd.{a,so} and libopcodes.{a,so}</seg>
         <seg>/usr/lib/ldscripts</seg>
 @z
@@ -259,6 +259,14 @@
 @y
           <para>
           リンカーから呼び出されるもので C++ と Java のシンボルを複合 (demangle) し、オーバーロード関数が破壊されることを回避します。
+          </para>
+@z
+
+@x dwp
+          <para>The DWARF packaging utility</para>
+@y
+          <para>
+          DWARF パッケージユーティリティー。
           </para>
 @z
 

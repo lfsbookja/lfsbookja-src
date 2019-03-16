@@ -135,12 +135,14 @@
 @x
         <seg>info, install-info, makeinfo (link to texi2any),
         pdftexi2dvi, pod2texi, texi2any, texi2dvi, texi2pdf, and texindex</seg>
-        <seg>XSParagraph.so</seg>
+        <seg>MiscXS.so, Parsetexi.so, and XSParagraph.so
+        (all in /usr/lib/texinfo)</seg>
         <seg>/usr/share/texinfo and /usr/lib/texinfo</seg>
 @y
         <seg>info, install-info, makeinfo (texi2any へのリンク),
         pdftexi2dvi, pod2texi, texi2any, texi2dvi, texi2pdf, texindex</seg>
-        <seg>XSParagraph.so</seg>
+        <seg>MiscXS.so, Parsetexi.so, XSParagraph.so
+        (すべて /usr/lib/texinfo ディレクトリ内)</seg>
         <seg>/usr/share/texinfo, /usr/lib/texinfo</seg>
 @z
 

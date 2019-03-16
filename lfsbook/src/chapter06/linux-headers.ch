@@ -129,6 +129,12 @@
 @z
 
 @x
+          <para>The Linux API Miscellaneous Headers</para>
+@y
+          <para>Linux API のさまざまなヘッダーファイル</para>
+@z
+
+@x
           <para>The Linux API MTD Headers</para>
 @y
           <para>Linux API MTD ヘッダーファイル</para>

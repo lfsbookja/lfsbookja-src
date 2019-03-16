@@ -105,11 +105,11 @@
 @z
 
 @x
-        <seg>meson, mesonconf, mesonintrospect, mesontest, and wraptool</seg>
-		<seg>/usr/lib/python&python-minor;/site-packages/meson-&meson-version;-py&python-minor;.egg</seg>
+        <seg>meson</seg>
+        <seg>/usr/lib/python&python-minor;/site-packages/meson-&meson-version;-py&python-minor;.egg-info and /usr/lib/python&python-minor;/site-packages/mesonbuild</seg>
 @y
-        <seg>meson, mesonconf, mesonintrospect, mesontest, wraptool</seg>
-		<seg>/usr/lib/python&python-minor;/site-packages/meson-&meson-version;-py&python-minor;.egg</seg>
+        <seg>meson</seg>
+        <seg>/usr/lib/python&python-minor;/site-packages/meson-&meson-version;-py&python-minor;.egg-info, /usr/lib/python&python-minor;/site-packages/mesonbuild</seg>
 @z
 
 @x
@@ -123,37 +123,5 @@
 @y
           <para>
           生産性の高いビルドシステム。
-          </para>
-@z
-
-@x mesonconf
-          <para>A tool to configure Meson builds</para>
-@y
-          <para>
-          Meson ビルドを設定するツール。
-          </para>
-@z
-
-@x mesonintrospect
-          <para>A tool to extract information about a Meson build</para>
-@y
-          <para>
-          Meson ビルドの情報を抽出するツール。
-          </para>
-@z
-
-@x mesontest
-          <para>Test tool for the Meson build system</para>
-@y
-          <para>
-          Meson ビルドシステム用のテストツール。
-          </para>
-@z
-
-@x wraptool
-          <para>Source dependency downloader</para>
-@y
-          <para>
-          ソース依存ダウンローダー。
           </para>
 @z

@@ -217,22 +217,26 @@
 
 @x
         <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs,e2freefrag,
-        e2fsck, e2image, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
-        fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
-        mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, mklost+found,
+        e2fsck, e2image, e2label, e2mmpstatus, e2scrub, e2scrub_all, e2undo,
+        e4crypt, e4defrag, filefrag, fsck.ext2,
+        fsck.ext3, fsck.ext4, logsave, lsattr, mk_cmds, mke2fs,
+        mkfs.ext2, mkfs.ext3, mkfs.ext4, mklost+found,
         resize2fs, and tune2fs</seg>
         <seg>libcom_err.so, libe2p.so, libext2fs.so, and libss.so</seg>
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
-        /usr/include/ss, /usr/share/et, and /usr/share/ss</seg>
+        /usr/include/ss, /usr/lib/e2fsprogs, /usr/share/et, and
+        /usr/share/ss</seg>
 @y
         <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs,e2freefrag,
-        e2fsck, e2image, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
-        fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
-        mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, mklost+found,
+        e2fsck, e2image, e2label, e2mmpstatus, e2scrub, e2scrub_all, e2undo,
+        e4crypt, e4defrag, filefrag, fsck.ext2,
+        fsck.ext3, fsck.ext4, logsave, lsattr, mk_cmds, mke2fs,
+        mkfs.ext2, mkfs.ext3, mkfs.ext4, mklost+found,
         resize2fs, tune2fs</seg>
         <seg>libcom_err.so, libe2p.so, libext2fs.so, libss.so</seg>
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
-        /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
+        /usr/include/ss, /usr/lib/e2fsprogs, /usr/share/et,
+        /usr/share/ss</seg>
 @z
 
 @x
@@ -335,6 +339,30 @@
           </para>
 @z
 
+@x e2mmpstatus
+          <para>Checks MMP status of an ext4 filesystem</para>
+@y
+          <para>
+          ext4 ファイルシステムの MMP ステータスをチェックします。
+          </para>
+@z
+
+@x e2scrub
+          <para>Checks the contents of a mounted ext[234] filesystem</para>
+@y
+          <para>
+          マウントされている ext[234] ファイルシステムの内容をチェックします。
+          </para>
+@z
+
+@x e2scrub_all
+          <para>Checks all mounted ext[234] filesystems for errors</para>
+@y
+          <para>
+          マウントされている ext[234] ファイルシステムのエラーをチェックします。
+          </para>
+@z
+
 @x e2undo
           <para>Replays the undo log undo_log for an ext2/ext3/ext4 filesystem
           found on a device [This can be used to undo a failed operation by an
@@ -343,6 +371,14 @@
           <para>
           デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
           これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
+          </para>
+@z
+
+@x e4crypt
+          <para>Ext4 filesystem encryption utility</para>
+@y
+          <para>
+          ext4 ファイルシステムの暗号化ユーティリティー。
           </para>
 @z
 
@@ -391,18 +427,6 @@
           <para>
           デフォルトでは <systemitem
           class="filesystem">ext4</systemitem> ファイルシステムをチェックします。
-          これは <command>e2fsck</command> へのハードリンクです。
-          </para>
-@z
-
-@x fsck.ext4dev
-          <para>By default checks <systemitem class="filesystem">ext4</systemitem>
-          development file systems and  is a hard link to
-          <command>e2fsck</command></para>
-@y
-          <para>
-          デフォルトでは <systemitem
-          class="filesystem">ext4</systemitem> ファイルシステムの開発版をチェックします。
           これは <command>e2fsck</command> へのハードリンクです。
           </para>
 @z
@@ -476,17 +500,6 @@
           <para>
           デフォルトでは <systemitem
           class="filesystem">ext4</systemitem> ファイルシステムを生成します。
-          これは <command>mke2fs</command> へのハードリンクです。
-          </para>
-@z
-
-@x mkfs.ext4dev
-          <para>By default creates <systemitem class="filesystem">ext4</systemitem>
-          development file systems and is a hard link to <command>mke2fs</command></para>
-@y
-          <para>
-          デフォルトでは <systemitem
-          class="filesystem">ext4</systemitem> ファイルシステム開発版を生成します。
           これは <command>mke2fs</command> へのハードリンクです。
           </para>
 @z

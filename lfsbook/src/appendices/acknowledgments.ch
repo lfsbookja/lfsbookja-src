@@ -158,6 +158,24 @@
 @z
 
 @x
+      <para><ulink url="mailto:info@linuxfromscratch.org.ru">Anton Maisak</ulink> 
+      &lt;info@linuxfromscratch.org.ru&gt; &ndash; Russian LFS
+      translation project</para>
+@y
+      <para><ulink url="mailto:info@linuxfromscratch.org.ru">Anton Maisak</ulink> 
+      &lt;info@linuxfromscratch.org.ru&gt; &ndash; ロシアの LFS 翻訳プロジェクト</para>
+@z
+
+@x
+      <para><ulink url="mailto:helen@linuxfromscratch.org.ru">Elena Shevcova</ulink> 
+      &lt;helen@linuxfromscratch.org.ru&gt; &ndash; Russian LFS
+      translation project</para>
+@y
+      <para><ulink url="mailto:helen@linuxfromscratch.org.ru">Elena Shevcova</ulink> 
+      &lt;helen@linuxfromscratch.org.ru&gt; &ndash; ロシアの LFS 翻訳プロジェクト</para>
+@z
+
+@x
   <bridgehead renderas="sect2">Mirror Maintainers</bridgehead>
 @y
   <bridgehead renderas="sect2">ミラー管理者</bridgehead>
@@ -335,6 +353,14 @@
 @y
       <para><ulink url="mailto:kontakt@wankoo.org">Benjamin Heil</ulink>
       &lt;kontakt@wankoo.org&gt; &ndash; lfs.wankoo.org ミラー</para>
+@z
+
+@x
+      <para><ulink url="mailto:info@linuxfromscratch.org.ru">Anton Maisak</ulink>
+      &lt;info@linuxfromscratch.org.ru&gt; &ndash; linuxfromscratch.org.ru mirror</para>
+@y
+      <para><ulink url="mailto:info@linuxfromscratch.org.ru">Anton Maisak</ulink>
+      &lt;info@linuxfromscratch.org.ru&gt; &ndash; linuxfromscratch.org.ru ミラー</para>
 @z
 
 @x

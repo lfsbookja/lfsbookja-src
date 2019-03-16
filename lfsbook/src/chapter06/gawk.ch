@@ -81,16 +81,16 @@
 
 @x
         <seg>awk (link to gawk), gawk, and awk-&gawk-version;</seg>
-        <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, ordchr.so,
+        <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, intdiv.so, ordchr.so,
         readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
-        testext.so, and time.so</seg>
+        and time.so (all in /usr/lib/gawk)</seg>
         <seg>/usr/lib/gawk, /usr/libexec/awk, /usr/share/awk, and
         /usr/share/doc/gawk-&gawk-version;</seg>
 @y
         <seg>awk (gawk へのリンク), gawk, awk-&gawk-version;</seg>
-        <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, ordchr.so,
+        <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, intdiv.so, ordchr.so,
         readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
-        testext.so, time.so</seg>
+        time.so (すべて /usr/lib/gawk ディレクトリ内)</seg>
         <seg>/usr/lib/gawk, /usr/libexec/awk, /usr/share/awk,
         /usr/share/doc/gawk-&gawk-version;</seg>
 @z
