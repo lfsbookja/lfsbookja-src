@@ -54,6 +54,65 @@
 @z
 
 @x
+      <para>2019-03-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata2019a. Fixes
+          <ulink url="&lfs-ticket-root;4448">#4448</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.7.3. Fixes
+          <ulink url="&lfs-ticket-root;4447">#4447</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-03-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata2019a へのアップデート。
+          <ulink url="&lfs-ticket-root;4448">#4448</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.7.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4447">#4447</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.0.0. Fixes
+          <ulink url="&lfs-ticket-root;4446">#4446</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.0.4. Fixes
+          <ulink url="&lfs-ticket-root;4444">#4444</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Use -ffile-prefix-map instead of -isystem and
+          symlinks in the Glibc build to simplify the instruction.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4446">#4446</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.0.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4444">#4444</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Glibc のビルドにおいて -isystem に替わって -ffile-prefix-map を利用、およびシンボリックリンクを利用することで手順を簡略化する。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-03-13</para>
       <itemizedlist>
         <listitem>

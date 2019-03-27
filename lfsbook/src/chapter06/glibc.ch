@@ -78,12 +78,12 @@
 @z
 
 @x
-    <para>Determine the GCC include directory and create a symlink for LSB
+    <para>Create a symlink for LSB
     compliance. Additionally, for x86_64, create a compatibility symlink
     required for the dynamic loader to function correctly:</para>
 @y
     <para>
-    GCC のインクルードディレクトリを明示して LSB コンプライアンスに従ったシンボリックリンクを作成します。
+    LSB コンプライアンスに従ったシンボリックリンクを作成します。
     さらに x86_64 向けにダイナミックローダーが正しく機能するために必要なシンボリックリンクを作成します。
     </para>
 @z
@@ -118,12 +118,13 @@
       <title>configure オプションおよびパラメーターの意味:</title>
 @z
 
-@x CC="gcc -isystem $GCC_INCDIR -isystem /usr/include"
-          <para>Setting the location of both gcc and system include directories
-          avoids introduction of invalid paths in debugging symbols.</para>
+@x CC="gcc -ffile-prefix-map=/tools=/usr"
+          <para>Make GCC record any references to files in /tools in result
+          of the compilation as if the files resided in /usr.  This avoids
+          introduction of invalid paths in debugging symbols.</para>
 @y
           <para>
-          gcc とシステムのインクルードディレクトリを指定します。
+          コンパイルした結果、/tools にあるファイルへの参照があったとしても、それが /usr にあるかのように参照を切り替えます。
           これによりデバッグシンボル内に誤ったパスが含まれないようにします。
           </para>
 @z

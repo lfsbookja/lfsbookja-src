@@ -1203,9 +1203,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Systemd</seg>
 @y
-          <seg>なし</seg>
+          <seg>Systemd</seg>
 @z
 @x
           <seg>None</seg>
@@ -1581,13 +1581,13 @@
 
 %----------------------------------------------------------------------
 @x Systemd
-         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk, 
+         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
          GCC, Glibc, Gperf, Grep, Intltool, Libcap,
-         Make, Sed, and Util-linux</seg>
+         Meson, Sed, and Util-linux</seg>
 @y
-         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk, 
+         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
          GCC, Glibc, Gperf, Grep, Intltool, Libcap,
-         Make, Sed, Util-linux</seg>
+         Meson, Sed, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -1600,9 +1600,15 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Many, see
+            <ulink url="&blfs-root;view/systemd/general/systemd.html">BLFS
+            systemd page</ulink>
+          </seg>
 @y
-          <seg>なし</seg>
+          <seg>
+            多数。
+            BLFS の <ulink url="&blfs-root;view/systemd/general/systemd.html">systemd</ulink> ページを参照。
+          </seg>
 @z
 
 %----------------------------------------------------------------------
