@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2019-03-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Revert to meson-0.49.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-03-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-0.49.2 へ戻す。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-03-26</para>
       <itemizedlist>
         <listitem>
