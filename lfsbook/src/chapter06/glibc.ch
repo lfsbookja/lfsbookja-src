@@ -150,6 +150,17 @@
           </para>
 @z
 
+@x --with-headers=/usr/include
+          <para>This option tells the build system where to find the
+          kernel API headers. By default, those headers are sought in
+          <filename class="directory">/tools/include</filename>.</para>
+@y
+          <para>
+          このオプションはビルドシステムにおいて、カーネル API ヘッダーを探す場所を指定します。
+          デフォルトでは <filename class="directory">/tools/include</filename> を探します。
+          </para>
+@z
+
 @x libc_cv_slibdir=/lib
           <para>This variable sets the correct library for all
           systems.  We do not want lib64 to be used.</para>

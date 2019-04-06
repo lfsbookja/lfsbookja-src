@@ -199,10 +199,10 @@
 @z
 
 @x
-    <para>Remove an unnecessary directory:</para>
+    <para>Remove an unnecessary directory and file:</para>
 @y
     <para>
-    不要なディレクトリを削除します。
+    不要なディレクトリとファイルを削除します。
     </para>
 @z
 

@@ -55,11 +55,11 @@
 @z
 
 @x --without-ensurepip
-          <para>This switch disables the Python installer, which is not needed
-          at this stage.</para>
+          <para>This switch disables the Python package installer, which is not
+          needed at this stage.</para>
 @y
           <para>
-          このスイッチは Python インストーラーを無効にします。
+          このスイッチは Python パッケージインストーラーを無効にします。
           この段階では必要がないからです。
           </para>
 @z
