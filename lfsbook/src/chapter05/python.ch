@@ -26,6 +26,18 @@
 @z
 
 @x
+      <para>There are two package files whose name starts with
+      <quote>python</quote>. The one to extract from is
+      <filename>Python-&python-version;.tar.xz</filename> (notice the
+      uppercase first letter).</para>
+@y
+      <para>
+      <quote>python</quote>の名前で始まるパッケージファイルは 2 種類あります。
+      そのうち、扱うべきファイルは <filename>Python-&python-version;.tar.xz</filename> です。
+      （1 文字めが大文字であるものです。）</para>
+@z
+
+@x
     <para>This package first builds the Python interpreter, then some
     standard Python modules. The main script for building modules is
     written in Python, and uses hard-coded paths to the host <filename
