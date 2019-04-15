@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2019-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update bzip2 url. Fixes
+          <ulink url="&lfs-ticket-root;4450">#4450</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.33.2. Fixes
+          <ulink url="&lfs-ticket-root;4454">#4454</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.0.7. Fixes
+          <ulink url="&lfs-ticket-root;4449">#4449</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gawk-5.0.0. Fixes
+          <ulink url="&lfs-ticket-root;4455">#4455</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bzip2 の URL を更新。
+          <ulink url="&lfs-ticket-root;4450">#4450</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.33.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4454">#4454</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.0.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4449">#4449</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gawk-5.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4455">#4455</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-03-27</para>
       <itemizedlist>
         <listitem>
