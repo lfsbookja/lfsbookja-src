@@ -54,6 +54,55 @@
 @z
 
 @x
+      <para>2019-04-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.28.2. Fixes
+          <ulink url="&lfs-ticket-root;4460">#4460</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.50.1. Fixes
+          <ulink url="&lfs-ticket-root;4459">#4459</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.0.9. Fixes
+          <ulink url="&lfs-ticket-root;4458">#4458</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.27. Fixes
+          <ulink url="&lfs-ticket-root;4457">#4457</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Fix the syntax used for configuring automatic file
+          creation and deletion.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-04-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - perl-5.28.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4460">#4460</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.50.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4459">#4459</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.0.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4458">#4458</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.27 へのアップデート。
+          <ulink url="&lfs-ticket-root;4457">#4457</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - 自動でファイルの生成や削除を行う設定での文法を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-04-15</para>
       <itemizedlist>
         <listitem>
