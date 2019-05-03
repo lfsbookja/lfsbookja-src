@@ -37,15 +37,15 @@
     </para>
 @z
 
-@x
-    <para>Remove the symlink created earlier as the final gcc includes will be
-    installed here:</para>
-@y
-    <para>
-    前に作成していたシンボリックリンクは削除します。
-    最終の gcc に関するインクルード類はこれ以降にインストールされます。
-    </para>
-@z
+% @x
+%     <para>Remove the symlink created earlier as the final gcc includes will be
+%     installed here:</para>
+% @y
+%     <para>
+%     前に作成していたシンボリックリンクは削除します。
+%     最終の gcc に関するインクルード類はこれ以降にインストールされます。
+%     </para>
+% @z
 
 @x
     <para>The GCC documentation recommends building GCC in a dedicated build directory:</para>

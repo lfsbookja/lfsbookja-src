@@ -57,6 +57,49 @@
       <para>2019-04-20</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to gcc-9.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4463">#4463</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.0.11. Fixes
+          <ulink url="&lfs-ticket-root;4459">#4461</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-05-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-9.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4463">#4463</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.0.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4459">#4461</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Apply a change to allow Perl to build correctly when
+          building with the latest versions of gcc.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 最新版の gcc を使って Perl がビルドできるように変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-04-20</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to perl-5.28.2. Fixes
           <ulink url="&lfs-ticket-root;4460">#4460</ulink>.</para>
         </listitem>

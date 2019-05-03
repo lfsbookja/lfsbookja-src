@@ -220,6 +220,14 @@
 @z
 
 @x
+        <para><emphasis>misc/check-installed-headers-c</emphasis> 
+        is known to fail due to changes in the kernel headers.</para>
+@y
+        <para><emphasis>misc/check-installed-headers-c</emphasis> 
+        は、カーネルヘッダー内の変更により失敗します。</para>
+@z
+
+@x
         <para><emphasis>misc/tst-ttyname</emphasis> 
         is known to fail in the LFS chroot environment.</para>
 @y
