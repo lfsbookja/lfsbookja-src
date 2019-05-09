@@ -137,14 +137,6 @@
 @z
 
 @x
-    <para>Remove one test known to cause a problem:</para>
-@y
-    <para>
-    支障のあるテストを削除します。
-    </para>
-@z
-
-@x
     <para>Test the results as a non-privileged user, but do not stop at errors:</para>
 @y
     <para>
@@ -189,6 +181,25 @@
     <para>
     get_time に関連するテスト 6 つが失敗します。
     これは en_HK ロケールに関係するためです。
+    </para>
+@z
+
+@x
+    <para>Two tests named lookup.cc and reverse.cc in experimental/net
+    are known to fail in LFS chroot environment because they require
+    /etc/hosts and iana-etc.</para>
+@y
+    <para>
+    experimental/net にある lookup.cc と reverse.cc というテストは、LFS chroot 環境内では失敗します。
+    これは /etc/hosts と iana-etc を必要とするためです。
+    </para>
+@z
+
+@x
+    <para>Two tests named pr57193.c and pr90178.c are known to fail.</para>
+@y
+    <para>
+    pr57193.c と pr90178.c というテストは失敗します。
     </para>
 @z
 
