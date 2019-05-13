@@ -54,6 +54,23 @@
 @z
 
 @x
+      <para>2019-05-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Fix a hardcoded path to /usr/bin/find in the
+          systemd unit of man-db.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-05-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - man-db の systemd ユニットにて、/usr/bin/find へのハードコーディングパスを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-05-03</para>
       <itemizedlist>
         <listitem>

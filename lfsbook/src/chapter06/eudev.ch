@@ -45,7 +45,7 @@
 @z
 
 @x
-    <para>Next, add a workaround to prevent the /tools directory from being 
+    <para>First, add a workaround to prevent the /tools directory from being 
     hard coded into Eudev binary files library locations:</para>
 @y
     <para>

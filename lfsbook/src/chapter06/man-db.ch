@@ -40,6 +40,17 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
+@x sed -i '/find/s@/usr@@' init/systemd/man-db.service.in
+          <para>This changes a harcoded path to the <command>find</command>
+          utility, which we install in
+          <filename class="directory">/bin</filename>.</para>
+@y
+          <para>
+          これは <command>find</command> ユーティリティーに対してハードコーディングされているパスを変更します。
+          これは <filename class="directory">/bin</filename> にインストールするとしているからです。
+          </para>
+@z
+
 @x --disable-setuid
           <para>This disables making the <command>man</command> program setuid
           to user <systemitem class="username">man</systemitem>.</para>
