@@ -32,11 +32,11 @@
 @z
 
 @x
-    <para>For our temporary set of tools, we only need to build and install
+    <para>For our temporary set of tools, we only need to install
     three programs from Gettext.</para>
 @y
     <para>
-    ここで構築している一時的なツールに際して、Gettext パッケージからは3つのバイナリをビルドしてインストールするだけで十分です。
+    ここで構築している一時的なツールに際して、Gettext パッケージからは3つのバイナリをインストールするだけで十分です。
     </para>
 @z
 
@@ -78,14 +78,12 @@
 @z
 
 @x
-    <para>As only three programs have been compiled, it is not possible to run the
-    test suite without compiling additional support libraries from the Gettext
-    package. It is therefore not recommended to attempt to run the test suite at
-    this stage.</para>
+    <para>
+    Due to the limited environment, running the test suite at this stage
+    is not recommended.</para>
 @y
     <para>
-    3つのバイナリしかコンパイルしなかったため、その他のライブラリをコンパイルしない限り、テストスイートを成功させることはできません。
-    したがってテストスイートをこの段階で実行することはお勧めしません。
+    現時点は環境に制限があるため、ここでテストスィートを実行することはお勧めしません。
     </para>
 @z
 

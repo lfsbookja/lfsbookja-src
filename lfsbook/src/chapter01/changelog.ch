@@ -54,6 +54,64 @@
 @z
 
 @x
+      <para>2019-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.01. Fixes
+          <ulink url="&lfs-ticket-root;4467">#4467</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.1.3. Fixes
+          <ulink url="&lfs-ticket-root;4464">#4464</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4467">#4467</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.20.1. Fixes
+          <ulink url="&lfs-ticket-root;4465">#4465</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.37. Fixes
+          <ulink url="&lfs-ticket-root;4469">#4469</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.45.1. Fixes
+          <ulink url="&lfs-ticket-root;4468">#4468</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.01 へのアップデート。
+          <ulink url="&lfs-ticket-root;4467">#4467</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.1.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4464">#4464</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4467">#4467</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.20.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4465">#4465</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.37 へのアップデート。
+          <ulink url="&lfs-ticket-root;4469">#4469</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.45.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4468">#4468</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-05-11</para>
       <itemizedlist>
         <listitem>
@@ -79,7 +137,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-5.0.11. Fixes
-          <ulink url="&lfs-ticket-root;4459">#4461</ulink>.</para>
+          <ulink url="&lfs-ticket-root;4461">#4461</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -91,7 +149,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - linux-5.0.11 へのアップデート。
-          <ulink url="&lfs-ticket-root;4459">#4461</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;4461">#4461</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z
