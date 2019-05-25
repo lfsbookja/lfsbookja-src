@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2019-05-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Cosmetic changes to LFS bootscripts.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-05-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - LFS bootscripts の表面的な変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-05-19</para>
       <itemizedlist>
         <listitem>
