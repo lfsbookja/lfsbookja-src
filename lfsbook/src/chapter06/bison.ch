@@ -26,15 +26,27 @@
 @z
 
 @x
+    <para>First, fix a build problem with the current version:</para>
+@y
+    <para>
+    まずは現バージョンのビルド問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Bison for compilation:</para>
 @y
     <para>&PreparePackage1;Bison&PreparePackage2;</para>
 @z
 
 @x
-    <para>Compile the package:</para>
+    <para>Compile the package, but work around a race condition in the 
+    current version:</para>
 @y
-    <para>&CompileThePackage;</para>
+    <para>
+    &CompileThePackage;
+    現バージョンでは競合状態を解消する方法をとります。
+    </para>
 @z
 
 @x

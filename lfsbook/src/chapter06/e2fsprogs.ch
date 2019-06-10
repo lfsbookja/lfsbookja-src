@@ -93,14 +93,6 @@
           </para>
 @z
 
-@x --with-crond-dir=no
-          <para>This disables the installation of an unneded file.</para>
-@y
-          <para>
-          不要なファイルはインストールしないようにします。
-          </para>
-@z
-
 @x --disable-*
           <para>This prevents E2fsprogs from building and installing the
           <systemitem class="library">libuuid</systemitem> and

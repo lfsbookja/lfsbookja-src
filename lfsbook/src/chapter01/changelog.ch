@@ -54,6 +54,81 @@
 @z
 
 @x
+      <para>2019-06-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>Make it so that the instructions for removing symlinks before building
+          Util-Linux in Chapter 6 are only visible in systemd.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-06-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>第 6 章の Util-Linux をビルドする前のシンボリックリンクの削除手順は、systemd に対してのみ行う。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-06-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.30.0. Fixes
+          <ulink url="&lfs-ticket-root;4474">#4474</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.1.6. Fixes
+          <ulink url="&lfs-ticket-root;4473">#4473</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-1.1.1c. Fixes
+          <ulink url="&lfs-ticket-root;4476">#4476</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to eudev-3.2.8. Fixes
+          <ulink url="&lfs-ticket-root;4472">#4472</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.4.1. Fixes
+          <ulink url="&lfs-ticket-root;4471">#4471</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.45.2. Fixes
+          <ulink url="&lfs-ticket-root;4475">#4475</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-06-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - perl-5.30.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4474">#4474</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.1.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4473">#4473</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-1.1.1c へのアップデート。
+          <ulink url="&lfs-ticket-root;4476">#4476</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - eudev-3.2.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4472">#4472</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.4.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4471">#4471</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.45.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4475">#4475</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-05-24</para>
       <itemizedlist>
         <listitem>
