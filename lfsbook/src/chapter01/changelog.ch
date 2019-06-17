@@ -54,18 +54,95 @@
 @z
 
 @x
+      <para>2019-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.1.1535. Fixes
+          <ulink url="&lfs-ticket-root;4482">#4482</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.7. Fixes
+          <ulink url="&lfs-ticket-root;4481">#4481</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.1.10. Fixes
+          <ulink url="&lfs-ticket-root;4478">#4478</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to less-551. Fixes
+          <ulink url="&lfs-ticket-root;4477">#4477</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.34. Fixes
+          <ulink url="&lfs-ticket-root;4452">#4462</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove eudev instructions referring to /tools. Fixes
+          <ulink url="&lfs-ticket-root;4480">#4480</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.1.1535 へのアップデート。
+          <ulink url="&lfs-ticket-root;4482">#4482</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4481">#4481</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.1.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4478">#4478</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - less-551 へのアップデート。
+          <ulink url="&lfs-ticket-root;4477">#4477</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.34 へのアップデート。
+          <ulink url="&lfs-ticket-root;4452">#4462</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev にて /tools を参照する手順を削除。
+          <ulink url="&lfs-ticket-root;4480">#4480</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-06-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to dbus-1.12.16. Fixes
+          <ulink url="&lfs-ticket-root;4470">#4470</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-06-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - dbus-1.12.16 へのアップデート。
+          <ulink url="&lfs-ticket-root;4470">#4470</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-06-08</para>
       <itemizedlist>
         <listitem>
-          <para>Make it so that the instructions for removing symlinks before building
-          Util-Linux in Chapter 6 are only visible in systemd.</para>
+          <para>[renodr] - make it so that the instructions for removing 
+          symlinks before building Util-Linux in Chapter 6 are only visible 
+          in systemd.</para>
         </listitem>
       </itemizedlist>
 @y
       <para>2019-06-08</para>
       <itemizedlist>
         <listitem>
-          <para>第 6 章の Util-Linux をビルドする前のシンボリックリンクの削除手順は、systemd に対してのみ行う。</para>
+          <para>[renodr] - 第 6 章の Util-Linux をビルドする前のシンボリックリンクの削除手順は、systemd に対してのみ行う。</para>
         </listitem>
       </itemizedlist>
 @z
