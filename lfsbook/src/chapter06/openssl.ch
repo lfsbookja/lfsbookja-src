@@ -33,6 +33,14 @@
 @z
 
 @x
+    <para>First, fix a problem identified upstream:</para>
+@y
+    <para>
+    はじめに、開発元が認識している問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare OpenSSL for compilation:</para>
 @y
     <para>&PreparePackage1;OpenSSL&PreparePackage2;</para>

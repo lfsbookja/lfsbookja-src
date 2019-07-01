@@ -8,14 +8,19 @@
 % $Date::                           $
 %
 @x
-tar -cjf lfs-bootscripts-$version.tar.bz2 --exclude .svn lfs-bootscripts-$version
+rm -f lfs-bootscripts*.tar.?z*
 @y
-# Get the original bootscripts tarball
-wgetflag=""
-url="http://www.linuxfromscratch.org/lfs/downloads/development/"
-wget -N "$url/lfs-bootscripts-$version.tar.bz2" 2>/dev/null || wgetflag="none"
+SRCDIR=$1
 
-if test "x$wgetflag" != "x"; then
-  tar -cjf lfs-bootscripts-$version.tar.bz2 --exclude .svn lfs-bootscripts-$version
+rm -f lfs-bootscripts*.tar.?z*
+@z
+
+@x
+tar -cJf lfs-bootscripts-$version.tar.xz --exclude .svn lfs-bootscripts-$version
+@y
+if test -f $SRCDIR/lfs-bootscripts-$version.tar.xz; then
+  cp -p $SRCDIR/lfs-bootscripts-$version.tar.xz .
+else
+  tar -cJf lfs-bootscripts-$version.tar.xz --exclude .svn lfs-bootscripts-$version
 fi
 @z

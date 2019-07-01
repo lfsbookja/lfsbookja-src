@@ -54,6 +54,115 @@
 @z
 
 @x
+      <para>2019-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fixed issue with installing Check's documentation
+          in a verisoned directory. Thanks goes to Ryan Marsaw for the report.
+          This was fixed be removing the unrecognized/unused --docdir
+          and replacing it with a "docdir=" in the make install command.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Check のドキュメントをバージョンつきディレクトリにインストールする際の問題を修正。
+          報告をあげてくれた Ryan Marsaw に感謝。
+          これは、オプションの中で認識されない、かつ利用もされていない --docdir を削除し、代わりに make install コマンドにて "docdir=" を用いる方法とした。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Properly initialize a data structure in
+          OpenSSL to avoid valgrind uninitialized value errors. Fixes
+          <ulink url="&lfs-ticket-root;4491">#4491</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.51.0. Fixes
+          <ulink url="&lfs-ticket-root;4483">#4483</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gawk-5.0.1. Fixes
+          <ulink url="&lfs-ticket-root;4486">#4486</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.2.7. Fixes
+          <ulink url="&lfs-ticket-root;4488">#4488</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.1.15. Fixes
+          <ulink url="&lfs-ticket-root;4487">#4487</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to sysvinit-2.95. Fixes
+          <ulink url="&lfs-ticket-root;4484">#4484</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bzip2-1.0.7. Fixes
+          <ulink url="&lfs-ticket-root;4490">#4490</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - OpenSSL においてデータ構造を適切に初期化するように。
+          これを行わないと valgrind にて未初期化のエラーとなるため。
+          <ulink url="&lfs-ticket-root;4491">#4491</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.51.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4483">#4483</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gawk-5.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4486">#4486</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.2.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4488">#4488</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.1.15 へのアップデート。
+          <ulink url="&lfs-ticket-root;4487">#4487</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - sysvinit-2.95 へのアップデート。
+          <ulink url="&lfs-ticket-root;4484">#4484</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bzip2-1.0.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4490">#4490</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-06-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to linux-5.1.11. Fixes the SOCK PANIC
+          issue. Fixes
+          <ulink url="&lfs-ticket-root;4485">#4485</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-06-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - linux-5.1.11 へのアップデート。
+          SOCK PANIC 問題への修正。
+          <ulink url="&lfs-ticket-root;4485">#4485</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-06-16</para>
       <itemizedlist>
         <listitem>
@@ -68,7 +177,7 @@
           <para>[bdubbs] - Update to linux-5.1.10. Fixes
           <ulink url="&lfs-ticket-root;4478">#4478</ulink>.</para>
         </listitem>
-        <listitem revision="sysv">
+        <listitem>
           <para>[bdubbs] - Update to less-551. Fixes
           <ulink url="&lfs-ticket-root;4477">#4477</ulink>.</para>
         </listitem>
@@ -96,7 +205,7 @@
           <para>[bdubbs] - linux-5.1.10 へのアップデート。
           <ulink url="&lfs-ticket-root;4478">#4478</ulink> を Fix に。</para>
         </listitem>
-        <listitem revision="sysv">
+        <listitem>
           <para>[bdubbs] - less-551 へのアップデート。
           <ulink url="&lfs-ticket-root;4477">#4477</ulink> を Fix に。</para>
         </listitem>

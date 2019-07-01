@@ -295,7 +295,7 @@ SUBDIRS = appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
 	udev-lfs
 
 EXTRA_DIST = general.ch index.ch packages.ch patches.ch pdf-fixups.ch \
-	tidy.ch make-aux-files.ch
+	tidy.ch make-aux-files.ch aux-file-data.ch
 
 BOOKdir = @abs_bookdir@
 srcs = general.ent index.xml packages.ent patches.ent pdf-fixups.sh \
@@ -637,8 +637,9 @@ tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch
 
 process-scripts.sh: $(BOOKdir)/process-scripts.sh
 	cp -p $^ $@
-aux-file-data.sh: $(BOOKdir)/aux-file-data.sh
-	cp -p $^ $@
+aux-file-data.sh: $(BOOKdir)/aux-file-data.sh $(srcdir)/aux-file-data.ch
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
+	chmod +x $@
 #	sed -i '/.\/make-aux-files.sh/d' $@
 make-aux-files.sh: $(BOOKdir)/make-aux-files.sh $(srcdir)/make-aux-files.ch
 	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
@@ -757,12 +758,12 @@ validate: tmpdir $(ALLXML)
                $(RENDERTMP)/lfs-html2.xml
 
 	rm -f appendices/*.script
-	./aux-file-data.sh $(RENDERTMP)/lfs-full.xml
+	./aux-file-data.sh $(RENDERTMP)/lfs-full.xml $(BOOKdir)
 	@echo "Validation complete."
 
 maketar:
 	@echo "Making tarballs..."
-	sh make-aux-files.sh
+	sh make-aux-files.sh $(BOOKdir)
 
 profile-html: validate $(ALLXML)
 	@echo "Generating profiled XML for XHTML..."
@@ -798,7 +799,7 @@ $(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.e
                 stylesheets/md5sum.xsl      \
                 $(RENDERTMP)/sysv-md5sum.xml
 	sed -i -e \
-           "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.bz2 | cut -d' ' -f1)/" \
+           "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.xz | cut -d' ' -f1)/" \
            $(BASEDIR)/md5sums
 
 #dump-commands: validate
