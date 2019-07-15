@@ -77,8 +77,8 @@
   <para>Start a disk partitioning program such as <command>cfdisk</command>
   or <command>fdisk</command> with a command line option naming the hard
   disk on which the new partition will be created&mdash;for example
-  <filename class="devicefile">/dev/sda</filename> for the primary Integrated
-  Drive Electronics (IDE) disk. Create a Linux native partition and a
+  <filename class="devicefile">/dev/sda</filename> for the primary 
+  disk drive. Create a Linux native partition and a
   <systemitem class="filesystem">swap</systemitem> partition, if needed. Please
   refer to <filename>cfdisk(8)</filename> or <filename>fdisk(8)</filename> if
   you do not yet know how to use the programs.</para>
@@ -86,7 +86,7 @@
   <para>
   ディスクのパーティション生成は <command>cfdisk</command> コマンドや <command>fdisk</command> コマンドを使って行います。
   コマンドラインオプションにはパーティションを生成するハードディスク名を指定します。
-  例えば IDE (Integrated Drive Electronics) ディスクであれば <filename
+  例えばプライマリーディスクであれば <filename
   class="devicefile">/dev/sda</filename> といったものになります。
   そして Linux ネイティブパーティションと、必要なら <systemitem
   class="filesystem">swap</systemitem> パーティションを生成します。

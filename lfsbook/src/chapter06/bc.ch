@@ -84,6 +84,24 @@
           </para>
 @z
 
+@x CC=gcc CFLAGS="-std=c99"
+          <para>These parameters specify the compiler and C standard to use.</para>
+@y
+          <para>
+          このパラメーターはコンパイラーを指示し、C 標準を利用することを指定します。
+          </para>
+@z
+
+@x -G -O3
+          <para>These parameters specify the optimization to use. Debug symbols 
+          will be retained.</para>
+@y
+          <para>
+          このオプションは最適化を指定します。
+          デバッグシンボルは維持されます。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -100,6 +118,14 @@
     bc をテストする場合は以下のコマンドを実行します。
     その際には相当量の出力が行われますから、ファイルにリダイレクトしておくとよいでしょう。
     テストのうちいくつかのテスト (12,144 個のうちの10個) では、最終デジットに対する丸め (roundoff) に関するエラーが発生します。
+    </para>
+@z
+
+@x
+    <para>To test bc, run:</para>
+@y
+    <para>
+    テストする場合は以下を実行します。
     </para>
 @z
 

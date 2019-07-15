@@ -14,6 +14,12 @@
 @z
 
 @x
+  <subtitle>Published &releasedate;</subtitle>
+@y
+  <subtitle>&releasedate; 公開</subtitle>
+@z
+
+@x
   <authorgroup>
     <author>
       <firstname>Created by Gerard</firstname>

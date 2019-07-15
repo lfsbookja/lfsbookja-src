@@ -54,28 +54,109 @@
 @z
 
 @x
-      <para>2019-06-24</para>
+      <para>2019-07-14</para>
       <itemizedlist>
         <listitem>
-          <para>[renodr] - Fixed issue with installing Check's documentation
-          in a verisoned directory. Thanks goes to Ryan Marsaw for the report.
-          This was fixed be removing the unrecognized/unused --docdir
-          and replacing it with a "docdir=" in the make install command.</para>
+          <para>[bdubbs] - Fix testing of binutils-2.32 gold linker. Fixes
+          <ulink url="&lfs-ticket-root;4498">#4498</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2019b. Fixes
+          <ulink url="&lfs-ticket-root;4492">#4492</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to python3-3.7.4. Fixes
+          <ulink url="&lfs-ticket-root;4496">#4496</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.51.1. Fixes
+          <ulink url="&lfs-ticket-root;4497">#4497</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4495">#4495</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grub-2.04. Fixes
+          <ulink url="&lfs-ticket-root;4494">#4494</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.2.1. Fixes
+          <ulink url="&lfs-ticket-root;4493">#4493</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4436">#4436</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bzip2-1.0.8. Fixes
+          <ulink url="&lfs-ticket-root;4499">#4499</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
-      <para>2019-06-24</para>
+      <para>2019-07-14</para>
       <itemizedlist>
         <listitem>
-          <para>[renodr] - Check のドキュメントをバージョンつきディレクトリにインストールする際の問題を修正。
-          報告をあげてくれた Ryan Marsaw に感謝。
-          これは、オプションの中で認識されない、かつ利用もされていない --docdir を削除し、代わりに make install コマンドにて "docdir=" を用いる方法とした。</para>
+          <para>[bdubbs] - binutils-2.32 の gold linker のテストを修正。
+          <ulink url="&lfs-ticket-root;4498">#4498</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2019b へのアップデート。
+          <ulink url="&lfs-ticket-root;4492">#4492</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to python3-3.7.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4496">#4496</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.51.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4497">#4497</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4495">#4495</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grub-2.04 へのアップデート。
+          <ulink url="&lfs-ticket-root;4494">#4494</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4493">#4493</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4436">#4436</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bzip2-1.0.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4499">#4499</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z
 
 @x
-      <para>2019-06-16</para>
+      <para>2019-07-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fix an FTBFS for systemd and do minor text
+          and instructions improvements. Also, fix symlinks that were not
+          removed.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-07-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd における FTBFS を修正。
+          また説明手順を若干改正。
+          また削除できていなかったシンボリックリンクを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-06-29</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Properly initialize a data structure in
@@ -108,7 +189,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>2019-06-16</para>
+      <para>2019-06-29</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - OpenSSL においてデータ構造を適切に初期化するように。
@@ -138,6 +219,27 @@
         <listitem>
           <para>[bdubbs] - bzip2-1.0.7 へのアップデート。
           <ulink url="&lfs-ticket-root;4490">#4490</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fixed issue with installing Check's documentation
+          in a versioned directory. Thanks goes to Ryan Marsaw for the report.
+          This was fixed by removing the unrecognized/unused --docdir
+          and replacing it with a "docdir=" in the make install command.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Check のドキュメントをバージョンつきディレクトリにインストールする際の問題を修正。
+          報告をあげてくれた Ryan Marsaw に感謝。
+          これは、オプションの中で認識されない、かつ利用もされていない --docdir を削除し、代わりに make install コマンドにて "docdir=" を用いる方法とした。</para>
         </listitem>
       </itemizedlist>
 @z

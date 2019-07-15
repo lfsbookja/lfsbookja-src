@@ -57,6 +57,16 @@
 @z
 
 @x
+    <para>Now remove one test that prevents the tests from running
+    to completion:</para>
+@y
+    <para>
+    ここでテストを 1 つ削除します。
+    これによってテストを完成させます。
+    </para>
+@z
+
+@x
     <para>The Binutils documentation recommends building Binutils 
     in a dedicated build directory:</para>
 @y
@@ -176,10 +186,11 @@
 @z
 
 @x
-    <para>One test, debug_msg.sh, is known to fail.</para>
+    <para>The PC-relative offset test and  
+    the debug_msg.sh test may fail in the LFS environment.</para>
 @y
     <para>
-    debug_msg.sh というテストは失敗します。
+    PC 相対（PC-relative）オフセットテストと debug_msg.sh test は LFS 環境内では失敗するかもしれません。
     </para>
 @z
 
