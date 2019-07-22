@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2019-07-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.2.2. Fixes
+          <ulink url="&lfs-ticket-root;4504">#4504</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.1.1. Fixes
+          <ulink url="&lfs-ticket-root;4503">#4503</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4502">#4502</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.45.3. Fixes
+          <ulink url="&lfs-ticket-root;4501">#4501</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-07-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-5.2.2 へのアップデート
+          <ulink url="&lfs-ticket-root;4504">#4504</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.1.1 へのアップデート
+          <ulink url="&lfs-ticket-root;4503">#4503</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.1.0 へのアップデート
+          <ulink url="&lfs-ticket-root;4502">#4502</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.45.3 へのアップデート
+          <ulink url="&lfs-ticket-root;4501">#4501</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-07-14</para>
       <itemizedlist>
         <listitem>
@@ -101,35 +143,35 @@
           <ulink url="&lfs-ticket-root;4498">#4498</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to tzdata-2019b へのアップデート。
+          <para>[bdubbs] - tzdata-2019b へのアップデート。
           <ulink url="&lfs-ticket-root;4492">#4492</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to python3-3.7.4 へのアップデート。
+          <para>[bdubbs] - python3-3.7.4 へのアップデート。
           <ulink url="&lfs-ticket-root;4496">#4496</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to meson-0.51.1 へのアップデート。
+          <para>[bdubbs] - meson-0.51.1 へのアップデート。
           <ulink url="&lfs-ticket-root;4497">#4497</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to iproute2-5.2.0 へのアップデート。
+          <para>[bdubbs] - iproute2-5.2.0 へのアップデート。
           <ulink url="&lfs-ticket-root;4495">#4495</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to grub-2.04 へのアップデート。
+          <para>[bdubbs] - grub-2.04 へのアップデート。
           <ulink url="&lfs-ticket-root;4494">#4494</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to linux-5.2.1 へのアップデート。
+          <para>[bdubbs] - linux-5.2.1 へのアップデート。
           <ulink url="&lfs-ticket-root;4493">#4493</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to bc-2.1.0 へのアップデート。
+          <para>[bdubbs] - bc-2.1.0 へのアップデート。
           <ulink url="&lfs-ticket-root;4436">#4436</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to bzip2-1.0.8 へのアップデート。
+          <para>[bdubbs] - bzip2-1.0.8 へのアップデート。
           <ulink url="&lfs-ticket-root;4499">#4499</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>

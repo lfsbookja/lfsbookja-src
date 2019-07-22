@@ -92,13 +92,20 @@
           </para>
 @z
 
-@x -G -O3
-          <para>These parameters specify the optimization to use. Debug symbols 
-          will be retained.</para>
+@x -O3
+          <para>Specify the optimization to use.</para>
 @y
           <para>
-          このオプションは最適化を指定します。
-          デバッグシンボルは維持されます。
+          利用する最適化を指定します。
+          </para>
+@z
+
+@x -G
+          <para>Omit  parts of the test suite that won't work
+          without a GNU bc present.</para>
+@y
+          <para>
+          GNU bc が存在していない状態では動作しないテストスイートを省略します。
           </para>
 @z
 
