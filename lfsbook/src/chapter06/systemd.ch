@@ -28,13 +28,15 @@
     <title>&InstallationOf1;systemd&InstallationOf2;</title>
 @z
 
-%@x
-%    <para>Apply a patch to fix two critical security vulnerabilities:</para>
-%@y
-%    <para>
-%    重大なセキュリティぜい弱性を修正するパッチを適用します。
-%    </para>
-%@z
+@x
+    <para>First, apply a patch to fix issues with systemd-networkd on Linux 5.2+
+    kernels, as well as with AMD Ryzen CPUs:</para>
+@y
+    <para>
+    はじめにパッチを適用して、Linux 5.2 以上のカーネルにおける systemd-networkd の問題を修正します。
+    AMD Ryzen CPU における問題も修正します。
+    </para>
+@z
 
 @x
     <para>Create a symlink to work around missing xsltproc:</para>

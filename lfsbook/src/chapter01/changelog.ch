@@ -54,6 +54,75 @@
 @z
 
 @x
+      <para>2019-08-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix a problem introduced by linux-5.2 by
+          adding an include file to a glibc header.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-08-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-5.2 における問題に対して、glibc ヘッダーをインクルードするファイルを加えることで対応。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-08-03</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Add a patch to systemd to fix issues with
+          networkd on kernel versions 5.2+, and to fix issues with AMD Ryzen
+          CPUs. Fixes <ulink url="&lfs-ticket-root;4506">#4506</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.2.5. Fixes
+          <ulink url="&lfs-ticket-root;4505">#4505</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4507">#4507</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.30. Fixes
+          <ulink url="&lfs-ticket-root;4508">#4508</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.02. Fixes
+          <ulink url="&lfs-ticket-root;4509">#4509</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-08-03</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - カーネル 5.2 以上における networkd の問題を修正するためパッチを追加。
+          AMD Ryzen CPU に対する問題も修正。
+          <ulink url="&lfs-ticket-root;4506">#4506</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.2.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4505">#4505</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4507">#4507</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.30 へのアップデート。
+          <ulink url="&lfs-ticket-root;4508">#4508</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.02 へのアップデート。
+          <ulink url="&lfs-ticket-root;4509">#4509</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-07-21</para>
       <itemizedlist>
         <listitem>

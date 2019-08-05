@@ -90,7 +90,7 @@
 @z
 
 @x
-      <para><emphasis role="strong">GCC-5.2</emphasis> including the C++
+      <para><emphasis role="strong">GCC-6.2</emphasis> including the C++
       compiler, <command>g++</command> (Versions greater than &gcc-version; are
       not recommended as they have not been tested)</para>
 @y

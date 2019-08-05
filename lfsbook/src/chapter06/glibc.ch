@@ -69,11 +69,10 @@
 @z
 
 @x
-    <para>First create a compatibility symlink to avoid references to /tools in
-    our final glibc:</para>
+    <para>Fix a problem introduced with the linux-5.2 kernel:</para>
 @y
     <para>
-    最終の glibc において /tools への参照をなくすためにシンボリックリンクを生成します。
+    linux-5.2 カーネルにおいて発生する問題を修正します。
     </para>
 @z
 
@@ -217,14 +216,6 @@
     これは Glibc のテストスイートがホストシステムにある程度依存しているためです。
     LFS の当バージョンにおいて発生しがちな問題を以下に示します。
     </para>
-@z
-
-@x
-        <para><emphasis>misc/check-installed-headers-c</emphasis> 
-        is known to fail due to changes in the kernel headers.</para>
-@y
-        <para><emphasis>misc/check-installed-headers-c</emphasis> 
-        は、カーネルヘッダー内の変更により失敗します。</para>
 @z
 
 @x

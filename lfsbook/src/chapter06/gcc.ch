@@ -231,9 +231,12 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package and remove an unneeded directory:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    &InstallThePackage;
+    不要なディレクトリは削除します。
+    </para>
 @z
 
 @x
