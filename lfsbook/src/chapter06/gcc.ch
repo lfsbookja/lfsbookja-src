@@ -240,6 +240,19 @@
 @z
 
 @x
+    <para>The GCC build directory is owned by <systemitem class="username">
+    nobody</systemitem> now and the ownership of the installed header
+    directory (and its content) will be incoorect.  Change the ownership to
+    <systemitem class="username">root</systemitem> user and group:</para>
+@y
+    <para>
+    GCC のビルドディレクトリの所有者は <systemitem class="username">
+    nobody</systemitem> であるため、ヘッダーがインストールされるディレクトリ（とその内容）に対する所有権が不適切なものになります。
+    そこでその所有権を <systemitem class="username">root</systemitem> ユーザーとグループに変更します。
+    </para>
+@z
+
+@x
     <para>Create a symlink required by the <ulink
     url="https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s09.html">FHS</ulink>
     for "historical" reasons.</para>

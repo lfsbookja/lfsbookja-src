@@ -54,6 +54,64 @@
 @z
 
 @x
+      <para>2019-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.1.1846. Fixes
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.177. Fixes
+          <ulink url="&lfs-ticket-root;4516">#4516</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-9.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4514">#4514</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.1.3. Fixes
+          <ulink url="&lfs-ticket-root;4513">#4513</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.8.6.1. Fixes
+          <ulink url="&lfs-ticket-root;4512">#4512</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.2.8. Fixes
+          <ulink url="&lfs-ticket-root;4511">#4511</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.1.1846 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.177 へのアップデート。
+          <ulink url="&lfs-ticket-root;4516">#4516</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-9.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4514">#4514</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.1.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4513">#4513</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.8.6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4512">#4512</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.2.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4511">#4511</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-08-04</para>
       <itemizedlist>
         <listitem>
