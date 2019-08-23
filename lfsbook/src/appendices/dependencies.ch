@@ -918,10 +918,10 @@
 %----------------------------------------------------------------------
 @x Kmod
          <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-         Gzip, Make, Sed, Xz-Utils, and Zlib</seg>
+         Gzip, Make, Pkg-config, Sed, Xz-Utils, and Zlib</seg>
 @y
          <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-         Gzip, Make, Sed, Xz-Utils, Zlib</seg>
+         Gzip, Make, Pkg-config, Sed, Xz-Utils, Zlib</seg>
 @z
 @x
           <seg>No test suite available</seg>
