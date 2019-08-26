@@ -242,7 +242,7 @@
 @x
     <para>The GCC build directory is owned by <systemitem class="username">
     nobody</systemitem> now and the ownership of the installed header
-    directory (and its content) will be incoorect.  Change the ownership to
+    directory (and its content) will be incorrect.  Change the ownership to
     <systemitem class="username">root</systemitem> user and group:</para>
 @y
     <para>
