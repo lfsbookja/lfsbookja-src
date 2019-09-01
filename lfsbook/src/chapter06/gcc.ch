@@ -176,7 +176,7 @@
 
 @x
     <para>Six tests related to get_time are known to fail.  These are
-    apparantly related to the en_HK locale.</para>
+    apparently related to the en_HK locale.</para>
 @y
     <para>
     get_time に関連するテスト 6 つが失敗します。
