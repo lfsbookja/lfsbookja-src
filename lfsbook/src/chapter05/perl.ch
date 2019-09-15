@@ -56,7 +56,14 @@
           </para>
 @z
 
-@x -Uloclibpth amd -Ulocincpth
+@x
+          <parameter>-Uloclibpth</parameter> and
+          <parameter>-Ulocincpth</parameter>
+@y
+          <parameter>-Uloclibpth</parameter> と
+          <parameter>-Ulocincpth</parameter>
+@z
+@x
           <para>These entries undefine variables that cause the configuration
           to search for locally installed components that may exist on the
           host system.</para>

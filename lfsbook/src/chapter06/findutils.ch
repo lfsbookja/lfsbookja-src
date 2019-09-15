@@ -33,22 +33,6 @@
 @z
 
 @x
-   <para>First, suppress a test which on some machines can loop forever:</para>
-@y
-   <para>
-   特定のマシンにおいて特定のテストが無限ループに陥るため、そのテストを省略します。
-   </para>
-@z
-
-@x
-    <para>Next, make some fixes required by glibc-2.28 and later:</para>
-@y
-    <para>
-    glibc-2.28 以降に対して必要となる修正を行います。
-    </para>
-@z
-
-@x
     <para>Prepare Findutils for compilation:</para>
 @y
     <para>&PreparePackage1;Findutils&PreparePackage2;</para>
@@ -87,6 +71,15 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>Two tests are known to fail in the chroot environment: 
+    sv-bug-54171.old-O3 and sv-bug-54171.new-O3.</para>
+@y
+    <para>
+    chroot 環境内では 2 つのテスト、sv-bug-54171.old-O3 と sv-bug-54171.new-O3 が失敗します。
+    </para>
 @z
 
 @x
