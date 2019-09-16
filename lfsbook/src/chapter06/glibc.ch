@@ -197,7 +197,7 @@
 
 @x
     <note><para>The symbolic link above is needed to run the tests at this
-    stage of building in the chroot envirnment.  It will be overwritten
+    stage of building in the chroot environment.  It will be overwritten
     in the install phase below.</para></note>
 @y
     <note><para>

@@ -61,12 +61,10 @@
 @z
 
 @x
-    <para>One subtest in the test 20-test_enc.t fails in the lfs chroot 
-    environment, but passes when run as a regular user.</para>
+    <para>One subtest in the test 20-test_enc.t is known to fail.</para>
 @y
     <para>
-    20-test_enc.t の中にあるサブテストが、LFS の chroot 環境下では失敗します。
-    ただし通常ユーザーで実行すれば成功します。
+    20-test_enc.t の中にあるサブテストが 1 つ失敗します。
     </para>
 @z
 

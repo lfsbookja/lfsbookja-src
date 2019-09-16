@@ -32,7 +32,7 @@
 @z
 
 @x
-    <para>First, make some fixes required by glibc-2.28:</para>
+    <para>First, make some fixes introduced by glibc-2.28:</para>
 @y
     <para>
     glibc-2.28 に対して必要となる修正を行います。
