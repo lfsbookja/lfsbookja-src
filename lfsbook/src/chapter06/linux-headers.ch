@@ -69,18 +69,19 @@
 
 @x
     <para>Now extract the user-visible kernel headers from the source.
-    They are placed in an intermediate local directory and copied to the needed
-    location because the extraction process removes any existing files in 
-    the target directory.  There are also some hidden files used by
-    the kernel developers and not needed by LFS that are removed from
-    the intermediate directory.</para>
+    The recommended make target <quote>headers_install</quote> cannot be
+    used, because it requires <application>rsync</application>, which is
+    not available in <filename class="directory">/tools</filename>. The
+    headers are first placed in <filename class="directory">./usr</filename>,
+    then some files used by the kernel developers are removed, then
+    the files are copied to their final location.</para>
 @y
     <para>
     そしてユーザーが利用するカーネルヘッダーファイルをソースから抽出します。
-    それらはいったん中間的なローカルディレクトリに置かれ、必要な場所にコピーされます。
-    ターゲットディレクトリに既にあるファイルは削除されてからソースからの抽出処理が行われます。
-    なおファイルの中にはカーネル開発者が隠しファイルとしているものがあります。
-    それらは LFS では必要ないため、中間ディレクトリから削除します。
+    推奨されている make ターゲット<quote>headers_install</quote>は利用できません。
+    なぜなら <application>rsync</application> が必要となり、<filename class="directory">/tools</filename> にはないからです。
+    ヘッダーファイルは初めに <filename class="directory">./usr</filename> にコピーし、カーネル開発者が利用するファイルをいくつか削除します。
+    その後に最終的な場所にコピーされます。
     </para>
 @z
 

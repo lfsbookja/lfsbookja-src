@@ -117,12 +117,6 @@
 @z
 
 @x
-<!ENTITY linux-headers-ch6-sbu "less than 0.1 SBU">
-@y
-<!ENTITY linux-headers-ch6-sbu "0.1 SBU 以下">
-@z
-
-@x
 <!ENTITY man-pages-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY man-pages-ch6-sbu "0.1 SBU 以下">

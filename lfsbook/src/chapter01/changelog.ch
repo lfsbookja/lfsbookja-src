@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2019-09-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Update to linux-5.3.1. Fixes
+          <ulink url="&lfs-ticket-root;4528">#4528</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-09-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - linux-5.3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4528">#4528</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-09-14</para>
       <itemizedlist>
         <listitem>

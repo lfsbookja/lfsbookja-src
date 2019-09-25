@@ -270,9 +270,10 @@
 @z
 
 @x
-    <para>Install the modules, if the kernel configuration uses them:</para>
+    <para>Unless module support has been disabled in the kernel configuration,
+    install the modules with:</para>
 @y
-    <para>カーネル設定においてモジュールを利用することにした場合、モジュールをインストールします。</para>
+    <para>カーネル設定においてモジュールの利用を無効にしているのでなければ、ここでモジュールをインストールします。</para>
 @z
 
 @x

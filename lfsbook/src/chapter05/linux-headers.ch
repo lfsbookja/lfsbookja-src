@@ -59,14 +59,17 @@
 
 @x
     <para>Now extract the user-visible kernel headers from the source.
-    They are placed in an intermediate local directory and copied to the needed
-    location because the extraction process removes any existing files in
-    the target directory.</para>
+    The recommended make target <quote>headers_install</quote> cannot be
+    used, because it requires <application>rsync</application>, which may not
+    be available. The headers are first placed in
+    <filename class="directory">./usr</filename>, then copied to the needed
+    location.</para>
 @y
     <para>
     そしてユーザーが利用するカーネルヘッダーファイルをソースから抽出します。
-    それらはいったん中間的なローカルディレクトリに置かれ、必要な場所にコピーされます。
-    ターゲットディレクトリに既にあるファイルは削除されてからソースからの抽出処理が行われます。
+    推奨されている make ターゲット<quote>headers_install</quote>は利用できません。
+    なぜなら <application>rsync</application> が必要となり、この時点では利用できないからです。
+    ヘッダーファイルは初めに <filename class="directory">./usr</filename> にコピーし、その後に必要な場所にコピーされます。
     </para>
 @z
 
