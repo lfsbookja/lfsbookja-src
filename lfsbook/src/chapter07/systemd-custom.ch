@@ -406,24 +406,24 @@
 @x
           <emphasis>Enable system-wide process lingering</emphasis>:
           You can set <parameter>KillUserProcesses=no</parameter> in
-          <filename>/etc/logind.conf</filename> to enable process lingering
+          <filename>/etc/systemd/logind.conf</filename> to enable process lingering
           globally for all users. This has the benefit of leaving the old
           method available to all users at the expense of explicit control.
 @y
           <emphasis>システムワイドなプロセスを継続させる方法</emphasis>:
-          <filename>/etc/logind.conf</filename> ファイル内に <parameter>KillUserProcesses=no</parameter> を指定すれば、全ユーザーに対してグローバルにプロセスを継続起動させることができます。
+          <filename>/etc/systemd/logind.conf</filename> ファイル内に <parameter>KillUserProcesses=no</parameter> を指定すれば、全ユーザーに対してグローバルにプロセスを継続起動させることができます。
           これは明示的に制御する方法を無用とし、従来どおり全ユーザーに対しての方式を残すメリットがあります。
 @z
 
 @x
           <emphasis>Disable at build-time</emphasis>: You can enable
           lingering by default while building systemd by adding the switch
-          <parameter>-Ddefault-kill-user-processes=no</parameter> to the
+          <parameter>-Ddefault-kill-user-processes=false</parameter> to the
           <command>meson</command> command for systemd. This completely
           disables the ability of systemd to kill user processes at session
           end.
 @y
           <emphasis>機能変更をビルド時に無効化する方法</emphasis>:
-          プロセス継続をデフォルトとするために systemd のビルド時に <command>meson</command> コマンドにおいて <parameter>-Ddefault-kill-user-processes=no</parameter> スイッチを指定する方法があります。
+          プロセス継続をデフォルトとするために systemd のビルド時に <command>meson</command> コマンドにおいて <parameter>-Ddefault-kill-user-processes=false</parameter> スイッチを指定する方法があります。
           この方法をとれば、systemd がセッション終了時にユーザープロセスを終了させてしまう機能を完全に無効化することができます。
 @z

@@ -76,7 +76,7 @@
 @z
 
 @x
-    <para>The test suite requires TK and and X Windows session and cannot
+    <para>The test suite requires TK and X Windows session and cannot
     be run until Python 3 is reinstalled in BLFS.</para>
 @y
     <para>

@@ -29,12 +29,11 @@
 @z
 
 @x
-    <para>First, apply a patch to fix issues with systemd-networkd on Linux 5.2+
-    kernels, as well as with AMD Ryzen CPUs:</para>
+    <para>First, apply a patch to fix issues with udev and evdev
+    device node assignment:</para>
 @y
     <para>
-    はじめにパッチを適用して、Linux 5.2 以上のカーネルにおける systemd-networkd の問題を修正します。
-    AMD Ryzen CPU における問題も修正します。
+    はじめにパッチを適用して、udev と evdev のデバイスノード割り当てに関する問題を修正します。
     </para>
 @z
 
@@ -224,6 +223,14 @@
 @y
     <para>
     <command>systemd-journald</command> に対して必要となる <filename>/etc/machine-id</filename> ファイルを生成します。
+    </para>
+@z
+
+@x
+    <para>Setup the basic target structure:</para>
+@y
+    <para>
+    基本的なターゲット構造を設定します。
     </para>
 @z
 
