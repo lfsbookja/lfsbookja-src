@@ -107,10 +107,10 @@
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @z
 
-@x Systemd udev evdev fix
-        <para>Download: <ulink url="&patches-root;&systemd-udev-patch;"/></para>
+@x Systemd Consolidated Patch
+        <para>Download: <ulink url="&patches-root;&systemd-consolidated-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&systemd-udev-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&systemd-consolidated-patch;"/></para>
 @z
 
 @x

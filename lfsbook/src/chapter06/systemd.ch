@@ -29,11 +29,11 @@
 @z
 
 @x
-    <para>First, apply a patch to fix issues with udev and evdev
-    device node assignment:</para>
+    <para>First, apply a patch to fix various bugs since the release
+    of systemd-243.</para>
 @y
     <para>
-    はじめにパッチを適用して、udev と evdev のデバイスノード割り当てに関する問題を修正します。
+    はじめに sysmted-243 のリリース以降のさまざまなバグ修正を行うパッチを適用します。
     </para>
 @z
 
@@ -235,7 +235,27 @@
 @z
 
 @x
-    <para>Remove symbolic links to Util-Linux libraries:</para>
+    <para>Disable a service that is known to cause problems with systems that
+    use a network configuration other than what is provided by
+    systemd-networkd:</para>
+@y
+    <para>
+    systemd-networkd が提供する設定とは異なるネットワーク設定を行っているシステムにおいて、問題が発生することがわかっているサービスを無効にします。
+    </para>
+@z
+
+@x
+    <para>Prevent systemd from resetting the maximum PID value which causes
+    some problems with packages and units in BLFS:</para>
+@y
+    <para>
+    systemd が PID 最大値をリセットしないようにします。
+    BLFS におけるパッケージやユニットにおいて、問題となるものがあるためです。
+    </para>
+@z
+
+@x
+    <para>Cleanup symbolic links to Util-Linux libraries:</para>
 @y
     <para>
     Util-Linux ライブラリへのシンボリックリンクを削除します。

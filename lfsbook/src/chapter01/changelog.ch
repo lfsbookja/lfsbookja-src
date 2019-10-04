@@ -54,6 +54,89 @@
 @z
 
 @x
+    <listitem revision="systemd">
+      <para>2019-10-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Add a consolidated patch to fix several
+          problems with the new version of systemd, including bugs
+          in udev, filesystem mounting (with Samba-4.11), hardware
+          database updates, timesync fixes with adjtime as is set
+          in LFS, and bugs with network management and domain
+          resolution.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@y
+    <listitem revision="systemd">
+      <para>2019-10-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd の新バージョン向けに、複数の問題を修正する統合パッチを追加。
+          udev におけるバグ、（Samba-4.11 における）ファイルシステムマウント、ハードウェアデータベースの更新、LFS にて設定している adjtime による timesync の修正、ネットワーク管理やドメイン解決に関するバグなど。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@z
+
+@x
+    <listitem>
+      <para>2019-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-6.7. Fixes
+          <ulink url="&lfs-ticket-root;4529">#4529</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.45.4. Fixes
+          <ulink url="&lfs-ticket-root;4530">#4530</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to XML-Parser-2.46. Fixes
+          <ulink url="&lfs-ticket-root;4531">#4531</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.2.9. Fixes
+          <ulink url="&lfs-ticket-root;4532">#4532</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.3.0. Fixes
+          <ulink url="&lfs-ticket-root;4533">#4533</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+@y
+    <listitem>
+      <para>2019-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - texinfo-6.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4529">#4529</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.45.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4530">#4530</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - XML-Parser-2.46 へのアップデート。
+          <ulink url="&lfs-ticket-root;4531">#4531</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.2.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4532">#4532</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4533">#4533</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+@z
+
+@x
       <para>2019-09-27</para>
       <itemizedlist>
         <listitem>
