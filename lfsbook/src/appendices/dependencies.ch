@@ -755,6 +755,11 @@
 @y
           <seg>Man-DB, Perl</seg>
 @z
+@x
+          <seg>Ghostscript</seg>
+@y
+          <seg>Ghostscript</seg>
+@z
 
 %----------------------------------------------------------------------
 @x GRUB
@@ -1535,10 +1540,10 @@
 
 %----------------------------------------------------------------------
 @x Shadow
-         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
+         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
          Gettext, Glibc, Grep, Make, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
+         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
          Gettext, Glibc, Grep, Make, Sed</seg>
 @z
 @x
@@ -1552,9 +1557,9 @@
           <seg>Coreutils</seg>
 @z
 @x
-          <seg>Acl, Attr, Cracklib, and PAM</seg>
+          <seg>Cracklib, and PAM</seg>
 @y
-          <seg>Acl, Attr, Cracklib, PAM</seg>
+          <seg>Cracklib, and PAM</seg>
 @z
 
 %----------------------------------------------------------------------

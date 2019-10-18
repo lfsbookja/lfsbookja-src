@@ -54,6 +54,62 @@
 @z
 
 @x
+      <para>2019-10-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Move attr and acl to be before shadow.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.3.6. Fixes
+          <ulink url="&lfs-ticket-root;4534">#4534</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.03. Fixes
+          <ulink url="&lfs-ticket-root;4536">#4536</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.52.0. Fixes
+          <ulink url="&lfs-ticket-root;4535">#4535</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.8.0. Fixes
+          <ulink url="&lfs-ticket-root;4538">#4538</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.33.1. Fixes
+          <ulink url="&lfs-ticket-root;4537">#4537</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-10-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - attr と acl を shadow の前に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.3.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4534">#4534</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.03 へのアップデート。
+          <ulink url="&lfs-ticket-root;4536">#4536</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.52.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4535">#4535</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.8.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4538">#4538</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.33.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4537">#4537</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
     <listitem revision="systemd">
       <para>2019-10-03</para>
       <itemizedlist>

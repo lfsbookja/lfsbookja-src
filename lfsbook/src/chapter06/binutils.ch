@@ -186,11 +186,10 @@
 @z
 
 @x
-    <para>The PC-relative offset test and  
-    the debug_msg.sh test may fail in the LFS environment.</para>
+    <para>The ver_test_pr16504.sh test is known to fail.</para>
 @y
     <para>
-    PC 相対（PC-relative）オフセットテストと debug_msg.sh test は LFS 環境内では失敗するかもしれません。
+    ver_test_pr16504.sh は 失敗します。
     </para>
 @z
 
