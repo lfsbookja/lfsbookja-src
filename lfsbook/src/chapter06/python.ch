@@ -157,10 +157,11 @@
           2to3, idle3, pip3, pydoc3, python3, python3-config, and pyvenv
         </seg>
         <seg>
-          libpython&python-minor;m.so and libpython3.so
+          libpython&python-minor;.so and libpython3.so
         </seg>
         <seg>
-          /usr/include/python&python-minor;m, /usr/lib/python3 and
+          /usr/include/python&python-minor;, 
+          /usr/lib/python3, and
           /usr/share/doc/python-&python-version;
         </seg>
 @y
@@ -168,10 +169,11 @@
           2to3, idle3, pip3, pydoc3, python3, python3-config, pyvenv
         </seg>
         <seg>
-          libpython&python-minor;m.so, libpython3.so
+          libpython&python-minor;.so, libpython3.so
         </seg>
         <seg>
-          /usr/include/python&python-minor;m, /usr/lib/python3,
+          /usr/include/python&python-minor;, 
+          /usr/lib/python3,
           /usr/share/doc/python-&python-version;
         </seg>
 @z

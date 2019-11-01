@@ -145,12 +145,10 @@
 @z
 
 @x Check
-        <para>This package contains a test harness for other programs.
-        It is only installed in the temporary toolchain.</para>
+        <para>This package contains a test harness for other programs.</para>
 @y
         <para>
         このパッケージは、他のプログラムに対するテストハーネス (test harness) を提供します。
-        これは一時的なツールチェーンにおいてのみインストールします。
         </para>
 @z
 

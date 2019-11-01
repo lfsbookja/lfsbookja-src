@@ -54,6 +54,46 @@
 @z
 
 @x
+    <listitem revision="sysv">
+      <para>2019-10-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to lfs-bootscripts-20191031.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@y
+    <listitem revision="sysv">
+      <para>2019-10-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - lfs-bootscripts-20191031 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@z
+
+@x
+    <listitem revision="sysv">
+      <para>2019-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to lfs-bootscripts-20191025.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@y
+    <listitem revision="sysv">
+      <para>2019-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - lfs-bootscripts-20191025 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@z
+
+@x
       <para>2019-10-17</para>
       <itemizedlist>
         <listitem>
