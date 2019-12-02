@@ -132,6 +132,18 @@
 @z
 
 @x
+  <note><para>In some host systems, the following command does not complete
+  properly and suspends the login to the lfs user to the background.  If the
+  prompt "lfs:~$" does not appear immediately, entering the
+  <command>fg</command> command will fix the issue.</para></note>
+@y
+  <note><para>
+  ホストシステムによっては、以下のコマンドを実行しても正常に処理されず、lfs ユーザーへのログインがバックグラウンドで処理中のままとなってしまうことがあります。
+  プロンプトに "lfs:~$" という表示がすぐに現れなかった場合は、<command>fg</command> コマンドを入力することで解決するかもしれません。
+  </para></note>
+@z
+
+@x
   <para>Next, login as user <systemitem class="username">lfs</systemitem>.
   This can be done via a virtual console, through a display manager, or with
   the following substitute user command:</para>

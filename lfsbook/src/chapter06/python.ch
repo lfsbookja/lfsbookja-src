@@ -120,9 +120,9 @@
 @z
 
 @x
-      <term><option>--no-same-owner</option> and --no-same-permissions</term>
+      <term><option>--no-same-owner</option> and <option>--no-same-permissions</option></term>
 @y
-      <term><option>--no-same-owner</option> と --no-same-permissions</term>
+      <term><option>--no-same-owner</option> と <option>--no-same-permissions</option></term>
 @z
 @x
         <para>Ensure the installed files have the correct ownership and 

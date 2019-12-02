@@ -98,7 +98,7 @@
         msgexec, msgfilter, msgfmt, msggrep, msginit, msgmerge, msgunfmt, msguniq,
         ngettext, recode-sr-latin, and xgettext</seg>
         <seg>libasprintf.so, libgettextlib.so, libgettextpo.so,
-        libgettextsrc.so, and preloadable_libintl.so</seg>
+        libgettextsrc.so, libtextstyle.so, and preloadable_libintl.so</seg>
         <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;,
         /usr/share/gettext, and /usr/share/gettext-0.19.8</seg>
 @y
@@ -107,7 +107,7 @@
         msgexec, msgfilter, msgfmt, msggrep, msginit, msgmerge, msgunfmt, msguniq,
         ngettext, recode-sr-latin, xgettext</seg>
         <seg>libasprintf.so, libgettextlib.so, libgettextpo.so,
-        libgettextsrc.so, preloadable_libintl.so</seg>
+        libgettextsrc.so, libtextstyle.so, preloadable_libintl.so</seg>
         <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;,
         /usr/share/gettext, /usr/share/gettext-0.19.8</seg>
 @z
@@ -391,6 +391,14 @@
           <para>
           さまざまな Gettext プログラムが利用している共通的ルーチンを提供するプライベートライブラリです。
           これは一般的な利用を想定したものではありません。
+          </para>
+@z
+
+@x libtextstyle
+          <para>Text styling library</para>
+@y
+          <para>
+          テキストスタイリングライブラリ。
           </para>
 @z
 

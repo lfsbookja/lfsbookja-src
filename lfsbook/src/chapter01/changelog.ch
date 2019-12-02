@@ -54,6 +54,144 @@
 @z
 
 @x
+      <para>2019-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add upstream fixes patch for bash.
+          Also add a note about possible problems when changing
+          to the lfs user.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.1.2361. Updates
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.52.1. Fixes
+          <ulink url="&lfs-ticket-root;4555">#4555</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.178. Fixes
+          <ulink url="&lfs-ticket-root;4553">#4553</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.4.0. Fixes
+          <ulink url="&lfs-ticket-root;4551">#4551</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libffi-3.3. Fixes
+          <ulink url="&lfs-ticket-root;4550">#4550</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tcl-8.6.10. Fixes
+          <ulink url="&lfs-ticket-root;4549">#4549</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.04. Fixes
+          <ulink url="&lfs-ticket-root;4548">#4548</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.30.1. Fixes
+          <ulink url="&lfs-ticket-root;4547">#4547</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.4.1. Fixes
+          <ulink url="&lfs-ticket-root;4546">#4546</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.3.2. Fixes
+          <ulink url="&lfs-ticket-root;4545">#4545</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash に対してアップストリームによる修正パッチを追加。
+          また初めて lfs ユーザーに切り替える際に発生するかもしれない問題に言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-8.1.2361 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.52.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4555">#4555</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.178 へのアップデート。
+          <ulink url="&lfs-ticket-root;4553">#4553</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.4.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4551">#4551</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libffi-3.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4550">#4550</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl-8.6.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4549">#4549</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.04 へのアップデート。
+          <ulink url="&lfs-ticket-root;4548">#4548</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.30.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4547">#4547</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.4.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4546">#4546</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.3.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4545">#4545</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-11-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to Linux-5.3.9. Resolves a regression
+          with restarting systems with HD Audio (hda), data corruption
+          on btrfs, and a security vulnerability with systems that use
+          the RTLWIFI driver. Fixes
+          <ulink url="&lfs-ticket-root;4544">#4544</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-11-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Linux-5.3.9 へのアップデート。
+          HD Audio (hda) を持つシステムの再起動回避、btrfs 上のデータ破損、RTLWIFI ドライバー利用時のセキュリティぜい弱性を修正。
+          <ulink url="&lfs-ticket-root;4544">#4544</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fix potential infinite loop with meson-0.52
+          and systemd-243.</para>
+        </listitem>
+       </itemizedlist>
+@y
+      <para>2019-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - meson-0.52 と systemd-243 にて発生する可能性のある無限ループを修正。</para>
+        </listitem>
+       </itemizedlist>
+@z
+
+@x
     <listitem revision="sysv">
       <para>2019-10-31</para>
       <itemizedlist>
@@ -91,6 +229,56 @@
         </listitem>
       </itemizedlist>
     </listitem>
+@z
+
+@x
+      <para>2019-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.3.8. Fixes
+          <ulink url="&lfs-ticket-root;4539">#4539</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4543">#4543</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to check-0.13.0. Fixes
+          <ulink url="&lfs-ticket-root;4540">#4540</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to eudev-3.2.9. Fixes
+          <ulink url="&lfs-ticket-root;4542">#4542</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.9.0. Fixes
+          <ulink url="&lfs-ticket-root;4541">#4541</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-5.3.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4539">#4539</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4543">#4543</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - check-0.13.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4540">#4540</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - eudev-3.2.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4542">#4542</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.9.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4541">#4541</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x

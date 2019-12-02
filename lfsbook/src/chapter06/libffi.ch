@@ -104,6 +104,14 @@
 @z
 
 @x
+    <para>Six tests, all related to test-callback.c, are known to fail.</para>
+@y
+    <para>
+    test-callback.c に関連するテスト 6 つはすべて失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
