@@ -45,8 +45,8 @@
 
 @x
     <para>Disable the installation of the <command>groups</command> program
-    and its man pages, as Coreutils provides a better version. Also 
-    Prevent the installation of manual pages that were already installed in
+    and its man pages, as Coreutils provides a better version. Also,
+    prevent the installation of manual pages that were already installed in
     <xref linkend="ch-system-man-pages"/>:</para>
 @y
     <para>
