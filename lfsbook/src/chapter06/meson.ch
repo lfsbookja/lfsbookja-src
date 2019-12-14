@@ -29,13 +29,13 @@
     <title>&InstallationOf1;Meson&InstallationOf2;</title>
 @z
 
-% @x
-%     <para>Make a fix from upstream:</para>
-% @y
-%     <para>
-%     アップストリームによる修正を行います。
-%     </para>
-% @z
+@x
+    <para>Apply a fix from upstream to fix a regression:</para>
+@y
+    <para>
+    アップストリームによる修正により不備を修正します。
+    </para>
+@z
 
 @x
     <para>Compile Meson with the following command:</para>

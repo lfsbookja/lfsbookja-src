@@ -50,6 +50,14 @@
 @z
 
 @x
+    <para>Compile the package:</para>
+@y
+    <para>
+    &CompileThePackage;
+    </para>
+@z
+
+@x
     <para>To test the results (about 2.2 SBU), issue:</para>
 @y
     <para>コンパイル結果をテストするなら以下を実行します。(約 2.2 SBU)</para>

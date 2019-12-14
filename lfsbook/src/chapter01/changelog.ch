@@ -54,6 +54,49 @@
 @z
 
 @x
+      <para>2019-12-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.28. Fixes
+          <ulink url="&lfs-ticket-root;4559">#4559</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.5. Fixes
+          <ulink url="&lfs-ticket-root;4561">#4561</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-12-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libcap-2.28 へのアップデート。
+          <ulink url="&lfs-ticket-root;4559">#4559</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4561">#4561</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2019-12-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fix a regression in meson that was causing problems
+          in dependent packages.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-12-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - meson において依存パッケージに問題を引き起こす不備を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-12-05</para>
       <itemizedlist>
         <listitem revision="systemd">
