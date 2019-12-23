@@ -14,12 +14,6 @@
 @z
 
 @x
-<!ENTITY acl-ch6-sbu "less than 0.1 SBU">
-@y
-<!ENTITY acl-ch6-sbu "0.1 SBU 以下">
-@z
-
-@x
 <!ENTITY attr-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY attr-ch6-sbu "0.1 SBU 以下">
@@ -62,9 +56,9 @@
 @z
 
 @x
-<!ENTITY gcc-ch6-sbu "95 SBU (with tests)">
+<!ENTITY gcc-ch6-sbu "91 SBU (with tests)">
 @y
-<!ENTITY gcc-ch6-sbu "95 SBU (テスト込み)">
+<!ENTITY gcc-ch6-sbu "91 SBU (テスト込み)">
 @z
 
 @x

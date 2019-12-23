@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2019-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Update to python3-3.8.1. Fixes
+          <ulink url="&lfs-ticket-root;4564">#4564</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Update to file-5.38. Fixes
+          <ulink url="&lfs-ticket-root;4563">#4563</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Update to linux-5.4.6. Fixes
+          <ulink url="&lfs-ticket-root;4562">#4562</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Update to vim-8.2.0024. Part of
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2019-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - python3-3.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4564">#4564</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - file-5.38 へのアップデート。
+          <ulink url="&lfs-ticket-root;4563">#4563</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - linux-5.4.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4562">#4562</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - vim-8.2.0024 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> の一部。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2019-12-12</para>
       <itemizedlist>
         <listitem>

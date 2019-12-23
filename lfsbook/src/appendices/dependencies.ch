@@ -273,9 +273,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>File</seg>
 @y
-          <seg>なし</seg>
+          <seg>File</seg>
 @z
 @x
           <seg>None</seg>
@@ -468,11 +468,11 @@
 
 %----------------------------------------------------------------------
 @x File
-          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Make, Sed, and Zlib</seg>
+          <seg>Bash, Binutils, Bzip2, Coreutils, Diffutils, Gawk, GCC, Glibc,
+          Grep, Make, Sed, Xz, and Zlib</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Make, Sed, Zlib</seg>
+          <seg>Bash, Binutils, Bzip2, Coreutils, Diffutils, Gawk, GCC, Glibc,
+          Grep, Make, Sed, Xz, Zlib</seg>
 @z
 @x
           <seg>None</seg>
@@ -1782,9 +1782,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>Eudev, GRUB, Kmod, and Man-DB</seg>
+          <seg>Eudev, File, GRUB, Kmod, and Man-DB</seg>
 @y
-          <seg>Eudev, GRUB, Kmod, Man-DB</seg>
+          <seg>Eudev, File, GRUB, Kmod, and Man-DB</seg>
 @z
 @x
           <seg>None</seg>
