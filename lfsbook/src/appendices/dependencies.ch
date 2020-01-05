@@ -307,11 +307,11 @@
 
 %----------------------------------------------------------------------
 @x coreutils
-         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Make,
-         Patch, Perl, Sed, and Texinfo</seg>
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Libcap,
+         Make, Patch, Perl, Sed, and Texinfo</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Make,
-         Patch, Perl, Sed, Texinfo</seg>
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Libcap,
+         Make, Patch, Perl, Sed, Texinfo</seg>
 @z
 @x
           <seg>Diffutils, E2fsprogs, Findutils, Shadow, and Util-linux</seg>

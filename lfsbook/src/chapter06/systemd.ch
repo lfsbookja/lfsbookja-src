@@ -47,7 +47,7 @@
 
 @x
     <para>Because we have not yet installed the final version of Util-Linux,
-    create links to the libraries in the approprite location:</para>
+    create links to the libraries in the appropriate location:</para>
 @y
     <para>
     ここではまだ、最終版の Util-Linux をインストールしていないため、リンク先のライブラリが適切になるようにします。

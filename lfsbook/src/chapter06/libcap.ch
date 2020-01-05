@@ -32,10 +32,18 @@
 @z
 
 @x
-    <para>Prevent a static library from being installed:</para>
+    <para>Prevent two static libraries from being installed:</para>
 @y
     <para>
-    スタティックライブラリをインストールしないようにします。
+    2 つのスタティックライブラリをインストールしないようにします。
+    </para>
+@z
+
+@x
+    <para>Fix a file with wrong syntax:</para>
+@y
+    <para>
+    文法誤りのあるファイルを修正します。
     </para>
 @z
 
@@ -63,40 +71,16 @@
       <title>&MeaningOfOption1;make&MeaningOfOption2;</title>
 @z
 
-@x RAISE_SETFCAP=no
-          <para>This parameter skips trying to use <command>setcap</command>
-          on itself. This avoids an installation error if the kernel or file
-          system does not support extended capabilities.</para>
-@y
-          <para>
-          このパラメーターは <command>setcap</command> が自分を利用しないようにします。
-          このことにより、カーネルやファイルシステムが拡張属性をサポートしていなくてもインストール時のエラーが発生しないようにします。
-          </para>
-@z
-
 @x lib=lib
           <para>This parameter installs the library in
-          <filename>$prefix/lib</filename> rather than
-          <filename>$prefix/lib64</filename> on x86_64. It has no effect on
+          <filename>/lib</filename> rather than
+          <filename>/lib64</filename> on x86_64. It has no effect on
           x86.</para>
 @y
           <para>
-          このパラメーターは x86_64 においてライブラリを <filename>$prefix/lib64</filename> ではなく <filename>$prefix/lib</filename> にインストールします。
+          このパラメーターは x86_64 においてライブラリを <filename>/lib64</filename> ではなく <filename>/lib</filename> にインストールします。
           x86 においては何も効果はありません。
           </para>
-@z
-
-@x
-    <para>The shared library needs to be moved to
-    <filename class="directory">/lib</filename>, and as a result the
-    <filename class="extension">.so</filename> file in
-    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
-@y
-    <para>
-    共有ライブラリは <filename class="directory">/lib</filename> に移動させます。
-    これにより <filename class="directory">/usr/lib</filename> にある <filename
-    class="extension">.so</filename> ファイルを再生成します。
-    </para>
 @z
 
 @x

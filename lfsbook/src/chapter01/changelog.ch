@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2020-01-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Fix various issues in libcap-2.29, and
+          update dependencies.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - libcap-2.29 における問題を種々修正。
+          またその依存関係を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-01</para>
       <itemizedlist>
         <listitem>
