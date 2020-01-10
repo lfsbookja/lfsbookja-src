@@ -32,18 +32,10 @@
 @z
 
 @x
-    <para>Prevent two static libraries from being installed:</para>
+    <para>Prevent a static library from being installed:</para>
 @y
     <para>
-    2 つのスタティックライブラリをインストールしないようにします。
-    </para>
-@z
-
-@x
-    <para>Fix a file with wrong syntax:</para>
-@y
-    <para>
-    文法誤りのあるファイルを修正します。
+    スタティックライブラリをインストールしないようにします。
     </para>
 @z
 
@@ -54,33 +46,35 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
-@y
-    <para>&NotExistTestsuite;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-@x
       <title>The meaning of the make option:</title>
 @y
       <title>&MeaningOfOption1;make&MeaningOfOption2;</title>
 @z
 
 @x lib=lib
-          <para>This parameter installs the library in
+          <para>This parameter sets the library directory to
           <filename>/lib</filename> rather than
           <filename>/lib64</filename> on x86_64. It has no effect on
           x86.</para>
 @y
           <para>
-          このパラメーターは x86_64 においてライブラリを <filename>/lib64</filename> ではなく <filename>/lib</filename> にインストールします。
+          このパラメーターは x86_64 においてライブラリを <filename>/lib64</filename> ではなく <filename>/lib</filename> にインストールするようにします。
           x86 においては何も効果はありません。
           </para>
+@z
+
+@x
+    <para>To test the results, issue:</para>
+@y
+    <para>
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -99,10 +93,10 @@
 
 @x
         <seg>capsh, getcap, getpcaps, and setcap</seg>
-        <seg>libcap.so</seg>
+        <seg>libcap.so and libpsx.a</seg>
 @y
         <seg>capsh, getcap, getpcaps, setcap</seg>
-        <seg>libcap.so</seg>
+        <seg>libcap.so, libpsx.a</seg>
 @z
 
 @x
@@ -149,5 +143,14 @@
 @y
           <para>
           POSIX 1003.1e 拡張属性を制御するライブラリ関数を提供します。
+          </para>
+@z
+
+@x libpsx
+          <para>Contains functions to support POSIX semantics for syscalls
+          associated with the pthread library</para>
+@y
+          <para>
+          pthread ライブラリに関しての syscalls に対する POSIX セマンティックス対応の関数を提供します。
           </para>
 @z

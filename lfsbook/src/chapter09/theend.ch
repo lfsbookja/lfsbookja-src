@@ -31,22 +31,13 @@
 @z
 
 @x
-  <para revision="systemd">Create an <filename>/etc/os-release</filename> 
-        file required by systemd:</para>
-@y
-  <para revision="systemd">
-  systemd において必要となる <filename>/etc/os-release</filename> ファイルを生成します。
-  </para>
-@z
-
-@x
-  <para revision="sysv">It may be a good idea to create an
+  <para>It may be a good idea to create an
   <filename>/etc/lfs-release</filename> file. By having this file, it is very
   easy for you (and for us if you need to ask for help at some point) to find
   out which LFS version is installed on the system. Create this file by
   running:</para>
 @y
-  <para revision="sysv">
+  <para>
   <filename>/etc/lfs-release</filename> というファイルをここで作成することにします。
   このファイルを作っておけば、どのバージョンの LFS をインストールしたのか、すぐに判別できます。
   (もしあなたが質問を投げた時には、我々もすぐに判別できることになります。)
@@ -55,38 +46,44 @@
 @z
 
 @x
-  <para revision="systemd">Creating the file
-  <filename>/etc/lfs-release</filename> is recommended for compatibility with
-  the non-systemd branch. By having this file, it is very easy for you (and for
-  us if you need to ask for help at some point) to find out which LFS version
-  is installed on the system. Create this file by running:</para>
+  <para>Two files describing the installed system may be used by packages
+  that will be installed on the system, either in binary form or by building
+  them.</para>
 @y
-  <para revision="systemd">
-  <filename>/etc/lfs-release</filename> というファイルを生成することをお勧めします。
-  これにより systemd 版ではないものとの対比ができます。
-  またこのファイルを作っておけば、どのバージョンの LFS をインストールしたのか、すぐに判別できます。
-  (もしあなたが質問を投げた時には、我々もすぐに判別できることになります。)
-  以下のコマンドによりこのファイルを生成します。
+  <para>
+  インストールシステムの情報を表わした 2 つのファイルがあれば、これからシステムにインストールするパッケージにおいて利用していくことができます。
+  パッケージはバイナリ形式であっても、ビルドするものであってもかまいません。
   </para>
 @z
 
 @x
-  <para>It is also a good idea to create a file to show the status of your
+  <para>The first one shows the status of your
   new system with respect to the Linux Standards Base (LSB).  To create
   this file, run:</para>
 @y
   <para>
-  またもう一つのファイルを生成することにします。
-  これは Linux Standards Base (LSB) の観点で、あなたのシステムがどのような状況にあるかを示すものです。
+  1 つめのファイルは Linux Standards Base (LSB) の観点で、あなたのシステムがどのような状況にあるかを示すものです。
   これを作成するために以下のコマンドを実行します。
   </para>
 @z
 
 @x
-  <para>Be sure to put some sort of customization for the field
-  'DISTRIB_CODENAME' to make the system uniquely yours.</para>
+  <para>The second one contains roughly the same information, and is used
+  by systemd and some graphical desktop environments.  To create
+  this file, run:</para>
 @y
   <para>
-  'DISTRIB_CODENAME' に対する設定は、あなたのシステムを特定できるように適切に書き換えてください。
+  2 つめのファイルは、だいたい同じ情報を含むものですが、systemd やグラフィカルデスクトップ環境がこれを利用します。
+  これを作成するために以下のコマンドを実行します。
+  </para>
+@z
+
+@x
+  <para>Be sure to put some sort of customization for the fields
+  'DISTRIB_CODENAME' and 'VERSION_CODENAME' to make the system uniquely
+  yours.</para>
+@y
+  <para>
+  'DISTRIB_CODENAME' と 'VERSION_CODENAME' の両項目に対しては、あなたのシステムを特定できるように適切に設定してください。
   </para>
 @z

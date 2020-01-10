@@ -54,6 +54,82 @@
 @z
 
 @x
+      <para>2020-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.53.0. Fixes
+          <ulink url="&lfs-ticket-root;4571">#4571</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.45.5. Fixes
+          <ulink url="&lfs-ticket-root;4570">#4570</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-3.4. Fixes
+          <ulink url="&lfs-ticket-root;4568">#4568</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.5.2. Fixes
+          <ulink url="&lfs-ticket-root;4567">#4567</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.4.8. Fixes
+          <ulink url="&lfs-ticket-root;4566">#4566</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Add <filename>/etc/os-release</filename> to
+          the sysV version, as it is required by some packages in BLFS.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-0.53.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4571">#4571</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.45.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4570">#4570</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-3.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4568">#4568</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.5.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4567">#4567</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.4.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4566">#4566</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - sysV 版に対しても <filename>/etc/os-release</filename> を追加。
+          BLFS におけるパッケージにおいてこれを必要とするものがあるため。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Update to libcap-2.30. Fixes
+          <ulink url="&lfs-ticket-root;4569">#4569</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - libcap-2.30 へのアップデート。
+          <ulink url="&lfs-ticket-root;4569">#4569</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-04</para>
       <itemizedlist>
         <listitem>
