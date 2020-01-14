@@ -1559,7 +1559,7 @@
 @x
           <seg>Cracklib, and PAM</seg>
 @y
-          <seg>Cracklib, and PAM</seg>
+          <seg>Cracklib, PAM</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1784,7 +1784,7 @@
 @x
           <seg>Eudev, File, GRUB, Kmod, and Man-DB</seg>
 @y
-          <seg>Eudev, File, GRUB, Kmod, and Man-DB</seg>
+          <seg>Eudev, File, GRUB, Kmod, Man-DB</seg>
 @z
 @x
           <seg>None</seg>
@@ -1808,6 +1808,31 @@
 @y
           <seg>File, Kmod, Perl, Util-linux</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Zstd
+         <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, and Xz</seg>
+@y
+         <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz</seg>
+@z
+
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
 @x
           <seg>None</seg>
 @y

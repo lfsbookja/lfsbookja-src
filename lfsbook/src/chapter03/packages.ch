@@ -715,6 +715,14 @@
         <para>&Download;: <ulink url="&zlib-url;"/></para>
 @z
 
+@x Zstd
+        <para>Home page: <ulink url="&zstd-home;"/></para>
+        <para>Download: <ulink url="&zstd-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&zstd-home;"/></para>
+        <para>&Download;: <ulink url="&zstd-url;"/></para>
+@z
+
 @x
   <para>Total size of these packages: about <returnvalue/></para>
 @y

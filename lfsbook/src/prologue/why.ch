@@ -861,3 +861,14 @@
         このパッケージは、圧縮や解凍の機能を提供するもので、他のプログラムがこれを利用しています。
         </para>
 @z
+
+@x Zstd
+        <para>This package contains compression and decompression routines
+        used by some programs. It provide high compression ratios and a very 
+        wide range of compression / speed trade-offs.</para>
+@y
+        <para>
+        このパッケージは、一定のプログラムが利用している圧縮、伸張（解凍）ルーチンを提供します。
+        高圧縮率に加えて、圧縮、処理速度間のトレードオフを広範囲に提供します。
+        </para>
+@z

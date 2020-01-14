@@ -54,6 +54,39 @@
 @z
 
 @x
+      <para>2020-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Ensure zstd libraries are installed in the correct 
+          location.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - zstd のライブラリが適切なディレクトリにインストールされるようにする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-01-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added zstd-1.4.4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - zstd-1.4.4 追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-09</para>
       <itemizedlist>
         <listitem>

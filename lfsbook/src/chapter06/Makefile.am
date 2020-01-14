@@ -92,7 +92,8 @@ CHANGE_FILES = \
 	vim.ch               \
         xml-parser.ch        \
 	xz.ch                \
-	zlib.ch
+	zlib.ch              \
+	zstd.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
