@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2020-01-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Update to libcap-2.31. Fixes
+          <ulink url="&lfs-ticket-root;4574">#4574</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - libcap-2.31 へのアップデート。
+          <ulink url="&lfs-ticket-root;4574">#4574</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-13</para>
       <itemizedlist>
         <listitem>

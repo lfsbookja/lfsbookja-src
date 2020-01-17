@@ -32,10 +32,10 @@
 @z
 
 @x
-    <para>Prevent a static library from being installed:</para>
+    <para>Prevent two static libraries from being installed:</para>
 @y
     <para>
-    スタティックライブラリをインストールしないようにします。
+    2 つのスタティックライブラリをインストールしないようにします。
     </para>
 @z
 
