@@ -54,6 +54,64 @@
 @z
 
 @x
+      <para>2020-01-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to make-4.3. Fixes
+          <ulink url="&lfs-ticket-root;4578">#4578</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.0129. Addresses 
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-6.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4577">#4577</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sed-4.8. Fixes
+          <ulink url="&lfs-ticket-root;4576">#4576</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.5.1. Fixes
+          <ulink url="&lfs-ticket-root;4575">#4575</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.4.13. Fixes
+          <ulink url="&lfs-ticket-root;4572">#4572</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - make-4.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4578">#4578</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.0129 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gmp-6.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4577">#4577</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sed-4.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4576">#4576</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.5.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4575">#4575</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.4.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4572">#4572</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-16</para>
       <itemizedlist>
         <listitem>
