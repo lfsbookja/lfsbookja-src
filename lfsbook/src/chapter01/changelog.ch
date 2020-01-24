@@ -54,6 +54,26 @@
 @z
 
 @x
+      <para>2020-01-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Remove obsolete installation commands from the
+          systemd page. These have been obsolete since 243 and were recently
+          discovered.</para>
+       </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd のページから、古くなったインストールコマンドを削除。
+          これはバージョン 243 の時点から古くなっており、最近見つけられたもの。
+          </para>
+       </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-19</para>
       <itemizedlist>
         <listitem>

@@ -97,11 +97,11 @@
 @z
 
 @x --enable-ld=default
-          <para>Build the original bdf linker and install it as both ld (the
+          <para>Build the original bfd linker and install it as both ld (the
           default linker) and ld.bfd.</para>
 @y
           <para>
-          オリジナルの bdf リンカーをビルドし ld (デフォルトリンカー) と ld.bfd としてインストールします。
+          オリジナルの bfd リンカーをビルドし ld (デフォルトリンカー) と ld.bfd としてインストールします。
           </para>
 @z
 
