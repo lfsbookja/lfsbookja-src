@@ -48,7 +48,7 @@
 @z
 
 @x
-    <para>Some of the Glibc programs use the non-FHS compilant
+    <para>Some of the Glibc programs use the non-FHS compliant
     <filename class="directory">/var/db</filename> directory to store
     their runtime data. Apply the following patch to make such programs
     store their runtime data in the FHS-compliant locations:</para>

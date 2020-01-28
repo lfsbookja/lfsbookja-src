@@ -74,6 +74,64 @@
 @z
 
 @x
+      <para>2020-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to ninja-1.10.0. Fixes
+          <ulink url="&lfs-ticket-root;4585">#4585</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to check-0.14.0. Fixes
+          <ulink url="&lfs-ticket-root;4583">#4583</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.8.1. Fixes
+          <ulink url="&lfs-ticket-root;4582">#4582</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.53.1. Fixes
+          <ulink url="&lfs-ticket-root;4581">#4581</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.5. Fixes
+          <ulink url="&lfs-ticket-root;4580">#4580</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.5.1. Fixes
+          <ulink url="&lfs-ticket-root;4579">#4579</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ninja-1.10.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4585">#4585</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - check-0.14.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4583">#4583</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4582">#4582</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.53.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4581">#4581</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4580">#4580</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.5.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4579">#4579</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-19</para>
       <itemizedlist>
         <listitem>
