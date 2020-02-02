@@ -93,11 +93,10 @@
 @z
 
 @x
-    <para>As in the first build of GCC, fix a problem identified upstream:</para>
+      Now fix a problem introduced by aother package after this version 
+      of gcc was released:
 @y
-    <para>
-    1回目と同様、アップストリームが認識している問題を修正します。
-    </para>
+      gcc の当バージョンがリリースされた後に、関連パッケージにより発生する問題を修正します。
 @z
 
 @x

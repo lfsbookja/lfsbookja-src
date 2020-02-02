@@ -37,15 +37,12 @@
     </para>
 @z
 
-% @x
-%     <para>Remove the symlink created earlier as the final gcc includes will be
-%     installed here:</para>
-% @y
-%     <para>
-%     前に作成していたシンボリックリンクは削除します。
-%     最終の gcc に関するインクルード類はこれ以降にインストールされます。
-%     </para>
-% @z
+@x
+      As in gcc-pass2, fix a problem introduced by aother package after this version
+      of gcc was released:
+@y
+      gcc-pass2 と同様に、gcc の当バージョンがリリースされた後に、関連パッケージにより発生する問題を修正します。
+@z
 
 @x
     <para>The GCC documentation recommends building GCC in a dedicated build directory:</para>

@@ -54,6 +54,72 @@
 @z
 
 @x
+      <para>2020-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.0190. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.34. Fixes
+          <ulink url="&lfs-ticket-root;4590">#4590</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.31. Fixes
+          <ulink url="&lfs-ticket-root;4589">#4589</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.5.1. Fixes
+          <ulink url="&lfs-ticket-root;4588">#4588</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.5.3. Fixes
+          <ulink url="&lfs-ticket-root;4587">#4587</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.5.0. Fixes
+          <ulink url="&lfs-ticket-root;4586">#4586</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux 2.35.1. Fixes
+          <ulink url="&lfs-ticket-root;4560">#4560</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.0190 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.34 へのアップデート。
+          <ulink url="&lfs-ticket-root;4590">#4590</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.31 へのアップデート。
+          <ulink url="&lfs-ticket-root;4589">#4589</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.5.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4588">#4588</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.5.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4587">#4587</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.5.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4586">#4586</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux 2.35.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4560">#4560</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-23</para>
       <itemizedlist>
         <listitem>
