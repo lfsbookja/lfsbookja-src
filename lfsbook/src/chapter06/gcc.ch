@@ -38,10 +38,9 @@
 @z
 
 @x
-      As in gcc-pass2, fix a problem introduced by aother package after this version
-      of gcc was released:
+      As in gcc-pass2, fix a problem introduced by Glibc-2.31:
 @y
-      gcc-pass2 と同様に、gcc の当バージョンがリリースされた後に、関連パッケージにより発生する問題を修正します。
+      gcc-pass2 と同様に、Glibc-2.31 により発生する問題を修正します。
 @z
 
 @x

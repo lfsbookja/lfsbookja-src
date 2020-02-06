@@ -76,11 +76,17 @@
 @z
 
 @x
-    <para>The test suite requires TK and X Windows session and cannot
-    be run until Python 3 is reinstalled in BLFS.</para>
+    <para>To test the results, issue <command>make test</command>.
+    Some tests requiring network connection or additional packages are
+    skipped.  The test named test_normalization fails because network
+    configuration is not completed yet.  For more comprehensive results,
+    the test can be rerun when Python 3 is reinstalled in BLFS.</para>
 @y
     <para>
-    テストスイートには TK と X ウィンドウセッションが必要であるため、BLFS において Python 3 を再インストールしてからでないと、テストスイートを実行することはできません。
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    ネットワーク接続や別パッケージを必要とするテストはスキップされます。
+    test_normalization というテストは、ネットワーク設定がまだできあがっていないために失敗します。
+    テストを網羅するなら、BLFS において Python 3 を再インストールしてから、テストを再実行してください。
     </para>
 @z
 
@@ -154,7 +160,7 @@
 
 @x
         <seg>
-          2to3, idle3, pip3, pydoc3, python3, python3-config, and pyvenv
+          2to3, idle3, pip3, pydoc3, python3, and python3-config
         </seg>
         <seg>
           libpython&python-minor;.so and libpython3.so
@@ -166,7 +172,7 @@
         </seg>
 @y
         <seg>
-          2to3, idle3, pip3, pydoc3, python3, python3-config, pyvenv
+          2to3, idle3, pip3, pydoc3, python3, python3-config
         </seg>
         <seg>
           libpython&python-minor;.so, libpython3.so

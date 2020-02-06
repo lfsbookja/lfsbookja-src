@@ -413,6 +413,22 @@
           </para>
 @z
 
+@x libctf
+          <para>The Compat ANSI-C Type Format debugging support library</para>
+@y
+          <para>
+          Compat ANSI-C Type フォーマットタイプデバッギングサポートライブラリ。
+          </para>
+@z
+
+@x libctf-nobfd
+          <para>A libctf variant which does not use libbfd functionality</para>
+@y
+          <para>
+          libbfd の機能を利用しない libctf の互換ライブラリ。
+          </para>
+@z
+
 @x libopcodes
           <para>A library for dealing with opcodes&mdash;the <quote>readable
           text</quote> versions of instructions for the processor;

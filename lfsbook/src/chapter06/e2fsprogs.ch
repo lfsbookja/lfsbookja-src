@@ -151,18 +151,10 @@
 @z
 
 @x
-    <para>Install the binaries, documentation, and shared libraries:</para>
+    <para>Install the package:</para>
 @y
     <para>
-    実行モジュール、ドキュメント、共有ライブラリをインストールします。
-    </para>
-@z
-
-@x
-    <para>Install the static libraries and headers:</para>
-@y
-    <para>
-    スタティックライブラリとヘッダーファイルをインストールします。
+    &InstallThePackage;
     </para>
 @z
 

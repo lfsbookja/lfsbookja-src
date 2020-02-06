@@ -93,10 +93,9 @@
 @z
 
 @x
-      Now fix a problem introduced by aother package after this version 
-      of gcc was released:
+      Now fix a problem introduced by Glibc-2.31:
 @y
-      gcc の当バージョンがリリースされた後に、関連パッケージにより発生する問題を修正します。
+      Glibc-2.31 により発生する問題を修正します。
 @z
 
 @x

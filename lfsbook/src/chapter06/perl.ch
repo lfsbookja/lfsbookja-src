@@ -140,14 +140,14 @@
     </para>
 @z
 
-@x
-    <note><para>One test fails due to using the most recent version of gdbm.
-    </para></note>
-@y
-    <note><para>
-    gdbm の最新バージョンを用いていることから、テストが 1 つ失敗します。
-    </para></note>
-@z
+%@x
+%    <note><para>One test fails due to using the most recent version of gdbm.
+%    </para></note>
+%@y
+%    <note><para>
+%    gdbm の最新バージョンを用いていることから、テストが 1 つ失敗します。
+%    </para></note>
+%@z
 
 @x
     <para>Install the package and clean up:</para>
