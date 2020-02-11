@@ -14,9 +14,9 @@
 @z
 
 @x
-<sect1 id="pre-hostreqs" xreflabel="Host System Requirements">
+<sect1 id="ch-partitioning-hostreqs" xreflabel="Host System Requirements">
 @y
-<sect1 id="pre-hostreqs" xreflabel="ホストシステム要件">
+<sect1 id="ch-partitioning-hostreqs" xreflabel="ホストシステム要件">
 @z
 
 @x

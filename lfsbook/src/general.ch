@@ -24,8 +24,8 @@
 <!ENTITY releasedate     "February 1st, 2020">
 @y
 <!ENTITY releasedate     "2020/02/01">
-<!ENTITY jversion        "20200202">
-<!ENTITY jversiond       "20200202">
+<!ENTITY jversion        "20200211">
+<!ENTITY jversiond       "20200211">
 <!ENTITY dir-jversion    "svn-ja">
 <!ENTITY dir-jversiond   "svn-sysdja">
 @z

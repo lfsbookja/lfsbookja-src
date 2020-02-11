@@ -20,11 +20,11 @@
 @z
 
 @x
-  <indexterm zone="ch-scripts-clock">
+  <indexterm zone="ch-config-clock">
     <primary sortas="d-clock">clock</primary>
   <secondary>configuring</secondary></indexterm>
 @y
-  <indexterm zone="ch-scripts-clock">
+  <indexterm zone="ch-config-clock">
     <primary sortas="d-clock">clock</primary>
   <secondary>設定</secondary></indexterm>
 @z

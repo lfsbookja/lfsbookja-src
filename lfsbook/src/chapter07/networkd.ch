@@ -20,11 +20,11 @@
 @z
 
 @x
-  <indexterm zone="ch-scripts-network">
+  <indexterm zone="ch-config-network">
     <primary sortas="d-network">network</primary>
   <secondary>configuring</secondary></indexterm>
 @y
-  <indexterm zone="ch-scripts-network">
+  <indexterm zone="ch-config-network">
     <primary sortas="d-network">network</primary>
   <secondary>設定</secondary></indexterm>
 @z
@@ -321,15 +321,11 @@
 @z
 
 @x
-    <indexterm zone="ch-scripts-hostname">
       <primary sortas="d-hostname">hostname</primary>
       <secondary>configuring</secondary>
-    </indexterm>
 @y
-    <indexterm zone="ch-scripts-hostname">
       <primary sortas="d-hostname">hostname</primary>
       <secondary>設定</secondary>
-    </indexterm>
 @z
 
 @x

@@ -20,12 +20,12 @@
 @z
 
 @x
-  <indexterm zone="ch-scripts-usage">
+  <indexterm zone="ch-config-usage">
     <primary sortas="a-Bootscripts">Bootscripts</primary>
     <secondary>usage</secondary>
   </indexterm>
 @y
-  <indexterm zone="ch-scripts-usage">
+  <indexterm zone="ch-config-usage">
     <primary sortas="a-Bootscripts">ブートスクリプト</primary>
     <secondary>利用方法</secondary>
   </indexterm>
@@ -478,12 +478,12 @@
 @z
 
 @x
-    <indexterm zone="ch-scripts-clock">
-      <primary sortas="d-scripts-setclock">setclock</primary>
+    <indexterm zone="ch-config-clock">
+      <primary sortas="d-setclock">setclock</primary>
     <secondary>configuring</secondary></indexterm>
 @y
-    <indexterm zone="ch-scripts-clock">
-      <primary sortas="d-scripts-setclock">setclock</primary>
+    <indexterm zone="ch-config-clock">
+      <primary sortas="d-setclock">setclock</primary>
     <secondary>設定</secondary></indexterm>
 @z
 
@@ -587,15 +587,11 @@
 @z
 
 @x
-  <indexterm zone="ch-scripts-console">
     <primary sortas="d-console">console</primary>
     <secondary>configuring</secondary>
-  </indexterm>
 @y
-  <indexterm zone="ch-scripts-console">
     <primary sortas="d-console">console</primary>
     <secondary>設定</secondary>
-  </indexterm>
 @z
 
 @x
@@ -870,15 +866,11 @@
 @z
 
 @x
-    <indexterm zone="ch-scripts-createfiles">
       <primary sortas="d-createfiles">File creation at boot</primary>
       <secondary>configuring</secondary>
-    </indexterm>
 @y
-    <indexterm zone="ch-scripts-createfiles">
       <primary sortas="d-createfiles">File creation at boot</primary>
       <secondary>設定</secondary>
-    </indexterm>
 @z
 
 @x
@@ -904,15 +896,11 @@
 @z
 
 @x
-    <indexterm zone="ch-scripts-sysklogd">
       <primary sortas="d-sysklogd">sysklogd</primary>
       <secondary>configuring</secondary>
-    </indexterm>
 @y
-    <indexterm zone="ch-scripts-sysklogd">
       <primary sortas="d-sysklogd">sysklogd</primary>
       <secondary>設定</secondary>
-    </indexterm>
 @z
 
 @x

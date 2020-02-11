@@ -31,21 +31,21 @@
 @z
 
 @x
-       <para><xref linkend="ch-scripts-network" role="."/></para>
+       <para><xref linkend="ch-config-network" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-network" role=""/></para>
+       <para><xref linkend="ch-config-network" role=""/></para>
 @z
 
 @x
-       <para><xref linkend="ch-scripts-hostname" role="."/></para>
+       <para><xref linkend="ch-config-hostname" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-hostname" role=""/></para>
+       <para><xref linkend="ch-config-hostname" role=""/></para>
 @z
 
 @x
-       <para><xref linkend="ch-scripts-hosts" role="."/></para>
+       <para><xref linkend="ch-config-hosts" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-hosts" role=""/></para>
+       <para><xref linkend="ch-config-hosts" role=""/></para>
 @z
 
 @x
@@ -58,15 +58,15 @@
 @z
 
 @x
-       <para><xref linkend="ch-scripts-udev" role="."/></para>
+       <para><xref linkend="ch-config-udev" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-udev" role=""/></para>
+       <para><xref linkend="ch-config-udev" role=""/></para>
 @z
 
 @x
-       <para><xref linkend="ch-scripts-symlinks" role="."/></para>
+       <para><xref linkend="ch-config-symlinks" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-symlinks" role=""/></para>
+       <para><xref linkend="ch-config-symlinks" role=""/></para>
 @z
 
 @x
@@ -78,15 +78,15 @@
 @z
 
 @x
-       <para><xref linkend="ch-scripts-clock" role="."/></para>
+       <para><xref linkend="ch-config-clock" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-clock" role=""/></para>
+       <para><xref linkend="ch-config-clock" role=""/></para>
 @z
 
 @x
-       <para><xref linkend="ch-scripts-console" role="."/></para>
+       <para><xref linkend="ch-config-console" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-console" role=""/></para>
+       <para><xref linkend="ch-config-console" role=""/></para>
 @z
 
 @x
@@ -99,15 +99,15 @@
 @z
 
 @x
-       <para><xref linkend="ch-scripts-locale" role="."/></para>
+       <para><xref linkend="ch-config-locale" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-locale" role=""/></para>
+       <para><xref linkend="ch-config-locale" role=""/></para>
 @z
 
 @x
-       <para><xref linkend="ch-scripts-inputrc" role="."/></para>
+       <para><xref linkend="ch-config-inputrc" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-inputrc" role=""/></para>
+       <para><xref linkend="ch-config-inputrc" role=""/></para>
 @z
 
 @x
@@ -119,7 +119,7 @@
 @z
 
 @x
-       <para><xref linkend="ch-scripts-systemd-custom" role="."/></para>
+       <para><xref linkend="ch-config-systemd-custom" role="."/></para>
 @y
-       <para><xref linkend="ch-scripts-systemd-custom" role=""/></para>
+       <para><xref linkend="ch-config-systemd-custom" role=""/></para>
 @z

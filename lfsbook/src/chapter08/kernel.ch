@@ -256,14 +256,14 @@
     <para>If using kernel modules, module configuration in <filename
     class="directory">/etc/modprobe.d</filename> may be required.
     Information pertaining to modules and kernel configuration is
-    located in <xref linkend="ch-scripts-udev"/> and in the kernel
+    located in <xref linkend="ch-config-udev"/> and in the kernel
     documentation in the <filename
     class="directory">linux-&linux-version;/Documentation</filename> directory.
     Also, <filename>modprobe.d(5)</filename> may be of interest.</para>
 @y
     <para>
     カーネルモジュールを利用する場合 <filename class="directory">/etc/modprobe.d</filename> ディレクトリ内での設定を必要とします。
-    モジュールやカーネル設定に関する情報は <xref linkend="ch-scripts-udev"/>や <filename
+    モジュールやカーネル設定に関する情報は <xref linkend="ch-config-udev"/>や <filename
     class="directory">linux-&linux-version;/Documentation</filename> ディレクトリにあるカーネルドキュメントを参照してください。
     また <filename>modprobe.d(5)</filename> も有用です。
     </para>

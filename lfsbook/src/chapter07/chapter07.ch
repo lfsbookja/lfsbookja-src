@@ -14,9 +14,9 @@
 @z
 
 @x
-<chapter id="chapter-bootscripts" xreflabel="Chapter&nbsp;7">
+<chapter id="chapter-config" xreflabel="Chapter&nbsp;7">
 @y
-<chapter id="chapter-bootscripts" xreflabel="第&nbsp;7&nbsp;章">
+<chapter id="chapter-config" xreflabel="第&nbsp;7&nbsp;章">
 @z
 
 @x

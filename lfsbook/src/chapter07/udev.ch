@@ -20,12 +20,12 @@
 @z
 
 @x
-  <indexterm zone="ch-scripts-udev">
+  <indexterm zone="ch-config-udev">
     <primary sortas="a-Udev">Udev</primary>
     <secondary>usage</secondary>
   </indexterm>
 @y
-  <indexterm zone="ch-scripts-udev">
+  <indexterm zone="ch-config-udev">
     <primary sortas="a-Udev">Udev</primary>
     <secondary>利用方法</secondary>
   </indexterm>
@@ -668,8 +668,8 @@
       names being stable. Instead, create your own rules that make symlinks with
       stable names based on some stable attributes of the device, such as a
       serial number or the output of various *_id utilities installed by Udev.
-      See <xref linkend="ch-scripts-symlinks"/> and
-      <xref linkend="ch-scripts-network"/> for examples.</para>
+      See <xref linkend="ch-config-symlinks"/> and
+      <xref linkend="ch-config-network"/> for examples.</para>
 @y
       <para>
       これは Udev の設計仕様に従って発生するもので、uevent の扱いとモジュールのロードが平行して行われるためです。
@@ -677,7 +677,7 @@
       これを<quote>固定的に</quote>することはできません。
       ですからカーネルがデバイス名を固定的に定めるようなことを求めるのではなく、シンボリックリンクを用いた独自の生成規則を作り出して、そのデバイスの固定的な属性を用いた固定的な名前を用いる方法を取ります。
       固定的な属性とは例えば、Udev によってインストールされるさまざまな *_id という名のユーティリティが出力するシリアル番号などです。
-      設定例については <xref linkend="ch-scripts-symlinks"/>や <xref linkend="ch-scripts-network"/>を参照してください。
+      設定例については <xref linkend="ch-config-symlinks"/>や <xref linkend="ch-config-network"/>を参照してください。
       </para>
 @z
 

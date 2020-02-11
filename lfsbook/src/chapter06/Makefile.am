@@ -24,7 +24,6 @@ CHANGE_FILES = \
 	coreutils.ch         \
 	createfiles.ch       \
 	creatingdirs.ch      \
-	db.ch                \
 	dbus.ch              \
 	diffutils.ch         \
 	e2fsprogs.ch         \
@@ -64,7 +63,6 @@ CHANGE_FILES = \
 	man-db.ch            \
 	man-pages.ch         \
 	meson.ch             \
-	module-init-tools.ch \
 	mpc.ch               \
 	mpfr.ch              \
 	ncurses.ch           \
@@ -74,7 +72,6 @@ CHANGE_FILES = \
 	perl.ch              \
 	pkgconfig.ch         \
 	pkgmgt.ch            \
-	popt.ch              \
 	procps.ch            \
 	psmisc.ch            \
 	python.ch            \

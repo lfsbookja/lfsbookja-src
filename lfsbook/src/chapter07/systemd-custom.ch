@@ -20,11 +20,11 @@
 @z
 
 @x
-  <indexterm zone="ch-scripts-systemd-custom">
+  <indexterm zone="ch-config-systemd-custom">
     <primary sortas="e-Systemd">Systemd Customization</primary>
   </indexterm>
 @y
-  <indexterm zone="ch-scripts-systemd-custom">
+  <indexterm zone="ch-config-systemd-custom">
     <primary sortas="e-Systemd">Systemd のカスタマイズ</primary>
   </indexterm>
 @z

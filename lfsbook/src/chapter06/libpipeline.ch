@@ -42,10 +42,10 @@
 
 @x PKG_CONFIG_PATH
           <para>Use pkg-config to obtain the location of the test
-          library metadata built in <xref linkend="ch-tools-check"/>.</para>
+          library metadata built in <xref linkend="ch-system-check"/>.</para>
 @y
           <para>
-          この環境変数は <xref linkend="ch-tools-check"/>にて構築したテストライブラリのメタデータを収容するディレクトリを指定するものです。
+          この環境変数は <xref linkend="ch-system-check"/>にて構築したテストライブラリのメタデータを収容するディレクトリを指定するものです。
           </para>
 @z
 

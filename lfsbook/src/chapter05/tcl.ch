@@ -86,7 +86,7 @@
     Universal Time (UTC), but only
     for the duration of the test suite run. This ensures that the clock tests
     are exercised correctly. Details on the <envar>TZ</envar> environment
-    variable are provided in <xref linkend="chapter-bootscripts"/>.</para>
+    variable are provided in <xref linkend="chapter-config"/>.</para>
 @y
     <para>
     Tcl のテストスイートは、特定のホスト環境において失敗することがありますが、その原因はよく分かっていません。
@@ -94,7 +94,7 @@
     <parameter>TZ=UTC</parameter> はタイムゾーンを協定世界時間 (Coordinated Universal Time; UTC) としても知られる時間に設定します。
     ただしこれはテストスイートを実行する時だけの設定です。
     こうしておけば時刻に関するテストが正しく処理されます。
-    環境変数 <envar>TZ</envar> については <xref linkend="chapter-bootscripts"/>にて詳しく説明しています。
+    環境変数 <envar>TZ</envar> については <xref linkend="chapter-config"/>にて詳しく説明しています。
     </para>
 @z
 

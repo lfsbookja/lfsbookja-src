@@ -237,7 +237,7 @@
     <filename class="directory">/tools/bin</filename> is at the head of the
     list. If the <envar>PATH</envar> is wrong it could mean that you are not
     logged in as user <systemitem class="username">lfs</systemitem> or that
-    something went wrong back in <xref linkend="ch-tools-settingenviron"
+    something went wrong back in <xref linkend="ch-preps-settingenviron"
     role="."/></para>
 @y
     <para>
@@ -251,7 +251,7 @@
     <command>echo $PATH</command> を実行して、実行パスリストの先頭が <filename class="directory">/tools/bin</filename> であるかどうか確認します。
     <envar>PATH</envar> が間違っていたなら、実はあなたは <systemitem
     class="username">lfs</systemitem> ユーザーでログインしていないのかもしれませんし <xref
-    linkend="ch-tools-settingenviron" role=""/>での作業に間違いがあったのかもしれません。
+    linkend="ch-preps-settingenviron" role=""/>での作業に間違いがあったのかもしれません。
     </para>
 @z
 

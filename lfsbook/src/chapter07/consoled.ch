@@ -20,12 +20,12 @@
 @z
 
 @x
-  <indexterm zone="ch-scripts-console">
+  <indexterm zone="ch-config-console">
     <primary sortas="d-console">console</primary>
     <secondary>configuring</secondary>
   </indexterm>
 @y
-  <indexterm zone="ch-scripts-console">
+  <indexterm zone="ch-config-console">
     <primary sortas="d-console">console</primary>
     <secondary>設定</secondary>
   </indexterm>

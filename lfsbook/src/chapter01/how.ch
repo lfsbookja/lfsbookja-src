@@ -166,14 +166,14 @@
 
 @x
   <para>To finish the installation, the basic system configuration is set up in
-  <xref linkend="chapter-bootscripts"/>, and the kernel and boot loader are set
+  <xref linkend="chapter-config"/>, and the kernel and boot loader are set
   up in <xref linkend="chapter-bootable"/>. <xref linkend="chapter-finalizing"/>
   contains information on continuing the LFS experience beyond this book.
   After the steps in this book have been implemented, the computer will be
   ready to reboot into the new LFS system.</para>
 @y
   <para>
-  インストールの仕上げとして<xref linkend="chapter-bootscripts"/>にてベースシステムの設定を行い、<xref linkend="chapter-bootable"/>にてカーネルとブートローダーを設定します。
+  インストールの仕上げとして<xref linkend="chapter-config"/>にてベースシステムの設定を行い、<xref linkend="chapter-bootable"/>にてカーネルとブートローダーを設定します。
   <xref linkend="chapter-finalizing"/>では LFS システム構築経験を踏まえて、その先に進むための情報を示します。
   本書に示す作業をすべて実施すれば、新たな LFS システムを起動することが出来ます。
   </para>

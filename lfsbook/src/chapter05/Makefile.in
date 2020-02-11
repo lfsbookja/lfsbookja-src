@@ -242,18 +242,15 @@ CHANGE_FILES = \
 	coreutils.ch           \
 	dejagnu.ch             \
 	diffutils.ch           \
-	e2fsprogs.ch           \
 	expect.ch              \
 	file.ch                \
 	findutils.ch           \
-	flex.ch                \
 	gawk.ch                \
 	gcc-pass1.ch           \
 	gcc-pass2.ch           \
 	generalinstructions.ch \
 	gettext.ch             \
 	glibc.ch               \
-	gmp.ch                 \
 	grep.ch                \
 	gzip.ch                \
 	introduction.ch        \
@@ -261,7 +258,6 @@ CHANGE_FILES = \
 	linux-headers.ch       \
 	m4.ch                  \
 	make.ch                \
-	mpfr.ch                \
 	ncurses.ch             \
 	patch.ch               \
 	perl.ch                \

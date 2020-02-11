@@ -95,12 +95,12 @@
 
 @x
       <para>The build instructions assume that the <xref
-      linkend='pre-hostreqs'/>, including symbolic links, have been set
-      properly:</para>
+      linkend='ch-partitioning-hostreqs'/>, including symbolic links, have
+      been set properly:</para>
 @y
       <para>
       ビルドにあたっては <xref
-      linkend='pre-hostreqs'/>にて示す要件やシンボリックリンクが、正しくインストールされていることを前提とします。
+      linkend='ch-partitioning-hostreqs'/>にて示す要件やシンボリックリンクが、正しくインストールされていることを前提とします。
       </para>
 @z
 

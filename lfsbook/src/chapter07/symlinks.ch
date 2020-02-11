@@ -416,7 +416,7 @@
 @z
 
 @x
-    <para>As explained in <xref linkend="ch-scripts-udev"/>, the order in
+    <para>As explained in <xref linkend="ch-config-udev"/>, the order in
     which devices with the same function appear in
     <filename class="directory">/dev</filename> is essentially random.
     E.g., if you have a USB web camera and a TV tuner, sometimes
@@ -426,15 +426,15 @@
     For all classes of hardware except sound cards and network cards, this is
     fixable by creating Udev rules for custom persistent symlinks.
     The case of network cards is covered separately in
-    <xref linkend="ch-scripts-network"/>, and sound card configuration can
+    <xref linkend="ch-config-network"/>, and sound card configuration can
     be found in <ulink url="&blfs-book;postlfs/devices.html">BLFS</ulink>.</para>
 @y
     <para>
-    <xref linkend="ch-scripts-udev"/>で説明したように、<filename
+    <xref linkend="ch-config-udev"/>で説明したように、<filename
     class="directory">/dev</filename> 内に同一機能を有するデバイスがあったとすると、その検出順は本質的にランダムです。
     例えば USB 接続のウェブカメラと TV チューナーがあったとして、<filename>/dev/video0</filename> がウェブカメラを、また <filename>/dev/video1</filename> がチューナーをそれぞれ参照していたとしても、システム起動後はその順が逆になることがあります。
     サウンドカードやネットワークカードを除いた他のハードウェアであれば、Udev ルールを適切に記述することで、固定的なシンボリックリンクを作り出すことができます。
-    ネットワークカードについては、別途 <xref linkend="ch-scripts-network"/>にて説明しています。
+    ネットワークカードについては、別途 <xref linkend="ch-config-network"/>にて説明しています。
     またサウンドカードの設定方法は <ulink
     url="&blfs-book;postlfs/devices.html">BLFS</ulink> にて説明しています。
     </para>
