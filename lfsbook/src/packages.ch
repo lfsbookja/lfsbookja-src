@@ -26,9 +26,9 @@
 @z
 
 @x
-<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 8.7 SBU with tests)">
+<!ENTITY automake-ch6-sbu "less than 0.1 SBU (about 8.1 SBU with tests)">
 @y
-<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テスト込みで約 8.7 SBU)">
+<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テスト込みで約 8.1 SBU)">
 @z
 
 @x
@@ -44,9 +44,9 @@
 @z
 
 @x
-<!ENTITY check-ch5-sbu "0.1 SBU (about 3.7 SBU with tests)">
+<!ENTITY check-ch5-sbu "0.1 SBU (about 3.5 SBU with tests)">
 @y
-<!ENTITY check-ch5-sbu "0.1 SBU (テスト込みで約 3.7 SBU)">
+<!ENTITY check-ch5-sbu "0.1 SBU (テスト込みで約 3.5 SBU)">
 @z
 
 @x
@@ -56,9 +56,9 @@
 @z
 
 @x
-<!ENTITY gcc-ch6-sbu "91 SBU (with tests)">
+<!ENTITY gcc-ch6-sbu "88 SBU (with tests)">
 @y
-<!ENTITY gcc-ch6-sbu "91 SBU (テスト込み)">
+<!ENTITY gcc-ch6-sbu "88 SBU (テスト込み)">
 @z
 
 @x

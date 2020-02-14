@@ -54,6 +54,40 @@
 @z
 
 @x
+      <para>2020-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to ncurses-6.2. Fixes
+          <ulink url="&lfs-ticket-root;4596">#4596</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.05. Fixes
+          <ulink url="&lfs-ticket-root;4595">#4595</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.5.3.tar.xz. Fixes
+          <ulink url="&lfs-ticket-root;4592">#4592</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ncurses-6.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4596">#4596</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.05 へのアップデート。
+          <ulink url="&lfs-ticket-root;4595">#4595</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.5.3.tar.xz へのアップデート。
+          <ulink url="&lfs-ticket-root;4592">#4592</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-27</para>
       <itemizedlist>
         <listitem>

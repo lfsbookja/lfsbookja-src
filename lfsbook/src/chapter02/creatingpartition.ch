@@ -32,11 +32,11 @@
 @z
 
 @x
-  <para>A minimal system requires a partition of around 6 gigabytes (GB).
+  <para>A minimal system requires a partition of around 10 gigabytes (GB).
   This is enough to store all the source tarballs and compile the packages.
   However, if the LFS system is intended to be the primary Linux system,
   additional software will probably be installed which will require additional
-  space. A 20 GB partition is a reasonable size to provide for growth.  The LFS
+  space. A 30 GB partition is a reasonable size to provide for growth.  The LFS
   system itself will not take up this much room.  A large portion of this
   requirement is to provide sufficient free temporary storage as well as
   for adding additional capabilities after LFS is complete. Additionally, compiling
@@ -44,10 +44,10 @@
   package is installed.</para>
 @y
   <para>
-  最小限のシステムであれば 6 GB 程度のディスク容量があれば十分です。
+  最小限のシステムであれば 10 GB 程度のディスク容量があれば十分です。
   これだけあればパッケージやソースの収容に十分で、そこでコンパイル作業を行っていくことができます。
   しかし主要なシステムとして LFS を構築するなら、さらにソフトウェアをインストールすることになるはずなので、さらなる容量が必要となります。
-  20 GB ほどのパーティションがあれば、増量していくことを考えても十分な容量でしょう。
+  30 GB ほどのパーティションがあれば、増量していくことを考えても十分な容量でしょう。
   LFS システムそのものがそれだけの容量を要するわけではありません。
   これだけの容量は十分なテンポラリ領域のために必要となるものであり、また LFS の完成後に機能追加していくためのものです。
   パッケージをインストールした後はテンポラリ領域は開放されますが、コンパイルの間は多くの領域を利用します。
