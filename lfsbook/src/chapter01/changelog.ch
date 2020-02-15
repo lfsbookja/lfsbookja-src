@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2020-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.5.2. Fixes
+          <ulink url="&lfs-ticket-root;4597">#4597</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bison-3.5.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4597">#4597</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-02-13</para>
       <itemizedlist>
         <listitem>

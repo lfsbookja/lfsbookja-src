@@ -8,24 +8,24 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version         "SVN-20200213">
+<!ENTITY version         "SVN-20200214">
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version         "SVN-20200213">
+<!ENTITY version         "SVN-20200214">
 @z
 
 @x
-<!ENTITY versiond        "20200201-systemd">
+<!ENTITY versiond        "20200214-systemd">
 @y
-<!ENTITY versiond        "20200201-systemd">
+<!ENTITY versiond        "20200214-systemd">
 @z
 
 @x
-<!ENTITY releasedate     "February 13th, 2020">
+<!ENTITY releasedate     "February 14th, 2020">
 @y
-<!ENTITY releasedate     "2020/02/13">
-<!ENTITY jversion        "20200214">
-<!ENTITY jversiond       "20200214">
+<!ENTITY releasedate     "2020/02/14">
+<!ENTITY jversion        "20200215">
+<!ENTITY jversiond       "20200215">
 <!ENTITY dir-jversion    "svn-ja">
 <!ENTITY dir-jversiond   "svn-sysdja">
 @z
