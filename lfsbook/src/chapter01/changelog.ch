@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2020-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Adjust the kernel configuration for systemd to adapt
+          to reorganization changes in Linux 5.5.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-02-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd に対応してカーネル設定を調整。
+          これにより Linux 5.5 における構成変更に対応する。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-02-14</para>
       <itemizedlist>
         <listitem>
