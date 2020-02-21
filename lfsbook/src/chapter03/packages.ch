@@ -690,6 +690,15 @@
         <para>&Homepage;: <ulink url="&vim-home;"/></para>
         <para>&Download;: <ulink url="&vim-url;"/></para>
 @z
+@x
+            The version of vim changes daily. The get the latest version, go to
+            <ulink url="https://github.com/vim/vim/releases">
+            https://github.com/vim/vim/releases</ulink>.
+@y
+            vim のバージョンは日々更新されます。
+            最新版を入手するには <ulink url="https://github.com/vim/vim/releases">
+            https://github.com/vim/vim/releases</ulink> にアクセスしてください。
+@z
 
 @x XML::Parser
         <para>Home page: <ulink url="&xml-parser-home;"/></para>

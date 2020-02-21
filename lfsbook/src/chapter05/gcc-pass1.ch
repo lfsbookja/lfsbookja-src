@@ -163,6 +163,17 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
+@x --with-glibc-version=2.11
+          <para>This option ensures the package will be compatible with the host's
+          version of glibc.  It is set to the minimum glibc requirement 
+          specified in the <xref linkend="ch-partitioning-hostreqs"/>.</para>
+@y
+          <para>
+          このオプションは、ホストにある glibc とこのパッケージが互換性を持つようにします。
+          <xref linkend="ch-partitioning-hostreqs"/> に示す glibc の要件を最低限満たすものです。
+          </para>
+@z
+
 @x --with-newlib
           <para>Since a working C library is not yet available, this ensures
           that the inhibit_libc constant is defined when building libgcc. This prevents
