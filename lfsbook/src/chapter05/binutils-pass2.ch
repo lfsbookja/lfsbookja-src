@@ -82,15 +82,26 @@
 @z
 
 @x --with-sysroot
-          <para>The sysroot feature enables the linker to find shared objects
-          which are required by other shared objects explicitly included on the
-          linker's command line. Without this, some packages may not build
-          successfully on some hosts.</para>
+          <para>This defines a default (non-existent) sysroot directory
+          <filename class="directory">/tools/$LFS_TGT/sys-root</filename>.
+          It is useful when looking for shared objects which are required by
+          other shared objects explicitly included on the linker's command
+          line. Those objects are searched into the directories listed in
+          <filename>&lt;sysroot&gt;/etc/ld.so.conf</filename>, and failing
+          that, into the linker search path, which is right. If this switch
+          is not given, <filename>/etc/ld.so.conf</filename> on the host
+          is used, that is, programs may be linked to libraries on
+          the host, which we want to avoid.</para>
 @y
           <para>
-          sysroot 機能は、特定の共有オブジェクトを必要とする他の共有オブジェクトを、リンカーが見つけ出せるようにする機能です。
-          その場合には明示的にリンカーのコマンドラインにて、共有オブジェクトを指定する必要があります。
-          コマンドラインでのその指定がない場合には、特定のホストにてパッケージビルドに失敗するものが出てきます。
+          これはデフォルトの（存在していない）sysroot ディレクトリ <filename
+          class="directory">/tools/$LFS_TGT/sys-root</filename> を定義するものです。
+          これは、リンカーのコマンドライン上に指定された共有オブジェクトに対し、そこから必要とされる共有オブジェクトを見つけ出せるようになります。
+          共有オブジェクトは <filename>&lt;sysroot&gt;/etc/ld.so.conf</filename> に設定されたディレクトリ内から検索され、
+          検索に失敗した場合はリンカーの検索パスが検索されます。
+          この動きは合理的なものです。
+          このスイッチが仮に設定されていなかったら、ホスト上の <filename>/etc/ld.so.conf</filename> が用いられます。
+          つまりホスト上のライブラリにリンクされるプログラムが出てくることとなり、避けなければならないことです。
           </para>
 @z
 

@@ -91,11 +91,12 @@
 @z
 
 @x --disable-libstdcxx-threads
-          <para>Since we have not yet built the C threads library, the C++
-          one cannot be built either.</para>
+          <para>Since gcc-pass1 is built without thread support, the C++
+          thread library cannot be built either.</para>
 @y
           <para>
-          C スレッドライブラリはまだ生成していないため、C++ スレッドライブラリも生成しないようにします。
+          gcc 1 回めはスレッドサポートなしにビルドされます。
+          したがって C++ スレッドライブラリも生成できません。
           </para>
 @z
 

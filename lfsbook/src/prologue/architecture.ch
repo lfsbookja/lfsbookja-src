@@ -24,7 +24,7 @@
 and x86_64 (64-bit) CPUs.  On the other hand, the instructions in this book are
 also known to work, with some modifications, with the Power PC and ARM CPUs. To
 build a system that utilizes one of these CPUs, the main prerequisite, in
-addition to those on the next few pages, is an existing Linux system such as an
+addition to those on the next page, is an existing Linux system such as an
 earlier LFS installation, Ubuntu, Red Hat/Fedora, SuSE, or other distribution
 that targets the architecture that you have. Also note that a 32-bit
 distribution can be installed and used as a host system on a 64-bit AMD/Intel
@@ -39,94 +39,65 @@ Power PC や ARM については、本書の手順を多少修正することで
 @z
 
 @x
-<para>Some other facts about 64-bit systems need to be added here. When
-compared to a 32-bit system, the sizes of executable programs are slightly
-larger and the execution speeds of arbitrary programs are only slightly faster.
-For example, in a test build of LFS-6.5 on a Core2Duo CPU based system, the
-following statistics were measured:</para>
+<para>For building LFS, the gain of building on a 64-bit system
+compared to a 32-bit system is minimal.
+For example, in a test build of LFS-9.1 on a Core i7-4790 CPU based system,
+using 4 cores, the following statistics were measured:</para>
 @y
 <para>
-64 ビットシステムにて明らかなことをここに記しておきます。
-32 ビットシステムに比べると、実行プログラムのサイズは多少大きくなり、どのようなプログラムでも実行速度は若干速くなります。
-例えば Core2Duo CPU をベースとするシステム上に、LFS 6.5 をビルドしてみたところ、以下のような情報が得られました。
+LFS の構築において 64 ビットシステムを用いることは 32 ビットシステムを用いた場合に比べて大きな効果はありません。
+たとえば Core i7-4790 CPU 上において、4 コアを使って試しに LFS-9.1 をビルドしてみたところ、以下のような情報が得られました。
 </para>
 @z
 
 @x
 <screen><computeroutput>Architecture Build Time     Build Size 
-32-bit       198.5 minutes  648 MB 
-64-bit       190.6 minutes  709 MB</computeroutput></screen>
+32-bit       239.9 minutes  3.6 GB
+64-bit       233.2 minutes  4.4 GB</computeroutput></screen>
 @y
 <screen><computeroutput>アーキテクチャー ビルド時間  ビルドサイズ
-32 ビット        198.5 分    648 MB 
-64 ビット        190.6 分    709 MB</computeroutput></screen>
+32 ビット        239.9 分    3.6 GB 
+64 ビット        233.2 分    4.4 GB</computeroutput></screen>
 @z
 
 @x
-<para>As you can see, the 64-bit build is only 4% faster and is 9% larger than
-the 32-bit build.  The gain from going to a 64-bit system is relatively
-minimal. Of course, if you have more than 4GB of RAM or want to manipulate
-data that exceeds 4GB, the advantages of a 64-bit system are substantial.</para>
+<para>As you can see, on the same hardware, the 64-bit build is only 3% faster
+and is 22% larger than the 32-bit build. If you plan to use LFS as a LAMP
+server, or a firewall, a 32-bit CPU may be largely sufficient. On the other
+hand, several packages in BLFS now need more that 4GB of RAM to be built
+and/or to run, so that if you plan to use LFS as a desktop, the LFS authors
+recommend building on a 64-bit system.</para>
 @y
 <para>
-ご存知かと思いますが 64 ビットによってビルドを行っても、32 ビットのときのビルドに比べて 4% 早くなるだけで 9% は大きなものになります。
-つまり 64ビットシステムによって得られることは比較的小さいということです。
-もちろん 4GB 以上の RAM を利用していたり、4GB を超えるデータを取り扱いたいならば、64 ビットシステムを用いるメリットが大きいのは間違いありません。
+ご存知かと思いますが、同一ハードウェア上にて 64 ビットによりビルドを行っても、32 ビットのときのビルドに比べて 3% 早くなるだけで 22% は大きなものになります。
+仮に LFS を使って LAMP サーバーやファイアーウォールを実現しようとする場合、32 ビット CPU を用いても十分機能するかもしれません。
+一方 BLFS にあるパッケージの中には、ビルド時や実行時に 4GB 以上の RAM を必要としているものもあります。
+このため LFS をデスクトップ環境に利用するなら、64 ビットシステムにおいてビルドすることをお勧めします。
 </para>
 @z
 
 @x
-<note><para>The above discussion is only appropriate when comparing 
-builds on the same hardware.  Modern 64-bit systems are considerably
-faster than older 64-bit systems and the LFS authors recommend building
-on a 64-bit system when given a choice.</para></note>
-@y
-<note><para>
-上の説明は、同一のハードウェア上に構築した場合の話です。
-最近の 64 ビットシステムは、かつての 64 ビットシステムに比べて格段に速くなっています。
-したがって LFS 開発者も、可能なら 64 ビットシステム上においてビルドしていくことを推奨しています。
-</para></note>
-@z
-
-@x
-<para>The default 64-bit build that results from LFS is considered a "pure"
-64-bit system. That is, it supports 64-bit executables only. Building a
-"multi-lib" system requires compiling many applications twice, once for a
-32-bit system and once for a 64-bit system. This is not directly supported in
-LFS because it would interfere with the educational objective of providing the
-instructions needed for a straightforward base Linux system.  You can refer to
-the <ulink url="http://trac.clfs.org/">Cross Linux From Scratch</ulink>
-project for this advanced topic.</para>
+<para>The default 64-bit build that results from LFS is considered a
+<quote>pure</quote> 64-bit system. That is, it supports 64-bit executables
+only. Building a <quote>multi-lib</quote> system requires compiling many
+applications twice, once for a 32-bit system and once for a 64-bit system.
+This is not directly supported in LFS because it would interfere with the
+educational objective of providing the instructions needed for a
+straightforward base Linux system. Some LFS/BLFS editors maintain a fork
+of LFS for multilib, which is accessible at <ulink
+url="http://www.linuxfromscratch.org/~thomas/multilib/index.html"/>. But it
+is an advanced topic.</para>
 @y
 <para>
-LFS の手順に従って作り出す 64 ビットシステムは、"純粋な"64 ビットシステムと言えます。
+LFS の手順に従って作り出す 64 ビットシステムは、<quote>純粋な</quote>64 ビットシステムと言えます。
 つまりそのシステムは 64 ビット実行モジュールのみをサポートするということです。
-"複数のライブラリ" によるシステムをビルドするのなら、多くのアプリケーションを二度ビルドしなければなりません。
+<quote>複数のライブラリ</quote>によるシステムをビルドするのなら、多くのアプリケーションを二度ビルドしなければなりません。
 一度は 32 ビット用であり、一度は 64 ビット用です。
-現時点にて本書はこの点をサポートしませんが、後々のリリースに向けて検討中です。
-さしあたりそのような応用的なトピックに関しては <ulink
-url="http://trac.clfs.org/">Cross Linux From Scratch</ulink> プロジェクトを参照してください。
-</para>
-@z
-
-@x
-<para>There is one last comment about 64-bit systems. There are some older
-packages that cannot currently be built in a "pure" 64-bit system or require
-specialized build instructions. Generally, these packages have some embedded
-32-bit specific assembly language instructions that fail when building on a
-64-bit system.  This includes some Xorg drivers for some legacy video cards at
-<ulink url="http://xorg.freedesktop.org/releases/individual/driver/">
-http://xorg.freedesktop.org/releases/individual/driver/</ulink>. Many of these
-problems can be worked around, but may require some specialized procedures or
-patches.</para>
-@y
-<para>
-最後に 64 ビットシステムについてもう一つ述べておきます。
-古いパッケージの中には現時点にて "純粋な" 64 ビットシステム上でビルドできないものがあり、あるいは特別なビルド手順を必要とするものがあります。
-一般的に言えば、そのようなパッケージには 32 ビット固有のアセンブリ言語の命令が含まれるからであり、
-だから 64 ビットシステムでのビルドに失敗するということです。
-例としては <ulink url="http://xorg.freedesktop.org/releases/individual/driver/">
-http://xorg.freedesktop.org/releases/individual/driver/</ulink> にある、古いビデオカードに対応する Xorg ドライバーなどです。
-このような問題はたいていは解消していくことができますが、中には特別なビルド手順やパッチを要するものとなるかもしれません。
+本書ではこの点を直接サポートしていません。
+この理由は、素直な Linux ベースシステムを構築するという LFS の教育的な目的とは合致しないからです。
+LFS/BLFS 編集者の中に、マルチライブラリを行う LFS フォークを構築している方もいます。
+これは <ulink
+url="http://www.linuxfromscratch.org/~thomas/multilib/index.html"/> からアクセスすることができます。
+ただしこれは応用的なトピックです。
 </para>
 @z
