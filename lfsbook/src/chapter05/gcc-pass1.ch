@@ -213,7 +213,7 @@
 @z
 
 @x --with-native-system-header-dir=/tools/include
-          <para>By default GCC searches <filename>/usr/include</filename> for
+          <para>By default, GCC searches <filename>/usr/include</filename> for
           system headers. In conjunction with the sysroot switch, this would
           normally translate to <filename>$LFS/usr/include</filename>. However
           the headers that will be installed in the next two sections will go

@@ -691,7 +691,7 @@
         <para>&Download;: <ulink url="&vim-url;"/></para>
 @z
 @x
-            The version of vim changes daily. The get the latest version, go to
+            The version of vim changes daily. To get the latest version, go to
             <ulink url="https://github.com/vim/vim/releases">
             https://github.com/vim/vim/releases</ulink>.
 @y
