@@ -105,9 +105,12 @@ book: validate profile-html
 
 @TXT@nochunks: validate profile-html
 @TXT@	@echo "Generating non chunked XHTML file..."
-@TXT@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
-@TXT@	  --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
-@TXT@	  stylesheets/lfs-nochunks.xsl $(RENDERTMP)/lfs-html.xml
+@TXT@	$(XSLTPROC) --nonet                                 \
+@TXT@                -stringparam rootid "$(ROOT_ID)"       \
+@TXT@                --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
+@TXT@                stylesheets/lfs-nochunks.xsl           \
+@TXT@                $(RENDERTMP)/lfs-full.xml
+@TXT@#                $(RENDERTMP)/lfs-html2.xml
 
 @TXT@	@echo "Running Tidy..."
 @TXT@	$(TIDY) -config tidy.conf $(BASEDIR)/$(NOCHUNKS_OUTPUT) || true

@@ -32,10 +32,10 @@
 @z
 
 @x
-    <para>Prevent two static libraries from being installed:</para>
+    <para>Prevent a static library from being installed:</para>
 @y
     <para>
-    2 つのスタティックライブラリをインストールしないようにします。
+    スタティックライブラリをインストールしないようにします。
     </para>
 @z
 
@@ -72,9 +72,11 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package and do some cleanup:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    パッケージをインストールし、クリーン処理を行います。
+    </para>
 @z
 
 @x

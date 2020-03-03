@@ -81,8 +81,8 @@
           <ulink url="&lfs-ticket-root;4601">#4601</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to libcap-2.32. Fixes
-          <ulink url="&lfs-ticket-root;4600">#4600</ulink>.</para>
+          <para>[bdubbs] - Update to libcap-2.33. Fixes
+          <ulink url="&lfs-ticket-root;4600">#4608</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-5.5.7. Fixes
@@ -117,8 +117,8 @@
           <ulink url="&lfs-ticket-root;4601">#4601</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - libcap-2.32 へのアップデート。
-          <ulink url="&lfs-ticket-root;4600">#4600</ulink> を Fix に。</para>
+          <para>[bdubbs] - libcap-2.33 へのアップデート。
+          <ulink url="&lfs-ticket-root;4608">#4608</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - linux-5.5.7 へのアップデート。

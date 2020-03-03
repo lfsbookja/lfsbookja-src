@@ -63,10 +63,11 @@
 
 @x --enable-cache-owner=bin
           <para>This makes the system-wide cache files be owned by user
-          bin.</para>
+          <systemitem class="username">bin</systemitem>.</para>
 @y
           <para>
-          システムワイドなキャッシュファイルの所有ユーザーを bin とします。
+          システムワイドなキャッシュファイルの所有ユーザーを <systemitem
+          class="username">bin</systemitem> とします。
           </para>
 @z
 
