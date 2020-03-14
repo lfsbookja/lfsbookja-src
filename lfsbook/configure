@@ -4206,7 +4206,7 @@ $as_echo "found" >&6; }
   fi
 
 
-ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/userconfig.xml src/appendices/Makefile src/chapter01/Makefile src/chapter02/Makefile src/chapter03/Makefile src/chapter04/Makefile src/chapter05/Makefile src/chapter06/Makefile src/chapter07/Makefile src/chapter08/Makefile src/chapter09/Makefile src/prologue/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/Makefile src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/common/Makefile src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo/Makefile src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/highlighting/Makefile src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/html/Makefile src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/lib/Makefile src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling/Makefile src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/xhtml/Makefile src/stylesheets/lfs-xsl/pdf/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/udev-lfs/Makefile src/udev-lfs/contrib/Makefile src/udev-lfs/contrib/debian/Makefile"
+ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/userconfig.xml src/appendices/Makefile src/chapter01/Makefile src/chapter02/Makefile src/chapter03/Makefile src/chapter04/Makefile src/chapter05/Makefile src/chapter06/Makefile src/chapter07/Makefile src/chapter08/Makefile src/chapter09/Makefile src/prologue/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/pdf/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/udev-lfs/Makefile src/udev-lfs/contrib/Makefile src/udev-lfs/contrib/debian/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -4971,14 +4971,6 @@ do
     "src/prologue/Makefile") CONFIG_FILES="$CONFIG_FILES src/prologue/Makefile" ;;
     "src/stylesheets/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/Makefile" ;;
     "src/stylesheets/lfs-xsl/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/Makefile" ;;
-    "src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/Makefile" ;;
-    "src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/common/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/common/Makefile" ;;
-    "src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/fo/Makefile" ;;
-    "src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/highlighting/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/highlighting/Makefile" ;;
-    "src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/html/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/html/Makefile" ;;
-    "src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/lib/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/lib/Makefile" ;;
-    "src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/profiling/Makefile" ;;
-    "src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/xhtml/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-1.78.1/xhtml/Makefile" ;;
     "src/stylesheets/lfs-xsl/pdf/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/pdf/Makefile" ;;
     "src/stylesheets/lfs-xsl/xhtml/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/xhtml/Makefile" ;;
     "src/udev-lfs/Makefile") CONFIG_FILES="$CONFIG_FILES src/udev-lfs/Makefile" ;;

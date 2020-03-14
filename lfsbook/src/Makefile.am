@@ -86,7 +86,6 @@ book: validate profile-html
 	$(MKDIR_P) $(BASEDIR)/stylesheets
 	cp stylesheets/lfs-xsl/*.css $(BASEDIR)/stylesheets
 	pushd $(BASEDIR)/ > /dev/null;                     \
-	sed -i -e "s@../stylesheets@stylesheets@g" *.html; \
 	popd > /dev/null
 
 	$(MKDIR_P) $(BASEDIR)/images
