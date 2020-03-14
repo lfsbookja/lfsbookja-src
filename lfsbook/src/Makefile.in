@@ -691,9 +691,12 @@ book: validate profile-html
 
 @TXT@nochunks: validate profile-html
 @TXT@	@echo "Generating non chunked XHTML file..."
-@TXT@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
-@TXT@	  --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
-@TXT@	  stylesheets/lfs-nochunks.xsl $(RENDERTMP)/lfs-html.xml
+@TXT@	$(XSLTPROC) --nonet                                 \
+@TXT@                -stringparam rootid "$(ROOT_ID)"       \
+@TXT@                --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
+@TXT@                stylesheets/lfs-nochunks.xsl           \
+@TXT@                $(RENDERTMP)/lfs-full.xml
+@TXT@#                $(RENDERTMP)/lfs-html2.xml
 
 @TXT@	@echo "Running Tidy..."
 @TXT@	$(TIDY) -config tidy.conf $(BASEDIR)/$(NOCHUNKS_OUTPUT) || true
@@ -705,8 +708,9 @@ book: validate profile-html
 @TXT@	make $(BASEDIR)/wget-list $(BASEDIR)/md5sums
 
 @TXT@txt: nochunks
-@TXT@	$(LYNX) -width=44 -dump $(BASEDIR)/$(NOCHUNKS_OUTPUT) > ../$(NOCHUNKS_NAME).txt
-@TXT@	sed -i -E "s@file\:///[A-Za-z/\-]+\.html@$(URLTOP)/$(NOCHUNKS_NAME)-nochunks.html@g" ../$(NOCHUNKS_NAME).txt
+@TXT@	$(LYNX) -assume_charset=utf-8 -display_charset=utf-8 -width=44 -dump $(BASEDIR)/$(NOCHUNKS_OUTPUT) > ../$(NOCHUNKS_NAME).txt
+@TXT@	sed -i -e "s@file\:///[A-Za-z/\-]+\.html@$(URLTOP)/$(NOCHUNKS_NAME)-nochunks.html@g" \
+@TXT@	       -e "s@file\://$(abs_top_builddir)@$(URLTOP)@g" ../$(NOCHUNKS_NAME).txt
 
 @PDF@@TAKAO@pdf: validate userconfig.xml
 @PDF@@TAKAO@	@echo "Generating profiled XML for PDF..."

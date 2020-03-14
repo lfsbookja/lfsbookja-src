@@ -437,6 +437,11 @@
           <seg>なし</seg>
 @z
 @x
+          <seg>Python and XML::Parser</seg>
+@y
+          <seg>Python, XML::Parser</seg>
+@z
+@x
           <seg>None</seg>
 @y
           <seg>なし</seg>
@@ -1468,10 +1473,10 @@
 <!-- Begin Python dependency info -->
 @z
 @x
-         <seg>Bash, Binutils, Coreutils, GCC, Gdbm, Gettext, Glibc, Grep, 
+         <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc, Grep, 
          Libffi, Make, Ncurses, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, GCC, Gdbm, Gettext, Glibc, Grep, 
+         <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc, Grep, 
          Libffi, Make, Ncurses, Sed</seg>
 @z
 @x
