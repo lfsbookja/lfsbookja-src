@@ -348,6 +348,91 @@
 @z
 
 @x
+    <title>Working with Core Dumps</title>
+@y
+    <title>コアダンプ関連の操作</title>
+@z
+
+@x
+    <para>Core dumps are useful to debug crashed programs, especially
+    when a daemon process crashes. On systemd booted systems the core
+    dumping is handled by <command>systemd-coredump</command>.  It will
+    log the core dump into the journal and store the core dump itself in
+    <filename class="directory">/var/lib/systemd/coredump</filename>.
+    To retrieve and process core dumps, <command>coredumpctl</command>
+    tool is provided.  Here are some examples of frequently used commands:
+    </para>
+@y
+    <para>
+    クラッシュしたプログラムをデバッグするのに、コアダンプというものが重宝します。
+    特にデーモンプロセスがクラッシュした場合です。
+    systemd によるブートシステムにおいて、コアダンプは <command>systemd-coredump</command> が取り扱います。
+    このプログラムはジャーナル内にコアダンプのログを出力し、コアダンプそのものは <filename
+    class="directory">/var/lib/systemd/coredump</filename> に保存します。
+    コアダンプを取り出して処理するために <command>coredumpctl</command> というツールが提供されています。
+    よく利用されるコマンド例を以下に示します。
+    </para>
+@z
+
+@x
+        <para><command>coredumpctl -r</command>: lists all core dumps in
+        reversed chronological order.</para>
+@y
+        <para>
+        <command>coredumpctl -r</command>:
+        すべてのコアダンプを新しい順に一覧表示します。
+        </para>
+@z
+
+@x
+        <para><command>coredumpctl -1 info</command>: show the information
+        of the last core dump.</para>
+@y
+        <para>
+        <command>coredumpctl -1 info</command>:
+        最新のコアダンプの情報を表示します。
+        </para>
+@z
+
+@x
+        <para><command>coredumpctl -1 debug</command>: load the last core
+        dump into <ulink url="&blfs-book;general/gdb.html">GDB</ulink>.
+        </para>
+@y
+        <para>
+        <command>coredumpctl -1 debug</command>:
+        最新のコアダンプを <ulink url="&blfs-book;general/gdb.html">GDB</ulink> にロードします。
+        </para>
+@z
+
+@x
+    <para>Core dumps may use a lot of disk space.  The maximum disk space
+    used by core dumps can be limited by creating a configuration file in
+    <filename class="directory">/etc/systemd/coredump.conf.d</filename>.
+    For example:</para>
+@y
+    <para>
+    コアダンプはディスク容量を大量に消費することがあります。
+    <filename class="directory">/etc/systemd/coredump.conf.d</filename> に設定ファイルを生成して、
+    コアダンプに利用するディスク容量の最大を制御することができます。
+    たとえば以下のとおりです。
+    </para>
+@z
+
+@x
+    <para>See <filename>systemd-coredump(8)</filename>,
+    <filename>coredumpctl(1)</filename>, and
+    <filename>coredump.conf.d(5)</filename> manual pages for more
+    information.</para>
+@y
+    <para>
+    詳細は <filename>systemd-coredump(8)</filename>,
+    <filename>coredumpctl(1)</filename>,
+    <filename>coredump.conf.d(5)</filename> の各 man ページを参照してください。
+    </para>
+@z
+
+@x
     <title>Long Running Processes</title>
 @y
     <title>稼動し続けるプロセス</title>

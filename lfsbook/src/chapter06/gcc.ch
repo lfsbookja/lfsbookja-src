@@ -38,12 +38,6 @@
 @z
 
 @x
-      As in gcc-pass2, fix a problem introduced by Glibc-2.31:
-@y
-      gcc-pass2 と同様に、Glibc-2.31 により発生する問題を修正します。
-@z
-
-@x
     <para>The GCC documentation recommends building GCC in a dedicated build directory:</para>
 @y
     <para>

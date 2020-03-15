@@ -93,12 +93,6 @@
 @z
 
 @x
-      Now fix a problem introduced by Glibc-2.31:
-@y
-      Glibc-2.31 により発生する問題を修正します。
-@z
-
-@x
     <para>Create a separate build directory again:</para>
 @y
     <para>

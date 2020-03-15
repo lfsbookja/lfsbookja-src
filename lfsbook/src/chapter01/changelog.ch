@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2020-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-9.3.0. Fixes
+          <ulink url="&lfs-ticket-root;4613">#4613</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.6.0. Fixes
+          <ulink url="&lfs-ticket-root;4612">#4612</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.5.3. Fixes
+          <ulink url="&lfs-ticket-root;4611">#4611</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.5.9. Fixes
+          <ulink url="&lfs-ticket-root;4610">#4610</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-8.32. Fixes
+          <ulink url="&lfs-ticket-root;4609">#4609</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-9.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4613">#4613</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.6.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4612">#4612</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.5.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4611">#4611</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.5.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4610">#4610</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - coreutils-8.32 へのアップデート。
+          <ulink url="&lfs-ticket-root;4609">#4609</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-03-02</para>
       <itemizedlist>
         <listitem>
