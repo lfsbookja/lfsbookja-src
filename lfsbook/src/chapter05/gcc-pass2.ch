@@ -38,26 +38,13 @@
 @z
 
 @x
-    <para>Our first build of GCC has installed a couple of internal system
-    headers.  Normally one of them, <filename>limits.h</filename>, will in turn
-    include the corresponding system <filename>limits.h</filename> header, in
-    this case, <filename>/tools/include/limits.h</filename>. However, at the
-    time of the first build of gcc <filename>/tools/include/limits.h</filename>
-    did not exist, so the internal header that GCC installed is a partial,
-    self-contained file and does not include the extended features of the
-    system header. This was adequate for building the temporary libc, but this
-    build of GCC now requires the full internal header.  Create a full version
-    of the internal header using a command that is identical to what the GCC
-    build system does in normal circumstances:</para>
+    <para>As in the first build of GCC, the GMP, MPFR, and MPC packages are
+    required. Unpack the tarballs and move them into the required directory
+    names:</para>
 @y
     <para>
-    第1回めの GCC のビルドでは、内部的なシステムヘッダーをインストールしています。
-    その1つ <filename>limits.h</filename> は、これに対応づくシステムヘッダー <filename>limits.h</filename> を読み込みます。
-    そのファイルは実際には <filename>/tools/include/limits.h</filename> となります。
-    しかし1回めの GCC のビルド時には <filename>/tools/include/limits.h</filename> は存在しません。
-    したがって GCC がインストールする内部ヘッダーは、部分的で自己完結した (self-contained) もののみとなり、システムヘッダーが持つ拡張機能は含まれません。
-    一時的な libc を構築するならこれは正しかったのですが、この段階での GCC のビルドでは、内部ヘッダーが完全な形のものでなければなりません。
-    完全な内部ヘッダーを生成するために、GCC ビルドシステムが通常行っている方法と同じようにするための、以下のコマンドを実行します。
+    GCC の 1 回めのビルドと同様に、ここでも GMP、MPFR、MPC の各パッケージを必要とします。
+    tarball を解凍して、所定のディレクトリ名に移動させます。
     </para>
 @z
 
@@ -82,13 +69,26 @@
 @z
 
 @x
-    <para>As in the first build of GCC it requires the GMP, MPFR and MPC
-    packages. Unpack the tarballs and move them into the required directory
-    names:</para>
+    <para>Our first build of GCC has installed a couple of internal system
+    headers.  Normally one of them, <filename>limits.h</filename>, will in turn
+    include the corresponding system <filename>limits.h</filename> header, in
+    this case, <filename>/tools/include/limits.h</filename>. However, at the
+    time of the first build of gcc <filename>/tools/include/limits.h</filename>
+    did not exist, so the internal header that GCC installed is a partial,
+    self-contained file and does not include the extended features of the
+    system header. This was adequate for building the temporary libc, but this
+    build of GCC now requires the full internal header.  Create a full version
+    of the internal header using a command that is identical to what the GCC
+    build system does in normal circumstances:</para>
 @y
     <para>
-    GCC を初めてビルドする際には GMP、MPFR、MPC の各パッケージを必要とします。
-    tarball を解凍して、所定のディレクトリ名に移動させます。
+    第1回めの GCC のビルドでは、内部的なシステムヘッダーをインストールしています。
+    その1つ <filename>limits.h</filename> は、これに対応づくシステムヘッダー <filename>limits.h</filename> を読み込みます。
+    そのファイルは実際には <filename>/tools/include/limits.h</filename> となります。
+    しかし 1 回めの GCC のビルド時には <filename>/tools/include/limits.h</filename> は存在しません。
+    したがって GCC がインストールする内部ヘッダーは、部分的で自己完結した (self-contained) もののみとなり、システムヘッダーが持つ拡張機能は含まれません。
+    一時的な libc を構築するならこれは正しかったのですが、この段階での GCC のビルドでは、内部ヘッダーが完全な形のものでなければなりません。
+    完全な内部ヘッダーを生成するために、GCC ビルドシステムが通常行っている方法と同じようにするための、以下のコマンドを実行します。
     </para>
 @z
 

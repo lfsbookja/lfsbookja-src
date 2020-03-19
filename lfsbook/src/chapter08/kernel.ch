@@ -149,12 +149,12 @@
       <para>A fuller description of managing UEFI environments from within LFS
       is covered by the lfs-uefi.txt hint at
       <ulink 
-        url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt"/>.
+        url="&hints-root;lfs-uefi.txt"/>.
       </para>
 @y
       <para>
-      LFS 環境にて UEFI を取り扱う詳細な方法は lfs-uefi.txt ヒント <ulink 
-        url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt"/> に示されているので参照してください。
+      LFS 環境にて UEFI を取り扱う詳細な方法は <ulink
+        url="&hints-root;lfs-uefi.txt"/> に示されている lfs-uefi.txt ヒントを参照してください。
       </para>
 @z
 

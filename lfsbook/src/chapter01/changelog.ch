@@ -53,6 +53,26 @@
     <title>変更履歴</title>
 @z
 
+@x revision="systemd"
+      <para>2020-03-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Make minor modifications to the kernel configuration
+          in order to match the configuration options to there current positions
+          in Linux-5.5</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-03-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - カーネル設定に関して多少の修正。
+          これは Linux-5.5 における設定オプションに対応するため。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x
       <para>2020-03-15</para>
       <itemizedlist>

@@ -64,15 +64,15 @@
         previous section.  However, LFS can be booted using GRUB2 without such
         an addition. To do this, the UEFI Mode and Secure Boot capabilities in
         the host system's BIOS need to be turned off.  For details, see <ulink
-        url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt">
+        url="&hints-root;lfs-uefi.txt">
         the lfs-uefi.txt hint</ulink> at
-        http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt.
+        &hints-root;lfs-uefi.txt.
 @y
         UEFI ((Unified Extensible Firmware Interface) モードを有効にしたホストにて LFS をビルドする場合は、前節で説明した CONFIG_EFI_STUB を有効にしてカーネルをビルドする必要があります。
         しかし LFS は GRUB2 にそのような機能がなくても起動できます。
         これを為すには、ホストシステムの UEFI モードやセキュアブート機能は無効にする必要があります。
-        詳しくは <ulink
-        url="http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt">http://www.linuxfromscratch.org/hints/downloads/files/lfs-uefi.txt</ulink> を参照してください。
+        詳しくは &hints-root;lfs-uefi.txt にある <ulink
+        url="&hints-root;lfs-uefi.txt">lfs-uefi.txt ヒント</ulink> を参照してください。
 @z
 
 @x

@@ -1562,7 +1562,7 @@
           <seg>Coreutils</seg>
 @z
 @x
-          <seg>Cracklib, and PAM</seg>
+          <seg>Cracklib and PAM</seg>
 @y
           <seg>Cracklib, PAM</seg>
 @z
