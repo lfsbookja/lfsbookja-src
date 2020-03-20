@@ -108,6 +108,15 @@
 @z
 
 @x
+    <para>Move the socket file to /run instead of the deprecated
+    /var/run:</para>
+@y
+    <para>
+    ソケットファイルを置くディレクトリを、非推奨の /var/run から /run に移動します。
+    </para>
+@z
+
+@x
     <title>Contents of D-Bus</title>
 @y
     <title>&ContentsOf1;D-Bus&ContentsOf2;</title>

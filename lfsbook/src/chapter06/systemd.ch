@@ -189,6 +189,15 @@
           </para>
 @z
 
+@x -D{userdb,homed}=false
+          <para>Remove two daemons that have dependencies that do not fit
+          the scope of LFS.</para>
+@y
+          <para>
+          LFS が取り扱う範囲にそぐわない依存関係を持ったデーモンを削除します。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -300,7 +309,7 @@
         systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
         systemd-id128, systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
-        systemd-resolve (symlink to resolvectl), systemd-run,
+        systemd-repart, systemd-resolve (symlink to resolvectl), systemd-run,
         systemd-socket-activate, systemd-stdio-bridge, systemd-tmpfiles,
         systemd-tty-ask-password-agent, systemd-umount (symlink to
         systemd-mount), telinit (symlink to systemctl), timedatectl, and
@@ -327,7 +336,7 @@
         systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
         systemd-id128, systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
-        systemd-resolve (resolvectl へのシンボリックリンク), systemd-run,
+        systemd-repart, systemd-resolve (resolvectl へのシンボリックリンク), systemd-run,
         systemd-socket-activate, systemd-stdio-bridge, systemd-tmpfiles,
         systemd-tty-ask-password-agent, systemd-umount (systemd-mount へのシンボリックリンク),
         telinit (systemctl へのシンボリックリンク), timedatectl,
@@ -677,6 +686,15 @@
 @y
           <para>
           システムパスやユーザーパスを検索します。
+          </para>
+@z
+
+@x systemd-repart
+          <para>Used go grow and add partitions to a partition table when
+          systemd is used in an OS image (e.g. a container).</para>
+@y
+          <para>
+          systemd が OS イメージ内（たとえばコンテナーなど）で用いられている場合に、パーティションテーブルに対してパーティションの拡張や追加を行うために用いられます。
           </para>
 @z
 

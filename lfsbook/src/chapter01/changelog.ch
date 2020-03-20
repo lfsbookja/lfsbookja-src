@@ -54,6 +54,24 @@
 @z
 
 @x revision="systemd"
+      <para>2020-03-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to systemd-245. Fixes
+          <ulink url="&lfs-ticket-root;4593">#4593</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-03-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd-245 へのアップデート。
+          <ulink url="&lfs-ticket-root;4593">#4593</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x revision="systemd"
       <para>2020-03-18</para>
       <itemizedlist>
         <listitem>
