@@ -14,11 +14,23 @@
 @z
 
 @x
-    <para>The Expect package contains a program for carrying out scripted
-    dialogues with other interactive programs.</para>
+    <para>The <application>Expect</application> package contains tools for
+    automating, via scripted dialogues, interactive applications such as
+    <command>telnet</command>, <command>ftp</command>,
+    <command>passwd</command>, <command>fsck</command>,
+    <command>rlogin</command>, and <command>tip</command>.
+    <application>Expect</application> is also useful for testing these same
+    applications as well as easing all sorts of tasks that are prohibitively
+    difficult with anything else. The <application>DejaGnu</application>
+    framework is written in <application>Expect</application>.</para>
 @y
     <para>
-    Expect パッケージは、他のプログラムと対話的に処理を行うプログラムを提供します。
+    <application>Expect</application> パッケージには <command>telnet</command>, <command>ftp</command>,
+    <command>passwd</command>, <command>fsck</command>,
+    <command>rlogin</command>, <command>tip</command> といった対話処理ツールを、スクリプト化されたダイアログを通じて自動化するツールを提供します。
+    <application>Expect</application> はこういったアプリケーションをテストする場合にも利用できます。
+    また本パッケージを利用しないと相当に困難となるようなタスクを、いとも簡単に処理できるようになります。
+    <application>DejaGnu</application> フレームワークはこの <application>Expect</application> を用いて記述されています。
     </para>
 @z
 

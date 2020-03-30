@@ -14,11 +14,13 @@
 @z
 
 @x
-    <para>The DejaGNU package contains a framework for testing other
-    programs.</para>
+    <para>The <application>DejaGnu</application> package contains a framework for running test
+      suites on GNU tools. It is written in <command>expect</command>, which itself
+      uses <application>Tcl</application> (Tool Command Language).</para>
 @y
     <para>
-    DejaGNU パッケージは、他のプログラムをテストするフレームワークを提供します。
+    <application>DejaGnu</application> パッケージは、GNU ツールに対してテストスイートを実行するフレームワークを提供します。
+    これは <command>expect</command> によって書かれており、<command>expect</command> そのものは <application>Tcl</application>（ツールコマンド言語）を利用しています。
     </para>
 @z
 

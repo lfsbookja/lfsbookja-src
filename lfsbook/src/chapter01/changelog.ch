@@ -53,6 +53,22 @@
     <title>変更履歴</title>
 @z
 
+@x
+      <para>2020-03-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Textual updates thanks to Kevin Buckley.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-03-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 説明文の更新。Kevin Buckley に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x revision="systemd"
       <para>2020-03-19</para>
       <itemizedlist>

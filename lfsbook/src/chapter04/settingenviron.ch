@@ -56,16 +56,22 @@
 
 @x
   <para>The new instance of the shell is a <emphasis>non-login</emphasis>
-  shell, which does not read the <filename>/etc/profile</filename> or
-  <filename>.bash_profile</filename> files, but rather reads the
+  shell, which does not read, and execute, the conten of <filename>/etc/profile</filename> or
+  <filename>.bash_profile</filename> files, but rather reads, and executes, the
   <filename>.bashrc</filename> file instead. Create the
   <filename>.bashrc</filename> file now:</para>
 @y
   <para>
   新しく起動するシェルはログインシェルではなくなります。
-  したがってこのシェルは <filename>/etc/profile</filename> ファイルや <filename>.bash_profile</filename> ファイルは読み込まず、代わりに <filename>.bashrc</filename> ファイルを読み込みます。
+  したがってこのシェルは <filename>/etc/profile</filename> ファイルや <filename>.bash_profile</filename> ファイルの内容を読み込んで実行することはなく、代わりに <filename>.bashrc</filename> ファイルを読み込んで実行します。
   そこで以下のようにして <filename>.bashrc</filename> ファイルを生成します。
   </para>
+@z
+
+@x
+    <title>The meaning of the command line options in <filename>.bashrc</filename></title>
+@y
+    <title><filename>.bashrc</filename> 内のコマンドラインオプションの意味</title>
 @z
 
 @x
@@ -148,7 +154,7 @@
   linkend="chapter-temporary-tools"/> are picked up by the shell immediately after
   their installation. This, combined with turning off hashing, limits the risk
   that old programs are used from the host when the same programs are available in
-  the chapter 5 environment.</para>
+  the Chapter 5 environment.</para>
 @y
   <para>
   <filename class="directory">/tools/bin</filename> ディレクトリを PATH 変数の先頭に設定します。
@@ -156,6 +162,15 @@
   この設定は、ハッシュ機能をオフとしたことと連携して、古いプログラムが実行されないようにします。
   たとえホストシステムとの間で同一の実行プログラムがあったとしても、第5章の作業環境下では適切なプログラム実行が実現されます。
   </para>
+@z
+
+@x export LFS LC_ALL LFS_TGT PATH
+        <para>While the above commands have set some variables, in order
+        to make them visible within any sub-shells, we export them</para>
+@y
+        <para>
+        上のコマンド実行は、設定済の変数を改めて設定するものになりますが、シェルを新たに呼び出しても確実に設定されるようにエクスポートを行うことにします。
+        </para>
 @z
 
 @x

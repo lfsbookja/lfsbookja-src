@@ -14,9 +14,14 @@
 @z
 
 @x
-    <para>The Tcl package contains the Tool Command Language.</para>
+    <para>The <application>Tcl</application> package contains the Tool Command Language,
+    a robust general-purpose scripting language. The <application>Expect</application> package
+    is written in the <application>Tcl</application> language.</para>
 @y
-    <para>Tcl パッケージはツールコマンド言語 (Tool Command Language) を提供します。</para>
+    <para>
+    <application>Tcl</application> パッケージは、堅牢で汎用的なスクリプト言語であるツールコマンド言語 (Tool Command Language) を提供します。
+    <application>Expect</application> パッケージは <application>Tcl</application> 言語によって書かれています。
+    </para>
 @z
 
 @x

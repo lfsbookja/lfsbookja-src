@@ -645,11 +645,11 @@
 
 @x LOGLEVEL
         <para>This variable specifies the log level for kernel messages sent
-        to the console as set by <command>dmesg</command>. Valid levels are
+        to the console as set by <command>dmesg -n</command>. Valid levels are
         from "1" (no messages) to "8". The default level is "7".</para>
 @y
         <para>
-        この変数は、コンソールに出力されるカーネルメッセージのログレベルを指定するもので <command>dmesg</command> コマンドにより設定されます。
+        この変数は、コンソールに出力されるカーネルメッセージのログレベルを指定するもので <command>dmesg -n</command> コマンドにより設定されます。
         有効な設定値は "1" (メッセージ出力なし) から "8" まであり、デフォルトは "7" です。
         </para>
 @z
