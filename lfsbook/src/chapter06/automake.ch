@@ -72,11 +72,10 @@
 
 @x
     <para>One test is known to fail in the LFS environment:
-    subobj.sh.</para>
+    tags-lisp-space.sh.</para>
 @y
     <para>
-    LFS 環境では失敗するテストが 1 つあります。
-    subobj.sh です。
+    LFS 環境では tags-lisp-space.sh というテストが 1 つだけ失敗します。
     </para>
 @z
 

@@ -54,6 +54,80 @@
 @z
 
 @x
+      <para>2020-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.0486. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.179. Fixes
+          <ulink url="&lfs-ticket-root;4621">#4621</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.54.0. Fixes
+          <ulink url="&lfs-ticket-root;4620">#4620</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.45.6. Fixes
+          <ulink url="&lfs-ticket-root;4619">#4619</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.16.2. Fixes
+          <ulink url="&lfs-ticket-root;4618">#4618</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.2.5. Fixes
+          <ulink url="&lfs-ticket-root;4617">#4617</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-1.1.1f. Fixes
+          <ulink url="&lfs-ticket-root;4616">#4616</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.30.2. Fixes
+          <ulink url="&lfs-ticket-root;4614">#4614</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.0486 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.179 へのアップデート。
+          <ulink url="&lfs-ticket-root;4621">#4621</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.54.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4620">#4620</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.45.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4619">#4619</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.16.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4618">#4618</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz-5.2.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4617">#4617</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-1.1.1f へのアップデート。
+          <ulink url="&lfs-ticket-root;4616">#4616</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.30.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4614">#4614</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-03-29</para>
       <itemizedlist>
         <listitem>
