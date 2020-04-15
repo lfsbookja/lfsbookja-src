@@ -412,14 +412,15 @@
 @x
           <para>The Linux kernel is updated relatively often, many times due to
           discoveries of security vulnerabilities.  The latest available
-          &linux-major-version;.&linux-minor-version;.x kernel version should be
+          <!--&linux-major-version;.&linux-minor-version;.x--> stable kernel 
+          version <!--should--> may be
           used, unless the errata page says otherwise.</para>
 @y
           <para>
           Linux カーネルはわりと頻繁に更新されます。
           多くの場合はセキュリティ脆弱性の発見によるものです。
-          特に正誤情報 (errata) のページにて説明がない限りは、入手可能な最新の
-          &linux-major-version;.&linux-minor-version;.x カーネルを用いてください。
+          特に正誤情報 (errata) のページにて説明がない限りは、入手可能な最新安定版のカーネルを用いてください。
+          あるいは errata に指示があればそれに従ってください。
           </para>
 @z
 

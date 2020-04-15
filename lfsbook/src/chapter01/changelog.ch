@@ -54,6 +54,80 @@
 @z
 
 @x
+      <para>2020-04-15</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Install the man pages in systemd. Fixes
+          <ulink url="&lfs-ticket-root;4627">#4627</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gawk-5.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4629">#4629</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.20.2. Fixes
+          <ulink url="&lfs-ticket-root;4628">#4628</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.06. Fixes
+          <ulink url="&lfs-ticket-root;4626">#4626</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.6.1. Fixes
+          <ulink url="&lfs-ticket-root;4625">#4625</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.5.4. Fixes
+          <ulink url="&lfs-ticket-root;4623">#4623</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.6.0. Fixes
+          <ulink url="&lfs-ticket-root;4622">#4622</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.6.4. Fixes
+          <ulink url="&lfs-ticket-root;4615">#4615</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-04-15</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd における man ページをインストールすることに。
+          <ulink url="&lfs-ticket-root;4627">#4627</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gawk-5.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4629">#4629</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.20.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4628">#4628</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.06 へのアップデート。
+          <ulink url="&lfs-ticket-root;4626">#4626</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4625">#4625</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.5.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4623">#4623</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.6.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4622">#4622</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.6.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4615">#4615</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-04-01</para>
       <itemizedlist>
         <listitem>

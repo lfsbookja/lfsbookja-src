@@ -737,9 +737,9 @@
           <seg>Man-DB</seg>
 @z
 @x
-          <seg>Pcre</seg>
+          <seg>Pcre and libsigsegv</seg>
 @y
-          <seg>Pcre</seg>
+          <seg>Pcre, libsigsegv</seg>
 @z
 
 %----------------------------------------------------------------------
