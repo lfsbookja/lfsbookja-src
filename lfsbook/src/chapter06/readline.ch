@@ -48,6 +48,24 @@
 @z
 
 @x
+      <title>The meaning of the configure option:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x --with-curses
+          <para>This option tells Readline that it can find the termcap
+	   library functions in the curses library, rather than a separate
+	   termcap library. It allows generating a correct
+	   <filename>readline.pc</filename> file.</para>
+@y
+          <para>
+          このオプションは Readline パッケージに対して、termcap ライブラリ関数の探し場所を、切り離されている termcap ライブラリではなく curses ライブラリとすることを指示します。
+	  これにより <filename>readline.pc</filename> ファイルが適切に生成されます。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

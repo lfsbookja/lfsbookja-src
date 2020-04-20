@@ -54,6 +54,83 @@
 @z
 
 @x
+      <para>2020-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Build util-linux in chapter 5 for both books.
+          link util-linux libraries and headers from /usr to /tools.
+          Copy util-linux pkg-config files from /tools to /usr, changing
+          any occurence of /tools to /usr. Also move eudev before util-linux.
+          Fixes <ulink url="&lfs-ticket-root;4637">#4637</ulink>,
+          <ulink url="&lfs-ticket-root;4638">#4638</ulink>, and
+          <ulink url="&lfs-ticket-root;4642">#4642</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Reinstate flex in chapter 5, so that ar and ranlib
+          (binutils) link against libfl. This allows to run tests for bison,
+          too. Fixes
+          <ulink url="&lfs-ticket-root;4631">#4631</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Prevent readline.pc from referencing termcap as
+          a private library by adding --with-curses to configure switches.
+          Fixes <ulink url="&lfs-ticket-root;4635">#4635</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Allow bison to use the libtextstyle.so library from
+          gettext, by moving gettext before bison. Fixes
+          <ulink url="&lfs-ticket-root;4634">#4634</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Allow some shadow programs to use "setcap" by
+          moving libcap before shadow. Fixes
+          <ulink url="&lfs-ticket-root;4633">#4633</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Fix a wrong hardcoded path in some programs
+          from the shadow package. Fixes
+          <ulink url="&lfs-ticket-root;4632">#4632</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - 2 つのブックにおいて第 5 章で util-linux をビルドする。
+          util-linux のライブラリとヘッダーは /usr から /tools にリンク。
+          util-linux の pkg-config ファイルは /tools から /usr へコピーし、/tools の記述をすべて /usr に変更。
+          また eudev は util-linux の前に移動。
+          <ulink url="&lfs-ticket-root;4637">#4637</ulink>,
+          <ulink url="&lfs-ticket-root;4638">#4638</ulink>,
+          <ulink url="&lfs-ticket-root;4642">#4642</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - 第 5 章 に flex を復元。
+          （binutils の）ar と ranlib を libfl にリンクするように。
+          これにより bison のテストが実行可能に。
+          <ulink url="&lfs-ticket-root;4631">#4631</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - configure スイッチ --with-curses をつけ加えることで、readline.pc がプライベートライブラリとして termcap を参照しないようにする。
+          <ulink url="&lfs-ticket-root;4635">#4635</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - gettext のライブラリ libtextstyle.so を bison が利用するように。
+          これは bison の前に gettext を移動することにより実現。
+          <ulink url="&lfs-ticket-root;4634">#4634</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - libcap を shadow に前に移動し、shadow プログラムのいくつかが "setcap" を利用できるように。
+          <ulink url="&lfs-ticket-root;4633">#4633</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - shadow パッケージ内のいくつかのプログラムにおいて、誤ったハードコーディングパスを修正。
+          <ulink url="&lfs-ticket-root;4632">#4632</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-04-15</para>
       <itemizedlist>
         <listitem revision="systemd">

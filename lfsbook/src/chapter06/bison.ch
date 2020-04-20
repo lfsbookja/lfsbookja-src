@@ -58,9 +58,19 @@
 @z
 
 @x
-    <para>To test the results (about 2.2 SBU), issue:</para>
+    <para>To test the results (about 5.5 SBU), issue:</para>
 @y
-    <para>コンパイル結果をテストするなら以下を実行します。(約 2.2 SBU)</para>
+    <para>コンパイル結果をテストするなら以下を実行します。(約 5.5 SBU)</para>
+@z
+
+@x
+    <para>13 tests fail in the "Diagnostics" section, probably because of
+    missing locales.</para>
+@y
+    <para>
+    "Diagnostics" の項にある 13 個のテストは失敗します。
+    おそらくはロケールがないためです。
+    </para>
 @z
 
 @x

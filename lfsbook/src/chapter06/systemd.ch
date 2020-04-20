@@ -46,15 +46,6 @@
 @z
 
 @x
-    <para>Because we have not yet installed the final version of Util-Linux,
-    create links to the libraries in the appropriate location:</para>
-@y
-    <para>
-    ここではまだ、最終版の Util-Linux をインストールしていないため、リンク先のライブラリが適切になるようにします。
-    </para>
-@z
-
-@x
     <para>Set up the man pages:</para>
 @y
     <para>man ページの準備をします。</para>
@@ -260,14 +251,6 @@
     <para>
     systemd が PID 最大値をリセットしないようにします。
     BLFS におけるパッケージやユニットにおいて、問題となるものがあるためです。
-    </para>
-@z
-
-@x
-    <para>Cleanup symbolic links to Util-Linux libraries:</para>
-@y
-    <para>
-    Util-Linux ライブラリへのシンボリックリンクを削除します。
     </para>
 @z
 

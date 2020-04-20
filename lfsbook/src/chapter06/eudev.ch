@@ -45,55 +45,46 @@
 @z
 
 @x
-    <para>First, add a workaround to prevent the /tools directory from being 
-    hard coded into Eudev binary files library locations:</para>
+    <para>Prepare Eudev for compilation:</para>
+@y
+    <para>&PreparePackage1;Eudev&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+%@x
+%<note><para>The LIBRARY_PATH variable here and the LD_LIBRARY_PATH variable
+%below are needed to allow the use of libraries that were installed in /tools,
+%but have not yet been installed in the main system.  LIBRARY_PATH is
+%used to find libraries during the linking process.  LD_LIBRARY_PATH is
+%used to find libraries during program execution.</para></note>
+%@y
+%<note><para>
+%ここにある LIBRARY_PATH 変数と以降に示す LD_LIBRARY_PATH 変数は、いずれも /tools にインストールされているライブラリを用いるために必要となります。
+%ただし構築システム内にはまだインストールしていません。
+%LIBRARY_PATH はリンク時にライブラリを探すために必要となります。
+%LD_LIBRARY_PATH は実行時にライブラリを探すために必要となります。
+%</para></note>
+%@z
+
+@x
+    <para>Create some directories now that are needed for tests, but
+    will also be used as a part of installation:</para>
 @y
     <para>
-    Eudev バイナリにライブラリのディレクトリがハードコーディングされないように処置します。
+    テスト時に必要となるディレクトリを生成します。
+    その一部はインストールの際にも利用します。
     </para>
 @z
 
 @x
-<para>Prepare Eudev for compilation:</para>
+    <para>To test the results, issue:</para>
 @y
-<para>&PreparePackage1;Eudev&PreparePackage2;</para>
-@z
-
-@x
-<para>Compile the package:</para>
-@y
-<para>&CompileThePackage;</para>
-@z
-
-@x
-<note><para>The LIBRARY_PATH variable here and the LD_LIBRARY_PATH variable
-below are needed to allow the use of libraries that were installed in /tools,
-but have not yet been installed in the main system.  LIBRARY_PATH is
-used to find libraries during the linking process.  LD_LIBRARY_PATH is
-used to find libraries during program execution.</para></note>
-@y
-<note><para>
-ここにある LIBRARY_PATH 変数と以降に示す LD_LIBRARY_PATH 変数は、いずれも /tools にインストールされているライブラリを用いるために必要となります。
-ただし構築システム内にはまだインストールしていません。
-LIBRARY_PATH はリンク時にライブラリを探すために必要となります。
-LD_LIBRARY_PATH は実行時にライブラリを探すために必要となります。
-</para></note>
-@z
-
-@x
-<para>Create some directories now that are needed for tests, but
-will also be used as a part of installation:</para>
-@y
-<para>
-テスト時に必要となるディレクトリを生成します。
-その一部はインストールの際にも利用します。
-</para>
-@z
-
-@x
-<para>To test the results, issue:</para>
-@y
-<para>コンパイル結果をテストするには以下を実行します。</para>
+    <para>コンパイル結果をテストするには以下を実行します。</para>
 @z
 
 @x

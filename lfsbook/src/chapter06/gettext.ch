@@ -62,6 +62,24 @@
 @z
 
 @x
+      <title>The meaning of the make parameter:</title>
+@y
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;</title>
+@z
+
+@x BISON_LOCALEDIR=/usr/share/locale
+          <para>Since bison is not yet installed in /usr, configure hardcodes
+          the directory containing translations for the bison program (the
+	  "locale" directory) as /tools/share/locale. Passing this variable
+           to make allows overriding the choice made by configure.</para>
+@y
+          <para>
+          bison はまだ /usr 配下にインストールされていないため、bison に対するロケールディレクトリを /tools/share/locale にハードコーディングします。
+          make に対するこの変数定義は、configure によって設定された変数を上書きします。
+          </para>
+@z
+
+@x
     <para>To test the results (this takes a long time, around 3 SBUs),
     issue:</para>
 @y

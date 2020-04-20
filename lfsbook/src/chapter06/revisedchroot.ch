@@ -93,13 +93,15 @@
 @x
   <para>There are also several files installed in the /usr/lib and /usr/libexec
   directories with a file name extention of .la. These are "libtool archive"
-  files and generally unneeded on a linux system. None of these are necessary
-  at this point. To remove them, run:</para>
+  files. As already said, they are only useful when linking with static
+  libraries. They are unneeded, and potentially harmful, when using dynamic
+  shared libraries, specially when using also non-autotools build systems.
+  To remove them, run:</para>
 @y
   <para>
   また /usr/lib ディレクトリと /usr/libexec ディレクトリには、拡張子が .la であるファイルがいくつかインストールされます。
-  これは "libtool アーカイブ" ファイルというものであり、linux システムにとっては普通不要です。
-  そしてこの時点において必要になるものは 1 つもありません。
+  これは "libtool アーカイブ" ファイルというものであり、すでに説明しているように、これはスタティックライブラリとリンクする際に利用します。
+  これらはダイナミック共有ライブラリを用いるとき、そして特に autotools 以外のビルドシステムを利用するときには不要であり、潜在的には支障を及ぼします。
   削除する場合は以下を実行します。
   </para>
 @z

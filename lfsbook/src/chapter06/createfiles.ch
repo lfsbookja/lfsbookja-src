@@ -158,33 +158,48 @@
         </para>
 @z
 
-@x /usr/lib/libstdc++.la
-        <para>This prevents a <filename class="directory">/tools</filename>
-        reference that would otherwise be in
-        <filename>/usr/lib/libstdc++.la</filename> after GCC is installed.</para>
-@y
-        <para>
-        GCC がインストールされた後には <filename
-        class="directory">/tools</filename> への参照ではなく、<filename>/usr/lib/libstdc++.la</filename> を必要とします。
-        </para>
-@z
-
-@x /usr/lib/lib{blkid,lzma,mount,uuid}.{a,la,so*}
-        <para>These links prevent utilities from acquiring an
-        unnecessary reference to the
-        <filename class="directory">/tools</filename> directory.</para>
-@y
-        <para>
-        このリンクにより各種ユーティリティーが、不要な <filename
-        class="directory">/tools</filename> へのリンクを用いないようにします。
-        </para>
-@z
+%@x /usr/lib/libstdc++.la
+%        <para>This prevents a <filename class="directory">/tools</filename>
+%        reference that would otherwise be in
+%        <filename>/usr/lib/libstdc++.la</filename> after GCC is installed.</para>
+%@y
+%        <para>
+%        GCC がインストールされた後には <filename
+%        class="directory">/tools</filename> への参照ではなく、<filename>/usr/lib/libstdc++.la</filename> を必要とします。
+%        </para>
+%@z
 
 @x /bin/sh
         <para>Many shell scripts hard-code <filename>/bin/sh</filename>.</para>
 @y
         <para>
         シェルスクリプトはたいてい <filename>/bin/sh</filename> がハードコーディングされています。
+        </para>
+@z
+
+@x /usr/lib/libfl.so*
+        <para>This link allows binutils to find the flex library, and to
+	build enhanced versions of ar and ranlib.</para>
+@y
+        <para>This link allows binutils to find the flex library, and to
+	build enhanced versions of ar and ranlib.</para>
+@z
+
+@x /usr/lib/lib{blkid,fdisk,mount,uuid}.so*, /usr/include/{blkid,libfdisk,libmount,uuid}, /usr/lib/pkgconfig/{blkid,fdisk,mount,uuid}.pc
+        <para>These links and files allow
+        <phrase revision="sysv">eudev</phrase>
+        <phrase revision="systemd">systemd</phrase> to find the
+        util-linux libraries installed in chapter 5, without creating
+        wrong references to /tools. The uuid library is also needed for
+        building a python module.</para>
+@y
+        <para>
+        このリンクやファイルにより、
+        <phrase revision="sysv">eudev</phrase>
+        <phrase revision="systemd">systemd</phrase>
+        が第 5 章にてインストールした util-linux のライブラリを探し出せるようにします。
+        ここで /tools への誤った参照は作らないようにしています。
+        また python モジュールをビルドできるようにするため uuid ライブラリも必要となります。
         </para>
 @z
 

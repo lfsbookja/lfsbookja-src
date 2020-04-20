@@ -103,6 +103,16 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
+@x touch /usr/bin/passwd
+          <para>The file <filename>/usr/bin/passwd</filename> needs
+          to exist because its location is harcoded in some programs, and
+          the default location if it does not exist is not right.</para>
+@y
+          <para>
+          プログラムの中には <filename>/usr/bin/passwd</filename> のパスがそのままハードコーディングされているものがあり、このファイルが存在しなかった場合のデフォルトパスが正しくなっていません。
+          </para>
+@z
+
 @x --with-group-name-max-length=32
           <para>The maximum user name is 32 characters.  Make the maximum
           group name the same.</para>

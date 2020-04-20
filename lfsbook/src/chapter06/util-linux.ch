@@ -60,10 +60,10 @@
 @z
 
 @x
-    <para revision="systemd">Remove the earlier created symlinks:</para>
+    <para>Remove the earlier created symlinks and files:</para>
 @y
-    <para revision="systemd">
-    以前に作成していたシンボリックリンクを削除します。
+    <para>
+    以前に作成していたシンボリックリンクやファイルを削除します。
     </para>
 @z
 

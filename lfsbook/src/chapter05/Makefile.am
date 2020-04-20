@@ -20,6 +20,7 @@ CHANGE_FILES = \
 	expect.ch              \
 	file.ch                \
 	findutils.ch           \
+	flex.ch                \
 	gawk.ch                \
 	gcc-pass1.ch           \
 	gcc-pass2.ch           \

@@ -66,9 +66,16 @@
 @z
 
 @x
-  <para>Remove unneeded files:</para>
+  <para>The libtool .la files are only useful when linking with static
+  libraries. They are unneeded, and potentially harmful, when using dynamic
+  shared libraries, specially when using also non-autotools build systems.
+  Remove those files now:</para>
 @y
-  <para>不要なファイルを削除します。</para>
+  <para>
+  libtool の .la ファイルはスタティックライブラリにリンクするときだけ使います。
+  これらはダイナミック共有ライブラリを用いるとき、そして特に autotools 以外のビルドシステムを利用するときには不要であり、潜在的には支障を及ぼします。
+  したがって不要なファイルはここで削除します。
+  </para>
 @z
 
 @x
