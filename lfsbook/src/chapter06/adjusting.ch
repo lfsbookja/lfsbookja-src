@@ -44,17 +44,21 @@
 @z
 
 @x
-  <para>Next, amend the GCC specs file so that it points to the new
-  dynamic linker. Simply deleting all instances of <quote>/tools</quote> should
-  leave us with the correct path to the dynamic linker. Also adjust the specs file
-  so that GCC knows where to find the correct headers and Glibc start files.
+  <para>the next command amends the GCC specs file to achieve three goals:
+  first point GCC to the new dynamic linker. Simply deleting all instances of
+  <quote>/tools</quote> should leave us with the correct path to the dynamic
+  linker. Second, let GCC know where to find the Glibc start files. Third,
+  add the /usr/include directory at the end of the default search path, so
+  that header files added in chapter 6 are found.
   A <command>sed</command> command accomplishes this:</para>
 @y
   <para>
-  次に GCC スペックファイルを修正し、新しいダイナミックリンカーを指し示すようにします。
+  次のコマンドは、GCC スペックファイルを修正して、以下の 3 点を実現します。
+  1 点めは GCC が新しいダイナミックリンカーを指し示すようにします。
   単純に <quote>/tools</quote> という記述を取り除けば、ダイナミックリンカーへの正しい参照となります。
-  またスペックファイルを修正することで GCC がヘッダーファイル、および Glibc の起動ファイルを適切に探し出せるようになります。
-  以下の <command>sed</command> によりこれを実現します。
+  2 点めとして GCC が Glibc の起動ファイルを探し出せるようにします。
+  また 3 点めとして、デフォルトの検索パスの最後に /usr/include を追加することで、第 6 章において追加されたヘッダーファイルが用いられるようにします。
+  以下の <command>sed</command> がこれらを実現します。
   </para>
 @z
 
@@ -140,6 +144,14 @@
   <para os="h">
   上のコマンドは以下の出力を返します。
   </para>
+@z
+
+@x
+  <note><para>On a 32 bit system, x86_64 is replaced with i686.</para></note>
+@y
+  <note><para>
+  32 ビットシステムでは x86_64 が i686 に置き換えられます。
+  </para></note>
 @z
 
 @x

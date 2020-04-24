@@ -61,10 +61,13 @@
 @z
 
 @x
-    <para>One subtest in the test 20-test_enc.t is known to fail.</para>
+    <para>One test 30-test_afalg.t is known to fail on some kernel
+    configurations (it apparently assumes certain unspecified crypto
+    options have been selected).</para>
 @y
     <para>
-    20-test_enc.t の中にあるサブテストが 1 つ失敗します。
+    カーネル設定によっては 30-test_afalg.t というテストが 1 つだけ失敗することがわかっています。
+    (暗号化オプションのどれかを指定することによって発生するものと思われます。)
     </para>
 @z
 

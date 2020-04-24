@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2020-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Update to openssl-1.1.1g (Security Fix). Fixes
+          <ulink url="&lfs-ticket-root;4643">#4643</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - openssl-1.1.1g へのアップデート（セキュリティフィックス）。
+          <ulink url="&lfs-ticket-root;4643">#4643</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-04-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Change -isystem to -idirafter in "Adjusting the
+          toolchain". This allows to search g++ private headers before
+          the public ones, which is the normal search order, with the
+	  drawback that it includes the headers in /tools if they exist
+	  in both /usr and /tools. Fix most of
+          <ulink url="&lfs-ticket-root;4641">#4641</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-04-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - "ツールチェーンの調整" において -isystem を -idirafter に変更。
+          これは g++ が利用するヘッダーファイルを、パブリックなものよりプライベートなものを先に探すようにします。
+          これは通常の検索順であるが、/usr と /tools の双方にヘッダーがある場合 /tools にあるヘッダーを含めてしまうという欠点あり。
+          <ulink url="&lfs-ticket-root;4641">#4641</ulink> のほとんどを解決。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-04-19</para>
       <itemizedlist>
         <listitem>

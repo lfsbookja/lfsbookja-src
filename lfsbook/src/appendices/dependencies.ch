@@ -213,10 +213,10 @@
 
 %----------------------------------------------------------------------
 @x binutils
-         <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc,
+         <seg>Bash, Binutils, Coreutils, Diffutils, File, Flex, Gawk, GCC, Glibc,
          Grep, Make, Perl, Sed, Texinfo and Zlib</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc,
+         <seg>Bash, Binutils, Coreutils, Diffutils, File, Flex, Gawk, GCC, Glibc,
          Grep, Make, Perl, Sed, Texinfo, Zlib</seg>
 @z
 @x
@@ -402,10 +402,10 @@
 %----------------------------------------------------------------------
 @x Eudev
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf,
-         Make, and Sed</seg>
+         Make, Sed, and Util-linux</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf,
-         Make, Sed</seg>
+         Make, Sed, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -533,9 +533,9 @@
           <seg>Bison, Gawk</seg>
 @z
 @x
-          <seg>IPRoute2, Kbd, and Man-DB</seg>
+          <seg>None</seg>
 @y
-          <seg>IPRoute2, Kbd, Man-DB</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -633,9 +633,9 @@
           <seg>Diffutils, Perl, Tcl</seg>
 @z
 @x
-          <seg>Automake</seg>
+          <seg>Automake and Bison</seg>
 @y
-          <seg>Automake</seg>
+          <seg>Automake, Bison</seg>
 @z
 @x
           <seg>None</seg>
@@ -982,9 +982,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Shadow</seg>
 @y
-          <seg>なし</seg>
+          <seg>Shadow</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1474,10 +1474,10 @@
 @z
 @x
          <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc, Grep, 
-         Libffi, Make, Ncurses, and Sed</seg>
+         Libffi, Make, Ncurses, Sed, and Util-linux</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc, Grep, 
-         Libffi, Make, Ncurses, Sed</seg>
+         Libffi, Make, Ncurses, Sed, Util-linux</seg>
 @z
 @x
           <seg>GDB and Valgrind</seg>
@@ -1546,10 +1546,10 @@
 %----------------------------------------------------------------------
 @x Shadow
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, and Sed</seg>
+         Gettext, Glibc, Grep, Libcap, Make, and Sed</seg>
 @y
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, Grep, Make, Sed</seg>
+         Gettext, Glibc, Grep, Libcap, Make, Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>

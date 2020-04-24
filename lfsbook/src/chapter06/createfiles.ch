@@ -158,17 +158,6 @@
         </para>
 @z
 
-%@x /usr/lib/libstdc++.la
-%        <para>This prevents a <filename class="directory">/tools</filename>
-%        reference that would otherwise be in
-%        <filename>/usr/lib/libstdc++.la</filename> after GCC is installed.</para>
-%@y
-%        <para>
-%        GCC がインストールされた後には <filename
-%        class="directory">/tools</filename> への参照ではなく、<filename>/usr/lib/libstdc++.la</filename> を必要とします。
-%        </para>
-%@z
-
 @x /bin/sh
         <para>Many shell scripts hard-code <filename>/bin/sh</filename>.</para>
 @y
@@ -181,8 +170,10 @@
         <para>This link allows binutils to find the flex library, and to
 	build enhanced versions of ar and ranlib.</para>
 @y
-        <para>This link allows binutils to find the flex library, and to
-	build enhanced versions of ar and ranlib.</para>
+        <para>
+        このリンクは binutils が flex ライブラリを探し出せるようにします。
+        また ar と ranlib の拡張版をビルドするようにします。
+        </para>
 @z
 
 @x /usr/lib/lib{blkid,fdisk,mount,uuid}.so*, /usr/include/{blkid,libfdisk,libmount,uuid}, /usr/lib/pkgconfig/{blkid,fdisk,mount,uuid}.pc
