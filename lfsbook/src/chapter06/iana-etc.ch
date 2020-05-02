@@ -29,26 +29,11 @@
 @z
 
 @x
-    <para>The following command converts the raw data provided by IANA into the
-    correct formats for the <filename>/etc/protocols</filename> and
-    <filename>/etc/services</filename> data files:</para>
+    <para>For this package, we only need to copy the files into place:</para>
 @y
     <para>
-    以下のコマンドを実行します。
-    これは IANA が提供している生のデータを正しい書式のデータとして変換し <filename>/etc/protocols</filename> ファイルと <filename>/etc/services</filename> ファイルとして生成します。
+    このパッケージでは、必要とするファイルを所定の場所にコピーするだけにします。
     </para>
-@z
-
-@x
-    <para>This package does not come with a test suite.</para>
-@y
-    <para>&NotExistTestsuite;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
 @z
 
 @x

@@ -562,9 +562,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>libsigsegv</seg>
 @y
-          <seg>なし</seg>
+          <seg>libsigsegv</seg>
 @z
 
 %----------------------------------------------------------------------

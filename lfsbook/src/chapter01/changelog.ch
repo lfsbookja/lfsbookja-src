@@ -54,6 +54,48 @@
 @z
 
 @x
+      <para>2020-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2020a. Fixes
+          <ulink url="&lfs-ticket-root;4644">#4644</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.54.1. Fixes
+          <ulink url="&lfs-ticket-root;4646">#4646</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20200429. Fixes
+          <ulink url="&lfs-ticket-root;4645">#4645</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.6.8. Fixes
+          <ulink url="&lfs-ticket-root;4630">#4630</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata-2020a へのアップデート。
+          <ulink url="&lfs-ticket-root;4644">#4644</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.54.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4646">#4646</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20200429 へのアップデート。
+          <ulink url="&lfs-ticket-root;4645">#4645</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.6.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4630">#4630</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-04-23</para>
       <itemizedlist>
         <listitem>
@@ -72,14 +114,27 @@
 @z
 
 @x
+    <listitem>
+      <para>2020-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Update to openssl-1.1.1g (Security Fix). Fixes
+          <ulink url="&lfs-ticket-root;4643">#4643</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@y
+@z
+
+@x
       <para>2020-04-20</para>
       <itemizedlist>
         <listitem>
           <para>[pierre] - Change -isystem to -idirafter in "Adjusting the
           toolchain". This allows to search g++ private headers before
           the public ones, which is the normal search order, with the
-	  drawback that it includes the headers in /tools if they exist
-	  in both /usr and /tools. Fix most of
+          drawback that it includes the headers in /tools if they exist
+          in both /usr and /tools. Fix most of
           <ulink url="&lfs-ticket-root;4641">#4641</ulink>.</para>
         </listitem>
       </itemizedlist>
