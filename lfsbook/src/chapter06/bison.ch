@@ -64,11 +64,11 @@
 @z
 
 @x
-    <para>13 tests fail in the "Diagnostics" section, probably because of
+    <para>Fourteen tests fail in the "Diagnostics" section, probably because of
     missing locales.</para>
 @y
     <para>
-    "Diagnostics" の項にある 13 個のテストは失敗します。
+    "Diagnostics" の項にある 14 個のテストは失敗します。
     おそらくはロケールがないためです。
     </para>
 @z

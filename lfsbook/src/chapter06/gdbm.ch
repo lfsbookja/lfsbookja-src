@@ -34,6 +34,14 @@
 @z
 
 @x
+    <para>First, fix an issue first identified by gcc-10:</para>
+@y
+    <para>
+    まずは gcc-10 によって発生する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare GDBM for compilation:</para>
 @y
     <para>&PreparePackage1;GDBM&PreparePackage2;</para>

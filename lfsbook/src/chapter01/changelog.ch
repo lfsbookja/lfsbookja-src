@@ -54,6 +54,56 @@
 @z
 
 @x
+      <para>2020-05-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.6. Fixes
+          <ulink url="&lfs-ticket-root;4652">#4652</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-10.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4651">#4651</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.34. Fixes
+          <ulink url="&lfs-ticket-root;4650">#4650</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-2.7.2. Fixes
+          <ulink url="&lfs-ticket-root;4648">#4648</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.6.11. Fixes
+          <ulink url="&lfs-ticket-root;4649">#4649</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bison-3.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4652">#4652</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-10.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4651">#4651</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.34 へのアップデート。
+          <ulink url="&lfs-ticket-root;4650">#4650</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-2.7.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4648">#4648</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.6.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4649">#4649</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-05-01</para>
       <itemizedlist>
         <listitem>
@@ -111,19 +161,6 @@
           <ulink url="&lfs-ticket-root;4643">#4643</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
-@z
-
-@x
-    <listitem>
-      <para>2020-04-23</para>
-      <itemizedlist>
-        <listitem>
-          <para>[ken] - Update to openssl-1.1.1g (Security Fix). Fixes
-          <ulink url="&lfs-ticket-root;4643">#4643</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-@y
 @z
 
 @x

@@ -189,11 +189,11 @@
 
 %----------------------------------------------------------------------
 @x bc
-          <seg>Bash, Binutils, Bison, Coreutils, GCC, Glibc,
-          Grep, Make, Perl, and Readline</seg>
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc,
+          Grep, and Make</seg>
 @y
-          <seg>Bash, Binutils, Bison, Coreutils, GCC, Glibc,
-          Grep, Make, Perl, Readline</seg>
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc,
+          Grep, Make</seg>
 @z
 @x
           <seg>Gawk</seg>

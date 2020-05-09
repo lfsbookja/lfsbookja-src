@@ -56,9 +56,9 @@
 @z
 
 @x
-<!ENTITY gcc-ch6-sbu "88 SBU (with tests)">
+<!ENTITY gcc-ch6-sbu "103 SBU (with tests)">
 @y
-<!ENTITY gcc-ch6-sbu "88 SBU (テスト込み)">
+<!ENTITY gcc-ch6-sbu "103 SBU (テスト込み)">
 @z
 
 @x

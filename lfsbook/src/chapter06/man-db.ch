@@ -116,6 +116,14 @@
 @z
 
 @x
+    <para>One test, man-missing-locales, is known to fail in the LFS chroot envirnment.</para>
+@y
+    <para>
+    man-missing-locales というテストが LFS chroot 環境下では失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

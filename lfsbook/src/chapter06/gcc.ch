@@ -186,14 +186,6 @@
 @z
 
 @x
-    <para>Two tests named pr57193.c and pr90178.c are known to fail.</para>
-@y
-    <para>
-    pr57193.c と pr90178.c というテストは失敗します。
-    </para>
-@z
-
-@x
     <para>A few unexpected failures cannot always be avoided. The GCC developers
     are usually aware of these issues, but have not resolved them yet.
     Unless the test results are vastly different from those at the above URL,

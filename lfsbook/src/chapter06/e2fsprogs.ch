@@ -209,7 +209,7 @@
 @z
 
 @x
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs,e2freefrag,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
         e2fsck, e2image, e2label, e2mmpstatus, e2scrub, e2scrub_all, e2undo,
         e4crypt, e4defrag, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, logsave, lsattr, mk_cmds, mke2fs,
@@ -220,7 +220,7 @@
         /usr/include/ss, /usr/lib/e2fsprogs, /usr/share/et, and
         /usr/share/ss</seg>
 @y
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs,e2freefrag,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
         e2fsck, e2image, e2label, e2mmpstatus, e2scrub, e2scrub_all, e2undo,
         e4crypt, e4defrag, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, logsave, lsattr, mk_cmds, mke2fs,
