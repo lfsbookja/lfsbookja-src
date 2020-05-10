@@ -82,6 +82,19 @@
       <title>&MeaningOfOption1;meson&MeaningOfOption2;:</title>
 @z
 
+@x -Dc_args=-Wno-format-overflow
+          <para>The defaults flags passed to gcc contain
+          <parameter>-Werror=format-overflow</parameter>, which generates
+	  an error with GCC 10. Passing this parameter prevents the error
+	  from occuring.</para>
+@y
+          <para>
+          gcc においてデフォルトで与えたフラグの中に <parameter>-Werror=format-overflow</parameter> があります。
+          これは GCC 10 においてはエラーを発生させます。
+          本パラメーターを指定することで、そのエラー発生を回避します。
+          </para>
+@z
+
 @x -D*-path=*
           <para>These switches provide location of binaries needed by
           systemd at runtime that have not yet been installed, or who's

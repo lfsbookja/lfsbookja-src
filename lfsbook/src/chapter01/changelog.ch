@@ -54,6 +54,23 @@
 @z
 
 @x
+      <para>2020-05-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Pass -Wno-format-overflow to systemd to
+          prevent an error with GCC 10.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - systemd において -Wno-format-overflow を指定することで、GCC 10 におけるエラーを回避する。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-05-08</para>
       <itemizedlist>
         <listitem>

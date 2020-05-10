@@ -15,17 +15,17 @@
 @z
 
 @x
-<!ENTITY versiond        "20200508-systemd">
+<!ENTITY versiond        "20200509-systemd">
 @y
-<!ENTITY versiond        "20200508-systemd">
+<!ENTITY versiond        "20200509-systemd">
 @z
 
 @x
-<!ENTITY releasedate     "May 8th, 2020">
+<!ENTITY releasedate     "May 9th, 2020">
 @y
-<!ENTITY releasedate     "2020/05/08">
-<!ENTITY jversion        "20200509">
-<!ENTITY jversiond       "20200509">
+<!ENTITY releasedate     "2020/05/09">
+<!ENTITY jversion        "20200510">
+<!ENTITY jversiond       "20200510">
 <!ENTITY dir-jversion    "svn-ja">
 <!ENTITY dir-jversiond   "svn-sysdja">
 @z
