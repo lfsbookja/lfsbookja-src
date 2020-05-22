@@ -230,9 +230,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Debuginfod</seg>
 @y
-          <seg>なし</seg>
+          <seg>Debuginfod</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -650,10 +650,10 @@
 <!-- Begin Glibc dependency info -->
 @z
 @x
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
+         <seg>Bash, Binutils, Bison, Coreutils, Diffutils, Gawk, GCC, Gettext,
          Grep, Gzip, Linux API Headers, Make, Perl, Python, Sed, and Texinfo</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
+         <seg>Bash, Binutils, Bison, Coreutils, Diffutils, Gawk, GCC, Gettext,
          Grep, Gzip, Linux API ヘッダー, Make, Perl, Python, Sed, Texinfo</seg>
 @z
 @x
