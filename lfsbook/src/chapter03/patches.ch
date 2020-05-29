@@ -47,10 +47,10 @@
         <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
 @z
 
-@x Bc Memory Leak Patch
-        <para>Download: <ulink url="&patches-root;&bc-memory-leak-patch;"/></para>
+@x Binutils Fix for gold Test Suite Patch
+        <para>Download: <ulink url="&patches-root;&binutils-gold-test-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&bc-memory-leak-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&binutils-gold-test-patch;"/></para>
 @z
 
 @x Bzip2 Documentation Patch

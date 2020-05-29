@@ -58,11 +58,13 @@
 
 @x
     <para>Now remove one test that prevents the tests from running
-    to completion:</para>
+    to completion, and fix other tests in the gold test suite, which
+    need to be adjusted for GCC 10:</para>
 @y
     <para>
     ここでテストを 1 つ削除します。
     これによってテストを完成させます。
+    また gold テストスイートの中のテストに対して、GCC 10 に対応することが必要なものを修正します。
     </para>
 @z
 
@@ -186,11 +188,13 @@
 @z
 
 @x
-    <para>The ver_test_pr16504.sh test is known to fail.</para>
+<!--    <para>The ver_test_pr16504.sh test is known to fail.</para>-->
 @y
+<!--
     <para>
     ver_test_pr16504.sh は 失敗します。
     </para>
+-->
 @z
 
 @x

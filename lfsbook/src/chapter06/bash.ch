@@ -92,6 +92,30 @@
 @z
 
 @x
+    <para>The <command>su</command> command above is slightly different from
+    other places in the book. The
+    reason is that the <option>-c</option> option runs the command without
+    a controlling terminal, while the bash test suite needs one.</para>
+@y
+    <para>
+    上で実行している <command>su</command> は、本書内の別のところで実行しているものとは多少異なります。
+    それは <option>-c</option> オプションによって、制御している端末とは無関係にコマンドが実行されるからです。
+    そして bash のテストスイートでは、これが必要となります。
+    </para>
+@z
+
+@x
+    <para>Nevertheless, the <systemitem class="username">nobody</systemitem>
+    user does not have enough permissions for all the tests to pass. This shows
+    up in some <quote>diff</quote> output in four test results.</para>
+@y
+    <para>
+    ただし <systemitem class="username">nobody</systemitem> ユーザーには、すべてのテストを正常終了させるための権限を持っていません。
+    4 つあるテストの<quote>diff</quote>出力において、このことがわかります。
+    </para>
+@z
+
+@x
     <para>Install the package and move the main executable to
     <filename class='directory'>/bin</filename>:</para>
 @y

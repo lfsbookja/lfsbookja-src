@@ -29,6 +29,12 @@
 @z
 
 @x
+    <para>Fix a failing test:</para>
+@y
+    <para>テストが失敗するので、これを修正します。</para>
+@z
+
+@x
     <para>Prepare Automake for compilation:</para>
 @y
     <para>&PreparePackage1;Automake&PreparePackage2;</para>

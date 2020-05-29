@@ -54,6 +54,160 @@
 @z
 
 @x
+      <para>2020-05-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Update to linux-5.6.15. Fixes
+          <ulink url="&lfs-ticket-root;4658">#4658</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - linux-5.6.15 へのアップデート。
+          <ulink url="&lfs-ticket-root;4658">#4658</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-05-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Bash: document test results.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Bash: テスト結果に言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-05-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Bash: do not use "su -c command" to change user
+	  to nobody: it removes the controlling terminal and makes some
+	  tests fail. Use "su &lt;&lt; EOF" instead.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Mount /dev/pts with "--bind", so that "tty"
+          knows there is a terminal. Fixes a test in coreutils.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Add a patch to fix a failure in gold test suite,
+          which really needs -fcommon in some tests.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Fix a failure in automake test suite.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Update to vim-8.2.0814.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Add a symlink from /tools/lib/locale
+          to /usr/lib/locale/locale-archive, to allow some programs
+          to find the installed locales. Fixes test failures in bison
+          and man-db.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Bash: nobody ユーザーに切り替える際に "su -c command" としないことに。
+	  これを行ってしまうと制御端末が削除され、テスト失敗が発生するため。
+          替わりに "su &lt;&lt; EOF" とする。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - /dev/pts のマウントに "--bind" を付与。
+          これにより "tty" が端末の存在を分かるように。
+          coreutils におけるテストを修正。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - gold テストスイートにおけるテスト失敗に対し、パッチにより修正。
+          特定テストでは -fcommon を必要とする。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - automake テストスイート失敗を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - vim-8.2.0814 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - /tools/lib/locale から /usr/lib/locale/locale-archive へのシンボリックを生成。
+          これによりインストール済ロケールを特定プログラムが探し出せるように。
+          bison と man-db におけるテスト失敗を修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-05-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Fix a crash at early boot when using
+          CONFIG_STACK_PROTECTOR_STRONG=y in kernel configuration.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - カーネルの CONFIG_STACK_PROTECTOR_STRONG=y が設定されている際に、システム起動初期に発生するクラッシュを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-05-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.54.2. Fixes
+          <ulink url="&lfs-ticket-root;4656">#4656</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.8.3. Fixes
+          <ulink url="&lfs-ticket-root;4655">#4655</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.6.1. Fixes
+          <ulink url="&lfs-ticket-root;4654">#4654</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.6.13. Fixes
+          <ulink url="&lfs-ticket-root;4653">#4653</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-0.54.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4656">#4656</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.8.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4655">#4655</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4654">#4654</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.6.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4653">#4653</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-05-09</para>
       <itemizedlist>
         <listitem>
@@ -73,6 +227,9 @@
 @x
       <para>2020-05-08</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.0716.</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - Update to bison-3.6. Fixes
           <ulink url="&lfs-ticket-root;4652">#4652</ulink>.</para>
@@ -97,6 +254,9 @@
 @y
       <para>2020-05-08</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.0716 へのアップデート。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - bison-3.6 へのアップデート。
           <ulink url="&lfs-ticket-root;4652">#4652</ulink> を Fix に。</para>
@@ -443,6 +603,36 @@
           <para>[bdubbs] - 説明文の更新。Kevin Buckley に感謝。</para>
         </listitem>
       </itemizedlist>
+@z
+
+@x
+      <para>2020-03-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to systemd-245. Fixes
+          <ulink url="&lfs-ticket-root;4593">#4593</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-03-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd-245 へのアップデート。
+          <ulink url="&lfs-ticket-root;4593">#4593</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+    <listitem>
+      <para>2020-03-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Textual updates thanks to Kevin Buckley.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@y
 @z
 
 @x revision="systemd"

@@ -59,18 +59,6 @@
 @z
 
 @x
-    <para>When using <envar>CONFIG_STACKPROTECTOR_STRONG=y</envar>, and
-    compiling with GCC 10 and later, the default optimization is too
-    aggressive, and generates a kernel panic when booting. This can be
-    fixed with:</para>
-@y
-    <para>
-    <envar>CONFIG_STACKPROTECTOR_STRONG=y</envar> の設定を行い GCC 10 以降を用いてコンパイルする場合、デフォルトの最適化が強力に行われてしまうため、起動時に kernel panic が発生します。
-    これは以下のようにして回避することができます。
-    </para>
-@z
-
-@x
     <para>Configure the kernel via a menu-driven interface. For general
     information on kernel configuration see <ulink
     url="&hints-root;kernel-configuration.txt"/>.  BLFS has some information

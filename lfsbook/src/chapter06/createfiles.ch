@@ -194,6 +194,20 @@
         </para>
 @z
 
+@x /tools/lib/locale/locale-archive
+        <para>Some programs built in chapter 5 look for installed
+        locale descriptions in this file. The locale descriptions will be
+        installed in <filename>/usr/lib/locale/locale-archive</filename>
+        after building the final glibc. The symlink allows those programs
+        to use the installed locales.</para>
+@y
+        <para>
+        第 5 章にてビルドしたプログラムの中には、インストール済のこのファイル内のロケール記述を検索するものがあります。
+        そのロケール記述は、最終的な glibc がビルドされた後は <filename>/usr/lib/locale/locale-archive</filename> にインストールされます。
+        以下のシンボリックリンクを作成することで、現在インストールされているロケール記述をそういったプログラムが利用できるようにします。
+        </para>
+@z
+
 @x
   <para>Historically, Linux maintains a list of the mounted file systems in the
   file <filename>/etc/mtab</filename>. Modern kernels maintain this list
