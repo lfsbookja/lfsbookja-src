@@ -26,10 +26,10 @@
 @z
 
 @x
-    <para>First fix an issue in the LFS environment and remove a failing test:</para>
+    <para>First fix an issue in the LFS environment:</para>
 @y
     <para>
-    はじめに LFS 環境にて問題となる箇所を修正し、失敗するテストを削除します。
+    はじめに LFS 環境にて問題となる箇所を修正します。
     </para>
 @z
 
@@ -37,20 +37,6 @@
     <para>Prepare Sed for compilation:</para>
 @y
     <para>&PreparePackage1;Sed&PreparePackage2;</para>
-@z
-
-@x
-      <title>The meaning of the new configure option:</title>
-@y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
-@z
-
-@x
-          <para>This sets the installation directory for the HTML documentation.</para>
-@y
-          <para>
-          HTML ドキュメントをインストールするディレクトリを指定します。
-          </para>
 @z
 
 @x

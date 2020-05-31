@@ -25,37 +25,23 @@
 @z
 
 @x
-    <title>FHS compliance notes</title>
-@y
-    <title>FHS コンプライアンス情報</title>
-@z
-
-@x
-    <para>The FHS recommends using the <filename
-    class="directory">/var/lib/hwclock</filename> directory instead of the
-    usual <filename class="directory">/etc</filename> directory as the
-    location for the <filename>adjtime</filename> file.  First create a directory
-    to enable storage for the <command>hwclock</command> program:</para>
-@y
-    <para>
-    FHS では <filename>adjtime</filename> ファイルの配置場所として <filename
-    class="directory">/etc</filename> ディレクトリではなく <filename
-    class="directory">/var/lib/hwclock</filename> ディレクトリを推奨しています。
-    <command>hwclock</command> プログラムが利用するディレクトリをまず生成します。
-    </para>
-@z
-
-@x
     <title>Installation of Util-linux</title>
 @y
     <title>&InstallationOf1;Util-linux&InstallationOf2;</title>
 @z
 
 @x
-    <para>First, fix one of the regression tests:</para>
+    <para>The FHS recommends using the <filename
+    class="directory">/var/lib/hwclock</filename> directory instead of the
+    usual <filename class="directory">/etc</filename> directory as the
+    location for the <filename>adjtime</filename> file. Create this directory
+    with:</para>
 @y
     <para>
-    まずは縮退テスト (regression test) の不備を修正します。
+    FHS では <filename>adjtime</filename> ファイルの配置場所として <filename
+    class="directory">/etc</filename> ディレクトリではなく <filename
+    class="directory">/var/lib/hwclock</filename> ディレクトリを推奨しています。
+    そこで以下によりそのディレクトリを生成します。
     </para>
 @z
 

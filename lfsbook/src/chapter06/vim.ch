@@ -78,21 +78,21 @@
 
 @x
     <para>To prepare the tests, ensure that the 
-    <systemitem class="username">nobody</systemitem> user can write 
+    <systemitem class="username">tester</systemitem> user can write 
     to the sources tree:</para>
 @y
     <para>
     コンパイル結果をテストするために、<systemitem
-    class="username">nobody</systemitem> ユーザーがソースツリーに書き込みできるようにします。
+    class="username">tester</systemitem> ユーザーがソースツリーに書き込みできるようにします。
     </para>
 @z
 
 @x
     <para>Now run the tests as the <systemitem
-    class="username">nobody</systemitem> user:</para>
+    class="username">tester</systemitem> user:</para>
 @y
     <para>
-    <systemitem class="username">nobody</systemitem> ユーザーによりテストを実行します。
+    <systemitem class="username">tester</systemitem> ユーザーによりテストを実行します。
     </para>
 @z
 

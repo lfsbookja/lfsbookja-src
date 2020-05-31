@@ -54,8 +54,44 @@
 @z
 
 @x
+      <para>2020-05-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Run sed and findutils tests as an
+          unprivileged user. Fixes
+          <ulink url="&lfs-ticket-root;4661">#4661</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - sed と findutils テストを非特権ユーザーにより実行する。
+          <ulink url="&lfs-ticket-root;4661">#4661</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-05-28</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add an unprivileged user, tester, at the 
+          beginning of Chapter 6 for running some tests.  This
+          user is then removed at the end of the chapter.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zstd-1.4.5. Fixes
+          <ulink url="&lfs-ticket-root;4660">#4660</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.35.2. Fixes
+          <ulink url="&lfs-ticket-root;4659">#4659</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.6.2. Fixes
+          <ulink url="&lfs-ticket-root;4657">#4657</ulink>.</para>
+        </listitem>
         <listitem>
           <para>[pierre] - Update to linux-5.6.15. Fixes
           <ulink url="&lfs-ticket-root;4658">#4658</ulink>.</para>
@@ -64,6 +100,22 @@
 @y
       <para>2020-05-28</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 特定のテスト実行のため、非特権ユーザー tester を第 6 章のはじめに追加。
+          章の終わりにはこのユーザーを削除する。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - zstd-1.4.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4660">#4660</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.35.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4659">#4659</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.6.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4657">#4657</ulink> を Fix に。</para>
+        </listitem>
         <listitem>
           <para>[pierre] - linux-5.6.15 へのアップデート。
           <ulink url="&lfs-ticket-root;4658">#4658</ulink> を Fix に。</para>
@@ -92,8 +144,8 @@
       <itemizedlist>
         <listitem>
           <para>[pierre] - Bash: do not use "su -c command" to change user
-	  to nobody: it removes the controlling terminal and makes some
-	  tests fail. Use "su &lt;&lt; EOF" instead.</para>
+          to nobody: it removes the controlling terminal and makes some
+          tests fail. Use "su &lt;&lt; EOF" instead.</para>
         </listitem>
         <listitem>
           <para>[pierre] - Mount /dev/pts with "--bind", so that "tty"

@@ -74,44 +74,36 @@
 @z
 
 @x
-    <para>To prepare the tests, ensure that the <systemitem class="username">nobody</systemitem> user can write to the sources tree:</para>
+    <para>To prepare the tests, ensure that the <systemitem class="username">tester</systemitem> user can write to the sources tree:</para>
 @y
     <para>
     テストを実施するにあたっては <systemitem
-    class="username">nobody</systemitem> ユーザーによるソースツリーへの書き込みを可能とします。
+    class="username">tester</systemitem> ユーザーによるソースツリーへの書き込みを可能とします。
     </para>
 @z
 
 @x
     <para>Now, run the tests as the <systemitem
-    class="username">nobody</systemitem> user:</para>
+    class="username">tester</systemitem> user:</para>
 @y
     <para>
-    <systemitem class="username">nobody</systemitem> ユーザーでテストを実行します。
+    <systemitem class="username">tester</systemitem> ユーザーでテストを実行します。
     </para>
 @z
 
 @x
-    <para>The <command>su</command> command above is slightly different from
-    other places in the book. The
-    reason is that the <option>-c</option> option runs the command without
-    a controlling terminal, while the bash test suite needs one.</para>
-@y
-    <para>
-    上で実行している <command>su</command> は、本書内の別のところで実行しているものとは多少異なります。
-    それは <option>-c</option> オプションによって、制御している端末とは無関係にコマンドが実行されるからです。
-    そして bash のテストスイートでは、これが必要となります。
-    </para>
-@z
-
-@x
-    <para>Nevertheless, the <systemitem class="username">nobody</systemitem>
+    <para>The <systemitem class="username">tester</systemitem>
     user does not have enough permissions for all the tests to pass. This shows
-    up in some <quote>diff</quote> output in four test results.</para>
+    up in some <quote>diff</quote> output in four test results. Portions of the 
+    run-execscript, run-lastpipe, run-read, and run-test programs
+    are known to fail in the LFS chroot environment, but pass if the tests
+    are run in a full system.</para>
 @y
     <para>
-    ただし <systemitem class="username">nobody</systemitem> ユーザーには、すべてのテストを正常終了させるための権限を持っていません。
-    4 つあるテストの<quote>diff</quote>出力において、このことがわかります。
+    <systemitem class="username">tester</systemitem> ユーザーは、すべてのテストを成功させる十分な権限を有していません。
+    このことはテストの<quote>diff</quote>出力からわかります。
+    run-execscript, run-lastpipe, run-read, run-test というプログラムに対するテストは、LFS chroot 環境下では部分的に失敗します。
+    ただし完成したシステム上において、このテストを実行すれば成功します。
     </para>
 @z
 

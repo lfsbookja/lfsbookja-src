@@ -117,3 +117,12 @@
    Archive (.la) files"</ulink> を参照してください。
    </para>
 @z
+
+@x
+   <para>Finally, remove the temporary 'tester' usr account created at the 
+   beginning of this chapter.</para>
+@y
+   <para>
+   最後に、本章のはじめに生成した 'tester' ユーザーアカウントを削除します。
+   </para>
+@z

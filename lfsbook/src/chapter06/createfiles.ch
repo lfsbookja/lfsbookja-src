@@ -288,6 +288,17 @@
 @z
 
 @x
+  <para>Some tests later in the chapter need a regular user. We add this
+  user here and delete this account at the end of the chapter.</para>
+@y
+  <para>
+  本章のこれ以降のテストの中には、通常のユーザーを必要とするものがあります。
+  ここでそういったユーザーを追加します。
+  これは本章の最後には削除します。
+  </para>
+@z
+
+@x
   <para>To remove the <quote>I have no name!</quote> prompt, start a new
   shell. Since a full Glibc was installed in <xref
   linkend="chapter-temporary-tools"/> and the

@@ -68,15 +68,6 @@
 @z
 
 @x
-    <para>Two tests are known to fail in the chroot environment:
-    sv-bug-54171.old-O3 and sv-bug-54171.new-O3.</para>
-@y
-    <para>
-    chroot 環境のもとでは 2 つのテスト、sv-bug-54171.old-O3 と sv-bug-54171.new-O3 が失敗します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

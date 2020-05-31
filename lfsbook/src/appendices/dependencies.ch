@@ -533,9 +533,9 @@
           <seg>Bison, Gawk</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Binutils, IProute2, Kbd, Kmod, and Man-DB</seg>
 @y
-          <seg>なし</seg>
+          <seg>Binutils, IProute2, Kbd, Kmod, Man-DB</seg>
 @z
 @x
           <seg>None</seg>
@@ -571,11 +571,11 @@
 @x Gcc
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch, Perl, Sed, Tar,
-         and Texinfo</seg>
+         Texinfo, and Zstd</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch, Perl, Sed, Tar,
-         Texinfo</seg>
+         Texinfo, Zstd</seg>
 @z
 @x
           <seg>DejaGNU, Expect, and Shadow</seg>
@@ -622,10 +622,10 @@
 %----------------------------------------------------------------------
 @x Gettext
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
-         Sed, and Texinfo</seg>
+         Ncurses, Sed, and Texinfo</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
-         Sed, Texinfo</seg>
+         Ncurses, Sed, Texinfo</seg>
 @z
 @x
           <seg>Diffutils, Perl, and Tcl</seg>
@@ -1833,9 +1833,9 @@
 @z
 
 @x
-          <seg>None</seg>
+          <seg>GCC</seg>
 @y
-          <seg>なし</seg>
+          <seg>GCC</seg>
 @z
 
 @x

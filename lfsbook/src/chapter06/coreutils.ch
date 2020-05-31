@@ -127,15 +127,15 @@
 
 @x
     <para>We're going to run the remainder of the tests as the
-    <systemitem class="username">nobody</systemitem> user. Certain tests,
+    <systemitem class="username">tester</systemitem> user. Certain tests,
     however, require that the user be a member of more than one group. So that
     these tests are not skipped we'll add a temporary group and make the
-    user <systemitem class="username">nobody</systemitem> a part of it:</para>
+    user <systemitem class="username">tester</systemitem> a part of it:</para>
 @y
     <para>
-    ここからは <systemitem class="username">nobody</systemitem> ユーザー向けのテストを実行します。
+    ここからは <systemitem class="username">tester</systemitem> ユーザー向けのテストを実行します。
     ただしテストの中には、複数のグループに属するユーザーを必要とするものがあります。
-    そのようなテストが確実に実施されるように、一時的なグループを作って <systemitem class="username">nobody</systemitem> ユーザーがそれに属するようにします。
+    そのようなテストが確実に実施されるように、一時的なグループを作って <systemitem class="username">tester</systemitem> ユーザーがそれに属するようにします。
     </para>
 @z
 
