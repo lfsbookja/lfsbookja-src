@@ -54,8 +54,100 @@
 @z
 
 @x
+      <para>2020-06-03</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Fix systemd's build with GCC-10 with a patch instead
+          of CFLAGS.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to perl-5.30.3 (security update). Fixes
+          <ulink url="&lfs-ticket-root;4664">#4664</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to dbus-1.12.18 (security update). Fixes
+          <ulink url="&lfs-ticket-root;4665">#4665</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to man-db-2.9.2. Fixes
+          <ulink url="&lfs-ticket-root;4663">#4663</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to libcap-2.36. Fixes
+          <ulink url="&lfs-ticket-root;4666">#4666</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to bison-3.6.3. Fixes
+          <ulink url="&lfs-ticket-root;4667">#4667</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-06-03</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - GCC-10 を用いた systemd のビルドに対応するために CFLAGS ではなくパッチを適用。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - perl-5.30.3 へのアップデート（セキュリティアップデート）。
+          <ulink url="&lfs-ticket-root;4664">#4664</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - dbus-1.12.18 へのアップデート（セキュリティアップデート）。
+          <ulink url="&lfs-ticket-root;4665">#4665</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - man-db-2.9.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4663">#4663</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - libcap-2.36 へのアップデート。
+          <ulink url="&lfs-ticket-root;4666">#4666</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - bison-3.6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4667">#4667</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Fix bash tests: add a couple of symlinks
+          from /bin to /tools, create the tester user with the uid of
+          the tty owner, run the bash tests with su &lt;&lt; EOF, and
+          explicitely defining stdin (with help from thomas and bdubbs).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - bash のテストを修正。
+          /bin から /tools へのシンボリックリンクを追加。
+          tester ユーザーに対して tty オーナーの uid を生成。
+          bash のテスト実行は su &lt;&lt; EOF により行う。
+          stdin を明示的に定義する（thomas と bdubbs の助言による）。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-05-29</para>
       <itemizedlist>
+        <listitem>
+          <para>[xry111] - Move flex earlier in chapter 6, so that binutils
+          can use it.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Remove bzip2 and flex from chapter 5.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Move zstd earlier in chapter 6, so that file and
+          GCC can use it.</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - Run sed and findutils tests as an
           unprivileged user. Fixes
@@ -65,6 +157,17 @@
 @y
       <para>2020-05-29</para>
       <itemizedlist>
+        <listitem>
+          <para>[xry111] - flex を第 6 章のはじめの方に移動。
+          binutils がこれを利用できるようにする。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - 第 5 章から bzip2 と flex を削除。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - zstd を第 6 章のはじめの方に移動。
+          file と GCC がこれを利用できるようにする。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - sed と findutils テストを非特権ユーザーにより実行する。
           <ulink url="&lfs-ticket-root;4661">#4661</ulink> を Fix に。</para>

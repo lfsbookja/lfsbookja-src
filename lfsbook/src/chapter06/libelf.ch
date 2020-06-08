@@ -73,11 +73,13 @@
 @z
 
 @x
-    <para>One test, run-elfclassify.sh, is known to fail.</para>
+<!--    <para>One test, run-elfclassify.sh, is known to fail.</para>-->
 @y
+<!--
     <para>
     run-elfclassify.sh というテストが 1 つだけ失敗します。
     </para>
+-->
 @z
 
 @x

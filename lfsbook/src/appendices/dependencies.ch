@@ -879,11 +879,11 @@
 
 %----------------------------------------------------------------------
 @x IProute2
-         <seg>Bash, Bison, Coreutils, Flex, GCC, Glibc, Make,
-         and Linux API Headers</seg>
+         <seg>Bash, Bison, Coreutils, Flex, GCC, Glibc, Make, Libcap,
+         Libelf, and Linux API Headers</seg>
 @y
-         <seg>Bash, Bison, Coreutils, Flex, GCC, Glibc, Make,
-         Linux API ヘッダー</seg>
+         <seg>Bash, Bison, Coreutils, Flex, GCC, Glibc, Make, Libcap,
+         Libelf, Linux API ヘッダー</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -896,9 +896,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Berkeley DB and Iptables</seg>
 @y
-          <seg>なし</seg>
+          <seg>Berkeley DB, Iptables</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -982,9 +982,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Shadow</seg>
+          <seg>IProute2 and Shadow</seg>
 @y
-          <seg>Shadow</seg>
+          <seg>IProute2, Shadow</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1004,9 +1004,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Linux Kernel</seg>
+          <seg>IProute2 and Linux Kernel</seg>
 @y
-          <seg>Linux カーネル</seg>
+          <seg>IProute2, Linux カーネル</seg>
 @z
 @x
           <seg>None</seg>

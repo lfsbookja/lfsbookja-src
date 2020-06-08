@@ -29,11 +29,10 @@
 @z
 
 @x
-    <para>First, apply a patch to fix various bugs since the release
-    of systemd-243.</para>
+    <para>First, apply a patch to fix the build with GCC-10:</para>
 @y
     <para>
-    はじめに sysmted-243 のリリース以降のさまざまなバグ修正を行うパッチを適用します。
+    はじめに GCC-10 を使ってビルドできるようにパッチを適用します。
     </para>
 @z
 

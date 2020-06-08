@@ -166,16 +166,6 @@
         </para>
 @z
 
-@x /usr/lib/libfl.so*
-        <para>This link allows binutils to find the flex library, and to
-	build enhanced versions of ar and ranlib.</para>
-@y
-        <para>
-        このリンクは binutils が flex ライブラリを探し出せるようにします。
-        また ar と ranlib の拡張版をビルドするようにします。
-        </para>
-@z
-
 @x /usr/lib/lib{blkid,fdisk,mount,uuid}.so*, /usr/include/{blkid,libfdisk,libmount,uuid}, /usr/lib/pkgconfig/{blkid,fdisk,mount,uuid}.pc
         <para>These links and files allow
         <phrase revision="sysv">eudev</phrase>

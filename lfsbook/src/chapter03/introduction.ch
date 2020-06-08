@@ -107,14 +107,52 @@
 @z
 
 @x
-  <para>An easy way to download all of the packages and patches is by using
-  <ulink url="../wget-list">wget-list</ulink> as an input to
-  <command>wget</command>. For example:</para>
+  <para>There are several ways to optain all the necessary packages and patches
+  to build LFS:</para>
 @y
   <para>
-  パッケージとパッチのダウンロードを簡単に行う方法として <ulink
-  url="../wget-list">wget-list</ulink> を利用する方法があります。
-  これは以下のように <command>wget</command> の入力引数に指定し利用します。
+  LFS のビルドに必要なパッケージやパッチを得る方法は、いろいろとあります。
+  </para>
+@z
+
+@x
+      <para>The files can be downloaded individually as described in the 
+      next two sections.</para>
+@y
+      <para>
+      各ファイルは次の２節に示されているので、個々に入手することができます。
+      </para>
+@z
+
+@x
+      <para>For stable versions of the book, a tarball of all the needed files 
+      can be downloaded from one of the LFS files mirrors listed at
+      <ulink url="http://www.linuxfromscratch.org/mirrors.html#files"/>.</para>
+@y
+      <para>
+      本書の安定版であれば、それに対して必要となるファイルを集めた tarball が、<ulink
+      url="http://www.linuxfromscratch.org/mirrors.html#files"/> に示す LFS ミラーサイトからダウンロードできます。
+      </para>
+@z
+
+@x
+      <para>The files can be downloaded using <command>wget</command> and
+      a wget-list as described below.</para>
+@y
+      <para>
+      <command>wget</command> と以下に示す wget-list ファイルを利用すれば、すべてのファイルをダウンロードすることができます。
+      </para>
+@z
+
+@x
+  <para>To download all of the packages and patches by using
+  <ulink url="../wget-list">wget-list</ulink> as an input to the
+  <command>wget</command> command, use:</para>
+@y
+  <para>
+  パッケージとパッチのダウンロードを行うため <ulink
+  url="../wget-list">wget-list</ulink> を利用することにします。
+  これは以下のように <command>wget</command> コマンドの入力引数に指定します。
   </para>
 @z
 
@@ -181,5 +219,14 @@ wget -N --input-file=wget-list.orig --continue --directory-prefix=$LFS/sources</
   さらに LFS-7.0 からは <ulink url="../md5sums">md5sums</ulink> というファイルを用意しています。
   このファイルは、入手した各種パッケージのファイルが正しいことを確認するために用いることができます。
   このファイルを <filename class="directory">$LFS/sources</filename> に配置して以下を実行してください。
+  </para>
+@z
+
+@x
+  <para>This check can be used after retrieving the needed files with any of the 
+  methods listed above.</para>
+@y
+  <para>
+  必要なファイルを入手した方法が前述のどの方法であっても、この md5sum チェックを実施することができます。
   </para>
 @z
