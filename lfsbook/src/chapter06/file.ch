@@ -14,12 +14,11 @@
 @z
 
 @x
-    <para>The File package contains a utility for determining the type of a given
-    file or files.</para>
+    <primary sortas="a-File">File</primary>
+    <secondary>tools</secondary>
 @y
-    <para>
-    File パッケージは指定されたファイルの種類を決定するユーティリティを提供します。
-    </para>
+    <primary sortas="a-File">File</primary>
+    <secondary>&Tools;</secondary>
 @z
 
 @x
@@ -40,11 +39,17 @@
     <para>&CompileThePackage;</para>
 @z
 
-@x
-    <para>To test the results, issue:</para>
-@y
-    <para>コンパイル結果をテストするには以下を実行します。</para>
-@z
+%@x
+%    <para>Compilation is now complete. As discussed earlier, running the test
+%    suite is not mandatory for the temporary tools here in this chapter. To run
+%    the File test suite anyway, issue the following command:</para>
+%@y
+%    <para>
+%    コンパイルが終了しました。
+%    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+%    しかしテストスイートを実行するなら、以下を実行します。
+%    </para>
+%@z
 
 @x
     <para>Install the package:</para>
@@ -53,42 +58,9 @@
 @z
 
 @x
-    <title>Contents of File</title>
+    <para>Details on this package are located in <xref linkend="contents-file" role="."/></para>
 @y
-    <title>&ContentsOf1;File&ContentsOf2;</title>
-@z
-
-@x
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed library</segtitle>
-@y
-      <segtitle>&InstalledProgram;</segtitle>
-      <segtitle>&InstalledLibrary;</segtitle>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x
-          <para>Tries to classify each given file; it does this by performing
-          several tests&mdash;file system tests, magic number tests, and language
-          tests</para>
-@y
-          <para>
-          指定されたファイルの種類判別を行います。
-          処理にあたってはいくつかのテスト、すなわちファイルシステムテスト、マジックナンバーテスト、言語テストを行います。
-          </para>
-@z
-
-@x
-          <para>Contains routines for magic number recognition, used by the
-          <command>file</command> program</para>
-@y
-          <para>
-          マジックナンバーによりファイル判別を行うルーチンを含みます。
-          <command>file</command> プログラムがこれを利用しています。
-          </para>
+    <para>
+    &Details1;<xref linkend="contents-file" role=""/>&Details2;
+    </para>
 @z

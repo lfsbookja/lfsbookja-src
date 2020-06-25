@@ -37,16 +37,24 @@
 
 @x
 <part id="part3">
-<title>Building the LFS System</title>
+<title>Building the LFS Cross Toolchain and Temporary Tools</title>
 @y
 <part id="part3">
-<title>LFSシステムの構築</title>
+<title>LFS クロスチェーンと一時的ツールの構築</title>
 @z
 
 @x
 <part id="part4">
-<title>Appendices</title>
+<title>Building the LFS System</title>
 @y
 <part id="part4">
+<title>LFSシステムの構築</title>
+@z
+
+@x
+<part id="part5">
+<title>Appendices</title>
+@y
+<part id="part5">
 <title>付録</title>
 @z

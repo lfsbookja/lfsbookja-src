@@ -14,7 +14,7 @@ m4_include([version.ac])[] dnl define lfs_version
 
 AC_PREREQ([2.63])
 AC_INIT([LFSbookja], [svn], [matsuand AT users DOT osdn DOT me])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([-Wno-portability])
 AM_MAINTAINER_MODE
 
 m4_include([m4/progs.m4])
@@ -74,6 +74,9 @@ AC_CONFIG_FILES([Makefile
 		 src/chapter07/Makefile
 		 src/chapter08/Makefile
 		 src/chapter09/Makefile
+		 src/chapter10/Makefile
+		 src/chapter11/Makefile
+		 src/part3intro/Makefile
 		 src/prologue/Makefile
 		 src/stylesheets/Makefile
 		 src/stylesheets/lfs-xsl/Makefile

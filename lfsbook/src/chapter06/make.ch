@@ -14,9 +14,15 @@
 @z
 
 @x
-    <para>The Make package contains a program for compiling packages.</para>
+  <indexterm zone="ch-tools-make">
+    <primary sortas="a-Make">Make</primary>
+    <secondary>tools</secondary>
+  </indexterm>
 @y
-    <para>Make パッケージは、パッケージ類をコンパイルするためのプログラムを提供します。</para>
+  <indexterm zone="ch-tools-make">
+    <primary sortas="a-Make">Make</primary>
+    <secondary>&Tools;</secondary>
+  </indexterm>
 @z
 
 @x
@@ -26,17 +32,27 @@
 @z
 
 @x
-    <para>Again, work around an error caused by glibc-2.27 and later:</para>
-@y
-    <para>
-    glibc-2.27 以降に起因するエラーを回避します。
-    </para>
-@z
-
-@x
     <para>Prepare Make for compilation:</para>
 @y
     <para>&PreparePackage1;Make&PreparePackage2;</para>
+@z
+
+@x
+      <title>The meaning of the new configure option:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+@z
+
+@x --without-guile
+          <para>Although we are cross-compiling, configure tries to use
+          guile from the build host if it finds it. This makes compilation
+          fail, so this switch prevents using it.</para>
+@y
+          <para>
+          ここではクロスコンパイルをしているにもかかわらず、ビルドホスト内に guile が存在すると configure がそれを見つけて利用しようとします。
+          そうなってしまうとコンパイルが失敗します。
+          そこで本スイッチにより、そうならないようにします。
+          </para>
 @z
 
 @x
@@ -46,46 +62,16 @@
 @z
 
 @x
-    <para>The test suite needs to know where supporting perl files are located.
-    We use an environment variable to accomplish this.  To test the 
-    results, issue:</para>
-@y
-    <para>
-    テストスイートの実行の際には、サポートされている perl ファイルがどこにあるかを示す必要があります。
-    ここでは環境変数を用いて指定することにします。
-    コンパイル結果をテストするには以下を実行します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
 @z
 
 @x
-    <title>Contents of Make</title>
+    <para>Details on this package are located in
+    <xref linkend="contents-make" role="."/></para>
 @y
-    <title>&ContentsOf1;Make&ContentsOf2;</title>
-@z
-
-@x
-      <segtitle>Installed program</segtitle>
-@y
-      <segtitle>&InstalledProgram;</segtitle>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x
-          <para>Automatically determines which pieces of a package need to
-          be (re)compiled and then issues the relevant commands</para>
-@y
-          <para>
-          パッケージの構成要素に対して、どれを(再)コンパイルするかを自動判別し、対応するコマンドを実行します。
-          </para>
+    <para>
+    &Details1;<xref linkend="contents-make" role=""/>&Details2;
+    </para>
 @z

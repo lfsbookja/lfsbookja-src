@@ -56,8 +56,8 @@
 
 @x --host=$LFS_TGT, --build=$(../glibc-&glibc-version;/scripts/config.guess)
           <para>The combined effect of these switches is that Glibc's build system
-          configures itself to cross-compile, using the cross-linker and
-          cross-compiler in <filename class="directory">/tools</filename>.</para>
+          configures itself to be cross-compiled, using the cross-linker and
+          cross-compiler in <filename class="directory">$LFS/tools</filename>.</para>
 @y
           <para>
           このようなオプションを組み合わせることで <filename
@@ -76,54 +76,64 @@
           </para>
 @z
 
-@x --with-headers=/tools/include
-          <para>This tells Glibc to compile itself against the headers recently
-          installed to the tools directory, so that it knows exactly what
-          features the kernel has and can optimize itself accordingly.</para>
+@x --with-headers=$LFS/usr/include
+          <para>This tells Glibc to compile itself against the headers
+          recently installed to the $LFS/usr/include directory, so that
+          it knows exactly what features the kernel has and can optimize
+          itself accordingly.</para>
 @y
           <para>
-          これまでに tools ディレクトリにインストールしたヘッダーファイルを用いて Glibc をビルドすることを指示します。
+          これまでに $LFS/usr/include ディレクトリにインストールしたヘッダーファイルを用いて Glibc をビルドすることを指示します。
           こうすればカーネルにどのような機能があるか、どのようにして処理効率化を図れるかなどの情報を Glibc が得られることになります。
           </para>
 @z
 
-@x
-          <para>The linker installed during
-          <xref linkend="ch-tools-binutils-pass1"/> was cross-compiled and as
-          such cannot be used until Glibc has been installed.  This means that
-          the configure test for force-unwind support will fail, as it relies on
-          a working linker.  The libc_cv_forced_unwind=yes variable is passed in
-          order to inform <command>configure</command> that force-unwind
-          support is available without it having to run the test.</para>
-@y
-          <para>
-          <xref linkend="ch-tools-binutils-pass1"/>においてインストールしたリンカーは、クロスコンパイルにより生成したものです。
-          これは Glibc をインストールするまでは使えません。
-          これはつまり force-unwind サポートに対するテストは失敗することを意味します。
-          正しく動作するリンカーに依存するためです。
-          libc_cv_forced_unwind=yes の変数設定は、<command>configure</command> スクリプトに対してテストを実行しなくても force-unwind サポート機能を利用可能とすることを指示します。
-          </para>
-@z
+%@x
+%          <para>The linker installed during
+%          <xref linkend="ch-tools-binutils-pass1"/> was cross-compiled and as
+%          such cannot be used until Glibc has been installed.  This means that
+%          the configure test for force-unwind support will fail, as it relies on
+%          a working linker.  The libc_cv_forced_unwind=yes variable is passed in
+%          order to inform <command>configure</command> that force-unwind
+%          support is available without it having to run the test.</para>
+%@y
+%          <para>
+%          <xref linkend="ch-tools-binutils-pass1"/>においてインストールしたリンカーは、クロスコンパイルにより生成したものです。
+%          これは Glibc をインストールするまでは使えません。
+%          これはつまり force-unwind サポートに対するテストは失敗することを意味します。
+%          正しく動作するリンカーに依存するためです。
+%          libc_cv_forced_unwind=yes の変数設定は、<command>configure</command> スクリプトに対してテストを実行しなくても force-unwind サポート機能を利用可能とすることを指示します。
+%          </para>
+%@z
 
-@x
-          <para>Similarly, we pass libc_cv_c_cleanup=yes through to the
-          <command>configure</command> script so that the test is skipped and C
-          cleanup handling support is configured.</para>
-@y
-          <para>
-          上と同様に <command>configure</command> スクリプトに対して libc_cv_c_cleanup=yes を指示します。
-          これによりテストが省略され、C のクリーンアップハンドリング (cleanup handling) のサポートを指定します。
-          </para>
-@z
+%@x
+%          <para>Similarly, we pass libc_cv_c_cleanup=yes through to the
+%          <command>configure</command> script so that the test is skipped and C
+%          cleanup handling support is configured.</para>
+%@y
+%          <para>
+%          上と同様に <command>configure</command> スクリプトに対して libc_cv_c_cleanup=yes を指示します。
+%          これによりテストが省略され、C のクリーンアップハンドリング (cleanup handling) のサポートを指定します。
+%          </para>
+%@z
 
-@x libc_cv_ctors_header=yes
-          <para>Similarly, we pass libc_cv_ctors_header=yes through to the
-          <command>configure</command> script so that the test is skipped and
-          gcc constructor support is configured.</para>
+%@x libc_cv_ctors_header=yes
+%          <para>Similarly, we pass libc_cv_ctors_header=yes through to the
+%          <command>configure</command> script so that the test is skipped and
+%          gcc constructor support is configured.</para>
+%@y
+%          <para>
+%          さらに <command>configure</command> スクリプトに対して libc_cv_ctors_header=yes も指示します。
+%          これによりテストがスキップされ gcc コンストラクターが設定されます。
+%          </para>
+%@z
+
+@x libc_cv_slibdir=/lib
+          <para>This ensures that the library is installed in /lib instead
+          of the default /lib64 on 64 bit machines.</para>
 @y
           <para>
-          さらに <command>configure</command> スクリプトに対して libc_cv_ctors_header=yes も指示します。
-          これによりテストがスキップされ gcc コンストラクターが設定されます。
+          この指定は 64 ビットマシンにおいて、ライブラリのインストール先をデフォルトの /lib64 ではなく /lib とします。
           </para>
 @z
 
@@ -169,66 +179,106 @@
 @z
 
 @x
-    <para>At this point, it is imperative to stop and ensure that the basic
-    functions (compiling and linking) of the new toolchain are working as
-    expected. To perform a sanity check, run the following commands:</para>
+    <warning><para>If <envar>LFS</envar> is not properly set, and despite the
+    recommendations, you are building as root, the next command will install
+    the newly built glibc to your host system, which most likely will render it
+    unusable. So double check that the environment is correctly set for user
+    <systemitem class="username">lfs</systemitem>.</para></warning>
 @y
-    <para>
-    この時点で以下を必ず実施します。
-    新しいツールチェーンの基本的な機能 (コンパイルやリンク) が正常に処理されるかどうかを確認することです。
-    健全性のチェック (sanity check) を行うものであり、以下のコマンドを実行します。
-    </para>
+    <warning><para>
+    <envar>LFS</envar> が適切に設定されていない状態で、推奨する方法とは異なり root によってビルドを行うと、次のコマンドはビルドした glibc をホストシステムにインストールしてしまいます。
+    これを行ってしまうと、ほぼ間違いなくホストが利用不能になります。
+    したがってその環境変数が <systemitem class="username">lfs</systemitem> ユーザー向けに設定されていることを今一度確認してください。
+    </para></warning>
 @z
 
 @x
-    <para>If everything is working correctly, there should be no errors,
-    and the output of the last command will be of the form:</para>
+      <title>The meaning of the <command>make install</command> option:</title>
 @y
-    <para>
-    すべてが正常に処理され、エラーが発生しなければ、最終のコマンドの実行結果として以下が出力されるはずです。
-    </para>
+      <title>&MeaningOfOption1;<command>make install</command>&MeaningOfOption2;</title>
+@z
+
+@x DESTDIR=$LFS
+          <para>The <envar>DESTDIR</envar> make variable is used by almost all
+          packages to define the location where the package should be
+          installed. If it is not set, it defaults to the root (<filename
+          class="directory">/</filename>) directory. Here we specify that
+          the package be installed in <filename class="directory">$LFS
+          </filename>, which will become the root after <xref linkend=
+          "ch-tools-chroot"/>.</para>
+@y
+          <para>
+          make 変数 <envar>DESTDIR</envar> はほとんどすべてのパッケージにおいて、そのパッケージをインストールするディレクトリを定義するために利用されています。
+          これが設定されていない場合のデフォルトは、ルートディレクトリ（<filename
+          class="directory">/</filename>）となります。
+          ここではパッケージのインストール先を <filename
+          class="directory">$LFS</filename> とします。
+          これは <xref linkend="ch-tools-chroot"/> に入ってからはルートディレクトリとなります。
+          </para>
 @z
 
 @x
-    <para>Note that for 32-bit machines, the interpreter name will be
-    <filename>/tools/lib/ld-linux.so.2</filename>.</para>
+      <para>At this point, it is imperative to stop and ensure that the basic
+      functions (compiling and linking) of the new toolchain are working as
+      expected. To perform a sanity check, run the following commands:</para>
 @y
-    <para>
-    インタープリター名は 32 ビットマシンの場合 <filename>/tools/lib/ld-linux.so.2</filename> となります。
-    </para>
+      <para>
+      この時点で以下を必ず実施します。
+      新しいツールチェーンの基本的な機能 (コンパイルやリンク) が正常に処理されるかどうかを確認することです。
+      健全性のチェック (sanity check) を行うものであり、以下のコマンドを実行します。
+      </para>
 @z
 
 @x
-    <para>If the output is not shown as above or there was no output at all,
-    then something is wrong. Investigate and retrace the steps to find out
-    where the problem is and correct it. This issue must be resolved before
-    continuing on.</para>
+      <para>If everything is working correctly, there should be no errors,
+      and the output of the last command will be of the form:</para>
 @y
-    <para>
-    出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
-    どこに問題があるのか調査、再試行を行って解消してください。
-    解決せずにこの先に進まないでください。
-    </para>
+      <para>
+      すべてが正常に処理され、エラーが発生しなければ、最終のコマンドの実行結果として以下が出力されるはずです。
+      </para>
 @z
 
 @x
-    <para>Once all is well, clean up the test files:</para>
+      <para>Note that for 32-bit machines, the interpreter name will be
+      <filename>/lib/ld-linux.so.2</filename>.</para>
 @y
-    <para>
-    すべてが完了したら、テストファイルを削除します。
-    </para>
+      <para>
+      インタープリター名は 32 ビットマシンの場合 <filename>/lib/ld-linux.so.2</filename> となります。
+      </para>
 @z
 
 @x
-  <note><para>Building Binutils in the section after next will serve as an
-  additional check that the toolchain has been built properly. If Binutils
-  fails to build, it is an indication that something has gone wrong with the
-  previous Binutils, GCC, or Glibc installations.</para></note>
+      <para>If the output is not shown as above or there was no output at all,
+      then something is wrong. Investigate and retrace the steps to find out
+      where the problem is and correct it. This issue must be resolved before
+      continuing on.</para>
 @y
-  <note><para>
-  次々節にてビルドする Binutils では、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
-  Binutils のビルドに失敗したとしたら、それ以前にインストールしてきた Binutils, GCC, Glibc のいずれかにてビルドがうまくできていないことを意味します。
-  </para></note>
+      <para>
+      出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
+      どこに問題があるのか調査、再試行を行って解消してください。
+      解決せずにこの先に進まないでください。
+      </para>
+@z
+
+@x
+      <para>Once all is well, clean up the test files:</para>
+@y
+      <para>
+      すべてが完了したら、テストファイルを削除します。
+      </para>
+@z
+
+@x
+    <note><para>Building packages in the next chapter will serve as an
+    additional check that the toolchain has been built properly. If some
+    package, especially binutils-pass2 or gcc-pass2, fails to build, it is
+    an indication that something has gone wrong with the
+    previous Binutils, GCC, or Glibc installations.</para></note>
+@y
+    <note><para>
+    次節にてビルドするパッケージでは、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
+    特に binutils 2 回めや gcc 2 回めのビルドに失敗したら、それ以前にインストールしてきた binutils, GCC, glibc のいずれかにてビルドがうまくできていないことを意味します。
+    </para></note>
 @z
 
 @x

@@ -20,15 +20,18 @@
 @z
 
 @x
-  <indexterm zone="ch-tools-linux-headers">
-    <primary sortas="a-Linux">Linux</primary>
     <secondary>tools, API headers</secondary>
-  </indexterm>
 @y
-  <indexterm zone="ch-tools-linux-headers">
-    <primary sortas="a-Linux">Linux</primary>
     <secondary>&Tools;, API ヘッダー</secondary>
-  </indexterm>
+@z
+
+@x
+    <para>The Linux API Headers (in linux-&linux-version;.tar.xz) expose the
+    kernel's API for use by Glibc.</para>
+@y
+    <para>
+    Linux API ヘッダー（linux-&linux-version;.tar.xz 内) は glibc が利用するカーネル API を提供します。
+    </para>
 @z
 
 @x
@@ -74,10 +77,109 @@
 @z
 
 @x
-    <para>Details on this package are located in
-    <xref linkend="contents-linux-headers" role="."/></para>
+    <title>Contents of Linux API Headers</title>
 @y
-    <para>
-    &Details1;<xref linkend="contents-linux-headers" role=""/>&Details2;
-    </para>
+    <title>&ContentsOf1;Linux API ヘッダー&ContentsOf2;</title>
+@z
+
+@x
+      <segtitle>Installed headers</segtitle>
+      <segtitle>Installed directories</segtitle>
+@y
+      <segtitle>&InstalledHeaders;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
+@z
+
+@x
+        <seg>/usr/include/asm/*.h, /usr/include/asm-generic/*.h,
+        /usr/include/drm/*.h, /usr/include/linux/*.h, /usr/include/misc/*.h,
+        /usr/include/mtd/*.h, /usr/include/rdma/*.h, /usr/include/scsi/*.h, 
+        /usr/include/sound/*.h, /usr/include/video/*.h, 
+        and /usr/include/xen/*.h</seg>
+        <seg>/usr/include/asm, /usr/include/asm-generic, /usr/include/drm,
+        /usr/include/linux, /usr/include/misc, /usr/include/mtd, 
+        /usr/include/rdma, /usr/include/scsi, /usr/include/sound, 
+        /usr/include/video, and /usr/include/xen</seg>
+@y
+        <seg>/usr/include/asm/*.h, /usr/include/asm-generic/*.h,
+        /usr/include/drm/*.h, /usr/include/linux/*.h, /usr/include/misc/*.h,
+        /usr/include/mtd/*.h, /usr/include/rdma/*.h, /usr/include/scsi/*.h, 
+        /usr/include/sound/*.h, /usr/include/video/*.h, 
+        /usr/include/xen/*.h</seg>
+        <seg>/usr/include/asm, /usr/include/asm-generic, /usr/include/drm,
+        /usr/include/linux, /usr/include/misc, /usr/include/mtd, 
+        /usr/include/rdma, /usr/include/scsi, /usr/include/sound, 
+        /usr/include/video, /usr/include/xen</seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x
+          <para>The Linux API ASM Headers</para>
+@y
+          <para>Linux API ASM ヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API ASM Generic Headers</para>
+@y
+          <para>Linux API ASM の汎用的なヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API DRM Headers</para>
+@y
+          <para>Linux API DRM ヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API Linux Headers</para>
+@y
+          <para>Linux API Linux ヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API Miscellaneous Headers</para>
+@y
+          <para>Linux API のさまざまなヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API MTD Headers</para>
+@y
+          <para>Linux API MTD ヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API RDMA Headers</para>
+@y
+          <para>Linux API RDMA ヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API SCSI Headers</para>
+@y
+          <para>Linux API SCSI ヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API Sound Headers</para>
+@y
+          <para>Linux API Sound ヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API Video Headers</para>
+@y
+          <para>Linux API Video ヘッダーファイル</para>
+@z
+
+@x
+          <para>The Linux API Xen Headers</para>
+@y
+          <para>Linux API Xen ヘッダーファイル</para>
 @z

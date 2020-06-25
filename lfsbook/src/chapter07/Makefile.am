@@ -7,22 +7,21 @@
 ##
 BOOKdir = @abs_bookdir@/chapter07
 CHANGE_FILES = \
-	bootscripts.ch    \
-	chapter07.ch      \
-	clock.ch          \
-	consoled.ch       \
-	etcshells.ch      \
-	inputrc.ch        \
-	introduction.ch   \
-	introductiond.ch  \
-	locale.ch         \
-	network.ch        \
-	networkd.ch       \
-	profile.ch        \
-	symlinks.ch       \
-        systemd-custom.ch \
-	udev.ch           \
-	usage.ch
+	bison.ch           \
+	changingowner.ch   \
+	chapter07.ch       \
+	chroot.ch          \
+	createfiles.ch     \
+	creatingdirs.ch    \
+	gettext.ch         \
+	introduction.ch    \
+	kernfs.ch          \
+	libstdc++-pass2.ch \
+	perl.ch            \
+	python.ch          \
+	stripping.ch       \
+	texinfo.ch         \
+	util-linux.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -39,3 +38,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

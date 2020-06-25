@@ -52,47 +52,48 @@
 @z
 
 @x
-         <para>Procedures done as the root user after Section 2.4 need to 
-         have the LFS environment variable set <emphasis>FOR THE ROOT
-         USER</emphasis>.</para>
+        <para>Procedures done as the root user after Section 2.4 need to 
+        have the LFS environment variable set <emphasis>FOR THE ROOT
+        USER</emphasis>.</para>
 @y
-         <para>
-         2.4節以降において root ユーザーにより実行する作業では LFS 環境変数の設定が必要です。
-         さらにそれは<emphasis>rootユーザーにおいて</emphasis> 設定されていなければなりません。
-         </para>
+        <para>
+        2.4 節以降において root ユーザーにより実行する作業では LFS 環境変数の設定が必要です。
+        さらにそれは<emphasis>rootユーザーにおいて</emphasis>設定されていなければなりません。
+        </para>
 @z
 
 @x
-  <title>Chapter&nbsp;5</title>
+  <title>Chapter&nbsp;5&ndash;6</title>
 @y
-  <title>第&nbsp;5&nbsp;章</title>
+  <title>第&nbsp;5&nbsp;章～第&nbsp;6&nbsp;章</title>
 @z
 
 @x
-         <para>The /mnt/lfs partition must be mounted.</para>
+        <para>The /mnt/lfs partition must be mounted.</para>
 @y
-         <para>
-         /mnt/lfs パーティションがマウントされていることが必要です。
-         </para>
+        <para>
+        /mnt/lfs パーティションがマウントされていることが必要です。
+        </para>
 @z
 
 @x
-         <para><emphasis>ALL</emphasis> instructions in Chapter&nbsp;5 
-         must be done by user <emphasis>lfs</emphasis>.  
-         A  <command>su - lfs</command> needs to be done before any 
-         task in Chapter&nbsp;5.</para>
+        <para>Threse two chapters must be done as user <emphasis>lfs</emphasis>.
+        A <command>su - lfs</command> needs to be done before any task in these
+        chapters. Failing to do that, you are at risk of installing packages to the
+        host, and potentially rendering it unusable.</para>
 @y
-         <para>
-         第&nbsp;5&nbsp;章における処理を<emphasis>すべて</emphasis>、ユーザー <emphasis>lfs</emphasis> により実施することが必要です。
-         第&nbsp;5&nbsp;章における処理の実施前には <command>su - lfs</command> を行うことが必要です。
-         </para>
+        <para>
+        この 2 つの章における処理は<emphasis>すべて</emphasis>、ユーザー <emphasis>lfs</emphasis> により実施してください。
+        処理の実施前には <command>su - lfs</command> を行ないます。
+        これをやり忘れた場合、パッケージインストールをホストに対して行ってしまい、利用不能になってしまうリスクがあります。
+        </para>
 @z
 
 @x
          <para>The procedures in <xref linkend='ch-tools-generalinstructions'/>
          are critical.  If there is any
          doubt about installing a package, ensure any previously expanded
-         tarballs are removed, re-extract the package files, and complete all
+         tarballs are removed, then re-extract the package files, and complete all
          instructions in that section.</para>
 @y
          <para>
@@ -102,9 +103,9 @@
 @z
 
 @x
-  <title>Chapters&nbsp;6&ndash;8</title>
+  <title>Chapter&nbsp;7&ndash;10</title>
 @y
-  <title>第&nbsp;6&nbsp;章～第&nbsp;8&nbsp;章</title>
+  <title>第&nbsp;7&nbsp;章～第&nbsp;10&nbsp;章</title>
 @z
 
 @x
@@ -116,12 +117,23 @@
 @z
 
 @x
+        <para>A few operations, from <quote>Changing Ownership</quote> to
+        <quote>Entering the Chroot Environment</quote> must be done as the
+        root user, with the LFS envirnment variable set for the root user.</para>
+@y
+        <para>
+        <quote>所有者の変更</quote>から<quote>Chroot 環境への移行</quote>までの操作は、root ユーザーで行います。
+        LFS 環境変数が root ユーザーにおいて設定されている必要があります。
+        </para>
+@z
+
+@x
          <para> When entering chroot, the LFS environment variable must be set
-         for root.  The LFS variable is not used otherwise.</para>
+         for root. The LFS variable is not used afterwards.</para>
 @y
          <para>
          chroot 環境に入った際には、環境変数 LFS が root ユーザーにおいて設定されている必要があります。
-         それ以外で LFS 変数は使いません。
+         これ以降、LFS 変数は使いません。
          </para>
 @z
 
@@ -129,13 +141,13 @@
          <para> The virtual file systems must be mounted.  This can be done
          before or after entering chroot by changing to a host virtual terminal
          and, as root, running the commands in 
-         <xref linkend='ch-system-bindmount'/> and 
-         <xref linkend='ch-system-kernfsmount'/>.</para>
+         <xref linkend='ch-tools-bindmount'/> and 
+         <xref linkend='ch-tools-kernfsmount'/>.</para>
 @y
          <para>
          仮想ファイルシステムがマウントされている必要があります。
          これは chroot 環境への移行前後において、ホストの仮想端末を変更することで実現します。
-         root ユーザーとなって <xref linkend='ch-system-bindmount'/> と <xref
-         linkend='ch-system-kernfsmount'/> を実行する必要があります。
+         root ユーザーとなって <xref linkend='ch-tools-bindmount'/> と <xref
+         linkend='ch-tools-kernfsmount'/> を実行する必要があります。
          </para>
 @z

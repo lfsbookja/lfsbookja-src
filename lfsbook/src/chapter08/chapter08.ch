@@ -14,13 +14,13 @@
 @z
 
 @x
-<chapter id="chapter-bootable" xreflabel="Chapter&nbsp;8">
+<chapter id="chapter-building-system" xreflabel="Chapter&nbsp;8">
 @y
-<chapter id="chapter-bootable" xreflabel="第&nbsp;8&nbsp;章">
+<chapter id="chapter-building-system" xreflabel="第&nbsp;8&nbsp;章">
 @z
 
 @x
-  <title>Making the LFS System Bootable</title>
+  <title>Installing Basic System Software</title>
 @y
-  <title>LFS システムのブート設定</title>
+  <title>基本的なソフトウェアのインストール</title>
 @z

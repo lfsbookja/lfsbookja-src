@@ -14,11 +14,15 @@
 @z
 
 @x
-    <para>The Grep package contains programs for searching through files.</para>
+  <indexterm zone="ch-tools-grep">
+    <primary sortas="a-Grep">Grep</primary>
+    <secondary>tools</secondary>
+  </indexterm>
 @y
-    <para>
-    Grep パッケージはファイル内の検索を行うプログラムを提供します。
-    </para>
+  <indexterm zone="ch-tools-grep">
+    <primary sortas="a-Grep">Grep</primary>
+    <secondary>&Tools;</secondary>
+  </indexterm>
 @z
 
 @x
@@ -39,11 +43,17 @@
     <para>&CompileThePackage;</para>
 @z
 
-@x
-    <para>To test the results, issue:</para>
-@y
-    <para>コンパイル結果をテストするには以下を実行します。</para>
-@z
+%@x
+%    <para>Compilation is now complete. As discussed earlier, running the test
+%    suite is not mandatory for the temporary tools here in this chapter. To run
+%    the Grep test suite anyway, issue the following command:</para>
+%@y
+%    <para>
+%    コンパイルが終了しました。
+%    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+%    しかしテストスイートを実行するなら、以下を実行します。
+%    </para>
+%@z
 
 @x
     <para>Install the package:</para>
@@ -52,49 +62,10 @@
 @z
 
 @x
-    <title>Contents of Grep</title>
+    <para>Details on this package are located in
+    <xref linkend="contents-grep" role="."/></para>
 @y
-    <title>&ContentsOf1;Grep&ContentsOf2;</title>
-@z
-
-@x
-      <segtitle>Installed programs</segtitle>
-@y
-      <segtitle>&InstalledProgram;</segtitle>
-@z
-
-@x
-        <seg>egrep, fgrep, and grep</seg>
-@y
-        <seg>egrep, fgrep, grep</seg>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x egrep
-          <para>Prints lines matching an extended regular expression</para>
-@y
-          <para>
-          拡張正規表現 (extended regular expression) にマッチした行を表示します。
-          </para>
-@z
-
-@x fgrep
-          <para>Prints lines matching a list of fixed strings</para>
-@y
-          <para>
-          固定文字列の一覧にマッチした行を表示します。
-          </para>
-@z
-
-@x grep
-          <para>Prints lines matching a basic regular expression</para>
-@y
-          <para>
-          基本的な正規表現に合致した行を出力します。
-          </para>
+    <para>
+    &Details1;<xref linkend="contents-grep" role=""/>&Details2;
+    </para>
 @z

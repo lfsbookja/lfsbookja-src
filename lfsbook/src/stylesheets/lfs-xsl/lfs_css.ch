@@ -1,5 +1,5 @@
 @x
-.package .segbody, .appendix .segbody {
+.package .segbody {
   display: block;
   padding-left: 14em;
 }
@@ -8,10 +8,17 @@
   display: block;
   padding-left: 9em;
 }
+@z
 
+@x
+.appendix .segbody{
+  display: block;
+  padding-left: 16em;
+}
+@y
 .appendix .segbody {
   display: block;
-  padding-left: 14.5em;
+  padding-left: 16em;
 }
 @z
 

@@ -37,7 +37,7 @@
     the book.</para>
 @y
     <para>
-    第I部では LFS 構築作業を進めるための重要事項について説明します。
+    第 I 部では LFS 構築作業を進めるための重要事項について説明します。
     また本書のさまざまな情報についても説明します。
     </para>
 @z
@@ -54,18 +54,32 @@
     tools.</para>
 @y
     <para>
-    第II部では、パーティションの生成、パッケージのダウンロード、一時的なツールのコンパイルといった、システム構築の準備作業について説明します。
+    第 II 部では、パーティションの生成、パッケージのダウンロード、一時的なツールのコンパイルといった、システム構築の準備作業について説明します。
     </para>
 @z
 
 @x
-    <title>Part III - Building the LFS System</title>
+    <title>Part III - Building the LFS Cross Toolchain and Temporary Tools</title>
 @y
-    <title>第 III 部 - LFSシステムの構築</title>
+    <title>第 III 部 - LFS クロスチェーンと一時的ツールの構築</title>
 @z
 
 @x
-    <para>Part III guides the reader through the building of the LFS
+    <para>Part III provides instructions for building the tools
+    needed for constructing the final LFS system.</para>
+@y
+    <para>
+    第 III 部では、最終的な LFS システム構築のために必要となるツールのビルド説明を行います。</para>
+@z
+
+@x
+    <title>Part IV - Building the LFS System</title>
+@y
+    <title>第 IV 部 - LFS システムの構築</title>
+@z
+
+@x
+    <para>Part IV guides the reader through the building of the LFS
     system&mdash;compiling and installing all the packages one by one,
     setting up the boot scripts, and installing the kernel. The resulting
     Linux system is the foundation on which other software can be built to
@@ -74,9 +88,27 @@
     important files that have been installed.</para>
 @y
     <para>
-    第III部では LFS システムの構築作業を順に説明していきます。
+    第 IV 部では LFS システムの構築作業を順に説明していきます。
     そこでは全パッケージのコンパイルとインストール、ブートスクリプトの設定、カーネルのインストールを行います。
     出来上がる Linux システムをベースとして、他のソフトウェアを必要に応じて導入し、このシステムを拡張していくことができます。
     本書の終わりには、インストール対象のプログラム、ライブラリ、あるいは重要なファイル類についてのさくいんも示します。
+    </para>
+@z
+
+@x
+    <title>Part V - Appendices</title>
+@y
+    <title>第 V 部 - 付録</title>
+@z
+
+@x
+    <para>Part V provides information about the book itself including
+    acronyms and terms, acknowledgments, package dependencies, 
+    a listing of LFS boot scripts, licenses for the distribution of the 
+    book, and a comprehensive index of packages, programs, libraries, 
+    and scripts.</para>
+@y
+    <para>
+    第 V 部では、本書における略語や用語、謝辞、パッケージの依存関係、LFS ブートスクリプトの一覧、本書配布のライセンス、パッケージ、プログラム、ライブラリ、スクリプトのさくいんを示します。
     </para>
 @z

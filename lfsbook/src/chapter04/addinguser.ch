@@ -21,8 +21,8 @@
 
 @x
   <para>When logged in as user <systemitem class="username">root</systemitem>,
-  making a single mistake can damage or destroy a system. Therefore, we
-  recommend building the packages in the next chapter as an unprivileged user.
+  making a single mistake can damage or destroy a system. Therefore, 
+  the packages in the next two chapters are built as an unprivileged user.
   You could use your own user name, but to make it easier to set up a clean
   working environment, create a new user called <systemitem
   class="username">lfs</systemitem> as a member of a new group (also named
@@ -86,10 +86,10 @@
 @z
 
 @x
-        <para>This is the actual name for the created group and user.</para>
+        <para>This is the actual name for the created user.</para>
 @y
         <para>
-        生成するグループおよびユーザーの名称を与えます。
+        生成するユーザーの名称を与えます。
         </para>
 @z
 
@@ -111,12 +111,12 @@
 
 @x
   <para>Grant <systemitem class="username">lfs</systemitem> full access to
-  <filename class="directory">$LFS/tools</filename> by making
+  all directories under <filename class="directory">$LFS</filename> by making
   <systemitem class="username">lfs</systemitem> the directory owner:</para>
 @y
   <para>
-  <filename class="directory">$LFS/tools</filename> ディレクトリの所有者を <systemitem
-  class="username">lfs</systemitem> ユーザーとすることで、このディレクトリへのフルアクセス権を設定します。
+  <filename class="directory">$LFS</filename> ディレクトリの所有者を <systemitem
+  class="username">lfs</systemitem> ユーザーとすることで、このディレクトリ配下の全ディレクトリへのフルアクセス権を設定します。
   </para>
 @z
 
@@ -146,12 +146,12 @@
 @x
   <para>Next, login as user <systemitem class="username">lfs</systemitem>.
   This can be done via a virtual console, through a display manager, or with
-  the following substitute user command:</para>
+  the following substitute/switch user command:</para>
 @y
   <para>
   <systemitem class="username">lfs</systemitem> でログインします。
   これはディスプレイマネージャーを通じて仮想端末を用いることができます。
-  また以下のコマンドを実行するのでも構いません。
+  また以下のユーザー変更コマンドを用いるのでも構いません。
   </para>
 @z
 

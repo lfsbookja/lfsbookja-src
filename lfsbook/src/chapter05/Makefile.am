@@ -7,45 +7,13 @@
 ##
 BOOKdir = @abs_bookdir@/chapter05
 CHANGE_FILES = \
-	bash.ch                \
-	binutils-pass1.ch      \
-	binutils-pass2.ch      \
-	bison.ch               \
-	bzip2.ch               \
-	changingowner.ch       \
-	chapter05.ch           \
-	coreutils.ch           \
-	dejagnu.ch             \
-	diffutils.ch           \
-	expect.ch              \
-	file.ch                \
-	findutils.ch           \
-	flex.ch                \
-	gawk.ch                \
-	gcc-pass1.ch           \
-	gcc-pass2.ch           \
-	generalinstructions.ch \
-	gettext.ch             \
-	glibc.ch               \
-	grep.ch                \
-	gzip.ch                \
-	introduction.ch        \
-	libstdc++.ch           \
-	linux-headers.ch       \
-	m4.ch                  \
-	make.ch                \
-	ncurses.ch             \
-	patch.ch               \
-	perl.ch                \
-	python.ch              \
-	sed.ch                 \
-	stripping.ch           \
-	tar.ch                 \
-	tcl.ch                 \
-	texinfo.ch             \
-	toolchaintechnotes.ch  \
-	util-linux.ch          \
-	xz.ch
+	binutils-pass1.ch \
+	chapter05.ch      \
+	gcc-pass1.ch      \
+	glibc.ch          \
+	introduction.ch   \
+	libstdc++.ch      \
+	linux-headers.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -62,3 +30,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

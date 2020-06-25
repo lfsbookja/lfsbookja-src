@@ -14,9 +14,15 @@
 @z
 
 @x
-    <para>The Bash package contains the Bourne-Again SHell.</para>
+  <indexterm zone="ch-tools-bash">
+    <primary sortas="a-Bash">Bash</primary>
+    <secondary>tools</secondary>
+  </indexterm>
 @y
-    <para>Bash は Bourne-Again SHell を提供します。</para>
+  <indexterm zone="ch-tools-bash">
+    <primary sortas="a-Bash">Bash</primary>
+    <secondary>&Tools;</secondary>
+  </indexterm>
 @z
 
 @x
@@ -26,35 +32,28 @@
 @z
 
 @x
-    <para>Incorporate some upstream fixes:</para>
-@y
-    <para>
-    アップストリームのパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Prepare Bash for compilation:</para>
 @y
     <para>&PreparePackage1;Bash&PreparePackage2;</para>
 @z
 
 @x
-      <title>The meaning of the new configure option:</title>
+      <title>The meaning of the configure options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x --with-installed-readline
-          <para>This option tells Bash to use the <filename
-          class="libraryfile">readline</filename> library that is already
-          installed on the system rather than using its own readline
-          version.</para>
+@x
+          <para>This option turns off the use of Bash's memory allocation
+          (<function>malloc</function>) function which is known to cause
+          segmentation faults. By turning this option off, Bash will use
+          the <function>malloc</function> functions from Glibc which are
+          more stable.</para>
 @y
           <para>
-          このオプションは Bash が持つ独自の <filename
-          class="libraryfile">readline</filename> ライブラリではなく、既にインストールした <filename
-          class="libraryfile">readline</filename> ライブラリを用いることを指示します。
+          このオプションは Bash のメモリ割り当て関数 (<function>malloc</function>) を利用しないことを指示します。
+          この関数はセグメンテーションフォールトが発生する可能性があるものとして知られています。
+          このオプションをオフにすることで、Bash は Glibc が提供する <function>malloc</function> 関数を用いるものとなり、そちらの方が安定しています。
           </para>
 @z
 
@@ -64,139 +63,38 @@
     <para>&CompileThePackage;</para>
 @z
 
+%@x
+%    <para>Compilation is now complete. As discussed earlier, running the test
+%    suite is not mandatory for the temporary tools here in this chapter. To run
+%    the Bash test suite anyway, issue the following command:</para>
+%@y
+%    <para>
+%    コンパイルが終了しました。
+%    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+%    しかしテストスイートを実行するなら、以下を実行します。
+%    </para>
+%@z
+
 @x
-    <para>Skip down to <quote>Install the
-    package</quote> if not running the test suite.</para>
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>Make a link for the programs that use <command>sh</command> for
+    a shell:</para>
 @y
     <para>
-    テストスィートを実行しない場合は<quote>パッケージをインストールします。</quote>と書かれた箇所まで読み飛ばしてください。
+    他のプログラム類がシェルとして <command>sh</command> を用いるものがあるためリンクを作ります。
     </para>
 @z
 
 @x
-    <para>To prepare the tests, ensure that the <systemitem class="username">tester</systemitem> user can write to the sources tree:</para>
+    <para>Details on this package are located in
+    <xref linkend="contents-bash" role="."/></para>
 @y
     <para>
-    テストを実施するにあたっては <systemitem
-    class="username">tester</systemitem> ユーザーによるソースツリーへの書き込みを可能とします。
+    &Details1;<xref linkend="contents-bash" role=""/>&Details2;
     </para>
-@z
-
-@x
-    <para>Now, run the tests as the <systemitem
-    class="username">tester</systemitem> user:</para>
-@y
-    <para>
-    <systemitem class="username">tester</systemitem> ユーザーでテストを実行します。
-    </para>
-@z
-
-@x
-    <para>The <systemitem class="username">tester</systemitem>
-    user does not have enough permissions for all the tests to pass. This shows
-    up in some <quote>diff</quote> output in four test results. Portions of the 
-    run-execscript, run-lastpipe, run-read, and run-test programs
-    are known to fail in the LFS chroot environment, but pass if the tests
-    are run in a full system.</para>
-@y
-    <para>
-    <systemitem class="username">tester</systemitem> ユーザーは、すべてのテストを成功させる十分な権限を有していません。
-    このことはテストの<quote>diff</quote>出力からわかります。
-    run-execscript, run-lastpipe, run-read, run-test というプログラムに対するテストは、LFS chroot 環境下では部分的に失敗します。
-    ただし完成したシステム上において、このテストを実行すれば成功します。
-    </para>
-@z
-
-@x
-    <para>Install the package and move the main executable to
-    <filename class='directory'>/bin</filename>:</para>
-@y
-    <para>
-    &InstallThePackage;
-    そして実行モジュールを <filename class='directory'>/bin</filename> へ移動します。</para>
-@z
-
-@x
-    <para>Run the newly compiled <command>bash</command> program (replacing the one that is
-    currently being executed):</para>
-@y
-    <para>
-    新たにコンパイルした <command>bash</command> プログラムを実行します。(この時点までに実行されていたものが置き換えられます。)
-    </para>
-@z
-
-@x
-      <para>The parameters used make the <command>bash</command>
-      process an interactive login shell and continue to disable hashing so
-      that new programs are found as they become available.</para>
-@y
-      <para>
-      ここで指定しているパラメーターは対話形式のログインシェルとして、またハッシュ機能を無効にして <command>bash</command> プロセスを起動します。
-      これにより新たに構築するプログラム類は構築後すぐに利用できることになります。
-      </para>
-@z
-
-@x
-    <title>Contents of Bash</title>
-@y
-    <title>&ContentsOf1;Bash&ContentsOf2;</title>
-@z
-
-@x
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directory</segtitle>
-@y
-      <segtitle>&InstalledProgram;</segtitle>
-      <segtitle>&InstalledDirectory;</segtitle>
-@z
-
-@x
-        <seg>bash, bashbug, and sh (link to bash)</seg>
-        <seg>/usr/include/bash, /usr/lib/bash, and
-        /usr/share/doc/bash-&bash-version;</seg>
-@y
-        <seg>bash, bashbug, sh (bash へのリンク)</seg>
-        <seg>/usr/include/bash, /usr/lib/bash,
-        /usr/share/doc/bash-&bash-version;</seg>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x bash
-          <para>A widely-used command interpreter; it performs many types of
-          expansions and substitutions on a given command line before executing
-          it, thus making this interpreter a powerful tool</para>
-@y
-          <para>
-          広く活用されているコマンドインタープリター。
-          処理実行前には、指示されたコマンドラインをさまざまに展開したり置換したりします。
-          この機能があるからこそインタープリター機能を強力なものにしています。
-          </para>
-@z
-
-@x bashbug
-          <para>A shell script to help the user compose and mail standard
-          formatted bug reports concerning <command>bash</command></para>
-@y
-          <para>
-          <command>bash</command> に関連したバグ報告を、標準書式で生成しメール送信することを補助するシェルスクリプトです。
-          </para>
-@z
-
-@x sh
-          <para>A symlink to the <command>bash</command> program; when invoked
-          as <command>sh</command>, <command>bash</command> tries to mimic the
-          startup behavior of historical versions of <command>sh</command> as
-          closely as possible, while conforming to the POSIX standard as
-          well</para>
-@y
-          <para>
-          <command>bash</command> プログラムへのシンボリックリンク。
-          <command>sh</command> として起動された際には、かつてのバージョンである <command>sh</command> の起動時の動作と、出来るだけ同じになるように振舞います。
-          同時に POSIX 標準に適合するよう動作します。
-          </para>
 @z

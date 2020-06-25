@@ -177,12 +177,10 @@
 @z
 
 @x DejaGNU
-        <para>This package contains a framework for testing other programs.
-        It is only installed in the temporary toolchain.</para>
+        <para>This package contains a framework for testing other programs.</para>
 @y
         <para>
         このパッケージは、他のプログラムをテストするフレームワークを提供します。
-        これは一時的なツールチェーンプログラムをインストールする際にだけ必要となります。
         </para>
 @z
 
@@ -210,13 +208,15 @@
 @z
 
 @x Eudev
-        <para>This package is a device manager.  It dynamically controls the entries
-        in the /dev directory as devices are added or removed from the system.
+        <para>This package is a device manager.  It dynamically controls the ownership,
+        permissions, names, and symbolic links of devices in the /dev directory as 
+        devices are added or removed from the system.
         </para>
 @y
         <para>
         このパッケージはデバイスマネージャーです。
-        /dev ディレクトリにデバイスとして登録された項目の追加削除を動的に制御します。
+        /dev ディレクトリに登録されたデバイスの所有者、パーミッション、名称、シンボリックリンクを動的に制御します。
+        これによりデバイスは、システムへの追加または削除が行われます。
         </para>
 @z
 
@@ -244,12 +244,12 @@
 @z
 
 @x File
-        <para>This package contains a utility for determining the type of a 
-        given file or files. A few packages need it to build.</para>
+        <para>This package contains a utility for determining the type of a
+        given file or files. A few packages need it in their build scripts.</para>
 @y
         <para>
         このパッケージは、指定されたファイルの種類を判別するユーティリティプログラムを提供します。
-        他のパッケージにおいて、ビルド時にこれを必要とするものもあります。
+        他のパッケージのビルドスクリプト内にてこれを必要とするものもあります。
         </para>
 @z
 
@@ -319,7 +319,7 @@
 @z
 
 @x Glibc
-        <para>This package contains the main C library.  Linux programs would
+        <para>This package contains the main C library.  Linux programs will
         not run without it.</para>
 @y
         <para>
@@ -329,7 +329,7 @@
 
 @x GMP
         <para>This package contains math libraries that provide useful functions
-        for arbitrary precision arithmetic.  It is required to build Gcc.</para>
+        for arbitrary precision arithmetic.  It is required to build GCC.</para>
 @y
         <para>
         このパッケージは数値演算ライブラリを提供するもので、任意精度演算 (arbitrary precision arithmetic) についての有用な関数を含みます。
@@ -585,7 +585,7 @@
 
 @x MPC
         <para>This package contains functions for the arithmetic of complex
-        numbers. It is required by Gcc.</para>
+        numbers. It is required by GCC.</para>
 @y
         <para>
         このパッケージは複素数演算のための関数を提供します。
@@ -594,8 +594,8 @@
 @z
 
 @x MPFR
-        <para>This package contains functions for multiple precision 
-        arithmetic.  It is required by Gcc.</para>
+        <para>This package contains functions for multiple precision
+        arithmetic.  It is required by GCC.</para>
 @y
         <para>
         このパッケージは倍精度演算 (multiple precision) の関数を提供します。
@@ -663,7 +663,7 @@
 @z
 
 @x Pkg-config
-        <para>This package provides a program to return meta-data about an 
+        <para>This package provides a program that returns meta-data about an
         installed library or package.</para>
 @y
         <para>
@@ -778,13 +778,11 @@
 
 @x Tcl
         <para>This package contains the Tool Command Language used
-        in many test suites in LFS packages.  It is only installed in 
-        the temporary toolchain.</para>
+        in many test suites in LFS packages.</para>
 @y
         <para>
         このパッケージはツールコマンド言語 (Tool Command Language) を提供します。
         LFS が扱うパッケージにてテストスイートの実行に必要となります。
-        これは一時的なツールチェーンの構築時にのみインストールします。
         </para>
 @z
 

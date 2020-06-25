@@ -21,7 +21,7 @@
 
 @x
   <para>In this chapter, we will perform a few additional tasks to prepare
-  for building the temporary system. We will create a directory in
+  for building the temporary system. We will create a set of directories in
   <filename class="directory">$LFS</filename> for the installation of the
   temporary tools, add an unprivileged user to reduce risk,
   and create an appropriate build environment for that user. We will also
@@ -31,7 +31,7 @@
 @y
   <para>
   本章では一時システムをビルドするために、あともう少し作業を行います。
-  <filename class="directory">$LFS</filename> ディレクトリ内にインストールディレクトリを作ります。
+  <filename class="directory">$LFS</filename> ディレクトリ内に、一連のインストールディレクトリを作ります。
   リスク軽減のために一般ユーザーを生成し、このユーザーにおいてのビルド環境を作ります。
   また LFS パッケージ類の構築時間を測る手段として標準時間<quote>SBUs</quote>について説明し、各パッケージのテストスイートについて触れます。
   </para>

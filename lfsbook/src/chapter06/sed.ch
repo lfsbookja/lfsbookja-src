@@ -14,9 +14,15 @@
 @z
 
 @x
-    <para>The Sed package contains a stream editor.</para>
+  <indexterm zone="ch-tools-sed">
+    <primary sortas="a-Sed">Sed</primary>
+    <secondary>tools</secondary>
+  </indexterm>
 @y
-    <para>Sed パッケージはストリームエディターを提供します。</para>
+  <indexterm zone="ch-tools-sed">
+    <primary sortas="a-Sed">Sed</primary>
+    <secondary>&Tools;</secondary>
+  </indexterm>
 @z
 
 @x
@@ -26,61 +32,28 @@
 @z
 
 @x
-    <para>First fix an issue in the LFS environment:</para>
-@y
-    <para>
-    はじめに LFS 環境にて問題となる箇所を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Sed for compilation:</para>
 @y
     <para>&PreparePackage1;Sed&PreparePackage2;</para>
 @z
 
 @x
-    <para>Compile the package and generate the HTML documentation:</para>
+    <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルし HTML ドキュメントを生成します。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>Install the package:</para>
 @y
-    <para>コンパイル結果をテストするには以下を実行します。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
-    <para>Install the package and its documentation:</para>
+    <para>Details on this package are located in
+    <xref linkend="contents-sed" role="."/></para>
 @y
-    <para>パッケージとドキュメントをインストールします。</para>
-@z
-
-@x
-    <title>Contents of Sed</title>
-@y
-    <title>&ContentsOf1;Sed&ContentsOf2;</title>
-@z
-
-@x
-      <segtitle>Installed program</segtitle>
-      <segtitle>Installed directory</segtitle>
-@y
-      <segtitle>&InstalledProgram;</segtitle>
-      <segtitle>&InstalledDirectory;</segtitle>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x
-          <para>Filters and transforms text files in a single pass</para>
-@y
-          <para>
-          テキストファイルを一度の処理でフィルタリングし変換します。
-          </para>
+    <para>
+    &Details1;<xref linkend="contents-sed" role=""/>&Details2;
+    </para>
 @z

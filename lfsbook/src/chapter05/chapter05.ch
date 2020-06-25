@@ -14,13 +14,13 @@
 @z
 
 @x
-<chapter id="chapter-temporary-tools" xreflabel="Chapter&nbsp;5">
+<chapter id="chapter-cross-tools" xreflabel="Chapter&nbsp;5">
 @y
-<chapter id="chapter-temporary-tools" xreflabel="第&nbsp;5&nbsp;章">
+<chapter id="chapter-cross-tools" xreflabel="第&nbsp;5&nbsp;章">
 @z
 
 @x
-  <title>Constructing a Temporary System</title>
+  <title>Compiling a Cross-Toolchain</title>
 @y
-  <title>一時的環境の構築</title>
+  <title>クロスツールチェーンの構築</title>
 @z

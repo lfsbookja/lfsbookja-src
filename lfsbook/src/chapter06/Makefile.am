@@ -7,90 +7,25 @@
 ##
 BOOKdir = @abs_bookdir@/chapter06
 CHANGE_FILES = \
-	aboutdebug.ch        \
-        acl.ch               \
-	adjusting.ch         \
-        attr.ch              \
-	autoconf.ch          \
-	automake.ch          \
-	bash.ch              \
-	bc.ch                \
-	binutils.ch          \
-	bison.ch             \
-	bzip2.ch             \
-	chapter06.ch         \
-	check.ch             \
-	chroot.ch            \
-	coreutils.ch         \
-	createfiles.ch       \
-	creatingdirs.ch      \
-	dbus.ch              \
-	diffutils.ch         \
-	e2fsprogs.ch         \
-        eudev.ch             \
-        expat.ch             \
-	file.ch              \
-	findutils.ch         \
-	flex.ch              \
-	gawk.ch              \
-	gcc.ch               \
-	gdbm.ch              \
-	gettext.ch           \
-	glibc.ch             \
-	gmp.ch               \
-        gperf.ch             \
-	grep.ch              \
-	groff.ch             \
-	grub.ch              \
-	gzip.ch              \
-	iana-etc.ch          \
-	inetutils.ch         \
-        intltool.ch          \
-	introduction.ch      \
-	iproute2.ch          \
-	kbd.ch               \
-	kernfs.ch            \
-	kmod.ch              \
-	less.ch              \
-        libcap.ch            \
-	libelf.ch            \
-	libffi.ch            \
-	libpipeline.ch       \
-	libtool.ch           \
-	linux-headers.ch     \
-	m4.ch                \
-	make.ch              \
-	man-db.ch            \
-	man-pages.ch         \
-	meson.ch             \
-	mpc.ch               \
-	mpfr.ch              \
-	ncurses.ch           \
-	ninja.ch             \
-	openssl.ch           \
-	patch.ch             \
-	perl.ch              \
-	pkgconfig.ch         \
-	pkgmgt.ch            \
-	procps.ch            \
-	psmisc.ch            \
-	python.ch            \
-	readline.ch          \
-	revisedchroot.ch     \
-	sed.ch               \
-	shadow.ch            \
-	strippingagain.ch    \
-	sysklogd.ch          \
-	systemd.ch           \
-	sysvinit.ch          \
-	tar.ch               \
-	texinfo.ch           \
-	util-linux.ch        \
-	vim.ch               \
-        xml-parser.ch        \
-	xz.ch                \
-	zlib.ch              \
-	zstd.ch
+	bash.ch           \
+	binutils-pass2.ch \
+	chapter06.ch      \
+	coreutils.ch      \
+	diffutils.ch      \
+	file.ch           \
+	findutils.ch      \
+	gawk.ch           \
+	gcc-pass2.ch      \
+	grep.ch           \
+	gzip.ch           \
+	introduction.ch   \
+	m4.ch             \
+	make.ch           \
+	ncurses.ch        \
+	patch.ch          \
+	sed.ch            \
+	tar.ch            \
+	xz.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -106,4 +41,11 @@ all: ctie $(srcs)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+-include Makefile.sub
+Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
+	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

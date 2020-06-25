@@ -65,22 +65,16 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
-@x Gccc ASAN Patch
-        <para>Download: <ulink url="&patches-root;&gcc-asan-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&gcc-asan-patch;"/></para>
-@z
-
 @x Glibc FHS Patch
         <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @z
 
-@x Glibc Glob Security Patch
-        <para>Download: <ulink url="&patches-root;&glibc-glob-patch;"/></para>
+@x GCC Cross Build Fix Patch
+        <para>Download: <ulink url="&patches-root;&gcc-cross-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&glibc-glob-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&gcc-cross-patch;"/></para>
 @z
 
 @x Kbd Backspace/Delete Fix Patch
@@ -89,28 +83,10 @@
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @z
 
-@x Ninja Limit Jobs Patch
-        <para>Download: <ulink url="&patches-root;&ninja-limit-jobs-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&ninja-limit-jobs-patch;"/></para>
-@z
-
-@x Readline Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-@z
-
 @x Sysvinit Consolidated Patch
         <para>Download: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
-@z
-
-@x Systemd Consolidated Patch
-        <para>Download: <ulink url="&patches-root;&systemd-consolidated-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&systemd-consolidated-patch;"/></para>
 @z
 
 @x Systemd GCC-10 Patch

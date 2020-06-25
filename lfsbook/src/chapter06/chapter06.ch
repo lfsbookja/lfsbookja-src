@@ -14,13 +14,13 @@
 @z
 
 @x
-<chapter id="chapter-building-system" xreflabel="Chapter&nbsp;6">
+<chapter id="chapter-temporary-tools" xreflabel="Chapter&nbsp;6">
 @y
-<chapter id="chapter-building-system" xreflabel="第&nbsp;6&nbsp;章">
+<chapter id="chapter-temporary-tools" xreflabel="第&nbsp;6&nbsp;章">
 @z
 
 @x
-  <title>Installing Basic System Software</title>
+  <title>Cross Compiling Temporary Tools</title>
 @y
-  <title>基本的なソフトウェアのインストール</title>
+  <title>クロスコンパイルによる一時的ツール</title>
 @z

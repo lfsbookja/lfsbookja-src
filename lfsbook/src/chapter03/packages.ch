@@ -493,20 +493,20 @@
         <para>&Download;: <ulink url="&mpfr-url;"/></para>
 @z
 
+@x Ncurses
+        <para>Home page: <ulink url="&ncurses-home;"/></para>
+        <para>Download: <ulink url="&ncurses-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&ncurses-home;"/></para>
+        <para>&Download;: <ulink url="&ncurses-url;"/></para>
+@z
+
 @x Ninja
         <para>Home page: <ulink url="&ninja-home;"/></para>
         <para>Download: <ulink url="&ninja-url;"/></para>
 @y
         <para>&Homepage;: <ulink url="&ninja-home;"/></para>
         <para>&Download;: <ulink url="&ninja-url;"/></para>
-@z
-
-@x ncurses
-        <para>Home page: <ulink url="&ncurses-home;"/></para>
-        <para>Download: <ulink url="&ncurses-url;"/></para>
-@y
-        <para>&Homepage;: <ulink url="&ncurses-home;"/></para>
-        <para>&Download;: <ulink url="&ncurses-url;"/></para>
 @z
 
 @x OpenSSL
@@ -652,6 +652,12 @@
 @y
         <para>&Homepage;: <ulink url="&tcl-home;"/></para>
         <para>&Download;: <ulink url="&tcl-url;"/></para>
+@z
+
+@x Tcl Documentation
+        <para>Download: <ulink url="&tcl-docs-url;"/></para>
+@y
+        <para>&Download;: <ulink url="&tcl-docs-url;"/></para>
 @z
 
 @x texinfo

@@ -6,8 +6,8 @@
 ## $Date::                           $
 ##
 SUBDIRS=appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
-	chapter06 chapter07 chapter08 chapter09 prologue stylesheets \
-	udev-lfs
+	chapter06 chapter07 chapter08 chapter09 chapter10 chapter11 \
+	part3intro prologue stylesheets udev-lfs
 EXTRA_DIST = general.ch index.ch packages.ch patches.ch pdf-fixups.ch \
 	tidy.ch make-aux-files.ch aux-file-data.ch
 BOOKdir = @abs_bookdir@

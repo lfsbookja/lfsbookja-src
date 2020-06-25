@@ -54,6 +54,105 @@
 @z
 
 @x
+      <para>2020-06-22</para>
+        <listitem>
+          <para>[renodr] - Fix a segfault in systemd-udevd.</para>
+        </listitem>
+@y
+      <para>2020-06-22</para>
+        <listitem>
+          <para>[renodr] - systemd-udevd におけるセグメンテーションフォルトを修正。</para>
+        </listitem>
+@z
+
+@x
+      <para>2020-06-17</para>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.54.3. Fixes
+          <ulink url="&lfs-ticket-root;4673">#4673</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.07. Fixes
+          <ulink url="&lfs-ticket-root;4669">#4669</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.7.2. Fixes
+          <ulink url="&lfs-ticket-root;4662">#4662</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.7.0. Fixes
+          <ulink url="&lfs-ticket-root;4668">#4668</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.39. Fixes
+          <ulink url="&lfs-ticket-root;4671">#4671</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.180. Fixes
+          <ulink url="&lfs-ticket-root;4670">#4670</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.6.4. Fixes
+          <ulink url="&lfs-ticket-root;4672">#4672</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-06-17</para>
+        <listitem>
+          <para>[bdubbs] - meson-0.54.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4673">#4673</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.07 へのアップデート。
+          <ulink url="&lfs-ticket-root;4669">#4669</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.7.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4662">#4662</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.7.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4668">#4668</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.39 へのアップデート。
+          <ulink url="&lfs-ticket-root;4671">#4671</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.180 へのアップデート。
+          <ulink url="&lfs-ticket-root;4670">#4670</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.6.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4672">#4672</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Split Chapter 5 into three separate chapters.
+          Implement a new method of cross-building the LFS tool chain
+          and other tools to simplify the method of isolating the 
+          new system from the original host.  This will be the start of
+          LFS-10.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第 5 章を 3 つの章に分割。
+          クロスビルドによる LFS ツールチェーンや他のツールに関する新手法を導入。
+          ビルドシステムのホストからの分離方法を簡素化する。
+          LFS-10.0 の開始点とする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-06-03</para>
       <itemizedlist>
         <listitem revision="systemd">

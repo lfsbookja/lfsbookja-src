@@ -39,14 +39,14 @@
 
 @x
   <para>The SBU measure works as follows. The first package to be compiled
-  from this book is Binutils in <xref linkend="chapter-temporary-tools"/>. The
+  from this book is binutils in <xref linkend="chapter-cross-tools"/>. The
   time it takes to compile this package is what will be referred to as the
   Standard Build Unit or SBU. All other compile times will be expressed relative
   to this time.</para>
 @y
   <para>
   SBU の測定は以下のようにします。
-  本書で最初にコンパイルするのは <xref linkend="chapter-temporary-tools"/>における Binutils です。
+  本書で最初にコンパイルするのは <xref linkend="chapter-cross-tools"/>における binutils です。
   このパッケージのコンパイルに要する時間を標準ビルド時間とし、他のコンパイル時間はその時間からの相対時間として表現します。
   </para>
 @z
@@ -54,14 +54,14 @@
 @x
   <para>For example, consider a package whose compilation time is 4.5
   SBUs. This means that if a system took 10 minutes to compile and
-  install the first pass of Binutils, it will take
+  install the first pass of binutils, it will take
   <emphasis>approximately</emphasis> 45 minutes to build this example package.
-  Fortunately, most build times are shorter than the one for Binutils.</para>
+  Fortunately, most build times are shorter than the one for binutils.</para>
 @y
   <para>
   例えばあるパッケージのコンパイル時間が 4.5 SBU であったとします。
-  そして Binutils の1回目のコンパイルが 10分であったとすると、そのパッケージは <emphasis>およそ </emphasis>45分かかることを意味しています。
-  幸いにも、たいていのパッケージは Binutils よりもコンパイル時間は短いものです。
+  そして binutils の 1 回目のコンパイルが 10 分であったとすると、そのパッケージは <emphasis>およそ </emphasis>45 分かかることを意味しています。
+  幸いにも、たいていのパッケージは binutils よりもコンパイル時間は短いものです。
   </para>
 @z
 
@@ -82,12 +82,12 @@
     compilation time for a package can be reduced by performing a "parallel
     make" by either setting an environment variable or telling the
     <command>make</command> program how many processors are available.  For
-    instance, a Core2Duo can support two simultaneous processes with:</para>
+    instance, an Intel i5-6500 CPU can support four simultaneous processes with:</para>
 @y
     <para>
     最新のシステムは複数プロセッサー (デュアルコアとも言います) であることが多く、パッケージのビルドにあたっては「同時並行のビルド」によりビルド時間を削減できます。
     その場合プロセッサー数がいくつなのかを環境変数に指定するか、あるいは <command>make</command> プログラムの実行時に指定する方法があります。
-    例えばコア2デュオであれば、以下のようにして同時並行の二つのプロセスを実行することができます。
+    例えば Intel i5-6500 CPU であれば、以下のようにして同時並行の 4 つのプロセスを実行することができます。
     </para>
 @z
 

@@ -69,9 +69,9 @@
 @z
 
 @x
-    <title>The meaning of the command line options in <filename>.bashrc</filename></title>
+    <title>The meaning of the settings in <filename>.bashrc</filename></title>
 @y
-    <title><filename>.bashrc</filename> 内のコマンドラインオプションの意味</title>
+    <title><filename>.bashrc</filename> 内の設定の意味</title>
 @z
 
 @x
@@ -149,24 +149,53 @@
 @z
 
 @x
-  <para>By putting <filename class="directory">/tools/bin</filename> ahead of the
-  standard <envar>PATH</envar>, all the programs installed in <xref
-  linkend="chapter-temporary-tools"/> are picked up by the shell immediately after
-  their installation. This, combined with turning off hashing, limits the risk
-  that old programs are used from the host when the same programs are available in
-  the Chapter 5 environment.</para>
+  <para>Many modern linux distributions have merged <filename
+  class="directory">/bin</filename> and <filename
+  class="directory">/usr/bin</filename>. When this is the case, the standard
+  <envar>PATH</envar> variable needs just to be set to <filename
+  class="directory">/usr/bin/</filename> for the <xref
+  linkend="chapter-temporary-tools"/> environment. When this is not the
+  case, the following line adds <filename class="directory">/bin</filename>
+  to the path.</para>
 @y
   <para>
-  <filename class="directory">/tools/bin</filename> ディレクトリを PATH 変数の先頭に設定します。
-  <xref linkend="chapter-temporary-tools"/>にてインストールするプログラムは、インストールした直後からシェルによって実行指示が下されます。
-  この設定は、ハッシュ機能をオフとしたことと連携して、古いプログラムが実行されないようにします。
-  たとえホストシステムとの間で同一の実行プログラムがあったとしても、第5章の作業環境下では適切なプログラム実行が実現されます。
+  最近の Linux ディストリビューションでは <filename
+  class="directory">/bin</filename> と <filename
+  class="directory">/usr/bin</filename> をマージしているものが多くあります。
+  その場合、<xref
+  linkend="chapter-temporary-tools"/> に対しての標準の <envar>PATH</envar> 変数は <filename
+  class="directory">/usr/bin/</filename> に設定するだけで十分です。
+  そうでない場合は、パスに対して <filename class="directory">/bin</filename> を加える必要があります。
+  </para>
+@z
+
+@x
+  <para>If <filename class="directory">/bin</filename> is not a symbolic
+  link, then it has to be added to the <envar>PATH</envar> variable.</para>
+@y
+  <para>
+  <filename class="directory">/bin</filename> がシンボリックリンクではないは <envar>PATH</envar> 変数に加える必要があります。
+  </para>
+@z
+
+@x
+  <para>By putting <filename class="directory">$LFS/tools/bin</filename> ahead of the
+  standard <envar>PATH</envar>, the cross-compiler installed at the beginning
+  of <xref linkend="chapter-cross-tools"/> is picked up by the shell
+  immediately after its installation. This, combined with turning off hashing,
+  limits the risk that the compiler from the host be used instead of the
+  cross-compiler.</para>
+@y
+  <para>
+  <filename class="directory">$LFS//tools/bin</filename> ディレクトリを PATH 変数の先頭に設定します。
+  <xref linkend="chapter-cross-tools"/>の冒頭においてインストールしたクロスコンパイラーは、インストールした直後からシェル上から実行できるようになります。
+  この設定を行うことで、ハッシュ機能をオフにしたことと連携して、ホスト上のコンパイラーが利用されないようにします。
   </para>
 @z
 
 @x export LFS LC_ALL LFS_TGT PATH
         <para>While the above commands have set some variables, in order
-        to make them visible within any sub-shells, we export them</para>
+        to make them visible within any sub-shells, we export them.</para>
 @y
         <para>
         上のコマンド実行は、設定済の変数を改めて設定するものになりますが、シェルを新たに呼び出しても確実に設定されるようにエクスポートを行うことにします。

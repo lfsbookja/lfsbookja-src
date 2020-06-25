@@ -14,15 +14,15 @@
 @z
 
 @x
-  <title>Libstdc++ from GCC-&gcc-version;</title>
+  <title>Libstdc++ from GCC-&gcc-version;, Pass 1</title>
 @y
-  <title>GCC-&gcc-version; から取り出した libstdc++</title>
+  <title>GCC-&gcc-version; から取り出した libstdc++ 1 回め</title>
 @z
 
 @x
-    <secondary>tools, libstdc++</secondary>
+    <secondary>tools, libstdc++ pass 1</secondary>
 @y
-    <secondary>&Tools;, libstdc++</secondary>
+    <secondary>&Tools;, libstdc++ 1 回め</secondary>
 @z
 
 @x
@@ -30,14 +30,15 @@
     to compile C++ code
     (part of GCC is written in C++), but we had to defer its installation
     when we built <xref linkend="ch-tools-gcc-pass1"/>
-    because it depends on glibc, which was not yet available in /tools.
+    because it depends on glibc, which was not yet available in the target
+    directory.
     </para>
 @y
     <para>
     Libstdc++ は標準 C++ ライブラリです。
     （GCC の一部が C++ によって書かれているため）C++ をコンパイルするために必要となります。
     ただし <xref linkend="ch-tools-gcc-pass1"/> をビルドするにあたっては、このライブラリのインストールを個別に行わなければなりません。
-    それはこのライブラリが glibc に依存していて、/tools ディレクトリ内ではまだ glibc が利用できない状態であるからです。
+    それはこのライブラリが glibc に依存していて、対象ディレクトリ内ではまだ glibc が利用できない状態にあるからです。
     </para>
 @z
 
@@ -56,23 +57,23 @@
       <filename>gcc-&gcc-version;</filename> directory.</para>
 @y
       <para>
-      <application>Libstdc++</application> のソースは GCC に含まれます。
+      <application>libstdc++</application> のソースは GCC に含まれます。
       したがってまずは GCC の tarball を伸張 (解凍) した上で <filename>gcc-&gcc-version;</filename> ディレクトリに入って作業を進めます。
       </para>
 @z
 
 @x
-    <para>Create a separate build directory for Libstdc++ and enter it:</para>
+    <para>Create a separate build directory for libstdc++ and enter it:</para>
 @y
     <para>
-    Libstdc++ のためのディレクトリを新たに生成して移動します。
+    libstdc++ のためのディレクトリを新たに生成して移動します。
     </para>
 @z
 
 @x
-    <para>Prepare Libstdc++ for compilation:</para>
+    <para>Prepare libstdc++ for compilation:</para>
 @y
-    <para>&PreparePackage1;Libstdc++&PreparePackage2;</para>
+    <para>&PreparePackage1;libstdc++&PreparePackage2;</para>
 @z
 
 @x
@@ -82,7 +83,7 @@
 @z
 
 @x --host=...
-          <para>Indicates to use the cross compiler we have just built
+          <para>Specifies the use the cross compiler we have just built
           instead of the one in <filename>/usr/bin</filename>.</para>
 @y
           <para>
@@ -90,15 +91,15 @@
           </para>
 @z
 
-@x --disable-libstdcxx-threads
-          <para>Since gcc-pass1 is built without thread support, the C++
-          thread library cannot be built either.</para>
-@y
-          <para>
-          gcc 1 回めはスレッドサポートなしにビルドされます。
-          したがって C++ スレッドライブラリも生成できません。
-          </para>
-@z
+%@x --disable-libstdcxx-threads
+%          <para>Since gcc-pass1 is built without thread support, the C++
+%          thread library cannot be built either.</para>
+%@y
+%          <para>
+%          gcc 1 回めはスレッドサポートなしにビルドされます。
+%          したがって C++ スレッドライブラリも生成できません。
+%          </para>
+%@z
 
 @x --disable-libstdcxx-pch
           <para>This switch prevents the installation of precompiled
@@ -111,9 +112,9 @@
 @z
 
 @x --with-gxx-include-dir=/tools/include/c++/&gcc-version;
-          <para>This is the location where the standard include files are
-          searched by the C++ compiler. In a normal build, this information
-          is automatically passed to the Libstdc++ <command>configure</command>
+          <para>This is the location where the C++ compiler should search for the
+          standard include files. In a normal build, this information
+          is automatically passed to the libstdc++ <command>configure</command>
           options from the top level directory. In our case, this information
           must be explicitly given.</para>
 @y

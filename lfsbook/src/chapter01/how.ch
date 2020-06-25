@@ -73,7 +73,7 @@
   discusses the setup of an appropriate working environment. Please read
   <xref linkend="chapter-final-preps"/> carefully as it explains several
   important issues you need be aware of before beginning to
-  work your way through <xref linkend="chapter-temporary-tools"/> and beyond.</para>
+  work your way through <xref linkend="chapter-cross-tools"/> and beyond.</para>
 @y
   <para>
   <xref linkend="chapter-partitioning"/>では、新しく構築する Linux のためのパーティションとファイルシステムの生成方法について説明します。
@@ -81,58 +81,83 @@
   <xref linkend="chapter-getting-materials"/>では LFS 構築に必要となるパッケージとパッチについて説明します。
   これらをダウンロードして新たなファイルシステム内に保存します。
   <xref linkend="chapter-final-preps"/>は作業環境の準備について述べています。
-  この章では重要な説明を行っていますので、<xref linkend="chapter-temporary-tools"/>以降に進む前に是非注意して読んでください。
+  この章では重要な説明を行っていますので、<xref linkend="chapter-cross-tools"/>以降に進む前に是非注意して読んでください。
   </para>
 @z
 
+%@x
+%  <para><xref linkend="chapter-temporary-tools"/> explains the
+%  installation of a number of packages that will form the basic
+%  development suite (or toolchain) which is used to build the actual
+%  system in <xref linkend="chapter-building-system"/>. Some of these
+%  packages are needed to resolve circular dependencies&mdash;for example,
+%  to compile a compiler, you need a compiler.</para>
+%@y
+%  <para>
+%  <xref linkend="chapter-temporary-tools"/>では数多くのパッケージをインストールします。
+%  これらは基本的な開発ツール (ツールチェーン) を構成するものであり、<xref
+%  linkend="chapter-building-system"/>において最終的なシステムを構築するために利用します。
+%  パッケージの中には自分自身を循環的に必要とするような依存関係を持つものがあります。
+%  例えばコンパイラーをコンパイルするためにはコンパイラーが必要となります。
+%  </para>
+%@z
+
 @x
-  <para><xref linkend="chapter-temporary-tools"/> explains the
-  installation of a number of packages that will form the basic
-  development suite (or toolchain) which is used to build the actual
-  system in <xref linkend="chapter-building-system"/>. Some of these
-  packages are needed to resolve circular dependencies&mdash;for example,
-  to compile a compiler, you need a compiler.</para>
+  <para><xref linkend="chapter-cross-tools"/>,  explains the installation of
+  the initial tool chain, (binutils, gcc, and glibc) using cross compilation
+  techniques to isolate the new tools from the host system.</para>
 @y
-  <para>
-  <xref linkend="chapter-temporary-tools"/>では数多くのパッケージをインストールします。
-  これらは基本的な開発ツール (ツールチェーン) を構成するものであり、<xref
-  linkend="chapter-building-system"/>において最終的なシステムを構築するために利用します。
-  パッケージの中には自分自身を循環的に必要とするような依存関係を持つものがあります。
-  例えばコンパイラーをコンパイルするためにはコンパイラーが必要となります。
-  </para>
+  <para><xref linkend="chapter-cross-tools"/>では初期のツールチェーン（binutils、gcc、glibc）を、クロスコンパイルによりインストールします。
+  これによりこの新たなツールをホストシステムから切り離します。</para>
+@z
+
+%@x
+%  <para><xref linkend="chapter-temporary-tools"/> also shows you how to
+%  build a first pass of the toolchain, including Binutils and GCC (first pass
+%  basically means these two core packages will be reinstalled).
+%  The next step is to build Glibc, the C library. Glibc will be compiled by
+%  the toolchain programs built in the first pass. Then, a second pass of the
+%  toolchain will be built. This time, the toolchain will be dynamically linked
+%  against the newly built Glibc. The remaining <xref
+%  linkend="chapter-temporary-tools"/> packages are built using this second
+%  pass toolchain. When this is done, the LFS installation process will no
+%  longer depend on the host distribution, with the exception of the running
+%  kernel. </para>
+%@y
+%  <para>
+%  <xref linkend="chapter-temporary-tools"/>ではツールチェーンの第1回めの構築方法を示します。
+%  そこではまず Binutils と GCC を構築します。
+%  (第1回めと表現しているということは、つまりこれら2つのパッケージは後に再構築します。)
+%  次に C ライブラリである Glibc を構築します。
+%  Glibc は第1回めのツールチェーンを用いてコンパイルされます。
+%  そして第2回めのツールチェーン構築を行います。
+%  この時のツールチェーンは新たに構築した Glibc をリンクします。
+%  それ以降の<xref linkend="chapter-temporary-tools"/>に示すパッケージは第2回めのツールチェーンプログラムを用いて構築します。
+%  上の作業をすべて終えたら LFS のインストール作業はもはやホストディストリビューションに依存しません。
+%  ただし作動させるカーネルだけは使い続けます。
+%  </para>
+%@z
+
+@x
+  <para><xref linkend="chapter-temporary-tools"/> shows you how to
+  cross-compile basic utilities using the just built cross-toolchain.</para>
+@y
+  <para><xref linkend="chapter-temporary-tools"/>では、上で作ったクロスツールチェーンを利用して、基本的ユーティリティのクロスコンパイル方法を示します。</para>
 @z
 
 @x
-  <para><xref linkend="chapter-temporary-tools"/> also shows you how to
-  build a first pass of the toolchain, including Binutils and GCC (first pass
-  basically means these two core packages will be reinstalled).
-  The next step is to build Glibc, the C library. Glibc will be compiled by
-  the toolchain programs built in the first pass. Then, a second pass of the
-  toolchain will be built. This time, the toolchain will be dynamically linked
-  against the newly built Glibc. The remaining <xref
-  linkend="chapter-temporary-tools"/> packages are built using this second
-  pass toolchain. When this is done, the LFS installation process will no
-  longer depend on the host distribution, with the exception of the running
-  kernel. </para>
+  <para><xref linkend="chapter-chroot-temporary-tools"/> then enters a
+  "chroot" environment and uses the previously built tools to build
+  the additional tools needed to build and test the final system.</para>
 @y
-  <para>
-  <xref linkend="chapter-temporary-tools"/>ではツールチェーンの第1回めの構築方法を示します。
-  そこではまず Binutils と GCC を構築します。
-  (第1回めと表現しているということは、つまりこれら2つのパッケージは後に再構築します。)
-  次に C ライブラリである Glibc を構築します。
-  Glibc は第1回めのツールチェーンを用いてコンパイルされます。
-  そして第2回めのツールチェーン構築を行います。
-  この時のツールチェーンは新たに構築した Glibc をリンクします。
-  それ以降の<xref linkend="chapter-temporary-tools"/>に示すパッケージは第2回めのツールチェーンプログラムを用いて構築します。
-  上の作業をすべて終えたら LFS のインストール作業はもはやホストディストリビューションに依存しません。
-  ただし作動させるカーネルだけは使い続けます。
-  </para>
+  <para><xref linkend="chapter-chroot-temporary-tools"/>では "chroo" 環境に入ります。
+  そして今作り上げたビルドツールを使って、最終的なシステムをビルドしテストするために必要となる残りのツールをビルドします。</para>
 @z
 
 @x
   <para>This effort to isolate the new system from the host distribution may
-  seem excessive. A full technical explanation as to why this is done is provided in
-  <xref linkend="ch-tools-toolchaintechnotes"/>.</para>
+  seem excessive. A full technical explanation as to why this is done is
+  provided in <xref linkend="ch-tools-toolchaintechnotes"/>.</para>
 @y
   <para>
   ホストシステムのツール類から新しいシステムを切り離していくこの手順は、やり過ぎのように見えるかもしれません。
@@ -140,28 +165,40 @@
   </para>
 @z
 
+%@x
+%  <para>In <xref linkend="chapter-building-system"/>, the full LFS system is
+%  built. The <command>chroot</command> (change root) program is used to enter
+%  a virtual environment and start a new shell whose root directory will be
+%  set to the LFS partition. This is very similar to rebooting and instructing
+%  the kernel to mount the LFS partition as the root partition. The system
+%  does not actually reboot, but instead uses <command>chroot</command> because
+%  creating a bootable system requires additional work which is not necessary
+%  just yet. The major advantage is that <quote>chrooting</quote> allows you
+%  to continue using the host system while LFS is being built. While waiting
+%  for package compilations to complete, you can continue using your computer as
+%  normal.</para>
+%@y
+%  <para>
+%  <xref linkend="chapter-building-system"/>にて LFS システムが出来上がります。
+%  <command>chroot</command> (ルートをチェンジする) プログラムを使って仮想的な環境に入り LFS パーティション内のディレクトリをルートディレクトリとしてシェルを起動します。
+%  これは LFS パーティションをルートパーティションとするシステム再起動と同じことです。
+%  ただ実際にはシステムを再起動はしません。
+%  再起動できるシステムとするためにはもう少し作業を必要としますし、この時点ではまだそれが必要ではないので <command>chroot</command> を行う方法を取ります。
+%  <command>chroot</command> を使うメリットは、LFS 構築作業にあたって引き続きホストシステムを利用できることです。
+%  パッケージをコンパイルしている最中には、通常どおり別の作業を行うことができます。
+%  </para>
+%@z
+
 @x
-  <para>In <xref linkend="chapter-building-system"/>, the full LFS system is
-  built. The <command>chroot</command> (change root) program is used to enter
-  a virtual environment and start a new shell whose root directory will be
-  set to the LFS partition. This is very similar to rebooting and instructing
-  the kernel to mount the LFS partition as the root partition. The system
-  does not actually reboot, but instead uses <command>chroot</command> because
-  creating a bootable system requires additional work which is not necessary
-  just yet. The major advantage is that <quote>chrooting</quote> allows you
-  to continue using the host system while LFS is being built. While waiting
-  for package compilations to complete, you can continue using your computer as
-  normal.</para>
+  <para>In <xref linkend="chapter-building-system"/>, The
+  full LFS system is built. Another advantage provided by the chroot
+  environment is that it allows you to continue using the host system
+  while LFS is being built. While waiting for package compilations to
+  complete, you can continue using your computer as normal.</para>
 @y
-  <para>
-  <xref linkend="chapter-building-system"/>にて LFS システムが出来上がります。
-  <command>chroot</command> (ルートをチェンジする) プログラムを使って仮想的な環境に入り LFS パーティション内のディレクトリをルートディレクトリとしてシェルを起動します。
-  これは LFS パーティションをルートパーティションとするシステム再起動と同じことです。
-  ただ実際にはシステムを再起動はしません。
-  再起動できるシステムとするためにはもう少し作業を必要としますし、この時点ではまだそれが必要ではないので <command>chroot</command> を行う方法を取ります。
-  <command>chroot</command> を使うメリットは、LFS 構築作業にあたって引き続きホストシステムを利用できることです。
-  パッケージをコンパイルしている最中には、通常どおり別の作業を行うことができます。
-  </para>
+  <para><xref linkend="chapter-building-system"/>において完全な LFS システムが出来上がります。
+  <command>chroot</command> を使うもう一つのメリットは、LFS 構築作業にあたって引き続きホストシステムを利用できることです。
+  パッケージをコンパイルしている最中には、通常どおり別の作業を行うことができます。</para>
 @z
 
 @x

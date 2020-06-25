@@ -14,13 +14,13 @@
 @z
 
 @x
-<chapter id="chapter-finalizing" xreflabel="Chapter&nbsp;9">
+<chapter id="chapter-config" xreflabel="Chapter&nbsp;9">
 @y
-<chapter id="chapter-finalizing" xreflabel="第&nbsp;9&nbsp;章">
+<chapter id="chapter-config" xreflabel="第&nbsp;9&nbsp;章">
 @z
 
 @x
-  <title>The End</title>
+  <title>System Configuration</title>
 @y
-  <title>作業終了</title>
+  <title>システム設定</title>
 @z

@@ -138,7 +138,7 @@
 
 @x
   <para>Requests for advice on system partitioning are often posted on the LFS mailing 
-  lists.  This is a highly subjective topic.  The default for most distributions
+  lists. This is a highly subjective topic.  The default for most distributions
   is to use the entire drive with the exception of one small swap partition.  This
   is not optimal for LFS for several reasons.  It reduces flexibility, makes 
   sharing of data across multiple distributions or LFS builds more difficult, makes
@@ -164,15 +164,15 @@
 @x
     <para>A root LFS partition (not to be confused with the
     <filename class="directory">/root</filename> directory) of
-    ten gigabytes is a good compromise for most systems.  It provides enough
+    twenty gigabytes is a good compromise for most systems.  It provides enough
     space to build LFS and most of BLFS, but is small enough so that multiple
     partitions can be easily created for experimentation.</para> </sect3>
 @y
     <para>
     ルートパーティション (これを <filename
-    class="directory">/root</filename> ディレクトリと混同しないでください) は 10 GB もあれば、どんなシステムであっても妥当なところでしょう。
+    class="directory">/root</filename> ディレクトリと混同しないでください) は 20 GB もあれば、どんなシステムであっても妥当なところでしょう。
     それだけあれば LFS 構築も、また BLFS においてもおそらく十分なはずです。
-    実験的に複数パーティションを設けるとしても、これだけのサイズは必要です。
+    実験的に複数パーティションを設けるとしても、これだけのサイズで十分です。
     </para>
     </sect3>
 @z
@@ -199,18 +199,36 @@
 @z
 
 @x
-    <para>Swapping is never good.  Generally you can tell if a system is
-    swapping by just listening to disk activity and observing how the system
-    reacts to commands.  The first reaction to swapping should be to check for
-    an unreasonable command such as trying to edit a five gigabyte file.  If
-    swapping becomes a normal occurrence, the best solution is to purchase more
-    RAM for your system.</para> 
-    </sect3>
+    <para>If you want to use the hibernation feature (suspend-to-disk) of Linux,
+    it writes out the contents of RAM to the swap partition before turning off 
+    the machine. In this case the size of the swap partition should be at
+    least as large as the system's installed RAM.</para>
+@y
+    <para>
+    Linux のハイバーネーション（ディスクへの退避状態）機能を利用する場合、マシンが停止する前に RAM の内容がスワップパーティションに書き出されます。
+    この場合、スワップパーティションの容量は、システムの RAM 容量と最低でも同程度である必要があります。
+    </para>
+@z
+
+@x
+    <para>Swapping is never good. For mechanical hard drives you can generally
+    tell if a system is swapping by just listening to disk activity and
+    observing how the system reacts to commands.  For an SSD drive you will not
+    be able to hear swapping but you can tell how much swap space is being used
+    by the <command>top</command> or <command>free</command> programs.  Use of
+    an SSD drive for a swap partition should be avoided if possible.  The first
+    reaction to swapping should be to check for an unreasonable command such as
+    trying to edit a five gigabyte file. If swapping becomes a normal
+    occurrence, the best solution is to purchase more RAM for your
+    system.</para> </sect3>
 @y
     <para>
     スワップは好ましいことではありません。
-    一般にスワップが発生しているかどうかは、ディスクアクセスの様子やコマンド実行時にシステムがどのように反応するかを見てみれば分かります。
-    例えば 5GB くらいのファイルを編集するといった極端なコマンド実行を行ってみて、スワップが起きるかどうかを確認することが重要です。
+    物理的なハードドライブの場合、スワップが発生しているかどうかは、単純にディスク音を聞いたり、コマンド実行時にシステムがどのように反応するかを見ればわかります。
+    SSD ドライブの場合、スワップ時の音は聞こえてきません。
+    その場合は <command>top</command> や <command>free</command> プログラムを使ってスワップ使用量を確認することができます。
+    SSD ドライブにスワップパーティションを割り当てることは極力避けるべきです。
+    最初は 5GB くらいのファイルを編集するといった極端なコマンド実行を行ってみて、スワップが起きるかどうかを確認してみてください。
     スワップがごく普通に発生するようであれば、RAMを増設するのが適切です。
     </para>
     </sect3>
@@ -277,14 +295,14 @@
       <listitem><para>/boot &ndash; Highly recommended.  Use this partition to
       store kernels and other booting information.  To minimize potential boot
       problems with larger disks, make this the first physical partition on
-      your first disk drive.  A partition size of 100 megabytes is quite
+      your first disk drive.  A partition size of 200 megabytes is quite
       adequate.</para></listitem>
 @y
     <listitem><para>
     /boot &ndash; 作成することが強く推奨されます。
     カーネルやブート情報を収納するために利用するパーティションです。
     容量の大きなディスクの場合、ブート時に問題が発生することがあるので、これを回避するには、一つ目のディスクドライブの物理的に一番最初のパーティションを選びます。
-    パーティションサイズを 100MB とすればそれで十分です。
+    パーティションサイズを 200MB とすればそれで十分です。
     </para></listitem>
 @z
 
@@ -304,14 +322,14 @@
 @x
       <listitem><para>/usr &ndash; A separate /usr partition is generally used
       if providing a server for a thin client or diskless workstation.  It is
-      normally not needed for LFS.  A size of five gigabytes will handle most
+      normally not needed for LFS.  A size of ten gigabytes will handle most
       installations.</para></listitem>
 @y
       <listitem><para>
       /usr &ndash; 
       /usr ディレクトリを別パーティションとして設けるのは、一般にはシンクライアント (thin client) 向けサーバーやディスクレスワークステーションにおいて行われます。
       普通 LFS では必要ありません。
-      5 GB くらいの容量があれば、たいていのアプリケーションをインストールするのに十分なものでしょう。
+      10 GB くらいの容量があれば、たいていのアプリケーションをインストールするのに十分なものでしょう。
       </para></listitem>
 @z
 

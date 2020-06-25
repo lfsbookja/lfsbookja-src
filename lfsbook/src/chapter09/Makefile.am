@@ -7,11 +7,22 @@
 ##
 BOOKdir = @abs_bookdir@/chapter09
 CHANGE_FILES = \
-	chapter09.ch  \
-	getcounted.ch \
-	reboot.ch     \
-	theend.ch     \
-	whatnow.ch
+	bootscripts.ch    \
+	chapter09.ch      \
+	clock.ch          \
+	consoled.ch       \
+	etcshells.ch      \
+	inputrc.ch        \
+	introduction.ch   \
+	introductiond.ch  \
+	locale.ch         \
+	network.ch        \
+	networkd.ch       \
+	profile.ch        \
+	symlinks.ch       \
+	systemd-custom.ch \
+	udev.ch           \
+	usage.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

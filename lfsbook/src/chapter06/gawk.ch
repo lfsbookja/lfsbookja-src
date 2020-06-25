@@ -14,23 +14,21 @@
 @z
 
 @x
-    <para>The Gawk package contains programs for manipulating text files.</para>
+  <indexterm zone="ch-tools-gawk">
+    <primary sortas="a-Gawk">Gawk</primary>
+    <secondary>tools</secondary>
+  </indexterm>
 @y
-    <para>Gawk パッケージはテキストファイルを操作するプログラムを提供します。</para>
+  <indexterm zone="ch-tools-gawk">
+    <primary sortas="a-Gawk">Gawk</primary>
+    <secondary>&Tools;</secondary>
+  </indexterm>
 @z
 
 @x
     <title>Installation of Gawk</title>
 @y
     <title>&InstallationOf1;Gawk&InstallationOf2;</title>
-@z
-
-@x
-    <para>First, ensure some unneeded files are not installed:</para>
-@y
-    <para>
-    まずは不要なファイルがインストールされないようにします。
-    </para>
 @z
 
 @x
@@ -45,11 +43,17 @@
     <para>&CompileThePackage;</para>
 @z
 
-@x
-    <para>To test the results, issue:</para>
-@y
-    <para>コンパイル結果をテストするには以下を実行します。</para>
-@z
+%@x
+%    <para>Compilation is now complete. As discussed earlier, running the test
+%    suite is not mandatory for the temporary tools here in this chapter. To run
+%    the Gawk test suite anyway, issue the following command:</para>
+%@y
+%    <para>
+%    コンパイルが終了しました。
+%    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+%    しかしテストスイートを実行するなら、以下を実行します。
+%    </para>
+%@z
 
 @x
     <para>Install the package:</para>
@@ -58,75 +62,10 @@
 @z
 
 @x
-    <para>If desired, install the documentation:</para>
+    <para>Details on this package are located in
+    <xref linkend="contents-gawk" role="."/></para>
 @y
-    <para>必要ならドキュメントをインストールします。</para>
+    <para>
+    &Details1;<xref linkend="contents-gawk" role=""/>&Details2;
+    </para>
 @z
-
-@x
-    <title>Contents of Gawk</title>
-@y
-    <title>&ContentsOf1;Gawk&ContentsOf2;</title>
-@z
-
-@x
-      <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directories</segtitle>
-@y
-      <segtitle>&InstalledProgram;</segtitle>
-      <segtitle>&InstalledLibrary;</segtitle>
-      <segtitle>&InstalledDirectory;</segtitle>
-@z
-
-@x
-        <seg>awk (link to gawk), gawk, and awk-&gawk-version;</seg>
-        <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, intdiv.so, ordchr.so,
-        readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
-        and time.so (all in /usr/lib/gawk)</seg>
-        <seg>/usr/lib/gawk, /usr/libexec/awk, /usr/share/awk, and
-        /usr/share/doc/gawk-&gawk-version;</seg>
-@y
-        <seg>awk (gawk へのリンク), gawk, awk-&gawk-version;</seg>
-        <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, intdiv.so, ordchr.so,
-        readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
-        time.so (すべて /usr/lib/gawk ディレクトリ内)</seg>
-        <seg>/usr/lib/gawk, /usr/libexec/awk, /usr/share/awk,
-        /usr/share/doc/gawk-&gawk-version;</seg>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x awk
-          <para>A link to <command>gawk</command></para>
-@y
-          <para><command>gawk</command> へのリンク。</para>
-@z
-
-@x gawk
-          <para>A program for manipulating text files; it is the GNU
-          implementation of <command>awk</command></para>
-@y
-          <para>
-          テキストファイルを操作するプログラム。
-          これは <command>awk</command> の GNU インプリメンテーションです。
-          </para>
-@z
-
-@x
-          <para>A hard link to <command>gawk</command></para>
-@y
-          <para><command>gawk</command> へのハードリンク。</para>
-@z
-
-%@x
-%          <para>Gives <command>gawk</command> the ability to include files</para>
-%@y
-%          <para>
-%          <command>gawk</command> に対してファイルをインクルードする機能を付与します。
-%          </para>
-%@z

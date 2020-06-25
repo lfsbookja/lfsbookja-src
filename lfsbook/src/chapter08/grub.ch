@@ -14,302 +14,318 @@
 @z
 
 @x
-  <title>Using GRUB to Set Up the Boot Process</title>
+    <para>The GRUB package contains the GRand Unified Bootloader.</para>
 @y
-  <title>GRUB を用いたブートプロセスの設定</title>
+    <para>GRUB パッケージは GRand Unified Bootloader を提供します。</para>
 @z
 
 @x
-    <title>Introduction</title>
+    <title>Installation of GRUB</title>
 @y
-    <title>はじめに</title>
+    <title>&InstallationOf1;GRUB&InstallationOf2;</title>
 @z
 
 @x
-    <warning><para>Configuring GRUB incorrectly can render your system
-    inoperable without an alternate boot device such as a CD-ROM.  This
-    section is not required to boot your LFS system.  You may just
-    want to modify your current boot loader, e.g. Grub-Legacy, GRUB2, or
-    LILO.</para></warning>
+    <para>Prepare GRUB for compilation:</para>
 @y
-    <warning><para>
-    GRUB の設定を誤ってしまうと、CD-ROM のような他のデバイスからもブートできなくなってしまいます。
-    読者の LFS システムをブート可能とするためには、本節の内容は必ずしも必要ではありません。
-    読者が利用している現在のブートローダー、例えば Grub-Legacy, GRUB2, LILO などの設定を修正することが必要かもしれません。
-    </para></warning>
+    <para>&PreparePackage1;GRUB&PreparePackage2;</para>
 @z
 
 @x
-    <para> Ensure that an emergency boot disk is ready to <quote>rescue</quote>
-    the computer if the computer becomes unusable (un-bootable).  If you do not
-    already have a boot device, you can create one.  In order for the procedure
-    below to work, you need to jump ahead to BLFS and install
-    <userinput>xorriso</userinput> from the <ulink
-    url="&blfs-book;multimedia/libisoburn.html">
-    libisoburn</ulink> package.</para>
+      <title>The meaning of the new configure options:</title>
 @y
-    <para>
-    コンピューターが利用不能に (ブート不能に) なってしまうこともあります。
-    そんな事態に備えてコンピューターを<quote>復旧 (resucue)</quote>するブートディスクの生成を必ず行ってください。
-    ブートデバイスを用意していない場合は作成してください。
-    以降に示す手順を実施するために、必要に応じて BLFS ブックを参照し <ulink
-    url="&blfs-book;multimedia/libisoburn.html">
-    libisoburn</ulink> にある <userinput>xorriso</userinput> をインストールしてください。
-    </para>
+      <title>configure オプションの意味</title>
+@z
+
+@x --disable-werror
+          <para>This allows the build to complete with warnings introduced
+          by more recent Flex versions.</para>
+@y
+          <para>
+          本オプションは、最新の flex によって警告が出力されても、ビルドを成功させるために指定します。
+          </para>
+@z
+
+@x --disable-efiemu
+          <para>This option minimizes what is built by disabling a feature and
+          testing programs not needed for LFS.</para>
+@y
+          <para>
+          このオプションは LFS にとって不要な機能やテストプログラムをビルドしないようにします。
+          </para>
 @z
 
 @x
-        To boot LFS on host systems that have UEFI enabled, the kernel needs to
-        have been built with the CONFIG_EFI_STUB capabality described in the
-        previous section.  However, LFS can be booted using GRUB2 without such
-        an addition. To do this, the UEFI Mode and Secure Boot capabilities in
-        the host system's BIOS need to be turned off.  For details, see <ulink
-        url="&hints-root;lfs-uefi.txt">
-        the lfs-uefi.txt hint</ulink> at
-        &hints-root;lfs-uefi.txt.
+    <para>Compile the package:</para>
 @y
-        UEFI ((Unified Extensible Firmware Interface) モードを有効にしたホストにて LFS をビルドする場合は、前節で説明した CONFIG_EFI_STUB を有効にしてカーネルをビルドする必要があります。
-        しかし LFS は GRUB2 にそのような機能がなくても起動できます。
-        これを為すには、ホストシステムの UEFI モードやセキュアブート機能は無効にする必要があります。
-        詳しくは &hints-root;lfs-uefi.txt にある <ulink
-        url="&hints-root;lfs-uefi.txt">lfs-uefi.txt ヒント</ulink> を参照してください。
+    <para>&CompileThePackage;</para>
 @z
 
 @x
-    <title>GRUB Naming Conventions</title>
+    <para>This package does not come with a test suite.</para>
 @y
-    <title>GRUB の命名規則</title>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
-    <para>GRUB uses its own naming structure for drives and partitions in
-    the form of <emphasis>(hdn,m)</emphasis>, where <emphasis>n</emphasis>
-    is the hard drive number and <emphasis>m</emphasis> is the partition
-    number. The hard drive number starts from zero, but the partition number
-    starts from one for normal partitions and five for extended partitions.  
-    Note that this is different from earlier versions where 
-    both numbers started from zero. For example, partition <filename
-    class="partition">sda1</filename> is <emphasis>(hd0,1)</emphasis> to
-    GRUB and <filename class="partition">sdb3</filename> is
-    <emphasis>(hd1,3)</emphasis>. In contrast to Linux, GRUB does not
-    consider CD-ROM drives to be hard drives. For example, if using a CD
-    on <filename class="partition">hdb</filename> and a second hard drive
-    on <filename class="partition">hdc</filename>, that second hard drive
-    would still be <emphasis>(hd1)</emphasis>.</para>
+    <para>Install the package:</para>
 @y
-    <para>GRUB ではドライブやパーティションに対して <emphasis>(hdn,m)</emphasis> といった書式の命名法を採用しています。
-    <emphasis>n</emphasis> はハードドライブ番号、<emphasis>m</emphasis> はパーティション番号を表します。
-    ハードドライブ番号はゼロから数え始めます。
-    一方パーティション番号は、基本パーティションであれば１から、拡張パーティションであれば５から数え始めます。
-    かつてのバージョンでは共にゼロから数え始めていましたが、今はそうではないので注意してください。
-    例えば <filename
-    class="partition">sda1</filename> は GRUB では <emphasis>(hd0,1)</emphasis> と表記され、<filename
-    class="partition">sdb3</filename> は <emphasis>(hd1,3)</emphasis> と表記されます。
-    Linux システムでの取り扱いとは違って GRUB では CD-ROM ドライブをハードドライブとしては扱いません。
-    例えば CD が <filename
-    class="partition">hdb</filename> であり、２番めのハードドライブが <filename
-    class="partition">hdc</filename> であった場合、２番めのハードドライブは <emphasis>(hd1)</emphasis> と表記されます。
-    </para>
+    <para>&InstallThePackage;</para>
 @z
 
-% @x
-%     <para>You can determine what GRUB thinks your disk devices are by running:</para>
+@x
+  <para>Using GRUB to make your LFS system bootable will be discussed in 
+  <xref linkend="ch-bootable-grub"/>.</para>
+@y
+  <para>
+  GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/>で説明しています。
+  </para>
+@z
+
+@x
+    <title>Contents of GRUB</title>
+@y
+    <title>&ContentsOf1;GRUB&ContentsOf2;</title>
+@z
+
+@x
+      <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directories</segtitle>
+@y
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
+@z
+
+@x
+       <seg>grub-bios-setup,      grub-editenv,    grub-file,        grub-fstest,
+            grub-glue-efi,        grub-install,    grub-kbdcomp,     grub-macbless,   
+            grub-menulst2cfg,     grub-mkconfig,
+                                  grub-mkimage,    grub-mklayout,    grub-mknetdir,
+            grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
+            grub-ofpathname,      grub-probe,      grub-reboot,      grub-render-label, 
+            grub-script-check,
+            grub-set-default,     grub-sparc64-setup, and grub-syslinux2cfg</seg>
+
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, and /boot/grub (when grub-install
+        is first run)</seg>
+@y
+       <seg>grub-bios-setup,      grub-editenv,    grub-file,        grub-fstest,
+            grub-glue-efi,        grub-install,    grub-kbdcomp,     grub-macbless,   
+            grub-menulst2cfg,     grub-mkconfig,
+                                  grub-mkimage,    grub-mklayout,    grub-mknetdir,
+            grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
+            grub-ofpathname,      grub-probe,      grub-reboot,      grub-render-label, 
+            grub-script-check,
+            grub-set-default,     grub-sparc64-setup, grub-syslinux2cfg</seg>
+
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /boot/grub (grub-install が初めに起動される時)</seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+% @x grub-bin2h
+%           <para>Converts a binary file to a C header</para>
 % @y
-%     <para>
-%     ディスクデバイスを GRUB がどのような名称で取り扱うかを確認する場合は以下を実行してください。
-%     </para>
+%           <para>
+%           バイナリファイルを C ヘッダーファイルに変換します。
+%           </para>
+% @z
+% 
+@x grub-bios-setup
+          <para>Is a helper program for grub-install</para>
+@y
+          <para>grub-install に対するヘルパープログラム。</para>
+@z
+
+@x grub-editenv
+          <para>A tool to edit the environment block</para>
+@y
+          <para>
+          環境ブロック (environment block) を編集するツール。
+          </para>
+@z
+
+@x grub-file
+          <para>Checks if FILE is of the specified type.</para>
+@y
+          <para>
+          FILE が指定されたタイプであるかどうかをチェックします。
+          </para>
+@z
+
+@x grub-fstest
+          <para>Tool to debug the filesystem driver</para>
+@y
+          <para>
+          ファイルシステムドライバーをデバッグするツール。
+          </para>
+@z
+
+@x grub-glue-efi
+          <para>Processes ia32 and amd64 EFI images and glues them
+          according to Apple format.</para>
+@y
+          <para>
+          ia32 および amd64 の EFI イメージを処理し Apple フォーマットに従って結合します。
+          </para>
+@z
+
+@x grub-install
+          <para>Install GRUB on your drive</para>
+@y
+          <para>
+          指定したドライブに GRUB をインストールします。
+          </para>
+@z
+
+@x grub-kbdcomp
+          <para>Script that converts an xkb layout into one recognized by
+          GRUB</para>
+@y
+          <para>
+          xkb レイアウトを GRUB が認識できる他の書式に変換するスクリプト。
+          </para>
+@z
+
+@x grub-menulst2cfg
+          <para>Converts a GRUB Legacy <filename>menu.lst</filename>
+          into a <filename>grub.cfg</filename> for use with GRUB 2</para>
+@y
+          <para>
+          GRUB Legacy の <filename>menu.lst</filename>を GRUB 2 にて利用される <filename>grub.cfg</filename> に変換します。
+          </para>
+@z
+
+@x grub-mkconfig
+          <para>Generate a grub config file</para>
+@y
+          <para>
+          GRUB の設定ファイルを生成します。
+          </para>
+@z
+
+% @x grub-mkdevicemap
+%           <para>Generate a device map file automatically</para>
+% @y
+%           <para>
+%           デバイスマップファイルを自動的に生成します。
+%           </para>
 % @z
 
-@x
-    <title>Setting Up the Configuration</title>
+@x grub-mkimage
+          <para>Make a bootable image of GRUB</para>
 @y
-    <title>設定作業</title>
+          <para>
+          GRUB のブートイメージ (bootable image) を生成します。
+          </para>
 @z
 
-@x
-    <para>GRUB works by writing data to the first physical track of the 
-    hard disk.  This area is not part of any file system.  The programs
-    there access GRUB modules in the boot partition.  The default location
-    is /boot/grub/.</para>
+@x grub-mklayout
+          <para>Generates a GRUB keyboard layout file</para>
 @y
-    <para>
-    GRUB は、ハードディスク上の最初の物理トラックにデータを書き出します。
-    この領域は、どのファイルシステムにも属していません。
-    ここに配置されているプログラムは、ブートパーティションにある GRUB モジュールにアクセスします。
-    モジュールのデフォルト位置は /boot/grub/ です。</para>
+          <para>
+          GRUB のキーボードレイアウトファイルを生成します。
+          </para>
 @z
 
-@x
-    <para>The location of the boot partition is a choice of the user that
-    affects the configuration.  One recommendation is to have a separate small
-    (suggested size is 100 MB) partition just for boot information.  That way
-    each build, whether LFS or some commercial distro, can access the same boot
-    files and access can be made from any booted system.  If you choose to do
-    this, you will need to mount the separate partition, move all files in the
-    current <filename class="directory">/boot</filename> directory (e.g. the
-    linux kernel you just built in the previous section) to the new partition.
-    You will then need to unmount the partition and remount it as <filename
-    class="directory">/boot</filename>.  If you do this, be sure to update
-    <filename>/etc/fstab</filename>.</para>
+@x grub-mknetdir
+          <para>Prepares a GRUB netboot directory</para>
 @y
-    <para>
-    ブートパーティションをどこにするかは各人に委ねられていて、それによって設定方法が変わります。
-    推奨される1つの手順としては、ブートパーティションとして独立した小さな (100MB 程度のサイズの) パーティションを設けることです。
-    こうしておくと、この後に LFS であろうが商用ディストリビューションであろうが、システム導入する際に同一のブートファイルを利用することが可能です。
-    つまりどのようなブートシステムからでもアクセスが可能となります。
-    この方法をとるなら、新たなパーティションをマウントした上で、現在 <filename
-    class="directory">/boot</filename> ディレクトリにある全ファイルを (例えば前節にてビルドした Linux カーネルも) 新しいパーティションに移動させる必要があります。
-    そしていったんパーティションをアンマウントし、再度 <filename
-    class="directory">/boot</filename> としてマウントしなおすことになります。
-    これを行った後は<filename>/etc/fstab</filename> を適切に書き換えてください。
-    </para>
+          <para>
+          GRUB のネットブートディレクトリを生成します。
+          </para>
 @z
 
-@x
-    <para>Using the current lfs partition will also work, but configuration
-    for multiple systems is more difficult.</para>
+@x grub-mkpasswd-pbkdf2
+          <para>Generates an encrypted PBKDF2 password for use in the boot
+          menu</para>
 @y
-    <para>
-    現時点での LFS パーティションでも問題なく動作します。
-    ただし複数システムを取り扱うための設定は、より複雑になります。
-    </para>
+          <para>
+          ブートメニューにて利用する、PBKDF2 により暗号化されたパスワードを生成します。
+          </para>
 @z
 
-%@x
-%    <title>Setting Up the Configuration</title>
-%@y
-%    <title>設定作業</title>
-%@z
-
-@x
-    <para>Using the above information, determine the appropriate
-    designator for the root partition (or boot partition, if a separate
-    one is used). For the following example, it is assumed that the root
-    (or separate boot) partition is <filename
-    class="partition">sda2</filename>.</para>
+@x grub-mkrelpath
+          <para>Makes a system pathname relative to its root</para>
 @y
-    <para>
-    ここまでの情報に基づいて、ルートパーティションの名称を (あるいはブートパーティションを別パーティションとするならそれも含めて) 決定します。
-    以下では例として、ルートパーティション (あるいは別立てのブートパーティション) が <filename class="partition">sda2</filename> であるとします。
-    </para>
+          <para>
+          システムのパスをルートからの相対パスとします。
+          </para>
 @z
 
-@x
-    <para>Install the GRUB files into <filename
-    class="directory">/boot/grub</filename> and set up the boot track:</para> 
+@x grub-mkrescue
+          <para>Make a bootable image of GRUB suitable for a floppy disk or CDROM/DVD</para>
 @y
-    <para>
-    以下を実行して GRUB ファイル類を <filename
-    class="directory">/boot/grub</filename> にインストールし、ブートトラックを構築します。
-    </para>
+          <para>フロッピーディスクや CDROM/DVD 用の GRUB のブートイメージを生成します。</para>
 @z
 
-@x
-      <para>The following command will overwrite the current boot loader. Do not
-      run the command if this is not desired, for example, if using a third party
-      boot manager to manage the Master Boot Record (MBR).</para> 
+@x grub-mkstandalone
+          <para>Generates a standalone image</para>
 @y
-      <para>
-      以下に示すコマンドを実行すると、現在のブートローダーを上書きします。
-      上書きするのが不適当であるならコマンドを実行しないでください。
-      例えばマスターブートレコード (Master Boot Record; MBR) を管理するサードパーティ製のブートマネージャーソフトウェアを利用している場合などがこれに該当します。
-      </para>
+          <para>スタンドアロンイメージを生成します。</para>
 @z
 
-@x
-      <para>If the system has been booted using UEFI,
-      <command>grub-install</command> will try to install files for the
-      <emphasis>x86_64-efi</emphasis> target, but those files
-      have not been installed in chapter 6. If this is the case, add
-      <option>--target i386-pc</option> to the command above.</para>
+@x grub-ofpathname
+          <para>Is a helper program that prints the path of a GRUB device</para>
 @y
-      <para>
-      システムが UEFI を通じて起動されている時、<command>grub-install</command> は <emphasis>x86_64-efi</emphasis> ターゲットに対するファイルをインストールしようとします。
-      しかしそのようなファイルは第 6 章にてインストールしていません。
-      その場合は上のコマンドに対して <option>--target i386-pc</option> を追加してください。
-      </para>
+          <para>GRUB デバイスのパスを出力するヘルパープログラム。</para>
 @z
 
-@x
-    <note><para><application>grub-install</application> is a script and calls another 
-    program, grub-probe, that may fail with a message "cannot stat `/dev/root'".  
-    If so, create a temporary symbolic link from your root partition to /dev/root:</para>
+@x grub-probe
+          <para>Probe device information for a given path or device</para>
 @y
-    <note><para>
-    <application>grub-install</application> はスクリプトであり、grub-probe というプログラムを呼び出します。
-    このプログラムは "cannot stat `/dev/root'" というメッセージを出力して処理に失敗することがあります。
-    そうなった場合は、一時的なシンボリックリンクとして、ルートパーティションを /dev/root にリンクしてください。
-    </para>
+          <para>
+          指定されたパスやデバイスに対するデバイス情報を検証 (probe) します。
+          </para>
 @z
 
-@x
-    <para>The symbolic link will only be present until the system is rebooted.
-    The link is only needed for the installation procedure.
-    </para></note>
+@x grub-reboot
+          <para>Sets the default boot entry for GRUB for the next boot only</para>
 @y
-    <para>
-    上のシンボリックリンクは、この時点だけ存在し、システムの再起動後はなくなります。
-    このリンクはインストール作業の際だけに必要なものです。
-    </para></note>
+          <para>
+          デフォルトのブートメニューを設定します。
+          これは次にブートした時だけ有効なものです。
+          </para>
 @z
 
-@x
-    <title>Creating the GRUB Configuration File</title>
+@x grub-render-label
+          <para>Render Apple .disk_label for Apple Macs</para>
 @y
-    <title>GRUB 設定ファイルの生成</title>
+          <para>
+          Apple Mac に対して Apple .disk_label を提供します。
+          </para>
 @z
 
-@x
-    <para>Generate <filename>/boot/grub/grub.cfg</filename>:</para>
+@x grub-script-check
+          <para>Checks GRUB configuration script for syntax errors</para>
 @y
-    <para>
-    <filename>/boot/grub/grub.cfg</filename> ファイルを生成します。
-    </para>
+          <para>
+          GRUB の設定スクリプトにおける文法をチェックします。
+          </para>
 @z
 
-@x
-    <note><para>From <application>GRUB</application>'s perspective, the
-    kernel files are relative to the partition used.  If you
-    used a separate /boot partition, remove /boot from the above
-    <emphasis>linux</emphasis> line.  You will also need to change the
-    <emphasis>set root</emphasis> line to point to the boot partition.
-    </para></note> 
+@x grub-set-default
+          <para>Sets the default boot entry for GRUB</para>
 @y
-    <note><para>
-    <application>GRUB</application> にとってカーネルファイル群は、配置されるパーティションからの相対位置となります。
-    したがって /boot パーティションを別に作成している場合は、上記の <emphasis>linux</emphasis> の行から /boot の記述を取り除いてください。
-    また <emphasis>set root</emphasis> 行でのブートパーティションの指定も、正しく設定する必要があります。
-    </para></note> 
+          <para>
+          デフォルトのブートメニューを設定します。
+          </para>
 @z
 
-@x
-    <para>GRUB is an extremely powerful program and it provides a tremendous
-    number of options for booting from a wide variety of devices, operating
-    systems, and partition types.  There are also many options for customization 
-    such as graphical splash screens, playing sounds, mouse input, etc.  The
-    details of these options are beyond the scope of this introduction.</para>
+@x grub-sparc64-setup
+          <para>Is a helper program for grub-setup</para>
 @y
-    <para>
-    GRUB は大変強力なプログラムであり、ブート処理に際しての非常に多くのオプションを提供しています。
-    これにより、各種デバイス、オペレーティングシステム、パーティションタイプに幅広く対応しています。
-    さらにカスタマイズのためのオプションも多く提供されていて、グラフィカルなスプラッシュ画面、サウンド、マウス入力などについてカスタマイズが可能です。
-    オプションの細かな説明は、ここでの手順説明の範囲を超えるため割愛します。
-    </para>
+          <para>grub-setup に対するヘルパープログラム。</para>
 @z
 
-@x
-    <caution><para>There is a command, <application>grub-mkconfig</application>, that
-    can write a configuration file automatically.  It uses a set of scripts in
-    /etc/grub.d/ and will destroy any customizations that you make.  These scripts
-    are designed primarily for non-source distributions and are not recommended for 
-    LFS.  If you install a commercial Linux distribution, there is a good chance 
-    that this program will be run.  Be sure to back up your grub.cfg file.</para></caution> 
+@x grub-syslinux2cfg
+          <para>Transform a syslinux config file into grub.cfg format</para>
 @y
-    <caution><para>
-    <application>grub-mkconfig</application> というコマンドは、設定ファイルを自動的に生成するものです。
-    このコマンドは /etc/grub.d/ にある一連のスクリプトを利用しており、それまでに設定していた内容は失われることになります。
-    その一連のスクリプトは、ソースコードを提供しない Linux ディストリビューションにて用いられるのが主であるため、LFS では推奨されません。
-    商用 Linux ディストリビューションをインストールする場合には、それらのスクリプトを実行する、ちょうど良い機会となるはずです。
-    こういった状況ですから、grub.cfg のバックアップは忘れずに行うようにしてください。
-    </para></caution> 
+          <para>
+          syslinux の設定ファイルを grub.cfg フォーマットに変換します。
+          </para>
 @z

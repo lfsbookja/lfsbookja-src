@@ -14,12 +14,15 @@
 @z
 
 @x
-    <para>The Diffutils package contains programs that show the differences
-    between files or directories.</para>
+  <indexterm zone="ch-tools-diffutils">
+    <primary sortas="a-Diffutils">Diffutils</primary>
+    <secondary>tools</secondary>
+  </indexterm>
 @y
-    <para>
-    Diffutils パッケージはファイルやディレクトリの差分を表示するプログラムを提供します。
-    </para>
+  <indexterm zone="ch-tools-diffutils">
+    <primary sortas="a-Diffutils">Diffutils</primary>
+    <secondary>&Tools;</secondary>
+  </indexterm>
 @z
 
 @x
@@ -40,11 +43,17 @@
     <para>&CompileThePackage;</para>
 @z
 
-@x
-    <para>To test the results, issue:</para>
-@y
-    <para>ビルド結果をテストするなら以下を実行します。</para>
-@z
+%@x
+%    <para>Compilation is now complete. As discussed earlier, running the test
+%    suite is not mandatory for the temporary tools here in this chapter. To run
+%    the Diffutils test suite anyway, issue the following command:</para>
+%@y
+%    <para>
+%    コンパイルが終了しました。
+%    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+%    しかしテストスイートを実行するなら、以下を実行します。
+%    </para>
+%@z
 
 @x
     <para>Install the package:</para>
@@ -53,59 +62,10 @@
 @z
 
 @x
-    <title>Contents of Diffutils</title>
+    <para>Details on this package are located in
+    <xref linkend="contents-diffutils" role="."/></para>
 @y
-    <title>&ContentsOf1;Diffutils&ContentsOf2;</title>
-@z
-
-@x
-      <segtitle>Installed programs</segtitle>
-@y
-      <segtitle>&InstalledProgram;</segtitle>
-@z
-
-@x
-        <seg>cmp, diff, diff3, and sdiff</seg>
-@y
-        <seg>cmp, diff, diff3, sdiff</seg>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x cmp
-          <para>Compares two files and reports whether or in which bytes they
-          differ</para>
-@y
-          <para>
-          二つのファイルを比較して、どこが異なるか、あるいは何バイト異なるかを示します。
-          </para>
-@z
-
-@x diff
-          <para>Compares two files or directories and reports which lines in
-          the files differ</para>
-@y
-          <para>
-          二つのファイルまたは二つのディレクトリを比較して、ファイル内のどの行に違いがあるかを示します。
-          </para>
-@z
-
-@x diff3
-            <para>Compares three files line by line</para>
-@y
-          <para>
-          三つのファイルの各行を比較します。
-          </para>
-@z
-
-@x sdiff
-          <para>Merges two files and interactively outputs the results</para>
-@y
-          <para>
-          二つのファイルを結合して対話的に結果を出力します。
-          </para>
+    <para>
+    &Details1;<xref linkend="contents-diffutils" role=""/>&Details2;
+    </para>
 @z

@@ -185,11 +185,6 @@
 @z
 
 @x
-<?hard-pagebreak?>
-@y
-@z
-
-@x
   <para>Also check for some library consistency:</para>
 @y
   <para>
