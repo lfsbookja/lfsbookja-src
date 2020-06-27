@@ -51,10 +51,10 @@
   at the same time.</para>
 @y
   <para>
-  <xref linkend="chapter-cross-tools"/>と<xref
-  linkend="chapter-temporary-tools"/>の最終目標は一時的なシステム環境を構築することです。
+  <xref linkend="chapter-cross-tools"/> と <xref
+  linkend="chapter-temporary-tools"/> の最終目標は一時的なシステム環境を構築することです。
   この一時的なシステムはシステム構築のための十分なツール類を有していて、ホストシステムとは切り離されたものです。
-  この環境へは chroot によって移行します。この環境は<xref linkend="chapter-building-system"/>において、クリーンでトラブルのない LFS システムの構築を行う土台となるものです。
+  この環境へは chroot によって移行します。この環境は <xref linkend="chapter-building-system"/> において、クリーンでトラブルのない LFS システムの構築を行う土台となるものです。
   構築手順の説明においては、初心者の方であっても失敗を最小限にとどめ、同時に最大限の学習材料となるように心がけています。
   </para>
 @z
@@ -68,13 +68,13 @@
   used for the build. But cross-compilation has the great advantage that
   anything that is cross-compiled cannot depend on the host environment.</para>
 @y
-  <para>The build process is based on the process of
-  <emphasis>cross-compilation</emphasis>. Cross-compilation is normally used
-  for building a compiler and its toolchain for a machine different from
-  the one that is used for the build. This is not strictly needed for LFS,
-  since the machine where the new system will run is the same as the one
-  used for the build. But cross-compilation has the great advantage that
-  anything that is cross-compiled cannot depend on the host environment.</para>
+  <para>
+  ビルド過程は <emphasis>クロスコンパイル</emphasis> を基本として行います。
+  通常クロスコンパイルとは、ビルドを行うマシンとは異なるマシン向けにコンパイラーや関連ツールチェーンをビルドすることです。
+  これは厳密には LFS に必要なものではありません。
+  というのも新たに作り出すシステムは、ビルドに使ったマシンと同一環境で動かすことにしているためです。
+  しかしクロスコンパイルには大きな利点があって、クロスコンパイルによってビルドしたものは、ホスト環境上にはまったく依存できないものとなります。
+  </para>
 @z
 
 @x
@@ -95,16 +95,19 @@
     is strongly suggested to come back to it later in order to get a full
     grasp of the build process.</para>
 @y
-    <para>Cross-compilation involves some concepts that deserve a section on
-    their own. Although this section may be omitted in a first reading, it
-    is strongly suggested to come back to it later in order to get a full
-    grasp of the build process.</para>
+    <para>
+    クロスコンパイルには必要な捉え方があって、それだけで 1 つの節を当てて説明するだけの価値があるものです。
+    初めて読む方は、この節を読み飛ばしてかまいません。
+    ただしビルド過程を十分に理解するためには、後々この節に戻ってきて読んで頂くことを強くお勧めします。
+    </para>
 @z
 
 @x
     <para>Let us first define some terms used in this context:</para>
 @y
-    <para>Let us first define some terms used in this context:</para>
+    <para>
+    ここにおいて取り上げる用語を定義しておきます。
+    </para>
 @z
 
 @x
@@ -113,10 +116,11 @@
         is referred to as the <quote>host</quote> in other
         sections.</para></listitem>
 @y
-      <varlistentry><term>build</term><listitem>
-        <para>is the machine where we build programs. Note that this machine
-        is referred to as the <quote>host</quote> in other
-        sections.</para></listitem>
+      <varlistentry><term>ビルド（build）</term><listitem>
+        <para>
+        ビルド作業を行うマシンのこと。
+        他の節においてこのマシンは "ホスト（host）" と呼ぶこともあります。
+        </para></listitem>
 @z
 
 @x
@@ -125,10 +129,11 @@
         that this use of <quote>host</quote> is not the same as in other
         sections.</para></listitem>
 @y
-      <varlistentry><term>host</term><listitem>
-        <para>is the machine/system where the built programs will run. Note
-        that this use of <quote>host</quote> is not the same as in other
-        sections.</para></listitem>
+      <varlistentry><term>ホスト（host）</term><listitem>
+        <para>
+        ビルドされたプログラムを実行するマシンまたはシステムのこと。
+        ここでいう "ホスト" とは、他の節でいうものと同一ではありません。
+        </para></listitem>
 @z
 
 @x
@@ -137,10 +142,12 @@
         produces code for. It may be different from both build and
         host.</para></listitem>
 @y
-      <varlistentry><term>target</term><listitem>
-        <para>is only used for compilers. It is the machine the compiler
-        produces code for. It may be different from both build and
-        host.</para></listitem>
+      <varlistentry><term>ターゲット（target）</term><listitem>
+        <para>
+        コンパイラーにおいてのみ用いられます。
+        コンパイラーの生成コードを必要とするマシンのこと。
+        これはビルドやホストとは異なることもあります。
+        </para></listitem>
 @z
 
 @x
@@ -151,12 +158,292 @@
     want to produce code for another slow machine (C). To build a
     compiler for machine C, we would have three stages:</para>
 @y
-    <para>As an example, let us imagine the following scenario (sometimes
-    referred to as <quote>Canadian Cross</quote>): we may have a
-    compiler on a slow machine only, let's call the machine A, and the compiler
-    ccA. We may have also a fast machine (B), but with no compiler, and we may
-    want to produce code for another slow machine (C). To build a
-    compiler for machine C, we would have three stages:</para>
+    <para>
+    例として以下のシナリオを考えてみます。
+    （これはよく "カナディアンクロス（Canadian Cross）" とも呼ばれるものです。）
+    コンパイラーが低速なマシン上にだけあるとします。
+    これをマシン A と呼び、コンパイラーは ccA とします。
+    これとは別に高速なマシン（マシン B）があって、ただしそこにはコンパイラーがありません。
+    そしてここから作り出すプログラムコードは、まったく別の低速マシン（マシン C）向けであるとします。
+    マシン C 向けにコンパイラーをビルドするためには、以下の 3 つの段階を経ることになります。
+    </para>
+@z
+
+@x
+          <row><entry>Stage</entry><entry>Build</entry><entry>Host</entry>
+               <entry>Target</entry><entry>Action</entry></row>
+@y
+          <row><entry>段階</entry><entry>ビルド</entry><entry>ホスト</entry>
+               <entry>ターゲット</entry><entry>作業</entry></row>
+@z
+@x
+            <entry>1</entry><entry>A</entry><entry>A</entry><entry>B</entry>
+            <entry>build cross-compiler cc1 using ccA on machine A</entry>
+@y
+            <entry>1</entry><entry>A</entry><entry>A</entry><entry>B</entry>
+            <entry>マシン A 上の ccA を使い、クロスコンパイラー cc1 をビルド。</entry>
+@z
+@x
+            <entry>2</entry><entry>A</entry><entry>B</entry><entry>C</entry>
+            <entry>build cross-compiler cc2 using cc1 on machine A</entry>
+@y
+            <entry>2</entry><entry>A</entry><entry>B</entry><entry>C</entry>
+            <entry>マシン A 上の cc1 を使い、クロスコンパイラー cc2 をビルド。</entry>
+@z
+@x
+            <entry>3</entry><entry>B</entry><entry>C</entry><entry>C</entry>
+            <entry>build compiler ccC using cc2 on machine B</entry>
+@y
+            <entry>3</entry><entry>B</entry><entry>C</entry><entry>C</entry>
+            <entry>マシン B 上の cc2 を使い、コンパイラー ccC をビルド。</entry>
+@z
+
+@x
+    <para>Then, all the other programs needed by machine C can be compiled
+    using cc2 on the fast machine B. Note that unless B can run programs
+    produced for C, there is no way to test the built programs until machine
+    C itself is running. For example, for testing ccC, we may want to add a
+    fourth stage:</para>
+@y
+    <para>
+    マシン C 上で必要となる他のプログラムは、高速なマシン B 上において cc2 を用いてコンパイルすることができます。
+    マシン B がマシン C 向けのプログラムを実行できなかったとすると、マシン C そのものが動作するようにならない限り、プログラムのビルドやテストは一切できないことになります。
+    たとえば ccC をテストするには、以下の 4 つめの段階が必要になります。
+    </para>
+@z
+
+@x
+          <row><entry>Stage</entry><entry>Build</entry><entry>Host</entry>
+               <entry>Target</entry><entry>Action</entry></row>
+@y
+          <row><entry>段階</entry><entry>ビルド</entry><entry>ホスト</entry>
+               <entry>ターゲット</entry><entry>作業</entry></row>
+@z
+@x
+            <entry>4</entry><entry>C</entry><entry>C</entry><entry>C</entry>
+            <entry>rebuild  and test ccC using itself on machine C</entry>
+@y
+            <entry>4</entry><entry>C</entry><entry>C</entry><entry>C</entry>
+            <entry>マシン C 上にて ccC を使い ccC そのものの再ビルドとテストを実施。</entry>
+@z
+
+@x
+    <para>In the example above, only cc1 and cc2 are cross-compilers, that is,
+    they produce code for a machine different from the one they are run on.
+    The other compilers ccA and ccC produce code for the machine they are run
+    on. Such compilers are called <emphasis>native</emphasis> compilers.</para>
+@y
+    <para>
+    上の例において cc1 と cc2 だけがクロスコンパイラーです。
+    つまりこのコンパイラーは、これを実行しているマシンとは別のマシンに対するコードを生成できるものです。
+    これに比べて ccA と ccC というコンパイラーは、実行しているマシンと同一マシン向けのコードしか生成できません。
+    そういうコンパイラーのこを<emphasis>ネイティブ</emphasis> コンパイラーと呼びます。
+    </para>
+@z
+
+@x
+    <title>Implementation of Cross-Compilation for LFS</title>
+@y
+    <title>LFS におけるクロスコンパイラーの実装方法</title>
+@z
+
+@x
+      <para>Almost all the build systems use names of the form
+      cpu-vendor-kernel-os referred to as the machine triplet. An astute
+      reader may wonder why a <quote>triplet</quote> refers to a four component
+      name. The reason is history: initially, three component names were enough
+      to designate unambiguously a machine, but with new machines and systems
+      appearing, that proved insufficient. The word <quote>triplet</quote>
+      remained. A simple way to determine your machine triplet is to run
+      the <command>config.guess</command>
+      script that comes with the source for many packages. Unpack the binutils
+      sources and run the script: <userinput>./config.guess</userinput> and note
+      the output. For example, for a 32-bit Intel processor the
+      output will be <emphasis>i686-pc-linux-gnu</emphasis>. On a 64-bit
+      system it will be <emphasis>x86_64-pc-linux-gnu</emphasis>.</para>
+@y
+      <para>
+      ほぼすべてのビルドシステムにおいては、cpu-vendor-kernel-os という形式のマシントリプレット（triplet）と呼ばれる名称が用いられます。
+      お気づきのことと思いますが、なぜ "トリプレット" といいながら 4 つの項目からなる名前なのでしょう。
+      その理由はこれまでの経緯にあります。
+      当初は 3 つの項目による名前を使っていれば、マシンを間違いなく特定できるものでした。
+      しかし新たなマシン、新たなシステムが登場するようになって、これでは不十分であることがわかりました。
+      "トリプレット" という語だけが残ったわけです。
+      マシンのトリプレットを確認する一番簡単な方法は、<command>config.guess</command> スクリプトを実行することです。
+      これは多くのパッケージのソースに含まれています。
+      binutils のソースを伸張（解凍）し、この <userinput>./config.guess</userinput> スクリプトを実行して、その出力を確認してください。
+      たとえば 32 ビットのインテルプロセッサーであれば、<emphasis>i686-pc-linux-gnu</emphasis> と出力されます。
+      64 ビットシステムであれば <emphasis>x86_64-pc-linux-gnu</emphasis> となります。
+      </para>
+@z
+
+@x
+      <para>Also be aware of the name of the platform's dynamic linker, often
+      referred to as the dynamic loader (not to be confused with the standard
+      linker <command>ld</command> that is part of binutils). The dynamic linker
+      provided by Glibc finds and loads the shared libraries needed by a
+      program, prepares the program to run, and then runs it. The name of the
+      dynamic linker for a 32-bit Intel machine will be <filename
+      class="libraryfile">ld-linux.so.2</filename> (<filename
+      class="libraryfile">ld-linux-x86-64.so.2</filename> for 64-bit systems). A
+      sure-fire way to determine the name of the dynamic linker is to inspect a
+      random binary from the host system by running: <userinput>readelf -l
+      &lt;name of binary&gt; | grep interpreter</userinput> and noting the
+      output. The authoritative reference covering all platforms is in the
+      <filename>shlib-versions</filename> file in the root of the Glibc source
+      tree.</para>
+@y
+      <para>
+      またプラットフォームのダイナミックリンカーの名前にも注意してください。
+      これはダイナミックローダーとも呼ばれます。
+      （binutils の一部である標準リンカー <command>ld</command> とは別ものですから混同しないでください。）
+      ダイナミックリンカーは Glibc によって提供されているもので、何かのプログラムが必要とする共有ライブラリを検索しロードします。
+      そして実行できるような準備を行って、実際に実行します。
+      32 ビットインテルマシンに対するダイナミックリンカーの名前は <filename
+      class="libraryfile">ld-linux.so.2</filename> となります。
+      （64 ビットシステムであれば <filename
+      class="libraryfile">ld-linux-x86-64.so.2</filename> となります。）
+      ダイナミックリンカーの名前を確実に決定するには、何でもよいのでホスト上の実行モジュールを調べます。
+      <userinput>readelf -l
+      &lt;name of binary&gt; | grep interpreter</userinput> というコマンドを実行することです。
+      出力結果を見てください。
+      どのようなプラットフォームであっても確実な方法は、<filename>shlib-versions</filename> というファイルを見てみることです。
+      これは Glibc ソースツリーのルートに存在しています。
+      </para>
+@z
+
+@x
+    <para>In order to fake a cross compilation, the name of the host triplet
+    is slightly adjusted by changing the &quot;vendor&quot; field in the
+    <envar>LFS_TGT</envar> variable. We also use the
+    <parameter>--with-sysroot</parameter> option when building the cross linker and
+    cross compiler to tell them where to find the needed host files. This
+    ensures that none of the other programs built in <xref
+    linkend="chapter-temporary-tools"/> can link to libraries on the build
+    machine. Only two stages are mandatory, and one more for tests:</para>
+@y
+    <para>
+    クロスコンパイルに似せた作業を行うため、ホストのトリプレットを多少調整します。
+    <envar>LFS_TGT</envar> 変数において &quot;vendor&quot; 項目を変更します。
+    またクロスリンカーやクロスコンパイラーを生成する際には <parameter>--with-sysroot</parameter> オプションを利用します。
+    これはホスト内に必要となるファイルがどこにあるかを指示するものです。
+    <xref linkend="chapter-temporary-tools"/> においてビルドされる他のプログラムが、ビルドマシンのライブラリにリンクできないようにするためです。
+    以下の 2 段階は必須ですが、最後の 1 つはテスト用です。
+    </para>
+@z
+
+@x
+          <row><entry>Stage</entry><entry>Build</entry><entry>Host</entry>
+               <entry>Target</entry><entry>Action</entry></row>
+@y
+          <row><entry>段階</entry><entry>ビルド</entry><entry>ホスト</entry>
+               <entry>ターゲット</entry><entry>作業</entry></row>
+@z
+@x
+            <entry>1</entry><entry>pc</entry><entry>pc</entry><entry>lfs</entry>
+            <entry>build cross-compiler cc1 using cc-pc on pc</entry>
+@y
+            <entry>1</entry><entry>pc</entry><entry>pc</entry><entry>lfs</entry>
+            <entry>pc 上の cc-pc を使い、クロスコンパイラー cc1 をビルド。</entry>
+@z
+@x
+            <entry>2</entry><entry>pc</entry><entry>lfs</entry><entry>lfs</entry>
+            <entry>build compiler cc-lfs using cc1 on pc</entry>
+@y
+            <entry>2</entry><entry>pc</entry><entry>lfs</entry><entry>lfs</entry>
+            <entry>pc 上の cc1 を使い、クロスコンパイラー cc-lfs をビルド。</entry>
+@z
+@x
+            <entry>3</entry><entry>lfs</entry><entry>lfs</entry><entry>lfs</entry>
+            <entry>rebuild and test cc-lfs using itself on lfs</entry>
+@y
+            <entry>3</entry><entry>lfs</entry><entry>lfs</entry><entry>lfs</entry>
+            <entry>lfs 上の cc-lfs を使い cc-lfs そのものの再ビルドとテストを実施。</entry>
+@z
+
+@x
+    <para>In the above table, <quote>on pc</quote> means the commands are run
+    on a machine using the already installed distribution. <quote>On
+    lfs</quote> means the commands are run in a chrooted environment.</para>
+@y
+    <para>
+    上の表において "pc 上の" というのは、すでにそのディストリビューションにおいてインストールされているコマンドを実行することを意味します。
+    また "lfs 上の" とは、chroot 環境下にてコマンドを実行することを意味します。
+    </para>
+@z
+
+@x
+    <para>Now, there is more about cross-compiling: the C language is not
+    just a compiler, but also defines a standard library. In this book, the
+    GNU C library, named glibc, is used. This library must
+    be compiled for the lfs machine, that is, using the cross compiler cc1. 
+    But the compiler itself uses an internal library implementing complex
+    instructions not available in the assembler instruction set. This
+    internal library is named libgcc, and must be linked to the glibc
+    library to be fully functional! Furthermore, the standard library for
+    C++ (libstdc++) also needs being linked to glibc. The solution to this
+    chicken and egg problem is to first build a degraded cc1 based libgcc,
+    lacking some functionalities such as threads and exception handling, then
+    build glibc using this degraded compiler (glibc itself is not
+    degraded), then build libstdc++. But this last library will lack the
+    same functionalities as libgcc.</para>
+@y
+    <para>
+    さてクロスコンパイルに関しては、まだまだあります。
+    C 言語というと単にコンパイラーがあるだけではなく、標準ライブラリも定義しています。
+    本書では glibc と呼ぶ GNU C ライブラリを用いています。
+    このライブラリは lfs マシン向けにコンパイルされたものでなければなりません。
+    つまりクロスコンパイラー cc1 を使うということです。
+    しかしコンパイラーには内部ライブラリというものがあって、アセンブラー命令セットだけでは利用できない複雑な命令が含まれます。
+    その内部ライブラリは libgcc と呼ばれ、完全に機能させるには glibc ライブラリにリンクさせなければなりません。
+    さらに C++ (libstdc++) に対する標準ライブラリも、glibc にリンクさせる必要があります。
+    このようなニワトリと卵の問題を解決するには、まず libgcc に基づいた低機能版の cc1 をビルドします。
+    この cc1 にはスレッド処理や例外処理といった機能が含まれていません。
+    その後に、この低機能なコンパイラーを使って glibc をビルドします。
+    （glibc 自体は低機能ではありません。）
+    そして libstdc++ をビルドします。
+    libstdc++ もやはり、libgcc と同じく機能がいくつか欠如しています。
+    </para>
+@z
+
+@x
+    <para>This is not the end of the story: the conclusion of the preceding
+    paragraph is that cc1 is unable to build a fully functional libstdc++, but
+    this is the only compiler available for building the C/C++ libraries
+    during stage 2! Of course, the compiler built during stage 2, cc-lfs,
+    would be able to build those libraries, but (1) the build system of
+    GCC does not know that it is usable on pc, and (2) using it on pc
+    would be at risk of linking to the pc libraries, since cc-lfs is a native
+    compiler. So we have to build libstdc++ later, in chroot.</para>
+@y
+    <para>
+    これで話が終わるわけではありません。
+    上の段落における結論は以下のようになります。
+    cc1 からは完全な libstdc++ はビルドできないということです。
+    しかし第 2 段階においては、C/C++ ライブラリをビルドできる唯一のコンパイラーです。
+    もちろん第 2 段階においてビルドされるコンパイラー cc-lfs は、それらライブラリをビルドできます。
+    しかし (1) GCC ビルドシステムは、それが pc 上で利用できるかどうかわかりません、そして (2) pc 上にてそれを使うと pc 内のライブラリにリンクしてしまうリスクがあります。
+    なぜなら cc-lfs はネイティブコンパイラーであるからです。
+    そこで libstdc++ は、後々 chroot 環境内でビルドしなければならないのです。
+    </para>
+@z
+
+@x
+    <title>Other procedural details</title>
+@y
+    <title>その他の手順詳細</title>
+@z
+
+@x
+    <para>The cross-compiler will be installed in a separate <filename
+    class="directory">$LFS/tools</filename> directory, since it will not
+    be part of the final system.</para>
+@y
+    <para>
+    クロスコンパイラーは、他から切り離された <filename
+    class="directory">$LFS/tools</filename> ディレクトリにインストールされます。
+    このクロスコンパイラーは、最終システムに含めるものではないからです。
+    </para>
 @z
 
 %@x
@@ -414,11 +701,11 @@
     <envar>DESTDIR</envar> variable to have the
     programs land into the LFS filesystem.</para>
 @y
-    <para>As said above, the standard C++ library is compiled next, followed in
-    <xref linkend="chapter-temporary-tools"/> by all the programs that need
-    themselves to be built. The install step of all those packages uses the
-    <envar>DESTDIR</envar> variable to have the
-    programs land into the LFS filesystem.</para>
+    <para>
+    すでに述べたように、標準 C++ ライブラリはこの後でコンパイルします。
+    そして <xref linkend="chapter-temporary-tools"/> では、プログラムそれ自身を必要としているプログラムをすべてビルドしていきます。
+    そのようなパッケージのインストール手順においては <envar>DESTDIR</envar> 変数を使い、LFS ファイルシステム内にインストールします。
+    </para>
 @z
 
 %@x
@@ -455,16 +742,14 @@
     <parameter>CC_FOR_TARGET=$LFS_TGT-gcc</parameter> is put explicitely into
     the configure options.</para>
 @y
-    <para>At the end of <xref linkend="chapter-temporary-tools"/> the native
-    lfs compiler is installed. First binutils-pass2 is built,
-    with the same <envar>DESTDIR</envar> install as the other programs,
-    then the second pass of GCC is constructed, omitting libstdc++
-    and other non-important libraries.  Due to some weird logic in GCC's
-    configure script, <envar>CC_FOR_TARGET</envar> ends up as
-    <command>cc</command> when the host is the same as the target, but is
-    different from the build system. This is why
-    <parameter>CC_FOR_TARGET=$LFS_TGT-gcc</parameter> is put explicitely into
-    the configure options.</para>
+    <para>
+    <xref linkend="chapter-temporary-tools"/> の最後には、LFS のネイティブコンパイラーをインストールします。
+    はじめに <envar>DESTDIR</envar> を使って binutils 2 回めをビルドし、他のプログラムにおいてもおなじようにインストールを行います。
+    2 回めとなる GCC ビルドでは、libstdc++ や不必要なライブラリは省略します。
+    GCC の configure スクリプトにはハードコーディングされている部分があるので、<envar>CC_FOR_TARGET</envar> はホストのターゲットが同じであれば <command>cc</command> になります。
+    しかしビルドシステムにおいては異なります。
+    そこで configure オプションには <parameter>CC_FOR_TARGET=$LFS_TGT-gcc</parameter> を明示的に指定するようにしています。
+    </para>
 @z
 
 @x
@@ -478,11 +763,11 @@
     packages needed for a fully functional system are built, tested and
     installed.</para>
 @y
-  <para>
-  <xref linkend="chapter-chroot-temporary-tools"/>での chroot による環境下では、最初の作業は libstdc++ をビルドすることです。
-  そして各種プログラムのインストールを、ツールチェーンを適切に操作しながら実施していきます。
-  プログラムのテストに必要な他のプログラムについても、ビルドしていきます。
-  これ以降、コアとなるツールチェーンは自己完結していきます。
-  そしてシステムの全機能を動作させるための全パッケージの最終バージョンを、ビルドしテストしインストールします。
-  </para>
+    <para>
+    <xref linkend="chapter-chroot-temporary-tools"/>での chroot による環境下では、最初の作業は libstdc++ をビルドすることです。
+    そして各種プログラムのインストールを、ツールチェーンを適切に操作しながら実施していきます。
+    プログラムのテストに必要な他のプログラムについても、ビルドしていきます。
+    これ以降、コアとなるツールチェーンは自己完結していきます。
+    そしてシステムの全機能を動作させるための全パッケージの最終バージョンを、ビルドしテストしインストールします。
+    </para>
 @z

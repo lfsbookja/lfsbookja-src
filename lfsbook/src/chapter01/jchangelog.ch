@@ -60,6 +60,16 @@
 -->
 
    <listitem>
+      <para>2020-06-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - 整備。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2020-06-25</para>
       <itemizedlist>
         <listitem>

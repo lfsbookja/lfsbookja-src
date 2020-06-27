@@ -114,28 +114,30 @@
     </para>
 @z
 
-@x
-    <para>One of the e2fsprogs tests will attempt to allocate 256 MB of memory.
-    If you do not have significantly more RAM than this, be sure to enable
-    sufficient swap space for the test. See <xref
-    linkend="ch-partitioning-creatingfilesystem"/> and <xref
-    linkend="ch-partitioning-mounting"/>
-    for details on creating and enabling swap space.</para>
-@y
-    <para>
-    e2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
-    この容量を確保できるだけの RAM がない場合は、十分なスワップ領域が利用可能であることを確認してください。
-    スワップ領域の生成と有効化については <xref
-    linkend="ch-partitioning-creatingfilesystem"/>と <xref linkend="ch-partitioning-mounting"/>を参照してください。
-    </para>
-@z
+%@x
+%    <para>One of the e2fsprogs tests will attempt to allocate 256 MB of memory.
+%    If you do not have significantly more RAM than this, be sure to enable
+%    sufficient swap space for the test. See <xref
+%    linkend="ch-partitioning-creatingfilesystem"/> and <xref
+%    linkend="ch-partitioning-mounting"/>
+%    for details on creating and enabling swap space.</para>
+%@y
+%    <para>
+%    e2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
+%    この容量を確保できるだけの RAM がない場合は、十分なスワップ領域が利用可能であることを確認してください。
+%    スワップ領域の生成と有効化については <xref
+%    linkend="ch-partitioning-creatingfilesystem"/>と <xref linkend="ch-partitioning-mounting"/>を参照してください。
+%    </para>
+%@z
 
 @x
     <para>On a spinning disk, the tests take a little more than 4 SBUs. They
     can be much shorter on an SSD (down to about 1.5 SBUs).</para>
 @y
-    <para>On a spinning disk, the tests take a little more than 4 SBUs. They
-    can be much shorter on an SSD (down to about 1.5 SBUs).</para>
+    <para>
+    回転式ディスクの場合、テストはさらに 4 SBU 以上要します。
+    SSD 上であれば、より短くなります（1.5 SBU くらいまで下がります）。
+    </para>
 @z
 
 @x

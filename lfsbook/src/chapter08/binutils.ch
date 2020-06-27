@@ -86,7 +86,7 @@
 @x
       <title>The meaning of the configure parameters:</title>
 @y
-      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;:</title>
+      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;</title>
 @z
 
 @x --enable-gold
@@ -143,7 +143,7 @@
 @x
       <title>The meaning of the make parameter:</title>
 @y
-      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;</title>
 @z
 
 @x

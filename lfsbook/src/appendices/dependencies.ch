@@ -448,7 +448,12 @@
 @z
 
 %----------------------------------------------------------------------
-@x Expect
+@x
+<!-- Begin Expect dependency info -->
+@y
+<!-- Begin Expect dependency info -->
+@z
+@x
          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
          Patch, Sed, and Tcl</seg>
 @y
@@ -466,13 +471,22 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>
+            <ulink url="&blfs-root;view/stable/general/tk.html">tk</ulink>
+          </seg>  
 @y
-          <seg>なし</seg>
+          <seg>
+            <ulink url="&blfs-root;view/stable/general/tk.html">tk</ulink>
+          </seg>  
 @z
 
 %----------------------------------------------------------------------
-@x File
+@x
+<!-- Begin File dependency info -->
+@y
+<!-- Begin File dependency info -->
+@z
+@x
           <seg>Bash, Binutils, Bzip2, Coreutils, Diffutils, Gawk, GCC, Glibc,
           Grep, Make, Sed, Xz, and Zlib</seg>
 @y
@@ -837,7 +851,12 @@
 @z
 
 %----------------------------------------------------------------------
-@x Inetutils
+@x
+<!-- Begin Inetutils dependency info -->
+@y
+<!-- Begin Inetutils dependency info -->
+@z
+@x
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Ncurses,
          Patch, Sed, Texinfo, and Zlib</seg>
 @y
@@ -845,9 +864,9 @@
          Patch, Sed, Texinfo, Zlib</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>Tar</seg>
@@ -910,9 +929,9 @@
          Glibc, Gzip, Make, Patch, Sed</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -926,7 +945,12 @@
 @z
 
 %----------------------------------------------------------------------
-@x Kmod
+@x
+<!-- Begin Kmod dependency info -->
+@y
+<!-- Begin Kmod dependency info -->
+@z
+@x
          <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
          Gzip, Make, Pkg-config, Sed, Xz-Utils, and Zlib</seg>
 @y
@@ -950,7 +974,12 @@
 @z
 
 %----------------------------------------------------------------------
-@x Less
+@x
+<!-- Begin Less dependency info -->
+@y
+<!-- Begin Less dependency info -->
+@z
+@x
          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
          Ncurses, and Sed</seg>
 @y
@@ -967,9 +996,19 @@
 @y
           <seg>Gzip</seg>
 @z
+@x
+          <seg>Pcre</seg>
+@y
+          <seg>Pcre</seg>
+@z
 
 %----------------------------------------------------------------------
-@x Libcap
+@x
+<!-- Begin Libcap dependency info -->
+@y
+<!-- Begin Libcap dependency info -->
+@z
+@x
          <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Perl, Make,
          and Sed</seg>
 @y
@@ -977,9 +1016,9 @@
          Sed</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>IProute2 and Shadow</seg>
@@ -999,9 +1038,9 @@
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>IProute2 and Linux Kernel</seg>
@@ -1303,9 +1342,9 @@
 <!-- Begin Ninja dependency info -->
 @z
 @x
-         <seg>Binutils, Coreutils, Gcc, and Python</seg>
+         <seg>Binutils, Coreutils, GCC, and Python</seg>
 @y
-         <seg>Binutils, Coreutils, Gcc, Python</seg>
+         <seg>Binutils, Coreutils, GCC, Python</seg>
 @z
 @x
           <seg>None</seg>
@@ -1313,15 +1352,25 @@
           <seg>なし</seg>
 @z
 @x
+          <seg>Meson</seg>
+@y
+          <seg>Meson</seg>
+@z
+@x
           <seg>Asciidoc, Doxygen, Emacs, and re2c</seg>
 @y
           <seg>Asciidoc, Doxygen, Emacs, re2c</seg>
 @z
 %----------------------------------------------------------------------
-@x Openssl
-         <seg>Binutils, Coreutils, Gcc, Make, and Perl</seg>
+@x
+<!-- Begin Openssl dependency info -->
 @y
-         <seg>Binutils, Coreutils, Gcc, Make, Perl</seg>
+<!-- Begin Openssl dependency info -->
+@z
+@x
+         <seg>Binutils, Coreutils, GCC, Make, and Perl</seg>
+@y
+         <seg>Binutils, Coreutils, GCC, Make, Perl</seg>
 @z
 @x
           <seg>None</seg>

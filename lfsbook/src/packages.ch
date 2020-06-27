@@ -50,6 +50,12 @@
 @z
 
 @x
+<!ENTITY e2fsprogs-fin-sbu "4.4 SBU on a spinning disk, 1.7 SBU on an SSD">
+@y
+<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 4.4 SBU、SSD で 1.7 SBU">
+@z
+
+@x
 <!ENTITY gcc-fin-sbu "103 SBU (with tests)">
 @y
 <!ENTITY gcc-fin-sbu "103 SBU (テスト込み)">

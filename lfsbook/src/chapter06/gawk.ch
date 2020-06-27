@@ -32,6 +32,14 @@
 @z
 
 @x
+    <para>First, ensure some unneeded files are not installed:</para>
+@y
+    <para>
+    はじめに、必要のないファイルはインストールしないようにします。
+    </para>
+@z
+
+@x
     <para>Prepare Gawk for compilation:</para>
 @y
     <para>&PreparePackage1;Gawk&PreparePackage2;</para>

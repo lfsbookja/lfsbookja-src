@@ -62,7 +62,7 @@
 @x
       <title>The meaning of the make parameter:</title>
 @y
-      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;</title>
 @z
 
 @x

@@ -1,7 +1,7 @@
 %
-% This is part of BLFSbookja package.
+% This is part of LFSbookja package.
 %
-% This is a CTIE change file for the original XML source of the BLFSbook.
+% This is a CTIE change file for the original XML source of the LFSbook.
 %
 % $Author:$
 % $Rev:$

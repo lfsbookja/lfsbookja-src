@@ -215,6 +215,17 @@
 @z
 
 @x
+  <para>Create a basic <filename>/etc/hosts</filename> file to be
+  referenced in some test suites, and in one of Perl's configuration files
+  as well:</para>
+@y
+  <para>
+  テストスイートの中に <filename>/etc/hosts</filename> ファイルを参照するものがあるので、単純なものをここで生成します。
+  これは Perl の設定ファイルにおいても参照されます。
+  </para>
+@z
+
+@x
   <para>In order for user <systemitem class="username">root</systemitem> to be
   able to login and for the name <quote>root</quote> to be recognized, there
   must be relevant entries in the <filename>/etc/passwd</filename> and
@@ -283,7 +294,7 @@
   chapter.</para>
 @y
   <para>
-  <xref linkend="chapter-building-system"/>におけるテストの中には、通常のユーザーを必要とするものがあります。
+  <xref linkend="chapter-building-system"/> におけるテストの中には、通常のユーザーを必要とするものがあります。
   ここでそういったユーザーをここで追加し、その章の最後には削除します。
   </para>
 @z

@@ -9,9 +9,9 @@ open (my $fh_tgt, '>'.$tgt_name) or die "error: $!";
 my $lines = "";
 
 print $fh_tgt "%\n";
-print $fh_tgt "% This is part of BLFSbookja package.\n";
+print $fh_tgt "% This is part of LFSbookja package.\n";
 print $fh_tgt "%\n";
-print $fh_tgt "% This is a CTIE change file for the original XML source of the BLFSbook.\n";
+print $fh_tgt "% This is a CTIE change file for the original XML source of the LFSbook.\n";
 print $fh_tgt "%\n";
 print $fh_tgt "% \$Author:\$\n";
 print $fh_tgt "% \$Rev:\$\n";

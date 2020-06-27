@@ -41,7 +41,7 @@
 @x
       <title>The meaning of the configure option:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x FORCE_UNSAFE_CONFIGURE=1

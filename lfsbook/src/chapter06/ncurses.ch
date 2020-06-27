@@ -40,6 +40,15 @@
 @z
 
 @x
+    <para>Then, run the following commands to build the <quote>tic</quote>
+    program on the build host:</para>
+@y
+    <para>
+    そして以下のコマンドを実行して、ビルドホスト上に<quote>tic</quote>プログラムをビルドします。
+    </para>
+@z
+
+@x
     <para>Prepare Ncurses for compilation:</para>
 @y
     <para>&PreparePackage1;Ncurses&PreparePackage2;</para>

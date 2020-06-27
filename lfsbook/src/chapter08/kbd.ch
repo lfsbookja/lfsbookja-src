@@ -69,7 +69,7 @@
 @x
       <title>The meaning of the configure option:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 %@x
@@ -140,11 +140,11 @@
 %      </para>
 %@z
 
-%@x
-%    <para>If desired, install the documentation:</para>
-%@y
-%    <para>必要ならドキュメントをインストールします。</para>
-%@z
+@x
+    <para>If desired, install the documentation:</para>
+@y
+    <para>必要ならドキュメントをインストールします。</para>
+@z
 
 @x
     <title>Contents of Kbd</title>

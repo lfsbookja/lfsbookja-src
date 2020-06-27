@@ -37,6 +37,17 @@
 @z
 
 @x
+    <note><para>The above regular expression looks unusual because of all the
+    backslashes.  What it does is add a backslash before the right brace
+    character in the sequence '\${' resulting in '\$\{'.</para></note>
+@y
+    <note><para>
+    上の正規表現は、バックスラッシュが多すぎて変に思うかもしれません。
+    ここで行っているのは '\${' という記述の並びに対して、右ブレースの前にバックスラッシュを追加して '\$\{' を作り出しています。
+    </para></note>
+@z
+
+@x
     <para>Prepare Intltool for compilation:</para>
 @y
     <para>&PreparePackage1;Intltool&PreparePackage2;</para>

@@ -42,7 +42,7 @@
 @x
       <title>The meaning of the new configure option:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x --with-installed-readline

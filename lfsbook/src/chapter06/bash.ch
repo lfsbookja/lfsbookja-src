@@ -40,7 +40,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x
@@ -79,6 +79,14 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>Move the excutable to where it is expected:</para>
+@y
+    <para>
+    実行モジュールを、あるべき場所に移動させます。
+    </para>
 @z
 
 @x

@@ -37,6 +37,8 @@ all: ctie $(srcs) $(cpys)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+-include Makefile.sub
+Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
+	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
 $(cpys): $(srcdir)/$(@:.xml=.ch)
 	cp -p $(srcdir)/$(@:.xml=.ch) $@

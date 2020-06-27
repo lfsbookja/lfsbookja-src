@@ -81,7 +81,7 @@
 @x
       <title>The meaning of the build option:</title>
 @y
-      <title>&MeaningOfOption1;build&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;build&MeaningOfOption2;</title>
 @z
 
 @x --bootstrap

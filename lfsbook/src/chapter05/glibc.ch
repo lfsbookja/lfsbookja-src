@@ -32,6 +32,30 @@
 @z
 
 @x
+    <para>First, create a symbolic link for LSB compliance. Additionally,
+    for x86_64, create a compatibility symbolic link required for proper
+    operation of the dynamic library loader:</para>
+@y
+    <para>
+    はじめに LSB コンプライアンスに合うように、シンボリックリンクを生成します。
+    さらに x86_64 向けとして、互換のシンボリックリンクを生成して、ダイナミックライブラリローダーが適切に動作するようにします。
+    </para>
+@z
+
+@x
+    <para>Some of the Glibc programs use the non-FHS compliant
+    <filename class="directory">/var/db</filename> directory to store their
+    runtime data. Apply the following patch to make such programs store their
+    runtime data in the FHS-compliant locations:</para>
+@y
+    <para>
+    Glibc のプログラムの中で、FHS コンプライアンスに適合しない <filename
+    class="directory">/var/db</filename> ディレクトリを用いているものがあり、そこに実行時データを保存しています。
+    以下のパッチを適用することで、実行時データの保存ディレクトリを FHS に合致するものとします。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc 
     in a dedicated build directory:</para>
 @y
@@ -51,7 +75,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x --host=$LFS_TGT, --build=$(../glibc-&glibc-version;/scripts/config.guess)
@@ -279,6 +303,18 @@
     次節にてビルドするパッケージでは、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
     特に binutils 2 回めや gcc 2 回めのビルドに失敗したら、それ以前にインストールしてきた binutils, GCC, glibc のいずれかにてビルドがうまくできていないことを意味します。
     </para></note>
+@z
+
+@x
+    <para>Now that our cross-toolchain is complete, finalize the installation
+    of the limits.h header. For doing so, run a utility provided by the GCC
+    developers:</para>
+@y
+    <para>
+    ここでクロスツールチェーンが完成しました。
+    そこで limits.h のインストールを確定させます。
+    これには GCC 開発者が提供するユーティリティーを実行します。
+    </para>
 @z
 
 @x

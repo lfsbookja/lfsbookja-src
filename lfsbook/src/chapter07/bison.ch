@@ -14,15 +14,9 @@
 @z
 
 @x
-  <indexterm zone="ch-tools-bison">
-    <primary sortas="a-Bison">Bison</primary>
     <secondary>tools</secondary>
-  </indexterm>
 @y
-  <indexterm zone="ch-tools-bison">
-    <primary sortas="a-Bison">Bison</primary>
     <secondary>&Tools;</secondary>
-  </indexterm>
 @z
 
 @x
@@ -35,6 +29,21 @@
     <para>Prepare Bison for compilation:</para>
 @y
     <para>&PreparePackage1;Bison&PreparePackage2;</para>
+@z
+
+@x
+      <title>The meaning of the new configure option:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x --docdir=/usr/share/doc/bison-&bison-version;
+          <para>This tells the build system to install bison documentation
+          into a versioned directory.</para>
+@y
+          <para>
+          ビルドシステムに対して、bison のドキュメントをインストールするディレクトリを、バージョンつきとします。
+          </para>
 @z
 
 @x

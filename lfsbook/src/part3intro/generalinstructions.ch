@@ -14,6 +14,14 @@
 @z
 
 @x
+<sect1 id="ch-tools-generalinstructions"
+       xreflabel="General Compilation Instructions">
+@y
+<sect1 id="ch-tools-generalinstructions"
+       xreflabel="全般的なコンパイル手順">
+@z
+
+@x
   <title>General Compilation Instructions</title>
 @y
   <title>全般的なコンパイル手順</title>

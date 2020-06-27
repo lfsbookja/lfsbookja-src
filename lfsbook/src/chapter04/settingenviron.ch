@@ -203,6 +203,52 @@
 @z
 
 @x
+     <para>Several commercial distributions add a non-documented instantiation
+     of <filename>/etc/bash.bashrc</filename> to the initialization of
+     <command>bash</command>. This file has the potential to modify the
+     <systemitem class="username">lfs</systemitem>
+     user's environment in ways that can affect the building of critical LFS
+     packages. To make sure the <systemitem class="username">lfs</systemitem>
+     user's envronment is clean, check for the
+     presence of <filename>/etc/bash.bashrc</filename> and, if present, move it
+     out of the way.  As the <systemitem class="username">root</systemitem>
+     user, run:</para>
+@y
+     <para>
+     商用ディストリビューションの中には、<command>bash</command> の初期化を行うスクリプトとして、ドキュメント化されていない <filename>/etc/bash.bashrc</filename> というものを加えているものがあります。
+     このファイルは <systemitem class="username">lfs</systemitem> ユーザー環境を修正してしまう可能性があります。
+     それにより LFS にとっての重要パッケージのビルドに支障をきたすことがあります。
+     <systemitem class="username">lfs</systemitem> ユーザー環境をきれいに保つため、<filename>/etc/bash.bashrc</filename> というファイルが存在しているかどうかを確認してください。
+     そして存在していたらファイルを移動させてください。
+     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+     </para>
+@z
+
+@x
+     <para>After use of the <systemitem class="username">lfs</systemitem>
+     user is finished at the beginning of <xref
+     linkend="chapter-chroot-temporary-tools"/>, you can restore
+	 <filename>/etc/bash.bashrc</filename> (if desired).</para>
+@y
+     <para>
+     <xref linkend="chapter-chroot-temporary-tools"/> の冒頭において <systemitem
+     class="username">lfs</systemitem> ユーザーの利用を終えたとき（必要であれば）<filename>/etc/bash.bashrc</filename> を元に戻してください。
+     </para>
+@z
+
+@x
+     <para>Note that the LFS Bash package we will build in
+     <xref linkend="ch-system-bash"/> is not configured to load or execute
+     <filename>/etc/bash.bashrc</filename>, so this file is useless on a
+     completed LFS system.</para>
+@y
+     <para>
+     なお <xref linkend="ch-system-bash"/> においてビルドした、LFS における Bash パッケージは、<filename>/etc/bash.bashrc</filename> をロードしたり読み取ったりするように設定されていません。
+     したがって完璧な LFS システムであれば、このファイルは不要なものです。
+     </para>
+@z
+
+@x
   <para>Finally, to have the environment fully prepared for building the
   temporary tools, source the just-created user profile:</para>
 @y

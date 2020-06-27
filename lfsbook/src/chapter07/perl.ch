@@ -1,219 +1,111 @@
 %
-% This is part of BLFSbookja package.
+% This is part of LFSbookja package.
 %
-% This is a CTIE change file for the original XML source of the BLFSbook.
+% This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../general.ent">
-  %general-entities;
-]>
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../general.ent">
-  %general-entities;
-]>
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-<sect1 id="ch-tools-perl" role="wrap">
-  <?dbhtml filename="perl.html"?>
-@y
-<sect1 id="ch-tools-perl" role="wrap">
-  <?dbhtml filename="perl.html"?>
-@z
-
-@x
-  <sect1info condition="script">
-    <productname>perl</productname>
-    <productnumber>&perl-version;</productnumber>
-    <address>&perl-url;</address>
-  </sect1info>
-@y
-  <sect1info condition="script">
-    <productname>perl</productname>
-    <productnumber>&perl-version;</productnumber>
-    <address>&perl-url;</address>
-  </sect1info>
-@z
-
-@x
-  <title>Perl-&perl-version;</title>
-@y
-  <title>Perl-&perl-version;</title>
-@z
-
-@x
-  <indexterm zone="ch-tools-perl">
-    <primary sortas="a-Perl">Perl</primary>
     <secondary>tools</secondary>
-  </indexterm>
 @y
-  <indexterm zone="ch-tools-perl">
-    <primary sortas="a-Perl">Perl</primary>
-    <secondary>tools</secondary>
-  </indexterm>
+    <secondary>&Tools;</secondary>
 @z
 
 @x
-  <sect2 role="package">
-    <title/>
-@y
-  <sect2 role="package">
-    <title/>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-    href="../chapter08/perl.xml"
-    xpointer="xpointer(/sect1/sect2[1]/para[1])"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-    href="../chapter08/perl.xml"
-    xpointer="xpointer(/sect1/sect2[1]/para[1])"/>
-@z
-
-@x
-    <segmentedlist>
-      <segtitle>&buildtime;</segtitle>
-      <segtitle>&diskspace;</segtitle>
-@y
-    <segmentedlist>
-      <segtitle>&buildtime;</segtitle>
-      <segtitle>&diskspace;</segtitle>
-@z
-
-@x
-      <seglistitem>
-        <seg>&perl-tmp-sbu;</seg>
-        <seg>&perl-tmp-du;</seg>
-      </seglistitem>
-    </segmentedlist>
-@y
-      <seglistitem>
-        <seg>&perl-tmp-sbu;</seg>
-        <seg>&perl-tmp-du;</seg>
-      </seglistitem>
-    </segmentedlist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Perl</title>
 @y
-  <sect2 role="installation">
-    <title>Installation of Perl</title>
+    <title>&InstallationOf1;Perl&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Perl for compilation:</para>
 @y
-    <para>Prepare Perl for compilation:</para>
+    <para>&PreparePackage1;Perl&PreparePackage2;</para>
 @z
 
 @x
-<screen><userinput remap="configure">sh Configure -des -Dprefix=/usr</userinput></screen>
-@y
-<screen><userinput remap="configure">sh Configure -des -Dprefix=/usr</userinput></screen>
-@z
-
-@x
-    <variablelist>
       <title>The meaning of the new Configure options:</title>
-      <varlistentry>
-        <term><parameter>-des</parameter></term>
-        <listitem>
+@y
+      <title>&MeaningOfOption1;Configure&MeaningOfOption2;</title>
+@z
+
+@x -des
           <para>This is a combination of three options: -d uses defaults for 
           all items; -e ensures completion of all tasks; -s silences
           non-essential output.</para>
-        </listitem>
-      </varlistentry>
 @y
-    <variablelist>
-      <title>The meaning of the new Configure options:</title>
-      <varlistentry>
-        <term><parameter>-des</parameter></term>
-        <listitem>
-          <para>This is a combination of three options: -d uses defaults for 
-          all items; -e ensures completion of all tasks; -s silences
-          non-essential output.</para>
-        </listitem>
-      </varlistentry>
+          <para>
+          これは三つのオプションを組み合わせたものです。
+          -d はあらゆる項目に対してデフォルト設定を用います。
+          -e はタスクをすべて実施します。
+          -s は不要な出力は行わないようにします。
+          </para>
 @z
 
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
+%@x
+%          <parameter>-Uloclibpth</parameter> and
+%          <parameter>-Ulocincpth</parameter>
+%@y
+%          <parameter>-Uloclibpth</parameter> と
+%          <parameter>-Ulocincpth</parameter>
+%@z
+%@x
+%          <para>These entries undefine variables that cause the configuration
+%          to search for locally installed components that may exist on the
+%          host system.</para>
+%@y
+%          <para>
+%          この指定は所定の変数定義を無効にします。
+%          これにより、ホストシステム上にインストールされたコンポーネントが存在していても、それを用いないようにします。
+%          </para>
+%@z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>Compile the package:</para>
+    <para>
+    &CompileThePackage;
+    </para>
 @z
 
-@x
-<screen><userinput remap="make">make</userinput></screen>
-@y
-<screen><userinput remap="make">make</userinput></screen>
-@z
+%@x
+%    <para>Although Perl comes with a test suite, it would be better to wait
+%    until it is installed in the next chapter.</para>
+%@y
+%    <para>
+%    Perl にはテストスイートがありますが、次章にてインストールする際に実施するのがよいでしょう。
+%    </para>
+%@z
+
+%@x
+%    <para>Only a few of the utilities and libraries need to be installed at this
+%    time:</para>
+%@y
+%    <para>
+%    ユーティリティプログラムやライブラリの中で、特定のものはこの時点でインストールする必要があります。
+%    </para>
+%@z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>Install the package:</para>
-@z
-
-@x
-<screen><userinput remap="install">make install</userinput></screen>
-@y
-<screen><userinput remap="install">make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
-    <title/>
-@y
-  <sect2 role="content">
-    <title/>
+    <para>
+    &InstallThePackage;
+    </para>
 @z
 
 @x
     <para>Details on this package are located in <xref linkend="contents-perl" role="."/></para>
 @y
-    <para>Details on this package are located in <xref linkend="contents-perl" role="."/></para>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
+    <para>
+    &Details1;<xref linkend="contents-perl" role=""/>&Details2;
+    </para>
 @z

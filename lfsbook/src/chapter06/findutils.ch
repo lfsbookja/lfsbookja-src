@@ -62,6 +62,13 @@
 @z
 
 @x
+    <para>Move the excutable to its final expected location:</para>
+@y
+    <para>
+    実行モジュールを、最終的にあるべき場所に移動させます。
+    </para>
+@z
+@x
     <para>Details on this package are located in
     <xref linkend="contents-findutils" role="."/></para>
 @y

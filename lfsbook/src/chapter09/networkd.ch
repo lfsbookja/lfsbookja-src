@@ -427,8 +427,9 @@
      <para>Create the <filename>/etc/hosts</filename> file using the following
      command:</para>
 @y
-     <para>Create the <filename>/etc/hosts</filename> file using the following
-     command:</para>
+     <para>
+     以下のようにして <filename>/etc/hosts</filename> ファイルを生成します。
+     </para>
 @z
 
 %@x

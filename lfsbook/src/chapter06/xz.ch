@@ -50,6 +50,14 @@
 @z
 
 @x
+    <para>Make sure that all essential files are in the correct directory:</para>
+@y
+    <para>
+    基本的なファイルをすべて、適切なディレクトリに移動します。
+    </para>
+@z
+
+@x
     <para>Details on this package are located in <xref linkend="contents-xz" role="."/></para>
 @y
     <para>

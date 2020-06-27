@@ -33,7 +33,7 @@
     libraries to <quote>lib</quote>:</para>
 @y
     <para>
-    x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
+    x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を "lib"にします。
     </para>
 @z
 
@@ -67,7 +67,7 @@
 @x
       <title>The meaning of the new configure parameters:</title>
 @y
-      <title>&MeaningOfParameter1;Configure&MeaningOfParameter2;:</title>
+      <title>&MeaningOfParameter1;Configure&MeaningOfParameter2;</title>
 @z
 
 @x LD=ld

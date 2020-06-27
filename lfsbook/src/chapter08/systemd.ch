@@ -79,7 +79,7 @@
 @x
       <title>The meaning of the meson options:</title>
 @y
-      <title>&MeaningOfOption1;meson&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;meson&MeaningOfOption2;</title>
 @z
 
 %@x -Dc_args=-Wno-format-overflow

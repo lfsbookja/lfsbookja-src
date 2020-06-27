@@ -44,7 +44,7 @@
 @x
     <title>The meaning of the command line options:</title>
 @y
-    <title>コマンドラインオプションの意味:</title>
+    <title>コマンドラインオプションの意味</title>
 @z
 
 @x

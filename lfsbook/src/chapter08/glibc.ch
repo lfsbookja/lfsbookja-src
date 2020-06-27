@@ -75,6 +75,18 @@
           </para>
 @z
 
+@x --enable-kernel=&min-kernel;
+          <para>This option tells the build system that this glibc may
+          be used with kernels as old as &min-kernel;. This means generating
+          workarounds in case a system call introduced in a later version
+          cannot be used.</para>
+@y
+          <para>
+          本オプションはビルドシステムに対して、カーネルバージョンが古くても &min-kernel; を用いることを指示します。
+          これより古いバージョンにおけるシステムコールが用いられないようにするため、その回避策をとるものです。
+          </para>
+@z
+
 @x --enable-stack-protector=strong
           <para>This option increases system security by adding 
           extra code to check for buffer overflows, such as stack

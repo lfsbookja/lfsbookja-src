@@ -46,6 +46,14 @@
     </para>
 @z
 
+@x
+    <para>First, unpack the documentation by issuing the following command:</para>
+@y
+    <para>
+    はじめにドキュメントを伸張（解凍）する以下のコマンドを実行します。
+    </para>
+@z
+
 %@x
 %    <para>Note that the Tcl package used here is a minimal version needed
 %    to run the LFS tests.  For the full package, see the  
@@ -61,6 +69,25 @@
     <para>Prepare Tcl for compilation:</para>
 @y
     <para>&PreparePackage1;Tcl&PreparePackage2;</para>
+@z
+
+@x
+      <title>The meaning of the configure options:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x $([ "$(uname -m)" = x86_64 ] &amp;&amp; echo --enable-64bit)
+          <para>The construct <parameter>$(&lt;shell command&gt;)</parameter>
+          is replaced by the output of the shell command.  Here this output is
+          empty if running on a 32 bit machine, and is
+          <parameter>--enable-64bit</parameter> if running on a 64 bit machine.
+          </para>
+@y
+          <para>
+          <parameter>$(&lt;shell command&gt;)</parameter> という記述は、そのシェルコマンドの出力結果によって置き換えられます。
+          この出力は 32 ビットマシンでは空となり、64 ビットマシン上では <parameter>--enable-64bit</parameter> となります。
+          </para>
 @z
 
 @x
@@ -96,11 +123,10 @@
     This is not mandatory for the remainder of LFS, but may be needed in case a
     package built later uses Tcl.</para>
 @y
-    <para>The various <quote>sed</quote> instructions after the
-    <quote>make</quote> command removes references to the build directory from
-    the configuration files and replaces them with the install directory.
-    This is not mandatory for the remainder of LFS, but may be needed in case a
-    package built later uses Tcl.</para>
+    <para>
+    "make" コマンドに続くたくさんの "sed" コマンドは、設定ファイルにあるビルドディレクトリへの参照を削除して、インストールディレクトリへの参照に置き換えます。
+    これ以降の LFS 作業において必須のことではありませんが、後にビルドされるパッケージが Tcl を用いるかもしれないからです。
+    </para>
 @z
 
 @x

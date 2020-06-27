@@ -39,7 +39,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x --with-system-expat
@@ -99,7 +99,7 @@
 @x
       <title>The meaning of the install commands:</title>
 @y
-      <title>&MeaningOfCommand1;install&MeaningOfCommand2;:</title>
+      <title>&MeaningOfCommand1;install&MeaningOfCommand2;</title>
 @z
 
 @x chmod -v 755 /usr/lib/libpython3.{6m.,}so
@@ -122,7 +122,7 @@
 @x
       <title>The meaning of the documentation install commands:</title>
 @y
-      <title>&MeaningOfCommand1;ドキュメント install&MeaningOfCommand2;:</title>
+      <title>&MeaningOfCommand1;ドキュメント install&MeaningOfCommand2;</title>
 @z
 
 @x

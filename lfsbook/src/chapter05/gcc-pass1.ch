@@ -160,7 +160,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x --with-glibc-version=2.11
@@ -330,6 +330,31 @@
 %     <filename>libgcc_eh.a</filename> に含まれるオブジェクトが、最終的には <filename>libgcc.a</filename> の中にも含まれることになるからです。
 %     </para>
 % @z
+
+@x
+    <para>This build of GCC has installed a couple of internal system
+    headers.  Normally one of them, <filename>limits.h</filename>, would in turn
+    include the corresponding system <filename>limits.h</filename> header, in
+    this case, <filename>$LFS/usr/include/limits.h</filename>. However, at the
+    time of this build of GCC <filename>$LFS/usr/include/limits.h</filename>
+    does not exist, so the internal header that has just been installed is a
+    partial, self-contained file and does not include the extended features of
+    the system header. This is adequate for building glibc, but the full
+    internal header will be needed later.  Create a full version of the internal
+    header using a command that is identical to what the GCC build system does
+    in normal circumstances:</para>
+@y
+    <para>
+    ここでの GCC ビルドにおいては、内部にあるシステムヘッダーファイルをいくつかインストールしました。
+    そのうちの <filename>limits.h</filename> というものは、対応するシステムヘッダーファイルである <filename>limits.h</filename> を読み込むものになっています。
+    そのファイルはここでは <filename>$LFS/usr/include/limits.h</filename> になります。
+    ただし GCC をビルドしたこの時点において <filename>$LFS/usr/include/limits.h</filename> は存在していません。
+    したがってインストールされたばかりの内部ヘッダーファイルは、部分的に自己完結したファイルとなり、システムヘッダーファイルによる拡張された機能を含むものになっていません。
+    glibc をビルドする際にはこれでもかまわないのですが、後々内部ヘッダーファイルは完全なものが必要になります。
+    以下のようなコマンドを通じて、その内部ヘッダーファイルの完成版を作り出します。
+    このコマンドは GCC ビルドが通常行っている方法と同じものです。
+    </para>
+@z
 
 @x
     <para>Details on this package are located in
