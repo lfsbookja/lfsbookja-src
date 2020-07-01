@@ -43,16 +43,6 @@
 @z
 
 @x
-    <para>Apply a patch to allow the Errno.pm module and the h2ph
-    program to build correctly when building with GCC 5:</para>
-@y
-    <para>
-    Errno.pm モジュールと h2ph プログラムが GCC 5 を用いてビルドした場合に、正しくビルドされません。
-    以下のパッチによりこれを修正します。
-    </para>
-@z
-
-@x
     <para>To have full control over the way Perl is set up, you can remove the
     <quote>-des</quote> options from the following command and hand-pick the way
     this package is built. Alternatively, use the command exactly as below to
@@ -112,6 +102,20 @@
 @y
           <para>
           スレッドサポートをビルドします。
+          </para>
+@z
+
+@x -Dprivlib,-Darchlib,-Dsitelib,...
+          <para>These settings define where Perl is looking for installed
+          modules. The LFS editors chose to put them in a directory structure
+          based on the Major.Minor version of Perl (&perl-version-min;) which
+          allows upgrading Perl to newer Patch levels (&perl-version;) without
+          the need to reinstall all of the modules again.</para>
+@y
+          <para>
+          この設定は、Perl がインストール済のモジュールを探す場所を指定します。
+          LFS 編集者はディレクトリ構造として Perl の Major.Minor バージョン (&perl-version-min;) の形に基づいて、インストールモジュールを配置することにしています。
+          このようにしておくと、新たなパッチレベル (&perl-version;) によるアップグレードの際に、モジュールを再インストールする必要がなくなるためです。
           </para>
 @z
 

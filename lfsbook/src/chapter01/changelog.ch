@@ -54,6 +54,52 @@
 @z
 
 @x
+      <para>2020-07-01</para>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.32.0. Fixes
+          <ulink url="&lfs-ticket-root;4676">#4676</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.9.3. Fixes
+          <ulink url="&lfs-ticket-root;4680">#4680</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.7.6. Fixes
+          <ulink url="&lfs-ticket-root;4674">#4674</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to check-0.15.0. Fixes
+          <ulink url="&lfs-ticket-root;4679">#4679</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.0.3. Fixes
+          <ulink url="&lfs-ticket-root;4675">#4675</ulink>.</para>
+        </listitem>
+@y
+      <para>2020-07-01</para>
+        <listitem>
+          <para>[bdubbs] - perl-5.32.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4676">#4676</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.9.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4680">#4680</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.7.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4674">#4674</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - check-0.15.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4679">#4679</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.0.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4675">#4675</ulink> を Fix に。</para>
+        </listitem>
+@z
+
+@x
       <para>2020-06-22</para>
         <listitem>
           <para>[renodr] - Fix a segfault in systemd-udevd.</para>
