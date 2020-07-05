@@ -130,6 +130,27 @@
 @z
 
 @x
+   <para>The compiler built in <xref linkend="chapter-temporary-tools"/> and
+   <xref linkend="chapter-chroot-temporary-tools"/> is still partially
+   installed, and not needed anymore. Remove it with:</para>
+@y
+   <para>
+   <xref linkend="chapter-temporary-tools"/> と <xref
+   linkend="chapter-chroot-temporary-tools"/> においてビルドしたコンパイラーは、部分的にしかインストールしていませんが、これ以降は必要としません。
+   そこで以下によって削除します。
+   </para>
+@z
+
+@x
+   <para>The <filename class="directory">/tools</filename> directory can also
+   be removed to further gain some place:</para>
+@y
+   <para>
+   <filename class="directory">/tools</filename> ディレクトリも削除して、容量をある程度回復することにします。
+   </para>
+@z
+
+@x
    <para>Finally, remove the temporary 'tester' user account created at the 
    beginning of the previous chapter.</para>
 @y

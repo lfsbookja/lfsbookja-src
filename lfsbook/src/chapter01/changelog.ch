@@ -54,6 +54,39 @@
 @z
 
 @x
+      <para>2020-07-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Remove /tools and files containing
+          {i686,x86_64}-lfs in their name at the end of chapter 8.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Add --host= to libstdc++-pass2, so that host
+          specific headers are installed in a host specific directory.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Fix temporary Python so that static libraries
+          are not installed.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-07-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - 第 8 章の終わりに {i686,x86_64}-lfs の名前を含むファイルを /tools から削除。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - libstdc++-pass2 にて --host= を追加。
+          ホストに固有のヘッダーファイルを、ホスト固有のディレクトリにインストールするため。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - 一時的ツールにおける Python を修正。
+          スタティックライブラリをインストールしないようにする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-07-01</para>
         <listitem>
           <para>[bdubbs] - Update to perl-5.32.0. Fixes

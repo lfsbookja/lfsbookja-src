@@ -96,6 +96,17 @@
           </para>
 @z
 
+@x --host=$(uname -m)-lfs-linux-gnu
+          <para>We have to mimic what would happen if this package were built
+          as part of a full compiler build. This switch would be passed to
+          configure by GCC's build machinery.</para>
+@y
+          <para>
+          本パッケージが完全なコンパイラーのビルドの一部として、どのようになるのかを考えておく必要があります。
+          本スイッチは GCC ビルドにおいて configure に受け渡されることになるものです。
+          </para>
+@z
+
 @x --disable-libstdcxx-pch
           <para>This switch prevents the installation of precompiled
           include files, which are not needed at this stage.</para>

@@ -66,6 +66,14 @@
       <title>&MeaningOfParameter1;configure&MeaningOfParameter2;</title>
 @z
 
+@x --enable-shared
+          <para>This switch prevents installation of static libraries.</para>
+@y
+          <para>
+          このスイッチはスタティックライブラリをインストールしないようにします。
+          </para>
+@z
+
 @x --without-ensurepip
           <para>This switch disables the Python package installer, which is not
           needed at this stage.</para>
