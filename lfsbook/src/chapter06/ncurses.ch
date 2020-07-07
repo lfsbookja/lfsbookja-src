@@ -124,6 +124,37 @@
 @z
 
 @x
+      <title>The meaning of the install options:</title>
+@y
+      <title>&MeaningOfOption1;install&MeaningOfOption2;</title>
+@z
+
+@x TIC_PATH=$(pwd)/build/progs/tic
+          <para>We need to pass the path of the just built
+          <command>tic</command> able to run on the building machine, so that
+          the terminal database can be created without errors.</para>
+@y
+          <para>
+          ビルドマシン上において、作り出したばかりの <command>tic</command> のパスを示すことが必要です。
+          こうすることで terminal データベースがエラーなく生成できることになります。
+          </para>
+@z
+
+@x echo "INPUT(-lncursesw)" > $LFS/usr/lib/libncurses.so
+          <para>The <filename>libncurses.so</filename> library is needed by
+          a few packages we will build soon. We create this small linker
+          script, as this is what is done in <xref
+          linkend="chapter-building-system"/>.</para>
+@y
+          <para>
+          パッケージの中で、わずかですが <filename>libncurses.so</filename> を必要としているものがあります。
+          これはすぐに生成する予定のものです。
+          ここでこの小さなリンカースクリプトを生成します。
+          これは <xref linkend="chapter-building-system"/> においてビルドします。
+          </para>
+@z
+
+@x
     <para>Move the shared libraries to the
     <filename class="directory">/lib</filename> directory, where they are
     expected to reside:</para>

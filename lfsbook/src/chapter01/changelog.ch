@@ -54,6 +54,49 @@
 @z
 
 @x
+      <para>2020-07-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Change chapter 6 ncurses so that it matches
+          what is done in chapter 8, and add explanations.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to libcap-2.38. Fixes
+          <ulink url="&lfs-ticket-root;4683">#4683</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to linux-5.7.7. Fixes
+          <ulink url="&lfs-ticket-root;4681">#4681</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to dbus-1.12.20 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;4682">#4682</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-07-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - 第 6 章の ncurses を 第 8 章のものと整合が取れるものに変更。
+          さらに説明を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - libcap-2.38 へのアップデート。
+          <ulink url="&lfs-ticket-root;4683">#4683</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - linux-5.7.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4681">#4681</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - dbus-1.12.20 へのアップデート。
+          (セキュリティアップデート)
+          <ulink url="&lfs-ticket-root;4682">#4682</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-07-04</para>
       <itemizedlist>
         <listitem>
