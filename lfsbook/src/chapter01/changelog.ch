@@ -54,6 +54,28 @@
 @z
 
 @x
+      <para>2020-07-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Make libelf install in /lib, since it may be
+          needed by iproute2 before /usr is mounted (report by
+          <ulink url="http://lists.linuxfromscratch.org/pipermail/lfs-dev/2020-July/073903.html">
+          Roger</ulink>).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-07-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - libelf を /lib にインストールするように。
+          /usr がマウントされる前にiproute2 が必要とする場合があるため。
+          (<ulink url="http://lists.linuxfromscratch.org/pipermail/lfs-dev/2020-July/073903.html">Roger</ulink> の報告による。)
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-07-06</para>
       <itemizedlist>
         <listitem>
