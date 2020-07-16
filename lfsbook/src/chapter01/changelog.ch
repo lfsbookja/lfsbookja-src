@@ -54,6 +54,84 @@
 @z
 
 @x
+      <para>2020-07-15</para>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.1206. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.8.4. Fixes
+          <ulink url="&lfs-ticket-root;4692">#4692</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.55.0. Fixes
+          <ulink url="&lfs-ticket-root;4691">#4691</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.39. Fixes
+          <ulink url="&lfs-ticket-root;4690">#4690</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.3.0. Fixes
+          <ulink url="&lfs-ticket-root;4689">#4689</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpfr-4.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4688">#4688</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.7.8. Fixes
+          <ulink url="&lfs-ticket-root;4686">#4686</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sysvinit-2.97. Fixes
+          <ulink url="&lfs-ticket-root;4685">#4685</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.1.3. Fixes
+          <ulink url="&lfs-ticket-root;4684">#4684</ulink>.</para>
+        </listitem>
+@y
+      <para>2020-07-15</para>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.1206 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python3-3.8.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4692">#4692</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.55.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4691">#4691</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.39 へのアップデート。
+          <ulink url="&lfs-ticket-root;4690">#4690</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4689">#4689</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpfr-4.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4688">#4688</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.7.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4686">#4686</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sysvinit-2.97 へのアップデート。
+          <ulink url="&lfs-ticket-root;4685">#4685</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.1.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4684">#4684</ulink> を Fix に。</para>
+        </listitem>
+@z
+
+@x
       <para>2020-07-07</para>
       <itemizedlist>
         <listitem>
