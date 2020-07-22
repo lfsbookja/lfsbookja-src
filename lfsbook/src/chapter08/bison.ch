@@ -40,11 +40,9 @@
 @z
 
 @x
-    <para>The tests are known to fail using multiple processors. 
-    To test the results (about 5.5 SBU), issue:</para>
+    <para>To test the results (about 5.5 SBU), issue:</para>
 @y
     <para>
-    マルチプロセッサーを用いてのテストは失敗します。
     コンパイル結果をテストするなら以下を実行します。(約 5.5 SBU)
     </para>
 @z

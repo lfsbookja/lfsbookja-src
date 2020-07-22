@@ -54,6 +54,38 @@
 @z
 
 @x
+      <para>2020-07-21</para>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.8.5. Fixes
+          <ulink url="&lfs-ticket-root;4692">#4694</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.40. Fixes
+          <ulink url="&lfs-ticket-root;4690">#4694</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.7.9. Fixes
+          <ulink url="&lfs-ticket-root;4696">#4696</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-07-21</para>
+        <listitem>
+          <para>[bdubbs] - Python3-3.8.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4692">#4694</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.40 へのアップデート。
+          <ulink url="&lfs-ticket-root;4690">#4694</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.7.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4696">#4696</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-07-15</para>
         <listitem>
           <para>[bdubbs] - Update to vim-8.2.1206. Addresses
