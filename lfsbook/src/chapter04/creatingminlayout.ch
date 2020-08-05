@@ -15,20 +15,20 @@
 @z
 
 @x
-  <title>Creating the Minimal directory layout in LFS filesystem</title>
+  <title>Creating a limited directory layout in LFS filesystem</title>
 @y
-  <title>LFS ファイルシステムの最小ディレクトリレイアウトの生成</title>
+  <title>LFS ファイルシステムの限定的なディレクトリレイアウトの生成</title>
 @z
 
 @x
-  <para>The first task performed in the LFS partition is to create a minimal
+  <para>The first task performed in the LFS partition is to create a limited
   directory hierarchy so that programs compiled in <xref
   linkend="chapter-temporary-tools"/> may be installed in their final
   location. This is needed so that those temporary programs be overwritten
   when rebuilding them in <xref linkend="chapter-building-system"/>.</para>
 @y
   <para>
-  LFS パーティションに対して行う最初の作業は、最小限のディレクトリ階層を作り出すことです。
+  LFS パーティションに対して行う最初の作業は、限定的なディレクトリ階層を作り出すことです。
   <xref linkend="chapter-temporary-tools"/> においてビルドするプログラムを、最終的なディレクトリにインストールするためです。
   <xref linkend="chapter-building-system"/>にある一時的なプログラムを、再構築して上書きしていくために必要となります。
   </para>

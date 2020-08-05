@@ -58,13 +58,11 @@
 
 @x
     <para>Now remove one test that prevents the tests from running
-    to completion, and fix other tests in the gold test suite, which
-    need to be adjusted for GCC 10:</para>
+    to completion:</para>
 @y
     <para>
     ここでテストを 1 つ削除します。
     これによってテストを完成させます。
-    また gold テストスイートの中のテストに対して、GCC 10 に対応することが必要なものを修正します。
     </para>
 @z
 
@@ -222,12 +220,12 @@
 @x
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
-        <seg>libbfd.{a,so} and libopcodes.{a,so}</seg>
+        <seg>libbfd.{a,so}, libctf.{a,so}, libctf-nobfd.{a,so}, and libopcodes.{a,so}</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
-        <seg>libbfd.{a,so} and libopcodes.{a,so}</seg>
+        <seg>libbfd.{a,so}, libctf.{a,so}, libctf-nobfd.{a,so}, libopcodes.{a,so}</seg>
         <seg>/usr/lib/ldscripts</seg>
 @z
 

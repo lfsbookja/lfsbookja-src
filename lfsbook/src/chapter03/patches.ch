@@ -83,6 +83,12 @@
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @z
 
+@x Libpipeline Checks Patch
+        <para>Download: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
+@z
+
 @x Sysvinit Consolidated Patch
         <para>Download: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @y

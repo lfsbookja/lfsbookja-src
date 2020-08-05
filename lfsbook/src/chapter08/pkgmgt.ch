@@ -76,11 +76,11 @@
 
 @x
   <para>There are some hints written on the topic of package management. Visit
-  the <ulink url="&hints-index;">Hints Project</ulink> and see if one of them
+  the <ulink url="&hints-root;">Hints Project</ulink> and see if one of them
   fits your need.</para>
 @y
   <para>
-  <ulink url="&hints-index;">ヒントプロジェクト (Hints Project)</ulink> ページにパッケージ管理についての情報が示されています。
+  <ulink url="&hints-root;">ヒントプロジェクト (Hints Project)</ulink> ページにパッケージ管理についての情報が示されています。
   望むものがあるかどうか確認してみてください。
   </para>
 @z
@@ -478,7 +478,7 @@
 
 @x
       <para>This scheme, unique to LFS, was devised by Matthias Benkmann, and is
-      available from the <ulink url="&hints-index;">Hints Project</ulink>. In
+      available from the <ulink url="&hints-root;">Hints Project</ulink>. In
       this scheme, each package is installed as a separate user into the
       standard locations. Files belonging to a package are easily identified by
       checking the user ID. The features and shortcomings of this approach are
@@ -487,7 +487,7 @@
 @y
       <para>
       この手法は LFS に固有のものであり Matthias Benkmann により考案されました。
-      <ulink url="&hints-index;">ヒントプロジェクト (Hints Project)</ulink> から入手することが出来ます。
+      <ulink url="&hints-root;">ヒントプロジェクト (Hints Project)</ulink> から入手することが出来ます。
       考え方としては、各パッケージを個々のユーザーが共有ディレクトリにインストールします。
       パッケージに属するファイル類は、ユーザーIDを確認することで容易に特定出来るようになります。
       この手法の特徴や短所については、複雑な話となるため本節では説明しません。

@@ -54,14 +54,86 @@
 @z
 
 @x
+      <para>2020-08-04</para>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.21. Fixes
+          <ulink url="&lfs-ticket-root;4704">#4704</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.35. Fixes
+          <ulink url="&lfs-ticket-root;4702">#4702</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-10.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4701">#4701</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to check-0.15.1. Fixes
+          <ulink url="&lfs-ticket-root;4700">#4700</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.7.1. Fixes
+          <ulink url="&lfs-ticket-root;4699">#4699</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux 2.36.0. Fixes
+          <ulink url="&lfs-ticket-root;4698">#4698</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.42. Fixes
+          <ulink url="&lfs-ticket-root;4703">#4703</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.7.12. Fixes
+          <ulink url="&lfs-ticket-root;4697">#4697</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-08-04</para>
+        <listitem>
+          <para>[bdubbs] - gettext-0.21 へのアップデート。
+          <ulink url="&lfs-ticket-root;4704">#4704</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.35 へのアップデート。
+          <ulink url="&lfs-ticket-root;4702">#4702</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-10.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4701">#4701</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - check-0.15.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4700">#4700</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.7.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4699">#4699</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux 2.36.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4698">#4698</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.42 へのアップデート。
+          <ulink url="&lfs-ticket-root;4703">#4703</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.7.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4697">#4697</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-07-21</para>
         <listitem>
           <para>[bdubbs] - Update to Python3-3.8.5. Fixes
-          <ulink url="&lfs-ticket-root;4692">#4694</ulink>.</para>
+          <ulink url="&lfs-ticket-root;4695">#4695</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to libcap-2.40. Fixes
-          <ulink url="&lfs-ticket-root;4690">#4694</ulink>.</para>
+          <ulink url="&lfs-ticket-root;4694">#4694</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-5.7.9. Fixes
@@ -72,11 +144,11 @@
       <para>2020-07-21</para>
         <listitem>
           <para>[bdubbs] - Python3-3.8.5 へのアップデート。
-          <ulink url="&lfs-ticket-root;4692">#4694</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;4695">#4695</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - libcap-2.40 へのアップデート。
-          <ulink url="&lfs-ticket-root;4690">#4694</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;4694">#4694</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - linux-5.7.9 へのアップデート。

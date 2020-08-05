@@ -20,12 +20,41 @@
 @z
 
 @x
-  <para>It is time to create the full structure in the LFS file system. Create
-  a standard directory tree by issuing the following commands:</para>
+  <para>It is time to create the full structure in the LFS file system.</para>
 @y
   <para>
   LFS ファイルシステムにおける完全なディレクトリ構成を作り出していきます。
-  以下のコマンドを実行して標準的なディレクトリを生成します。
+  </para>
+@z
+
+@x
+  <para>Create some root-level directories that are not in the limited set
+    required in the previous chapters by issuing the following command:</para>
+@y
+  <para>
+  ルートレベルのディレクトリをいくつか生成します。
+  これは前章において必要としていた限定的なものの中には含まれていないものです。
+  以下のコマンドを実行して生成します。
+  </para>
+@z
+
+@x
+  <note><para>Some of the directories below have already been created earlier
+  with explicit instructions or when installing some packages.  They are
+  repeated below for completeness.</para></note>
+@y
+  <note><para>
+  以下のディレクトリの中には、明示的な操作により、あるいはパッケージのインストールにより、すでに生成されているものがあります。
+  以下では漏れることがないように、もう一度実行しています。
+  </para></note>
+@z
+
+@x
+  <para>Create the required set of subdirectories below the root-level by
+    issuing the following commands:</para>
+@y
+  <para>
+  ルートレベル配下に、必要となる一連のサブディレクトリを、以下のコマンドにより生成します。
   </para>
 @z
 

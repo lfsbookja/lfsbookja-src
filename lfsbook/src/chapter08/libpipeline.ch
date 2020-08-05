@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>First, fix the files in the test suite:</para>
+@y
+    <para>
+    まずはテストスイート内のファイルを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Libpipeline for compilation:</para>
 @y
     <para>&PreparePackage1;Libpipeline&PreparePackage2;</para>
