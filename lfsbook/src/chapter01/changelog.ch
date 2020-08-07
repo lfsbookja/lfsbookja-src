@@ -54,6 +54,46 @@
 @z
 
 @x
+      <para>2020-08-06</para>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.1361. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.32. Fixes
+          <ulink url="&lfs-ticket-root;4709">#4709</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.7.1. Fixes
+          <ulink url="&lfs-ticket-root;4707">#4707</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.1.5. Fixes
+          <ulink url="&lfs-ticket-root;4705">#4705</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-08-06</para>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.1361 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.32 へのアップデート。
+          <ulink url="&lfs-ticket-root;4709">#4709</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.7.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4707">#4707</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.1.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4705">#4705</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-08-04</para>
         <listitem>
           <para>[bdubbs] - Update to gettext-0.21. Fixes

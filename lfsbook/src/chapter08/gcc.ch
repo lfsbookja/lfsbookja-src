@@ -165,6 +165,17 @@
 @z
 
 @x
+    <para>Additionally the following tests related to the following files
+    are kown to fail with glibc-2.32: asan_test.C, co-ret-17-void-ret-coro.C, 
+    pr95519-05-gro.C, pr80166.c.</para>
+@y
+    <para>
+    さらに以下のファイルに関連するテストは、glibc-2.32 においては失敗します。
+    asan_test.C, co-ret-17-void-ret-coro.C, pr95519-05-gro.C, pr80166.c
+    </para>
+@z
+
+@x
     <para>Two tests named lookup.cc and reverse.cc in experimental/net
     are known to fail in LFS chroot environment because they require
     /etc/hosts and iana-etc.</para>

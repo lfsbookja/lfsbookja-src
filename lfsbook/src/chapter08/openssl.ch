@@ -98,7 +98,7 @@
           c_rehash and openssl
         </seg>
         <seg>
-          libcrypto.{so,a} and libssl.{so,a}
+          libcrypto.so and libssl.so
         </seg>
         <seg>
           /etc/ssl,
@@ -111,7 +111,7 @@
           c_rehash, openssl
         </seg>
         <seg>
-          libcrypto.{so,a}, libssl.{so,a}
+          libcrypto.so, libssl.so
         </seg>
         <seg>
           /etc/ssl,

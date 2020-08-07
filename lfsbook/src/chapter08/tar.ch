@@ -72,9 +72,11 @@
 @z
 
 @x
-    <para>One test, link mismatch, is known to fail.</para>
+    <para>One test, capabilities: binary store/restore, is known to fail.</para>
 @y
-    <para>link mismatch というテストは失敗します。</para>
+    <para>
+    テストの 1 つ、capabilities: binary store/restore は失敗します。
+    </para>
 @z
 
 @x

@@ -166,6 +166,15 @@
 @z
 
 @x
+        <para><emphasis>io/tst-lchmod</emphasis> 
+        is known to fail in the LFS chroot environment.</para>
+@y
+        <para>
+        <emphasis>io/tst-lchmod</emphasis> は LFS の chroot 環境においては失敗します。
+        </para>
+@z
+
+@x
         <para><emphasis>misc/tst-ttyname</emphasis> 
         is known to fail in the LFS chroot environment.</para>
 @y
