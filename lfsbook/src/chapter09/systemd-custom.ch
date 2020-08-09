@@ -145,8 +145,8 @@
     <para>
     システム用設定ファイルは <filename>/usr/lib/tmpfiles.d/*.conf</filename> です。
     ローカル用設定ファイルは <filename>/etc/tmpfiles.d/*.conf</filename> に置きます。
-    <filename class="directory">/etc/tmpfiles.d</filename> にある設定ファイルは <filename
-    class="directory">/usr/lib/tmpfiles.d</filename> にある同名ファイルによりオーバーライドされます。
+    <filename class="directory">/etc/tmpfiles.d</filename> にあるファイルは <filename
+    class="directory">/usr/lib/tmpfiles.d</filename> にある同名ファイルをオーバーライドします。
     ファイル書式の詳細については man ページ <filename>tmpfiles.d(5)</filename> を参照してください。
     </para>
 @z

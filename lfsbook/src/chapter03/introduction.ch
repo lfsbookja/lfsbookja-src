@@ -182,7 +182,7 @@ url="../wget-list">wget-list</ulink> を書き換えて利用しています。
 </para>
 
 <screen><userinput remap="sed-wgetlist">cat &gt; wl.sed &lt;&lt; "EOF"
-<literal>s|ftp\.gnu\.org/gnu/|ftp.riken.jp/GNU/gnu/|g
+<literal>s|ftp\.gnu\.org/gnu/|ftp.riken.jp/GNU/|g
 s|https://www\.kernel\.org/pub/linux/|http://ftp.riken.jp/Linux/kernel.org/linux/|g
 s|www\.cpan\.org|ftp.riken.jp/lang/CPAN|g
 s|ftp\.vim\.org|ftp.jp.vim.org|g</literal>

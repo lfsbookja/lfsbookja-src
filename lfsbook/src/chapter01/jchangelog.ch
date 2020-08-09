@@ -60,8 +60,11 @@
 -->
 
    <listitem>
-      <para>2020-08-08</para>
+      <para>2020-08-09</para>
       <itemizedlist>
+        <listitem>
+          <para>[matsuand] - メッセージ #85513 修正案への対応。</para>
+        </listitem>
         <listitem>
           <para>[matsuand] -
           <phrase revision="sysv">SVN-20200806</phrase>
