@@ -166,7 +166,7 @@
 
 @x
     <para>Additionally the following tests related to the following files
-    are kown to fail with glibc-2.32: asan_test.C, co-ret-17-void-ret-coro.C, 
+    are known to fail with glibc-2.32: asan_test.C, co-ret-17-void-ret-coro.C, 
     pr95519-05-gro.C, pr80166.c.</para>
 @y
     <para>

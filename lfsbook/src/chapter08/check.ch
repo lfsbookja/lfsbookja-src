@@ -97,6 +97,14 @@
 @z
 
 @x
+        <seg>checkmk</seg>
+        <seg>libcheck.so</seg>
+@y
+        <seg>checkmk</seg>
+        <seg>libcheck.so</seg>
+@z
+
+@x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>

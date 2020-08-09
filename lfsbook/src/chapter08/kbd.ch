@@ -154,9 +154,11 @@
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
@@ -166,7 +168,8 @@
         mapscrn, openvt, psfaddtable (link to psfxtable), psfgettable (link to
         psfxtable), psfstriptable (link to psfxtable), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode, setvtrgb,
-        showconsolefont, showkey, unicode_start, and unicode_stop</seg>
+        showconsolefont, showkey, unicode_start, and unicode_stop</seg>    
+        <seg>libtswrap.so</seg>
         <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps, 
         /usr/share/doc/kbd-&kbd-version;,  and /usr/share/unimaps</seg>
 @y
@@ -175,7 +178,8 @@
         mapscrn, openvt, psfaddtable (psfxtable へのリンク), psfgettable (psfxtable へのリンク),
         psfstriptable (psfxtable へのリンク), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode, setvtrgb,
-        showconsolefont, showkey, unicode_start, unicode_stop</seg>
+        showconsolefont, showkey, unicode_start, unicode_stop</seg>    
+        <seg>libtswrap.so</seg>
         <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps, 
         /usr/share/doc/kbd-&kbd-version;, /usr/share/unimaps</seg>
 @z
@@ -405,5 +409,13 @@
 @y
           <para>
           キーボードとコンソールをユニコードモードから戻します。
+          </para>
+@z
+
+@x
+          <para>Kbd test wrapper library</para>
+@y
+          <para>
+          Kbd テストラッパーライブラリ。
           </para>
 @z
