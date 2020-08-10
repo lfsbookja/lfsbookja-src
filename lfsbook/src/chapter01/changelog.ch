@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2020-08-10</para>
+        <listitem>
+          <para>[ken] - Ensure all the book's perl modules are installed
+          to /usr/lib/perl5/5.32 (some were in /usr/share/perl5). Fixes
+          <ulink url="&lfs-ticket-root;4710">#4710</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-08-10</para>
+        <listitem>
+          <para>[ken] - Ensure all the book's perl modules are installed
+          to /usr/lib/perl5/5.32 (some were in /usr/share/perl5). Fixes
+          <ulink url="&lfs-ticket-root;4710">#4710</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-08-06</para>
         <listitem>
           <para>[bdubbs] - Update to vim-8.2.1361. Addresses

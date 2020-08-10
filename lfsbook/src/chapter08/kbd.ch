@@ -115,6 +115,14 @@
 @z
 
 @x
+    <para>Remove an internal library installed unintentionally:</para>
+@y
+    <para>
+    意図せずインストールされてしまう内部ライブラリを削除します。
+    </para>
+@z
+
+@x
       <para>For some languages (e.g., Belarusian) the Kbd package doesn't
       provide a useful keymap where the stock <quote>by</quote> keymap assumes
       the ISO-8859-5 encoding, and the CP1251 keymap is normally used. Users of
@@ -154,11 +162,9 @@
 
 @x
       <segtitle>Installed programs</segtitle>
-      <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
-      <segtitle>&InstalledLibrary;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
@@ -168,8 +174,7 @@
         mapscrn, openvt, psfaddtable (link to psfxtable), psfgettable (link to
         psfxtable), psfstriptable (link to psfxtable), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode, setvtrgb,
-        showconsolefont, showkey, unicode_start, and unicode_stop</seg>    
-        <seg>libtswrap.so</seg>
+        showconsolefont, showkey, unicode_start, and unicode_stop</seg>
         <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps, 
         /usr/share/doc/kbd-&kbd-version;,  and /usr/share/unimaps</seg>
 @y
@@ -178,8 +183,7 @@
         mapscrn, openvt, psfaddtable (psfxtable へのリンク), psfgettable (psfxtable へのリンク),
         psfstriptable (psfxtable へのリンク), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode, setvtrgb,
-        showconsolefont, showkey, unicode_start, unicode_stop</seg>    
-        <seg>libtswrap.so</seg>
+        showconsolefont, showkey, unicode_start, unicode_stop</seg>
         <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps, 
         /usr/share/doc/kbd-&kbd-version;, /usr/share/unimaps</seg>
 @z
@@ -409,13 +413,5 @@
 @y
           <para>
           キーボードとコンソールをユニコードモードから戻します。
-          </para>
-@z
-
-@x
-          <para>Kbd test wrapper library</para>
-@y
-          <para>
-          Kbd テストラッパーライブラリ。
           </para>
 @z
