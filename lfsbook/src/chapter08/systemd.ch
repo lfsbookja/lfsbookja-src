@@ -305,8 +305,9 @@
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d,
-        /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
+        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel, 
+        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd, 
+        /usr/lib/tmpfiles.d,
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, and /var/log/journal</seg>
 @y
@@ -332,8 +333,9 @@
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d,
-        /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
+        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel, 
+        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd, 
+        /usr/lib/tmpfiles.d,
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, /var/log/journal</seg>
 @z

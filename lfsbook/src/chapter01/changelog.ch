@@ -54,6 +54,30 @@
 @z
 
 @x
+      <para>2020-08-11</para>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-246. Fixes
+          <ulink url="&lfs-ticket-root;4687">#4687</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to check-0.15.2. Fixes
+          <ulink url="&lfs-ticket-root;4711">#4711</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-08-11</para>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-246 へのアップデート。
+          <ulink url="&lfs-ticket-root;4687">#4687</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - check-0.15.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4711">#4711</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-08-10</para>
         <listitem>
           <para>[ken] - Ensure all the book's perl modules are installed
