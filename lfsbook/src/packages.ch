@@ -26,21 +26,21 @@
 @z
 
 @x
-<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 8 SBU with tests)">
+<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 9.6 SBU with tests)">
 @y
-<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 8 SBU)">
+<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 9.6 SBU)">
 @z
 
 @x
-<!ENTITY bzip2-fin-sbu "less than 0.1 SBU">
+<!ENTITY bc-fin-sbu "less than 0.1 SBU">
 @y
-<!ENTITY bzip2-fin-sbu "0.1 SBU 以下">
+<!ENTITY bc-fin-sbu "0.1 SBU 以下">
 @z
 
 @x
-<!ENTITY check-fin-sbu "0.1 SBU (about 3.3 SBU with tests)">
+<!ENTITY check-fin-sbu "0.1 SBU (about 4.3 SBU with tests)">
 @y
-<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 3.3 SBU)">
+<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 4.3 SBU)">
 @z
 
 @x
@@ -56,9 +56,9 @@
 @z
 
 @x
-<!ENTITY gcc-fin-sbu "103 SBU (with tests)">
+<!ENTITY gcc-fin-sbu "102 SBU (with tests)">
 @y
-<!ENTITY gcc-fin-sbu "103 SBU (テスト込み)">
+<!ENTITY gcc-fin-sbu "102 SBU (テスト込み)">
 @z
 
 @x

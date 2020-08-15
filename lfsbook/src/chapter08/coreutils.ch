@@ -157,6 +157,14 @@
 @z
 
 @x
+    <para>The test-getlogin test is known to fail in the LFS chroot envronment.</para>
+@y
+    <para>
+    test-getlogin というテストは LFS の chroot 環境内では失敗します。
+    </para>
+@z
+
+@x
     <para>Remove the temporary group:</para>
 @y
     <para>

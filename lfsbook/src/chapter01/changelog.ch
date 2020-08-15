@@ -54,6 +54,46 @@
 @z
 
 @x
+      <para>2020-08-15</para>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.08. Fixes
+          <ulink url="&lfs-ticket-root;4714">#4714</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.5.3. Fixes
+          <ulink url="&lfs-ticket-root;4713">#4713</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.8.0. Fixes
+          <ulink url="&lfs-ticket-root;4712">#4712</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.8.1. Fixes
+          <ulink url="&lfs-ticket-root;4708">#4708</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-08-15</para>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.08 へのアップデート。
+          <ulink url="&lfs-ticket-root;4714">#4714</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.5.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4713">#4713</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.8.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4712">#4712</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4708">#4708</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-08-11</para>
         <listitem revision="systemd">
           <para>[renodr] - Update to systemd-246. Fixes

@@ -56,7 +56,7 @@
 
 @x
   <para>The new instance of the shell is a <emphasis>non-login</emphasis>
-  shell, which does not read, and execute, the conten of <filename>/etc/profile</filename> or
+  shell, which does not read, and execute, the contents of <filename>/etc/profile</filename> or
   <filename>.bash_profile</filename> files, but rather reads, and executes, the
   <filename>.bashrc</filename> file instead. Create the
   <filename>.bashrc</filename> file now:</para>
