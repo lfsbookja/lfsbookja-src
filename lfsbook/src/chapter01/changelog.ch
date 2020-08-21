@@ -54,6 +54,20 @@
 @z
 
 @x
+      <para>2020-08-18</para>
+        <listitem revision="sysv">
+          <para>[dj] - Update to lfs-bootscripts-20200818.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-08-18</para>
+        <listitem revision="sysv">
+          <para>[dj] - lfs-bootscripts-20200818 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-08-15</para>
         <listitem>
           <para>[bdubbs] - Update to man-pages-5.08. Fixes
@@ -128,9 +142,9 @@
 @y
       <para>2020-08-10</para>
         <listitem>
-          <para>[ken] - Ensure all the book's perl modules are installed
-          to /usr/lib/perl5/5.32 (some were in /usr/share/perl5). Fixes
-          <ulink url="&lfs-ticket-root;4710">#4710</ulink>.</para>
+          <para>[ken] - 本書における perl モジュールを /usr/lib/perl5/5.32 にインストールするように。
+          （一部は /usr/share/perl5 に。）
+          <ulink url="&lfs-ticket-root;4710">#4710</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -664,7 +678,7 @@
           <para>[pierre] - Fix bash tests: add a couple of symlinks
           from /bin to /tools, create the tester user with the uid of
           the tty owner, run the bash tests with su &lt;&lt; EOF, and
-          explicitely defining stdin (with help from thomas and bdubbs).</para>
+          explicitly defining stdin (with help from thomas and bdubbs).</para>
         </listitem>
       </itemizedlist>
 @y
@@ -922,6 +936,23 @@
       <itemizedlist>
         <listitem>
           <para>[pierre] - systemd において -Wno-format-overflow を指定することで、GCC 10 におけるエラーを回避する。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2020-05-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Patch GCC pass 2 to allow cross-compile
+          (specific to new cross method).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-05-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - GCC 2 回めにおいてパッチによりクロスコンパイル（新たなクロスコンパイル方法）を可能とする。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -1308,36 +1339,6 @@
 @z
 
 @x
-      <para>2020-03-19</para>
-      <itemizedlist>
-        <listitem>
-          <para>[renodr] - Update to systemd-245. Fixes
-          <ulink url="&lfs-ticket-root;4593">#4593</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2020-03-19</para>
-      <itemizedlist>
-        <listitem>
-          <para>[renodr] - systemd-245 へのアップデート。
-          <ulink url="&lfs-ticket-root;4593">#4593</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-    <listitem>
-      <para>2020-03-29</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Textual updates thanks to Kevin Buckley.</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-@y
-@z
-
-@x revision="systemd"
       <para>2020-03-19</para>
       <itemizedlist>
         <listitem>

@@ -33,6 +33,17 @@
 @z
 
 @x
+    <para>Remove the documentation of the temporary tools, to prevent them
+    from ending up in the final system, and save about 35 MB:</para>
+@y
+    <para>
+    一時ツールのドキュメントを削除します。
+    これを最終的なシステムには持ち込みません。
+    これによって 35 MB を節約します。
+    </para>
+@z
+
+@x
     All the remaining steps in this section are optional. Nevertheless,
     as soon as you begin installing packages in <xref
     linkend="chapter-building-system"/>, the temporary tools will be
@@ -158,14 +169,6 @@
     <para>
     <parameter>--strip-unneeded</parameter> パラメーターは <emphasis>絶対に</emphasis> ライブラリに対して用いないでください。
     もし用いるとスタティックライブラリが破壊され、ツールチェーンを構成するパッケージをすべて作り直さなければならなくなります。 
-    </para>
-@z
-
-@x
-    <para>To save more space (slightly more than 35 MB), remove the documentation:</para>
-@y
-    <para>
-    さらに容量を節約するために（わずか 35 MB 程度ですが）ドキュメント類を削除します。
     </para>
 @z
 

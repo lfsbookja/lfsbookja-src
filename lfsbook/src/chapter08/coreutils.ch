@@ -157,7 +157,7 @@
 @z
 
 @x
-    <para>The test-getlogin test is known to fail in the LFS chroot envronment.</para>
+    <para>The test-getlogin test is known to fail in the LFS chroot environment.</para>
 @y
     <para>
     test-getlogin というテストは LFS の chroot 環境内では失敗します。

@@ -60,7 +60,7 @@
 
 @x
         To boot LFS on host systems that have UEFI enabled, the kernel needs to
-        have been built with the CONFIG_EFI_STUB capabality described in the
+        have been built with the CONFIG_EFI_STUB capability described in the
         previous section.  However, LFS can be booted using GRUB2 without such
         an addition. To do this, the UEFI Mode and Secure Boot capabilities in
         the host system's BIOS need to be turned off.  For details, see <ulink

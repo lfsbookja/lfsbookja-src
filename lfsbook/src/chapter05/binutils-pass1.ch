@@ -75,13 +75,13 @@
       to be of any use, measure the time it takes to build this package from
       the configuration, up to and including the first install. To achieve
       this easily, wrap the commands in a <command>time</command>
-      command like this: <userinput>time { ./configure ... &amp;&amp; make
+      command like this: <userinput>time { ../configure ... &amp;&amp; make
       &amp;&amp; make install; }</userinput>.</para>
 @y
       <para>
       本節以降で SBU値を示していきます。
       これを活用していくなら、本パッケージの configure から初めのインストールまでの処理時間を計測しましょう。
-      具体的には処理コマンドを <command>time</command> で囲んで <userinput>time { ./configure ... &amp;&amp; make
+      具体的には処理コマンドを <command>time</command> で囲んで <userinput>time { ../configure ... &amp;&amp; make
       &amp;&amp; make install; }</userinput> と入力すれば実現できます。
       </para>
 @z

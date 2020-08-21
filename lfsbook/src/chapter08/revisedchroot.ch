@@ -103,7 +103,7 @@
 
 @x
   <para>There are also several files installed in the /usr/lib and /usr/libexec
-  directories with a file name extention of .la. These are "libtool archive"
+  directories with a file name extension of .la. These are "libtool archive"
   files. As already said, they are only useful when linking with static
   libraries. They are unneeded, and potentially harmful, when using dynamic
   shared libraries, specially when using also non-autotools build systems.
@@ -132,7 +132,7 @@
 @x
    <para>The compiler built in <xref linkend="chapter-temporary-tools"/> and
    <xref linkend="chapter-chroot-temporary-tools"/> is still partially
-   installed, and not needed anymore. Remove it with:</para>
+   installed and not needed anymore. Remove it with:</para>
 @y
    <para>
    <xref linkend="chapter-temporary-tools"/> と <xref

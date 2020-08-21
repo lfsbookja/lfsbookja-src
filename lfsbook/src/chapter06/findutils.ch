@@ -62,7 +62,7 @@
 @z
 
 @x
-    <para>Move the excutable to its final expected location:</para>
+    <para>Move the executable to its final expected location:</para>
 @y
     <para>
     実行モジュールを、最終的にあるべき場所に移動させます。

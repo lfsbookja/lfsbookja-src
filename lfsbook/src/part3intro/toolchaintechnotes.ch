@@ -739,7 +739,7 @@
     configure script, <envar>CC_FOR_TARGET</envar> ends up as
     <command>cc</command> when the host is the same as the target, but is
     different from the build system. This is why
-    <parameter>CC_FOR_TARGET=$LFS_TGT-gcc</parameter> is put explicitely into
+    <parameter>CC_FOR_TARGET=$LFS_TGT-gcc</parameter> is put explicitly into
     the configure options.</para>
 @y
     <para>
