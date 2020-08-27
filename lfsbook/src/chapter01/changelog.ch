@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2020-08-24</para>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.8.3. Fixes
+          <ulink url="&lfs-ticket-root;4718">#4718</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-08-24</para>
+        <listitem>
+          <para>[bdubbs] - linux-5.8.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4718">#4718</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-08-18</para>
         <listitem revision="sysv">
           <para>[dj] - Update to lfs-bootscripts-20200818.</para>
