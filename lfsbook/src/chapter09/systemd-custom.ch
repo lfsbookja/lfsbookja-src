@@ -96,7 +96,7 @@
 @z
 
 @x
-    <para>Alternatively, if a a separate partition for
+    <para>Alternatively, if a separate partition for
     <filename class="directory">/tmp</filename> is desired, specify that 
     partition in a <filename>/etc/fstab</filename> entry.</para>
 @y
@@ -166,7 +166,7 @@
       The type field, q, discusses creating a subvolume with quotas which
       is really only applicable to btrfs filesystems.  It references type v
       which in turn references type d (directory). This then creates the
-      specified directory if is is not present and adjusts the permissions
+      specified directory if it is not present and adjusts the permissions
       and ownership as specified. Contents of the directory will be
       subject to time based cleanup if the age argument is specified.
 @y

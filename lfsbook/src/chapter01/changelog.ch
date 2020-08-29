@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2020-08-28</para>
+        <listitem>
+          <para>[bdubbs] - Update to iana-Etc-20200821. Addresses
+          <ulink url="&lfs-ticket-root;4718">#4722</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-08-28</para>
+        <listitem>
+          <para>[bdubbs] - iana-Etc-20200821 へのアップデート。
+          <ulink url="&lfs-ticket-root;4718">#4722</ulink> において言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-08-24</para>
         <listitem>
           <para>[bdubbs] - Update to linux-5.8.3. Fixes

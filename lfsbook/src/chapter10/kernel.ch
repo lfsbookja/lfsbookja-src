@@ -59,8 +59,57 @@
 @z
 
 @x
-    <para>Configure the kernel via a menu-driven interface. For general
-    information on kernel configuration see <ulink
+    <para>There are several ways to configure the kernel options. Usually,
+    This is done through a menu-driven interface, for example:</para>
+@y
+    <para>
+    カーネルオプションの設定方法にはいくつかあります。
+    通常は以下に示すように、メニュー形式のインターフェースを通じて行います。
+    </para>
+@z
+
+@x
+      <title>The meaning of optional make environment variables:</title>
+@y
+      <title>追加する make 環境変数の意味:</title>
+@z
+
+@x
+          <para>This establishes the locale setting to the one used on the
+          host.  This may be needed for a proper menuconfig ncurses interface
+          line drawing on a UTF-8 linux text console.</para>
+@y
+          <para>
+          これはホストのロケール設定を指示するものです。
+          この設定は UTF-8 での表示設定がされたテキストコンソールにて menuconfig の ncurses による行表示を適切に行うために必要となります。
+          </para>
+@z
+
+@x
+          <para>If used, be sure to replace
+          <replaceable>&lt;host_LANG_value&gt;</replaceable> by the value of
+          the <envar>$LANG</envar> variable from your host.  You can
+          alternatively use instead the host's value of <envar>$LC_ALL</envar>
+          or <envar>$LC_CTYPE</envar>.</para>
+@y
+          <para>
+          <replaceable>&lt;host_LANG_value&gt;</replaceable> の部分は、ホストの <envar>$LANG</envar> 変数の値に置き換えてください。
+          <envar>$LC_ALL</envar> あるいは <envar>$LC_CTYPE</envar> の値を設定することもできます。
+          </para>
+@z
+
+@x make menuconfig
+          <para>This launches an ncurses menu-driven interface. For other
+          (graphical) interfaces, type <command>make help</command>.</para>
+@y
+          <para>
+          これは ncurses によるメニュー形式のインターフェースを起動します。
+          これ以外の（グラフィカルな）インターフェースについては <command>make help</command> を入力して確認してください。
+          </para>
+@z
+
+@x
+    <para>For general information on kernel configuration see <ulink
     url="&hints-root;kernel-configuration.txt"/>.  BLFS has some information
     regarding particular kernel configuration requirements of packages outside
     of LFS at <ulink
@@ -69,7 +118,6 @@
     <ulink url="http://www.kroah.com/lkn/"/> </para>
 @y
     <para>
-    メニュー形式のインターフェースによりカーネルを設定します。
     カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
     BLFS では LFS が取り扱わない各種パッケージに対して、必要となるカーネル設定項目を説明しています。
     <ulink url="&blfs-book;longindex.html#kernel-config-index"/> を参照してください。
@@ -184,36 +232,6 @@
           これは Udev が動作していなくても行われます。
           Udev はその上で起動し、パーミッション管理やシンボリックリンクの追加を行います。
           Udev/Eudev を利用する場合には本項目を有効にすることが必要です。
-          </para>
-@z
-
-@x
-      <title>The meaning of optional make environment variables:</title>
-@y
-      <title>追加する make 環境変数の意味:</title>
-@z
-
-@x
-          <para>This establishes the locale setting to the one used on the
-          host.  This may be needed for a proper menuconfig ncurses interface
-          line drawing on a UTF-8 linux text console.</para>
-@y
-          <para>
-          これはホストのロケール設定を指示するものです。
-          この設定は UTF-8 での表示設定がされたテキストコンソールにて menuconfig の ncurses による行表示を適切に行うために必要となります。
-          </para>
-@z
-
-@x
-          <para>If used, be sure to replace
-          <replaceable>&lt;host_LANG_value&gt;</replaceable> by the value of
-          the <envar>$LANG</envar> variable from your host.  You can
-          alternatively use instead the host's value of <envar>$LC_ALL</envar>
-          or <envar>$LC_CTYPE</envar>.</para>
-@y
-          <para>
-          <replaceable>&lt;host_LANG_value&gt;</replaceable> の部分は、ホストの <envar>$LANG</envar> 変数の値に置き換えてください。
-          <envar>$LC_ALL</envar> あるいは <envar>$LC_CTYPE</envar> の値を設定することもできます。
           </para>
 @z
 
