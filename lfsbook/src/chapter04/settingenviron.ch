@@ -169,7 +169,7 @@
   </para>
 @z
 
-@x
+@x if [ ! -L /bin ]; then PATH=/bin:$PATH; fi
   <para>If <filename class="directory">/bin</filename> is not a symbolic
   link, then it has to be added to the <envar>PATH</envar> variable.</para>
 @y
@@ -178,7 +178,7 @@
   </para>
 @z
 
-@x
+@x PATH=$LFS/tools/bin:$PATH
   <para>By putting <filename class="directory">$LFS/tools/bin</filename> ahead of the
   standard <envar>PATH</envar>, the cross-compiler installed at the beginning
   of <xref linkend="chapter-cross-tools"/> is picked up by the shell
@@ -193,7 +193,22 @@
   </para>
 @z
 
-@x export LFS LC_ALL LFS_TGT PATH
+@x CONFIG_SITE=$LFS/usr/share/config.site
+  <para>In <xref linkend="chapter-cross-tools"/> and
+  <xref linkend="chapter-temporary-tools"/>, if this variable is not set,
+  <command>configure</command> scripts
+  may attempt to load configuration items specific to some distributions from
+  <filename>/usr/share/config.site</filename> on the host system. Override
+  it to prevent potential contamination from the host.</para>
+@y
+  <para>
+  <xref linkend="chapter-cross-tools"/> と <xref
+  linkend="chapter-temporary-tools"/> においてこの変数を設定しておかないと、ディストリビューションによっては <command>configure</command> スクリプトが、ホストシステム上の <filename>/usr/share/config.site</filename> から設定項目を取得してしまうことがあります。
+  ホストの影響が及ばないようにここでオーバーライドします。
+  </para>
+@z
+
+@x export ...
         <para>While the above commands have set some variables, in order
         to make them visible within any sub-shells, we export them.</para>
 @y
