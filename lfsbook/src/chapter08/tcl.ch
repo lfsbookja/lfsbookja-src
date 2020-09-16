@@ -54,17 +54,6 @@
     </para>
 @z
 
-%@x
-%    <para>Note that the Tcl package used here is a minimal version needed
-%    to run the LFS tests.  For the full package, see the  
-%    <ulink url='&blfs-book;general/tcl.html'>BLFS Tcl procedures</ulink>.</para>
-%@y
-%    <para>
-%    ここで利用する Tcl パッケージは LFS におけるテストを実施するための最低限必要なバージョンです。
-%    完全なパッケージについては <ulink url='&blfs-book;general/tcl.html'>BLFS Tcl procedures</ulink> を参照してください。
-%    </para>
-%@z
-
 @x
     <para>Prepare Tcl for compilation:</para>
 @y
@@ -95,26 +84,6 @@
 @y
     <para>パッケージをビルドします。</para>
 @z
-
-%@x
-%    <para>The Tcl test suite may experience failures under certain host
-%    conditions that are not fully understood. Therefore, test suite failures
-%    here are not surprising, and are not considered critical. The
-%    <parameter>TZ=UTC</parameter> parameter sets the time zone to Coordinated
-%    Universal Time (UTC), but only
-%    for the duration of the test suite run. This ensures that the clock tests
-%    are exercised correctly. Details on the <envar>TZ</envar> environment
-%    variable are provided in <xref linkend="chapter-config"/>.</para>
-%@y
-%    <para>
-%    Tcl のテストスイートは、特定のホスト環境において失敗することがありますが、その原因はよく分かっていません。
-%    したがってテストスイートの失敗は驚くことではなく、さして重大なことではありません。
-%    <parameter>TZ=UTC</parameter> はタイムゾーンを協定世界時間 (Coordinated Universal Time; UTC) としても知られる時間に設定します。
-%    ただしこれはテストスイートを実行する時だけの設定です。
-%    こうしておけば時刻に関するテストが正しく処理されます。
-%    環境変数 <envar>TZ</envar> については <xref linkend="chapter-config"/>にて詳しく説明しています。
-%    </para>
-%@z
 
 @x
     <para>The various <quote>sed</quote> instructions after the
@@ -176,6 +145,14 @@
     <para>Now make a necessary symbolic link:</para>
 @y
     <para>必要となるシンボリックリンクを生成します。</para>
+@z
+
+@x
+    <para>Finally, rename a man page that conflicts with a Perl man page:</para>
+@y
+    <para>
+    最後に Perl の man ページと重複するものを名称変更します。
+    </para>
 @z
 
 @x

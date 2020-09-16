@@ -54,6 +54,46 @@
 @z
 
 @x
+      <para>2020-09-15</para>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.8.9. Fixes
+          <ulink url="&lfs-ticket-root;4723">#4723</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.7.2. Fixes
+          <ulink url="&lfs-ticket-root;4724">#4724</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.181. Fixes
+          <ulink url="&lfs-ticket-root;4725">#4725</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.55.3. Fixes
+          <ulink url="&lfs-ticket-root;4726">#4726</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-09-15</para>
+        <listitem>
+          <para>[bdubbs] - linux-5.8.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4723">#4723</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.7.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4724">#4724</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.181 へのアップデート。
+          <ulink url="&lfs-ticket-root;4725">#4725</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.55.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4726">#4726</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-09-02</para>
         <listitem>
           <para>[bdubbs] - Update to linux-5.8.5. Fixes
