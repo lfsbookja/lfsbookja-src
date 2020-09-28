@@ -41,6 +41,12 @@
 </note>
 @z
 
+@x Autoconf Consolidated Fixes Patch
+        <para>Download: <ulink url="&patches-root;&autoconf-fixes-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&autoconf-fixes-patch;"/></para>
+@z
+
 @x Bash Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
 @y

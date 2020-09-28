@@ -54,6 +54,22 @@
 @z
 
 @x
+      <para>2020-09-27</para>
+        <listitem>
+           <para>[bdubbs] - Add autoconf-2.69-consolidated_fixes-1.patch
+           which allows autoconf tests to pass.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-09-27</para>
+        <listitem>
+           <para>[bdubbs] - autoconf-2.69-consolidated_fixes-1.patch を追加。
+           autoconf のテストを成功させるため。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-09-15</para>
         <listitem>
           <para>[bdubbs] - Update to linux-5.8.9. Fixes
