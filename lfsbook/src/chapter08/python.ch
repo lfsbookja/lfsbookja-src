@@ -76,17 +76,23 @@
 @z
 
 @x
-    <para>To test the results, issue <command>make test</command>.
-    Some tests requiring a network connection or additional packages are
-    skipped.  The test named test_normalization fails because network
+    <para>To test the results, issue:</para> 
+@y
+    <para>
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Some tests requiring a network connection or additional packages are
+    skipped.  The test named test_unicodedata fails because network
     configuration is not completed yet.  For more comprehensive results,
     the test can be rerun when Python 3 is reinstalled in BLFS.</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>make test</command> を実行します。
-    ネットワーク接続や別パッケージを必要とするテストはスキップされます。
-    test_normalization というテストは、ネットワーク設定がまだできあがっていないために失敗します。
-    テストを網羅するなら、BLFS において Python 3 を再インストールしてから、テストを再実行してください。
+    ネットワーク接続や他の依存パッケージを必要とするテストは、省略される場合があります。
+    test_unicodedata というテストは、ネットワーク設定が不十分であるために失敗します。
+    すべての結果を得るには、BLFS において Python 3 を再インストールした後に、もう一度テストを実行してください。
     </para>
 @z
 

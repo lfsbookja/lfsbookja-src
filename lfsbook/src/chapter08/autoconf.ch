@@ -30,7 +30,7 @@
 
 @x
     <para>First, apply a patch fixes several problems that occur with the latest
-    perl, libtool, and bash version.</para>
+    perl, libtool, and bash versions.</para>
 @y
     <para>
     まず、perl、libtool、bash の最新版を用いている際に発生する問題を解消するためのパッチを提供します。

@@ -756,8 +756,7 @@
     <para>Upon entering the chroot environment in <xref
     linkend="chapter-chroot-temporary-tools"/>, the first task is to install
     libstdc++. Then temporary installations of programs needed for the proper
-    operation of the toolchain are performed. Programs needed for testing
-    other programs are also built. From this point onwards, the
+    operation of the toolchain are performed. From this point onwards, the
     core toolchain is self-contained and self-hosted.  In 
     <xref linkend="chapter-building-system"/>, final versions of all the
     packages needed for a fully functional system are built, tested and
@@ -766,7 +765,6 @@
     <para>
     <xref linkend="chapter-chroot-temporary-tools"/>での chroot による環境下では、最初の作業は libstdc++ をビルドすることです。
     そして各種プログラムのインストールを、ツールチェーンを適切に操作しながら実施していきます。
-    プログラムのテストに必要な他のプログラムについても、ビルドしていきます。
     これ以降、コアとなるツールチェーンは自己完結していきます。
     そしてシステムの全機能を動作させるための全パッケージの最終バージョンを、ビルドしテストしインストールします。
     </para>
