@@ -54,6 +54,70 @@
 @z
 
 @x
+      <para>2020-11-15</para>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-6.2.1. Fixes
+          <ulink url="&lfs-ticket-root;4754">#4754</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20201110. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.09. Fixes
+          <ulink url="&lfs-ticket-root;4750">#4750</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.9.8. Fixes
+          <ulink url="&lfs-ticket-root;4749">#4749</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.45. Fixes
+          <ulink url="&lfs-ticket-root;4751">#4751</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-3.6. Fixes
+          <ulink url="&lfs-ticket-root;4752">#4752</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.7.4. Fixes
+          <ulink url="&lfs-ticket-root;4753">#4753</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-11-15</para>
+        <listitem>
+          <para>[bdubbs] - gmp-6.2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4754">#4754</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20201110 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.09 へのアップデート。
+          <ulink url="&lfs-ticket-root;4750">#4750</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.9.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4749">#4749</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.45 へのアップデート。
+          <ulink url="&lfs-ticket-root;4751">#4751</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-3.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4752">#4752</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.7.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4753">#4753</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-11-01</para>
         <listitem>
           <para>[bdubbs] - Update to elfutils-0.182. Fixes
