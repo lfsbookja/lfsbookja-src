@@ -54,6 +54,78 @@
 @z
 
 @x
+      <para>2020-12-01</para>
+        <listitem>
+          <para>[bdubbs] - Update to ninja-1.10.2. Fixes
+          <ulink url="&lfs-ticket-root;4760">#4760</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.2.1. Fixes
+          <ulink url="&lfs-ticket-root;4759">#4759</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.9.11. Fixes
+          <ulink url="&lfs-ticket-root;4758">#4758</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.16.3. Fixes
+          <ulink url="&lfs-ticket-root;4757">#4757</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to sysvinit-2.98. Fixes
+          <ulink url="&lfs-ticket-root;4756">#4756</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.36.1. Fixes
+          <ulink url="&lfs-ticket-root;4755">#4755</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20201124. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.2070. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-12-01</para>
+        <listitem>
+          <para>[bdubbs] - ninja-1.10.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4760">#4760</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4759">#4759</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.9.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4758">#4758</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.16.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4757">#4757</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - sysvinit-2.98 へのアップデート。
+          <ulink url="&lfs-ticket-root;4756">#4756</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.36.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4755">#4755</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20201124 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.2070 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-11-15</para>
         <listitem>
           <para>[bdubbs] - Update to gmp-6.2.1. Fixes

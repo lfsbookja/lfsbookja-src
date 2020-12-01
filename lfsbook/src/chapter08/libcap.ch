@@ -32,7 +32,7 @@
 @z
 
 @x
-    <para>Prevent a static library from being installed:</para>
+    <para>Prevent static libraries from being installed:</para>
 @y
     <para>
     スタティックライブラリをインストールしないようにします。
@@ -95,10 +95,10 @@
 
 @x
         <seg>capsh, getcap, getpcaps, and setcap</seg>
-        <seg>libcap.so and libpsx.a</seg>
+        <seg>libcap.so and libpsx.so</seg>
 @y
         <seg>capsh, getcap, getpcaps, setcap</seg>
-        <seg>libcap.so, libpsx.a</seg>
+        <seg>libcap.so, libpsx.so</seg>
 @z
 
 @x

@@ -60,6 +60,22 @@
 -->
 
    <listitem>
+      <para>2020-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          <phrase revision="sysv">SVN-20201201</phrase>
+          <phrase revision="systemd">20201201-systemd</phrase>,
+          チェンジセット
+          <ulink url="&lfs-rev-root;12061">12061</ulink>,
+          <ulink url="&lfs-rev-root;12064">12064</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2020-11-16</para>
       <itemizedlist>
         <listitem>
