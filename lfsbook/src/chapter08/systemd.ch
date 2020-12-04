@@ -38,6 +38,14 @@
 @z
 
 @x
+    <para>First, apply a patch to fix some regressions:</para>
+@y
+    <para>
+    まずパッチを適用して、機能後退を修正します。
+    </para>
+@z
+
+@x
     <para>Create a symlink to work around the xsltproc command not being installed:</para>
 @y
     <para>
@@ -290,8 +298,8 @@
         resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
         (symlink to systemctl), systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
-        systemd-id128, systemd-inhibit, systemd-machine-id-setup,
+        systemd-delta, systemd-detect-virt, systemd-dissect, systemd-escape, 
+        systemd-hwdb, systemd-id128, systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
         systemd-repart, systemd-resolve (symlink to resolvectl), systemd-run,
         systemd-socket-activate, systemd-stdio-bridge, systemd-tmpfiles,
@@ -318,8 +326,8 @@
         resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
         (systemctl へのシンボリックリンク), systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-delta, systemd-detect-virt, systemd-escape, systemd-hwdb,
-        systemd-id128, systemd-inhibit, systemd-machine-id-setup,
+        systemd-delta, systemd-detect-virt, systemd-dissect, systemd-escape, 
+        systemd-hwdb, systemd-id128, systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
         systemd-repart, systemd-resolve (resolvectl へのシンボリックリンク), systemd-run,
         systemd-socket-activate, systemd-stdio-bridge, systemd-tmpfiles,
@@ -597,6 +605,14 @@
 @y
           <para>
           システムが仮想化環境で動作しているかどうかを検出し、それに応じて udev を調整します。
+          </para>
+@z
+
+@x systemd-dissect
+          <para>Is used to inspect OS disk images.</para>
+@y
+          <para>
+          OS ディスクイメージの調査に用いられます。
           </para>
 @z
 

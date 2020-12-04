@@ -54,6 +54,38 @@
 @z
 
 @x
+      <para>2020-12-03</para>
+        <listitem>
+          <para>[renodr] - Update to linux-5.9.12. Fixes
+          <ulink url="&lfs-ticket-root;4763">#4673</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to bc-3.2.3. Fixes
+          <ulink url="&lfs-ticket-root;4762">#4672</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-247. Fixes
+          <ulink url="&lfs-ticket-root;4745">#4745</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-12-03</para>
+        <listitem>
+          <para>[renodr] - linux-5.9.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4763">#4673</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - bc-3.2.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4762">#4672</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-247 へのアップデート。
+          <ulink url="&lfs-ticket-root;4745">#4745</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-12-01</para>
         <listitem>
           <para>[bdubbs] - Update to ninja-1.10.2. Fixes

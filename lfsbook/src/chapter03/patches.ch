@@ -101,10 +101,10 @@
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @z
 
-@x Systemd GCC-10 Patch
-        <para>Download: <ulink url="&patches-root;&systemd-gcc10-patch;"/></para>
+@x Systemd Upstream Fixes Patch
+        <para>Download: <ulink url="&patches-root;&systemd-upstream-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&systemd-gcc10-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&systemd-upstream-fixes-patch;"/></para>
 @z
 
 @x
