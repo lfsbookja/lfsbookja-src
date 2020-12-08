@@ -30,17 +30,26 @@
       several packages in <ulink url="&blfs-book;">the BLFS
       book</ulink>.</para>
 @y
-      <para>This section is not strictly required for LFS if not using
-      systemd. On the other hand, meson/ninja is a powerful build system,
-      which is expected to be used more and more often. It is required for
-      several packages in <ulink url="&blfs-book;">the BLFS
-      book</ulink>.</para>
+      <para>
+      本節は正確に言うと systemd を利用しないのであれば LFS において必要ありません。
+      一方で meson/ninja というものは強力なビルドシステムであり、利用する機会がかなり多いものと思われます。
+      <ulink url="&blfs-book;">BLFS ブック</ulink> においては、これを必要とするパッケージがいくつかあります。
+      </para>
 @z
 
 @x
     <title>Installation of Meson</title>
 @y
     <title>&InstallationOf1;Meson&InstallationOf2;</title>
+@z
+
+@x
+    <para>First, apply a patch that fixes an issue with pkgconfig files
+    for static libraries:</para>
+@y
+    <para>
+    まず初めに、スタティックライブラリに対応する pkgconfig ファイルの問題を修正するパッチを適用します。
+    </para>
 @z
 
 @x

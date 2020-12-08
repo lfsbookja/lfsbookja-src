@@ -206,6 +206,13 @@
           </para>
 @z
 
+@x -Dmode=release
+          <para>Disable some features considered experimental by upstream.
+@y
+          <para>
+          アップストリームにおいて試験的機能とみなされている機能を無効にします。
+@z
+
 @x
     <para>Compile the package:</para>
 @y

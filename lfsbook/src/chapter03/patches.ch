@@ -89,6 +89,12 @@
         <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @z
 
+@x Meson Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;&meson-fix-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&meson-fix-patch;"/></para>
+@z
+
 @x Libpipeline Checks Patch
         <para>Download: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
 @y

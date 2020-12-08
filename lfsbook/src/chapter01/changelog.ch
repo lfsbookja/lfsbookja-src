@@ -54,6 +54,23 @@
 @z
 
 @x
+      <para>2020-12-07</para>
+        <listitem>
+          <para>[ken] - Patch meson-0.56.0 to correctly create pkgconfig
+          files re static libraries (re sysprof in BLFS) . Fixes
+          <ulink url="&lfs-ticket-root;4765">#4675</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-12-07</para>
+        <listitem>
+          <para>[ken] - meson-0.56.0 において pkgconfig ファイル内のスタティックライブラリ（BLFS における sysprof）を適切に生成するパッチを適用します。
+          <ulink url="&lfs-ticket-root;4765">#4675</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-12-03</para>
         <listitem>
           <para>[renodr] - Update to linux-5.9.12. Fixes
