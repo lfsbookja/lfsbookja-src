@@ -26,10 +26,10 @@
 @z
 
 @x
-    <para>Incorporate some upstream fixes:</para>
+    <para>First, fix a race condition if using multiple cores:</para>
 @y
     <para>
-    アップストリームのパッチを適用します。
+    マルチコア利用時の競合状態を修正します。
     </para>
 @z
 

@@ -70,10 +70,20 @@
 @z
 
 @x
-    <para>If desired, install the documentation:</para>
+    <para>Add the version to the documentation directory name, to be
+    consistent with other packages:</para>
 @y
     <para>
-    必要であればドキュメントをインストールします。
+    ドキュメントディレクトリにバージョンを含めます。
+    他のパッケージとの整合をとるためです。
+    </para>
+@z
+
+@x
+    <para>If desired, install some additional documentation:</para>
+@y
+    <para>
+    必要であれば、さらにドキュメントをインストールします。
     </para>
 @z
 
