@@ -111,19 +111,6 @@
 @z
 
 @x
-    <listitem><para>If one or more of your disk drives have a GUID partition
-    table (GPT), either <ulink
-    url='&blfs-book;postlfs/gptfdisk.html'>gptfdisk</ulink> or <ulink
-    url='&blfs-book;postlfs/parted.html'>parted</ulink> will be useful.
-    </para></listitem>
-@y
-    <listitem><para>ハードディスクドライブに GUID パーティションテーブル (GPT) があるなら、<ulink
-    url='&blfs-book;postlfs/gptfdisk.html'>gptfdisk</ulink> または <ulink
-    url='&blfs-book;postlfs/parted.html'>parted</ulink> が有用なものとなります。
-    </para></listitem>
-@z
-
-@x
     <listitem><para>Finally, a review of the following configuration files 
     is also appropriate at this point.  </para>
 @y

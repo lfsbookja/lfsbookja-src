@@ -70,10 +70,12 @@
 
 @x
     <para>The boot messages can always be reviewed by using the
-    <userinput>journalctl -b</userinput> command as the root user.</para>
+    <userinput>journalctl -b</userinput> command as the
+    <systemitem class="username">root</systemitem> user.</para>
 @y
     <para>
-    ブートメッセージは、root ユーザーになってコマンド <userinput>journalctl -b</userinput> を実行することで、常に表示しておくこともできます。
+    ブートメッセージは、<systemitem
+    class="username">root</systemitem> ユーザーになってコマンド <userinput>journalctl -b</userinput> を実行することで、常に表示しておくこともできます。
     </para>
 @z
 

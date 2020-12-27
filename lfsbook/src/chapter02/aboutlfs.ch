@@ -105,7 +105,8 @@
   host system.  If logging in through a graphical display manager, the
   user's <filename>.bash_profile</filename> is not normally used when
   a virtual terminal is started.  In this case, add the export command to
-  the <filename>.bashrc</filename> file for the user and root.  In addition, 
+  the <filename>.bashrc</filename> file for the user and
+  <systemitem class="username">root</systemitem>.  In addition, 
   some distributions have instructions to not run the <filename>.bashrc</filename> 
   instructions in a non-interactive bash invocation.  Be sure to add the
   export command before the test for non-interactive use.</para>
@@ -113,7 +114,7 @@
   <para>
   もう一つ気にかけることとして、ホストシステム上にログ出力を行う方法に関してです。
   グラフィカルディスプレイマネージャーを通じてログ出力を行うと、仮想端末が起動する際に、ユーザー独自の <filename>.bash_profile</filename> は普通は用いられません。
-  この場合は、各ユーザー用と root 用の <filename>.bashrc</filename> に export コマンドを追加してください。
+  この場合は、各ユーザー用と <systemitem class="username">root</systemitem> 用の <filename>.bashrc</filename> に export コマンドを追加してください。
   ここでディストリビューションの中には、非対話形式での bash の実行時には <filename>.bashrc</filename> を実行しないように求めているものがあります。
   その場合は、非対話形式の利用をテストする前に export コマンドを追加してください。
   </para>

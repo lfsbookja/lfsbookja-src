@@ -46,16 +46,18 @@
 
 @x FORCE_UNSAFE_CONFIGURE=1
           <para>This forces the test for <function>mknod</function> to be run
-          as root.  It is generally considered dangerous to run this test as
-          the root user, but as it is being run on a system that has only been
+          as <systemitem class="username">root</systemitem>.
+          It is generally considered dangerous to run this test as
+          the <systemitem class="username">root</systemitem> user, but as it
+          is being run on a system that has only been
           partially built, overriding it is OK.</para>
 @y
           <!--
           日本語訳註： override の真の意味がよく分からない..
           -->
           <para>
-          このオプションは、<function>mknod</function> に対するテストを root ユーザーにて実行するようにします。
-          一般にこのテストを root ユーザーで実行することは危険なこととされますが、ここでは部分的にビルドしたシステムでテストするものであるため、オーバーライドすることで支障はありません。
+          このオプションは、<function>mknod</function> に対するテストを <systemitem class="username">root</systemitem> ユーザーにて実行するようにします。
+          一般にこのテストを <systemitem class="username">root</systemitem> ユーザーで実行することは危険なこととされますが、ここでは部分的にビルドしたシステムでテストするものであるため、オーバーライドすることで支障はありません。
           </para>
 @z
 

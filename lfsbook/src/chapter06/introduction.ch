@@ -50,13 +50,15 @@
 
 @x
   <para>Once again, let us recall that improper setting of <envar>LFS</envar>
-  together with building as root, may render your computer unusable.
+  together with building as <systemitem class="username">root</systemitem>,
+  may render your computer unusable.
   This whole chapter must be done as user <systemitem
   class="username">lfs</systemitem>, with the environment as described in
   <xref linkend="ch-preps-settingenviron"/>.</para>
 @y
   <para>
-  ここでもう一度確認しておきますが、root ユーザーとしてビルドを行う際にも <envar>LFS</envar> の適切な設定が必要です。
+  ここでもう一度確認しておきますが、<systemitem
+  class="username">root</systemitem> ユーザーとしてビルドを行う際にも <envar>LFS</envar> の適切な設定が必要です。
   それができていないと、コンピューターが利用できなくなる可能性があります。
   本章は全体にわたって、<systemitem
   class="username">lfs</systemitem> ユーザーにより操作します。

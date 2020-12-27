@@ -67,6 +67,22 @@
           <phrase revision="sysv">SVN-20201215</phrase>
           <phrase revision="systemd">20201215-systemd</phrase>,
           チェンジセット
+          <ulink url="&lfs-rev-root;12070">12070</ulink>,
+          <ulink url="&lfs-rev-root;12071">12071</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2020-12-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          <phrase revision="sysv">SVN-20201215</phrase>
+          <phrase revision="systemd">20201215-systemd</phrase>,
+          チェンジセット
           <ulink url="&lfs-rev-root;12068">12068</ulink>,
           <ulink url="&lfs-rev-root;12069">12069</ulink>
           対応。

@@ -52,13 +52,14 @@
 @z
 
 @x
-        <para>Procedures done as the root user after Section 2.4 need to 
-        have the LFS environment variable set <emphasis>FOR THE ROOT
-        USER</emphasis>.</para>
+        <para>Procedures done as the
+        <systemitem class="username">root</systemitem> user after Section
+        2.4 need to have the LFS environment variable set
+        <emphasis>FOR THE ROOT USER</emphasis>.</para>
 @y
         <para>
-        2.4 節以降において root ユーザーにより実行する作業では LFS 環境変数の設定が必要です。
-        さらにそれは<emphasis>rootユーザーにおいて</emphasis>設定されていなければなりません。
+        2.4 節以降において <systemitem class="username">root</systemitem> ユーザーにより実行する作業では LFS 環境変数の設定が必要です。
+        さらにそれは<emphasis>root ユーザーにおいて</emphasis>設定されていなければなりません。
         </para>
 @z
 
@@ -77,13 +78,14 @@
 @z
 
 @x
-        <para>Threse two chapters must be done as user <emphasis>lfs</emphasis>.
+        <para>These two chapters <emphasis>must</emphasis> be done as user
+        <systemitem class="username">lfs</systemitem>.
         A <command>su - lfs</command> needs to be done before any task in these
         chapters. Failing to do that, you are at risk of installing packages to the
         host, and potentially rendering it unusable.</para>
 @y
         <para>
-        この 2 つの章における処理は<emphasis>すべて</emphasis>、ユーザー <emphasis>lfs</emphasis> により実施してください。
+        この 2 つの章における処理は<emphasis>すべて</emphasis>、ユーザー <systemitem class="username">lfs</systemitem> により実施してください。
         処理の実施前には <command>su - lfs</command> を行ないます。
         これをやり忘れた場合、パッケージインストールをホストに対して行ってしまい、利用不能になってしまうリスクがあります。
         </para>
@@ -119,35 +121,39 @@
 @x
         <para>A few operations, from <quote>Changing Ownership</quote> to
         <quote>Entering the Chroot Environment</quote> must be done as the
-        root user, with the LFS environment variable set for the root user.</para>
+        <systemitem class="username">root</systemitem> user, with the LFS
+        environment variable set for the
+        <systemitem class="username">root</systemitem>user.</para>
 @y
         <para>
-        <quote>所有者の変更</quote>から<quote>Chroot 環境への移行</quote>までの操作は、root ユーザーで行います。
-        LFS 環境変数が root ユーザーにおいて設定されている必要があります。
+        <quote>所有者の変更</quote>から<quote>Chroot 環境への移行</quote>までの操作は、<systemitem class="username">root</systemitem> ユーザーで行います。
+        LFS 環境変数が <systemitem class="username">root</systemitem> ユーザーにおいて設定されている必要があります。
         </para>
 @z
 
 @x
          <para> When entering chroot, the LFS environment variable must be set
-         for root. The LFS variable is not used afterwards.</para>
+         for <systemitem class="username">root</systemitem>. The LFS
+         variable is not used afterwards.</para>
 @y
          <para>
-         chroot 環境に入った際には、環境変数 LFS が root ユーザーにおいて設定されている必要があります。
-         これ以降、LFS 変数は使いません。
+         chroot 環境に入った際には、環境変数 LFS が <systemitem class="username">root</systemitem> ユーザーにおいて設定されている必要があります。
+         これ以降 LFS 変数は使いません。
          </para>
 @z
 
 @x
          <para> The virtual file systems must be mounted.  This can be done
          before or after entering chroot by changing to a host virtual terminal
-         and, as root, running the commands in 
+         and, as <systemitem class="username">root</systemitem>, running the
+         commands in 
          <xref linkend='ch-tools-bindmount'/> and 
          <xref linkend='ch-tools-kernfsmount'/>.</para>
 @y
          <para>
          仮想ファイルシステムがマウントされている必要があります。
          これは chroot 環境への移行前後において、ホストの仮想端末を変更することで実現します。
-         root ユーザーとなって <xref linkend='ch-tools-bindmount'/> と <xref
+         <systemitem class="username">root</systemitem> ユーザーとなって <xref linkend='ch-tools-bindmount'/> と <xref
          linkend='ch-tools-kernfsmount'/> を実行する必要があります。
          </para>
 @z

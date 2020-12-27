@@ -90,11 +90,11 @@ autoconf-2.70 に含まれている gnulib .m4 ファイルの問題を修正し
 
 @x FORCE_UNSAFE_CONFIGURE=1
           <para>This environment variable allows the package to be 
-          built as the root user.
+          built as the <systemitem class="username">root</systemitem> user.
           </para>
 @y
           <para>
-          この環境変数は root ユーザーによりパッケージをビルドできるようにします。
+          この環境変数は <systemitem class="username">root</systemitem> ユーザーによりパッケージをビルドできるようにします。
           </para>
 @z
 

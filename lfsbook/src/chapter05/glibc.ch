@@ -204,15 +204,16 @@
 
 @x
     <warning><para>If <envar>LFS</envar> is not properly set, and despite the
-    recommendations, you are building as root, the next command will install
-    the newly built glibc to your host system, which most likely will render it
-    unusable. So double check that the environment is correctly set for user
-    <systemitem class="username">lfs</systemitem>.</para></warning>
+    recommendations, you are building as
+    <systemitem class="username">root</systemitem>, the next command will
+    install the newly built glibc to your host system, which most likely
+    will render it unusable. So double check that the environment is
+    correctly set, before running the following command.</para></warning>
 @y
     <warning><para>
-    <envar>LFS</envar> が適切に設定されていない状態で、推奨する方法とは異なり root によってビルドを行うと、次のコマンドはビルドした glibc をホストシステムにインストールしてしまいます。
+    <envar>LFS</envar> が適切に設定されていない状態で、推奨する方法とは異なり <systemitem class="username">root</systemitem> によってビルドを行うと、次のコマンドはビルドした glibc をホストシステムにインストールしてしまいます。
     これを行ってしまうと、ほぼ間違いなくホストが利用不能になります。
-    したがってその環境変数が <systemitem class="username">lfs</systemitem> ユーザー向けに設定されていることを今一度確認してください。
+    したがってその環境変数が適切に設定されていることを確認してから、以下のコマンドを実行してください。
     </para></warning>
 @z
 

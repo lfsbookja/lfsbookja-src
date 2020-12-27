@@ -76,7 +76,8 @@
 @z
 
 @x
-    <warning><para>Running the test suite as the root user can be harmful to
+    <warning><para>Running the test suite as the
+    <systemitem class="username">root</systemitem> user can be harmful to
     your system.  To run it, the CONFIG_SCSI_DEBUG option for the kernel must
     be available in the currently running system and must be built as a
     module.  Building it into the kernel will prevent booting.  For complete
@@ -84,7 +85,7 @@
     be run after rebooting into the completed LFS system and running:</para>
 @y
     <warning><para>
-    root ユーザーによりテストスイートを実行すると、システムに悪影響を及ぼすことがあります。
+    <systemitem class="username">root</systemitem> ユーザーによりテストスイートを実行すると、システムに悪影響を及ぼすことがあります。
     テストスイートを実行するためには、カーネルオプション CONFIG_SCSI_DEBUG が現環境にて有効であり、かつモジュールとしてビルドされていなければなりません。
     カーネルに組み込んでいるとブートできません。
     またテストを完全に実施するには BLFS での各種パッケージのインストールも必要になります。
