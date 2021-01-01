@@ -331,9 +331,9 @@
 
 %----------------------------------------------------------------------
 @x DejaGNU
-         <seg>Bash, Coreutils, Diffutils, GCC, Grep, Make, and Sed</seg>
+         <seg>Bash, Coreutils, Diffutils, GCC, Grep, Make, Sed, and Texinfo</seg>
 @y
-         <seg>Bash, Coreutils, Diffutils, GCC, Grep, Make, Sed</seg>
+         <seg>Bash, Coreutils, Diffutils, GCC, Grep, Make, Sed, Texinfo</seg>
 @z
 @x
           <seg>None</seg>

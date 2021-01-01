@@ -54,6 +54,86 @@
 @z
 
 @x
+      <para>2021-01-01</para>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.2253. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20201229. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.19. Fixes
+          <ulink url="&lfs-ticket-root;4779">#4779</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2020f. Fixes
+          <ulink url="&lfs-ticket-root;4777">#4777</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.10. Fixes
+          <ulink url="&lfs-ticket-root;4776">#4776</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.10.0. Fixes
+          <ulink url="&lfs-ticket-root;4775">#4775</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zstd-1.4.8. Fixes
+          <ulink url="&lfs-ticket-root;4774">#4774</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.4.0. Fixes
+          <ulink url="&lfs-ticket-root;4773">#4773</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.10.4. Fixes
+          <ulink url="&lfs-ticket-root;4772">#4772</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-01-01</para>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.2253 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20201229 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.19 へのアップデート。
+          <ulink url="&lfs-ticket-root;4779">#4779</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2020f へのアップデート。
+          <ulink url="&lfs-ticket-root;4777">#4777</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4776">#4776</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.10.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4775">#4775</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - zstd-1.4.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4774">#4774</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.4.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4773">#4773</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.10.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4772">#4772</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-12-15</para>
         <listitem>
           <para>[bdubbs] - Update to libcap-2.46. Fixes

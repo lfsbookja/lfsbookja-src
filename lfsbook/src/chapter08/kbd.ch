@@ -115,14 +115,6 @@
 @z
 
 @x
-    <para>Remove an internal library installed unintentionally:</para>
-@y
-    <para>
-    意図せずインストールされてしまう内部ライブラリを削除します。
-    </para>
-@z
-
-@x
       <para>For some languages (e.g., Belarusian) the Kbd package doesn't
       provide a useful keymap where the stock <quote>by</quote> keymap assumes
       the ISO-8859-5 encoding, and the CP1251 keymap is normally used. Users of
