@@ -101,10 +101,10 @@
 
 @x
     <para>Now move the dynamic libraries to a more appropriate location
-    and fix up some permissions and symbolic links:</para>
+    and fix up symbolic links:</para>
 @y
     <para>
-    スタティックライブラリを適切なディレクトリに移動し、パーミッションとシンボリックリンクを適正にします。
+    スタティックライブラリを適切なディレクトリに移動し、シンボリックリンクを適正にします。
     </para>
 @z
 

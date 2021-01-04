@@ -71,24 +71,11 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-%@x --with-readline
-%          <para>This option tells Bc to use the <filename
-%          class="libraryfile">readline</filename> library that is already
-%          installed on the system rather than using its own readline
-%          version.</para>
-%@y
-%          <para>
-%          このオプションは、本パッケージにて提供される <filename
-%          class="libraryfile">readline</filename> ライブラリではなく、既にシステムにインストールされている <filename
-%          class="libraryfile">readline</filename> ライブラリを用いることを指示します。
-%          </para>
-%@z
-
-@x CC=gcc CFLAGS="-std=c99"
-          <para>These parameters specify the compiler and the C standard to use.</para>
+@x CC=gcc
+          <para>These parameters specify the compiler to use.</para>
 @y
           <para>
-          このパラメーターはコンパイラーを指示し、C 標準を利用することを指定します。
+          このパラメーターはコンパイラーを指定します。
           </para>
 @z
 
