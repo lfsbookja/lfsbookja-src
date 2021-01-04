@@ -33,7 +33,7 @@ ALLXML=$(shell find . -type d -name $(RENDERTMP) -prune -o -type f -name '*.xml'
 
 REV=@revspec@
 
-all: ctie $(srcs) stylesheets _bootscripts udev-lfs book
+all: ctie $(srcs) stylesheets _bootscripts scripts udev-lfs book
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
@@ -48,6 +48,9 @@ patches.ent: $(BOOKdir)/patches.ent $(srcdir)/patches.ch
 	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch
 	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
+
+.PHONY: scripts
+scripts: process-scripts.sh aux-file-data.sh make-aux-files.sh pdf-fixups.sh
 
 process-scripts.sh: $(BOOKdir)/process-scripts.sh
 	cp -p $^ $@
