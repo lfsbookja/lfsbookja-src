@@ -87,54 +87,16 @@
           </para>
 @z
 
-%@x --disable-makeinstall-chown
-%          <para>This switch disables using the <command>chown</command> command
-%          during installation.  This is not needed when installing into the
-%          /tools directory and avoids the necessity of installing as
-%          root.</para>
-%@y
-%          <para>
-%          本スイッチはインストール中に <command>chown</command> コマンドを利用しないようにします。
-%          /tools ディレクトリへのインストールは不要であり、root によりインストールする必要もなくなります。
-%          </para>
-%@z
-
-%@x --without-ncurses
-%          <para>This switch disables using the ncurses library for
-%          the build process. This is not needed when installing into the
-%          /tools directory and avoids problems on some host distros.</para>
-%@y
-%          <para>
-%          本スイッチはビルド中に ncurses ライブラリを用いないようにします。
-%          /tools へインストールする際には不要なものであり、特定のディストリビューションでは問題が発生するためです。
-%          </para>
-%@z
-
-%@x --without-systemdsystemunitdir
-%          <para>On systems that use systemd, the package tries to install 
-%          a systemd specific file to a non-existent directory in /tools.
-%          This switch disables the unnecessary action.</para>
-%@y
-%          <para>
-%          systemd を利用しているシステムにおいては、systemd に関連するファイルを /tools 内に存在しないディレクトリにインストールしようとします。
-%          本スイッチはそのような不要な処理をなくします。
-%          </para>
-%@z
-
-%@x PKG_CONFIG=""
-%          <para>Setting this environment variable prevents adding unneeded
-%          features that may be available on the host. Note that the location
-%          shown for setting this environment variable is different from other
-%          LFS sections where variables are set preceding the command.  This
-%          location is shown to demonstrate an alternative way of setting an
-%          environment variable when using configure.</para>
-%@y
-%          <para>
-%          ホスト上での不要な機能を取り込まないように、環境変数を設定します。
-%          環境変数を設定するこの方法は、LFS の他の節ではコマンド実行前に行っており、やり方が異なります。
-%          これは configure の際に環境変数を設定するという一例を示しているものです。
-%          </para>
-%@z
+@x runstatedir=/run
+          <para>This switch sets the location of the socket used by
+          <command>uuidd</command> and
+          <filename class="libraryfile">libuuid</filename> correctly.</para>
+@y
+          <para>
+          本スイッチは <command>uuidd</command> や <filename
+          class="libraryfile">libuuid</filename> が利用するソケットの場所を適切に設定します。
+          </para>
+@z
 
 @x
     <para>Compile the package:</para>

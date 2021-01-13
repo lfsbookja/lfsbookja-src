@@ -54,6 +54,35 @@
 @z
 
 @x
+      <para>2021-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Fix util-linux uuidd socket path.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Remove various references to deprecated
+          /var/run, use /run insteadly.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[xry111] - Update to lfs-bootscripts-20210113.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - util-linux の uuidd ソケットパスを修正。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - 廃止された /var/run への参照を削除し、かわりに /run とする。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[xry111] - lfs-bootscripts-20210113 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-01-01</para>
         <listitem>
           <para>[bdubbs] - Update to vim-8.2.2253. Addresses

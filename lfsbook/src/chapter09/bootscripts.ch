@@ -97,17 +97,17 @@
 
 @x cleanfs
           <para>Removes files that should not be preserved between reboots, such
-          as those in <filename class="directory">/var/run/</filename> and
+          as those in <filename class="directory">/run/</filename> and
           <filename class="directory">/var/lock/</filename>; it re-creates
-          <filename>/var/run/utmp</filename> and removes the possibly present
+          <filename>/run/utmp</filename> and removes the possibly present
           <filename>/etc/nologin</filename>, <filename>/fastboot</filename>, and
           <filename>/forcefsck</filename> files</para>
 @y
           <para>
           リブートの際に不要となるファイルを削除します。
-          例えば <filename class="directory">/var/run/</filename> ディレクトリや <filename
+          例えば <filename class="directory">/run/</filename> ディレクトリや <filename
           class="directory">/var/lock/</filename> ディレクトリの配下にあるファイルです。
-          <filename>/var/run/utmp</filename> ファイルは再生成されます。
+          <filename>/run/utmp</filename> ファイルは再生成されます。
           また <filename>/etc/nologin</filename>、<filename>/fastboot</filename>、<filename>/forcefsck</filename> がおそらく存在しており、これらは削除されます。
           </para>
 @z

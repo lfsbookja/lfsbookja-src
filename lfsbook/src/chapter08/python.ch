@@ -108,7 +108,7 @@
       <title>&MeaningOfCommand1;install&MeaningOfCommand2;</title>
 @z
 
-@x chmod -v 755 /usr/lib/libpython3.{6m.,}so
+@x chmod -v 755 /usr/lib/libpython{&python-minor;,3}.so
         <para>Fix permissions for libraries to be consistent with other
         libraries.</para>
 @y

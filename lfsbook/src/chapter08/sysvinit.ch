@@ -190,11 +190,11 @@
 
 @x runlevel
           <para>Reports the previous and the current run-level, as noted in the
-          last run-level record in <filename>/var/run/utmp</filename></para>
+          last run-level record in <filename>/run/utmp</filename></para>
 @y
           <para>
           現在のランレベルと直前のランレベルを表示します。
-          最新のランレベルは <filename>/var/run/utmp</filename> ファイルに記録されています。
+          最新のランレベルは <filename>/run/utmp</filename> ファイルに記録されています。
           </para>
 @z
 
