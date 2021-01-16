@@ -54,6 +54,64 @@
 @z
 
 @x
+      <para>2020-01-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to findutils-4.8.0. Fixes
+          <ulink url="&lfs-ticket-root;4785">#4785</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to kmod-28. Fixes
+          <ulink url="&lfs-ticket-root;4784">#4784</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to tar-1.33. Fixes
+          <ulink url="&lfs-ticket-root;4783">#4783</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to linux-5.10.7. Fixes
+          <ulink url="&lfs-ticket-root;4782">#4782</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to meson-0.56.2. Fixes
+          <ulink url="&lfs-ticket-root;4781">#4781</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to tcl-8.6.11. Fixes
+          <ulink url="&lfs-ticket-root;4780">#4780</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2020-01-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - findutils-4.8.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4785">#4785</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - kmod-28 へのアップデート。
+          <ulink url="&lfs-ticket-root;4784">#4784</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - tar-1.33 へのアップデート。
+          <ulink url="&lfs-ticket-root;4783">#4783</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - linux-5.10.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4782">#4782</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - meson-0.56.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4781">#4781</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - tcl-8.6.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4780">#4780</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-01-13</para>
       <itemizedlist>
         <listitem>
@@ -61,7 +119,7 @@
         </listitem>
         <listitem>
           <para>[xry111] - Remove various references to deprecated
-          /var/run, use /run insteadly.</para>
+          /var/run, use /run instead.</para>
         </listitem>
         <listitem revision="sysv">
           <para>[xry111] - Update to lfs-bootscripts-20210113.</para>

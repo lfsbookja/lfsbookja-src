@@ -143,7 +143,7 @@
 
 @x
    <para>The <filename class="directory">/tools</filename> directory can also
-   be removed to further gain some place:</para>
+   be removed to further gain some space:</para>
 @y
    <para>
    <filename class="directory">/tools</filename> ディレクトリも削除して、容量をある程度回復することにします。

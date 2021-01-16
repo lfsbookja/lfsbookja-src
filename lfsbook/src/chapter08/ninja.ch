@@ -47,11 +47,11 @@
 @x
     <para>Using the <emphasis>optional</emphasis> procedure below allows a user to
     limit the number of parallel processes via an environment variable, 
-    NINJAJOBS.  <command>For example</command>, setting:
+    NINJAJOBS.  <emphasis role="bold">For example</emphasis>, setting:
 @y
     <para>
     以降に示す <emphasis>任意</emphasis> の手順を用いると、並行プロセス数を環境変数 NINJAJOBS から制御できるようになります。
-    例えば以下のように設定します。
+    <emphasis role="bold">たとえば</emphasis> 以下のように設定します。
 @z
 
 @x

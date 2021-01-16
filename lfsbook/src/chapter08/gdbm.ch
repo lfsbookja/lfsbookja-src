@@ -77,6 +77,16 @@
 @z
 
 @x
+    <para>
+      One test, <filename>VERSION</filename>, is known to fail.
+    </para>
+@y
+    <para>
+      <filename>VERSION</filename> というテストが 1 つだけ失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

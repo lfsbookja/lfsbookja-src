@@ -40,7 +40,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x
+@x --with-xz, --with-zlib, --with-zstd
           <para>These options enable Kmod to handle compressed kernel modules.</para>
 @y
           <para>
@@ -73,12 +73,6 @@
     最低でも git が必要であり、git リポジトリ配下でテストしないと失敗するものがあります。
     </para>
 @z
-
-%@x
-%    <para>To test the results, issue:</para>
-%@y
-%    <para>コンパイル結果をテストする場合は以下を実行します。</para>
-%@z
 
 @x
     <para>Install the package and create symlinks for

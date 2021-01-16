@@ -60,6 +60,22 @@
 -->
 
    <listitem>
+      <para>2021-01-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          <phrase revision="sysv">SVN-20210116</phrase>
+          <phrase revision="systemd">20210116-systemd</phrase>,
+          チェンジセット
+          <ulink url="&lfs-rev-root;12095">12095</ulink> ～
+          <ulink url="&lfs-rev-root;12097">12097</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2021-01-13</para>
       <itemizedlist>
         <listitem>
@@ -67,7 +83,7 @@
           <phrase revision="sysv">SVN-20210101</phrase>
           <phrase revision="systemd">20210101-systemd</phrase>,
           チェンジセット
-          <ulink url="&lfs-rev-root;12080">12080</ulink>,
+          <ulink url="&lfs-rev-root;12080">12080</ulink> ～
           <ulink url="&lfs-rev-root;12094">12094</ulink>
           対応。
           </para>
@@ -83,7 +99,7 @@
           <phrase revision="sysv">SVN-20210101</phrase>
           <phrase revision="systemd">20210101-systemd</phrase>,
           チェンジセット
-          <ulink url="&lfs-rev-root;12073">12073</ulink>,
+          <ulink url="&lfs-rev-root;12073">12073</ulink> ～
           <ulink url="&lfs-rev-root;12079">12079</ulink>
           対応。
           </para>
