@@ -53,12 +53,12 @@
 
 @x lib=lib
           <para>This parameter sets the library directory to
-          <filename>/lib</filename> rather than
-          <filename>/lib64</filename> on x86_64. It has no effect on
+          <filename>/usr/lib</filename> rather than
+          <filename>/usr/lib64</filename> on x86_64. It has no effect on
           x86.</para>
 @y
           <para>
-          このパラメーターは x86_64 においてライブラリを <filename>/lib64</filename> ではなく <filename>/lib</filename> にインストールするようにします。
+          このパラメーターは x86_64 においてライブラリを <filename>/usr/lib64</filename> ではなく <filename>/usr/lib</filename> にインストールするようにします。
           x86 においては何も効果はありません。
           </para>
 @z
@@ -72,10 +72,11 @@
 @z
 
 @x
-    <para>Install the package and do some cleanup:</para>
+    <para>Install the package and make sure the essential libraries are in
+    the correct directory:</para>
 @y
     <para>
-    パッケージをインストールし、クリーン処理を行います。
+    パッケージをインストールし、基本的なライブラリを適切なディレクトリに置きます。
     </para>
 @z
 

@@ -25,7 +25,8 @@ CHANGE_FILES = \
 	patch.ch          \
 	sed.ch            \
 	tar.ch            \
-	xz.ch
+	xz.ch             \
+        zlib.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

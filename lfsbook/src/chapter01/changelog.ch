@@ -54,6 +54,102 @@
 @z
 
 @x
+      <para>2021-02-01</para>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.2433. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20210115. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.2.5. Fixes
+          <ulink url="&lfs-ticket-root;4797">#4797</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.46.0. Fixes
+          <ulink url="&lfs-ticket-root;4796">#4796</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to autoconf-2.71. Fixes
+          <ulink url="&lfs-ticket-root;4795">#4795</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2021a. Fixes
+          <ulink url="&lfs-ticket-root;4793">#4793</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.32.1. Fixes
+          <ulink url="&lfs-ticket-root;4792">#4792</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.47. Fixes
+          <ulink url="&lfs-ticket-root;4791">#4791</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.7.5. Fixes
+          <ulink url="&lfs-ticket-root;4790">#4790</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.36. Fixes
+          <ulink url="&lfs-ticket-root;4789">#4789</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.10.12. Fixes
+          <ulink url="&lfs-ticket-root;4786">#4786</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-02-01</para>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.2433 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20210115 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.2.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4797">#4797</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.46.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4796">#4796</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - autoconf-2.71 へのアップデート。
+          <ulink url="&lfs-ticket-root;4795">#4795</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2021a へのアップデート。
+          <ulink url="&lfs-ticket-root;4793">#4793</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.32.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4792">#4792</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.47 へのアップデート。
+          <ulink url="&lfs-ticket-root;4791">#4791</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.7.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4790">#4790</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.36 へのアップデート。
+          <ulink url="&lfs-ticket-root;4789">#4789</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.10.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4786">#4786</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2020-01-16</para>
       <itemizedlist>
         <listitem>

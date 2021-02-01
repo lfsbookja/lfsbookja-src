@@ -28,36 +28,13 @@
     <title>&InstallationOf1;Bc&InstallationOf2;</title>
 @z
 
-%@x
-%    <para>First, change an internal script to use <command>sed</command> instead 
-%    of <command>ed</command>:</para>
-%@y
-%    <para>
-%    内部スクリプトの中で <command>ed</command> が用いられている箇所を <command>sed</command> に変更します。
-%    </para>
-%@z
-
-%@x
-%    <para>Create temporary symbolic links so the package can find
-%    the readline library and confirm that its required libncurses
-%    library is available. Even though the libraries are in /tools/lib
-%    at this point, the system will use /usr/lib at the end of
-%    this chapter.</para>
-%@y
-%    <para>
-%    一時的なシンボリックリンクを生成して、本パッケージが readline ライブラリを見出せるようにし、また libncurses ライブラリの適切なものを利用できるようにします。
-%    ライブラリはこの時点で /tools/lib にあるわけですが、本章を終えた後には /usr/lib のものが用いられるようになります。
-%    </para>
-%@z
-
-%@x
-%    <para>Fix an issue in <command>configure</command> due to missing
-%    files in the early stages of LFS:</para>
-%@y
-%    <para>
-%    LFS 構築の初期段階では存在しないファイルがあるため  <command>configure</command> を修正します。
-%    </para>
-%@z
+@x
+    <para>First, fix an error in the configure script::</para>
+@y
+    <para>
+    まず configure スクリプトにあるエラーを修正します。
+    </para>
+@z
 
 @x
     <para>Prepare Bc for compilation:</para>
