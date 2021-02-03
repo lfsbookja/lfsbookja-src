@@ -149,12 +149,10 @@
 @z
 
 @x
-    <para>Make the installed static libraries writable so debugging symbols can 
-    be removed later:</para>
+    <para>Remove useless static libraries:</para>
 @y
     <para>
-    スタティックライブラリへの書き込みを可能とします。
-    これは後にデバッグシンボルを取り除くために必要となります。
+    不要なスタティックライブラリを削除します。
     </para>
 @z
 

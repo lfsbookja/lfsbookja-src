@@ -202,6 +202,14 @@
 @z
 
 @x
+    <para>Remove useless static libraries:</para>
+@y
+    <para>
+    不要なスタティックライブラリを削除します。
+    </para>
+@z
+
+@x
     <title>Contents of Binutils</title>
 @y
     <title>&ContentsOf1;Binutils&ContentsOf2;</title>
@@ -220,12 +228,12 @@
 @x
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
-        <seg>libbfd.{a,so}, libctf.{a,so}, libctf-nobfd.{a,so}, and libopcodes.{a,so}</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, and libopcodes.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
-        <seg>libbfd.{a,so}, libctf.{a,so}, libctf-nobfd.{a,so}, libopcodes.{a,so}</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @z
 

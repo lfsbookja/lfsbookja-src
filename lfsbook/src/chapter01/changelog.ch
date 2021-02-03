@@ -68,7 +68,8 @@
         <listitem>
           <para>[pierre] - Replace the relinked libctf (which may incorrectly
           link against libz from the host distribution) with the one that
-          was linked during "make" in binutils-pass2.</para>
+          was linked during "make" in binutils-pass2. Thanks to Xi Ruoyao
+          for the fix.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to bc-3.2.6. Fixes
@@ -97,6 +98,7 @@
         </listitem>
         <listitem>
           <para>[pierre] - binutils 2 回めにおける make によって生成される libctf のリンク（ホストディストリビューションの libz に誤ってリンクされてしまう場合がある）を、適切にリンクし直す。
+          修正をあげてくれた Xi Ruoyao に感謝。
           </para>
         </listitem>
         <listitem>

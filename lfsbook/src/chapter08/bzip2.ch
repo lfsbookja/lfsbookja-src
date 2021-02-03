@@ -103,6 +103,14 @@
 @z
 
 @x
+    <para>Remove an useless static library:</para>
+@y
+    <para>
+    不要なスタティックライブラリを削除します。
+    </para>
+@z
+
+@x
     <title>Contents of Bzip2</title>
 @y
     <title>&ContentsOf1;Bzip2&ContentsOf2;</title>
@@ -122,13 +130,13 @@
         <seg>bunzip2 (link to bzip2), bzcat (link to bzip2), bzcmp (link to
         bzdiff), bzdiff, bzegrep (link to bzgrep), bzfgrep (link to bzgrep),
         bzgrep, bzip2, bzip2recover, bzless (link to bzmore), and bzmore</seg>
-        <seg>libbz2.{a,so}</seg>
+        <seg>libbz2.so</seg>
         <seg>/usr/share/doc/bzip2-&bzip2-version;</seg>
 @y
         <seg>bunzip2 (bzip2 へのリンク), bzcat (bzip2 へのリンク), bzcmp (bzdiff へのリンク),
         bzdiff, bzegrep (bzgrep へのリンク), bzfgrep (bzgrep へのリンク),
         bzgrep, bzip2, bzip2recover, bzless (bzmore へのリンク), bzmore</seg>
-        <seg>libbz2.{a,so}</seg>
+        <seg>libbz2.so</seg>
         <seg>/usr/share/doc/bzip2-&bzip2-version;</seg>
 @z
 

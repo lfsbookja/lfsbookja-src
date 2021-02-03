@@ -89,19 +89,6 @@
 @z
 
 @x
-  <para>There were several static libraries that were not suppressed earlier
-  in the chapter in order to satisfy the regression tests in several packages. These 
-  libraries are from binutils, bzip2, e2fsprogs, flex, libtool, and zlib.  If desired,
-  remove them now:</para>
-@y
-  <para>
-  これまでのパッケージビルドにて、縮退テスト (regressoin tests) を実現するために生成していたスタティックライブラリがいくらか残っています。
-  これは binutils, bzip2, e2fsprogs, flex, libtool, zlib から作られたものです。
-  もし不要なら以下により削除します。
-  </para>
-@z
-
-@x
   <para>There are also several files installed in the /usr/lib and /usr/libexec
   directories with a file name extension of .la. These are "libtool archive"
   files. As already said, they are only useful when linking with static

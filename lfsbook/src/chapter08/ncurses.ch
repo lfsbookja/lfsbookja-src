@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>Don't install a static library that is not handled by configure:</para>
-@y
-    <para>
-    configure では制御できないため、以下によりスタティックライブラリをインストールしないようにします。
-    </para>
-@z
-
-@x
     <para>Prepare Ncurses for compilation:</para>
 @y
     <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
@@ -157,6 +149,14 @@
 @z
 
 @x
+    <para>Remove a static library that is not handled by configure:</para>
+@y
+    <para>
+    configure では指定することができないため、スタティックライブラリを削除します。
+    </para>
+@z
+
+@x
     <para>If desired, install the Ncurses documentation:</para>
 @y
     <para>
@@ -215,7 +215,6 @@
            libformw.so, 
            libmenuw.so, 
            libncursesw.so,
-           libncurses++w.a,
            libpanelw.so, and their non-wide-character counterparts without "w"
               in the library names.</seg>
         <seg>
@@ -242,7 +241,6 @@
            libformw.so, 
            libmenuw.so, 
            libncursesw.so,
-           libncurses++w.a,
            libpanelw.so, 
            これらに加えてワイド文字対応ではない通常のライブラリでその名称から "w" を取り除いたもの。</seg>
         <seg>

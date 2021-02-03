@@ -68,7 +68,7 @@
           <phrase revision="systemd">20210202-systemd</phrase>,
           チェンジセット
           <ulink url="&lfs-rev-root;12117">12117</ulink> ～
-          <ulink url="&lfs-rev-root;12121">12121</ulink>
+          <ulink url="&lfs-rev-root;12124">12124</ulink>
           対応。
           </para>
         </listitem>

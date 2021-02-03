@@ -81,6 +81,14 @@
 @z
 
 @x
+    <para>Remove an useless static library:</para>
+@y
+    <para>
+    不要なスタティックライブラリを削除します。
+    </para>
+@z
+
+@x
     <title>Contents of Libtool</title>
 @y
     <title>&ContentsOf1;Libtool&ContentsOf2;</title>
