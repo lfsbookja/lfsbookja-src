@@ -54,6 +54,67 @@
 @z
 
 @x
+      <para>2021-02-02</para>
+        <listitem>
+          <para>[pierre] - Move tcl, expect, and dejagnu just before binutils
+          in chapter 8: this allows to build them against chapter 8
+          glibc.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - To allow building with newer version of glibc
+          than the host distribution, build a "file" executable for the
+          host before cross-compiling it.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Replace the relinked libctf (which may incorrectly
+          link against libz from the host distribution) with the one that
+          was linked during "make" in binutils-pass2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.2.6. Fixes
+          <ulink url="&lfs-ticket-root;4800">#4800</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.33. Fixes
+          <ulink url="&lfs-ticket-root;4799">#4799</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Minor change to mountfs boot script. Fixes
+          <ulink url="&lfs-ticket-root;4798">#4798</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-02-02</para>
+        <listitem>
+          <para>[pierre] - 第 8 章において tcl、expect、dejagnu を binutils の直前に移動。
+          第 8 章における glibc ビルドに利用することに。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - ホストが提供する glibc でなく、新しいバージョンの glibc を作り出すようにする。
+          これによってクロスコンパイル前に実行モジュール「file」をビルドする。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - binutils 2 回めにおける make によって生成される libctf のリンク（ホストディストリビューションの libz に誤ってリンクされてしまう場合がある）を、適切にリンクし直す。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.2.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4800">#4800</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.33 へのアップデート。
+          <ulink url="&lfs-ticket-root;4799">#4799</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプト mountfs の修正。
+          <ulink url="&lfs-ticket-root;4798">#4798</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-02-01</para>
         <listitem>
           <para>[bdubbs] - Update to vim-8.2.2433. Addresses

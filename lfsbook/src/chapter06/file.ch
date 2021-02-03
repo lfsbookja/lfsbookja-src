@@ -28,6 +28,17 @@
 @z
 
 @x
+    <para>The build host <quote>file</quote> command iwith the same version as
+    the one we are building is needed for building the signature file. Run the
+    following commands to build it:</para>
+@y
+    <para>
+    ホストにある<quote>file</quote>コマンドは、これから作り出すものと同一バージョンであって、シグニチャーファイルをビルドするために必要となります。
+    そこで以下のコマンドを実行してビルドします。
+    </para>
+@z
+
+@x
     <para>Prepare File for compilation:</para>
 @y
     <para>&PreparePackage1;File&PreparePackage2;</para>

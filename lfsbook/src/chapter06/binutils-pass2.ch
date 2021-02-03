@@ -131,52 +131,17 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package, and
+    workaround an issue causing
+    <filename class="libraryfile">libctf.so</filename>
+    to link against zlib from the host distribution:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    &InstallThePackage;
+    またホストディストリビューションの zlib に対して <filename
+    class="libraryfile">libctf.so</filename> がリンクしてしまう問題を回避します。
+    </para>
 @z
-
-%@x
-%    <para>Now prepare the linker for the <quote>Re-adjusting</quote> phase in
-%    the next chapter:</para>
-%@y
-%    <para>
-%    次章で行う<quote>再調整</quote>の作業に向けてリンカーを準備します。
-%    </para>
-%@z
-
-%@x
-%      <title>The meaning of the make parameters:</title>
-%@y
-%      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
-%@z
-%
-%@x
-%          <para>This tells the make program to remove all compiled
-%          files in the <filename class="directory">ld</filename>
-%          subdirectory.</para>
-%@y
-%          <para>
-%          サブディレクトリ <filename class="directory">ld</filename> にコンパイル生成されたプログラムをすべて削除します。
-%          </para>
-%@z
-
-%@x
-%          <para>This option rebuilds everything in the <filename
-%          class="directory">ld</filename> subdirectory. Specifying the
-%          <envar>LIB_PATH</envar> Makefile variable on the command line
-%          allows us to override the default value of the temporary tools
-%          and point it to the proper final path. The value of this variable
-%          specifies the linker's default library search path. This
-%          preparation is used in the next chapter.</para>
-%@y
-%          <para>
-%          サブディレクトリ <filename
-%          class="directory">ld</filename> の中に生成されるべきプログラムを再生成します。
-%          Makefile ファイル内の変数 <envar>LIB_PATH</envar> をコマンドラインから与えることで、一時的なツール類の設定を上書き指定し、適切なパスを指示します。
-%          この変数の設定はリンカーに対するデフォルトの検索パスを指定するものであり、次章に向けた準備となります。
-%          </para>
-%@z
 
 @x
     <para>Details on this package are located in

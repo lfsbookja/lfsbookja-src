@@ -32,17 +32,15 @@
 
 @x
     <para>This package and the next two (Expect and DejaGNU) are
-    installed to support running the test suites for GCC and binutils and other
+    installed to support running the test suites for binutils and GCC and other
     packages.  Installing three packages for testing purposes may seem
     excessive, but it is very reassuring, if not essential, to know that the
-    most important tools are working properly. These packages are required
-    to run the test suites in this chapter.</para>
+    most important tools are working properly.</para>
 @y
     <para>
-    本パッケージとこれに続く 2 つのパッケージ (Expect と DejaGNU) は、GCC および Binutils などにおけるテストスイートを実行するのに必要となるためインストールするものです。
+    本パッケージとこれに続く 2 つのパッケージ (Expect と DejaGNU) は、Binutils および GCC などにおけるテストスイートを実行するのに必要となるためインストールするものです。
     テスト目的のためにこれら 3 つのパッケージをインストールするというのは、少々大げさなことかもしれません。
     ただ本質的ではないことであっても、重要なツール類が正常に動作するという確認が得られれば安心できます。
-    これら 3 つのパッケージは、本章で行うテストのために必要となるものです。
     </para>
 @z
 

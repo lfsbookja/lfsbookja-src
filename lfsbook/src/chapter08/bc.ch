@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>First, fix an error in the configure script::</para>
-@y
-    <para>
-    まず configure スクリプトにあるエラーを修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Bc for compilation:</para>
 @y
     <para>&PreparePackage1;Bc&PreparePackage2;</para>
