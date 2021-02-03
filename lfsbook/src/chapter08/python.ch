@@ -103,21 +103,6 @@
 @z
 
 @x
-      <title>The meaning of the install commands:</title>
-@y
-      <title>&MeaningOfCommand1;install&MeaningOfCommand2;</title>
-@z
-
-@x chmod -v 755 /usr/lib/libpython{&python-minor;,3}.so
-        <para>Fix permissions for libraries to be consistent with other
-        libraries.</para>
-@y
-        <para>
-        他のライブラリとの整合を図るため、ライブラリのパーミッションを修正します。
-        </para>
-@z
-
-@x
     <para>If desired, install the preformatted documentation:</para>
 @y
     <para>

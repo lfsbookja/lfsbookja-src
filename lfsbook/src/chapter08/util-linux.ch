@@ -31,21 +31,6 @@
 @z
 
 @x
-    <para>The FHS recommends using the <filename
-    class="directory">/var/lib/hwclock</filename> directory instead of the
-    usual <filename class="directory">/etc</filename> directory as the
-    location for the <filename>adjtime</filename> file. Create this directory
-    with:</para>
-@y
-    <para>
-    FHS では <filename>adjtime</filename> ファイルの配置場所として <filename
-    class="directory">/etc</filename> ディレクトリではなく <filename
-    class="directory">/var/lib/hwclock</filename> ディレクトリを推奨しています。
-    そこで以下によりそのディレクトリを生成します。
-    </para>
-@z
-
-@x
     <para>Prepare Util-linux for compilation:</para>
 @y
     <para>&PreparePackage1;Util-linux&PreparePackage2;</para>

@@ -79,12 +79,13 @@ autoconf-2.70 に含まれている gnulib .m4 ファイルの問題を修正し
 @z
 
 @x autoreconf
-          <para>This command updates generated configuration files 
-          consistent with the latest version of automake.
-          </para>
+          <para>The patch for internationalization has modified the
+          building system of the package, so the configuration files have
+          to be regenerated.</para>
 @y
           <para>
-          このコマンドは automake 最新版との整合を図るために、既に生成されている設定ファイル類を更新します。
+          国際化対応を行うパッチによって、当パッケージのビルドシステムが修正されます。
+          したがって設定ファイル類を再生成する必要があります。
           </para>
 @z
 

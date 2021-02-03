@@ -34,11 +34,17 @@
 @z
 
 @x
-    <para>First create a directory
-    to enable storage for the <command>hwclock</command> program:</para>
+    <para>The FHS recommends using the <filename
+    class="directory">/var/lib/hwclock</filename> directory instead of the
+    usual <filename class="directory">/etc</filename> directory as the
+    location for the <filename>adjtime</filename> file. Create this directory
+    with:</para>
 @y
     <para>
-    はじめに <command>hwclock</command> プログラムがデータ保持に必要としているディレクトリを生成します。
+    FHS では <filename>adjtime</filename> ファイルの配置場所として <filename
+    class="directory">/etc</filename> ディレクトリではなく <filename
+    class="directory">/var/lib/hwclock</filename> ディレクトリを推奨しています。
+    そこで以下によりそのディレクトリを生成します。
     </para>
 @z
 
