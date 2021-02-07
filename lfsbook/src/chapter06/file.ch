@@ -42,6 +42,26 @@
 @z
 
 @x
+      <title>The meaning of the new configure option:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x
+          <para>The configuration script attempts to use some packages from
+          the host distribution if the corresponding library files exist.
+          It may cause compilation failure if a library file exists, but
+          the corresponding header files do not.  These options prevent
+          using these unneeded capabilities from the host.</para>
+@y
+          <para>
+          configure スクリプトは、ホスト上に特定のライブラリが存在するときに、それを利用しようとします。
+          ライブラリが存在していて、かつそれに対応するヘッダーファイルが存在していないときに、コンパイルに失敗することがあります。
+          このオプションは、そういったホストの機能は不要なので利用しないようにします。
+          </para>
+@z
+
+@x
     <para>Prepare File for compilation:</para>
 @y
     <para>&PreparePackage1;File&PreparePackage2;</para>

@@ -234,6 +234,14 @@
 @z
 
 @x
+    <para>Remove an useless directory:</para>
+@y
+    <para>
+    不要なディレクトリを削除します。
+    </para>
+@z
+
+@x
     <para>Create the <filename>/etc/machine-id</filename> file needed by
     <command>systemd-journald</command>:</para>
 @y

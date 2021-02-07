@@ -58,6 +58,18 @@
           </para>
 @z
 
+@x --with-system-pid-file=/run/dbus/pid and --with-system-socket=/run/dbus/system_bus_socket
+          <para>These set the location of the PID file and the system bus socket
+          to be in <filename class="directory">/run</filename>, instead of
+          deprecated <filename class="directory">/var/run</filename>.</para>
+@y
+          <para>
+          これは PID ファイルとシステムバスソケットの場所を設定するものであり、かつての <filename
+          class="directory">/var/run</filename> ではなく <filename
+          class="directory">/run</filename> とします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -104,15 +116,6 @@
     <para>
     シンボリックリンクを生成します。
     D-Bus と systemd が同一の <filename>machine-id</filename> ファイルを利用できるようにするためです。
-    </para>
-@z
-
-@x
-    <para>Move the socket file to /run instead of the deprecated
-    /var/run:</para>
-@y
-    <para>
-    ソケットファイルを置くディレクトリを、非推奨の /var/run から /run に移動します。
     </para>
 @z
 

@@ -54,6 +54,54 @@
 @z
 
 @x
+      <para>2021-02-01</para>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20210202. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to inetutils-2.0. Fixes
+          <ulink url="&lfs-ticket-root;4803">#4803</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.48. Fixes
+          <ulink url="&lfs-ticket-root;4802">#4802</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.36.1. Fixes
+          <ulink url="&lfs-ticket-root;4804">#4804</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.10.13. Fixes
+          <ulink url="&lfs-ticket-root;4801">#4801</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-02-01</para>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20210202 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inetutils-2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4803">#4803</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.48 へのアップデート。
+          <ulink url="&lfs-ticket-root;4802">#4802</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.36.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4804">#4804</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.10.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4801">#4801</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-02-02</para>
         <listitem>
           <para>[pierre] - Move tcl, expect, and dejagnu just before binutils
