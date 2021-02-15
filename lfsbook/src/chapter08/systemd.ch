@@ -234,7 +234,7 @@
 @z
 
 @x
-    <para>Remove an useless directory:</para>
+    <para>Remove a useless directory:</para>
 @y
     <para>
     不要なディレクトリを削除します。

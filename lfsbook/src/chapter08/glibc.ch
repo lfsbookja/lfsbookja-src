@@ -112,8 +112,23 @@
           systems.  We do not want lib64 to be used.</para>
 @y
           <para>
-          この変数によってあらゆるシステムにおいて正しいライブラリを設定します。
+          この変数によって、あらゆるシステムにおけるライブラリを正しく設定します。
           lib64 は利用しません。
+          </para>
+@z
+
+@x libc_cv_include_x86_isa_level=no
+          <para>This disables <quote>x86 ISA needed</quote> property in
+          Glibc libraries.  Use it <emphasis role="bold">if</emphasis>
+          you are building Glibc with <option>-march</option> option in
+          <envar>CFLAGS</envar>, to workaround an issue in Glibc-2.33
+          breaking it.</para>
+@y
+          <para>
+          これは Glibc ライブラリ内の<quote>x86 ISA needed</quote>プロパティを無効にします。
+          Glibc のビルド時に <envar>CFLAGS</envar> として <option>-march</option> を設定している <emphasis
+          role="bold">場合に限っては</emphasis> これを有効にします。
+          そうすることで Glibc-2.33 における問題が回避できます。
           </para>
 @z
 

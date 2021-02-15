@@ -186,13 +186,12 @@
 @z
 
 @x
-<!--    <para>The ver_test_pr16504.sh test is known to fail.</para>-->
+    <para>Several tests named <quote>Run property ...</quote> are known to
+    fail.</para>
 @y
-<!--
     <para>
-    ver_test_pr16504.sh は 失敗します。
+    <quote>Run property ...</quote>と名づけられているテストがいくつか失敗します。
     </para>
--->
 @z
 
 @x

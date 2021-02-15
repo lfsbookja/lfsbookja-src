@@ -54,6 +54,92 @@
 @z
 
 @x
+      <para>2021-02-14</para>
+        <listitem>
+          <para>[renodr] - Add a command explanation for 'pwait'.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.36.2. Fixes
+          <ulink url="&lfs-ticket-root;4812">#4812</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tar-1.34. Fixes
+          <ulink url="&lfs-ticket-root;4813">#4813</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to psmisc-23.4. Fixes
+          <ulink url="&lfs-ticket-root;4805">#4805</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to procps-ng-3.3.17. Fixes
+          <ulink url="&lfs-ticket-root;4811">#4811</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.9.4. Fixes
+          <ulink url="&lfs-ticket-root;4808">#4808</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2.10. Fixes
+          <ulink url="&lfs-ticket-root;4810">#4810</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.183. Fixes
+          <ulink url="&lfs-ticket-root;4806">#4806</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.46.1. Fixes
+          <ulink url="&lfs-ticket-root;4809">#4809</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.2.7. Fixes
+          <ulink url="&lfs-ticket-root;4814">#4814</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-02-14</para>
+        <listitem>
+          <para>[renodr] - 'pwait' に対するコマンド説明を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.36.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4812">#4812</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tar-1.34 へのアップデート。
+          <ulink url="&lfs-ticket-root;4813">#4813</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - psmisc-23.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4805">#4805</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - procps-ng-3.3.17 へのアップデート。
+          <ulink url="&lfs-ticket-root;4811">#4811</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.9.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4808">#4808</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4810">#4810</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.183 へのアップデート。
+          <ulink url="&lfs-ticket-root;4806">#4806</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.46.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4809">#4809</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.2.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4814">#4814</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-02-01</para>
         <listitem>
           <para>[bdubbs] - Update to iana-etc-20210202. Addresses

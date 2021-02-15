@@ -22,6 +22,16 @@
 @z
 
 @x
+    <note><para>This package extracts to the directory procps-3.3.17/, 
+       not the expected procps-ng-3.3.17/.</para></note>
+@y
+    <note><para>
+      本パッケージのソースは procps-3.3.17/ ディレクトリへ伸長（解凍）されます。
+      procps-ng-3.3.17/ ではないので注意してください。
+    </para></note>
+@z
+
+@x
     <title>Installation of Procps-ng</title>
 @y
     <title>&InstallationOf1;Procps-ng&InstallationOf2;</title>
@@ -65,6 +75,16 @@
     LFS においてテストスイートを実行するには多少の修正が必要です。
     tty デバイスを利用しないスクリプトが1つ失敗するため、これを除外することにし、その他にも 2 つのテストを修正します。
     テストスイートを実行するために以下のコマンドを実行します。
+    </para>
+@z
+
+@x
+    <para>Four tests related to pkill are known ot fail due to a problem
+          with tests that were not updated.</para>
+@y
+    <para>
+    pkill に関連するテストが 4 つ失敗します。
+    これはテストが更新されていないために発生します。
     </para>
 @z
 
@@ -163,6 +183,14 @@
 @y
           <para>
           現在実行中のプロセスを一覧表示します。
+          </para>
+@z
+
+@x pwait
+          <para>Waits for a process to finish before executing.</para>
+@y
+          <para>
+          実行前にプロセスの完了を待ちます。
           </para>
 @z
 
