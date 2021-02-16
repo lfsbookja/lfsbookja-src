@@ -134,9 +134,9 @@
 @z
 
 @x libffi
-          <para>contains the libffi API functions.</para>
+          <para>contains the foreign function interface API functions</para>
 @y
           <para>
-          libffi の API 関数を提供します。
+          外部関数インターフェース API 関数を提供します。
           </para>
 @z

@@ -22,13 +22,20 @@
 @z
 
 @x
-    <note><para>This package extracts to the directory procps-3.3.17/, 
-       not the expected procps-ng-3.3.17/.</para></note>
+    <note>
+      <para>This package extracts to the directory
+      <filename class="directory">procps-3.3.17</filename>, 
+      not the expected
+      <filename class="directory">procps-ng-3.3.17</filename>.</para>
+    </note>
 @y
-    <note><para>
-      本パッケージのソースは procps-3.3.17/ ディレクトリへ伸長（解凍）されます。
-      procps-ng-3.3.17/ ではないので注意してください。
-    </para></note>
+    <note>
+      <para>
+      本パッケージのソースは <filename
+      class="directory">procps-3.3.17</filename> ディレクトリへ伸長（解凍）されます。
+      <filename class="directory">procps-ng-3.3.17</filename> ではないので注意してください。
+      </para>
+    </note>
 @z
 
 @x
@@ -79,8 +86,8 @@
 @z
 
 @x
-    <para>Four tests related to pkill are known ot fail due to a problem
-          with tests that were not updated.</para>
+    <para>Four tests related to pkill are known to fail due to a problem
+    with tests that were not updated.</para>
 @y
     <para>
     pkill に関連するテストが 4 つ失敗します。
@@ -95,12 +102,12 @@
 @z
 
 @x
-<para>Finally, move essential libraries to a location that can be found if
-<filename class="directory">/usr</filename> is not mounted.</para>
+    <para>Finally, move essential libraries to a location that can be found
+    if <filename class="directory">/usr</filename> is not mounted.</para>
 @y
-<para>
-<filename class="directory">/usr</filename> がマウントされていない場合でも重要なライブラリが識別されるように、それらの収容ディレクトリを移動させます。
-</para>
+    <para>
+    <filename class="directory">/usr</filename> がマウントされていない場合でも重要なライブラリが識別されるように、それらの収容ディレクトリを移動させます。
+    </para>
 @z
 
 @x

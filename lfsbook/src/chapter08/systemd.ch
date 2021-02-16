@@ -421,7 +421,7 @@
           <para>Is the first process to be started when the kernel has initialized
           the hardware which takes over the boot process and starts all 
           processes according to its configuration files. In this case, it starts
-          systemd.</para>
+          systemd</para>
 @y
           <para>
           カーネルがハードウェアを初期化する際に起動される最初のプロセスであり、この後の起動処理を担い、設定ファイルに応じたブートプロセスと他の全てのプロセスを起動します。つまり systemd を起動するということです。
@@ -438,7 +438,7 @@
 
 @x kernel-install
           <para>Is used to add and remove kernel and initramfs images to and
-          from /boot. In LFS, this is done manually.</para>
+          from /boot. In LFS, this is done manually</para>
 @y
           <para>
           カーネルや initramfs イメージを /boot ディレクトリに対して追加、削除します。
@@ -520,7 +520,7 @@
 @x resolvectl
           <para>Sends control commands to the network name resolution
           manager, or resolves domain names, IPv4 and IPv6 addresses,
-          DNS records, and services.</para>
+          DNS records, and services</para>
 @y
           <para>
           ネットワーク名前解決マネージャーに対して制御コマンドを送信します。
@@ -577,7 +577,7 @@
 
 @x systemd-cat
           <para>Is used to connect the STDOUT and STDERR outputs of a process
-          with the systemd journal.
+          with the systemd journal
           </para>
 @y
           <para>
@@ -616,7 +616,7 @@
 
 @x systemd-detect-virt
           <para>Detects whether the system is being run in a virtual
-          environment, and adjusts udev accordingly.</para>
+          environment, and adjusts udev accordingly</para>
 @y
           <para>
           システムが仮想化環境で動作しているかどうかを検出し、それに応じて udev を調整します。
@@ -624,7 +624,7 @@
 @z
 
 @x systemd-dissect
-          <para>Is used to inspect OS disk images.</para>
+          <para>Is used to inspect OS disk images</para>
 @y
           <para>
           OS ディスクイメージの調査に用いられます。
@@ -659,7 +659,7 @@
 @x systemd-inhibit
           <para>Is used to execute a program with a shutdown, sleep or idle
           inhibitor lock taken, preventing an action such as a system shutdown
-          until the process is completed.</para>
+          until the process is completed</para>
 @y
           <para>
           システム停止、休止、アイドル禁止ロックを行うプログラムを実行します。
@@ -679,7 +679,7 @@
 @z
 
 @x systemd-mount
-          <para>Is used to temporarily mount or automount disks.</para>
+          <para>Is used to temporarily mount or automount disks</para>
 @y
           <para>
           ディスクの一時的あるいは自動マウントを行ないます。
@@ -714,7 +714,7 @@
 
 @x systemd-repart
           <para>Is used to grow and add partitions to a partition table when
-          systemd is used in an OS image (e.g. a container).</para>
+          systemd is used in an OS image (e.g. a container)</para>
 @y
           <para>
           systemd が OS イメージ内（たとえばコンテナーなど）で用いられている場合に、パーティションテーブルに対してパーティションの拡張や追加を行うために用いられます。
@@ -733,7 +733,7 @@
 @x systemd-run
           <para>Is used to create and start a transient .service or a .scope
           unit and run the specified command in it. This is useful for
-          validating systemd units.</para>
+          validating systemd units</para>
 @y
           <para>
           一時的な .service ユニットや .scope ユニットを生成および起動し、その指定コマンドを実行します。
@@ -743,7 +743,7 @@
 
 @x systemd-socket-activate
           <para>Is used to listen on socket devices and launch a process upon
-          a successful connection to the socket.</para>
+          a successful connection to the socket</para>
 @y
           <para>
           ソケットデバイスの情報を読み取って、ソケットに対するコネクション上にてプロセスを起動します。

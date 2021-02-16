@@ -132,7 +132,7 @@
 @z
 
 @x ninja
-          <para>is the Ninja build system.</para>
+          <para>is the Ninja build system</para>
 @y
           <para>
           Ninja ビルドシステム。

@@ -185,7 +185,7 @@
             is a <application>Python</application> program that reads
             <application>Python 2.x</application> source code and applies a
             series of fixes to transform it into 
-            valid <application>Python 3.x</application> code.
+            valid <application>Python 3.x</application> code
 @y
             <application>Python 2.x</application> のソースコードを読み込み、種々の変更を行って <application>Python 3.x</application> 用の適正なソースコードに変換するための <application>Python</application> プログラムです
 @z
@@ -194,7 +194,7 @@
             is a wrapper script that opens a <application>Python</application>
             aware GUI editor. For this script to run, you must have installed
             <application>Tk</application> before Python so that the Tkinter
-            Python module is built.
+            Python module is built
 @y
             <application>Python</application> に特化した GUI エディターを起動するラッパースクリプト。
             このスクリプトを実行するには、Python より前に <application>Tk</application> をインストールして、Python モジュールである Tkinter をビルドしておく必要があります。
@@ -202,21 +202,21 @@
 
 @x pip3
             The package installer for Python. You can use pip to install
-            packages from Python Package Index and other indexes.
+            packages from Python Package Index and other indexes
 @y
             Python のパッケージインストーラー。
             この pip を使って Python Package Index などのインデックスサイトから各種パッケージをインストールできます。
 @z
 
 @x pydoc3
-            is the <application>Python</application> documentation tool.
+            is the <application>Python</application> documentation tool
 @y
             <application>Python</application> ドキュメントツール。
 @z
 
 @x python3
             is an interpreted, interactive, object-oriented programming
-            language.
+            language
 @y
             インタープリターであり、対話的なオブジェクト指向プログラミング言語。
 @z

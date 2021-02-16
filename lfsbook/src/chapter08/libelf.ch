@@ -104,16 +104,30 @@
 
 @x
         <seg>
-          libelf.so
+          libelf.so (symlink) and libelf-&elfutils-version;.so
         </seg>
         <seg>
           /usr/include/elfutils
         </seg>
 @y
         <seg>
-          libelf.so
+          libelf.so (シンボリックリンク), libelf-&elfutils-version;.so
         </seg>
         <seg>
           /usr/include/elfutils
         </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x
+          <para>Contains API functions to handle ELF object files</para>
+@y
+          <para>
+          ELF オブジェクトファイルを取り扱うための API 関数を提供します。
+          </para>
 @z

@@ -115,7 +115,7 @@
 @z
 
 @x
-<para>One test, m_rootdir_acl, is knowm to fail.</para>
+<para>One test, m_rootdir_acl, is known to fail.</para>
 @y
 <para>
 m_rootdir_acl というテストが 1 つだけ失敗します。

@@ -139,7 +139,7 @@
 
 @x c_rehash
             is a <application>Perl</application> script that scans all files in
-            a directory and adds symbolic links to their hash values.
+            a directory and adds symbolic links to their hash values
 @y
             ディレクトリ内のすべてのファイルをスキャンする <application>Perl</application> スクリプト。
             それらのファイルに対するハッシュ値へのシンボリックリンクを生成します。
@@ -149,7 +149,7 @@
             is a command-line tool for using the various cryptography functions
             of <application>OpenSSL</application>'s crypto library from the
             shell. It can be used for various functions which are documented in
-            <command>man 1 openssl</command>.
+            <command>man 1 openssl</command>
 @y
             <application>OpenSSL</application> の暗号化ライブラリが提供するさまざまな関数を、シェルから利用するためのコマンドラインツール。
             <command>man 1 openssl</command> に示される数多くの関数を利用することができます。
@@ -162,7 +162,7 @@
             TLS and S/MIME, and they have also been used to implement
             <application>OpenSSH</application>,
             <application>OpenPGP</application>, and other cryptographic
-            standards.
+            standards
 @y
             各種のインターネット標準にて採用されている暗号化アルゴリズムを幅広く実装しています。
             このライブラリが提供する機能は、SSL、TLS、S/MIME を実装する <application>OpenSSL</application> において利用されており、また
@@ -172,7 +172,7 @@
 @x libssl.so
             implements the Transport Layer Security (TLS v1) protocol.
             It provides a rich API, documentation
-            on which can be found by running <command>man 3 ssl</command>.
+            on which can be found by running <command>man 3 ssl</command>
 @y
             トランスポート層セキュリティ（Transport Layer Security; TLFS v1）プロトコルを実装しています。
             これは豊富な API 関数とそのドキュメントを提供します。

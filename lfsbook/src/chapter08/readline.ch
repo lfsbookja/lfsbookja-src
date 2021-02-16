@@ -155,7 +155,7 @@
 
 @x
           <para>Provides a set of commands for manipulating text entered in an
-          interactive session of a program.</para>
+          interactive session of a program</para>
 @y
           <para>
           プログラムの対話セッションから入力されるテキストを処理するための一連のコマンドを提供します。
