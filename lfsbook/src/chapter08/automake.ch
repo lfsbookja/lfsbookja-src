@@ -59,10 +59,11 @@
 @z
 
 @x
-    <para>The test t/subobj.sh is known to fail in the LFS environment.</para>
+    <para>The tests t/subobj.sh, t/deprecated-acinit.sh, and t/init.sh are known to 
+    fail in the LFS environment.</para>
 @y
     <para>
-    t/subobj.sh テストは LFS の chroot 環境においては失敗します。
+    t/subobj.sh、t/deprecated-acinit.sh、t/init.sh というテストが LFS の chroot 環境においては失敗します。
     </para>
 @z
 

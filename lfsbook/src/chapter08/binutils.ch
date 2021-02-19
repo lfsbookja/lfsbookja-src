@@ -186,11 +186,11 @@
 @z
 
 @x
-    <para>Several tests named <quote>Run property ...</quote> are known to
+    <para>Four tests named <quote>Run property ...</quote> are known to
     fail.</para>
 @y
     <para>
-    <quote>Run property ...</quote>と名づけられているテストがいくつか失敗します。
+    <quote>Run property ...</quote>と名づけられている 4 つのテストが失敗します。
     </para>
 @z
 

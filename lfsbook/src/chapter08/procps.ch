@@ -86,11 +86,11 @@
 @z
 
 @x
-    <para>Four tests related to pkill are known to fail due to a problem
+    <para>Five tests related to pkill are known to fail due to a problem
     with tests that were not updated.</para>
 @y
     <para>
-    pkill に関連するテストが 4 つ失敗します。
+    pkill に関連するテストが 5 つ失敗します。
     これはテストが更新されていないために発生します。
     </para>
 @z

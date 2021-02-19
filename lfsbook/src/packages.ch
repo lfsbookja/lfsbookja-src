@@ -26,9 +26,9 @@
 @z
 
 @x
-<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 9.6 SBU with tests)">
+<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 9.1 SBU with tests)">
 @y
-<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 9.6 SBU)">
+<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 9.1 SBU)">
 @z
 
 @x
@@ -38,9 +38,9 @@
 @z
 
 @x
-<!ENTITY check-fin-sbu "0.1 SBU (about 4.3 SBU with tests)">
+<!ENTITY check-fin-sbu "0.1 SBU (about 4.2 SBU with tests)">
 @y
-<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 4.3 SBU)">
+<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 4.2 SBU)">
 @z
 
 @x
@@ -50,15 +50,15 @@
 @z
 
 @x
-<!ENTITY e2fsprogs-fin-sbu "4.4 SBU on a spinning disk, 1.7 SBU on an SSD">
+<!ENTITY e2fsprogs-fin-sbu "4.4 SBU on a spinning disk, 1.5 SBU on an SSD">
 @y
-<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 4.4 SBU、SSD で 1.7 SBU">
+<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 4.4 SBU、SSD で 1.5 SBU">
 @z
 
 @x
-<!ENTITY gcc-fin-sbu "102 SBU (with tests)">
+<!ENTITY gcc-fin-sbu "95 SBU (with tests)">
 @y
-<!ENTITY gcc-fin-sbu "102 SBU (テスト込み)">
+<!ENTITY gcc-fin-sbu "95 SBU (テスト込み)">
 @z
 
 @x
