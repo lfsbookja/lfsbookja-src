@@ -26,6 +26,14 @@
 @z
 
 @x
+    <para>First, fix an issue introduced by binutils-2.36:</para>
+@y
+    <para>
+    はじめに binutils-2.36 によって発生する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare GRUB for compilation:</para>
 @y
     <para>&PreparePackage1;GRUB&PreparePackage2;</para>

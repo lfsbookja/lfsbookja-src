@@ -54,6 +54,71 @@
 @z
 
 @x
+      <para>2021-02-20</para>
+        <listitem>
+          <para>[pierre] - Fix grub to prevent generation of a huge binary
+          blob for lzma compression. Reported on the lfs-support mailing
+          list by Frans de Boer.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-02-20</para>
+        <listitem>
+          <para>[pierre] - grub において lzma 圧縮に対して大容量のバイナリデータを生成してしまう問題を修正。
+          lfs-support メーリングリストでの Frans de Boer 氏の報告による。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-02-18</para>
+        <listitem>
+          <para>[bdubbs] - Fix a glibc bug that causes issues with chrooted applications. Fixes
+          <ulink url="&lfs-ticket-root;4817">#4817</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.3.0. Fixes
+          <ulink url="&lfs-ticket-root;4819">#4819</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-1.1.1j. Fixes
+          <ulink url="&lfs-ticket-root;4816">#4816</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.57.0. Fixes
+          <ulink url="&lfs-ticket-root;4815">#4815</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.10.17. Fixes
+          <ulink url="&lfs-ticket-root;4807">#4807</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-02-18</para>
+        <listitem>
+          <para>[bdubbs] - chroot 環境下でのアプリケーションに支障をきたす glibc のバグを修正。
+          <ulink url="&lfs-ticket-root;4817">#4817</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4819">#4819</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-1.1.1j へのアップデート。
+          <ulink url="&lfs-ticket-root;4816">#4816</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.57.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4815">#4815</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.10.17 へのアップデート。
+          <ulink url="&lfs-ticket-root;4807">#4807</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-02-14</para>
         <listitem>
           <para>[renodr] - Add a command explanation for 'pwait'.</para>
