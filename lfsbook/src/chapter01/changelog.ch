@@ -56,6 +56,14 @@
 @x
       <para>2021-02-20</para>
         <listitem>
+          <para>[bdubbs] - Update to meson-0.57.1. Fixes
+          <ulink url="&lfs-ticket-root;4821">#4821</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.9.2. Fixes
+          <ulink url="&lfs-ticket-root;4820">#4820</ulink>.</para>
+        </listitem>
+        <listitem>
           <para>[pierre] - Fix grub to prevent generation of a huge binary
           blob for lzma compression. Reported on the lfs-support mailing
           list by Frans de Boer.</para>
@@ -64,7 +72,15 @@
 @y
       <para>2021-02-20</para>
         <listitem>
-          <para>[pierre] - grub において lzma 圧縮に対して大容量のバイナリデータを生成してしまう問題を修正。
+          <para>[bdubbs] - meson-0.57.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4821">#4821</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.9.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4820">#4820</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - grub の lzma 圧縮において大容量のバイナリデータを生成してしまう問題を修正。
           lfs-support メーリングリストでの Frans de Boer 氏の報告による。</para>
         </listitem>
       </itemizedlist>

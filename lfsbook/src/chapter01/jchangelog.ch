@@ -67,7 +67,8 @@
           <phrase revision="sysv">SVN-20210220</phrase>
           <phrase revision="systemd">20210220-systemd</phrase>,
           チェンジセット
-          <ulink url="&lfs-rev-root;12143">12143</ulink>
+          <ulink url="&lfs-rev-root;12143">12143</ulink>,
+          <ulink url="&lfs-rev-root;12144">12144</ulink>
           対応。
           </para>
         </listitem>
