@@ -129,28 +129,10 @@
 @z
 
 @x
-  <para>Then unmount the virtual file systems:</para>
+  <para>Unmount the LFS file system hierarchy:</para>
 @y
   <para>
-  仮想ファイルシステムをアンマウントします。
-  </para>
-@z
-
-@x
-  <para>If multiple partitions were created, unmount the other
-  partitions before unmounting the main one, like this:</para>
-@y
-  <para>
-  複数のパーティションを生成していた場合は、以下のようにして複数パーティションをアンマウントします。
-  メインのパーティションのアンマウントはその後に行います。
-  </para>
-@z
-
-@x
-  <para>Unmount the LFS file system itself:</para>
-@y
-  <para>
-  LFS ファイルシステムもアンマウントします。
+  LFS ファイルシステム階層をアンマウントします。
   </para>
 @z
 
