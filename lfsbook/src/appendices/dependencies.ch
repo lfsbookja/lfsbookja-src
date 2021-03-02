@@ -214,7 +214,7 @@
 %----------------------------------------------------------------------
 @x binutils
          <seg>Bash, Binutils, Coreutils, Diffutils, File, Flex, Gawk, GCC, Glibc,
-         Grep, Make, Perl, Sed, Texinfo and Zlib</seg>
+         Grep, Make, Perl, Sed, Texinfo, and Zlib</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, File, Flex, Gawk, GCC, Glibc,
          Grep, Make, Perl, Sed, Texinfo, Zlib</seg>

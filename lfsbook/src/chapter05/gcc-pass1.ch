@@ -14,6 +14,12 @@
 @z
 
 @x
+<sect1 id="ch-tools-gcc-pass1" role="wrap" xreflabel="gcc-pass1">
+@y
+<sect1 id="ch-tools-gcc-pass1" role="wrap" xreflabel="gcc 1 回め">
+@z
+
+@x
   <title>GCC-&gcc-version; - Pass 1</title>
 @y
   <title>GCC-&gcc-version; - 1回め</title>
