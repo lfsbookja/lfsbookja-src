@@ -38,10 +38,11 @@
 @z
 
 @x
-    <para>First, apply a patch to fix some regressions:</para>
+    <para>First, apply a patch to fix some regressions and fix functionality
+    with future versions of the kernel:</para>
 @y
     <para>
-    まずパッチを適用して、機能後退を修正します。
+    まずパッチを適用して機能後退を修正し、またカーネルの将来版にわたっての機能を修正します。
     </para>
 @z
 

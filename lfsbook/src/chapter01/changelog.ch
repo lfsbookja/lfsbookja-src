@@ -54,6 +54,41 @@
 @z
 
 @x
+      <para>2021-03-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Patch systemd-247 so that it will function with
+          Linux-5.11 API headers.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-03-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd-247 にパッチを適用し Linux-5.11 API ヘッダーに対して機能するように。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-03-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Fix a header file for python, so that
+          <command>#include &lt;python&python-minor;/Python.h&gt;</command>
+          works.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-03-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - python のヘッダーファイルを修正し <command>#include &lt;python&python-minor;/Python.h&gt;</command> が動作するように。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-03-01</para>
       <itemizedlist>
         <listitem>

@@ -31,6 +31,14 @@
 @z
 
 @x
+    <para>First, a header file needs to be fixed:</para>
+@y
+    <para>
+    まずはヘッダーファイルに必要な修正を行います。
+    </para>
+@z
+
+@x
     <para>Prepare Python for compilation:</para>
 @y
     <para>&PreparePackage1;Python&PreparePackage2;</para>
