@@ -149,7 +149,7 @@
           ultimately be located) is set to <filename
           class="directory">$(exec_prefix)/$(target_alias)</filename>. For
           example, x86_64 machines would expand that to <filename
-          class="directory">/usr/x86_64-unknown-linux-gnu</filename>. Because this is
+          class="directory">/usr/x86_64-pc-linux-gnu</filename>. Because this is
           a custom system, this target-specific directory in <filename
           class="directory">/usr</filename> is not required. <filename
           class="directory">$(exec_prefix)/$(target_alias)</filename> would be
@@ -161,7 +161,7 @@
           通常 tooldir (実行ファイルが最終的に配置されるディレクトリ) は <filename
           class="directory">$(exec_prefix)/$(target_alias)</filename> に設定されています。
           x86_64 マシンでは <filename
-          class="directory">/usr/x86_64-unknown-linux-gnu</filename> となります。
+          class="directory">/usr/x86_64-pc-linux-gnu</filename> となります。
           LFS は自分で設定を定めていくシステムですから <filename
           class="directory">/usr</filename> ディレクトリ配下に CPU ターゲットを特定するディレクトリを設ける必要がありません。
           <filename class="directory">$(exec_prefix)/$(target_alias)</filename> というディレクトリ構成は、クロスコンパイル環境において必要となるものです。

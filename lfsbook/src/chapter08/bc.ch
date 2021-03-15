@@ -41,7 +41,7 @@
 @z
 
 @x CC=gcc
-          <para>These parameters specify the compiler to use.</para>
+          <para>This parameter specifies the compiler to use.</para>
 @y
           <para>
           このパラメーターはコンパイラーを指定します。

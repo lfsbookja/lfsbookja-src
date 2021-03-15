@@ -47,20 +47,6 @@
 @z
 
 @x
-    <para>Create a symlink to work around the xsltproc command not being installed:</para>
-@y
-    <para>
-    xlstproc がインストールされていなくてもビルドができるように、シンボリックリンクを生成します。
-    </para>
-@z
-
-@x
-    <para>Set up the man pages:</para>
-@y
-    <para>man ページの準備をします。</para>
-@z
-
-@x
     <para>Remove tests that cannot be built in chroot:</para>
 @y
     <para>
@@ -90,19 +76,6 @@
 @y
       <title>&MeaningOfOption1;meson&MeaningOfOption2;</title>
 @z
-
-%@x -Dc_args=-Wno-format-overflow
-%          <para>The defaults flags passed to gcc contain
-%          <parameter>-Werror=format-overflow</parameter>, which generates
-%	  an error with GCC 10. Passing this parameter prevents the error
-%	  from occuring.</para>
-%@y
-%          <para>
-%          gcc においてデフォルトで与えたフラグの中に <parameter>-Werror=format-overflow</parameter> があります。
-%          これは GCC 10 においてはエラーを発生させます。
-%          本パラメーターを指定することで、そのエラー発生を回避します。
-%          </para>
-%@z
 
 @x -D*-path=*
           <para>These switches provide the location of binaries needed by
@@ -207,6 +180,17 @@
           </para>
 @z
 
+@x -Dman=false
+          <para>Prevent the generation of man pages to avoid extra
+          dependencies.  We will install pre-generated man pages for systemd
+          from a tarball later.</para>
+@y
+          <para>
+          man ページを生成することで発生する追加パッケージの導入を行わないようにします。
+          systemd の man ページは、後ほど生成済みの tarball を使ってインストールすることにします。
+          </para>
+@z
+
 @x -Dmode=release
           <para>Disable some features considered experimental by upstream.
 @y
@@ -227,10 +211,10 @@
 @z
 
 @x
-    <para>Remove an unnecessary symbolic link:</para>
+    <para>Install the man pages:</para>
 @y
     <para>
-    不要なシンボリックリンクを削除します。
+    man ページをインストールします。
     </para>
 @z
 

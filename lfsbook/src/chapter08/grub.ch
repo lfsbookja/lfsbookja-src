@@ -26,14 +26,6 @@
 @z
 
 @x
-    <para>First, fix an issue introduced by binutils-2.36:</para>
-@y
-    <para>
-    はじめに binutils-2.36 によって発生する問題を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare GRUB for compilation:</para>
 @y
     <para>&PreparePackage1;GRUB&PreparePackage2;</para>
@@ -70,9 +62,15 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>The test suite for this packages is not recommended.  Most of
+    the tests depend on packages that are not available in the limited
+    LFS environment. To run the tests anyway, run <command>make check</command>.</para>
 @y
-    <para>&NotExistTestsuite;</para>
+    <para>
+    本パッケージのテストスイートの利用はお勧めできません。
+    テストのほとんどが、限定されている今の LFS 環境内では利用できないパッケージに依存しています。
+    それでもテストを行うのであれば、<command>make check</command> を実行します。
+    </para>
 @z
 
 @x

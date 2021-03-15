@@ -233,17 +233,17 @@
 @z
 
 @x
-      <note><para>If using another means to configure your network
-      interfaces (ex: ppp, network-manager, etc.), or if using any type of
-      local resolver (ex: bind, dnsmasq, unbound, etc.), or any other software 
-      that generates an <filename>/etc/resolv.conf</filename> (ex: resolvconf),
-      the <command>systemd-resolved</command> service should not be
-      used.</para></note>
+      <note><para>If using methods incompatible with systemd-resolved to
+      configure your network interfaces (ex: ppp, etc.), or if using any
+      type of local resolver (ex: bind, dnsmasq, unbound, etc.),
+      or any other software that generates an <filename>/etc/resolv.conf</filename>
+      (ex: a <command>resolvconf</command> program other than the one
+      provided by systemd), the <command>systemd-resolved</command> service
+      should not be used.</para></note>
 @y
       <note><para>
-      ネットワークインターフェース設定を別の方法 (例えば ppp や network-manager など) で行う場合、
-      またはローカルリゾルバー (local resolver; 例えば bind や dnsmasq や unbound など) や <filename>/etc/resolv.conf</filename> を生成するソフトウェア (例えば resolvconf) などを用いる場合、
-      <command>systemd-resolved</command> サービスは用いてはなりません。
+      ネットワークインターフェース設定を systemd-resolved とは別の方法 (例えば ppp など) で行う場合、
+      または別のタイプのローカルリゾルバー (local resolver; たとえば bind や dnsmasq や unbound など) や <filename>/etc/resolv.conf</filename> を生成するソフトウェア (つまり systemd が提供するものでない <command>resolvconf</command> プログラム) などを用いる場合、<command>systemd-resolved</command> サービスは用いてはなりません。
       </para></note>
 @z
 

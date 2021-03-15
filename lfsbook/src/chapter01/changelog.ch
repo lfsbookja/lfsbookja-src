@@ -54,6 +54,129 @@
 @z
 
 @x
+      <para>2021-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.2604. Addreses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20210304. Addreses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zstd-1.4.9. Fixes
+          <ulink url="&lfs-ticket-root;4827">#4827</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to sysvinit-2.99. Fixes
+          <ulink url="&lfs-ticket-root;4822">#4822</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.11.6. Fixes
+          <ulink url="&lfs-ticket-root;4824">#4824</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.49. Fixes
+          <ulink url="&lfs-ticket-root;4831">#4831</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.11.0. Fixes
+          <ulink url="&lfs-ticket-root;4823">#4823</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.46.2. Fixes
+          <ulink url="&lfs-ticket-root;4826">#4826</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.7.6. Fixes
+          <ulink url="&lfs-ticket-root;4828">#4828</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-3.3.3. Fixes
+          <ulink url="&lfs-ticket-root;4825">#4825</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to attr-2.5.0. Fixes
+          <ulink url="&lfs-ticket-root;4830">#4830</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to acl-2.3.0. Fixes
+          <ulink url="&lfs-ticket-root;4829">#4829</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.2604 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20210304 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - zstd-1.4.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4827">#4827</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - sysvinit-2.99 へのアップデート。
+          <ulink url="&lfs-ticket-root;4822">#4822</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.11.6. Fixes
+          <ulink url="&lfs-ticket-root;4824">#4824</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.49 へのアップデート。
+          <ulink url="&lfs-ticket-root;4831">#4831</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.11.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4823">#4823</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.46.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4826">#4826</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.7.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;4828">#4828</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-3.3.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4825">#4825</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - attr-2.5.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4830">#4830</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - acl-2.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4829">#4829</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-03-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Simplify the installation of systemd man pages.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-03-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - systemd の man ページインストールを単純化。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-03-04</para>
       <itemizedlist>
         <listitem>

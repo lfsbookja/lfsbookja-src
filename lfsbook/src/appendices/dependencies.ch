@@ -775,9 +775,9 @@
           <seg>Man-DB, Perl</seg>
 @z
 @x
-          <seg>Ghostscript</seg>
+          <seg>Ghostscript and uchardet</seg>
 @y
-          <seg>Ghostscript</seg>
+          <seg>Ghostscript, uchardet</seg>
 @z
 
 %----------------------------------------------------------------------

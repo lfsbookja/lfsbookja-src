@@ -262,6 +262,16 @@ autoconf-2.70 に含まれている gnulib .m4 ファイルの問題を修正し
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+@x [
+          <para>Is an actual command, /usr/bin/[, that is a synonym
+          for the <command>test</command> command</para>
+@y
+          <para>
+          実際のコマンドは /usr/bin/[ であり、これは <command>test</command> コマンドへのシンボリックリンクです。
+          </para>
+@z
+
+
 @x base32
           <para>Encodes and decodes data according to the base32 specification
           (RFC 4648)</para>
