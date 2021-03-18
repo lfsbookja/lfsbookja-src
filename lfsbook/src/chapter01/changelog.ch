@@ -54,6 +54,24 @@
 @z
 
 @x
+      <para>2021-03-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Use <option>-j1</option> for Binutils
+		  installation.  Thanks report from Hans Meier.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-03-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - binutils インストールで <option>-j1</option> を利用。
+		  Hans Meier の報告に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-03-15</para>
       <itemizedlist>
         <listitem>
