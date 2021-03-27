@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 
@@ -23,14 +23,16 @@
 @x
   <para>The first task performed in the LFS partition is to create a limited
   directory hierarchy so that programs compiled in <xref
-  linkend="chapter-temporary-tools"/> may be installed in their final
+  linkend="chapter-temporary-tools"/> (as well as glibc and libstdc++ in <xref
+  linkend="chapter-cross-tools"/>) may be installed in their final
   location. This is needed so that those temporary programs be overwritten
   when rebuilding them in <xref linkend="chapter-building-system"/>.</para>
 @y
   <para>
   LFS パーティションに対して行う最初の作業は、限定的なディレクトリ階層を作り出すことです。
-  <xref linkend="chapter-temporary-tools"/> においてビルドするプログラムを、最終的なディレクトリにインストールするためです。
-  <xref linkend="chapter-building-system"/>にある一時的なプログラムを、再構築して上書きしていくために必要となります。
+  <xref linkend="chapter-temporary-tools"/>（また glibc や libstdc++ においては <xref
+  linkend="chapter-cross-tools"/>）においてビルドするプログラムを、最終的なディレクトリにインストールするためです。
+  <xref linkend="chapter-building-system"/> にある一時的なプログラムを、再構築して上書きしていくために必要となります。
   </para>
 @z
 

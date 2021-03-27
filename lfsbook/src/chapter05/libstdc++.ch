@@ -83,8 +83,9 @@
 @z
 
 @x --host=...
-          <para>Specifies the use the cross compiler we have just built
-          instead of the one in <filename>/usr/bin</filename>.</para>
+          <para>Specifies that the cross compiler we have just built
+          should be used instead of the one in
+          <filename>/usr/bin</filename>.</para>
 @y
           <para>
           利用するクロスコンパイラーを指示するものであり、<filename>/usr/bin</filename> にあるものではなく、まさに先ほど作り出したものを指定するものです。
