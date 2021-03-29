@@ -504,9 +504,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+            <ulink url="&blfs-root;/view/stable/general/libseccomp.html">Libseccomp</ulink>
 @y
-          <seg>なし</seg>
+            <ulink url="&blfs-root;/view/stable/general/libseccomp.html">Libseccomp</ulink>
 @z
 
 %----------------------------------------------------------------------

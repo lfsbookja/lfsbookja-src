@@ -185,22 +185,6 @@
         <para>&Download;: <ulink url="&file-url;"/></para>
 @z
 
-@x
-          <para>File (&file-version;) may no longer be available at the
-          listed location. The site administrators of the master download
-          location occasionally remove older versions when new ones are
-          released. An alternative download location that may have the correct
-          version available can also be found at: <ulink
-          url="http://www.linuxfromscratch.org/lfs/download.html#ftp"/>.</para>
-@y
-          <para>
-          File パッケージ (&file-version;) は上記の場所から入手できなくなっているかもしれません。
-          これはサイト管理者が、新バージョンのリリースと同時に古いバージョンを削除することがあるためです。
-          適切なバージョンを&Download;するためには、以下に示す別のサイトを参照してください。
-          <ulink url="http://www.linuxfromscratch.org/lfs/download.html#ftp"/>
-          </para>
-@z
-
 @x findutils
         <para>Home page: <ulink url="&findutils-home;"/></para>
         <para>Download: <ulink url="&findutils-url;"/></para>

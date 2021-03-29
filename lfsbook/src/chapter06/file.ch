@@ -73,22 +73,19 @@
     <para>&CompileThePackage;</para>
 @z
 
-%@x
-%    <para>Compilation is now complete. As discussed earlier, running the test
-%    suite is not mandatory for the temporary tools here in this chapter. To run
-%    the File test suite anyway, issue the following command:</para>
-%@y
-%    <para>
-%    コンパイルが終了しました。
-%    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
-%    しかしテストスイートを実行するなら、以下を実行します。
-%    </para>
-%@z
-
 @x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>Move a shared library into its final location in the LFS system,
+    and recreate the symlink for it:</para>
+@y
+    <para>
+    共有ライブラリを 最終の LFS システムにおけるディレクトリに移動させて、これに対するシンボリックリンクを再生成します。
+    </para>
 @z
 
 @x
