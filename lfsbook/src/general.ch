@@ -24,8 +24,8 @@
 <!ENTITY releasedate     "March 26th, 2021">
 @y
 <!ENTITY releasedate     "2021/03/26">
-<!ENTITY jversion        "20210327">
-<!ENTITY jversiond       "20210327">
+<!ENTITY jversion        "20210415">
+<!ENTITY jversiond       "20210415">
 <!ENTITY dir-jversion    "svn-ja">
 <!ENTITY dir-jversiond   "svn-sysdja">
 @z
@@ -56,6 +56,7 @@
 <!ENTITY lfs-ticket-root "http://wiki.linuxfromscratch.org/lfs/ticket/">
 @y
 <!ENTITY lfs-ticket-root "http://wiki.linuxfromscratch.org/lfs/ticket/">
+<!ENTITY lfs-ticket-rootja "https://osdn.net/projects/lfsbookja/ticket/">
 <!ENTITY lfs-rev-root    "http://wiki.linuxfromscratch.org/lfs/changeset/">
 @z
 

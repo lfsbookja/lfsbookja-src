@@ -60,6 +60,17 @@
 -->
 
    <listitem>
+      <para>2021-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          typo 修正。チケット <ulink url="&lfs-ticket-rootja;42003">42003</ulink> 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2021-03-29</para>
       <itemizedlist>
         <listitem>
