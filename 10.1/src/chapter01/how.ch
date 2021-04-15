@@ -150,7 +150,7 @@
   "chroot" environment and uses the previously built tools to build
   the additional tools needed to build and test the final system.</para>
 @y
-  <para><xref linkend="chapter-chroot-temporary-tools"/>では "chroo" 環境に入ります。
+  <para><xref linkend="chapter-chroot-temporary-tools"/>では "chroot" 環境に入ります。
   そして今作り上げたビルドツールを使って、最終的なシステムをビルドしテストするために必要となる残りのツールをビルドします。</para>
 @z
 
