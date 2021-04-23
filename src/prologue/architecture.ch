@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -85,7 +81,7 @@ This is not directly supported in LFS because it would interfere with the
 educational objective of providing the instructions needed for a
 straightforward base Linux system. Some LFS/BLFS editors maintain a fork
 of LFS for multilib, which is accessible at <ulink
-url="http://www.linuxfromscratch.org/~thomas/multilib/index.html"/>. But it
+url="https://www.linuxfromscratch.org/~thomas/multilib/index.html"/>. But it
 is an advanced topic.</para>
 @y
 <para>
@@ -97,7 +93,7 @@ LFS の手順に従って作り出す 64 ビットシステムは、<quote>純�
 この理由は、素直な Linux ベースシステムを構築するという LFS の教育的な目的とは合致しないからです。
 LFS/BLFS 編集者の中に、マルチライブラリを行う LFS フォークを構築している方もいます。
 これは <ulink
-url="http://www.linuxfromscratch.org/~thomas/multilib/index.html"/> からアクセスすることができます。
+url="https://www.linuxfromscratch.org/~thomas/multilib/index.html"/> からアクセスすることができます。
 ただしこれは応用的なトピックです。
 </para>
 @z

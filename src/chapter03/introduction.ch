@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -127,11 +123,11 @@
 @x
       <para>For stable versions of the book, a tarball of all the needed files 
       can be downloaded from one of the LFS files mirrors listed at
-      <ulink url="http://www.linuxfromscratch.org/mirrors.html#files"/>.</para>
+      <ulink url="https://www.linuxfromscratch.org/mirrors.html#files"/>.</para>
 @y
       <para>
       本書の安定版であれば、それに対して必要となるファイルを集めた tarball が、<ulink
-      url="http://www.linuxfromscratch.org/mirrors.html#files"/> に示す LFS ミラーサイトからダウンロードできます。
+      url="https://www.linuxfromscratch.org/mirrors.html#files"/> に示す LFS ミラーサイトからダウンロードできます。
       </para>
 @z
 

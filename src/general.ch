@@ -31,9 +31,9 @@
 @z
 
 @x
-<!ENTITY lfs-root        "https://rivendell.linuxfromscratch.org/">
+<!ENTITY lfs-root        "https://www.linuxfromscratch.org/">
 @y
-<!ENTITY lfs-root        "https://rivendell.linuxfromscratch.org/">
+<!ENTITY lfs-root        "https://www.linuxfromscratch.org/">
 <!ENTITY lfs-rootja      "http://lfsbookja.osdn.jp/">
 @z
 
@@ -53,11 +53,11 @@
 %@z
 
 @x
-<!ENTITY lfs-ticket-root "http://wiki.linuxfromscratch.org/lfs/ticket/">
+<!ENTITY lfs-ticket-root "https://wiki.linuxfromscratch.org/lfs/ticket/">
 @y
-<!ENTITY lfs-ticket-root "http://wiki.linuxfromscratch.org/lfs/ticket/">
+<!ENTITY lfs-ticket-root "https://wiki.linuxfromscratch.org/lfs/ticket/">
 <!ENTITY lfs-ticket-rootja "https://osdn.net/projects/lfsbookja/ticket/">
-<!ENTITY lfs-rev-root    "http://wiki.linuxfromscratch.org/lfs/changeset/">
+<!ENTITY lfs-rev-root    "https://wiki.linuxfromscratch.org/lfs/changeset/">
 @z
 
 @x
