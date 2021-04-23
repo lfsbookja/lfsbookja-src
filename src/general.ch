@@ -26,8 +26,8 @@
 -->
 <!ENTITY jversion        "20210423">
 <!ENTITY jversiond       "20210423">
-<!ENTITY dir-jversion    "svn-ja">
-<!ENTITY dir-jversiond   "svn-sysdja">
+<!ENTITY dir-jversion    "git-ja">
+<!ENTITY dir-jversiond   "git-sysdja">
 @z
 
 @x

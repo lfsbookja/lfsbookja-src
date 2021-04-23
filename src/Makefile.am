@@ -1,10 +1,6 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 SUBDIRS=appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
 	chapter06 chapter07 chapter08 chapter09 chapter10 chapter11 \
 	part3intro prologue stylesheets udev-lfs
@@ -26,7 +22,7 @@ CHUNK_QUIET = 1
 NOCHUNKS_NAME = @NOCHUNKS_NAME@
 NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 PDF_OUTPUT = @PDF_OUTPUT@
-URLTOP = http\:\/\/lfsbookja.osdn.jp\/svn-ja
+URLTOP = http\:\/\/lfsbookja.osdn.jp\/git-ja
 
 #ALLXML := $(filter-out $(RENDERTMP)/%, \
 #	$(wildcard ./*.xml ./*/*.xml))

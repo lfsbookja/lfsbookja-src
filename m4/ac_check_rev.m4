@@ -14,7 +14,7 @@ if test "x${with_rev}" != "x"; then
 fi
 AC_SUBST(revspec)
 
-VER=svn
+VER=git
 if test "x${with_rev}" = "xsystemd"; then
   BASEDIR=../${VER}-sysdja
   PDF_OUTPUT=../lfssysdja-${VER}.pdf
