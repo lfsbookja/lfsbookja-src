@@ -50,6 +50,80 @@
 @z
 
 @x
+      <para>2021-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.2812. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20210407. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.9.4. Fixes
+          <ulink url="&lfs-ticket-root;4843">#4843</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.57.2. Fixes
+          <ulink url="&lfs-ticket-root;4846">#4846</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.11.16. Addresses
+          <ulink url="&lfs-ticket-root;4840">#4840</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-581. Fixes
+          <ulink url="&lfs-ticket-root;4849">#4849</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.40. Fixes
+          <ulink url="&lfs-ticket-root;4839">#4839</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-4.0.1. Fixes
+          <ulink url="&lfs-ticket-root;4845">#4845</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.2812 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20210407 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python3-3.9.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4843">#4843</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.57.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4846">#4846</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.11.16 へのアップデート。
+          <ulink url="&lfs-ticket-root;4840">#4840</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-581 へのアップデート。
+          <ulink url="&lfs-ticket-root;4849">#4849</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.40 へのアップデート。
+          <ulink url="&lfs-ticket-root;4839">#4839</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-4.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4845">#4845</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-04-22</para>
       <itemizedlist>
         <listitem>

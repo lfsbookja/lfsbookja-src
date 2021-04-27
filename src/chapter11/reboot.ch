@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -49,6 +45,19 @@
     <listitem><para>
     <ulink
     url='&blfs-book;basicnet/lynx.html'>Lynx</ulink> のようなテキストブラウザーをインストールしておけば、仮想端末からでも BLFS ブックを簡単に参照しながらパッケージビルド作業を進めることができます。
+    </para></listitem>
+@z
+
+@x
+    <listitem><para>The
+    <ulink url='&blfs-book;postlfs/make-ca.html'>make-ca</ulink> package
+    will allow you to set up local trusted anchor certificates, allowing
+    the system to verify SSL certificates provided by remote servers (for
+    example, a website using HTTPS).</para></listitem>
+@y
+    <listitem><para>
+    <ulink url='&blfs-book;postlfs/make-ca.html'>make-ca</ulink> パッケージをインストールしていると、ローカルにおいて信頼されるアンカー証明書を構築できます。
+    そうすればリモートサーバー（たとえば HTTPS を用いたウェブサイト）が提供する SSL 証明書をシステムが検証できます。
     </para></listitem>
 @z
 

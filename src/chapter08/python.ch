@@ -81,13 +81,13 @@
 
 @x
     <para>Some tests requiring a network connection or additional packages are
-    skipped. The test named test_normalization is known to fail. For
+    skipped. The tests test_unicodedata and test_curses tests are known to fail. For
     more comprehensive results, the tests can be rerun when Python 3 is 
     reinstalled in BLFS.</para>
 @y
     <para>
     ネットワーク接続や他の依存パッケージを必要とするテストは、省略される場合があります。
-    test_normalization というテストは失敗します。
+    test_unicodedata と test_curses のテストは失敗します。
     すべての結果を得るには BLFS において Python 3 を再インストールした後に、もう一度テストを実行してください。
     </para>
 @z

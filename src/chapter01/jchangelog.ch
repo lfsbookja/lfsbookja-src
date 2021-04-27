@@ -56,6 +56,17 @@
 -->
 
    <listitem>
+      <para>2021-04-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          GIT-20210426-gc461bd901 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2021-04-23</para>
       <itemizedlist>
         <listitem>
