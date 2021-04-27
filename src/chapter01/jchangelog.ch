@@ -60,7 +60,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          GIT-20210426-gc461bd901 対応。
+          GIT-20210426-g<ulink url="&lfs-changeset;c461bd901">c461bd901</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -71,7 +71,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          GIT-20210422-g9a178619b 対応。
+          GIT-20210422-g<ulink url="&lfs-changeset;9a178619b">9a178619b</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>

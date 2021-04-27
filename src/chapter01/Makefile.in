@@ -243,7 +243,7 @@ CHANGE_FILES = \
 COPY_FILES = \
 	jchangelog.ch
 
-EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES:.ch=.xml)
+EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
 cpys = $(COPY_FILES:.ch=.xml)
 DISTCLEANFILES = $(srcs)

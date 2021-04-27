@@ -1,10 +1,6 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir=@abs_bookdir@/chapter01
 CHANGE_FILES = \
 	askforhelp.ch \
@@ -16,7 +12,7 @@ CHANGE_FILES = \
 COPY_FILES = \
 	jchangelog.ch
 
-EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES:.ch=.xml)
+EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
 cpys = $(COPY_FILES:.ch=.xml)
