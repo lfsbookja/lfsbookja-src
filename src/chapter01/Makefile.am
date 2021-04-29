@@ -9,10 +9,8 @@ CHANGE_FILES = \
 	how.ch        \
 	resources.ch  \
 	whatsnew.ch
-COPY_FILES = \
-	jchangelog.ch
 
-EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES)
+EXTRA_DIST = $(CHANGE_FILES) jchangelog.ch
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
 cpys = $(COPY_FILES:.ch=.xml)
@@ -22,7 +20,7 @@ SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
-all: ctie $(srcs) $(cpys)
+all: ctie $(srcs) jchangelog.xml
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
@@ -30,5 +28,5 @@ ctie:
 -include Makefile.sub
 Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
 	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-$(cpys): $(srcdir)/$(@:.xml=.ch)
-	cp -p $(srcdir)/$(@:.xml=.ch) $@
+jchangelog.xml: $(srcdir)/jchangelog.ch
+	cp -p $(srcdir)/jchangelog.ch $@

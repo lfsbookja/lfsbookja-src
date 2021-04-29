@@ -240,10 +240,7 @@ CHANGE_FILES = \
 	resources.ch  \
 	whatsnew.ch
 
-COPY_FILES = \
-	jchangelog.ch
-
-EXTRA_DIST = $(CHANGE_FILES) $(COPY_FILES)
+EXTRA_DIST = $(CHANGE_FILES) jchangelog.ch
 srcs = $(CHANGE_FILES:.ch=.xml)
 cpys = $(COPY_FILES:.ch=.xml)
 DISTCLEANFILES = $(srcs)
@@ -440,7 +437,7 @@ uninstall-am:
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
-all: ctie $(srcs) $(cpys)
+all: ctie $(srcs) jchangelog.xml
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
@@ -448,8 +445,8 @@ ctie:
 -include Makefile.sub
 Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
 	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-$(cpys): $(srcdir)/$(@:.xml=.ch)
-	cp -p $(srcdir)/$(@:.xml=.ch) $@
+jchangelog.xml: $(srcdir)/jchangelog.ch
+	cp -p $(srcdir)/jchangelog.ch $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

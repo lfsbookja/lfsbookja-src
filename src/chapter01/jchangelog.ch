@@ -56,11 +56,22 @@
 -->
 
    <listitem>
+      <para>2021-04-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          GIT-20210428-g<ulink url="&lfs-changeset;99ee345ad">99ee345ad</ulink> までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2021-04-27</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          GIT-20210426-g<ulink url="&lfs-changeset;c461bd901">c461bd901</ulink> 対応。
+          GIT-20210426-g<ulink url="&lfs-changeset;c461bd901">c461bd901</ulink> までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -71,7 +82,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          GIT-20210422-g<ulink url="&lfs-changeset;9a178619b">9a178619b</ulink> 対応。
+          GIT-20210422-g<ulink url="&lfs-changeset;9a178619b">9a178619b</ulink> までの対応。
           </para>
         </listitem>
       </itemizedlist>

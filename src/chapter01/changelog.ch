@@ -50,6 +50,45 @@
 @z
 
 @x
+      <para>2021-04-28</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Fix building systemd with Linux-API-Headers 5.11.14
+          and higher, as well as with meson-0.57.2. Fixes
+          <ulink url="&lfs-ticket-root;4851">#4851</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add manual locales needed for tests
+          if using alternate locale installation instructions. Fixes
+          <ulink url="&lfs-ticket-root;4844">#4844</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Minor changes to boot scripts. Fixes
+          <ulink url="&lfs-ticket-root;4842">#4842</ulink>.
+          Thanks to Scott Andrews for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-04-28</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Linux-API-Headers 5.11.14 またはそれ以降を用いた際の systemd ビルドを修正。
+          meson-0.57.2 についても同様。
+          <ulink url="&lfs-ticket-root;4851">#4851</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ロケールインストールに関して別手順を採用していた際に、テストに必要となるロケールを追加。
+          <ulink url="&lfs-ticket-root;4844">#4844</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトを若干修正。
+          <ulink url="&lfs-ticket-root;4842">#4842</ulink>  を Fix に。
+          報告してくれた Scott Andrews に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-04-26</para>
       <itemizedlist>
         <listitem>

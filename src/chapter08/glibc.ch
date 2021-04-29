@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -361,10 +357,12 @@
     <para>Then use the <command>localedef</command> command to create and
     install locales not listed in the
     <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> file
-    in the unlikely case you need them.</para>
+    when you need them. For instance, the following two locales are
+    needed for some tests later in this chapter:</para>
 @y
     <para>
-    さらに必要なら <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> ファイルに示されていない特殊なロケールは <command>localedef</command> コマンドを使って生成、インストールを行ってください。
+    さらに必要なら <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> ファイルに示されていないロケールは <command>localedef</command> コマンドを使って生成、インストールを行ってください。
+    たとえば以下の 2 つのロケールは、本章で後に実施するテストにおいて必要になります。
     </para>
 @z
 
