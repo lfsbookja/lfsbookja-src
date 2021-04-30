@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
+  <l:l10n language="ja">
+
+    <l:gentext key="description" text="説明"/>
+    <l:gentext key="Bootscripts" text="Bootscripts"/>
+    <l:gentext key="Configuration Files" text="Configuration Files"/>
+    <l:gentext key="Kernel Configuration" text="Kernel Configuration"/>
+    <l:gentext key="Libraries" text="ライブラリ"/>
+    <l:gentext key="Others" text="その他"/>
+    <l:gentext key="Packages" text="パッケージ"/>
+    <l:gentext key="Programs" text="プログラム"/>
+    <l:gentext key="Scripts" text="スクリプト"/>
+
+    <l:gentext key="Index" text="項目別もくじ"/>
+    <l:gentext key="index" text="項目別もくじ"/>
+
+    <l:context name="styles">
+      <l:template name="person-name" text="first-last"/>
+    </l:context>
+
+    <l:context name="title-numbered">
+      <l:template name="part" text="第%n部 %t"/>
+    </l:context>
+
+  </l:l10n>
+</l:i18n>
