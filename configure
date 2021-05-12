@@ -4720,7 +4720,7 @@ fi
 
 
 
-TARGETVER=git-20210429-g2013a74b0
+TARGETVER=r10.1-57
 
 (cd ${bookdir} && sh git-version.sh)
 if test -f ${bookdir}/version.ent; then
