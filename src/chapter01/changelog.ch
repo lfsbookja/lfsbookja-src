@@ -50,6 +50,81 @@
 @z
 
 @x
+      <para>2021-05-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Moved LFS to a merged-/usr configuration. Thanks
+          goes to Xi Ruoyao for doing almost all of the work. Fixes
+          <ulink url="&lfs-ticket-root;4848">#4848</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to gcc-11.1.0. Fixes
+          <ulink url="&lfs-ticket-root;4847">#4847</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Fix a FTBFS when building glibc-2.30 with
+          gcc-11.1.0.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-248. Fixes
+          <ulink url="&lfs-ticket-root;4841">#4841</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to iproute2-5.12.0. Fixes
+          <ulink url="&lfs-ticket-root;4852">#4852</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to Python-3.9.5. Fixes
+          <ulink url="&lfs-ticket-root;4854">#4854</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to meson-0.58.0. Fixes
+          <ulink url="&lfs-ticket-root;4853">#4853</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to linux-5.12.2. Fixes
+          <ulink url="&lfs-ticket-root;4840">#4840</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-05-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - マージした /usr 配下の設定として LFS を変更しました。
+          ほぼすべての作業を行ってくれた Xi Ruoyao に感謝。
+          <ulink url="&lfs-ticket-root;4848">#4848</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - gcc-11.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4847">#4847</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - gcc-11.1.0 を使って glibc-2.30 をビルドする際の FTBFS を修正。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-248 へのアップデート。
+          <ulink url="&lfs-ticket-root;4841">#4841</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - iproute2-5.12.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4852">#4852</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Python-3.9.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4854">#4854</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - meson-0.58.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4853">#4853</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - linux-5.12.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4840">#4840</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-04-28</para>
       <itemizedlist>
         <listitem revision="systemd">

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -38,17 +34,6 @@
       <title>The meaning of the configure options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
-@z
-
-@x sed -i '/find/s@/usr@@' init/systemd/man-db.service.in
-          <para>This changes a harcoded path to the <command>find</command>
-          utility, which we install in
-          <filename class="directory">/bin</filename>.</para>
-@y
-          <para>
-          これは <command>find</command> ユーティリティーに対してハードコーディングされているパスを変更します。
-          これは <filename class="directory">/bin</filename> にインストールするとしているからです。
-          </para>
 @z
 
 @x --disable-setuid

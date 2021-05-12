@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -29,40 +25,6 @@
 @y
     <title>&InstallationOf1;Acl&InstallationOf2;</title>
 @z
-
-% @x
-%     <para>Modify the documentation directory so that it is a versioned
-%     directory:</para>
-% @y
-%     <para>
-%     ドキュメントを収容するディレクトリ名にバージョンをつけるようにします。
-%     </para>
-% @z
-
-% @x
-%     <para>Fix some broken tests:</para>
-% @y
-%     <para>
-%     不適切なテストを修正します。
-%     </para>
-% @z
-
-% @x
-%     <para>Fix a problem in the test procedures caused by changes in perl-5.26:</para>
-% @y
-%     <para>
-%     perl-5.26 の変更にともなって発生するテストの不備を修正します。
-%     </para>
-% @z
-
-% @x
-%     <para>Additionally, fix a bug that causes <command>getfacl -e</command>
-%     to segfault on overly long group name:</para>
-% @y
-%     <para>
-%     長いグループ名に対して <command>getfacl -e</command> が segfault を起こすため、これを修正します。
-%     </para>
-% @z
 
 @x
     <para>Prepare Acl for compilation:</para>
@@ -94,20 +56,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>The shared library needs to be moved to
-    <filename class="directory">/lib</filename>, and as a result the
-    <filename class="extension">.so</filename> file in
-    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
-@y
-    <para>
-    共有ライブラリは <filename
-    class="directory">/lib</filename> に移動させます。
-    これにより <filename class="directory">/usr/lib</filename> にある <filename
-    class="extension">.so</filename> ファイルを再生成します。
-    </para>
 @z
 
 @x

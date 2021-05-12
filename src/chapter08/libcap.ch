@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -72,11 +68,18 @@
 @z
 
 @x
-    <para>Install the package and make sure the essential libraries are in
-    the correct directory:</para>
+    <para>Install the package:</para>
 @y
     <para>
-    パッケージをインストールし、基本的なライブラリを適切なディレクトリに置きます。
+    &InstallThePackage;
+    </para>
+@z
+
+@x
+    <para>Adjust the permission of the shared libraries:</para>
+@y
+    <para>
+    共有ライブラリのパーミッションを調整します。
     </para>
 @z
 

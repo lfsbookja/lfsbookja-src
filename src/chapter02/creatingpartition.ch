@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -321,16 +317,37 @@
 @z
 
 @x
-      <listitem><para>/usr &ndash; A separate /usr partition is generally used
-      if providing a server for a thin client or diskless workstation.  It is
-      normally not needed for LFS.  A size of ten gigabytes will handle most
-      installations.</para></listitem>
+      <listitem><para>/usr &ndash; In LFS,
+      <filename class="directory">/bin</filename>,
+      <filename class="directory">/lib</filename>, and
+      <filename class="directory">/sbin</filename> are symlinks to their
+      counterpart in <filename class="directory">/usr</filename>.
+      So <filename class="directory">/usr</filename> contains all binaries
+      needed for the system to run.  For LFS a separate partition for
+      <filename class="directory">/usr</filename> is normally not needed.
+      If you need it anyway, you should make a partition large enough to
+      fit all programs and libraries in the system.  The root partition can be
+      very small (maybe just one gigabyte) in this configuration, so it's
+      suitable for a thin client or diskless workstation (where
+      <filename class="directory">/usr</filename> is mounted from a remote
+      server).  However you should take care that an initramfs (not covered by
+      LFS) will be needed to boot a system with separate
+      <filename class="directory">/usr</filename> partition.</para></listitem>
 @y
-      <listitem><para>
-      /usr &ndash; 
-      /usr ディレクトリを別パーティションとして設けるのは、一般にはシンクライアント (thin client) 向けサーバーやディスクレスワークステーションにおいて行われます。
-      普通 LFS では必要ありません。
-      10 GB くらいの容量があれば、たいていのアプリケーションをインストールするのに十分なものでしょう。
+      <listitem><para>/usr &ndash;
+      LFS においては 
+      <filename class="directory">/bin</filename>,
+      <filename class="directory">/lib</filename>,
+      <filename class="directory">/sbin</filename>
+      の各ディレクトリは、<filename class="directory">/usr</filename> 配下からのシンボリックリンクとしています。
+      したがって <filename class="directory">/usr</filename> には、システムを動作させるために必要となる実行モジュールがすべて置かれます。
+      LFS において <filename class="directory">/usr</filename> を別パーティションとすることは、普通は不要です。
+      それでもこれが必要となる場合、システム内のプログラムやライブラリすべてが収容できるように、そのパーティション容量を十分に確保することが必要です。
+      root パーティションは、このような設定とするなら、極端に小さなサイズ（1 ギガバイト程度）でも十分です。
+      これはシンクライアントやディスクなしワークステーションに適しています。
+      （そういった環境では <filename class="directory">/usr</filename> がリモートサーバーにマウントされます。）
+      ただし（LFS では対応していない）initramfs を利用する際には、これがブートする際に <filename
+      class="directory">/usr</filename> が別パーティションになっていることが必要であるため、注意してください。
       </para></listitem>
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -50,15 +46,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Finally, move the <command>killall</command> and <command>fuser</command> 
-    programs to the location specified by the FHS:</para>
-@y
-    <para>
-    <command>killall</command> プログラムと <command>fuser</command> プログラムを、FHS が規定しているディレクトリに移動します。
-    </para>
 @z
 
 @x

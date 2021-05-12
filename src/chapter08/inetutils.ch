@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -123,11 +119,10 @@
 @z
 
 @x
-    <para>Move some programs so they are available if <filename
-    class='directory'>/usr</filename> is not accessible:</para>
+    <para>Move a program to the proper location:</para>
 @y
     <para>
-    <filename class='directory'>/usr</filename> がアクセス不能であっても各種プログラムが実行できるように、それらを移動させます。
+    各種プログラムを適切な場所に移動します。
     </para>
 @z
 

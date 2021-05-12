@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -119,7 +115,7 @@
 @x
     <para>Information about hardware devices is maintained in the
     <filename class="directory">/etc/udev/hwdb.d</filename> and
-    <filename class="directory">/lib/udev/hwdb.d</filename> directories.
+    <filename class="directory">/usr/lib/udev/hwdb.d</filename> directories.
     <application>Eudev</application> needs that information to be compiled
     into a binary database <filename>/etc/udev/hwdb.bin</filename>. Create the
     initial database:</para>
@@ -127,7 +123,7 @@
     <para>
     ハードウェアデバイスに関する情報は、<filename
     class="directory">/etc/udev/hwdb.d</filename> ディレクトリおよび <filename
-    class="directory">/lib/udev/hwdb.d</filename> ディレクトリに収容されています。
+    class="directory">/usr/lib/udev/hwdb.d</filename> ディレクトリに収容されています。
     <application>Eudev</application> はこの情報をとりまとめて、バイナリデータベース <filename>/etc/udev/hwdb.bin</filename> を作成しています。
     このデータベース初期化は以下により実現します。
     </para>
@@ -159,21 +155,21 @@
 @z
 
 @x
-        <seg><!-- These are in /lib/udev and not to be called by the user:
+        <seg><!-- These are in /usr/lib/udev and not to be called by the user:
          accelerometer, ata_id, cdrom_id, collect, mtd_probe,
          scsi_id, v4l_id,--> udevadm and udevd</seg>
 
         <seg>libudev.so</seg>
 
-        <seg>/etc/udev, /lib/udev, and /usr/share/doc/udev-&udev-lfs-version;</seg>
+        <seg>/etc/udev, /usr/lib/udev, and /usr/share/doc/udev-&udev-lfs-version;</seg>
 @y
-        <seg><!-- These are in /lib/udev and not to be called by the user:
+        <seg><!-- These are in /usr/lib/udev and not to be called by the user:
          accelerometer, ata_id, cdrom_id, collect, mtd_probe,
          scsi_id, v4l_id,--> udevadm, udevd</seg>
 
         <seg>libudev.so</seg>
 
-        <seg>/etc/udev, /lib/udev, /usr/share/doc/udev-&udev-lfs-version;</seg>
+        <seg>/etc/udev, /usr/lib/udev, /usr/share/doc/udev-&udev-lfs-version;</seg>
 @z
 
 @x

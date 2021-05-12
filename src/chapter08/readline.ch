@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -97,15 +93,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Now move the dynamic libraries to a more appropriate location
-    and fix up symbolic links:</para>
-@y
-    <para>
-    スタティックライブラリを適切なディレクトリに移動し、シンボリックリンクを適正にします。
-    </para>
 @z
 
 @x

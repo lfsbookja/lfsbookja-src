@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -212,7 +208,7 @@
       <para>A short time later, the kernel will send a uevent to <command>
       udevd</command>.  Based on the rules specified in the files within the
       <filename class="directory">/etc/udev/rules.d</filename>, <filename
-      class="directory">/lib/udev/rules.d</filename>, and <filename
+      class="directory">/usr/lib/udev/rules.d</filename>, and <filename
       class="directory">/run/udev/rules.d</filename> directories, <command>
       udevd</command> will create additional symlinks to the device node, or
       change its permissions, owner, or group, or modify the internal
@@ -222,7 +218,7 @@
       この後にカーネルは <command>udevd</command> に対して uevent を送信します。
       <command>udevd</command> は、<filename
       class="directory">/etc/udev/rules.d</filename>, <filename
-      class="directory">/lib/udev/rules.d</filename>, <filename
+      class="directory">/usr/lib/udev/rules.d</filename>, <filename
       class="directory">/run/udev/rules.d</filename> の各ディレクトリ内にあるファイルの設定ルールに従って、デバイスノードに対するシンボリックリンクを生成したり、パーミッション、所有者、グループの情報を変更したり、内部的な <command>udevd</command> データベースの項目を修正したりします。
       </para>
 @z
@@ -639,7 +635,7 @@
       driver does not export its data to
       <systemitem class="filesystem">sysfs</systemitem>. This is most common
       with third party drivers from outside the kernel tree. Create a static
-      device node in <filename>/lib/udev/devices</filename> with the
+      device node in <filename>/usr/lib/udev/devices</filename> with the
       appropriate major/minor numbers (see the file
       <filename>devices.txt</filename> inside the kernel documentation or the
       documentation provided by the third party driver vendor). The static
@@ -649,7 +645,7 @@
       <para>
       Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
       これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
-      したがって <filename>/lib/udev/devices</filename> において、適切なメジャー、マイナー番号を用いた静的なデバイスノードを生成してください。
+      したがって <filename>/usr/lib/udev/devices</filename> において、適切なメジャー、マイナー番号を用いた静的なデバイスノードを生成してください。
       (カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
       この静的デバイスノードは、<command>udev</command> によって <filename class="directory">/dev</filename> にコピーされます。
       </para>

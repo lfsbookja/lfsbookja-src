@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -51,16 +47,10 @@
 @z
 
 @x
-    <para>Remove the static library and move the shared library to
-    <filename class="directory">/lib</filename>. Also, the
-    <filename class="extension">.so</filename> file in
-    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
+    <para>Remove the static library:</para>
 @y
     <para>
-    スタティックライブラリは削除します。
-    また共有ライブラリは <filename class="directory">/lib</filename> に移動します。
-    <filename class="directory">/usr/lib</filename> ディレクトリにある <filename
-    class="extension">.so</filename> ファイルは再生成する必要があります。
+    スタティックライブラリを削除します。
     </para>
 @z
 

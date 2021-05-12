@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -103,27 +99,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Move the shared libraries to the
-    <filename class="directory">/lib</filename> directory, where they are
-    expected to reside:</para>
-@y
-    <para>
-    共有ライブラリを <filename class="directory">/lib</filename> ディレクトリに移動します。
-    これらはここにあるべきものです。
-    </para>
-@z
-
-@x
-    <para>Because the libraries have been moved, one symlink points to
-    a non-existent file. Recreate it:</para>
-@y
-    <para>
-    ライブラリを移動させたので、シンボリックリンク先が存在しないことになります。
-    そこでリンクを再生成します。
-    </para>
 @z
 
 @x

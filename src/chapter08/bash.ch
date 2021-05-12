@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -91,29 +87,12 @@
     </para>
 @z
 
-%@x
-%    <para>The <systemitem class="username">tester</systemitem>
-%    user does not have enough permissions for all the tests to pass. This shows
-%    up in some <quote>diff</quote> output in four test results. Portions of the 
-%    run-execscript, run-lastpipe, run-read, and run-test programs
-%    are known to fail in the LFS chroot environment, but pass if the tests
-%    are run in a full system.</para>
-%@y
-%    <para>
-%    <systemitem class="username">tester</systemitem> ユーザーは、すべてのテストを成功させる十分な権限を有していません。
-%    このことはテストの<quote>diff</quote>出力からわかります。
-%    run-execscript, run-lastpipe, run-read, run-test というプログラムに対するテストは、LFS chroot 環境下では部分的に失敗します。
-%    ただし完成したシステム上において、このテストを実行すれば成功します。
-%    </para>
-%@z
-
 @x
-    <para>Install the package and move the main executable to
-    <filename class='directory'>/bin</filename>:</para>
+    <para>Install the package:</para>
 @y
     <para>
     &InstallThePackage;
-    そして実行モジュールを <filename class='directory'>/bin</filename> へ移動します。</para>
+    </para>
 @z
 
 @x

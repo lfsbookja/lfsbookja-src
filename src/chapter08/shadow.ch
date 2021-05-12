@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -63,7 +59,11 @@
     allows passwords longer than 8 characters. It is also necessary to change
     the obsolete <filename class="directory">/var/spool/mail</filename> location
     for user mailboxes that Shadow uses by default to the <filename
-    class="directory">/var/mail</filename> location used currently:</para>
+    class="directory">/var/mail</filename> location used currently. And,
+    get rid of <filename class="directory">/bin</filename> and
+    <filename class="directory">/sbin</filename> from <envar>PATH</envar>,
+    since they are simply symlinks to their counterpart in
+    <filename class="directory">/usr</filename>.</para>
 @y
     <para id="shadow-login_defs">
     パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>SHA-512</emphasis> 手法を用いることにします。
@@ -71,7 +71,25 @@
     またメールボックスを収めるディレクトリとして Shadow ではデフォルトで <filename
     class="directory">/var/spool/mail</filename> ディレクトリを利用していますが、これは古いものであるため <filename
     class="directory">/var/mail</filename> ディレクトリに変更します。
+    また <envar>PATH</envar> から <filename class="directory">/bin</filename> と <filename
+    class="directory">/sbin</filename> を削除します。
+    これらは <filename
+    class="directory">/usr</filename> からのシンボリックリンクであるからです。
     </para>
+@z
+
+@x
+      <para>If <filename class="directory">/bin</filename> and/or
+      <filename class="directory">/sbin</filename> are prefereed to be
+      left over in <envar>PATH</envar> for some reason, modify
+      <envar>PATH</envar> in <filename>.bashrc</filename> after LFS is
+      built.</para>
+@y
+      <para>If <filename class="directory">/bin</filename> and/or
+      <filename class="directory">/sbin</filename> are prefereed to be
+      left over in <envar>PATH</envar> for some reason, modify
+      <envar>PATH</envar> in <filename>.bashrc</filename> after LFS is
+      built.</para>
 @z
 
 @x
@@ -138,14 +156,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Move a misplaced program to its proper location:</para>
-@y
-    <para>
-    不適切なディレクトリにインストールされるプログラムを移動させます。
-    </para>
 @z
 
 @x

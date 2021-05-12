@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -71,6 +67,19 @@
           これはハードウェアクロックの情報を保持したファイルの場所を設定するものであり、FHS に従ったものです。
           一時的なツールにとって厳密には必要ではありませんが、別の場所にはファイル生成するわけにはいきません。
           最終的な util-linux パッケージをビルドする際に、上書きしたり削除したりすることができなくなるからです。
+          </para>
+@z
+
+@x
+          <para>This switch ensures the
+          <filename class="extension">.so</filename> symlinks targeting
+          the shared library file in the same directory
+          (<filename class="directory">/usr/lib</filename>) directly.</para>
+@y
+          <para>
+          本スイッチは、共有ライブラリを示す <filename
+          class="extension">.so</filename> シンボリックリンクを同一ディレクトリ（<filename
+          class="directory">/usr/lib</filename>）に直接生成するようにします。
           </para>
 @z
 

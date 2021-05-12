@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -91,14 +87,20 @@
 @z
 
 @x
+    <para>Install the shared library:</para>
+@y
+    <para>
+    共有ライブラリをインストールします。
+    </para>
+@z
+
+@x
     <para>Install the shared <command>bzip2</command> binary into the
-    <filename class="directory">/bin</filename> directory, make
-    some necessary symbolic links, and clean up:</para>
+    <filename class="directory">/bin</filename> directory:</para>
 @y
     <para>
     共有化された <command>bzip2</command> 実行モジュールを <filename
     class="directory">/bin</filename> ディレクトリにインストールします。
-    また必要となるシンボリックリンクを生成し不要なものを削除します。
     </para>
 @z
 

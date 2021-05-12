@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -50,24 +46,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para><command>/bin/more</command> from util-linux will link to
-    <filename class="libraryfile">libmagic.so</filename>, so the shared
-    library should be moved to <filename class="directory">/lib</filename>,
-    and as a result the
-    <filename class="extension">.so</filename> file in
-    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
-@y
-    <para>
-    util-linux の <command>/bin/more</command> は <filename
-    class="libraryfile">libmagic.so</filename> にリンクされます。
-    したがって共有ライブラリは <filename
-    class="directory">/lib</filename> に移動させます。
-    その結果 <filename class="directory">/usr/lib</filename> にある <filename
-    class="extension">.so</filename> ファイルは再生成が必要になります。
-    </para>
 @z
 
 @x

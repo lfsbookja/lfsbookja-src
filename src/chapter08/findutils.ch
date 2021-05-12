@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -71,33 +67,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para revision="sysv">Some of the scripts in the LFS-Bootscripts package
-    depend on <command>find</command>.  As <filename
-    class="directory">/usr</filename> may not be available during the early
-    stages of booting, this program needs to be on the root partition.  The
-    <command>updatedb</command> script also needs to be modified to correct an
-    explicit path:</para>
-@y
-    <para revision="sysv">
-    LFS ブートスクリプトパッケージでは、いくつかのスクリプトが <command>find</command> を利用しています。
-    <filename class="directory">/usr</filename> ディレクトリはブート処理の初めでは認識できないため、このプログラムはルートパーティションに置く必要があります。
-    同じく <command>updatedb</command> スクリプトは明示的なパスを修正する必要があります。
-    </para>
-@z
-
-@x
-    <para revision="systemd"> Some packages in BLFS and beyond expect the
-    <command>find</command> program in <filename
-    class="directory">/bin</filename>, so make sure it's placed there:</para>
-@y
-    <para revision="systemd">
-    BLFS 以降のパッケージの中には <command>find</command> プログラムが <filename
-    class="directory">/bin</filename> ディレクトリに存在していることが必要なものもあります。
-    このためそのプログラムを移動させます。
-    </para>
 @z
 
 @x

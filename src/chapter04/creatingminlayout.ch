@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -44,6 +39,17 @@
   必要となるディレクトリレイアウトを生成するため、<systemitem
   class="username">root</systemitem> ユーザーになって以下を実行します。
   </para>
+@z
+
+@x
+        The above command is correct.  The <command>ln</command> command has
+        a few syntactic versions, so be sure to check
+		<command>info coreutils ln</command> and <filename>ln(1)</filename>
+		before reporting what you may think is an error.
+@y
+        上記のコマンドに間違いはありません。
+        <command>ln</command> コマンドにはいくつか文法の異なるバージョンがあります。
+        間違いがあると思った場合には <command>info coreutils ln</command> や <filename>ln(1)</filename> をよく確認してください。
 @z
 
 @x

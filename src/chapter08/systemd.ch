@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -38,11 +34,10 @@
 @z
 
 @x
-    <para>First, apply a patch to fix some regressions and fix functionality
-    with future versions of the kernel:</para>
+    <para>First, apply a patch to fix some build issues:</para>
 @y
     <para>
-    まずパッチを適用して機能後退を修正し、またカーネルの将来版にわたっての機能を修正します。
+    ビルドにて発生する問題を修正するパッチを適用します。
     </para>
 @z
 
@@ -75,15 +70,6 @@
       <title>The meaning of the meson options:</title>
 @y
       <title>&MeaningOfOption1;meson&MeaningOfOption2;</title>
-@z
-
-@x -D*-path=*
-          <para>These switches provide the location of binaries needed by
-          systemd at runtime that have not yet been installed.</para>
-@y
-          <para>
-          各スイッチは systemd が実行時に必要としているバイナリであって、まだインストールされていないものに関して、そのパスを指定します。
-          </para>
 @z
 
 @x -Ddefault-dnssec=no
@@ -124,26 +110,6 @@
           本スイッチは、システム起動時に <command>ldconfig</command> を実行するような systemd ユニットはインストールしないようにします。
           LFS のようにソースから作り出すディストリビューションにとっては無用なものであり、起動時間も長くなります。
           もし必要であれば本スイッチを除いてください。
-          </para>
-@z
-
-@x -Droot*
-          <para>These switches ensure that core programs and
-          shared libraries are installed in subdirectories
-          of the root partition.</para>
-@y
-          <para>
-          これらのスイッチは主要なプログラムや共有ライブラリを、ルートパーティション配下のサブディレクトリにインストールすることを指示します。
-          </para>
-@z
-
-@x -Dsplit-usr=true
-          <para>This switch ensures that systemd will work on
-          systems where /bin, /lib and /sbin directories are not
-          symlinks to their /usr counterparts.</para>
-@y
-          <para>
-          本スイッチは、/bin、/lib、/sbin の各ディレクトリが /usr 配下の同一サブディレクトリ名によるシンボリックリンクでない場合でも systemd が稼動するようにするものです。
           </para>
 @z
 
@@ -293,26 +259,27 @@
 @x
         <seg>bootctl, busctl, coredumpctl, halt (symlink to systemctl),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
-        machinectl, networkctl, portablectl, poweroff (symlink to
+        machinectl, networkctl, oomctl, portablectl, poweroff (symlink to
         systemctl), reboot (symlink to systemctl), resolvconf (symlink to
         resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
         (symlink to systemctl), systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-delta, systemd-detect-virt, systemd-dissect, systemd-escape, 
-        systemd-hwdb, systemd-id128, systemd-inhibit, systemd-machine-id-setup,
+        systemd-cryptenroll, systemd-delta, systemd-detect-virt,
+        systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
+        systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
         systemd-repart, systemd-resolve (symlink to resolvectl), systemd-run,
-        systemd-socket-activate, systemd-stdio-bridge, systemd-tmpfiles,
-        systemd-tty-ask-password-agent, systemd-umount (symlink to
-        systemd-mount), telinit (symlink to systemctl), timedatectl, and
-        udevadm</seg>
+        systemd-socket-activate, systemd-stdio-bridge, systemd-sysext,
+        systemd-tmpfiles, systemd-tty-ask-password-agent,
+        systemd-umount (symlink to systemd-mount),
+        telinit (symlink to systemctl), timedatectl, and udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2,
-        libsystemd.so, libsystemd-shared-&systemd-version;.so (in /lib/systemd),
+        libsystemd.so, libsystemd-shared-&systemd-version;.so (in /usr/lib/systemd),
         and libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
-        /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
+        /etc/xdg/systemd, /usr/lib/systemd, /usr/lib/udev, /usr/include/systemd,
         /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel, 
         /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd, 
         /usr/lib/tmpfiles.d,
@@ -321,26 +288,27 @@
 @y
         <seg>bootctl, busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
-        machinectl, networkctl, portablectl, poweroff (systemctl へのシンボリックリンク),
+        machinectl, networkctl, oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
         reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
         resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
         (systemctl へのシンボリックリンク), systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-delta, systemd-detect-virt, systemd-dissect, systemd-escape, 
-        systemd-hwdb, systemd-id128, systemd-inhibit, systemd-machine-id-setup,
+        systemd-cryptenroll, systemd-delta, systemd-detect-virt,
+        systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
+        systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
         systemd-repart, systemd-resolve (resolvectl へのシンボリックリンク), systemd-run,
-        systemd-socket-activate, systemd-stdio-bridge, systemd-tmpfiles,
-        systemd-tty-ask-password-agent, systemd-umount (systemd-mount へのシンボリックリンク),
-        telinit (systemctl へのシンボリックリンク), timedatectl,
-        udevadm</seg>
+        systemd-socket-activate, systemd-stdio-bridge, systemd-sysext,
+        systemd-tmpfiles, systemd-tty-ask-password-agent,
+        systemd-umount (systemd-mount へのシンボリックリンク),
+        telinit (systemctl へのシンボリックリンク), timedatectl, udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2,
-        libsystemd.so, libsystemd-shared-&systemd-version;.so (/lib/systemd ディレクトリ内),
+        libsystemd.so, libsystemd-shared-&systemd-version;.so (/usr/lib/systemd ディレクトリ内),
         libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
-        /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
+        /etc/xdg/systemd, /usr/lib/systemd, /usr/lib/udev, /usr/include/systemd,
         /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel, 
         /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd, 
         /usr/lib/tmpfiles.d,
@@ -466,6 +434,14 @@
           </para>
 @z
 
+@x oomctl
+          <para>Controls the systemd Out Of Memory daemon</para>
+@y
+          <para>
+          systemd の Out Of Memory デーモンを制御します。
+          </para>
+@z
+
 @x portablectl
           <para>Is used to attach or detach portable services from the local
           system</para>
@@ -585,6 +561,16 @@
 @y
           <para>
           最上位のローカル Linux コントロールグループ (control group) を表示し、CPU、メモリ、ディスクI/Oロードの並びにより示します。
+          </para>
+@z
+
+@x systemd-cryptenroll
+          <para>Is used to enroll or remove a system from full disk encryption,
+          as well as set and query private keys and recovery keys</para>
+@y
+          <para>
+          全ディスク暗号化に対してシステムの登録削除を行います。
+          またプライベート鍵やリカバリー鍵の設定や検索を行います。
           </para>
 @z
 
@@ -732,6 +718,15 @@
 @y
           <para>
           ソケットデバイスの情報を読み取って、ソケットに対するコネクション上にてプロセスを起動します。
+          </para>
+@z
+
+@x
+          <para>Creates, deletes, and manages system extensions through the
+          systemd-sysextd daemon</para>
+@y
+          <para>
+          systemd-sysextd デーモンを通じてシステム拡張の生成、削除、管理を行います。
           </para>
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -572,10 +568,10 @@
 @z
 
 @x shadow
-        <!-- <para>Home page: <ulink url="&shadow-home;"/></para> -->
+        <para>Home page: <ulink url="&shadow-home;"/></para>
         <para>Download: <ulink url="&shadow-url;"/></para>
 @y
-        <!-- <para>&Homepage;: <ulink url="&shadow-home;"/></para> -->
+        <para>&Homepage;: <ulink url="&shadow-home;"/></para>
         <para>&Download;: <ulink url="&shadow-url;"/></para>
 @z
 

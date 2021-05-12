@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -192,21 +188,6 @@ autoconf-2.70 に含まれている gnulib .m4 ファイルの問題を修正し
 @y
     <para>
     FHS が規定しているディレクトリにプログラムを移します。
-    </para>
-@z
-
-@x
-    <para revision="sysv">Some of the scripts in the LFS-Bootscripts package
-    depend on <command>head</command>, <command>nice</command>,
-    <command>sleep</command>, and <command>touch</command>.  As <filename
-    class="directory">/usr</filename> may not be available during the early and
-    late stages of booting, those binaries need to be on the root partition to
-    maintain FHS compliance:</para>
-@y
-    <para revision="sysv">
-    LFS-ブートスクリプトパッケージにあるスクリプトでは、<command>head</command>、<command>nice</command> に依存しているものがあります。
-    ブート処理の初期段階や最終段階においては <filename class="directory">/usr</filename> ディレクトリが認識されないため、FHS
-    コンプライアンスのためにも上のプログラムはルートパーティションに移す必要があります。
     </para>
 @z
 

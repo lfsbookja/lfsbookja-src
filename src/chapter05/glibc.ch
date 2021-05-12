@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -43,17 +39,6 @@
 @z
 
 @x
-        The above command is correct.  The <command>ln</command> command has
-        a few syntactic versions, so be sure to check
-		<command>info coreutils ln</command> and <filename>ln(1)</filename>
-		before reporting what you may think is an error.
-@y
-        上のコマンドに間違いはありません。
-        <command>ln</command> コマンドにはいくつか文法の異なるバージョンがあります。
-        間違いがあると思った場合には <command>info coreutils ln</command> や <filename>ln(1)</filename> をよく確認してください。
-@z
-
-@x
     <para>Some of the Glibc programs use the non-FHS compliant
     <filename class="directory">/var/db</filename> directory to store their
     runtime data. Apply the following patch to make such programs store their
@@ -63,6 +48,14 @@
     Glibc のプログラムの中で、FHS コンプライアンスに適合しない <filename
     class="directory">/var/db</filename> ディレクトリを用いているものがあり、そこに実行時データを保存しています。
     以下のパッチを適用することで、実行時データの保存ディレクトリを FHS に合致するものとします。
+    </para>
+@z
+
+@x
+    <para>Fix a build issue with gcc-11.1:</para>
+@y
+    <para>
+    gcc-11.1 を使ってビルドするための修正を行います。
     </para>
 @z
 
@@ -123,12 +116,12 @@
           </para>
 @z
 
-@x libc_cv_slibdir=/lib
-          <para>This ensures that the library is installed in /lib instead
+@x libc_cv_slibdir=/usr/lib
+          <para>This ensures that the library is installed in /usr/lib instead
           of the default /lib64 on 64 bit machines.</para>
 @y
           <para>
-          この指定は 64 ビットマシンにおいて、ライブラリのインストール先をデフォルトの /lib64 ではなく /lib とします。
+          この指定は 64 ビットマシンにおいて、ライブラリのインストール先をデフォルトの /lib64 ではなく /usr/lib とします。
           </para>
 @z
 

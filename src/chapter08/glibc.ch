@@ -41,6 +41,14 @@
 @z
 
 @x
+    <para>Fix a build issue with gcc-11.1:</para>
+@y
+    <para>
+    gcc-11.1 を使ってビルドするための修正を行います。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc 
     in a dedicated build directory:</para>
 @y
@@ -103,7 +111,7 @@
           </para>
 @z
 
-@x libc_cv_slibdir=/lib
+@x libc_cv_slibdir=/usr/lib
           <para>This variable sets the correct library for all
           systems.  We do not want lib64 to be used.</para>
 @y

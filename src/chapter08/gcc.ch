@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -165,13 +161,10 @@
 @z
 
 @x
-    <para>Additionally the following tests related to the following files
-    are known to fail with glibc-2.33: asan_test.C, co-ret-17-void-ret-coro.C, 
-    pr95519-05-gro.C, pr80166.c.</para>
+    <para>Additionally, the test constexpr-52830 is known to fail.</para>
 @y
     <para>
-    さらに以下のファイルに関連するテストは、glibc-2.33 においては失敗します。
-    asan_test.C, co-ret-17-void-ret-coro.C, pr95519-05-gro.C, pr80166.c
+    さらに constexpr-52830 というテストは失敗します。
     </para>
 @z
 

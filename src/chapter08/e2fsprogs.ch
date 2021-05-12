@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -53,26 +49,6 @@
       <title>The meaning of the configure options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
-@z
-
-@x --with-root-prefix="" and --bindir=/bin
-          <para>Certain programs (such as the <command>e2fsck</command>
-          program) are considered essential programs.  When, for example,
-          <filename class="directory">/usr</filename> is not mounted, these
-          programs still need to be available. They belong in directories
-          like <filename class="directory">/lib</filename> and <filename
-          class="directory">/sbin</filename>. If this option is not passed
-          to configure, the programs are installed into the
-          <filename class="directory">/usr</filename> directory.</para>
-@y
-          <para>
-          <command>e2fsck</command> などのプログラムは、極めて重要なものです。
-          例えば <filename class="directory">/usr</filename> ディレクトリがマウントされていない時であっても、そういったプログラムは動作しなければなりません。
-          それらは <filename class="directory">/lib</filename> ディレクトリや <filename
-          class="directory">/sbin</filename> ディレクトリに置かれるべきものです。
-          もしこのオプションの指定がなかったら、プログラムが <filename
-          class="directory">/usr</filename> ディレクトリにインストールされてしまいます。
-          </para>
 @z
 
 @x --enable-elf-shlibs

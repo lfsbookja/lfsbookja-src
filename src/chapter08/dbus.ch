@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -93,20 +89,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>The shared library needs to be moved to
-    <filename class="directory">/lib</filename>, and as a result the
-    <filename class="extension">.so</filename> file in
-    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
-@y
-    <para>
-    共有ライブラリは <filename
-    class="directory">/lib</filename> へ移動します。
-    これにより <filename class="directory">/usr/lib</filename> にある <filename
-    class="extension">.so</filename> ファイルを再生成します。
-    </para>
 @z
 
 @x
