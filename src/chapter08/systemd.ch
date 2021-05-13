@@ -721,12 +721,12 @@
           </para>
 @z
 
-@x
-          <para>Creates, deletes, and manages system extensions through the
-          systemd-sysextd daemon</para>
+@x systemd-sysext
+          <para>Activates system extension images</para>
 @y
           <para>
-          systemd-sysextd デーモンを通じてシステム拡張の生成、削除、管理を行います。
+          
+          システム拡張イメージを有効にします。
           </para>
 @z
 

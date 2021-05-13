@@ -65,6 +65,14 @@
         </para>
 @z
 
+@x --enable-optimizations
+        <para>This switch enables stable, but expensive, optimizations.</para>
+@y
+        <para>
+        本スイッチは安定的ではあるものの高くつく最適化を有効にします。
+        </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -72,23 +80,17 @@
 @z
 
 @x
-    <para>To test the results, issue:</para> 
+    <para>Running the tests at this point is not recommended.  The
+    tests are known to hang indefinitely in the partial LFS environment.
+    If desired, the tests can be rerun at the end of this chapter or
+    when Python 3 is reinstalled in BLFS.  To run the tests anyway,
+    issue <command>make test</command>.</para>
 @y
     <para>
-    ビルド結果をテストする場合は以下を実行します。
-    </para>
-@z
-
-@x
-    <para>Some tests requiring a network connection or additional packages are
-    skipped. The tests test_unicodedata and test_curses tests are known to fail. For
-    more comprehensive results, the tests can be rerun when Python 3 is 
-    reinstalled in BLFS.</para>
-@y
-    <para>
-    ネットワーク接続や他の依存パッケージを必要とするテストは、省略される場合があります。
-    test_unicodedata と test_curses のテストは失敗します。
-    すべての結果を得るには BLFS において Python 3 を再インストールした後に、もう一度テストを実行してください。
+    この時点においてテスト実行することはお勧めしません。
+    部分的にしか仕上がっていない LFS 環境では安定せずハングすることがあります。
+    テストを必要とする場合は、本章を一番最後まで進めてから再度実行するか、あるいは BLFS において Python 3 をインストール際に行います。
+    そうではなくここでテスト実行をするなら <command>make test</command> を実行します。
     </para>
 @z
 

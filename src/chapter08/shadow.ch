@@ -80,16 +80,16 @@
 
 @x
       <para>If <filename class="directory">/bin</filename> and/or
-      <filename class="directory">/sbin</filename> are prefereed to be
+      <filename class="directory">/sbin</filename> are preferred to be
       left over in <envar>PATH</envar> for some reason, modify
       <envar>PATH</envar> in <filename>.bashrc</filename> after LFS is
       built.</para>
 @y
-      <para>If <filename class="directory">/bin</filename> and/or
-      <filename class="directory">/sbin</filename> are prefereed to be
-      left over in <envar>PATH</envar> for some reason, modify
-      <envar>PATH</envar> in <filename>.bashrc</filename> after LFS is
-      built.</para>
+      <para>
+      何らかの理由により <envar>PATH</envar> に対して <filename
+      class="directory">/bin</filename> や <filename
+      class="directory">/sbin</filename> を残しておく必要がある場合は、LFS ビルドが完成した後に <filename>.bashrc</filename> において <envar>PATH</envar> を設定してください。
+      </para>
 @z
 
 @x

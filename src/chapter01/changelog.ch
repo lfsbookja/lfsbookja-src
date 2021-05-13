@@ -53,6 +53,11 @@
       <para>2021-05-12</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Removed instructions for running tests
+          in Python due to an idefinite hang in the partial
+          LFS envrionment.</para>
+        </listitem>
+        <listitem>
           <para>[renodr] - Moved LFS to a merged-/usr configuration. Thanks
           goes to Xi Ruoyao for doing almost all of the work. Fixes
           <ulink url="&lfs-ticket-root;4848">#4848</ulink>.</para>
@@ -62,7 +67,7 @@
           <ulink url="&lfs-ticket-root;4847">#4847</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[renodr] - Fix a FTBFS when building glibc-2.30 with
+          <para>[renodr] - Fix a FTBFS when building glibc-2.33 with
           gcc-11.1.0.</para>
         </listitem>
         <listitem revision="systemd">
@@ -90,6 +95,10 @@
       <para>2021-05-12</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Python におけるテスト実行手順を削除しました。
+          部分的にしか仕上がっていない LFS 環境では安定せずハングすることがあるため。</para>
+        </listitem>
+        <listitem>
           <para>[renodr] - マージした /usr 配下の設定として LFS を変更しました。
           ほぼすべての作業を行ってくれた Xi Ruoyao に感謝。
           <ulink url="&lfs-ticket-root;4848">#4848</ulink> を Fix に。</para>
@@ -99,7 +108,7 @@
           <ulink url="&lfs-ticket-root;4847">#4847</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[renodr] - gcc-11.1.0 を使って glibc-2.30 をビルドする際の FTBFS を修正。</para>
+          <para>[renodr] - gcc-11.1.0 を使って glibc-2.33 をビルドする際の FTBFS を修正。</para>
         </listitem>
         <listitem revision="systemd">
           <para>[renodr] - systemd-248 へのアップデート。
