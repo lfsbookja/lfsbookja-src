@@ -243,26 +243,6 @@
         </para>
 @z
 
-%@x
-%        <para>The
-%        <emphasis>nptl/tst-thread-affinity-{pthread,pthread2,sched}</emphasis>
-%        tests may fail for reasons that have not been determined.  </para>
-%@y
-%        <para>
-%        <emphasis>nptl/tst-thread-affinity-{pthread,pthread2,sched}</emphasis> テストは失敗しますが、その理由は不明です。
-%        </para>
-%@z
-
-%@x
-%        <para>Other tests known to fail on some architectures are
-%        malloc/tst-malloc-usable and nptl/tst-cleanupx4. </para>
-%@y
-%        <para>
-%        上記以外に特定のアーキテクチャーにてテストが失敗することが分かっています。
-%        失敗するのは malloc/tst-malloc-usable, nptl/tst-cleanupx4 です。
-%        </para>
-%@z
-
 @x
     <para>Though it is a harmless message, the install stage of Glibc will
     complain about the absence of <filename>/etc/ld.so.conf</filename>.
@@ -289,6 +269,15 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+    <para>Fix hardcoded path to the executable loader in
+    <command>ldd</command> script:</para>
+@y
+    <para>
+    <command>ldd</command> スクリプト内にある実行可能なローダーへのパスがハードコーディングされているので、これを修正します。
+    </para>
 @z
 
 @x

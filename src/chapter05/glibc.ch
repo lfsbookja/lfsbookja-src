@@ -222,6 +222,15 @@
 @z
 
 @x
+    <para>Fix hardcoded path to the executable loader in
+    <command>ldd</command> script:</para>
+@y
+    <para>
+    <command>ldd</command> スクリプト内にある実行可能なローダーへのパスがハードコーディングされているので、これを修正します。
+    </para>
+@z
+
+@x
       <para>At this point, it is imperative to stop and ensure that the basic
       functions (compiling and linking) of the new toolchain are working as
       expected. To perform a sanity check, run the following commands:</para>
