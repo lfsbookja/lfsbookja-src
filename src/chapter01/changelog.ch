@@ -50,6 +50,22 @@
 @z
 
 @x
+      <para>2021-05-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Add a Note about upgrading in OpenSSL.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-05-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - OpenSSL アップグレード時に関してのメモを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-05-12</para>
       <itemizedlist>
         <listitem>
