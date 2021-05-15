@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -131,18 +127,87 @@
       against <filename class='libraryfile'>libfoo.so.2</filename> in order to
       use the new library version. You should not remove the previous
       libraries unless all the dependent packages are recompiled.</para>
+      </listitem>
 @y
       <listitem> <para>
-      共有ライブラリを提供しているパッケージをアップデートする場合で、ライブラリの名前が変更になった場合は、そのライブラリを動的にリンクしているすべてのパッケージは、新しいライブラリにリンクされるように再コンパイルを行う必要があります。
-      (パッケージのバージョンとライブラリ名との間に相関関係はありません。)
-      例えば foo-1.2.3 というパッケージが共有ライブラリ <filename
-      class='libraryfile'>libfoo.so.1</filename> をインストールするものであるとします。
-      そして今、新しいバージョン foo-1.2.4 にアップグレードし、共有ライブラリ <filename
-      class='libraryfile'>libfoo.so.2</filename> をインストールするとします。
-      この例では <filename class='libraryfile'>libfoo.so.1</filename> を動的にリンクいるパッケージがあったとすると、それらはすべて <filename
-      class='libraryfile'>libfoo.so.2</filename> に対してリンクするよう再コンパイルしなければなりません。
-      古いライブラリに依存しているパッケージすべてを再コンパイルするまでは、そのライブラリを削除するべきではありません。
-      </para>
+      共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名が変更になったとします。
+      この場合は、このライブラリに動的リンクを行っていたパッケージは、新たなライブラリに向けてのリンクとなるように再コンパイルすることが必要になります。
+      （なおパッケージバージョンとライブラリ名には関連性はありません。）
+      たとえば foo-1.2.3 というパッケージがあって、これが共有ライブラリ <filename
+      class='libraryfile'>libfoo.so.1</filename> をインストールしているとします。
+      そして新バージョン foo-1.2.4 が共有ライブラリ <filename
+      class='libraryfile'>libfoo.so.2</filename> を持っていて、これにアップグレードするものとします。
+      この場合 <filename
+      class='libraryfile'>libfoo.so.1</filename> に動的リンクを行っていたパッケージは、すべて新ライブラリバージョン <filename
+      class='libraryfile'>libfoo.so.2</filename> へのリンクを行うように再コンパイルしなければなりません。
+      そのように依存していたパッケージをすべて再コンパイルしてからでないと、古いバージョンのライブラリは削除するべきではありません。
+      </para> </listitem>
+@z
+
+@x
+      <listitem> <para>If a package containing a shared library is updated,
+      and the name of library doesn't change, but the version number of the
+      library <emphasis role="bold">file</emphasis> decreases (for example,
+      the name of the library is kept named
+      <filename class='libraryfile'>libfoo.so.1</filename>,
+      but the name of library file is changed from
+      <filename class='libraryfile'>libfoo.so.1.25</filename> to
+      <filename class='libraryfile'>libfoo.so.1.24</filename>),
+      you should remove the library file from the previously installed version
+      (<filename class='libraryfile'>libfoo.so.1.25</filename> in the case).
+      Or, a <command>ldconfig</command> run (by yourself using a command
+      line, or by the installation of some package) will reset the symlink
+      <filename class='libraryfile'>libfoo.so.1</filename> to point to
+      the old library file because it seems having a <quote>newer</quote>
+      version, as its version number is larger.  This situation may happen if
+      you have to downgrade a package, or the package changes the versioning
+      scheme of library files suddenly.</para> </listitem>
+@y
+      <listitem> <para>
+      共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名には変更がなかったとします。
+      ただしライブラリ名の変更はなくても、ライブラリ<emphasis role="bold">ファイル</emphasis>のバージョン番号が減らされたとします。
+      （たとえばライブラリ名 <filename
+      class='libraryfile'>libfoo.so.1</filename> はそのまま不変であったとして、ライブラリファイル名が <filename
+      class='libraryfile'>libfoo.so.1.25</filename> から <filename
+      class='libraryfile'>libfoo.so.1.24</filename> に変更となった場合です。）
+      この場合、それまでインストールされていたバージョン（例では <filename
+      class='libraryfile'>libfoo.so.1.25</filename>）のライブラリファイルは削除すべきです。
+      そうしておかないと、<command>ldconfig</command> を実行したときに（自分でコマンドライン実行したり、別のパッケージをインストールする際に実施されたりしたときに）、シンボリックリンク <filename
+      class='libraryfile'>libfoo.so.1</filename> がリセットされますが、それが指し示す先が古いライブラリファイルとなってしまいます。
+      なぜならバージョン番号がより大きい方なので、そのバージョンの方が<quote>より新しい</quote>と解釈されるためです。
+      こういった状況は、パッケージをダウングレードした場合や、パッケージにおけるバージョン番号づけの取り決めが突然変わってしまった場合に起こり得るものです。
+      </para> </listitem>
+@z
+
+@x
+      <listitem> <para>If a package containing a shared library is updated,
+      and the name of library doesn't change, but a severe issue
+      (especially, a security vulnerability) is fixed, all running programs
+      linked to the shared library should be restarted.  The following
+      command, run as <systemitem class="username">root</systemitem> after
+      updating, will list what is using the old versions of those libraries
+      (replace <replaceable>libfoo</replaceable> with the name of the
+      library):</para>
+@y
+      <listitem> <para>
+      共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名に変更はなかったとします。
+      ただしそこでは重大な問題（特にセキュリティぜい弱性）が解消されているような場合は、この共有ライブラリにリンクしている実行中プログラムは、すべて再起動してください。
+      アップグレードした後に、以下のコマンドを <systemitem
+      class="username">root</systemitem> で実行すると、どういったプログラムが古いバージョンのライブラリを利用しているかの一覧が表示されます。
+      （<replaceable>libfoo</replaceable> の部分は、目的のライブラリ名に置き換えてください。）
+       </para>
+@z
+
+@x
+        If <application>OpenSSH</application> is being used for accessing
+        the system and it is linked to the updated library, you need to
+        restart <command>sshd</command> service, then logout, login again,
+        and rerun that command to confirm nothing is still using the
+        deleted libraries.
+@y
+        <application>OpenSSH</application> を利用してシステムにアクセスしている場合であって、これがリンクするライブラリがアップデートされたとします。
+        その場合は <command>sshd</command> サービスの再起動が必要です。
+        またシステムからはいったんログアウトしてログインし直し、その後に上のコマンドをもう一度実行して、削除されたライブラリを利用していないかどうかの確認を行ってください。
 @z
 
 @x

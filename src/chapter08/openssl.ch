@@ -95,27 +95,16 @@
         ぜい弱性への対処を行った新バージョンが公開されたら、OpenSSL をアップデートすることになります。
         リリースは公開される順に従って、初期リリースバージョンに英字 1 文字をつけて公開されます（たとえば 1.1.1、1.1.1a、1.1.1b、1.1.1c といった具合です）。
         本パッケージは <filename class="libraryfile">libcrypto.so</filename> または
-        <filename class="libraryfile">libssl.so</filename> へのリンクを行っていますが、LFS では共有ライブラリをインストールだけなので、<emphasis role="bold">同一シリーズ内でのアップグレードである限り</emphasis> は、パッケージを再コンパイルする必要はありません。
+        <filename class="libraryfile">libssl.so</filename> へのリンクを行っていますが、LFS では共有ライブラリをインストールするだけなので、<emphasis role="bold">同一シリーズ内でのアップグレードである限り</emphasis> は、パッケージを再コンパイルする必要はありません。
 @z
 
 @x
         However, any running programs linked to those libraries need to be stopped
-        and restarted. The following command, run as
-        <systemitem class="username">root</systemitem> after udating, will list what is
-        using the old versions of those libraries:
+        and restarted. Read the related entries in
+        <xref linkend='pkgmgmt-upgrade-issues'/> for details.
 @y
         そうであっても、それらのライブラリにリンクしているプログラムが稼働中であるなら、一度停止してから再起動することが必要です。
-        アップデートを行った後は、以下のコマンドを <systemitem
-        class="username">root</systemitem> ユーザーで実行すれば、どれが古いバージョンのライブラリを利用しているのかが一覧表示されます。
-@z
-
-@x
-        If you used <application>OpenSSH</application> to login to the system, you
-        need to logout, login again, and rerun that command to confirm nothing is
-        still using the deleted libraries.
-@y
-        <application>OpenSSH</application> を利用してシステムにログインしている場合は、ログアウトが必要です。
-        そして上のコマンドを実行すれば、削除されたライブラリがないかどうかを確認することができます。
+        詳しくは関連する話が <xref linkend='pkgmgmt-upgrade-issues'/> にあるので参照してください。
 @z
 
 @x

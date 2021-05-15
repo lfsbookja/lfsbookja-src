@@ -121,13 +121,6 @@
           </para>
 @z
 
-@x libc_cv_rtlddir=/usr/lib
-          <para>Fix hardcoded path to the executable loader in the
-            <command>ldd</command> script.</para>
-@y
-          <para><command>ldd</command> スクリプト内にある実行ローダーへのパスがハードコーディングされているので、これを修正します。</para>
-@z
-
 @x libc_cv_include_x86_isa_level=no
           <para>This disables <quote>x86 ISA needed</quote> property in
           Glibc libraries.  Use it <emphasis role="bold">if</emphasis>
