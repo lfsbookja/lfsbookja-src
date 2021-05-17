@@ -50,6 +50,24 @@
 @z
 
 @x
+      <para>2021-05-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Tweak install directories for eudev and e2fsprogs.
+          Thanks to Ryan Marsaw for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-05-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - eudev と e2fsprogs におけるインストールディレクトリを調整。
+          報告をあげてくれた Ryan Marsaw に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-05-14</para>
       <itemizedlist>
         <listitem>

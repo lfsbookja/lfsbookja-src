@@ -96,11 +96,13 @@
 
 @x
     <para>Install the shared <command>bzip2</command> binary into the
-    <filename class="directory">/bin</filename> directory:</para>
+    <filename class="directory">/usr/bin</filename> directory, and replace
+    two copies of <command>bzip2</command> with symlinks:</para>
 @y
     <para>
     共有化された <command>bzip2</command> 実行モジュールを <filename
-    class="directory">/bin</filename> ディレクトリにインストールします。
+    class="directory">/usr/bin</filename> ディレクトリにインストールします。
+    またシンボリックリンクにより <command>bzip2</command> のコピーを 2 つ作ります。
     </para>
 @z
 
