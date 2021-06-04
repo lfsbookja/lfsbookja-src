@@ -786,7 +786,8 @@ profile-html: validate $(ALLXML)
 	  $(RENDERTMP)/lfs-full.xml
 
 wget-list: $(BASEDIR)/wget-list
-$(BASEDIR)/wget-list: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent
+$(BASEDIR)/wget-list: stylesheets/wget-list.xsl chapter03/chapter03.xml \
+                      packages.ent patches.ent general.ent
 	@echo "Generating consolidated wget list at $(BASEDIR)/wget-list ..."
 	$(MKDIR_P) $(BASEDIR)
 #	$(XSLTPROC) --nonet --xinclude                     \

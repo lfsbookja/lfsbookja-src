@@ -50,6 +50,147 @@
 @z
 
 @x
+      <para>2021-06-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Tweak sendsignal bootscript to avoid
+            killing mdmod (if active).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-06-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - ブートスクリプト sendsignal を修正して mdmod が (アクティブ時に) kill されてしまうのを回避。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Update to linux-5.12.8 (security fix). Fixes
+          <ulink url="&lfs-ticket-root;4863">#4863</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - linux-5.12.8 (セキュリティフィックス) へのアップデート。
+          <ulink url="&lfs-ticket-root;4863">#4863</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-05-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20210526. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.2890. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zstd-1.5.0. Fixes
+          <ulink url="&lfs-ticket-root;4858">#4858</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.34.0. Fixes
+          <ulink url="&lfs-ticket-root;4860">#4860</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to inux-5.12.7. Fixes
+          <ulink url="&lfs-ticket-root;4857">#4857</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.50. Fixes
+          <ulink url="&lfs-ticket-root;4862">#4862</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-29. Fixes
+          <ulink url="&lfs-ticket-root;4859">#4859</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.4.1. Fixes
+          <ulink url="&lfs-ticket-root;4861">#4861</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.185. Fixes
+          <ulink url="&lfs-ticket-root;4855">#4855</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-4.0.2. Fixes
+          <ulink url="&lfs-ticket-root;4855">#4855</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-05-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20210526 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.2890 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - zstd-1.5.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4858">#4858</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.34.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4860">#4860</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-5.12.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4857">#4857</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.50 へのアップデート。
+          <ulink url="&lfs-ticket-root;4862">#4862</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-29 へのアップデート。
+          <ulink url="&lfs-ticket-root;4859">#4859</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.4.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4861">#4861</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.185 へのアップデート。
+          <ulink url="&lfs-ticket-root;4855">#4855</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-4.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4855">#4855</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-05-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Remove obsolete DOCDIR option from iproute2 install command.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-05-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - iproute2 のインストールコマンドから、古くなった DOCDIR オプションを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-05-17</para>
       <itemizedlist>
         <listitem>
@@ -88,7 +229,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Removed instructions for running tests
-          in Python due to an idefinite hang in the partial
+          in Python due to an indefinite hang in the partial
           LFS envrionment.</para>
         </listitem>
         <listitem>

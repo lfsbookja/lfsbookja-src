@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -1445,28 +1441,6 @@
           <seg>Kmod</seg>
 @y
           <seg>Kmod</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-
-%----------------------------------------------------------------------
-@x Popt
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, and Make</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make</seg>
-@z
-@x
-          <seg>Diffutils and Sed</seg>
-@y
-          <seg>Diffutils, Sed</seg>
-@z
-@x
-          <seg>Pkg-config</seg>
-@y
-          <seg>Pkg-config</seg>
 @z
 @x
           <seg>None</seg>

@@ -33,6 +33,18 @@
 @z
 
 @x
+       <para>In the test output there are several places that
+       indicate 'failed'. These are expected and only 'FAIL' is an actual
+       test failure. There should be no test failures.</para>
+@y
+       <para>
+       テスト結果の出力の中に 'failed' と示される箇所があります。
+       これは実際のテストが失敗したときだけ 'FAIL' と出力されるものです。
+       したがってテスト失敗ではありません。
+       </para>
+@z
+
+@x
     <para>To test the results, issue:</para>
 @y
     <para>

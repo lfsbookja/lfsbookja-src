@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -77,13 +73,9 @@
 @z
 
 @x
-    <para>
-      One test, <filename>VERSION</filename>, is known to fail.
-    </para>
+      One test, <filename>version</filename>, is known to fail.
 @y
-    <para>
-      <filename>VERSION</filename> というテストが 1 つだけ失敗します。
-    </para>
+      <filename>version</filename> というテストが 1 つだけ失敗します。
 @z
 
 @x
