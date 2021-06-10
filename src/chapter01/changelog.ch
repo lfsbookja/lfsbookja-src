@@ -50,6 +50,46 @@
 @z
 
 @x
+      <para>2021-06-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - For consistency, make the cpp link in /usr/lib.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Install iproute2 programs in /usr/sbin for
+          consistency.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-06-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - 一貫性を保つため cpp リンクを /usr/lib に生成。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - 一貫性を保つため iproute2 プログラムを /usr/sbin にインストール。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-06-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Make shutting down the netwrok more robust.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-06-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ネットワークをより確実にシャットダウンするように変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-06-02</para>
       <itemizedlist>
         <listitem>

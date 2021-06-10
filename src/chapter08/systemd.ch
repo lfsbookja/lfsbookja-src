@@ -72,6 +72,17 @@
       <title>&MeaningOfOption1;meson&MeaningOfOption2;</title>
 @z
 
+@x --buildtype=release
+          <para>This switch overrides the default buildtype
+          (<quote>debug</quote>), which would produce unoptimized
+          binaries.</para>
+@y
+          <para>
+          本スイッチは、デフォルトのビルドタイプ (<quote>debug</quote>) をオーバーライドします。
+          そのままにしておくと、最適化されていない実行モジュールが生成されるためです。
+          </para>
+@z
+
 @x -Ddefault-dnssec=no
           <para>This switch turns off the experimental DNSSEC support.</para>
 @y
