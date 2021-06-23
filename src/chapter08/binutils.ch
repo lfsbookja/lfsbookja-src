@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -186,11 +182,19 @@
 @z
 
 @x
-    <para>Four tests named <quote>Run property ...</quote> are known to
+    <para>Seven gold tests are known to fail with gcc-11.1.0</para>
+@y
+    <para>
+    7 つの gold テストが gcc-11.1.0 を用いると失敗します。
+    </para>
+@z
+
+@x
+    <para>Four ld tests named <quote>Run property ...</quote> are known to
     fail.</para>
 @y
     <para>
-    <quote>Run property ...</quote>と名づけられている 4 つのテストが失敗します。
+    <quote>Run property ...</quote>と名づけられている 4 つの ld テストが失敗します。
     </para>
 @z
 

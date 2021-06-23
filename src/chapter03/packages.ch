@@ -670,6 +670,22 @@
         <para>&Download;: <ulink url="&util-linux-url;"/></para>
 @z
 
+@x Util-linux Man Pages
+        <para>Download: <ulink url="&util-linux-man-url;"/></para>
+@y
+        <para>&Download;: <ulink url="&util-linux-man-url;"/></para>
+@z
+@x
+          <para>The Linux From Scratch team generates its own tarball of the
+          man pages using the util-linux source. This is done in order to avoid
+          unnecessary dependencies.</para>
+@y
+          <para>
+          Linux From Scratch チームでは、util-linux ソースから man ページの tarball を独自に作り出しています。
+          これは不要な依存関係を避ける目的で行っています。
+          </para>
+@z
+
 @x vim
         <para>Home page: <ulink url="&vim-home;"/></para>
         <para>Download: <ulink url="&vim-url;"/></para>

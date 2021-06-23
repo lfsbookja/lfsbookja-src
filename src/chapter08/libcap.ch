@@ -28,6 +28,14 @@
 @z
 
 @x
+    <para>First, fix an upstream oversight in the latest release:</para>
+@y
+    <para>
+    はじめにアップストリームによる最新版への修正を行います。
+    </para>
+@z
+
+@x
     <para>Prevent static libraries from being installed:</para>
 @y
     <para>

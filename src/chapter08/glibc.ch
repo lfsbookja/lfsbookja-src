@@ -204,10 +204,10 @@
 
 @x
         <para><emphasis>elf/tst-cpu-features-cpuinfo</emphasis>
-        may fail on some architectures.</para>
+        will fail on non-intel CPUs with this version of glibc.</para>
 @y
         <para>
-        <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> は特定の CPU アーキテクチャーでは失敗します。
+        <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> は、この glibc バージョンを使って intel 以外の CPU アーキテクチャー上でテストを行った場合には失敗します。
         </para>
 @z
 

@@ -81,6 +81,14 @@
 @z
 
 @x
+  <para>Finally, install the man pages:</para>
+@y
+  <para>
+  最後に man ページをインストールします。
+  </para>
+@z
+
+@x
     <title>Contents of Util-linux</title>
 @y
     <title>&ContentsOf1;Util-linux&ContentsOf2;</title>

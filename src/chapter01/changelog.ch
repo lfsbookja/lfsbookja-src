@@ -50,6 +50,88 @@
 @z
 
 @x
+      <para>2021-06-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Ensure libcap installs capsh.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-06-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libcap において capsh をインストールするように。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-06-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20210611. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.3001. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.37. Fixes
+          <ulink url="&lfs-ticket-root;4865">#4865</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.58.1. Fixes
+          <ulink url="&lfs-ticket-root;4867">#4867</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.12.10. Fixes
+          <ulink url="&lfs-ticket-root;4857">#4866</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to m4-1.4.19. Fixes
+          <ulink url="&lfs-ticket-root;4864">#4864</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grub-2.06. Fixes
+          <ulink url="&lfs-ticket-root;4868">#4868</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-06-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20210611 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.3001 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.37 へのアップデート。
+          <ulink url="&lfs-ticket-root;4865">#4865</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.58.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4867">#4867</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.12.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4857">#4866</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - m4-1.4.19 へのアップデート。
+          <ulink url="&lfs-ticket-root;4864">#4864</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grub-2.06 へのアップデート。
+          <ulink url="&lfs-ticket-root;4868">#4868</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-06-09</para>
       <itemizedlist>
         <listitem>
@@ -144,7 +226,7 @@
           <ulink url="&lfs-ticket-root;4860">#4860</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to inux-5.12.7. Fixes
+          <para>[bdubbs] - Update to linux-5.12.7. Fixes
           <ulink url="&lfs-ticket-root;4857">#4857</ulink>.</para>
         </listitem>
         <listitem>
@@ -188,7 +270,7 @@
           <ulink url="&lfs-ticket-root;4860">#4860</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Linux-5.12.7 へのアップデート。
+          <para>[bdubbs] - linux-5.12.7 へのアップデート。
           <ulink url="&lfs-ticket-root;4857">#4857</ulink>.</para>
         </listitem>
         <listitem>

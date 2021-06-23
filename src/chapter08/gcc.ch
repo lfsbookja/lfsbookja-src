@@ -161,10 +161,10 @@
 @z
 
 @x
-    <para>Additionally, the test constexpr-52830 is known to fail.</para>
+    <para>Additionally, three tests in constexpr-52830 are known to fail.</para>
 @y
     <para>
-    さらに constexpr-52830 というテストは失敗します。
+    さらに constexpr-52830 内の 3 つのテストは失敗します。
     </para>
 @z
 
