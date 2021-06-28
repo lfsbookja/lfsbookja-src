@@ -22,14 +22,6 @@
 @z
 
 @x
-    <para>First, fix a race condition if using multiple cores:</para>
-@y
-    <para>
-    マルチコア利用時の競合状態を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Bash for compilation:</para>
 @y
     <para>&PreparePackage1;Bash&PreparePackage2;</para>

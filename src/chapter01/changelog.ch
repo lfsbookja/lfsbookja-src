@@ -50,6 +50,56 @@
 @z
 
 @x
+      <para>2021-06-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bash-5.1.8. Fixes
+          <ulink url="&lfs-ticket-root;4869">#4869</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to dejagnu-1.6.3. Fixes
+          <ulink url="&lfs-ticket-root;4871">#4871</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.20. Fixes
+          <ulink url="&lfs-ticket-root;4872">#4872</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.51. Fixes
+          <ulink url="&lfs-ticket-root;4874">#4874</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-5.1. Fixes
+          <ulink url="&lfs-ticket-root;4876">#4876</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-06-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash-5.1.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4869">#4869</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - dejagnu-1.6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4871">#4871</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.20 へのアップデート。
+          <ulink url="&lfs-ticket-root;4872">#4872</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.51 へのアップデート。
+          <ulink url="&lfs-ticket-root;4874">#4874</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-5.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4876">#4876</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-06-18</para>
       <itemizedlist>
         <listitem>
