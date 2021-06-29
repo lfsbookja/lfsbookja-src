@@ -50,6 +50,25 @@
 @z
 
 @x
+      <para>2021-06-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - If installing individual locales, add 9 more
+          used by libstdc++-v3 tests. Fixes
+          <ulink url="&lfs-ticket-root;4877">#4877</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-06-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - ロケールを個別にインストールする際に、libstdc++-v3 テストで用いられるロケール 9 つを追加。
+          <ulink url="&lfs-ticket-root;4877">#4877</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-06-27</para>
       <itemizedlist>
         <listitem>

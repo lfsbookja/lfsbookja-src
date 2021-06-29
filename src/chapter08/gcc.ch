@@ -151,20 +151,24 @@
 @z
 
 @x
-    <para>Six tests related to get_time are known to fail.  These are
-    apparently related to the en_HK locale.</para>
+    <para>In g++, three tests in constexpr-52830 are known to fail and
+    also to be treated as unexpected successes (XPASS) even though they
+    report 'internal compiler error'.</para>
 @y
     <para>
-    get_time に関連するテスト 6 つが失敗します。
-    これは en_HK ロケールに関係するためです。
+    g++ においては、constexpr-52830 におけるテストが 3 つ失敗します。
+    その場合には 'internal compiler error' と表示されるにも関わらず、予期しない成功 (XPASS) と扱われます。
     </para>
 @z
 
 @x
-    <para>Additionally, three tests in constexpr-52830 are known to fail.</para>
+    <para>In libstdc++, one numpunct test and six tests related to get_time are
+    known to fail.  These are all because the locale definitions in glibc have
+    changed and the tests do not currently support those changes.</para>
 @y
     <para>
-    さらに constexpr-52830 内の 3 つのテストは失敗します。
+    libstdc++ においては、numpunct のテスト 1 つと get_time に関連するテストが 6 つ失敗します。
+    この理由は、glibc におけるロケール定義が変更されているからであり、そのテストがロケール変更に対応していないためです。
     </para>
 @z
 
