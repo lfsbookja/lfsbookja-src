@@ -34,6 +34,10 @@
     revision="systemd">-systemd</phrase> 版のバージョン番号を意味します。
    また「チェンジセット 12345」という表記は、オリジナル XML ソースファイルの Subversion 管理下でのリビジョン (その参照ページ) を意味します。
    </para>
+   <para>
+   「r10.1-XXX という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
+   また 9a178619b などのリンクは、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値 (その参照ページ) を意味します。
+   </para>
   </note>
 
   <itemizedlist>
@@ -54,6 +58,17 @@
     </listitem>
 
 -->
+
+   <listitem>
+      <para>2021-07-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r10.1-117 (<ulink url="&lfs-changeset;e182fa353">e182fa353</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
 
    <listitem>
       <para>2021-06-29</para>

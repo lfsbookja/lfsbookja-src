@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -28,6 +24,15 @@
     <title>Installation of DejaGNU</title>
 @y
     <title>&InstallationOf1;DejaGNU&InstallationOf2;</title>
+@z
+
+@x
+    <para>The upstream recommends building DejaGNU in a dedicated build
+    directory:</para>
+@y
+    <para>
+    アップストリームは、専用のビルドディレクトリを作成して DejaGNU をビルドすることを推奨しています。
+    </para>
 @z
 
 @x

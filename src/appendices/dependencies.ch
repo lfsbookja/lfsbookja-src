@@ -917,6 +917,33 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Jinja2 dependency info -->
+@y
+<!-- Begin Jinja2 dependency info -->
+@z
+@x
+         <seg>MarkupSafe and Python</seg>
+@y
+         <seg>MarkupSafe, Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Systemd</seg>
+@y
+          <seg>Systemd</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Kbd
          <seg>Bash, Binutils, Bison, Check, Coreutils, Flex, GCC, Gettext,
          Glibc, Gzip, Make, Patch, and Sed</seg>
@@ -1231,6 +1258,34 @@
 @y
           <seg>なし</seg>
 @z
+
+%----------------------------------------------------------------------
+@x
+<!-- Begin MarkupSafe dependency info -->
+@y
+<!-- Begin MarkupSafe dependency info -->
+@z
+@x
+         <seg>Python</seg>
+@y
+         <seg>Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Jinja2</seg>
+@y
+          <seg>Jinja2</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
 %----------------------------------------------------------------------
 @x
 <!-- Begin Meson dependency info -->
@@ -1615,11 +1670,11 @@
 %----------------------------------------------------------------------
 @x Systemd
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
-         GCC, Glibc, Gperf, Grep, Intltool, Libcap,
+         GCC, Glibc, Gperf, Grep, Intltool, Jinja2, Libcap,
          Meson, Sed, and Util-linux</seg>
 @y
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
-         GCC, Glibc, Gperf, Grep, Intltool, Libcap,
+         GCC, Glibc, Gperf, Grep, Intltool, Jinja2, Libcap,
          Meson, Sed, Util-linux</seg>
 @z
 @x

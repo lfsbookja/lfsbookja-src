@@ -50,6 +50,89 @@
 @z
 
 @x
+      <para>2021-07-08</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Added Jinja2-3.0.1.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Added MarkupSafe-2.0.1.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to texinfo-6.8. Fixes
+          <ulink url="&lfs-ticket-root;4880">#4880</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to iproute2-5.13.0. Fixes
+          <ulink url="&lfs-ticket-root;4879">#4879</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to Python-3.9.6 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;4878">#4878</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-249 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;4882">#4882</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to Linux-5.13.1. Fixes
+          <ulink url="&lfs-ticket-root;4873">#4873</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-08</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Jinja2-3.0.1 追加。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - MarkupSafe-2.0.1 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - texinfo-6.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4880">#4880</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - iproute2-5.13.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4879">#4879</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Python-3.9.6 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;4878">#4878</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-249 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;4882">#4882</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Linux-5.13.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4873">#4873</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Patch gcc to fix some regressions (will be
+          needed to build firefox-91ESR in BLFS) and to allow it to
+          build against linux-5.13.0 kernel headers. Fixes
+          <ulink url="&lfs-ticket-root;4875">#4875</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - gcc において縮退を修正するパッチを追加 (BLFS にて firefox-91ESR のビルドに必要)。
+          また linux-5.13.0 カーネルヘッダーに対してビルドできるように。
+          <ulink url="&lfs-ticket-root;4875">#4875</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-06-28</para>
       <itemizedlist>
         <listitem>

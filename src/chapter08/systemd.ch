@@ -50,13 +50,15 @@
 @z
 
 @x
-    <para>Remove an unneeded group,
-    <systemitem class="groupname">render</systemitem>, from the default udev
+    <para>Remove two unneeded groups,
+    <systemitem class="groupname">render</systemitem> and
+    <systemitem class="groupname">sgx</systemitem>, from the default udev
     rules:</para>
 @y
     <para>
-    デフォルトの udev ルールから、不要なグループ <systemitem
-    class="groupname">render</systemitem> を削除します。
+    デフォルトの udev ルールから、不要な 2 つのグループ
+    <systemitem class="groupname">render</systemitem> と <systemitem
+    class="groupname">sgx</systemitem> を削除します。
     </para>
 @z
 

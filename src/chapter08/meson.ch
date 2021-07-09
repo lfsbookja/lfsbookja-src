@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -121,9 +117,15 @@
 
 @x
         <seg>meson</seg>
+        <!-- We are using DESTDIR installation here, so the directory layout
+          is different than other Python modules in LFS
+          (Jinja2 & MarkupSafe). -->
         <seg>/usr/lib/python&python-minor;/site-packages/meson-&meson-version;-py&python-minor;.egg-info and /usr/lib/python&python-minor;/site-packages/mesonbuild</seg>
 @y
         <seg>meson</seg>
+        <!-- We are using DESTDIR installation here, so the directory layout
+          is different than other Python modules in LFS
+          (Jinja2 & MarkupSafe). -->
         <seg>/usr/lib/python&python-minor;/site-packages/meson-&meson-version;-py&python-minor;.egg-info, /usr/lib/python&python-minor;/site-packages/mesonbuild</seg>
 @z
 

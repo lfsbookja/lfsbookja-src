@@ -1,10 +1,6 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/chapter08
 CHANGE_FILES = \
 	aboutdebug.ch     \
@@ -47,6 +43,7 @@ CHANGE_FILES = \
 	intltool.ch       \
 	introduction.ch   \
 	iproute2.ch       \
+	jinja2.ch         \
 	kbd.ch            \
 	kmod.ch           \
 	less.ch           \
@@ -59,6 +56,7 @@ CHANGE_FILES = \
 	make.ch           \
 	man-db.ch         \
 	man-pages.ch      \
+	markupsafe.ch     \
 	meson.ch          \
 	mpc.ch            \
 	mpfr.ch           \
@@ -109,6 +107,6 @@ Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
 	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
 
 @MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(mysrcdir)/, $(ch_mds))
-@MAINT@$(addprefix $(mysrcdir)/, $(ch_mds)):
-@MAINT@	@if test ! -f $@; then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(mysrcdir)|$(origdir)|" -e "s|\.ch$$|.md|"` $@; fi
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

@@ -317,6 +317,14 @@
         <para>&Download;: <ulink url="&iproute2-url;"/></para>
 @z
 
+@x Jinja2
+        <para>Home page: <ulink url="&jinja2-home;"/></para>
+        <para>Download: <ulink url="&jinja2-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&jinja2-home;"/></para>
+        <para>&Download;: <ulink url="&jinja2-url;"/></para>
+@z
+
 @x kbd
         <para>Home page: <ulink url="&kbd-home;"/></para>
         <para>Download: <ulink url="&kbd-url;"/></para>
@@ -447,6 +455,14 @@
 @y
         <para>&Homepage;: <ulink url="&man-pages-home;"/></para>
         <para>&Download;: <ulink url="&man-pages-url;"/></para>
+@z
+
+@x MarkupSafe
+        <para>Home page: <ulink url="&markupsafe-home;"/></para>
+        <para>Download: <ulink url="&markupsafe-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&markupsafe-home;"/></para>
+        <para>&Download;: <ulink url="&markupsafe-url;"/></para>
 @z
 
 @x Meson

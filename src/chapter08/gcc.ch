@@ -25,6 +25,17 @@
 @z
 
 @x
+    <para>First, apply a patch to fix some regressions and to cope
+    with the removal of an obsolete kernel header in linux-5.13:</para>
+@y
+    <para>
+    まずはパッチを適用します。
+    いくつか発生していた縮退をこれによって修正します。
+    また linux-5.13 のカーネルヘッダーにおいて、非推奨のものが削除されたことに対処します。
+    </para>
+@z
+
+@x
     <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
@@ -152,23 +163,24 @@
 
 @x
     <para>In g++, three tests in constexpr-52830 are known to fail and
-    also to be treated as unexpected successes (XPASS) even though they
-    report 'internal compiler error'.</para>
+    also to be treated as unexpected successes (XPASS).  This is because
+    an <quote>internal compiler error</quote> on this test is fixed, but
+    the compiler still rejects some valid code.</para>
 @y
     <para>
-    g++ においては、constexpr-52830 におけるテストが 3 つ失敗します。
-    その場合には 'internal compiler error' と表示されるにも関わらず、予期しない成功 (XPASS) と扱われます。
+    g++ においては、constexpr-52830 におけるテストが 3 つ失敗するものとされていますが、予期しない成功 (XPASS) となります。
+    これは、そのテストにおいて<quote>内部コンパイラーエラー</quote>が修正されるからであり、ただしコンパイラーが正常なコードを受け付けないままであるからです。
     </para>
 @z
 
 @x
     <para>In libstdc++, one numpunct test and six tests related to get_time are
     known to fail.  These are all because the locale definitions in glibc have
-    changed and the tests do not currently support those changes.</para>
+    changed but libstdc++ does not currently support those changes.</para>
 @y
     <para>
     libstdc++ においては、numpunct のテスト 1 つと get_time に関連するテストが 6 つ失敗します。
-    この理由は、glibc におけるロケール定義が変更されているからであり、そのテストがロケール変更に対応していないためです。
+    この理由は、glibc におけるロケール定義が変更されているからであり、libstdc++ はその変更に対応していないためです。
     </para>
 @z
 

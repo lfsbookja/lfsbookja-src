@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -80,6 +76,12 @@
 @z
 
 @x
+<!ENTITY jinja2-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY jinja2-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY less-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY less-fin-sbu "0.1 SBU 以下">
@@ -114,6 +116,12 @@
 <!ENTITY man-pages-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY man-pages-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY markupsafe-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY markupsafe-fin-sbu "0.1 SBU 以下">
 @z
 
 @x
