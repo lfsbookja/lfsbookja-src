@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -23,6 +19,19 @@
     <title>Installation of GRUB</title>
 @y
     <title>&InstallationOf1;GRUB&InstallationOf2;</title>
+@z
+
+@x
+        If your system has UEFI support and you wish to boot LFS with UEFI,
+        you can skip this package in LFS,
+        and install GRUB with UEFI support (and its dependencies) following
+        <ulink url="&blfs-book;postlfs/grub-efi.html">the BLFS page</ulink>
+        at the end of this chapter.
+@y
+        システムが UEFI をサポートしていて、これを使って LFS を起動しようとする場合は、LFS における本パッケージは省略することができます。
+        その場合は本章の終わりに、<ulink
+        url="&blfs-book;postlfs/grub-efi.html">BLFS ページ</ulink> に従って UEFI 対応の GRUB
+        (およびその依存パッケージ) をインストールしてください。
 @z
 
 @x
@@ -195,6 +204,12 @@
           <para>
           xkb レイアウトを GRUB が認識できる他の書式に変換するスクリプト。
           </para>
+@z
+
+@x grub-macbless
+          <para>Mac-style bless on HFS or HFS+ files</para>
+@y
+          <para>HFS または HFS+ ファイルに対する Mac 風の bless</para>
 @z
 
 @x grub-menulst2cfg

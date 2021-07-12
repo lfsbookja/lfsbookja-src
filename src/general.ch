@@ -24,9 +24,9 @@
 <!ENTITY releasedate     "August 26th, 2021">
 <!ENTITY copyrightdate   "1999-2021">
 -->
-<!ENTITY jversion        "20210709">
-<!ENTITY jversiond       "20210709">
-<!ENTITY jcorrespondSHA  "e182fa353"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion        "20210712">
+<!ENTITY jversiond       "20210712">
+<!ENTITY jcorrespondSHA  "176404f5e"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
 <!ENTITY dir-jversion    "git-ja">
 <!ENTITY dir-jversiond   "git-sysdja">
 @z
@@ -66,6 +66,7 @@
 <!ENTITY buildtime       "Approximate build time">
 <!ENTITY diskspace       "Required disk space">
 <!ENTITY dependencies    "Installation depends on">
+<!ENTITY runtime         "Required at runtime">
 <!ENTITY testsuites      "Test suite depends on">
 <!ENTITY before          "Must be installed before">
 <!ENTITY external        "Optional dependencies">
@@ -73,6 +74,7 @@
 <!ENTITY buildtime       "概算ビルド時間">
 <!ENTITY diskspace       "必要ディスク容量">
 <!ENTITY dependencies    "インストール依存パッケージ">
+<!ENTITY runtime         "実行時依存パッケージ">
 <!ENTITY testsuites      "テストスイート依存パッケージ">
 <!ENTITY before          "事前インストールパッケージ">
 <!ENTITY external        "任意依存パッケージ">
