@@ -50,6 +50,22 @@
 @z
 
 @x
+      <para>2021-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove modifications to m4 that are no longer needed.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - m4 における修正内容が不要になったため削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-08</para>
       <itemizedlist>
         <listitem revision="systemd">
