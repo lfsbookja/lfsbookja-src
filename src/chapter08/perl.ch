@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -26,6 +22,15 @@
     <title>Installation of Perl</title>
 @y
     <title>&InstallationOf1;Perl&InstallationOf2;</title>
+@z
+
+@x
+    <para>First, apply a patch that fixes an issue highlighted by recent
+    versions of gdbm:</para>
+@y
+    <para>
+    はじめに、gdbm の最新版において明らかになった問題を修正するためのパッチを適用します。
+    </para>
 @z
 
 @x

@@ -50,6 +50,26 @@
 @z
 
 @x
+      <para>2021-07-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Fix test failures in perl-5.34.0 by building less before
+          perl and by patching perl for a problem highlighted by gdbm-1.20. Fixes
+          <ulink url="&lfs-ticket-root;4885">#4885</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - perl の前に less をビルドすることで、perl-5.34.0 のテスト失敗を修正。
+          また gdbm-1.20 において明らかになった問題に対して perl へのパッチ適用とする。
+          <ulink url="&lfs-ticket-root;4885">#4885</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-15</para>
       <itemizedlist>
         <listitem>

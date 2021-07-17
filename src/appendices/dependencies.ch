@@ -1888,9 +1888,9 @@
           <seg>GDBM, Glibc</seg>
 @z
 @x
-          <seg>Iana-Etc and Procps-ng</seg>
+          <seg>Iana-Etc, Less. and Procps-ng</seg>
 @y
-          <seg>Iana-Etc, Procps-ng</seg>
+          <seg>Iana-Etc, Less, Procps-ng</seg>
 @z
 @x
           <seg>Autoconf</seg>
