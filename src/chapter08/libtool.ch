@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -81,7 +77,7 @@
 @z
 
 @x
-    <para>Remove an useless static library:</para>
+    <para>Remove a useless static library:</para>
 @y
     <para>
     不要なスタティックライブラリを削除します。

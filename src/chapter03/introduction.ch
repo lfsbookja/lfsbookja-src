@@ -46,8 +46,8 @@
   location has changed since this book was published, Google (<ulink
   url="http://www.google.com/"/>) provides a useful search engine for
   most packages. If this search is unsuccessful, try one of the
-  alternative means of downloading discussed at <ulink
-  url="&lfs-root;lfs/packages.html#packages"/>. </para>
+  alternative means of downloading at <ulink
+  url="&lfs-root;lfs/mirrors.html#files"/>. </para>
 @y
   <para>
   ダウンロードサイトは常にアクセス可能であるとは限りません。
@@ -55,7 +55,7 @@
   url="http://www.google.com/"/>) を使って検索してみてください。
   たいていのパッケージを見つけ出すことが出来るはずです。
   それでも見つけられなかったら <ulink
-  url="&lfs-root;lfs/packages.html#packages"/> に示されている方法に従って入手してください。
+  url="&lfs-root;lfs/packages.html#packages"/> から入手してください。
   </para>
 @z
 

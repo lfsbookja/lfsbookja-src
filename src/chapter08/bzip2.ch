@@ -107,7 +107,7 @@
 @z
 
 @x
-    <para>Remove an useless static library:</para>
+    <para>Remove a useless static library:</para>
 @y
     <para>
     不要なスタティックライブラリを削除します。
