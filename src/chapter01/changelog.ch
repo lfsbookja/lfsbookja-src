@@ -50,6 +50,23 @@
 @z
 
 @x
+      <para>2021-07-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Add text about security advisories to the
+          Errata page.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - 正誤情報（errata）のページに、セキュリティアドバイスに関しての説明を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-17</para>
       <itemizedlist>
         <listitem>
