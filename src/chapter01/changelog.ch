@@ -50,6 +50,33 @@
 @z
 
 @x
+      <para>2021-07-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Update to linux-5.13.4 (security fix). Fixes
+          <ulink url="&lfs-ticket-root;4886">#4886</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Use a fixed, non-zero UID for
+          <systemitem class="username">tester</systemitem> user, and spawn a
+          new pseudoterminal to satisfy bash testsuite.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - linux-5.13.4 (セキュリティフィックス) へのアップデート。
+          <ulink url="&lfs-ticket-root;4886">#4886</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - <systemitem class="username">tester</systemitem> ユーザーに対して、UID はゼロ以外の固定値を用いる。
+          そして bash のテストスイートを成功させるため、新たな疑似端末を起動することに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-19</para>
       <itemizedlist>
         <listitem>

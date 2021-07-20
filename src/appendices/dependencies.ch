@@ -217,9 +217,9 @@
           <seg>Glibc, Ncurses, Readline</seg>
 @z
 @x
-          <seg>Shadow</seg>
+          <seg>Expect and Shadow</seg>
 @y
-          <seg>Shadow</seg>
+          <seg>Expect, Shadow</seg>
 @z
 @x
           <seg>None</seg>
