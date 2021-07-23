@@ -69,6 +69,17 @@
 @z
 
 @x
+    <para>Ensure that the <command>ldconfig</command> and <command>sln</command>
+    utilites are installed into
+    <filename class="directory">/usr/sbin</filename>:</para>
+@y
+    <para>
+    <command>ldconfig</command> と <command>sln</command> ユーティリティーを <filename
+    class="directory">/usr/sbin</filename> にインストールするようにします。
+    </para>
+@z
+
+@x
     <para>Next, prepare Glibc for compilation:</para>
 @y
     <para>

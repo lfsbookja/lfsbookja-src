@@ -50,6 +50,31 @@
 @z
 
 @x
+      <para>2021-07-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Correct page IDs in Chapter 08 dejagnu, expect, and
+          tcl.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Ensure that glibc installs ldconfig and sln to 
+          <filename class="directory">/usr/sbin</filename>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - 第 8 章の dejagnu, expect, tcl のページ ID を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - glibc の ldconfig と sln を <filename
+          class="directory">/usr/sbin</filename> へインストールするように。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-20</para>
       <itemizedlist>
         <listitem>
