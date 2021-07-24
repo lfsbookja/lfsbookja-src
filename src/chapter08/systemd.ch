@@ -25,19 +25,10 @@
 @z
 
 @x
-    <para>First, apply a patch to fix the build with GCC-10 and fix a segfault:</para>
+    <para>First, apply a patch to fix a security vulnerability:</para>
 @y
     <para>
-    はじめに GCC-10 を使ってビルドできるようにパッチを適用します。
-    セグメントフォールトの修正も行います。
-    </para>
-@z
-
-@x
-    <para>First, apply a patch to fix some build issues:</para>
-@y
-    <para>
-    ビルドにて発生する問題を修正するパッチを適用します。
+    セキュリティぜい弱性を修正するパッチを適用します。
     </para>
 @z
 

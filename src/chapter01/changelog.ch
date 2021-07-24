@@ -50,6 +50,48 @@
 @z
 
 @x
+      <para>2021-07-23</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Guard systemd against CVE-2021-33910. Fixes
+          <ulink url="&lfs-ticket-root;4889">#4889</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to meson-0.59.0. Fixes
+          <ulink url="&lfs-ticket-root;4888">#4888</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to binutils-2.37. Fixes
+          <ulink url="&lfs-ticket-root;4887">#4887</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to less-590. Fixes
+          <ulink url="&lfs-ticket-root;4884">#4884</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-23</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd において CVE-2021-33910 に対応する。
+          <ulink url="&lfs-ticket-root;4889">#4889</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - meson-0.59.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4888">#4888</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - binutils-2.37 へのアップデート。
+          <ulink url="&lfs-ticket-root;4887">#4887</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - less-590 へのアップデート。
+          <ulink url="&lfs-ticket-root;4884">#4884</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-22</para>
       <itemizedlist>
         <listitem>
