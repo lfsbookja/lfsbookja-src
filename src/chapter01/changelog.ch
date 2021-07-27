@@ -50,6 +50,78 @@
 @z
 
 @x
+      <para>2021-07-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Fix a programming error in shadow-4.9</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - shadow-4.9 のプログラムエラーを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-07-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - (Hopefully) complete stripping workaround.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - ストリップ処理を (おそらく) 完璧なものに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-07-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add workaround to strip libraries 
+          correctly.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Add workaround to install Binutils-2.37 man pages
+          correctly.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.9. Fixes
+          <ulink url="&lfs-ticket-root;4891">#4891</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux 2.37.1. Fixes
+          <ulink url="&lfs-ticket-root;4890">#4890</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ライブラリを正しくストリップするための回避策を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Binutils-2.37 の man ページを正しくインストールするための回避策を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4891">#4891</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux 2.37.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4890">#4890</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-23</para>
       <itemizedlist>
         <listitem revision="systemd">

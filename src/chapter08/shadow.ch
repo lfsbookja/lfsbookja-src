@@ -110,6 +110,14 @@
 @z
 
 @x
+    <para>Fix a simple programming error by modifying a file with following command:</para>
+@y
+    <para>
+    1 つのファイルにおいて単純なプログラミングエラーがあるため、これを修正するために以下のコマンドを実行します。
+    </para>
+@z
+
+@x
     <para>Prepare Shadow for compilation:</para>
 @y
     <para>&PreparePackage1;Shadow&PreparePackage2;</para>

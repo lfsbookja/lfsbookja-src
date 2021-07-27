@@ -229,6 +229,30 @@
 @z
 
 @x
+        <para>If a binary or a shared library is overwrote, the processes
+        using the code or data in the binary or library may crash.  The
+        correct way to update a binary or a shared library without causing
+        the process to crash is: remove it first, then install the new
+        version into position. The <command>install</command> command
+        provided by <application>Coreutils</application> has already
+        implemented this and most packages use it to install binaries and
+        libraries.  So you won't be troubled by this issue most of the time.
+        However, the install process of some packages (notably Mozilla JS
+        in BLFS) just overwrites the file if it exists and causes crash, so
+        it's safer to save your work and close unneeded running processes
+        before updating a package.</para>
+@y
+        <para>
+        バイナリや共有ライブラリが上書きされると、そのバイナリや共有バイナリ内のコードやデータを利用するプロセスがクラッシュすることがあります。
+        プロセスがクラッシュしないように、バイナリや共有ライブラリを正しく更新する方法は、まず初めに削除を行ってから、新たなものをそこにインストールすることです。
+        <application>Coreutils</application> が提供する <command>install</command> コマンドは、すでにこの処理が実装されているため、たいていのパッケージにおいて、バイナリやライブラリのインストールに利用されています。
+        したがってそのような問題に悩まされることは、これまでほとんどなかったはずです。
+        しかしパッケージの中には (特に BLFS にある Mozilla JS など)、すでにあるファイルを上書きする方式をとっているため、クラッシュするものがあります。
+        そこでパッケージ更新の前には、それまでの作業を保存して、不要な起動プロセスは停止することが安全です。
+        </para>
+@z
+
+@x
     <title>Package Management Techniques</title>
 @y
     <title>パッケージ管理手法</title>

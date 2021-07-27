@@ -53,6 +53,17 @@
 @z
 
 @x
+    <para>An error in the building system causes the shipped man pages to
+    be empty.  Workaround the issue and remove the shipped man pages, so the
+    man pages will be regenerated correctly:</para>
+@y
+    <para>
+    ビルドシステムに誤りがあって、同梱されている man ページが空になっています。
+    これを解消するため、一度 man ページを削除して、man ページを正しく再生成するようにします。
+    </para>
+@z
+
+@x
     <para>Now remove one test that prevents the tests from running
     to completion:</para>
 @y

@@ -46,34 +46,42 @@
 @z
 
 @x
-  <para>First place the debugging symbols for selected libraries 
-  in separate files.  This debugging information is needed if running 
+  <para>The debugging symbols for selected libraries are placed
+  in separate files.  These debugging information is needed if running 
   regression tests that use <ulink 
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink 
   url='&blfs-book;/general/gdb.html'>gdb</ulink> later in BLFS.
   </para>
 @y
   <para>
-  まずはライブラリのいくつかについてデバッグシンボルを持つような別ファイルを生成します。
+  ライブラリのいくつかについて、デバッグシンボルを持つような別ファイルを生成します。
   このデバッグ情報を必要とするのは BLFS における <ulink 
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> または <ulink 
   url='&blfs-book;/general/gdb.html'>gdb</ulink> の縮退テストを実施するのに必要であるからです。
   </para>
 @z
 
-%@x
-%  <para>Before performing the stripping, take special care to ensure that
-%  none of the binaries that are about to be stripped are running:</para>
-%@y
-%  <para>
-%  ストリップを実行する前には、ストリップしようとしている実行ファイルが実行中でないことを十分確認してください。
-%  </para>
-%@z
-
 @x
-  <para>Now the binaries and libraries can be stripped:</para>
+  <para>And, <command>strip</command> will overwrite the binary or library
+  file.  This may crash the processes using code or data from the file.  If
+  the process running <command>strip</command> itself is affected, the
+  binary or library being stripped may be destroyed.  This may make the
+  system completely unusable.  To avoid it, we'll copy some libraries and
+  binaries into <filename class="directory">/tmp</filename>, strip them
+  there, and install them back with the <command>install</command> command.
+  Read the related entry in <xref linkend="pkgmgmt-upgrade-issues"/> for the
+  rationale to use the <command>install</command> command here.</para>
 @y
-  <para>以下により実行バイナリやライブラリをストリップします。</para>
+  <para>
+  なお <command>strip</command> はバイナリファイルやライブラリファイルを上書きします。
+  そのファイルにあるコードやデータを利用しているプロセスは、これによってクラッシュすることがあります。
+  仮に <command>strip</command> 自体を実行しているプロセスがその影響を受けたとすると、ストリップ最中のバイナリやライブラリは壊れてしまうかもしれません。
+  これが起きると、システムが完全に利用不能となりかねません。
+  これを避けるため、ライブラリやバイナリのいくつかを <filename
+  class="directory">/tmp</filename> にコピーして、そこでストリップした上で、<command>install</command> コマンドを使って、元の場所にインストールし直すことにします。
+  ここで <command>install</command> コマンドを利用する意味については、<xref
+  linkend="pkgmgmt-upgrade-issues"/> に示す関連項目を参照してください。
+  </para>
 @z
 
 @x
