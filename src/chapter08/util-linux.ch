@@ -75,14 +75,15 @@
 @z
 
 @x
-    <note><para>There is one test that depends on the configuration of the kernel.
-    If CONFIG_USER_NS or CONFIG_PID_NS are not set, the tests will hang forever.
-    To work around the problem, delete one test:</para>
+    <note><para>There is one test that fails in the chroot envronment and
+    causes the tests to hang forever.  The problem does not occur outside
+    of the chroot envronment.
+    To work around the problem, delete the test:</para>
 @y
     <note><para>
-    カーネルの設定に依存するテストが 1 つあります。
-    CONFIG_USER_NS または CONFIG_PID_NS が設定されていないと、そのテストはハングし続けます。
-    これを回避するには、テストを 1 つ削除します。
+    chroot 環境内においては、テストが 1 つ失敗して、テストをハングさせてしまいます。
+    この問題は chroot 環境から抜け出れば発生しません。
+    これを回避するため、そのテストは削除します。
     </para>
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -146,13 +142,13 @@
   encoding used by the locale, the local currency, and the prefix to dial
   before the telephone number in order to get into the country. If any of the
   commands above fail with a message similar to the one shown below, this means
-  that your locale was either not installed in Chapter&nbsp;6 or is not 
+  that your locale was either not installed in Chapter&nbsp;8 or is not 
   supported by the default installation of Glibc.</para>
 @y
   <para>
   上のコマンドを実行すると、言語名やロケールに応じたキャラクターエンコーディングが出力されます。
   また通貨や各国ごとの国際電話番号プレフィックスも出力されます。
-  コマンドを実行した際に以下のようなメッセージが表示されたら、第&nbsp;6&nbsp;章にてロケールをインストールしていないか、あるいはそのロケールが Glibc のデフォルトのインストールではサポートされていないかのいずれかです。
+  コマンドを実行した際に以下のようなメッセージが表示されたら、第&nbsp;8&nbsp;章にてロケールをインストールしていないか、あるいはそのロケールが Glibc のデフォルトのインストールではサポートされていないかのいずれかです。
   </para>
 @z
 

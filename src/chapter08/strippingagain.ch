@@ -47,7 +47,7 @@
 
 @x
   <para>The debugging symbols for selected libraries are placed
-  in separate files.  These debugging information is needed if running 
+  in separate files.  This debugging information is needed if running 
   regression tests that use <ulink 
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink 
   url='&blfs-book;/general/gdb.html'>gdb</ulink> later in BLFS.
@@ -62,18 +62,18 @@
 @z
 
 @x
-  <para>And, <command>strip</command> will overwrite the binary or library
-  file.  This may crash the processes using code or data from the file.  If
-  the process running <command>strip</command> itself is affected, the
-  binary or library being stripped may be destroyed.  This may make the
-  system completely unusable.  To avoid it, we'll copy some libraries and
-  binaries into <filename class="directory">/tmp</filename>, strip them
+  <para>Note that <command>strip</command> will overwrite the binary or library
+  file it is processing.  This may crash the processes using code or data from
+  the file.  If the process running <command>strip</command> itself is
+  affected, the binary or library being stripped may be destroyed.  This may
+  make the system completely unusable.  To avoid it, we'll copy some libraries
+  and binaries into <filename class="directory">/tmp</filename>, strip them
   there, and install them back with the <command>install</command> command.
   Read the related entry in <xref linkend="pkgmgmt-upgrade-issues"/> for the
   rationale to use the <command>install</command> command here.</para>
 @y
   <para>
-  なお <command>strip</command> はバイナリファイルやライブラリファイルを上書きします。
+  なお <command>strip</command> は、処理しているバイナリファイルやライブラリファイルを上書きします。
   そのファイルにあるコードやデータを利用しているプロセスは、これによってクラッシュすることがあります。
   仮に <command>strip</command> 自体を実行しているプロセスがその影響を受けたとすると、ストリップ最中のバイナリやライブラリは壊れてしまうかもしれません。
   これが起きると、システムが完全に利用不能となりかねません。

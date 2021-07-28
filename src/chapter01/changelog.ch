@@ -50,6 +50,24 @@
 @z
 
 @x
+      <para>2021-07-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Use workaround for Glibc NSS modules during
+          stripping, to prevent bash from crash.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - ストリップ処理において Glibc NSS モジュールへ対処する。
+          bash がクラッシュしないようにするもの。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-26</para>
       <itemizedlist>
         <listitem>
