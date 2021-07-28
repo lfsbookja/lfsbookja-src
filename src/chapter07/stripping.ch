@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -157,18 +153,6 @@
     <para>
     上のコマンド実行ではいくつものファイルがフォーマット不明となって処理がスキップされます。
     それらはたいてい、バイナリではなくスクリプトであることを示しています。
-    </para>
-@z
-
-@x
-    <para>Take care <emphasis>NOT</emphasis> to use
-    <parameter>--strip-unneeded</parameter> on the libraries. The static
-    ones would be destroyed and the toolchain packages would need to be
-    built all over again.</para>
-@y
-    <para>
-    <parameter>--strip-unneeded</parameter> パラメーターは <emphasis>絶対に</emphasis> ライブラリに対して用いないでください。
-    もし用いるとスタティックライブラリが破壊され、ツールチェーンを構成するパッケージをすべて作り直さなければならなくなります。 
     </para>
 @z
 

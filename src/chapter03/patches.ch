@@ -73,12 +73,6 @@
         <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @z
 
-@x GCC Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
-@z
-
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @y

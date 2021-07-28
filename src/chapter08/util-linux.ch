@@ -75,14 +75,14 @@
 @z
 
 @x
-    <note><para>There is one test that fails in the chroot envronment and
-    causes the tests to hang forever.  The problem does not occur outside
-    of the chroot envronment.
+    <note><para>There is one test that fails if the related config options
+    are not enabled in the kernel of the host system.  The failure
+    causes the tests to hang forever.
     To work around the problem, delete the test:</para>
 @y
     <note><para>
-    chroot 環境内においては、テストが 1 つ失敗して、テストをハングさせてしまいます。
-    この問題は chroot 環境から抜け出れば発生しません。
+    ホストシステムのカーネル設定において、テストに関連するオプションが有効でない場合に、テストのうちの 1 つが失敗します。
+    テストが失敗するとハングオーバーしてしまいます。
     これを回避するため、そのテストは削除します。
     </para>
 @z

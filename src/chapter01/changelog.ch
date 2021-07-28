@@ -53,6 +53,46 @@
       <para>2021-07-27</para>
       <itemizedlist>
         <listitem>
+          <para>[xry111] - Update to GCC-11.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4883">#4883</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to inetutils-2.1. Fixes
+          <ulink url="&lfs-ticket-root;4892">#4892</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to automake-1.16.4. Fixes
+          <ulink url="&lfs-ticket-root;4894">#4894</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Always use --strip-unneeded for stripping.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-07-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - GCC-11.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4883">#4883</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - inetutils-2.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4892">#4892</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - automake-1.16.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4894">#4894</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - ストリップ処理において、常に--strip-unneeded を用いることに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-07-27</para>
+      <itemizedlist>
+        <listitem>
           <para>[xry111] - Use workaround for Glibc NSS modules during
           stripping, to prevent bash from crash.</para>
         </listitem>

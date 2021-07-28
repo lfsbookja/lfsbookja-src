@@ -25,17 +25,6 @@
 @z
 
 @x
-    <para>First, apply a patch to fix some regressions and to cope
-    with the removal of an obsolete kernel header in linux-5.13:</para>
-@y
-    <para>
-    まずはパッチを適用します。
-    いくつか発生していた縮退をこれによって修正します。
-    また linux-5.13 のカーネルヘッダーにおいて、非推奨のものが削除されたことに対処します。
-    </para>
-@z
-
-@x
     <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y

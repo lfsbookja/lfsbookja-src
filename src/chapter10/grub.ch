@@ -209,12 +209,13 @@
       <para>If the system has been booted using UEFI,
       <command>grub-install</command> will try to install files for the
       <emphasis>x86_64-efi</emphasis> target, but those files
-      have not been installed in chapter 6. If this is the case, add
-      <option>--target i386-pc</option> to the command above.</para>
+      have not been installed in <xref linkend="chapter-building-system"/>.
+      If this is the case, add <option>--target i386-pc</option> to the
+      command above.</para>
 @y
       <para>
       システムが UEFI を通じて起動されている時、<command>grub-install</command> は <emphasis>x86_64-efi</emphasis> ターゲットに対するファイルをインストールしようとします。
-      しかしそのようなファイルは第 6 章にてインストールしていません。
+      しかしそのようなファイルは <xref linkend="chapter-building-system"/> にてインストールしていません。
       その場合は上のコマンドに対して <option>--target i386-pc</option> を追加してください。
       </para>
 @z

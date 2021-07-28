@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -88,6 +84,25 @@
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
+@z
+
+@x
+        Some Python 3 modules can't be built now because the dependencies
+        are not installed yet. The building system still attempts to build
+        them however, so the compilation of some files will fail and the
+        compiler message may seem to indicate <quote>fatal error</quote>.
+        The message should be ignored.  Just make sure the toplevel
+        <command>make</command> command has not failed.  The optional
+        modules are not needed now and they will be built in
+        <xref linkend="chapter-building-system"/>.
+@y
+        この時点において、依存パッケージをまだインストールしていないために、ビルドできない Python 3 モジュールがあります。
+        それでもビルドシステムは、そのようなモジュールをビルドしようとします。
+        そして一部のファイルのコンパイルが失敗して、コンパイラーメッセージには<quote>致命的エラー</quote>が示されます。
+        このメッセージは無視できます。
+        よく確認すべきなのは、トップレベルの <command>make</command> コマンドは失敗していないことです。
+        任意でビルドすれば良いモジュールは、今ここでのビルドは必要ありません。
+        それは、この後に <xref linkend="chapter-building-system"/> においてビルドされます。
 @z
 
 @x
