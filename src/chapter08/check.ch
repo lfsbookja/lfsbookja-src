@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -65,14 +61,14 @@
     </para>
 @z
 
-@x
-    <para>Note that the Check test suite may take a relatively long
-    (up to 4 SBU) time.</para>
-@y
-    <para>
-    Check のテストスイートには比較的時間を要する点に注意してください。(4 SBU ほど)
-    </para>
-@z
+%@x
+%    <para>Note that the Check test suite may take a relatively long
+%    (up to 4 SBU) time.</para>
+%@y
+%    <para>
+%    Check のテストスイートには比較的時間を要する点に注意してください。(4 SBU ほど)
+%    </para>
+%@z
 
 @x
     <para>Install the package:</para>

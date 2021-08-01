@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -49,6 +45,14 @@
     <para>To test the results, issue:</para>
 @y
     <para>ビルド結果をテストする場合は以下を実行します。</para>
+@z
+
+@x
+    <para>One test, test-posix_spawn-script, is known to fail.</para>
+@y
+    <para>
+    test-posix_spawn-script というテストが 1 つ失敗します。
+    </para>
 @z
 
 @x

@@ -90,23 +90,23 @@
     </para>
 @z
 
-@x
-<para>One test, m_rootdir_acl, is known to fail.</para>
-@y
-<para>
-m_rootdir_acl というテストが 1 つだけ失敗します。
-</para>
-@z
+%@x
+%<para>One test, m_rootdir_acl, is known to fail.</para>
+%@y
+%<para>
+%m_rootdir_acl というテストが 1 つだけ失敗します。
+%</para>
+%@z
 
-@x
-    <para>On a spinning disk, the tests take a little more than 4 SBUs. They
-    can be much shorter on an SSD (down to about 1.5 SBUs).</para>
-@y
-    <para>
-    回転式ディスクの場合、テストはさらに 4 SBU 以上要します。
-    SSD 上であれば、より短くなります（1.5 SBU くらいまで下がります）。
-    </para>
-@z
+%@x
+%    <para>On a spinning disk, the tests take a little more than 4 SBUs. They
+%    can be much shorter on an SSD (down to about 1.5 SBUs).</para>
+%@y
+%    <para>
+%    回転式ディスクの場合、テストはさらに 4 SBU 以上要します。
+%    SSD 上であれば、より短くなります（1.5 SBU くらいまで下がります）。
+%    </para>
+%@z
 
 @x
     <para>Install the package:</para>

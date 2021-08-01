@@ -252,12 +252,14 @@
 @x
         If you left the chroot environment either to strip off debug
         symbols, create a backup, or restart building using a restore, 
-        remember to mount the kernel virtual filesystems now again as 
+        remember to check that the virtual filesystems are still 
+        mounted (<command>findmnt | grep $LFS</command>). 
+        If they are not mounted, remount them now as 
         described in <xref linkend='ch-tools-kernfs'/> and re-enter
         the chroot environment (see <xref linkend='ch-tools-chroot'/>)
-        again before continuing.
+        before continuing.
 @y
         chroot 環境から抜け出して、デバッグシンボルのストリップ、バックアップの生成を行った場合、あるいはバックアップ復元後のビルド作業を開始する場合は、<xref
-        linkend='ch-tools-kernfs'/> において説明しているカーネル仮想ファイルシステムを再びマウントすることを忘れないでください。
-        これを行ってから、再び chroot 環境に入るようにしてください（<xref linkend='ch-tools-chroot'/> 参照）。
+        linkend='ch-tools-kernfs'/> において説明している、カーネル仮想ファイルシステムがマウントされていることを確認してください (<command>findmnt | grep $LFS</command>)。
+        もしマウントされていなかったら、マウントを行ってから、再び chroot 環境に入るようにしてください（<xref linkend='ch-tools-chroot'/> 参照）。
 @z

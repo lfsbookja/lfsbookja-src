@@ -50,6 +50,41 @@
 @z
 
 @x
+      <para>2021-08-01</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Remove unneeded sed commands from automake and
+           coreutils. Fixes 
+           <ulink url="&lfs-ticket-root;4895">#4895</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.13.7. Fixes
+          <ulink url="&lfs-ticket-root;4893">#4893</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.46.3. Fixes
+          <ulink url="&lfs-ticket-root;4896">#4896</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-01</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - automake と coreutils から不要な sed コマンドを削除。
+           <ulink url="&lfs-ticket-root;4895">#4895</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.13.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4893">#4893</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.46.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4896">#4896</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-07-27</para>
       <itemizedlist>
         <listitem>

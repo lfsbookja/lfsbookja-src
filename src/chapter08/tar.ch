@@ -64,9 +64,9 @@
 @z
 
 @x
-    <para>To test the results (about 3 SBU), issue:</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>コンパイル結果をテストするために以下を実行します。(約 3 SBU)</para>
+    <para>コンパイル結果をテストするために以下を実行します。</para>
 @z
 
 @x

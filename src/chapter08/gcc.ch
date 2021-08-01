@@ -150,17 +150,17 @@
     </para>
 @z
 
-@x
-    <para>In g++, three tests in constexpr-52830 are known to fail and
-    also to be treated as unexpected successes (XPASS).  This is because
-    an <quote>internal compiler error</quote> on this test is fixed, but
-    the compiler still rejects some valid code.</para>
-@y
-    <para>
-    g++ においては、constexpr-52830 におけるテストが 3 つ失敗するものとされていますが、予期しない成功 (XPASS) となります。
-    これは、そのテストにおいて<quote>内部コンパイラーエラー</quote>が修正されるからであり、ただしコンパイラーが正常なコードを受け付けないままであるからです。
-    </para>
-@z
+%@x
+%    <para>In g++, three tests in constexpr-52830 are known to fail and
+%    also to be treated as unexpected successes (XPASS).  This is because
+%    an <quote>internal compiler error</quote> on this test is fixed, but
+%    the compiler still rejects some valid code.</para>
+%@y
+%    <para>
+%    g++ においては、constexpr-52830 におけるテストが 3 つ失敗するものとされていますが、予期しない成功 (XPASS) となります。
+%    これは、そのテストにおいて<quote>内部コンパイラーエラー</quote>が修正されるからであり、ただしコンパイラーが正常なコードを受け付けないままであるからです。
+%    </para>
+%@z
 
 @x
     <para>In libstdc++, one numpunct test and six tests related to get_time are

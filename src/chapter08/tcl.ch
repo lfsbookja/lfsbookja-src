@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -112,6 +108,14 @@
          テストスイートにおいては clock.test に関連する箇所がいくつかあって、これは失敗します。
          ただしテスト結果のまとめにおいては、失敗は 1 つもないものとして示されます。
          clock.test は LFS システムが完成すれば成功します。
+@z
+
+@x
+    <para>One test, unixInit-1.2, is known to fail.</para>
+@y
+    <para>
+    unixInit-1.2 というテストが 1 つ失敗します。
+    </para>
 @z
 
 @x
