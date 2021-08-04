@@ -150,17 +150,42 @@
     </para>
 @z
 
-%@x
-%    <para>In g++, three tests in constexpr-52830 are known to fail and
-%    also to be treated as unexpected successes (XPASS).  This is because
-%    an <quote>internal compiler error</quote> on this test is fixed, but
-%    the compiler still rejects some valid code.</para>
-%@y
-%    <para>
-%    g++ においては、constexpr-52830 におけるテストが 3 つ失敗するものとされていますが、予期しない成功 (XPASS) となります。
-%    これは、そのテストにおいて<quote>内部コンパイラーエラー</quote>が修正されるからであり、ただしコンパイラーが正常なコードを受け付けないままであるからです。
-%    </para>
-%@z
+@x
+    <para>Eight tests related to analyzer are known to fail.</para>
+@y
+    <para>
+    アナライザーに関するテストが 8 つ失敗します。
+    </para>
+@z
+
+@x
+    <para>Seven tests related to <filename>pr59063-2.c</filename> are known
+    to fail.</para>
+@y
+    <para>
+    <filename>pr59063-2.c</filename> に関するテストが 7 つ失敗します。
+    </para>
+@z
+
+@x
+    <para>One test named <filename>asan_test.C</filename> is known to
+    fail.</para>
+@y
+    <para>
+    <filename>asan_test.C</filename> というテストが 1 つ失敗します。
+    </para>
+@z
+
+@x
+    <para>In libstdc++, one test named <filename>49745.cc</filename> is
+    known to fail because the header dependencies in glibc have have
+    changed.</para>
+@y
+    <para>
+    libstdc++ において <filename>49745.cc</filename> というテストが 1 つ失敗します。
+    これは glibc 内ヘッダーの依存関係が変更されているからです。
+    </para>
+@z
 
 @x
     <para>In libstdc++, one numpunct test and six tests related to get_time are
@@ -170,17 +195,6 @@
     <para>
     libstdc++ においては、numpunct のテスト 1 つと get_time に関連するテストが 6 つ失敗します。
     この理由は、glibc におけるロケール定義が変更されているからであり、libstdc++ はその変更に対応していないためです。
-    </para>
-@z
-
-@x
-    <para>Two tests named lookup.cc and reverse.cc in experimental/net
-    are known to fail in LFS chroot environment because they require
-    /etc/hosts and iana-etc.</para>
-@y
-    <para>
-    experimental/net にある lookup.cc と reverse.cc というテストは、LFS chroot 環境内では失敗します。
-    これは /etc/hosts と iana-etc を必要とするためです。
     </para>
 @z
 

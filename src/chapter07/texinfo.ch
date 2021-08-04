@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -23,6 +19,14 @@
     <title>Installation of Texinfo</title>
 @y
     <title>&InstallationOf1;Texinfo&InstallationOf2;</title>
+@z
+
+@x
+    <para>First, fix an issue building the package with Glibc-2.34 or later:</para>
+@y
+    <para>
+    Glibc-2.34 以降を使って本パッケージをビルドする際の問題を修正します。
+    </para>
 @z
 
 @x

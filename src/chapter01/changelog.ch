@@ -50,6 +50,40 @@
 @z
 
 @x
+      <para>2021-08-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.34. Fixes
+          <ulink url="&lfs-ticket-root;4897">#4897</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to diffutils-3.8. Fixes
+          <ulink url="&lfs-ticket-root;4898">#4898</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.52. Fixes
+          <ulink url="&lfs-ticket-root;4899">#4899</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc-2.34 へのアップデート。
+          <ulink url="&lfs-ticket-root;4897">#4897</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - diffutils-3.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4898">#4898</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.52 へのアップデート。
+          <ulink url="&lfs-ticket-root;4899">#4899</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-08-01</para>
       <itemizedlist>
         <listitem>

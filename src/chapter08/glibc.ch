@@ -41,14 +41,6 @@
 @z
 
 @x
-    <para>Fix a build issue with gcc-11.1:</para>
-@y
-    <para>
-    gcc-11.1 を使ってビルドするための修正を行います。
-    </para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc 
     in a dedicated build directory:</para>
 @y
@@ -132,20 +124,20 @@
           </para>
 @z
 
-@x libc_cv_include_x86_isa_level=no
-          <para>This disables <quote>x86 ISA needed</quote> property in
-          Glibc libraries.  Use it <emphasis role="bold">if</emphasis>
-          you are building Glibc with <option>-march</option> option in
-          <envar>CFLAGS</envar>, to workaround an issue in Glibc-2.33
-          breaking it.</para>
-@y
-          <para>
-          これは Glibc ライブラリ内の<quote>x86 ISA needed</quote>プロパティを無効にします。
-          Glibc のビルド時に <envar>CFLAGS</envar> として <option>-march</option> を設定している <emphasis
-          role="bold">場合に限っては</emphasis> これを有効にします。
-          そうすることで Glibc-2.33 における問題が回避できます。
-          </para>
-@z
+%@x libc_cv_include_x86_isa_level=no
+%          <para>This disables <quote>x86 ISA needed</quote> property in
+%          Glibc libraries.  Use it <emphasis role="bold">if</emphasis>
+%          you are building Glibc with <option>-march</option> option in
+%          <envar>CFLAGS</envar>, to workaround an issue in Glibc-2.33
+%          breaking it.</para>
+%@y
+%          <para>
+%          これは Glibc ライブラリ内の<quote>x86 ISA needed</quote>プロパティを無効にします。
+%          Glibc のビルド時に <envar>CFLAGS</envar> として <option>-march</option> を設定している <emphasis
+%          role="bold">場合に限っては</emphasis> これを有効にします。
+%          そうすることで Glibc-2.33 における問題が回避できます。
+%          </para>
+%@z
 
 @x
     <para>Compile the package:</para>
@@ -213,14 +205,14 @@
         </para>
 @z
 
-@x
-        <para><emphasis>elf/tst-cpu-features-cpuinfo</emphasis>
-        will fail on non-intel CPUs with this version of glibc.</para>
-@y
-        <para>
-        <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> は、この glibc バージョンを使って intel 以外の CPU アーキテクチャー上でテストを行った場合には失敗します。
-        </para>
-@z
+%@x
+%        <para><emphasis>elf/tst-cpu-features-cpuinfo</emphasis>
+%        will fail on non-intel CPUs with this version of glibc.</para>
+%@y
+%        <para>
+%        <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> は、この glibc バージョンを使って intel 以外の CPU アーキテクチャー上でテストを行った場合には失敗します。
+%        </para>
+%@z
 
 @x
         <para>The <emphasis>nss/tst-nss-files-hosts-multi</emphasis>
@@ -612,14 +604,15 @@
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, 
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
-        <seg>ld-&glibc-version;.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
+        <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
+        libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a,
-        libcrypt.{a,so}, libdl.{a,so}, libg.a, libm.{a,so},
-        libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.{a,so},
+        libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
+        libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
         libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
-        libpcprofile.so, libpthread.{a,so},
-        libpthread_nonshared.a, libresolv.{a,so}, librt.{a,so},
-        libthread_db.so, and libutil.{a,so}</seg>
+        libpcprofile.so, libpthread.{a,so.0},
+        libresolv.{a,so}, librt.{a,so.1},
+        libthread_db.so, and libutil.{a,so.1}</seg>
         <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu,
         /usr/include/net, /usr/include/netash, /usr/include/netatalk,
         /usr/include/netax25, /usr/include/neteconet, /usr/include/netinet,
@@ -634,14 +627,15 @@
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, 
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
-        <seg>ld-&glibc-version;.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
+        <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
+        libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a,
-        libcrypt.{a,so}, libdl.{a,so}, libg.a, libm.{a,so},
-        libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.{a,so},
+        libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
+        libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
         libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
-        libpcprofile.so, libpthread.{a,so},
-        libpthread_nonshared.a, libresolv.{a,so}, librt.{a,so},
-        libthread_db.so, libutil.{a,so}</seg>
+        libpcprofile.so, libpthread.{a,so.0},
+        libresolv.{a,so}, librt.{a,so.1},
+        libthread_db.so, and libutil.{a,so.1}</seg>
         <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu,
         /usr/include/net, /usr/include/netash, /usr/include/netatalk,
         /usr/include/netax25, /usr/include/neteconet, /usr/include/netinet,
@@ -852,7 +846,7 @@
           </para>
 @z
 
-@x ld.so
+@x ld-*.so
           <para>The helper program for shared library executables</para>
 @y
           <para>
@@ -919,10 +913,14 @@
 @z
 
 @x libdl
-          <para>The dynamic linking interface library</para>
+          <para>Dummy library containing no functions. Previously was the
+          dynamic linking interface library, whose functions are now in
+          <filename class="libraryfile">libc</filename></para>
 @y
           <para>
-          ダイナミックリンクのインターフェースライブラリ。
+          何の関数も含まないダミーライブラリ。
+          以前はダイナミックリンクインターフェースライブラリでしたが、現在その関数は <filename
+          class="libraryfile">libc</filename> に含まれるようになりました。
           </para>
 @z
 
@@ -931,7 +929,7 @@
           library for <command>g++</command></para>
 @y
           <para>
-          関数を全く含まないダミーのライブラリ。
+          何の関数も含まないダミーのライブラリ。
           かつては <command>g++</command> のランタイムライブラリであったものです。
           </para>
 @z
@@ -962,10 +960,11 @@
 @z
 
 @x libnsl
-          <para>The network services library</para>
+          <para>The network services library, now deprecated</para>
 @y
           <para>
           ネットワークサービスライブラリ。
+          現在は非推奨。
           </para>
 @z
 
@@ -989,10 +988,15 @@
 @z
 
 @x libpthread
-          <para>The POSIX threads library</para>
+          <para>Dummy library containing no functions. Previously contained
+          functions providing most of the interfaces specified
+          by the POSIX.1b Realtime Extension, now the functions are in
+          <filename class="libraryfile">libc</filename></para>
 @y
           <para>
-          POSIX スレッドライブラリ。
+          関数を全く含まないダミーのライブラリ。
+          かつては POSIX.1b Realtime Extension によって規定されているインターフェースをほとんど含めた関数を提供していました。
+          現在その関数は <filename class="libraryfile">libc</filename> に含まれるようになりました。
           </para>
 @z
 
@@ -1024,10 +1028,15 @@
 @z
 
 @x libutil
-          <para>Contains code for <quote>standard</quote> functions used in
-          many different Unix utilities</para>
+          <para>Dummy library containing no functions. Previously contained
+          code for <quote>standard</quote> functions used in
+          many different Unix utilities. These functions are now in
+          <filename class="libraryfile">libc</filename></para>
 @y
           <para>
-          数多くの Unix ユーティリティにて利用される<quote>標準</quote>関数を提供します。
+          何の関数も含まないダミーライブラリ。
+          以前は、 さまざまな Unix ユーティリティーに用いられる<quote>標準的な</quote>関数のコードを含んでいました。
+          現在その関数は <filename
+          class="libraryfile">libc</filename> に含まれるようになりました。
           </para>
 @z

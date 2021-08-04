@@ -68,16 +68,24 @@
     <para>&CompileThePackage;</para>
 @z
 
+%@x
+%    <para>The test suite needs some custom modifications for LFS.
+%    Remove a test that fails when scripting does not use a tty device and
+%    fix two others.
+%    To run the test suite, run the following commands:</para>
+%@y
+%    <para>
+%    LFS においてテストスイートを実行するには多少の修正が必要です。
+%    tty デバイスを利用しないスクリプトが1つ失敗するため、これを除外することにし、その他にも 2 つのテストを修正します。
+%    テストスイートを実行するために以下のコマンドを実行します。
+%    </para>
+%@z
+
 @x
-    <para>The test suite needs some custom modifications for LFS.
-    Remove a test that fails when scripting does not use a tty device and
-    fix two others.
-    To run the test suite, run the following commands:</para>
+    <para> To run the test suite, run:</para>
 @y
     <para>
-    LFS においてテストスイートを実行するには多少の修正が必要です。
-    tty デバイスを利用しないスクリプトが1つ失敗するため、これを除外することにし、その他にも 2 つのテストを修正します。
-    テストスイートを実行するために以下のコマンドを実行します。
+    テストスイートを実行する場合は、以下を実行します。
     </para>
 @z
 

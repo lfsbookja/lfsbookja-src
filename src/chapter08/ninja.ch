@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -19,6 +15,21 @@
     <para>
     このパッケージは、処理速度を重視した軽量なビルドシステムを提供します。
     </para>
+@z
+
+@x
+      <para>This section is not strictly required for LFS if not using
+      systemd. On the other hand, ninja associated to meson makes
+      a powerful build system combination,
+      which is expected to be used more and more often. It is required for
+      several packages in <ulink url="&blfs-book;">the BLFS
+      book</ulink>.</para>
+@y
+      <para>
+      本節は正確に言うと systemd を利用しないのであれば LFS において必要ありません。
+      一方で meson/ninja というものは強力なビルドシステムであり、利用する機会がかなり多いものと思われます。
+      <ulink url="&blfs-book;">BLFS ブック</ulink> においては、これを必要とするパッケージがいくつかあります。
+      </para>
 @z
 
 @x

@@ -193,12 +193,20 @@
 @z
 
 @x
-    <para>Seven gold tests are known to fail with gcc-11.1.0</para>
+    <para>Four tests related to zlib are known to fail.</para>
 @y
     <para>
-    7 つの gold テストが gcc-11.1.0 を用いると失敗します。
+    zlib に関するテストが 4 つ失敗します。
     </para>
 @z
+
+%@x
+%    <para>Seven gold tests are known to fail with gcc-11.1.0</para>
+%@y
+%    <para>
+%    7 つの gold テストが gcc-11.1.0 を用いると失敗します。
+%    </para>
+%@z
 
 @x
     <para>Four ld tests named <quote>Run property ...</quote> are known to
