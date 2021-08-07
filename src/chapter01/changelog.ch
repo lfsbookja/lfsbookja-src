@@ -50,6 +50,30 @@
 @z
 
 @x
+      <para>2021-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Fix
+          <filename class="libraryfile">libasan.a</filename> building
+          GCC with Glibc-2.34.  Addresses
+          <ulink url="https://wiki.linuxfromscratch.org/blfs/ticket/15350">
+          BLFS #15350</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - 
+          Glibc-2.34 を使った GCC の <filename
+          class="libraryfile">libasan.a</filename> ビルドを修正。
+          <ulink url="https://wiki.linuxfromscratch.org/blfs/ticket/15350">
+          BLFS #15350</ulink> において言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-08-02</para>
       <itemizedlist>
         <listitem>

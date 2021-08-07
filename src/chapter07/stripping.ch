@@ -83,10 +83,11 @@
 @z
 
 @x
-    Leave the chroot environment and unmount the kernel virtual file
-    systems:
+     Now, if you are stripping installed files or making a backup, 
+     leave the chroot environment:
 @y
-    chroot 環境からログアウトして、カーネル仮想ファイルシステムをアンマウントします。
+     インストールしたファイルのストリップやバックアップ取得を行っている場合は、
+     chroot 環境からログアウトします。
 @z
 
 @x
@@ -94,12 +95,12 @@
       <systemitem class="username">root</systemitem>. Take extra
       care about the commands you're going to run as mistakes
       here can modify your host system. Be aware that the
-      environment variable <envar>LFS</envar> is set for user 
-      <systemitem class="username">lfs</systemitem> by default 
-      but it might <emphasis>not</emphasis> be set for 
+      environment variables <envar>LFS</envar> and <envar>LFS_TGT</envar>
+      are set for user <systemitem class="username">lfs</systemitem> by default 
+      but may <emphasis>not</emphasis> be set for 
       <systemitem class="username">root</systemitem>. Whenever 
       commands are to be executed by <systemitem class="username">root</systemitem>, 
-      make sure you have set <envar>LFS</envar> accordingly.
+      make sure you have set <envar>LFS</envar> and <envar>LFS_TGT</envar> accordingly.
       This has been discussed in <xref linkend='ch-partitioning-aboutlfs'/>.
     </para>
 @y
@@ -107,10 +108,10 @@
     以降の手順はすべて <systemitem class="username">root</systemitem> ユーザーにより実施します。
     特にコマンド実行は、よく注意しながら行ってください。
     誤ったことをすると、ホストシステムを書き換えてしまうことになります。
-    環境変数 <envar>LFS</envar> はデフォルトで <systemitem
+    環境変数 <envar>LFS</envar> と <envar>LFS_TGT</envar> はデフォルトで <systemitem
     class="username">lfs</systemitem> ユーザーにおいて設定していましたが、<systemitem
     class="username">root</systemitem> ユーザーにおいては設定していないかもしれません。
-    <systemitem class="username">root</systemitem> ユーザーによりコマンド実行する際にも、<envar>LFS</envar> 変数を設定してください。
+    <systemitem class="username">root</systemitem> ユーザーによりコマンド実行する際にも、<envar>LFS</envar>、<envar>LFS_TGT</envar> の各変数を設定してください。
     このことは <xref linkend='ch-partitioning-aboutlfs'/> において説明済です。
     </para>
 @z
@@ -141,14 +142,10 @@
     </para>
 @z
 
-%    
-
 @x
     <para>These commands will skip a number of files reporting that it does not
     recognize their file format. Most of these are scripts instead of binaries.
-    <!--Note that we use the <command>strip</command> program built in
-    <quote>Binutils pass 2</quote>, since it is the one that knows how to strip
-    our cross-compiled programs.--></para>
+    </para>
 @y
     <para>
     上のコマンド実行ではいくつものファイルがフォーマット不明となって処理がスキップされます。
@@ -207,6 +204,14 @@
 @z
 
 @x
+    <para>Before we make a backup, unmount the virtual file systems:</para>
+@y
+    <para>
+    バックアップを取る前に、仮想ファイルシステムをアンマウントします。
+    </para>
+@z
+
+@x
       Create the backup archive by running the following command:
 @y
       バックアップアーカイブを生成するために、以下のコマンドを実行します。
@@ -243,6 +248,20 @@
 @z
 
 @x
+    <warning><para>The following commands are extremly dangerous.  If
+    you run <command>rm -rf ./*</command> as the root user and you 
+    do not change to the $LFS directory or the <envar>LFS</envar> 
+    environment variable is not set for the root user, it will destroy 
+    your entire host system.  YOU ARE WARNED.</para></warning>
+@y
+    <warning><para>
+    以下に示すコマンドは相当に危険です。
+    root ユーザーになって <command>rm -rf ./*</command> を実行する際に、$LFS ディレクトリに移動していない、あるいは環境変数 <envar>LFS</envar> を設定していないとしたら、システム全体を破壊することになります。
+    厳に警告しておきます。
+    </para></warning>
+@z
+
+@x
       Again, double check that the environment has been setup properly
       and continue building the rest of the system.
 @y
@@ -250,8 +269,8 @@
 @z
 
 @x
-        If you left the chroot environment either to strip off debug
-        symbols, create a backup, or restart building using a restore, 
+        If you left the chroot environment 
+        to create a backup or restart building using a restore, 
         remember to check that the virtual filesystems are still 
         mounted (<command>findmnt | grep $LFS</command>). 
         If they are not mounted, remount them now as 
@@ -259,7 +278,7 @@
         the chroot environment (see <xref linkend='ch-tools-chroot'/>)
         before continuing.
 @y
-        chroot 環境から抜け出して、デバッグシンボルのストリップ、バックアップの生成を行った場合、あるいはバックアップ復元後のビルド作業を開始する場合は、<xref
+        chroot 環境から抜け出して、バックアップの生成を行った場合、あるいはビルド作業を再開する場合は、<xref
         linkend='ch-tools-kernfs'/> において説明している、カーネル仮想ファイルシステムがマウントされていることを確認してください (<command>findmnt | grep $LFS</command>)。
         もしマウントされていなかったら、マウントを行ってから、再び chroot 環境に入るようにしてください（<xref linkend='ch-tools-chroot'/> 参照）。
 @z

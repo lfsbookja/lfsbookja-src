@@ -24,9 +24,9 @@
 <!ENTITY releasedate     "August 26th, 2021">
 <!ENTITY copyrightdate   "1999-2021">
 -->
-<!ENTITY jversion        "20210804">
-<!ENTITY jversiond       "20210804">
-<!ENTITY jcorrespondSHA  "99b29384c"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion        "20210807">
+<!ENTITY jversiond       "20210807">
+<!ENTITY jcorrespondSHA  "26560c186"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
 <!ENTITY dir-jversion    "git-ja">
 <!ENTITY dir-jversiond   "git-sysdja">
 @z

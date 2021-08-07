@@ -85,6 +85,17 @@
 @z
 
 @x
+  <note><para>The ELF loader's name is ld-linux-x86-64.so.2 on 64-bit systems
+  and ld-linux.so.2 on 32-bit systems.  The contruct below selects the 
+  correct name for the current architecture.</para></note>
+@y
+  <note><para>
+  ELF ローダーの名前は、64 ビットシステムでは ld-linux-x86-64.so.2、32 ビットシステムでは ld-linux.so.2 です。
+  後述の手順では、現行のアーキテクチャーに合わせて適切な名前を選ぶようにしています。
+  </para></note>
+@z
+
+@x
   <para>A large number of files will be reported as having their file
   format not recognized. These warnings can be safely ignored. These
   warnings indicate that those files are scripts instead of

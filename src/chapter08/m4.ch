@@ -48,14 +48,6 @@
 @z
 
 @x
-    <para>One test, test-posix_spawn-script, is known to fail.</para>
-@y
-    <para>
-    test-posix_spawn-script というテストが 1 つ失敗します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
