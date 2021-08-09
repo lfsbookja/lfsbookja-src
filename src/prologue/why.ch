@@ -229,13 +229,11 @@
 @x Expect
         <para>This package contains a program for carrying out scripted
         dialogues with other interactive programs.  It is commonly used
-        for testing other packages.  It is only installed in the temporary
-        toolchain.</para>
+        for testing other packages.</para>
 @y
         <para>
         このパッケージは、スクリプトで作られた対話型プログラムを通じて、他のプログラムとのやりとりを行うプログラムを提供します。
         通常は他のパッケージをテストするために利用します。
-        本書では一時的なツールチェーンの構築時にしかインストールしません。
         </para>
 @z
 

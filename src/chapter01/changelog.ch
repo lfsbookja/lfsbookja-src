@@ -50,6 +50,32 @@
 @z
 
 @x
+      <para>2021-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.13.9. Fixes
+          <ulink url="&lfs-ticket-root;4900">#4900</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libffi-3.4.2. Fixes
+          <ulink url="&lfs-ticket-root;4902">#4902</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-5.13.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;4900">#4900</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libffi-3.4.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4902">#4902</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-08-06</para>
       <itemizedlist>
         <listitem>

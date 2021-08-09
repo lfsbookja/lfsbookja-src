@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -86,6 +82,19 @@
           url='https://gcc.gnu.org/onlinedocs/gcc-&gcc-version;/gcc/x86-Options.html'>
           the x86 options in the GCC manual</ulink>
           を参照してください。
+          </para>
+@z
+
+@x --disable-exec-static-tramp
+          <para>Disable static trampoline support.  It's a new security
+          feature in libffi, but some BLFS packages (notably
+          <application>GJS</application> and
+          <application>gobject-introspection</application>) have not been
+          adapted for it.</para>
+@y
+          <para>
+          スタティックなトランポリン (trampoline) サポートを無効にします。
+          これは libffi における新しいセキュリティ機能ですが、BLFS パッケージの中 (特に <application>GJS</application> や <application>gobject-introspection</application> ) では、この機能に対応していないものがあります。
           </para>
 @z
 
