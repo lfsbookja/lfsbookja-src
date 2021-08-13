@@ -180,7 +180,7 @@
 
 @x
     <para>In libstdc++, one test named <filename>49745.cc</filename> is
-    known to fail because the header dependencies in glibc have have
+    known to fail because the header dependencies in glibc have
     changed.</para>
 @y
     <para>

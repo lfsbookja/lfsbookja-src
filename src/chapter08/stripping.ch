@@ -10,9 +10,9 @@
 @z
 
 @x
-  <title>Stripping Again</title>
+  <title>Stripping</title>
 @y
-  <title>再度のストリップ</title>
+  <title>ストリップ</title>
 @z
 
 @x
@@ -63,9 +63,9 @@
 
 @x
   <para>Note that <command>strip</command> will overwrite the binary or library
-  file it is processing.  This may crash the processes using code or data from
+  file it is processing.  This can crash the processes using code or data from
   the file.  If the process running <command>strip</command> itself is
-  affected, the binary or library being stripped may be destroyed.  This may
+  affected, the binary or library being stripped can be destroyed and can
   make the system completely unusable.  To avoid it, we'll copy some libraries
   and binaries into <filename class="directory">/tmp</filename>, strip them
   there, and install them back with the <command>install</command> command.
@@ -97,9 +97,8 @@
 
 @x
   <para>A large number of files will be reported as having their file
-  format not recognized. These warnings can be safely ignored. These
-  warnings indicate that those files are scripts instead of
-  binaries.</para>
+  format not recognized. These warnings can be safely ignored. They
+  indicate that those files are scripts instead of binaries.</para>
 @y
   <para>
   ファイルフォーマットが認識できないファイルがいくつも警告表示されますが、無視して構いません。

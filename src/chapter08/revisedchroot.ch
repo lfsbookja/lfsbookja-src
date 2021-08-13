@@ -125,15 +125,6 @@
 @z
 
 @x
-   <para>The <filename class="directory">/tools</filename> directory can also
-   be removed to further gain some space:</para>
-@y
-   <para>
-   <filename class="directory">/tools</filename> ディレクトリも削除して、容量をある程度回復することにします。
-   </para>
-@z
-
-@x
    <para>Finally, remove the temporary 'tester' user account created at the 
    beginning of the previous chapter.</para>
 @y

@@ -1,16 +1,13 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/chapter07
 CHANGE_FILES = \
 	bison.ch           \
 	changingowner.ch   \
 	chapter07.ch       \
 	chroot.ch          \
+	cleanup.ch         \
 	createfiles.ch     \
 	creatingdirs.ch    \
 	gettext.ch         \
@@ -19,7 +16,6 @@ CHANGE_FILES = \
 	libstdc++-pass2.ch \
 	perl.ch            \
 	python.ch          \
-	stripping.ch       \
 	texinfo.ch         \
 	util-linux.ch
 

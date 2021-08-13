@@ -176,13 +176,15 @@
 @z
 
 @x
-    <para>You may see some test failures.  The Glibc test suite is
-    somewhat dependent on the host system.  This is a list of the most common
-    issues seen for some versions of LFS:</para>
+    <para>You may see some test failures. The Glibc test suite is
+    somewhat dependent on the host system. A few failures out of
+    over 4200 tests can generally be ignored. This is a list of the 
+    most common issues seen for recent versions of LFS:</para>
 @y
     <para>
     テストに失敗する場合があります。
     これは Glibc のテストスイートがホストシステムにある程度依存しているためです。
+    4200 を超えるテストの中で、ほんの少数のテストは失敗しますが、無視できるものです。
     LFS の当バージョンにおいて発生しがちな問題を以下に示します。
     </para>
 @z
