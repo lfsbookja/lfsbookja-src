@@ -50,6 +50,46 @@
 @z
 
 @x
+      <para>2021-08-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.13.10. Fixes
+          <ulink url="&lfs-ticket-root;4904">#4904</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-5.0.0. Fixes
+          <ulink url="&lfs-ticket-root;4903">#4903</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.3337. Addresses
+          <ulink url="&lfs-ticket-root;4521">#4521</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Add binutils-2.37 upstream patch.</para> 
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-5.13.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4904">#4904</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-5.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4903">#4903</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.3337 へのアップデート。
+          <ulink url="&lfs-ticket-root;4521">#4521</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - binutils-2.37 のアップストリームパッチを追加。</para> 
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-08-08</para>
       <itemizedlist>
         <listitem>

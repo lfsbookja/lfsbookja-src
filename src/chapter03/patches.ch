@@ -49,10 +49,10 @@
         <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
 @z
 
-@x Binutils Fix for gold Test Suite Patch
-        <para>Download: <ulink url="&patches-root;&binutils-gold-test-patch;"/></para>
+@x Binutils Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&binutils-gold-test-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
 @z
 
 @x Bzip2 Documentation Patch

@@ -53,6 +53,16 @@
 @z
 
 @x
+    <para>Upstream has made a patch to fix a problem building some
+    packages.  Apply that now:</para>
+@y
+    <para>
+    他パッケージのビルド時に問題が発生するため、アップストリームではその修正パッチを生成しています。
+    ここでこれを適用します。
+    </para>
+@z
+
+@x
     <para>An error in the building system causes the shipped man pages to
     be empty.  Workaround the issue and remove the shipped man pages, so the
     man pages will be regenerated correctly:</para>
