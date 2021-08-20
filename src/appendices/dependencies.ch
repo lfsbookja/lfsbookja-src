@@ -2020,13 +2020,15 @@
 @x
           <seg>
             <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
-            <ulink url="&blfs-book;server/sqlite.html"> SQLite</ulink>, and
+            <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
+            <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>, and
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
           </seg>
 @y
           <seg>
             <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
-            <ulink url="&blfs-book;server/sqlite.html"> SQLite</ulink>,
+            <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
+            <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>, and
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
           </seg>
 @z

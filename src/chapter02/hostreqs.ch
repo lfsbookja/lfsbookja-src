@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -117,12 +113,16 @@
 
 @x
       <para>The reason for the kernel version requirement is that we specify
-      that version when building <application>glibc</application> in Chapter&nbsp;6
+      that version when building <application>glibc</application> in
+      <xref linkend="chapter-cross-tools"/> and
+      <xref linkend="chapter-building-system"/>,
       at the recommendation of the developers.  It is also required by
       udev.</para>
 @y
       <para>
-      カーネルのバージョンを指定しているのは、第&nbsp;6&nbsp;章にて <application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
+      カーネルのバージョンを指定しているのは、<xref
+      linkend="chapter-cross-tools"/> と <xref
+      linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
       これは udev においても必要になります。
       </para>
 @z

@@ -73,14 +73,15 @@
 @z
 
 @x
-    <listitem><para>If you are in a situation where static IP configuration
+    <listitem revision="sysv"><para>
+    If you are in a situation where static IP configuration
     does not meet your networking requirements, installing a package
     such as <ulink url='&blfs-book;basicnet/dhcpcd.html'>dhcpcd</ulink>
     or the client portion of <ulink
     url='&blfs-book;basicnet/dhcp.html'>dhcp</ulink> may be
     useful.</para></listitem>
 @y
-    <listitem><para>
+    <listitem revision="sysv"><para>
     ネットワーク環境内にて固定 IP アドレスを用いることが適当ではない場合は、<ulink
     url='&blfs-book;basicnet/dhcpcd.html'>dhcpcd</ulink> パッケージや <ulink
     url='&blfs-book;basicnet/dhcp.html'>dhcp</ulink> パッケージのクライアントモジュール部分を利用することが考えられます。
@@ -116,6 +117,18 @@
 @y
     <listitem><para>インターネット経由により簡単にファイル取得を行うために <ulink
     url='&blfs-book;basicnet/wget.html'>wget</ulink> をインストールします。
+    </para></listitem>
+@z
+
+@x
+    <listitem><para>To connect to a wireless access point for networking,
+    install
+    <ulink url='&blfs-book;basicnet/wpa_supplicant.html'>wpa_supplicant</ulink>.
+    </para></listitem>
+@y
+    <listitem><para>
+    ワイアレスのネットワークアクセスポイントに接続する場合は、<ulink
+    url='&blfs-book;basicnet/wpa_supplicant.html'>wpa_supplicant</ulink> をインストールしてください。
     </para></listitem>
 @z
 

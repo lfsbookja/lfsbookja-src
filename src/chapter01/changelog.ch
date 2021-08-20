@@ -50,6 +50,73 @@
 @z
 
 @x
+      <para>2021-08-18</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Eliminate an instruction to remove a test
+           in bunutils that no longer fails.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-18</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - binutils のテストが失敗するため、これを削除していたが、失敗しなくなったので、この対処を取りやめることに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-08-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - add p11-kit to dependencies list for systemd.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - systemd の依存パッケージに p11-kit を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - LFS-11.0-rc1 released.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - LFS-11.0-rc1 リリース。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to grep-3.7. Fixes
+          <ulink url="&lfs-ticket-root;4901">#4901</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grep-3.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4901">#4901</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-08-13</para>
       <itemizedlist>
         <listitem>
