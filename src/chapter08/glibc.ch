@@ -28,6 +28,14 @@
 @z
 
 @x
+    <para>First, fix a security problem identified upstream:</para>
+@y
+    <para>
+    はじめに、アップストリームが認識しているセキュリティ問題を修正します。
+    </para>
+@z
+
+@x
     <para>Some of the Glibc programs use the non-FHS compliant
     <filename class="directory">/var/db</filename> directory to store
     their runtime data. Apply the following patch to make such programs

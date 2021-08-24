@@ -88,8 +88,7 @@ book: validate profile-html
 	@echo "Copying CSS code and images..."
 	$(MKDIR_P) $(BASEDIR)/stylesheets
 	cp stylesheets/lfs-xsl/*.css $(BASEDIR)/stylesheets
-	pushd $(BASEDIR)/ > /dev/null;                     \
-	popd > /dev/null
+	sed -i 's|../stylesheet|stylesheet|' $(BASEDIR)/index.html
 
 	$(MKDIR_P) $(BASEDIR)/images
 	cp -p $(BOOKdir)/images/*.png $(BASEDIR)/images

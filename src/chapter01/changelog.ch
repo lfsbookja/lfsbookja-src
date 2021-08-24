@@ -50,6 +50,23 @@
 @z
 
 @x
+      <para>2021-08-20</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Add a sed to glibc in Chapter 8 to fix a 
+           critical security issue.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-20</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - 第 8 章の glibc に対して、 sed 処理により致命的なセキュリティエラーを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-08-18</para>
       <itemizedlist>
         <listitem>
