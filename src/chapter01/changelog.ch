@@ -50,6 +50,24 @@
 @z
 
 @x
+      <para>2021-08-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to openssl-1.1.1l (security fixes). Fixes
+          <ulink url="&lfs-ticket-root;4911">#4911</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - openssl-1.1.1l (セキュリティフィックス) へのアップデート。
+          <ulink url="&lfs-ticket-root;4911">#4911</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-08-20</para>
       <itemizedlist>
         <listitem>

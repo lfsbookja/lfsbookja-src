@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author:$
-% $Rev:$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,16 +17,15 @@
 
 @x
   <para>This chapter shows how to build the last missing bits of the temporary
-  system: first, the tools needed by the build machinery of various packages,
-  then three packages needed to run tests.  Now that all circular dependencies
+  system: the tools needed by the build machinery of various packages.
+  Now that all circular dependencies
   have been resolved, we can use a <quote>chroot</quote> environment,
   completely isolated the host operating system used for the build, except
   for the running kernel.</para>
 @y
   <para>
   本章では、一時的システムに足りていない最後の部分をビルドしていきます。
-  まず多くのパッケージビルドに必要となるツールをビルドします。
-  またテストの実行に必要なパッケージを 3 つ生成します。
+  つまり、多くのパッケージビルドに必要となるツールをビルドします。
   こうして循環的な相互参照の関係が解決するので、これまで利用してきたホストオペレーティングシステムから完全に離れて "chroot" 環境に入ります。
   ただしカーネルは今までどおり利用していきます。
   </para>
