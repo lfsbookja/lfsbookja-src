@@ -50,6 +50,22 @@
 @z
 
 @x
+      <para>2021-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-11.0 released.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-11.0 リリース。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-08-25</para>
       <itemizedlist>
         <listitem>

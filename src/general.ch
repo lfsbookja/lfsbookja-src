@@ -11,24 +11,20 @@
 @z
 
 @x
-<!--
-<!ENTITY version         "10.2-rc1">
-<!ENTITY versiond        "10.2-systemd-rc1">
-<!ENTITY releasedate     "August 26th, 2021">
+<!ENTITY version         "11.0">
+<!ENTITY versiond        "11.0-systemd">
+<!ENTITY releasedate     "September 1st, 2021">
 <!ENTITY copyrightdate   "1999-2021">
--->
 @y
-<!--
-<!ENTITY version         "10.2-rc1">
-<!ENTITY versiond        "10.2-systemd-rc1">
-<!ENTITY releasedate     "August 26th, 2021">
+<!ENTITY version         "11.0">
+<!ENTITY versiond        "11.0-systemd">
+<!ENTITY releasedate     "2021/09/01">
 <!ENTITY copyrightdate   "1999-2021">
--->
 <!ENTITY jversion        "20210902">
 <!ENTITY jversiond       "20210902">
-<!ENTITY jcorrespondSHA  "6711c4229"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
-<!ENTITY dir-jversion    "git-ja">
-<!ENTITY dir-jversiond   "git-sysdja">
+<!ENTITY jcorrespondSHA  "cba354c55"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY dir-jversion    "11.0-ja">
+<!ENTITY dir-jversiond   "11.0-sysdja">
 @z
 
 @x
