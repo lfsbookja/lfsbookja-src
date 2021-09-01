@@ -123,8 +123,9 @@
 
 @x
     <listitem><para>To make fetching files over the internet easier, install
-    <ulink revision="sysv" url='&blfs-book;basicnet/wget.html'>wget</ulink>
-    <ulink revision="systemd" url='&blfs-systemd-book;basicnet/wget.html'>wget</ulink>.
+    <ulink
+    revision="sysv" url='&blfs-book;basicnet/wget.html'>wget</ulink><ulink
+    revision="systemd" url='&blfs-systemd-book;basicnet/wget.html'>wget</ulink>.
     </para></listitem>
 @y
     <listitem><para>インターネット経由により簡単にファイル取得を行うために <ulink
