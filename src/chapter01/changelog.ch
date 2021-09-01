@@ -53,6 +53,24 @@
       <para>2021-08-25</para>
       <itemizedlist>
         <listitem>
+          <para>[xry111] - Update to man-pages-5.13. Fixes
+          <ulink url="&lfs-ticket-root;4915">#4915</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-08-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - man-pages-5.13 へのアップデート。
+          <ulink url="&lfs-ticket-root;4915">#4915</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-08-25</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - LFS-11.0-rc3 released.</para>
         </listitem>
         <listitem>

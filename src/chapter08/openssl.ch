@@ -49,13 +49,14 @@
 @z
 
 @x
-    <para>One test 30-test_afalg.t is known to fail on some kernel
-    configurations (it apparently assumes certain unspecified crypto
-    options have been selected).</para>
+    <para>One test, 30-test_afalg.t, is known to fail on some kernel
+    configurations (depending on inconsistent values of
+    CONFIG_CRYPTO_USER_API* settings.) If it fails, it can safely be
+    ignored.</para>
 @y
     <para>
-    カーネル設定によっては 30-test_afalg.t というテストが 1 つだけ失敗することがわかっています。
-    (暗号化オプションのどれかを指定することによって発生するものと思われます。)
+    カーネル設定によっては (CONFIG_CRYPTO_USER_API* の設定に一貫性がないと)、30-test_afalg.t というテストが 1 つだけ失敗することがわかっています。
+    失敗しても、無視してかまいません。
     </para>
 @z
 
