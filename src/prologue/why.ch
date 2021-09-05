@@ -880,7 +880,7 @@
 
 @x Zstd
         <para>This package contains compression and decompression routines
-        used by some programs. It provide high compression ratios and a very 
+        used by some programs. It provides high compression ratios and a very 
         wide range of compression / speed trade-offs.</para>
 @y
         <para>

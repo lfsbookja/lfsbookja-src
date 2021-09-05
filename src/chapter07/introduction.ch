@@ -17,17 +17,15 @@
 
 @x
   <para>This chapter shows how to build the last missing bits of the temporary
-  system: the tools needed by the build machinery of various packages.
-  Now that all circular dependencies
-  have been resolved, we can use a <quote>chroot</quote> environment,
-  completely isolated the host operating system used for the build, except
-  for the running kernel.</para>
+  system: the tools needed by the build machinery of various packages.  Now
+  that all circular dependencies have been resolved, a <quote>chroot</quote>
+  environment, completely isolated from the host operating system (except for
+  the running kernel), can be used for the build.</para>
 @y
   <para>
   本章では、一時的システムに足りていない最後の部分をビルドしていきます。
   つまり、多くのパッケージビルドに必要となるツールをビルドします。
-  こうして循環的な相互参照の関係が解決するので、これまで利用してきたホストオペレーティングシステムから完全に離れて "chroot" 環境に入ります。
-  ただしカーネルは今までどおり利用していきます。
+  こうして循環的な相互参照の関係が解決するので、これまで利用してきたホストオペレーティングシステムから完全に離れて（実行中のカーネルは除きますが）"chroot" 環境に入って、 ビルドを行っていきます。
   </para>
 @z
 
