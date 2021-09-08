@@ -50,6 +50,23 @@
 @z
 
 @x
+      <para>2021-09-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fix regressions in File that result in improper
+          detection of text and XZ files.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-09-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - File において、テキストや XZ ファイルの不適切な検出処理を修正しました。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-09-06</para>
       <itemizedlist>
         <listitem>

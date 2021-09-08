@@ -25,6 +25,14 @@
 @z
 
 @x
+    <para>First, fix a few regressions in File:</para>
+@y
+    <para>
+    はじめに、File における処理後退をいくつか修正します。
+    </para>
+@z
+
+@x
     <para>Prepare File for compilation:</para>
 @y
     <para>&PreparePackage1;File&PreparePackage2;</para>

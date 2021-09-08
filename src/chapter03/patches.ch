@@ -67,6 +67,12 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
+@x File Upstream Fixes Patch
+        <para>Download: <ulink url="&patches-root;&file-upstream-fixes-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&file-upstream-fixes-patch;"/></para>
+@z
+
 @x Glibc FHS Patch
         <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @y
