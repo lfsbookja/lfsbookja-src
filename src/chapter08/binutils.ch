@@ -84,7 +84,7 @@
 @z
 
 @x
-    <para>The Binutils documentation recommends building Binutils 
+    <para>The Binutils documentation recommends building Binutils
     in a dedicated build directory:</para>
 @y
     <para>
@@ -350,7 +350,7 @@
 @z
 
 @x ld.gold
-          <para>A cut down version of ld that only supports the 
+          <para>A cut down version of ld that only supports the
           elf object file format</para>
 @y
           <para>

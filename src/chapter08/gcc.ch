@@ -273,7 +273,7 @@
 
 @x
     <para>Add a compatibility symlink to enable building programs with
-    Link Time Optimization (LTO):</para> 
+    Link Time Optimization (LTO):</para>
 @y
     <para>
     リンク時の最適化 (Link Time Optimization; LTO) によりプログラム構築できるように、シンボリックリンクを作ります。
@@ -375,7 +375,7 @@
         libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
         and libubsan.{a,so}</seg>
 
-        <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, and 
+        <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, and
         /usr/share/gcc-&gcc-version;</seg>
 @y
         <seg>c++, cc (gcc へのリンク), cpp, g++, gcc,

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -26,7 +22,7 @@
 @z
 
 @x
-    <para>Libstdc++ is the standard C++ library. It is needed 
+    <para>Libstdc++ is the standard C++ library. It is needed
     to compile C++ code
     (part of GCC is written in C++), but we had to defer its installation
     when we built <xref linkend="ch-tools-gcc-pass1"/>

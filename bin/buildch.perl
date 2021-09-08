@@ -13,10 +13,6 @@ print $fh_tgt "% This is part of LFSbookja package.\n";
 print $fh_tgt "%\n";
 print $fh_tgt "% This is a CTIE change file for the original XML source of the LFSbook.\n";
 print $fh_tgt "%\n";
-print $fh_tgt "% \$Author:\$\n";
-print $fh_tgt "% \$Rev:\$\n";
-print $fh_tgt "% \$Date::                           \$\n";
-print $fh_tgt "%\n";
 
 foreach my $line (<$fh_src>) {
 

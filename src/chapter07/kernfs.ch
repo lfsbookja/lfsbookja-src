@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -157,7 +153,7 @@
 @x
       <para>In some host systems, <filename>/dev/shm</filename> is a
       symbolic link to <filename class="directory">/run/shm</filename>.
-      The /run tmpfs was mounted above so in this case only a 
+      The /run tmpfs was mounted above so in this case only a
       directory needs to be created.</para>
 @y
       <para>

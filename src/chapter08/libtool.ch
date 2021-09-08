@@ -60,7 +60,7 @@
 
 @x
     <para>Five tests are known to fail in the LFS build environment due
-    to a circular dependency, but all tests pass if rechecked after 
+    to a circular dependency, but all tests pass if rechecked after
     automake is installed.</para>
 @y
     <para>

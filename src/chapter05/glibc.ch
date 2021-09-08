@@ -52,7 +52,7 @@
 @z
 
 @x
-    <para>The Glibc documentation recommends building Glibc 
+    <para>The Glibc documentation recommends building Glibc
     in a dedicated build directory:</para>
 @y
     <para>
@@ -163,7 +163,7 @@
 @z
 
 @x
-    <note><para>There have been reports that this package may fail when 
+    <note><para>There have been reports that this package may fail when
     building as a "parallel make".  If this occurs, rerun the make command
     with a "-j1" option.</para></note>
 @y

@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author:$
-% $Rev:$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -38,7 +33,7 @@
 @x
   <para>Using the utilities will be possible in next chapter after entering
   the <quote>chroot</quote> environment. But all the packages built in the
-  present chapter need to be built before we do that. Therefore we cannot be 
+  present chapter need to be built before we do that. Therefore we cannot be
   independent of the host system yet.</para>
 @y
   <para>

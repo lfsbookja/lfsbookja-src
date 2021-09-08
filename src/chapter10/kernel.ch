@@ -371,10 +371,10 @@
 @z
 
 @x
-      <para>In many cases, the configuration of the kernel will need to be 
+      <para>In many cases, the configuration of the kernel will need to be
       updated for packages that will be installed later in BLFS.  Unlike
       other packages, it is not necessary to remove the kernel source tree
-      after the newly built kernel is installed.</para>  
+      after the newly built kernel is installed.</para>
 @y
       <para>
       カーネルの設定は、BLFS をインストールしていくにつれて、設定を更新していかなければならないことが多々あります。

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date:: 2011-09-08 17:23:15 +0900$
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,7 +17,7 @@
 
 @x
   <para>When logged in as user <systemitem class="username">root</systemitem>,
-  making a single mistake can damage or destroy a system. Therefore, 
+  making a single mistake can damage or destroy a system. Therefore,
   the packages in the next two chapters are built as an unprivileged user.
   You could use your own user name, but to make it easier to set up a clean
   working environment, create a new user called <systemitem

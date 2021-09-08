@@ -7,10 +7,6 @@
 
 <!--
  This is part of LFSbookja package.
-
- $Author$
- $Rev$
- $Date::                           $
 -->
 
 <sect1 id="pre-japanese">

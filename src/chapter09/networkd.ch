@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -72,7 +68,7 @@
     <filename class="extension">.link</filename>,
     <filename class="extension">.netdev</filename> and
     <filename class="extension">.network</filename> files. For detailed
-    descriptions and example contents of these configuration files, consult 
+    descriptions and example contents of these configuration files, consult
     the <filename>systemd-link(5)</filename>,
     <filename>systemd-netdev(5)</filename> and
     <filename>systemd-network(5)</filename> manual pages.</para>
@@ -116,7 +112,7 @@
         For most systems, there is only one network interface for
         each type of connection.  For example, the classic interface
         name for a wired connection is eth0.  A wireless connection
-        will usually have the name wifi0 or wlan0. 
+        will usually have the name wifi0 or wlan0.
 @y
         システムにおいて、接続タイプに応じたネットワークインターフェースは、それぞれに 1 つであるのが通常です。
         例えば有線接続のインターフェース名は、従来より eth0 とされます。
@@ -139,8 +135,8 @@
 
 @x
              Create a manual naming scheme, for example by naming the
-             interfaces something like "internet0", "dmz0", or "lan0". 
-             To do that, create .link files in /etc/systemd/network/ that 
+             interfaces something like "internet0", "dmz0", or "lan0".
+             To do that, create .link files in /etc/systemd/network/ that
              select an explicit name or a better naming scheme for your
              network interfaces. For example:
 @y
@@ -150,13 +146,13 @@
 @z
 
 @x
-             See the man page systemd.link(5) for more information. 
+             See the man page systemd.link(5) for more information.
 @y
              詳細は man ページ systemd.link(5) を確認してください。
 @z
 
 @x
-            In /boot/grub/grub.cfg, pass the option net.ifnames=0 on the 
+            In /boot/grub/grub.cfg, pass the option net.ifnames=0 on the
             kernel command line.
 @y
             /boot/grub/grub.cfg ファイル内において、カーネルの設定行に net.ifnames=0 を追加します。
@@ -291,7 +287,7 @@
       with the IP address of the DNS server most appropriate for your setup.
       There will often be more than one entry (requirements demand secondary
       servers for fallback capability). If you only need or want one DNS server,
-      remove the second <emphasis>nameserver</emphasis> line from the file. 
+      remove the second <emphasis>nameserver</emphasis> line from the file.
       The IP address may also be a router on the local network. Another option
       is to use the Google Public DNS service using the IP addresses below as
       nameservers.</para>

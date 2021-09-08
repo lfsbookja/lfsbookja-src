@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,9 +17,9 @@
 
 @x
   <para>Now that a blank partition has been set up, the file system can be
-  created.  LFS can use any file system recognized by the Linux kernel, but the 
-  most common types are ext3 and ext4.  The choice of file system can be 
-  complex and depends on the characteristics of the files and the size of 
+  created.  LFS can use any file system recognized by the Linux kernel, but the
+  most common types are ext3 and ext4.  The choice of file system can be
+  complex and depends on the characteristics of the files and the size of
   the partition.  For example:</para>
 @y
   <para>
@@ -46,7 +42,7 @@
 
 @x ext3
       <listitem><para>is an upgrade to ext2 that includes a journal
-      to help recover the partition's status in the case of an unclean 
+      to help recover the partition's status in the case of an unclean
       shutdown.  It is commonly used as a general purpose file system.
       </para>
 @y

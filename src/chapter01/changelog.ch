@@ -16,7 +16,7 @@
 @z
 
 @x
-  <para>This is version 
+  <para>This is version
         <phrase revision="sysv">&version;</phrase>
         <phrase revision="systemd">&versiond;</phrase>
   of the Linux From Scratch book, dated
@@ -47,6 +47,24 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴</title>
+@z
+
+@x
+      <para>2021-09-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Text clarifications in the backup/restore section
+          of Chapter 7. Thanks to Kevin Buckley for the patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-09-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第 7 章におけるバックアップ/リストアにおいて、説明を明確化。
+          パッチ提供をしてくれた Kevin Buckley に感謝。</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x

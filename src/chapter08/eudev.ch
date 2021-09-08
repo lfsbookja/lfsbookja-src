@@ -11,11 +11,11 @@
 
 @x
     <para>The Eudev package contains programs for dynamic creation of device
-    nodes.</para> 
+    nodes.</para>
 @y
     <para>
     Eudev パッケージはデバイスノードを動的に生成するプログラムを提供します。
-    </para> 
+    </para>
 @z
 
 @x
@@ -92,7 +92,7 @@
 @z
 
 @x
-    <para>Install some custom rules and support files useful in an LFS 
+    <para>Install some custom rules and support files useful in an LFS
     environment:</para>
 @y
     <para>

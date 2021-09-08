@@ -120,9 +120,9 @@
       <term><option>--no-same-owner</option> と <option>--no-same-permissions</option></term>
 @z
 @x
-        <para>Ensure the installed files have the correct ownership and 
+        <para>Ensure the installed files have the correct ownership and
         permissions.  Without these options, using <application>tar</application>
-        will install the package files with the upstream creator's values. 
+        will install the package files with the upstream creator's values.
         </para>
 @y
         <para>
@@ -155,7 +155,7 @@
           libpython&python-minor;.so and libpython3.so
         </seg>
         <seg>
-          /usr/include/python&python-minor;, 
+          /usr/include/python&python-minor;,
           /usr/lib/python3, and
           /usr/share/doc/python-&python-version;
         </seg>
@@ -167,7 +167,7 @@
           libpython&python-minor;.so, libpython3.so
         </seg>
         <seg>
-          /usr/include/python&python-minor;, 
+          /usr/include/python&python-minor;,
           /usr/lib/python3,
           /usr/share/doc/python-&python-version;
         </seg>
@@ -182,7 +182,7 @@
 @x 2to3
             is a <application>Python</application> program that reads
             <application>Python 2.x</application> source code and applies a
-            series of fixes to transform it into 
+            series of fixes to transform it into
             valid <application>Python 3.x</application> code
 @y
             <application>Python 2.x</application> のソースコードを読み込み、種々の変更を行って <application>Python 3.x</application> 用の適正なソースコードに変換するための <application>Python</application> プログラムです

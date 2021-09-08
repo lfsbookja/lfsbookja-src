@@ -173,11 +173,11 @@
 
 @x
         <seg>
-          tclsh (link to tclsh&tcl-major-version;) and 
+          tclsh (link to tclsh&tcl-major-version;) and
           tclsh&tcl-major-version;
         </seg>
         <seg>
-          libtcl&tcl-major-version;.so and 
+          libtcl&tcl-major-version;.so and
           libtclstub&tcl-major-version;.a
         </seg>
 @y

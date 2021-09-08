@@ -1,10 +1,6 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/pdf
 EXTRA_DIST = lfs-admon.ch lfs-lists.ch lfs-mixed.ch \
 	lfs-pagesetup.ch lfs-xref.ch

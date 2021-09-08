@@ -86,8 +86,8 @@
 @x
   <warning><para>The above instructions assume that you will not be restarting
   your computer throughout the LFS process.  If you shut down your system,
-  you will either need to remount the LFS partition each time you restart 
-  the build process or modify your host system's /etc/fstab file to automatically 
+  you will either need to remount the LFS partition each time you restart
+  the build process or modify your host system's /etc/fstab file to automatically
   remount it upon boot.  For example:
 @y
   <warning><para>

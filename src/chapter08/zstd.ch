@@ -81,20 +81,20 @@
 @z
 
 @x
-        <seg>zstd, 
-             zstdcat (link to zstd), 
-             zstdgrep, 
-             zstdless, 
+        <seg>zstd,
+             zstdcat (link to zstd),
+             zstdgrep,
+             zstdless,
              zstdmt (link to zstd), and
              unzstd (link to zstd)
         </seg>
 
         <seg>libzstd.so</seg>
 @y
-        <seg>zstd, 
-             zstdcat (zstd へのリンク), 
-             zstdgrep, 
-             zstdless, 
+        <seg>zstd,
+             zstdcat (zstd へのリンク),
+             zstdgrep,
+             zstdless,
              zstdmt (zstd へのリンク),
              unzstd (zstd へのリンク)
         </seg>

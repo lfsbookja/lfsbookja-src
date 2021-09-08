@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -120,20 +116,20 @@
 @z
 
 @x
-      <para><ulink url="mailto:jmengual@linuxfromscratch.org">Jean-Philippe 
+      <para><ulink url="mailto:jmengual@linuxfromscratch.org">Jean-Philippe
       Mengual </ulink> &lt;jmengual@linuxfromscratch.org&gt; &ndash; French LFS
       translation project 2008-2016</para>
 @y
-      <para><ulink url="mailto:jmengual@linuxfromscratch.org">Jean-Philippe 
+      <para><ulink url="mailto:jmengual@linuxfromscratch.org">Jean-Philippe
       Mengual </ulink> &lt;jmengual@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2008年～2016年まで</para>
 @z
 
 @x
-      <para><ulink url="mailto:jlepiller@linuxfromscratch.org">Julien 
+      <para><ulink url="mailto:jlepiller@linuxfromscratch.org">Julien
       Lepiller </ulink> &lt;jlepiller@linuxfromscratch.org&gt; &ndash; French LFS
       translation project 2017-present</para>
 @y
-      <para><ulink url="mailto:jlepiller@linuxfromscratch.org">Julien 
+      <para><ulink url="mailto:jlepiller@linuxfromscratch.org">Julien
       Lepiller </ulink> &lt;jlepiller@linuxfromscratch.org&gt; &ndash; フランスの LFS 翻訳プロジェクト; 2017年から現在まで</para>
 @z
 
@@ -158,20 +154,20 @@
 @z
 
 @x
-      <para><ulink url="mailto:info@linuxfromscratch.org.ru">Anton Maisak</ulink> 
+      <para><ulink url="mailto:info@linuxfromscratch.org.ru">Anton Maisak</ulink>
       &lt;info@linuxfromscratch.org.ru&gt; &ndash; Russian LFS
       translation project</para>
 @y
-      <para><ulink url="mailto:info@linuxfromscratch.org.ru">Anton Maisak</ulink> 
+      <para><ulink url="mailto:info@linuxfromscratch.org.ru">Anton Maisak</ulink>
       &lt;info@linuxfromscratch.org.ru&gt; &ndash; ロシアの LFS 翻訳プロジェクト</para>
 @z
 
 @x
-      <para><ulink url="mailto:helen@linuxfromscratch.org.ru">Elena Shevcova</ulink> 
+      <para><ulink url="mailto:helen@linuxfromscratch.org.ru">Elena Shevcova</ulink>
       &lt;helen@linuxfromscratch.org.ru&gt; &ndash; Russian LFS
       translation project</para>
 @y
-      <para><ulink url="mailto:helen@linuxfromscratch.org.ru">Elena Shevcova</ulink> 
+      <para><ulink url="mailto:helen@linuxfromscratch.org.ru">Elena Shevcova</ulink>
       &lt;helen@linuxfromscratch.org.ru&gt; &ndash; ロシアの LFS 翻訳プロジェクト</para>
 @z
 

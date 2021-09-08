@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -38,7 +34,7 @@
 @z
 
 @x -des
-          <para>This is a combination of three options: -d uses defaults for 
+          <para>This is a combination of three options: -d uses defaults for
           all items; -e ensures completion of all tasks; -s silences
           non-essential output.</para>
 @y

@@ -34,7 +34,7 @@
 
 @x
     <para>The --disable and --without options prevent warnings about
-    building components that require packages not in LFS or are 
+    building components that require packages not in LFS or are
     inconsistent with programs installed by other packages.</para>
 @y
     <para>
@@ -131,14 +131,14 @@
         swapoff (link to swapon), swapon, switch_root, taskset, ul,
         umount, uname26, unshare, utmpdump, uuidd, uuidgen, uuidparse, wall, wdctl, whereis,
         wipefs, x86_64, and zramctl</seg>
-        <seg>libblkid.so, libfdisk.so, libmount.so, 
+        <seg>libblkid.so, libfdisk.so, libmount.so,
         libsmartcols.so, and libuuid.so</seg>
-        <seg>/usr/include/blkid, 
-             /usr/include/libfdisk, 
-             /usr/include/libmount, 
-             /usr/include/libsmartcols, 
-             /usr/include/uuid, 
-             /usr/share/doc/util-linux-&util-linux-version;, 
+        <seg>/usr/include/blkid,
+             /usr/include/libfdisk,
+             /usr/include/libmount,
+             /usr/include/libsmartcols,
+             /usr/include/uuid,
+             /usr/share/doc/util-linux-&util-linux-version;,
          and /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, blkdiscard, blkid, blkzone, blockdev, cal, cfdisk, chcpu,
@@ -154,14 +154,14 @@
         swapoff (swapon へのリンク), swapon, switch_root, taskset, ul,
         umount, uname26, unshare, utmpdump, uuidd, uuidgen, uuidparse, wall, wdctl, whereis,
         wipefs, x86_64, zramctl</seg>
-        <seg>libblkid.so, libfdisk.so, libmount.so, 
+        <seg>libblkid.so, libfdisk.so, libmount.so,
         libsmartcols.so, libuuid.so</seg>
-        <seg>/usr/include/blkid, 
-             /usr/include/libfdisk, 
-             /usr/include/libmount, 
-             /usr/include/libsmartcols, 
-             /usr/include/uuid, 
-             /usr/share/doc/util-linux-&util-linux-version;, 
+        <seg>/usr/include/blkid,
+             /usr/include/libfdisk,
+             /usr/include/libmount,
+             /usr/include/libsmartcols,
+             /usr/include/uuid,
+             /usr/share/doc/util-linux-&util-linux-version;,
              /var/lib/hwclock</seg>
 @z
 
@@ -524,8 +524,8 @@
 @z
 
 @x last
-          <para>Shows which users last logged in (and out), searching back 
-          through the <filename>/var/log/wtmp</filename> file; it also shows 
+          <para>Shows which users last logged in (and out), searching back
+          through the <filename>/var/log/wtmp</filename> file; it also shows
           system boots, shutdowns, and run-level changes</para>
 @y
           <para>
@@ -536,7 +536,7 @@
 @z
 
 @x lastb
-          <para>Shows the failed login attempts, as logged in 
+          <para>Shows the failed login attempts, as logged in
           <filename>/var/log/btmp</filename></para>
 @y
           <para>
@@ -665,7 +665,7 @@
 @z
 
 @x mesg
-          <para>Controls whether other users can send messages to the current 
+          <para>Controls whether other users can send messages to the current
           user's terminal</para>
 @y
           <para>
@@ -1094,7 +1094,7 @@
 @z
 
 @x zramctl
-          <para>A program to set up and control zram (compressed ram disk) 
+          <para>A program to set up and control zram (compressed ram disk)
           devices</para>
 @y
           <para>

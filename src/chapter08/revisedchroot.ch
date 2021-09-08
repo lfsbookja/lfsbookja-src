@@ -25,7 +25,7 @@
 
 @x
   <para>Now log out and reenter the chroot environment with an updated
-  chroot command.  From now on, use this updated chroot command any time 
+  chroot command.  From now on, use this updated chroot command any time
   you need to reenter the chroot environment after exiting:</para>
 @y
   <para>
@@ -125,7 +125,7 @@
 @z
 
 @x
-   <para>Finally, remove the temporary 'tester' user account created at the 
+   <para>Finally, remove the temporary 'tester' user account created at the
    beginning of the previous chapter.</para>
 @y
    <para>

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -149,7 +145,7 @@
 %@z
 
 @x
-    <para>The GCC documentation recommends building GCC 
+    <para>The GCC documentation recommends building GCC
     in a dedicated build directory:</para>
 @y
     <para>
@@ -171,7 +167,7 @@
 
 @x --with-glibc-version=2.11
           <para>This option ensures the package will be compatible with the host's
-          version of glibc.  It is set to the minimum glibc requirement 
+          version of glibc.  It is set to the minimum glibc requirement
           specified in the <xref linkend="ch-partitioning-hostreqs"/>.</para>
 @y
           <para>

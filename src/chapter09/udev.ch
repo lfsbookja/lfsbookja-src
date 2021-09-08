@@ -513,7 +513,7 @@
 @x
       <para>Note that the <quote>softdep</quote> command also allows
       <literal>pre:</literal> dependencies, or a mixture of both
-      <literal>pre:</literal> and <literal>post:</literal> dependencies.  See 
+      <literal>pre:</literal> and <literal>post:</literal> dependencies.  See
       the <filename>modprobe.d(5)</filename> manual page for more information
       on <quote>softdep</quote> syntax and capabilities.</para>
 @y
@@ -524,8 +524,8 @@
 @z
 
 @x
-      <para revision="sysv">If the module in question is not a wrapper and is 
-      useful by itself, configure the <command>modules</command> bootscript to 
+      <para revision="sysv">If the module in question is not a wrapper and is
+      useful by itself, configure the <command>modules</command> bootscript to
       load this module on system boot. To do this, add the module name to the
       <filename>/etc/sysconfig/modules</filename> file on a separate line.
       This works for wrapper modules too, but is suboptimal in that case.</para>

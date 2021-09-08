@@ -112,7 +112,7 @@
 @z
 
 @x
-      <para>The files can be downloaded individually as described in the 
+      <para>The files can be downloaded individually as described in the
       next two sections.</para>
 @y
       <para>
@@ -121,7 +121,7 @@
 @z
 
 @x
-      <para>For stable versions of the book, a tarball of all the needed files 
+      <para>For stable versions of the book, a tarball of all the needed files
       can be downloaded from one of the LFS files mirrors listed at
       <ulink url="https://www.linuxfromscratch.org/mirrors.html#files"/>.</para>
 @y
@@ -219,7 +219,7 @@ wget -N --input-file=wget-list.orig --continue --directory-prefix=$LFS/sources</
 @z
 
 @x
-  <para>This check can be used after retrieving the needed files with any of the 
+  <para>This check can be used after retrieving the needed files with any of the
   methods listed above.</para>
 @y
   <para>

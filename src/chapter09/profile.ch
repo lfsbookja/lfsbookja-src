@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -199,7 +195,7 @@
   encoding used by the locale, the local currency, and the prefix to dial
   before the telephone number in order to get into the country. If any of the
   commands above fail with a message similar to the one shown below, this means
-  that your locale was either not installed in <xref linkend="ch-system-glibc"/> 
+  that your locale was either not installed in <xref linkend="ch-system-glibc"/>
   or is not supported by the default installation of Glibc.</para>
 @y
   <para>

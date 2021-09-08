@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -93,22 +89,22 @@
 @x
         <seg>/usr/include/asm/*.h, /usr/include/asm-generic/*.h,
         /usr/include/drm/*.h, /usr/include/linux/*.h, /usr/include/misc/*.h,
-        /usr/include/mtd/*.h, /usr/include/rdma/*.h, /usr/include/scsi/*.h, 
-        /usr/include/sound/*.h, /usr/include/video/*.h, 
+        /usr/include/mtd/*.h, /usr/include/rdma/*.h, /usr/include/scsi/*.h,
+        /usr/include/sound/*.h, /usr/include/video/*.h,
         and /usr/include/xen/*.h</seg>
         <seg>/usr/include/asm, /usr/include/asm-generic, /usr/include/drm,
-        /usr/include/linux, /usr/include/misc, /usr/include/mtd, 
-        /usr/include/rdma, /usr/include/scsi, /usr/include/sound, 
+        /usr/include/linux, /usr/include/misc, /usr/include/mtd,
+        /usr/include/rdma, /usr/include/scsi, /usr/include/sound,
         /usr/include/video, and /usr/include/xen</seg>
 @y
         <seg>/usr/include/asm/*.h, /usr/include/asm-generic/*.h,
         /usr/include/drm/*.h, /usr/include/linux/*.h, /usr/include/misc/*.h,
-        /usr/include/mtd/*.h, /usr/include/rdma/*.h, /usr/include/scsi/*.h, 
-        /usr/include/sound/*.h, /usr/include/video/*.h, 
+        /usr/include/mtd/*.h, /usr/include/rdma/*.h, /usr/include/scsi/*.h,
+        /usr/include/sound/*.h, /usr/include/video/*.h,
         /usr/include/xen/*.h</seg>
         <seg>/usr/include/asm, /usr/include/asm-generic, /usr/include/drm,
-        /usr/include/linux, /usr/include/misc, /usr/include/mtd, 
-        /usr/include/rdma, /usr/include/scsi, /usr/include/sound, 
+        /usr/include/linux, /usr/include/misc, /usr/include/mtd,
+        /usr/include/rdma, /usr/include/scsi, /usr/include/sound,
         /usr/include/video, /usr/include/xen</seg>
 @z
 

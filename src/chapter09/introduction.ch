@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -69,7 +65,7 @@
 @z
 
 @x
-    <para>The <command>init</command> program is controlled by the 
+    <para>The <command>init</command> program is controlled by the
     <filename>/etc/inittab</filename> file and is organized into run levels that
     can be run by the user:</para>
 @y
@@ -134,10 +130,10 @@
 @z
 
 @x
-          <para>May be slower to boot.  A medium speed base LFS system 
-          takes 8-12 seconds where the boot time is measured from the 
-          first kernel message to the login prompt.  Network 
-          connectivity is typically established about 2 seconds 
+          <para>May be slower to boot.  A medium speed base LFS system
+          takes 8-12 seconds where the boot time is measured from the
+          first kernel message to the login prompt.  Network
+          connectivity is typically established about 2 seconds
           after the login prompt.</para>
 @y
           <para>

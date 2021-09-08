@@ -1,10 +1,6 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author: matsuand $
-## $Rev: 1137 $
-## $Date:: 2017-05-09 10:24:31 +0900#$
-##
 BOOKdir = @abs_bookdir@/chapter11
 CHANGE_FILES = \
 	chapter11.ch  \

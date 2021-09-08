@@ -1,10 +1,6 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/xhtml
 EXTRA_DIST = lfs-admon.ch lfs-legalnotice.ch lfs-mixed.ch \
 	lfs-navigational.ch lfs-sections.ch lfs-titles.ch lfs-toc.ch \

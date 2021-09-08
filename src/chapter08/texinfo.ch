@@ -215,7 +215,7 @@
 @z
 
 @x texi2any
-          <para>Translate Texinfo source documentation to 
+          <para>Translate Texinfo source documentation to
           various other formats</para>
 @y
           <para>

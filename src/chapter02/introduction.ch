@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,8 +17,8 @@
 
 @x
   <para>In this chapter, the host tools needed for building LFS
-  are checked and, if necessary, installed.  Then a partition which will 
-  host the LFS system is prepared. We will create the partition 
+  are checked and, if necessary, installed.  Then a partition which will
+  host the LFS system is prepared. We will create the partition
   itself, create a file system on it, and mount it.</para>
 @y
   <para>

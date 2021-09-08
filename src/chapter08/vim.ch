@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -68,8 +64,8 @@
 @z
 
 @x
-    <para>To prepare the tests, ensure that user 
-    <systemitem class="username">tester</systemitem> can write 
+    <para>To prepare the tests, ensure that user
+    <systemitem class="username">tester</systemitem> can write
     to the source tree:</para>
 @y
     <para>

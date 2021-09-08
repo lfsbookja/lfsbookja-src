@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
     <fo:list-block id="{$id}" provisional-distance-between-starts="12em"
                    provisional-label-separation="1em"

@@ -119,7 +119,7 @@
 
 @x
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-        dbus-run-session, dbus-send, dbus-test-tool, 
+        dbus-run-session, dbus-send, dbus-test-tool,
         dbus-update-activation-environment, and dbus-uuidgen</seg>
         <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
@@ -127,7 +127,7 @@
         and /var/lib/dbus</seg>
 @y
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
-        dbus-run-session, dbus-send, dbus-test-tool, 
+        dbus-run-session, dbus-send, dbus-test-tool,
         dbus-update-activation-environment, dbus-uuidgen</seg>
         <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,

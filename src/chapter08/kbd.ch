@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -167,7 +163,7 @@
         psfxtable), psfstriptable (link to psfxtable), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode, setvtrgb,
         showconsolefont, showkey, unicode_start, and unicode_stop</seg>
-        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps, 
+        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps,
         /usr/share/doc/kbd-&kbd-version;,  and /usr/share/unimaps</seg>
 @y
         <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbdinfo,
@@ -176,7 +172,7 @@
         psfstriptable (psfxtable へのリンク), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode, setvtrgb,
         showconsolefont, showkey, unicode_start, unicode_stop</seg>
-        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps, 
+        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps,
         /usr/share/doc/kbd-&kbd-version;, /usr/share/unimaps</seg>
 @z
 

@@ -80,7 +80,7 @@
 @z
 
 @x --with-systemd...
-          <para>These parameters prevent installing unneeded systemd 
+          <para>These parameters prevent installing unneeded systemd
           directories and files.</para>
 @y
           <para>

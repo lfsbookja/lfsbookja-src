@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -87,7 +83,7 @@
 
 @x
     <para>By default, <filename class="directory">/tmp</filename> is created as
-    a tmpfs. If this is not desired, it can be overridden by executing the 
+    a tmpfs. If this is not desired, it can be overridden by executing the
     following command:</para>
 @y
     <para>
@@ -99,7 +95,7 @@
 
 @x
     <para>Alternatively, if a separate partition for
-    <filename class="directory">/tmp</filename> is desired, specify that 
+    <filename class="directory">/tmp</filename> is desired, specify that
     partition in a <filename>/etc/fstab</filename> entry.</para>
 @y
     <para>
@@ -135,7 +131,7 @@
 
 @x
     <para>The system location for the configuration files is
-    <filename>/usr/lib/tmpfiles.d/*.conf</filename>. The local 
+    <filename>/usr/lib/tmpfiles.d/*.conf</filename>. The local
     configuration files are in
     <filename class="directory">/etc/tmpfiles.d</filename>. Files in
     <filename class="directory">/etc/tmpfiles.d</filename> override
@@ -155,9 +151,9 @@
 
 @x
       Note that the syntax for the
-      <filename>/usr/lib/tmpfiles.d/*.conf</filename> files can be 
+      <filename>/usr/lib/tmpfiles.d/*.conf</filename> files can be
       confusing.  For example, the default deletion of files in the /tmp directory
-      is located in <filename>/usr/lib/tmpfiles.d/tmp.conf</filename> with 
+      is located in <filename>/usr/lib/tmpfiles.d/tmp.conf</filename> with
       the line:
 @y
       <filename>/usr/lib/tmpfiles.d/*.conf</filename> ファイルの文法はやっかいなものです。
@@ -232,7 +228,7 @@
     <para>Rather than plain shell scripts used in SysVinit or BSD style init
     systems, systemd uses a unified format for different types of startup
     files (or units). The command <command>systemctl</command> is used to
-    enable, disable, control state, and obtain status of unit files. Here 
+    enable, disable, control state, and obtain status of unit files. Here
     are some examples of frequently used commands:</para>
 @y
     <para>

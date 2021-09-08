@@ -10,7 +10,7 @@
 @z
 
 @x
-    <para>The Bc package contains an arbitrary precision numeric processing 
+    <para>The Bc package contains an arbitrary precision numeric processing
     language.</para>
 @y
     <para>

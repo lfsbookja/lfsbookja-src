@@ -20,7 +20,7 @@
 @x
     <note>
       <para>This package extracts to the directory
-      <filename class="directory">procps-3.3.17</filename>, 
+      <filename class="directory">procps-3.3.17</filename>,
       not the expected
       <filename class="directory">procps-ng-3.3.17</filename>.</para>
     </note>

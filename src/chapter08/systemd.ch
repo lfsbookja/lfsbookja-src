@@ -284,8 +284,8 @@
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /usr/lib/systemd, /usr/lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel, 
-        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd, 
+        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel,
+        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd,
         /usr/lib/tmpfiles.d,
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, and /var/log/journal</seg>
@@ -313,8 +313,8 @@
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /usr/lib/systemd, /usr/lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel, 
-        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd, 
+        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel,
+        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd,
         /usr/lib/tmpfiles.d,
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, /var/log/journal</seg>
@@ -376,7 +376,7 @@
 
 @x init
           <para>Is the first process to be started when the kernel has initialized
-          the hardware which takes over the boot process and starts all 
+          the hardware which takes over the boot process and starts all
           processes according to its configuration files. In this case, it starts
           systemd</para>
 @y
@@ -430,7 +430,7 @@
 @z
 
 @x networkctl
-          <para>Is used to introspect and configure the state of the network 
+          <para>Is used to introspect and configure the state of the network
           links configured by systemd-networkd</para>
 @y
           <para>
@@ -504,7 +504,7 @@
 @z
 
 @x shutdown
-          <para>Brings the system down in a safe and secure manner, signaling 
+          <para>Brings the system down in a safe and secure manner, signaling
           all processes and notifying all logged-in users</para>
 @y
           <para>
@@ -754,7 +754,7 @@
 @z
 
 @x systemd-tty-ask-password-agent
-          <para>Is used to list and/or process pending systemd password 
+          <para>Is used to list and/or process pending systemd password
           requests</para>
 @y
           <para>
@@ -781,9 +781,9 @@
 @z
 
 @x udevadm
-          <para>Is a generic udev administration tool which controls the udevd 
-          daemon, provides info from the Udev hardware database, monitors 
-          uevents, waits for uevents to finish, tests udev configuration, and 
+          <para>Is a generic udev administration tool which controls the udevd
+          daemon, provides info from the Udev hardware database, monitors
+          uevents, waits for uevents to finish, tests udev configuration, and
           triggers uevents for a given device</para>
 @y
           <para>

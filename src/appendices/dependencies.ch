@@ -399,7 +399,7 @@
 @x
           <seg>
             <ulink url="https://metacpan.org/pod/Expect">Expect.pm</ulink>
-            and 
+            and
             <ulink url="https://metacpan.org/pod/IO::Tty">IO::Tty</ulink>
           </seg>
 @y
@@ -592,11 +592,11 @@
 @x
           <seg>
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
-          </seg>  
+          </seg>
 @y
           <seg>
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
-          </seg>  
+          </seg>
 @z
 
 %----------------------------------------------------------------------
@@ -749,11 +749,11 @@
           <seg>
              <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>
              and
-             <ulink url="https://repo.or.cz/isl.git">ISL</ulink> 
+             <ulink url="https://repo.or.cz/isl.git">ISL</ulink>
 @y
           <seg>
              <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
-             <ulink url="https://repo.or.cz/isl.git">ISL</ulink> 
+             <ulink url="https://repo.or.cz/isl.git">ISL</ulink>
 @z
 
 %----------------------------------------------------------------------

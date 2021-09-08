@@ -1,10 +1,6 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 SUBDIRS=lfs-xsl
 BOOKdir = @abs_bookdir@/stylesheets
 EXTRA_DIST = wget-list.ch lfs-nochunks.ch lfs-pdf.ch lfs-chunked.ch \

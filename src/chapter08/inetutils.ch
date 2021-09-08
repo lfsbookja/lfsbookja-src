@@ -139,10 +139,10 @@
 @z
 
 @x
-        <seg>dnsdomainname, ftp, ifconfig, hostname, ping, ping6, 
+        <seg>dnsdomainname, ftp, ifconfig, hostname, ping, ping6,
         talk, telnet, tftp, and traceroute</seg>
 @y
-        <seg>dnsdomainname, ftp, ifconfig, hostname, ping, ping6, 
+        <seg>dnsdomainname, ftp, ifconfig, hostname, ping, ping6,
         talk, telnet, tftp, traceroute</seg>
 @z
 

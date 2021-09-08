@@ -113,11 +113,11 @@
 
 @x
        <seg>grub-bios-setup,      grub-editenv,    grub-file,        grub-fstest,
-            grub-glue-efi,        grub-install,    grub-kbdcomp,     grub-macbless,   
+            grub-glue-efi,        grub-install,    grub-kbdcomp,     grub-macbless,
             grub-menulst2cfg,     grub-mkconfig,
                                   grub-mkimage,    grub-mklayout,    grub-mknetdir,
             grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
-            grub-ofpathname,      grub-probe,      grub-reboot,      grub-render-label, 
+            grub-ofpathname,      grub-probe,      grub-reboot,      grub-render-label,
             grub-script-check,
             grub-set-default,     grub-sparc64-setup, and grub-syslinux2cfg</seg>
 
@@ -125,11 +125,11 @@
         is first run)</seg>
 @y
        <seg>grub-bios-setup,      grub-editenv,    grub-file,        grub-fstest,
-            grub-glue-efi,        grub-install,    grub-kbdcomp,     grub-macbless,   
+            grub-glue-efi,        grub-install,    grub-kbdcomp,     grub-macbless,
             grub-menulst2cfg,     grub-mkconfig,
                                   grub-mkimage,    grub-mklayout,    grub-mknetdir,
             grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
-            grub-ofpathname,      grub-probe,      grub-reboot,      grub-render-label, 
+            grub-ofpathname,      grub-probe,      grub-reboot,      grub-render-label,
             grub-script-check,
             grub-set-default,     grub-sparc64-setup, grub-syslinux2cfg</seg>
 

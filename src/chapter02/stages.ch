@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -146,8 +142,8 @@
          <para> The virtual file systems must be mounted.  This can be done
          before or after entering chroot by changing to a host virtual terminal
          and, as <systemitem class="username">root</systemitem>, running the
-         commands in 
-         <xref linkend='ch-tools-bindmount'/> and 
+         commands in
+         <xref linkend='ch-tools-bindmount'/> and
          <xref linkend='ch-tools-kernfsmount'/>.</para>
 @y
          <para>

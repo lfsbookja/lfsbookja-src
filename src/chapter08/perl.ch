@@ -34,7 +34,7 @@
 @z
 
 @x
-    <para>This version of Perl now builds the Compress::Raw::Zlib and 
+    <para>This version of Perl now builds the Compress::Raw::Zlib and
     Compress::Raw::BZip2 modules. By
     default Perl will use an internal copy of the sources for the build.
     Issue the following command so that Perl will use the libraries
@@ -75,7 +75,7 @@
 @z
 
 @x -Dpager="/usr/bin/less -isR"
-          <para>This ensures that <userinput>less</userinput> is used instead 
+          <para>This ensures that <userinput>less</userinput> is used instead
           of <userinput>more</userinput>.</para>
 @y
           <para>

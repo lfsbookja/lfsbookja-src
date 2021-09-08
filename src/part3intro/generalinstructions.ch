@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -183,7 +179,7 @@
 @x
               <para>Using the <command>tar</command> program, extract the package
               to be built.  In <xref linkend="chapter-cross-tools"/> and
-              <xref linkend="chapter-temporary-tools"/>, ensure you are 
+              <xref linkend="chapter-temporary-tools"/>, ensure you are
               the <emphasis>lfs</emphasis> user when extracting the package.</para>
 @y
               <para>

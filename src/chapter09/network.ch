@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -89,7 +85,7 @@
     will assign network card interface names based on system physical
     characteristics such as enp2s1. If you are not sure what your interface
     name is, you can always run <command>ip link</command> or <command>ls
-    /sys/class/net</command> after you have booted your system.  
+    /sys/class/net</command> after you have booted your system.
     </para></note>
 @y
     <note><para>
@@ -376,7 +372,7 @@
 
 @x
      <para>The <replaceable>&lt;192.168.1.1&gt;</replaceable>,
-     <replaceable>&lt;FQDN&gt;</replaceable>, and 
+     <replaceable>&lt;FQDN&gt;</replaceable>, and
      <replaceable>&lt;HOSTNAME&gt;</replaceable> values need to be
      changed for specific uses or requirements (if assigned an IP address by a
      network/system administrator and the machine will be connected to an

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -27,7 +23,7 @@
 
 @x
     <para>The LFS-Bootscripts package contains a set of scripts to start/stop
-    the LFS system at bootup/shutdown.  
+    the LFS system at bootup/shutdown.
     The configuration files and procedures needed to
     customize the boot process are described in the following sections.</para>
 @y

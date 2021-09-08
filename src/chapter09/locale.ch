@@ -142,7 +142,7 @@
   encoding used by the locale, the local currency, and the prefix to dial
   before the telephone number in order to get into the country. If any of the
   commands above fail with a message similar to the one shown below, this means
-  that your locale was either not installed in Chapter&nbsp;8 or is not 
+  that your locale was either not installed in Chapter&nbsp;8 or is not
   supported by the default installation of Glibc.</para>
 @y
   <para>
@@ -258,7 +258,7 @@
   substitutes them with question marks in that locale. Also, an attempt to send
   mail with such characters from Mutt or Pine results in non-RFC-conforming
   messages being sent (the charset in the outgoing mail is indicated as <quote>unknown
-  8-bit</quote>). It's suggested that you use the <quote>C</quote> locale only 
+  8-bit</quote>). It's suggested that you use the <quote>C</quote> locale only
   if you are certain that you will never need 8-bit characters.</para>
 @y
   <para>

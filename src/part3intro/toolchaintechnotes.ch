@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -376,7 +372,7 @@
     <para>Now, there is more about cross-compiling: the C language is not
     just a compiler, but also defines a standard library. In this book, the
     GNU C library, named glibc, is used. This library must
-    be compiled for the lfs machine, that is, using the cross compiler cc1. 
+    be compiled for the lfs machine, that is, using the cross compiler cc1.
     But the compiler itself uses an internal library implementing complex
     instructions not available in the assembler instruction set. This
     internal library is named libgcc, and must be linked to the glibc
@@ -757,7 +753,7 @@
     linkend="chapter-chroot-temporary-tools"/>, the first task is to install
     libstdc++. Then temporary installations of programs needed for the proper
     operation of the toolchain are performed. From this point onwards, the
-    core toolchain is self-contained and self-hosted.  In 
+    core toolchain is self-contained and self-hosted. In
     <xref linkend="chapter-building-system"/>, final versions of all the
     packages needed for a fully functional system are built, tested and
     installed.</para>

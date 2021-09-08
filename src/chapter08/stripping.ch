@@ -16,7 +16,7 @@
 @z
 
 @x
-  <para>This section is optional.  If the intended user is not a 
+  <para>This section is optional.  If the intended user is not a
   programmer and does not plan to do
   any debugging on the system software, the system size can be decreased
   by about 2 GB by removing the debugging symbols from binaries and
@@ -47,9 +47,9 @@
 
 @x
   <para>The debugging symbols for selected libraries are placed
-  in separate files.  This debugging information is needed if running 
-  regression tests that use <ulink 
-  url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink 
+  in separate files.  This debugging information is needed if running
+  regression tests that use <ulink
+  url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink
   url='&blfs-book;/general/gdb.html'>gdb</ulink> later in BLFS.
   </para>
 @y
@@ -86,7 +86,7 @@
 
 @x
   <note><para>The ELF loader's name is ld-linux-x86-64.so.2 on 64-bit systems
-  and ld-linux.so.2 on 32-bit systems.  The contruct below selects the 
+  and ld-linux.so.2 on 32-bit systems.  The contruct below selects the
   correct name for the current architecture.</para></note>
 @y
   <note><para>

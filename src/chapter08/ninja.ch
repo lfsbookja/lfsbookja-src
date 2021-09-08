@@ -40,7 +40,7 @@
 
 @x
     <para>When run, ninja normally runs a maximum number of processes
-    in parallel.  By default this is the number of cores on the system 
+    in parallel.  By default this is the number of cores on the system
     plus two.  In some cases this can overheat a CPU or run a system out
     of memory.  If run from the command line, passing a -jN parameter
     will limit the number of parallel processes, but some packages
@@ -57,7 +57,7 @@
 
 @x
     <para>Using the <emphasis>optional</emphasis> procedure below allows a user to
-    limit the number of parallel processes via an environment variable, 
+    limit the number of parallel processes via an environment variable,
     NINJAJOBS.  <emphasis role="bold">For example</emphasis>, setting:
 @y
     <para>
@@ -73,7 +73,7 @@
 @z
 
 @x
-    <para>If desired, add the capability to use the environment variable 
+    <para>If desired, add the capability to use the environment variable
     NINJAJOBS by running:</para>
 @y
     <para>

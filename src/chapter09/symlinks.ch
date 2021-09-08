@@ -60,12 +60,12 @@
 
 @x
       <para>The traditional naming scheme using eth0, eth1, etc can be
-      restored by adding <userinput>net.ifnames=0</userinput> on the 
+      restored by adding <userinput>net.ifnames=0</userinput> on the
       kernel command line.  This is most appropriate for those systems
       that have only one ethernet device of the same type.  Laptops
-      often have multiple ethernet connections that are named eth0 and 
-      wlan0 and are also candidates for this method.  The command line 
-      is passed in the GRUB configuration file. 
+      often have multiple ethernet connections that are named eth0 and
+      wlan0 and are also candidates for this method.  The command line
+      is passed in the GRUB configuration file.
       See <xref linkend="grub-cfg"/>.</para>
 @y
 <!-- 日本語版注釈: candidates for method の意味が分からなかったので訳出スキップ -->

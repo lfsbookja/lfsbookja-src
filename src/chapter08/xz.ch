@@ -73,59 +73,59 @@
 
 @x
         <seg>
-          lzcat (link to xz), 
-          lzcmp (link to xzdiff), 
-          lzdiff (link to xzdiff), 
-          lzegrep (link to xzgrep), 
+          lzcat (link to xz),
+          lzcmp (link to xzdiff),
+          lzdiff (link to xzdiff),
+          lzegrep (link to xzgrep),
           lzfgrep (link to xzgrep),
-          lzgrep (link to xzgrep), 
-          lzless (link to xzless), 
+          lzgrep (link to xzgrep),
+          lzless (link to xzless),
           lzma (link to xz),
-          lzmadec, 
-          lzmainfo, 
+          lzmadec,
+          lzmainfo,
           lzmore (link to xzmore),
-          unlzma (link to xz), 
-          unxz (link to xz), 
-          xz, 
+          unlzma (link to xz),
+          unxz (link to xz),
+          xz,
           xzcat (link to xz),
-          xzcmp (link to xzdiff), 
-          xzdec, 
-          xzdiff, 
+          xzcmp (link to xzdiff),
+          xzdec,
+          xzdiff,
           xzegrep (link to xzgrep),
-          xzfgrep (link to xzgrep), 
-          xzgrep, 
-          xzless, and 
+          xzfgrep (link to xzgrep),
+          xzgrep,
+          xzless, and
           xzmore</seg>
         <seg>
           liblzma.so
         </seg>
         <seg>
-          /usr/include/lzma and 
+          /usr/include/lzma and
           /usr/share/doc/xz-&xz-version;
          </seg>
 @y
         <seg>
-          lzcat (xz へのリンク), 
-          lzcmp (xzdiff へのリンク), 
-          lzdiff (xzdiff へのリンク), 
-          lzegrep (xzgrep へのリンク), 
+          lzcat (xz へのリンク),
+          lzcmp (xzdiff へのリンク),
+          lzdiff (xzdiff へのリンク),
+          lzegrep (xzgrep へのリンク),
           lzfgrep (xzgrep へのリンク),
-          lzgrep (xzgrep へのリンク), 
-          lzless (xzless へのリンク), 
+          lzgrep (xzgrep へのリンク),
+          lzless (xzless へのリンク),
           lzma (xz へのリンク),
-          lzmadec, 
-          lzmainfo, 
+          lzmadec,
+          lzmainfo,
           lzmore (xzmore へのリンク),
-          unlzma (xz へのリンク), 
-          unxz (xz へのリンク), 
-          xz, 
+          unlzma (xz へのリンク),
+          unxz (xz へのリンク),
+          xz,
           xzcat (xz へのリンク),
-          xzcmp (xzdiff へのリンク), 
-          xzdec, 
-          xzdiff, 
+          xzcmp (xzdiff へのリンク),
+          xzdec,
+          xzdiff,
           xzegrep (xzgrep へのリンク),
-          xzfgrep (xzgrep へのリンク), 
-          xzgrep, 
+          xzfgrep (xzgrep へのリンク),
+          xzgrep,
           xzless,
           xzmore</seg>
         <seg>

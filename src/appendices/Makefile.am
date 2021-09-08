@@ -1,10 +1,6 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/appendices
 CHANGE_FILES = \
 	acknowledgments.ch \

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,7 +16,7 @@
 @z
 
 @x
-<para>My journey to learn and better understand Linux began 
+<para>My journey to learn and better understand Linux began
 back in 1998. I had just installed my first Linux distribution and had
 quickly become intrigued with the whole concept and philosophy behind
 Linux.</para> 

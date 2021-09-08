@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original shell source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 sed -i -e 's@gcc --version@<fo:block page-break-before="always"></fo:block>&@' $FILE
 @y

@@ -27,8 +27,8 @@
 @x
     <para>The <command>arpd</command> program included in this package will not
     be built since it is dependent on Berkeley DB, which is not installed in
-    LFS. However, a directory for <command>arpd</command> and a man page will still 
-    be installed. Prevent this by running the commands below. 
+    LFS. However, a directory for <command>arpd</command> and a man page will still
+    be installed. Prevent this by running the commands below.
     If the <command>arpd</command> binary is needed,
     instructions for compiling Berkeley DB can be found in the BLFS Book at
     <ulink url="&blfs-book;server/db.html"/>.
@@ -45,7 +45,7 @@
 @z
 
 @x
-    <para>It is also necessary to disable building two modules that 
+    <para>It is also necessary to disable building two modules that
     require <ulink url="&blfs-book;postlfs/iptables.html"/>.</para>
 @y
     <para>

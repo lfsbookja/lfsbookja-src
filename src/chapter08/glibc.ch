@@ -49,7 +49,7 @@
 @z
 
 @x
-    <para>The Glibc documentation recommends building Glibc 
+    <para>The Glibc documentation recommends building Glibc
     in a dedicated build directory:</para>
 @y
     <para>
@@ -81,7 +81,7 @@
 @z
 
 @x --disable-werror
-          <para>This option disables the -Werror option passed to 
+          <para>This option disables the -Werror option passed to
           GCC.  This is necessary for running the test suite.</para>
 @y
           <para>
@@ -103,7 +103,7 @@
 @z
 
 @x --enable-stack-protector=strong
-          <para>This option increases system security by adding 
+          <para>This option increases system security by adding
           extra code to check for buffer overflows, such as stack
           smashing attacks.</para>
 @y
@@ -186,7 +186,7 @@
 @x
     <para>You may see some test failures. The Glibc test suite is
     somewhat dependent on the host system. A few failures out of
-    over 4200 tests can generally be ignored. This is a list of the 
+    over 4200 tests can generally be ignored. This is a list of the
     most common issues seen for recent versions of LFS:</para>
 @y
     <para>
@@ -198,7 +198,7 @@
 @z
 
 @x
-        <para><emphasis>io/tst-lchmod</emphasis> 
+        <para><emphasis>io/tst-lchmod</emphasis>
         is known to fail in the LFS chroot environment.</para>
 @y
         <para>
@@ -207,7 +207,7 @@
 @z
 
 @x
-        <para><emphasis>misc/tst-ttyname</emphasis> 
+        <para><emphasis>misc/tst-ttyname</emphasis>
         is known to fail in the LFS chroot environment.</para>
 @y
         <para>
@@ -236,7 +236,7 @@
 @x
         <para>The <emphasis>rt/tst-cputimer{1,2,3}</emphasis> tests depend on
         the host system kernel. Kernels 4.14.91&ndash;4.14.96,
-        4.19.13&ndash;4.19.18, and 4.20.0&ndash;4.20.5 are known to 
+        4.19.13&ndash;4.19.18, and 4.20.0&ndash;4.20.5 are known to
         cause these tests to fail.
         </para>
 @y
@@ -303,7 +303,7 @@
 @z
 
 @x
-    <para revision="systemd">Install the systemd support files for 
+    <para revision="systemd">Install the systemd support files for
     <command>nscd</command>:</para>
 @y
     <para revision="systemd">
@@ -377,9 +377,9 @@
 @z
 
 @x
-    <note><para>Glibc now uses libidn2 when resolving internationalized 
+    <note><para>Glibc now uses libidn2 when resolving internationalized
     domain names.  This is a run time dependency.  If this capability
-    is needed, the instructions for installing libidn2 are in the 
+    is needed, the instructions for installing libidn2 are in the
     <ulink url="&blfs-book;general/libidn2.html">BLFS libidn2 page</ulink>.
     </para></note>
 @y
@@ -611,7 +611,7 @@
 
 @x
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
-        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, 
+        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd,
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,

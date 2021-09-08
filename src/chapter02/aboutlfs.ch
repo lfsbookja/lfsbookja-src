@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -106,8 +102,8 @@
   user's <filename>.bash_profile</filename> is not normally used when
   a virtual terminal is started.  In this case, add the export command to
   the <filename>.bashrc</filename> file for the user and
-  <systemitem class="username">root</systemitem>.  In addition, 
-  some distributions have instructions to not run the <filename>.bashrc</filename> 
+  <systemitem class="username">root</systemitem>.  In addition,
+  some distributions have instructions to not run the <filename>.bashrc</filename>
   instructions in a non-interactive bash invocation.  Be sure to add the
   export command before the test for non-interactive use.</para>
 @y

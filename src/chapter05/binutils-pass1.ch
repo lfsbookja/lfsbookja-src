@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -62,7 +58,7 @@
 @z
 
 @x
-    <para>The Binutils documentation recommends building Binutils 
+    <para>The Binutils documentation recommends building Binutils
     in a dedicated build directory:</para>
 @y
     <para>

@@ -143,7 +143,7 @@
       <para>The instructions above don't create non-wide-character Ncurses
       libraries since no package installed by compiling from sources would link
       against them at runtime. However, the only known binary-only
-      applications that link against non-wide-character Ncurses libraries 
+      applications that link against non-wide-character Ncurses libraries
       require version 5.  If you must have such libraries because of some binary-only
       application or to be compliant with LSB, build the package again with the
       following commands:</para>
@@ -173,53 +173,53 @@
 
 @x
         <seg>
-           captoinfo (link to tic), 
-           clear, 
-           infocmp, 
+           captoinfo (link to tic),
+           clear,
+           infocmp,
            infotocap (link to tic),
-           ncursesw6-config, 
-           reset (link to tset), 
-           tabs, 
-           tic, 
-           toe, 
-           tput, and 
+           ncursesw6-config,
+           reset (link to tset),
+           tabs,
+           tic,
+           toe,
+           tput, and
            tset
         </seg>
         <seg>
            libcursesw.so (symlink and linker script to libncursesw.so),
-           libformw.so, 
-           libmenuw.so, 
+           libformw.so,
+           libmenuw.so,
            libncursesw.so,
            libpanelw.so, and their non-wide-character counterparts without "w"
               in the library names.</seg>
         <seg>
-           /usr/share/tabset, 
+           /usr/share/tabset,
            /usr/share/terminfo, and
            /usr/share/doc/ncurses-&ncurses-version;
         </seg>
 @y
         <seg>
            captoinfo (tic へのリンク), 
-           clear, 
-           infocmp, 
+           clear,
+           infocmp,
            infotocap (tic へのリンク),
-           ncursesw6-config, 
+           ncursesw6-config,
            reset (tset へのリンク), 
-           tabs, 
-           tic, 
-           toe, 
+           tabs,
+           tic,
+           toe,
            tput,
            tset
         </seg>
         <seg>
            libcursesw.so (libncursesw.so へのシンボリックリンクおよびリンカースクリプト),
-           libformw.so, 
-           libmenuw.so, 
+           libformw.so,
+           libmenuw.so,
            libncursesw.so,
-           libpanelw.so, 
+           libpanelw.so,
            これらに加えてワイド文字対応ではない通常のライブラリでその名称から "w" を取り除いたもの。</seg>
         <seg>
-           /usr/share/tabset, 
+           /usr/share/tabset,
            /usr/share/terminfo,
            /usr/share/doc/ncurses-&ncurses-version;
         </seg>

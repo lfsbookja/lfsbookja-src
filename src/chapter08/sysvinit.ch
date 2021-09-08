@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -103,11 +99,11 @@
 @z
 
 @x
-        <seg>bootlogd, fstab-decode, halt, init, killall5, 
+        <seg>bootlogd, fstab-decode, halt, init, killall5,
         poweroff (link to halt), reboot (link to halt), runlevel,
         shutdown, and telinit (link to init)</seg>
 @y
-        <seg>bootlogd, fstab-decode, halt, init, killall5, 
+        <seg>bootlogd, fstab-decode, halt, init, killall5,
         poweroff (halt へのリンク), reboot (halt へのリンク), runlevel,
         shutdown, telinit (init へのリンク)</seg>
 @z

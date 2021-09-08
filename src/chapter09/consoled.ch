@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -49,7 +45,7 @@
   language-specific HOWTOs can also help with this, see <ulink
   url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>.
   Examine the output of <command>localectl list-keymaps</command> for a list of
-  valid console keymaps. Look in the 
+  valid console keymaps. Look in the
   <filename class="directory">/usr/share/consolefonts</filename>
   directory for valid screen fonts.</para>
 @y

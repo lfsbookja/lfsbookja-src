@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -59,7 +55,7 @@
 @z
 
 @x
-    <para>The tests t/subobj.sh, t/deprecated-acinit.sh, and t/init.sh are known to 
+    <para>The tests t/subobj.sh, t/deprecated-acinit.sh, and t/init.sh are known to
     fail in the LFS environment.</para>
 @y
     <para>

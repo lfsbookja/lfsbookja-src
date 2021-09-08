@@ -38,7 +38,7 @@
 
 @x
     <para>The tests need to be run on a filesystem that supports extended
-    attributes such as the ext2, ext3, or ext4 filesystems. 
+    attributes such as the ext2, ext3, or ext4 filesystems.
     To test the results, issue:</para>
 @y
     <para>
