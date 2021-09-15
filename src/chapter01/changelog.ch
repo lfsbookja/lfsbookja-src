@@ -50,6 +50,96 @@
 @z
 
 @x
+      <para>2021-09-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Ensure tcl documentation instructions are present. Fixes
+          <ulink url="&lfs-ticket-root;4923">#4923</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.9.7. Fixes
+          <ulink url="&lfs-ticket-root;4916">#4916</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.14.3. Fixes
+          <ulink url="&lfs-ticket-root;4913">#4913</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.57. Fixes
+          <ulink url="&lfs-ticket-root;4912">#4912</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.14.0. Fixes
+          <ulink url="&lfs-ticket-root;4917">#4917</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to inetutils-2.2. Fixes
+          <ulink url="&lfs-ticket-root;4918">#4918</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gzip-1.11. Fixes
+          <ulink url="&lfs-ticket-root;4920">#4920</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.21. Fixes
+          <ulink url="&lfs-ticket-root;4919">#4919</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.8.1. Fixes
+          <ulink url="&lfs-ticket-root;4921">#4921</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-5.0.2. Fixes
+          <ulink url="&lfs-ticket-root;4908">#4905</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-09-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tcl ドキュメントの生成手順を現行に合わせました。
+          <ulink url="&lfs-ticket-root;4923">#4923</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python3-3.9.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4916">#4916</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.14.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4913">#4913</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.57 へのアップデート。
+          <ulink url="&lfs-ticket-root;4912">#4912</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.14.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4917">#4917</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inetutils-2.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4918">#4918</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gzip-1.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4920">#4920</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.21 へのアップデート。
+          <ulink url="&lfs-ticket-root;4919">#4919</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4921">#4921</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-5.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4908">#4905</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-09-08</para>
       <itemizedlist>
         <listitem>

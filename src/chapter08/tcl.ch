@@ -150,11 +150,20 @@
 @z
 
 @x
-    <para>Finally, rename a man page that conflicts with a Perl man page:</para>
+    <para>Rename a man page that conflicts with a Perl man page:</para>
 @y
     <para>
-    最後に Perl の man ページと重複するものを名称変更します。
+    Perl の man ページと重複するものを名称変更します。
     </para>
+@z
+
+@x
+    <para>If you downloaded the optional documentation, install it by issuing
+    the following commands:</para>
+@y
+    <para>
+    任意のドキュメントをダウンロードしている場合は、 以下のコマンドを実行してインストールします。
+    </para> 
 @z
 
 @x
