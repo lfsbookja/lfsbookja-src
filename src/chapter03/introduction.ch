@@ -206,6 +206,18 @@ wget -N --input-file=wget-list.orig --continue --directory-prefix=$LFS/sources</
 @z
 
 @x
+    The <filename>wget-list</filename> file mentioned above retrieves all
+    packages for both the sysV and systemd versions of LFS.  There are a total
+    of five additional small packages not needed for the currrent book.  The
+    <filename>md5sums</filename> file mentioned below is specific to the
+    current book.
+@y
+    上で示した <filename>wget-list</filename> ファイルは、本ブックの sysV および systemd の両バージョンにおけるパッケージを取り出しているものです。
+    現バージョンのブックにおいて、小さいながらも不要なパッケージが 5 つは含まれます。
+    同じく上で示した <filename>md5sums</filename> ファイルは、各ブックごとに固有のものを示しています。
+@z
+
+@x
   <para>Additionally, starting with LFS-7.0, there is a separate file,
   <ulink url="../md5sums">md5sums</ulink>, which can be used to verify that all
   the correct packages are available before proceeding.  Place that file in
