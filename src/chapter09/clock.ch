@@ -141,11 +141,13 @@
 @z
 
 @x
-  <note><para>Please note that the <command>timedatectl</command> command can
-  be used only on a system booted with systemd.</para></note>
+  <note><para>Please note that the <command>timedatectl</command> command
+  doesn't work in the chroot environment.  It can only
+  be used after the LFS system is booted with systemd.</para></note>
 @y
   <note><para>
-  <command>timedatectl</command> コマンドはあくまで systemd により起動されたシステムにおいて利用できる点に注意してください。
+  <command>timedatectl</command> コマンドは chroot 環境内では動作しない点に注意してください。
+  systemd を使って LFS システムを起動したときになって、初めて利用できるものです。
   </para></note>
 @z
 

@@ -102,12 +102,12 @@
 
 @x
    <para>For more information about libtool archive files, see the <ulink
-   url="&blfs-book;/introduction/la-files.html">BLFS section "About Libtool
+   url="&blfs-book;introduction/la-files.html">BLFS section "About Libtool
    Archive (.la) files"</ulink>.</para>
 @y
    <para>
    libtool アーカイブファイルについての詳細は <ulink
-   url="&blfs-book;/introduction/la-files.html">BLFS の節 "About Libtool
+   url="&blfs-book;introduction/la-files.html">BLFS の節 "About Libtool
    Archive (.la) files"</ulink> を参照してください。
    </para>
 @z

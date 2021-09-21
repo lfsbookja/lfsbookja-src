@@ -156,11 +156,11 @@
 
 @x
     <para>For a more complete discussion of libraries, see the discussion
-    <ulink url="&blfs-root;/view/&short-version;/introduction/libraries.html">
+    <ulink url="&blfs-book;introduction/libraries.html">
     Libraries: Static or shared?</ulink> in the BLFS book.</para>
 @y
     <para>
-    ライブラリに関してのより詳細な議論については BLFS ブックの <ulink url="&blfs-root;/view/&short-version;/introduction/libraries.html">
+    ライブラリに関してのより詳細な議論については BLFS ブックの <ulink url="&blfs-book;introduction/libraries.html">
     Libraries: Static or shared?</ulink> を参照してください。
     </para>
 @z

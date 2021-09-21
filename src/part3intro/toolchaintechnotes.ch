@@ -87,14 +87,14 @@
 
 @x
     <para>Cross-compilation involves some concepts that deserve a section on
-    their own. Although this section may be omitted in a first reading, it
-    is strongly suggested to come back to it later in order to get a full
-    grasp of the build process.</para>
+    their own. Although this section may be omitted in a first reading,
+    coming back to it later will be beneficial to your full understanding of
+    the process.</para>
 @y
     <para>
     クロスコンパイルには必要な捉え方があって、それだけで 1 つの節を当てて説明するだけの価値があるものです。
     初めて読む方は、この節を読み飛ばしてかまいません。
-    ただしビルド過程を十分に理解するためには、後々この節に戻ってきて読んで頂くことを強くお勧めします。
+    ただしビルド過程を十分に理解するためには、後々この節に戻ってきて読んで頂くことをお勧めします。
     </para>
 @z
 
@@ -149,7 +149,7 @@
 @x
     <para>As an example, let us imagine the following scenario (sometimes
     referred to as <quote>Canadian Cross</quote>): we may have a
-    compiler on a slow machine only, let's call the machine A, and the compiler
+    compiler on a slow machine only, let's call it machine A, and the compiler
     ccA. We may have also a fast machine (B), but with no compiler, and we may
     want to produce code for another slow machine (C). To build a
     compiler for machine C, we would have three stages:</para>
@@ -248,7 +248,7 @@
       cpu-vendor-kernel-os referred to as the machine triplet. An astute
       reader may wonder why a <quote>triplet</quote> refers to a four component
       name. The reason is history: initially, three component names were enough
-      to designate unambiguously a machine, but with new machines and systems
+      to designate a machine unambiguously, but with new machines and systems
       appearing, that proved insufficient. The word <quote>triplet</quote>
       remained. A simple way to determine your machine triplet is to run
       the <command>config.guess</command>
@@ -279,9 +279,9 @@
       linker <command>ld</command> that is part of binutils). The dynamic linker
       provided by Glibc finds and loads the shared libraries needed by a
       program, prepares the program to run, and then runs it. The name of the
-      dynamic linker for a 32-bit Intel machine will be <filename
-      class="libraryfile">ld-linux.so.2</filename> (<filename
-      class="libraryfile">ld-linux-x86-64.so.2</filename> for 64-bit systems). A
+      dynamic linker for a 32-bit Intel machine is <filename
+      class="libraryfile">ld-linux.so.2</filename> and is<filename
+      class="libraryfile">ld-linux-x86-64.so.2</filename> for 64-bit systems. A
       sure-fire way to determine the name of the dynamic linker is to inspect a
       random binary from the host system by running: <userinput>readelf -l
       &lt;name of binary&gt; | grep interpreter</userinput> and noting the
@@ -309,7 +309,7 @@
 @z
 
 @x
-    <para>In order to fake a cross compilation, the name of the host triplet
+    <para>In order to fake a cross compilation in LFS, the name of the host triplet
     is slightly adjusted by changing the &quot;vendor&quot; field in the
     <envar>LFS_TGT</envar> variable. We also use the
     <parameter>--with-sysroot</parameter> option when building the cross linker and
@@ -319,7 +319,7 @@
     machine. Only two stages are mandatory, and one more for tests:</para>
 @y
     <para>
-    クロスコンパイルに似せた作業を行うため、ホストのトリプレットを多少調整します。
+    LFS ではクロスコンパイルに似せた作業を行うため、ホストのトリプレットを多少調整します。
     <envar>LFS_TGT</envar> 変数において &quot;vendor&quot; 項目を変更します。
     またクロスリンカーやクロスコンパイラーを生成する際には <parameter>--with-sysroot</parameter> オプションを利用します。
     これはホスト内に必要となるファイルがどこにあるかを指示するものです。
@@ -651,7 +651,7 @@
     always use the compiler relating to the <parameter>--host</parameter>
     parameter passed to its configure script; e.g. in our case, the compiler
     will be <command>$LFS_TGT-gcc</command>. The binary tools and kernel
-    headers can be a bit more complicated. Therefore, take no risks and use
+    headers can be a bit more complicated. Therefore, we take no risks and use
     the available configure switches to enforce the correct selections. After
     the run of <command>configure</command>, check the contents of the
     <filename>config.make</filename> file in the <filename
