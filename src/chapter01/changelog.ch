@@ -50,6 +50,88 @@
 @z
 
 @x
+      <para>2021-10-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.3458. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20210924. Addresses
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2021b. Fixes
+          <ulink url="&lfs-ticket-root;4929">#4929</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sysvinit-3.0.0. Fixes
+          <ulink url="&lfs-ticket-root;4927">#4927</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.59.2. Fixes
+          <ulink url="&lfs-ticket-root;4931">#4931</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.14.8. Fixes
+          <ulink url="&lfs-ticket-root;4925">#4925</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.59. Fixes
+          <ulink url="&lfs-ticket-root;4926">#4926</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-9.0. Fixes
+          <ulink url="&lfs-ticket-root;4928">#4928</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.8.2. Fixes
+          <ulink url="&lfs-ticket-root;4930">#4930</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-10-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] -  vim-8.2.3458 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  iana-etc-20210924 へのアップデート。
+          <ulink url="&lfs-ticket-root;4722">#4722</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  tzdata-2021b へのアップデート。
+          <ulink url="&lfs-ticket-root;4929">#4929</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  sysvinit-3.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4927">#4927</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  meson-0.59.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4931">#4931</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  linux-5.14.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;4925">#4925</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  libcap-2.59 へのアップデート。
+          <ulink url="&lfs-ticket-root;4926">#4926</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  coreutils-9.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4928">#4928</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  bison-3.8.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4930">#4930</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-09-15</para>
       <itemizedlist>
         <listitem>
