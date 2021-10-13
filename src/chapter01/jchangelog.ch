@@ -15,10 +15,7 @@
   <title>変更履歴 (日本語版)</title>
 
 <para>
-ここに示すのは LFS ブック
-<phrase revision="sysv">&version;</phrase>
-<phrase revision="systemd">&versiond;</phrase>
-日本語版 (バージョン
+ここに示すのは LFS ブック &version; 日本語版 (バージョン
 <phrase revision="sysv">&jversion;</phrase><phrase revision="systemd">&jversiond;</phrase>) の変更履歴です。
 </para>
 
@@ -52,6 +49,17 @@
     </listitem>
 
 -->
+   <listitem>
+      <para>2021-10-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.0-70 (<ulink url="&lfs-changeset;b17714a9b">b17714a9b</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
    <listitem>
       <para>2021-10-01</para>
       <itemizedlist>

@@ -42,8 +42,8 @@
 @z
 
 @x
-  <para>Two files describing the installed system may be used by packages
-  that can be installed on the system later, either in binary form or by building
+  <para>Two files describing the installed system may be used by packages that
+  can be installed on the system later, either in binary form or by building
   them.</para>
 @y
   <para>

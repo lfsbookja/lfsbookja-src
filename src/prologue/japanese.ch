@@ -31,8 +31,7 @@
     <title>はじめに</title>
 
     <para>
-    本書は LFS ブック <phrase revision="sysv">&version;</phrase><phrase
-    revision="systemd">&versiond;</phrase> の日本語版 <phrase revision="sysv">&jversion;</phrase><phrase
+    本書は LFS ブック &version; の日本語版 <phrase revision="sysv">&jversion;</phrase><phrase
     revision="systemd">&jversiond;</phrase> です。
     オリジナルの LFS ブックと同様に DocBook を用いて構築しています。
     </para>

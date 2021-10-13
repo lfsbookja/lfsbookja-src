@@ -10,7 +10,7 @@ BOOKdir = @abs_bookdir@
 srcdir = @srcdir@
 srcs = general.ent index.xml packages.ent patches.ent pdf-fixups.sh \
 	process-scripts.sh aux-file-data.sh tidy.conf make-aux-files.sh \
-	git-version.sh
+	git-version.sh conditional.ent
 DISTCLEANFILES = $(srcs)
 
 SVNVER=@SVNVER@
@@ -63,6 +63,8 @@ pdf-fixups.sh: $(BOOKdir)/pdf-fixups.sh $(srcdir)/pdf-fixups.ch
 git-version.sh: $(BOOKdir)/git-version.sh
 	sed -e "s|version\.ent|$(abs_builddir)/version\.ent|g" \
             -e "/^full_date/afull_date=\"\$$year/\$$month_digit/\$$day\"" $^ > $@
+conditional.ent: $(BOOKdir)/conditional.ent
+	cp -p $^ $@
 
 stylesheets:
 	$(MKDIR_P) stylesheets
@@ -223,7 +225,7 @@ $(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.e
            $(BASEDIR)/md5sums
 
 version:
-	(cd $(BOOKdir) && sh $(abs_builddir)/git-version.sh)
+	(cd $(BOOKdir) && sh $(abs_builddir)/git-version.sh $(REV))
 
 #dump-commands: validate
 #	@echo "Dumping book commands..."

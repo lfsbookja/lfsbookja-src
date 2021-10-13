@@ -482,15 +482,13 @@
 
 @x
         <seg>config-&linux-version;,
-        <phrase revision="sysv">vmlinuz-&linux-version;-lfs-&version;,</phrase>
-        <phrase revision="systemd">vmlinuz-&linux-version;-lfs-&versiond;,</phrase>
+        vmlinuz-&linux-version;-lfs-&version;,
         and System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @y
         <seg>config-&linux-version;,
-        <phrase revision="sysv">vmlinuz-&linux-version;-lfs-&version;,</phrase>
-        <phrase revision="systemd">vmlinuz-&linux-version;-lfs-&versiond;,</phrase>
-        System.map-&linux-version;</seg>
+        vmlinuz-&linux-version;-lfs-&version;,
+        and System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @z
 

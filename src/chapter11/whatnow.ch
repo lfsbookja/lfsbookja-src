@@ -107,15 +107,13 @@
 @x
       <para>The Beyond Linux From Scratch book covers installation
       procedures for a wide range of software beyond the scope of the LFS
-      Book. The BLFS project is located at <ulink revision="sysv"
-      url="&blfs-book;"/><ulink revision="systemd" url="&blfs-systemd-book;"/>.
+      Book. The BLFS project is located at <ulink url="&blfs-book;"/>.
       </para>
 @y
       <para>
       Beyond Linux From Scratch ブックは、LFS ブックが取り扱うソフトウェアの範囲を超えて、数多くのソフトウェアをインストールする手順を示しています。
       BLFS プロジェクトは以下にあります。
-      <ulink revision="sysv"
-      url="&blfs-book;"/><ulink revision="systemd" url="&blfs-systemd-book;"/>
+      <ulink url="&blfs-book;"/>
       </para>
 @z
 

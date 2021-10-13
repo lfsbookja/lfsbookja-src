@@ -37,45 +37,39 @@
 @z
 
 @x
-    <listitem><para>A text mode browser such as <ulink revision="sysv"
-    url='&blfs-book;basicnet/lynx.html'>Lynx</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;basicnet/lynx.html'>Lynx</ulink>
+    <listitem><para>A text mode browser such as <ulink
+    url='&blfs-book;basicnet/lynx.html'>Lynx</ulink>
     will allow you to easily view the BLFS book in one virtual terminal, while
     building packages in another.</para></listitem>
 @y
     <listitem><para>
-    <ulink revision="sysv"
-    url='&blfs-book;basicnet/lynx.html'>Lynx</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;basicnet/lynx.html'>Lynx</ulink> のようなテキストブラウザーをインストールしておけば、仮想端末からでも BLFS ブックを簡単に参照しながらパッケージビルド作業を進めることができます。
+    <ulink
+    url='&blfs-book;basicnet/lynx.html'>Lynx</ulink> のようなテキストブラウザーをインストールしておけば、仮想端末からでも BLFS ブックを簡単に参照しながらパッケージビルド作業を進めることができます。
     </para></listitem>
 @z
 
 @x
-    <listitem><para>The <ulink revision="sysv"
-    url='&blfs-book;postlfs/make-ca.html'>make-ca</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;postlfs/make-ca.html'>make-ca</ulink> package
+    <listitem><para>The <ulink
+    url='&blfs-book;postlfs/make-ca.html'>make-ca</ulink> package
     will allow you to set up local trusted anchor certificates, allowing
     the system to verify SSL certificates provided by remote servers (for
     example, a website using HTTPS).</para></listitem>
 @y
     <listitem><para>
-    <ulink revision="sysv"
-    url='&blfs-book;postlfs/make-ca.html'>make-ca</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;postlfs/make-ca.html'>make-ca</ulink> パッケージをインストールしていると、ローカルにおいて信頼されるアンカー証明書を構築できます。
+    <ulink
+    url='&blfs-book;postlfs/make-ca.html'>make-ca</ulink> パッケージをインストールしていると、ローカルにおいて信頼されるアンカー証明書を構築できます。
     そうすればリモートサーバー（たとえば HTTPS を用いたウェブサイト）が提供する SSL 証明書をシステムが検証できます。
     </para></listitem>
 @z
 
 @x
-    <listitem><para>The <ulink revision="sysv"
-    url='&blfs-book;general/gpm.html'>GPM</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;general/gpm.html'>GPM</ulink> package will allow
+    <listitem><para>The <ulink
+    url='&blfs-book;general/gpm.html'>GPM</ulink> package will allow
     you to perform copy/paste actions in your virtual
     terminals.</para></listitem>
 @y
-    <listitem><para><ulink revision="sysv"
-    url='&blfs-book;general/gpm.html'>GPM</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;general/gpm.html'>GPM</ulink> パッケージをインストールすれば、仮想端末内にてコピーペースト操作を行うことができます。
+    <listitem><para><ulink
+    url='&blfs-book;general/gpm.html'>GPM</ulink> パッケージをインストールすれば、仮想端末内にてコピーペースト操作を行うことができます。
     </para></listitem>
 @z
 
@@ -96,57 +90,44 @@
 @z
 
 @x
-    <listitem><para>Installing <ulink revision="sysv"
-    url='&blfs-book;postlfs/sudo.html'>sudo</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;postlfs/sudo.html'>sudo</ulink> may be useful for
+    <listitem><para>Installing <ulink
+    url='&blfs-book;postlfs/sudo.html'>sudo</ulink> may be useful for
     building packages as a non-root user and easily installing the resulting
     packages in your new system.</para></listitem>
 @y
-    <listitem><para><ulink revision="sysv"
-    url='&blfs-book;postlfs/sudo.html'>sudo</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;postlfs/sudo.html'>sudo</ulink> をインストールすれば、ルートユーザー以外であっても、パッケージビルドとインストールを容易に行うことができます。
+    <listitem><para><ulink
+    url='&blfs-book;postlfs/sudo.html'>sudo</ulink> をインストールすれば、ルートユーザー以外であっても、パッケージビルドとインストールを容易に行うことができます。
     </para></listitem>
 @z
 
 @x
     <listitem><para>If you want to access your new system from a remote system
-    within a comfortable GUI environment, install <ulink revision="sysv"
-    url='&blfs-book;postlfs/openssh.html'>openssh</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;postlfs/openssh.html'>openssh</ulink>.
-    </para></listitem>
+    within a comfortable GUI environment, install <ulink
+    url='&blfs-book;postlfs/openssh.html'>openssh</ulink>.</para></listitem>
 @y
-    <listitem><para>利用しやすい GUI 操作を通じてリモート接続を行いたい場合は <ulink revision="sysv"
-    url='&blfs-book;postlfs/openssh.html'>openssh</ulink><ulink revision="systemd"
-    url='&blfs-systemd-book;postlfs/openssh.html'>openssh</ulink> をインストールします。
+    <listitem><para>利用しやすい GUI 操作を通じてリモート接続を行いたい場合は <ulink
+    url='&blfs-book;postlfs/openssh.html'>openssh</ulink> をインストールします。
     </para></listitem>
 @z
 
 @x
     <listitem><para>To make fetching files over the internet easier, install
-    <ulink
-    revision="sysv" url='&blfs-book;basicnet/wget.html'>wget</ulink><ulink
-    revision="systemd" url='&blfs-systemd-book;basicnet/wget.html'>wget</ulink>.
-    </para></listitem>
+    <ulink url='&blfs-book;basicnet/wget.html'>wget</ulink>.</para></listitem>
 @y
     <listitem><para>インターネット経由により簡単にファイル取得を行うために <ulink
-    revision="sysv" url='&blfs-book;basicnet/wget.html'>wget</ulink><ulink
-    revision="systemd" url='&blfs-systemd-book;basicnet/wget.html'>wget</ulink> をインストールします。
+    url='&blfs-book;basicnet/wget.html'>wget</ulink> をインストールします。
     </para></listitem>
 @z
 
 @x
     <listitem><para>To connect to a wireless access point for networking,
-    install <ulink revision="sysv"
-    url='&blfs-book;basicnet/wpa_supplicant.html'>wpa_supplicant</ulink><ulink
-    revision="systemd"
-    url='&blfs-systemd-book;basicnet/wpa_supplicant.html'>wpa_supplicant</ulink>.
+    install <ulink
+    url='&blfs-book;basicnet/wpa_supplicant.html'>wpa_supplicant</ulink>.
     </para></listitem>
 @y
     <listitem><para>
-    ワイアレスのネットワークアクセスポイントに接続する場合は、<ulink revision="sysv"
-    url='&blfs-book;basicnet/wpa_supplicant.html'>wpa_supplicant</ulink><ulink
-    revision="systemd"
-    url='&blfs-systemd-book;basicnet/wpa_supplicant.html'>wpa_supplicant</ulink> をインストールしてください。
+    ワイアレスのネットワークアクセスポイントに接続する場合は、<ulink
+    url='&blfs-book;basicnet/wpa_supplicant.html'>wpa_supplicant</ulink> をインストールしてください。
     </para></listitem>
 @z
 
