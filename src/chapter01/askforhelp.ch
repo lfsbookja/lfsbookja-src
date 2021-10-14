@@ -79,7 +79,7 @@
 @z
 
 @x
-        <para>The version of the book being used (in this case &version;</para>
+        <para>The version of the book being used (in this case &version;)</para>
 @y
         <para>お使いの LFS ブックのバージョン。 (本書の場合 &version;)</para>
 @z

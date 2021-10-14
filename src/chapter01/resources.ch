@@ -77,12 +77,12 @@
     Relay Chat (IRC). Before using this support, please make sure that your
     question is not already answered in the LFS FAQ or the mailing list
     archives. You can find the IRC network at <uri>irc.libera.chat</uri>.
-    The support channel is named #LFS-support.</para>
+    The support channel is named #lfs-support.</para>
 @y
     <para>
     LFS コミュニティのメンバーの中には、インターネットリレーチャット (Internet Relay Chat; IRC) によるサポートを行っている者もいます。
     ここに対して質問を挙げる場合は、FAQ やメーリングリストに同様の質問や答えがないかどうかを必ず確認してください。
-    IRC は <uri>irc.libera.chat</uri> において、チャネル名 #LFS-support により提供しています。
+    IRC は <uri>irc.libera.chat</uri> において、チャネル名 #lfs-support により提供しています。
     </para>
 @z
 

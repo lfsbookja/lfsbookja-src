@@ -4737,7 +4737,7 @@ fi
 
 
 
-TARGETVER=r11.0-70
+TARGETVER=r11.0-74
 
 (cd ${bookdir} && sh git-version.sh)
 if test -f ${bookdir}/version.ent; then
