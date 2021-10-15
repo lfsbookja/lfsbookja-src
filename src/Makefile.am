@@ -13,7 +13,7 @@ srcs = general.ent index.xml packages.ent patches.ent pdf-fixups.sh \
 	git-version.sh conditional.ent
 DISTCLEANFILES = $(srcs)
 
-SVNVER=@SVNVER@
+GITVER=@GITVER@
 BASEDIR=@BASEDIR@
 DUMPDIR=@DUMPDIR@
 ROOT_ID =

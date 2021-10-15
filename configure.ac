@@ -41,21 +41,31 @@ AC_PROG_TIDY
 m4_include([m4/ac_check_rev.m4])
 
 TARGETVER=lfs_version()
+if test "x$revspec" = "xsystemd"; then
+  TARGETVER="$TARGETVER-systemd"
+fi
 
-(cd ${bookdir} && sh git-version.sh)
-if test -f ${bookdir}/version.ent; then
-  SVNVER=`grep 'ENTITY version ' ${bookdir}/version.ent | sed -e 's/^<!ENTITY version           \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
-else
-  SVNVER='unknown'
+(cd ${bookdir} && sh git-version.sh $revspec)
+cp -p ${bookdir}/version.ent .
+if test -f ./version.ent; then
+  rm -f version.tmp
+  if test "x$revspec" = "xsysv"; then
+    grep -A1 "%sysv" version.ent >version.tmp
+  elif test "x$revspec" = "xsystemd"; then
+    grep -A1 "%systemd" version.ent >version.tmp
+  else
+    echo >version.tmp
+  fi
+  GITVER=`grep 'ENTITY version ' version.tmp | sed -e 's/^<!ENTITY version[ ]*\"\([.]*\)\">/\1/'`
 fi
 AC_MSG_CHECKING([for the original XML version])
-if test ! "$SVNVER" = "$TARGETVER"; then
-  AC_MSG_RESULT([$SVNVER])
+if test ! "$GITVER" = "$TARGETVER"; then
+  AC_MSG_RESULT([$GITVER])
   AC_MSG_WARN([Version of the original XML not $TARGETVER])
 else
-  AC_MSG_RESULT([$SVNVER])
+  AC_MSG_RESULT([$GITVER])
 fi
-AC_SUBST(SVNVER)
+AC_SUBST(GITVER)
 
 AC_PROG_LYNX
 AC_PROG_FOP

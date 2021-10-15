@@ -44,6 +44,80 @@
 @z
 
 @x
+      <para>2021-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.3508. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2021c. Fixes
+          <ulink url="&lfs-ticket-root;4934">#4934</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.10.0. Fixes
+          <ulink url="&lfs-ticket-root;4938">#4938</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Jinja2-3.0.2. Fixes
+          <ulink url="&lfs-ticket-root;4937">#4937</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.14.12. Fixes
+          <ulink url="&lfs-ticket-root;4932">#4932</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20211004. Fixes
+          <ulink url="&lfs-ticket-root;4933">#4933</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-5.1.1. Fixes
+          <ulink url="&lfs-ticket-root;4936">#4936</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.16.5. Fixes
+          <ulink url="&lfs-ticket-root;4935">#4935</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.3508 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2021c へのアップデート。
+          <ulink url="&lfs-ticket-root;4934">#4934</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.10.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4938">#4938</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Jinja2-3.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4937">#4937</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.14.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4932">#4932</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20211004 へのアップデート。
+          <ulink url="&lfs-ticket-root;4933">#4933</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-5.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4936">#4936</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.16.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4935">#4935</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-10-01</para>
       <itemizedlist>
         <listitem>

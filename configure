@@ -623,7 +623,7 @@ TAKAOMFONTDIR
 TAKAOGFONTDIR
 FOP
 LYNX
-SVNVER
+GITVER
 DUMPDIR
 NOCHUNKS_OUTPUT
 NOCHUNKS_NAME
@@ -4737,24 +4737,34 @@ fi
 
 
 
-TARGETVER=r11.0-74
+TARGETVER=r11.0-76
+if test "x$revspec" = "xsystemd"; then
+  TARGETVER="$TARGETVER-systemd"
+fi
 
-(cd ${bookdir} && sh git-version.sh)
-if test -f ${bookdir}/version.ent; then
-  SVNVER=`grep 'ENTITY version ' ${bookdir}/version.ent | sed -e 's/^<!ENTITY version           \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
-else
-  SVNVER='unknown'
+(cd ${bookdir} && sh git-version.sh $revspec)
+cp -p ${bookdir}/version.ent .
+if test -f ./version.ent; then
+  rm -f version.tmp
+  if test "x$revspec" = "xsysv"; then
+    grep -A1 "%sysv" version.ent >version.tmp
+  elif test "x$revspec" = "xsystemd"; then
+    grep -A1 "%systemd" version.ent >version.tmp
+  else
+    echo >version.tmp
+  fi
+  GITVER=`grep 'ENTITY version ' version.tmp | sed -e 's/^<!ENTITY version *\"\(.*\)\">/\1/'`
 fi
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5
 printf %s "checking for the original XML version... " >&6; }
-if test ! "$SVNVER" = "$TARGETVER"; then
-  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $SVNVER" >&5
-printf "%s\n" "$SVNVER" >&6; }
+if test ! "$GITVER" = "$TARGETVER"; then
+  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $GITVER" >&5
+printf "%s\n" "$GITVER" >&6; }
   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: WARNING: Version of the original XML not $TARGETVER" >&5
 printf "%s\n" "$as_me: WARNING: Version of the original XML not $TARGETVER" >&2;}
 else
-  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $SVNVER" >&5
-printf "%s\n" "$SVNVER" >&6; }
+  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $GITVER" >&5
+printf "%s\n" "$GITVER" >&6; }
 fi
 
 
