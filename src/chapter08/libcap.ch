@@ -76,14 +76,6 @@
 @z
 
 @x
-    <para>Adjust the permission of the shared libraries:</para>
-@y
-    <para>
-    共有ライブラリのパーミッションを調整します。
-    </para>
-@z
-
-@x
     <title>Contents of Libcap</title>
 @y
     <title>&ContentsOf1;Libcap&ContentsOf2;</title>

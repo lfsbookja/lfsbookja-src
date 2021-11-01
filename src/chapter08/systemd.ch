@@ -54,6 +54,14 @@
 @z
 
 @x
+    <para>Fix a mesaon problem:</para>
+@y
+    <para>
+    meson に関する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare systemd for compilation:</para>
 @y
     <para>&PreparePackage1;systemd&PreparePackage2;</para>

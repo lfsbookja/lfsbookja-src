@@ -105,11 +105,17 @@
 
 @x
       <para>In this section, the test suite for GCC is considered
-      critical. Do not skip it under any circumstance.</para>
+      important, but it takes a long time. First time builders are 
+      encouraged to not skip it.  The time to run the tests can be
+      reduced significantly by adding -jx to the make command below
+      where x is the number of cores on your system.</para>
 @y
       <para>
       本節における GCC のテストスイートは極めて重要なものです。
-      したがってどのような場合であっても必ず実行してください。
+      ただし相当な時間を要します。
+      初めてビルドを行う方には、必ず実施することをお勧めします。
+      テスト実行に要する時間は、make コマンドに -jx をつけることで、かなり削減できます。
+      ここに示す x には、システムのコア数を指定するものです。
       </para>
 @z
 
