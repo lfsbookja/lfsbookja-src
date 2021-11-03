@@ -59,7 +59,7 @@
 
 @x
     <para>Ensure that the <command>ldconfig</command> and <command>sln</command>
-    utilites are installed into
+    utilites will be installed into
     <filename class="directory">/usr/sbin</filename>:</para>
 @y
     <para>

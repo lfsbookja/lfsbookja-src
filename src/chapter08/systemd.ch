@@ -54,7 +54,7 @@
 @z
 
 @x
-    <para>Fix a mesaon problem:</para>
+    <para>Fix a meson problem:</para>
 @y
     <para>
     meson に関する問題を修正します。
