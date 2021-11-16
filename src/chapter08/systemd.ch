@@ -62,6 +62,15 @@
 @z
 
 @x
+ <para>Fix a problem when building with kernel headers from Linux-5.14 and
+ later:</para>
+@y
+ <para>
+ カーネルバージョン 5.14 以降のカーネルヘッダーを用いてビルドする際の問題を修正します。
+ </para>
+@z
+
+@x
     <para>Prepare systemd for compilation:</para>
 @y
     <para>&PreparePackage1;systemd&PreparePackage2;</para>

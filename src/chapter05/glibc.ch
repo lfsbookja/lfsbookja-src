@@ -39,6 +39,17 @@
 @z
 
 @x
+        The above command is correct.  The <command>ln</command> command has
+        a few syntactic versions, so be sure to check
+        <command>info coreutils ln</command> and <filename>ln(1)</filename>
+        before reporting what you may think is an error.
+@y
+        上記のコマンドに間違いはありません。
+        <command>ln</command> コマンドにはいくつか文法の異なるバージョンがあります。
+        間違いがあると思った場合には <command>info coreutils ln</command> や <filename>ln(1)</filename> をよく確認してください。
+@z
+
+@x
     <para>Some of the Glibc programs use the non-FHS compliant
     <filename class="directory">/var/db</filename> directory to store their
     runtime data. Apply the following patch to make such programs store their

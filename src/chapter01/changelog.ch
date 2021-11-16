@@ -44,6 +44,88 @@
 @z
 
 @x
+      <para>2021-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20211112. Fixes
+          <ulink url="&lfs-ticket-root;4955">#4955</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.186. Fixes
+          <ulink url="&lfs-ticket-root;4954">#4954</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[bdubbs] - Update to jinja2-3.0.3. Fixes
+          <ulink url="&lfs-ticket-root;4953">#4953</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-5.2.0. Fixes
+          <ulink url="&lfs-ticket-root;4952">#4952</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ncurses-6.3. Fixes
+          <ulink url="&lfs-ticket-root;4951">#4951</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.5.4. Fixes
+          <ulink url="&lfs-ticket-root;4950">#4950</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.60.1. Fixes
+          <ulink url="&lfs-ticket-root;4949">#4949</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.15.0. Fixes
+          <ulink url="&lfs-ticket-root;4948">#4948</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.15.2. Fixes
+          <ulink url="&lfs-ticket-root;4947">#4947</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20211112 へのアップデート。
+          <ulink url="&lfs-ticket-root;4955">#4955</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.186 へのアップデート。
+          <ulink url="&lfs-ticket-root;4954">#4954</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[bdubbs] - jinja2-3.0.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4953">#4953</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-5.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4952">#4952</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ncurses-6.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4951">#4951</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.5.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4950">#4950</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.60.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4949">#4949</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.15.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4948">#4948</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.15.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4947">#4947</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-11-01</para>
       <itemizedlist>
         <listitem>

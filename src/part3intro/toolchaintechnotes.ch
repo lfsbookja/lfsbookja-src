@@ -86,6 +86,16 @@
 @z
 
 @x
+        The LFS book is not, and does not contain a general tutorial to
+        build a cross (or native) toolchain. Don't use the command in the
+        book for a cross toolchain which will be used for some purpose other
+        than building LFS, unless you really understand what you are doing.
+@y
+        LFS はクロスツールチェーン（あるいはネイティブツールチェーン）のビルドを説明する書ではなく、その説明は行っていません。
+        クロスツールチェーンは、LFS のビルドとは異なる別の目的で用いるものであるため、何を行っているのかが十分に分かっていないまま、クロスチェーン向けのコマンドを利用することは避けてください。
+@z
+
+@x
     <para>Cross-compilation involves some concepts that deserve a section on
     their own. Although this section may be omitted in a first reading,
     coming back to it later will be beneficial to your full understanding of
