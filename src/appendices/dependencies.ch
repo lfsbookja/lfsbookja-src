@@ -1464,9 +1464,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>
 @y
-          <seg>なし</seg>
+            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>
 @z
 
 %----------------------------------------------------------------------

@@ -188,6 +188,16 @@
       <title>上の設定項目の説明</title>
 @z
 
+@x Enable kernel headers through /sys/kernel/kheaders.tar.xz
+          <para>This will require <command>cpio</command> building the kernel.
+          <command>cpio</command> is not installed by LFS.</para>
+@y
+          <para>
+          これは、 カーネルビルドにあたって <command>cpio</command> を必要とします。
+          <command>cpio</command> は LFS ではインストールしません。
+          </para>
+@z
+
 @x Support for uevent helper
           <para>Having this option set may interfere with device
           management when using Udev/Eudev. </para>

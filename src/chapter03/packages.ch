@@ -712,11 +712,11 @@
 @x
             The version of vim changes daily. To get the latest version, go to
             <ulink url="https://github.com/vim/vim/releases">
-            https://github.com/vim/vim/releases</ulink>.
+            https://github.com/vim/vim/tags</ulink>.
 @y
             vim のバージョンは日々更新されます。
             最新版を入手するには <ulink url="https://github.com/vim/vim/releases">
-            https://github.com/vim/vim/releases</ulink> にアクセスしてください。
+            https://github.com/vim/vim/tags</ulink> にアクセスしてください。
 @z
 
 @x XML::Parser
