@@ -165,14 +165,18 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x --with-glibc-version=2.11
-          <para>This option ensures the package will be compatible with the host's
-          version of glibc.  It is set to the minimum glibc requirement
-          specified in the <xref linkend="ch-partitioning-hostreqs"/>.</para>
+@x --with-glibc-version=&glibc-version;
+          <para>This option specifies the version of glibc which will be
+          used on the target. It is not relevent to the minimum glibc
+          requirement specified in the
+          <xref linkend="ch-partitioning-hostreqs"/> because everything
+          compiled by pass1 gcc will run in the chroot environment,
+          which is isolated from glibc of the host distro.</para>
 @y
           <para>
-          このオプションは、ホストにある glibc とこのパッケージが互換性を持つようにします。
-          <xref linkend="ch-partitioning-hostreqs"/> に示す glibc の要件を最低限満たすものです。
+          このオプションは、ターゲットにおいて用いられることになる glibc のバージョンを指定します。
+          これは <xref linkend="ch-partitioning-hostreqs"/> に示している glibc の最低バージョンとは関係がありません。
+          1 回めの gcc によってコンパイルされるものは、すべて chroot 環境内で実行されるものであって、ホストにある glibc とは切り離されているためです。
           </para>
 @z
 

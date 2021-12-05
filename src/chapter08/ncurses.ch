@@ -96,9 +96,21 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>The installation of this package will overwrite
+    <filename class="libraryfile">libncursesw.so.&ncurses-version;</filename>
+    in-place.  It may crash the shell process which is using code and data
+    from the library file.  Install the package with
+    <literal>DESTDIR</literal>, and replace the library file correctly using
+    <command>install</command> command.  A useless static archive which is
+    not handled by <command>configure</command> is also removed:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    本パッケージをインストールすると、所定位置にある <filename
+    class="libraryfile">libncursesw.so.&ncurses-version;</filename> が上書きされます。
+    このときに、そのライブラリファイルのコードやデータを利用しているシェルプロセスが、クラッシュする場合があります。
+    そこで本パッケージは <literal>DESTDIR</literal> を使ってインストールして、<command>install</command> コマンドによってライブラリファイルを正しく置き換えるようにします。
+    <command>configure</command> では取り扱われないスタティックアーカイブは不要であるため、同様に削除されます。
+    </para>
 @z
 
 @x
@@ -120,14 +132,6 @@
     <para>
     最後に古いアプリケーションにおいて、ビルド時に <filename
     class="libraryfile">-lcurses</filename> を指定するものがあるため、これもビルド可能なものにします。
-    </para>
-@z
-
-@x
-    <para>Remove a static library that is not handled by configure:</para>
-@y
-    <para>
-    configure では指定することができないため、スタティックライブラリを削除します。
     </para>
 @z
 
