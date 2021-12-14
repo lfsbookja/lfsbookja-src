@@ -40,6 +40,14 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
+@x TIME_32_BIT_OK=yes
+          <para>This setting is needed for building on a 32 bit system.</para>
+@y
+          <para>
+          この設定は 32 ビットシステム上でビルドする際に必要となります。
+          </para>
+@z
+
 @x
           <para>This option changes the location of the <command>locate</command>
           database to be in <filename class="directory">/var/lib/locate</filename>,

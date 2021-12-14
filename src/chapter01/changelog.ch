@@ -44,6 +44,66 @@
 @z
 
 @x
+      <para>2021-12-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to python3-3.10.1. Fixes
+          <ulink url="&lfs-ticket-root;4863">#4963</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-1.1.1m. Fixes
+          <ulink url="&lfs-ticket-root;4866">#4966</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.15.7. Fixes
+          <ulink url="&lfs-ticket-root;4864">#4964</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.62. Fixes
+          <ulink url="&lfs-ticket-root;4865">#4965</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-12-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - python3-3.10.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4863">#4963</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-1.1.1m へのアップデート。
+          <ulink url="&lfs-ticket-root;4866">#4966</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.15.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;4864">#4964</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.62 へのアップデート。
+          <ulink url="&lfs-ticket-root;4865">#4965</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-12-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Allow building findutils on 32 bit systems.
+          Cherry-picked from multilib branch by [pierre].</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-12-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - findutils を 32 ビットシステムでもビルド可能に。
+          multibuild ブランチから [pierre] が cherry-pick を行った。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-12-01</para>
       <itemizedlist>
         <listitem>
