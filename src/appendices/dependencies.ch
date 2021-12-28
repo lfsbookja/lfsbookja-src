@@ -2331,10 +2331,14 @@
 @x
           <seg>
             <ulink
+              url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>
+            and <ulink
               url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>
           </seg>
 @y
           <seg>
+            <ulink
+              url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>,
             <ulink
               url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>
           </seg>

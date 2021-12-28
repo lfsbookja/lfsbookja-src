@@ -134,12 +134,12 @@
 @x
         <term><emphasis>LSB Runtime Languages:</emphasis></term>
         <listitem>
-          <para>Perl</para>
+          <para>Perl, Python</para>
         </listitem>
 @y
         <term><emphasis>LSB ランタイム言語:</emphasis></term>
         <listitem>
-          <para>Perl</para>
+          <para>Perl, Python</para>
         </listitem>
 @z
 
@@ -209,12 +209,12 @@
 @x
         <term><emphasis>LSB Runtime Languages:</emphasis></term>
         <listitem>
-          <para>Python, Libxml2, Libxslt </para>
+          <para>Libxml2, Libxslt </para>
         </listitem>
 @y
         <term><emphasis>LSB ランタイム言語:</emphasis></term>
         <listitem>
-          <para>Python, Libxml2, Libxslt </para>
+          <para>Libxml2, Libxslt </para>
         </listitem>
 @z
 

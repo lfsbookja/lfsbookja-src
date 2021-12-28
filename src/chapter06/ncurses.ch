@@ -78,6 +78,17 @@
           </para>
 @z
 
+@x
+          <para>This switch prevents the building system from stripping
+          the programs using <command>strip</command> program from the host.
+          Using host tools on cross-compiled program can cause failure.</para>
+@y
+          <para>
+          本スイッチは、ホスト上にある <command>strip</command> を使って、ビルドシステム内のプログラムのストリップを行わないようにします。
+          クロスコンパイルされたプログラムに対して、ホスト上のツールを使うと、ビルド失敗の原因になります。
+          </para>
+@z
+
 @x --enable-widec
           <para>This switch causes wide-character libraries (e.g., <filename
           class="libraryfile">libncursesw.so.&ncurses-version;</filename>)
