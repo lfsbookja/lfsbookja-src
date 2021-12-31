@@ -33,14 +33,6 @@
 @z
 
 @x
-    <para>Remove tests that cannot be built in chroot:</para>
-@y
-    <para>
-    chroot 環境ではビルドできないテストを削除します。
-    </para>
-@z
-
-@x
     <para>Remove two unneeded groups,
     <systemitem class="groupname">render</systemitem> and
     <systemitem class="groupname">sgx</systemitem>, from the default udev
@@ -51,23 +43,6 @@
     <systemitem class="groupname">render</systemitem> と <systemitem
     class="groupname">sgx</systemitem> を削除します。
     </para>
-@z
-
-@x
-    <para>Fix a meson problem:</para>
-@y
-    <para>
-    meson に関する問題を修正します。
-    </para>
-@z
-
-@x
- <para>Fix a problem when building with kernel headers from Linux-5.14 and
- later:</para>
-@y
- <para>
- カーネルバージョン 5.14 以降のカーネルヘッダーを用いてビルドする際の問題を修正します。
- </para>
 @z
 
 @x
@@ -241,6 +216,15 @@
 @z
 
 @x
+    <para>Fix a regression in a systemd unit that causes a delay when
+    switching TTYs:</para>
+@y
+    <para>
+    systemd ユニットの中で、TTY に切り替えた際に遅延が発生するという不具合を修正しました。
+    </para>
+@z
+
+@x
     <para>Prevent systemd from resetting the maximum PID value which causes
     some problems with packages and units in BLFS:</para>
 @y
@@ -249,17 +233,6 @@
     BLFS におけるパッケージやユニットにおいて、問題となるものがあるためです。
     </para>
 @z
-
-%@x
-%    <para>Prevent systemd from creating <filename>/run/nologin</filename>
-%    to allow unprivileged user logins without
-%    <application>systemd-logind</application>:</para>
-%@y
-%    <para>
-%    <filename>/run/nologin</filename> を生成しないようにします。
-%    これにより、<application>systemd-logind</application> がなくても、一般ユーザーがログインできるようにします。
-%    </para>
-%@z
 
 @x
     <title>Contents of systemd</title>

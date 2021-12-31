@@ -44,6 +44,32 @@
 @z
 
 @x
+      <para>2021-12-30</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - Update to systemd-250. Fixes
+          <ulink url="&lfs-ticket-root;4971">#4971</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to meson-0.60.3. Fixes
+          <ulink url="&lfs-ticket-root;4973">#4973</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-12-30</para>
+      <itemizedlist>
+        <listitem revision="systemd">
+          <para>[renodr] - systemd-250 へのアップデート。
+          <ulink url="&lfs-ticket-root;4971">#4971</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - meson-0.60.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;4973">#4973</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2021-12-15</para>
       <itemizedlist>
         <listitem>
