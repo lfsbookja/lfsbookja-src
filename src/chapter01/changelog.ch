@@ -43,6 +43,105 @@
     <title>変更履歴</title>
 @z
 
+@x revision="systemd"
+      <para>2021-01-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Add additional kernel configuration to allow for
+          'systemd-oomd' to function.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-01-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - 'systemd-oomd' が適切に機能するように、カーネル設定を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.46.5. Fixes
+          <ulink url="&lfs-ticket-root;4974">#4974</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zstd-1.5.1. Fixes
+          <ulink url="&lfs-ticket-root;4972">#4972</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.4.2. Fixes
+          <ulink url="&lfs-ticket-root;4970">#4970</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.10. Fixes
+          <ulink url="&lfs-ticket-root;4969">#4969</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to sysvinit-3.01. Fixes
+          <ulink url="&lfs-ticket-root;4968">#4968</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.15.12. Fixes
+          <ulink url="&lfs-ticket-root;4967">#4967</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20211224. Fixes
+          <ulink url="&lfs-ticket-root;4962">#4962</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.0.1. Fixes
+          <ulink url="&lfs-ticket-root;4922">#4922</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2.11. Fixes
+          <ulink url="&lfs-ticket-root;4914">#4914</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.46.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4974">#4974</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - zstd-1.5.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4972">#4972</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.4.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4970">#4970</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;4969">#4969</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - sysvinit-3.01 へのアップデート。
+          <ulink url="&lfs-ticket-root;4968">#4968</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.15.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;4967">#4967</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20211224 へのアップデート。
+          <ulink url="&lfs-ticket-root;4962">#4962</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4922">#4922</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;4914">#4914</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x
       <para>2021-12-30</para>
       <itemizedlist>
@@ -424,7 +523,7 @@
           <para>[bdubbs] - Update to tzdata-2021b. Fixes
           <ulink url="&lfs-ticket-root;4929">#4929</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - Update to sysvinit-3.0.0. Fixes
           <ulink url="&lfs-ticket-root;4927">#4927</ulink>.</para>
         </listitem>
@@ -464,7 +563,7 @@
           <para>[bdubbs] -  tzdata-2021b へのアップデート。
           <ulink url="&lfs-ticket-root;4929">#4929</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] -  sysvinit-3.0.0 へのアップデート。
           <ulink url="&lfs-ticket-root;4927">#4927</ulink> を Fix に。</para>
         </listitem>

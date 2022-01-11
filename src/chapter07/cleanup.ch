@@ -194,6 +194,13 @@
 @z
 
 @x
+        If continuing to chapter 8, don't forget to reenter the chroot
+        environment as explained in the <quote>Important</quote> box below.
+@y
+        第 8 章を続けるのであれば、以降に示す<quote>重要</quote>の説明のように、chroot 環境に再度入ることを忘れないでください。
+@z
+
+@x
     <title>Restore</title>
 @y
     <title>復元</title>

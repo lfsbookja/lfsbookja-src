@@ -25,6 +25,15 @@
 @z
 
 @x
+    <para>First, apply a fix to prevent a segmentation fault when running
+    <command>useradd</command>:</para>
+@y
+    <para>
+    まず初めに、<command>useradd</command> を実行した際に、セグメンテーションフォールトが発生しないように修正します。
+    </para>
+@z
+
+@x
       <para>If you would like to enforce the use of strong passwords, refer to
       <ulink url="&blfs-book;postlfs/cracklib.html"/> for installing
       CrackLib prior to building Shadow. Then add
@@ -219,26 +228,40 @@
 @z
 
 @x
-    <para>Shadow's stock configuration for the <command>useradd</command>
+    <para>Shadow's default configuration for the <command>useradd</command>
     utility has a few caveats that need some explanation. First, the default
     action for the <command>useradd</command> utility is to create the user and
     a group of the same name as the user. By default the user ID (UID) and
     group ID (GID) numbers will begin with 1000. This means if you don't pass
     parameters to <command>useradd</command>, each user will be a member of a
     unique group on the system. If this behavior is undesirable, you'll need
-    to pass the <parameter>-g</parameter> parameter to
-    <command>useradd</command>. The default parameters are stored in the
-    <filename>/etc/default/useradd</filename> file. You may need to modify two
-    parameters in this file to suit your particular needs.</para>
+    to pass one of the <parameter>-g</parameter> or <parameter>-N</parameter>
+    parameter to <command>useradd</command> or to change the setting of
+    <parameter>USERGROUPS_ENAB</parameter> in
+    <filename>/etc/login.defs</filename>. See <filename>useradd(8)</filename>
+    for more information.</para>
 @y
     <para>
-    Shadow の <command>useradd</command> コマンドに対する通常の設定には、注意すべき点があります。
+    Shadow の <command>useradd</command> コマンドに対するデフォルトの設定には、注意すべき点があります。
     まず <command>useradd</command> コマンドによりユーザーを生成する場合のデフォルトの動作では、ユーザー名と同じグループを自動生成します。
     ユーザーID (UID) とグループID (GID) は 1000 以上が割り当てられます。
     <command>useradd</command> コマンドの利用時に特にパラメータを与えなければ、追加するユーザーのグループは新たな固有グループが生成されることになります。
-    この動作が不適当であれば <command>useradd</command> コマンドの実行時に <parameter>-g</parameter> パラメーターを利用することが必要です。
-    デフォルトで適用されるパラメーターは <filename>/etc/default/useradd</filename> ファイルに定義されています。
-    このファイルのパラメーター定義を必要に応じて書き換えてください。
+    この動作が不適当であれば <command>useradd</command> コマンドの実行時に <parameter>-g</parameter> パラメーターか <parameter>-N</parameter> のいずれかを利用することが必要です。
+    あるいは <filename>/etc/login.defs</filename> 内にある <parameter>USERGROUPS_ENAB</parameter> の設定を書き換えてください。
+    詳しくは <filename>useradd(8)</filename> を参照してください。
+    </para>
+@z
+
+@x
+    <para>Second, to change the default parameters, the file
+    <filename>/etc/default/useradd</filename> needs to be created and taylored
+    to suit your particular needs. Create it with:</para>
+@y
+    <para>
+    次にデフォルトパラメーターを変更します。
+    そのためにはファイル <filename>/etc/default/useradd</filename> の生成が必要です。
+    特定の状況に合わせてこれを設定します。
+    まずは以下のようにして、このファイルを生成します。
     </para>
 @z
 
@@ -250,29 +273,39 @@
 
 @x
           <para>This parameter sets the beginning of the group numbers used in
-          the /etc/group file. You can modify it to anything you desire. Note
-          that <command>useradd</command> will never reuse a UID or GID. If the
-          number identified in this parameter is used, it will use the next
-          available number after this. Note also that if you don't have a group
-          1000 on your system the first time you use <command>useradd</command>
-          without the <parameter>-g</parameter> parameter, you'll get a message
-          displayed on the terminal that says:
-          <computeroutput>useradd: unknown GID 1000</computeroutput>. You may
-          disregard this message and group number 1000 will be used.</para>
+          the <filename>/etc/group</filename> file. The particular value 999
+          comes from the <parameter>--gid</parameter> parameter above.  You can
+          modify it to anything you desire.
 @y
           <para>
-          このパラメーターは /etc/group ファイルにて設定されるグループIDの先頭番号を指定します。
+          このパラメーターは <filename>/etc/group</filename> ファイルにおいて設定されるグループ ID の先頭番号を指定します。
+          999 という値は、上に示した <parameter>--gid</parameter> からきています。
           必要なら任意の数値に設定することもできます。
-          <command>useradd</command> コマンドは既存の UID 値、GID 値を再利用することはありません。
-          このパラメーターによって定義された数値が実際に指定された場合、この値以降で利用可能な値が利用されます。
-          また <command>useradd</command> コマンドの実行時に、パラメーター <parameter>-g</parameter> を利用せず、かつグループID 1000 のグループが存在していなかった場合は、以下のようなメッセージが出力されます。
-          <computeroutput>useradd: unknown GID 1000</computeroutput> ("GID 1000 が不明です")
-          このメッセージは無視することができます。
-          この場合グループIDには 1000 が利用されます。
-          </para>
 @z
 
 @x
+          Note that <command>useradd</command> will never reuse a UID or GID.
+          If the number identified in this parameter is used, it will use the
+          next available number. Note also that if you don't have a group with
+          an ID equal to this number on your system the first time you use
+          <command>useradd</command> without the <parameter>-g</parameter>
+          parameter, you will get a message displayed on the terminal that
+          says: <computeroutput>useradd: unknown GID 999</computeroutput>,
+          although the account is correctly created. That is why we have
+          created the group <systemitem class="groupname">users</systemitem>
+          with this group ID in <xref linkend='ch-tools-createfiles'/>.</para>
+@y
+          <command>useradd</command> コマンドは既存の UID 値、GID 値を再利用することはありません。
+          このパラメーターによって指定された数値が実際に利用されていた場合、その値以降で利用可能な値が採用されます。
+          また <command>useradd</command> コマンドの実行にあたって パラメーター <parameter>-g</parameter> を利用せずに、その数値によって表される ID を持ったグループがシステム上に存在しなかった場合は、以下のようなメッセージが出力されます。
+          <computeroutput>useradd: unknown GID 999</computeroutput> ("GID 999 が不明です")
+          この場合でも、アカウントは正しく生成されます。
+          だからこそ<xref linkend='ch-tools-createfiles'/>において、グループ ID を指定してグループ <systemitem
+          class="groupname">users</systemitem> を生成できたわけです。
+          </para>
+@z
+
+@x GROUP=999
           <para>This parameter causes <command>useradd</command> to create a
           mailbox file for the newly created user. <command>useradd</command>
           will make the group ownership of this file to the
