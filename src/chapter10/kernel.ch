@@ -251,17 +251,6 @@
 @z
 
 @x
-      <para revision="systemd">Ensure that CONFIG_DEFAULT_HOSTNAME is set to '(none)' or a hostname.
-      If it is left blank, systemd will fail to set the hostname to the
-      content of <filename>/etc/hostname</filename>.</para>
-@y
-      <para revision="systemd">
-      CONFIG_DEFAULT_HOSTNAME が '(none)' またはホスト名に設定されていることを確認してください。
-      これが空のままであると、システムが <filename>/etc/hostname</filename> の内容をホスト名に設定する処理に失敗してしまいます。
-      </para>
-@z
-
-@x
     <para>Compile the kernel image and modules:</para>
 @y
     <para>カーネルイメージとモジュールをコンパイルします。</para>

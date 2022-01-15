@@ -25,10 +25,11 @@
 @z
 
 @x
-    <para>First, apply a patch to fix a security vulnerability:</para>
+    <para>First, apply a patch to fix a security vulnerability and regressions
+    with hostnames and idle units:</para>
 @y
     <para>
-    セキュリティぜい弱性を修正するパッチを適用します。
+    セキュリティぜい弱性、およびホスト名、アイドルユニットに関する問題を修正するパッチを適用します。
     </para>
 @z
 
@@ -212,15 +213,6 @@
 @y
     <para>
     systemd-networkd が提供する設定とは異なるネットワーク設定を行っているシステムにおいて、問題が発生することがわかっているサービスを無効にします。
-    </para>
-@z
-
-@x
-    <para>Fix a regression in a systemd unit that causes a delay when
-    switching TTYs:</para>
-@y
-    <para>
-    systemd ユニットの中で、TTY に切り替えた際に遅延が発生するという不具合を修正しました。
     </para>
 @z
 

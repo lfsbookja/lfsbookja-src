@@ -25,15 +25,6 @@
 @z
 
 @x
-    <para>First, apply a fix to prevent a segmentation fault when running
-    <command>useradd</command>:</para>
-@y
-    <para>
-    まず初めに、<command>useradd</command> を実行した際に、セグメンテーションフォールトが発生しないように修正します。
-    </para>
-@z
-
-@x
       <para>If you would like to enforce the use of strong passwords, refer to
       <ulink url="&blfs-book;postlfs/cracklib.html"/> for installing
       CrackLib prior to building Shadow. Then add
@@ -141,7 +132,7 @@
 @x touch /usr/bin/passwd
           <para>The file <filename>/usr/bin/passwd</filename> needs
           to exist because its location is harcoded in some programs, and
-          the default location if it does not exist is not right.</para>
+          if it does not exist, the default location is not right.</para>
 @y
           <para>
           プログラムの中には <filename>/usr/bin/passwd</filename> のパスがそのままハードコーディングされているものがあり、このファイルが存在しなかった場合のデフォルトパスが正しくなっていません。

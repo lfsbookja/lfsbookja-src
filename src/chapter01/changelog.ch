@@ -43,6 +43,76 @@
     <title>変更履歴</title>
 @z
 
+@x
+      <para>2022-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.11.1. Fixes
+          <ulink url="&lfs-ticket-root;4976">#4976</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to readline-8.1.2. Fixes
+          <ulink url="&lfs-ticket-root;4980">#4980</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.61.0. Fixes
+          <ulink url="&lfs-ticket-root;4983">#4983</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.5.5. Fixes
+          <ulink url="&lfs-ticket-root;4977">#4977</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bash-5.1.16. Fixes
+          <ulink url="&lfs-ticket-root;4978">#4978</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - shadow-4.11.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4976">#4976</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline-8.1.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4980">#4980</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.61.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4983">#4983</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.5.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4977">#4977</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash-5.1.16 へのアップデート。
+          <ulink url="&lfs-ticket-root;4978">#4978</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2021-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fixed CVE-2021-3997 in systemd, as well as fixing
+          an issue with the default hostname and idle units. Fixes
+          <ulink url="&lfs-ticket-root;4981">#4981</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2021-01-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd において CVE-2021-3997 対応。
+          合わせてデフォルトホスト名とアイドルユニットに関する問題への対応。
+          <ulink url="&lfs-ticket-root;4981">#4981</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x revision="systemd"
       <para>2021-01-03</para>
       <itemizedlist>

@@ -40,11 +40,10 @@
 @z
 
 @x
-    <para>First, apply a patch that fixes an issue with pkgconfig files
-    for static libraries:</para>
+    <para>First, apply a patch that fixes an issue identified upstream:</para>
 @y
     <para>
-    まず初めに、スタティックライブラリに対応する pkgconfig ファイルの問題を修正するパッチを適用します。
+    まず初めに、アップストリームが認識する問題を修正するパッチを適用します。
     </para>
 @z
 
