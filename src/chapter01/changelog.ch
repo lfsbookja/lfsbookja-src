@@ -44,6 +44,48 @@
 @z
 
 @x
+      <para>2022-01-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.4.3 (security fixes). Fixes
+          <ulink url="&lfs-ticket-root;4984">#4984</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - Update to meson-0.61.1. Fixes
+          <ulink url="&lfs-ticket-root;4985">#4985</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-01-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - expat-2.4.3 へのアップデート（セキュリティフィックス）。
+          <ulink url="&lfs-ticket-root;4984">#4984</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[pierre] - meson-0.61.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;4985">#4985</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-01-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Added a fix of a typo to the meson-0.61.0 patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-01-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - meson-0.61.0 のパッチにおけるタイポ修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-01-15</para>
       <itemizedlist>
         <listitem>

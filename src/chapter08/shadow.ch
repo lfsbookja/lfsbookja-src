@@ -131,7 +131,7 @@
 
 @x touch /usr/bin/passwd
           <para>The file <filename>/usr/bin/passwd</filename> needs
-          to exist because its location is harcoded in some programs, and
+          to exist because its location is hardcoded in some programs, and
           if it does not exist, the default location is not right.</para>
 @y
           <para>
@@ -343,18 +343,20 @@
 @z
 
 @x
-        <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog, gpasswd,
-        groupadd, groupdel, groupmems, groupmod, grpck, grpconv, grpunconv,
-        lastlog, login, logoutd, newgidmap, newgrp, newuidmap, newusers,
-        nologin, passwd, pwck, pwconv, pwunconv, sg (link to newgrp), su,
-        useradd, userdel, usermod, vigr (link to vipw), and vipw</seg>
+        <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
+        getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
+        grpconv, grpunconv, lastlog, login, logoutd, newgidmap, newgrp,
+        newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
+        sg (link to newgrp), su, useradd, userdel, usermod,
+        vigr (link to vipw), and vipw</seg>
         <seg>/etc/default</seg>
 @y
-        <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog, gpasswd,
-        groupadd, groupdel, groupmems, groupmod, grpck, grpconv, grpunconv,
-        lastlog, login, logoutd, newgidmap, newgrp, newuidmap, newusers,
-        nologin, passwd, pwck, pwconv, pwunconv, sg (newgrp へのリンク), su,
-        useradd, userdel, usermod, vigr (vipw へのリンク), vipw</seg>
+        <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
+        getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
+        grpconv, grpunconv, lastlog, login, logoutd, newgidmap, newgrp,
+        newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
+        sg (newgrp へのリンク), su, useradd, userdel, usermod,
+        vigr (vipw へのリンク), vipw</seg>
         <seg>/etc/default</seg>
 @z
 
@@ -422,6 +424,14 @@
           ログイン失敗のログを調査します。
           ログインの失敗を繰り返すことでアカウントがロックされる際の、最大の失敗回数を設定します。
           またその失敗回数をリセットします。
+          </para>
+@z
+
+@x getsubids
+          <para>Is used to list the subordinate id ranges for a user</para>
+@y
+          <para>
+          ユーザーのサブ id 範囲の一覧取得に用いられます。
           </para>
 @z
 
