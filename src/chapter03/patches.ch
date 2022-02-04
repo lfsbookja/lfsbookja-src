@@ -67,6 +67,12 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
+@x Coreutils Chmod Fix Patch
+        <para>Download: <ulink url="&patches-root;&coreutils-chmod-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&coreutils-chmod-patch;"/></para>
+@z
+
 @x File Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&file-upstream-fixes-patch;"/></para>
 @y

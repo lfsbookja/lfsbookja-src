@@ -325,7 +325,7 @@
 
 @x
     <para>Individual locales can be installed using the
-    <command>localedef</command> program. E.g., the first
+    <command>localedef</command> program. E.g., the second
     <command>localedef</command> command below combines the
     <filename>/usr/share/i18n/locales/cs_CZ</filename>
     charset-independent locale definition with the
@@ -337,7 +337,7 @@
 @y
     <para>
     各ロケールは <command>localedef</command> プログラムを使ってインストールします。
-    例えば以下に示す一つめの <command>localedef</command> では、キャラクターセットには依存しないロケール定義 <filename>/usr/share/i18n/locales/cs_CZ</filename> とキャラクターマップ定義 <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename> とを結合させて <filename>/usr/lib/locale/locale-archive</filename> ファイルにその情報を付け加えます。
+    例えば以下に示す 2 つめの <command>localedef</command> では、キャラクターセットには依存しないロケール定義 <filename>/usr/share/i18n/locales/cs_CZ</filename> とキャラクターマップ定義 <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename> とを結合させて <filename>/usr/lib/locale/locale-archive</filename> ファイルにその情報を付け加えます。
     以下のコマンドは、テストを成功させるために必要となる最低限のロケールをインストールするものです。
     </para>
 @z

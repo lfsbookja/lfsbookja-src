@@ -25,31 +25,6 @@
   <secondary>設定</secondary></indexterm>
 @z
 
-%@x
-%  <para>This section only applies if a network card is to be
-%  configured.</para>
-%@y
-%  <para>
-%  本節はネットワークカードを設定する場合にのみ作業を行っていきます。
-%  </para>
-%@z
-
-%@x
-%  <para>If a network card will not be used, there is likely no need to create
-%  any configuration files relating to network cards. If that is the case, you
-%  will need to remove the <filename class="symlink">network</filename> symlinks
-%  from all run-level directories (<filename
-%  class="directory">/etc/rc.d/rc*.d</filename>) after the bootscripts are
-%  installed in <xref linkend="ch-config-bootscripts"/>.</para>
-%@y
-%  <para>
-%  ネットワークカードを利用しないのであれば、ネットワークカードに関する設定は、おそらくすべて不要なはずです。
-%  そのような場合は、ランレベルディレクトリ (<filename
-%  class="directory">/etc/rc.d/rc*.d</filename>) から、シンボリックリンク <filename class="symlink">network</filename> を削除してください。
-%  これは <xref linkend="ch-config-bootscripts"/> にてブートスクリプトをインストールした後に行ってください。
-%  </para>
-%@z
-
 @x
     <title>Creating Network Interface Configuration Files</title>
 @y
@@ -81,18 +56,37 @@
 @z
 
 @x
-    <note><para>If the procedure in the previous section was not used, udev
-    will assign network card interface names based on system physical
-    characteristics such as enp2s1. If you are not sure what your interface
-    name is, you can always run <command>ip link</command> or <command>ls
-    /sys/class/net</command> after you have booted your system.
-    </para></note>
+    <note>
+      <para>If the procedure in the previous section was not used, udev
+      will assign network card interface names based on system physical
+      characteristics such as enp2s1. If you are not sure what your interface
+      name is, you can always run <command>ip link</command> or <command>ls
+      /sys/class/net</command> after you have booted your system.
+      </para>
 @y
-    <note><para>
-    前節に示した手順を実施しなかった場合、udev は、システムの物理的な特性に従った enp2s1 などのような名称をネットワークカードインターフェースに割り当てます。
-    インタフェース名がよく分からない場合は、システム起動した後に <command>ip link</command> または <command>ls
-    /sys/class/net</command> を実行すれば確認できます。
-    </para></note>
+    <note>
+      <para>
+      前節に示した手順を実施しなかった場合、udev は、システムの物理的な特性に従った enp2s1 などのような名称をネットワークカードインターフェースに割り当てます。
+      インタフェース名がよく分からない場合は、システム起動した後に <command>ip link</command> または <command>ls
+      /sys/class/net</command> を実行すれば確認できます。
+      </para>
+@z
+
+@x
+      <para>The interface names depend on the implementation and
+      configuration of the udev daemon running on the system.  The udev
+      daemon for LFS (installed in <xref linkend="ch-system-eudev"/>) will
+      not run until the LFS system is booted.  So it's unreliable to
+      determine the interface names being used in LFS system by running
+      those commands on the host distro,
+      <emphasis>even though in the chroot environment</emphasis>.</para>
+@y
+      <para>
+      インターフェース名は、システム上で起動している udev デーモンの実装や設定に依存します。
+      LFS における udev デーモン（<xref linkend="ch-system-eudev"/>においてインストール）は、LFS システムを起動させるまでは動作しません。
+      したがってホストディストリビューションにおいて各コマンドを実行しても、LFS 上において用いられるインターフェース名が何であるのかは特定できません。
+      それは chroot 環境内においても同じことです。
+      </para>
 @z
 
 @x

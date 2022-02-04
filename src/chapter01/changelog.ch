@@ -44,6 +44,156 @@
 @z
 
 @x
+      <para>2022-02-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add coreutils-9.0 chmod patch. Fixes
+          <ulink url="&lfs-ticket-root;4992">#4992</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.35. Fixes
+          <ulink url="&lfs-ticket-root;4999">#4999</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.16.5. Fixes
+          <ulink url="&lfs-ticket-root;4996">#4996</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to findutils-4.9.0. Fixes
+          <ulink url="&lfs-ticket-root;4995">#4995</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.4.4. Fixes
+          <ulink url="&lfs-ticket-root;4993">#4993</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20220128. Fixes
+          <ulink url="&lfs-ticket-root;4994">#4994</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-02-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - coreutils-9.0 chmod パッチの追加。
+          <ulink url="&lfs-ticket-root;4992">#4992</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  glibc-2.35 へのアップデート。
+          <ulink url="&lfs-ticket-root;4999">#4999</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  linux-5.16.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;4996">#4996</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  findutils-4.9.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4995">#4995</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  expat-2.4.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4993">#4993</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  iana-etc-20220128 へのアップデート。
+          <ulink url="&lfs-ticket-root;4994">#4994</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-01-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.16.4. Fixes
+          <ulink url="&lfs-ticket-root;4991">#4991</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-01-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-5.16.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;4991">#4991</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.4236. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zstd-1.5.2. Fixes
+          <ulink url="&lfs-ticket-root;4988">#4988</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.37.3 (security fix). Fixes
+          <ulink url="&lfs-ticket-root;4989">#4989</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.10.2. Fixes
+          <ulink url="&lfs-ticket-root;4987">#4987</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.16.2. Fixes
+          <ulink url="&lfs-ticket-root;4979">#4979</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.63. Fixes
+          <ulink url="&lfs-ticket-root;4990">#4990</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.16.0. Fixes
+          <ulink url="&lfs-ticket-root;4982">#4982</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20220120. Fixes
+          <ulink url="&lfs-ticket-root;4975">#4975</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] -  vim-8.2.4236 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  zstd-1.5.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4988">#4988</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  util-linux-2.37.3 (セキュリティフィックス) へのアップデート。
+          <ulink url="&lfs-ticket-root;4989">#4989</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  Python-3.10.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4987">#4987</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  linux-5.16.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;4979">#4979</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  libcap-2.63 へのアップデート。
+          <ulink url="&lfs-ticket-root;4990">#4990</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  iproute2-5.16.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;4982">#4982</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  iana-etc-20220120 へのアップデート。
+          <ulink url="&lfs-ticket-root;4975">#4975</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-01-20</para>
       <itemizedlist>
         <listitem>

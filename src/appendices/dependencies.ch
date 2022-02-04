@@ -376,10 +376,10 @@
 %----------------------------------------------------------------------
 @x coreutils
           <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep,
-          Libcap, Make, Patch, Perl, Sed, and Texinfo</seg>
+          Libcap, Make, OpenSSL, Patch, Perl, Sed, and Texinfo</seg>
 @y
           <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep,
-          Libcap, Make, Patch, Perl, Sed, Texinfo</seg>
+          Libcap, Make, OpenSSL, Patch, Perl, Sed, Texinfo</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -1819,9 +1819,9 @@
 @z
 %----------------------------------------------------------------------
 @x
-<!-- Begin Openssl dependency info -->
+<!-- Begin OpenSSL dependency info -->
 @y
-<!-- Begin Openssl dependency info -->
+<!-- Begin OpenSSL dependency info -->
 @z
 @x
           <seg>Binutils, Coreutils, GCC, Make, and Perl</seg>
@@ -1837,6 +1837,11 @@
           <seg>None</seg>
 @y
           <seg>なし</seg>
+@z
+@x
+          <seg>Coreutils and Linux</seg>
+@y
+          <seg>Coreutils, Linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -2157,12 +2162,12 @@
 %----------------------------------------------------------------------
 @x Systemd
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
-         GCC, Glibc, Gperf, Grep, Intltool, Jinja2, Libcap, Meson, Sed, and
-         Util-linux</seg>
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Meson, Sed, Util-linux,
+         and Zstd</seg>
 @y
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
-         GCC, Glibc, Gperf, Grep, Intltool, Jinja2, Libcap, Meson, Sed,
-         Util-linux</seg>
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Meson, Sed, Util-linux,
+         Zstd</seg>
 @z
 @x
           <seg>Acl, Attr, Glibc, Libcap, and Util-linux</seg>
@@ -2485,9 +2490,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC</seg>
+          <seg>GCC and Systemd</seg>
 @y
-          <seg>GCC</seg>
+          <seg>GCC, Systemd</seg>
 @z
 @x
           <seg>None</seg>

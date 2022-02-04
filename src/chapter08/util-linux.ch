@@ -125,7 +125,7 @@
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
         last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
         lsipc, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
-        more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit, raw,
+        more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit,
         readprofile, rename, renice, resizepart, rev, rfkill, rtcwake, script,
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
         swapoff (link to swapon), swapon, switch_root, taskset, ul,
@@ -148,7 +148,7 @@
         i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (last へのリンク),
         ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
         lsipc, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
-        more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit, raw,
+        more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit,
         readprofile, rename, renice, resizepart, rev, rfkill, rtcwake, script,
         scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
         swapoff (swapon へのリンク), swapon, switch_root, taskset, ul,
@@ -766,14 +766,6 @@
           </para>
 @z
 
-%@x pg
-%          <para>Displays a text file one screen full at a time</para>
-%@y
-%          <para>
-%          テキストファイルを一度に一画面分表示します。
-%          </para>
-%@z
-
 @x pivot_root
           <para>Makes the given file system the new root file system of the
           current process</para>
@@ -788,14 +780,6 @@
 @y
           <para>
           プロセスが利用するリソースの限界値を取得または設定します。
-          </para>
-@z
-
-@x raw
-          <para>Bind a Linux raw character device to a block device</para>
-@y
-          <para>
-          Linux の raw キャラクターデバイスをブロックデバイスにバインドします。
           </para>
 @z
 

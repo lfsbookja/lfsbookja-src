@@ -47,10 +47,10 @@
 @z
 
 @x
-   <para>Suppress a test which on some machines can loop forever:</para>
+   <para>Now, fix a problem with chmod return values:</para>
 @y
    <para>
-   特定のマシンにおいてテストが無限ループに陥るため省略します。
+   chmod の返り値に関する問題を以下により修正します。
    </para>
 @z
 

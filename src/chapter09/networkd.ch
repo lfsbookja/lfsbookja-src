@@ -109,6 +109,24 @@
 @z
 
 @x
+        <para>The interface names depend on the implementation and
+        configuration of the udev daemon running on the system.  The udev
+        daemon for LFS (<command>systemd-udevd</command>, installed in
+        <xref linkend="ch-system-systemd"/>) will not run unless the LFS
+        system is booted.  So it's unreliable to determine the interface
+        names being used in LFS system by running those commands on the host
+        distro,
+        <emphasis>even though in the chroot environment</emphasis>.</para>
+@y
+        <para>
+        インターフェース名は、システム上で起動している udev デーモンの実装や設定に依存します。
+        LFS における udev デーモン（<xref linkend="ch-system-systemd"/>においてインストール）は、LFS システムを起動させるまでは動作しません。
+        したがってホストディストリビューションにおいて各コマンドを実行しても、LFS 上において用いられるインターフェース名が何であるのかは特定できません。
+        それは chroot 環境内においても同じことです。
+        </para>
+@z
+
+@x
         For most systems, there is only one network interface for
         each type of connection.  For example, the classic interface
         name for a wired connection is eth0.  A wireless connection
