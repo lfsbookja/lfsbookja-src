@@ -158,23 +158,6 @@
 @z
 
 @x
-      <title>The meaning of the make parameter:</title>
-@y
-      <title>&MeaningOfParameter1;make&MeaningOfParameter2;</title>
-@z
-
-@x -j1
-          <para>An issue in the building system may cause the installation
-          to fail with <option>-j N</option> in <envar>MAKEFLAGS</envar>.
-          Override it to workaround this issue.</para>
-@y
-          <para>
-          ビルドシステムに問題があるため <envar>MAKEFLAGS</envar> に <option>-j N</option> を設定しているとインストールに失敗します。
-          回避策としてこれをオーバーライドします。
-          </para>
-@z
-
-@x
     <para>Details on this package are located in
     <xref linkend="contents-binutils" role="."/></para>
 @y

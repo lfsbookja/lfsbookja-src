@@ -44,6 +44,24 @@
 @z
 
 @x
+      <para>2022-02-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Remove sed from glibc instructions in chapter 8.
+            It has been applied upstream.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-02-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - 第 8 章の glibc 手順から sed 処理を削除。
+            アップストリームにおいて適用済みのため。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-02-03</para>
       <itemizedlist>
         <listitem>
