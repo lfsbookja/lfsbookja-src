@@ -49,7 +49,7 @@
 
 <!ENTITY jversion        "20220205">
 <!ENTITY jversiond       "20220205">
-<!ENTITY jcorrespondSHA  "1f8c0b947"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jcorrespondSHA  "0a75d6265"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
 <!ENTITY dir-jversion    "git-ja">
 <!ENTITY dir-jversiond   "git-sysdja">
 @z

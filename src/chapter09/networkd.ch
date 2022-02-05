@@ -253,23 +253,27 @@
       or any other software that generates an <filename>/etc/resolv.conf</filename>
       (ex: a <command>resolvconf</command> program other than the one
       provided by systemd), the <command>systemd-resolved</command> service
-      should not be used.</para></note>
+      should not be used.</para>
 @y
       <note><para>
       ネットワークインターフェース設定を systemd-resolved とは別の方法 (例えば ppp など) で行う場合、
       または別のタイプのローカルリゾルバー (local resolver; たとえば bind や dnsmasq や unbound など) や <filename>/etc/resolv.conf</filename> を生成するソフトウェア (つまり systemd が提供するものでない <command>resolvconf</command> プログラム) などを用いる場合、<command>systemd-resolved</command> サービスは用いてはなりません。
-      </para></note>
+      </para>
+@z
+
+@x
+      <para>To disable systemd-resolved, issue the following command:</para>
+@y
+      <para>systemd-resolved を無効にするには、以下のコマンドを実行します。</para>
 @z
 
 @x
       <para>When using <command>systemd-resolved</command> for DNS
       configuration, it creates the file
-      <filename>/run/systemd/resolve/resolv.conf</filename>. Create a
-      symlink in <filename>/etc</filename> to use the generated file:</para>
+      <filename>/run/systemd/resolve/resolv.conf</filename>.</para>
 @y
       <para>
       DNS 設定に <command>systemd-resolved</command> を用いると <filename>/run/systemd/resolve/resolv.conf</filename> ファイルが生成されます。
-      このファイルを利用するためのシンボリックリンクを <filename>/etc</filename> に生成します。
       </para>
 @z
 

@@ -54,6 +54,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          r11.0-140 (<ulink url="&lfs-changeset;0a75d6265">0a75d6265</ulink>) までの対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           r11.0-139 (<ulink url="&lfs-changeset;1f8c0b947">1f8c0b947</ulink>) までの対応。
           </para>
         </listitem>
