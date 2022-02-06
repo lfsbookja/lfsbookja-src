@@ -1226,10 +1226,10 @@
 @z
 @x
           <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-          Gzip, Make, Pkg-config, Sed, Xz, and Zlib</seg>
+          Gzip, Make, OpenSSL, Pkg-config, Sed, Xz, and Zlib</seg>
 @y
           <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-          Gzip, Make, Pkg-config, Sed, Xz, Zlib</seg>
+          Gzip, Make, OpenSSL, Pkg-config, Sed, Xz, Zlib</seg>
 @z
 @x
           <seg>Glibc, Xz, and Zlib</seg>
@@ -1839,9 +1839,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>Coreutils and Linux</seg>
+          <seg>Coreutils, Kmod, and Linux</seg>
 @y
-          <seg>Coreutils, Linux</seg>
+          <seg>Coreutils, Kmod, Linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -2495,7 +2495,11 @@
           <seg>GCC, Systemd</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>
+            <ulink url="http://lz4.github.io/lz4/">LZ4</ulink>
+          </seg>
 @y
-          <seg>なし</seg>
+          <seg>
+            <ulink url="http://lz4.github.io/lz4/">LZ4</ulink>
+          </seg>
 @z

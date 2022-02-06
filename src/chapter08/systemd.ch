@@ -115,13 +115,13 @@
           services responsible for setting up the
           <filename>/etc/group</filename> and
           <filename>/etc/passwd</filename> files. Both files
-          were created earlier in this chapter. This daemon is not useful
+          were created in the previous chapter. This daemon is not useful
           on an LFS system since user accounts are manually created.</para>
 @y
           <para>
           本スイッチは、システム起動初期に <filename>/etc/group</filename> ファイルと
           <filename>/etc/passwd</filename> ファイルを設定する systemd サービスをインストールしないようにします。
-          この二つのファイルは本章にて生成済です。
+          この二つのファイルは前章にて生成済です。
           LFS システム上におけるこのデーモンは、ユーザーアカウントを手動で生成するまでは、利用することはできません。
           </para>
 @z

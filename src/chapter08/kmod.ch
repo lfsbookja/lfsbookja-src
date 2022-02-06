@@ -36,7 +36,25 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
+@x --with-openssl
+          <para>This option enables Kmod to handle PKCS7 signatures for
+          kernel modules.</para>
+@y
+          <para>
+          このオプションは Kmod において、カーネルモジュールに対する PKCS7 署名を取り扱えるようにします。
+          </para>
+@z
+
 @x --with-xz, --with-zlib, --with-zstd
+          <parameter>--with-xz</parameter>,
+          <parameter>--with-zlib</parameter>, and
+          <parameter>--with-zstd</parameter>
+@y
+          <parameter>--with-xz</parameter>,
+          <parameter>--with-zlib</parameter>,
+          <parameter>--with-zstd</parameter>
+@z
+@x
           <para>These options enable Kmod to handle compressed kernel modules.</para>
 @y
           <para>
@@ -51,13 +69,13 @@
 @z
 
 @x
-    <para>This package does not come with a test suite that can be run in the
-    LFS chroot environment.  At a minimum the git program is required and
-    several tests will not run outside of a git repository. </para>
+    <para>The test suite of this package requires raw kernel headers
+    (not the <quote>sanitized</quote> kernel headers installed earlier),
+    which are beyond the scope of LFS.</para>
 @y
     <para>
-    本パッケージにあるテストスイートは、LFS の chroot 環境下にて動作させることができません。
-    最低でも git が必要であり、git リポジトリ配下でテストしないと失敗するものがあります。
+    本パッケージのテストスイートでは、 生のカーネルヘッダー（以前にインストールした<quote>健全化（sanitized）</quote>されたヘッダーではないもの）が必要です。
+    これは LFS の範囲を超えているものです。
     </para>
 @z
 

@@ -451,14 +451,14 @@
 @z
 
 @x
-        <seg>accessdb, apropos (link to whatis), catman, lexgrog, man, mandb,
-        manpath, and whatis</seg>
+        <seg>accessdb, apropos (link to whatis), catman, lexgrog, man,
+        man-recode, mandb, manpath, and whatis</seg>
         <seg>libman.so and libmandb.so (both in /usr/lib/man-db)</seg>
         <seg>/usr/lib/man-db, /usr/libexec/man-db,
         and /usr/share/doc/man-db-&man-db-version;</seg>
 @y
-        <seg>accessdb, apropos (whatis へのリンク), catman, lexgrog, man, mandb,
-        manpath, whatis</seg>
+        <seg>accessdb, apropos (whatis へのリンク), catman, lexgrog, man,
+        man-recode, mandb, manpath, whatis</seg>
         <seg>libman.so, libmandb.so (いずれも /usr/lib/man-db ディレクトリ内)</seg>
         <seg>/usr/lib/man-db, /usr/libexec/man-db,
         /usr/share/doc/man-db-&man-db-version;</seg>
@@ -511,6 +511,14 @@
 @y
           <para>
           指定されたマニュアルページを整形して表示します。
+          </para>
+@z
+
+@x man-recode
+          <para>Converts manual pages to another encoding</para>
+@y
+          <para>
+          マニュアルページを別のエンコーディングに変換します。
           </para>
 @z
 

@@ -71,15 +71,11 @@
 @x
   <para>Notice that <filename class="directory">/tools/bin</filename> is not
   in the <envar>PATH</envar>. This means that the cross toolchain will no longer be
-  used in the chroot environment. This occurs when the shell does not
-  <quote>remember</quote> the locations of executed binaries&mdash;for this
-  reason, hashing is switched off by passing the <parameter>+h</parameter> option
-  to <command>bash</command>.</para>
+  used in the chroot environment.</para>
 @y
   <para>
   <filename class="directory">/tools/bin</filename> が <envar>PATH</envar> 内には存在しません。
   つまりクロスチェーンは chroot 環境内ではもはや利用しないということです。
-  これがうまく動作するのは <command>bash</command> の <parameter>+h</parameter> オプションを用いることによってハッシュ機能をオフにしているからであり、実行モジュールの場所を覚えておく機能を無効にしているからです。
   </para>
 @z
 

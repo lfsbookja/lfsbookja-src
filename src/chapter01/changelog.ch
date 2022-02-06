@@ -47,6 +47,27 @@
       <para>2022-02-04</para>
       <itemizedlist>
         <listitem>
+          <para>[xry111] - Remove <command>bash</command>
+          <literal>+h</literal> directives in chroot.  Fixes
+          <ulink url="&lfs-ticket-root;4998">#4998</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to man-db-2.10.0.  Fixes
+          <ulink url="&lfs-ticket-root;5002">#5002</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Move OpenSSL before Kmod and enable OpenSSL
+          for Kmod build.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to gdbm-1.23.  Fixes
+          <ulink url="&lfs-ticket-root;5000">#5000</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to tcl-8.6.12.  Fixes
+          <ulink url="&lfs-ticket-root;5001">#5001</ulink>.</para>
+        </listitem>
+        <listitem>
           <para>[thomas] - Remove sed from glibc instructions in chapter 8.
             It has been applied upstream.</para>
         </listitem>
@@ -54,6 +75,26 @@
 @y
       <para>2022-02-04</para>
       <itemizedlist>
+        <listitem>
+          <para>[xry111] - chroot 内での　<command>bash</command>
+          <literal>+h</literal> ディレクティブを削除。
+          <ulink url="&lfs-ticket-root;4998">#4998</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - man-db-2.10.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5002">#5002</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - OpenSSL を Kmod の前に移動して、Kmod ビルド時に OpenSSL を有効にする。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - gdbm-1.23 へのアップデート。
+          <ulink url="&lfs-ticket-root;5000">#5000</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - tcl-8.6.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;5001">#5001</ulink> を Fix に。</para>
+        </listitem>
         <listitem>
           <para>[thomas] - 第 8 章の glibc 手順から sed 処理を削除。
             アップストリームにおいて適用済みのため。</para>

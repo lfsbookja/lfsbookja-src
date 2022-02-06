@@ -120,15 +120,15 @@
 @x
         <seg>addpart, agetty, blkdiscard, blkid, blkzone, blockdev, cal, cfdisk, chcpu,
         chmem, choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
-        eject, fallocate, fdformat, fdisk, fincore, findfs, findmnt, flock, fsck,
+        eject, fallocate, fdisk, fincore, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
-        i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (link to
+        i386, ionice, ipcmk, ipcrm, ipcs, irqtop, isosize, kill, last, lastb (link to
         last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lsipc, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        lsipc, lsirq, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
         more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit,
         readprofile, rename, renice, resizepart, rev, rfkill, rtcwake, script,
-        scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
-        swapoff (link to swapon), swapon, switch_root, taskset, ul,
+        scriptlive, scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
+        swapoff (link to swapon), swapon, switch_root, taskset, uclampset, ul,
         umount, uname26, unshare, utmpdump, uuidd, uuidgen, uuidparse, wall, wdctl, whereis,
         wipefs, x86_64, and zramctl</seg>
         <seg>libblkid.so, libfdisk.so, libmount.so,
@@ -143,15 +143,15 @@
 @y
         <seg>addpart, agetty, blkdiscard, blkid, blkzone, blockdev, cal, cfdisk, chcpu,
         chmem, choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
-        eject, fallocate, fdformat, fdisk, fincore, findfs, findmnt, flock, fsck,
+        eject, fallocate, fdisk, fincore, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
-        i386, ionice, ipcmk, ipcrm, ipcs, isosize, kill, last, lastb (last へのリンク),
+        i386, ionice, ipcmk, ipcrm, ipcs, irqtop, isosize, kill, last, lastb (last へのリンク),
         ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lsipc, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        lsipc, lsirq, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
         more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit,
         readprofile, rename, renice, resizepart, rev, rfkill, rtcwake, script,
-        scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
-        swapoff (swapon へのリンク), swapon, switch_root, taskset, ul,
+        scriptlive, scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
+        swapoff (swapon へのリンク), swapon, switch_root, taskset, uclampset, ul,
         umount, uname26, unshare, utmpdump, uuidd, uuidgen, uuidparse, wall, wdctl, whereis,
         wipefs, x86_64, zramctl</seg>
         <seg>libblkid.so, libfdisk.so, libmount.so,
@@ -341,14 +341,6 @@
           </para>
 @z
 
-@x fdformat
-          <para>Low-level formats a floppy disk</para>
-@y
-          <para>
-          フロッピーディスクの低レベル (low-level) フォーマットを行います。
-          </para>
-@z
-
 @x fdisk
           <para>Manipulates the partition table of the given device</para>
 @y
@@ -507,6 +499,15 @@
           </para>
 @z
 
+@x irqtop
+          <para>Displays kernel interrupt counter information in
+          <filename>top(1)</filename> style view</para>
+@y
+          <para>
+          カーネルのインタラプトカウンター情報を <filename>top(1)</filename> スタイルにより表示します。
+          </para>
+@z
+
 @x isosize
           <para>Reports the size of an iso9660 file system</para>
 @y
@@ -619,6 +620,14 @@
 @y
           <para>
           システムに搭載されている IPC 機能の情報を表示します。
+          </para>
+@z
+
+@x lsirq
+          <para>Displays kernel interrupt counter information</para>
+@y
+          <para>
+          カーネルのインタラプトカウンター情報を表示します。
           </para>
 @z
 
@@ -853,6 +862,14 @@
           </para>
 @z
 
+@x scriptlive
+          <para>Re-run session typescripts using timing information</para>
+@y
+          <para>
+          タイミング情報を使って、セッションのタイプスクリプトを再実行します。
+          </para>
+@z
+
 @x scriptreplay
           <para>Plays back typescripts using timing information</para>
 @y
@@ -940,22 +957,20 @@
           </para>
 @z
 
-@x tailf
-          <para>Tracks the growth of a log file; displays the last 10 lines
-          of a log file, then continues displaying any new entries in the
-          log file as they are created</para>
-@y
-          <para>
-          ログファイルの更新を監視します。
-          ログファイルの最終の10行が表示され、ログファイルに新たに書き込みが行われると表示更新します。
-          </para>
-@z
-
 @x taskset
           <para>Retrieves or sets a process' CPU affinity</para>
 @y
           <para>
           プロセスの CPU 親和性 (affinity) を表示または設定します。
+          </para>
+@z
+
+@x uclampset
+          <para>Manipulate the utilization clamping attributes of the
+          system or a process</para>
+@y
+          <para>
+          システムやプロセスの使用率クランプ属性を操作します。
           </para>
 @z
 

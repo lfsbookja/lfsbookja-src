@@ -16,6 +16,7 @@ CHANGE_FILES = \
 	bzip2.ch          \
 	chapter08.ch      \
 	check.ch          \
+	cleanup.ch        \
 	coreutils.ch      \
 	dbus.ch           \
 	dejagnu.ch        \
@@ -71,7 +72,6 @@ CHANGE_FILES = \
 	psmisc.ch         \
 	python.ch         \
 	readline.ch       \
-	revisedchroot.ch  \
 	sed.ch            \
 	shadow.ch         \
 	stripping.ch      \

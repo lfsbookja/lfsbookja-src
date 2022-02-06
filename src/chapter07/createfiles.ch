@@ -309,23 +309,6 @@
 @z
 
 @x
-  <para>Note the use of the <parameter>+h</parameter> directive. This tells
-  <command>bash</command> not to use its internal path hashing. Without this
-  directive, <command>bash</command> would remember the paths to binaries it has
-  executed. To ensure the use of the newly compiled binaries as soon as they are
-  installed, the <parameter>+h</parameter> directive will be used for the duration
-  of this and the next chapter.</para>
-@y
-  <para>
-  ディレクティブ <parameter>+h</parameter> について触れておきます。
-  これは <command>bash</command> に対して実行パスの内部ハッシュ機能を利用しないよう指示するものです。
-  もしこのディレクティブを指定しなかった場合 <command>bash</command> は一度実行したファイルのパスを記憶します。
-  コンパイルしてインストールした実行ファイルはすぐに利用していくために、本章と次章の作業では
-  <parameter>+h</parameter> ディレクティブを常に使っていくことにします。
-  </para>
-@z
-
-@x
   <para>The <command>login</command>, <command>agetty</command>, and
   <command>init</command> programs (and others) use a number of log
   files to record information such as who was logged into the system and

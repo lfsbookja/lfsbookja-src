@@ -73,12 +73,9 @@
 @z
 
 @x
-      The gdbmtool tests are known to fail with some DejaGNU
-      <literal>ERROR</literal> messages.  In the summary it's
-      shown as one unresolved testcase.
+      One test, <filename>version</filename>, is known to fail.
 @y
-      gdbmtool テストにおいて、DejaGNU の <literal>ERROR</literal> エラーを出力して失敗するものがあります。
-      テスト結果の中に、未解決のテストケースとして示されます。
+      1 つだけ <filename>version</filename> というテストが失敗します。
 @z
 
 @x

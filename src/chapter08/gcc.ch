@@ -27,10 +27,10 @@
 @x
     <para>At first, fix an issue breaking
     <filename class="libraryfile">libasan.a</filename> building this package
-    with Glibc-2.34:</para>
+    with Glibc-2.34 or later:</para>
 @y
     <para>
-    はじめに、Glibc-2.34 を使った際に、本パッケージの <filename
+    はじめに Glibc-2.34 またはそれ以降を使った際に、本パッケージの <filename
     class="libraryfile">libasan.a</filename> ビルドが不適切になる問題を修正します。
     </para>
 @z

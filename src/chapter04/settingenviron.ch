@@ -79,9 +79,11 @@
   be used as soon as they are installed. By switching off the hash function,
   the shell will always search the <envar>PATH</envar> when a program is to
   be run. As such, the shell will find the newly compiled tools in
-  <filename class="directory">$LFS/tools</filename> as soon as they are
-  available without remembering a previous version of the same program in a
-  different location.</para>
+  <filename class="directory">$LFS/tools/bin</filename> as soon as they are
+  available without remembering a previous version of the same program
+  provided by the host distro, in
+  <filename class='directory'>/usr/bin</filename> or
+  <filename class='directory'>/bin</filename>.</para>
 @y
   <para>
   <command>set +h</command> コマンドは <command>bash</command> のハッシュ機能を無効にします。
@@ -89,8 +91,10 @@
   実行ファイルのフルパスをハッシュテーブルに記憶しておき、再度そのパスを探し出す際に <envar>PATH</envar> 変数の探査を省略します。
   しかしこれより作り出すツール類はインストール直後にすぐ利用していきます。
   ハッシュ機能を無効にすることで、プログラム実行が行われる際に、シェルは必ず <envar>PATH</envar> を探しにいきます。
-  つまり <filename class="directory">$LFS/tools</filename> ディレクトリ以下に新たに構築したツール類は必ず実行されるようになるわけです。
-  そのツールの古いバージョンがどこか別のディレクトリにあったとしても、その場所を覚えていて実行されるということがなくなります。
+  つまり <filename class="directory">$LFS/tools/bin</filename> ディレクトリ以下に新たに構築したツール類は必ず実行されるようになるわけです。
+  そのツールの古いバージョンがホストディストリビューションのディレクトリ、<filename
+  class='directory'>/usr/bin</filename> または <filename
+  class='directory'>/bin</filename> にあったとしても、その場所を覚えていて実行されるということがなくなります。
   </para>
 @z
 

@@ -268,12 +268,12 @@
 @z
 
 @x
-    <para>Fix the generated Makefile to skip an unneeded sanity check
+    <para>Fix the Makefile to skip an unneeded sanity check
     that fails in the LFS partial environment:
     </para>
 @y
     <para>
-    Makefile に生成された不要な健全性チェックを無効にします。
+    Makefile を修正して、不要な健全性チェックを無効にします。
     これは、この段階での LFS 環境では失敗するためです。
     </para>
 @z

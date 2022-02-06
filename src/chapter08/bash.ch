@@ -103,17 +103,6 @@
 @z
 
 @x
-      <para>The parameters used make the <command>bash</command>
-      process an interactive login shell and continues to disable hashing so
-      that new programs are found as they become available.</para>
-@y
-      <para>
-      ここで指定しているパラメーターは対話形式のログインシェルとして、またハッシュ機能を無効にして <command>bash</command> プロセスを起動します。
-      これにより新たに構築するプログラム類は構築後すぐに利用できることになります。
-      </para>
-@z
-
-@x
     <title>Contents of Bash</title>
 @y
     <title>&ContentsOf1;Bash&ContentsOf2;</title>

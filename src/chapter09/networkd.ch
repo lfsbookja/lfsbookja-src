@@ -270,10 +270,17 @@
 @x
       <para>When using <command>systemd-resolved</command> for DNS
       configuration, it creates the file
-      <filename>/run/systemd/resolve/resolv.conf</filename>.</para>
+      <filename>/run/systemd/resolve/stub-resolv.conf</filename>.
+      And, if <filename>/etc/resolv.conf</filename> does not exist, it
+      will be created by <command>systemd-resolved</command> as a symlink to
+      <filename>/run/systemd/resolve/stub-resolv.conf</filename>. So it's
+      unnecessary to create a <filename>/etc/resolv.conf</filename>
+      manually.</para>
 @y
       <para>
       DNS 設定に <command>systemd-resolved</command> を用いると <filename>/run/systemd/resolve/resolv.conf</filename> ファイルが生成されます。
+      また <filename>/etc/resolv.conf</filename> が存在していない場合は、<command>systemd-resolved</command> が <filename>/run/systemd/resolve/stub-resolv.conf</filename> へのシンボリックリンクとして生成します。
+      その場合は <filename>/etc/resolv.conf</filename> を手動で生成する必要はありません。
       </para>
 @z
 
@@ -450,16 +457,6 @@
      </para>
 @z
 
-%@x
-%     <para>If using DHCP, DHCPv6, IPv6 Autoconfiguration, or if a network card
-%     is not going to be configured, create the <filename>/etc/hosts</filename>
-%     file by running the following command:</para>
-%@y
-%     <para>
-%     DHCP、DHCPv6 IPv6 Autoconfiguration を利用する場合あるいはネットワークカードを設定しない場合は、以下のコマンドにより <filename>/etc/hosts</filename> を生成します。
-%     </para>
-%@z
-
 @x
      <para>The <replaceable>&lt;192.168.0.2&gt;</replaceable>,
      <replaceable>&lt;FQDN&gt;</replaceable>, and
@@ -467,7 +464,7 @@
      changed for specific uses or requirements (if assigned an IP address by a
      network/system administrator and the machine will be connected to an
      existing network). The optional alias name(s) can be omitted, and the
-     <replaceable>&lt;192.168.0.2</replaceable> line can be omitted if you
+     <replaceable>&lt;192.168.0.2&gt;</replaceable> line can be omitted if you
      are using a connection configured with DHCP or IPv6 Autoconfiguration.</para>
 @y
      <para>
@@ -476,7 +473,7 @@
      <replaceable>&lt;HOSTNAME&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
      (ネットワーク管理者から IP アドレスを指定されている場合や、既存のネットワーク環境に接続する場合など。). 
      エイリアスの記述は省略しても構いません。
-     また <replaceable>&lt;192.168.0.2</replaceable> の行も、DHCP や IPv6 による自動設定による接続を行う場合には省略可能です。
+     また <replaceable>&lt;192.168.0.2&gt;</replaceable> の行も、DHCP や IPv6 による自動設定による接続を行う場合には省略可能です。
      </para>
 @z
 
