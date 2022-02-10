@@ -44,6 +44,41 @@
 @z
 
 @x
+      <para>2022-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bc-5.2.2. Fixes
+          <ulink url="&lfs-ticket-root;5004">#5004</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.16.8. Fixes
+          <ulink url="&lfs-ticket-root;5005">#5005</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to binutils-2.38. Requires
+           adding zlib to Chapter 6. Fixes
+          <ulink url="&lfs-ticket-root;5007">#5007</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bc-5.2.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5004">#5004</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.16.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;5005">#5005</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - binutils-2.38 へのアップデート。6 章への zlib 追加要。
+          <ulink url="&lfs-ticket-root;5007">#5007</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-02-04</para>
       <itemizedlist>
         <listitem>

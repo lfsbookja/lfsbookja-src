@@ -155,6 +155,11 @@
 @z
 
 @x
+<!ENTITY zlib-tmp-sbu "less than 0.1 SBU">
+@y
+<!ENTITY zlib-tmp-sbu "0.1 SBU 以下">
+@z
+@x
 <!ENTITY zlib-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY zlib-fin-sbu "0.1 SBU 以下">
