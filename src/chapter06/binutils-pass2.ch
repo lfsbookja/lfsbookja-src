@@ -34,6 +34,18 @@
 @z
 
 @x
+    <para>Binutils ships an outdated libtool copy in the tarball.  It lacks
+    sysroot support so the produced binaries will be mistakenly linked to
+    libraries from the host distro.  Workaround this issue:</para>
+@y
+    <para>
+    Binutils の tarball では、古い libtool のコピーが提供されています。
+    これは sysroot サポートが行われていないので、ビルドされるバイナリが誤ってホストディストロのライブラリにリンクされてしまいます。
+    この問題を以下により回避します。
+    </para>
+@z
+
+@x
     <para>Create a separate build directory again:</para>
 @y
     <para>
@@ -127,15 +139,10 @@
 @z
 
 @x
-    <para>Install the package, and
-    workaround an issue causing
-    <filename class="libraryfile">libctf.so</filename>
-    to link against zlib from the host distribution:</para>
+    <para>Install the package:</para>
 @y
     <para>
     &InstallThePackage;
-    またホストディストリビューションの zlib に対して <filename
-    class="libraryfile">libctf.so</filename> がリンクしてしまう問題を回避します。
     </para>
 @z
 

@@ -44,6 +44,25 @@
 @z
 
 @x
+      <para>2022-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Workaround the issue causing binaries link to
+          libraries from the host distro for pass 2 binutils.  It's now
+          unnecessary to build zlib in chapter 6.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - 2 回めの binutils において、ホストのライブラリにバイナリがリンクされてしまう問題を回避。
+          第 6 章において zlib をビルドする必要がなくなる。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-02-09</para>
       <itemizedlist>
         <listitem>

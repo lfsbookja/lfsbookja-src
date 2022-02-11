@@ -1936,9 +1936,9 @@
           <seg>Kmod</seg>
 @z
 @x
-          <seg>None</seg>
+            <ulink url="&blfs-book;general/glib2.html">Glib2</ulink>
 @y
-          <seg>なし</seg>
+            <ulink url="&blfs-book;general/glib2.html">Glib2</ulink>
 @z
 
 %----------------------------------------------------------------------
