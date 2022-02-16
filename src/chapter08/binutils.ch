@@ -53,11 +53,11 @@
 @z
 
 @x
-    <para>Upstream has made a patch to fix a problem building some
-    packages.  Apply that now:</para>
+    <para>Upstream has made a patch to fix a problem when building with
+    Link Time Optimization (LTO).  Apply that now:</para>
 @y
     <para>
-    他パッケージのビルド時に問題が発生するため、アップストリームではその修正パッチを生成しています。
+    アップストリームでは、 リンク時の最適化（Link Time Optimization; LTO）を使ったビルド時の問題を回避するパッチを提供しています。
     ここでこれを適用します。
     </para>
 @z

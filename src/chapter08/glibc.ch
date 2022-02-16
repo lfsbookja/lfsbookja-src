@@ -610,12 +610,14 @@
 @z
 
 @x
-        <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
-        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd,
+        <seg>gencat, getconf, getent, iconv, iconvconfig, ldconfig,
+        ldd, lddlibc4,
+        ld.so (symlink to ld-linux-x86-64.so.2 or ld-linux.so.2),
+        locale, localedef, makedb, mtrace, nscd,
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
-        libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
+        libBrokenLocale.{a,so}, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a,
         libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
@@ -633,12 +635,14 @@
         /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
         /var/cache/nscd, and /var/lib/nss_db</seg>
 @y
-        <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
-        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, 
+        <seg>gencat, getconf, getent, iconv, iconvconfig, ldconfig,
+        ldd, lddlibc4,
+        ld.so (ld-linux-x86-64.so.2 または ld-linux.so.2 へのリンク),
+        locale, localedef, makedb, mtrace, nscd,
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
-        libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
+        libBrokenLocale.{a,so}, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a,
         libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
@@ -661,15 +665,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x catchsegv
-          <para>Can be used to create a stack trace when a program
-          terminates with a segmentation fault</para>
-@y
-          <para>
-          プログラムがセグメンテーションフォールトにより停止した時に、スタックトレースを生成するために利用します。
-          </para>
 @z
 
 @x gencat
@@ -732,10 +727,12 @@
 @z
 
 @x lddlibc4
-          <para>Assists <command>ldd</command> with object files</para>
+          <para>Assists <command>ldd</command> with object files.
+          It does not exist on newer architectures like x86_64</para>
 @y
           <para>
-          オブジェクトファイルを使って <command>ldd</command> コマンドを補助します。[訳註：意味不明]
+          オブジェクトファイルを使って <command>ldd</command> コマンドを補助します。
+          これは x86_64 のような最新アーキテクチャーには存在しません。
           </para>
 @z
 
@@ -876,16 +873,6 @@
           -->
           <para>
           Glibc が内部で利用するもので、異常が発生しているプログラムを見つけ出します。(例えば Motif アプリケーションなど) 詳しくは <filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename> に書かれたコメントを参照してください。
-          </para>
-@z
-
-@x libSegFault
-          <para>The segmentation fault signal handler, used by
-          <command>catchsegv</command></para>
-@y
-          <para>
-          セグメンテーションフォールトのシグナルハンドラー。
-          <command>catchsegv</command> が利用します。
           </para>
 @z
 

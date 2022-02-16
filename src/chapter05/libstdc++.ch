@@ -88,16 +88,6 @@
           </para>
 @z
 
-%@x --disable-libstdcxx-threads
-%          <para>Since gcc-pass1 is built without thread support, the C++
-%          thread library cannot be built either.</para>
-%@y
-%          <para>
-%          gcc 1 回めはスレッドサポートなしにビルドされます。
-%          したがって C++ スレッドライブラリも生成できません。
-%          </para>
-%@z
-
 @x --disable-libstdcxx-pch
           <para>This switch prevents the installation of precompiled
           include files, which are not needed at this stage.</para>
@@ -109,16 +99,33 @@
 @z
 
 @x --with-gxx-include-dir=/tools/include/c++/&gcc-version;
-          <para>This is the location where the C++ compiler should search for the
-          standard include files. In a normal build, this information
+          <para>This specifies the installation directory for include files.
+          Because libstdc++ is the standard C++ library for LFS, this
+          directory should match the location where the C++ compiler
+          (<command>$LFS_TGT-g++</command>) would search for the
+          standard C++ include files. In a normal build, this information
           is automatically passed to the libstdc++ <command>configure</command>
           options from the top level directory. In our case, this information
-          must be explicitly given.</para>
+          must be explicitly given.
+          The C++ compiler will prepend the sysroot path
+          <filename class="directory">$LFS</filename> (specified building
+          GCC pass 1) to the include file search path, so it will actually
+          search in
+          <filename class="directory">$LFS/tools/$LFS_TGT/include/c++/&gcc-version;</filename>.
+          The combination of the <parameter>DESTDIR</parameter>
+          variable (in the <command>make install</command> command below)
+          and this switch ensures to install the headers there.</para>
 @y
           <para>
-          C++ コンパイラーが標準インクルードファイルを探すディレクトリを指定します。
+          インクルードファイルをインストールするディレクトリを指定します。
+          libstdc++ は LFS における標準 C++ ライブラリであるため、そのディレクトリは C++ コンパイラー (<command>$LFS_TGT-g++</command>) が標準 C++ インクルードファイルを探し出すディレクトリでなければなりません。
           通常のビルドにおいてそのディレクトリ情報は、最上位ディレクトリの <command>configure</command> のオプションにて指定します。
           ここでの作業では、上のようにして明示的に指定します。
+          C++ コンパイラーは sysroot パスに <filename
+          class="directory">$LFS</filename>（GCC 1 回めのビルド時に指定）をインクルードファイルの検索パスに加えます。
+          したがって実際には <filename
+          class="directory">$LFS/tools/$LFS_TGT/include/c++/&gcc-version;</filename> となります。
+          <parameter>DESTDIR</parameter> 変数（以下の <command>make install</command> にて指定）とこのスイッチを組み合わせることで、ヘッダーファイルをそのディレクトリにインストールするようにします。
           </para>
 @z
 

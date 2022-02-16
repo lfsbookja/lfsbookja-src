@@ -49,10 +49,10 @@
         <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
 @z
 
-@x Binutils Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
+@x Binutils LTO Fix Patch
+        <para>Download: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
 @z
 
 @x Bzip2 Documentation Patch

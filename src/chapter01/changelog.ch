@@ -44,6 +44,64 @@
 @z
 
 @x
+      <para>2022-02-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add binutils-2.38 LTO patch. Fixes
+          <ulink url="&lfs-ticket-root;5011">#5011</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.37.4. Fixes
+          <ulink url="&lfs-ticket-root;5010">#5010</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.10.1. Fixes
+          <ulink url="&lfs-ticket-root;5009">#5009</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.16.9. Fixes
+          <ulink url="&lfs-ticket-root;5008">#5008</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-8.2.4383. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20220207. Addresses
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-02-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.38 LTO パッチを追加。
+          <ulink url="&lfs-ticket-root;5011">#5011</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.37.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;5010">#5010</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.10.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5009">#5009</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.16.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;5008">#5008</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-8.2.4383 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20220207 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> において言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-02-10</para>
       <itemizedlist>
         <listitem>
