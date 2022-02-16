@@ -103,7 +103,7 @@
 @z
 
 @x
-  <para>There are several ways to optain all the necessary packages and patches
+  <para>There are several ways to obtain all the necessary packages and patches
   to build LFS:</para>
 @y
   <para>
