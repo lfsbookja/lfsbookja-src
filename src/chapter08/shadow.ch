@@ -337,8 +337,10 @@
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directory</segtitle>
+      <segtitle>Installed libraries</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
@@ -350,6 +352,9 @@
         sg (link to newgrp), su, useradd, userdel, usermod,
         vigr (link to vipw), and vipw</seg>
         <seg>/etc/default</seg>
+        <!-- TODO: the static lib should be disabled by - -disable-static.
+             Keep it for now because of the rc freeze.  -->
+        <seg>libsubid.{a,so}</seg>
 @y
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
         getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
@@ -358,6 +363,9 @@
         sg (newgrp へのリンク), su, useradd, userdel, usermod,
         vigr (vipw へのリンク), vipw</seg>
         <seg>/etc/default</seg>
+        <!-- TODO: the static lib should be disabled by - -disable-static.
+             Keep it for now because of the rc freeze.  -->
+        <seg>libsubid.{a,so}</seg>
 @z
 
 @x
@@ -674,5 +682,13 @@
 @y
           <para>
           <filename>/etc/passwd</filename> ファイルあるいは <filename>/etc/shadow</filename> ファイルを編集します。
+          </para>
+@z
+
+@x libsubid
+          <para>library for process subordinate id ranges for users</para>
+@y
+          <para>
+          ユーザーに対するサブ ID 範囲を処理するライブラリ。
           </para>
 @z

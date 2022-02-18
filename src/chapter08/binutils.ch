@@ -75,13 +75,9 @@
 @z
 
 @x
-    <para>Now remove one test that prevents the tests from running
-    to completion:</para>
+      Now make a fix identified upstream that affects building some packages:
 @y
-    <para>
-    ここでテストを 1 つ削除します。
-    これによってテストを完成させます。
-    </para>
+      いくつかのパッケージビルドに影響を及ぼす問題への対処として、アップストリームが認識する修正を行います。
 @z
 
 @x

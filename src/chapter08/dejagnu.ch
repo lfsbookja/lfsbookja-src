@@ -66,12 +66,26 @@
 @z
 
 @x
+        <seg>dejagnu and runtest</seg>
+@y
+        <seg>dejagnu, runtest</seg>
+@z
+
+@x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x
+@x dejagnu
+          <para>DejaGNU auxiliary command launcher</para>
+@y
+          <para>
+          DejaGNU の補助コマンドローンチャー。
+          </para>
+@z
+
+@x runtest
           <para>A wrapper script that locates the proper
           <command>expect</command> shell and then runs DejaGNU</para>
 @y

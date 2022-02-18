@@ -618,7 +618,7 @@
         zdump, and zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
         libBrokenLocale.{a,so}, libanl.{a,so},
-        libc.{a,so}, libc_nonshared.a,
+        libc.{a,so}, libc_nonshared.a, libc_malloc_debug.so,
         libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
         libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
@@ -643,7 +643,7 @@
         zdump, zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
         libBrokenLocale.{a,so}, libanl.{a,so},
-        libc.{a,so}, libc_nonshared.a,
+        libc.{a,so}, libc_nonshared.a, libc_malloc_debug.so,
         libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
         libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
@@ -892,14 +892,13 @@
           </para>
 @z
 
-%@x libcidn
-%          <para>Used internally by Glibc for handling internationalized domain
-%          names in the <function>getaddrinfo()</function> function</para>
-%@y
-%          <para>
-%          Glibc が内部的に利用するもので <function>getaddrinfo()</function> 関数によって国際化ドメイン名 (internationalized domain names) を取り扱います。
-%          </para>
-%@z
+@x libc_malloc_debug
+          <para>Turns on memory allocation checking when preloaded</para>
+@y
+          <para>
+          プリロード時のメモリ割り当てチェックをオンにします。
+          </para>
+@z
 
 @x libcrypt
           <para>The cryptography library</para>
@@ -939,6 +938,16 @@
           </para>
 @z
 
+@x libmvec
+          <para>The vector math library, linked in as needed
+          when <filename class='libraryfile'>libm</filename> is used</para>
+@y
+          <para>
+          ベクトル数学ライブラリ。
+          <filename class='libraryfile'>libm</filename> が用いられる際に必要となるためリンクされます。
+          </para>
+@z
+
 @x libmcheck
           <para>Turns on memory allocation checking when linked to</para>
 @y
@@ -965,14 +974,18 @@
           </para>
 @z
 
-@x libnss
-          <para>The Name Service Switch libraries, containing functions for
+@x libnss_*
+          <para>The Name Service Switch modules, containing functions for
           resolving host names, user names, group names, aliases, services,
-          protocols, etc.</para>
+          protocols, etc.  Loaded by
+          <filename class='libraryfile'>libc</filename> according to the
+          configuration in <filename>/etc/nsswitch.conf</filename></para>
 @y
           <para>
-          NSS (Name Service Switch) ライブラリ。
+          NSS (Name Service Switch) モジュール。
           ホスト、ユーザー名、エイリアス、サービス、プロトコルなどの名前解決を行う関数を提供します。
+          <filename>/etc/nsswitch.conf</filename> での設定に従って <filename
+          class='libraryfile'>libc</filename> によりロードされます。
           </para>
 @z
 

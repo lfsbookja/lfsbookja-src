@@ -245,14 +245,14 @@
 @z
 
 @x
-        <seg>bootctl, busctl, coredumpctl, halt (symlink to systemctl),
+        <seg>busctl, coredumpctl, halt (symlink to systemctl),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
         machinectl, networkctl, oomctl, portablectl, poweroff (symlink to
         systemctl), reboot (symlink to systemctl), resolvconf (symlink to
         resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
         (symlink to systemctl), systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-cryptenroll, systemd-delta, systemd-detect-virt,
+        systemd-creds, systemd-delta, systemd-detect-virt,
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
         systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
@@ -274,14 +274,14 @@
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, and /var/log/journal</seg>
 @y
-        <seg>bootctl, busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
+        <seg>busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
         machinectl, networkctl, oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
         reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
         resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
         (systemctl へのシンボリックリンク), systemctl, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-cryptenroll, systemd-delta, systemd-detect-virt,
+        systemd-creds, systemd-delta, systemd-detect-virt,
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
         systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
@@ -308,14 +308,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x bootctl
-          <para>Is used to query the firmware and boot manager settings</para>
-@y
-          <para>
-          ファームウェアやブートマネージャーの設定内容を確認します。
-          </para>
 @z
 
 @x busctl
@@ -552,13 +544,11 @@
           </para>
 @z
 
-@x systemd-cryptenroll
-          <para>Is used to enroll or remove a system from full disk encryption,
-          as well as set and query private keys and recovery keys</para>
+@x systemd-creds
+          <para>Displays and processes credentials.</para>
 @y
           <para>
-          全ディスク暗号化に対してシステムの登録削除を行います。
-          またプライベート鍵やリカバリー鍵の設定や検索を行います。
+          資格情報を表示し処理します。
           </para>
 @z
 

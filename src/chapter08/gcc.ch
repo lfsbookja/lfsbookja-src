@@ -372,7 +372,8 @@
 
 @x
         <seg>c++, cc (link to gcc), cpp, g++, gcc,
-        gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump, and gcov-tool</seg>
+        gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump, gcov-tool,
+        and lto-dump</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a,
         libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
@@ -385,7 +386,8 @@
         /usr/share/gcc-&gcc-version;</seg>
 @y
         <seg>c++, cc (gcc へのリンク), cpp, g++, gcc,
-        gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump, gcov-tool</seg>
+        gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump, gcov-tool,
+        lto-dump</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a,
         libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
@@ -503,6 +505,15 @@
           </para>
 @z
 
+@x lto-dump
+          <para>Tool for dumping object files produced by GCC with LTO
+          enabled</para>
+@y
+          <para>
+          LTO が有効にした GCC によって生成されるオブジェクトファイルをダンプするためのツール。
+          </para>
+@z
+
 @x libasan
           <para>The Address Sanitizer runtime library</para>
 @y
@@ -555,6 +566,14 @@
           </para>
 @z
 
+@x libitm
+          <para>The GNU transactional memory library</para>
+@y
+          <para>
+          GNU のトランザクショナル（transactional）メモリーライブラリ。
+          </para>
+@z
+
 @x liblsan
           <para>The Leak Sanitizer runtime library</para>
 @y
@@ -564,12 +583,11 @@
 @z
 
 @x liblto_plugin
-          <para>GCC's Link Time Optimization (LTO) plugin allows GCC to perform
-          optimizations across compilation units</para>
+          <para>GCC's LTO plugin allows binutils to process object files
+          produced by GCC with LTO enabled</para>
 @y
           <para>
-          GCC のリンク時における最適化 (Link Time Optimization; LTO) プラグイン。
-          コンパイルユニット間での最適化を実現します。
+          GCC の LTO プラグインは、LTO を有効にした GCC から生成されたオブジェクトファイルを binnutils が処理できるようにします。
           </para>
 @z
 
