@@ -545,7 +545,7 @@
 @z
 
 @x systemd-creds
-          <para>Displays and processes credentials.</para>
+          <para>Displays and processes credentials</para>
 @y
           <para>
           資格情報を表示し処理します。

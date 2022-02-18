@@ -352,9 +352,7 @@
         sg (link to newgrp), su, useradd, userdel, usermod,
         vigr (link to vipw), and vipw</seg>
         <seg>/etc/default</seg>
-        <!-- TODO: the static lib should be disabled by - -disable-static.
-             Keep it for now because of the rc freeze.  -->
-        <seg>libsubid.{a,so}</seg>
+        <seg>libsubid.so</seg>
 @y
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
         getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
@@ -363,9 +361,7 @@
         sg (newgrp へのリンク), su, useradd, userdel, usermod,
         vigr (vipw へのリンク), vipw</seg>
         <seg>/etc/default</seg>
-        <!-- TODO: the static lib should be disabled by - -disable-static.
-             Keep it for now because of the rc freeze.  -->
-        <seg>libsubid.{a,so}</seg>
+        <seg>libsubid.so</seg>
 @z
 
 @x
