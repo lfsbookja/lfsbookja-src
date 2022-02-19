@@ -223,7 +223,7 @@
 @z
 
 @x
-    <warning><para>The following commands are extremly dangerous.  If
+    <warning><para>The following commands are extremely dangerous.  If
     you run <command>rm -rf ./*</command> as the root user and you
     do not change to the $LFS directory or the <envar>LFS</envar>
     environment variable is not set for the root user, it will destroy

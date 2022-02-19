@@ -167,7 +167,7 @@
 
 @x --with-glibc-version=&glibc-version;
           <para>This option specifies the version of glibc which will be
-          used on the target. It is not relevent to the minimum glibc
+          used on the target. It is not relevant to the minimum glibc
           requirement specified in the
           <xref linkend="ch-partitioning-hostreqs"/> because everything
           compiled by pass1 gcc will run in the chroot environment,

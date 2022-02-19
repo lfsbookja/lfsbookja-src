@@ -555,7 +555,7 @@
 
 @x MarkupSafe
         <para>This package is a Python module for processing strings in
-        HTML/XHTML/XML safely.  Jinja2 requires this pacakge.</para>
+        HTML/XHTML/XML safely.  Jinja2 requires this package.</para>
 @y
         <para>
         このパッケージは、HTML/XHTML/XML 内の文字列を安全に処理するための Python モジュールです。

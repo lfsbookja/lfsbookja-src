@@ -568,7 +568,7 @@
 @z
 
 @x
-    <note><para>The CLOCKPARAMS and UTC paramaters may also be set
+    <note><para>The CLOCKPARAMS and UTC parameters may also be set
     in the <filename>/etc/sysconfig/rc.site</filename> file.</para></note>
 @y
     <note><para>

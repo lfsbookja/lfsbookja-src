@@ -192,7 +192,7 @@
 @z
 
 @x
-    <para>The parameters of a unit can be overriden by creating a directory
+    <para>The parameters of a unit can be overridden by creating a directory
     and a configuration file in <filename
     class="directory">/etc/systemd/system</filename>. For example:</para>
 @y
