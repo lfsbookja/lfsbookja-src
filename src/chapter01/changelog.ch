@@ -63,7 +63,7 @@
           <ulink url="&lfs-ticket-root;5008">#5008</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to vim-8.2.4383. Addresses
+          <para>[bdubbs] - Update to vim-8.2.4383 (Security Update). Addresses
           <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
         </listitem>
         <listitem>
@@ -91,7 +91,7 @@
           <ulink url="&lfs-ticket-root;5008">#5008</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - vim-8.2.4383 へのアップデート。
+          <para>[bdubbs] - vim-8.2.4383（セキュリティアップデート）へのアップデート。
           <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
         </listitem>
         <listitem>

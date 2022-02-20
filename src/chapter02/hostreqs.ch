@@ -58,12 +58,12 @@
 @z
 
 @x
-      <para><emphasis role="strong">Binutils-2.25</emphasis> (Versions
+      <para><emphasis role="strong">Binutils-2.13.1</emphasis> (Versions
       greater than &binutils-version; are not recommended as they have
       not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">Binutils-2.25</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">Binutils-2.13.1</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
 @z
 
@@ -86,22 +86,16 @@
 @z
 
 @x
-      <para><emphasis role="strong">GCC-6.2</emphasis> including the C++
+      <para><emphasis role="strong">GCC-4.8</emphasis> including the C++
       compiler, <command>g++</command> (Versions greater than &gcc-version; are
-      not recommended as they have not been tested)</para>
+      not recommended as they have not been tested). C and C++ standard
+      libraries (with headers) must also be present so the C++ compiler can
+      build hosted programs</para>
 @y
       <para>
-      <emphasis role="strong">GCC-5.2</emphasis> と C++ コンパイラである <command>g++</command> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
-      </para>
-@z
-
-@x
-      <para><emphasis role="strong">Glibc-2.11</emphasis> (Versions
-      greater than &glibc-version; are not recommended as they have
-      not been tested)</para>
-@y
-      <para>
-      <emphasis role="strong">Glibc-2.11</emphasis> (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">GCC-4.8</emphasis> と C++ コンパイラーである <command>g++</command>
+      (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      ホストされたプログラムを C++ コンパイラーがビルドできるように、C および C++ の標準ライブラリ（ヘッダーを含む）が存在しなければなりません。
       </para>
 @z
 

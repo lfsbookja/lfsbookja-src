@@ -167,16 +167,15 @@
 
 @x --with-glibc-version=&glibc-version;
           <para>This option specifies the version of glibc which will be
-          used on the target. It is not relevant to the minimum glibc
-          requirement specified in the
-          <xref linkend="ch-partitioning-hostreqs"/> because everything
-          compiled by pass1 gcc will run in the chroot environment,
-          which is isolated from glibc of the host distro.</para>
+          used on the target. It is not relevant to the libc of the host
+          distro because everything compiled by pass1 gcc will run in the
+          chroot environment, which is isolated from libc of the host
+          distro.</para>
 @y
           <para>
           このオプションは、ターゲットにおいて用いられることになる glibc のバージョンを指定します。
-          これは <xref linkend="ch-partitioning-hostreqs"/> に示している glibc の最低バージョンとは関係がありません。
-          1 回めの gcc によってコンパイルされるものは、すべて chroot 環境内で実行されるものであって、ホストにある glibc とは切り離されているためです。
+          これはホストディストリビューションにある libc のバージョンとは関係がありません。
+          1 回めの gcc によってコンパイルされるものは、すべて chroot 環境内で実行されるものであって、ホストにある libc とは切り離されているためです。
           </para>
 @z
 
