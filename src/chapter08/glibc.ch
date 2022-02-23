@@ -226,10 +226,12 @@
 
 @x
         <para>The <emphasis>nss/tst-nss-files-hosts-multi</emphasis>
-        test may fail for reasons that have not been determined.</para>
+        test is known to fail if the system has no non-loopback IP
+        addresses.</para>
 @y
         <para>
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> は失敗することがありますが、理由は不明です。
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> は失敗することがあります。
+        これはシステム内にループバック以外の IP アドレスがない場合です。
         </para>
 @z
 

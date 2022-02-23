@@ -190,6 +190,21 @@
 @z
 
 @x
+              <para>All methods to get the source code tree being built
+              in-position, except extracting the package tarball, are not
+              supported. Notably, using <command>cp -R</command> to copy the
+              source code tree somewhere else can destroy links and
+              timestamps in the sources tree and cause building
+              failure.</para>
+@y
+              <para>
+              パッケージ tarball はどこか別ディレクトリにあってもかまいませんが、ソースツリーをどこか別の場所でビルドする方法についてはサポートしていません。
+              特にどこか別に配置しているソースコードを <command>cp -R</command> を使ってコピーすると、ソースツリー内のリンクやタイムスタンプを壊しかねません。
+              そうなるとビルドの失敗に通じることになります。
+              </para>
+@z
+
+@x
               <para>Change to the directory created when the package was
               extracted.</para>
 @y
