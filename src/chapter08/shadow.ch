@@ -245,7 +245,7 @@
 
 @x
     <para>Second, to change the default parameters, the file
-    <filename>/etc/default/useradd</filename> needs to be created and taylored
+    <filename>/etc/default/useradd</filename> needs to be created and tailored
     to suit your particular needs. Create it with:</para>
 @y
     <para>

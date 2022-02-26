@@ -47,6 +47,27 @@
       <para>2022-02-15</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to expat-2.4.6 (security fix). Fixes
+          <ulink url="&lfs-ticket-root;5011">#5011</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-02-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - expat-2.4.6 (セキュリティフィックス) へのアップデート。
+          <ulink url="&lfs-ticket-root;5011">#5011</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-02-15</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - LFS-11.1-rc1 released.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - Add binutils-2.38 LTO patch. Fixes
           <ulink url="&lfs-ticket-root;5011">#5011</ulink>.</para>
         </listitem>
@@ -74,6 +95,9 @@
 @y
       <para>2022-02-15</para>
       <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - LFS-11.1-rc1 リリース。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - binutils-2.38 LTO パッチを追加。
           <ulink url="&lfs-ticket-root;5011">#5011</ulink> を Fix に。</para>

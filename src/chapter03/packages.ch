@@ -164,6 +164,21 @@
         <para>&Homepage;: <ulink url="&expat-home;"/></para>
         <para>&Download;: <ulink url="&expat-url;"/></para>
 @z
+@x
+          <para>The upstream may remove tarballs of the specific releases of
+          <application>Expat</application> when these releases contain a
+          security vulnerability.  You should refer to
+          <ulink url='&lfs-root;lfs/advisories/'>LFS security advisories</ulink>
+          to figure out which version (with the vulnerability fixed) should
+          be used.  You may download the vulnerable version from a mirror,
+          but it's not recommended.</para>
+@y
+          <para>
+          <application>Expat</application> のアップストリームでは、リリースにあたってセキュリティぜい弱性が含まれていた場合には、そのリリース tarball を削除することがあります。
+          したがって <ulink url='&lfs-root;lfs/advisories/'>LFS セキュリティアドバイザリー</ulink> を参照して、どのバージョンが（ぜい弱性を修正して）利用できるかを確認してください。
+          ぜい弱性を含むものであってもミラーサイトから入手できるかもしれませんが、これはあまりお勧めしません。
+          </para>
+@z
 
 @x expect
         <para>Home page: <ulink url="&expect-home;"/></para>

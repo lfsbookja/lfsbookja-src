@@ -209,16 +209,6 @@
 @z
 
 @x
-    <para>Disable a service that is known to cause problems with systems that
-    use a network configuration other than what is provided by
-    systemd-networkd:</para>
-@y
-    <para>
-    systemd-networkd が提供する設定とは異なるネットワーク設定を行っているシステムにおいて、問題が発生することがわかっているサービスを無効にします。
-    </para>
-@z
-
-@x
     <para>Prevent systemd from resetting the maximum PID value which causes
     some problems with packages and units in BLFS:</para>
 @y

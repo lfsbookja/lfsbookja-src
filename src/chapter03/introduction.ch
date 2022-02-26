@@ -26,15 +26,16 @@
   order to build a basic Linux system. The listed version numbers correspond to
   versions of the software that are known to work, and this book is based on
   their use. We highly recommend against using different versions because the build
-  commands for one version may not work with a different version. The newest package
-  versions may also have problems that require work-arounds. These work-arounds
-  will be developed and stabilized in the development version of the
-  book.</para>
+  commands for one version may not work with a different version, unless the
+  different version is specified by a LFS errata or security advisory.
+  The newest package versions may also have problems that require
+  work-arounds. These work-arounds will be developed and stabilized in the
+  development version of the book.</para>
 @y
   <para>
   この章では基本的な Linux システム構築のためにダウンロードするべきパッケージの一覧を示します。
   各パッケージのバージョンは動作が確認されているものを示しており、本書ではこれに基づいて説明します。
-  ここに示すバージョンと違うものは使わないようお勧めします。
+  LFS errata やセキュリティアドバイザリーに示されていれば別ですが、ここに示すバージョンとは異なるものは使わないようお勧めします。
   あるバージョンでビルドしたコマンドが、違うバージョンで動作する保証はないからです。
   最新のパッケージの場合、何かの対処を要するかもしれません。
   そのような対処方法は本書の開発版において開発され安定化が図られるかもしれません。
