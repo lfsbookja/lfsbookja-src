@@ -116,7 +116,7 @@
         system is booted.  So it's unreliable to determine the interface
         names being used in LFS system by running those commands on the host
         distro,
-        <emphasis>even though in the chroot environment</emphasis>.</para>
+        <emphasis>even though you are in the chroot environment</emphasis>.</para>
 @y
         <para>
         インターフェース名は、システム上で起動している udev デーモンの実装や設定に依存します。

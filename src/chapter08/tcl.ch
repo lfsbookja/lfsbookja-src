@@ -101,24 +101,6 @@
 @z
 
 @x
-         In the test results there are several places associated with clock.test
-         that indicate a failure, but the summary at the end indicates no
-         failures. clock.test passes on a complete LFS system.
-@y
-         テストスイートにおいては clock.test に関連する箇所がいくつかあって、これは失敗します。
-         ただしテスト結果のまとめにおいては、失敗は 1 つもないものとして示されます。
-         clock.test は LFS システムが完成すれば成功します。
-@z
-
-@x
-    <para>One test, unixInit-1.2, is known to fail.</para>
-@y
-    <para>
-    unixInit-1.2 というテストが 1 つ失敗します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
