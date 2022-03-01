@@ -54,6 +54,18 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          LFS 11.1 リリース対応。
+          r11.0-204 (<ulink url="&lfs-changeset;e0a5f2a62">e0a5f2a62</ulink>) まで。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2022-02-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
           r11.0-201 (<ulink url="&lfs-changeset;68550bbde">68550bbde</ulink>) までの対応。
           </para>
         </listitem>

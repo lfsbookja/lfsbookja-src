@@ -44,7 +44,23 @@
 @z
 
 @x
-      <para>2022-02-15</para>
+      <para>2022-03-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-11.1 released.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-03-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-11.1 リリース。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-02-23</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to expat-2.4.6 (security fix). Fixes
@@ -52,7 +68,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>2022-02-15</para>
+      <para>2022-02-23</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - expat-2.4.6 (セキュリティフィックス) へのアップデート。
