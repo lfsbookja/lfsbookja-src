@@ -13,7 +13,6 @@ CHANGE_FILES = \
 	gettext.ch         \
 	introduction.ch    \
 	kernfs.ch          \
-	libstdc++-pass2.ch \
 	perl.ch            \
 	python.ch          \
 	texinfo.ch         \

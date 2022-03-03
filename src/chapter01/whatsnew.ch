@@ -16,17 +16,6 @@
 @z
 
 @x
-  <para>In this version of LFS, there has been a major reorganization
-  of the book using techniques that avoid changing the host system
-  and provides a more straight forward build process.</para>
-@y
-  <para>
-  LFS 本バージョンでは、おおがかりな構成変更を行っています。
-  本書内では、ホストシステムを変更せずに進めるテクニックを用いて、より適切にビルドする方法を提供しています。
-  </para>
-@z
-
-@x
   <para>Below is a list of package updates made since the previous
   release of the book.</para>
 @y

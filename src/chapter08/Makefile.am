@@ -5,7 +5,6 @@ BOOKdir = @abs_bookdir@/chapter08
 CHANGE_FILES = \
 	aboutdebug.ch     \
 	acl.ch            \
-	adjusting.ch      \
 	attr.ch           \
 	autoconf.ch       \
 	automake.ch       \

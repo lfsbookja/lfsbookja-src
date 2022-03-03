@@ -56,10 +56,10 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>The test suite requires some packages out of the scope of LFS.</para>
 @y
     <para>
-    &NotExistTestsuite;
+    このテストスイートには、LFS の範囲外としているパッケージがいくつか必要です。
     </para>
 @z
 

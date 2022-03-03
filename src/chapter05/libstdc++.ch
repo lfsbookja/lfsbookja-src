@@ -10,9 +10,9 @@
 @z
 
 @x
-  <title>Libstdc++ from GCC-&gcc-version;, Pass 1</title>
+  <title>Libstdc++ from GCC-&gcc-version;</title>
 @y
-  <title>GCC-&gcc-version; から取り出した libstdc++ 1 回め</title>
+  <title>GCC-&gcc-version; から取り出した libstdc++</title>
 @z
 
 @x

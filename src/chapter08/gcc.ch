@@ -299,6 +299,33 @@
 @z
 
 @x
+  <para>There should be no errors,
+  and the output of the last command will be (allowing for
+  platform-specific differences in the dynamic linker name):</para>
+@y
+  <para>
+  問題なく動作するはずで、最後のコマンドから出力される結果は以下のようになるはずです。
+  (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。)
+  </para>
+@z
+
+@x
+  <para>Now make sure that we're setup to use the correct start files:</para>
+@y
+  <para>
+  ここで起動ファイルが正しく用いられていることを確認します。
+  </para>
+@z
+
+@x
+  <para>The output of the last command should be:</para>
+@y
+  <para>
+  上のコマンドの出力は以下のようになるはずです。
+  </para>
+@z
+
+@x
   <para>Depending on your machine architecture, the above may differ slightly.
   The difference will be the name of the directory
   after <filename class="directory">/usr/lib/gcc</filename>. The important
@@ -315,12 +342,46 @@
 @z
 
 @x
+  <para>Verify that the compiler is searching for the correct header
+  files:</para>
+@y
+  <para>
+  コンパイラーが正しいヘッダーファイルを読み取っているかどうかを検査します。
+  </para>
+@z
+
+@x
+  <para>This command should return the following output:</para>
+@y
+  <para>
+  上のコマンドは以下の出力を返します。
+  </para>
+@z
+
+@x
    <para>Again, the directory named after your target triplet may be
    different than the above, depending on your system architecture.</para>
 @y
    <para>
    もう一度触れておきますが、プラットフォームの<quote>三つの組 (target triplet)</quote>の次にくるディレクトリ名は CPU アーキテクチャーにより異なる点に注意してください。
    </para>
+@z
+
+@x
+  <para>Next, verify that the new linker is being used with the correct search paths:</para>
+@y
+  <para>
+  次に、新たなリンカーが正しいパスを検索して用いられているかどうかを検査します。
+  </para>
+@z
+
+@x
+  <para>References to paths that have components with '-linux-gnu' should
+  be ignored, but otherwise the output of the last command should be:</para>
+@y
+  <para>
+  '-linux-gnu' を含んだパスは無視すれば、最後のコマンドの出力は以下となるはずです。
+  </para>
 @z
 
 %@x
@@ -344,6 +405,62 @@
    32ビットシステムではディレクトリが多少異なります。
    以下は i686 マシンでの出力例です。
    </para>
+@z
+
+@x
+  <para>Next make sure that we're using the correct libc:</para>
+@y
+  <para>
+  次に libc が正しく用いられていることを確認します。
+  </para>
+@z
+
+@x
+  <para>The output of the last command should be:</para>
+@y
+  <para>
+  最後のコマンドの出力は以下のようになるはずです。
+  </para>
+@z
+
+@x
+  <para>Make sure GCC is using the correct dynamic linker:</para>
+@y
+  <para>
+  GCC が正しくダイナミックリンカーを用いているかを確認します。
+  </para>
+@z
+
+@x
+  <para>The output of the last command should be (allowing for
+  platform-specific differences in dynamic linker name):</para>
+@y
+  <para>
+  上のコマンドの出力は以下のようになるはずです。
+  (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。)
+  </para>
+@z
+
+@x
+  <para>If the output does not appear as shown above or is not received
+  at all, then something is seriously wrong. Investigate and retrace the
+  steps to find out where the problem is and correct it. <!--The most likely
+  reason is that something went wrong with the specs file adjustment.--> Any
+  issues will need to be resolved before continuing with the process.</para>
+@y
+  <para>
+  出力結果が上と異なっていたり、出力が全く得られなかったりした場合は、何かが根本的に間違っているということです。
+  どこに問題があるのか調査、再試行を行って解消してください。
+  問題を残したままこの先には進まないでください。
+  </para>
+@z
+
+@x
+  <para>Once everything is working correctly, clean up the test files:</para>
+@y
+  <para>
+  すべてが正しく動作したら、テストに用いたファイルを削除します。
+  </para>
 @z
 
 @x

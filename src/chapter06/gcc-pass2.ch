@@ -94,12 +94,29 @@
 %    </para>
 %@z
 
+%@x
+%    <para>Fix an issue with GCC-10.1 when building with a cross
+%    compiler:</para>
+%@y
+%    <para>
+%    クロスコンパイラーを使ってビルドするにあたり、GCC-10.1 の問題を修正します。
+%    </para>
+%@z
+
 @x
-    <para>Fix an issue with GCC-10.1 when building with a cross
-    compiler:</para>
+    <para>Fix an issue causing failure cross-compiling libstdc++:</para>
 @y
     <para>
-    クロスコンパイラーを使ってビルドするにあたり、GCC-10.1 の問題を修正します。
+    libstdc++ のクロスコンパイルができなくなっている問題を修正します。
+    </para>
+@z
+
+@x
+    <para>Override the building rule of libgcc and libstdc++ headers, to
+    allow building these libraries with POSIX threads support:</para>
+@y
+    <para>
+    libgcc と libstdc++ のヘッダーのビルドルールを変更して、これらのライブラリに対して POSIX スレッドサポートを含めてビルドするようにします。
     </para>
 @z
 
@@ -108,15 +125,6 @@
 @y
     <para>
     専用のディレクトリを再度生成します。
-    </para>
-@z
-
-@x
-    <para>Create a symlink that allows libgcc to be built with posix threads
-    support:</para>
-@y
-    <para>
-    シンボリックリンクを生成し ligbcc が posix スレッドサポートとともにビルドされるようにします。
     </para>
 @z
 
@@ -196,6 +204,45 @@
           しかし今ビルドを行っているシステム上の GCC は別のツールを使っているので、上のような場所を認識できていません。
           本スイッチは、必要なファイルをホスト内からではなく、<filename
           class="directory">$LFS</filename> から探し出すようにします。
+          </para>
+@z
+
+@x --target=$LFS_TGT
+          <para>As we are cross-compiling GCC, it's impossible to build
+          target libraries (<filename class="libraryfile">libgcc</filename>
+          and <filename class="libraryfile">libstdc++</filename>) with the
+          compiled GCC binaries because these binaries won't run on the
+          host distro.  GCC building system will attempt to use the
+          C and C++ compilers on the host distro as a workaround by default.
+          It's not supported to build GCC target libraries with a different
+          version of GCC, so using host compilers may cause building
+          failure.  This parameter ensures to build the libraries with GCC
+          pass 1 and prevent the issue.</para>
+@y
+          <para>
+          これまでの GCC はクロスコンパイルによって作り出してきているので、コンパイル済み GCC 実行ファイルからターゲットライブラリ（<filename
+          class="libraryfile">libgcc</filename> と <filename
+          class="libraryfile">libstdc++</filename>) をビルドして作り出すことができません。
+          なぜならその実行ファイルはホストディストリビューション上で動作させられないからです。
+          GCC ビルドシステムはその回避策として、デフォルトではホスト上にある C および C++ コンパイラーを利用しようとします。
+          ただし GCC のバージョンが異なる場合に、GCC ターゲットライブラリをビルドすることはサポートされていません。
+          したがってホスト上のコンパイラーがビルドに失敗する可能性があります。
+          本パラメーターは、確実に GCC １回めの実行ファイルを使ってライブラリビルドを行うようにして、問題が発生しないようにします。
+          </para>
+@z
+
+@x LDFLAGS_FOR_TARGET=...
+          <para>Allow <filename class="libraryfile">libstdc++</filename> to
+          use shared <filename class="libraryfile">libgcc</filename> being
+          built in this pass, instead of the static version built in GCC
+          pass 1. This is needed for supporting C++ exception
+          handling.</para>
+@y
+          <para>
+          GCC １回めではスタティックバージョンの <filename
+          class="libraryfile">libgcc</filename> をビルドしていましたが、ここでは共有の <filename
+          class="libraryfile">libgcc</filename> をビルドするようにします。
+          これは C++ 例外処理のために必要となります。
           </para>
 @z
 
