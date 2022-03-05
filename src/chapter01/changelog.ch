@@ -44,6 +44,33 @@
 @z
 
 @x
+      <para>2022-03-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Stop changing the owner of
+          <filename class='directory'>$LFS/source</filename> to
+          <systemitem class='username'>lfs</systemitem>. Fixes
+          <ulink url="&lfs-ticket-root;5018">#5018</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Add zstd-1.5.2 upstream fixes patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-03-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - <filename class='directory'>$LFS/source</filename> の所有者を <systemitem
+          class='username'>lfs</systemitem> に変更しないこととする。
+          <ulink url="&lfs-ticket-root;5018">#5018</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - zstd-1.5.2 アップストリームの修正パッチを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-03-02</para>
       <itemizedlist>
         <listitem>

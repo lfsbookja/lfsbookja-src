@@ -127,6 +127,12 @@
         <para>&Download;: <ulink url="&patches-root;&systemd-upstream-fixes-patch;"/></para>
 @z
 
+@x Zstd Upstream Fixes Patch
+        <para>Download: <ulink url="&patches-root;&zstd-upstream-fixes-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&zstd-upstream-fixes-patch;"/></para>
+@z
+
 @x
   <para>Total size of these patches: about <returnvalue/></para>
 @y

@@ -117,17 +117,6 @@
 @z
 
 @x
-  <para>If a separate working directory was created as suggested, give
-  user <systemitem class="username">lfs</systemitem> ownership of this
-  directory:</para>
-@y
-  <para>
-  前述したような作業ディレクトリを作成している場合は、そのディレクトリに対しても <systemitem
-  class="username">lfs</systemitem> ユーザーを所有者とします。
-  </para>
-@z
-
-@x
   <note><para>In some host systems, the following command does not complete
   properly and suspends the login to the lfs user to the background.  If the
   prompt "lfs:~$" does not appear immediately, entering the
