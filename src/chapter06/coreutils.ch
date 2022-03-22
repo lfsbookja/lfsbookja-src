@@ -104,7 +104,7 @@
 @x
     <para>Move programs to their final expected locations. Although this is
     not necessary in this temporary environment, we must do so because some
-    programs harcode executable locations:</para>
+    programs hardcode executable locations:</para>
 @y
     <para>
     プログラムを、最終的に期待されるディレクトリに移動させます。

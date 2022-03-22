@@ -198,7 +198,7 @@
 @z
 
 @x
-      <listitem> <para>If a package containing a shared library is updated,
+      <listitem><para>If a package containing a shared library is updated,
       and the name of library doesn't change, but a severe issue
       (especially, a security vulnerability) is fixed, all running programs
       linked to the shared library should be restarted.  The following
@@ -207,7 +207,7 @@
       (replace <replaceable>libfoo</replaceable> with the name of the
       library):</para>
 @y
-      <listitem> <para>
+      <listitem><para>
       共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名に変更はなかったとします。
       ただしそこでは重大な問題（特にセキュリティぜい弱性）が解消されているような場合は、この共有ライブラリにリンクしている実行中プログラムは、すべて再起動してください。
       アップグレードした後に、以下のコマンドを <systemitem
@@ -226,6 +226,16 @@
         <application>OpenSSH</application> を利用してシステムにアクセスしている場合であって、これがリンクするライブラリがアップデートされたとします。
         その場合は <command>sshd</command> サービスの再起動が必要です。
         またシステムからはいったんログアウトしてログインし直し、その後に上のコマンドをもう一度実行して、削除されたライブラリを利用していないかどうかの確認を行ってください。
+@z
+
+@x revision='systemd'
+        If the <command>systemd</command> daemon (running as PID 1) is
+        linked to the updated library, you can restart it without reboot
+        by running <command>systemctl daemon-reexec</command> as the
+        <systemitem class='username'>root</systemitem> user.
+@y
+        <command>systemd</command> デーモンが（PID 1 として実行されていて）、アップデートしたライブラリにリンクされていた場合は、リブートするのではなく、<systemitem
+        class='username'>root</systemitem> ユーザーになって <command>systemctl daemon-reexec</command> を実行すれば再起動できます。
 @z
 
 @x

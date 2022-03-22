@@ -70,19 +70,32 @@
 @x
 <literallayout>0: halt the computer
 1: single-user mode
-2: multi-user mode without networking
+2: reserved for customization, otherwise does the same as 3
 3: multi-user mode with networking
 4: reserved for customization, otherwise does the same as 3
-5: same as 4, it is usually used for GUI login (like X's <command>xdm</command> or KDE's <command>kdm</command>)
+5: same as 4, it is usually used for GUI login (like GNOME's <command>gdm</command> or LXDE's <command>lxdm</command>)
 6: reboot the computer</literallayout>
 @y
 <literallayout>0: コンピューターの停止
 1: シングルユーザーモード
-2: マルチユーザーモード、ネットワークなし
+2: 拡張用として予約されています。 拡張がなければ 3 と同じものとして扱われます。
 3: マルチユーザーモード、ネットワークあり
-4: 将来の拡張用として予約されています。 3 と同じものとして扱われます。
-5: 4 と同様。通常 (X の <command>xdm</command> や KDE の <command>kdm</command> のような) GUI ログインに用いられます。
+4: 拡張用として予約されています。 拡張がなければ 3 と同じものとして扱われます。
+5: 4 と同様。通常 (GNOME の <command>gdm</command> や LXDE の <command>lxdm</command> のような) GUI ログインに用いられます。
 6: コンピューターの再起動</literallayout>
+@z
+
+@x
+          Classically, run level 2 above was defined as 
+          "multi-user mode without networking", but this was only the case 
+          many years ago when multiple users could log into a system connected via
+          serial ports.  In today's environment it makes no sense and
+          we designate it now as "reserved".
+@y
+          従来より、上のランレベル 2 は「ネットワークなしにおけるマルチユーザーモード」として定義されていました。
+          ただしこれは相当以前の話として、シリアルポートを介して複数ユーザーがシステムにログインするケースだけを表しています。
+          今日のコンピューター環境においてこれは意味をなしません。
+          そこでここでは「拡張用の予約」と位置づけます。
 @z
 
 @x
@@ -198,7 +211,7 @@
   <para>There are a number of directories under <filename
   class="directory">/etc/rc.d</filename> that look like <filename
   class="directory">rc?.d</filename> (where ? is the number of the run-level) and
-  <filename class="directory">rcsysinit.d</filename>, all containing a number of
+  <filename class="directory">rcS.d</filename>, all containing a number of
   symbolic links. Some begin with a <emphasis>K</emphasis>, the others begin with
   an <emphasis>S</emphasis>, and all of them have two numbers following the
   initial letter. The K means to stop (kill) a service and the S means to start a
@@ -211,7 +224,7 @@
   <filename class="directory">/etc/rc.d</filename> ディレクトリの配下には複数のサブディレクトリがあります。
   そのディレクトリ名は <filename class="directory">rc?.d</filename> のようになっています。
   (? はランレベルの数字を表します。)
-  また <filename class="directory">rcsysinit.d</filename> というサブディレクトリもあります。
+  また <filename class="directory">rcS.d</filename> というサブディレクトリもあります。
   それらサブディレクトリ内には数多くのシンボリックリンクがあります。
   シンボリックリンクの先頭一文字には <emphasis>K</emphasis> や <emphasis>S</emphasis> が用いられ、続いて二桁の数値文字がつけられています。
   K はサービスの停止 (kill)、S はサービスの起動 (start) を意味します。
@@ -259,14 +272,20 @@
   to be started. They will be called with the parameter
   <parameter>stop</parameter> to stop something. The logic behind this
   is that when a user is going to reboot or halt the system, nothing
-  needs to be started.  The system only needs to be stopped.</para>
+  needs to be started, but the order of shutdown needs to be controlled.
+  For these run levels, all <emphasis>K</emphasis> prefixed scripts will be 
+  run before any <emphasis>S</emphasis> prefixed scripts are run with the
+  <parameter>stop</parameter> parameter.
+  </para>
 @y
   <para>
   上の説明には例外があります。
   <filename class="directory">rc0.d</filename> ディレクトリと <filename
   class="directory">rc6.d</filename> ディレクトリにある、<emphasis>S</emphasis> で始まるシンボリックリンクはサービスを何も起動させません。
   <parameter>stop</parameter> パラメーターが与えられ、何らかのサービスを停止します。
-  ユーザーがシステムを再起動したり停止したりする際には、サービスを起動させる必要はないわけで、システムを停止するだけで済むからです。
+  ユーザーがシステムを再起動したり停止したりする際には、サービスを起動させる必要はありません。
+  ただしシャットダウンの順序は制御する必要があります。
+  これらのランレベルに対して、<emphasis>S</emphasis> をプリフィックスに持つスクリプトは、<parameter>stop</parameter> パラメーターを使って実行されても、それより前に <emphasis>K</emphasis> をプリフィックスに持つスクリプトが先に実行されます。
   </para>
 @z
 

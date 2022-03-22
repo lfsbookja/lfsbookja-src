@@ -38,59 +38,33 @@
 @z
 
 @x
-    <title>Creating Initial Device Nodes</title>
-@y
-    <title>初期デバイスノードの生成</title>
-@z
-
-@x
-    <para>When the kernel boots the system, it requires the presence of a few
-    device nodes, in particular the <filename
-    class="devicefile">console</filename> and <filename
-    class="devicefile">null</filename> devices. The device nodes must be
-    created on the hard disk so that they are available before the kernel
-    populates <systemitem class="filesystem">/dev</systemitem>), and
-    additionally when Linux is started with
-    <parameter>init=/bin/bash</parameter>. Create the devices by running the
-    following commands:</para>
-@y
-    <para>
-    カーネルがシステムを起動する際には、いくつかのデバイスノードの存在が必要です。
-    特に <filename class="devicefile">console</filename> と <filename class="devicefile">null</filename> です。
-    これらのデバイスノードはハードディスク上に生成されていなければなりません。
-    <systemitem class="filesystem">/dev</systemitem> が生成され、また Linux が起動パラメーター <parameter>init=/bin/bash</parameter> によって起動されれば利用可能となります。
-    そこで以下のコマンドによりデバイスノードを生成します。
-    </para>
-@z
-
-@x
     <title>Mounting and Populating /dev</title>
 @y
     <title>/dev のマウントと有効化</title>
 @z
 
 @x
-      <para>The recommended method of populating the <filename
-      class="directory">/dev</filename> directory with devices is to mount a
-      virtual filesystem (such as <systemitem
-      class="filesystem">tmpfs</systemitem>) on the <filename
-      class="directory">/dev</filename> directory, and allow the devices to be
-      created dynamically on that virtual filesystem as they are detected or
-      accessed. Device creation is generally done during the boot process
-      by Udev. Since this new system does not yet have Udev and has not yet
-      been booted, it is necessary to mount and populate <filename
-      class="directory">/dev</filename> manually. This is accomplished by bind
-      mounting the host system's <filename class="directory">/dev</filename>
-      directory. A bind mount is a special type of mount that allows you to
-      create a mirror of a directory or mount point to some other location. Use
-      the following command to achieve this:</para>
+      <para>During a normal boot, the kernel automatically mounts the
+      <systemitem class="filesystem">devtmpfs</systemitem> filesystem on the
+      <filename class="directory">/dev</filename> directory, and allow the
+      devices to be created dynamically on that virtual filesystem as they
+      are detected or accessed. Device creation is generally done during the
+      boot process by the kernel and Udev.
+      Since this new system does not yet have Udev and
+      has not yet been booted, it is necessary to mount and populate
+      <filename class="directory">/dev</filename> manually. This is
+      accomplished by bind mounting the host system's
+      <filename class="directory">/dev</filename> directory. A bind mount is
+      a special type of mount that allows you to create a mirror of a
+      directory or mount point to some other location. Use the following
+      command to achieve this:</para>
 @y
       <para>
-      各デバイスを <filename class="directory">/dev</filename> に設定する方法としては、<filename
-      class="directory">/dev</filename> ディレクトリに対して <systemitem
-      class="filesystem">tmpfs</systemitem> のような仮想ファイルシステムをマウントすることが推奨されます。
-      こうすることで各デバイスが検出されアクセスされる際に、その仮想ファイルシステム上にて動的にデバイスを生成する形を取ることができます。
-      このデバイス生成処理は一般的にはシステム起動時に Udev によって行われます。
+      通常のブートの際には、カーネルは <filename
+      class="directory">/dev</filename> ディレクトリ上に <systemitem
+      class="filesystem">devtmpfs</systemitem> ファイルシステムを自動的にマウントします。
+      そしてデバイスが検出されたりアクセスされたりするたびに、デバイスが仮想ファイルシステムを動的生成できるようにしています。
+      このデバイス生成処理は一般的には、システム起動時にカーネルと Udev によって行われます。
       今構築中のシステムにはまだ Udev を導入していませんし、再起動も行っていませんので <filename
       class="directory">/dev</filename> のマウントと有効化は手動で行ないます。
       これはホストシステムの <filename class="directory">/dev</filename> ディレクトリに対して、バインドマウントを行うことで実現します。

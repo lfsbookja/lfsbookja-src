@@ -215,23 +215,24 @@
         </para>
 @z
 
-%@x
-%        <para><emphasis>elf/tst-cpu-features-cpuinfo</emphasis>
-%        will fail on non-intel CPUs with this version of glibc.</para>
-%@y
-%        <para>
-%        <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> は、この glibc バージョンを使って intel 以外の CPU アーキテクチャー上でテストを行った場合には失敗します。
-%        </para>
-%@z
+@x
+        <para>The <emphasis>nss/tst-nss-files-hosts-long</emphasis>
+        test is known to fail if the system has no non-loopback IP
+        addresses.</para> <!-- PR 24816 -->
+@y
+        <para>
+        <emphasis>nss/tst-nss-files-hosts-long</emphasis> は失敗することがあります。
+        これはシステム内にループバック以外の IP アドレスがない場合です。
+        </para>
+@z
 
 @x
         <para>The <emphasis>nss/tst-nss-files-hosts-multi</emphasis>
-        test is known to fail if the system has no non-loopback IP
-        addresses.</para>
+        test is known to fail on relatively slow systems due to an internal
+        timeout.</para>
 @y
         <para>
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> は失敗することがあります。
-        これはシステム内にループバック以外の IP アドレスがない場合です。
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> テストは、内部のタイムアウトが原因で比較的遅くなるシステム上では失敗します。
         </para>
 @z
 

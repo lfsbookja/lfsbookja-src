@@ -54,7 +54,14 @@
           </para>
 @z
 
-@x --with-system-pid-file=/run/dbus/pid and --with-system-socket=/run/dbus/system_bus_socket
+@x
+          <parameter>--runstatedir=/run</parameter> and
+          <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>
+@y
+          <parameter>--runstatedir=/run</parameter> と
+          <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>
+@z
+@x
           <para>These set the location of the PID file and the system bus socket
           to be in <filename class="directory">/run</filename>, instead of
           deprecated <filename class="directory">/var/run</filename>.</para>
