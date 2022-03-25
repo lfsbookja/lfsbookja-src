@@ -11,7 +11,7 @@
 
 @x
     <para>Jinja2 is a Python module that implements a simple pythonic template
-    lanuage.</para>
+    language.</para>
 @y
     <para>
     Jinja2 は、Python の簡単なテンプレート言語を実装する Python モジュールです。

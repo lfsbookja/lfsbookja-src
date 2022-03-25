@@ -58,7 +58,7 @@
 
 @x ADJTIME_PATH=/var/lib/hwclock/adjtime
           <para>This sets the location of the file recording information about
-          the hardware clock in accordance to the FHS. This is not stricly
+          the hardware clock in accordance to the FHS. This is not strictly
           needed for this temporary tool, but it prevents creating a file
           at another location, which would not be overwritten or removed
           when building the final util-linux package.</para>

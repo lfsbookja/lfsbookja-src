@@ -188,7 +188,7 @@
 
 @x
           Because the backup archive is compressed, it takes a relatively
-          long time (over 10 minutes) even on a resonably fast system.
+          long time (over 10 minutes) even on a reasonably fast system.
 @y
           バックアップアーカイブは圧縮するので、かなりの高速なシステムを利用していても、比較的長い時間 (10 分以上) を要します。
 @z

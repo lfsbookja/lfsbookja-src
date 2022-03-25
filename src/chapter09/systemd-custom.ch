@@ -261,7 +261,7 @@
 @x
          <para><command>systemctl show -p Wants <replaceable>&lt;multi-user.target&gt;</replaceable></command>:
          shows all units that depend on the multi-user target. Targets are
-         special unit files that are anogalous to runlevels under
+         special unit files that are analogous to runlevels under
          SysVinit.</para>
 @y
          <para><command>systemctl show -p Wants <replaceable>&lt;multi-user.target&gt;</replaceable></command>:

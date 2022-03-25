@@ -221,6 +221,17 @@
           </para>
 @z
 
+@x Automount devtmpfs at /dev
+          <para>This will mount the kernel view of the devices on /dev
+          upon switching to root filesystem just before starting
+          init.</para>
+@y
+          <para>
+          これは、カーネルから見たデバイス情報を /dev 上にマウントするものです。
+          init が起動される直前にルートファイルシステムに切り替えられます。
+          </para>
+@z
+
 @x
     <para>Alternatively, <command>make oldconfig</command> may be more
     appropriate in some situations. See the <filename>README</filename>
