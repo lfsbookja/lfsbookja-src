@@ -44,6 +44,24 @@
 @z
 
 @x
+      <para>2022-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Update bootscripts to 20220324.  Fixes
+          <ulink url="&lfs-ticket-root;5027">#5027</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - bootscripts を 20220324 にアップデート。
+          <ulink url="&lfs-ticket-root;5027">#5027</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-03-20</para>
       <itemizedlist>
         <listitem>

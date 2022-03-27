@@ -28,14 +28,16 @@
 
 @x
       <para>Similar to GMP, libffi builds with optimizations specific
-      to the processor in use. If building for another system, export
-      CFLAGS and CXXFLAGS to specify a generic build for your architecture.
+      to the processor in use. If building for another system, change the
+      value of the <parameter>--with-gcc-arch=</parameter> parameter in the
+      following command to an architecture name fully implemented by the
+      CPU on that system.
       If this is not done, all applications that link to libffi will trigger
       Illegal Operation Errors.</para>
 @y
       <para>
-      GMP と同じように libffi では、利用中のプロセッサーに応じた最適化を行いビルドされます。
-      異なるシステムに向けてのビルドを行う場合は CFLAGS と CXXFLAGS に対して、そのアーキテクチャー向けの汎用的なビルドを行うものにしてください。
+      GMP と同じように libffi では、利用中のプロセッサーに応じた最適化を行なってビルドされます。
+      異なるシステムに向けてのビルドを行う場合は、以下のコマンドにおいて <parameter>--with-gcc-arch=</parameter> を使って、そのシステム上の CPU の実装を完全に表すアーキテクチャー名に変更してください。
       そうしなかった場合には、libffi をリンクするアプリケーションにおいて Illegal Operation エラーを発生させることになります。
       </para>
 @z
