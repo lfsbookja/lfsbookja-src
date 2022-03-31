@@ -56,15 +56,6 @@
         </para>
 @z
 
-@x --with-ensurepip=yes
-        <para>This switch enables building <command>pip</command> and
-        <command>setuptools</command> packaging programs.</para>
-@y
-        <para>
-        本スイッチは <command>pip</command> コマンドと、パッケージングプログラム <command>setuptools</command> をビルドすることを指示します。
-        </para>
-@z
-
 @x --enable-optimizations
         <para>This switch enables stable, but expensive, optimizations.</para>
 @y

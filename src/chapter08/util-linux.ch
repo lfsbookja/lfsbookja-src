@@ -88,6 +88,15 @@
 @z
 
 @x
+    <para>The <emphasis>hardlink</emphasis> tests will fail if the host's kernel 
+    does not have the option CONFIG_CRYPTO_USER_API_HASH set.</para>
+@y
+    <para>
+    <emphasis>hardlink</emphasis>テストは、カーネルオプションにおいて CONFIG_CRYPTO_USER_API_HASH セットが設定されていない場合は失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

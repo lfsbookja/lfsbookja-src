@@ -44,6 +44,96 @@
 @z
 
 @x
+      <para>2022-03-31</para>
+      <itemizedlist>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to sysvinit-3.02.  Fixes
+          <ulink url="&lfs-ticket-root;5041">#5041</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zlib-1.2.12.  Fixes
+          <ulink url="&lfs-ticket-root;5040">#5040</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.4.8.  Fixes
+          <ulink url="&lfs-ticket-root;5039">#5039</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[bdubbs] - Update to Jinja2-3.1.1.  Fixes
+          <ulink url="&lfs-ticket-root;5038">#5038</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.10.4.  Fixes
+          <ulink url="&lfs-ticket-root;5037">#5037</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to procps-ng-4.0.0.  Fixes
+          <ulink url="&lfs-ticket-root;5036">#5036</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.17.0.  Fixes
+          <ulink url="&lfs-ticket-root;5035">#5035</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.62.0.  Fixes
+          <ulink url="&lfs-ticket-root;5034">#5034</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.17.1.  Fixes
+          <ulink url="&lfs-ticket-root;5033">#5033</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.38.  Fixes
+          <ulink url="&lfs-ticket-root;4997">#4997</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-03-31</para>
+      <itemizedlist>
+        <listitem revision="sysv">
+          <para>[bdubbs] -  sysvinit-3.02 へのアップデート。
+          <ulink url="&lfs-ticket-root;5041">#5041</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  zlib-1.2.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;5040">#5040</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  expat-2.4.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;5039">#5039</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[bdubbs] -  Jinja2-3.1.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5038">#5038</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  Python-3.10.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;5037">#5037</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  procps-ng-4.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5036">#5036</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  iproute2-5.17.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5035">#5035</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  meson-0.62.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5034">#5034</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  linux-5.17.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5033">#5033</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  util-linux-2.38 へのアップデート。
+          <ulink url="&lfs-ticket-root;4997">#4997</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-03-25</para>
       <itemizedlist>
         <listitem>

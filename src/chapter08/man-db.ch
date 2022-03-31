@@ -273,13 +273,17 @@
 @x
             <entry>Indonesian (id)</entry>
             <entry>ISO-8859-1</entry>
-            <entry>Russian (ru)</entry>
-            <entry>KOI8-R</entry>
+            <entry>Greek (el)</entry>
+            <entry>ISO-8859-7</entry>
+            <!--<entry>Russian (ru)</entry>-->
+            <!--<entry>KOI8-R</entry>-->
 @y
             <entry>インドネシア語 (id)</entry>
             <entry>ISO-8859-1</entry>
-            <entry>ロシア語 (ru)</entry>
-            <entry>KOI8-R</entry>
+            <entry>ギリシア語 (el)</entry>
+            <entry>ISO-8859-7</entry>
+            <!--<entry>ロシア語 (ru)</entry>-->
+            <!--<entry>KOI8-R</entry>-->
 @z
 
 @x
