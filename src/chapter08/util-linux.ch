@@ -75,9 +75,9 @@
 @z
 
 @x
-    <note><para>There is one test that fails in the chroot envronment and
+    <note><para>There is one test that fails in the chroot environment and
     causes the tests to hang forever.  The problem does not occur outside
-    of the chroot envronment.
+    of the chroot environment.
     To work around the problem, delete the test:</para>
 @y
     <note><para>

@@ -138,14 +138,13 @@
     </para>
 @z
 
-%@x
-%    <note><para>One test fails due to using the most recent version of gdbm.
-%    </para></note>
-%@y
-%    <note><para>
-%    gdbm の最新バージョンを用いていることから、テストが 1 つ失敗します。
-%    </para></note>
-%@z
+@x
+       <para>Nine tests fail due to using the most recent version of zlib.</para>
+@y
+       <para>
+       zlib の最新バージョンを用いていることから、9 つのテストが失敗します。
+       </para>
+@z
 
 @x
     <para>Install the package and clean up:</para>

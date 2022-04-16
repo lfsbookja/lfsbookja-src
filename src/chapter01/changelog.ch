@@ -44,6 +44,48 @@
 @z
 
 @x
+      <para>2022-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Patch Xz for a security fix.  Fixes
+          <ulink url="&lfs-ticket-root;5047">#5047</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.64.  Fixes
+          <ulink url="&lfs-ticket-root;5044">#5044</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.17.3.  Fixes
+          <ulink url="&lfs-ticket-root;5043">#5043</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gzip-1.12.  Fixes
+          <ulink url="&lfs-ticket-root;5042">#5042</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Xz のセキュリティフィックスパッチ。
+          <ulink url="&lfs-ticket-root;5047">#5047</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.64 へのアップデート。
+          <ulink url="&lfs-ticket-root;5044">#5044</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.17.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;5043">#5043</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gzip-1.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;5042">#5042</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-03-31</para>
       <itemizedlist>
         <listitem revision="sysv">
@@ -51,7 +93,7 @@
           <ulink url="&lfs-ticket-root;5041">#5041</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to zlib-1.2.12.  Fixes
+          <para>[bdubbs] - Update to zlib-1.2.12 (Security Update).  Fixes
           <ulink url="&lfs-ticket-root;5040">#5040</ulink>.</para>
         </listitem>
         <listitem>
@@ -79,7 +121,7 @@
           <ulink url="&lfs-ticket-root;5034">#5034</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to linux-5.17.1.  Fixes
+          <para>[bdubbs] - Update to linux-5.17.1 (Security Update).  Fixes
           <ulink url="&lfs-ticket-root;5033">#5033</ulink>.</para>
         </listitem>
         <listitem>
@@ -95,7 +137,7 @@
           <ulink url="&lfs-ticket-root;5041">#5041</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] -  zlib-1.2.12 へのアップデート。
+          <para>[bdubbs] -  zlib-1.2.12 へのアップデート (セキュリティアップデート)。
           <ulink url="&lfs-ticket-root;5040">#5040</ulink> を Fix に。</para>
         </listitem>
         <listitem>
@@ -123,7 +165,7 @@
           <ulink url="&lfs-ticket-root;5034">#5034</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] -  linux-5.17.1 へのアップデート。
+          <para>[bdubbs] -  linux-5.17.1 へのアップデート (セキュリティアップデート)。
           <ulink url="&lfs-ticket-root;5033">#5033</ulink> を Fix に。</para>
         </listitem>
         <listitem>

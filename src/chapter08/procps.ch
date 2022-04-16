@@ -18,23 +18,6 @@
 @z
 
 @x
-    <note>
-      <para>This package extracts to the directory
-      <filename class="directory">procps-3.3.17</filename>,
-      not the expected
-      <filename class="directory">procps-ng-3.3.17</filename>.</para>
-    </note>
-@y
-    <note>
-      <para>
-      本パッケージのソースは <filename
-      class="directory">procps-3.3.17</filename> ディレクトリへ伸長（解凍）されます。
-      <filename class="directory">procps-ng-3.3.17</filename> ではないので注意してください。
-      </para>
-    </note>
-@z
-
-@x
     <title>Installation of Procps-ng</title>
 @y
     <title>&InstallationOf1;Procps-ng&InstallationOf2;</title>
@@ -124,13 +107,13 @@
 @x
         <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop,
         sysctl, tload, top, uptime, vmstat, w, and watch</seg>
-        <seg>libprocps.so</seg>
-        <seg>/usr/include/proc and /usr/share/doc/procps-ng-&procps-ng-version;</seg>
+        <seg>libproc-2.so</seg>
+        <seg>/usr/include/procps and /usr/share/doc/procps-ng-&procps-ng-version;</seg>
 @y
         <seg>free, pgrep, pidof, pkill, pmap, ps, pwdx, slabtop,
         sysctl, tload, top, uptime, vmstat, w, watch</seg>
-        <seg>libprocps.so</seg>
-        <seg>/usr/include/proc, /usr/share/doc/procps-ng-&procps-ng-version;</seg>
+        <seg>libproc-2.so</seg>
+        <seg>/usr/include/procps, /usr/share/doc/procps-ng-&procps-ng-version;</seg>
 @z
 
 @x
@@ -279,7 +262,7 @@
           </para>
 @z
 
-@x libproc
+@x libproc-2
           <para>Contains the functions used by most programs in this
           package</para>
 @y

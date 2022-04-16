@@ -34,6 +34,15 @@
 @z
 
 @x
+    <para>Now, apply a patch to fix a problem with the linux kernel's headers in 
+    version 5.17 and later:</para>
+@y
+    <para>
+    また linux カーネルヘッダー、バージョン 5.17 以降に対する問題の修正のため、以下のパッチを適用します。
+    version 5.17 and later:</para>
+@z
+
+@x
     <para>Remove two unneeded groups,
     <systemitem class="groupname">render</systemitem> and
     <systemitem class="groupname">sgx</systemitem>, from the default udev
