@@ -2391,6 +2391,33 @@
 @z
 
 %----------------------------------------------------------------------
+@x Wheel
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Jinja2</seg>
+@y
+          <seg>Jinja2</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x XML Parser
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Glibc, Make, and
           Perl</seg>

@@ -57,13 +57,11 @@
 @z
 
 @x
-        <!-- Suffix "-linux-<arch>" is different from meson and jinja:
-             This package contains binary code (compiled from C), but meson
-             and jinja only contain Python code.  -->
-        <seg>/usr/lib/python&python-minor;/site-packages/MarkupSafe-&markupsafe-version;-py&python-minor;-linux-<replaceable>&lt;arch&gt;</replaceable>.egg</seg>
+        <seg>
+           /usr/lib/python&python-minor;/site-packages/MarkupSafe-&markupsafe-version;.dist-info
+        </seg>
 @y
-        <!-- Suffix "-linux-<arch>" is different from meson and jinja:
-             This package contains binary code (compiled from C), but meson
-             and jinja only contain Python code.  -->
-        <seg>/usr/lib/python&python-minor;/site-packages/MarkupSafe-&markupsafe-version;-py&python-minor;-linux-<replaceable>&lt;arch&gt;</replaceable>.egg</seg>
+        <seg>
+           /usr/lib/python&python-minor;/site-packages/MarkupSafe-&markupsafe-version;.dist-info
+        </seg>
 @z

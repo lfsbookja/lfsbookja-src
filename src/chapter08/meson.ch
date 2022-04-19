@@ -71,33 +71,29 @@
     </para>
 @z
 
-% @x
-%     <para>At last, move Meson man pages to correct location:</para>
-% @y
-%     <para>
-%     最後に Meson の man ページを適切なディレクトリに移動します。
-%     </para>
-% @z
-
 @x
       <title>The meaning of the install parameters:</title>
 @y
       <title>&MeaningOfParameter1;install&MeaningOfParameter2;</title>
 @z
 
-@x --root=dest
-          <para>By default <command>python3 setup.py install</command>
-          installs various files (such as man pages) into Python Eggs.
-          With a specified root location, <command>setup.py</command> installs
-          these files into a standard hierarchy.  Then the hierarchy
-          can just be copied to the standard location.
-        </para>
+@x -w dist
+           <para>Put the created wheels into the
+           <filename class='directory'>dist</filename> directory.</para>
 @y
-          <para>
-          デフォルトにて <command>python3 setup.py install</command> は、Python Eggs に（man ページを含む）種々のファイルをインストールします。
-          インストールルートを指定すれば <command>setup.py</command> によって各種ファイルは、標準的な階層にインストールされます。
-          そこでこの階層を、標準的な階層としてコピーします。
-          </para>
+           <para>
+           生成された wheel を <filename
+           class='directory'>dist</filename> ディレクトリに配置します。
+           </para>
+@z
+
+@x --find-links dist
+           <para>Install wheels from the
+           <filename class='directory'>dist</filename> directory.</para>
+@y
+           <para>
+           <filename class='directory'>dist</filename> ディレクトリから wheel をインストールします。
+           </para>
 @z
 
 @x
@@ -116,16 +112,16 @@
 
 @x
         <seg>meson</seg>
-        <!-- We are using DESTDIR installation here, so the directory layout
-          is different than other Python modules in LFS
-          (Jinja2 & MarkupSafe). -->
-        <seg>/usr/lib/python&python-minor;/site-packages/meson-&meson-version;-py&python-minor;.egg-info and /usr/lib/python&python-minor;/site-packages/mesonbuild</seg>
+        <seg>
+           /usr/lib/python&python-minor;/site-packages/meson-&meson-version;.dist-info and 
+           /usr/lib/python&python-minor;/site-packages/mesonbuild
+        </seg>
 @y
         <seg>meson</seg>
-        <!-- We are using DESTDIR installation here, so the directory layout
-          is different than other Python modules in LFS
-          (Jinja2 & MarkupSafe). -->
-        <seg>/usr/lib/python&python-minor;/site-packages/meson-&meson-version;-py&python-minor;.egg-info, /usr/lib/python&python-minor;/site-packages/mesonbuild</seg>
+        <seg>
+           /usr/lib/python&python-minor;/site-packages/meson-&meson-version;.dist-info,
+           /usr/lib/python&python-minor;/site-packages/mesonbuild
+        </seg>
 @z
 
 @x

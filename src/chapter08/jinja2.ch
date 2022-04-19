@@ -25,6 +25,12 @@
 @z
 
 @x
+    <para>Build the package:</para>
+@y
+    <para>パッケージをビルドするために以下を実行します。</para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
@@ -37,13 +43,17 @@
 @z
 
 @x
-      <segtitle>Installed directories</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
-        <seg>/usr/lib/python&python-minor;/site-packages/Jinja2-&jinja2-version;-py&python-minor;.egg</seg>
+         <seg>
+            /usr/lib/python&python-minor;/site-packages/Jinja2-&jinja2-version;.dist-info
+         </seg>
 @y
-        <seg>/usr/lib/python&python-minor;/site-packages/Jinja2-&jinja2-version;-py&python-minor;.egg</seg>
+         <seg>
+            /usr/lib/python&python-minor;/site-packages/Jinja2-&jinja2-version;.dist-info
+         </seg>
 @z

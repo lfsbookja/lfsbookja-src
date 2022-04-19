@@ -82,6 +82,7 @@ CHANGE_FILES = \
 	texinfo.ch        \
 	util-linux.ch     \
 	vim.ch            \
+	wheel.ch          \
 	xml-parser.ch     \
 	xz.ch             \
 	zlib.ch           \

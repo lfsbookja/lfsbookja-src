@@ -149,6 +149,12 @@
 @z
 
 @x
+<!ENTITY wheel-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY wheel-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY xml-parser-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY xml-parser-fin-sbu "0.1 SBU 以下">

@@ -837,6 +837,16 @@
         </para>
 @z
 
+@x Wheel
+        <para>This package contains a Python module that is the 
+        reference implementation of the Python wheel packaging standard.
+        </para>
+@y
+        <para>
+        このパッケージは Python wheel パッケージング標準に基づいた標準実装の Python モジュールを提供します。
+        </para>
+@z
+
 @x Vim
         <para>This package contains an editor. It was chosen because of its
         compatibility with the classic vi editor and its huge number of powerful

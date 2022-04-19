@@ -47,6 +47,22 @@
       <para>2022-04-15</para>
       <itemizedlist>
         <listitem>
+           <para>[bdubbs] - Add wheel-0.37.1 (Python module).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-04-15</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - wheel-0.37.1 (Python モジュール) 追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-04-15</para>
+      <itemizedlist>
+        <listitem>
           <para>[ken] - Patch Xz for a security fix.  Fixes
           <ulink url="&lfs-ticket-root;5047">#5047</ulink>.</para>
         </listitem>

@@ -92,6 +92,32 @@
 @z
 
 @x
+    <para>In serveral places we use the <command>pip3</command> command to
+    install Python 3 programs and modules for all users as
+    <systemitem class='username'>root</systemitem>. This conflicts
+    with the Python developers recommendation to install packages into a
+    virtual environment or the home directory of a regular user (by running
+    <command>pip3</command> as this user). To this end, a multi-line warning
+    is written when using <command>pip3</command> as the
+    <systemitem class='username'>root</systemitem> user.  The main reason
+    of this recommendation is for avoiding a conflict with the system
+    package manager (<command>dpkg</command> for example), but LFS does not
+    have a system-wide package manager so this is not a problem.  If desired,
+    suppress this warning by running the following command:</para>
+@y
+    <para>
+    いくつかの場面において Python 3 プログラムやモジュールをインストールする際には、全ユーザー向けのインストールを行うために <systemitem
+    class='username'>root</systemitem> ユーザーになって <command>pip3</command> コマンドを用いています。
+    このことは Python 開発者が推奨している、仮想環境内にて一般ユーザーにより（そのユーザーが <command>pip3</command> を実行することで）パッケージビルドを行う方法とは相容れないものです。
+    これを行っているため、<systemitem
+    class='username'>root</systemitem> ユーザーとして <command>pip3</command> を用いると、警告メッセージが複数出力されます。
+    開発者がなぜその方法を推奨しているかというと、システムパッケージマネージャー（たとえば <command>dpkg</command>）などと衝突が発生するからです。
+    LFS ではシステムワイドなパッケージマネージャーを利用していないため、このことは問題となりません。
+    警告メッセージを省略したい場合は、以下のコマンドを実行します。
+    </para>
+@z
+
+@x
     <para>If desired, install the preformatted documentation:</para>
 @y
     <para>

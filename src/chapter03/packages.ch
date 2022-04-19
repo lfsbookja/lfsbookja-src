@@ -734,6 +734,14 @@
             https://github.com/vim/vim/tags</ulink> にアクセスしてください。
 @z
 
+@x Wheel
+        <para>Home page: <ulink url="&wheel-home;"/></para>
+        <para>Download: <ulink url="&wheel-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&wheel-home;"/></para>
+        <para>&Download;: <ulink url="&wheel-url;"/></para>
+@z
+
 @x XML::Parser
         <para>Home page: <ulink url="&xml-parser-home;"/></para>
         <para>Download: <ulink url="&xml-parser-url;"/></para>
