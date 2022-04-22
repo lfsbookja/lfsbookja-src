@@ -71,14 +71,14 @@
 @z
 
 @x
-    <para>The testsuite of the package is designed to be run as a non-root
+    <para>The testsuite of the package is designed to be run as a non-&root;
     user that owns the terminal connected to standard input.  To satisfy the
     requirement, spawn a new pseudo terminal using
     <application>Expect</application> and run the tests as the <systemitem
     class="username">tester</systemitem> user:</para>
 @y
     <para>
-    本パッケージのテストスイートは、非ルートユーザーが実行するものとされていて、利用する端末が標準入力に接続できているものとしています。
+    本パッケージのテストスイートは、非 &root; ユーザーが実行するものとされていて、利用する端末が標準入力に接続できているものとしています。
     この仕様を満たすためには、<application>Expect</application> を使って新たな疑似端末を起動します。
     そして <systemitem
     class="username">tester</systemitem> ユーザーとしてテストを実行します。

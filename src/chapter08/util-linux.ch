@@ -49,10 +49,10 @@
 @z
 
 @x
-    <para>If desired, run the test suite as a non-root user:</para>
+    <para>If desired, run the test suite as a non-&root; user:</para>
 @y
     <para>
-    必要なら root ユーザー以外にて、以下のようにテストスイートを実行します。
+    必要なら &root; ユーザー以外にて、以下のようにテストスイートを実行します。
     </para>
 @z
 

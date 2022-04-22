@@ -305,13 +305,13 @@
 @x
       <para>If the host system has a separate /boot partition, the files copied
       below should go there. The easiest way to do that is to bind /boot on the
-      host (outside chroot) to /mnt/lfs/boot before proceeding.  As the root
-      user in the <emphasis>host system</emphasis>:</para>
+      host (outside chroot) to /mnt/lfs/boot before proceeding.  As the
+      &root; user in the <emphasis>host system</emphasis>:</para>
 @y
       <para>
       ホストシステムが独立した /boot パーティションを用いている場合はファイルをそこにコピーします。
       これを簡単に行うために、作業前に（chroot 前の）/boot をホストの /mnt/lfs/boot にバインドしておく方法があります。
-      <emphasis>ホストシステム</emphasis> の root ユーザーとなって以下を実行します。
+      <emphasis>ホストシステム</emphasis> の &root; ユーザーとなって以下を実行します。
       </para>
 @z
 

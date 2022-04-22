@@ -118,12 +118,11 @@
         <para>A few operations, from <quote>Changing Ownership</quote> to
         <quote>Entering the Chroot Environment</quote> must be done as the
         <systemitem class="username">root</systemitem> user, with the LFS
-        environment variable set for the
-        <systemitem class="username">root</systemitem>user.</para>
+        environment variable set for the &root; user.</para>
 @y
         <para>
         <quote>所有者の変更</quote>から<quote>Chroot 環境への移行</quote>までの操作は、<systemitem class="username">root</systemitem> ユーザーで行います。
-        LFS 環境変数が <systemitem class="username">root</systemitem> ユーザーにおいて設定されている必要があります。
+        LFS 環境変数が &root; ユーザーにおいて設定されている必要があります。
         </para>
 @z
 

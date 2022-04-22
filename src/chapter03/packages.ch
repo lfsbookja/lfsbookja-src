@@ -16,6 +16,38 @@
 @z
 
 @x
+    <para>Read the <ulink url='&secadv;'>security advisories</ulink>
+    before downloading packages to figure out if a newer version of any
+    package should be used to avoid security vulnerabilities.</para>
+@y
+    <para>
+    パッケージをダウンロードする前には <ulink
+    url='&secadv;'>セキュリティアドバイス</ulink>（security advisories）を読んでください。
+    セキュリティぜい弱性を回避するためにパッケージの最新バージョンがないかどうかを確認してください。
+    </para>
+@z
+
+@x
+    <para>The upstreams may remove old releases, especially when these
+    releases contain a security vulnerability.  If one URL below is not
+    reachable, you should read the security advisories first to figure out
+    if a newer version (with the vulnerability fixed) should be used.  If
+    not, try to download the removed package from a mirror.  Although it's
+	possible to download an old release from a mirror even if this release
+	has been removed because of a vulnerability, it's not recommended to
+	use a release known to be vulnerable for building your system.</para>
+@y
+    <para>
+    アップストリームでは、古いリリースを削除していることがあります。
+    特にそのリリースにセキュリティぜい弱性を含んでいた場合です。
+    以下に示す URL が無効になっていたら、まず初めにセキュリティアドバイスを読んでください。
+    そして新たなバージョンが（ぜい弱性を解消して）入手できるかどうかを確認してください。
+    それでもパッケージが削除されてしまっている場合は、ミラーサイトからのダウンロードを試してみてください。
+    ぜい弱性が原因で削除されていた古いバージョンのパッケージがダウンロードできたとしても、ぜい弱性に問題があるのであれば、システムビルドに用いることはお勧めしません。
+    </para>
+@z
+
+@x
   <para>Download or otherwise obtain the following packages:</para>
 @y
   <para>
@@ -163,21 +195,6 @@
 @y
         <para>&Homepage;: <ulink url="&expat-home;"/></para>
         <para>&Download;: <ulink url="&expat-url;"/></para>
-@z
-@x
-          <para>The upstream may remove tarballs of the specific releases of
-          <application>Expat</application> when these releases contain a
-          security vulnerability.  You should refer to
-          <ulink url='&lfs-root;lfs/advisories/'>LFS security advisories</ulink>
-          to figure out which version (with the vulnerability fixed) should
-          be used.  You may download the vulnerable version from a mirror,
-          but it's not recommended.</para>
-@y
-          <para>
-          <application>Expat</application> のアップストリームでは、リリースにあたってセキュリティぜい弱性が含まれていた場合には、そのリリース tarball を削除することがあります。
-          したがって <ulink url='&lfs-root;lfs/advisories/'>LFS セキュリティアドバイザリー</ulink> を参照して、どのバージョンが（ぜい弱性を修正して）利用できるかを確認してください。
-          ぜい弱性を含むものであってもミラーサイトから入手できるかもしれませんが、これはあまりお勧めしません。
-          </para>
 @z
 
 @x expect

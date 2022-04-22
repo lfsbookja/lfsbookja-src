@@ -48,14 +48,14 @@
   <para>Until <xref linkend="ch-tools-chroot"/>, the commands must be
   run as <systemitem class="username">root</systemitem>, with the
   <envar>LFS</envar> variable set. After entering chroot, all commands
-  are run as root, fortunately without access to the OS of the computer
+  are run as &root;, fortunately without access to the OS of the computer
   you built LFS on. Be careful anyway, as it is easy to destroy the whole
   LFS system with badly formed commands.</para>
 @y
   <para>
   <xref linkend="ch-tools-chroot"/> まで、コマンドの実行は <envar>LFS</envar> を設定した上で、<systemitem
   class="username">root</systemitem> ユーザーにより行う必要があります。
-  chroot 環境に入っても、コマンドはすべて root 実行ですが、もう安心です。
+  chroot 環境に入っても、コマンドはすべて &root; 実行ですが、もう安心です。
   LFS を構築しているコンピューター上の OS にはもうアクセスしないからです。
   かと言ってコマンド実行を誤れば、簡単に LFS システムを壊してしまうことになりますから、十分に注意してください。
   </para>

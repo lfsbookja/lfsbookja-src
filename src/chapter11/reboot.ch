@@ -92,11 +92,11 @@
 @x
     <listitem><para>Installing <ulink
     url='&blfs-book;postlfs/sudo.html'>sudo</ulink> may be useful for
-    building packages as a non-root user and easily installing the resulting
-    packages in your new system.</para></listitem>
+    building packages as a non-&root; user and easily installing the
+    resulting packages in your new system.</para></listitem>
 @y
     <listitem><para><ulink
-    url='&blfs-book;postlfs/sudo.html'>sudo</ulink> をインストールすれば、ルートユーザー以外であっても、パッケージビルドとインストールを容易に行うことができます。
+    url='&blfs-book;postlfs/sudo.html'>sudo</ulink> をインストールすれば、&root; ユーザー以外であっても、パッケージビルドとインストールを容易に行うことができます。
     </para></listitem>
 @z
 

@@ -118,6 +118,34 @@
 @z
 
 @x
+        In LFS and BLFS we normally build and install Python modules with the
+        <command>pip3</command> command.  Please take care that the
+        <command>pip3 install</command> commands in both the books should be
+        run as the &root; user unless it's for a Python virtual environment.
+        Running a <command>pip3 install</command> as a non-&root; user may seem
+        to work fine, but it will cause the installed module to be inaccessible
+        by other users.
+@y
+        LFS や BLFS においては通常、Python モジュールのビルドとインストールには <command>pip3</command> コマンドを用いています。
+        この両ブックにおいて実行する <command>pip3 install</command> コマンドは、Python 仮想環境内でない場合には &root; ユーザーで実行するようにしてください。
+        &root; ユーザー以外によって <command>pip3 install</command> を実行しても問題なく動作するように見えるかもしれませんが、インストールしたモジュールが別のユーザーからはアクセスできない事態を作り出してしまいます。
+@z
+
+@x
+        <command>pip3 install</command> will not reinstall an already installed
+        module by default.  For using the <command>pip3 install</command>
+        command to upgrade a module (for example, from meson-0.61.3 to
+        meson-0.62.0), insert the option <parameter>--upgrade</parameter> into
+        the command line.  If it's really necessary to downgrade a module or
+        reinstall the same version for some reason, insert 
+        <parameter>--force-reinstall</parameter> into the command line.
+@y
+        <command>pip3 install</command> はデフォルトでは、すでにインストールされているモジュールを再インストールすることは行いません。
+        <command>pip3 install</command> コマンドを使ってモジュールのアップグレードを行う（たとえば meson-0.61.3 から meson-0.62.0 にするような場合）には、コマンドラインに <parameter>--upgrade</parameter> オプションを含めてください。
+        またモジュールのダウングレードや再インストールが必要となる理由が確実にあるのであれば、コマンドラインに <parameter>--force-reinstall</parameter> を含めて実行してください。
+@z
+
+@x
     <para>If desired, install the preformatted documentation:</para>
 @y
     <para>

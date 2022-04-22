@@ -224,14 +224,14 @@
 
 @x
     <warning><para>The following commands are extremely dangerous.  If
-    you run <command>rm -rf ./*</command> as the root user and you
+    you run <command>rm -rf ./*</command> as the &root; user and you
     do not change to the $LFS directory or the <envar>LFS</envar>
-    environment variable is not set for the root user, it will destroy
+    environment variable is not set for the &root; user, it will destroy
     your entire host system.  YOU ARE WARNED.</para></warning>
 @y
     <warning><para>
     以下に示すコマンドは相当に危険です。
-    root ユーザーになって <command>rm -rf ./*</command> を実行する際に、$LFS ディレクトリに移動していない、あるいは環境変数 <envar>LFS</envar> を設定していないとしたら、システム全体を破壊することになります。
+    &root; ユーザーになって <command>rm -rf ./*</command> を実行する際に、$LFS ディレクトリに移動していない、あるいは環境変数 <envar>LFS</envar> を設定していないとしたら、システム全体を破壊することになります。
     厳に警告しておきます。
     </para></warning>
 @z

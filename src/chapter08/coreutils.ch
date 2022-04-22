@@ -145,11 +145,11 @@ autoconf-2.70 に含まれている gnulib .m4 ファイルの問題を修正し
 @z
 
 @x
-    <para>Fix some of the permissions so that the non-root user can compile and
-    run the tests:</para>
+    <para>Fix some of the permissions so that the non-&root; user can
+    compile and run the tests:</para>
 @y
     <para>
-    特定のファイルのパーミッションを変更して root ユーザー以外でもコンパイルとテストができるようにします。
+    特定のファイルのパーミッションを変更して &root; ユーザー以外でもコンパイルとテストができるようにします。
     </para>
 @z
 
