@@ -51,19 +51,6 @@
     <para>&CompileThePackage;</para>
 @z
 
-%@x
-%    <para>The test suite needs some custom modifications for LFS.
-%    Remove a test that fails when scripting does not use a tty device and
-%    fix two others.
-%    To run the test suite, run the following commands:</para>
-%@y
-%    <para>
-%    LFS においてテストスイートを実行するには多少の修正が必要です。
-%    tty デバイスを利用しないスクリプトが1つ失敗するため、これを除外することにし、その他にも 2 つのテストを修正します。
-%    テストスイートを実行するために以下のコマンドを実行します。
-%    </para>
-%@z
-
 @x
     <para> To run the test suite, run:</para>
 @y
@@ -73,12 +60,24 @@
 @z
 
 @x
-    <para>Five tests related to pkill are known to fail due to a problem
-    with tests that were not updated.</para>
+    <!-- It's because "free -v" shows "used" greater than "total", and
+         a negative "free" for "Comm" line.  The "total" value is from
+         "CommitLimit" in /proc/meminfo, which is the limit for one process.
+         But the "used" value is from "Committed_AS" in the same file,
+         which is the total commited virtual memory space of all processes.
+         I'll make a report to upstream anyway.  -->
+    <para>One test named <filename>free with commit</filename>
+    may fail if some applications with a custom memory allocator (for
+    example, JVM and Web browsers) are running on the host distro.</para>
 @y
+    <!-- It's because "free -v" shows "used" greater than "total", and
+         a negative "free" for "Comm" line.  The "total" value is from
+         "CommitLimit" in /proc/meminfo, which is the limit for one process.
+         But the "used" value is from "Committed_AS" in the same file,
+         which is the total commited virtual memory space of all processes.
+         I'll make a report to upstream anyway.  -->
     <para>
-    pkill に関連するテストが 5 つ失敗します。
-    これはテストが更新されていないために発生します。
+    ホストディストリビューション上において、特定のアプリケーション（たとえば JVM や ウェブブラウザー）が独自のメモリ割り当てを行っている場合に、<filename>free with commit</filename> という名前のテストが失敗します。
     </para>
 @z
 

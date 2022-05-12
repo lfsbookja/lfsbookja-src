@@ -52,9 +52,9 @@
 @z
 
 @x
-<!ENTITY gcc-fin-sbu "153 SBU (with tests)">
+<!ENTITY gcc-fin-sbu "160 SBU (with tests)">
 @y
-<!ENTITY gcc-fin-sbu "153 SBU (テスト込み)">
+<!ENTITY gcc-fin-sbu "160 SBU (テスト込み)">
 @z
 
 @x

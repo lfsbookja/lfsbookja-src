@@ -75,19 +75,6 @@
 @z
 
 @x
-    <note><para>There is one test that fails in the chroot environment and
-    causes the tests to hang forever.  The problem does not occur outside
-    of the chroot environment.
-    To work around the problem, delete the test:</para>
-@y
-    <note><para>
-    chroot 環境内においては、テストが 1 つ失敗して、テストをハングさせてしまいます。
-    この問題は chroot 環境から抜け出れば発生しません。
-    これを回避するため、そのテストは削除します。
-    </para>
-@z
-
-@x
     <para>The <emphasis>hardlink</emphasis> tests will fail if the host's kernel 
     does not have the option CONFIG_CRYPTO_USER_API_HASH set.</para>
 @y

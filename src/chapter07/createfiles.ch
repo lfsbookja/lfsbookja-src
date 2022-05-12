@@ -15,185 +15,6 @@
   <title>重要なファイルとシンボリックリンクの生成</title>
 @z
 
-%@x
-%  <para>Some programs use hard-wired paths to programs which do not exist yet.
-%  In order to satisfy these programs, create a number of symbolic links which
-%  will be replaced by real files throughout the course of this chapter after the
-%  software has been installed:</para>
-%@y
-%  <para>
-%  プログラムの中には固定的に他のプログラムへのパスを保持しているものがあります。
-%  そのパスは今の時点ではまだ存在していません。
-%  このようなプログラムを正しく動作させるため、シンボリックリンクをいくつか作成します。
-%  このリンクは本章の作業を通じて各種ソフトウェアをインストールしていくことで、 その実体であるファイルに置き換えられていきます。
-%  </para>
-%@z
-
-%@x
-%    <title>The purpose of each link:</title>
-%@y
-%    <title>各リンクの目的</title>
-%@z
-
-%@x /bin/bash
-%        <para>Many <command>bash</command> scripts specify
-%        <filename>/bin/bash</filename>.</para>
-%@y
-%        <para>
-%        <command>bash</command> スクリプトはたいてい <filename>/bin/bash</filename> として記述されます。
-%        </para>
-%@z
-
-%@x /bin/cat
-%        <para>This pathname is hard-coded into Glibc's configure script.</para>
-%@y
-%        <para>
-%        このパス名は Glibc の configure スクリプトにてハードコーディングされています。
-%        </para>
-%@z
-
-%@x /bin/dd
-%        <para>The path to <filename>dd</filename> will be hard-coded into the
-%        <filename>/usr/bin/libtool</filename> utility.</para>
-%@y
-%        <para>
-%        <filename>dd</filename> へのパスが <filename>/usr/bin/libtool</filename> ユーティリティーにハードコーディングされます。
-%        </para>
-%@z
-
-%@x /bin/echo
-%        <para>This is to satisfy one of the tests in Glibc's test suite, which
-%        expects <filename>/bin/echo</filename>.</para>
-%@y
-%        <para>
-%        Glibc のテストスイートの中に <filename>/bin/echo</filename> を用いているものがあり、これを成功させるためです。
-%        </para>
-%@z
-
-%@x /usr/bin/env
-%        <para>This pathname is hard-coded into some packages build procedures.
-%        <!-- systemd  This may not be needed if we move sysd to the end--></para>
-%@y
-%        <para>
-%        このパスは、パッケージのビルドを通じてハードコーディングされることがあります。
-%        <!-- systemd  This may not be needed if we move sysd to the end-->
-%        </para>
-%@z
-
-%@x /usr/bin/install
-%        <para>The path to <filename>install</filename> will be hard-coded into
-%        the <filename>/usr/lib/bash/Makefile.inc</filename> file.</para>
-%@y
-%        <para>
-%        <filename>install</filename> へのパスが <filename>/usr/lib/bash/Makefile.inc</filename> ファイル内にてハードコーディングされます。
-%        </para>
-%@z
-
-%@x /bin/ln
-%        <para>The path to <filename>ln</filename> will be hard-coded into the
-%        <filename>/usr/lib/perl5/&perl-version;/&lt;target-triplet&gt;/Config_heavy.pl</filename>
-%         file.</para>
-%@y
-%        <para>
-%        <filename>ln</filename> へのパスが <filename>/usr/lib/perl5/&perl-version;/&lt;target-triplet&gt;/Config_heavy.pl</filename> ファイル内にてハードコーディングされます。
-%        </para>
-%@z
-
-%@x /bin/pwd
-%        <para>Some <command>configure</command> scripts, particularly Glibc's,
-%        have this pathname hard-coded.</para>
-%@y
-%        <para>
-%        特に Glibc などの <command>configure</command> スクリプトにて、このパス名がハードコーディングされています。
-%        </para>
-%@z
-
-%@x /bin/rm
-%        <para>The path to <filename>rm</filename> will be hard-coded into the
-%        <filename>/usr/lib/perl5/&perl-version;/&lt;target-triplet&gt;/Config_heavy.pl</filename>
-%         file.</para>
-%@y
-%        <para>
-%        <filename>rm</filename> へのパスが <filename>/usr/lib/perl5/&perl-version;/&lt;target-triplet&gt;/Config_heavy.pl</filename> ファイル内にてハードコーディングされます。
-%        </para>
-%@z
-
-%@x /bin/stty
-%        <para>This pathname is hard-coded into Expect, therefore it is needed
-%        for Binutils and GCC test suites to pass.</para>
-%@y
-%        <para>
-%        このパス名は Expect にてハードコーディングされています。
-%        したがって Binutils と GCC のテストスイートを成功させるために必要となります。
-%        </para>
-%@z
-
-%@x /usr/bin/perl
-%        <para>Many Perl scripts hard-code this path to the
-%        <command>perl</command> program.</para>
-%@y
-%        <para>
-%        <command>perl</command> コマンドに対して Perl スクリプトはたいていこのパス名を用いています。
-%        </para>
-%@z
-
-%@x /usr/lib/libgcc_s.so
-%        <para>Glibc needs this for the pthreads library to work.</para>
-%@y
-%        <para>
-%        pthreads ライブラリが正常動作するように Glibc にとって必要となります。
-%        </para>
-%@z
-
-%@x /usr/lib/libstdc++{,.6}
-%        <para>This is needed by several tests in Glibc's test suite, as well as
-%        for C++ support in GMP.</para>
-%@y
-%        <para>
-%        Glibc のテストスイート、例えば GMP における C++ サポートなどにおいて、これを必要とするものがあります。
-%        </para>
-%@z
-
-%@x /bin/sh
-%        <para>Many shell scripts hard-code <filename>/bin/sh</filename>.</para>
-%@y
-%        <para>
-%        シェルスクリプトはたいてい <filename>/bin/sh</filename> がハードコーディングされています。
-%        </para>
-%@z
-
-%@x /usr/lib/lib{blkid,fdisk,mount,uuid}.so*, /usr/include/{blkid,libfdisk,libmount,uuid}, /usr/lib/pkgconfig/{blkid,fdisk,mount,uuid}.pc
-%        <para>These links and files allow
-%        <phrase revision="sysv">eudev</phrase>
-%        <phrase revision="systemd">systemd</phrase> to find the
-%        util-linux libraries installed in chapter 5, without creating
-%        wrong references to /tools. The uuid library is also needed for
-%        building a python module.</para>
-%@y
-%        <para>
-%        このリンクやファイルにより、
-%        <phrase revision="sysv">eudev</phrase>
-%        <phrase revision="systemd">systemd</phrase>
-%        が第 5 章にてインストールした util-linux のライブラリを探し出せるようにします。
-%        ここで /tools への誤った参照は作らないようにしています。
-%        また python モジュールをビルドできるようにするため uuid ライブラリも必要となります。
-%        </para>
-%@z
-
-%@x /tools/lib/locale/locale-archive
-%        <para>Some programs built in chapter 5 look for installed
-%        locale descriptions in this file. The locale descriptions will be
-%        installed in <filename>/usr/lib/locale/locale-archive</filename>
-%        after building the final glibc. The symlink allows those programs
-%        to use the installed locales.</para>
-%@y
-%        <para>
-%        第 5 章にてビルドしたプログラムの中には、インストール済のこのファイル内のロケール記述を検索するものがあります。
-%        そのロケール記述は、最終的な glibc がビルドされた後は <filename>/usr/lib/locale/locale-archive</filename> にインストールされます。
-%        以下のシンボリックリンクを作成することで、現在インストールされているロケール記述をそういったプログラムが利用できるようにします。
-%        </para>
-%@z
-
 @x
   <para>Historically, Linux maintains a list of the mounted file systems in the
   file <filename>/etc/mtab</filename>. Modern kernels maintain this list
@@ -268,9 +89,14 @@
   url="http://refspecs.linuxfoundation.org/lsb.shtml"/>) only recommends that,
   besides the group <systemitem class="groupname">root</systemitem> with a
   Group ID (GID) of 0, a group <systemitem class="groupname">bin</systemitem>
-  with a GID of 1 be present. All other group names and GIDs can be chosen
-  freely by the system administrator since well-written programs do not depend
-  on GID numbers, but rather use the group's name.</para>
+  with a GID of 1 be present. The GID of 5 is widely used for
+  <systemitem class="groupname">tty</systemitem> group, and the number 5 is
+  also used in <phrase revision="systemd">systemd</phrase>
+  <phrase revision="sysv"><filename>/etc/fstab</filename></phrase> for the
+  <systemitem class="filesystem">devpts</systemitem> filesystem.
+  All other group names and GIDs can be chosen freely by the system
+  administrator since well-written programs do not depend on GID numbers,
+  but rather use the group's name.</para>
 @y
   <para>
   作成するグループは何かの標準に基づいたものではありません。
@@ -279,8 +105,32 @@
   Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照) では <systemitem
   class="groupname">root</systemitem> グループのグループID (GID) は 0、<systemitem
   class="groupname">bin</systemitem> グループの GID は 1 を定めているにすぎません。
+  GID 5 は <systemitem class="groupname">tty</systemitem> グループに対して広く用いられています。
+  また数値 5 は <systemitem class="filesystem">devpts</systemitem> ファイルシステムに対して <phrase
+  revision="systemd">systemd</phrase>
+  <phrase revision="sysv"><filename>/etc/fstab</filename></phrase> においても用いられています。
   他のグループとその GID はシステム管理者が自由に取り決めることができます。
   というのも通常のプログラムであれば GID の値に依存することはなく、あくまでグループ名を用いてプログラミングされているからです。
+  </para>
+@z
+
+@x
+  <para>The ID 65534 is used by the kernel for NFS and separate user
+  namespaces for unmapped users and groups (those exist on the NFS server
+  or the parent user namespace, but <quote>do not exist</quote> on the local
+  machine or in the separate namespace).  We assign
+  <systemitem class="username">nobody</systemitem> and
+  <systemitem class="groupname">nogroup</systemitem> for it to avoid an
+  unnamed ID.  But other distros may treat this ID differently, so any
+  portable program should not depend on this assignment.</para>
+@y
+  <para>
+  ID 65534 は NFS のカーネルが利用し、マップされていないユーザーやグループに対するユーザー名前空間を切り分けます
+  （これは NFS サーバー上や親のユーザー空間に存在しますが、ローカルマシンや分離された名前空間には存在しません）。
+  未割り当ての ID を避けるために、この ID を <systemitem
+  class="username">nobody</systemitem> と <systemitem
+  class="groupname">nogroup</systemitem> に用いることにします。
+  他のディストリビューションにおいては、この ID を異なる用い方をしている場合があるため、移植性を考慮するプログラムでは、ここでの割り当てに依存しないようにしてください。
   </para>
 @z
 

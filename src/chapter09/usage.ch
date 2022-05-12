@@ -55,7 +55,7 @@
     generally not used. See <filename>init(8)</filename> for more details), and
     each one of those corresponds to the actions the computer is supposed to
     perform when it starts up. The default run-level is 3. Here are the
-    descriptions of the different run-levels as they are implemented:</para>
+    descriptions of the different run-levels as they are implemented in LFS:</para>
 @y
     <para>
     SysVinit (これ以降は<quote>init</quote>と表現します) はランレベルという仕組みにより動作します。
@@ -63,7 +63,7 @@
     (実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
     詳しくは <filename>init(8)</filename> を参照してください。)
     各レベルは、コンピューターの起動時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
-    ランレベルの詳細を以下に説明します。
+    LFS において実装されるランレベルの詳細を以下に説明します。
     </para>
 @z
 

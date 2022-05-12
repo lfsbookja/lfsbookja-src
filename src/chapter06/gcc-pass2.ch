@@ -50,64 +50,12 @@
     </para>
 @z
 
-%@x
-%    <para>Once again, change the location of GCC's default dynamic linker to
-%    use the one installed in <filename
-%    class="directory">/tools</filename>.</para>
-%@y
-%    <para>
-%    もう一度、GCC のデフォルトのダイナミックリンカーの配置ディレクトリを、既にインストールされている <filename
-%    class="directory">/tools</filename> とします。
-%    </para>
-%@z
-
 @x
     <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
     <para>
     x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
-    </para>
-@z
-
-%@x
-%    <para>Our first build of GCC has installed a couple of internal system
-%    headers.  Normally one of them, <filename>limits.h</filename>, will in turn
-%    include the corresponding system <filename>limits.h</filename> header, in
-%    this case, <filename>/tools/include/limits.h</filename>. However, at the
-%    time of the first build of gcc <filename>/tools/include/limits.h</filename>
-%    did not exist, so the internal header that GCC installed is a partial,
-%    self-contained file and does not include the extended features of the
-%    system header. This was adequate for building the temporary libc, but this
-%    build of GCC now requires the full internal header.  Create a full version
-%    of the internal header using a command that is identical to what the GCC
-%    build system does in normal circumstances:</para>
-%@y
-%    <para>
-%    第1回めの GCC のビルドでは、内部的なシステムヘッダーをインストールしています。
-%    その1つ <filename>limits.h</filename> は、これに対応づくシステムヘッダー <filename>limits.h</filename> を読み込みます。
-%    そのファイルは実際には <filename>/tools/include/limits.h</filename> となります。
-%    しかし 1 回めの GCC のビルド時には <filename>/tools/include/limits.h</filename> は存在しません。
-%    したがって GCC がインストールする内部ヘッダーは、部分的で自己完結した (self-contained) もののみとなり、システムヘッダーが持つ拡張機能は含まれません。
-%    一時的な libc を構築するならこれは正しかったのですが、この段階での GCC のビルドでは、内部ヘッダーが完全な形のものでなければなりません。
-%    完全な内部ヘッダーを生成するために、GCC ビルドシステムが通常行っている方法と同じようにするための、以下のコマンドを実行します。
-%    </para>
-%@z
-
-%@x
-%    <para>Fix an issue with GCC-10.1 when building with a cross
-%    compiler:</para>
-%@y
-%    <para>
-%    クロスコンパイラーを使ってビルドするにあたり、GCC-10.1 の問題を修正します。
-%    </para>
-%@z
-
-@x
-    <para>Fix an issue causing failure cross-compiling libstdc++:</para>
-@y
-    <para>
-    libstdc++ のクロスコンパイルができなくなっている問題を修正します。
     </para>
 @z
 
@@ -148,46 +96,6 @@
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title><!-- WIP -->
 @z
-
-%@x --enable-languages=c,c++
-%          <para>This option ensures that both the C and C++ compilers are
-%          built.</para>
-%@y
-%          <para>
-%          C と C++ の両コンパイラーを生成することを指示します。
-%          </para>
-%@z
-
-%@x --disable-libstdcxx-pch
-%          <para>Do not build the pre-compiled header (PCH) for
-%          <filename class="libraryfile">libstdc++</filename>. It takes up a
-%          lot of space, and we have no use for it.</para>
-%@y
-%          <para>
-%          <filename class="libraryfile">libstdc++</filename> に対してプリコンパイルヘッダー (pre-compiled header; PCH) をビルドしないように指示します。
-%          これを含めてしまうとサイズが増えることになり、そもそも利用する必要がありません。
-%          </para>
-%@z
-
-%@x --disable-bootstrap
-%          <para>For native builds of GCC, the default is to do a "bootstrap"
-%          build. This does not just compile GCC, but compiles it several times.
-%          It uses the programs compiled in a first round to compile itself a
-%          second time, and then again a third time.  The second and third
-%          iterations are compared to make sure it can reproduce itself
-%          flawlessly. This also implies that it was compiled correctly.
-%          However, the LFS build method should provide a solid compiler
-%          without the need to bootstrap each time.</para> 
-%@y
-%          <para>
-%          GCC のネイティブビルドを行うには、デフォルトでは "ブートストラップ" ビルドを行ないます。
-%          これは単に GCC をコンパイルするのではなく、数回のコンパイルを繰り返します。
-%          つまり一回めにビルドされたプログラムを使って二回め、三回めのコンパイルを行うものです。
-%          二回め、三回めとコンパイルを繰り返すのは、これによって自分自身を再生成して完璧なものを作り出すためです。
-%          このことによってコンパイルが正確に行われたことを暗に示すことにもなります。
-%          しかし LFS のビルドでは、何度もブートストラップを行う必要のない、手堅い(solid) コンパイラーを作り出します。
-%          </para>
-%@z
 
 @x -with-build-sysroot=$LFS
           <para>Normally, using <parameter>--host</parameter> ensures that
@@ -285,74 +193,6 @@
     <command>cc</command> を利用することにすれば、システム管理者がどの C コンパイラーをインストールすべきかを判断する必要がなくなります。
     </para>
 @z
-
-%@x
-%    <para>At this point, it is imperative to stop and ensure that the basic
-%    functions (compiling and linking) of the new toolchain are working as
-%    expected. To perform a sanity check, run the following commands:</para>
-%@y
-%    <para>
-%    この時点で、構築したツールチェーンの基本的な (コンパイルやリンクなどの) 機能が正しく動作していることを確認する必要があります。
-%    健全性検査 (sanity check) を行うために以下を実行してください。
-%    </para>
-%@z
-
-%@x
-%    <para>If everything is working correctly, there should be no errors,
-%    and the output of the last command will be of the form:</para>
-%@y
-%    <para>
-%    問題なく動作した場合はエラーがなかったということで、最後のコマンドから出力される結果は以下のようになるはずです。
-%    </para>
-%@z
-
-%@x
-%    <para>Note that the dynamic linker will be /tools/lib/ld-linux.so.2 
-%    for 32-bit machines.</para>
-%@y
-%    <para>
-%    32 ビットマシンに対するダイナミックリンカーは /tools/lib/ld-linux.so.2 となります。
-%    </para>
-%@z
-
-%@x
-%    <para>If the output is not shown as above or there was no output at all,
-%    then something is wrong. Investigate and retrace the steps to find out
-%    where the problem is and correct it. This issue must be resolved before
-%    continuing on. First, perform the sanity check again, using
-%    <command>gcc</command> instead of <command>cc</command>. If this works,
-%    then the <filename class="symlink">/tools/bin/cc</filename> symlink is
-%    missing. Install the symlink as per above.
-%    Next, ensure that the <envar>PATH</envar> is correct. This
-%    can be checked by running <command>echo $PATH</command> and verifying that
-%    <filename class="directory">/tools/bin</filename> is at the head of the
-%    list. If the <envar>PATH</envar> is wrong it could mean that you are not
-%    logged in as user <systemitem class="username">lfs</systemitem> or that
-%    something went wrong back in <xref linkend="ch-preps-settingenviron"
-%    role="."/></para>
-%@y
-%    <para>
-%    コマンドの出力結果が上と異なっていたり、あるいは何も出力されなかった場合は、何かがおかしいことを意味します。
-%    どこに問題があるのか調査、再試行を行って解消してください。
-%    解決せずにこの先に進まないでください。
-%    <command>cc</command> ではなく <command>gcc</command> を使って再度健全性検査を行ってみてください。
-%    これで解決したなら <filename class="symlink">/tools/bin/cc</filename> のシンボリックリンクが正しくないということです。
-%    正しく生成し直してください。
-%    また環境変数 <envar>PATH</envar> が正しいかどうかも確認してください。
-%    <command>echo $PATH</command> を実行して、実行パスリストの先頭が <filename class="directory">/tools/bin</filename> であるかどうか確認します。
-%    <envar>PATH</envar> が間違っていたなら、実はあなたは <systemitem
-%    class="username">lfs</systemitem> ユーザーでログインしていないのかもしれませんし <xref
-%    linkend="ch-preps-settingenviron" role=""/>での作業に間違いがあったのかもしれません。
-%    </para>
-%@z
-
-%@x
-%    <para>Once all is well, clean up the test files:</para>
-%@y
-%    <para>
-%    すべてが終了したらテストファイルを削除します。
-%    </para>
-%@z
 
 @x
     <para>Details on this package are located in

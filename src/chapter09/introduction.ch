@@ -67,18 +67,19 @@
 @x
     <para>The <command>init</command> program is controlled by the
     <filename>/etc/inittab</filename> file and is organized into run levels that
-    can be run by the user:</para>
+    can be run by the user. In LFS, they are used as follows:</para>
 @y
     <para>
     <command>init</command> プログラムは <filename>/etc/inittab</filename> ファイルにより制御されます。
     そしてユーザーが設定可能なランレベルを設定します。
+    LFS においては以下のものが利用されます。
     </para>
 @z
 
 @x
 <literallayout>0 &mdash; halt
 1 &mdash; Single user mode
-2 &mdash; Multiuser, without networking
+2 &mdash; User definable
 3 &mdash; Full multiuser mode
 4 &mdash; User definable
 5 &mdash; Full multiuser mode with display manager
@@ -86,7 +87,7 @@
 @y
 <literallayout>0 &mdash; 停止 (halt)
 1 &mdash; シングルユーザーモード
-2 &mdash; マルチユーザー、ネットワークなし
+2 &mdash; ユーザー定義
 3 &mdash; フルマルチユーザーモード
 4 &mdash; ユーザー定義
 5 &mdash; フルマルチユーザーモード、ディスプレイマネージャーあり

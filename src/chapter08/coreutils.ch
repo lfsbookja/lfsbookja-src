@@ -55,14 +55,6 @@
 @z
 
 @x
-<para>Fix a problem with autoconf-2.70 in an included gnulib .m4 file:</para>
-@y
-<para>
-autoconf-2.70 に含まれている gnulib .m4 ファイルの問題を修正します。
-</para>
-@z
-
-@x
     <para>Now prepare Coreutils for compilation:</para>
 @y
     <para>&PreparePackage1;Coreutils&PreparePackage2;</para>

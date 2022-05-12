@@ -168,41 +168,13 @@
 @z
 
 @x
-    <para>Eight tests related to analyzer are known to fail.</para>
+    <para>In g++, four tests related to PR100400 are known to be reported
+    as both XPASS and FAIL.  It's because the test file for this known issue
+    is not well written.</para>
 @y
     <para>
-    アナライザーに関するテストが 8 つ失敗します。
-    </para>
-@z
-
-@x
-    <para>One test named <filename>asan_test.C</filename> is known to
-    fail.</para>
-@y
-    <para>
-    <filename>asan_test.C</filename> というテストが 1 つ失敗します。
-    </para>
-@z
-
-@x
-    <para>In libstdc++, one test named <filename>49745.cc</filename> is
-    known to fail because the header dependencies in glibc have
-    changed.</para>
-@y
-    <para>
-    libstdc++ において <filename>49745.cc</filename> というテストが 1 つ失敗します。
-    これは glibc 内ヘッダーの依存関係が変更されているからです。
-    </para>
-@z
-
-@x
-    <para>In libstdc++, one numpunct test and six tests related to get_time are
-    known to fail.  These are all because the locale definitions in glibc have
-    changed but libstdc++ does not currently support those changes.</para>
-@y
-    <para>
-    libstdc++ においては、numpunct のテスト 1 つと get_time に関連するテストが 6 つ失敗します。
-    この理由は、glibc におけるロケール定義が変更されているからであり、libstdc++ はその変更に対応していないためです。
+    g++ においては PR100400 に関連するテスト 4 つが XPASS および FAIL として出力されます。
+    この問題はテストファイルが適切に記述されていないために発生します。
     </para>
 @z
 
@@ -234,11 +206,10 @@
 @z
 
 @x
-    <para>Install the package and remove an unneeded directory:</para>
+    <para>Install the package:</para>
 @y
     <para>
     &InstallThePackage;
-    不要なディレクトリは削除します。
     </para>
 @z
 

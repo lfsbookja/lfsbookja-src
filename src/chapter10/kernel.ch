@@ -188,6 +188,16 @@
       <title>上の設定項目の説明</title>
 @z
 
+@x Compile the kernel with warnings as errors
+          <para>This may cause building failure if the compiler and/or
+          configuration are different from those of the kernel
+          developers.</para>
+@y
+          <para>
+          これを設定すると、カーネル開発者が採用するコンパイラーや設定と異なる場合に、カーネルビルドエラーとなる場合があります。
+          </para>
+@z
+
 @x Enable kernel headers through /sys/kernel/kheaders.tar.xz
           <para>This will require <command>cpio</command> building the kernel.
           <command>cpio</command> is not installed by LFS.</para>

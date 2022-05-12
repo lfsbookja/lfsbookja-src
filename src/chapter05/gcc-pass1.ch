@@ -69,52 +69,6 @@
     </para></note>
 @z
 
-%@x
-%    <para>The following command will change the location of GCC's default
-%    dynamic linker to use the one installed in <filename
-%    class="directory">/tools</filename>. It also removes <filename
-%    class="directory">/usr/include</filename> from GCC's include search path.
-%    Issue:</para>
-%@y
-%    <para>
-%    以下のコマンドは GCC のデフォルトのダイナミックリンカーの配置ディレクトリを、既にインストールされている <filename
-%    class="directory">/tools</filename> とします。
-%    また GCC のインクルードパスから <filename
-%    class="directory">/usr/include</filename> を除きます。
-%    </para>
-%@z
-
-%@x
-%    <para>In case the above seems hard to follow, let's break it down a bit.
-%    First we copy the files <filename>gcc/config/linux.h</filename>,
-%    <filename>gcc/config/i386/linux.h</filename>, and
-%    <filename>gcc/config/i386/linux64.h</filename> to a file of
-%    the same name but with an added suffix of <quote>.orig</quote>. Then the
-%    first sed expression prepends <quote>/tools</quote> to every instance of
-%    <quote>/lib/ld</quote>, <quote>/lib64/ld</quote> or
-%    <quote>/lib32/ld</quote>, while the second one replaces hard-coded
-%    instances of <quote>/usr</quote>. Next, we add our define statements which
-%    alter the default startfile prefix to the end of the file. Note that the
-%    trailing <quote>/</quote> in <quote>/tools/lib/</quote> is required.
-%    Finally, we use <command>touch</command> to update the timestamp on the
-%    copied files.  When used in conjunction with <command>cp -u</command>, this
-%    prevents unexpected changes to the original files in case the commands are
-%    inadvertently run twice.</para>
-%@y
-%    <para>
-%    上のコマンドがよく分からない場合は一つ一つ読み下していってください。
-%    まず <filename>gcc/config/linux.h</filename>,
-%    <filename>gcc/config/i386/linux.h</filename>, and
-%    <filename>gcc/config/i386/linux64.h</filename> というファイルを、ファイル名称の末尾に <quote>.orig</quote> を付け加えてコピーします。
-%    そして一つめの sed コマンドでは、そのファイル内にある<quote>/lib/ld</quote>, <quote>/lib64/ld</quote>, <quote>/lib32/ld</quote>という記述部分の頭に<quote>/tools</quote>を付与します。
-%    また二つめの sed コマンドによってハードコーディングされている<quote>/usr</quote>という部分を書き換えます。
-%    そしてここで加えるべき定義文をファイルの末尾に追加し、検索パスと startfile プリフィックスを変更します。
-%    この際に<quote>/tools/lib/</quote>の終わりには<quote>/</quote>が必要となります。
-%    最後に <command>touch</command> によってコピーしたファイルのタイムスタンプを更新します。
-%    <command>cp -u</command> を用いるのは、誤ってコマンドを二度起動したとしてもオリジナルファイルを壊さないようにするためです。
-%    </para>
-%@z
-
 @x
     <para>On x86_64 hosts, set the default directory name for
     64-bit libraries to <quote>lib</quote>:</para>
@@ -123,26 +77,6 @@
     x86_64 ホストにおいて、64 ビットライブラリに対するデフォルトのディレクトリ名は<quote>lib</quote>です。
     </para>
 @z
-
-%@x
-%    <para>GCC doesn't detect stack protection correctly, which causes problems
-%    for the build of Glibc-&glibc-version;, so fix that by issuing the following
-%    command:</para>
-%@y
-%    <para>
-%    GCC はスタックプロテクション (stack protection) を正しく検出しません。
-%    このことは Glibc-&glibc-version; においてビルドする際には問題となります。
-%    そこで以下のコマンドを実行することで解消します。
-%    </para>
-%@z
-
-%@x
-%    <para>Also fix a problem identified upstream:</para>
-%@y
-%    <para>
-%    アップストリームが認識している問題を修正します。
-%    </para>
-%@z
 
 @x
     <para>The GCC documentation recommends building GCC
@@ -204,49 +138,6 @@
           </para>
 @z
 
-%@x --with-local-prefix=/tools
-%          <para>The local prefix is the location in the system that GCC will search
-%          for locally installed include files. The default is <filename>/usr/local</filename>.
-%          Setting this to <filename>/tools</filename> helps keep the host location of
-%          <filename>/usr/local</filename> out of this GCC's search path.</para>
-%@y
-%          <para>
-%          ローカルプリフックス (local prefix) は、GCC がローカルにインストールされているインクルードファイルを探しにいくディレクトリを意味します。
-%          そのデフォルトは <filename>/usr/local</filename> です。
-%          この設定を <filename>/tools</filename> とすることで、GCC が探し出すパスから <filename>/usr/local</filename> を除外します。
-%          </para>
-%@z
-
-%@x --with-native-system-header-dir=/tools/include
-%          <para>By default, GCC searches <filename>/usr/include</filename> for
-%          system headers. In conjunction with the sysroot switch, this would
-%          normally translate to <filename>$LFS/usr/include</filename>. However
-%          the headers that will be installed in the next two sections will go
-%          to <filename>$LFS/tools/include</filename>. This switch ensures that
-%          gcc will find them correctly. In the second pass of GCC, this same
-%          switch will ensure that no headers from the host system are
-%          found.</para>
-%@y
-%          <para>
-%          GCC がシステムヘッダーを探し出すデフォルトのパスは <filename>/usr/include</filename> です。
-%          後に root を変更する際には、このディレクトリは <filename>$LFS/usr/include</filename> となります。
-%          しかしこの直後の2つの作業を通じて、ヘッダーをインストールする先は <filename>$LFS/tools/include</filename> としています。
-%          つまり本スイッチは GCC がヘッダーを正しく見つけ出せるようにするものです。
-%          GCC の2回めのビルドでは、同じスイッチを用いて、ホストシステムのヘッダーは一切見つけ出さないようにします。
-%          </para>
-%@z
-
-@x --enable-initfini-array
-          <para>This switch forces the use of some internal data structures
-          that are needed but cannot be detected when building a cross
-          compiler.</para>
-@y
-          <para>
-          このスイッチは内部データ構造を利用することを指示します。
-          クロスコンパイラーのビルド時にこれが必要になりますが、自動では設定されません。
-          </para>
-@z
-
 @x --disable-shared
           <para>This switch forces GCC to link its internal libraries
           statically. We need this because the shared libraries require glibc,
@@ -298,43 +189,11 @@
     <para>GCC をコンパイルします。</para>
 @z
 
-%@x
-%    <para>Compilation is now complete. At this point, the test suite would
-%    normally be run, but, as mentioned before, the test suite framework is
-%    not in place yet. The benefits of running the tests at this point
-%    are minimal since the programs from this first pass will soon be
-%    replaced.</para>
-%@y
-%    <para>
-%    コンパイルが終了しました。
-%    この時点でもテストスイートを実行することはできます。
-%    ただ前にも述べているように、テストスイートのフレームワークがまだ準備できていません。
-%    さらにこの時点で生成されるプログラムは、すぐに次の生成作業によって置き換えられますから、この時点でテストを実行することはあまり意味がありません。
-%    </para>
-%@z
-
 @x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
 @z
-
-% @x
-%     <para>Using <parameter>--disable-shared</parameter> means that the
-%     <filename>libgcc_eh.a</filename> file isn't created and installed. The
-%     Glibc package depends on this library as it uses
-%     <parameter>-lgcc_eh</parameter> within its build system. This dependency
-%     can be satisfied by creating a symlink to <filename>libgcc.a</filename>,
-%     since that file will end up containing the objects normally contained in
-%     <filename>libgcc_eh.a</filename>:</para>
-% @y
-%     <para>
-%     <parameter>--disable-shared</parameter> オプションを指定すると <filename>libgcc_eh.a</filename> を生成せずインストールしません。
-%     Glibc パッケージはこのライブラリに依存しており、ビルドの際に <parameter>-lgcc_eh</parameter> を指定することで利用されます。
-%     依存している点は <filename>libgcc.a</filename> へのシンボリックリンクを生成しておけば問題はありません。
-%     <filename>libgcc_eh.a</filename> に含まれるオブジェクトが、最終的には <filename>libgcc.a</filename> の中にも含まれることになるからです。
-%     </para>
-% @z
 
 @x
     <para>This build of GCC has installed a couple of internal system
