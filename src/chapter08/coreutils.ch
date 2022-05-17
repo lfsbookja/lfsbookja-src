@@ -162,6 +162,14 @@
 @z
 
 @x
+    <para>The sort-NaN-infloop test is known to fail with GCC-12.</para>
+@y
+    <para>
+    sort-NaN-infloop というテストは GCC-12 を用いると失敗します。
+    </para>
+@z
+
+@x
     <para>Remove the temporary group:</para>
 @y
     <para>

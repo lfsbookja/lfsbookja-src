@@ -44,6 +44,32 @@
 @z
 
 @x
+      <para>2022-05-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.17.7.  Fixes
+          <ulink url="&lfs-ticket-root;5059">#5059</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to psmisc-23.5.  Fixes
+          <ulink url="&lfs-ticket-root;5060">#5060</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-05-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-5.17.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;5059">#5059</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - psmisc-23.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;5060">#5060</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-05-01</para>
       <itemizedlist>
         <listitem>
