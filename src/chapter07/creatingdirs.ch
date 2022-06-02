@@ -24,6 +24,17 @@
 @z
 
 @x
+  <note><para>Some of the directories mentioned in this section may be
+  already created earlier with explicit instructions or when installing some
+  packages.  They are repeated below for completeness.</para></note>
+@y
+  <note><para>
+  本節において触れるディレクトリの中には、明示的な指示か、あるいは何かのパッケージインストールによってすでに生成済みであるものがあります。
+  以下では完全を期して繰り返し生成することにします。
+  </para></note>
+@z
+
+@x
   <para>Create some root-level directories that are not in the limited set
     required in the previous chapters by issuing the following command:</para>
 @y
@@ -32,17 +43,6 @@
   これは前章において必要としていた限定的なものの中には含まれていないものです。
   以下のコマンドを実行して生成します。
   </para>
-@z
-
-@x
-  <note><para>Some of the directories below have already been created earlier
-  with explicit instructions or when installing some packages.  They are
-  repeated below for completeness.</para></note>
-@y
-  <note><para>
-  以下のディレクトリの中には、明示的な操作により、あるいはパッケージのインストールにより、すでに生成されているものがあります。
-  以下では漏れることがないように、もう一度実行しています。
-  </para></note>
 @z
 
 @x

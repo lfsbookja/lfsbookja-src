@@ -115,7 +115,7 @@
           </para>
 @z
 
-@x libcheck.{a,so}
+@x libcheck.so
           <para>Contains functions that allow Check to be called from a test
           program</para>
 @y

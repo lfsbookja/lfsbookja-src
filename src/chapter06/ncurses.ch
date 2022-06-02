@@ -131,6 +131,15 @@
 @z
 
 @x
+    <para>Remove an unneeded static library not handled by
+    <command>configure</command>:</para>
+@y
+    <para>
+    <command>configure</command> が扱っていない不要なスタティックライブラリを削除します。
+    </para>
+@z
+
+@x
       <title>The meaning of the install options:</title>
 @y
       <title>&MeaningOfOption1;install&MeaningOfOption2;</title>

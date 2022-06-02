@@ -25,24 +25,6 @@
 @z
 
 @x
-    <para>First, apply a patch to fix a security vulnerability and regressions
-    with hostnames and idle units:</para>
-@y
-    <para>
-    セキュリティぜい弱性、およびホスト名、アイドルユニットに関する問題を修正するパッチを適用します。
-    </para>
-@z
-
-@x
-    <para>Now, apply a patch to fix a problem with the linux kernel's headers in 
-    version 5.17 and later:</para>
-@y
-    <para>
-    また linux カーネルヘッダー、バージョン 5.17 以降に対する問題の修正のため、以下のパッチを適用します。
-    version 5.17 and later:</para>
-@z
-
-@x
     <para>Remove two unneeded groups,
     <systemitem class="groupname">render</systemitem> and
     <systemitem class="groupname">sgx</systemitem>, from the default udev
@@ -172,6 +154,15 @@
           アップストリームにおいて試験的機能とみなされている機能を無効にします。
 @z
 
+@x -Dpamconfdir=no
+          <para>Prevent the installation of a PAM configuration file not
+          functional on LFS.</para>
+@y
+          <para>
+          PAM 設定は LFS 上では機能しないため、これをインストールしないようにします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -193,14 +184,6 @@
 @z
 
 @x
-    <para>Remove a useless directory:</para>
-@y
-    <para>
-    不要なディレクトリを削除します。
-    </para>
-@z
-
-@x
     <para>Create the <filename>/etc/machine-id</filename> file needed by
     <command>systemd-journald</command>:</para>
 @y
@@ -214,6 +197,18 @@
 @y
     <para>
     基本的なターゲット構造を設定します。
+    </para>
+@z
+
+@x
+    <para>Disable a service for upgrading binary distros.  It's useless for
+    a basic Linux system built from source, and it will report an error if
+    it's enabled but not configured:</para>
+@y
+    <para>
+    バイナリディストリビューションの更新サービスを無効にします。
+    ソースからのビルドを行う単純な Linux システムでは不要だからです
+    有効化されても設定が行われていない場合には、エラーが出力されます。
     </para>
 @z
 

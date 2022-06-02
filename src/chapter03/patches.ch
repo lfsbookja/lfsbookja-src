@@ -121,18 +121,6 @@
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @z
 
-@x Systemd Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&systemd-upstream-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&systemd-upstream-fixes-patch;"/></para>
-@z
-
-@x Systemd Kernel Fixes Patch
-        <para>Download: <ulink url="&patches-root;&systemd-kernel-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&systemd-kernel-fixes-patch;"/></para>
-@z
-
 @x Xz Upstream Fix Patch
         <para>Download: <ulink url="&patches-root;&xz-upstream-fix-patch;"/></para>
 @y

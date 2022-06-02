@@ -44,6 +44,82 @@
 @z
 
 @x
+      <para>2022-05-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20220524.
+          Addresses <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.18.0.  Fixes
+          <ulink url="&lfs-ticket-root;5065">#5065</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.18.1.  Fixes
+          <ulink url="&lfs-ticket-root;5061">#5061</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.36.0.  Fixes
+          <ulink url="&lfs-ticket-root;5066">#5066</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-05-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20220524 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.18.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5065">#5065</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.18.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5061">#5061</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.36.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5066">#5066</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-05-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to vim-8.2.5014 (security fixes).
+          Addresses <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to ninja-1.11.0.  Fixes
+          <ulink url="&lfs-ticket-root;5062">#5062</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to systemd-251.  Fixes
+          <ulink url="&lfs-ticket-root;5064">#5064</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-05-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - vim-8.2.5014 へのアップデート (セキュリティフィックス)。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - ninja-1.11.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5062">#5062</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - systemd-251 へのアップデート。
+          <ulink url="&lfs-ticket-root;5064">#5064</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-05-16</para>
       <itemizedlist>
         <listitem>
