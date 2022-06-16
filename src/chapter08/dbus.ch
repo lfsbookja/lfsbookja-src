@@ -45,15 +45,6 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x --with-console-auth-dir=/run/console
-          <para>This specifies the location of the ConsoleKit authorization
-          directory.</para>
-@y
-          <para>
-          ConsoleKit の authorization ディレクトリを指定します。
-          </para>
-@z
-
 @x
           <parameter>--runstatedir=/run</parameter> and
           <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>

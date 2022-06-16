@@ -44,6 +44,64 @@
 @z
 
 @x
+      <para>2022-06-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to python3-3.10.5. Fixes
+          <ulink url="&lfs-ticket-root;5070">#5070</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.62.2. Fixes
+          <ulink url="&lfs-ticket-root;5068">#5068</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.5.0. Fixes
+          <ulink url="&lfs-ticket-root;5067">#5067</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.42. Fixes
+          <ulink url="&lfs-ticket-root;5072">#5072</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.18.3. Fixes
+          <ulink url="&lfs-ticket-root;5069">#5069</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-5.3.1. Fixes
+          <ulink url="&lfs-ticket-root;5071">#5071</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-06-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - python3-3.10.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;5070">#5070</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.62.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5068">#5068</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.5.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5067">#5067</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.42 へのアップデート。
+          <ulink url="&lfs-ticket-root;5072">#5072</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.18.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;5069">#5069</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-5.3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5071">#5071</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-05-29</para>
       <itemizedlist>
         <listitem>
