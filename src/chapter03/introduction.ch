@@ -161,26 +161,26 @@
 
 @x
   <para>To download all of the packages and patches by using
-  <ulink url="../wget-list">wget-list</ulink> as an input to the
-  <command>wget</command> command, use:</para>
+  <ulink url="../&wget-list;">&wget-list;</ulink>
+  as an input to the <command>wget</command> command, use:</para>
 @y
   <para>
   パッケージとパッチのダウンロードを行うため <ulink
-  url="../wget-list">wget-list</ulink> を利用することにします。
+  url="../&wget-list;">wget-list</ulink> を利用することにします。
   これは以下のように <command>wget</command> コマンドの入力引数に指定します。
   </para>
 @z
 
 @x
-<screen role="nodump"><userinput>wget --input-file=wget-list --continue --directory-prefix=$LFS/sources</userinput></screen>
+<screen role="nodump"><userinput>wget --input-file=&wget-list; --continue --directory-prefix=$LFS/sources</userinput></screen>
 @y
-<screen role="nodump"><userinput>wget --input-file=wget-list --continue --directory-prefix=$LFS/sources</userinput></screen>
+<screen role="nodump"><userinput>wget --input-file=&wget-list; --continue --directory-prefix=$LFS/sources</userinput></screen>
 
 <note>
 <title>日本語訳情報</title>
 <para>
 オリジナルの LFS ブックでは、<ulink
-url="../wget-list">wget-list</ulink> 内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
+url="../&wget-list;">wget-list</ulink> 内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
 一方、日本国内にて作業する方であれば、例えば GNU のパッケージ類は国内に数多くのミラーサイトが存在するため、そちらから取得するのが適切でしょう。
 これはネットワークリソースを利用する際のマナーとも言えるものです。
 堅苦しい話をするつもりはありません。
@@ -189,10 +189,10 @@ url="../wget-list">wget-list</ulink> 内に含まれる、各種パッケージ�
 </para>
 <para>
 国内から入手可能なものは国内から入手することを目指し、訳者は以下の手順により <ulink
-url="../wget-list">wget-list</ulink> を書き換えて利用しています。
+url="../&wget-list;">wget-list</ulink> を書き換えて利用しています。
 一例として国内には理化学研究所のサイト (ftp.riken.jp) があります。
 そこでは GNU パッケージ類がミラー提供されています。
-そこで <ulink url="../wget-list">wget-list</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。
+そこで <ulink url="../&wget-list;">wget-list</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。
 また同じ方法で Linux カーネル、<application>Perl</application>、<application>Vim</application> の入手先も変更します。
 </para>
 
@@ -202,7 +202,7 @@ s|https://www\.kernel\.org/pub/linux/|http://ftp.riken.jp/Linux/kernel.org/linux
 s|www\.cpan\.org|ftp.riken.jp/lang/CPAN|g
 s|ftp\.vim\.org|ftp.jp.vim.org|g</literal>
 EOF
-sed -f wl.sed -i.orig wget-list
+sed -f wl.sed -i.orig &wget-list;
 rm wl.sed</userinput></screen>
 
 <para>
@@ -217,8 +217,8 @@ rm wl.sed</userinput></screen>
 その場合にはパッケージ取得に失敗してしまいます。
 そこで wget-list と wget-list.orig を順に利用し、かつ <application>wget</application> コマンドにて -N オプションを使って (取得済のものはスキップするようにして) 以下のコマンドを実行すれば、確実にすべてのパッケージを入手することができます。
 </para>
-<screen role="nodump"><userinput remap="sed-wgetlist">wget -N --input-file=wget-list --continue --directory-prefix=$LFS/sources
-wget -N --input-file=wget-list.orig --continue --directory-prefix=$LFS/sources</userinput></screen>
+<screen role="nodump"><userinput remap="sed-wgetlist">wget -N --input-file=&wget-list; --continue --directory-prefix=$LFS/sources
+wget -N --input-file=&wget-list;.orig --continue --directory-prefix=$LFS/sources</userinput></screen>
 
 </note>
 

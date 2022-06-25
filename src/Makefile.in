@@ -698,7 +698,8 @@ book: validate profile-html
              -i $$filename;                           \
 	done;
 
-	$(MAKE) --no-print-directory $(BASEDIR)/wget-list $(BASEDIR)/md5sums
+#	$(MAKE) --no-print-directory $(BASEDIR)/wget-list $(BASEDIR)/md5sums
+	$(MAKE) --no-print-directory wget-list md5sums
 
 @TXT@nochunks: validate profile-html
 @TXT@	@echo "Generating non chunked XHTML file..."
@@ -786,20 +787,28 @@ profile-html: validate $(ALLXML)
 	  --output $(RENDERTMP)/lfs-html.xml stylesheets/lfs-xsl/profile.xsl \
 	  $(RENDERTMP)/lfs-full.xml
 
-wget-list: $(BASEDIR)/wget-list
+wget-list: $(BASEDIR)/wget-list $(BASEDIR)/wget-list-$(REV)
 $(BASEDIR)/wget-list: stylesheets/wget-list.xsl chapter03/chapter03.xml \
                       packages.ent patches.ent general.ent
 	@echo "Generating consolidated wget list at $(BASEDIR)/wget-list ..."
 	$(MKDIR_P) $(BASEDIR)
-#	$(XSLTPROC) --nonet --xinclude                     \
-#                --stringparam profile.revision $(REV)      \
-#                --output $(RENDERTMP)/sysd-wget.xml        \
-#                $(BOOKdir)/stylesheets/lfs-xsl/profile.xsl \
-#                ./chapter03/chapter03.xml
 	$(XSLTPROC) --xinclude --nonet                     \
                 --output $(BASEDIR)/wget-list              \
 	             $(BOOKdir)/stylesheets/wget-list.xsl  \
-                ./chapter03/chapter03.xml
+                $(BOOKdir)/chapter03/chapter03.xml
+
+$(BASEDIR)/wget-list-$(REV): stylesheets/wget-list.xsl \
+                             chapter03/chapter03.xml \
+                             packages.ent patches.ent general.ent
+	$(Q)xsltproc --nonet --xinclude                   \
+                --stringparam profile.revision $(REV) \
+                --output $(RENDERTMP)/wget-list.xml   \
+                $(BOOKdir)/stylesheets/lfs-xsl/profile.xsl \
+                $(BOOKdir)/chapter03/chapter03.xml
+	$(Q)xsltproc --xinclude --nonet                  \
+                --output $(BASEDIR)/wget-list-$(REV) \
+                $(BOOKdir)/stylesheets/wget-list.xsl \
+                $(RENDERTMP)/wget-list.xml
 
 md5sums: $(BASEDIR)/md5sums
 $(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.ent patches.ent $(srcdir)/general.ch
@@ -807,13 +816,13 @@ $(BASEDIR)/md5sums: stylesheets/wget-list.xsl chapter03/chapter03.xml packages.e
 	$(MKDIR_P) $(BASEDIR)
 	$(XSLTPROC) --nonet --xinclude                \
                 --stringparam profile.revision $(REV) \
-                --output $(RENDERTMP)/sysv-md5sum.xml \
-                stylesheets/lfs-xsl/profile.xsl       \
-                chapter03/chapter03.xml
+                --output $(RENDERTMP)/md5sum.xml      \
+                $(BOOKdir)/stylesheets/lfs-xsl/profile.xsl       \
+                $(BOOKdir)/chapter03/chapter03.xml
 	$(XSLTPROC) --xinclude --nonet      \
                 --output $(BASEDIR)/md5sums \
-                stylesheets/md5sum.xsl      \
-                $(RENDERTMP)/sysv-md5sum.xml
+                $(BOOKdir)/stylesheets/md5sum.xsl      \
+                $(RENDERTMP)/md5sum.xml
 	sed -i -e \
            "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.xz | cut -d' ' -f1)/" \
            $(BASEDIR)/md5sums

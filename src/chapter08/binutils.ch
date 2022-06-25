@@ -200,27 +200,12 @@
 @z
 
 @x
-    <para>Four tests related to zlib are known to fail.</para>
+    <para>One gold test, <filename>pr17704a_test</filename>, is known to
+    fail if <parameter>CONFIG_IA32_EMULATION</parameter> is disabled in the
+    kernel configuration of the host system.</para>
 @y
     <para>
-    zlib に関するテストが 4 つ失敗します。
-    </para>
-@z
-
-%@x
-%    <para>Seven gold tests are known to fail with gcc-11.1.0</para>
-%@y
-%    <para>
-%    7 つの gold テストが gcc-11.1.0 を用いると失敗します。
-%    </para>
-%@z
-
-@x
-    <para>Four ld tests named <quote>Run property ...</quote> are known to
-    fail.</para>
-@y
-    <para>
-    <quote>Run property ...</quote>と名づけられている 4 つの ld テストが失敗します。
+    ホストシステム上のカーネル設定 <parameter>CONFIG_IA32_EMULATION</parameter> が無効である場合に gold テストの一つ、<filename>pr17704a_test</filename> というものが失敗します。
     </para>
 @z
 

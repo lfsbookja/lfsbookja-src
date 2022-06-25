@@ -227,13 +227,25 @@
 @z
 
 @x
-        <para>The <emphasis>nss/tst-nss-files-hosts-multi</emphasis>
-        test is known to fail on relatively slow systems due to an internal
+        <para>Some tests, for example
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis>,
+        are known to fail on relatively slow systems due to an internal
         timeout.</para>
 @y
         <para>
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> テストは、内部のタイムアウトが原因で比較的遅くなるシステム上では失敗します。
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> のようなテストでは、内部のタイムアウトが原因で比較的遅くなるシステム上では失敗します。
         </para>
+@z
+
+@x
+        <para>About 27 tests, for example <emphasis>elf/tst-pldd</emphasis>,
+        are known to fail if the kernel supports namespaces (see
+        <filename>namespaces(7)</filename> for details) but the host distro
+        has disabled them via sysctl.</para>
+@y
+        <para>
+        カーネルが名前空間をサポートしている場合（詳細は <filename>namespaces(7)</filename> 参照）であっても、ホストディストリビューションにおいて sysctl を通じて無効となっている場合には、27 個ほどのテスト、たとえば <emphasis>elf/tst-pldd</emphasis> が失敗します。
+       </para>
 @z
 
 @x

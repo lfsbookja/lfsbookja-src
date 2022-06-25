@@ -163,11 +163,15 @@
 @z
 
 @x c_rehash
-            is a <application>Perl</application> script that scans all files in
-            a directory and adds symbolic links to their hash values
+            is a <application>Perl</application> script that
+            scans all files in a directory and adds symbolic links to their
+            hash values.  Use of <command>c_rehash</command> is considered
+            obsolete and should be replaced by
+            <command>openssl rehash</command> command
 @y
             ディレクトリ内のすべてのファイルをスキャンする <application>Perl</application> スクリプト。
             それらのファイルに対するハッシュ値へのシンボリックリンクを生成します。
+            <command>c_rehash</command> の利用は非推奨と考えられており、この代わりに <command>openssl rehash</command> コマンドを使ってください。
 @z
 
 @x openssl

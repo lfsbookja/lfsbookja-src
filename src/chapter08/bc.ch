@@ -44,6 +44,15 @@
           </para>
 @z
 
+@x -G
+          <para>Omit parts of the test suite that won't work
+          without a GNU bc present.</para>
+@y
+          <para>
+          GNU bc が存在していない状態では動作しないテストスイートを省略します。
+          </para>
+@z
+
 @x -O3
           <para>Specify the optimization to use.</para>
 @y
@@ -52,12 +61,12 @@
           </para>
 @z
 
-@x -G
-          <para>Omit  parts of the test suite that won't work
-          without a GNU bc present.</para>
+@x -r
+          <para>Enable the use of <application>Readline</application> to
+          improve the line editing feature of bc.</para>
 @y
           <para>
-          GNU bc が存在していない状態では動作しないテストスイートを省略します。
+          bc における行編集機能を拡張するために <application>Readline</application> 利用を有効にします。
           </para>
 @z
 

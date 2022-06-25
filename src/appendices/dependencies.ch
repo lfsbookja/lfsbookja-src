@@ -234,9 +234,9 @@
 
 %----------------------------------------------------------------------
 @x bc
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, and Make</seg>
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Readline</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make</seg>
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Readline</seg>
 @z
 @x
           <seg>Glibc, Ncurses, and Readline</seg>
@@ -2057,9 +2057,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Bash and Gawk</seg>
+          <seg>Bash, Bc, and Gawk</seg>
 @y
-          <seg>Bash, Gawk</seg>
+          <seg>Bash, Bc, Gawk</seg>
 @z
 @x
           <seg>None</seg>
