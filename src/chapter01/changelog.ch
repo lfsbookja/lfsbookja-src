@@ -44,6 +44,131 @@
 @z
 
 @x
+      <para>2022-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.63.0. Fixes
+          <ulink url="&lfs-ticket-root;5079">#5079</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-30. Fixes
+          <ulink url="&lfs-ticket-root;5077">#5077</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to inetutils-2.3. Fixes
+          <ulink url="&lfs-ticket-root;5081">#5081</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.18.11. Fixes
+          <ulink url="&lfs-ticket-root;5078">#5078</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to OpenSSL-3.0.5. Fixes
+          <ulink url="&lfs-ticket-root;5080">#5080</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-0.63.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5079">#5079</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-30 へのアップデート。
+          <ulink url="&lfs-ticket-root;5077">#5077</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inetutils-2.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;5081">#5081</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.18.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;5078">#5078</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - OpenSSL-3.0.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;5080">#5080</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.0.0006. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20220610. Addresses
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to OpenSSL-3.0.4. Fixes
+          <ulink url="&lfs-ticket-root;5076">#5076</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.5.1. Fixes
+          <ulink url="&lfs-ticket-root;5075">#5075</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.18.8. Fixes
+          <ulink url="&lfs-ticket-root;5074">#5074</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-5.3.3. Fixes
+          <ulink url="&lfs-ticket-root;5073">#5073</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.0.0006 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20220610 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - OpenSSL-3.0.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;5076">#5076</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.5.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5075">#5075</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.18.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;5074">#5074</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-5.3.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;5073">#5073</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-06-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Generate shared C++ bindings for ncurses, instead
+          of generating and then removing the static ones.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-06-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - ncurses における C++ バインディングに関して、スタティックなバインディングを生成してから削除するのではなく、共有バインディングを生成することに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-06-14</para>
       <itemizedlist>
         <listitem>

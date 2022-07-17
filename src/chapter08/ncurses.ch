@@ -36,6 +36,51 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
+@x --with-shared
+          <para>This makes Ncurses build and install shared C libraries.</para>
+@y
+          <para>
+          これは Ncurses において共有 C ライブラリをビルドしインストールします。
+          </para>
+@z
+
+@x --without-normal
+          <para>This prevents Ncurses building and installing static C
+          libraries.</para>
+@y
+          <para>
+          これは Ncurses においてスタティックな C ライブラリのビルドおよびインストールを行わないようにします。
+          </para>
+@z
+
+@x --without-debug
+          <para>This prevents Ncurses building and installing debug
+          libraries.</para>
+@y
+          <para>
+          これは Ncurses においてデバッグライブラリのビルドおよびインストールを行わないようにします。
+          </para>
+@z
+
+@x --with-cxx-shared
+          <para>This makes Ncurses build and install shared C++ bindings. It
+          also prevents it building and installing static C++ bindings.</para>
+@y
+          <para>
+          これは Ncurses において共有 C++ バインディングをビルドしインストールします。
+          同時にスタティックな C++ バインディングのビルドおよびインストールは行わないようにします。
+          </para>
+@z
+
+@x --enable-pc-files
+          <para>This switch generates and installs .pc files for pkg-config.
+          </para>
+@y
+          <para>
+          本スイッチは pkg-config 用の .pc ファイルを生成しインストールすることを指示します。
+          </para>
+@z
+
 @x --enable-widec
           <para>This switch causes wide-character libraries (e.g., <filename
           class="libraryfile">libncursesw.so.&ncurses-version;</filename>)
@@ -53,24 +98,6 @@
           ワイド文字対応のライブラリは、マルチバイトロケールと従来の 8ビットロケールの双方に対して利用可能です。
           通常のライブラリでは 8ビットロケールに対してしか動作しません。
           ワイド文字対応と通常のものとでは、ソース互換があるもののバイナリ互換がありません。
-          </para>
-@z
-
-@x --enable-pc-files
-          <para>This switch generates and installs .pc files for pkg-config.
-          </para>
-@y
-          <para>
-          本スイッチは pkg-config 用の .pc ファイルを生成しインストールすることを指示します。
-          </para>
-@z
-
-@x --without-normal
-          <para>This switch disables building and installing most static libraries.
-          </para>
-@y
-          <para>
-          本スイッチはたいていのスタティックライブラリをビルド、インストールしないようにします。
           </para>
 @z
 

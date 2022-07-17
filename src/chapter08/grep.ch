@@ -73,7 +73,7 @@
 
 @x egrep
           <para>Prints lines matching an extended regular expression.
-          It is obsoleted, use <command>grep -E</command> instead</para>
+          It is obsolete, use <command>grep -E</command> instead</para>
 @y
           <para>
           拡張正規表現 (extended regular expression) にマッチした行を表示します。
@@ -83,7 +83,7 @@
 
 @x fgrep
           <para>Prints lines matching a list of fixed strings.
-          It is obsoleted, use <command>grep -F</command> instead</para>
+          It is obsolete, use <command>grep -F</command> instead</para>
 @y
           <para>
           固定文字列の一覧にマッチした行を表示します。

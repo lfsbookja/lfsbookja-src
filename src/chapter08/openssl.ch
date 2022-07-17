@@ -29,6 +29,15 @@
 @z
 
 @x
+    <para>First fix a problem with some advanced arcitectures with avx512 
+    capability:</para>
+@y
+    <para>
+    avx512 機能を利用する最新アーキテクチャーにおいて発生する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare OpenSSL for compilation:</para>
 @y
     <para>&PreparePackage1;OpenSSL&PreparePackage2;</para>

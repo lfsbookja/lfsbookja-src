@@ -53,14 +53,6 @@
 @z
 
 @x
-    <para>Again, fix an issue building the package with Glibc-2.34 or later:</para>
-@y
-    <para>
-    以前と同じように、Glibc-2.34 以降を使って本パッケージをビルドする際の問題を修正します。
-    </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

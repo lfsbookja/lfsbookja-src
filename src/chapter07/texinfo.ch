@@ -22,14 +22,6 @@
 @z
 
 @x
-    <para>First, fix an issue building the package with Glibc-2.34 or later:</para>
-@y
-    <para>
-    Glibc-2.34 以降を使って本パッケージをビルドする際の問題を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Texinfo for compilation:</para>
 @y
     <para>&PreparePackage1;Texinfo&PreparePackage2;</para>

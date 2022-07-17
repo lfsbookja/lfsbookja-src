@@ -92,7 +92,7 @@
 @z
 
 @x
-    <para>In serveral places we use the <command>pip3</command> command to
+    <para>In several places we use the <command>pip3</command> command to
     install Python 3 programs and modules for all users as
     <systemitem class='username'>root</systemitem>. This conflicts
     with the Python developers recommendation to install packages into a
@@ -137,12 +137,13 @@
         command to upgrade a module (for example, from meson-0.61.3 to
         meson-0.62.0), insert the option <parameter>--upgrade</parameter> into
         the command line.  If it's really necessary to downgrade a module or
-        reinstall the same version for some reason, insert 
-        <parameter>--force-reinstall</parameter> into the command line.
+        reinstall the same version for some reason, insert
+        <parameter>--force-reinstall --no-deps</parameter> into the command
+        line.
 @y
         <command>pip3 install</command> はデフォルトでは、すでにインストールされているモジュールを再インストールすることは行いません。
         <command>pip3 install</command> コマンドを使ってモジュールのアップグレードを行う（たとえば meson-0.61.3 から meson-0.62.0 にするような場合）には、コマンドラインに <parameter>--upgrade</parameter> オプションを含めてください。
-        またモジュールのダウングレードや再インストールが必要となる理由が確実にあるのであれば、コマンドラインに <parameter>--force-reinstall</parameter> を含めて実行してください。
+        またモジュールのダウングレードや再インストールが必要となる理由が確実にあるのであれば、コマンドラインに <parameter>--force-reinstall --no-deps</parameter> を含めて実行してください。
 @z
 
 @x
