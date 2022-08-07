@@ -127,7 +127,7 @@
           </para>
 @z
 
-@x
+@x --disable-nls
           <para>This disables internationalization as i18n is not needed for the
           temporary tools.</para>
 @y
@@ -136,7 +136,17 @@
           </para>
 @z
 
-@x
+@x --enable-gprofng=no
+          <para>This disables building gprofng which is not needed for the
+          temporary tools.</para>
+@y
+          <para>
+          これは gprofng のビルドを無効にします。
+          gprofng は一時的ツールにおいては不要であるからです。
+          </para>
+@z
+
+@x --disable-werror
           <para>This prevents the build from stopping in the event that there
           are warnings from the host's compiler.</para>
 @y

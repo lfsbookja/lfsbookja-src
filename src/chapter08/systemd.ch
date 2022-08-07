@@ -25,6 +25,14 @@
 @z
 
 @x
+    <para>First, fix an issue introduced by glibc-2.36.</para>
+@y
+    <para>
+    はじめに glibc-2.36 において発生する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Remove two unneeded groups,
     <systemitem class="groupname">render</systemitem> and
     <systemitem class="groupname">sgx</systemitem>, from the default udev

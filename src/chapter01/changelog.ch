@@ -44,6 +44,76 @@
 @z
 
 @x
+      <para>2022-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.38. Fixes
+          <ulink url="&lfs-ticket-root;5089">#5089</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.38.1. Fixes
+          <ulink url="&lfs-ticket-root;5088">#5088</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.10.6. Fixes
+          <ulink url="&lfs-ticket-root;5087">#5087</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.36. Fixes
+          <ulink url="&lfs-ticket-root;5083">#5084</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.38 へのアップデート。
+          <ulink url="&lfs-ticket-root;5089">#5089</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.38.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5088">#5088</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python3-3.10.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;5087">#5087</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.36 へのアップデート。
+          <ulink url="&lfs-ticket-root;5083">#5084</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2022-07-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.18.14. (Security fixes
+          for machines affected by the RETBleed vulnerability). Fixes
+          <ulink url="&lfs-ticket-root;5082">#5082</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.65. Fixes
+          <ulink url="&lfs-ticket-root;5083">#5083</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-07-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-5.18.14 へのアップデート。
+          (RETBleed ぜい弱性の影響があるマシン向けのセキュリティフィックス)
+          <ulink url="&lfs-ticket-root;5082">#5082</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.65 へのアップデート。
+          <ulink url="&lfs-ticket-root;5083">#5083</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-07-15</para>
       <itemizedlist>
         <listitem>

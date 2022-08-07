@@ -40,6 +40,14 @@
 @z
 
 @x
+    <para>First fix a problem with the latest version of glibc:</para>
+@y
+    <para>
+    まずは glibc の最新版における問題を修正します。
+    </para>
+@z
+
+@x
     <para>As in the first build of GCC, the GMP, MPFR, and MPC packages are
     required. Unpack the tarballs and move them into the required directory
     names:</para>

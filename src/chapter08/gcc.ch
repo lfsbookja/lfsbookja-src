@@ -36,6 +36,14 @@
 @z
 
 @x
+    <para>First fix a problem with the latest version of glibc:</para>
+@y
+    <para>
+    まずは glibc の最新版における問題を修正します。
+    </para>
+@z
+
+@x
     <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y

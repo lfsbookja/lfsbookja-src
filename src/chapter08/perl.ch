@@ -139,14 +139,6 @@
 @z
 
 @x
-       <para>Nine tests fail due to using the most recent version of zlib.</para>
-@y
-       <para>
-       zlib の最新バージョンを用いていることから、9 つのテストが失敗します。
-       </para>
-@z
-
-@x
     <para>Install the package and clean up:</para>
 @y
     <para>パッケージはインストールしクリーンアップします。</para>

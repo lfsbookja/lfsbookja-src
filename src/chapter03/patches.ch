@@ -73,10 +73,10 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-chmod-patch;"/></para>
 @z
 
-@x File Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&file-upstream-fixes-patch;"/></para>
+@x Gcc glibc-2.36 Fixes Patch
+        <para>Download: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&file-upstream-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
 @z
 
 @x Glibc FHS Patch
@@ -119,6 +119,12 @@
         <para>Download: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
+@z
+
+@x Systemd Upstream Patch
+        <para>Download: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
 @z
 
 @x Xz Upstream Fix Patch
