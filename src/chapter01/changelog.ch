@@ -47,7 +47,7 @@
       <para>2022-08-06</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to binutils-2.38. Fixes
+          <para>[bdubbs] - Update to binutils-2.39. Fixes
           <ulink url="&lfs-ticket-root;5089">#5089</ulink>.</para>
         </listitem>
         <listitem>
@@ -67,7 +67,7 @@
       <para>2022-08-06</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - binutils-2.38 へのアップデート。
+          <para>[bdubbs] - binutils-2.39 へのアップデート。
           <ulink url="&lfs-ticket-root;5089">#5089</ulink> を Fix に。</para>
         </listitem>
         <listitem>

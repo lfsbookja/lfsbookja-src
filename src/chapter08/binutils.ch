@@ -240,12 +240,12 @@
 @z
 
 @x
-        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
         <seg>libbfd.so, libctf.so, libctf-nobfd.so, and libopcodes.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
-        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
         <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so</seg>
         <seg>/usr/lib/ldscripts</seg>
@@ -317,6 +317,14 @@
 @y
           <para>
           コールグラフ (call graph) のプロファイルデータを表示します。
+          </para>
+@z
+
+@x gprofng
+          <para>Gather and analyze performance data</para>
+@y
+          <para>
+          性能データの収集と解析を行います。
           </para>
 @z
 

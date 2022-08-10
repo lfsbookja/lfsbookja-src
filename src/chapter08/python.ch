@@ -103,7 +103,7 @@
     of this recommendation is for avoiding a conflict with the system
     package manager (<command>dpkg</command> for example), but LFS does not
     have a system-wide package manager so this is not a problem.  If desired,
-    suppress this warning by running the following command:</para>
+    suppress this warning by running the following commands:</para>
 @y
     <para>
     いくつかの場面において Python 3 プログラムやモジュールをインストールする際には、全ユーザー向けのインストールを行うために <systemitem

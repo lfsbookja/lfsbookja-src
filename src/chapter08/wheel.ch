@@ -3,7 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -72,7 +71,7 @@
 
 @x
       <segtitle>Installed program</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
@@ -80,10 +79,16 @@
 
 @x
         <seg>wheel</seg>
-        <seg>/usr/lib/python&python-minor;/site-packages/wheel</seg>
+        <seg>
+           /usr/lib/python&python-minor;/site-packages/wheel and
+           /usr/lib/python&python-minor;/site-packages/wheel-0.37.1-py3.10.egg-info
+        </seg>
 @y
         <seg>wheel</seg>
-        <seg>/usr/lib/python&python-minor;/site-packages/wheel</seg>
+        <seg>
+           /usr/lib/python&python-minor;/site-packages/wheel,
+           /usr/lib/python&python-minor;/site-packages/wheel-0.37.1-py3.10.egg-info
+        </seg>
 @z
 
 @x
