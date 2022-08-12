@@ -44,6 +44,64 @@
 @z
 
 @x
+      <para>2022-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.0.0192. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20220803. Addresses
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2022b. Fixes
+          <ulink url="&lfs-ticket-root;5092">#5092</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-5.19.0. Fixes
+          <ulink url="&lfs-ticket-root;5086">#5086</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.19.1. Fixes
+          <ulink url="&lfs-ticket-root;5085">#5085</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-6.0.1. Fixes
+          <ulink url="&lfs-ticket-root;5090">#5090</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.0.0192 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20220803 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> において言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2022b へのアップデート。
+          <ulink url="&lfs-ticket-root;5092">#5092</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-5.19.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5086">#5086</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.19.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5085">#5085</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-6.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5090">#5090</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-08-06</para>
       <itemizedlist>
         <listitem>
@@ -864,7 +922,7 @@
         </listitem>
         <listitem>
           <para>[xry111] - Build libstdc++ in GCC pass 2, and remove the
-          seperate libstdc++ pass 2.</para>
+          separate libstdc++ pass 2.</para>
         </listitem>
         <listitem>
           <para>[xry111] - Remove unneeded

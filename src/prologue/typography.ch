@@ -71,6 +71,17 @@
 @z
 
 @x
+    <para>Please configure your browser to display fixed-width text with
+    a good monospaced font, with which you can distinguish the glyphs of
+    <literal>Il1</literal> or <literal>O0</literal> clearly.</para>
+@y
+    <para>
+    ブラウザーの設定において、固定幅テキストに対しては適切なモノスペースフォントを用いるようにしてください。
+    これを設定していれば、<literal>Il1</literal> や <literal>O0</literal> のグリフを適切に識別できます。
+    </para>
+@z
+
+@x
   <para><emphasis>Emphasis</emphasis></para>
 @y
   <para><emphasis>Emphasis</emphasis></para>
