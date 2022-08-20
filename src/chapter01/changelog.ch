@@ -44,6 +44,24 @@
 @z
 
 @x
+      <para>2022-08-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Remove libtool archive (.la) files in Chapter 5
+          and 6 because those files are harmful for cross compilation.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-08-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - 5 章 6 章において libtool アーカイブファイル (.la) を削除。
+          クロスコンパイルにとっては邪魔になるため。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-08-11</para>
       <itemizedlist>
         <listitem>

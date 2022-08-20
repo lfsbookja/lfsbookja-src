@@ -53,28 +53,6 @@
 @z
 
 @x
-    <para>Upstream has made a patch to fix a problem when using binutils
-    for building some BLFS packages with Link Time Optimization (LTO)
-    enabled.  Apply that now:</para>
-@y
-    <para>
-    BLFS におけるパッケージがリンク時の最適化（Link Time Optimization; LTO）を使っている場合に、これをビルドする際に問題が発生するため、アップストリームがパッチを提供しています。
-    ここでこれを適用します。
-    </para>
-@z
-
-@x
-    <para>An error in the building system causes the shipped man pages to
-    be empty.  Workaround the issue and remove the shipped man pages, so the
-    man pages will be regenerated correctly:</para>
-@y
-    <para>
-    ビルドシステムに誤りがあって、同梱されている man ページが空になっています。
-    これを解消するため、一度 man ページを削除して、man ページを正しく再生成するようにします。
-    </para>
-@z
-
-@x
       Now make a fix identified upstream that affects building some packages:
 @y
       いくつかのパッケージビルドに影響を及ぼす問題への対処として、アップストリームが認識する修正を行います。

@@ -147,6 +147,15 @@
 @z
 
 @x
+    <para>Remove the libtool archive files because they are harmful for
+    cross compilation, and remove unnecessary static libraries:</para>
+@y
+    <para>
+   クロスコンパイルにとっては libtool アーカイブファイルが邪魔になるため削除し、不要なスタティックライブラリも削除します。
+    </para>
+@z
+
+@x
     <para>Details on this package are located in
     <xref linkend="contents-binutils" role="."/></para>
 @y

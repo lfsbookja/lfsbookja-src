@@ -142,6 +142,15 @@
 @z
 
 @x
+    <para>Remove the libtool archive files because they are harmful for
+    cross compilation:</para>
+@y
+    <para>
+    クロスコンパイルにとっては libtool アーカイブファイルが邪魔になるため削除します。
+    </para>
+@z
+
+@x
     <para>Details on this package are located in
     <xref linkend="contents-gcc" role="."/></para>
 @y
