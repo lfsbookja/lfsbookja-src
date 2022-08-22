@@ -71,11 +71,11 @@
 
 @x
     <para>One test, capabilities: binary store/restore, is known to fail if it is
-    run (LFS lacks selinux), but will be skipped if the host kernel does
+    run because LFS lacks selinux, but will be skipped if the host kernel does
     not support extended attributes on the filesystem used for building LFS.</para>
 @y
     <para>
-    テストの 1 つ capabilities: binary store/restore は、(LFS が selinux を含んでいないため) 実行に失敗します。
+    テストの 1 つ capabilities: binary store/restore は、LFS が selinux を含んでいないため、実行に失敗します。
     ただし LFS ビルドに利用するファイルシステム上において、ホストカーネルが拡張属性をサポートしていない場合、このテストはスキップされます。
     </para>
 @z

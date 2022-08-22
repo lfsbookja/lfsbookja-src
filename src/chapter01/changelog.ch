@@ -47,32 +47,32 @@
       <para>2022-08-20</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to gcc-12.2.0. Fixes
-          <ulink url="&lfs-ticket-root;5098">#5098</ulink>.</para>
+          <para>[bdubbs] - Update to vim-9.0.0228. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to iana-etc-20220812. Addresses
           <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
         </listitem>
         <listitem>
-	  <para>[bdubbs] - Update to linux-5.19.2 (security fixes). Fixes
+          <para>[bdubbs] - Update to gcc-12.2.0. Fixes
+          <ulink url="&lfs-ticket-root;5098">#5098</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-5.19.2. Fixes
           <ulink url="&lfs-ticket-root;5097">#5097</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update to meson-0.63.1. Fixes
-          <ulink url="&lfs-ticket-root;5094">#5094</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update to shadow-4.12.2 (security fix). Fixes
-          <ulink url="&lfs-ticket-root;5095">#5095</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to tzdata-2022c. Fixes
           <ulink url="&lfs-ticket-root;5096">#5096</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to vim-9.0.0228. Addresses
-          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+          <para>[bdubbs] - Update to shadow-4.12.2. Fixes
+          <ulink url="&lfs-ticket-root;5095">#5095</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-0.63.1. Fixes
+          <ulink url="&lfs-ticket-root;5094">#5094</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to xz-5.2.6. Fixes
@@ -83,32 +83,32 @@
       <para>2022-08-20</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - gcc-12.2.0 へのアップデート。
-          <ulink url="&lfs-ticket-root;5098">#5098</ulink> を Fix に。</para>
+          <para>[bdubbs] - vim-9.0.0228 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - iana-etc-20220812 へのアップデート。
           <ulink url="&lfs-ticket-root;5006">#5006</ulink> にて言及。</para>
         </listitem>
         <listitem>
-	  <para>[bdubbs] - linux-5.19.2 (セキュリティフィックス) へのアップデート。
+          <para>[bdubbs] - gcc-12.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5098">#5098</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-5.19.2 へのアップデート。
           <ulink url="&lfs-ticket-root;5097">#5097</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - meson-0.63.1 へのアップデート。
-          <ulink url="&lfs-ticket-root;5094">#5094</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - shadow-4.12.2 (セキュリティフィックス) へのアップデート。
-          <ulink url="&lfs-ticket-root;5095">#5095</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - tzdata-2022c へのアップデート。
           <ulink url="&lfs-ticket-root;5096">#5096</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - vim-9.0.0228 へのアップデート。
-          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+          <para>[bdubbs] - shadow-4.12.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5095">#5095</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-0.63.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5094">#5094</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - xz-5.2.6 へのアップデート。

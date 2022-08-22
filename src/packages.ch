@@ -22,9 +22,9 @@
 @z
 
 @x
-<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 8.3 SBU with tests)">
+<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 7.7 SBU with tests)">
 @y
-<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 8.3 SBU)">
+<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 7.7 SBU)">
 @z
 
 @x
@@ -34,9 +34,9 @@
 @z
 
 @x
-<!ENTITY check-fin-sbu "0.1 SBU (about 3.8 SBU with tests)">
+<!ENTITY check-fin-sbu "0.1 SBU (about 3.6 SBU with tests)">
 @y
-<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 3.8 SBU)">
+<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 3.6 SBU)">
 @z
 
 @x
@@ -46,9 +46,9 @@
 @z
 
 @x
-<!ENTITY e2fsprogs-fin-sbu "4.4 SBU on a spinning disk, 1.3 SBU on an SSD">
+<!ENTITY e2fsprogs-fin-sbu "4.4 SBU on a spinning disk, 1.2 SBU on an SSD">
 @y
-<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 4.4 SBU、SSD で 1.3 SBU">
+<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 4.4 SBU、SSD で 1.2 SBU">
 @z
 
 @x
@@ -160,11 +160,6 @@
 <!ENTITY xml-parser-fin-sbu "0.1 SBU 以下">
 @z
 
-@x
-<!ENTITY zlib-tmp-sbu "less than 0.1 SBU">
-@y
-<!ENTITY zlib-tmp-sbu "0.1 SBU 以下">
-@z
 @x
 <!ENTITY zlib-fin-sbu "less than 0.1 SBU">
 @y

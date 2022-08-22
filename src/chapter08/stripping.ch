@@ -19,13 +19,13 @@
   <para>This section is optional.  If the intended user is not a
   programmer and does not plan to do
   any debugging on the system software, the system size can be decreased
-  by about 2 GB by removing the debugging symbols from binaries and
-  libraries. This causes no inconvenience other than not being able to
-  debug the software fully anymore.</para>
+  by about 2 GB by removing the debugging symbols and unneeded symbol table
+  entries from binaries and libraries. This causes no inconvenience other
+  than not being able to debug the software fully anymore.</para>
 @y
   <para>
   本節での作業を行うかどうかは任意です。
-  対象ユーザーがプログラマーではなく、プログラム類をデバッグするような使い方をしないのであれば、実行ファイルやライブラリに含まれるデバッグシンボルを削除しても構いません。
+  対象ユーザーがプログラマーではなく、プログラム類をデバッグするような使い方をしないのであれば、実行ファイルやライブラリに含まれるデバッグシンボルや不要シンボルを削除しても構いません。
   そうすれば 2 GB ものサイズ削減を図ることができます。
   たとえデバッグできなくなっても困らないはずです。
   </para>
@@ -42,6 +42,19 @@
   以下に示すコマンドは簡単なものです。
   ただし入力つづりは簡単に間違いやすいので、もし誤った入力をするとシステムを利用不能にしてしまいます。
   したがって <command>strip</command> コマンドを実行する前に、現時点の LFS システムのバックアップを取っておくことをお勧めします。
+  </para>
+@z
+
+@x
+  <para>A <command>strip</command> command with
+  <parameter>--strip-unneeded</parameter> option removes all debug symbols
+  from a binary or library.  And, it removes all symbol table entries not
+  needed by the linker (for static libraries) or dynamic linker (for
+  dynamic-linked binaries and shared libraries).</para>
+@y
+  <para>
+  <command>strip</command> コマンドに <parameter>--strip-unneeded</parameter> オプションをつけて実行すると、バイナリやライブラリからデバッグシンボルをすべて削除します。
+  そして（スタティックライブラリ向けの）リンカーや（動的リンクバイナリあるいは共有ライブラリ向けの）ダイナミックリンカーにとって不要なシンボルテーブル項目もすべて削除します。
   </para>
 @z
 
