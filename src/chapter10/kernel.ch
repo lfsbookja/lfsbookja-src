@@ -144,6 +144,21 @@
 @z
 
 @x
+      <para>Enable some additional features if you are building a 64-bit
+      system.  If you are using menuconfig, enable them in the order of
+      <parameter>CONFIG_PCI_MSI</parameter> first, then
+      <parameter>CONFIG_IRQ_REMAP</parameter>, at last
+      <parameter>CONFIG_X86_X2APIC</parameter> because an option only
+      shows up after its dependencies are selected.</para>
+@y
+      <para>
+      64 ビットシステムの構築時は、追加機能をいくらか有効にしてください。
+      menuconfig を利用している場合、初めに <parameter>CONFIG_PCI_MSI</parameter> を有効にして、その後に <parameter>CONFIG_IRQ_REMAP</parameter>、<parameter>CONFIG_X86_X2APIC</parameter> を有効にします。
+      こうするのは、依存するオプションが選択されていないと、特定のオプションが現れてこないからです。
+      </para>
+@z
+
+@x
       <para>While "The IPv6 Protocol" is not strictly
       required, it is highly recommended by the systemd developers.</para>
 @y
@@ -239,6 +254,36 @@
           <para>
           これは、カーネルから見たデバイス情報を /dev 上にマウントするものです。
           init が起動される直前にルートファイルシステムに切り替えられます。
+          </para>
+@z
+
+@x Support x2apic
+          <para>Support running the interrupt controller of 64-bit x86
+          processors in x2APIC mode.  x2APIC may be enabled by firmware on
+          64-bit x86 systems, and a kernel without this option enabled will
+          panic on boot if x2APIC is enabled by firmware.  This option has
+          has no effect, but also does no harm if x2APIC is disabled by the
+          firmware.</para>
+@y
+          <para>
+          64 ビット x86 プロセッサーの x2APIC モードでのインタラプトコントローラーの実行をサポートします。
+          64 ビット x86 システムにおいてはファームウェアが x2APIC を有効にすることがあります。
+          ファームウェアによって x2APIC が有効である場合、カーネルにおいてこのオプションが無効であると、起動時にパニックを起こします。
+          本オプションには効果がありません。
+          またファームウェアによって x2APIC が無効であった場合、このオプションは影響を及ぼしません。
+          </para>
+@z
+
+@x
+          <para>If this option is enabled, a security vulnerability not
+          resolved in Linux-&linux-version; yet will be exploitable.
+          Disable this option to avoid the vulnerability.  This system call
+          is not used by any part of LFS or BLFS.</para>
+@y
+          <para>
+          このオプションを有効にすると、Linux-&linux-version; において解決されていないセキュリティぜい弱性が悪用される危険があります。
+          ぜい弱性を避けるために、このオプションは無効にしてください。
+          このシステムコールは LFS や BLFS のどこからも利用しません。
           </para>
 @z
 

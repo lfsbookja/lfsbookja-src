@@ -288,7 +288,7 @@
 @z
 
 @x
-      <para>Once all is well, clean up the test files:</para>
+      <para>Once all is well, clean up the test file:</para>
 @y
       <para>
       すべてが完了したら、テストファイルを削除します。

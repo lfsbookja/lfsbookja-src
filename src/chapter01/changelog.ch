@@ -59,7 +59,7 @@
           <ulink url="&lfs-ticket-root;5098">#5098</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to linux-5.19.2. Fixes
+          <para>[bdubbs] - Update to linux-5.19.2 (security fixes). Fixes
           <ulink url="&lfs-ticket-root;5097">#5097</ulink>.</para>
         </listitem>
         <listitem>
@@ -67,7 +67,7 @@
           <ulink url="&lfs-ticket-root;5096">#5096</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to shadow-4.12.2. Fixes
+          <para>[bdubbs] - Update to shadow-4.12.2 (security fix). Fixes
           <ulink url="&lfs-ticket-root;5095">#5095</ulink>.</para>
         </listitem>
         <listitem>
@@ -95,7 +95,7 @@
           <ulink url="&lfs-ticket-root;5098">#5098</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - linux-5.19.2 へのアップデート。
+          <para>[bdubbs] - linux-5.19.2 (セキュリティフィックス) へのアップデート。
           <ulink url="&lfs-ticket-root;5097">#5097</ulink> を Fix に。</para>
         </listitem>
         <listitem>
@@ -103,7 +103,7 @@
           <ulink url="&lfs-ticket-root;5096">#5096</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - shadow-4.12.2 へのアップデート。
+          <para>[bdubbs] - shadow-4.12.2 (セキュリティフィックス) へのアップデート。
           <ulink url="&lfs-ticket-root;5095">#5095</ulink> を Fix に。</para>
         </listitem>
         <listitem>

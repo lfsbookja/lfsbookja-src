@@ -227,6 +227,15 @@
 @z
 
 @x
+        <para>The <emphasis>stdlib/tst-arc4random-thread</emphasis>
+        test is known to fail if the host kernel is relatively old.</para>
+@y
+        <para>
+        ホストのカーネルが比較的古い場合に <emphasis>stdlib/tst-arc4random-thread</emphasis> というテストが失敗します。
+        </para>
+@z
+
+@x
         <para>Some tests, for example
         <emphasis>nss/tst-nss-files-hosts-multi</emphasis>,
         are known to fail on relatively slow systems due to an internal
@@ -235,17 +244,6 @@
         <para>
         <emphasis>nss/tst-nss-files-hosts-multi</emphasis> のようなテストでは、内部のタイムアウトが原因で比較的遅くなるシステム上では失敗します。
         </para>
-@z
-
-@x
-        <para>About 27 tests, for example <emphasis>elf/tst-pldd</emphasis>,
-        are known to fail if the kernel supports namespaces (see
-        <filename>namespaces(7)</filename> for details) but the host distro
-        has disabled them via sysctl.</para>
-@y
-        <para>
-        カーネルが名前空間をサポートしている場合（詳細は <filename>namespaces(7)</filename> 参照）であっても、ホストディストリビューションにおいて sysctl を通じて無効となっている場合には、27 個ほどのテスト、たとえば <emphasis>elf/tst-pldd</emphasis> が失敗します。
-       </para>
 @z
 
 @x
@@ -559,10 +557,9 @@
 @x
     <para>By default, the dynamic loader (<filename
     class="libraryfile">/lib/ld-linux.so.2</filename>) searches through
-    <filename class="directory">/lib</filename> and <filename
-    class="directory">/usr/lib</filename> for dynamic libraries that are
-    needed by programs as they are run. However, if there are libraries in
-    directories other than <filename class="directory">/lib</filename> and
+    <filename class="directory">/usr/lib</filename> for dynamic libraries
+    that are needed by programs as they are run. However, if there are
+    libraries in directories other than
     <filename class="directory">/usr/lib</filename>, these need to be added
     to the <filename>/etc/ld.so.conf</filename> file in order for the
     dynamic loader to find them. Two directories that are commonly known
@@ -574,10 +571,9 @@
     <para>
     ダイナミックリンカー (<filename
     class="libraryfile">/lib/ld-linux.so.2</filename>) がダイナミックライブラリを検索するデフォルトのディレクトリが <filename
-    class="directory">/lib</filename> ディレクトリと <filename
     class="directory">/usr/lib</filename> ディレクトリです。
     各種プログラムが実行される際にはここから検索されたダイナミックライブラリがリンクされます。
-    もし <filename class="directory">/lib</filename> や <filename
+    もし <filename
     class="directory">/usr/lib</filename> 以外のディレクトリにライブラリファイルがあるなら <filename>/etc/ld.so.conf</filename> ファイルに記述を追加して、ダイナミックローダーがそれらを探し出せるようにしておくことが必要です。
     追加のライブラリが配置されるディレクトリとしては <filename
     class="directory">/usr/local/lib</filename> ディレクトリと <filename
