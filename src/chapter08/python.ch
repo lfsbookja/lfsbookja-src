@@ -102,8 +102,19 @@
     <systemitem class='username'>root</systemitem> user.  The main reason
     of this recommendation is for avoiding a conflict with the system
     package manager (<command>dpkg</command> for example), but LFS does not
-    have a system-wide package manager so this is not a problem.  If desired,
-    suppress this warning by running the following commands:</para>
+    have a system-wide package manager so this is not a problem.  And,
+    <command>pip3</command> will attempt to check for a new version of
+    itself whenever it's run.  As domain name resolving is not configured
+    yet in LFS chroot environment, it will fail to check for a new version
+    and produce a warning.  Once we boot the LFS system and set up network
+    connection, it will then produce a warning telling the user to update it
+    from a pre-built wheel on PyPI if any new version is available.  But LFS
+    consider <command>pip3</command> a part of Python 3 so it should not be
+    updated separately, and an update from a pre-built wheel will deviate
+    from our purpose to build a Linux system from source code.  So the
+    warning for a new <command>pip3</command> version should be ignored as
+    well. If desired, suppress these warnings by running the following
+    commands:</para>
 @y
     <para>
     いくつかの場面において Python 3 プログラムやモジュールをインストールする際には、全ユーザー向けのインストールを行うために <systemitem
@@ -113,6 +124,12 @@
     class='username'>root</systemitem> ユーザーとして <command>pip3</command> を用いると、警告メッセージが複数出力されます。
     開発者がなぜその方法を推奨しているかというと、システムパッケージマネージャー（たとえば <command>dpkg</command>）などと衝突が発生するからです。
     LFS ではシステムワイドなパッケージマネージャーを利用していないため、このことは問題となりません。
+    また <command>pip3</command> そのものが、自分の最新版が存在していないかどうかを実行時に確認します。
+    LFS の chroot 環境においては、ドメイン名解決がまだ設定されていないので、最新版の確認は失敗して警告が出力されます。
+    LFS システムを再起動してネットワーク設定を行えば、最新版の存在時には、あらかじめビルドされていた wheel を PyPI から更新するような警告メッセージが示されます。
+    もっとも LFS では <command>pip3</command> を Python 3 の一部として考えるので、個別に更新しないでください。
+    したがってあらかじめビルドされた wheel を更新することは、ソースコードから Linux システムをビルドするという目的から逸脱してしまいます。
+    このことから、最新版の <command>pip3</command> を求める警告も無視してください。
     警告メッセージを省略したい場合は、以下のコマンドを実行します。
     </para>
 @z

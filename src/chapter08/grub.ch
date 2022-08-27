@@ -181,11 +181,10 @@
 @z
 
 @x grub-glue-efi
-          <para>Processes ia32 and amd64 EFI images and glues them
-          according to Apple format.</para>
+          <para>Glue 32-bit and 64-bit binary into Apple universal one.</para>
 @y
           <para>
-          ia32 および amd64 の EFI イメージを処理し Apple フォーマットに従って結合します。
+          32 ビットおよび 64 ビットの実行バイナリを Apple ユニバーサル形式に結合します。
           </para>
 @z
 

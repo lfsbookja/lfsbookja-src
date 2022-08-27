@@ -273,6 +273,67 @@
 @z
 
 @x
+      <para>The GRUB designator for a partition may change if you added or
+      removed some disks (including removable disks like USB thumb devices).
+      The change may cause boot failure because
+      <filename>grub.cfg</filename> refers to some <quote>old</quote>
+      designators.  If you wish to avoid such a problem, you may use
+      the UUID of partition and filesystem instead of GRUB designator to
+      specify a partition.
+      Run <command>lsblk -o UUID,PARTUUID,PATH,MOUNTPOINT</command> to show
+      the UUID of your filesystems (in <literal>UUID</literal> column) and
+      partitions (in <literal>PARTUUID</literal> column).  Then replace
+      <literal>set root=(hdx,y)</literal> with
+      <literal>search --set=root --fs-uuid <replaceable>&lt;UUID of the filesystem where the kernel is installed&gt;</replaceable></literal>, and replace
+      <literal>root=/dev/sda2</literal> with
+      <literal>root=PARTUUID=<replaceable>&lt;UUID of the partition where LFS is built&gt;</replaceable></literal>.</para>
+@y
+      <para>
+      GRUB のパーティション指示子は、（USB サムデバイスといったリムーバルディスクを含め）ディスクの加除によって変わることがあります。
+      その加除が原因で起動に失敗することがありますが、それは <filename>grub.cfg</filename> において<quote>古い</quote>指示子を用いているからです。
+      こういった問題を避けようとおもったら、パーティション指定にあたって GRUB 指定子を用いずに、パーティションやファイルシステムの UUID を用いることが考えられます。
+      <command>lsblk -o UUID,PARTUUID,PATH,MOUNTPOINT</command> を実行してください。
+      ファイルシステムの UUID が <literal>UUID</literal> 列に示されます。
+      またパーティションは <literal>PARTUUID</literal> 列に示されます。
+      そうしたら <literal>set root=(hdx,y)</literal> の記述を 
+      <literal>search --set=root --fs-uuid <replaceable>&lt;カーネルがインストールされているファイルシステムの UUID&gt;</replaceable></literal> に書き換え、同様に <literal>root=/dev/sda2</literal> を
+      <literal>root=PARTUUID=<replaceable>&lt;LFS がビルドされたパーティションの UUID&gt;</replaceable></literal> に書き換えます。</para>
+@z
+
+@x
+      <para>Note that the UUID of a partition and the UUID of the filesystem
+      in this partition is completely different.  Some online resources may
+      instruct you to use
+      <literal>root=UUID=<replaceable>&lt;filesystem UUID&gt;</replaceable></literal>
+      instead of
+      <literal>root=PARTUUID=<replaceable>&lt;partition UUID&gt;</replaceable></literal>,
+      but doing so will require an initramfs which is beyond the scope of
+      LFS.</para>
+@y
+      <para>
+      パーティションの UUID と、そのパーティション内のファイルシステムの UUID は全く異なります。
+      オンラインから得られる情報において、<literal>root=PARTUUID=<replaceable>&lt;パーティション UUID&gt;</replaceable></literal> ではなく <literal>root=UUID=<replaceable>&lt;ファイルシステム UUID&gt;</replaceable></literal> を用いるように説明している場合があります。
+      これを行うには initramfs が必要であり、これは LFS の範囲を超えるものです。
+      </para>
+@z
+
+@x
+      <para>The name of the device node for a partition in
+      <filename class='directory'>/dev</filename> may also change (more
+      unlikely than GRUB designator change though).  You can also replace
+      paths to device nodes like <literal>/dev/sda1</literal> with
+      <literal>PARTUUID=<replaceable>&lt;partition UUID&gt;</replaceable></literal>,
+      in <filename>/etc/fstab</filename>, to avoid a potential boot failure
+      in case the device node name has changed.</para>
+@y
+      <para>
+      <filename class='directory'>/dev</filename> 内のパーティションに対するデバイスノード名も変わります（GRUB 指定子が変更される可能性よりは低いです）。
+      <filename>/etc/fstab</filename> において記述するデバイスノードへのパスは、たとえば <literal>/dev/sda1</literal> を <literal>PARTUUID=<replaceable>&lt;パーティション UUID&gt;</replaceable></literal> に置き換えることができます。
+      これによりデバイスノード名が変更になった場合の、潜在的な起動エラーを回避することができます。
+      </para>
+@z
+
+@x
     <para>GRUB is an extremely powerful program and it provides a tremendous
     number of options for booting from a wide variety of devices, operating
     systems, and partition types.  There are also many options for customization 

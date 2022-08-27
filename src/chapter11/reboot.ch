@@ -132,6 +132,18 @@
 @z
 
 @x
+    <listitem><para>Install <ulink
+    url='&blfs-book;postlfs/firmware.html'>firmwares</ulink> if the kernel
+    driver for your hardware require some firmware to function properly.
+    </para></listitem>
+@y
+    <listitem><para>
+    利用するハードウェア用のカーネルドライバーが、それを適切に動作させるために何か別のファームウェアを利用している場合は、<ulink
+    url='&blfs-book;postlfs/firmware.html'>firmwares</ulink> をインストールしてください。
+    </para></listitem>
+@z
+
+@x
     <listitem><para>Finally, a review of the following configuration files 
     is also appropriate at this point.</para>
 @y
