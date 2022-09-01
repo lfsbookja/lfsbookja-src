@@ -11,6 +11,12 @@
 @z
 
 @x
+<!ENTITY % reldate "September 1st, 2022"><!-- must ve given for release or rc -->
+@y
+<!ENTITY % reldate "2022/09/01"><!-- must ve given for release or rc -->
+@z
+
+@x
 <![ %rc; [
 <![ %sysv; [
 <!ENTITY version         "%relnum;-rc%rcnum;">
