@@ -295,12 +295,25 @@
       your first disk drive.  A partition size of 200 megabytes is quite
       adequate.</para></listitem>
 @y
-    <listitem><para>
-    /boot &ndash; 作成することが強く推奨されます。
-    カーネルやブート情報を収納するために利用するパーティションです。
-    容量の大きなディスクの場合、ブート時に問題が発生することがあるので、これを回避するには、一つ目のディスクドライブの物理的に一番最初のパーティションを選びます。
-    パーティションサイズを 200MB とすればそれで十分です。
-    </para></listitem>
+      <listitem><para>
+      /boot &ndash; 作成することが強く推奨されます。
+      カーネルやブート情報を収納するために利用するパーティションです。
+      容量の大きなディスクの場合、ブート時に問題が発生することがあるので、これを回避するには、一つ目のディスクドライブの物理的に一番最初のパーティションを選びます。
+      パーティションサイズを 200MB とすればそれで十分です。
+      </para></listitem>
+@z
+
+@x
+      <listitem><para>/boot/efi &ndash; The EFI System Partition, which is
+      needed for booting the system with UEFI.  Read
+      <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>
+      for details.</para></listitem>
+@y
+      <listitem><para>
+      /boot/efi &ndash; EFI システムパーティションであり、UEFI を使ってシステム起動する場合に必要です。
+      詳しくは <ulink
+      url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> を参照してください。
+      </para></listitem>
 @z
 
 @x
