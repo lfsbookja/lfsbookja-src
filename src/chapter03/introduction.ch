@@ -63,7 +63,7 @@
 @x
   <para>Download locations may not always be accessible. If a download
   location has changed since this book was published, Google (<ulink
-  url="http://www.google.com/"/>) provides a useful search engine for
+  url="https://www.google.com/"/>) provides a useful search engine for
   most packages. If this search is unsuccessful, try one of the
   alternative means of downloading at <ulink
   url="&lfs-root;lfs/mirrors.html#files"/>. </para>
@@ -71,7 +71,7 @@
   <para>
   ダウンロードサイトは常にアクセス可能であるとは限りません。
   本書が提供された後にダウンロードする場所が変更になっていたら Google (<ulink
-  url="http://www.google.com/"/>) を使って検索してみてください。
+  url="https://www.google.com/"/>) を使って検索してみてください。
   たいていのパッケージを見つけ出すことが出来るはずです。
   それでも見つけられなかったら <ulink
   url="&lfs-root;lfs/packages.html#packages"/> から入手してください。

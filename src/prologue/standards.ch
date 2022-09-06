@@ -26,28 +26,28 @@
 @z
 
 @x
-        <para><ulink url="http://pubs.opengroup.org/onlinepubs/9699919799/"> 
+        <para><ulink url="https://pubs.opengroup.org/onlinepubs/9699919799/">
         POSIX.1-2008</ulink>.</para>
 @y
-        <para><ulink url="http://pubs.opengroup.org/onlinepubs/9699919799/"> 
+        <para><ulink url="https://pubs.opengroup.org/onlinepubs/9699919799/">
         POSIX.1-2008</ulink></para>
 @z
 
 @x
         <para><ulink
-        url="http://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html">
+        url="https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html">
         Filesystem Hierarchy Standard (FHS) Version 3.0</ulink></para>
 @y
         <para><ulink
-        url="http://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html">
+        url="https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html">
         Filesystem Hierarchy Standard (FHS) Version 3.0</ulink></para>
 @z
 
 @x
-        <para><ulink url="http://refspecs.linuxfoundation.org/lsb.shtml">Linux
+        <para><ulink url="https://refspecs.linuxfoundation.org/lsb.shtml">Linux
         Standard Base (LSB) Version 5.0 (2015)</ulink></para>
 @y
-        <para><ulink url="http://refspecs.linuxfoundation.org/lsb.shtml">Linux
+        <para><ulink url="https://refspecs.linuxfoundation.org/lsb.shtml">Linux
         Standard Base (LSB) Version 5.0 (2015)</ulink></para>
 @z
 

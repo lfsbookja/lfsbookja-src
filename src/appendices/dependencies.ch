@@ -747,12 +747,12 @@
 @z
 @x
           <seg>
-             <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>
+             <ulink url="https://gcc.gnu.org/wiki/GNAT">GNAT</ulink>
              and
              <ulink url="https://repo.or.cz/isl.git">ISL</ulink>
 @y
           <seg>
-             <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
+             <ulink url="https://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
              <ulink url="https://repo.or.cz/isl.git">ISL</ulink>
 @z
 
@@ -2523,10 +2523,10 @@
 @z
 @x
           <seg>
-            <ulink url="http://lz4.github.io/lz4/">LZ4</ulink>
+            <ulink url="https://lz4.github.io/lz4/">LZ4</ulink>
           </seg>
 @y
           <seg>
-            <ulink url="http://lz4.github.io/lz4/">LZ4</ulink>
+            <ulink url="https://lz4.github.io/lz4/">LZ4</ulink>
           </seg>
 @z

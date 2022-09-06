@@ -704,11 +704,11 @@
 
 @x
         <para>The <systemitem class="filesystem">sysfs</systemitem> Filesystem
-        <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/></para>
+        <ulink url="https://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/></para>
 @y
         <para>
         <systemitem class="filesystem">sysfs</systemitem> ファイルシステム
-        <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/>
+        <ulink url="https://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/>
         </para>
 @z
 

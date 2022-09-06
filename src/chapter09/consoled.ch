@@ -43,7 +43,7 @@
   <filename>/etc/vconsole.conf</filename> file for configuration
   information. Decide which keymap and screen font will be used. Various
   language-specific HOWTOs can also help with this, see <ulink
-  url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>.
+  url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>.
   Examine the output of <command>localectl list-keymaps</command> for a list of
   valid console keymaps. Look in the
   <filename class="directory">/usr/share/consolefonts</filename>
@@ -54,7 +54,7 @@
   キーマップやスクリーンフォントには何を用いるのかを定めてください。
   各言語に対する HOWTO も確認してください。
   <ulink
-  url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/> が参考になるでしょう。
+  url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/> が参考になるでしょう。
   <command>localectl list-keymaps</command> を実行すると、設定可能なコンソールキーマップを確認できます。
   また <filename class="directory">/usr/share/consolefonts</filename> ディレクトリを見れば、設定可能なスクリーンフォントを確認できます。
   </para>

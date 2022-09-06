@@ -86,7 +86,7 @@
   9, and in part by common convention employed by a number of existing Linux
   distributions. In addition, some test suites rely on specific users or
   groups.  The Linux Standard Base (LSB, available at <ulink
-  url="http://refspecs.linuxfoundation.org/lsb.shtml"/>) only recommends that,
+  url="https://refspecs.linuxfoundation.org/lsb.shtml"/>) only recommends that,
   besides the group <systemitem class="groupname">root</systemitem> with a
   Group ID (GID) of 0, a group <systemitem class="groupname">bin</systemitem>
   with a GID of 1 be present. The GID of 5 is widely used for
@@ -102,7 +102,7 @@
   作成するグループは何かの標準に基づいたものではありません。
   一部は 9 章の udev の設定に必要となるものですし、一部は既存の Linux ディストリビューションが採用している慣用的なものです。
   またテストスイートにて特定のユーザーやグループを必要としているものがあります。
-  Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照) では <systemitem
+  Linux Standard Base (<ulink url="https://refspecs.linuxfoundation.org/lsb.shtml"/> 参照) では <systemitem
   class="groupname">root</systemitem> グループのグループID (GID) は 0、<systemitem
   class="groupname">bin</systemitem> グループの GID は 1 を定めているにすぎません。
   GID 5 は <systemitem class="groupname">tty</systemitem> グループに対して広く用いられています。

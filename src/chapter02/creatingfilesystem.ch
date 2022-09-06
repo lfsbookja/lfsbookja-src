@@ -69,12 +69,12 @@
   <para>Other file systems, including FAT32, NTFS, ReiserFS, JFS, and XFS are
   useful for specialized purposes.  More information about these file systems
   can be found at <ulink
-  url="http://en.wikipedia.org/wiki/Comparison_of_file_systems"/>.</para>
+  url="https://en.wikipedia.org/wiki/Comparison_of_file_systems"/>.</para>
 @y
   <para>
   この他のファイルシステムとして、FAT32, NTFS, ReiserFS, JFS, XFS などがあり、それぞれに特定の目的に応じて活用されています。
   ファイルシステムの詳細については <ulink
-  url="http://en.wikipedia.org/wiki/Comparison_of_file_systems"/> を参照してください。
+  url="https://en.wikipedia.org/wiki/Comparison_of_file_systems"/> を参照してください。
   </para>
 @z
 

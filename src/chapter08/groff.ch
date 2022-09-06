@@ -49,15 +49,6 @@
 @z
 
 @x
-    <para>This package does not support parallel build. Compile the package:</para>
-@y
-    <para>
-    このパッケージでは並行ビルドはサポートされていません。
-    &CompileThePackage;
-    </para>
-@z
-
-@x
     <para>This package does not come with a test suite.</para>
 @y
     <para>&NotExistTestsuite;</para>

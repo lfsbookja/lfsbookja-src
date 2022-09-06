@@ -57,44 +57,32 @@
 @z
 
 @x
-          <para><ulink url="http://www.cert.org/">CERT</ulink> (Computer
-          Emergency Response Team)</para>
+          <para><ulink url="&lfs-root;lfs/advisories/">LFS Security Advisories</ulink></para>
 @y
-          <para><ulink url="http://www.cert.org/">CERT</ulink> (Computer
-          Emergency Response Team)</para>
+          <para><ulink url="&lfs-root;lfs/advisories/">LFS セキュリティアドバイザリー</ulink></para>
 @z
 
 @x
-          <para>CERT has a mailing list that publishes security alerts concerning
-          various operating systems and applications. Subscription information is
-          available at <ulink
-          url="http://www.us-cert.gov/cas/signup.html"/>.</para>
+          <para>This is a list of security vulnerabilities discovered in the
+          LFS book after it's published.</para>
 @y
           <para>
-          CERT にはメーリングリストがあり、数々のオペレーティングシステムやアプリケーションにおけるセキュリティ警告を公開しています。
-          購読に関する情報は <ulink url="http://www.us-cert.gov/cas/signup.html"/> を参照してください。
+          LFS ブックを公開した後に発見されたセキュリティぜい弱性の一覧です。
           </para>
 @z
 
 @x
-          <para>Bugtraq</para>
+          <para><ulink url="https://seclists.org/oss-sec/">Open Source Security Mailing List</ulink></para>
 @y
-          <para>
-          バグトラック (Bugtraq)
-          </para>
+          <para><ulink url="https://seclists.org/oss-sec/">オープンソースセキュリティメーリングリスト</ulink></para>
 @z
 
 @x
-          <para>Bugtraq is a full-disclosure computer security mailing list. It
-          publishes newly discovered security issues, and occasionally potential
-          fixes for them. Subscription information is available at <ulink
-          url="http://www.securityfocus.com/archive"/>.</para>
+          <para>This is a mailing list for discussion of security flaws,
+          concepts, and practices in the Open Source community.</para>
 @y
           <para>
-          バグトラックは、完全公開のコンピューターセキュリティに関するメーリングリストです。
-          これは新たに発見されたセキュリティに関する問題を公開しています。
-          また時には、その問題を解消するフィックス情報も提供してくれます。
-          購読に関する情報は <ulink url="http://www.securityfocus.com/archive"/> を参照してください。
+          オープンソースコミュニティにおいて、セキュリティ不備、捉え方、実践などを議論するメーリングリストです。
           </para>
 @z
 
@@ -169,13 +157,13 @@
       <para>The goal of The Linux Documentation Project (TLDP) is to
       collaborate on all of the issues of Linux documentation. The TLDP features
       a large collection of HOWTOs, guides, and man pages.  It is located at
-      <ulink url="http://www.tldp.org/"/>.</para>
+      <ulink url="https://tldp.org/"/>.</para>
 @y
       <para>
       Linux ドキュメントプロジェクトの目指すことは
       Linux のドキュメントに関わる問題を共同で取り組むことです。
       TLDP ではハウツー (HOWTO)、ガイド、man ページを数多く提供しています。
       以下のサイトにあります。
-      <ulink url="http://www.tldp.org/"/>
+      <ulink url="https://www.tldp.org/"/>
       </para>
 @z

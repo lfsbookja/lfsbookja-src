@@ -162,18 +162,6 @@
           </para>
 @z
 
-@x --enable-initfini-array
-          <para>This option is automatically enabled when building a native
-          compiler with a native compiler on x86. But here, we build with
-          a cross compiler, so we need to explicitly set this option.</para>
-@y
-          <para>
-          本オプションを指定すれば、自動的に x86 上のネイティブコンパイラーを使って、ネイティブコンパイラーをビルドするようにします。
-          しかしここではクロスコンパイラーを作り出すつもりでいます。
-          したがって明示的に本オプションへ指定が必要になります。
-          </para>
-@z
-
 @x
     <para>Compile the package:</para>
 @y
