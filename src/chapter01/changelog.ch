@@ -44,6 +44,56 @@
 @z
 
 @x
+      <para>2022-09-07</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to shadow-4.12.3. Fixes
+           <ulink url="&lfs-ticket-root;5101">#5101</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to Python3-3.10.7. Fixes
+           <ulink url="&lfs-ticket-root;5109">#5109</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-5.19.7. Fixes
+           <ulink url="&lfs-ticket-root;5099">#5099</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to less-608. Fixes
+           <ulink url="&lfs-ticket-root;5104">#5104</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to grep-3.8. Fixes
+           <ulink url="&lfs-ticket-root;5105">#5105</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2022-09-07</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - shadow-4.12.3 へのアップデート。
+           <ulink url="&lfs-ticket-root;5101">#5101</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Python3-3.10.7 へのアップデート。
+           <ulink url="&lfs-ticket-root;5109">#5109</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-5.19.7 へのアップデート。
+           <ulink url="&lfs-ticket-root;5099">#5099</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - less-608 へのアップデート。
+           <ulink url="&lfs-ticket-root;5104">#5104</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - grep-3.8 へのアップデート。
+           <ulink url="&lfs-ticket-root;5105">#5105</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2022-09-01</para>
       <itemizedlist>
         <listitem>
