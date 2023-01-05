@@ -49,7 +49,7 @@
 @x BISON_LOCALEDIR=/usr/share/locale
           <para>Since bison is not yet installed in /usr, configure hardcodes
           the directory containing translations for the bison program (the
-	  "locale" directory) as /tools/share/locale. Passing this variable
+          "locale" directory) as /tools/share/locale. Passing this variable
            to make allows overriding the choice made by configure.</para>
 @y
           <para>

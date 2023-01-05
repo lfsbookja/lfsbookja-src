@@ -82,7 +82,7 @@
 @x
       <title>The meaning of the new configure parameters:</title>
 @y
-      <title>&MeaningOfParameter1;Configure&MeaningOfParameter2;</title>
+      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;</title>
 @z
 
 @x LD=ld
@@ -106,6 +106,39 @@
 @z
 
 @x
+    <note>
+      <anchor id="pie-ssp-info" xreflabel="note on PIE and SSP"/>
+@y
+    <note>
+      <anchor id="pie-ssp-info" xreflabel="PIE と SSP に関するメモ"/>
+@z
+@x
+        PIE (position-independent executable) is a technique to produce
+        binary programs that can be loaded anywhere in memory.  Without PIE,
+        the security feature named ASLR (Address Space Layout Randomization)
+        can be applied for the shared libraries, but not the executable
+        itself.  Enabling PIE allows ASLR for the executables in addition to
+        the shared libraries, and mitigates some attacks based on fixed
+        addresses of sensitive code or data in the executables.
+@y
+        PIE (position independent executable; 位置独立実行形式) とは、メモリ上のどこであっても、実行プログラムをロードできるようにする技術です。
+        PIE がない場合には ASLR (Address Space Layout Randomization; アドレス空間配置のランダム化) という技術が適用されますが、適用先は共有ライブラリのみであって実行ファイルには適用されません。
+        共有ライブラリに加えて実行ファイルに対しても、PIE と ASLR を有効にすれば、実行ファイル内にある機密コードやデータが、固定的なアドレスに存在することを前提とした攻撃を軽減できます。
+@z
+@x
+        SSP (Stack Smashing Protection) is a technique to ensure
+        that the parameter stack is not corrupted. Stack corruption can
+        for example alter the return address of a subroutine,
+        which would allow transferring control to some dangerous code
+        (existing in the program or shared libraries, or injected by the
+        attacker somehow) instead of the original one.
+@y
+        SSP (Stack Smashing Protection) とは、パラメータースタックが破壊されないようにする技術です。
+        スタック破壊が起きると、たとえばサブルーチンから返されるアドレスが変化してしまいます。
+        そうなった場合には、正常な制御には戻らずに、危険なコード（プログラムや共有ライブラリに元からあるものや、攻撃者が何らかの方法によって挿入したもの）に制御が移ってしまうことにもなります。
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
@@ -113,7 +146,7 @@
 
 @x
       <para>In this section, the test suite for GCC is considered
-      important, but it takes a long time. First time builders are 
+      important, but it takes a long time. First time builders are
       encouraged to not skip it.  The time to run the tests can be
       reduced significantly by adding -jx to the make command below
       where x is the number of cores on your system.</para>
@@ -172,6 +205,17 @@
     テスト結果については <ulink
     url="&test-results;"/> と <ulink
     url="https://gcc.gnu.org/ml/gcc-testresults/"/> にある情報と比較することができます。
+    </para>
+@z
+
+@x
+    <para>In gcc, eleven tests, in the i386 test suite are known to FAIL.
+    It's because the test files do not account for the
+    <parameter>--enable-default-pie</parameter> option.</para>
+@y
+    <para>
+    gcc においては、i386 テストスイートにおいて 11 個のテストが FAIL となります。
+    これはテストファイルが <parameter>--enable-default-pie</parameter> オプションを考慮していないためです。
     </para>
 @z
 
@@ -697,10 +741,12 @@
 
 @x libssp
           <para>Contains routines supporting GCC's stack-smashing protection
-          functionality</para>
+          functionality.  Normally it's unused because glibc also provides
+          those routines</para>
 @y
           <para>
           GCC のスタック破壊を防止する (stack-smashing protection) 機能をサポートするルーチンを提供します。
+          glibc から同じルーチンが提供されているため、通常は用いられません。
           </para>
 @z
 

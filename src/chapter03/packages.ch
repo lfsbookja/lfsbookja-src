@@ -28,22 +28,22 @@
 @z
 
 @x
-    <para>The upstreams may remove old releases, especially when these
+    <para>The upstream sources may remove old releases, especially when those
     releases contain a security vulnerability.  If one URL below is not
     reachable, you should read the security advisories first to figure out
     if a newer version (with the vulnerability fixed) should be used.  If
     not, try to download the removed package from a mirror.  Although it's
-	possible to download an old release from a mirror even if this release
-	has been removed because of a vulnerability, it's not recommended to
-	use a release known to be vulnerable for building your system.</para>
+    possible to download an old release from a mirror even if this release
+    has been removed because of a vulnerability, it's not a good idea to
+    use a release known to be vulnerable when building your system.</para>
 @y
     <para>
-    アップストリームでは、古いリリースを削除していることがあります。
+    アップストリームでは、古いリリースソースを削除していることがあります。
     特にそのリリースにセキュリティぜい弱性を含んでいた場合です。
     以下に示す URL が無効になっていたら、まず初めにセキュリティアドバイスを読んでください。
     そして新たなバージョンが（ぜい弱性を解消して）入手できるかどうかを確認してください。
     それでもパッケージが削除されてしまっている場合は、ミラーサイトからのダウンロードを試してみてください。
-    ぜい弱性が原因で削除されていた古いバージョンのパッケージがダウンロードできたとしても、ぜい弱性に問題があるのであれば、システムビルドに用いることはお勧めしません。
+    ぜい弱性が原因で削除されていた古いバージョンのパッケージがダウンロードできたとしても、ぜい弱性のあるパッケージをシステムビルドに用いることはお勧めしません。
     </para>
 @z
 
@@ -430,14 +430,14 @@
 @z
 
 @x
-          <para>The Linux kernel is updated relatively often, many times due to
+          <para>The Linux kernel is updated quite frequently, many times due to
           discoveries of security vulnerabilities.  The latest available
           <!--&linux-major-version;.&linux-minor-version;.x--> stable kernel
           version <!--should--> may be
           used, unless the errata page says otherwise.</para>
 @y
           <para>
-          Linux カーネルはわりと頻繁に更新されます。
+          Linux カーネルはかなり頻繁に更新されます。
           多くの場合はセキュリティ脆弱性の発見によるものです。
           特に正誤情報 (errata) のページにて説明がない限りは、入手可能な最新安定版のカーネルを用いてください。
           あるいは errata に指示があればそれに従ってください。

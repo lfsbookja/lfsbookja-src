@@ -203,6 +203,16 @@
       <title>上の設定項目の説明</title>
 @z
 
+@x Randomize the address of the kernel image (KASLR)
+          <para>Enable ASLR for kernel image, to mitigate some attacks based
+          on fixed addresses of sensitive data or code in the kernel.</para>
+@y
+          <para>
+          カーネルイメージにおいて ASLR を有効にします。
+          これによって、カーネル内にある機密コードやデータが、固定的なアドレスに存在することを前提とした攻撃を軽減できます。
+          </para>
+@z
+
 @x Compile the kernel with warnings as errors
           <para>This may cause building failure if the compiler and/or
           configuration are different from those of the kernel
@@ -220,6 +230,20 @@
           <para>
           これは、 カーネルビルドにあたって <command>cpio</command> を必要とします。
           <command>cpio</command> は LFS ではインストールしません。
+          </para>
+@z
+
+@x Strong Stack Protector
+          <para>Enable SSP for the kernel.  We've enabled it for the entire
+          userspace with <parameter>--enable-default-ssp</parameter>
+          configuring GCC, but the kernel does not use GCC default setting
+          for SSP.  We enable it explicitly here.</para>
+@y
+          <para>
+          カーネルにおいて SSP を有効にします。
+          ユーザー空間全体に対してこれを有効にするには、GCC のコンパイルにあたって <parameter>--enable-default-ssp</parameter> を指定します。
+          ただしカーネルは、GCC のデフォルト設定として SSP を利用しません。
+          したがってここで明示的な指定を行います。
           </para>
 @z
 
@@ -257,6 +281,24 @@
           </para>
 @z
 
+@x Framebuffer Console support
+          <para>This is needed to display the Linux console on a frame
+          buffer device.  To allow the kernel to print debug messages at an
+          early boot stage, it shouldn't be built as a kernel module
+          unless an initramfs will be used. And, if
+          <option>CONFIG_DRM</option> (Direct Rendering Manager) is enabled,
+          it's likely <option>CONFIG_DRM_FBDEV_EMULATION</option> (Enable
+          legacy fbdev support for your modesetting driver) should be
+          enabled as well.</para>
+@y
+          <para>
+          これはフレームバッファーデバイス上に Linux コンソールを表示するために必要となります。
+          起動初期においてカーネルがデバッグメッセージを表示できるようにするためには、initramfs を使わない場合であれば、これをカーネルモジュールとしてビルドしてはなりません。
+          また <option>CONFIG_DRM</option> (Direct Rendering Manager) を有効にしている場合は <option>CONFIG_DRM_FBDEV_EMULATION</option> (Enable
+          legacy fbdev support for your modesetting driver) も同じく有効にしておく必要があります。
+          </para>
+@z
+
 @x Support x2apic
           <para>Support running the interrupt controller of 64-bit x86
           processors in x2APIC mode.  x2APIC may be enabled by firmware on
@@ -271,19 +313,6 @@
           ファームウェアによって x2APIC が有効である場合、カーネルにおいてこのオプションが無効であると、起動時にパニックを起こします。
           本オプションには効果がありません。
           またファームウェアによって x2APIC が無効であった場合、このオプションは影響を及ぼしません。
-          </para>
-@z
-
-@x
-          <para>If this option is enabled, a security vulnerability not
-          resolved in Linux-&linux-version; yet will be exploitable.
-          Disable this option to avoid the vulnerability.  This system call
-          is not used by any part of LFS or BLFS.</para>
-@y
-          <para>
-          このオプションを有効にすると、Linux-&linux-version; において解決されていないセキュリティぜい弱性が悪用される危険があります。
-          ぜい弱性を避けるために、このオプションは無効にしてください。
-          このシステムコールは LFS や BLFS のどこからも利用しません。
           </para>
 @z
 
@@ -358,15 +387,28 @@
 @z
 
 @x
-      <para>If the host system has a separate /boot partition, the files copied
-      below should go there. The easiest way to do that is to bind /boot on the
-      host (outside chroot) to /mnt/lfs/boot before proceeding.  As the
-      &root; user in the <emphasis>host system</emphasis>:</para>
+      <para>If you've decided to use a separate &boot-dir; partition for the
+      LFS system (maybe sharing a &boot-dir; partition with the host
+      distro) , the files copied below should go there. The easiest way to
+      do that is to create the entry for &boot-dir; in &fstab; first (read
+      the previous section for details), then issue the following command
+      as the &root; user in the
+      <emphasis>chroot environment</emphasis>:</para>
 @y
       <para>
-      ホストシステムが独立した /boot パーティションを用いている場合はファイルをそこにコピーします。
-      これを簡単に行うために、作業前に（chroot 前の）/boot をホストの /mnt/lfs/boot にバインドしておく方法があります。
-      <emphasis>ホストシステム</emphasis> の &root; ユーザーとなって以下を実行します。
+      LFS システムにおいて、&boot-dir; パーティションを切り分けて用意することにした場合（おそらくホストディストロの &boot-dir; パーティションを共用とする場合）、以降でコピーするファイルがそこに入ります。
+      これを最も簡単に行うには、&fstab; 内に &boot-dir; 用のエントリーを生成します（詳細は前節を参照してください）。
+      そして <emphasis>chroot 環境</emphasis> 内の &root; ユーザーになって、以下のコマンドを実行します。
+      </para>
+@z
+
+@x
+      <para>The path to the device node is omitted in the command because
+      <command>mount</command> can read it from &fstab;.</para>
+@y
+      <para>
+      コマンド実行にあたっては、デバイスノードへのパスは省略します。
+      これは <command>mount</command> コマンドが &fstab; から読み込むからです。
       </para>
 @z
 

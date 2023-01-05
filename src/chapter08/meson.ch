@@ -113,7 +113,7 @@
 @x
         <seg>meson</seg>
         <seg>
-           /usr/lib/python&python-minor;/site-packages/meson-&meson-version;.dist-info and 
+           /usr/lib/python&python-minor;/site-packages/meson-&meson-version;.dist-info and
            /usr/lib/python&python-minor;/site-packages/mesonbuild
         </seg>
 @y

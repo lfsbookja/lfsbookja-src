@@ -203,17 +203,6 @@
     </para>
 @z
 
-%@x
-%    <para>Creating an empty <filename>~/.vimrc</filename> prevents vim from
-%    overriding settings in <filename>/etc/vimrc</filename> by using
-%    <filename>/usr/share/vim/vim80/defaults.vim</filename>.</para>
-%@y
-%    <para>
-%    空の <filename>~/.vimrc</filename> を生成します。
-%    こうすることで <filename>/usr/share/vim/vim80/defaults.vim</filename> を用いる <filename>/etc/vimrc</filename> の設定内容をオーバーライドさせないようにします。
-%    </para>
-%@z
-
 @x
     <para>Documentation for other available options can be obtained by
     running the following command:</para>
@@ -225,17 +214,18 @@
 
 @x
       <para>By default, vim only installs spell files for the English language.
-      To install spell files for your preferred language, download the
-      <filename>*.spl</filename> and optionally, the <filename>*.sug</filename>
-      files for your language and character encoding from <ulink
-      url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> and save them to
-      <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename>.</para>
+      To install spell files for your preferred language, copy the
+      <filename class='extension'>.spl</filename> and optionally, the
+      <filename class='extension'>.sug</filename> files for your language
+      and character encoding from
+      <filename class='directory'>runtime/spell</filename> into
+      <filename class='directory'>
+        /usr/share/&vim-docdir;/spell/</filename>.</para>
 @y
       <para>
       vim がインストールするスペルファイル (spell files) はデフォルトでは英語に対するものだけです。
-      必要とする言語のスペルファイルをインストールするなら <ulink
-      url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から、特定の言語、エンコーディングによる <filename>*.spl</filename> ファイル、またオプションとして <filename>*.sug</filename> ファイルをダウンロードしてください。
-      そしてそれらのファイルを <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename> ディレクトリに保存してください。
+      必要とする言語のスペルファイルをインストールするなら <filename
+      class='directory'>runtime/spell</filename> から、特定の言語、エンコーディングによる <filename>*.spl</filename> ファイル、またオプションとして <filename>*.sug</filename> ファイルを <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename> にコピーしてください。
       </para>
 @z
 
@@ -249,11 +239,11 @@
 @z
 
 @x
-      <para>For more information, see the appropriate README file located
-      at the URL above.</para>
+      <para>For more information, see
+      <filename>runtime/spell/README.txt</filename>.</para>
 @y
       <para>
-      詳しくは、上で説明した URL にて提供されている README ファイルを参照してください。
+      詳しくは <filename>runtime/spell/README.txt</filename> を参照してください。
       </para>
 @z
 

@@ -30,7 +30,7 @@
 @x
       <title>The meaning of the new Configure options:</title>
 @y
-      <title>&MeaningOfOption1;Configure&MeaningOfOption2;</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x -des

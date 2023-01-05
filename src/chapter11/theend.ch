@@ -75,9 +75,8 @@
 @z
 
 @x
-  <para>Be sure to put some sort of customization for the fields
-  'DISTRIB_CODENAME' and 'VERSION_CODENAME' to make the system uniquely
-  yours.</para>
+  <para>Be sure to customize the fields 'DISTRIB_CODENAME' and
+  'VERSION_CODENAME' to make the system uniquely yours.</para>
 @y
   <para>
   'DISTRIB_CODENAME' と 'VERSION_CODENAME' の両項目に対しては、あなたのシステムを特定できるように適切に設定してください。

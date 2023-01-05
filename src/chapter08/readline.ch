@@ -51,9 +51,9 @@
 
 @x --with-curses
           <para>This option tells Readline that it can find the termcap
-	       library functions in the curses library, rather than a separate
-	       termcap library. It allows generating a correct
-	       <filename>readline.pc</filename> file.</para>
+          library functions in the curses library, rather than a separate
+          termcap library. It allows generating a correct
+          <filename>readline.pc</filename> file.</para>
 @y
           <para>
           このオプションは Readline パッケージに対して、termcap ライブラリ関数の探し場所を、切り離されている termcap ライブラリではなく curses ライブラリとすることを指示します。

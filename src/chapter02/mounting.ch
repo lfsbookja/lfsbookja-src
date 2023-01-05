@@ -16,30 +16,41 @@
 @z
 
 @x
-  <para>Now that a file system has been created, the partition needs to
-  be made accessible. In order to do this, the partition needs to be
-  mounted at a chosen mount point. For the purposes of this book, it is
-  assumed that the file system is mounted under the directory specified by the
-  <envar>LFS</envar> environment variable as described in the previous section.
+  <para>Now that a file system has been created, the partition must
+  be mounted so the host system can access it. This book assumes that
+  the file system is mounted at the directory specified by the
+  <envar>LFS</envar> environment variable described in the previous section.
   </para>
 @y
   <para>
-  ファイルシステムが生成できたら、パーティションをアクセスできるようにします。
-  これを行うためにはマウントポイントを定める必要があります。
-  本書では前に示したように、環境変数 <envar>LFS</envar> に指定されたディレクトリに対してファイルシステムがマウントされるものとします。
+  ファイルシステムが生成できたら、ホストシステムからアクセスできるようにパーティションをマウントします。
+  本書では前に示したように、環境変数 <envar>LFS</envar> に指定されたディレクトリに対してファイルシステムをマウントするものとします。
   </para>
 @z
 
 @x
-  <para>Create the mount point and mount the LFS file system by running:</para>
+  <para>Strictly speaking, one cannot "mount a partition". One mounts the <emphasis>file
+  system</emphasis> embedded in that partition. But since a single partition can't contain
+  more than one file system, people often speak of the partition and the
+  associated file system as if they were one and the same.</para>
 @y
   <para>
-  マウントポイントを生成し、LFS ファイルシステムをマウントします。
+  厳密に言うと「パーティションはマウントできません」。
+  マウントできるのは、そのパーティション内に埋め込まれている<emphasis>ファイルシステム</emphasis>です。
+  ただし１つのパーティションに複数のファイルシステムを収めることはできないので、パーティションとそこに関連づいたファイルシステムのことを、同一のものとして表現するわけです。
   </para>
 @z
 
 @x
-  <para>Replace <replaceable>&lt;xxx&gt;</replaceable> with the designation of the LFS
+  <para>Create the mount point and mount the LFS file system with these commands:</para>
+@y
+  <para>
+  以下のコマンドによってマウントポイントを生成し、LFS ファイルシステムをマウントします。
+  </para>
+@z
+
+@x
+  <para>Replace <replaceable>&lt;xxx&gt;</replaceable> with the name of the LFS
   partition.</para>
 @y
   <para>
@@ -48,9 +59,9 @@
 @z
 
 @x
-  <para>If using multiple partitions for LFS (e.g., one for <filename
-  class="directory">/</filename> and another for <filename
-  class="directory">/home</filename>), mount them using:</para>
+  <para>If you are using multiple partitions for LFS (e.g., one for
+  <filename class="directory">/</filename> and another for <filename
+  class="directory">/home</filename>), mount them like this:</para>
 @y
   <para>
   LFS に対して複数のパーティションを用いる場合 (例えば <filename class="directory">/</filename> と <filename
@@ -74,7 +85,7 @@
   <option>nodev</option> options). Run the <command>mount</command> command
   without any parameters to see what options are set for the mounted LFS
   partition. If <option>nosuid</option> and/or <option>nodev</option> are set,
-  the partition will need to be remounted.</para>
+  the partition must be remounted.</para>
 @y
   <para>
   この新しいパーティションは特別な制限オプション (<option>nosuid</option>、<option>nodev</option> など) は設定せずにマウントします。
@@ -84,17 +95,18 @@
 @z
 
 @x
-  <warning><para>The above instructions assume that you will not be restarting
+  <warning><para>The above instructions assume that you will not restart
   your computer throughout the LFS process.  If you shut down your system,
   you will either need to remount the LFS partition each time you restart
-  the build process or modify your host system's /etc/fstab file to automatically
-  remount it upon boot.  For example:
+  the build process, or modify the host system's &fstab; file to automatically
+  remount it when you reboot. For example, you might add this line to your 
+  &fstab; file:
 @y
   <warning><para>
   上で説明した内容は、LFS 構築作業においてコンピューターを再起動しない場合の話です。
   コンピューターを一度シャットダウンした場合は、LFS 構築作業の再開のたびに LFS パーティションを再マウントする必要があります。
-  あるいはブート時に自動マウントをしたいのであれば、ホストシステムの /etc/fstab ファイルを書き換えておく必要があります。
-  書き換えは例えば以下のようになります。
+  あるいはブート時に自動マウントをしたいのであれば、ホストシステムの &fstab; ファイルを書き換えておく必要があります。
+  例えば &fstab; ファイルに以下のような行を追加します。
 @z
 
 @x
@@ -124,10 +136,11 @@
 @z
 
 @x
-  <para>Now that there is an established place to work, it is time to
+  <para>Now that the new LFS partition is open for business, it's time to
   download the packages.</para>
 @y
   <para>
-  こうして動作環境が整いました。次はパッケージのダウンロードです。
+  こうして新たな LFS パーティションが整いました。
+  次はパッケージのダウンロードです。
   </para>
 @z

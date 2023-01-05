@@ -20,9 +20,9 @@
   making a single mistake can damage or destroy a system. Therefore,
   the packages in the next two chapters are built as an unprivileged user.
   You could use your own user name, but to make it easier to set up a clean
-  working environment, create a new user called <systemitem
+  working environment, we will create a new user called <systemitem
   class="username">lfs</systemitem> as a member of a new group (also named
-  <systemitem class="groupname">lfs</systemitem>) and use this user during
+  <systemitem class="groupname">lfs</systemitem>) and log in as this user during
   the installation process. As <systemitem class="username">root</systemitem>,
   issue the following commands to add the new user:</para>
 @y
@@ -32,13 +32,13 @@
   あなた自身のユーザーを利用するのでも構いませんが、全く新しいユーザー環境として <systemitem
   class="username">lfs</systemitem> というユーザーを作成するのが分かりやすいでしょう。
   所属するグループも <systemitem class="groupname">lfs</systemitem> という名で作成します。
-  ビルド作業においてはこのユーザーを利用していきます。
+  ビルド作業においてはこのユーザーによりログインしていきます。
   そこで <systemitem class="username">root</systemitem> ユーザーになって、新たなユーザーを追加する以下のコマンドを実行します。
   </para>
 @z
 
 @x
-    <title>The meaning of the command line options:</title>
+    <title>This is what the command line options mean:</title>
 @y
     <title>コマンドラインオプションの意味</title>
 @z
@@ -72,7 +72,7 @@
 
 @x
         <para>This parameter prevents possible copying of files from a skeleton
-        directory (default is <filename class="directory">/etc/skel</filename>)
+        directory (the default is <filename class="directory">/etc/skel</filename>)
         by changing the input location to the special null device.</para>
 @y
         <para>
@@ -90,14 +90,14 @@
 @z
 
 @x
-  <para>To log in as <systemitem class="username">lfs</systemitem> (as opposed
+  <para>To enable logging in as <systemitem class="username">lfs</systemitem> (as opposed
   to switching to user <systemitem class="username">lfs</systemitem> when logged
   in as <systemitem class="username">root</systemitem>, which does not require
   the <systemitem class="username">lfs</systemitem> user to have a password),
   give <systemitem class="username">lfs</systemitem> a password:</para>
 @y
   <para>
-  <systemitem class="username">lfs</systemitem> ユーザーとしてログインするために <systemitem
+  <systemitem class="username">lfs</systemitem> ユーザーとしてログインできるようにするために <systemitem
   class="username">lfs</systemitem> に対するパスワードを設定します。
   (<systemitem class="username">root</systemitem> ユーザーでログインしている時に <systemitem
   class="username">lfs</systemitem> へのユーザー切り替えを行なう場合には <systemitem
@@ -107,8 +107,8 @@
 
 @x
   <para>Grant <systemitem class="username">lfs</systemitem> full access to
-  all directories under <filename class="directory">$LFS</filename> by making
-  <systemitem class="username">lfs</systemitem> the directory owner:</para>
+  all the directories under <filename class="directory">$LFS</filename> by making
+  <systemitem class="username">lfs</systemitem> the owner:</para>
 @y
   <para>
   <filename class="directory">$LFS</filename> ディレクトリの所有者を <systemitem
@@ -117,13 +117,13 @@
 @z
 
 @x
-  <note><para>In some host systems, the following command does not complete
-  properly and suspends the login to the &lfs-user; user to the background.
+<note><para>In some host systems, the following <command>su</command> command does not complete
+  properly and suspends the login for the &lfs-user; user to the background.
   If the prompt "lfs:~$" does not appear immediately, entering the
   <command>fg</command> command will fix the issue.</para></note>
 @y
-  <note><para>
-  ホストシステムによっては、以下のコマンドを実行しても正常に処理されず、&lfs-user; ユーザーへのログインがバックグラウンドで処理中のままとなってしまうことがあります。
+<note><para>
+  ホストシステムによっては、以下の <command>su</command> コマンドを実行しても正常に処理されず、&lfs-user; ユーザーへのログインがバックグラウンドで処理中のままとなってしまうことがあります。
   プロンプトに "lfs:~$" という表示がすぐに現れなかった場合は、<command>fg</command> コマンドを入力することで解決するかもしれません。
   </para></note>
 @z
@@ -143,7 +143,7 @@
 @x
   <para>The <quote><parameter>-</parameter></quote> instructs
   <command>su</command> to start a login shell as opposed to a non-login shell.
-  The difference between these two types of shells can be found in detail in
+  The difference between these two types of shells is described in detail in
   <filename>bash(1)</filename> and <command>info bash</command>.</para>
 @y
   <para>

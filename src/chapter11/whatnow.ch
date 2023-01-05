@@ -10,9 +10,9 @@
 @z
 
 @x
-  <title>What Now?</title>
+  <title>Additional Resources</title>
 @y
-  <title>今度は何?</title>
+  <title>さらなる情報</title>
 @z
 
 @x
@@ -72,7 +72,8 @@
 @z
 
 @x
-          <para><ulink url="https://seclists.org/oss-sec/">Open Source Security Mailing List</ulink></para>
+          <para><ulink url="https://seclists.org/oss-sec/">Open Source Security 
+          Mailing List</ulink></para>
 @y
           <para><ulink url="https://seclists.org/oss-sec/">オープンソースセキュリティメーリングリスト</ulink></para>
 @z

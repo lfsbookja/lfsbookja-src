@@ -209,10 +209,10 @@
 @x
     <para>Swapping is never good. For mechanical hard drives you can generally
     tell if a system is swapping by just listening to disk activity and
-    observing how the system reacts to commands.  For an SSD drive you will not
-    be able to hear swapping but you can tell how much swap space is being used
-    by the <command>top</command> or <command>free</command> programs.  Use of
-    an SSD drive for a swap partition should be avoided if possible.  The first
+    observing how the system reacts to commands. With an SSD you will not
+    be able to hear swapping, but you can tell how much swap space is being used
+    by running the <command>top</command> or <command>free</command> programs.  Use of
+    an SSD for a swap partition should be avoided if possible.  The first
     reaction to swapping should be to check for an unreasonable command such as
     trying to edit a five gigabyte file. If swapping becomes a normal
     occurrence, the best solution is to purchase more RAM for your
@@ -221,9 +221,9 @@
     <para>
     スワップは好ましいことではありません。
     物理的なハードドライブの場合、スワップが発生しているかどうかは、単純にディスク音を聞いたり、コマンド実行時にシステムがどのように反応するかを見ればわかります。
-    SSD ドライブの場合、スワップ時の音は聞こえてきません。
+    SSD の場合、スワップ時の音は聞こえてきません。
     その場合は <command>top</command> や <command>free</command> プログラムを使ってスワップ使用量を確認することができます。
-    SSD ドライブにスワップパーティションを割り当てることは極力避けるべきです。
+    SSD にスワップパーティションを割り当てることは極力避けるべきです。
     最初は 5GB くらいのファイルを編集するといった極端なコマンド実行を行ってみて、スワップが起きるかどうかを確認してみてください。
     スワップがごく普通に発生するようであれば、RAMを増設するのが適切です。
     </para>
@@ -243,21 +243,21 @@
     must be available for GRUB to use during installation of the boot
     loader. This partition will normally be labeled 'BIOS Boot' if using
     <command>fdisk</command> or have a code of <emphasis>EF02</emphasis> if
-    using <command>gdisk</command>.</para>
+    using the <command>gdisk</command> command.</para>
 @y
     <para>
     GUID パーティションテーブル (GUID Partition Table; GPT) を利用して <emphasis>ブートディスク</emphasis> をパーティショニングした場合、普通は 1 MB 程度の小さなパーティションをさらに用意しておくことが必要です。
     このパーティションのフォーマットは不要であり、ブートローダーをインストールする際に GRUB が利用できるものでなければなりません。
     通常このパーティションは <command>fdisk</command> を用いた場合は 'BIOS Boot' と名付けられます。
-    また <command>gdisk</command> を用いた場合は<emphasis>EF02</emphasis> というコード名が与えられます。
+    また <command>gdisk</command> コマンドを用いた場合は<emphasis>EF02</emphasis> というコード名が与えられます。
     </para>
 @z
 
 @x
     <note><para>The Grub Bios partition must be on the drive that the BIOS
-    uses to boot the system.  This is not necessarily the same drive where the
-    LFS root partition is located. Disks on a system may use different
-    partition table types.  The requirement for this partition depends
+    uses to boot the system.  This is not necessarily the drive that holds
+    the LFS root partition. The disks on a system may use different
+    partition table types. The necessity of the Grub Bios partition depends
     only on the partition table type of the boot disk.</para></note>
     </sect3>
 @y
@@ -292,7 +292,7 @@
       <listitem><para>/boot &ndash; Highly recommended.  Use this partition to
       store kernels and other booting information.  To minimize potential boot
       problems with larger disks, make this the first physical partition on
-      your first disk drive.  A partition size of 200 megabytes is quite
+      your first disk drive.  A partition size of 200 megabytes is
       adequate.</para></listitem>
 @y
       <listitem><para>
@@ -334,17 +334,17 @@
       <filename class="directory">/bin</filename>,
       <filename class="directory">/lib</filename>, and
       <filename class="directory">/sbin</filename> are symlinks to their
-      counterpart in <filename class="directory">/usr</filename>.
-      So <filename class="directory">/usr</filename> contains all binaries
+      counterparts in <filename class="directory">/usr</filename>.
+      So <filename class="directory">/usr</filename> contains all the binaries
       needed for the system to run.  For LFS a separate partition for
       <filename class="directory">/usr</filename> is normally not needed.
-      If you need it anyway, you should make a partition large enough to
-      fit all programs and libraries in the system.  The root partition can be
+      If you create it anyway, you should make a partition large enough to
+      fit all the programs and libraries in the system. The root partition can be
       very small (maybe just one gigabyte) in this configuration, so it's
       suitable for a thin client or diskless workstation (where
       <filename class="directory">/usr</filename> is mounted from a remote
-      server).  However you should take care that an initramfs (not covered by
-      LFS) will be needed to boot a system with separate
+      server). However, you should be aware that an initramfs (not covered by
+      LFS) will be needed to boot a system with a separate
       <filename class="directory">/usr</filename> partition.</para></listitem>
 @y
       <listitem><para>/usr &ndash;
@@ -355,7 +355,7 @@
       の各ディレクトリは、<filename class="directory">/usr</filename> 配下からのシンボリックリンクとしています。
       したがって <filename class="directory">/usr</filename> には、システムを動作させるために必要となる実行モジュールがすべて置かれます。
       LFS において <filename class="directory">/usr</filename> を別パーティションとすることは、普通は不要です。
-      それでもこれが必要となる場合、システム内のプログラムやライブラリすべてが収容できるように、そのパーティション容量を十分に確保することが必要です。
+      それでもこれを生成する場合、システム内のプログラムやライブラリすべてが収容できるように、そのパーティション容量を十分に確保することが必要です。
       root パーティションは、このような設定とするなら、極端に小さなサイズ（1 ギガバイト程度）でも十分です。
       これはシンクライアントやディスクなしワークステーションに適しています。
       （そういった環境では <filename class="directory">/usr</filename> がリモートサーバーにマウントされます。）
@@ -366,14 +366,14 @@
 
 @x
       <listitem><para>/opt &ndash; This directory is most useful for
-      BLFS where multiple installations of large packages like Gnome or KDE can
+      BLFS, where multiple large packages like KDE or Texlive can
       be installed without embedding the files in the /usr hierarchy.  If
       used, 5 to 10 gigabytes is generally adequate.</para>
       </listitem>
 @y
       <listitem><para>
       /opt &ndash; 
-      このディレクトリは BLFS などにおいて、Gnome や KDE といった巨大なパッケージをいくつもインストールする際に活用されます。
+      このディレクトリは BLFS などにおいて、KDE や Texlive といった巨大なパッケージをいくつもインストールする際に活用されます。
       /usr ディレクトリ以外にインストールする場合です。
       これを別パーティションとするなら、一般的には 5 ～ 10 GB 程度が適当でしょう。
       </para>
@@ -381,24 +381,43 @@
 @z
 
 @x
-      <listitem><para>/tmp &ndash; A separate /tmp directory is rare, but
-      useful if configuring a thin client.  This partition, if used, will
-      usually not need to exceed a couple of gigabytes.</para></listitem>
+      <listitem revision='sysv'><para>/tmp &ndash; A separate /tmp directory
+      is rare, but useful if configuring a thin client.  This partition, if
+      used, will usually not need to exceed a couple of
+      gigabytes.  If you have enough RAM, you can mount a
+      <systemitem class='filesystem'>tmpfs</systemitem> on /tmp to make
+      access to temporary files faster.</para></listitem>
 @y
-      <listitem><para>
+      <listitem revision='sysv'><para>
       /tmp &ndash; 
       /tmp ディレクトリを別パーティションとするのは普通は行いません。
       ただしシンクライアント (thin client) では有効です。
       別パーティションとする場合であっても、数GB程度あれば十分です。
+      RAM が十分にある場合は <systemitem
+      class='filesystem'>tmpfs</systemitem> を /tmp にマウントして、一時ファイルへのアクセスを素早く行えるようになります。
+      </para></listitem>
+@z
+
+@x
+      <listitem revision='systemd'><para>/tmp &ndash; By default, systemd
+      mounts a <systemitem class='filesystem'>tmpfs</systemitem> here.
+      If you want to override that behavior, follow
+      <xref linkend='systemd-no-tmpfs'/> when configuring the LFS
+      system.</para></listitem>
+@y
+      <listitem revision='systemd'><para>
+      /tmp &ndash;
+      systemd はデフォルトで <systemitem class='filesystem'>tmpfs</systemitem> をマウントします。
+      この動作を上書きしたい場合は <xref linkend='systemd-no-tmpfs'/> に従って LFS システムを設定してください。
       </para></listitem>
 @z
 
 @x
       <listitem><para>/usr/src &ndash; This partition is very
       useful for providing a location to store BLFS source files and
-      share them across LFS builds.  It can also be used as a location
-      for building BLFS packages.  A reasonably large partition of 30-50
-      gigabytes allows plenty of room.</para></listitem>
+      share them across LFS builds. It can also be used as a location
+      for building BLFS packages. A reasonably large partition of 30-50
+      gigabytes provides plenty of room.</para></listitem>
 @y
       <!--
       前段にて BLFS source files を収容するような説明。
@@ -414,10 +433,10 @@
 @z
 
 @x
-    <para>Any separate partition that you want automatically mounted upon boot
-    needs to be specified in the <filename>/etc/fstab</filename>.  Details
-    about how to specify partitions will be discussed in <xref
-    linkend="ch-bootable-fstab"/>.  </para>
+    <para>Any separate partition that you want automatically mounted when the
+    system starts must be specified in the <filename>/etc/fstab</filename> file.
+    Details about how to specify partitions will be discussed in <xref
+    linkend="ch-bootable-fstab"/>.</para>
 @y
     <para>
     ブート時に自動的にパーティションをマウントしたい場合は <filename>/etc/fstab</filename> ファイルにて設定します。

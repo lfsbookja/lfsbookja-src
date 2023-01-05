@@ -3,6 +3,7 @@
 ##
 BOOKdir = @abs_bookdir@/chapter11
 CHANGE_FILES = \
+	afterlfs.ch   \
 	chapter11.ch  \
 	getcounted.ch \
 	reboot.ch     \

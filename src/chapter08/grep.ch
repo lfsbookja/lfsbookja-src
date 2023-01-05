@@ -24,6 +24,13 @@
 @z
 
 @x
+       First, remove a warning about using egrep and fgrep that makes
+       tests on some packages fail:
+@y
+       各種パッケージのテストにおいて、egrep と fgrep を用いた際の警告が原因でテストが失敗するため、その警告を削除します。
+@z
+
+@x
     <para>Prepare Grep for compilation:</para>
 @y
     <para>&PreparePackage1;Grep&PreparePackage2;</para>

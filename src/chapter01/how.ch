@@ -81,25 +81,8 @@
   </para>
 @z
 
-%@x
-%  <para><xref linkend="chapter-temporary-tools"/> explains the
-%  installation of a number of packages that will form the basic
-%  development suite (or toolchain) which is used to build the actual
-%  system in <xref linkend="chapter-building-system"/>. Some of these
-%  packages are needed to resolve circular dependencies&mdash;for example,
-%  to compile a compiler, you need a compiler.</para>
-%@y
-%  <para>
-%  <xref linkend="chapter-temporary-tools"/>では数多くのパッケージをインストールします。
-%  これらは基本的な開発ツール (ツールチェーン) を構成するものであり、<xref
-%  linkend="chapter-building-system"/>において最終的なシステムを構築するために利用します。
-%  パッケージの中には自分自身を循環的に必要とするような依存関係を持つものがあります。
-%  例えばコンパイラーをコンパイルするためにはコンパイラーが必要となります。
-%  </para>
-%@z
-
 @x
-  <para><xref linkend="chapter-cross-tools"/>,  explains the installation of
+  <para><xref linkend="chapter-cross-tools"/>  explains the installation of
   the initial tool chain, (binutils, gcc, and glibc) using cross compilation
   techniques to isolate the new tools from the host system.</para>
 @y
@@ -161,32 +144,8 @@
   </para>
 @z
 
-%@x
-%  <para>In <xref linkend="chapter-building-system"/>, the full LFS system is
-%  built. The <command>chroot</command> (change root) program is used to enter
-%  a virtual environment and start a new shell whose root directory will be
-%  set to the LFS partition. This is very similar to rebooting and instructing
-%  the kernel to mount the LFS partition as the root partition. The system
-%  does not actually reboot, but instead uses <command>chroot</command> because
-%  creating a bootable system requires additional work which is not necessary
-%  just yet. The major advantage is that <quote>chrooting</quote> allows you
-%  to continue using the host system while LFS is being built. While waiting
-%  for package compilations to complete, you can continue using your computer as
-%  normal.</para>
-%@y
-%  <para>
-%  <xref linkend="chapter-building-system"/>にて LFS システムが出来上がります。
-%  <command>chroot</command> (ルートをチェンジする) プログラムを使って仮想的な環境に入り LFS パーティション内のディレクトリをルートディレクトリとしてシェルを起動します。
-%  これは LFS パーティションをルートパーティションとするシステム再起動と同じことです。
-%  ただ実際にはシステムを再起動はしません。
-%  再起動できるシステムとするためにはもう少し作業を必要としますし、この時点ではまだそれが必要ではないので <command>chroot</command> を行う方法を取ります。
-%  <command>chroot</command> を使うメリットは、LFS 構築作業にあたって引き続きホストシステムを利用できることです。
-%  パッケージをコンパイルしている最中には、通常どおり別の作業を行うことができます。
-%  </para>
-%@z
-
 @x
-  <para>In <xref linkend="chapter-building-system"/>, The
+  <para>In <xref linkend="chapter-building-system"/> the
   full LFS system is built. Another advantage provided by the chroot
   environment is that it allows you to continue using the host system
   while LFS is being built. While waiting for package compilations to

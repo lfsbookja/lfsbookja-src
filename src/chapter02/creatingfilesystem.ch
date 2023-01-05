@@ -16,17 +16,38 @@
 @z
 
 @x
-  <para>Now that a blank partition has been set up, the file system can be
-  created.  LFS can use any file system recognized by the Linux kernel, but the
-  most common types are ext3 and ext4.  The choice of file system can be
-  complex and depends on the characteristics of the files and the size of
+  <para>A partition is just a range of sectors on a disk drive, delimited by
+  boundaries set in a partition table. Before the operating system can use
+  a partition to store any files, the partition must be formatted to contain a file
+  system, typically consisting of a label, directory blocks, data blocks, and
+  an indexing scheme to locate a particular file on demand. The file system
+  also helps the OS keep track of free space on the partition, reserve the
+  needed sectors when a new file is created or an existing file is extended,
+  and recycle the free data segments created when files are deleted. It may
+  also provide support for data redundancy, and for error recovery.</para>
+@y
+  <para>
+  パーティションとは、ディスクドライブ上の一定数のセクターの集まりのことです。
+  これはパーティションテーブルにおいて、その境界設定によって定められます。
+  オペレーティングシステムがファイルを保存するパーティションを利用できるように、そのパーティションはフォーマットしておかなければなりません。
+  そこにはラベル、ディレクトリブロック、データブロック、目的となるファイル位置へのインデックススキームといったものが含まれます。
+  ファイルシステムは、OS がパーティションの空き容量を管理できるようにしています。
+  また新規ファイル生成時や既存ファイルの拡張時に必要となるセクターの確保や、ファイル削除によって生み出された未使用データセグメントの再利用なども可能にします。
+  さらにデータ冗長性やエラー回復のためのサポート機能も提供しています。
+  </para>
+@z
+
+@x
+  <para>LFS can use any file system recognized by the Linux kernel, but the
+  most common types are ext3 and ext4.  The choice of the right file system can be
+  complex; it depends on the characteristics of the files and the size of
   the partition.  For example:</para>
 @y
   <para>
-  空のパーティションが準備できたのでファイルシステムを作ります。
-  LFS では Linux カーネルが識別できるならどのようなファイルシステムを用いるのでも構いません。
-  ただ最も標準的なものとして ext3 と ext4 があります。
-  ファイルシステムをどのようにするかは単純な話ではなく、収容するファイルの性質やパーティションサイズにも依存します。
+  LFS では Linux カーネルが認識できるファイルシステムであれば何でも利用できます。
+  最も標準的なものは ext3 や ext4 です。
+  ファイルシステムを正しく選ぶことは、実は難しいことです。
+  収容するファイルの性質やパーティションサイズにも依存します。
   例えば以下のとおりです。
   </para>
 @z
@@ -54,34 +75,34 @@
 @z
 
 @x ext4
-      <listitem><para>is the latest version of the ext file system family of
-      partition types.  It provides several new capabilities including
-      nano-second timestamps, creation and use of very large files (16 TB), and
-      speed improvements.</para>
+      <listitem><para>is the latest version of the ext family of
+      file systems.  It provides several new capabilities including
+      nano-second timestamps, creation and use of very large files
+      (up to 16 TB), and speed improvements.</para>
 @y
       <listitem><para>
-      パーティションタイプとして用いられる ext 系の最新バージョンです。
-      新たな機能として、ナノ秒単位のタイムスタンプの提供、大容量ファイル (16 TB) の生成利用、処理性能の改善が加えられています。
+      ファイルシステムに用いられている ext 系の最新バージョンです。
+      新たな機能として、ナノ秒単位のタイムスタンプの提供、大容量ファイル (16 TB まで) の生成利用、処理性能の改善が加えられています。
       </para>
 @z
 
 @x
   <para>Other file systems, including FAT32, NTFS, ReiserFS, JFS, and XFS are
-  useful for specialized purposes.  More information about these file systems
-  can be found at <ulink
+  useful for specialized purposes. More information about these file systems, 
+  and many others, can be found at <ulink
   url="https://en.wikipedia.org/wiki/Comparison_of_file_systems"/>.</para>
 @y
   <para>
   この他のファイルシステムとして、FAT32, NTFS, ReiserFS, JFS, XFS などがあり、それぞれに特定の目的に応じて活用されています。
-  ファイルシステムの詳細については <ulink
+  ファイルシステムの詳細、さらに多くのことは <ulink
   url="https://en.wikipedia.org/wiki/Comparison_of_file_systems"/> を参照してください。
   </para>
 @z
 
 @x
-  <para>LFS assumes that the root file system (/) is of type ext4.  To create
+  <para>LFS assumes that the root file system (/) is of type ext4. To create
   an <systemitem class="filesystem">ext4</systemitem> file system on the LFS
-  partition, run the following:</para>
+  partition, issue the following command:</para>
 @y
   <para>
   LFS ではルートファイルシステム (/) として ext4 を用いるものとします。

@@ -25,18 +25,10 @@
 @z
 
 @x
-    <para>First, fix a test script:</para>
+    <para>First fix the location of udev rules in the .pc file:</para>
 @y
     <para>
-    はじめにテストスクリプトを修正します。
-    </para>
-@z
-
-@x
-    <para>Next, remove an unneeded line that causes a build failure:</para>
-@y
-    <para>
-    そしてビルド失敗の原因となる不要な行を削除します。
+    はじめに .pc ファイル内の udev ルールの場所を修正します。
     </para>
 @z
 

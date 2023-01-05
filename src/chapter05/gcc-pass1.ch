@@ -138,6 +138,32 @@
           </para>
 @z
 
+@x
+      <term><parameter>--enable-default-pie and
+      --enable-default-ssp</parameter></term>
+@y
+      <term><parameter>--enable-default-pie と
+      --enable-default-ssp</parameter></term>
+@z
+
+@x --enable-default-pie and --enable-default-ssp
+          <para>Those switches allow GCC to compile programs with
+           some hardening security features (more information on those in
+           the <xref linkend="pie-ssp-info"/> in chapter 8) by default. The
+           are not strictly needed at this stage, since the compiler will
+           only produce temporary executables. But it is cleaner to have the
+           temporary packages be as close as possible to the final ones.
+          </para>
+@y
+          <para>
+          このスイッチは GCC がプログラムをコンパイルする際にデフォルトとして、堅牢なセキュリティ機能（詳しくは <xref
+          linkend="pie-ssp-info"/> 参照）をある程度含める指示を行います。
+          厳密には、この段階で必要となるものではありません。
+          と言うのも、ここでのコンパイラーは一時的な実行ファイルを生み出すだけのものだからです。
+          ただし一時的なパッケージだとしても、最終形とするパッケージにできるだけ近づけておけば、理解しやすくなります。
+          </para>
+@z
+
 @x --disable-shared
           <para>This switch forces GCC to link its internal libraries
           statically. We need this because the shared libraries require glibc,

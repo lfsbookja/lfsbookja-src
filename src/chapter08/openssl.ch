@@ -29,7 +29,7 @@
 @z
 
 @x
-    <para>First fix a problem with some advanced arcitectures with avx512 
+    <para>First fix a problem with some advanced architectures with avx512
     capability:</para>
 @y
     <para>

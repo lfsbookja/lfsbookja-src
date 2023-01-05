@@ -16,24 +16,14 @@
 @z
 
 @x
-  <para>Now that all of the software has been installed, it is time to reboot
-  your computer. However, you should be aware of a few things. The system you
-  have created in this book is quite minimal, and most likely will not have
-  the functionality you would need to be able to continue forward. By installing
-  a few extra packages from the BLFS book while still in our current chroot
-  environment, you can leave yourself in a much better position to continue on
-  once you reboot into your new LFS installation. Here are some suggestions:</para>
+    Now that all of the software has been installed, it is time to reboot
+    your computer. However, there are still a few things to check.
+    Here are some suggestions:</para>
 @y
-  <para>
-  ソフトウェアのインストールがすべて完了しました。
-  ここでコンピューターを再起動しますが、いくつか注意しておいて下さい。
-  本書を通じて構築したシステムは最小限のものです。
-  これ以降にさまざまなことを繰り広げていくには、機能が不足しているはずです。
-  もうしばらくは今までと同じように chroot 環境を利用して BLFS
-  ブックからいくつかのパッケージをインストールしていきましょう。
-  その後のリブートにより新しい LFS システムを起動すれば、より一層、満足できる環境を得ることになるはずです。
-  以下はその際の構築例です。
-  </para>
+    ソフトウェアのインストールがすべて完了しました。
+    ここでコンピューターを再起動しますが、いくつか注意しておいて下さい。
+    以下にその内容を示します。
+    </para>
 @z
 
 @x
@@ -132,32 +122,31 @@
 @z
 
 @x
-    <listitem><para>Install <ulink
-    url='&blfs-book;postlfs/firmware.html'>firmwares</ulink> if the kernel
-    driver for your hardware require some firmware to function properly.
-    </para></listitem>
+        Install any <ulink
+        url='&blfs-book;postlfs/firmware.html'>firmware</ulink> needed if the
+        kernel driver for your hardware requires some firmware files to function
+        properly.
 @y
-    <listitem><para>
-    利用するハードウェア用のカーネルドライバーが、それを適切に動作させるために何か別のファームウェアを利用している場合は、<ulink
-    url='&blfs-book;postlfs/firmware.html'>firmwares</ulink> をインストールしてください。
-    </para></listitem>
+        利用するハードウェア用のカーネルドライバーが、それを適切に動作させるために何か別のファームウェアを利用している場合は、<ulink
+        url='&blfs-book;postlfs/firmware.html'>firmwares</ulink> をインストールしてください。
 @z
 
 @x
-    <listitem><para>Finally, a review of the following configuration files 
-    is also appropriate at this point.</para>
+        A review of the following configuration files
+        is also appropriate at this point.
 @y
-    <listitem><para>最後に、以下に示す種々の設定ファイルが適切であるかどうかを確認します。</para>
+        最後に、以下に示す種々の設定ファイルが適切であるかどうかを確認します。
 @z
 
 @x
   <para>Now that we have said that, let's move on to booting our shiny new LFS
-  installation for the first time! First exit from the chroot environment:</para>
+  installation for the first time! <emphasis>First exit from the chroot 
+  environment</emphasis>:</para>
 @y
   <para>
   さあよろしいですか。
   新しくインストールした LFS システムの再起動を行いましょう。
-  まずは chroot 環境から抜けます。
+  <emphasis role="bold">まずは chroot 環境から抜けます。</emphasis>
   </para>
 @z
 
@@ -187,10 +176,10 @@
 @z
 
 @x
-  <para>Now, reboot the system with:</para>
+  <para>Now, reboot the system.</para>
 @y
   <para>
-  以下のようにしてシステムを再起動します。
+  システムを再起動します。
   </para>
 @z
 

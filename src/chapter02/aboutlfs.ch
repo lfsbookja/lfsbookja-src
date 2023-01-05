@@ -20,8 +20,8 @@
   be used several times. You should ensure that this variable is always defined
   throughout the LFS build process. It should be set to the name of the
   directory where you will be building your LFS system - we will use
-  <filename class="directory">/mnt/lfs</filename> as an example, but the
-  directory choice is up to you. If you are building LFS on a separate
+  <filename class="directory">/mnt/lfs</filename> as an example, but you may
+  choose any directory name you want. If you are building LFS on a separate
   partition, this directory will be the mount point for the partition.
   Choose a directory location and set the variable with the
   following command:</para>
@@ -31,7 +31,7 @@
   LFS システムのビルド作業時には常に定義しておくことを忘れないでください。
   この変数は LFS パーティションとして選んだマウントポイントを定義します。
   例えば <filename class="directory">/mnt/lfs</filename> というものです。
-  他のものとしても構いません。
+  他の名前にしても構いません。
   LFS を別のパーティションにビルドする場合、このマウントポイントはそのパーティションを示すようにしてください。
   ディレクトリを取り決めたら、変数を以下のコマンドにより設定します。
   </para>
@@ -41,7 +41,7 @@
   <para>Having this variable set is beneficial in that commands such as
   <command>mkdir -v $LFS/tools</command> can be typed literally. The shell
   will automatically replace <quote>$LFS</quote> with
-  <quote>/mnt/lfs</quote> (or whatever the variable was set to) when it
+  <quote>/mnt/lfs</quote> (or whatever value the variable was set to) when it
   processes the command line.</para>
 @y
   <para>
@@ -84,7 +84,7 @@
   personal home directory and in  <filename>/root/.bash_profile</filename> and
   enter the export command above.  In addition, the shell specified in the
   <filename>/etc/passwd</filename> file for all users that need the
-  <envar>LFS</envar> variable needs to be bash to ensure that the
+  <envar>LFS</envar> variable must be bash to ensure that the
   <filename>/root/.bash_profile</filename> file is incorporated as a part of
   the login process.</para>
 @y
@@ -103,15 +103,15 @@
   a virtual terminal is started.  In this case, add the export command to
   the <filename>.bashrc</filename> file for the user and
   <systemitem class="username">root</systemitem>.  In addition,
-  some distributions have instructions to not run the <filename>.bashrc</filename>
-  instructions in a non-interactive bash invocation.  Be sure to add the
-  export command before the test for non-interactive use.</para>
+  some distributions use an "if" test, and do not run the remaining <filename>.bashrc</filename>
+  instructions for a non-interactive bash invocation.  Be sure to place the
+  export command ahead of the test for non-interactive use.</para>
 @y
   <para>
   もう一つ気にかけることとして、ホストシステム上にログ出力を行う方法に関してです。
   グラフィカルディスプレイマネージャーを通じてログ出力を行うと、仮想端末が起動する際に、ユーザー独自の <filename>.bash_profile</filename> は普通は用いられません。
   この場合は、各ユーザー用と <systemitem class="username">root</systemitem> 用の <filename>.bashrc</filename> に export コマンドを追加してください。
-  ここでディストリビューションの中には、非対話形式での bash の実行時には <filename>.bashrc</filename> を実行しないように求めているものがあります。
-  その場合は、非対話形式の利用をテストする前に export コマンドを追加してください。
+  ここでディストリビューションの中には、"if" テストを利用して残りの <filename>.bashrc</filename> を実行しないようにしているものがあります。
+  非対話形式を利用する場合は、そのテストの直前に export コマンドを追加してください。
   </para>
 @z

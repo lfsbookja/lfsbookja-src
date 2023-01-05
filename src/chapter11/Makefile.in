@@ -236,6 +236,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/chapter11
 CHANGE_FILES = \
+	afterlfs.ch   \
 	chapter11.ch  \
 	getcounted.ch \
 	reboot.ch     \

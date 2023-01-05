@@ -178,12 +178,19 @@
 @z
 
 @x
-    <para>One gold test, <filename>pr17704a_test</filename>, is known to
-    fail if <parameter>CONFIG_IA32_EMULATION</parameter> is disabled in the
-    kernel configuration of the host system.</para>
+    <para>Twelve tests fail in the <command>gold</command> testsuite when the
+    <option>--enable-default-pie</option> and
+    <option>--enable-default-ssp</option> options are passed to GCC.
+    <!-- Caused by egrep deprecation.  Note that we don't "patch" temp grep.
+         And it seems unworthy to add a sed into temp grep just for one test
+         failure.  (I don't really agree to "patch" grep in the first place,
+         anyway.) -->
+    The test named <filename>ar with versioned solib</filename> is also
+    known to fail.</para>
 @y
-    <para>
-    ホストシステム上のカーネル設定 <parameter>CONFIG_IA32_EMULATION</parameter> が無効である場合に gold テストの一つ、<filename>pr17704a_test</filename> というものが失敗します。
+<para>
+    GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、<command>gold</command> テストスイートにおいて 12 個のテストが失敗します。
+    <filename>ar with versioned solib</filename> という名前のテストも失敗します。
     </para>
 @z
 
@@ -194,10 +201,10 @@
 @z
 
 @x
-    <para>Remove useless static libraries:</para>
+    <para>Remove useless static libraries and an empty man page:</para>
 @y
     <para>
-    不要なスタティックライブラリを削除します。
+    不要なスタティックライブラリと空の man ページを削除します。
     </para>
 @z
 

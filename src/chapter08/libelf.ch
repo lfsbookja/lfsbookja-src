@@ -69,13 +69,12 @@
 @z
 
 @x
-<!--    <para>One test, run-elfclassify.sh, is known to fail.</para>-->
+    <para>One test named <filename>run-low_high_pc.sh</filename> is known to
+    fail on 32-bit x86 system.</para>
 @y
-<!--
     <para>
-    run-elfclassify.sh というテストが 1 つだけ失敗します。
+    <filename>run-low_high_pc.sh</filename> というテストが 1 つだけ、32 ビットの x86 システムにおいては失敗します。
     </para>
--->
 @z
 
 @x

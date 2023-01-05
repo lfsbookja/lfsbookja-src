@@ -931,13 +931,13 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>
+            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink>
             and
             <ulink url="&blfs-book;general/libsigsegv.html">libsigsegv</ulink>
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>,
+            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink>,
             <ulink url="&blfs-book;general/libsigsegv.html">libsigsegv</ulink>
           </seg>
 @z
@@ -1855,9 +1855,9 @@
           <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>Glibc and Patch</seg>
+          <seg>Glibc</seg>
 @y
-          <seg>Glibc, Patch</seg>
+          <seg>Glibc</seg>
 @z
 @x
           <seg>Diffutils</seg>

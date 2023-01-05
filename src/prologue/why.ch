@@ -815,17 +815,6 @@
         </para>
 @z
 
-% @x Udev
-%         <para>This package contains programs for dynamic creation of 
-%         device nodes.  It is an alternative to creating thousands of
-%         static devices in the /dev directory.</para>
-% @y
-%         <para>
-%         このパッケージはデバイスノードの動的生成を行うプログラムを提供します。
-%         /dev ディレクトリに、デバイスを静的にいくつも作り出す方法を取らないためのものです。
-%         </para>
-% @z
-
 @x Util-linux-ng
         <para>This package contains miscellaneous utility programs. 
         Among them are utilities for handling file systems, consoles, 
@@ -838,7 +827,7 @@
 @z
 
 @x Wheel
-        <para>This package contains a Python module that is the 
+        <para>This package contains a Python module that is the
         reference implementation of the Python wheel packaging standard.
         </para>
 @y

@@ -69,7 +69,7 @@
 
 @x
       <para><emphasis role="strong">Bison-2.7</emphasis> (/usr/bin/yacc
-      should be a link to bison or small script that executes bison)</para>
+      should be a link to bison or a small script that executes bison)</para>
 @y
       <para>
       <emphasis role="strong">Bison-2.7</emphasis> (/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)

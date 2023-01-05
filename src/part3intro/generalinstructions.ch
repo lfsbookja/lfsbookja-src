@@ -148,9 +148,9 @@
 @x
           <para>Place all the sources and patches in a directory that will be
           accessible from the chroot environment such as
-      	  <filename class="directory">/mnt/lfs/sources/</filename>.<!-- Do
+          <filename class="directory">/mnt/lfs/sources/</filename>.<!-- Do
           <emphasis>not</emphasis> put sources in
-	  <filename class="directory">/mnt/lfs/tools/</filename>. --></para>
+          <filename class="directory">/mnt/lfs/tools/</filename>. --></para>
 @y
           <para>
           ソースやパッチファイルを配置するディレクトリは /mnt/lfs/sources/ などのように chroot 環境でもアクセスが出来るディレクトリとしてください。

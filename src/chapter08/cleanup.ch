@@ -26,16 +26,17 @@
 @x
   <para>There are also several files installed in the /usr/lib and /usr/libexec
   directories with a file name extension of .la. These are "libtool archive"
-  files. As already said, they are only useful when linking with static
-  libraries. They are unneeded, and potentially harmful, when using dynamic
-  shared libraries, specially when using also non-autotools build systems.
-  To remove them, run:</para>
+  files. As already said, on a modern Linux system the libtool .la files are
+  only useful for libltdl.  No libraries in LFS are expected to be loaded
+  by libltdl, and it's known that some .la files can cause BLFS packages
+  fail to build.  Remove those files now:</para>
 @y
   <para>
   また /usr/lib ディレクトリと /usr/libexec ディレクトリには、拡張子が .la であるファイルがいくつかインストールされます。
-  これは "libtool アーカイブ" ファイルというものであり、すでに説明しているように、これはスタティックライブラリとリンクする際に利用します。
-  これらはダイナミック共有ライブラリを用いるとき、そして特に autotools 以外のビルドシステムを利用するときには不要であり、潜在的には支障を及ぼします。
-  削除する場合は以下を実行します。
+  すでに説明しているように、最近の Linux システムにおいて libtool の .la ファイルは、libltdl に対してのみ用いられます。
+  LFS 内のライブラリは、libltdl によってロードされるものは一つもありません。
+  これらのライブラリによって BLFS パッケージのビルドに失敗することが分かっています。
+  そこでそのようなファイルをここで削除します。
   </para>
 @z
 

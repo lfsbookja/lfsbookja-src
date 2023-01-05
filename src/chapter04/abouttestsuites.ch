@@ -53,19 +53,19 @@
 @x
     <para>Running the test suites in <xref linkend="chapter-cross-tools"/>
     and <xref linkend="chapter-temporary-tools"/>
-    is impossible, since the programs are compiled with a cross-compiler,
-    so are not supposed to be able to run on the build host.</para>
+    is pointless; since the test programs are compiled with a cross-compiler,
+    they probably can't run on the build host.</para>
 @y
     <para>
     <xref linkend="chapter-cross-tools"/> と <xref
-    linkend="chapter-temporary-tools"/> においてテストスイートを実行することはできません。
-    各プログラムはクロスコンパイラーによってコンパイルされているので、ビルドしているホスト上での実行が対応できないためです。
+    linkend="chapter-temporary-tools"/> においてテストスイートを実行することに意味がありません。。
+    各テストプログラムはクロスコンパイラーによってコンパイルされているので、ビルドしているホスト上で実行することができないためです。
     </para>
 @z
 
 @x
   <para>A common issue with running the test suites for binutils and GCC
-  is running out of pseudo terminals (PTYs). This can result in a high
+  is running out of pseudo terminals (PTYs). This can result in a large
   number of failing tests. This may happen for several reasons, but the
   most likely cause is that the host system does not have the
   <systemitem class="filesystem">devpts</systemitem> file system set up
@@ -82,10 +82,10 @@
 @z
 
 @x
-  <para>Sometimes package test suites will fail, but for reasons which the
+  <para>Sometimes package test suites will fail for reasons which the
   developers are aware of and have deemed non-critical. Consult the logs located
   at <ulink url="&test-results;"/> to verify whether or not these failures are
-  expected. This site is valid for all tests throughout this book.</para>
+  expected. This site is valid for all test suites throughout this book.</para>
 @y
   <para>
   パッケージの中にはテストスイートに失敗するものがあります。

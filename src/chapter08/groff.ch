@@ -49,6 +49,14 @@
 @z
 
 @x
+    <para>Build the package:</para>
+@y
+    <para>
+    パッケージをビルドします。
+    </para>
+@z
+
+@x
     <para>This package does not come with a test suite.</para>
 @y
     <para>&NotExistTestsuite;</para>

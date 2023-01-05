@@ -86,8 +86,8 @@
 @z
 
 @x
-          Classically, run level 2 above was defined as 
-          "multi-user mode without networking", but this was only the case 
+          Classically, run level 2 above was defined as
+          "multi-user mode without networking", but this was only the case
           many years ago when multiple users could log into a system connected via
           serial ports.  In today's environment it makes no sense and
           we designate it now as "reserved".

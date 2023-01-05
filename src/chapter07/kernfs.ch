@@ -136,3 +136,16 @@
       上の作業にて /run tmpfs がマウントされましたが、これはこのディレクトリを生成する必要がある時のみです。
       </para>
 @z
+
+@x
+      <para>In other cases <filename>/dev/shm</filename> is a mountpoint 
+      for a tmpfs. In that case the mount of /dev above will only create
+      /dev/shm in the chroot environment as a directory. In this situation
+      we explicitly mount a tmpfs,</para>
+@y
+      <para>
+      この他に <filename>/dev/shm</filename> が tmpfs へのマウントポイントの場合があります。
+      その場合 /dev のマウントは chroot 環境内では /dev/shm をディレクトリとして生成します。
+      この状況においては tmpfs を明示的にマウントします。
+      </para>
+@z

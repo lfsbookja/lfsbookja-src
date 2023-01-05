@@ -57,7 +57,7 @@
 @x
     <para>Prepare libffi for compilation:</para>
 @y
-    <para>&PreparePackage1;ibffi&PreparePackage2;</para>
+    <para>&PreparePackage1;libffi&PreparePackage2;</para>
 @z
 
 @x

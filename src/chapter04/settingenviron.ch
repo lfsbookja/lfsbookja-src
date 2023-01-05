@@ -52,7 +52,7 @@
 
 @x
   <para>The new instance of the shell is a <emphasis>non-login</emphasis>
-  shell, which does not read, and execute, the contents of <filename>/etc/profile</filename> or
+  shell, which does not read, and execute, the contents of the <filename>/etc/profile</filename> or
   <filename>.bash_profile</filename> files, but rather reads, and executes, the
   <filename>.bashrc</filename> file instead. Create the
   <filename>.bashrc</filename> file now:</para>
@@ -74,10 +74,10 @@
   <para>The <command>set +h</command> command turns off
   <command>bash</command>'s hash function. Hashing is ordinarily a useful
   feature&mdash;<command>bash</command> uses a hash table to remember the
-  full path of executable files to avoid searching the <envar>PATH</envar>
+  full path to executable files to avoid searching the <envar>PATH</envar>
   time and again to find the same executable. However, the new tools should
-  be used as soon as they are installed. By switching off the hash function,
-  the shell will always search the <envar>PATH</envar> when a program is to
+  be used as soon as they are installed. Switching off the hash function forces
+  the shell to search the <envar>PATH</envar> whenever a program is to
   be run. As such, the shell will find the newly compiled tools in
   <filename class="directory">$LFS/tools/bin</filename> as soon as they are
   available without remembering a previous version of the same program
@@ -149,10 +149,10 @@
 @z
 
 @x
-  <para>Many modern linux distributions have merged <filename
+  <para>Many modern Linux distributions have merged <filename
   class="directory">/bin</filename> and <filename
   class="directory">/usr/bin</filename>. When this is the case, the standard
-  <envar>PATH</envar> variable needs just to be set to <filename
+  <envar>PATH</envar> variable should be set to <filename
   class="directory">/usr/bin/</filename> for the <xref
   linkend="chapter-temporary-tools"/> environment. When this is not the
   case, the following line adds <filename class="directory">/bin</filename>
@@ -183,7 +183,7 @@
   standard <envar>PATH</envar>, the cross-compiler installed at the beginning
   of <xref linkend="chapter-cross-tools"/> is picked up by the shell
   immediately after its installation. This, combined with turning off hashing,
-  limits the risk that the compiler from the host be used instead of the
+  limits the risk that the compiler from the host is used instead of the
   cross-compiler.</para>
 @y
   <para>
@@ -243,7 +243,7 @@
      <para>After use of the <systemitem class="username">lfs</systemitem>
      user is finished at the beginning of <xref
      linkend="chapter-chroot-temporary-tools"/>, you can restore
-	 <filename>/etc/bash.bashrc</filename> (if desired).</para>
+     <filename>/etc/bash.bashrc</filename> (if desired).</para>
 @y
      <para>
      <xref linkend="chapter-chroot-temporary-tools"/> の冒頭において <systemitem
@@ -265,9 +265,10 @@
 
 @x
   <para>Finally, to have the environment fully prepared for building the
-  temporary tools, source the just-created user profile:</para>
+  temporary tools, force the <command>bash</command> shell to read
+  the new user profile:</para>
 @y
   <para>
-  一時的なツールを構築する準備の最後として、今作り出したユーザープロファイルを source によって取り込みます。
+  一時的なツールを構築する準備の最後として、<command>bash</command> シェルが、今作り出したユーザープロファイルを読み込むようにします。
   </para>
 @z

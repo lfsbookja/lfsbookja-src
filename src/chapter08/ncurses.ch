@@ -128,15 +128,13 @@
     in-place.  It may crash the shell process which is using code and data
     from the library file.  Install the package with
     <literal>DESTDIR</literal>, and replace the library file correctly using
-    <command>install</command> command.  A useless static archive which is
-    not handled by <command>configure</command> is also removed:</para>
+    <command>install</command> command:</para>
 @y
     <para>
     本パッケージをインストールすると、所定位置にある <filename
     class="libraryfile">libncursesw.so.&ncurses-version;</filename> が上書きされます。
     このときに、そのライブラリファイルのコードやデータを利用しているシェルプロセスが、クラッシュする場合があります。
     そこで本パッケージは <literal>DESTDIR</literal> を使ってインストールして、<command>install</command> コマンドによってライブラリファイルを正しく置き換えるようにします。
-    <command>configure</command> では取り扱われないスタティックアーカイブは不要であるため、同様に削除されます。
     </para>
 @z
 
@@ -221,6 +219,7 @@
            libformw.so,
            libmenuw.so,
            libncursesw.so,
+           libncurses++w.so,
            libpanelw.so, and their non-wide-character counterparts without "w"
               in the library names.</seg>
         <seg>
@@ -247,6 +246,7 @@
            libformw.so,
            libmenuw.so,
            libncursesw.so,
+           libncurses++w.so,
            libpanelw.so,
            これらに加えてワイド文字対応ではない通常のライブラリでその名称から "w" を取り除いたもの。</seg>
         <seg>
@@ -377,6 +377,14 @@
           <para>
           さまざまな方法により端末画面上に文字列を表示するための関数を提供します。
           これらの関数を用いた具体例として、カーネルの <command>make menuconfig</command> の実行によって表示されるメニューがあります。
+          </para>
+@z
+
+@x libncurses++w
+          <para>Contains C++ binding for other libraries in this package</para>
+@y
+          <para>
+          本パッケージ内でのその他のライブラリに対応する C++ バインディングを提供します。
           </para>
 @z
 

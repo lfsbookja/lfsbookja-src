@@ -30,6 +30,14 @@
 @z
 
 @x
+    <para>Now fix a programming error identified upstream:</para>
+@y
+    <para>
+    アップストリームが認識しているプログラミングエラーを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Gawk for compilation:</para>
 @y
     <para>&PreparePackage1;Gawk&PreparePackage2;</para>
