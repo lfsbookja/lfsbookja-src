@@ -10,7 +10,7 @@
 @z
 
 @x
-    <para>MarkupSafe is a Python module that implements a XML/HTML/XHTML Markup
+    <para>MarkupSafe is a Python module that implements an XML/HTML/XHTML Markup
     safe string.</para>
 @y
     <para>

@@ -247,6 +247,21 @@
 @z
 
 @x
+      <para>The command below shows an example of nested command substitution
+      using two methods: backquotes and a <literal>$()</literal> construct. 
+      It could be rewritten using the same method for both substitutions,
+      but is shown this way to demonstrate how they can be mixed.  Generally
+      the <literal>$()</literal> method is preferred.</para>
+@y
+      <para>
+      以下に示すコマンドは、2 つの手法、つまりバッククォートと <literal>$()</literal> 構文を使って、ネスト化したコマンド置換を行う例を示しています。
+      これは、両方の置換において一つの手法のみを使って書き換えることもできます。
+      ただしここでは、両者を混在させても実現できることを示すものです。
+      一般的には <literal>$()</literal> 構文による手法がよく用いられます。
+      </para>
+@z
+
+@x
     <para>Details on this package are located in
     <xref linkend="contents-gcc" role="."/></para>
 @y

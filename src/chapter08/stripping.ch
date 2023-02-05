@@ -113,6 +113,19 @@
 @z
 
 @x
+      If any package of which the version is different from the version
+      specified by the book (either following a security advisory or
+      satisfying personal preference), it may be necessary to update the
+      the library file name in <envar>save_usrlib</envar> or
+      <envar>online_usrlib</envar>.
+      <emphasis role='bold'>Failing to do so may render the system
+      completely unusable.</emphasis>
+@y
+      各パッケージのバージョンが、本書に示すバージョンとは異なる場合（セキュリティアドバイザリに従った場合や、必要に応じて変更した場合）、<envar>save_usrlib</envar> や <envar>online_usrlib</envar> に含まれるライブラリ名を変更することが必要かもしれません。
+      <emphasis role='bold'>これを行わなかった場合には、システムが全く動作しないことも起こりえます。</emphasis>
+@z
+
+@x
   <para>A large number of files will be flagged as errors because their file
   format is not recognized. These warnings can be safely ignored. They
   indicate that those files are scripts, not binaries.</para>

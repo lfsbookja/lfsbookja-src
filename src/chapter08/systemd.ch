@@ -59,7 +59,7 @@
 
 @x --buildtype=release
           <para>This switch overrides the default buildtype
-          (<quote>debug</quote>), which would produce unoptimized
+          (<quote>debug</quote>), which produces unoptimized
           binaries.</para>
 @y
           <para>
@@ -79,7 +79,7 @@
 @x -Dfirstboot=false
           <para>This switch prevents installation of systemd
           services responsible for setting up the system for
-          the first time. They are not useful for LFS because
+          the first time. These are not useful in LFS, because
           everything is done manually.</para>
 @y
           <para>
@@ -98,14 +98,14 @@
 
 @x -Dldconfig=false
           <para>This switch prevents installation of a systemd unit that runs
-          <command>ldconfig</command> at boot, which is not useful for source
-          distributions such as LFS and makes the boot time longer. Remove it
-          if the described feature is desired.</para>
+          <command>ldconfig</command> at boot; this is not useful for source
+          distributions such as LFS, and makes the boot time longer. Remove 
+          this option to enable running <command>ldconfig</command> at boot.</para>
 @y
           <para>
           本スイッチは、システム起動時に <command>ldconfig</command> を実行するような systemd ユニットはインストールしないようにします。
           LFS のようにソースから作り出すディストリビューションにとっては無用なものであり、起動時間も長くなります。
-          もし必要であれば本スイッチを除いてください。
+          起動時の <command>ldconfig</command> 実行を有効にするには、本オプションを除いてください。
           </para>
 @z
 
@@ -127,7 +127,7 @@
 
 @x -Drpmmacrosdir=no
           <para>This switch disables installation of RPM Macros
-          for use with systemd because LFS does not support RPM.</para>
+          for use with systemd, because LFS does not support RPM.</para>
 @y
           <para>
           本スイッチは systemd において利用される RPM マクロをインストールしないようにします。
@@ -136,8 +136,8 @@
 @z
 
 @x -D{userdb,homed}=false
-          <para>Remove two daemons that have dependencies that do not fit
-          the scope of LFS.</para>
+          <para>Remove two daemons with dependencies that do not fit
+          within the scope of LFS.</para>
 @y
           <para>
           LFS が取り扱う範囲にそぐわない依存関係を持ったデーモンを削除します。
@@ -147,11 +147,11 @@
 @x -Dman=false
           <para>Prevent the generation of man pages to avoid extra
           dependencies.  We will install pre-generated man pages for systemd
-          from a tarball later.</para>
+          from a tarball.</para>
 @y
           <para>
           man ページを生成することで発生する追加パッケージの導入を行わないようにします。
-          systemd の man ページは、後ほど生成済みの tarball を使ってインストールすることにします。
+          systemd の man ページは、生成済みの tarball を使ってインストールすることにします。
           </para>
 @z
 
@@ -201,7 +201,7 @@
 @z
 
 @x
-    <para>Setup the basic target structure:</para>
+    <para>Set up the basic target structure:</para>
 @y
     <para>
     基本的なターゲット構造を設定します。
@@ -210,7 +210,7 @@
 
 @x
     <para>Disable two services for upgrading binary distros.  They are useless for
-    a basic Linux system built from source, and both will report an error if
+    a basic Linux system built from source, and each one will report an error if
     it's enabled but not configured:</para>
 @y
     <para>
@@ -331,7 +331,7 @@
 @x halt
           <para>Normally invokes <command>shutdown</command> with the
           <parameter>-h</parameter> option, except when already in run-level 0,
-          then it tells the kernel to halt the system; it notes in the
+          when it tells the kernel to halt the system; it notes in the
           file <filename>/var/log/wtmp</filename> that the system is being
           brought down</para>
 @y
@@ -353,13 +353,15 @@
 @z
 
 @x init
-          <para>Is the first process to be started when the kernel has initialized
-          the hardware which takes over the boot process and starts all
-          processes according to its configuration files. In this case, it starts
+          <para>Is the first process to be started after the kernel has initialized
+          the hardware; <command>init</command> takes over the boot process and starts the
+          processes specified by its configuration files; in this case, it starts
           systemd</para>
 @y
           <para>
-          カーネルがハードウェアを初期化する際に起動される最初のプロセスであり、この後の起動処理を担い、設定ファイルに応じたブートプロセスと他の全てのプロセスを起動します。つまり systemd を起動するということです。
+          カーネルがハードウェアを初期化した後に起動される最初のプロセスです。
+          <command>init</command> は、この後の起動処理を担い、設定ファイルに応じたブートプロセスと他の全てのプロセスを起動します。
+          つまり systemd を起動するということです。
           </para>
 @z
 
@@ -373,7 +375,7 @@
 
 @x kernel-install
           <para>Is used to add and remove kernel and initramfs images to and
-          from /boot. In LFS, this is done manually</para>
+          from /boot; in LFS, this is done manually</para>
 @y
           <para>
           カーネルや initramfs イメージを /boot ディレクトリに対して追加、削除します。
@@ -500,21 +502,21 @@
 @z
 
 @x systemd-analyze
-          <para>Is used to determine system startup performance of the current
-          boot, as well as identify troublesome systemd units</para>
+          <para>Is used to analyze system startup performance,
+          as well as identify troublesome systemd units</para>
 @y
           <para>
-          現在のシステム起動において、起動処理パフォーマンスを決定します。
+          起動処理パフォーマンスを解析します。
           また問題のある systemd ユニットを特定します。
           </para>
 @z
 
 @x systemd-ask-password
           <para>Is used to query a system password or passphrase from the user,
-          using a question message specified on the command line</para>
+          using a message specified on the Linux command line</para>
 @y
           <para>
-          コマンドラインから指定された質問文を用いて、システムパスワードやユーザーのパスフレーズを確認します。
+          Linux コマンドラインから指定されたメッセージを用いて、システムパスワードやユーザーのパスフレーズを確認します。
           </para>
 @z
 
@@ -539,7 +541,7 @@
 
 @x systemd-cgtop
           <para>Shows the top control groups of the local Linux control group
-          hierarchy, ordered by their CPU, memory and disk I/O load</para>
+          hierarchy, ordered by their CPU, memory and disk I/O loads</para>
 @y
           <para>
           最上位のローカル Linux コントロールグループ (control group) を表示し、CPU、メモリ、ディスクI/Oロードの並びにより示します。
@@ -556,8 +558,8 @@
 
 @x systemd-delta
           <para>Is used to identify and compare configuration files in
-          <filename class="directory">/etc</filename> that override default
-          counterparts in <filename class="directory">/usr</filename></para>
+          <filename class="directory">/etc</filename> that override the defaults
+          in <filename class="directory">/usr</filename></para>
 @y
           <para>
           <filename class="directory">/etc</filename> ディレクトリにある設定ファイルを同定したり比較したりします。
@@ -600,10 +602,10 @@
 @z
 
 @x systemd-id128
-          <para>Generates and prints id128 strings</para>
+          <para>Generates and prints id128 (UUID) strings</para>
 @y
           <para>
-          id128 文字列を生成し表示します。
+          id128（UUID）文字列を生成し表示します。
           </para>
 @z
 
@@ -638,7 +640,7 @@
 @z
 
 @x systemd-notify
-          <para>Is used by daemon scripts to notify the init system about status
+          <para>Is used by daemon scripts to notify the init system of status
           changes</para>
 @y
           <para>
@@ -647,11 +649,11 @@
 @z
 
 @x systemd-nspawn
-          <para>Is used to run a command or OS in a light-weight namespace
+          <para>Is used to run a command, or an entire OS, in a light-weight namespace
           container</para>
 @y
           <para>
-          軽量な名前空間コンテナー (light-weight namepspace container) においてコマンドや OS の実行に用いられます。
+          軽量な名前空間コンテナー (light-weight namepspace container) においてコマンドや OS 全体の実行に用いられます。
           </para>
 @z
 
@@ -665,7 +667,7 @@
 
 @x systemd-repart
           <para>Is used to grow and add partitions to a partition table when
-          systemd is used in an OS image (e.g. a container)</para>
+          systemd is used with an OS image (e.g. a container)</para>
 @y
           <para>
           systemd が OS イメージ内（たとえばコンテナーなど）で用いられている場合に、パーティションテーブルに対してパーティションの拡張や追加を行うために用いられます。
@@ -683,7 +685,7 @@
 
 @x systemd-run
           <para>Is used to create and start a transient .service or a .scope
-          unit and run the specified command in it. This is useful for
+          unit and run the specified command in it; this is useful for
           validating systemd units</para>
 @y
           <para>
@@ -711,7 +713,7 @@
 @z
 
 @x systemd-tmpfiles
-          <para>Creates, deletes and cleans up volatile and temporary files and
+          <para>Creates, deletes, and cleans up volatile and temporary files and
           directories, based on the configuration file format and location
           specified in
           <filename class="directory">tmpfiles.d</filename> directories</para>
@@ -758,13 +760,13 @@
 
 @x udevadm
           <para>Is a generic udev administration tool which controls the udevd
-          daemon, provides info from the Udev hardware database, monitors
+          daemon, provides info from the udev hardware database, monitors
           uevents, waits for uevents to finish, tests udev configuration, and
           triggers uevents for a given device</para>
 @y
           <para>
           汎用的な udev 管理ツール。
-          udevd デーモンの制御、Udev データベースデータの提供、uevent の監視、uevent の完了までの待機、udev 設定のテスト、指定デバイスに対する uevent の起動、といったことを行います。
+          udevd デーモンの制御、udev データベースデータの提供、uevent の監視、uevent の完了までの待機、udev 設定のテスト、指定デバイスに対する uevent の起動、といったことを行います。
           </para>
 @z
 

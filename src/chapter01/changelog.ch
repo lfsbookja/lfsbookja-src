@@ -44,6 +44,89 @@
 @z
 
 @x
+      <para>2023-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to glibc-2.37.  Fixes
+          <ulink url="&lfs-ticket-root;5203">#5203</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to bc-6.2.3. Fixes
+          <ulink url="&lfs-ticket-root;5204">#5204</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to linux-6.1.9. Fixes
+          <ulink url="&lfs-ticket-root;5205">#5205</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to vim-9.0.1273. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Remove
+          <option>--disable-exec-static-tramp</option> for libffi.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - glibc-2.37 へのアップデート。
+          <ulink url="&lfs-ticket-root;5203">#5203</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - bc-6.2.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;5204">#5204</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - linux-6.1.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;5205">#5205</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - vim-9.0.1273 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - libffi の <option>--disable-exec-static-tramp</option> を削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-7.0.2. Fixes
+          <ulink url="&lfs-ticket-root;5202">#5202</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.1.8. Fixes
+          <ulink url="&lfs-ticket-root;5201">#5201</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to diffutils-3.9. Fixes
+          <ulink url="&lfs-ticket-root;5199">#5199</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - texinfo-7.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5202">#5202</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.1.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;5201">#5201</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - diffutils-3.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;5199">#5199</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-01-22</para>
       <itemizedlist>
         <listitem>

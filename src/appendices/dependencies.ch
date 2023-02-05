@@ -2392,7 +2392,7 @@
           <seg>
             <ulink url="&blfs-book;x/installing.html">Xorg</ulink>,
             <ulink url="&blfs-book;x/gtk2.html">GTK+2</ulink>,
-            <ulink url="http://lesstif.sourceforge.net/">LessTif</ulink>,
+            <ulink url="https://lesstif.sourceforge.net/">LessTif</ulink>,
             <ulink url="&blfs-book;general/ruby.html">Ruby</ulink>, and
             <ulink url="&blfs-book;general/gpm.html">GPM</ulink>
           </seg>
@@ -2400,7 +2400,7 @@
           <seg>
             <ulink url="&blfs-book;x/installing.html">Xorg</ulink>,
             <ulink url="&blfs-book;x/gtk2.html">GTK+2</ulink>,
-            <ulink url="http://lesstif.sourceforge.net/">LessTif</ulink>,
+            <ulink url="https://lesstif.sourceforge.net/">LessTif</ulink>,
             <ulink url="&blfs-book;general/ruby.html">Ruby</ulink>,
             <ulink url="&blfs-book;general/gpm.html">GPM</ulink>
           </seg>

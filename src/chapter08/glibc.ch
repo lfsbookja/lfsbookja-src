@@ -28,15 +28,6 @@
 @z
 
 @x
-    <para>First, fix an issue building Glibc with parallel jobs and Make-4.4
-    or later:</para>
-@y
-    <para>
-    並行ビルドによる Glibc のビルド、および Make-4.4 以降を使ったビルドの際の問題を修正します。
-    </para>
-@z
-
-@x
     <para>Some of the Glibc programs use the non-FHS compliant
     <filename class="directory">/var/db</filename> directory to store
     their runtime data. Apply the following patch to make such programs
@@ -46,6 +37,14 @@
     Glibc のプログラムの中には <filename
     class="directory">/var/db</filename> ディレクトリに実行データを収容するものがあり、これは FHS に準拠していません。
     以下のパッチを適用することで、実行データの収容先を FHS 準拠のディレクトリとします。
+    </para>
+@z
+
+@x
+    <para>Fix an issue identified upstream:</para>
+@y
+    <para>
+    アップストリームが認識する問題を修正します。
     </para>
 @z
 
@@ -198,17 +197,6 @@
 @y
         <para>
         <emphasis>misc/tst-ttyname</emphasis> は LFS の chroot 環境においては失敗します。
-        </para>
-@z
-
-@x
-        <para>The <emphasis>nss/tst-nss-files-hosts-long</emphasis>
-        test is known to fail if the system has no non-loopback IP
-        addresses.</para> <!-- PR 24816 -->
-@y
-        <para>
-        <emphasis>nss/tst-nss-files-hosts-long</emphasis> は失敗することがあります。
-        これはシステム内にループバック以外の IP アドレスがない場合です。
         </para>
 @z
 

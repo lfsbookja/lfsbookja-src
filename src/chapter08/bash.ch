@@ -86,6 +86,29 @@
 @z
 
 @x
+    <para>The test suite uses <command>diff</command> to detect the
+    difference between test script output and the expected output.  Any
+    output from <command>diff</command> (prefixed with
+    <computeroutput>&lt;</computeroutput> and
+    <computeroutput>&gt;</computeroutput>) indicates a test failure, unless
+    there is a message saying the difference can be ignored.
+    <!-- Some host distros set core file size hard limit < 1000, then the
+         test "ulimit -c -S 1000" attempts to set soft limit > hard limit
+         and fail.  -->
+    One test named <filename>run-builtins</filename> is known to fail on
+    some host distros with a difference on the first line of the
+    output.</para>
+@y
+    <para>
+    テストスイートでは <command>diff</command> を使って、テストスクリプトの出力結果と期待される出力結果との差異を調べています。
+    <command>diff</command> からの出力（先頭行に <computeroutput>&lt;</computeroutput> と
+    <computeroutput>&gt;</computeroutput>）があれば、テストが失敗したことを表します。
+    ただしその差異は無視できる旨を示すメッセージがあれば問題ありません。
+    <filename>run-builtins</filename> というテストは、出力の第 1 行めが異なるということで、特定のホストディストリビューションでは失敗する場合があります。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>

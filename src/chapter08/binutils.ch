@@ -188,31 +188,10 @@
 @x
     <para>Twelve tests fail in the gold test suite when the
     <option>--enable-default-pie</option> and
-    <option>--enable-default-ssp</option> options are passed to GCC.
-    <!-- Caused by egrep deprecation.  Note that we don't "patch" temp grep.
-         And it seems unworthy to add a sed into temp grep just for one test
-         failure.  (I don't really agree to "patch" grep in the first place,
-         anyway.)
-         Will be fixed in 2.40 (upstream commit 67d1991). -->
-    The test named <filename>ar with versioned solib</filename> is also
-    known to fail.
-    <!-- https://sourceware.org/bugzilla/show_bug.cgi?id=29107 -->
-    Because of a race between the gas test suite and the gprofng test suite,
-    some gas tests may fail if parallel jobs are used.  If you are not
-    assured of the correctness of gas, invoke
-    <command>make check-gas</command> to run the gas test suite separately and
-    all tests should pass. <!--Three gprofng tests yield the 
-    <literal>ERROR</literal> result, and they are counted as
-    <literal>UNRESOLVED</literal> in the summary.--></para>
+    <option>--enable-default-ssp</option> options are passed to GCC.</para>
 @y
     <para>
     GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、gold テストスイートにおいて 12 個のテストが失敗します。
-    <filename>ar with versioned solib</filename> という名前のテストも失敗します。
-    gas と gprofng のテストスイートが競合しているため、ジョブを並行して実行すると gas テストが一部失敗することがあります。
-    gas を正しく実行する方法が不明の方は <command>make check-gas</command> を実行することで、gas のテストスイートを個別に実行して、全テストを成功させてください。
-    <!--
-    gprofng テストの中では 3 つのテストが <literal>ERROR</literal> となり、結果概要では <literal>UNRESOLVED</literal> としてカウントされます。
-    -->
     </para>
 @z
 

@@ -40,14 +40,6 @@
       </para>
 @z
 
-% @x
-%     <para>First, fix a file to be compatible with gcc-8"</para>
-% @y
-%     <para>
-%     gcc-8 との互換性をもつためにファイルを修正します。
-%     </para>
-% @z
-
 @x
     <para>Prepare Libelf for compilation:</para>
 @y
@@ -69,11 +61,11 @@
 @z
 
 @x
-    <para>One test named <filename>run-low_high_pc.sh</filename> is known to
-    fail on 32-bit x86 systems.</para>
+    <para>The test named <filename>run-native-test.sh</filename> is known to
+    fail.</para>
 @y
     <para>
-    <filename>run-low_high_pc.sh</filename> というテストが 1 つだけ、32 ビットの x86 システムにおいては失敗します。
+    <filename>run-low_high_pc.sh</filename> というテストは失敗します。
     </para>
 @z
 

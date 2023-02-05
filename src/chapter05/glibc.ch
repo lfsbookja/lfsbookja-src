@@ -50,15 +50,6 @@
 @z
 
 @x
-    <para>Fix an issue building Glibc with parallel jobs and make-4.4
-    or later:</para>
-@y
-    <para>
-    並行ビルドによる Glibc のビルド、および make-4.4 以降を使ったビルドの際の問題を修正します。
-    </para>
-@z
-
-@x
     <para>Some of the Glibc programs use the non-FHS-compliant
     <filename class="directory">/var/db</filename> directory to store their
     runtime data. Apply the following patch to make such programs store their

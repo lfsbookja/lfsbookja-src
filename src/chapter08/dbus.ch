@@ -53,9 +53,9 @@
           <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>
 @z
 @x
-          <para>These set the location of the PID file and the system bus socket
+          <para>These cause the PID file and the system bus socket
           to be in <filename class="directory">/run</filename>, instead of
-          deprecated <filename class="directory">/var/run</filename>.</para>
+          the deprecated <filename class="directory">/var/run</filename>.</para>
 @y
           <para>
           これは PID ファイルとシステムバスソケットの場所を設定するものであり、かつての <filename

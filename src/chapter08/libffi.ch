@@ -101,18 +101,6 @@
           </para>
 @z
 
-@x --disable-exec-static-tramp
-          <para>Disable static trampoline support, a new security
-          feature in Libffi. Some BLFS packages (notably
-          <application>GJS</application>) have not been adapted for it.</para>
-@y
-          <para>
-          スタティックなトランポリン (trampoline) サポートを無効にします。
-          これは libffi における新しいセキュリティ機能です。
-          BLFS パッケージの中 (特に <application>GJS</application>) では、この機能に対応していないものがあります。
-          </para>
-@z
-
 @x
     <para>Compile the package:</para>
 @y
