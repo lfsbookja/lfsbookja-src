@@ -80,7 +80,7 @@
 @z
 
 @x --enable-gold
-          <para>Build the gold linker and install it as ld.gold (along side the
+          <para>Build the gold linker and install it as ld.gold (alongside the
           default linker).</para>
 @y
           <para>
@@ -116,7 +116,7 @@
 @z
 
 @x --with-system-zlib
-          <para>Use the installed zlib library rather than building the
+          <para>Use the installed zlib library instead of building the
           included version.</para>
 @y
           <para>
@@ -145,7 +145,7 @@
           a custom system, this target-specific directory in <filename
           class="directory">/usr</filename> is not required. <filename
           class="directory">$(exec_prefix)/$(target_alias)</filename> would be
-          used if the system was used to cross-compile (for example, compiling a
+          used if the system were used to cross-compile (for example, compiling a
           package on an Intel machine that generates code that can be executed
           on PowerPC machines).</para>
 @y
@@ -178,19 +178,41 @@
 @z
 
 @x
-    <para>Twelve tests fail in the <command>gold</command> testsuite when the
+    <para>For a list of failed tests, run:</para>
+@y
+    <para>
+    失敗したテストの一覧は、以下を実行すれば得られます。
+    </para>
+@z
+
+@x
+    <para>Twelve tests fail in the gold test suite when the
     <option>--enable-default-pie</option> and
     <option>--enable-default-ssp</option> options are passed to GCC.
     <!-- Caused by egrep deprecation.  Note that we don't "patch" temp grep.
          And it seems unworthy to add a sed into temp grep just for one test
          failure.  (I don't really agree to "patch" grep in the first place,
-         anyway.) -->
+         anyway.)
+         Will be fixed in 2.40 (upstream commit 67d1991). -->
     The test named <filename>ar with versioned solib</filename> is also
-    known to fail.</para>
+    known to fail.
+    <!-- https://sourceware.org/bugzilla/show_bug.cgi?id=29107 -->
+    Because of a race between the gas test suite and the gprofng test suite,
+    some gas tests may fail if parallel jobs are used.  If you are not
+    assured of the correctness of gas, invoke
+    <command>make check-gas</command> to run the gas test suite separately and
+    all tests should pass. <!--Three gprofng tests yield the 
+    <literal>ERROR</literal> result, and they are counted as
+    <literal>UNRESOLVED</literal> in the summary.--></para>
 @y
-<para>
-    GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、<command>gold</command> テストスイートにおいて 12 個のテストが失敗します。
+    <para>
+    GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、gold テストスイートにおいて 12 個のテストが失敗します。
     <filename>ar with versioned solib</filename> という名前のテストも失敗します。
+    gas と gprofng のテストスイートが競合しているため、ジョブを並行して実行すると gas テストが一部失敗することがあります。
+    gas を正しく実行する方法が不明の方は <command>make check-gas</command> を実行することで、gas のテストスイートを個別に実行して、全テストを成功させてください。
+    <!--
+    gprofng テストの中では 3 つのテストが <literal>ERROR</literal> となり、結果概要では <literal>UNRESOLVED</literal> としてカウントされます。
+    -->
     </para>
 @z
 
@@ -227,12 +249,12 @@
 @x
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, and libopcodes.so</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so, and libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so, libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @z
 
@@ -290,7 +312,7 @@
 @z
 
 @x elfedit
-          <para>Updates the ELF header of ELF files</para>
+          <para>Updates the ELF headers of ELF files</para>
 @y
           <para>
           ELF ファイルの ELF ヘッダーを更新します。
@@ -306,7 +328,7 @@
 @z
 
 @x gprofng
-          <para>Gather and analyze performance data</para>
+          <para>Gathers and analyzes performance data</para>
 @y
           <para>
           性能データの収集と解析を行います。
@@ -334,7 +356,7 @@
 @z
 
 @x ld.bfd
-          <para>Hard link to <command>ld</command></para>
+          <para>A hard link to <command>ld</command></para>
 @y
           <para>
           <command>ld</command> へのハードリンク。
@@ -456,4 +478,13 @@
           opcodes (オペレーションコード; プロセッサー命令を<quote>認識可能なテキスト</quote>として表現したもの) を取り扱うライブラリ。
           このライブラリは <command>objdump</command> のような、ビルド作業に用いるユーティリティプログラムが利用しています。
           </para>
+@z
+
+@x libsframe
+           <para>A library to support online backtracing using a 
+           simple unwinder</para>
+@y
+           <para>
+           simple unwinder を使って、オンラインバックトレースをサポートするライブラリ。
+           </para>
 @z

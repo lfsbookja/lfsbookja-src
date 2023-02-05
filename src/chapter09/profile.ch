@@ -18,10 +18,10 @@
 @x
   <para>The shell program <command>/bin/bash</command> (hereafter referred to
   as <quote>the shell</quote>) uses a collection of startup files to help
-  create an environment to run in. Each file has a specific use and may affect
+  create the environment to run in. Each file has a specific use and may affect
   login and interactive environments differently. The files in the <filename
-  class="directory">/etc</filename> directory provide global settings. If an
-  equivalent file exists in the home directory, it may override the global
+  class="directory">/etc</filename> directory provide global settings. If
+  equivalent files exist in the home directory, they may override the global
   settings.</para>
 @y
   <para>
@@ -50,11 +50,14 @@
 @z
 
 @x
-  <para>For more information, see <command>info bash</command> under the
-  <emphasis>Bash Startup Files and Interactive Shells</emphasis> section.</para>
+<para>For more information, see the <emphasis>Bash Startup Files</emphasis> and
+  <emphasis>Interactive Shells</emphasis> sections in the <emphasis>Bash 
+  Features</emphasis> chapter of the Bash info pages (<command>info bash</command>).</para>
 @y
   <para>
-  より詳しい情報は <command>info bash</command> の <emphasis>Bash Startup Files and Interactive Shells</emphasis> の節を参照してください。
+  より詳しい情報は Bash の info ページ（<command>info bash</command>）にある <emphasis>Bash 
+  Features</emphasis> の章の、<emphasis>Bash Startup Files</emphasis> および <emphasis>Interactive
+  Shells</emphasis> の節を参照してください。
   </para>
 @z
 
@@ -82,9 +85,9 @@
 @x
       <para>The output of programs translated into the native language</para>
 @y
-  <para>
-  プログラムの出力結果を指定した言語で得ることができます。
-  </para>
+      <para>
+      プログラムの出力結果を指定した言語で得ることができます。
+      </para>
 @z
 
 @x
@@ -92,10 +95,10 @@
       classes. This is necessary for <command>bash</command> to properly accept
       non-ASCII characters in command lines in non-English locales</para>
 @y
-  <para>
-  キャラクターを英字、数字、その他のクラスに分類します。
-  この設定は、英語以外のロケールにおいて、コマンドラインに非アスキー文字が入力された場合に <command>bash</command> が正しく入力を受け付けるために必要となります。
-  </para>
+      <para>
+      キャラクターを英字、数字、その他のクラスに分類します。
+      この設定は、英語以外のロケールにおいて、コマンドラインに非アスキー文字が入力された場合に <command>bash</command> が正しく入力を受け付けるために必要となります。
+      </para>
 @z
 
 @x
@@ -180,8 +183,8 @@
 
 @x
   <para>This results in a final locale setting of <quote>en_GB.ISO-8859-1</quote>.
-  It is important that the locale found using the heuristic above is tested prior
-  to it being added to the Bash startup files:</para>
+  It is important that the locale found using the heuristic above is tested before
+  it is added to the Bash startup files:</para>
 @y
   <para>
   出力された結果が<quote>en_GB.ISO-8859-1</quote>に対するロケール設定として用いるべきものです。
@@ -248,9 +251,9 @@
 @z
 
 @x
-  <para>Other packages can also function incorrectly (but may not necessarily
+  <para>Other packages may also function incorrectly (but will not necessarily
   display any error messages) if the locale name does not meet their expectations.
-  In those cases, investigating how other Linux distributions support your locale
+  In such cases, investigating how other Linux distributions support your locale
   might provide some useful information.</para>
 @y
   <para>
@@ -272,12 +275,12 @@
 @x
   <para>The <quote>C</quote> (default) and <quote>en_US.utf8</quote> (the recommended
   one for United States English users) locales are different. <quote>C</quote>
-  uses the US-ASCII 7-bit character set, and treats bytes with the high bit set
-  as invalid characters. That's why, e.g., the <command>ls</command> command
-  substitutes them with question marks in that locale. Also, an attempt to send
+  uses the US-ASCII 7-bit character set, and treats bytes with the high-order bit set
+  <quote>on</quote> as invalid characters. That's why, e.g., the <command>ls</command> command
+  displays them as question marks in that locale. Also, an attempt to send
   mail with such characters from Mutt or Pine results in non-RFC-conforming
   messages being sent (the charset in the outgoing mail is indicated as <quote>unknown
-  8-bit</quote>). So you can use the <quote>C</quote> locale only if you are sure that
+  8-bit</quote>). So you can only use the <quote>C</quote> locale if you are sure
   you will never need 8-bit characters.</para>
 @y
   <para>
@@ -287,13 +290,13 @@
   例えば <command>ls</command> コマンドにおいてクエスチョン記号が表示されることがあるのはこのためです。
   また Mutt や Pine などにより電子メールが送信される際に、そういった文字は RFC には適合しないメールとして送信されます。
   送信された文字は<quote>不明な 8ビット (unknown 8-bit)</quote>として示されます。
-  そこで 8ビット文字を必要としない場合には<quote>C</quote>ロケールを指定してください。
+  そこで 8 ビット文字を必要としない場合のみ<quote>C</quote>ロケールを指定してください。
   </para>
 @z
 
 @x
   <para>UTF-8 based locales are not supported well by some programs.
-  Work is in progress to document and, if possible, fix such problems, see
+  Work is in progress to document and, if possible, fix such problems. See
   <ulink url="&blfs-book;introduction/locale-issues.html"/>.</para>
 @y
   <para>

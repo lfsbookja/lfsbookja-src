@@ -47,7 +47,7 @@
 @z
 
 @x --enable-cache-owner=bin
-          <para>This makes the system-wide cache files be owned by user
+          <para>This changes ownership of the system-wide cache files to user
           <systemitem class="username">bin</systemitem>.</para>
 @y
           <para>

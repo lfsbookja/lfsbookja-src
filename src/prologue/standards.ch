@@ -52,46 +52,47 @@
 @z
 
 @x
-        <para>The LSB has four separate standards: Core, Desktop,
-        Runtime Languages, and Imaging. In addition to generic requirements
-        there are also architecture specific requirements.  There are also two
-        areas for trial use: Gtk3 and Graphics.  LFS attempts to conform to the
+        <para>The LSB has four separate specifications: Core, Desktop,
+        Runtime Languages, and Imaging.  Some parts of Core and Desktop
+        specifications are architecture specific.  There are also two trial
+        specifications: Gtk3 and Graphics.  LFS attempts to conform to the LSB
+        specifications for the IA32 (32-bit x86) or AMD64 (x86_64)
         architectures discussed in the previous section.</para>
 @y
         <para>
-        LSB はさらに以下の４つの標準から構成されます。
+        LSB はさらに以下の４つの仕様から構成されます。
         コア (Core)、デスクトップ (Desktop)、ランタイム言語 (Runtime Languages)、画像処理 (Imaging) です。
-        また一般的な要求事項に加えて、アーキテクチャーに固有の要求事項もあります。
-        Gtk3 やグラフィックスという二項目に関しての試用も含んでいます。
-        LFS では前節にて示したように、各アーキテクチャーに適合することを目指します。
+        コアとデスクトップの中には、アーキテクチャーに固有の要求事項もあります。
+        Gtk3 やグラフィックスという二項目に関しての試しの仕様も含んでいます。
+        LFS では前節にて示したように、IA32 (32 ビット x86) や AMD64 (x86_64) アーキテクチャーに対応する LSB 仕様への適合を目指しています。
         </para>
 @z
 
 @x
-        <note><para>Many people do not agree with the requirements of the LSB.
-        The main purpose of defining it is to ensure that proprietary software
-        will be able to be installed and run properly on a compliant system.
+        <note><para>Many people do not agree with these requirements.
+        The main purpose of the LSB is to ensure that proprietary software
+        can be installed and run on a compliant system.
         Since LFS is source based, the user has complete control over what
-        packages are desired and many choose not to install some packages that
+        packages are desired; you may choose not to install some packages that
         are specified by the LSB.</para></note>
 @y
         <note><para>
-        LSB の要求に対しては異論のある方も多いでしょう。
-        LSB を定義するのは、私有ソフトウェア (proprietary software) をインストールした場合に、要求事項を満たしたシステム上にて問題なく動作することを目指すためです。
+        このような要求に対しては異論のある方も多いでしょう。
+        LSB の目的は、私有ソフトウェア (proprietary software) をインストールした場合に、要求事項を満たしたシステム上にて問題なく動作することを目指すためです。
         LFS はソースコードから構築するシステムですから、どのパッケージを利用するかをユーザー自身が完全に制御できます。
         また LSB にて要求されているパッケージであっても、インストールしない選択をとることもできます。
         </para></note>
 @z
 
 @x
-    <para>Creating a complete LFS system capable of passing the LSB
-    certifications tests is possible, but not without many additional packages
-    that are beyond the scope of LFS.  These additional packages have
-    installation instructions in BLFS. </para> 
+    <para>While it is possible to create a complete system that will pass the LSB
+    certification tests "from scratch", this can't be done without many additional packages
+    that are beyond the scope of the LFS book.  Installation instructions for these
+    additional packages can be found in BLFS. </para>
 @y
     <para>
-    LFS の構築にあたっては LSB に適合していることを確認するテスト (certifications tests) をクリアするように構築することも可能です。
-    ただし LFS の範囲外にあるパッケージ類を追加しなければ実現できません。
+    LFS の構築にあたっては LSB に適合していることを確認するテスト (certifications tests) を "一から" クリアしていくように構築することも可能です。
+    ただし LFS ブックの範囲外にあるパッケージ類を追加しなければ実現できません。
     そのような追加パッケージ類については、おおむね BLFS にて導入手順を説明しています。
     </para> 
 @z

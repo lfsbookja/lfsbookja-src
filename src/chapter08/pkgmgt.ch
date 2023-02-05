@@ -17,19 +17,20 @@
 
 @x
   <para>Package Management is an often requested addition to the LFS Book. A
-  Package Manager allows tracking the installation of files making it easy to
-  remove and upgrade packages. As well as the binary and library files, a
-  package manager will handle the installation of configuration files.  Before
+  Package Manager tracks the installation of files, making it easier to
+  remove and upgrade packages. A good package manager will also handle the
+  configuration files specially to keep the user configuration when the
+  package is reinstalled or upgraded.  Before
   you begin to wonder, NO&mdash;this section will not talk about nor recommend
-  any particular package manager. What it provides is a roundup of the more
+  any particular package manager. What it does provide is a roundup of the more
   popular techniques and how they work. The perfect package manager for you may
-  be among these techniques or may be a combination of two or more of these
+  be among these techniques, or it may be a combination of two or more of these
   techniques. This section briefly mentions issues that may arise when upgrading
   packages.</para>
 @y
   <para>
   パッケージ管理についての説明を LFS ブックに加えて欲しいとの要望をよく頂きます。
-  パッケージ管理ツールがあれば、インストールされるファイル類を管理し、パッケージの削除やアップグレードを容易に実現できます。
+  パッケージ管理ツールが優れていれば、パッケージを再インストールしたりアップグレードしたりするときでも、ユーザーによる設定を保持しつつ、設定ファイルを適切に取り扱ってくれます。
   パッケージ管理ツールでは、バイナリファイルやライブラリファイルだけでなく、設定ファイル類のインストールも取り扱います。
   パッケージ管理ツールをどうしたら・・・
   いえいえ本節は特定のパッケージ管理ツールを説明するわけでなく、その利用を勧めるものでもありません。
@@ -61,7 +62,7 @@
 
 @x
       <para>There are multiple solutions for package management, each having
-      its strengths and drawbacks.  Including one that satisfies all audiences
+      its strengths and drawbacks.  Finding one solution that satisfies all audiences
       is difficult.</para>
 @y
       <para>
@@ -73,7 +74,7 @@
 @x
   <para>There are some hints written on the topic of package management. Visit
   the <ulink url="&hints-root;">Hints Project</ulink> and see if one of them
-  fits your need.</para>
+  fits your needs.</para>
 @y
   <para>
   <ulink url="&hints-root;">ヒントプロジェクト (Hints Project)</ulink> ページにパッケージ管理についての情報が示されています。
@@ -101,31 +102,31 @@
 @z
 
 @x
-        <para>If Linux kernel needs to be upgraded (for example, from
-        5.10.17 to 5.10.18 or 5.11.1), nothing else need to be rebuilt.
-        The system will keep working fine thanks to the well-defined border
-        between kernel and userspace.  Specifically, Linux API headers
-        need not to be (and should not be, see the next item) upgraded
-        alongside the kernel.  You'll need to reboot your system to use the
+        <para>If the Linux kernel needs to be upgraded (for example, from
+        5.10.17 to 5.10.18 or 5.11.1), nothing else needs to be rebuilt.
+        The system will keep working fine thanks to the well-defined interface
+        between the kernel and userspace.  Specifically, Linux API headers
+        need not be (and should not be, see the next item) upgraded
+        along with the kernel.  You will merely need to reboot your system to use the
         upgraded kernel.</para>
 @y
         <para>
         カーネルをアップグレードする必要がある場合 (たとえば 5.10.17 から 5.10.18 や 5.11.1 へ、など)、これ以外に再ビルドを必要とするものはありません。
-        カーネルとユーザー空間の境界が適切に定義されているため、システムは動作し続けるはずです。
+        カーネルとユーザー空間のインターフェースが適切に定義されているため、システムは動作し続けるはずです。
         特に Linux API ヘッダーは、カーネルに伴ってアップグレードする必要もありません (次に説明するように、アップグレードしてはなりません)。
-        アップグレードしたカーネルは、システムを再起動すれば利用できるようになります。
+        アップグレードしたカーネルは、システムを再起動しさえすれば利用できるようになります。
         </para>
 @z
 
 @x
-        <para>If Linux API headers or Glibc needs to be upgraded to a newer
-        version, (e.g.  from glibc-2.31 to glibc-2.32), it is safer to
+        <para>If the Linux API headers or Glibc need to be upgraded to a newer
+        version, (e.g.,  from Glibc-2.31 to Glibc-2.32), it is safer to
         rebuild LFS.  Though you <emphasis>may</emphasis> be able to rebuild
         all the packages in their dependency order, we do not recommend
         it.  </para>
 @y
         <para>
-        Linux API ヘッダーや Glibc を新しいバージョン (例えば glibc-2.31 から glibc-2.32) にアップグレードする必要が発生した場合は LFS を再構築することが安全です。
+        Linux API ヘッダーや Glibc を新しいバージョン (例えば Glibc-2.31 から Glibc-2.32) にアップグレードする必要が発生した場合は LFS を再構築することが安全です。
         必要なパッケージの依存順を知っていれば再構築できるかもしれませんが、これはお勧めしません。
         </para>
 @z
@@ -133,18 +134,18 @@
 @x
       <listitem> <para>If a package containing a shared library is updated, and
       if the name of the library changes, then any packages dynamically
-      linked to the library need to be recompiled in order to link against the
+      linked to the library must be recompiled, to link against the
       newer library.  (Note that there is no correlation between the package
       version and the name of the library.) For example, consider a package
-      foo-1.2.3 that installs a shared library with name <filename
-      class='libraryfile'>libfoo.so.1</filename>. If you upgrade the package to
-      a newer version foo-1.2.4 that installs a shared library with name
+      foo-1.2.3 that installs a shared library with the name <filename
+      class='libraryfile'>libfoo.so.1</filename>. Suppose you upgrade the package to
+      a newer version foo-1.2.4 that installs a shared library with the name
       <filename class='libraryfile'>libfoo.so.2</filename>. In this case, any
       packages that are dynamically linked to <filename
       class='libraryfile'>libfoo.so.1</filename> need to be recompiled to link
       against <filename class='libraryfile'>libfoo.so.2</filename> in order to
-      use the new library version. You should not remove the previous
-      libraries unless all the dependent packages are recompiled.</para>
+      use the new library version. You should not remove the old
+      libraries until all the dependent packages have been recompiled.</para>
       </listitem>
 @y
       <listitem> <para>
@@ -164,28 +165,28 @@
 
 @x
       <listitem> <para>If a package containing a shared library is updated,
-      and the name of library doesn't change, but the version number of the
+      and the name of the library doesn't change, but the version number of the
       library <emphasis role="bold">file</emphasis> decreases (for example,
-      the name of the library is kept named
+      the library is still named
       <filename class='libraryfile'>libfoo.so.1</filename>,
-      but the name of library file is changed from
+      but the name of the library file is changed from
       <filename class='libraryfile'>libfoo.so.1.25</filename> to
       <filename class='libraryfile'>libfoo.so.1.24</filename>),
       you should remove the library file from the previously installed version
-      (<filename class='libraryfile'>libfoo.so.1.25</filename> in the case).
-      Or, a <command>ldconfig</command> run (by yourself using a command
+      (<filename class='libraryfile'>libfoo.so.1.25</filename> in this case).
+      Otherwise, a <command>ldconfig</command> command (invoked by yourself from the command
       line, or by the installation of some package) will reset the symlink
       <filename class='libraryfile'>libfoo.so.1</filename> to point to
-      the old library file because it seems having a <quote>newer</quote>
-      version, as its version number is larger.  This situation may happen if
-      you have to downgrade a package, or the package changes the versioning
-      scheme of library files suddenly.</para> </listitem>
+      the old library file because it seems to be a <quote>newer</quote>
+      version; its version number is larger.  This situation may arise if
+      you have to downgrade a package, or if the authors change the versioning
+      scheme for library files.</para> </listitem>
 @y
       <listitem> <para>
       共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名には変更がなかったとします。
       ただしライブラリ名の変更はなくても、ライブラリ<emphasis role="bold">ファイル</emphasis>のバージョン番号が減らされたとします。
-      （たとえばライブラリ名 <filename
-      class='libraryfile'>libfoo.so.1</filename> はそのまま不変であったとして、ライブラリファイル名が <filename
+      （たとえばライブラリ <filename
+      class='libraryfile'>libfoo.so.1</filename> はそのままの名前であったとして、ライブラリファイル名が <filename
       class='libraryfile'>libfoo.so.1.25</filename> から <filename
       class='libraryfile'>libfoo.so.1.24</filename> に変更となった場合です。）
       この場合、それまでインストールされていたバージョン（例では <filename
@@ -193,17 +194,17 @@
       そうしておかないと、<command>ldconfig</command> を実行したときに（自分でコマンドライン実行したり、別のパッケージをインストールする際に実施されたりしたときに）、シンボリックリンク <filename
       class='libraryfile'>libfoo.so.1</filename> がリセットされますが、それが指し示す先が古いライブラリファイルとなってしまいます。
       なぜならバージョン番号がより大きい方なので、そのバージョンの方が<quote>より新しい</quote>と解釈されるためです。
-      こういった状況は、パッケージをダウングレードした場合や、パッケージにおけるバージョン番号づけの取り決めが突然変わってしまった場合に起こり得るものです。
+      こういった状況は、パッケージをダウングレードした場合や、パッケージの作者がバージョン番号づけの取り決めを変更してしまった場合に起こり得るものです。
       </para> </listitem>
 @z
 
 @x
       <listitem><para>If a package containing a shared library is updated,
-      and the name of library doesn't change, but a severe issue
+      and the name of the library doesn't change, but a severe issue
       (especially, a security vulnerability) is fixed, all running programs
       linked to the shared library should be restarted.  The following
       command, run as <systemitem class="username">root</systemitem> after
-      updating, will list what is using the old versions of those libraries
+      the update is complete, will list which processes are using the old versions of those libraries
       (replace <replaceable>libfoo</replaceable> with the name of the
       library):</para>
 @y
@@ -211,26 +212,26 @@
       共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名に変更はなかったとします。
       ただしそこでは重大な問題（特にセキュリティぜい弱性）が解消されているような場合は、この共有ライブラリにリンクしている実行中プログラムは、すべて再起動してください。
       アップグレードした後に、以下のコマンドを <systemitem
-      class="username">root</systemitem> で実行すると、どういったプログラムが古いバージョンのライブラリを利用しているかの一覧が表示されます。
+      class="username">root</systemitem> で実行すると、どういったプロセスが古いバージョンのライブラリを利用しているかの一覧が表示されます。
       （<replaceable>libfoo</replaceable> の部分は、目的のライブラリ名に置き換えてください。）
        </para>
 @z
 
 @x
-        If <application>OpenSSH</application> is being used for accessing
-        the system and it is linked to the updated library, you need to
-        restart <command>sshd</command> service, then logout, login again,
-        and rerun that command to confirm nothing is still using the
+        If <application>OpenSSH</application> is being used to access
+        the system and it is linked to the updated library, you must
+        restart the <command>sshd</command> service, then logout, login again,
+        and rerun the preceding ps command to confirm that nothing is still using the
         deleted libraries.
 @y
         <application>OpenSSH</application> を利用してシステムにアクセスしている場合であって、これがリンクするライブラリがアップデートされたとします。
         その場合は <command>sshd</command> サービスの再起動が必要です。
-        またシステムからはいったんログアウトしてログインし直し、その後に上のコマンドをもう一度実行して、削除されたライブラリを利用していないかどうかの確認を行ってください。
+        またシステムからはいったんログアウトしてログインし直し、その後に上に示した ps コマンドをもう一度実行して、削除されたライブラリを利用していないかどうかの確認を行ってください。
 @z
 
 @x revision='systemd'
         If the <command>systemd</command> daemon (running as PID 1) is
-        linked to the updated library, you can restart it without reboot
+        linked to the updated library, you can restart it without rebooting
         by running <command>systemctl daemon-reexec</command> as the
         <systemitem class='username'>root</systemitem> user.
 @y
@@ -239,23 +240,23 @@
 @z
 
 @x
-        <para>If a binary or a shared library is overwritten, the processes
-        using the code or data in the binary or library may crash.  The
-        correct way to update a binary or a shared library without causing
+        <para>If an executable program or a shared library is overwritten, the processes
+        using the code or data in that program or library may crash.  The
+        correct way to update a program or a shared library without causing
         the process to crash is to remove it first, then install the new
-        version into position. The <command>install</command> command
-        provided by <application>Coreutils</application> has already
-        implemented this and most packages use it to install binaries and
+        version. The <command>install</command> command
+        provided by <application>coreutils</application> has already
+        implemented this, and most packages use that command to install binary files and
         libraries.  This means that you won't be troubled by this issue most of the time.
         However, the install process of some packages (notably Mozilla JS
-        in BLFS) just overwrites the file if it exists and causes a crash, so
+        in BLFS) just overwrites the file if it exists; this causes a crash. So
         it's safer to save your work and close unneeded running processes
-        before updating a package.</para>
+        before updating a package.</para> <!-- binary is an adjective, not a noun. -->
 @y
         <para>
-        バイナリや共有ライブラリが上書きされると、そのバイナリや共有バイナリ内のコードやデータを利用するプロセスがクラッシュすることがあります。
-        プロセスがクラッシュしないように、バイナリや共有ライブラリを正しく更新する方法は、まず初めに削除を行ってから、新たなものをそこにインストールすることです。
-        <application>Coreutils</application> が提供する <command>install</command> コマンドは、すでにこの処理が実装されているため、たいていのパッケージにおいて、バイナリやライブラリのインストールに利用されています。
+        実行プログラムや共有ライブラリが上書きされると、その実行プログラムや共有バイナリ内のコードやデータを利用するプロセスがクラッシュすることがあります。
+        プロセスがクラッシュしないように、プログラムや共有ライブラリを正しく更新する方法は、まず初めに削除を行ってから、新たなものをインストールすることです。
+        <application>coreutils</application> が提供する <command>install</command> コマンドは、すでにこの処理が実装されているため、たいていのパッケージにおいて、バイナリファイルやライブラリをインストールするコマンドとして利用しています。
         したがってそのような問題に悩まされることは、これまでほとんどなかったはずです。
         しかしパッケージの中には (特に BLFS にある Mozilla JS など)、すでにあるファイルを上書きする方式をとっているため、クラッシュするものがあります。
         そこでパッケージ更新の前には、それまでの作業を保存して、不要な起動プロセスは停止することが安全です。
@@ -271,7 +272,7 @@
 @x
     <para>The following are some common package management techniques. Before
     making a decision on a package manager, do some research on the various
-    techniques, particularly the drawbacks of the particular scheme.</para>
+    techniques, particularly the drawbacks of each particular scheme.</para>
 @y
     <para>
     以下に一般的なパッケージ管理手法について示します。
@@ -288,18 +289,18 @@
 @z
 
 @x
-      <para>Yes, this is a package management technique. Some folks do not find
-      the need for a package manager because they know the packages intimately
-      and know what files are installed by each package. Some users also do not
+      <para>Yes, this is a package management technique. Some folks do not 
+      need a package manager because they know the packages intimately
+      and know which files are installed by each package. Some users also do not
       need any package management because they plan on rebuilding the entire
-      system when a package is changed.</para>
+      system whenever a package is changed.</para>
 @y
       <para>
       そうです。
       これもパッケージ管理のやり方の一つです。
       いろいろなパッケージに精通していて、どんなファイルがインストールされるか分かっている人もいます。
       そんな人はパッケージ管理ツールを必要としません。
-      あるいはパッケージが更新された際にシステム全体を再構築しようと考えている人なら、やはりパッケージ管理ツールを必要としません。
+      あるいはパッケージが更新された際には、いつでもシステム全体を再構築しようと考える人なら、やはりパッケージ管理ツールを必要としません。
       </para>
 @z
 
@@ -310,23 +311,23 @@
 @z
 
 @x
-      <para>This is a simplistic package management that does not need any extra
-      package to manage the installations. Each package is installed in a
+      <para>This is a simplistic package management technique that does not need a
+      special program to manage the packages. Each package is installed in a
       separate directory. For example, package foo-1.1 is installed in
       <filename class='directory'>/usr/pkg/foo-1.1</filename>
       and a symlink is made from <filename>/usr/pkg/foo</filename> to
-      <filename class='directory'>/usr/pkg/foo-1.1</filename>. When installing
-      a new version foo-1.2, it is installed in
+      <filename class='directory'>/usr/pkg/foo-1.1</filename>. When
+      a new version foo-1.2 comes along, it is installed in
       <filename class='directory'>/usr/pkg/foo-1.2</filename> and the previous
       symlink is replaced by a symlink to the new version.</para>
 @y
       <para>
-      これは最も単純なパッケージ管理のやり方であり、パッケージ管理のためのツールを用いる必要はありません。
+      これは最も単純なパッケージ管理のテクニックであり、パッケージ管理のための特別なプログラムを必要としません。
       個々のパッケージを個別のディレクトリにインストールする方法です。
       例えば foo-1.1 というパッケージを <filename
       class='directory'>/usr/pkg/foo-1.1</filename> ディレクトリにインストールし、この <filename
       class='directory'>/usr/pkg/foo-1.1</filename> に対するシンボリックリンク <filename>/usr/pkg/foo</filename> を作成します。
-      このパッケージの新しいバージョン foo-1.2 をインストールする際には <filename
+      このパッケージの新しいバージョン foo-1.2 がリリースされた際には <filename
       class='directory'>/usr/pkg/foo-1.2</filename> ディレクトリにインストールした上で、先ほどのシンボリックリンクをこのディレクトリを指し示すように置き換えます。
       </para>
 @z
@@ -335,12 +336,12 @@
       <para>Environment variables such as <envar>PATH</envar>,
       <envar>LD_LIBRARY_PATH</envar>, <envar>MANPATH</envar>,
       <envar>INFOPATH</envar> and <envar>CPPFLAGS</envar> need to be expanded to
-      include <filename>/usr/pkg/foo</filename>. For more than a few packages,
+      include <filename>/usr/pkg/foo</filename>. If you install more than a few packages,
       this scheme becomes unmanageable.</para>
 @y
       <para>
       <envar>PATH</envar>、<envar>LD_LIBRARY_PATH</envar>、<envar>MANPATH</envar>、<envar>INFOPATH</envar>、<envar>CPPFLAGS</envar> といった環境変数に対しては <filename>/usr/pkg/foo</filename> ディレクトリを加える必要があるかもしれません。
-      もっともパッケージによっては、このやり方では管理できないものもあります。
+      インストールするパッケージ数が増えてくれば、このやり方では管理できなくなります。
       </para>
 @z
 
@@ -352,36 +353,36 @@
 
 @x
       <para>This is a variation of the previous package management technique.
-      Each package is installed similar to the previous scheme. But instead of
-      making the symlink, each file is symlinked into the
+      Each package is installed as in the previous scheme. But instead of
+      making the symlink via a generic package name, each file is symlinked into the
       <filename class='directory'>/usr</filename> hierarchy. This removes the
       need to expand the environment variables. Though the symlinks can be
-      created by the user to automate the creation, many package managers have
-      been written using this approach. A few of the popular ones include Stow,
+      created by the user, many package managers use this approach, and
+      automate the creation of the symlinks. A few of the popular ones include Stow,
       Epkg, Graft, and Depot.</para>
 @y
       <para>
       これは一つ前に示したパッケージ管理テクニックの応用です。
-      各パッケージは同様にインストールします。
-      ただし先ほどのようなシンボリックリンクを生成するのではなく <filename
+      各パッケージは、上で説明した方法と同じようにインストールします。
+      ただし先ほどのように、汎用的なパッケージ名によるシンボリックリンクを生成するのではなく <filename
       class='directory'>/usr</filename> ディレクトリ階層の中に各ファイルのシンボリックリンクを生成します。
       この方法であれば環境変数を追加設定する必要がなくなります。
-      シンボリックリンクを自動生成することもできますが、パッケージ管理ツールの中にはこの手法を使って構築されているものもあります。
+      シンボリックリンクはユーザーが生成することもできますが、パッケージ管理者の多くは、この手法を使っています。
       よく知られているものとして Stow、Epkg、Graft、Depot があります。
       </para>
 @z
 
 @x
-      <para>The installation needs to be faked, so that the package thinks that
+      <para>The installation script needs to be fooled, so the package thinks
       it is installed in <filename class="directory">/usr</filename> though in
       reality it is installed in the
       <filename class="directory">/usr/pkg</filename> hierarchy. Installing in
-      this manner is not usually a trivial task. For example, consider that you
+      this manner is not usually a trivial task. For example, suppose you
       are installing a package libfoo-1.1. The following instructions may
       not install the package properly:</para>
 @y
       <para>
-      インストール時には意図的な指示が必要です。
+      インストールスクリプトは、意図的にダマす指示が必要です。
       パッケージにとっては <filename class="directory">/usr</filename> にインストールすることが指定されたものとなりますが、実際には <filename
       class="directory">/usr/pkg</filename> 配下にインストールされるわけです。
       このインストール方法は単純なものではありません。
@@ -397,7 +398,7 @@
       <filename class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename>
       instead of <filename class='libraryfile'>/usr/lib/libfoo.so.1</filename>
       as you would expect. The correct approach is to use the
-      <envar>DESTDIR</envar> strategy to fake installation of the package. This
+      <envar>DESTDIR</envar> variable to direct the installation. This
       approach works as follows:</para>
 @y
       <para>
@@ -405,15 +406,15 @@
       例えば libfoo をリンクするパッケージをコンパイルする際には <filename
       class='libraryfile'>/usr/lib/libfoo.so.1</filename> がリンクされると思うかもしれませんが、実際には <filename
       class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンクされることになります。
-      正しくリンクするためには <envar>DESTDIR</envar> 変数を使って、パッケージのインストールをうまく仕組む必要があります。
+      結局、正しい方法は <envar>DESTDIR</envar> 変数を使って、パッケージを直接インストールすることです。
       この方法は以下のようにして行います。
       </para>
 @z
 
 @x
       <para>Most packages support this approach, but there are some which do not.
-      For the non-compliant packages, you may either need to manually install the
-      package, or you may find that it is easier to install some problematic
+      For the non-compliant packages, you may either need to install the
+      package manually, or you may find that it is easier to install some problematic
       packages into <filename class='directory'>/opt</filename>.</para>
 @y
       <para>
@@ -434,7 +435,7 @@
       the package. After the installation, a simple use of the
       <command>find</command> command with the appropriate options can generate
       a log of all the files installed after the timestamp file was created. A
-      package manager written with this approach is install-log.</para>
+      package manager that uses this approach is install-log.</para>
 @y
       <para>
       この方法ではパッケージをインストールするにあたって、あるファイルにタイムスタンプが記されます。
@@ -448,14 +449,14 @@
       <para>Though this scheme has the advantage of being simple, it has two
       drawbacks. If, during installation, the files are installed with any
       timestamp other than the current time, those files will not be tracked by
-      the package manager. Also, this scheme can only be used when one package
-      is installed at a time. The logs are not reliable if two packages are
-      being installed on two different consoles.</para>
+      the package manager. Also, this scheme can only be used when packages
+      are installed one at a time. The logs are not reliable if two packages are
+      installed simultaneously from two different consoles.</para>
 @y
       <para>
       この方法はシンプルであるという利点がありますが、以下の二つの欠点があります。
       インストールの際に、いずれかのファイルのタイムスタンプが現在時刻でなかった場合、そういったファイルはパッケージ管理ツールが正しく制御できません。
-      またこの方法は一つのパッケージだけが、その時にインストールされることを前提とします。
+      またこの方法は、インストールされるパッケージが、その時には一つだけであることを前提とします。
       例えば二つのパッケージが二つの異なる端末から同時にインストールされるような場合は、ログファイルが適切に生成されません。
       </para>
 @z
@@ -487,8 +488,8 @@
       calls that modify the filesystem. For this approach to work, all the
       executables need to be dynamically linked without the suid or sgid bit.
       Preloading the library may cause some unwanted side-effects during
-      installation. Therefore, it is advised that one performs some tests to
-      ensure that the package manager does not break anything and logs all the
+      installation. Therefore, it's a good idea to perform some tests to
+      ensure that the package manager does not break anything, and that it logs all the
       appropriate files.</para>
 @y
       <para>
@@ -496,17 +497,17 @@
       パッケージのインストール中には <command>cp</command>、<command>install</command>、<command>mv</command> など、さまざまな実行モジュールにそのライブラリをリンクさせ、ファイルシステムを変更するようなシステムコールを監視することで、そのライブラリがパッケージを追跡管理できるようにします。
       この方法を実現するためには、動的リンクする実行モジュールはすべて suid ビット、sgid ビットがオフでなければなりません。
       事前にライブラリをロードしておくと、インストール中に予期しない副作用が発生するかもしれません。
-      したがって、ある程度のテスト確認を行って、パッケージ管理ツールが不具合を引き起こさないこと、しかるべきファイルの記録を取っておくことが必要とされます。
+      したがって、ある程度のテスト確認を行って、パッケージ管理ツールが不具合を引き起こさないこと、しかるべきファイルの記録が取られていることが良いとされます。
       </para>
 @z
 
 @x
-      <para>The second technique is to use <command>strace</command>, which
-      logs all system calls made during the execution of the installation
+      <para>Another technique is to use <command>strace</command>, which
+      logs all the system calls made during the execution of the installation
       scripts.</para>
 @y
       <para>
-      二つめの方法は <command>strace</command> を用いるものです。
+      別の方法として <command>strace</command> を用いるものがあります。
       これはインストールスクリプトの実行中に発生するシステムコールを記録するものです。
       </para>
 @z
@@ -521,10 +522,10 @@
 
 @x
       <para>In this scheme, the package installation is faked into a separate
-      tree as described in the Symlink style package management. After the
+      tree as previously described in the symlink style package management section. After the
       installation, a package archive is created using the installed files.
-      This archive is then used to install the package either on the local
-      machine or can even be used to install the package on other machines.</para>
+      This archive is then used to install the package on the local
+      machine or even on other machines.</para>
 @y
       <!--
       日本語訳註： 2009-09-01 matsuand
@@ -537,7 +538,7 @@
       <para>
       この方法では、シンボリックリンク方式によるパッケージ管理にて説明したのと同じように、パッケージが個別のディレクトリにインストールされます。
       インストールの後は、インストールされたファイルのアーカイブが生成されます。
-      このアーカイブはローカルPCへのインストールに用いられたり、他のPCへのインストールに利用されたりします。
+      このアーカイブはローカル PC へのインストールに用いられたり、他の PC へのインストールにも利用されたりします。
       </para>
 @z
 
@@ -563,8 +564,8 @@
 @z
 
 @x
-      <para>Creation of package files that include dependency information is
-      complex and is beyond the scope of LFS.</para>
+      <para>The creation of package files that include dependency information is
+      complex, and beyond the scope of LFS.</para>
 @y
       <para>
       パッケージファイルにその依存パッケージ情報まで含めてアーカイブ生成することは、非常に複雑となり LFS の範疇を超えるものです。
@@ -572,7 +573,7 @@
 @z
 
 @x
-      <para>Slackware uses a <command>tar</command> based system for package
+      <para>Slackware uses a <command>tar</command>-based system for package
       archives.  This system purposely does not handle package dependencies
       as more complex package managers do.  For details of Slackware package
       management, see <ulink
@@ -625,9 +626,10 @@
     depend on the position of files on a disk system.  Cloning an LFS build to
     another computer with the same architecture as the base system is as
     simple as using <command>tar</command> on the LFS partition that contains
-    the root directory (about 250MB uncompressed for a base LFS build), copying
-    that file via network transfer or CD-ROM to the new system and expanding
-    it.  From that point, a few configuration files will have to be changed.
+    the root directory (about 900MB uncompressed for a basic LFS build), copying
+    <!-- D. Bryant created LFS 11.2 in October 2022; 900MB is (roughly) the size of his rsync archive. -->
+    that file via network transfer or CD-ROM / USB stick to the new system, and expanding
+    it.  After that, a few configuration files will have to be changed.
     Configuration files that may need to be updated include: 
     <filename>/etc/hosts</filename>,
     <filename>/etc/fstab</filename>,
@@ -649,8 +651,8 @@
     <para>
     LFS システムの利点の一つとして、どのファイルもディスク上のどこに位置していても構わないことです。
     他のコンピューターに対してビルドした LFS の複製を作ろうとするなら、それが同等のアーキテクチャーであれば容易に実現できます。
-    つまり <command>tar</command> コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 250MB 程度) をまとめ、これをネットワーク転送か、あるいは CD-ROM を通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
-    この場合でも、設定ファイルはいくらか変更することが必要です。
+    つまり <command>tar</command> コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 900MB 程度) をまとめ、これをネットワーク転送か、あるいは CD-ROM や USB スティックを通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
+    その後は、設定ファイルにいくらかの変更を行うことが必要です。
     変更が必要となる設定ファイルは以下のとおりです。
     <filename>/etc/hosts</filename>,
     <filename>/etc/fstab</filename>,
@@ -671,20 +673,20 @@
 @z
 
 @x
-    <para>A custom kernel may need to be built for the new system depending on
+    <para>A custom kernel may be needed for the new system, depending on
     differences in system hardware and the original kernel
     configuration.</para>
 @y
       <para>
-      新しいシステムのハードウェアと元のカーネルに差異があるかもしれないため、カーネルを再ビルドする必要があるでしょう。
+      新しいシステムのハードウェアと元のカーネルに差異があるかもしれないため、カーネルを新しいシステム向けに再ビルドする必要があるでしょう。
       </para>
 @z
 
 @x
     <note><para>There have been some reports of issues when copying between
     similar but not identical architectures. For instance, the instruction set
-    for an Intel system is not identical with an AMD processor and later
-    versions of some processors may have instructions that are unavailable in
+    for an Intel system is not identical with the AMD processor's instructions, and later
+    versions of some processors may provide instructions that are unavailable with
     earlier versions.</para></note>
 @y
     <note><para>
@@ -694,10 +696,10 @@
 @z
 
 @x
-    <para>Finally the new system has to be made bootable via <xref
+    <para>Finally, the new system has to be made bootable via <xref
     linkend="ch-bootable-grub"/>.</para>
 @y
-      <para>
-      最後に新システムを起動可能とするために <xref linkend="ch-bootable-grub"/>を設定する必要があります。
-      </para>
+    <para>
+    最後に新システムを起動可能とするために <xref linkend="ch-bootable-grub"/>を設定する必要があります。
+    </para>
 @z

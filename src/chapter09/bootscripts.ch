@@ -83,7 +83,7 @@
 
 @x checkfs
           <para>Checks the integrity of the file systems before they are mounted
-          (with the exception of journal and network based file systems)</para>
+          (with the exception of journaling and network-based file systems)</para>
 @y
           <para>
           ファイルシステムがマウントされる前にその整合性をチェックします。
@@ -181,8 +181,8 @@
 @z
 
 @x mountfs
-          <para>Mounts all file systems, except ones that are marked
-          <emphasis>noauto</emphasis> or are network based</para>
+          <para>Mounts all file systems, except those that are marked
+          <emphasis>noauto</emphasis>, or are network based</para>
 @y
           <para>
           ファイルシステムをすべてマウントします。
@@ -213,12 +213,12 @@
 @x rc
           <para>The master run-level control script; it is responsible for
           running all the other bootscripts one-by-one, in a sequence determined
-          by the name of the symbolic links being processed</para>
+          by the names of the symbolic links to those other bootscripts</para>
 @y
           <para>
           ランレベルを制御するマスタースクリプト。
           他のブートスクリプトを一つずつ実行します。
-          その際には実行されるシンボリックの名前によって実行順序を決定します。
+          その際には、別のブートスクリプトへのシンボリックリンク名によって実行順序を決定します。
           </para>
 @z
 
@@ -240,11 +240,11 @@
 @z
 
 @x setclock
-          <para>Resets the kernel clock to local time in case the hardware clock
-          is not set to UTC time</para>
+          <para>Resets the system clock to local time if the hardware clock
+          is not set to UTC</para>
 @y
           <para>
-          ハードウェアクロックが UTC 時刻に設定されていなければ、カーネルクロックをローカル時刻としてリセットします。
+          ハードウェアクロックが UTC 時刻に設定されていなければ、システムクロックをローカル時刻としてリセットします。
           </para>
 @z
 
@@ -294,10 +294,10 @@
 
 @x udev
           <para>Prepares the <filename class="directory">/dev</filename>
-          directory and starts Udev</para>
+          directory and starts the udev daemon</para>
 @y
           <para>
-          <filename class="directory">/dev</filename> ディレクトリを準備して Udev を起動します。
+          <filename class="directory">/dev</filename> ディレクトリを準備して udev デーモンを起動します。
           </para>
 @z
 

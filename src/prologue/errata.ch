@@ -19,12 +19,12 @@
   <para>The software used to create an LFS system is constantly being updated
   and enhanced. Security warnings and bug fixes may become available after
   the LFS book has been released. To check whether the package versions or
-  instructions in this release of LFS need any modifications to accommodate
-  security vulnerabilities or other bug fixes, please visit
+  instructions in this release of LFS need any modifications&mdash;to repair
+  security vulnerabilities or to fix other bugs&mdash;please visit
   <ulink url="&errata;"/>
   before proceeding with your build. You should note any
-  changes shown and apply them to the relevant section of the book as you
-  progress with building the LFS system.</para>
+  changes shown and apply them to the relevant sections of the book as you
+  build the LFS system.</para>
 @y
   <para>
   LFS システムを構築するためのソフトウェアは日々拡張され更新されています。
@@ -36,15 +36,19 @@
 
 @x
   <para>In addition, the Linux From Scratch editors maintain a list of security
-  vulnerabilities discovered after a book was released. To check whether there
-  are any active security vulnerabilities, please visit
-  <ulink url="&secadv;"/> prior to proceeding with your build. You should note
-  any advisories and perform the steps to fix any security vulnerabilities as
-  you progress with building the LFS system.</para>
+  vulnerabilities discovered <emphasis>after</emphasis> a book has been released. To read the list, please visit
+  <ulink url="&secadv;"/> before proceeding with your build. You should apply
+  the changes suggested by the advisories to the relevant sections of the
+  book as you build the LFS system.  And, if you will use the LFS system as
+  a real desktop or server system, you should continue to consult the
+  advisories and fix any security vulnerabilities, even when the LFS system
+  has been completely constructed.</para>
 @y
   <para>
-  上に加えて Linux From Scratch 編集者は、本ブックのリリース後に発見されたセキュリティぜい弱性のリストを管理しています。
-  ビルド作業に入る前には <ulink url="&secadv;"/> にアクセスして、重大なセキュリティぜい弱性がないかどうかを事前に確認してください。
-  LFS のビルド作業を進めていく上では、必ずセキュリティアドバイスを確認し、セキュリティぜい弱性を解消する修正手順があれば、それに従ってください。
+  上に加えて Linux From Scratch 編集者は、本ブックの<emphasis role="bold">リリース後</emphasis>に発見されたセキュリティぜい弱性のリストを管理しています。
+  ビルド作業に入る前には、このリストを読み、<ulink url="&secadv;"/> にアクセスしてください。
+  LFS のビルド作業を進めていく上では、各セクションに対するセキュリティアドバイスの内容に従って、修正作業を適用してください。
+  さらに LFS システムを、現実にデスクトップやサーバーシステムとして利用としている場合は、アドバイスを常に確認してセキュリティフィックスを適用するようにしてください。
+  これは LFS システムを構築した後であっても同様です。
   </para>
 @z

@@ -25,41 +25,86 @@
 @z
 
 @x
-    <para>Install wheel with the following command:</para>
+    <para>Compile Wheel with the following command:</para>
 @y
-    <para>以下のコマンドを実行して wheel をインストールします。</para>
+    <para>
+    以下のコマンドを実行して Wheel をコンパイルします。
+    </para>
 @z
 
 @x
-      <title>The meaning of the pip3 options:</title>
+    <para>Install Wheel with the following command:</para>
 @y
-      <title>&MeaningOfOption1;pip3&MeaningOfOption2;</title>
+    <para>以下のコマンドを実行して Wheel をインストールします。</para>
+@z
+
+@x
+      <title>The meaning of the pip3 configuration options and commands:</title>
+@y
+      <title>pip3 設定オプションとコマンドの意味</title>
+@z
+
+@x PYTHONPATH=src
+           <para>Allows this package (not installed yet) to build a
+           wheel archive for itself, to avoid a chicken-or-egg problem.</para>
+@y
+           <para>
+           本パッケージを使って（インストールしていなくても）、本パッケージをインストールできるようにします。
+           これにより鶏とタマゴの問題を解消します。
+           </para>
+@z
+
+@x wheel
+           <para>This command builds the wheel archive for this package.</para>
+@y
+           <para>
+           このコマンドは、本パッケージ向けの wheel アーカイブを生成します。
+           </para>
+@z
+
+@x -w dist
+           <para>Instructs pip to put the created wheel into the
+           <filename class='directory'>dist</filename> directory.</para>
+@y
+           <para>
+           生成した wheel を <filename class='directory'>dist</filename> ディレクトリに置くことを指示します。
+           </para>
 @z
 
 @x install
-           <para>Install the package.</para>
+           <para>This command installs the package.</para>
 @y
-           <para>&InstallThePackage;</para>
+           <para>このコマンドはパッケージをインストールします。</para>
 @z
 
-@x --no-index
-          <para>Prevent pip from fetching files from the online package
+@x
+        <term><parameter>--no-build-isolation</parameter>,
+              <parameter>--no-deps</parameter>, and
+              <parameter>--no-index</parameter></term>
+@y
+        <term><parameter>--no-build-isolation</parameter>,
+              <parameter>--no-deps</parameter>,
+              <parameter>--no-index</parameter></term>
+@z
+@x
+          <para>These options prevent fetching files from the online package
           repository (PyPI). If packages are installed in the correct order,
-          then it won't need to fetch any files in the first place, but this
-          option adds some safety in case of user error.</para>
+          pip won't need to fetch any files in the first place; these
+          options add some safety in case of user error.</para>
 @y
           <para>
-          pip がオンラインパッケージリポジトリ（PyPI) からファイルを取得しないようにします。
+          これらのオプションは、オンラインパッケージリポジトリ（PyPI) からファイルを取得しないようにします。
           パッケージ類が適切な順番でインストールされていれば、最初にファイルを取得しておく必要はないはずです。
           ただしこのオプションをつけておくことで、ユーザーが操作を誤っても安全であるようにします。
           </para>
 @z
 
-@x $PWD
-           <para>Look for files to install in the current working directory.</para>
+@x --find-links dist
+           <para>Instructs pip to search for wheel archives in the
+           <filename class='directory'>dist</filename> directory.</para>
 @y
            <para>
-           インストールするファイルを現在のワーキングディレクトリ内から探し出します。
+           <filename class='directory'>dist</filename> ディレクトリから wheel アーカイブを検索することを指示します。
            </para>
 @z
 
@@ -81,13 +126,13 @@
         <seg>wheel</seg>
         <seg>
            /usr/lib/python&python-minor;/site-packages/wheel and
-           /usr/lib/python&python-minor;/site-packages/wheel-0.37.1-py3.10.egg-info
+           /usr/lib/python&python-minor;/site-packages/wheel-&wheel-version;.dist-info
         </seg>
 @y
         <seg>wheel</seg>
         <seg>
            /usr/lib/python&python-minor;/site-packages/wheel,
-           /usr/lib/python&python-minor;/site-packages/wheel-0.37.1-py3.10.egg-info
+           /usr/lib/python&python-minor;/site-packages/wheel-&wheel-version;.dist-info
         </seg>
 @z
 
@@ -98,7 +143,7 @@
 @z
 
 @x wheel
-            is an utility to unpack, pack, or convert wheel packages
+            is a utility to unpack, pack, or convert wheel archives
 @y
-            wheel パッケージの解凍、圧縮、変換を行うユーティリティーです。
+            wheel アーカイブの解凍、圧縮、変換を行うユーティリティーです。
 @z

@@ -56,19 +56,23 @@
     <para id="shadow-login_defs">Instead of using the default
     <emphasis>crypt</emphasis> method, use the more secure
     <emphasis>SHA-512</emphasis> method of password encryption, which also
-    allows passwords longer than 8 characters. It is also necessary to change
+    allows passwords longer than 8 characters. In addition, set the number of
+    rounds to 500,000 instead of the default 5000, which is much too low to
+    prevent brute force password attacks. It is also necessary to change
     the obsolete <filename class="directory">/var/spool/mail</filename> location
     for user mailboxes that Shadow uses by default to the <filename
     class="directory">/var/mail</filename> location used currently. And,
-    get rid of <filename class="directory">/bin</filename> and
-    <filename class="directory">/sbin</filename> from <envar>PATH</envar>,
-    since they are simply symlinks to their counterpart in
+    remove <filename class="directory">/bin</filename> and
+    <filename class="directory">/sbin</filename> from the <envar>PATH</envar>,
+    since they are simply symlinks to their counterparts in
     <filename class="directory">/usr</filename>.</para>
 @y
     <para id="shadow-login_defs">
     パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>SHA-512</emphasis> 手法を用いることにします。
     こうしておくと 8文字以上のパスワード入力が可能となります。
-    またメールボックスを収めるディレクトリとして Shadow ではデフォルトで <filename
+    またラウンド数をデフォルトの 5000 から 500,000 に設定します。
+    デフォルトの 5000 では、パスワードの総当り攻撃に対しては小さすぎる設定だからです。
+    メールボックスを収めるディレクトリとして Shadow ではデフォルトで <filename
     class="directory">/var/spool/mail</filename> ディレクトリを利用していますが、これは古いものであるため <filename
     class="directory">/var/mail</filename> ディレクトリに変更します。
     また <envar>PATH</envar> から <filename class="directory">/bin</filename> と <filename
@@ -79,21 +83,21 @@
 @z
 
 @x
-      <para>If <filename class="directory">/bin</filename> and/or
-      <filename class="directory">/sbin</filename> are preferred to be
-      left over in <envar>PATH</envar> for some reason, modify
-      <envar>PATH</envar> in <filename>.bashrc</filename> after LFS is
+      <para>If you wish to include <filename class="directory">/bin</filename>
+      and/or <filename class="directory">/sbin</filename> in the <envar>PATH</envar>
+      for some reason, modify the
+      <envar>PATH</envar> in <filename>.bashrc</filename> after LFS has been
       built.</para>
 @y
       <para>
       何らかの理由により <envar>PATH</envar> に対して <filename
       class="directory">/bin</filename> や <filename
-      class="directory">/sbin</filename> を残しておく必要がある場合は、LFS ビルドが完成した後に <filename>.bashrc</filename> において <envar>PATH</envar> を設定してください。
+      class="directory">/sbin</filename> を含めたい場合は、LFS ビルドが完成した後に <filename>.bashrc</filename> において <envar>PATH</envar> を設定してください。
       </para>
 @z
 
 @x
-      <para>If you chose to build Shadow with Cracklib support, run the following:</para>
+      <para>If you chose to build Shadow with Cracklib support, issue this command:</para>
 @y
       <para>
       Cracklib のサポートを含めて Shadow をビルドする場合は以下を実行します。
@@ -124,27 +128,30 @@
 @z
 
 @x
-      <title>The meaning of the configure option:</title>
+      <title>The meaning of the new configuration options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x touch /usr/bin/passwd
           <para>The file <filename>/usr/bin/passwd</filename> needs
-          to exist because its location is hardcoded in some programs, and
-          if it does not exist, the default location is not right.</para>
+          to exist because its location is hardcoded in some programs; 
+          if it does not already exist, the installation script will 
+          create it in the wrong place.</para>
 @y
           <para>
-          プログラムの中には <filename>/usr/bin/passwd</filename> のパスがそのままハードコーディングされているものがあり、このファイルが存在しなかった場合のデフォルトパスが正しくなっていません。
+          プログラムの中には <filename>/usr/bin/passwd</filename> のパスがそのままハードコーディングされているものがあります。
+          それがまだ存在していない場合には、インストールスクリプトが間違った場所に作り出してしまいます。
           </para>
 @z
 
 @x --with-group-name-max-length=32
-          <para>The maximum user name is 32 characters.  Make the maximum
-          group name the same.</para>
+          <para>The longest permissible user name is 32 characters.  Make the maximum
+          length of a group name the same.</para>
 @y
           <para>
-          ユーザー名とグループ名の最大文字数を 32 とします。
+          ユーザー名の最大文字数は 32 です。
+          そこでグループ名の最大文字数も同様とします。
           </para>
 @z
 
@@ -189,9 +196,9 @@
     groups; set and change their passwords; and perform other administrative
     tasks. For a full explanation of what <emphasis>password shadowing</emphasis>
     means, see the <filename>doc/HOWTO</filename> file within the unpacked
-    source tree. If using Shadow support, keep in mind that programs which need
+    source tree. If you use Shadow support, keep in mind that programs which need
     to verify passwords (display managers, FTP programs, pop3 daemons, etc.)
-    must be Shadow-compliant. That is, they need to be able to work with
+    must be Shadow-compliant. That is, they must be able to work with
     shadowed passwords.</para>
 @y
     <para>
@@ -220,23 +227,23 @@
 
 @x
     <para>Shadow's default configuration for the <command>useradd</command>
-    utility has a few caveats that need some explanation. First, the default
+    utility needs some explanation. First, the default
     action for the <command>useradd</command> utility is to create the user and
-    a group of the same name as the user. By default the user ID (UID) and
-    group ID (GID) numbers will begin with 1000. This means if you don't pass
-    parameters to <command>useradd</command>, each user will be a member of a
+    a group with the same name as the user. By default the user ID (UID) and
+    group ID (GID) numbers will begin at 1000. This means if you don't pass
+    extra parameters to <command>useradd</command>, each user will be a member of a
     unique group on the system. If this behavior is undesirable, you'll need
-    to pass one of the <parameter>-g</parameter> or <parameter>-N</parameter>
-    parameter to <command>useradd</command> or to change the setting of
+    to pass either the <parameter>-g</parameter> or <parameter>-N</parameter>
+    parameter to <command>useradd</command>, or else change the setting of
     <parameter>USERGROUPS_ENAB</parameter> in
     <filename>/etc/login.defs</filename>. See <filename>useradd(8)</filename>
     for more information.</para>
 @y
     <para>
-    Shadow の <command>useradd</command> コマンドに対するデフォルトの設定には、注意すべき点があります。
+    Shadow の <command>useradd</command> コマンドに対するデフォルトの設定には、説明が必要です。
     まず <command>useradd</command> コマンドによりユーザーを生成する場合のデフォルトの動作では、ユーザー名と同じグループを自動生成します。
     ユーザーID (UID) とグループID (GID) は 1000 以上が割り当てられます。
-    <command>useradd</command> コマンドの利用時に特にパラメータを与えなければ、追加するユーザーのグループは新たな固有グループが生成されることになります。
+    <command>useradd</command> コマンドの利用時に特に追加でパラメーターを与えなければ、追加するユーザーのグループは新たな固有グループが生成されることになります。
     この動作が不適当であれば <command>useradd</command> コマンドの実行時に <parameter>-g</parameter> パラメーターか <parameter>-N</parameter> のいずれかを利用することが必要です。
     あるいは <filename>/etc/login.defs</filename> 内にある <parameter>USERGROUPS_ENAB</parameter> の設定を書き換えてください。
     詳しくは <filename>useradd(8)</filename> を参照してください。
@@ -245,7 +252,7 @@
 
 @x
     <para>Second, to change the default parameters, the file
-    <filename>/etc/default/useradd</filename> needs to be created and tailored
+    <filename>/etc/default/useradd</filename> must be created and tailored
     to suit your particular needs. Create it with:</para>
 @y
     <para>
@@ -257,7 +264,7 @@
 @z
 
 @x
-      <title><filename>/etc/default/useradd</filename> Parameter Explanations</title>
+      <title><filename>/etc/default/useradd</filename> parameter explanations</title>
 @y
       <title><filename>/etc/default/useradd</filename> のパラメーター説明</title>
 @z
@@ -265,8 +272,8 @@
 @x
           <para>This parameter sets the beginning of the group numbers used in
           the <filename>/etc/group</filename> file. The particular value 999
-          comes from the <parameter>--gid</parameter> parameter above.  You can
-          modify it to anything you desire.
+          comes from the <parameter>--gid</parameter> parameter above.  You
+          may set it to any desired value.
 @y
           <para>
           このパラメーターは <filename>/etc/group</filename> ファイルにおいて設定されるグループ ID の先頭番号を指定します。
@@ -278,11 +285,11 @@
           Note that <command>useradd</command> will never reuse a UID or GID.
           If the number identified in this parameter is used, it will use the
           next available number. Note also that if you don't have a group with
-          an ID equal to this number on your system the first time you use
+          an ID equal to this number on your system, then the first time you use
           <command>useradd</command> without the <parameter>-g</parameter>
-          parameter, you will get a message displayed on the terminal that
-          says: <computeroutput>useradd: unknown GID 999</computeroutput>,
-          although the account is correctly created. That is why we have
+          parameter, an error message will be generated&mdash;<computeroutput>useradd:
+          unknown GID 999</computeroutput>,
+          even though the account has been created correctly. That is why we
           created the group <systemitem class="groupname">users</systemitem>
           with this group ID in <xref linkend='ch-tools-createfiles'/>.</para>
 @y
@@ -298,15 +305,14 @@
 
 @x GROUP=999
           <para>This parameter causes <command>useradd</command> to create a
-          mailbox file for the newly created user. <command>useradd</command>
-          will make the group ownership of this file to the
+          mailbox file for each new user. <command>useradd</command>
+          will assign the group ownership of this file to the
           <systemitem class="groupname">mail</systemitem> group with 0660
-          permissions. If you would prefer that these mailbox files are not
-          created by <command>useradd</command>, issue the following
-          command:</para>
+          permissions. If you would rather not create these files,
+          issue the following command:</para>
 @y
           <para>
-          このパラメーターは <command>useradd</command> コマンドの実行によって、追加されるユーザー用のメールボックスに関するファイルが生成されます。
+          このパラメーターは <command>useradd</command> コマンドの実行によって、各ユーザー用のメールボックスに関するファイルが生成されます。
           <command>useradd</command> コマンドは、このファイルのグループ所有者を <systemitem
           class="groupname">mail</systemitem> (グループID 0660) に設定します。
           メールボックスに関するファイルを生成したくない場合は、以下のコマンドを実行します。
@@ -314,7 +320,7 @@
 @z
 
 @x
-    <title>Setting the root password</title>
+    <title>Setting the Root Password</title>
 @y
     <title>root パスワードの設定</title>
 @z
@@ -336,7 +342,7 @@
 
 @x
       <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Installed directories</segtitle>
       <segtitle>Installed libraries</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
@@ -351,7 +357,7 @@
         newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
         sg (link to newgrp), su, useradd, userdel, usermod,
         vigr (link to vipw), and vipw</seg>
-        <seg>/etc/default</seg>
+      <seg>/etc/default and /usr/include/shadow</seg>
         <seg>libsubid.so</seg>
 @y
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
@@ -360,7 +366,7 @@
         newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
         sg (newgrp へのリンク), su, useradd, userdel, usermod,
         vigr (vipw へのリンク), vipw</seg>
-        <seg>/etc/default</seg>
+        <seg>/etc/default, /usr/include/shadow</seg>
         <seg>libsubid.so</seg>
 @z
 
@@ -421,7 +427,7 @@
 
 @x faillog
           <para>Is used to examine the log of login failures, to set a maximum
-          number of failures before an account is blocked, or to reset the
+          number of failures before an account is blocked, and to reset the
           failure count</para>
 @y
           <para>
@@ -573,9 +579,8 @@
 @z
 
 @x nologin
-          <para>Displays a message that an account is not available; it is designed
-          to be used as the default shell for accounts that have been
-          disabled</para>
+          <para>Displays a message saying an account is not available; it is designed
+          to be used as the default shell for disabled accounts</para>
 @y
           <para>
           ユーザーアカウントが利用不能であることをメッセージ表示します。
@@ -647,7 +652,7 @@
 @z
 
 @x userdel
-          <para>Deletes the given user account</para>
+          <para>Deletes the specified user account</para>
 @y
           <para>
           指定されたユーザーアカウントを削除します。
@@ -655,8 +660,8 @@
 @z
 
 @x usermod
-          <para>Is used to modify the given user's login name, User
-          Identification (UID), shell, initial group, home directory, etc.</para>
+          <para>Is used to modify the given user's login name, user
+          identification (UID), shell, initial group, home directory, etc.</para>
 @y
           <para>
           指定されたユーザーのログイン名、UID  (User Identification)、利用シェル、初期グループ、ホームディレクトリなどを変更します。
@@ -682,9 +687,9 @@
 @z
 
 @x libsubid
-          <para>library for process subordinate id ranges for users</para>
+          <para>library to handle subordinate id ranges for users and groups</para>
 @y
           <para>
-          ユーザーに対するサブ ID 範囲を処理するライブラリ。
+          ユーザーに対するサブ ID 範囲を取り扱うライブラリ。
           </para>
 @z

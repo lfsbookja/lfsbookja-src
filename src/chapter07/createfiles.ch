@@ -16,15 +16,15 @@
 @z
 
 @x
-  <para>Historically, Linux maintains a list of the mounted file systems in the
+  <para>Historically, Linux maintained a list of the mounted file systems in the
   file <filename>/etc/mtab</filename>. Modern kernels maintain this list
   internally and expose it to the user via the <filename
   class="directory">/proc</filename> filesystem. To satisfy utilities that
-  expect the presence of <filename>/etc/mtab</filename>, create the following
+  expect to find <filename>/etc/mtab</filename>, create the following
   symbolic link:</para>
 @y
   <para>
-  Linux のこれまでの経緯として、マウントされているファイルシステムの情報は <filename>/etc/mtab</filename> ファイルに保持されています。
+  Linux のこれまでの経緯として、マウントされているファイルシステムの情報は <filename>/etc/mtab</filename> ファイルに保持されてきました。
   最新の Linux であれば、内部的にこのファイルを管理し、ユーザーに対しては <filename
   class="directory">/proc</filename> ファイルシステムを通じて情報提示しています。
   <filename>/etc/mtab</filename> ファイルの存在を前提としているプログラムが正常動作するように、以下のシンボリックリンクを作成します。
@@ -83,13 +83,13 @@
 @x
   <para>The created groups are not part of any standard&mdash;they are groups
   decided on in part by the requirements of the Udev configuration in Chapter
-  9, and in part by common convention employed by a number of existing Linux
+  9, and in part by common conventions employed by a number of existing Linux
   distributions. In addition, some test suites rely on specific users or
   groups.  The Linux Standard Base (LSB, available at <ulink
   url="https://refspecs.linuxfoundation.org/lsb.shtml"/>) only recommends that,
   besides the group <systemitem class="groupname">root</systemitem> with a
   Group ID (GID) of 0, a group <systemitem class="groupname">bin</systemitem>
-  with a GID of 1 be present. The GID of 5 is widely used for
+  with a GID of 1 be present. The GID of 5 is widely used for the
   <systemitem class="groupname">tty</systemitem> group, and the number 5 is
   also used in <phrase revision="systemd">systemd</phrase>
   <phrase revision="sysv"><filename>/etc/fstab</filename></phrase> for the
@@ -120,7 +120,7 @@
   or the parent user namespace, but <quote>do not exist</quote> on the local
   machine or in the separate namespace).  We assign
   <systemitem class="username">nobody</systemitem> and
-  <systemitem class="groupname">nogroup</systemitem> for it to avoid an
+  <systemitem class="groupname">nogroup</systemitem> to avoid an
   unnamed ID.  But other distros may treat this ID differently, so any
   portable program should not depend on this assignment.</para>
 @y

@@ -30,14 +30,6 @@
 @z
 
 @x
-    <para>Now fix a programming error identified upstream:</para>
-@y
-    <para>
-    アップストリームが認識しているプログラミングエラーを修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Gawk for compilation:</para>
 @y
     <para>&PreparePackage1;Gawk&PreparePackage2;</para>
@@ -59,6 +51,21 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
+@z
+
+@x
+      <title>The meaning of the overridden make variable:</title>
+@y
+      <title>上書きされる make 変数の意味</title>
+@z
+
+@x LN='ln -f'
+           <para>This variable ensures that the previous hard link installed
+           in <xref linkend='ch-tools-gawk'/> is updated here.</para>
+@y
+           <para>
+           この変数は <xref linkend='ch-tools-gawk'/> においてインストールしたハードリンクを、ここで更新するものです。
+           </para>
 @z
 
 @x
@@ -84,14 +91,14 @@
 @z
 
 @x
-        <seg>awk (link to gawk), gawk, and awk-&gawk-version;</seg>
+        <seg>awk (link to gawk), gawk, and gawk-&gawk-version;</seg>
         <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, intdiv.so, ordchr.so,
         readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
         and time.so (all in /usr/lib/gawk)</seg>
         <seg>/usr/lib/gawk, /usr/libexec/awk, /usr/share/awk, and
         /usr/share/doc/gawk-&gawk-version;</seg>
 @y
-        <seg>awk (gawk へのリンク), gawk, awk-&gawk-version;</seg>
+        <seg>awk (gawk へのリンク), gawk, gawk-&gawk-version;</seg>
         <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, intdiv.so, ordchr.so,
         readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
         time.so (すべて /usr/lib/gawk ディレクトリ内)</seg>

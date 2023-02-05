@@ -12,11 +12,11 @@
 @x
     <para>The <application>Tcl</application> package contains the Tool Command Language,
     a robust general-purpose scripting language. The <application>Expect</application> package
-    is written in the <application>Tcl</application> language.</para>
+    is written in <application>Tcl</application> (pronounced "tickle").</para>
 @y
     <para>
     <application>Tcl</application> パッケージは、堅牢で汎用的なスクリプト言語であるツールコマンド言語 (Tool Command Language) を提供します。
-    <application>Expect</application> パッケージは <application>Tcl</application> 言語によって書かれています。
+    <application>Expect</application> パッケージは <application>Tcl</application>（発音は "tickle"）によって書かれています。
     </para>
 @z
 
@@ -28,7 +28,7 @@
 
 @x
     <para>This package and the next two (Expect and DejaGNU) are
-    installed to support running the test suites for binutils and GCC and other
+    installed to support running the test suites for Binutils, GCC and other
     packages.  Installing three packages for testing purposes may seem
     excessive, but it is very reassuring, if not essential, to know that the
     most important tools are working properly.</para>
@@ -62,9 +62,9 @@
 
 @x
     <para>The various <quote>sed</quote> instructions after the
-    <quote>make</quote> command removes references to the build directory from
-    the configuration files and replaces them with the install directory.
-    This is not mandatory for the remainder of LFS, but may be needed in case a
+    <quote>make</quote> command remove references to the build directory from
+    the configuration files and replace them with the install directory.
+    This is not mandatory for the remainder of LFS, but may be needed if a
     package built later uses Tcl.</para>
 @y
     <para>

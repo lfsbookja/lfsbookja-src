@@ -24,14 +24,35 @@
 @x
         If your system has UEFI support and you wish to boot LFS with UEFI,
         you can skip this package in LFS,
-        and install GRUB with UEFI support (and its dependencies) following
-        <ulink url="&blfs-book;postlfs/grub-efi.html">the BLFS page</ulink>
-        at the end of this chapter.
+        and install GRUB with UEFI support (and its dependencies) by following
+        the instructions on
+        <ulink url="&blfs-book;postlfs/grub-efi.html">the BLFS page</ulink>.
 @y
         システムが UEFI をサポートしていて、これを使って LFS を起動しようとする場合は、LFS における本パッケージは省略することができます。
-        その場合は本章の終わりに、<ulink
+        その場合は <ulink
         url="&blfs-book;postlfs/grub-efi.html">BLFS ページ</ulink> に従って UEFI 対応の GRUB
         (およびその依存パッケージ) をインストールしてください。
+@z
+
+@x
+      <para>Unset any environment variables which may affect the build:</para>
+@y
+      <para>
+      ビルドに影響を与える可能性のある環境変数をリセットします。
+      </para>
+@z
+
+@x
+      <para>Don't try <quote>tuning</quote> this package with custom
+      compilation flags. This package is a bootloader. The low-level
+      operations in the source code may be broken by
+      aggressive optimization.</para>
+@y
+      <para>
+      このパッケージをビルドする際に、独自のコンパイルフラグを使って<quote>チューニング</quote>することは止めてください。
+      このパッケージはブートローダーです。
+      ソースコード内には低レベル操作が用いられており、過激な最適化フラグによってはその機能を壊してしまうかもしれないためです。
+      </para>
 @z
 
 @x
@@ -48,7 +69,7 @@
 
 @x --disable-werror
           <para>This allows the build to complete with warnings introduced
-          by more recent Flex versions.</para>
+          by more recent versions of Flex.</para>
 @y
           <para>
           本オプションは、最新の flex によって警告が出力されても、ビルドを成功させるために指定します。
@@ -57,10 +78,10 @@
 
 @x --disable-efiemu
           <para>This option minimizes what is built by disabling a feature and
-          testing programs not needed for LFS.</para>
+          eliminating some test programs not needed for LFS.</para>
 @y
           <para>
-          このオプションは LFS にとって不要な機能やテストプログラムをビルドしないようにします。
+          このオプションは LFS にとって不要な機能を無効にし、一部のテストプログラムを実行しないようにした上で、ビルドを行います。
           </para>
 @z
 
@@ -89,7 +110,7 @@
 @z
 
 @x
-  <para>Using GRUB to make your LFS system bootable will be discussed in 
+  <para>Making your LFS system bootable with GRUB will be discussed in
   <xref linkend="ch-bootable-grub"/>.</para>
 @y
   <para>
@@ -151,13 +172,15 @@
 % @z
 % 
 @x grub-bios-setup
-          <para>Is a helper program for grub-install</para>
+          <para>Is a helper program for <command>grub-install</command></para>
 @y
-          <para>grub-install に対するヘルパープログラム。</para>
+          <para>
+          <command>grub-install</command> に対するヘルパープログラム。
+          </para>
 @z
 
 @x grub-editenv
-          <para>A tool to edit the environment block</para>
+          <para>Is a tool to edit the environment block</para>
 @y
           <para>
           環境ブロック (environment block) を編集するツール。
@@ -165,15 +188,15 @@
 @z
 
 @x grub-file
-          <para>Checks if FILE is of the specified type.</para>
+          <para>Checks to see if the given file is of the specified type</para>
 @y
           <para>
-          FILE が指定されたタイプであるかどうかをチェックします。
+          指定されたファイルが指定されたタイプであるかどうかをチェックします。
           </para>
 @z
 
 @x grub-fstest
-          <para>Tool to debug the filesystem driver</para>
+          <para>Is a tool to debug the filesystem driver</para>
 @y
           <para>
           ファイルシステムドライバーをデバッグするツール。
@@ -181,15 +204,15 @@
 @z
 
 @x grub-glue-efi
-          <para>Glue 32-bit and 64-bit binary into Apple universal one.</para>
+          <para>Glues 32-bit and 64-bit binaries into a single file (for Apple machines)</para>
 @y
           <para>
-          32 ビットおよび 64 ビットの実行バイナリを Apple ユニバーサル形式に結合します。
+          32 ビットおよび 64 ビットの実行バイナリを単一ファイル（Apple マシン向け）に結合します。
           </para>
 @z
 
 @x grub-install
-          <para>Install GRUB on your drive</para>
+          <para>Installs GRUB on your drive</para>
 @y
           <para>
           指定したドライブに GRUB をインストールします。
@@ -197,7 +220,7 @@
 @z
 
 @x grub-kbdcomp
-          <para>Script that converts an xkb layout into one recognized by
+          <para>Is a script that converts an xkb layout into one recognized by
           GRUB</para>
 @y
           <para>
@@ -206,9 +229,13 @@
 @z
 
 @x grub-macbless
-          <para>Mac-style bless on HFS or HFS+ files</para>
+          <para>Is the Mac-style bless for HFS or HFS+ file systems (<command>bless</command>
+          is peculiar to Apple machines; it makes a device bootable)</para>
 @y
-          <para>HFS または HFS+ ファイルに対する Mac 風の bless</para>
+          <para>
+          HFS または HFS+ ファイルシステムに対する Mac 風の bless。
+          （<command>bless</command> は Apple マシン専用です。デバイスをブータブルにします。）
+          </para>
 @z
 
 @x grub-menulst2cfg
@@ -221,10 +248,10 @@
 @z
 
 @x grub-mkconfig
-          <para>Generate a grub config file</para>
+          <para>Generates a <filename>grub.cfg</filename> file</para>
 @y
           <para>
-          GRUB の設定ファイルを生成します。
+          <filename>grub.cfg</filename> ファイルを生成します。
           </para>
 @z
 
@@ -237,7 +264,7 @@
 % @z
 
 @x grub-mkimage
-          <para>Make a bootable image of GRUB</para>
+          <para>Makes a bootable image of GRUB</para>
 @y
           <para>
           GRUB のブートイメージ (bootable image) を生成します。
@@ -278,9 +305,10 @@
 @z
 
 @x grub-mkrescue
-          <para>Make a bootable image of GRUB suitable for a floppy disk or CDROM/DVD</para>
+          <para>Makes a bootable image of GRUB suitable for a floppy disk,
+          CDROM/DVD, or a USB drive</para>
 @y
-          <para>フロッピーディスクや CDROM/DVD 用の GRUB のブートイメージを生成します。</para>
+          <para>フロッピーディスク、CDROM/DVD、USB ドライブ向けの GRUB のブートイメージを生成します。</para>
 @z
 
 @x grub-mkstandalone
@@ -290,13 +318,13 @@
 @z
 
 @x grub-ofpathname
-          <para>Is a helper program that prints the path of a GRUB device</para>
+          <para>Is a helper program that prints the path to a GRUB device</para>
 @y
           <para>GRUB デバイスのパスを出力するヘルパープログラム。</para>
 @z
 
 @x grub-probe
-          <para>Probe device information for a given path or device</para>
+          <para>Probes device information for a given path or device</para>
 @y
           <para>
           指定されたパスやデバイスに対するデバイス情報を検証 (probe) します。
@@ -313,7 +341,7 @@
 @z
 
 @x grub-render-label
-          <para>Render Apple .disk_label for Apple Macs</para>
+          <para>Renders Apple .disk_label for Apple Macs</para>
 @y
           <para>
           Apple Mac に対して Apple .disk_label を提供します。
@@ -321,7 +349,7 @@
 @z
 
 @x grub-script-check
-          <para>Checks GRUB configuration script for syntax errors</para>
+          <para>Checks the GRUB configuration script for syntax errors</para>
 @y
           <para>
           GRUB の設定スクリプトにおける文法をチェックします。
@@ -343,7 +371,7 @@
 @z
 
 @x grub-syslinux2cfg
-          <para>Transform a syslinux config file into grub.cfg format</para>
+          <para>Transforms a syslinux config file into grub.cfg format</para>
 @y
           <para>
           syslinux の設定ファイルを grub.cfg フォーマットに変換します。

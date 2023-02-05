@@ -34,24 +34,24 @@
 @z
 
 @x
-    <para>Which interfaces are brought up and down by the network script
-    usually depends on the files in <filename
-    class="directory">/etc/sysconfig/</filename>.  This directory should
+    <para>The files in <filename class="directory">/etc/sysconfig/</filename>
+    usually determine which interfaces are brought up and down by the network
+    script.  This directory should
     contain a file for each interface to be configured, such as
-    <filename>ifconfig.xyz</filename>, where <quote>xyz</quote> should describe
+    <filename>ifconfig.xyz</filename>, where <quote>xyz</quote> describes
     the network card.  The interface name (e.g. eth0) is usually appropriate.
-    Inside this file are attributes to this interface, such as its IP
-    address(es), subnet masks, and so forth.  It is necessary that the stem of
-    the filename be <emphasis>ifconfig</emphasis>.</para>
+    Each file contains the attributes of one interface, such as its IP
+    address(es), subnet masks, and so forth.  The stem of
+    the filename must be <emphasis>ifconfig</emphasis>.</para>
 @y
     <para>
-    ネットワークインターフェースの起動、停止は <filename
-    class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルによって決まります。。
+    <filename
+    class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルは、どのネットワークインターフェースがネットワークスクリプトにより起動、停止されるかを取り決めます。
     このディレクトリには、設定を行ないたい各ネットワークインターフェースに対するファイル <filename>ifconfig.xyz</filename> を準備します。
     <quote>xyz</quote>はネットワークカードを指します。
     通常はインターフェース名（例えばeth0）を用います。
-    そしてこのファイルにはネットワークインターフェースの属性、つまり IP アドレスやサブネットマスクなどを定義します。
-    ファイルベース名は <emphasis>ifconfig</emphasis> とすることが必要です。
+    そして各ファイルには、1 つのネットワークインターフェースの属性、つまり IP アドレスやサブネットマスクなどを定義します。
+    ファイルベース名は <emphasis>ifconfig</emphasis> とします。
     </para>
 @z
 
@@ -76,10 +76,10 @@
       <para>The interface names depend on the implementation and
       configuration of the udev daemon running on the system.  The udev
       daemon for LFS (installed in <xref linkend="ch-system-eudev"/>) will
-      not run until the LFS system is booted.  So it's unreliable to
-      determine the interface names being used in LFS system by running
+      not run until the LFS system is booted.  So the interface names 
+      in the LFS system cannot always be determined by running
       those commands on the host distro,
-      <emphasis>even though in the chroot environment</emphasis>.</para>
+      <emphasis>even in the chroot environment</emphasis>.</para>
 @y
       <para>
       インターフェース名は、システム上で起動している udev デーモンの実装や設定に依存します。
@@ -99,26 +99,26 @@
 @z
 
 @x
-    <para>The values in italics must be changed in every file to match
-    the proper setup.</para>
+    <para>The values in italics must be changed in each file, to set
+    the interfaces up correctly.</para>
 @y
     <para>
-    イタリックで示す変数の値は、各ファイルごとに適切なものに設定してください。
+    イタリックで示す変数の値は、各ファイルごとにインターフェースが起動するように適切に設定してください。
     </para>
 @z
 
 @x
     <para>If the <envar>ONBOOT</envar> variable is set to <quote>yes</quote> the
     System V network script will bring up the Network Interface Card (NIC) during
-    the system boot process. If set to anything but <quote>yes</quote> the NIC
-    will be ignored by the network script and not be automatically brought up.
-    The interface can be manually started or stopped with the
+    the system boot process. If set to anything besides <quote>yes</quote>, the NIC
+    will be ignored by the network script and will not be started automatically.
+    Interfaces can be manually started or stopped with the
     <command>ifup</command> and <command>ifdown</command> commands.</para>
 @y
     <para>
     <envar>ONBOOT</envar> 変数を<quote>yes</quote>に設定した場合、システム起動時に System V ネットワークスクリプトがネットワークインターフェースカード (network
     interface card; NIC) を起動します。
-    <quote>yes</quote>以外に設定すると、ネットワークスクリプトからの NIC の起動がなくなり、NIC は自動では起動しなくなります。
+    <quote>yes</quote>以外に設定すると、ネットワークスクリプトから NIC は無視され、NIC が自動的に起動することはなくなります。
     ネットワークインターフェースは <command>ifup</command> や <command>ifdown</command> といったコマンドを使って、起動や停止を行うことができます。
     </para>
 @z
@@ -165,11 +165,11 @@
 @z
 
 @x
-    <para>The <envar>PREFIX</envar> variable contains the number of
-    bits used in the subnet. Each octet in an IP address is 8 bits. If the
-    subnet's netmask is 255.255.255.0, then it is using the first three octets
+    <para>The <envar>PREFIX</envar> variable specifies the number of
+    bits used in the subnet. Each segment of an IP address is 8 bits. If the
+    subnet's netmask is 255.255.255.0, then it is using the first three segments
     (24 bits) to specify the network number. If the netmask is 255.255.255.240,
-    it would be using the first 28 bits.  Prefixes longer than 24 bits are
+    the subnet is using the first 28 bits.  Prefixes longer than 24 bits are
     commonly used by DSL and cable-based Internet Service Providers (ISPs).
     In this example (PREFIX=24), the netmask is 255.255.255.0. Adjust the
     <envar>PREFIX</envar> variable according to your specific subnet.
@@ -177,9 +177,9 @@
 @y
     <para>
     <envar>PREFIX</envar> 変数はサブネットマスクにて用いられるビット数を指定します。
-    IP アドレスの各オクテット (octet) は 8 ビットで構成されます。
-    例えばサブネットマスクが 255.255.255.0 である場合、ネットワーク番号 (network number) を特定するには最初の三つのオクテット (24ビット) が用いられることを意味します。
-    もし 255.255.255.240 であるなら、最初の 28 ビットということになります。
+    IP アドレスの各セグメントは 8 ビットで構成されます。
+    例えばサブネットマスクが 255.255.255.0 である場合、ネットワーク番号 (network number) を特定するには最初の 3 つのセグメント (24ビット) が用いられることを意味します。
+    もし 255.255.255.240 であれば、サブネットは最初の 28 ビットということになります。
     24 ビットを超えるプレフィックスは、通常は DSL やケーブルを用いたインターネットサービスプロバイダー (Internet Service Provider; ISP) がよく利用しています。
     上の例 (PREFIX=24) では、サブネットマスクは 255.255.255.0 となります。
     <envar>PREFIX</envar> 変数の値は、ネットワーク環境に応じて変更してください。
@@ -252,7 +252,7 @@
 @z
 
 @x
-    <title>Configuring the system hostname</title>
+    <title>Configuring the System Hostname</title>
 @y
     <title>ホスト名の設定</title>
 @z
@@ -286,7 +286,7 @@
 @x
      <para><replaceable>&lt;lfs&gt;</replaceable> needs to be replaced with the
      name given to the computer. Do not enter the Fully Qualified Domain Name
-     (FQDN) here. That information is put in the
+     (FQDN) here. That information goes in the
      <filename>/etc/hosts</filename> file.</para>
 @y
      <para>

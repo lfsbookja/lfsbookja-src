@@ -10,11 +10,11 @@
 @z
 
 @x
-    <para>The sysklogd package contains programs for logging system messages,
-    such as those given by the kernel when unusual things happen.</para>
+    <para>The Sysklogd package contains programs for logging system messages,
+    such as those emitted by the kernel when unusual things happen.</para>
 @y
     <para>
-    sysklogd パッケージは、例えばカーネルが異常発生時に出力するログのような、システムログメッセージを取り扱うプログラムを提供します。
+    Sysklogd パッケージは、例えばカーネルが異常発生時に出力するログのような、システムログメッセージを取り扱うプログラムを提供します。
     </para>
 @z
 
@@ -25,8 +25,8 @@
 @z
 
 @x
-    <para>First, fix problems that causes a segmentation fault under
-    some conditions in klogd and fix an obsolete program construct:</para>
+    <para>First, fix a problem that causes a segmentation fault in klogd
+    under some conditions, and fix an obsolete program construct:</para>
 @y
     <para>
     特定の条件において klogd がセグメンテーションフォールトを起こすため、この問題を修正します。

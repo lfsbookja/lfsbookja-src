@@ -123,7 +123,7 @@
 @z
 
 @x fstab-decode
-          <para>Run a command with fstab-encoded arguments</para>
+          <para>Runs a command with fstab-encoded arguments</para>
 @y
           <para>
           fstab 形式の (fstab-encoded の) 引数とともにコマンドを実行します。
@@ -132,10 +132,10 @@
 
 @x halt
           <para>Normally invokes <command>shutdown</command> with the
-          <parameter>-h</parameter> option, except when already in run-level 0,
-          then it tells the kernel to halt the system; it notes in the
-          file <filename>/var/log/wtmp</filename> that the system is being
-          brought down</para>
+          <parameter>-h</parameter> option, but when already in run-level 0,
+          it tells the kernel to halt the system; it notes in the
+          file <filename>/var/log/wtmp</filename> that the system is 
+          going down</para>
 @y
           <para>
           ランレベルが既に 0 ではない通常の起動状態の場合に <command>shutdown</command> をオプション <parameter>-h </parameter> をつけて実行します。
@@ -146,8 +146,8 @@
 
 @x init
           <para>The first process to be started when the kernel has initialized
-          the hardware which takes over the boot process and starts all the
-          proceses specified in its configuration file</para>
+          the hardware; it takes over the boot process and starts all the
+          processes specified in its configuration file</para>
 @y
           <para>
           カーネルがハードウェアを初期化した後に、最初に起動するプロセスです。
@@ -157,7 +157,7 @@
 
 @x killall5
           <para>Sends a signal to all processes, except the processes in its own
-          session so it will not kill its parent shell</para>
+          session; it will not kill its parent shell</para>
 @y
           <para>
           プロセスすべてに対してシグナルを送信します。

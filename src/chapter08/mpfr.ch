@@ -45,10 +45,10 @@
 @z
 
 @x
-    <para>Test the results and ensure that all tests passed:</para>
+    <para>Test the results and ensure that all 183 tests passed:</para>
 @y
     <para>
-    すべてのテストが正常に完了していることを確認してください。
+    183 個のテストすべてが正常に完了していることを確認してください。
     </para>
 @z
 

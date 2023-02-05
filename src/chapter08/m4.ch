@@ -78,7 +78,7 @@
           <command>m4</command> has built-in functions for including named
           files, running Unix commands, performing integer arithmetic,
           manipulating text, recursion, etc. The <command>m4</command> program
-          can be used either as a front-end to a compiler or as a macro processor
+          can be used either as a front end to a compiler or as a macro processor
           in its own right</para>
 @y
           <para>

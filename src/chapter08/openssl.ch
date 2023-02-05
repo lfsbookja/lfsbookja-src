@@ -97,13 +97,13 @@
         You should update OpenSSL when a new version which fixes vulnerabilities
         is announced.  Since OpenSSL 3.0.0, the OpenSSL versioning scheme
         follows the MAJOR.MINOR.PATCH format.  API/ABI compatibility
-        are guaranteed for the same MAJOR version number.  Because LFS
+        is guaranteed for the same MAJOR version number.  Because LFS
         installs only the shared libraries, there is no need to recompile
         packages which link to
         <filename class="libraryfile">libcrypto.so</filename> or
         <filename class="libraryfile">libssl.so</filename>
-        <emphasis>when upgrading to a version with MAJOR version number
-        unchanged</emphasis>.
+        <emphasis>when upgrading to a version with the same MAJOR version
+        number</emphasis>.
 @y
         ぜい弱性への対処を行った新バージョンが公開されたら、OpenSSL をアップデートすることになります。
         OpenSSL 3.0.0 以降では、バージョンのつけ方が MAJOR.MINOR.PATCH という形式になりました。

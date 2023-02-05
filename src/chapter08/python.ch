@@ -12,11 +12,13 @@
 @x
     <para>The Python 3 package contains the Python development environment. It
     is useful for object-oriented programming, writing scripts, prototyping
-    large programs, or developing entire applications.</para>
+    large programs, and developing entire applications. Python is an interpreted
+    computer language.</para>
 @y
     <para>
     Python 3 パッケージは Python 開発環境を提供します。
     オブジェクト指向プログラミング、スクリプティング、大規模プログラムのプロトタイピング、アプリケーション開発などに有用なものです。
+    Python はインタープリター言語です。
     </para>
 @z
 
@@ -39,7 +41,7 @@
 @z
 
 @x --with-system-expat
-        <para>This switch enables linking against system version of
+        <para>This switch enables linking against the system version of
         <application>Expat</application>.</para>
 @y
         <para>
@@ -48,19 +50,23 @@
 @z
 
 @x --with-system-ffi
-        <para>This switch enables linking against system version of
-        <application>libffi</application>.</para>
+        <para>This switch enables linking against the system version of
+        <filename class='libraryfile'>libffi.so</filename>.</para>
 @y
         <para>
-        本スイッチは、システムにインストールされている <application>libffi</application> をリンクすることを指示します。
+        本スイッチは、システムにインストールされている <filename class='libraryfile'>libffi.so</filename> をリンクすることを指示します。
         </para>
 @z
 
 @x --enable-optimizations
-        <para>This switch enables stable, but expensive, optimizations.</para>
+        <para>This switch enables extensive, but time-consuming, optimization
+        steps. The interpreter is built twice; tests performed on the first 
+        build are used to improve the optimized final version.</para>
 @y
         <para>
-        本スイッチは安定的ではあるものの高くつく最適化を有効にします。
+        本スイッチは、拡張的ではあるものの高くつく最適化を有効にします。
+        インタープリターは二度ビルドされます。
+        そこでは 1 回めのビルドにて実施されるテストを用いて、最適化された最終バージョンが適正化されます。
         </para>
 @z
 
@@ -73,7 +79,7 @@
 @x
     <para>Running the tests at this point is not recommended.  The
     tests are known to hang indefinitely in the partial LFS environment.
-    If desired, the tests can be rerun at the end of this chapter or
+    If desired, the tests can be rerun at the end of this chapter, or
     when Python 3 is reinstalled in BLFS.  To run the tests anyway,
     issue <command>make test</command>.</para>
 @y
@@ -92,73 +98,89 @@
 @z
 
 @x
-    <para>In several places we use the <command>pip3</command> command to
+    <para>We use the <command>pip3</command> command to
     install Python 3 programs and modules for all users as
-    <systemitem class='username'>root</systemitem>. This conflicts
-    with the Python developers recommendation to install packages into a
-    virtual environment or the home directory of a regular user (by running
-    <command>pip3</command> as this user). To this end, a multi-line warning
-    is written when using <command>pip3</command> as the
-    <systemitem class='username'>root</systemitem> user.  The main reason
-    of this recommendation is for avoiding a conflict with the system
-    package manager (<command>dpkg</command> for example), but LFS does not
-    have a system-wide package manager so this is not a problem.  And,
-    <command>pip3</command> will attempt to check for a new version of
-    itself whenever it's run.  As domain name resolving is not configured
-    yet in LFS chroot environment, it will fail to check for a new version
-    and produce a warning.  Once we boot the LFS system and set up network
-    connection, it will then produce a warning telling the user to update it
-    from a pre-built wheel on PyPI if any new version is available.  But LFS
-    consider <command>pip3</command> a part of Python 3 so it should not be
-    updated separately, and an update from a pre-built wheel will deviate
-    from our purpose to build a Linux system from source code.  So the
-    warning for a new <command>pip3</command> version should be ignored as
-    well. If desired, suppress these warnings by running the following
-    commands:</para>
+    <systemitem class='username'>root</systemitem> in several places in this book.
+    This conflicts with the Python developers' recommendation: to install packages into a
+    virtual environment, or into the home directory of a regular user (by running
+    <command>pip3</command> as this user). A multi-line warning
+    is triggered whenever <command>pip3</command> is issued by the
+    <systemitem class='username'>root</systemitem> user.</para>
 @y
     <para>
-    いくつかの場面において Python 3 プログラムやモジュールをインストールする際には、全ユーザー向けのインストールを行うために <systemitem
+    Python 3 プログラムやモジュールをインストールする際には、全ユーザー向けのインストールを行うために <systemitem
     class='username'>root</systemitem> ユーザーになって <command>pip3</command> コマンドを用いています。
     このことは Python 開発者が推奨している、仮想環境内にて一般ユーザーにより（そのユーザーが <command>pip3</command> を実行することで）パッケージビルドを行う方法とは相容れないものです。
     これを行っているため、<systemitem
     class='username'>root</systemitem> ユーザーとして <command>pip3</command> を用いると、警告メッセージが複数出力されます。
+    </para>
+@z
+
+@x
+    <para>The main reason
+    for the recommendation is to avoid conflicts with the system's
+    package manager (<command>dpkg</command>, for example). LFS does not
+    have a system-wide package manager, so this is not a problem.  Also,
+    <command>pip3</command> will check for a new version of
+    itself whenever it's run.  Since domain name resolution is not yet configured
+    in the LFS chroot environment, <command>pip3</command> cannot check
+    for a new version of itself, and will
+    produce a warning. </para>
+@y
+    <para>
     開発者がなぜその方法を推奨しているかというと、システムパッケージマネージャー（たとえば <command>dpkg</command>）などと衝突が発生するからです。
     LFS ではシステムワイドなパッケージマネージャーを利用していないため、このことは問題となりません。
     また <command>pip3</command> そのものが、自分の最新版が存在していないかどうかを実行時に確認します。
     LFS の chroot 環境においては、ドメイン名解決がまだ設定されていないので、最新版の確認は失敗して警告が出力されます。
-    LFS システムを再起動してネットワーク設定を行えば、最新版の存在時には、あらかじめビルドされていた wheel を PyPI から更新するような警告メッセージが示されます。
+    </para>
+@z
+
+@x
+    <para>After we boot the LFS system and set up a network connection,
+    a different warning will be issued, telling the user to update <command>pip3</command>
+    from a pre-built wheel on PyPI (whenever a new version is available).  But LFS
+    considers <command>pip3</command> to be a part of Python 3, so it should not be
+    updated separately. Also, an update from a pre-built wheel would deviate
+    from our objective: to build a Linux system from source code.  So the
+    warning about a new version of <command>pip3</command> should be ignored as
+    well. If you wish, you can suppress all these warnings by running the following
+    command, which creates a configuration file:</para>
+@y
+    <para>
+    LFS システムを再起動してネットワーク設定を行えば、（最新版の入手可能時にはいつでも）あらかじめビルドされていた wheel を PyPI から更新するような警告メッセージが示されます。
     もっとも LFS では <command>pip3</command> を Python 3 の一部として考えるので、個別に更新しないでください。
     したがってあらかじめビルドされた wheel を更新することは、ソースコードから Linux システムをビルドするという目的から逸脱してしまいます。
-    このことから、最新版の <command>pip3</command> を求める警告も無視してください。
+    このことから、<command>pip3</command> の最新版を求める警告は無視してください。
     警告メッセージを省略したい場合は、以下のコマンドを実行します。
+    ここでは設定ファイルを生成します。
     </para>
 @z
 
 @x
         In LFS and BLFS we normally build and install Python modules with the
-        <command>pip3</command> command.  Please take care that the
-        <command>pip3 install</command> commands in both the books should be
-        run as the &root; user unless it's for a Python virtual environment.
-        Running a <command>pip3 install</command> as a non-&root; user may seem
-        to work fine, but it will cause the installed module to be inaccessible
+        <command>pip3</command> command.  Please be sure that the
+        <command>pip3 install</command> commands in both books are
+        run as the &root; user (unless it's for a Python virtual environment).
+        Running <command>pip3 install</command> as a non-&root; user may seem
+        to work, but it will cause the installed module to be inaccessible
         by other users.
 @y
         LFS や BLFS においては通常、Python モジュールのビルドとインストールには <command>pip3</command> コマンドを用いています。
-        この両ブックにおいて実行する <command>pip3 install</command> コマンドは、Python 仮想環境内でない場合には &root; ユーザーで実行するようにしてください。
+        この両ブックにおいて実行する <command>pip3 install</command> コマンドは、（Python 仮想環境内でない場合には） &root; ユーザーで実行するようにしてください。
         &root; ユーザー以外によって <command>pip3 install</command> を実行しても問題なく動作するように見えるかもしれませんが、インストールしたモジュールが別のユーザーからはアクセスできない事態を作り出してしまいます。
 @z
 
 @x
         <command>pip3 install</command> will not reinstall an already installed
-        module by default.  For using the <command>pip3 install</command>
+        module automatically.  When using the <command>pip3 install</command>
         command to upgrade a module (for example, from meson-0.61.3 to
         meson-0.62.0), insert the option <parameter>--upgrade</parameter> into
-        the command line.  If it's really necessary to downgrade a module or
+        the command line.  If it's really necessary to downgrade a module, or
         reinstall the same version for some reason, insert
         <parameter>--force-reinstall --no-deps</parameter> into the command
         line.
 @y
-        <command>pip3 install</command> はデフォルトでは、すでにインストールされているモジュールを再インストールすることは行いません。
+        <command>pip3 install</command> は、すでにインストールされているモジュールを自動的に再インストールすることは行いません。
         <command>pip3 install</command> コマンドを使ってモジュールのアップグレードを行う（たとえば meson-0.61.3 から meson-0.62.0 にするような場合）には、コマンドラインに <parameter>--upgrade</parameter> オプションを含めてください。
         またモジュールのダウングレードや再インストールが必要となる理由が確実にあるのであれば、コマンドラインに <parameter>--force-reinstall --no-deps</parameter> を含めて実行してください。
 @z
@@ -184,7 +206,7 @@
 @z
 @x
         <para>Ensure the installed files have the correct ownership and
-        permissions.  Without these options, using <application>tar</application>
+        permissions.  Without these options, <application>tar</application>
         will install the package files with the upstream creator's values.
         </para>
 @y
@@ -254,8 +276,8 @@
 @x idle3
             is a wrapper script that opens a <application>Python</application>
             aware GUI editor. For this script to run, you must have installed
-            <application>Tk</application> before Python so that the Tkinter
-            Python module is built
+            <application>Tk</application> before Python, so that the Tkinter
+            Python module is built.
 @y
             <application>Python</application> に特化した GUI エディターを起動するラッパースクリプト。
             このスクリプトを実行するには、Python より前に <application>Tk</application> をインストールして、Python モジュールである Tkinter をビルドしておく必要があります。
@@ -263,7 +285,7 @@
 
 @x pip3
             The package installer for Python. You can use pip to install
-            packages from Python Package Index and other indexes
+            packages from Python Package Index and other indexes.
 @y
             Python のパッケージインストーラー。
             この pip を使って Python Package Index などのインデックスサイトから各種パッケージをインストールできます。
@@ -276,8 +298,8 @@
 @z
 
 @x python3
-            is an interpreted, interactive, object-oriented programming
-            language
+            is the interpreter for Python, an interpreted, interactive, 
+            object-oriented programming language
 @y
-            インタープリターであり、対話的なオブジェクト指向プログラミング言語。
+            Python インタープリターであり、対話的なオブジェクト指向プログラミング言語。
 @z

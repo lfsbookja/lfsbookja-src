@@ -22,7 +22,7 @@
   You could use your own user name, but to make it easier to set up a clean
   working environment, we will create a new user called <systemitem
   class="username">lfs</systemitem> as a member of a new group (also named
-  <systemitem class="groupname">lfs</systemitem>) and log in as this user during
+  <systemitem class="groupname">lfs</systemitem>) and run commands as &lfs-user; during
   the installation process. As <systemitem class="username">root</systemitem>,
   issue the following commands to add the new user:</para>
 @y
@@ -32,7 +32,7 @@
   あなた自身のユーザーを利用するのでも構いませんが、全く新しいユーザー環境として <systemitem
   class="username">lfs</systemitem> というユーザーを作成するのが分かりやすいでしょう。
   所属するグループも <systemitem class="groupname">lfs</systemitem> という名で作成します。
-  ビルド作業においてはこのユーザーによりログインしていきます。
+  ビルド作業においてはこの &lfs-user; ユーザーによりコマンド実行していきます。
   そこで <systemitem class="username">root</systemitem> ユーザーになって、新たなユーザーを追加する以下のコマンドを実行します。
   </para>
 @z
@@ -82,26 +82,24 @@
 @z
 
 @x
-        <para>This is the actual name for the created user.</para>
+        <para>This is the name of the new user.</para>
 @y
         <para>
-        生成するユーザーの名称を与えます。
+        新規ユーザーの名称を与えます。
         </para>
 @z
 
 @x
-  <para>To enable logging in as <systemitem class="username">lfs</systemitem> (as opposed
-  to switching to user <systemitem class="username">lfs</systemitem> when logged
-  in as <systemitem class="username">root</systemitem>, which does not require
-  the <systemitem class="username">lfs</systemitem> user to have a password),
-  give <systemitem class="username">lfs</systemitem> a password:</para>
+  <para>If you want to log in as &lfs-user; or switch to &lfs-user; from a
+  non-&root; user (as opposed to switching to user &lfs-user;
+  when logged in as &root;, which does not require the &lfs-user; user to
+  have a password), you need to set a password for &lfs-user;.  Issue the
+  following command as the &root; user to set the password:</para>
 @y
   <para>
-  <systemitem class="username">lfs</systemitem> ユーザーとしてログインできるようにするために <systemitem
-  class="username">lfs</systemitem> に対するパスワードを設定します。
-  (<systemitem class="username">root</systemitem> ユーザーでログインしている時に <systemitem
-  class="username">lfs</systemitem> へのユーザー切り替えを行なう場合には <systemitem
-  class="username">lfs</systemitem> ユーザーのパスワードは設定しておく必要はありません。)
+  &lfs-user; にログインする、あるいは非 &root; ユーザーから &lfs-user; に切り替える場合には、&lfs-user; に対してパスワードを設定しておくことが必要です
+  （この反対に &root; ユーザーにログインしている状態から &lfs-user; にユーザー切り替えを行う場合には、パスワードは必要ありません）。
+  &root; ユーザーにおいて以下のコマンドを実行して、パスワードの設定を行います。
   </para>
 @z
 
@@ -129,14 +127,14 @@
 @z
 
 @x
-  <para>Next, login as user <systemitem class="username">lfs</systemitem>.
-  This can be done via a virtual console, through a display manager, or with
-  the following substitute/switch user command:</para>
+  <para>Next, start a shell running as user &lfs-user;. This can be done by
+  logging in as &lfs-user; on a virtual console, or with the following
+  substitute/switch user command:</para>
 @y
   <para>
-  <systemitem class="username">lfs</systemitem> でログインします。
-  これはディスプレイマネージャーを通じて仮想端末を用いることができます。
-  また以下のユーザー変更コマンドを用いるのでも構いません。
+  &lfs-user; ユーザーにより起動するシェルを開始します。
+  これは、仮想コンソール上から &lfs-user; によってログインして実現します。
+  あるいは以下のユーザー切り替えコマンドを実行します。
   </para>
 @z
 

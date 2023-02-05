@@ -40,17 +40,26 @@
 
 @x
         The above command is correct.  The <command>ln</command> command has
-        a few syntactic versions, so be sure to check
+        several syntactic versions, so be sure to check
         <command>info coreutils ln</command> and <filename>ln(1)</filename>
-        before reporting what you may think is an error.
+        before reporting what may appear to be an error.
 @y
         上記のコマンドに間違いはありません。
         <command>ln</command> コマンドにはいくつか文法の異なるバージョンがあります。
-        間違いがあると思った場合には <command>info coreutils ln</command> や <filename>ln(1)</filename> をよく確認してください。
+        間違いと思われる場合には <command>info coreutils ln</command> や <filename>ln(1)</filename> をよく確認してください。
 @z
 
 @x
-    <para>Some of the Glibc programs use the non-FHS compliant
+    <para>Fix an issue building Glibc with parallel jobs and make-4.4
+    or later:</para>
+@y
+    <para>
+    並行ビルドによる Glibc のビルド、および make-4.4 以降を使ったビルドの際の問題を修正します。
+    </para>
+@z
+
+@x
+    <para>Some of the Glibc programs use the non-FHS-compliant
     <filename class="directory">/var/db</filename> directory to store their
     runtime data. Apply the following patch to make such programs store their
     runtime data in the FHS-compliant locations:</para>
@@ -132,7 +141,7 @@
 
 @x libc_cv_slibdir=/usr/lib
           <para>This ensures that the library is installed in /usr/lib instead
-          of the default /lib64 on 64 bit machines.</para>
+          of the default /lib64 on 64-bit machines.</para>
 @y
           <para>
           この指定は 64 ビットマシンにおいて、ライブラリのインストール先をデフォルトの /lib64 ではなく /usr/lib とします。
@@ -165,7 +174,7 @@
 @x
     <para>The missing or incompatible <command>msgfmt</command> program is
     generally harmless. This <command>msgfmt</command> program is part of the
-    Gettext package which the host distribution should provide.</para>
+    Gettext package, which the host distribution should provide.</para>
 @y
     <para>
     <command>msgfmt</command> プログラムがない場合 (missing) や互換性がない場合 (incompatible) でも特に問題はありません。
@@ -175,8 +184,8 @@
 
 @x
     <note><para>There have been reports that this package may fail when
-    building as a "parallel make".  If this occurs, rerun the make command
-    with a "-j1" option.</para></note>
+    building as a "parallel make".  If that occurs, rerun the make command
+    with the "-j1" option.</para></note>
 @y
     <note><para>本パッケージは "並行ビルド (parallel make)" を行うとビルドに失敗するとの報告例があります。
     もしビルドに失敗した場合は make コマンドに "-j1" オプションをつけて再ビルドしてください。
@@ -199,14 +208,14 @@
     <warning><para>If <envar>LFS</envar> is not properly set, and despite the
     recommendations, you are building as
     <systemitem class="username">root</systemitem>, the next command will
-    install the newly built glibc to your host system, which most likely
-    will render it unusable. So double check that the environment is
-    correctly set, before running the following command.</para></warning>
+    install the newly built Glibc to your host system, which will almost
+    certainly render it unusable. So double-check that the environment is
+    correctly set, and that you are not &root;, before running the following command.</para></warning>
 @y
     <warning><para>
-    <envar>LFS</envar> が適切に設定されていない状態で、推奨する方法とは異なり <systemitem class="username">root</systemitem> によってビルドを行うと、次のコマンドはビルドした glibc をホストシステムにインストールしてしまいます。
+    <envar>LFS</envar> が適切に設定されていない状態で、推奨する方法とは異なり <systemitem class="username">root</systemitem> によってビルドを行うと、次のコマンドはビルドした Glibc をホストシステムにインストールしてしまいます。
     これを行ってしまうと、ほぼ間違いなくホストが利用不能になります。
-    したがってその環境変数が適切に設定されていることを確認してから、以下のコマンドを実行してください。
+    したがってその環境変数が適切に設定されていること、&root; ユーザーではないことを確認してから、以下のコマンドを実行してください。
     </para></warning>
 @z
 
@@ -221,8 +230,8 @@
           packages to define the location where the package should be
           installed. If it is not set, it defaults to the root (<filename
           class="directory">/</filename>) directory. Here we specify that
-          the package be installed in <filename class="directory">$LFS
-          </filename>, which will become the root after <xref linkend=
+          the package is installed in <filename class="directory">$LFS
+          </filename>, which will become the root directory in <xref linkend=
           "ch-tools-chroot"/>.</para>
 @y
           <para>
@@ -236,7 +245,7 @@
 @z
 
 @x
-    <para>Fix hardcoded path to the executable loader in
+    <para>Fix a hard coded path to the executable loader in the
     <command>ldd</command> script:</para>
 @y
     <para>
@@ -275,10 +284,10 @@
 @z
 
 @x
-      <para>If the output is not shown as above or there was no output at all,
+      <para>If the output is not as shown above, or there is no output at all,
       then something is wrong. Investigate and retrace the steps to find out
       where the problem is and correct it. This issue must be resolved before
-      continuing on.</para>
+      continuing.</para>
 @y
       <para>
       出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
@@ -296,21 +305,21 @@
 @z
 
 @x
-    <note><para>Building packages in the next chapter will serve as an
+    <note><para>Building the packages in the next chapter will serve as an
     additional check that the toolchain has been built properly. If some
-    package, especially binutils-pass2 or gcc-pass2, fails to build, it is
+    package, especially Binutils-pass2 or GCC-pass2, fails to build, it is
     an indication that something has gone wrong with the
-    previous Binutils, GCC, or Glibc installations.</para></note>
+    preceding Binutils, GCC, or Glibc installations.</para></note>
 @y
     <note><para>
     次節にてビルドするパッケージでは、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
-    特に binutils 2 回めや gcc 2 回めのビルドに失敗したら、それ以前にインストールしてきた binutils, GCC, glibc のいずれかにてビルドがうまくできていないことを意味します。
+    特に Binutils 2 回めや GCC 2 回めのビルドに失敗したら、それ以前にインストールしてきた Binutils, GCC, Glibc のいずれかにてビルドがうまくできていないことを意味します。
     </para></note>
 @z
 
 @x
     <para>Now that our cross-toolchain is complete, finalize the installation
-    of the limits.h header. For doing so, run a utility provided by the GCC
+    of the limits.h header. To do this, run a utility provided by the GCC
     developers:</para>
 @y
     <para>

@@ -10,10 +10,10 @@
 @z
 
 @x
-    <para>The Man-pages package contains over 2,200 man pages.</para>
+    <para>The Man-pages package contains over 2,400 man pages.</para>
 @y
     <para>
-    Man-pages パッケージは 2,200 以上のマニュアルページを提供します。
+    Man-pages パッケージは 2,400 以上のマニュアルページを提供します。
     </para>
 @z
 

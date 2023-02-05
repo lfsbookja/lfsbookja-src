@@ -96,11 +96,11 @@
 
 @x --prefix=$LFS/tools
           <para>This tells the configure script to prepare to install the
-          binutils programs in the <filename
+          Binutils programs in the <filename
           class="directory">$LFS/tools</filename> directory.</para>
 @y
           <para>
-          configure スクリプトに対して binutils プログラムを <filename
+          configure スクリプトに対して Binutils プログラムを <filename
           class="directory">$LFS/tools</filename> ディレクトリ以下にインストールすることを指示します。
           </para>
 @z

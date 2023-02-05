@@ -21,19 +21,19 @@
   existing Linux system (the host) will be used as a starting point to
   provide necessary programs, including a compiler, linker, and shell,
   to build the new system. Select the <quote>development</quote> option
-  during the distribution installation to be able to access these
+  during the distribution installation to include these
   tools.</para>
 @y
   <para>
   LFS システムは、既にインストールされている Linux ディストリビューション (Debian、OpenMandriva、Fedora、openSUSE など) を利用して構築していきます。
   この既存の Linux システム（ホスト）は、LFS 構築のためにさまざまなプログラム類を利用する基盤となります。
   プログラム類とはコンパイラー、リンカー、シェルなどです。
-  したがってそのディストリビューションのインストール時には<quote>開発 (development)</quote>オプションを選択し、それらのプログラム類が利用できるようにしておく必要があります。
+  したがってそのディストリビューションのインストール時には<quote>開発 (development)</quote>オプションを選択し、それらのプログラム類を含めておく必要があります。
   </para>
 @z
 
 @x
-  <para>As an alternative to installing a separate distribution onto your
+  <para>As an alternative to installing a separate distribution on your
   machine, you may wish to use <!-- the Linux From Scratch LiveCD or --> a LiveCD from a
   commercial distribution. <!-- The LFS LiveCD works well as a host system,
   providing all the tools you need to successfully follow the instructions in
@@ -61,14 +61,14 @@
 
 @x
   <para><xref linkend="chapter-partitioning"/> of this book describes how
-  to create a new Linux native partition and file system. This is the place
+  to create a new Linux native partition and file system,
   where the new LFS system will be compiled and installed. <xref
   linkend="chapter-getting-materials"/> explains which packages and
-  patches need to be downloaded to build an LFS system and how to store
+  patches must be downloaded to build an LFS system, and how to store
   them on the new file system. <xref linkend="chapter-final-preps"/>
   discusses the setup of an appropriate working environment. Please read
   <xref linkend="chapter-final-preps"/> carefully as it explains several
-  important issues you need be aware of before beginning to
+  important issues you should be aware of before you begin to
   work your way through <xref linkend="chapter-cross-tools"/> and beyond.</para>
 @y
   <para>
@@ -83,7 +83,7 @@
 
 @x
   <para><xref linkend="chapter-cross-tools"/>  explains the installation of
-  the initial tool chain, (binutils, gcc, and glibc) using cross compilation
+  the initial tool chain, (binutils, gcc, and glibc) using cross-compilation
   techniques to isolate the new tools from the host system.</para>
 @y
   <para><xref linkend="chapter-cross-tools"/>では初期のツールチェーン（binutils、gcc、glibc）を、クロスコンパイルによりインストールします。
@@ -126,8 +126,8 @@
 
 @x
   <para><xref linkend="chapter-chroot-temporary-tools"/> then enters a
-  "chroot" environment and uses the previously built tools to build
-  the additional tools needed to build and test the final system.</para>
+  "chroot" environment, where we use the new tools to build all
+  the rest of the tools needed to create the LFS system.</para>
 @y
   <para><xref linkend="chapter-chroot-temporary-tools"/>では "chroot" 環境に入ります。
   そして今作り上げたビルドツールを使って、最終的なシステムをビルドしテストするために必要となる残りのツールをビルドします。</para>
@@ -146,36 +146,36 @@
 
 @x
   <para>In <xref linkend="chapter-building-system"/> the
-  full LFS system is built. Another advantage provided by the chroot
+  full-blown LFS system is built. Another advantage provided by the chroot
   environment is that it allows you to continue using the host system
   while LFS is being built. While waiting for package compilations to
-  complete, you can continue using your computer as normal.</para>
+  complete, you can continue using your computer as usual.</para>
 @y
-  <para><xref linkend="chapter-building-system"/>において完全な LFS システムが出来上がります。
+  <para><xref linkend="chapter-building-system"/>において本格的な LFS システムが出来上がります。
   <command>chroot</command> を使うもう一つのメリットは、LFS 構築作業にあたって引き続きホストシステムを利用できることです。
-  パッケージをコンパイルしている最中には、通常どおり別の作業を行うことができます。</para>
+  パッケージをコンパイルしている最中には、いつもどおり別の作業を行うことができます。</para>
 @z
 
 @x
   <para>To finish the installation, the basic system configuration is set up in
-  <xref linkend="chapter-config"/>, and the kernel and boot loader are set
-  up in <xref linkend="chapter-bootable"/>. <xref linkend="chapter-finalizing"/>
+  <xref linkend="chapter-config"/>, and the kernel and boot loader are created
+  in <xref linkend="chapter-bootable"/>. <xref linkend="chapter-finalizing"/>
   contains information on continuing the LFS experience beyond this book.
-  After the steps in this book have been implemented, the computer will be
-  ready to reboot into the new LFS system.</para>
+  After the steps in this chapter have been implemented, the computer is
+  ready to boot into the new LFS system.</para>
 @y
   <para>
-  インストールの仕上げとして<xref linkend="chapter-config"/>にてベースシステムの設定を行い、<xref linkend="chapter-bootable"/>にてカーネルとブートローダーを設定します。
+  インストールの仕上げとして<xref linkend="chapter-config"/>にてベースシステムの設定を行い、<xref linkend="chapter-bootable"/>にてカーネルとブートローダーを生成します。
   <xref linkend="chapter-finalizing"/>では LFS システム構築経験を踏まえて、その先に進むための情報を示します。
-  本書に示す作業をすべて実施すれば、新たな LFS システムを起動することが出来ます。
+  本章に示す作業をすべて実施すれば、新たな LFS システムを起動することが出来ます。
   </para>
 @z
 
 @x
   <para>This is the process in a nutshell. Detailed information on each
-  step is discussed in the following chapters and package descriptions.
-  Items that may seem complicated will be clarified, and everything will
-  fall into place as you embark on the LFS adventure.</para>
+  step is presented in the following chapters.
+  Items that seem complicated now will be clarified, and everything will
+  fall into place as you commence your LFS adventure.</para>
 @y
   <para>
   上はごく簡単な説明にすぎません。

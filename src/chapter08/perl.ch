@@ -34,7 +34,7 @@
 @z
 
 @x
-    <para>This version of Perl now builds the Compress::Raw::Zlib and
+    <para>This version of Perl builds the Compress::Raw::Zlib and
     Compress::Raw::BZip2 modules. By
     default Perl will use an internal copy of the sources for the build.
     Issue the following command so that Perl will use the libraries
@@ -50,7 +50,7 @@
 @x
     <para>To have full control over the way Perl is set up, you can remove the
     <quote>-des</quote> options from the following command and hand-pick the way
-    this package is built. Alternatively, use the command exactly as below to
+    this package is built. Alternatively, use the command exactly as shown below to
     use the defaults that Perl auto-detects:</para>
 @y
     <para>
@@ -67,10 +67,10 @@
 
 @x -Dvendorprefix=/usr
           <para>This ensures <command>perl</command> knows how to
-          tell packages where they should install their perl modules.</para>
+          tell packages where they should install their Perl modules.</para>
 @y
           <para>
-          このオプションは各種の perl モジュールをどこにインストールするかを指定します。
+          このオプションは各種の Perl モジュールをどこにインストールするかを指定します。
           </para>
 @z
 
@@ -85,17 +85,17 @@
 
 @x -Dman1dir=/usr/share/man/man1 -Dman3dir=/usr/share/man/man3
           <para>Since Groff is not installed yet, <command>Configure</command>
-          thinks that we do not want man pages for Perl.  Issuing these
-          parameters overrides this decision.</para>
+          will not create man pages for Perl.  These
+          parameters override this behavior.</para>
 @y
           <para>
-          まだ Groff をインストールしていないので <command>Configure</command> スクリプトが Perl の man ページを必要としないと判断してしまいます。
+          まだ Groff をインストールしていないので <command>Configure</command> スクリプトが Perl の man ページを生成しません。
           このオプションを指定することによりその判断を正します。
           </para>
 @z
 
 @x -Duseshrplib
-          <para>Build a shared libperl needed by some perl modules.</para>
+          <para>Build a shared libperl needed by some Perl modules.</para>
 @y
           <para>
           Perl モジュールの中で必要とされる共有ライブラリ libperl をビルドします。
@@ -103,24 +103,25 @@
 @z
 
 @x -Dusethreads
-          <para>Build perl with support for threads.</para>
+          <para>Build Perl with support for threads.</para>
 @y
           <para>
-          スレッドサポートをビルドします。
+          スレッドサポートを含めて Perl をビルドします。
           </para>
 @z
 
 @x -Dprivlib,-Darchlib,-Dsitelib,...
-          <para>These settings define where Perl is looking for installed
+          <para>These settings define where Perl looks for installed
           modules. The LFS editors chose to put them in a directory structure
-          based on the Major.Minor version of Perl (&perl-version-min;) which
-          allows upgrading Perl to newer Patch levels (&perl-version;) without
-          the need to reinstall all of the modules again.</para>
+          based on the MAJOR.MINOR version of Perl (&perl-version-min;) which
+          allows upgrading Perl to newer patch levels (the patch level is
+          the last dot separated part in the full version string like
+          &perl-version;) without reinstalling all of the modules.</para>
 @y
           <para>
           この設定は、Perl がインストール済のモジュールを探す場所を指定します。
-          LFS 編集者はディレクトリ構造として Perl の Major.Minor バージョン (&perl-version-min;) の形に基づいて、インストールモジュールを配置することにしています。
-          このようにしておくと、新たなパッチレベル (&perl-version;) によるアップグレードの際に、モジュールを再インストールする必要がなくなるためです。
+          LFS 編集者はディレクトリ構造として Perl の MAJOR.MINOR バージョン (&perl-version-min;) の形に基づいて、インストールモジュールを配置することにしています。
+          このようにしておくと、新たなパッチレベル (&perl-version; のようなフルバージョンにおいて最後のドット以降のバージョン部分) によるアップグレードの際に、モジュールを再インストールする必要がなくなるためです。
           </para>
 @z
 
@@ -196,7 +197,7 @@
 @z
 
 @x corelist
-          <para>A commandline frontend to Module::CoreList</para>
+          <para>A command line front end to Module::CoreList</para>
 @y
           <para>
           Module::CoreList に対するコマンドラインフロントエンド。
@@ -250,12 +251,12 @@
 @z
 
 @x instmodsh
-          <para>Shell script for examining installed Perl modules,
-          and can create a tarball from an installed module</para>
+          <para>Shell script for examining installed Perl modules;
+          it can create a tarball from an installed module</para>
 @y
           <para>
           インストールされている Perl モジュールを調査するシェルスクリプト。
-          インストールされたモジュールから tarball を作ることもできます。
+          インストールされたモジュールから tarball を作ることができます。
           </para>
 @z
 
@@ -279,14 +280,13 @@
 @x perl
           <para>Combines some of the best features of C, <command>sed</command>,
           <command>awk</command> and <command>sh</command> into a single
-          swiss-army language</para>
+          Swiss Army language</para>
 @y
           <!--
           日本語訳註：2009-09-05 matsuand
-          "swiss-army" はどうにも訳しにくい。Perl言語がそもそも
+          "Swiss Army" はどうにも訳しにくい。Perl言語がそもそも
           「Swiss army chainsaw」と呼び表されることに通じるものと捉えるが、
-          "s" が小文字なのも気にかかるし「スイス軍」などとは間違っても
-          訳せない。取り除くことにした。
+          「スイス軍」などとは間違っても訳せない。取り除くことにした。
           -->
           <para>
           C 言語、<command>sed</command>、<command>awk</command>、<command>sh</command> の持つ機能を寄せ集めて出来上がった言語。

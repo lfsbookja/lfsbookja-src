@@ -10,7 +10,7 @@
 @z
 
 @x
-    <para>The Readline package is a set of libraries that offers command-line
+    <para>The Readline package is a set of libraries that offer command-line
     editing and history capabilities.</para>
 @y
     <para>
@@ -38,25 +38,33 @@
 @z
 
 @x
+    <para>Now fix a problem identified upstream:</para>
+@y
+    <para>
+    またアップストリームが認識している問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Readline for compilation:</para>
 @y
     <para>&PreparePackage1;Readline&PreparePackage2;</para>
 @z
 
 @x
-      <title>The meaning of the configure option:</title>
+      <title>The meaning of the new configure option:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x --with-curses
           <para>This option tells Readline that it can find the termcap
-          library functions in the curses library, rather than a separate
-          termcap library. It allows generating a correct
+          library functions in the curses library, not a separate
+          termcap library. This will generate the correct
           <filename>readline.pc</filename> file.</para>
 @y
           <para>
-          このオプションは Readline パッケージに対して、termcap ライブラリ関数の探し場所を、切り離されている termcap ライブラリではなく curses ライブラリとすることを指示します。
+          このオプションは Readline パッケージに対して、termcap ライブラリ関数の探し場所を、個別の termcap ライブラリではなく curses ライブラリとすることを指示します。
 	  これにより <filename>readline.pc</filename> ファイルが適切に生成されます。
           </para>
 @z

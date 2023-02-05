@@ -52,9 +52,9 @@
 @z
 
 @x
-    <para>Prepare vim for compilation:</para>
+    <para>Prepare Vim for compilation:</para>
 @y
-    <para>&PreparePackage1;vim&PreparePackage2;</para>
+    <para>&PreparePackage1;Vim&PreparePackage2;</para>
 @z
 
 @x
@@ -105,28 +105,28 @@
 @z
 
 @x
-    <para>Many users are used to using <command>vi</command> instead of
+    <para>Many users reflexively type <command>vi</command> instead of
     <command>vim</command>. To allow execution of <command>vim</command>
     when users habitually enter <command>vi</command>, create a
     symlink for both the binary and the man page in the provided
     languages:</para>
 @y
     <para>
-    たいていのユーザーは <command>vim</command> ではなく <command>vi</command> を使うようです。
+    たいていのユーザーは <command>vim</command> ではなく、いわば反射的に <command>vi</command> を使うようです。
     <command>vi</command> を入力しても <command>vim</command> が実行されるように、実行モジュールに対するシンボリックリンクを作成します。
     さらに指定された言語による man ページへのシンボリックリンクも作成します。
     </para>
 @z
 
 @x
-    <para>By default, vim's documentation is installed in <filename
+    <para>By default, Vim's documentation is installed in <filename
     class="directory">/usr/share/vim</filename>. The following symlink
     allows the documentation to be accessed via <filename
     class="directory">/usr/share/doc/vim-&vim-version;</filename>, making
     it consistent with the location of documentation for other packages:</para>
 @y
     <para>
-    デフォルトでは vim のドキュメントが <filename
+    デフォルトでは Vim のドキュメントが <filename
     class="directory">/usr/share/vim</filename> にインストールされます。
     以下のようなシンボリックリンクを生成することで <filename
     class="directory">/usr/share/doc/vim-&vim-version;</filename> へアクセスしてもドキュメントが参照できるようにし、他のパッケージが配置するドキュメントの場所と整合を取ります。
@@ -135,17 +135,17 @@
 
 @x
     <para>If an X Window System is going to be installed on the LFS
-    system, it may be necessary to recompile vim after installing X. Vim
+    system, it may be necessary to recompile Vim after installing X. Vim
     comes with a GUI version of the editor that requires X and some
     additional libraries to be installed. For more information on this
-    process, refer to the vim documentation and the vim installation page
+    process, refer to the Vim documentation and the Vim installation page
     in the BLFS book at <ulink
     url="&blfs-book;postlfs/vim.html"/>.</para>
 @y
     <para>
-    LFS システムに対して X ウィンドウシステムをインストールする場合 X のインストールの後で vim を再コンパイルする必要があります。
+    LFS システムに対して X ウィンドウシステムをインストールする場合 X のインストールの後で Vim を再コンパイルする必要があります。
     vim には GUI 版があり X や他のライブラリがインストールされていて 初めて構築できるためです。
-    この作業の詳細については vim のドキュメントと BLFS ブックの <ulink
+    この作業の詳細については Vim のドキュメントと BLFS ブックの <ulink
     url="&blfs-book;postlfs/vim.html"/> に示されている Vim のインストール説明のページを参照してください。
     </para>
 @z
@@ -213,8 +213,8 @@
 @z
 
 @x
-      <para>By default, vim only installs spell files for the English language.
-      To install spell files for your preferred language, copy the
+      <para>By default, vim only installs spell-checking files for the English language.
+      To install spell-checking files for your preferred language, copy the
       <filename class='extension'>.spl</filename> and optionally, the
       <filename class='extension'>.sug</filename> files for your language
       and character encoding from
@@ -223,18 +223,18 @@
         /usr/share/&vim-docdir;/spell/</filename>.</para>
 @y
       <para>
-      vim がインストールするスペルファイル (spell files) はデフォルトでは英語に対するものだけです。
-      必要とする言語のスペルファイルをインストールするなら <filename
+      Vim がインストールするスペルチェックファイルはデフォルトでは英語に対するものだけです。
+      必要とする言語のスペルチェックファイルをインストールするなら <filename
       class='directory'>runtime/spell</filename> から、特定の言語、エンコーディングによる <filename>*.spl</filename> ファイル、またオプションとして <filename>*.sug</filename> ファイルを <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename> にコピーしてください。
       </para>
 @z
 
 @x
-      <para>To use these spell files, some configuration in
+      <para>To use these spell-checking files, some configuration in
       <filename>/etc/vimrc</filename> is needed, e.g.:</para>
 @y
       <para>
-      スペルファイルを利用するには <filename>/etc/vimrc</filename> ファイルにて、例えば以下のような設定が必要になります。
+      スペルチェックファイルを利用するには <filename>/etc/vimrc</filename> ファイルにて、例えば以下のような設定が必要になります。
       </para>
 @z
 
@@ -351,7 +351,8 @@
 
 @x
           <para>Creates a hex dump of the given file; it can
-          also do the reverse, so it can be used for binary patching</para>
+          also perform the inverse operation, so it can be used for binary
+          patching</para>
 @y
           <para>
           指定されたファイルの内容を 16進数ダンプとして変換します。

@@ -11,7 +11,7 @@
 
 @x
     <para>The Acl package contains utilities to administer Access Control Lists,
-    which are used to define more fine-grained discretionary access rights for
+    which are used to define fine-grained discretionary access rights for
     files and directories.</para>
 @y
     <para>
@@ -39,16 +39,15 @@
 @z
 
 @x
-    <para>The Acl tests need to be run on a filesystem that supports access
-    controls after <application>Coreutils</application> has been built with the
-    Acl libraries.  If desired, return to this package and run <command>make
-    check</command> after <application>Coreutils</application> has been built
-    later in this chapter.</para>
+    <para>The Acl tests must be run on a filesystem that supports access
+    controls, but not until the <application>Coreutils</application> package has been built,
+    using the <application>Acl</application> libraries.  If desired, return to this package
+    and run <command>make check</command> after the <application>Coreutils</application>
+    package has been built.</para>
 @y
     <para>
-    Acl のテストは、Acl のライブラリによって <application>Coreutils</application> をビルドした後に、アクセス制御がサポートされたファイルシステム上にて実施する必要があります。
-    テスト実施が必要である場合は、後に生成する <application>Coreutils</application> のビルドが終わってから、再び本パッケージに戻って <command>make
-    check</command> を実行してください。
+    Acl のテストは、<application>Acl</application> ライブラリを使うアクセス制御がサポートされたファイルシステム上にて実施する必要がありますが、<application>Coreutils</application> をビルドするまでは、その必要はありません。
+    テスト実施が必要である場合は、<application>Coreutils</application> のビルドが終わってから、再び本パッケージに戻って <command>make check</command> を実行してください。
     </para>
 @z
 

@@ -21,24 +21,38 @@
 @z
 
 @x
+    <para>FFI stands for Foreign Function Interface. An FFI allows a program written
+    in one language to call a program written in another language. Specifically,
+    Libffi can provide a bridge between an interpreter like Perl, or Python, and
+    shared library subroutines written in C, or C++.</para>
+@y
+    <para>
+    FFI は Foreign Function Interface を表します。
+    FFI は、1 つの言語で書かれたプログラムから、別の言語で書かれたプログラムを呼び出せるようにするものです。
+    特に Libffi は、Perl や Python のようなインタープリターや、C, C++ で書かれた共有ライブラリサブルーチン間のブリッジ機能を提供します。
+    </para>
+@z
+
+@x
     <title>Installation of Libffi</title>
 @y
     <title>&InstallationOf1;Libffi&InstallationOf2;</title>
 @z
 
 @x
-      <para>Similar to GMP, libffi builds with optimizations specific
+      <para>Like GMP, Libffi builds with optimizations specific
       to the processor in use. If building for another system, change the
       value of the <parameter>--with-gcc-arch=</parameter> parameter in the
       following command to an architecture name fully implemented by the
       CPU on that system.
-      If this is not done, all applications that link to libffi will trigger
+      If this is not done, all applications that link to
+      <filename class='libraryfile'>libffi</filename> will trigger
       Illegal Operation Errors.</para>
 @y
       <para>
-      GMP と同じように libffi では、利用中のプロセッサーに応じた最適化を行なってビルドされます。
+      GMP と同じように Libffi では、利用中のプロセッサーに応じた最適化を行なってビルドされます。
       異なるシステムに向けてのビルドを行う場合は、以下のコマンドにおいて <parameter>--with-gcc-arch=</parameter> を使って、そのシステム上の CPU の実装を完全に表すアーキテクチャー名に変更してください。
-      そうしなかった場合には、libffi をリンクするアプリケーションにおいて Illegal Operation エラーを発生させることになります。
+      そうしなかった場合には、<filename class='libraryfile'>libffi</filename> をリンクするアプリケーションにおいて Illegal Operation エラーを発生させることになります。
       </para>
 @z
 
@@ -55,9 +69,9 @@
 %@z
 
 @x
-    <para>Prepare libffi for compilation:</para>
+    <para>Prepare Libffi for compilation:</para>
 @y
-    <para>&PreparePackage1;libffi&PreparePackage2;</para>
+    <para>&PreparePackage1;Libffi&PreparePackage2;</para>
 @z
 
 @x
@@ -69,7 +83,7 @@
 @x --with-gcc-arch=native
           <para>Ensure GCC optimizes for the current system.  If this
           is not specified, the system is guessed and the code generated
-          may not be correct for some systems.  If the generated code
+          may not be correct.  If the generated code
           will be copied from the native system to a less capable
           system, use the less capable system as a parameter. For details
           about alternative system types, see <ulink
@@ -88,13 +102,14 @@
 @z
 
 @x --disable-exec-static-tramp
-          <para>Disable static trampoline support.  It's a new security
-          feature in libffi, but some BLFS packages (notably
+          <para>Disable static trampoline support, a new security
+          feature in Libffi. Some BLFS packages (notably
           <application>GJS</application>) have not been adapted for it.</para>
 @y
           <para>
           スタティックなトランポリン (trampoline) サポートを無効にします。
-          これは libffi における新しいセキュリティ機能ですが、BLFS パッケージの中 (特に <application>GJS</application>) では、この機能に対応していないものがあります。
+          これは libffi における新しいセキュリティ機能です。
+          BLFS パッケージの中 (特に <application>GJS</application>) では、この機能に対応していないものがあります。
           </para>
 @z
 
@@ -143,7 +158,7 @@
 @z
 
 @x libffi
-          <para>contains the foreign function interface API functions</para>
+          <para>Contains the foreign function interface API functions</para>
 @y
           <para>
           外部関数インターフェース API 関数を提供します。

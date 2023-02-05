@@ -31,8 +31,8 @@
 @z
 
 @x
-      <para>Libelf is part of elfutils-&elfutils-version; package. Use
-      the elfutils-&elfutils-version;.tar.bz2 as the source tarball.</para>
+      <para>Libelf is part of the elfutils-&elfutils-version; package. Use
+      the elfutils-&elfutils-version;.tar.bz2 file as the source tarball.</para>
 @y
       <para>
       Libelf は elfutils-&elfutils-version; パッケージに含まれます。
@@ -70,7 +70,7 @@
 
 @x
     <para>One test named <filename>run-low_high_pc.sh</filename> is known to
-    fail on 32-bit x86 system.</para>
+    fail on 32-bit x86 systems.</para>
 @y
     <para>
     <filename>run-low_high_pc.sh</filename> というテストが 1 つだけ、32 ビットの x86 システムにおいては失敗します。

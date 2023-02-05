@@ -25,7 +25,7 @@
 @z
 
 @x
-    <para>The behaviour of the backspace and delete keys is not consistent
+    <para>The behavior of the backspace and delete keys is not consistent
     across the keymaps in the Kbd package. The following patch fixes this
     issue for i386 keymaps:</para>
 @y

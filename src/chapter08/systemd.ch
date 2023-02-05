@@ -25,10 +25,10 @@
 @z
 
 @x
-    <para>First, fix an issue introduced by glibc-2.36.</para>
+    <para>First, fix a security issue in systemd-coredump:</para>
 @y
     <para>
-    はじめに glibc-2.36 において発生する問題を修正します。
+    はじめに systemd-coredump におけるセキュリティ問題を修正します。
     </para>
 @z
 
@@ -209,12 +209,12 @@
 @z
 
 @x
-    <para>Disable a service for upgrading binary distros.  It's useless for
-    a basic Linux system built from source, and it will report an error if
+    <para>Disable two services for upgrading binary distros.  They are useless for
+    a basic Linux system built from source, and both will report an error if
     it's enabled but not configured:</para>
 @y
     <para>
-    バイナリディストリビューションの更新サービスを無効にします。
+    バイナリディストリビューションの更新サービスを 2 つ無効にします。
     ソースからのビルドを行う単純な Linux システムでは不要だからです
     有効化されても設定が行われていない場合には、エラーが出力されます。
     </para>

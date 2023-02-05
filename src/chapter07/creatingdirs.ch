@@ -16,7 +16,7 @@
 @z
 
 @x
-  <para>It is time to create the full structure in the LFS file system.</para>
+  <para>It is time to create the full directory structure in the LFS file system.</para>
 @y
   <para>
   LFS ファイルシステムにおける完全なディレクトリ構成を作り出していきます。
@@ -24,8 +24,8 @@
 @z
 
 @x
-  <note><para>Some of the directories mentioned in this section may be
-  already created earlier with explicit instructions or when installing some
+  <note><para>Some of the directories mentioned in this section may have
+  already been created earlier with explicit instructions, or when installing some
   packages.  They are repeated below for completeness.</para></note>
 @y
   <note><para>
@@ -56,13 +56,13 @@
 
 @x
   <para>Directories are, by default, created with permission mode 755, but
-  this is not desirable for all directories. In the commands above, two
+  this is not desirable everywhere. In the commands above, two
   changes are made&mdash;one to the home directory of user <systemitem
   class="username">root</systemitem>, and another to the directories for
   temporary files.</para>
 @y
   <para>
-  ディレクトリは標準ではパーミッションモード 755 で生成されますが、すべてのディレクトリをこのままとするのは適当ではありません。
+  ディレクトリは標準ではパーミッションモード 755 で生成されますが、どのディレクトリであっても、このままとするのは適当ではありません。
   上のコマンド実行ではパーミッションを変更している箇所が二つあります。
   一つは <systemitem class="username">root</systemitem> ユーザーのホームディレクトリに対してであり、もう一つはテンポラリディレクトリに対してです。
   </para>
@@ -70,8 +70,8 @@
 
 @x
   <para>The first mode change ensures that not just anybody can enter
-  the <filename class="directory">/root</filename> directory&mdash;the
-  same as a normal user would do with his or her home directory. The
+  the <filename class="directory">/root</filename> directory&mdash;just
+  like a normal user would do with his or her own home directory. The
   second mode change makes sure that any user can write to the
   <filename class="directory">/tmp</filename> and <filename
   class="directory">/var/tmp</filename> directories, but cannot remove
@@ -95,21 +95,36 @@
 @z
 
 @x
-    <para>The directory tree is based on the Filesystem Hierarchy Standard
+    <para>This directory tree is based on the Filesystem Hierarchy Standard
     (FHS) (available at <ulink
     url="https://refspecs.linuxfoundation.org/fhs.shtml"/>).  The FHS also specifies
-    the optional existence of some directories such as <filename
+    the optional existence of additional directories such as <filename
     class="directory">/usr/local/games</filename> and <filename
-    class="directory">/usr/share/games</filename>.  We create only the
-    directories that are needed. However, feel free to create these
-    directories.  </para>
+    class="directory">/usr/share/games</filename>.  In LFS, we create only the
+    directories that are really necessary. However, feel free to create more
+    directories, if you wish.  </para>
 @y
     <para>
     本書のディレクトリ構成は標準ファイルシステム構成 (Filesystem Hierarchy Standard; FHS) に基づいています。(その情報は <ulink
     url="https://refspecs.linuxfoundation.org/fhs.shtml"/> に示されています。)
-    FHS では、任意のディレクトリとして <filename class="directory">/usr/local/games</filename> や <filename
+    FHS では、追加ディレクトリとして <filename class="directory">/usr/local/games</filename> や <filename
     class="directory">/usr/share/games</filename> などを規定しています。
-    したがって本書では必要なディレクトリのみを作成していくことにします。
+    したがって LFS では、本当に必要なディレクトリのみを作成していくことにします。
     他のディレクトリについては、どうぞ自由に取り決めて作成してください。
     </para>
+@z
+
+@x
+      The FHS does not mandate the existence of the directory
+      <filename class="directory">/usr/lib64</filename>, and the LFS editors
+      have decided not to use it. For the instructions in LFS and BLFS to work correctly,
+      it is imperative that this directory be non-existent. From time to time you should
+      verify that it does not exist, because it is easy to create it
+      inadvertently, and this will probably break your system.
+@y
+      FHS ではディレクトリ <filename class="directory">/usr/lib64</filename> の利用を必須とはしていません。
+      そこで LFS 編集者はこれを利用しないことに取り決めました。
+      LFS や BLFS での手順を有効なものにするためには、このディレクトリをないものとして扱うことが必要です。
+      このディレクトリがないことを繰り返し確認してください。
+      うっかり生成してしまうようなことがあると、システムが壊れてしまうことがあるからです。
 @z

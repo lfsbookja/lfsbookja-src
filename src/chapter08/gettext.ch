@@ -344,7 +344,7 @@
 @z
 
 @x libasprintf
-          <para>defines the <emphasis>autosprintf</emphasis> class, which makes
+          <para>Defines the <emphasis>autosprintf</emphasis> class, which makes
           C formatted output routines usable in C++ programs, for use with the
           <emphasis>&lt;string&gt;</emphasis> strings and the
           <emphasis>&lt;iostream&gt;</emphasis> streams</para>
@@ -358,11 +358,11 @@
 @z
 
 @x libgettextlib
-          <para>a private library containing common routines used by the
+          <para>Contains common routines used by the
           various Gettext programs; these are not intended for general use</para>
 @y
           <para>
-          さまざまな Gettext プログラムが利用している共通的ルーチンを提供するプライベートライブラリです。
+          さまざまな Gettext プログラムが利用している共通的ルーチンを提供します。
           これは一般的な利用を想定したものではありません。
           </para>
 @z
@@ -382,11 +382,11 @@
 @z
 
 @x libgettextsrc
-          <para>A private library containing common routines used by the
+          <para>Provides common routines used by the
           various Gettext programs; these are not intended for general use</para>
 @y
           <para>
-          さまざまな Gettext プログラムが利用している共通的ルーチンを提供するプライベートライブラリです。
+          さまざまな Gettext プログラムが利用している共通的ルーチンを提供します。
           これは一般的な利用を想定したものではありません。
           </para>
 @z
@@ -400,8 +400,8 @@
 @z
 
 @x preloadable_libintl
-          <para>A library, intended to be used by LD_PRELOAD that assists
-          <filename class="libraryfile">libintl</filename> in logging
+          <para>A library, intended to be used by LD_PRELOAD, that helps
+          <filename class="libraryfile">libintl</filename> log
           untranslated messages</para>
 @y
           <!--

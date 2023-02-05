@@ -11,12 +11,12 @@
 
 @x
     <para>The Libtool package contains the GNU generic library support script.
-    It wraps the complexity of using shared libraries in a consistent, portable
+    It makes the use of shared libraries simpler with a consistent, portable
     interface.</para>
 @y
     <para>
     Libtool パッケージは GNU 汎用ライブラリをサポートするスクリプトを提供します。
-    これは複雑な共有ライブラリをラップして一貫した可搬性を実現します。
+    これは複雑な共有ライブラリを、一貫した移植性の高いインターフェースとして実現します。
     </para>
 @z
 
@@ -45,14 +45,14 @@
 @z
 
 @x
-    <note><para>The test time for libtool can be reduced significantly on a
+    <note><para>The test time for Libtool can be reduced significantly on a
     system with multiple cores.  To do this, append
     <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> to the line above.  For
     instance, using -j4 can reduce the test time by over 60
     percent.</para></note>
 @y
     <note><para>
-    マルチコアのシステム上で libtool のテストをすると、その処理時間は大幅に減ります。
+    マルチコアのシステム上で Libtool のテストをすると、その処理時間は大幅に減ります。
     実行する際には、上のコマンドに <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> を加えます。
     例えば -j4 を指定するとテスト時間は 6 割以上減ります。
     </para></note>
@@ -61,7 +61,7 @@
 @x
     <para>Five tests are known to fail in the LFS build environment due
     to a circular dependency, but these tests pass if rechecked after
-    automake is installed.  Additionally, with grep-3.8, two tests will
+    automake has been installed.  Additionally, with grep-3.8, two tests will
     trigger a warning for non-POSIX regular expressions and fail.</para>
 @y
     <para>
@@ -136,9 +136,9 @@
 @z
 
 @x libltdl
-          <para>Hides the various difficulties of dlopening libraries</para>
+          <para>Hides the various difficulties of opening dynamically loaded libraries</para>
 @y
           <para>
-          dlopen を行うライブラリの複雑さを隠蔽します。
+          動的ロードライブラリのオープンに伴うさまざまな複雑さを隠蔽します。
           </para>
 @z

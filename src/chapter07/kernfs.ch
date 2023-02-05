@@ -16,24 +16,27 @@
 @z
 
 @x
-    <para>Various file systems exported by the kernel are used to communicate to
-    and from the kernel itself. These file systems are virtual in that no disk
-    space is used for them. The content of the file systems resides in
-    memory.</para>
+    <para>Applications running in userspace utilize various file 
+    systems created by the kernel to communicate 
+    with the kernel itself. These file systems are virtual: no disk
+    space is used for them. The content of these file systems resides in
+    memory. These file systems must be mounted in the $LFS directory tree
+    so the applications can find them in the chroot environment.</para>
 @y
     <para>
-    カーネルが取り扱うさまざまなファイルシステムは、カーネルとの間でやり取りが行われます。
+    ユーザー名前空間内において稼働するアプリケーションは、カーネルが生成するさまざまなファイルシステムを使って、カーネルとのやり取りを行います。
     これらのファイルシステムは仮想的なものであり、ディスクを消費するものではありません。
     ファイルシステムの内容はメモリ上に保持されます。
+    こういったファイルシステムは $LFS ディレクトリツリー内にマウントされていなければならず、それができて初めて、アプリケーションが <command>chroot</command> 環境内にてそれを認識できるようになります。
     </para>
 @z
 
 @x
-    <para>Begin by creating directories onto which the file systems will be
+    <para>Begin by creating the directories on which these virtual file systems will be
     mounted:</para>
 @y
     <para>
-    ファイルシステムをマウントするディレクトリを以下のようにして生成します。
+    この仮想ファイルシステムがマウントされるディレクトリを、以下のようにして生成します。
     </para>
 @z
 
@@ -44,31 +47,49 @@
 @z
 
 @x
-      <para>During a normal boot, the kernel automatically mounts the
-      <systemitem class="filesystem">devtmpfs</systemitem> filesystem on the
-      <filename class="directory">/dev</filename> directory, and allow the
-      devices to be created dynamically on that virtual filesystem as they
-      are detected or accessed. Device creation is generally done during the
-      boot process by the kernel and Udev.
-      Since this new system does not yet have Udev and
-      has not yet been booted, it is necessary to mount and populate
-      <filename class="directory">/dev</filename> manually. This is
-      accomplished by bind mounting the host system's
-      <filename class="directory">/dev</filename> directory. A bind mount is
-      a special type of mount that allows you to create a mirror of a
-      directory or mount point to some other location. Use the following
-      command to achieve this:</para>
+      <para>During a normal boot of an LFS system, the kernel automatically
+      mounts the <systemitem class="filesystem">devtmpfs</systemitem>
+      file system on the
+      <filename class="directory">/dev</filename> directory; the kernel
+      creates device nodes on that virtual file system during the boot process,
+      or when a device is first detected or accessed. The udev daemon may
+      change the ownership or permissions of the device nodes created by the
+      kernel, and create new device nodes or symlinks, to ease the work of
+      distro maintainers and system administrators.  (See
+      <xref linkend='ch-config-udev-device-node-creation'/> for details.)
+      If the host kernel supports &devtmpfs;, we can simply mount a
+      &devtmpfs; at <filename class='directory'>$LFS/dev</filename> and rely
+      on the kernel to populate it.</para>
 @y
       <para>
-      通常のブートの際には、カーネルは <filename
+      LFS システムの通常のブートの際に、カーネルは <filename
       class="directory">/dev</filename> ディレクトリ上に <systemitem
       class="filesystem">devtmpfs</systemitem> ファイルシステムを自動的にマウントします。
-      そしてデバイスが検出されたりアクセスされたりするたびに、デバイスが仮想ファイルシステムを動的生成できるようにしています。
-      このデバイス生成処理は一般的には、システム起動時にカーネルと Udev によって行われます。
-      今構築中のシステムにはまだ Udev を導入していませんし、再起動も行っていませんので <filename
-      class="directory">/dev</filename> のマウントと有効化は手動で行ないます。
-      これはホストシステムの <filename class="directory">/dev</filename> ディレクトリに対して、バインドマウントを行うことで実現します。
-      バインドマウント (bind mount) は特殊なマウント方法の一つで、ディレクトリのミラーを生成したり、他のディレクトリへのマウントポイントを生成したりします。
+      カーネルはブートプロセスを通じて、仮想ファイルシステム上にデバイスノードを生成します。
+      またデバイスが初めて検出されるかアクセスされるかした際に生成します。
+      udev デーモンは、カーネルが生成したデバイスノードの所有者やパーミッションを変更することがあります。
+      またディストリビューション管理者やシステム管理者の作業をやりやすくするために、新たなデバイスノードやシンボリックリンクを生成することもあります。
+      (詳しくは <xref linkend='ch-config-udev-device-node-creation'/> を参照してください。)
+      ホストのカーネルが &devtmpfs; をサポートしている場合は、&devtmpfs; を <filename class='directory'>$LFS/dev</filename> 上に簡単にマウントすることができ、デバイスの有効化をカーネルに委ねることができます。
+      </para>
+@z
+
+@x
+      <para>But some host kernels lack &devtmpfs; support; these
+      host distros use different methods to create the content of
+      <filename class="directory">/dev</filename>.
+      So the only host-agnostic way to populate the
+      <filename class="directory">$LFS/dev</filename> directory is
+      by bind mounting the host system's
+      <filename class="directory">/dev</filename> directory. A bind mount is
+      a special type of mount that makes a directory subtree or a file
+      visible at some other location. Use the following
+      command to do this.</para>
+@y
+      <para>
+      しかしホストカーネルの中には、&devtmpfs; をサポートしていないものがあり、そういったディストリビューションでは <filename class="directory">/dev</filename> の内容を別の手法によって実現しています。
+      そこでホストに依存せずに <filename class="directory">$LFS/dev</filename> ディレクトリを有効にするには、ホストシステムの <filename class="directory">/dev</filename> ディレクトリをバインドマウントします。
+      バインドマウントは特殊なマウント方法の一つであり、ディレクトリのサブツリーやファイルを、別の場所から見えるようにするものです。
       以下のコマンドにより実現します。
       </para>
 @z
@@ -80,7 +101,7 @@
 @z
 
 @x
-      <para>Now mount the remaining virtual kernel filesystems:</para>
+      <para>Now mount the remaining virtual kernel file systems:</para>
 @y
       <para>残りの仮想カーネルファイルシステムを以下のようにしてマウントします。</para>
 @z
@@ -138,14 +159,14 @@
 @z
 
 @x
-      <para>In other cases <filename>/dev/shm</filename> is a mountpoint 
+      <para>In other host systems <filename>/dev/shm</filename> is a mount point 
       for a tmpfs. In that case the mount of /dev above will only create
-      /dev/shm in the chroot environment as a directory. In this situation
-      we explicitly mount a tmpfs,</para>
+      /dev/shm as a directory in the chroot environment. In this situation
+      we must explicitly mount a tmpfs:</para>
 @y
       <para>
-      この他に <filename>/dev/shm</filename> が tmpfs へのマウントポイントの場合があります。
-      その場合 /dev のマウントは chroot 環境内では /dev/shm をディレクトリとして生成します。
-      この状況においては tmpfs を明示的にマウントします。
+      別のホストシステムでは <filename>/dev/shm</filename> が tmpfs へのマウントポイントの場合があります。
+      その場合 /dev のマウントは /dev/shm をchroot 環境内のディレクトリとして生成します。
+      この状況においては tmpfs を明示的にマウントしなければなりません。
       </para>
 @z

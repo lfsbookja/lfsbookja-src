@@ -25,24 +25,25 @@
     <para>Udev, by default, names network devices according to Firmware/BIOS
     data or physical characteristics like the bus, slot, or MAC address.  The
     purpose of this naming convention is to ensure that network devices are
-    named consistently and not based on the time the network card was
-    discovered.  For example, on a computer having two network cards made by
-    Intel and Realtek, the network card manufactured by Intel may become eth0
-    and the Realtek card becomes eth1. In some cases, after a reboot the cards
-    could get renumbered the other way around.</para>
+    named consistently, not based on when the network card was
+    discovered.  In older versions of Linux&mdash;on a computer with two 
+    network cards made by Intel and Realtek, for instance&mdash;the
+    network card manufactured by Intel might have become eth0
+    while the Realtek card became eth1. After a reboot, the cards
+    would sometimes get renumbered the other way around.</para>
 @y
     <para>
     Udev はデフォルトにおいて、ネットワークデバイスの名前づけを、ファームウェア/BIOS データや物理的特性、つまりバス、スロット、MACアドレスに基づいて取り決めます。
     このような命名規則とする目的は、複数のネットワークデバイスの命名を正確に行うためであり、検出した順番に命名することがないようにするためです。
-    例えば Intel 製と Realtek 製の二つのネットワークカードを持つコンピューターにおいて、 Intel 製が eth0、Realtek 製が eth1 となったとします。
+    かつての古いバージョンの Linux の場合に、たとえば Intel 製と Realtek 製の 2 つのネットワークカードを持つコンピューターにおいて、 Intel 製が eth0、Realtek 製が eth1 となったとします。
     システムを再起動した際には、番号割り振りが逆転することもあります。
     </para>
 @z
 
 @x
-    <para>In the new naming scheme, typical network device names would then
-    be something like enp5s0 or wlp3s0.  If this naming convention is not
-    desired, the traditional naming scheme or a custom scheme can be
+    <para>In the new naming scheme, typical network device names are
+    something like enp5s0 or wlp3s0.  If this naming convention is not
+    desired, the traditional naming scheme, or a custom scheme, can be
     implemented.</para>
 @y
     <para>
@@ -59,20 +60,20 @@
 @z
 
 @x
-      <para>The traditional naming scheme using eth0, eth1, etc can be
+      <para>The traditional naming scheme using eth0, eth1, etc. can be
       restored by adding <userinput>net.ifnames=0</userinput> on the
-      kernel command line.  This is most appropriate for those systems
-      that have only one ethernet device of the same type.  Laptops
-      often have multiple ethernet connections that are named eth0 and
-      wlan0 and are also candidates for this method.  The command line
-      is passed in the GRUB configuration file.
+      kernel command line.  This is most appropriate for systems
+      that have just one ethernet device of a particular type.  Laptops
+      often have two ethernet connections named eth0 and
+      wlan0; such laptops can also use this method.  The command line
+      is in the GRUB configuration file.
       See <xref linkend="grub-cfg"/>.</para>
 @y
-<!-- 日本語版注釈: candidates for method の意味が分からなかったので訳出スキップ -->
       <para>
       従来の命名スキーマ、例えば eth0、eth1 といったものは、カーネルコマンドラインに <userinput>net.ifnames=0</userinput> を加えることで利用できます。
       この設定は、イーサネットデバイスをただ一つしか持たないシステムでは適正なものとなります。
-      一方ラップトップでは、eth0 と wlan0 といった複数のイーサネット接続が利用されることが多いものです。
+      一方ノート PC には、たいていは eth0 と wlan0 といった 2 つのイーサネット接続があります。
+      上に示した方法は、ノート PC に対しても適用できます。
       カーネルコマンドラインは GRUB の設定ファイルにて設定できます。
       詳しくは<xref linkend="grub-cfg"/>を参照してください。
       </para>
@@ -107,9 +108,9 @@
 @z
 
 @x
-      <note><para>In some cases such as when MAC addresses have been assigned to
-      a network card manually or in a virtual environment such as Qemu or Xen,
-      the network rules file may not have been generated because addresses
+      <note><para>In some cases, such as when MAC addresses have been assigned to
+      a network card manually, or in a virtual environment such as Qemu or Xen,
+      the network rules file may not be generated because addresses
       are not consistently assigned.  In these cases, this method cannot
       be used.</para></note>
 @y
@@ -121,10 +122,10 @@
 @z
 
 @x
-      <para>The file begins with a comment block followed by two lines for each
+      <para>The file begins with a comment block, followed by two lines for each
       NIC. The first line for each NIC is a commented description showing its
       hardware IDs (e.g. its PCI vendor and device IDs, if it's a PCI card),
-      along with its driver in parentheses, if the driver can be found. Neither
+      along with its driver (in parentheses, if the driver can be found). Neither
       the hardware ID nor the driver is used to determine which name to give an
       interface; this information is only for reference. The second line is the
       udev rule that matches this NIC and actually assigns it a name.</para>
@@ -133,20 +134,19 @@
       このファイルの先頭にはコメントが数行あり、続いてそれぞれの NIC に対する行があります。
       NIC ごとの記述では一行めがコメントで、そのハードウェア ID が記されています。
       (PCI カードである場合、PCI ベンダとデバイス ID が記述されます。)
-      またドライバーが検出できている場合には、カッコ書きでドライバー名も示されます。
+      また（ドライバーが検出できている場合にはカッコ書きで）ドライバー名も示されます。
       ハードウェア ID もドライバー名も、インターフェースに対して与えられる名称とは無関係で、単に分かりやすくするために記されているにすぎません。
       二行めは udev ルールであり、その NIC を定め、名称を割り当てている記述です。
       </para>
 @z
 
 @x
-      <para>All udev rules are made up of several keys, separated by commas and
-      optional whitespace. This rule's keys and an explanation of each of them
-      are as follows:</para>
+      <para>All udev rules are made up of several keywords, separated by commas and
+      optional whitespace. Here are the keywords, and an explanation of each one:</para>
 @y
       <para>
-      udev ルールはいくつかのキー項目で構成され、それぞれがカンマで区切られるか、場合によっては空白文字で区切られています。
-      このキー項目とその内容は以下のようになります。
+      udev ルールはいくつかのキーワードで構成され、それぞれがカンマで区切られるか、場合によっては空白文字で区切られています。
+      このキーワードとその内容は以下のようになります。
       </para>
 @z
 
@@ -176,7 +176,7 @@
           <para><literal>DRIVERS=="?*"</literal> - This exists so that udev will
           ignore VLAN or bridge sub-interfaces (because these sub-interfaces do
           not have drivers). These sub-interfaces are skipped because the name
-          that would be assigned would collide with their parent devices.</para>
+          that would be assigned would collide with the parent devices.</para>
 @y
           <para>
           <literal>DRIVERS=="?*"</literal> - 
@@ -187,12 +187,12 @@
 @z
 
 @x
-          <para><literal>ATTR{address}</literal> - The value of this key is the
+          <para><literal>ATTR{address}</literal> - The value of this keyword is the
           NIC's MAC address.</para>
 @y
           <para>
           <literal>ATTR{address}</literal> - 
-          このキーの値は NIC の MAC アドレスを表します。
+          このキーワードの値は NIC の MAC アドレスを表します。
           </para>
 @z
 
@@ -212,12 +212,12 @@
 @z
 
 @x
-          <para><literal>NAME</literal> - The value of this key is the name that
+          <para><literal>NAME</literal> - The value of this keyword is the name that
           udev will assign to this interface.</para>
 @y
           <para>
           <literal>NAME</literal> - 
-          udev がインターフェースに対して割り当てる名前をキーの値として指定します。
+          udev がインターフェースに対して割り当てる名前をキーワードの値として指定します。
           </para>
 @z
 
@@ -225,24 +225,24 @@
       <para>The value of <literal>NAME</literal> is the important part. Make sure
       you know which name has been assigned to each of your network cards before
       proceeding, and be sure to use that <literal>NAME</literal> value when
-      creating your configuration files below.</para>
+      creating your network configuration files.</para>
 @y
       <para>
       <literal>NAME</literal> に定義される値が重要です。
       どのネットワークカードにどんな名前が割り当てられているかをよく確認してください。
-      そして以下において設定ファイルを生成する際には <literal>NAME</literal> に定義されている名称を利用してください。
+      そしてネットワーク設定ファイルを生成する際には <literal>NAME</literal> に定義されている名称を利用してください。
       </para>
 @z
 
 @x
-    <title>CD-ROM symlinks</title>
+    <title>CD-ROM Symlinks</title>
 @y
     <title>CD-ROM のシンボリックリンク</title>
 @z
 
 @x
     <para>Some software that you may want to install later (e.g., various
-    media players) expect the <filename class="symlink">/dev/cdrom</filename>
+    media players) expects the <filename class="symlink">/dev/cdrom</filename>
     and <filename class="symlink">/dev/dvd</filename> symlinks to exist, and
     to point to a CD-ROM or DVD-ROM device. Also, it may be convenient to put
     references to those symlinks into <filename>/etc/fstab</filename>. Udev
@@ -287,22 +287,22 @@
 @z
 
 @x
-    <para>There are advantages to each approach; the correct approach to use
-    will depend on what kinds of device changes may happen. If you expect the
+    <para>There are advantages to each approach; the correct approach
+    depends on what kinds of device changes may happen. If you expect the
     physical path to the device (that is, the ports and/or slots that it plugs
     into) to change, for example because you plan on moving the drive to a
     different IDE port or a different USB connector, then you should use the
     <quote>by-id</quote> mode. On the other hand, if you expect the device's
-    identification to change, for example because it may die, and you would
-    replace it with a different device with the same capabilities and which
-    is plugged into the same connectors, then you should use the
+    identification to change, for example because it may die, and you intend
+    to replace it with a different device that 
+    plugs into the same connectors, then you should use the
     <quote>by-path</quote> mode.</para>
 @y
     <para>
     二つの方法にはそれぞれに利点があります。
     どちらの方法が適切であるかは、デバイスがどのように変更されるかによります。
     デバイスに対する物理パス (そのデバイスが接続しているポートやスロット) を変更したい場合、例えば IDE ポートや USB コネクタを切り替えたいような場合、<quote>ID (by-id)</quote>モードを使うべきです。
-    一方、デバイスの識別文字列を変えたい場合、つまりデバイスが故障したために、同等の性能の新しいデバイスを同一コネクタに接続しようとする場合は、<quote>パス (by-path)</quote>モードを使うべきです。
+    一方、デバイスの識別文字列を変えたい場合、つまりデバイスが故障したために、新しいデバイスを同一コネクタに接続しようとする場合は、<quote>パス (by-path)</quote>モードを使うべきです。
     </para>
 @z
 
@@ -394,7 +394,7 @@
     this is only an issue if you need the symlinks on both systems to point to
     the same device. If you need that, then inspect (and possibly edit) the
     generated <filename>/etc/udev/rules.d/70-persistent-cd.rules</filename>
-    file after booting, to make sure the assigned symlinks match what you need.</para>
+    file after booting, to make sure the assigned symlinks match your needs.</para>
 @y
     <para>
     もっとも CD-ROM デバイスが複数あると、ブート時に生成されるシンボリックリンクが、ホスト利用時に指し示されていたものとは異なる場合が発生します。
@@ -406,7 +406,7 @@
 @z
 
 @x
-    <title>Dealing with duplicate devices</title>
+    <title>Dealing with Duplicate Devices</title>
 @y
     <title>重複するデバイスの取り扱い方</title>
 @z
@@ -420,7 +420,7 @@
     <filename>/dev/video1</filename> refers to the tuner, and sometimes
     after a reboot the order changes.
     For all classes of hardware except sound cards and network cards, this is
-    fixable by creating udev rules for custom persistent symlinks.
+    fixable by creating udev rules to create persistent symlinks.
     The case of network cards is covered separately in
     <xref linkend="ch-config-network"/>, and sound card configuration can
     be found in <ulink url="&blfs-book;postlfs/devices.html">BLFS</ulink>.</para>

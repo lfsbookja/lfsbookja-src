@@ -25,11 +25,10 @@
 @z
 
 @x
-    <para>First, apply a patch fixes several problems that occur with the latest
-    perl, libtool, and bash versions.</para>
+    <para>First, fix several problems with the tests caused by bash-5.2 and later:</para>
 @y
     <para>
-    まず、perl、libtool、bash の最新版を用いている際に発生する問題を解消するためのパッチを提供します。
+    bash-5.2 以降が起因となるテストの不具合をここで修正します。
     </para>
 @z
 

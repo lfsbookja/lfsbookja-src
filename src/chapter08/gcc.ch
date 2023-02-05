@@ -67,14 +67,14 @@
 @z
 
 @x
-    <para>Note that for other programming languages there are some prerequisites that
-    are not yet available. See the
+    <para>GCC supports seven different computer languages, but the
+    prerequisites for most of them have not yet been installed. See the
     <ulink url="&blfs-book;general/gcc.html">BLFS Book GCC page</ulink>
     for instructions on how to build all of GCC's supported languages.</para>
 @y
     <para>
-    他のプログラミング言語は、また別の依存パッケージなどを要しますが、現時点では準備できていません。
-    GCC がサポートする他のプログラム言語の構築方法については <ulink
+    GCC では 7 つのコンピューター言語をサポートしていますが、それらのほとんどが必要としている依存パッケージは、まだこの時点でインストールしていません。
+    GCC がサポートする他のコンピューター言語の構築方法については <ulink
     url="&blfs-book;general/gcc.html">BLFS ブック</ulink> の説明を参照してください。
     </para>
 @z
@@ -86,22 +86,22 @@
 @z
 
 @x LD=ld
-          <para>This parameter makes the configure script use the ld installed
-          by the binutils built earlier in this chapter, rather than
+          <para>This parameter makes the configure script use the ld program installed
+          by the Binutils package built earlier in this chapter, rather than
           the cross-built version which would otherwise be used.</para>
 @y
           <para>
-          本パラメーターは、本章の初期段階でビルドした binutils の ld を使うことを configure スクリプトに指示します。
+          本パラメーターは、本章の初期段階でビルドした Binutils の ld プログラムを使うことを configure スクリプトに指示します。
           これを指定しなかった場合は、クロスビルド版のものが用いられることになります。
           </para>
 @z
 
 @x --with-system-zlib
           <para>This switch tells GCC to link to the system installed copy of
-          the zlib library, rather than its own internal copy.</para>
+          the Zlib library, rather than its own internal copy.</para>
 @y
           <para>
-          このオプションはシステムに既にインストールされている zlib ライブラリをリンクすることを指示するものであり、内部にて作成されるライブラリを用いないようにします。
+          このオプションはシステムに既にインストールされている Zlib ライブラリをリンクすることを指示するものであり、内部にて作成されるライブラリを用いないようにします。
           </para>
 @z
 
@@ -113,29 +113,29 @@
       <anchor id="pie-ssp-info" xreflabel="PIE と SSP に関するメモ"/>
 @z
 @x
-        PIE (position-independent executable) is a technique to produce
+        PIE (position-independent executables) are
         binary programs that can be loaded anywhere in memory.  Without PIE,
         the security feature named ASLR (Address Space Layout Randomization)
-        can be applied for the shared libraries, but not the executable
-        itself.  Enabling PIE allows ASLR for the executables in addition to
+        can be applied for the shared libraries, but not for the executables
+        themselves.  Enabling PIE allows ASLR for the executables in addition to
         the shared libraries, and mitigates some attacks based on fixed
         addresses of sensitive code or data in the executables.
 @y
-        PIE (position independent executable; 位置独立実行形式) とは、メモリ上のどこであっても、実行プログラムをロードできるようにする技術です。
+        PIE (position independent executable; 位置独立実行形式) とは、メモリ上のどこであっても、実行プログラムをロードできるようにします。
         PIE がない場合には ASLR (Address Space Layout Randomization; アドレス空間配置のランダム化) という技術が適用されますが、適用先は共有ライブラリのみであって実行ファイルには適用されません。
         共有ライブラリに加えて実行ファイルに対しても、PIE と ASLR を有効にすれば、実行ファイル内にある機密コードやデータが、固定的なアドレスに存在することを前提とした攻撃を軽減できます。
 @z
 @x
         SSP (Stack Smashing Protection) is a technique to ensure
-        that the parameter stack is not corrupted. Stack corruption can
-        for example alter the return address of a subroutine,
-        which would allow transferring control to some dangerous code
+        that the parameter stack is not corrupted. Stack corruption can,
+        for example, alter the return address of a subroutine,
+        thus transferring control to some dangerous code
         (existing in the program or shared libraries, or injected by the
-        attacker somehow) instead of the original one.
+        attacker somehow).
 @y
         SSP (Stack Smashing Protection) とは、パラメータースタックが破壊されないようにする技術です。
         スタック破壊が起きると、たとえばサブルーチンから返されるアドレスが変化してしまいます。
-        そうなった場合には、正常な制御には戻らずに、危険なコード（プログラムや共有ライブラリに元からあるものや、攻撃者が何らかの方法によって挿入したもの）に制御が移ってしまうことにもなります。
+        そうなった場合には、危険なコード（プログラムや共有ライブラリに元からあるものや、攻撃者が何らかの方法によって挿入したもの）に制御が移ってしまうことにもなります。
 @z
 
 @x
@@ -146,17 +146,17 @@
 
 @x
       <para>In this section, the test suite for GCC is considered
-      important, but it takes a long time. First time builders are
-      encouraged to not skip it.  The time to run the tests can be
-      reduced significantly by adding -jx to the make command below
-      where x is the number of cores on your system.</para>
+      important, but it takes a long time. First-time builders are
+      encouraged to run the test suite.  The time to run the tests can be
+      reduced significantly by adding -jx to the <command>make -k check</command> command below,
+      where x is the number of CPU cores on your system.</para>
 @y
       <para>
       本節における GCC のテストスイートは極めて重要なものです。
       ただし相当な時間を要します。
       初めてビルドを行う方には、必ず実施することをお勧めします。
-      テスト実行に要する時間は、make コマンドに -jx をつけることで、かなり削減できます。
-      ここに示す x には、システムのコア数を指定するものです。
+      テスト実行に要する時間は、<command>make -k check</command> コマンドに -jx をつけることで、かなり削減できます。
+      ここに示す x には、システムの CPU コア数を指定するものです。
       </para>
 @z
 
@@ -180,7 +180,7 @@
 @z
 
 @x
-    <para>To receive a summary of the test suite results, run:</para>
+    <para>To extract a summary of the test suite results, run:</para>
 @y
    <para>
    テスト結果を確認するために以下を実行します。
@@ -188,7 +188,7 @@
 @z
 
 @x
-    <para>For only the summaries, pipe the output through
+    <para>To filter out only the summaries, pipe the output through
     <userinput>grep -A7 Summ</userinput>.</para>
 @y
    <para>
@@ -209,7 +209,7 @@
 @z
 
 @x
-    <para>In gcc, eleven tests, in the i386 test suite are known to FAIL.
+    <para>Eleven tests in the i386 test suite for the gcc compiler are known to FAIL.
     It's because the test files do not account for the
     <parameter>--enable-default-pie</parameter> option.</para>
 @y
@@ -220,12 +220,12 @@
 @z
 
 @x
-    <para>In g++, four tests related to PR100400 are known to be reported
-    as both XPASS and FAIL.  It's because the test file for this known issue
+    <para>Four tests related to PR100400 may be reported
+    as both XPASS and FAIL when testing the g++ compiler; the test file
     is not well written.</para>
 @y
     <para>
-    g++ においては PR100400 に関連するテスト 4 つが XPASS および FAIL として出力されます。
+    g++ のテストにおいては、PR100400 に関連するテスト 4 つが XPASS および FAIL として出力されます。
     この問題はテストファイルが適切に記述されていないために発生します。
     </para>
 @z
@@ -267,13 +267,13 @@
 
 @x
     <para>The GCC build directory is owned by <systemitem class="username">
-    tester</systemitem> now and the ownership of the installed header
-    directory (and its content) will be incorrect.  Change the ownership to
+    tester</systemitem> now, and the ownership of the installed header
+    directory (and its content) is incorrect.  Change the ownership to the
     <systemitem class="username">root</systemitem> user and group:</para>
 @y
     <para>
     GCC のビルドディレクトリの所有者は <systemitem class="username">
-    tester</systemitem> であるため、ヘッダーがインストールされるディレクトリ（とその内容）に対する所有権が不適切なものになります。
+    tester</systemitem> であるため、ヘッダーがインストールされるディレクトリ（とその内容）に対する所有権が不適切です。
     そこでその所有権を <systemitem class="username">root</systemitem> ユーザーとグループに変更します。
     </para>
 @z
@@ -333,7 +333,7 @@
 @z
 
 @x
-  <para>Now make sure that we're setup to use the correct start files:</para>
+  <para>Now make sure that we're set up to use the correct start files:</para>
 @y
   <para>
   ここで起動ファイルが正しく用いられていることを確認します。
@@ -421,7 +421,7 @@
 %@z
 
 @x
-   <para>A 32-bit system may see a few different directories. For example, here
+   <para>A 32-bit system may use a few other directories. For example, here
    is the output from an i686 machine:</para>
 @y
    <para>
@@ -469,7 +469,7 @@
   at all, then something is seriously wrong. Investigate and retrace the
   steps to find out where the problem is and correct it. <!--The most likely
   reason is that something went wrong with the specs file adjustment.--> Any
-  issues will need to be resolved before continuing with the process.</para>
+  issues should be resolved before continuing with the process.</para>
 @y
   <para>
   出力結果が上と異なっていたり、出力が全く得られなかったりした場合は、何かが根本的に間違っているということです。
@@ -560,11 +560,11 @@
 
 @x cpp
           <para>The C preprocessor; it is used by the compiler to expand the
-          #include, #define, and similar statements in the source files</para>
+          #include, #define, and similar directives in the source files</para>
 @y
           <para>
           C プリプロセッサー。
-          コンパイラーがこれを利用して、ソース内に記述された #include、#define や同じようなステートメントを展開します。
+          コンパイラーがこれを利用して、ソース内に記述された #include、#define や同じようなディレクティブを展開します。
           </para>
 @z
 
@@ -584,7 +584,7 @@
           <para>A wrapper around <command>ar</command> that adds a
           plugin to the command line. This program is only used
           to add "link time optimization" and is not useful with the
-          default build options</para>
+          default build options.</para>
 @y
           <para>
           <command>ar</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
@@ -597,7 +597,7 @@
           <para>A wrapper around <command>nm</command> that adds a
           plugin to the command line. This program is only used
           to add "link time optimization" and is not useful with the
-          default build options</para>
+          default build options.</para>
 @y
           <para>
           <command>nm</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
@@ -610,7 +610,7 @@
           <para>A wrapper around <command>ranlib</command> that adds a
           plugin to the command line. This program is only used
           to add "link time optimization" and is not useful with the
-          default build options</para>
+          default build options.</para>
 @y
           <para>
           <command>ranlib</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
@@ -621,7 +621,7 @@
 
 @x gcov
           <para>A coverage testing tool; it is used to analyze programs to
-          determine where optimizations will have the most effect</para>
+          determine where optimizations will have the greatest effect</para>
 @y
           <para>
           カバレッジテストツール。
@@ -687,7 +687,7 @@
 @z
 
 @x libgcov
-          <para>This library is linked in to a program when GCC is instructed
+          <para>This library is linked into a program when GCC is instructed
           to enable profiling</para>
 @y
           <para>
@@ -723,11 +723,11 @@
 @z
 
 @x liblto_plugin
-          <para>GCC's LTO plugin allows binutils to process object files
+          <para>GCC's LTO plugin allows Binutils to process object files
           produced by GCC with LTO enabled</para>
 @y
           <para>
-          GCC の LTO プラグインは、LTO を有効にした GCC から生成されたオブジェクトファイルを binnutils が処理できるようにします。
+          GCC の LTO プラグインは、LTO を有効にした GCC から生成されたオブジェクトファイルを Binnutils が処理できるようにします。
           </para>
 @z
 
@@ -741,12 +741,12 @@
 
 @x libssp
           <para>Contains routines supporting GCC's stack-smashing protection
-          functionality.  Normally it's unused because glibc also provides
-          those routines</para>
+          functionality.  Normally it is not used, because Glibc also provides
+          those routines.</para>
 @y
           <para>
           GCC のスタック破壊を防止する (stack-smashing protection) 機能をサポートするルーチンを提供します。
-          glibc から同じルーチンが提供されているため、通常は用いられません。
+          Glibc から同じルーチンが提供されているため、通常は用いられません。
           </para>
 @z
 

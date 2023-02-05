@@ -34,9 +34,9 @@
 @z
 
 @x
-    <para>Binutils ships an outdated libtool copy in the tarball.  It lacks
-    sysroot support so the produced binaries will be mistakenly linked to
-    libraries from the host distro.  Workaround this issue:</para>
+    <para>Binutils ships an outdated copy of libtool in the tarball.  It lacks
+    sysroot support, so the produced binaries will be mistakenly linked to
+    libraries from the host distro.  Work around this issue:</para>
 @y
     <para>
     Binutils の tarball では、古い libtool のコピーが提供されています。
@@ -123,8 +123,8 @@
 @z
 
 @x --enable-64-bit-bfd
-          <para>Enables 64-bit support (on hosts with narrower word sizes).
-          May not be needed on 64-bit systems, but does no harm.</para>
+          <para>Enables 64-bit support (on hosts with smaller word sizes).
+          This may not be needed on 64-bit systems, but it does no harm.</para>
 @y
           <para>
           64 ビットサポートを有効にします（ホスト上にて、より小さなワードサイズとします）。

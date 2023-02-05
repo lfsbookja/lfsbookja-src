@@ -18,9 +18,9 @@
 @x
   <para>LFS is designed to be built in one session.  That is, the
   instructions assume that the system will not be shut down
-  during the process.  That does not mean that the system has to
-  be done in one sitting.  The issue is that certain procedures
-  have to be re-accomplished after a reboot if resuming LFS at
+  during the process.  This does not mean that the system has to
+  be built in one sitting.  The issue is that certain procedures
+  must be repeated after a reboot when resuming LFS at
   different points.</para>
 @y
   <para>
@@ -38,19 +38,19 @@
 @z
 
 @x
-    <para>These chapters are accomplished on the host system.  When
-    restarting, be careful of the following:</para>
+    <para>These chapters run commands on the host system.  When
+    restarting, be certain of one thing:</para>
 @y
     <para>
-    これらの章ではホストシステム上で作業を行います。
+    これらの章ではホストシステム上でコマンド実行します。
     作業を再開する際には以下に注意します。
     </para>
 @z
 
 @x
-        <para>Procedures done as the
+        <para>Procedures performed as the
         <systemitem class="username">root</systemitem> user after Section
-        2.4 need to have the LFS environment variable set
+        2.4 must have the LFS environment variable set
         <emphasis>FOR THE ROOT USER</emphasis>.</para>
 @y
         <para>
@@ -76,7 +76,7 @@
 @x
         <para>These two chapters <emphasis>must</emphasis> be done as user
         <systemitem class="username">lfs</systemitem>.
-        A <command>su - lfs</command> command must be issued before any task in these
+        A <command>su - lfs</command> command must be issued before performing any task in these
         chapters. If you don't do that, you are at risk of installing packages to the
         host, and potentially rendering it unusable.</para>
 @y
@@ -90,8 +90,8 @@
 @x
          <para>The procedures in <xref linkend='ch-tools-generalinstructions'/>
          are critical.  If there is any
-         doubt about installing a package, ensure any previously expanded
-         tarballs are removed, then re-extract the package files, and complete all
+         doubt a package has been installed correctly, ensure the previously expanded
+         tarball has been removed, then re-extract the package, and complete all
          the instructions in that section.</para>
 @y
          <para>
@@ -129,7 +129,7 @@
 @x
          <para> When entering chroot, the LFS environment variable must be set
          for <systemitem class="username">root</systemitem>. The LFS
-         variable is not used after entering the chroot environment.</para>
+         variable is not used after the chroot environment has been entered.</para>
 @y
          <para>
          chroot 環境に入った際には、環境変数 LFS が <systemitem class="username">root</systemitem> ユーザーにおいて設定されている必要があります。

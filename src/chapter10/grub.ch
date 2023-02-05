@@ -17,7 +17,7 @@
 
 @x
       If your system has UEFI support and you wish to boot LFS with UEFI,
-      you should skip this page, and config GRUB with UEFI support
+      you should skip this page, and configure GRUB with UEFI support
       using the instructions provided in
       <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>.
 @y
@@ -74,8 +74,8 @@
     <para>GRUB uses its own naming structure for drives and partitions in
     the form of <emphasis>(hdn,m)</emphasis>, where <emphasis>n</emphasis>
     is the hard drive number and <emphasis>m</emphasis> is the partition
-    number. The hard drive number starts from zero, but the partition number
-    starts from one for normal partitions and five for extended partitions.  
+    number. The hard drive numbers start from zero, but the partition numbers
+    start from one for normal partitions (from five for extended partitions).
     Note that this is different from earlier versions where 
     both numbers started from zero. For example, partition <filename
     class="partition">sda1</filename> is <emphasis>(hd0,1)</emphasis> to
@@ -89,7 +89,7 @@
     <para>GRUB ではドライブやパーティションに対して <emphasis>(hdn,m)</emphasis> といった書式の命名法を採用しています。
     <emphasis>n</emphasis> はハードドライブ番号、<emphasis>m</emphasis> はパーティション番号を表します。
     ハードドライブ番号はゼロから数え始めます。
-    一方パーティション番号は、基本パーティションであれば１から、拡張パーティションであれば５から数え始めます。
+    一方パーティション番号は、基本パーティションであれば１から（拡張パーティションは５から）数え始めます。
     かつてのバージョンでは共にゼロから数え始めていましたが、今はそうではないので注意してください。
     例えば <filename
     class="partition">sda1</filename> は GRUB では <emphasis>(hd0,1)</emphasis> と表記され、<filename
@@ -136,7 +136,7 @@
     files and access can be made from any booted system.  If you choose to do
     this, you will need to mount the separate partition, move all files in the
     current <filename class="directory">/boot</filename> directory (e.g. the
-    linux kernel you just built in the previous section) to the new partition.
+    Linux kernel you just built in the previous section) to the new partition.
     You will then need to unmount the partition and remount it as <filename
     class="directory">/boot</filename>.  If you do this, be sure to update
     <filename>/etc/fstab</filename>.</para>
@@ -155,11 +155,13 @@
 @z
 
 @x
-    <para>Using the current lfs partition will also work, but configuration
+    <para>Leaving <filename class="directory">/boot</filename> on
+    the current LFS partition will also work, but configuration
     for multiple systems is more difficult.</para>
 @y
     <para>
-    現時点での LFS パーティションでも問題なく動作します。
+    現時点での LFS パーティションにて <filename
+    class="directory">/boot</filename> を残しておいても問題なく動作します。
     ただし複数システムを取り扱うための設定は、より複雑になります。
     </para>
 @z
@@ -278,15 +280,17 @@
       The change may cause boot failure because
       <filename>grub.cfg</filename> refers to some <quote>old</quote>
       designators.  If you wish to avoid such a problem, you may use
-      the UUID of partition and filesystem instead of GRUB designator to
-      specify a partition.
+      the UUID of a partition and the UUID of a filesystem instead of a GRUB designator to
+      specify a device.
       Run <command>lsblk -o UUID,PARTUUID,PATH,MOUNTPOINT</command> to show
-      the UUID of your filesystems (in <literal>UUID</literal> column) and
-      partitions (in <literal>PARTUUID</literal> column).  Then replace
+      the UUIDs of your filesystems (in the <literal>UUID</literal> column) and
+      partitions (in the <literal>PARTUUID</literal> column).  Then replace
       <literal>set root=(hdx,y)</literal> with
-      <literal>search --set=root --fs-uuid <replaceable>&lt;UUID of the filesystem where the kernel is installed&gt;</replaceable></literal>, and replace
+      <literal>search --set=root --fs-uuid <replaceable>&lt;UUID of the filesystem
+      where the kernel is installed&gt;</replaceable></literal>, and replace
       <literal>root=/dev/sda2</literal> with
-      <literal>root=PARTUUID=<replaceable>&lt;UUID of the partition where LFS is built&gt;</replaceable></literal>.</para>
+      <literal>root=PARTUUID=<replaceable>&lt;UUID of the partition where LFS 
+      is built&gt;</replaceable></literal>.</para>
 @y
       <para>
       GRUB のパーティション指示子は、（USB サムデバイスといったリムーバルディスクを含め）ディスクの加除によって変わることがあります。
@@ -301,13 +305,13 @@
 @z
 
 @x
-      <para>Note that the UUID of a partition and the UUID of the filesystem
-      in this partition is completely different.  Some online resources may
+      <para>Note that the UUID of a partition is completely different from the
+      UUID of the filesystem in this partition.  Some online resources may
       instruct you to use
       <literal>root=UUID=<replaceable>&lt;filesystem UUID&gt;</replaceable></literal>
       instead of
       <literal>root=PARTUUID=<replaceable>&lt;partition UUID&gt;</replaceable></literal>,
-      but doing so will require an initramfs which is beyond the scope of
+      but doing so will require an initramfs, which is beyond the scope of
       LFS.</para>
 @y
       <para>
@@ -319,8 +323,8 @@
 
 @x
       <para>The name of the device node for a partition in
-      <filename class='directory'>/dev</filename> may also change (more
-      unlikely than GRUB designator change though).  You can also replace
+      <filename class='directory'>/dev</filename> may also change (this is less
+      likely than a GRUB designator change).  You can also replace
       paths to device nodes like <literal>/dev/sda1</literal> with
       <literal>PARTUUID=<replaceable>&lt;partition UUID&gt;</replaceable></literal>,
       in <filename>/etc/fstab</filename>, to avoid a potential boot failure

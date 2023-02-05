@@ -11,10 +11,10 @@
 
 @x
     <para>The Groff package contains programs for processing and formatting
-    text.</para>
+    text and images.</para>
 @y
     <para>
-    Groff パッケージはテキストを処理して整形するプログラムを提供します。
+    Groff パッケージはテキストやイメージを処理して整形するプログラムを提供します。
     </para>
 @z
 
@@ -172,7 +172,7 @@
 @z
 
 @x gperl
-          <para>Preprocesor for groff, allowing addition of perl code
+          <para>Preprocesor for groff, allowing the insertion of perl code
           into groff files</para>
 @y
           <para>
@@ -181,19 +181,21 @@
 @z
 
 @x gpinyin
-          <para>Preprocesor for groff, allowing addition of Chinese
-          European-like language Pinyin into groff files.</para>
+          <para>Preprocesor for groff, allowing the insertion of Pinyin
+          (Mandarin Chinese spelled with the Roman alphabet) into groff files.</para>
 @y
           <para>
-          groff プリプロセッサーであり groff ファイルへの中国語発音 Pinyin 追加を行います。
+          groff プリプロセッサーであり groff ファイルへの Pinyin（北京語のローマ字つづり）追加を行います。
           </para>
 @z
 
 @x grap2graph
-          <para>Converts a grap diagram into a cropped bitmap image</para>
+          <para>Converts a grap program file into a cropped bitmap image
+          (grap is an old Unix programming language for creating diagrams)</para>
 @y
           <para>
-          grap ダイアグラムを、刈り込んだ (crop した) ビットマップイメージに変換します。
+          grap プログラムファイルを、刈り込んだ (crop した) ビットマップイメージに変換します。
+          （grap は、ダイアグラムを生成する、かつての Unix プログラミング言語です。）
           </para>
 @z
 
@@ -207,15 +209,15 @@
 
 @x grodvi
           <para>A driver for <command>groff</command> that produces TeX dvi
-          format</para>
+          format output files</para>
 @y
           <para>
-          TeX の dvi フォーマットを生成するための <command>groff</command> ドライバープログラム。
+          TeX の出力ファイルである dvi フォーマットを生成するための <command>groff</command> ドライバープログラム。
           </para>
 @z
 
 @x groff
-          <para>A front-end to the groff document formatting system; normally, it
+          <para>A front end to the groff document formatting system; normally, it
           runs the <command>troff</command> program and a post-processor
           appropriate for the selected device</para>
 @y

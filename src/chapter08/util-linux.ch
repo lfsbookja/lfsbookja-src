@@ -34,7 +34,7 @@
 
 @x
     <para>The --disable and --without options prevent warnings about
-    building components that require packages not in LFS or are
+    building components that either require packages not in LFS, or are
     inconsistent with programs installed by other packages.</para>
 @y
     <para>
@@ -63,14 +63,14 @@
     be available in the currently running system and must be built as a
     module.  Building it into the kernel will prevent booting.  For complete
     coverage, other BLFS packages must be installed.  If desired, this test can
-    be run after rebooting into the completed LFS system and running:</para>
+    be run by booting into the completed LFS system and running:</para>
 @y
     <warning><para>
     <systemitem class="username">root</systemitem> ユーザーによりテストスイートを実行すると、システムに悪影響を及ぼすことがあります。
     テストスイートを実行するためには、カーネルオプション CONFIG_SCSI_DEBUG が現環境にて有効であり、かつモジュールとしてビルドされていなければなりません。
     カーネルに組み込んでいるとブートできません。
     またテストを完全に実施するには BLFS での各種パッケージのインストールも必要になります。
-    テストが必要であるなら、LFS システムを完成した後に、再起動したシステムにて以下を実行します。
+    テストが必要であるなら、構築済 LFS システムを起動して以下を実行します。
     </para>
 @z
 
@@ -117,16 +117,17 @@
         <seg>addpart, agetty, blkdiscard, blkid, blkzone, blockdev, cal, cfdisk, chcpu,
         chmem, choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
         eject, fallocate, fdisk, fincore, findfs, findmnt, flock, fsck,
-        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
-        i386, ionice, ipcmk, ipcrm, ipcs, irqtop, isosize, kill, last, lastb (link to
-        last), ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lsipc, lsirq, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hardlink, hexdump, hwclock,
+        i386 (link to setarch), ionice, ipcmk, ipcrm, ipcs, irqtop, isosize, kill, last, 
+        lastb (link to last), ldattach, linux32 (link to setarch), linux64 (link to setarch),
+        logger, look, losetup, lsblk, lscpu, lsipc, lsirq, lsfd, lslocks, lslogins,
+        lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
         more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit,
         readprofile, rename, renice, resizepart, rev, rfkill, rtcwake, script,
         scriptlive, scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
-        swapoff (link to swapon), swapon, switch_root, taskset, uclampset, ul,
-        umount, uname26, unshare, utmpdump, uuidd, uuidgen, uuidparse, wall, wdctl, whereis,
-        wipefs, x86_64, and zramctl</seg>
+        swapoff, swapon, switch_root, taskset, uclampset, ul,
+        umount, uname26 (link to setarch), unshare, utmpdump, uuidd, uuidgen, uuidparse,
+        wall, wdctl, whereis, wipefs, x86_64 (link to setarch), and zramctl</seg>
         <seg>libblkid.so, libfdisk.so, libmount.so,
         libsmartcols.so, and libuuid.so</seg>
         <seg>/usr/include/blkid,
@@ -140,16 +141,17 @@
         <seg>addpart, agetty, blkdiscard, blkid, blkzone, blockdev, cal, cfdisk, chcpu,
         chmem, choom, chrt, col, colcrt, colrm, column, ctrlaltdel, delpart, dmesg,
         eject, fallocate, fdisk, fincore, findfs, findmnt, flock, fsck,
-        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock,
-        i386, ionice, ipcmk, ipcrm, ipcs, irqtop, isosize, kill, last, lastb (last へのリンク),
-        ldattach, linux32, linux64, logger, look, losetup, lsblk, lscpu,
-        lsipc, lsirq, lslocks, lslogins, lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
+        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hardlink, hexdump, hwclock,
+        i386 (setarch へのリンク), ionice, ipcmk, ipcrm, ipcs, irqtop, isosize, kill, last, 
+        lastb (last へのリンク), ldattach, linux32 (setarch へのリンク), linux64 (setarch へのリンク),
+        logger, look, losetup, lsblk, lscpu, lsipc, lsirq, lsfd, lslocks, lslogins,
+        lsmem, lsns, mcookie, mesg, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap,
         more, mount, mountpoint, namei, nsenter, partx, pivot_root, prlimit,
         readprofile, rename, renice, resizepart, rev, rfkill, rtcwake, script,
         scriptlive, scriptreplay, setarch, setsid, setterm, sfdisk, sulogin, swaplabel,
-        swapoff (swapon へのリンク), swapon, switch_root, taskset, uclampset, ul,
-        umount, uname26, unshare, utmpdump, uuidd, uuidgen, uuidparse, wall, wdctl, whereis,
-        wipefs, x86_64, zramctl</seg>
+        swapoff, swapon, switch_root, taskset, uclampset, ul,
+        umount, uname26 (setarch へのリンク), unshare, utmpdump, uuidd, uuidgen, uuidparse,
+        wall, wdctl, whereis, wipefs, x86_64 (setarch へのリンク), zramctl</seg>
         <seg>libblkid.so, libfdisk.so, libmount.so,
         libsmartcols.so, libuuid.so</seg>
         <seg>/usr/include/blkid,
@@ -203,10 +205,10 @@
 @z
 
 @x blkzone
-          <para>Runs zone command on the given block device</para>
+          <para>Is used to manage zoned storage block devices</para>
 @y
           <para>
-          指定されたブロックデバイスにおいてゾーンコマンドを実行します。
+          ゾーン処理されたブロックデバイスの管理に用いられます。
           </para>
 @z
 
@@ -250,9 +252,13 @@
 @z
 
 @x choom
-          <para>Displays and adjusts OOM-killer score</para>
+          <para>Displays and adjusts OOM-killer scores, used to determine
+          which process to kill first when Linux is Out Of Memory</para>
 @y
-          <para>OOM-killer スコアを表示し調整します。</para>
+          <para>
+          OOM-killer スコアを表示し調整します。
+          Linux が Out Of Memory となった場合に、どのプロセスを最初に kill するべきかを判断するために用いられます。
+          </para>
 @z
 
 @x chrt
@@ -354,7 +360,7 @@
 @z
 
 @x findfs
-          <para>Finds a file system by label or Universally Unique Identifier
+          <para>Finds a file system, either by label or Universally Unique Identifier
           (UUID)</para>
 @y
           <para>
@@ -363,8 +369,8 @@
 @z
 
 @x findmnt
-          <para>Is a command line interface to the libmount library 
-          for work with mountinfo, fstab and mtab files</para>
+          <para>Is a command line interface to the libmount library
+          for working with mountinfo, fstab and mtab files</para>
 @y
           <para>
           libmount ライブラリに対するコマンドラインインターフェース。
@@ -435,12 +441,20 @@
           </para>
 @z
 
-@x hexdump
-          <para>Dumps the given file in hexadecimal or in another given
-          format</para>
+@x hardlink
+          <para>Consolidates duplicate files by creating hard links</para>
 @y
           <para>
-          指定されたファイルを 16進数書式または他の指定された書式でダンプします。
+          ハードリンクを生成することで重複ファイルを統合します。
+          </para>
+@z
+
+@x hexdump
+          <para>Dumps the given file in hexadecimal, decimal, octal,
+          or ascii</para>
+@y
+          <para>
+          指定されたファイルを 16 進数、10 進数、8 進数、アスキーの各書式でダンプします。
           </para>
 @z
 
@@ -610,6 +624,15 @@
           </para>
 @z
 
+@x lsfd
+          <para>Displays information about open files; replaces <command>lsof</command></para>
+@y
+          <para>
+          オープンしているファイルについての情報を表示します。
+          <command>lsof</command> に代わるものです。
+          </para>
+@z
+
 @x lsipc
           <para>Prints information on IPC facilities currently employed
           in the system</para>
@@ -747,7 +770,7 @@
 @z
 
 @x namei
-          <para>Shows the symbolic links in the given pathnames</para>
+          <para>Shows the symbolic links in the given paths</para>
 @y
           <para>
           指定されたパスに存在するシンボリックリンクを表示します。
@@ -781,7 +804,7 @@
 @z
 
 @x prlimit
-          <para>Get and set a process' resource limits</para>
+          <para>Gets and sets a process's resource limits</para>
 @y
           <para>
           プロセスが利用するリソースの限界値を取得または設定します。
@@ -842,7 +865,7 @@
 @z
 
 @x rtcwake
-          <para>Used to enter a system sleep state until specified wakeup
+          <para>Used to enter a system sleep state until the specified wakeup
           time</para>
 @y
           <para>
@@ -859,7 +882,7 @@
 @z
 
 @x scriptlive
-          <para>Re-run session typescripts using timing information</para>
+          <para>Re-runs session typescripts using timing information</para>
 @y
           <para>
           タイミング情報を使って、セッションのタイプスクリプトを再実行します。
@@ -875,7 +898,7 @@
 @z
 
 @x setarch
-          <para>Changes reported architecture in a new program environment and
+          <para>Changes reported architecture in a new program environment, and
           sets personality flags</para>
 @y
           <para>
@@ -920,7 +943,7 @@
 @z
 
 @x swaplabel
-          <para>Allows to change swaparea UUID and label</para>
+          <para>Makes changes to the swap area's UUID and label</para>
 @y
           <para>
           スワップ領域の UUID とラベルを変更します。
@@ -936,7 +959,7 @@
 @z
 
 @x swapon
-          <para>Enables devices and files for paging and swapping and
+          <para>Enables devices and files for paging and swapping, and
           lists the devices and files currently in use</para>
 @y
           <para>
@@ -954,7 +977,7 @@
 @z
 
 @x taskset
-          <para>Retrieves or sets a process' CPU affinity</para>
+          <para>Retrieves or sets a process's CPU affinity</para>
 @y
           <para>
           プロセスの CPU 親和性 (affinity) を表示または設定します。
@@ -962,7 +985,7 @@
 @z
 
 @x uclampset
-          <para>Manipulate the utilization clamping attributes of the
+          <para>Manipulates the utilization clamping attributes of the
           system or a process</para>
 @y
           <para>
@@ -1009,7 +1032,7 @@
 @z
 
 @x utmpdump
-          <para>Displays the content of the given login file in a more
+          <para>Displays the content of the given login file in a
           user-friendly format</para>
 @y
           <para>
@@ -1028,18 +1051,20 @@
 @z
 
 @x uuidgen
-          <para>Creates new UUIDs. Each new UUID can reasonably be considered
+          <para>Creates new UUIDs. Each new UUID is a random number likely to be
           unique among all UUIDs created, on the local system and on other
-          systems, in the past and in the future</para>
+          systems, in the past and in the future, with extremely high
+          probability (~340 trillion trillion trillion unique UUIDs are possible)</para>
 @y
           <para>
           新しい UUID を生成します。
-          生成される UUID は当然、他に生成されている UUID とは異なり、自他システムでも過去現在にわたってもユニークなものです。
+          生成される UUID は乱数であり、自他システムでも過去現在にわたってもユニークなものです。
+          その可能性は極めて高いものです（340 兆×兆×兆個の UUID が可能です）。
           </para>
 @z
 
 @x uuidparse
-          <para>An utility to parse unique identifiers</para>
+          <para>A utility to parse unique identifiers</para>
 @y
           <para>
           ユニークな識別子を解析するためのユーティリティー。
@@ -1065,7 +1090,7 @@
 
 @x whereis
           <para>Reports the location of the binary, source, and man page
-          for the given command</para>
+          files for the given command</para>
 @y
           <para>
           指定されたコマンドの実行モジュール、ソース、man ページの場所を表示します。

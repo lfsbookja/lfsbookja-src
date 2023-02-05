@@ -10,9 +10,9 @@
 @z
 
 @x
-    <para>The Libcap package implements the user-space interfaces to the POSIX
-    1003.1e capabilities available in Linux kernels. These capabilities are a
-    partitioning of the all powerful root privilege into a set of distinct
+    <para>The Libcap package implements the userspace interface to the POSIX
+    1003.1e capabilities available in Linux kernels. These capabilities
+    partition the all-powerful root privilege into a set of distinct
     privileges.</para>
 @y
     <para>
@@ -120,7 +120,7 @@
 @z
 
 @x getpcaps
-          <para>Displays the capabilities on the queried process(es)</para>
+          <para>Displays the capabilities of the queried process(es)</para>
 @y
           <para>
           指定されたプロセスの拡張属性を表示します。

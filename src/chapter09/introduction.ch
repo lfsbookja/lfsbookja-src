@@ -17,17 +17,17 @@
 
 @x
     <para>Booting a Linux system involves several tasks.  The process must
-    mount both virtual and real file systems, initialize devices, activate swap,
-    check file systems for integrity, mount any swap partitions or files, set
+    mount both virtual and real file systems, initialize devices, 
+    check file systems for integrity, mount and activate any swap partitions or files, set
     the system clock, bring up networking, start any daemons required by the
-    system, and accomplish any other custom tasks needed by the user.  This
+    system, and accomplish any other custom tasks specified by the user.  This
     process must be organized to ensure the tasks are performed in the correct
-    order but, at the same time, be executed as fast as possible.</para>
+    order and executed as quickly as possible.</para>
 @y
     <para>
     Linux システムの起動時には実行されるタスクがいくつかあります。
-    実質的および仮想的なファイルシステムのマウント、デバイスの初期化、スワップ有効化、ファイルシステムの整合チェック、スワップパーティションなどのマウント、システムクロックの設定、ネットワーク起動、システムデーモンの起動、そしてユーザー指定によるタスクの起動です。
-    この処理過程は適正な順序により実行されることが必要ですが、同時に出来るだけ速く処理されることも必要になります。
+    実質的および仮想的なファイルシステムのマウント、デバイスの初期化、ファイルシステムの整合チェック、スワップパーティションまたはスワップファイルのマウントと有効化、システムクロックの設定、ネットワーク起動、システムデーモンの起動、そしてユーザー指定によるタスクの起動です。
+    この処理過程は適正な順序により実行されることが必要ですが、出来るだけ速く処理されることも必要になります。
     </para>
 @z
 
@@ -50,7 +50,7 @@
 @x
     <para>System V is the classic boot process that has been used in Unix and
     Unix-like systems such as Linux since about 1983.  It consists of a small
-    program, <command>init</command>, that sets up basic programs such as
+    program, <command>init</command>, that sets up basic processes such as
     <command>login</command> (via getty) and runs a script.  This script,
     usually named <command>rc</command>,  controls the execution of a set of
     additional scripts that perform the tasks required to initialize the
@@ -58,7 +58,7 @@
 @y
     <para>
     System V は古くからあるブートシステムであり、Unix や Unix ライクである Linux において 1983年頃より活用されています。
-    小さなプログラム <command>init</command> があり、これが <command>login</command> のような基本的なプログラムを (getty を通じて) 設定しスクリプトを実行します。
+    小さなプログラム <command>init</command> があり、これが <command>login</command> のような基本的なプロセスを (getty を通じて) 設定しスクリプトを実行します。
     そのスクリプトは通常 <command>rc</command> と命名され、他のスクリプトの実行を制御します。
     こうしてシステムの初期化を行うタスクが処理されます。
     </para>
@@ -67,11 +67,11 @@
 @x
     <para>The <command>init</command> program is controlled by the
     <filename>/etc/inittab</filename> file and is organized into run levels that
-    can be run by the user. In LFS, they are used as follows:</para>
+    can be chosen by the user. In LFS, they are used as follows:</para>
 @y
     <para>
     <command>init</command> プログラムは <filename>/etc/inittab</filename> ファイルにより制御されます。
-    そしてユーザーが設定可能なランレベルを設定します。
+    そしてユーザーが選択したランレベルを設定します。
     LFS においては以下のものが利用されます。
     </para>
 @z
@@ -146,7 +146,7 @@
 
 @x
           <para>Serial processing of boot tasks. This is related to the previous
-          point.  A delay in any process such as a file system check, will
+          point.  A delay in any process, such as a file system check, will
           delay the entire boot process.</para>
 @y
           <para>
@@ -158,7 +158,7 @@
 
 @x
           <para>Does not directly support advanced features like
-          control groups (cgroups), and per-user fair share scheduling.</para>
+          control groups (cgroups) and per-user fair share scheduling.</para>
 @y
           <para>
           コントロールグループ (control groups; cgroups) やユーザーごとの適正なスケジュール共有といった、最新機能には直接対応していないこと。

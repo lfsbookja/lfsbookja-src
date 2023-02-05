@@ -26,12 +26,12 @@
 
 @x
     <para>The <command>arpd</command> program included in this package will not
-    be built since it is dependent on Berkeley DB, which is not installed in
-    LFS. However, a directory for <command>arpd</command> and a man page will still
-    be installed. Prevent this by running the commands below.
-    If the <command>arpd</command> binary is needed,
-    instructions for compiling Berkeley DB can be found in the BLFS Book at
-    <ulink url="&blfs-book;server/db.html"/>.
+    be built since it depends on Berkeley DB, which is not installed in
+    LFS. However, a directory and a man page for <command>arpd</command> will still
+    be installed. Prevent this by running the commands shown below.
+    (If the <command>arpd</command> program is needed,
+    instructions for compiling Berkeley DB can be found in the BLFS book at
+    <ulink url="&blfs-book;server/db.html"/>.)
     </para>
 @y
     <para>
@@ -39,8 +39,8 @@
     したがって <command>arpd</command> プログラムはインストールしません。
     ただし <command>arpd</command> プログラムに対応するディレクトリや man ページはインストールされてしまいます。
     これをインストールしないように、以下のコマンドを実行します。
-    <command>arpd</command> プログラムを必要とする場合は BLFS ブックの <ulink
-    url="&blfs-book;server/db.html#db"/> に示される Berkeley DB の構築手順に従ってください。
+    （<command>arpd</command> プログラムを必要とする場合は BLFS ブックの <ulink
+    url="&blfs-book;server/db.html#db"/> に示される Berkeley DB の構築手順に従ってください。）
     </para>
 @z
 
@@ -113,14 +113,14 @@
 @z
 
 @x
-        <seg>bridge, ctstat (link to lnstat), genl, ifcfg, ifstat, ip, lnstat,
-        nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (link to lnstat), ss,
+        <seg>bridge, ctstat (link to lnstat), genl, ifstat, ip, lnstat,
+        nstat, routel, rtacct, rtmon, rtpr, rtstat (link to lnstat), ss,
         and tc</seg>
         <seg>/etc/iproute2, /usr/lib/tc, and /usr/share/doc/iproute2-&iproute2-version;
         </seg>
 @y
-        <seg>bridge, ctstat (lnstat へのリンク), genl, ifcfg, ifstat, ip, lnstat,
-        nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (lnstat へのリンク), ss,
+        <seg>bridge, ctstat (lnstat へのリンク), genl, ifstat, ip, lnstat,
+        nstat, routel, rtacct, rtmon, rtpr, rtstat (lnstat へのリンク), ss,
         tc</seg>
         <seg>/etc/iproute2, /usr/lib/tc, /usr/share/doc/iproute2-&iproute2-version;
         </seg>
@@ -149,28 +149,16 @@
 @z
 
 @x genl
-          <para>Generic netlink utility frontend</para>
+          <para>Generic netlink utility front end</para>
 @y
           <para>
           汎用的な netlink ユーティリティフロントエンド。
           </para>
 @z
 
-@x ifcfg
-          <para>A shell script wrapper for the <command>ip</command> command
-          [Note that it requires the <command>arping</command> and
-          <command>rdisk</command> programs from the
-          iputils package found at <ulink url="http://www.skbuff.net/iputils/"/>.]</para>
-@y
-          <para>
-          <command>ip</command> コマンドに対するシェルスクリプトラッパー。
-          <ulink url="http://www.skbuff.net/iputils/"/> にて提供されている iputils パッケージの <command>arping</command> プログラムと <command>rdisk</command> プログラムを利用します。
-          </para>
-@z
-
 @x ifstat
-          <para>Shows the interface statistics, including the amount of
-          transmitted and received packets by interface</para>
+          <para>Shows interface statistics, including the number of
+          packets transmitted and received, by interface</para>
 @y
           <para>
           インターフェースの統計情報を表示します。
@@ -179,10 +167,11 @@
 @z
 
 @x ip
-          <para>The main executable. It has several different functions:</para>
+          <para>The main executable. It has several different functions, including these:</para>
 @y
           <para>
           主となる実行モジュールで、複数の機能性を持ちます。
+          以下のようなものです。
           </para>
 @z
 @x
@@ -271,25 +260,15 @@
 @z
 
 @x nstat
-          <para>Shows network statistics</para>
+          <para>Displays network statistics</para>
 @y
           <para>
           ネットワーク統計情報を表示します。
           </para>
 @z
 
-@x routef
-          <para>A component of <command>ip route</command>. This is for flushing
-          the routing tables</para>
-@y
-          <para>
-          <command>ip route</command> のコンポーネント。
-          これはルーティングテーブルをクリアします。
-          </para>
-@z
-
 @x routel
-          <para>A component of <command>ip route</command>. This is for listing
+          <para>A component of <command>ip route</command>, for listing
           the routing tables</para>
 @y
           <para>
@@ -316,7 +295,7 @@
 @z
 
 @x rtpr
-          <para>Converts the output of <command>ip -o</command> back into a
+          <para>Converts the output of <command>ip -o</command> into a
           readable form</para>
 @y
           <para>
@@ -343,20 +322,15 @@
 @z
 
 @x tc
-          <para>Traffic Controlling Executable; this is for Quality Of Service
-          (QOS) and Class Of Service (COS) implementations</para>
+          <para>Traffic control for Quality of Service
+          (QoS) and Class of Service (CoS) implementations</para>
 @y
-          <!--
-          日本語訳註： 2009-09-07 matsuand
-          Traffic Controlling Executable がすべて大文字である。
-          -->
           <para>
-          トラフィック制御プログラム (Traffic Controlling Executable)。
-          これは QOS (Quality Of Service) と COS (Class Of Service) を実装するプログラムです。
+          QoS (Quality Of Service) と CoS (Class Of Service) を実装するトラフィック制御です。
           </para>
 @z
 @x
-          <para><command>tc qdisc</command> allows users to setup the queueing
+          <para><command>tc qdisc</command> allows users to set up the queueing
           discipline</para>
 @y
           <para>
@@ -364,7 +338,7 @@
           </para>
 @z
 @x
-          <para><command>tc class</command> allows users to setup classes based
+          <para><command>tc class</command> allows users to set up classes based
           on the queuing discipline scheduling</para>
 @y
           <para>
@@ -372,27 +346,18 @@
           </para>
 @z
 @x
-          <para><command>tc estimator</command> allows users to estimate the
-          network flow into a network</para>
-@y
-          <para>
-          <command>tc estimator</command> はネットワークフローを見積もります。
-          </para>
-@z
-@x
-          <para><command>tc filter</command> allows users to setup the QOS/COS
+          <para><command>tc filter</command> allows users to set up the QoS/CoS
           packet filtering</para>
 @y
           <para>
           <command>tc filter</command> は、QOS/COS パケットのフィルタリング設定を行います。
           </para>
 @z
-
 @x
-          <para><command>tc policy</command> allows users to setup the QOS/COS
-          policies</para>
+          <para><command>tc monitor</command> can be used to view changes
+          made to Traffic Control in the kernel.</para>
 @y
           <para>
-          <command>tc policy</command> は、QOS/COS ポリシーの設定を行います。
+          <command>tc monitor</command> は、カーネル内のトラフィック制御に対して行われた変更を参照するために用いられます。
           </para>
 @z

@@ -10,11 +10,11 @@
 @z
 
 @x
-    <para>The attr package contains utilities to administer the extended
-    attributes on filesystem objects.</para>
+    <para>The Attr package contains utilities to administer the extended
+    attributes of filesystem objects.</para>
 @y
     <para>
-    attr パッケージは、ファイルシステム上のオブジェクトに対しての拡張属性を管理するユーティリティを提供します。
+    Attr パッケージは、ファイルシステム上のオブジェクトに対しての拡張属性を管理するユーティリティを提供します。
     </para>
 @z
 
@@ -37,7 +37,7 @@
 @z
 
 @x
-    <para>The tests need to be run on a filesystem that supports extended
+    <para>The tests must be run on a filesystem that supports extended
     attributes such as the ext2, ext3, or ext4 filesystems.
     To test the results, issue:</para>
 @y

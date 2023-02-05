@@ -16,7 +16,7 @@
 @z
 
 @x
-  <para>Finally, clean up some extra files left around from running tests:</para>
+  <para>Finally, clean up some extra files left over from running tests:</para>
 @y
   <para>
   テストを通じて生成された不要なファイル等を削除します。
@@ -24,16 +24,16 @@
 @z
 
 @x
-  <para>There are also several files installed in the /usr/lib and /usr/libexec
+  <para>There are also several files in the /usr/lib and /usr/libexec
   directories with a file name extension of .la. These are "libtool archive"
-  files. As already said, on a modern Linux system the libtool .la files are
+  files. On a modern Linux system the libtool .la files are
   only useful for libltdl.  No libraries in LFS are expected to be loaded
-  by libltdl, and it's known that some .la files can cause BLFS packages
-  fail to build.  Remove those files now:</para>
+  by libltdl, and it's known that some .la files can break BLFS package
+  builds.  Remove those files now:</para>
 @y
   <para>
-  また /usr/lib ディレクトリと /usr/libexec ディレクトリには、拡張子が .la であるファイルがいくつかインストールされます。
-  すでに説明しているように、最近の Linux システムにおいて libtool の .la ファイルは、libltdl に対してのみ用いられます。
+  また /usr/lib ディレクトリと /usr/libexec ディレクトリには、拡張子が .la であるファイルがいくつかあります。
+  最近の Linux システムにおいて libtool の .la ファイルは、libltdl に対してのみ用いられます。
   LFS 内のライブラリは、libltdl によってロードされるものは一つもありません。
   これらのライブラリによって BLFS パッケージのビルドに失敗することが分かっています。
   そこでそのようなファイルをここで削除します。

@@ -18,16 +18,16 @@
 @z
 
 @x
-      <para>This section is not strictly required for LFS if not using
-      systemd. On the other hand, ninja associated to meson makes
+      <para>This section is not strictly required when LFS does not use
+      systemd. On the other hand, Ninja, along with Meson, makes
       a powerful build system combination,
-      which is expected to be used more and more often. It is required for
+      which will probably be used more and more often. It is required for
       several packages in <ulink url="&blfs-book;">the BLFS
       book</ulink>.</para>
 @y
       <para>
       本節は正確に言うと systemd を利用しないのであれば LFS において必要ありません。
-      一方で meson/ninja というものは強力なビルドシステムであり、利用する機会がかなり多いものと思われます。
+      一方で Meson とともに使う Ninja というものは強力なビルドシステムであり、利用する機会がかなり多くなると思われます。
       <ulink url="&blfs-book;">BLFS ブック</ulink> においては、これを必要とするパッケージがいくつかあります。
       </para>
 @z
@@ -39,19 +39,19 @@
 @z
 
 @x
-    <para>When run, ninja normally runs a maximum number of processes
-    in parallel.  By default this is the number of cores on the system
-    plus two.  In some cases this can overheat a CPU or run a system out
-    of memory.  If run from the command line, passing a -jN parameter
-    will limit the number of parallel processes, but some packages
-    embed the execution of ninja and do not pass a -j parameter.</para>
+    <para>When run, <command>ninja</command> normally utilizes the greatest
+    possible number of processes in parallel.  By default this is the number of cores on the system,
+    plus two.  This may overheat the CPU, or make the system run out
+    of memory.  When <command>ninja</command> is invoked from the command line, passing the -jN parameter
+    will limit the number of parallel processes. Some packages
+    embed the execution of <command>ninja</command>, and do not pass the -j parameter on to it.</para>
 @y
     <para>
-    ninja は同時に最大数のプロセスにより処理実行します。
+    <command>ninja</command> は、可能な限り最大数のプロセスを使って並行処理により実行します。
     そのプロセス数はデフォルトでは、システムのコア数に 2 を加えたものとなります。
     このことが CPU をオーバーヒートさせたり、out of memory を引き起こす場合があります。
-    コマンドラインから実行する場合には -jN パラメーターを使って、並行プロセスの数を制御することもできます。
-    ただ ninja の実行を組み込んでいるパッケージの場合は -j パラメーターを与えることができません。
+    <command>ninja</command> をコマンドラインから実行する場合には -jN パラメーターを使って、並行プロセスの数を制御することもできます。
+    ただ <command>ninja</command> の実行を組み込んでいるパッケージの場合は -j パラメーターを与えることができません。
     </para>
 @z
 
@@ -66,18 +66,18 @@
 @z
 
 @x
-    will limit ninja to four parallel processes.</para>
+    will limit <command>ninja</command> to four parallel processes.</para>
 @y
-    こうすると ninja の並行プロセスを 4 つに制限できます。
+    こうすると <command>ninja</command> の並行プロセスを 4 つに制限できます。
     </para>
 @z
 
 @x
-    <para>If desired, add the capability to use the environment variable
-    NINJAJOBS by running:</para>
+    <para>If desired, make <command>ninja</command> recognize the environment variable
+    NINJAJOBS by running the stream editor:</para>
 @y
     <para>
-    必要な場合は、環境変数 NINJAJOBS を利用するために以下を実行します。
+    必要な場合は、以下のようにストリームエディターを実行して、<command>ninja</command> が環境変数 NINJAJOBS を認識するようにします。
     </para>
 @z
 
@@ -96,11 +96,11 @@
 @z
 
 @x --bootstrap
-          <para>This parameter forces ninja to rebuild itself for the current
+          <para>This parameter forces Ninja to rebuild itself for the current
           system.</para>
 @y
           <para>
-          本パラメーターは、この時点でのシステムに対して ninja 自身を再ビルドすることを指示します。
+          本パラメーターは、この時点でのシステムに対して Ninja 自身を再ビルドすることを指示します。
           </para>
 @z
 

@@ -56,15 +56,15 @@
 
 @x
     <note><para>There are frequent misunderstandings about this chapter.  The
-    procedures are the same as every other chapter as explained earlier (<xref
-    linkend='buildinstr'/>).  First extract the gcc tarball from the sources
-    directory and then change to the directory created.  Only then should you
+    procedures are the same as every other chapter, as explained earlier (<xref
+    linkend='buildinstr'/>).  First, extract the gcc-&gcc-version; tarball from the sources
+    directory, and then change to the directory created.  Only then should you
     proceed with the instructions below.</para></note>
 @y
     <note><para>
     本節においては誤解が多く発生しています。
     ここでの手順は他のものと同様であり、手順の概要 (<xref linkend='buildinstr'/>) は説明済です。
-    まず初めに gcc の tarball を伸張 (解凍) し、生成されたソースディレクトリに移動します。
+    まず初めに gcc-&gcc-version; の tarball を伸張 (解凍) し、生成されたソースディレクトリに移動します。
     それに加えて本節では、以下の手順を行うものとなります。
     </para></note>
 @z
@@ -100,16 +100,16 @@
 @z
 
 @x --with-glibc-version=&glibc-version;
-          <para>This option specifies the version of glibc which will be
+          <para>This option specifies the version of Glibc which will be
           used on the target. It is not relevant to the libc of the host
-          distro because everything compiled by pass1 gcc will run in the
+          distro because everything compiled by pass1 GCC will run in the
           chroot environment, which is isolated from libc of the host
           distro.</para>
 @y
           <para>
-          このオプションは、ターゲットにおいて用いられることになる glibc のバージョンを指定します。
+          このオプションは、ターゲットにおいて用いられることになる Glibc のバージョンを指定します。
           これはホストディストリビューションにある libc のバージョンとは関係がありません。
-          1 回めの gcc によってコンパイルされるものは、すべて chroot 環境内で実行されるものであって、ホストにある libc とは切り離されているためです。
+          1 回めの GCC によってコンパイルされるものは、すべて chroot 環境内で実行されるものであって、ホストにある libc とは切り離されているためです。
           </para>
 @z
 
@@ -166,12 +166,12 @@
 
 @x --disable-shared
           <para>This switch forces GCC to link its internal libraries
-          statically. We need this because the shared libraries require glibc,
+          statically. We need this because the shared libraries require Glibc,
           which is not yet installed on the target system.</para>
 @y
           <para>
           このスイッチは内部ライブラリをスタティックライブラリとしてリンクすることを指示します。
-          共有ライブラリが glibc を必要としており、処理しているシステム上にはまだインストールされていないためです。
+          共有ライブラリが Glibc を必要としており、処理しているシステム上にはまだインストールされていないためです。
           </para>
 @z
 
@@ -185,16 +185,16 @@
           </para>
 @z
 
-@x --disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp,  --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx
-          <para>These switches disable support for the decimal floating point
-          extension, threading, libatomic, libgomp, libquadmath, libssp,
+@x --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv,
+          <para>These switches disable support for
+          threading, libatomic, libgomp, libquadmath, libssp,
           libvtv, and the C++ standard library respectively. These features
-          will fail to compile when building a cross-compiler and are not
+          may fail to compile when building a cross-compiler and are not
           necessary for the task of cross-compiling the temporary libc.</para>
 @y
           <para>
-          これらのオプションは順に、十進浮動小数点制御、スレッド処理、libatomic, libgomp, libquadmath, libssp, libvtv, C++ 標準ライブラリのサポートをいずれも無効にすることを指示します。
-          これらの機能を含めていると、クロスコンパイラーをビルドする際にはコンパイルに失敗します。
+          これらのオプションは順に、スレッド処理、libatomic, libgomp, libquadmath, libssp, libvtv, C++ 標準ライブラリのサポートをいずれも無効にすることを指示します。
+          これらの機能を含めていると、クロスコンパイラーをビルドする際にはコンパイルに失敗するかもしれません。
           またクロスコンパイルによって一時的な libc ライブラリを構築する際には不要なものです。
           </para>
 @z
@@ -229,7 +229,7 @@
     time of this build of GCC <filename>$LFS/usr/include/limits.h</filename>
     does not exist, so the internal header that has just been installed is a
     partial, self-contained file and does not include the extended features of
-    the system header. This is adequate for building glibc, but the full
+    the system header. This is adequate for building Glibc, but the full
     internal header will be needed later.  Create a full version of the internal
     header using a command that is identical to what the GCC build system does
     in normal circumstances:</para>
@@ -240,7 +240,7 @@
     そのファイルはここでは <filename>$LFS/usr/include/limits.h</filename> になります。
     ただし GCC をビルドしたこの時点において <filename>$LFS/usr/include/limits.h</filename> は存在していません。
     したがってインストールされたばかりの内部ヘッダーファイルは、部分的に自己完結したファイルとなり、システムヘッダーファイルによる拡張された機能を含むものになっていません。
-    glibc をビルドする際にはこれでもかまわないのですが、後々内部ヘッダーファイルは完全なものが必要になります。
+    Glibc をビルドする際にはこれでもかまわないのですが、後々内部ヘッダーファイルは完全なものが必要になります。
     以下のようなコマンドを通じて、その内部ヘッダーファイルの完成版を作り出します。
     このコマンドは GCC ビルドが通常行っている方法と同じものです。
     </para>

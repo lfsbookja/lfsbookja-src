@@ -10,7 +10,7 @@
 @z
 
 @x
-  <title>Creating a limited directory layout in LFS filesystem</title>
+  <title>Creating a Limited Directory Layout in the LFS Filesystem</title>
 @y
   <title>LFS ファイルシステムの限定的なディレクトリレイアウトの生成</title>
 @z
@@ -56,4 +56,20 @@
   クロスコンパイラーは他のプログラムとは切り分けるため、特別なディレクトリにインストールすることにします。
   &root; ユーザーのまま、ここでそのディレクトリを生成します。
   </para>
+@z
+
+@x
+      The LFS editors have deliberately decided not to use a
+      <filename class="directory">/usr/lib64</filename> directory.  Several
+      steps are taken to be sure the toolchain will not use it. If for any
+      reason this directory appears (either because you made an error in
+      following the instructions, or because you installed a binary package that
+      created it after finishing LFS), it may break your system.
+      You should always be sure this directory does not exist.
+@y
+      LFS の編集者は <filename
+      class="directory">/usr/lib64</filename> ディレクトリは意図的に利用しないこととしました。
+      ツールチェーンにおいてはこのディレクトリを利用しないように、手順をいくつか進めています。
+      何らかの理由によってこのディレクトリが出てきたとしたら（ビルド手順を誤っていた、LFS 構築後にバイナリーパッケージをインストールしたような場合には）、システムが壊れる場合があります。
+      したがってこのディレクトリが用いられていないことを常に確認してください。
 @z

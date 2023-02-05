@@ -28,10 +28,11 @@
 @z
 
 @x
-    <para>First, fix a security problem identified upstream:</para>
+    <para>First, fix an issue building Glibc with parallel jobs and Make-4.4
+    or later:</para>
 @y
     <para>
-    はじめに、アップストリームが認識しているセキュリティ問題を修正します。
+    並行ビルドによる Glibc のビルド、および Make-4.4 以降を使ったビルドの際の問題を修正します。
     </para>
 @z
 
@@ -85,19 +86,19 @@
           GCC.  This is necessary for running the test suite.</para>
 @y
           <para>
-          GCC に対して -Werror オプションを利用しないようにします。
+          GCC に対して -werror オプションを利用しないようにします。
           テストスイートを実行するために必要となります。
           </para>
 @z
 
 @x --enable-kernel=&min-kernel;
-          <para>This option tells the build system that this glibc may
+          <para>This option tells the build system that this Glibc may
           be used with kernels as old as &min-kernel;. This means generating
           workarounds in case a system call introduced in a later version
           cannot be used.</para>
 @y
           <para>
-          本オプションはビルドシステムに対して、カーネルバージョンが古くても &min-kernel; を用いることを指示します。
+          本オプションはビルドシステムに対して、カーネルバージョンが &min-kernel; のように古くても、 Glibc が利用されるように指示します。
           これより古いバージョンにおけるシステムコールが用いられないようにするため、その回避策をとるものです。
           </para>
 @z
@@ -131,21 +132,6 @@
           lib64 は利用しません。
           </para>
 @z
-
-%@x libc_cv_include_x86_isa_level=no
-%          <para>This disables <quote>x86 ISA needed</quote> property in
-%          Glibc libraries.  Use it <emphasis role="bold">if</emphasis>
-%          you are building Glibc with <option>-march</option> option in
-%          <envar>CFLAGS</envar>, to workaround an issue in Glibc-2.33
-%          breaking it.</para>
-%@y
-%          <para>
-%          これは Glibc ライブラリ内の<quote>x86 ISA needed</quote>プロパティを無効にします。
-%          Glibc のビルド時に <envar>CFLAGS</envar> として <option>-march</option> を設定している <emphasis
-%          role="bold">場合に限っては</emphasis> これを有効にします。
-%          そうすることで Glibc-2.33 における問題が回避できます。
-%          </para>
-%@z
 
 @x
     <para>Compile the package:</para>
@@ -186,13 +172,13 @@
 @x
     <para>You may see some test failures. The Glibc test suite is
     somewhat dependent on the host system. A few failures out of
-    over 4200 tests can generally be ignored. This is a list of the
+    over 5000 tests can generally be ignored. This is a list of the
     most common issues seen for recent versions of LFS:</para>
 @y
     <para>
     テストに失敗する場合があります。
     これは Glibc のテストスイートがホストシステムにある程度依存しているためです。
-    4200 を超えるテストの中で、ほんの少数のテストは失敗しますが、無視できるものです。
+    5000 を超えるテストの中で、ほんの少数のテストは失敗しますが、無視できるものです。
     LFS の当バージョンにおいて発生しがちな問題を以下に示します。
     </para>
 @z
@@ -298,7 +284,7 @@
 @z
 
 @x
-    <para>Fix hardcoded path to the executable loader in
+    <para>Fix a hardcoded path to the executable loader in the
     <command>ldd</command> script:</para>
 @y
     <para>
@@ -326,13 +312,13 @@
 
 @x
     <para>Next, install the locales that can make the system respond in a
-    different language.  None of the locales are required, but if some of them
-    are missing, the test suites of future packages would skip important
-    testcases.</para>
+    different language.  None of these locales are required, but if some of them
+    are missing, the test suites of some packages will skip important
+    test cases.</para>
 @y
     <para>
     システムを各種の言語に対応させるためのロケールをインストールします。
-    テストスイートにおいてロケールは必要ではありませんが、将来的にはロケールが不足していることによって、重要なテストが実施されずに見逃してしまうかもしれません。
+    テストスイートにおいてロケールは必要ではありませんが、ロケールが不足していることによって、重要なテストが実施されずに見逃してしまうパッケージがあるかもしれません。
     </para>
 @z
 
@@ -365,7 +351,7 @@
 @z
 
 @x
-    <para>Alternatively, install all locales listed in the
+    <para>Alternatively, install all the locales listed in the
     <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> file
     (it includes every locale listed above and many more) at once with the
     following time-consuming command:</para>
@@ -437,7 +423,7 @@
 @z
 
 @x
-    <title>Adding time zone data</title>
+    <title>Adding Time Zone Data</title>
 @y
     <title>タイムゾーンデータの追加</title>
 @z
@@ -461,10 +447,10 @@
           <filename class="directory">zoneinfo/posix</filename>. It is
           necessary to put the POSIX time zones in
           <filename class="directory">zoneinfo</filename>, otherwise various
-          test-suites will report errors. On an embedded system, where space is
+          test suites will report errors. On an embedded system, where space is
           tight and you do not intend to ever update the time zones, you could save
           1.9 MB by not using the <filename class="directory">posix</filename>
-          directory, but some applications or test-suites might produce some
+          directory, but some applications or test suites might produce some
           failures.</para>
 @y
           <para>

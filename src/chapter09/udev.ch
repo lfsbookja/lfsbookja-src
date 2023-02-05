@@ -29,15 +29,15 @@
 
 @x
   <para>In <xref linkend="chapter-building-system"/>, we installed the udev
-  package when <phrase revision="sysv">eudev</phrase>
+  daemon when <phrase revision="sysv">eudev</phrase>
   <phrase revision="systemd">systemd</phrase> was built. Before we go into the
-  details regarding how this works, a brief history of previous methods of
+  details regarding how udev works, a brief history of previous methods of
   handling devices is in order.</para>
 @y
   <para>
   <xref linkend="chapter-building-system"/>の <phrase revision="sysv">eudev</phrase>
-  <phrase revision="systemd">systemd</phrase> のビルドを通じて Udev パッケージをインストールしました。
-  このパッケージがどのように動作するかの詳細を説明する前に、デバイスを取り扱うかつての方法について順を追って説明していきます。
+  <phrase revision="systemd">systemd</phrase> のビルドを通じて udev デーモンをインストールしました。
+  この udev がどのように動作するかの詳細を説明する前に、デバイスを取り扱うかつての方法について順を追って説明していきます。
   </para>
 @z
 
@@ -46,7 +46,7 @@
   method, whereby a great many device nodes were created under <filename
   class="directory">/dev</filename> (sometimes literally thousands of nodes),
   regardless of whether the corresponding hardware devices actually existed. This
-  was typically done via a <command>MAKEDEV</command> script, which contains a
+  was typically done via a <command>MAKEDEV</command> script, which contained a
   number of calls to the <command>mknod</command> program with the relevant
   major and minor device numbers for every possible device that might exist in
   the world.</para>
@@ -61,18 +61,18 @@
 @z
 
 @x
-  <para>Using the udev method, only those devices which are detected by the
-  kernel get device nodes created for them. Because these device nodes will be
-  created each time the system boots, they will be stored on a <systemitem
+  <para>Using the udev method, device nodes are only created for those devices
+  which are detected by the kernel. These device nodes are
+  created each time the system boots; they are stored in a <systemitem
   class="filesystem">devtmpfs</systemitem> file system (a virtual file system
   that resides entirely in system memory). Device nodes do not require much
   space, so the memory that is used is negligible.</para>
 @y
   <para>
-  udev による方法では、カーネルが検知したデバイスだけがデバイスノードとなります。
+  udev による方法では、カーネルが検知したデバイスに対してのみ、デバイスノードが生成されます。
   デバイスノードはシステムが起動するたびに生成されることになるので、 <systemitem
   class="filesystem">devtmpfs</systemitem> ファイルシステム上に保存されます。
-  (<systemitem class="filesystem">devtmpfs</systemitem> は仮想ファイルシステムであり、メモリ上に置かれます。)
+  (<systemitem class="filesystem">devtmpfs</systemitem> は仮想ファイルシステムであり、システムメモリ上に置かれます。)
   デバイスノードの情報はさほど多くないので、消費するメモリ容量は無視できるほど少ないものです。
   </para>
 @z
@@ -103,13 +103,14 @@
     class="filesystem">devfs</systemitem> was the way it handled device
     detection, creation, and naming. The latter issue, that of device node
     naming, was perhaps the most critical. It is generally accepted that if
-    device names are allowed to be configurable, then the device naming policy
-    should be up to a system administrator, not imposed on them by any
-    particular developer(s). The <systemitem
+    device names are configurable, the device naming policy
+    should be chosen by system administrators, and not imposed on them by the
+    developer(s). The <systemitem
     class="filesystem">devfs</systemitem> file system also suffered from race
-    conditions that were inherent in its design and could not be fixed without a
-    substantial revision to the kernel. It was marked as deprecated for a long
-    period &ndash; due to a lack of maintenance &ndash; and was finally removed
+    conditions that were inherent in its design; these could not be fixed without a
+    substantial revision of the kernel. <systemitem class="filesystem">devfs</systemitem>
+    was marked as deprecated for a long
+    time, and was finally removed
     from the kernel in June, 2006.</para>
 @y
     <para>
@@ -117,7 +118,7 @@
     特にデバイスの命名方法がおそらく最も重大な問題です。
     一般的に言えることとして、デバイス名が変更可能であるならデバイス命名の規則はシステム管理者が考えることであって、特定の開発者に委ねるべきことではありません。
     また <systemitem class="filesystem">devfs</systemitem> にはその設計に起因した競合の問題があるため、根本的にカーネルを修正しなければ解消できる問題ではありません。
-    そこで長い間、保守されることがなかったために非推奨 (deprecated) として位置づけられ、最終的に 2006年6月にはカーネルから取り除かれました。
+    そこで長い間 <systemitem class="filesystem">devfs</systemitem> は非推奨 (deprecated) とされ、最終的に 2006年6月にはカーネルから取り除かれました。
     </para>
 @z
 
@@ -125,16 +126,15 @@
     <para>With the development of the unstable 2.5 kernel tree, later released
     as the 2.6 series of stable kernels, a new virtual filesystem called
     <systemitem class="filesystem">sysfs</systemitem> came to be. The job of
-    <systemitem class="filesystem">sysfs</systemitem> is to export a view of
+    <systemitem class="filesystem">sysfs</systemitem> is to provide information about
     the system's hardware configuration to userspace processes. With this
-    userspace-visible representation, the possibility of developing a userspace
-    replacement for <systemitem class="filesystem">devfs</systemitem> became
-    much more realistic.</para>
+    userspace-visible representation, it became possible to develop a userspace
+    replacement for <systemitem class="filesystem">devfs</systemitem>.</para>
 @y
     <para>
     開発版の 2.5 系カーネルと、後にリリースされた安定版のカーネル 2.6 系を経て、新しい仮想ファイルシステム <systemitem
     class="filesystem">sysfs</systemitem> が登場しました。
-    <systemitem class="filesystem">sysfs</systemitem> が実現したのは、システムのハードウェア設定をユーザー空間のプロセスとして表に出したことです。
+    <systemitem class="filesystem">sysfs</systemitem> が実現したのは、システムのハードウェア設定をユーザー空間のプロセスに対して提供したことです。
     ユーザー空間での設定を可視化したことによって <systemitem class="filesystem">devfs</systemitem> が為していたことを、ユーザー空間にて開発することが可能になったわけです。
     </para>
 @z
@@ -156,12 +156,13 @@
       was mentioned briefly above. One may wonder how <systemitem
       class="filesystem">sysfs</systemitem> knows about the devices present on
       a system and what device numbers should be used for them. Drivers that
-      have been compiled into the kernel directly register their objects with a
+      have been compiled into the kernel register their objects in
       <systemitem class="filesystem">sysfs</systemitem> (devtmpfs internally)
-      as they are detected by the kernel. For drivers compiled as modules, this
-      registration will happen when the module is loaded. Once the <systemitem
-      class="filesystem">sysfs</systemitem> filesystem is mounted (on /sys),
-      data which the drivers register with <systemitem
+      as they are detected by the kernel. For drivers compiled as modules,
+      registration happens when the module is loaded. Once the <systemitem
+      class="filesystem">sysfs</systemitem> filesystem is mounted (on 
+      <filename class="directory">/sys</filename>),
+      data which the drivers have registered with <systemitem
       class="filesystem">sysfs</systemitem> are available to userspace
       processes and to udevd for processing (including modifications to device
       nodes).</para> 
@@ -170,10 +171,10 @@
       <systemitem class="filesystem">sysfs</systemitem> ファイルシステムについては上で簡単に触れました。
       <systemitem class="filesystem">sysfs</systemitem> はどのようにしてシステム上に存在するデバイスを知るのか、そしてどのデバイス番号を用いるべきなのか。
       そこが知りたいところです。
-      カーネルに直接組み込まれて構築されたドライバーの場合は、対象のオブジェクトをカーネルが検出し、そのオブジェクトを <systemitem
+      カーネルに組み込まれて構築されたドライバーの場合は、対象のオブジェクトをカーネルが検出し、そのオブジェクトを <systemitem
       class="filesystem">sysfs</systemitem> (内部的には devtmpfs) に登録します。
-      モジュールとしてコンパイルされたドライバーの場合は、その登録がモジュールのロード時に行われます。
-      <systemitem class="filesystem">sysfs</systemitem> ファイルシステムが (/sys に) マウントされると、ドライバーによって <systemitem
+      モジュールとしてコンパイルされたドライバーの場合は、そのモジュールがロードされたときに登録されます。
+      <systemitem class="filesystem">sysfs</systemitem> ファイルシステムが (<filename class="directory">/sys</filename> に) マウントされると、ドライバーによって <systemitem
       class="filesystem">sysfs</systemitem> に登録されたデータは、ユーザー空間のプロセスと (デバイスノードの修正を含む) さまざまな処理を行う udevd にて利用可能となります。
       </para>
 @z
@@ -185,22 +186,22 @@
 @z
 
 @x
-      <para>Device files are created by the kernel by the <systemitem
-      class="filesystem">devtmpfs</systemitem> filesystem.  Any driver that
-      wishes to register a device node will go through the <systemitem
+      <para>Device files are created by the kernel in the <systemitem
+      class="filesystem">devtmpfs</systemitem> file system.  Any driver that
+      wishes to register a device node will use the <systemitem
       class="filesystem">devtmpfs</systemitem> (via the driver core) to do it.
       When a <systemitem class="filesystem">devtmpfs</systemitem> instance is
       mounted on <filename class="directory">/dev</filename>, the device node
-      will initially be created with a fixed name, permissions, and
+      will initially be exposed to userspace with a fixed name, permissions, and
       owner.</para>
 @y
       <para>
       デバイスファイルはカーネルによって、<systemitem
-      class="filesystem">devtmpfs</systemitem> ファイルシステム上に作り出されます。
+      class="filesystem">devtmpfs</systemitem> ファイルシステム内に作り出されます。
       デバイスノードを登録しようとするドライバーは (デバイスコア経由で) <systemitem
       class="filesystem">devtmpfs</systemitem> を通じて登録を行います。
       <systemitem class="filesystem">devtmpfs</systemitem> のインスタンスが <filename
-       class="directory">/dev</filename> 上にマウントされると、デバイスノードには固定的な名称、パーミッション、所有者の情報が設定され生成されます。
+       class="directory">/dev</filename> 上にマウントされると、デバイスノードには固定的な名称、パーミッション、所有者の情報とともに名前空間が公開されます。
       </para>
 @z
 
@@ -410,7 +411,7 @@
 @z
 
 @x
-      <title>A kernel module is not loaded automatically</title>
+      <title>A Kernel Module Is Not Loaded Automatically</title>
 @y
       <title>カーネルモジュールが自動的にロードされない問題</title>
 @z
@@ -485,11 +486,11 @@
 @z
 
 @x
-      <title>A kernel module is not loaded automatically, and udev is not
-      intended to load it</title>
+      <title>A Kernel Module Is Not Loaded Automatically, and Udev Is Not
+      Intended to Load It</title>
 @y
       <title>
-      カーネルモジュールが自動的にロードされず udev もロードしようとしない問題
+      カーネルモジュールが自動的にロードされず Udev もロードしようとしない問題
       </title>
 @z
 
@@ -538,7 +539,7 @@
 @z
 
 @x
-      <title>Udev loads some unwanted module</title>
+      <title>Udev Loads Some Unwanted Module</title>
 @y
       <title>Udev が不必要なモジュールをロードする問題</title>
 @z
@@ -564,7 +565,7 @@
 @z
 
 @x
-      <title>Udev creates a device incorrectly, or makes a wrong symlink</title>
+      <title>Udev Creates a Device Incorrectly, or Makes the Wrong Symlink</title>
 @y
       <title>
       Udev が不正なデバイスを生成する、または誤ったシンボリックリンクを生成する問題
@@ -587,7 +588,7 @@
 @z
 
 @x
-      <title>Udev rule works unreliably</title>
+      <title>Udev Rule Works Unreliably</title>
 @y
       <title>Udev 規則が不審な動きをする問題</title>
 @z
@@ -613,27 +614,27 @@
 @z
 
 @x
-      <title>Udev does not create a device</title>
+      <title>Udev Does Not Create a Device</title>
 @y
       <title>Udev がデバイスを生成しない問題</title>
 @z
 
 @x
-      <para>Further text assumes that the driver is built statically into the
-      kernel or already loaded as a module, and that you have already checked
-      that udev doesn't create a misnamed device.</para>
+      <para>First, be certain that the driver is built into the
+      kernel or already loaded as a module, and that
+      udev isn't creating a misnamed device.</para>
 @y
       <para>
       ここでは以下のことを前提としています。
-      まずドライバーがカーネル内に静的に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
-      そして udev が異なった名前のデバイスを生成していないことです。
+      まずドライバーがカーネル内に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
+      そして udev が間違った名前のデバイスを生成していないことです。
       </para>
 @z
 
 @x
-      <para>Udev has no information needed to create a device node if a kernel
-      driver does not export its data to
-      <systemitem class="filesystem">sysfs</systemitem>. This is most common
+      <para>If a kernel driver does not export its data to
+      <systemitem class="filesystem">sysfs</systemitem>, udev lacks the 
+      information needed to create a device node. This is most likely to happen
       with third party drivers from outside the kernel tree. Create a static
       device node in <filename>/usr/lib/udev/devices</filename> with the
       appropriate major/minor numbers (see the file
@@ -643,7 +644,8 @@
       by <command>udev</command>.</para>
 @y
       <para>
-      Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
+      カーネルドライバーがそのデータを <systemitem
+      class="filesystem">sysfs</systemitem> にエクスポートしていない場合、udev はデバイスノード生成に必要な情報を得ていないことになります。
       これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
       したがって <filename>/usr/lib/udev/devices</filename> において、適切なメジャー、マイナー番号を用いた静的なデバイスノードを生成してください。
       (カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
@@ -652,7 +654,7 @@
 @z
 
 @x
-      <title>Device naming order changes randomly after rebooting</title>
+      <title>Device Naming Order Changes Randomly After Rebooting</title>
 @y
       <title>再起動後にデバイスの命名順がランダムに変わってしまう問題</title>
 @z

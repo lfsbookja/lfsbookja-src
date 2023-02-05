@@ -123,7 +123,7 @@
 
 @x
       <para>If the host kernel is earlier than &min-kernel; you will need to replace
-      the kernel with a more up to date version. There are two ways
+      the kernel with a more up-to-date version. There are two ways
       you can go about this. First, see if your Linux vendor provides a &min-kernel;
       or later kernel package. If so, you may wish to install it. If your
       vendor doesn't offer an acceptable kernel package, or you would prefer not to
@@ -171,10 +171,10 @@
 
 @x
   <para >To see whether your host system has all the appropriate versions, and
-  the ability to compile programs, run the following:</para>
+  the ability to compile programs, run the following commands:</para>
 @y
   <para>
-  ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のスクリプトを実行して確認することができます。
+  ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のコマンドを実行して確認することができます。
   </para>
 @z
 

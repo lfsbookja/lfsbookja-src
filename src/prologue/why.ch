@@ -22,16 +22,16 @@
 @z
 
 @x
-    <para>As stated earlier, the goal of LFS is to build a complete and usable 
-    foundation-level system.  This includes all packages needed to replicate 
-    itself while providing a relatively minimal base from which to customize
-    a more complete system based on the choices of the user.  This does not
+    <para>The goal of LFS is to build a complete and usable
+    foundation-level system&mdash;including all the packages needed to replicate
+    itself&mdash;and providing a relatively minimal base from which to customize
+    a more complete system based on the user's choices.  This does not
     mean that LFS is the smallest system possible.  Several important packages
-    are included that are not strictly required.  The lists below document the
-    rationale for each package in the book.</para>
+    are included that are not, strictly speaking, required.  The list below documents the
+    reasons each package in the book has been included.</para>
 @y
     <para>
-    既に説明しているように LFS が目指すのは、完成した形での実用可能な基盤システムを構築することです。
+    LFS が目指すのは、完成した形での実用可能な基盤システムを構築することです。
     LFS に含まれるパッケージ群は、パッケージの個々を構築していくために必要となるものばかりです。
     そこからは最小限の基盤となるシステムを作り出します。
     そしてユーザーの望みに応じて、より完璧なシステムへと拡張していくものとなります。
@@ -43,19 +43,19 @@
 
 @x Acl
         <para>This package contains utilities to administer Access
-        Control Lists, which are used to define more fine-grained
+        Control Lists, which are used to define fine-grained
         discretionary access rights for files and directories.
         </para>
 @y
         <para>
         このパッケージはアクセス制御リスト (Access Control Lists) を管理するツールを提供します。
-        これはファイルやディレクトリに対して、きめ細かく様々なアクセス権限を定義するために利用されます。
+        これはファイルやディレクトリに対して、きめ細かくさまざまなアクセス権限を定義するために利用されます。
         </para>
 @z
 
 @x Attr
-        <para>This package contains programs for administering
-        extended attributes on filesystem objects.
+        <para>This package contains programs for managing
+        extended attributes on file system objects.
         </para>
 @y
         <para>
@@ -64,10 +64,10 @@
 @z
 
 @x Autoconf
-        <para>This package contains programs for producing shell scripts that
+        <para>This package supplies programs for producing shell scripts that
         can automatically configure source code from a developer's
-        template. It is often needed to rebuild a package after updates
-        to the build procedures.</para>
+        template. It is often needed to rebuild a package after
+        the build procedure has been updated.</para>
 @y
         <para>
         このパッケージは、以下に示すようなシェルスクリプトを生成するプログラムを提供します。
@@ -78,8 +78,8 @@
 
 @x Automake
         <para>This package contains programs for generating Make files from
-        a template. It is often needed to rebuild a package after updates
-        to the build procedures.</para>
+        a template. It is often needed to rebuild a package after
+        the build procedure has been updated.</para>
 @y
         <para>
         このパッケージは、テンプレートとなるファイルから Makefile を生成するためのプログラムを提供します。
@@ -91,17 +91,17 @@
         <para>This package satisfies an LSB core requirement to provide
         a Bourne Shell interface to the system.  It was chosen over
         other shell packages because of its common usage and extensive
-        capabilities beyond basic shell functions.</para>
+        capabilities.</para>
 @y
         <para>
         このパッケージは、システムとのインターフェースを実現する Bourne シェルを提供し、LSB コア要件を満たします。
-        他のシェルを選ばずにこれを選ぶのは、一般的に多用されていることと、基本的なシェル関数においての拡張性が高いからです。
+        他のシェルを選ばずにこれを選ぶのは、一般的に多用されていて拡張性が高いからです。
         </para>
 @z
 
 @x Bc
         <para>This package provides an arbitrary precision numeric processing language.
-        It satisfies a requirement needed when building the Linux kernel.</para>
+        It satisfies a requirement for building the Linux kernel.</para>
 @y
         <para>
         このパッケージは、任意精度 (arbitrary precision) の演算処理言語を提供します。
@@ -110,23 +110,23 @@
 @z
 
 @x Binutils
-        <para>This package contains a linker, an assembler, and other 
+        <para>This package supplies a linker, an assembler, and other
         tools for handling object files. The programs in this package are
-        needed to compile most of the packages in an LFS system and beyond.</para>
+        needed to compile most of the packages in an LFS system.</para>
 @y
         <para>
         このパッケージは、リンカー、アセンブラーのような、オブジェクトファイルを取り扱うプログラムを提供します。
-        各プログラムは LFS における他のパッケージをコンパイルするために必要となり、さらに LFS にて示される以外のパッケージでも必要となります。
+        各プログラムは LFS における他のパッケージをコンパイルするために必要となります。
         </para>
 @z
 
 @x Bison
         <para>This package contains the GNU version of yacc (Yet Another
-        Compiler Compiler) needed to build several other LFS programs.</para>
+        Compiler Compiler) needed to build several of the LFS programs.</para>
 @y
         <para>
         このパッケージは yacc (Yet Another Compiler Compiler) の GNU バージョンを提供します。
-        LFS において利用するプログラムの中に、これを必要とするものがあります。
+        LFS プログラムをビルドする際に、これを必要とするものがあります。
         </para>
 @z
 
@@ -141,7 +141,7 @@
 @z
 
 @x Check
-        <para>This package contains a test harness for other programs.</para>
+        <para>This package provides a test harness for other programs.</para>
 @y
         <para>
         このパッケージは、他のプログラムに対するテストハーネス (test harness) を提供します。
@@ -163,7 +163,7 @@
 
 @x D-Bus
         <para>This package contains programs to implement a message bus system,
-        which a simple way for applications to talk to one another.
+        a simple way for applications to talk to one another.
         </para>
 @y
         <para>
@@ -173,7 +173,7 @@
 @z
 
 @x DejaGNU
-        <para>This package contains a framework for testing other programs.</para>
+        <para>This package supplies a framework for testing other programs.</para>
 @y
         <para>
         このパッケージは、他のプログラムをテストするフレームワークを提供します。
@@ -193,7 +193,7 @@
 @z
 
 @x E2fsprogs
-        <para>This package contains the utilities for handling the ext2, ext3
+        <para>This package supplies utilities for handling the ext2, ext3
         and ext4 file systems.  These are the most common and thoroughly
         tested file systems that Linux supports.</para>
 @y
@@ -205,23 +205,23 @@
 
 @x Eudev
         <para>This package is a device manager.  It dynamically controls the ownership,
-        permissions, names, and symbolic links of devices in the /dev directory as
-        devices are added or removed from the system.
+        permissions, names, and symbolic links of device nodes in the /dev directory when
+        devices are added to or removed from the system.
         </para>
 @y
         <para>
         このパッケージはデバイスマネージャーです。
-        /dev ディレクトリに登録されたデバイスの所有者、パーミッション、名称、シンボリックリンクを動的に制御します。
+        /dev ディレクトリに登録されたデバイスノードの所有者、パーミッション、名称、シンボリックリンクを動的に制御します。
         これによりデバイスは、システムへの追加または削除が行われます。
         </para>
 @z
 
 @x Expat
-        <para>This package contains a relatively small XML parsing library.  It
+        <para>This package yields a relatively small XML parsing library.  It
         is required by the XML::Parser Perl module.</para>
 @y
         <para>
-        このパッケージは比較的小規模の XML 解析ライブラリを提供します。
+        このパッケージは比較的小規模の XML 解析ライブラリを生成します。
         XML-Parser Perl モジュールがこれを必要とします。
         </para>
 @z
@@ -248,7 +248,7 @@
 @z
 
 @x Findutils
-        <para>This package contains programs to find files in a file system.
+        <para>This package provides programs to find files in a file system.
         It is used in many packages' build scripts.</para>
 @y
         <para>
@@ -271,7 +271,7 @@
 @z
 
 @x Gawk
-        <para>This package contains programs for manipulating text files.
+        <para>This package supplies programs for manipulating text files.
         It is the GNU version of awk (Aho-Weinberg-Kernighan). It is used in
         many other packages' build scripts.</para>
 @y
@@ -283,7 +283,7 @@
 @z
 
 @x Gcc
-        <para>This package is the Gnu Compiler Collection.  It contains the 
+        <para>This is the Gnu Compiler Collection.  It contains the
         C and C++ compilers as well as several others not built by LFS.  
         </para>
 @y
@@ -304,8 +304,8 @@
 @z
 
 @x Gettext
-        <para>This package contains utilities and libraries for 
-        internationalization and localization of numerous packages.</para>
+        <para>This package provides utilities and libraries for
+        the internationalization and localization of many packages.</para>
 @y
         <para>
         このパッケージは、各種パッケージが国際化を行うために利用するユーティリティやライブラリを提供します。
@@ -322,8 +322,8 @@
 @z
 
 @x GMP
-        <para>This package contains math libraries that provide useful functions
-        for arbitrary precision arithmetic.  It is required to build GCC.</para>
+        <para>This package supplies math libraries that provide useful functions
+        for arbitrary precision arithmetic.  It is needed to build GCC.</para>
 @y
         <para>
         このパッケージは数値演算ライブラリを提供するもので、任意精度演算 (arbitrary precision arithmetic) についての有用な関数を含みます。
@@ -332,12 +332,15 @@
 @z
 
 @x Gperf
-        <para>This package contains a program that generates a perfect hash
-        function from a key set. It is required for Eudev.</para>
+        <para>This package produces a program that generates a perfect hash
+        function from a set of keys. It is required by
+        <phrase revision='sysv'>Eudev</phrase>
+        <phrase revision='systemd'>Systemd</phrase>.</para>
 @y
         <para>
         このパッケージは、キーセットから完全なハッシュ関数を生成するプログラムを提供します。
-        Eudev がこれを必要としています。
+        <phrase revision='sysv'>Eudev</phrase>
+        <phrase revision='systemd'>Systemd</phrase> がこれを必要としています。
         </para>
 @z
 
@@ -352,7 +355,7 @@
 @z
 
 @x Groff
-        <para>This package contains programs for processing and formatting text.
+        <para>This package contributes programs for processing and formatting text.
         One important function of these programs is to format man pages.</para>
 @y
         <para>
@@ -362,8 +365,8 @@
 @z
 
 @x GRUB
-        <para>This package is the Grand Unified Boot Loader.  It is one 
-        of several boot loaders available, but is the most flexible.
+        <para>This is the Grand Unified Boot Loader.  It is 
+        the most flexible of several boot loaders available.
         </para>
 @y
         <para>
@@ -374,8 +377,8 @@
 
 @x Gzip
         <para>This package contains programs for compressing and 
-        decompressing files. It is needed to decompress many packages in LFS
-        and beyond.</para>
+        decompressing files. It is needed to decompress many packages
+        in LFS.</para>
 @y
         <para>
         このパッケージは、ファイルの圧縮と伸張 (解凍) を行うプログラムを提供します。
@@ -394,7 +397,7 @@
 @z
 
 @x Inetutils
-        <para>This package contains programs for basic network 
+        <para>This package supplies programs for basic network
         administration.</para>
 @y
         <para>
@@ -403,7 +406,7 @@
 @z
 
 @x Intltools
-        <para>This package contains tools for extracting translatable
+        <para>This package contributes tools for extracting translatable
         strings from source files.</para>
 @y
         <para>
@@ -433,17 +436,17 @@
 @z
 
 @x Kbd
-        <para>This package contains key-table files, keyboard utilities
+        <para>This package produces key-table files, keyboard utilities
         for non-US keyboards, and a number of console fonts.</para>
 @y
         <para>
-        このパッケージは、米国以外のキーボードに対してのキーテーブルファイルやキーボードユーティリティを提供します。
+        このパッケージは、米国以外のキーボードに対してのキーテーブルファイルやキーボードユーティリティを生成します。
         また端末上のフォントも提供します。
         </para>
 @z
 
 @x Kmod
-        <para>This package contains programs needed to administer Linux
+        <para>This package supplies programs needed to administer Linux
         kernel modules.</para>
 @y
         <para>
@@ -453,17 +456,17 @@
 
 @x Less
         <para>This package contains a very nice text file viewer that
-        allows scrolling up or down when viewing a file. It is also used by
-        Man-DB for viewing manpages.</para>
+        allows scrolling up or down when viewing a file.
+        Many packages use it for paging the output.</para>
 @y
         <para>
         このパッケージはテキストファイルを表示する機能を提供するものであり、表示中にスクロールを可能とします。
-        また Man-DB において man ページを表示する際にも利用されます。
+        多くのパッケージでは、ページング出力を行うためにこれを利用しています。
         </para>
 @z
 
 @x Libcap
-        <para>This package implements the user-space interfaces to
+        <para>This package implements the userspace interfaces to
         the POSIX 1003.1e capabilities available in Linux kernels.
         </para>
 @y
@@ -502,7 +505,7 @@
 @z
 
 @x Libpipeline
-        <para>The Libpipeline package contains a library for manipulating
+        <para>The Libpipeline package supplies a library for manipulating
         pipelines of subprocesses in a flexible and convenient way. It is
         required by the Man-DB package.</para>
 @y
@@ -514,7 +517,7 @@
 
 @x Libtool
         <para>This package contains the GNU generic library support 
-        script. It wraps the complexity of using shared libraries in a 
+        script. It wraps the complexity of using shared libraries into a
         consistent, portable interface.  It is needed by the test
         suites in other LFS packages.</para>
 @y
@@ -535,11 +538,11 @@
 @z
 
 @x M4
-        <para>This package contains a general text macro processor useful
+        <para>This package provides a general text macro processor useful
         as a build tool for other programs.</para>
 @y
         <para>
-        このパッケージは汎用的なテキストマクロプロセッサーであり、他のプログラムを構築するツールとして利用することができます。
+        このパッケージは汎用的なテキストマクロプロセッサーを提供するものであり、他のプログラムを構築するツールとして利用することができます。
         </para>
 @z
 
@@ -566,7 +569,7 @@
 @x Man-DB
         <para>This package contains programs for finding and viewing man pages.
         It was chosen instead of the <application>man</application> package
-        due to superior internationalization capabilities.  It supplies
+        because of its superior internationalization capabilities.  It supplies
         the man program.</para>
 @y
         <para>
@@ -577,7 +580,7 @@
 @z
 
 @x Man-pages
-        <para>This package contains the actual contents of the basic
+        <para>This package provides the actual contents of the basic
         Linux man pages.</para>
 @y
         <para>
@@ -587,8 +590,8 @@
 
 @x Meson
         <para>This package provides a software tool for automating the building
-        of software. The main goal for Meson is to minimize the amount of time
-        that software developers need to spend configuring their build
+        of software. The main goal of Meson is to minimize the amount of time
+        that software developers need to spend configuring a build
         system.  It's required to build Systemd, as well as many BLFS
         packages.</para>
 @y
@@ -600,7 +603,7 @@
 @z
 
 @x MPC
-        <para>This package contains functions for the arithmetic of complex
+        <para>This package supplies arithmetic functions for complex
         numbers. It is required by GCC.</para>
 @y
         <para>
@@ -620,7 +623,7 @@
 @z
 
 @x Ninja
-        <para>This package contains a small build system with a focus on speed.
+        <para>This package furnishes a small build system with a focus on speed.
         It is designed to have its input files generated by a higher-level build
         system, and to run builds as fast as possible.
         This package is required by Meson.</para>
@@ -636,7 +639,7 @@
         <para>This package contains libraries for terminal-independent 
         handling of character screens.  It is often used to provide 
         cursor control for a menuing system. It is needed by a number of
-        packages in LFS.</para>
+        the packages in LFS.</para>
 @y
         <para>
         このパッケージは、端末に依存せず文字キャラクターを取り扱うライブラリを提供します。
@@ -647,7 +650,7 @@
 
 @x Openssl
         <para>This package provides management tools and libraries relating to
-        cryptography. These are useful for providing cryptographic functions to
+        cryptography. These supply cryptographic functions to
         other packages, including the Linux kernel.</para>
 @y
         <para>
@@ -702,7 +705,7 @@
 @z
 
 @x Psmisc
-        <para>This package contains programs for displaying information 
+        <para>This package produces programs for displaying information
         about running processes. These programs are useful for system
         administration.</para>
 @y
@@ -714,7 +717,7 @@
 
 @x Python 3
         <para>This package provides an interpreted language that has a design
-        philosophy that emphasizes code readability.</para>
+        philosophy emphasizing code readability.</para>
 @y
         <para>
         このパッケージは、ソースコードの可読性の向上を意図して開発されたインタープリター言語を提供します。
@@ -722,7 +725,7 @@
 @z
 
 @x Readline
-        <para>This package is a set of libraries that offers command-line 
+        <para>This package is a set of libraries that offer command-line
         editing and history capabilities.  It is used by Bash.</para>
 @y
         <para>
@@ -733,18 +736,18 @@
 
 @x Sed
         <para>This package allows editing of text without opening it in a 
-        text editor. It is also needed by most LFS packages' configure 
+        text editor. It is also needed by many LFS packages' configure
         scripts.</para>
 @y
         <para>
         このパッケージは、テキストの編集を、テキストエディターを用いることなく可能とします。
-        LFS パッケージにおける configure スクリプトは、たいていこれを必要としています。
+        LFS パッケージにおける configure スクリプトは、多くのパッケージがこれを必要としています。
         </para>
 @z
 
 @x Shadow
         <para>This package contains programs for handling passwords 
-        in a secure way.</para>
+        securely.</para>
 @y
         <para>
         このパッケージは、セキュアな手法によりパスワード制御を行うプログラムを提供します。
@@ -752,8 +755,8 @@
 @z
 
 @x Sysklogd
-        <para>This package contains programs for logging system messages, 
-        such as those given by the kernel or daemon processes when unusual 
+        <para>This package supplies programs for logging system messages,
+        such as those emitted by the kernel or daemon processes when unusual
         events occur.</para>
 @y
         <para>
@@ -765,18 +768,18 @@
 @x Systemd
         <para>This package provides an <application>init</application> program
         and several additional boot and system control capabilities as an
-        alternative to Sysvinit.  It is used by many commercial distributions.
+        alternative to Sysvinit.  It is used by many Linux distributions.
         </para>
 @y
         <para>
         このパッケージは Sysvinit の代替として、<application>init</application> プログラムなど数種のプログラムにより、システム起動やシステム制御を実現します。
-        商用ディストリビューションにおいてもよく利用されています。
+        多くの Linux ディストリビューションにおいてもよく利用されています。
         </para>
 @z
 
 @x Sysvinit
         <para>This package provides the <application>init</application>
-        program, which is the parent of all other processes on the Linux
+        program, the parent of all the other processes on a running Linux
         system. </para>
 @y
         <para>
@@ -787,7 +790,7 @@
 
 @x Tar
         <para>This package provides archiving and extraction capabilities
-        of virtually all packages used in LFS.</para>
+        of virtually all the packages used in LFS.</para>
 @y
         <para>
         このパッケージは、アーカイブや圧縮機能を提供するもので LFS が扱うすべてのパッケージにて利用されています。
@@ -796,16 +799,16 @@
 
 @x Tcl
         <para>This package contains the Tool Command Language used
-        in many test suites in LFS packages.</para>
+        in many test suites.</para>
 @y
         <para>
         このパッケージはツールコマンド言語 (Tool Command Language) を提供します。
-        LFS が扱うパッケージにてテストスイートの実行に必要となります。
+        テストスイートの実行に必要となります。
         </para>
 @z
 
 @x Texinfo
-        <para>This package contains programs for reading, writing, and 
+        <para>This package supplies programs for reading, writing, and
         converting info pages.  It is used in the installation 
         procedures of many LFS packages.</para>
 @y
@@ -826,26 +829,26 @@
         </para>
 @z
 
-@x Wheel
-        <para>This package contains a Python module that is the
-        reference implementation of the Python wheel packaging standard.
-        </para>
-@y
-        <para>
-        このパッケージは Python wheel パッケージング標準に基づいた標準実装の Python モジュールを提供します。
-        </para>
-@z
-
 @x Vim
-        <para>This package contains an editor. It was chosen because of its
+        <para>This package provides an editor. It was chosen because of its
         compatibility with the classic vi editor and its huge number of powerful
         capabilities.  An editor is a very personal choice for
-        many users and any other editor could be substituted if desired.</para>
+        many users. Any other editor can be substituted, if you wish.</para>
 @y
         <para>
         このパッケージはテキストエディターを提供します。
         これを採用しているのは、従来の vi エディタとの互換性があり、しかも数々の有用な機能を提供するものだからです。
         テキストエディターは個人により好みはさまざまですから、もし別のエディターを利用したいなら、そちらを用いても構いません。
+        </para>
+@z
+
+@x Wheel
+        <para>This package supplies a Python module that is the
+        reference implementation of the Python wheel packaging standard.
+        </para>
+@y
+        <para>
+        このパッケージは Python wheel パッケージング標準に基づいた標準実装の Python モジュールを提供します。
         </para>
 @z
 
@@ -869,7 +872,7 @@
 @z
 
 @x Zlib
-        <para>This package contains compression and decompression routines 
+        <para>This package contains compression and decompression routines
         used by some programs.</para>
 @y
         <para>
@@ -878,7 +881,7 @@
 @z
 
 @x Zstd
-        <para>This package contains compression and decompression routines
+        <para>This package supplies compression and decompression routines
         used by some programs. It provides high compression ratios and a very
         wide range of compression / speed trade-offs.</para>
 @y

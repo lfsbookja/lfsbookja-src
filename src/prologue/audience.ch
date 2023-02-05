@@ -31,7 +31,7 @@ an existing one?</quote></para>
 <para>One important reason for this project's existence is to help you learn
 how a Linux system works from the inside out. Building an LFS system helps
 demonstrate what makes Linux tick, and how things work together and depend on
-each other. One of the best things that this learning experience can provide is
+each other. One of the best things this learning experience can provide is
 the ability to customize a Linux system to suit your own unique needs.</para>
 @y
 <para>
@@ -42,30 +42,31 @@ LFS システムを構築してみれば、さまざまなものが連携し依�
 @z
 
 @x
-<para>Another key benefit of LFS is that it allows you to have more control
-over the system without relying on someone else's Linux implementation. With
-LFS, you are in the driver's seat and dictate every aspect of the
+<para>Another key benefit of LFS is that it gives you control
+of the system without relying on someone else's Linux implementation. With
+LFS, you are in the driver's seat. <emphasis>You</emphasis> dictate every aspect of your
 system.</para>
 @y
 <para>
-LFS の重要な利点として、他の Linux システムに依存することなく、システムをより適切に制御できる点が挙げられます。
-LFS システムではあなたが運転台に立って、システムのあらゆる側面への指示を下していきます。
+LFS の重要な利点として、他の Linux システムに依存することなく、システムを制御できる点が挙げられます。
+LFS システムではあなたが運転台に立ちます。
+そして<emphasis role="bold">あなた</emphasis>がシステムのあらゆる側面への指示を下していきます。
 </para>
 @z
 
 @x
-<para>LFS allows you to create very compact Linux systems. When installing
-regular distributions, you are often forced to install a great many
-programs which are probably never used or understood. These programs waste
-resources. You may argue that with today's hard drive and CPUs, such
+<para>LFS allows you to create very compact Linux systems. With
+other distributions you are often forced to install a great many
+programs you neither use nor understand. These programs waste
+resources. You may argue that with today's hard drives and CPUs, wasted
 resources are no longer a consideration. Sometimes, however, you are still
-constrained by size considerations if nothing else. Think about bootable
+constrained by the system's size, if nothing else. Think about bootable
 CDs, USB sticks, and embedded systems. Those are areas where LFS can be
 beneficial.</para>
 @y
 <para>
 さらに非常にコンパクトな Linux システムを作る方法も身につけられます。
-通常の Linux ディストリビューションを用いる場合、多くのプログラムをインストールすることになりますが、たいていのプログラムは使わないものですし、その内容もよく分からないものです。
+通常の Linux ディストリビューションを用いる場合、多くのプログラムをインストールすることになりますが、たいていのものは使わないですし、その内容もよく分からないものです。
 それらのプログラムはハードウェアリソースを無駄に占有することになります。
 今日のハードドライブや CPU のことを考えたら、リソース消費は大したことはないと思うかもしれません。
 しかし問題がなくなったとしても、サイズの制限だけは気にかける必要があることでしょう。
@@ -77,7 +78,7 @@ beneficial.</para>
 @x
 <para>Another advantage of a custom built Linux system is security. By compiling
 the entire system from source code, you are empowered to audit everything
-and apply all the security patches desired. It is no longer necessary to
+and apply all the security patches you want. You don't have to
 wait for somebody else to compile binary packages that fix a security hole.
 Unless you examine the patch and implement it yourself, you have no
 guarantee that the new binary package was built correctly and adequately
@@ -104,14 +105,14 @@ Linux システムを一から作り出すつもりのない方は、本書か�
 @z
 
 @x
-<para>There are too many other good reasons to build your own LFS system to
-list them all here. In the end, education is by far the most powerful of
-reasons. As you continue in your LFS experience, you will discover the power
-that information and knowledge truly bring.</para>
+<para>There are too many good reasons to build your own LFS system to
+list them all here. In the end, education is by far the most important
+reason. As you continue your LFS experience, you will discover the power
+that information and knowledge can bring.</para>
 @y
 <para>
 LFS を構築する理由はさまざまですから、すべてを列記することはできません。
-学習こそ、理由を突き詰める最大最良の手段です。
+学習こそ、理由を突き詰める重要な手段です。
 LFS 構築作業の経験を積むことによって、情報や知識を通じてもたらされる意義が十二分に理解できるはずです。
 </para>
 @z

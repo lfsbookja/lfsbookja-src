@@ -19,10 +19,10 @@
   <para>Building an LFS system is not a simple task. It requires a certain
   level of existing knowledge of Unix system administration in order to resolve
   problems and correctly execute the commands listed. In particular, as an
-  absolute minimum, you should already have the ability to use the
+  absolute minimum, you should already know how to use the
   command line (shell) to copy or move files and directories, list directory
   and file contents, and change the current directory. It is also expected that
-  you have a reasonable knowledge of using and installing Linux
+  you know how to use and install Linux
   software.</para>
 @y
   <para>
@@ -36,20 +36,20 @@
 
 @x
   <para>Because the LFS book assumes <emphasis>at least</emphasis> this basic
-  level of skill, the various LFS support forums are unlikely to be able to
+  level of skill, the various LFS support forums are unlikely to
   provide you with much assistance in these areas. You will find that your
-  questions regarding such basic knowledge will likely go unanswered or you
-  will simply be referred to the LFS essential pre-reading list.</para>
+  questions regarding such basic knowledge will likely go unanswered (or you
+  will simply be referred to the LFS essential pre-reading list).</para>
 @y
   <para>
   LFS ブックでは、<emphasis>最低でも</emphasis> そのようなスキルがあることを前提としていますので、数多くの LFS サポートフォーラムは、ひょっとすると役に立たないかもしれません。
   フォーラムにおいて基本的な知識を尋ねたとしたら、誰も回答してくれないでしょう。
-  そうするよりも LFS に取り掛かる前に以下のような情報をよく読んでください。
+  (そうするよりも LFS に取り掛かる前に以下のような情報をよく読んでください。)
   </para>
 @z
 
 @x
-  <para>Before building an LFS system, we recommend reading the following:</para>
+  <para>Before building an LFS system, we urge you to read these articles:</para>
 @y
   <para>
   LFS システムの構築作業に入る前に、以下を読むことをお勧めします。
@@ -66,11 +66,11 @@
       <para>This is a comprehensive guide to building and installing
       <quote>generic</quote> Unix software packages under Linux. Although it
       was written some time ago, it still provides a good summary of the
-      basic techniques needed to build and install software.</para>
+      basic techniques used to build and install software.</para>
 @y
   <para>
   これは Linux 上において<quote>一般的な</quote> Unix ソフトウェアを構築してインストールする方法を総合的に説明しています。
-  だいぶ前に書かれたものですが、ソフトウェアのビルドとインストールを行うために必要となる基本的な方法が程よくまとめられています。
+  だいぶ前に書かれたものですが、ソフトウェアのビルドとインストールを行う基本的な方法が程よくまとめられています。
   </para>
 @z
 
@@ -81,7 +81,7 @@
 @z
 
 @x
-      <para>This guide provides a good summary of basic skills and
+      <para>This guide provides a good summary of the basic skills and
       techniques needed to build software from source code.</para>
 @y
       <para>

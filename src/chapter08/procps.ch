@@ -24,9 +24,9 @@
 @z
 
 @x
-    <para>Prepare procps-ng for compilation:</para>
+    <para>Prepare Procps-ng for compilation:</para>
 @y
-    <para>procps-ng をコンパイルするための準備をします。</para>
+    <para>Procps-ng をコンパイルするための準備をします。</para>
 @z
 
 @x
@@ -37,7 +37,7 @@
 
 @x --disable-kill
           <para>This switch disables building the <command>kill</command>
-          command that will be installed by the Util-linux package.</para>
+          command; it will be installed from the Util-linux package.</para>
 @y
           <para>
           本スイッチは <command>kill</command> コマンドをビルドしないようにします。

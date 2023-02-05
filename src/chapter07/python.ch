@@ -30,7 +30,8 @@
       <para>
       <quote>python</quote>の名前で始まるパッケージファイルは 2 種類あります。
       そのうち、扱うべきファイルは <filename>Python-&python-version;.tar.xz</filename> です。
-      （1 文字めが大文字であるものです。）</para>
+      （1 文字めが大文字であるものです。）
+      </para>
 @z
 
 %@x

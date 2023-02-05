@@ -1464,9 +1464,13 @@
           <seg>なし</seg>
 @z
 @x
-            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>
+            <ulink url="&blfs-book;general/cpio.html">cpio</ulink> and
+            <ulink url="&blfs-book;general/llvm.html">LLVM</ulink>
+            (with Clang)
 @y
-            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>
+            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>,
+            <ulink url="&blfs-book;general/llvm.html">LLVM</ulink>
+            (Clang 込み)
 @z
 
 %----------------------------------------------------------------------
@@ -1589,11 +1593,13 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;general/libseccomp.html">libseccomp</ulink>
+            <ulink url="&blfs-book;general/libseccomp.html">libseccomp</ulink> and
+            <ulink url="https://po4a.org/index.php.en">po4a</ulink>
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;general/libseccomp.html">libseccomp</ulink>
+            <ulink url="&blfs-book;general/libseccomp.html">libseccomp</ulink>,
+            <ulink url="https://po4a.org/index.php.en">po4a</ulink>
           </seg>
 @z
 
@@ -1678,9 +1684,15 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Systemd</seg>
+          <seg>
+            <phrase revision='sysv'>None</phrase>
+            <phrase revision='systemd'>Systemd</phrase>
+          </seg>
 @y
-          <seg>Systemd</seg>
+          <seg>
+            <phrase revision='sysv'>なし</phrase>
+            <phrase revision='systemd'>Systemd</phrase>
+          </seg>
 @z
 @x
           <seg>None</seg>
@@ -2313,15 +2325,15 @@
 %----------------------------------------------------------------------
 @x Util-linux
           <seg>Bash, Binutils, Coreutils, Diffutils, Eudev, Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Libcap, Make, Ncurses, Sed, and Zlib</seg>
+          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed, and Zlib</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Eudev, Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Libcap, Make, Ncurses, Sed, Zlib</seg>
+          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed, Zlib</seg>
 @z
 @x
-          <seg>Glibc, Libcap, Ncurses, Readline, and Zlib</seg>
+          <seg>Glibc, Ncurses, Readline, and Zlib</seg>
 @y
-          <seg>Glibc, Libcap, Ncurses, Readline, Zlib</seg>
+          <seg>Glibc, Ncurses, Readline, Zlib</seg>
 @z
 @x
           <seg>None</seg>
@@ -2336,12 +2348,16 @@
 @x
           <seg>
             <ulink
+              url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
+            <ulink
               url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>
             and <ulink
               url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>
           </seg>
 @y
           <seg>
+            <ulink
+              url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
             <ulink
               url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>,
             <ulink
@@ -2407,9 +2423,15 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Jinja2</seg>
+          <seg>
+            <phrase revision='sysv'>None</phrase>
+            <phrase revision='systemd'>Jinja2</phrase>
+          </seg>
 @y
-          <seg>Jinja2</seg>
+          <seg>
+            <phrase revision='sysv'>なし</phrase>
+            <phrase revision='systemd'>Jinja2</phrase>
+          </seg>
 @z
 @x
           <seg>None</seg>
@@ -2517,9 +2539,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC and Systemd</seg>
+          <seg>GCC <phrase revision='systemd'>and Systemd</phrase></seg>
 @y
-          <seg>GCC, Systemd</seg>
+          <seg>GCC <phrase revision='systemd'>, Systemd</phrase></seg>
 @z
 @x
           <seg>

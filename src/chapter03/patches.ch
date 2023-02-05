@@ -109,10 +109,10 @@
         <para>&Download;: <ulink url="&patches-root;&perl-fix-patch;"/></para>
 @z
 
-@x Shadow Segfault Fix Patch
-        <para>Download: <ulink url="&patches-root;&shadow-segfault-patch;"/></para>
+@x Readline Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&shadow-segfault-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
 @z
 
 @x Sysvinit Consolidated Patch

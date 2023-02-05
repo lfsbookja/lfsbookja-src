@@ -22,11 +22,11 @@
 @z
 
 @x
-    <para>First, remove the currently installed documentation to prevent them
+    <para>First, remove the currently installed documentation files to prevent them
     from ending up in the final system, and to save about 35 MB:</para>
 @y
     <para>
-    はじめに、現在インストールされているドキュメントは削除します。
+    はじめに、現在インストールされているドキュメントファイルは削除します。
     これを最終的なシステムに持ち込みません。
     これによって 35 MB を節約します。
     </para>
@@ -34,9 +34,9 @@
 
 @x
     <para>Second, on a modern Linux system, the libtool .la files are only
-    useful for libltdl.  No libraries in LFS are expected to be loaded by
-    libltdl, and it's known that some .la files can cause BLFS packages
-    fail to build.  Remove those files now:</para>
+    useful for libltdl.  No libraries in LFS are loaded by
+    libltdl, and it's known that some .la files can cause BLFS package
+    failures.  Remove those files now:</para>
 @y
     <para>
     最近の Linux システムにおいて libtool の .la ファイルは、libltdl に対してのみ用いられます。
@@ -68,14 +68,14 @@
       and your current LFS system is in a good state. Your system can now be
       backed up for later reuse. In case of fatal failures in the subsequent
       chapters, it often turns out that removing everything and starting over
-      (more carefully) is the best option to recover. Unfortunately, all the
+      (more carefully) is the best way to recover. Unfortunately, all the
       temporary files will be removed, too. To avoid spending extra time to
-      redo something which has been built successfully, creating a backup of
+      redo something which has been done successfully, creating a backup of
       the current LFS system may prove useful.
 @y
       この時点において、基本的なプログラムやライブラリが生成されたので、現在の LFS システムの状態は良好なものです。
       このシステムを、後に再利用できるように、ここでバックアップを取ることができます。
-      ここから先の章において、致命的な失敗をしてしまった場合は、すべてを削除して (今度はより慎重に) やり直すのが、一番のやり方であるのは、明らかです。
+      ここから先の章において、致命的な失敗をしてしまった場合は、すべてを削除して (今度はより慎重に) やり直すのが、一番のやり方であるのは明らかです。
       ただし、そのときには一時システムも失ってしまっている状態です。
       余計な時間を費やすことなく、ビルドに成功したところまでのシステムを使ってやり直す策を考えるのであれば、ここで LFS システムのバックアップをとっておくことが、後々の役に立つかもしれません。
 @z
@@ -94,17 +94,16 @@
 
 @x
       The following steps are performed from outside the chroot
-      environment. That means, you have to leave the chroot environment
+      environment. That means you have to leave the chroot environment
       first before continuing. The reason for that is to
       get access to file system locations outside of the chroot
-      environment to store/read the backup archive which should
+      environment to store/read the backup archive, which ought
       not be placed within the
-      <filename class="directory">$LFS</filename> hierarchy for
-      safety reasons.
+      <filename class="directory">$LFS</filename> hierarchy.
 @y
       以下の手順は chroot 環境の外から実施します。
       これはつまり chroot 環境から抜け出してから手順を進めていくということです。
-      こうする理由は、バックアップアーカイブの保存や読み込みをするなら、ファイルシステムへのアクセスは chroot 環境の外部から行うべきであって、安全のため <filename
+      こうする理由は、バックアップアーカイブの保存や読み込みをするなら、ファイルシステムへのアクセスは chroot 環境の外部から行うべきであって、<filename
           class="directory">$LFS</filename> ディレクトリ階層の内部において行うべきではないからです。
 @z
 
@@ -118,19 +117,19 @@
         All of the following instructions are executed by
         <systemitem class="username">root</systemitem> on your host system.
         Take extra care about the commands you're going to run as mistakes
-        here can modify your host system. Be aware that the
+        made here can modify your host system. Be aware that the
         environment variable <envar>LFS</envar>
         is set for user <systemitem class="username">lfs</systemitem> by default
         but may <emphasis>not</emphasis> be set for
         <systemitem class="username">root</systemitem>.
 @y
-      以降の手順はすべて、ホストシステム上の <systemitem
-      class="username">root</systemitem> ユーザーにより実施します。
-      特にコマンド実行は、よく注意しながら行ってください。
-      誤ったことをすると、ホストシステムを書き換えてしまうことになります。
-      環境変数 <envar>LFS</envar> はデフォルトで <systemitem
-      class="username">lfs</systemitem> ユーザーにおいて設定していましたが、<systemitem
-      class="username">root</systemitem> ユーザーにおいては設定していないかもしれません。
+        以降の手順はすべて、ホストシステム上の <systemitem
+        class="username">root</systemitem> ユーザーにより実施します。
+        特にコマンド実行は、よく注意しながら行ってください。
+        誤ったことをすると、ホストシステムを書き換えてしまうことになります。
+        環境変数 <envar>LFS</envar> はデフォルトで <systemitem
+        class="username">lfs</systemitem> ユーザーにおいて設定していましたが、<systemitem
+        class="username">root</systemitem> ユーザーにおいては設定していないかもしれません。
 @z
 
 @x
@@ -156,8 +155,8 @@
 
 @x
       Make sure you have at least 1 GB free disk space (the source tarballs
-      will be included in the backup archive) on the filesystem containing
-      directory where you create the backup archive.
+      will be included in the backup archive) on the file system containing
+      the directory where you create the backup archive.
 @y
       バックアップアーカイブを生成したディレクトリを含むファイルシステムにおいて、未使用のディスク容量が最低でも 1 GB はあることを確認してください。
       （ソース tarball もバックアップアーカイブに含めます。）
@@ -166,18 +165,14 @@
 @x
       Note that the instructions below specify the home directory of the host
       system's <systemitem class="username">root</systemitem> user, which is
-      typically found on the root filesystem.
-@y
-      なお、これ以降の手順説明においては、ホストシステム上の <systemitem
-      class="username">root</systemitem> ユーザーのホームディレクトリを用いています。
-      これは通常、ルートファイルシステムに置かれているものです。
-@z
-
-@x
+      typically found on the root file system.
       Replace <envar>$HOME</envar> by a directory of your choice if you
       do not want to have the backup stored in <systemitem
       class="username">root</systemitem>'s home directory.
 @y
+      なお、これ以降の手順説明においては、ホストシステム上の <systemitem
+      class="username">root</systemitem> ユーザーのホームディレクトリを用いています。
+      これは通常、ルートファイルシステムに置かれているものです。
       <systemitem class="username">root</systemitem> ユーザーのホームディレクトリにバックアップを生成したくない場合は、<envar>$HOME</envar> の内容を適切に書き換えてください。
 @z
 
@@ -213,7 +208,7 @@
       Since the sources are located under
       <filename class="directory">$LFS</filename>, they are included in the
       backup archive as well, so they do not need to be downloaded again. After
-      checking that <envar>$LFS</envar> is set properly,
+      checking that <envar>$LFS</envar> is set properly, you can
       restore the backup by executing the following commands:
 @y
       誤操作をしてしまい、初めからやり直す必要が出てきたとします。
@@ -238,7 +233,7 @@
 @z
 
 @x
-       Again, double check that the environment has been setup properly
+       Again, double check that the environment has been set up properly
        and continue building the rest of the system.
 @y
        環境変数が適切に設定されていることを再度確認の上、ここから続くシステムビルドに進んでいきます。
@@ -247,7 +242,7 @@
 @x
          If you left the chroot environment to create a backup or restart
          building using a restore, remember to check that the virtual
-         filesystems are still mounted (<command>findmnt | grep
+         file systems are still mounted (<command>findmnt | grep
          $LFS</command>).  If they are not mounted, remount them now as
          described in <xref linkend='ch-tools-kernfs'/> and re-enter the chroot
          environment (see <xref linkend='ch-tools-chroot'/>) before continuing.

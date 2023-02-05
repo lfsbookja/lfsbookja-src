@@ -41,31 +41,50 @@
 @z
 
 @x
-  <para>We do not recommend using optimizations.  They can make
+  <para>We do not recommend using customized optimizations.  They can make
   a program run slightly faster, but they may also cause compilation
-  difficulties and problems when running the program.  If a package refuses to
-  compile when using optimization, try to compile it without optimization and
-  see if that fixes the problem. Even if the package does compile when using
+  difficulties, and problems when running the program.  If a package refuses to
+  compile with a customized optimization, try to compile it without
+  optimization and see if that fixes the problem. Even if the package does compile when using a customized
   optimization, there is the risk it may have been compiled incorrectly because
-  of the complex interactions between the code and build tools.  Also note that
+  of the complex interactions between the code and the build tools.  Also note that
   the <option>-march</option> and <option>-mtune</option> options using values
   not specified in the book have not been tested. This may cause problems with
   the toolchain packages (Binutils, GCC and Glibc).  The small potential gains
-  achieved in using compiler optimizations are often outweighed by the risks.
+  achieved by customizing compiler optimizations are often outweighed by the risks.
   First-time builders of LFS are encouraged to build without custom
-  optimizations. The subsequent system will still run very fast and be stable
-  at the same time.</para>
+  optimizations.</para>
 @y
   <para>
-  コンパイラーには最適化オプションがありますが、これを利用することはお勧めしません。
-  コンパイラーの最適化を用いればプログラムが若干速くなる場合もありますが、そもそもコンパイルが出来なかったり、プログラムの実行時に問題が発生したりする場合があります。
-  もしコンパイラーの最適化によってパッケージビルドが出来なかったら、最適化をなしにしてもう一度コンパイルすることで解決するかどうかを確認してください。
+  コンパイラーにはカスタマイズ可能な最適化がありますが、これを利用することはお勧めしません。
+  コンパイラーのカスタマイズ最適化を用いればプログラムが若干速くなる場合もありますが、そもそもコンパイルが出来なかったり、プログラムの実行時に問題が発生したりする場合があります。
+  もしコンパイラーのカスタマイズ最適化によってパッケージビルドが出来なかったら、最適化をなしにしてもう一度コンパイルすることで解決するかどうかを確認してください。
   最適化を行ってパッケージがコンパイル出来たとしても、コードとビルドツールの複雑な関連に起因してコンパイルが適切に行われないリスクをはらんでいます。
   また <option>-march</option> オプションや <option>-mtune</option> オプションにて指定する値は、本書には明示しておらずテストも行っていませんので注意してください。
   これらはツールチェーンパッケージ (Binutils、GCC、Glibc) に影響を及ぼすことがあります。
   最適化オプションを用いることによって得られるものがあったとしても、それ以上にリスクを伴うことがしばしばです。
   初めて LFS 構築を手がける方は、最適化オプションをなしにすることをお勧めします。
-  これ以降にビルドしていくツール類は、それでも十分に速く安定して動作するはずです。
+  </para>
+@z
+  結果的に出来上がるシステムは、それでも十分に速く安定して動作するはずです。
+
+@x
+  <para>On the other hand, we keep the optimizations enabled by the default
+  configuration of the packages.  In addition, we sometimes explicitly enable an
+  optimized configuration provided by a package but not enabled by
+  default.  The package maintainers have already tested these configurations
+  and consider them safe, so it's not likely they would break the build.
+  Generally the default configuration already enables <option>-O2</option>
+  or <option>-O3</option>, so the resulting system will still run very fast
+  without any customized optimization, and be stable at the same time.</para>
+@y
+  <para>
+  一方で、各パッケージにおける最適化のデフォルト設定は、そのまま用いることにします。
+  さらにデフォルトでは有効になっていないものであっても、パッケージが提供する最適化設定を有効にする場合もあります。
+  パッケージ管理者はそういった設定についてのテストは行っていて、安全だと考えているからです。
+  したがってその設定を利用しても、ビルドに失敗することはないはずです。
+  一般的にデフォルトの設定では <option>-O2</option> または <option>-O3</option> を有効にしています。
+  つまりビルドされる結果のシステムは、他のカスタマイズ最適化オプションがなくても、充分に早く動作し、同時に安定しているはずです。
   </para>
 @z
 
@@ -103,7 +122,7 @@
 @z
 
 @x
-  <note><para>The SBU values and required disk space includes test suite data
+  <note><para>The SBU values and required disk space include test suite data
   for all applicable packages in <xref linkend="chapter-building-system"/>. SBU
   values have been calculated using a single CPU core (-j1) for all
   operations.</para></note>
@@ -115,24 +134,24 @@
 @z
 
 @x
-    <title>About libraries</title>
+    <title>About Libraries</title>
 @y
     <title>ライブラリについて</title>
 @z
 
 @x
     <para>In general, the LFS editors discourage building and installing static
-    libraries.  The original purpose for most static libraries has been made
+    libraries.  Most static libraries have been made
     obsolete in a modern Linux system.  In addition, linking a static library
     into a program can be detrimental.  If an update to the library is needed
-    to remove a security problem, all programs that use the static library will
-    need to be relinked to the new library.  Since the use of static libraries
+    to remove a security problem, every program that uses the static library will
+    need to be relinked with the new library.  Since the use of static libraries
     is not always obvious, the relevant programs (and the procedures needed to
     do the linking) may not even be known.</para>
 @y
     <para>
     LFS 編集者は全般にスタティックライブラリは作らないものとしています。
-    スタティックライブラリが作られたそもそもの目的は、現在の Linux システムにとってはもはや古いものです。
+    スタティックライブラリのほとんどは、現在の Linux システムにとってはもはや古いものになっています。
     スタティックライブラリをリンクすると障害となることすらあります。
     例えばセキュリティ問題を解決するためにライブラリリンクを更新しなければならなくなったら、スタティックライブラリにリンクしていたプログラムはすべて再構築しなければなりません。
     したがってスタティックライブラリを使うべきかどうかは、いつも迷うところであり、関連するプログラム (あるいはリンクされるプロシージャ) であってもどちらかに定めなければなりません。
@@ -140,22 +159,22 @@
 @z
 
 @x
-    <para>In the procedures in this chapter, we remove or disable installation of
+    <para>The procedures in this chapter remove or disable installation of
     most static libraries. Usually this is done by passing a
     <option>--disable-static</option> option to <command>configure</command>.
     In other cases, alternate means are needed. In a few cases, especially
-    glibc and gcc, the use of static libraries remains essential to the general
+    Glibc and GCC, the use of static libraries remains an essential feature of the
     package building process. </para>
 @y
     <para>
     本章の手順では、スタティックライブラリのインストールはたいてい行わないようにしています。
     多くのケースでは <command>configure</command> に対して <option>--disable-static</option> を与えることで実現しますが、これができない場合には他の方法を取ります。
-    ただし glibc や gcc においては、一般的なパッケージビルドに必要であるため、スタティックライブラリを利用します。
+    ただし Glibc や GCC などにおいては、パッケージビルドの手順にとって重要な機能となるため、スタティックライブラリを利用します。
     </para>
 @z
 
 @x
-    <para>For a more complete discussion of libraries, see the discussion
+    <para>For a more complete discussion of libraries, see
     <ulink url="&blfs-book;introduction/libraries.html">
     Libraries: Static or shared?</ulink> in the BLFS book.</para>
 @y

@@ -87,8 +87,8 @@
 
 @x
         The LFS book is not (and does not contain) a general tutorial to
-        build a cross (or native) toolchain. Don't use the commands in the
-        book for a cross toolchain for some purpose other
+        build a cross- (or native) toolchain. Don't use the commands in the
+        book for a cross-toolchain for some purpose other
         than building LFS, unless you really understand what you are doing.
 @y
         LFS はクロスツールチェーン（あるいはネイティブツールチェーン）のビルドを説明する書ではなく、その説明は行っていません。
@@ -157,7 +157,7 @@
 
 @x
     <para>As an example, let us imagine the following scenario (sometimes
-    referred to as <quote>Canadian Cross</quote>): we have a
+    referred to as <quote>Canadian Cross</quote>). We have a
     compiler on a slow machine only, let's call it machine A, and the compiler
     ccA. We also have a fast machine (B), but no compiler for (B), and we
     want to produce code for a third, slow machine (C). We will build a
@@ -253,30 +253,73 @@
 @z
 
 @x
-      <para>Almost all the build systems use names of the form
-      cpu-vendor-kernel-os, referred to as the machine triplet. An astute
-      reader may wonder why a <quote>triplet</quote> refers to a four component
-      name. The reason is historical: initially, three component names were enough
-      to designate a machine unambiguously, but as new machines and systems
-      proliferated, that proved insufficient. The word <quote>triplet</quote>
-      remained. A simple way to determine your machine triplet is to run
-      the <command>config.guess</command>
+      <para>All the cross-compiled packages in this book use an
+      autoconf-based building system.  The autoconf-based building system
+      accepts system types in the form cpu-vendor-kernel-os,
+      referred to as the system triplet.  Since the vendor field is often
+      irrelevant, autoconf lets you omit it.</para>
+@y
+      <para>
+      本書におけるクロスコンパイルパッケージは、すべて autoconf ベースのビルドシステムを利用しています。
+      この autoconf ベースのビルドシステムは、システムのタイプとして cpu-vendor-kernel-os という形式のシステムトリプレット (system triplet) を用いています。
+      ベンダー項目はたいていは正しくないため、autoconf では無視されます。
+      </para>
+@z
+
+@x
+      <para>An astute reader may wonder
+      why a <quote>triplet</quote> refers to a four component name. The
+      kernel field and the os field began as a single
+      <quote>system</quote> field.  Such a three-field form is still valid
+      today for some systems, for example,
+      <literal>x86_64-unknown-freebsd</literal>.  But
+      two systems can share the same kernel and still be too different to
+      use the same triplet to describe them.  For example, Android running on a
+      mobile phone is completely different from Ubuntu running on an ARM64
+      server, even though they are both running on the same type of CPU (ARM64) and
+      using the same kernel (Linux).</para>
+@y
+      <para>
+      よく考えてみると、4 つの項目からなる名前なのに、どうして<quote>3 つの組 (triplet)</quote>というのでしょう。
+      カーネルと OS の各項目は、元は<quote>システム (system)</quote>項目に由来しています。
+      したがって 3 つの項目からなる書式が、今も有効に扱われるシステムもあります。
+      たとえば <literal>x86_64-unknown-freebsd</literal> です。
+      異なる 2 システム間で同一カーネルを共有することも不可能ではありませんが、それにしても同一トリプレットとするには、あまりにも差異がありすぎます。
+      たとえば携帯端末で動作する Android は ARM64 サーバー上で動作する Ubuntu とでは、確かに同一の CPU タイプ (ARM64) であり、同一カーネル (Linux) を使っているとは言っても、明らかに違います。
+      </para>
+@z
+
+@x
+      <para>Without an emulation layer, you cannot run an
+      executable for a server on a mobile phone or vice versa.  So the
+      <quote>system</quote> field has been divided into kernel and os fields, to
+      designate these systems unambiguously.  In our example, the Android
+      system is designated <literal>aarch64-unknown-linux-android</literal>,
+      and the Ubuntu system is designated
+      <literal>aarch64-unknown-linux-gnu</literal>.</para>
+@y
+      <para>
+      エミュレーション層を設けない限り、携帯端末上にサーバー向け実行モジュールを起動することはできません。
+      この逆の場合も同様です。
+      そこで<quote>システム (system)</quote>フィールドは kernel と os に分けられ、システムを明確に指定するようになりました。
+      たとえば上の例における Android システムは <literal>aarch64-unknown-linux-android</literal> と指定され、Ubuntu システムは <literal>aarch64-unknown-linux-gnu</literal> と指定されるようになります。
+      </para>
+@z
+
+@x
+      <para>The word <quote>triplet</quote> remains embedded in the lexicon. A simple way to determine your
+      system triplet is to run the <command>config.guess</command>
       script that comes with the source for many packages. Unpack the binutils
-      sources and run the script: <userinput>./config.guess</userinput> and note
+      sources, run the script <userinput>./config.guess</userinput>, and note
       the output. For example, for a 32-bit Intel processor the
       output will be <emphasis>i686-pc-linux-gnu</emphasis>. On a 64-bit
       system it will be <emphasis>x86_64-pc-linux-gnu</emphasis>. On most
       Linux systems the even simpler <command>gcc -dumpmachine</command> command
-      will give you the same information.</para>
+      will give you similar information.</para>
 @y
       <para>
-      ほぼすべてのビルドシステムにおいては、cpu-vendor-kernel-os という形式のマシントリプレット（triplet）と呼ばれる名称が用いられます。
-      お気づきのことと思いますが、なぜ "トリプレット" といいながら 4 つの項目からなる名前なのでしょう。
-      その理由はこれまでの経緯にあります。
-      当初は 3 つの項目による名前を使っていれば、マシンを間違いなく特定できるものでした。
-      しかし新たなマシン、新たなシステムが登場するようになって、これでは不十分であることがわかりました。
-      "トリプレット" という語だけが残ったわけです。
-      マシンのトリプレットを確認する一番簡単な方法は、<command>config.guess</command> スクリプトを実行することです。
+      <quote>トリプレット</quote> という名前が辞書に残っただけです。
+      システムのトリプレットを確認する一番簡単な方法は、<command>config.guess</command> スクリプトを実行することです。
       これは多くのパッケージのソースに含まれています。
       binutils のソースを伸張（解凍）し、この <userinput>./config.guess</userinput> スクリプトを実行して、その出力を確認してください。
       たとえば 32 ビットのインテルプロセッサーであれば、<emphasis>i686-pc-linux-gnu</emphasis> と出力されます。
@@ -321,11 +364,11 @@
 @z
 
 @x
-    <para>In order to fake a cross compilation in LFS, the name of the host triplet
+    <para>In order to fake a cross-compilation in LFS, the name of the host triplet
     is slightly adjusted by changing the &quot;vendor&quot; field in the
     <envar>LFS_TGT</envar> variable so it says &quot;lfs&quot;. We also use the
-    <parameter>--with-sysroot</parameter> option when building the cross linker and
-    cross compiler to tell them where to find the needed host files. This
+    <parameter>--with-sysroot</parameter> option when building the cross-linker and
+    cross-compiler, to tell them where to find the needed host files. This
     ensures that none of the other programs built in <xref
     linkend="chapter-temporary-tools"/> can link to libraries on the build
     machine. Only two stages are mandatory, plus one more for tests.</para>
@@ -381,14 +424,14 @@
 @z
 
 @x
-    <para>Now, there is more about cross-compiling: the C language is not
-    just a compiler, but also defines a standard library. In this book, the
+    <para>This is not yet the end of the story. The C language is not
+    merely a compiler; it also defines a standard library. In this book, the
     GNU C library, named glibc, is used (there is an alternative, &quot;musl&quot;). This library must
-    be compiled for the LFS machine; that is, using the cross compiler cc1.
-    But the compiler itself uses an internal library implementing complex
+    be compiled for the LFS machine; that is, using the cross-compiler cc1.
+    But the compiler itself uses an internal library providing complex
     subroutines for functions not available in the assembler instruction set. This
     internal library is named libgcc, and it must be linked to the glibc
-    library to be fully functional! Furthermore, the standard library for
+    library to be fully functional. Furthermore, the standard library for
     C++ (libstdc++) must also be linked with glibc. The solution to this
     chicken and egg problem is first to build a degraded cc1-based libgcc,
     lacking some functionalities such as threads and exception handling, and then
@@ -397,7 +440,7 @@
     functionality of libgcc.</para>
 @y
     <para>
-    さてクロスコンパイルに関しては、まだまだあります。
+    話はまだまだあります。
     C 言語というと単にコンパイラーがあるだけではなく、標準ライブラリも定義しています。
     本書では glibc と呼ぶ GNU C ライブラリを用いています（別の選択肢として &quot;musl&quot; があります）。
     このライブラリは lfs マシン向けにコンパイルされたものでなければなりません。
@@ -415,29 +458,85 @@
 @z
 
 @x
-    <para>This is not the end of the story: the upshot of the preceding
-    paragraph is that cc1 is unable to build a fully functional libstdc++, but
-    this is the only compiler available for building the C/C++ libraries
-    during stage 2! Of course, the compiler built during stage 2, cc-lfs,
-    would be able to build those libraries, but (1) the build system of
-    gcc does not know that it is usable on pc, and (2) using it on pc
-    would create a risk of linking to the pc libraries, since cc-lfs is a native
-    compiler. So we have to re-build libstdc++ later, in the chroot environment.</para>
+    <para>The upshot of the preceding paragraph is that cc1 is unable to
+    build a fully functional libstdc++ with the degraded libgcc, but cc1
+    is the only compiler available for building the C/C++ libraries
+    during stage 2. There are two reasons we don't immediately use the
+    compiler built in stage 2, cc-lfs, to build those libraries.</para>
 @y
     <para>
-    これで話が終わるわけではありません。
     上の段落における結論は以下のようになります。
-    cc1 からは完全な libstdc++ はビルドできないということです。
+    グレードの落ちた libgcc を使っている以上、cc1 からは完全な libstdc++ はビルドできないということです。
     しかし第 2 段階においては、C/C++ ライブラリをビルドできる唯一のコンパイラーです。
-    もちろん第 2 段階においてビルドされるコンパイラー cc-lfs は、それらライブラリをビルドできます。
-    しかし (1) gcc ビルドシステムは、それが pc 上で利用できるかどうかわかりません、そして (2) pc 上にてそれを使うと pc 内のライブラリにリンクしてしまうリスクがあります。
-    なぜなら cc-lfs はネイティブコンパイラーであるからです。
-    そこで libstdc++ は、後々 chroot 環境内で再ビルドしなければならないのです。
+    第 2 段階でビルドしたコンパイラー cc-lfs を、そういったライブラリビルド用として即座には利用しない理由が 2 つあります。
     </para>
 @z
 
 @x
-    <title>Other procedural details</title>
+          Generally speaking, cc-lfs cannot run on pc (the host system).  Even though the
+          triplets for pc and lfs are compatible with each other, an executable
+          for lfs must depend on glibc-&glibc-version;; the host distro
+          may utilize either a different implementation of libc (for example, musl), or
+          a previous release of glibc (for example, glibc-2.13).
+@y
+          一般的に cc-lfs は PC（ホストシステム）上で動作させることはできません。
+          PC と LFS のトリプレットに互換性があったとしても、LFS 向けの実行ファイルは Glibc-&glibc-version; に依存していなければなりません。
+          一方ホストディストロは、異なる libc 実装（たとえば musl）や古い Glibc（たとえば glibc-2.13）を利用しているかもしれません。
+@z
+
+@x
+          Even if cc-lfs can run on pc, using it on pc would create
+          a risk of linking to the pc libraries, since cc-lfs is a native
+          compiler.
+@y
+          PC 上において cc-lfs が動作できたとしても、それを使い続けると、その PC 上のライブラリにリンクしてしまうリスクがあります。
+          これは cc-lfs がネイティブコンパイラーであるからです。
+@z
+
+@x
+    <para>So when we build gcc stage 2, we instruct the building system to
+    rebuild libgcc and libstdc++ with cc1, but we link libstdc++ to the newly
+    rebuilt libgcc instead of the old, degraded build.  This makes the rebuilt
+    libstdc++ fully functional.</para>
+@y
+    <para>
+    そこで libstdc++ は、2 回めの gcc の一部として再ビルドしないといけません。
+    そこで GCC 2 回めのビルドにあたっては、cc1 を使って libgcc と libstdc++ を再ビルドするように指示します。
+    ただしこのとき、libstdc++ がリンクされるのは、デグレードした古い libgcc ではなく、新たに再ビルドされた libgcc です。
+    こうして libstdc++ は再ビルドによって完全な機能を備えることになります。
+    </para>
+@z
+
+@x
+    <para>In &ch-final; (or <quote>stage 3</quote>), all the packages needed for
+    the LFS system are built. Even if a package has already been installed into
+    the LFS system in a previous chapter, we still rebuild the package.  The main reason for
+    rebuilding these packages is to make them stable: if we reinstall an LFS
+    package on a completed LFS system, the reinstalled content of the package
+    should be the same as the content of the same package when first installed in
+    &ch-final;.  The temporary packages installed in &ch-tmp-cross; or
+    &ch-tmp-chroot; cannot satisfy this requirement, because some of them
+    are built without optional dependencies, and autoconf cannot
+    perform some feature checks in &ch-tmp-cross; because of cross-compilation,
+    causing the temporary packages to lack optional features,
+    or use suboptimal code routines. Additionally, a minor reason for
+    rebuilding the packages is to run the test suites.</para>
+@y
+    <para>
+    &ch-final; (つまり<quote>3 回め</quote>) において、LFS システムに必要なパッケージがすべてビルドされます。
+    それまでの章において、特定のパッケージがたとえ LFS システムにインストールされていても、再ビルドをし続けます。
+    そのようにしてパッケージを再ビルドする最大の理由は、そのパッケージを安定させるためです。
+    完全に仕上がった LFS システムに、どれかの LFS パッケージを再インストールしたとしたら、その際にインストールされる内容は、&ch-final; において初めてインストールされるものと、全く同一でなければなりません。
+    &ch-tmp-cross; や &ch-tmp-chroot; においてインストールする一時的なパッケージでは、この要件を満たしません。
+    なぜならそういったものに対しては、任意の依存パッケージを含めずにビルドしているからです。
+    また &ch-tmp-cross; において autoconf が行う機能チェックは、クロスコンパイルが原因で一部が適切に行われません。
+    そうなると一時パッケージには、オプション機能がコンパイルされなかったり、最適化が不十分なコードルーチンが用いられたりすることがあります。
+    さらにパッケージ再ビルドのもう一つの理由は、テストスイートを実行するためです。
+    </para>
+@z
+
+@x
+    <title>Other Procedural Details</title>
 @y
     <title>その他の手順詳細</title>
 @z
@@ -585,12 +684,11 @@
     its library search order. Detailed information can be obtained from
     <command>ld</command> by passing it the <parameter>--verbose</parameter>
     flag. For example, <command>$LFS_TGT-ld --verbose | grep SEARCH</command>
-    will illustrate the current search paths and their order. It shows which
-    files are linked by <command>ld</command> by compiling a dummy program and
-    passing the <parameter>--verbose</parameter> switch to the linker. For
-    example,
-    <command>$LFS_TGT-gcc dummy.c -Wl,--verbose 2&gt;&amp;1 | grep succeeded</command>
-    will show all the files successfully opened during the linking.</para>
+    will illustrate the current search paths and their order. (Note that this
+    example can be run as shown only while logged in as user
+    <systemitem class="username">lfs</systemitem>. If you come back to this
+    page later, replace <command>$LFS_TGT-ld</command> with
+    <command>ld</command>).</para>
 @y
     <para>
     Binutils はアセンブラーとリンカーを二箇所にインストールします。
@@ -600,8 +698,8 @@
     リンカーの重要なところはライブラリを検索する順番です。
     <command>ld</command> コマンドに <parameter>--verbose</parameter> オプションをつけて実行すれば詳しい情報が得られます。
     例えば <command>$LFS_TGT-ld --verbose | grep SEARCH</command> を実行すると、検索するライブラリのパスとその検索順を示してくれます。
-    ダミープログラムをコンパイルして <command>ld</command> に <parameter>--verbose</parameter> オプションをつけてリンクを行うと、どのファイルがリンクされたが分かります。
-    例えば <command>$LFS_TGT-gcc dummy.c -Wl,--verbose 2&gt;&amp;1 | grep succeeded</command> と実行すれば、リンカーの処理中にオープンに成功したファイルがすべて表示されます。
+    (この例は見て分かるように <systemitem class="username">lfs</systemitem> ユーザーでログインしている場合のみ実行することができます。
+    この後にもう一度このページに戻ってきたときには、<command>$LFS_TGT-ld</command> を単に <command>ld</command> と置き換えてください。)
     </para>
 @z
 
@@ -621,32 +719,37 @@
     directories to find which tools to use. However, during the actual
     operation of <command>gcc</command> itself, the same search paths are not
     necessarily used. To find out which standard linker <command>gcc</command>
-    will use, run: <command>$LFS_TGT-gcc -print-prog-name=ld</command>.</para>
+    will use, run: <command>$LFS_TGT-gcc -print-prog-name=ld</command>. (Again,
+    remove the <command>$LFS_TGT-</command> prefix if coming back to this
+    later.)</para>
 @y
     <para>
     これを示すのには重要な意味があります。
     gcc の configure スクリプトは、利用するツール類を探し出す際に PATH ディレクトリを参照していないということです。
     しかし <command>gcc</command> の実際の処理にあたっては、その検索パスが必ず使われるわけでもありません。
     <command>gcc</command> が利用する標準的なリンカーを確認するには <userinput>gcc -print-prog-name=ld</userinput> を実行します。
+    (上でも述べたように、後でこのページに戻ってきたときは <command>$LFS_TGT-</command> の部分を取り除いてください。)
     </para>
 @z
 
 @x
     <para>Detailed information can be obtained from <command>gcc</command> by
     passing it the <parameter>-v</parameter> command line option while compiling
-    a dummy program. For example, <command>gcc -v dummy.c</command> will show
+    a program. For example, <command>$LFS_TGT-gcc -v
+    <replaceable>example.c</replaceable></command> (or without <command>
+    $LFS_TGT-</command> if coming back later) will show
     detailed information about the preprocessor, compilation, and assembly
-    stages, including <command>gcc</command>'s included search paths and their
-    order.</para>
+    stages, including <command>gcc</command>'s search paths for included
+    headers and their order.</para>
 @y
   <para>
-  さらに詳細な情報を知りたいときは、ダミープログラムをコンパイルする際に <parameter>-v</parameter> オプションをつけて実行します。
-  例えば <command>gcc -v dummy.c</command> と入力すると、プリプロセッサー、コンパイル、アセンブルの各処理工程が示されますが、さらに <command>gcc</command> がインクルードした検索パスとその読み込み順も示されます。
+  <command>gcc</command> からさらに詳細な情報を知りたいときは、プログラムをコンパイルする際に <parameter>-v</parameter> オプションをつけて実行します。
+  たとえば <command>$LFS_TGT-gcc -v <replaceable>example.c</replaceable></command> と (あるいは後にここに戻ってきたときは <command>$LFS_TGT-</command> 部分を除いて) 入力すると、プリプロセッサー、コンパイル、アセンブルの各処理工程が示されますが、さらに <command>gcc</command> がインクルードヘッダーを検索するパスとその読み込み順も示されます。
   </para>
 @z
 
 @x
-    <para>Next installed are sanitized Linux API headers. These allow the
+    <para>Next up: sanitized Linux API headers. These allow the
     standard C library (glibc) to interface with features that the Linux
     kernel will provide.</para>
 @y
@@ -657,11 +760,11 @@
 @z
 
 @x
-    <para>The next package installed is glibc. The most important
+    <para>Next comes glibc. The most important
     considerations for building glibc are the compiler, binary tools, and
     kernel headers. The compiler is generally not an issue since glibc will
     always use the compiler relating to the <parameter>--host</parameter>
-    parameter passed to its configure script; e.g. in our case, the compiler
+    parameter passed to its configure script; e.g., in our case, the compiler
     will be <command>$LFS_TGT-gcc</command>. The binary tools and kernel
     headers can be a bit more complicated. Therefore, we take no risks and use
     the available configure switches to enforce the correct selections. After
@@ -673,7 +776,7 @@
     and the use of the <parameter>-nostdinc</parameter> and
     <parameter>-isystem</parameter> flags to control the compiler's include
     search path. These items highlight an important aspect of the glibc
-    package&mdash;it is very self-sufficient in terms of its build machinery
+    package&mdash;it is very self-sufficient in terms of its build machinery,
     and generally does not rely on toolchain defaults.</para>
 @y
     <para>
@@ -694,14 +797,15 @@
 
 @x
     <para>As mentioned above, the standard C++ library is compiled next, followed in
-    <xref linkend="chapter-temporary-tools"/> by all the remaining programs that need
-    to be cross compiled. The install step of all those packages uses the
+    <xref linkend="chapter-temporary-tools"/> by other programs that must
+    be cross-compiled to break circular dependencies at build time.
+    The install step of all those packages uses the
     <envar>DESTDIR</envar> variable to force installation
     in the LFS filesystem.</para>
 @y
     <para>
     すでに述べたように、標準 C++ ライブラリはこの後にコンパイルします。
-    そして <xref linkend="chapter-temporary-tools"/> では、プログラムそれ自身を必要としている残りのプログラムをすべてクロスコンパイルしていきます。
+    そして <xref linkend="chapter-temporary-tools"/> では、自己依存性を持ったプログラムをビルドできるように、その依存性を無視するためにクロスコンパイル行っていきます。
     そのようなパッケージのインストール手順においては <envar>DESTDIR</envar> 変数を使って、LFS ファイルシステム内にインストールするようにします。
     </para>
 @z
@@ -710,8 +814,8 @@
     <para>At the end of <xref linkend="chapter-temporary-tools"/> the native
     LFS compiler is installed. First binutils-pass2 is built,
     in the same <envar>DESTDIR</envar> directory as the other programs,
-    then the second version of gcc is constructed, omitting libstdc++
-    and other non-critical libraries.  Due to some weird logic in gcc's
+    then the second pass of gcc is constructed, omitting some
+    non-critical libraries.  Due to some weird logic in gcc's
     configure script, <envar>CC_FOR_TARGET</envar> ends up as
     <command>cc</command> when the host is the same as the target, but
     different from the build system. This is why
@@ -721,7 +825,7 @@
     <para>
     <xref linkend="chapter-temporary-tools"/> の最後には、LFS のネイティブコンパイラーをインストールします。
     はじめに <envar>DESTDIR</envar> ディレクトリを使って binutils 2 回めをビルドし、他のプログラムにおいても同じようにインストールを行います。
-    2 回めとなる gcc ビルドでは、libstdc++ や不必要なライブラリは省略します。
+    2 回めとなる gcc ビルドでは、不必要なライブラリは省略します。
     gcc の configure スクリプトにはハードコーディングされている部分があるので、<envar>CC_FOR_TARGET</envar> はホストのターゲットが同じであれば <command>cc</command> になります。
     しかしビルドシステムにおいては異なります。
     そこで configure オプションには <parameter>CC_FOR_TARGET=$LFS_TGT-gcc</parameter> を明示的に指定するようにしています。
@@ -730,17 +834,16 @@
 
 @x
     <para>Upon entering the chroot environment in <xref
-    linkend="chapter-chroot-temporary-tools"/>, the first task is to install
-    libstdc++. Then temporary installations of programs needed for the proper
+    linkend="chapter-chroot-temporary-tools"/>,
+    the temporary installations of programs needed for the proper
     operation of the toolchain are performed. From this point onwards, the
     core toolchain is self-contained and self-hosted. In
     <xref linkend="chapter-building-system"/>, final versions of all the
-    packages needed for a fully functional system are built, tested and
+    packages needed for a fully functional system are built, tested, and
     installed.</para>
 @y
     <para>
-    <xref linkend="chapter-chroot-temporary-tools"/>での chroot による環境下では、最初の作業は libstdc++ をビルドすることです。
-    そして各種プログラムのインストールを、ツールチェーンを適切に操作しながら実施していきます。
+    <xref linkend="chapter-chroot-temporary-tools"/>での chroot による環境下では、各種プログラムのインストールを、ツールチェーンを適切に操作しながら実施していきます。
     これ以降、コアとなるツールチェーンは自己完結していきます。
     そしてシステムの全機能を動作させるための全パッケージの最終バージョンを、ビルドしテストしインストールします。
     </para>

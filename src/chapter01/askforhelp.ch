@@ -19,7 +19,7 @@
   <para>If an issue or a question is encountered while working through
   this book, please check the FAQ page at <ulink url="&faq-root;#generalfaq"/>.
   Questions are often already answered there. If your question is not
-  answered on this page, try to find the source of the problem. The
+  answered on that page, try to find the source of the problem. The
   following hint will give you some guidance for troubleshooting:
   <ulink url="&hints-root;errors.txt"/>.</para>
 @y
@@ -46,12 +46,12 @@
   <para>We also have a wonderful LFS community that is willing to offer
   assistance through the mailing lists and IRC (see the <xref
   linkend="ch-intro-resources"/> section of this book). However,
-  we get several support questions every day and many of them can be easily
-  answered by going to the FAQ and by searching the mailing lists first.
-  So, for us to offer the best assistance possible, you need to do some
-  research on your own first. That allows us to focus on the more unusual
+  we get several support questions every day, and many of them could have been easily
+  answered by going to the FAQ or by searching the mailing lists first.
+  So, for us to offer the best assistance possible, you should first do some
+  research on your own. That allows us to focus on the more unusual
   support needs. If your searches do not produce a solution, please include
-  all relevant information (mentioned below) in your request for help.</para>
+  all the relevant information (mentioned below) in your request for help.</para>
 @y
   <para>
   我々のサイトにはメーリングリストやチャットを通じての情報提供を行う LFS コミュニティがあります。
@@ -71,10 +71,10 @@
 
 @x
     <para>Apart from a brief explanation of the problem being experienced,
-    the essential things to include in any request for help are:</para>
+    any request for help should include these essential things:</para>
 @y
     <para>
-    問題が発生し問い合わせをする場合には、以下に示す基本的な情報を含めてください。
+    問題が発生し問い合わせをする場合には、簡単な状況説明に加えて、尋ねたい内容に合わせて以下の基本的情報も含めてください。
     </para>
 @z
 
@@ -103,9 +103,9 @@
 @z
 
 @x
-        <para>The exact error message or symptom being received</para>
+        <para>The exact error message, or a clear description of the problem</para>
 @y
-        <para>問題となったエラーメッセージや状況に対する詳細な情報。</para>
+        <para>問題となったエラーメッセージや問題に対する詳細な情報。</para>
 @z
 
 @x
@@ -117,7 +117,7 @@
 @x
       <para>Deviating from this book does <emphasis>not</emphasis> mean that
       we will not help you. After all, LFS is about personal preference.
-      Being upfront about any changes to the established procedure helps us
+      Being up-front about any changes to the established procedure helps us
       evaluate and determine possible causes of your problem.</para>
 @y
       <para>
@@ -159,14 +159,14 @@
     in determining the cause of compilation problems. The screen output from
     the <command>configure</command> script and the <command>make</command>
     run can be helpful. It is not necessary to include the entire output, but
-    do include enough of the relevant information. Below is an example of the
-    type of information to include from the screen output from
-    <command>make</command>:</para>
+    do include all of the relevant information. Here is an example of the
+    type of information to include from the <command>make</command> screen
+    output.</para>
 @y
     <para>
     コンパイル時に問題が発生した場合は、端末画面への出力とともに、数々のファイルの内容も問題解決の糸口となります。
     <command>configure</command> スクリプトと <command>make</command> コマンドの実行によって端末画面に出力される情報は重要です。
-    問い合わせの際には、出力されるすべての情報を示す必要はありませんが、関連する情報は十分に含めてください。
+    問い合わせの際には、出力されるすべての情報を示す必要はありませんが、関連する情報はすべて含めてください。
     以下に示すのは <command>make</command> コマンドの実行時に出力される情報を切り出してみた例です。
     </para>
 @z
@@ -181,24 +181,24 @@
 @z
 
 @x
-    <para>This is not enough information to properly diagnose the problem
+    <para>This is not enough information to diagnose the problem,
     because it only notes that something went wrong, not
     <emphasis>what</emphasis> went wrong. The entire section, as in the
     example above, is what should be saved because it includes the command
-    that was executed and the associated error message(s).</para>
+    that was executed and all the associated error messages.</para>
 @y
     <para>
     問題を解決するにはあまりに不十分な情報です。
     そんな情報だけでは「何かがオカしい結果となった」ことは分かっても「なぜオカしい結果となった」のかが分からないからです。
-    上に示したのは、十分な情報を提供して頂くべきであることを例示したものであり、実行されたコマンドや関連するエラーメッセージが十分に含んだ例となっています。
+    上に示したのは、十分な情報を提供して頂くべきであることを例示したものであり、実行されたコマンドや関連するエラーメッセージをすべて含んだ例となっています。
     </para>
 @z
 
 @x
     <para>An excellent article about asking for help on the Internet is
     available online at <ulink
-    url="http://catb.org/~esr/faqs/smart-questions.html"/>. Read and
-    follow the hints in this document to increase the likelihood of getting
+    url="http://catb.org/~esr/faqs/smart-questions.html"/>. Read this document,
+    and follow the hints. Doing so will increase the likelihood of getting
     the help you need.</para>
 @y
     <para>

@@ -23,10 +23,10 @@
 @z
 
 @x
-    <para>Again, work around an error caused by glibc-2.27 and later:</para>
+    <para>First, fix some issues identified upstream:</para>
 @y
     <para>
-    glibc-2.27 以降に起因するエラーを回避します。
+    まずはアップストリームが認識する問題を修正します。
     </para>
 @z
 

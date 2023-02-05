@@ -31,7 +31,7 @@
 @z
 
 @x
-  <para>Using the utilities will be possible in next chapter after entering
+  <para>Using the utilities will be possible in the next chapter after entering
   the <quote>chroot</quote> environment. But all the packages built in the
   present chapter need to be built before we do that. Therefore we cannot be
   independent of the host system yet.</para>

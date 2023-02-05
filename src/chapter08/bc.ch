@@ -46,10 +46,10 @@
 
 @x -G
           <para>Omit parts of the test suite that won't work
-          without a GNU bc present.</para>
+          until the bc program has been installed.</para>
 @y
           <para>
-          GNU bc が存在していない状態では動作しないテストスイートを省略します。
+          bc がまだインストールされていない状態では動作しないテストスイートがあるため、それを省略します。
           </para>
 @z
 

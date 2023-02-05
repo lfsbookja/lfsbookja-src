@@ -34,35 +34,49 @@
 @z
 
 @x
-    <para>Linux uses a special booting facility named SysVinit that is based on a
-    concept of <emphasis>run-levels</emphasis>. It can be quite different from one
-    system to another, so it cannot be assumed that because things worked in one
-    particular Linux distribution, they should work the same in LFS too. LFS has its
-    own way of doing things, but it respects generally accepted standards.</para>
+    <para>This version of LFS uses a special booting facility named SysVinit, based on a
+    series of <emphasis>run levels</emphasis>. The boot procedure can be quite different from one
+    system to another; the fact that things worked one way in a particular Linux
+    distribution does not guarantee they will work the same way in LFS. LFS has its
+    own way of doing things, but it does respect generally accepted standards.</para>
 @y
     <para>
-    Linux では SysVinit という特別なブート機能があり <emphasis>ランレベル (run-levels)</emphasis> という考え方に基づいています。
-    ランレベルの扱いはシステムによって異なりますので、ある Linux において動作しているからといって LFS においても全く同じように動くわけではありません。
+    本バージョンの LFS では SysVinit という特別なブート機能を利用しており、<emphasis>ランレベル (run-levels)</emphasis> という考え方に基づいています。
+    ブート処理はシステムによって大きく異なります。
+    つまり特定の Linux ディストリビューションにおける 1 つの処理方法がうまく動作しているからといって、LFS においても全く同じように動くわけではありません。
     LFS では独自の方法でこれを取り入れることにします。
     ただし標準として受け入れられるような方法を取ります。
     </para>
 @z
 
 @x
-    <para>SysVinit (which will be referred to as <quote>init</quote> from now on)
-    works using a run-levels scheme. There are seven (numbered 0 to 6) run-levels
-    (actually, there are more run-levels, but they are for special cases and are
-    generally not used. See <filename>init(8)</filename> for more details), and
-    each one of those corresponds to the actions the computer is supposed to
-    perform when it starts up. The default run-level is 3. Here are the
-    descriptions of the different run-levels as they are implemented in LFS:</para>
+    <para>There is an alternative boot procedure called <command>systemd</command>. We will
+    not discuss that boot process any further here. For a detailed description visit
+    <ulink url="https://www.linux.com/training-tutorials/understanding-and-using-systemd/"/>.</para>
 @y
     <para>
-    SysVinit (これ以降は<quote>init</quote>と表現します) はランレベルという仕組みにより動作します。
-    ランレベルには7つのレベル (0 から 6) があります。
+    ブート処理の別方法として <command>systemd</command> があります。
+    ここではブート処理に関して、これ以上のことを述べません。
+    詳しくは <ulink
+    url="https://www.linux.com/training-tutorials/understanding-and-using-systemd/"/> を参照してください。
+    </para>
+@z
+
+@x
+    <para>SysVinit (which will be referred to as <quote>init</quote> from now on)
+    uses a run levels scheme. There are seven run levels, numbered 0 to 6.
+    (Actually, there are more run levels, but the others are for special cases and are
+    generally not used. See <filename>init(8)</filename> for more details.)
+    Each one of the seven corresponds to actions the computer is supposed to
+    perform when it starts up or shuts down. The default run level is 3. Here are the
+    descriptions of the different run levels as they are implemented in LFS:</para>
+@y
+    <para>
+    SysVinit (これ以降は<quote>init</quote>と表現します) はランレベルという仕組みを利用しています。
+    ランレベルには 7 つのレベル、0 から 6 があります。
     (実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
     詳しくは <filename>init(8)</filename> を参照してください。)
-    各レベルは、コンピューターの起動時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
+    各レベルは、コンピューターの起動時や終了時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
     LFS において実装されるランレベルの詳細を以下に説明します。
     </para>
 @z
@@ -70,17 +84,17 @@
 @x
 <literallayout>0: halt the computer
 1: single-user mode
-2: reserved for customization, otherwise does the same as 3
+2: reserved for customization, otherwise the same as 3
 3: multi-user mode with networking
-4: reserved for customization, otherwise does the same as 3
+4: reserved for customization, otherwise the same as 3
 5: same as 4, it is usually used for GUI login (like GNOME's <command>gdm</command> or LXDE's <command>lxdm</command>)
 6: reboot the computer</literallayout>
 @y
 <literallayout>0: コンピューターの停止
 1: シングルユーザーモード
-2: 拡張用として予約されています。 拡張がなければ 3 と同じものとして扱われます。
+2: 拡張用として予約されています。 拡張がなければ 3 と同じです。
 3: マルチユーザーモード、ネットワークあり
-4: 拡張用として予約されています。 拡張がなければ 3 と同じものとして扱われます。
+4: 拡張用として予約されています。 拡張がなければ 3 と同じです。
 5: 4 と同様。通常 (GNOME の <command>gdm</command> や LXDE の <command>lxdm</command> のような) GUI ログインに用いられます。
 6: コンピューターの再起動</literallayout>
 @z
@@ -88,14 +102,14 @@
 @x
           Classically, run level 2 above was defined as
           "multi-user mode without networking", but this was only the case
-          many years ago when multiple users could log into a system connected via
-          serial ports.  In today's environment it makes no sense and
-          we designate it now as "reserved".
+          many years ago when multiple users could connect to a system via
+          serial ports.  In today's environment it makes no sense, and
+          we now say it is "reserved".
 @y
           従来より、上のランレベル 2 は「ネットワークなしにおけるマルチユーザーモード」として定義されていました。
           ただしこれは相当以前の話として、シリアルポートを介して複数ユーザーがシステムにログインするケースだけを表しています。
           今日のコンピューター環境においてこれは意味をなしません。
-          そこでここでは「拡張用の予約」と位置づけます。
+          そこでここでは「拡張用の予約」としています。
 @z
 
 @x
@@ -117,13 +131,13 @@
 @z
 
 @x
-  <para>During the kernel initialization, the first program that is run
-  is either specified on the command line or, by default 
+  <para>During kernel initialization, the first program that is run
+  (if not overridden on the command line) is
   <command>init</command>.  This program reads the initialization file
   <filename>/etc/inittab</filename>.  Create this file with:</para>
 @y
   <para>
-  カーネルの初期化にあたって最初に起動するプログラムは、コマンドラインから指定されるものか、あるいはデフォルトでは <command>init</command> です。
+  カーネルの初期化にあたって最初に起動するプログラムは（コマンドラインから指定されていなければ）<command>init</command> です。
   このプログラムは初期設定ファイル <filename>/etc/inittab</filename> を読み込みます。
   そのファイルは以下のようにして生成します。
   </para>
@@ -131,8 +145,8 @@
 
 @x
   <para>An explanation of this initialization file is in the man page for
-  <emphasis>inittab</emphasis>.  For LFS, the key command that is run is
-  <command>rc</command>. The initialization file above will instruct
+  <emphasis>inittab</emphasis>.  In LFS, the key command is
+  <command>rc</command>. The initialization file above instructs
   <command>rc</command> to run all the scripts starting with an S in the
   <filename class="directory">/etc/rc.d/rcS.d</filename> directory
   followed by all the scripts starting with an S in the <filename
@@ -156,15 +170,15 @@
   functions in <filename class="directory">/lib/lsb/init-functions</filename>.
   This library also reads an optional configuration file,
   <filename>/etc/sysconfig/rc.site</filename>.  Any of the system
-  configuration file parameters described in subsequent sections can be
-  alternatively placed in this file allowing consolidation of all system
+  configuration parameters described in subsequent sections can be
+  placed in this file, allowing consolidation of all system
   parameters in this one file.</para>
 @y
   <para>
   扱いやすさを考慮して、<command>rc</command> スクリプトは <filename
   class="directory">/lib/lsb/init-functions</filename> ディレクトリにあるライブラリ群を読み込む形にしています。
   このライブラリは、さらにオプションで設定ファイル <filename>/etc/sysconfig/rc.site</filename> を読み込みます。
-  本節以降に説明している、各種の設定ファイルにおけるパラメーターは、上のファイルにて設定することもできます。
+  本節以降に説明している、各種の設定パラメーターは、上のファイルにて設定することもできます。
   上のファイルは、システム上のパラメーターを１つのファイルに集約して設定できるようになっています。
   </para>
 @z
@@ -173,7 +187,7 @@
   <para>As a debugging convenience, the functions script also logs all output
   to <filename>/run/var/bootlog</filename>.  Since the <filename
   class="directory">/run</filename> directory is a tmpfs, this file is not
-  persistent across boots, however it is appended to the more permanent file
+  persistent across boots; however, it is appended to the more permanent file
   <filename>/var/log/boot.log</filename> at the end of the boot process.</para>
 @y
   <para>
@@ -190,9 +204,9 @@
 @z
 
 @x
-  <para>Changing run-levels is done with <command>init
+  <para>Changing run levels is done with <command>init
   <replaceable>&lt;runlevel&gt;</replaceable></command>, where
-  <replaceable>&lt;runlevel&gt;</replaceable> is the target run-level. For example, to
+  <replaceable>&lt;runlevel&gt;</replaceable> is the target run level. For example, to
   reboot the computer, a user could issue the <command>init 6</command> command,
   which is an alias for the <command>reboot</command> command. Likewise,
   <command>init 0</command> is an alias for the <command>halt</command>
@@ -210,15 +224,15 @@
 @x
   <para>There are a number of directories under <filename
   class="directory">/etc/rc.d</filename> that look like <filename
-  class="directory">rc?.d</filename> (where ? is the number of the run-level) and
+  class="directory">rc?.d</filename> (where ? is the number of the run level) and
   <filename class="directory">rcS.d</filename>, all containing a number of
-  symbolic links. Some begin with a <emphasis>K</emphasis>, the others begin with
+  symbolic links. Some links begin with a <emphasis>K</emphasis>; the others begin with
   an <emphasis>S</emphasis>, and all of them have two numbers following the
   initial letter. The K means to stop (kill) a service and the S means to start a
   service. The numbers determine the order in which the scripts are run, from 00
-  to 99&mdash;the lower the number the earlier it gets executed. When
-  <command>init</command> switches to another run-level, the appropriate services
-  are either started or stopped, depending on the runlevel chosen.</para>
+  to 99&mdash;the smaller the number, the sooner tht script runs. When
+  <command>init</command> switches to another run level, the appropriate services
+  are either started or stopped, depending on the run level chosen.</para>
 @y
   <para>
   <filename class="directory">/etc/rc.d</filename> ディレクトリの配下には複数のサブディレクトリがあります。
@@ -354,10 +368,10 @@
 @x
       <para>The <filename>/etc/rc.d/init.d/udev</filename> initscript starts
       <command>udevd</command>, triggers any "coldplug" devices that have
-      already been created by the kernel and waits for any rules to complete.
+      already been created by the kernel, and waits for any rules to complete.
       The script also unsets the uevent handler from the default of
       <filename>/sbin/hotplug </filename>.  This is done because the kernel no
-      longer needs to call out to an external binary.  Instead
+      longer needs to call an external binary.  Instead,
       <command>udevd</command> will listen on a netlink socket for uevents that
       the kernel raises.</para>
 @y
@@ -371,22 +385,22 @@
 @z
 
 @x
-      <para>The <command>/etc/rc.d/init.d/udev_retry</command> initscript takes
+      <para>The <command>/etc/rc.d/init.d/udev_retry</command> script takes
       care of re-triggering events for subsystems whose rules may rely on
-      filesystems that are not mounted until the <command>mountfs</command>
+      file systems that are not mounted until the <command>mountfs</command>
       script is run (in particular, <filename class="directory">/usr</filename>
       and <filename class="directory">/var</filename> may cause this).  This
       script runs after the <command>mountfs</command> script, so those rules
       (if re-triggered) should succeed the second time around.  It is
-      configured from the <filename>/etc/sysconfig/udev_retry</filename> file;
+      configured by the <filename>/etc/sysconfig/udev_retry</filename> file;
       any words in this file other than comments are considered subsystem names
       to trigger at retry time.  To find the subsystem of a device, use
       <command>udevadm info --attribute-walk &lt;device&gt;</command> where
-      &lt;device&gt; is an absolute path in /dev or /sys such as /dev/sr0 or
+      &lt;device&gt; is an absolute path in /dev or /sys, such as /dev/sr0, or
       /sys/class/rtc.</para>
 @y
       <para>
-      初期起動スクリプト <command>/etc/rc.d/init.d/udev_retry</command> は、サブシステムに対するイベントの再起動を行ないます。
+      <command>/etc/rc.d/init.d/udev_retry</command> スクリプトは、サブシステムに対するイベントの再起動を行ないます。
       そのサブシステムとはファイルシステムに依存するもので、<command>mountfs</command> が実行されるまでマウントされません。
       (特に <filename class="directory">/usr</filename> や <filename class="directory">/var</filename> がこれに該当します。)
       <command>mountfs</command> スクリプトの後にこのスクリプトが実行されるので、(イベントが再起動されるものであれば) 二度目には成功します。
@@ -504,13 +518,13 @@
 
 @x
     <para>The <command>setclock</command> script reads the time from the hardware
-    clock, also known as the BIOS or the Complementary Metal Oxide Semiconductor
+    clock, also known as the BIOS or Complementary Metal Oxide Semiconductor
     (CMOS) clock. If the hardware clock is set to UTC, this script will convert the
     hardware clock's time to the local time using the
     <filename>/etc/localtime</filename> file (which tells the
-    <command>hwclock</command> program which timezone to use). There is no
+    <command>hwclock</command> program which time zone to use). There is no
     way to detect whether or not the hardware clock is set to UTC, so this
-    needs to be configured manually.</para>
+    must be configured manually.</para>
 @y
     <para>
     <command>setclock</command> スクリプトはハードウェアクロックから時刻を読み取ります。
@@ -541,9 +555,9 @@
     clock. If this time matches whatever your watch says, then the hardware clock is
     set to local time. If the output from <command>hwclock</command> is not local
     time, chances are it is set to UTC time. Verify this by adding or subtracting
-    the proper amount of hours for the timezone to the time shown by
+    the proper number of hours for your time zone to the time shown by
     <command>hwclock</command>. For example, if you are currently in the MST
-    timezone, which is also known as GMT -0700, add seven hours to the local
+    time zone, which is also known as GMT -0700, add seven hours to the local
     time.</para>
 @y
     <para>
@@ -613,7 +627,7 @@
   <para>This section discusses how to configure the <command>console</command>
   bootscript that sets up the keyboard map, console font, and console kernel log
   level. If non-ASCII characters (e.g., the copyright sign, the British pound
-  sign and Euro symbol) will not be used and the keyboard is a U.S. one, much
+  sign, and the Euro symbol) will not be used and the keyboard is a U.S. one, much
   of this section can be skipped. Without the configuration file, (or
   equivalent settings in <filename>rc.site</filename>), the
   <command>console</command> bootscript will do nothing.</para>
@@ -630,11 +644,11 @@
   <para>The <command>console</command> script reads the
   <filename>/etc/sysconfig/console</filename> file for configuration
   information.  Decide which keymap and screen font will be used. Various
-  language-specific HOWTOs can also help with this, see <ulink
+  language-specific HOWTOs can also help with this; see <ulink
   url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. If still in
   doubt, look in the <filename class="directory">/usr/share/keymaps</filename>
   and <filename class="directory">/usr/share/consolefonts</filename> directories
-  for valid keymaps and screen fonts. Read <filename>loadkeys(1)</filename> and
+  for valid keymaps and screen fonts. Read the <filename>loadkeys(1)</filename> and
   <filename>setfont(8)</filename> manual pages to determine the correct
   arguments for these programs.</para>
 @y
@@ -671,7 +685,7 @@
 
 @x KEYMAP
         <para>This variable specifies the arguments for the
-        <command>loadkeys</command> program, typically, the name of keymap
+        <command>loadkeys</command> program, typically, the name of the keymap
         to load, e.g., <quote>it</quote>. If this variable is not set, the
         bootscript will not run the <command>loadkeys</command> program,
         and the default kernel keymap will be used.  Note that a few keymaps
@@ -712,11 +726,11 @@
         name, <quote>-m</quote>, and the name of the application character
         map to load. E.g., in order to load the <quote>lat1-16</quote> font
         together with the <quote>8859-1</quote> application character map
-        (as it is appropriate in the USA),
+        (appropriate in the USA),
         <!-- because of the copyright sign -->
         set this variable to <quote>lat1-16 -m 8859-1</quote>.
-        In UTF-8 mode, the kernel uses the application character map for
-        conversion of composed 8-bit key codes in the keymap to UTF-8, and thus
+        In UTF-8 mode, the kernel uses the application character map to
+        convert 8-bit key codes to UTF-8. Therefore
         the argument of the "-m" parameter should be set to the encoding of the
         composed key codes in the keymap.</para>
 @y
@@ -731,7 +745,7 @@
 @z
 
 @x UNICODE
-        <para>Set this variable to <quote>1</quote>, <quote>yes</quote> or
+        <para>Set this variable to <quote>1</quote>, <quote>yes</quote>, or
         <quote>true</quote> in order to put the
         console into UTF-8 mode. This is useful in UTF-8 based locales and
         harmful otherwise.</para>
@@ -829,7 +843,7 @@
       UTF-8 mode it is a problem; e.g., for the Greek language, where one
       sometimes needs to put an accent on the letter <quote>alpha</quote>.
       The solution is either to avoid the use of UTF-8, or to install the
-      X window system that doesn't have this limitation in its input
+      X window system, which doesn't have this limitation, in its input
       handling.</para>
 @y
       <para>
@@ -851,7 +865,7 @@
       console cannot be configured to display the needed characters. Users
       who need such languages should install the X Window System, fonts that
       cover the necessary character ranges, and the proper input method (e.g.,
-      SCIM, supports a wide variety of languages).</para>
+      SCIM supports a wide variety of languages).</para>
 @y
       <para>
       中国語、日本語、韓国語などを利用する場合 Linux コンソールにはそれらの文字を表示できません。
@@ -905,7 +919,7 @@
 @z
 
 @x
-    <title>Configuring the sysklogd Script</title>
+    <title>Configuring the Sysklogd Script</title>
 @y
     <title>Sysklogd スクリプトの設定</title>
 @z
@@ -957,8 +971,8 @@
     <filename>console</filename>, and <filename>clock</filename> files in the
     <filename class='directory'>/etc/sysconfig/</filename> directory.  If the
     associated variables are present in both these separate files and
-    <filename>rc.site</filename>, the values in the script specific files have
-    precedence. </para>
+    <filename>rc.site</filename>, the values in the script-specific files take
+    effect. </para>
 @y
     <para>
     オプションファイル <filename>/etc/sysconfig/rc.site</filename> は、System V の各ブートスクリプトにて自動的に設定される内容を含んでいます。
@@ -990,8 +1004,8 @@
 
 @x
       <para>The LFS boot scripts boot and shut down a system in a fairly
-      efficient manner, but there are a few tweaks that you can make in the
-      rc.site file to improve speed even more and to adjust messages according
+      efficient manner, but there are a few tweaks you can make in the
+      rc.site file to improve speed even more, and to adjust messages according
       to your preferences. To do this, adjust the settings in
       the <filename>/etc/sysconfig/rc.site</filename> file above.</para>
 @y
@@ -1005,7 +1019,7 @@
 @x
       <listitem><para>During the boot script <filename>udev</filename>, there is
       a call to <command>udev settle</command> that requires some time to
-      complete. This time may or may not be required depending on devices present
+      complete. This time may or may not be required depending on the devices
       in the system.  If you only have simple partitions and a single ethernet
       card, the boot process will probably not need to wait for this command.  To
       skip it, set the variable OMIT_UDEV_SETTLE=y.</para></listitem>
@@ -1020,16 +1034,16 @@
 
 @x
       <listitem><para>The boot script <filename>udev_retry</filename> also runs
-      <command>udev settle</command> by default.  This command is only needed by
-      default if the <filename class='directory'>/var</filename> directory is
-      separately mounted.  This is because the clock needs the file
-      <filename>/var/lib/hwclock/adjtime</filename>.  Other customizations may
+      <command>udev settle</command> by default.  This command is only needed
+      if the <filename class='directory'>/var</filename> directory is
+      separately mounted, because the clock needs the
+      <filename>/var/lib/hwclock/adjtime</filename> file.  Other customizations may
       also need to wait for udev to complete, but in many installations it is not
-      needed.  Skip the command by setting the variable OMIT_UDEV_RETRY_SETTLE=y.
+      necessary.  Skip the command by setting the variable OMIT_UDEV_RETRY_SETTLE=y.
       </para></listitem>
 @y
       <listitem><para>
-      ブートスクリプト <filename>udev_retry</filename> も同様に、デフォルトで <command>udev settle</command> を実行します。
+      ブートスクリプト <filename>udev_retry</filename> も同様に <command>udev settle</command> を実行します。
       このコマンドはデフォルトでは、<filename class='directory'>/var</filename> ディレクトリが個別にマウントされている時にのみ必要となります。
       それはクロックが <filename>/var/lib/hwclock/adjtime</filename> ファイルを必要とするためです。
       これ以外にも udev の処理を待つことが必要になるケースがありますが、本当に必要になることはまれです。
@@ -1094,7 +1108,7 @@
 @x
       <listitem><para>During shutdown, the <command>init</command> program sends
       a TERM signal to each program it has started (e.g. agetty), waits for a set
-      time (default 3 seconds), and sends each process a KILL signal and waits
+      time (default 3 seconds), then sends each process a KILL signal and waits
       again.  This process is repeated in the <command>sendsignals</command>
       script for any processes that are not shut down by their own scripts.  The
       delay for <command>init</command> can be set by passing a parameter.  For

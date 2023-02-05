@@ -10,9 +10,9 @@
 @z
 
 @x
-    <para>The Bash package contains the Bourne-Again SHell.</para>
+    <para>The Bash package contains the Bourne-Again Shell.</para>
 @y
-    <para>Bash は Bourne-Again SHell を提供します。</para>
+    <para>Bash は Bourne-Again Shell を提供します。</para>
 @z
 
 @x
@@ -71,8 +71,8 @@
 @z
 
 @x
-    <para>The testsuite of the package is designed to be run as a non-&root;
-    user that owns the terminal connected to standard input.  To satisfy the
+    <para>The test suite of this package is designed to be run as a non-&root;
+    user who owns the terminal connected to standard input.  To satisfy the
     requirement, spawn a new pseudo terminal using
     <application>Expect</application> and run the tests as the <systemitem
     class="username">tester</systemitem> user:</para>

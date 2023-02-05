@@ -26,14 +26,15 @@
 @x
     <para>
        The <command>file</command> command on the build host needs
-       to be same version as the one we are building in order to
-       create the signature file. Run the following commands to build it:
+       to be the same version as the one we are building in order to
+       create the signature file. Run the following commands to make a
+       temporary copy of the <command>file</command> command:
     </para>
 @y
     <para>
     ホストシステム上の <command>file</command> コマンドは、これから生成する同コマンドと同一バージョンでなければなりません。
     これはシグニチャーファイル生成のために必要となります。
-    そこで以下のコマンドを実行してビルドします。
+    そこで以下のコマンドを実行して、<command>file</command> コマンドの一時的なコピーを生成します。
     </para>
 @z
 

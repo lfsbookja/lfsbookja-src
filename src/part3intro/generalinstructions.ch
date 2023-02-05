@@ -24,28 +24,28 @@
 @z
 
 @x
-  <para>When building packages there are several assumptions made within 
-  the instructions:</para>
+  <para>Here are some things you should know about building each package:</para>
 @y
   <para>
-  パッケージをビルドしていく際には、以下に示す内容を前提とします:
+  パッケージをビルドしていくにあたって、理解しておくべき内容を以下に示します:
   </para>
 @z
 
 @x
-    <para>Several of the packages are patched before compilation, but only when
+    <para>Several packages are patched before compilation, but only when
     the patch is needed to circumvent a problem. A patch is often needed in
-    both this and the following chapters, but sometimes in only one location.
+    both the current and the following chapters, but sometimes, when the same package
+    is built more than once, the patch is not needed right away.
     Therefore, do not be concerned if instructions for a downloaded patch seem
     to be missing.  Warning messages about <emphasis>offset</emphasis> or
     <emphasis>fuzz</emphasis> may also be encountered when applying a patch. Do
-    not worry about these warnings, as the patch was still successfully
+    not worry about these warnings; the patch was still successfully
     applied.</para>
 @y
     <para>
     パッケージの中には、コンパイルする前にパッチを当てるものがあります。
     パッチを当てるのは、そのパッケージが抱える問題を回避するためです。
-    本章と後続の章でパッチを当てるものがあり、あるいは本章と後続の章のいずれか一方でパッチを当てるものもあります。
+    本章と後続の章でパッチを当てるものがありますが、同じパッケージを二度ビルドする場合であっても、パッチを必要としない場合があります。
     したがってパッチをダウンロードする説明が書かれていないなら、何も気にせず先に進んでください。
     パッチを当てた際に <emphasis>offset</emphasis> や <emphasis>fuzz</emphasis> といった警告メッセージが出る場合がありますが、これらは気にしないでください。
     このような時でもパッチは問題なく適用されています。
@@ -53,19 +53,19 @@
 @z
 
 @x
-    <para>During the compilation of most packages, there will be several
-    warnings that scroll by on the screen. These are normal and can safely be
-    ignored.  These warnings are as they appear&mdash;warnings about
+    <para>During the compilation of most packages, some
+    warnings will scroll by on the screen. These are normal and can safely be
+    ignored.  These warnings are usually about
     deprecated, but not invalid, use of the C or C++ syntax. C standards change
-    fairly often, and some packages still use the older standard. This is not a
-    problem, but does prompt the warning.</para>
+    fairly often, and some packages have not yet been updated. This is not a
+    serious problem, but it does cause the warnings to appear.</para>
 @y
     <para>
     コンパイルの最中に、警告メッセージが画面上に出力されることがよくあります。
     これは問題はないため無視して構いません。
     警告メッセージは、メッセージ内に説明されているように、C や C++ の文法が誤りではないものの推奨されていないものであることを示しています。
-    C 言語の標準はよく変更されますが、パッケージの中には古い基準に従っているものもあります。
-    問題はないのですが、警告として画面表示されることになるわけです。
+    C 言語の標準はよく変更されますが、パッケージの中には更新されていないものもあります。
+    重大な問題はないのですが、警告として画面表示されることになるわけです。
     </para>
 @z
 
@@ -131,23 +131,23 @@
 
 @x
         <listitem override='bullet'><para><command>/usr/bin/yacc</command> is a
-        symbolic link to <command>bison</command> or a small script that
+        symbolic link to <command>bison</command>, or to a small script that
         executes bison.</para></listitem>
 @y
         <listitem override='bullet'><para><command>/usr/bin/yacc</command> は <command>bison</command> へのシンボリックリンクであるか、あるいは bison を実行するためのスクリプトであるものとします。</para></listitem>
 @z
 
 @x
-      <para>To re-emphasize the build process:</para>
+      <para>Here is a synopsis of the build process.</para>
 @y
       <para>
-      ビルド作業では以下の点が重要です。
+      ビルド作業の概要を示します。
       </para>
 @z
 
 @x
           <para>Place all the sources and patches in a directory that will be
-          accessible from the chroot environment such as
+          accessible from the chroot environment, such as
           <filename class="directory">/mnt/lfs/sources/</filename>.<!-- Do
           <emphasis>not</emphasis> put sources in
           <filename class="directory">/mnt/lfs/tools/</filename>. --></para>
@@ -159,9 +159,11 @@
 @z
 
 @x
-          <para>Change to the sources directory.</para>
+          <para>Change to the <filename class="directory">/mnt/lfs/sources/</filename> directory.</para>
 @y
-          <para>ソースディレクトリに入ります。</para>
+          <para>
+          <filename class="directory">/mnt/lfs/sources/</filename> ディレクトリに入ります。
+          </para>
 @z
 
 @x
@@ -190,15 +192,14 @@
 @z
 
 @x
-              <para>All methods to get the source code tree being built
-              in-position, except extracting the package tarball, are not
-              supported. Notably, using <command>cp -R</command> to copy the
+            <para>Do not use any method except the <command>tar</command> command
+              to extract the source code. Notably, using the <command>cp -R</command>
+              command to copy the
               source code tree somewhere else can destroy links and
-              timestamps in the sources tree and cause building
-              failure.</para>
+              timestamps in the source tree, and cause the build to fail.</para>
 @y
               <para>
-              パッケージ tarball はどこか別ディレクトリにあってもかまいませんが、ソースツリーをどこか別の場所でビルドする方法についてはサポートしていません。
+              パッケージ tarball からソースコードを抽出する際には <command>tar</command> コマンド以外による方法は用いないでください。
               特にどこか別に配置しているソースコードを <command>cp -R</command> を使ってコピーすると、ソースツリー内のリンクやタイムスタンプを壊しかねません。
               そうなるとビルドの失敗に通じることになります。
               </para>
@@ -214,7 +215,7 @@
 @z
 
 @x
-              <para>Follow the book's instructions for building the package.</para>
+              <para>Follow the instructions for building the package.</para>
 @y
               <para>
               本書の手順に従ってビルド作業を行っていきます。
@@ -222,10 +223,10 @@
 @z
 
 @x
-              <para>Change back to the sources directory.</para>
+              <para>Change back to the sources directory when the build is complete.</para>
 @y
               <para>
-              ソースディレクトリに戻ります。
+              ビルドが終了したらソースディレクトリに戻ります。
               </para>
 @z
 

@@ -18,23 +18,23 @@
 @x
   <para>This section is optional.  If the intended user is not a
   programmer and does not plan to do
-  any debugging on the system software, the system size can be decreased
-  by about 2 GB by removing the debugging symbols and unneeded symbol table
-  entries from binaries and libraries. This causes no inconvenience other
-  than not being able to debug the software fully anymore.</para>
+  any debugging of the system software, the system's size can be decreased
+  by some 2 GB by removing the debugging symbols, and some unnecessary symbol table
+  entries, from binaries and libraries. This causes no real inconvenience for
+  a typical Linux user.</para>
 @y
   <para>
   本節での作業を行うかどうかは任意です。
   対象ユーザーがプログラマーではなく、プログラム類をデバッグするような使い方をしないのであれば、実行ファイルやライブラリに含まれるデバッグシンボルや不要シンボルを削除しても構いません。
   そうすれば 2 GB ものサイズ削減を図ることができます。
-  たとえデバッグできなくなっても困らないはずです。
+  普通の Linux ユーザーにとっては、実質的な問題はありません。
   </para>
 @z
 
 @x
   <para>Most people who use the commands mentioned below do not
-  experience any difficulties. However, it is easy to make a typo and
-  render the new system unusable, so before running the
+  experience any difficulties. However, it is easy to make a mistake and
+  render the new system unusable. So before running the
   <command>strip</command> commands, it is a good idea to make a
   backup of the LFS system in its current state.</para>
 @y
@@ -46,11 +46,11 @@
 @z
 
 @x
-  <para>A <command>strip</command> command with
+  <para>A <command>strip</command> command with the
   <parameter>--strip-unneeded</parameter> option removes all debug symbols
-  from a binary or library.  And, it removes all symbol table entries not
+  from a binary or library.  It also removes all symbol table entries not
   needed by the linker (for static libraries) or dynamic linker (for
-  dynamic-linked binaries and shared libraries).</para>
+  dynamically linked binaries and shared libraries).</para>
 @y
   <para>
   <command>strip</command> コマンドに <parameter>--strip-unneeded</parameter> オプションをつけて実行すると、バイナリやライブラリからデバッグシンボルをすべて削除します。
@@ -59,15 +59,15 @@
 @z
 
 @x
-  <para>The debugging symbols for selected libraries are placed
-  in separate files.  This debugging information is needed if running
-  regression tests that use <ulink
+  <para>The debugging symbols from selected libraries are preserved
+  in separate files.  That debugging information is needed to run
+  regression tests with <ulink
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink
-  url='&blfs-book;/general/gdb.html'>gdb</ulink> later in BLFS.
+  url='&blfs-book;/general/gdb.html'>gdb</ulink> later, in BLFS.
   </para>
 @y
   <para>
-  ライブラリのいくつかについて、デバッグシンボルを持つような別ファイルを生成します。
+  選択したライブラリから得られたデバッグシンボルは、個別のファイルに保存されます。
   このデバッグ情報を必要とするのは BLFS における <ulink 
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> または <ulink 
   url='&blfs-book;/general/gdb.html'>gdb</ulink> の縮退テストを実施するのに必要であるからです。
@@ -77,13 +77,13 @@
 @x
   <para>Note that <command>strip</command> will overwrite the binary or library
   file it is processing.  This can crash the processes using code or data from
-  the file.  If the process running <command>strip</command> itself is
-  affected, the binary or library being stripped can be destroyed and can
-  make the system completely unusable.  To avoid it, we'll copy some libraries
+  the file.  If the process running <command>strip</command> is
+  affected, the binary or library being stripped can be destroyed; this can
+  make the system completely unusable.  To avoid this problem we copy some libraries
   and binaries into <filename class="directory">/tmp</filename>, strip them
-  there, and install them back with the <command>install</command> command.
-  Read the related entry in <xref linkend="pkgmgmt-upgrade-issues"/> for the
-  rationale to use the <command>install</command> command here.</para>
+  there, then reinstall them with the <command>install</command> command.
+  (The related entry in <xref linkend="pkgmgmt-upgrade-issues"/> gives the
+  rationale for using the <command>install</command> command here.)</para>
 @y
   <para>
   なお <command>strip</command> は、処理しているバイナリファイルやライブラリファイルを上書きします。
@@ -91,9 +91,9 @@
   仮に <command>strip</command> 自体を実行しているプロセスがその影響を受けたとすると、ストリップ最中のバイナリやライブラリは壊れてしまうかもしれません。
   これが起きると、システムが完全に利用不能となりかねません。
   これを避けるため、ライブラリやバイナリのいくつかを <filename
-  class="directory">/tmp</filename> にコピーして、そこでストリップした上で、<command>install</command> コマンドを使って、元の場所にインストールし直すことにします。
-  ここで <command>install</command> コマンドを利用する意味については、<xref
-  linkend="pkgmgmt-upgrade-issues"/> に示す関連項目を参照してください。
+  class="directory">/tmp</filename> にコピーして、そこでストリップした上で、<command>install</command> コマンドを使って、元の場所に再インストールすることにします。
+  （ここで <command>install</command> コマンドを利用する意味については、<xref
+  linkend="pkgmgmt-upgrade-issues"/> において説明しています。）
   </para>
 @z
 
@@ -113,13 +113,13 @@
 @z
 
 @x
-  <para>A large number of files will be reported as having their file
-  format not recognized. These warnings can be safely ignored. They
-  indicate that those files are scripts instead of binaries.</para>
+  <para>A large number of files will be flagged as errors because their file
+  format is not recognized. These warnings can be safely ignored. They
+  indicate that those files are scripts, not binaries.</para>
 @y
   <para>
-  ファイルフォーマットが認識できないファイルがいくつも警告表示されますが、無視して構いません。
-  この警告は、処理したファイルが実行モジュールではなくスクリプトファイルであることを示しています。
+  ファイルフォーマットが認識できないファイルがいくつもエラーとなりますが、無視して構いません。
+  この警告は、処理したファイルが実行バイナリではなくスクリプトファイルであることを示しています。
   </para>
 @z
 

@@ -257,3 +257,20 @@ wget -N --input-file=&wget-list;.orig --continue --directory-prefix=$LFS/sources
   必要なファイルを入手した方法が前述のどの方法であっても、この md5sum チェックを実施することができます。
   </para>
 @z
+
+@x
+  <para>If the packages and patches are downloaded as a non-&root; user,
+  these files will be owned by the user.  The file system records the
+  owner by its UID, and the UID of a normal user in the host distro is
+  not assigned in LFS.  So the files will be left owned by an unnamed UID
+  in the final LFS system.  If you won't assign the same UID for your user
+  in the LFS system, change the owners of these files to &root; now to
+  avoid this issue:</para>
+@y
+  <para>
+  パッケージとパッチを非 &root; ユーザーによってダウンロードした場合、各ファイルはそのユーザーが所有します。
+  ファイルシステムは、UID によって所有者を記録しますが、ホスト上の一般ユーザーの UID は LFS 内には割り当てられていません。
+  したがって各ファイルは、最終の LFS システムにおいて、名前付けられていない UID によって所有されたまま残ります。
+  LFS システムに存在する自身のユーザーに対して、同じ UID を割り当てるつもりがないのであれば、各ファイルの所有者を &root; に変更することで、この状況を解消してください。
+  </para>
+@z

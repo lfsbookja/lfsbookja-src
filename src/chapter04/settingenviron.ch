@@ -29,7 +29,9 @@
 
 @x
   <para>When logged on as user <systemitem class="username">lfs</systemitem>,
-  the initial shell is usually a <emphasis>login</emphasis> shell which reads
+  or when switched to the &lfs-user; user using an <command>su</command> command
+  with the <quote><parameter>-</parameter></quote> option,
+  the initial shell is a <emphasis>login</emphasis> shell which reads
   the <filename>/etc/profile</filename> of the host (probably containing some
   settings and environment variables) and then <filename>.bash_profile</filename>.
   The <command>exec env -i.../bin/bash</command> command in the
@@ -37,16 +39,15 @@
   one with a completely empty environment, except for the <envar>HOME</envar>,
   <envar>TERM</envar>, and <envar>PS1</envar> variables. This ensures that no
   unwanted and potentially hazardous environment variables from the host system
-  leak into the build environment. The technique used here achieves the goal of
-  ensuring a clean environment.</para>
+  leak into the build environment.</para>
 @y
   <para>
-  <systemitem class="username">lfs</systemitem> ユーザーとしてログインした時、起動されるシェルは普通は<emphasis>ログイン</emphasis>シェルとなります。
+  <systemitem class="username">lfs</systemitem> ユーザーとしてログインした時、あるいは <command>su</command> コマンドとそのオプション<quote><parameter>-</parameter></quote>を使って &lfs-user;
+  に切り替えた時、起動されるシェルは<emphasis>ログイン</emphasis>シェルとなります。
   この時、ホストシステムの <filename>/etc/profile</filename> ファイル (おそらく環境変数がいくつか定義されている) と <filename>.bash_profile</filename> が読み込まれます。
   <filename>.bash_profile</filename> ファイル内の <command>exec env -i.../bin/bash</command> というコマンドが、起動しているシェルを全くの空の環境として起動し直し <envar>HOME</envar>、
   <envar>TERM</envar>、<envar>PS1</envar> という環境変数だけを設定します。
   これはホストシステム内の不要な設定や危険をはらんだ設定を、ビルド環境に持ち込まないようにするためです。
-  このようにすることできれいな環境作りを実現できます。
   </para>
 @z
 
@@ -125,20 +126,20 @@
   programs, making their messages follow the conventions of a specified country.
   Setting <envar>LC_ALL</envar> to <quote>POSIX</quote> or <quote>C</quote>
   (the two are equivalent) ensures that everything will work as expected in
-  the chroot environment.</para>
+  the cross-compilation environment.</para>
 @y
   <para>
   <envar>LC_ALL</envar> 変数は特定のプログラムが扱う国情報を制御します。
   そのプログラムが出力するメッセージを、指定された国情報に基づいて構成します。
   <envar>LC_ALL</envar> 変数は<quote>POSIX</quote>か<quote>C</quote>にセットしてください。
-  (両者は同じです。) そのようにセットしておけば、chroot 環境下での作業が問題なく進められます。
+  (両者は同じです。) そのようにセットしておけば、クロスコンパイル環境下での作業が問題なく進められます。
   </para>
 @z
 
 @x
   <para>The <envar>LFS_TGT</envar> variable sets a non-default, but compatible machine
-  description for use when building our cross compiler and linker and when cross
-  compiling our temporary toolchain. More information is contained in
+  description for use when building our cross-compiler and linker and when
+  cross-compiling our temporary toolchain. More information is provided by
   <xref linkend="ch-tools-toolchaintechnotes" role=""/>.</para>
 @y
   <para>
@@ -171,7 +172,7 @@
 
 @x if [ ! -L /bin ]; then PATH=/bin:$PATH; fi
   <para>If <filename class="directory">/bin</filename> is not a symbolic
-  link, then it has to be added to the <envar>PATH</envar> variable.</para>
+  link, it must be added to the <envar>PATH</envar> variable.</para>
 @y
   <para>
   <filename class="directory">/bin</filename> がシンボリックリンクではないは <envar>PATH</envar> 変数に加える必要があります。
@@ -209,7 +210,7 @@
 @z
 
 @x export ...
-        <para>While the above commands have set some variables, in order
+        <para>While the preceding commands have set some variables, in order
         to make them visible within any sub-shells, we export them.</para>
 @y
         <para>
@@ -218,7 +219,7 @@
 @z
 
 @x
-     <para>Several commercial distributions add a non-documented instantiation
+     <para>Several commercial distributions add an undocumented instantiation
      of <filename>/etc/bash.bashrc</filename> to the initialization of
      <command>bash</command>. This file has the potential to modify the
      <systemitem class="username">lfs</systemitem>
@@ -240,14 +241,14 @@
 @z
 
 @x
-     <para>After use of the <systemitem class="username">lfs</systemitem>
-     user is finished at the beginning of <xref
-     linkend="chapter-chroot-temporary-tools"/>, you can restore
+     <para>When the <systemitem class="username">lfs</systemitem>
+     user is no longer needed (at the beginning of <xref
+     linkend="chapter-chroot-temporary-tools"/>), you may safely restore
      <filename>/etc/bash.bashrc</filename> (if desired).</para>
 @y
      <para>
-     <xref linkend="chapter-chroot-temporary-tools"/> の冒頭において <systemitem
-     class="username">lfs</systemitem> ユーザーの利用を終えたとき（必要であれば）<filename>/etc/bash.bashrc</filename> を元に戻してください。
+     (<xref linkend="chapter-chroot-temporary-tools"/> の冒頭において) <systemitem
+     class="username">lfs</systemitem> ユーザーを必要としなくなったら、（必要に応じて）<filename>/etc/bash.bashrc</filename> を元に戻してください。
      </para>
 @z
 
@@ -264,7 +265,7 @@
 @z
 
 @x
-  <para>Finally, to have the environment fully prepared for building the
+  <para>Finally, to ensure the environment is fully prepared for building the
   temporary tools, force the <command>bash</command> shell to read
   the new user profile:</para>
 @y

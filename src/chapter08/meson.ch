@@ -10,7 +10,7 @@
 @z
 
 @x
-    <para>Meson is an open source build system meant to be both extremely fast
+    <para>Meson is an open source build system designed to be both extremely fast
     and as user friendly as possible.</para>
 @y
     <para>
@@ -20,15 +20,16 @@
 @z
 
 @x
-      <para>This section is not strictly required for LFS if not using
-      systemd. On the other hand, meson/ninja is a powerful build system,
-      which is expected to be used more and more often. It is required for
+      <para>This section is not strictly required when LFS does not use
+      systemd. On the other hand, Meson, along with Ninja, makes
+      a powerful build system combination,
+      which will probably be used more and more often. It is required for
       several packages in <ulink url="&blfs-book;">the BLFS
       book</ulink>.</para>
 @y
       <para>
       本節は正確に言うと systemd を利用しないのであれば LFS において必要ありません。
-      一方で meson/ninja というものは強力なビルドシステムであり、利用する機会がかなり多いものと思われます。
+      一方で Ninja とともに使う Meson というものは強力なビルドシステムであり、利用する機会がかなり多くなると思われます。
       <ulink url="&blfs-book;">BLFS ブック</ulink> においては、これを必要とするパッケージがいくつかあります。
       </para>
 @z
@@ -56,7 +57,7 @@
 @z
 
 @x
-    <para>The test suite requires some packages out of the scope of LFS.</para>
+    <para>The test suite requires some packages outside the scope of LFS.</para>
 @y
     <para>
     このテストスイートには、LFS の範囲外としているパッケージがいくつか必要です。
@@ -78,7 +79,7 @@
 @z
 
 @x -w dist
-           <para>Put the created wheels into the
+           <para>Puts the created wheels into the
            <filename class='directory'>dist</filename> directory.</para>
 @y
            <para>
@@ -88,7 +89,7 @@
 @z
 
 @x --find-links dist
-           <para>Install wheels from the
+           <para>Installs wheels from the
            <filename class='directory'>dist</filename> directory.</para>
 @y
            <para>
