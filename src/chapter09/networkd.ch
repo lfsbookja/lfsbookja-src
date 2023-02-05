@@ -57,6 +57,16 @@
 @z
 
 @x
+        If you will not use <command>systemd-networkd</command> for network
+        configuration (for example, when the system is not connected to
+        network, or you want to use another utility like NetworkManager
+        for network configuration), disable a service to prevent an error
+        message during boot:
+@y
+        ネットワーク設定に <command>systemd-networkd</command> を利用しない場合（たとえばネットワークに接続しないシステムを利用する場合や、NetworkManager のようなネットワーク設定を行う別ユーティリティーを利用する場合）は、起動時にエラーメッセージが表示されないように、サービスを無効にしてください。
+@z
+
+@x
     <para>Configuration files for <command>systemd-networkd</command> (and
     <command>systemd-resolved</command>) can be placed in
     <filename class="directory">/usr/lib/systemd/network</filename>
