@@ -44,6 +44,50 @@
 @z
 
 @x
+      <para>2023-02-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to OpenSSL-3.0.8 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;5211">#5211</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to e2fsprogs-1.46.6 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;5208">#5208</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-02-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - OpenSSL-3.0.8 へのアップデート（セキュリティアップデート）。
+          <ulink url="&lfs-ticket-root;5211">#5211</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - e2fsprogs-1.46.6 へのアップデート（セキュリティアップデート）。
+          <ulink url="&lfs-ticket-root;5208">#5208</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-02-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Repackage the systemd man pages to prevent stray
+          man pages from ending up in /usr/share/man.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-02-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - systemd の man ページを再パッケージ化。
+          これにより配置場所を誤って /usr/share/man としてしまうものをなくす。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-02-02</para>
       <itemizedlist>
         <listitem>

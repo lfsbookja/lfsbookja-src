@@ -283,9 +283,11 @@
           <seg>なし</seg>
 @z
 @x
-            <ulink url="https://sourceware.org/elfutils/">Elfutils</ulink>
+            <ulink url="https://sourceware.org/elfutils/">Elfutils</ulink> and
+            <ulink url="&blfs-book;general/jansson.html">Jansson</ulink>
 @y
-            <ulink url="https://sourceware.org/elfutils/">Elfutils</ulink>
+            <ulink url="https://sourceware.org/elfutils/">Elfutils</ulink>,
+            <ulink url="&blfs-book;general/jansson.html">Jansson</ulink>
 @z
 
 %----------------------------------------------------------------------

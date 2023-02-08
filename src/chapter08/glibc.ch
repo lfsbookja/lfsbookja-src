@@ -41,10 +41,10 @@
 @z
 
 @x
-    <para>Fix an issue identified upstream:</para>
+    <para>Fix a security issue identified upstream:</para>
 @y
     <para>
-    アップストリームが認識する問題を修正します。
+    アップストリームが認識するセキュリティ問題を修正します。
     </para>
 @z
 

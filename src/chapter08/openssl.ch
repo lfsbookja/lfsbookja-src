@@ -210,9 +210,9 @@
 @x libssl.so
             implements the Transport Layer Security (TLS v1) protocol.
             It provides a rich API, documentation
-            on which can be found by running <command>man 3 ssl</command>
+            on which can be found by running <command>man 7 ssl</command>
 @y
             トランスポート層セキュリティ（Transport Layer Security; TLFS v1）プロトコルを実装しています。
             これは豊富な API 関数とそのドキュメントを提供します。
-            ドキュメントは <command>man 3 ssl</command> の実行により参照できます。
+            ドキュメントは <command>man 7 ssl</command> の実行により参照できます。
 @z

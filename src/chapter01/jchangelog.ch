@@ -50,6 +50,17 @@
 
 -->
    <listitem>
+      <para>2023-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.2-316 (<ulink url="&lfs-changeset;ce536f9c9">ce536f9c9</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2023-02-05</para>
       <itemizedlist>
         <listitem>
