@@ -27,14 +27,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix some issues identified by upstream:</para>
-@y
-    <para>
-    アップストリームが認識している問題修正のためのパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

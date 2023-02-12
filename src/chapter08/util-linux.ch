@@ -76,10 +76,13 @@
 
 @x
     <para>The <emphasis>hardlink</emphasis> tests will fail if the host's kernel
-    does not have the option CONFIG_CRYPTO_USER_API_HASH set.</para>
+    does not have the option CONFIG_CRYPTO_USER_API_HASH set. In addition,
+    two sub-tests from misc: mbsencode and one sub-test from script: replay are 
+    known to fail.</para>
 @y
     <para>
     <emphasis>hardlink</emphasis>テストは、カーネルオプションにおいて CONFIG_CRYPTO_USER_API_HASH セットが設定されていない場合は失敗します。
+    さらに misc 内のサブテスト mbsencode と script 内のサブテスト replay が失敗します。
     </para>
 @z
 

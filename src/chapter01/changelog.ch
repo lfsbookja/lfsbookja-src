@@ -44,6 +44,80 @@
 @z
 
 @x
+      <para>2023-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20230202. Addresses 
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zstd-1.5.4. Fixes
+          <ulink url="&lfs-ticket-root;5215">#5215</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.11.2. Fixes
+          <ulink url="&lfs-ticket-root;5214">#5214</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.47.0. Fixes
+          <ulink url="&lfs-ticket-root;5214">#5213</ulink>.</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[bdubbs] - Update to dbus-1.14.6. Fixes
+          <ulink url="&lfs-ticket-root;5212">#5212</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.1.11. Fixes
+          <ulink url="&lfs-ticket-root;5210">#5210</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.67. Fixes
+          <ulink url="&lfs-ticket-root;5209">#5209</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-6.2.4. Fixes
+          <ulink url="&lfs-ticket-root;5207">#5207</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20230202 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - zstd-1.5.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;5215">#5215</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python3-3.11.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5214">#5214</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.47.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5214">#5213</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="systemd">
+          <para>[bdubbs] - dbus-1.14.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;5212">#5212</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.1.11 へのアップデート。
+          <ulink url="&lfs-ticket-root;5210">#5210</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.67 へのアップデート。
+          <ulink url="&lfs-ticket-root;5209">#5209</ulink>. を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-6.2.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;5207">#5207</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-02-07</para>
       <itemizedlist>
         <listitem>

@@ -41,14 +41,6 @@
 @z
 
 @x
-    <para>First, unpack the documentation by issuing the following command:</para>
-@y
-    <para>
-    はじめにドキュメントを伸張（解凍）する以下のコマンドを実行します。
-    </para>
-@z
-
-@x
     <para>Prepare Tcl for compilation:</para>
 @y
     <para>&PreparePackage1;Tcl&PreparePackage2;</para>
@@ -121,11 +113,11 @@
 @z
 
 @x
-    <para>If you downloaded the optional documentation, install it by issuing
+    <para>Optionally, install the documentation by issuing
     the following commands:</para>
 @y
     <para>
-    任意のドキュメントをダウンロードしている場合は、 以下のコマンドを実行してインストールします。
+    任意の作業として、 以下のコマンドを実行してインストールします。
     </para> 
 @z
 
