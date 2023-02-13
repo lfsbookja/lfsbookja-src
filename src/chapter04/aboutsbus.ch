@@ -19,31 +19,31 @@
   <para>Many people would like to know beforehand approximately how long
   it takes to compile and install each package. Because Linux From
   Scratch can be built on many different systems, it is impossible to
-  provide absolute time estimates. The biggest package (Glibc) will
-  take approximately 20 minutes on the fastest systems, but could take
-  up to three days on slower systems! Instead of providing actual times,
+  provide absolute time estimates. The biggest package (gcc) will
+  take approximately 5 minutes on the fastest systems, but could take
+  days on slower systems! Instead of providing actual times,
   the Standard Build Unit (SBU) measure will be
   used instead.</para>
 @y
   <para>
   各パッケージをコンパイルしインストールするのにどれほどの時間を要するか、誰しも知りたくなるところです。
   しかし Linux From Scratch は数多くのシステム上にて構築可能であるため、正確な処理時間を見積ることは困難です。
-  最も大きなパッケージ (Glibc) の場合、処理性能の高いシステムでも２０分はかかります。
-  それが性能の低いシステムとなると３日はかかるかもしれません! 本書では処理時間を正確に示すのでなく、標準ビルド単位 (Standard Build Unit; SBU) を用いることにします。
+  最も大きなパッケージ (gcc) の場合、処理性能の高いシステムでも 5 分はかかります。
+  それが性能の低いシステムとなると数日はかかるかもしれません! 本書では処理時間を正確に示すのでなく、標準ビルド単位 (Standard Build Unit; SBU) を用いることにします。
   </para>
 @z
 
 @x
-  <para>The SBU measure works as follows. The first package to be compiled
-  is binutils in <xref linkend="chapter-cross-tools"/>. The
-  time it takes to compile this package is what we will refer to as the
-  Standard Build Unit or SBU. All other compile times will be expressed in
-  terms of this unit of time.</para>
+  <para>The SBU measure works as follows. The first package to be compiled is
+  binutils in <xref linkend="chapter-cross-tools"/>. The time it takes to
+  compile using one core is what we will refer to as the Standard
+  Build Unit or SBU. All other compile times will be expressed in terms of this
+  unit of time.</para>
 @y
   <para>
   SBU の測定は以下のようにします。
   最初にコンパイルするのは <xref linkend="chapter-cross-tools"/>における binutils です。
-  このパッケージのコンパイルに要する時間を標準ビルド時間とし、他のコンパイル時間はその時間を基準にして表現します。
+  このパッケージを 1 コアのシステムによってコンパイルするのに要する時間を標準ビルド時間とし、他のコンパイル時間はその時間を基準にして表現します。
   </para>
 @z
 
@@ -109,5 +109,16 @@
     したがってビルド結果を検証するにしても話が複雑になります。
     複数のプロセスラインがインターリーブにより多重化されるためです。
     ビルド時に何らかの問題が発生したら、単一プロセッサー処理を行ってエラーメッセージを分析してください。
+    </para>
+@z
+
+@x
+    <para>The times presented here are based upon using four cores (-j4). The
+    times in Chapter 8 also include the time to run the regression tests for
+    the package unless specified otherwise.</para>
+@y
+    <para>
+    ここに示す時間は 4 コア（-j4）を使用した場合に基づいています。
+    また第 8 章では、特に断りがない限り、パッケージの縮退テストの実行時間も含めています。
     </para>
 @z

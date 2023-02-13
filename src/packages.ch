@@ -10,6 +10,12 @@
 @z
 
 @x
+<!ENTITY acl-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY acl-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY attr-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY attr-fin-sbu "0.1 SBU 以下">
@@ -22,9 +28,9 @@
 @z
 
 @x
-<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 7.7 SBU with tests)">
+<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 7.3 SBU with tests)">
 @y
-<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 7.7 SBU)">
+<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 7.3 SBU)">
 @z
 
 @x
@@ -34,27 +40,27 @@
 @z
 
 @x
-<!ENTITY check-fin-sbu "0.1 SBU (about 3.6 SBU with tests)">
+<!ENTITY check-fin-sbu "0.1 SBU (about 1.7 SBU with tests)">
 @y
-<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 3.6 SBU)">
+<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 1.7 SBU)">
 @z
 
 @x
-<!ENTITY dejagnu-tmp-sbu "less than 0.1 SBU">
+<!ENTITY e2fsprogs-fin-sbu "2.4 SBU on a spinning disk, 0.4 SBU on an SSD">
 @y
-<!ENTITY dejagnu-tmp-sbu "0.1 SBU 以下">
+<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 2.4 SBU、SSD で 0.4 SBU">
 @z
 
 @x
-<!ENTITY e2fsprogs-fin-sbu "4.4 SBU on a spinning disk, 1.2 SBU on an SSD">
+<!ENTITY gcc-fin-sbu "43 SBU (with tests)">
 @y
-<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 4.4 SBU、SSD で 1.2 SBU">
+<!ENTITY gcc-fin-sbu "43 SBU (テスト込み)">
 @z
 
 @x
-<!ENTITY gcc-fin-sbu "160 SBU (with tests)">
+<!ENTITY gdbm-fin-sbu "less than 0.1 SBU">
 @y
-<!ENTITY gcc-fin-sbu "160 SBU (テスト込み)">
+<!ENTITY gdbm-fin-sbu "0.1 SBU 以下">
 @z
 
 @x
@@ -79,6 +85,12 @@
 <!ENTITY jinja2-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY jinja2-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY kmod-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY kmod-fin-sbu "0.1 SBU 以下">
 @z
 
 @x
@@ -111,6 +123,17 @@
 <!ENTITY linux-knl-du "1200 - 8800 MB (一般的には 1700 MB 程度)">
 <!ENTITY linux-knl-sbu "1.5 - 130.0 SBU (一般的には 12 SBU 程度)">
 @z
+@x
+<!ENTITY linux-headers-tmp-sbu "less than 0.1 SBU">
+@y
+<!ENTITY linux-headers-tmp-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY make-tmp-sbu "less than 0.1 SBU">
+@y
+<!ENTITY make-tmp-sbu "0.1 SBU 以下">
+@z
 
 @x
 <!ENTITY man-pages-fin-sbu "less than 0.1 SBU">
@@ -134,6 +157,12 @@
 <!ENTITY psmisc-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY psmisc-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY readline-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY readline-fin-sbu "0.1 SBU 以下">
 @z
 
 @x

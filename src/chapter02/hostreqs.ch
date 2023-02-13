@@ -22,6 +22,33 @@
 @z
 
 @x
+     <title>Hardware</title>
+@y
+     <title>ハードウェア</title>
+@z
+
+@x
+     <para>The LFS editors recommend that the system CPU have at least
+     four cores and that the system have at least 8 GB of memory. 
+     Older systems that do not meet these requirements will still work,
+     but the time to build packages will be significantly longer
+     than documented.
+  </para>
+@y
+     <para>
+     LFS 編集者としては、システム CPU は最低でも 4 コア、メモリ容量は最低でも 8 GB を推奨しています。
+     この要件を満たさない古いシステムであっても、動くかもしれません。
+     しかしパッケージのビルド時間は、本書に示すものよりも極端に長くなるかもしれません。
+  </para>
+@z
+
+@x
+     <title>Software</title>
+@y
+     <title>ソフトウェア</title>
+@z
+
+@x
     <para>Your host system should have the following software with the
     minimum versions indicated. This should not be an issue for most
     modern Linux distributions. Also note that many distributions will

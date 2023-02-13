@@ -124,12 +124,12 @@
 @x
   <note><para>The SBU values and required disk space include test suite data
   for all applicable packages in <xref linkend="chapter-building-system"/>. SBU
-  values have been calculated using a single CPU core (-j1) for all
-  operations.</para></note>
+  values have been calculated using four CPU cores (-j4) for all
+  operations unless specified otherwise.</para></note>
 @y
   <note><para>
   <xref linkend="chapter-building-system"/> にて導入するパッケージにおいて SBU 値と必要ディスク容量には、テストスイート実施による時間や容量をすべて含んでいます。
-  なお SBU 値はすべて、単一の CPU コア（-j1）を用いて算出しています。
+  なお SBU 値は特に断りのない限り、4 CPU コア（-j4）を用いて算出しています。
   </para></note>
 @z
 
