@@ -269,6 +269,25 @@
         <para>&Download;: <ulink url="&glibc-url;"/></para>
 @z
 
+@x
+            The Glibc developers maintain a
+            <ulink url='https://sourceware.org/git/?p=glibc.git;a=shortlog;h=refs/heads/release/&glibc-version;/master'>Git
+            branch</ulink> containing patches considered worthy for
+            Glibc-&glibc-version; but unfortunately developed after
+            Glibc-&glibc-version; release.  The LFS editors will issue a
+            security advisory if any security fix is added into the branch,
+            but no actions will be taken for other newly added patches.  You
+            may review the patches yourself and incorporate some patches if
+            you consider them important.
+@y
+            Glibc の開発者は
+            <ulink url='https://sourceware.org/git/?p=glibc.git;a=shortlog;h=refs/heads/release/&glibc-version;/master'>Git
+            ブランチ</ulink> を管理しており、そこには Glibc-&glibc-version; に有用と思われるパッチを含んでいますが、それは残念ながら Glibc-&glibc-version; のリリース以降に開発されたものに限ります。
+            LFS 編集者は、そのブランチにセキュリティフィックスが加えられた際には、セキュリティアドバイザリーを発表することにしています。
+            ただしセキュリティ以外で新規追加されたパッチに関しては、何も作業は行いません。
+            したがって各パッチは自分で確認するようにし、また重要であると思われる場合は各自でそのパッチを適用してください。
+@z
+
 @x gmp
         <para>Home page: <ulink url="&gmp-home;"/></para>
         <para>Download: <ulink url="&gmp-url;"/></para>
