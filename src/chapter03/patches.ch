@@ -85,6 +85,12 @@
         <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @z
 
+@x GRUB Upstream Fixes Patch
+        <para>Download: <ulink url="&patches-root;&grub-upstream-fixes-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&grub-upstream-fixes-patch;"/></para>
+@z
+
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
 @y

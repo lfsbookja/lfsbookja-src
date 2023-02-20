@@ -138,6 +138,37 @@
 @z
 
 @x
+    <title>Configuring E2fsprogs</title>
+@y
+    <title>&Configuring1;E2fsprogs&Configuring2;</title>
+@z
+
+@x
+      <filename>/etc/mke2fs.conf</filename> contains the default value of
+      various command line options of <command>mke2fs</command>.  You may
+      edit the file to make the default values suitable for your need.
+      For example, some utilities (not in LFS or BLFS) cannot recognize a
+      <systemitem class='filesystem'>ext4</systemitem> file system with
+      <literal>metadata_csum_seed</literal> feature enabled.
+      <emphasis role='bold'>If</emphasis> you need such an utility, you may
+      remove the feature from the default
+      <systemitem class='filesystem'>ext4</systemitem> feature list with the
+      command:
+@y
+      <filename>/etc/mke2fs.conf</filename> では <command>mke2fs</command> のさまざまなコマンドラインオプションに対するデフォルト値が設定されてます。
+      このファイルにおいて、必要となるデフォルト値を設定することができます。
+      たとえば（LFS や BLFS には含まれていない）ユーティリティーの中には、<literal>metadata_csum_seed</literal> 機能が有効になった <systemitem
+      class='filesystem'>ext4</systemitem> ファイルシステムを認識できないものがあります。
+      <emphasis role='bold'>もし</emphasis> そのようなユーティリティーを必要とする場合は、以下のコマンドを通じて <systemitem class='filesystem'>ext4</systemitem> のデフォルト機能を取り除くことができます。
+@z
+
+@x
+      Read the man page <filename>mke2fs.conf(5)</filename> for details.
+@y
+      詳しくは man ページ <filename>mke2fs.conf(5)</filename> を参照してください。
+@z
+
+@x
     <title>Contents of E2fsprogs</title>
 @y
     <title>&ContentsOf1;E2fsprogs&ContentsOf2;</title>

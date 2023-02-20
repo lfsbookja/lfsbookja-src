@@ -394,9 +394,13 @@
           <seg>Diffutils, E2fsprogs, Findutils, Shadow, Util-linux</seg>
 @z
 @x
-          <seg>Bash, Diffutils, Eudev, Findutils, and Man-DB</seg>
+          <seg>Bash, Diffutils, <phrase revision="sysv">Eudev, </phrase>
+          Findutils, <phrase revision="sysv">and </phrase>Man-DB<phrase
+          revision="systemd">, and Systemd</phrase></seg>
 @y
-          <seg>Bash, Diffutils, Eudev, Findutils, Man-DB</seg>
+          <seg>Bash, Diffutils, <phrase revision="sysv">Eudev, </phrase>
+          Findutils, Man-DB<phrase
+          revision="systemd">, Systemd</phrase></seg>
 @z
 @x
           <seg>
@@ -410,12 +414,39 @@
             <ulink url="https://metacpan.org/pod/IO::Tty">IO::Tty</ulink>
           </seg>
 @z
+
+%----------------------------------------------------------------------
+@x
+<!-- Begin D-Bus dependency info -->
+@y
+<!-- Begin D-Bus dependency info -->
+@z
 @x
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Make, Sed, and Util-linux</seg>
+          Make, Sed, Systemd, and Util-linux</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Make, Sed, Util-linux</seg>
+          Make, Sed, Systemd, Util-linux</seg>
+@z
+@x
+          <seg>Glibc and Systemd</seg>
+@y
+          <seg>Glibc, Systemd</seg>
+@z
+@x
+          <seg>Several packages in BLFS</seg>
+@y
+          <seg>BLFS におけるパッケージ数種</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg><ulink url="&blfs-book;x/x7lib.html">Xorg Libraries</ulink></seg>
+@y
+          <seg><ulink url="&blfs-book;x/x7lib.html">Xorg ライブラリ</ulink></seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1244,9 +1275,11 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Eudev</seg>
+          <seg><phrase revision="sysv">Eudev</phrase>
+          <phrase revision="systemd">Systemd</phrase></seg>
 @y
-          <seg>Eudev</seg>
+          <seg><phrase revision="sysv">Eudev</phrase>
+          <phrase revision="systemd">Systemd</phrase></seg>
 @z
 @x
           <seg>None</seg>
@@ -1283,8 +1316,10 @@
           <seg>Gzip</seg>
 @z
 @x
+            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink> or
             <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>
 @y
+            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink> または
             <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>
 @z
 
@@ -1928,10 +1963,10 @@
 
 %----------------------------------------------------------------------
 @x Pkg-config
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Popt,
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
           and Sed</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Popt,
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
           Sed</seg>
 @z
 @x
@@ -2326,11 +2361,15 @@
 
 %----------------------------------------------------------------------
 @x Util-linux
-          <seg>Bash, Binutils, Coreutils, Diffutils, Eudev, Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed, and Zlib</seg>
+          <seg>Bash, Binutils, Coreutils, Diffutils,
+          <phrase revision="sysv">Eudev, </phrase>Findutils, Gawk,
+          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed,
+          <phrase revision="systemd">Systemd, </phrase>and Zlib</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Diffutils, Eudev, Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed, Zlib</seg>
+          <seg>Bash, Binutils, Coreutils, Diffutils,
+          <phrase revision="sysv">Eudev, </phrase>Findutils, Gawk,
+          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed,
+          <phrase revision="systemd">Systemd,</phrase> Zlib</seg>
 @z
 @x
           <seg>Glibc, Ncurses, Readline, and Zlib</seg>
@@ -2487,9 +2526,13 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>Eudev, File, GRUB, Kmod, and Man-DB</seg>
+          <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
+          <phrase revision="sysv">and </phrase>Man-DB<phrase
+          revision="systemd">, and Systemd</phrase></seg>
 @y
-          <seg>Eudev, File, GRUB, Kmod, Man-DB</seg>
+          <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
+          Man-DB<phrase
+          revision="systemd">, Systemd</phrase></seg>
 @z
 @x
           <seg>None</seg>

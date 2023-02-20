@@ -44,6 +44,25 @@
 @z
 
 @x
+      <para>2023-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Apply a patch for GRUB for an issue triggered
+          with e2fsprogs-1.47.0.  Fixes
+          <ulink url="&lfs-ticket-root;5219">#5219</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - GRUB において e2fsprogs-1.47.0 が原因で発生する問題を修正するパッチを適用。
+          <ulink url="&lfs-ticket-root;5219">#5219</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-02-13</para>
       <itemizedlist>
         <listitem>
