@@ -97,7 +97,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to e2fsprogs-1.47.0. Fixes
-          <ulink url="&lfs-ticket-root;5214">#5213</ulink>.</para>
+          <ulink url="&lfs-ticket-root;5213">#5213</ulink>.</para>
         </listitem>
         <listitem revision="systemd">
           <para>[bdubbs] - Update to dbus-1.14.6. Fixes
@@ -133,7 +133,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - e2fsprogs-1.47.0 へのアップデート。
-          <ulink url="&lfs-ticket-root;5214">#5213</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;5213">#5213</ulink> を Fix に。</para>
         </listitem>
         <listitem revision="systemd">
           <para>[bdubbs] - dbus-1.14.6 へのアップデート。
