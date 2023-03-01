@@ -137,14 +137,12 @@
       that version when building <application>glibc</application> in
       <xref linkend="chapter-cross-tools"/> and
       <xref linkend="chapter-building-system"/>,
-      at the recommendation of the developers.  It is also required by
-      udev.</para>
+      at the recommendation of the developers.</para>
 @y
       <para>
       カーネルのバージョンを指定しているのは、<xref
       linkend="chapter-cross-tools"/> と <xref
       linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
-      これは udev においても必要になります。
       </para>
 @z
 
