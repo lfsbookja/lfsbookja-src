@@ -91,11 +91,10 @@
 @z
 
 @x
-    <para>One test named <filename>m_assume_storage_prezeroed</filename>
-    is known to fail.</para>
+    <para>One test, u_direct_io, is known to fail on some systems.</para>
 @y
     <para>
-    <filename>m_assume_storage_prezeroed</filename> というテストが１つだけ失敗します。
+    u_direct_io という 1 つのテストが、システムによっては失敗する場合があります。
     </para>
 @z
 
