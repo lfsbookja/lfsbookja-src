@@ -58,10 +58,10 @@
 @z
 
 @x
-    <para>If building on x86_64, change the default directory name for 64-bit
+    <para arch="default">If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
-    <para>
+    <para arch="default">
     x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
     </para>
 @z

@@ -43,6 +43,7 @@ CHANGE_FILES = \
 	intltool.ch       \
 	introduction.ch   \
 	iproute2.ch       \
+	isl.ch            \
 	jinja2.ch         \
 	kbd.ch            \
 	kmod.ch           \

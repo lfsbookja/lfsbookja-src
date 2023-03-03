@@ -79,9 +79,9 @@
 @z
 
 @x
-        <para>The version of the book being used (in this case &version;)</para>
+        <para>The version of the book being used (in this case &version;<phrase arch="ml_32,ml_x32,ml_all">-multilib</phrase>)</para>
 @y
-        <para>お使いの LFS ブックのバージョン。 (本書の場合 &version;)</para>
+        <para>お使いの LFS ブックのバージョン。 (本書の場合 &version;<phrase arch="ml_32,ml_x32,ml_all">-multilib</phrase>)</para>
 @z
 
 @x
@@ -109,7 +109,7 @@
 @z
 
 @x
-        <para>Note whether you have deviated from the book at all </para>
+        <para>Note whether you have deviated from the book at all</para>
 @y
         <para>本書どおりに作業しているか、逸脱していないかの情報。</para>
 @z

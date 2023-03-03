@@ -266,10 +266,10 @@
 @z
 
 @x
-      <para>Note that for 32-bit machines, the interpreter name will be
+      <para arch="default">Note that for 32-bit machines, the interpreter name will be
       <filename>/lib/ld-linux.so.2</filename>.</para>
 @y
-      <para>
+      <para arch="default">
       インタープリター名は 32 ビットマシンの場合 <filename>/lib/ld-linux.so.2</filename> となります。
       </para>
 @z

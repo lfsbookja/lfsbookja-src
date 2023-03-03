@@ -16,13 +16,13 @@
 @z
 
 @x
-  <para>This is version &version; of the Linux From Scratch book, dated
+  <para>This is version &version;<phrase arch="ml_32,ml_x32,ml_all">&version;-multilib</phrase> of the Linux From Scratch book, dated
   &releasedate;. If this book is more than six months old, a newer and better
   version is probably already available. To find out, please check one of the
   mirrors via <ulink url="&lfs-root;mirrors.html"/>.</para>
 @y
   <para>
-  本書は Linux From Scratch ブック、バージョン &version;、&releasedate; 公開です。
+  本書は Linux From Scratch ブック、バージョン &version;<phrase arch="ml_32,ml_x32,ml_all">&version;-multilib</phrase>、&releasedate; 公開です。
   本書が 6ヶ月以上更新されていなければ、より新しい版が公開されているはずです。以下のミラーサイトを確認してください。
   <ulink url="&lfs-root;mirrors.html"/>
   </para>

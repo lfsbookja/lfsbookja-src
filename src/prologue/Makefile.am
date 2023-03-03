@@ -9,6 +9,7 @@ CHANGE_FILES = \
 	dedication.ch    \
 	errata.ch        \
 	foreword.ch      \
+	multilib.ch      \
 	organization.ch  \
 	preface.ch       \
 	prerequisites.ch \

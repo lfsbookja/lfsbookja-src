@@ -70,10 +70,10 @@
 @z
 
 @x
-    <para>On x86_64 hosts, set the default directory name for
+    <para arch="default">On x86_64 hosts, set the default directory name for
     64-bit libraries to <quote>lib</quote>:</para>
 @y
-    <para>
+    <para arch="default">
     x86_64 ホストにおいて、64 ビットライブラリに対するデフォルトのディレクトリ名は<quote>lib</quote>です。
     </para>
 @z

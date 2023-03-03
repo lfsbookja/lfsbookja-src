@@ -421,10 +421,10 @@
 %@z
 
 @x
-   <para>A 32-bit system may use a few other directories. For example, here
+   <para arch="default">A 32-bit system may use a few other directories. For example, here
    is the output from an i686 machine:</para>
 @y
-   <para>
+   <para arch="default">
    32ビットシステムではディレクトリが多少異なります。
    以下は i686 マシンでの出力例です。
    </para>

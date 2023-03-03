@@ -35,6 +35,11 @@
       <firstname>Editor: DJ</firstname>
       <surname>Lucas</surname>
     </author>
+
+    <author arch="ml_32,ml_x32,ml_all">
+      <firstname>Editor: Thomas</firstname>
+      <surname>Trepl</surname>
+    </author>
   </authorgroup>
 @y
   <authorgroup>
@@ -56,6 +61,12 @@
       <firstname>編集： DJ</firstname>
       <surname>Lucas</surname>
     </author>
+
+    <author arch="ml_32,ml_x32,ml_all">
+      <firstname>編集: Thomas</firstname>
+      <surname>Trepl</surname>
+    </author>
+
     <author>
       <firstname>日本語訳： 松山 道夫</firstname>
     </author>

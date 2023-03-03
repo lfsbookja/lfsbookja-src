@@ -50,8 +50,8 @@
 <!ENTITY jversion        "20230301">
 <!ENTITY jversiond       "20230301">
 <!ENTITY jcorrespondSHA  "e06bdbe2b"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
-<!ENTITY dir-jversion    "git-ja">
-<!ENTITY dir-jversiond   "git-sysdja">
+<!ENTITY dir-jversion    "multilib-ja">
+<!ENTITY dir-jversiond   "multilib-sysdja">
 @z
 
 @x
