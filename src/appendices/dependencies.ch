@@ -283,11 +283,9 @@
           <seg>なし</seg>
 @z
 @x
-            <ulink url="https://sourceware.org/elfutils/">Elfutils</ulink> and
-            <ulink url="&blfs-book;general/jansson.html">Jansson</ulink>
+            <ulink url="https://sourceware.org/elfutils/">Elfutils</ulink>
 @y
-            <ulink url="https://sourceware.org/elfutils/">Elfutils</ulink>,
-            <ulink url="&blfs-book;general/jansson.html">Jansson</ulink>
+            <ulink url="https://sourceware.org/elfutils/">Elfutils</ulink>
 @z
 
 %----------------------------------------------------------------------
@@ -394,13 +392,9 @@
           <seg>Diffutils, E2fsprogs, Findutils, Shadow, Util-linux</seg>
 @z
 @x
-          <seg>Bash, Diffutils, <phrase revision="sysv">Eudev, </phrase>
-          Findutils, <phrase revision="sysv">and </phrase>Man-DB<phrase
-          revision="systemd">, and Systemd</phrase></seg>
+          <seg>Bash, Diffutils, Eudev, Findutils, and Man-DB</seg>
 @y
-          <seg>Bash, Diffutils, <phrase revision="sysv">Eudev, </phrase>
-          Findutils, Man-DB<phrase
-          revision="systemd">, Systemd</phrase></seg>
+          <seg>Bash, Diffutils, Eudev, Findutils, Man-DB</seg>
 @z
 @x
           <seg>
@@ -423,30 +417,25 @@
 @z
 @x
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Make, Sed, Systemd, and Util-linux</seg>
+          Make, Sed, and Util-linux</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Make, Sed, Systemd, Util-linux</seg>
-@z
-@x
-          <seg>Glibc and Systemd</seg>
-@y
-          <seg>Glibc, Systemd</seg>
-@z
-@x
-          <seg>Several packages in BLFS</seg>
-@y
-          <seg>BLFS におけるパッケージ数種</seg>
+          Make, Sed, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>None</seg>
 @z
 @x
-          <seg><ulink url="&blfs-book;x/x7lib.html">Xorg Libraries</ulink></seg>
+          <seg>None</seg>
 @y
-          <seg><ulink url="&blfs-book;x/x7lib.html">Xorg ライブラリ</ulink></seg>
+          <seg>None</seg>
+@z
+@x
+          <seg>Xorg Libs</seg>
+@y
+          <seg>Xorg Libs</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -756,12 +745,12 @@
 %----------------------------------------------------------------------
 @x Gcc
           <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch, Perl, Sed,
-          Tar, Texinfo, and Zstd</seg>
+          Gettext, Glibc, GMP, Grep, ISL, M4, Make, MPC, MPFR, Patch, Perl, 
+          Sed, Tar, Texinfo, and Zstd</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch, Perl, Sed,
-          Tar, Texinfo, Zstd</seg>
+          Gettext, Glibc, GMP, Grep, ISL, M4, Make, MPC, MPFR, Patch, Perl, 
+          Sed, Tar, Texinfo, Zstd</seg>
 @z
 @x
           <seg>Bash, Binutils, Glibc, Mpc, and Python</seg>
@@ -780,13 +769,10 @@
 @z
 @x
           <seg>
-             <ulink url="https://gcc.gnu.org/wiki/GNAT">GNAT</ulink>
-             and
-             <ulink url="https://repo.or.cz/isl.git">ISL</ulink>
+             <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>
 @y
           <seg>
-             <ulink url="https://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
-             <ulink url="https://repo.or.cz/isl.git">ISL</ulink>
+             <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>
 @z
 
 %----------------------------------------------------------------------
@@ -964,13 +950,13 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink>
+            <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>
             and
             <ulink url="&blfs-book;general/libsigsegv.html">libsigsegv</ulink>
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink>,
+            <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>,
             <ulink url="&blfs-book;general/libsigsegv.html">libsigsegv</ulink>
           </seg>
 @z
@@ -1275,11 +1261,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg><phrase revision="sysv">Eudev</phrase>
-          <phrase revision="systemd">Systemd</phrase></seg>
+          <seg>Eudev</seg>
 @y
-          <seg><phrase revision="sysv">Eudev</phrase>
-          <phrase revision="systemd">Systemd</phrase></seg>
+          <seg>Eudev</seg>
 @z
 @x
           <seg>None</seg>
@@ -1316,10 +1300,8 @@
           <seg>Gzip</seg>
 @z
 @x
-            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink> or
             <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>
 @y
-            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink> または
             <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>
 @z
 
@@ -1501,13 +1483,9 @@
           <seg>なし</seg>
 @z
 @x
-            <ulink url="&blfs-book;general/cpio.html">cpio</ulink> and
-            <ulink url="&blfs-book;general/llvm.html">LLVM</ulink>
-            (with Clang)
+            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>
 @y
-            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>,
-            <ulink url="&blfs-book;general/llvm.html">LLVM</ulink>
-            (Clang 込み)
+            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>
 @z
 
 %----------------------------------------------------------------------
@@ -1630,13 +1608,11 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;general/libseccomp.html">libseccomp</ulink> and
-            <ulink url="https://po4a.org/index.php.en">po4a</ulink>
+            <ulink url="&blfs-book;general/libseccomp.html">libseccomp</ulink>
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;general/libseccomp.html">libseccomp</ulink>,
-            <ulink url="https://po4a.org/index.php.en">po4a</ulink>
+            <ulink url="&blfs-book;general/libseccomp.html">libseccomp</ulink>
           </seg>
 @z
 
@@ -1721,15 +1697,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>
-            <phrase revision='sysv'>None</phrase>
-            <phrase revision='systemd'>Systemd</phrase>
-          </seg>
+          <seg>Systemd</seg>
 @y
-          <seg>
-            <phrase revision='sysv'>なし</phrase>
-            <phrase revision='systemd'>Systemd</phrase>
-          </seg>
+          <seg>Systemd</seg>
 @z
 @x
           <seg>None</seg>
@@ -1904,9 +1874,9 @@
           <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>Glibc</seg>
+          <seg>Glibc and Patch</seg>
 @y
-          <seg>Glibc</seg>
+          <seg>Glibc, Patch</seg>
 @z
 @x
           <seg>Diffutils</seg>
@@ -1963,10 +1933,10 @@
 
 %----------------------------------------------------------------------
 @x Pkg-config
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Popt,
           and Sed</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Popt,
           Sed</seg>
 @z
 @x
@@ -2361,20 +2331,16 @@
 
 %----------------------------------------------------------------------
 @x Util-linux
-          <seg>Bash, Binutils, Coreutils, Diffutils,
-          <phrase revision="sysv">Eudev, </phrase>Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed,
-          <phrase revision="systemd">Systemd, </phrase>and Zlib</seg>
+          <seg>Bash, Binutils, Coreutils, Diffutils, Eudev, Findutils, Gawk,
+          GCC, Gettext, Glibc, Grep, Libcap, Make, Ncurses, Sed, and Zlib</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Diffutils,
-          <phrase revision="sysv">Eudev, </phrase>Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed,
-          <phrase revision="systemd">Systemd,</phrase> Zlib</seg>
+          <seg>Bash, Binutils, Coreutils, Diffutils, Eudev, Findutils, Gawk,
+          GCC, Gettext, Glibc, Grep, Libcap, Make, Ncurses, Sed, Zlib</seg>
 @z
 @x
-          <seg>Glibc, Ncurses, Readline, and Zlib</seg>
+          <seg>Glibc, Libcap, Ncurses, Readline, and Zlib</seg>
 @y
-          <seg>Glibc, Ncurses, Readline, Zlib</seg>
+          <seg>Glibc, Libcap, Ncurses, Readline, Zlib</seg>
 @z
 @x
           <seg>None</seg>
@@ -2388,8 +2354,6 @@
 @z
 @x
           <seg>
-            <ulink
-              url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
             <ulink
               url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>
             and <ulink
@@ -2397,8 +2361,6 @@
           </seg>
 @y
           <seg>
-            <ulink
-              url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
             <ulink
               url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>,
             <ulink
@@ -2433,7 +2395,7 @@
           <seg>
             <ulink url="&blfs-book;x/installing.html">Xorg</ulink>,
             <ulink url="&blfs-book;x/gtk2.html">GTK+2</ulink>,
-            <ulink url="https://lesstif.sourceforge.net/">LessTif</ulink>,
+            <ulink url="http://lesstif.sourceforge.net/">LessTif</ulink>,
             <ulink url="&blfs-book;general/ruby.html">Ruby</ulink>, and
             <ulink url="&blfs-book;general/gpm.html">GPM</ulink>
           </seg>
@@ -2441,8 +2403,8 @@
           <seg>
             <ulink url="&blfs-book;x/installing.html">Xorg</ulink>,
             <ulink url="&blfs-book;x/gtk2.html">GTK+2</ulink>,
-            <ulink url="https://lesstif.sourceforge.net/">LessTif</ulink>,
-            <ulink url="&blfs-book;general/ruby.html">Ruby</ulink>,
+            <ulink url="http://lesstif.sourceforge.net/">LessTif</ulink>,
+            <ulink url="&blfs-book;general/ruby.html">Ruby</ulink>, and
             <ulink url="&blfs-book;general/gpm.html">GPM</ulink>
           </seg>
 @z
@@ -2464,15 +2426,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>
-            <phrase revision='sysv'>None</phrase>
-            <phrase revision='systemd'>Jinja2</phrase>
-          </seg>
+          <seg>Jinja2</seg>
 @y
-          <seg>
-            <phrase revision='sysv'>なし</phrase>
-            <phrase revision='systemd'>Jinja2</phrase>
-          </seg>
+          <seg>Jinja2</seg>
 @z
 @x
           <seg>None</seg>
@@ -2526,13 +2482,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
-          <phrase revision="sysv">and </phrase>Man-DB<phrase
-          revision="systemd">, and Systemd</phrase></seg>
+          <seg>Eudev, File, GRUB, Kmod, and Man-DB</seg>
 @y
-          <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
-          Man-DB<phrase
-          revision="systemd">, Systemd</phrase></seg>
+          <seg>Eudev, File, GRUB, Kmod, Man-DB</seg>
 @z
 @x
           <seg>None</seg>
@@ -2584,16 +2536,16 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC <phrase revision='systemd'>and Systemd</phrase></seg>
+          <seg>GCC and Systemd</seg>
 @y
-          <seg>GCC <phrase revision='systemd'>, Systemd</phrase></seg>
+          <seg>GCC, Systemd</seg>
 @z
 @x
           <seg>
-            <ulink url="https://lz4.github.io/lz4/">LZ4</ulink>
+            <ulink url="http://lz4.github.io/lz4/">LZ4</ulink>
           </seg>
 @y
           <seg>
-            <ulink url="https://lz4.github.io/lz4/">LZ4</ulink>
+            <ulink url="http://lz4.github.io/lz4/">LZ4</ulink>
           </seg>
 @z

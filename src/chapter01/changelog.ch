@@ -44,17 +44,29 @@
 @z
 
 @x
-      <para>2023-03-01</para>
+      <para>2022-07-24</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - LFS-11.3 released.</para>
+          <para>[bdubbs] - Update to linux-5.18.14. (Security fixes
+          for machines affected by the RETBleed vulnerability). Fixes
+          <ulink url="&lfs-ticket-root;5082">#5082</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.65. Fixes
+          <ulink url="&lfs-ticket-root;5083">#5083</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
-      <para>2023-03-01</para>
+      <para>2022-07-24</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - LFS-11.3 リリース。</para>
+          <para>[bdubbs] - Update to linux-5.18.14. (Security fixes
+          for machines affected by the RETBleed vulnerability). Fixes
+          <ulink url="&lfs-ticket-root;5082">#5082</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.65. Fixes
+          <ulink url="&lfs-ticket-root;5083">#5083</ulink>.</para>
         </listitem>
       </itemizedlist>
 @z

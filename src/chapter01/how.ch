@@ -21,19 +21,19 @@
   existing Linux system (the host) will be used as a starting point to
   provide necessary programs, including a compiler, linker, and shell,
   to build the new system. Select the <quote>development</quote> option
-  during the distribution installation to include these
+  during the distribution installation to be able to access these
   tools.</para>
 @y
   <para>
   LFS システムは、既にインストールされている Linux ディストリビューション (Debian、OpenMandriva、Fedora、openSUSE など) を利用して構築していきます。
   この既存の Linux システム（ホスト）は、LFS 構築のためにさまざまなプログラム類を利用する基盤となります。
   プログラム類とはコンパイラー、リンカー、シェルなどです。
-  したがってそのディストリビューションのインストール時には<quote>開発 (development)</quote>オプションを選択し、それらのプログラム類を含めておく必要があります。
+  したがってそのディストリビューションのインストール時には<quote>開発 (development)</quote>オプションを選択し、それらのプログラム類が利用できるようにしておく必要があります。
   </para>
 @z
 
 @x
-  <para>As an alternative to installing a separate distribution on your
+  <para>As an alternative to installing a separate distribution onto your
   machine, you may wish to use <!-- the Linux From Scratch LiveCD or --> a LiveCD from a
   commercial distribution. <!-- The LFS LiveCD works well as a host system,
   providing all the tools you need to successfully follow the instructions in
