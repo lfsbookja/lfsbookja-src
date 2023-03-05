@@ -61,15 +61,6 @@
 @z
 
 @x
-    <para>The test named <filename>run-native-test.sh</filename> is known to
-    fail.</para>
-@y
-    <para>
-    <filename>run-low_high_pc.sh</filename> というテストは失敗します。
-    </para>
-@z
-
-@x
     <para>Install only Libelf:</para>
 @y
     <para>Libelf のみをインストールします。</para>

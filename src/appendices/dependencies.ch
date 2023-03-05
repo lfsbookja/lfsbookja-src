@@ -338,9 +338,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>File</seg>
+          <seg>File and Libelf</seg>
 @y
-          <seg>File</seg>
+          <seg>File, Libelf</seg>
 @z
 @x
           <seg>None</seg>
@@ -1368,14 +1368,16 @@
 <!-- Begin Libelf dependency info -->
 @z
 @x
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, and Make</seg>
+          <seg>Bash, Binutils, Bzip2, Coreutils, GCC, Glibc, Make, Xz,
+          Zlib, and Zstd</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+          <seg>Bash, Binutils, Bzip2, Coreutils, GCC, Glibc, Make, Xz,
+          Zlib, Zstd</seg>
 @z
 @x
-          <seg>Glibc and Zlib</seg>
+          <seg>Bzip2, Glibc, Xz, Zlib, and Zstd</seg>
 @y
-          <seg>Glibc, Zlib</seg>
+          <seg>Bzip2, Glibc, Xz, Zlib, Zstd</seg>
 @z
 @x
           <seg>None</seg>
@@ -2527,11 +2529,11 @@
 @z
 @x
           <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
-          <phrase revision="sysv">and </phrase>Man-DB<phrase
+          Libelf, <phrase revision="sysv">and </phrase>Man-DB<phrase
           revision="systemd">, and Systemd</phrase></seg>
 @y
           <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
-          Man-DB<phrase
+          Libelf, Man-DB<phrase
           revision="systemd">, Systemd</phrase></seg>
 @z
 @x
@@ -2557,9 +2559,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>File, Kmod, Perl, and Util-linux</seg>
+          <seg>File, Kmod, Libelf, Perl, and Util-linux</seg>
 @y
-          <seg>File, Kmod, Perl, Util-linux</seg>
+          <seg>File, Kmod, Libelf, Perl, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -2584,9 +2586,11 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC <phrase revision='systemd'>and Systemd</phrase></seg>
+          <seg><phrase revision='sysv'>GCC and Libelf</phrase>
+          <phrase revision='systemd'>GCC, Libelf, and Systemd</phrase></seg>
 @y
-          <seg>GCC <phrase revision='systemd'>, Systemd</phrase></seg>
+          <seg><phrase revision='sysv'>GCC, Libelf</phrase>
+          <phrase revision='systemd'>GCC, Libelf, Systemd</phrase></seg>
 @z
 @x
           <seg>

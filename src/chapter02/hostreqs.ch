@@ -202,21 +202,3 @@
   ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のコマンドを実行して確認することができます。
   </para>
 @z
-
-@x
-  <para>Also check for some library consistency:</para>
-@y
-  <para>
-  またライブラリの整合性をいくつかチェックします。
-  </para>
-@z
-
-@x
-<para>The files identified by this script should be all present
-or all absent, but not only one or two present.</para>
-@y
-<para>
-上のスクリプトによって識別するファイルは、すべて存在しているか、またはすべて存在しないものであるはずです。
-１つだけ、あるいは２つだけしか存在しないなら不適切です。
-</para>
-@z
