@@ -25,40 +25,6 @@
 @z
 
 @x
-    <para>Verify that the PTYs are working properly inside the chroot
-    environment by performing a simple test:</para>
-@y
-    <para>
-    PTY が chroot 環境内にて正しく作動しているかどうかを確認するために、以下の簡単なテストを実行します。
-    </para>
-@z
-
-@x
-    <para>This command should output the following:</para>
-@y
-    <para>
-    上のコマンドは以下を出力するはずです。
-    </para>
-@z
-
-@x
-    <para>If, instead, the output includes the message below, then the environment
-    is not set up for proper PTY operation.  This issue needs to be resolved before
-    running the test suites for Binutils and GCC:</para>
-@y
-    <para>
-    上のような出力ではなく、以下のような出力メッセージが含まれていたら、PTY の動作が適切に構築できていないことを示しています。
-    Binutils や GCC のテストスイートを実行する前に、この症状は解消しておく必要があります。
-    </para>
-@z
-
-@x
-      Now make a fix identified upstream that affects building some packages:
-@y
-      いくつかのパッケージビルドに影響を及ぼす問題への対処として、アップストリームが認識する修正を行います。
-@z
-
-@x
     <para>The Binutils documentation recommends building Binutils
     in a dedicated build directory:</para>
 @y

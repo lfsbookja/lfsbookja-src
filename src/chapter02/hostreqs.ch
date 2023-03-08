@@ -167,6 +167,20 @@
 @z
 
 @x
+      <para>We require the host kernel to support UNIX 98 pseudo terminal
+      (PTY).  It should be enabled on all desktop or server distros shipping
+      Linux &min-kernel; or a newer kernel. If you are building a custom
+      host kernel, ensure <option>CONFIG_UNIX98_PTYS</option> is set to
+      <literal>y</literal> in the kernel configuration.</para>
+@y
+      <para>
+      本書では、ホストカーネルが UNIX 98 疑似端末（PTY）をサポートしていることが必要です。
+      これは Linux &min-kernel; またはそれ以降のカーネルを利用するデスクトップ向け、あるいはサーバー向けのディストリビューションにとって利用できなければなりません。
+      独自のホストカーネルを利用している場合には、カーネル設定において <option>CONFIG_UNIX98_PTYS</option> が <literal>y</literal> であることを確認してください。
+      </para>
+@z
+
+@x
     <para>Note that the symlinks mentioned above are required to build an LFS
     system using the instructions contained within this book. Symlinks that
     point to other software (such as dash, mawk, etc.) may work, but are not

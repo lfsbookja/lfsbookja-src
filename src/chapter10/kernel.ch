@@ -233,6 +233,17 @@
           </para>
 @z
 
+@x Configure standard kernel features (expert users)
+          <para>This will make some options show up in the configuration
+          interface but changing those options may be dangerous.  Do not use
+          this unless you know what you are doing.</para>
+@y
+          <para>
+          これは設定項目上にいくつかのオプションを表示するものですが、そのオプションを変更することは非常に危険なことです。
+          何を行っているのかがわかっていない場合には、触れないようにしてください。
+          </para>
+@z
+
 @x Strong Stack Protector
           <para>Enable SSP for the kernel.  We've enabled it for the entire
           userspace with <parameter>--enable-default-ssp</parameter>
