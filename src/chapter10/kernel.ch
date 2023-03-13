@@ -58,22 +58,23 @@
         For general information on kernel configuration see <ulink
         url="&hints-root;kernel-configuration.txt"/>.  Additional information
         about configuring and building the kernel can be found at <ulink
-        url="http://www.kroah.com/lkn/"/>. These refereces are a bit
+        url="&anduin-sources;/kernel-nutshell/"/>. 
+        These references are a bit
         dated, but still give a reasonable overview of the process.
 @y
         カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
-        さらに詳しくカーネルの構築や設定を説明している <ulink url="http://www.kroah.com/lkn/"/> もあります。
+        さらに詳しくカーネルの構築や設定を説明している <ulink url="&anduin-sources;/kernel-nutshell/"/> もあります。
         この情報を少々古いものですが、理にかなった作業過程をおおまかに示しています。
 @z
 
 @x
         If all else fails, you can ask for help on the <ulink
-        url="https://www.linuxfromscratch.org/mail.html">lfs-suport</ulink>
-        mailing list.  Note that suscribing is required in order for the list
+        url="https://www.linuxfromscratch.org/mail.html">lfs-support</ulink>
+        mailing list.  Note that subscribing is required in order for the list
         to avoid spam.
 @y
         それでもうまくいかなかった場合は、<ulink
-        url="https://www.linuxfromscratch.org/mail.html">lfs-suport</ulink>
+        url="https://www.linuxfromscratch.org/mail.html">lfs-support</ulink>
         メーリングリストに問い合わせる方法があります。
         スパムメールを避ける目的から、このメーリングリストは登録が必要です。
 @z

@@ -132,6 +132,12 @@
 @z
 
 @x
+        Ensure a password is set for the root user.
+@y
+        root ユーザーのパスワードが設定されていることを確認してください。
+@z
+
+@x
         A review of the following configuration files
         is also appropriate at this point.
 @y
@@ -196,11 +202,37 @@
 @z
 
 @x
-  <para>When the reboot is complete, the LFS system is ready for use and
-  more software may be added to suit your needs.</para>
+  <para>When the reboot is complete, the LFS system is ready for use.  What you
+  will see is a simple <quote>login: </quote> prompt.  At this point, you can
+  proceed to 
+  <phrase revision="sysv">
+    <ulink url="https://www.linuxfromscratch.org/blfs/view/stable/">
+     the BLFS Book</ulink></phrase>
+  <phrase revision="systemd">
+    <ulink url="https://www.linuxfromscratch.org/blfs/view/stable-systemd/">
+    the BLFS Book</ulink></phrase> 
+  where you can add more software to suit your needs.</para>
 @y
   <para>
   再起動が無事行われ LFS システムを使うことができます。
-  必要に応じてさらなるソフトウェアをインストールしていってください。
+  起動後に見えるのは<quote>login: </quote>という単純なプロンプトです。
+  ここからは 
+  <phrase revision="sysv">
+    <ulink url="https://www.linuxfromscratch.org/blfs/view/stable/">
+     BLFS ブック</ulink></phrase>
+  <phrase revision="systemd">
+    <ulink url="https://www.linuxfromscratch.org/blfs/view/stable-systemd/">
+    BLFS ブック</ulink></phrase>
+  に進んでいき、利用したいソフトウェアをいろいろと追加していくことができます。
   </para>
+@z
+
+@x
+    If your reboot is <emphasis role="bold">not</emphasis> successful, it
+    is time to troubleshoot.  For hints on solving inital booting problems, see
+    <ulink url="https://www.linuxfromscratch.org/lfs/troubleshooting.html"/>.
+@y
+    再起動がうまく <emphasis role="bold">できなかった</emphasis> 場合は、解消していきます。
+    初期起動時の問題を解決するヒントとして、<ulink
+    url="https://www.linuxfromscratch.org/lfs/troubleshooting.html"/> を参考にしてください。
 @z
