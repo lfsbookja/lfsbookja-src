@@ -33,8 +33,23 @@
 @z
 
 @x
+  <note><para>There are many ways to install a Linux distribution and
+  the defaults are usually not optimal for building an LFS system.
+  For suggestions on setting up a commercial distribution see:
+  <ulink url="&lfs-root;hints/downloads/files/partitioning-for-lfs.txt"/>.</para></note>
+@y
+  <note><para>
+  Linux ディストリビューションのインストールには、さまざまな方法がありますが、デフォルトインストールでは、普通は LFS システムの構築には適していません。
+  商用ディストリビューションにおける設定方法に関しては
+  <ulink url="&lfs-root;hints/downloads/files/partitioning-for-lfs.txt"/>
+  を参照してください。
+  </para></note>
+@z
+
+@x
   <para>As an alternative to installing a separate distribution on your
-  machine, you may wish to use <!-- the Linux From Scratch LiveCD or --> a LiveCD from a
+  machine, you may wish to use a LiveCD from a commercial distribution.
+  <!-- the Linux From Scratch LiveCD or --> a LiveCD from a
   commercial distribution. <!-- The LFS LiveCD works well as a host system,
   providing all the tools you need to successfully follow the instructions in
   this book. The LiveCD version is behind the current book, but is still useful
