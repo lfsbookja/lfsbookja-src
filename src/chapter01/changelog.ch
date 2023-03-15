@@ -44,6 +44,48 @@
 @z
 
 @x
+      <para>2023-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bc-6.4.0.  Fixes
+          <ulink url='&lfs-ticket-root;5217'>#5217</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-3.9.  Fixes
+          <ulink url='&lfs-ticket-root;5225'>#5225</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.2.6.  Fixes
+          <ulink url='&lfs-ticket-root;5226'>#5226</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20230306.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bc-6.4.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5217'>#5217</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-3.9 へのアップデート。
+          <ulink url='&lfs-ticket-root;5225'>#5225</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.2.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5226'>#5226</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20230306 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-03-04</para>
       <itemizedlist>
         <listitem revision='systemd'>
