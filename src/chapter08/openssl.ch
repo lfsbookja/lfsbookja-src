@@ -113,6 +113,26 @@
 @z
 
 @x
+        If <application>OpenSSH</application> is installed, it will be an
+        exception of the general rule above.  It contains an
+        over-restrictive OpenSSL version check, so both SSH client and SSH
+        server will refuse to start if OpenSSL
+        is updated with MAJOR version number unchanged but MINOR version
+        number changed.  You need to rebuild
+        <application>OpenSSH</application> after such an upgrade.
+        <emphasis role='bold'>If <application>OpenSSH</application> is being
+        used to access the system, you must rebuild and reinstall it
+        after upgrading OpenSSL to a new MINOR version number before logout
+        or you won't be able to login via SSH anymore.</emphasis>
+@y
+        <application>OpenSSH</application> をインストールしている場合は、上に示した規則とは異なる対応が必要です。
+        OpenSSL には必要以上に厳しいバージョンチェックが含まれているため、たとえ <application>OpenSSH</application> の MAJOR バージョンが変わっていなくても MINOR バージョンが変わっただけで、SSH クライアントも SSH サーバーも動作停止してしまいます。
+        そのような更新が発生した際には <application>OpenSSH</application> の再ビルドが必要となります。
+        <emphasis role='bold'><application>OpenSSH</application> を使って今現在、システムにアクセスしている場合、MINOR バージョンが新しくなった OpenSSL にアップグレードした後には、ログアウトする前に、<application>OpenSSH</application> を再ビルドして再インストールしてください。
+        そうしておかないと、SSH を通じたログインができなくなります。</emphasis>
+@z
+
+@x
         However, any running programs linked to those libraries need to be stopped
         and restarted. Read the related entries in
         <xref linkend='pkgmgmt-upgrade-issues'/> for details.

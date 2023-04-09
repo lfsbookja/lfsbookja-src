@@ -725,6 +725,41 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Flit-core dependency info -->
+@y
+<!-- Begin Flit-core dependency info -->
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Wheel</seg>
+@y
+          <seg>Wheel</seg>
+@z
+@x
+            <ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>
+            and
+            <ulink url='&pypi-home;/testpath'>testpath</ulink>
+@y
+            <ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>,
+            <ulink url='&pypi-home;/testpath'>testpath</ulink>
+@z
+
+%----------------------------------------------------------------------
 @x Gawk
           <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Make,
           MPFR, Patch, Readline, Sed, and Texinfo</seg>
@@ -2451,9 +2486,9 @@
 
 %----------------------------------------------------------------------
 @x Wheel
-          <seg>Python</seg>
+          <seg>Python and Flit-core</seg>
 @y
-          <seg>Python</seg>
+          <seg>Python, Flit-core</seg>
 @z
 @x
           <seg>Python</seg>
@@ -2571,9 +2606,9 @@
 
 %----------------------------------------------------------------------
 @x Zstd
-          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, and Xz</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz, and Zlib</seg>
 @y
-          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz, Zlib</seg>
 @z
 @x
           <seg>Glibc</seg>

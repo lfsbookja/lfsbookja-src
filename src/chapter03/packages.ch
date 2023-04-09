@@ -229,6 +229,14 @@
         <para>&Download;: <ulink url="&flex-url;"/></para>
 @z
 
+@x Flit-core
+        <para>Home page: <ulink url="&flit-core-home;"/></para>
+        <para>Download: <ulink url="&flit-core-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&flit-core-home;"/></para>
+        <para>&Download;: <ulink url="&flit-core-url;"/></para>
+@z
+
 @x gawk
         <para>Home page: <ulink url="&gawk-home;"/></para>
         <para>Download: <ulink url="&gawk-url;"/></para>

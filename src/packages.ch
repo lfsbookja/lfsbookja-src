@@ -52,6 +52,12 @@
 @z
 
 @x
+<!ENTITY flit-core-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY flit-core-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY gcc-fin-sbu "43 SBU (with tests)">
 @y
 <!ENTITY gcc-fin-sbu "43 SBU (テスト込み)">

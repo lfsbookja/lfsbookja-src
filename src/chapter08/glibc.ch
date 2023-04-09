@@ -862,10 +862,14 @@
 @z
 
 @x libanl
-          <para>An asynchronous name lookup library</para>
+          <para>Dummy library containing no functions.  Previously was the
+          asynchronous name lookup library, whose functions are now in
+          <filename class='libraryfile'>libc</filename></para>
 @y
           <para>
-          非同期の名前解決 (asynchronous name lookup) ライブラリ。
+          関数を何も含まないダミーライブラリ。
+          かつては非同期の名前解決 (asynchronous name lookup) ライブラリでしたが、今その関数は <filename
+          class='libraryfile'>libc</filename> に含まれます。
           </para>
 @z
 
@@ -985,12 +989,13 @@
 @x libpthread
           <para>Dummy library containing no functions. Previously contained
           functions providing most of the interfaces specified
-          by the POSIX.1b Realtime Extension, now the functions are in
-          <filename class="libraryfile">libc</filename></para>
+          by the POSIX.1c Threads Extensions and the semaphore interfaces
+          specified by the POSIX.1b Real-time Extensions, now the functions
+          are in <filename class="libraryfile">libc</filename></para>
 @y
           <para>
           関数を全く含まないダミーのライブラリ。
-          かつては POSIX.1b Realtime Extension によって規定されているインターフェースをほとんど含めた関数を提供していました。
+          かつては POSIX.1c Threads Extensions によって規定されているインターフェースと、POSIX.1b Real-time Extensions によって規定されるセマフォーインターフェースをほとんど含めた関数を提供していました。
           現在その関数は <filename class="libraryfile">libc</filename> に含まれるようになりました。
           </para>
 @z
@@ -1006,7 +1011,7 @@
 
 @x librt
           <para>Contains functions providing most of the interfaces specified
-          by the POSIX.1b Realtime Extension</para>
+          by the POSIX.1b Real-time Extensions</para>
 @y
           <para>
           POSIX.1b リアルタイム拡張 (Realtime Extension) にて既定されているインターフェースをほぼ網羅した関数を提供します。
