@@ -96,6 +96,21 @@
           </para>
 @z
 
+@x --disable-fixincludes
+          <para>By default, during the installation of GCC some system
+          headers would be <quote>fixed</quote> to be used with GCC.  This
+          is not necessary for a modern Linux system, and potentionally
+          harmful if a package is reinstalled after installing GCC.  This
+          switch prevents GCC from <quote>fixing</quote> the headers.</para>
+@y
+          <para>
+          デフォルトにおいて、GCC のインストール中に GCC が利用するシステムヘッダーが<quote>固定される</quote>場合があります。
+          これは最近の Linux システムにおいては不要なことです。
+          また GCC のインストール後に何かのパッケージをインストールすることを考えると、潜在的な危険を生み出すことになります。
+          本スイッチは GCC がヘッダーファイルを <quote>固定 (fix)</quote> しないようにします。
+          </para>
+@z
+
 @x --with-system-zlib
           <para>This switch tells GCC to link to the system installed copy of
           the Zlib library, rather than its own internal copy.</para>
@@ -209,24 +224,18 @@
 @z
 
 @x
-    <para>Eleven tests in the i386 test suite for the gcc compiler are known to FAIL.
-    It's because the test files do not account for the
-    <parameter>--enable-default-pie</parameter> option.</para>
+    <para>Two tests named <filename>pr104610.c</filename> and
+    <filename>pr69482-1.c</filename> are known to fail because the test
+    files does not account for the
+    <parameter>--enable-default-ssp</parameter> option.
+    <!-- https://gcc.gnu.org/PR106375 and https://gcc.gnu.org/PR109353 -->
+    Additionally, two tests named <filename>copy.cc</filename> and
+    <filename>pr56837.c</filename> are known to fail.</para>
 @y
     <para>
-    gcc においては、i386 テストスイートにおいて 11 個のテストが FAIL となります。
-    これはテストファイルが <parameter>--enable-default-pie</parameter> オプションを考慮していないためです。
-    </para>
-@z
-
-@x
-    <para>Four tests related to PR100400 may be reported
-    as both XPASS and FAIL when testing the g++ compiler; the test file
-    is not well written.</para>
-@y
-    <para>
-    g++ のテストにおいては、PR100400 に関連するテスト 4 つが XPASS および FAIL として出力されます。
-    この問題はテストファイルが適切に記述されていないために発生します。
+    <filename>pr104610.c</filename>、<filename>pr69482-1.c</filename> という 2 つのテストが失敗します。
+    これはテストファイルが <parameter>--enable-default-ssp</parameter> オプションのことを考慮していないためです。
+    さらに <filename>copy.cc</filename>、<filename>pr56837.c</filename> というテストも失敗します。
     </para>
 @z
 
