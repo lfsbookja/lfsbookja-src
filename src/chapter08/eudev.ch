@@ -105,6 +105,17 @@
 @z
 
 @x
+      The default udev rule installed by Eudev would allow all users to
+      access <filename class='devicefile'>/dev/kvm</filename>.  The editors
+      consider it dangerous.  Create a configuration file to override it:
+@y
+      Eudev によってインストールされるデフォルトの udev ルールは、あらゆるユーザーが <filename
+      class='devicefile'>/dev/kvm</filename> にアクセスできるようにします。
+      当編集者としてこれは危険なことと考えています。
+      そこで以下のように設定ファイルを生成してこれを上書き設定します。
+@z
+
+@x
     <para>Information about hardware devices is maintained in the
     <filename class="directory">/etc/udev/hwdb.d</filename> and
     <filename class="directory">/usr/lib/udev/hwdb.d</filename> directories.

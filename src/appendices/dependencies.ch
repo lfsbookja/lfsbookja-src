@@ -1214,14 +1214,19 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>
-            and
-            <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>
+            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
+            <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
+            <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
+            <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>, and
+            <ulink url="&blfs-book;basicnet/libtirpc.html">libtirpc</ulink>
           </seg>
 @y
           <seg>
             <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
-            <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>
+            <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
+            <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
+            <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>,
+            <ulink url="&blfs-book;basicnet/libtirpc.html">libtirpc</ulink>
           </seg>
 @z
 

@@ -82,14 +82,14 @@
 
 @x
         <seg>
-          libelf.so (symlink) and libelf-&elfutils-version;.so
+          libelf.so 
         </seg>
         <seg>
           /usr/include/elfutils
         </seg>
 @y
         <seg>
-          libelf.so (シンボリックリンク), libelf-&elfutils-version;.so
+          libelf.so 
         </seg>
         <seg>
           /usr/include/elfutils
