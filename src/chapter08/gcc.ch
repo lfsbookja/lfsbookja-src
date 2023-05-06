@@ -525,10 +525,10 @@
         and lto-dump</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a,
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libhwasan.{a,so}, libitm.{a,so},
         liblsan.{a,so}, liblto_plugin.so,
         libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a,
-        libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
+        libstdc++.{a,so}, libstdc++exp.a, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
         and libubsan.{a,so}</seg>
 
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, and
@@ -539,10 +539,10 @@
         lto-dump</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a,
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libhwasan.{a,so}, libitm.{a,so},
         liblsan.{a,so}, liblto_plugin.so,
         libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a,
-        libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
+        libstdc++.{a,so}, libstdc++exp.a, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
         libubsan.{a,so}</seg>
 
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc,
@@ -715,6 +715,14 @@
           </para>
 @z
 
+@x libhwasan
+          <para>The Hardware-assisted Address Sanitizer runtime library</para>
+@y
+          <para>
+          ハードウェアをアシストする Address Sanitizer ランタイムライブラリ。
+          </para>
+@z
+
 @x libitm
           <para>The GNU transactional memory library</para>
 @y
@@ -763,6 +771,14 @@
           <para>The standard C++ library</para>
 @y
           <para>標準 C++ ライブラリ</para>
+@z
+
+@x libstdc++exp
+          <para>Experimental C++ Contracts library</para>
+@y
+          <para>
+          試験的な C++ Contract ライブラリ。
+          </para>
 @z
 
 @x libstdc++fs
