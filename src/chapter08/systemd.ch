@@ -25,6 +25,15 @@
 @z
 
 @x
+      Remove several inappropriate uses of the <literal>pure</literal>
+      attribute that cause runtime issues when the package is built
+      with gcc-13 or later:
+@y
+      <literal>pure</literal> 属性というものの指定が不適切であるため、これを取り除きます。
+      このパッケージを GCC 13 およびそれ以降を使ってビルドした場合にランタイムエラーを引き起こすためです。
+@z
+
+@x
     <para>Remove two unneeded groups,
     <systemitem class="groupname">render</systemitem> and
     <systemitem class="groupname">sgx</systemitem>, from the default udev

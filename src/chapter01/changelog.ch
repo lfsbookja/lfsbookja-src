@@ -44,6 +44,56 @@
 @z
 
 @x
+      <para>2023-05-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to less-633.  Fixes
+          <ulink url='&lfs-ticket-root;5251'>#5251</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to linux-6.3.2.  Fixes
+          <ulink url='&lfs-ticket-root;5255'>#5255</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to xz-5.4.3.  Fixes
+          <ulink url='&lfs-ticket-root;5252'>#5252</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to gawk-5.2.2.  Fixes
+          <ulink url='&lfs-ticket-root;5253'>#5253</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Fix systemd runtime issue exploited by GCC 13.
+          Fixes <ulink url='&lfs-ticket-root;5254'>#5254</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-05-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - less-633 へのアップデート。
+          <ulink url='&lfs-ticket-root;5251'>#5251</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - linux-6.3.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5255'>#5255</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - xz-5.4.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5252'>#5252</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - gawk-5.2.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5253'>#5253</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - GCC 13 によって引き起こされる systemd の実行時の問題を修正。
+          <ulink url='&lfs-ticket-root;5254'>#5254</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-05-01</para>
       <itemizedlist>
         <listitem>
