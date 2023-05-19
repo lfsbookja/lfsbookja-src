@@ -27,6 +27,14 @@
 @z
 
 @x
+    <para>First, disable a problem test:</para>
+@y
+    <para>
+    はじめに問題のあるテストを無効にします。
+    </para>
+@z
+
+@x
     <para>Prepare Util-linux for compilation:</para>
 @y
     <para>&PreparePackage1;Util-linux&PreparePackage2;</para>

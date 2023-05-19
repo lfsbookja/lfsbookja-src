@@ -44,6 +44,64 @@
 @z
 
 @x
+      <para>2023-05-18</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Update to util-linux-2.39.  Fixes
+          <ulink url='&lfs-ticket-root;5259'>#5259</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.3.3. Fixes
+          <ulink url='&lfs-ticket-root;5261'>#5261</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.69. Fixes
+          <ulink url='&lfs-ticket-root;5258'>#5258</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-3.11. Fixes
+          <ulink url='&lfs-ticket-root;5256'>#5256</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flit_core-3.9.0. Fixes
+          <ulink url='&lfs-ticket-root;5257'>#5257</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to eudev-3.2.12. Fixes
+          <ulink url='&lfs-ticket-root;5260'>#5260</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-05-18</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - util-linux-2.39 へのアップデート。
+          <ulink url='&lfs-ticket-root;5259'>#5259</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.3.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5261'>#5261</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.69 へのアップデート。
+          <ulink url='&lfs-ticket-root;5258'>#5258</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-3.11 へのアップデート。
+          <ulink url='&lfs-ticket-root;5256'>#5256</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flit_core-3.9.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5257'>#5257</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - eudev-3.2.12 へのアップデート。
+          <ulink url='&lfs-ticket-root;5260'>#5260</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-05-13</para>
       <itemizedlist>
         <listitem>

@@ -221,25 +221,11 @@
 @z
 
 @x
-        <para>The <emphasis>rt/tst-cputimer{1,2,3}</emphasis> tests depend on
-        the host system kernel. Kernels 4.14.91&ndash;4.14.96,
-        4.19.13&ndash;4.19.18, and 4.20.0&ndash;4.20.5 are known to
-        cause these tests to fail.
-        </para>
+        <para>Additionally, some tests may fail with a relatively old CPU
+        model or host kernel version.</para>
 @y
         <para>
-        <emphasis>rt/tst-cputimer{1,2,3}</emphasis> のテストはホストシステムのカーネルに依存します。
-        カーネル 4.14.91&ndash;4.14.96, 4.19.13&ndash;4.19.18, 4.20.0&ndash;4.20.5 ではテストが失敗します。
-        </para>
-@z
-
-@x
-        <para>The math tests sometimes fail when running on
-        systems where the CPU is not a relatively new Intel or
-        AMD processor.</para>
-@y
-        <para>
-        math テストは、Intel プロセッサーや AMD プロセッサーが最新のものではない場合に失敗することがあります。
+        さらに CPU モデルやホストのカーネルバージョンが比較的古い場合に、テストがいくつか失敗します。
         </para>
 @z
 
