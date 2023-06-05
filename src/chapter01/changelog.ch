@@ -44,9 +44,93 @@
 @z
 
 @x
-      <para>2023-05-18</para>
+      <para>2023-06-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20230524.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - Update to MarkupSafe-2.1.3 (Python Module).
+          Fixes <ulink url='&lfs-ticket-root;5268'>#5268</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.3.5. Fixes
+          <ulink url='&lfs-ticket-root;5264'>#5264</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.1.1. Fixes
+          <ulink url='&lfs-ticket-root;5267'>#5267</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.1.1. Fixes
+          <ulink url='&lfs-ticket-root;5266'>#5266</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to diffutils-3.10. Fixes
+          <ulink url='&lfs-ticket-root;5262'>#5262</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-6.6.0. Fixes
+          <ulink url='&lfs-ticket-root;5263'>#5263</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-06-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20230524 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - MarkupSafe-2.1.3 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5268'>#5268</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.3.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5264'>#5264</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.1.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5267'>#5267</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.1.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5266'>#5266</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - diffutils-3.10 へのアップデート。
+          <ulink url='&lfs-ticket-root;5262'>#5262</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-6.6.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5263'>#5263</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-05-25</para>
       <itemizedlist>
         <listitem revision='sysv'>
+          <para>[ken] - Remove unneeded group sgx from eudev rules.  Fixes
+          <ulink url='&lfs-ticket-root;5265'>#5265</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-05-25</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[ken] - eudev ルールから不要な sgx グループを削除。
+          <ulink url='&lfs-ticket-root;5265'>#5265</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-05-18</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to util-linux-2.39.  Fixes
           <ulink url='&lfs-ticket-root;5259'>#5259</ulink>.</para>
         </listitem>
@@ -74,7 +158,7 @@
 @y
       <para>2023-05-18</para>
       <itemizedlist>
-        <listitem revision='sysv'>
+        <listitem>
           <para>[bdubbs] - util-linux-2.39 へのアップデート。
           <ulink url='&lfs-ticket-root;5259'>#5259</ulink> を Fix に。</para>
         </listitem>

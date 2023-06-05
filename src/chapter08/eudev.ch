@@ -33,6 +33,16 @@
 @z
 
 @x
+    <para>Remove an unneeded group
+    <systemitem class="groupname">sgx</systemitem>, from the default udev
+    rules:</para>
+@y
+    <para>
+    不要なグループ <systemitem class="groupname">sgx</systemitem> を、デフォルトの udev ルールから削除します。
+    </para>
+@z
+
+@x
     <para>Prepare Eudev for compilation:</para>
 @y
     <para>&PreparePackage1;Eudev&PreparePackage2;</para>

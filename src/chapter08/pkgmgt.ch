@@ -164,6 +164,34 @@
 @z
 
 @x
+      <listitem><para>If a package is (directly or indirectly) linked to both
+      the old and new names of a shared library (for example, the package
+      links to both <filename class='libraryfile'>libfoo.so.2</filename> and
+      <filename class='libraryfile'>libbar.so.1</filename>, while the latter
+      links to <filename class='libraryfile'>libfoo.so.3</filename>), the
+      package may malfunction because the different revisions of the shared
+      library present incompatible definitions for some symbol names. This can be
+      caused by recompiling some, but not all, of the packages linked to the
+      old shared library after the package providing the shared library is
+      upgraded.  To avoid the issue, users will need to rebuild every package
+      linked to a shared library with an updated revision (e.g. libfoo.so.2 to
+      libfoo.so.3) as soon as possible.
+      </para></listitem>
+@y
+      <listitem><para>
+      あるパッケージが（直接的か間接的に）一つの共有ライブラリにリンクしていて、しかも古いライブラリ名と新しいライブラリ名にリンクしているとします。
+      （たとえばそのパッケージが <filename
+      class='libraryfile'>libfoo.so.2</filename> と <filename
+      class='libraryfile'>libbar.so.1</filename> にリンクしていて、さらに後者のライブラリは <filename
+      class='libraryfile'>libfoo.so.3</filename> にリンクしているとします。）
+      その場合にはパッケージが誤動作する可能性があります。
+      なぜなら共有ライブラリのリビジョンが異なると、一部のシンボル名に対する定義の互換性が失われる可能性があるからです。
+      こういった状況が起こりうるのは、共有ライブラリを提供するパッケージがアップグレードされた際に、古い共有ライブラリ名にリンクしているパッケージを（すべてではなく）一部だけ再ビルドしたような場合です。
+      この問題を回避するため、共有ライブラリにリンクするパッケージをすべて、（たとえば libfoo.so.2 から libfoo.so.3 のように）アップグレードされたリビジョンを使ってできるだけ、早くに再ビルドすることです。
+      </para></listitem>
+@z
+
+@x
       <listitem> <para>If a package containing a shared library is updated,
       and the name of the library doesn't change, but the version number of the
       library <emphasis role="bold">file</emphasis> decreases (for example,
@@ -221,12 +249,12 @@
         If <application>OpenSSH</application> is being used to access
         the system and it is linked to the updated library, you must
         restart the <command>sshd</command> service, then logout, login again,
-        and rerun the preceding ps command to confirm that nothing is still using the
+        and run the preceding command again to confirm that nothing is still using the
         deleted libraries.
 @y
         <application>OpenSSH</application> を利用してシステムにアクセスしている場合であって、これがリンクするライブラリがアップデートされたとします。
         その場合は <command>sshd</command> サービスの再起動が必要です。
-        またシステムからはいったんログアウトしてログインし直し、その後に上に示した ps コマンドをもう一度実行して、削除されたライブラリを利用していないかどうかの確認を行ってください。
+        またシステムからはいったんログアウトしてログインし直し、前に示したコマンドをもう一度実行して、削除されたライブラリを利用していないかどうかの確認を行ってください。
 @z
 
 @x revision='systemd'
