@@ -44,6 +44,40 @@
 @z
 
 @x
+      <para>2023-06-09</para>
+      <itemizedlist>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - Update to dbus-1.14.8. Fixes 
+          <ulink url='&lfs-ticket-root;5271'>#5271</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.3.6. Fixes
+          <ulink url='&lfs-ticket-root;5269'>#5269</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.11.4. Fixes
+          <ulink url='&lfs-ticket-root;5271'>#5271</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-06-09</para>
+      <itemizedlist>
+        <listitem revision='systemd'>
+          <para>[bdubbs] - dbus-1.14.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5271'>#5271</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.3.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5269'>#5269</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.11.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5271'>#5271</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-06-03</para>
       <itemizedlist>
         <listitem>
@@ -51,8 +85,8 @@
           <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
         </listitem>
         <listitem revision='systemd'>
-          <para>[bdubbs] - Update to MarkupSafe-2.1.3 (Python Module).
-          Fixes <ulink url='&lfs-ticket-root;5268'>#5268</ulink>.</para>
+          <para>[bdubbs] - Update to MarkupSafe-2.1.3 (Python Module). Fixes
+          <ulink url='&lfs-ticket-root;5268'>#5268</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-6.3.5. Fixes

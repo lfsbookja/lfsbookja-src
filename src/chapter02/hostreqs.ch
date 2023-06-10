@@ -136,13 +136,18 @@
       <para>The reason for the kernel version requirement is that we specify
       that version when building <application>glibc</application> in
       <xref linkend="chapter-cross-tools"/> and
-      <xref linkend="chapter-building-system"/>,
-      at the recommendation of the developers.</para>
+      <xref linkend="chapter-building-system"/>, so the workarounds for
+      older kernels are not enabled and the compiled
+      <application>glibc</application> is slightly faster and smaller.
+      As at June 2023, &min-kernel; is the oldest kernel release still
+      supported by the kernel developers.</para>
 @y
       <para>
       カーネルのバージョンを指定しているのは、<xref
       linkend="chapter-cross-tools"/> と <xref
-      linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
+      linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからです。
+      こうすると古いカーネルに対する対応コードが無効となり、コンパイルした <application>glibc</application> が若干早く、また軽量になります。
+      2023 年 6 月時点、カーネル開発者によってサポートされる、もっとも古いカーネルバージョンは &min-kernel; です。
       </para>
 @z
 
