@@ -33,19 +33,17 @@
 @z
 
 @x
-  <para>As an alternative to installing a separate distribution on your
-  machine, you may wish to use <!-- the Linux From Scratch LiveCD or --> a LiveCD from a
-  commercial distribution. <!-- The LFS LiveCD works well as a host system,
-  providing all the tools you need to successfully follow the instructions in
-  this book. The LiveCD version is behind the current book, but is still useful
-  as a host for building the current book.  The <quote>-nosrc</quote> or
-  <quote>-min</quote> editions of the LiveCD are the most appropriate for
-  building a current LFS system.  For more information about the LFS LiveCD or
-  to download a copy, visit <ulink url="&livecd-root;"/>. --></para>
+  <note><para>There are many ways to install a Linux distribution and
+  the defaults are usually not optimal for building an LFS system.
+  For suggestions on setting up a commercial distribution see:
+  <ulink url="&lfs-root;hints/downloads/files/partitioning-for-lfs.txt"/>.</para></note>
 @y
-  <para>
-  コンピューター内にインストールされているディストリビューションを利用するのではなく、他に提供されている LiveCD を利用することもできます。
-  </para>
+  <note><para>
+  Linux ディストリビューションのインストールには、さまざまな方法がありますが、デフォルトインストールでは、普通は LFS システムの構築には適していません。
+  商用ディストリビューションにおける設定方法に関しては
+  <ulink url="&lfs-root;hints/downloads/files/partitioning-for-lfs.txt"/>
+  を参照してください。
+  </para></note>
 @z
 
 @x

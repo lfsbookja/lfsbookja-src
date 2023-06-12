@@ -58,13 +58,17 @@
 @z
 
 @x
-    <para>One test, 30-test_afalg.t, is known to fail on some kernel
-    configurations (depending on inconsistent values of
-    CONFIG_CRYPTO_USER_API* settings.) If it fails, it can safely be
-    ignored.</para>
+    <para>One test, 30-test_afalg.t, is known to fail if the host kernel
+    does not have <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> enabled,
+    or does not have any options providing an AES with CBC implementation
+    (for example, the combination of <option>CONFIG_CRYPTO_AES</option>
+    and <option>CONFIG_CRYPTO_CBC</option>, or
+    <option>CONFIG_CRYPTO_AES_NI_INTEL</option> if the CPU supports AES-NI)
+    enabled.  If it fails, it can safely be ignored.</para>
 @y
     <para>
-    カーネル設定によっては (CONFIG_CRYPTO_USER_API* の設定に一貫性がないと)、30-test_afalg.t というテストが 1 つだけ失敗することがわかっています。
+    30-test_afalg.t というテストが 1 つだけ失敗します。
+    それはカーネルオプションの <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> が有効でない場合、あるいは CBC が実装された AES 機能を提供するオプション（たとえば <option>CONFIG_CRYPTO_AES</option> と <option>CONFIG_CRYPTO_CBC</option> との組み合わせや、CPU が AES-NI をサポートする際の <option>CONFIG_CRYPTO_AES_NI_INTEL</option> など）が一つもない場合です。
     失敗しても、無視してかまいません。
     </para>
 @z

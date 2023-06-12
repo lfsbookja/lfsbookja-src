@@ -71,15 +71,10 @@
 @z
 
 @x
-    <para>This package does come with a test suite, but it requires several
-    packages that are not included in LFS. Instructions for running the
-    test suite can be found in the BLFS book at
-    <ulink url="&blfs-book;general/dbus.html"/>.</para>
+    <para>To test the results, issue:</para>
 @y
     <para>
-    本パッケージにはテストスイートがあります。
-    ただし実行するためには LFS には含まれていないパッケージをいくつか必要とします。
-    テストの実行方法については <ulink url="&blfs-book;general/dbus.html"/> に示されています。
+    ビルド結果をテストする場合は以下を実行します。
     </para>
 @z
 
@@ -119,7 +114,7 @@
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
         dbus-run-session, dbus-send, dbus-test-tool,
         dbus-update-activation-environment, and dbus-uuidgen</seg>
-        <seg>libdbus-1.{a,so}</seg>
+        <seg>libdbus-1.so</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
         and /var/lib/dbus</seg>
@@ -127,7 +122,7 @@
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
         dbus-run-session, dbus-send, dbus-test-tool,
         dbus-update-activation-environment, dbus-uuidgen</seg>
-        <seg>libdbus-1.{a,so}</seg>
+        <seg>libdbus-1.so</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
         /var/lib/dbus</seg>

@@ -221,12 +221,12 @@
         If <application>OpenSSH</application> is being used to access
         the system and it is linked to the updated library, you must
         restart the <command>sshd</command> service, then logout, login again,
-        and rerun the preceding ps command to confirm that nothing is still using the
+        and run the preceding command again to confirm that nothing is still using the
         deleted libraries.
 @y
         <application>OpenSSH</application> を利用してシステムにアクセスしている場合であって、これがリンクするライブラリがアップデートされたとします。
         その場合は <command>sshd</command> サービスの再起動が必要です。
-        またシステムからはいったんログアウトしてログインし直し、その後に上に示した ps コマンドをもう一度実行して、削除されたライブラリを利用していないかどうかの確認を行ってください。
+        またシステムからはいったんログアウトしてログインし直し、前に示したコマンドをもう一度実行して、削除されたライブラリを利用していないかどうかの確認を行ってください。
 @z
 
 @x revision='systemd'

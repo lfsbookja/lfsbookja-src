@@ -25,14 +25,6 @@
 @z
 
 @x
-    <para>First, fix a security issue in systemd-coredump:</para>
-@y
-    <para>
-    はじめに systemd-coredump におけるセキュリティ問題を修正します。
-    </para>
-@z
-
-@x
     <para>Remove two unneeded groups,
     <systemitem class="groupname">render</systemitem> and
     <systemitem class="groupname">sgx</systemitem>, from the default udev
@@ -252,7 +244,7 @@
         machinectl, networkctl, oomctl, portablectl, poweroff (symlink to
         systemctl), reboot (symlink to systemctl), resolvconf (symlink to
         resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
-        (symlink to systemctl), systemctl, systemd-analyze,
+        (symlink to systemctl), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-creds, systemd-delta, systemd-detect-virt,
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
@@ -281,7 +273,7 @@
         machinectl, networkctl, oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
         reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
         resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
-        (systemctl へのシンボリックリンク), systemctl, systemd-analyze,
+        (systemctl へのシンボリックリンク), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-creds, systemd-delta, systemd-detect-virt,
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
@@ -294,7 +286,7 @@
         telinit (systemctl へのシンボリックリンク), timedatectl, udevadm</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2,
-        libsystemd.so, libsystemd-shared-&systemd-version;.so (/usr/lib/systemd ディレクトリ内),
+        libsystemd.so, libsystemd-shared-&systemd-version;.so (in /usr/lib/systemd),
         libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,

@@ -27,6 +27,7 @@ CHANGE_FILES = \
 	file.ch           \
 	findutils.ch      \
 	flex.ch           \
+	flit-core.ch      \
 	gawk.ch           \
 	gcc.ch            \
 	gdbm.ch           \

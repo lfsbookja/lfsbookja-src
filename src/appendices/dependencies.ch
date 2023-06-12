@@ -338,9 +338,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>File</seg>
+          <seg>File and Libelf</seg>
 @y
-          <seg>File</seg>
+          <seg>File, Libelf</seg>
 @z
 @x
           <seg>None</seg>
@@ -1179,14 +1179,19 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>
-            and
-            <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>
+            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
+            <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
+            <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
+            <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>, and
+            <ulink url="&blfs-book;basicnet/libtirpc.html">libtirpc</ulink>
           </seg>
 @y
           <seg>
             <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
-            <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>
+            <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
+            <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
+            <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>,
+            <ulink url="&blfs-book;basicnet/libtirpc.html">libtirpc</ulink>
           </seg>
 @z
 
@@ -1368,14 +1373,16 @@
 <!-- Begin Libelf dependency info -->
 @z
 @x
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, and Make</seg>
+          <seg>Bash, Binutils, Bzip2, Coreutils, GCC, Glibc, Make, Xz,
+          Zlib, and Zstd</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+          <seg>Bash, Binutils, Bzip2, Coreutils, GCC, Glibc, Make, Xz,
+          Zlib, Zstd</seg>
 @z
 @x
-          <seg>Glibc and Zlib</seg>
+          <seg>Bzip2, Glibc, Xz, Zlib, and Zstd</seg>
 @y
-          <seg>Glibc, Zlib</seg>
+          <seg>Bzip2, Glibc, Xz, Zlib, Zstd</seg>
 @z
 @x
           <seg>None</seg>
@@ -2449,9 +2456,9 @@
 
 %----------------------------------------------------------------------
 @x Wheel
-          <seg>Python</seg>
+          <seg>Python and Flit-core</seg>
 @y
-          <seg>Python</seg>
+          <seg>Python, Flit-core</seg>
 @z
 @x
           <seg>Python</seg>
@@ -2527,11 +2534,11 @@
 @z
 @x
           <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
-          <phrase revision="sysv">and </phrase>Man-DB<phrase
+          Libelf, <phrase revision="sysv">and </phrase>Man-DB<phrase
           revision="systemd">, and Systemd</phrase></seg>
 @y
           <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
-          Man-DB<phrase
+          Libelf, Man-DB<phrase
           revision="systemd">, Systemd</phrase></seg>
 @z
 @x
@@ -2557,9 +2564,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>File, Kmod, Perl, and Util-linux</seg>
+          <seg>File, Kmod, Libelf, Perl, and Util-linux</seg>
 @y
-          <seg>File, Kmod, Perl, Util-linux</seg>
+          <seg>File, Kmod, Libelf, Perl, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -2569,9 +2576,9 @@
 
 %----------------------------------------------------------------------
 @x Zstd
-          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, and Xz</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz, and Zlib</seg>
 @y
-          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz, Zlib</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2584,9 +2591,11 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC <phrase revision='systemd'>and Systemd</phrase></seg>
+          <seg><phrase revision='sysv'>GCC and Libelf</phrase>
+          <phrase revision='systemd'>GCC, Libelf, and Systemd</phrase></seg>
 @y
-          <seg>GCC <phrase revision='systemd'>, Systemd</phrase></seg>
+          <seg><phrase revision='sysv'>GCC, Libelf</phrase>
+          <phrase revision='systemd'>GCC, Libelf, Systemd</phrase></seg>
 @z
 @x
           <seg>

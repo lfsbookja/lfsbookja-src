@@ -47,14 +47,6 @@
 @z
 
 @x
-   <para>Now, fix a problem with chmod return values:</para>
-@y
-   <para>
-   chmod の返り値に関する問題を以下により修正します。
-   </para>
-@z
-
-@x
     <para>Now prepare Coreutils for compilation:</para>
 @y
     <para>&PreparePackage1;Coreutils&PreparePackage2;</para>

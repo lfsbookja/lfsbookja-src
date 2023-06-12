@@ -105,23 +105,6 @@
 @z
 
 @x
-    <para>For general information on kernel configuration see <ulink
-    url="&hints-root;kernel-configuration.txt"/>.  BLFS has some information
-    regarding particular kernel configuration requirements of packages outside
-    of LFS at <ulink
-    url="&blfs-book;longindex.html#kernel-config-index"/>.  Additional
-    information about configuring and building the kernel can be found at
-    <ulink url="http://www.kroah.com/lkn/"/> </para>
-@y
-    <para>
-    カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
-    BLFS では LFS が取り扱わない各種パッケージに対して、必要となるカーネル設定項目を説明しています。
-    <ulink url="&blfs-book;longindex.html#kernel-config-index"/> を参照してください。
-    さらに詳しくカーネルの構築や設定を説明している <ulink url="http://www.kroah.com/lkn/"/> もあります。
-    </para>
-@z
-
-@x
       <para>A good starting place for setting up the kernel configuration is to
       run <command>make defconfig</command>. This will set the base
       configuration to a good state that takes your current system architecture
@@ -167,20 +150,17 @@
 @z
 
 @x
-    <para revision="sysv">There are several other options that may be desired
+    <para>There are several other options that may be desired
     depending on the requirements for the system. For a list of options needed
     for BLFS packages, see the <ulink
     url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS
-    Index of Kernel Settings</ulink>
-    (&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index).</para>
+    Index of Kernel Settings</ulink>.</para>
 @y
-    <para revision="sysv">
+    <para>
     システムに特定の機能性が必要になれば、それだけ多くのオプションが必要となります。
     例えば BLFS パッケージにて必要となるオプションについては <ulink 
     url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS 
-    Index of Kernel Settings</ulink> 
-    (&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index)
-    を参照してください。
+    Index of Kernel Settings</ulink> を参照してください。
     </para>
 @z
 
@@ -188,12 +168,14 @@
       <para>If your host hardware is using UEFI and you wish to boot the
       LFS system with it, you should adjust some kernel configuration
       following <ulink url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
-      the BLFS page</ulink>.</para>
+      the BLFS page</ulink> <emphasis role='bold'>even if you'll use the
+      UEFI bootloader from the host distro</emphasis>.</para>
 @y
       <para>
       ホストが UEFI を利用していて、これを使って LFS システムのブートを行いたい場合は、<ulink
       url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
       BLFS ページ</ulink> に従って、カーネル設定を調整する必要があります。
+      <emphasis role='bold'>これは、ホストディストリビューションにて UEFI ブートローダーを利用している場合であっても同様です。</emphasis>
       </para>
 @z
 
