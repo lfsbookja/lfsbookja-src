@@ -241,12 +241,11 @@
 @z
 
 @x
-    <para>Fix the Makefile to skip an unneeded sanity check
-    that fails in the LFS partial environment:
-    </para>
+    <para>Fix the Makefile to skip an outdated sanity check
+    that fails with a modern Glibc configuration:</para>
 @y
     <para>
-    Makefile を修正して、不要な健全性チェックを無効にします。
+    Makefile を修正して、古くなった健全性チェックをスキップするようにします。
     これは、この段階での LFS 環境では失敗するためです。
     </para>
 @z
