@@ -155,7 +155,7 @@
       a wget-list as described below.</para>
 @y
       <para>
-      <command>wget</command> と以下に示す wget-list ファイルを利用すれば、すべてのファイルをダウンロードすることができます。
+      <command>wget</command> と以下に示す &wget-list; ファイルを利用すれば、すべてのファイルをダウンロードすることができます。
       </para>
 @z
 
@@ -166,7 +166,7 @@
 @y
   <para>
   パッケージとパッチのダウンロードを行うため <ulink
-  url="../&wget-list;">wget-list</ulink> を利用することにします。
+  url="../&wget-list;">&wget-list;</ulink> を利用することにします。
   これは以下のように <command>wget</command> コマンドの入力引数に指定します。
   </para>
 @z
@@ -180,7 +180,7 @@
 <title>日本語訳情報</title>
 <para>
 オリジナルの LFS ブックでは、<ulink
-url="../&wget-list;">wget-list</ulink> 内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
+url="../&wget-list;">&wget-list;</ulink> 内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
 一方、日本国内にて作業する方であれば、例えば GNU のパッケージ類は国内に数多くのミラーサイトが存在するため、そちらから取得するのが適切でしょう。
 これはネットワークリソースを利用する際のマナーとも言えるものです。
 堅苦しい話をするつもりはありません。
@@ -189,10 +189,10 @@ url="../&wget-list;">wget-list</ulink> 内に含まれる、各種パッケー�
 </para>
 <para>
 国内から入手可能なものは国内から入手することを目指し、訳者は以下の手順により <ulink
-url="../&wget-list;">wget-list</ulink> を書き換えて利用しています。
+url="../&wget-list;">&wget-list;</ulink> を書き換えて利用しています。
 一例として国内には理化学研究所のサイト (ftp.riken.jp) があります。
 そこでは GNU パッケージ類がミラー提供されています。
-そこで <ulink url="../&wget-list;">wget-list</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。
+そこで <ulink url="../&wget-list;">&wget-list;</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。
 また同じ方法で Linux カーネル、<application>Perl</application>、<application>Vim</application> の入手先も変更します。
 </para>
 
@@ -215,7 +215,7 @@ rm wl.sed</userinput></screen>
 <para>
 注意する点として各パッケージが更新されたばかりの日付では、国内ミラーサイトへの同期、反映が間に合わず、ソース類が存在しないことが考えられます。
 その場合にはパッケージ取得に失敗してしまいます。
-そこで wget-list と wget-list.orig を順に利用し、かつ <application>wget</application> コマンドにて -N オプションを使って (取得済のものはスキップするようにして) 以下のコマンドを実行すれば、確実にすべてのパッケージを入手することができます。
+そこで &wget-list; と &wget-list;.orig を順に利用し、かつ <application>wget</application> コマンドにて -N オプションを使って (取得済のものはスキップするようにして) 以下のコマンドを実行すれば、確実にすべてのパッケージを入手することができます。
 </para>
 <screen role="nodump"><userinput remap="sed-wgetlist">wget -N --input-file=&wget-list; --continue --directory-prefix=$LFS/sources
 wget -N --input-file=&wget-list;.orig --continue --directory-prefix=$LFS/sources</userinput></screen>
@@ -231,7 +231,7 @@ wget -N --input-file=&wget-list;.orig --continue --directory-prefix=$LFS/sources
     <filename>md5sums</filename> file mentioned below is specific to the
     current book.
 @y
-    上で示した <filename>wget-list</filename> ファイルは、本ブックの sysV および systemd の両バージョンにおけるパッケージを取り出しているものです。
+    上で示した <filename>&wget-list;</filename> ファイルは、本ブックの sysV および systemd の両バージョンにおけるパッケージを取り出しているものです。
     現バージョンのブックにおいて、小さいながらも不要なパッケージが 5 つは含まれます。
     同じく上で示した <filename>md5sums</filename> ファイルは、各ブックごとに固有のものを示しています。
 @z

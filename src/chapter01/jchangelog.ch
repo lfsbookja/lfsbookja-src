@@ -26,8 +26,8 @@
     LFS ブック日本語版の変更履歴を示すために設けています。
    </para>
    <para>
-   「r11.2-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
-   また 6851fc8b2 などのリンクは、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値 (その参照ページ) を意味します。
+   「r11.3-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
+   また e06bdbe2b などのリンクは、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値 (その参照ページ) を意味します。
    </para>
   </note>
 
@@ -49,6 +49,193 @@
     </listitem>
 
 -->
+   <listitem>
+      <para>2023-06-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-111 (<ulink url="&lfs-changeset;a3bd46894">a3bd46894</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-06-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-110 (<ulink url="&lfs-changeset;7e7600de9">7e7600de9</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-06-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-106 (<ulink url="&lfs-changeset;5e7593e6f">5e7593e6f</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-95 (<ulink url="&lfs-changeset;0a7df4c5d">0a7df4c5d</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-05-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-90 (<ulink url="&lfs-changeset;cd8339aa0">cd8339aa0</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-05-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-81 (<ulink url="&lfs-changeset;805125670">805125670</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-05-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-77 (<ulink url="&lfs-changeset;f6bfa6a08">f6bfa6a08</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-62 (<ulink url="&lfs-changeset;5a98711aa">5a98711aa</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-04-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-55 (<ulink url="&lfs-changeset;e9ab2b3af">e9ab2b3af</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-38 (<ulink url="&lfs-changeset;d76520819">d76520819</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-03-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-33 (<ulink url="&lfs-changeset;ad09ba40a">ad09ba40a</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-29 (<ulink url="&lfs-changeset;c97cd380c">c97cd380c</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-03-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-28 (<ulink url="&lfs-changeset;b4829e671">b4829e671</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-03-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-27 (<ulink url="&lfs-changeset;5fa9f630c">5fa9f630c</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-03-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-24 (<ulink url="&lfs-changeset;57ccb5b97">57ccb5b97</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-03-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-15 (<ulink url="&lfs-changeset;835e40ce1">835e40ce1</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-03-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r11.3-13 (<ulink url="&lfs-changeset;271c85653">271c85653</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
    <listitem>
       <para>2023-03-02</para>
       <itemizedlist>

@@ -62,6 +62,7 @@ pdf-fixups.sh: $(BOOKdir)/pdf-fixups.sh $(srcdir)/pdf-fixups.ch
 	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 git-version.sh: $(BOOKdir)/git-version.sh
 	sed -e "s|version\.ent|$(abs_builddir)/version\.ent|g" \
+            -e "/^day=/s/ | sed 's\/\^0\/\/'//" \
             -e "/^full_date/afull_date=\"\$$year/\$$month_digit/\$$day\"" $^ > $@
 conditional.ent: $(BOOKdir)/conditional.ent
 	cp -p $^ $@

@@ -136,13 +136,18 @@
       <para>The reason for the kernel version requirement is that we specify
       that version when building <application>glibc</application> in
       <xref linkend="chapter-cross-tools"/> and
-      <xref linkend="chapter-building-system"/>,
-      at the recommendation of the developers.</para>
+      <xref linkend="chapter-building-system"/>, so the workarounds for
+      older kernels are not enabled and the compiled
+      <application>glibc</application> is slightly faster and smaller.
+      As at June 2023, &min-kernel; is the oldest kernel release still
+      supported by the kernel developers.</para>
 @y
       <para>
       カーネルのバージョンを指定しているのは、<xref
       linkend="chapter-cross-tools"/> と <xref
-      linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
+      linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからです。
+      こうすると古いカーネルに対する対応コードが無効となり、コンパイルした <application>glibc</application> が若干早く、また軽量になります。
+      2023 年 6 月時点、カーネル開発者によってサポートされる、もっとも古いカーネルバージョンは &min-kernel; です。
       </para>
 @z
 
@@ -163,6 +168,20 @@
       提供していれば、それをインストールします。
       もしそれがない場合や、あったとしてもそれをインストールしたくない場合、カーネルをご自身でコンパイルする必要があります。
       カーネルのコンパイルと (ホストシステムが GRUB を利用しているとして) ブートローダーの設定方法については <xref linkend="chapter-bootable"/> を参照してください。
+      </para>
+@z
+
+@x
+      <para>We require the host kernel to support UNIX 98 pseudo terminal
+      (PTY).  It should be enabled on all desktop or server distros shipping
+      Linux &min-kernel; or a newer kernel. If you are building a custom
+      host kernel, ensure <option>CONFIG_UNIX98_PTYS</option> is set to
+      <literal>y</literal> in the kernel configuration.</para>
+@y
+      <para>
+      本書では、ホストカーネルが UNIX 98 疑似端末（PTY）をサポートしていることが必要です。
+      これは Linux &min-kernel; またはそれ以降のカーネルを利用するデスクトップ向け、あるいはサーバー向けのディストリビューションにとって利用できなければなりません。
+      独自のホストカーネルを利用している場合には、カーネル設定において <option>CONFIG_UNIX98_PTYS</option> が <literal>y</literal> であることを確認してください。
       </para>
 @z
 
@@ -201,22 +220,4 @@
   <para>
   ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のコマンドを実行して確認することができます。
   </para>
-@z
-
-@x
-  <para>Also check for some library consistency:</para>
-@y
-  <para>
-  またライブラリの整合性をいくつかチェックします。
-  </para>
-@z
-
-@x
-<para>The files identified by this script should be all present
-or all absent, but not only one or two present.</para>
-@y
-<para>
-上のスクリプトによって識別するファイルは、すべて存在しているか、またはすべて存在しないものであるはずです。
-１つだけ、あるいは２つだけしか存在しないなら不適切です。
-</para>
 @z

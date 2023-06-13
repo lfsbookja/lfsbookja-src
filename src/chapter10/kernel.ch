@@ -34,6 +34,52 @@
 @z
 
 @x
+        Building the linux kernel for the first time is one of the most
+        challenging tasks in LFS.  Getting it right depends on the specific
+        hardware for the target system and your specific needs. There are
+        almost 12,000 configuration items that are available for the kernel
+        although only about a third of them are needed for most computers. The
+        LFS editors recommend that users not familiar with this process follow
+        the procedures below fairly closely.  The objective is to get an
+        initial system to a point where you can log in at the command line when
+        you reboot later in <xref linkend="ch-finish-reboot"/>.  At his point
+        optimization and customization is not a goal.
+@y
+        Linux カーネルの構築を初めて行うなら、LFS の中でも、かなりハードルの高い作業になります。
+        これをうまく成功させることができるかどうかは、対象システム向けの特定ハードウェアの存在や、どのように作り上げたいかの要求に依存します。
+        カーネルに設定できる項目は、ほぼ 12,000 項目もあります。
+        ただしたいていのコンピューターにおいて、必要となる項目はその 3 分の 1 程度です。
+        LFS 編集者としては、この作業手順に不慣れなユーザーであれば、以降に示す手順をほぼそっくり従って頂くことをお勧めしています。
+        ここでの目的は、後に <xref linkend="ch-finish-reboot"/> を経てシステムを再起動した際に、この新システムに向けて、コマンドラインからログインできるようにすることです。
+        この段階では、最適化やカスタマイズを目指すものではありあせん。
+@z
+
+@x
+        For general information on kernel configuration see <ulink
+        url="&hints-root;kernel-configuration.txt"/>.  Additional information
+        about configuring and building the kernel can be found at <ulink
+        url="&anduin-sources;/kernel-nutshell/"/>. 
+        These references are a bit
+        dated, but still give a reasonable overview of the process.
+@y
+        カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
+        さらに詳しくカーネルの構築や設定を説明している <ulink url="&anduin-sources;/kernel-nutshell/"/> もあります。
+        この情報を少々古いものですが、理にかなった作業過程をおおまかに示しています。
+@z
+
+@x
+        If all else fails, you can ask for help on the <ulink
+        url="https://www.linuxfromscratch.org/mail.html">lfs-support</ulink>
+        mailing list.  Note that subscribing is required in order for the list
+        to avoid spam.
+@y
+        それでもうまくいかなかった場合は、<ulink
+        url="https://www.linuxfromscratch.org/mail.html">lfs-support</ulink>
+        メーリングリストに問い合わせる方法があります。
+        スパムメールを避ける目的から、このメーリングリストは登録が必要です。
+@z
+
+@x
     <para>Prepare for compilation by running the following command:</para>
 @y
     <para>
@@ -105,23 +151,6 @@
 @z
 
 @x
-    <para>For general information on kernel configuration see <ulink
-    url="&hints-root;kernel-configuration.txt"/>.  BLFS has some information
-    regarding particular kernel configuration requirements of packages outside
-    of LFS at <ulink
-    url="&blfs-book;longindex.html#kernel-config-index"/>.  Additional
-    information about configuring and building the kernel can be found at
-    <ulink url="http://www.kroah.com/lkn/"/> </para>
-@y
-    <para>
-    カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
-    BLFS では LFS が取り扱わない各種パッケージに対して、必要となるカーネル設定項目を説明しています。
-    <ulink url="&blfs-book;longindex.html#kernel-config-index"/> を参照してください。
-    さらに詳しくカーネルの構築や設定を説明している <ulink url="http://www.kroah.com/lkn/"/> もあります。
-    </para>
-@z
-
-@x
       <para>A good starting place for setting up the kernel configuration is to
       run <command>make defconfig</command>. This will set the base
       configuration to a good state that takes your current system architecture
@@ -159,6 +188,28 @@
 @z
 
 @x
+      <para>If you are building a 32-bit system running on a hardware
+      with RAM more than 4GB, adjust the configuration so the kernel will
+      be able to use up to 64GB physical RAM:</para>
+@y
+      <para>
+      32 ビットシステムの構築中であって、RAM が 4GB 以上ある場合は、64 GB までの物理 RAM が利用できるようにカーネルを調整してください。
+      </para>
+@z
+
+@x
+      <para>If the partition for the LFS system is in a NVME SSD (i. e. the
+      device node for the partition is <filename>/dev/nvme*</filename>
+      instead of <filename>/dev/sd*</filename>), enable NVME support or
+      the LFS system won't boot:</para>
+@y
+      <para>
+      LFS システムを配置するパーティションが NVME SSD（つまりデバイスノードが <filename>/dev/sd*</filename> でなく <filename>/dev/nvme*</filename>）である場合は、NVME サポートを有効にしてください。
+      これを行っていないと、LFS システムが起動しません。
+      </para>
+@z
+
+@x
       <para>While "The IPv6 Protocol" is not strictly
       required, it is highly recommended by the systemd developers.</para>
 @y
@@ -167,20 +218,17 @@
 @z
 
 @x
-    <para revision="sysv">There are several other options that may be desired
+    <para>There are several other options that may be desired
     depending on the requirements for the system. For a list of options needed
     for BLFS packages, see the <ulink
     url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS
-    Index of Kernel Settings</ulink>
-    (&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index).</para>
+    Index of Kernel Settings</ulink>.</para>
 @y
-    <para revision="sysv">
+    <para>
     システムに特定の機能性が必要になれば、それだけ多くのオプションが必要となります。
     例えば BLFS パッケージにて必要となるオプションについては <ulink 
     url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS 
-    Index of Kernel Settings</ulink> 
-    (&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index)
-    を参照してください。
+    Index of Kernel Settings</ulink> を参照してください。
     </para>
 @z
 
@@ -188,12 +236,14 @@
       <para>If your host hardware is using UEFI and you wish to boot the
       LFS system with it, you should adjust some kernel configuration
       following <ulink url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
-      the BLFS page</ulink>.</para>
+      the BLFS page</ulink> <emphasis role='bold'>even if you'll use the
+      UEFI bootloader from the host distro</emphasis>.</para>
 @y
       <para>
       ホストが UEFI を利用していて、これを使って LFS システムのブートを行いたい場合は、<ulink
       url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
       BLFS ページ</ulink> に従って、カーネル設定を調整する必要があります。
+      <emphasis role='bold'>これは、ホストディストリビューションにて UEFI ブートローダーを利用している場合であっても同様です。</emphasis>
       </para>
 @z
 
@@ -230,6 +280,17 @@
           <para>
           これは、 カーネルビルドにあたって <command>cpio</command> を必要とします。
           <command>cpio</command> は LFS ではインストールしません。
+          </para>
+@z
+
+@x Configure standard kernel features (expert users)
+          <para>This will make some options show up in the configuration
+          interface but changing those options may be dangerous.  Do not use
+          this unless you know what you are doing.</para>
+@y
+          <para>
+          これは設定項目上にいくつかのオプションを表示するものですが、そのオプションを変更することは非常に危険なことです。
+          何を行っているのかがわかっていない場合には、触れないようにしてください。
           </para>
 @z
 

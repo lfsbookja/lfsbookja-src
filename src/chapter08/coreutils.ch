@@ -47,11 +47,12 @@
 @z
 
 @x
-   <para>Now, fix a problem with chmod return values:</para>
+    <para>Fix a bug in checksum utilities causing failed checks not
+    reported correctly:</para>
 @y
-   <para>
-   chmod の返り値に関する問題を以下により修正します。
-   </para>
+    <para>
+    チェックサムユーティリティーのチェックが正しい報告をあげてこないバグがあるため、これを修正します。
+    </para>
 @z
 
 @x

@@ -96,6 +96,21 @@
           </para>
 @z
 
+@x --disable-fixincludes
+          <para>By default, during the installation of GCC some system
+          headers would be <quote>fixed</quote> to be used with GCC.  This
+          is not necessary for a modern Linux system, and potentially 
+          harmful if a package is reinstalled after installing GCC.  This
+          switch prevents GCC from <quote>fixing</quote> the headers.</para>
+@y
+          <para>
+          デフォルトにおいて、GCC のインストール中に GCC が利用するシステムヘッダーが<quote>固定される</quote>場合があります。
+          これは最近の Linux システムにおいては不要なことです。
+          また GCC のインストール後に何かのパッケージをインストールすることを考えると、潜在的な危険を生み出すことになります。
+          本スイッチは GCC がヘッダーファイルを <quote>固定 (fix)</quote> しないようにします。
+          </para>
+@z
+
 @x --with-system-zlib
           <para>This switch tells GCC to link to the system installed copy of
           the Zlib library, rather than its own internal copy.</para>
@@ -209,24 +224,23 @@
 @z
 
 @x
-    <para>Eleven tests in the i386 test suite for the gcc compiler are known to FAIL.
-    It's because the test files do not account for the
-    <parameter>--enable-default-pie</parameter> option.</para>
+    <para>Two tests named <filename>pr104610.c</filename> and
+    <filename>pr69482-1.c</filename> are known to fail because the test
+    files does not account for the
+    <parameter>--enable-default-ssp</parameter> option.
+    <!-- https://gcc.gnu.org/PR106375 and https://gcc.gnu.org/PR109353 -->
+    Two tests named <filename>copy.cc</filename> and
+    <filename>pr56837.c</filename> are known to fail.
+    <!-- https://gcc.gnu.org/PR107855#c6 -->
+    Additionally, several tests in the
+    <filename class='directory'>vect</filename> directory are known to fail
+    if the hardware does not support AVX.</para>
 @y
     <para>
-    gcc においては、i386 テストスイートにおいて 11 個のテストが FAIL となります。
-    これはテストファイルが <parameter>--enable-default-pie</parameter> オプションを考慮していないためです。
-    </para>
-@z
-
-@x
-    <para>Four tests related to PR100400 may be reported
-    as both XPASS and FAIL when testing the g++ compiler; the test file
-    is not well written.</para>
-@y
-    <para>
-    g++ のテストにおいては、PR100400 に関連するテスト 4 つが XPASS および FAIL として出力されます。
-    この問題はテストファイルが適切に記述されていないために発生します。
+    <filename>pr104610.c</filename>、<filename>pr69482-1.c</filename> という 2 つのテストが失敗します。
+    これはテストファイルが <parameter>--enable-default-ssp</parameter> オプションのことを考慮していないためです。
+    <filename>copy.cc</filename>、<filename>pr56837.c</filename> というテストも失敗します。
+    さらに <filename class='directory'>vect</filename> ディレクトリ内にあるテストが、AVX に対するハードウェアサポートがないために、いくつか失敗します。
     </para>
 @z
 
@@ -516,10 +530,10 @@
         and lto-dump</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a,
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libhwasan.{a,so}, libitm.{a,so},
         liblsan.{a,so}, liblto_plugin.so,
         libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a,
-        libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
+        libstdc++.{a,so}, libstdc++exp.a, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
         and libubsan.{a,so}</seg>
 
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc, and
@@ -530,10 +544,10 @@
         lto-dump</seg>
 
         <seg>libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a,
-        libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so},
+        libgcc_s.so, libgcov.a, libgomp.{a,so}, libhwasan.{a,so}, libitm.{a,so},
         liblsan.{a,so}, liblto_plugin.so,
         libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a,
-        libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
+        libstdc++.{a,so}, libstdc++exp.a, libstdc++fs.a, libsupc++.a, libtsan.{a,so},
         libubsan.{a,so}</seg>
 
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc,
@@ -706,6 +720,14 @@
           </para>
 @z
 
+@x libhwasan
+          <para>The Hardware-assisted Address Sanitizer runtime library</para>
+@y
+          <para>
+          ハードウェアをアシストする Address Sanitizer ランタイムライブラリ。
+          </para>
+@z
+
 @x libitm
           <para>The GNU transactional memory library</para>
 @y
@@ -754,6 +776,14 @@
           <para>The standard C++ library</para>
 @y
           <para>標準 C++ ライブラリ</para>
+@z
+
+@x libstdc++exp
+          <para>Experimental C++ Contracts library</para>
+@y
+          <para>
+          試験的な C++ Contract ライブラリ。
+          </para>
 @z
 
 @x libstdc++fs

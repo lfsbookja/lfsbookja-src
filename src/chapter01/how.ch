@@ -43,9 +43,7 @@
   building a current LFS system.  For more information about the LFS LiveCD or
   to download a copy, visit <ulink url="&livecd-root;"/>. --></para>
 @y
-  <para>
   コンピューター内にインストールされているディストリビューションを利用するのではなく、他に提供されている LiveCD を利用することもできます。
-  </para>
 @z
 
 @x

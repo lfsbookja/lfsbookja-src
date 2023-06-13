@@ -221,25 +221,11 @@
 @z
 
 @x
-        <para>The <emphasis>rt/tst-cputimer{1,2,3}</emphasis> tests depend on
-        the host system kernel. Kernels 4.14.91&ndash;4.14.96,
-        4.19.13&ndash;4.19.18, and 4.20.0&ndash;4.20.5 are known to
-        cause these tests to fail.
-        </para>
+        <para>Additionally, some tests may fail with a relatively old CPU
+        model or host kernel version.</para>
 @y
         <para>
-        <emphasis>rt/tst-cputimer{1,2,3}</emphasis> のテストはホストシステムのカーネルに依存します。
-        カーネル 4.14.91&ndash;4.14.96, 4.19.13&ndash;4.19.18, 4.20.0&ndash;4.20.5 ではテストが失敗します。
-        </para>
-@z
-
-@x
-        <para>The math tests sometimes fail when running on
-        systems where the CPU is not a relatively new Intel or
-        AMD processor.</para>
-@y
-        <para>
-        math テストは、Intel プロセッサーや AMD プロセッサーが最新のものではない場合に失敗することがあります。
+        さらに CPU モデルやホストのカーネルバージョンが比較的古い場合に、テストがいくつか失敗します。
         </para>
 @z
 
@@ -255,12 +241,11 @@
 @z
 
 @x
-    <para>Fix the Makefile to skip an unneeded sanity check
-    that fails in the LFS partial environment:
-    </para>
+    <para>Fix the Makefile to skip an outdated sanity check
+    that fails with a modern Glibc configuration:</para>
 @y
     <para>
-    Makefile を修正して、不要な健全性チェックを無効にします。
+    Makefile を修正して、古くなった健全性チェックをスキップするようにします。
     これは、この段階での LFS 環境では失敗するためです。
     </para>
 @z
@@ -862,10 +847,14 @@
 @z
 
 @x libanl
-          <para>An asynchronous name lookup library</para>
+          <para>Dummy library containing no functions.  Previously was the
+          asynchronous name lookup library, whose functions are now in
+          <filename class='libraryfile'>libc</filename></para>
 @y
           <para>
-          非同期の名前解決 (asynchronous name lookup) ライブラリ。
+          関数を何も含まないダミーライブラリ。
+          かつては非同期の名前解決 (asynchronous name lookup) ライブラリでしたが、今その関数は <filename
+          class='libraryfile'>libc</filename> に含まれます。
           </para>
 @z
 
@@ -985,12 +974,13 @@
 @x libpthread
           <para>Dummy library containing no functions. Previously contained
           functions providing most of the interfaces specified
-          by the POSIX.1b Realtime Extension, now the functions are in
-          <filename class="libraryfile">libc</filename></para>
+          by the POSIX.1c Threads Extensions and the semaphore interfaces
+          specified by the POSIX.1b Real-time Extensions, now the functions
+          are in <filename class="libraryfile">libc</filename></para>
 @y
           <para>
           関数を全く含まないダミーのライブラリ。
-          かつては POSIX.1b Realtime Extension によって規定されているインターフェースをほとんど含めた関数を提供していました。
+          かつては POSIX.1c Threads Extensions によって規定されているインターフェースと、POSIX.1b Real-time Extensions によって規定されるセマフォーインターフェースをほとんど含めた関数を提供していました。
           現在その関数は <filename class="libraryfile">libc</filename> に含まれるようになりました。
           </para>
 @z
@@ -1006,7 +996,7 @@
 
 @x librt
           <para>Contains functions providing most of the interfaces specified
-          by the POSIX.1b Realtime Extension</para>
+          by the POSIX.1b Real-time Extensions</para>
 @y
           <para>
           POSIX.1b リアルタイム拡張 (Realtime Extension) にて既定されているインターフェースをほぼ網羅した関数を提供します。

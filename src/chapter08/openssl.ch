@@ -58,13 +58,17 @@
 @z
 
 @x
-    <para>One test, 30-test_afalg.t, is known to fail on some kernel
-    configurations (depending on inconsistent values of
-    CONFIG_CRYPTO_USER_API* settings.) If it fails, it can safely be
-    ignored.</para>
+    <para>One test, 30-test_afalg.t, is known to fail if the host kernel
+    does not have <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> enabled,
+    or does not have any options providing an AES with CBC implementation
+    (for example, the combination of <option>CONFIG_CRYPTO_AES</option>
+    and <option>CONFIG_CRYPTO_CBC</option>, or
+    <option>CONFIG_CRYPTO_AES_NI_INTEL</option> if the CPU supports AES-NI)
+    enabled.  If it fails, it can safely be ignored.</para>
 @y
     <para>
-    カーネル設定によっては (CONFIG_CRYPTO_USER_API* の設定に一貫性がないと)、30-test_afalg.t というテストが 1 つだけ失敗することがわかっています。
+    30-test_afalg.t というテストが 1 つだけ失敗します。
+    それはカーネルオプションの <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> が有効でない場合、あるいは CBC が実装された AES 機能を提供するオプション（たとえば <option>CONFIG_CRYPTO_AES</option> と <option>CONFIG_CRYPTO_CBC</option> との組み合わせや、CPU が AES-NI をサポートする際の <option>CONFIG_CRYPTO_AES_NI_INTEL</option> など）が一つもない場合です。
     失敗しても、無視してかまいません。
     </para>
 @z
@@ -110,6 +114,26 @@
         API/API の互換性は、同一の MAJOR バージョン番号では保証されます。
         本パッケージは <filename class="libraryfile">libcrypto.so</filename> または
         <filename class="libraryfile">libssl.so</filename> へのリンクを行っていますが、LFS では共有ライブラリをインストールするだけなので、<emphasis role="bold">MAJOR バージョン番号が同一のアップグレードである限り</emphasis> は、パッケージを再コンパイルする必要はありません。
+@z
+
+@x
+        If <application>OpenSSH</application> is installed, it will be an
+        exception of the general rule above.  It contains an
+        over-restrictive OpenSSL version check, so both SSH client and SSH
+        server will refuse to start if OpenSSL
+        is updated with MAJOR version number unchanged but MINOR version
+        number changed.  You need to rebuild
+        <application>OpenSSH</application> after such an upgrade.
+        <emphasis role='bold'>If <application>OpenSSH</application> is being
+        used to access the system, you must rebuild and reinstall it
+        after upgrading OpenSSL to a new MINOR version number before logout
+        or you won't be able to login via SSH anymore.</emphasis>
+@y
+        <application>OpenSSH</application> をインストールしている場合は、上に示した規則とは異なる対応が必要です。
+        OpenSSL には必要以上に厳しいバージョンチェックが含まれているため、たとえ <application>OpenSSH</application> の MAJOR バージョンが変わっていなくても MINOR バージョンが変わっただけで、SSH クライアントも SSH サーバーも動作停止してしまいます。
+        そのような更新が発生した際には <application>OpenSSH</application> の再ビルドが必要となります。
+        <emphasis role='bold'><application>OpenSSH</application> を使って今現在、システムにアクセスしている場合、MINOR バージョンが新しくなった OpenSSL にアップグレードした後には、ログアウトする前に、<application>OpenSSH</application> を再ビルドして再インストールしてください。
+        そうしておかないと、SSH を通じたログインができなくなります。</emphasis>
 @z
 
 @x

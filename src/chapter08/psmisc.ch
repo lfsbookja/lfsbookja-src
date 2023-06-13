@@ -37,9 +37,11 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To run the test suite, run:</para>
 @y
-    <para>&NotExistTestsuite;</para>
+    <para>
+    テストスイートを実行する場合は以下を実行します。
+    </para>
 @z
 
 @x

@@ -25,11 +25,12 @@
 @z
 
 @x
-    <para>First, fix a security issue in systemd-coredump:</para>
+      Remove several inappropriate uses of the <literal>pure</literal>
+      attribute that cause runtime issues when the package is built
+      with gcc-13 or later:
 @y
-    <para>
-    はじめに systemd-coredump におけるセキュリティ問題を修正します。
-    </para>
+      <literal>pure</literal> 属性というものの指定が不適切であるため、これを取り除きます。
+      このパッケージを GCC 13 およびそれ以降を使ってビルドした場合にランタイムエラーを引き起こすためです。
 @z
 
 @x
@@ -171,6 +172,19 @@
           </para>
 @z
 
+@x -Ddev-kvm-mode=0660
+          <para>The default udev rule would allow all users to access
+          <filename class='devicefile'>/dev/kvm</filename>.  The editors
+          consider it dangerous.  This option overrides it.</para>
+@y
+          <para>
+          デフォルトの udev ルールは、あらゆるユーザーが <filename
+          class='devicefile'>/dev/kvm</filename> にアクセスできるようにします。
+          当編集者としてこれは危険なことと考えています。
+          本オプションはその設定を上書きします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -252,7 +266,7 @@
         machinectl, networkctl, oomctl, portablectl, poweroff (symlink to
         systemctl), reboot (symlink to systemctl), resolvconf (symlink to
         resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
-        (symlink to systemctl), systemctl, systemd-analyze,
+        (symlink to systemctl), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-creds, systemd-delta, systemd-detect-virt,
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
@@ -281,7 +295,7 @@
         machinectl, networkctl, oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
         reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
         resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
-        (systemctl へのシンボリックリンク), systemctl, systemd-analyze,
+        (systemctl へのシンボリックリンク), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-creds, systemd-delta, systemd-detect-virt,
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
@@ -498,6 +512,15 @@
 @y
           <para>
           Systemd システムとサービスマネージャーの状態について確認し制御します。
+          </para>
+@z
+
+@x systemd-ac-power
+          <para>Reports whether the system is connected to an external
+          power source.</para>
+@y
+          <para>
+          システムが外部電源につながっているかどうかを報告します。
           </para>
 @z
 

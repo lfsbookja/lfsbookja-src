@@ -172,7 +172,7 @@
 @z
 
 @x gperl
-          <para>Preprocesor for groff, allowing the insertion of perl code
+          <para>Preprocessor for groff, allowing the insertion of perl code
           into groff files</para>
 @y
           <para>
@@ -181,7 +181,7 @@
 @z
 
 @x gpinyin
-          <para>Preprocesor for groff, allowing the insertion of Pinyin
+          <para>Preprocessor for groff, allowing the insertion of Pinyin
           (Mandarin Chinese spelled with the Roman alphabet) into groff files.</para>
 @y
           <para>
