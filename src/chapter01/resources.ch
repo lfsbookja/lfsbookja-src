@@ -24,8 +24,8 @@
 @x
     <para>If during the building of the LFS system you encounter any
     errors, have any questions, or think there is a typo in the book,
-    please start by consulting the list of Frequently Asked Questions (FAQ),
-    located at <ulink url="&faq-root;"/>.</para>
+    please start by consulting the Frequently Asked Questions (FAQ)
+    that is located at <ulink url="&faq-root;"/>.</para>
 @y
     <para>
     LFS システムの構築作業中にエラー発生したり、疑問を抱いたり、あるいは本書の誤記を発見した場合、まず手始めに <ulink
@@ -42,15 +42,14 @@
 @z
 
 @x
-    <para>The <systemitem class='domainname'>linuxfromscratch.org</systemitem>
-    server hosts a number of mailing
+    <para>The <uri>linuxfromscratch.org</uri> server hosts a number of mailing
     lists used for the development of the LFS project. These lists include the
-    main development and support lists, among others. If you cannot find an
-    answer to your problem on the FAQ page, the next step would be to search
-    the mailing lists at <ulink url="&lfs-root;search.html"/>.</para>
+    main development and support lists, among others. If the FAQ does not solve
+    the problem you are having, the next step would be to search the mailing
+    lists at <ulink url="&lfs-root;search.html"/>.</para>
 @y
     <para>
-    <systemitem class='domainname'>linuxfromscratch.org</systemitem> サーバーでは、LFS 開発プロジェクトのために多くのメーリングリストを立ち上げています。
+    <uri>linuxfromscratch.org</uri> サーバーでは、LFS 開発プロジェクトのために多くのメーリングリストを立ち上げています。
     このメーリングリストは主となる開発用とは別に、サポート用のものもあります。
     FAQ ページに答えが見つからなかった場合には、次の手としてメーリングリストを検索する以下のサイトを参照してください。
     <ulink url="&lfs-root;search.html"/>
@@ -74,17 +73,16 @@
 @z
 
 @x
-    <para>Several members of the LFS community offer assistance via Internet
-    Relay Chat (IRC). Before using this support, please make sure your
+    <para>Several members of the LFS community offer assistance on Internet
+    Relay Chat (IRC). Before using this support, please make sure that your
     question is not already answered in the LFS FAQ or the mailing list
-    archives. You can find the IRC network at
-    <systemitem class='domainname'>irc.libera.chat</systemitem>.
+    archives. You can find the IRC network at <uri>irc.libera.chat</uri>.
     The support channel is named #lfs-support.</para>
 @y
     <para>
     LFS コミュニティのメンバーの中には、インターネットリレーチャット (Internet Relay Chat; IRC) によるサポートを行っている者もいます。
     ここに対して質問を挙げる場合は、FAQ やメーリングリストに同様の質問や答えがないかどうかを必ず確認してください。
-    IRC は <systemitem class='domainname'>irc.libera.chat</systemitem> において、チャネル名 #lfs-support により提供しています。
+    IRC は <uri>irc.libera.chat</uri> において、チャネル名 #lfs-support により提供しています。
     </para>
 @z
 

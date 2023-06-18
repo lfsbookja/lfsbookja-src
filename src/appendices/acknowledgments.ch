@@ -136,21 +136,11 @@
 @x
       <para><ulink url="mailto:lizardo@linuxfromscratch.org">Anderson
       Lizardo</ulink> &lt;lizardo@linuxfromscratch.org&gt; &ndash;
-      Portuguese LFS translation project historical</para>
+      Portuguese LFS translation project</para>
 @y
       <para><ulink url="mailto:lizardo@linuxfromscratch.org">Anderson
       Lizardo</ulink> &lt;lizardo@linuxfromscratch.org&gt; &ndash;
-      ポルトガルの LFS 翻訳プロジェクト; 以前</para>
-@z
-
-@x
-      <para><ulink url="mailto:jafesp@gmail.com">Jamenson
-      Espindula</ulink> &lt;jafesp@gmail.com&gt; &ndash;
-      Portuguese LFS translation project 2022-present</para>
-@y
-      <para><ulink url="mailto:jafesp@gmail.com">Jamenson
-      Espindula</ulink> &lt;jafesp@gmail.com&gt; &ndash;
-      ポルトガルの LFS 翻訳プロジェクト; 2022年から現在</para>
+      ポルトガルの LFS 翻訳プロジェクト</para>
 @z
 
 @x
