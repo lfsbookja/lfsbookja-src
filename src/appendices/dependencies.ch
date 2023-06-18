@@ -1299,10 +1299,10 @@
 @z
 @x
           <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-          Gzip, Make, OpenSSL, Pkg-config, Sed, Xz, and Zlib</seg>
+          Gzip, Make, OpenSSL, Pkgconf, Sed, Xz, and Zlib</seg>
 @y
           <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-          Gzip, Make, OpenSSL, Pkg-config, Sed, Xz, Zlib</seg>
+          Gzip, Make, OpenSSL, Pkgconf, Sed, Xz, Zlib</seg>
 @z
 @x
           <seg>Glibc, Xz, and Zlib</seg>
@@ -2004,7 +2004,12 @@
 @z
 
 %----------------------------------------------------------------------
-@x Pkg-config
+@x
+<!-- Begin Pkg-config dependency info -->
+@y
+<!-- Begin Pkg-config dependency info -->
+@z
+@x
           <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
           and Sed</seg>
 @y
@@ -2027,9 +2032,9 @@
           <seg>Kmod</seg>
 @z
 @x
-            <ulink url="&blfs-book;general/glib2.html">Glib2</ulink>
+          <seg>None</seg>
 @y
-            <ulink url="&blfs-book;general/glib2.html">Glib2</ulink>
+          <seg>なし</seg>
 @z
 
 %----------------------------------------------------------------------

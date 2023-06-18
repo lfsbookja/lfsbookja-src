@@ -66,7 +66,7 @@ CHANGE_FILES = \
 	openssl.ch        \
 	patch.ch          \
 	perl.ch           \
-	pkgconfig.ch      \
+	pkgconf.ch        \
 	pkgmgt.ch         \
 	procps.ch         \
 	psmisc.ch         \

@@ -44,6 +44,40 @@
 @z
 
 @x
+      <para>2023-06-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to linux-6.3.8.  Fixes
+          <ulink url='&lfs-ticket-root;5272'>#5272</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to kbd-2.6.0.  Fixes
+          <ulink url='&lfs-ticket-root;5273'>#5273</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[rahul] - Changed from pkg-config to pkgconf 1.9.5.  Fixes
+          <ulink url='&lfs-ticket-root;5274'>#5274</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-06-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - linux-6.3.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5272'>#5272</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - kbd-2.6.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5273'>#5273</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[rahul] - pkg-config から pkgconf 1.9.5 への変更。
+          <ulink url='&lfs-ticket-root;5274'>#5274</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-06-09</para>
       <itemizedlist>
         <listitem revision='systemd'>

@@ -588,12 +588,12 @@
         <para>&Download;: <ulink url="&perl-url;"/></para>
 @z
 
-@x pkgconfig
-        <para>Home page: <ulink url="&pkgconfig-home;"/></para>
-        <para>Download: <ulink url="&pkgconfig-url;"/></para>
+@x Pkgconf
+        <para>Home page: <ulink url="&pkgconf-home;"/></para>
+        <para>Download: <ulink url="&pkgconf-url;"/></para>
 @y
-        <para>&Homepage;: <ulink url="&pkgconfig-home;"/></para>
-        <para>&Download;: <ulink url="&pkgconfig-url;"/></para>
+        <para>&Homepage;: <ulink url="&pkgconf-home;"/></para>
+        <para>&Download;: <ulink url="&pkgconf-url;"/></para>
 @z
 
 @x procps-ng

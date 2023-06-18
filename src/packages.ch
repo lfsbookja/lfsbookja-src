@@ -160,6 +160,12 @@
 @z
 
 @x
+<!ENTITY pkgconf-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY pkgconf-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY psmisc-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY psmisc-fin-sbu "0.1 SBU 以下">
