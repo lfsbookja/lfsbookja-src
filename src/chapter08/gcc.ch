@@ -306,11 +306,14 @@
 
 @x
     <para>Many packages use the name <command>cc</command> to call the C
-    compiler. To satisfy those packages, create a symlink:</para>
+    compiler.  We've already created <command>cc</command> as a symlink in
+    <xref linkend='ch-tools-gcc-pass2'/>, create its man page as a symlink
+    as well:</para>
 @y
     <para>
     各種パッケージは C コンパイラーとして <command>cc</command> を呼び出しているものが数多くあります。
-    これに対応するため、以下のシンボリックリンクを作成します。
+    <xref linkend='ch-tools-gcc-pass2'/> においては、シンボリックリンクとして <command>cc</command> をすでに生成しています。
+    同様にしてその man ページについてもシンボリックリンクとして生成することにします。
     </para>
 @z
 

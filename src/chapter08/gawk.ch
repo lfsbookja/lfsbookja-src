@@ -54,6 +54,17 @@
 @z
 
 @x
+    <para>The installation process already created <command>awk</command>
+    as a symlink to <command>gawk</command>, create its man page as a
+    symlink as well:</para>
+@y
+    <para>
+    インストール処理においては、<command>awk</command> が <command>gawk</command> のシンボリックリンクとして、すでに生成されています。
+    同様にしてその man ページについてもシンボリックリンクとして生成することにします。
+    </para>
+@z
+
+@x
       <title>The meaning of the overridden make variable:</title>
 @y
       <title>上書きされる make 変数の意味</title>

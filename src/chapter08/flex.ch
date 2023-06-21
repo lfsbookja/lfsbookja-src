@@ -32,20 +32,6 @@
     </para>
 @z
 
-%@x
-%    <para>The build procedure assumes the <application>help2man</application>
-%    program is available to create a man page from the executable --help option.
-%    This is not present, so we use an environment variable to skip this process.
-%    Now, prepare Flex for compilation:</para>
-%@y
-%    <para>
-%    実行モジュールに --help オプションを指定した場合には man ページを生成するプログラム <application>help2man</application> が存在していることが前提となっています。
-%    しかし現時点においてこのプログラムは存在していません。
-%    そこで環境変数を用いて man ページの生成工程を回避することにします。
-%    以下により Flex をコンパイルするための準備をします。
-%    </para>
-%@z
-
 @x
     <para>Prepare Flex for compilation:</para>
 @y
@@ -77,12 +63,14 @@
     try to run its predecessor, <command>lex</command>. To support those
     programs, create a symbolic link named <filename>lex</filename> that
     runs <filename>flex</filename> in <command>lex</command> emulation
-    mode:</para>
+    mode, and also create the man page of <command>lex</command> as a
+    symlink:</para>
 @y
     <para>
     プログラムの中には <command>flex</command> コマンドが用いられず、その前身である <command>lex</command> コマンドを実行しようとするものがあります。
     そういったプログラムへ対応するために <filename>lex</filename> という名のシンボリックリンクを生成します。
     このリンクが <filename>lex</filename> のエミュレーションモードとして <filename>flex</filename> を呼び出します。
+    なお <command>lex</command> に対する man ページもシンボリックリンクとして生成します。
     </para>
 @z
 

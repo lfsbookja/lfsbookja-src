@@ -683,12 +683,19 @@
         </para>
 @z
 
-@x Pkg-config
-        <para>This package provides a program that returns meta-data about an
-        installed library or package.</para>
+@x Pkgconf
+        <para>This package contains a program which helps to configure
+        compiler and linker flags for development libraries.  The program
+        can be used as a drop-in replacement of
+        <command>pkg-config</command>, which is needed by the building
+        system of many packages.  It's maintained more actively and slightly
+        faster than the original Pkg-config package.</para>
 @y
         <para>
-        このパッケージは、既にインストールされたライブラリやパッケージのメタデータを取得するプログラムを提供します。
+        このパッケージは、開発用ライブラリに対するコンパイラーフラグやリンカーフラグを設定するためのプログラムを提供します。
+        このプログラムは、<command>pkg-config</command> の単純な置き換えプログラムとして利用することができます。
+        そもそもこのプログラムは、数多くのパッケージによるシステム構築に必要となるものです。
+        元々の Pkg-config パッケージに比べて活発に開発されており、処理速度も若干早くなっています。
         </para>
 @z
 

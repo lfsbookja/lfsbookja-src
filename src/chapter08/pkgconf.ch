@@ -46,11 +46,11 @@
 @z
 
 @x
-    <para>To maintain compatibility with the original Pkg-config create a
-    symlink:</para>
+    <para>To maintain compatibility with the original Pkg-config create two
+    symlinks:</para>
 @y
     <para>
-    元の Pkg-config との互換性を維持するため、以下のシンボリックリンクを生成します。
+    元の Pkg-config との互換性を維持するため、以下の 2 つのシンボリックリンクを生成します。
     </para>
 @z
 

@@ -370,9 +370,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+            <ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink>
 @y
-          <seg>なし</seg>
+            <ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink>
 @z
 
 %----------------------------------------------------------------------
@@ -423,10 +423,10 @@
 @z
 @x
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Make, Sed, Systemd, and Util-linux</seg>
+          Make, Pkgconf, Sed, Systemd, and Util-linux</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Make, Sed, Systemd, Util-linux</seg>
+          Make, Pkgconf, Sed, Systemd, Util-linux</seg>
 @z
 @x
           <seg>Glibc and Systemd</seg>
@@ -510,10 +510,14 @@
 %----------------------------------------------------------------------
 @x E2fsprogs
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Gzip, Make, Sed, Texinfo, and Util-linux</seg>
+          Gzip, Make, Pkgconf, Sed,
+          <phrase revision='systemd'>Systemd, </phrase>Texinfo, and
+          Util-linux</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-          Gzip, Make, Sed, Texinfo, Util-linux</seg>
+          Gzip, Make, Pkgconf, Sed,
+          <phrase revision='systemd'>Systemd, </phrase>Texinfo,
+          Util-linux</seg>
 @z
 @x
           <seg>Glibc and Util-linux</seg>
@@ -815,11 +819,13 @@
 @z
 @x
           <seg>
-             <ulink url="https://gcc.gnu.org/wiki/GNAT">GNAT</ulink>
+             <ulink url="https://www.gdcproject.org/">GDC</ulink>,
+             <ulink url="https://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
              and
              <ulink url="https://repo.or.cz/isl.git">ISL</ulink>
 @y
           <seg>
+             <ulink url="https://www.gdcproject.org/">GDC</ulink>,
              <ulink url="https://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
              <ulink url="https://repo.or.cz/isl.git">ISL</ulink>
 @z
@@ -1192,10 +1198,10 @@
 %----------------------------------------------------------------------
 @x IProute2
          <seg>Bash, Bison, Coreutils, Flex, GCC, Glibc, Make, Libcap, Libelf,
-         Linux API Headers, and Zlib</seg>
+         Linux API Headers, Pkgconf, and Zlib</seg>
 @y
          <seg>Bash, Bison, Coreutils, Flex, GCC, Glibc, Make, Libcap, Libelf,
-         Linux API ヘッダー, Zlib</seg>
+         Linux API ヘッダー, Pkgconf, Zlib</seg>
 @z
 @x
           <seg>Bash, Coreutils, Glibc, Libcap, Libelf, and Zlib</seg>
@@ -1216,7 +1222,7 @@
           <seg>
             <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
             <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
-            <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
+            <ulink url="&github;/libbpf/libbpf">libbpf</ulink>,
             <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>, and
             <ulink url="&blfs-book;basicnet/libtirpc.html">libtirpc</ulink>
           </seg>
@@ -1224,7 +1230,7 @@
           <seg>
             <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
             <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
-            <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
+            <ulink url="&github;/libbpf/libbpf">libbpf</ulink>,
             <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>,
             <ulink url="&blfs-book;basicnet/libtirpc.html">libtirpc</ulink>
           </seg>
@@ -1473,9 +1479,9 @@
           <seg>Glibc</seg>
 @z
 @x
-          <seg>Check</seg>
+          <seg>Check and Pkgconf</seg>
 @y
-          <seg>Check</seg>
+          <seg>Check, Pkgconf</seg>
 @z
 @x
           <seg>Man-DB</seg>
@@ -1650,10 +1656,12 @@
 %----------------------------------------------------------------------
 @x Man-DB
           <seg>Bash, Binutils, Bzip2, Coreutils, Flex, GCC, GDBM, Gettext,
-          Glibc, Grep, Groff, Gzip, Less, Libpipeline, Make, Sed, and Xz</seg>
+          Glibc, Grep, Groff, Gzip, Less, Libpipeline, Make, Pkgconf, Sed,
+          <phrase revision='systemd'>Systemd, </phrase>and Xz</seg>
 @y
           <seg>Bash, Binutils, Bzip2, Coreutils, Flex, GCC, GDBM, Gettext,
-          Glibc, Grep, Groff, Gzip, Less, Libpipeline, Make, Sed, Xz</seg>
+          Glibc, Grep, Groff, Gzip, Less, Libpipeline, Make, Pkgconf, Sed,
+          <phrase revision='systemd'>Systemd, </phrase> Xz</seg>
 @z
 @x
           <seg>Bash, GDBM, Groff, Glibc, Gzip, Less, Libpipeline, and Zlib</seg>
@@ -2027,9 +2035,13 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>Kmod</seg>
+          <seg><phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
+          IProute2, Kmod, Man-DB, Procps-ng, Python,
+		  <phrase revision='systemd'>Systemd, </phrase>and Util-linux</seg>
 @y
-          <seg>Kmod</seg>
+          <seg><phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
+          IProute2, Kmod, Man-DB, Procps-ng, Python,
+		  <phrase revision='systemd'>Systemd, </phrase>Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -2039,9 +2051,12 @@
 
 %----------------------------------------------------------------------
 @x Procps-ng
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, and Ncurses</seg>
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses,
+          <phrase revision='sysv'>and </phrase>Pkgconf<phrase
+          revision='systemd'>, and Systemd</phrase></seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses</seg>
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses,
+          Pkgconf<phrase revision='systemd'>, Systemd</phrase></seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2054,9 +2069,19 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>
+            <phrase revision='systemd'>None</phrase>
+            <phrase revision='sysv'>
+              <ulink url='&blfs-book;general/elogind.xml'>elogind</ulink>
+            </phrase>
+          </seg>
 @y
-          <seg>なし</seg>
+          <seg>
+            <phrase revision='systemd'>なし</phrase>
+            <phrase revision='sysv'>
+              <ulink url='&blfs-book;general/elogind.xml'>elogind</ulink>
+            </phrase>
+          </seg>
 @z
 
 %----------------------------------------------------------------------
@@ -2096,10 +2121,12 @@
 @z
 @x
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
-          Grep, Libffi, Make, Ncurses, OpenSSL, Sed, and Util-linux</seg>
+          Grep, Libffi, Make, Ncurses, OpenSSL, Pkgconf, Sed, and
+          Util-linux</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
-          Grep, Libffi, Make, Ncurses, OpenSSL, Sed, Util-linux</seg>
+          Grep, Libffi, Make, Ncurses, OpenSSL, Pkgconf, Sed,
+          Util-linux</seg>
 @z
 @x
           <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Ncurses, OpenSSL, and
@@ -2258,12 +2285,12 @@
 %----------------------------------------------------------------------
 @x Systemd
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
-         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Meson, Sed, Util-linux,
-         and Zstd</seg>
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Meson, Pkgconf, Sed,
+         Util-linux, and Zstd</seg>
 @y
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
-         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Meson, Sed, Util-linux,
-         Zstd</seg>
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Meson, Pkgconf, Sed,
+         Util-linux, Zstd</seg>
 @z
 @x
           <seg>Acl, Attr, Glibc, Libcap, and Util-linux</seg>
@@ -2276,9 +2303,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>D-Bus, E2fsprogs, Man-DB, Procps-ng, and Util-linux</seg>
 @y
-          <seg>なし</seg>
+          <seg>D-Bus, E2fsprogs, Man-DB, Procps-ng, Util-linux</seg>
 @z
 % リンク部分、大半省略
 @x
@@ -2409,13 +2436,13 @@
 %----------------------------------------------------------------------
 @x Util-linux
           <seg>Bash, Binutils, Coreutils, Diffutils,
-          <phrase revision="sysv">Eudev, </phrase>Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed,
+          <phrase revision="sysv">Eudev, </phrase>File, Findutils, Gawk,
+          GCC, Gettext, Glibc, Grep, Make, Ncurses, Pkgconf, Sed,
           <phrase revision="systemd">Systemd, </phrase>and Zlib</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils,
-          <phrase revision="sysv">Eudev, </phrase>Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Make, Ncurses, Sed,
+          <phrase revision="sysv">Eudev, </phrase>File, Findutils, Gawk,
+          GCC, Gettext, Glibc, Grep, Make, Ncurses, Pkgconf, Sed,
           <phrase revision="systemd">Systemd,</phrase> Zlib</seg>
 @z
 @x
@@ -2437,19 +2464,27 @@
           <seg>
             <ulink
               url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
+            <ulink url="&github;/openSUSE/libeconf">libeconf</ulink>,
+            <ulink url="https://pagure.io/libuser/">libuser</ulink>,
+            <ulink url="&github;/altlinux/libutempter">libutempter</ulink>,
             <ulink
-              url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>
-            and <ulink
-              url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>
+              url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>,
+            <ulink
+              url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>, and
+            <ulink url="&blfs-book;general/slang.html">slang</ulink>
           </seg>
 @y
           <seg>
             <ulink
               url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
+            <ulink url="&github;/openSUSE/libeconf">libeconf</ulink>,
+            <ulink url="https://pagure.io/libuser/">libuser</ulink>,
+            <ulink url="&github;/altlinux/libutempter">libutempter</ulink>,
             <ulink
               url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>,
             <ulink
-              url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>
+              url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>,
+            <ulink url="&blfs-book;general/slang.html">slang</ulink>
           </seg>
 @z
 
