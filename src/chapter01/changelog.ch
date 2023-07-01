@@ -44,6 +44,64 @@
 @z
 
 @x
+      <para>2023-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20230615.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.0.1671.  Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.39.1.  Addresses
+          <ulink url='&lfs-ticket-root;5278'>#5278</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.3.10.  Addresses
+          <ulink url='&lfs-ticket-root;5276'>#5276</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[rahul] - Update to kbd-2.6.1.  Fixes
+          <ulink url='&lfs-ticket-root;5279'>#5279</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.22.  Fixes
+          <ulink url='&lfs-ticket-root;5275'>#5275</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20230615 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.0.1671 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.39.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5278'>#5278</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.3.10 へのアップデート。
+          <ulink url='&lfs-ticket-root;5276'>#5276</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[rahul] - kbd-2.6.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5279'>#5279</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.22 へのアップデート。
+          <ulink url='&lfs-ticket-root;5275'>#5275</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-06-17</para>
       <itemizedlist>
         <listitem>
