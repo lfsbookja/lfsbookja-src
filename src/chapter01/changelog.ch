@@ -44,6 +44,40 @@
 @z
 
 @x
+      <para>2023-07-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Add libxcrypt-4.4.35.  Fixes
+          <ulink url='&lfs-ticket-root;5280'>#5280</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to iproute2-6.4.0.  Fixes
+          <ulink url='&lfs-ticket-root;5277'>#5277</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to linux-6.4.1.  Fixes
+          <ulink url='&lfs-ticket-root;5276'>#5276</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-07-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - libxcrypt-4.4.35 追加。
+          <ulink url='&lfs-ticket-root;5280'>#5280</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - iproute2-6.4.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5277'>#5277</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - linux-6.4.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5276'>#5276</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-07-01</para>
       <itemizedlist>
         <listitem>

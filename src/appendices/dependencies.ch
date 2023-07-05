@@ -795,12 +795,12 @@
 %----------------------------------------------------------------------
 @x Gcc
           <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch, Perl, Sed,
-          Tar, Texinfo, and Zstd</seg>
+          Gettext, Glibc, GMP, Grep, Libxcrypt, M4, Make, MPC, MPFR, Patch,
+          Perl, Sed, Tar, Texinfo, and Zstd</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch, Perl, Sed,
-          Tar, Texinfo, Zstd</seg>
+          Gettext, Glibc, GMP, Grep, Libxcrypt, M4, Make, MPC, MPFR, Patch,
+          Perl, Sed, Tar, Texinfo, Zstd</seg>
 @z
 @x
           <seg>Bash, Binutils, Glibc, Mpc, and Python</seg>
@@ -1526,6 +1526,43 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Libxcrypt dependency info -->
+@y
+<!-- Begin Libxcrypt dependency info -->
+@z
+@x
+          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+          Make, Perl, and Sed</seg>
+@y
+          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+          Make, Perl, Sed</seg>
+@z
+@x
+          <seg>Glibc</seg>
+@y
+          <seg>Glibc</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>GCC, Perl, Python,
+          <phrase revision='sysv'>and </phrase>Shadow<phrase
+          revision='systemd'>, and Systemd</phrase></seg>
+@y
+          <seg>GCC, Perl, Python,
+          Shadow<phrase revision='systemd'>, Systemd</phrase></seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Linux
           <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc,
           Grep, Gzip, Kmod, Libelf, Make, Ncurses, OpenSSL, Perl, and Sed</seg>
@@ -1981,15 +2018,15 @@
 %----------------------------------------------------------------------
 @x Perl
           <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep, Groff,
-          Make, Sed, and Zlib</seg>
+          Libxcrypt, Make, Sed, and Zlib</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep, Groff,
-          Make, Sed, Zlib</seg>
+          Libxcrypt, Make, Sed, Zlib</seg>
 @z
 @x
-          <seg>GDBM and Glibc</seg>
+          <seg>GDBM, Glibc, and Libxcrypt</seg>
 @y
-          <seg>GDBM, Glibc</seg>
+          <seg>GDBM, Glibc, Libxcrypt</seg>
 @z
 @x
           <seg>Iana-Etc, Less. and Procps-ng</seg>
@@ -2121,19 +2158,19 @@
 @z
 @x
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
-          Grep, Libffi, Make, Ncurses, OpenSSL, Pkgconf, Sed, and
+          Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed, and
           Util-linux</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
-          Grep, Libffi, Make, Ncurses, OpenSSL, Pkgconf, Sed,
+          Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed,
           Util-linux</seg>
 @z
 @x
-          <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Ncurses, OpenSSL, and
-          Zlib</seg>
+          <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Ncurses,
+          OpenSSL, and Zlib</seg>
 @y
-          <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Ncurses, OpenSSL,
-          Zlib</seg>
+          <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Ncurses,
+          OpenSSL, Zlib</seg>
 @z
 @x
           <seg>GDB and Valgrind</seg>
@@ -2222,15 +2259,15 @@
 %----------------------------------------------------------------------
 @x Shadow
           <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Libcap, Make, and Sed</seg>
+          GCC, Gettext, Glibc, Grep, Libcap, Libxcrypt, Make, and Sed</seg>
 @y
           <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk,
-          GCC, Gettext, Glibc, Grep, Libcap, Make, Sed</seg>
+          GCC, Gettext, Glibc, Grep, Libcap, Libxcrypt, Make, Sed</seg>
 @z
 @x
-          <seg>Glibc</seg>
+          <seg>Glibc and Libxcrypt</seg>
 @y
-          <seg>Glibc</seg>
+          <seg>Glibc, Libxcrypt</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -2285,17 +2322,17 @@
 %----------------------------------------------------------------------
 @x Systemd
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
-         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Meson, Pkgconf, Sed,
-         Util-linux, and Zstd</seg>
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         Pkgconf, Sed, Util-linux, and Zstd</seg>
 @y
          <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
-         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Meson, Pkgconf, Sed,
-         Util-linux, Zstd</seg>
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         Pkgconf, Sed, Util-linux, Zstd</seg>
 @z
 @x
-          <seg>Acl, Attr, Glibc, Libcap, and Util-linux</seg>
+          <seg>Acl, Attr, Glibc, Libcap, Libxcrypt, and Util-linux</seg>
 @y
-          <seg>Acl, Attr, Glibc, Libcap, Util-linux</seg>
+          <seg>Acl, Attr, Glibc, Libcap, Libxcrypt, Util-linux</seg>
 @z
 @x
           <seg>None</seg>

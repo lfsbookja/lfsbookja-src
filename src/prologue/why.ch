@@ -528,6 +528,22 @@
         </para>
 @z
 
+@x Libxcrypt
+        <para>This package provides the
+        <systemitem class='library'>libcrypt</systemitem> library
+        needed by various packages (notably, Shadow) for hashing passwords.
+        It replaces the obsolete
+        <systemitem class='library'>libcrypt</systemitem> implmentation in
+        Glibc.</para>
+@y
+        <para>
+        このパッケージは　<systemitem
+        class='library'>libcrypt</systemitem> ライブラリを提供するものであり、さまざまなパッケージ（代表的なものとして Shadow）がパスワードのハッシュ処理のために必要としています。
+        これは Glibc における、かつての <systemitem
+        class='library'>libcrypt</systemitem> 実装を置き換えるものです。
+        </para>
+@z
+
 @x Linux Kernel
         <para>This package is the Operating System.  It is the Linux in
         the GNU/Linux environment.</para>

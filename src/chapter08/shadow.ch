@@ -54,11 +54,10 @@
 
 @x
     <para id="shadow-login_defs">Instead of using the default
-    <emphasis>crypt</emphasis> method, use the more secure
-    <emphasis>SHA-512</emphasis> method of password encryption, which also
-    allows passwords longer than 8 characters. In addition, set the number of
-    rounds to 500,000 instead of the default 5000, which is much too low to
-    prevent brute force password attacks. It is also necessary to change
+    <emphasis>crypt</emphasis> method, use the much more secure
+    <emphasis>YESCRYPT</emphasis> method of password encryption, which also
+    allows passwords longer than 8 characters.
+    It is also necessary to change
     the obsolete <filename class="directory">/var/spool/mail</filename> location
     for user mailboxes that Shadow uses by default to the <filename
     class="directory">/var/mail</filename> location used currently. And,
@@ -68,10 +67,8 @@
     <filename class="directory">/usr</filename>.</para>
 @y
     <para id="shadow-login_defs">
-    パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>SHA-512</emphasis> 手法を用いることにします。
+    パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>YESCRYPT</emphasis> 手法を用いることにします。
     こうしておくと 8文字以上のパスワード入力が可能となります。
-    またラウンド数をデフォルトの 5000 から 500,000 に設定します。
-    デフォルトの 5000 では、パスワードの総当り攻撃に対しては小さすぎる設定だからです。
     メールボックスを収めるディレクトリとして Shadow ではデフォルトで <filename
     class="directory">/var/spool/mail</filename> ディレクトリを利用していますが、これは古いものであるため <filename
     class="directory">/var/mail</filename> ディレクトリに変更します。
@@ -142,6 +139,23 @@
           <para>
           プログラムの中には <filename>/usr/bin/passwd</filename> のパスがそのままハードコーディングされているものがあります。
           それがまだ存在していない場合には、インストールスクリプトが間違った場所に作り出してしまいます。
+          </para>
+@z
+
+@x --with-{b,yes}crypt
+          <para>The shell expands this to two switches,
+          <parameter>--with-bcrypt</parameter> and
+          <parameter>--with-yescrypt</parameter>.  They allow shadow to use
+          the Bcrypt and Yescrypt algorithms implemented by
+          <application>Libxcrypt</application> for hashing passwords.
+          These algorithms are more secure (in particular, much more
+          resistant to GPU-based attacks) than the traditional SHA
+          algorithms.</para>
+@y
+          <para>
+          これはシェルによって 2 つのスイッチ、つまり <parameter>--with-bcrypt</parameter> と <parameter>--with-yescrypt</parameter> に展開されます。
+          パスワードのハッシュ処理を行うための Bcrypt および Yescrypt アルゴリズムが <application>Libxcrypt</application> において実装されており、本スイッチは shadow がそれを用いることを指示します。
+          このアルゴリズムは従来の SHA アルゴリズムに比べて、（特に GPU ベースの攻撃への耐性が高く）より安全性を有しています。
           </para>
 @z
 

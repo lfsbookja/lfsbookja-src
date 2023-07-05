@@ -53,6 +53,7 @@ CHANGE_FILES = \
 	libffi.ch         \
 	libpipeline.ch    \
 	libtool.ch        \
+	libxcrypt.ch      \
 	m4.ch             \
 	make.ch           \
 	man-db.ch         \

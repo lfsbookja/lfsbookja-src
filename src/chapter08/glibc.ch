@@ -589,7 +589,7 @@
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
         libBrokenLocale.{a,so}, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a, libc_malloc_debug.so,
-        libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
+        libdl.{a,so.2}, libg.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
         libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
         libpcprofile.so, libpthread.{a,so.0},
@@ -614,7 +614,7 @@
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
         libBrokenLocale.{a,so}, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a, libc_malloc_debug.so,
-        libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
+        libdl.{a,so.2}, libg.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
         libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
         libpcprofile.so, libpthread.{a,so.0},
@@ -871,14 +871,6 @@
 @y
           <para>
           プリロード時のメモリ割り当てチェックをオンにします。
-          </para>
-@z
-
-@x libcrypt
-          <para>The cryptography library</para>
-@y
-          <para>
-          暗号化ライブラリ。
           </para>
 @z
 

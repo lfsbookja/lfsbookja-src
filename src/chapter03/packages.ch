@@ -448,6 +448,14 @@
         <para>&Download;: <ulink url="&libtool-url;"/></para>
 @z
 
+@x libxcrypt
+        <para>Home page: <ulink url="&libxcrypt-home;"/></para>
+        <para>Download: <ulink url="&libxcrypt-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&libxcrypt-home;"/></para>
+        <para>&Download;: <ulink url="&libxcrypt-url;"/></para>
+@z
+
 @x linux
         <para>Home page: <ulink url="&linux-home;"/></para>
         <para>Download: <ulink url="&linux-url;"/></para>

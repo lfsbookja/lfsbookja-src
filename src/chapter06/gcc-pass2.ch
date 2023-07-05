@@ -161,6 +161,24 @@
           </para>
 @z
 
+@x --disable-libsanitizer
+          <para>Disable GCC sanitizer runtime libraries.  They are not
+          needed for the temporary installation.  This switch is necessary
+          to build GCC without
+          <systemitem class='library'>libcrypt</systemitem> installed for
+          the target.  In <xref linkend='ch-tools-gcc-pass1'/> it was
+          implied by <parameter>--disable-libstdcxx</parameter>, but now we
+          have to explicitly pass it.</para>
+@y
+          <para>
+          GCC のサニタイザーランタイムライブラリを無効にします。
+          これはここでの一時的インストールにおいては不要です。
+          本スイッチは、インストールターゲットにおいて <systemitem
+          class='library'>libcrypt</systemitem> がインストールされていない状況で GCC をビルドする場合に必要となります。
+          <xref linkend='ch-tools-gcc-pass1'/> においては、<parameter>--disable-libstdcxx</parameter> によって暗にそれを行っていましたが、ここではそれを明示的に行う必要があります。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
