@@ -21,7 +21,6 @@ CHANGE_FILES = \
 	dejagnu.ch        \
 	diffutils.ch      \
 	e2fsprogs.ch      \
-	eudev.ch          \
 	expat.ch          \
 	expect.ch         \
 	file.ch           \
@@ -82,6 +81,7 @@ CHANGE_FILES = \
 	tar.ch            \
 	tcl.ch            \
 	texinfo.ch        \
+	udev.ch           \
 	util-linux.ch     \
 	vim.ch            \
 	wheel.ch          \

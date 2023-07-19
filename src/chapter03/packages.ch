@@ -183,12 +183,6 @@
         <para>&Download;: <ulink url="&elfutils-url;"/></para>
 @z
 
-@x Eudev
-        <para>Download: <ulink url="&eudev-url;"/></para>
-@y
-        <para>&Download;: <ulink url="&eudev-url;"/></para>
-@z
-
 @x Expat
         <para>Home page: <ulink url="&expat-home;"/></para>
         <para>Download: <ulink url="&expat-url;"/></para>

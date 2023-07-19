@@ -24,6 +24,17 @@
 @z
 
 @x
+    <para>Remove two man pages for password hashing functions.
+    <application>Libxcrypt</application> will provide a better version
+    of these man pages:</para>
+@y
+    <para>
+    パスワードのハッシュ処理に関する man ページを 2 つ削除します。
+    その man ページは <application>Libxcrypt</application> が、より良いものを提供してくれます。
+    </para>
+@z
+
+@x
     <para>Install Man-pages by running:</para>
 @y
     <para>Man-pages をインストールするために以下を実行します。</para>

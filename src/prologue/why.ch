@@ -203,7 +203,7 @@
         </para>
 @z
 
-@x Eudev
+@x Udev
         <para>This package is a device manager.  It dynamically controls the ownership,
         permissions, names, and symbolic links of device nodes in the /dev directory when
         devices are added to or removed from the system.
@@ -334,12 +334,12 @@
 @x Gperf
         <para>This package produces a program that generates a perfect hash
         function from a set of keys. It is required by
-        <phrase revision='sysv'>Eudev</phrase>
+        <phrase revision='sysv'>Udev</phrase>
         <phrase revision='systemd'>Systemd</phrase>.</para>
 @y
         <para>
         このパッケージは、キーセットから完全なハッシュ関数を生成するプログラムを提供します。
-        <phrase revision='sysv'>Eudev</phrase>
+        <phrase revision='sysv'>Udev</phrase>
         <phrase revision='systemd'>Systemd</phrase> がこれを必要としています。
         </para>
 @z

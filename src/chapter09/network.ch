@@ -75,7 +75,7 @@
 @x
       <para>The interface names depend on the implementation and
       configuration of the udev daemon running on the system.  The udev
-      daemon for LFS (installed in <xref linkend="ch-system-eudev"/>) will
+      daemon for LFS (installed in <xref linkend="ch-system-udev"/>) will
       not run until the LFS system is booted.  So the interface names 
       in the LFS system cannot always be determined by running
       those commands on the host distro,
@@ -83,7 +83,7 @@
 @y
       <para>
       インターフェース名は、システム上で起動している udev デーモンの実装や設定に依存します。
-      LFS における udev デーモン（<xref linkend="ch-system-eudev"/>においてインストール）は、LFS システムを起動させるまでは動作しません。
+      LFS における udev デーモン（<xref linkend="ch-system-udev"/>においてインストール）は、LFS システムを起動させるまでは動作しません。
       したがってホストディストリビューションにおいて各コマンドを実行しても、LFS 上において用いられるインターフェース名が何であるのかは特定できません。
       それは chroot 環境内においても同じことです。
       </para>

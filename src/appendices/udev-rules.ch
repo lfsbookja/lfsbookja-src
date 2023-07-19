@@ -23,10 +23,10 @@
 
 @x
   <para>The rules in this appendix are listed for convenience.  Installation is
-  normally done via instructions in <xref linkend='ch-system-eudev'/>.  </para>
+  normally done via instructions in <xref linkend='ch-system-udev'/>.  </para>
 @y
   <para>
   本付録にて udev ルールを列記します。
-  インストール手順は <xref linkend='ch-system-eudev'/>を参照してください。
+  インストール手順は <xref linkend='ch-system-udev'/>を参照してください。
   </para>
 @z

@@ -394,13 +394,9 @@
           <seg>Diffutils, E2fsprogs, Findutils, Shadow, Util-linux</seg>
 @z
 @x
-          <seg>Bash, Diffutils, <phrase revision="sysv">Eudev, </phrase>
-          Findutils, <phrase revision="sysv">and </phrase>Man-DB<phrase
-          revision="systemd">, and Systemd</phrase></seg>
+          <seg>Bash, Diffutils, Findutils, Man-DB, and &systemd-udev;</seg>
 @y
-          <seg>Bash, Diffutils, <phrase revision="sysv">Eudev, </phrase>
-          Findutils, Man-DB<phrase
-          revision="systemd">, Systemd</phrase></seg>
+          <seg>Bash, Diffutils, Findutils, Man-DB, &systemd-udev;</seg>
 @z
 @x
           <seg>
@@ -528,35 +524,6 @@
           <seg>Procps-ng and Psmisc</seg>
 @y
           <seg>Procps-ng, Psmisc</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-
-%----------------------------------------------------------------------
-@x Eudev
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf, Make,
-          Sed, and Util-linux</seg>
-@y
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Gperf, Make,
-          Sed, Util-linux</seg>
-@z
-@x
-          <seg>Glibc, Kmod, Xz, Util-linux, and Zlib.</seg>
-@y
-          <seg>Glibc, Kmod, Xz, Util-linux, Zlib</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -1258,9 +1225,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Systemd</seg>
+          <seg>&systemd-udev;</seg>
 @y
-          <seg>Systemd</seg>
+          <seg>&systemd-udev;</seg>
 @z
 @x
           <seg>None</seg>
@@ -1321,11 +1288,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg><phrase revision="sysv">Eudev</phrase>
-          <phrase revision="systemd">Systemd</phrase></seg>
+          <seg>&systemd-udev;</seg>
 @y
-          <seg><phrase revision="sysv">Eudev</phrase>
-          <phrase revision="systemd">Systemd</phrase></seg>
+          <seg>&systemd-udev;</seg>
 @z
 @x
           <seg>None</seg>
@@ -1549,12 +1514,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC, Perl, Python,
-          <phrase revision='sysv'>and </phrase>Shadow<phrase
-          revision='systemd'>, and Systemd</phrase></seg>
+          <seg>GCC, Perl, Python, Shadow, and &systemd-udev;</seg>
 @y
-          <seg>GCC, Perl, Python,
-          Shadow<phrase revision='systemd'>, Systemd</phrase></seg>
+          <seg>GCC, Perl, Python, Shadow, &systemd-udev;</seg>
 @z
 @x
           <seg>None</seg>
@@ -1808,15 +1770,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>
-            <phrase revision='sysv'>None</phrase>
-            <phrase revision='systemd'>Systemd</phrase>
-          </seg>
+          <seg>&systemd-udev;</seg>
 @y
-          <seg>
-            <phrase revision='sysv'>なし</phrase>
-            <phrase revision='systemd'>Systemd</phrase>
-          </seg>
+          <seg>&systemd-udev;</seg>
 @z
 @x
           <seg>None</seg>
@@ -1975,9 +1931,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>Coreutils, Kmod, and Linux</seg>
+          <seg>Coreutils, Kmod, Linux, and &systemd-udev;</seg>
 @y
-          <seg>Coreutils, Kmod, Linux</seg>
+          <seg>Coreutils, Kmod, Linux, &systemd-udev;</seg>
 @z
 @x
           <seg>None</seg>
@@ -2074,11 +2030,11 @@
 @x
           <seg><phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
           IProute2, Kmod, Man-DB, Procps-ng, Python,
-		  <phrase revision='systemd'>Systemd, </phrase>and Util-linux</seg>
+		  &systemd-udev;, and Util-linux</seg>
 @y
           <seg><phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
           IProute2, Kmod, Man-DB, Procps-ng, Python,
-		  <phrase revision='systemd'>Systemd, </phrase>Util-linux</seg>
+		  &systemd-udev;, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -2321,18 +2277,20 @@
 
 %----------------------------------------------------------------------
 @x Systemd
-         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
+         <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
          GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
-         Pkgconf, Sed, Util-linux, and Zstd</seg>
+         OpenSSL, Pkgconf, Sed, Util-linux, and Zstd</seg>
 @y
-         <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Expat, Gawk,
+         <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
          GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
-         Pkgconf, Sed, Util-linux, Zstd</seg>
+         OpenSSL, Pkgconf, Sed, Util-linux, and Zstd</seg>
 @z
 @x
-          <seg>Acl, Attr, Glibc, Libcap, Libxcrypt, and Util-linux</seg>
+          <seg>Acl, Glibc, Libcap, Libxcrypt, OpenSSL, Util-linux, Xz,
+          Zlib, and Zstd</seg>
 @y
-          <seg>Acl, Attr, Glibc, Libcap, Libxcrypt, Util-linux</seg>
+          <seg>Acl, Glibc, Libcap, Libxcrypt, OpenSSL, Util-linux, Xz,
+          Zlib, Zstd</seg>
 @z
 @x
           <seg>None</seg>
@@ -2471,21 +2429,55 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Udev dependency info -->
+@y
+<!-- Begin Udev dependency info -->
+@z
+@x
+         <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         OpenSSL, Pkgconf, Sed, Util-linux, and Zstd</seg>
+@y
+         <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         OpenSSL, Pkgconf, Sed, Util-linux, Zstd</seg>
+@z
+@x
+          <seg>Acl, Glibc, Libcap, OpenSSL, and Util-linux</seg>
+@y
+          <seg>Acl, Glibc, Libcap, OpenSSL, Util-linux</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>Util-linux</seg>
+@y
+          <seg>Util-linux</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Util-linux
-          <seg>Bash, Binutils, Coreutils, Diffutils,
-          <phrase revision="sysv">Eudev, </phrase>File, Findutils, Gawk,
+          <seg>Bash, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
           GCC, Gettext, Glibc, Grep, Make, Ncurses, Pkgconf, Sed,
-          <phrase revision="systemd">Systemd, </phrase>and Zlib</seg>
+          &systemd-udev;, and Zlib</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Diffutils,
-          <phrase revision="sysv">Eudev, </phrase>File, Findutils, Gawk,
+          <seg>Bash, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
           GCC, Gettext, Glibc, Grep, Make, Ncurses, Pkgconf, Sed,
-          <phrase revision="systemd">Systemd,</phrase> Zlib</seg>
+          &systemd-udev;, Zlib</seg>
 @z
 @x
-          <seg>Glibc, Ncurses, Readline, and Zlib</seg>
+          <seg>Glibc, Ncurses, Readline, &systemd-udev;, and Zlib</seg>
 @y
-          <seg>Glibc, Ncurses, Readline, Zlib</seg>
+          <seg>Glibc, Ncurses, Readline, &systemd-udev;, Zlib</seg>
 @z
 @x
           <seg>None</seg>
@@ -2498,7 +2490,6 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>
             <ulink
               url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
             <ulink url="&github;/openSUSE/libeconf">libeconf</ulink>,
@@ -2509,9 +2500,7 @@
             <ulink
               url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>, and
             <ulink url="&blfs-book;general/slang.html">slang</ulink>
-          </seg>
 @y
-          <seg>
             <ulink
               url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
             <ulink url="&github;/openSUSE/libeconf">libeconf</ulink>,
@@ -2522,7 +2511,6 @@
             <ulink
               url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>,
             <ulink url="&blfs-book;general/slang.html">slang</ulink>
-          </seg>
 @z
 
 %----------------------------------------------------------------------
@@ -2645,13 +2633,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
-          Libelf, <phrase revision="sysv">and </phrase>Man-DB<phrase
-          revision="systemd">, and Systemd</phrase></seg>
+          <seg>File, GRUB, Kmod, Libelf, Man-DB, and &systemd-udev;</seg>
 @y
-          <seg><phrase revision="sysv">Eudev, </phrase>File, GRUB, Kmod,
-          Libelf, Man-DB<phrase
-          revision="systemd">, Systemd</phrase></seg>
+          <seg>File, GRUB, Kmod, Libelf, Man-DB, &systemd-udev;</seg>
 @z
 @x
           <seg>None</seg>
@@ -2703,11 +2687,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg><phrase revision='sysv'>GCC and Libelf</phrase>
-          <phrase revision='systemd'>GCC, Libelf, and Systemd</phrase></seg>
+          <seg>GCC, Libelf, and &systemd-udev;</seg>
 @y
-          <seg><phrase revision='sysv'>GCC, Libelf</phrase>
-          <phrase revision='systemd'>GCC, Libelf, Systemd</phrase></seg>
+          <seg>GCC, Libelf, &systemd-udev;</seg>
 @z
 @x
           <seg>

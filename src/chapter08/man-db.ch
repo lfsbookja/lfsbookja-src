@@ -95,18 +95,14 @@
 @z
 
 @x
-   <para>To test the results, issue:</para>
+    <para>Many tests are known to fail with groff-1.23.0 or later.  If
+    you still want to test the results anyway, issue:</para>
 @y
-   <para>コンパイル結果をテストするには以下を実行します。</para>
+    <para>
+    groff-1.23.0 またはそれ以降を利用していると、多くのテストが失敗します。
+    それでもテスト結果を得たい場合には以下を実行します。
+    </para>
 @z
-
-%@x
-%    <para>One test, man-missing-locales, is known to fail in the LFS chroot envirnment.</para>
-%@y
-%    <para>
-%    man-missing-locales というテストが LFS chroot 環境下では失敗します。
-%    </para>
-%@z
 
 @x
     <para>Install the package:</para>

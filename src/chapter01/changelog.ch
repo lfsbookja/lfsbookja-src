@@ -44,6 +44,64 @@
 @z
 
 @x
+      <para>2023-07-15</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[xry111] - Replace eudev-3.2.12 with udev from systemd-253.
+          Fixes <ulink url='&lfs-ticket-root;5285'>#5085</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20230629.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.4.3.  Fixes
+          <ulink url='&lfs-ticket-root;5284'>#5284</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to  libxcrypt-4.4.36.  Fixes
+          <ulink url='&lfs-ticket-root;5283'>#5283</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to groff-1.23.0.  Fixes
+          <ulink url='&lfs-ticket-root;5282'>#5282</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.38.0.  Fixes
+          <ulink url='&lfs-ticket-root;5281'>#5281</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-07-15</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[xry111] - eudev-3.2.12 を systemd-253 内の udev に置き換え。
+          <ulink url='&lfs-ticket-root;5285'>#5085</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20230629 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.4.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5284'>#5284</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  libxcrypt-4.4.36 へのアップデート。
+          <ulink url='&lfs-ticket-root;5283'>#5283</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - groff-1.23.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5282'>#5282</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.38.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5281'>#5281</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-07-02</para>
       <itemizedlist>
         <listitem>

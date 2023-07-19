@@ -57,9 +57,11 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>&NotExistTestsuite;</para>
+    <para>
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
 @z
 
 @x

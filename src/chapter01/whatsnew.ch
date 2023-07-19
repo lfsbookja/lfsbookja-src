@@ -63,9 +63,21 @@
 @z
 
 @x
+      <para>Libelf-&elfutils-version; (from elfutils)</para>
+@y
+      <para>Libelf-&elfutils-version; (elfutils より)</para>
+@z
+
+@x
     <title>Added:</title>
 @y
     <title>追加:</title>
+@z
+
+@x
+       <para>Udev-&systemd-version; (from systemd)</para>
+@y
+       <para>Udev-&systemd-version; (systemd より)</para>
 @z
 
 @x

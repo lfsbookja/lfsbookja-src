@@ -42,7 +42,7 @@
         LFS editors recommend that users not familiar with this process follow
         the procedures below fairly closely.  The objective is to get an
         initial system to a point where you can log in at the command line when
-        you reboot later in <xref linkend="ch-finish-reboot"/>.  At his point
+        you reboot later in <xref linkend="ch-finish-reboot"/>.  At this point
         optimization and customization is not a goal.
 @y
         Linux カーネルの構築を初めて行うなら、LFS の中でも、かなりハードルの高い作業になります。
@@ -310,10 +310,10 @@
 
 @x Support for uevent helper
           <para>Having this option set may interfere with device
-          management when using Udev/Eudev. </para>
+          management when using Udev.</para>
 @y
           <para>
-          本項目を有効にすることで、デバイス管理を Udev/Eudev により行ないます。
+          本項目を有効にすることで、デバイス管理を Udev により行ないます。
           </para>
 @z
 
@@ -321,13 +321,13 @@
           <para>This will create automated device nodes which are populated by the
           kernel, even without Udev running.  Udev then runs on top of this,
           managing permissions and adding symlinks.  This configuration
-          item is required for all users of Udev/Eudev.</para>
+          item is required for all users of Udev.</para>
 @y
           <para>
           本項目は、カーネルにより事前登録される自動化デバイスノードを生成します。
           これは Udev が動作していなくても行われます。
           Udev はその上で起動し、パーミッション管理やシンボリックリンクの追加を行います。
-          Udev/Eudev を利用する場合には本項目を有効にすることが必要です。
+          Udev を利用する場合には本項目を有効にすることが必要です。
           </para>
 @z
 
