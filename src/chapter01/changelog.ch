@@ -44,6 +44,124 @@
 @z
 
 @x
+      <para>2023-07-28</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update udev-lfs tarball to remove obsolete
+           cdrom rules and references to ISDN devices. Fixes
+          <ulink url='&lfs-ticket-root;5291'>#5291</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to wheel-0.41.0 (Python Module). Fixes
+          <ulink url='&lfs-ticket-root;5290'>#5290</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tar-1.35. Fixes
+          <ulink url='&lfs-ticket-root;5287'>#5287</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to<phrase revision='sysv'> udev
+          from</phrase> systemd-254. Fixes
+          <ulink url='&lfs-ticket-root;5293'>#5293</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.2.0. Fixes
+          <ulink url='&lfs-ticket-root;5286'>#5286</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.4.7. Fixes
+          <ulink url='&lfs-ticket-root;5288'>#5288</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-13.2.0. Fixes
+          <ulink url='&lfs-ticket-root;5292'>#5292</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.45. Fixes
+          <ulink url='&lfs-ticket-root;5294'>#5294</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-07-28</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - udev-lfs tarball を更新し、古い cdrom ルールと ISDN デバイスへの参照を削除。
+          <ulink url='&lfs-ticket-root;5291'>#5291</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - wheel-0.41.0 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5290'>#5290</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tar-1.35 へのアップデート。
+          <ulink url='&lfs-ticket-root;5287'>#5287</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-254 <phrase revision='sysv'> からの udev</phrase> へのアップデート。
+          <ulink url='&lfs-ticket-root;5293'>#5293</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.2.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5286'>#5286</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.4.7 へのアップデート。
+          <ulink url='&lfs-ticket-root;5288'>#5288</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-13.2.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5292'>#5292</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.45 へのアップデート。
+          <ulink url='&lfs-ticket-root;5294'>#5294</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-07-28</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[xry111] - Enable cgroup-based memory pressure information
+          in kernel, and add the cgroup file system into /etc/fstab and the
+          mountvirtfs bootscript.  This is a preparation for udev from
+          systemd-254.  Addresses
+          <ulink url='&lfs-ticket-root;5293'>#5293</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-07-28</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[xry111] - カーネルにおいて cgroup ベースのメモリ負荷情報を有効に。
+          また cgroup ファイルシステムを /etc/fstab とブートスクリプト mountvirtfs に追加。
+          これは systemd-254 以降の udev への対処である。
+          <ulink url='&lfs-ticket-root;5293'>#5293</ulink> にて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-07-22</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[xry111] - Make the mountvirtfs bootscript create essential
+          symlinks in /dev.  Fixes
+          <ulink url='&lfs-ticket-root;5289'>#5289</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-07-22</para>
+      <itemizedlist>
+        <listitem revision='sysv'>
+          <para>[xry111] - ブートスクリプト mountvirtfs が /dev 内の重要なシンボリックリンクを生成するようにする。
+          <ulink url='&lfs-ticket-root;5289'>#5289</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-07-15</para>
       <itemizedlist>
         <listitem revision='sysv'>

@@ -25,15 +25,6 @@
 @z
 
 @x
-      Remove several inappropriate uses of the <literal>pure</literal>
-      attribute that cause runtime issues when the package is built
-      with gcc-13 or later:
-@y
-      <literal>pure</literal> 属性というものの指定が不適切であるため、これを取り除きます。
-      このパッケージを GCC 13 およびそれ以降を使ってビルドした場合にランタイムエラーを引き起こすためです。
-@z
-
-@x
     <para>Remove two unneeded groups,
     <systemitem class="groupname">render</systemitem> and
     <systemitem class="groupname">sgx</systemitem>, from the default udev
@@ -263,12 +254,14 @@
 @x
         <seg>busctl, coredumpctl, halt (symlink to systemctl),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
-        machinectl, networkctl, oomctl, portablectl, poweroff (symlink to
+        machinectl, mount.ddi (symlink to systemd-dissect), networkctl,
+        oomctl, portablectl, poweroff (symlink to
         systemctl), reboot (symlink to systemctl), resolvconf (symlink to
         resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
         (symlink to systemctl), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-creds, systemd-delta, systemd-detect-virt,
+        systemd-confext (symlink to systemd-sysext), systemd-creds,
+        systemd-delta, systemd-detect-virt,
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
         systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
@@ -292,12 +285,14 @@
 @y
         <seg>busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
-        machinectl, networkctl, oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
+        machinectl, mount.ddi (systemd-dissect へのシンボリックリンク), networkctl,
+        oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
         reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
         resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
         (systemctl へのシンボリックリンク), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-creds, systemd-delta, systemd-detect-virt,
+        systemd-confext (systemd-sysext へのシンボリックリンク), systemd-creds,
+        systemd-delta, systemd-detect-virt,
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
         systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,

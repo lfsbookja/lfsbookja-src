@@ -18,21 +18,6 @@
 @z
 
 @x
-      <para>This section is not strictly required when LFS does not use
-      systemd. On the other hand, Ninja, along with Meson, makes
-      a powerful build system combination,
-      which will probably be used more and more often. It is required for
-      several packages in <ulink url="&blfs-book;">the BLFS
-      book</ulink>.</para>
-@y
-      <para>
-      本節は正確に言うと systemd を利用しないのであれば LFS において必要ありません。
-      一方で Meson とともに使う Ninja というものは強力なビルドシステムであり、利用する機会がかなり多くなると思われます。
-      <ulink url="&blfs-book;">BLFS ブック</ulink> においては、これを必要とするパッケージがいくつかあります。
-      </para>
-@z
-
-@x
     <title>Installation of Ninja</title>
 @y
     <title>&InstallationOf1;Ninja&InstallationOf2;</title>

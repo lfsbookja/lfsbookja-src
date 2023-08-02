@@ -16,6 +16,34 @@
 @z
 
 @x
+      In case you've hit an issue building one package with the LFS
+      instruction, we strongly discourage posting the issue directly onto
+      the upstream support channel before discussing via a LFS support
+      channel listed in <xref linkend="ch-intro-resources"/>.
+      Doing so is often quite inefficient because the upstream
+      maintainers are rarely familiar with LFS building procedure.  Even if
+      you've really hit an upstream issue, the LFS community can still help
+      to isolate the information wanted by the upstream maintainers and make
+      a proper report.
+@y
+      LFS の手順に従って特定のパッケージをビルドした際に、何かの問題が発生した場合、いきなりアップストリームのサポートチャンネルへ問題を投稿することは是非お止めください。
+      その前にまずは <xref linkend="ch-intro-resources"/> に示されている LFS サポートチャンネルでの議論を行ってください。
+      いきなりアップストリームの保守担当者に投稿したところで、その担当者は LFS のビルド手順についてほぼ理解はしていないため、非効率なやり方となります。
+      たとえアップストリームの問題であったとしても、LFS コミュニティを経由すれば、アップストリームが本当に必要とする情報のみを抜き出して適切な報告を上げるお役に立てるはずです。
+@z
+
+@x
+      If you must ask a question directly via an upstream support channel,
+      you shall at least note that many upstream projects have the support
+      channels separated from the bug tracker.  The <quote>bug</quote>
+      reports for asking questions are considered invalid and may annoy
+      upstream developers for these projects.
+@y
+      アップストリームのサポートチャンネルに直接質問を上げることがどうしても必要となった場合でも、多くのアップストリームプロジェクトにおいては、サポートチャンネルとバグトラッカーは別々に運用されている点に注意してください。
+      <quote>バグ</quote>報告に質問を行うことは不適切とされて、そのアップストリームプロジェクトの開発担当者に迷惑をかけるだけかもしれません。
+@z
+
+@x
   <para>If an issue or a question is encountered while working through
   this book, please check the FAQ page at <ulink url="&faq-root;#generalfaq"/>.
   Questions are often already answered there. If your question is not

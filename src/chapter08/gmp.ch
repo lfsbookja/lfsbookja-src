@@ -41,11 +41,13 @@
       <para>The default settings of GMP produce libraries optimized for
       the host processor.  If libraries suitable for processors less
       capable than the host's CPU are desired, generic libraries can be
-      created by running the following:
+      created by appending the <option>--host=none-linux-gnu</option> option
+      to the <command>configure</command> command.</para>
 @y
       <para>
       GMP のデフォルト設定に従うと、ホストのプロセッサー向けに最適化したライブラリを生成してしまいます。
-      ホストに比べて、やや性能の劣るプロセッサーに向けたライブラリを必要とする場合は、汎用ライブラリを生成するために以下を実行します。
+      ホストに比べて、やや性能の劣るプロセッサーに向けたライブラリを必要とする場合は、汎用ライブラリを生成するために、<command>configure</command> コマンドに <option>--host=none-linux-gnu</option> オプションを加えます。
+      </para>
 @z
 
 @x
@@ -103,14 +105,14 @@
     the system capabilities and there will be errors in the tests or other
     applications using the gmp libraries with the message "Illegal
     instruction".  In this case, gmp should be reconfigured with the option
-    --build=x86_64-pc-linux-gnu and rebuilt.</para></caution>
+    <option>--host=none-linux-gnu</option> and rebuilt.</para></caution>
 @y
     <caution><para>
     gmp のコードはビルドするプロセッサー向けに高度に最適化されます。
     このためプロセッサーを特定したコードが実はシステム性能を的確に制御できないことも起こりえます。
     それはテストにおいてエラーを引き起こしたり、gmp を利用する他のアプリケーションにおいて "Illegal
     instruction" というエラーとして発生したりすることがあります。
-    そういった場合は gmp の再ビルドが必要であり、その際にはオプション --build=x86_64-pc-linux-gnu をつける必要があります。
+    そういった場合は gmp の再ビルドが必要であり、その際にはオプション <option>--host=none-linux-gnu</option> をつける必要があります。
     </para></caution>
 @z
 

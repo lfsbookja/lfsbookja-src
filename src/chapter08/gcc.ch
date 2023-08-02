@@ -224,10 +224,10 @@
 @z
 
 @x
-    <para>Two tests named <filename>pr104610.c</filename> and
+ <para><!--Two tests named <filename>pr104610.c</filename> and
     <filename>pr69482-1.c</filename> are known to fail because the test
     files does not account for the
-    <parameter>--enable-default-ssp</parameter> option.
+    <parameter>- -enable-default-ssp</parameter> option.-->
     <!-- https://gcc.gnu.org/PR106375 and https://gcc.gnu.org/PR109353 -->
     Two tests named <filename>copy.cc</filename> and
     <filename>pr56837.c</filename> are known to fail.
@@ -237,9 +237,11 @@
     if the hardware does not support AVX.</para>
 @y
     <para>
+    <!--
     <filename>pr104610.c</filename>、<filename>pr69482-1.c</filename> という 2 つのテストが失敗します。
-    これはテストファイルが <parameter>--enable-default-ssp</parameter> オプションのことを考慮していないためです。
-    <filename>copy.cc</filename>、<filename>pr56837.c</filename> というテストも失敗します。
+    これはテストファイルが <parameter>- -enable-default-ssp</parameter> オプションのことを考慮していないためです。
+    -->
+    <filename>copy.cc</filename>、<filename>pr56837.c</filename> というテストが失敗します。
     さらに <filename class='directory'>vect</filename> ディレクトリ内にあるテストが、AVX に対するハードウェアサポートがないために、いくつか失敗します。
     </para>
 @z

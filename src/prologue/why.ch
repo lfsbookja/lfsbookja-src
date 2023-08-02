@@ -203,19 +203,6 @@
         </para>
 @z
 
-@x Udev
-        <para>This package is a device manager.  It dynamically controls the ownership,
-        permissions, names, and symbolic links of device nodes in the /dev directory when
-        devices are added to or removed from the system.
-        </para>
-@y
-        <para>
-        このパッケージはデバイスマネージャーです。
-        /dev ディレクトリに登録されたデバイスノードの所有者、パーミッション、名称、シンボリックリンクを動的に制御します。
-        これによりデバイスは、システムへの追加または削除が行われます。
-        </para>
-@z
-
 @x Expat
         <para>This package yields a relatively small XML parsing library.  It
         is required by the XML::Parser Perl module.</para>
@@ -533,7 +520,7 @@
         <systemitem class='library'>libcrypt</systemitem> library
         needed by various packages (notably, Shadow) for hashing passwords.
         It replaces the obsolete
-        <systemitem class='library'>libcrypt</systemitem> implmentation in
+        <systemitem class='library'>libcrypt</systemitem> implementation in
         Glibc.</para>
 @y
         <para>
@@ -808,6 +795,19 @@
         <para>
         このパッケージは <application>init</application> プログラムを提供します。
         これは Linux システム上のすべてのプロセスの基点となるものです。
+        </para>
+@z
+
+@x Udev
+        <para>This package is a device manager.  It dynamically controls the
+        ownership, permissions, names, and symbolic links of device nodes in
+        the /dev directory when devices are added to or removed from the
+        system.</para>
+@y
+        <para>
+        このパッケージはデバイスマネージャーです。
+        /dev ディレクトリに登録されたデバイスノードの所有者、パーミッション、名称、シンボリックリンクを動的に制御します。
+        これによりデバイスは、システムへの追加または削除が行われます。
         </para>
 @z
 

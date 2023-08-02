@@ -95,12 +95,19 @@
 @z
 
 @x
-    <para>Many tests are known to fail with groff-1.23.0 or later.  If
-    you still want to test the results anyway, issue:</para>
+    <para>To test the results, issue:</para>
 @y
     <para>
-    groff-1.23.0 またはそれ以降を利用していると、多くのテストが失敗します。
-    それでもテスト結果を得たい場合には以下を実行します。
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
+@z
+
+@x
+    <para>One test named <filename>man1/lexgrog.1</filename> is known
+    to fail.</para>
+@y
+    <para>
+    <filename>man1/lexgrog.1</filename> というテストが 1 つ失敗します。
     </para>
 @z
 
