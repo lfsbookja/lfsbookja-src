@@ -41,14 +41,6 @@
 @z
 
 @x
-    <para>Fix a security issue identified upstream:</para>
-@y
-    <para>
-    アップストリームが認識するセキュリティ問題を修正します。
-    </para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc
     in a dedicated build directory:</para>
 @y

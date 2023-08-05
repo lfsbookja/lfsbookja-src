@@ -4737,7 +4737,7 @@ fi
 
 
 
-TARGETVER=r11.3-182
+TARGETVER=r11.3-198
 if test "x$revspec" = "xsystemd"; then
   TARGETVER="$TARGETVER-systemd"
 fi
@@ -4935,7 +4935,7 @@ printf "%s\n" "found" >&6; }
   fi
 
 
-ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/userconfig.xml src/appendices/Makefile src/chapter01/Makefile src/chapter02/Makefile src/chapter03/Makefile src/chapter04/Makefile src/chapter05/Makefile src/chapter06/Makefile src/chapter07/Makefile src/chapter08/Makefile src/chapter09/Makefile src/chapter10/Makefile src/chapter11/Makefile src/part3intro/Makefile src/prologue/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/pdf/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/udev-lfs/Makefile src/udev-lfs/contrib/Makefile src/udev-lfs/contrib/debian/Makefile"
+ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/userconfig.xml src/appendices/Makefile src/chapter01/Makefile src/chapter02/Makefile src/chapter03/Makefile src/chapter04/Makefile src/chapter05/Makefile src/chapter06/Makefile src/chapter07/Makefile src/chapter08/Makefile src/chapter09/Makefile src/chapter10/Makefile src/chapter10/kernel/Makefile src/chapter11/Makefile src/part3intro/Makefile src/prologue/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/pdf/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/udev-lfs/Makefile src/udev-lfs/contrib/Makefile src/udev-lfs/contrib/debian/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -5693,6 +5693,7 @@ do
     "src/chapter08/Makefile") CONFIG_FILES="$CONFIG_FILES src/chapter08/Makefile" ;;
     "src/chapter09/Makefile") CONFIG_FILES="$CONFIG_FILES src/chapter09/Makefile" ;;
     "src/chapter10/Makefile") CONFIG_FILES="$CONFIG_FILES src/chapter10/Makefile" ;;
+    "src/chapter10/kernel/Makefile") CONFIG_FILES="$CONFIG_FILES src/chapter10/kernel/Makefile" ;;
     "src/chapter11/Makefile") CONFIG_FILES="$CONFIG_FILES src/chapter11/Makefile" ;;
     "src/part3intro/Makefile") CONFIG_FILES="$CONFIG_FILES src/part3intro/Makefile" ;;
     "src/prologue/Makefile") CONFIG_FILES="$CONFIG_FILES src/prologue/Makefile" ;;

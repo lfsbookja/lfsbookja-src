@@ -44,6 +44,64 @@
 @z
 
 @x
+      <para>2023-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.0.1677.  Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.1.2. Fixes
+          <ulink url='&lfs-ticket-root;5305'>#5305</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.05. Fixes
+          <ulink url='&lfs-ticket-root;5303'>#5303</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.41. Fixes
+          <ulink url='&lfs-ticket-root;5300'>#5300</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-6.3.0. Fixes
+          <ulink url='&lfs-ticket-root;5301'>#5301</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.38. Fixes
+          <ulink url='&lfs-ticket-root;5302'>#5302</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.0.1677 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.1.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5305'>#5305</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.05 へのアップデート。
+          <ulink url='&lfs-ticket-root;5303'>#5303</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.41 へのアップデート。
+          <ulink url='&lfs-ticket-root;5300'>#5300</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gmp-6.3.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5301'>#5301</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.38 へのアップデート。
+          <ulink url='&lfs-ticket-root;5302'>#5302</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-07-28</para>
       <itemizedlist>
         <listitem>

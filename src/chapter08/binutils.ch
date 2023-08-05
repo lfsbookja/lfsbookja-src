@@ -162,16 +162,24 @@
 @z
 
 @x
+    <para>Three tests in the gprofng suite are also known to fail.</para>
+@y
+    <para>
+    grpofng スイートの中にある 3 つのテストが失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
 @z
 
 @x
-    <para>Remove useless static libraries and an empty man page:</para>
+    <para>Remove useless static libraries:</para>
 @y
     <para>
-    不要なスタティックライブラリと空の man ページを削除します。
+    不要なスタティックライブラリを削除します。
     </para>
 @z
 

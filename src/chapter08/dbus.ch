@@ -64,6 +64,19 @@
           </para>
 @z
 
+@x --enable-user-session
+          <para>These ensures the D-Bus per-user service and socket unit
+          files are installed for Systemd.  They are not useful (but
+          harmless) in a base LFS installation, however they can be used
+          once systemd is rebuilt with PAM support in BLFS.</para>
+@y
+          <para>
+          これは D-Bus の各ユーザー向けサービスやソケットユニットファイルを Systemd 用にインストールするようにします。
+          これは LFS の基本インストールにとっては必要のない（ただし害もない）ものです。
+          ただし BLFS において systemd に PAM サポートを含めて再ビルドする際には有用となります。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y

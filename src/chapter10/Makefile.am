@@ -1,6 +1,7 @@
 ##
 ## This is part of LFSbookja package.
 ##
+SUBDIRS=kernel
 BOOKdir = @abs_bookdir@/chapter10
 CHANGE_FILES = \
 	chapter10.ch    \

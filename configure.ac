@@ -86,6 +86,7 @@ AC_CONFIG_FILES([Makefile
 		 src/chapter08/Makefile
 		 src/chapter09/Makefile
 		 src/chapter10/Makefile
+		 src/chapter10/kernel/Makefile
 		 src/chapter11/Makefile
 		 src/part3intro/Makefile
 		 src/prologue/Makefile

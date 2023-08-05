@@ -60,28 +60,6 @@
 @z
 
 @x
-    <!-- It's because "free -v" shows "used" greater than "total", and
-         a negative "free" for "Comm" line.  The "total" value is from
-         "CommitLimit" in /proc/meminfo, which is the limit for one process.
-         But the "used" value is from "Committed_AS" in the same file,
-         which is the total commited virtual memory space of all processes.
-         I'll make a report to upstream anyway.  -->
-    <para>One test named <filename>free with commit</filename>
-    may fail if some applications with a custom memory allocator (for
-    example, JVM and Web browsers) are running on the host distro.</para>
-@y
-    <!-- It's because "free -v" shows "used" greater than "total", and
-         a negative "free" for "Comm" line.  The "total" value is from
-         "CommitLimit" in /proc/meminfo, which is the limit for one process.
-         But the "used" value is from "Committed_AS" in the same file,
-         which is the total commited virtual memory space of all processes.
-         I'll make a report to upstream anyway.  -->
-    <para>
-    ホストディストリビューション上において、特定のアプリケーション（たとえば JVM や ウェブブラウザー）が独自のメモリ割り当てを行っている場合に、<filename>free with commit</filename> という名前のテストが失敗します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
