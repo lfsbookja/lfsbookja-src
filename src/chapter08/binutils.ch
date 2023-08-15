@@ -202,12 +202,14 @@
 @x
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so, and libsframe.so</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
+        libopcodes.so, and libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so, libsframe.so</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
+        libopcodes.so, libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @z
 
@@ -418,6 +420,15 @@
 @y
           <para>
           libbfd の機能を利用しない libctf の互換ライブラリ。
+          </para>
+@z
+
+@x libgprofng
+          <para>A library containing most routines used by
+          <command>gprofng</command></para>
+@y
+          <para>
+          <command>gprofng</command> によって利用される処理ルーチンをほぼ含むライブラリ。
           </para>
 @z
 

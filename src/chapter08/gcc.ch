@@ -249,14 +249,16 @@
 @x
       With Glibc-2.38, the analyzer tests named
       <filename>data-model-4.c</filename> and
-      <filename>conftest-1.c</filename> are known to fail.
-      In the asan tests, the subtest named
-      <filename>AddressSanitizer_StrtolOOBTest</filename> in the test
-      <filename>asan_test.C</filename> and the test named
-      <filename>interception-malloc-test-1.C</filename> are known to fail.
+      <filename>conftest-1.c</filename> 
+        are known to fail.
+      In the asan tests, several tests in <filename>asan_test.C</filename> 
+        are known to fail.
+      The test named <filename>interception-malloc-test-1.C</filename> 
+        are known to fail.
 @y
       Glibc-2.38 を利用した場合に、<filename>data-model-4.c</filename>, <filename>conftest-1.c</filename> という解析テストが失敗します。
-      また asan テストにおいて、<filename>asan_test.C</filename> テスト内のサブテスト <filename>AddressSanitizer_StrtolOOBTest</filename> と <filename>interception-malloc-test-1.C</filename> というテストがそれぞれ失敗します。
+      また asan テストにおいて、<filename>asan_test.C</filename> テスト内のサブテストがいくつか失敗します。
+      <filename>interception-malloc-test-1.C</filename> というテストも失敗します。
 @z
 
 @x

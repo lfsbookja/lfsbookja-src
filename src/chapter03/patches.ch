@@ -79,6 +79,12 @@
         <para>&Download;: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
 @z
 
+@x Glibc Memalign Patch
+        <para>Download: <ulink url="&patches-root;&glibc-memalign-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&glibc-memalign-patch;"/></para>
+@z
+
 @x Glibc FHS Patch
         <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @y

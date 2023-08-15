@@ -41,6 +41,15 @@
 @z
 
 @x
+    <para>Now fix a regression causing the posix_memalign() function 
+    to be very slow in some conditions:</para>
+@y
+    <para>
+    posix_memalign() という関数が特定条件下において極端に遅くなるため、この機能低下を修正します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc
     in a dedicated build directory:</para>
 @y

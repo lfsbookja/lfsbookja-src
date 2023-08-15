@@ -44,6 +44,123 @@
 @z
 
 @x
+      <para>2023-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a patch to fix a performance regression in
+          glibc's posix_memalign() function. Fixes
+          <ulink url='&lfs-ticket-root;5315'>#5315</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-643. Fixes
+          <ulink url='&lfs-ticket-root;5317'>#5317</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.2.1. Fixes
+          <ulink url='&lfs-ticket-root;5314'>#5314</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.4.10. Fixes
+          <ulink url='&lfs-ticket-root;5313'>#5313</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20230810.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[rahul] - Update to pkgconf-2.0.1. Fixes
+          <ulink url='&lfs-ticket-root;5315'>#5316</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc の posix_memalign() 関数における処理低下を修正するパッチを追加。
+          <ulink url='&lfs-ticket-root;5315'>#5315</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-643 へのアップデート。
+          <ulink url='&lfs-ticket-root;5317'>#5317</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.2.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5314'>#5314</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.4.10 へのアップデート。
+          <ulink url='&lfs-ticket-root;5313'>#5313</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20230810 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[rahul] - pkgconf-2.0.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5315'>#5316</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-08-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.4.4. Fixes
+          <ulink url='&lfs-ticket-root;5307'>#5307</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to wheel-0.41.1 (Python Module). Fixes
+          <ulink url='&lfs-ticket-root;5311'>#5311</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.05.01. Fixes
+          <ulink url='&lfs-ticket-root;5306'>#5306</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.4.8. Fixes
+          <ulink url='&lfs-ticket-root;5309'>#5309</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20230804.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[rahul] - Update to pkgconf-2.0.0. Fixes
+          <ulink url='&lfs-ticket-root;5310'>#5310</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-08-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - xz-5.4.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5307'>#5307</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - wheel-0.41.1 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5311'>#5311</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.05.01 へのアップデート。
+          <ulink url='&lfs-ticket-root;5306'>#5306</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.4.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5309'>#5309</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20230804 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[rahul] - pkgconf-2.0.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5310'>#5310</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-08-01</para>
       <itemizedlist>
         <listitem>
@@ -180,7 +297,7 @@
 @x
       <para>2023-07-28</para>
       <itemizedlist>
-        <listitem revision='sysv'>
+        <listitem>
           <para>[xry111] - Enable cgroup-based memory pressure information
           in kernel, and add the cgroup file system into /etc/fstab and the
           mountvirtfs bootscript.  This is a preparation for udev from
@@ -191,7 +308,7 @@
 @y
       <para>2023-07-28</para>
       <itemizedlist>
-        <listitem revision='sysv'>
+        <listitem>
           <para>[xry111] - カーネルにおいて cgroup ベースのメモリ負荷情報を有効に。
           また cgroup ファイルシステムを /etc/fstab とブートスクリプト mountvirtfs に追加。
           これは systemd-254 以降の udev への対処である。
@@ -203,7 +320,7 @@
 @x
       <para>2023-07-22</para>
       <itemizedlist>
-        <listitem revision='sysv'>
+        <listitem>
           <para>[xry111] - Make the mountvirtfs bootscript create essential
           symlinks in /dev.  Fixes
           <ulink url='&lfs-ticket-root;5289'>#5289</ulink>.</para>
@@ -212,7 +329,7 @@
 @y
       <para>2023-07-22</para>
       <itemizedlist>
-        <listitem revision='sysv'>
+        <listitem>
           <para>[xry111] - ブートスクリプト mountvirtfs が /dev 内の重要なシンボリックリンクを生成するようにする。
           <ulink url='&lfs-ticket-root;5289'>#5289</ulink> を Fix に。</para>
         </listitem>
@@ -381,7 +498,7 @@
           <ulink url='&lfs-ticket-root;5273'>#5273</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[rahul] - Changed from pkg-config to pkgconf 1.9.5.  Fixes
+          <para>[rahul] - Changed from pkg-config to pkgconf-1.9.5.  Fixes
           <ulink url='&lfs-ticket-root;5274'>#5274</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -397,7 +514,7 @@
           <ulink url='&lfs-ticket-root;5273'>#5273</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[rahul] - pkg-config から pkgconf 1.9.5 への変更。
+          <para>[rahul] - pkg-config から pkgconf-1.9.5 への変更。
           <ulink url='&lfs-ticket-root;5274'>#5274</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
@@ -544,7 +661,7 @@
           <para>[bdubbs] - Update to flit_core-3.9.0. Fixes
           <ulink url='&lfs-ticket-root;5257'>#5257</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - Update to eudev-3.2.12. Fixes
           <ulink url='&lfs-ticket-root;5260'>#5260</ulink>.</para>
         </listitem>
@@ -572,7 +689,7 @@
           <para>[bdubbs] - flit_core-3.9.0 へのアップデート。
           <ulink url='&lfs-ticket-root;5257'>#5257</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - eudev-3.2.12 へのアップデート。
           <ulink url='&lfs-ticket-root;5260'>#5260</ulink> を Fix に。</para>
         </listitem>

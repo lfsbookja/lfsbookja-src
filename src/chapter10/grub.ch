@@ -260,6 +260,33 @@
 @z
 
 @x
+      The <command>insmod</command> commands load the
+      <application>GRUB</application> modules named
+      <filename>part_gpt</filename> and <filename>ext2</filename>.
+      Despite the naming, <filename>ext2</filename> actually supports
+      <systemitem class='filesystem'>ext2</systemitem>,
+      <systemitem class='filesystem'>ext3</systemitem>, and
+      <systemitem class='filesystem'>ext4</systemitem> filesystems.
+      The <command>grub-install</command> command has embedded some modules
+      into the main <application>GRUB</application> image (installed into
+      the MBR or the GRUB BIOS partition) to access the other modules
+      (in <filename class='directory'>/boot/grub/i386-pc</filename>) without
+      a chicken-or-egg issue, so with a typical configuration these two
+      modules are already embedded and those two <command>insmod</command>
+      commands will do nothing.  But they do no harm anyway, and they may
+      be needed with some rare configurations.
+@y
+      <command>insmod</command> コマンドは <application>GRUB</application> モジュールである <filename>part_gpt</filename> と <filename>ext2</filename> をロードします。
+      そしてその名前こそ <filename>ext2</filename> となっていますが、このモジュールは実際には <systemitem
+      class='filesystem'>ext2</systemitem>, <systemitem
+      class='filesystem'>ext3</systemitem>, <systemitem
+      class='filesystem'>ext4</systemitem> の各ファイルシステムをサポートしています。
+      <command>grub-install</command> コマンドによっていくつかのモジュールは、メインの（MBR または GRUB BIOS パーティションにインストールされる）<application>GRUB</application> イメージ内に埋め込まれており、鶏が先か卵が先かという問題を生じさせることなく、そこから（<filename class='directory'>/boot/grub/i386-pc</filename> にある）他モジュールへのアクセスを可能としています。
+      したがってごく普通の設定を行っていれば、上述の 2 つのもジュールはすでに埋め込まれていることとなり、<command>insmod</command> コマンドは何も行わないことになります。
+      そうなったとしても何も問題はありませんが、特殊な設定を行った際には必要となるかもしれません。
+@z
+
+@x
     <note><para>From <application>GRUB</application>'s perspective, the
     kernel files are relative to the partition used.  If you
     used a separate /boot partition, remove /boot from the above
