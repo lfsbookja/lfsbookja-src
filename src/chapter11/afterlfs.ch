@@ -128,7 +128,7 @@
       featured browser and copy/paste capabilities are available. This method
       allows using applications like the host's version of wget to download
       package sources to a location available when working in the chroot
-      envirnment.
+      environment.
 @y
       この方法を使えば、完全なグラフィック環境を扱うことができ、充実したブラウザーを利用してコピー/ペースト機能が活用できます。
       またホスト内にある wget のようなアプリケーションを使うことができるため、パッケージソースをダウンロードして、chroot 環境内で作業可能な場所に配置することができます。

@@ -44,6 +44,22 @@
 @z
 
 @x
+      <para>2023-08-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to udev-lfs-20230818.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-08-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - udev-lfs-20230818 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-08-15</para>
       <itemizedlist>
         <listitem>
@@ -69,7 +85,7 @@
         </listitem>
         <listitem>
           <para>[rahul] - Update to pkgconf-2.0.1. Fixes
-          <ulink url='&lfs-ticket-root;5315'>#5316</ulink>.</para>
+          <ulink url='&lfs-ticket-root;5316'>#5316</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -97,7 +113,7 @@
         </listitem>
         <listitem>
           <para>[rahul] - pkgconf-2.0.1 へのアップデート。
-          <ulink url='&lfs-ticket-root;5315'>#5316</ulink> を Fix に。</para>
+          <ulink url='&lfs-ticket-root;5316'>#5316</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z

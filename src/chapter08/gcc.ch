@@ -254,7 +254,7 @@
       In the asan tests, several tests in <filename>asan_test.C</filename> 
         are known to fail.
       The test named <filename>interception-malloc-test-1.C</filename> 
-        are known to fail.
+        is known to fail.
 @y
       Glibc-2.38 を利用した場合に、<filename>data-model-4.c</filename>, <filename>conftest-1.c</filename> という解析テストが失敗します。
       また asan テストにおいて、<filename>asan_test.C</filename> テスト内のサブテストがいくつか失敗します。
