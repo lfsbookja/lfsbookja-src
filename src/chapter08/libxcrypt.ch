@@ -98,7 +98,7 @@
       them at runtime. However, the only known binary-only applications
       that link against these functions require ABI version 1.  If you must
       have such functions because of some binary-only application or to be
-      to be compliant with LSB, build the package again with the following
+      compliant with LSB, build the package again with the following
       commands:</para>
 @y
       <para>
