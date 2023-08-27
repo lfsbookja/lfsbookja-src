@@ -47,6 +47,24 @@
       <para>2023-08-18</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to linux-6.4.12.  Fixes
+          <ulink url='&lfs-ticket-root;5320'>#5320</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-08-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-6.4.12 へのアップデート。
+          <ulink url='&lfs-ticket-root;5320'>#5320</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-08-18</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to udev-lfs-20230818.</para>
         </listitem>
       </itemizedlist>
