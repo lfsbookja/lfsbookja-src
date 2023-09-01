@@ -70,13 +70,28 @@
 @z
 
 @x
+    <note><para>The test time for Tar can be reduced significantly on a
+    system with multiple cores.  To do this, append
+    <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> to the line above.  For
+    instance, using -j4 can reduce the test time by over 70
+    percent.</para></note>
+@y
+    <note><para>
+    Tar のテスト時間は、システムが有するマルチコアに応じて明らかに少なくて済みます。
+    そのようにするためには、上のコマンドに <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> を加えます。
+    例えば -j4 を指定すると、テスト時間は 70% 以上減少させることができます。
+    </para></note>
+@z
+
+@x
     <para>One test, capabilities: binary store/restore, is known to fail if it is
     run because LFS lacks selinux, but will be skipped if the host kernel does
-    not support extended attributes on the filesystem used for building LFS.</para>
+    not support extended attributes or security labels on the filesystem
+    used for building LFS.</para>
 @y
     <para>
     テストの 1 つ capabilities: binary store/restore は、LFS が selinux を含んでいないため、実行に失敗します。
-    ただし LFS ビルドに利用するファイルシステム上において、ホストカーネルが拡張属性をサポートしていない場合、このテストはスキップされます。
+    ただし LFS ビルドに利用するファイルシステム上において、ホストカーネルが拡張属性またはセキュリティラベルをサポートしていない場合、このテストはスキップされます。
     </para>
 @z
 

@@ -9,7 +9,7 @@
 m4_include([version.ac])[] dnl define lfs_version
 
 AC_PREREQ([2.63])
-AC_INIT([LFSbookja], [git], [matsuand AT users DOT osdn DOT me])
+AC_INIT([LFSbookja], [12.0], [matsuand AT users DOT osdn DOT me])
 AM_INIT_AUTOMAKE([-Wno-portability])
 AM_MAINTAINER_MODE
 

@@ -34,14 +34,14 @@
 @z
 
 @x
-  <para>In the 11.4 release, <parameter>--disable-fixincludes</parameter>
+  <para>In the 11.4 release, <parameter>- -disable-fixincludes</parameter>
   is set for GCC.  It's a configure switch newly added in GCC 13.1 to
   prevent GCC from <quote>fixing</quote> the system headers.  Such a
   <quote>fix</quote> is unnecessary for a modern Linux system and may cause
   issues if a package is updated after installing GCC.</para>
 @y
   <para>
-  バージョン 11.4 のリリースにおいて GCC に対して <parameter>--disable-fixincludes</parameter> をセットするようにしました。
+  バージョン 11.4 のリリースにおいて GCC に対して <parameter>- -disable-fixincludes</parameter> をセットするようにしました。
   これは GCC 13.1 において新たに追加された configure スイッチであり、GCC がシステムヘッダーを<quote>固定</quote>しないようにするものです。
   このような<quote>固定</quote>は、最近の Linux システムにおいては不要であり、GCC のインストール後に特定パッケージを更新する際に、問題を引き起こす可能性があります。
   </para>

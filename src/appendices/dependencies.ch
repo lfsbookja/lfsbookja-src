@@ -162,9 +162,9 @@
           <seg>Automake, Diffutils, Findutils, GCC, Libtool</seg>
 @z
 @x
-          <seg>Automake</seg>
+          <seg>Automake and Coreutils</seg>
 @y
-          <seg>Automake</seg>
+          <seg>Automake, Coreutils</seg>
 @z
 @x
             <ulink url="&blfs-book;postlfs/emacs.html">Emacs</ulink>
@@ -193,9 +193,9 @@
           Flex, GCC, Gettext, Gzip, Libtool, Tar</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Coreutils</seg>
 @y
-          <seg>なし</seg>
+          <seg>Coreutils</seg>
 @z
 @x
           <seg>None</seg>
@@ -377,11 +377,13 @@
 
 %----------------------------------------------------------------------
 @x coreutils
-          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep,
-          Libcap, Make, OpenSSL, Patch, Perl, Sed, and Texinfo</seg>
+          <seg>Autoconf, Automake, Bash, Binutils, Coreutils, GCC, Gettext,
+          Glibc, GMP, Grep, Libcap, Make, OpenSSL, Patch, Perl, Sed, and
+          Texinfo</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep,
-          Libcap, Make, OpenSSL, Patch, Perl, Sed, Texinfo</seg>
+          <seg>Autoconf, Automake, Bash, Binutils, Coreutils, GCC, Gettext,
+          Glibc, GMP, Grep, Libcap, Make, OpenSSL, Patch, Perl, Sed,
+          Texinfo</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2030,11 +2032,11 @@
 @x
           <seg><phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
           IProute2, Kmod, Man-DB, Procps-ng, Python,
-		  &systemd-udev;, and Util-linux</seg>
+          &systemd-udev;, and Util-linux</seg>
 @y
           <seg><phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
           IProute2, Kmod, Man-DB, Procps-ng, Python,
-		  &systemd-udev;, Util-linux</seg>
+          &systemd-udev;, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -2304,11 +2306,9 @@
 @z
 % リンク部分、大半省略
 @x
-            <ulink url="&blfs-book;general/valgrind.html">Valgrind</ulink>,
             and
             <ulink url="&blfs-book;postlfs/zsh.html">zsh</ulink>
 @y
-            <ulink url="&blfs-book;general/valgrind.html">Valgrind</ulink>,
             <ulink url="&blfs-book;postlfs/zsh.html">zsh</ulink>
 @z
 

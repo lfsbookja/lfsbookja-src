@@ -308,7 +308,7 @@ DISTCLEANFILES = $(srcs)
 ROOT_ID = 
 RENDERTMP = tmp
 CHUNK_QUIET = 1
-URLTOP = http\:\/\/lfsbookja.osdn.jp\/git-ja
+URLTOP = http\:\/\/lfsbookja.osdn.jp\/12.0-ja
 
 #ALLXML := $(filter-out $(RENDERTMP)/%, \
 #	$(wildcard ./*.xml ./*/*.xml))
