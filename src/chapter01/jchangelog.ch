@@ -50,6 +50,17 @@
 
 -->
    <listitem>
+      <para>2023-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          12.0 リリース対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2023-08-27</para>
       <itemizedlist>
         <listitem>
