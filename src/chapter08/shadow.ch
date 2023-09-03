@@ -169,6 +169,16 @@
           </para>
 @z
 
+@x --without-libbsd
+           <para>Do not use the readpassphrase function from libbsd which
+           is not in LFS.  Use the internal copy instead.</para>
+@y
+           <para>
+           libbsd の readpassphrase 関数は LFS 内には無いため用いないようにします。
+           その代わりに内部にコピーされている分を用います。
+           </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y

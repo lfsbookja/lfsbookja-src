@@ -59,6 +59,17 @@
            </para>
 @z
 
+@x --no-cache-dir
+          <para>Prevents pip from copying the created wheel into the
+          <filename class='directory'>/root/.cache/pip</filename>
+          directory.</para>
+@y
+          <para>
+          生成された wheel を <filename
+          class='directory'>/root/.cache/pip</filename> ディレクトリにコピーしないようにします。
+          </para>
+@z
+
 @x install
            <para>This command installs the package.</para>
 @y

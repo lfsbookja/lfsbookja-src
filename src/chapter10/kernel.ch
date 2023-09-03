@@ -364,7 +364,7 @@
           <para>Support running the interrupt controller of 64-bit x86
           processors in x2APIC mode.  x2APIC may be enabled by firmware on
           64-bit x86 systems, and a kernel without this option enabled will
-          panic on boot if x2APIC is enabled by firmware.  This option has
+          panic on boot if x2APIC is enabled by firmware.  This option
           has no effect, but also does no harm if x2APIC is disabled by the
           firmware.</para>
 @y

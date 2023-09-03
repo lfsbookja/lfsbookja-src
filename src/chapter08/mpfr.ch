@@ -23,14 +23,6 @@
 @z
 
 @x
-    <para>Fix a test case based on a bug of old Glibc releases:</para>
-@y
-    <para>
-    古い Glibc リリースのバグに起因するテストケースを修正します。
-    </para>
-@z
-
-@x
     <para>Prepare MPFR for compilation:</para>
 @y
     <para>&PreparePackage1;MPFR&PreparePackage2;</para>

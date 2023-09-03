@@ -176,6 +176,15 @@
           </para>
 @z
 
+@x -Dnobody-group=nogroup
+          <para>Tell the package the group name with GID 65534 is
+          <systemitem class='groupname'>nogroup</systemitem>.</para>
+@y
+          <para>
+          <systemitem class='groupname'>nogroup</systemitem> がグループ GID 65534 であるグループ名として指定します。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
