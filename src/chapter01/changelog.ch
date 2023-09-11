@@ -44,6 +44,87 @@
 @z
 
 @x
+      <para>2023-09-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Fix an issue in pkgconf-2.0.3 causing
+          BLFS packages fail to build.  Fixes
+          <ulink url='&lfs-ticket-root;5341'>#5341</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-09-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - pkgconf-2.0.3 が BLFS パッケージのビルド失敗を招くため修正。
+          <ulink url='&lfs-ticket-root;5341'>#5341</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-09-05</para>
+      <itemizedlist>
+        <listitem>
+           <para>[xry111] - Move pkgconf before binutils for binutils
+           building system to detect zstd properly.  Fixes
+           <ulink url='&lfs-ticket-root;5340'>#5340</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to linux-6.5.1.  Fixes
+          <ulink url='&lfs-ticket-root;5332'>#5332</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to pkgconf-2.0.3.  Fixes
+          <ulink url='&lfs-ticket-root;5339'>#5339</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to dbus-1.14.10.  Fixes
+          <ulink url='&lfs-ticket-root;5337'>#5337</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-09-05</para>
+      <itemizedlist>
+        <listitem>
+           <para>[xry111] - binutils によるシステムビルドにて zstd を適切に検出できるように、binutils ビルドの前に pkgconf を移動。
+           <ulink url='&lfs-ticket-root;5340'>#5340</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - linux-6.5.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5332'>#5332</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - pkgconf-2.0.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5339'>#5339</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - dbus-1.14.10 へのアップデート。
+          <ulink url='&lfs-ticket-root;5337'>#5337</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-09-04</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Move caution regarding building by mixing
+           different version of LFS to General Compilation Instructions. Fixes
+           <ulink url='&lfs-ticket-root;5338'>#5338</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-09-04</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - バージョンが異なる LFS ブックの手順を混在させてビルドしてしまった場合の注意説明を、全般的なコンパイル手順の項へ移動。
+           <ulink url='&lfs-ticket-root;5338'>#5338</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-09-02</para>
       <itemizedlist>
         <listitem>

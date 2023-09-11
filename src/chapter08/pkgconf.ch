@@ -28,17 +28,10 @@
 @z
 
 @x
-    <para>Pkgconf-2.0.0 explicitly errors when attempting to run
-    <option>- -modversion</option> with multiple arguments, even if these
-    arguments are constraints for the same package.  This breaks many
-    packages in BLFS. Run this sed to reinstate the old
-    output for pkgconf:</para>
+    <para>Fix a regression in pkgconf-2.0.3 breaking BLFS packages:</para>
 @y
     <para>
-    Pkgconf 2.0.0 では、複数パッケージに対して <option>- -modversion</option> を実行した場合、明示的にエラーとします。
-    たとえ同じパッケージに対する指定であっても変わりません。
-    これは BLFS の多くのパッケージにおいて障害となります。
-    以下の sed を実行して、pkgconf の出力を古いものにします。
+    pkgconf-2.0.3 における機能減退が BLFS パッケージに影響するため修正します。
     </para>
 @z
 

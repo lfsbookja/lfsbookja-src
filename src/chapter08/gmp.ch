@@ -139,7 +139,7 @@
 @z
 
 @x
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
       <segtitle>&InstalledLibrary;</segtitle>

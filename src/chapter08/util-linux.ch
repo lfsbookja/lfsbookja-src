@@ -27,7 +27,7 @@
 @z
 
 @x
-    <para>First, disable a problem test:</para>
+    <para>First, disable a problematic test:</para>
 @y
     <para>
     はじめに問題のあるテストを無効にします。
@@ -1070,12 +1070,13 @@
           <para>Creates new UUIDs. Each new UUID is a random number likely to be
           unique among all UUIDs created, on the local system and on other
           systems, in the past and in the future, with extremely high
-          probability (~340 trillion trillion trillion unique UUIDs are possible)</para>
+          probability (2<superscript>128</superscript> UUIDs are
+          possible)</para>
 @y
           <para>
           新しい UUID を生成します。
           生成される UUID は乱数であり、自他システムでも過去現在にわたってもユニークなものです。
-          その可能性は極めて高いものです（340 兆×兆×兆個の UUID が可能です）。
+          その可能性は極めて高いものです（2<superscript>128</superscript>個の UUID が可能です）。
           </para>
 @z
 

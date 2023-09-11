@@ -262,15 +262,17 @@
 %----------------------------------------------------------------------
 @x binutils
           <seg>Bash, Binutils, Coreutils, Diffutils, File, Flex, Gawk, GCC,
-          Glibc, Grep, Make, Perl, Sed, Texinfo, and Zlib</seg>
+          Glibc, Grep, Make, Perl, Pkgconf, Sed, Texinfo, Zlib, and
+          Zstd</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, File, Flex, Gawk, GCC,
-          Glibc, Grep, Make, Perl, Sed, Texinfo, Zlib</seg>
+          Glibc, Grep, Make, Perl, Pkgconf, Sed, Texinfo, Zlib,
+          Zstd</seg>
 @z
 @x
-          <seg>Glibc and Zlib</seg>
+          <seg>Glibc, Zlib, and Zstd</seg>
 @y
-          <seg>Glibc, Zlib</seg>
+          <seg>Glibc, Zlib, Zstd</seg>
 @z
 @x
           <seg>DejaGNU and Expect</seg>
@@ -371,8 +373,13 @@
 @z
 @x
             <ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink>
+            and
+            <ulink url='http://cyberelk.net/tim/software/patchutils/'>
+              patchutils</ulink>
 @y
-            <ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink>
+            <ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink>,
+            <ulink url='http://cyberelk.net/tim/software/patchutils/'>
+              patchutils</ulink>
 @z
 
 %----------------------------------------------------------------------
@@ -2030,11 +2037,13 @@
           <seg>なし</seg>
 @z
 @x
-          <seg><phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
+          <seg>Binutils,
+          <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
           IProute2, Kmod, Man-DB, Procps-ng, Python,
           &systemd-udev;, and Util-linux</seg>
 @y
-          <seg><phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
+          <seg>Binutils,
+          <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
           IProute2, Kmod, Man-DB, Procps-ng, Python,
           &systemd-udev;, Util-linux</seg>
 @z
@@ -2689,9 +2698,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC, Libelf, and &systemd-udev;</seg>
+          <seg>Binutils, GCC, Libelf, and &systemd-udev;</seg>
 @y
-          <seg>GCC, Libelf, &systemd-udev;</seg>
+          <seg>Binutils, GCC, Libelf, &systemd-udev;</seg>
 @z
 @x
           <seg>
