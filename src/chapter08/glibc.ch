@@ -41,11 +41,12 @@
 @z
 
 @x
-    <para>Now fix a regression causing the posix_memalign() function 
-    to be very slow in some conditions:</para>
+    <para>Now fix two security vulnerabilities and a regression causing the
+    posix_memalign() function very slow in some conditions:</para>
 @y
     <para>
-    posix_memalign() という関数が特定条件下において極端に遅くなるため、この機能低下を修正します。
+    ここで 2 つのセキュリティぜい弱性と機能後退を修正します。
+    機能後退は、特定環境下において posix_memalign() 関数が非常に遅くなっていたものです。
     </para>
 @z
 

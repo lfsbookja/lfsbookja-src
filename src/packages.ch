@@ -135,11 +135,11 @@
 @z
 
 @x
-<!ENTITY linux-knl-du "1200 - 8800 MB (typically about 1700 MB)">
-<!ENTITY linux-knl-sbu "1.5 - 130.0 SBU (typically about 12 SBU)">
+<!ENTITY linux-knl-du "1.8 - 10.6 GB (typically about 2 GB)">
+<!ENTITY linux-knl-sbu "0.6 - 20.4 SBU (typically about 1.4 SBU)">
 @y
-<!ENTITY linux-knl-du "1200 - 8800 MB (一般的には 1700 MB 程度)">
-<!ENTITY linux-knl-sbu "1.5 - 130.0 SBU (一般的には 12 SBU 程度)">
+<!ENTITY linux-knl-du "1.8 - 10.6 GB (一般的には 2 GB 程度)">
+<!ENTITY linux-knl-sbu "0.6 - 20.4 SBU (一般的には 1.4 SBU 程度)">
 @z
 @x
 <!ENTITY linux-headers-tmp-sbu "less than 0.1 SBU">

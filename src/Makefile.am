@@ -245,4 +245,13 @@ version:
 
 #all: lfs nochunks pdf dump-commands
 
-.PHONY : all lfs nochunks pdf profile-html tmpdir validate md5sums wget-list version
+dist:
+	$(Q)DIST=/tmp/LFS-RELEASE ./git-version.sh $(REV)
+	$(Q)rm -f lfs-$$(</tmp/LFS-RELEASE).tar.xz
+	$(Q)tar cJf lfs-$$(</tmp/LFS-RELEASE).tar.xz \
+		$(shell git ls-tree HEAD . --name-only) version.ent \
+		-C /tmp LFS-RELEASE \
+		--transform "s,^,lfs-$$(</tmp/LFS-RELEASE)/,"
+	$(Q)echo "Generated XML tarball lfs-$$(</tmp/LFS-RELEASE).tar.xz"
+
+.PHONY : all book dump-commands nochunks pdf profile-html tmpdir validate md5sums wget-list version dist

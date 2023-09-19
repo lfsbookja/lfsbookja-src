@@ -44,6 +44,76 @@
 @z
 
 @x
+      <para>2023-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to linux-6.5.3.  Fixes
+          <ulink url='&lfs-ticket-root;5343'>#5343</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to iana-etc-20230912.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to iproute2-6.5.0.  Fixes
+          <ulink url='&lfs-ticket-root;5342'>#5342</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - linux-6.5.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5343'>#5343</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - iana-etc-20230912 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - iproute2-6.5.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5342'>#5342</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-09-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Fix CVE-2023-4806 for Glibc-2.38.  Fixes
+          <ulink url='&lfs-ticket-root;5347'>#5347</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-09-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Glibc-2.38 における CVE-2023-4806 を修正しました。
+          <ulink url='&lfs-ticket-root;5347'>#5347</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-09-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Fix CVE-2023-4527 for Glibc-2.38.  Fixes
+          <ulink url='&lfs-ticket-root;5346'>#5346</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-09-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Glibc-2.38 における CVE-2023-4527 を修正しました。
+          <ulink url='&lfs-ticket-root;5346'>#5346</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-09-07</para>
       <itemizedlist>
         <listitem>
