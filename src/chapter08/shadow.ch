@@ -377,7 +377,7 @@
 @x
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
         getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
-        grpconv, grpunconv, lastlog, login, logoutd, newgidmap, newgrp,
+        grpconv, grpunconv, login, logoutd, newgidmap, newgrp,
         newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
         sg (link to newgrp), su, useradd, userdel, usermod,
         vigr (link to vipw), and vipw</seg>
@@ -386,7 +386,7 @@
 @y
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
         getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
-        grpconv, grpunconv, lastlog, login, logoutd, newgidmap, newgrp,
+        grpconv, grpunconv, login, logoutd, newgidmap, newgrp,
         newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
         sg (newgrp へのリンク), su, useradd, userdel, usermod,
         vigr (vipw へのリンク), vipw</seg>
@@ -536,15 +536,6 @@
 @y
           <para>
           <filename>/etc/gshadow</filename> ファイルを元に <filename>/etc/group</filename> ファイルを更新し <filename>/etc/gshadow</filename> ファイルを削除します。
-          </para>
-@z
-
-@x lastlog
-          <para>Reports the most recent login of all users or of a
-          given user</para>
-@y
-          <para>
-          全ユーザーの中での最新ログインの情報、または指定ユーザーの最新ログインの情報を表示します。
           </para>
 @z
 

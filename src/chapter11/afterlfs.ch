@@ -207,8 +207,7 @@
 @x
        This method also provides a full graphical environment, but first
        requires installing
-        <ulink url="&blfs-book;postlfs/openssh.html">sshd</ulink> and
-        <ulink url="&blfs-book;basicnet/wget.html">wget</ulink>
+        <ulink url="&blfs-book;postlfs/openssh.html">sshd</ulink>
        on the LFS system, usually in chroot. It also requires a second
        computer. This method has the advantage of being simple by not requiring
        the complexity of the chroot environment. It also uses your LFS built
@@ -217,13 +216,32 @@
 @y
        この方法はグラフィック環境下においても利用できます。
        まず何よりも
-        <ulink url="&blfs-book;postlfs/openssh.html">sshd</ulink> と
-        <ulink url="&blfs-book;basicnet/wget.html">wget</ulink>
+        <ulink url="&blfs-book;postlfs/openssh.html">sshd</ulink>
        を LFS システムにインストールすることが必要です。
        これは通常 chroot 環境にて行います。
        また 2 つめのコンピューターも必要です。
        この方法は、複雑な chroot 環境を必要としないことから、単純であるという利点があります。
        追加導入するパッケージに対しても、LFS からビルドしたカーネルを用いていくことになるので、インストールパッケージに対しても完全なシステム構成を保証し続けることになります。
+@z
+
+@x
+      You may use the <command>scp</command> command to upload the package
+      sources to be built onto the LFS system.  If you want to download
+      the sources onto the LFS system directly instead, install
+      <ulink url="&blfs-book;general/libtasn1.html">libtasn1</ulink>,
+      <ulink url="&blfs-book;postlfs/p11-kit.html">p11-kit</ulink>,
+      <ulink url="&blfs-book;postlfs/make-ca.html">make-ca</ulink>, and
+      <ulink url="&blfs-book;basicnet/wget.html">wget</ulink>
+      in chroot (or upload their sources using <command>scp</command>
+      after booting the LFS system).
+@y
+      LFS システム上においてビルドするソースパッケージを <command>scp</command> コマンドによってアップロードすることができます。
+      LFS システム上に直接ダウンロードするのであれば、chroot 環境内において <ulink
+      url="&blfs-book;general/libtasn1.html">libtasn1</ulink>,
+      <ulink url="&blfs-book;postlfs/p11-kit.html">p11-kit</ulink>,
+      <ulink url="&blfs-book;postlfs/make-ca.html">make-ca</ulink>,
+      <ulink url="&blfs-book;basicnet/wget.html">wget</ulink> をインストールしてください。
+      （あるいは LFS システムの起動後に、それらのソースを <command>scp</command> を使ってアップロードしてください。）
 @z
 
 @x

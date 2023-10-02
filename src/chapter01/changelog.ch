@@ -44,6 +44,121 @@
 @z
 
 @x
+      <para>2023-10-01</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Disable building nscd in glibc. Fixes
+           <ulink url='&lfs-ticket-root;5349'>#5349</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to iana-etc-20230929. Addresses
+           <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to vim-9.0.1968. Addresses
+           <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to openssl-3.1.3. Fixes
+           <ulink url='&lfs-ticket-root;5350'>#5350</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to meson-1.2.2. Fixes
+           <ulink url='&lfs-ticket-root;5356'>#5356</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to man-db-2.12.0. Fixes
+           <ulink url='&lfs-ticket-root;5354'>#5354</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-6.5.5. Fixes
+           <ulink url='&lfs-ticket-root;5352'>#5352</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to kmod-31. Fixes
+           <ulink url='&lfs-ticket-root;5355'>#5355</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to kbd-2.6.3. Fixes
+           <ulink url='&lfs-ticket-root;5351'>#5361</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to gettext-0.22.2. Fixes
+           <ulink url='&lfs-ticket-root;5348'>#5348</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to bc-6.7.0. Fixes
+           <ulink url='&lfs-ticket-root;5353'>#5353</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-10-01</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - glibc において nscd ビルドを無効とする。
+           <ulink url='&lfs-ticket-root;5349'>#5349</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - iana-etc-20230929 へのアップデート。
+           <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - vim-9.0.1968 へのアップデート。
+           <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - openssl-3.1.3 へのアップデート。
+           <ulink url='&lfs-ticket-root;5350'>#5350</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - meson-1.2.2 へのアップデート。
+           <ulink url='&lfs-ticket-root;5356'>#5356</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - man-db-2.12.0 へのアップデート。
+           <ulink url='&lfs-ticket-root;5354'>#5354</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-6.5.5 へのアップデート。
+           <ulink url='&lfs-ticket-root;5352'>#5352</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - kmod-31 へのアップデート。
+           <ulink url='&lfs-ticket-root;5355'>#5355</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - kbd-2.6.3 へのアップデート。
+           <ulink url='&lfs-ticket-root;5351'>#5361</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - gettext-0.22.2 へのアップデート。
+           <ulink url='&lfs-ticket-root;5348'>#5348</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - bc-6.7.0 へのアップデート。
+           <ulink url='&lfs-ticket-root;5353'>#5353</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-09-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update Glibc upstream fixes patch to plug a
+          memory leak introduced by the security fix.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-09-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Glibc のアップストリームが提供する修正パッチを更新して、セキュリティ修正によって発生したメモリリークを解消。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-09-17</para>
       <itemizedlist>
         <listitem>

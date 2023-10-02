@@ -51,15 +51,6 @@
           </para>
 @z
 
-@x gl_cv_macro_MB_CUR_MAX_good=y
-          <para>This is needed to work around an issue in the gnulib copy
-          shipped by the package which would break cross compilation.</para>
-@y
-          <para>
-          このパッケージが提供する gnulib のコピーが、クロスコンパイルの失敗を引き起こす可能性があるため、それを回避するためにこの指定が必要になります。
-          </para>
-@z
-
 @x
     <para>Compile the package:</para>
 @y
