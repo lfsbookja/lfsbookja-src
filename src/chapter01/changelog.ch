@@ -44,6 +44,221 @@
 @z
 
 @x
+      <para>2023-11-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to elfutils-0.190.  Fixes
+          <ulink url='&lfs-ticket-root;5373'>#5373</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to vim-9.0.2103.  Addresses
+           <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to linux-6.6.1.  Fixes
+          <ulink url='&lfs-ticket-root;5369'>#5369</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to xz-5.4.5.  Fixes
+          <ulink url='&lfs-ticket-root;5371'>#5371</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to iana-etc-20231107.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to gawk-5.3.0.  Fixes
+          <ulink url='&lfs-ticket-root;5372'>#5372</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to bash-5.2.21.  Fixes
+          <ulink url='&lfs-ticket-root;5375'>#5375</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to iproute2-6.6.0.  Fixes
+          <ulink url='&lfs-ticket-root;5374'>#5374</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-11-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - elfutils-0.190 へのアップデート。
+          <ulink url='&lfs-ticket-root;5373'>#5373</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - vim-9.0.2103 へのアップデート。
+           <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - linux-6.6.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5369'>#5369</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - xz-5.4.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5371'>#5371</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - iana-etc-20231107 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - gawk-5.3.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5372'>#5372</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - bash-5.2.21 へのアップデート。
+          <ulink url='&lfs-ticket-root;5375'>#5375</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - iproute2-6.6.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5374'>#5374</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-11-01</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to iana-etc-20231019. Addresses
+           <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to wheel-0.41.3. Fixes
+           <ulink url='&lfs-ticket-root;5370'>#5370</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to shadow-4.14.2. Fixes
+           <ulink url='&lfs-ticket-root;5368'>#5368</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to openssl-3.1.4. Fixes
+           <ulink url='&lfs-ticket-root;5367'>#5367</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to texinfo-7.1. Fixes
+           <ulink url='&lfs-ticket-root;5364'>#5364</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to meson-1.2.3. Fixes
+           <ulink url='&lfs-ticket-root;5366'>#5366</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to bc-6.7.2. Fixes
+           <ulink url='&lfs-ticket-root;5363'>#5363</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-6.5.9. Fixes
+           <ulink url='&lfs-ticket-root;5365'>#5365</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to Python-3.12.0. Fixes
+           <ulink url='&lfs-ticket-root;5357'>#5357</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Add setuptools-68.2.2. Fixes
+           <ulink url='&lfs-ticket-root;5358'>#5358</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-11-01</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - iana-etc-20231019 へのアップデート。
+           <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - wheel-0.41.3 へのアップデート。
+           <ulink url='&lfs-ticket-root;5370'>#5370</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - shadow-4.14.2 へのアップデート。
+           <ulink url='&lfs-ticket-root;5368'>#5368</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - openssl-3.1.4 へのアップデート。
+           <ulink url='&lfs-ticket-root;5367'>#5367</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - texinfo-7.1 へのアップデート。
+           <ulink url='&lfs-ticket-root;5364'>#5364</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - meson-1.2.3 へのアップデート。
+           <ulink url='&lfs-ticket-root;5366'>#5366</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - bc-6.7.2 へのアップデート。
+           <ulink url='&lfs-ticket-root;5363'>#5363</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-6.5.9 へのアップデート。
+           <ulink url='&lfs-ticket-root;5365'>#5365</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Python-3.12.0 へのアップデート。
+           <ulink url='&lfs-ticket-root;5357'>#5357</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - setuptools-68.2.2 を追加。
+           <ulink url='&lfs-ticket-root;5358'>#5358</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-10-15</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to linux-6.5.7. Fixes
+           <ulink url='&lfs-ticket-root;5362'>#5362</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to shadow-4.14.1. Fixes
+           <ulink url='&lfs-ticket-root;5361'>#5361</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to gettext-0.22.3. Fixes
+           <ulink url='&lfs-ticket-root;5359'>#5359</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-10-15</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - linux-6.5.7 へのアップデート。
+           <ulink url='&lfs-ticket-root;5362'>#5362</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - shadow-4.14.1 へのアップデート。
+           <ulink url='&lfs-ticket-root;5361'>#5361</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - gettext-0.22.3 へのアップデート。
+           <ulink url='&lfs-ticket-root;5359'>#5359</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2023-10-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update Glibc upstream fixes patch to fix
+          CVE-2023-4911.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-10-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - CVE-2023-4911 に対応するため Glibc アップストリームの修正パッチを更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-10-01</para>
       <itemizedlist>
         <listitem>

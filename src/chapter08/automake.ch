@@ -43,14 +43,23 @@
 @z
 
 @x
-    <para> Using the -j4 make option speeds up the tests, even on systems with
-    only one processor, due to internal delays in individual tests.  To test
+    <para>Using four parallel jobs speeds up the tests, even on systems with
+    less logical cores, due to internal delays in individual tests.  To test
     the results, issue:</para>
 @y
     <para>
-    make オプションの -j4 を用いるとテストを速く進めることができます。
-    たとえ 1 つのプロセッサーであっても有用であり、個々のテストにおける内部遅延に関係するためです。
+    4 つの並行ビルドとすることにより、テストを速く進めることができます。
+    たとえ論理コア数がそれより少ない場合であっても有用であり、個々のテストにおける内部遅延に関係するためです。
     ビルド結果をテストするには以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Replace <replaceable>$((...))</replaceable> with the number of
+    logical cores you want to use if you don't want to use all.</para>
+@y
+    <para>
+    <replaceable>$((...))</replaceable> の部分は、利用したい論理コア数に書き換えてください。
     </para>
 @z
 

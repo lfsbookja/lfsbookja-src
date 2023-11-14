@@ -265,6 +265,64 @@
 @z
 
 @x
+    For many modern systems with multiple processors (or cores) the
+    compilation time for a package can be reduced by performing a "parallel
+    make" by telling the make program how many processors are available via
+    a command line option or an environment variable.  For instance, an Intel
+    Core i9-13900K processor has 8 P (performance) cores and
+    16 E (efficiency) cores, and a P core can simultaneously run two threads
+    so each P core are modeled as two logical cores by the Linux kernel.
+    As the result there are 32 logical cores in total.  One obvious way to
+    use all these logical cores is allowing <command>make</command> to spawn
+    up to 32 build jobs.  This can be done by passing the
+    <parameter>-j32</parameter> option to <command>make</command>:
+@y
+    最新のシステムは複数プロセッサー (デュアルコアとも言います) であることが多く、パッケージのビルドにあたっては「同時並行のビルド」によりビルド時間を削減できます。
+    その場合プロセッサー数がいくつなのかを <command>make</command> プログラムの実行時に、コマンドラインオプション引数として、あるいは環境変数として指定します。
+    Intel コア i9-13900K プロセッサーは 8 P コア（P は performance の意味）、および 16 E コア（E は efficiency の意味）を持ちます。
+    1 つの P は同時に 2 つのスレッド実行が可能であり、Linux カーネルからは 2 つの論理コアとして扱われます。
+    したがって合計で 32 の論理コアを持つことになります。
+    明示的にその全コアを利用するには、<command>make</command> が 32 個のビルドジョブまで生成できるようにすることです。
+    これには <command>make</command> に対して <parameter>-j32</parameter> オプションを与えます。
+@z
+
+@x
+    Or set the <envar>MAKEFLAGS</envar> environment variable and its
+    content will be automatically used by <command>make</command> as
+    command line options:
+@y
+    あるいは環境変数 <envar>MAKEFLAGS</envar> を用います。
+    この変数の設定値は <command>make</command> が自動的にコマンドラインオプションとして利用します。
+@z
+
+@x
+      Never pass a <parameter>-j</parameter> option without a number to
+      <command>make</command> or set such an option in
+      <envar>MAKEFLAGS</envar>.  Doing so will allow <command>make</command>
+      to spawn infinite build jobs and cause system stability issue.
+@y
+      <parameter>-j</parameter> オプションに数値を与えずに <command>make</command> コマンドに受け渡したり、あるいは <envar>MAKEFLAGS</envar> に設定することはやめてください。
+      それを行ってしまうと <command>make</command> に対して無限のビルドジョブ生成を行わせるものとなり、システムの安定性を損なう問題が発生します。
+@z
+
+@x
+    To use all logical cores available for building packages in
+    <xref linkend='chapter-cross-tools'/> and
+    <xref linkend='chapter-temporary-tools'/>, set <envar>MAKEFLAGS</envar>
+    now in <filename>.bashrc</filename>:
+@y
+    <xref linkend='chapter-cross-tools'/> および <xref
+    linkend='chapter-temporary-tools'/> におけるパッケージのビルドに対して、利用可能な論理コアをすべて利用するように、ここで <filename>.bashrc</filename> にて <envar>MAKEFLAGS</envar> を設定します。
+@z
+
+@x
+    Replace <replaceable>$(nproc)</replaceable> with the number of logical
+    cores you want to use if you don't want to use all the logical cores.
+@y
+    <replaceable>$(nproc)</replaceable> 部分は、論理コアすべてでなく利用したい論理コア数を設定してください。
+@z
+
+@x
   <para>Finally, to ensure the environment is fully prepared for building the
   temporary tools, force the <command>bash</command> shell to read
   the new user profile:</para>

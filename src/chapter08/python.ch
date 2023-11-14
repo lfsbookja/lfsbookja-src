@@ -49,15 +49,6 @@
         </para>
 @z
 
-@x --with-system-ffi
-        <para>This switch enables linking against the system version of
-        <filename class='libraryfile'>libffi.so</filename>.</para>
-@y
-        <para>
-        本スイッチは、システムにインストールされている <filename class='libraryfile'>libffi.so</filename> をリンクすることを指示します。
-        </para>
-@z
-
 @x --enable-optimizations
         <para>This switch enables extensive, but time-consuming, optimization
         steps. The interpreter is built twice; tests performed on the first 

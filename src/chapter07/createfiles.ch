@@ -205,11 +205,11 @@
       <filename>lastlog</filename> files use 32-bit integers for timestamps
       and they'll be fundamentally broken after year 2038.  Many packages
       have stopped using them and other packages are going to stop using
-      them.  It is probably best to consider them deprecated..
+      them.  It is probably best to consider them deprecated.
 @y
       <phrase revision='sysv'><filename>utmp</filename>,
       </phrase><filename>wtmp</filename>, <filename>btmp</filename>,
       <filename>lastlog</filename> の各ファイルでは、32 ビットの整数値を使ってタイムスタンプを表現していますが、これは 2038 年以降には基本的に壊れるでしょう。
       多くのパッケージにおいてはこういった利用を停止しており、その他についても順次停止予定です。
-      したがってこういった表記は非推奨であると捉えるべきです..
+      したがってこういった表記は非推奨であると捉えるべきです。
 @z

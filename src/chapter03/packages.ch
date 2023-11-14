@@ -644,6 +644,14 @@
         <para>&Download;: <ulink url="&sed-url;"/></para>
 @z
 
+@x Setuptools
+        <para>Home page: <ulink url="&setuptools-home;"/></para>
+        <para>Download: <ulink url="&setuptools-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&setuptools-home;"/></para>
+        <para>&Download;: <ulink url="&setuptools-url;"/></para>
+@z
+
 @x shadow
         <para>Home page: <ulink url="&shadow-home;"/></para>
         <para>Download: <ulink url="&shadow-url;"/></para>

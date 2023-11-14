@@ -1219,9 +1219,9 @@
 <!-- Begin Jinja2 dependency info -->
 @z
 @x
-          <seg>MarkupSafe and Python</seg>
+          <seg>MarkupSafe, Python, Setuptools, and Wheel</seg>
 @y
-          <seg>MarkupSafe, Python</seg>
+          <seg>MarkupSafe, Python, Setuptools, Wheel</seg>
 @z
 @x
           <seg>MarkupSafe and Python</seg>
@@ -1732,9 +1732,9 @@
 <!-- Begin MarkupSafe dependency info -->
 @z
 @x
-          <seg>Python</seg>
+          <seg>Python, Setuptools, and Wheel</seg>
 @y
-          <seg>Python</seg>
+          <seg>Python, Setuptools, Wheel</seg>
 @z
 @x
           <seg>Python</seg>
@@ -1764,9 +1764,9 @@
 <!-- Begin Meson dependency info -->
 @z
 @x
-          <seg>Ninja and Python</seg>
+          <seg>Ninja, Python, Setuptools, and Wheel</seg>
 @y
-          <seg>Ninja, Python</seg>
+          <seg>Ninja, Python, Setuptools, Wheel</seg>
 @z
 @x
           <seg>Python</seg>
@@ -2224,6 +2224,38 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Setuptools dependency info -->
+@y
+<!-- Begin Setuptools dependency info -->
+@z
+@x
+          <seg>Python and Wheel</seg>
+@y
+          <seg>Python, Wheel</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Jinja2, MarkupSafe, and Meson</seg>
+@y
+          <seg>Jinja2, MarkupSafe, Meson</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Shadow
           <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk,
           GCC, Gettext, Glibc, Grep, Libcap, Libxcrypt, Make, and Sed</seg>
@@ -2583,13 +2615,11 @@
 @z
 @x
           <seg>
-            <phrase revision='sysv'>None</phrase>
-            <phrase revision='systemd'>Jinja2</phrase>
+            Jinja2, MarkupSafe, Meson, and Setuptools
           </seg>
 @y
           <seg>
-            <phrase revision='sysv'>なし</phrase>
-            <phrase revision='systemd'>Jinja2</phrase>
+            Jinja2, MarkupSafe, Meson, Setuptools
           </seg>
 @z
 @x

@@ -73,6 +73,7 @@ CHANGE_FILES = \
 	python.ch         \
 	readline.ch       \
 	sed.ch            \
+	setuptools.ch     \
 	shadow.ch         \
 	stripping.ch      \
 	sysklogd.ch       \

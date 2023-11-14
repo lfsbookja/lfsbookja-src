@@ -132,6 +132,24 @@
 @z
 
 @x
+        <para>Reinstalling the same version of Glibc (&glibc-version; for
+        this release of LFS) with patches should be safe when these patches
+        do not change ABI and API.  When a security vulnerability is found
+        in Glibc, we often need to apply such a patch to fix the
+        vulnerability and reinstall Glibc.  Consult
+        <ulink url='&lfs-root;lfs/advisories/'>LFS security
+        advisories</ulink> if you are alerted for a published Glibc security
+        vulnerability but unsure about the action to take.</para>
+@y
+        <para>
+        パッチ内容が ABI や API を変更するものでない限りは、そのパッチを適用して Glibc の同一バージョンをインストールすれば（当リリースの LFS においては &glibc-version;）安全性が高まります。
+        Glibc においてセキュリティぜい弱性が見つかった場合、そういったぜい弱性の修正を行うパッチを使って Glibc を再インストールすることが必要になってきます。
+        Glibc のセキュリティぜい弱性が公開されていることが分かっていても、どうしたら良いのか不明である場合には、<ulink url='&lfs-root;lfs/advisories/'>LFS security
+        advisories</ulink> を参照してください。
+        </para>
+@z
+
+@x
       <listitem> <para>If a package containing a shared library is updated, and
       if the name of the library changes, then any packages dynamically
       linked to the library must be recompiled, to link against the
@@ -276,7 +294,7 @@
         provided by <application>coreutils</application> has already
         implemented this, and most packages use that command to install binary files and
         libraries.  This means that you won't be troubled by this issue most of the time.
-        However, the install process of some packages (notably Mozilla JS
+        However, the install process of some packages (notably SpiderMonkey
         in BLFS) just overwrites the file if it exists; this causes a crash. So
         it's safer to save your work and close unneeded running processes
         before updating a package.</para> <!-- binary is an adjective, not a noun. -->
@@ -286,7 +304,7 @@
         プロセスがクラッシュしないように、プログラムや共有ライブラリを正しく更新する方法は、まず初めに削除を行ってから、新たなものをインストールすることです。
         <application>coreutils</application> が提供する <command>install</command> コマンドは、すでにこの処理が実装されているため、たいていのパッケージにおいて、バイナリファイルやライブラリをインストールするコマンドとして利用しています。
         したがってそのような問題に悩まされることは、これまでほとんどなかったはずです。
-        しかしパッケージの中には (特に BLFS にある Mozilla JS など)、すでにあるファイルを上書きする方式をとっているため、クラッシュするものがあります。
+        しかしパッケージの中には (特に BLFS にある SpiderMonkey など)、すでにあるファイルを上書きする方式をとっているため、クラッシュするものがあります。
         そこでパッケージ更新の前には、それまでの作業を保存して、不要な起動プロセスは停止することが安全です。
         </para>
 @z
@@ -342,35 +360,50 @@
       <para>This is a simplistic package management technique that does not need a
       special program to manage the packages. Each package is installed in a
       separate directory. For example, package foo-1.1 is installed in
-      <filename class='directory'>/usr/pkg/foo-1.1</filename>
-      and a symlink is made from <filename>/usr/pkg/foo</filename> to
-      <filename class='directory'>/usr/pkg/foo-1.1</filename>. When
+      <filename class='directory'>/opt/foo-1.1</filename>
+      and a symlink is made from <filename>/opt/foo</filename> to
+      <filename class='directory'>/opt/foo-1.1</filename>. When
       a new version foo-1.2 comes along, it is installed in
-      <filename class='directory'>/usr/pkg/foo-1.2</filename> and the previous
+      <filename class='directory'>/opt/foo-1.2</filename> and the previous
       symlink is replaced by a symlink to the new version.</para>
 @y
       <para>
       これは最も単純なパッケージ管理のテクニックであり、パッケージ管理のための特別なプログラムを必要としません。
       個々のパッケージを個別のディレクトリにインストールする方法です。
       例えば foo-1.1 というパッケージを <filename
-      class='directory'>/usr/pkg/foo-1.1</filename> ディレクトリにインストールし、この <filename
-      class='directory'>/usr/pkg/foo-1.1</filename> に対するシンボリックリンク <filename>/usr/pkg/foo</filename> を作成します。
+      class='directory'>/opt/foo-1.1</filename> ディレクトリにインストールし、この <filename
+      class='directory'>/opt/foo-1.1</filename> に対するシンボリックリンク <filename>/opt/foo</filename> を作成します。
       このパッケージの新しいバージョン foo-1.2 がリリースされた際には <filename
-      class='directory'>/usr/pkg/foo-1.2</filename> ディレクトリにインストールした上で、先ほどのシンボリックリンクをこのディレクトリを指し示すように置き換えます。
+      class='directory'>/opt/foo-1.2</filename> ディレクトリにインストールした上で、先ほどのシンボリックリンクをこのディレクトリを指し示すように置き換えます。
       </para>
 @z
 
 @x
       <para>Environment variables such as <envar>PATH</envar>,
-      <envar>LD_LIBRARY_PATH</envar>, <envar>MANPATH</envar>,
-      <envar>INFOPATH</envar> and <envar>CPPFLAGS</envar> need to be expanded to
-      include <filename>/usr/pkg/foo</filename>. If you install more than a few packages,
-      this scheme becomes unmanageable.</para>
+      <envar>MANPATH</envar>, <envar>INFOPATH</envar>,
+      <envar>PKG_CONFIG_PATH</envar>, <envar>CPPFLAGS</envar>,
+      <envar>LDFLAGS</envar>, and the configuration file
+      <filename>/etc/ld.so.conf</filename> may need to be expanded to
+      include the corresponding subdirectories in
+      <filename class='directory'>/opt/foo-x.y</filename>.</para>
 @y
       <para>
-      <envar>PATH</envar>、<envar>LD_LIBRARY_PATH</envar>、<envar>MANPATH</envar>、<envar>INFOPATH</envar>、<envar>CPPFLAGS</envar> といった環境変数に対しては <filename>/usr/pkg/foo</filename> ディレクトリを加える必要があるかもしれません。
-      インストールするパッケージ数が増えてくれば、このやり方では管理できなくなります。
+      <envar>PATH</envar>、<envar>MANPATH</envar>、<envar>INFOPATH</envar>、<envar>PKG_CONFIG_PATH</envar>、<envar>CPPFLAGS</envar>、<envar>LDFLAGS</envar> といった環境変数、あるいは設定ファイル <filename>/etc/ld.so.conf</filename> に対しては、<filename>/opt/foo</filename> ディレクトリを加えることで、対応する <filename class='directory'>/opt/foo-x.y</filename> ディレクトリを含める必要があるかもしれません。
       </para>
+@z
+
+@x
+        This scheme is used by the BLFS book to install some very large
+        packages to make it easier to upgrade them.  If you install more
+        than a few packages, this scheme becomes unmanageable.  And some
+        packages (for example Linux API headers and Glibc) may not work well
+        with this scheme.
+        <emphasis role='bold'>Never use this scheme system-wide.</emphasis>
+@y
+        このやり方は BLFS ブックが採用するものであり、大規模のパッケージを用意にアップグレードできるようにします。
+        ただし多数のパッケージをインストールするとなると、このやり方では管理がしにくくなってきます。
+        また（たとえば Linux API ヘッダーや Glibc などのように）パッケージの中には、このやり方ではうまく動作しないものも出てきてしまいます。
+        <emphasis role='bold'>このやり方は、システム全体に渡るものについては用いないでください。</emphasis>
 @z
 
 @x

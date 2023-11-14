@@ -50,6 +50,39 @@
 
 -->
    <listitem>
+      <para>2023-11-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.0-90 (<ulink url="&lfs-changeset;e3ae06750">e3ae06750</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.0-73 (<ulink url="&lfs-changeset;80321c688">80321c688</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2023-10-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.0-64 (<ulink url="&lfs-changeset;6f090ad2b">6f090ad2b</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2023-10-02</para>
       <itemizedlist>
         <listitem>

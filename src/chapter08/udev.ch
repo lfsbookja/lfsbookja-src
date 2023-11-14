@@ -119,20 +119,22 @@
           </para>
 @z
 
+@x -Dlogind=false -Dvconsole=false
+          <para>These options prevent the generation of several udev rule
+          files belonging to the other Systemd components that we won't
+          install.</para>
+@y
+          <para>
+          これらのオプションは、udev ルールをいくつか生成しないようにするものです。
+          そのルールは、インストールする予定としていない Systemd コンポーネントに対するものであるためです。
+          </para>
+@z
+
 @x
     <para>Only build the components needed for udev:</para>
 @y
     <para>
     udev に必要となるコンポーネントのみをビルドします。
-    </para>
-@z
-
-@x
-    <para>Remove one udev rule file requiring a full Systemd
-    installation:</para>
-@y
-    <para>
-    Systemd を完全にインストールしていることを前提としている udev ルールを削除します。
     </para>
 @z
 

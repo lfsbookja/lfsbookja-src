@@ -103,27 +103,10 @@
 @z
 
 @x
-    <para>One test named <filename>man1/lexgrog.1</filename> is known
-    to fail.</para>
-@y
-    <para>
-    <filename>man1/lexgrog.1</filename> というテストが 1 つ失敗します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
 @z
-
-%@x
-%    <para revision="systemd">Remove a reference to a non-existent user:</para>
-%@y
-%    <para revision="systemd">
-%    存在しないユーザーへの参照を削除します。
-%    </para>
-%@z
 
 @x
     <title>Non-English Manual Pages in LFS</title>

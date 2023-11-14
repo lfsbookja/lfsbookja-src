@@ -594,7 +594,7 @@
         <seg>gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4,
         ld.so (symlink to ld-linux-x86-64.so.2 or ld-linux.so.2),
-        locale, localedef, makedb, mtrace, nscd,
+        locale, localedef, makedb, mtrace,
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
@@ -614,12 +614,12 @@
         /usr/include/protocols, /usr/include/rpc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
         /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
-        /var/cache/nscd, and /var/lib/nss_db</seg>
+        and /var/lib/nss_db</seg>
 @y
         <seg>gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4,
         ld.so (ld-linux-x86-64.so.2 または ld-linux.so.2 へのリンク),
-        locale, localedef, makedb, mtrace, nscd,
+        locale, localedef, makedb, mtrace,
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
@@ -639,7 +639,7 @@
         /usr/include/protocols, /usr/include/rpc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
         /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
-        /var/cache/nscd, /var/lib/nss_db</seg>
+        /var/lib/nss_db</seg>
 @z
 
 @x
@@ -748,15 +748,6 @@
           <para>
           メモリトレースファイル (memory trace file) を読み込んで解釈します。
           そして可読可能な書式で出力します。
-          </para>
-@z
-
-@x nscd
-          <para>A daemon that provides a cache for the most common name
-          service requests</para>
-@y
-          <para>
-          一般的なネームサービスへの変更要求のキャッシュを提供するデーモン。
           </para>
 @z
 
