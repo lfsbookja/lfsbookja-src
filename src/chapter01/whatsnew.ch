@@ -31,9 +31,15 @@
 @z
 
 @x
-      <para>Libelf-&elfutils-version; (from elfutils)</para>
+      <para>Libelf from Elfutils-&elfutils-version;</para>
 @y
-      <para>Libelf-&elfutils-version; (elfutils より)</para>
+      <para>Elfutils-&elfutils-version; から Libelf</para>
+@z
+
+@x
+      <para>Udev from Systemd-&systemd-version;</para>
+@y
+      <para>Systemd-&systemd-version; から Udev</para>
 @z
 
 @x

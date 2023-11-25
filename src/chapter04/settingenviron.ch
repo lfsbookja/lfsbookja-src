@@ -299,7 +299,7 @@
       Never pass a <parameter>-j</parameter> option without a number to
       <command>make</command> or set such an option in
       <envar>MAKEFLAGS</envar>.  Doing so will allow <command>make</command>
-      to spawn infinite build jobs and cause system stability issue.
+      to spawn infinite build jobs and cause system stability problems.
 @y
       <parameter>-j</parameter> オプションに数値を与えずに <command>make</command> コマンドに受け渡したり、あるいは <envar>MAKEFLAGS</envar> に設定することはやめてください。
       それを行ってしまうと <command>make</command> に対して無限のビルドジョブ生成を行わせるものとなり、システムの安定性を損なう問題が発生します。
