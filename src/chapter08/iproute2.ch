@@ -29,9 +29,6 @@
     be built since it depends on Berkeley DB, which is not installed in
     LFS. However, a directory and a man page for <command>arpd</command> will still
     be installed. Prevent this by running the commands shown below.
-    (If the <command>arpd</command> program is needed,
-    instructions for compiling Berkeley DB can be found in the BLFS book at
-    <ulink url="&blfs-book;server/db.html"/>.)
     </para>
 @y
     <para>
@@ -39,8 +36,6 @@
     したがって <command>arpd</command> プログラムはインストールしません。
     ただし <command>arpd</command> プログラムに対応するディレクトリや man ページはインストールされてしまいます。
     これをインストールしないように、以下のコマンドを実行します。
-    （<command>arpd</command> プログラムを必要とする場合は BLFS ブックの <ulink
-    url="&blfs-book;server/db.html#db"/> に示される Berkeley DB の構築手順に従ってください。）
     </para>
 @z
 

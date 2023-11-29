@@ -1196,7 +1196,7 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
+            &bdb;,
             <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
             <ulink url="&github;/libbpf/libbpf">libbpf</ulink>,
             <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>, and
@@ -1204,7 +1204,7 @@
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
+            &bdb;,
             <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
             <ulink url="&github;/libbpf/libbpf">libbpf</ulink>,
             <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>,
@@ -2005,11 +2005,11 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>
+            &bdb;
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>
+            &bdb;
           </seg>
 @z
 
@@ -2151,14 +2151,14 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
+            &bdb;,
             <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
             <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>, and
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
+            &bdb;,
             <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
             <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>, and
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
