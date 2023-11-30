@@ -81,7 +81,7 @@
 @z
 
 @x
-  <para>Note that the <command>bash</command> prompt will say
+  <para>Also note that the <command>bash</command> prompt will say
   <computeroutput>I have no name!</computeroutput> This is normal because the
   <filename>/etc/passwd</filename> file has not been created yet.</para>
 @y

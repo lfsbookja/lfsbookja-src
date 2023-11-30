@@ -17,11 +17,14 @@
 
 @x
       If your system has UEFI support and you wish to boot LFS with UEFI,
-      you should skip this page, and configure GRUB with UEFI support
-      using the instructions provided in
+      you should skip the instructions in this page but still learn the
+      syntax of <filename>grub.cfg</filename> and the method to specify
+      a partition in the file from this page, and configure GRUB with UEFI
+      support using the instructions provided in
       <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>.
 @y
-      UEFI サポートが有効なシステムにおいて UEFI を使って LFS をブートしたい場合は、本ページは読み飛ばしてください。
+      UEFI サポートが有効なシステムにおいて UEFI を使って LFS をブートしたい場合は、本ページに示す手順は読み飛ばしてください。
+      ただし <filename>grub.cfg</filename> の文法を学ぶ場合や、ファイル内にあるパーティションの指定方法を学ぶ場合は確認しておいてください。
       そして <ulink url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> に示されている手順に従って、UEFI に対応するように GRUB 設定を行ってください。
 @z
 

@@ -54,17 +54,20 @@
 @z
 
 @x
-      <title>The meaning of the overridden make variable:</title>
+      <title>The meaning of the command:</title>
 @y
-      <title>上書きされる make 変数の意味</title>
+      <title>&MeaningOfCommand1;&MeaningOfCommand2;</title>
 @z
 
-@x LN='ln -f'
-           <para>This variable ensures that the previous hard link installed
+@x rm -f /usr/bin/gawk-&gawk-version;
+           <para>The building system will not recreate the hard link
+           <filename>gawk-&gawk-version;</filename> if it already exists.
+           Remove it to ensure that the previous hard link installed
            in <xref linkend='ch-tools-gawk'/> is updated here.</para>
 @y
            <para>
-           この変数は <xref linkend='ch-tools-gawk'/> においてインストールしたハードリンクを、ここで更新するものです。
+           <filename>gawk-&gawk-version;</filename> が存在している場合、ビルドシステムはハードリンクを再生成しません。
+           <xref linkend='ch-tools-gawk'/> においてインストールしたハードリンクをここで削除することにより、確実に再生成されるようにします。
            </para>
 @z
 

@@ -381,7 +381,7 @@
 @z
 
 @x
-      <listitem revision='sysv'><para>/tmp &ndash; A separate /tmp directory
+      <listitem revision='sysv'><para>/tmp &ndash; A separate /tmp partition
       is rare, but useful if configuring a thin client.  This partition, if
       used, will usually not need to exceed a couple of
       gigabytes.  If you have enough RAM, you can mount a
@@ -390,7 +390,7 @@
 @y
       <listitem revision='sysv'><para>
       /tmp &ndash; 
-      /tmp ディレクトリを別パーティションとするのは普通は行いません。
+      /tmp パーティションを別パーティションとするのは普通は行いません。
       ただしシンクライアント (thin client) では有効です。
       別パーティションとする場合であっても、数GB程度あれば十分です。
       RAM が十分にある場合は <systemitem

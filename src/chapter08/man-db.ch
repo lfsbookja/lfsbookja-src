@@ -95,9 +95,11 @@
 @z
 
 @x
-   <para>To test the results, issue:</para>
+    <para>To test the results, issue:</para>
 @y
-   <para>コンパイル結果をテストするには以下を実行します。</para>
+    <para>
+    コンパイル結果をテストするには以下を実行します。
+    </para>
 @z
 
 %@x

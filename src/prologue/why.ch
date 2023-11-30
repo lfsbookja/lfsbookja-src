@@ -203,19 +203,6 @@
         </para>
 @z
 
-@x Eudev
-        <para>This package is a device manager.  It dynamically controls the ownership,
-        permissions, names, and symbolic links of device nodes in the /dev directory when
-        devices are added to or removed from the system.
-        </para>
-@y
-        <para>
-        このパッケージはデバイスマネージャーです。
-        /dev ディレクトリに登録されたデバイスノードの所有者、パーミッション、名称、シンボリックリンクを動的に制御します。
-        これによりデバイスは、システムへの追加または削除が行われます。
-        </para>
-@z
-
 @x Expat
         <para>This package yields a relatively small XML parsing library.  It
         is required by the XML::Parser Perl module.</para>
@@ -334,12 +321,12 @@
 @x Gperf
         <para>This package produces a program that generates a perfect hash
         function from a set of keys. It is required by
-        <phrase revision='sysv'>Eudev</phrase>
+        <phrase revision='sysv'>Udev</phrase>
         <phrase revision='systemd'>Systemd</phrase>.</para>
 @y
         <para>
         このパッケージは、キーセットから完全なハッシュ関数を生成するプログラムを提供します。
-        <phrase revision='sysv'>Eudev</phrase>
+        <phrase revision='sysv'>Udev</phrase>
         <phrase revision='systemd'>Systemd</phrase> がこれを必要としています。
         </para>
 @z
@@ -683,12 +670,19 @@
         </para>
 @z
 
-@x Pkg-config
-        <para>This package provides a program that returns meta-data about an
-        installed library or package.</para>
+@x Pkgconf
+        <para>This package contains a program which helps to configure
+        compiler and linker flags for development libraries.  The program
+        can be used as a drop-in replacement of
+        <command>pkg-config</command>, which is needed by the building
+        system of many packages.  It's maintained more actively and slightly
+        faster than the original Pkg-config package.</para>
 @y
         <para>
-        このパッケージは、既にインストールされたライブラリやパッケージのメタデータを取得するプログラムを提供します。
+        このパッケージは、開発用ライブラリに対するコンパイラーフラグやリンカーフラグを設定するためのプログラムを提供します。
+        このプログラムは、<command>pkg-config</command> の単純な置き換えプログラムとして利用することができます。
+        そもそもこのプログラムは、数多くのパッケージによるシステム構築に必要となるものです。
+        元々の Pkg-config パッケージに比べて活発に開発されており、処理速度も若干早くなっています。
         </para>
 @z
 

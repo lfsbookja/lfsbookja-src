@@ -183,12 +183,6 @@
         <para>&Download;: <ulink url="&elfutils-url;"/></para>
 @z
 
-@x Eudev
-        <para>Download: <ulink url="&eudev-url;"/></para>
-@y
-        <para>&Download;: <ulink url="&eudev-url;"/></para>
-@z
-
 @x Expat
         <para>Home page: <ulink url="&expat-home;"/></para>
         <para>Download: <ulink url="&expat-url;"/></para>
@@ -440,6 +434,14 @@
         <para>&Download;: <ulink url="&libtool-url;"/></para>
 @z
 
+@x Libxcrypt
+        <para>Home page: <ulink url="&libxcrypt-home;"/></para>
+        <para>Download: <ulink url="&libxcrypt-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&libxcrypt-home;"/></para>
+        <para>&Download;: <ulink url="&libxcrypt-url;"/></para>
+@z
+
 @x linux
         <para>Home page: <ulink url="&linux-home;"/></para>
         <para>Download: <ulink url="&linux-url;"/></para>
@@ -581,11 +583,11 @@
 @z
 
 @x pkgconfig
-        <para>Home page: <ulink url="&pkgconfig-home;"/></para>
-        <para>Download: <ulink url="&pkgconfig-url;"/></para>
+        <para>Home page: <ulink url="&pkgconf-home;"/></para>
+        <para>Download: <ulink url="&pkgconf-url;"/></para>
 @y
-        <para>&Homepage;: <ulink url="&pkgconfig-home;"/></para>
-        <para>&Download;: <ulink url="&pkgconfig-url;"/></para>
+        <para>&Homepage;: <ulink url="&pkgconf-home;"/></para>
+        <para>&Download;: <ulink url="&pkgconf-url;"/></para>
 @z
 
 @x procps-ng

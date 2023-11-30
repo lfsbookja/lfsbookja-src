@@ -28,9 +28,9 @@
 @z
 
 @x
-<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 7.3 SBU with tests)">
+<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 7.0 SBU with tests)">
 @y
-<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 7.3 SBU)">
+<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 7.0 SBU)">
 @z
 
 @x
@@ -40,21 +40,21 @@
 @z
 
 @x
-<!ENTITY check-fin-sbu "0.1 SBU (about 1.7 SBU with tests)">
+<!ENTITY check-fin-sbu "0.1 SBU (about 1.6 SBU with tests)">
 @y
-<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 1.7 SBU)">
+<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 1.6 SBU)">
 @z
 
 @x
-<!ENTITY e2fsprogs-fin-sbu "2.4 SBU on a spinning disk, 0.4 SBU on an SSD">
+<!ENTITY e2fsprogs-fin-sbu "2.4 SBU on a spinning disk, 0.6 SBU on an SSD">
 @y
-<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 2.4 SBU、SSD で 0.4 SBU">
+<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 2.4 SBU、SSD で 0.6 SBU">
 @z
 
 @x
-<!ENTITY gcc-fin-sbu "43 SBU (with tests)">
+<!ENTITY gcc-fin-sbu "42 SBU (with tests)">
 @y
-<!ENTITY gcc-fin-sbu "43 SBU (テスト込み)">
+<!ENTITY gcc-fin-sbu "42 SBU (テスト込み)">
 @z
 
 @x
@@ -117,11 +117,11 @@
 @z
 
 @x
-<!ENTITY linux-knl-du "1200 - 8800 MB (typically about 1700 MB)">
-<!ENTITY linux-knl-sbu "1.5 - 130.0 SBU (typically about 12 SBU)">
+<!ENTITY linux-knl-du "1.8 - 10.6 GB (typically about 2 GB)">
+<!ENTITY linux-knl-sbu "0.6 - 20.4 SBU (typically about 1.4 SBU)">
 @y
-<!ENTITY linux-knl-du "1200 - 8800 MB (一般的には 1700 MB 程度)">
-<!ENTITY linux-knl-sbu "1.5 - 130.0 SBU (一般的には 12 SBU 程度)">
+<!ENTITY linux-knl-du "1.8 - 10.6 GB (一般的には 2 GB 程度)">
+<!ENTITY linux-knl-sbu "0.6 - 20.4 SBU (一般的には 1.4 SBU 程度)">
 @z
 @x
 <!ENTITY linux-headers-tmp-sbu "less than 0.1 SBU">

@@ -439,22 +439,35 @@
 @z
 
 @x
-     <para>A valid private IP address could be 192.168.1.1. A valid FQDN for
-     this IP could be lfs.example.org.</para>
+     <para>A valid private IP address could be 192.168.1.1.</para>
 @y
      <para>
      IP アドレスの例は 192.168.1.1 となります。
-     また FQDN の例としては lfs.example.org となります。
      </para>
 @z
 
 @x
-     <para>Even if not using a network card, a valid FQDN is still required.
-     This is necessary for certain programs, such as MTAs, to operate properly.</para>
+     <para>If the computer is to be visible to the Internet, a valid FQDN
+     can be the domain name itself, or a string resulted by concatenating a
+     prefix (often the hostname) and the domain name with a <quote>.</quote>
+     character.  And, you need to contact the domain provider to resolve the
+     FQDN to your public IP address.</para>
 @y
      <para>
-     ネットワークカードを用いない場合でも FQDN の記述は行ってください。
-     MTA のような特定のプログラムが動作する際に必要となることがあるからです。
+     インターネット上にコンピューターを公開しようとする場合、正しい FQDN はドメイン名そのものか、あるいはプレフィックス（たいていはホスト名）とドメイン名を<quote>.</quote>でつなげて記述します。
+     そしてドメインプロバイダーに問い合わせて、FQDN を公開 IP アドレスとして解決する必要があります。
+     </para>
+@z
+
+@x
+     <para>Even if the computer is not visible to the Internet, a FQDN is
+     still needed for certain programs, such as MTAs, to operate properly.
+     A special FQDN, <literal>localhost.localdomain</literal>, can be used
+     for this purpose.</para>
+@y
+     <para>
+     インターネット上にコンピューターが公開されていない場合であっても、特定のプログラム、たとえば MTA などにおいては、正常な処理が行われるように FQDN が必要になります。
+     特別な FQDN <literal>localhost.localdomain</literal> は、その目的で利用されます。
      </para>
 @z
 
@@ -468,41 +481,45 @@
 @z
 
 @x
-     <para>The <replaceable>&lt;192.168.0.2&gt;</replaceable>,
-     <replaceable>&lt;FQDN&gt;</replaceable>, and
-     <replaceable>&lt;HOSTNAME&gt;</replaceable> values need to be
+     <para>The <replaceable>&lt;192.168.0.2&gt;</replaceable> and
+     <replaceable>&lt;FQDN&gt;</replaceable> values need to be
      changed for specific uses or requirements (if assigned an IP address by a
      network/system administrator and the machine will be connected to an
      existing network). The optional alias name(s) can be omitted, and the
      <replaceable>&lt;192.168.0.2&gt;</replaceable> line can be omitted if you
-     are using a connection configured with DHCP or IPv6 Autoconfiguration.</para>
+     are using a connection configured with DHCP or IPv6 Autoconfiguration,
+     or using <literal>localhost.localdomain</literal> as the FQDN.</para>
 @y
      <para>
      <replaceable>&lt;192.168.0.2&gt;</replaceable>,
-     <replaceable>&lt;FQDN&gt;</replaceable>,
-     <replaceable>&lt;HOSTNAME&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
+     <replaceable>&lt;FQDN&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
      (ネットワーク管理者から IP アドレスを指定されている場合や、既存のネットワーク環境に接続する場合など。). 
      エイリアスの記述は省略しても構いません。
-     また <replaceable>&lt;192.168.0.2&gt;</replaceable> の行も、DHCP や IPv6 による自動設定による接続を行う場合には省略可能です。
+     また <replaceable>&lt;192.168.0.2&gt;</replaceable> の行も、DHCP や IPv6 による自動設定による接続を行う場合、あるいは FQDN として <literal>localhost.localdomain</literal> を指定する場合には省略可能です。
+     </para>
+@z
+
+@x
+     <para>The <filename>/etc/hostname</filename> does not contain entries
+     for <literal>localhost</literal>,
+     <literal>localhost.localdomain</literal>, or the hostname (without a
+     domain) because they are handled by the
+     <systemitem class='library'>myhostname</systemitem> NSS module, read
+     the man page <filename>nss-myhostname(8)</filename> for details.</para>
+@y
+     <para>
+     <filename>/etc/hostname</filename> には <literal>localhost</literal>,
+     <literal>localhost.localdomain</literal>, （ドメイン名を含まない）ホスト名は記述しません。
+     これらは NSS モジュール <systemitem class='library'>myhostname</systemitem> が取り扱います。
+     詳しくは man ページ <filename>nss-myhostname(8)</filename> を参照してください。
      </para>
 @z
 
 @x
      <para>The ::1 entry is the IPv6 counterpart of 127.0.0.1 and represents
-     the IPv6 loopback interface. 127.0.1.1 is a loopback entry reserved
-     specifically for the FQDN.</para>
+     the IPv6 loopback interface.</para>
 @y
      <para>
      ::1 という項目は IPv6 における 127.0.0.1 に相当し、IPv6 のループバックインターフェースを表します。
-     127.0.1.1 は FQDN に対して特別に割り当てられたループバック項目です。
      </para>
 @z
-
-%@x
-%     <para>If using a static address, create the <filename>/etc/hosts</filename>
-%     file by running this command instead:</para>
-%@y
-%     <para>
-%     スタティックアドレスを利用する場合は、以下のコマンドにより <filename>/etc/hosts</filename> を生成します。
-%     </para>
-%@z

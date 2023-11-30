@@ -128,7 +128,7 @@
       featured browser and copy/paste capabilities are available. This method
       allows using applications like the host's version of wget to download
       package sources to a location available when working in the chroot
-      envirnment.
+      environment.
 @y
       この方法を使えば、完全なグラフィック環境を扱うことができ、充実したブラウザーを利用してコピー/ペースト機能が活用できます。
       またホスト内にある wget のようなアプリケーションを使うことができるため、パッケージソースをダウンロードして、chroot 環境内で作業可能な場所に配置することができます。
@@ -207,8 +207,7 @@
 @x
        This method also provides a full graphical environment, but first
        requires installing
-        <ulink url="&blfs-book;postlfs/openssh.html">sshd</ulink> and
-        <ulink url="&blfs-book;basicnet/wget.html">wget</ulink>
+        <ulink url="&blfs-book;postlfs/openssh.html">sshd</ulink>
        on the LFS system, usually in chroot. It also requires a second
        computer. This method has the advantage of being simple by not requiring
        the complexity of the chroot environment. It also uses your LFS built
@@ -217,8 +216,7 @@
 @y
        この方法はグラフィック環境下においても利用できます。
        まず何よりも
-        <ulink url="&blfs-book;postlfs/openssh.html">sshd</ulink> と
-        <ulink url="&blfs-book;basicnet/wget.html">wget</ulink>
+        <ulink url="&blfs-book;postlfs/openssh.html">sshd</ulink>
        を LFS システムにインストールすることが必要です。
        これは通常 chroot 環境にて行います。
        また 2 つめのコンピューターも必要です。

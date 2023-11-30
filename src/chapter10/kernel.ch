@@ -231,10 +231,10 @@
 
 @x Support for uevent helper
           <para>Having this option set may interfere with device
-          management when using Udev/Eudev. </para>
+          management when using Udev.</para>
 @y
           <para>
-          本項目を有効にすることで、デバイス管理を Udev/Eudev により行ないます。
+          本項目を有効にすることで、デバイス管理を Udev により行ないます。
           </para>
 @z
 
@@ -242,13 +242,13 @@
           <para>This will create automated device nodes which are populated by the
           kernel, even without Udev running.  Udev then runs on top of this,
           managing permissions and adding symlinks.  This configuration
-          item is required for all users of Udev/Eudev.</para>
+          item is required for all users of Udev.</para>
 @y
           <para>
           本項目は、カーネルにより事前登録される自動化デバイスノードを生成します。
           これは Udev が動作していなくても行われます。
           Udev はその上で起動し、パーミッション管理やシンボリックリンクの追加を行います。
-          Udev/Eudev を利用する場合には本項目を有効にすることが必要です。
+          Udev を利用する場合には本項目を有効にすることが必要です。
           </para>
 @z
 
@@ -285,7 +285,7 @@
           <para>Support running the interrupt controller of 64-bit x86
           processors in x2APIC mode.  x2APIC may be enabled by firmware on
           64-bit x86 systems, and a kernel without this option enabled will
-          panic on boot if x2APIC is enabled by firmware.  This option has
+          panic on boot if x2APIC is enabled by firmware.  This option
           has no effect, but also does no harm if x2APIC is disabled by the
           firmware.</para>
 @y

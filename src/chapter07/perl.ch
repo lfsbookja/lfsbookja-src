@@ -28,7 +28,7 @@
 @z
 
 @x
-      <title>The meaning of the new Configure options:</title>
+      <title>The meaning of the Configure options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z

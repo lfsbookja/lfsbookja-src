@@ -54,11 +54,10 @@
 
 @x
     <para id="shadow-login_defs">Instead of using the default
-    <emphasis>crypt</emphasis> method, use the more secure
-    <emphasis>SHA-512</emphasis> method of password encryption, which also
-    allows passwords longer than 8 characters. In addition, set the number of
-    rounds to 500,000 instead of the default 5000, which is much too low to
-    prevent brute force password attacks. It is also necessary to change
+    <emphasis>crypt</emphasis> method, use the much more secure
+    <emphasis>YESCRYPT</emphasis> method of password encryption, which also
+    allows passwords longer than 8 characters.
+    It is also necessary to change
     the obsolete <filename class="directory">/var/spool/mail</filename> location
     for user mailboxes that Shadow uses by default to the <filename
     class="directory">/var/mail</filename> location used currently. And,
@@ -68,10 +67,8 @@
     <filename class="directory">/usr</filename>.</para>
 @y
     <para id="shadow-login_defs">
-    パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>SHA-512</emphasis> 手法を用いることにします。
+    パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>YESCRYPT</emphasis> 手法を用いることにします。
     こうしておくと 8文字以上のパスワード入力が可能となります。
-    またラウンド数をデフォルトの 5000 から 500,000 に設定します。
-    デフォルトの 5000 では、パスワードの総当り攻撃に対しては小さすぎる設定だからです。
     メールボックスを収めるディレクトリとして Shadow ではデフォルトで <filename
     class="directory">/var/spool/mail</filename> ディレクトリを利用していますが、これは古いものであるため <filename
     class="directory">/var/mail</filename> ディレクトリに変更します。
@@ -353,7 +350,7 @@
 @x
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
         getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
-        grpconv, grpunconv, lastlog, login, logoutd, newgidmap, newgrp,
+        grpconv, grpunconv, login, logoutd, newgidmap, newgrp,
         newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
         sg (link to newgrp), su, useradd, userdel, usermod,
         vigr (link to vipw), and vipw</seg>
@@ -362,11 +359,11 @@
 @y
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
         getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
-        grpconv, grpunconv, lastlog, login, logoutd, newgidmap, newgrp,
+        grpconv, grpunconv, login, logoutd, newgidmap, newgrp,
         newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
         sg (newgrp へのリンク), su, useradd, userdel, usermod,
         vigr (vipw へのリンク), vipw</seg>
-        <seg>/etc/default, /usr/include/shadow</seg>
+      <seg>/etc/default and /usr/include/shadow</seg>
         <seg>libsubid.so</seg>
 @z
 
@@ -512,15 +509,6 @@
 @y
           <para>
           <filename>/etc/gshadow</filename> ファイルを元に <filename>/etc/group</filename> ファイルを更新し <filename>/etc/gshadow</filename> ファイルを削除します。
-          </para>
-@z
-
-@x lastlog
-          <para>Reports the most recent login of all users or of a
-          given user</para>
-@y
-          <para>
-          全ユーザーの中での最新ログインの情報、または指定ユーザーの最新ログインの情報を表示します。
           </para>
 @z
 

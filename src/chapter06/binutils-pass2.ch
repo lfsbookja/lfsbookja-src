@@ -34,14 +34,17 @@
 @z
 
 @x
-    <para>Binutils ships an outdated copy of libtool in the tarball.  It lacks
-    sysroot support, so the produced binaries will be mistakenly linked to
-    libraries from the host distro.  Work around this issue:</para>
+    <para>Binutils building system relies on an shipped libtool copy to link against
+    internal static libraries, but the libiberty and zlib copies shipped
+    in the package do not use libtool.  This inconsistency may cause
+    produced binaries mistakenly linked against libraries from the host
+    distro.  Work around this issue:</para>
 @y
     <para>
-    Binutils の tarball では、古い libtool のコピーが提供されています。
-    これは sysroot サポートが行われていないので、ビルドされるバイナリが誤ってホストディストロのライブラリにリンクされてしまいます。
-    この問題を以下により回避します。
+    Binutils によるビルドシステムでは、内部的なスタティックライブラリにリンクさせる libtool は、内部にコピーしたバージョンを用いています。
+    しかしこのパッケージが提供する内部コピーバージョンである libiverty と zlib は、その libtool を利用していません。
+    このような不整合があるため、生成されるバイナリが誤ってホスト内のライブラリにリンクされてしまう場合があります。
+    これを回避するために以下を実行します。
     </para>
 @z
 

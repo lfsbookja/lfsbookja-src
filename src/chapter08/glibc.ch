@@ -41,10 +41,12 @@
 @z
 
 @x
-    <para>Fix a security issue identified upstream:</para>
+    <para>Now fix two security vulnerabilities and a regression causing the
+    posix_memalign() function very slow in some conditions:</para>
 @y
     <para>
-    アップストリームが認識するセキュリティ問題を修正します。
+    ここで 2 つのセキュリティぜい弱性と機能後退を修正します。
+    機能後退は、特定環境下において posix_memalign() 関数が非常に遅くなっていたものです。
     </para>
 @z
 
@@ -241,13 +243,12 @@
 @z
 
 @x
-    <para>Fix the Makefile to skip an unneeded sanity check
-    that fails in the LFS partial environment:
-    </para>
+    <para>Fix the Makefile to skip an outdated sanity check
+    that fails with a modern Glibc configuration:</para>
 @y
     <para>
     Makefile を修正して、不要な健全性チェックを無効にします。
-    これは、この段階での LFS 環境では失敗するためです。
+    これは、最近の Glibc 設定では失敗するためです。
     </para>
 @z
 
@@ -584,13 +585,13 @@
         <seg>gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4,
         ld.so (symlink to ld-linux-x86-64.so.2 or ld-linux.so.2),
-        locale, localedef, makedb, mtrace, nscd,
+        locale, localedef, makedb, mtrace,
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
         libBrokenLocale.{a,so}, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a, libc_malloc_debug.so,
-        libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
+        libdl.{a,so.2}, libg.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
         libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
         libpcprofile.so, libpthread.{a,so.0},
@@ -604,23 +605,23 @@
         /usr/include/protocols, /usr/include/rpc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
         /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
-        /var/cache/nscd, and /var/lib/nss_db</seg>
+        and /var/lib/nss_db</seg>
 @y
         <seg>gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4,
-        ld.so (ld-linux-x86-64.so.2 または ld-linux.so.2 へのリンク),
-        locale, localedef, makedb, mtrace, nscd,
+        ld.so (ld-linux-x86-64.so.2 または ld-linux.so.2 へのシンボリックリンク),
+        locale, localedef, makedb, mtrace,
         pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld-linux-x86-64.so.2, ld-linux.so.2,
         libBrokenLocale.{a,so}, libanl.{a,so},
         libc.{a,so}, libc_nonshared.a, libc_malloc_debug.so,
-        libcrypt.{a,so}, libdl.{a,so.2}, libg.a, libm.{a,so},
+        libdl.{a,so.2}, libg.a, libm.{a,so},
         libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.so.1,
         libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so,
         libpcprofile.so, libpthread.{a,so.0},
         libresolv.{a,so}, librt.{a,so.1},
-        libthread_db.so, and libutil.{a,so.1}</seg>
+        libthread_db.so, libutil.{a,so.1}</seg>
         <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu,
         /usr/include/net, /usr/include/netash, /usr/include/netatalk,
         /usr/include/netax25, /usr/include/neteconet, /usr/include/netinet,
@@ -629,7 +630,7 @@
         /usr/include/protocols, /usr/include/rpc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale,
         /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo,
-        /var/cache/nscd, /var/lib/nss_db</seg>
+        /var/lib/nss_db</seg>
 @z
 
 @x
@@ -738,15 +739,6 @@
           <para>
           メモリトレースファイル (memory trace file) を読み込んで解釈します。
           そして可読可能な書式で出力します。
-          </para>
-@z
-
-@x nscd
-          <para>A daemon that provides a cache for the most common name
-          service requests</para>
-@y
-          <para>
-          一般的なネームサービスへの変更要求のキャッシュを提供するデーモン。
           </para>
 @z
 
@@ -872,14 +864,6 @@
 @y
           <para>
           プリロード時のメモリ割り当てチェックをオンにします。
-          </para>
-@z
-
-@x libcrypt
-          <para>The cryptography library</para>
-@y
-          <para>
-          暗号化ライブラリ。
           </para>
 @z
 

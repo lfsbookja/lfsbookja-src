@@ -60,18 +60,9 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+      <title>The meaning of the new Configure options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
-@z
-
-@x -Dvendorprefix=/usr
-          <para>This ensures <command>perl</command> knows how to
-          tell packages where they should install their Perl modules.</para>
-@y
-          <para>
-          このオプションは各種の Perl モジュールをどこにインストールするかを指定します。
-          </para>
 @z
 
 @x -Dpager="/usr/bin/less -isR"
@@ -94,34 +85,11 @@
           </para>
 @z
 
-@x -Duseshrplib
-          <para>Build a shared libperl needed by some Perl modules.</para>
-@y
-          <para>
-          Perl モジュールの中で必要とされる共有ライブラリ libperl をビルドします。
-          </para>
-@z
-
 @x -Dusethreads
           <para>Build Perl with support for threads.</para>
 @y
           <para>
           スレッドサポートを含めて Perl をビルドします。
-          </para>
-@z
-
-@x -Dprivlib,-Darchlib,-Dsitelib,...
-          <para>These settings define where Perl looks for installed
-          modules. The LFS editors chose to put them in a directory structure
-          based on the MAJOR.MINOR version of Perl (&perl-version-min;) which
-          allows upgrading Perl to newer patch levels (the patch level is
-          the last dot separated part in the full version string like
-          &perl-version;) without reinstalling all of the modules.</para>
-@y
-          <para>
-          この設定は、Perl がインストール済のモジュールを探す場所を指定します。
-          LFS 編集者はディレクトリ構造として Perl の MAJOR.MINOR バージョン (&perl-version-min;) の形に基づいて、インストールモジュールを配置することにしています。
-          このようにしておくと、新たなパッチレベル (&perl-version; のようなフルバージョンにおいて最後のドット以降のバージョン部分) によるアップグレードの際に、モジュールを再インストールする必要がなくなるためです。
           </para>
 @z
 

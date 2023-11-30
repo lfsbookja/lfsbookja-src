@@ -168,10 +168,10 @@
 @z
 
 @x
-    <para>Remove useless static libraries and an empty man page:</para>
+    <para>Remove useless static libraries:</para>
 @y
     <para>
-    不要なスタティックライブラリと空の man ページを削除します。
+    不要なスタティックライブラリを削除します。
     </para>
 @z
 
@@ -194,12 +194,14 @@
 @x
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so, and libsframe.so</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
+        libopcodes.so, and libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
         <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so, libsframe.so</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
+        libopcodes.so, libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @z
 

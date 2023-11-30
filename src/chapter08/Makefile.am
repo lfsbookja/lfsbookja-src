@@ -21,7 +21,6 @@ CHANGE_FILES = \
 	dejagnu.ch        \
 	diffutils.ch      \
 	e2fsprogs.ch      \
-	eudev.ch          \
 	expat.ch          \
 	expect.ch         \
 	file.ch           \
@@ -54,6 +53,7 @@ CHANGE_FILES = \
 	libffi.ch         \
 	libpipeline.ch    \
 	libtool.ch        \
+	libxcrypt.ch      \
 	m4.ch             \
 	make.ch           \
 	man-db.ch         \
@@ -67,13 +67,14 @@ CHANGE_FILES = \
 	openssl.ch        \
 	patch.ch          \
 	perl.ch           \
-	pkgconfig.ch      \
+	pkgconf.ch        \
 	pkgmgt.ch         \
 	procps.ch         \
 	psmisc.ch         \
 	python.ch         \
 	readline.ch       \
 	sed.ch            \
+	setuptools.ch     \
 	shadow.ch         \
 	stripping.ch      \
 	sysklogd.ch       \
@@ -82,6 +83,7 @@ CHANGE_FILES = \
 	tar.ch            \
 	tcl.ch            \
 	texinfo.ch        \
+	udev.ch           \
 	util-linux.ch     \
 	vim.ch            \
 	wheel.ch          \
