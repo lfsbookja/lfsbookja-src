@@ -44,6 +44,112 @@
 @z
 
 @x
+      <para>2023-11-30</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to vim-9.0.2136. Addresses
+           <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20231117. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-6.7.3.  Fixes
+          <ulink url='&lfs-ticket-root;5385'>#5385</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to wheel-0.42.0 (Python Module).  Fixes
+          <ulink url='&lfs-ticket-root;5384'>#5384</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.38.2.  Fixes
+          <ulink url='&lfs-ticket-root;5383'>#5383</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-2.1.0.  Fixes
+          <ulink url='&lfs-ticket-root;5382'>#5382</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to readline patches 002 through 007.  Fixes
+          <ulink url='&lfs-ticket-root;5381'>#5381</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.2.0.  Fixes
+          <ulink url='&lfs-ticket-root;5380'>#5380</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-69.0.2.  Fixes
+          <ulink url='&lfs-ticket-root;5379'>#5379</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.6.3.  Fixes
+          <ulink url='&lfs-ticket-root;5378'>#5378</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.3.0.  Fixes
+          <ulink url='&lfs-ticket-root;5377'>#5377</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.22.4.  Fixes
+          <ulink url='&lfs-ticket-root;5376'>#5376</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-11-30</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - vim-9.0.2136 へのアップデート。
+           <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20231117 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-6.7.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5385'>#5385</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - wheel-0.42.0 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5384'>#5384</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.38.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5383'>#5383</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-2.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5382'>#5382</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline のパッチを 002 から 007 まで。
+          <ulink url='&lfs-ticket-root;5381'>#5381</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.2.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5380'>#5380</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-69.0.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5379'>#5379</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.6.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5378'>#5378</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.3.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5377'>#5377</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.22.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5376'>#5376</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-11-13</para>
       <itemizedlist>
         <listitem>
