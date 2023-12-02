@@ -61,6 +61,15 @@
 @z
 
 @x
+    <para>Adjust the hardcoded paths to network configuration files for the
+    standalone udev installation:</para>
+@y
+    <para>
+    ネットワーク設定ファイルへのパスがハードコーディングされているため、独立した udev インストールとして修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Udev for compilation:</para>
 @y
     <para>&PreparePackage1;Udev&PreparePackage2;</para>

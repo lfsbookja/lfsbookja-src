@@ -44,6 +44,25 @@
 @z
 
 @x
+      <para>2023-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Restore NIC naming based on physical system
+          characteristics.  Fixes
+          <ulink url='&lfs-ticket-root;5386'>#5386</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - 物理システムの特性に基づいた NIC 命名方法に復元。
+          <ulink url='&lfs-ticket-root;5386'>#5386</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-11-30</para>
       <itemizedlist>
         <listitem>

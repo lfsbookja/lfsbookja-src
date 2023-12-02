@@ -49,6 +49,18 @@
     </listitem>
 
 -->
+
+   <listitem revision='sysv'>
+      <para>2023-12-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.0-102 (<ulink url="&lfs-changeset;823fbde93">823fbde93</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
    <listitem>
       <para>2023-12-01</para>
       <itemizedlist>
