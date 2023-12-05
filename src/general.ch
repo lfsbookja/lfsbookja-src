@@ -47,9 +47,9 @@
 <!ENTITY copyrightdate   "%crdate;">
 ]]>
 
-<!ENTITY jversion        "20231202">
-<!ENTITY jversiond       "20231202">
-<!ENTITY jcorrespondSHA  "823fbde93"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion        "20231205">
+<!ENTITY jversiond       "202312052">
+<!ENTITY jcorrespondSHA  "981b9fa6a"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
 <!ENTITY dir-jversion    "git-ja">
 <!ENTITY dir-jversiond   "git-sysdja">
 @z
@@ -58,7 +58,7 @@
 <!ENTITY lfs-root        "https://www.linuxfromscratch.org/">
 @y
 <!ENTITY lfs-root        "https://www.linuxfromscratch.org/">
-<!ENTITY lfs-rootja      "http://lfsbookja.osdn.jp/">
+<!ENTITY lfs-rootja      "https://lfsbookja.github.io/lfsbookja-doc/">
 @z
 
 @x
@@ -73,7 +73,6 @@
 @y
 <!ENTITY lfs-ticket-root "https://wiki.linuxfromscratch.org/lfs/ticket/">
 <!ENTITY lfs-changeset   "https://wiki.linuxfromscratch.org/lfs/changeset/">
-<!ENTITY lfs-ticket-rootja "https://osdn.net/projects/lfsbookja/ticket/">
 <!ENTITY lfs-rev-root    "https://wiki.linuxfromscratch.org/lfs/changeset/">
 @z
 

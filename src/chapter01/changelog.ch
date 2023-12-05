@@ -44,6 +44,25 @@
 @z
 
 @x
+      <para>2023-12-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Modify commands for install Python docs to avoid
+          too restrictive permissions on the files and dirs.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-12-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Python ドキュメントのインストールコマンドを修正。
+          ファイルやディレクトリに対する過度なパーミッション設定を回避するため。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-12-01</para>
       <itemizedlist>
         <listitem>

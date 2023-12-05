@@ -342,21 +342,28 @@
           </para>
 @z
 
-@x Framebuffer Console support
-          <para>This is needed to display the Linux console on a frame
-          buffer device.  To allow the kernel to print debug messages at an
-          early boot stage, it shouldn't be built as a kernel module
-          unless an initramfs will be used. And, if
-          <option>CONFIG_DRM</option> (Direct Rendering Manager) is enabled,
-          it's likely <option>CONFIG_DRM_FBDEV_EMULATION</option> (Enable
-          legacy fbdev support for your modesetting driver) should be
-          enabled as well.</para>
+@x
+          <parameter>
+            Enable legacy fbdev support for your modesetting driver
+          </parameter> and
+          <parameter>Framebuffer Console support</parameter>
+@y
+          <parameter>
+            Enable legacy fbdev support for your modesetting driver
+          </parameter>,
+          <parameter>Framebuffer Console support</parameter>
+@z
+@x
+          <para>These are needed to display the Linux console on a
+          GPU driven by a DRI (Direct Rendering Infrastructure) driver.
+          If <option>CONFIG_DRM</option> (Direct Rendering Manager) is
+          enabled, you should enable these two options as well or you'll see
+          a blank screen once the DRI driver is loaded.</para>
 @y
           <para>
-          これはフレームバッファーデバイス上に Linux コンソールを表示するために必要となります。
-          起動初期においてカーネルがデバッグメッセージを表示できるようにするためには、initramfs を使わない場合であれば、これをカーネルモジュールとしてビルドしてはなりません。
-          また <option>CONFIG_DRM</option> (Direct Rendering Manager) を有効にしている場合は <option>CONFIG_DRM_FBDEV_EMULATION</option> (Enable
-          legacy fbdev support for your modesetting driver) も同じく有効にしておく必要があります。
+          これは DRI (Direct Rendering Infrastructure) ドライバーにより起動される GPU 上に Linux コンソールを表示するために必要となります。
+          <option>CONFIG_DRM</option> (Direct Rendering Manager) を有効にしている場合は、この 2 つのオプションも同じく有効にしておく必要があります。
+          そうしておかないと、DRI ドライバーのロードの際に画面がブランクになってしまいます。
           </para>
 @z
 
