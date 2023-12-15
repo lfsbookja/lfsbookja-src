@@ -44,6 +44,64 @@
 @z
 
 @x
+      <para>2023-12-14</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Update to util-linux v2.39.3. Fixes
+           <ulink url='&lfs-ticket-root;5390'>#5390</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to python3-3.12.1. Fixes
+           <ulink url='&lfs-ticket-root;5392'>#5392</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to linux-6.6.7. Fixes
+           <ulink url='&lfs-ticket-root;5387'>#5387</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to kbd-2.6.4. Fixes
+           <ulink url='&lfs-ticket-root;5393'>#5393</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Update to bc-6.7.4. Fixes
+           <ulink url='&lfs-ticket-root;5389'>#5389</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Reformat util-linux configure parameters.  Fixes
+          <ulink url='&lfs-ticket-root;5395'>#5395</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-12-14</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - util-linux v2.39.3 へのアップデート。
+           <ulink url='&lfs-ticket-root;5390'>#5390</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - python3-3.12.1 へのアップデート。
+           <ulink url='&lfs-ticket-root;5392'>#5392</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - linux-6.6.7 へのアップデート。
+           <ulink url='&lfs-ticket-root;5387'>#5387</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - kbd-2.6.4 へのアップデート。
+           <ulink url='&lfs-ticket-root;5393'>#5393</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - bc-6.7.4 へのアップデート。
+           <ulink url='&lfs-ticket-root;5389'>#5389</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux の configure パラメーターを整理。
+          <ulink url='&lfs-ticket-root;5395'>#5395</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-12-04</para>
       <itemizedlist>
         <listitem>
