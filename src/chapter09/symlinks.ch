@@ -235,6 +235,24 @@
 @z
 
 @x
+      <para>Even if the custom udev rule file is created, udev may still
+      assign one or more alternative names for a NIC based on physical
+      characteristics.  If a custom udev rule would rename another NIC using
+      a name already assigned as an alternative name of another NIC, this
+      udev rule will fail.  If this issue happens, you may create the
+      <filename>/etc/udev/network/99-default.link</filename> configuration
+      file with an empty alternative assignment policy, overriding the
+      default configuration file
+      <filename>/usr/lib/udev/network/99-default.link</filename>:</para>
+@y
+      <para>
+      たとえカスタムルールファイルを生成していても、udev は NIC に対して、その物理的特性からいくつかの名前を割り振るかもしれません。
+      仮にカスタム udev ルールが定めた NIC 名が、他の NIC に割り当てられた別名と同じものに割り当てられた場合、その udev ルールは失敗します。
+      この問題が発生する場合には、設定ファイル <filename>/etc/udev/network/99-default.link</filename> を生成して、空の別名割り当てポリシーを設定することで、デフォルトの設定である <filename>/usr/lib/udev/network/99-default.link</filename> を上書きするようにします。
+      </para>
+@z
+
+@x
     <title>CD-ROM Symlinks</title>
 @y
     <title>CD-ROM のシンボリックリンク</title>

@@ -44,11 +44,30 @@
 @z
 
 @x
+      <para>2023-12-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to <phrase revision='sysv'>udev
+          from </phrase>systemd-255.  Fixes
+          <ulink url='&lfs-ticket-root;5390'>#5390</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-12-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - systemd-255 <phrase revision='sysv'>(udev)</phrase> へのアップデート。
+          <ulink url='&lfs-ticket-root;5390'>#5390</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-12-14</para>
       <itemizedlist>
         <listitem>
            <para>[bdubbs] - Update to util-linux v2.39.3. Fixes
-           <ulink url='&lfs-ticket-root;5390'>#5390</ulink>.</para>
+           <ulink url='&lfs-ticket-root;5388'>#5388</ulink>.</para>
         </listitem>
         <listitem>
            <para>[bdubbs] - Update to python3-3.12.1. Fixes
@@ -76,7 +95,7 @@
       <itemizedlist>
         <listitem>
            <para>[bdubbs] - util-linux v2.39.3 へのアップデート。
-           <ulink url='&lfs-ticket-root;5390'>#5390</ulink> を Fix に。</para>
+           <ulink url='&lfs-ticket-root;5388'>#5388</ulink> を Fix に。</para>
         </listitem>
         <listitem>
            <para>[bdubbs] - python3-3.12.1 へのアップデート。

@@ -127,7 +127,14 @@
           </para>
 @z
 
-@x -D{userdb,homed}=false
+@x
+        <term><parameter>-Dhomed=disabled</parameter> and
+        <parameter>-Duserdb=false</parameter></term>
+@y
+        <term><parameter>-Dhomed=disabled</parameter> と
+        <parameter>-Duserdb=false</parameter></term>
+@z
+@x
           <para>Remove two daemons with dependencies that do not fit
           within the scope of LFS.</para>
 @y
@@ -185,6 +192,33 @@
           </para>
 @z
 
+@x -Dsysupdate=disabled
+          <para>Do not install the <command>systemd-sysupdate</command>
+          tool.  It's designed for automatically upgrading binary distros,
+          so it's useless for a basic Linux system built from source.
+          And it will report errors on boot if it's enabled but not properly
+          configured.</para>
+@y
+          <para>
+          <command>systemd-sysupdate</command> ツールをインストールしないようにします。
+          これはバイナリディストロを自動的に更新する目的のものです。
+          したがってソースからビルドするという Linux システムにおいては、基本的に無用なものです。
+          またこれが利用可能でありながら適切に設定されていない場合には、起動時にエラーが表示されることになります。
+          </para>
+@z
+
+@x -Dukify=disabled
+          <para>Do not install the <command>systemd-ukify</command> script.
+          At runtime this script requires the
+          <application>pefile</application> Python module that neither LFS
+          nor BLFS provides.</para>
+@y
+          <para>
+          <command>systemd-ukify</command> スクリプトをインストールしないようにします。
+          このスクリプトは実行時に Python モジュール <application>pefile</application> を必要としますが、これは LFS と BLFS のいずれにおいても提供していません。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -219,18 +253,6 @@
 @y
     <para>
     基本的なターゲット構造を設定します。
-    </para>
-@z
-
-@x
-    <para>Disable two services for upgrading binary distros.  They are useless for
-    a basic Linux system built from source, and each one will report an error if
-    it's enabled but not configured:</para>
-@y
-    <para>
-    バイナリディストリビューションの更新サービスを 2 つ無効にします。
-    ソースからのビルドを行う単純な Linux システムでは不要だからです
-    有効化されても設定が行われていない場合には、エラーが出力されます。
     </para>
 @z
 

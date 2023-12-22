@@ -140,6 +140,15 @@
 @z
 
 @x
+    <para>Get the list of the shipped udev helpers and save it into an
+    environment variable:</para>
+@y
+    <para>
+    同梱されている udev ヘルパーの一覧を取得して、それを環境変数に保存します。
+    </para>
+@z
+
+@x
     <para>Only build the components needed for udev:</para>
 @y
     <para>
