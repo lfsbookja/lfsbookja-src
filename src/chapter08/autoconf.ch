@@ -63,34 +63,6 @@
 @z
 
 @x
-    <para>This takes a long time, about &autoconf-fin-sbu-tests; SBUs. In addition,
-    several tests are skipped that use Automake. For full test coverage,
-    Autoconf can be re-tested after Automake has been installed.  In addition,
-    two tests fail due to changes in libtool-2.4.3 and later.</para>
-@y
-    <para>
-    このテストはおよそ &autoconf-fin-sbu-tests; SBU ほど要します。
-    テストの中において Automake を利用するものはスキップされます。
-    すべてのテストを網羅したいなら、Automake をインストールした後に、再度テストを実行することが必要です。
-    なお libtool-2.4.3 以降では2つのテストが失敗します。
-    </para>
-@z
-
-@x
-    <note><para>The test time for autoconf can be reduced significantly on a
-    system with multiple cores.  To do this, append
-    <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> to the line above.  For
-    instance, using -j4 can reduce the test time by over 60
-    percent.</para></note>
-@y
-    <note><para>
-    マルチコアのシステム上で autoconf のテストをすると、その処理時間は大幅に減ります。
-    実行する際には、上のコマンドに <command>TESTSUITEFLAGS=-j&lt;N&gt;</command> を加えます。
-    例えば -j4 を指定するとテスト時間は 6 割以上減ります。
-    </para></note>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
