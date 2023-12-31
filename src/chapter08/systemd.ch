@@ -38,6 +38,15 @@
 @z
 
 @x
+    <para>Now fix a security vulnerability in the DNSSEC verification of
+    <command>systemd-resolved</command>:</para>
+@y
+    <para>
+    <command>systemd-resolved</command> の DNSSEC 検証におけるセキュリティぜい弱性を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare systemd for compilation:</para>
 @y
     <para>&PreparePackage1;systemd&PreparePackage2;</para>

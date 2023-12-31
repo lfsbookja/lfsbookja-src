@@ -156,6 +156,28 @@
 @z
 
 @x
+          <para>By default, the linker would generate both the GNU-style
+          hash table and the classic ELF hash table for shared libraries and
+          dynamically linked executables.  The hash tables are only intended
+          for a dynamic linker to perform symbol lookup.  On LFS the dynamic
+          linker (provided by the Glibc package) will always use the
+          GNU-style hash table which is faster to query.  So the classic
+          ELF hash table is completely useless.  This makes the the linker
+          only generate the GNU-style hash table by default, so we can avoid
+          wasting time to generate the classic ELF hash table when we build
+          the packages, or wasting disk space to store it.</para>
+@y
+          <para>
+          リンカーにおいては、共有ライブラリや動的リンク実行ファイルのハッシュテーブルに関して、GNU スタイルのものと旧来の ELF 形式のものの双方を生成することがデフォルトとなっています。
+          ハッシュテーブルは、動的リンカーがシンボル検索を実現するためのものです。
+          LFS における動的リンカー（Glibc パッケージから提供されるもの）は、GNU スタイルのハッシュを常に用いることにしており、シンボル検索をより早くなるようにしています。
+          したがって旧来の ELF ハッシュテーブルは完全に無用です。
+          本指定はリンカーに対して、デフォルトでは GNU スタイルのハッシュテーブルしか生成しないように指示します。
+          こうすることで、パッケージビルドの際に、旧来の ELF ハッシュテーブルを生成する不要な時間、およびそれを収容するディスクスペースを軽減できます。
+          </para>
+@z
+
+@x
     <para>Continue with compiling the package:</para>
 @y
     <para>&CompileThePackage;</para>

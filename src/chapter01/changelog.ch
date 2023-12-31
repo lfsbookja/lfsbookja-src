@@ -44,6 +44,113 @@
 @z
 
 @x
+      <para>2023-12-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Add --enable-default-hash-style=gnu configuring
+          binutils.  Fixes
+          <ulink url='&lfs-ticket-root;5401'>#5401</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Fix CVE-2023-7008 for systemd-255.  Fixes
+          <ulink url='&lfs-ticket-root;5405'>#5405</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to iana-etc-20231205.  Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to tzdata-2023d.  Fixes
+          <ulink url='&lfs-ticket-root;5399'>#5399</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to linux-6.6.8.  Fixes
+          <ulink url='&lfs-ticket-root;5397'>#5397</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to meson-1.3.1.  Fixes
+          <ulink url='&lfs-ticket-root;5402'>#5402</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to grub-2.12.  Fixes
+          <ulink url='&lfs-ticket-root;5396'>#5396</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to inetutils-2.5.  Fixes
+          <ulink url='&lfs-ticket-root;5404'>#5404</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to setuptools-69.0.3.  Fixes
+          <ulink url='&lfs-ticket-root;5400'>#5400</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to xml-parser-2.47.  Fixes
+          <ulink url='&lfs-ticket-root;5403'>#5403</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to vim-9.0.2189.  Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to autoconf-2.72.  Fixes
+          <ulink url='&lfs-ticket-root;5398'>#5398</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2023-12-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - binutils の configure に --enable-default-hash-style=gnu を追加。
+          <ulink url='&lfs-ticket-root;5401'>#5401</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - systemd-255 にて CVE-2023-7008 を修正。
+          <ulink url='&lfs-ticket-root;5405'>#5405</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - iana-etc-20231205 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - tzdata-2023d へのアップデート。
+          <ulink url='&lfs-ticket-root;5399'>#5399</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - linux-6.6.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5397'>#5397</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - meson-1.3.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5402'>#5402</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - grub-2.12 へのアップデート。
+          <ulink url='&lfs-ticket-root;5396'>#5396</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - inetutils-2.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5404'>#5404</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - setuptools-69.0.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5400'>#5400</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - xml-parser-2.47 へのアップデート。
+          <ulink url='&lfs-ticket-root;5403'>#5403</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - vim-9.0.2189 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - autoconf-2.72 へのアップデート。
+          <ulink url='&lfs-ticket-root;5398'>#5398</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-12-16</para>
       <itemizedlist>
         <listitem>

@@ -25,14 +25,6 @@
 @z
 
 @x
-    <para>First, fix several problems with the tests caused by bash-5.2 and later:</para>
-@y
-    <para>
-    bash-5.2 以降が起因となるテストの不具合をここで修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Autoconf for compilation:</para>
 @y
     <para>&PreparePackage1;Autoconf&PreparePackage2;</para>
