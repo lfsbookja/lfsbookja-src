@@ -20,9 +20,9 @@
   making a single mistake can damage or destroy a system. Therefore,
   the packages in the next two chapters are built as an unprivileged user.
   You could use your own user name, but to make it easier to set up a clean
-  working environment, we will create a new user called <systemitem
+  working environment, create a new user called <systemitem
   class="username">lfs</systemitem> as a member of a new group (also named
-  <systemitem class="groupname">lfs</systemitem>) and run commands as &lfs-user; during
+  <systemitem class="groupname">lfs</systemitem>) and use this user during
   the installation process. As <systemitem class="username">root</systemitem>,
   issue the following commands to add the new user:</para>
 @y
@@ -38,7 +38,7 @@
 @z
 
 @x
-    <title>This is what the command line options mean:</title>
+    <title>The meaning of the command line options:</title>
 @y
     <title>コマンドラインオプションの意味</title>
 @z
@@ -72,7 +72,7 @@
 
 @x
         <para>This parameter prevents possible copying of files from a skeleton
-        directory (the default is <filename class="directory">/etc/skel</filename>)
+        directory (default is <filename class="directory">/etc/skel</filename>)
         by changing the input location to the special null device.</para>
 @y
         <para>
@@ -82,7 +82,7 @@
 @z
 
 @x
-        <para>This is the name of the new user.</para>
+        <para>This is the actual name for the created user.</para>
 @y
         <para>
         新規ユーザーの名称を与えます。
@@ -90,23 +90,24 @@
 @z
 
 @x
-  <para>If you want to log in as &lfs-user; or switch to &lfs-user; from a
-  non-&root; user (as opposed to switching to user &lfs-user;
-  when logged in as &root;, which does not require the &lfs-user; user to
-  have a password), you need to set a password for &lfs-user;.  Issue the
-  following command as the &root; user to set the password:</para>
+  <para>To log in as <systemitem class="username">lfs</systemitem> (as opposed
+  to switching to user <systemitem class="username">lfs</systemitem> when logged
+  in as <systemitem class="username">root</systemitem>, which does not require
+  the <systemitem class="username">lfs</systemitem> user to have a password),
+  give <systemitem class="username">lfs</systemitem> a password:</para>
 @y
   <para>
-  &lfs-user; にログインする、あるいは非 &root; ユーザーから &lfs-user; に切り替える場合には、&lfs-user; に対してパスワードを設定しておくことが必要です
-  （この反対に &root; ユーザーにログインしている状態から &lfs-user; にユーザー切り替えを行う場合には、パスワードは必要ありません）。
-  &root; ユーザーにおいて以下のコマンドを実行して、パスワードの設定を行います。
+  (<systemitem class="username">root</systemitem> ユーザーにログインしている状態から <systemitem
+  class="username">lfs</systemitem> にユーザー切り替えを行う場合には、パスワードは必要ありませんが、そうではない状況では)
+  <systemitem class="username">lfs</systemitem> にログインするために必要となることから、<systemitem
+  class="username">lfs</systemitem> ユーザーにパスワードを設定します。
   </para>
 @z
 
 @x
   <para>Grant <systemitem class="username">lfs</systemitem> full access to
-  all the directories under <filename class="directory">$LFS</filename> by making
-  <systemitem class="username">lfs</systemitem> the owner:</para>
+  all directories under <filename class="directory">$LFS</filename> by making
+  <systemitem class="username">lfs</systemitem> the directory owner:</para>
 @y
   <para>
   <filename class="directory">$LFS</filename> ディレクトリの所有者を <systemitem
@@ -115,33 +116,32 @@
 @z
 
 @x
-<note><para>In some host systems, the following <command>su</command> command does not complete
-  properly and suspends the login for the &lfs-user; user to the background.
+  <note><para>In some host systems, the following command does not complete
+  properly and suspends the login to the &lfs-user; user to the background.
   If the prompt "lfs:~$" does not appear immediately, entering the
   <command>fg</command> command will fix the issue.</para></note>
 @y
 <note><para>
-  ホストシステムによっては、以下の <command>su</command> コマンドを実行しても正常に処理されず、&lfs-user; ユーザーへのログインがバックグラウンドで処理中のままとなってしまうことがあります。
+  ホストシステムによっては、以下のコマンドを実行しても正常に処理されず、&lfs-user; ユーザーへのログインがバックグラウンドで処理中のままとなってしまうことがあります。
   プロンプトに "lfs:~$" という表示がすぐに現れなかった場合は、<command>fg</command> コマンドを入力することで解決するかもしれません。
   </para></note>
 @z
 
 @x
-  <para>Next, start a shell running as user &lfs-user;. This can be done by
-  logging in as &lfs-user; on a virtual console, or with the following
-  substitute/switch user command:</para>
+  <para>Next, login as user <systemitem class="username">lfs</systemitem>.
+  This can be done via a virtual console, through a display manager, or with
+  the following substitute/switch user command:</para>
 @y
   <para>
-  &lfs-user; ユーザーにより起動するシェルを開始します。
-  これは、仮想コンソール上から &lfs-user; によってログインして実現します。
-  あるいは以下のユーザー切り替えコマンドを実行します。
+  <systemitem class="username">lfs</systemitem> ユーザーとしてログインします。。
+  これは、仮想コンソール上から、あるいはディスプレイマネージャーから、あるいは以下のユーザー切り替えコマンドを実行します。
   </para>
 @z
 
 @x
   <para>The <quote><parameter>-</parameter></quote> instructs
   <command>su</command> to start a login shell as opposed to a non-login shell.
-  The difference between these two types of shells is described in detail in
+  The difference between these two types of shells can be found in detail in
   <filename>bash(1)</filename> and <command>info bash</command>.</para>
 @y
   <para>

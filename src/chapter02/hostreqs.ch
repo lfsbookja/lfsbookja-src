@@ -22,33 +22,6 @@
 @z
 
 @x
-     <title>Hardware</title>
-@y
-     <title>ハードウェア</title>
-@z
-
-@x
-     <para>The LFS editors recommend that the system CPU have at least
-     four cores and that the system have at least 8 GB of memory. 
-     Older systems that do not meet these requirements will still work,
-     but the time to build packages will be significantly longer
-     than documented.
-  </para>
-@y
-     <para>
-     LFS 編集者としては、システム CPU は最低でも 4 コア、メモリ容量は最低でも 8 GB を推奨しています。
-     この要件を満たさない古いシステムであっても、動くかもしれません。
-     しかしパッケージのビルド時間は、本書に示すものよりも極端に長くなるかもしれません。
-  </para>
-@z
-
-@x
-     <title>Software</title>
-@y
-     <title>ソフトウェア</title>
-@z
-
-@x
     <para>Your host system should have the following software with the
     minimum versions indicated. This should not be an issue for most
     modern Linux distributions. Also note that many distributions will
@@ -96,7 +69,7 @@
 
 @x
       <para><emphasis role="strong">Bison-2.7</emphasis> (/usr/bin/yacc
-      should be a link to bison or a small script that executes bison)</para>
+      should be a link to bison or small script that executes bison)</para>
 @y
       <para>
       <emphasis role="strong">Bison-2.7</emphasis> (/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)
@@ -113,14 +86,14 @@
 @z
 
 @x
-      <para><emphasis role="strong">GCC-5.1</emphasis> including the C++
+      <para><emphasis role="strong">GCC-4.8</emphasis> including the C++
       compiler, <command>g++</command> (Versions greater than &gcc-version; are
       not recommended as they have not been tested). C and C++ standard
       libraries (with headers) must also be present so the C++ compiler can
       build hosted programs</para>
 @y
       <para>
-      <emphasis role="strong">GCC-5.1</emphasis> と C++ コンパイラーである <command>g++</command>
+      <emphasis role="strong">GCC-4.8</emphasis> と C++ コンパイラーである <command>g++</command>
       (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
       ホストされたプログラムを C++ コンパイラーがビルドできるように、C および C++ の標準ライブラリ（ヘッダーを含む）が存在しなければなりません。
       </para>
@@ -136,24 +109,22 @@
       <para>The reason for the kernel version requirement is that we specify
       that version when building <application>glibc</application> in
       <xref linkend="chapter-cross-tools"/> and
-      <xref linkend="chapter-building-system"/>, so the workarounds for
-      older kernels are not enabled and the compiled
-      <application>glibc</application> is slightly faster and smaller.
-      As at June 2023, &min-kernel; is the oldest kernel release still
-      supported by the kernel developers.</para>
+      <xref linkend="chapter-building-system"/>,
+      at the recommendation of the developers.  It is also required by
+      udev.</para>
 @y
       <para>
       カーネルのバージョンを指定しているのは、<xref
       linkend="chapter-cross-tools"/> と <xref
       linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからです。
-      こうすると古いカーネルに対する対応コードが無効となり、コンパイルした <application>glibc</application> が若干早く、また軽量になります。
-      2023 年 6 月時点、カーネル開発者によってサポートされる、もっとも古いカーネルバージョンは &min-kernel; です。
+      開発者がこれを推奨しています。
+      また udev においてもこれが必要になります。
       </para>
 @z
 
 @x
       <para>If the host kernel is earlier than &min-kernel; you will need to replace
-      the kernel with a more up-to-date version. There are two ways
+      the kernel with a more up to date version. There are two ways
       you can go about this. First, see if your Linux vendor provides a &min-kernel;
       or later kernel package. If so, you may wish to install it. If your
       vendor doesn't offer an acceptable kernel package, or you would prefer not to
@@ -168,20 +139,6 @@
       提供していれば、それをインストールします。
       もしそれがない場合や、あったとしてもそれをインストールしたくない場合、カーネルをご自身でコンパイルする必要があります。
       カーネルのコンパイルと (ホストシステムが GRUB を利用しているとして) ブートローダーの設定方法については <xref linkend="chapter-bootable"/> を参照してください。
-      </para>
-@z
-
-@x
-      <para>We require the host kernel to support UNIX 98 pseudo terminal
-      (PTY).  It should be enabled on all desktop or server distros shipping
-      Linux &min-kernel; or a newer kernel. If you are building a custom
-      host kernel, ensure <option>CONFIG_UNIX98_PTYS</option> is set to
-      <literal>y</literal> in the kernel configuration.</para>
-@y
-      <para>
-      本書では、ホストカーネルが UNIX 98 疑似端末（PTY）をサポートしていることが必要です。
-      これは Linux &min-kernel; またはそれ以降のカーネルを利用するデスクトップ向け、あるいはサーバー向けのディストリビューションにとって利用できなければなりません。
-      独自のホストカーネルを利用している場合には、カーネル設定において <option>CONFIG_UNIX98_PTYS</option> が <literal>y</literal> であることを確認してください。
       </para>
 @z
 
@@ -215,7 +172,7 @@
 
 @x
   <para >To see whether your host system has all the appropriate versions, and
-  the ability to compile programs, run the following commands:</para>
+  the ability to compile programs, run the following:</para>
 @y
   <para>
   ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のコマンドを実行して確認することができます。

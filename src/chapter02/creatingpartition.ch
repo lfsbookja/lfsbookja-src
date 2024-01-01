@@ -209,10 +209,10 @@
 @x
     <para>Swapping is never good. For mechanical hard drives you can generally
     tell if a system is swapping by just listening to disk activity and
-    observing how the system reacts to commands. With an SSD you will not
-    be able to hear swapping, but you can tell how much swap space is being used
-    by running the <command>top</command> or <command>free</command> programs.  Use of
-    an SSD for a swap partition should be avoided if possible.  The first
+    observing how the system reacts to commands.  For an SSD drive you will not
+    be able to hear swapping but you can tell how much swap space is being used
+    by the <command>top</command> or <command>free</command> programs.  Use of
+    an SSD drive for a swap partition should be avoided if possible.  The first
     reaction to swapping should be to check for an unreasonable command such as
     trying to edit a five gigabyte file. If swapping becomes a normal
     occurrence, the best solution is to purchase more RAM for your
@@ -243,7 +243,7 @@
     must be available for GRUB to use during installation of the boot
     loader. This partition will normally be labeled 'BIOS Boot' if using
     <command>fdisk</command> or have a code of <emphasis>EF02</emphasis> if
-    using the <command>gdisk</command> command.</para>
+    using <command>gdisk</command>.</para>
 @y
     <para>
     GUID パーティションテーブル (GUID Partition Table; GPT) を利用して <emphasis>ブートディスク</emphasis> をパーティショニングした場合、普通は 1 MB 程度の小さなパーティションをさらに用意しておくことが必要です。
@@ -255,9 +255,9 @@
 
 @x
     <note><para>The Grub Bios partition must be on the drive that the BIOS
-    uses to boot the system.  This is not necessarily the drive that holds
-    the LFS root partition. The disks on a system may use different
-    partition table types. The necessity of the Grub Bios partition depends
+    uses to boot the system.  This is not necessarily the same drive where the
+    LFS root partition is located. Disks on a system may use different
+    partition table types.  The requirement for this partition depends
     only on the partition table type of the boot disk.</para></note>
     </sect3>
 @y
@@ -292,7 +292,7 @@
       <listitem><para>/boot &ndash; Highly recommended.  Use this partition to
       store kernels and other booting information.  To minimize potential boot
       problems with larger disks, make this the first physical partition on
-      your first disk drive.  A partition size of 200 megabytes is
+      your first disk drive.  A partition size of 200 megabytes is quite
       adequate.</para></listitem>
 @y
       <listitem><para>
@@ -300,19 +300,6 @@
       カーネルやブート情報を収納するために利用するパーティションです。
       容量の大きなディスクの場合、ブート時に問題が発生することがあるので、これを回避するには、一つ目のディスクドライブの物理的に一番最初のパーティションを選びます。
       パーティションサイズを 200MB とすればそれで十分です。
-      </para></listitem>
-@z
-
-@x
-      <listitem><para>/boot/efi &ndash; The EFI System Partition, which is
-      needed for booting the system with UEFI.  Read
-      <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>
-      for details.</para></listitem>
-@y
-      <listitem><para>
-      /boot/efi &ndash; EFI システムパーティションであり、UEFI を使ってシステム起動する場合に必要です。
-      詳しくは <ulink
-      url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> を参照してください。
       </para></listitem>
 @z
 
@@ -334,17 +321,17 @@
       <filename class="directory">/bin</filename>,
       <filename class="directory">/lib</filename>, and
       <filename class="directory">/sbin</filename> are symlinks to their
-      counterparts in <filename class="directory">/usr</filename>.
-      So <filename class="directory">/usr</filename> contains all the binaries
+      counterpart in <filename class="directory">/usr</filename>.
+      So <filename class="directory">/usr</filename> contains all binaries
       needed for the system to run.  For LFS a separate partition for
       <filename class="directory">/usr</filename> is normally not needed.
-      If you create it anyway, you should make a partition large enough to
-      fit all the programs and libraries in the system. The root partition can be
+      If you need it anyway, you should make a partition large enough to
+      fit all programs and libraries in the system.  The root partition can be
       very small (maybe just one gigabyte) in this configuration, so it's
       suitable for a thin client or diskless workstation (where
       <filename class="directory">/usr</filename> is mounted from a remote
-      server). However, you should be aware that an initramfs (not covered by
-      LFS) will be needed to boot a system with a separate
+      server).  However you should take care that an initramfs (not covered by
+      LFS) will be needed to boot a system with separate
       <filename class="directory">/usr</filename> partition.</para></listitem>
 @y
       <listitem><para>/usr &ndash;
@@ -366,14 +353,14 @@
 
 @x
       <listitem><para>/opt &ndash; This directory is most useful for
-      BLFS, where multiple large packages like KDE or Texlive can
+      BLFS where multiple installations of large packages like Gnome or KDE can
       be installed without embedding the files in the /usr hierarchy.  If
       used, 5 to 10 gigabytes is generally adequate.</para>
       </listitem>
 @y
       <listitem><para>
       /opt &ndash; 
-      このディレクトリは BLFS などにおいて、KDE や Texlive といった巨大なパッケージをいくつもインストールする際に活用されます。
+      このディレクトリは BLFS などにおいて、Gnome や KDE といった巨大なパッケージをいくつもインストールする際に活用されます。
       /usr ディレクトリ以外にインストールする場合です。
       これを別パーティションとするなら、一般的には 5 ～ 10 GB 程度が適当でしょう。
       </para>
@@ -381,43 +368,24 @@
 @z
 
 @x
-      <listitem revision='sysv'><para>/tmp &ndash; A separate /tmp partition
-      is rare, but useful if configuring a thin client.  This partition, if
-      used, will usually not need to exceed a couple of
-      gigabytes.  If you have enough RAM, you can mount a
-      <systemitem class='filesystem'>tmpfs</systemitem> on /tmp to make
-      access to temporary files faster.</para></listitem>
+      <listitem><para>/tmp &ndash; A separate /tmp directory is rare, but
+      useful if configuring a thin client.  This partition, if used, will
+      usually not need to exceed a couple of gigabytes.</para></listitem>
 @y
-      <listitem revision='sysv'><para>
+      <listitem><para>
       /tmp &ndash; 
       /tmp パーティションを別パーティションとするのは普通は行いません。
       ただしシンクライアント (thin client) では有効です。
       別パーティションとする場合であっても、数GB程度あれば十分です。
-      RAM が十分にある場合は <systemitem
-      class='filesystem'>tmpfs</systemitem> を /tmp にマウントして、一時ファイルへのアクセスを素早く行えるようになります。
-      </para></listitem>
-@z
-
-@x
-      <listitem revision='systemd'><para>/tmp &ndash; By default, systemd
-      mounts a <systemitem class='filesystem'>tmpfs</systemitem> here.
-      If you want to override that behavior, follow
-      <xref linkend='systemd-no-tmpfs'/> when configuring the LFS
-      system.</para></listitem>
-@y
-      <listitem revision='systemd'><para>
-      /tmp &ndash;
-      systemd はデフォルトで <systemitem class='filesystem'>tmpfs</systemitem> をマウントします。
-      この動作を上書きしたい場合は <xref linkend='systemd-no-tmpfs'/> に従って LFS システムを設定してください。
       </para></listitem>
 @z
 
 @x
       <listitem><para>/usr/src &ndash; This partition is very
       useful for providing a location to store BLFS source files and
-      share them across LFS builds. It can also be used as a location
-      for building BLFS packages. A reasonably large partition of 30-50
-      gigabytes provides plenty of room.</para></listitem>
+      share them across LFS builds.  It can also be used as a location
+      for building BLFS packages.  A reasonably large partition of 30-50
+      gigabytes allows plenty of room.</para></listitem>
 @y
       <!--
       前段にて BLFS source files を収容するような説明。
@@ -433,10 +401,10 @@
 @z
 
 @x
-    <para>Any separate partition that you want automatically mounted when the
-    system starts must be specified in the <filename>/etc/fstab</filename> file.
-    Details about how to specify partitions will be discussed in <xref
-    linkend="ch-bootable-fstab"/>.</para>
+    <para>Any separate partition that you want automatically mounted upon boot
+    needs to be specified in the <filename>/etc/fstab</filename>.  Details
+    about how to specify partitions will be discussed in <xref
+    linkend="ch-bootable-fstab"/>.  </para>
 @y
     <para>
     ブート時に自動的にパーティションをマウントしたい場合は <filename>/etc/fstab</filename> ファイルにて設定します。

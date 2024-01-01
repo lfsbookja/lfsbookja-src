@@ -18,9 +18,9 @@
 @x
   <para>LFS is designed to be built in one session.  That is, the
   instructions assume that the system will not be shut down
-  during the process.  This does not mean that the system has to
-  be built in one sitting.  The issue is that certain procedures
-  must be repeated after a reboot when resuming LFS at
+  during the process.  That does not mean that the system has to
+  be done in one sitting.  The issue is that certain procedures
+  have to be re-accomplished after a reboot if resuming LFS at
   different points.</para>
 @y
   <para>
@@ -38,8 +38,8 @@
 @z
 
 @x
-    <para>These chapters run commands on the host system.  When
-    restarting, be certain of one thing:</para>
+    <para>These chapters are accomplished on the host system.  When
+    restarting, be careful of the following:</para>
 @y
     <para>
     これらの章ではホストシステム上でコマンド実行します。
@@ -48,9 +48,9 @@
 @z
 
 @x
-        <para>Procedures performed as the
+        <para>Procedures done as the
         <systemitem class="username">root</systemitem> user after Section
-        2.4 must have the LFS environment variable set
+        2.4 need to have the LFS environment variable set
         <emphasis>FOR THE ROOT USER</emphasis>.</para>
 @y
         <para>
@@ -60,7 +60,7 @@
 @z
 
 @x
-  <title>Chapters&nbsp;5&ndash;6</title>
+  <title>Chapter&nbsp;5&ndash;6</title>
 @y
   <title>第&nbsp;5&nbsp;章～第&nbsp;6&nbsp;章</title>
 @z
@@ -76,8 +76,8 @@
 @x
         <para>These two chapters <emphasis>must</emphasis> be done as user
         <systemitem class="username">lfs</systemitem>.
-        A <command>su - lfs</command> command must be issued before performing any task in these
-        chapters. If you don't do that, you are at risk of installing packages to the
+        A <command>su - lfs</command> needs to be done before any task in these
+        chapters. Failing to do that, you are at risk of installing packages to the
         host, and potentially rendering it unusable.</para>
 @y
         <para>
@@ -90,9 +90,9 @@
 @x
          <para>The procedures in <xref linkend='ch-tools-generalinstructions'/>
          are critical.  If there is any
-         doubt a package has been installed correctly, ensure the previously expanded
-         tarball has been removed, then re-extract the package, and complete all
-         the instructions in that section.</para>
+         doubt about installing a package, ensure any previously expanded
+         tarballs are removed, then re-extract the package files, and complete all
+         instructions in that section.</para>
 @y
          <para>
          <xref linkend='ch-tools-generalinstructions'/>に示す内容は極めて重要です。
@@ -101,7 +101,7 @@
 @z
 
 @x
-  <title>Chapters&nbsp;7&ndash;10</title>
+  <title>Chapter&nbsp;7&ndash;10</title>
 @y
   <title>第&nbsp;7&nbsp;章～第&nbsp;10&nbsp;章</title>
 @z
@@ -116,7 +116,7 @@
 
 @x
         <para>A few operations, from <quote>Changing Ownership</quote> to
-        <quote>Entering the Chroot Environment</quote>, must be done as the
+        <quote>Entering the Chroot Environment</quote> must be done as the
         <systemitem class="username">root</systemitem> user, with the LFS
         environment variable set for the &root; user.</para>
 @y
@@ -129,7 +129,7 @@
 @x
          <para> When entering chroot, the LFS environment variable must be set
          for <systemitem class="username">root</systemitem>. The LFS
-         variable is not used after the chroot environment has been entered.</para>
+         variable is not used afterwards.</para>
 @y
          <para>
          chroot 環境に入った際には、環境変数 LFS が <systemitem class="username">root</systemitem> ユーザーにおいて設定されている必要があります。

@@ -73,22 +73,10 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-chmod-patch;"/></para>
 @z
 
-@x Gcc glibc-2.36 Fixes Patch
-        <para>Download: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
-@z
-
 @x Glibc FHS Patch
         <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
-@z
-
-@x GRUB Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&grub-upstream-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&grub-upstream-fixes-patch;"/></para>
 @z
 
 @x Kbd Backspace/Delete Fix Patch
@@ -115,22 +103,10 @@
         <para>&Download;: <ulink url="&patches-root;&perl-fix-patch;"/></para>
 @z
 
-@x Readline Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-@z
-
 @x Sysvinit Consolidated Patch
         <para>Download: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
-@z
-
-@x Systemd Upstream Patch
-        <para>Download: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
 @z
 
 @x Xz Upstream Fix Patch
