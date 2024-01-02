@@ -63,3 +63,12 @@
   以下のコマンドによりこれを実現します。
   </para>
 @z
+
+@x
+  <para arch="ml_32,ml_x32,ml_all">Some more directories exists for
+  multilib support. Change their ownership, too:</para>
+@y
+  <para arch="ml_32,ml_x32,ml_all">
+  マルチライブラリサポートのためのディレクトリが存在しているので、その所有者を変更します。
+  </para>
+@z

@@ -125,6 +125,72 @@
     <para>&InstallThePackage;</para>
 @z
 
+%------------------
+% Multilib - 32bit
+%------------------
+@x
+    <title>Installation of Util-linux - 32-bit</title>
+@y
+    <title>&InstallationOf1;Util-linux - 32 ビット&InstallationOf2;</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>ここまでのビルドをクリアします。</para>
+@z
+
+@x
+    <para>Prepare Util-linux for compilation:</para>
+@y
+    <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+%-------------------
+% Multilib - x32bit
+%-------------------
+@x
+    <title>Installation of Util-linux - x32-bit</title>
+@y
+    <title>&InstallationOf1;Util-linux - x32 ビット&InstallationOf2;</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>ここまでのビルドをクリアします。</para>
+@z
+
+@x
+    <para>Prepare Util-linux for compilation:</para>
+@y
+    <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
 @x
     <para>Details on this package are located in <xref linkend="contents-utillinux" role="."/></para>
 @y

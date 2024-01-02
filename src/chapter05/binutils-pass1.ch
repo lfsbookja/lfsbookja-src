@@ -155,6 +155,14 @@
           </para>
 @z
 
+@x --enable-multilib
+          <para>Enables multilib support.</para>
+@y
+          <para>
+          マルチライブラリサポートを有効にします。
+          </para>
+@z
+
 @x
     <para>Continue with compiling the package:</para>
 @y

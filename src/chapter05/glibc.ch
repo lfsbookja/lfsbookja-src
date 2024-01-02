@@ -139,20 +139,14 @@
           </para>
 @z
 
-%@x libc_cv_include_x86_isa_level=no
-%          <para>This disables <quote>x86 ISA needed</quote> property in
-%          Glibc libraries.  Use it <emphasis role="bold">if</emphasis>
-%          you are building Glibc with <option>-march</option> option in
-%          <envar>CFLAGS</envar>, to workaround an issue in Glibc-2.33
-%          breaking it.</para>
-%@y
-%          <para>
-%          これは Glibc ライブラリ内の<quote>x86 ISA needed</quote>プロパティを無効にします。
-%          Glibc のビルド時に <envar>CFLAGS</envar> として <option>-march</option> を設定している <emphasis
-%          role="bold">場合に限っては</emphasis> これを有効にします。
-%          そうすることで Glibc-2.33 における問題が回避できます。
-%          </para>
-%@z
+@x --disable-nscd
+          <para>Do not build the name service cache daemon which is no 
+          longer used.</para>
+@y
+          <para>
+          nscd (name service cache daemon) は使われることがないのでビルドしないようにします。
+          </para>
+@z
 
 @x
     <para>During this stage the following warning might appear:</para>
@@ -318,6 +312,190 @@
     そこで limits.h のインストールを確定させます。
     これには GCC 開発者が提供するユーティリティーを実行します。
     </para>
+@z
+
+%------------------
+% Multilib - 32bit
+%------------------
+@x
+    <title>Building Glibc - 32bit</title>
+@y
+    <title>Glibc - 32 ビットのビルド</title>
+@z
+
+@x
+    <para>Now recompile for m32. The extracted source can be
+    reused but needs to be cleaned before installing the m32
+    version of Glibc.</para>
+@y
+    <para>
+    ここから m32 向けに再コンパイルします。
+    展開済みのソースは再利用できます。
+    ただし m32 バージョンの Glibc のインストールを行う前には、すべてクリーンにしておくことが必要です。
+    </para>
+@z
+
+@x
+    <para>Clear the build directory and remove artefacts from
+    previous build:</para>
+@y
+    <para>
+    ビルドディレクトリをクリアし、上のビルドで生成したものを削除します。
+    </para>
+@z
+
+@x
+    <para>Configure Glibc for m32 with the following commands:</para>
+@y
+    <para>
+    以下のコマンドを実行して m32 向けの設定を行います。
+    </para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+@x
+      <para>At this point, it is imperative to stop and ensure that the basic
+      functions (compiling and linking) of the new toolchain are working as
+      expected. To perform a sanity check, run the following commands:</para>
+@y
+      <para>
+      この時点で以下を必ず実施します。
+      新しいツールチェーンの基本的な機能 (コンパイルやリンク) が正常に処理されるかどうかを確認することです。
+      健全性のチェック (sanity check) を行うものであり、以下のコマンドを実行します。
+      </para>
+@z
+
+@x
+      <para>If everything is working correctly, there should be no errors,
+      and the output of the last command will be of the form:</para>
+@y
+      <para>
+      すべてが正常に処理され、エラーが発生しなければ、最終のコマンドの実行結果として以下が出力されるはずです。
+      </para>
+@z
+
+@x
+      <para>If the output is not shown as above or there was no output at all,
+      then something is wrong. Investigate and retrace the steps to find out
+      where the problem is and correct it. This issue must be resolved before
+      continuing on.</para>
+@y
+      <para>
+      出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
+      どこに問題があるのか調査、再試行を行って解消してください。
+      解決せずにこの先に進まないでください。
+      </para>
+@z
+
+@x
+      <para>Once all is well, clean up the test files:</para>
+@y
+      <para>
+      すべてが完了したら、テストファイルを削除します。
+      </para>
+@z
+
+%-------------------
+% Multilib - x32bit
+%-------------------
+@x
+    <title>Building Glibc - x32bit</title>
+@y
+    <title>Glibc - x32 ビットのビルド</title>
+@z
+
+@x
+    <para>Now recompile for mx32. The extracted source can be
+    reused but needs to be cleaned before installing the mx32
+    version of Glibc.</para>
+@y
+    <para>
+    ここから mx32 向けに再コンパイルします。
+    展開済みのソースは再利用できます。
+    ただし mx32 バージョンの Glibc のインストールを行う前には、すべてクリーンにしておくことが必要です。
+    </para>
+@z
+
+@x
+    <para>Clear the build directory and remove artefacts from
+    previous build:</para>
+@y
+    <para>
+    ビルドディレクトリをクリアし、上のビルドで生成したものを削除します。
+    </para>
+@z
+
+@x
+    <para>Configure Glibc for mx32 with the following commands:</para>
+@y
+    <para>
+    以下のコマンドを実行して mx32 向けの設定を行います。
+    </para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+@x
+      <para>At this point, it is imperative to stop and ensure that the basic
+      functions (compiling and linking) of the new toolchain are working as
+      expected. To perform a sanity check, run the following commands:</para>
+@y
+      <para>
+      この時点で以下を必ず実施します。
+      新しいツールチェーンの基本的な機能 (コンパイルやリンク) が正常に処理されるかどうかを確認することです。
+      健全性のチェック (sanity check) を行うものであり、以下のコマンドを実行します。
+      </para>
+@z
+
+@x
+      <para>If everything is working correctly, there should be no errors,
+      and the output of the last command will be of the form:</para>
+@y
+      <para>
+      すべてが正常に処理され、エラーが発生しなければ、最終のコマンドの実行結果として以下が出力されるはずです。
+      </para>
+@z
+
+@x
+      <para>If the output is not shown as above or there was no output at all,
+      then something is wrong. Investigate and retrace the steps to find out
+      where the problem is and correct it. This issue must be resolved before
+      continuing on.</para>
+@y
+      <para>
+      出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
+      どこに問題があるのか調査、再試行を行って解消してください。
+      解決せずにこの先に進まないでください。
+      </para>
+@z
+
+@x
+      <para>Once all is well, clean up the test files:</para>
+@y
+      <para>
+      すべてが完了したら、テストファイルを削除します。
+      </para>
 @z
 
 @x

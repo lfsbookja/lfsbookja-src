@@ -142,6 +142,23 @@
           </para>
 @z
 
+@x --with-{b,yes}crypt
+          <para>The shell expands this to two switches,
+          <parameter>--with-bcrypt</parameter> and
+          <parameter>--with-yescrypt</parameter>.  They allow shadow to use
+          the Bcrypt and Yescrypt algorithms implemented by
+          <application>Libxcrypt</application> for hashing passwords.
+          These algorithms are more secure (in particular, much more
+          resistant to GPU-based attacks) than the traditional SHA
+          algorithms.</para>
+@y
+          <para>
+          これはシェルによって 2 つのスイッチ、つまり <parameter>--with-bcrypt</parameter> と <parameter>--with-yescrypt</parameter> に展開されます。
+          パスワードのハッシュ処理を行うための Bcrypt および Yescrypt アルゴリズムが <application>Libxcrypt</application> において実装されており、本スイッチは shadow がそれを用いることを指示します。
+          このアルゴリズムは従来の SHA アルゴリズムに比べて、（特に GPU ベースの攻撃への耐性が高く）より安全性を有しています。
+          </para>
+@z
+
 @x --with-group-name-max-length=32
           <para>The longest permissible user name is 32 characters.  Make the maximum
           length of a group name the same.</para>
@@ -150,6 +167,16 @@
           ユーザー名の最大文字数は 32 です。
           そこでグループ名の最大文字数も同様とします。
           </para>
+@z
+
+@x --without-libbsd
+           <para>Do not use the readpassphrase function from libbsd which
+           is not in LFS.  Use the internal copy instead.</para>
+@y
+           <para>
+           libbsd の readpassphrase 関数は LFS 内には無いため用いないようにします。
+           その代わりに内部にコピーされている分を用います。
+           </para>
 @z
 
 @x

@@ -163,6 +163,28 @@
           </para>
 @z
 
+@x -Ddev-kvm-mode=0660
+          <para>The default udev rule would allow all users to access
+          <filename class='devicefile'>/dev/kvm</filename>.  The editors
+          consider it dangerous.  This option overrides it.</para>
+@y
+          <para>
+          デフォルトの udev ルールは、あらゆるユーザーが <filename
+          class='devicefile'>/dev/kvm</filename> にアクセスできるようにします。
+          当編集者としてこれは危険なことと考えています。
+          本オプションはその設定を上書きします。
+          </para>
+@z
+
+@x -Dnobody-group=nogroup
+          <para>Tell the package the group name with GID 65534 is
+          <systemitem class='groupname'>nogroup</systemitem>.</para>
+@y
+          <para>
+          <systemitem class='groupname'>nogroup</systemitem> がグループ GID 65534 であるグループ名として指定します。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y

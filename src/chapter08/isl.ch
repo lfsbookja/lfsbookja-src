@@ -20,19 +20,19 @@
 @x
     <title>Installation of ISL</title>
 @y
-    <title>Installation of ISL</title>
+    <title>&InstallationOf1;ISL&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare ISL for compilation:</para>
 @y
-    <para>Prepare ISL for compilation:</para>
+    <para>&PreparePackage1;ISL&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the new configure options:</title>
 @y
-      <title>The meaning of the new configure options:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x --docdir=/usr/share/doc/isl-&isl-version;
@@ -46,33 +46,35 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>Compile the package:</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>Install the package and its documentation:</para>
 @y
-    <para>Install the package and its documentation:</para>
+    <para>パッケージとドキュメントをインストールします。</para>
 @z
 
 @x
     <para>Finally, move a misplaced file:</para>
 @y
-    <para>Finally, move a misplaced file:</para>
+    <para>
+    置き間違っているファイルを移動させます。
+    </para>
 @z
 
 @x
     <title>Contents of ISL</title>
 @y
-    <title>Contents of ISL</title>
+    <title>&ContentsOf1;ISL&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -86,7 +88,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libisl

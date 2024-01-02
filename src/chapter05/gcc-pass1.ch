@@ -79,6 +79,15 @@
 @z
 
 @x
+    <para arch="ml_32,ml_x32,ml_all">Change the default directory name for
+    libraries:</para>
+@y
+    <para arch="ml_32,ml_x32,ml_all">
+    各ライブラリ向けのデフォルトディレクトリ名を変更します。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC
     in a dedicated build directory:</para>
 @y
@@ -180,8 +189,17 @@
           This switch is harmless for x86.</para>
 @y
           <para>
-          x86_64 に対して LFS は multilib のサポートをしていません。
+          x86_64 に対して LFS はマルチライブラリのサポートをしていません。
           このオプション指定は x86 には無関係です。
+          </para>
+@z
+@x --enable-multilib --with-multilib-list=...
+          <para>LFS canbe used to support multilib. Which they are is
+          specified in the multilib list.</para>
+@y
+          <para>
+          LFS はマルチライブラリサポートを有効にできます。
+          どのライブラリを有効にするかは、マルチライブラリリストを使って指定します。
           </para>
 @z
 

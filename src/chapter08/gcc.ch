@@ -53,6 +53,15 @@
 @z
 
 @x
+    <para arch="ml_32,ml_x32,ml_all">Change the default directory name for 64-bit
+    libraries to <quote>lib</quote>:</para>
+@y
+    <para arch="ml_32,ml_x32,ml_all">
+    64 ビット向けのデフォルトディレクトリ名を "lib" に変更します。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC in a dedicated build directory:</para>
 @y
     <para>
@@ -93,6 +102,21 @@
           <para>
           本パラメーターは、本章の初期段階でビルドした Binutils の ld プログラムを使うことを configure スクリプトに指示します。
           これを指定しなかった場合は、クロスビルド版のものが用いられることになります。
+          </para>
+@z
+
+@x --disable-fixincludes
+          <para>By default, during the installation of GCC some system
+          headers would be <quote>fixed</quote> to be used with GCC.  This
+          is not necessary for a modern Linux system, and potentially 
+          harmful if a package is reinstalled after installing GCC.  This
+          switch prevents GCC from <quote>fixing</quote> the headers.</para>
+@y
+          <para>
+          デフォルトにおいて、GCC のインストール中に GCC が利用するシステムヘッダーが<quote>固定される</quote>場合があります。
+          これは最近の Linux システムにおいては不要なことです。
+          また GCC のインストール後に何かのパッケージをインストールすることを考えると、潜在的な危険を生み出すことになります。
+          本スイッチは GCC がヘッダーファイルを <quote>固定 (fix)</quote> しないようにします。
           </para>
 @z
 
@@ -229,6 +253,21 @@
     <filename>copy.cc</filename>、<filename>pr56837.c</filename> というテストが失敗します。
     さらに <filename class='directory'>vect</filename> ディレクトリ内にあるテストが、AVX に対するハードウェアサポートがないために、いくつか失敗します。
     </para>
+@z
+
+@x
+      With Glibc-2.38, the analyzer tests named
+      <filename>data-model-4.c</filename> and
+      <filename>conftest-1.c</filename> 
+        are known to fail.
+      In the asan tests, several tests in <filename>asan_test.C</filename> 
+        are known to fail.
+      The test named <filename>interception-malloc-test-1.C</filename> 
+        is known to fail.
+@y
+      Glibc-2.38 を利用した場合に、<filename>data-model-4.c</filename>, <filename>conftest-1.c</filename> という解析テストが失敗します。
+      また asan テストにおいて、<filename>asan_test.C</filename> テスト内のサブテストがいくつか失敗します。
+      <filename>interception-malloc-test-1.C</filename> というテストも失敗します。
 @z
 
 @x

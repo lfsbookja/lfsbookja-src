@@ -67,6 +67,15 @@
 @z
 
 @x
+    <para arch="ml_32,ml_x32,ml_all">Change the default directory name for the
+    libraries:</para>
+@y
+    <para arch="ml_32,ml_x32,ml_all">
+    各ライブラリ向けのデフォルトディレクトリ名を変更します。
+    </para>
+@z
+
+@x
     <para>Override the building rule of libgcc and libstdc++ headers, to
     allow building these libraries with POSIX threads support:</para>
 @y
@@ -158,6 +167,24 @@
           class="libraryfile">libgcc</filename> をビルドしていましたが、ここでは共有の <filename
           class="libraryfile">libgcc</filename> をビルドするようにします。
           これは C++ 例外処理のために必要となります。
+          </para>
+@z
+
+@x --disable-libsanitizer
+          <para>Disable GCC sanitizer runtime libraries.  They are not
+          needed for the temporary installation.  This switch is necessary
+          to build GCC without
+          <systemitem class='library'>libcrypt</systemitem> installed for
+          the target.  In <xref linkend='ch-tools-gcc-pass1'/> it was
+          implied by <parameter>--disable-libstdcxx</parameter>, but now we
+          have to explicitly pass it.</para>
+@y
+          <para>
+          GCC のサニタイザーランタイムライブラリを無効にします。
+          これはここでの一時的インストールにおいては不要です。
+          本スイッチは、インストールターゲットにおいて <systemitem
+          class='library'>libcrypt</systemitem> がインストールされていない状況で GCC をビルドする場合に必要となります。
+          <xref linkend='ch-tools-gcc-pass1'/> においては、<parameter>--disable-libstdcxx</parameter> によって暗にそれを行っていましたが、ここではそれを明示的に行う必要があります。
           </para>
 @z
 

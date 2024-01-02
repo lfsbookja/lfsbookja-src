@@ -55,6 +55,15 @@
 @z
 
 @x
+    <para>Replace <replaceable>$((...))</replaceable> with the number of
+    logical cores you want to use if you don't want to use all.</para>
+@y
+    <para>
+    <replaceable>$((...))</replaceable> の部分は、利用したい論理コア数に書き換えてください。
+    </para>
+@z
+
+@x
     <para>The test t/subobj.sh is known to fail.</para>
 @y
     <para>

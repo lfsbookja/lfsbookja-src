@@ -132,6 +132,12 @@
 @z
 
 @x
+        Ensure a password is set for the &root; user.
+@y
+        &root; ユーザーのパスワードが設定されていることを確認してください。
+@z
+
+@x
         A review of the following configuration files
         is also appropriate at this point.
 @y

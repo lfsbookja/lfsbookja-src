@@ -88,6 +88,14 @@
           </para>
 @z
 
+@x --enable-multilib
+          <para>Enable building multilib objects.</para>
+@y
+          <para>
+          マルチライブラリオブジェクトのビルドを有効にします。
+          </para>
+@z
+
 @x --disable-libstdcxx-pch
           <para>This switch prevents the installation of precompiled
           include files, which are not needed at this stage.</para>

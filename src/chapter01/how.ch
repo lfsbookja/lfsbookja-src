@@ -47,6 +47,15 @@
 @z
 
 @x
+  <para>As an alternative to installing a separate distribution on your
+  machine, you may wish to use a LiveCD from a commercial distribution.</para>
+@y
+  <para>
+  コンピューター内にインストールされているディストリビューションを利用するのではなく、他に提供されている LiveCD を利用することもできます。
+  </para>
+@z
+
+@x
     <para>The LFS LiveCD might not work on newer hardware configurations,
     failing to boot or failing to detect some devices such as some SATA hard
     drives.</para>

@@ -223,6 +223,14 @@
         <para>&Download;: <ulink url="&flex-url;"/></para>
 @z
 
+@x Flit-core
+        <para>Home page: <ulink url="&flit-core-home;"/></para>
+        <para>Download: <ulink url="&flit-core-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&flit-core-home;"/></para>
+        <para>&Download;: <ulink url="&flit-core-url;"/></para>
+@z
+
 @x gawk
         <para>Home page: <ulink url="&gawk-home;"/></para>
         <para>Download: <ulink url="&gawk-url;"/></para>
@@ -360,6 +368,14 @@
 @y
         <para>&Homepage;: <ulink url="&iproute2-home;"/></para>
         <para>&Download;: <ulink url="&iproute2-url;"/></para>
+@z
+
+@x ISL
+        <para>Home page: <ulink url="&isl-home;"/></para>
+        <para>Download: <ulink url="&isl-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&isl-home;"/></para>
+        <para>&Download;: <ulink url="&isl-url;"/></para>
 @z
 
 @x Jinja2
@@ -634,6 +650,14 @@
 @y
         <para>&Homepage;: <ulink url="&sed-home;"/></para>
         <para>&Download;: <ulink url="&sed-url;"/></para>
+@z
+
+@x Setuptools
+        <para>Home page: <ulink url="&setuptools-home;"/></para>
+        <para>Download: <ulink url="&setuptools-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&setuptools-home;"/></para>
+        <para>&Download;: <ulink url="&setuptools-url;"/></para>
 @z
 
 @x shadow

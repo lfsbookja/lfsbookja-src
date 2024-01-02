@@ -46,23 +46,40 @@
           </para>
 @z
 
-%@x
-%          <parameter>-Uloclibpth</parameter> and
-%          <parameter>-Ulocincpth</parameter>
-%@y
-%          <parameter>-Uloclibpth</parameter> と
-%          <parameter>-Ulocincpth</parameter>
-%@z
-%@x
-%          <para>These entries undefine variables that cause the configuration
-%          to search for locally installed components that may exist on the
-%          host system.</para>
-%@y
-%          <para>
-%          この指定は所定の変数定義を無効にします。
-%          これにより、ホストシステム上にインストールされたコンポーネントが存在していても、それを用いないようにします。
-%          </para>
-%@z
+@x -Dvendorprefix=/usr
+          <para>This ensures <command>perl</command> knows how to
+          tell packages where they should install their Perl modules.</para>
+@y
+          <para>
+          これは <command>perl</command> に対して、Perl モジュールをどこにインストールするのかを指示するものです。
+          </para>
+@z
+
+@x -Duseshrplib
+          <para>Build <systemitem class='library'>libperl</systemitem>
+          needed by some Perl modules as a shared library, instead of
+          a static library.</para>
+@y
+          <para>
+          Perl モジュールの中には <systemitem
+          class='library'>libperl</systemitem> をスタティックライブラリではなく共有ライブラリとして必要とするものがあるため、これをビルドします。
+          </para>
+@z
+
+@x -Dprivlib,-Darchlib,-Dsitelib,...
+          <para>These settings define where Perl looks for installed
+          modules. The LFS editors chose to put them in a directory structure
+          based on the MAJOR.MINOR version of Perl (&perl-version-min;) which
+          allows upgrading Perl to newer patch levels (the patch level is
+          the last dot separated part in the full version string like
+          &perl-version;) without reinstalling all of the modules.</para>
+@y
+          <para>
+          この設定は、Perl がインストール済のモジュールを探す場所を指定します。
+          LFS 編集者はディレクトリ構造として Perl の MAJOR.MINOR バージョン (&perl-version-min;) の形に基づいて、インストールモジュールを配置することにしています。
+          このようにしておくと、新たなパッチレベル (&perl-version; のようなフルバージョンにおいて最後のドット以降のバージョン部分) によるアップグレードの際に、モジュールを再インストールする必要がなくなるためです。
+          </para>
+@z
 
 @x
     <para>Compile the package:</para>

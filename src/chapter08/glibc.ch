@@ -124,6 +124,15 @@
           </para>
 @z
 
+@x --disable-nscd
+          <para>Do not build the name service cache daemon which is no 
+          longer used.</para>
+@y
+          <para>
+          nscd (name service cache daemon) は使われることがないのでビルドしないようにします。
+          </para>
+@z
+
 @x libc_cv_slibdir=/usr/lib
           <para>This variable sets the correct library for all
           systems.  We do not want lib64 to be used.</para>

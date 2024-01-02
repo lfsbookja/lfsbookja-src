@@ -34,6 +34,52 @@
 @z
 
 @x
+        Building the linux kernel for the first time is one of the most
+        challenging tasks in LFS.  Getting it right depends on the specific
+        hardware for the target system and your specific needs. There are
+        almost 12,000 configuration items that are available for the kernel
+        although only about a third of them are needed for most computers. The
+        LFS editors recommend that users not familiar with this process follow
+        the procedures below fairly closely.  The objective is to get an
+        initial system to a point where you can log in at the command line when
+        you reboot later in <xref linkend="ch-finish-reboot"/>.  At this point
+        optimization and customization is not a goal.
+@y
+        Linux カーネルの構築を初めて行うなら、LFS の中でも、かなりハードルの高い作業になります。
+        これをうまく成功させることができるかどうかは、対象システム向けの特定ハードウェアの存在や、どのように作り上げたいかの要求に依存します。
+        カーネルに設定できる項目は、ほぼ 12,000 項目もあります。
+        ただしたいていのコンピューターにおいて、必要となる項目はその 3 分の 1 程度です。
+        LFS 編集者としては、この作業手順に不慣れなユーザーであれば、以降に示す手順をほぼそっくり従って頂くことをお勧めしています。
+        ここでの目的は、後に <xref linkend="ch-finish-reboot"/> を経てシステムを再起動した際に、この新システムに向けて、コマンドラインからログインできるようにすることです。
+        この段階では、最適化やカスタマイズを目指すものではありあせん。
+@z
+
+@x
+        For general information on kernel configuration see <ulink
+        url="&hints-root;kernel-configuration.txt"/>.  Additional information
+        about configuring and building the kernel can be found at <ulink
+        url="&anduin-sources;/kernel-nutshell/"/>. 
+        These references are a bit
+        dated, but still give a reasonable overview of the process.
+@y
+        カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
+        さらに詳しくカーネルの構築や設定を説明している <ulink url="&anduin-sources;/kernel-nutshell/"/> もあります。
+        この情報を少々古いものですが、理にかなった作業過程をおおまかに示しています。
+@z
+
+@x
+        If all else fails, you can ask for help on the <ulink
+        url="https://www.linuxfromscratch.org/mail.html">lfs-support</ulink>
+        mailing list.  Note that subscribing is required in order for the list
+        to avoid spam.
+@y
+        それでもうまくいかなかった場合は、<ulink
+        url="https://www.linuxfromscratch.org/mail.html">lfs-support</ulink>
+        メーリングリストに問い合わせる方法があります。
+        スパムメールを避ける目的から、このメーリングリストは登録が必要です。
+@z
+
+@x
     <para>Prepare for compilation by running the following command:</para>
 @y
     <para>
@@ -142,6 +188,27 @@
 @z
 
 @x
+      <para>If you are building a 32-bit system running on a hardware
+      with RAM more than 4GB, adjust the configuration so the kernel will
+      be able to use up to 64GB physical RAM:</para>
+@y
+      <para>
+      32 ビットシステムの構築時にあたって 4GB 以上の RAM を必要とするハードウェアを稼働させる場合、カーネルが 64 GB までの物理 RAM を利用できるように設定することが必要です。
+      </para>
+@z
+
+@x
+      <para>If the partition for the LFS system is in a NVME SSD (i. e. the
+      device node for the partition is <filename>/dev/nvme*</filename>
+      instead of <filename>/dev/sd*</filename>), enable NVME support or
+      the LFS system won't boot:</para>
+@y
+      <para>
+      LFS システムを置くパーティションが NVME SSD である (つまりデバイスノードが <filename>/dev/sd*</filename> でなく <filename>/dev/nvme*</filename> となる) 場合、LFS システムの起動が不能とならないように NVME を有効にします。
+      </para>
+@z
+
+@x
       <para>While "The IPv6 Protocol" is not strictly
       required, it is highly recommended by the systemd developers.</para>
 @y
@@ -180,6 +247,42 @@
 @z
 
 @x
+      <para>
+        The kernel on a multilib system needs to be able to
+        identify and start binaries compiled for different architectures
+        than the default.
+      </para>
+@y
+      <para>
+        マルチライブラリシステム上のカーネルは、デフォルト状態とは異なりさまざまなアーキテクチャーに対してコンパイルされた実行バイナリを認識し起動する必要があります。
+      </para>
+@z
+
+@x
+      <para arch="ml_32,ml_all">
+        If support for any 32bit ABI was built, make sure that the option
+        "IA32 Emulation" is selected. The option 'IA32 a.out support' is
+        optional.
+      </para>
+@y
+      <para arch="ml_32,ml_all">
+        32 ABI のいずれかをサポートするようにビルドを行っている場合は、オプション "IA32 Emulation" を選んでおく必要があります。
+        オプション 'IA32 a.out support' は任意です。
+      </para>
+@z
+
+@x
+      <para arch="ml_x32,ml_all">
+        If support for the x32bit ABI was built, make sure that the option
+        "x32 ABI for 64-bit mode" is selected.
+      </para>
+@y
+      <para arch="ml_x32,ml_all">
+        x32bit ABI のいずれかをサポートするようにビルドを行っている場合は、オプション "x32 ABI for 64-bit mode" を選んでおく必要があります。
+      </para>
+@z
+
+@x
       <title>The rationale for the above configuration items:</title>
 @y
       <title>上の設定項目の説明</title>
@@ -212,6 +315,17 @@
           <para>
           これは、 カーネルビルドにあたって <command>cpio</command> を必要とします。
           <command>cpio</command> は LFS ではインストールしません。
+          </para>
+@z
+
+@x Configure standard kernel features (expert users)
+          <para>This will make some options show up in the configuration
+          interface but changing those options may be dangerous.  Do not use
+          this unless you know what you are doing.</para>
+@y
+          <para>
+          これは設定項目上にいくつかのオプションを表示するものですが、そのオプションを変更することは非常に危険なことです。
+          何を行っているのかがわかっていない場合には、触れないようにしてください。
           </para>
 @z
 

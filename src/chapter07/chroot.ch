@@ -34,6 +34,20 @@
 @z
 
 @x
+    If you don't want to use all available logical cores, replace
+    <replaceable>$(nproc)</replaceable> with the number of logical cores you
+    want to use for building packages in this chapter and the following
+    chapters.  The test suites of some packages (notably Autoconf, Libtool,
+    and Tar) in &ch-final; are not affected by <envar>MAKEFLAGS</envar>, they
+    use a <envar>TESTSUITEFLAGS</envar> environment variable instead. We
+    set set that here as well for running these test suites with multiple cores.
+@y
+    本章と次章のパッケージビルドにおいて、論理コアをすべて利用したくない場合、<replaceable>$(nproc)</replaceable> の部分は、利用したい論理コア数に書き換えてください。
+    &ch-final; において（特に Autoconf、Libtool、Tar など）は、テストスイートにおいて <envar>MAKEFLAGS</envar> を参照しないものがあり、そこでは環境変数 <envar>TESTSUITEFLAGS</envar> が代わりに用いられています。
+    そこでここでは同様にして、テストスイートを複数コアにより実行するための設定も行います。
+@z
+
+@x
   <para>The <parameter>-i</parameter> option given to the <command>env</command>
   command will clear all the variables in the chroot environment. After that, only
   the <envar>HOME</envar>, <envar>TERM</envar>, <envar>PS1</envar>, and

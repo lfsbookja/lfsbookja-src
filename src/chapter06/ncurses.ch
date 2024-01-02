@@ -197,6 +197,72 @@
           </para>
 @z
 
+%------------------
+% Multilib - 32bit
+%------------------
+@x
+    <title>Building Ncurses - 32bit</title>
+@y
+    <title>Ncurses - 32 ビットのビルド</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>ここまでのビルドをクリアします。</para>
+@z
+
+@x
+    <para>Prepare Ncurses for compilation:</para>
+@y
+    <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+%-------------------
+% Multilib - x32bit
+%-------------------
+@x
+    <title>Building Ncurses - x32bit</title>
+@y
+    <title>Ncurses - x32 ビットのビルド</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>ここまでのビルドをクリアします。</para>
+@z
+
+@x
+    <para>Prepare Ncurses for compilation:</para>
+@y
+    <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
 @x
     <para>Details on this package are located in
     <xref linkend="contents-ncurses" role="."/></para>

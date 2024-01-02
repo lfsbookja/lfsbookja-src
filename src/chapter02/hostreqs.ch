@@ -172,6 +172,20 @@
 @z
 
 @x
+      <para>We require the host kernel to support UNIX 98 pseudo terminal
+      (PTY).  It should be enabled on all desktop or server distros shipping
+      Linux &min-kernel; or a newer kernel. If you are building a custom
+      host kernel, ensure <option>CONFIG_UNIX98_PTYS</option> is set to
+      <literal>y</literal> in the kernel configuration.</para>
+@y
+      <para>
+      本書では、ホストカーネルが UNIX 98 疑似端末（PTY）をサポートしていることが必要です。
+      これは Linux &min-kernel; またはそれ以降のカーネルを利用するデスクトップ向け、あるいはサーバー向けのディストリビューションにとって利用できなければなりません。
+      独自のホストカーネルを利用している場合には、カーネル設定において <option>CONFIG_UNIX98_PTYS</option> が <literal>y</literal> であることを確認してください。
+      </para>
+@z
+
+@x
     <para>Note that the symlinks mentioned above are required to build an LFS
     system using the instructions contained within this book. Symlinks that
     point to other software (such as dash, mawk, etc.) may work, but are not
@@ -226,13 +240,10 @@
       so an upgrade of your host system kernel is required.
     </para>
 @y
-    <para arch="ml_32,ml_x32,ml_all">The option 'IA32 a.out support' is
-      optional. In case your kernel does not have 'x32 ABI for 64-bit mode'
-      enabled but only 'IA32 Emulation', you can continue to build your
-      system but you have to leave out any sections showing instructions
-      for building x32 objects. If neither 'IA32 Emulation' nor 
-      'x32 ABI for 64-bit mode' is enabled, you will run in errors 
-      latest when building <application>glibc</application> in Chapter 6,
-      so an upgrade of your host system kernel is required.
+    <para arch="ml_32,ml_x32,ml_all">
+      オプション 'IA32 a.out support' は任意です。
+      カーネル設定において 'x32 ABI for 64-bit mode' が無効で 'IA32 Emulation' のみ有効である場合、システムビルドは進めていくことはできますが、x32 オブジェクトをビルドする手順はスキップしなければなりません。
+      'IA32 Emulation' と 'x32 ABI for 64-bit mode' の両方が無効の場合、第 6 章の <application>glibc</application> のビルド時にエラーが発生します。
+      この場合、ホストシステムのカーネルをアップグレードする必要があります。
     </para>
 @z

@@ -81,6 +81,14 @@
            </para>
 @z
 
+@x --enable-multilib
+          <para>Enables multilib support in bintutils.</para>
+@y
+          <para>
+          binutils におけるマルチライブラリサポートを有効にします。
+          </para>
+@z
+
 @x --with-system-zlib
           <para>Use the installed zlib library instead of building the
           included version.</para>
@@ -158,6 +166,14 @@
 @y
     <para>
     GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、gold テストスイートにおいて 12 個のテストが失敗します。
+    </para>
+@z
+
+@x
+    <para>Three tests in the gprofng suite are also known to fail.</para>
+@y
+    <para>
+    grpofng スイートの中にある 3 つのテストが失敗します。
     </para>
 @z
 

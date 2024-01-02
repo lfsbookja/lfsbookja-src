@@ -64,6 +64,19 @@
           </para>
 @z
 
+@x --enable-user-session
+          <para>This ensures the D-Bus per-user service and socket unit
+          files are installed for Systemd.  They are not useful (but
+          harmless) in a base LFS installation, however they can be used
+          once systemd is rebuilt with PAM support in BLFS.</para>
+@y
+          <para>
+          これは D-Bus の各ユーザー向けサービスやソケットユニットファイルを Systemd 用にインストールするようにします。
+          これは LFS の基本インストールにとっては必要のない（ただし害もない）ものです。
+          ただし BLFS において systemd に PAM サポートを含めて再ビルドする際には有用となります。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -75,6 +88,20 @@
 @y
     <para>
     ビルド結果をテストする場合は以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Many tests are disabled because they require additional
+    packages that are not included in LFS. Instructions for running the
+    comprehensive test suite can be found in
+    <ulink url="&blfs-book;general/dbus.html">the BLFS book</ulink>.</para>
+@y
+    <para>
+    テストの多くは、LFS に含まれない別のパッケージを必要とするため、無効化されます。
+    テストスイートの実行を分かりやすく説明する手順が
+    <ulink url="&blfs-book;general/dbus.html">BLFS ブック</ulink>
+    に示されています。
     </para>
 @z
 

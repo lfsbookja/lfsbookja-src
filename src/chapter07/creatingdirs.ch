@@ -55,6 +55,15 @@
 @z
 
 @x
+  <para arch="ml_32,ml_x32,ml_all">Required directories for multilib
+  support has already been created while previous installation steps.</para>
+@y
+  <para arch="ml_32,ml_x32,ml_all">
+  マルチライブラリサポートに対して必要となるディレクトリは、これまでのインストール手順を通じてすでに生成済みです。
+  </para>
+@z
+
+@x
   <para>Directories are, by default, created with permission mode 755, but
   this is not desirable everywhere. In the commands above, two
   changes are made&mdash;one to the home directory of user <systemitem
