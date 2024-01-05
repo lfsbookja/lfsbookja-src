@@ -141,10 +141,13 @@
 
 @x
     <para>Get the list of the shipped udev helpers and save it into an
-    environment variable:</para>
+    environment variable (exporting it is not strictly necessary, but it makes
+    building as a regular user or using a package manager easier):</para>
 @y
     <para>
     同梱されている udev ヘルパーの一覧を取得して、それを環境変数に保存します。
+    （変数をエクスポートしておくことは、厳密に言えば不要です。
+    ただしこうすると、一般ユーザーによるビルドやパッケージマネージャーの利用がしやすくなります。）
     </para>
 @z
 
@@ -176,6 +179,14 @@
 @y
     <para>
     man ページをインストールします。
+    </para>
+@z
+
+@x
+    <para>Finally, unset the <envar>udev_helpers</envar> variable:</para>
+@y
+    <para>
+    <envar>udev_helpers</envar> 変数をクリアします。
     </para>
 @z
 
