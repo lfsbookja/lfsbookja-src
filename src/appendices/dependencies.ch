@@ -51,10 +51,7 @@
   in addition to those on the first list, need to be available in order to run
   the test suites. The fourth list of dependencies are packages that require
   this package to be built and installed in its final location before they are
-  built and installed. In most cases, this is because these packages will hard
-  code paths to binaries within their scripts. If not built in a certain order,
-  this could result in paths of /tools/bin/[binary] being placed inside scripts
-  installed to the final system. This is obviously not desirable.</para>
+  built and installed.</para>
 @y
   <para>
   ビルドするパッケージの個々には、3 種類あるいは、最大で 5 種類の依存関係を示しています。
@@ -62,9 +59,6 @@
   2 つめは、対象パッケージのプログラムやライブラリが、実行時にその利用を必要とするパッケージです。
   3 つめは、1 つめのものに加えて、テストスイートを実行するために必要となるパッケージです。
   4 つめ以降は、対象パッケージをビルドし、最終的にインストールするために必要となるパッケージです。
-  たいていの場合、それらのパッケージに含まれているスクリプトが、実行モジュールへのパスを固定的に取り扱っています。
-  所定の順番どおりにパッケージのビルドを行わないと、最終的にインストールされるシステムにおいて、スクリプトの中に /tools/bin/[実行モジュール] といったパスが含まれてしまうことになりかねません。
-  これは明らかに不適切なことです。
   </para>
 @z
 
@@ -1158,13 +1152,11 @@
           <seg>なし</seg>
 @z
 @x
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
             <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
             <ulink url="&github;/libbpf/libbpf">libbpf</ulink>,
             <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>, and
             <ulink url="&blfs-book;basicnet/libtirpc.html">libtirpc</ulink>
 @y
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
             <ulink url="&blfs-book;postlfs/iptables.html">iptables</ulink>,
             <ulink url="&github;/libbpf/libbpf">libbpf</ulink>,
             <ulink url="&blfs-book;basicnet/libmnl.html">libmnl</ulink>,
@@ -1929,13 +1921,9 @@
           <seg>Autoconf</seg>
 @z
 @x
-          <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>
-          </seg>
+            &bdb;
 @y
-          <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>
-          </seg>
+            &bdb;
 @z
 
 %----------------------------------------------------------------------
@@ -2068,14 +2056,14 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
+            &bdb;,
             <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
             <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>, and
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;server/db.html">Berkeley DB</ulink>,
+            &bdb;,
             <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
             <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>, and
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
@@ -2380,27 +2368,9 @@
           <seg>なし</seg>
 @z
 @x
-            <ulink
-              url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
-            <ulink url="&github;/openSUSE/libeconf">libeconf</ulink>,
-            <ulink url="https://pagure.io/libuser/">libuser</ulink>,
-            <ulink url="&github;/altlinux/libutempter">libutempter</ulink>,
-            <ulink
-              url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>,
-            <ulink
-              url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>, and
-            <ulink url="&blfs-book;general/slang.html">slang</ulink>
+            <ulink url="https://po4a.org/index.php.en">po4a</ulink>, and
 @y
-            <ulink
-              url="https://people.redhat.com/sgrubb/libcap-ng/">Libcap-NG</ulink>,
-            <ulink url="&github;/openSUSE/libeconf">libeconf</ulink>,
-            <ulink url="https://pagure.io/libuser/">libuser</ulink>,
-            <ulink url="&github;/altlinux/libutempter">libutempter</ulink>,
-            <ulink
-              url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>,
-            <ulink
-              url="&blfs-book;postlfs/smartmontools.html">smartmontools</ulink>,
-            <ulink url="&blfs-book;general/slang.html">slang</ulink>
+            <ulink url="https://po4a.org/index.php.en">po4a</ulink>,
 @z
 
 %----------------------------------------------------------------------

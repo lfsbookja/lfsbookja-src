@@ -56,13 +56,9 @@
 @z
 
 @x
-      Fix an issue causing <command>grub-install</command> to fail when the
-      <filename class='directory'>/boot</filename> partition (or the root
-      partition if <filename class='directory'>/boot</filename> is not a
-      separate partition) is created by e2fsprogs-1.47.0 or later:
+      Add a file missing from the release tarball:
 @y
-      <filename class='directory'>/boot</filename> パーティション（または <filename
-      class='directory'>/boot</filename> パーティションを個別に用意しない場合にはルートパーティション）を e2fsprogs-1.47.0 またはそれ以降において生成した時に、<command>grub-install</command> が失敗する問題を修正します。
+      リリース tarball に含まれていないファイルを追加します。
 @z
 
 @x

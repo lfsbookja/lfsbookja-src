@@ -223,18 +223,6 @@
 @z
 
 @x
-    <para>Disable two services for upgrading binary distros.  They are useless for
-    a basic Linux system built from source, and each one will report an error if
-    it's enabled but not configured:</para>
-@y
-    <para>
-    バイナリディストリビューションの更新サービスを 2 つ無効にします。
-    ソースからのビルドを行う単純な Linux システムでは不要だからです
-    有効化されても設定が行われていない場合には、エラーが出力されます。
-    </para>
-@z
-
-@x
     <para>Prevent systemd from resetting the maximum PID value which causes
     some problems with packages and units in BLFS:</para>
 @y

@@ -57,7 +57,7 @@
 @z
 
 @x --with-manpage-format=normal
-          <para>This prevents Ncurses installing compressed manual
+          <para>This prevents Ncurses from installing compressed manual
           pages, which may happen if the host distribution itself
           has compressed manual pages.</para>
 @y
@@ -76,7 +76,7 @@
 @z
 
 @x --without-normal
-          <para>This prevents Ncurses building and installing static C
+          <para>This prevents Ncurses from building and installing static C
           libraries.</para>
 @y
           <para>
@@ -85,7 +85,7 @@
 @z
 
 @x --without-debug
-          <para>This prevents Ncurses building and installing debug
+          <para>This prevents Ncurses from building and installing debug
           libraries.</para>
 @y
           <para>
