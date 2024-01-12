@@ -44,6 +44,24 @@
 @z
 
 @x
+      <para>2024-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fix the definition of the C.UTF-8 locale. Fixes
+          <ulink url="&lfs-ticket-root;5409">#5409</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - C.UTF-8 ロケールの定義を修正。
+          <ulink url="&lfs-ticket-root;5409">#5409</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2023-12-31</para>
       <itemizedlist>
         <listitem>
