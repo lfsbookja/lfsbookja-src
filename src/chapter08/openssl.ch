@@ -191,10 +191,10 @@
             is a command-line tool for using the various cryptography functions
             of <application>OpenSSL</application>'s crypto library from the
             shell. It can be used for various functions which are documented in
-            <command>man 1 openssl</command>
+            <filename>openssl(1)</filename>
 @y
             <application>OpenSSL</application> の暗号化ライブラリが提供するさまざまな関数を、シェルから利用するためのコマンドラインツール。
-            <command>man 1 openssl</command> に示される数多くの関数を利用することができます。
+            <filename>openssl(1)</filename> に示される数多くの関数を利用することができます。
 @z
 
 @x libcrypto.so
@@ -214,9 +214,9 @@
 @x libssl.so
             implements the Transport Layer Security (TLS v1) protocol.
             It provides a rich API, documentation
-            on which can be found by running <command>man 7 ssl</command>
+            on which can be found in <filename>ssl(7)</filename>
 @y
             トランスポート層セキュリティ（Transport Layer Security; TLFS v1）プロトコルを実装しています。
             これは豊富な API 関数とそのドキュメントを提供します。
-            ドキュメントは <command>man 7 ssl</command> の実行により参照できます。
+            ドキュメントは <command>man 7 ssl</command> にあります。
 @z

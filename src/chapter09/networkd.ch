@@ -174,16 +174,16 @@
 @z
 
 @x
-             See the man page systemd.link(5) for more information.
+            See <filename>systemd.link(5)</filename> for more information.
 @y
-             詳細は man ページ systemd.link(5) を確認してください。
+            詳細は <filename>systemd.link(5)</filename> を確認してください。
 @z
 
 @x
-            In /boot/grub/grub.cfg, pass the option net.ifnames=0 on the
-            kernel command line.
+            In /boot/grub/grub.cfg, pass the option
+            <option>net.ifnames=0</option> on the kernel command line.
 @y
-            /boot/grub/grub.cfg ファイル内において、カーネルの設定行に net.ifnames=0 を追加します。
+            /boot/grub/grub.cfg ファイル内において、カーネルの設定行に <option>net.ifnames=0</option> を追加します。
 @z
 
 @x
