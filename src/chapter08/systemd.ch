@@ -152,7 +152,7 @@
           </para>
 @z
 
-@x -Dman=false
+@x -Dman=disabled
           <para>Prevent the generation of man pages to avoid extra
           dependencies.  We will install pre-generated man pages for systemd
           from a tarball.</para>

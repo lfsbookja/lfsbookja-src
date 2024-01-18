@@ -129,9 +129,9 @@
           <seg>Automake, Diffutils, Findutils, Libtool</seg>
 @z
 @x
-          <seg>Acl and Libcap</seg>
+          <seg>Acl, Libcap, and Patch</seg>
 @y
-          <seg>Acl, Libcap</seg>
+          <seg>Acl, Libcap, Patch</seg>
 @z
 @x
           <seg>None</seg>
@@ -1945,14 +1945,16 @@
 @z
 %----------------------------------------------------------------------
 @x Patch
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed</seg>
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and
+          Sed</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed</seg>
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make,
+          Sed</seg>
 @z
 @x
-          <seg>Glibc</seg>
+          <seg>Attr and Glibc</seg>
 @y
-          <seg>Glibc</seg>
+          <seg>Attr, Glibc</seg>
 @z
 @x
           <seg>Diffutils</seg>
