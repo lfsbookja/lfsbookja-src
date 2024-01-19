@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The OpenSSL package contains  management tools and libraries relating
     to cryptography. These are useful for providing cryptographic functions
     to other packages, such as OpenSSH, email applications, and web browsers

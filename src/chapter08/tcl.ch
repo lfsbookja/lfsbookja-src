@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The <application>Tcl</application> package contains the Tool Command Language,
     a robust general-purpose scripting language. The <application>Expect</application> package
     is written in <application>Tcl</application> (pronounced "tickle").</para>

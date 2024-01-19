@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The GDBM package contains the GNU Database Manager.  It is a library
     of database functions that uses extensible hashing and works like the
     standard UNIX dbm.  The library provides primitives for storing key/data

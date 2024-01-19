@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Findutils package contains programs to find files. Programs
     are provided to search through all the files in a directory tree and to
     create, maintain, and search a database (often faster than the recursive

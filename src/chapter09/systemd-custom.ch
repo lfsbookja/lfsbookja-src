@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Systemd Usage and Configuration</title>
 @y
   <title>Systemd の利用と設定</title>

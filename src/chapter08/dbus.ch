@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>D-Bus is a message bus system, a simple way for applications to talk
     to one another. D-Bus supplies both a system daemon (for events such as
     "new hardware device added" or "printer queue changed") and a
