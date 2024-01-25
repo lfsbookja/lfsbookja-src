@@ -83,17 +83,17 @@
 
 @x
         Some Python 3 modules can't be built now because the dependencies
-        are not installed yet. The building system still attempts to build
-        them however, so the compilation of some files will fail and the
-        compiler message may seem to indicate <quote>fatal error</quote>.
+        are not installed yet. For the <filename>ssl</filename> module,
+        a message <quote><computeroutput>Python requires a OpenSSL 1.1.1 or
+        newer</computeroutput></quote> is outputted.
         The message should be ignored.  Just make sure the toplevel
         <command>make</command> command has not failed.  The optional
         modules are not needed now and they will be built in
         <xref linkend="chapter-building-system"/>.
 @y
         この時点において、依存パッケージをまだインストールしていないために、ビルドできない Python 3 モジュールがあります。
-        それでもビルドシステムは、そのようなモジュールをビルドしようとします。
-        そして一部のファイルのコンパイルが失敗して、コンパイラーメッセージには<quote>致命的エラー</quote>が示されます。
+        <filename>ssl</filename> モジュールに対しては <quote><computeroutput>Python requires a OpenSSL 1.1.1 or
+        newer</computeroutput></quote> というメッセージが出力されます。
         このメッセージは無視できます。
         よく確認すべきなのは、トップレベルの <command>make</command> コマンドは失敗していないことです。
         任意でビルドすれば良いモジュールは、今ここでのビルドは必要ありません。

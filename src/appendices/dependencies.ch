@@ -847,9 +847,9 @@
           <seg>Automake, Bison</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg><ulink url='&blfs-book;general/libxml2.html'>libxml2</ulink></seg>
 @y
-          <seg>なし</seg>
+          <seg><ulink url='&blfs-book;general/libxml2.html'>libxml2</ulink></seg>
 @z
 
 %----------------------------------------------------------------------
@@ -999,9 +999,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Man-DB and Perl</seg>
+          <seg>Man-DB</seg>
 @y
-          <seg>Man-DB, Perl</seg>
+          <seg>Man-DB</seg>
 @z
 @x
           <seg>
@@ -1972,10 +1972,10 @@
 
 %----------------------------------------------------------------------
 @x Perl
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep, Groff,
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
           Libxcrypt, Make, Sed, and Zlib</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep, Groff,
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
           Libxcrypt, Make, Sed, Zlib</seg>
 @z
 @x

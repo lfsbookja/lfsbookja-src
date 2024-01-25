@@ -699,10 +699,10 @@
 @z
 
 @x libcc1
-          <para>The C preprocessing library</para>
+          <para>A library that allows GDB to make use of GCC</para>
 @y
           <para>
-          C 言語プリプロセスライブラリ。
+          GDB が GCC を利用可能とするためのライブラリ。
           </para>
 @z
 

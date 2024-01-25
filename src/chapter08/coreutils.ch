@@ -41,11 +41,11 @@
 @z
 
 @x
-    <para>Fix a bug in checksum utilities causing failed checks not
-    reported correctly:</para>
+    <para>Fix a security vulnerability in the <command>split</command>
+    utility:</para>
 @y
     <para>
-    チェックサムユーティリティーのチェックが正しい報告をあげてこないバグがあるため、これを修正します。
+    <command>split</command> ユーティリティーにおけるセキュリティぜい弱性を修正します。
     </para>
 @z
 

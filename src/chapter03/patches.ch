@@ -103,10 +103,10 @@
         <para>&Download;: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
 @z
 
-@x Perl Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&perl-fix-patch;"/></para>
+@x Pkgconf Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;&pkgconf-upstream-fix-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&perl-fix-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&pkgconf-upstream-fix-patch;"/></para>
 @z
 
 @x Readline Upstream Fix Patch

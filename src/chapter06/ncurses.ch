@@ -177,17 +177,35 @@
           </para>
 @z
 
-@x echo "INPUT(-lncursesw)" > $LFS/usr/lib/libncurses.so
+@x ln -sv libncursesw.so $LFS/usr/lib/libncurses.so
           <para>The <filename>libncurses.so</filename> library is needed by
-          a few packages we will build soon. We create this small linker
-          script, as this is what is done in <xref
-          linkend="chapter-building-system"/>.</para>
+          a few packages we will build soon. We create this symlink to use
+          <filename>libncursesw.so</filename> as a replacement.</para>
 @y
           <para>
-          パッケージの中で、わずかですが <filename>libncurses.so</filename> を必要としているものがあります。
-          これはすぐに生成する予定のものです。
-          ここでこの小さなリンカースクリプトを生成します。
-          これは <xref linkend="chapter-building-system"/> においてビルドします。
+          これから作り出すパッケージの中で、わずかですが <filename>libncurses.so</filename> を必要としているものがあります。
+          このシンボリックリンクは <filename>libncursesw.so</filename> に代わるものとして生成します。
+          </para>
+@z
+
+@x sed -e 's/^#if.*XOPEN.*$/#if 1/' ...
+          <para>The header file <filename>curses.h</filename> contains
+          the definition of various Ncurses data structures.  With different
+          preprocessor macro definitions two different sets of the data
+          structure definition may be used: the 8-bit definition is
+          compatible with <filename>libncurses.so</filename> and the
+          wide-character definition is compatible with
+          <filename>libncursesw.so</filename>.  Since we are using
+          <filename>libncursesw.so</filename> as a replacement of
+          <filename>libncurses.so</filename>, edit the header file so it
+          will always use the wide-character data structure definition
+          compatible with <filename>libncursesw.so</filename>.</para>
+@y
+          <para>
+          ヘッダーファイル <filename>curses.h</filename> では Ncurses データ構造に関するさまざまな定義が行われています。
+          プリプロセッサーマクロ定義を変えることによって、データ構造定義を二つの異なるセットとして定義しているものがあります。
+          つまり 8 ビット定義は <filename>libncurses.so</filename> と互換性があり、ワイドキャラクター定義は <filename>libncursesw.so</filename> と互換性があります。
+          これまで <filename>libncurses.so</filename> の代わりとして <filename>libncursesw.so</filename> を利用してきていることから、ヘッダーファイルを修正して、<filename>libncursesw.so</filename> と互換性を持つワイドキャラクターデータ構造を常に用いるものとします。
           </para>
 @z
 

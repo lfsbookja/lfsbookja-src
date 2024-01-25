@@ -22,10 +22,10 @@
 @z
 
 @x
-    <para>Fix a regression in pkgconf-2.0.3 breaking BLFS packages:</para>
+    <para>Fix a regression in pkgconf-2.1.0 breaking BLFS packages:</para>
 @y
     <para>
-    pkgconf-2.0.3 における機能減退が BLFS パッケージに影響するため修正します。
+    pkgconf-2.1.0 における機能減退が BLFS パッケージに影響するため修正します。
     </para>
 @z
 
