@@ -254,8 +254,8 @@
     to pass either the <parameter>-g</parameter> or <parameter>-N</parameter>
     parameter to <command>useradd</command>, or else change the setting of
     <parameter>USERGROUPS_ENAB</parameter> in
-    <filename>/etc/login.defs</filename>. See <filename>useradd(8)</filename>
-    for more information.</para>
+    <filename>/etc/login.defs</filename>. See <ulink role='man'
+    url='&man;useradd.8'>useradd(8)</ulink> for more information.</para>
 @y
     <para>
     Shadow の <command>useradd</command> コマンドに対するデフォルトの設定には、説明が必要です。
@@ -264,7 +264,8 @@
     <command>useradd</command> コマンドの利用時に特に追加でパラメーターを与えなければ、追加するユーザーのグループは新たな固有グループが生成されることになります。
     この動作が不適当であれば <command>useradd</command> コマンドの実行時に <parameter>-g</parameter> パラメーターか <parameter>-N</parameter> のいずれかを利用することが必要です。
     あるいは <filename>/etc/login.defs</filename> 内にある <parameter>USERGROUPS_ENAB</parameter> の設定を書き換えてください。
-    詳しくは <filename>useradd(8)</filename> を参照してください。
+    詳しくは <ulink role='man'
+    url='&man;useradd.8'>useradd(8)</ulink> を参照してください。
     </para>
 @z
 

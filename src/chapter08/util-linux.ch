@@ -521,10 +521,12 @@
 
 @x irqtop
           <para>Displays kernel interrupt counter information in
-          <filename>top(1)</filename> style view</para>
+          <ulink role='man' url='&man;top.1'>top(1)</ulink> style
+          view</para>
 @y
           <para>
-          カーネルのインタラプトカウンター情報を <filename>top(1)</filename> スタイルにより表示します。
+          カーネルのインタラプトカウンター情報を <ulink
+          role='man' url='&man;top.1'>top(1)</ulink> スタイルにより表示します。
           </para>
 @z
 

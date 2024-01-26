@@ -509,12 +509,14 @@
       <para>Note that the <quote>softdep</quote> command also allows
       <literal>pre:</literal> dependencies, or a mixture of both
       <literal>pre:</literal> and <literal>post:</literal> dependencies.  See
-      the <filename>modprobe.d(5)</filename> manual page for more information
-      on <quote>softdep</quote> syntax and capabilities.</para>
+      the <ulink role='man' url='&man;modprobe.d.5'>modprobe.d(5)</ulink>
+      manual page for more information on <quote>softdep</quote> syntax and
+      capabilities.</para>
 @y
       <para>
       <quote>softdep</quote>コマンドは <literal>pre:</literal> を付与することもでき、あるいは <literal>pre:</literal> と <literal>post:</literal> の双方を付与することもできます。
-      その記述方法や機能に関する詳細は man ページ <filename>modprobe.d(5)</filename> を参照してください。
+      その記述方法や機能に関する詳細は man ページ <ulink role='man'
+      url='&man;modprobe.d.5'>modprobe.d(5)</ulink> を参照してください。
       </para>
 @z
 

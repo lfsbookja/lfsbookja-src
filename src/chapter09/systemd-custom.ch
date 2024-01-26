@@ -30,14 +30,16 @@
     of options to control basic systemd operations. The default file has all
     entries commented out with the default settings indicated. This file is
     where the log level may be changed as well as some basic logging settings.
-    See the <filename>systemd-system.conf(5)</filename> manual page for details
-    on each configuration option.</para>
+    See the <ulink role='man'
+    url='&man;systemd-system.conf.5'>systemd-system.conf(5)</ulink> manual
+    page for details on each configuration option.</para>
 @y
     <para>
     <filename>/etc/systemd/system.conf</filename> ファイルには、基本的な systemd 動作を制御するための設定オプション項目があります。
     デフォルトのファイルは、各項目のデフォルト値が示された上でそれがコメントアウトされています。
     このファイルでは基本的なジャーナル設定やログレベルを設定する必要があります。
-    各オプションの詳細については man ページ <filename>systemd-system.conf(5)</filename> を参照してください。
+    各オプションの詳細については man ページ <ulink role='man'
+    url='&man;systemd-system.conf.5'>systemd-system.conf(5)</ulink> を参照してください。
     </para>
 @z
 
@@ -131,15 +133,15 @@
     <filename class="directory">/etc/tmpfiles.d</filename> override
     files with the same name in
     <filename class="directory">/usr/lib/tmpfiles.d</filename>. See
-    <filename>tmpfiles.d(5)</filename> manual page for file format
-    details.</para>
+    <ulink role='man' url='&man;tmpfiles.d.5'>tmpfiles.d(5)</ulink> manual
+    page for file format details.</para>
 @y
     <para>
     システム用設定ファイルは <filename>/usr/lib/tmpfiles.d/*.conf</filename> です。
     ローカル用設定ファイルは <filename>/etc/tmpfiles.d/*.conf</filename> に置きます。
     <filename class="directory">/etc/tmpfiles.d</filename> にあるファイルは <filename
     class="directory">/usr/lib/tmpfiles.d</filename> にある同名ファイルをオーバーライドします。
-    ファイル書式の詳細については man ページ <filename>tmpfiles.d(5)</filename> を参照してください。
+    ファイル書式の詳細については man ページ <ulink role='man' url='&man;tmpfiles.d.5'>tmpfiles.d(5)</ulink> を参照してください。
     </para>
 @z
 
@@ -198,13 +200,15 @@
 @z
 
 @x
-     <para>See <filename>systemd.unit(5)</filename> manual page for more
+     <para>See <ulink role='man'
+     url='&man;systemd.unit.5'>systemd.unit(5)</ulink> manual page for more
      information. After creating the configuration file, run
      <userinput>systemctl daemon-reload</userinput> and <userinput>systemctl
      restart foobar</userinput> to activate the changes to a service.</para>
 @y
      <para>
-     詳しくは man ページ <filename>systemd.unit(5)</filename> を参照してください。
+     詳しくは man ページ <ulink role='man'
+     url='&man;systemd.unit.5'>systemd.unit(5)</ulink> を参照してください。
      設定ファイルを作成したら <userinput>systemctl
      daemon-reload</userinput> と <userinput>systemctl restart
      foobar</userinput> を実行します。
@@ -413,15 +417,18 @@
 @z
 
 @x
-    <para>See the <filename>systemd-coredump(8)</filename>,
-    <filename>coredumpctl(1)</filename>, and
-    <filename>coredump.conf.d(5)</filename> manual pages for more
-    information.</para>
+    <para>See the <ulink role='man' url='&man;systemd-coredump.8'>systemd-coredump(8)</ulink>,
+    <ulink role='man' url='&man;coredumpctl.1'>coredumpctl(1)</ulink>, and
+    <ulink role='man'
+    url='&man;coredump.conf.d.5'>coredump.conf.d(5)</ulink> manual pages for
+    more information.</para>
 @y
     <para>
-    詳細は <filename>systemd-coredump(8)</filename>,
-    <filename>coredumpctl(1)</filename>,
-    <filename>coredump.conf.d(5)</filename> の各 man ページを参照してください。
+    詳細は <ulink role='man'
+    url='&man;systemd-coredump.8'>systemd-coredump(8)</ulink>, <ulink role='man'
+    url='&man;coredumpctl.1'>coredumpctl(1)</ulink>, <ulink role='man'
+    url='&man;coredump.conf.d.5'>coredump.conf.d(5)</ulink>
+    の各 man ページを参照してください。
     </para>
 @z
 

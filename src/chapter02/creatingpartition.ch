@@ -70,7 +70,8 @@
   <filename class="devicefile">/dev/sda</filename> for the primary
   disk drive. Create a Linux native partition and a
   <systemitem class="filesystem">swap</systemitem> partition, if needed. Please
-  refer to <filename>cfdisk(8)</filename> or <filename>fdisk(8)</filename> if
+  refer to <ulink role='man' url='&man;cfdisk.8'>cfdisk(8)</ulink> or
+  <ulink role='man' url='&man;fdisk.8'>fdisk(8)</ulink> if
   you do not yet know how to use the programs.</para>
 @y
   <para>
@@ -80,7 +81,9 @@
   class="devicefile">/dev/sda</filename> といったものになります。
   そして Linux ネイティブパーティションと、必要なら <systemitem
   class="filesystem">swap</systemitem> パーティションを生成します。
-  プログラムの利用方法について不明であれば <filename>cfdisk(8)</filename> や <filename>fdisk(8)</filename> を参照してください。
+  プログラムの利用方法について不明であれば <ulink
+  role='man' url='&man;cfdisk.8'>cfdisk(8)</ulink> や <ulink
+  role='man' url='&man;fdisk.8'>fdisk(8)</ulink> を参照してください。
   </para>
 @z
 

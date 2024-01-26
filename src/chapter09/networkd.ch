@@ -73,9 +73,11 @@
     <filename class="extension">.netdev</filename> and
     <filename class="extension">.network</filename> files. For detailed
     descriptions and example contents of these configuration files, consult
-    the <filename>systemd-link(5)</filename>,
-    <filename>systemd-netdev(5)</filename> and
-    <filename>systemd-network(5)</filename> manual pages.</para>
+    the <ulink role='man' url='&man;systemd-link.5'>systemd-link(5)</ulink>,
+    <ulink role='man' url='&man;systemd-netdev.5'>systemd-netdev(5)</ulink>,
+    and <ulink role='man'
+    url='&man;systemd-network.5'>systemd-network(5)</ulink> manual
+    pages.</para>
 @y
     <para>
     <command>systemd-networkd</command> (および <command>systemd-resolved</command>)
@@ -89,9 +91,10 @@
     <filename class="extension">.netdev</filename>,
     <filename class="extension">.network</filename>
     の三種類があります。
-    これらの説明や設定例については man ページ <filename>systemd-link(5)</filename>,
-    <filename>systemd-netdev(5)</filename>,
-    <filename>systemd-network(5)</filename>
+    これらの説明や設定例については man ページ <ulink role='man'
+    url='&man;systemd-link.5'>systemd-link(5)</ulink>, <ulink role='man'
+    url='&man;systemd-netdev.5'>systemd-netdev(5)</ulink>, <ulink role='man'
+    url='&man;systemd-network.5'>systemd-network(5)</ulink>
     を参照してください。
     </para>
 @z
@@ -168,9 +171,9 @@
 @z
 
 @x
-            See <filename>systemd.link(5)</filename> for more information.
+            See <ulink role='man' url='&man;systemd.link.5'>systemd.link(5)</ulink> for more information.
 @y
-            詳細は <filename>systemd.link(5)</filename> を確認してください。
+            詳細は <ulink role='man' url='&man;systemd.link.5'>systemd.link(5)</ulink> を確認してください。
 @z
 
 @x
@@ -499,13 +502,16 @@
      <literal>localhost.localdomain</literal>, or the hostname (without a
      domain) because they are handled by the
      <systemitem class='library'>myhostname</systemitem> NSS module, read
-     the man page <filename>nss-myhostname(8)</filename> for details.</para>
+     the man page <ulink role='man'
+     url='&man;nss-myhostname.8'>nss-myhostname(8)</ulink> for
+     details.</para>
 @y
      <para>
      <filename>/etc/hostname</filename> には <literal>localhost</literal>,
      <literal>localhost.localdomain</literal>, （ドメイン名を含まない）ホスト名は記述しません。
      これらは NSS モジュール <systemitem class='library'>myhostname</systemitem> が取り扱います。
-     詳しくは man ページ <filename>nss-myhostname(8)</filename> を参照してください。
+     詳しくは man ページ <ulink role='man'
+     url='&man;nss-myhostname.8'>nss-myhostname(8)</ulink> を参照してください。
      </para>
 @z
 

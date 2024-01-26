@@ -158,9 +158,11 @@
 @z
 
 @x
-      Read the man page <filename>mke2fs.conf(5)</filename> for details.
+      Read the man page <ulink role='man'
+      url='&man;mke2fs.conf.5'>mke2fs.conf(5)</ulink> for details.
 @y
-      詳しくは man ページ <filename>mke2fs.conf(5)</filename> を参照してください。
+      詳しくは man ページ <ulink role='man'
+      url='&man;mke2fs.conf.5'>mke2fs.conf(5)</ulink> を参照してください。
 @z
 
 @x

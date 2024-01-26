@@ -136,10 +136,12 @@
   <para>The <quote><parameter>-</parameter></quote> instructs
   <command>su</command> to start a login shell as opposed to a non-login shell.
   The difference between these two types of shells is described in detail in
-  <filename>bash(1)</filename> and <command>info bash</command>.</para>
+  <ulink role='man' url='&man;bash.1'>bash(1)</ulink> and <command>info
+  bash</command>.</para>
 @y
   <para>
   パラメーター<quote><parameter>-</parameter></quote>は <command>su</command> コマンドの実行において、非ログイン (non-login) シェルではなく、ログインシェルを起動することを指示します。
-  ログインシェルとそうでないシェルの違いについては <filename>bash(1)</filename> や <command>info bash</command> を参照してください。
+  ログインシェルとそうでないシェルの違いについては <ulink
+  role='man' url='&man;bash.1'>bash(1)</ulink> や <command>info bash</command> を参照してください。
   </para>
 @z

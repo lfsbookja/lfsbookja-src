@@ -185,10 +185,10 @@
             is a command-line tool for using the various cryptography functions
             of <application>OpenSSL</application>'s crypto library from the
             shell. It can be used for various functions which are documented in
-            <filename>openssl(1)</filename>
+            <ulink role='man' url='&man;openssl.1'>openssl(1)</ulink>
 @y
             <application>OpenSSL</application> の暗号化ライブラリが提供するさまざまな関数を、シェルから利用するためのコマンドラインツール。
-            <filename>openssl(1)</filename> に示される数多くの関数を利用することができます。
+            <ulink role='man' url='&man;openssl.1'>openssl(1)</ulink> に示される数多くの関数を利用することができます。
 @z
 
 @x libcrypto.so
@@ -208,9 +208,11 @@
 @x libssl.so
             implements the Transport Layer Security (TLS v1) protocol.
             It provides a rich API, documentation
-            on which can be found in <filename>ssl(7)</filename>
+            on which can be found in <ulink role='man'
+            url='&man;ssl.7'>ssl(7)</ulink>
 @y
             トランスポート層セキュリティ（Transport Layer Security; TLFS v1）プロトコルを実装しています。
             これは豊富な API 関数とそのドキュメントを提供します。
-            ドキュメントは <command>man 7 ssl</command> にあります。
+            ドキュメントは <ulink role='man'
+            url='&man;ssl.7'>ssl(7)</ulink> にあります。
 @z

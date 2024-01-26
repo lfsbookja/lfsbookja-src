@@ -60,7 +60,8 @@
     <para>SysVinit (which will be referred to as <quote>init</quote> from now on)
     uses a run levels scheme. There are seven run levels, numbered 0 to 6.
     (Actually, there are more run levels, but the others are for special cases and are
-    generally not used. See <filename>init(8)</filename> for more details.)
+    generally not used. See <ulink role='man'
+    url='&man;init.8'>init(8)</ulink> for more details.)
     Each one of the seven corresponds to actions the computer is supposed to
     perform when it starts up or shuts down. The default run level is 3. Here are the
     descriptions of the different run levels as they are implemented in LFS:</para>
@@ -69,7 +70,8 @@
     SysVinit (これ以降は<quote>init</quote>と表現します) はランレベルという仕組みを利用しています。
     ランレベルには 7 つのレベル、0 から 6 があります。
     (実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
-    詳しくは <filename>init(8)</filename> を参照してください。)
+    詳しくは <ulink role='man'
+    url='&man;init.8'>init(8)</ulink> を参照してください。)
     各レベルは、コンピューターの起動時や終了時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
     LFS において実装されるランレベルの詳細を以下に説明します。
     </para>
@@ -642,9 +644,10 @@
   url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. If still in
   doubt, look in the <filename class="directory">/usr/share/keymaps</filename>
   and <filename class="directory">/usr/share/consolefonts</filename> directories
-  for valid keymaps and screen fonts. Read the <filename>loadkeys(1)</filename> and
-  <filename>setfont(8)</filename> manual pages to determine the correct
-  arguments for these programs.</para>
+  for valid keymaps and screen fonts. Read the <ulink role='man'
+  url='&man;loadkeys.1'>loadkeys(1)</ulink> and <ulink role='man'
+  url='&man;setfont.8'>setfont(8)</ulink> manual pages to determine the
+  correct arguments for these programs.</para>
 @y
   <para>
   <command>console</command> スクリプトは、設定情報を <filename>/etc/sysconfig/console</filename> ファイルから読み込みます。
@@ -652,7 +655,9 @@
   さまざまな言語に応じた設定方法については <ulink url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/> を参照してください。
   よく分からない場合は <filename class="directory">/usr/share/keymaps</filename> ディレクトリや <filename
   class="directory">/usr/share/consolefonts</filename> ディレクトリを見て、正しいキーマップとスクリーンフォントを探してください。
-  マニュアルページ <filename>loadkeys(1)</filename> と <filename>setfont(8)</filename> を見て、これらのプログラムに対する適切な引数を決定してください。
+  マニュアルページ <ulink role='man'
+  url='&man;loadkeys.1'>loadkeys(1)</ulink> と <ulink role='man'
+  url='&man;setfont.8'>setfont(8)</ulink> を見て、これらのプログラムに対する適切な引数を決定してください。
   </para>
 @z
 
