@@ -96,16 +96,16 @@
 @z
 
 @x
-          Classically, run level 2 above was defined as
-          "multi-user mode without networking", but this was only the case
-          many years ago when multiple users could connect to a system via
-          serial ports.  In today's environment it makes no sense, and
-          we now say it is "reserved".
+         Classically, run level 2 above was defined as <quote>multi-user
+         mode without networking,</quote> but this was only the case
+         many years ago when multiple users could connect to a system via
+         serial ports.  In today's environment it makes no sense, and
+         we now say it is <quote>reserved.</quote>
 @y
-          従来より、上のランレベル 2 は「ネットワークなしにおけるマルチユーザーモード」として定義されていました。
-          ただしこれは相当以前の話として、シリアルポートを介して複数ユーザーがシステムにログインするケースだけを表しています。
-          今日のコンピューター環境においてこれは意味をなしません。
-          そこでここでは「拡張用の予約」としています。
+         従来より、上のランレベル 2 は<quote>ネットワークなしにおけるマルチユーザーモード</quote>として定義されていました。
+         ただしこれは相当以前の話として、シリアルポートを介して複数ユーザーがシステムにログインするケースだけを表しています。
+         今日のコンピューター環境においてこれは意味をなしません。
+         そこでここでは<quote>拡張用の予約</quote>としています。
 @z
 
 @x
@@ -663,10 +663,10 @@
 
 @x
   <para>The <filename>/etc/sysconfig/console</filename> file should contain lines
-  of the form: VARIABLE="value". The following variables are recognized:</para>
+  of the form: <envar>VARIABLE=value</envar>. The following variables are recognized:</para>
 @y
   <para>
-  <filename>/etc/sysconfig/console</filename> ファイルの各行には、変数 = "値" という記述を行います。
+  <filename>/etc/sysconfig/console</filename> ファイルの各行には <envar>VARIABLE=value</envar> という記述を行います。
   そして変数には以下に示すものが利用可能です。
   </para>
 @z
@@ -674,18 +674,20 @@
 @x LOGLEVEL
         <para>This variable specifies the log level for kernel messages sent
         to the console as set by <command>dmesg -n</command>. Valid levels are
-        from "1" (no messages) to "8". The default level is "7".</para>
+        from <literal>1</literal> (no messages) to <literal>8</literal>. The default level is <literal>7</literal>, which is quite verbose.</para>
 @y
         <para>
         この変数は、コンソールに出力されるカーネルメッセージのログレベルを指定するもので <command>dmesg -n</command> コマンドにより設定されます。
-        有効な設定値は "1" (メッセージ出力なし) から "8" まであり、デフォルトは "7" です。
+        有効な設定値は<literal>1</literal>(メッセージ出力なし) から<literal>8</literal>まであります。
+        デフォルトは "7" です。
+        かなり詳細な出力となっています。
         </para>
 @z
 
 @x KEYMAP
         <para>This variable specifies the arguments for the
         <command>loadkeys</command> program, typically, the name of the keymap
-        to load, e.g., <quote>it</quote>. If this variable is not set, the
+        to load, e.g., <literal>it</literal>. If this variable is not set, the
         bootscript will not run the <command>loadkeys</command> program,
         and the default kernel keymap will be used.  Note that a few keymaps
         have multiple versions with the same name (cz and its variants in
@@ -696,7 +698,7 @@
 @y
         <para>
         この変数は <command>loadkeys</command> プログラムに対する引数を指定します。
-        このプログラムは<quote>it</quote>などのキーマップをロードします。
+        このプログラムは <literal>it</literal> などのキーマップをロードします。
         この変数がセットされていない場合、ブートスクリプトは <command>loadkeys</command> プログラムを実行せず、デフォルトのカーネルキーマップが用いられます。
         キーマップによっては同一名に対して重複した定義を持つものもあります。
         (cz とその変形が qwerty/ と qwertz/ にあり、es は olpc/ と qwerty/ に、trf は fgGIod/ と qwerty/ にあります)
@@ -710,24 +712,24 @@
         <command>loadkeys</command> program. This is useful if the stock keymap
         is not completely satisfactory and a small adjustment has to be made. E.g.,
         to include the Euro sign into a keymap that normally doesn't have it,
-        set this variable to <quote>euro2</quote>.</para>
+        set this variable to <literal>euro2</literal>.</para>
 @y
         <para>
         この変数は (あまり利用されませんが) <command>loadkeys</command> プログラムを二度目に呼び出す際の引数を指定します。
         普通のキーマップでは十分な設定にならない時の微調整を行うために利用します。
-        例えばユーロ記号がキーマップの中に含まれておらずこれを付け加える場合には、この変数に対して<quote>euro2</quote>を設定します。
+        例えばユーロ記号がキーマップの中に含まれておらずこれを付け加える場合には、この変数に対して <literal>euro2</literal> を設定します。
         </para>
 @z
 
 @x FONT
         <para>This variable specifies the arguments for the
         <command>setfont</command> program. Typically, this includes the font
-        name, <quote>-m</quote>, and the name of the application character
+        name, <literal>-m</literal>, and the name of the application character
         map to load. E.g., in order to load the <quote>lat1-16</quote> font
         together with the <quote>8859-1</quote> application character map
         (appropriate in the USA),
         <!-- because of the copyright sign -->
-        set this variable to <quote>lat1-16 -m 8859-1</quote>.
+        set this variable to <literal>lat1-16 -m 8859-1</literal>.
         In UTF-8 mode, the kernel uses the application character map to
         convert 8-bit key codes to UTF-8. Therefore
         the argument of the "-m" parameter should be set to the encoding of the
@@ -735,8 +737,8 @@
 @y
         <para>
         この変数は <command>setfont</command> プログラムへの引数を指定します。
-        一般にこの変数にはフォント名、<quote>-m</quote>、アプリケーションキャラクターマップ (application character map) を順に指定します。
-        例えばフォントとして <quote>lat1-16</quote>、アプリケーションキャラクターマップとして<quote>8859-1</quote>を指定する場合、この変数には<quote>lat1-16 -m 8859-1</quote>を設定します。
+        一般にこの変数にはフォント名、<literal>-m</literal>、アプリケーションキャラクターマップ (application character map) を順に指定します。
+        例えばフォントとして <quote>lat1-16</quote>、アプリケーションキャラクターマップとして<quote>8859-1</quote>を指定する場合、この変数には <literal>lat1-16 -m 8859-1</literal> を設定します。
         (これは米国にて適当な設定となります。)
         UTF-8 モードの場合、カーネルは UTF-8 キーマップ内の 8 ビットキーコードを変換するためにアプリケーションキャラクターマップを利用します。
         したがって "-m" パラメーターには、キーマップ内キーコードのエンコーディングを指定する必要があります。
@@ -744,13 +746,13 @@
 @z
 
 @x UNICODE
-        <para>Set this variable to <quote>1</quote>, <quote>yes</quote>, or
-        <quote>true</quote> in order to put the
+        <para>Set this variable to <literal>1</literal>, <literal>yes</literal>, or
+        <literal>true</literal> in order to put the
         console into UTF-8 mode. This is useful in UTF-8 based locales and
         harmful otherwise.</para>
 @y
         <para>
-        コンソールを UTF-8 モードにするには、この変数を<quote>1</quote>、<quote>yes</quote>、<quote>true</quote>のいずれかに指定します。
+        コンソールを UTF-8 モードにするには、この変数を <literal>1</literal>, <literal>yes</literal>, <literal>true</literal> のいずれかに指定します。
         UTF-8 ベースのロケールであればこの設定を行います。
         そうでないロケールにおいて設定するのは不適切です。
         </para>
@@ -840,7 +842,7 @@
       languages, because there accents are added to unaccented ASCII
       characters, or two ASCII characters are composed together. However, in
       UTF-8 mode it is a problem; e.g., for the Greek language, where one
-      sometimes needs to put an accent on the letter <quote>alpha</quote>.
+      sometimes needs to put an accent on the letter <quote>alpha.</quote>
       The solution is either to avoid the use of UTF-8, or to install the
       X window system, which doesn't have this limitation, in its input
       handling.</para>

@@ -220,29 +220,6 @@
 @z
 
 @x
-    <note><para><application>grub-install</application> is a script and calls another 
-    program, grub-probe, that may fail with a message "cannot stat `/dev/root'".  
-    If so, create a temporary symbolic link from your root partition to /dev/root:</para>
-@y
-    <note><para>
-    <application>grub-install</application> はスクリプトであり、grub-probe というプログラムを呼び出します。
-    このプログラムは "cannot stat `/dev/root'" というメッセージを出力して処理に失敗することがあります。
-    そうなった場合は、一時的なシンボリックリンクとして、ルートパーティションを /dev/root にリンクしてください。
-    </para>
-@z
-
-@x
-    <para>The symbolic link will only be present until the system is rebooted.
-    The link is only needed for the installation procedure.
-    </para></note>
-@y
-    <para>
-    上のシンボリックリンクは、この時点だけ存在し、システムの再起動後はなくなります。
-    このリンクはインストール作業の際だけに必要なものです。
-    </para></note>
-@z
-
-@x
     <title>Creating the GRUB Configuration File</title>
 @y
     <title>GRUB 設定ファイルの生成</title>

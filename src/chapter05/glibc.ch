@@ -165,11 +165,11 @@
 
 @x
     <note><para>There have been reports that this package may fail when
-    building as a "parallel make".  If that occurs, rerun the make command
-    with the "-j1" option.</para></note>
+    building as a <quote>parallel make.</quote>  If that occurs, rerun the make command
+    with the <option>-j1</option> option.</para></note>
 @y
-    <note><para>本パッケージは "並行ビルド (parallel make)" を行うとビルドに失敗するとの報告例があります。
-    もしビルドに失敗した場合は make コマンドに "-j1" オプションをつけて再ビルドしてください。
+    <note><para>本パッケージは<quote>並行ビルド</quote>を行うとビルドに失敗するとの報告例があります。
+    もしビルドに失敗した場合は make コマンドに <option>-j1</option> オプションをつけて再ビルドしてください。
     </para></note>
 @z
 

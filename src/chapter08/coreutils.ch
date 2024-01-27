@@ -1117,7 +1117,7 @@
 @z
 
 @x yes
-          <para>Repeatedly outputs <quote>y</quote>, or a given string, until
+          <para>Repeatedly outputs <quote>y,</quote> or a given string, until
           killed</para>
 @y
           <para>

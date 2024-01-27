@@ -145,10 +145,10 @@
 
 @x
   <para>Charmaps can have a number of aliases, e.g., <quote>ISO-8859-1</quote>
-  is also referred to as <quote>iso8859-1</quote> and <quote>iso88591</quote>.
+  is also referred to as <quote>iso8859-1</quote> and <quote>iso88591.</quote>
   Some applications cannot handle the various synonyms correctly (e.g., require
-  that <quote>UTF-8</quote> is written as <quote>UTF-8</quote>, not
-  <quote>utf8</quote>), so it is safest in most
+  that <quote>UTF-8</quote> is written as <literal>UTF-8</literal>, not
+  <literal>utf8</literal>), so it is safest in most
   cases to choose the canonical name for a particular locale. To determine
   the canonical name, run the following command, where <replaceable>&lt;locale
   name&gt;</replaceable> is the output given by <command>locale -a</command> for
@@ -158,7 +158,7 @@
   キャラクターマップにはエイリアスがいくつもあります。
   例えば<quote>ISO-8859-1</quote>は<quote>iso8859-1</quote>や<quote>iso88591</quote>として記述することもできます。
   ただしアプリケーションによってはエイリアスを正しく取り扱うことができないものがあります。
-  (<quote>UTF-8</quote> の場合、<quote>UTF-8</quote>と書かなければならず、これを<quote>utf8</quote>としてはならない場合があります。)
+  (<quote>UTF-8</quote>の場合 <literal>UTF-8</literal> と書かなければならず、これを <literal>utf8</literal> としてはならない場合があります。)
   そこでロケールに対する正規の名称を選ぶのが最も無難です。
   正規の名称は以下のコマンドを実行すれば分かります。
   ここで <replaceable>&lt;locale name&gt;</replaceable> は <command>locale -a</command> コマンドの出力から得られたロケールを指定します。
@@ -176,12 +176,12 @@
 @z
 
 @x
-  <para>This results in a final locale setting of <quote>en_GB.ISO-8859-1</quote>.
+  <para>This results in a final locale setting of <literal>en_GB.ISO-8859-1</literal>.
   It is important that the locale found using the heuristic above is tested before
   it is added to the Bash startup files:</para>
 @y
   <para>
-  出力された結果が<quote>en_GB.ISO-8859-1</quote>に対するロケール設定として用いるべきものです。
+  出力された結果が <literal>en_GB.ISO-8859-1</literal> に対するロケール設定として用いるべきものです。
   こうして探し出したロケールは動作確認しておくことが重要です。
   Bash の起動ファイルに記述するのはその後です。
   </para>
@@ -211,36 +211,6 @@
   <para>
   このエラーが発生したら <command>localedef</command> コマンドを使って、目的とするロケールをインストールするか、別のロケールを選ぶ必要があります。
   これ以降の説明では Glibc がこのようなエラーを生成していないことを前提に話を進めます。
-  </para>
-@z
-
-@x
-  <!--<para>Some packages beyond LFS may also lack support for your chosen locale. One
-  example is the X library (part of the X Window System), which outputs the
-  following error message if the locale does not exactly match one of the character
-  map names in its internal files:</para>
-@y
-  <!--<para>
-  LFS には含まれない他のパッケージにて、指定したロケールをサポートしていないものがあります。
-  例えば X ライブラリ (X ウィンドウシステムの一部) では、内部ファイルに指定されたキャラクターマップ名に合致しないロケールを利用した場合に、以下のようなメッセージを出力します。
-  </para>
-@z
-
-@x
-  <para>In several cases Xlib expects that the character map will be listed in
-  uppercase notation with canonical dashes. For instance, "ISO-8859-1" rather
-  than "iso88591". It is also  possible to find an appropriate specification by
-  removing the charmap part of the locale specification.  This can be checked
-  by running the <command>locale charmap</command> command in both locales.
-  For example, one would have to change "de_DE.ISO-8859-15@euro" to
-  "de_DE@euro" in order to get this locale recognized by Xlib.</para>
-@y
-  <para>
-  Xlib ではキャラクターマップはたいてい、英大文字とダッシュ記号を用いて表現されます。
-  例えば "iso88591" ではなく "ISO-8859-1" となります。
-  ロケール設定におけるキャラクターマップ部分を取り除いてみれば、適切なロケール設定を見出すことができます。
-  これはまた <command>locale charmap</command> コマンドを使って、設定を変えてみてロケールを指定してみれば確認できます。
-  例えば "de_DE.ISO-8859-15@euro" という設定を "de_DE@euro" に変えてみて Xlib がそのロケールを認識するかどうか確認してみてください。
   </para>
 @z
 

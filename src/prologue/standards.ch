@@ -80,12 +80,12 @@
 
 @x
     <para>While it is possible to create a complete system that will pass the LSB
-    certification tests "from scratch", this can't be done without many additional packages
+    certification tests <quote>from scratch,</quote> this can't be done without many additional packages
     that are beyond the scope of the LFS book.  Installation instructions for these
     additional packages can be found in BLFS. </para>
 @y
     <para>
-    LFS の構築にあたっては LSB に適合していることを確認するテスト (certifications tests) を "一から" クリアしていくように構築することも可能です。
+    LFS の構築にあたっては LSB に適合していることを確認するテスト (certifications tests) を<quote>一から</quote>クリアしていくように構築することも可能です。
     ただし LFS ブックの範囲外にあるパッケージ類を追加しなければ実現できません。
     そのような追加パッケージ類については、おおむね BLFS にて導入手順を説明しています。
     </para> 

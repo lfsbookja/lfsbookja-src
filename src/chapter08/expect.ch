@@ -87,8 +87,8 @@
 
 @x
     <para>If any test fails with the message
-    <quote><computeroutput>The system has no more ptys.  Ask your system
-    administrator to create more</computeroutput></quote>, it indicates
+    <quote><computeroutput>The system has no more ptys. Ask your system
+    administrator to create more</computeroutput>,</quote> it indicates
     you've not mounted the
     <systemitem class="filesystem">devpts</systemitem> file system
     correctly.  You need to exit from the chroot environment, read

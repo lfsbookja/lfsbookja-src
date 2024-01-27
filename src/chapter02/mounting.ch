@@ -23,7 +23,7 @@
 @z
 
 @x
-  <para>Strictly speaking, one cannot "mount a partition". One mounts the <emphasis>file
+  <para>Strictly speaking, one cannot "mount a partition." One mounts the <emphasis>file
   system</emphasis> embedded in that partition. But since a single partition can't contain
   more than one file system, people often speak of the partition and the
   associated file system as if they were one and the same.</para>

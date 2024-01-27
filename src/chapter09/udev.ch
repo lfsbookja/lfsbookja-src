@@ -318,13 +318,13 @@
       program and are usually related to the bus-specific identifiers of devices
       supported by a module. For example, the <emphasis>snd-fm801</emphasis>
       driver supports PCI devices with vendor ID 0x1319 and device ID 0x0801,
-      and has an alias of <quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote>.
+      and has an alias of <literal>pci:v00001319d00000801sv*sd*bc04sc01i*</literal>.
       For most devices, the bus driver exports the alias of the driver that
       would handle the device via <systemitem
       class="filesystem">sysfs</systemitem>. E.g., the
       <filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename> file
       might contain the string
-      <quote>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</quote>.
+      <literal>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</literal>.
       The default rules provided with udev will cause <command>udevd</command>
       to call out to <command>/sbin/modprobe</command> with the contents of the
       <envar>MODALIAS</envar> uevent environment variable (which should be the
@@ -337,9 +337,9 @@
       その別名は <command>modinfo</command> プログラムを使えば確認することができます。
       そしてこの別名は、モジュールがサポートするバス固有の識別子に関連づけられます。
       例えば <emphasis>snd-fm801</emphasis> ドライバーは、ベンダーID 0x1319 とデバイスID 0x0801 の PCI ドライバーをサポートします。
-      そして<quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote>というエイリアスがあります。
+      そして <literal>pci:v00001319d00000801sv*sd*bc04sc01i*</literal> というエイリアスがあります。
       たいていのデバイスでは、<systemitem class="filesystem">sysfs</systemitem> を通じてドライバーがデバイスを扱うものであり、ドライバーのエイリアスをバスドライバーが提供します。
-      <filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename> ファイルならば<quote>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</quote>という文字列を含んでいるはずです。
+      <filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename> ファイルならば <literal>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</literal> という文字列を含んでいるはずです。
       udev が提供するデフォルトの生成規則によって <command>udevd</command> から <command>/sbin/modprobe</command> が呼び出されることになり、その際には uevent に関する環境変数 <envar>MODALIAS</envar> の設定内容が利用されます。
       (この環境変数の内容は sysfs 内の <filename>modalias</filename> ファイルの内容と同じはずです。)
       そしてワイルドカードが指定されているならそれが展開された上で、エイリアス文字列に合致するモジュールがすべてロードされることになります。
@@ -658,7 +658,7 @@
 @x
       <para>This is due to the fact that udev, by design, handles uevents and
       loads modules in parallel, and thus in an unpredictable order. This will
-      never be <quote>fixed</quote>. You should not rely upon the kernel device
+      never be <quote>fixed.</quote> You should not rely upon the kernel device
       names being stable. Instead, create your own rules that make symlinks with
       stable names based on some stable attributes of the device, such as a
       serial number or the output of various *_id utilities installed by udev.

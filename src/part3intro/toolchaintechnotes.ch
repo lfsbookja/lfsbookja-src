@@ -113,12 +113,12 @@
 @x
       <varlistentry><term>The build</term><listitem>
         <para>is the machine where we build programs. Note that this machine
-        is also referred to as the <quote>host</quote>.</para></listitem>
+        is also referred to as the <quote>host.</quote></para></listitem>
 @y
       <varlistentry><term>ビルド（build）</term><listitem>
         <para>
         ビルド作業を行うマシンのこと。
-        このマシンは "ホスト（host）" と呼ぶこともあります。
+        このマシンは<quote>ホスト</quote>（host）と呼ぶこともあります。
         </para></listitem>
 @z
 

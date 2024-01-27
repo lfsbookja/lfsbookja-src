@@ -102,17 +102,17 @@
 @z
 
 @x
-    <para>If the <envar>ONBOOT</envar> variable is set to <quote>yes</quote> the
+    <para>If the <envar>ONBOOT</envar> variable is set to <literal>yes</literal> the
     System V network script will bring up the Network Interface Card (NIC) during
-    the system boot process. If set to anything besides <quote>yes</quote>, the NIC
+    the system boot process. If set to anything besides <literal>yes</literal>, the NIC
     will be ignored by the network script and will not be started automatically.
     Interfaces can be manually started or stopped with the
     <command>ifup</command> and <command>ifdown</command> commands.</para>
 @y
     <para>
-    <envar>ONBOOT</envar> 変数を<quote>yes</quote>に設定した場合、システム起動時に System V ネットワークスクリプトがネットワークインターフェースカード (network
+    <envar>ONBOOT</envar> 変数を <literal>yes</literal> に設定した場合、システム起動時に System V ネットワークスクリプトがネットワークインターフェースカード (network
     interface card; NIC) を起動します。
-    <quote>yes</quote>以外に設定すると、ネットワークスクリプトから NIC は無視され、NIC が自動的に起動することはなくなります。
+    <literal>yes</literal> 以外に設定すると、ネットワークスクリプトから NIC は無視され、NIC が自動的に起動することはなくなります。
     ネットワークインターフェースは <command>ifup</command> や <command>ifdown</command> といったコマンドを使って、起動や停止を行うことができます。
     </para>
 @z

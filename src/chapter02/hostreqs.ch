@@ -48,7 +48,7 @@
     modern Linux distributions. Also note that many distributions will
     place software headers into separate packages, often in the form of
     <quote>&lt;package-name&gt;-devel</quote> or
-    <quote>&lt;package-name&gt;-dev</quote>. Be sure to install those if
+    <quote>&lt;package-name&gt;-dev.</quote> Be sure to install those if
     your distribution provides them.</para>
 @y
     <para>
