@@ -109,6 +109,34 @@
 @z
 
 @x
+  <para>We'll use <literal>C.UTF-8</literal> as the locale for interactive
+  sessions in the Linux console in <xref role='.'
+  linkend='ch-config-locale'/>  The console fonts shipped by
+  the <application>Kbd</application> package containing the glyphs for
+  all characters from the program messages in the <literal>C.UTF-8</literal>
+  locale are <filename>LatArCyrHeb*.psfu.gz</filename>,
+  <filename>LatGrkCyr*.psfu.gz</filename>,
+  <filename>Lat2-Terminus16.psfu.gz</filename>, and
+  <filename>pancyrillic.f16.psfu.gz</filename> in
+  <filename class='directory'>/usr/share/consolefonts</filename> (the other
+  shipped console fonts lack glyphs of some characters like the Unicode
+  left/right quotation marks and the Unicode English dash). So set one of
+  them, for example <filename>Lat2-Terminus16.psfu.gz</filename> as the
+  default console font:</para>
+@y
+  <para>
+  <xref role='' linkend='ch-config-locale'/> においては、Linux コンソールでの対話セッションのロケールは <literal>C.UTF-8</literal> を用いることにします。
+  <literal>C.UTF-8</literal> のもとでプログラムメッセージの全文字に対するグリフを持っているコンソールフォントと言えば、<application>Kbd</application> の中では <filename>LatArCyrHeb*.psfu.gz</filename>,
+  <filename>LatGrkCyr*.psfu.gz</filename>,
+  <filename>Lat2-Terminus16.psfu.gz</filename>, 
+  <filename>pancyrillic.f16.psfu.gz</filename> です。
+  これらは <filename class='directory'>/usr/share/consolefonts</filename> にあります。
+  (その他のコンソールフォントは、ユニコードの左右のクォーテーションマークや英語ダッシュなどのグリフが欠落しています。)
+  したがってデフォルトのコンソールフォントとして、たとえば <filename>Lat2-Terminus16</filename> を設定します。
+  </para>
+@z
+
+@x
   <para>An example for a German keyboard and console is given below:</para>
 @y
   <para>

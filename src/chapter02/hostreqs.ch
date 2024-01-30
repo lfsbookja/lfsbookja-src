@@ -47,15 +47,20 @@
     minimum versions indicated. This should not be an issue for most
     modern Linux distributions. Also note that many distributions will
     place software headers into separate packages, often in the form of
-    <quote>&lt;package-name&gt;-devel</quote> or
-    <quote>&lt;package-name&gt;-dev.</quote> Be sure to install those if
-    your distribution provides them.</para>
+    <literal><replaceable>&lt;package-name&gt;</replaceable>-devel</literal>
+    or
+    <literal><replaceable>&lt;package-name&gt;</replaceable>-dev</literal>.
+    Be sure to install those if your distribution provides them.</para>
 @y
     <para>
     ホストシステムには以下に示すソフトウェアが必要であり、それぞれに示されているバージョン以降である必要があります。
     最近の Linux ディストリビューションを利用するなら、あまり問題にはならないはずです。
     ディストリビューションによっては、ソフトウェアのヘッダーファイル群を別パッケージとして提供しているものが多々あります。
-    例えば<quote>&lt;パッケージ名&gt;-devel</quote>であったり<quote>&lt;パッケージ名&gt;-dev</quote>といった具合です。
+    例えば
+    <literal><replaceable>&lt;パッケージ名&gt;</replaceable>-devel</literal>
+    であったり
+    <literal><replaceable>&lt;パッケージ名&gt;</replaceable>-dev</literal>
+    といった具合です。
     お使いのディストリビューションがそのような提供の仕方をしている場合は、それらもインストールしてください。
     </para>
 @z

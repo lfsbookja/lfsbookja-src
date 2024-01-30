@@ -91,7 +91,8 @@ book: validate profile-html
 	@echo "Copying CSS code and images..."
 	$(MKDIR_P) $(BASEDIR)/stylesheets
 	cp stylesheets/lfs-xsl/*.css $(BASEDIR)/stylesheets
-	sed -i 's|../stylesheet|stylesheet|' $(BASEDIR)/index.html
+	sed -e 's|../stylesheet|stylesheet|' \
+           -i $(BASEDIR)/index.html
 
 	$(MKDIR_P) $(BASEDIR)/images
 	cp -p $(BOOKdir)/images/*.png $(BASEDIR)/images
@@ -99,7 +100,6 @@ book: validate profile-html
 	@echo "Running Tidy and obfuscate.sh..."
 	for filename in `find $(BASEDIR) -name "*.html"`; do \
          $(TIDY) -config tidy.conf $$filename;           \
-         true;                                        \
          ${SHELL} $(BOOKdir)/obfuscate.sh $$filename;           \
          sed -e "s@text/html@application/xhtml+xml@g" \
              -i $$filename;                           \
@@ -118,7 +118,7 @@ book: validate profile-html
 @TXT@#                $(RENDERTMP)/lfs-html2.xml
 
 @TXT@	@echo "Running Tidy..."
-@TXT@	$(TIDY) -config tidy.conf $(BASEDIR)/$(NOCHUNKS_OUTPUT) || true
+@TXT@	$(TIDY) -config tidy.conf $(BASEDIR)/$(NOCHUNKS_OUTPUT) || test $$? -le 1
 @TXT@	@echo "Running obfuscate.sh..."
 @TXT@	${SHELL} $(BOOKdir)/obfuscate.sh                 $(BASEDIR)/$(NOCHUNKS_OUTPUT)
 @TXT@	sed -i -e "s@text/html@application/xhtml+xml@g"  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
@@ -168,16 +168,16 @@ validate: tmpdir version $(ALLXML)
 	@echo "Adjusting for revision $(REV)..."
 	$(XSLTPROC) --nonet                           \
                 --xinclude                            \
-                --output $(RENDERTMP)/lfs-html2.xml   \
                 --stringparam profile.revision $(REV) \
+                --output $(RENDERTMP)/lfs-html2.xml   \
                 stylesheets/lfs-xsl/profile.xsl       \
                 index.xml
 
 	@echo "Validating the book..."
 	$(XMLLINT) --nonet                  \
-               --noent                      \
-               --postvalid                  \
-	       -o $(RENDERTMP)/lfs-full.xml \
+               --encode UTF-8                     \
+               --postvalid                        \
+	       --output $(RENDERTMP)/lfs-full.xml \
                $(RENDERTMP)/lfs-html2.xml
 
 	rm -f appendices/*.script
@@ -201,9 +201,10 @@ wget-list: $(BASEDIR)/wget-list $(BASEDIR)/wget-list-$(REV)
 $(BASEDIR)/wget-list: stylesheets/wget-list.xsl $(DOWNLOADS_DEP)
 	@echo "Generating consolidated wget list at $(BASEDIR)/wget-list ..."
 	$(MKDIR_P) $(BASEDIR)
-	$(XSLTPROC) --xinclude --nonet                     \
-                --output $(BASEDIR)/wget-list              \
-	             $(BOOKdir)/stylesheets/wget-list.xsl  \
+	$(XSLTPROC) --nonet                          \
+                --xinclude                           \
+                --output $(BASEDIR)/wget-list        \
+                $(BOOKdir)/stylesheets/wget-list.xsl \
                 $(BOOKdir)/chapter03/chapter03.xml
 
 $(BASEDIR)/wget-list-$(REV): stylesheets/wget-list.xsl $(DOWNLOADS_DEP)
@@ -221,14 +222,15 @@ md5sums: $(BASEDIR)/md5sums
 $(BASEDIR)/md5sums: stylesheets/wget-list.xsl $(DOWNLOADS_DEP) $(srcdir)/general.ch
 	@echo "Generating consolidated md5sum file at $(BASEDIR)/md5sums ..."
 	$(MKDIR_P) $(BASEDIR)
-	$(XSLTPROC) --nonet --xinclude                \
+	$(XSLTPROC) --nonet                           \
+                --xinclude                            \
                 --stringparam profile.revision $(REV) \
                 --output $(RENDERTMP)/md5sum.xml      \
-                $(BOOKdir)/stylesheets/lfs-xsl/profile.xsl       \
+                $(BOOKdir)/stylesheets/lfs-xsl/profile.xsl \
                 $(BOOKdir)/chapter03/chapter03.xml
-	$(XSLTPROC) --xinclude --nonet      \
-                --output $(BASEDIR)/md5sums \
-                $(BOOKdir)/stylesheets/md5sum.xsl      \
+	$(XSLTPROC) --nonet                       \
+                --output $(BASEDIR)/md5sums       \
+                $(BOOKdir)/stylesheets/md5sum.xsl \
                 $(RENDERTMP)/md5sum.xml
 	sed -i -e \
            "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.xz | cut -d' ' -f1)/" \

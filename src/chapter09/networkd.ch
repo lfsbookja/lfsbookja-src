@@ -153,21 +153,24 @@
 @z
 
 @x
-            Mask udev's .link file for the default policy:
+            Mask udev's <filename class='extension'>.link</filename> file
+            for the default policy:
 @y
-            udev のデフォルトポリシーに対する .link ファイルをマスクして無効にします。
+            udev のデフォルトポリシーに対する <filename
+            class='extension'>.link</filename> ファイルをマスクして無効にします。
 @z
 
 @x
             Create a manual naming scheme, for example by naming the
             interfaces something like <literal>internet0</literal>,
             <literal>dmz0</literal>, or <literal>lan0</literal>.
-            To do that, create .link files in /etc/systemd/network/ that
-            select an explicit name or a better naming scheme for your
-            network interfaces. For example:
+            To do that, create <filename class='extension'>.link</filename>
+            files in /etc/systemd/network/ that select an explicit name or a
+            better naming scheme for your network interfaces. For example:
 @y
             インターフェースに対する名前として <literal>internet0</literal>, <literal>dmz0</literal>, <literal>lan0</literal> といった命名スキームを自分で定めます。
-            これを行うには /etc/systemd/network/ ディレクトリに .link ファイルを生成し、必要なインターフェースに対して具体的な名前、つまりより良い命名スキームを定めます。
+            これを行うには /etc/systemd/network/ ディレクトリに <filename
+            class='extension'>.link</filename> ファイルを生成し、必要なインターフェースに対して具体的な名前、つまりより良い命名スキームを定めます。
             例えば以下のようにします。
 @z
 

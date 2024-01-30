@@ -10,12 +10,11 @@
 @z
 
 @x
-  <para>The <filename>/etc/locale.conf</filename> file below sets some
-  environment variables necessary for native language support. Setting
-  them properly results in:</para>
+  <para>Some environment variables are necessary for native language
+  support. Setting them properly results in:</para>
 @y
   <para>
-  以降に示す <filename>/etc/locale.conf</filename> ファイルは言語を設定するために必要となる環境変数を定義します。
+  環境変数の中には、ネイティブな言語サポートのために必要になるものがあります。
   これを設定することによって以下の内容が定められます。
   </para>
 @z
@@ -88,34 +87,36 @@
 @z
 
 @x
-  <para>Charmaps can have a number of aliases, e.g., <quote>ISO-8859-1</quote>
-  is also referred to as <quote>iso8859-1</quote> and <quote>iso88591.</quote>
+  <para>Charmaps can have a number of aliases, e.g.,
+  <literal>ISO-8859-1</literal> is also referred to as
+  <literal>iso8859-1</literal> and <literal>iso88591</literal>.
   Some applications cannot handle the various synonyms correctly (e.g., require
-  that <quote>UTF-8</quote> is written as <literal>UTF-8,</literal> not
+  that <literal>UTF-8</literal> is written as <literal>UTF-8</literal>, not
   <literal>utf8</literal>), so it is the safest in most
   cases to choose the canonical name for a particular locale. To determine
   the canonical name, run the following command, where <replaceable>&lt;locale
   name&gt;</replaceable> is the output given by <command>locale -a</command> for
-  your preferred locale (<quote>en_GB.iso88591</quote> in our example).</para>
+  your preferred locale (<literal>en_GB.iso88591</literal> in our
+  example).</para>
 @y
   <para>
   キャラクターマップにはエイリアスがいくつもあります。
-  例えば<quote>ISO-8859-1</quote>は<quote>iso8859-1</quote>や<quote>iso88591</quote>として記述することもできます。
+  例えば <literal>ISO-8859-1</literal> は <literal>iso8859-1</literal> や <literal>iso88591</literal> として記述することもできます。
   ただしアプリケーションによってはエイリアスを正しく取り扱うことができないものがあります。
-  (<quote>UTF-8</quote> の場合 <literal>UTF-8</literal> と書かなければならず、これを <literal>utf8</literal> としてはならない場合があります。)
+  (<literal>UTF-8</literal> の場合 <literal>UTF-8</literal> と書かなければならず、これを <literal>utf8</literal> としてはならない場合があります。)
   そこでロケールに対する正規の名称を選ぶのが最も無難です。
   正規の名称は以下のコマンドを実行すれば分かります。
   ここで <replaceable>&lt;locale name&gt;</replaceable> は <command>locale -a</command> コマンドの出力から得られたロケールを指定します。
-  (本書の例では<quote>en_GB.iso88591</quote>としています。)
+  (本書の例では <literal>en_GB.iso88591</literal> としています。)
   </para>
 @z
 
 @x
-  <para>For the <quote>en_GB.iso88591</quote> locale, the above command
+  <para>For the <literal>en_GB.iso88591</literal> locale, the above command
   will print:</para>
 @y
   <para>
-  <quote>en_GB.iso88591</quote>ロケールの場合、上のコマンドの出力は以下となります。
+  <literal>en_GB.iso88591</literal> ロケールの場合、上のコマンドの出力は以下となります。
   </para>
 @z
 
@@ -172,33 +173,95 @@
 @z
 
 @x
-  <para>Once the proper locale settings have been determined, create the
-  <filename>/etc/locale.conf</filename> file:</para>
+  <para revision='systemd'>Once the proper locale settings have been
+  determined, create the <filename>/etc/locale.conf</filename> file:</para>
 @y
-  <para>
+  <para revision='systemd'>
   適切なロケール設定が決まったら <filename>/etc/locale.conf</filename> ファイルを生成します。
   </para>
 @z
 
 @x
-  <para>Note that you can modify <filename>/etc/locale.conf</filename> with the
+  <para>The shell program <command>/bin/bash</command> (here after referred
+  as <quote>the shell</quote>) uses a collection of startup files to help
+  create the environment to run in. Each file has a specific use and may
+  affect login and interactive environments differently. The files in the
+  <filename class="directory">/etc</filename> directory provide global
+  settings.  If equivalent files exist in the home directory, they
+  may override the global settings.</para>
+@y
+  <para>
+  シェルプログラムである <filename>/bin/bash</filename> (これ以降は単に<quote>シェル</quote>と表現します) は、初期起動ファイルをいくつも利用して環境設定を行います。
+  個々のファイルにはそれぞれに目的があり、ログインや対話環境をさまざまに制御します。
+  <filename class="directory">/etc</filename> ディレクトリにあるファイルは一般にグローバルな設定を行います。
+  これに対応づいたファイルがユーザーのホームディレクトリにある場合は、グローバルな設定を上書きします。
+  </para>
+@z
+
+@x
+  <para>An interactive login shell is started after a successful login,
+  using <command>/bin/login</command>, by reading the
+  <filename>/etc/passwd</filename> file.  An interactive non-login shell is
+  started at the command-line (e.g.
+  <prompt>[prompt]$</prompt><command>/bin/bash</command>).  A
+  non-interactive shell is usually present when a shell script is running.
+  It is non-interactive because it is processing a script and not waiting
+  for user input between commands.</para>
+@y
+  <para>
+  対話型ログインシェルは <command>/bin/login</command> プログラムを利用して <filename>/etc/passwd</filename> ファイルを読み込み、ログインが成功することで起動します。
+  同じ対話型でも非ログインシェルの場合は <prompt>[prompt]$</prompt><command>/bin/bash</command> のようなコマンドラインからの入力を経て起動します。
+  非対話型のシェルはシェルスクリプト動作中に実行されます。
+  非対話型であるのは、スクリプトの実行の最中にユーザーからの入力を待つことがないためです。
+  </para>
+@z
+
+@x
+  <para><phrase revision='systemd'>The login shells are often unaffected by
+  the settings in <filename>/etc/locale.conf</filename>. </phrase>Create the
+  <filename>/etc/profile</filename>
+  <phrase revision='sysv'>once the proper locale settings have been
+  determined to set the desired locale</phrase><phrase
+  revision='systemd'>to read the locale settings from
+  <filename>/etc/locale.conf</filename> and export them</phrase>,
+  but set the <literal>C.UTF-8</literal> locale instead if running in the Linux
+  console (to prevent programs from outputting characters that the Linux
+  console is unable to render):</para>
+@y
+  <para>
+   <phrase revision='systemd'>
+   ログインシェルは <filename>/etc/locale.conf</filename> における設定に影響を受けないこともあります。
+   </phrase>
+   <phrase revision='sysv'>
+    適切なロケール設定が定まったら <filename>/etc/profile</filename> を生成してロケールを望みどおりに設定します。
+   </phrase>
+   <phrase revision='systemd'>
+    <filename>/etc/locale.conf</filename> のロケール設定を読み込んでエクスポートするために <filename>/etc/profile</filename> を生成します。
+   </phrase>,
+  ただし Linux コンソールの起動中は、上ではなく <literal>C.UTF-8</literal> を設定します。
+  (Linux コンソールが表示できない文字を出力しないようにするためです。)</para>
+@z
+
+@x
+  <para revision='systemd'>Note that you can modify <filename>/etc/locale.conf</filename> with the
   systemd <command>localectl</command> utility. To use
   <command>localectl</command> for the example above, run:</para>
 @y
-  <para>
+  <para revision='systemd'>
   <filename>/etc/locale.conf</filename> ファイルは systemd のユーティリティープログラム <command>localectl</command> を使って定めることもできます。
   例えば上と同じ設定を行うには以下を実行します。
   </para>
 @z
 
 @x
-  <para>You can also specify other language specific environment variables such
-  as <envar>LANG</envar>, <envar>LC_CTYPE</envar>, <envar>LC_NUMERIC</envar> or
-  any other environment variable from <command>locale</command> output. Just
-  separate them with a space. An example where <envar>LANG</envar> is set as
+  <para revision='systemd'>You can also specify other language specific
+  environment variables such as <envar>LANG</envar>,
+  <envar>LC_CTYPE</envar>, <envar>LC_NUMERIC</envar> or any other
+  environment variable from <command>locale</command> output. Just separate
+  them with a space. An example where <envar>LANG</envar> is set as
   en_US.UTF-8 but <envar>LC_CTYPE</envar> is set as just en_US is:</para>
 @y
-  <para>
+  <para revision='systemd'>
   言語に関連する環境変数、例えば <envar>LANG</envar>, <envar>LC_CTYPE</envar>, <envar>LC_NUMERIC</envar> などや、<command>locale</command> が出力する環境変数を指定することもできます。
   その場合は各設定をスペースにより区切ります。
   例として <envar>LANG</envar> を en_US.UTF-8 とし <envar>LC_CTYPE</envar> を単に en_US とする場合は以下のようにします。
@@ -206,46 +269,37 @@
 @z
 
 @x
-  <note><para>Please note that the <command>localectl</command> command
-  doesn't work in the chroot environment.  It can only
-  be used after the LFS system is booted with systemd.</para></note>
+  <note revision='systemd'><para>Please note that the
+  <command>localectl</command> command doesn't work in the chroot
+  environment.  It can only be used after the LFS system is booted with
+  systemd.</para></note>
 @y
-  <note><para>
+  <note revision='systemd'><para>
   <command>localectl</command> コマンドは chroot 環境内では動作しない点に注意してください。
   systemd を使って LFS システムを起動したときになって、初めて利用できるものです。
   </para></note>
 @z
 
 @x
-  <para>The <quote>C</quote> (default) and <quote>en_US</quote> (the recommended
-  one for United States English users) locales are different. <quote>C</quote>
+  <para>The <literal>C</literal> (default) and <literal>en_US</literal>
+  (the recommended one for United States English users) locales are
+  different. <literal>C</literal>
   uses the US-ASCII 7-bit character set, and treats bytes with the high bit set
   as invalid characters. That's why, e.g., the <command>ls</command> command
   substitutes them with question marks in that locale. Also, an attempt to send
   mail with such characters from Mutt or Pine results in non-RFC-conforming
-  messages being sent (the charset in the outgoing mail is indicated as <quote>unknown
-  8-bit</quote>). It's suggested that you use the <quote>C</quote> locale only
+  messages being sent (the charset in the outgoing mail is indicated as
+  <computeroutput>unknown 8-bit</computeroutput>). It's suggested that you
+  use the <literal>C</literal> locale only
   if you are certain that you will never need 8-bit characters.</para>
 @y
   <para>
-  ロケール設定の<quote>C</quote>(デフォルト) と<quote>en_US</quote>(米国の英語利用ユーザーに推奨) は異なります。
-  <quote>C</quote>は US-ASCII 7 ビットキャラクターセットを用います。
+  ロケール設定の <literal>C</literal> (デフォルト) と <literal>en_US</literal> (米国の英語利用ユーザーに推奨) は異なります。
+  <literal>C</literal> は US-ASCII 7 ビットキャラクターセットを用います。
   もし最上位ビットがセットされたキャラクターがあれば不適当なものとして取り扱います。
   例えば <command>ls</command> コマンドにおいてクエスチョン記号が表示されることがあるのはこのためです。
   また Mutt や Pine などにより電子メールが送信される際に、そういった文字は RFC には適合しないメールとして送信されます。
-  送信された文字は<quote>不明な 8ビット (unknown 8-bit)</quote>として示されます。
-  そこで 8ビット文字を必要としないことが明らかな場合には<quote>C</quote>ロケールを指定してください。
-  </para>
-@z
-
-@x
-  <para>UTF-8 based locales are not supported well by many programs.
-  Work is in progress to document and, if possible, fix such problems, see
-  <ulink url="&blfs-book;introduction/locale-issues.html"/>.</para>
-@y
-  <para>
-  UTF-8 ベースのロケールは、プログラムによってはサポートしていないものもあります。
-  この問題については <ulink
-   url="&blfs-book;introduction/locale-issues.html"/> にて説明しており、可能なものは解決を図っていこうとしているところです。
+  送信された文字は <computeroutput>unknown 8-bit</computeroutput>(不明な 8ビット) として示されます。
+  そこで 8ビット文字を必要としないことが明らかな場合には <literal>C</literal> ロケールを指定してください。
   </para>
 @z

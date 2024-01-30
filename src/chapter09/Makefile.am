@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	locale.ch         \
 	network.ch        \
 	networkd.ch       \
-	profile.ch        \
 	symlinks.ch       \
 	systemd-custom.ch \
 	udev.ch           \

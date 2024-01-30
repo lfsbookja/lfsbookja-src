@@ -87,8 +87,8 @@
 
 @x
     <para>If any test fails with the message
-    <quote><computeroutput>The system has no more ptys. Ask your system
-    administrator to create more</computeroutput>,</quote> it indicates
+    <computeroutput>The system has no more ptys. Ask your system
+    administrator to create more</computeroutput>, it indicates
     you've not mounted the
     <systemitem class="filesystem">devpts</systemitem> file system
     correctly.  You need to exit from the chroot environment, read
@@ -100,8 +100,8 @@
 @y
     <para>
     テストの中で 
-    <quote><computeroutput>The system has no more ptys.  Ask your system
-    administrator to create more</computeroutput></quote>
+    <computeroutput>The system has no more ptys.  Ask your system
+    administrator to create more</computeroutput>
     というメッセージが出力されて失敗したものがあった場合、それは <systemitem
     class="filesystem">devpts</systemitem> ファイルシステムが適切にマウントされていないことを表します。
     chroot 環境からいったん抜け出て、もう一度 <xref

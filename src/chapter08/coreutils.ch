@@ -1117,11 +1117,11 @@
 @z
 
 @x yes
-          <para>Repeatedly outputs <quote>y,</quote> or a given string, until
-          killed</para>
+          <para>Repeatedly outputs <literal>y</literal> or a given string,
+          until killed</para>
 @y
           <para>
-          処理が停止されるまで繰り返して<quote>y</quote>または指定文字を出力します。
+          処理が停止されるまで繰り返して <literal>y</literal> または指定文字を出力します。
           </para>
 @z
 

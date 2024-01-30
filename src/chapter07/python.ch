@@ -16,13 +16,13 @@
 @z
 
 @x
-      <para>There are two package files whose name starts with
-      <quote>python.</quote> The one to extract from is
+      <para>There are two package files whose name starts with the
+      <quote>python</quote> prefix. The one to extract from is
       <filename>Python-&python-version;.tar.xz</filename> (notice the
       uppercase first letter).</para>
 @y
       <para>
-      <quote>python</quote>の名前で始まるパッケージファイルは 2 種類あります。
+      <quote>python</quote> というプレフィックスで始まるパッケージファイルは 2 種類あります。
       そのうち、扱うべきファイルは <filename>Python-&python-version;.tar.xz</filename> です。
       （1 文字めが大文字であるものです。）
       </para>
@@ -84,16 +84,16 @@
 @x
         Some Python 3 modules can't be built now because the dependencies
         are not installed yet. For the <filename>ssl</filename> module,
-        a message <quote><computeroutput>Python requires a OpenSSL 1.1.1 or
-        newer</computeroutput></quote> is outputted.
+        a message <computeroutput>Python requires a OpenSSL 1.1.1 or
+        newer</computeroutput> is outputted.
         The message should be ignored.  Just make sure the toplevel
         <command>make</command> command has not failed.  The optional
         modules are not needed now and they will be built in
         <xref linkend="chapter-building-system"/>.
 @y
         この時点において、依存パッケージをまだインストールしていないために、ビルドできない Python 3 モジュールがあります。
-        <filename>ssl</filename> モジュールに対しては <quote><computeroutput>Python requires a OpenSSL 1.1.1 or
-        newer</computeroutput></quote> というメッセージが出力されます。
+        <filename>ssl</filename> モジュールに対しては <computeroutput>Python requires a OpenSSL 1.1.1 or
+        newer</computeroutput> というメッセージが出力されます。
         このメッセージは無視できます。
         よく確認すべきなのは、トップレベルの <command>make</command> コマンドは失敗していないことです。
         任意でビルドすれば良いモジュールは、今ここでのビルドは必要ありません。

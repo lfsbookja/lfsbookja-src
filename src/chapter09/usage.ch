@@ -777,6 +777,36 @@
 @z
 
 @x
+        We'll use <literal>C.UTF-8</literal> as the locale for interactive
+        sessions in the Linux console in <xref role=','
+        linkend='ch-config-locale'/> so we should set
+        <literal>UNICODE</literal> to <literal>1</literal>.  And the console
+        fonts shipped by the <application>Kbd</application> package
+        containing the glyphs for all characters from the program messages
+        in the <literal>C.UTF-8</literal> locale are
+        <filename>LatArCyrHeb*.psfu.gz</filename>,
+        <filename>LatGrkCyr*.psfu.gz</filename>,
+        <filename>Lat2-Terminus16.psfu.gz</filename>, and
+        <filename>pancyrillic.f16.psfu.gz</filename> in
+        <filename class='directory'>/usr/share/consolefonts</filename> (the
+        other shipped console fonts lack glyphs of some characters like the
+        Unicode left/right quotation marks and the Unicode English dash).
+        So set one of them, for example
+        <filename>Lat2-Terminus16.psfu.gz</filename> as the default console
+        font:
+@y
+        <xref role='' linkend='ch-config-locale'/> においては、Linux コンソールでの対話セッションのロケールは <literal>C.UTF-8</literal> を用いることにしていました。
+        そこで <literal>UNICODE</literal> は <literal>1</literal> にする必要があります。
+        <literal>C.UTF-8</literal> のもとでプログラムメッセージの全文字に対するグリフを持っているコンソールフォントと言えば、<application>Kbd</application> の中では <filename>LatArCyrHeb*.psfu.gz</filename>,
+        <filename>LatGrkCyr*.psfu.gz</filename>,
+        <filename>Lat2-Terminus16.psfu.gz</filename>,
+        <filename>pancyrillic.f16.psfu.gz</filename> です。
+        これらは <filename class='directory'>/usr/share/consolefonts</filename> にあります。
+        (その他のコンソールフォントは、ユニコードの左右のクォーテーションマークや英語ダッシュなどのグリフが欠落しています。)
+        したがってデフォルトのコンソールフォントとして、たとえば <filename>Lat2-Terminus16</filename> を設定します。
+@z
+
+@x
       <para>For a non-Unicode setup, only the KEYMAP and FONT variables are
       generally needed. E.g., for a Polish setup, one would use:</para>
 @y
@@ -842,7 +872,7 @@
       languages, because there accents are added to unaccented ASCII
       characters, or two ASCII characters are composed together. However, in
       UTF-8 mode it is a problem; e.g., for the Greek language, where one
-      sometimes needs to put an accent on the letter <quote>alpha.</quote>
+      sometimes needs to put an accent on the letter α.
       The solution is either to avoid the use of UTF-8, or to install the
       X window system, which doesn't have this limitation, in its input
       handling.</para>
@@ -856,7 +886,7 @@
       このような欠点は西欧のキーマップでは問題にはなりません。
       アクセント記号なら、アクセント記号がついていない ASCII 文字を使ったり、ASCII 文字を二つ使って工夫したりするからです。
       しかし UTF-8 モードでは問題になります。
-      例えばギリシャ語にて<quote>alpha</quote>の文字の上にアクセント記号を付けたい場合が問題です。
+      例えばギリシャ語にて α の文字の上にアクセント記号を付けたい場合が問題です。
       これを解決するには、一つには UTF-8 の利用を諦めることであり、もう一つは X ウィンドウシステムを使うことで、そのような入力処理の制約を解消することです。
       </para>
 @z
