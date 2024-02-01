@@ -38,9 +38,9 @@
 @z
 
 @x Bash Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;&bash-upstream-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&bash-upstream-fixes-patch;"/></para>
 @z
 
 @x Binutils LTO Fix Patch

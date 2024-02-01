@@ -100,27 +100,27 @@
         5.10.17 to 5.10.18 or 5.11.1), nothing else needs to be rebuilt.
         The system will keep working fine thanks to the well-defined interface
         between the kernel and userspace.  Specifically, Linux API headers
-        need not be (and should not be, see the next item) upgraded
+        need not be upgraded
         along with the kernel.  You will merely need to reboot your system to use the
         upgraded kernel.</para>
 @y
         <para>
         カーネルをアップグレードする必要がある場合 (たとえば 5.10.17 から 5.10.18 や 5.11.1 へ、など)、これ以外に再ビルドを必要とするものはありません。
         カーネルとユーザー空間のインターフェースが適切に定義されているため、システムは動作し続けるはずです。
-        特に Linux API ヘッダーは、カーネルに伴ってアップグレードする必要もありません (次に説明するように、アップグレードしてはなりません)。
+        特に Linux API ヘッダーは、カーネルに伴ってアップグレードする必要もありません。
         アップグレードしたカーネルは、システムを再起動しさえすれば利用できるようになります。
         </para>
 @z
 
 @x
-        <para>If the Linux API headers or Glibc need to be upgraded to a newer
+        <para>If Glibc needs to be upgraded to a newer
         version, (e.g.,  from Glibc-2.31 to Glibc-2.32), it is safer to
         rebuild LFS.  Though you <emphasis>may</emphasis> be able to rebuild
         all the packages in their dependency order, we do not recommend
         it.  </para>
 @y
         <para>
-        Linux API ヘッダーや Glibc を新しいバージョン (例えば Glibc-2.31 から Glibc-2.32) にアップグレードする必要が発生した場合は LFS を再構築することが安全です。
+        Glibc を新しいバージョン (例えば Glibc-2.31 から Glibc-2.32) にアップグレードする必要が発生した場合は LFS を再構築することが安全です。
         必要なパッケージの依存順を知っていれば再構築できるかもしれませんが、これはお勧めしません。
         </para>
 @z

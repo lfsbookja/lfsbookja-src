@@ -16,6 +16,14 @@
 @z
 
 @x
+    <para>First, fix some issues identified upstream:</para>
+@y
+    <para>
+    はじめにアップストリームが認識している問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Bash for compilation:</para>
 @y
     <para>&PreparePackage1;Bash&PreparePackage2;</para>

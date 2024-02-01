@@ -38,6 +38,88 @@
 @z
 
 @x
+      <para>2024-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.2.1. Fixes
+          <ulink url='&lfs-ticket-root;5425'>#5425</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to zlib-1.3.1. Fixes
+          <ulink url='&lfs-ticket-root;5419'>#5419</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.4.6. Fixes
+          <ulink url='&lfs-ticket-root;5423'>#5423</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.7.2. Fixes
+          <ulink url='&lfs-ticket-root;5422'>#5422</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240125. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.42. Fixes
+          <ulink url='&lfs-ticket-root;5424'>#5424</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to acl-2.3.2. Fixes
+          <ulink url='&lfs-ticket-root;5421'>#5421</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update upstream fixes for readline-8.2. Fixes
+          <ulink url='&lfs-ticket-root;5420'>#5420</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Apply upstream fix for bash-5.2.21. Fixes
+          <ulink url='&lfs-ticket-root;5420'>#5420</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - openssl-3.2.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5425'>#5425</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - zlib-1.3.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5419'>#5419</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz-5.4.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5423'>#5423</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.7.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5422'>#5422</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240125 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.42 へのアップデート。
+          <ulink url='&lfs-ticket-root;5424'>#5424</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - acl-2.3.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5421'>#5421</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline-8.2 におけるアップストリーム修正を更新。
+          <ulink url='&lfs-ticket-root;5420'>#5420</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash-5.2.21 に対してアップストリーム更新を適用。
+          <ulink url='&lfs-ticket-root;5420'>#5420</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-01-21</para>
       <itemizedlist>
         <listitem>

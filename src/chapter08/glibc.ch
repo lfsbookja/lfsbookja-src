@@ -101,20 +101,16 @@
 @x --enable-stack-protector=strong
           <para>This option increases system security by adding
           extra code to check for buffer overflows, such as stack
-          smashing attacks.</para>
+          smashing attacks.  Note that Glibc always explicitly overrides
+          the default of GCC, so this option is still needed even though
+          we've already specified <option>--enable-default-ssp</option> for
+          GCC.</para>
 @y
           <para>
           このオプション指定によりスタックに積まれる関数プリアンブル内に、追加のコードを付与することにより、システムセキュリティを向上させます。
           その追加コードは、スタック破壊攻撃（stack smashing attacks）のようなバッファーオーバーフローをチェックします。
-          </para>
-@z
-
-@x --with-headers=/usr/include
-          <para>This option tells the build system where to find the
-          kernel API headers.</para>
-@y
-          <para>
-          このオプションはビルドシステムにおいて、カーネル API ヘッダーを探す場所を指定します。
+          なお Glibc に対して明示的に指定されたオプションは、常に GCC のデフォルトを上書きします。
+          したがってこのオプションは、GCC に対して <option>--enable-default-ssp</option> の設定を行っているからこそ、ここでも指定が必要になります。
           </para>
 @z
 

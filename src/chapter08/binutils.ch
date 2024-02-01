@@ -145,13 +145,13 @@
     </para>
 @z
 
-@x
-    <para>Three tests in the gprofng suite are also known to fail.</para>
-@y
-    <para>
-    grpofng スイートの中にある 3 つのテストが失敗します。
-    </para>
-@z
+%@x
+%    <para>Three tests in the gprofng suite are also known to fail.</para>
+%@y
+%    <para>
+%    grpofng スイートの中にある 3 つのテストが失敗します。
+%    </para>
+%@z
 
 @x
     <para>Install the package:</para>
