@@ -41,7 +41,7 @@
       <para>2024-02-01</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to openssl-3.2.1. Fixes
+          <para>[bdubbs] - Update to openssl-3.2.1 (security fix). Fixes
           <ulink url='&lfs-ticket-root;5425'>#5425</ulink>.</para>
         </listitem>
         <listitem>
@@ -81,7 +81,7 @@
       <para>2024-02-01</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - openssl-3.2.1 へのアップデート。
+          <para>[bdubbs] - openssl-3.2.1 (セキュリティフィックス) へのアップデート。
           <ulink url='&lfs-ticket-root;5425'>#5425</ulink> を Fix に。</para>
         </listitem>
         <listitem>
