@@ -252,6 +252,105 @@
 @z
 
 @x
+        If upgrading Glibc to a new minor version (for example, from
+        Glibc-2.36 to Glibc-&glibc-version;) on a running LFS system, you
+        need to take some extra precautions to avoid breaking the system:
+@y
+        稼働中の LFS システムにおいて Glibc のマイナーバージョンを最新のものにアップグレードする場合 (たとえば Glibc-2.36 を Glibc-&glibc-version; にあげる場合)、いくつか追加の措置を講じることで、システムが壊れないようにすることが必要です。
+@z
+
+@x
+            Upgrading Glibc on a LFS system prior to 11.0 (exclusive) is
+            not supported.  Rebuild LFS if you are running such an old LFS
+            system but you need a newer Glibc.
+@y
+            11.0 未満の Glibc をアップグレードすることは LFS システムにおいてはサポートしていません。
+            そのような古い LFS システムにおいて最新の Glibc が必要になる場合は、LFS を再構築してください。
+@z
+
+@x
+            If upgrading on a LFS system prior to 12.0 (exclusive), install
+            <application>Libxcrypt</application> following
+            <xref role='.' linkend='ch-system-libxcrypt'/>  In addition to
+            a normal <application>Libxcrypt</application> installation,
+            <emphasis role='bold'>you MUST follow the note in Libxcrypt
+            section to install
+            <filename class='libraryfile'>libcrypt.so.1*</filename>
+            (overwritting
+            <filename class='libraryfile'>libcrypt.so.1</filename> from the
+            prior Glibc installation)</emphasis>.
+@y
+            12.0 未満の Glibc をアップグレードする場合は <xref role='.'
+            linkend='ch-system-libxcrypt'/> に従って <application>Libxcrypt</application> をインストールしてください。
+            さらにその <application>Libxcrypt</application> の通常インストール手順に加えて、<emphasis
+            role='bold'>Libxcrypt の注記の節に示されている手順に従って <filename class='libraryfile'>libcrypt.so.1*</filename> のインストールを必ず行ってください (それ以前に行っている Glibc のビルドにおいてインストールした <filename class='libraryfile'>libcrypt.so.1</filename> を上書きしてください)。</emphasis>.
+@z
+
+@x
+            If upgrading on a LFS system prior to 12.1 (exclusive),
+            remove the <command>nscd</command> program:
+@y
+            12.1 未満の Glibc をアップグレードする場合は <command>nscd</command> プログラムを削除してください。
+@z
+
+@x
+            If this system (prior to LFS 12.1, exclusive) is based on
+            Systemd, it's also needed to disable and stop the
+            <command>nscd</command> service now:
+@y
+            (12.1 未満の) システムが Systemd に基づいている場合は、<command>nscd</command> サービスは停止させ無効化します。
+@z
+
+@x
+            Upgrade the kernel and reboot if it's older than &min-kernel;
+            (check the current version with <command>uname -r</command>)
+            or if you want to upgrade it anyway, following
+            <xref linkend='ch-bootable-kernel' role='.'/>
+@y
+            (現時点のカーネルバージョンは <command>uname -r</command> により確認することができますが) &min-kernel; よりも古いカーネルをアップグレードして再起動する場合には <xref
+            linkend='ch-bootable-kernel' role=''/> の説明に従ってください。
+@z
+
+@x
+            Upgrade the kernel API headers if it's older than &min-kernel;
+            (check the current version with
+            <command>cat /usr/include/linux/version.h</command>)
+            or if you want to upgrade it anyway, following
+            <xref linkend='ch-tools-linux-headers'/> (but removing
+            <envar>$LFS</envar> from the <command>cp</command> command).
+@y
+            (現時点の API ヘッダーバージョンは <command>cat /usr/include/linux/version.h</command> により確認することができますが) &min-kernel; よりも古い API ヘッダーをアップグレードする場合は、<xref linkend='ch-tools-linux-headers'/> の説明に従ってください (ただし <command>cp</command> コマンドからは <envar>$LFS</envar> を取り除いてください)。
+@z
+
+@x
+            Perform a <envar>DESTDIR</envar> installation and upgrade
+            the Glibc shared libraries on the system using one single
+            <command>install</command> command:
+@y
+            <envar>DESTDIR</envar> を利用したインストール方法により Glibc の共有ライブラリをアップグレードする場合には、以下のように一つの <command>install</command> コマンドにより行ってください。
+@z
+
+@x
+        It's imperative to strictly follow these steps above unless you
+        completely understand what you are doing.
+        <emphasis role='bold'>Any unexpected deviation may render the
+        system completely unusable.  YOU ARE WARNED.</emphasis>
+@y
+        自分が何をしているのかを完全に理解できていないのであれば、この手順に忠実に従ってください。
+        <emphasis role='bold'>不用意にこの手順を見逃して進めてしまうと、システムが完全に利用不能になりかねません。ここに警告しておきます。</emphasis>
+@z
+
+@x
+        Then continue to run the <command>make install</command> command
+        and the <command>sed</command> command against
+        <filename>/usr/bin/ldd</filename>.  Once they are finished, reboot
+        the system immediately.
+@y
+        <command>make install</command> コマンドを実行し、<filename>/usr/bin/ldd</filename> に対する <command>sed</command> コマンドを実行します。
+        ここまで行ったら即座にシステムを再起動してください。
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

@@ -38,6 +38,40 @@
 @z
 
 @x
+      <para>2024-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to tzdata-2024a.  Fixes
+          <ulink url='&lfs-ticket-root;5428'>#5428</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to glibc-2.39 (security fix).  Fixes
+          <ulink url='&lfs-ticket-root;5426'>#5426</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to linux-6.7.3.  Fixes
+          <ulink url='&lfs-ticket-root;5427'>#5427</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - tzdata-2024a へのアップデート。
+          <ulink url='&lfs-ticket-root;5428'>#5428</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - glibc-2.39 (セキュリティフィックス) へのアップデート。
+          <ulink url='&lfs-ticket-root;5426'>#5426</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - linux-6.7.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5427'>#5427</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-02-01</para>
       <itemizedlist>
         <listitem>

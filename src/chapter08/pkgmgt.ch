@@ -114,32 +114,13 @@
 
 @x
         <para>If Glibc needs to be upgraded to a newer
-        version, (e.g.,  from Glibc-2.31 to Glibc-2.32), it is safer to
-        rebuild LFS.  Though you <emphasis>may</emphasis> be able to rebuild
-        all the packages in their dependency order, we do not recommend
-        it.  </para>
+        version, (e.g.,  from Glibc-2.36 to Glibc-&glibc-version;),
+        some extra steps are needed to avoid breaking the system.
+        Read <xref linkend='ch-system-glibc'/> for details.</para>
 @y
         <para>
-        Glibc を新しいバージョン (例えば Glibc-2.31 から Glibc-2.32) にアップグレードする必要が発生した場合は LFS を再構築することが安全です。
-        必要なパッケージの依存順を知っていれば再構築できるかもしれませんが、これはお勧めしません。
-        </para>
-@z
-
-@x
-        <para>Reinstalling the same version of Glibc (&glibc-version; for
-        this release of LFS) with patches should be safe when these patches
-        do not change ABI and API.  When a security vulnerability is found
-        in Glibc, we often need to apply such a patch to fix the
-        vulnerability and reinstall Glibc.  Consult
-        <ulink url='&lfs-root;lfs/advisories/'>LFS security
-        advisories</ulink> if you are alerted for a published Glibc security
-        vulnerability but unsure about the action to take.</para>
-@y
-        <para>
-        パッチ内容が ABI や API を変更するものでない限りは、そのパッチを適用して Glibc の同一バージョンをインストールすれば（当リリースの LFS においては &glibc-version;）安全性が高まります。
-        Glibc においてセキュリティぜい弱性が見つかった場合、そういったぜい弱性の修正を行うパッチを使って Glibc を再インストールすることが必要になってきます。
-        Glibc のセキュリティぜい弱性が公開されていることが分かっていても、どうしたら良いのか不明である場合には、<ulink url='&lfs-root;lfs/advisories/'>LFS security
-        advisories</ulink> を参照してください。
+        Glibc を新しいバージョン (たとえば Glibc-2.31 から Glibc-&glibc-version;) にアップグレードする必要が発生した場合は、システムが壊れないようにすることが必要です。
+        詳しくは <xref linkend='ch-system-glibc'/> を参照してください。
         </para>
 @z
 

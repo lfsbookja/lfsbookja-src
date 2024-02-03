@@ -138,15 +138,22 @@
       <xref linkend="chapter-building-system"/>, so the workarounds for
       older kernels are not enabled and the compiled
       <application>glibc</application> is slightly faster and smaller.
-      As at June 2023, &min-kernel; is the oldest kernel release still
-      supported by the kernel developers.</para>
+      As at Feb 2024, &min-kernel; is the oldest kernel release still
+      supported by the kernel developers.  Some kernel releases older than
+      &min-kernel; may be still supported by third-party teams, but they
+      are not considered official upstream kernel releases; read
+      <ulink url='https://kernel.org/category/releases.html'/> for the
+      details.</para>
 @y
       <para>
       カーネルのバージョンを指定しているのは、<xref
       linkend="chapter-cross-tools"/> と <xref
       linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからです。
       こうすると古いカーネルに対する対応コードが無効となり、コンパイルした <application>glibc</application> が若干早く、また軽量になります。
-      2023 年 6 月時点、カーネル開発者によってサポートされる、もっとも古いカーネルバージョンは &min-kernel; です。
+      2024 年 2 月時点、カーネル開発者によってサポートされる、もっとも古いカーネルバージョンは &min-kernel; です。
+      &min-kernel; よりも古いカーネルリリースであっても、サードパーティチームによってサポートされているものもあります。
+      ただしそういったものは、公式のカーネルリリースとは認められません。
+      詳しくは <ulink url='https://kernel.org/category/releases.html'/> を参照してください。
       </para>
 @z
 
