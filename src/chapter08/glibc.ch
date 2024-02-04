@@ -341,12 +341,13 @@
 @z
 
 @x
-        Then continue to run the <command>make install</command> command
-        and the <command>sed</command> command against
-        <filename>/usr/bin/ldd</filename>.  Once they are finished, reboot
-        the system immediately.
+        Then continue to run the <command>make install</command> command,
+        the <command>sed</command> command against
+        <filename>/usr/bin/ldd</filename>, and the commands to install
+        the locales.  Once they are finished, reboot the system
+        immediately.
 @y
-        <command>make install</command> コマンドを実行し、<filename>/usr/bin/ldd</filename> に対する <command>sed</command> コマンドを実行します。
+        <command>make install</command> コマンド、<filename>/usr/bin/ldd</filename> に対する <command>sed</command> コマンド、ロケールをインストールするコマンドを順に実行します。
         ここまで行ったら即座にシステムを再起動してください。
 @z
 

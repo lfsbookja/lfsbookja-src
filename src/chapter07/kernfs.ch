@@ -141,12 +141,13 @@
 
 @x
       <para>In some host systems, <filename>/dev/shm</filename> is a
-      symbolic link to <filename class="directory">/run/shm</filename>.
+      symbolic link to a directory, typically
+      <filename class="directory">/run/shm</filename>.
       The /run tmpfs was mounted above so in this case only a
       directory needs to be created.</para>
 @y
       <para>
-      ホストシステムによっては <filename>/dev/shm</filename> が <filename
+      ホストシステムによっては <filename>/dev/shm</filename> が通常 <filename
       class="directory">/run/shm</filename> へのシンボリックリンクになっているものがあります。
       上の作業にて /run tmpfs がマウントされましたが、これはこのディレクトリを生成する必要がある時のみです。
       </para>
