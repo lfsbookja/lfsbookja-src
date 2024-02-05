@@ -144,12 +144,12 @@
       symbolic link to a directory, typically
       <filename class="directory">/run/shm</filename>.
       The /run tmpfs was mounted above so in this case only a
-      directory needs to be created.</para>
+      directory needs to be created with the correct permissions.</para>
 @y
       <para>
       ホストシステムによっては <filename>/dev/shm</filename> が通常 <filename
       class="directory">/run/shm</filename> へのシンボリックリンクになっているものがあります。
-      上の作業にて /run tmpfs がマウントされましたが、これはこのディレクトリを生成する必要がある時のみです。
+      上の作業にて /run tmpfs がマウントされましたが、これを行うのはこのディレクトリを適切なパーミッションにより生成する必要がある場合のみです。
       </para>
 @z
 
