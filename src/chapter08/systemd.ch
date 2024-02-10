@@ -33,10 +33,13 @@
 
 @x
     <para>Now fix a security vulnerability in the DNSSEC verification of
-    <command>systemd-resolved</command>:</para>
+    <command>systemd-resolved</command> and a bug breaking running
+    <command>systemd-analyze verify</command> on an instantiated systemd
+    unit:</para>
 @y
     <para>
     <command>systemd-resolved</command> の DNSSEC 検証におけるセキュリティぜい弱性を修正します。
+    またインスタンス化された systemd ユニット上において、実行中の <command>systemd-analyze verify</command> が壊れてしまうバグを修正します。
     </para>
 @z
 

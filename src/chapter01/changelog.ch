@@ -38,6 +38,23 @@
 @z
 
 @x
+      <para>2024-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Fix a bug in systemd breaking running
+          systemd-analyze on an instantiated systemd unit.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - インスタンス化された systemd ユニット上において、実行中の systemd-analyze が壊れてしまう systemd のバグを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-02-02</para>
       <itemizedlist>
         <listitem>

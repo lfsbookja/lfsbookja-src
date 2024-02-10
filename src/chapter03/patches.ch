@@ -121,7 +121,7 @@
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @z
 
-@x Systemd Upstream Patch
+@x Systemd Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
