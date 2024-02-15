@@ -54,6 +54,14 @@
 @z
 
 @x
+    <para>One test in the "ps" tests is known to fail.</para>
+@y
+    <para>
+    "ps" テストの中の 1 つは失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

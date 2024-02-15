@@ -22,14 +22,6 @@
 @z
 
 @x
-    <para>Fix a regression in pkgconf-2.1.0 breaking BLFS packages:</para>
-@y
-    <para>
-    pkgconf-2.1.0 における機能減退が BLFS パッケージに影響するため修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Pkgconf for compilation:</para>
 @y
     <para>&PreparePackage1;Pkgconf&PreparePackage2;</para>

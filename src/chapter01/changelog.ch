@@ -38,6 +38,98 @@
 @z
 
 @x
+      <para>2024-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.3.2.  Fixes
+          <ulink url='&lfs-ticket-root;5442'>#5442</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-1.3.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5442'>#5442</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2024-02-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.14.5.  Fixes
+          <ulink url='&lfs-ticket-root;5437'>#5437</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-69.1.0 (Python module).  Fixes
+          <ulink url='&lfs-ticket-root;5439'>#5439</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to python-3.12.2.  Fixes
+          <ulink url='&lfs-ticket-root;5434'>#5434</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-2.1.1.  Fixes
+          <ulink url='&lfs-ticket-root;5432'>#5432</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to MarkupSafe-2.1.5 (Python module).  Fixes
+          <ulink url='&lfs-ticket-root;5431'>#5431</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.06.  Fixes
+          <ulink url='&lfs-ticket-root;5438'>#5438</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.6.0.  Fixes
+          <ulink url='&lfs-ticket-root;5435'>#5435</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.7.4.  Fixes
+          <ulink url='&lfs-ticket-root;5433'>#5433</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-02-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - shadow-4.14.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5437'>#5437</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - (Python モジュール) setuptools-69.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5439'>#5439</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - python-3.12.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5434'>#5434</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-2.1.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5432'>#5432</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - (Python モジュール) MarkupSafe-2.1.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5431'>#5431</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.06 へのアップデート。
+          <ulink url='&lfs-ticket-root;5438'>#5438</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.6.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5435'>#5435</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.7.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5433'>#5433</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-02-10</para>
       <itemizedlist>
         <listitem>

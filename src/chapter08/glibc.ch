@@ -193,6 +193,15 @@
 @z
 
 @x
+        <para>Three <emphasis>nptl/tst-thread-affinity*</emphasis>
+        tests are known to fail.</para>
+@y
+        <para>
+        3 つの <emphasis>nptl/tst-thread-affinity*</emphasis> テストが失敗します。
+        </para>
+@z
+
+@x
         <para><emphasis>misc/tst-ttyname</emphasis>
         is known to fail in the LFS chroot environment.</para>
 @y
