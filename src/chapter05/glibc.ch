@@ -314,9 +314,10 @@
     </para>
 @z
 
-%------------------
-% Multilib - 32bit
-%------------------
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
 @x
     <title>Building Glibc - 32bit</title>
 @y
@@ -406,9 +407,10 @@
       </para>
 @z
 
-%-------------------
-% Multilib - x32bit
-%-------------------
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
 @x
     <title>Building Glibc - x32bit</title>
 @y
