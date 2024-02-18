@@ -24,18 +24,13 @@
 @z
 
 @x
-    <para>
        The <command>file</command> command on the build host needs
-       to be the same version as the one we are building in order to
-       create the signature file. Run the following commands to make a
-       temporary copy of the <command>file</command> command:
-    </para>
+       to be same version as the one we are building in order to
+       create the signature file. Run the following commands to build it:
 @y
-    <para>
-    ホストシステム上の <command>file</command> コマンドは、これから生成する同コマンドと同一バージョンでなければなりません。
-    これはシグニチャーファイル生成のために必要となります。
-    そこで以下のコマンドを実行して、<command>file</command> コマンドの一時的なコピーを生成します。
-    </para>
+       ホストシステム上の <command>file</command> コマンドは、これから生成する同コマンドと同一バージョンでなければなりません。
+       これはシグニチャーファイル生成のために必要となります。
+       そこで以下のコマンドを実行して、これを生成します。
 @z
 
 @x
@@ -74,15 +69,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Remove the libtool archive file because it is harmful for cross
-    compilation:</para>
-@y
-    <para>
-    クロスコンパイルにとっては libtool アーカイブファイルが邪魔になるため削除します。
-    </para>
 @z
 
 @x

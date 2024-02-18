@@ -25,24 +25,6 @@
 @z
 
 @x
-    <para>First fix the location of udev rules in the .pc file:</para>
-@y
-    <para>
-    はじめに .pc ファイル内の udev ルールの場所を修正します。
-    </para>
-@z
-
-@x
-    <para>Remove an unneeded group
-    <systemitem class="groupname">sgx</systemitem>, from the default udev
-    rules:</para>
-@y
-    <para>
-    不要なグループ <systemitem class="groupname">sgx</systemitem> を、デフォルトの udev ルールから削除します。
-    </para>
-@z
-
-@x
     <para>Prepare Eudev for compilation:</para>
 @y
     <para>&PreparePackage1;Eudev&PreparePackage2;</para>
@@ -112,17 +94,6 @@
       <secondary>configuring</secondary>
 @y
       <secondary>設定</secondary>
-@z
-
-@x
-      The default udev rule installed by Eudev would allow all users to
-      access <filename class='devicefile'>/dev/kvm</filename>.  The editors
-      consider it dangerous.  Create a configuration file to override it:
-@y
-      Eudev によってインストールされるデフォルトの udev ルールは、あらゆるユーザーが <filename
-      class='devicefile'>/dev/kvm</filename> にアクセスできるようにします。
-      当編集者としてこれは危険なことと考えています。
-      そこで以下のように設定ファイルを生成してこれを上書き設定します。
 @z
 
 @x

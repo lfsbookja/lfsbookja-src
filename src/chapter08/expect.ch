@@ -74,48 +74,10 @@
 @z
 
 @x
-      <para>The test suite for Expect is considered critical.
-      Do not skip it under any circumstances.</para>
-@y
-      <para>
-      Expect におけるテストスイートは重要なものとされます。
-      どのような場合であっても必ず実行してください。
-      </para>
-@z
-
-@x
     <para>To test the results, issue:</para>
 @y
     <para>
     ビルド結果をテストする場合は、以下を実行します。
-    </para>
-@z
-
-@x
-    <para>If any test fails with the message
-    <quote><computeroutput>The system has no more ptys.  Ask your system
-    administrator to create more</computeroutput></quote>, it indicates
-    you've not mounted the
-    <systemitem class="filesystem">devpts</systemitem> file system
-    correctly.  You need to exit from the chroot environment, read
-    <xref linkend='ch-tools-kernfs'/> again, and ensure the
-    <systemitem class="filesystem">devpts</systemitem> file system (and
-    other virtual kernel file systems) mounted correctly.  Then reenter
-    the chroot environment following <xref linkend='ch-tools-chroot'/>.
-    This issue needs to be resolved before continuing.</para>
-@y
-    <para>
-    テストの中で 
-    <quote><computeroutput>The system has no more ptys.  Ask your system
-    administrator to create more</computeroutput></quote>
-    というメッセージが出力されて失敗したものがあった場合、それは <systemitem
-    class="filesystem">devpts</systemitem> ファイルシステムが適切にマウントされていないことを表します。
-    chroot 環境からいったん抜け出て、もう一度 <xref
-    linkend='ch-tools-kernfs'/> をお読みください。
-    そして <systemitem
-    class="filesystem">devpts</systemitem> ファイルシステム（それに加えて他の仮想カーネルファイルシステム）を適切にマウントしてください。
-    <xref linkend='ch-tools-chroot'/> に従って chroot 環境に再度入ってください。
-    このメッセージは、先に進む前に解消しておくことが必要です。
     </para>
 @z
 

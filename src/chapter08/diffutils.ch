@@ -73,10 +73,11 @@
 @z
 
 @x cmp
-          <para>Compares two files and reports any differences byte by byte</para>
+          <para>Compares two files and reports whether or in which bytes they
+          differ</para>
 @y
           <para>
-          二つのファイルを比較して、何バイト異なるかを示します。
+          二つのファイルを比較して、どこが違うか、何バイト異なるかを示します。
           </para>
 @z
 

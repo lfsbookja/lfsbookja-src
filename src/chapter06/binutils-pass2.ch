@@ -34,9 +34,9 @@
 @z
 
 @x
-    <para>Binutils ships an outdated copy of libtool in the tarball.  It lacks
-    sysroot support, so the produced binaries will be mistakenly linked to
-    libraries from the host distro.  Work around this issue:</para>
+    <para>Binutils ships an outdated libtool copy in the tarball.  It lacks
+    sysroot support so the produced binaries will be mistakenly linked to
+    libraries from the host distro.  Workaround this issue:</para>
 @y
     <para>
     Binutils の tarball では、古い libtool のコピーが提供されています。
@@ -65,54 +65,6 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-%@x CC=$LFS_TGT-gcc AR=$LFS_TGT-ar RANLIB=$LFS_TGT-ranlib
-%          <para>Because this is really a native build of Binutils, setting these
-%          variables ensures that the build system uses the cross-compiler and
-%          associated tools instead of the ones on the host system.</para>
-%@y
-%          <para>
-%          Binutils をネイティブにビルドすることが目的なので、ホストシステムに存在しているクロスコンパイラーや関連ツールは使わず、ビルドしているシステム内のものを用いるように指定します。
-%          </para>
-%@z
-
-%@x --with-lib-path=/tools/lib
-%          <para>This tells the configure script to specify the library
-%          search path during the compilation of Binutils, resulting in
-%          <filename class="directory">/tools/lib</filename> being passed
-%          to the linker. This prevents the linker from searching through
-%          library directories on the host.</para>
-%@y
-%          <para>
-%          configure スクリプトに対して Binutils のコンパイル中でのライブラリパスを指定します。
-%          リンカーに対して <filename class="directory">/tools/lib</filename> ディレクトリを指定するものです。
-%          こうすることでリンカーがホスト上のライブラリを検索しないようにします。
-%          </para>
-%@z
-
-%@x --with-sysroot
-%          <para>This defines a default (non-existent) sysroot directory
-%          <filename class="directory">/tools/$LFS_TGT/sys-root</filename>.
-%          It is useful when looking for shared objects which are required by
-%          other shared objects explicitly included on the linker's command
-%          line. Those objects are searched into the directories listed in
-%          <filename>&lt;sysroot&gt;/etc/ld.so.conf</filename>, and failing
-%          that, into the linker search path, which is right. If this switch
-%          is not given, <filename>/etc/ld.so.conf</filename> on the host
-%          is used, that is, programs may be linked to libraries on
-%          the host, which we want to avoid.</para>
-%@y
-%          <para>
-%          これはデフォルトの（存在していない）sysroot ディレクトリ <filename
-%          class="directory">/tools/$LFS_TGT/sys-root</filename> を定義するものです。
-%          これは、リンカーのコマンドライン上に指定された共有オブジェクトに対し、そこから必要とされる共有オブジェクトを見つけ出せるようになります。
-%          共有オブジェクトは <filename>&lt;sysroot&gt;/etc/ld.so.conf</filename> に設定されたディレクトリ内から検索され、
-%          検索に失敗した場合はリンカーの検索パスが検索されます。
-%          この動きは合理的なものです。
-%          このスイッチが仮に設定されていなかったら、ホスト上の <filename>/etc/ld.so.conf</filename> が用いられます。
-%          つまりホスト上のライブラリにリンクされるプログラムが出てくることとなり、避けなければならないことです。
-%          </para>
-%@z
-
 @x --enable-shared
           <para>Builds <filename
           class="libraryfile">libbfd</filename> as a shared library.</para>
@@ -123,8 +75,8 @@
 @z
 
 @x --enable-64-bit-bfd
-          <para>Enables 64-bit support (on hosts with smaller word sizes).
-          This may not be needed on 64-bit systems, but it does no harm.</para>
+          <para>Enables 64-bit support (on hosts with narrower word sizes).
+          May not be needed on 64-bit systems, but does no harm.</para>
 @y
           <para>
           64 ビットサポートを有効にします（ホスト上にて、より小さなワードサイズとします）。
@@ -143,15 +95,6 @@
 @y
     <para>
     &InstallThePackage;
-    </para>
-@z
-
-@x
-    <para>Remove the libtool archive files because they are harmful for
-    cross compilation, and remove unnecessary static libraries:</para>
-@y
-    <para>
-   クロスコンパイルにとっては libtool アーカイブファイルが邪魔になるため削除し、不要なスタティックライブラリも削除します。
     </para>
 @z
 

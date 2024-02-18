@@ -10,14 +10,14 @@
 @z
 
 @x
-    <para>The E2fsprogs package contains the utilities for handling the
+    <para>The e2fsprogs package contains the utilities for handling the
     <systemitem class="filesystem">ext2</systemitem> file system. It also
     supports the <systemitem class="filesystem">ext3</systemitem> and
     <systemitem class="filesystem">ext4</systemitem> journaling
     file systems.</para>
 @y
     <para>
-    E2fsprogs パッケージは <systemitem
+    e2fsprogs パッケージは <systemitem
     class="filesystem">ext2</systemitem> ファイルシステムを扱うユーティリティを提供します。これは同時に <systemitem
     class="filesystem">ext3</systemitem>、<systemitem
     class="filesystem">ext4</systemitem> ジャーナリングファイルシステムもサポートします。
@@ -31,18 +31,18 @@
 @z
 
 @x
-    <para>The E2fsprogs documentation recommends that the package be built in
+    <para>The e2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
     <para>
-    E2fsprogs パッケージは、ソースディレクトリ内にサブディレクトリを作ってビルドすることが推奨されています。
+    e2fsprogs パッケージは、ソースディレクトリ内にサブディレクトリを作ってビルドすることが推奨されています。
     </para>
 @z
 
 @x
-    <para>Prepare E2fsprogs for compilation:</para>
+    <para>Prepare e2fsprogs for compilation:</para>
 @y
-    <para>&PreparePackage1;E2fsprogs&PreparePackage2;</para>
+    <para>&PreparePackage1;e2fsprogs&PreparePackage2;</para>
 @z
 
 @x
@@ -61,11 +61,11 @@
 @z
 
 @x --disable-*
-          <para>These prevent building and installing the
+          <para>This prevents e2fsprogs from building and installing the
           <systemitem class="library">libuuid</systemitem> and
           <systemitem class="library">libblkid</systemitem> libraries, the
           <systemitem class="daemon">uuidd</systemitem> daemon, and the
-          <command>fsck</command> wrapper; util-linux installs more
+          <command>fsck</command> wrapper, as util-linux installs more
           recent versions.</para>
 @y
           <para>
@@ -91,11 +91,10 @@
 @z
 
 @x
-    <para>One test named <filename>m_assume_storage_prezeroed</filename>
-    is known to fail.</para>
+    <para>One test, u_direct_io, is known to fail on some systems.</para>
 @y
     <para>
-    <filename>m_assume_storage_prezeroed</filename> というテストが１つだけ失敗します。
+    u_direct_io というテストが１つだけ、特定のシステムにおいては失敗します。
     </para>
 @z
 
@@ -136,37 +135,6 @@
     <para>
     必要なら、以下のコマンドを実行して追加のドキュメントをインストールします。
     </para>
-@z
-
-@x
-    <title>Configuring E2fsprogs</title>
-@y
-    <title>&Configuring1;E2fsprogs&Configuring2;</title>
-@z
-
-@x
-      <filename>/etc/mke2fs.conf</filename> contains the default value of
-      various command line options of <command>mke2fs</command>.  You may
-      edit the file to make the default values suitable for your need.
-      For example, some utilities (not in LFS or BLFS) cannot recognize a
-      <systemitem class='filesystem'>ext4</systemitem> file system with
-      <literal>metadata_csum_seed</literal> feature enabled.
-      <emphasis role='bold'>If</emphasis> you need such an utility, you may
-      remove the feature from the default
-      <systemitem class='filesystem'>ext4</systemitem> feature list with the
-      command:
-@y
-      <filename>/etc/mke2fs.conf</filename> では <command>mke2fs</command> のさまざまなコマンドラインオプションに対するデフォルト値が設定されてます。
-      このファイルにおいて、必要となるデフォルト値を設定することができます。
-      たとえば（LFS や BLFS には含まれていない）ユーティリティーの中には、<literal>metadata_csum_seed</literal> 機能が有効になった <systemitem
-      class='filesystem'>ext4</systemitem> ファイルシステムを認識できないものがあります。
-      <emphasis role='bold'>もし</emphasis> そのようなユーティリティーを必要とする場合は、以下のコマンドを通じて <systemitem class='filesystem'>ext4</systemitem> のデフォルト機能を取り除くことができます。
-@z
-
-@x
-      Read the man page <filename>mke2fs.conf(5)</filename> for details.
-@y
-      詳しくは man ページ <filename>mke2fs.conf(5)</filename> を参照してください。
 @z
 
 @x
@@ -225,11 +193,16 @@
 @z
 
 @x chattr
-          <para>Changes the attributes of files on <systemitem
-          class="filesystem">ext{234}</systemitem> file systems</para>
+          <para>Changes the attributes of files on an <systemitem
+          class="filesystem">ext2</systemitem> file system; it also
+          changes <systemitem class="filesystem">ext3</systemitem>
+          file systems, the journaling version of <systemitem
+          class="filesystem">ext2</systemitem> file systems</para>
 @y
           <para>
-          <systemitem class="filesystem">ext{234}</systemitem> ファイルシステム上のファイル属性を変更します。
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上のファイル属性を変更します。
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステムのジャーナリング版である <systemitem
+          class="filesystem">ext3</systemitem> ファイルシステムにおいても変更を行います。
           </para>
 @z
 
@@ -247,12 +220,12 @@
 
 @x debugfs
           <para>A file system debugger; it can be used to examine and change
-          the state of <systemitem class="filesystem">ext{234}</systemitem>
-          file systems</para>
+          the state of an <systemitem class="filesystem">ext2</systemitem>
+          file system</para>
 @y
           <para>
           ファイルシステムデバッガー。
-          これは <systemitem class="filesystem">ext{234}</systemitem> ファイルシステムの状態を調査し変更することができます。
+          これは <systemitem class="filesystem">ext2</systemitem> ファイルシステムの状態を調査し変更することができます。
           </para>
 @z
 
@@ -274,92 +247,84 @@
 @z
 
 @x e2fsck
-          <para>Is used to check and optionally repair <systemitem
-          class="filesystem">ext{234}</systemitem> file systems</para>
+          <para>Is used to check, and optionally repair <systemitem
+          class="filesystem">ext2</systemitem> file systems and <systemitem
+          class="filesystem">ext3</systemitem> file systems</para>
 @y
           <para>
-          <systemitem class="filesystem">ext{234}</systemitem> ファイルシステムをチェックし、必要なら修復を行うことができます。
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステムと <systemitem
+          class="filesystem">ext3</systemitem> ファイルシステムをチェックし、必要なら修復を行うことができます。
           </para>
 @z
 
 @x e2image
           <para>Is used to save critical <systemitem
-          class="filesystem">ext{234}</systemitem> file system data to a file</para>
+          class="filesystem">ext2</systemitem> file system data to a file</para>
 @y
           <para>
-          <systemitem class="filesystem">ext{234}</systemitem> ファイルシステムの重要なデータをファイルに保存します。
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステムの重要なデータをファイルに保存します。
           </para>
 @z
 
 @x e2label
           <para>Displays or changes the file system label on the <systemitem
-          class="filesystem">ext{234}</systemitem> file system on a given
+          class="filesystem">ext2</systemitem> file system present on a given
           device</para>
 @y
           <para>
           指定されたデバイス上にある <systemitem
-          class="filesystem">ext{234}</systemitem> ファイルシステムのラベルを表示または変更します。
+          class="filesystem">ext2</systemitem> ファイルシステムのラベルを表示または変更します。
           </para>
 @z
 
 @x e2mmpstatus
-          <para>Checks MMP (Multiple Mount Protection) status of an <systemitem
-          class="filesystem">ext4</systemitem> file system</para>
+          <para>Checks MMP status of an ext4 filesystem</para>
 @y
           <para>
-          <systemitem
-          class="filesystem">ext4</systemitem> ファイルシステムの MMP（Multiple Mount Protection）ステータスをチェックします。
+          ext4 ファイルシステムの MMP ステータスをチェックします。
           </para>
 @z
 
 @x e2scrub
-          <para>Checks the contents of a mounted <systemitem
-              class="filesystem">ext{234}</systemitem> file system</para>
+          <para>Checks the contents of a mounted ext[234] filesystem</para>
 @y
           <para>
-          マウントされている <systemitem
-              class="filesystem">ext{234}</systemitem> ファイルシステムの内容をチェックします。
+          マウントされている ext[234] ファイルシステムの内容をチェックします。
           </para>
 @z
 
 @x e2scrub_all
-          <para>Checks all mounted <systemitem class="filesystem">ext{234}</systemitem>
-          file systems for errors</para>
+          <para>Checks all mounted ext[234] filesystems for errors</para>
 @y
           <para>
-          マウントされているすべての <systemitem class="filesystem">ext{234}</systemitem> ファイルシステムのエラーをチェックします。
+          マウントされている ext[234] ファイルシステムのエラーをチェックします。
           </para>
 @z
 
 @x e2undo
-          <para>Replays the undo log for an <systemitem
-          class="filesystem">ext{234}</systemitem> file system
-          found on a device. [This can be used to undo a failed operation by an
-          E2fsprogs program.]</para>
+          <para>Replays the undo log undo_log for an ext2/ext3/ext4 filesystem
+          found on a device [This can be used to undo a failed operation by an
+          e2fsprogs program.]</para>
 @y
           <para>
-          デバイス上にある <systemitem
-          class="filesystem">ext{234}</systemitem> ファイルシステムの undo ログを再実行します。
-          （これは E2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。）
+          デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
+          これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
           </para>
 @z
 
 @x e4crypt
-          <para><systemitem class="filesystem">Ext4</systemitem>
-          file system encryption utility</para>
+          <para>Ext4 filesystem encryption utility</para>
 @y
           <para>
-          <systemitem class="filesystem">Ext4</systemitem> ファイルシステムの暗号化ユーティリティー。
+          ext4 ファイルシステムの暗号化ユーティリティー。
           </para>
 @z
 
 @x e4defrag
-          <para>Online defragmenter for <systemitem
-          class="filesystem">ext4</systemitem> file systems</para>
+          <para>Online defragmenter for ext4 filesystems</para>
 @y
           <para>
-          <systemitem
-          class="filesystem">ext4</systemitem> ファイルシステムに対するオンラインのデフラグプログラム。
+          ext4 ファイルシステムにたいするオンラインのデフラグプログラム。
           </para>
 @z
 
@@ -433,12 +398,14 @@
 @z
 
 @x mke2fs
-          <para>Creates an <systemitem class="filesystem">ext{234}</systemitem>
-          file system on the given device</para>
+          <para>Creates an <systemitem class="filesystem">ext2</systemitem>
+          or <systemitem class="filesystem">ext3</systemitem> file system on
+          the given device</para>
 @y
           <para>
           指定されたデバイス上に <systemitem
-          class="filesystem">ext{234}</systemitem> ファイルシステムを生成します。
+          class="filesystem">ext2</systemitem> ファイルシステム、または <systemitem
+          class="filesystem">ext3</systemitem> ファイルシステムを生成します。
           </para>
 @z
 
@@ -476,33 +443,33 @@
 @z
 
 @x mklost+found
-          <para>Creates a <filename class="directory">lost+found</filename>
-          directory on an <systemitem class="filesystem">ext{234}</systemitem> file
+          <para>Used to create a <filename class="directory">lost+found</filename>
+          directory on an <systemitem class="filesystem">ext2</systemitem> file
           system; it pre-allocates disk blocks to this directory to lighten the
           task of <command>e2fsck</command></para>
 @y
           <para>
-          <systemitem class="filesystem">ext{234}</systemitem> ファイルシステム上に <filename
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上に <filename
           class="directory">lost+found</filename> ディレクトリを作成します。
           これはそのディレクトリ内にあらかじめディスクブロックを割り当てておくことにより <command>e2fsck</command> コマンド処理を軽減させます。
           </para>
 @z
 
 @x resize2fs
-          <para>Can be used to enlarge or shrink <systemitem
-          class="filesystem">ext{234}</systemitem> file systems</para>
+          <para>Can be used to enlarge or shrink an <systemitem
+          class="filesystem">ext2</systemitem> file system</para>
 @y
           <para>
-          <systemitem class="filesystem">ext{234}</systemitem> ファイルシステムを拡張または縮小するために利用します。
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステムを拡張または縮小するために利用します。
           </para>
 @z
 
 @x tune2fs
-          <para>Adjusts tunable file system parameters on <systemitem
-          class="filesystem">ext{234}</systemitem> file systems</para>
+          <para>Adjusts tunable file system parameters on an <systemitem
+          class="filesystem">ext2</systemitem> file system</para>
 @y
           <para>
-          <systemitem class="filesystem">ext{234}</systemitem> ファイルシステム上にて調整可能なシステムパラメーターを調整します。
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上にて調整可能なシステムパラメーターを調整します。
           </para>
 @z
 
@@ -524,12 +491,12 @@
 @z
 
 @x libext2fs
-          <para>Contains routines to enable user-level programs to manipulate
-          <systemitem class="filesystem">ext{234}</systemitem> file systems</para>
+          <para>Contains routines to enable user-level programs to manipulate an
+          <systemitem class="filesystem">ext2</systemitem> file system</para>
 @y
           <para>
           ユーザーレベルのプログラムが <systemitem
-          class="filesystem">ext{234}</systemitem> ファイルシステムを操作可能とするためのルーチンを提供します。
+          class="filesystem">ext2</systemitem> ファイルシステムを操作可能とするためのルーチンを提供します。
           </para>
 @z
 

@@ -96,11 +96,11 @@
 
 @x --prefix=$LFS/tools
           <para>This tells the configure script to prepare to install the
-          Binutils programs in the <filename
+          binutils programs in the <filename
           class="directory">$LFS/tools</filename> directory.</para>
 @y
           <para>
-          configure スクリプトに対して Binutils プログラムを <filename
+          configure スクリプトに対して binutils プログラムを <filename
           class="directory">$LFS/tools</filename> ディレクトリ以下にインストールすることを指示します。
           </para>
 @z
@@ -133,16 +133,6 @@
 @y
           <para>
           一時的なツール構築にあたっては i18n 国際化は行わないことを指示します。
-          </para>
-@z
-
-@x --enable-gprofng=no
-          <para>This disables building gprofng which is not needed for the
-          temporary tools.</para>
-@y
-          <para>
-          これは gprofng のビルドを無効にします。
-          gprofng は一時的ツールにおいては不要であるからです。
           </para>
 @z
 

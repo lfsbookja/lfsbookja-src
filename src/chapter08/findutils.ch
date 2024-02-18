@@ -10,19 +10,15 @@
 @z
 
 @x
-    <para>The Findutils package contains programs to find files. Programs
-    are provided to search through all the files in a directory tree and to
+    <para>The Findutils package contains programs to find files. These programs
+    are provided to recursively search through a directory tree and to
     create, maintain, and search a database (often faster than the recursive
-    find, but unreliable unless the database has been updated recently).
-    Findutils also supplies the <command>xargs</command> program, which
-    can be used to run a specified command on each file selected by a search.</para>
+    find, but is unreliable if the database has not been recently updated).</para>
 @y
     <para>
     Findutils パッケージはファイル検索を行うプログラムを提供します。
-    このプログラムはディレクトリツリーを検索したり、データベースの生成、保守、検索を行います。
+    このプログラムはディレクトリツリーを再帰的に検索したり、データベースの生成、保守、検索を行います。
     (データベースによる検索は再帰的検索に比べて処理速度は速いものですが、データベースが最新のものに更新されていない場合は信頼できない結果となります。)
-    Findutils では <command>xargs</command> プログラムも提供します。
-    このプログラムは、検索された複数ファイルの個々に対して、指定されたコマンドを実行するために用いられます。
     </para>
 @z
 
@@ -53,12 +49,12 @@
 @z
 
 @x
-          <para>This option moves the <command>locate</command>
-          database to <filename class="directory">/var/lib/locate</filename>,
-          which is the FHS-compliant location.</para>
+          <para>This option changes the location of the <command>locate</command>
+          database to be in <filename class="directory">/var/lib/locate</filename>,
+          which is FHS-compliant.</para>
 @y
           <para>
-          このオプションは <command>locate</command> データベースの場所を FHS コンプライアンスに準拠するディレクトリ <filename
+          <command>locate</command> データベースの場所を FHS コンプライアンスに準拠するディレクトリ <filename
           class="directory">/var/lib/locate</filename> に変更します。
           </para>
 @z

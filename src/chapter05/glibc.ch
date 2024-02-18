@@ -29,20 +29,20 @@
 
 @x
     <para>First, create a symbolic link for LSB compliance. Additionally,
-    for x86_64, create a compatibility symbolic link required for proper
+    for aarch64, create a compatibility symbolic link required for proper
     operation of the dynamic library loader:</para>
 @y
     <para>
     はじめに LSB コンプライアンスに合うように、シンボリックリンクを生成します。
-    さらに x86_64 向けとして、互換のシンボリックリンクを生成して、ダイナミックライブラリローダーが適切に動作するようにします。
+    さらに aarch64 向けとして、互換のシンボリックリンクを生成して、ダイナミックライブラリローダーが適切に動作するようにします。
     </para>
 @z
 
 @x
         The above command is correct.  The <command>ln</command> command has
-        several syntactic versions, so be sure to check
+        a few syntactic versions, so be sure to check
         <command>info coreutils ln</command> and <filename>ln(1)</filename>
-        before reporting what may appear to be an error.
+        before reporting what you may think is an error.
 @y
         上記のコマンドに間違いはありません。
         <command>ln</command> コマンドにはいくつか文法の異なるバージョンがあります。
@@ -50,7 +50,7 @@
 @z
 
 @x
-    <para>Some of the Glibc programs use the non-FHS-compliant
+    <para>Some of the Glibc programs use the non-FHS compliant
     <filename class="directory">/var/db</filename> directory to store their
     runtime data. Apply the following patch to make such programs store their
     runtime data in the FHS-compliant locations:</para>
@@ -132,27 +132,12 @@
 
 @x libc_cv_slibdir=/usr/lib
           <para>This ensures that the library is installed in /usr/lib instead
-          of the default /lib64 on 64-bit machines.</para>
+          of the default /lib64 on 64 bit machines.</para>
 @y
           <para>
           この指定は 64 ビットマシンにおいて、ライブラリのインストール先をデフォルトの /lib64 ではなく /usr/lib とします。
           </para>
 @z
-
-%@x libc_cv_include_x86_isa_level=no
-%          <para>This disables <quote>x86 ISA needed</quote> property in
-%          Glibc libraries.  Use it <emphasis role="bold">if</emphasis>
-%          you are building Glibc with <option>-march</option> option in
-%          <envar>CFLAGS</envar>, to workaround an issue in Glibc-2.33
-%          breaking it.</para>
-%@y
-%          <para>
-%          これは Glibc ライブラリ内の<quote>x86 ISA needed</quote>プロパティを無効にします。
-%          Glibc のビルド時に <envar>CFLAGS</envar> として <option>-march</option> を設定している <emphasis
-%          role="bold">場合に限っては</emphasis> これを有効にします。
-%          そうすることで Glibc-2.33 における問題が回避できます。
-%          </para>
-%@z
 
 @x
     <para>During this stage the following warning might appear:</para>
@@ -165,7 +150,7 @@
 @x
     <para>The missing or incompatible <command>msgfmt</command> program is
     generally harmless. This <command>msgfmt</command> program is part of the
-    Gettext package, which the host distribution should provide.</para>
+    Gettext package which the host distribution should provide.</para>
 @y
     <para>
     <command>msgfmt</command> プログラムがない場合 (missing) や互換性がない場合 (incompatible) でも特に問題はありません。
@@ -175,8 +160,8 @@
 
 @x
     <note><para>There have been reports that this package may fail when
-    building as a "parallel make".  If that occurs, rerun the make command
-    with the "-j1" option.</para></note>
+    building as a "parallel make".  If this occurs, rerun the make command
+    with a "-j1" option.</para></note>
 @y
     <note><para>本パッケージは "並行ビルド (parallel make)" を行うとビルドに失敗するとの報告例があります。
     もしビルドに失敗した場合は make コマンドに "-j1" オプションをつけて再ビルドしてください。
@@ -199,14 +184,14 @@
     <warning><para>If <envar>LFS</envar> is not properly set, and despite the
     recommendations, you are building as
     <systemitem class="username">root</systemitem>, the next command will
-    install the newly built Glibc to your host system, which will almost
-    certainly render it unusable. So double-check that the environment is
-    correctly set, and that you are not &root;, before running the following command.</para></warning>
+    install the newly built glibc to your host system, which most likely
+    will render it unusable. So double check that the environment is
+    correctly set, before running the following command.</para></warning>
 @y
     <warning><para>
-    <envar>LFS</envar> が適切に設定されていない状態で、推奨する方法とは異なり <systemitem class="username">root</systemitem> によってビルドを行うと、次のコマンドはビルドした Glibc をホストシステムにインストールしてしまいます。
+    <envar>LFS</envar> が適切に設定されていない状態で、推奨する方法とは異なり <systemitem class="username">root</systemitem> によってビルドを行うと、次のコマンドはビルドした glibc をホストシステムにインストールしてしまいます。
     これを行ってしまうと、ほぼ間違いなくホストが利用不能になります。
-    したがってその環境変数が適切に設定されていること、&root; ユーザーではないことを確認してから、以下のコマンドを実行してください。
+    したがってその環境変数が適切に設定されていることを確認してから、以下のコマンドを実行してください。
     </para></warning>
 @z
 
@@ -221,8 +206,8 @@
           packages to define the location where the package should be
           installed. If it is not set, it defaults to the root (<filename
           class="directory">/</filename>) directory. Here we specify that
-          the package is installed in <filename class="directory">$LFS
-          </filename>, which will become the root directory in <xref linkend=
+          the package be installed in <filename class="directory">$LFS
+          </filename>, which will become the root after <xref linkend=
           "ch-tools-chroot"/>.</para>
 @y
           <para>
@@ -236,7 +221,7 @@
 @z
 
 @x
-    <para>Fix a hard coded path to the executable loader in the
+    <para>Fix hardcoded path to the executable loader in
     <command>ldd</command> script:</para>
 @y
     <para>
@@ -267,18 +252,18 @@
 
 @x
       <para>Note that for 32-bit machines, the interpreter name will be
-      <filename>/lib/ld-linux.so.2</filename>.</para>
+      <filename>/lib/ld-linux-armhf.so.3</filename>.</para>
 @y
       <para>
-      インタープリター名は 32 ビットマシンの場合 <filename>/lib/ld-linux.so.2</filename> となります。
+      インタープリター名は 32 ビットマシンの場合 <filename>/lib/ld-linux-armhf.so.3</filename> となります。
       </para>
 @z
 
 @x
-      <para>If the output is not as shown above, or there is no output at all,
+      <para>If the output is not shown as above or there was no output at all,
       then something is wrong. Investigate and retrace the steps to find out
       where the problem is and correct it. This issue must be resolved before
-      continuing.</para>
+      continuing on.</para>
 @y
       <para>
       出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
@@ -288,7 +273,7 @@
 @z
 
 @x
-      <para>Once all is well, clean up the test file:</para>
+      <para>Once all is well, clean up the test files:</para>
 @y
       <para>
       すべてが完了したら、テストファイルを削除します。
@@ -296,21 +281,21 @@
 @z
 
 @x
-    <note><para>Building the packages in the next chapter will serve as an
+    <note><para>Building packages in the next chapter will serve as an
     additional check that the toolchain has been built properly. If some
-    package, especially Binutils-pass2 or GCC-pass2, fails to build, it is
+    package, especially binutils-pass2 or gcc-pass2, fails to build, it is
     an indication that something has gone wrong with the
-    preceding Binutils, GCC, or Glibc installations.</para></note>
+    previous Binutils, GCC, or Glibc installations.</para></note>
 @y
     <note><para>
     次節にてビルドするパッケージでは、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
-    特に Binutils 2 回めや GCC 2 回めのビルドに失敗したら、それ以前にインストールしてきた Binutils, GCC, Glibc のいずれかにてビルドがうまくできていないことを意味します。
+    特に binutils 2 回めや gcc 2 回めのビルドに失敗したら、それ以前にインストールしてきた Binutils, GCC, Glibc のいずれかにてビルドがうまくできていないことを意味します。
     </para></note>
 @z
 
 @x
     <para>Now that our cross-toolchain is complete, finalize the installation
-    of the limits.h header. To do this, run a utility provided by the GCC
+    of the limits.h header. For doing so, run a utility provided by the GCC
     developers:</para>
 @y
     <para>

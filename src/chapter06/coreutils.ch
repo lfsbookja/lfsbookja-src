@@ -51,44 +51,11 @@
           </para>
 @z
 
-@x gl_cv_macro_MB_CUR_MAX_good=y
-          <para>This is needed to work around an issue in the gnulib copy
-          shipped by the package which would break cross compilation.</para>
-@y
-          <para>
-          このパッケージが提供する gnulib のコピーが、クロスコンパイルの失敗を引き起こす可能性があるため、それを回避するためにこの指定が必要になります。
-          </para>
-@z
-
 @x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
 @z
-
-%@x
-%    <para>Compilation is now complete. As discussed earlier, running the test
-%    suite is not mandatory for the temporary tools here in this chapter. To run
-%    the Coreutils test suite anyway, issue the following command:</para>
-%@y
-%    <para>
-%    コンパイルが終了しました。
-%    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
-%    しかしテストスイートを実行するなら、以下を実行します。
-%    </para>
-%@z
-
-%@x
-%    <para>The <parameter>RUN_EXPENSIVE_TESTS=yes</parameter> parameter tells the
-%    test suite to run several additional tests that are considered
-%    relatively expensive (in terms of CPU power and memory usage) on some
-%    platforms, but generally are not a problem on Linux.</para>
-%@y
-%    <para>
-%    パラメーター <parameter>RUN_EXPENSIVE_TESTS=yes</parameter> は、テストスイートの実行にあたって (CPU パワーとメモリ使用量の観点で) 比較的負荷の高いテストを追加で実行することを指示します。
-%    特定のプラットフォームに対してのテスト確認となりますが、一般に Linux 上において支障はありません。
-%    </para>
-%@z
 
 @x
     <para>Install the package:</para>
@@ -113,7 +80,7 @@
 @x
     <para>Move programs to their final expected locations. Although this is
     not necessary in this temporary environment, we must do so because some
-    programs hardcode executable locations:</para>
+    programs harcode executable locations:</para>
 @y
     <para>
     プログラムを、最終的に期待されるディレクトリに移動させます。

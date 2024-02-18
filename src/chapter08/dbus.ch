@@ -53,9 +53,9 @@
           <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>
 @z
 @x
-          <para>These cause the PID file and the system bus socket
+          <para>These set the location of the PID file and the system bus socket
           to be in <filename class="directory">/run</filename>, instead of
-          the deprecated <filename class="directory">/var/run</filename>.</para>
+          deprecated <filename class="directory">/var/run</filename>.</para>
 @y
           <para>
           これは PID ファイルとシステムバスソケットの場所を設定するものであり、かつての <filename
@@ -71,22 +71,15 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
-@y
-    <para>ビルド結果をテストする場合は以下を実行します。</para>
-@z
-
-@x
-    <para>Many tests are disabled because they require additional
+    <para>This package does come with a test suite, but it requires several
     packages that are not included in LFS. Instructions for running the
-    comprehensive test suite can be found in
-    <ulink url="&blfs-book;general/dbus.html">the BLFS book</ulink>.</para>
+    test suite can be found in the BLFS book at
+    <ulink url="&blfs-book;general/dbus.html"/>.</para>
 @y
     <para>
-    テストの多くは、LFS に含まれない別のパッケージを必要とするため、無効化されます。
-    テストスイートの実行を分かりやすく説明する手順が
-    <ulink url="&blfs-book;general/dbus.html">BLFS ブック</ulink>
-    に示されています。
+    このパッケージにはテストスイートはありますが、これを実行するには LFS には含まれないパッケージをいくつか必要としています。
+    テストスイートの実行手順は BLFS ブックの <ulink
+    url="&blfs-book;general/dbus.html"/> に説明されています。
     </para>
 @z
 
@@ -126,7 +119,7 @@
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
         dbus-run-session, dbus-send, dbus-test-tool,
         dbus-update-activation-environment, and dbus-uuidgen</seg>
-        <seg>libdbus-1.so</seg>
+        <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
         and /var/lib/dbus</seg>
@@ -134,7 +127,7 @@
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
         dbus-run-session, dbus-send, dbus-test-tool,
         dbus-update-activation-environment, dbus-uuidgen</seg>
-        <seg>libdbus-1.so</seg>
+        <seg>libdbus-1.{a,so}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
         /var/lib/dbus</seg>

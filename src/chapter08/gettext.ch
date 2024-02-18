@@ -41,24 +41,6 @@
 @z
 
 @x
-      <title>The meaning of the make parameter:</title>
-@y
-      <title>&MeaningOfParameter1;make&MeaningOfParameter2;</title>
-@z
-
-@x BISON_LOCALEDIR=/usr/share/locale
-          <para>Since bison is not yet installed in /usr, configure hardcodes
-          the directory containing translations for the bison program (the
-          "locale" directory) as /tools/share/locale. Passing this variable
-           to make allows overriding the choice made by configure.</para>
-@y
-          <para>
-          bison はまだ /usr 配下にインストールされていないため、bison に対するロケールディレクトリを /tools/share/locale にハードコーディングします。
-          make に対するこの変数定義は、configure によって設定された変数を上書きします。
-          </para>
-@z
-
-@x
     <para>To test the results (this takes a long time, around 3 SBUs),
     issue:</para>
 @y
@@ -344,7 +326,7 @@
 @z
 
 @x libasprintf
-          <para>Defines the <emphasis>autosprintf</emphasis> class, which makes
+          <para>defines the <emphasis>autosprintf</emphasis> class, which makes
           C formatted output routines usable in C++ programs, for use with the
           <emphasis>&lt;string&gt;</emphasis> strings and the
           <emphasis>&lt;iostream&gt;</emphasis> streams</para>
@@ -358,11 +340,11 @@
 @z
 
 @x libgettextlib
-          <para>Contains common routines used by the
+          <para>a private library containing common routines used by the
           various Gettext programs; these are not intended for general use</para>
 @y
           <para>
-          さまざまな Gettext プログラムが利用している共通的ルーチンを提供します。
+          さまざまな Gettext プログラムが利用している共通的ルーチンを提供するプライベートライブラリ。
           これは一般的な利用を想定したものではありません。
           </para>
 @z
@@ -382,11 +364,11 @@
 @z
 
 @x libgettextsrc
-          <para>Provides common routines used by the
+          <para>A private library containing common routines used by the
           various Gettext programs; these are not intended for general use</para>
 @y
           <para>
-          さまざまな Gettext プログラムが利用している共通的ルーチンを提供します。
+          さまざまな Gettext プログラムが利用している共通的ルーチンを提供するプライベートライブラリ。
           これは一般的な利用を想定したものではありません。
           </para>
 @z
@@ -400,8 +382,8 @@
 @z
 
 @x preloadable_libintl
-          <para>A library, intended to be used by LD_PRELOAD, that helps
-          <filename class="libraryfile">libintl</filename> log
+          <para>A library, intended to be used by LD_PRELOAD that assists
+          <filename class="libraryfile">libintl</filename> in logging
           untranslated messages</para>
 @y
           <!--

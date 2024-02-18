@@ -17,7 +17,7 @@
 
 @x
   <para>This chapter shows how to build the last missing bits of the temporary
-  system: the tools needed to build the various packages.  Now
+  system: the tools needed by the build machinery of various packages.  Now
   that all circular dependencies have been resolved, a <quote>chroot</quote>
   environment, completely isolated from the host operating system (except for
   the running kernel), can be used for the build.</para>
@@ -31,10 +31,10 @@
 
 @x
   <para>For proper operation of the isolated environment, some communication
-  with the running kernel must be established. This is done via the
-  so-called <emphasis>Virtual Kernel File Systems</emphasis>, which will be
-  mounted before entering the chroot environment. You may want to verify
-  that they are mounted by issuing the <command>findmnt</command> command.</para>
+  with the running kernel must be established. This is done through the
+  so-called <emphasis>Virtual Kernel File Systems</emphasis>, which must be
+  mounted when entering the chroot environment. You may want to check
+  that they are mounted by issuing <command>findmnt</command>.</para>
 @y
   <para>
   chroot 環境内では適切な操作とするため、実行されているカーネルとのやり取りを確実に行います。
@@ -50,7 +50,7 @@
   <envar>LFS</envar> variable set. After entering chroot, all commands
   are run as &root;, fortunately without access to the OS of the computer
   you built LFS on. Be careful anyway, as it is easy to destroy the whole
-  LFS system with bad commands.</para>
+  LFS system with badly formed commands.</para>
 @y
   <para>
   <xref linkend="ch-tools-chroot"/> まで、コマンドの実行は <envar>LFS</envar> を設定した上で、<systemitem

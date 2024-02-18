@@ -31,13 +31,13 @@
 @z
 
 @x
-  <para>The inclusion of these debugging symbols enlarges a
-  program or library significantly. Here are two examples of the
+  <para>However, the inclusion of these debugging symbols enlarges a
+  program or library significantly. The following is an example of the
   amount of space these symbols occupy:</para>
 @y
   <para>
   しかしそういったデバッグ情報は、プログラムやライブラリのファイルサイズを極端に大きくします。
-  以下にデバッグシンボルが占める割合の例を 2 つ示します。
+  以下に示すのは、デバッグシンボルが占める割合の例です。
   </para>
 @z
 
@@ -52,10 +52,10 @@
 
 @x
       <para>A <command>bash</command> binary without debugging symbols:
-      480 KB (60% smaller)</para>
+      480 KB</para>
 @y
       <para>
-      デバッグシンボルを含まない <command>bash</command> の実行ファイル： 480 KB（60% 減）
+      デバッグシンボルを含まない <command>bash</command> の実行ファイル： 480 KB
       </para>
 @z
 
@@ -71,25 +71,30 @@
 @z
 
 @x
-      <para>Glibc and GCC files without debugging symbols: 16 MB (82% smaller)</para>
+      <para>Glibc and GCC files without debugging symbols: 16 MB</para>
 @y
       <para>
-      デバッグシンボルを含まない Glibc と GCC の関連ファイル: 16MB（82% 減）
+      デバッグシンボルを含まない Glibc と GCC の関連ファイル: 16MB
       </para>
 @z
 
 @x
-  <para>Sizes will vary depending on which compiler and C library were used,
-  but a program that has been stripped of debugging symbols is usually some
-  50% to 80% smaller than its unstripped counterpart.
-  Because most users will never use a debugger on their system software,
+  <para>Sizes may vary depending on which compiler and C library were used,
+  but when comparing programs with and without debugging symbols, the
+  difference will usually be a factor between two and five.</para>
+@y
+  <para>
+  利用するコンパイラーや C ライブラリの違いによって、生成されるファイルのサイズは異なります。
+  デバッグシンボルのストリップの有無により、プログラムサイズの違いは 2 倍から 5 倍の間の違いが生まれます。
+@z
+
+@x
+  <para>Because most users will never use a debugger on their system software,
   a lot of disk space can be regained by removing these symbols. The next
   section shows how to strip all debugging symbols from the programs and
   libraries.</para>
 @y
   <para>
-  利用するコンパイラーや C ライブラリの違いによって、生成されるファイルのサイズは異なります。
-  デバッグシンボルがストリップされたプログラムは、ストリップされていないものに比べて 50% から 80% のサイズ減となります。
   プログラムをデバッグするユーザーはそう多くはありません。
   デバッグシンボルを削除すればディスク容量はかなり節減できます。
   次節ではプログラムやライブラリからデバッグシンボルを取り除く (strip する) 方法を示します。

@@ -40,29 +40,22 @@
 @z
 
 @x
-    <para>First fix a problem with the latest version of glibc:</para>
+    <para>As in the first build of GCC, the GMP, ISL, MPFR, and MPC packages are
+    required. Unpack the tarballs and move them into the required directory
+    names:</para>
 @y
     <para>
-    まずは glibc の最新版における問題を修正します。
-    </para>
-@z
-
-@x
-    <para>As in the first build of GCC, the GMP, MPFR, and MPC packages are
-    required. Unpack the tarballs and move them into the required directories:</para>
-@y
-    <para>
-    GCC の 1 回めのビルドと同様に、ここでも GMP、MPFR、MPC の各パッケージを必要とします。
+    GCC の 1 回めのビルドと同様に、ここでも GMP、ISL、MPFR、MPC の各パッケージを必要とします。
     tarball を解凍して、所定のディレクトリに移動させます。
     </para>
 @z
 
 @x
-    <para>If building on x86_64, change the default directory name for 64-bit
+    <para>If building on aarch64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
     <para>
-    x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
+    aarch64 上でビルドしている場合は、64 ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
     </para>
 @z
 
@@ -108,9 +101,9 @@
           <para>Normally, using <parameter>--host</parameter> ensures that
           a cross-compiler is used for building GCC, and that compiler knows
           that it has to look for headers and libraries in <filename
-          class="directory">$LFS</filename>. But the build system for GCC uses
+          class="directory">$LFS</filename>. But the build system of GCC uses
           other tools, which are not aware of this location. This switch is
-          needed so those tools will find the needed files in <filename
+          needed to have them find the needed files in <filename
           class="directory">$LFS</filename>, and not on the host.</para>
 @y
           <para>
@@ -123,16 +116,16 @@
 @z
 
 @x --target=$LFS_TGT
-          <para>We are cross-compiling GCC, so it's impossible to build
+          <para>As we are cross-compiling GCC, it's impossible to build
           target libraries (<filename class="libraryfile">libgcc</filename>
           and <filename class="libraryfile">libstdc++</filename>) with the
-          previously compiled GCC binaries&mdash;those binaries won't run on the
-          host.  The GCC build system will attempt to use the host's
+          compiled GCC binaries because these binaries won't run on the
+          host distro.  GCC building system will attempt to use the host's
           C and C++ compilers as a workaround by default.
-          Building the GCC target libraries with a different
-          version of GCC is not supported, so using the host's compilers may cause
-          the build to fail. This parameter ensures the libraries are built by GCC
-          pass 1.</para>
+          It's not supported to build GCC target libraries with a different
+          version of GCC, so using host compilers may cause building
+          failure.  This parameter ensures to build the libraries with GCC
+          pass 1 and prevent the issue.</para>
 @y
           <para>
           GCC はクロスコンパイルによって作り出してきているので、コンパイル済み GCC 実行ファイルからターゲットライブラリ（<filename
@@ -142,15 +135,15 @@
           GCC ビルドシステムはその回避策として、デフォルトではホスト上にある C および C++ コンパイラーを利用しようとします。
           ただし GCC のバージョンが異なる場合に、GCC ターゲットライブラリをビルドすることはサポートされていません。
           したがってホスト上のコンパイラーがビルドに失敗する可能性があります。
-          本パラメーターは、確実に GCC １回めの実行ファイルを使ってライブラリビルドを行うようにします。
+          本パラメーターは、確実に GCC １回めの実行ファイルを使ってライブラリビルドを行うようにし、この問題を回避します。
           </para>
 @z
 
 @x LDFLAGS_FOR_TARGET=...
           <para>Allow <filename class="libraryfile">libstdc++</filename> to
-          use the shared <filename class="libraryfile">libgcc</filename> being
-          built in this pass, instead of the static version that was built in GCC
-          pass 1. This is necessary to support C++ exception
+          use shared <filename class="libraryfile">libgcc</filename> being
+          built in this pass, instead of the static version built in GCC
+          pass 1. This is needed for supporting C++ exception
           handling.</para>
 @y
           <para>

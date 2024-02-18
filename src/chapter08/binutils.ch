@@ -46,7 +46,7 @@
 @z
 
 @x --enable-gold
-          <para>Build the gold linker and install it as ld.gold (alongside the
+          <para>Build the gold linker and install it as ld.gold (along side the
           default linker).</para>
 @y
           <para>
@@ -82,7 +82,7 @@
 @z
 
 @x --with-system-zlib
-          <para>Use the installed zlib library instead of building the
+          <para>Use the installed zlib library rather than building the
           included version.</para>
 @y
           <para>
@@ -102,23 +102,23 @@
       <title>&MeaningOfParameter1;make&MeaningOfParameter2;</title>
 @z
 
-@x
+@x tooldir=/usr
           <para>Normally, the tooldir (the directory where the executables will
           ultimately be located) is set to <filename
           class="directory">$(exec_prefix)/$(target_alias)</filename>. For
-          example, x86_64 machines would expand that to <filename
-          class="directory">/usr/x86_64-pc-linux-gnu</filename>. Because this is
-          a custom system, this target-specific directory in <filename
+          example, aarch64 machines would expand that to <filename
+	  class="directory">/usr/aarch64-unknown-linux-gnu</filename>. Because
+	  this is a custom system, this target-specific directory in <filename
           class="directory">/usr</filename> is not required. <filename
           class="directory">$(exec_prefix)/$(target_alias)</filename> would be
-          used if the system were used to cross-compile (for example, compiling a
+          used if the system was used to cross-compile (for example, compiling a
           package on an Intel machine that generates code that can be executed
           on PowerPC machines).</para>
 @y
           <para>
           通常 tooldir (実行ファイルが最終的に配置されるディレクトリ) は <filename
           class="directory">$(exec_prefix)/$(target_alias)</filename> に設定されています。
-          x86_64 マシンでは <filename
+          aarch64 マシンでは <filename
           class="directory">/usr/x86_64-pc-linux-gnu</filename> となります。
           LFS は自分で設定を定めていくシステムですから <filename
           class="directory">/usr</filename> ディレクトリ配下に CPU ターゲットを特定するディレクトリを設ける必要がありません。
@@ -144,20 +144,12 @@
 @z
 
 @x
-    <para>For a list of failed tests, run:</para>
+    <para>One gold test, <filename>pr17704a_test</filename>, is known to
+    fail if <parameter>CONFIG_IA32_EMULATION</parameter> is disabled in the
+    kernel configuration of the host system.</para>
 @y
     <para>
-    失敗したテストの一覧は、以下を実行すれば得られます。
-    </para>
-@z
-
-@x
-    <para>Twelve tests fail in the gold test suite when the
-    <option>--enable-default-pie</option> and
-    <option>--enable-default-ssp</option> options are passed to GCC.</para>
-@y
-    <para>
-    GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、gold テストスイートにおいて 12 個のテストが失敗します。
+    gold テストの中の 1 つ、<filename>pr17704a_test</filename> は、ホストシステムのカーネル設定中、<parameter>CONFIG_IA32_EMULATION</parameter> が無効になっている際には失敗します。
     </para>
 @z
 
@@ -168,10 +160,10 @@
 @z
 
 @x
-    <para>Remove useless static libraries and an empty man page:</para>
+    <para>Remove useless static libraries:</para>
 @y
     <para>
-    不要なスタティックライブラリと空の man ページを削除します。
+    不要なスタティックライブラリを削除します。
     </para>
 @z
 
@@ -192,14 +184,14 @@
 @z
 
 @x
-        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so, and libsframe.so</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, and libopcodes.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
-        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
-        <seg>libbfd.so, libctf.so, libctf-nobfd.so, libopcodes.so, libsframe.so</seg>
+        <seg>libbfd.so, libctf.so, libctf-nobfd.so, and libopcodes.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @z
 
@@ -257,7 +249,7 @@
 @z
 
 @x elfedit
-          <para>Updates the ELF headers of ELF files</para>
+          <para>Updates the ELF header of ELF files</para>
 @y
           <para>
           ELF ファイルの ELF ヘッダーを更新します。
@@ -269,14 +261,6 @@
 @y
           <para>
           コールグラフ (call graph) のプロファイルデータを表示します。
-          </para>
-@z
-
-@x gprofng
-          <para>Gathers and analyzes performance data</para>
-@y
-          <para>
-          性能データの収集と解析を行います。
           </para>
 @z
 
@@ -301,7 +285,7 @@
 @z
 
 @x ld.bfd
-          <para>A hard link to <command>ld</command></para>
+          <para>Hard link to <command>ld</command></para>
 @y
           <para>
           <command>ld</command> へのハードリンク。
@@ -423,13 +407,4 @@
           opcodes (オペレーションコード; プロセッサー命令を<quote>認識可能なテキスト</quote>として表現したもの) を取り扱うライブラリ。
           このライブラリは <command>objdump</command> のような、ビルド作業に用いるユーティリティプログラムが利用しています。
           </para>
-@z
-
-@x libsframe
-           <para>A library to support online backtracing using a 
-           simple unwinder</para>
-@y
-           <para>
-           simple unwinder を使って、オンラインバックトレースをサポートするライブラリ。
-           </para>
 @z

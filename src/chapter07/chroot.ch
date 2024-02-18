@@ -17,11 +17,11 @@
 
 @x
   <para>Now that all the packages which are required to build the rest of the
-  needed tools are on the system, it is time to enter the chroot environment and
-  finish installing the temporary tools. This environment will also be
-  used to install the final system. As user <systemitem
+  needed tools are on the system, it is time to enter the chroot environment to
+  finish installing the remaining temporary tools. This environment will be in
+  use also for installing the final system. As user <systemitem
   class="username">root</systemitem>, run the following command to enter the
-  environment that is, at the moment, populated with nothing but temporary
+  environment that is, at the moment, populated with only the temporary
   tools:</para>
 @y
   <para>
@@ -35,15 +35,15 @@
 
 @x
   <para>The <parameter>-i</parameter> option given to the <command>env</command>
-  command will clear all the variables in the chroot environment. After that, only
+  command will clear all variables of the chroot environment. After that, only
   the <envar>HOME</envar>, <envar>TERM</envar>, <envar>PS1</envar>, and
   <envar>PATH</envar> variables are set again. The
-  <parameter>TERM=$TERM</parameter> construct sets the <envar>TERM</envar>
+  <parameter>TERM=$TERM</parameter> construct will set the <envar>TERM</envar>
   variable inside chroot to the same value as outside chroot. This variable is
-  needed so programs like <command>vim</command> and <command>less</command>
-  can operate properly.  If other variables are desired, such as
+  needed for programs like <command>vim</command> and <command>less</command>
+  to operate properly.  If other variables are desired, such as
   <envar>CFLAGS</envar> or <envar>CXXFLAGS</envar>, this is a good place to set
-  them.</para>
+  them again.</para>
 @y
   <para>
   <command>env</command> コマンドの <parameter>-i</parameter> パラメーターは、chroot 環境での変数定義をすべてクリアするものです。
@@ -56,27 +56,26 @@
 
 @x
   <para>From this point on, there is no need to use the
-  <envar>LFS</envar> variable any more because all work will be restricted
-  to the LFS file system; the <command>chroot</command> command runs the
-  Bash shell with the root
-  (<filename class="directory">/</filename>) directory set to
-  <filename class='directory'>$LFS</filename>.</para>
+  <envar>LFS</envar> variable anymore because all work will be restricted
+  to the LFS file system.  This is because the Bash shell is told that
+  <filename class="directory">$LFS</filename> is now the root
+  (<filename class="directory">/</filename>) directory.</para>
 @y
   <para>
   ここから先は <envar>LFS</envar> 変数は不要となります。
   すべての作業は LFS ファイルシステム内で行っていくことになるからです。
-  <command>chroot</command> コマンドは、<filename class="directory">$LFS</filename> ディレクトリがルート (<filename class="directory">/</filename> ディレクトリ) となるようにして Bash シェルを起動します。
+  <filename class="directory">$LFS</filename> ディレクトリがルート (<filename class="directory">/</filename> ディレクトリ) となるようにして Bash シェルを起動します。
   </para>
 @z
 
 @x
   <para>Notice that <filename class="directory">/tools/bin</filename> is not
   in the <envar>PATH</envar>. This means that the cross toolchain will no longer be
-  used.</para>
+  used in the chroot environment.</para>
 @y
   <para>
   <filename class="directory">/tools/bin</filename> が <envar>PATH</envar> 内には存在しません。
-  つまりクロスチェーンは、もはや利用しないということです。
+  つまりクロスチェーンは、chroot 環境においてはもはや利用しないということです。
   </para>
 @z
 

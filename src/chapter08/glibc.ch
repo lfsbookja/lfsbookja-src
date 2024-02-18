@@ -41,14 +41,6 @@
 @z
 
 @x
-    <para>Fix a security issue identified upstream:</para>
-@y
-    <para>
-    アップストリームが認識するセキュリティ問題を修正します。
-    </para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc
     in a dedicated build directory:</para>
 @y
@@ -91,7 +83,7 @@
 @z
 
 @x --enable-kernel=&min-kernel;
-          <para>This option tells the build system that this Glibc may
+          <para>This option tells the build system that this glibc may
           be used with kernels as old as &min-kernel;. This means generating
           workarounds in case a system call introduced in a later version
           cannot be used.</para>

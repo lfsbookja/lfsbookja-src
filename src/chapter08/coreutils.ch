@@ -10,11 +10,11 @@
 @z
 
 @x
-    <para>The Coreutils package contains the basic utility programs
-    needed by every operating system.</para>
+    <para>The Coreutils package contains utilities for showing and setting the
+    basic system characteristics.</para>
 @y
     <para>
-    Coreutils パッケージは、あらゆるオペレーティングシステムが必要とする基本的なユーティリティプログラムを提供します。
+    Coreutils パッケージは、システムの基本的な特性を表示し設定するユーティリティを提供します。
     </para>
 @z
 
@@ -36,23 +36,14 @@
 @z
 
 @x
-      <para>Many bugs have been found in this patch. When reporting new
-      bugs to the Coreutils maintainers, please check first to see if 
-      those bugs are reproducible without this patch.</para>
+      <para>In the past, many bugs were found in this patch. When reporting new
+      bugs to Coreutils maintainers, please check first if they are reproducible
+      without this patch.</para>
 @y
       <para>
-      このパッチには多くのバグがありました。
+      過去にこのパッチには多くのバグがありました。
       新たなバグを発見したら Coreutils の開発者に報告する前に、このパッチの適用前でもバグが再現するかどうかを確認してください。
       </para>
-@z
-
-@x
-    <para>Fix a bug in checksum utilities causing failed checks not
-    reported correctly:</para>
-@y
-    <para>
-    チェックサムユーティリティーのチェックが正しい報告をあげてこないバグがあるため、これを修正します。
-    </para>
 @z
 
 @x
@@ -69,8 +60,8 @@
 
 @x autoreconf
           <para>The patch for internationalization has modified the
-          build system, so the configuration files must
-          be regenerated.</para>
+          building system of the package, so the configuration files have
+          to be regenerated.</para>
 @y
           <para>
           国際化対応を行うパッチによってビルドシステムが修正されます。
@@ -80,7 +71,7 @@
 
 @x FORCE_UNSAFE_CONFIGURE=1
           <para>This environment variable allows the package to be
-          built by the <systemitem class="username">root</systemitem> user.
+          built as the <systemitem class="username">root</systemitem> user.
           </para>
 @y
           <para>
@@ -90,7 +81,7 @@
 
 @x
           <para>The purpose of this switch is to prevent Coreutils from
-          installing programs that will be installed by other packages.
+          installing binaries that will be installed by other packages later.
           </para>
 @y
           <para>
@@ -155,10 +146,10 @@
 @z
 
 @x
-    <para>The test-getlogin test may fail in the LFS chroot environment.</para>
+    <para>The sort-NaN-infloop test is known to fail with GCC-12.</para>
 @y
     <para>
-    test-getlogin というテストは LFS の chroot 環境内では失敗するかもしれません。
+    sort-NaN-infloop というテストは GCC-12 を用いると失敗します。
     </para>
 @z
 
@@ -237,7 +228,7 @@
 @z
 
 @x [
-          <para>Is an actual command, /usr/bin/[; it is a synonym
+          <para>Is an actual command, /usr/bin/[, that is a synonym
           for the <command>test</command> command</para>
 @y
           <para>
@@ -306,7 +297,7 @@
 
 @x chmod
           <para>Changes the permissions of each file to the given mode; the mode
-          can be either a symbolic representation of the changes to be made, or an
+          can be either a symbolic representation of the changes to make or an
           octal number representing the new permissions</para>
 @y
           <para>
@@ -360,7 +351,7 @@
 
 @x csplit
           <para>Splits a given file into several new files, separating them
-          according to given patterns or line numbers, and outputting the byte
+          according to given patterns or line numbers and outputting the byte
           count of each new file</para>
 @y
           <para>
@@ -380,11 +371,11 @@
 @z
 
 @x date
-          <para>Displays the current date and time in the given format, or sets the
-          system date and time</para>
+          <para>Displays the current time in the given format, or sets the
+          system date</para>
 @y
           <para>
-          指定された書式により現在日付、現在時刻を表示します。
+          指定された書式により現在時刻を表示します。
           またはシステム日付を設定します。
           </para>
 @z
@@ -431,10 +422,10 @@
 @z
 
 @x dirname
-          <para>Extracts the directory portion(s) of the given name(s)</para>
+          <para>Strips the non-directory suffix from a file name</para>
 @y
           <para>
-          指定されたファイル名からディレクトリ名部分を取り出します。
+          ファイル名からディレクトリではないサフィックス部分を取り出します。
           </para>
 @z
 
@@ -481,7 +472,7 @@
 @z
 
 @x factor
-          <para>Prints the prime factors of the specified integers</para>
+          <para>Prints the prime factors of all specified integer numbers</para>
 @y
           <para>
           指定された整数値に対する素因数 (prime factor) を表示します。
@@ -567,10 +558,10 @@
 @z
 
 @x link
-          <para>Creates a hard link (with the given name) to a file</para>
+          <para>Creates a hard link with the given name to a file</para>
 @y
           <para>
-          （指定された名称により）ファイルへのハードリンクを生成します。
+          指定された名称によりファイルへのハードリンクを生成します。
           </para>
 @z
 
@@ -615,8 +606,8 @@
 @z
 
 @x mkfifo
-          <para>Creates First-In, First-Outs (FIFOs), "named
-          pipes" in UNIX parlance, with the given names</para>
+          <para>Creates First-In, First-Outs (FIFOs), a "named
+          pipe" in UNIX parlance, with the given names</para>
 @y
           <para>
           指定された名前の FIFO (First-In, First-Out) を生成します。
@@ -1097,7 +1088,7 @@
 
 @x wc
           <para>Reports the number of lines, words, and bytes for each given
-          file, as well as grand totals when more than one file is given</para>
+          file, as well as a total line when more than one file is given</para>
 @y
           <para>
           指定されたファイルの行数、単語数、バイト数を表示します。
@@ -1123,7 +1114,7 @@
 @z
 
 @x yes
-          <para>Repeatedly outputs <quote>y</quote>, or a given string, until
+          <para>Repeatedly outputs <quote>y</quote> or a given string until
           killed</para>
 @y
           <para>

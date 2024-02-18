@@ -26,7 +26,7 @@
     to compile C++ code
     (part of GCC is written in C++), but we had to defer its installation
     when we built <xref linkend="ch-tools-gcc-pass1"/>
-    because Libstdc++ depends on Glibc, which was not yet available in the target
+    because it depends on glibc, which was not yet available in the target
     directory.
     </para>
 @y
@@ -34,7 +34,7 @@
     Libstdc++ は標準 C++ ライブラリです。
     （GCC の一部が C++ によって書かれているため）C++ をコンパイルするために必要となります。
     ただし <xref linkend="ch-tools-gcc-pass1"/> をビルドするにあたっては、このライブラリのインストールを個別に行わなければなりません。
-    それは Libstdc++ が Glibc に依存していて、対象ディレクトリ内ではまだ Glibc が利用できない状態にあるからです。
+    それは Libstdc++ が glibc に依存していて、対象ディレクトリ内ではまだ glibc が利用できない状態にあるからです。
     </para>
 @z
 
@@ -53,23 +53,23 @@
       <filename>gcc-&gcc-version;</filename> directory.</para>
 @y
       <para>
-      <application>libstdc++</application> のソースは GCC に含まれます。
+      <application>Libstdc++</application> のソースは GCC に含まれます。
       したがってまずは GCC の tarball を伸張 (解凍) した上で <filename>gcc-&gcc-version;</filename> ディレクトリに入って作業を進めます。
       </para>
 @z
 
 @x
-    <para>Create a separate build directory for Libstdc++ and enter it:</para>
+    <para>Create a separate build directory for libstdc++ and enter it:</para>
 @y
     <para>
-    Libstdc++ のためのディレクトリを新たに生成して移動します。
+    libstdc++ のためのディレクトリを新たに生成して移動します。
     </para>
 @z
 
 @x
-    <para>Prepare Libstdc++ for compilation:</para>
+    <para>Prepare libstdc++ for compilation:</para>
 @y
-    <para>&PreparePackage1;Libstdc++&PreparePackage2;</para>
+    <para>&PreparePackage1;libstdc++&PreparePackage2;</para>
 @z
 
 @x
@@ -79,7 +79,7 @@
 @z
 
 @x --host=...
-          <para>Specifies that the cross-compiler we have just built
+          <para>Specifies that the cross compiler we have just built
           should be used instead of the one in
           <filename>/usr/bin</filename>.</para>
 @y
@@ -100,25 +100,25 @@
 
 @x --with-gxx-include-dir=/tools/include/c++/&gcc-version;
           <para>This specifies the installation directory for include files.
-          Because Libstdc++ is the standard C++ library for LFS, this
+          Because libstdc++ is the standard C++ library for LFS, this
           directory should match the location where the C++ compiler
           (<command>$LFS_TGT-g++</command>) would search for the
           standard C++ include files. In a normal build, this information
-          is automatically passed to the Libstdc++ <command>configure</command>
+          is automatically passed to the libstdc++ <command>configure</command>
           options from the top level directory. In our case, this information
           must be explicitly given.
           The C++ compiler will prepend the sysroot path
-          <filename class="directory">$LFS</filename> (specified when building
-          GCC-pass1) to the include file search path, so it will actually
+          <filename class="directory">$LFS</filename> (specified building
+          GCC pass 1) to the include file search path, so it will actually
           search in
           <filename class="directory">$LFS/tools/$LFS_TGT/include/c++/&gcc-version;</filename>.
           The combination of the <parameter>DESTDIR</parameter>
           variable (in the <command>make install</command> command below)
-          and this switch causes the headers to be installed there.</para>
+          and this switch ensures to install the headers there.</para>
 @y
           <para>
           インクルードファイルをインストールするディレクトリを指定します。
-          Libstdc++ は LFS における標準 C++ ライブラリであるため、そのディレクトリは C++ コンパイラー (<command>$LFS_TGT-g++</command>) が標準 C++ インクルードファイルを探し出すディレクトリでなければなりません。
+          libstdc++ は LFS における標準 C++ ライブラリであるため、そのディレクトリは C++ コンパイラー (<command>$LFS_TGT-g++</command>) が標準 C++ インクルードファイルを探し出すディレクトリでなければなりません。
           通常のビルドにおいてそのディレクトリ情報は、最上位ディレクトリの <command>configure</command> のオプションにて指定します。
           ここでの作業では、上のようにして明示的に指定します。
           C++ コンパイラーは sysroot パスに <filename
@@ -130,24 +130,15 @@
 @z
 
 @x
-    <para>Compile Libstdc++ by running:</para>
+    <para>Compile libstdc++ by running:</para>
 @y
-    <para>Libstdc++ をコンパイルします。</para>
+    <para>libstdc++ をコンパイルします。</para>
 @z
 
 @x
     <para>Install the library:</para>
 @y
     <para>ライブラリをインストールします。</para>
-@z
-
-@x
-    <para>Remove the libtool archive files because they are harmful for
-    cross-compilation:</para>
-@y
-    <para>
-    クロスコンパイルにとっては libtool アーカイブファイルが邪魔になるため削除します。
-    </para>
 @z
 
 @x

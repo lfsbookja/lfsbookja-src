@@ -105,7 +105,7 @@
 
 @x --without-ada
           <para>This ensures that Ncurses does not build support for the Ada
-          compiler, which may be present on the host but will not be available
+          compiler which may be present on the host but will not be available
           once we enter the <command>chroot</command> environment.</para>
 @y
           <para>
@@ -115,9 +115,9 @@
 @z
 
 @x --disable-stripping
-          <para>This switch prevents the building system from
-          using the <command>strip</command> program from the host.
-          Using host tools on cross-compiled programs can cause failure.</para>
+          <para>This switch prevents the building system from stripping
+          the programs using <command>strip</command> program from the host.
+          Using host tools on cross-compiled program can cause failure.</para>
 @y
           <para>
           本スイッチは、ホスト上の <command>strip</command> を、ビルドシステムが利用しないようにします。
@@ -173,8 +173,8 @@
 @z
 
 @x TIC_PATH=$(pwd)/build/progs/tic
-          <para>We need to pass the path of the newly built
-          <command>tic</command> program that runs on the building machine, so
+          <para>We need to pass the path of the just built
+          <command>tic</command> able to run on the building machine, so that
           the terminal database can be created without errors.</para>
 @y
           <para>
