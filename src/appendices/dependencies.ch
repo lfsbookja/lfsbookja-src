@@ -1256,9 +1256,13 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>
+            <ulink url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>
+          </seg>
 @y
-          <seg>なし</seg>
+          <seg>
+            <ulink url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>
+          </seg>
 @z
 
 %----------------------------------------------------------------------

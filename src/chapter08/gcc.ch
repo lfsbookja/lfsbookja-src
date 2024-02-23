@@ -218,23 +218,28 @@
 @z
 
 @x
-    Eight gcc tests (out of over 185,000), data-model-4.c, pr56837.c, 
-    and six "analyzer" tests are known to fail.
+    Eight gcc tests (out of over 185,000):
+    <!-- https://gcc.gnu.org/PR106375 --><filename>pr56837.c</filename>
+    and seven tests in the <filename class='directory'>analyzer</filename>
+    directory are known to fail.
 @y
-    (185,000 以上におよぶテストの中から) gcc テストの 8 つ、すなわち data-model-4.c、pr56837.c、それに 6 つの "analyzer" テストと呼ばれるものが失敗します。
+    (185,000 以上におよぶテストの中から) gcc テストの 8 つ、すなわち <filename>pr56837.c</filename>、それに <filename class='directory'>analyzer</filename> ディレクトリにある 7 つのテストが失敗します。
 @z
 
 @x
-    One libstdc++ test (out of over 15000), copy.cc, is known to fail.
+    One libstdc++ test (out of over 15000), <filename>copy.cc</filename>, is
+    known to fail.
 @y
-    (15,000 以上の ) libstdc++ テスト copy.cc が 1 つだけ失敗します。
+    (15,000 以上の ) libstdc++ テスト <filename>copy.cc</filename> が 1 つだけ失敗します。
 @z
 
 @x
-    For g++, 21 tests (out of approximately 250,000), 14 "AddressSanitizer*"
-    tests and 7 interception-malloc-test-1.C tests, are known to fail.
+    For g++, 21 tests (out of approximately 250,000): 14
+    <quote>AddressSanitizer*</quote>
+    tests and 7 <filename>interception-malloc-test-1.C</filename> tests, are
+    known to fail.
 @y
-    g++ においては (およそ 250,000 のテストのうち) 21 個のテスト、14 個の "AddressSanitizer*" テスト、7 個の interception-malloc-test-1.C テストが失敗します。
+    g++ においては (およそ 250,000 のテストのうち) 21 個のテスト、14 個の<quote>AddressSanitizer*</quote>テスト、7 個の <filename>interception-malloc-test-1.C</filename> テストが失敗します。
 @z
 
 @x
@@ -244,21 +249,6 @@
 @y
     さらに <filename class='directory'>vect</filename> ディレクトリ内にあるテストが、AVX に対するハードウェアサポートがないために、いくつか失敗します。
     </para>
-@z
-
-@x
-      With Glibc-2.39, the gcc analyzer tests named
-      <filename>data-model-4.c</filename> and
-      <filename>conftest-1.c</filename> 
-        are known to fail.
-      In the asan tests, several tests in <filename>asan_test.C</filename> 
-        are known to fail.
-      The test named <filename>interception-malloc-test-1.C</filename> 
-        is known to fail.
-@y
-      Glibc-2.39 を利用した場合に、<filename>data-model-4.c</filename>, <filename>conftest-1.c</filename> という gcc 解析テストが失敗します。
-      また asan テストにおいて、<filename>asan_test.C</filename> テスト内のサブテストがいくつか失敗します。
-      <filename>interception-malloc-test-1.C</filename> というテストも失敗します。
 @z
 
 @x
@@ -272,20 +262,6 @@
     GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
     上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
-@z
-
-@x
-      On some combinations of kernel configuration and AMD processors
-      there may be more than 1100 failures in the gcc.target/i386/mpx
-      tests (which are designed to test the MPX option on recent
-      Intel processors). These can safely be ignored on AMD
-      processors. These tests will also fail on Intel processors if MPX support
-      is not enabled in the kernel even though it is present on the CPU.
-@y
-      カーネル設定の組み合わせにより、あるいは AMD プロセッサーを利用している場合に、gcc.target/i386/mpx に関するテストが 1100 個以上失敗します。
-      （これは最新の Intel プロセッサーにおいて MPX オプションをテストするものです。）
-      AMD プロセッサーを利用している場合は無視して構いません。
-      上のテストは Inter プロセッサーであっても、カーネル上にて MPX サポートが無効になっていると、たとえ CPU がサポートしていても発生します。
 @z
 
 @x

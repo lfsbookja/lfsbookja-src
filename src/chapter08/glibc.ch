@@ -193,49 +193,46 @@
 @z
 
 @x
-        <para>Three <emphasis>nptl/tst-thread-affinity*</emphasis>
-        tests are known to fail.</para>
-@y
-        <para>
-        3 つの <emphasis>nptl/tst-thread-affinity*</emphasis> テストが失敗します。
-        </para>
-@z
-
-@x
-        <para><emphasis>misc/tst-ttyname</emphasis>
-        is known to fail in the LFS chroot environment.</para>
-@y
-        <para>
-        <emphasis>misc/tst-ttyname</emphasis> は LFS の chroot 環境においては失敗します。
-        </para>
-@z
-
-@x
-        <para>The <emphasis>stdlib/tst-arc4random-thread</emphasis>
-        test is known to fail if the host kernel is relatively old.</para>
-@y
-        <para>
-        ホストのカーネルが比較的古い場合に <emphasis>stdlib/tst-arc4random-thread</emphasis> というテストが失敗します。
-        </para>
-@z
-
-@x
         <para>Some tests, for example
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis>,
-        are known to fail on relatively slow systems due to an internal
-        timeout.</para>
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> and
+        <emphasis>nptl/tst-thread-affinity*</emphasis>
+        are known to fail due to a timeout (especially when the system is
+        relatively slow and/or running the test suite with multiple
+        parallel make jobs).  These tests can be identified with:</para>
 @y
         <para>
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> のようなテストでは、内部のタイムアウトが原因で比較的遅くなるシステム上では失敗します。
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis>、<emphasis>nptl/tst-thread-affinity*</emphasis> のようなテストでは、タイムアウトを原因として (特に比較的処理性能の低いシステムの利用や平行ビルドを使ったテストスイート実行において) そのテストが失敗します。
+        このようなテストは以下を実行すれば一覧として得られます。
+        </para>
+@z
+
+@x
+        <para>It's possible to re-run a single test with enlarged timeout
+        with
+        <command>TIMEOUTFACTOR=<replaceable>&lt;factor&gt;</replaceable>
+        make test t=<replaceable>&lt;test name&gt;</replaceable></command>.
+        For example, <command>TIMEOUTFACTOR=10 make test
+        t=nss/tst-nss-files-hosts-multi</command> will re-run
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> with ten times
+        the original timeout.</para>
+@y
+        <para>
+        <command>TIMEOUTFACTOR=<replaceable>&lt;factor&gt;</replaceable>
+        make test t=<replaceable>&lt;test name&gt;</replaceable></command> というコマンド実行により、テスト 1 つずつに対してタイムアウト時間を拡張して再実行することができます。
+        たとえば <command>TIMEOUTFACTOR=10 make test
+        t=nss/tst-nss-files-hosts-multi</command> とすれば <emphasis>nss/tst-nss-files-hosts-multi</emphasis> のテストが、元々のタイムアウトの 10 倍としながら再実行できます。
         </para>
 @z
 
 @x
         <para>Additionally, some tests may fail with a relatively old CPU
-        model or host kernel version.</para>
+        model (for example
+        <emphasis>elf/tst-cpu-features-cpuinfo</emphasis>) or host kernel
+        version (for example
+        <emphasis>stdlib/tst-arc4random-thread</emphasis>).</para>
 @y
         <para>
-        さらに CPU モデルやホストのカーネルバージョンが比較的古い場合に、テストがいくつか失敗します。
+        さらに CPU モデルが古い場合に (たとえば <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> が)、またホストのカーネルバージョンが古い場合に (たとえば <emphasis>stdlib/tst-arc4random-thread</emphasis> が)、それぞれ失敗することがあります。
         </para>
 @z
 
