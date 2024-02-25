@@ -847,9 +847,24 @@
           <seg>Automake, Bison</seg>
 @z
 @x
-          <seg><ulink url='&blfs-book;general/libxml2.html'>libxml2</ulink></seg>
+          <seg>
+            <ulink url='&blfs-book;general/libunistring.html'>
+              libunistring
+            </ulink>
+            and
+            <ulink url='&blfs-book;general/libxml2.html'>
+              libxml2
+            </ulink>
+          </seg>
 @y
-          <seg><ulink url='&blfs-book;general/libxml2.html'>libxml2</ulink></seg>
+          <seg>
+            <ulink url='&blfs-book;general/libunistring.html'>
+              libunistring
+            </ulink>,
+            <ulink url='&blfs-book;general/libxml2.html'>
+              libxml2
+            </ulink>
+          </seg>
 @z
 
 %----------------------------------------------------------------------

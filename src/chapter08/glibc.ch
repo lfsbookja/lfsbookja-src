@@ -282,14 +282,14 @@
             <emphasis role='bold'>you MUST follow the note in Libxcrypt
             section to install
             <filename class='libraryfile'>libcrypt.so.1*</filename>
-            (overwritting
+            (replacing
             <filename class='libraryfile'>libcrypt.so.1</filename> from the
             prior Glibc installation)</emphasis>.
 @y
             12.0 未満の Glibc をアップグレードする場合は <xref role='.'
             linkend='ch-system-libxcrypt'/> に従って <application>Libxcrypt</application> をインストールしてください。
             さらにその <application>Libxcrypt</application> の通常インストール手順に加えて、<emphasis
-            role='bold'>Libxcrypt の注記の節に示されている手順に従って <filename class='libraryfile'>libcrypt.so.1*</filename> のインストールを必ず行ってください (それ以前に行っている Glibc のビルドにおいてインストールした <filename class='libraryfile'>libcrypt.so.1</filename> を上書きしてください)。</emphasis>.
+            role='bold'>Libxcrypt の注記の節に示されている手順に従って <filename class='libraryfile'>libcrypt.so.1*</filename> のインストールを必ず行ってください (それ以前に行っている Glibc のビルドにおいてインストールした <filename class='libraryfile'>libcrypt.so.1</filename> を置き換えてください)。</emphasis>.
 @z
 
 @x

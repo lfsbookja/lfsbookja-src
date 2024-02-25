@@ -79,7 +79,9 @@
 
 @x
     <para>The test suite outputs a lot of binary data to the screen.  This can
-    cause issues with the settings of the current terminal.  The problem can be
+    cause issues with the settings of the current terminal (especially while
+    we are overriding the <envar>TERM</envar> variable to satisify some
+    assumptions of the test suite).  The problem can be
     avoided by redirecting the output to a log file as shown above.  A
     successful test will result in the words "ALL DONE" in the log file
     at completion.</para>
@@ -87,6 +89,7 @@
     <para>
     このテストスイートは数多くのバイナリデータを端末画面上に出力します。
     これは端末画面の設定によっては問題を引き起こします。
+    (特にテストスイートの要請を満たすため <envar>TERM</envar> 変数を上書きしている場合などです。)
     これを避けるには、上に示すように出力をリダイレクトしてログファイルに出力するようにしてください。
     テストが成功すれば、ログファイルの最後に "ALL DONE" と表示されます。
     </para>
