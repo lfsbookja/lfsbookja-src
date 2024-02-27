@@ -54,10 +54,13 @@
 @z
 
 @x
-    <para>One test in the "ps" tests is known to fail.</para>
+    <para>One test named
+    <literal>ps with output flag bsdtime,cputime,etime,etimes</literal>
+    is known to fail if the host kernel is not built with
+    <literal>CONFIG_BSD_PROCESS_ACCT</literal> enabled.</para>
 @y
     <para>
-    "ps" テストの中の 1 つは失敗します。
+    ホストカーネルが <literal>CONFIG_BSD_PROCESS_ACCT</literal> を有効にしてビルドされていない場合に、<literal>ps with output flag bsdtime,cputime,etime,etimes</literal> という名前のテスト 1 つが失敗します。
     </para>
 @z
 
