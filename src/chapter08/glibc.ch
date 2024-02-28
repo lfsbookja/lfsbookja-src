@@ -560,7 +560,7 @@
 
 @x
           <para>This creates the <filename>posixrules</filename> file. We use
-          New York because POSIX requires the daylight savings time rules
+          New York because POSIX requires the daylight saving time rules
           to be in accordance with US rules.</para>
 @y
           <para>

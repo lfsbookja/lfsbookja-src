@@ -73,11 +73,11 @@
     <filename class="extension">.netdev</filename> and
     <filename class="extension">.network</filename> files. For detailed
     descriptions and example contents of these configuration files, consult
-    the <ulink role='man' url='&man;systemd-link.5'>systemd-link(5)</ulink>,
-    <ulink role='man' url='&man;systemd-netdev.5'>systemd-netdev(5)</ulink>,
-    and <ulink role='man'
-    url='&man;systemd-network.5'>systemd-network(5)</ulink> manual
-    pages.</para>
+    the 
+    <ulink role='man' url='&man;systemd.link.5'>systemd.link(5)</ulink>,
+    <ulink role='man' url='&man;systemd.netdev.5'>systemd.netdev(5)</ulink>, and
+    <ulink role='man' url='&man;systemd.network.5'>systemd.network(5)</ulink> 
+    manual pages.</para>
 @y
     <para>
     <command>systemd-networkd</command> (および <command>systemd-resolved</command>)
@@ -91,10 +91,10 @@
     <filename class="extension">.netdev</filename>,
     <filename class="extension">.network</filename>
     の三種類があります。
-    これらの説明や設定例については man ページ <ulink role='man'
-    url='&man;systemd-link.5'>systemd-link(5)</ulink>, <ulink role='man'
-    url='&man;systemd-netdev.5'>systemd-netdev(5)</ulink>, <ulink role='man'
-    url='&man;systemd-network.5'>systemd-network(5)</ulink>
+    これらの説明や設定例については man ページ
+    <ulink role='man' url='&man;systemd.link.5'>systemd.link(5)</ulink>,
+    <ulink role='man' url='&man;systemd.netdev.5'>systemd.netdev(5)</ulink>,
+    <ulink role='man' url='&man;systemd.network.5'>systemd.network(5)</ulink> 
     を参照してください。
     </para>
 @z

@@ -96,7 +96,7 @@
 
 @x
     <para>There are several ways to configure the kernel options. Usually,
-    This is done through a menu-driven interface, for example:</para>
+    this is done through a menu-driven interface, for example:</para>
 @y
     <para>
     カーネルオプションの設定方法にはいくつかあります。

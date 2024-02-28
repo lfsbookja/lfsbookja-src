@@ -2003,7 +2003,7 @@
           <seg>GDBM, Glibc, Libxcrypt</seg>
 @z
 @x
-          <seg>Iana-Etc, Less. and Procps-ng</seg>
+          <seg>Iana-Etc, Less, and Procps-ng</seg>
 @y
           <seg>Iana-Etc, Less, Procps-ng</seg>
 @z

@@ -1253,7 +1253,8 @@
            <ulink url='&lfs-ticket-root;5330'>#5330</ulink>.</para>
         </listitem>
         <listitem>
-           <para>[bdubbs] - Update to procps-ng-4.0.4. Fixes
+           <para>[bdubbs] - Update to procps-ng-4.0.4 (security fix
+           for 32-bit systems). Fixes
            <ulink url='&lfs-ticket-root;5335'>#5335</ulink>.</para>
         </listitem>
         <listitem>
@@ -1321,7 +1322,7 @@
            <ulink url='&lfs-ticket-root;5330'>#5330</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-           <para>[bdubbs] - procps-ng-4.0.4 へのアップデート。
+           <para>[bdubbs] - procps-ng-4.0.4 (32 ビット向けセキュリティフィックス) へのアップデート。
            <ulink url='&lfs-ticket-root;5335'>#5335</ulink> を Fix に。</para>
         </listitem>
         <listitem>
