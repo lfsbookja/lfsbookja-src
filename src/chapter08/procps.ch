@@ -46,7 +46,7 @@
 @z
 
 @x
-    <para> To run the test suite, run:</para>
+    <para>To run the test suite, run:</para>
 @y
     <para>
     テストスイートを実行する場合は、以下を実行します。
@@ -57,20 +57,10 @@
     <para>One test named
     <literal>ps with output flag bsdtime,cputime,etime,etimes</literal>
     is known to fail if the host kernel is not built with
-    <literal>CONFIG_BSD_PROCESS_ACCT</literal> enabled.
-    <!-- These two tests just do not work as root but they seem to pass
-         in most time due to some internal hazards of Tcl/Expect/DejaGNU
-         framework.  However the failures have been really observed.
-         TODO: run the test suite as tester after the freeze ends.  -->
-    Two tests named
-    <literal>pmap X with unreachable process</literal> and
-    <literal>pmap XX with unreachable process</literal> are known to
-    fail occasionally.</para>
+    <literal>CONFIG_BSD_PROCESS_ACCT</literal> enabled.</para>
 @y
     <para>
     ホストカーネルが <literal>CONFIG_BSD_PROCESS_ACCT</literal> を有効にしてビルドされていない場合に、<literal>ps with output flag bsdtime,cputime,etime,etimes</literal> という名前のテスト 1 つが失敗します。
-    <literal>pmap X with unreachable process</literal> と
-    <literal>pmap XX with unreachable process</literal> というテスト 2 つが、場合によっては失敗します。
     </para>
 @z
 

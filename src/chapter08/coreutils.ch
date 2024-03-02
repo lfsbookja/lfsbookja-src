@@ -141,18 +141,18 @@
 @z
 
 @x
-    <para>Now run the tests:</para>
+    <para>Now run the tests (using <filename>/dev/null</filename> for the
+    standard input, or two tests may be broken if building LFS in a
+    graphical terminal or a session in SSH or GNU Screen etc. because the
+    standard input is connected to a PTY from host distro, and the device
+    node for such a PTY cannot be accessed from the LFS chroot
+    environment):</para>
 @y
     <para>
     テストを実行します。
-    </para>
-@z
-
-@x
-    <para>The test-getlogin test may fail in the LFS chroot environment.</para>
-@y
-    <para>
-    test-getlogin というテストは LFS の chroot 環境内では失敗するかもしれません。
+    (テストの実行は標準入力を <filename>/dev/null</filename> とします。
+     そうしておかないと、LFS をグラフィック端末上でビルドしている場合、あるいは SSH 上や GNU Screen 上でのセッションで実行している場合に、2 つのテストが失敗します。
+     この理由は標準入力がホストディストロにおいて PTY に接続されているからであり、その PTY のようなデバイスノードは、LFS の chroot 環境からはアクセスできないからです。)
     </para>
 @z
 
