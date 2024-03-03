@@ -27,7 +27,7 @@
    </para>
    <para>
    「r12.1-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
-   また ffecb9ef8 などのリンクは、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値 (その参照ページ) を意味します。
+   また c301941b9 などのリンクは、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値 (その参照ページ) を意味します。
    </para>
   </note>
 
@@ -49,6 +49,17 @@
     </listitem>
 
 -->
+
+   <listitem>
+      <para>2024-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.0-239 (<ulink url="&lfs-changeset;c301941b9">c301941b9</ulink>) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
 
    <listitem>
       <para>2024-02-29</para>
