@@ -19,6 +19,16 @@
 @z
 
 @x
+        If you've installed Linux-PAM, you should follow
+        <ulink url='&blfs-book;postlfs/shadow.xml'>the BLFS shadow
+        page</ulink> instead of this page to build (or, rebuild or upgrade)
+        shadow.
+@y
+        Linux-PAM をすでにインストールしている場合は、本ページではなく <ulink
+        url='&blfs-book;postlfs/shadow.xml'>BLFS の shadow のページ</ulink> に従って shadow のビルド（または再ビルドやアップグレード）を行う必要があります。
+@z
+
+@x
       <para>If you would like to enforce the use of strong passwords, refer to
       <ulink url="&blfs-book;postlfs/cracklib.html"/> for installing
       CrackLib prior to building Shadow. Then add

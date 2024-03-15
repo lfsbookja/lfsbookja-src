@@ -74,13 +74,19 @@
 @z
 
 @x
-    <para>Install the package and create symlinks for
+    <para>Install the package and recreate some symlinks for
     compatibility with Module-Init-Tools (the package that previously handled
-    Linux kernel modules):</para>
+    Linux kernel modules).  The building system will create all these
+    symlinks in <filename class='directory'>/usr/bin</filename>, but we
+    only want <command>lsmod</command> there and all other symlinks in
+    <filename class='directory'>/usr/sbin</filename> instead:</para>
 @y
     <para>
-    パッケージインストールし、Module-Init-Tools パッケージとの互換性を保つためにシンボリックリンクを生成します。
-    Module-Init-Tools パッケージは、これまで Linux カーネルモジュールを取り扱っていたものです。
+    パッケージインストールし、Module-Init-Tools パッケージとの互換性を保つためにシンボリックリンクを再生成します。
+    （Module-Init-Tools パッケージは、これまで Linux カーネルモジュールを取り扱っていました。）
+    ビルドしているシステムはシンボリックリンクを <filename
+    class='directory'>/usr/bin</filename> に生成しますが、ここでは <command>lsmod</command> のみそのままにして、残りは <filename
+    class='directory'>/usr/sbin</filename> へのシンボリックリンクとします。
     </para>
 @z
 
