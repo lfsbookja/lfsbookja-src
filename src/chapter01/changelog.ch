@@ -38,6 +38,48 @@
 @z
 
 @x
+      <para>2024-03-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Update to iproute2-6.8.0. Fixes
+          <ulink url="&lfs-ticket-root;5458">#5458</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to man-pages-6.7. Fixes
+          <ulink url="&lfs-ticket-root;5464">#5464</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Update to Linux-6.8.1. Fixes
+          <ulink url="&lfs-ticket-root;5453">#5453</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Added LZ4 to the book. Fixes
+          <ulink url="&lfs-ticket-root;5463">#5463</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-03-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - iproute2-6.8.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5458">#5458</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - man-pages-6.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;5464">#5464</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - Linux-6.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5453">#5453</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[renodr] - LZ4 追加。
+          <ulink url="&lfs-ticket-root;5463">#5463</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-03-15</para>
       <itemizedlist>
         <listitem>
@@ -89,47 +131,47 @@
       <para>2024-03-15</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to wheel-0.43.0 へのアップデート。
+          <para>[bdubbs] - wheel-0.43.0 へのアップデート。
           <ulink url='&lfs-ticket-root;5459'>#5459</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to setuptools-69.2.0 (Python モジュール) へのアップデート。
+          <para>[bdubbs] - setuptools-69.2.0 (Python モジュール) へのアップデート。
           <ulink url='&lfs-ticket-root;5462'>#5462</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to meson-1.4.0 へのアップデート。
+          <para>[bdubbs] - meson-1.4.0 へのアップデート。
           <ulink url='&lfs-ticket-root;5460'>#5460</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to expat-2.6.2 (Security fix) へのアップデート。
+          <para>[bdubbs] - expat-2.6.2 (Security fix) へのアップデート。
           <ulink url='&lfs-ticket-root;5461'>#5461</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to iana-etc-20240305 へのアップデート。
+          <para>[bdubbs] - iana-etc-20240305 へのアップデート。
           <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to vim-9.1.0161 へのアップデート。
+          <para>[bdubbs] - vim-9.1.0161 へのアップデート。
           <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to xz-5.6.1 へのアップデート。
+          <para>[bdubbs] - xz-5.6.1 へのアップデート。
           <ulink url='&lfs-ticket-root;5457'>#5457</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to shadow-4.15.0 へのアップデート。
+          <para>[bdubbs] - shadow-4.15.0 へのアップデート。
           <ulink url='&lfs-ticket-root;5456'>#5456</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to psmisc-23.7 へのアップデート。
+          <para>[bdubbs] - psmisc-23.7 へのアップデート。
           <ulink url='&lfs-ticket-root;5454'>#5454</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to kmod-32 へのアップデート。
+          <para>[bdubbs] - kmod-32 へのアップデート。
           <ulink url='&lfs-ticket-root;5455'>#5455</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to elfutils-0.191 へのアップデート。
+          <para>[bdubbs] - elfutils-0.191 へのアップデート。
           <ulink url='&lfs-ticket-root;5451'>#5451</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>

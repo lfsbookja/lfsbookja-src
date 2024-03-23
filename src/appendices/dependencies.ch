@@ -1603,6 +1603,33 @@
 @z
 
 %----------------------------------------------------------------------
+@x lz4
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, and Make</seg>
+@y
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+@z
+@x
+          <seg>Glibc</seg>
+@y
+          <seg>Glibc</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>Zstd <phrase revision="systemd">and Systemd</phrase></seg>
+@y
+          <seg>Zstd<phrase revision="systemd">, Systemd</phrase></seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x M4
           <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed, and
           Texinfo</seg>
@@ -1707,9 +1734,9 @@
 
 %----------------------------------------------------------------------
 @x Man-Pages
-         <seg>Bash, Coreutils, and Make</seg>
+         <seg>Bash, Coreutils, Make, and Sed</seg>
 @y
-         <seg>Bash, Coreutils, Make</seg>
+         <seg>Bash, Coreutils, Make, Sed</seg>
 @z
 @x
           <seg>None</seg>
@@ -2169,7 +2196,7 @@
           <seg>
             &bdb;,
             <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
-            <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>, and
+            <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>,
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
           </seg>
 @z
@@ -2330,12 +2357,12 @@
 %----------------------------------------------------------------------
 @x Systemd
          <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
-         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Lz4, Meson,
          OpenSSL, Pkgconf, Sed, Util-linux, and Zstd</seg>
 @y
          <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
-         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
-         OpenSSL, Pkgconf, Sed, Util-linux, and Zstd</seg>
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Lz4, Meson,
+         OpenSSL, Pkgconf, Sed, Util-linux, Zstd</seg>
 @z
 @x
           <seg>Acl, Glibc, Libcap, Libxcrypt, OpenSSL, Util-linux, Xz,
@@ -2368,7 +2395,7 @@
 @x Sysvinit
           <seg>Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
 @y
-          <seg>Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Make, Sed</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2726,9 +2753,9 @@
 
 %----------------------------------------------------------------------
 @x Zstd
-          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz, and Zlib</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Lz4, Make, Xz, and Zlib</seg>
 @y
-          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz, Zlib</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Lz4, Make, Xz, Zlib</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2746,11 +2773,7 @@
           <seg>Binutils, GCC, Libelf, &systemd-udev;</seg>
 @z
 @x
-          <seg>
-            <ulink url="https://lz4.github.io/lz4/">LZ4</ulink>
-          </seg>
+            None
 @y
-          <seg>
-            <ulink url="https://lz4.github.io/lz4/">LZ4</ulink>
-          </seg>
+            なし
 @z
