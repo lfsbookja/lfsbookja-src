@@ -38,6 +38,24 @@
 @z
 
 @x
+      <para>2024-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[timtas] - Update to sysvinit-3.09. Fixes
+          <ulink url="&lfs-ticket-root;5466">#5466</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-03-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[timtas] - sysvinit-3.09 へのアップデート。
+          <ulink url="&lfs-ticket-root;5466">#5466</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-03-19</para>
       <itemizedlist>
         <listitem>
