@@ -38,6 +38,23 @@
 @z
 
 @x
+      <para>2024-03-29</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - Revert to xz-5.4.6 due to uptream 
+           compromise.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-03-29</para>
+      <itemizedlist>
+        <listitem>
+           <para>[bdubbs] - アップストリームの判断に従い xz-5.4.6 に戻す。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-04-25</para>
       <itemizedlist>
         <listitem>
