@@ -41,15 +41,6 @@
 @z
 
 @x
-    <para>Fix a security vulnerability in the <command>split</command>
-    utility:</para>
-@y
-    <para>
-    <command>split</command> ユーティリティーにおけるセキュリティぜい弱性を修正します。
-    </para>
-@z
-
-@x
     <para>Now prepare Coreutils for compilation:</para>
 @y
     <para>&PreparePackage1;Coreutils&PreparePackage2;</para>
@@ -162,6 +153,14 @@
     <para>
     一時的に作成したグループを削除します。
     </para>
+@z
+
+@x
+       Two tests, tests/cp/preserve-mode.sh and tests/mv/acl.sh, are known to
+       fail in the chroot environment, but pass in a complete system.
+@y
+       tests/cp/preserve-mode.sh、tests/mv/acl.sh というテストは chroot 環境内では失敗します。
+       ただし完成したシステム内では成功します。
 @z
 
 @x

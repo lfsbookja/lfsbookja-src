@@ -77,20 +77,18 @@
 @z
 
 @x
-    <para>The <emphasis>hardlink</emphasis> tests will fail if the host's kernel
-    does not have the option <option>CONFIG_CRYPTO_USER_API_HASH</option>
-    enabled or does not have any options providing a SHA256 implementation
-    (for example, <option>CONFIG_CRYPTO_SHA256</option>, or
-    <option>CONFIG_CRYPTO_SHA256_SSSE3</option> if the CPU supports
-    Supplemental SSE3) enabled. In addition,
-    two sub-tests from misc: mbsencode and one sub-test from script: replay are 
-    known to fail.</para>
+       The <emphasis>hardlink</emphasis> tests will fail if the host's kernel
+       does not have the option <option>CONFIG_CRYPTO_USER_API_HASH</option>
+       enabled or does not have any options providing a SHA256 implementation
+       (for example, <option>CONFIG_CRYPTO_SHA256</option>, or
+       <option>CONFIG_CRYPTO_SHA256_SSSE3</option> if the CPU supports
+       Supplemental SSE3) enabled. In addition, the lsfd: inotify test will
+       fail if the kernel option <option>CONFIG_NETLINK_DIAG</option> is not
+       enabled.
 @y
-    <para>
-    <emphasis>hardlink</emphasis>テストは失敗する場合があります。
-    それはカーネルオプションの <option>CONFIG_CRYPTO_USER_API_HASH</option> が有効でない場合、あるいは SHA256 機能を提供するオプション（たとえば <option>CONFIG_CRYPTO_SHA256</option> や CPU が Supplemental SSE3 をサポートする際の <option>CONFIG_CRYPTO_SHA256_SSSE3</option> など）が一つもない場合です。
-    さらに misc 内のサブテスト mbsencode と script 内のサブテスト replay が失敗します。
-    </para>
+       <emphasis>hardlink</emphasis>テストは失敗する場合があります。
+       それはカーネルオプションの <option>CONFIG_CRYPTO_USER_API_HASH</option> が有効でない場合、あるいは SHA256 機能を提供するオプション（たとえば <option>CONFIG_CRYPTO_SHA256</option> や CPU が Supplemental SSE3 をサポートする際の <option>CONFIG_CRYPTO_SHA256_SSSE3</option> など）が一つもない場合です。
+       さらにカーネルオプション <option>CONFIG_NETLINK_DIAG</option> が無効である場合、lsfd 内のテスト inotify が失敗します。
 @z
 
 @x
