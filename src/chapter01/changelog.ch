@@ -107,7 +107,7 @@
       <para>2024-03-29</para>
       <itemizedlist>
         <listitem>
-           <para>[bdubbs] - Revert to xz-5.4.6 due to uptream 
+           <para>[bdubbs] - Revert to xz-5.4.6 due to upstream 
            compromise.</para>
         </listitem>
       </itemizedlist>
@@ -121,7 +121,7 @@
 @z
 
 @x
-      <para>2024-04-25</para>
+      <para>2024-03-25</para>
       <itemizedlist>
         <listitem>
           <para>[timtas] - Update to sysvinit-3.09. Fixes

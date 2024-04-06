@@ -156,10 +156,11 @@
 @z
 
 @x
-       Two tests, tests/cp/preserve-mode.sh and tests/mv/acl.sh, are known to
+       Two tests, <filename>tests/cp/preserve-mode.sh</filename> and
+       <filename>tests/mv/acl.sh</filename>, are known to
        fail in the chroot environment, but pass in a complete system.
 @y
-       tests/cp/preserve-mode.sh、tests/mv/acl.sh というテストは chroot 環境内では失敗します。
+       <filename>tests/cp/preserve-mode.sh</filename>、<filename>tests/mv/acl.sh</filename> というテストは chroot 環境内では失敗します。
        ただし完成したシステム内では成功します。
 @z
 

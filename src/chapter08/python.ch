@@ -62,17 +62,27 @@
 @z
 
 @x
-    <para>Running the tests at this point is not recommended.  The
-    tests are known to hang indefinitely in the partial LFS environment.
-    If desired, the tests can be rerun at the end of this chapter, or
-    when Python 3 is reinstalled in BLFS.  To run the tests anyway,
-    issue <command>make test</command>.</para>
+    <para>Some tests are known to hang indefinitely.  So to test the
+    results, run the test suite but set a 2-minute time limit for each
+    test case:</para>
 @y
     <para>
-    この時点においてテスト実行することはお勧めしません。
-    部分的にしか仕上がっていない LFS 環境では安定せずハングすることがあります。
-    テストを必要とする場合は、本章を一番最後まで進めてから再度実行するか、あるいは BLFS において Python 3 をインストール際に行います。
-    そうではなくここでテスト実行をするなら <command>make test</command> を実行します。
+    テストの中には不安定でありハングするものがあります。
+    そういったものをテストする場合は、各テストケースにおいて 2 分以内の制限をかけてテストスイートを実行してください。
+    </para>
+@z
+
+@x
+    <para>For a relatively slow system you may need to increase the time
+    limit and 1 SBU (measured when building Binutils pass 1 with one CPU
+    core) should be enough.  Some tests are flaky, so the test suite will
+    automatically re-run failed tests.  If a test failed but then passed
+    when re-run, it should be considered as passed.</para>
+@y
+    <para>
+    比較的遅いシステムの場合は、その時間制限を増やせば 1 SBU (1 コアを使った Binutils 1 回目のビルド時間) で処理できるはずです。
+    テストの中には一風変わったものがあって、自動的に再実行された上で失敗するものがあります。
+    一度失敗して再実行の際に成功したものは、テストが成功したものとみなすことができます。
     </para>
 @z
 

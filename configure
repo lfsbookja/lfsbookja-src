@@ -4737,7 +4737,7 @@ fi
 
 
 
-TARGETVER=r12.0-261
+TARGETVER=r12.0-266
 if test "x$revspec" = "xsystemd"; then
   TARGETVER="$TARGETVER-systemd"
 fi
