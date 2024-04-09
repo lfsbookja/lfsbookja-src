@@ -62,7 +62,7 @@
 @z
 
 @x
-    <para>Some tests are known to hang indefinitely.  So to test the
+    <para>Some tests are known to occasionally hang indefinitely.  So to test the
     results, run the test suite but set a 2-minute time limit for each
     test case:</para>
 @y

@@ -51,10 +51,13 @@
 @z
 
 @x
-    <para>If desired, run the test suite as a non-&root; user:</para>
+    <para>If desired, create a dummy <filename>/etc/fstab</filename> file
+    to satisfy two tests and run the test suite as a non-&root;
+    user:</para>
 @y
     <para>
-    必要なら &root; ユーザー以外にて、以下のようにテストスイートを実行します。
+    ダミーの <filename>/etc/fstab</filename> ファイルを作れば 2 つのテストがうまく実行できます。
+    テストスイートの実行は &root; ユーザー以外にて以下を実行します。
     </para>
 @z
 
