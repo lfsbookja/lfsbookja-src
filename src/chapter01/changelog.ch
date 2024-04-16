@@ -38,6 +38,80 @@
 @z
 
 @x
+      <para>2024-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-69.5.1. Fixes
+          <ulink url='&lfs-ticket-root;5478'>#5478</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to python3-3.12.3. Fixes
+          <ulink url='&lfs-ticket-root;5476'>#5476</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.3.0. Fixes
+          <ulink url='&lfs-ticket-root;5475'>#5475</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ninja-1.12.0. Fixes
+          <ulink url='&lfs-ticket-root;5477'>#5477</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.12.1. Fixes
+          <ulink url='&lfs-ticket-root;5474'>#5474</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.8.6. Fixes
+          <ulink url='&lfs-ticket-root;5472'>#5472</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240412. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.0330. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] -  setuptools-69.5.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5478'>#5478</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  python3-3.12.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5476'>#5476</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  openssl-3.3.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5475'>#5475</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  ninja-1.12.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5477'>#5477</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  man-db-2.12.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5474'>#5474</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  linux-6.8.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5472'>#5472</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  iana-etc-20240412 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] -  vim-9.1.0330 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-03-31</para>
       <itemizedlist>
         <listitem>

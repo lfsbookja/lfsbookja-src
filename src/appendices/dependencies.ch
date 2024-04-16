@@ -1928,9 +1928,9 @@
           <seg>GCC, Glibc</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg><ulink url="&blfs-book;general/cmake.html">cmake</ulink></seg>
 @y
-          <seg>なし</seg>
+          <seg><ulink url="&blfs-book;general/cmake.html">cmake</ulink></seg>
 @z
 @x
           <seg>Meson</seg>
