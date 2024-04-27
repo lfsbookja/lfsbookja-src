@@ -38,6 +38,22 @@
 @z
 
 @x
+      <para>2024-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Make minor change to ifup script output text.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ifup スクリプトの出力テキストの若干の修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-04-15</para>
       <itemizedlist>
         <listitem>

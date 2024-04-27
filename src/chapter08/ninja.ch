@@ -85,7 +85,7 @@
 
 @x
     <para>The package tests cannot run in the chroot environment. They require 
-    require <ulink url="&blfs-book;general/cmake.html">cmake</ulink>.</para>
+    <ulink url="&blfs-book;general/cmake.html">cmake</ulink>.</para>
 @y
     <para>
     本パッケージのテストは chroot 環境内において実行することはできません。
