@@ -75,26 +75,6 @@
           </para>
 @z
 
-@x --enable-widec
-          <para>This switch causes wide-character libraries (e.g., <filename
-          class="libraryfile">libncursesw.so.&ncurses-release;</filename>)
-          to be built instead of normal ones (e.g., <filename
-          class="libraryfile">libncurses.so.&ncurses-release;</filename>).
-          These wide-character libraries are usable in both multibyte and
-          traditional 8-bit locales, while normal libraries work properly
-          only in 8-bit locales. Wide-character and normal libraries are
-          source-compatible, but not binary-compatible.</para>
-@y
-          <para>
-          本スイッチは通常のライブラリ (<filename
-          class="libraryfile">libncurses.so.&ncurses-release;</filename>) ではなくワイド文字対応のライブラリ (<filename
-          class="libraryfile">libncursesw.so.&ncurses-release;</filename>) をビルドすることを指示します。
-          ワイド文字対応のライブラリは、マルチバイトロケールと従来の 8ビットロケールの双方に対して利用可能です。
-          通常のライブラリでは 8ビットロケールに対してしか動作しません。
-          ワイド文字対応と通常のものとでは、ソース互換があるもののバイナリ互換がありません。
-          </para>
-@z
-
 @x
     <para>Compile the package:</para>
 @y
@@ -118,7 +98,7 @@
 
 @x
     <para>The installation of this package will overwrite
-    <filename class="libraryfile">libncursesw.so.&ncurses-release;</filename>
+    <filename class="libraryfile">libncursesw.so.&ncurses-version;</filename>
     in-place.  It may crash the shell process which is using code and data
     from the library file.  Install the package with
     <literal>DESTDIR</literal>, and replace the library file correctly using
@@ -129,7 +109,7 @@
 @y
     <para>
     本パッケージをインストールすると、所定位置にある <filename
-    class="libraryfile">libncursesw.so.&ncurses-release;</filename> が上書きされます。
+    class="libraryfile">libncursesw.so.&ncurses-version;</filename> が上書きされます。
     このときに、そのライブラリファイルのコードやデータを利用しているシェルプロセスが、クラッシュする場合があります。
     そこで本パッケージは <literal>DESTDIR</literal> を使ってインストールして、<command>install</command> コマンドによってライブラリファイルを正しく置き換えるようにします。
     (ヘッダーファイル <filename>curses.h</filename> も <xref linkend='ch-tools-ncurses'/> で行ったものと同様に、ワイドキャラクター ABI が確実に利用されるように修正されます。)

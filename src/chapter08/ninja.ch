@@ -88,16 +88,8 @@
     <ulink url="&blfs-book;general/cmake.html">cmake</ulink>.</para>
 @y
     <para>
-    本パッケージのテストは chroot 環境内において実行することはできません。
-    テストには <ulink url="&blfs-book;general/cmake.html">cmake</ulink> が必要です。
-    </para>
-@z
-
-@x
-    <para>To test the results, issue:</para>
-@y
-    <para>
-    ビルド結果をテストする場合は、以下を実行します。
+    本パッケージのテストは chroot 環境のもとでは実行することができません。
+    実行するには <ulink url="&blfs-book;general/cmake.html">cmake</ulink> が必要です。
     </para>
 @z
 
