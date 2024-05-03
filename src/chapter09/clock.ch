@@ -4,7 +4,7 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-  <title>Configuring the system clock</title>
+  <title>Configuring the System Clock</title>
 @y
   <title>システムクロックの設定</title>
 @z

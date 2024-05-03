@@ -232,6 +232,27 @@
 @z
 
 @x
+    <para>Some tests need a basic <filename>/etc/os-release</filename> file.
+    To test the results, issue:</para>
+@y
+    <para>
+    テストの中には、あのシンプルな <filename>/etc/os-release</filename> ファイルを必要とするものがあります。
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
+@z
+
+@x
+    <para>One test named <literal>systemd:core / test-namespace</literal>
+    is known to fail in the LFS chroot environment.  Some other tests may
+    fail because they depend on various kernel configuration options.</para>
+@y
+    <para>
+    <literal>systemd:core / test-namespace</literal> というテストは LFS の chroot 環境内では失敗します。
+    また別のテストでも失敗するものがありますが、これはさまざまなカーネルオプションに依存しているためです。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
