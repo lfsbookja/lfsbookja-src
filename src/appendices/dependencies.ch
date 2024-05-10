@@ -282,11 +282,11 @@
 
 %----------------------------------------------------------------------
 @x bison
-          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, M4, Make,
-          Perl, and Sed</seg>
+          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc,
+          Grep, M4, Make, Perl, and Sed</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, M4, Make,
-          Perl, Sed</seg>
+          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc,
+          Grep, M4, Make, Perl, Sed</seg>
 @z
 @x
           <seg>Glibc</seg>
