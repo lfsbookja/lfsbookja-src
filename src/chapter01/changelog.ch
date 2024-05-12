@@ -38,35 +38,59 @@
 @z
 
 @x
-      <para>2024-05-01</para>
+      <para>2024-05-11</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Add security fix to glibc. Fixes
-          <ulink url='&lfs-ticket-root;5481'>#5481</ulink>.</para>
+          <para>[bdubbs] - Update to vim-9.1.0405. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to linux-6.8.8. Fixes
-          <ulink url='&lfs-ticket-root;5480'>#5480</ulink>.</para>
+          <para>[bdubbs] - Update to util-linux-2.40.1. Fixes
+          <ulink url='&lfs-ticket-root;5482'>#5482</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to ncurses-6.5. Fixes
-          <ulink url='&lfs-ticket-root;5483'>#5483</ulink>.</para>
+          <para>[bdubbs] - Update to linux-6.8.9. Fixes
+          <ulink url='&lfs-ticket-root;5484'>#5484</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to jinja2-3.1.4 (Python mpdule). Fixes
+          <ulink url='&lfs-ticket-root;5485'>#5485</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240502. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-14.1.0. Fixes
+          <ulink url='&lfs-ticket-root;5486'>#5486</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
-      <para>2024-05-01</para>
+      <para>2024-05-11</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - glibc に対するセキュリティフィックスを追加。
-          <ulink url='&lfs-ticket-root;5481'>#5481</ulink> を Fix に。</para>
+          <para>[bdubbs] - vim-9.1.0405 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - linux-6.8.8. Fixes
-          <ulink url='&lfs-ticket-root;5480'>#5480</ulink> を Fix に。</para>
+          <para>[bdubbs] - util-linux-2.40.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5482'>#5482</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - ncurses-6.5 へのアップデート。
-          <ulink url='&lfs-ticket-root;5483'>#5483</ulink> を Fix に。</para>
+          <para>[bdubbs] - linux-6.8.9 へのアップデート。
+          <ulink url='&lfs-ticket-root;5484'>#5484</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - jinja2-3.1.4 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5485'>#5485</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240502 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-14.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5486'>#5486</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z

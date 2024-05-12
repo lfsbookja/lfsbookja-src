@@ -19,25 +19,6 @@
 @z
 
 @x
-    <para>At first, fix an issue breaking
-    <filename class="libraryfile">libasan.a</filename> building this package
-    with Glibc-2.34 or later:</para>
-@y
-    <para>
-    はじめに Glibc-2.34 またはそれ以降を使った際に、本パッケージの <filename
-    class="libraryfile">libasan.a</filename> ビルドが不適切になる問題を修正します。
-    </para>
-@z
-
-@x
-    <para>First fix a problem with the latest version of glibc:</para>
-@y
-    <para>
-    まずは glibc の最新版における問題を修正します。
-    </para>
-@z
-
-@x
     <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
@@ -157,8 +138,8 @@
       <para>In this section, the test suite for GCC is considered
       important, but it takes a long time. First-time builders are
       encouraged to run the test suite.  The time to run the tests can be
-      reduced significantly by adding -jx to the <command>make -k check</command> command below,
-      where x is the number of CPU cores on your system.</para>
+      reduced significantly by adding -jx to the <command>make -k check</command> 
+      command below, where x is the number of CPU cores on your system.</para>
 @y
       <para>
       本節における GCC のテストスイートは極めて重要なものです。
@@ -177,6 +158,14 @@
    GCC テストスイートの中で、デフォルトのスタックを使い果たすものがあります。
    そこでテスト実施にあたり、スタックサイズを増やします。
    </para>
+@z
+
+@x
+    <para>Now remove/fix several known test failures:</para>
+@y
+    <para>
+    テストスイートの不備をここで削除/修正します。
+    </para>
 @z
 
 @x
@@ -217,21 +206,21 @@
     </para>
 @z
 
-@x
-    Eight gcc tests (out of over 185,000):
-    <!-- https://gcc.gnu.org/PR106375 --><filename>pr56837.c</filename>
-    and seven tests in the <filename class='directory'>analyzer</filename>
-    directory are known to fail.
-@y
-    (185,000 以上におよぶテストの中から) gcc テストの 8 つ、すなわち <filename>pr56837.c</filename>、それに <filename class='directory'>analyzer</filename> ディレクトリにある 7 つのテストが失敗します。
-@z
+%@x
+%    Eight gcc tests (out of over 185,000):
+%    <!-- https://gcc.gnu.org/PR106375 --><filename>pr56837.c</filename>
+%    and seven tests in the <filename class='directory'>analyzer</filename>
+%    directory are known to fail.
+%@y
+%    (185,000 以上におよぶテストの中から) gcc テストの 8 つ、すなわち <filename>pr56837.c</filename>、それに <filename class='directory'>analyzer</filename> ディレクトリにある 7 つのテストが失敗します。
+%@z
 
-@x
-    One libstdc++ test (out of over 15000), <filename>copy.cc</filename>, is
-    known to fail.
-@y
-    (15,000 以上の ) libstdc++ テスト <filename>copy.cc</filename> が 1 つだけ失敗します。
-@z
+%@x
+%    One libstdc++ test (out of over 15000), <filename>copy.cc</filename>, is
+%    known to fail.
+%@y
+%    (15,000 以上の ) libstdc++ テスト <filename>copy.cc</filename> が 1 つだけ失敗します。
+%@z
 
 @x
     For g++, 21 tests (out of approximately 250,000): 14
@@ -252,14 +241,15 @@
 @z
 
 @x
-    <para>A few unexpected failures cannot always be avoided. The GCC developers
-    are usually aware of these issues, but have not resolved them yet.
+    <para>A few unexpected failures cannot always be avoided. In some cases
+    test failures depend on the specific hardware of the system.<!--The GCC developers
+    are usually aware of these issues, but have not resolved them yet.-->
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
 @y
     <para>
     テスト失敗は回避することができません。
-    GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
+    その中には特定のハードウェアに起因するものもあります。
     上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
 @z

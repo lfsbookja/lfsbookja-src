@@ -58,10 +58,12 @@
 @z
 
 @x
-    <para>The test t/subobj.sh is known to fail.</para>
+    <para>Out of 2926 tests, 52 are known to fail due to incompatibilities in the 
+    test scripts with gcc-14.1 or later.</para>
 @y
     <para>
-    テスト t/subobj.sh は失敗します。
+    2926 個のテストのうち 52 個が失敗します。
+    これはテストスクリプトが gcc-14.1 以降と互換性がないためです。
     </para>
 @z
 

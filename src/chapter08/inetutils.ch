@@ -18,6 +18,14 @@
 @z
 
 @x
+    <para>First, make the package build with gcc-14.1 or later::</para>
+@y
+    <para>
+    gcc-14.1 以降を用いて本パッケージがビルドできるようにします。
+    </para>
+@z
+
+@x
     <para>Prepare Inetutils for compilation:</para>
 @y
     <para>&PreparePackage1;Inetutils&PreparePackage2;</para>

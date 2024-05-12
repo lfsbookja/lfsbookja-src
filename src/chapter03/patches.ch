@@ -61,22 +61,10 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
-@x Coreutils Chmod Fix Patch
-        <para>Download: <ulink url="&patches-root;&coreutils-chmod-patch;"/></para>
+@x Expect GCC14 Patch
+        <para>Download: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&coreutils-chmod-patch;"/></para>
-@z
-
-@x Gcc glibc-2.36 Fixes Patch
-        <para>Download: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
-@z
-
-@x Glibc Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
 @z
 
 @x Glibc FHS Patch

@@ -17,15 +17,18 @@
 
 @x
         If your system has UEFI support and you wish to boot LFS with UEFI,
-        you can skip this package in LFS,
-        and install GRUB with UEFI support (and its dependencies) by following
-        the instructions on
+        you need to install GRUB with UEFI support (and its dependencies) by
+        following the instructions on
         <ulink url="&blfs-book;postlfs/grub-efi.html">the BLFS page</ulink>.
+        You may skip this package, or install this package and the BLFS
+        GRUB for UEFI package without conflict (the BLFS page provides
+        instructions for both cases).
 @y
-        システムが UEFI をサポートしていて、これを使って LFS を起動しようとする場合は、LFS における本パッケージは省略することができます。
+        システムが UEFI をサポートしていて、これを使って LFS を起動しようとする場合は、UEFI サポートを含む GRUB (およびその依存パッケージ) をインストールする必要があります。
         その場合は <ulink
-        url="&blfs-book;postlfs/grub-efi.html">BLFS ページ</ulink> に従って UEFI 対応の GRUB
-        (およびその依存パッケージ) をインストールしてください。
+        url="&blfs-book;postlfs/grub-efi.html">BLFS ページ</ulink> の手順に従ってください。
+        このパッケージのインストールは省略できます。
+        あるいは BLFS ブックに示す UEFI パッケージのサポートを含む GRUB を競合することなくインストールすることもできます (BLFS ではどちらの状況に対しても、その手順を説明しています)。
 @z
 
 @x

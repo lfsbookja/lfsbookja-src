@@ -69,6 +69,14 @@
 @z
 
 @x
+    <para>Now, make some changes to allow the package with gcc-14.1 or later:</para>
+@y
+    <para>
+    パッケージが gcc-14.1 以降に対応するための変更を加えます。
+    </para>
+@z
+
+@x
     <para>Prepare Expect for compilation:</para>
 @y
     <para>&PreparePackage1;Expect&PreparePackage2;</para>
