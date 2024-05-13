@@ -34,13 +34,13 @@
     </para>
 @z
 
-%@x
-%    <para>Now fix a security vulnerability:</para>
-%@y
-%    <para>
-%    ここでセキュリティぜい弱性を修正します。
-%    </para>
-%@z
+@x
+    <para>Now fix a security vulnerability:</para>
+@y
+    <para>
+    ここでセキュリティぜい弱性を修正します。
+    </para>
+@z
 
 @x
     <para>The Glibc documentation recommends building Glibc

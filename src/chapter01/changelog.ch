@@ -96,6 +96,40 @@
 @z
 
 @x
+      <para>2024-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add security fix to glibc. Fixes
+          <ulink url='&lfs-ticket-root;5481'>#5481</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.8.8. Fixes
+          <ulink url='&lfs-ticket-root;5480'>#5480</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ncurses-6.5. Fixes
+          <ulink url='&lfs-ticket-root;5483'>#5483</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc にセキュリティフィックスを追加。
+          <ulink url='&lfs-ticket-root;5481'>#5481</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.8.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5480'>#5480</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ncurses-6.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5483'>#5483</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-04-16</para>
       <itemizedlist>
         <listitem>

@@ -67,6 +67,12 @@
         <para>&Download;: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
 @z
 
+@x Glibc Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+@z
+
 @x Glibc FHS Patch
         <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
 @y
