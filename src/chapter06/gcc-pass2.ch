@@ -120,8 +120,8 @@
           <para>We are cross-compiling GCC, so it's impossible to build
           target libraries (<filename class="libraryfile">libgcc</filename>
           and <filename class="libraryfile">libstdc++</filename>) with the
-          previously compiled GCC binaries&mdash;those binaries won't run on the
-          host.  The GCC build system will attempt to use the host's
+          GCC binaries compiled in this pass&mdash;those binaries won't run
+          on the host.  The GCC build system will attempt to use the host's
           C and C++ compilers as a workaround by default.
           Building the GCC target libraries with a different
           version of GCC is not supported, so using the host's compilers may cause
@@ -157,18 +157,14 @@
 
 @x --disable-libsanitizer
           <para>Disable GCC sanitizer runtime libraries.  They are not
-          needed for the temporary installation.  This switch is necessary
-          to build GCC without
-          <systemitem class='library'>libcrypt</systemitem> installed for
-          the target.  In <xref linkend='ch-tools-gcc-pass1'/> it was
-          implied by <parameter>--disable-libstdcxx</parameter>, but now we
-          have to explicitly pass it.</para>
+          needed for the temporary installation.  In
+          <xref linkend='ch-tools-gcc-pass1'/> it was implied by
+          <parameter>--disable-libstdcxx</parameter>, and now we can
+          explicitly pass it.</para>
 @y
           <para>
           GCC のサニタイザーランタイムライブラリを無効にします。
           これはここでの一時的インストールにおいては不要です。
-          本スイッチは、インストールターゲットにおいて <systemitem
-          class='library'>libcrypt</systemitem> がインストールされていない状況で GCC をビルドする場合に必要となります。
           <xref linkend='ch-tools-gcc-pass1'/> においては、<parameter>--disable-libstdcxx</parameter> によって暗にそれを行っていましたが、ここではそれを明示的に行う必要があります。
           </para>
 @z

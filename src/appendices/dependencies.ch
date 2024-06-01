@@ -759,11 +759,11 @@
 %----------------------------------------------------------------------
 @x Gcc
           <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-          Gettext, Glibc, GMP, Grep, Libxcrypt, M4, Make, MPC, MPFR, Patch,
+          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch,
           Perl, Sed, Tar, Texinfo, and Zstd</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-          Gettext, Glibc, GMP, Grep, Libxcrypt, M4, Make, MPC, MPFR, Patch,
+          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch,
           Perl, Sed, Tar, Texinfo, Zstd</seg>
 @z
 @x
@@ -1530,9 +1530,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>GCC, Perl, Python, Shadow, and &systemd-udev;</seg>
+          <seg>Perl, Python, Shadow, and &systemd-udev;</seg>
 @y
-          <seg>GCC, Perl, Python, Shadow, &systemd-udev;</seg>
+          <seg>Perl, Python, Shadow, &systemd-udev;</seg>
 @z
 @x
           <seg>None</seg>

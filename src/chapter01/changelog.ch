@@ -38,6 +38,121 @@
 @z
 
 @x
+      <para>2024-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.4.1. Fixes
+          <ulink url='&lfs-ticket-root;5498'>#5498</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.6.2. Fixes
+          <ulink url='&lfs-ticket-root;5471'>#5471</ulink>.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Add linux-6.9.x compatibility instructions to 
+           <phrase revision="systemd">systemd</phrase>
+           <phrase revision="sysv">udev</phrase>. 
+           Fixes <ulink url='&lfs-ticket-root;5496'>#5496</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-70.0.0 (python module). Fixes
+          <ulink url='&lfs-ticket-root;5491'>#5491</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ninja-1.12.1. Fixes
+          <ulink url='&lfs-ticket-root;5489'>#5489</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.8. Fixes
+          <ulink url='&lfs-ticket-root;5494'>#5494</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.9.3. Fixes
+          <ulink url='&lfs-ticket-root;5491'>#5491</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.70. Fixes
+          <ulink url='&lfs-ticket-root;5493'>#5493</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-6.9.0. Fixes
+          <ulink url='&lfs-ticket-root;5492'>#5492</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.47.1. Fixes
+          <ulink url='&lfs-ticket-root;5495'>#5495</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-1.4.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5498'>#5498</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz-5.6.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5471'>#5471</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - <phrase revision="systemd">systemd</phrase>
+           <phrase revision="sysv">udev</phrase> の手順を linux-6.9.x と互換性のあるように追記。
+           <ulink url='&lfs-ticket-root;5496'>#5496</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-70.0.0 (python module) へのアップデート。
+          <ulink url='&lfs-ticket-root;5491'>#5491</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ninja-1.12.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5489'>#5489</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5494'>#5494</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.9.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5491'>#5491</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.70 へのアップデート。
+          <ulink url='&lfs-ticket-root;5493'>#5493</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-6.9.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5492'>#5492</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.47.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5495'>#5495</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2024-05-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Synchronize coreutils i18n patch from Fedora
+          to fix a build failure on 32-bit x86 and an alarming compiler
+          warning on both 32-bit x86 and x86_64 with GCC 14.1 or
+          later.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-05-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Fedora の coreutils に対する i18n パッチを導入。
+          これによって GCC 14.1 およびそれ以降を用いた際の、32 ビット x86 でのビルド失敗、また 32 ビット x86 および x86_64 でのコンパイラー警告を修正。
+
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-05-11</para>
       <itemizedlist>
         <listitem>

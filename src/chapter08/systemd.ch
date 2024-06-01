@@ -32,6 +32,12 @@
 @z
 
 @x
+ <para>Next, fix compatibility with linux-6.9 and later:</para>
+@y
+ <para>linux-6.9 以降との互換性を持つように修正します。</para>
+@z
+
+@x
     <para>Now fix a security vulnerability in the DNSSEC verification of
     <command>systemd-resolved</command> and a bug breaking running
     <command>systemd-analyze verify</command> on an instantiated systemd
