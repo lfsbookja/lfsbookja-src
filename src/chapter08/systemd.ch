@@ -32,24 +32,6 @@
 @z
 
 @x
- <para>Next, fix compatibility with linux-6.9 and later:</para>
-@y
- <para>linux-6.9 以降との互換性を持つように修正します。</para>
-@z
-
-@x
-    <para>Now fix a security vulnerability in the DNSSEC verification of
-    <command>systemd-resolved</command> and a bug breaking running
-    <command>systemd-analyze verify</command> on an instantiated systemd
-    unit:</para>
-@y
-    <para>
-    <command>systemd-resolved</command> の DNSSEC 検証におけるセキュリティぜい弱性を修正します。
-    またインスタンス化された systemd ユニット上において、実行中の <command>systemd-analyze verify</command> が壊れてしまうバグを修正します。
-    </para>
-@z
-
-@x
     <para>Prepare systemd for compilation:</para>
 @y
     <para>&PreparePackage1;systemd&PreparePackage2;</para>
@@ -248,12 +230,13 @@
 @z
 
 @x
-    <para>One test named <literal>systemd:core / test-namespace</literal>
-    is known to fail in the LFS chroot environment.  Some other tests may
+    <para>Three tests: <literal>systemd:core / test-namespace</literal>,
+    <literal>test-chase</literal>, and <literal>test-systemd-tmpfiles</literal>,
+    are known to fail in the LFS chroot environment.  Some other tests may
     fail because they depend on various kernel configuration options.</para>
 @y
     <para>
-    <literal>systemd:core / test-namespace</literal> というテストは LFS の chroot 環境内では失敗します。
+    <literal>systemd:core / test-namespace</literal>、<literal>test-chase</literal>、<literal>test-systemd-tmpfiles</literal> という 3 つのテストは LFS の chroot 環境内では失敗します。
     また別のテストでも失敗するものがありますが、これはさまざまなカーネルオプションに依存しているためです。
     </para>
 @z

@@ -129,6 +129,14 @@
 @z
 
 @x
+  <para>Some packages need a locale.</para>
+@y
+  <para>
+  以下のロケールを必要としているパッケージがあるので生成します。
+  </para>
+@z
+
+@x
   <para>Some tests in <xref linkend="chapter-building-system"/> need a regular
   user. We add this user here and delete this account at the end of that
   chapter.</para>

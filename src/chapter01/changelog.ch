@@ -38,6 +38,80 @@
 @z
 
 @x
+      <para>2024-06-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.0478. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240607. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-256. Fixes
+          <ulink url='&lfs-ticket-root;5504'>#5504</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to python3-3.12.4. Fixes
+          <ulink url='&lfs-ticket-root;5502'>#5502</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.40.0. Fixes
+          <ulink url='&lfs-ticket-root;5503'>#5503</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.3.1 (Security fix). Fixes
+          <ulink url='&lfs-ticket-root;5500'>#5500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.9.4. Fixes
+          <ulink url='&lfs-ticket-root;5491'>#5505</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to findutils-4.10.0. Fixes
+          <ulink url='&lfs-ticket-root;5499'>#5499</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-06-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.0478 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240607 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-256 へのアップデート。
+          <ulink url='&lfs-ticket-root;5504'>#5504</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - python3-3.12.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5502'>#5502</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.40.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5503'>#5503</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.3.1 (セキュリティフィックス) へのアップデート。
+          <ulink url='&lfs-ticket-root;5500'>#5500</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.9.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5491'>#5505</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - findutils-4.10.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5499'>#5499</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-05-31</para>
       <itemizedlist>
         <listitem>

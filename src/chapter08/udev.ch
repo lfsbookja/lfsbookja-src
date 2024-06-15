@@ -55,12 +55,6 @@
 @z
 
 @x
- <para>Next, fix compatibility with linux-6.9 and later:</para>
-@y
- <para>linux-6.9 以降との互換性を持つように修正します。</para>
-@z
-
-@x
     <para>Adjust the hardcoded paths to network configuration files for the
     standalone udev installation:</para>
 @y

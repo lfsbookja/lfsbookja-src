@@ -32,6 +32,19 @@
 @z
 
 @x
+    <para>Prevent hard coding library search paths (rpath) into
+    the shared libraries.  This package does not need rpath for an
+    installation into the standard location, and rpath may sometimes cause
+    unwanted effects or even security issues:</para>
+@y
+    <para>
+    共有ライブラリに対して、ライブラリ検索パス (rpath) がハードコーディングされないようにします。
+    本パッケージは標準的なディレクトリにインストールするため rpath を必要ありません。
+    rpath は時に思わぬ弊害やセキュリティ問題を引き起こす場合があります。
+    </para>
+@z
+
+@x
     <para>Now fix a problem identified upstream:</para>
 @y
     <para>

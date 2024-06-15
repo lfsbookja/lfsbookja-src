@@ -41,6 +41,26 @@
 @z
 
 @x
+      <title>The meaning of the new configure parameters:</title>
+@y
+      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;</title>
+@z
+
+@x --disable-rpath
+          <para>This parameter prevents hard coding library search paths
+          (rpath) into the binary executable files and shared libraries.
+          This package does not need rpath for an installation into the
+          standard location, and rpath may sometimes cause unwanted effects
+          or even security issues.</para>
+@y
+          <para>
+          このパラメーターはバイナリ実行ファイルや共有ライブラリにおいて、ライブラリ検索パス (rpath) がハードコーディングされないようにします。
+          本パッケージは標準的なディレクトリにインストールするため rpath を必要ありません。
+          rpath は時に思わぬ弊害やセキュリティ問題を引き起こす場合があります。
+          </para>
+@z
+
+@x
     <para>Build the package:</para>
 @y
     <para>パッケージをビルドします。</para>
