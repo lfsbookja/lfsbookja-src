@@ -134,7 +134,8 @@
 @z
 
 @x
-        This has been discussed in <xref linkend='ch-partitioning-aboutlfs'/>.
+       This has been discussed in
+       <xref linkend='ch-partitioning-aboutlfs' role='.'/>
 @y
         このことは <xref linkend='ch-partitioning-aboutlfs'/> において説明済です。
 @z

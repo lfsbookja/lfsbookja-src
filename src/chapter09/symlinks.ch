@@ -61,7 +61,7 @@
       often have two ethernet connections named eth0 and
       wlan0; such laptops can also use this method.  The command line
       is in the GRUB configuration file.
-      See <xref linkend="grub-cfg"/>.</para>
+      See <xref linkend="grub-cfg" role='.'/></para>
 @y
       <para>
       従来の命名スキーマ、例えば eth0、eth1 といったものは、カーネルコマンドラインに <userinput>net.ifnames=0</userinput> を加えることで利用できます。
@@ -424,8 +424,8 @@
 @z
 
 @x
-    <para>As explained in <xref linkend="ch-config-udev"/>, the order in
-    which devices with the same function appear in
+    <para>As explained in <xref linkend="ch-config-udev" role=','/> the
+    order in which devices with the same function appear in
     <filename class="directory">/dev</filename> is essentially random.
     E.g., if you have a USB web camera and a TV tuner, sometimes
     <filename>/dev/video0</filename> refers to the camera and
@@ -434,8 +434,9 @@
     For all classes of hardware except sound cards and network cards, this is
     fixable by creating udev rules to create persistent symlinks.
     The case of network cards is covered separately in
-    <xref linkend="ch-config-network"/>, and sound card configuration can
-    be found in <ulink url="&blfs-book;postlfs/devices.html">BLFS</ulink>.</para>
+    <xref linkend="ch-config-network" role=','/> and sound card
+    configuration can be found in
+    <ulink url="&blfs-book;postlfs/devices.html">BLFS</ulink>.</para>
 @y
     <para>
     <xref linkend="ch-config-udev"/>で説明したように、<filename

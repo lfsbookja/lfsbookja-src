@@ -320,7 +320,8 @@
           unknown GID 999</computeroutput>,
           even though the account has been created correctly. That is why we
           created the group <systemitem class="groupname">users</systemitem>
-          with this group ID in <xref linkend='ch-tools-createfiles'/>.</para>
+          with this group ID in
+          <xref linkend='ch-tools-createfiles' role='.'/></para>
 @y
           <command>useradd</command> コマンドは既存の UID 値、GID 値を再利用することはありません。
           このパラメーターによって指定された数値が実際に利用されていた場合、その値以降で利用可能な値が採用されます。

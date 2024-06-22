@@ -114,7 +114,7 @@
 
 @x
   <para>Making your LFS system bootable with GRUB will be discussed in
-  <xref linkend="ch-bootable-grub"/>.</para>
+  <xref linkend="ch-bootable-grub" role='.'/></para>
 @y
   <para>
   GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/>で説明しています。

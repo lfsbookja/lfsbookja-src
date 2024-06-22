@@ -137,7 +137,7 @@
          and, as <systemitem class="username">root</systemitem>, running the
          commands in
          <xref linkend='ch-tools-bindmount'/> and
-         <xref linkend='ch-tools-kernfsmount'/>.</para>
+         <xref linkend='ch-tools-kernfsmount' role='.'/></para>
 @y
          <para>
          仮想ファイルシステムがマウントされている必要があります。

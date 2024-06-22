@@ -408,7 +408,7 @@
 
 @x
       <para>For information on kernel module loading and udev, see
-      <xref linkend="module-loading"/>.</para>
+      <xref linkend="module-loading" role='.'/></para>
 @y
       <para>
       カーネルモジュールのロードや udev に関しては <xref linkend="module-loading"/> を参照してください。

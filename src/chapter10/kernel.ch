@@ -36,8 +36,8 @@
         LFS editors recommend that users not familiar with this process follow
         the procedures below fairly closely.  The objective is to get an
         initial system to a point where you can log in at the command line when
-        you reboot later in <xref linkend="ch-finish-reboot"/>.  At this point
-        optimization and customization is not a goal.
+        you reboot later in <xref linkend="ch-finish-reboot" role='.'/>
+        At this point optimization and customization is not a goal.
 @y
         Linux カーネルの構築を初めて行うなら、LFS の中でも、かなりハードルの高い作業になります。
         これをうまく成功させることができるかどうかは、対象システム向けの特定ハードウェアの存在や、どのように作り上げたいかの要求に依存します。

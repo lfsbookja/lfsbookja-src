@@ -43,7 +43,7 @@
   may render your computer unusable.
   This whole chapter must be done as user <systemitem
   class="username">lfs</systemitem>, with the environment as described in
-  <xref linkend="ch-preps-settingenviron"/>.</para>
+  <xref linkend="ch-preps-settingenviron" role='.'/></para>
 @y
   <para>
   ここでもう一度確認しておきますが、<systemitem

@@ -17,7 +17,7 @@
 
 @x
   <para>The rules in this appendix are listed for convenience.  Installation is
-  normally done via instructions in <xref linkend='ch-system-udev'/>.  </para>
+  normally done via instructions in <xref linkend='ch-system-udev' role='.'/>  </para>
 @y
   <para>
   本付録にて udev ルールを列記します。
