@@ -38,6 +38,80 @@
 @z
 
 @x
+      <para>2024-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240612. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-6.7.6. Fixes
+          <ulink url='&lfs-ticket-root;5506'>#5506</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.9.1. Fixes
+          <ulink url='&lfs-ticket-root;5507'>#5507</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.9.7. Fixes
+          <ulink url='&lfs-ticket-root;5508'>#5508</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sysklogd-2.5.2. Fixes
+          <ulink url='&lfs-ticket-root;5509'>#5509</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.16.0. Fixes
+          <ulink url='&lfs-ticket-root;5510'>#5510</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-256.1. Fixes
+          <ulink url='&lfs-ticket-root;5511'>#5511</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-70.1.1. Fixes
+          <ulink url='&lfs-ticket-root;5512'>#5512</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240612 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-6.7.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5506'>#5506</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.9.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5507'>#5507</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.9.7 へのアップデート。
+          <ulink url='&lfs-ticket-root;5508'>#5508</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sysklogd-2.5.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5509'>#5509</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.16.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5510'>#5510</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-256.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5511'>#5511</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-70.1.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5512'>#5512</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-06-15</para>
       <itemizedlist>
         <listitem>
@@ -66,7 +140,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-6.9.4. Fixes
-          <ulink url='&lfs-ticket-root;5491'>#5505</ulink>.</para>
+          <ulink url='&lfs-ticket-root;5505'>#5505</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to findutils-4.10.0. Fixes
@@ -102,7 +176,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - linux-6.9.4 へのアップデート。
-          <ulink url='&lfs-ticket-root;5491'>#5505</ulink> を Fix に。</para>
+          <ulink url='&lfs-ticket-root;5505'>#5505</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - findutils-4.10.0 へのアップデート。

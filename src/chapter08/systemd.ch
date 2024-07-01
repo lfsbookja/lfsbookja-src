@@ -122,11 +122,11 @@
 @z
 
 @x
-        <term><parameter>-Dhomed=disabled</parameter> and
-        <parameter>-Duserdb=false</parameter></term>
+        <term><parameter>-D homed=disabled</parameter> and
+        <parameter>-D userdb=false</parameter></term>
 @y
-        <term><parameter>-Dhomed=disabled</parameter> と
-        <parameter>-Duserdb=false</parameter></term>
+        <term><parameter>-D homed=disabled</parameter> と
+        <parameter>-D userdb=false</parameter></term>
 @z
 @x
           <para>Remove two daemons with dependencies that do not fit
@@ -231,12 +231,16 @@
 
 @x
     <para>Three tests: <literal>systemd:core / test-namespace</literal>,
-    <literal>test-chase</literal>, and <literal>test-systemd-tmpfiles</literal>,
+                       <literal>test-loopback</literal>, and 
+                       <literal>test-copy</literal>,
     are known to fail in the LFS chroot environment.  Some other tests may
     fail because they depend on various kernel configuration options.</para>
 @y
     <para>
-    <literal>systemd:core / test-namespace</literal>、<literal>test-chase</literal>、<literal>test-systemd-tmpfiles</literal> という 3 つのテストは LFS の chroot 環境内では失敗します。
+    <literal>systemd:core / test-namespace</literal>、
+    <literal>test-loopback</literal>、
+    <literal>test-copy</literal>
+    という 3 つのテストは LFS の chroot 環境内では失敗します。
     また別のテストでも失敗するものがありますが、これはさまざまなカーネルオプションに依存しているためです。
     </para>
 @z
