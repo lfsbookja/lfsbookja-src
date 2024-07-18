@@ -38,6 +38,105 @@
 @z
 
 @x
+      <para>2024-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240701. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.0580. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.17. Fixes
+          <ulink url='&lfs-ticket-root;5520'>#5520</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.24. Fixes
+          <ulink url='&lfs-ticket-root;5515'>#5515</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.9.9. Fixes
+          <ulink url='&lfs-ticket-root;5517'>#5517</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-661. Fixes
+          <ulink url='&lfs-ticket-root;5513'>#5513</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.5.0. Fixes
+          <ulink url='&lfs-ticket-root;5519'>#5519</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-70.3.0. Fixes
+          <ulink url='&lfs-ticket-root;5514'>#5514</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.40.2. Fixes
+          <ulink url='&lfs-ticket-root;5516'>#5516</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240701 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.0580 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.17 へのアップデート。
+          <ulink url='&lfs-ticket-root;5520'>#5520</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.24 へのアップデート。
+          <ulink url='&lfs-ticket-root;5515'>#5515</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.9.9 へのアップデート。
+          <ulink url='&lfs-ticket-root;5517'>#5517</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-661 へのアップデート。
+          <ulink url='&lfs-ticket-root;5513'>#5513</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.5.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5519'>#5519</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-70.3.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5514'>#5514</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.40.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5516'>#5516</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2024-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update lfs-bootscripts to only output
+          escape sequences to a terminal. </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - lfs-bootscripts を更新し、端末への出力をエスケープシーケンスのみとする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-07-01</para>
       <itemizedlist>
         <listitem>

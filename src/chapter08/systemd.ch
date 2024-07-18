@@ -230,17 +230,12 @@
 @z
 
 @x
-    <para>Three tests: <literal>systemd:core / test-namespace</literal>,
-                       <literal>test-loopback</literal>, and 
-                       <literal>test-copy</literal>,
-    are known to fail in the LFS chroot environment.  Some other tests may
+    <para>One test named <literal>systemd:core / test-namespace</literal>
+    is known to fail in the LFS chroot environment.  Some other tests may
     fail because they depend on various kernel configuration options.</para>
 @y
     <para>
-    <literal>systemd:core / test-namespace</literal>、
-    <literal>test-loopback</literal>、
-    <literal>test-copy</literal>
-    という 3 つのテストは LFS の chroot 環境内では失敗します。
+    <literal>systemd:core / test-namespace</literal> というテストが、LFS の chroot 環境内では失敗します。
     また別のテストでも失敗するものがありますが、これはさまざまなカーネルオプションに依存しているためです。
     </para>
 @z

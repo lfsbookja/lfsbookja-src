@@ -1564,13 +1564,17 @@
           <seg>なし</seg>
 @z
 @x
-            <ulink url="&blfs-book;general/cpio.html">cpio</ulink> and
+            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>,
             <ulink url="&blfs-book;general/llvm.html">LLVM</ulink>
-            (with Clang)
+            (with Clang), and
+	    <ulink
+  url="&blfs-book;general/rust-bindgen.html">Rust-bindgen</ulink>
 @y
             <ulink url="&blfs-book;general/cpio.html">cpio</ulink>,
             <ulink url="&blfs-book;general/llvm.html">LLVM</ulink>
-            (Clang 込み)
+            (Clang 込み),
+	    <ulink
+  url="&blfs-book;general/rust-bindgen.html">Rust-bindgen</ulink>
 @z
 
 %----------------------------------------------------------------------

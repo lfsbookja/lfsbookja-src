@@ -149,7 +149,21 @@
           </para>
 @z
 
-@x
+@x --enable-new-dtags
+          <para>This makes the linker use the <quote>runpath</quote> tag for
+          embedding library search paths into executables and shared libraries,
+          instead of the traditional <quote>rpath</quote> tag.  It makes
+          debugging dynamically linked executables easier and works around
+          potential issues in the test suite of some packages.</para>
+@y
+          <para>
+          これは実行ファイルや共有ライブラリに埋め込むライブラリ検索パスとして<quote>runpath</quote>を用いることをリンカーに対して指示します。
+          従来の<quote>rpath</quote>タグは用いません。
+          こうすると、動的リンクされた実行ファイルのデバッグが容易になり、いくつかのパッケージにおけるテストスイートにおいて発生する潜在的な問題を解決できるものとなります。
+          </para>
+@z
+
+@x --enable-default-hash-style=gnu
           <para>By default, the linker would generate both the GNU-style
           hash table and the classic ELF hash table for shared libraries and
           dynamically linked executables.  The hash tables are only intended
