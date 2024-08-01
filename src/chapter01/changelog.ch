@@ -38,6 +38,96 @@
 @z
 
 @x
+      <para>2024-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240723. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.40. Fixes
+          <ulink url='&lfs-ticket-root;5529'>#5529</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-6.10.0. Fixes
+          <ulink url='&lfs-ticket-root;5523'>#5523</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.10.2. Fixes
+          <ulink url='&lfs-ticket-root;5521'>#5521</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to lz4-1.10.0. Fixes
+          <ulink url='&lfs-ticket-root;5528'>#5526</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.5.1. Fixes
+          <ulink url='&lfs-ticket-root;5527'>#5527</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-71.1.0. Fixes
+          <ulink url='&lfs-ticket-root;5524'>#5524</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sysklogd-2.6.1. Fixes
+          <ulink url='&lfs-ticket-root;5522'>#5522</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-256.4. Fixes
+          <ulink url='&lfs-ticket-root;5518'>#5518</ulink>.</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Update to sysvinit-3.10. Fixes
+          <ulink url='&lfs-ticket-root;5528'>#5528</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240723 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.40 へのアップデート。
+          <ulink url='&lfs-ticket-root;5529'>#5529</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-6.10.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5523'>#5523</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.10.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5521'>#5521</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - lz4-1.10.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5528'>#5526</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.5.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5527'>#5527</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-71.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5524'>#5524</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sysklogd-2.6.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5522'>#5522</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-256.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5518'>#5518</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - sysvinit-3.10 へのアップデート。
+          <ulink url='&lfs-ticket-root;5528'>#5528</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-07-15</para>
       <itemizedlist>
         <listitem>

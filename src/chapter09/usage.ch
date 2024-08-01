@@ -109,19 +109,19 @@
 @z
 
 @x
-  <title>Configuring Sysvinit</title>
+  <title>Configuring SysVinit</title>
 @y
-  <title>Sysvinit の設定</title>
+  <title>SysVinit の設定</title>
 @z
 
 @x
   <indexterm zone="conf-sysvinit">
-    <primary sortas="a-Sysvinit">Sysvinit</primary>
+    <primary sortas="a-SysVinit">SysVinit</primary>
     <secondary>configuring</secondary>
   </indexterm>
 @y
   <indexterm zone="conf-sysvinit">
-    <primary sortas="a-Sysvinit">Sysvinit</primary>
+    <primary sortas="a-SysVinit">SysVinit</primary>
     <secondary>設定</secondary>
   </indexterm>
 @z

@@ -772,16 +772,16 @@
 @x Systemd
         <para>This package provides an <application>init</application> program
         and several additional boot and system control capabilities as an
-        alternative to Sysvinit.  It is used by many Linux distributions.
+        alternative to SysVinit.  It is used by many Linux distributions.
         </para>
 @y
         <para>
-        このパッケージは Sysvinit の代替として、<application>init</application> プログラムなど数種のプログラムにより、システム起動やシステム制御を実現します。
+        このパッケージは SysVinit の代替として、<application>init</application> プログラムなど数種のプログラムにより、システム起動やシステム制御を実現します。
         多くの Linux ディストリビューションにおいてもよく利用されています。
         </para>
 @z
 
-@x Sysvinit
+@x SysVinit
         <para>This package provides the <application>init</application>
         program, the parent of all the other processes on a running Linux
         system. </para>
