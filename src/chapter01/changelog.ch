@@ -41,6 +41,10 @@
       <para>2024-08-01</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to gcc-14.2.0. Fixes
+          <ulink url='&lfs-ticket-root;5530'>#5530</ulink>.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - Update to iana-etc-20240723. Addresses
           <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
         </listitem>
@@ -65,8 +69,8 @@
           <ulink url='&lfs-ticket-root;5527'>#5527</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to setuptools-71.1.0. Fixes
-          <ulink url='&lfs-ticket-root;5524'>#5524</ulink>.</para>
+          <para>[bdubbs] - Update to setuptools-72.1.0. Fixes
+          <ulink url='&lfs-ticket-root;5531'>#5531</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to sysklogd-2.6.1. Fixes
@@ -84,6 +88,10 @@
 @y
       <para>2024-08-01</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-14.2.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5530'>#5530</ulink> を Fix に。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - iana-etc-20240723 へのアップデート。
           <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
@@ -109,8 +117,8 @@
           <ulink url='&lfs-ticket-root;5527'>#5527</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - setuptools-71.1.0 へのアップデート。
-          <ulink url='&lfs-ticket-root;5524'>#5524</ulink> を Fix に。</para>
+          <para>[bdubbs] - setuptools-72.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5531'>#5531</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - sysklogd-2.6.1 へのアップデート。
