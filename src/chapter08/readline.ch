@@ -45,14 +45,6 @@
 @z
 
 @x
-    <para>Now fix a problem identified upstream:</para>
-@y
-    <para>
-    またアップストリームが認識している問題を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Readline for compilation:</para>
 @y
     <para>&PreparePackage1;Readline&PreparePackage2;</para>

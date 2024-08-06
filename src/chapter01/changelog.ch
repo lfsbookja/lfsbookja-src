@@ -38,6 +38,72 @@
 @z
 
 @x
+      <para>2024-08-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to bash-5.2.32. Fixes
+          <ulink url='&lfs-ticket-root;5532'>#5532</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240801. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.0660. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.43. Fixes
+          <ulink url='&lfs-ticket-root;5535'>#5535</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.10.3. Fixes
+          <ulink url='&lfs-ticket-root;5534'>#5534</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to readline-8.2.13. Fixes
+          <ulink url='&lfs-ticket-root;5533'>#5533</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to wheel-0.44.0. Fixes
+          <ulink url='&lfs-ticket-root;5536'>#5536</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-08-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - bash-5.2.32 へのアップデート。
+          <ulink url='&lfs-ticket-root;5532'>#5532</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240801 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.0660 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.43 へのアップデート。
+          <ulink url='&lfs-ticket-root;5535'>#5535</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.10.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5534'>#5534</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline-8.2.13 へのアップデート。
+          <ulink url='&lfs-ticket-root;5533'>#5533</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - wheel-0.44.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5536'>#5536</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-08-01</para>
       <itemizedlist>
         <listitem>

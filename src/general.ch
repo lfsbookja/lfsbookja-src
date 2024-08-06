@@ -47,9 +47,9 @@
 <!ENTITY copyrightdate   "%crdate;">
 ]]>
 
-<!ENTITY jversion        "20240805">
-<!ENTITY jversiond       "20240805">
-<!ENTITY jcorrespondSHA  "653ead178"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion        "20240806">
+<!ENTITY jversiond       "20240806">
+<!ENTITY jcorrespondSHA  "079ced733"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
 <!ENTITY dir-jversion    "git-ja">
 <!ENTITY dir-jversiond   "git-sysdja">
 @z
