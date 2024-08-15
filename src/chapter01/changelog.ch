@@ -38,6 +38,48 @@
 @z
 
 @x
+      <para>2024-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240806. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-2.3.0. Fixes
+          <ulink url='&lfs-ticket-root;5537'>#5537</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to python3-3.12.5. Fixes
+          <ulink url='&lfs-ticket-root;5538'>#5538</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.10.4. Fixes
+          <ulink url='&lfs-ticket-root;5539'>#5539</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240806 へのダウンロード。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-2.3.0 へのダウンロード。
+          <ulink url='&lfs-ticket-root;5537'>#5537</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - python3-3.12.5 へのダウンロード。
+          <ulink url='&lfs-ticket-root;5538'>#5538</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.10.4 へのダウンロード。
+          <ulink url='&lfs-ticket-root;5539'>#5539</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-08-05</para>
       <itemizedlist>
         <listitem>
