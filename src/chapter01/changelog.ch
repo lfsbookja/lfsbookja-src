@@ -38,6 +38,48 @@
 @z
 
 @x
+      <para>2024-08-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-72.2.0. Fixes
+          <ulink url='&lfs-ticket-root;5542'>#5542</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-33. Fixes
+          <ulink url='&lfs-ticket-root;5540'>#5540</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.43.1. Fixes
+          <ulink url='&lfs-ticket-root;5543'>#5543</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.10.5. Fixes
+          <ulink url='&lfs-ticket-root;5541'>#5541</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-08-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - setuptools-72.2.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5542'>#5542</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-33 へのアップデート。
+          <ulink url='&lfs-ticket-root;5540'>#5540</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.43.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5543'>#5543</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.10.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5541'>#5541</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-08-15</para>
       <itemizedlist>
         <listitem>

@@ -56,6 +56,15 @@
           </para>
 @z
 
+@x --disable-manpages
+          <para>This option disables generating the man pages which
+          requires an external program.</para>
+@y
+          <para>
+          このオプションは、man ページ生成において外部プログラムを必要とするため、これを生成しないようにします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y

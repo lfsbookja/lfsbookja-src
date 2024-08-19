@@ -1309,9 +1309,9 @@
           <seg>&systemd-udev;</seg>
 @z
 @x
-          <seg>None</seg>
+            <ulink url="https://git.sr.ht/~sircmpwn/scdoc/">scdoc</ulink> (for man pages)
 @y
-          <seg>なし</seg>
+            <ulink url="https://git.sr.ht/~sircmpwn/scdoc/">scdoc</ulink> (man ページのため)
 @z
 
 %----------------------------------------------------------------------
