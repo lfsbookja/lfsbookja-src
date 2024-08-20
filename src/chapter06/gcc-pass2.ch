@@ -142,16 +142,18 @@
 
 @x LDFLAGS_FOR_TARGET=...
           <para>Allow <filename class="libraryfile">libstdc++</filename> to
-          use the shared <filename class="libraryfile">libgcc</filename> being
-          built in this pass, instead of the static version that was built in GCC
-          pass 1. This is necessary to support C++ exception
-          handling.</para>
+          use the <filename class="libraryfile">libgcc</filename> being
+          built in this pass, instead of the previous version built in
+          <xref linkend='ch-tools-gcc-pass1'/>.  The previous version cannot
+          properly support C++ exception handling because it was built
+          without libc support.</para>
 @y
           <para>
-          GCC １回めではスタティックバージョンの <filename
-          class="libraryfile">libgcc</filename> をビルドしていましたが、ここでは共有の <filename
-          class="libraryfile">libgcc</filename> をビルドするようにします。
-          これは C++ 例外処理のために必要となります。
+          <filename class="libraryfile">libstdc++</filename> が今回ビルドされたライブラリ <filename
+          class="libraryfile">libgcc</filename> を用いるようにします。
+          それは <xref linkend='ch-tools-gcc-pass1'/> においてビルドされた前回のバージョンではありません。
+          前回のバージョンは C++ 例外処理を適切に処理できません。
+          これは libc サポートを抜きにしてビルドされているためです。
           </para>
 @z
 

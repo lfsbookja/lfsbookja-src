@@ -157,14 +157,14 @@
 @z
 
 @x
-      The type field, q, discusses creating a subvolume with quotas which
+      The type field, q, indicates the creation of a subvolume with quotas which
       is really only applicable to btrfs filesystems.  It references type v
       which in turn references type d (directory). This then creates the
       specified directory if it is not present and adjusts the permissions
       and ownership as specified. Contents of the directory will be
       subject to time based cleanup if the age argument is specified.
 @y
-      型を表わす q はクォータを用いたサブボリュームを生成するものとして説明されています。
+      型を表わす q はクォータを用いたサブボリュームを生成することを意味します。
       ただこれが適用できるのは btrfs ファイルシステムのみです。
       この型は v を参照し、次に d（ディレクトリ）を参照します。
       指定されたディレクトリが存在しない場合はそれが生成されて、パーミッションと所有者が指定されたものに設定されます。
