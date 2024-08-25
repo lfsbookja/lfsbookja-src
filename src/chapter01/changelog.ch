@@ -41,6 +41,24 @@
       <para>2024-08-23</para>
       <itemizedlist>
         <listitem>
+          <para>[xry111] - Update to lfs-bootscripts-20240825.  Only trivial
+          non-functional changes.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-08-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - lfs-bootscripts-20240825 へのアップデート。
+          機能性とは関係ない警備な修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2024-08-23</para>
+      <itemizedlist>
+        <listitem>
           <para>[xry111] - Update to lfs-bootscripts-20240823, to fix an
           issue causing VT 2-6 not affected by the FONT= setting in
           /etc/sysconfig/console.</para>
