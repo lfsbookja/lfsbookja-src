@@ -68,6 +68,57 @@
 @z
 
 @x
+  <para>Before measuring the build time of any package (no matter Binutils
+  pass 1 or a package of which the SBU is being measured), make sure a
+  system power profile suitable to make the system running with the
+  maximum performance (and the maximum power consumption) is selected.  Or
+  the measured SBU value may be severly inaccurate because the system may be
+  operated differently building Binutils pass 1 and the other package.
+  Be aware that a significant inaccuracy can still show up even if the same
+  profile (except one maximizing the performance) is used for both packages:
+  the system may respond slower for <quote>saving the power</quote> building
+  Binutils pass 1, because the system load seems only about 25% of the load
+  building the other package (with <parameter>-j4</parameter>).</para>
+@y
+  <para>
+  どのパッケージのビルド時間を調べる際であっても (Binutils 1 回めや測定済のパッケージであっても)、システムの電源プロファイルが最大のパフォーマンス (最大消費電力) で実行されるようにしてください。
+  これを行っていないと、Binutils 1 回めや他パッケージのビルド時とは異なるシステム動作となる場合があるため、SBU の測定値は極端に不適切なものとなります。
+  測定するパッケージに対して同一プロファイルを用いていたとしても (パフォーマンスを最大化にしていない場合)、極端に測定値が不適切となる場合もあります。
+  その際には Binutils 1 回めのビルドにあたって<quote>電力消費が抑えられる</quote>ため、システムの応答が遅くなるものです。
+  他パッケージのビルド時のシステムのメモリロード量は (<parameter>-j4</parameter> 利用時として) 25% となってしまいます。
+  </para>
+@z
+
+@x
+  <para>On most distros the power profile can be managed with either
+  <command>power-profiles-daemon</command> or <command>tuned</command>.
+  If the distro runs <command>power-profiles-daemon</command>, issue the
+  <command>powerprofilesctl set performance</command> command to select
+  the <literal>performance</literal> profile.  If the distro runs
+  <command>tuned</command>, issue the <command>tuned-adm profile
+  throughput-performance</command> command to select the
+  <literal>throughput-performance</literal> profile.</para>
+@y
+  <para>
+  ディストリビューションのほとんどにおいて電源プロファイルは、<command>power-profiles-daemon</command> または <command>tuned</command> によって管理されています。
+  <command>power-profiles-daemon</command> を利用している場合は <command>powerprofilesctl set performance</command> コマンドを実行して <literal>performance</literal> プロファイルを選択します。
+  また <command>tuned</command> を利用している場合は <command>tuned-adm profile throughput-performance</command> コマンドを実行して <literal>throughput-performance</literal> プロファイルを選択します。
+  </para>
+@z
+
+@x
+  <para>Even if you are not measuring the SBU values, it's still better to
+  select the power profile for maximum performance before building LFS, as
+  doing so can (obviously) make the system faster to build LFS
+  packages.</para>
+@y
+  <para>
+  SBU 値を測定するつもりがない場合であっても、LFS ビルドにあたってはパフォーマンスを最大とするために、上のような電源プロファイルを選択しておくことが適切です。
+  そうしておけば LFS パッケージのビルドが (明らかに) 早く実行できるからです。
+  </para>
+@z
+
+@x
     <para>When multiple processors are used in this way, the SBU units in the
     book will vary even more than they normally would.  In some cases, the make
     step will simply fail.  Analyzing the output of the build process will also
