@@ -43,14 +43,14 @@
 
 @x
   <para>For example, consider a package whose compilation time is 4.5
-  SBUs. This means that if your system took 10 minutes to compile and
+  SBUs. This means that if your system took 4 minutes to compile and
   install the first pass of binutils, it will take
-  <emphasis>approximately</emphasis> 45 minutes to build the example package.
+  <emphasis>approximately</emphasis> 18 minutes to build the example package.
   Fortunately, most build times are shorter than one SBU.</para>
 @y
   <para>
   例えばあるパッケージのコンパイル時間が 4.5 SBU であったとします。
-  そして binutils の 1 回目のコンパイルが 10 分であったとすると、そのパッケージは <emphasis>およそ </emphasis>45 分かかることを意味しています。
+  そして binutils の 1 回目のコンパイルが 4 分であったとすると、そのパッケージは <emphasis>およそ </emphasis>18 分かかることを意味しています。
   幸いにも、たいていのパッケージは 1 SBU よりもコンパイル時間は短いものです。
   </para>
 @z
@@ -68,24 +68,42 @@
 @z
 
 @x
-  <para>Before measuring the build time of any package (no matter Binutils
-  pass 1 or a package of which the SBU is being measured), make sure a
-  system power profile suitable to make the system running with the
-  maximum performance (and the maximum power consumption) is selected.  Or
-  the measured SBU value may be severly inaccurate because the system may be
-  operated differently building Binutils pass 1 and the other package.
+  <para>On some newer systems, the motherboard is capable of contolling 
+  the system clock speed. This can be controlled with a command such as
+  <command>powerprofilesctl</command>. This is not available in LFS, but 
+  may be available on the host system. After LFS is complete, it can be 
+  added to a system with the procedures at the
+  <ulink url='&blfs-book;sysutils/power-profiles-daemon.html'>
+  BLFS power-profiles-daemon</ulink> page.
+
+  Before measuring the build time of any package it is advisable to use a
+  system power profile set for maximum performance (and maximum power 
+  consumption). 
+
+  Otherwise the measured SBU value may be inaccurate because the 
+  system may react differently when building <xref linkend='ch-tools-binutils-pass1'/>
+  or other packages.
+
   Be aware that a significant inaccuracy can still show up even if the same
-  profile (except one maximizing the performance) is used for both packages:
-  the system may respond slower for <quote>saving the power</quote> building
-  Binutils pass 1, because the system load seems only about 25% of the load
-  building the other package (with <parameter>-j4</parameter>).</para>
+  profile is used for both packages because the system may respond slower if
+  the system is idle when starting the build procedure. Setting the power
+  profile to "performance" will minimize this problem.</para>
 @y
   <para>
-  どのパッケージのビルド時間を調べる際であっても (Binutils 1 回めや測定済のパッケージであっても)、システムの電源プロファイルが最大のパフォーマンス (最大消費電力) で実行されるようにしてください。
-  これを行っていないと、Binutils 1 回めや他パッケージのビルド時とは異なるシステム動作となる場合があるため、SBU の測定値は極端に不適切なものとなります。
-  測定するパッケージに対して同一プロファイルを用いていたとしても (パフォーマンスを最大化にしていない場合)、極端に測定値が不適切となる場合もあります。
-  その際には Binutils 1 回めのビルドにあたって<quote>電力消費が抑えられる</quote>ため、システムの応答が遅くなるものです。
-  他パッケージのビルド時のシステムのメモリロード量は (<parameter>-j4</parameter> 利用時として) 25% となってしまいます。
+  最新のシステムの場合、マザーボードにシステムクロック速度の制御機能があります。
+  これは <command>powerprofilesctl</command> などのコマンドを使って制御します。
+  LFS では利用できないものですが、ホストシステムでは利用できるものかもしれません。
+  LFS の構築を終えた後に <ulink url='&blfs-book;sysutils/power-profiles-daemon.html'>
+  BLFS power-profiles-daemon</ulink> に示される手順に従えば、システムにその機能を追加することができます。
+
+  どのパッケージのビルド時間を調べる際であっても、システムの電源プロファイルセットは最大のパフォーマンス (最大消費電力) を発揮するように設定することが推奨されます。
+
+  これを行っていないと SBU の測定値は極端に不適切なものとなります。
+  <xref linkend='ch-tools-binutils-pass1'/> や他パッケージのビルドの際には、システムがさまざまな処理反応を示すためです。
+
+  測定するパッケージに対して同一プロファイルを用いていたとしても、極端に測定値が不適切となる場合もあることに留意しておいてください。
+  これはビルド処理開始の際にシステムがアイドル状態となっていると、システムの反応がより遅くなるためです。
+  電源プロファイルを "performance" に設定しておけば、この問題は解消します。
   </para>
 @z
 
@@ -136,12 +154,15 @@
 @z
 
 @x
-    <para>The times presented here are based upon using four cores (-j4). The
+    <para>The times presented here for all packages 
+    (except <xref linkend='ch-tools-binutils-pass1'/> which is based on one core)
+    are based upon using four cores (-j4). The
     times in Chapter 8 also include the time to run the regression tests for
     the package unless specified otherwise.</para>
 @y
     <para>
-    ここに示す時間は 4 コア（-j4）を使用した場合に基づいています。
+    ここに示す時間は (1 コアで処理を行う <xref
+    linkend='ch-tools-binutils-pass1'/> を除き) 4 コア（-j4）を使用した場合に基づいています。
     また第 8 章では、特に断りがない限り、パッケージの縮退テストの実行時間も含めています。
     </para>
 @z

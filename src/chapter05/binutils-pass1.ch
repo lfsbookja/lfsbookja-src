@@ -4,6 +4,12 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
+<sect1 id="ch-tools-binutils-pass1" role="wrap" xreflabel="binutils-pass1">
+@y
+<sect1 id="ch-tools-binutils-pass1" role="wrap" xreflabel="binutils 1回め">
+@z
+
+@x
   <title>Binutils-&binutils-version; - Pass 1</title>
 @y
   <title>Binutils-&binutils-version; - 1回め</title>
