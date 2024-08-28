@@ -151,13 +151,22 @@
 @z
 
 @x
-   <para>One set of tests in the GCC test suite is known to exhaust the default
-   stack, so increase the stack size prior to running the tests:</para>
+    <para>GCC may need more stack space compiling some extremely complex
+    code patterns.  As a precaution for the host distros with a tight stack
+    limit, explicitly set the stack size hard limit to infinite.
+    On most host distros (and the final LFS system) the hard limit is
+    infinite by default, but there is no harm done by setting it explicitly.
+    It's not necessary to change the stack size soft limit because GCC will
+    automatically set it to an appropriate value, as long as the value does
+    not exceed the hard limit:</para>
 @y
-   <para>
-   GCC テストスイートの中で、デフォルトのスタックを使い果たすものがあります。
-   そこでテスト実施にあたり、スタックサイズを増やします。
-   </para>
+    <para>
+    コンパイルするコードパターンが極端に複雑な場合に GCC はより多くのスタック領域を必要とする場合があります。
+    ホストディストロのスタック制限が厳しいかもしれないため、それを予防する意味でスタックサイズのハード上限を無制限に設定します。
+    ホストシステムのほとんど (そして最終的な LFS システム) はデフォルトでハード上限は無制限としていますが、それを明示的に設定したところで何も問題はありません。
+    スタックサイズのソフト上限を変更する必要はありません。
+    これは GCC が自動的に設定するものであり、その値がハード上限を超えない限りは適切に設定してくれます。
+    </para>
 @z
 
 @x

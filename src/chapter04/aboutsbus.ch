@@ -71,7 +71,7 @@
   <para>On some newer systems, the motherboard is capable of contolling 
   the system clock speed. This can be controlled with a command such as
   <command>powerprofilesctl</command>. This is not available in LFS, but 
-  may be available on the host system. After LFS is complete, it can be 
+  may be available on the host distro. After LFS is complete, it can be
   added to a system with the procedures at the
   <ulink url='&blfs-book;sysutils/power-profiles-daemon.html'>
   BLFS power-profiles-daemon</ulink> page.
@@ -87,12 +87,13 @@
   Be aware that a significant inaccuracy can still show up even if the same
   profile is used for both packages because the system may respond slower if
   the system is idle when starting the build procedure. Setting the power
-  profile to "performance" will minimize this problem.</para>
+  profile to <quote>performance</quote> will minimize this problem.  And
+  obviously doing so will also make the system build LFS faster.</para>
 @y
   <para>
   最新のシステムの場合、マザーボードにシステムクロック速度の制御機能があります。
   これは <command>powerprofilesctl</command> などのコマンドを使って制御します。
-  LFS では利用できないものですが、ホストシステムでは利用できるものかもしれません。
+  LFS では利用できないものですが、ホストディストロでは利用できるものかもしれません。
   LFS の構築を終えた後に <ulink url='&blfs-book;sysutils/power-profiles-daemon.html'>
   BLFS power-profiles-daemon</ulink> に示される手順に従えば、システムにその機能を追加することができます。
 
@@ -103,36 +104,24 @@
 
   測定するパッケージに対して同一プロファイルを用いていたとしても、極端に測定値が不適切となる場合もあることに留意しておいてください。
   これはビルド処理開始の際にシステムがアイドル状態となっていると、システムの反応がより遅くなるためです。
-  電源プロファイルを "performance" に設定しておけば、この問題は解消します。
+  電源プロファイルを<quote>performance</quote>に設定しておけば、この問題は解消します。
+  さらに LFS ビルドは明らかに早くなるはずです。
   </para>
 @z
 
 @x
-  <para>On most distros the power profile can be managed with either
-  <command>power-profiles-daemon</command> or <command>tuned</command>.
-  If the distro runs <command>power-profiles-daemon</command>, issue the
+  <para>If <command>powerprofilesctl</command> is available, issue the
   <command>powerprofilesctl set performance</command> command to select
-  the <literal>performance</literal> profile.  If the distro runs
-  <command>tuned</command>, issue the <command>tuned-adm profile
-  throughput-performance</command> command to select the
-  <literal>throughput-performance</literal> profile.</para>
+  the <literal>performance</literal> profile.  Some distros provides the
+  <command>tuned-adm</command> command for managing the profiles instead of
+  <command>powerprofilesctl</command>, on these distros issue the
+  <command>tuned-adm profile throughput-performance</command> command to
+  select the <literal>throughput-performance</literal> profile.</para>
 @y
   <para>
-  ディストリビューションのほとんどにおいて電源プロファイルは、<command>power-profiles-daemon</command> または <command>tuned</command> によって管理されています。
-  <command>power-profiles-daemon</command> を利用している場合は <command>powerprofilesctl set performance</command> コマンドを実行して <literal>performance</literal> プロファイルを選択します。
-  また <command>tuned</command> を利用している場合は <command>tuned-adm profile throughput-performance</command> コマンドを実行して <literal>throughput-performance</literal> プロファイルを選択します。
-  </para>
-@z
-
-@x
-  <para>Even if you are not measuring the SBU values, it's still better to
-  select the power profile for maximum performance before building LFS, as
-  doing so can (obviously) make the system faster to build LFS
-  packages.</para>
-@y
-  <para>
-  SBU 値を測定するつもりがない場合であっても、LFS ビルドにあたってはパフォーマンスを最大とするために、上のような電源プロファイルを選択しておくことが適切です。
-  そうしておけば LFS パッケージのビルドが (明らかに) 早く実行できるからです。
+  <command>power-profiles-daemon</command> が利用可能である場合は <command>powerprofilesctl set performance</command> コマンドを実行して <literal>performance</literal> プロファイルを選択します。
+  ディストロの中にはプロファイルの管理に <command>powerprofilesctl</command> ではなく <command>tuned-adm</command> コマンドを利用しているものがあります。
+  その場合は <command>tuned-adm profile throughput-performance</command> コマンドを実行して <literal>throughput-performance</literal> プロファイルを選択します。
   </para>
 @z
 
