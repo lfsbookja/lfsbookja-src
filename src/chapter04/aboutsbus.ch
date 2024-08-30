@@ -68,7 +68,7 @@
 @z
 
 @x
-  <para>On some newer systems, the motherboard is capable of contolling 
+  <para>On some newer systems, the motherboard is capable of controlling 
   the system clock speed. This can be controlled with a command such as
   <command>powerprofilesctl</command>. This is not available in LFS, but 
   may be available on the host distro. After LFS is complete, it can be

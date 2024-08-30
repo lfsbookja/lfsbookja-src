@@ -37,7 +37,7 @@
     <title>変更履歴</title>
 @z
 
-@x
+@x revision='sysv'
       <para>2024-08-23</para>
       <itemizedlist>
         <listitem>
@@ -260,7 +260,7 @@
           <para>[bdubbs] - Update to setuptools-72.1.0. Fixes
           <ulink url='&lfs-ticket-root;5531'>#5531</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - Update to sysklogd-2.6.1. Fixes
           <ulink url='&lfs-ticket-root;5522'>#5522</ulink>.</para>
         </listitem>
@@ -308,7 +308,7 @@
           <para>[bdubbs] - setuptools-72.1.0 へのアップデート。
           <ulink url='&lfs-ticket-root;5531'>#5531</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - sysklogd-2.6.1 へのアップデート。
           <ulink url='&lfs-ticket-root;5522'>#5522</ulink> を Fix に。</para>
         </listitem>
@@ -405,7 +405,7 @@
       </itemizedlist>
 @z
 
-@x
+@x revision='sysv'
       <para>2024-07-01</para>
       <itemizedlist>
         <listitem>
@@ -441,7 +441,7 @@
           <para>[bdubbs] - Update to linux-6.9.7. Fixes
           <ulink url='&lfs-ticket-root;5508'>#5508</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - Update to sysklogd-2.5.2. Fixes
           <ulink url='&lfs-ticket-root;5509'>#5509</ulink>.</para>
         </listitem>
@@ -477,7 +477,7 @@
           <para>[bdubbs] - linux-6.9.7 へのアップデート。
           <ulink url='&lfs-ticket-root;5508'>#5508</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - sysklogd-2.5.2 へのアップデート。
           <ulink url='&lfs-ticket-root;5509'>#5509</ulink> を Fix に。</para>
         </listitem>
