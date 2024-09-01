@@ -51,6 +51,17 @@
 -->
 
    <listitem>
+      <para>2024-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          LFS-12.2 リリース。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2024-08-30</para>
       <itemizedlist>
         <listitem>

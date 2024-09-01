@@ -22,7 +22,7 @@ CHUNK_QUIET = 1
 NOCHUNKS_NAME = @NOCHUNKS_NAME@
 NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 PDF_OUTPUT = @PDF_OUTPUT@
-URLTOP = https\:\/\/lfsbookja.github.io/lfsbookja-doc/\/git-ja
+URLTOP = https\:\/\/lfsbookja.github.io\/lfsbookja-doc\/12.2-ja\/
 
 #ALLXML := $(filter-out $(RENDERTMP)/%, \
 #	$(wildcard ./*.xml ./*/*.xml))

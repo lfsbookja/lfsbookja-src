@@ -11,6 +11,12 @@
 @z
 
 @x
+<!ENTITY % reldate "September 1st, 2024"><!-- must ve given for release or rc -->
+@y
+<!ENTITY % reldate "2024/09/01"><!-- must ve given for release or rc -->
+@z
+
+@x
 <![ %rc; [
 <![ %sysv; [
 <!ENTITY version         "%relnum;-rc%rcnum;">
@@ -47,11 +53,11 @@
 <!ENTITY copyrightdate   "%crdate;">
 ]]>
 
-<!ENTITY jversion        "20240830">
-<!ENTITY jversiond       "20240830">
-<!ENTITY jcorrespondSHA  "2e3aaf8b4"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
-<!ENTITY dir-jversion    "git-ja">
-<!ENTITY dir-jversiond   "git-sysdja">
+<!ENTITY jversion        "20240901">
+<!ENTITY jversiond       "20240901">
+<!ENTITY jcorrespondSHA  "f127c84e7"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY dir-jversion    "12.2-ja">
+<!ENTITY dir-jversiond   "12.2-sysdja">
 @z
 
 @x

@@ -37,6 +37,22 @@
     <title>変更履歴</title>
 @z
 
+@x
+      <para>2024-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-12.2 released.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-12.2 リリース。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x revision='sysv'
       <para>2024-08-23</para>
       <itemizedlist>
