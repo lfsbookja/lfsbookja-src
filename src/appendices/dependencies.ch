@@ -1040,7 +1040,7 @@
           Grep, Make, Ncurses, Sed, Texinfo, Xz</seg>
 @z
 @x
-          <seg>Bash, GCC, Gettext, Glibc, Xz, and Sed.</seg>
+          <seg>Bash, GCC, Gettext, Glibc, Xz, and Sed</seg>
 @y
           <seg>Bash, GCC, Gettext, Glibc, Xz, Sed</seg>
 @z

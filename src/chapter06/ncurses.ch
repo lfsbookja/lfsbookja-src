@@ -22,19 +22,11 @@
 @z
 
 @x
-    <para>First, ensure that <command>gawk</command> is found first during configuration:</para>
-@y
-    <para>
-    ビルドにあたって <command>gawk</command> が必ず最初に見つかるようにします。
-    </para>
-@z
-
-@x
-    <para>Then, run the following commands to build the <quote>tic</quote>
+    <para>First, run the following commands to build the <quote>tic</quote>
     program on the build host:</para>
 @y
     <para>
-    そして以下のコマンドを実行して、ビルドホスト上に<quote>tic</quote>プログラムをビルドします。
+    以下のコマンドを実行して、ビルドホスト上に<quote>tic</quote>プログラムをビルドします。
     </para>
 @z
 
@@ -116,6 +108,19 @@
           <para>
           本スイッチは、ホスト上の <command>strip</command> を、ビルドシステムが利用しないようにします。
           クロスコンパイルされたプログラムに対して、ホスト上のツールを使うと、ビルド失敗の原因になります。
+          </para>
+@z
+
+@x AWK=gawk
+          <para>This switch prevents the building system from using the
+          <command>mawk</command> program from the host.
+          Some<!-- FIXME vauge --> versions of <command>mawk</command> can
+          cause this package to fail to build.  <!-- It seems happened in 2015,
+          is there any updated into? --></para>
+@y
+          <para>
+          本スイッチはホスト上の <command>mawk</command> を使ったビルドが行われないようにするものです。
+          <command>mawk</command> のバージョンによっては、本パッケージのビルドに失敗するものがあるためです。
           </para>
 @z
 
