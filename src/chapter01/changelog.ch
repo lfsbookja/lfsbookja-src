@@ -38,6 +38,88 @@
 @z
 
 @x
+      <para>2024-09-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.0738. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to texinfo-7,1,1. Fixes
+          <ulink url='&lfs-ticket-root;5558'>#5558</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tcl8.6.15. Fixes
+          <ulink url='&lfs-ticket-root;5562'>#5562</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to sysklogd-2.6.2. Fixes
+          <ulink url='&lfs-ticket-root;5557'>#5557</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-75.1.0. Fixes
+          <ulink url='&lfs-ticket-root;5560'>#5560</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.5.2. Fixes
+          <ulink url='&lfs-ticket-root;5566'>#5566</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20240912. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gawk-5.3.1. Fixes
+          <ulink url='&lfs-ticket-root;5564'>#5564</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-7.0.2. Fixes
+          <ulink url='&lfs-ticket-root;5563'>#5563</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-09-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.0738 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - texinfo-7,1,1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5558'>#5558</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl8.6.15 へのアップデート。
+          <ulink url='&lfs-ticket-root;5562'>#5562</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - sysklogd-2.6.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5557'>#5557</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-75.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5560'>#5560</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.5.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5566'>#5566</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20240912 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gawk-5.3.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5564'>#5564</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-7.0.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5563'>#5563</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-09-07</para>
       <itemizedlist>
         <listitem>
