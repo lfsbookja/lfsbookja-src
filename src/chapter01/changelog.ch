@@ -38,6 +38,72 @@
 @z
 
 @x
+      <para>2024-10-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.12.7. Fixes
+          <ulink url='&lfs-ticket-root;5571'>#5571</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tcl9.0.0. Fixes
+          <ulink url='&lfs-ticket-root;5570'>#5570</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to linux-6.11.1. Fixes
+          <ulink url='&lfs-ticket-root;5556'>#5556</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libtool-2.5.3. Fixes
+          <ulink url='&lfs-ticket-root;5569'>#5569</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-6.11.0. Fixes
+          <ulink url='&lfs-ticket-root;5561'>#5561</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bash-5.2.37. Fixes
+          <ulink url='&lfs-ticket-root;5567'>#5567</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bc-7.0.3. Fixes
+          <ulink url='&lfs-ticket-root;5568'>#5568</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-10-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Python3-3.12.7 へのアップデート。
+          <ulink url='&lfs-ticket-root;5571'>#5571</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl9.0.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5570'>#5570</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - linux-6.11.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5556'>#5556</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtool-2.5.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5569'>#5569</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-6.11.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5561'>#5561</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash-5.2.37 へのアップデート。
+          <ulink url='&lfs-ticket-root;5567'>#5567</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc-7.0.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5568'>#5568</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-09-20</para>
       <itemizedlist>
         <listitem>
@@ -45,7 +111,7 @@
           <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to texinfo-7,1,1. Fixes
+          <para>[bdubbs] - Update to texinfo-7.1.1. Fixes
           <ulink url='&lfs-ticket-root;5558'>#5558</ulink>.</para>
         </listitem>
         <listitem>
@@ -85,7 +151,7 @@
           <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - texinfo-7,1,1 へのアップデート。
+          <para>[bdubbs] - texinfo-7.1.1 へのアップデート。
           <ulink url='&lfs-ticket-root;5558'>#5558</ulink> を Fix に。</para>
         </listitem>
         <listitem>

@@ -333,10 +333,10 @@
 @z
 
 @x
-     <para>A valid private IP address could be 192.168.1.1.</para>
+     <para>A valid private IP address could be 192.168.1.2.</para>
 @y
      <para>
-     IP アドレスの例は 192.168.1.1 となります。
+     IP アドレスの例は 192.168.1.2 となります。
      </para>
 @z
 
@@ -374,7 +374,7 @@
 @z
 
 @x
-     <para>The <replaceable>&lt;192.168.1.1&gt;</replaceable>,
+     <para>The <replaceable>&lt;192.168.1.2&gt;</replaceable>,
      <replaceable>&lt;FQDN&gt;</replaceable>, and
      <replaceable>&lt;HOSTNAME&gt;</replaceable> values need to be
      changed for specific uses or requirements (if assigned an IP address by a
@@ -382,7 +382,7 @@
      existing network). The optional alias name(s) can be omitted.</para>
 @y
      <para>
-     <replaceable>&lt;192.168.1.1&gt;</replaceable>,
+     <replaceable>&lt;192.168.1.2&gt;</replaceable>,
      <replaceable>&lt;FQDN&gt;</replaceable>,
      <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
      (ネットワーク管理者から IP アドレスを指定されている場合や、既存のネットワーク環境に接続する場合など。). 

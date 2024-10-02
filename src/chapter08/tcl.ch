@@ -88,6 +88,14 @@
 @z
 
 @x
+    <para>Twelve tests are known to fail in the chroot environment.</para>
+@y
+    <para>
+    chroot 環境内では 12 個のテストが失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
