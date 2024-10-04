@@ -38,6 +38,22 @@
 @z
 
 @x
+      <para>2024-10-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Revert back to tcl8.6.15.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-10-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tcl のバージョンを 8.6.15 へ戻す。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-10-01</para>
       <itemizedlist>
         <listitem>
