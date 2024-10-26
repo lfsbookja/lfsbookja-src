@@ -211,8 +211,8 @@
           packages to define the location where the package should be
           installed. If it is not set, it defaults to the root (<filename
           class="directory">/</filename>) directory. Here we specify that
-          the package is installed in <filename class="directory">$LFS
-          </filename>, which will become the root directory in <xref linkend=
+          the package is installed in <filename class="directory">
+          $LFS</filename>, which will become the root directory in <xref linkend=
           "ch-tools-chroot"/>.</para>
 @y
           <para>

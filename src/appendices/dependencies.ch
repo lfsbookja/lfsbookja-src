@@ -75,10 +75,10 @@
 
 %----------------------------------------------------------------------
 @x acl
-          <seg>Attr, Bash, Binutils, Coreutils, GCC,  Gettext, Grep, M4, Make,
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
           Perl, Sed, and Texinfo</seg>
 @y
-          <seg>Attr, Bash, Binutils, Coreutils, GCC,  Gettext, Grep, M4, Make,
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
           Perl, Sed, Texinfo</seg>
 @z
 @x
@@ -2078,14 +2078,16 @@
 @z
 @x
           <seg>Binutils,
-          <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
-          IProute2, Kmod, Man-DB, Procps-ng, Python,
-          &systemd-udev;, and Util-linux</seg>
+          <phrase revision='systemd'>D-Bus, </phrase>
+          E2fsprogs, IProute2, Kmod, Man-DB, Procps-ng, Python,
+          &systemd-udev;, 
+          and Util-linux</seg>
 @y
           <seg>Binutils,
-          <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
-          IProute2, Kmod, Man-DB, Procps-ng, Python,
-          &systemd-udev;, Util-linux</seg>
+          <phrase revision='systemd'>D-Bus, </phrase>
+          E2fsprogs, IProute2, Kmod, Man-DB, Procps-ng, Python,
+          &systemd-udev;, 
+          Util-linux</seg>
 @z
 @x
           <seg>None</seg>

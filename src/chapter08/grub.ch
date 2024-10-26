@@ -203,7 +203,7 @@
 @z
 
 @x grub-fstest
-          <para>Is a tool to debug the filesystem driver</para>
+          <para>Is a tool to debug the file system driver</para>
 @y
           <para>
           ファイルシステムドライバーをデバッグするツール。

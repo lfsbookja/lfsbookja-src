@@ -290,10 +290,10 @@
         <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
           <para>
-            <filename class='libraryfile'>libgdk-x11-2.0</filename>
+            <filename class='libraryfile'>libgdk-x11-2.0.so</filename>
             (but <filename class='libraryfile'>libgdk-3.so</filename>
             is provided by the BLFS GTK+-3 package),
-            <filename class='libraryfile'>libgtk-x11-2.0</filename>
+            <filename class='libraryfile'>libgtk-x11-2.0.so</filename>
             (but <filename class='libraryfile'>libgtk-3.so</filename>
             and <filename class='libraryfile'>libgtk-4.so</filename>
             are provided by the BLFS GTK+-3 and GTK-4 packages),
@@ -312,10 +312,10 @@
         <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
           <para>
-            <filename class='libraryfile'>libgdk-x11-2.0</filename>
+            <filename class='libraryfile'>libgdk-x11-2.0.so</filename>
             (ただし <filename class='libraryfile'>libgdk-3.so</filename>
             は BLFS GTK+-3 パッケージが提供),
-            <filename class='libraryfile'>libgtk-x11-2.0</filename>
+            <filename class='libraryfile'>libgtk-x11-2.0.so</filename>
             (ただし <filename class='libraryfile'>libgtk-3.so</filename>
             と <filename class='libraryfile'>libgtk-4.so</filename>
             はBLFS GTK+-3 と GTK-4 パッケージが提供),
