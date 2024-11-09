@@ -38,6 +38,40 @@
 @z
 
 @x
+      <para>2024-11-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added binutils-2.43.1-upstream_fix-1.patch. Fixes
+          <ulink url='&lfs-ticket-root;5591'>#5591</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flit_core-3.10.1. Fixes
+          <ulink url='&lfs-ticket-root;5589'>#5589</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.6.4. Fixes
+          <ulink url='&lfs-ticket-root;5590'>#5590</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-11-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.43.1-upstream_fix-1.patch の追加。
+          <ulink url='&lfs-ticket-root;5591'>#5591</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flit_core-3.10.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5589'>#5589</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.6.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5590'>#5590</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-10-25</para>
       <itemizedlist>
         <listitem>

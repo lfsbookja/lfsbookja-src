@@ -19,6 +19,16 @@
 @z
 
 @x
+    <para>First, apply a patch to prevent a bug that causing
+    unnecessary relinking with packages that depend on cmake-3.31.0
+    or newer:</para>
+@y
+    <para>
+    まずはパッチを適用して、cmake-3.31.0 またはそれ以降に依存しているパッケージを不必要にリンクしてしまうバグを解消します。
+    </para>
+@z
+
+@x
     <para>The Binutils documentation recommends building Binutils
     in a dedicated build directory:</para>
 @y
