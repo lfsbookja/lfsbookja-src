@@ -82,11 +82,14 @@
 
 @x
           <para>This option forces Readline to link against the
-          <filename class="libraryfile">libncursesw</filename> library.</para>
+          <filename class="libraryfile">libncursesw</filename> library.
+          For details see the <quote>Shared Libraries</quote> section in the
+          package's <filename>README</filename> file.</para>
 @y
           <para>
           このオプションにより Readline を <filename
           class="libraryfile">libncursesw</filename> ライブラリにリンクします。
+          詳しくは本パッケージの <filename>README</filename> ファイルにある<quote>Shared Libraries</quote>という節を参照してください。
           </para>
 @z
 

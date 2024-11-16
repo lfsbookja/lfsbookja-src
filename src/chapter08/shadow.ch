@@ -20,26 +20,28 @@
 
 @x
         If you've installed Linux-PAM, you should follow
-        <ulink url='&blfs-book;postlfs/shadow.xml'>the BLFS shadow
-        page</ulink> instead of this page to build (or, rebuild or upgrade)
-        shadow.
+        <ulink url='&blfs-book;postlfs/shadow.html'>the BLFS
+        instruction</ulink> instead of this page to build (or, rebuild or
+        upgrade) shadow.
 @y
         Linux-PAM をすでにインストールしている場合は、本ページではなく <ulink
-        url='&blfs-book;postlfs/shadow.xml'>BLFS の shadow のページ</ulink> に従って shadow のビルド（または再ビルドやアップグレード）を行う必要があります。
+        url='&blfs-book;postlfs/shadow.xml'>BLFS の 手順</ulink> に従って shadow のビルド（または再ビルドやアップグレード）を行う必要があります。
 @z
 
 @x
-      <para>If you would like to enforce the use of strong passwords, refer to
-      <ulink url="&blfs-book;postlfs/cracklib.html"/> for installing
-      CrackLib prior to building Shadow. Then add
-      <parameter>--with-libcrack</parameter> to the <command>configure</command>
-      command below.</para>
+      <para>If you would like to enforce the use of strong passwords,
+      <ulink url='&blfs-book;postlfs/linux-pam.html'>install and configure
+      Linux-PAM</ulink> first.  Then
+      <ulink url='&blfs-book;postlfs/shadow.html'>install and configure
+      shadow with the PAM support</ulink>.  Finally
+      <ulink url='&blfs-book;postlfs/libpwquality.html'>install
+      libpwquality and configure PAM to use it</ulink>.</para>
 @y
       <para>
-      もっと強力なパスワードを利用したい場合は <ulink
-      url="&blfs-book;postlfs/cracklib.html"/> にて示している Cracklib パッケージを参照してください。
-      Cracklib パッケージは Shadow パッケージよりも前にインストールします。
-      その場合 Shadow パッケージの <command>configure</command> スクリプトでは <parameter>--with-libcrack</parameter> パラメーターをつけて実行する必要があります。
+      もっと強力なパスワードを利用したい場合は、まずは <ulink
+      url='&blfs-book;postlfs/linux-pam.html'>Linux-PAM のインストールと設定</ulink> を行ってください。
+      そして <ulink url='&blfs-book;postlfs/shadow.html'>PAM サポートつきの shadow のインストールと設定</ulink> を行ってください。
+      最後に <ulink url='&blfs-book;postlfs/libpwquality.html'>libpwquality のインストールと、これを利用する PAM の設定</ulink> を行います。
       </para>
 @z
 
@@ -94,14 +96,6 @@
       何らかの理由により <envar>PATH</envar> に対して <filename
       class="directory">/bin</filename> や <filename
       class="directory">/sbin</filename> を含めたい場合は、LFS ビルドが完成した後に <filename>.bashrc</filename> において <envar>PATH</envar> を設定してください。
-      </para>
-@z
-
-@x
-      <para>If you chose to build Shadow with Cracklib support, issue this command:</para>
-@y
-      <para>
-      Cracklib のサポートを含めて Shadow をビルドする場合は以下を実行します。
       </para>
 @z
 

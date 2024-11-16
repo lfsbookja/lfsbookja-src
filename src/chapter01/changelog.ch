@@ -38,6 +38,64 @@
 @z
 
 @x
+      <para>2024-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.0866. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20241024. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to wheel-0.45.0 (Python Module). Fixes
+          <ulink url='&lfs-ticket-root;5593'>#5593</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-75.5.0 (Python Module). Fixes
+          <ulink url='&lfs-ticket-root;5595'>#5595</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.11.8. Fixes
+          <ulink url='&lfs-ticket-root;5592'>#5582</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.72. Fixes
+          <ulink url='&lfs-ticket-root;5594'>#5594</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.0866 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20241024 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - wheel-0.45.0 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5593'>#5593</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-75.5.0 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5595'>#5595</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.11.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5592'>#5582</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.72 へのアップデート。
+          <ulink url='&lfs-ticket-root;5594'>#5594</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-11-08</para>
       <itemizedlist>
         <listitem>
