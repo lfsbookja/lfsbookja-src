@@ -336,7 +336,86 @@
           </para>
 @z
 
+@x Display a user-friendly message when a kernel panic occurs
+          <para>This will make the kernel correctly display the message
+          in case a kernel panic happens and a running DRM driver
+          supports to do so.  Without this, it would be more
+          difficult to diagnose a panic: if no DRM driver is running,
+          we'd be on the VGA console which can only hold 24 lines and
+          the relevent kernel message is often flushed away; if a DRM
+          driver is running, the display is often completely messed up
+          on panic.  As of Linux-6.12, none of the dedicated drivers for
+          mainstream GPU models really supports this, but it's supported by
+          the <quote>Simple framebuffer driver</quote> which runs on the
+          VESA (or EFI) framebuffer before the dedicated GPU driver is
+          loaded.  If the dedicated GPU driver is built as a module
+          (instead of a part of the kernel image) and no initramfs is
+          used, this functionality will work just fine before the root
+          file system is mounted and it's already enough for providing
+          information about most LFS configuration errors causing a
+          panic (for example, an incorrect <parameter>root=</parameter>
+          setting in <xref linkend='ch-bootable-grub'/>).</para>
+@y
+          <para>
+          カーネルパニック発生にあたって、起動中の DRM ドライバーの出力機能が適切にサポートされている場合に、メッセージを正しく表示します。
+          これがなかった場合には、パニック内容を調べることがより困難になります。
+          たとえば DRM ドライバーが起動していなかった場合は、VGA コンソールを利用することになり、その場合には 24 行の表示しか行われず、相当数のカーネルメッセージは消えてなくなってしまいます。
+          また DRM ドライバーが起動していても、パニック時のメッセージは非常に複雑です。
+          Linux-6.12 の場合、主要な GPU モデルの専用ドライバーはどれもこれに対応していませんが、<quote>Simple framebuffer driver</quote>であれば対応しています。
+          これであれば VESA (あるいは EFI) フレームバッファー上で作動し、GPU 専用ドライバーがロードされる前であってかまいません。
+          GPU 専用ドライバーが (カーネルイメージの一部としてではなく) モジュールとしてビルドされていて、かつ initramfs が利用されていない場合は、ルートファイルシステムのマウント前であっても正しく機能します。
+          そして LFS の設定誤りがパニックを引き起こしている (たとえば <xref linkend='ch-bootable-grub'/>における <parameter>root=</parameter> の設定が適切でない) 場合に、情報表示が充分に行われることになります。
+          </para>
+@z
+
+@x Panic screen formatter
+          <para>Set this <literal>kmsg</literal> to make sure the last
+          kernel messages lines are displayed when a kernel panic happens.
+          The default, <literal>user</literal>, would make the kernel show
+          only a <quote>user friendly</quote> panic message which is not
+          helpful on diagnostic.  The third choice,
+          <literal>qr_code</literal>, would make the kernel to compress
+          the last kernel message lines into a QR code and display it.
+          The QR code can hold more message lines than plain text and it
+          can be decoded with an external device (like a smart phone).
+          But it requires a Rust compiler that LFS does not provide.</para>
+@y
+          <para>
+          これを <literal>kmsg</literal> に設定すると、カーネルパニックが発生した際に、カーネルメッセージの最終行付近を確実に表示するようになります。
+          デフォルト設定は <literal>user</literal> であり、その場合カーネルは<quote>ユーザーフレンドリーな</quote> パニックメッセージしか表示せず、これでは解析になんら役立ちません。
+          もう一つの設定として <literal>qr_code</literal> がありますが、これはカーネルメッセージの最終行付近を圧縮して QR コードとして表示します。
+          QR コードであればプレーンテキストに比べて、それ以上に多くのメッセージを保持することができ、別のデバイス (たとえばスマートホン) 上で圧縮の展開を行うことができます。
+          ただしこれを実現するためには LFS では提供していない Rust コンパイラーが必要となります。
+          </para>
+@z
+
+@x and の除去
+          <parameter>
+            Mark VGA/VBE/EFI FB as generic system framebuffer
+          </parameter> and
+          <parameter>Simple framebuffer driver</parameter>
+@y
+          <parameter>
+            Mark VGA/VBE/EFI FB as generic system framebuffer
+          </parameter>,
+          <parameter>Simple framebuffer driver</parameter>
+@z
 @x
+          <para>These allow to use the VESA framebuffer (or the EFI
+          framebuffer if booting the LFS system via UEFI) as a DRM device.
+          The VESA framebuffer will be set up by GRUB (or the EFI
+          framebuffer will be set up by the UEFI firmware), so the DRM panic
+          handler can function before the GPU-specific DRM driver is
+          loaded.</para>
+@y
+          <para>
+          これは DRM デバイスとして VESA フレームバッファーを利用するようにします (UEFI 経由により LFS システムを起動する場合には EFI フレームバッファーを利用するようにします)。
+          VESA フレームバッファーは GRUB によって (あるいは EFI フレームバッファーにおいては UEFI ファームウェアによって) 設定されます。
+          したがって DRM におけるパニック処理は、GPU 固有の DRM ドライバーがロードされる前であっても正しく機能します。
+          </para>
+@z
+
+@x and の除去
           <parameter>
             Enable legacy fbdev support for your modesetting driver
           </parameter> and
@@ -350,8 +429,8 @@
 @x
           <para>These are needed to display the Linux console on a
           GPU driven by a DRI (Direct Rendering Infrastructure) driver.
-          If <option>CONFIG_DRM</option> (Direct Rendering Manager) is
-          enabled, you should enable these two options as well or you'll see
+          As <option>CONFIG_DRM</option> (Direct Rendering Manager) is
+          enabled, we should enable these two options as well or we'll see
           a blank screen once the DRI driver is loaded.</para>
 @y
           <para>
