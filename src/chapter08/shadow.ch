@@ -86,16 +86,17 @@
 @z
 
 @x
-      <para>If you wish to include <filename class="directory">/bin</filename>
-      and/or <filename class="directory">/sbin</filename> in the <envar>PATH</envar>
-      for some reason, modify the
-      <envar>PATH</envar> in <filename>.bashrc</filename> after LFS has been
-      built.</para>
+      <para>Including <filename class="directory">/bin</filename>
+      and/or <filename class="directory">/sbin</filename> in
+      the <envar>PATH</envar> variable may cause some BLFS packages fail to
+      build,<!-- known example: SPIRV-LLVM-Translator --> so don't do that
+      in the <filename>.bashrc</filename> file or anywhere else.</para>
 @y
       <para>
-      何らかの理由により <envar>PATH</envar> に対して <filename
+      <envar>PATH</envar> 変数に <filename
       class="directory">/bin</filename> や <filename
-      class="directory">/sbin</filename> を含めたい場合は、LFS ビルドが完成した後に <filename>.bashrc</filename> において <envar>PATH</envar> を設定してください。
+      class="directory">/sbin</filename> を含めると、BLFS パッケージのビルドに失敗することがあります。
+      したがって <filename>.bashrc</filename> ファイルをはじめ、どの設定ファイルでもその設定は行わないでください。
       </para>
 @z
 

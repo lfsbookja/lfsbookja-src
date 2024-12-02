@@ -328,7 +328,7 @@
 @z
 @x
           <para><command>tc class</command> allows users to set up classes based
-          on the queuing discipline scheduling</para>
+          on the queueing discipline scheduling</para>
 @y
           <para>
           <command>tc class</command> はキューイング規則スケジューリング (queueing discipline scheduling) に基づくクラスの設定を行います。

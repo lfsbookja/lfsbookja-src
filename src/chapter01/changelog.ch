@@ -38,6 +38,72 @@
 @z
 
 @x
+      <para>2024-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20241122. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to file-5.46. Fixes
+          <ulink url='&lfs-ticket-root;5601'>#5601</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-6.12.0. Fixes
+          <ulink url='&lfs-ticket-root;5597'>#5597</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libtool-2.5.4. Fixes
+          <ulink url='&lfs-ticket-root;5598'>#5598</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.12.1. Fixes
+          <ulink url='&lfs-ticket-root;5596'>#5586</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-75.6.0 (Python Module). Fixes
+          <ulink url='&lfs-ticket-root;5599'>#5599</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to wheel-0.45.1 (Python Module). Fixes
+          <ulink url='&lfs-ticket-root;5600'>#5600</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2024-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20241122 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file-5.46 へのアップデート。
+          <ulink url='&lfs-ticket-root;5601'>#5601</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-6.12.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5597'>#5597</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtool-2.5.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5598'>#5598</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.12.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5596'>#5586</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-75.6.0 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5599'>#5599</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - wheel-0.45.1 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5600'>#5600</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2024-11-15</para>
       <itemizedlist>
         <listitem>
