@@ -141,7 +141,7 @@
 @x
       <filename>/etc/mke2fs.conf</filename> contains the default value of
       various command line options of <command>mke2fs</command>.  You may
-      edit the file to make the default values suitable for your need.
+      edit the file to make the default values suitable for your needs.
       For example, some utilities (not in LFS or BLFS) cannot recognize a
       <systemitem class='filesystem'>ext4</systemitem> file system with
       <literal>metadata_csum_seed</literal> feature enabled.

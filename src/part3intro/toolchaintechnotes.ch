@@ -757,7 +757,7 @@
     <para>Next comes glibc. The most important
     considerations for building glibc are the compiler, binary tools, and
     kernel headers. The compiler and binary tools are generally not an issue
-    since glibc will always those relating to the <parameter>--host</parameter>
+    since glibc will always use those relating to the <parameter>--host</parameter>
     parameter passed to its configure script; e.g., in our case, the compiler
     will be <command>$LFS_TGT-gcc</command> and the <command>readelf</command>
     tool will be <command>$LFS_TGT-readelf</command>. The kernel headers can
