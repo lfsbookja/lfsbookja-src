@@ -261,6 +261,18 @@
 @z
 
 @x
+      The <command>set gfxpayload=1024x768x32</command> command sets the
+      resolution and color depth of the VESA framebuffer to be passed to the
+      kernel.  It's necessary for the kernel SimpleDRM driver to use the
+      VESA framebuffer.  You can use a different resolution or color depth
+      value which better suits for your monitor.
+@y
+      <command>set gfxpayload=1024x768x32</command> コマンドは VESA フレームバッファーの解像度と色の深さを設定するものであり、これがカーネルに受け渡されます。
+      VESA フレームバッファー向けにカーネルの SimpleDRM ドライバーを用いる場合にこの指定が必要になります。
+      モニター画面に最適な解像度や色深さを選んでください。
+@z
+
+@x
     <note><para>From <application>GRUB</application>'s perspective, the
     kernel files are relative to the partition used.  If you
     used a separate /boot partition, remove /boot from the above
