@@ -23,6 +23,14 @@
 @z
 
 @x
+    <para>First fix some compatibility issues with other programs:</para>
+@y
+    <para>
+    他のプログラムとの互換性に問題があるため、これを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Gettext for compilation:</para>
 @y
     <para>&PreparePackage1;Gettext&PreparePackage2;</para>

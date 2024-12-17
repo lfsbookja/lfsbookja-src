@@ -656,6 +656,43 @@
 @z
 
 @x
+      <para>If you are updating the configuration and rebuilding the kernel
+      from a retained kernel source tree, normally you should
+      <emphasis role='bold'>not</emphasis> run the
+      <command>make mrproper</command> command.  The command would purge
+      the <filename>.config</filename> file and all the
+      <filename class='extension'>.o</filename> files from the previous
+      build.  Despite it's easy to restore <filename>.config</filename> from
+      the copy in <filename class='directory'>/boot</filename>, purging all
+      the <filename class='extension'>.o</filename> files is still a waste:
+      for a simple configuration change, often only a few
+      <filename class='extension'>.o</filename> files need to be (re)built
+      and the kernel build system will correctly skip other
+      <filename class='extension'>.o</filename> files if they are not
+      purged.</para>
+@y
+      <para>
+      保持しておいたカーネルソースを使って、カーネル設定の更新およびカーネルの再ビルドを行う場合、普通は <command>make mrproper</command> コマンドは実行しないでください。
+      このコマンドを実行すると、前回のビルド時に生成された <filename>.config</filename> ファイルと、拡張子 <filename class='extension'>.o</filename> のファイルすべてを削除します。
+      <filename>.config</filename> だけなら <filename class='directory'>/boot</filename> からコピーすれば簡単に復元できます。
+      しかし <filename class='extension'>.o</filename> ファイルをすべて削除すると、またビルドに時間を要することになります。
+      たとえば単純な設定を変更するだけであったなら、(再)生成すべき <filename class='extension'>.o</filename> ファイルは少ないはずであり、それ以外の <filename class='extension'>.o</filename> ファイルは残しておけば、カーネルビルドシステムは適切にビルドをスキップしてくれます。
+      </para>
+@z
+
+@x
+      <para>On the other hand, if you've upgraded GCC, you should run
+      <command>make clean</command> to purge all the
+      <filename class='extension'>.o</filename> files from the previous
+      build, or the new build may fail.</para>
+@y
+      <para>
+      それとは逆に GCC のアップグレードを行っていた場合には <command>make clean</command> を実行して、前回ビルドされた <filename class='extension'>.o</filename> ファイルは削除しておかなければなりません。
+      これを行わなかった場合、新たなビルドが失敗する可能性があります。
+      </para>
+@z
+
+@x
       <para>Some kernel documentation recommends creating a symlink from
       <filename class="symlink">/usr/src/linux</filename> pointing to the kernel
       source directory.  This is specific to kernels prior to the 2.6 series and
@@ -668,26 +705,6 @@
       class="symlink">/usr/src/linux</filename> の生成を勧めているものがあります。
       これはカーネル 2.6 系以前におけるものであり LFS システム上では生成<emphasis>してはなりません </emphasis>。
       ベースとなる LFS システムを構築し、そこに新たなパッケージを追加していこうとした際に、そのことが問題となるからです。
-      </para>
-@z
-
-@x
-      <para>The headers in the system's <filename
-      class="directory">include</filename> directory (<filename
-      class="directory">/usr/include</filename>) should
-      <emphasis>always</emphasis> be the ones against which Glibc was compiled,
-      that is, the sanitised headers installed in <xref
-      linkend="ch-tools-linux-headers"/>.  Therefore, they should
-      <emphasis>never</emphasis> be replaced by either the raw kernel headers
-      or any other kernel sanitized headers.</para>
-@y
-      <para>
-      さらに <filename
-      class="directory">include</filename> ディレクトリ (<filename
-      class="directory">/usr/include</filename>) にあるヘッダーファイルは、<emphasis>必ず</emphasis> Glibc のコンパイル時のものでなければなりません。
-      つまり <xref
-      linkend="ch-tools-linux-headers"/> によってインストールされた、健全化 (sanitizing) したものです。
-      したがって生のカーネルヘッダーや他のカーネルにて健全化されたヘッダーによって上書きされてしまうのは避けなければなりません。
       </para>
 @z
 
