@@ -27,7 +27,7 @@
    </para>
    <para>
    「r12.2-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
-   また 4b8c6b4f6 などのリンクは、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値 (その参照ページ) を意味します。
+   また 4b8c6b4f6 などのリンクは、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値を意味します。
    </para>
   </note>
 
@@ -51,11 +51,22 @@
 -->
 
    <listitem>
+      <para>2024-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.2-59 (bfb0cbae1) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2024-12-17</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-51 (<ulink url="&lfs-changeset;72fae0d02">72fae0d02</ulink>) までの対応。
+          r12.2-51 (72fae0d02) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -66,7 +77,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-43 (<ulink url="&lfs-changeset;6fa6a4f3c">6fa6a4f3c</ulink>) までの対応。
+          r12.2-43 (6fa6a4f3c) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -77,7 +88,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-38 (<ulink url="&lfs-changeset;5ee35073f">5ee35073f</ulink>) までの対応。
+          r12.2-38 (5ee35073f) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -88,7 +99,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-34 (<ulink url="&lfs-changeset;ea4845640">ea4845640</ulink>) までの対応。
+          r12.2-34 (ea4845640) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -99,7 +110,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-29 (<ulink url="&lfs-changeset;4660ec224">4660ec224</ulink>) までの対応。
+          r12.2-29 (4660ec224) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -110,7 +121,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-23 (<ulink url="&lfs-changeset;a9517d383">a9517d383</ulink>) までの対応。
+          r12.2-23 (a9517d383) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -121,7 +132,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-22 (<ulink url="&lfs-changeset;08620feaa">08620feaa</ulink>) までの対応。
+          r12.2-22 (08620feaa) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -132,7 +143,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-14 (<ulink url="&lfs-changeset;ebeebc26b">ebeebc26b</ulink>) までの対応。
+          r12.2-14 (ebeebc26b) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -143,7 +154,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-8 (<ulink url="&lfs-changeset;984e1f106">984e1f106</ulink>) までの対応。
+          r12.2-8 (984e1f106) までの対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -154,7 +165,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-5 (<ulink url="&lfs-changeset;75c976032">75c976032</ulink>) までの対応。
+          r12.2-5 (75c976032) までの対応。
           </para>
         </listitem>
       </itemizedlist>

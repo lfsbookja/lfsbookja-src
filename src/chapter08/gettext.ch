@@ -23,10 +23,14 @@
 @z
 
 @x
-    <para>First fix some compatibility issues with other programs:</para>
+    <para>At first, fix an issue causing the package fail to build with
+    libxml-2.12 or later.  The fix is optional for building LFS, but
+    required if rebuilding this package in BLFS with libxml
+    installed:</para>
 @y
     <para>
-    他のプログラムとの互換性に問題があるため、これを修正します。
+    はじめに libxml-2.12 またはそれ以降を使ったビルドに失敗するパッケージがあるため、その問題を修正します。
+    この修正は LFS 構築にとっては任意作業ですが、libxml をインストールした BLFS において本パッケージを再ビルドする場合には必須となります。
     </para>
 @z
 
