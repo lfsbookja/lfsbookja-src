@@ -27,7 +27,7 @@
    </para>
    <para>
    「r12.2-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
-   また 4b8c6b4f6 などのリンクは、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値を意味します。
+   また 4b8c6b4f6 などの表記は、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値を意味します。
    </para>
   </note>
 
@@ -49,6 +49,17 @@
     </listitem>
 
 -->
+
+   <listitem>
+      <para>2025-01-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.2-66 (6528f7572) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
 
    <listitem>
       <para>2024-12-22</para>
