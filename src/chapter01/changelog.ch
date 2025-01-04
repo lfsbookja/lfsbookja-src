@@ -151,7 +151,7 @@
           <ulink url='&lfs-ticket-root;5559'>#5559</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to Python-3.13.1. Fixes
+          <para>[bdubbs] - Update to Python-3.13.1 (Security Update). Fixes
           <ulink url='&lfs-ticket-root;5605'>#5605</ulink>.</para>
         </listitem>
         <listitem>
@@ -187,7 +187,7 @@
           <ulink url='&lfs-ticket-root;5559'>#5559</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Python-3.13.1 へのアップデート。
+          <para>[bdubbs] - Python-3.13.1 へのアップデート (セキュリティアップデート)。
           <ulink url='&lfs-ticket-root;5605'>#5605</ulink> を Fix に。</para>
         </listitem>
         <listitem>
