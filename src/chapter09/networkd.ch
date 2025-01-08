@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>General Network Configuration</title>
 @y
   <title>全般的なネットワークの設定</title>
@@ -79,9 +73,11 @@
     <filename class="extension">.netdev</filename> and
     <filename class="extension">.network</filename> files. For detailed
     descriptions and example contents of these configuration files, consult
-    the <filename>systemd-link(5)</filename>,
-    <filename>systemd-netdev(5)</filename> and
-    <filename>systemd-network(5)</filename> manual pages.</para>
+    the 
+    <ulink role='man' url='&man;systemd.link.5'>systemd.link(5)</ulink>,
+    <ulink role='man' url='&man;systemd.netdev.5'>systemd.netdev(5)</ulink>, and
+    <ulink role='man' url='&man;systemd.network.5'>systemd.network(5)</ulink> 
+    manual pages.</para>
 @y
     <para>
     <command>systemd-networkd</command> (および <command>systemd-resolved</command>)
@@ -95,9 +91,10 @@
     <filename class="extension">.netdev</filename>,
     <filename class="extension">.network</filename>
     の三種類があります。
-    これらの説明や設定例については man ページ <filename>systemd-link(5)</filename>,
-    <filename>systemd-netdev(5)</filename>,
-    <filename>systemd-network(5)</filename>
+    これらの説明や設定例については man ページ
+    <ulink role='man' url='&man;systemd.link.5'>systemd.link(5)</ulink>,
+    <ulink role='man' url='&man;systemd.netdev.5'>systemd.netdev(5)</ulink>,
+    <ulink role='man' url='&man;systemd.network.5'>systemd.network(5)</ulink> 
     を参照してください。
     </para>
 @z
@@ -156,34 +153,38 @@
 @z
 
 @x
-            Mask udev's .link file for the default policy:
+            Mask udev's <filename class='extension'>.link</filename> file
+            for the default policy:
 @y
-            udev のデフォルトポリシーに対する .link ファイルをマスクして無効にします。
+            udev のデフォルトポリシーに対する <filename
+            class='extension'>.link</filename> ファイルをマスクして無効にします。
 @z
 
 @x
-             Create a manual naming scheme, for example by naming the
-             interfaces something like "internet0", "dmz0", or "lan0".
-             To do that, create .link files in /etc/systemd/network/ that
-             select an explicit name or a better naming scheme for your
-             network interfaces. For example:
+            Create a manual naming scheme, for example by naming the
+            interfaces something like <literal>internet0</literal>,
+            <literal>dmz0</literal>, or <literal>lan0</literal>.
+            To do that, create <filename class='extension'>.link</filename>
+            files in /etc/systemd/network/ that select an explicit name or a
+            better naming scheme for your network interfaces. For example:
 @y
-             インターフェースに対する名前として "internet0", "dmz0", "lan0" といった命名スキームを自分で定めます。
-             これを行うには /etc/systemd/network/ ディレクトリに .link ファイルを生成し、必要なインターフェースに対して具体的な名前、つまりより良い命名スキームを定めます。
-             例えば以下のようにします。
+            インターフェースに対する名前として <literal>internet0</literal>, <literal>dmz0</literal>, <literal>lan0</literal> といった命名スキームを自分で定めます。
+            これを行うには /etc/systemd/network/ ディレクトリに <filename
+            class='extension'>.link</filename> ファイルを生成し、必要なインターフェースに対して具体的な名前、つまりより良い命名スキームを定めます。
+            例えば以下のようにします。
 @z
 
 @x
-             See the man page systemd.link(5) for more information.
+            See <ulink role='man' url='&man;systemd.link.5'>systemd.link(5)</ulink> for more information.
 @y
-             詳細は man ページ systemd.link(5) を確認してください。
+            詳細は <ulink role='man' url='&man;systemd.link.5'>systemd.link(5)</ulink> を確認してください。
 @z
 
 @x
-            In /boot/grub/grub.cfg, pass the option net.ifnames=0 on the
-            kernel command line.
+            In /boot/grub/grub.cfg, pass the option
+            <option>net.ifnames=0</option> on the kernel command line.
 @y
-            /boot/grub/grub.cfg ファイル内において、カーネルの設定行に net.ifnames=0 を追加します。
+            /boot/grub/grub.cfg ファイル内において、カーネルの設定行に <option>net.ifnames=0</option> を追加します。
 @z
 
 @x
@@ -505,13 +506,16 @@
      <literal>localhost.localdomain</literal>, or the hostname (without a
      domain) because they are handled by the
      <systemitem class='library'>myhostname</systemitem> NSS module, read
-     the man page <filename>nss-myhostname(8)</filename> for details.</para>
+     the man page <ulink role='man'
+     url='&man;nss-myhostname.8'>nss-myhostname(8)</ulink> for
+     details.</para>
 @y
      <para>
      <filename>/etc/hostname</filename> には <literal>localhost</literal>,
      <literal>localhost.localdomain</literal>, （ドメイン名を含まない）ホスト名は記述しません。
      これらは NSS モジュール <systemitem class='library'>myhostname</systemitem> が取り扱います。
-     詳しくは man ページ <filename>nss-myhostname(8)</filename> を参照してください。
+     詳しくは man ページ <ulink role='man'
+     url='&man;nss-myhostname.8'>nss-myhostname(8)</ulink> を参照してください。
      </para>
 @z
 

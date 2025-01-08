@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Util-linux package contains miscellaneous utility programs.
     Among them are utilities for handling file systems, consoles, partitions,
     and messages.</para>
@@ -57,10 +51,13 @@
 @z
 
 @x
-    <para>If desired, run the test suite as a non-&root; user:</para>
+    <para>If desired, create a dummy <filename>/etc/fstab</filename> file
+    to satisfy two tests and run the test suite as a non-&root;
+    user:</para>
 @y
     <para>
-    必要なら &root; ユーザー以外にて、以下のようにテストスイートを実行します。
+    ダミーの <filename>/etc/fstab</filename> ファイルを作れば 2 つのテストがうまく実行できます。
+    テストスイートの実行は &root; ユーザー以外にて以下を実行します。
     </para>
 @z
 
@@ -83,20 +80,18 @@
 @z
 
 @x
-    <para>The <emphasis>hardlink</emphasis> tests will fail if the host's kernel
-    does not have the option <option>CONFIG_CRYPTO_USER_API_HASH</option>
-    enabled or does not have any options providing a SHA256 implementation
-    (for example, <option>CONFIG_CRYPTO_SHA256</option>, or
-    <option>CONFIG_CRYPTO_SHA256_SSSE3</option> if the CPU supports
-    Supplemental SSE3) enabled. In addition,
-    two sub-tests from misc: mbsencode and one sub-test from script: replay are 
-    known to fail.</para>
+       The <emphasis>hardlink</emphasis> tests will fail if the host's kernel
+       does not have the option <option>CONFIG_CRYPTO_USER_API_HASH</option>
+       enabled or does not have any options providing a SHA256 implementation
+       (for example, <option>CONFIG_CRYPTO_SHA256</option>, or
+       <option>CONFIG_CRYPTO_SHA256_SSSE3</option> if the CPU supports
+       Supplemental SSE3) enabled. In addition, the lsfd: inotify test will
+       fail if the kernel option <option>CONFIG_NETLINK_DIAG</option> is not
+       enabled.
 @y
-    <para>
-    <emphasis>hardlink</emphasis>テストは失敗する場合があります。
-    それはカーネルオプションの <option>CONFIG_CRYPTO_USER_API_HASH</option> が有効でない場合、あるいは SHA256 機能を提供するオプション（たとえば <option>CONFIG_CRYPTO_SHA256</option> や CPU が Supplemental SSE3 をサポートする際の <option>CONFIG_CRYPTO_SHA256_SSSE3</option> など）が一つもない場合です。
-    さらに misc 内のサブテスト mbsencode と script 内のサブテスト replay が失敗します。
-    </para>
+       <emphasis>hardlink</emphasis>テストは失敗する場合があります。
+       それはカーネルオプションの <option>CONFIG_CRYPTO_USER_API_HASH</option> が有効でない場合、あるいは SHA256 機能を提供するオプション（たとえば <option>CONFIG_CRYPTO_SHA256</option> や CPU が Supplemental SSE3 をサポートする際の <option>CONFIG_CRYPTO_SHA256_SSSE3</option> など）が一つもない場合です。
+       さらにカーネルオプション <option>CONFIG_NETLINK_DIAG</option> が無効である場合、lsfd 内のテスト inotify が失敗します。
 @z
 
 @x
@@ -105,12 +100,112 @@
     <para>&InstallThePackage;</para>
 @z
 
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
 @x
-  <para>Finally, install the man pages:</para>
+    <title>Installation of Util-linux - 32-bit</title>
 @y
-  <para>
-  最後に man ページをインストールします。
-  </para>
+    <title>Util-linux - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Move a tool out of the way which is optionally used by
+    configure but will report invalid pathes for multilib builds.</para>
+@y
+    <para>
+    ツールを１つ移動させておきます。
+    これは configure が利用する場合があり、マルチビルドにおいてパスが不適切であると表示される場合があります。
+    </para>
+@z
+
+@x
+    <para>Prepare Util-linux for compilation:</para>
+@y
+    <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
+@z
+
+@x
+    <para>Restore the tool previously moved away:</para>
+@y
+    <para>
+    前の手順にて移動させていたツールを元に戻します。
+    </para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Util-linux - x32-bit</title>
+@y
+    <title>Util-linux - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Move a tool out of the way which is optionally used by
+    configure but will report invalid pathes for multilib builds.</para>
+@y
+    <para>
+    ツールを１つ移動させておきます。
+    これは configure が利用する場合があり、マルチビルドにおいてパスが不適切であると表示される場合があります。
+    </para>
+@z
+
+@x
+    <para>Prepare Util-linux for compilation:</para>
+@y
+    <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
+@z
+
+@x
+    <para>Restore the tool previously moved away:</para>
+@y
+    <para>
+    前の手順にて移動させていたツールを元に戻します。
+    </para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -527,10 +622,12 @@
 
 @x irqtop
           <para>Displays kernel interrupt counter information in
-          <filename>top(1)</filename> style view</para>
+          <ulink role='man' url='&man;top.1'>top(1)</ulink> style
+          view</para>
 @y
           <para>
-          カーネルのインタラプトカウンター情報を <filename>top(1)</filename> スタイルにより表示します。
+          カーネルのインタラプトカウンター情報を <ulink
+          role='man' url='&man;top.1'>top(1)</ulink> スタイルにより表示します。
           </para>
 @z
 

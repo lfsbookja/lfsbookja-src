@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Libelf from Elfutils-&elfutils-version;</title>
 @y
   <title>Elfutils-&elfutils-version; から取り出した libelf</title>
@@ -64,6 +58,78 @@
     <para>Install only Libelf:</para>
 @y
     <para>Libelf のみをインストールします。</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Libelf - 32bit</title>
+@y
+    <title>Libelf - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Libelf for compilation:</para>
+@y
+    <para>&PreparePackage1;Libelf&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Libelf - x32bit</title>
+@y
+    <title>Libelf - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Libelf for compilation:</para>
+@y
+    <para>&PreparePackage1;Libelf&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x

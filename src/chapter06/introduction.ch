@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Introduction</title>
 @y
   <title>はじめに</title>
@@ -49,7 +43,7 @@
   may render your computer unusable.
   This whole chapter must be done as user <systemitem
   class="username">lfs</systemitem>, with the environment as described in
-  <xref linkend="ch-preps-settingenviron"/>.</para>
+  <xref linkend="ch-preps-settingenviron" role='.'/></para>
 @y
   <para>
   ここでもう一度確認しておきますが、<systemitem

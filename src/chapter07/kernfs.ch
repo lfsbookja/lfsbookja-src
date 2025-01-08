@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Preparing Virtual Kernel File Systems</title>
 @y
   <title>仮想カーネルファイルシステムの準備</title>
@@ -147,14 +141,15 @@
 
 @x
       <para>In some host systems, <filename>/dev/shm</filename> is a
-      symbolic link to <filename class="directory">/run/shm</filename>.
+      symbolic link to a directory, typically
+      <filename class="directory">/run/shm</filename>.
       The /run tmpfs was mounted above so in this case only a
-      directory needs to be created.</para>
+      directory needs to be created with the correct permissions.</para>
 @y
       <para>
-      ホストシステムによっては <filename>/dev/shm</filename> が <filename
+      ホストシステムによっては <filename>/dev/shm</filename> が通常 <filename
       class="directory">/run/shm</filename> へのシンボリックリンクになっているものがあります。
-      上の作業にて /run tmpfs がマウントされましたが、これはこのディレクトリを生成する必要がある時のみです。
+      上の作業にて /run tmpfs がマウントされましたが、これを行うのはこのディレクトリを適切なパーミッションにより生成する必要がある場合のみです。
       </para>
 @z
 

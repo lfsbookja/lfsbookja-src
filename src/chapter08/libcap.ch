@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Libcap package implements the userspace interface to the POSIX
     1003.1e capabilities available in Linux kernels. These capabilities
     partition the all-powerful root privilege into a set of distinct
@@ -70,9 +64,67 @@
 @x
     <para>Install the package:</para>
 @y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Libcap - 32bit</title>
+@y
+    <title>Libcap - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
     <para>
-    &InstallThePackage;
+    ここまでのビルドをクリアします。
     </para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Libcap - x32bit</title>
+@y
+    <title>Libcap - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Ncurses package contains libraries for terminal-independent
     handling of character screens.</para>
 @y
@@ -81,26 +75,6 @@
           </para>
 @z
 
-@x --enable-widec
-          <para>This switch causes wide-character libraries (e.g., <filename
-          class="libraryfile">libncursesw.so.&ncurses-version;</filename>)
-          to be built instead of normal ones (e.g., <filename
-          class="libraryfile">libncurses.so.&ncurses-version;</filename>).
-          These wide-character libraries are usable in both multibyte and
-          traditional 8-bit locales, while normal libraries work properly
-          only in 8-bit locales. Wide-character and normal libraries are
-          source-compatible, but not binary-compatible.</para>
-@y
-          <para>
-          本スイッチは通常のライブラリ (<filename
-          class="libraryfile">libncurses.so.&ncurses-version;</filename>) ではなくワイド文字対応のライブラリ (<filename
-          class="libraryfile">libncursesw.so.&ncurses-version;</filename>) をビルドすることを指示します。
-          ワイド文字対応のライブラリは、マルチバイトロケールと従来の 8ビットロケールの双方に対して利用可能です。
-          通常のライブラリでは 8ビットロケールに対してしか動作しません。
-          ワイド文字対応と通常のものとでは、ソース互換があるもののバイナリ互換がありません。
-          </para>
-@z
-
 @x
     <para>Compile the package:</para>
 @y
@@ -128,24 +102,32 @@
     in-place.  It may crash the shell process which is using code and data
     from the library file.  Install the package with
     <literal>DESTDIR</literal>, and replace the library file correctly using
-    <command>install</command> command:</para>
+    <command>install</command> command (the header
+    <filename>curses.h</filename> is also edited to ensure the
+    wide-character ABI to be used as what we've done in
+    <xref linkend='ch-tools-ncurses'/>):</para>
 @y
     <para>
     本パッケージをインストールすると、所定位置にある <filename
     class="libraryfile">libncursesw.so.&ncurses-version;</filename> が上書きされます。
     このときに、そのライブラリファイルのコードやデータを利用しているシェルプロセスが、クラッシュする場合があります。
     そこで本パッケージは <literal>DESTDIR</literal> を使ってインストールして、<command>install</command> コマンドによってライブラリファイルを正しく置き換えるようにします。
+    (ヘッダーファイル <filename>curses.h</filename> も <xref linkend='ch-tools-ncurses'/> で行ったものと同様に、ワイドキャラクター ABI が確実に利用されるように修正されます。)
     </para>
 @z
 
 @x
     <para>Many applications still expect the linker to be able to find
-    non-wide-character Ncurses libraries. Trick such applications into linking with
-    wide-character libraries by means of symlinks and linker scripts:</para>
+    non-wide-character Ncurses libraries. Trick such applications into
+    linking with wide-character libraries by means of symlinks
+    (note that the <filename class='extension'>.so</filename> links are
+    only safe with <filename>curses.h</filename> edited to always use the
+    wide-character ABI):</para>
 @y
     <para>
     アプリケーションによっては、ワイド文字対応ではないライブラリをリンカーが探し出すよう求めるものが多くあります。
-    そのようなアプリケーションに対しては、以下のようなシンボリックリンクやリンカースクリプトを作り出して、ワイド文字対応のライブラリにリンクさせるよう仕向けます。
+    そのようなアプリケーションに対しては、以下のようなシンボリックリンクを作り出して、ワイド文字対応のライブラリにリンクさせるよう仕向けます。
+    (<filename class='extension'>.so</filename> のリンクは、編集された <filename>curses.h</filename> がワイドキャラクターに対して常に用いられるようにするためだけのものです。)
     </para>
 @z
 
@@ -184,6 +166,78 @@
       </para>
 @z
 
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Building Ncurses - 32bit</title>
+@y
+    <title>Ncurses - 32 ビットのビルド</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Ncurses for compilation:</para>
+@y
+    <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Building Ncurses - x32bit</title>
+@y
+    <title>Ncurses - x32 ビットのビルド</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Ncurses for compilation:</para>
+@y
+    <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
 @x
     <title>Contents of Ncurses</title>
 @y
@@ -215,13 +269,17 @@
            tset
         </seg>
         <seg>
-           libcursesw.so (symlink and linker script to libncursesw.so),
+           libcurses.so (symlink),
+           libform.so (symlink),
            libformw.so,
+           libmenu.so (symlink),
            libmenuw.so,
+           libncurses.so (symlink),
            libncursesw.so,
            libncurses++w.so,
-           libpanelw.so, and their non-wide-character counterparts without "w"
-              in the library names.</seg>
+           libpanel.so (symlink),
+           and libpanelw.so,
+        </seg>
         <seg>
            /usr/share/tabset,
            /usr/share/terminfo, and
@@ -229,12 +287,12 @@
         </seg>
 @y
         <seg>
-           captoinfo (tic へのリンク), 
+           captoinfo (tic へのリンク),
            clear,
            infocmp,
            infotocap (tic へのリンク),
            ncursesw6-config,
-           reset (tset へのリンク), 
+           reset (tset へのリンク),
            tabs,
            tic,
            toe,
@@ -242,13 +300,17 @@
            tset
         </seg>
         <seg>
-           libcursesw.so (libncursesw.so へのシンボリックリンクおよびリンカースクリプト),
+           libcurses.so (シンボリックリンク),
+           libform.so (シンボリックリンク),
            libformw.so,
+           libmenu.so (シンボリックリンク),
            libmenuw.so,
+           libncurses.so (シンボリックリンク),
            libncursesw.so,
            libncurses++w.so,
-           libpanelw.so,
-           これらに加えてワイド文字対応ではない通常のライブラリでその名称から "w" を取り除いたもの。</seg>
+           libpanel.so (シンボリックリンク),
+           and libpanelw.so,
+        </seg>
         <seg>
            /usr/share/tabset,
            /usr/share/terminfo,
@@ -357,14 +419,6 @@
 @y
           <para>
           端末の初期化に利用します。
-          </para>
-@z
-
-@x libcursew
-          <para>A link to <filename>libncursesw</filename></para>
-@y
-          <para>
-          <filename>libncursesw</filename> へのリンク。
           </para>
 @z
 

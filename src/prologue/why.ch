@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Rationale for Packages in the Book</title>
 @y
   <!--
@@ -778,11 +772,11 @@
 @x Systemd
         <para>This package provides an <application>init</application> program
         and several additional boot and system control capabilities as an
-        alternative to Sysvinit.  It is used by many Linux distributions.
+        alternative to SysVinit.  It is used by many Linux distributions.
         </para>
 @y
         <para>
-        このパッケージは Sysvinit の代替として、<application>init</application> プログラムなど数種のプログラムにより、システム起動やシステム制御を実現します。
+        このパッケージは SysVinit の代替として、<application>init</application> プログラムなど数種のプログラムにより、システム起動やシステム制御を実現します。
         多くの Linux ディストリビューションにおいてもよく利用されています。
         </para>
 @z
@@ -795,6 +789,19 @@
         <para>
         このパッケージは <application>init</application> プログラムを提供します。
         これは Linux システム上のすべてのプロセスの基点となるものです。
+        </para>
+@z
+
+@x Udev
+        <para>This package is a device manager.  It dynamically controls the
+        ownership, permissions, names, and symbolic links of device nodes in
+        the /dev directory when devices are added to or removed from the
+        system.</para>
+@y
+        <para>
+        このパッケージはデバイスマネージャーです。
+        /dev ディレクトリに登録されたデバイスノードの所有者、パーミッション、名称、シンボリックリンクを動的に制御します。
+        これによりデバイスは、システムへの追加または削除が行われます。
         </para>
 @z
 

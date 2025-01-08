@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The <application>Tcl</application> package contains the Tool Command Language,
     a robust general-purpose scripting language. The <application>Expect</application> package
     is written in <application>Tcl</application> (pronounced "tickle").</para>
@@ -44,6 +38,26 @@
     <para>Prepare Tcl for compilation:</para>
 @y
     <para>&PreparePackage1;Tcl&PreparePackage2;</para>
+@z
+
+@x
+      <title>The meaning of the new configure parameters:</title>
+@y
+      <title>&MeaningOfParameter1;configure&MeaningOfParameter2;</title>
+@z
+
+@x --disable-rpath
+          <para>This parameter prevents hard coding library search paths
+          (rpath) into the binary executable files and shared libraries.
+          This package does not need rpath for an installation into the
+          standard location, and rpath may sometimes cause unwanted effects
+          or even security issues.</para>
+@y
+          <para>
+          このパラメーターはバイナリ実行ファイルや共有ライブラリにおいて、ライブラリ検索パス (rpath) がハードコーディングされないようにします。
+          本パッケージは標準的なディレクトリにインストールするため rpath を必要ありません。
+          rpath は時に思わぬ弊害やセキュリティ問題を引き起こす場合があります。
+          </para>
 @z
 
 @x

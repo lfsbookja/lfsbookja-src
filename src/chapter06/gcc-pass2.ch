@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
 <sect1 id="ch-tools-gcc-pass2" role="wrap" xreflabel="gcc-pass2">
 @y
 <sect1 id="ch-tools-gcc-pass2" role="wrap" xreflabel="GCC 2回め">
@@ -76,6 +70,15 @@
 @z
 
 @x
+    <para arch="ml_32,ml_all">Make <literal>-mstackrealign</literal> a default for 32bit
+      objects:</para>
+@y
+    <para arch="ml_32,ml_all">
+    32 ビットオブジェクト向けに <literal>-mstackrealign</literal> をデフォルトとします。
+    </para>
+@z
+
+@x
     <para>Override the building rule of libgcc and libstdc++ headers, to
     allow building these libraries with POSIX threads support:</para>
 @y
@@ -135,8 +138,8 @@
           <para>We are cross-compiling GCC, so it's impossible to build
           target libraries (<filename class="libraryfile">libgcc</filename>
           and <filename class="libraryfile">libstdc++</filename>) with the
-          previously compiled GCC binaries&mdash;those binaries won't run on the
-          host.  The GCC build system will attempt to use the host's
+          GCC binaries compiled in this pass&mdash;those binaries won't run
+          on the host.  The GCC build system will attempt to use the host's
           C and C++ compilers as a workaround by default.
           Building the GCC target libraries with a different
           version of GCC is not supported, so using the host's compilers may cause
@@ -157,33 +160,31 @@
 
 @x LDFLAGS_FOR_TARGET=...
           <para>Allow <filename class="libraryfile">libstdc++</filename> to
-          use the shared <filename class="libraryfile">libgcc</filename> being
-          built in this pass, instead of the static version that was built in GCC
-          pass 1. This is necessary to support C++ exception
-          handling.</para>
+          use the <filename class="libraryfile">libgcc</filename> being
+          built in this pass, instead of the previous version built in
+          <xref linkend='ch-tools-gcc-pass1'/>.  The previous version cannot
+          properly support C++ exception handling because it was built
+          without libc support.</para>
 @y
           <para>
-          GCC １回めではスタティックバージョンの <filename
-          class="libraryfile">libgcc</filename> をビルドしていましたが、ここでは共有の <filename
-          class="libraryfile">libgcc</filename> をビルドするようにします。
-          これは C++ 例外処理のために必要となります。
+          <filename class="libraryfile">libstdc++</filename> が今回ビルドされたライブラリ <filename
+          class="libraryfile">libgcc</filename> を用いるようにします。
+          それは <xref linkend='ch-tools-gcc-pass1'/> においてビルドされた前回のバージョンではありません。
+          前回のバージョンは C++ 例外処理を適切に処理できません。
+          これは libc サポートを抜きにしてビルドされているためです。
           </para>
 @z
 
 @x --disable-libsanitizer
           <para>Disable GCC sanitizer runtime libraries.  They are not
-          needed for the temporary installation.  This switch is necessary
-          to build GCC without
-          <systemitem class='library'>libcrypt</systemitem> installed for
-          the target.  In <xref linkend='ch-tools-gcc-pass1'/> it was
-          implied by <parameter>--disable-libstdcxx</parameter>, but now we
-          have to explicitly pass it.</para>
+          needed for the temporary installation.  In
+          <xref linkend='ch-tools-gcc-pass1'/> it was implied by
+          <parameter>--disable-libstdcxx</parameter>, and now we can
+          explicitly pass it.</para>
 @y
           <para>
           GCC のサニタイザーランタイムライブラリを無効にします。
           これはここでの一時的インストールにおいては不要です。
-          本スイッチは、インストールターゲットにおいて <systemitem
-          class='library'>libcrypt</systemitem> がインストールされていない状況で GCC をビルドする場合に必要となります。
           <xref linkend='ch-tools-gcc-pass1'/> においては、<parameter>--disable-libstdcxx</parameter> によって暗にそれを行っていましたが、ここではそれを明示的に行う必要があります。
           </para>
 @z

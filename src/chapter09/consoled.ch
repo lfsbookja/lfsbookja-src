@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Configuring the Linux Console</title>
 @y
   <title>Linux コンソールの設定</title>
@@ -62,10 +56,10 @@
 
 @x
   <para>The <filename>/etc/vconsole.conf</filename> file should contain lines
-  of the form: VARIABLE="value". The following variables are recognized:</para>
+  of the form: <envar>VARIABLE=value</envar>. The following variables are recognized:</para>
 @y
   <para>
-  <filename>/etc/vconsole.conf</filename> ファイルの各行は VARIABLE="value" といった書式により構成されます。
+  <filename>/etc/vconsole.conf</filename> ファイルの各行は <envar>VARIABLE=value</envar> といった書式により構成されます。
   VARIABLE には以下の変数を利用します。</para>
 @z
 

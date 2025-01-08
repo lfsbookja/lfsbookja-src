@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The <application>Expect</application> package contains tools for
     automating, via scripted dialogues, interactive applications such as
     <command>telnet</command>, <command>ftp</command>,
@@ -34,6 +28,52 @@
     <title>Installation of Expect</title>
 @y
     <title>&InstallationOf1;Expect&InstallationOf2;</title>
+@z
+
+@x
+    <para>Expect needs PTYs to work.  Verify that the PTYs are working
+    properly inside the chroot environment by performing a simple
+    test:</para>
+@y
+    <para>
+    Expect は PTY が動作していることを必要とします。
+    chroot 環境内において PTY が適切に動作しているかどうかを、以下の単純なテストにより確認します。
+    test:</para>
+@z
+
+@x
+    <para>This command should output <computeroutput>ok</computeroutput>.
+    If, instead, the output includes <computeroutput>OSError: out of pty
+    devices</computeroutput>, then the environment is not set up for proper
+    PTY operation.  You need to exit from the chroot environment, read
+    <xref linkend='ch-tools-kernfs'/> again, and ensure the
+    <systemitem class="filesystem">devpts</systemitem> file system (and
+    other virtual kernel file systems) mounted correctly.  Then reenter
+    the chroot environment following <xref linkend='ch-tools-chroot'/>.
+    This issue needs to be resolved before continuing, or the test suites
+    requiring Expect (for example the test suites of Bash, Binutils, GCC,
+    GDBM, and of course Expect itself) will fail catastrophically, and other
+    subtle breakages may also happen.</para>
+@y
+    <para>
+    上のコマンドの出力は <computeroutput>ok</computeroutput> となるべきものです。
+    そうならずに <computeroutput>OSError: out of pty devices</computeroutput> となったら、その環境は PTY 操作を適切に行うような設定が行われていないということです。
+    その場合は chroot から抜け出て、再度 <xref
+    linkend='ch-tools-kernfs'/> を読み返して、<systemitem
+    class="filesystem">devpts</systemitem> ファイルシステム (および他の仮想カーネルファイルシステム）を適切にマウントしてください。
+    <xref linkend='ch-tools-chroot'/> に従って chroot 環境に再度入ってください。
+    このメッセージは、先に進む前に解消しておくことが必要です。
+    そうでないと Expect を必要とするテストスイート (たとえば Bash, Binutils, GCC,
+    GDBM そして Expect 自身のテストスイート) が大失敗し、些末な不備ならいくらでも発生してしまいます。
+    </para>
+@z
+
+@x
+    <para>Now, make some changes to allow the package with gcc-14.1 or later:</para>
+@y
+    <para>
+    パッケージが gcc-14.1 以降に対応するための変更を加えます。
+    </para>
 @z
 
 @x
@@ -74,48 +114,10 @@
 @z
 
 @x
-      <para>The test suite for Expect is considered critical.
-      Do not skip it under any circumstances.</para>
-@y
-      <para>
-      Expect におけるテストスイートは重要なものとされます。
-      どのような場合であっても必ず実行してください。
-      </para>
-@z
-
-@x
     <para>To test the results, issue:</para>
 @y
     <para>
     ビルド結果をテストする場合は、以下を実行します。
-    </para>
-@z
-
-@x
-    <para>If any test fails with the message
-    <quote><computeroutput>The system has no more ptys.  Ask your system
-    administrator to create more</computeroutput></quote>, it indicates
-    you've not mounted the
-    <systemitem class="filesystem">devpts</systemitem> file system
-    correctly.  You need to exit from the chroot environment, read
-    <xref linkend='ch-tools-kernfs'/> again, and ensure the
-    <systemitem class="filesystem">devpts</systemitem> file system (and
-    other virtual kernel file systems) mounted correctly.  Then reenter
-    the chroot environment following <xref linkend='ch-tools-chroot'/>.
-    This issue needs to be resolved before continuing.</para>
-@y
-    <para>
-    テストの中で 
-    <quote><computeroutput>The system has no more ptys.  Ask your system
-    administrator to create more</computeroutput></quote>
-    というメッセージが出力されて失敗したものがあった場合、それは <systemitem
-    class="filesystem">devpts</systemitem> ファイルシステムが適切にマウントされていないことを表します。
-    chroot 環境からいったん抜け出て、もう一度 <xref
-    linkend='ch-tools-kernfs'/> をお読みください。
-    そして <systemitem
-    class="filesystem">devpts</systemitem> ファイルシステム（それに加えて他の仮想カーネルファイルシステム）を適切にマウントしてください。
-    <xref linkend='ch-tools-chroot'/> に従って chroot 環境に再度入ってください。
-    このメッセージは、先に進む前に解消しておくことが必要です。
     </para>
 @z
 

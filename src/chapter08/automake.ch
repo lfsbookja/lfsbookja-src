@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Automake package contains programs for generating Makefiles for use
     with Autoconf.</para>
 @y
@@ -60,14 +54,6 @@
 @y
     <para>
     <replaceable>$((...))</replaceable> の部分は、利用したい論理コア数に書き換えてください。
-    </para>
-@z
-
-@x
-    <para>The test t/subobj.sh is known to fail.</para>
-@y
-    <para>
-    テスト t/subobj.sh は失敗します。
     </para>
 @z
 

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>All Packages</title>
 @y
   <title>全パッケージ</title>
@@ -494,6 +488,14 @@
           </para>
 @z
 
+@x lz4
+        <para>Home page: <ulink url="&lz4-home;"/></para>
+        <para>Download: <ulink url="&lz4-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&lz4-home;"/></para>
+        <para>&Download;: <ulink url="&lz4-url;"/></para>
+@z
+
 @x m4
         <para>Home page: <ulink url="&m4-home;"/></para>
         <para>Download: <ulink url="&m4-url;"/></para>
@@ -788,12 +790,10 @@
 @z
 @x
             The version of vim changes daily. To get the latest version, go to
-            <ulink url="https://github.com/vim/vim/releases">
-            https://github.com/vim/vim/tags</ulink>.
+            <ulink url="https://github.com/vim/vim/tags"/>.
 @y
             vim のバージョンは日々更新されます。
-            最新版を入手するには <ulink url="https://github.com/vim/vim/releases">
-            https://github.com/vim/vim/tags</ulink> にアクセスしてください。
+            最新版を入手するには <ulink url="https://github.com/vim/vim/tags"/> にアクセスしてください。
 @z
 
 @x Wheel

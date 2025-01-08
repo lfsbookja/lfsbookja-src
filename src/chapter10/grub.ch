@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Using GRUB to Set Up the Boot Process</title>
 @y
   <title>GRUB を用いたブートプロセスの設定</title>
@@ -226,29 +220,6 @@
 @z
 
 @x
-    <note><para><application>grub-install</application> is a script and calls another 
-    program, grub-probe, that may fail with a message "cannot stat `/dev/root'".  
-    If so, create a temporary symbolic link from your root partition to /dev/root:</para>
-@y
-    <note><para>
-    <application>grub-install</application> はスクリプトであり、grub-probe というプログラムを呼び出します。
-    このプログラムは "cannot stat `/dev/root'" というメッセージを出力して処理に失敗することがあります。
-    そうなった場合は、一時的なシンボリックリンクとして、ルートパーティションを /dev/root にリンクしてください。
-    </para>
-@z
-
-@x
-    <para>The symbolic link will only be present until the system is rebooted.
-    The link is only needed for the installation procedure.
-    </para></note>
-@y
-    <para>
-    上のシンボリックリンクは、この時点だけ存在し、システムの再起動後はなくなります。
-    このリンクはインストール作業の際だけに必要なものです。
-    </para></note>
-@z
-
-@x
     <title>Creating the GRUB Configuration File</title>
 @y
     <title>GRUB 設定ファイルの生成</title>
@@ -287,6 +258,18 @@
       <command>grub-install</command> コマンドによっていくつかのモジュールは、メインの（MBR または GRUB BIOS パーティションにインストールされる）<application>GRUB</application> イメージ内に埋め込まれており、鶏が先か卵が先かという問題を生じさせることなく、そこから（<filename class='directory'>/boot/grub/i386-pc</filename> にある）他モジュールへのアクセスを可能としています。
       したがってごく普通の設定を行っていれば、上述の 2 つのもジュールはすでに埋め込まれていることとなり、<command>insmod</command> コマンドは何も行わないことになります。
       そうなったとしても何も問題はありませんが、特殊な設定を行った際には必要となるかもしれません。
+@z
+
+@x
+      The <command>set gfxpayload=1024x768x32</command> command sets the
+      resolution and color depth of the VESA framebuffer to be passed to the
+      kernel.  It's necessary for the kernel SimpleDRM driver to use the
+      VESA framebuffer.  You can use a different resolution or color depth
+      value which better suits for your monitor.
+@y
+      <command>set gfxpayload=1024x768x32</command> コマンドは VESA フレームバッファーの解像度と色の深さを設定するものであり、これがカーネルに受け渡されます。
+      VESA フレームバッファー向けにカーネルの SimpleDRM ドライバーを用いる場合にこの指定が必要になります。
+      モニター画面に最適な解像度や色深さを選んでください。
 @z
 
 @x

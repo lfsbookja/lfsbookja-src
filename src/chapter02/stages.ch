@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Building LFS in Stages</title>
 @y
   <title>作業段階ごとの LFS 構築</title>
@@ -116,7 +110,7 @@
 
 @x
         <para>A few operations, from <quote>Changing Ownership</quote> to
-        <quote>Entering the Chroot Environment</quote>, must be done as the
+        <quote>Entering the Chroot Environment,</quote> must be done as the
         <systemitem class="username">root</systemitem> user, with the LFS
         environment variable set for the &root; user.</para>
 @y
@@ -143,7 +137,7 @@
          and, as <systemitem class="username">root</systemitem>, running the
          commands in
          <xref linkend='ch-tools-bindmount'/> and
-         <xref linkend='ch-tools-kernfsmount'/>.</para>
+         <xref linkend='ch-tools-kernfsmount' role='.'/></para>
 @y
          <para>
          仮想ファイルシステムがマウントされている必要があります。

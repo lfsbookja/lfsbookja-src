@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Needed Patches</title>
 @y
   <title>必要なパッチ</title>
@@ -44,15 +38,15 @@
 @z
 
 @x Bash Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;&bash-upstream-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&bash-upstream-fixes-patch;"/></para>
 @z
 
-@x Binutils LTO Fix Patch
-        <para>Download: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
+@x Binutils Upstream Fixes Patch
+        <para>Download: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&binutils-lto-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
 @z
 
 @x Bzip2 Documentation Patch
@@ -67,10 +61,10 @@
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
-@x Coreutils Chmod Fix Patch
-        <para>Download: <ulink url="&patches-root;&coreutils-chmod-patch;"/></para>
+@x Expect GCC14 Patch
+        <para>Download: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&coreutils-chmod-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
 @z
 
 @x Gcc glibc-2.36 Fixes Patch
@@ -79,10 +73,10 @@
         <para>&Download;: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
 @z
 
-@x Glibc Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&glibc-upstream-fixes-patch;"/></para>
+@x Glibc Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
 @z
 
 @x Glibc FHS Patch
@@ -107,12 +101,6 @@
         <para>Download: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
-@z
-
-@x Perl Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&perl-fix-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&perl-fix-patch;"/></para>
 @z
 
 @x Readline Upstream Fix Patch

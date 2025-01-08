@@ -132,13 +132,13 @@
       approach of LFS which is to show you how to build a Linux system. 
       To achieve this, no support for additional architectures than 
       the default one for your system is required. If you haven't 
-      previously built by the standard LFS book, you are encouraged to 
-      do so before using this edition.</para>
+      previously built a system using the standard LFS book, you are
+      encouraged to do so before using this edition.</para>
 @y
     <para>
       また LFS には Linux システムの構築方法を理解して頂くという学習目的がありますが、その範囲を多少超えたものになっています。
       本書を作成するため、デフォルトのアーキテクチャー以外のものについてはサポートしないものとしています。
-      まだ LFS ブックによる標準的なビルド手順を行っていない方は、本版を読み進める前に先にビルドを行っておいてください。
+      まだ LFS ブックによる標準的なビルド手順に従ってビルドしたシステムでない場合は、本版を読み進める前に先にビルドを行っておいてください。
     </para>
 @z
 
@@ -151,11 +151,12 @@
 @x
     <para>Building a multilib system is not that much different from 
       building a system by using the 'native' LFS book. Beside some 
-      tweaks here and there the most prominent difference is that 
-      multilib requires compiling some applications up to three times:
+      tweaks here and there the most prominent difference is that a
+      multilib system requires compiling some applications up to three
+      times:
       one for the primary 64-bit architecture,
       one for the 32-bit architecture (m32),
-      and once again for the 32-bit architecture with is 32-bit memory 
+      and once again for the 32-bit architecture with its 32-bit memory 
       access and 64 bit instruction set (mx32).</para>
 @y
     <para>
@@ -182,13 +183,13 @@
             you will need to have
             <parameter>CONFIG_IA32_EMULATION=y</parameter>
             set in order to build for <parameter>m32</parameter> and
-            <parameter>CONFIG_X86_X32=y</parameter> set in order to
+            <parameter>CONFIG_X86_X32_ABI=y</parameter> set in order to
             build for <parameter>mx32</parameter>. 
           </para>
 @y
           <para>x86_64 互換のマシンであること</para>
           <note><para>
-            システムのカーネル設定にアクセスできる場合は、<parameter>m32</parameter> 向けビルドを行うための設定 <parameter>CONFIG_IA32_EMULATION=y</parameter>、また <parameter>mx32</parameter> 向けビルドを行うための設定 <parameter>CONFIG_X86_X32=y</parameter> を行う必要があります。
+            システムのカーネル設定にアクセスできる場合は、<parameter>m32</parameter> 向けビルドを行うための設定 <parameter>CONFIG_IA32_EMULATION=y</parameter>、また <parameter>mx32</parameter> 向けビルドを行うための設定 <parameter>CONFIG_X86_X32_ABI=y</parameter> を行う必要があります。
           </para>
 @z
 

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Kmod package contains libraries and utilities for loading kernel
     modules</para>
 @y
@@ -62,6 +56,15 @@
           </para>
 @z
 
+@x --disable-manpages
+          <para>This option disables generating the man pages which
+          requires an external program.</para>
+@y
+          <para>
+          このオプションは、man ページ生成において外部プログラムを必要とするため、これを生成しないようにします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -80,14 +83,98 @@
 @z
 
 @x
-    <para>Install the package and create symlinks for
+    <para>Install the package and recreate some symlinks for
     compatibility with Module-Init-Tools (the package that previously handled
-    Linux kernel modules):</para>
+    Linux kernel modules).  The building system will create all these
+    symlinks in <filename class='directory'>/usr/bin</filename>, but we
+    only want <command>lsmod</command> there and all other symlinks in
+    <filename class='directory'>/usr/sbin</filename> instead:</para>
 @y
     <para>
-    パッケージインストールし、Module-Init-Tools パッケージとの互換性を保つためにシンボリックリンクを生成します。
-    Module-Init-Tools パッケージは、これまで Linux カーネルモジュールを取り扱っていたものです。
+    パッケージインストールし、Module-Init-Tools パッケージとの互換性を保つためにシンボリックリンクを再生成します。
+    （Module-Init-Tools パッケージは、これまで Linux カーネルモジュールを取り扱っていました。）
+    ビルドしているシステムはシンボリックリンクを <filename
+    class='directory'>/usr/bin</filename> に生成しますが、ここでは <command>lsmod</command> のみそのままにして、残りは <filename
+    class='directory'>/usr/sbin</filename> へのシンボリックリンクとします。
     </para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Kmod - 32bit</title>
+@y
+    <title>Kmod - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build but keep man pages as they cannot
+    be recreated since xsltproc isn't installed yet:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    ただし man ページは残しておきます。
+    これは xsltproc をまだインストールしていないためです。
+    </para>
+@z
+
+@x
+    <para>Prepare Kmod for compilation:</para>
+@y
+    <para>&PreparePackage1;Kmod&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Kmod - x32bit</title>
+@y
+    <title>Kmod - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build but keep man pages as they cannot
+    be recreated since xsltproc isn't installed yet:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    ただし man ページは残しておきます。
+    これは xsltproc をまだインストールしていないためです。
+    </para>
+@z
+
+@x
+    <para>Prepare Kmod for compilation:</para>
+@y
+    <para>&PreparePackage1;Kmod&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x

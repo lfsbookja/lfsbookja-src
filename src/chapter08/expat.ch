@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Expat package contains a stream oriented C library for
     parsing XML.</para>
 @y
@@ -56,6 +50,84 @@
     <para>
     必要ならドキュメントをインストールします。
     </para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Expat - 32bit</title>
+@y
+    <title>Expat - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build but keep precompiled doc because it
+    cannot be rebuilt in this stage of the system:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    ただしコンパイル済みのドキュメントは残しておきます。
+    これは本システムのこの段階においては再生成されないためです。
+    </para>
+@z
+
+@x
+    <para>Prepare Expat for compilation:</para>
+@y
+    <para>&PreparePackage1;Expat&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Expat - x32bit</title>
+@y
+    <title>Expat - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build but keep precompiled doc because it
+    cannot be rebuilt in this stage of the system:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    ただしコンパイル済みのドキュメントは残しておきます。
+    これは本システムのこの段階においては再生成されないためです。
+    </para>
+@z
+
+@x
+    <para>Prepare Expat for compilation:</para>
+@y
+    <para>&PreparePackage1;Expat&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x

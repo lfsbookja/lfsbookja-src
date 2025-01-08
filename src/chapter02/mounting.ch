@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Mounting the New Partition</title>
 @y
   <title>新しいパーティションのマウント</title>
@@ -29,13 +23,13 @@
 @z
 
 @x
-  <para>Strictly speaking, one cannot "mount a partition". One mounts the <emphasis>file
+  <para>Strictly speaking, one cannot <quote>mount a partition.</quote> One mounts the <emphasis>file
   system</emphasis> embedded in that partition. But since a single partition can't contain
   more than one file system, people often speak of the partition and the
   associated file system as if they were one and the same.</para>
 @y
   <para>
-  厳密に言うと「パーティションはマウントできません」。
+  厳密に言うと<quote>パーティションはマウントできません</quote>。
   マウントできるのは、そのパーティション内に埋め込まれている<emphasis>ファイルシステム</emphasis>です。
   ただし１つのパーティションに複数のファイルシステムを収めることはできないので、パーティションとそこに関連づいたファイルシステムのことを、同一のものとして表現するわけです。
   </para>

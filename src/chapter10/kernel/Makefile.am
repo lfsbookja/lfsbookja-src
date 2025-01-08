@@ -9,6 +9,10 @@ bases = \
 	kernel-config.py  \
 	kernel.version    \
 	kernel_version.py \
+	multilib-32.toml  \
+	multilib-32.xml   \
+	multilib-x32.toml \
+	multilib-x32.xml  \
 	nvme.toml         \
 	nvme.xml          \
 	systemd.toml      \
@@ -25,6 +29,10 @@ highmem.xml:       $(BOOKdir)/highmem.xml
 kernel-config.py:  $(BOOKdir)/kernel-config.py
 kernel.version:    $(BOOKdir)/kernel.version
 kernel_version.py: $(BOOKdir)/kernel_version.py
+multilib-32.toml:  $(BOOKdir)/multilib-32.toml
+multilib-32.xml:   $(BOOKdir)/multilib-32.xml
+multilib-x32.toml: $(BOOKdir)/multilib-x32.toml
+multilib-x32.xml:  $(BOOKdir)/multilib-x32.xml
 nvme.toml:         $(BOOKdir)/nvme.toml
 nvme.xml:          $(BOOKdir)/nvme.xml
 systemd.toml:      $(BOOKdir)/systemd.toml

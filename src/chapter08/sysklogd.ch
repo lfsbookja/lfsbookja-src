@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Sysklogd package contains programs for logging system messages,
     such as those emitted by the kernel when unusual things happen.</para>
 @y
@@ -25,13 +19,9 @@
 @z
 
 @x
-    <para>First, fix a problem that causes a segmentation fault in klogd
-    under some conditions, and fix an obsolete program construct:</para>
+    <para>Prepare the package for compilation:</para>
 @y
-    <para>
-    特定の条件において klogd がセグメンテーションフォールトを起こすため、この問題を修正します。
-    また古いプログラム構造を修正します。
-    </para>
+    <para>&PreparePackage1;本パッケージ&PreparePackage2;</para>
 @z
 
 @x
@@ -86,29 +76,21 @@
 @z
 
 @x
-      <segtitle>Installed programs</segtitle>
+      <segtitle>Installed program</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
-        <seg>klogd and syslogd</seg>
+        <seg>syslogd</seg>
 @y
-        <seg>klogd, syslogd</seg>
+        <seg>syslogd</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x klogd
-          <para>A system daemon for intercepting and logging kernel messages</para>
-@y
-          <para>
-          カーネルメッセージを受け取り出力するシステムデーモン。
-          </para>
 @z
 
 @x syslogd

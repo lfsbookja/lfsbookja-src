@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Libffi library provides a portable, high level programming
     interface to various calling conventions. This allows a programmer to call
     any function specified by a call interface description at run time.</para>
@@ -99,6 +93,94 @@
           the x86 options in the GCC manual</ulink>
           を参照してください。
           </para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>To test the results, issue:</para>
+@y
+    <para>
+    ビルド結果をテストする場合は、以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Libffi - 32bit</title>
+@y
+    <title>Libffi - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Libffi for compilation:</para>
+@y
+    <para>&PreparePackage1;Libffi&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>To test the results, issue:</para>
+@y
+    <para>
+    ビルド結果をテストする場合は、以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Libffi - x32bit</title>
+@y
+    <title>Libffi - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Libffi for compilation:</para>
+@y
+    <para>&PreparePackage1;Libffi&PreparePackage2;</para>
 @z
 
 @x

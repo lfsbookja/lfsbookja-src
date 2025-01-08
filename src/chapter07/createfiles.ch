@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Creating Essential Files and Symlinks</title>
 @y
   <title>重要なファイルとシンボリックリンクの生成</title>
@@ -131,6 +125,14 @@
   class="username">nobody</systemitem> と <systemitem
   class="groupname">nogroup</systemitem> に用いることにします。
   他のディストリビューションにおいては、この ID を異なる用い方をしている場合があるため、移植性を考慮するプログラムでは、ここでの割り当てに依存しないようにしてください。
+  </para>
+@z
+
+@x
+  <para>Some packages need a locale.</para>
+@y
+  <para>
+  以下のロケールを必要としているパッケージがあるので生成します。
   </para>
 @z
 

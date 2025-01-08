@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Xz package contains programs for compressing and decompressing
     files. It provides capabilities for the lzma and the newer xz compression
     formats.  Compressing text files with <command>xz</command> yields a better

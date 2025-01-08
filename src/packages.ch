@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
 <!ENTITY acl-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY acl-fin-sbu "0.1 SBU 以下">
@@ -28,9 +22,9 @@
 @z
 
 @x
-<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 7.0 SBU with tests)">
+<!ENTITY automake-fin-sbu "less than 0.1 SBU (about 1.1 SBU with tests)">
 @y
-<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 7.0 SBU)">
+<!ENTITY automake-fin-sbu "0.1 SBU 以下 (テスト込みで約 1.1 SBU)">
 @z
 
 @x
@@ -40,21 +34,45 @@
 @z
 
 @x
-<!ENTITY check-fin-sbu "0.1 SBU (about 1.6 SBU with tests)">
+<!ENTITY bzip2-fin-sbu "less than 0.1 SBU">
 @y
-<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 1.6 SBU)">
+<!ENTITY bzip2-fin-sbu "0.1 SBU 以下">
 @z
 
 @x
-<!ENTITY e2fsprogs-fin-sbu "2.4 SBU on a spinning disk, 0.6 SBU on an SSD">
+<!ENTITY check-fin-sbu "0.1 SBU (about 2.1 SBU with tests)">
 @y
-<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 2.4 SBU、SSD で 0.6 SBU">
+<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 2.1 SBU)">
 @z
 
 @x
-<!ENTITY gcc-fin-sbu "42 SBU (with tests)">
+<!ENTITY dejagnu-tmp-sbu "less than 0.1 SBU">
 @y
-<!ENTITY gcc-fin-sbu "42 SBU (テスト込み)">
+<!ENTITY dejagnu-tmp-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY e2fsprogs-fin-sbu "2.4 SBU on a spinning disk, 0.5 SBU on an SSD">
+@y
+<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 2.4 SBU、SSD で 0.5 SBU">
+@z
+
+@x
+<!ENTITY file-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY file-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY flit-core-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY flit-core-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY gcc-fin-sbu "46 SBU (with tests)">
+@y
+<!ENTITY gcc-fin-sbu "46 SBU (テスト込み)">
 @z
 
 @x
@@ -117,11 +135,11 @@
 @z
 
 @x
-<!ENTITY linux-knl-du "1.8 - 10.6 GB (typically about 2 GB)">
-<!ENTITY linux-knl-sbu "0.6 - 20.4 SBU (typically about 1.4 SBU)">
+<!ENTITY linux-knl-du "1.7 - 14 GB (typically about 2.3 GB)">
+<!ENTITY linux-knl-sbu "0.4 - 32 SBU (typically about 2.5 SBU)">
 @y
-<!ENTITY linux-knl-du "1.8 - 10.6 GB (一般的には 2 GB 程度)">
-<!ENTITY linux-knl-sbu "0.6 - 20.4 SBU (一般的には 1.4 SBU 程度)">
+<!ENTITY linux-knl-du "1.7 - 14 GB (一般的には 2.3 GB 程度)">
+<!ENTITY linux-knl-sbu "0.4 - 32 SBU (一般的には 2.5 SBU 程度)">
 @z
 @x
 <!ENTITY linux-headers-tmp-sbu "less than 0.1 SBU">
@@ -133,12 +151,6 @@
 <!ENTITY make-tmp-sbu "less than 0.1 SBU">
 @y
 <!ENTITY make-tmp-sbu "0.1 SBU 以下">
-@z
-
-@x
-<!ENTITY man-pages-fin-sbu "less than 0.1 SBU">
-@y
-<!ENTITY man-pages-fin-sbu "0.1 SBU 以下">
 @z
 
 @x
@@ -154,6 +166,12 @@
 @z
 
 @x
+<!ENTITY pkgconf-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY pkgconf-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY psmisc-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY psmisc-fin-sbu "0.1 SBU 以下">
@@ -163,6 +181,12 @@
 <!ENTITY readline-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY readline-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY setuptools-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY setuptools-fin-sbu "0.1 SBU 以下">
 @z
 
 @x

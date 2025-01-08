@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Glibc package contains the main C library. This library provides
     the basic routines for allocating memory, searching directories, opening and
     closing files, reading and writing files, string handling, pattern matching,
@@ -37,16 +31,6 @@
     Glibc のプログラムの中には <filename
     class="directory">/var/db</filename> ディレクトリに実行データを収容するものがあり、これは FHS に準拠していません。
     以下のパッチを適用することで、実行データの収容先を FHS 準拠のディレクトリとします。
-    </para>
-@z
-
-@x
-    <para>Now fix two security vulnerabilities and a regression causing the
-    posix_memalign() function very slow in some conditions:</para>
-@y
-    <para>
-    ここで 2 つのセキュリティぜい弱性と機能後退を修正します。
-    機能後退は、特定環境下において posix_memalign() 関数が非常に遅くなっていたものです。
     </para>
 @z
 
@@ -107,20 +91,16 @@
 @x --enable-stack-protector=strong
           <para>This option increases system security by adding
           extra code to check for buffer overflows, such as stack
-          smashing attacks.</para>
+          smashing attacks.  Note that Glibc always explicitly overrides
+          the default of GCC, so this option is still needed even though
+          we've already specified <option>--enable-default-ssp</option> for
+          GCC.</para>
 @y
           <para>
           このオプション指定によりスタックに積まれる関数プリアンブル内に、追加のコードを付与することにより、システムセキュリティを向上させます。
           その追加コードは、スタック破壊攻撃（stack smashing attacks）のようなバッファーオーバーフローをチェックします。
-          </para>
-@z
-
-@x --with-headers=/usr/include
-          <para>This option tells the build system where to find the
-          kernel API headers.</para>
-@y
-          <para>
-          このオプションはビルドシステムにおいて、カーネル API ヘッダーを探す場所を指定します。
+          なお Glibc に対して明示的に指定されたオプションは、常に GCC のデフォルトを上書きします。
+          したがってこのオプションは、GCC に対して <option>--enable-default-ssp</option> の設定を行っているからこそ、ここでも指定が必要になります。
           </para>
 @z
 
@@ -203,40 +183,46 @@
 @z
 
 @x
-        <para><emphasis>misc/tst-ttyname</emphasis>
-        is known to fail in the LFS chroot environment.</para>
-@y
-        <para>
-        <emphasis>misc/tst-ttyname</emphasis> は LFS の chroot 環境においては失敗します。
-        </para>
-@z
-
-@x
-        <para>The <emphasis>stdlib/tst-arc4random-thread</emphasis>
-        test is known to fail if the host kernel is relatively old.</para>
-@y
-        <para>
-        ホストのカーネルが比較的古い場合に <emphasis>stdlib/tst-arc4random-thread</emphasis> というテストが失敗します。
-        </para>
-@z
-
-@x
         <para>Some tests, for example
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis>,
-        are known to fail on relatively slow systems due to an internal
-        timeout.</para>
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> and
+        <emphasis>nptl/tst-thread-affinity*</emphasis>
+        are known to fail due to a timeout (especially when the system is
+        relatively slow and/or running the test suite with multiple
+        parallel make jobs).  These tests can be identified with:</para>
 @y
         <para>
-        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> のようなテストでは、内部のタイムアウトが原因で比較的遅くなるシステム上では失敗します。
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis>、<emphasis>nptl/tst-thread-affinity*</emphasis> のようなテストでは、タイムアウトを原因として (特に比較的処理性能の低いシステムの利用や平行ビルドを使ったテストスイート実行において) そのテストが失敗します。
+        このようなテストは以下を実行すれば一覧として得られます。
+        </para>
+@z
+
+@x
+        <para>It's possible to re-run a single test with enlarged timeout
+        with
+        <command>TIMEOUTFACTOR=<replaceable>&lt;factor&gt;</replaceable>
+        make test t=<replaceable>&lt;test name&gt;</replaceable></command>.
+        For example, <command>TIMEOUTFACTOR=10 make test
+        t=nss/tst-nss-files-hosts-multi</command> will re-run
+        <emphasis>nss/tst-nss-files-hosts-multi</emphasis> with ten times
+        the original timeout.</para>
+@y
+        <para>
+        <command>TIMEOUTFACTOR=<replaceable>&lt;factor&gt;</replaceable>
+        make test t=<replaceable>&lt;test name&gt;</replaceable></command> というコマンド実行により、テスト 1 つずつに対してタイムアウト時間を拡張して再実行することができます。
+        たとえば <command>TIMEOUTFACTOR=10 make test
+        t=nss/tst-nss-files-hosts-multi</command> とすれば <emphasis>nss/tst-nss-files-hosts-multi</emphasis> のテストが、元々のタイムアウトの 10 倍としながら再実行できます。
         </para>
 @z
 
 @x
         <para>Additionally, some tests may fail with a relatively old CPU
-        model or host kernel version.</para>
+        model (for example
+        <emphasis>elf/tst-cpu-features-cpuinfo</emphasis>) or host kernel
+        version (for example
+        <emphasis>stdlib/tst-arc4random-thread</emphasis>).</para>
 @y
         <para>
-        さらに CPU モデルやホストのカーネルバージョンが比較的古い場合に、テストがいくつか失敗します。
+        さらに CPU モデルが古い場合に (たとえば <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> が)、またホストのカーネルバージョンが古い場合に (たとえば <emphasis>stdlib/tst-arc4random-thread</emphasis> が)、それぞれ失敗することがあります。
         </para>
 @z
 
@@ -259,6 +245,106 @@
     Makefile を修正して、不要な健全性チェックを無効にします。
     これは、最近の Glibc 設定では失敗するためです。
     </para>
+@z
+
+@x
+        If upgrading Glibc to a new minor version (for example, from
+        Glibc-2.36 to Glibc-&glibc-version;) on a running LFS system, you
+        need to take some extra precautions to avoid breaking the system:
+@y
+        稼働中の LFS システムにおいて Glibc のマイナーバージョンを最新のものにアップグレードする場合 (たとえば Glibc-2.36 を Glibc-&glibc-version; にあげる場合)、いくつか追加の措置を講じることで、システムが壊れないようにすることが必要です。
+@z
+
+@x
+            Upgrading Glibc on a LFS system prior to 11.0 (exclusive) is
+            not supported.  Rebuild LFS if you are running such an old LFS
+            system but you need a newer Glibc.
+@y
+            11.0 未満の Glibc をアップグレードすることは LFS システムにおいてはサポートしていません。
+            そのような古い LFS システムにおいて最新の Glibc が必要になる場合は、LFS を再構築してください。
+@z
+
+@x
+            If upgrading on a LFS system prior to 12.0 (exclusive), install
+            <application>Libxcrypt</application> following
+            <xref role='.' linkend='ch-system-libxcrypt'/>  In addition to
+            a normal <application>Libxcrypt</application> installation,
+            <emphasis role='bold'>you MUST follow the note in Libxcrypt
+            section to install
+            <filename class='libraryfile'>libcrypt.so.1*</filename>
+            (replacing
+            <filename class='libraryfile'>libcrypt.so.1</filename> from the
+            prior Glibc installation)</emphasis>.
+@y
+            12.0 未満の Glibc をアップグレードする場合は <xref role='.'
+            linkend='ch-system-libxcrypt'/> に従って <application>Libxcrypt</application> をインストールしてください。
+            さらにその <application>Libxcrypt</application> の通常インストール手順に加えて、<emphasis
+            role='bold'>Libxcrypt の注記の節に示されている手順に従って <filename class='libraryfile'>libcrypt.so.1*</filename> のインストールを必ず行ってください (それ以前に行っている Glibc のビルドにおいてインストールした <filename class='libraryfile'>libcrypt.so.1</filename> を置き換えてください)。</emphasis>.
+@z
+
+@x
+            If upgrading on a LFS system prior to 12.1 (exclusive),
+            remove the <command>nscd</command> program:
+@y
+            12.1 未満の Glibc をアップグレードする場合は <command>nscd</command> プログラムを削除してください。
+@z
+
+@x
+            If this system (prior to LFS 12.1, exclusive) is based on
+            Systemd, it's also needed to disable and stop the
+            <command>nscd</command> service now:
+@y
+            (12.1 未満の) システムが Systemd に基づいている場合は、<command>nscd</command> サービスは停止させ無効化します。
+@z
+
+@x
+            Upgrade the kernel and reboot if it's older than &min-kernel;
+            (check the current version with <command>uname -r</command>)
+            or if you want to upgrade it anyway, following
+            <xref linkend='ch-bootable-kernel' role='.'/>
+@y
+            (現時点のカーネルバージョンは <command>uname -r</command> により確認することができますが) &min-kernel; よりも古いカーネルをアップグレードして再起動する場合には <xref
+            linkend='ch-bootable-kernel' role=''/> の説明に従ってください。
+@z
+
+@x
+            Upgrade the kernel API headers if it's older than &min-kernel;
+            (check the current version with
+            <command>cat /usr/include/linux/version.h</command>)
+            or if you want to upgrade it anyway, following
+            <xref linkend='ch-tools-linux-headers'/> (but removing
+            <envar>$LFS</envar> from the <command>cp</command> command).
+@y
+            (現時点の API ヘッダーバージョンは <command>cat /usr/include/linux/version.h</command> により確認することができますが) &min-kernel; よりも古い API ヘッダーをアップグレードする場合は、<xref linkend='ch-tools-linux-headers'/> の説明に従ってください (ただし <command>cp</command> コマンドからは <envar>$LFS</envar> を取り除いてください)。
+@z
+
+@x
+            Perform a <envar>DESTDIR</envar> installation and upgrade
+            the Glibc shared libraries on the system using one single
+            <command>install</command> command:
+@y
+            <envar>DESTDIR</envar> を利用したインストール方法により Glibc の共有ライブラリをアップグレードする場合には、以下のように一つの <command>install</command> コマンドにより行ってください。
+@z
+
+@x
+        It's imperative to strictly follow these steps above unless you
+        completely understand what you are doing.
+        <emphasis role='bold'>Any unexpected deviation may render the
+        system completely unusable.  YOU ARE WARNED.</emphasis>
+@y
+        自分が何をしているのかを完全に理解できていないのであれば、この手順に忠実に従ってください。
+        <emphasis role='bold'>不用意にこの手順を見逃して進めてしまうと、システムが完全に利用不能になりかねません。ここに警告しておきます。</emphasis>
+@z
+
+@x
+        Then continue to run the <command>make install</command> command,
+        the <command>sed</command> command against
+        <filename>/usr/bin/ldd</filename>, and the commands to install
+        the locales.  Once they are finished, reboot the system
+        immediately.
+@y
+        <command>make install</command> コマンド、<filename>/usr/bin/ldd</filename> に対する <command>sed</command> コマンド、ロケールをインストールするコマンドを順に実行します。
+        ここまで行ったら即座にシステムを再起動してください。
 @z
 
 @x
@@ -464,7 +550,7 @@
 
 @x
           <para>This creates the <filename>posixrules</filename> file. We use
-          New York because POSIX requires the daylight savings time rules
+          New York because POSIX requires the daylight saving time rules
           to be in accordance with US rules.</para>
 @y
           <para>

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Package Management</title>
 @y
   <title>パッケージ管理</title>
@@ -106,46 +100,27 @@
         5.10.17 to 5.10.18 or 5.11.1), nothing else needs to be rebuilt.
         The system will keep working fine thanks to the well-defined interface
         between the kernel and userspace.  Specifically, Linux API headers
-        need not be (and should not be, see the next item) upgraded
+        need not be upgraded
         along with the kernel.  You will merely need to reboot your system to use the
         upgraded kernel.</para>
 @y
         <para>
         カーネルをアップグレードする必要がある場合 (たとえば 5.10.17 から 5.10.18 や 5.11.1 へ、など)、これ以外に再ビルドを必要とするものはありません。
         カーネルとユーザー空間のインターフェースが適切に定義されているため、システムは動作し続けるはずです。
-        特に Linux API ヘッダーは、カーネルに伴ってアップグレードする必要もありません (次に説明するように、アップグレードしてはなりません)。
+        特に Linux API ヘッダーは、カーネルに伴ってアップグレードする必要もありません。
         アップグレードしたカーネルは、システムを再起動しさえすれば利用できるようになります。
         </para>
 @z
 
 @x
-        <para>If the Linux API headers or Glibc need to be upgraded to a newer
-        version, (e.g.,  from Glibc-2.31 to Glibc-2.32), it is safer to
-        rebuild LFS.  Though you <emphasis>may</emphasis> be able to rebuild
-        all the packages in their dependency order, we do not recommend
-        it.  </para>
+        <para>If Glibc needs to be upgraded to a newer
+        version, (e.g.,  from Glibc-2.36 to Glibc-&glibc-version;),
+        some extra steps are needed to avoid breaking the system.
+        Read <xref linkend='ch-system-glibc'/> for details.</para>
 @y
         <para>
-        Linux API ヘッダーや Glibc を新しいバージョン (例えば Glibc-2.31 から Glibc-2.32) にアップグレードする必要が発生した場合は LFS を再構築することが安全です。
-        必要なパッケージの依存順を知っていれば再構築できるかもしれませんが、これはお勧めしません。
-        </para>
-@z
-
-@x
-        <para>Reinstalling the same version of Glibc (&glibc-version; for
-        this release of LFS) with patches should be safe when these patches
-        do not change ABI and API.  When a security vulnerability is found
-        in Glibc, we often need to apply such a patch to fix the
-        vulnerability and reinstall Glibc.  Consult
-        <ulink url='&lfs-root;lfs/advisories/'>LFS security
-        advisories</ulink> if you are alerted for a published Glibc security
-        vulnerability but unsure about the action to take.</para>
-@y
-        <para>
-        パッチ内容が ABI や API を変更するものでない限りは、そのパッチを適用して Glibc の同一バージョンをインストールすれば（当リリースの LFS においては &glibc-version;）安全性が高まります。
-        Glibc においてセキュリティぜい弱性が見つかった場合、そういったぜい弱性の修正を行うパッチを使って Glibc を再インストールすることが必要になってきます。
-        Glibc のセキュリティぜい弱性が公開されていることが分かっていても、どうしたら良いのか不明である場合には、<ulink url='&lfs-root;lfs/advisories/'>LFS security
-        advisories</ulink> を参照してください。
+        Glibc を新しいバージョン (たとえば Glibc-2.31 から Glibc-&glibc-version;) にアップグレードする必要が発生した場合は、システムが壊れないようにすることが必要です。
+        詳しくは <xref linkend='ch-system-glibc'/> を参照してください。
         </para>
 @z
 

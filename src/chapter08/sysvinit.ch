@@ -4,24 +4,18 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-    <para>The Sysvinit package contains programs for controlling the startup,
+    <para>The SysVinit package contains programs for controlling the startup,
     running, and shutdown of the system.</para>
 @y
     <para>
-    Sysvinit パッケージは、システムの起動、実行、シャットダウンを制御するプログラムを提供します。
+    SysVinit パッケージは、システムの起動、実行、シャットダウンを制御するプログラムを提供します。
     </para>
 @z
 
 @x
-    <title>Installation of Sysvinit</title>
+    <title>Installation of SysVinit</title>
 @y
-    <title>&InstallationOf1;Sysvinit&InstallationOf2;</title>
+    <title>&InstallationOf1;SysVinit&InstallationOf2;</title>
 @z
 
 @x
@@ -50,12 +44,12 @@
     <command>mountpoint</command>, <command>last</command>,
     <command>mesg</command>, <command>sulogin</command>, and
     <command>utmpdump</command> programs were installed earlier by Util-linux.
-    Suppress the installation of Sysvinit's versions of these programs and
+    Suppress the installation of SysVinit's versions of these programs and
     their man pages:</para>
 @y
     <para>
     <command>wall</command>, <command>mountpoint</command>, <command>last</command>, <command>mesg</command>, <command>sulogin</command>, <command>utmpdump</command> は Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
-    そこで Sysvinit が提供するこれらのコマンドはインストールせず、その man ページもインストールしないようにします。
+    そこで SysVinit が提供するこれらのコマンドはインストールせず、その man ページもインストールしないようにします。
     </para>
 @z
 
@@ -87,9 +81,9 @@
 @z
 
 @x
-    <title>Contents of Sysvinit</title>
+    <title>Contents of SysVinit</title>
 @y
-    <title>&ContentsOf1;Sysvinit&ContentsOf2;</title>
+    <title>&ContentsOf1;SysVinit&ContentsOf2;</title>
 @z
 
 @x

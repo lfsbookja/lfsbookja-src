@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Getting Started After LFS</title>
 @y
   <title>LFS の次に向けて</title>
@@ -89,7 +83,7 @@
 @x
         In addition to the above, there is a set of applications for system
         management for all kinds of systems. These applications are all in the
-        BLFS book. Not all packages are needed in every environments. For
+        BLFS book. Not all packages are needed in every environment. For
         example <ulink url="&blfs-book;basicnet/dhcpcd.html">dhcpcd</ulink>, is
         not normally appropriate for a server and <ulink
         url="&blfs-book;basicnet/wireless_tools.html">wireless_tools</ulink>,
@@ -222,6 +216,26 @@
        また 2 つめのコンピューターも必要です。
        この方法は、複雑な chroot 環境を必要としないことから、単純であるという利点があります。
        追加導入するパッケージに対しても、LFS からビルドしたカーネルを用いていくことになるので、インストールパッケージに対しても完全なシステム構成を保証し続けることになります。
+@z
+
+@x
+      You may use the <command>scp</command> command to upload the package
+      sources to be built onto the LFS system.  If you want to download
+      the sources onto the LFS system directly instead, install
+      <ulink url="&blfs-book;general/libtasn1.html">libtasn1</ulink>,
+      <ulink url="&blfs-book;postlfs/p11-kit.html">p11-kit</ulink>,
+      <ulink url="&blfs-book;postlfs/make-ca.html">make-ca</ulink>, and
+      <ulink url="&blfs-book;basicnet/wget.html">wget</ulink>
+      in chroot (or upload their sources using <command>scp</command>
+      after booting the LFS system).
+@y
+      LFS システム上においてビルドするソースパッケージを <command>scp</command> コマンドによってアップロードすることができます。
+      LFS システム上に直接ダウンロードするのであれば、chroot 環境内において <ulink
+      url="&blfs-book;general/libtasn1.html">libtasn1</ulink>,
+      <ulink url="&blfs-book;postlfs/p11-kit.html">p11-kit</ulink>,
+      <ulink url="&blfs-book;postlfs/make-ca.html">make-ca</ulink>,
+      <ulink url="&blfs-book;basicnet/wget.html">wget</ulink> をインストールしてください。
+      （あるいは LFS システムの起動後に、それらのソースを <command>scp</command> を使ってアップロードしてください。）
 @z
 
 @x

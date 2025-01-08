@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Typography</title>
 @y
   <title>本書の表記</title>
@@ -153,9 +147,9 @@
 @z
 
 @x
-  <para><filename>passwd(5)</filename></para>
+  <para><ulink role='man' url='&man;passwd.5'>passwd(5)</ulink></para>
 @y
-  <para><filename>passwd(5)</filename></para>
+  <para><ulink role='man' url='&man;passwd.5'>passwd(5)</ulink></para>
 @z
 
 @x
@@ -164,25 +158,32 @@
   <command>passwd</command> has two man pages. Per LFS installation instructions,
   those two man pages will be located at
   <filename>/usr/share/man/man1/passwd.1</filename> and
-  <filename>/usr/share/man/man5/passwd.5</filename>. When the book uses <filename>passwd(5)</filename> it is
+  <filename>/usr/share/man/man5/passwd.5</filename>. When the book uses
+  <ulink role='man' url='&man;/passwd.5'>passwd(5)</ulink> it is
   specifically referring to <filename>/usr/share/man/man5/passwd.5</filename>.
   <command>man passwd</command> will print the first man page it finds that
-  matches <quote>passwd</quote>, which will be
+  matches <quote>passwd,</quote> which will be
   <filename>/usr/share/man/man1/passwd.1</filename>. For this example, you will
   need to run <command>man 5 passwd</command> in order to read the page
   being specified. Note that most man pages do not have duplicate
   page names in different sections. Therefore, <command>man <replaceable>&lt;program
-  name&gt;</replaceable></command> is generally sufficient.</para>
+  name&gt;</replaceable></command> is generally sufficient.  In the LFS
+  book these references to man pages are also hyperlinks, so clicking on
+  such a reference will open the man page rendered in HTML from
+  <ulink url='https://man.archlinux.org/'>Arch Linux manual
+  pages</ulink>.</para>
 @y
   <para>
   上の表記はマニュアルページ (<command>man</command> ページ) を参照するものです。
   カッコ内の数字は <command>man</command> の内部で定められている特定のセクションを表しています。
   例えば <command>passwd</command> コマンドには2つのマニュアルページがあります。
   LFS のインストールに従った場合、2つのマニュアルページは <filename>/usr/share/man/man1/passwd.1</filename> と <filename>/usr/share/man/man5/passwd.5</filename> に配置されます。
-  <filename>passwd(5)</filename> という表記は <filename>/usr/share/man/man5/passwd.5</filename> を参照することを意味します。
+  <ulink role='man' url='&man;/passwd.5'>passwd(5)</ulink> という表記は <filename>/usr/share/man/man5/passwd.5</filename> を参照することを意味します。
   <command>man passwd</command> という入力に対しては<quote>passwd</quote>という語に合致する最初のマニュアルページが表示されるものであり <filename>/usr/share/man/man1/passwd.1</filename> が表示されることになります。
   特定のマニュアルページを見たい場合は <command>man 5 passwd</command> といった入力を行う必要があります。
   マニュアルページが複数あるケースはまれですので、普通は <command>man
   &lt;プログラム名&gt;</command> と入力するだけで十分です。
+  LFS ブックにおけるこの表記はハイパーリンクとしています。
+  その表記をクリックすると <ulink url='https://man.archlinux.org/'>Arch Linux man ページ</ulink> が提供する man ページを開きます。
   </para>
 @z

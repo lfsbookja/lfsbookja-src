@@ -27,6 +27,7 @@
                                                     &test-results; -->
 <!ENTITY releasedate     "%reldate;">
 <!ENTITY copyrightdate   "%crdate;">
+<!ENTITY os-release-type "development"> <!-- used by /etc/os-release -->
 ]]>
 @y
 <![ %rc; [
@@ -45,10 +46,11 @@
                                                     &test-results; -->
 <!ENTITY releasedate     "%reldate;">
 <!ENTITY copyrightdate   "%crdate;">
+<!ENTITY os-release-type "development"> <!-- used by /etc/os-release -->
 ]]>
 
-<!ENTITY jversion        "20240117">
-<!ENTITY jversiond       "20240117">
+<!ENTITY jversion        "20250107">
+<!ENTITY jversiond       "20250107">
 <!ENTITY jcorrespondSHA  "5605ef387"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
 <!ENTITY dir-jversion    "multilib-ja">
 <!ENTITY dir-jversiond   "multilib-sysdja">

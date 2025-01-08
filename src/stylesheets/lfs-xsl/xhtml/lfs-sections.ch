@@ -3,12 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-@x
-<?xml version='1.0' encoding='ISO-8859-1'?>
-@y
-<?xml version='1.0' encoding='UTF-8'?>
-@z
-
 % @x
 %     <!-- sect1info mode svn-keys:
 %            Self-made template to process SVN keywords found in sect1info. -->

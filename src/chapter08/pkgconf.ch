@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The pkgconf package is a 
     successor to pkg-config and contains a tool for passing the include path
     and/or library paths to build tools during the configure and make phases
@@ -25,14 +19,6 @@
     <title>Installation of Pkgconf</title>
 @y
     <title>&InstallationOf1;Pkgconf&InstallationOf2;</title>
-@z
-
-@x
-    <para>Fix a regression in pkgconf-2.0.3 breaking BLFS packages:</para>
-@y
-    <para>
-    pkgconf-2.0.3 における機能減退が BLFS パッケージに影響するため修正します。
-    </para>
 @z
 
 @x

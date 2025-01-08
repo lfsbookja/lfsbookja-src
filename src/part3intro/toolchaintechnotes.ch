@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
 <sect1 id="ch-tools-toolchaintechnotes" xreflabel="Toolchain Technical Notes">
 @y
 <sect1 id="ch-tools-toolchaintechnotes" xreflabel="ツールチェーンの技術的情報">
@@ -119,12 +113,12 @@
 @x
       <varlistentry><term>The build</term><listitem>
         <para>is the machine where we build programs. Note that this machine
-        is also referred to as the <quote>host</quote>.</para></listitem>
+        is also referred to as the <quote>host.</quote></para></listitem>
 @y
       <varlistentry><term>ビルド（build）</term><listitem>
         <para>
         ビルド作業を行うマシンのこと。
-        このマシンは "ホスト（host）" と呼ぶこともあります。
+        このマシンは<quote>ホスト</quote>（host）と呼ぶこともあります。
         </para></listitem>
 @z
 
@@ -340,9 +334,9 @@
       sure-fire way to determine the name of the dynamic linker is to inspect a
       random binary from the host system by running: <userinput>readelf -l
       &lt;name of binary&gt; | grep interpreter</userinput> and noting the
-      output. The authoritative reference covering all platforms is in the
-      <filename>shlib-versions</filename> file in the root of the glibc source
-      tree.</para>
+      output. The authoritative reference covering all platforms is in
+      <ulink url='https://sourceware.org/glibc/wiki/ABIList'>a Glibc wiki
+      page</ulink>.</para>
 @y
       <para>
       またプラットフォームのダイナミックリンカーの名前にも注意してください。
@@ -358,8 +352,8 @@
       <userinput>readelf -l
       &lt;name of binary&gt; | grep interpreter</userinput> というコマンドを実行することです。
       出力結果を見てください。
-      どのようなプラットフォームであっても確実な方法は、<filename>shlib-versions</filename> というファイルを見てみることです。
-      これは glibc ソースツリーのルートに存在しています。
+      どのようなプラットフォームであっても確実な方法は、<ulink
+      url='https://sourceware.org/glibc/wiki/ABIList'>Glibc wiki ページ</ulink> を見てみることです。
       </para>
 @z
 
@@ -762,34 +756,30 @@
 @x
     <para>Next comes glibc. The most important
     considerations for building glibc are the compiler, binary tools, and
-    kernel headers. The compiler is generally not an issue since glibc will
-    always use the compiler relating to the <parameter>--host</parameter>
+    kernel headers. The compiler and binary tools are generally not an issue
+    since glibc will always use those relating to the <parameter>--host</parameter>
     parameter passed to its configure script; e.g., in our case, the compiler
-    will be <command>$LFS_TGT-gcc</command>. The binary tools and kernel
-    headers can be a bit more complicated. Therefore, we take no risks and use
-    the available configure switches to enforce the correct selections. After
+    will be <command>$LFS_TGT-gcc</command> and the <command>readelf</command>
+    tool will be <command>$LFS_TGT-readelf</command>. The kernel headers can
+    be a bit more complicated. Therefore, we take no risks and use
+    the available configure switch to enforce the correct selection. After
     the run of <command>configure</command>, check the contents of the
     <filename>config.make</filename> file in the <filename
     class="directory">build</filename> directory for all important details.
-    Note the use of <parameter>CC="$LFS_TGT-gcc"</parameter> (with
-    <envar>$LFS_TGT</envar> expanded) to control which binary tools are used
-    and the use of the <parameter>-nostdinc</parameter> and
-    <parameter>-isystem</parameter> flags to control the compiler's include
-    search path. These items highlight an important aspect of the glibc
+    These items highlight an important aspect of the glibc
     package&mdash;it is very self-sufficient in terms of its build machinery,
     and generally does not rely on toolchain defaults.</para>
 @y
     <para>
     次のパッケージは glibc です。
     glibc 構築の際に気にかけるべき重要なものは、コンパイラー、バイナリツール、カーネルヘッダーです。
-    コンパイラーについては、一般にはあまり問題にはなりません。
+    コンパイラーやバイナリーツールについては、一般にはあまり問題にはなりません。
     glibc は常に configure スクリプトにて指定される <parameter>--host</parameter> パラメーターに関連づけしたコンパイラーを用いるからです。
-    我々の作業においてそのコンパイラーとは <command>$LFS_TGT-gcc</command> になります。
-    バイナリツールとカーネルヘッダーは多少複雑です。
-    従って無理なことはせずに有効な configure オプションを選択することが必要です。
+    我々の作業においてそのコンパイラーとは <command>$LFS_TGT-gcc</command> であり、<command>readelf</command> ツールは <command>$LFS_TGT-readelf</command> になります。
+    カーネルヘッダーは多少複雑です。
+    したがって無理なことはせずに有効な configure オプションを選択することが必要です。
     <command>configure</command> 実行の後は <filename
     class="directory">build</filename> ディレクトリにある <filename>config.make</filename> ファイルに重要な情報が示されているので確認してみてください。
-    なお <parameter>CC="$LFS_TGT-gcc"</parameter> とすれば、（<envar>$LFS_TGT</envar> が展開されて）どこにある実行モジュールを利用するかを制御でき <parameter>-nostdinc</parameter> と <parameter>-isystem</parameter> を指定すれば、コンパイラーに対してインクルードファイルの検索パスを制御できます。
     これらの指定は Glibc パッケージの重要な面を示しています。
     glibc がビルドされるメカニズムは自己完結したビルドが行われるものであり、ツールチェーンのデフォルト設定には基本的に依存しないことを示しています。
     </para>

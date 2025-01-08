@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The GCC package contains the GNU compiler collection, which includes
     the C and C++ compilers.</para>
 @y
@@ -22,25 +16,6 @@
     <title>Installation of GCC</title>
 @y
     <title>&InstallationOf1;GCC&InstallationOf2;</title>
-@z
-
-@x
-    <para>At first, fix an issue breaking
-    <filename class="libraryfile">libasan.a</filename> building this package
-    with Glibc-2.34 or later:</para>
-@y
-    <para>
-    はじめに Glibc-2.34 またはそれ以降を使った際に、本パッケージの <filename
-    class="libraryfile">libasan.a</filename> ビルドが不適切になる問題を修正します。
-    </para>
-@z
-
-@x
-    <para>First fix a problem with the latest version of glibc:</para>
-@y
-    <para>
-    まずは glibc の最新版における問題を修正します。
-    </para>
 @z
 
 @x
@@ -58,6 +33,15 @@
 @y
     <para arch="ml_32,ml_x32,ml_all">
     64 ビット向けのデフォルトディレクトリ名を "lib" に変更します。
+    </para>
+@z
+
+@x
+    <para arch="ml_32,ml_all">Make <literal>-mstackrealign</literal> a default for 32bit
+      objects:</para>
+@y
+    <para arch="ml_32,ml_all">
+    32 ビットオブジェクト向けに <literal>-mstackrealign</literal> をデフォルトとします。
     </para>
 @z
 
@@ -172,8 +156,8 @@
       <para>In this section, the test suite for GCC is considered
       important, but it takes a long time. First-time builders are
       encouraged to run the test suite.  The time to run the tests can be
-      reduced significantly by adding -jx to the <command>make -k check</command> command below,
-      where x is the number of CPU cores on your system.</para>
+      reduced significantly by adding -jx to the <command>make -k check</command> 
+      command below, where x is the number of CPU cores on your system.</para>
 @y
       <para>
       本節における GCC のテストスイートは極めて重要なものです。
@@ -185,13 +169,30 @@
 @z
 
 @x
-   <para>One set of tests in the GCC test suite is known to exhaust the default
-   stack, so increase the stack size prior to running the tests:</para>
+    <para>GCC may need more stack space compiling some extremely complex
+    code patterns.  As a precaution for the host distros with a tight stack
+    limit, explicitly set the stack size hard limit to infinite.
+    On most host distros (and the final LFS system) the hard limit is
+    infinite by default, but there is no harm done by setting it explicitly.
+    It's not necessary to change the stack size soft limit because GCC will
+    automatically set it to an appropriate value, as long as the value does
+    not exceed the hard limit:</para>
 @y
-   <para>
-   GCC テストスイートの中で、デフォルトのスタックを使い果たすものがあります。
-   そこでテスト実施にあたり、スタックサイズを増やします。
-   </para>
+    <para>
+    コンパイルするコードパターンが極端に複雑な場合に GCC はより多くのスタック領域を必要とする場合があります。
+    ホストディストロのスタック制限が厳しいかもしれないため、それを予防する意味でスタックサイズのハード上限を無制限に設定します。
+    ホストシステムのほとんど (そして最終的な LFS システム) はデフォルトでハード上限は無制限としていますが、それを明示的に設定したところで何も問題はありません。
+    スタックサイズのソフト上限を変更する必要はありません。
+    これは GCC が自動的に設定するものであり、その値がハード上限を超えない限りは適切に設定してくれます。
+    </para>
+@z
+
+@x
+    <para>Now remove/fix several known test failures:</para>
+@y
+    <para>
+    テストスイートの不備をここで削除/修正します。
+    </para>
 @z
 
 @x
@@ -206,18 +207,18 @@
 @x
     <para>To extract a summary of the test suite results, run:</para>
 @y
-   <para>
-   テスト結果を確認するために以下を実行します。
-   </para>
+    <para>
+    テスト結果を確認するために以下を実行します。
+    </para>
 @z
 
 @x
     <para>To filter out only the summaries, pipe the output through
     <userinput>grep -A7 Summ</userinput>.</para>
 @y
-   <para>
-   テスト結果の概略のみ確認したい場合は、出力結果をパイプ出力して <userinput>grep -A7 Summ</userinput> を実行してください。
-   </para>
+    <para>
+    テスト結果の概略のみ確認したい場合は、出力結果をパイプ出力して <userinput>grep -A7 Summ</userinput> を実行してください。
+    </para>
 @z
 
 @x
@@ -233,68 +234,17 @@
 @z
 
 @x
- <para><!--Two tests named <filename>pr104610.c</filename> and
-    <filename>pr69482-1.c</filename> are known to fail because the test
-    files does not account for the
-    <parameter>- -enable-default-ssp</parameter> option.-->
-    <!-- https://gcc.gnu.org/PR106375 and https://gcc.gnu.org/PR109353 -->
-    Two tests named <filename>copy.cc</filename> and
-    <filename>pr56837.c</filename> are known to fail.
-    <!-- https://gcc.gnu.org/PR107855#c6 -->
-    Additionally, several tests in the
-    <filename class='directory'>vect</filename> directory are known to fail
-    if the hardware does not support AVX.</para>
-@y
-    <para>
-    <!--
-    <filename>pr104610.c</filename>、<filename>pr69482-1.c</filename> という 2 つのテストが失敗します。
-    これはテストファイルが <parameter>- -enable-default-ssp</parameter> オプションのことを考慮していないためです。
-    -->
-    <filename>copy.cc</filename>、<filename>pr56837.c</filename> というテストが失敗します。
-    さらに <filename class='directory'>vect</filename> ディレクトリ内にあるテストが、AVX に対するハードウェアサポートがないために、いくつか失敗します。
-    </para>
-@z
-
-@x
-      With Glibc-2.38, the analyzer tests named
-      <filename>data-model-4.c</filename> and
-      <filename>conftest-1.c</filename> 
-        are known to fail.
-      In the asan tests, several tests in <filename>asan_test.C</filename> 
-        are known to fail.
-      The test named <filename>interception-malloc-test-1.C</filename> 
-        is known to fail.
-@y
-      Glibc-2.38 を利用した場合に、<filename>data-model-4.c</filename>, <filename>conftest-1.c</filename> という解析テストが失敗します。
-      また asan テストにおいて、<filename>asan_test.C</filename> テスト内のサブテストがいくつか失敗します。
-      <filename>interception-malloc-test-1.C</filename> というテストも失敗します。
-@z
-
-@x
-    <para>A few unexpected failures cannot always be avoided. The GCC developers
-    are usually aware of these issues, but have not resolved them yet.
+    <para>A few unexpected failures cannot always be avoided. In some cases
+    test failures depend on the specific hardware of the system.<!--The GCC developers
+    are usually aware of these issues, but have not resolved them yet.-->
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
 @y
     <para>
-    テストに失敗することがありますが、これを回避することはできません。
-    GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
+    テスト失敗は回避することができません。
+    その中には特定のハードウェアに起因するものもあります。
     上記の URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
     </para>
-@z
-
-@x
-      On some combinations of kernel configuration and AMD processors
-      there may be more than 1100 failures in the gcc.target/i386/mpx
-      tests (which are designed to test the MPX option on recent
-      Intel processors). These can safely be ignored on AMD
-      processors. These tests will also fail on Intel processors if MPX support
-      is not enabled in the kernel even though it is present on the CPU.
-@y
-      カーネル設定の組み合わせにより、あるいは AMD プロセッサーを利用している場合に、gcc.target/i386/mpx に関するテストが 1100 個以上失敗します。
-      （これは最新の Intel プロセッサーにおいて MPX オプションをテストするものです。）
-      AMD プロセッサーを利用している場合は無視して構いません。
-      上のテストは Inter プロセッサーであっても、カーネル上にて MPX サポートが無効になっていると、たとえ CPU がサポートしていても発生します。
 @z
 
 @x
@@ -714,10 +664,10 @@
 @z
 
 @x libcc1
-          <para>The C preprocessing library</para>
+          <para>A library that allows GDB to make use of GCC</para>
 @y
           <para>
-          C 言語プリプロセスライブラリ。
+          GDB が GCC を利用可能とするためのライブラリ。
           </para>
 @z
 
@@ -746,6 +696,14 @@
           C/C++ や Fortran においてマルチプラットフォームでの共有メモリ並行プログラミング
           (multi-platform shared-memory parallel programming)
           を行うための GNU による OpenMP API インプリメンテーションです。
+          </para>
+@z
+
+@x libhwasan
+          <para>The Hardware-assisted Address Sanitizer runtime library</para>
+@y
+          <para>
+          ハードウェアをアシストする Address Sanitizer ランタイムライブラリ。
           </para>
 @z
 
@@ -797,6 +755,14 @@
           <para>The standard C++ library</para>
 @y
           <para>標準 C++ ライブラリ</para>
+@z
+
+@x libstdc++exp
+          <para>Experimental C++ Contracts library</para>
+@y
+          <para>
+          試験的な C++ Contract ライブラリ。
+          </para>
 @z
 
 @x libstdc++fs

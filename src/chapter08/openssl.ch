@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The OpenSSL package contains  management tools and libraries relating
     to cryptography. These are useful for providing cryptographic functions
     to other packages, such as OpenSSH, email applications, and web browsers
@@ -125,6 +119,78 @@
         詳しくは関連する話が <xref linkend='pkgmgmt-upgrade-issues'/> にあるので参照してください。
 @z
 
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of OpenSSL - 32bit</title>
+@y
+    <title>OpenSSL - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare OpenSSL for compilation:</para>
+@y
+    <para>&PreparePackage1;OpenSSL&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of OpenSSL - x32bit</title>
+@y
+    <title>OpenSSL - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare OpenSSL for compilation:</para>
+@y
+    <para>&PreparePackage1;OpenSSL&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
 @x
     <title>Contents of OpenSSL</title>
 @y
@@ -191,10 +257,10 @@
             is a command-line tool for using the various cryptography functions
             of <application>OpenSSL</application>'s crypto library from the
             shell. It can be used for various functions which are documented in
-            <command>man 1 openssl</command>
+            <ulink role='man' url='&man;openssl.1'>openssl(1)</ulink>
 @y
             <application>OpenSSL</application> の暗号化ライブラリが提供するさまざまな関数を、シェルから利用するためのコマンドラインツール。
-            <command>man 1 openssl</command> に示される数多くの関数を利用することができます。
+            <ulink role='man' url='&man;openssl.1'>openssl(1)</ulink> に示される数多くの関数を利用することができます。
 @z
 
 @x libcrypto.so
@@ -214,9 +280,11 @@
 @x libssl.so
             implements the Transport Layer Security (TLS v1) protocol.
             It provides a rich API, documentation
-            on which can be found by running <command>man 7 ssl</command>
+            on which can be found in <ulink role='man'
+            url='&man;ssl.7'>ssl(7)</ulink>
 @y
             トランスポート層セキュリティ（Transport Layer Security; TLFS v1）プロトコルを実装しています。
             これは豊富な API 関数とそのドキュメントを提供します。
-            ドキュメントは <command>man 7 ssl</command> の実行により参照できます。
+            ドキュメントは <ulink role='man'
+            url='&man;ssl.7'>ssl(7)</ulink> にあります。
 @z

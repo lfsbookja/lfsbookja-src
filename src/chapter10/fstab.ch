@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Creating the /etc/fstab File</title>
 @y
   <title>/etc/fstab ファイルの生成</title>
@@ -35,7 +29,7 @@
   class="partition">sda2</filename>, <filename
   class="partition">sda5</filename>, and <systemitem
   class="filesystem">ext4</systemitem>. For details on the six
-  fields in this file, see <command>man 5 fstab</command>.</para>
+  fields in this file, see <ulink role='man' url='&man;fstab.5'>fstab(5)</ulink>.</para>
 @y
   <para>
   <replaceable>&lt;xxx&gt;</replaceable>、
@@ -43,7 +37,8 @@
   <replaceable>&lt;fff&gt;</replaceable> の部分はシステムに合わせて正しい記述に書き換えてください。
   例えば <filename class="partition">sda2</filename>、<filename class="partition">sda5</filename>、<systemitem
   class="filesystem">ext4</systemitem> といったものです。
-  上記各行の6項目の記述内容については <command>man 5 fstab</command> により確認してください。
+  上記各行の6項目の記述内容については <ulink role='man'
+  url='&man;fstab.5'>fstab(5)</ulink> により確認してください。
   </para>
 @z
 

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Setting Up the Environment</title>
 @y
   <title>環境設定</title>
@@ -103,12 +97,12 @@
   <para>Setting the user file-creation mask (umask) to 022 ensures that newly
   created files and directories are only writable by their owner, but are
   readable and executable by anyone (assuming default modes are used by the
-  <function>open(2)</function> system call, new files will end up with permission
-  mode 644 and directories with mode 755).</para>
+  <ulink role='man' url='&man;open.2'>open(2)</ulink> system call, new files
+  will end up with permission mode 644 and directories with mode 755).</para>
 @y
   <para>
   ユーザーのファイル生成マスク (file-creation mask; umask) を 022 にセットするのは、新たなファイルやディレクトリの生成はその所有者にのみ許可し、他者は読み取りと実行を可能とするためです。
-  (システムコール <function>open(2)</function> にてデフォルトモードが適用される場合、新規生成ファイルのパーミッションモードは 644、同じくディレクトリは 755 となります。)
+  (システムコール <ulink role='man' url='&man;open.2'>open(2)</ulink> にてデフォルトモードが適用される場合、新規生成ファイルのパーミッションモードは 644、同じくディレクトリは 755 となります。)
   </para>
 @z
 

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>Ninja is a small build system with a focus on speed.</para>
 @y
     <para>
@@ -87,6 +81,16 @@
           <para>
           本パラメーターは、この時点でのシステムに対して Ninja 自身を再ビルドすることを指示します。
           </para>
+@z
+
+@x
+    <para>The package tests cannot run in the chroot environment. They require 
+    <ulink url="&blfs-book;general/cmake.html">cmake</ulink>.</para>
+@y
+    <para>
+    本パッケージのテストは chroot 環境のもとでは実行することができません。
+    実行するには <ulink url="&blfs-book;general/cmake.html">cmake</ulink> が必要です。
+    </para>
 @z
 
 @x

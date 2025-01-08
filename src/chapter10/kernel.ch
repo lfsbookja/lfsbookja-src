@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Linux package contains the Linux kernel.</para>
 @y
     <para>Linux パッケージは Linux カーネルを提供します。 </para>
@@ -42,8 +36,8 @@
         LFS editors recommend that users not familiar with this process follow
         the procedures below fairly closely.  The objective is to get an
         initial system to a point where you can log in at the command line when
-        you reboot later in <xref linkend="ch-finish-reboot"/>.  At this point
-        optimization and customization is not a goal.
+        you reboot later in <xref linkend="ch-finish-reboot" role='.'/>
+        At this point optimization and customization is not a goal.
 @y
         Linux カーネルの構築を初めて行うなら、LFS の中でも、かなりハードルの高い作業になります。
         これをうまく成功させることができるかどうかは、対象システム向けの特定ハードウェアの存在や、どのように作り上げたいかの要求に依存します。
@@ -102,7 +96,7 @@
 
 @x
     <para>There are several ways to configure the kernel options. Usually,
-    This is done through a menu-driven interface, for example:</para>
+    this is done through a menu-driven interface, for example:</para>
 @y
     <para>
     カーネルオプションの設定方法にはいくつかあります。
@@ -377,11 +371,101 @@
           </para>
 @z
 
-@x Enable legacy fbdev support for your modesetting driver
+@x Display a user-friendly message when a kernel panic occurs
+          <para>This will make the kernel correctly display the message
+          in case a kernel panic happens and a running DRM driver
+          supports to do so.  Without this, it would be more
+          difficult to diagnose a panic: if no DRM driver is running,
+          we'd be on the VGA console which can only hold 24 lines and
+          the relevant kernel message is often flushed away; if a DRM
+          driver is running, the display is often completely messed up
+          on panic.  As of Linux-6.12, none of the dedicated drivers for
+          mainstream GPU models really supports this, but it's supported by
+          the <quote>Simple framebuffer driver</quote> which runs on the
+          VESA (or EFI) framebuffer before the dedicated GPU driver is
+          loaded.  If the dedicated GPU driver is built as a module
+          (instead of a part of the kernel image) and no initramfs is
+          used, this functionality will work just fine before the root
+          file system is mounted and it's already enough for providing
+          information about most LFS configuration errors causing a
+          panic (for example, an incorrect <parameter>root=</parameter>
+          setting in <xref linkend='ch-bootable-grub'/>).</para>
+@y
+          <para>
+          カーネルパニック発生にあたって、起動中の DRM ドライバーの出力機能が適切にサポートされている場合に、メッセージを正しく表示します。
+          これがなかった場合には、パニック内容を調べることがより困難になります。
+          たとえば DRM ドライバーが起動していなかった場合は、VGA コンソールを利用することになり、その場合には 24 行の表示しか行われず、相当数のカーネルメッセージは消えてなくなってしまいます。
+          また DRM ドライバーが起動していても、パニック時のメッセージは非常に複雑です。
+          Linux-6.12 の場合、主要な GPU モデルの専用ドライバーはどれもこれに対応していませんが、<quote>Simple framebuffer driver</quote>であれば対応しています。
+          これであれば VESA (あるいは EFI) フレームバッファー上で作動し、GPU 専用ドライバーがロードされる前であってかまいません。
+          GPU 専用ドライバーが (カーネルイメージの一部としてではなく) モジュールとしてビルドされていて、かつ initramfs が利用されていない場合は、ルートファイルシステムのマウント前であっても正しく機能します。
+          そして LFS の設定誤りがパニックを引き起こしている (たとえば <xref linkend='ch-bootable-grub'/>における <parameter>root=</parameter> の設定が適切でない) 場合に、情報表示が充分に行われることになります。
+          </para>
+@z
+
+@x Panic screen formatter
+          <para>Set this <literal>kmsg</literal> to make sure the last
+          kernel messages lines are displayed when a kernel panic happens.
+          The default, <literal>user</literal>, would make the kernel show
+          only a <quote>user friendly</quote> panic message which is not
+          helpful on diagnostic.  The third choice,
+          <literal>qr_code</literal>, would make the kernel to compress
+          the last kernel message lines into a QR code and display it.
+          The QR code can hold more message lines than plain text and it
+          can be decoded with an external device (like a smart phone).
+          But it requires a Rust compiler that LFS does not provide.</para>
+@y
+          <para>
+          これを <literal>kmsg</literal> に設定すると、カーネルパニックが発生した際に、カーネルメッセージの最終行付近を確実に表示するようになります。
+          デフォルト設定は <literal>user</literal> であり、その場合カーネルは<quote>ユーザーフレンドリーな</quote> パニックメッセージしか表示せず、これでは解析になんら役立ちません。
+          もう一つの設定として <literal>qr_code</literal> がありますが、これはカーネルメッセージの最終行付近を圧縮して QR コードとして表示します。
+          QR コードであればプレーンテキストに比べて、それ以上に多くのメッセージを保持することができ、別のデバイス (たとえばスマートホン) 上で圧縮の展開を行うことができます。
+          ただしこれを実現するためには LFS では提供していない Rust コンパイラーが必要となります。
+          </para>
+@z
+
+@x and の除去
+          <parameter>
+            Mark VGA/VBE/EFI FB as generic system framebuffer
+          </parameter> and
+          <parameter>Simple framebuffer driver</parameter>
+@y
+          <parameter>
+            Mark VGA/VBE/EFI FB as generic system framebuffer
+          </parameter>,
+          <parameter>Simple framebuffer driver</parameter>
+@z
+@x
+          <para>These allow to use the VESA framebuffer (or the EFI
+          framebuffer if booting the LFS system via UEFI) as a DRM device.
+          The VESA framebuffer will be set up by GRUB (or the EFI
+          framebuffer will be set up by the UEFI firmware), so the DRM panic
+          handler can function before the GPU-specific DRM driver is
+          loaded.</para>
+@y
+          <para>
+          これは DRM デバイスとして VESA フレームバッファーを利用するようにします (UEFI 経由により LFS システムを起動する場合には EFI フレームバッファーを利用するようにします)。
+          VESA フレームバッファーは GRUB によって (あるいは EFI フレームバッファーにおいては UEFI ファームウェアによって) 設定されます。
+          したがって DRM におけるパニック処理は、GPU 固有の DRM ドライバーがロードされる前であっても正しく機能します。
+          </para>
+@z
+
+@x and の除去
+          <parameter>
+            Enable legacy fbdev support for your modesetting driver
+          </parameter> and
+          <parameter>Framebuffer Console support</parameter>
+@y
+          <parameter>
+            Enable legacy fbdev support for your modesetting driver
+          </parameter>,
+          <parameter>Framebuffer Console support</parameter>
+@z
+@x
           <para>These are needed to display the Linux console on a
           GPU driven by a DRI (Direct Rendering Infrastructure) driver.
-          If <option>CONFIG_DRM</option> (Direct Rendering Manager) is
-          enabled, you should enable these two options as well or you'll see
+          As <option>CONFIG_DRM</option> (Direct Rendering Manager) is
+          enabled, we should enable these two options as well or we'll see
           a blank screen once the DRI driver is loaded.</para>
 @y
           <para>
@@ -450,13 +534,14 @@
     located in <xref linkend="ch-config-udev"/> and in the kernel
     documentation in the <filename
     class="directory">linux-&linux-version;/Documentation</filename> directory.
-    Also, <filename>modprobe.d(5)</filename> may be of interest.</para>
+    Also, <ulink role='man' url='&man;modprobe.d.5'>modprobe.d(5)</ulink>
+    may be of interest.</para>
 @y
     <para>
     カーネルモジュールを利用する場合 <filename class="directory">/etc/modprobe.d</filename> ディレクトリ内での設定を必要とします。
     モジュールやカーネル設定に関する情報は <xref linkend="ch-config-udev"/>や <filename
     class="directory">linux-&linux-version;/Documentation</filename> ディレクトリにあるカーネルドキュメントを参照してください。
-    また <filename>modprobe.d(5)</filename> も有用です。
+    また <ulink role='man' url='&man;modprobe.d.5'>modprobe.d(5)</ulink> も有用です。
     </para>
 @z
 
@@ -481,7 +566,7 @@
 @x
       <para>If you've decided to use a separate &boot-dir; partition for the
       LFS system (maybe sharing a &boot-dir; partition with the host
-      distro) , the files copied below should go there. The easiest way to
+      distro), the files copied below should go there. The easiest way to
       do that is to create the entry for &boot-dir; in &fstab; first (read
       the previous section for details), then issue the following command
       as the &root; user in the
@@ -606,6 +691,43 @@
 @z
 
 @x
+      <para>If you are updating the configuration and rebuilding the kernel
+      from a retained kernel source tree, normally you should
+      <emphasis role='bold'>not</emphasis> run the
+      <command>make mrproper</command> command.  The command would purge
+      the <filename>.config</filename> file and all the
+      <filename class='extension'>.o</filename> files from the previous
+      build.  Despite it's easy to restore <filename>.config</filename> from
+      the copy in <filename class='directory'>/boot</filename>, purging all
+      the <filename class='extension'>.o</filename> files is still a waste:
+      for a simple configuration change, often only a few
+      <filename class='extension'>.o</filename> files need to be (re)built
+      and the kernel build system will correctly skip other
+      <filename class='extension'>.o</filename> files if they are not
+      purged.</para>
+@y
+      <para>
+      保持しておいたカーネルソースを使って、カーネル設定の更新およびカーネルの再ビルドを行う場合、普通は <command>make mrproper</command> コマンドは実行しないでください。
+      このコマンドを実行すると、前回のビルド時に生成された <filename>.config</filename> ファイルと、拡張子 <filename class='extension'>.o</filename> のファイルすべてを削除します。
+      <filename>.config</filename> だけなら <filename class='directory'>/boot</filename> からコピーすれば簡単に復元できます。
+      しかし <filename class='extension'>.o</filename> ファイルをすべて削除すると、またビルドに時間を要することになります。
+      たとえば単純な設定を変更するだけであったなら、(再)生成すべき <filename class='extension'>.o</filename> ファイルは少ないはずであり、それ以外の <filename class='extension'>.o</filename> ファイルは残しておけば、カーネルビルドシステムは適切にビルドをスキップしてくれます。
+      </para>
+@z
+
+@x
+      <para>On the other hand, if you've upgraded GCC, you should run
+      <command>make clean</command> to purge all the
+      <filename class='extension'>.o</filename> files from the previous
+      build, or the new build may fail.</para>
+@y
+      <para>
+      それとは逆に GCC のアップグレードを行っていた場合には <command>make clean</command> を実行して、前回ビルドされた <filename class='extension'>.o</filename> ファイルは削除しておかなければなりません。
+      これを行わなかった場合、新たなビルドが失敗する可能性があります。
+      </para>
+@z
+
+@x
       <para>Some kernel documentation recommends creating a symlink from
       <filename class="symlink">/usr/src/linux</filename> pointing to the kernel
       source directory.  This is specific to kernels prior to the 2.6 series and
@@ -618,26 +740,6 @@
       class="symlink">/usr/src/linux</filename> の生成を勧めているものがあります。
       これはカーネル 2.6 系以前におけるものであり LFS システム上では生成<emphasis>してはなりません </emphasis>。
       ベースとなる LFS システムを構築し、そこに新たなパッケージを追加していこうとした際に、そのことが問題となるからです。
-      </para>
-@z
-
-@x
-      <para>The headers in the system's <filename
-      class="directory">include</filename> directory (<filename
-      class="directory">/usr/include</filename>) should
-      <emphasis>always</emphasis> be the ones against which Glibc was compiled,
-      that is, the sanitised headers installed in <xref
-      linkend="ch-tools-linux-headers"/>.  Therefore, they should
-      <emphasis>never</emphasis> be replaced by either the raw kernel headers
-      or any other kernel sanitized headers.</para>
-@y
-      <para>
-      さらに <filename
-      class="directory">include</filename> ディレクトリ (<filename
-      class="directory">/usr/include</filename>) にあるヘッダーファイルは、<emphasis>必ず</emphasis> Glibc のコンパイル時のものでなければなりません。
-      つまり <xref
-      linkend="ch-tools-linux-headers"/> によってインストールされた、健全化 (sanitizing) したものです。
-      したがって生のカーネルヘッダーや他のカーネルにて健全化されたヘッダーによって上書きされてしまうのは避けなければなりません。
       </para>
 @z
 

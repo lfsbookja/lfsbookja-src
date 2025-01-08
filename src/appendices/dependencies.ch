@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
 <appendix id="appendixc" xreflabel="Appendix C">
   <?dbhtml dir="appendices"?>
   <?dbhtml filename="dependencies.html"?>
@@ -81,10 +75,10 @@
 
 %----------------------------------------------------------------------
 @x acl
-          <seg>Attr, Bash, Binutils, Coreutils, GCC,  Gettext, Grep, M4, Make,
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
           Perl, Sed, and Texinfo</seg>
 @y
-          <seg>Attr, Bash, Binutils, Coreutils, GCC,  Gettext, Grep, M4, Make,
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
           Perl, Sed, Texinfo</seg>
 @z
 @x
@@ -129,9 +123,9 @@
           <seg>Automake, Diffutils, Findutils, Libtool</seg>
 @z
 @x
-          <seg>Acl and Libcap</seg>
+          <seg>Acl, Libcap, and Patch</seg>
 @y
-          <seg>Acl, Libcap</seg>
+          <seg>Acl, Libcap, Patch</seg>
 @z
 @x
           <seg>None</seg>
@@ -288,11 +282,11 @@
 
 %----------------------------------------------------------------------
 @x bison
-          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, M4, Make,
-          Perl, and Sed</seg>
+          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc,
+          Grep, M4, Make, Perl, and Sed</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, M4, Make,
-          Perl, Sed</seg>
+          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc,
+          Grep, M4, Make, Perl, Sed</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -699,6 +693,41 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Flit-core dependency info -->
+@y
+<!-- Begin Flit-core dependency info -->
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Wheel</seg>
+@y
+          <seg>Wheel</seg>
+@z
+@x
+            <ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>
+            and
+            <ulink url='&pypi-home;/testpath'>testpath</ulink>
+@y
+            <ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>,
+            <ulink url='&pypi-home;/testpath'>testpath</ulink>
+@z
+
+%----------------------------------------------------------------------
 @x Gawk
           <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, GMP, Grep, Make,
           MPFR, Patch, Readline, Sed, and Texinfo</seg>
@@ -730,11 +759,11 @@
 %----------------------------------------------------------------------
 @x Gcc
           <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-          Gettext, Glibc, GMP, Grep, Libxcrypt, M4, Make, MPC, MPFR, Patch,
+          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch,
           Perl, Sed, Tar, Texinfo, and Zstd</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-          Gettext, Glibc, GMP, Grep, Libxcrypt, M4, Make, MPC, MPFR, Patch,
+          Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch,
           Perl, Sed, Tar, Texinfo, Zstd</seg>
 @z
 @x
@@ -816,9 +845,20 @@
           <seg>Automake, Bison</seg>
 @z
 @x
-          <seg>None</seg>
+            <ulink url='&blfs-book;general/libunistring.html'>
+              libunistring
+            </ulink>
+            and
+            <ulink url='&blfs-book;general/libxml2.html'>
+              libxml2
+            </ulink>
 @y
-          <seg>なし</seg>
+            <ulink url='&blfs-book;general/libunistring.html'>
+              libunistring
+            </ulink>,
+            <ulink url='&blfs-book;general/libxml2.html'>
+              libxml2
+            </ulink>
 @z
 
 %----------------------------------------------------------------------
@@ -968,9 +1008,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Man-DB and Perl</seg>
+          <seg>Man-DB</seg>
 @y
-          <seg>Man-DB, Perl</seg>
+          <seg>Man-DB</seg>
 @z
 @x
           <seg>
@@ -994,7 +1034,7 @@
           Grep, Make, Ncurses, Sed, Texinfo, Xz</seg>
 @z
 @x
-          <seg>Bash, GCC, Gettext, Glibc, Xz, and Sed.</seg>
+          <seg>Bash, GCC, Gettext, Glibc, Xz, and Sed</seg>
 @y
           <seg>Bash, GCC, Gettext, Glibc, Xz, Sed</seg>
 @z
@@ -1219,9 +1259,13 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>
+            <ulink url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>
+          </seg>
 @y
-          <seg>なし</seg>
+          <seg>
+            <ulink url="&blfs-book;postlfs/linux-pam.html">Linux-PAM</ulink>
+          </seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1253,9 +1297,13 @@
           <seg>&systemd-udev;</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>
+            <ulink url="https://git.sr.ht/~sircmpwn/scdoc/">scdoc</ulink> (for man pages)
+          </seg>
 @y
-          <seg>なし</seg>
+          <seg>
+            <ulink url="https://git.sr.ht/~sircmpwn/scdoc/">scdoc</ulink> (man ページのため)
+          </seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1451,6 +1499,40 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Libxcrypt dependency info -->
+@y
+<!-- Begin Libxcrypt dependency info -->
+@z
+@x
+          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+          Make, Perl, and Sed</seg>
+@y
+          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+          Make, Perl, Sed</seg>
+@z
+@x
+          <seg>Glibc</seg>
+@y
+          <seg>Glibc</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>Perl, Python, Shadow, and &systemd-udev;</seg>
+@y
+          <seg>Perl, Python, Shadow, &systemd-udev;</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Linux
           <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc,
           Grep, Gzip, Kmod, Libelf, Make, Ncurses, OpenSSL, Perl, and Sed</seg>
@@ -1474,13 +1556,17 @@
           <seg>なし</seg>
 @z
 @x
-            <ulink url="&blfs-book;general/cpio.html">cpio</ulink> and
+            <ulink url="&blfs-book;general/cpio.html">cpio</ulink>,
             <ulink url="&blfs-book;general/llvm.html">LLVM</ulink>
-            (with Clang)
+            (with Clang), and
+	    <ulink
+  url="&blfs-book;general/rust-bindgen.html">Rust-bindgen</ulink>
 @y
             <ulink url="&blfs-book;general/cpio.html">cpio</ulink>,
             <ulink url="&blfs-book;general/llvm.html">LLVM</ulink>
-            (Clang 込み)
+            (Clang 込み),
+	    <ulink
+  url="&blfs-book;general/rust-bindgen.html">Rust-bindgen</ulink>
 @z
 
 %----------------------------------------------------------------------
@@ -1505,6 +1591,33 @@
           <seg>None</seg>
 @y
           <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x lz4
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, and Make</seg>
+@y
+          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make</seg>
+@z
+@x
+          <seg>Glibc</seg>
+@y
+          <seg>Glibc</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>Zstd <phrase revision="systemd">and Systemd</phrase></seg>
+@y
+          <seg>Zstd<phrase revision="systemd">, Systemd</phrase></seg>
 @z
 @x
           <seg>None</seg>
@@ -1617,9 +1730,9 @@
 
 %----------------------------------------------------------------------
 @x Man-Pages
-         <seg>Bash, Coreutils, and Make</seg>
+         <seg>Bash, Coreutils, Make, and Sed</seg>
 @y
-         <seg>Bash, Coreutils, Make</seg>
+         <seg>Bash, Coreutils, Make, Sed</seg>
 @z
 @x
           <seg>None</seg>
@@ -1811,9 +1924,9 @@
           <seg>GCC, Glibc</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg><ulink url="&blfs-book;general/cmake.html">cmake</ulink></seg>
 @y
-          <seg>なし</seg>
+          <seg><ulink url="&blfs-book;general/cmake.html">cmake</ulink></seg>
 @z
 @x
           <seg>Meson</seg>
@@ -1868,14 +1981,16 @@
 @z
 %----------------------------------------------------------------------
 @x Patch
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed</seg>
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and
+          Sed</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed</seg>
+          <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make,
+          Sed</seg>
 @z
 @x
-          <seg>Glibc</seg>
+          <seg>Attr and Glibc</seg>
 @y
-          <seg>Glibc</seg>
+          <seg>Attr, Glibc</seg>
 @z
 @x
           <seg>Diffutils</seg>
@@ -1899,10 +2014,10 @@
 
 %----------------------------------------------------------------------
 @x Perl
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep, Groff,
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
           Libxcrypt, Make, Sed, and Zlib</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep, Groff,
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
           Libxcrypt, Make, Sed, Zlib</seg>
 @z
 @x
@@ -1911,7 +2026,7 @@
           <seg>GDBM, Glibc, Libxcrypt</seg>
 @z
 @x
-          <seg>Iana-Etc, Less. and Procps-ng</seg>
+          <seg>Iana-Etc, Less, and Procps-ng</seg>
 @y
           <seg>Iana-Etc, Less, Procps-ng</seg>
 @z
@@ -1946,14 +2061,16 @@
 @z
 @x
           <seg>Binutils,
-          <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
-          IProute2, Kmod, Man-DB, Procps-ng, Python,
-          &systemd-udev;, and Util-linux</seg>
+          <phrase revision='systemd'>D-Bus, </phrase>
+          E2fsprogs, IProute2, Kmod, Man-DB, Procps-ng, Python,
+          &systemd-udev;, 
+          and Util-linux</seg>
 @y
           <seg>Binutils,
-          <phrase revision='systemd'>D-Bus, </phrase>E2fsprogs,
-          IProute2, Kmod, Man-DB, Procps-ng, Python,
-          &systemd-udev;, Util-linux</seg>
+          <phrase revision='systemd'>D-Bus, </phrase>
+          E2fsprogs, IProute2, Kmod, Man-DB, Procps-ng, Python,
+          &systemd-udev;, 
+          Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -1968,8 +2085,7 @@
           revision='systemd'>, and Systemd</phrase></seg>
 @y
           <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses,
-          <phrase revision='sysv'>and </phrase>Pkgconf<phrase
-          revision='systemd'>, Systemd</phrase></seg>
+          Pkgconf<phrase revision='systemd'>, Systemd</phrase></seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2129,6 +2245,38 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Setuptools dependency info -->
+@y
+<!-- Begin Setuptools dependency info -->
+@z
+@x
+          <seg>Python and Wheel</seg>
+@y
+          <seg>Python, Wheel</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Jinja2, MarkupSafe, and Meson</seg>
+@y
+          <seg>Jinja2, MarkupSafe, Meson</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Shadow
           <seg>Acl, Attr, Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk,
           GCC, Gettext, Glibc, Grep, Libcap, Libxcrypt, Make, and Sed</seg>
@@ -2194,11 +2342,11 @@
 %----------------------------------------------------------------------
 @x Systemd
          <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
-         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Lz4, Meson,
          OpenSSL, Pkgconf, Sed, Util-linux, and Zstd</seg>
 @y
          <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
-         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Lz4, Meson,
          OpenSSL, Pkgconf, Sed, Util-linux, Zstd</seg>
 @z
 @x
@@ -2335,6 +2483,37 @@
           <seg>None</seg>
 @y
           <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Udev
+         <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         OpenSSL, Pkgconf, Sed, Util-linux, and Zstd</seg>
+@y
+         <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
+         GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Meson,
+         OpenSSL, Pkgconf, Sed, Util-linux, Zstd</seg>
+@z
+@x
+          <seg>Acl, Glibc, Libcap, OpenSSL, and Util-linux</seg>
+@y
+          <seg>Acl, Glibc, Libcap, OpenSSL, Util-linux</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>Util-linux</seg>
+@y
+          <seg>Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -2526,9 +2705,9 @@
 
 %----------------------------------------------------------------------
 @x Zstd
-          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz, and Zlib</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Lz4, Make, Xz, and Zlib</seg>
 @y
-          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Make, Xz, Zlib</seg>
+          <seg>Binutils, Coreutils, GCC, Glibc, Gzip, Lz4, Make, Xz, Zlib</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2546,7 +2725,7 @@
           <seg>Binutils, GCC, Libelf, &systemd-udev;</seg>
 @z
 @x
-            <ulink url="https://lz4.github.io/lz4/">LZ4</ulink>
+            None
 @y
-            <ulink url="https://lz4.github.io/lz4/">LZ4</ulink>
+            なし
 @z

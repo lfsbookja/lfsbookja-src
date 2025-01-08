@@ -42,8 +42,8 @@
     <title>日本語版の提供について</title>
 
     <para>
-    日本語版 LFS ブックは OSDN.jp 内に開発の場を設け <ulink
-    url="http://lfsbookja.osdn.jp/"/> にて<quote>LFSブック日本語版</quote>のプロジェクト名で提供するものです。
+    日本語版 LFS ブックは GitHub 内に開発の場を設け <ulink
+    url="https://lfsbookja.github.io/lfsbookja-doc/ja.index.html"/> にて<quote>LFSブック日本語版</quote>のプロジェクト名で提供するものです。
     </para>
 
     <para>

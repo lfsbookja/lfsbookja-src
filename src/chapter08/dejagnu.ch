@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The <application>DejaGnu</application> package contains a framework for running test
       suites on GNU tools. It is written in <command>expect</command>, which itself
       uses <application>Tcl</application> (Tool Command Language).</para>
@@ -42,15 +36,15 @@
 @z
 
 @x
-    <para>Build and install the package:</para>
-@y
-    <para>パッケージをビルドしてインストールします。</para>
-@z
-
-@x
     <para>To test the results, issue:</para>
 @y
     <para>コンパイル結果をテストするなら以下を実行します。</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>パッケージをインストールします。</para>
 @z
 
 @x

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Managing Devices</title>
 @y
   <title>デバイスの管理</title>
@@ -67,7 +61,7 @@
       often have two ethernet connections named eth0 and
       wlan0; such laptops can also use this method.  The command line
       is in the GRUB configuration file.
-      See <xref linkend="grub-cfg"/>.</para>
+      See <xref linkend="grub-cfg" role='.'/></para>
 @y
       <para>
       従来の命名スキーマ、例えば eth0、eth1 といったものは、カーネルコマンドラインに <userinput>net.ifnames=0</userinput> を加えることで利用できます。
@@ -231,6 +225,24 @@
       <literal>NAME</literal> に定義される値が重要です。
       どのネットワークカードにどんな名前が割り当てられているかをよく確認してください。
       そしてネットワーク設定ファイルを生成する際には <literal>NAME</literal> に定義されている名称を利用してください。
+      </para>
+@z
+
+@x
+      <para>Even if the custom udev rule file is created, udev may still
+      assign one or more alternative names for a NIC based on physical
+      characteristics.  If a custom udev rule would rename some NIC using
+      a name already assigned as an alternative name of another NIC, this
+      udev rule will fail.  If this issue happens, you may create the
+      <filename>/etc/udev/network/99-default.link</filename> configuration
+      file with an empty alternative assignment policy, overriding the
+      default configuration file
+      <filename>/usr/lib/udev/network/99-default.link</filename>:</para>
+@y
+      <para>
+      たとえカスタムルールファイルを生成していても、udev は NIC に対して、その物理的特性からいくつかの名前を割り振るかもしれません。
+      仮にカスタム udev ルールが定めた NIC 名が、他の NIC に割り当てられた別名と同じものに割り当てられた場合、その udev ルールは失敗します。
+      この問題が発生する場合には、設定ファイル <filename>/etc/udev/network/99-default.link</filename> を生成して、空の別名割り当てポリシーを設定することで、デフォルトの設定である <filename>/usr/lib/udev/network/99-default.link</filename> を上書きするようにします。
       </para>
 @z
 
@@ -412,8 +424,8 @@
 @z
 
 @x
-    <para>As explained in <xref linkend="ch-config-udev"/>, the order in
-    which devices with the same function appear in
+    <para>As explained in <xref linkend="ch-config-udev" role=','/> the
+    order in which devices with the same function appear in
     <filename class="directory">/dev</filename> is essentially random.
     E.g., if you have a USB web camera and a TV tuner, sometimes
     <filename>/dev/video0</filename> refers to the camera and
@@ -422,8 +434,9 @@
     For all classes of hardware except sound cards and network cards, this is
     fixable by creating udev rules to create persistent symlinks.
     The case of network cards is covered separately in
-    <xref linkend="ch-config-network"/>, and sound card configuration can
-    be found in <ulink url="&blfs-book;postlfs/devices.html">BLFS</ulink>.</para>
+    <xref linkend="ch-config-network" role=','/> and sound card
+    configuration can be found in
+    <ulink url="&blfs-book;postlfs/devices.html">BLFS</ulink>.</para>
 @y
     <para>
     <xref linkend="ch-config-udev"/>で説明したように、<filename

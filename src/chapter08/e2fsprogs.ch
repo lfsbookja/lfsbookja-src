@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The E2fsprogs package contains the utilities for handling the
     <systemitem class="filesystem">ext2</systemitem> file system. It also
     supports the <systemitem class="filesystem">ext3</systemitem> and
@@ -147,7 +141,7 @@
 @x
       <filename>/etc/mke2fs.conf</filename> contains the default value of
       various command line options of <command>mke2fs</command>.  You may
-      edit the file to make the default values suitable for your need.
+      edit the file to make the default values suitable for your needs.
       For example, some utilities (not in LFS or BLFS) cannot recognize a
       <systemitem class='filesystem'>ext4</systemitem> file system with
       <literal>metadata_csum_seed</literal> feature enabled.
@@ -164,9 +158,11 @@
 @z
 
 @x
-      Read the man page <filename>mke2fs.conf(5)</filename> for details.
+      Read the man page <ulink role='man'
+      url='&man;mke2fs.conf.5'>mke2fs.conf(5)</ulink> for details.
 @y
-      詳しくは man ページ <filename>mke2fs.conf(5)</filename> を参照してください。
+      詳しくは man ページ <ulink role='man'
+      url='&man;mke2fs.conf.5'>mke2fs.conf(5)</ulink> を参照してください。
 @z
 
 @x

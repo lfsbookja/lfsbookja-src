@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <indexterm zone="ch-tools-glibc">
     <primary sortas="a-Glibc">Glibc</primary>
     <secondary>tools</secondary>
@@ -41,12 +35,14 @@
 @x
         The above command is correct.  The <command>ln</command> command has
         several syntactic versions, so be sure to check
-        <command>info coreutils ln</command> and <filename>ln(1)</filename>
-        before reporting what may appear to be an error.
+        <command>info coreutils ln</command> and <ulink role='man'
+        url='&man;ln.1'>ln(1)</ulink> before reporting what may appear to be
+        an error.
 @y
         上記のコマンドに間違いはありません。
         <command>ln</command> コマンドにはいくつか文法の異なるバージョンがあります。
-        間違いと思われる場合には <command>info coreutils ln</command> や <filename>ln(1)</filename> をよく確認してください。
+        間違いと思われる場合には <command>info coreutils ln</command> や <ulink role='man'
+        url='&man;ln.1'>ln(1)</ulink> をよく確認してください。
 @z
 
 @x
@@ -169,11 +165,11 @@
 
 @x
     <note><para>There have been reports that this package may fail when
-    building as a "parallel make".  If that occurs, rerun the make command
-    with the "-j1" option.</para></note>
+    building as a <quote>parallel make.</quote>  If that occurs, rerun the make command
+    with the <option>-j1</option> option.</para></note>
 @y
-    <note><para>本パッケージは "並行ビルド (parallel make)" を行うとビルドに失敗するとの報告例があります。
-    もしビルドに失敗した場合は make コマンドに "-j1" オプションをつけて再ビルドしてください。
+    <note><para>本パッケージは<quote>並行ビルド</quote>を行うとビルドに失敗するとの報告例があります。
+    もしビルドに失敗した場合は make コマンドに <option>-j1</option> オプションをつけて再ビルドしてください。
     </para></note>
 @z
 
@@ -215,8 +211,8 @@
           packages to define the location where the package should be
           installed. If it is not set, it defaults to the root (<filename
           class="directory">/</filename>) directory. Here we specify that
-          the package is installed in <filename class="directory">$LFS
-          </filename>, which will become the root directory in <xref linkend=
+          the package is installed in <filename class="directory">
+          $LFS</filename>, which will become the root directory in <xref linkend=
           "ch-tools-chroot"/>.</para>
 @y
           <para>

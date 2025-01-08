@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
 <sect1 id="ch-tools-gcc-pass1" role="wrap" xreflabel="gcc-pass1">
 @y
 <sect1 id="ch-tools-gcc-pass1" role="wrap" xreflabel="gcc 1 回め">
@@ -88,6 +82,56 @@
 @z
 
 @x
+    <para arch="ml_32,ml_all">Make <literal>-mstackrealign</literal>
+      a default for 32bit objects:</para>
+@y
+    <para arch="ml_32,ml_all">
+    32 ビットオブジェクト向けに <literal>-mstackrealign</literal> をデフォルトとします。
+    </para>
+@z
+
+@x
+      <para>Adding the <literal>-mstackrealign</literal> flag by default
+        helps to overcome issues with old binaries which cannot be
+        recompiled on the actual OS.</para>
+@y
+      <para>
+        <literal>-mstackrealign</literal> フラグをデフォルトとして追加しておくと、実際の OS 上において古いバイナリが再コンパイルできない問題を解消できるかもしれません。
+      </para>
+@z
+
+@x
+      <para>Today the x86-32 SysV psABI (used by all Linux programs)
+        mandates a 16-byte alignment of the stack frame, so the routines
+        using SSE will save/load SSE vectors onto/from the stack using a
+        <literal>movaps</literal> instruction (which only works with
+        aligned addresses, but faster than its counterpart allowing
+        unaligned addresses, <literal>movups</literal>).</para>
+@y
+      <para>
+        最近の x86-32 SysV psABI (あらゆる Linux プログラムが利用) ではスタックフレームに 16 バイトアライメントを要請しています。
+        したがって SSE を利用する処理ルーチンは、<literal>movaps</literal>命令を利用して、スタックとの間での SSE ベクターのセーブ／ロードを行います (これはアラインされたアドレスにおいてのみ動作するものであり、それとは対照となる非アライメントアドレスの <literal>movups</literal> よりも高速に動作します )。
+      </para>
+@z
+
+@x
+      <para>But some really old x86-32 Linux binaries (compiled about
+        15 years ago), and all Windows x86-32 binaries which might be
+        run via <application>Wine</application> or <application>Steam</application>
+        only aligns the
+        stack frame to 4-byte. Thus, when it calls a SSE routine in LFS
+        built without <literal>-mstackrealign</literal>, the
+        <literal>movdqa</literal> instruction fails with a General
+        Protection Error and the Linux kernel terminates the process
+        with a SIGSEGV.</para>
+@y
+      <para>
+        しかし中には (15 年ほど前にコンパイルされたような) 古い Linux バイナリーが今も存在し、また <application>Wine</application> や <application>Steam</application> を通じて実行される Windows x86-32 であればそのすべてが スタックフレームに 4 バイトしか割り当てていません。
+        したがって <literal>-mstackrealign</literal> を指定せずに LFS をビルドしてしまうと、<literal>movdqa</literal> 命令は General Protection Error により失敗し、Linux カーネルは SIGSEGV によりプロセス終了します。
+      </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC
     in a dedicated build directory:</para>
 @y
@@ -158,7 +202,7 @@
 @x --enable-default-pie and --enable-default-ssp
           <para>Those switches allow GCC to compile programs with
            some hardening security features (more information on those in
-           the <xref linkend="pie-ssp-info"/> in chapter 8) by default. The
+           the <xref linkend="pie-ssp-info"/> in chapter 8) by default. They
            are not strictly needed at this stage, since the compiler will
            only produce temporary executables. But it is cleaner to have the
            temporary packages be as close as possible to the final ones.
@@ -194,7 +238,7 @@
           </para>
 @z
 @x --enable-multilib --with-multilib-list=...
-          <para>LFS canbe used to support multilib. Which they are is
+          <para>LFS can be used to support multilib. Which they are is
           specified in the multilib list.</para>
 @y
           <para>

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
 <sect1 id="ch-tools-generalinstructions"
        xreflabel="General Compilation Instructions">
 @y
@@ -213,12 +207,12 @@
             <para>Do not use any method except the <command>tar</command> command
               to extract the source code. Notably, using the <command>cp -R</command>
               command to copy the
-              source code tree somewhere else can destroy links and
+              source code tree somewhere else can destroy
               timestamps in the source tree, and cause the build to fail.</para>
 @y
               <para>
               パッケージ tarball からソースコードを抽出する際には <command>tar</command> コマンド以外による方法は用いないでください。
-              特にどこか別に配置しているソースコードを <command>cp -R</command> を使ってコピーすると、ソースツリー内のリンクやタイムスタンプを壊しかねません。
+              特にどこか別に配置しているソースコードを <command>cp -R</command> を使ってコピーすると、ソースツリー内のタイムスタンプを壊しかねません。
               そうなるとビルドの失敗に通じることになります。
               </para>
 @z

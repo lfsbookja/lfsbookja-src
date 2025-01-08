@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Gettext package contains utilities for internationalization and
     localization. These allow programs to be compiled with NLS (Native Language
     Support), enabling them to output messages in the user's native
@@ -26,6 +20,18 @@
     <title>Installation of Gettext</title>
 @y
     <title>&InstallationOf1;Gettext&InstallationOf2;</title>
+@z
+
+@x
+    <para>At first, fix an issue causing the package fail to build with
+    libxml-2.12 or later.  The fix is optional for building LFS, but
+    required if rebuilding this package in BLFS with libxml
+    installed:</para>
+@y
+    <para>
+    はじめに libxml-2.12 またはそれ以降を使ったビルドに失敗するパッケージがあるため、その問題を修正します。
+    この修正は LFS 構築にとっては任意作業ですが、libxml をインストールした BLFS において本パッケージを再ビルドする場合には必須となります。
+    </para>
 @z
 
 @x

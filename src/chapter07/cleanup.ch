@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Cleaning up and Saving the Temporary System</title>
 @y
   <title>一時的システムのクリーンアップと保存</title>
@@ -133,14 +127,15 @@
 @z
 
 @x
-        Whenever commands are to be executed by <systemitem class="username">root</systemitem>, 
+        Whenever commands are to be executed by <systemitem class="username">root</systemitem>,
         make sure you have set <envar>LFS</envar>.
 @y
         <systemitem class="username">root</systemitem> ユーザーによってコマンド実行する際にも、必ず <envar>LFS</envar> が設定されていることを確認してください。
 @z
 
 @x
-        This has been discussed in <xref linkend='ch-partitioning-aboutlfs'/>.
+       This has been discussed in
+       <xref linkend='ch-partitioning-aboutlfs' role='.'/>
 @y
         このことは <xref linkend='ch-partitioning-aboutlfs'/> において説明済です。
 @z

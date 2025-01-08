@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Help</title>
 @y
   <title>ヘルプ</title>
@@ -19,7 +13,7 @@
       In case you've hit an issue building one package with the LFS
       instruction, we strongly discourage posting the issue directly onto
       the upstream support channel before discussing via a LFS support
-      channel listed in <xref linkend="ch-intro-resources"/>.
+      channel listed in <xref linkend="ch-intro-resources" role='.'/>
       Doing so is often quite inefficient because the upstream
       maintainers are rarely familiar with LFS building procedure.  Even if
       you've really hit an upstream issue, the LFS community can still help

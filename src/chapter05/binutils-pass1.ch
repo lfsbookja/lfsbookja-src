@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Binutils-&binutils-version; - Pass 1</title>
 @y
   <title>Binutils-&binutils-version; - 1回め</title>
@@ -152,6 +146,42 @@
 @y
           <para>
           ホストのコンパイラーが警告を発した場合に、ビルドが中断することがないようにします。
+          </para>
+@z
+
+@x --enable-new-dtags
+          <para>This makes the linker use the <quote>runpath</quote> tag for
+          embedding library search paths into executables and shared libraries,
+          instead of the traditional <quote>rpath</quote> tag.  It makes
+          debugging dynamically linked executables easier and works around
+          potential issues in the test suite of some packages.</para>
+@y
+          <para>
+          これは実行ファイルや共有ライブラリに埋め込むライブラリ検索パスとして<quote>runpath</quote>を用いることをリンカーに対して指示します。
+          従来の<quote>rpath</quote>タグは用いません。
+          こうすると、動的リンクされた実行ファイルのデバッグが容易になり、いくつかのパッケージにおけるテストスイートにおいて発生する潜在的な問題を解決できるものとなります。
+          </para>
+@z
+
+@x --enable-default-hash-style=gnu
+          <para>By default, the linker would generate both the GNU-style
+          hash table and the classic ELF hash table for shared libraries and
+          dynamically linked executables.  The hash tables are only intended
+          for a dynamic linker to perform symbol lookup.  On LFS the dynamic
+          linker (provided by the Glibc package) will always use the
+          GNU-style hash table which is faster to query.  So the classic
+          ELF hash table is completely useless.  This makes the linker
+          only generate the GNU-style hash table by default, so we can avoid
+          wasting time to generate the classic ELF hash table when we build
+          the packages, or wasting disk space to store it.</para>
+@y
+          <para>
+          リンカーにおいては、共有ライブラリや動的リンク実行ファイルのハッシュテーブルに関して、GNU スタイルのものと旧来の ELF 形式のものの双方を生成することがデフォルトとなっています。
+          ハッシュテーブルは、動的リンカーがシンボル検索を実現するためのものです。
+          LFS における動的リンカー（Glibc パッケージから提供されるもの）は、GNU スタイルのハッシュを常に用いることにしており、シンボル検索をより早くなるようにしています。
+          したがって旧来の ELF ハッシュテーブルは完全に無用です。
+          本指定はリンカーに対して、デフォルトでは GNU スタイルのハッシュテーブルしか生成しないように指示します。
+          こうすることで、パッケージビルドの際に、旧来の ELF ハッシュテーブルを生成する不要な時間、およびそれを収容するディスクスペースを軽減できます。
           </para>
 @z
 

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The GRUB package contains the GRand Unified Bootloader.</para>
 @y
     <para>GRUB パッケージは GRand Unified Bootloader を提供します。</para>
@@ -23,15 +17,18 @@
 
 @x
         If your system has UEFI support and you wish to boot LFS with UEFI,
-        you can skip this package in LFS,
-        and install GRUB with UEFI support (and its dependencies) by following
-        the instructions on
+        you need to install GRUB with UEFI support (and its dependencies) by
+        following the instructions on
         <ulink url="&blfs-book;postlfs/grub-efi.html">the BLFS page</ulink>.
+        You may skip this package, or install this package and the BLFS
+        GRUB for UEFI package without conflict (the BLFS page provides
+        instructions for both cases).
 @y
-        システムが UEFI をサポートしていて、これを使って LFS を起動しようとする場合は、LFS における本パッケージは省略することができます。
+        システムが UEFI をサポートしていて、これを使って LFS を起動しようとする場合は、UEFI サポートを含む GRUB (およびその依存パッケージ) をインストールする必要があります。
         その場合は <ulink
-        url="&blfs-book;postlfs/grub-efi.html">BLFS ページ</ulink> に従って UEFI 対応の GRUB
-        (およびその依存パッケージ) をインストールしてください。
+        url="&blfs-book;postlfs/grub-efi.html">BLFS ページ</ulink> の手順に従ってください。
+        このパッケージのインストールは省略できます。
+        あるいは BLFS ブックに示す UEFI パッケージのサポートを含む GRUB を競合することなくインストールすることもできます (BLFS ではどちらの状況に対しても、その手順を説明しています)。
 @z
 
 @x
@@ -110,14 +107,18 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package, and move the Bash completion support file to
+    the location recommended by the Bash completion maintainers:</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    &InstallThePackage;
+    また Bash completion サポートファイルを、その開発者が推奨するディレクトリに移動させます。
+    </para>
 @z
 
 @x
   <para>Making your LFS system bootable with GRUB will be discussed in
-  <xref linkend="ch-bootable-grub"/>.</para>
+  <xref linkend="ch-bootable-grub" role='.'/></para>
 @y
   <para>
   GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/>で説明しています。
@@ -202,7 +203,7 @@
 @z
 
 @x grub-fstest
-          <para>Is a tool to debug the filesystem driver</para>
+          <para>Is a tool to debug the file system driver</para>
 @y
           <para>
           ファイルシステムドライバーをデバッグするツール。

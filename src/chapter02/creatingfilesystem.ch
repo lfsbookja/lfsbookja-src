@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Creating a File System on the Partition</title>
 @y
   <title>ファイルシステムの生成</title>
@@ -87,13 +81,13 @@
 @z
 
 @x
-  <para>Other file systems, including FAT32, NTFS, ReiserFS, JFS, and XFS are
+  <para>Other file systems, including FAT32, NTFS, JFS, and XFS are
   useful for specialized purposes. More information about these file systems, 
   and many others, can be found at <ulink
   url="https://en.wikipedia.org/wiki/Comparison_of_file_systems"/>.</para>
 @y
   <para>
-  この他のファイルシステムとして、FAT32, NTFS, ReiserFS, JFS, XFS などがあり、それぞれに特定の目的に応じて活用されています。
+  この他のファイルシステムとして、FAT32, NTFS, JFS, XFS などがあり、それぞれに特定の目的に応じて活用されています。
   ファイルシステムの詳細、さらに多くのことは <ulink
   url="https://en.wikipedia.org/wiki/Comparison_of_file_systems"/> を参照してください。
   </para>

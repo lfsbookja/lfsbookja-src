@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Acl package contains utilities to administer Access Control Lists,
     which are used to define fine-grained discretionary access rights for
     files and directories.</para>
@@ -49,6 +43,78 @@
     Acl のテストは、<application>Acl</application> ライブラリを使うアクセス制御がサポートされたファイルシステム上にて実施する必要がありますが、<application>Coreutils</application> をビルドするまでは、その必要はありません。
     テスト実施が必要である場合は、<application>Coreutils</application> のビルドが終わってから、再び本パッケージに戻って <command>make check</command> を実行してください。
     </para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Acl - 32bit</title>
+@y
+    <title>Acl - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Acl for compilation:</para>
+@y
+    <para>&PreparePackage1;Acl&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Acl - x32bit</title>
+@y
+    <title>Acl - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Acl for compilation:</para>
+@y
+    <para>&PreparePackage1;Acl&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
 @z
 
 @x

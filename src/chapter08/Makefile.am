@@ -54,6 +54,7 @@ CHANGE_FILES = \
 	libpipeline.ch    \
 	libtool.ch        \
 	libxcrypt.ch      \
+	lz4.ch            \
 	m4.ch             \
 	make.ch           \
 	man-db.ch         \

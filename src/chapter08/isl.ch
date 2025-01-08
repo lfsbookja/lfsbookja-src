@@ -13,8 +13,9 @@
     <para>ISL is a thread-safe C library for manipulating sets and relations
     of integer points bounded by affine constraints.</para>
 @y
-    <para>ISL is a thread-safe C library for manipulating sets and relations
-    of integer points bounded by affine constraints.</para>
+    <para>
+    ISL は、線形制約条件に該当する整数ポイントやその関連を操作するためのライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -39,8 +40,9 @@
           <para>This variable specifies the correct place for the
           documentation.</para>
 @y
-          <para>This variable specifies the correct place for the
-          documentation.</para>
+          <para>
+          本変数はドキュメントを正しいディレクトリに配置する指定を行います。
+          </para>
 @z
 
 @x
@@ -94,5 +96,7 @@
 @x libisl
           <para>Contains integer set manipulation functions</para>
 @y
-          <para>Contains integer set manipulation functions</para>
+          <para>
+          整数設定操作ライブラリ。
+          </para>
 @z

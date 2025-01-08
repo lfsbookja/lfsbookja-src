@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Libxcrypt package contains a modern library for one-way
     hashing of passwords.</para>
 @y
@@ -107,6 +101,78 @@
       ただし、バイナリでのみ提供されている特定のアプリケーションが、その関数ライブラリへのリンクを行い、そこでは ABI バージョン 1 を必要としています。
       そういったバイナリのみで提供されているアプリケーションの利用においてその関数を必要とするか、あるいは LSB への準拠を必要とする場合には、以下のコマンドを使って本パッケージをもう一度ビルドしてください。
       </para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Libxcrypt - 32bit</title>
+@y
+    <title>Libxcrypt - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Libxcrypt for compilation:</para>
+@y
+    <para>&PreparePackage1;Libxcrypt&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Libxcrypt - x32bit</title>
+@y
+    <title>Libxcrypt - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Libxcrypt for compilation:</para>
+@y
+    <para>&PreparePackage1;Libxcrypt&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x

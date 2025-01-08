@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Readline package is a set of libraries that offer command-line
     editing and history capabilities.</para>
 @y
@@ -38,10 +32,15 @@
 @z
 
 @x
-    <para>Now fix a problem identified upstream:</para>
+    <para>Prevent hard coding library search paths (rpath) into
+    the shared libraries.  This package does not need rpath for an
+    installation into the standard location, and rpath may sometimes cause
+    unwanted effects or even security issues:</para>
 @y
     <para>
-    またアップストリームが認識している問題を修正します。
+    共有ライブラリに対して、ライブラリ検索パス (rpath) がハードコーディングされないようにします。
+    本パッケージは標準的なディレクトリにインストールするため rpath を必要ありません。
+    rpath は時に思わぬ弊害やセキュリティ問題を引き起こす場合があります。
     </para>
 @z
 
@@ -83,11 +82,14 @@
 
 @x
           <para>This option forces Readline to link against the
-          <filename class="libraryfile">libncursesw</filename> library.</para>
+          <filename class="libraryfile">libncursesw</filename> library.
+          For details see the <quote>Shared Libraries</quote> section in the
+          package's <filename>README</filename> file.</para>
 @y
           <para>
           このオプションにより Readline を <filename
           class="libraryfile">libncursesw</filename> ライブラリにリンクします。
+          詳しくは本パッケージの <filename>README</filename> ファイルにある<quote>Shared Libraries</quote>という節を参照してください。
           </para>
 @z
 
@@ -107,6 +109,78 @@
     <para>If desired, install the documentation:</para>
 @y
     <para>必要ならドキュメントをインストールします。</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Readline - 32bit</title>
+@y
+    <title>Readline - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Readline for compilation:</para>
+@y
+    <para>&PreparePackage1;Readline&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Readline - x32bit</title>
+@y
+    <title>Readline - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Readline for compilation:</para>
+@y
+    <para>&PreparePackage1;Readline&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
 <sect1 id="ch-partitioning-hostreqs" xreflabel="Host System Requirements">
 @y
 <sect1 id="ch-partitioning-hostreqs" xreflabel="ホストシステム要件">
@@ -53,15 +47,20 @@
     minimum versions indicated. This should not be an issue for most
     modern Linux distributions. Also note that many distributions will
     place software headers into separate packages, often in the form of
-    <quote>&lt;package-name&gt;-devel</quote> or
-    <quote>&lt;package-name&gt;-dev</quote>. Be sure to install those if
-    your distribution provides them.</para>
+    <literal><replaceable>&lt;package-name&gt;</replaceable>-devel</literal>
+    or
+    <literal><replaceable>&lt;package-name&gt;</replaceable>-dev</literal>.
+    Be sure to install those if your distribution provides them.</para>
 @y
     <para>
     ホストシステムには以下に示すソフトウェアが必要であり、それぞれに示されているバージョン以降である必要があります。
     最近の Linux ディストリビューションを利用するなら、あまり問題にはならないはずです。
     ディストリビューションによっては、ソフトウェアのヘッダーファイル群を別パッケージとして提供しているものが多々あります。
-    例えば<quote>&lt;パッケージ名&gt;-devel</quote>であったり<quote>&lt;パッケージ名&gt;-dev</quote>といった具合です。
+    たとえば
+    <literal><replaceable>&lt;パッケージ名&gt;</replaceable>-devel</literal>
+    であったり
+    <literal><replaceable>&lt;パッケージ名&gt;</replaceable>-dev</literal>
+    といった具合です。
     お使いのディストリビューションがそのような提供の仕方をしている場合は、それらもインストールしてください。
     </para>
 @z
@@ -139,15 +138,22 @@
       <xref linkend="chapter-building-system"/>, so the workarounds for
       older kernels are not enabled and the compiled
       <application>glibc</application> is slightly faster and smaller.
-      As at June 2023, &min-kernel; is the oldest kernel release still
-      supported by the kernel developers.</para>
+      As at Dec 2024, &min-kernel; is the oldest kernel release still
+      supported by the kernel developers.  Some kernel releases older than
+      &min-kernel; may be still supported by third-party teams, but they
+      are not considered official upstream kernel releases; read
+      <ulink url='https://kernel.org/category/releases.html'/> for the
+      details.</para>
 @y
       <para>
       カーネルのバージョンを指定しているのは、<xref
       linkend="chapter-cross-tools"/> と <xref
       linkend="chapter-building-system"/> において、<application>glibc</application> をビルドする際にバージョンを指定するからです。
       こうすると古いカーネルに対する対応コードが無効となり、コンパイルした <application>glibc</application> が若干早く、また軽量になります。
-      2023 年 6 月時点、カーネル開発者によってサポートされる、もっとも古いカーネルバージョンは &min-kernel; です。
+      2024 年 2 月時点、カーネル開発者によってサポートされる、もっとも古いカーネルバージョンは &min-kernel; です。
+      &min-kernel; よりも古いカーネルリリースであっても、サードパーティチームによってサポートされているものもあります。
+      ただしそういったものは、公式のカーネルリリースとは認められません。
+      詳しくは <ulink url='https://kernel.org/category/releases.html'/> を参照してください。
       </para>
 @z
 
@@ -223,27 +229,36 @@
 @z
 
 @x ml_32,ml_x32,ml_all
-      Building multilib support requires the kernel of the host system
-      to have 32-bit emulation support included.
+      Building the m32 multilib support requires the kernel of the host
+      system to have the 32-bit emulation support included:
 @y
-      multilib のビルドサポートでは、ホストシステムのカーネルに 32 ビットエミュレーションサポートが含まれている必要があります。
+      multilib の m32 ビルドサポートでは、ホストシステムのカーネルに 32 ビットエミュレーションサポートが含まれている必要があります。
 @z
 
-@x
-    <para arch="ml_32,ml_x32,ml_all">The option 'IA32 a.out support' is
-      optional. In case your kernel does not have 'x32 ABI for 64-bit mode'
-      enabled but only 'IA32 Emulation', you can continue to build your
-      system but you have to leave out any sections showing instructions
-      for building x32 objects. If neither 'IA32 Emulation' nor 
-      'x32 ABI for 64-bit mode' is enabled, you will run in errors 
-      latest when building <application>glibc</application> in Chapter 6,
-      so an upgrade of your host system kernel is required.
-    </para>
+@x ml_x32,ml_all
+      Building the mx32 multilib support requires the kernel of the host
+      system to have the x32 ABI support included:
 @y
-    <para arch="ml_32,ml_x32,ml_all">
-      オプション 'IA32 a.out support' は任意です。
-      カーネル設定において 'x32 ABI for 64-bit mode' が無効で 'IA32 Emulation' のみ有効である場合、システムビルドは進めていくことはできますが、x32 オブジェクトをビルドする手順はスキップしなければなりません。
-      'IA32 Emulation' と 'x32 ABI for 64-bit mode' の両方が無効の場合、第 6 章の <application>glibc</application> のビルド時にエラーが発生します。
-      この場合、ホストシステムのカーネルをアップグレードする必要があります。
-    </para>
+      multilib の mx32 ビルドを行うには、ホストシステムのカーネルに x32 ABI サポートが含まれている必要があります。
+@z
+
+@x ml_all
+      In case your kernel does not have the x32 ABI support enabled but
+      only the 32-bit emulation support, you can continue to build your
+      system but you have to leave out any sections showing instructions
+      for building x32 objects, vice versa.
+@y
+      ホストシステムのカーネルにて x32 ABI サポートが無効となっていて 32 ビットエミュレーションのみがサポートされている場合、ビルド手順は進めていくことができますが、x32 オブジェクトをビルドする手順は抜かしていかなければなりません。
+      x32 ABI がサポートされ 32 ビットエミュレーションがサポートされていない場合も同様です。
+@z
+
+@x ml_32,ml_x32,ml_all
+      If the kernel feature required for a multilib architecture is not
+      enabled, building the multilib architecture for a package in
+      Chapter 8 may either fail immediately, or cause hidden breakages
+      because autoconf cannot probe the system features properly.
+@y
+      multilib アーキテクチャーに必要となるカーネル機能が有効になっていない場合、第 8 章での multilib アーキテクチャー向けビルドは、ただちに失敗する場合があります。
+      そうでなかったとしても、表立って出てこない不具合を引き起こす可能性があります。
+      これは autoconf がシステム機能を適切に判別することができないためです。
 @z

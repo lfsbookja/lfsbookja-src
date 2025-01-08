@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Systemd Usage and Configuration</title>
 @y
   <title>Systemd の利用と設定</title>
@@ -36,14 +30,16 @@
     of options to control basic systemd operations. The default file has all
     entries commented out with the default settings indicated. This file is
     where the log level may be changed as well as some basic logging settings.
-    See the <filename>systemd-system.conf(5)</filename> manual page for details
-    on each configuration option.</para>
+    See the <ulink role='man'
+    url='&man;systemd-system.conf.5'>systemd-system.conf(5)</ulink> manual
+    page for details on each configuration option.</para>
 @y
     <para>
     <filename>/etc/systemd/system.conf</filename> ファイルには、基本的な systemd 動作を制御するための設定オプション項目があります。
     デフォルトのファイルは、各項目のデフォルト値が示された上でそれがコメントアウトされています。
     このファイルでは基本的なジャーナル設定やログレベルを設定する必要があります。
-    各オプションの詳細については man ページ <filename>systemd-system.conf(5)</filename> を参照してください。
+    各オプションの詳細については man ページ <ulink role='man'
+    url='&man;systemd-system.conf.5'>systemd-system.conf(5)</ulink> を参照してください。
     </para>
 @z
 
@@ -137,15 +133,15 @@
     <filename class="directory">/etc/tmpfiles.d</filename> override
     files with the same name in
     <filename class="directory">/usr/lib/tmpfiles.d</filename>. See
-    <filename>tmpfiles.d(5)</filename> manual page for file format
-    details.</para>
+    <ulink role='man' url='&man;tmpfiles.d.5'>tmpfiles.d(5)</ulink> manual
+    page for file format details.</para>
 @y
     <para>
     システム用設定ファイルは <filename>/usr/lib/tmpfiles.d/*.conf</filename> です。
     ローカル用設定ファイルは <filename>/etc/tmpfiles.d/*.conf</filename> に置きます。
     <filename class="directory">/etc/tmpfiles.d</filename> にあるファイルは <filename
     class="directory">/usr/lib/tmpfiles.d</filename> にある同名ファイルをオーバーライドします。
-    ファイル書式の詳細については man ページ <filename>tmpfiles.d(5)</filename> を参照してください。
+    ファイル書式の詳細については man ページ <ulink role='man' url='&man;tmpfiles.d.5'>tmpfiles.d(5)</ulink> を参照してください。
     </para>
 @z
 
@@ -161,14 +157,14 @@
 @z
 
 @x
-      The type field, q, discusses creating a subvolume with quotas which
+      The type field, q, indicates the creation of a subvolume with quotas which
       is really only applicable to btrfs filesystems.  It references type v
       which in turn references type d (directory). This then creates the
       specified directory if it is not present and adjusts the permissions
       and ownership as specified. Contents of the directory will be
       subject to time based cleanup if the age argument is specified.
 @y
-      型を表わす q はクォータを用いたサブボリュームを生成するものとして説明されています。
+      型を表わす q はクォータを用いたサブボリュームを生成することを意味します。
       ただこれが適用できるのは btrfs ファイルシステムのみです。
       この型は v を参照し、次に d（ディレクトリ）を参照します。
       指定されたディレクトリが存在しない場合はそれが生成されて、パーミッションと所有者が指定されたものに設定されます。
@@ -204,13 +200,15 @@
 @z
 
 @x
-     <para>See <filename>systemd.unit(5)</filename> manual page for more
+     <para>See <ulink role='man'
+     url='&man;systemd.unit.5'>systemd.unit(5)</ulink> manual page for more
      information. After creating the configuration file, run
      <userinput>systemctl daemon-reload</userinput> and <userinput>systemctl
      restart foobar</userinput> to activate the changes to a service.</para>
 @y
      <para>
-     詳しくは man ページ <filename>systemd.unit(5)</filename> を参照してください。
+     詳しくは man ページ <ulink role='man'
+     url='&man;systemd.unit.5'>systemd.unit(5)</ulink> を参照してください。
      設定ファイルを作成したら <userinput>systemctl
      daemon-reload</userinput> と <userinput>systemctl restart
      foobar</userinput> を実行します。
@@ -419,15 +417,18 @@
 @z
 
 @x
-    <para>See the <filename>systemd-coredump(8)</filename>,
-    <filename>coredumpctl(1)</filename>, and
-    <filename>coredump.conf.d(5)</filename> manual pages for more
-    information.</para>
+    <para>See the <ulink role='man' url='&man;systemd-coredump.8'>systemd-coredump(8)</ulink>,
+    <ulink role='man' url='&man;coredumpctl.1'>coredumpctl(1)</ulink>, and
+    <ulink role='man'
+    url='&man;coredump.conf.d.5'>coredump.conf.d(5)</ulink> manual pages for
+    more information.</para>
 @y
     <para>
-    詳細は <filename>systemd-coredump(8)</filename>,
-    <filename>coredumpctl(1)</filename>,
-    <filename>coredump.conf.d(5)</filename> の各 man ページを参照してください。
+    詳細は <ulink role='man'
+    url='&man;systemd-coredump.8'>systemd-coredump(8)</ulink>, <ulink role='man'
+    url='&man;coredumpctl.1'>coredumpctl(1)</ulink>, <ulink role='man'
+    url='&man;coredump.conf.d.5'>coredump.conf.d(5)</ulink>
+    の各 man ページを参照してください。
     </para>
 @z
 
@@ -502,12 +503,12 @@
 @x
           <emphasis>Disable at build-time</emphasis>: You can disable
           lingering by default while building systemd by adding the switch
-          <parameter>-Ddefault-kill-user-processes=false</parameter> to the
+          <parameter>-D default-kill-user-processes=false</parameter> to the
           <command>meson</command> command for systemd. This completely
           disables the ability of systemd to kill user processes at session
           end.
 @y
           <emphasis>機能変更をビルド時に無効化する方法</emphasis>:
-          プロセス継続をデフォルトとするために systemd のビルド時に <command>meson</command> コマンドにおいて <parameter>-Ddefault-kill-user-processes=false</parameter> スイッチを指定する方法があります。
+          プロセス継続をデフォルトとするために systemd のビルド時に <command>meson</command> コマンドにおいて <parameter>-D default-kill-user-processes=false</parameter> スイッチを指定する方法があります。
           この方法をとれば、systemd がセッション終了時にユーザープロセスを終了させてしまう機能を完全に無効化することができます。
 @z

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Udev from Systemd-&systemd-version;</title>
 @y
   <title>Systemd-&systemd-version; から取り出した Udev</title>
@@ -57,6 +51,15 @@
 @y
     <para>
     Systemd を完全にインストールしていることを前提としている udev ルールを削除します。
+    </para>
+@z
+
+@x
+    <para>Adjust the hardcoded paths to network configuration files for the
+    standalone udev installation:</para>
+@y
+    <para>
+    ネットワーク設定ファイルへのパスがハードコーディングされているため、独立した udev インストールとして修正します。
     </para>
 @z
 
@@ -131,6 +134,18 @@
 @z
 
 @x
+    <para>Get the list of the shipped udev helpers and save it into an
+    environment variable (exporting it is not strictly necessary, but it makes
+    building as a regular user or using a package manager easier):</para>
+@y
+    <para>
+    同梱されている udev ヘルパーの一覧を取得して、それを環境変数に保存します。
+    （変数をエクスポートしておくことは、厳密に言えば不要です。
+    ただしこうすると、一般ユーザーによるビルドやパッケージマネージャーの利用がしやすくなります。）
+    </para>
+@z
+
+@x
     <para>Only build the components needed for udev:</para>
 @y
     <para>
@@ -159,6 +174,86 @@
     <para>
     man ページをインストールします。
     </para>
+@z
+
+@x
+    <para>Finally, unset the <envar>udev_helpers</envar> variable:</para>
+@y
+    <para>
+    <envar>udev_helpers</envar> 変数をクリアします。
+    </para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Udev - 32bit</title>
+@y
+    <title>Udev - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build (while still in the build directory):</para>
+@y
+    <para>
+    (ビルドディレクトリのまま) ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Udev for compilation:</para>
+@y
+    <para>&PreparePackage1;Udev&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of Udev - x32bit</title>
+@y
+    <title>Udev - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build (while still in the build directory):</para>
+@y
+    <para>
+    (ビルドディレクトリのまま) ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Prepare Udev for compilation:</para>
+@y
+    <para>&PreparePackage1;Udev&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x

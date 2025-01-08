@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>D-Bus is a message bus system, a simple way for applications to talk
     to one another. D-Bus supplies both a system daemon (for events such as
     "new hardware device added" or "printer queue changed") and a
@@ -40,40 +34,17 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+      <title>The meaning of the meson options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+      <title>&MeaningOfOption1;meson&MeaningOfOption2;</title>
 @z
 
-@x
-          <parameter>--runstatedir=/run</parameter> and
-          <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>
-@y
-          <parameter>--runstatedir=/run</parameter> と
-          <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>
-@z
-@x
-          <para>These cause the PID file and the system bus socket
-          to be in <filename class="directory">/run</filename>, instead of
-          the deprecated <filename class="directory">/var/run</filename>.</para>
+@x --wrap-mode=nofallback
+          <para>This switch prevents meson from attempting to download a copy
+          of the Glib package for the tests.</para>
 @y
           <para>
-          これは PID ファイルとシステムバスソケットの場所を設定するものであり、かつての <filename
-          class="directory">/var/run</filename> ではなく <filename
-          class="directory">/run</filename> とします。
-          </para>
-@z
-
-@x --enable-user-session
-          <para>This ensures the D-Bus per-user service and socket unit
-          files are installed for Systemd.  They are not useful (but
-          harmless) in a base LFS installation, however they can be used
-          once systemd is rebuilt with PAM support in BLFS.</para>
-@y
-          <para>
-          これは D-Bus の各ユーザー向けサービスやソケットユニットファイルを Systemd 用にインストールするようにします。
-          これは LFS の基本インストールにとっては必要のない（ただし害もない）ものです。
-          ただし BLFS において systemd に PAM サポートを含めて再ビルドする際には有用となります。
+          このスイッチを指定することで、テスト実施時において meson が Glib パッケージのコピーをダウンロードしないようにします。
           </para>
 @z
 
@@ -170,7 +141,7 @@
 @z
 
 @x dbus-daemon
-          <para>Is the D-Bus message bus daemon</para>
+          <para>is the D-Bus message bus daemon</para>
 @y
           <para>
           D-Bus メッセージバスデーモン。
@@ -178,7 +149,7 @@
 @z
 
 @x dbus-launch
-          <para>Starts <command>dbus-daemon</command> from a shell
+          <para>starts <command>dbus-daemon</command> from a shell
           script</para>
 @y
           <para>
@@ -187,7 +158,7 @@
 @z
 
 @x dbus-monitor
-          <para>Monitors messages passing through a D-Bus message bus</para>
+          <para>monitors messages passing through a D-Bus message bus</para>
 @y
           <para>
           D-Bus メッセージバスを通じたメッセージ送信を監視します。
@@ -195,7 +166,7 @@
 @z
 
 @x dbus-run-session
-          <para>Starts a session bus instance of <command>dbus-daemon</command>
+          <para>starts a session bus instance of <command>dbus-daemon</command>
           from a shell script and starts a specified program in that
           session</para>
 @y
@@ -206,7 +177,7 @@
 @z
 
 @x dbus-send
-          <para>Sends a message to a D-Bus message bus</para>
+          <para>sends a message to a D-Bus message bus</para>
 @y
           <para>
           D-Bus メッセージバスにメッセージを送ります。
@@ -214,7 +185,7 @@
 @z
 
 @x dbus-test-tool
-          <para>Is a tool to help packages test
+          <para>is a tool to help packages test
           <application>D-Bus</application></para>
 @y
           <para>
@@ -223,7 +194,7 @@
 @z
 
 @x dbus-update-activation-environment
-          <para>Updates environment variables that will be set for
+          <para>updates environment variables that will be set for
           <application>D-Bus</application> session services</para>
 @y
           <para>

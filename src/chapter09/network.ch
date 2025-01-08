@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>General Network Configuration</title>
 @y
   <title>全般的なネットワークの設定</title>
@@ -108,17 +102,17 @@
 @z
 
 @x
-    <para>If the <envar>ONBOOT</envar> variable is set to <quote>yes</quote> the
+    <para>If the <envar>ONBOOT</envar> variable is set to <literal>yes</literal> the
     System V network script will bring up the Network Interface Card (NIC) during
-    the system boot process. If set to anything besides <quote>yes</quote>, the NIC
+    the system boot process. If set to anything besides <literal>yes</literal>, the NIC
     will be ignored by the network script and will not be started automatically.
     Interfaces can be manually started or stopped with the
     <command>ifup</command> and <command>ifdown</command> commands.</para>
 @y
     <para>
-    <envar>ONBOOT</envar> 変数を<quote>yes</quote>に設定した場合、システム起動時に System V ネットワークスクリプトがネットワークインターフェースカード (network
+    <envar>ONBOOT</envar> 変数を <literal>yes</literal> に設定した場合、システム起動時に System V ネットワークスクリプトがネットワークインターフェースカード (network
     interface card; NIC) を起動します。
-    <quote>yes</quote>以外に設定すると、ネットワークスクリプトから NIC は無視され、NIC が自動的に起動することはなくなります。
+    <literal>yes</literal> 以外に設定すると、ネットワークスクリプトから NIC は無視され、NIC が自動的に起動することはなくなります。
     ネットワークインターフェースは <command>ifup</command> や <command>ifdown</command> といったコマンドを使って、起動や停止を行うことができます。
     </para>
 @z
@@ -339,10 +333,10 @@
 @z
 
 @x
-     <para>A valid private IP address could be 192.168.1.1.</para>
+     <para>A valid private IP address could be 192.168.1.2.</para>
 @y
      <para>
-     IP アドレスの例は 192.168.1.1 となります。
+     IP アドレスの例は 192.168.1.2 となります。
      </para>
 @z
 
@@ -380,7 +374,7 @@
 @z
 
 @x
-     <para>The <replaceable>&lt;192.168.1.1&gt;</replaceable>,
+     <para>The <replaceable>&lt;192.168.1.2&gt;</replaceable>,
      <replaceable>&lt;FQDN&gt;</replaceable>, and
      <replaceable>&lt;HOSTNAME&gt;</replaceable> values need to be
      changed for specific uses or requirements (if assigned an IP address by a
@@ -388,7 +382,7 @@
      existing network). The optional alias name(s) can be omitted.</para>
 @y
      <para>
-     <replaceable>&lt;192.168.1.1&gt;</replaceable>,
+     <replaceable>&lt;192.168.1.2&gt;</replaceable>,
      <replaceable>&lt;FQDN&gt;</replaceable>,
      <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable> の部分は利用状況に応じて書き換えてください。
      (ネットワーク管理者から IP アドレスを指定されている場合や、既存のネットワーク環境に接続する場合など。). 

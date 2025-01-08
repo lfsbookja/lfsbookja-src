@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Shadow package contains programs for handling passwords in a secure
     way.</para>
 @y
@@ -25,17 +19,29 @@
 @z
 
 @x
-      <para>If you would like to enforce the use of strong passwords, refer to
-      <ulink url="&blfs-book;postlfs/cracklib.html"/> for installing
-      CrackLib prior to building Shadow. Then add
-      <parameter>--with-libcrack</parameter> to the <command>configure</command>
-      command below.</para>
+        If you've installed Linux-PAM, you should follow
+        <ulink url='&blfs-book;postlfs/shadow.html'>the BLFS
+        instruction</ulink> instead of this page to build (or, rebuild or
+        upgrade) shadow.
+@y
+        Linux-PAM をすでにインストールしている場合は、本ページではなく <ulink
+        url='&blfs-book;postlfs/shadow.xml'>BLFS の 手順</ulink> に従って shadow のビルド（または再ビルドやアップグレード）を行う必要があります。
+@z
+
+@x
+      <para>If you would like to enforce the use of strong passwords,
+      <ulink url='&blfs-book;postlfs/linux-pam.html'>install and configure
+      Linux-PAM</ulink> first.  Then
+      <ulink url='&blfs-book;postlfs/shadow.html'>install and configure
+      shadow with the PAM support</ulink>.  Finally
+      <ulink url='&blfs-book;postlfs/libpwquality.html'>install
+      libpwquality and configure PAM to use it</ulink>.</para>
 @y
       <para>
-      もっと強力なパスワードを利用したい場合は <ulink
-      url="&blfs-book;postlfs/cracklib.html"/> にて示している Cracklib パッケージを参照してください。
-      Cracklib パッケージは Shadow パッケージよりも前にインストールします。
-      その場合 Shadow パッケージの <command>configure</command> スクリプトでは <parameter>--with-libcrack</parameter> パラメーターをつけて実行する必要があります。
+      もっと強力なパスワードを利用したい場合は、まずは <ulink
+      url='&blfs-book;postlfs/linux-pam.html'>Linux-PAM のインストールと設定</ulink> を行ってください。
+      そして <ulink url='&blfs-book;postlfs/shadow.html'>PAM サポートつきの shadow のインストールと設定</ulink> を行ってください。
+      最後に <ulink url='&blfs-book;postlfs/libpwquality.html'>libpwquality のインストールと、これを利用する PAM の設定</ulink> を行います。
       </para>
 @z
 
@@ -80,24 +86,17 @@
 @z
 
 @x
-      <para>If you wish to include <filename class="directory">/bin</filename>
-      and/or <filename class="directory">/sbin</filename> in the <envar>PATH</envar>
-      for some reason, modify the
-      <envar>PATH</envar> in <filename>.bashrc</filename> after LFS has been
-      built.</para>
+      <para>Including <filename class="directory">/bin</filename>
+      and/or <filename class="directory">/sbin</filename> in
+      the <envar>PATH</envar> variable may cause some BLFS packages fail to
+      build,<!-- known example: SPIRV-LLVM-Translator --> so don't do that
+      in the <filename>.bashrc</filename> file or anywhere else.</para>
 @y
       <para>
-      何らかの理由により <envar>PATH</envar> に対して <filename
+      <envar>PATH</envar> 変数に <filename
       class="directory">/bin</filename> や <filename
-      class="directory">/sbin</filename> を含めたい場合は、LFS ビルドが完成した後に <filename>.bashrc</filename> において <envar>PATH</envar> を設定してください。
-      </para>
-@z
-
-@x
-      <para>If you chose to build Shadow with Cracklib support, issue this command:</para>
-@y
-      <para>
-      Cracklib のサポートを含めて Shadow をビルドする場合は以下を実行します。
+      class="directory">/sbin</filename> を含めると、BLFS パッケージのビルドに失敗することがあります。
+      したがって <filename>.bashrc</filename> ファイルをはじめ、どの設定ファイルでもその設定は行わないでください。
       </para>
 @z
 
@@ -260,8 +259,8 @@
     to pass either the <parameter>-g</parameter> or <parameter>-N</parameter>
     parameter to <command>useradd</command>, or else change the setting of
     <parameter>USERGROUPS_ENAB</parameter> in
-    <filename>/etc/login.defs</filename>. See <filename>useradd(8)</filename>
-    for more information.</para>
+    <filename>/etc/login.defs</filename>. See <ulink role='man'
+    url='&man;useradd.8'>useradd(8)</ulink> for more information.</para>
 @y
     <para>
     Shadow の <command>useradd</command> コマンドに対するデフォルトの設定には、説明が必要です。
@@ -270,7 +269,8 @@
     <command>useradd</command> コマンドの利用時に特に追加でパラメーターを与えなければ、追加するユーザーのグループは新たな固有グループが生成されることになります。
     この動作が不適当であれば <command>useradd</command> コマンドの実行時に <parameter>-g</parameter> パラメーターか <parameter>-N</parameter> のいずれかを利用することが必要です。
     あるいは <filename>/etc/login.defs</filename> 内にある <parameter>USERGROUPS_ENAB</parameter> の設定を書き換えてください。
-    詳しくは <filename>useradd(8)</filename> を参照してください。
+    詳しくは <ulink role='man'
+    url='&man;useradd.8'>useradd(8)</ulink> を参照してください。
     </para>
 @z
 
@@ -315,7 +315,8 @@
           unknown GID 999</computeroutput>,
           even though the account has been created correctly. That is why we
           created the group <systemitem class="groupname">users</systemitem>
-          with this group ID in <xref linkend='ch-tools-createfiles'/>.</para>
+          with this group ID in
+          <xref linkend='ch-tools-createfiles' role='.'/></para>
 @y
           <command>useradd</command> コマンドは既存の UID 値、GID 値を再利用することはありません。
           このパラメーターによって指定された数値が実際に利用されていた場合、その値以降で利用可能な値が採用されます。

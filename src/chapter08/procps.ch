@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Procps-ng package contains programs for monitoring processes.</para>
 @y
     <para>
@@ -52,10 +46,21 @@
 @z
 
 @x
-    <para> To run the test suite, run:</para>
+    <para>To run the test suite, run:</para>
 @y
     <para>
     テストスイートを実行する場合は、以下を実行します。
+    </para>
+@z
+
+@x
+    <para>One test named
+    <literal>ps with output flag bsdtime,cputime,etime,etimes</literal>
+    is known to fail if the host kernel is not built with
+    <literal>CONFIG_BSD_PROCESS_ACCT</literal> enabled.</para>
+@y
+    <para>
+    ホストカーネルが <literal>CONFIG_BSD_PROCESS_ACCT</literal> を有効にしてビルドされていない場合に、<literal>ps with output flag bsdtime,cputime,etime,etimes</literal> という名前のテスト 1 つが失敗します。
     </para>
 @z
 

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>System V Bootscript Usage and Configuration</title>
 @y
   <title>System V ブートスクリプトの利用と設定</title>
@@ -66,7 +60,8 @@
     <para>SysVinit (which will be referred to as <quote>init</quote> from now on)
     uses a run levels scheme. There are seven run levels, numbered 0 to 6.
     (Actually, there are more run levels, but the others are for special cases and are
-    generally not used. See <filename>init(8)</filename> for more details.)
+    generally not used. See <ulink role='man'
+    url='&man;init.8'>init(8)</ulink> for more details.)
     Each one of the seven corresponds to actions the computer is supposed to
     perform when it starts up or shuts down. The default run level is 3. Here are the
     descriptions of the different run levels as they are implemented in LFS:</para>
@@ -75,7 +70,8 @@
     SysVinit (これ以降は<quote>init</quote>と表現します) はランレベルという仕組みを利用しています。
     ランレベルには 7 つのレベル、0 から 6 があります。
     (実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
-    詳しくは <filename>init(8)</filename> を参照してください。)
+    詳しくは <ulink role='man'
+    url='&man;init.8'>init(8)</ulink> を参照してください。)
     各レベルは、コンピューターの起動時や終了時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
     LFS において実装されるランレベルの詳細を以下に説明します。
     </para>
@@ -100,32 +96,32 @@
 @z
 
 @x
-          Classically, run level 2 above was defined as
-          "multi-user mode without networking", but this was only the case
-          many years ago when multiple users could connect to a system via
-          serial ports.  In today's environment it makes no sense, and
-          we now say it is "reserved".
+         Classically, run level 2 above was defined as <quote>multi-user
+         mode without networking,</quote> but this was only the case
+         many years ago when multiple users could connect to a system via
+         serial ports.  In today's environment it makes no sense, and
+         we now say it is <quote>reserved.</quote>
 @y
-          従来より、上のランレベル 2 は「ネットワークなしにおけるマルチユーザーモード」として定義されていました。
-          ただしこれは相当以前の話として、シリアルポートを介して複数ユーザーがシステムにログインするケースだけを表しています。
-          今日のコンピューター環境においてこれは意味をなしません。
-          そこでここでは「拡張用の予約」としています。
+         従来より、上のランレベル 2 は<quote>ネットワークなしにおけるマルチユーザーモード</quote>として定義されていました。
+         ただしこれは相当以前の話として、シリアルポートを介して複数ユーザーがシステムにログインするケースだけを表しています。
+         今日のコンピューター環境においてこれは意味をなしません。
+         そこでここでは<quote>拡張用の予約</quote>としています。
 @z
 
 @x
-  <title>Configuring Sysvinit</title>
+  <title>Configuring SysVinit</title>
 @y
-  <title>Sysvinit の設定</title>
+  <title>SysVinit の設定</title>
 @z
 
 @x
   <indexterm zone="conf-sysvinit">
-    <primary sortas="a-Sysvinit">Sysvinit</primary>
+    <primary sortas="a-SysVinit">SysVinit</primary>
     <secondary>configuring</secondary>
   </indexterm>
 @y
   <indexterm zone="conf-sysvinit">
-    <primary sortas="a-Sysvinit">Sysvinit</primary>
+    <primary sortas="a-SysVinit">SysVinit</primary>
     <secondary>設定</secondary>
   </indexterm>
 @z
@@ -412,7 +408,7 @@
 
 @x
       <para>For information on kernel module loading and udev, see
-      <xref linkend="module-loading"/>.</para>
+      <xref linkend="module-loading" role='.'/></para>
 @y
       <para>
       カーネルモジュールのロードや udev に関しては <xref linkend="module-loading"/> を参照してください。
@@ -648,9 +644,10 @@
   url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/>. If still in
   doubt, look in the <filename class="directory">/usr/share/keymaps</filename>
   and <filename class="directory">/usr/share/consolefonts</filename> directories
-  for valid keymaps and screen fonts. Read the <filename>loadkeys(1)</filename> and
-  <filename>setfont(8)</filename> manual pages to determine the correct
-  arguments for these programs.</para>
+  for valid keymaps and screen fonts. Read the <ulink role='man'
+  url='&man;loadkeys.1'>loadkeys(1)</ulink> and <ulink role='man'
+  url='&man;setfont.8'>setfont(8)</ulink> manual pages to determine the
+  correct arguments for these programs.</para>
 @y
   <para>
   <command>console</command> スクリプトは、設定情報を <filename>/etc/sysconfig/console</filename> ファイルから読み込みます。
@@ -658,16 +655,18 @@
   さまざまな言語に応じた設定方法については <ulink url="https://tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/> を参照してください。
   よく分からない場合は <filename class="directory">/usr/share/keymaps</filename> ディレクトリや <filename
   class="directory">/usr/share/consolefonts</filename> ディレクトリを見て、正しいキーマップとスクリーンフォントを探してください。
-  マニュアルページ <filename>loadkeys(1)</filename> と <filename>setfont(8)</filename> を見て、これらのプログラムに対する適切な引数を決定してください。
+  マニュアルページ <ulink role='man'
+  url='&man;loadkeys.1'>loadkeys(1)</ulink> と <ulink role='man'
+  url='&man;setfont.8'>setfont(8)</ulink> を見て、これらのプログラムに対する適切な引数を決定してください。
   </para>
 @z
 
 @x
   <para>The <filename>/etc/sysconfig/console</filename> file should contain lines
-  of the form: VARIABLE="value". The following variables are recognized:</para>
+  of the form: <envar>VARIABLE=value</envar>. The following variables are recognized:</para>
 @y
   <para>
-  <filename>/etc/sysconfig/console</filename> ファイルの各行には、変数 = "値" という記述を行います。
+  <filename>/etc/sysconfig/console</filename> ファイルの各行には <envar>VARIABLE=value</envar> という記述を行います。
   そして変数には以下に示すものが利用可能です。
   </para>
 @z
@@ -675,18 +674,20 @@
 @x LOGLEVEL
         <para>This variable specifies the log level for kernel messages sent
         to the console as set by <command>dmesg -n</command>. Valid levels are
-        from "1" (no messages) to "8". The default level is "7".</para>
+        from <literal>1</literal> (no messages) to <literal>8</literal>. The default level is <literal>7</literal>, which is quite verbose.</para>
 @y
         <para>
         この変数は、コンソールに出力されるカーネルメッセージのログレベルを指定するもので <command>dmesg -n</command> コマンドにより設定されます。
-        有効な設定値は "1" (メッセージ出力なし) から "8" まであり、デフォルトは "7" です。
+        有効な設定値は<literal>1</literal>(メッセージ出力なし) から<literal>8</literal>まであります。
+        デフォルトは "7" です。
+        かなり詳細な出力となっています。
         </para>
 @z
 
 @x KEYMAP
         <para>This variable specifies the arguments for the
         <command>loadkeys</command> program, typically, the name of the keymap
-        to load, e.g., <quote>it</quote>. If this variable is not set, the
+        to load, e.g., <literal>it</literal>. If this variable is not set, the
         bootscript will not run the <command>loadkeys</command> program,
         and the default kernel keymap will be used.  Note that a few keymaps
         have multiple versions with the same name (cz and its variants in
@@ -697,7 +698,7 @@
 @y
         <para>
         この変数は <command>loadkeys</command> プログラムに対する引数を指定します。
-        このプログラムは<quote>it</quote>などのキーマップをロードします。
+        このプログラムは <literal>it</literal> などのキーマップをロードします。
         この変数がセットされていない場合、ブートスクリプトは <command>loadkeys</command> プログラムを実行せず、デフォルトのカーネルキーマップが用いられます。
         キーマップによっては同一名に対して重複した定義を持つものもあります。
         (cz とその変形が qwerty/ と qwertz/ にあり、es は olpc/ と qwerty/ に、trf は fgGIod/ と qwerty/ にあります)
@@ -711,24 +712,24 @@
         <command>loadkeys</command> program. This is useful if the stock keymap
         is not completely satisfactory and a small adjustment has to be made. E.g.,
         to include the Euro sign into a keymap that normally doesn't have it,
-        set this variable to <quote>euro2</quote>.</para>
+        set this variable to <literal>euro2</literal>.</para>
 @y
         <para>
         この変数は (あまり利用されませんが) <command>loadkeys</command> プログラムを二度目に呼び出す際の引数を指定します。
         普通のキーマップでは十分な設定にならない時の微調整を行うために利用します。
-        例えばユーロ記号がキーマップの中に含まれておらずこれを付け加える場合には、この変数に対して<quote>euro2</quote>を設定します。
+        例えばユーロ記号がキーマップの中に含まれておらずこれを付け加える場合には、この変数に対して <literal>euro2</literal> を設定します。
         </para>
 @z
 
 @x FONT
         <para>This variable specifies the arguments for the
         <command>setfont</command> program. Typically, this includes the font
-        name, <quote>-m</quote>, and the name of the application character
+        name, <literal>-m</literal>, and the name of the application character
         map to load. E.g., in order to load the <quote>lat1-16</quote> font
         together with the <quote>8859-1</quote> application character map
         (appropriate in the USA),
         <!-- because of the copyright sign -->
-        set this variable to <quote>lat1-16 -m 8859-1</quote>.
+        set this variable to <literal>lat1-16 -m 8859-1</literal>.
         In UTF-8 mode, the kernel uses the application character map to
         convert 8-bit key codes to UTF-8. Therefore
         the argument of the "-m" parameter should be set to the encoding of the
@@ -736,8 +737,8 @@
 @y
         <para>
         この変数は <command>setfont</command> プログラムへの引数を指定します。
-        一般にこの変数にはフォント名、<quote>-m</quote>、アプリケーションキャラクターマップ (application character map) を順に指定します。
-        例えばフォントとして <quote>lat1-16</quote>、アプリケーションキャラクターマップとして<quote>8859-1</quote>を指定する場合、この変数には<quote>lat1-16 -m 8859-1</quote>を設定します。
+        一般にこの変数にはフォント名、<literal>-m</literal>、アプリケーションキャラクターマップ (application character map) を順に指定します。
+        例えばフォントとして <quote>lat1-16</quote>、アプリケーションキャラクターマップとして<quote>8859-1</quote>を指定する場合、この変数には <literal>lat1-16 -m 8859-1</literal> を設定します。
         (これは米国にて適当な設定となります。)
         UTF-8 モードの場合、カーネルは UTF-8 キーマップ内の 8 ビットキーコードを変換するためにアプリケーションキャラクターマップを利用します。
         したがって "-m" パラメーターには、キーマップ内キーコードのエンコーディングを指定する必要があります。
@@ -745,13 +746,13 @@
 @z
 
 @x UNICODE
-        <para>Set this variable to <quote>1</quote>, <quote>yes</quote>, or
-        <quote>true</quote> in order to put the
+        <para>Set this variable to <literal>1</literal>, <literal>yes</literal>, or
+        <literal>true</literal> in order to put the
         console into UTF-8 mode. This is useful in UTF-8 based locales and
         harmful otherwise.</para>
 @y
         <para>
-        コンソールを UTF-8 モードにするには、この変数を<quote>1</quote>、<quote>yes</quote>、<quote>true</quote>のいずれかに指定します。
+        コンソールを UTF-8 モードにするには、この変数を <literal>1</literal>, <literal>yes</literal>, <literal>true</literal> のいずれかに指定します。
         UTF-8 ベースのロケールであればこの設定を行います。
         そうでないロケールにおいて設定するのは不適切です。
         </para>
@@ -773,6 +774,36 @@
   <para>Some examples:</para>
 @y
   <para>以下はいくつかの設定例です。</para>
+@z
+
+@x
+        We'll use <literal>C.UTF-8</literal> as the locale for interactive
+        sessions in the Linux console in <xref role=','
+        linkend='ch-config-locale'/> so we should set
+        <literal>UNICODE</literal> to <literal>1</literal>.  And the console
+        fonts shipped by the <application>Kbd</application> package
+        containing the glyphs for all characters from the program messages
+        in the <literal>C.UTF-8</literal> locale are
+        <filename>LatArCyrHeb*.psfu.gz</filename>,
+        <filename>LatGrkCyr*.psfu.gz</filename>,
+        <filename>Lat2-Terminus16.psfu.gz</filename>, and
+        <filename>pancyrillic.f16.psfu.gz</filename> in
+        <filename class='directory'>/usr/share/consolefonts</filename> (the
+        other shipped console fonts lack glyphs of some characters like the
+        Unicode left/right quotation marks and the Unicode English dash).
+        So set one of them, for example
+        <filename>Lat2-Terminus16.psfu.gz</filename> as the default console
+        font:
+@y
+        <xref role='' linkend='ch-config-locale'/> においては、Linux コンソールでの対話セッションのロケールは <literal>C.UTF-8</literal> を用いることにしていました。
+        そこで <literal>UNICODE</literal> は <literal>1</literal> にする必要があります。
+        <literal>C.UTF-8</literal> のもとでプログラムメッセージの全文字に対するグリフを持っているコンソールフォントと言えば、<application>Kbd</application> の中では <filename>LatArCyrHeb*.psfu.gz</filename>,
+        <filename>LatGrkCyr*.psfu.gz</filename>,
+        <filename>Lat2-Terminus16.psfu.gz</filename>,
+        <filename>pancyrillic.f16.psfu.gz</filename> です。
+        これらは <filename class='directory'>/usr/share/consolefonts</filename> にあります。
+        (その他のコンソールフォントは、ユニコードの左右のクォーテーションマークや英語ダッシュなどのグリフが欠落しています。)
+        したがってデフォルトのコンソールフォントとして、たとえば <filename>Lat2-Terminus16</filename> を設定します。
 @z
 
 @x
@@ -841,7 +872,7 @@
       languages, because there accents are added to unaccented ASCII
       characters, or two ASCII characters are composed together. However, in
       UTF-8 mode it is a problem; e.g., for the Greek language, where one
-      sometimes needs to put an accent on the letter <quote>alpha</quote>.
+      sometimes needs to put an accent on the letter α.
       The solution is either to avoid the use of UTF-8, or to install the
       X window system, which doesn't have this limitation, in its input
       handling.</para>
@@ -855,7 +886,7 @@
       このような欠点は西欧のキーマップでは問題にはなりません。
       アクセント記号なら、アクセント記号がついていない ASCII 文字を使ったり、ASCII 文字を二つ使って工夫したりするからです。
       しかし UTF-8 モードでは問題になります。
-      例えばギリシャ語にて<quote>alpha</quote>の文字の上にアクセント記号を付けたい場合が問題です。
+      例えばギリシャ語にて α の文字の上にアクセント記号を付けたい場合が問題です。
       これを解決するには、一つには UTF-8 の利用を諦めることであり、もう一つは X ウィンドウシステムを使うことで、そのような入力処理の制約を解消することです。
       </para>
 @z

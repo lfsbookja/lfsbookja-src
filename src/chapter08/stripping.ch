@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <title>Stripping</title>
 @y
   <title>ストリップ</title>
@@ -101,13 +95,13 @@
   <note><para>The ELF loader's name is ld-linux-x86-64.so.2 on 64-bit systems
   and ld-linux.so.2 on 32-bit systems.  The construct below selects the
   correct name for the current architecture, excluding anything ending
-  with <quote>g</quote>, in case the commands below have already been
+  with <literal>g</literal>, in case the commands below have already been
   run.</para></note>
 @y
   <note><para>
   ELF ローダーの名前は、64 ビットシステムでは ld-linux-x86-64.so.2、32 ビットシステムでは ld-linux.so.2 です。
   後述の手順では、現行のアーキテクチャーに合わせて適切な名前を選ぶようにしています。
-  ただし<quote>g</quote>で終わるものは除いています。
+  ただし <literal>g</literal> で終わるものは除いています。
   そのようなものはすでにコマンド実行されているからです。
   </para></note>
 @z

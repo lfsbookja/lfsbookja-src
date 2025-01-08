@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Inetutils package contains programs for basic networking.</para>
 @y
     <para>
@@ -21,6 +15,14 @@
     <title>Installation of Inetutils</title>
 @y
     <title>&InstallationOf1;Inetutils&InstallationOf2;</title>
+@z
+
+@x
+    <para>First, make the package build with gcc-14.1 or later::</para>
+@y
+    <para>
+    gcc-14.1 以降を用いて本パッケージがビルドできるようにします。
+    </para>
 @z
 
 @x

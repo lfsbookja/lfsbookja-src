@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The Binutils package contains a linker, an assembler, and other
     tools for handling object files.</para>
 @y
@@ -22,6 +16,16 @@
     <title>Installation of Binutils</title>
 @y
     <title>&InstallationOf1;Binutils&InstallationOf2;</title>
+@z
+
+@x
+    <para>First, apply a patch to prevent a bug that causing
+    unnecessary relinking with packages that depend on cmake-3.31.0
+    or newer:</para>
+@y
+    <para>
+    まずはパッチを適用して、cmake-3.31.0 またはそれ以降に依存しているパッケージを不必要にリンクしてしまうバグを解消します。
+    </para>
 @z
 
 @x
@@ -156,14 +160,6 @@
 @y
     <para>
     GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、gold テストスイートにおいて 12 個のテストが失敗します。
-    </para>
-@z
-
-@x
-    <para>Three tests in the gprofng suite are also known to fail.</para>
-@y
-    <para>
-    grpofng スイートの中にある 3 つのテストが失敗します。
     </para>
 @z
 
@@ -418,6 +414,15 @@
 @y
           <para>
           libbfd の機能を利用しない libctf の互換ライブラリ。
+          </para>
+@z
+
+@x libgprofng
+          <para>A library containing most routines used by
+          <command>gprofng</command></para>
+@y
+          <para>
+          <command>gprofng</command> によって利用される処理ルーチンをほぼ含むライブラリ。
           </para>
 @z
 

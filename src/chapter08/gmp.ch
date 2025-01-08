@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <para>The GMP package contains math libraries. These have useful functions
     for arbitrary precision arithmetic.</para>
 @y
@@ -103,16 +97,16 @@
     <caution><para>The code in gmp is highly optimized for the processor where
     it is built. Occasionally, the code that detects the processor misidentifies
     the system capabilities and there will be errors in the tests or other
-    applications using the gmp libraries with the message "Illegal
-    instruction".  In this case, gmp should be reconfigured with the option
+    applications using the gmp libraries with the message
+    <computeroutput>Illegal instruction</computeroutput>.
+    In this case, gmp should be reconfigured with the option
     <option>--host=none-linux-gnu</option> and rebuilt.</para></caution>
 @y
     <caution><para>
     gmp のコードはビルドするプロセッサー向けに高度に最適化されます。
     このためプロセッサーを特定したコードが実はシステム性能を的確に制御できないことも起こりえます。
-    それはテストにおいてエラーを引き起こしたり、gmp を利用する他のアプリケーションにおいて "Illegal
-    instruction" というエラーとして発生したりすることがあります。
-    そういった場合は gmp の再ビルドが必要であり、その際にはオプション <option>--build=x86_64-pc-linux-gnu</option> をつける必要があります。
+    それはテストにおいてエラーを引き起こしたり、gmp を利用する他のアプリケーションにおいて <computeroutput>Illegal instruction</computeroutput> というエラーとして発生したりすることがあります。
+    そういった場合は gmp の再ビルドが必要であり、その際にはオプション <option>--host=none-linux-gnu</option> をつける必要があります。
     </para></caution>
 @z
 
@@ -130,6 +124,165 @@
     <para>Install the package and its documentation:</para>
 @y
     <para>パッケージと HTML ドキュメントをインストールします。</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - 32bit  -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of GMP - 32bit</title>
+@y
+    <title>GMP - 32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Generic libraries can be created by running
+    the following:</para>
+@y
+    <para>
+    汎用ライブラリは以下を実行することで生成されます。
+    </para>
+@z
+
+@x
+    <para>Prepare GMP for compilation:</para>
+@y
+    <para>&PreparePackage1;GMP&PreparePackage2;</para>
+@z
+
+@x
+      <title>The meaning of the new configure options:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x --includedir=/usr/include/m32/gmp
+          <para>Some definitions in gmp.h differs for each arch but
+          has same name. Therefore, the headers must be separated from
+          each other.</para>
+@y
+          <para>
+          gmp.h の中の定義においては各アーキテクチャー向けに異なるものがありますが、ファイル名は同一のものとなっています。
+          したがってヘッダーファイルは区別して配置しなければなりません。
+          </para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+      <para>The test suite for GMP in this section is considered critical.
+      Do not skip it under any circumstances.</para>
+@y
+      <para>
+      本節における GMP のテストスイートは極めて重要なものです。
+      したがってどのような場合であっても必ず実行してください。
+      </para>
+@z
+
+@x
+    <para>Test the results:</para>
+@y
+    <para>テストを実行します。</para>
+@z
+
+@x
+    <para>Ensure that all 197 tests in the test suite passed.
+    Check the results by issuing the following command:</para>
+@y
+    <para>
+    197 個のテストすべてが完了することを確認してください。
+    テスト結果は以下のコマンドにより確認することができます。
+    </para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
+@z
+
+% <!-- - - - - - - - - - -->
+% <!-- Multilib - x32bit -->
+% <!-- - - - - - - - - - -->
+
+@x
+    <title>Installation of GMP - x32-bit</title>
+@y
+    <title>GMP - x32 ビットのインストール</title>
+@z
+
+@x
+    <para>Clean previous build:</para>
+@y
+    <para>
+    ここまでのビルドをクリアします。
+    </para>
+@z
+
+@x
+    <para>Generic libraries can be created by running
+    the following:</para>
+@y
+    <para>
+    汎用ライブラリは以下を実行することで生成されます。
+    </para>
+@z
+
+@x
+    <para>Prepare GMP for compilation:</para>
+@y
+    <para>&PreparePackage1;GMP&PreparePackage2;</para>
+@z
+
+@x
+    <para>Compile the package:</para>
+@y
+    <para>&CompileThePackage;</para>
+@z
+
+@x
+      <para>The test suite for GMP in this section is considered critical.
+      Do not skip it under any circumstances.</para>
+@y
+      <para>
+      本節における GMP のテストスイートは極めて重要なものです。
+      したがってどのような場合であっても必ず実行してください。
+      </para>
+@z
+
+@x
+    <para>Test the results:</para>
+@y
+    <para>テストを実行します。</para>
+@z
+
+@x
+    <para>Ensure that all 197 tests in the test suite passed.
+    Check the results by issuing the following command:</para>
+@y
+    <para>
+    197 個のテストすべてが完了することを確認してください。
+    テスト結果は以下のコマンドにより確認することができます。
+    </para>
+@z
+
+@x
+    <para>Install the package:</para>
+@y
+    <para>&InstallThePackage;</para>
 @z
 
 @x

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <indexterm zone="ch-tools-ncurses">
     <primary sortas="a-Ncurses">Ncurses</primary>
     <secondary>tools</secondary>
@@ -28,19 +22,11 @@
 @z
 
 @x
-    <para>First, ensure that <command>gawk</command> is found first during configuration:</para>
-@y
-    <para>
-    ビルドにあたって <command>gawk</command> が必ず最初に見つかるようにします。
-    </para>
-@z
-
-@x
-    <para>Then, run the following commands to build the <quote>tic</quote>
+    <para>First, run the following commands to build the <quote>tic</quote>
     program on the build host:</para>
 @y
     <para>
-    そして以下のコマンドを実行して、ビルドホスト上に<quote>tic</quote>プログラムをビルドします。
+    以下のコマンドを実行して、ビルドホスト上に<quote>tic</quote>プログラムをビルドします。
     </para>
 @z
 
@@ -125,23 +111,16 @@
           </para>
 @z
 
-@x --enable-widec
-          <para>This switch causes wide-character libraries (e.g., <filename
-          class="libraryfile">libncursesw.so.&ncurses-version;</filename>)
-          to be built instead of normal ones (e.g., <filename
-          class="libraryfile">libncurses.so.&ncurses-version;</filename>).
-          These wide-character libraries are usable in both multibyte and
-          traditional 8-bit locales, while normal libraries work properly
-          only in 8-bit locales. Wide-character and normal libraries are
-          source-compatible, but not binary-compatible.</para>
+@x AWK=gawk
+          <para>This switch prevents the building system from using the
+          <command>mawk</command> program from the host.
+          Some<!-- FIXME vauge --> versions of <command>mawk</command> can
+          cause this package to fail to build.  <!-- It seems happened in 2015,
+          is there any updated into? --></para>
 @y
           <para>
-          本スイッチは通常のライブラリ (<filename
-          class="libraryfile">libncurses.so.&ncurses-version;</filename>) ではなくワイド文字対応のライブラリ (<filename
-          class="libraryfile">libncursesw.so.&ncurses-version;</filename>) をビルドすることを指示します。
-          ワイド文字対応のライブラリは、マルチバイトロケールと従来の 8ビットロケールの双方に対して利用可能です。
-          通常のライブラリでは 8ビットロケールに対してしか動作しません。
-          ワイド文字対応と通常のものとでは、ソース互換があるもののバイナリ互換がありません。
+          本スイッチはホスト上の <command>mawk</command> を使ったビルドが行われないようにするものです。
+          <command>mawk</command> のバージョンによっては、本パッケージのビルドに失敗するものがあるためです。
           </para>
 @z
 
@@ -183,17 +162,35 @@
           </para>
 @z
 
-@x echo "INPUT(-lncursesw)" > $LFS/usr/lib/libncurses.so
+@x ln -sv libncursesw.so $LFS/usr/lib/libncurses.so
           <para>The <filename>libncurses.so</filename> library is needed by
-          a few packages we will build soon. We create this small linker
-          script, as this is what is done in <xref
-          linkend="chapter-building-system"/>.</para>
+          a few packages we will build soon. We create this symlink to use
+          <filename>libncursesw.so</filename> as a replacement.</para>
 @y
           <para>
-          パッケージの中で、わずかですが <filename>libncurses.so</filename> を必要としているものがあります。
-          これはすぐに生成する予定のものです。
-          ここでこの小さなリンカースクリプトを生成します。
-          これは <xref linkend="chapter-building-system"/> においてビルドします。
+          これから作り出すパッケージの中で、わずかですが <filename>libncurses.so</filename> を必要としているものがあります。
+          このシンボリックリンクは <filename>libncursesw.so</filename> に代わるものとして生成します。
+          </para>
+@z
+
+@x sed -e 's/^#if.*XOPEN.*$/#if 1/' ...
+          <para>The header file <filename>curses.h</filename> contains
+          the definition of various Ncurses data structures.  With different
+          preprocessor macro definitions two different sets of the data
+          structure definition may be used: the 8-bit definition is
+          compatible with <filename>libncurses.so</filename> and the
+          wide-character definition is compatible with
+          <filename>libncursesw.so</filename>.  Since we are using
+          <filename>libncursesw.so</filename> as a replacement of
+          <filename>libncurses.so</filename>, edit the header file so it
+          will always use the wide-character data structure definition
+          compatible with <filename>libncursesw.so</filename>.</para>
+@y
+          <para>
+          ヘッダーファイル <filename>curses.h</filename> では Ncurses データ構造に関するさまざまな定義が行われています。
+          プリプロセッサーマクロ定義を変えることによって、データ構造定義を二つの異なるセットとして定義しているものがあります。
+          つまり 8 ビット定義は <filename>libncurses.so</filename> と互換性があり、ワイドキャラクター定義は <filename>libncursesw.so</filename> と互換性があります。
+          これまで <filename>libncurses.so</filename> の代わりとして <filename>libncursesw.so</filename> を利用してきていることから、ヘッダーファイルを修正して、<filename>libncursesw.so</filename> と互換性を持つワイドキャラクターデータ構造を常に用いるものとします。
           </para>
 @z
 
