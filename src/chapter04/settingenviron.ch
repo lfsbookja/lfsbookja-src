@@ -94,16 +94,12 @@
 @z
 
 @x
-  <para>Setting the user file-creation mask (umask) to 022 ensures that newly
-  created files and directories are only writable by their owner, but are
-  readable and executable by anyone (assuming default modes are used by the
-  <ulink role='man' url='&man;open.2'>open(2)</ulink> system call, new files
-  will end up with permission mode 644 and directories with mode 755).</para>
+        <para>Setting the umask as we've already explained in
+        <xref linkend='ch-partitioning-aboutlfs' role='.'/></para>
 @y
-  <para>
-  ユーザーのファイル生成マスク (file-creation mask; umask) を 022 にセットするのは、新たなファイルやディレクトリの生成はその所有者にのみ許可し、他者は読み取りと実行を可能とするためです。
-  (システムコール <ulink role='man' url='&man;open.2'>open(2)</ulink> にてデフォルトモードが適用される場合、新規生成ファイルのパーミッションモードは 644、同じくディレクトリは 755 となります。)
-  </para>
+        <para>
+        umask の設定については、すでに <xref linkend='ch-partitioning-aboutlfs' /> において説明しています。
+        </para>
 @z
 
 @x
