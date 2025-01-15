@@ -38,6 +38,88 @@
 @z
 
 @x
+      <para>2025-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1016. Addresses
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20250108. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.40.4. Fixes
+          <ulink url='&lfs-ticket-root;5624'>#5624</ulink>.</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - Update to sysvinit-3.13. Fixes
+          <ulink url='&lfs-ticket-root;5621'>#5621</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sysklogd-2.7.0. Fixes
+          <ulink url='&lfs-ticket-root;5623'>#5623</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.17.2. Fixes
+          <ulink url='&lfs-ticket-root;5525'>#5625</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-75.8.0. Fixes
+          <ulink url='&lfs-ticket-root;5622'>#5622</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.12.9. Fixes
+          <ulink url='&lfs-ticket-root;5620'>#5620</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.23.1. Fixes
+          <ulink url='&lfs-ticket-root;5619'>#5619</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1016 へのアップデート。
+          <ulink url="&lfs-ticket-root;4500">#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20250108 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.40.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5624'>#5624</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision="sysv">
+          <para>[bdubbs] - sysvinit-3.13 へのアップデート。
+          <ulink url='&lfs-ticket-root;5621'>#5621</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sysklogd-2.7.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5623'>#5623</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.17.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5525'>#5625</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-75.8.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5622'>#5622</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.12.9 へのアップデート。
+          <ulink url='&lfs-ticket-root;5620'>#5620</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.23.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5619'>#5619</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-01-01</para>
       <itemizedlist>
         <listitem>
@@ -56,7 +138,7 @@
           <para>[bdubbs] - Update to texinfo-7.2. Fixes
           <ulink url='&lfs-ticket-root;5616'>#5616</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - Update to sysvinit-3.12. Fixes
           <ulink url='&lfs-ticket-root;5615'>#5615</ulink>.</para>
         </listitem>
@@ -104,7 +186,7 @@
           <para>[bdubbs] - texinfo-7.2 へのアップデート。
           <ulink url='&lfs-ticket-root;5616'>#5616</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision="sysv">
           <para>[bdubbs] - sysvinit-3.12 へのアップデート。
           <ulink url='&lfs-ticket-root;5615'>#5615</ulink> を Fix に。</para>
         </listitem>

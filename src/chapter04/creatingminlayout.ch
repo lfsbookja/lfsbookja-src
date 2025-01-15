@@ -28,19 +28,6 @@
 @z
 
 @x
-  <para>First, set the owner and permission mode of the
-  <filename class='directory'>$LFS</filename> directory (i.e. the root
-  directory in the newly created file system for the LFS system) to
-  &root; and <literal>755</literal> in case the host distro has been
-  configured to use a different default for <command>mkfs</command>:</para>
-@y
-  <para>
-  はじめに (LFS システムにおいて新たに生成されるファイルシステムのルートディレクトリである) <filename class='directory'>$LFS</filename> ディレクトリに対して、その所有者とパーミッションモードをそれぞれ  &root; および <literal>755</literal> に設定します。
-  ホストディストロがこれとは違う値をデフォルトとしている場合を考慮して行うものです。
-  </para>
-@z
-
-@x
   <para>Create the required directory layout by issuing the following commands as
   <systemitem class="username">root</systemitem>:</para>
 @y
