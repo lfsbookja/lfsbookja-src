@@ -107,10 +107,13 @@
 @z
 
 @x
-  <para>The output should be <computeroutput>022</computeroutput>.</para>
+  <para>The output may be <computeroutput>0022</computeroutput> or
+  <computeroutput>022</computeroutput> (the number of leading zeros depends
+  on the host distro).</para>
 @y
   <para>
-  出力結果は <computeroutput>022</computeroutput> となっているはずです。
+  出力結果は <computeroutput>022</computeroutput> または <computeroutput>0022</computeroutput> となっているはずです。
+  (先頭にゼロがつくかどうかは、ホストディストロによります。)
   </para>
 @z
 

@@ -60,11 +60,12 @@
 @x
     <para>To prepare the tests, ensure that user
     <systemitem class="username">tester</systemitem> can write
-    to the source tree:</para>
+    to the source tree and exclude one file containing tests requiring
+    <command>curl</command> or <command>wget</command>:</para>
 @y
     <para>
     コンパイル結果をテストするために、<systemitem
-    class="username">tester</systemitem> ユーザーがソースツリーに書き込みできるようにします。
+    class="username">tester</systemitem> ユーザーがソースツリーに書き込みできるようにし、また <command>curl</command> と <command>wget</command> を必要とする 1 つのテストを除外するようにします。
     </para>
 @z
 

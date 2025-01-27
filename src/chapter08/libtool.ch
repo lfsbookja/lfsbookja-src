@@ -39,21 +39,6 @@
 @z
 
 @x
-    <para>Five tests are known to fail in the LFS build environment due
-    to a circular dependency, but these tests pass if rechecked after
-    automake has been installed.  Additionally, with grep-3.8 or newer,
-    two tests will trigger a warning for non-POSIX regular expressions and
-    fail.</para>
-@y
-    <para>
-    LFS ビルド環境下では５つのテストが失敗します。
-    これはパッケージ間の相互依存のためです。
-    automake をインストールした後に再テストすれば、全テストが成功します。
-    さらに grep-3.8 またはそれ以降を利用している場合は、2 つのテストにおいて非 POSIX 正規表現に対する警告メッセージが出力され失敗します。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
