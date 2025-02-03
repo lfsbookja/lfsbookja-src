@@ -109,13 +109,14 @@
 @z
 
 @x
-        <para>A few operations, from <quote>Changing Ownership</quote> to
+        <para>A few operations, from <quote>Preparing Virtual Kernel File
+        Systems</quote> to
         <quote>Entering the Chroot Environment,</quote> must be done as the
         <systemitem class="username">root</systemitem> user, with the LFS
         environment variable set for the &root; user.</para>
 @y
         <para>
-        <quote>所有者の変更</quote>から<quote>Chroot 環境への移行</quote>までの操作は、<systemitem class="username">root</systemitem> ユーザーで行います。
+        <quote>仮想カーネルファイルシステムの準備</quote>から<quote>Chroot 環境への移行</quote>までの操作は、<systemitem class="username">root</systemitem> ユーザーで行います。
         LFS 環境変数が &root; ユーザーにおいて設定されている必要があります。
         </para>
 @z

@@ -63,6 +63,15 @@
           </para>
 @z
 
+@x automake
+          <para>Work around a problem with an older versions of autotools.
+          </para>
+@y
+          <para>
+          autotools の旧バージョンにおいて発生する問題を回避します。
+          </para>
+@z
+
 @x FORCE_UNSAFE_CONFIGURE=1
           <para>This environment variable allows the package to be
           built by the <systemitem class="username">root</systemitem> user.

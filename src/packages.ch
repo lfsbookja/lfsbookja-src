@@ -34,6 +34,12 @@
 @z
 
 @x
+<!ENTITY bzip2-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY bzip2-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY check-fin-sbu "0.1 SBU (about 2.1 SBU with tests)">
 @y
 <!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 2.1 SBU)">
@@ -175,6 +181,12 @@
 <!ENTITY readline-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY readline-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY setuptools-fin-sbu "less than 0.1 SBU">
+@y
+<!ENTITY setuptools-fin-sbu "0.1 SBU 以下">
 @z
 
 @x
