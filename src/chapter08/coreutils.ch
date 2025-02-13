@@ -47,28 +47,37 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+      <title>The meaning of the commands and configure options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+      <title>&MeaningOfOption1;コマンドと configure&MeaningOfOption2;</title>
 @z
 
-@x autoreconf
+@x autoreconf -fv
           <para>The patch for internationalization has modified the
           build system, so the configuration files must
-          be regenerated.</para>
+          be regenerated.  Normally we would use the
+          <parameter>-i</parameter> option to update the standard
+          auxilary files, but for this package it does not work because
+          <filename>configure.ac</filename> specified an old gettext
+          version.</para>
 @y
           <para>
           国際化対応を行うパッチによってビルドシステムが修正されます。
           したがって設定ファイル類を再生成する必要があります。
+          通常なら <parameter>-i</parameter> オプションを使って標準的な補助 (auxilary) ファイルのアップデートを行うところですが、本パッケージに関してはそれが通用しません。
+          それは <filename>configure.ac</filename> が古い gettext バージョンを指定しているためです。
           </para>
 @z
 
-@x automake
-          <para>Work around a problem with an older versions of autotools.
-          </para>
+@x automake -af
+	  <para>The automake auxilary files were not updated by
+	  <command>autoreconf</command> due to the missing
+	  <parameter>-i</parameter> option.  This command updates them
+	  to prevent a build failure.</para>
 @y
           <para>
-          autotools の旧バージョンにおいて発生する問題を回避します。
+          automake の補助 (auxilary) ファイルは、<command>autoreconf</command> において <parameter>-i</parameter> オプションを指定しなかったため更新されていません。
+          以下のコマンドによってこれを更新し、ビルドが失敗しないようにします。
           </para>
 @z
 
@@ -162,15 +171,6 @@
     <para>
     一時的に作成したグループを削除します。
     </para>
-@z
-
-@x
-       Two tests, <filename>tests/cp/preserve-mode.sh</filename> and
-       <filename>tests/mv/acl.sh</filename>, are known to
-       fail in the chroot environment, but pass in a complete system.
-@y
-       <filename>tests/cp/preserve-mode.sh</filename>、<filename>tests/mv/acl.sh</filename> というテストは chroot 環境内では失敗します。
-       ただし完成したシステム内では成功します。
 @z
 
 @x

@@ -197,20 +197,19 @@
 @z
 
 @x
-      <term><option>--no-same-owner</option> (tar) and <option>--no-preserve=mode</option> (cp)</term>
+      <term><option>--no-same-owner</option> and <option>--no-same-permissions</option></term>
 @y
-      <term><option>--no-same-owner</option> (tar) と <option>--no-preserve=mode</option> (cp)</term>
+      <term><option>--no-same-owner</option> と <option>--no-same-permissions</option></term>
 @z
 @x
         <para>Ensure the installed files have the correct ownership and
         permissions.  Without these options, <application>tar</application>
-        will install the package files with the upstream creator's values
-        and files would have restrictive permissions.
+        will install the package files with the upstream creator's values.
         </para>
 @y
         <para>
         インストールするファイルの所有者とパーミッションを適切に設定します。
-        このオプションがないと <application>tar</application> によって展開されるファイルは、アップストリームが作り出した値になってしまい、またファイルのパーミッションが限定的になることがあります。
+        このオプションがないと <application>tar</application> によって展開されるファイルは、アップストリームが作り出した値になってしまいます。
         </para>
 @z
 

@@ -39,6 +39,17 @@
           </para>
 @z
 
+@x --enable-watch8bit
+          <para>This switch enables the ncursesw support for the
+          <command>watch</command> command, so it can handle 8-bit
+          characters.</para>
+@y
+          <para>
+          本スイッチは <command>watch</command> コマンドに対して ncursesw サポートを有効にします。
+          これによって 8 ビット文字を取り扱うことができるようになります。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -57,10 +68,12 @@
     <para>One test named
     <literal>ps with output flag bsdtime,cputime,etime,etimes</literal>
     is known to fail if the host kernel is not built with
-    <literal>CONFIG_BSD_PROCESS_ACCT</literal> enabled.</para>
+    <literal>CONFIG_BSD_PROCESS_ACCT</literal> enabled. In
+    addition, one pgrep test may fail in the chroot environment.</para>
 @y
     <para>
     ホストカーネルが <literal>CONFIG_BSD_PROCESS_ACCT</literal> を有効にしてビルドされていない場合に、<literal>ps with output flag bsdtime,cputime,etime,etimes</literal> という名前のテスト 1 つが失敗します。
+    また pgrep のテスト 1 つが chroot 環境内では失敗します。
     </para>
 @z
 

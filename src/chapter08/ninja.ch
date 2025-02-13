@@ -83,13 +83,25 @@
           </para>
 @z
 
+@x --verbose
+          <para>This parameter makes <command>configure.py</command> show
+          the progress building Ninja.</para>
+@y
+          <para>
+          本パラメーターは、<command>configure.py</command> の実行にあたって Ninja のビルドプロセスを表示させます。
+          </para>
+@z
+
 @x
     <para>The package tests cannot run in the chroot environment. They require 
-    <ulink url="&blfs-book;general/cmake.html">cmake</ulink>.</para>
+    <ulink url="&blfs-book;general/cmake.html">cmake</ulink>.  But the basic
+    function of this package is already tested by rebuilding itself
+    (with the <parameter>--bootstrap</parameter> option) anyway.</para>
 @y
     <para>
     本パッケージのテストは chroot 環境のもとでは実行することができません。
     実行するには <ulink url="&blfs-book;general/cmake.html">cmake</ulink> が必要です。
+    ただし (<parameter>--bootstrap</parameter> オプションを使って) もう一度ビルドを行えば、本パッケージの基本的な関数についてはテストが実施されます。
     </para>
 @z
 

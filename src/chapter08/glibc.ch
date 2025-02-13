@@ -170,13 +170,13 @@
 @x
     <para>You may see some test failures. The Glibc test suite is
     somewhat dependent on the host system. A few failures out of
-    over 5000 tests can generally be ignored. This is a list of the
+    over 6000 tests can generally be ignored. This is a list of the
     most common issues seen for recent versions of LFS:</para>
 @y
     <para>
     テストに失敗する場合があります。
     これは Glibc のテストスイートがホストシステムにある程度依存しているためです。
-    5000 を超えるテストの中で、ほんの少数のテストは失敗しますが、無視できるものです。
+    6000 を超えるテストの中で、ほんの少数のテストは失敗しますが、無視できるものです。
     LFS の当バージョンにおいて発生しがちな問題を以下に示します。
     </para>
 @z
@@ -353,6 +353,16 @@
 @y
         <command>make install</command> コマンド、<filename>/usr/bin/ldd</filename> に対する <command>sed</command> コマンド、ロケールをインストールするコマンドを順に実行します。
         ここまで行ったら即座にシステムを再起動してください。
+@z
+
+@x
+        When the system has successfully rebooted, if you are running
+        a LFS system prior to 12.0 (exclusive) where GCC was not built
+        with the <parameter>--disable-fixincludes</parameter> option,
+        remove the stale <quote>fixed</quote> copies of the Glibc headers:
+@y
+        システムの再起動が成功したら次を行います。
+        今起動させている LFS システムが 12.0 よりも最新のものであって、GCC のビルド時に <parameter>--disable-fixincludes</parameter> オプションをつけていなかった場合は、Glibc ヘッダーファイルにおける<quote>fixed</quote>を削除します。
 @z
 
 @x

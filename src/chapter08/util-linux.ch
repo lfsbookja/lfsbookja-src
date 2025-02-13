@@ -95,6 +95,13 @@
 @z
 
 @x
+      Two other tests, lsfd: SOURCE column and utmp: last, are known to
+      fail in the chroot environment.
+@y
+      lsfd: SOURCE column と utmp: last という 2 つのテストが chroot 環境内では失敗します。
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

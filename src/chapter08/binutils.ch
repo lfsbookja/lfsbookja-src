@@ -19,16 +19,6 @@
 @z
 
 @x
-    <para>First, apply a patch to prevent a bug that causing
-    unnecessary relinking with packages that depend on cmake-3.31.0
-    or newer:</para>
-@y
-    <para>
-    まずはパッチを適用して、cmake-3.31.0 またはそれ以降に依存しているパッケージを不必要にリンクしてしまうバグを解消します。
-    </para>
-@z
-
-@x
     <para>The Binutils documentation recommends building Binutils
     in a dedicated build directory:</para>
 @y
@@ -49,14 +39,14 @@
       <title>&MeaningOfParameter1;configure&MeaningOfParameter2;</title>
 @z
 
-@x --enable-gold
-          <para>Build the gold linker and install it as ld.gold (alongside the
-          default linker).</para>
-@y
-          <para>
-          ゴールドリンカー (gold linker) をビルドし ld.gold としてインストールします。
-          </para>
-@z
+%@x --enable-gold
+%          <para>Build the gold linker and install it as ld.gold (alongside the
+%          default linker).</para>
+%@y
+%          <para>
+%          ゴールドリンカー (gold linker) をビルドし ld.gold としてインストールします。
+%          </para>
+%@z
 
 @x --enable-ld=default
           <para>Build the original bfd linker and install it as both ld (the
@@ -146,34 +136,16 @@
 @z
 
 @x
-    <para>Twelve tests fail in the gold test suite when the
-    <option>--enable-default-pie</option> and
-    <option>--enable-default-ssp</option> options are passed to GCC.</para>
-@y
-    <para>
-    GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、gold テストスイートにおいて 12 個のテストが失敗します。
-    </para>
-@z
-
-%@x
-%    <para>Three tests in the gprofng suite are also known to fail.</para>
-%@y
-%    <para>
-%    grpofng スイートの中にある 3 つのテストが失敗します。
-%    </para>
-%@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
 @z
 
 @x
-    <para>Remove useless static libraries:</para>
+    <para>Remove useless static libraries and other files:</para>
 @y
     <para>
-    不要なスタティックライブラリを削除します。
+    不要なスタティックライブラリなどのファイルを削除します。
     </para>
 @z
 
@@ -194,13 +166,13 @@
 @z
 
 @x
-        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
         <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
         libopcodes.so, and libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
-        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
         <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
         libopcodes.so, libsframe.so</seg>
@@ -292,15 +264,6 @@
           <para>
           複数のオブジェクトファイルやアーカイブファイルから、一つのファイルを生成するリンカー。
           データの再配置やシンボル参照情報の結合を行います。
-          </para>
-@z
-
-@x ld.gold
-          <para>A cut down version of ld that only supports the
-          elf object file format</para>
-@y
-          <para>
-          elf オブジェクト向けファイルフォーマットのサポートにのみ特化した ld の限定バージョン。
           </para>
 @z
 
