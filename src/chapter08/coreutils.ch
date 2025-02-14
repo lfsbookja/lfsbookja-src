@@ -57,7 +57,7 @@
           build system, so the configuration files must
           be regenerated.  Normally we would use the
           <parameter>-i</parameter> option to update the standard
-          auxilary files, but for this package it does not work because
+          auxiliary files, but for this package it does not work because
           <filename>configure.ac</filename> specified an old gettext
           version.</para>
 @y
@@ -70,7 +70,7 @@
 @z
 
 @x automake -af
-	  <para>The automake auxilary files were not updated by
+	  <para>The automake auxiliary files were not updated by
 	  <command>autoreconf</command> due to the missing
 	  <parameter>-i</parameter> option.  This command updates them
 	  to prevent a build failure.</para>
