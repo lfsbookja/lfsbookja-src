@@ -35,6 +35,36 @@
 @z
 
 @x
+      <title>The meaning of the options:</title>
+@y
+      <title>&MeaningOfOption1;&MeaningOfOption2;</title>
+@z
+
+@x -R
+          <para>This prevents <command>make</command> from setting any
+          built-in variables.  The building system of man-pages does not
+          work well with built-in variables, but currently there is no way
+          to disable them except passing <parameter>-R</parameter>
+          explicitly via the command line.</para>
+@y
+          <para>
+          これは <command>make</command> がビルトイン変数を設定しないようにします。
+          man-pages のビルドシステムにおいては、ビルトイン変数が適切に制御できません。
+          現状においてコマンドラインから <parameter>-R</parameter> を指定する以外に、それを制御する方法は存在していません。
+          </para>
+@z
+
+@x GIT=false
+          <para>This prevents the building system from emitting many
+          <computeroutput>git: command not found</computeroutput>
+          warnings lines.</para>
+@y
+          <para>
+          これはビルドシステムが <computeroutput>git: command not found</computeroutput> という警告メッセージ行を出力しないようにします。
+          </para>
+@z
+
+@x
     <title>Contents of Man-pages</title>
 @y
     <title>&ContentsOf1;Man-pages&ContentsOf2;</title>

@@ -215,37 +215,11 @@
     </para>
 @z
 
-%@x
-%    Eight gcc tests (out of over 185,000):
-%    <!-- https://gcc.gnu.org/PR106375 --><filename>pr56837.c</filename>
-%    and seven tests in the <filename class='directory'>analyzer</filename>
-%    directory are known to fail.
-%@y
-%    (185,000 以上におよぶテストの中から) gcc テストの 8 つ、すなわち <filename>pr56837.c</filename>、それに <filename class='directory'>analyzer</filename> ディレクトリにある 7 つのテストが失敗します。
-%@z
-
-%@x
-%    One libstdc++ test (out of over 15000), <filename>copy.cc</filename>, is
-%    known to fail.
-%@y
-%    (15,000 以上の ) libstdc++ テスト <filename>copy.cc</filename> が 1 つだけ失敗します。
-%@z
-
 @x
-    For g++, 21 tests (out of approximately 250,000): 14
-    <quote>AddressSanitizer*</quote>
-    tests and 7 <filename>interception-malloc-test-1.C</filename> tests, are
-    known to fail.
+    <para>The tsan tests are known to fail on some host distros.</para>
 @y
-    g++ においては (およそ 250,000 のテストのうち) 21 個のテスト、14 個の<quote>AddressSanitizer*</quote>テスト、7 個の <filename>interception-malloc-test-1.C</filename> テストが失敗します。
-@z
-
-@x
-    Additionally, several tests in the
-    <filename class='directory'>vect</filename> directory are known to fail
-    if the hardware does not support AVX.</para>
-@y
-    さらに <filename class='directory'>vect</filename> ディレクトリ内にあるテストが、AVX に対するハードウェアサポートがないために、いくつか失敗します。
+    <para>
+    tsan テストはホストディストロによっては失敗します。
     </para>
 @z
 

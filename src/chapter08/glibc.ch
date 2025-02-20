@@ -359,10 +359,11 @@
         When the system has successfully rebooted, if you are running
         a LFS system prior to 12.0 (exclusive) where GCC was not built
         with the <parameter>--disable-fixincludes</parameter> option,
+        move two GCC headers into a better location and
         remove the stale <quote>fixed</quote> copies of the Glibc headers:
 @y
         システムの再起動が成功したら次を行います。
-        今起動させている LFS システムが 12.0 よりも最新のものであって、GCC のビルド時に <parameter>--disable-fixincludes</parameter> オプションをつけていなかった場合は、Glibc ヘッダーファイルにおける<quote>fixed</quote>を削除します。
+        今起動させている LFS システムが 12.0 よりも最新のものであって、GCC のビルド時に <parameter>--disable-fixincludes</parameter> オプションをつけていなかった場合は、2 つの GCC ヘッダーファイルを適切な位置に移動させた上で Glibc ヘッダーファイルにおける<quote>fixed</quote>を削除します。
 @z
 
 @x

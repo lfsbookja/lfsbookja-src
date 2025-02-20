@@ -232,11 +232,17 @@
 @x
     <para>One test named <literal>systemd:core / test-namespace</literal>
     is known to fail in the LFS chroot environment.  Some other tests may
-    fail because they depend on various kernel configuration options.</para>
+    fail because they depend on various kernel configuration options.
+    The test named <literal>systemd:test / test-copy</literal> may time out
+    due to an I/O congestion with a large parallel job number, but it
+    would pass if running alone with
+    <command>meson test test-copy</command>.</para>
 @y
     <para>
     <literal>systemd:core / test-namespace</literal> というテストが、LFS の chroot 環境内では失敗します。
     また別のテストでも失敗するものがありますが、これはさまざまなカーネルオプションに依存しているためです。
+    <literal>systemd:test / test-copy</literal> という名前のテストは、多大な並行ジョブ数による I/O の複雑化によって失敗することがあります。
+    ただし単独で <command>meson test test-copy</command> を実行すれば成功するはずです。
     </para>
 @z
 

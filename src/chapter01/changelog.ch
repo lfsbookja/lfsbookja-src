@@ -38,6 +38,32 @@
 @z
 
 @x
+      <para>2025-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update to vim-9.1.1122 (Security Update).
+          Addresses <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update to man-pages-6.11.  Fixes
+          <ulink url='&lfs-ticket-root;5646'>#5646</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - vim-9.1.1122 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - man-pages-6.11 へのアップデート。
+          <ulink url='&lfs-ticket-root;5646'>#5646</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-02-13</para>
       <itemizedlist>
         <listitem>
