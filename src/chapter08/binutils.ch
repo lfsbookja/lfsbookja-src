@@ -124,7 +124,7 @@
 @x
     <para>Test the results:</para>
 @y
-    <para>コンパイル結果をテストします。</para>
+    <para>ビルド結果をテストします。</para>
 @z
 
 @x

@@ -64,7 +64,7 @@
     <command>curl</command> or <command>wget</command>:</para>
 @y
     <para>
-    コンパイル結果をテストするために、<systemitem
+    ビルド結果をテストする場合は、<systemitem
     class="username">tester</systemitem> ユーザーがソースツリーに書き込みできるようにし、また <command>curl</command> と <command>wget</command> を必要とする 1 つのテストを除外するようにします。
     </para>
 @z

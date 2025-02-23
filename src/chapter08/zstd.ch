@@ -42,7 +42,7 @@
     <para>To test the results, issue:</para>
 @y
     <para>
-    ビルド結果をテストするには以下を実行します。
+    ビルド結果をテストする場合は以下を実行します。
     </para>
 @z
 

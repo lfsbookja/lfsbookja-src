@@ -34,7 +34,7 @@
     <para>To run the test suite, run:</para>
 @y
     <para>
-    テストスイートを実行する場合は以下を実行します。
+    テストスイートを実施する場合は以下を実行します。
     </para>
 @z
 

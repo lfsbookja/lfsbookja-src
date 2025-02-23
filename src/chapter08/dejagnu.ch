@@ -38,7 +38,7 @@
 @x
     <para>To test the results, issue:</para>
 @y
-    <para>コンパイル結果をテストするなら以下を実行します。</para>
+    <para>ビルド結果をテストする場合は以下を実行します。</para>
 @z
 
 @x

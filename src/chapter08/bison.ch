@@ -30,10 +30,10 @@
 @z
 
 @x
-    <para>To test the results (about 5.5 SBU), issue:</para>
+    <para>To test the results, issue:</para>
 @y
     <para>
-    コンパイル結果をテストするなら以下を実行します。(約 5.5 SBU)
+    ビルド結果をテストする場合は以下を実行します。
     </para>
 @z
 
