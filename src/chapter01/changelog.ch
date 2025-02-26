@@ -38,6 +38,24 @@
 @z
 
 @x
+      <para>2025-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.12.  Fixes
+          <ulink url='&lfs-ticket-root;5658'>#5658</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.12 へのアップデート。
+          <ulink url='&lfs-ticket-root;5658'>#5658</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-02-19</para>
       <itemizedlist>
         <listitem>

@@ -18,7 +18,7 @@
 @z
 
 @x
-    <para>First, make the package build with gcc-14.1 or later::</para>
+    <para>First, make the package build with gcc-14.1 or later:</para>
 @y
     <para>
     gcc-14.1 以降を用いて本パッケージがビルドできるようにします。
