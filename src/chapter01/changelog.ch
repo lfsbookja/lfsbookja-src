@@ -38,6 +38,88 @@
 @z
 
 @x
+      <para>2025-02-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to zstd-1.5.7.  Fixes
+          <ulink url='&lfs-ticket-root;5652'>#5652</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-257.3.  Fixes
+          <ulink url='&lfs-ticket-root;5612'>#5612</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.17.3.  Fixes
+          <ulink url='&lfs-ticket-root;5660'>#5660</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-75.8.1.  Fixes
+          <ulink url='&lfs-ticket-root;5662'>#5662</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.13.4.  Fixes
+          <ulink url='&lfs-ticket-root;5647'>#5647</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-34.  Fixes
+          <ulink url='&lfs-ticket-root;5657'>#5657</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to inetutils-2.6.  Fixes
+          <ulink url='&lfs-ticket-root;5656'>#5656</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.24.  Fixes
+          <ulink url='&lfs-ticket-root;5661'>#5661</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flit_core-3.11.0.  Fixes
+          <ulink url='&lfs-ticket-root;5654'>#5654</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-02-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - zstd-1.5.7 へのアップデート。
+          <ulink url='&lfs-ticket-root;5652'>#5652</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-257.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5612'>#5612</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.17.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5660'>#5660</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-75.8.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5662'>#5662</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.13.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5647'>#5647</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-34 へのアップデート。
+          <ulink url='&lfs-ticket-root;5657'>#5657</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inetutils-2.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5656'>#5656</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.24 へのアップデート。
+          <ulink url='&lfs-ticket-root;5661'>#5661</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flit_core-3.11.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5654'>#5654</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-02-24</para>
       <itemizedlist>
         <listitem>

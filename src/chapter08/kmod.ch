@@ -30,33 +30,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x --with-openssl
-          <para>This option enables Kmod to handle PKCS7 signatures for
-          kernel modules.</para>
-@y
-          <para>
-          このオプションは Kmod において、カーネルモジュールに対する PKCS7 署名を取り扱えるようにします。
-          </para>
-@z
-
-@x --with-xz, --with-zlib, --with-zstd
-          <parameter>--with-xz</parameter>,
-          <parameter>--with-zlib</parameter>, and
-          <parameter>--with-zstd</parameter>
-@y
-          <parameter>--with-xz</parameter>,
-          <parameter>--with-zlib</parameter>,
-          <parameter>--with-zstd</parameter>
-@z
-@x
-          <para>These options enable Kmod to handle compressed kernel modules.</para>
-@y
-          <para>
-          これらのオプションは、Kmod が圧縮されたカーネルモジュールを取り扱えるようにするものです。
-          </para>
-@z
-
-@x --disable-manpages
+@x -D manpages=false
           <para>This option disables generating the man pages which
           requires an external program.</para>
 @y
@@ -83,19 +57,10 @@
 @z
 
 @x
-    <para>Install the package and recreate some symlinks for
-    compatibility with Module-Init-Tools (the package that previously handled
-    Linux kernel modules).  The building system will create all these
-    symlinks in <filename class='directory'>/usr/bin</filename>, but we
-    only want <command>lsmod</command> there and all other symlinks in
-    <filename class='directory'>/usr/sbin</filename> instead:</para>
+    <para>Now install the package:</para>
 @y
     <para>
-    パッケージインストールし、Module-Init-Tools パッケージとの互換性を保つためにシンボリックリンクを再生成します。
-    （Module-Init-Tools パッケージは、これまで Linux カーネルモジュールを取り扱っていました。）
-    ビルドしているシステムはシンボリックリンクを <filename
-    class='directory'>/usr/bin</filename> に生成しますが、ここでは <command>lsmod</command> のみそのままにして、残りは <filename
-    class='directory'>/usr/sbin</filename> へのシンボリックリンクとします。
+    &InstallThePackage;
     </para>
 @z
 
