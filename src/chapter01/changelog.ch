@@ -38,6 +38,24 @@
 @z
 
 @x
+      <para>2025-03-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1166 (Security Update).  Fixes
+          <ulink url='&lfs-ticket-root;5666'>#56566</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-03-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1166 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5666'>#56566</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-02-27</para>
       <itemizedlist>
         <listitem>
