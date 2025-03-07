@@ -132,37 +132,37 @@
   </para>
 @z
 
-@x
-  <para>It is possible to make the ext3 filesystem reliable across power
-  failures for some hard disk types.  To do this, add the
-  <option>barrier=1</option> mount option to the appropriate entry in
-  <filename>/etc/fstab</filename>.  To check if the disk drive supports
-  this option, run
-  <ulink url="&blfs-book;general/hdparm.html">hdparm</ulink>
-  on the applicable disk drive.  For example, if:</para>
-@y
-  <para>
-  特定のハードディスクにおいて ext3 ファイルシステムでの電源供給不足時の信頼性を向上させることができます。
-  これは <filename>/etc/fstab</filename> での定義においてマウントオプション <option>barrier=1</option> を指定します。
-  ハードディスクがこのオプションをサポートしているかどうかは <ulink
-  url="&blfs-book;general/hdparm.html">hdparm</ulink> を実行することで確認できます。
-  例えば以下のコマンドを実行します。
-  </para>
-@z
+%@x
+%  <para>It is possible to make the ext3 filesystem reliable across power
+%  failures for some hard disk types.  To do this, add the
+%  <option>barrier=1</option> mount option to the appropriate entry in
+%  <filename>/etc/fstab</filename>.  To check if the disk drive supports
+%  this option, run
+%  <ulink url="&blfs-book;general/hdparm.html">hdparm</ulink>
+%  on the applicable disk drive.  For example, if:</para>
+%@y
+%  <para>
+%  特定のハードディスクにおいて ext3 ファイルシステムでの電源供給不足時の信頼性を向上させることができます。
+%  これは <filename>/etc/fstab</filename> での定義においてマウントオプション <option>barrier=1</option> を指定します。
+%  ハードディスクがこのオプションをサポートしているかどうかは <ulink
+%  url="&blfs-book;general/hdparm.html">hdparm</ulink> を実行することで確認できます。
+%  例えば以下のコマンドを実行します。
+%  </para>
+%@z
 
-@x
-  <para>returns non-empty output, the option is supported.</para>
-@y
-  <para>
-  何かが出力されたら、このオプションがサポートされていることを意味します。
-  </para>
-@z
+%@x
+%  <para>returns non-empty output, the option is supported.</para>
+%@y
+%  <para>
+%  何かが出力されたら、このオプションがサポートされていることを意味します。
+%  </para>
+%@z
 
-@x
-  <para>Note: Logical Volume Management (LVM) based partitions cannot use the
-  <option>barrier</option> option.</para>
-@y
-  <para>
-  論理ボリュームマネージャー (Logical Volume Management; LVM) に基づいたパーティションでは <option>barrier</option> オプションは利用できません。
-  </para>
-@z
+%@x
+%  <para>Note: Logical Volume Management (LVM) based partitions cannot use the
+%  <option>barrier</option> option.</para>
+%@y
+%  <para>
+%  論理ボリュームマネージャー (Logical Volume Management; LVM) に基づいたパーティションでは <option>barrier</option> オプションは利用できません。
+%  </para>
+%@z
