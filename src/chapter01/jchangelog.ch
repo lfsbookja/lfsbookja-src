@@ -55,6 +55,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          pdf 改行位置修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           r12.3-6 (42eaacedb) までの対応。
           </para>
         </listitem>

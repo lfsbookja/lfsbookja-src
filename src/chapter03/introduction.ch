@@ -172,6 +172,7 @@
 <screen role="nodump"><userinput>wget --input-file=&wget-list; --continue --directory-prefix=$LFS/sources</userinput></screen>
 
 <note>
+<?dbfo keep-together="auto"?>
 <title>日本語訳情報</title>
 <para>
 オリジナルの LFS ブックでは、<ulink

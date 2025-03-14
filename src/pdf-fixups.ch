@@ -8,6 +8,6 @@ sed -i -e 's@gcc --version@<fo:block page-break-before="always"></fo:block>&@' $
 @y
 sed -i -e 's@gcc --version@<fo:block page-break-before="always"></fo:block>&@' $FILE
 
-# 日本語訳向け PDF改行処理
-sed -i -e 's@上記はあくまで@<fo:block page-break-before="always"></fo:block>&@' $FILE
+# # 日本語訳向け PDF改行処理
+# sed -i -e 's@上記はあくまで@<fo:block page-break-before="always"></fo:block>&@' $FILE
 @z

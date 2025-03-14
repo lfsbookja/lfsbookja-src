@@ -119,11 +119,18 @@
       <emphasis role='bold'>これを行わなかった場合には、システムが全く動作しないことも起こりえます。</emphasis>
 @z
 
+@x auto enables the object to break across a page
+<screen><userinput>save_usrlib="$(cd /usr/lib; ls ld-linux*[^g])
+@y
+<screen><?dbfo keep-together="auto"?><userinput>save_usrlib="$(cd /usr/lib; ls ld-linux*[^g])
+@z
+
 @x
   <para>A large number of files will be flagged as errors because their file
   format is not recognized. These warnings can be safely ignored. They
   indicate that those files are scripts, not binaries.</para>
 @y
+  <?line-break?>
   <para>
   ファイルフォーマットが認識できないファイルがいくつもエラーとなりますが、無視して構いません。
   この警告は、処理したファイルが実行バイナリではなくスクリプトファイルであることを示しています。
