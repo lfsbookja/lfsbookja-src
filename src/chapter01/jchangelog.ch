@@ -26,8 +26,8 @@
     LFS ブック日本語版の変更履歴を示すために設けています。
    </para>
    <para>
-   「r12.2-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
-   また 4b8c6b4f6 などの表記は、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値を意味します。
+   「r12.3-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
+   また a2bf74a9b などの表記は、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値を意味します。
    </para>
   </note>
 
@@ -51,286 +51,33 @@
 -->
 
    <listitem>
-      <para>2025-03-03</para>
+      <para>2025-03-14</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-112 (e9c3828c5) までの対応。
+          r12.3-6 (42eaacedb) までの対応。
           </para>
         </listitem>
       </itemizedlist>
    </listitem>
 
    <listitem>
-      <para>2025-02-28</para>
+      <para>2025-03-07</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-111 (d35857c7b) までの対応。
+          r12.3-4 (a2bf74a9b) までの対応。
           </para>
         </listitem>
       </itemizedlist>
    </listitem>
 
    <listitem>
-      <para>2025-02-26</para>
+      <para>2025-03-05</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r12.2-110 (49b6a5ff0) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-02-23</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-108 (514c9e71b) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-02-20</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-107 (378b51e18) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-02-14</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-99 (34202ef44) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-02-13</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-95 (df98180f3) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-02-03</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-85 (4f401fb37) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-01-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-82 (50a0916de) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-01-19</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-78 (2aaea1389) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-01-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-76 (ea9df1032) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-01-13</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-74 (bb5bf3b9d) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-01-04</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-68 (389d8f53d) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2025-01-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-66 (6528f7572) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-12-22</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-59 (bfb0cbae1) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-12-17</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-51 (72fae0d02) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-12-11</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-43 (6fa6a4f3c) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-12-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-38 (5ee35073f) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-12-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-34 (ea4845640) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-11-16</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-29 (4660ec224) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-11-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-23 (a9517d383) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-10-26</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-22 (08620feaa) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-10-04</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-14 (ebeebc26b) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-09-22</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-8 (984e1f106) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-09-08</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          r12.2-5 (75c976032) までの対応。
-          </para>
-        </listitem>
-      </itemizedlist>
-   </listitem>
-
-   <listitem>
-      <para>2024-09-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matsuand] -
-          LFS-12.2 リリース。
+          LFS 12.3 対応。
           </para>
         </listitem>
       </itemizedlist>

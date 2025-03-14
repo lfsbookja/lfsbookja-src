@@ -452,19 +452,6 @@
 @z
 
 @x
-    <para>Then use the <command>localedef</command> command to create and
-    install locales not listed in the
-    <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> file
-    when you need them. For instance, the following two locales are
-    needed for some tests later in this chapter:</para>
-@y
-    <para>
-    さらに必要なら <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> ファイルに示されていないロケールは <command>localedef</command> コマンドを使って生成、インストールを行ってください。
-    たとえば以下の 2 つのロケールは、本章で後に実施するテストにおいて必要になります。
-    </para>
-@z
-
-@x
     <note><para>Glibc now uses libidn2 when resolving internationalized
     domain names.  This is a run time dependency.  If this capability
     is needed, the instructions for installing libidn2 are in the

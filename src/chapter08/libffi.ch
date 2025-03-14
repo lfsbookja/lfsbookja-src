@@ -37,16 +37,20 @@
       <para>Like GMP, Libffi builds with optimizations specific
       to the processor in use. If building for another system, change the
       value of the <parameter>--with-gcc-arch=</parameter> parameter in the
-      following command to an architecture name fully implemented by the
+      following command to an architecture name fully implemented by
+      <emphasis role='bold'>both</emphasis> the host CPU and the
       CPU on that system.
       If this is not done, all applications that link to
       <filename class='libraryfile'>libffi</filename> will trigger
-      Illegal Operation Errors.</para>
+      Illegal Operation Errors.  If you cannot figure out a value
+      safe for both the CPUs, replace the parameter with
+      <option>--without-gcc-arch</option> to produce a generic library.</para>
 @y
       <para>
       GMP と同じように Libffi では、利用中のプロセッサーに応じた最適化を行なってビルドされます。
-      異なるシステムに向けてのビルドを行う場合は、以下のコマンドにおいて <parameter>--with-gcc-arch=</parameter> を使って、そのシステム上の CPU の実装を完全に表すアーキテクチャー名に変更してください。
+      異なるシステムに向けてのビルドを行う場合は、以下のコマンドにおいて <parameter>--with-gcc-arch=</parameter> を使って、ホスト CPU とそのシステム上の CPU の <emphasis role='bold'>双方の</emphasis> 実装を完全に表すアーキテクチャー名に変更してください。
       そうしなかった場合には、<filename class='libraryfile'>libffi</filename> をリンクするアプリケーションにおいて Illegal Operation エラーを発生させることになります。
+      双方の CPU に対しての適切な値が分からない場合は <option>--without-gcc-arch</option> を指定して、汎用ライブラリを生成してください。
       </para>
 @z
 

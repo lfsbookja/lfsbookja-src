@@ -126,10 +126,25 @@
 
 @x
       <listitem> <para>If a package containing a shared library is updated, and
-      if the name of the library changes, then any packages dynamically
+      if the name of the library<footnote><para>The name of a shared library is
+      the string coded in the <constant>DT_SONAME</constant> entry of its
+      ELF dynamic section.  You can get it with the
+      <command>readelf -d <replaceable>&lt;library file&gt;</replaceable>
+      | grep SONAME</command> command.  In most cases it's suffixed with
+      <literal>.so.<replaceable>&lt;a version
+      number&gt;</replaceable></literal>, but there are some cases where
+      it contains multiple numbers for versioning (like
+      <filename>libbz2.so.1.0</filename>), contains the version number
+      before the <filename class='extension'>.so</filename> suffix (like
+      <filename>libbfd-&binutils-version;</filename>), or does not contain
+      any version number at all (for example
+      <filename>libmemusage.so</filename>).
+      Generally there is no correlation between the package version and the
+      version number(s) in the library name.</para></footnote>
+      changes, then any packages dynamically
       linked to the library must be recompiled, to link against the
-      newer library.  (Note that there is no correlation between the package
-      version and the name of the library.) For example, consider a package
+      newer library.
+      For example, consider a package
       foo-1.2.3 that installs a shared library with the name <filename
       class='libraryfile'>libfoo.so.1</filename>. Suppose you upgrade the package to
       a newer version foo-1.2.4 that installs a shared library with the name
@@ -142,9 +157,17 @@
       </listitem>
 @y
       <listitem> <para>
-      共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名が変更になったとします。
+      共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名<footnote><para>
+      共有ライブラリ名は、その ELF 動的セクションの <constant>DT_SONAME</constant> エントリーに名称がコーディングされます。
+      <command>readelf -d <replaceable>&lt;ライブラリファイル名&gt;</replaceable>
+      | grep SONAME</command> コマンドを使えば、それを取得することができます。
+      その後ろには <literal>.so.<replaceable>&lt;バージョン番号&gt;</replaceable></literal> がつくのが普通です。
+      ただし時には (<filename>libbz2.so.1.0</filename> などのように) 複数のバージョン番号がつく場合、<filename
+      class='extension'>.so</filename> の前に (<filename>libbfd-&binutils-version;</filename> などのように) つく場合、または (<filename>libmemusage.so</filename> のように) まったくバージョン番号がつかない場合もあります。
+      一般的に言って、パッケージバージョンとライブラリ名の中のバージョン番号は関連性がありません。
+      </para></footnote>
+      が変更になったとします。
       この場合は、このライブラリに動的リンクを行っていたパッケージは、新たなライブラリに向けてのリンクとなるように再コンパイルすることが必要になります。
-      （なおパッケージバージョンとライブラリ名には関連性はありません。）
       たとえば foo-1.2.3 というパッケージがあって、これが共有ライブラリ <filename
       class='libraryfile'>libfoo.so.1</filename> をインストールしているとします。
       そして新バージョン foo-1.2.4 が共有ライブラリ <filename
@@ -719,16 +742,21 @@
 @z
 
 @x
-    <note><para>There have been some reports of issues when copying between
-    similar but not identical architectures. For instance, the instruction set
-    for an Intel system is not identical with the AMD processor's instructions, and later
-    versions of some processors may provide instructions that are unavailable with
-    earlier versions.</para></note>
+    <important><para>If you want to deploy the LFS system onto a system
+    with a different CPU, when you build <xref linkend='ch-system-gmp'/> and
+    <xref linkend='ch-system-libffi'/> you must follow the notes about
+    overriding the architecture-specific optimization to produce libraries
+    suitable for both the host system and the system(s) where you'll deploy
+    the LFS system.  Otherwise you'll get <computeroutput>Illegal
+    Instruction</computeroutput> errors running LFS.</para></important>
 @y
-    <note><para>
-    類似するアーキテクチャーのシステム間にてコピーを行う際には問題が生じるとの報告があります。
-    例えばインテルアーキテクチャーに対する命令セットは AMD プロセッサーに対するものと完全に一致しているわけではないため、一方の命令セットが後に他方で動作しなくなることも考えられます。
-    </para></note>
+    <important><para>
+    LFS システムを CPU の異なるシステム上にデプロイしたい場合、<xref
+    linkend='ch-system-gmp'/> と <xref linkend='ch-system-libffi'/> のビルドにあたっては、以下のメモ内容に従ってください。
+    つまりアーキテクチャー固有の最適化を通じて、ホストシステムと LFS デプロイ先のシステム双方に適したライブラリを生成するようにしてください。
+    これを行っていないと LFS 実行時に <computeroutput>Illegal
+    Instruction</computeroutput> エラーが発生することになります。
+    </para></important>
 @z
 
 @x
