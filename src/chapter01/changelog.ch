@@ -48,7 +48,7 @@
           <para>[bdubbs] - Update to iana-etc-20250304. Addresses
           <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - Update to sysklogd-2.7.1. Fixes
           <ulink url='&lfs-ticket-root;5668'>#5668</ulink>.</para>
         </listitem>
@@ -84,7 +84,7 @@
           <para>[bdubbs] - Update to expat-2.7.0. Fixes
           <ulink url='&lfs-ticket-root;5675'>#5675</ulink>.</para>
         </listitem>
-        <listitem>
+        <listitem revision='systemd'>
           <para>[bdubbs] - Update to dbus-1.16.2. Fixes
           <ulink url='&lfs-ticket-root;5663'>#5663</ulink>.</para>
         </listitem>
@@ -100,7 +100,7 @@
           <para>[bdubbs] - iana-etc-20250304 へのアップデート。
           <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
         </listitem>
-        <listitem>
+        <listitem revision='sysv'>
           <para>[bdubbs] - sysklogd-2.7.1 へのアップデート。
           <ulink url='&lfs-ticket-root;5668'>#5668</ulink> を Fix に。</para>
         </listitem>
@@ -136,7 +136,7 @@
           <para>[bdubbs] - expat-2.7.0 へのアップデート。
           <ulink url='&lfs-ticket-root;5675'>#5675</ulink> を Fix に。</para>
         </listitem>
-        <listitem>
+        <listitem revision='systemd'>
           <para>[bdubbs] - dbus-1.16.2 へのアップデート。
           <ulink url='&lfs-ticket-root;5663'>#5663</ulink> を Fix に。</para>
         </listitem>

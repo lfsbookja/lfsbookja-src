@@ -4,6 +4,14 @@
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
 @x
+  <!ENTITY host-triplet
+           "<replaceable>&lt;the host triplet&gt;</replaceable>">
+@y
+  <!ENTITY host-triplet
+           "<replaceable>&lt;ホストのトリプレット&gt;</replaceable>">
+@z
+
+@x
 <sect1 id="ch-tools-toolchaintechnotes" xreflabel="Toolchain Technical Notes">
 @y
 <sect1 id="ch-tools-toolchaintechnotes" xreflabel="ツールチェーンの技術的情報">
@@ -87,6 +95,19 @@
 @y
         LFS はクロスツールチェーン（あるいはネイティブツールチェーン）のビルドを説明する書ではなく、その説明は行っていません。
         クロスツールチェーンは、LFS のビルドとは異なる別の目的で用いるものであるため、何を行っているのかが十分に分かっていないまま、クロスチェーン向けのコマンドを利用することは避けてください。
+@z
+
+@x
+        It's known installing GCC pass 2 will break the cross-toolchain.
+        We don't consider it a bug because GCC pass 2 is the last package
+        to be cross-compiled in the book, and we won't <quote>fix</quote>
+        it until we really need to cross-compile some package after GCC
+        pass 2 in the future.
+@y
+        GCC の 2 回めはクロスツールチェーンを崩すものと捉えられています。
+        しかしこれはバグと扱うべきものではありません。
+        というのも GCC の 2 回めというのは、本書においてクロスコンパイルを行う最後のパッケージです。
+        そしてこの GCC 2 回めのビルド以降に、クロスコンパイルを本当に行う必要のあるパッケージが現れるまでは、この状況を<quote>直したくない</quote>のです。
 @z
 
 @x
@@ -357,23 +378,166 @@
       </para>
 @z
 
+% @x
+%     <para>In order to fake a cross-compilation in LFS, the name of the host triplet
+%     is slightly adjusted by changing the &quot;vendor&quot; field in the
+%     <envar>LFS_TGT</envar> variable so it says &quot;lfs&quot;. We also use the
+%     <parameter>--with-sysroot</parameter> option when building the cross-linker and
+%     cross-compiler, to tell them where to find the needed host files. This
+%     ensures that none of the other programs built in <xref
+%     linkend="chapter-temporary-tools"/> can link to libraries on the build
+%     machine. Only two stages are mandatory, plus one more for tests.</para>
+% @y
+%     <para>
+%     LFS ではクロスコンパイルに似せた作業を行うため、ホストのトリプレットを多少調整します。
+%     <envar>LFS_TGT</envar> 変数において &quot;vendor&quot; 項目を変更します。
+%     またクロスリンカーやクロスコンパイラーを生成する際には <parameter>--with-sysroot</parameter> オプションを利用します。
+%     これはホスト内に必要となるファイルがどこにあるかを指示するものです。
+%     <xref linkend="chapter-temporary-tools"/> においてビルドされる他のプログラムが、ビルドマシンのライブラリにリンクできないようにするためです。
+%     以下の 2 段階は必須ですが、最後の 1 つはテスト用です。
+%     </para>
+% @z
+
 @x
-    <para>In order to fake a cross-compilation in LFS, the name of the host triplet
-    is slightly adjusted by changing the &quot;vendor&quot; field in the
-    <envar>LFS_TGT</envar> variable so it says &quot;lfs&quot;. We also use the
-    <parameter>--with-sysroot</parameter> option when building the cross-linker and
-    cross-compiler, to tell them where to find the needed host files. This
-    ensures that none of the other programs built in <xref
-    linkend="chapter-temporary-tools"/> can link to libraries on the build
-    machine. Only two stages are mandatory, plus one more for tests.</para>
+      There are two key points for a cross-compilation:
+@y
+      クロスコンパイルには以下の 2 つのキーポイントがあります。
+@z
+
+@x
+          When producing and processing the machine code supposed to be
+          executed on <quote>the host,</quote> the cross-toolchain must be
+          used.  Note that the native toolchain from <quote>the build</quote>
+          may be still invoked to generate machine code supposed to be
+          executed on <quote>the build.</quote>  For example, the build system
+          may compile a generator with the native toolchain, then generate
+          a C source file with the generator, and finally compile the C
+          source file with the cross-toolchain so the generated code will
+          be able to run on <quote>the host.</quote>
+@y
+          マシンコードを生成して処理するのが<quote>ホスト</quote>上である場合は、クロスツールチェーンを用いなければなりません。
+          <quote>ビルド</quote>システムにあるネイティブなツールチェーンは、<quote>ビルド</quote>システム上において実行することができるマシンコードを生成するため、まだ呼び出される場合があるかもしれません。
+          たとえばビルドシステムがネイティブツールチェーンを使って、ジェネレーターをコンパイルしたとします。
+          そのジェネレーターを使って C ソースファイルを生成し、最終的にクロスツールチェーンを使って C ソースファイルをコンパイルするかもしれません。
+          これによって生成されるコードは<quote>ホスト</quote>上で実行可能となります。
+@z
+
+@x
+          With an autoconf-based build system, this requirement is ensured
+          by using the <parameter>--host</parameter> switch to specify
+          <quote>the host</quote> triplet.  With this switch the build
+          system will use the toolchain components prefixed
+          with <literal>&host-triplet;</literal>
+          for generating and processing the machine code for
+          <quote>the host</quote>; e.g. the compiler will be
+          <command>&host-triplet;-gcc</command> and the
+          <command>readelf</command> tool will be
+          <command>&host-triplet;-readelf</command>.
+@y
+          autoconf ベースのビルドシステムを使った場合、この状況は <parameter>--host</parameter> スイッチを用いることで<quote>ホスト</quote>トリプレットを確実に設定することができます。
+          このスイッチを使えば、ビルドシステムは <literal>&host-triplet;</literal> というプリフィックスのついたツールチェーンコンポーネントを利用して、<quote>ホスト</quote>用のマシンコードを生成します。
+          具体的にコンパイラーは <command>&host-triplet;-gcc</command> となり、<command>readelf</command> ツールは <command>&host-triplet;-readelf</command> となります。
+@z
+
+@x
+          The build system should not attempt to run any generated machine
+          code supposed to be executed on <quote>the host.</quote>  For
+          example, when building an utility natively, its man page can be
+          generated by running the utility with the
+          <parameter>--help</parameter> switch and processing the output,
+          but generally it's not possible to do so for a cross-compilation
+          as the utility may fail
+          to run on <quote>the build</quote>: it's obviously impossible to
+          run ARM64 machine code on a x86 CPU (without an emulator).
+@y
+          <quote>ホスト</quote>上において実行する目的で生成されたマシンコードを、ビルドシステム上で実行してはなりません。
+          たとえばネイティブにユーティリティーをビルドする際に、その man ページは <parameter>--help</parameter> スイッチを使ってユーティリティーを実行させ、その出力を得ようとするでしょう。
+          しかしクロスコンパイルを行っていた場合には、このユーティリティーを<quote>ビルド</quote>上で動作させることに失敗するため、出力は得られません。
+          特に x86 CPU 上において (エミュレーターはないものとして) ARM64 マシンコードが実行できないのは当然です。
+@z
+
+@x
+          With an autoconf-based build system, this requirement is
+          satisfied in <quote>the cross-compilation mode</quote> where
+          the optional features requiring to run machine code for
+          <quote>the host</quote> during the build time are disabled.  When <quote>the
+          host</quote> triplet is explicitly specified, <quote>the
+          cross-compilation mode</quote> is enabled if and only if either
+          the <command>configure</command> script fails to run a dummy
+          program compiled into <quote>the host</quote> machine code, or
+          <quote>the build</quote> triplet is explicitly specified via the
+          <parameter>--build</parameter> switch and it's different from
+          <quote>the host</quote> triplet.
+@y
+          autoconf ベースのビルドシステムを使った場合、この状況は<quote>クロスコンパイルモード</quote>を用いて実現可能であり、<quote>ホスト</quote>向けマシンコードの実行に必要となるオプション機能は、ビルド時には無効化されます。
+          <quote>ホスト</quote>のトリプレットが明示的に指定された場合は、<command>configure</command> スクリプトが<quote>ホスト</quote>向けにコンパイルされたダミープログラムの実行に失敗した場合、あるいは<quote>ビルド</quote>トリプレットが <parameter>--build</parameter> スイッチにより指定され、それが<quote>ホスト</quote>鳥プレととは異なる場合にのみ、<quote>クロスコンパイルモード</quote>が有効になります。
+@z
+
+@x
+    <para>In order to cross-compile a package for the LFS temporary system,
+    the name of the system triplet is slightly adjusted by changing the
+    &quot;vendor&quot; field in the <envar>LFS_TGT</envar> variable so it
+    says &quot;lfs&quot; and <envar>LFS_TGT</envar> is then specified as
+    <quote>the host</quote> triplet via <parameter>--host</parameter>, so
+    the cross-toolchain will be used for generating and processing the
+    machine code running as a part of the LFS temporary system.  And, we
+    also need to enable <quote>the cross-compilation mode</quote>: despite
+    <quote>the host</quote> machine code, i.e. the machine code for the LFS
+    temporary system, is able to execute on the current CPU, it may refer
+    to a library not available on the <quote>the build</quote> (the host
+    distro), or some code or data non-exist or defined differently in the
+    library even if it happens to be available.  When cross-compiling a
+    package for the LFS temporary system, we cannot rely on the
+    <command>configure</command> script to detect this issue with the
+    dummy program: the dummy only uses a few components in
+    <systemitem class='library'>libc</systemitem> that the host distro
+    <systemitem class='library'>libc</systemitem> likely provides (unless,
+    maybe the host distro uses a different
+    <systemitem class='library'>libc</systemitem> implementation like Musl),
+    so it won't fail like how the really useful programs would likely.
+    Thus we must explicitly specify <quote>the build</quote> triplet to
+    enable <quote>the cross-compilation mode.</quote>  The value we use is
+    just the default, i.e. the original system triplet from
+    <command>config.guess</command> output, but <quote>the cross-compilation
+    mode</quote> depends on an explicit specification as we've
+    discussed.</para>
 @y
     <para>
-    LFS ではクロスコンパイルに似せた作業を行うため、ホストのトリプレットを多少調整します。
-    <envar>LFS_TGT</envar> 変数において &quot;vendor&quot; 項目を変更します。
-    またクロスリンカーやクロスコンパイラーを生成する際には <parameter>--with-sysroot</parameter> オプションを利用します。
-    これはホスト内に必要となるファイルがどこにあるかを指示するものです。
-    <xref linkend="chapter-temporary-tools"/> においてビルドされる他のプログラムが、ビルドマシンのライブラリにリンクできないようにするためです。
-    以下の 2 段階は必須ですが、最後の 1 つはテスト用です。
+    LFS の一時システム向けのパッケージをクロスコンパイルするため、<envar>LFS_TGT</envar> 変数においてシステムトリプレットの &quot;vendor&quot; フィールドを &quot;lfs&quot; として若干修正します。
+    そして<quote>ホスト</quote>トリプレットを <parameter>--host</parameter> を通じて指定することで、クロスツールチェーンが LFS 一時システムにおいて稼働するマシンコードを生成実行するようにします。
+    また<quote>クロスコンパイルモード</quote>を有効にすることも必要です。
+    <quote>ホスト</quote>向けマシンコード、すなわち LFS 一時システム向けのマシンコードは、現在の CPU 上で実行できるわけですが、<quote>ビルド</quote> (ホストディストロ) 上では利用できないライブラリを参照するかもしれませんし、参照できたとしても、存在しなかったり異なった定義となってしまうようなコードやデータの参照が起きるかもしれません。
+    LFS 一時システム向けのパッケージをクロスコンパイルする際には、<command>configure</command> スクリプトがその問題を判別するダミープログラムのことを信用することはできません。
+    つまり (ホストディストロが Musl のように <systemitem class='library'>libc</systemitem> とは異なる実装をしていない限り) ダミープログラムは、ホストディストロの <systemitem class='library'>libc</systemitem> が提供する可能性のある、<systemitem class='library'>libc</systemitem> の機能の一部を利用するに過ぎないからです。
+    したがってよくできたプログラムが失敗するようであっても、処理には成功するのかもしれません。
+    そこで<quote>ビルド</quote>トリプレットの指定は明示的に行わなければならず、これによって<quote>クロスコンパイルモード</quote>を有効にします。
+    設定する値は普通のデフォルト値です。
+    つまり <command>config.guess</command> の出力から得られる、元々のシステムトリプレットです。
+    <quote>クロスコンパイルモード</quote> は上で述べたように明示的な指定によって有効になります。
+    </para>
+@z
+
+@x
+    <para>We use the <parameter>--with-sysroot</parameter> option when
+    building the cross-linker and cross-compiler, to tell them where to find
+    the needed files for <quote>the host.</quote> This nearly ensures that
+    none of the other programs built in
+    <xref linkend="chapter-temporary-tools"/> can link to libraries on
+    <quote>the build.</quote> The word <quote>nearly</quote> is used because
+    <command>libtool</command>, a <quote>compatibility</quote> wrapper of
+    the compiler and the linker for autoconf-based build systems,
+    can try to be too clever and mistakenly pass options allowing the linker
+    to find libraries of <quote>the build.</quote>
+    To prevent this fallout, we need to delete the libtool archive
+    (<filename class='extension'>.la</filename>) files and fix up an
+    outdated libtool copy shipped with the Binutils code.</para>
+@y
+    <para>
+    クロスリンカーとクロスコンパイラーをビルドする際には <parameter>--with-sysroot</parameter> オプションを使います。
+    これは<quote>ホスト</quote>が必要とするファイルの検索ディレクトリを指示するためです。
+    こうしておけば <xref linkend="chapter-temporary-tools"/> においてビルドするそれ以外のプログラムが、<quote>ビルド</quote>上のライブラリにリンクすることをほぼ防げます。
+    ここで<quote>ほぼ</quote>という表現を使ったのは、コンパイラーの<quote>互換性</quote>ラッパーである <command>libtool</command> と、autoconf ベースのビルドシステム向けのリンカーは、よくできたものであるがために、リンカーに対して<quote>ビルド</quote>システム内のライブラリを検索するようなオプションを与えてしまいます。
+    このことを避けるために libtool アーカイブ (<filename class='extension'>.la</filename>) ファイルは削除するものとし、Binutils に同梱されている古い libtool は修正するようにしています。
     </para>
 @z
 
@@ -400,10 +564,10 @@
 @z
 @x
             <entry>3</entry><entry>lfs</entry><entry>lfs</entry><entry>lfs</entry>
-            <entry>Rebuild and test cc-lfs using cc-lfs on lfs.</entry>
+            <entry>Rebuild (and maybe test) cc-lfs using cc-lfs on lfs.</entry>
 @y
             <entry>3</entry><entry>lfs</entry><entry>lfs</entry><entry>lfs</entry>
-            <entry>lfs 上の cc-lfs を使い cc-lfs そのものの再ビルドとテストを実施。</entry>
+            <entry>lfs 上の cc-lfs を使い cc-lfs の再ビルド (とおそらくテスト) を実施。</entry>
 @z
 
 @x
@@ -455,51 +619,60 @@
     <para>The upshot of the preceding paragraph is that cc1 is unable to
     build a fully functional libstdc++ with the degraded libgcc, but cc1
     is the only compiler available for building the C/C++ libraries
-    during stage 2. There are two reasons we don't immediately use the
-    compiler built in stage 2, cc-lfs, to build those libraries.</para>
+    during stage 2.  As we've discussed, we cannot run cc-lfs on pc (the
+    host distro) because it may require some library, code, or data not
+    available on <quote>the build</quote> (the host distro).
+    So when we build gcc stage 2, we override the library
+    search path to link libstdc++ against the newly
+    rebuilt libgcc instead of the old, degraded build.  This makes the rebuilt
+    libstdc++ fully functional.</para>
 @y
     <para>
     上の段落における結論は以下のようになります。
     グレードの落ちた libgcc を使っている以上、cc1 からは完全な libstdc++ はビルドできないということです。
     しかし第 2 段階においては、C/C++ ライブラリをビルドできる唯一のコンパイラーです。
-    第 2 段階でビルドしたコンパイラー cc-lfs を、そういったライブラリビルド用として即座には利用しない理由が 2 つあります。
+    すでに述べているように cc-lfs は pc (ホストディストロ) 上で実行することはできません。
+    それはライブラリー、コード、データのいずれかが利用できないにも関わらず、<quote>ビルド</quote> (ホストディストロ) 上において必要となることがあるからです。
+    そこで gcc の第 2 段階においてはライブラリ検索パスを上書きして、新たに再ビルドされた libgcc に対してリンクされる libstdc++ を使ってビルドするようにします。
+    つまりはデグレードしたビルドです。
+    こうすることで、再ビルドした libstdc++ は完全に機能することになります。
     </para>
 @z
 
-@x
-          Generally speaking, cc-lfs cannot run on pc (the host system).  Even though the
-          triplets for pc and lfs are compatible with each other, an executable
-          for lfs must depend on glibc-&glibc-version;; the host distro
-          may utilize either a different implementation of libc (for example, musl), or
-          a previous release of glibc (for example, glibc-2.13).
-@y
-          一般的に cc-lfs は PC（ホストシステム）上で動作させることはできません。
-          PC と LFS のトリプレットに互換性があったとしても、LFS 向けの実行ファイルは Glibc-&glibc-version; に依存していなければなりません。
-          一方ホストディストロは、異なる libc 実装（たとえば musl）や古い Glibc（たとえば glibc-2.13）を利用しているかもしれません。
-@z
+%@x
+%          Generally speaking, cc-lfs cannot run on pc (the host system).  Even though the
+%          triplets for pc and lfs are compatible with each other, an executable
+%          for lfs must depend on glibc-&glibc-version;; the host distro
+%          may utilize either a different implementation of libc (for example, musl), or
+%          a previous release of glibc (for example, glibc-2.13).
+%@y
+%          一般的に cc-lfs は PC（ホストシステム）上で動作させることはできません。
+%          PC と LFS のトリプレットに互換性があったとしても、LFS 向けの実行ファイルは Glibc-&glibc-version; に依存していなければなりません。
+%          一方ホストディストロは、異なる libc 実装（たとえば musl）や古い Glibc（たとえば glibc-2.13）を利用しているかもしれません。
+%@z
 
-@x
-          Even if cc-lfs can run on pc, using it on pc would create
-          a risk of linking to the pc libraries, since cc-lfs is a native
-          compiler.
-@y
-          PC 上において cc-lfs が動作できたとしても、それを使い続けると、その PC 上のライブラリにリンクしてしまうリスクがあります。
-          これは cc-lfs がネイティブコンパイラーであるからです。
-@z
+%@x
+%          Even if cc-lfs can run on pc, using it on pc would create
+%          a risk of linking to the pc libraries, since cc-lfs is a native
+%          compiler.
+%@y
+%          PC 上において cc-lfs が動作できたとしても、それを使い続けると、その PC 上のライブラリにリンクしてしまうリスクがあります。
+%          これは cc-lfs がネイティブコンパイラーであるからです。
+%@z
 
-@x
-    <para>So when we build gcc stage 2, we instruct the building system to
-    rebuild libgcc and libstdc++ with cc1, but we link libstdc++ to the newly
-    rebuilt libgcc instead of the old, degraded build.  This makes the rebuilt
-    libstdc++ fully functional.</para>
-@y
-    <para>
-    そこで libstdc++ は、2 回めの gcc の一部として再ビルドしないといけません。
-    そこで GCC 2 回めのビルドにあたっては、cc1 を使って libgcc と libstdc++ を再ビルドするように指示します。
-    ただしこのとき、libstdc++ がリンクされるのは、デグレードした古い libgcc ではなく、新たに再ビルドされた libgcc です。
-    こうして libstdc++ は再ビルドによって完全な機能を備えることになります。
-    </para>
-@z
+%@x
+%    <para>So when we build gcc stage 2, we instruct the building system to
+%    rebuild libgcc and libstdc++ with cc1, but we link libstdc++ to the newly
+%    rebuilt libgcc instead of the old, degraded build.  This makes the rebuilt
+%    libstdc++ fully functional.</para>
+%@y
+%    <para>
+%    そこで libstdc++ は、2 回めの gcc の一部として再ビルドしないといけません。
+%    そこで GCC 2 回めのビルドにあたっては、cc1 を使って libgcc と libstdc++ を再ビルドするように指示します。
+%    ただしこのとき、libstdc++ がリンクされるのは、デグレードした古い libgcc ではなく、新たに再ビルドされた libgcc です。
+%    こうして libstdc++ は再ビルドによって完全な機能を備えることになります。
+%    </para>
+%@z
 
 @x
     <para>In &ch-final; (or <quote>stage 3</quote>), all the packages needed for
@@ -509,12 +682,11 @@
     package on a completed LFS system, the reinstalled content of the package
     should be the same as the content of the same package when first installed in
     &ch-final;.  The temporary packages installed in &ch-tmp-cross; or
-    &ch-tmp-chroot; cannot satisfy this requirement, because some of them
-    are built without optional dependencies, and autoconf cannot
-    perform some feature checks in &ch-tmp-cross; because of cross-compilation,
-    causing the temporary packages to lack optional features,
-    or use suboptimal code routines. Additionally, a minor reason for
-    rebuilding the packages is to run the test suites.</para>
+    &ch-tmp-chroot; cannot satisfy this requirement, because some optional
+    features of them are disabled because of either the missing
+    dependencies or the <quote>cross-compilation mode.</quote>
+    Additionally, a minor reason for rebuilding the packages is to run the
+    test suites.</para>
 @y
     <para>
     &ch-final; (つまり<quote>3 回め</quote>) において、LFS システムに必要なパッケージがすべてビルドされます。
@@ -522,9 +694,7 @@
     そのようにしてパッケージを再ビルドする最大の理由は、そのパッケージを安定させるためです。
     完全に仕上がった LFS システムに、どれかの LFS パッケージを再インストールしたとしたら、その際にインストールされる内容は、&ch-final; において初めてインストールされるものと、全く同一でなければなりません。
     &ch-tmp-cross; や &ch-tmp-chroot; においてインストールする一時的なパッケージでは、この要件を満たしません。
-    なぜならそういったものに対しては、任意の依存パッケージを含めずにビルドしているからです。
-    また &ch-tmp-cross; において autoconf が行う機能チェックは、クロスコンパイルが原因で一部が適切に行われません。
-    そうなると一時パッケージには、オプション機能がコンパイルされなかったり、最適化が不十分なコードルーチンが用いられたりすることがあります。
+    なぜならそういった任意機能に対しては、依存パッケージがない、クロスコンパイルモードである、といった理由により利用できないからです。
     さらにパッケージ再ビルドのもう一つの理由は、テストスイートを実行するためです。
     </para>
 @z
@@ -753,35 +923,55 @@
     </para>
 @z
 
+%@x
+%    <para>Next comes glibc. The most important
+%    considerations for building glibc are the compiler, binary tools, and
+%    kernel headers. The compiler and binary tools are generally not an issue
+%    since glibc will always use those relating to the <parameter>--host</parameter>
+%    parameter passed to its configure script; e.g., in our case, the compiler
+%    will be <command>$LFS_TGT-gcc</command> and the <command>readelf</command>
+%    tool will be <command>$LFS_TGT-readelf</command>. The kernel headers can
+%    be a bit more complicated. Therefore, we take no risks and use
+%    the available configure switch to enforce the correct selection. After
+%    the run of <command>configure</command>, check the contents of the
+%    <filename>config.make</filename> file in the <filename
+%    class="directory">build</filename> directory for all important details.
+%    These items highlight an important aspect of the glibc
+%    package&mdash;it is very self-sufficient in terms of its build machinery,
+%    and generally does not rely on toolchain defaults.</para>
+%@y
+%    <para>
+%    次のパッケージは glibc です。
+%    glibc 構築の際に気にかけるべき重要なものは、コンパイラー、バイナリツール、カーネルヘッダーです。
+%    コンパイラーやバイナリーツールについては、一般にはあまり問題にはなりません。
+%    glibc は常に configure スクリプトにて指定される <parameter>--host</parameter> パラメーターに関連づけしたコンパイラーを用いるからです。
+%    我々の作業においてそのコンパイラーとは <command>$LFS_TGT-gcc</command> であり、<command>readelf</command> ツールは <command>$LFS_TGT-readelf</command> になります。
+%    カーネルヘッダーは多少複雑です。
+%    したがって無理なことはせずに有効な configure オプションを選択することが必要です。
+%    <command>configure</command> 実行の後は <filename
+%    class="directory">build</filename> ディレクトリにある <filename>config.make</filename> ファイルに重要な情報が示されているので確認してみてください。
+%    これらの指定は Glibc パッケージの重要な面を示しています。
+%    glibc がビルドされるメカニズムは自己完結したビルドが行われるものであり、ツールチェーンのデフォルト設定には基本的に依存しないことを示しています。
+%    </para>
+%@z
+
 @x
-    <para>Next comes glibc. The most important
-    considerations for building glibc are the compiler, binary tools, and
-    kernel headers. The compiler and binary tools are generally not an issue
-    since glibc will always use those relating to the <parameter>--host</parameter>
-    parameter passed to its configure script; e.g., in our case, the compiler
-    will be <command>$LFS_TGT-gcc</command> and the <command>readelf</command>
-    tool will be <command>$LFS_TGT-readelf</command>. The kernel headers can
-    be a bit more complicated. Therefore, we take no risks and use
-    the available configure switch to enforce the correct selection. After
-    the run of <command>configure</command>, check the contents of the
-    <filename>config.make</filename> file in the <filename
-    class="directory">build</filename> directory for all important details.
-    These items highlight an important aspect of the glibc
-    package&mdash;it is very self-sufficient in terms of its build machinery,
-    and generally does not rely on toolchain defaults.</para>
+    <para>Next comes glibc. This is the first package that we cross-compile.
+    We use the <parameter>--host=$LFS_TGT</parameter> option to make
+    the build system to use those tools prefixed with
+    <literal>$LFS_TGT-</literal>, and the
+    <parameter>--build=$(../scripts/config.guess)</parameter> option to
+    enable <quote>the cross-compilation mode</quote> as we've discussed.
+    The <envar>DESTDIR</envar> variable is used to force installation into
+    the LFS file system.</para>
 @y
     <para>
     次のパッケージは glibc です。
-    glibc 構築の際に気にかけるべき重要なものは、コンパイラー、バイナリツール、カーネルヘッダーです。
-    コンパイラーやバイナリーツールについては、一般にはあまり問題にはなりません。
-    glibc は常に configure スクリプトにて指定される <parameter>--host</parameter> パラメーターに関連づけしたコンパイラーを用いるからです。
-    我々の作業においてそのコンパイラーとは <command>$LFS_TGT-gcc</command> であり、<command>readelf</command> ツールは <command>$LFS_TGT-readelf</command> になります。
-    カーネルヘッダーは多少複雑です。
-    したがって無理なことはせずに有効な configure オプションを選択することが必要です。
-    <command>configure</command> 実行の後は <filename
-    class="directory">build</filename> ディレクトリにある <filename>config.make</filename> ファイルに重要な情報が示されているので確認してみてください。
-    これらの指定は Glibc パッケージの重要な面を示しています。
-    glibc がビルドされるメカニズムは自己完結したビルドが行われるものであり、ツールチェーンのデフォルト設定には基本的に依存しないことを示しています。
+    これはクロスコンパイルを行う最初のパッケージになります。
+    ここでは <parameter>--host=$LFS_TGT</parameter> というオプションを使います。
+    これを行うことによって、ビルドシステムが <literal>$LFS_TGT-</literal> というプリフィックスのついたツール類を用いるようにするためです。
+    さらに <parameter>--build=$(../scripts/config.guess)</parameter> オプションを指定することによって、上で述べたような<quote>クロスコンパイルモード</quote>を有効にします。
+    環境変数 <envar>DESTDIR</envar> はインストール先を LFS ファイルシステムとするために利用します。
     </para>
 @z
 
@@ -789,14 +979,12 @@
     <para>As mentioned above, the standard C++ library is compiled next, followed in
     <xref linkend="chapter-temporary-tools"/> by other programs that must
     be cross-compiled to break circular dependencies at build time.
-    The install step of all those packages uses the
-    <envar>DESTDIR</envar> variable to force installation
-    in the LFS filesystem.</para>
+    The steps for those packages are similar to the steps for glibc.</para>
 @y
     <para>
     すでに述べたように、標準 C++ ライブラリはこの後にコンパイルします。
     そして <xref linkend="chapter-temporary-tools"/> では、自己依存性を持ったプログラムをビルドできるように、その依存性を無視するためにクロスコンパイル行っていきます。
-    そのようなパッケージのインストール手順においては <envar>DESTDIR</envar> 変数を使って、LFS ファイルシステム内にインストールするようにします。
+    これらのパッケージにおける手順は glibc の手順と同等です。
     </para>
 @z
 
@@ -805,20 +993,12 @@
     LFS compiler is installed. First binutils-pass2 is built,
     in the same <envar>DESTDIR</envar> directory as the other programs,
     then the second pass of gcc is constructed, omitting some
-    non-critical libraries.  Due to some weird logic in gcc's
-    configure script, <envar>CC_FOR_TARGET</envar> ends up as
-    <command>cc</command> when the host is the same as the target, but
-    different from the build system. This is why
-    <parameter>CC_FOR_TARGET=$LFS_TGT-gcc</parameter> is declared explicitly
-    as one of the configuration options.</para>
+    non-critical libraries.</para>
 @y
     <para>
     <xref linkend="chapter-temporary-tools"/> の最後には、LFS のネイティブコンパイラーをインストールします。
     はじめに <envar>DESTDIR</envar> ディレクトリを使って binutils 2 回めをビルドし、他のプログラムにおいても同じようにインストールを行います。
     2 回めとなる gcc ビルドでは、不必要なライブラリは省略します。
-    gcc の configure スクリプトにはハードコーディングされている部分があるので、<envar>CC_FOR_TARGET</envar> はホストのターゲットが同じであれば <command>cc</command> になります。
-    しかしビルドシステムにおいては異なります。
-    そこで configure オプションには <parameter>CC_FOR_TARGET=$LFS_TGT-gcc</parameter> を明示的に指定するようにしています。
     </para>
 @z
 

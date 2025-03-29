@@ -114,18 +114,6 @@
           </para>
 @z
 
-@x --with-headers=$LFS/usr/include
-          <para>This tells Glibc to compile itself against the headers
-          recently installed to the $LFS/usr/include directory, so that
-          it knows exactly what features the kernel has and can optimize
-          itself accordingly.</para>
-@y
-          <para>
-          これまでに $LFS/usr/include ディレクトリにインストールしたヘッダーファイルを用いて Glibc をビルドすることを指示します。
-          こうすればカーネルにどのような機能があるか、どのようにして処理効率化を図れるかなどの情報を Glibc が得られることになります。
-          </para>
-@z
-
 @x libc_cv_slibdir=/usr/lib
           <para>This ensures that the library is installed in /usr/lib instead
           of the default /lib64 on 64-bit machines.</para>
@@ -213,7 +201,7 @@
           class="directory">/</filename>) directory. Here we specify that
           the package is installed in <filename class="directory">
           $LFS</filename>, which will become the root directory in <xref linkend=
-          "ch-tools-chroot"/>.</para>
+          "ch-tools-chroot" role='.'/></para>
 @y
           <para>
           make 変数 <envar>DESTDIR</envar> はほとんどすべてのパッケージにおいて、そのパッケージをインストールするディレクトリを定義するために利用されています。
@@ -235,54 +223,166 @@
 @z
 
 @x
-      <para>At this point, it is imperative to stop and ensure that the basic
-      functions (compiling and linking) of the new toolchain are working as
-      expected. To perform a sanity check, run the following commands:</para>
+    <para>Now that our cross toolchain is in place, it is important to ensure
+    that compiling and linking will work as expected. We do this by performing
+    some sanity checks:</para>
 @y
-      <para>
-      この時点で以下を必ず実施します。
-      新しいツールチェーンの基本的な機能 (コンパイルやリンク) が正常に処理されるかどうかを確認することです。
-      健全性のチェック (sanity check) を行うものであり、以下のコマンドを実行します。
-      </para>
+    <para>
+    ここにクロスツールチェーンが用意できましたので、コンパイルとリンクが思うとおりに作動する確認をとることが必要になります。
+    以下の健全性チェックを実行してこれを確認します。
+    </para>
 @z
 
 @x
-      <para>If everything is working correctly, there should be no errors,
-      and the output of the last command will be of the form:</para>
+  <para>There should be no errors,
+  and the output of the last command will be (allowing for
+  platform-specific differences in the dynamic linker name):</para>
 @y
-      <para>
-      すべてが正常に処理され、エラーが発生しなければ、最終のコマンドの実行結果として以下が出力されるはずです。
-      </para>
+  <para>
+  エラーは出力しないはずであり、最後のコマンドからの出力は (ダイナミックリンカー名がプラットフォームごとに異なることを除けば) 以下のようになるはずです。
+  </para>
 @z
 
 @x
-      <para>Note that for 32-bit machines, the interpreter name will be
-      <filename>/lib/ld-linux.so.2</filename>.</para>
+  <para>Note that this path should not contain
+  <filename class='directory'>/mnt/lfs</filename> (or the value of
+  the <envar>LFS</envar> variable if you used a different one).  The path is
+  resolved when the compiled program is executed, and that should only happen
+  after we enter the chroot environment where the kernel would consider
+  <filename class='directory'>$LFS</filename> as the root directory
+  (<filename class='directory'>/</filename>).</para>
 @y
-      <para>
-      インタープリター名は 32 ビットマシンの場合 <filename>/lib/ld-linux.so.2</filename> となります。
-      </para>
+  <para>
+  このパスには <filename class='directory'>/mnt/lfs</filename> (あるいは <envar>LFS</envar> に指定しているパス) は含まれていないはずです。
+  こうなるのも、そもそもパスが解釈されるのは、コンパイルしたプログラムが実行される際です。
+  そしてここでは chroot 環境に入っているため、カーネルが <filename class='directory'>$LFS</filename> をルートディレクトリ (<filename class='directory'>/</filename>) であると解釈しているからこそ、そのようになります。</para>
 @z
 
 @x
-      <para>If the output is not as shown above, or there is no output at all,
-      then something is wrong. Investigate and retrace the steps to find out
-      where the problem is and correct it. This issue must be resolved before
-      continuing.</para>
+  <para>Now make sure that we're set up to use the correct start files:</para>
 @y
-      <para>
-      出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
-      どこに問題があるのか調査、再試行を行って解消してください。
-      解決せずにこの先に進まないでください。
-      </para>
+  <para>
+  ファイルが正しくできていることを確認します。
+  </para>
 @z
 
 @x
-      <para>Once all is well, clean up the test file:</para>
+  <para>The output of the last command should be:</para>
 @y
-      <para>
-      すべてが完了したら、テストファイルを削除します。
-      </para>
+  <para>
+  最後のコマンドの出力は以下のようになるはずです。
+  </para>
+@z
+
+@x
+  <para>Verify that the compiler is searching for the correct header
+  files:</para>
+@y
+  <para>
+  コンパイラーが正しいヘッダーファイルを読み取っているかどうかを検査します。
+  </para>
+@z
+
+@x
+  <para>This command should return the following output:</para>
+@y
+  <para>
+  上のコマンドは以下の出力を返します。
+  </para>
+@z
+
+@x
+   <para>Again, the directory named after your target triplet may be
+   different than the above, depending on your system architecture.</para>
+@y
+   <para>
+   もう一度触れておきますが、プラットフォームの三つの組 (target triplet)の次にくるディレクトリ名は CPU アーキテクチャーにより異なる点に注意してください。
+   </para>
+@z
+
+@x
+  <para>Next, verify that the new linker is being used with the correct search paths:</para>
+@y
+  <para>
+  次に、新たなリンカーが正しいパスを検索して用いられているかどうかを検査します。
+  </para>
+@z
+
+@x
+  <para>References to paths that have components with '-linux-gnu' should
+  be ignored, but otherwise the output of the last command should be:</para>
+@y
+  <para>
+  '-linux-gnu' を含んだパスは無視すれば、最後のコマンドの出力は以下となるはずです。
+  </para>
+@z
+
+@x
+   <para>A 32-bit system may use a few other directories, but anyway
+   the important facet here is all the paths should begin with an equal sign
+   (<literal>=</literal>), which would be replaced with the sysroot
+   directory that we've configured for the linker.</para>
+@y
+   <para>
+   32ビットシステムではディレクトリが多少異なります。
+   ただしここで重要なことは、パス名の先頭がすべて等号記号 (<literal>=</literal>) で始まっている点です。
+   これはリンカーに対して設定した sysroot ディレクトリに置き換わります。
+   </para>
+@z
+
+@x
+  <para>Next make sure that we're using the correct libc:</para>
+@y
+  <para>
+  次に libc が正しく用いられていることを確認します。
+  </para>
+@z
+
+@x
+  <para>The output of the last command should be:</para>
+@y
+  <para>
+  最後のコマンドの出力は以下のようになるはずです。
+  </para>
+@z
+
+@x
+  <para>Make sure GCC is using the correct dynamic linker:</para>
+@y
+  <para>
+  GCC が正しくダイナミックリンカーを用いているかを確認します。
+  </para>
+@z
+
+@x
+  <para>The output of the last command should be (allowing for
+  platform-specific differences in dynamic linker name):</para>
+@y
+  <para>
+  上のコマンドの出力は以下のようになるはずです。
+  (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。)
+  </para>
+@z
+
+@x
+  <para>If the output does not appear as shown above or is not received
+  at all, then something is seriously wrong. Investigate and retrace the
+  steps to find out where the problem is and correct it.  Any
+  issues should be resolved before continuing with the process.</para>
+@y
+  <para>
+  出力結果が上と異なっていたり、出力が全く得られなかったりした場合は、何かが根本的に間違っているということです。 
+  どこに問題があるのか調査、再試行を行って解消してください。
+  問題を残したままこの先には進まないでください。
+  </para>
+@z
+
+@x
+  <para>Once everything is working correctly, clean up the test files:</para>
+@y
+  <para>
+  すべてが正しく動作したら、テストに用いたファイルを削除します。
+  </para>
 @z
 
 @x
