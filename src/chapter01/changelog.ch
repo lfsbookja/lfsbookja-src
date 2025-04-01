@@ -38,6 +38,120 @@
 @z
 
 @x
+      <para>2025-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1263. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20250328. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.8.0. Fixes
+          <ulink url='&lfs-ticket-root;5684'>#5684</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.41. Fixes
+          <ulink url='&lfs-ticket-root;5648'>#5648</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2025b. Fixes
+          <ulink url='&lfs-ticket-root;5681'>#5681</ulink>.</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Update to shadow-4.17.4. Fixes
+          <ulink url='&lfs-ticket-root;5678'>#5678</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-78.1.0. Fixes
+          <ulink url='&lfs-ticket-root;5676'>#5676</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to patch-2.8. Fixes
+          <ulink url='&lfs-ticket-root;5689'>#5689</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpfr-4.2.2. Fixes
+          <ulink url='&lfs-ticket-root;5677'>#5677</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-34.2. Fixes
+          <ulink url='&lfs-ticket-root;5688'>#5688</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.25. Fixes
+          <ulink url='&lfs-ticket-root;5679'>#5679</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flit_core-3.12.0. Fixes
+          <ulink url='&lfs-ticket-root;5683'>#5683</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.7.1. Fixes
+          <ulink url='&lfs-ticket-root;5685'>#5685</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1263 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20250328 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz-5.8.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5684'>#5684</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.41 へのアップデート。
+          <ulink url='&lfs-ticket-root;5648'>#5648</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2025b へのアップデート。
+          <ulink url='&lfs-ticket-root;5681'>#5681</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - shadow-4.17.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5678'>#5678</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-78.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5676'>#5676</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - patch-2.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5689'>#5689</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpfr-4.2.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5677'>#5677</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-34.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5688'>#5688</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.25 へのアップデート。
+          <ulink url='&lfs-ticket-root;5679'>#5679</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flit_core-3.12.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5683'>#5683</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.7.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5685'>#5685</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-03-15</para>
       <itemizedlist>
         <listitem>
