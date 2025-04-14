@@ -339,38 +339,6 @@
 @z
 
 %----------------------------------------------------------------------
-@x Check
-          <seg>Gawk, GCC, Grep, Make, Sed, and Texinfo</seg>
-@y
-          <seg>Gawk, GCC, Grep, Make, Sed, Texinfo</seg>
-@z
-@x
-          <seg>Bash and Gawk</seg>
-@y
-          <seg>Bash, Gawk</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-            <ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink>
-            and
-            <ulink url='http://cyberelk.net/tim/software/patchutils/'>
-              patchutils</ulink>
-@y
-            <ulink url='&github;/testing-cabal/subunit'>libsubunit</ulink>,
-            <ulink url='http://cyberelk.net/tim/software/patchutils/'>
-              patchutils</ulink>
-@z
-
-%----------------------------------------------------------------------
 @x coreutils
           <seg>Autoconf, Automake, Bash, Binutils, Coreutils, GCC, Gettext,
           Glibc, GMP, Grep, Libcap, Make, OpenSSL, Patch, Perl, Sed, and

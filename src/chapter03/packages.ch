@@ -121,14 +121,6 @@
         <para>&Download;: <ulink url="&bzip2-url;"/></para>
 @z
 
-@x check
-        <para>Home page: <ulink url="&check-home;"/></para>
-        <para>Download: <ulink url="&check-url;"/></para>
-@y
-        <para>&Homepage;: <ulink url="&check-home;"/></para>
-        <para>&Download;: <ulink url="&check-url;"/></para>
-@z
-
 @x coreutils
         <para>Home page: <ulink url="&coreutils-home;"/></para>
         <para>Download: <ulink url="&coreutils-url;"/></para>

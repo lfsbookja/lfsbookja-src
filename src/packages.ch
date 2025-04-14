@@ -40,12 +40,6 @@
 @z
 
 @x
-<!ENTITY check-fin-sbu "0.1 SBU (about 2.1 SBU with tests)">
-@y
-<!ENTITY check-fin-sbu "0.1 SBU (テスト込みで約 2.1 SBU)">
-@z
-
-@x
 <!ENTITY dejagnu-tmp-sbu "less than 0.1 SBU">
 @y
 <!ENTITY dejagnu-tmp-sbu "0.1 SBU 以下">

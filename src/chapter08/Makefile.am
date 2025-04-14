@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	bison.ch          \
 	bzip2.ch          \
 	chapter08.ch      \
-	check.ch          \
 	cleanup.ch        \
 	coreutils.ch      \
 	dbus.ch           \
