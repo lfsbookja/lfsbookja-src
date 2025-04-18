@@ -568,6 +568,14 @@
         <para>&Download;: <ulink url="&openssl-url;"/></para>
 @z
 
+@x Packaging
+        <para>Home page: <ulink url="&packaging-home;"/></para>
+        <para>Download: <ulink url="&packaging-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&packaging-home;"/></para>
+        <para>&Download;: <ulink url="&packaging-url;"/></para>
+@z
+
 @x patch
         <para>Home page: <ulink url="&patch-home;"/></para>
         <para>Download: <ulink url="&patch-url;"/></para>

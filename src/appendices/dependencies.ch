@@ -1956,6 +1956,37 @@
           <seg>なし</seg>
 @z
 %----------------------------------------------------------------------
+@x
+<!-- Begin Packaging dependency info -->
+@y
+<!-- Begin Packaging dependency info -->
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Wheel</seg>
+@y
+          <seg>Wheel</seg>
+@z
+@x
+            <ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>
+@y
+            <ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>
+@z
+%----------------------------------------------------------------------
 @x Patch
           <seg>Attr, Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and
           Sed</seg>
@@ -2613,9 +2644,9 @@
 
 %----------------------------------------------------------------------
 @x Wheel
-          <seg>Python and Flit-core</seg>
+          <seg>Python, Flit-core, and packaging</seg>
 @y
-          <seg>Python, Flit-core</seg>
+          <seg>Python, Flit-core, packaging</seg>
 @z
 @x
           <seg>Python</seg>

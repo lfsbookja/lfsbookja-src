@@ -64,6 +64,7 @@ CHANGE_FILES = \
 	ncurses.ch        \
 	ninja.ch          \
 	openssl.ch        \
+	packaging.ch      \
 	patch.ch          \
 	perl.ch           \
 	pkgconf.ch        \

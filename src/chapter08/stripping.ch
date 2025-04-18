@@ -41,14 +41,24 @@
 
 @x
   <para>A <command>strip</command> command with the
-  <parameter>--strip-unneeded</parameter> option removes all debug symbols
-  from a binary or library.  It also removes all symbol table entries not
+  <parameter>--strip-unneeded</parameter> option removes all debug symbols from
+  a binary or library.  It also removes all symbol table entries not normally
   needed by the linker (for static libraries) or dynamic linker (for
-  dynamically linked binaries and shared libraries).</para>
+  dynamically linked binaries and shared libraries). Using
+  <parameter>--strip-debug</parameter> does not remove symbol table entries
+  that may be needed by some applications.  The difference between "unneeded"
+  and "debug" is very small. For example, an unstripped libc.a is 22.4 MB.
+  After stripping with --strip-debug it is 5.9 MB.  Using --strip-unneeded only
+  reduces the size further to only 5.8 MB.</para>
 @y
   <para>
   <command>strip</command> コマンドに <parameter>--strip-unneeded</parameter> オプションをつけて実行すると、バイナリやライブラリからデバッグシンボルをすべて削除します。
-  そして（スタティックライブラリ向けの）リンカーや（動的リンクバイナリあるいは共有ライブラリ向けの）ダイナミックリンカーにとって不要なシンボルテーブル項目もすべて削除します。
+  そして（スタティックライブラリ向けの）リンカーや（動的リンクバイナリあるいは共有ライブラリ向けの）ダイナミックリンカーにとって通常なら不要なシンボルテーブル項目もすべて削除します。
+  <parameter>--strip-debug</parameter> を使うと、特定のアプリケーションに必要となるシンボルテーブルエントリは削除しなくなります。
+  "unneeded" と "debug" の違いはわずかなものです。
+  たとえば unstripped な libc.a は 22.4 MB です。
+  --strip-debug によってストリップを行うと 5.9 MB になります。
+  一方 --strip-unneeded では減じられる容量はほんのわずかで 5.8 MB となります。
   </para>
 @z
 
