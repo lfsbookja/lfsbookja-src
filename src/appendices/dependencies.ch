@@ -682,9 +682,9 @@
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Wheel</seg>
+          <seg>Packaging and Wheel</seg>
 @y
-          <seg>Wheel</seg>
+          <seg>Packaging, Wheel</seg>
 @z
 @x
             <ulink url='&blfs-book;general/python-modules.html#pytest'>pytest</ulink>
@@ -977,9 +977,9 @@
           <seg>GCC, Glibc, Perl</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>Man-DB</seg>
@@ -1301,9 +1301,9 @@
           <seg>Glibc, Ncurses</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>Gzip</seg>
@@ -1962,9 +1962,9 @@
 <!-- Begin Packaging dependency info -->
 @z
 @x
-          <seg>Python</seg>
+          <seg>Flit-core and Python</seg>
 @y
-          <seg>Python</seg>
+          <seg>Flit-core, Python</seg>
 @z
 @x
           <seg>Python</seg>
@@ -2143,9 +2143,9 @@
           <seg>Glibc, Ncurses</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>Expect</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>Expect</seg>
 @z
 @x
           <seg>None</seg>

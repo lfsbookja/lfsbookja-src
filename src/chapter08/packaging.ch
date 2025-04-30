@@ -51,13 +51,11 @@
 @z
 
 @x
-        <seg>packaging</seg>
         <seg>
            /usr/lib/python&python-minor;/site-packages/packaging and
            /usr/lib/python&python-minor;/site-packages/packaging-&packaging-version;.dist-info
         </seg>
 @y
-        <seg>packaging</seg>
         <seg>
            /usr/lib/python&python-minor;/site-packages/packaging,
            /usr/lib/python&python-minor;/site-packages/packaging-&packaging-version;.dist-info
