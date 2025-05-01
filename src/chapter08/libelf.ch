@@ -55,6 +55,15 @@
 @z
 
 @x
+    <para>Two tests are known to fail, dwarf_srclang_check and 
+    run-backtrace-native-core.sh.</para>
+@y
+    <para>
+    dwarf_srclang_check と run-backtrace-native-core.sh という 2 つのテストは失敗します。
+    </para>
+@z
+
+@x
     <para>Install only Libelf:</para>
 @y
     <para>Libelf のみをインストールします。</para>
