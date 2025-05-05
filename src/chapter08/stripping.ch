@@ -46,32 +46,34 @@
   needed by the linker (for static libraries) or dynamic linker (for
   dynamically linked binaries and shared libraries). Using
   <parameter>--strip-debug</parameter> does not remove symbol table entries
-  that may be needed by some applications.  The difference between "unneeded"
-  and "debug" is very small. For example, an unstripped libc.a is 22.4 MB.
-  After stripping with --strip-debug it is 5.9 MB.  Using --strip-unneeded only
-  reduces the size further to only 5.8 MB.</para>
+  that may be needed by some applications.  The difference between
+  <literal>unneeded</literal> and <literal>debug</literal> is very small.
+  For example, an unstripped <filename class='libraryfile'>libc.a</filename>
+  is 22.4 MB. After stripping with <parameter>--strip-debug</parameter> it
+  is 5.9 MB. Using <parameter>--strip-unneeded</parameter> only reduces the
+  size further to 5.8 MB.</para>
 @y
   <para>
   <command>strip</command> コマンドに <parameter>--strip-unneeded</parameter> オプションをつけて実行すると、バイナリやライブラリからデバッグシンボルをすべて削除します。
   そして（スタティックライブラリ向けの）リンカーや（動的リンクバイナリあるいは共有ライブラリ向けの）ダイナミックリンカーにとって通常なら不要なシンボルテーブル項目もすべて削除します。
   <parameter>--strip-debug</parameter> を使うと、特定のアプリケーションに必要となるシンボルテーブルエントリは削除しなくなります。
-  "unneeded" と "debug" の違いはわずかなものです。
+  <literal>unneeded</literal> と <literal>debug</literal> の違いはわずかなものです。
   たとえば unstripped な libc.a は 22.4 MB です。
-  --strip-debug によってストリップを行うと 5.9 MB になります。
-  一方 --strip-unneeded では減じられる容量はほんのわずかで 5.8 MB となります。
+  <parameter>--strip-debug</parameter> によってストリップを行うと 5.9 MB になります。
+  一方 <parameter>--strip-unneeded</parameter> では減じられる容量はほんのわずかで 5.8 MB となります。
   </para>
 @z
 
 @x
   <para>The debugging symbols from selected libraries are compressed with
-  <application>Zlib</application> and preserved in separate files.  That
+  <application>Zstd</application> and preserved in separate files.  That
   debugging information is needed to run regression tests with <ulink
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink
   url='&blfs-book;/general/gdb.html'>gdb</ulink> later, in BLFS.
   </para>
 @y
   <para>
-  選択したライブラリから得られたデバッグシンボルは、<application>Zlib</application> によって圧縮され、個別のファイルに保存されます。
+  選択したライブラリから得られたデバッグシンボルは、<application>Zstd</application> によって圧縮され、個別のファイルに保存されます。
   このデバッグ情報を必要とするのは BLFS における <ulink 
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> または <ulink 
   url='&blfs-book;/general/gdb.html'>gdb</ulink> の縮退テストを実施するのに必要であるからです。
