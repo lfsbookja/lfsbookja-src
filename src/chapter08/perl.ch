@@ -19,6 +19,14 @@
 @z
 
 @x
+    <para>First, apply a security patch identified upstream:</para>
+@y
+    <para>
+    はじめにアップストリームが認識しているセキュリティパッチを適用します。
+    </para>
+@z
+
+@x
     <para>This version of Perl builds the Compress::Raw::Zlib and
     Compress::Raw::BZip2 modules. By
     default Perl will use an internal copy of the sources for the build.

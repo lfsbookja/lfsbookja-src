@@ -45,6 +45,14 @@
 @z
 
 @x
+    <para>First, make an adjustment for compatibility with gcc-15 and later:</para>
+@y
+    <para>
+    はじめに gcc-15 以上への互換性を調整します。
+    </para>
+@z
+
+@x
     <para>Prepare GMP for compilation:</para>
 @y
     <para>&PreparePackage1;GMP&PreparePackage2;</para>

@@ -95,10 +95,10 @@
 @z
 
 @x
-      Two other tests, lsfd: SOURCE column and utmp: last, are known to
-      fail in the chroot environment.
+      One test, <literal>kill: decode functions</literal>, is known to fail
+      with bash-5.3-rc1 or newer.
 @y
-      lsfd: SOURCE column と utmp: last という 2 つのテストが chroot 環境内では失敗します。
+      <literal>kill: decode functions</literal> というテストが chroot 環境内では失敗します。
 @z
 
 @x

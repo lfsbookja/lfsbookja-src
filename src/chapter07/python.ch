@@ -75,6 +75,15 @@
           </para>
 @z
 
+@x --without-static-libpython
+          <para>This switch prevents building a large, but unneeded, static
+          library.</para>
+@y
+          <para>
+          本スイッチは、膨大でしかも不要なスタティックライブラリをビルドしないようにします。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y

@@ -31,9 +31,12 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>The tests require the <application>Check</application> library
+    that we've removed from LFS.</para>
 @y
-    <para>ビルド結果をテストする場合は以下を実行します。</para>
+    <para>
+    テストには <application>Check</application> ライブラリが必要ですが、これは LFS から削除しました。
+    </para>
 @z
 
 @x

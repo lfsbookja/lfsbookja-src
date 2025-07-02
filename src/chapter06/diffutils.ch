@@ -30,7 +30,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>The meaning of the configure options:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x gl_cv_func_strcasecmp_works=y

@@ -149,7 +149,7 @@
       For example, some utilities (not in LFS or BLFS) cannot recognize a
       <systemitem class='filesystem'>ext4</systemitem> file system with
       <literal>metadata_csum_seed</literal> feature enabled.
-      <emphasis role='bold'>If</emphasis> you need such an utility, you may
+      <emphasis role='bold'>If</emphasis> you need such a utility, you may
       remove the feature from the default
       <systemitem class='filesystem'>ext4</systemitem> feature list with the
       command:

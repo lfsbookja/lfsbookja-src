@@ -30,11 +30,11 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x CC=gcc
-          <para>This parameter specifies the compiler to use.</para>
+@x CC=gcc -std=c99
+          <para>This parameter specifies the compiler and C standard to use.</para>
 @y
           <para>
-          このパラメーターはコンパイラーを指定します。
+          このパラメーターはコンパイラーと C 標準を指定します。
           </para>
 @z
 

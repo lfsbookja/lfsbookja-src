@@ -38,6 +38,343 @@
 @z
 
 @x
+      <para>2025-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20250618. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1497. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.41.1. Fixes
+          <ulink url='&lfs-ticket-root;5749'>#5749</ulink>.</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Update to shadow-4.18.0. Fixes
+          <ulink url='&lfs-ticket-root;5750'>#5750</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-2.5.1. Fixes
+          <ulink url='&lfs-ticket-root;5746'>#5746</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ninja-1.13.0. Fixes
+          <ulink url='&lfs-ticket-root;5745'>#5745</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.15.4. Fixes
+          <ulink url='&lfs-ticket-root;5748'>#5748</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-679. Fixes
+          <ulink url='&lfs-ticket-root;5747'>#5747</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.18.1. Fixes
+          <ulink url='&lfs-ticket-root;5752'>#5752</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20250618 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1497 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.41.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5749'>#5749</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - shadow-4.18.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5750'>#5750</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-2.5.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5746'>#5746</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ninja-1.13.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5745'>#5745</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.15.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5748'>#5748</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-679 へのアップデート。
+          <ulink url='&lfs-ticket-root;5747'>#5747</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.18.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5752'>#5752</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-06-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.8.2. Fixes
+          <ulink url='&lfs-ticket-root;5743'>#5743</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.15.2. Fixes
+          <ulink url='&lfs-ticket-root;5725'>#5725</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libffi-3.5.1. Fixes
+          <ulink url='&lfs-ticket-root;5741'>#5741</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-6.15.0. Fixes
+          <ulink url='&lfs-ticket-root;5732'>#5732</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.13.5. Fixes
+          <ulink url='&lfs-ticket-root;5743'>#6743</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-06-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-1.8.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5743'>#5743</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.15.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5725'>#5725</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libffi-3.5.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5741'>#5741</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-6.15.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5732'>#5732</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.13.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5743'>#6743</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-06-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to ncurses-6.5-20250531. Fixes
+          <ulink url='&lfs-ticket-root;5737'>#5737</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to readline-8.3-rc2. Fixes
+          <ulink url='&lfs-ticket-root;5738'>#5738</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bash-5.3-rc2. Fixes
+          <ulink url='&lfs-ticket-root;5738'>#5738</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.13.4. Fixes
+          <ulink url='&lfs-ticket-root;5739'>#6739</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-06-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ncurses-6.5-20250531 へのアップデート。
+          <ulink url='&lfs-ticket-root;5737'>#5737</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline-8.3-rc2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5738'>#5738</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash-5.3-rc2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5738'>#5738</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.13.4 へのアップデート。
+          <ulink url='&lfs-ticket-root;5739'>#6739</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-06-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20250519. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1418. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.8.0. Fixes
+          <ulink url='&lfs-ticket-root;5736'>#5736</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-257.6. Fixes
+          <ulink url='&lfs-ticket-root;5674'>#5674</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-80.9.0. Fixes
+          <ulink url='&lfs-ticket-root;5728'>#5728</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.8.1. Fixes
+          <ulink url='&lfs-ticket-root;5731'>#5731</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.18. Fixes
+          <ulink url='&lfs-ticket-root;5734'>#5734</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update build instructions to accommodate
+          gcc-15 for bc, expect, ncurses, and gmp.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-15.1.0. Fixes
+          <ulink url='&lfs-ticket-root;5707'>#5707</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-678. Fixes
+          <ulink url='&lfs-ticket-root;5724'>#5724</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to readline-8.3-rc1. Fixes
+          <ulink url='&lfs-ticket-root;5726'>#5726</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bash-5.3-rc1. Fixes
+          <ulink url='&lfs-ticket-root;5714'>#5714</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-06-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20250519 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1418 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.8.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5736'>#5736</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-257.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5774'>#5774</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-80.9.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5728'>#5728</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.8.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5731'>#5731</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.18 へのアップデート。
+          <ulink url='&lfs-ticket-root;5734'>#5734</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bc, expect, ncurses, gmp において、gcc-15 に対応するための手順を更新。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-15.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5707'>#5707</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-678 へのアップデート。
+          <ulink url='&lfs-ticket-root;5724'>#5724</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline-8.3-rc1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5726'>#5726</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash-5.3-rc1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5714'>#5714</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-80.7.1. Fixes
+          <ulink url='&lfs-ticket-root;5715'>#5715</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.14. Fixes
+          <ulink url='&lfs-ticket-root;5720'>#5720</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.13.1. Fixes
+          <ulink url='&lfs-ticket-root;5719'>#5719</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to m4-1.4.20. Fixes
+          <ulink url='&lfs-ticket-root;5722'>#5722</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.14.6. Fixes
+          <ulink url='&lfs-ticket-root;5717'>#5717</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.25. Fixes
+          <ulink url='&lfs-ticket-root;5718'>#5718</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - setuptools-80.7.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5715'>#5715</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.14 へのアップデート。
+          <ulink url='&lfs-ticket-root;5720'>#5720</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.13.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5719'>#5719</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - m4-1.4.20 へのアップデート。
+          <ulink url='&lfs-ticket-root;5722'>#5722</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.14.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5717'>#5717</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.25 へのアップデート。
+          <ulink url='&lfs-ticket-root;5718'>#5718</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-05-01</para>
       <itemizedlist>
         <listitem>

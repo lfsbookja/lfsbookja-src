@@ -22,11 +22,15 @@
 @z
 
 @x
-    <para>First, run the following commands to build the <quote>tic</quote>
-    program on the build host:</para>
+    <para>First, run the following commands to build the <command>tic</command>
+      program on the build host. We install it in
+      <filename class="directory">$LFS/tools</filename>, so that it is found
+      in the <envar>PATH</envar> when needed:</para>
 @y
     <para>
-    以下のコマンドを実行して、ビルドホスト上に<quote>tic</quote>プログラムをビルドします。
+    以下のコマンドを実行して、ビルドホスト上に <command>tic</command> プログラムをビルドします。
+    インストール先は <filename class="directory">$LFS/tools</filename> とします。
+    これは必要なときに <envar>PATH</envar> を通じて利用することができます。
     </para>
 @z
 
@@ -137,29 +141,9 @@
 @z
 
 @x
-    <para>Remove an unneeded static library not handled by
-    <command>configure</command>:</para>
-@y
-    <para>
-    <command>configure</command> が扱っていない不要なスタティックライブラリを削除します。
-    </para>
-@z
-
-@x
       <title>The meaning of the install options:</title>
 @y
       <title>&MeaningOfOption1;install&MeaningOfOption2;</title>
-@z
-
-@x TIC_PATH=$(pwd)/build/progs/tic
-          <para>We need to pass the path of the newly built
-          <command>tic</command> program that runs on the building machine, so
-          the terminal database can be created without errors.</para>
-@y
-          <para>
-          ビルドマシン上において、作り出したばかりの <command>tic</command> のパスを示すことが必要です。
-          こうすることで terminal データベースがエラーなく生成できることになります。
-          </para>
 @z
 
 @x ln -sv libncursesw.so $LFS/usr/lib/libncurses.so

@@ -37,10 +37,10 @@
         <para>&Download;: <ulink url="&patches-root;&autoconf-fixes-patch;"/></para>
 @z
 
-@x Bash Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&bash-upstream-fixes-patch;"/></para>
+@x Bash Cross Compile Fix Patch
+        <para>Download: <ulink url="&patches-root;&bash-crosscompile-fix-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&bash-upstream-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&bash-crosscompile-fix-patch;"/></para>
 @z
 
 @x Binutils Upstream Fixes Patch
@@ -55,16 +55,22 @@
         <para>&Download;: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
 @z
 
+@x Coreutils Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;&coreutils-upstream-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&coreutils-upstream-patch;"/></para>
+@z
+
 @x Coreutils Internationalization Fixes Patch
         <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @z
 
-@x Expect GCC14 Patch
-        <para>Download: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
+@x Expect GCC15 Patch
+        <para>Download: <ulink url="&patches-root;&expect-gcc15-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&expect-gcc15-patch;"/></para>
 @z
 
 @x Glibc Upstream Fix Patch
@@ -97,16 +103,16 @@
         <para>&Download;: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
 @z
 
-@x Pkgconf Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&pkgconf-upstream-fix-patch;"/></para>
+@x Perl Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;&perl-upstream-fix-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&pkgconf-upstream-fix-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&perl-upstream-fix-patch;"/></para>
 @z
 
-@x Readline Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+@x Python Security Fix Patch
+        <para>Download: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
 @z
 
 @x Sysvinit Consolidated Patch
