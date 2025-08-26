@@ -23,14 +23,6 @@
 @z
 
 @x
-    <para>First, apply a security patch to the current package:</para>
-@y
-    <para>
-    はじめに現パッケージに対するセキュリティパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Prepare Python for compilation:</para>
 @y
     <para>&PreparePackage1;Python&PreparePackage2;</para>

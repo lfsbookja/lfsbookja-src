@@ -30,7 +30,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x CC=gcc -std=c99
+@x CC='gcc -std=c99'
           <para>This parameter specifies the compiler and C standard to use.</para>
 @y
           <para>

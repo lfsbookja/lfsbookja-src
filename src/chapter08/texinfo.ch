@@ -19,6 +19,14 @@
 @z
 
 @x
+    <para>Fix a code pattern that causes Perl-5.42 or later to display a warning:</para>
+@y
+    <para>
+    Perl-5.42 およびそれ以降において警告となるコードパターンを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Texinfo for compilation:</para>
 @y
     <para>&PreparePackage1;Texinfo&PreparePackage2;</para>

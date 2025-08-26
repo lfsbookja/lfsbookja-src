@@ -70,15 +70,9 @@
 @z
 
 @x
-<!ENTITY gdbm-fin-sbu "less than 0.1 SBU">
+<!ENTITY gdbm-fin-sbu "less than 0.2 SBU">
 @y
-<!ENTITY gdbm-fin-sbu "0.1 SBU 以下">
-@z
-
-@x
-<!ENTITY gperf-fin-sbu "less than 0.1 SBU">
-@y
-<!ENTITY gperf-fin-sbu "0.1 SBU 以下">
+<!ENTITY gdbm-fin-sbu "0.2 SBU 以下">
 @z
 
 @x

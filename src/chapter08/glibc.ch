@@ -35,10 +35,10 @@
 @z
 
 @x
-    <para>Now fix a security vulnerability:</para>
+    <para>Now fix an issue which may break Valgrind in BLFS:</para>
 @y
     <para>
-    ここでセキュリティぜい弱性を修正します。
+    BLFS における Valgrind に不備を起こす問題を修正します。
     </para>
 @z
 

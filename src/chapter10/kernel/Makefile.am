@@ -4,8 +4,6 @@
 BOOKdir = @abs_bookdir@/chapter10/kernel
 srcdir = @srcdir@
 bases = \
-	highmem.toml      \
-	highmem.xml       \
 	kernel-config.py  \
 	kernel.version    \
 	kernel_version.py \
@@ -20,8 +18,6 @@ bases = \
 
 all: $(bases) Makefile.orig
 
-highmem.toml:      $(BOOKdir)/highmem.toml
-highmem.xml:       $(BOOKdir)/highmem.xml
 kernel-config.py:  $(BOOKdir)/kernel-config.py
 kernel.version:    $(BOOKdir)/kernel.version
 kernel_version.py: $(BOOKdir)/kernel_version.py

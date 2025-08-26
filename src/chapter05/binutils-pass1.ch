@@ -94,6 +94,18 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
+@x
+          Contrary to other packages, not all the options listed below appear
+          when running <command>./configure --help</command>. For example,
+          to find the <option>--with-sysroot</option> option, you have to run
+          <command>ld/configure --help</command>. All the options can be
+          listed at once with <command>./configure --help=recursive</command>.
+@y
+          他のパッケージとは違って、以下に示すオプションは <command>./configure --help</command> の実行によってすべて表示されるわけではありません。
+          たとえば <option>--with-sysroot</option> オプションを確認するには <command>ld/configure --help</command> を実行する必要があります。
+          一度にすべてのオプションを確認したい場合は <command>./configure --help=recursive</command> を実行します。
+@z
+
 @x --prefix=$LFS/tools
           <para>This tells the configure script to prepare to install the
           Binutils programs in the <filename

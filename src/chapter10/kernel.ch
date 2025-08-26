@@ -182,16 +182,6 @@
 @z
 
 @x
-      <para>If you are building a 32-bit system running on a hardware
-      with RAM more than 4GB, adjust the configuration so the kernel will
-      be able to use up to 64GB physical RAM:</para>
-@y
-      <para>
-      32 ビットシステムの構築中であって、RAM が 4GB 以上ある場合は、64 GB までの物理 RAM が利用できるようにカーネルを調整してください。
-      </para>
-@z
-
-@x
       <para>If the partition for the LFS system is in a NVME SSD (i. e. the
       device node for the partition is <filename>/dev/nvme*</filename>
       instead of <filename>/dev/sd*</filename>), enable NVME support or

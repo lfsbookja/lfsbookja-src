@@ -38,6 +38,282 @@
 @z
 
 @x
+      <para>2025-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a modification to glibc from upstream
+          to solve an incompatibility with valgrind. Fixes
+          <ulink url='&lfs-ticket-root;5778'>#5778</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20250807. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1829. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ncurses-6.5-20250809. Fixes
+          <ulink url='&lfs-ticket-root;5780'>#5780</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.13.7 (Security Update). Fixes
+          <ulink url='&lfs-ticket-root;5779'>#5779</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.16.1. Fixes
+          <ulink url='&lfs-ticket-root;5758'>#5758</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-6.16.0. Fixes
+          <ulink url='&lfs-ticket-root;5773'>#5773</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-257.8. Fixes
+          <ulink url='&lfs-ticket-root;5751'>#5751</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc へのアップストリームによる修正を適用。
+          valgrind との非互換性を解消。
+          <ulink url='&lfs-ticket-root;5778'>#5778</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20250807 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1829 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ncurses-6.5-20250809 へのアップデート。
+          <ulink url='&lfs-ticket-root;5780'>#5780</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.13.7 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5779'>#5779</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.16.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5758'>#5758</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-6.16.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5773'>#5773</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-257.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5751'>#5751</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.13.6 (Security Update). Fixes
+          <ulink url='&lfs-ticket-root;5776'>#5776</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.5.2. Fixes
+          <ulink url='&lfs-ticket-root;5775'>#5775</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libffi-3.5.2. Fixes
+          <ulink url='&lfs-ticket-root;5772'>#5772</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-15.2.0. Fixes
+          <ulink url='&lfs-ticket-root;5777'>#5777</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-08-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Python-3.13.6 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5776'>#5776</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.5.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5775'>#5775</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libffi-3.5.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5772'>#5772</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-15.2.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5777'>#5777</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-08-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Fixed CVE-2025-8194 in Python. Fixes
+          <ulink url="&lfs-ticket-root;5774">#5774</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-08-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[renodr] - Python における CVE-2025-8194 の修正。
+          <ulink url="&lfs-ticket-root;5774">#5774</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.8.3. Fixes
+          <ulink url='&lfs-ticket-root;5771'>#5771</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gdbm-1.26. Fixes
+          <ulink url='&lfs-ticket-root;5770'>#5770</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.45. Fixes
+          <ulink url='&lfs-ticket-root;5766'>#5766</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.26. Fixes
+          <ulink url='&lfs-ticket-root;5762'>#5762</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.42. Fixes
+          <ulink url='&lfs-ticket-root;5765'>#5765</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.15. Fixes
+          <ulink url='&lfs-ticket-root;5763'>#5763</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-1.8.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5771'>#5771</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gdbm-1.26 へのアップデート。
+          <ulink url='&lfs-ticket-root;5770'>#5770</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.45 へのアップデート。
+          <ulink url='&lfs-ticket-root;5766'>#5766</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.26 へのアップデート。
+          <ulink url='&lfs-ticket-root;5762'>#5762</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.42 へのアップデート。
+          <ulink url='&lfs-ticket-root;5765'>#5765</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.15 へのアップデート。
+          <ulink url='&lfs-ticket-root;5763'>#5763</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1552 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5760'>#5760</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to readline-8.3. Fixes
+          <ulink url='&lfs-ticket-root;5755'>#5755</ulink>.</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - Update to perl-5.42.0. Fixes
+          <ulink url='&lfs-ticket-root;5756'>#5756</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.5.1. Fixes
+          <ulink url='&lfs-ticket-root;5723'>#5723</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ninja-1.13.1. Fixes
+          <ulink url='&lfs-ticket-root;5759'>#5759</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.15.6. Fixes
+          <ulink url='&lfs-ticket-root;5757'>#5757</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.25.1. Fixes
+          <ulink url='&lfs-ticket-root;5753'>#5753</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.47.3. Fixes
+          <ulink url='&lfs-ticket-root;5758'>#5758</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bash-5.3. Fixes
+          <ulink url='&lfs-ticket-root;5754'>#5754</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1552 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5760'>#5760</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - readline-8.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5755'>#5755</ulink> を Fix に。</para>
+        </listitem>
+        <listitem revision='sysv'>
+          <para>[bdubbs] - perl-5.42.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5756'>#5756</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.5.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5723'>#5723</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ninja-1.13.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5759'>#5759</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.15.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5757'>#5757</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.25.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5753'>#5753</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.47.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5758'>#5758</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bash-5.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5754'>#5754</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-07-01</para>
       <itemizedlist>
         <listitem>
@@ -124,7 +400,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to meson-1.8.2. Fixes
-          <ulink url='&lfs-ticket-root;5743'>#5743</ulink>.</para>
+          <ulink url='&lfs-ticket-root;5742'>#5742</ulink>.</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-6.15.2. Fixes
@@ -140,7 +416,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - Update to Python-3.13.5. Fixes
-          <ulink url='&lfs-ticket-root;5743'>#6743</ulink>.</para>
+          <ulink url='&lfs-ticket-root;5743'>#5743</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -148,7 +424,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - meson-1.8.2 へのアップデート。
-          <ulink url='&lfs-ticket-root;5743'>#5743</ulink> を Fix に。</para>
+          <ulink url='&lfs-ticket-root;5742'>#5742</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - linux-6.15.2 へのアップデート。
@@ -164,7 +440,7 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - Python-3.13.5 へのアップデート。
-          <ulink url='&lfs-ticket-root;5743'>#6743</ulink> を Fix に。</para>
+          <ulink url='&lfs-ticket-root;5743'>#5743</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z

@@ -73,6 +73,29 @@
 @z
 
 @x
+        This example demonstrates the use of the
+        <parameter>-i.orig</parameter> switch.  It makes the
+        <command>sed</command> copy the <filename>t-linux64</filename> file
+        to <filename>t-linux64.orig</filename>, and then edit the original
+        <filename>t-linux64</filename> file inplace.  So you may run
+        <command>diff -u gcc/config/i386/t-linux64{.orig,}</command>
+        to visualize the change done by the <command>sed</command> command
+        afterwards.  We'll simply use <parameter>-i</parameter> (which just
+        edits the original file inplace without copying it) for all other
+        packages in the book, but you can change it to
+        <parameter>-i.orig</parameter> in any case you want to keep a copy
+        of the original file.
+@y
+        上の処理例においては <parameter>-i.orig</parameter> スイッチを利用しています。
+        これは <command>sed</command> が <filename>t-linux64</filename> ファイルのコピーを <filename>t-linux64.orig</filename> として残すものです。
+        その上で元の <filename>t-linux64</filename> ファイルの内容を編集します。
+        したがってこの処理の後に <command>diff -u gcc/config/i386/t-linux64{.orig,}</command> を実行すれば、その編集結果を確認することができます。
+        本書のこれ以降のパッケージの処理においては、単に <parameter>-i</parameter> を用いていくことにします。
+        (元のファイルを直接編集し、そのファイルのコピーは取らないものとします。)
+        もし元のファイルのコピーを取っておく必要があれば <parameter>-i.orig</parameter> に置き換えてください。
+@z
+
+@x
     <para>The GCC documentation recommends building GCC
     in a dedicated build directory:</para>
 @y

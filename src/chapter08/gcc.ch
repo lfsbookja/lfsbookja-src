@@ -170,10 +170,10 @@
 @z
 
 @x
-    <para>Now remove/fix several known test failures:</para>
+    <para>Now remove several known test failures:</para>
 @y
     <para>
-    テストスイートの不備をここで削除/修正します。
+    失敗するテストをいくつか削除します。
     </para>
 @z
 
@@ -216,10 +216,11 @@
 @z
 
 @x
-    <para>The tsan tests are known to fail on some host distros.</para>
+    <para>The tests related to <filename>pr90579.c</filename> are known
+    to fail.</para>
 @y
     <para>
-    tsan テストはホストディストロによっては失敗します。
+    <filename>pr90579.c</filename> に関係するテストは失敗します。
     </para>
 @z
 

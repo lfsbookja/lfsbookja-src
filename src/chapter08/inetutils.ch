@@ -102,16 +102,12 @@
 @z
 
 @x
-    <note><para>One test, libls.sh, may fail in the initial chroot
-    environment but will pass if the test is rerun after the LFS system
-    is complete. One test, ping-localhost.sh, will fail if the host
-    system does not have ipv6 capability.</para></note>
+    <para>One test named <filename>libls.sh</filename> is known to
+    fail sometimes.</para>
 @y
-    <note><para>
-    libls.sh というテストは初めて chroot に入った状態の時には失敗します。
-    ただし LFS システムの構築を終えて再テストすれば成功します。
-    また ping-localhost.sh というテストは、ホストシステムが ipv6 に対応していない場合には失敗します。
-    </para></note>
+    <para>
+    <filename>libls.sh</filename> というテストが場合によっては失敗することがあります。
+    </para>
 @z
 
 @x

@@ -2697,9 +2697,15 @@
           <seg>Intltool</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>
+            <ulink
+            url="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</ulink>
+          </seg>
 @y
-          <seg>なし</seg>
+          <seg>
+            <ulink
+            url="https://metacpan.org/pod/LWP::UserAgent">LWP::UserAgent</ulink>
+          </seg>
 @z
 
 %----------------------------------------------------------------------

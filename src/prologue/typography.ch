@@ -55,12 +55,21 @@
 
 @x
   <para>This form of text (fixed-width text) shows screen output, usually as
-  the result of commands issued.  This format is also used to show filenames,
-  such as <filename>/etc/ld.so.conf</filename>.</para>
+  the result of commands issued.  If you are reading the book in the HTML
+  format (instead of PDF), the text should be blue.</para>
 @y
   <para>
   上の表記は固定幅フォントで示されており、たいていはコマンド入力の結果として出力される端末メッセージを示しています。
-  あるいは <filename>/etc/ld.so.conf</filename> といったファイル名を示すのに利用する場合もあります。
+  本書を (PDF ではなく) HTML 形式で読んでいる場合、そのテキストは青字で表示されているはずです。
+  </para>
+@z
+
+@x
+  <para>The fixed-width text is also used to show filenames,
+  such as <filename>/etc/ld.so.conf</filename>.</para>
+@y
+  <para>
+  固定幅フォントは <filename>/etc/ld.so.conf</filename> のようなファイル名を示す際にも用います。
   </para>
 @z
 

@@ -34,14 +34,6 @@
 @z
 
 @x
-    <para>First fix a problem with the latest version of glibc:</para>
-@y
-    <para>
-    まずは glibc の最新版における問題を修正します。
-    </para>
-@z
-
-@x
     <para>As in the first build of GCC, the GMP, MPFR, and MPC packages are
     required. Unpack the tarballs and move them into the required directories:</para>
 @y
@@ -52,8 +44,8 @@
 @z
 
 @x
-    <para>If building on x86_64, change the default directory name for 64-bit
-    libraries to <quote>lib</quote>:</para>
+    <para>If you are building on x86_64, change the default directory name for
+    64-bit libraries to <quote>lib</quote>:</para>
 @y
     <para>
     x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
@@ -61,7 +53,7 @@
 @z
 
 @x
-    <para>Override the building rule of libgcc and libstdc++ headers, to
+    <para>Override the build rules of the libgcc and libstdc++ headers to
     allow building these libraries with POSIX threads support:</para>
 @y
     <para>
@@ -102,15 +94,15 @@
           <para>Normally, using <parameter>--host</parameter> ensures that
           a cross-compiler is used for building GCC, and that compiler knows
           that it has to look for headers and libraries in <filename
-          class="directory">$LFS</filename>. But the build system for GCC uses
-          other tools, which are not aware of this location. This switch is
-          needed so those tools will find the needed files in <filename
-          class="directory">$LFS</filename>, and not on the host.</para>
+          class="directory">$LFS</filename>. However, the build system for GCC
+          uses additional tools which are not aware of this location. This
+          switch is needed so those tools will find the needed files in
+          <filename class="directory">$LFS</filename>, and not on the host.</para>
 @y
           <para>
           通常は <parameter>--host</parameter> を用いれば、GCC ビルドにクロスコンパイラーが用いられ、参照すべきヘッダーやライブラリも <filename
           class="directory">$LFS</filename> にあるものが用いられるように指示されます。
-          しかし GCC 向けのビルドシステムは別のツールを使っているので、上のような場所を認識できていません。
+          しかし GCC 向けのビルドシステムは追加のツールを使っているので、上のような場所を認識できていません。
           本スイッチは、そのツール類が必要とするファイルを、ホスト内からではなく、<filename
           class="directory">$LFS</filename> から探し出すようにします。
           </para>

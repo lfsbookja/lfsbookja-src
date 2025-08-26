@@ -296,6 +296,22 @@
 @z
 
 @x
+          If you want to use <command>systemd-resolved</command> for the
+          LFS system but you need to access the Internet in the chroot
+          environment (for example, for building a BLFS package of which the
+          build process requires an Internet connection), create the
+          <filename>/etc/resolv.conf</filename> file following the
+          static configuration below for the chroot environment so the name
+          resolution will work in the chroot environment.  When you exit
+          the chroot environment, remove it so
+          <command>systemd-resolved</command> will create the symlink on
+          boot.
+@y
+          LFS システムにおいて chroot 環境下においても <command>systemd-resolved</command> を利用できるようにしたい場合 (たとえば BLFS パッケージのビルドにあたってビルド処理内にてインターネット接続を必要とする場合)、以下に示すような <filename>/etc/resolv.conf</filename> のスタティックな設定を行い、chroot 環境でも名前解決が動作するようにします。
+          chroot 環境から抜け出たときに、その設定を削除すれば <command>systemd-resolved</command> が起動時にシンボリックリンクを生成します。
+@z
+
+@x
       <title>Static resolv.conf Configuration</title>
 @y
       <title>スタティックな resolv.conf 設定</title>

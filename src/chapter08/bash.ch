@@ -89,16 +89,20 @@
     <!-- Some host distros set core file size hard limit < 1000, then the
          test "ulimit -c -S 1000" attempts to set soft limit > hard limit
          and fail.  -->
-    One test named <filename>run-builtins</filename> is known to fail on
-    some host distros with a difference on the first line of the
-    output.</para>
+    The test named <filename>run-builtins</filename> is known to fail on
+    some host distros with a difference on the 479 and 480 lines of the
+    output.  Some other tests need the <literal>zh_TW.BIG5</literal> and
+    <literal>ja_JP.SJIS</literal> locales, they are known to fail unless
+    those locales are installed.</para>
 @y
     <para>
     テストスイートでは <command>diff</command> を使って、テストスクリプトの出力結果と期待される出力結果との差異を調べています。
     <command>diff</command> からの出力（先頭行に <computeroutput>&lt;</computeroutput> と
     <computeroutput>&gt;</computeroutput>）があれば、テストが失敗したことを表します。
     ただしその差異は無視できる旨を示すメッセージがあれば問題ありません。
-    <filename>run-builtins</filename> というテストは、出力の第 1 行めが異なるということで、特定のホストディストリビューションでは失敗する場合があります。
+    <filename>run-builtins</filename> というテストは特定のホストディストロにおいては失敗します。
+    その際には出力結果の 479 行めと480 行めが異なると示されます。
+    テストの中には <literal>zh_TW.BIG5</literal> と <literal>ja_JP.SJIS</literal> というロケールを必要とするものがあるため、これらがインストールされていない場合には失敗します。
     </para>
 @z
 
