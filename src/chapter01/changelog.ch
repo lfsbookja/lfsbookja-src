@@ -38,6 +38,38 @@
 @z
 
 @x
+      <para>2025-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-12.4 released.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-12.4 リリース。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2025-08-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update network boot script corner case.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-08-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ネットワークブートスクリプトにおける不備を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-08-15</para>
       <itemizedlist>
         <listitem>
