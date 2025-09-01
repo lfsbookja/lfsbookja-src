@@ -51,6 +51,17 @@
 -->
 
    <listitem>
+      <para>2025-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          LFS 12.4 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2025-08-26</para>
       <itemizedlist>
         <listitem>
