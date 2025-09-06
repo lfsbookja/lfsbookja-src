@@ -42,15 +42,41 @@
 @z
 
 @x
-    <para>GCC supports seven different computer languages, but the
-    prerequisites for most of them have not yet been installed. See the
-    <ulink url="&blfs-book;general/gcc.html">BLFS Book GCC page</ulink>
-    for instructions on how to build all of GCC's supported languages.</para>
+    <para>We only enable C and C++ here to save the build time as no
+    packages in LFS and BLFS require GCC to compile other languages. Append
+    <literal>cobol</literal> for Cobol (note that it will cause GCC fail
+    to build on a 32-bit LFS system),
+    <literal>fortran</literal> for Fortran,
+    <literal>go</literal> for Go,
+    <literal>objc</literal> for Objective C,
+    <literal>obj-c++</literal> for Objective C++, and/or
+    <literal>m2</literal> for Modula 2 into the value of
+    <parameter>--enable-languages</parameter> option if you want to compile
+    programs in one or more of those languages with GCC.  GCC also supports
+    Ada and D, but the code to support Ada or D is written in Ada or D
+    itself, so the support can only be built with an existing Ada or D
+    compiler installation and we cannot enable the support here.</para>
 @y
     <para>
     GCC では 7 つのコンピューター言語をサポートしていますが、それらのほとんどが必要としている依存パッケージは、まだこの時点でインストールしていません。
     GCC がサポートする他のコンピューター言語の構築方法については <ulink
     url="&blfs-book;general/gcc.html">BLFS ブック</ulink> の説明を参照してください。
+    </para>
+
+    <para>
+    ここで有効にするのは C と C++ のみです。
+    ビルド時間を節約する目的があり、また LFS や BLFS において GCC が他の言語を必要とするパッケージが存在しないからです。
+    GCC においてさらに言語を増やしてプログラムコンパイルを行いたい場合は <parameter>--enable-languages</parameter> オプションにそれぞれ以下を追加してください。
+    Cobol に対して <literal>cobol</literal> (32 ビット LFS システム上においてビルドすると GCC がエラーとなります)、
+    Fortran に対して <literal>fortran</literal>、
+    Go に対して <literal>go</literal>、
+    Objective C に対して <literal>objc</literal>、
+    Objective C++ に対して <literal>obj-c++</literal>、
+    Modula 2 に対して <literal>m2</literal>。
+    GCC ではさらに Ada と D をサポートします。
+    ただしそれをサポートするコードは Ada あるいは D そのものによって書かれています。
+    したがってこのサポートを含めてビルドするには、あらかじめ Ada あるいは D コンパイラーがインストールされていないければなりません。
+    ここではそのサポートを有効にすることはできません。
     </para>
 @z
 
@@ -68,6 +94,29 @@
           <para>
           本パラメーターは、本章の初期段階でビルドした Binutils の ld プログラムを使うことを configure スクリプトに指示します。
           これを指定しなかった場合は、クロスビルド版のものが用いられることになります。
+          </para>
+@z
+
+@x --disable-bootstrap
+          <para>By default, the build system of GCC will bootstrap it in
+          3 stages unless it's built as a cross-compiler or it is being
+          cross-compiled.  The bootstrap process is needed for robustness,
+          especially when upgrading GCC to a new version.  In LFS we are
+          using a different method to bootstrap GCC (as we introduced in
+          <xref linkend='ch-tools-toolchaintechnotes'/>), so here we don't
+          need the bootstrap process provided by the build system and we
+          disable it to significantly reduce the build time.  Remove this
+          option when you upgrade GCC on a complete LFS system (instead of
+          building LFS).</para>
+@y
+          <para>
+          GCC のビルドシステムでは、クロスコンパイラーをビルドする場合、あるいはクロスコンパイルを行っている場合を除くと、デフォルトでは 3 ステージにおいてブートストラップを行います。
+          ブートストラップ処理は堅牢性のためであり、特に GCC をより新しいバージョンにアップグレードする際に必要となります。
+          LFS ではブートストラップとはことなる方法をとっています (<xref
+          linkend='ch-tools-toolchaintechnotes'/> において説明しています)。
+          したがってビルドシステムが提供するブートストラップ処理を必要としません。
+          この処理を用いないことからビルド時間を大幅に軽減しています。
+          完璧な (LFS のビルド中ではない) LFS システム上において GCC をアップグレードする場合は、本オプションを取り除いてください。
           </para>
 @z
 

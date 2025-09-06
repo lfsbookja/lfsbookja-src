@@ -446,10 +446,9 @@
 
 @x
           <para>The Linux kernel is updated quite frequently, many times due to
-          discoveries of security vulnerabilities.  The latest available
-          <!--&linux-major-version;.&linux-minor-version;.x--> stable kernel
-          version <!--should--> may be
-          used, unless the errata page says otherwise.</para>
+          discoveries of security vulnerabilities.  The latest available stable
+          kernel version may be used, unless the errata page says
+          otherwise.</para>
 @y
           <para>
           Linux カーネルはかなり頻繁に更新されます。
@@ -463,13 +462,40 @@
           <para>For users with limited speed or expensive bandwidth who wish to
           update the Linux kernel, a baseline version of the package and
           patches can be downloaded separately.  This may save some time or
-          cost for a subsequent patch level upgrade within a minor release.
-          </para>
+          cost for a subsequent patch level upgrade within a minor
+          release.</para>
 @y
           <para>
           低速度のネットワークや高負荷の帯域幅を利用するユーザーが Linux カーネルをアップデートしようとする場合は、同一バージョンのカーネルパッケージとそのパッチを個別に&Download;する方法もあります。
           その場合、時間の節約を図ることができ、あるいはマイナーバージョンが同一であれば複数パッチを当ててアップグレードする作業時間の短縮が図れます。
           </para>
+@z
+
+@x
+            As an example, for linux-&linux-version;, the following could be downloaded:
+@y
+            たとえば linux-&linux-version; の場合、以下をダウンロードすることになります。
+@z
+
+@x
+            Then in <xref linkend='ch-tools-linux-headers'/> and 
+            <xref linkend='ch-bootable-kernel'/> unpack the kernel, change
+            to the package directory and then apply the patch with 
+            <userinput>xzcat ../patch-&linux-version;.xz | patch -Np1</userinput>.
+@y
+            そして <xref linkend='ch-tools-linux-headers'/> と <xref
+            linkend='ch-bootable-kernel'/> においてカーネルを伸長 (解凍) します。
+            パッケージディレクトリに移動したら <userinput>xzcat ../patch-&linux-version;.xz | patch -Np1</userinput> のコマンドによってパッチを当てます。
+@z
+
+@x
+            At this point, if a newer point version of the kernel is needed, then
+            only the newer patch is needed. However, if a new minor version is 
+            desired, then both full minor version and any desired patch will both
+            need to be downloaded.
+@y
+            このとき別の新たなバージョンのカーネルが必要であったなら、その新たなバージョン向けのパッチのみを用います。
+            ただしその新たなバージョンがマイナーバージョンであったなら、そのマイナーバージョン向けのパッチすべてと、必要となるパッチの両方をダウンロードすることになります。
 @z
 
 @x lz4
@@ -584,6 +610,14 @@
         <para>&Download;: <ulink url="&patch-url;"/></para>
 @z
 
+@x pcre2
+        <para>Home page: <ulink url="&pcre2-home;"/></para>
+        <para>Download: <ulink url="&pcre2-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&pcre2-home;"/></para>
+        <para>&Download;: <ulink url="&pcre2-url;"/></para>
+@z
+
 @x perl
         <para>Home page: <ulink url="&perl-home;"/></para>
         <para>Download: <ulink url="&perl-url;"/></para>
@@ -660,6 +694,33 @@
 @y
         <para>&Homepage;: <ulink url="&shadow-home;"/></para>
         <para>&Download;: <ulink url="&shadow-url;"/></para>
+@z
+
+@x Sqlite
+        <para>Home page: <ulink url="&sqlite-home;"/></para>
+        <para>Download: <ulink url="&sqlite-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&sqlite-home;"/></para>
+        <para>&Download;: <ulink url="&sqlite-url;"/></para>
+@z
+
+@x Sqlite Documentation
+        <para>Home page: <ulink url="&sqlite-home;"/></para>
+        <para>Download: <ulink url="&sqlite-doc-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&sqlite-home;"/></para>
+        <para>&Download;: <ulink url="&sqlite-doc-url;"/></para>
+@z
+
+@x
+          <para>The Linux From Scratch team generates its own tarball of the
+          documentation pages using the sqlite documentation zip file. This is done 
+          in order to avoid unnecessary dependencies.</para>
+@y
+          <para>
+          Linux From Scratch チームでは sqlite ドキュメントの zip ファイルを使って、ドキュメント用の tarball を独自に作り出しています。
+          これは不要な依存関係を持たないようにするためです。
+          </para>
 @z
 
 @x sysklogd

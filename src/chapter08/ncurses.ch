@@ -102,7 +102,8 @@
     in-place.  It may crash the shell process which is using code and data
     from the library file.  Install the package with
     <literal>DESTDIR</literal>, and replace the library file correctly using
-    <command>install</command> command (the header
+    the <parameter>--remove-destination</parameter> option of
+    <command>cp</command> (the header
     <filename>curses.h</filename> is also edited to ensure the
     wide-character ABI to be used as what we've done in
     <xref linkend='ch-tools-ncurses'/>):</para>
@@ -111,7 +112,7 @@
     本パッケージをインストールすると、所定位置にある <filename
     class="libraryfile">libncursesw.so.&ncurses-base-version;</filename> が上書きされます。
     このときに、そのライブラリファイルのコードやデータを利用しているシェルプロセスが、クラッシュする場合があります。
-    そこで本パッケージは <literal>DESTDIR</literal> を使ってインストールして、<command>install</command> コマンドによってライブラリファイルを正しく置き換えるようにします。
+    そこで本パッケージは <literal>DESTDIR</literal> を使ってインストールして、<command>cp</command> コマンドの <parameter>--remove-destination</parameter> オプションによってライブラリファイルを正しく置き換えるようにします。
     (ヘッダーファイル <filename>curses.h</filename> も <xref linkend='ch-tools-ncurses'/> で行ったものと同様に、ワイドキャラクター ABI が確実に利用されるように修正されます。)
     </para>
 @z

@@ -758,6 +758,15 @@
         </para>
 @z
 
+@x Sqlite
+        <para>This package provides a serverless, zero-configuration, 
+        transactional SQL database engine.</para>
+@y
+        <para>
+        このパッケージは、サーバーレスで設定不要のトランザクション型 SQL データベースエンジンを提供します。
+        </para>
+@z
+
 @x Sysklogd
         <para>This package supplies programs for logging system messages,
         such as those emitted by the kernel or daemon processes when unusual

@@ -191,6 +191,16 @@
 @z
 
 @x
+        <para><emphasis>misc/tst-preadvwritev2</emphasis> and
+        <emphasis>misc/tst-preadvwritev64v2</emphasis> are known to fail
+        if the host kernel is Linux-6.14 or later.</para>
+@y
+        <para><emphasis>misc/tst-preadvwritev2</emphasis> と
+        <emphasis>misc/tst-preadvwritev64v2</emphasis> は、カーネルが Linux-6.14 またはそれ以降のときに失敗します。
+        </para>
+@z
+
+@x
         <para>Some tests, for example
         <emphasis>nss/tst-nss-files-hosts-multi</emphasis> and
         <emphasis>nptl/tst-thread-affinity*</emphasis>

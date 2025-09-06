@@ -930,10 +930,10 @@
 %----------------------------------------------------------------------
 @x Grep
           <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc, Grep,
-          Make, Patch, Sed, and Texinfo</seg>
+          Make, Patch, Pcre2, Sed, and Texinfo</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc, Grep,
-          Make, Patch, Sed, Texinfo</seg>
+          Make, Patch, Pcre2, Sed, Texinfo</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -952,14 +952,11 @@
 @z
 @x
           <seg>
-            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink>
-            and
-            <ulink url="&blfs-book;general/libsigsegv.html">libsigsegv</ulink>
+            None
           </seg>
 @y
           <seg>
-            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink>,
-            <ulink url="&blfs-book;general/libsigsegv.html">libsigsegv</ulink>
+            なし
           </seg>
 @z
 
@@ -1290,10 +1287,10 @@
 @z
 @x
           <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
-          Ncurses, and Sed</seg>
+          Ncurses, Pcre2, and Sed</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
-          Ncurses, Sed</seg>
+          Ncurses, Pcre2, Sed</seg>
 @z
 @x
           <seg>Glibc and Ncurses</seg>
@@ -1311,11 +1308,9 @@
           <seg>Gzip</seg>
 @z
 @x
-            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink> or
-            <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>
+            None
 @y
-            <ulink url="&blfs-book;general/pcre2.html">PCRE2</ulink> または
-            <ulink url="&blfs-book;general/pcre.html">PCRE</ulink>
+            なし
 @z
 
 %----------------------------------------------------------------------
@@ -1428,9 +1423,9 @@
           <seg>Glibc</seg>
 @z
 @x
-          <seg>Check and Pkgconf</seg>
+          <seg>Pkgconf</seg>
 @y
-          <seg>Check, Pkgconf</seg>
+          <seg>Pkgconf</seg>
 @z
 @x
           <seg>Man-DB</seg>
@@ -2020,6 +2015,42 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Pcre2 dependency info -->
+@y
+<!-- Begin Pcre2 dependency info -->
+@z
+@x
+          <seg>Bash, Binutils, Bzip2, Coreutils, GCC, Glibc, GZip, Make, and
+          Readline</seg>
+@y
+          <seg>Bash, Binutils, Bzip2, Coreutils, GCC, Glibc, GZip, Make,
+          Readline</seg>
+@z
+@x
+          <seg>Glibc</seg>
+@y
+          <seg>Glibc</seg>
+@z
+@x
+          <seg>Grep</seg>
+@y
+          <seg>Grep</seg>
+@z
+@x
+          <seg>Grep and Less</seg>
+@y
+          <seg>Grep, Less</seg>
+@z
+@x
+            <ulink url="&blfs-book;general/valgrind.html">Valgrind</ulink> and 
+            <ulink url="https://thrysoee.dk/editline/">libedit</ulink>
+@y
+            <ulink url="&blfs-book;general/valgrind.html">Valgrind</ulink>,
+            <ulink url="https://thrysoee.dk/editline/">libedit</ulink>
+@z
+
+%----------------------------------------------------------------------
 @x Perl
           <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
           Libxcrypt, Make, Sed, and Zlib</seg>
@@ -2060,10 +2091,10 @@
 @z
 @x
           <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
-          and Sed</seg>
+          Sed, and Sqlite</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
-          Sed</seg>
+          Sed, Sqlite</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2333,6 +2364,40 @@
 @z
 
 %----------------------------------------------------------------------
+@x
+<!-- Begin Sqlite dependency info -->
+@y
+<!-- Begin Sqlite dependency info -->
+@z
+@x
+          <seg>Bash, Binutils, GCC, Glibc, Gzip, Make, Ncurses, and Readline</seg>
+@y
+          <seg>Bash, Binutils, GCC, Glibc, Gzip, Make, Ncurses, Readline</seg>
+@z
+@x
+          <seg>Glibc</seg>
+@y
+          <seg>Glibc</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+            <ulink url="&blfs-book;general/libarchive.html">libarchive</ulink> and 
+            <ulink url="https://thrysoee.dk/editline/">libedit</ulink>
+@y
+            <ulink url="&blfs-book;general/libarchive.html">libarchive</ulink>,
+            <ulink url="https://thrysoee.dk/editline/">libedit</ulink>
+@z
+
+%----------------------------------------------------------------------
 @x Sysklogd
           <seg>Binutils, Coreutils, GCC, Glibc, Make, and Patch</seg>
 @y
@@ -2363,11 +2428,11 @@
 @x Systemd
          <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
          GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Lz4, Meson,
-         OpenSSL, Pkgconf, Sed, Util-linux, and Zstd</seg>
+         OpenSSL, Pcre2, Pkgconf, Sed, Util-linux, and Zstd</seg>
 @y
          <seg>Acl, Bash, Binutils, Coreutils, Diffutils, Gawk,
          GCC, Glibc, Gperf, Grep, Jinja2, Libcap, Libxcrypt, Lz4, Meson,
-         OpenSSL, Pkgconf, Sed, Util-linux, Zstd</seg>
+         OpenSSL, Pcre2, Pkgconf, Sed, Util-linux, Zstd</seg>
 @z
 @x
           <seg>Acl, Glibc, Libcap, Libxcrypt, OpenSSL, Util-linux, Xz,

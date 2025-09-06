@@ -24,14 +24,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix an issue in xzgrep:</para>
-@y
-    <para>
-    xzgrep における問題を修正するためのパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Prepare Xz for compilation with:</para>
 @y
     <para>&PreparePackage1;Xz&PreparePackage2;</para>

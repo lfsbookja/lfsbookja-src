@@ -22,14 +22,6 @@
 @z
 
 @x
-    <para>First, fix a problem related to cross compilation and gcc-15:</para>
-@y
-    <para>
-    はじめにクロスコンパイルおよび gcc-15 に関連する問題を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Bash for compilation:</para>
 @y
     <para>&PreparePackage1;Bash&PreparePackage2;</para>

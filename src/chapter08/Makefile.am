@@ -66,6 +66,7 @@ CHANGE_FILES = \
 	openssl.ch        \
 	packaging.ch      \
 	patch.ch          \
+	pcre.ch           \
 	perl.ch           \
 	pkgconf.ch        \
 	pkgmgt.ch         \
@@ -76,6 +77,7 @@ CHANGE_FILES = \
 	sed.ch            \
 	setuptools.ch     \
 	shadow.ch         \
+	sqlite.ch         \
 	stripping.ch      \
 	sysklogd.ch       \
 	systemd.ch        \

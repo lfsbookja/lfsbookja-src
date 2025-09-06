@@ -45,10 +45,10 @@
 @z
 
 @x
-    <para>Remove a useless static library:</para>
+    <para>Remove a static library only useful for the test suite:</para>
 @y
     <para>
-    不要なスタティックライブラリを削除します。
+    テストスイートでしか使わない不要なスタティックライブラリを削除します。
     </para>
 @z
 
