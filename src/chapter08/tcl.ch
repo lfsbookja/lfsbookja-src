@@ -88,6 +88,17 @@
 @z
 
 @x
+    <para>Three tests (out of over 43000 total tests) from the cmdAH.test file
+    are known to fail in the chroot environment.  All tests pass in a full
+    system. </para>
+@y
+    <para>
+    (計 43,000 個以上におよぶテストの中で) cmdAH.test ファイルに関係する 3 つのテストは chroot 環境において失敗します。
+    完全なシステムであれば、すべてのテストが成功します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

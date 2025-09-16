@@ -38,6 +38,72 @@
 @z
 
 @x
+      <para>2025-09-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1754. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20250826. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tcl8.6.17. Fixes
+          <ulink url='&lfs-ticket-root;5781'>#5781</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pcre2-10.46. Fixes
+          <ulink url='&lfs-ticket-root;5790'>#5790</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.9.0. Fixes
+          <ulink url='&lfs-ticket-root;5788'>#5788</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.16.7. Fixes
+          <ulink url='&lfs-ticket-root;5787'>#5787</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.9.0. Fixes
+          <ulink url='&lfs-ticket-root;5789'>#5789</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-09-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1754 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20250826 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl8.6.17 へのアップデート。
+          <ulink url='&lfs-ticket-root;5781'>#5781</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pcre2-10.46 へのアップデート。
+          <ulink url='&lfs-ticket-root;5790'>#5790</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.9.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5788'>#5788</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.16.7 へのアップデート。
+          <ulink url='&lfs-ticket-root;5787'>#5787</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.9.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5789'>#5789</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-09-03</para>
       <itemizedlist>
         <listitem>

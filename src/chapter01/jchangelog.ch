@@ -26,7 +26,7 @@
     LFS ブック日本語版の変更履歴を示すために設けています。
    </para>
    <para>
-   「r12.3-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
+   「r12.4-XXX」という表記は、オリジナル LFS ブック GIT 管理ソースの連番号を意味します。
    また a2bf74a9b などの表記は、オリジナル XML ソースファイルの Git 管理下でのコミットハッシュ値を意味します。
    </para>
   </note>
@@ -51,7 +51,18 @@
 -->
 
    <listitem>
-      <para>2025-07-02</para>
+      <para>2025-09-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.4-20 (158d47f83) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
+      <para>2025-09-02</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
