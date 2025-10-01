@@ -55,12 +55,6 @@
         <para>&Download;: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
 @z
 
-@x Coreutils Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&coreutils-upstream-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&coreutils-upstream-patch;"/></para>
-@z
-
 @x Coreutils Internationalization Fixes Patch
         <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
 @y

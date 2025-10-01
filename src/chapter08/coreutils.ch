@@ -19,14 +19,6 @@
 @z
 
 @x
-    <para>First, apply a patch for a security problem identified upstream:</para>
-@y
-    <para>
-    はじめにアップストリームが認識しているセキュリティ問題に関するパッチを適用します。
-    </para>
-@z
-
-@x
     <para>POSIX requires that programs from Coreutils recognize character
     boundaries correctly even in multibyte locales. The following patch fixes
     this non-compliance and other internationalization-related bugs.</para>

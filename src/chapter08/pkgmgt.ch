@@ -748,7 +748,7 @@
     overriding the architecture-specific optimization to produce libraries
     suitable for both the host system and the system(s) where you'll deploy
     the LFS system.  Otherwise you'll get <computeroutput>Illegal
-    Instruction</computeroutput> errors running LFS.</para></important>
+    Instruction</computeroutput> errors running LFS.</para>
 @y
     <important><para>
     LFS システムを CPU の異なるシステム上にデプロイしたい場合、<xref
@@ -756,6 +756,25 @@
     つまりアーキテクチャー固有の最適化を通じて、ホストシステムと LFS デプロイ先のシステム双方に適したライブラリを生成するようにしてください。
     これを行っていないと LFS 実行時に <computeroutput>Illegal
     Instruction</computeroutput> エラーが発生することになります。
+    </para>
+@z
+
+@x
+    <para>The GMP build system stores the architecture-specific optimization
+    option used to build GMP into <filename>gmp.h</filename>, and the build
+    system of some package using GMP can read it from the header and use it
+    when building the package itself.  At least the MPFR build system is
+    known to do so.  Thus simply rebuilding GMP on a complete LFS system
+    is not enough: you'll need to recompile MPFR and maybe other packages
+    using GMP if you want to <quote>convert</quote> a complete LFS system
+    to be used for a different CPU.</para></important>
+@y
+    <para>
+    GMP ビルドシステムは GMP をビルドするために必要となる各アーキテクチャー特有の最適化オプションを <filename>gmp.h</filename> に保存します。
+    そして GMP を利用するパッケージでは、そのヘッダーファイルから最適化オプションを呼び込んで、パッケージビルドに利用するものがあります。
+    少なくとも MPFR のビルドシステムは、この仕組みを理解し利用しています。
+    完全な LFS システムにとって、GMP を単に再ビルドしようとする作業は不十分な事態を引き起こします。
+    もし他 CPU 向けに完全 LFS システムを<quote>移行</quote>しようとするなら、MPFR はもちろん、おそらく GMP を利用する他のパッケージもすべて再ビルドする必要があります。
     </para></important>
 @z
 

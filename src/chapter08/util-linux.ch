@@ -21,14 +21,6 @@
 @z
 
 @x
-    <para>First, disable a problematic test:</para>
-@y
-    <para>
-    はじめに問題のあるテストを無効にします。
-    </para>
-@z
-
-@x
     <para>Prepare Util-linux for compilation:</para>
 @y
     <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
@@ -105,14 +97,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-  <para>Finally, install the man pages:</para>
-@y
-  <para>
-  最後に man ページをインストールします。
-  </para>
 @z
 
 @x

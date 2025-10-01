@@ -97,6 +97,14 @@
 @z
 
 @x
+    <para>One test, test_matchfuzzy.vim, is known to fail on some systems.</para>
+@y
+    <para>
+    test_matchfuzzy.vim というテストに失敗するシステムがあります。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
