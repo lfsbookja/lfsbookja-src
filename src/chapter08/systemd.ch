@@ -122,15 +122,8 @@
 @z
 
 @x
-        <term><parameter>-D homed=disabled</parameter> and
-        <parameter>-D userdb=false</parameter></term>
-@y
-        <term><parameter>-D homed=disabled</parameter> と
-        <parameter>-D userdb=false</parameter></term>
-@z
-@x
-          <para>Remove two daemons with dependencies that do not fit
-          within the scope of LFS.</para>
+          <para>Remove a daemon which has dependencies that do not fit within
+          the scope of LFS.</para>
 @y
           <para>
           LFS が取り扱う範囲にそぐわない依存関係を持ったデーモンを削除します。
@@ -304,12 +297,12 @@
 @z
 
 @x
-        <seg>busctl, coredumpctl, halt (symlink to systemctl),
+        <seg>bootctl, busctl, coredumpctl, halt (symlink to systemctl),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
         machinectl, mount.ddi (symlink to systemd-dissect), networkctl,
         oomctl, portablectl, poweroff (symlink to
         systemctl), reboot (symlink to systemctl), resolvconf (symlink to
-        resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
+        resolvectl), resolvectl, run0, runlevel (symlink to systemctl), shutdown
         (symlink to systemctl), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-confext (symlink to systemd-sysext), systemd-creds,
@@ -317,30 +310,31 @@
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
         systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
-        systemd-repart, systemd-resolve (symlink to resolvectl), systemd-run,
-        systemd-socket-activate, systemd-stdio-bridge, systemd-sysext,
-        systemd-tmpfiles, systemd-tty-ask-password-agent,
+        systemd-pty-forward, systemd-repart, systemd-resolve
+        (symlink to resolvectl), systemd-run, systemd-socket-activate,
+        systemd-stdio-bridge, systemd-sysext, systemd-tmpfiles,
+        systemd-tty-ask-password-agent, systemd-vpick,
         systemd-umount (symlink to systemd-mount),
-        telinit (symlink to systemctl), timedatectl, and udevadm</seg>
+        timedatectl, udevadm, userdbctl, and varlinkctl</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2,
         libsystemd.so, libsystemd-shared-&systemd-version;.so (in /usr/lib/systemd),
         and libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
-        /etc/xdg/systemd, /usr/lib/systemd, /usr/lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel,
-        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd,
-        /usr/lib/tmpfiles.d,
+        /etc/xdg/systemd, /usr/include/systemd, /usr/lib/binfmt.d,
+        /usr/lib/credstore, /usr/lib/environment.d, /usr/lib/kernel,
+        /usr/lib/modprobe.d, /usr/lib/modules-load.d,  /usr/lib/systemd,
+        /usr/lib/udev, /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, and /var/log/journal</seg>
 @y
-        <seg>busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
+        <seg>bootctl, busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
         machinectl, mount.ddi (systemd-dissect へのシンボリックリンク), networkctl,
         oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
         reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
-        resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
+        resolvectl, run0, runlevel (systemctl へのシンボリックリンク), shutdown
         (systemctl へのシンボリックリンク), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-confext (systemd-sysext へのシンボリックリンク), systemd-creds,
@@ -348,21 +342,22 @@
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
         systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
-        systemd-repart, systemd-resolve (resolvectl へのシンボリックリンク), systemd-run,
-        systemd-socket-activate, systemd-stdio-bridge, systemd-sysext,
-        systemd-tmpfiles, systemd-tty-ask-password-agent,
+        systemd-pty-forward, systemd-repart, systemd-resolve (resolvectl へのシンボリックリンク),
+        systemd-run, systemd-socket-activate,
+        systemd-stdio-bridge, systemd-sysext, systemd-tmpfiles,
+        systemd-tty-ask-password-agent, systemd-vpick,
         systemd-umount (systemd-mount へのシンボリックリンク),
-        telinit (systemctl へのシンボリックリンク), timedatectl, udevadm</seg>
+        timedatectl, udevadm, userdbctl, varlinkctl</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2,
         libsystemd.so, libsystemd-shared-&systemd-version;.so (/usr/lib/systemd ディレクトリ内),
         libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
-        /etc/xdg/systemd, /usr/lib/systemd, /usr/lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel,
-        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd,
-        /usr/lib/tmpfiles.d,
+        /etc/xdg/systemd, /usr/include/systemd, /usr/lib/binfmt.d,
+        /usr/lib/credstore, /usr/lib/environment.d, /usr/lib/kernel,
+        /usr/lib/modprobe.d, /usr/lib/modules-load.d,  /usr/lib/systemd,
+        /usr/lib/udev, /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, /var/log/journal</seg>
 @z
@@ -371,6 +366,14 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x bootctl
+          <para>Is used to control EFI firmware boot settings on a system</para>
+@y
+          <para>
+          EFI ファームウェアのブート設定の制御を行います。
+          </para>
 @z
 
 @x busctl
@@ -531,6 +534,15 @@
           <para>
           ネットワーク名前解決マネージャーに対して制御コマンドを送信します。
           あるいはドメイン名、IPv4、IPv6 アドレス、DNS レコードやサービスなどを解決します。
+          </para>
+@z
+
+@x run0
+          <para>Temporary elevates or acquires different privileges, similar
+          to sudo</para>
+@y
+          <para>
+          sudo と同様に一時的な権限昇格や別権限の取得を行います。
           </para>
 @z
 
@@ -735,6 +747,15 @@
           </para>
 @z
 
+@x systemd-pty-forward
+          <para>Is used to run a command with a custom terminal background
+          color or title</para>
+@y
+          <para>
+          カスタムの端末背景色あるいはタイトルを使ってコマンド実行を行います。
+          </para>
+@z
+
 @x systemd-repart
           <para>Is used to grow and add partitions to a partition table when
           systemd is used with an OS image (e.g. a container)</para>
@@ -777,7 +798,6 @@
           <para>Activates system extension images</para>
 @y
           <para>
-          
           システム拡張イメージを有効にします。
           </para>
 @z
@@ -810,12 +830,11 @@
           </para>
 @z
 
-@x telinit
-          <para>Tells <command>init</command> which run-level to change
-          to</para>
+@x systemd-vpick
+          <para>Is used to resolve paths to a ".v/ versioned directory</para>
 @y
           <para>
-          <command>init</command> コマンドに対してランレベルを何にするかを指示します。
+          ".v/ バージョンディレクトリへのパスの解決に用いられます。
           </para>
 @z
 
@@ -837,6 +856,22 @@
           <para>
           汎用的な udev 管理ツール。
           udevd デーモンの制御、udev データベースデータの提供、uevent の監視、uevent の完了までの待機、udev 設定のテスト、指定デバイスに対する uevent の起動、といったことを行います。
+          </para>
+@z
+
+@x userdbctl
+          <para>Is used to inspect users, groups, and group memberships</para>
+@y
+          <para>
+          ユーザー、グループ、グループメンバーの確認に用いられます。
+          </para>
+@z
+
+@x varlinkctl
+          <para>Is used to interact with and invoke Varlink services</para>
+@y
+          <para>
+          Varlink サービスとの対話および起動に用いられます。
           </para>
 @z
 

@@ -55,6 +55,14 @@
 @z
 
 @x
+    <para>Fix a bug that prevents udev from running correctly:</para>
+@y
+    <para>
+    udev が正常動作できなくなるバグを修正します。
+    </para>
+@z
+
+@x
     <para>Adjust the hardcoded paths to network configuration files for the
     standalone udev installation:</para>
 @y
