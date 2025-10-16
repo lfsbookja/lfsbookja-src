@@ -75,15 +75,15 @@
 
 @x
       Listed on the next page are several important packages located at
-      ftp.gnu.org.  That site is the canonical locaton of the
+      ftp.gnu.org.  That site is the canonical location of the
       subject packages but has been affected by a long term
       distributed denial of services (DDOS) attack.  See
-      <ulink url="https://news.slashdot.org/story/25/07/06/1737253/the-fsf-faces-active-ongoing-and-increasing-ddos-attacks">slashdot news</ulink> for details.
+      <ulink url="https://news.slashdot.org/story/25/07/06/1737253/the-fsf-faces-active-ongoing-and-increasing-ddos-attacks">Slashdot News</ulink> for details.
 @y
       次のページでは ftp.gnu.org に存在する重要なパッケージをいくつも一覧に示しています。
       このサイトは対象パッケージの標準的な配布サイトであるため、長期にわたって DDOS (distributed denial of services) 攻撃にさらされています。
       詳しくは <ulink
-      url="https://news.slashdot.org/story/25/07/06/1737253/the-fsf-faces-active-ongoing-and-increasing-ddos-attacks">slashdot ニュース</ulink> を参照してください。
+      url="https://news.slashdot.org/story/25/07/06/1737253/the-fsf-faces-active-ongoing-and-increasing-ddos-attacks">Slashdot ニュース</ulink> を参照してください。
 @z
 
 @x

@@ -77,14 +77,12 @@
     limit and 1 SBU (measured when building Binutils pass 1 with one CPU
     core) should be enough.  Some tests are flaky, so the test suite will
     automatically re-run failed tests.  If a test failed but then passed
-    when re-run, it should be considered as passed.  One test, test_ssl,
-    is known to fail in the chroot environment.</para>
+    when re-run, it should be considered as passed.</para>
 @y
     <para>
     比較的遅いシステムの場合は、その時間制限を増やせば 1 SBU (1 コアを使った Binutils 1 回目のビルド時間) で処理できるはずです。
     テストの中には一風変わったものがあって、自動的に再実行された上で失敗するものがあります。
     一度失敗して再実行の際に成功したものは、テストが成功したものとみなすことができます。
-    test_ssl というテストが chroot 環境内では失敗します。
     </para>
 @z
 

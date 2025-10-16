@@ -35,9 +35,9 @@
 @z
 
 @x
-      <title>The meaning of the make option:</title>
+      <title>The meaning of the configure options:</title>
 @y
-      <title>&MeaningOfOption1;make&MeaningOfOption2;</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x --enable-fts{4,5}
@@ -68,6 +68,20 @@
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
+@z
+
+@x
+    <para>The <parameter>LDFLAGS.rpath=""</parameter> option prevents
+    hard coding library search paths (rpath) into the shared library.
+    This package does not need rpath for an installation into the standard
+    location, and rpath may sometimes cause unwanted effects or even
+    security issues.</para>
+@y
+    <para>
+    <parameter>LDFLAGS.rpath=""</parameter> オプションを指定するのは、検索パス (rpath) がハードコーディングされて共有ライブラリに埋め込まれることを避けるためです。
+    このパッケージでは、標準的なインストール先にインストールする限り rpath は不要です。
+    むしろ rpath は予期しない動作となったり、場合によってはセキュリティに関する問題を起こす可能性すらあります。
+    </para>
 @z
 
 @x

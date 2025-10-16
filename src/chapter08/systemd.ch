@@ -302,7 +302,8 @@
         machinectl, mount.ddi (symlink to systemd-dissect), networkctl,
         oomctl, portablectl, poweroff (symlink to
         systemctl), reboot (symlink to systemctl), resolvconf (symlink to
-        resolvectl), resolvectl, run0, runlevel (symlink to systemctl), shutdown
+        resolvectl), resolvectl, run0 (symlink to systemd-run), runlevel
+        (symlink to systemctl), shutdown
         (symlink to systemctl), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-confext (symlink to systemd-sysext), systemd-creds,
@@ -334,8 +335,9 @@
         machinectl, mount.ddi (systemd-dissect へのシンボリックリンク), networkctl,
         oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
         reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
-        resolvectl, run0, runlevel (systemctl へのシンボリックリンク), shutdown
-        (systemctl へのシンボリックリンク), systemctl, systemd-ac-power, systemd-analyze,
+        resolvectl, run0 (systemd-run へのシンボリックリンク),
+        runlevel (systemctl へのシンボリックリンク), shutdown (systemctl へのシンボリックリンク), 
+        systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-confext (systemd-sysext へのシンボリックリンク), systemd-creds,
         systemd-delta, systemd-detect-virt,
@@ -831,10 +833,10 @@
 @z
 
 @x systemd-vpick
-          <para>Is used to resolve paths to a ".v/ versioned directory</para>
+          <para>Is used to resolve paths to a ".v/" versioned directory</para>
 @y
           <para>
-          ".v/ バージョンディレクトリへのパスの解決に用いられます。
+          ".v/" バージョンディレクトリへのパスの解決に用いられます。
           </para>
 @z
 
