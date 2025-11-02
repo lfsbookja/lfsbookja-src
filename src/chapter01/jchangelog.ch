@@ -51,6 +51,17 @@
 -->
 
    <listitem>
+      <para>2025-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.4-38 (f8ab28e0f) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2025-10-16</para>
       <itemizedlist>
         <listitem>

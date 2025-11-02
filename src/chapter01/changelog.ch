@@ -38,6 +38,72 @@
 @z
 
 @x
+      <para>2025-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1888. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20251022. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pcre2-10.47. Fixes
+          <ulink url='&lfs-ticket-root;5813'>#5814</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.16. Fixes
+          <ulink url='&lfs-ticket-root;5817'>#5817</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.17.6. Fixes
+          <ulink url='&lfs-ticket-root;5811'>#5811</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.77. Fixes
+          <ulink url='&lfs-ticket-root;5816'>#5815</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.194. Fixes
+          <ulink url='&lfs-ticket-root;5815'>#5815</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1888 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20251022 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pcre2-10.47 へのアップデート。
+          <ulink url='&lfs-ticket-root;5813'>#5814</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.16 へのアップデート。
+          <ulink url='&lfs-ticket-root;5817'>#5817</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.17.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5811'>#5811</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.77 へのアップデート。
+          <ulink url='&lfs-ticket-root;5816'>#5815</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.194 へのアップデート。
+          <ulink url='&lfs-ticket-root;5815'>#5815</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-10-15</para>
       <itemizedlist>
         <listitem>
