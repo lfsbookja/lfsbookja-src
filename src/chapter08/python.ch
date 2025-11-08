@@ -229,7 +229,7 @@
 
 @x
         <seg>
-          2to3, idle3, pip3, pydoc3, python3, and python3-config
+          idle3, pip3, pydoc3, python3, and python3-config
         </seg>
         <seg>
           libpython&python-minor;.so and libpython3.so
@@ -241,7 +241,7 @@
         </seg>
 @y
         <seg>
-          2to3, idle3, pip3, pydoc3, python3, python3-config
+          idle3, pip3, pydoc3, python3, python3-config
         </seg>
         <seg>
           libpython&python-minor;.so, libpython3.so

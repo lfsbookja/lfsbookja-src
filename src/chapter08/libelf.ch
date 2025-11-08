@@ -41,9 +41,9 @@
 @z
 
 @x
-    <para>Compile the package:</para>
+    <para>Compile only Libelf:</para>
 @y
-    <para>&CompileThePackage;</para>
+    <para>libelf のみをコンパイルします。</para>
 @z
 
 @x
@@ -55,10 +55,12 @@
 @z
 
 @x
-    <para>Two tests are known to fail, dwarf_srclang_check and 
-    run-backtrace-native-core.sh.</para>
+    <para>The above command builds the utilities that are part of the package
+    as well as the unit tests. Two tests are known to fail: dwarf_srclang_check
+    and run-backtrace-native-core.sh.</para>
 @y
     <para>
+    上記コマンドはパッケージの一部にあるユーティリティーをビルドし、ユニットテストを実施します。
     dwarf_srclang_check と run-backtrace-native-core.sh という 2 つのテストは失敗します。
     </para>
 @z
