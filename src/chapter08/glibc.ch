@@ -22,6 +22,14 @@
 @z
 
 @x
+    <para>First, apply some changes from upstream:</para>
+@y
+    <para>
+    はじめにアップストリームによる変更を適用します。
+    </para>
+@z
+
+@x
     <para>Some of the Glibc programs use the non-FHS compliant
     <filename class="directory">/var/db</filename> directory to store
     their runtime data. Apply the following patch to make such programs

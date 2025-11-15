@@ -38,6 +38,58 @@
 @z
 
 @x
+      <para>2025-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-9.9. Fixes
+          <ulink url='&lfs-ticket-root;5823'>#5823</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.45.1. 
+          This now requires adding glibc-2.42-upstream_fixes-1.patch. Fixes
+          <ulink url='&lfs-ticket-root;5824'>#5824</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libxcrypt-4.5.1. Fixes
+          <ulink url='&lfs-ticket-root;5820'>#5820</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.17.8. Fixes
+          <ulink url='&lfs-ticket-root;5818'>#5818</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-autoconf-3510000 (3.51.0). Fixes
+          <ulink url='&lfs-ticket-root;5821'>#5821</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - coreutils-9.9 へのアップデート。
+          <ulink url='&lfs-ticket-root;5823'>#5823</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.45.1 へのアップデート。 
+          これより glibc-2.42-upstream_fixes-1.patch の追加を要する。
+          <ulink url='&lfs-ticket-root;5824'>#5824</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libxcrypt-4.5.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5820'>#5820</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.17.8 へのアップデート。
+          <ulink url='&lfs-ticket-root;5818'>#5818</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sqlite-autoconf-3510000 (3.51.0) へのアップデート。
+          <ulink url='&lfs-ticket-root;5821'>#5821</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-11-01</para>
       <itemizedlist>
         <listitem>
