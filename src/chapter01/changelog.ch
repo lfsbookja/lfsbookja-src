@@ -38,6 +38,64 @@
 @z
 
 @x
+      <para>2025-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.1934. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-autoconf-3510100 (3.51.1). Fixes
+          <ulink url='&lfs-ticket-root;5828'>#5828</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ninja-1.13.2. Fixes
+          <ulink url='&lfs-ticket-root;5826'>#5826</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.17.9. Fixes
+          <ulink url='&lfs-ticket-root;5827'>#5827</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libxcrypt-4.5.2. Fixes
+          <ulink url='&lfs-ticket-root;5825'>#5825</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20251120. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.1934 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sqlite-autoconf-3510100 (3.51.1) へのアップデート。
+          <ulink url='&lfs-ticket-root;5828'>#5828</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ninja-1.13.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5826'>#5826</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.17.9 へのアップデート。
+          <ulink url='&lfs-ticket-root;5827'>#5827</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libxcrypt-4.5.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5825'>#5825</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20251120 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-11-15</para>
       <itemizedlist>
         <listitem>

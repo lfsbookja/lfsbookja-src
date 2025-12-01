@@ -22,6 +22,16 @@
 @z
 
 @x
+        If updating this package on an existing system and the go compiler is
+        installed, prevent a build error by using <command>export GOLANG=no</command>
+        before running the commands below.  Be sure to unset <envar>GOLANG</envar>
+        after installation is complete.
+@y
+        既存システム上にて本パッケージの更新を行う場合であって go コンパイラーがインストールされているなら、ビルドエラーが発生しないように、以下のコマンド実行にあたっては <command>export GOLANG=no</command> を指定します。
+        インストールが終了したら <envar>GOLANG</envar> を unset することを忘れないでください。
+@z
+
+@x
     <para>Prevent static libraries from being installed:</para>
 @y
     <para>
