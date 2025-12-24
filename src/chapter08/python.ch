@@ -23,6 +23,15 @@
 @z
 
 @x
+    <para>Fix a regression that causes issues in BLFS packages like
+    pyatspi:</para>
+@y
+    <para>
+    pyatspi のような BLFS パッケージにおいて問題となる縮退状況を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Python for compilation:</para>
 @y
     <para>&PreparePackage1;Python&PreparePackage2;</para>

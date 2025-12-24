@@ -238,11 +238,17 @@
          If you left the chroot environment to create a backup or restart
          building using a restore, remember to check that the virtual
          file systems are still mounted (<command>findmnt | grep
-         $LFS</command>).  If they are not mounted, remount them now as
+         $LFS</command> should show at least
+         <filename class="directory">$LFS/dev</filename>,
+         <filename class="directory">$LFS/proc</filename>, and
+         <filename class="directory">$LFS/sys</filename> as mounted).
+         If they are not mounted, remount them now as
          described in <xref linkend='ch-tools-kernfs'/> and re-enter the chroot
          environment (see <xref linkend='ch-tools-chroot'/>) before continuing.
 @y
-        chroot 環境から抜け出して、バックアップの生成を行った場合、あるいはビルド作業を再開する場合は、<xref
-        linkend='ch-tools-kernfs'/> において説明している、カーネル仮想ファイルシステムがマウントされていることを確認してください (<command>findmnt | grep $LFS</command>)。
-        もしマウントされていなかったら、マウントを行ってから、再び chroot 環境に入るようにしてください（<xref linkend='ch-tools-chroot'/> 参照）。
+         chroot 環境から抜け出して、バックアップの生成を行った場合、あるいはビルド作業を再開する場合は、<xref
+         linkend='ch-tools-kernfs'/> において説明しているように、カーネル仮想ファイルシステムがマウントされていることを確認してください (<command>findmnt | grep $LFS</command> の実行により、最低でも <filename class="directory">$LFS/dev</filename>,
+         <filename class="directory">$LFS/proc</filename>, 
+         <filename class="directory">$LFS/sys</filename> はマウントされていなければなりません)。
+         もしマウントされていなかったら、マウントを行ってから、再び chroot 環境に入るようにしてください（<xref linkend='ch-tools-chroot'/> 参照）。
 @z

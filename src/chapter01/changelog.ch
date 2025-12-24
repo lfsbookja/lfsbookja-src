@@ -38,6 +38,56 @@
 @z
 
 @x
+      <para>2025-12-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata2025c. Fixes
+          <ulink url='&lfs-ticket-root;5833'>#5833</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.14.2 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5831'>#5831</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.10.0. Fixes
+          <ulink url='&lfs-ticket-root;5832'>#5832</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.18.1. Fixes
+          <ulink url='&lfs-ticket-root;5830'>#5830</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-6.18.0. Fixes
+          <ulink url='&lfs-ticket-root;5829'>#5829</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2025-12-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzdata2025c へのアップデート。
+          <ulink url='&lfs-ticket-root;5833'>#5833</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.14.2 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5831'>#5831</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.10.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5832'>#5832</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.18.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5830'>#5830</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-6.18.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5829'>#5829</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-12-01</para>
       <itemizedlist>
         <listitem>

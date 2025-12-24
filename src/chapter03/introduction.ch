@@ -75,31 +75,32 @@
 
 @x
       Listed on the next page are several important packages located at
-      ftp.gnu.org.  That site is the canonical location of the
-      subject packages but has been affected by a long term
-      distributed denial of services (DDOS) attack.  See
+      <uri>ftpmirror.gnu.org</uri>.  The canonical location of the
+      subject packages are <uri>ftp.gnu.org</uri> but due to
+      a long term distributed denial of services (DDOS) attack the site
+      administrator suggested the LFS editors to use
+      <uri>ftpmirror.gnu.org</uri> instead.  See
       <ulink url="https://news.slashdot.org/story/25/07/06/1737253/the-fsf-faces-active-ongoing-and-increasing-ddos-attacks">Slashdot News</ulink> for details.
 @y
-      次のページでは ftp.gnu.org に存在する重要なパッケージをいくつも一覧に示しています。
-      このサイトは対象パッケージの標準的な配布サイトであるため、長期にわたって DDOS (distributed denial of services) 攻撃にさらされています。
+      次のページでは <uri>ftpmirror.gnu.org</uri> に存在する重要なパッケージをいくつも一覧に示しています。
+      対象パッケージの標準的な配布サイトは <uri>ftp.gnu.org</uri> ですが、長期にわたって DDOS (distributed denial of services) 攻撃にさらされています。
+      したがってサイト管理者は LFS 編集者に対して <uri>ftpmirror.gnu.org</uri> の利用を推奨しています。
       詳しくは <ulink
       url="https://news.slashdot.org/story/25/07/06/1737253/the-fsf-faces-active-ongoing-and-increasing-ddos-attacks">Slashdot ニュース</ulink> を参照してください。
 @z
 
 @x
-      An alternative for ftp.gnu.org is to use one of the mirrors for that
-      site.  A list of mirrors is located at 
-      <ulink url="https://www.gnu.org/prep/ftp.en.html"/>
+      The <uri>ftpmirror.gnu.org</uri> URL actually redirects to one of the
+      mirrors of the <uri>ftp.gnu.org</uri> site.  You may also select a
+      mirror manually instead of using <uri>ftpmirror.gnu.org</uri>.
+      A list of mirrors is located at
+      <ulink url="https://www.gnu.org/prep/ftp.en.html"/>.
+      If you choose to use the wget list described below, that file also
+      can be modified to use your desired mirror.
 @y
-      ftp.gnu.org に対しての別の選択として、そのミラーサイトを利用する方法があります。
-      ミラーサイトの一覧は <ulink
-      url="https://www.gnu.org/prep/ftp.en.html"/> に示されています。
-@z
-
-@x
-      If you choose to use the wget list described below, that file will
-      also need to be modified to use your desired mirror.
-@y
+      <uri>ftpmirror.gnu.org</uri> を利用すると、実際には <uri>ftp.gnu.org</uri> サイトのミラーのいずれかにリダイレクトされます。
+      <uri>ftpmirror.gnu.org</uri> を利用せずに、直接そのミラーサイトを指定しても構いません。
+      ミラー一覧は <ulink url="https://www.gnu.org/prep/ftp.en.html"/> に示されています。
       以降に示している wget リストを利用する予定であれば、このファイルを修正して必要なミラーサイトを利用するようにしてください。
 @z
 

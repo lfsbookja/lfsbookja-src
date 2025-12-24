@@ -45,6 +45,12 @@
 @z
 
 @x
+      Fix a problem identified upstream specifically for this version of readline:
+@y
+      readline の当バージョンにおいてアップストリームが認識している問題を修正します。
+@z
+
+@x
     <para>Prepare Readline for compilation:</para>
 @y
     <para>&PreparePackage1;Readline&PreparePackage2;</para>
