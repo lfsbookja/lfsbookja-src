@@ -38,6 +38,114 @@
 @z
 
 @x
+      <para>2026-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-autoconf-3510200 (3.51.2). Fixes
+          <ulink url='&lfs-ticket-root;5841'>#5841</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ncurses-6.6. Fixes
+          <ulink url='&lfs-ticket-root;5839'>#5839</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.18.5. Fixes
+          <ulink url='&lfs-ticket-root;5840'>#5840</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-01-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - sqlite-autoconf-3510200 (3.51.2) へのアップデート。
+          <ulink url='&lfs-ticket-root;5841'>#5841</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ncurses-6.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5839'>#5839</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.18.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5840'>#5840</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2026-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.8.2. Fixes
+          <ulink url='&lfs-ticket-root;5836'>#5836</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.2031. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.41.3. Fixes
+          <ulink url='&lfs-ticket-root;5834'>#5834</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-259. Fixes
+          <ulink url='&lfs-ticket-root;5822'>#5822</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.19.0. Fixes
+          <ulink url='&lfs-ticket-root;5838'>#5838</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.18.2. Fixes
+          <ulink url='&lfs-ticket-root;5837'>#5837</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to inetutils-2.7. Fixes
+          <ulink url='&lfs-ticket-root;5835'>#5835</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20251215. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - xz-5.8.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5836'>#5836</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.2031 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.41.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5834'>#5834</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-259 へのアップデート。
+          <ulink url='&lfs-ticket-root;5822'>#5822</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.19.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5838'>#5838</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.18.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5837'>#5837</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inetutils-2.7 へのアップデート。
+          <ulink url='&lfs-ticket-root;5835'>#5835</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20251215 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2025-12-15</para>
       <itemizedlist>
         <listitem>

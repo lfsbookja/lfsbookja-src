@@ -101,23 +101,6 @@
 @z
 
 @x
-    <para>Make a minor change to make the first group number generated
-    by useradd 1000:</para>
-@y
-    <para>
-    useradd が生成する最初のグループ番号を 1000 とするような修正をします。
-    </para>
-@z
-
-@x
-    <para>Fix a simple programming error by modifying a file with following command:</para>
-@y
-    <para>
-    1 つのファイルにおいて単純なプログラミングエラーがあるため、これを修正するために以下のコマンドを実行します。
-    </para>
-@z
-
-@x
     <para>Prepare Shadow for compilation:</para>
 @y
     <para>&PreparePackage1;Shadow&PreparePackage2;</para>
@@ -165,6 +148,25 @@
           <para>
           ユーザー名の最大文字数は 32 です。
           そこでグループ名の最大文字数も同様とします。
+          </para>
+@z
+
+@x --disable-logind
+          <para>This option makes Shadow (specifically, the
+          <command>login</command> and <command>who</command> programs) use
+          the <filename>/run/utmp</filename> file instead of logind to track
+          the active login sessions, as logind isn't available yet in the
+          incomplete LFS system.  But as we've discussed in
+          <xref linkend='ch-tools-createfiles'/>, the
+          <filename>/run/utmp</filename> file format will be completely
+          broken after year 2038.  The LFS editors will attempt to resolve
+          the issue before that year.</para>
+@y
+          <para>
+          このオプションは、Shadow におけるアクティブなログインセッションの追跡にあたって (特に <command>login</command> と <command>who</command> のプログラムが) logind ではなく <filename>/run/utmp</filename> を利用するものとして指定します。
+          なぜなら現段階の不完全な LFS システムでは logind がまだ利用できないためです。
+          ただし <xref linkend='ch-tools-createfiles'/> において触れているように、<filename>/run/utmp</filename> ファイルのフォーマットは 2038 年以降は完全に壊れます。
+          LFS 編集者はその年になる前に問題解決を図るつもりです。
           </para>
 @z
 

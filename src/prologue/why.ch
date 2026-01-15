@@ -669,6 +669,16 @@
         </para>
 @z
 
+@x Pcre2
+        <para>This package provides a set of functions that implement regular 
+        expression pattern matching using the same syntax and semantics as 
+        Perl 5.</para>
+@y
+        <para>
+        このパッケージは、Perl 5 が用いている正規表現と同様の文法による機能を提供するものです。
+        </para>
+@z
+
 @x Perl
         <para>This package is an interpreter for the runtime language
         PERL. It is needed for the installation and test suites of several LFS

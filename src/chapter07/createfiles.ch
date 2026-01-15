@@ -191,26 +191,34 @@
 @z
 
 @x
-  <note revision='sysv'><para>The <filename>/run/utmp</filename> file
-  records the users that are currently logged in.  This file is created
-  dynamically in the boot scripts.</para></note>
+  <note><para>The <filename>/run/utmp</filename> file
+  records the users that are currently logged in.
+  <phrase revision='sysv'>This file is created dynamically in the boot
+  scripts.</phrase><phrase revision='systemd'>This file is created
+  dynamically when a user logs into the system.</phrase></para></note>
 @y
   <note revision='sysv'><para>
   <filename>/run/utmp</filename> ファイルは現在ログインしているユーザーの情報を保持します。
-  このファイルはブートスクリプトが動的に生成します。
+  <phrase revision='sysv'>
+   このファイルはブートスクリプトが動的に生成します。
+  </phrase>
+  <phrase revision='systemd'>
+   このファイルはユーザーがシステムにログインしたときに自動的に生成されます。
+  </phrase>
   </para></note>
 @z
 
 @x
-      The <phrase revision='sysv'><filename>utmp</filename>,
-      </phrase><filename>wtmp</filename>, <filename>btmp</filename>, and
+      The <filename>utmp</filename>,
+      <filename>wtmp</filename>, <filename>btmp</filename>, and
       <filename>lastlog</filename> files use 32-bit integers for timestamps
       and they'll be fundamentally broken after year 2038.  Many packages
       have stopped using them and other packages are going to stop using
       them.  It is probably best to consider them deprecated.
 @y
-      <phrase revision='sysv'><filename>utmp</filename>,
-      </phrase><filename>wtmp</filename>, <filename>btmp</filename>,
+      <filename>utmp</filename>,
+      <filename>wtmp</filename>,
+      <filename>btmp</filename>,
       <filename>lastlog</filename> の各ファイルでは、32 ビットの整数値を使ってタイムスタンプを表現していますが、これは 2038 年以降には基本的に壊れるでしょう。
       多くのパッケージにおいてはこういった利用を停止しており、その他についても順次停止予定です。
       したがってこういった表記は非推奨であると捉えるべきです。
