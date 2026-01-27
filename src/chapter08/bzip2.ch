@@ -89,6 +89,41 @@
 @z
 
 @x
+    <para>The name of the shared library isn't standardized and it varies
+    among distros.  The instruction above has installed
+    <filename class='libraryfile'>libbz2.so.1.0</filename>, but some
+    applications, for example Kbd, expects a different name
+    <filename class='libraryfile'>libbz2.so.1</filename> that some other
+    distros are using.  Create a compatibility symlink for them:</para>
+@y
+    <para>
+    共有ライブラリ名は標準化されておらず、ディストロによってさまざまに命名されています。
+    上の手順では <filename
+    class='libraryfile'>libbz2.so.1.0</filename> をインストールしましたが、ディストロによってはたとえば Kbd などのようなアプリケーションが、それとは別のライブラリ名を期待しているものがあります。
+    そういったものに対して、互換性のためにシンボリックリンクを生成します。
+    </para>
+@z
+
+@x
+      <para>The symlink approach is only valid here because the library
+      name difference is a result of different aesthetic views of the
+      distro maintainers, not real ABI incompatibilities.  In general
+      a library name difference most likely indicates an ABI incompatibility
+      and it would be very likely invalid to <quote>hide</quote> the
+      difference via a symlink.  Read
+      <xref linkend='pkgmgmt-upgrade-issues'/> for details about library
+      names.</para>
+@y
+      <para>
+      このシンボリックリンクを用いた方法は、ここでのみ有効なものです。
+      というのも、ライブラリ名を別のものにしているのは、ディストロ管理者の美学に基づく結果であって、決して ABI 非互換性を理由とするものではないからです。
+      一般的にライブラリ名が異なっているとしたら、それは ABI 互換性がない可能性を意味します。
+      したがってその違いを、シンボリックリンクによって<quote>隠す</quote>ことは、不適切である可能性が高くなります。
+      ライブラリ名に関する詳細は <xref linkend='pkgmgmt-upgrade-issues'/> を参照してください。
+      </para>
+@z
+
+@x
     <para>Install the shared <command>bzip2</command> binary into the
     <filename class="directory">/usr/bin</filename> directory, and replace
     two copies of <command>bzip2</command> with symlinks:</para>

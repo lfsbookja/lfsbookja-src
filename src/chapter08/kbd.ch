@@ -62,17 +62,6 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-%@x
-%          <para>This option puts keyboard layout data in a directory that will
-%          always be on the root partition instead of the default <filename
-%          class="directory">/usr/share/kbd</filename>.</para>
-%@y
-%          <para>
-%          このオプションによりキーボードレイアウトのデータを <filename
-%          class="directory">/usr/share/kbd</filename> ディレクトリではなく、ルートパーティションとなるようにします。
-%          </para>
-%@z
-
 @x --disable-vlock
           <para>This option prevents the vlock utility from being built because it
           requires the PAM library, which isn't available in the chroot
@@ -91,17 +80,10 @@
 @z
 
 @x
-    <para>The tests for this package will all fail in the chroot environment 
-    because they require <application>valgrind</application>. In addition
-    on a full system with <application>valgrind</application>, several
-    tests still fail in a graphical environment. The tests pass in 
-    a non-graphical environment.</para>
+    <para>To test the results, issue:</para>
 @y
     <para>
-    本パッケージのテストは chroot 環境では失敗します。
-    これは <application>valgrind</application> を必要としているためです。
-    さらに <application>valgrind</application> を完全に含んだシステムであっても、グラフィック環境下で失敗するテストが複数あります。
-    そういったテストはグラフィックではない環境において成功します。
+    ビルド結果をテストする場合は以下を実行します。
     </para>
 @z
 

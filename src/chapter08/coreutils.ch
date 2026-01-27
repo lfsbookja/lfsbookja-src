@@ -41,6 +41,16 @@
 @z
 
 @x
+    <para>Fix a bug causing the <command>cp</command> command to hang
+    forever when copying sparse files on
+    <systemitem class='filesystem'>ext4</systemitem> file systems:</para>
+@y
+    <para>
+    <systemitem class='filesystem'>ext4</systemitem> ファイルシステム上のスパースファイルをコピーすると、<command>cp</command> コマンドが永久にハングするというバグを修正します。
+    </para>
+@z
+
+@x
     <para>Now prepare Coreutils for compilation:</para>
 @y
     <para>&PreparePackage1;Coreutils&PreparePackage2;</para>

@@ -576,10 +576,10 @@
 @z
 @x
           <seg>Bash, Binutils, Bzip2, Coreutils, Diffutils, Gawk, GCC, Glibc,
-          Grep, Make, Sed, Xz, and Zlib</seg>
+          Grep, Make, Sed, Xz, Zlib, and Zstd</seg>
 @y
           <seg>Bash, Binutils, Bzip2, Coreutils, Diffutils, Gawk, GCC, Glibc,
-          Grep, Make, Sed, Xz, Zlib</seg>
+          Grep, Make, Sed, Xz, Zlib, Zstd</seg>
 @z
 @x
           <seg>Glibc, Bzip2, Xz, and Zlib</seg>
@@ -1253,10 +1253,10 @@
 @z
 @x
           <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-          Gzip, Make, OpenSSL, Pkgconf, Sed, Xz, and Zlib</seg>
+          Gzip, Make, OpenSSL, Pkgconf, Sed, Xz, Zlib, and Zstd</seg>
 @y
           <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
-          Gzip, Make, OpenSSL, Pkgconf, Sed, Xz, Zlib</seg>
+          Gzip, Make, OpenSSL, Pkgconf, Sed, Xz, Zlib, Zstd</seg>
 @z
 @x
           <seg>Glibc, Xz, and Zlib</seg>
@@ -2197,12 +2197,12 @@
 @z
 @x
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
-          Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed, and
-          Util-linux</seg>
+          Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed,
+          Util-linux, and Zstd</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
           Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed,
-          Util-linux</seg>
+          Util-linux, Zstd</seg>
 @z
 @x
           <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Ncurses,
@@ -2844,9 +2844,11 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>Binutils, GCC, Libelf, and &systemd-udev;</seg>
+          <seg>Binutils, File, GCC, Kmod, Libelf, Python,
+          and &systemd-udev;</seg>
 @y
-          <seg>Binutils, GCC, Libelf, &systemd-udev;</seg>
+          <seg>Binutils, File, GCC, Kmod, Libelf, Python,
+          &systemd-udev;</seg>
 @z
 @x
             None

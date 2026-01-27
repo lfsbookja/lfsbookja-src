@@ -51,6 +51,17 @@
 -->
 
    <listitem>
+      <para>2026-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          r12.4-69 (b02d8e562) までの対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+   </listitem>
+
+   <listitem>
       <para>2026-01-15</para>
       <itemizedlist>
         <listitem>
