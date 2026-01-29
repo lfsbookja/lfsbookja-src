@@ -16,10 +16,10 @@
 @z
 
 @x
-    <para>First, make some fixes required by glibc-2.28 and later:</para>
+    <para>First, make a fix required by glibc-2.43 and later:</para>
 @y
     <para>
-    glibc-2.28 以降に対して必要となる修正を行います。
+    glibc-2.43 以降に対して必要となる修正を行います。
     </para>
 @z
 

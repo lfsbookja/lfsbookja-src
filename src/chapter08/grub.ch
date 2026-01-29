@@ -107,12 +107,10 @@
 @z
 
 @x
-    <para>Install the package, and move the Bash completion support file to
-    the location recommended by the Bash completion maintainers:</para>
+    <para>Install the package:</para>
 @y
     <para>
     &InstallThePackage;
-    また Bash completion サポートファイルを、その開発者が推奨するディレクトリに移動させます。
     </para>
 @z
 

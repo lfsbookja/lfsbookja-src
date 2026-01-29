@@ -19,6 +19,14 @@
 @z
 
 @x
+    <para>First, make some fixes introduced by glibc-2.43:</para>
+@y
+    <para>
+    glibc-2.43 に対して必要となる修正を行います。
+    </para>
+@z
+
+@x
     <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
@@ -265,11 +273,20 @@
 @z
 
 @x
-    <para>The tests related to <filename>pr90579.c</filename> are known
+    <para>Four tests related to <filename>pr90579.c</filename> are known
     to fail.</para>
 @y
     <para>
-    <filename>pr90579.c</filename> に関係するテストは失敗します。
+    <filename>pr90579.c</filename> に関係するテスト 4 つが失敗します。
+    </para>
+@z
+
+@x
+    <para>Five tests related to <filename>analyzer/strchr-1.c</filename> are known
+    to fail.</para>
+@y
+    <para>
+    <filename>analyzer/strchr-1.c</filename>> に関係するテスト 5 つが失敗します。
     </para>
 @z
 

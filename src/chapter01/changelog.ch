@@ -38,6 +38,104 @@
 @z
 
 @x
+      <para>2026-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to wheel-0.46.3. Fixes
+          <ulink url='&lfs-ticket-root;5849'>#5849</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.19.2. Fixes
+          <ulink url='&lfs-ticket-root;5845'>#5845</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-80.10.2. Fixes
+          <ulink url='&lfs-ticket-root;5848'>#5848</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to packaging-26.0. Fixes
+          <ulink url='&lfs-ticket-root;5847'>#5847</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.6.1 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5851'>#5851</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.10.1. Fixes
+          <ulink url='&lfs-ticket-root;5844'>#5844</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.18.7. Fixes
+          <ulink url='&lfs-ticket-root;5843'>#5843</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-691. Fixes
+          <ulink url='&lfs-ticket-root;5846'>#5846</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20260123. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grub-2.14. Fixes
+          <ulink url='&lfs-ticket-root;5842'>#5842</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.43 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5850'>#5850</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - wheel-0.46.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5849'>#5849</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.19.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5845'>#5845</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-80.10.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5848'>#5848</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - packaging-26.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5847'>#5847</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.6.1 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5851'>#5851</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.10.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5844'>#5844</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.18.7 へのアップデート。
+          <ulink url='&lfs-ticket-root;5843'>#5843</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-691 へのアップデート。
+          <ulink url='&lfs-ticket-root;5846'>#5846</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20260123 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grub-2.14 へのアップデート。
+          <ulink url='&lfs-ticket-root;5842'>#5842</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.43 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5850'>#5850</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-01-15</para>
       <itemizedlist>
         <listitem>
