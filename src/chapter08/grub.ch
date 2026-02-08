@@ -53,12 +53,6 @@
 @z
 
 @x
-      Add a file missing from the release tarball:
-@y
-      リリース tarball に含まれていないファイルを追加します。
-@z
-
-@x
     <para>Prepare GRUB for compilation:</para>
 @y
     <para>&PreparePackage1;GRUB&PreparePackage2;</para>

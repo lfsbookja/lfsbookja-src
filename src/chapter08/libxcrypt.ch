@@ -19,7 +19,7 @@
 @z
 
 @x
-    <para>First, make some fixes introduced by glibc-2.43:</para>
+    <para>First, make a fix required by glibc-2.43 and later:</para>
 @y
     <para>
     glibc-2.43 に対して必要となる修正を行います。

@@ -213,12 +213,18 @@
 @z
 
 @x
-    <para>Some tests need a basic <filename>/etc/os-release</filename> file.
-    To test the results, issue:</para>
+    <para>One test creates a mount point in
+    <filename class='directory'>/tmp</filename> that we cannot clean up so
+    easily after running the test suite, and some tests need a basic
+    <filename>/etc/os-release</filename> file.  To test the results, create
+    this file and run the test suite in a separate mount namespace (so the
+    mount point is only visible for the test suite and it gets cleaned up
+    automatically after the test suite finishes):</para>
 @y
     <para>
-    テストの中には、あのシンプルな <filename>/etc/os-release</filename> ファイルを必要とするものがあります。
-    ビルド結果をテストする場合は以下を実行します。
+    1 つのテスト内において <filename class='directory'>/tmp</filename> にマウントポイントを生成するものがありますが、テストスイートの実行後に、それを簡単に削除することができません。
+    またテストの中には <filename>/etc/os-release</filename> ファイルを必要としています。
+    そこでビルド結果をテストするため、このファイルを生成した上で、独立したマウント名前空間のもとでテストスイートを実行します (そうすることでマウントポイントはテストスイートからのみ参照可能となり、テストスイートの終了時には自動的に削除できるようになります)。
     </para>
 @z
 

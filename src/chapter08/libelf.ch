@@ -47,14 +47,6 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
-@y
-    <para>
-    ビルド結果をテストする場合は以下を実行します。
-    </para>
-@z
-
-@x
     <para>The above command builds the utilities that are part of the package
     as well as the unit tests. Two tests are known to fail: dwarf_srclang_check
     and run-backtrace-native-core.sh.</para>
@@ -62,6 +54,14 @@
     <para>
     上記コマンドはパッケージの一部にあるユーティリティーをビルドし、ユニットテストを実施します。
     dwarf_srclang_check と run-backtrace-native-core.sh という 2 つのテストは失敗します。
+    </para>
+@z
+
+@x
+    <para>The test suite fails to build with glibc-2.43 or newer.</para>
+@y
+    <para>
+    glibc-2.43 またはそれ以降を用いたビルドにおいて、テストスイートは失敗します。
     </para>
 @z
 

@@ -38,6 +38,88 @@
 @z
 
 @x
+      <para>2026-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-259.1. Fixes
+          <ulink url='&lfs-ticket-root;5864'>#5864</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.19.3. Fixes
+          <ulink url='&lfs-ticket-root;5858'>#5858</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-81.0.0 (Python module). Fixes
+          <ulink url='&lfs-ticket-root;5863'>#5863</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.14.3. Fixes
+          <ulink url='&lfs-ticket-root;5859'>#5859</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to procps-ng-4.0.6. Fixes
+          <ulink url='&lfs-ticket-root;5863'>#5853</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.18.9. Fixes
+          <ulink url='&lfs-ticket-root;5854'>#5854</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-1.0. Fixes
+          <ulink url='&lfs-ticket-root;5852'>#5852</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.7.4 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5855'>#5855</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-9.10.tar.xz. Fixes
+          <ulink url='&lfs-ticket-root;5862'>#5862</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd-259.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5864'>#5864</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.19.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5858'>#5858</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-81.0.0 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5863'>#5863</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python3-3.14.3 へのアップデート。
+          <ulink url='&lfs-ticket-root;5859'>#5859</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - procps-ng-4.0.6 へのアップデート。
+          <ulink url='&lfs-ticket-root;5863'>#5853</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.18.9 へのアップデート。
+          <ulink url='&lfs-ticket-root;5854'>#5854</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5852'>#5852</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.7.4 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5855'>#5855</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - coreutils-9.10.tar.xz へのアップデート。
+          <ulink url='&lfs-ticket-root;5862'>#5862</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-01-28</para>
       <itemizedlist>
         <listitem>
