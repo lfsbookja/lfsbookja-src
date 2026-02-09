@@ -53,6 +53,14 @@
 @z
 
 @x
+    <para>First fix a bug introduced in grub-2.14:</para>
+@y
+    <para>
+    はじめに grub-2.14 におけるバグを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare GRUB for compilation:</para>
 @y
     <para>&PreparePackage1;GRUB&PreparePackage2;</para>
