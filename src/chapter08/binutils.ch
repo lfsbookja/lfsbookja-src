@@ -19,14 +19,6 @@
 @z
 
 @x
-    <para>First, make a fix required by glibc-2.43 and later:</para>
-@y
-    <para>
-    glibc-2.43 に対して必要となる修正を行います。
-    </para>
-@z
-
-@x
     <para>The Binutils documentation recommends building Binutils
     in a dedicated build directory:</para>
 @y

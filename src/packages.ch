@@ -46,9 +46,9 @@
 @z
 
 @x
-<!ENTITY e2fsprogs-fin-sbu "2.4 SBU on a spinning disk, 0.5 SBU on an SSD">
+<!ENTITY e2fsprogs-fin-sbu "2.4 SBU on a spinning disk, 0.4 SBU on an SSD">
 @y
-<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 2.4 SBU、SSD で 0.5 SBU">
+<!ENTITY e2fsprogs-fin-sbu "回転式ディスクで 2.4 SBU、SSD で 0.4 SBU">
 @z
 
 @x
@@ -64,15 +64,9 @@
 @z
 
 @x
-<!ENTITY gcc-fin-sbu "46 SBU (with tests)">
+<!ENTITY gcc-fin-sbu "45 SBU (with tests)">
 @y
-<!ENTITY gcc-fin-sbu "46 SBU (テスト込み)">
-@z
-
-@x
-<!ENTITY gdbm-fin-sbu "less than 0.2 SBU">
-@y
-<!ENTITY gdbm-fin-sbu "0.2 SBU 以下">
+<!ENTITY gcc-fin-sbu "45 SBU (テスト込み)">
 @z
 
 @x
@@ -97,12 +91,6 @@
 <!ENTITY kmod-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY kmod-fin-sbu "0.1 SBU 以下">
-@z
-
-@x
-<!ENTITY less-fin-sbu "less than 0.1 SBU">
-@y
-<!ENTITY less-fin-sbu "0.1 SBU 以下">
 @z
 
 @x

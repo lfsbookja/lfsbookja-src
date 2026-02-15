@@ -97,10 +97,11 @@
 @z
 
 @x
-    <para>One test, test_matchfuzzy.vim, is known to fail on some systems.</para>
+    <para>One test, Test_client_server_stopinsert(), is known to fail
+    intermittently on some systems.</para>
 @y
     <para>
-    test_matchfuzzy.vim というテストに失敗するシステムがあります。
+    Test_client_server_stopinsert() というテストが断続的に失敗するシステムがあります。
     </para>
 @z
 

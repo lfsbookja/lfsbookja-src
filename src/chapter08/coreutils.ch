@@ -19,14 +19,6 @@
 @z
 
 @x
-    <para>First, make a fix required by glibc-2.43 and later:</para>
-@y
-    <para>
-    glibc-2.43 に対して必要となる修正を行います。
-    </para>
-@z
-
-@x
     <para>POSIX requires that programs from Coreutils recognize character
     boundaries correctly even in multibyte locales. The following patch fixes
     this non-compliance and other internationalization-related bugs.</para>

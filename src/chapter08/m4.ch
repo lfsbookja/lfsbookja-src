@@ -16,14 +16,6 @@
 @z
 
 @x
-    <para>First, make a fix required by glibc-2.43 and later:</para>
-@y
-    <para>
-    glibc-2.43 以降に対して必要となる修正を行います。
-    </para>
-@z
-
-@x
     <para>Prepare M4 for compilation:</para>
 @y
     <para>&PreparePackage1;M4&PreparePackage2;</para>

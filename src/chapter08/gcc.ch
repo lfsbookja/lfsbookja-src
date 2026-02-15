@@ -291,6 +291,21 @@
 @z
 
 @x
+    <para>Four tests in libstdc++, <filename>17_intro/badnames.cc</filename>,
+    <filename>17_intro/names.cc</filename>,
+    <filename>17_intro/names_fortify.cc</filename>, and
+    <filename>experimental/names.cc</filename>, are known to fail due to changes
+    with glibc-2.43.</para>
+@y
+    <para>
+    libstdc++ の中にある 4 つのテスト、<filename>17_intro/badnames.cc</filename>,
+    <filename>17_intro/names.cc</filename>,
+    <filename>17_intro/names_fortify.cc</filename>,
+    <filename>experimental/names.cc</filename> が glibc-2.43 への変更に伴って失敗します。
+    </para>
+@z
+
+@x
     <para>A few unexpected failures cannot always be avoided. In some cases
     test failures depend on the specific hardware of the system.<!--The GCC developers
     are usually aware of these issues, but have not resolved them yet.-->

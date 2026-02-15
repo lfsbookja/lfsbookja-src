@@ -38,6 +38,80 @@
 @z
 
 @x
+      <para>2026-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.2144 (Security Update). Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-82.0.0 (Python module). Fixes
+          <ulink url='&lfs-ticket-root;5868'>#5868</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.17. Fixes
+          <ulink url='&lfs-ticket-root;5870'>#5870</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to m4-1.4.21. Fixes
+          <ulink url='&lfs-ticket-root;5866'>#5866</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.18.10. Fixes
+          <ulink url='&lfs-ticket-root;5854'>#5854</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-692. Fixes
+          <ulink url='&lfs-ticket-root;5869'>#5869</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20260202. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.46.0. Fixes
+          <ulink url='&lfs-ticket-root;5865'>#5865</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.2144 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-82.0.0 (Python モジュール) へのアップデート。
+          <ulink url='&lfs-ticket-root;5868'>#5868</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.17 へのアップデート。
+          <ulink url='&lfs-ticket-root;5870'>#5870</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - m4-1.4.21 へのアップデート。
+          <ulink url='&lfs-ticket-root;5866'>#5866</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.18.10 へのアップデート。
+          <ulink url='&lfs-ticket-root;5854'>#5854</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-692 へのアップデート。
+          <ulink url='&lfs-ticket-root;5869'>#5869</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20260202 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.46.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5865'>#5865</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-02-08</para>
       <itemizedlist>
         <listitem>
@@ -53,7 +127,7 @@
           <ulink url='&lfs-ticket-root;5863'>#5863</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to Python3-3.14.3. Fixes
+          <para>[bdubbs] - Update to Python3-3.14.3 (Security Update). Fixes
           <ulink url='&lfs-ticket-root;5859'>#5859</ulink>.</para>
         </listitem>
         <listitem>
@@ -93,7 +167,7 @@
           <ulink url='&lfs-ticket-root;5863'>#5863</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Python3-3.14.3 へのアップデート。
+          <para>[bdubbs] - Python3-3.14.3 (セキュリティアップデート) へのアップデート。
           <ulink url='&lfs-ticket-root;5859'>#5859</ulink> を Fix に。</para>
         </listitem>
         <listitem>
