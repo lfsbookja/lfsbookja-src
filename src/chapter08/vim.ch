@@ -97,11 +97,11 @@
 @z
 
 @x
-    <para>One test, Test_client_server_stopinsert(), is known to fail
-    intermittently on some systems.</para>
+    <para>Two tests, Test_client_server_stopinsert() and Test_popup_setbuf(), are 
+    known to fail on some systems.</para>
 @y
     <para>
-    Test_client_server_stopinsert() というテストが断続的に失敗するシステムがあります。
+    Test_client_server_stopinsert()、Test_popup_setbuf() という 2 つのテストが失敗するシステムがあります。
     </para>
 @z
 
