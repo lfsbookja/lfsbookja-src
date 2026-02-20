@@ -38,6 +38,24 @@
 @z
 
 @x
+      <para>2026-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to zlib-1.3.2 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5873'>#5873</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - zlib-1.3.2 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5873'>#5873</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-02-15</para>
       <itemizedlist>
         <listitem>
@@ -59,7 +77,7 @@
       <para>2026-02-14</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to vim-9.1.2144 (Security Update). Addresses
+          <para>[bdubbs] - Update to vim-9.1.2144 (Security update). Addresses
           <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
         </listitem>
         <listitem>
@@ -145,7 +163,7 @@
           <ulink url='&lfs-ticket-root;5863'>#5863</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to Python3-3.14.3 (Security Update). Fixes
+          <para>[bdubbs] - Update to Python3-3.14.3 (Security update). Fixes
           <ulink url='&lfs-ticket-root;5859'>#5859</ulink>.</para>
         </listitem>
         <listitem>
@@ -737,7 +755,7 @@
           <ulink url='&lfs-ticket-root;5797'>#5797</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[renodr] - Update to openssl-3.5.4 (Security Update). Fixes
+          <para>[renodr] - Update to openssl-3.5.4 (Security update). Fixes
           <ulink url='&lfs-ticket-root;5793'>#5793</ulink>.</para>
         </listitem>
         <listitem>

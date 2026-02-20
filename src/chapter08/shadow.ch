@@ -21,11 +21,11 @@
 @x
         If you've installed Linux-PAM, you should follow
         <ulink url='&blfs-book;postlfs/shadow.html'>the BLFS
-        instruction</ulink> instead of this page to build (or, rebuild or
-        upgrade) shadow.
+        instructions</ulink> instead of this page to build, rebuild,
+        upgrade shadow.
 @y
         Linux-PAM をすでにインストールしている場合は、本ページではなく <ulink
-        url='&blfs-book;postlfs/shadow.xml'>BLFS の 手順</ulink> に従って shadow のビルド（または再ビルドやアップグレード）を行う必要があります。
+        url='&blfs-book;postlfs/shadow.xml'>BLFS の 手順</ulink> に従って shadow のビルド、再ビルド、アップグレードを行う必要があります。
 @z
 
 @x
