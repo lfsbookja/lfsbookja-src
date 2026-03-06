@@ -90,11 +90,11 @@
 
 @x
     <para>The name of the shared library isn't standardized and it varies
-    among distros.  The instruction above has installed
+    among distros. The instruction above has installed
     <filename class='libraryfile'>libbz2.so.1.0</filename>, but some
     applications, for example Kbd, expects a different name
     <filename class='libraryfile'>libbz2.so.1</filename> that some other
-    distros are using.  Create a compatibility symlink for them:</para>
+    distros are using. Create a compatibility symlink for them:</para>
 @y
     <para>
     共有ライブラリ名は標準化されておらず、ディストロによってさまざまに命名されています。

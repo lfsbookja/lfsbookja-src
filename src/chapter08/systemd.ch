@@ -546,7 +546,7 @@
 @z
 
 @x run0
-          <para>Temporary elevates or acquires different privileges, similar
+          <para>Temporarily elevates or acquires different privileges, similar
           to sudo</para>
 @y
           <para>
