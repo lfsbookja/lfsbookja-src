@@ -39,13 +39,11 @@
 @z
 
 @x
-      <para><ulink url="mailto:jim@linuxfromscratch.org">Jim
-      Gifford</ulink> &lt;jim@linuxfromscratch.org&gt; &ndash; CLFS Project
-      Co-Leader</para>
+      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
+      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd Editor</para>
 @y
-      <para><ulink url="mailto:jim@linuxfromscratch.org">Jim
-      Gifford</ulink> &lt;jim@linuxfromscratch.org&gt; &ndash;
-      CLFS プロジェクト共同リーダー</para>
+      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
+      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd 編集者</para>
 @z
 
 @x
@@ -54,22 +52,6 @@
 @y
       <para><ulink url="mailto:pierre@linuxfromscratch.org">Pierre Labastie</ulink>
       &lt;pierre@linuxfromscratch.org&gt; &ndash; BLFS 編集者、ALFS リーダー</para>
-@z
-
-@x
-      <para><ulink url="mailto:dj@linuxfromscratch.org">DJ Lucas</ulink>
-      &lt;dj@linuxfromscratch.org&gt; &ndash; LFS and BLFS Editor</para>
-@y
-      <para><ulink url="mailto:dj@linuxfromscratch.org">DJ Lucas</ulink>
-      &lt;dj@linuxfromscratch.org&gt; &ndash; LFS、BLFS 編集者</para>
-@z
-
-@x
-      <para><ulink url="mailto:ken@linuxfromscratch.org">Ken Moffat</ulink>
-      &lt;ken@linuxfromscratch.org&gt; &ndash; BLFS Editor</para>
-@y
-      <para><ulink url="mailto:ken@linuxfromscratch.org">Ken Moffat</ulink>
-      &lt;ken@linuxfromscratch.org&gt; &ndash; BLFS 編集者</para>
 @z
 
 @x
@@ -493,6 +475,19 @@
 @z
 
 @x
+    <listitem>
+      <para><ulink url="mailto:jim@linuxfromscratch.org">Jim
+      Gifford</ulink> &lt;jim@linuxfromscratch.org&gt; &ndash; CLFS Project
+      Co-Leader</para>
+    </listitem>
+@y
+    <listitem>
+      <para><ulink url="mailto:jim@linuxfromscratch.org">Jim
+      Gifford</ulink> &lt;jim@linuxfromscratch.org&gt; &ndash; CLFS プロジェクト共同リーダー</para>
+    </listitem>
+@z
+
+@x
       <para>Alex Groenewoud &ndash; LFS Technical Writer</para>
 @y
       <para>Alex Groenewoud &ndash; LFS テクニカルライター</para>
@@ -558,6 +553,18 @@
 
 @x
     <listitem>
+      <para><ulink url="mailto:dj@linuxfromscratch.org">DJ Lucas</ulink>
+      &lt;dj@linuxfromscratch.org&gt; &ndash; LFS and BLFS Editor</para>
+    </listitem>
+@y
+    <listitem>
+      <para><ulink url="mailto:dj@linuxfromscratch.org">DJ Lucas</ulink>
+      &lt;dj@linuxfromscratch.org&gt; &ndash; LFS および BLFS 編集者</para>
+    </listitem>
+@z
+
+@x
+    <listitem>
       <para><ulink url="mailto:randy@linuxfromscratch.org">Randy
       McMurchy</ulink> &lt;randy@linuxfromscratch.org&gt; &ndash; BLFS
       Project Leader, LFS Editor</para>
@@ -567,6 +574,18 @@
       <para><ulink url="mailto:randy@linuxfromscratch.org">Randy
       McMurchy</ulink> &lt;randy@linuxfromscratch.org&gt; &ndash; BLFS
       プロジェクトリーダー、LFS 編集者</para>
+    </listitem>
+@z
+
+@x
+    <listitem>
+      <para><ulink url="mailto:ken@linuxfromscratch.org">Ken Moffat</ulink>
+      &lt;ken@linuxfromscratch.org&gt; &ndash; BLFS Editor</para>
+    </listitem>
+@y
+    <listitem>
+      <para><ulink url="mailto:ken@linuxfromscratch.org">Ken Moffat</ulink>
+      &lt;ken@linuxfromscratch.org&gt; &ndash; BLFS 編集者</para>
     </listitem>
 @z
 
@@ -605,14 +624,6 @@
       <para><ulink url="mailto:scot@linuxfromscratch.org">Scot Mc
       Pherson</ulink> &lt;scot@linuxfromscratch.org&gt; &ndash;
       LFS NNTP ゲートウェイ管理者</para>
-@z
-
-@x
-      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
-      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd Editor</para>
-@y
-      <para><ulink url="mailto:renodr@linuxfromscratch.org">Douglas R. Reno</ulink>
-      &lt;renodr@linuxfromscratch.org&gt; &ndash; Systemd 編集者</para>
 @z
 
 @x

@@ -20,14 +20,9 @@
       <surname>Dubbs</surname>
     </author>
 
-    <author revision="systemd">
+    <author>
       <firstname>Editor: Douglas R.</firstname>
       <surname>Reno</surname>
-    </author>
-
-    <author revision="systemd">
-      <firstname>Editor: DJ</firstname>
-      <surname>Lucas</surname>
     </author>
   </authorgroup>
 @y
@@ -41,15 +36,11 @@
       <surname>Dubbs</surname>
     </author>
 
-    <author revision="systemd">
+    <author>
       <firstname>編集： Douglas R.</firstname>
       <surname>Reno</surname>
     </author>
 
-    <author revision="systemd">
-      <firstname>編集： DJ</firstname>
-      <surname>Lucas</surname>
-    </author>
     <author>
       <firstname>日本語訳： 松山 道夫</firstname>
     </author>
