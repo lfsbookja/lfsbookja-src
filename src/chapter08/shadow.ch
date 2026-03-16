@@ -59,6 +59,15 @@
 @z
 
 @x
+    <para>Prevent the installation of manual pages that were already installed in
+    <xref linkend="ch-system-man-pages"/>:</para>
+@y
+    <para>
+    <xref linkend="ch-system-man-pages"/> においてすでにマニュアルページをインストールしているため、ここではインストールしないようにします。
+    </para>
+@z
+
+@x
     <para id="shadow-login_defs">Instead of using the default
     <emphasis>crypt</emphasis> method, use the much more secure
     <emphasis>YESCRYPT</emphasis> method of password encryption, which also
