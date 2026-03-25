@@ -33,33 +33,33 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x gl_cv_func_strcasecmp_works=y
+@x gl_cv_func_strcasecmp_works=yes
           <para>This option specify the result of a check for the
-          <function>strcasecmp</function>.  The check requires running a
-          compiled C program, and this is impossible during
+          <function>strcasecmp</function> function. The check requires running
+          a compiled C program, and this is impossible during
           cross-compilation because in general a cross-compiled program
           cannot run on the host distro.  Normally for such a check the
           <command>configure</command> script would use a fall-back value
           for cross-compilation, but the fall-back value for this check is
           absent and the <command>configure</command> script would have no
-          value to use and error out.  The upstream has already fixed the
+          value to use and error out.  Upstream have already fixed the
           issue, but to apply the fix we'd need to run
           <command>autoconf</command> that the host distro may lack.  So
-          we just specify the check result (<literal>y</literal> as we know
+          we just specify the check result (<literal>yes</literal> as we know
           the <function>strcasecmp</function> function in
           Glibc-&glibc-version; works fine) instead, then
           <command>configure</command> will just use the specified value and
           skip the check.</para>
 @y
           <para>
-          本オプションは <function>strcasecmp</function> のチェック結果を示します。
+          本オプションは <function>strcasecmp</function> 関数のチェック結果を示します。
           そのチェックでは C プログラムをコンパイルして実行することが必要になりますが、クロスコンパイル環境ではこれを行うことができません。
           それは一般に、クロスコンパイルしたプログラムをホストディストロで実行することはできないからです。
           普通であれば <command>configure</command> スクリプトにおけるそのようなチェックにあたっては、代替となる値を用いるものです。
           ただしこのチェックに対する代替値はなく <command>configure</command> はエラーとなります。
           アップストリームはすでにこの問題を修正していますが、その修正を適用するには <command>autoconf</command> の実行が必要です。
           これはひょっとするとホストディストロにはないかもしれません。
-          そこでここではそのチェック結果（Glibc-&glibc-version; の <function>strcasecmp</function> は正しく動作が分かっているので、そのチェック結果 <literal>y</literal>）を用いることにします。
+          そこでここではそのチェック結果（Glibc-&glibc-version; の <function>strcasecmp</function> は正しく動作が分かっているので、そのチェック結果 <literal>yes</literal>）を用いることにします。
           そうすれば <command>configure</command> がその値を利用しチェックをスキップするようになります。
           </para>
 @z
