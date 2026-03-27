@@ -23,11 +23,10 @@
 @z
 
 @x
-    <para>Fix a regression that causes issues in BLFS packages like
-    pyatspi:</para>
+    <para>First, apply a security patch for issues identified upstream:</para>
 @y
     <para>
-    pyatspi のような BLFS パッケージにおいて問題となる縮退状況を修正します。
+    はじめにアップストリームが認識する問題を修正するためのセキュリティパッチを適用します。
     </para>
 @z
 

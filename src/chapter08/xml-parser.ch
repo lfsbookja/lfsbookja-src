@@ -19,6 +19,37 @@
 @z
 
 @x
+      <para>This package is scheduled to move to BLFS.  Until that can be
+      done, two Python modules need to be added.  To do that, we also
+      have to enable DNS by temporarily adding /etc/resolv.conf.</para>
+@y
+      <para>
+      本パッケージは BLFS へ移動する予定にしています。
+      それを実施するまでの間は、2 つの Python モジュールを追加する必要があります。
+      これにあたり、DNS を有効とするために一時的な /etc/resolv.conf を追加する必要があります。
+      </para>
+@z
+
+@x
+    <para>Now add two Python modules:</para>
+@y
+    <para>
+    2 つの Python モジュールを追加します。
+    </para>
+@z
+
+@x
+    <para>Finish this temproary workaround by  removing /etc/resolv.conf.  
+    A discussion of this file
+    will be made at <xref linkend='resolv.conf'/></para>
+@y
+    <para>
+    この一時的な回避策を行ったので /etc/resolv.conf を削除します。
+    このファイルに関する議論は <xref linkend='resolv.conf'/> に示しています。
+    </para>
+@z
+
+@x
     <para>Prepare XML::Parser for compilation:</para>
 @y
     <para>&PreparePackage1;XML::Parser&PreparePackage2;</para>

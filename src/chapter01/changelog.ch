@@ -38,6 +38,48 @@
 @z
 
 @x
+      <para>2026-03-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to XML-Parser-2.53 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5892'>#5892</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a sed to glibc-2.43 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5895'>#5895</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a patch to Python-3.14.3 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5896'>#5896</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.7.5 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5891'>#5891</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-03-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - XML-Parser-2.53 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5892'>#5892</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.43 (セキュリティアップデート) への sed を追加。
+          <ulink url='&lfs-ticket-root;5895'>#5895</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.14.3 (セキュリティアップデート) へのパッチを追加。
+          <ulink url='&lfs-ticket-root;5896'>#5896</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.7.5 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5891'>#5891</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-03-15</para>
       <itemizedlist>
         <listitem>

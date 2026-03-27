@@ -22,10 +22,10 @@
 @z
 
 @x
-    <para>First, apply some changes from upstream:</para>
+    <para>First, apply a fix to DNS processing from upstream:</para>
 @y
     <para>
-    はじめにアップストリームによる変更を適用します。
+    はじめにアップストリームによる DNS 処理への修正を適用します。
     </para>
 @z
 
