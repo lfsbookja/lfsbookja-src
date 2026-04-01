@@ -59,6 +59,14 @@
 @z
 
 @x
+    <para>One test, neqn-smoke-test.sh, is known to fail.</para>
+@y
+    <para>
+    neqn-smoke-test.sh というテストが 1 つ失敗します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

@@ -20,21 +20,36 @@
 
 @x
       <para>This package is scheduled to move to BLFS.  Until that can be
-      done, two Python modules need to be added.  To do that, we also
+      done, two Perl modules need to be added.  To do that, we also
       have to enable DNS by temporarily adding /etc/resolv.conf.</para>
 @y
       <para>
       本パッケージは BLFS へ移動する予定にしています。
-      それを実施するまでの間は、2 つの Python モジュールを追加する必要があります。
+      それを実施するまでの間は、2 つの Perl モジュールを追加する必要があります。
       これにあたり、DNS を有効とするために一時的な /etc/resolv.conf を追加する必要があります。
       </para>
 @z
 
 @x
-    <para>Now add two Python modules:</para>
+      <para>Alternatively, you may skip this package and the next package
+      (intltool) as nothing else in LFS needs them.  When you build a BLFS
+      package requiring XML::Parser or intltool, install those modules
+      following <ulink
+      url='&blfs-book;general/perl-deps.html#perl-file-sharedir'>the
+      BLFS instruction</ulink>, and then install this package.</para>
+@y
+      <para>
+      あるいは本パッケージと次のパッケージ (intltool) の 2 つは、LFS 内の他パッケージにとっては不要なものとしてインストールを行わないという方法もあります。
+      XML::Parser と intltool を必要とする BLFS パッケージをビルドする際には、<ulink
+      url='&blfs-book;general/perl-deps.html#perl-file-sharedir'>BLFS 手順</ulink> に従い、本パッケージをインストールしてください。
+      </para>
+@z
+
+@x
+    <para>Now add two Perl modules:</para>
 @y
     <para>
-    2 つの Python モジュールを追加します。
+    2 つの Perl モジュールを追加します。
     </para>
 @z
 

@@ -38,6 +38,104 @@
 @z
 
 @x
+      <para>2026-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.8.3 (Security update). Fixes
+          <ulink url='&lfs-ticket-root;5899'>#5899</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to XML-Parser-2.54 (Security update). Fixes (again)
+          <ulink url='&lfs-ticket-root;5892'>#5892</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.0272. Addresses
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-260.1. Fixes
+          <ulink url='&lfs-ticket-root;5890'>#5890</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.42.2. Fixes
+          <ulink url='&lfs-ticket-root;5898'>#5898</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mpc-1.4.0. Fixes
+          <ulink url='&lfs-ticket-root;5894'>#5894</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.10.2. Fixes
+          <ulink url='&lfs-ticket-root;5889'>#5889</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.19.10. Fixes
+          <ulink url='&lfs-ticket-root;5893'>#5893</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20260327. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to groff-1.24.1. Fixes
+          <ulink url='&lfs-ticket-root;5888'>#5888</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to autoconf-2.73. Fixes
+          <ulink url='&lfs-ticket-root;5897'>#5897</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - xz-5.8.3 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5899'>#5899</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - XML-Parser-2.54 (セキュリティアップデート).  へのアップデート (再度)。 
+          <ulink url='&lfs-ticket-root;5892'>#5892</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.0272 へのアップデート。
+          <ulink url='&lfs-ticket-root;4500'>#4500</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-260.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5890'>#5890</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.42.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5898'>#5898</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - mpc-1.4.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5894'>#5894</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.10.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5889'>#5889</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.19.10 へのアップデート。
+          <ulink url='&lfs-ticket-root;5893'>#5893</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20260327 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - groff-1.24.1 へのアップデート。
+          <ulink url='&lfs-ticket-root;5888'>#5888</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - autoconf-2.73 へのアップデート。
+          <ulink url='&lfs-ticket-root;5897'>#5897</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-03-26</para>
       <itemizedlist>
         <listitem>

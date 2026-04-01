@@ -282,6 +282,15 @@
 @z
 
 @x
+    <para>Eight tests related to <filename>builtin-math-6.c</filename> are
+    known to fail.</para>
+@y
+    <para>
+    <filename>builtin-math-6.c</filename> に関連する 8 つのテストが失敗します。
+    </para>
+@z
+
+@x
     <para>Five tests related to <filename>analyzer/strchr-1.c</filename> are known
     to fail.</para>
 @y

@@ -84,15 +84,15 @@
     we are overriding the <envar>TERM</envar> variable to satisfy some
     assumptions of the test suite).  The problem can be
     avoided by redirecting the output to a log file as shown above.  A
-    successful test will result in the words <computeroutput>ALL
-    DONE</computeroutput> in the log file at completion.</para>
+    successful test will show <computeroutput>FAILED: 0</computeroutput> in the 
+    log file at completion.</para>
 @y
     <para>
     このテストスイートは数多くのバイナリデータを端末画面上に出力します。
     これは端末画面の設定によっては問題を引き起こします。
     (特にテストスイートの要請を満たすため <envar>TERM</envar> 変数を上書きしている場合などです。)
     これを避けるには、上に示すように出力をリダイレクトしてログファイルに出力するようにしてください。
-    テストが成功すれば、ログファイルの最後に <computeroutput>ALL DONE</computeroutput> と表示されます。
+    テストが成功すれば、ログファイルの最後に <computeroutput>FAILED: 0</computeroutput> と表示されます。
     </para>
 @z
 
