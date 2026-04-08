@@ -38,6 +38,24 @@
 @z
 
 @x
+      <para>2026-04-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[zeckma] - Provide UEFI boot support. Fixes
+          <ulink url='&lfs-ticket-root;5819'>#5819</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-04-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[zeckma] - UEFI ブートサポートの追加。
+          <ulink url='&lfs-ticket-root;5819'>#5819</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-04-01</para>
       <itemizedlist>
         <listitem>

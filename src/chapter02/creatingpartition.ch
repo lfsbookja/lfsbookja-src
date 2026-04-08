@@ -228,22 +228,23 @@
 @z
 
 @x
-    <title>The Grub Bios Partition</title>
+    <title>The Grub BIOS Partition</title>
 @y
-    <title>Grub バイオスパーティション</title>
+    <title>Grub BIOS パーティション</title>
 @z
 
 @x
     <para>If the <emphasis>boot disk</emphasis> has been partitioned with a
     GUID Partition Table (GPT), then a small, typically 1 MB, partition must be
-    created if it does not already exist.  This partition is not formatted, but
-    must be available for GRUB to use during installation of the boot
-    loader. This partition will normally be labeled 'BIOS Boot' if using
-    <command>fdisk</command> or have a code of <emphasis>EF02</emphasis> if
-    using the <command>gdisk</command> command.</para>
+    created if the system is being booted with BIOS and it does not already
+    exist.  This partition is not formatted, but must be available for GRUB to
+    use during installation of the boot loader.  This partition will normally
+    be labeled 'BIOS Boot' if using <command>fdisk</command> or have a code of
+    <emphasis>EF02</emphasis> if using the <command>gdisk</command>
+    command.</para>
 @y
     <para>
-    GUID パーティションテーブル (GUID Partition Table; GPT) を利用して <emphasis>ブートディスク</emphasis> をパーティショニングした場合、普通は 1 MB 程度の小さなパーティションをさらに用意しておくことが必要です。
+    GUID パーティションテーブル (GUID Partition Table; GPT) を利用して <emphasis>ブートディスク</emphasis> をパーティショニングした場合、BIOS 起動が必要なのであれば普通は 1 MB 程度の小さなパーティションを用意しておくことが必要です。
     このパーティションのフォーマットは不要であり、ブートローダーをインストールする際に GRUB が利用できるものでなければなりません。
     通常このパーティションは <command>fdisk</command> を用いた場合は 'BIOS Boot' と名付けられます。
     また <command>gdisk</command> コマンドを用いた場合は<emphasis>EF02</emphasis> というコード名が与えられます。
@@ -251,20 +252,86 @@
 @z
 
 @x
-    <note><para>The Grub Bios partition must be on the drive that the BIOS
+    <para>If the boot disk is partitioned with an MBR Partition Table, or DOS
+    disklabel, then this partition is not needed as space already exists before
+    the first partition that Grub can use.</para>
+@y
+    <para>
+    ブートディスクが MBR パーティションテーブル、つまり DOS ディスクラベルを使ってパーティショニングされている場合、そのパーティションは GRUB が利用する最初のパーティションよりも前に存在している必要はありません。
+    </para>
+@z
+
+@x
+    <note><para>The Grub BIOS partition must be on the drive that the BIOS
     uses to boot the system.  This is not necessarily the drive that holds
     the LFS root partition. The disks on a system may use different
-    partition table types. The necessity of the Grub Bios partition depends
+    partition table types. The necessity of the Grub BIOS partition depends
     only on the partition table type of the boot disk.</para></note>
     </sect3>
 @y
     <note><para>
-    Grub バイオスパーティションは、BIOS がシステムブート時に用いるドライブ上になければなりません。
+    Grub BIOS パーティションは、BIOS がシステムブート時に用いるドライブ上になければなりません。
     これは LFS ルートパーティションがあるドライブと同一にする必要はありません。
     システム上にあるドライブは、同一のパーティションテーブルタイプを利用していないことがあります。
-    つまりこの Grub バイオスパーティションに必要なのは、ブートディスクのパーティションテーブルタイプに合わせることだけです。
+    つまりこの Grub BIOS パーティションに必要なのは、ブートディスクのパーティションテーブルタイプに合わせることだけです。
     </para></note>
     </sect3>
+@z
+
+@x
+    <title>The EFI System Partition</title>
+@y
+    <title>EFI システムパーティション</title>
+@z
+
+@x
+    <para>This partition, also known as the <emphasis>ESP</emphasis>, is needed
+    when booting the system with UEFI.  It stores the EFI application that is
+    ran during bootup. The boot drive can be partitioned with MBR Partition
+    Table, or DOS, but compatibility issues will tend to arise as a result.
+    Therefore, it is always a good idea in this case to partition the boot
+    drive with a GUID Partition Table (GPT). If you're only booting LFS from
+    the partition, 20 MB or lower can suffice. The partition should be bigger
+    than the EFI image size because GRUB dumps a lot of data to the partition
+    before creating the EFI image. To be safe, 128 MB to 256 MB is recommended
+    but can be dropped much lower with some experimentation. The partition
+    label should be 'EFI System' if using <command>fdisk</command>.</para>
+@y
+    <para>
+    このパーティションは <emphasis>ESP</emphasis> とも呼ばれます。
+    これは UEFI を使ったシステムをブートするために必要となります。
+    ここにはブート時に実行される EFI アプリケーションが置かれます。
+    ブートドライブは MBR パーティションテーブル、つまりは DOS パーティションテーブルによってパーティショニングされている必要があります。
+    ただこのことにより、互換性の問題が発生する傾向にあります。
+    その場合には GUID パーティションテーブル (GPT) を使ってブートドライブをパーティショニングすることが推奨されます。
+    そのパーティションから LFS のブートだけを行うのであれば、その容量は 20 MB もあれば十分です。
+    しかしこのパーティションは EFI イメージサイズよりも大きくしなければなりません。
+    それは EFI イメージが生成される前に GRUB が大量のデータをこのパーティションに対して出力するためです。
+    安全を考えて 128 MB から 256 MB とすることが推奨されますが、実験的にこれより少なくすることもありえます。
+    <command>fdisk</command> を利用した場合、このパーティションは 'EFI System' と表されます。
+    </para>
+@z
+
+@x
+    <para>For Grub, the EFI System Partion should be located at
+    <filename class="directory">/boot/efi</filename>.</para>
+@y
+    <para>
+    GRUB を使うなら EFI システムパーティションは  <filename
+    class="directory">/boot/efi</filename> に配置する必要があります。
+    </para>
+@z
+
+@x
+    <para>A lot of UEFI systems have a Compatibility Support Mode (CSM) or
+    Legacy Boot option, allowing to boot with BIOS. It could be a good idea to
+    create a Grub BIOS partition if your system supports CSM in case UEFI
+    booting does not work as expected.</para>
+@y
+    <para>
+    多くの UEFI システムには Compatibility Support Mode (CSM) あるいは Legacy Boot オプションが用意されていて、これにより BIOS を使ったブートが可能となります。
+    もし UEFI によるブートがうまく動作しない場合であって、システムが CSM をサポートしているのであれば、Grub BIOS パーティションを生成するのが有効かもしれません。
+    </para>
 @z
 
 @x
@@ -300,18 +367,18 @@
       </para></listitem>
 @z
 
-@x
-      <listitem><para>/boot/efi &ndash; The EFI System Partition, which is
-      needed for booting the system with UEFI.  Read
-      <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>
-      for details.</para></listitem>
-@y
-      <listitem><para>
-      /boot/efi &ndash; EFI システムパーティションであり、UEFI を使ってシステム起動する場合に必要です。
-      詳しくは <ulink
-      url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> を参照してください。
-      </para></listitem>
-@z
+%@x
+%      <listitem><para>/boot/efi &ndash; The EFI System Partition, which is
+%      needed for booting the system with UEFI.  Read
+%      <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>
+%      for details.</para></listitem>
+%@y
+%      <listitem><para>
+%      /boot/efi &ndash; EFI システムパーティションであり、UEFI を使ってシステム起動する場合に必要です。
+%      詳しくは <ulink
+%      url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> を参照してください。
+%      </para></listitem>
+%@z
 
 @x
       <listitem><para>/home &ndash; Highly recommended.  Share your home
@@ -439,4 +506,94 @@
     ブート時に自動的にパーティションをマウントしたい場合は <filename>/etc/fstab</filename> ファイルにて設定します。
     パーティションの設定方法については <xref linkend="ch-bootable-fstab"/>で説明しています。
     </para>
+@z
+
+@x
+  <title>An Example Disk Layout</title>
+@y
+  <title>An Example Disk Layout</title>
+@z
+
+@x
+  <para>Below is an example layout for an empty disk drive.</para>
+@y
+  <para>Below is an example layout for an empty disk drive.</para>
+@z
+
+@x
+  <para>The above example makes a few assumptions:
+@y
+  <para>The above example makes a few assumptions:
+@z
+
+@x
+         <para>The partition table is a GUID Partition Table (GPT).</para>
+@y
+         <para>The partition table is a GUID Partition Table (GPT).</para>
+@z
+
+@x
+         <para>Both EFI and BIOS Boot partitions are present, although
+         only one will be used. Which is used depends on the system BIOS.
+         If the system is old, it will not have UEFI capabilities at all.
+         Some later systems can disable UEFI through the BIOS by disabling
+         "Secure Boot" and enabling "Legacy Support" or "CSM" (Compatibility
+         Support Mode).  If you know in advance which mode you will use,
+         the other partition can be omitted.</para>
+@y
+         <para>Both EFI and BIOS Boot partitions are present, although
+         only one will be used. Which is used depends on the system BIOS.
+         If the system is old, it will not have UEFI capabilities at all.
+         Some later systems can disable UEFI through the BIOS by disabling
+         "Secure Boot" and enabling "Legacy Support" or "CSM" (Compatibility
+         Support Mode).  If you know in advance which mode you will use,
+         the other partition can be omitted.</para>
+@z
+
+@x
+         <para>The EFI partition must be formatted as VFAT.</para>
+@y
+         <para>The EFI partition must be formatted as VFAT.</para>
+@z
+
+@x
+         <para>The BIOS partition is not formatted.</para>
+@y
+         <para>The BIOS partition is not formatted.</para>
+@z
+
+@x
+         <para>The swap partition must be formatted as swap.</para>
+@y
+         <para>The swap partition must be formatted as swap.</para>
+@z
+
+@x
+         <para>The /boot partition can be formatted as ext2 since
+         it is rarely written (and then only by root) and does
+         not need a journal.</para>
+@y
+         <para>The /boot partition can be formatted as ext2 since
+         it is rarely written (and then only by root) and does
+         not need a journal.</para>
+@z
+
+@x
+         <para>The recommendation for all other partitions is to use ext4 
+         formatting.</para>
+@y
+         <para>The recommendation for all other partitions is to use ext4 
+         formatting.</para>
+@z
+
+@x
+         <para>Another partition can be added for installing the "host"
+         system for building LFS. A minimal sized partition, 10 GiB, should be
+         sufficient. If you are building the system using a LiveCD, a host 
+         partition may not be required.</para>
+@y
+         <para>Another partition can be added for installing the "host"
+         system for building LFS. A minimal sized partition, 10 GiB, should be
+         sufficient. If you are building the system using a LiveCD, a host 
+         partition may not be required.</para>
 @z

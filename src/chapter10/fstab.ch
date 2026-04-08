@@ -96,22 +96,44 @@
 @z
 
 @x
-    <para>In the latter case, the kernel emits the following message:</para>
+    When installing GRUB with UEFI, the ESP must be formatted as a FAT filesystem, most
+    commonly VFAT. This file sees it as VFAT regardless. An example of how you
+    would go about an entry for the ESP would look like this:
 @y
-    <para>
-    後者の設定では、カーネルが以下のようなメッセージを出力します。
-    </para>
+    UEFI を使った GRUB をインストールしている場合、ESP は FAT ファイルシステムでフォーマットされていなければなりません。
+    ごく普通には VFAT とします。
+    このファイルは実際がどうであれ VFAT として認識します。
+    ESP に対するエントリとして記述すべき内容は、およそ以下のようになります。
 @z
 
 @x
-    <para>This negative recommendation should be ignored, since all other values
-    of the <quote>iocharset</quote> option result in wrong display of filenames in
-    UTF-8 locales.</para>
+    The <literal>iso8859-1</literal> IO charset is used here as we'll
+    enable it as a part of the kernel UEFI configuration in
+    <xref linkend='ch-bootable-kernel'/>.  Technically the IO charset should
+    match your locale as we've discussed above.  However the name of all the
+    files in the ESP only contains 7-bit ASCII characters, so things will
+    be OK as long as the character set for your locale treats 7-bit ASCII
+    characters in the same way as ISO-8859-1.  For example, UTF-8 is such
+    a character set.
 @y
-    <para>
-    否定的な設定を勧めるメッセージですが、これは無視して構いません。
-    <quote>iocharset</quote>オプションに他の設定を行ったとしても UTF-8 ロケールでは結局はファイル名の表示を正しく処理できないためです。
-    </para>
+    IO キャラクターセット <literal>iso8859-1</literal> がここで指定されています。
+    これは <xref linkend='ch-bootable-kernel'/> におけるカーネル UEFI 設定の一部として機能させるためです。
+    技術面で言うと、これまでに述べてきたように IO キャラクターセットは普段使用するロケールに合わせるべきものです。
+    しかし ESP に含まれるファイルはすべて 7 ビットアスキー文字しか用いていません。
+    したがって ISO-8859-1 と同様に 7 ビットアスキー文字を取り扱うロケールであれば何でも構いません。
+    たとえば UTF-8 はこれに該当するキャラクターセットです。
+@z
+
+@x
+      The EFI filesystem only needs to be mounted when installing GRUB.  
+      The system uses this partition before the kernel is loaded and is not used
+      otherwise.  An alternative to adding this entry to the fstab file is to
+      manually mount it before running <command>grub-install</command> below
+      in <xref linkend="ch-bootable-grub"/>.
+@y
+      EFI ファイルシステムは GRUB のインストール時にのみマウントが必要となります。
+      システムはこのパーティションを、カーネルがロードされる前に利用し、それ以降は利用しません。
+      このエントリを fstab ファイルに記述しないのであれば、<xref linkend="ch-bootable-grub"/> に示した <command>grub-install</command> の実行前に手動でマウントすることで実現できます。
 @z
 
 @x

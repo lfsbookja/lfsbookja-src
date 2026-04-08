@@ -10,32 +10,37 @@
 @z
 
 @x
-    <title>Installation of GRUB</title>
+    <note><para>This page is split up into multiple sections aimed to install
+    for a specific boot method (BIOS, 64-bit UEFI, and 32-bit UEFI). GRUB
+    cannot be built with all the boot method architectures at once.</para>
 @y
-    <title>&InstallationOf1;GRUB&InstallationOf2;</title>
+    <note><para>
+    本ページは複数の節に分けて、さまざまなブート方法 (BIOS、64 ビット UEFI、32 ビット UEFI) について説明しています。
+    GRUB はそのブート方法を一度にビルドすることはできません。</para>
 @z
 
 @x
-        If your system has UEFI support and you wish to boot LFS with UEFI,
-        you need to install GRUB with UEFI support (and its dependencies) by
-        following the instructions on
-        <ulink url="&blfs-book;postlfs/grub-efi.html">the BLFS page</ulink>.
-        You may skip this package, or install this package and the BLFS
-        GRUB for UEFI package without conflict (the BLFS page provides
-        instructions for both cases).
+    <para>You may skip other sections to go to the boot method you need. If in
+    doubt, you may follow all of the sections at the cost of extra build time.
+    After you have installed support for your boot method, then continue
+    building the rest of the packages in this chapter. Making your LFS system
+    bootable with GRUB will be discussed in <xref linkend="ch-bootable-grub"
+    role='.'/></para></note>
 @y
-        システムが UEFI をサポートしていて、これを使って LFS を起動しようとする場合は、UEFI サポートを含む GRUB (およびその依存パッケージ) をインストールする必要があります。
-        その場合は <ulink
-        url="&blfs-book;postlfs/grub-efi.html">BLFS ページ</ulink> の手順に従ってください。
-        このパッケージのインストールは省略できます。
-        あるいは BLFS ブックに示す UEFI パッケージのサポートを含む GRUB を競合することなくインストールすることもできます (BLFS ではどちらの状況に対しても、その手順を説明しています)。
+    <para>
+    あなたにとって不要な説明は読み飛ばし、目的とするブート方法に進んでください。
+    もし分からなかったら、無駄なビルドをすることになりますが、すべての説明手順を進めてください。
+    目的のブート方法をインストールし終えたら、本章のこれ以降の手順に進んでください。
+    GRUB を使って LFS システムをブート可能にすることに関しては <xref linkend="ch-bootable-grub"
+    role=''/> において説明しています。</para>
+    </note>
 @z
 
 @x
       <para>Unset any environment variables which may affect the build:</para>
 @y
       <para>
-      ビルドに影響を与える可能性のある環境変数をリセットします。
+      ビルドへの影響が懸念されるため、以下の環境変数は設定を解除してください。
       </para>
 @z
 
@@ -46,10 +51,16 @@
       aggressive optimization.</para>
 @y
       <para>
-      このパッケージをビルドする際に、独自のコンパイルフラグを使って<quote>チューニング</quote>することは止めてください。
-      このパッケージはブートローダーです。
-      ソースコード内には低レベル操作が用いられており、過激な最適化フラグによってはその機能を壊してしまうかもしれないためです。
+      このパッケージのビルドにあたって独自のコンパイルフラグを使った<quote>チューニング</quote>は避けてください。
+      本パッケージはブートローダーです。
+      ソースコード内には低レベル処理が含まれており、強引な最適化を行ってしまうと処理が正常に行われなくなります。
       </para>
+@z
+
+@x
+    <title>Installation of GRUB for BIOS</title>
+@y
+    <title>&InstallationOf1;BIOS 向け GRUB&InstallationOf2;</title>
 @z
 
 @x
@@ -69,7 +80,7 @@
 @x
       <title>The meaning of the new configure options:</title>
 @y
-      <title>configure オプションの意味</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x --disable-werror
@@ -117,12 +128,164 @@
 @z
 
 @x
-  <para>Making your LFS system bootable with GRUB will be discussed in
-  <xref linkend="ch-bootable-grub" role='.'/></para>
+    <title>Installation of GRUB for 64-bit UEFI</title>
 @y
-  <para>
-  GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/>で説明しています。
-  </para>
+    <title>&InstallationOf1;64 ビット UEFI 向け GRUB&InstallationOf2;</title>
+@z
+
+@x
+    <para>If you want to boot with 64-bit UEFI, you should build support for
+    it.</para>
+@y
+    <para>
+    64 ビット UEFI を使ったブートを行うには、これをサポートするビルドを行う必要があります。
+    </para>
+@z
+
+@x
+    <para>First, if you built GRUB from any of the sections above,
+    clean the source tree:</para>
+@y
+    <para>
+    まず前節に示す GRUB ビルドを行っているなら、ソースツリーをきれいにしておきます。
+    </para>
+@z
+
+@x
+    <para>Fix a bug introduced in grub-2.14:</para>
+@y
+    <para>
+    はじめに grub-2.14 におけるバグを修正します。
+    </para>
+@z
+
+@x
+    <para>Now configure GRUB for 64-bit UEFI support:</para>
+@y
+    <para>
+    64 ビット UEFI サポートを有効にして GRUB を準備します。
+    </para>
+@z
+
+@x
+      <title>The meaning of the new configure options:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x --target=x86_64
+          <para>This defines that the UEFI firmware architecture is x86_64,
+          which GRUB should target.</para>
+@y
+          <para>
+          UEFI ファームウェアアーキテクチャーを x86_64 として定義します。
+          GRUB はこれを処理対象とします。
+          </para>
+@z
+
+@x --with-platform=efi
+          <para>This specifies that EFI is a platform GRUB should target.
+          In combination with <parameter>--target=x86_64</parameter>, GRUB will
+          have the ability to target the <literal>x86_64-efi</literal>
+          platform.</para>
+@y
+          <para>
+          これは GRUB が処理対象とするプラットフォームが EFI であることを指定します。
+          <parameter>--target=x86_64</parameter> と組み合わせることにより、<literal>x86_64-efi</literal> プラットフォームを対象とする機能性を有するものとなります。
+          </para>
+@z
+
+@x
+    <para>Compile the package for 64-bit UEFI support:</para>
+@y
+    <para>
+    64 ビット UEFI サポート用として本パッケージをコンパイルします。
+    </para>
+@z
+
+@x
+    <para>Install support for 64-bit UEFI:</para>
+@y
+    <para>
+    64 ビット UEFI サポートをインストールします。
+    </para>
+@z
+
+@x
+    <title>Installation of GRUB for 32-bit UEFI</title>
+@y
+    <title>&InstallationOf1;32 ビット UEFI 向け GRUB&InstallationOf2;</title>
+@z
+
+@x
+    <para>If you want to boot with 32-bit UEFI, which is very rare, you should
+    build support for it.</para>
+@y
+    <para>
+    32 ビット UEFI を使ったブートを行うには、これをサポートするビルドを行う必要があります。
+    ただしこれを必要とすることは極めてまれです。
+    </para>
+@z
+
+@x
+    <para>First, if you built GRUB from any of the sections above,
+    clean the source tree:</para>
+@y
+    <para>
+    まず前節に示す GRUB ビルドを行っているなら、ソースツリーをきれいにしておきます。
+    </para>
+@z
+
+@x
+    <para>Fix a bug introduced in grub-2.14:</para>
+@y
+    <para>
+    はじめに grub-2.14 におけるバグを修正します。
+    </para>
+@z
+
+@x
+    <para>Now configure GRUB for 32-bit UEFI support:</para>
+@y
+    <para>
+    32 ビット UEFI サポートを有効にして GRUB を準備します。
+    </para>
+@z
+
+@x
+      <title>The meaning of the new configure options:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x --target=i386
+          <para>This defines that the UEFI firmware architecture is
+          i386/32-bit, which GRUB should target. In combination with
+          <parameter>--with-platform=efi</parameter>, GRUB will
+          have the ability to target the <literal>i386-efi</literal>
+          platform.</para>
+@y
+          <para>
+          UEFI ファームウェアアーキテクチャーを i386/32 ビットとして定義します。
+          GRUB はこれを処理対象とします。
+          <parameter>--with-platform=efi</parameter> と組み合わせることにより、<literal>i386-efi</literal> プラットフォームを対象とする機能性を有するものとなります。
+          </para>
+@z
+
+@x
+    <para>Compile the package for 32-bit UEFI support:</para>
+@y
+    <para>
+    32 ビット UEFI サポート用として本パッケージをコンパイルします。
+    </para>
+@z
+
+@x
+    <para>Install support for 32-bit UEFI:</para>
+@y
+    <para>
+    32 ビット UEFI サポートをインストールします。
+    </para>
 @z
 
 @x
@@ -165,19 +328,20 @@
 @z
 
 @x
+      <filename class="directory">/usr/lib/grub</filename> will have different
+      contents based on what platform(s) you have installed GRUB for. Namely,
+      there will be different GRUB modules for each platform.
+@y
+      <filename class="directory">/usr/lib/grub</filename> の内容は、GRUB をどのプラットフォーム向けにビルドしたかによって異なります。
+      つまり各プラットフォームごとに GRUB モジュールは異なってきます。
+@z
+
+@x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-% @x grub-bin2h
-%           <para>Converts a binary file to a C header</para>
-% @y
-%           <para>
-%           バイナリファイルを C ヘッダーファイルに変換します。
-%           </para>
-% @z
-% 
 @x grub-bios-setup
           <para>Is a helper program for <command>grub-install</command></para>
 @y
@@ -261,14 +425,6 @@
           <filename>grub.cfg</filename> ファイルを生成します。
           </para>
 @z
-
-% @x grub-mkdevicemap
-%           <para>Generate a device map file automatically</para>
-% @y
-%           <para>
-%           デバイスマップファイルを自動的に生成します。
-%           </para>
-% @z
 
 @x grub-mkimage
           <para>Makes a bootable image of GRUB</para>

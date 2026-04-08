@@ -54,7 +54,7 @@
 @z
 
 @x
-    <para>Finish this temproary workaround by  removing /etc/resolv.conf.  
+    <para>Finish this temporary workaround by  removing /etc/resolv.conf.  
     A discussion of this file
     will be made at <xref linkend='resolv.conf'/></para>
 @y

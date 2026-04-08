@@ -14,6 +14,8 @@ bases = \
 	systemd.xml       \
 	sysv.toml         \
 	sysv.xml          \
+	uefi.toml         \
+	uefi.xml          \
 	x2apic.toml       \
 	x2apic.xml
 
@@ -29,6 +31,8 @@ systemd.toml:      $(BOOKdir)/systemd.toml
 systemd.xml:       $(BOOKdir)/systemd.xml
 sysv.toml:         $(BOOKdir)/sysv.toml
 sysv.xml:          $(BOOKdir)/sysv.xml
+uefi.toml:         $(BOOKdir)/uefi.toml
+uefi.xml:          $(BOOKdir)/uefi.xml
 x2apic.toml:       $(BOOKdir)/x2apic.toml
 x2apic.xml:        $(BOOKdir)/x2apic.xml
 

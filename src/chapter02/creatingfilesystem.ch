@@ -117,7 +117,7 @@
 @x
   <para>If you are using an existing <systemitem class="filesystem">swap
   </systemitem> partition, there is no need to format it. If a new
-  <systemitem class="filesystem"> swap</systemitem> partition was created,
+  <systemitem class="filesystem">swap</systemitem> partition was created,
   it will need to be initialized with this command:</para>
 @y
   <para>
@@ -134,5 +134,46 @@
   <para>
   <replaceable>&lt;yyy&gt;</replaceable> の部分は <systemitem
   class="filesystem">swap</systemitem> パーティションの名に合わせて置き換えてください。
+  </para>
+@z
+
+@x
+  <para>If you have created an EFI System Partition, you have a few options.
+  Motherboards when booting with UEFI look for EFI applications in partitions
+  formatted with a FAT variant (FAT12, FAT16, FAT32, VFAT, etc).  Usually,
+  FAT32 or VFAT are the recommended options.</para>
+@y
+  <para>
+  EFI システムパーティションを生成した場合、さらに選択肢があります。
+  UEFI によるブート処理にあたってマザーボードは、FAT 系 (FAT12, FAT16, FAT32, VFAT など) によってフォーマットされたパーティションの中から EFI アプリケーションを探し出します。
+  普通は FAT32 か VFAT が推奨されます。
+  </para>
+@z
+
+@x
+  <para>If you have chosen <systemitem class="filesystem">FAT32</systemitem>,
+  format the ESP with the following command:</para>
+@y
+  <para>
+  <systemitem class="filesystem">FAT32</systemitem> を選ぶ場合は ESP を以下のコマンドによりフォーマットします。
+  </para>
+@z
+
+@x
+  <para>On the other hand, if you have chosen
+  <systemitem class="filesystem">VFAT</systemitem>, you can run the following
+  instead:</para>
+@y
+  <para>
+  <systemitem class="filesystem">VFAT</systemitem> を選ぶ場合は以下を実行します。
+  </para>
+@z
+
+@x
+  <para>Replace <replaceable>&lt;zzz&gt;</replaceable> with the name of the
+  EFI System Partition.</para>
+@y
+  <para>
+  <replaceable>&lt;zzz&gt;</replaceable> の部分は EFI システムパーティションの名に合わせて置き換えてください。
   </para>
 @z

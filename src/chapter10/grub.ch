@@ -9,18 +9,18 @@
   <title>GRUB を用いたブートプロセスの設定</title>
 @z
 
-@x
-      If your system has UEFI support and you wish to boot LFS with UEFI,
-      you should skip the instructions in this page but still learn the
-      syntax of <filename>grub.cfg</filename> and the method to specify
-      a partition in the file from this page, and configure GRUB with UEFI
-      support using the instructions provided in
-      <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>.
-@y
-      UEFI サポートが有効なシステムにおいて UEFI を使って LFS をブートしたい場合は、本ページに示す手順は読み飛ばしてください。
-      ただし <filename>grub.cfg</filename> の文法を学ぶ場合や、ファイル内にあるパーティションの指定方法を学ぶ場合は確認しておいてください。
-      そして <ulink url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> に示されている手順に従って、UEFI に対応するように GRUB 設定を行ってください。
-@z
+%@x
+%      If your system has UEFI support and you wish to boot LFS with UEFI,
+%      you should skip the instructions in this page but still learn the
+%      syntax of <filename>grub.cfg</filename> and the method to specify
+%      a partition in the file from this page, and configure GRUB with UEFI
+%      support using the instructions provided in
+%      <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>.
+%@y
+%      UEFI サポートが有効なシステムにおいて UEFI を使って LFS をブートしたい場合は、本ページに示す手順は読み飛ばしてください。
+%      ただし <filename>grub.cfg</filename> の文法を学ぶ場合や、ファイル内にあるパーティションの指定方法を学ぶ場合は確認しておいてください。
+%      そして <ulink url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> に示されている手順に従って、UEFI に対応するように GRUB 設定を行ってください。
+%@z
 
 @x
     <title>Introduction</title>
@@ -32,18 +32,18 @@
     <warning><para>Configuring GRUB incorrectly can render your system
     inoperable without an alternate boot device such as a CD-ROM or bootable
     USB drive. This section is not required to boot your LFS system.  You may
-    just want to modify your current boot loader, e.g. Grub-Legacy, GRUB2, or
-    LILO.</para></warning>
+    just want to modify your current boot loader, e.g. Grub-Legacy or
+    GRUB2.</para></warning>
 @y
     <warning><para>
     GRUB の設定を誤ってしまうと、CD-ROM や USB 起動ドライブのような他のデバイスからもブートできなくなってしまいます。
     読者の LFS システムをブート可能とするためには、本節の内容は必ずしも必要ではありません。
-    読者が利用している現在のブートローダー、例えば Grub-Legacy, GRUB2, LILO などの設定を修正することが必要かもしれません。
+    読者が利用している現在のブートローダー、例えば Grub-Legacy, GRUB2 などの設定を修正することが必要かもしれません。
     </para></warning>
 @z
 
 @x
-    <para> Ensure that an emergency boot disk is ready to <quote>rescue</quote>
+    <para>Ensure that an emergency boot disk is ready to <quote>rescue</quote>
     the computer if the computer becomes unusable (un-bootable).  If you do not
     already have a boot device, you can create one.  In order for the procedure
     below to work, you need to jump ahead to BLFS and install
@@ -58,6 +58,26 @@
     以降に示す手順を実施するために、必要に応じて BLFS ブックを参照し <ulink
     url="&blfs-book;multimedia/libisoburn.html">
     libisoburn</ulink> にある <userinput>xorriso</userinput> をインストールしてください。
+    </para>
+@z
+
+@x
+    <title>Turn off Secure Boot</title>
+@y
+    <title>セキュアブートの無効化</title>
+@z
+
+@x
+    <para>LFS does not have the essential packages to support Secure Boot.
+    To set up the boot process following the instructions in this section,
+    Secure Boot must be turned off from the configuration interface of the
+    firmware. Read the documentation provided by the manufacturer of your
+    system to find out how to turn off Secure Boot support.</para>
+@y
+    <para>
+    LFS にはセキュアブートをサポートする基本的なパッケージがありません。
+    本節の手順に従ってブートプロセスを設定する際には、ファームウェアの設定において Secure Boot は必ずオフに設定してください。
+    Secure Boot サポートの無効化に関する詳細手順は、利用しているシステムの製造者が提供するドキュメントを参照してください。
     </para>
 @z
 
@@ -98,14 +118,6 @@
     </para>
 @z
 
-% @x
-%     <para>You can determine what GRUB thinks your disk devices are by running:</para>
-% @y
-%     <para>
-%     ディスクデバイスを GRUB がどのような名称で取り扱うかを確認する場合は以下を実行してください。
-%     </para>
-% @z
-
 @x
     <title>Setting Up the Configuration</title>
 @y
@@ -113,42 +125,99 @@
 @z
 
 @x
-    <para>GRUB works by writing data to the first physical track of the 
-    hard disk.  This area is not part of any file system.  The programs
-    there access GRUB modules in the boot partition.  The default location
-    is /boot/grub/.</para>
+    <para>If booting the system via BIOS, GRUB works by writing a stub to
+    the first sector (named the Master Boot Record, or MBR) of the hard
+    disk. This area is not part of any file system. The BIOS loads and
+    executes the content of MBR, then the stub loads the main GRUB image from
+    the BIOS Boot Partition. The GRUB image is stored as raw data instead
+    of a file (there must be no file system on the BIOS Boot Partition), so
+    the stub doesn't need to support any file system and it can be made small
+    enough to fit in the MBR.</para>
 @y
     <para>
-    GRUB は、ハードディスク上の最初の物理トラックにデータを書き出します。
-    この領域は、どのファイルシステムにも属していません。
-    ここに配置されているプログラムは、ブートパーティションにある GRUB モジュールにアクセスします。
-    モジュールのデフォルト位置は /boot/grub/ です。</para>
+    BIOS を経由してシステムをブートする場合、GRUB がハードディスクの最初のセクター (マスターブートレコード, MBR と呼ばれる) にスタブを書き込みます。
+    この領域はファイルシステムに属するものではありません。
+    BIOS は MBR の内容をロードして実行します。
+    そしてスタブが、BIOS ブートパーティションからメインの GRUB イメージをロードします。
+    GRUB イメージはファイルとしてではなく、生のデータとして保存されます (BIOS ブートパーティションにファイルシステムがあってはなりません)。
+    したがってスタブはファイルシステムを一切サポートする必要がなく、MBR に収まるように充分小さくすることができます。
+    </para>
+@z
+
+@x
+    <para>If booting the system via UEFI, GRUB works by storing the main
+    GRUB image as a PE-COFF executable file at a standard location in the
+    EFI System Partition: <filename>EFI/BOOT/BOOTX64.EFI</filename> (or
+    <filename>EFI/BOOT/BOOTIA32.EFI</filename> for
+    <literal>i386-efi</literal>). The UEFI firmware loads it from the
+    standard location and executes it, launching GRUB.</para>
+@y
+    <para>
+    UEFI を経由してシステムをブートする場合、GRUB はメインの GRUB イメージを PE-COFF 実行ファイルとして保存し機能します。
+    そしてその保存場所は EFI システムパーティション <filename>EFI/BOOT/BOOTX64.EFI</filename> (<literal>i386-efi</literal> の場合は <filename>EFI/BOOT/BOOTIA32.EFI</filename>) 内にある標準的な場所になります。
+    UEFI ファームウェアはその標準的な場所から、その実行ファイルをロードして実行し GRUB を起動します。
+    </para>
+@z
+
+@x
+    <para>Many GRUB functions (including booting the Linux kernel) are
+    not included in the main GRUB image. Instead, they are stored in a file
+    system as GRUB modules. That file system is usually mounted in a
+    way that the GRUB modules can be accessed in
+    <filename class='directory'>/boot/grub</filename> on most Linux
+    distributions. To avoid the chicken-and-egg problem,
+    <command>grub-install</command> embeds the modules necessary to
+    access this file system into the main GRUB image, so it can find
+    and load other modules.</para>
+@y
+    <para>
+    GRUB 関数 (Linux カーネルのブートを行うものを含む) の多くは、メインの GRUB イメージの中にはありません。
+    それは GRUB モジュールとしてファイルシステム内に保存されています。
+    そのファイルシステムは、たいていの Linux ディストリビューションでは、<filename
+    class='directory'>/boot/grub</filename> にマウントされ GRUB モジュールにアクセスできます。
+    このことが「にわとりが先かタマゴが先か」の問題とならないように、このファイルシステムへのアクセスに必要となるモジュールを <command>grub-install</command> がメインの GRUB イメージの中に埋め込みます。
+    これにより他のモジュールをロードすることができるようになります。
+    </para>
 @z
 
 @x
     <para>The location of the boot partition is a choice of the user that
-    affects the configuration.  One recommendation is to have a separate small
-    (suggested size is 200 MB) partition just for boot information.  That way
-    each build, whether LFS or some commercial distro, can access the same boot
-    files and access can be made from any booted system.  If you choose to do
-    this, you will need to mount the separate partition, move all files in the
-    current <filename class="directory">/boot</filename> directory (e.g. the
-    Linux kernel you just built in the previous section) to the new partition.
+    affects the configuration. One recommendation is to have a separate small
+    (suggested size is 200 MB) partition just for boot information. In doing
+    so, not just LFS, but any Linux distribution, can access the same boot
+    files, and in turn any booted system. If you choose to do this, you will
+    need to mount the separate partition, move all files in the current
+    <filename class="directory">/boot</filename> directory (e.g. the Linux
+    kernel you just built in the previous section) to the new partition.
     You will then need to unmount the partition and remount it as <filename
-    class="directory">/boot</filename>.  If you do this, be sure to update
+    class="directory">/boot</filename>. If you do this, be sure to update
     <filename>/etc/fstab</filename>.</para>
 @y
     <para>
     ブートパーティションをどこにするかは各人に委ねられていて、それによって設定方法が変わります。
     推奨される1つの手順としては、ブートパーティションとして独立した小さな (200MB 程度のサイズの) パーティションを設けることです。
-    こうしておくと、この後に LFS であろうが商用ディストリビューションであろうが、システム導入する際に同一のブートファイルを利用することが可能です。
-    つまりどのようなブートシステムからでもアクセスが可能となります。
+    こうしておくと、この後に LFS であろうが商用ディストリビューションであろうが、同一のブートファイルを別のブートシステムに対しても利用できます。
     この方法をとるなら、新たなパーティションをマウントした上で、現在 <filename
     class="directory">/boot</filename> ディレクトリにある全ファイルを (例えば前節にてビルドした Linux カーネルも) 新しいパーティションに移動させる必要があります。
     そしていったんパーティションをアンマウントし、再度 <filename
     class="directory">/boot</filename> としてマウントしなおすことになります。
     これを行った後は<filename>/etc/fstab</filename> を適切に書き換えてください。
     </para>
+@z
+
+@x
+      <para>If the host distro utilizes a separate partition for
+      <filename class="directory">/boot</filename> and you want the LFS
+      system to use that partition for
+      <filename class="directory">/boot</filename> as well, just mount
+      the partition at <filename class="directory">$LFS/boot</filename>
+      in the host distro. The Linux kernel supports mounting partitions
+      at multiple mount points.</para>
+@y
+      <para>
+      ホストディストロが <filename class="directory">/boot</filename> に対して個別のパーティションを用いていて、かつ LFS も <filename class="directory">/boot</filename> に対してそのパーティションを利用したいのであれば、そのパーティションをホストディストロの <filename class="directory">$LFS/boot</filename> にマウントしてください。
+      Linux カーネルでは、複数のマウントポイントに対してパーティションをマウントする機能がサポートされています。
+      </para>
 @z
 
 @x
@@ -163,11 +232,16 @@
     </para>
 @z
 
-%@x
-%    <title>Setting Up the Configuration</title>
-%@y
-%    <title>設定作業</title>
-%@z
+@x
+    <para>For examples and more information on boot partition layouts, looking
+    at <xref linkend="ch-partitioning-creatingpartition"/> may be
+    informative.</para>
+@y
+    <para>
+    ブートパーティションのレイアウトに関する具体的な話については、<xref
+    linkend="ch-partitioning-creatingpartition"/> に分かり易いかもしれません。
+    </para>
+@z
 
 @x
     <para>Using the above information, determine the appropriate
@@ -183,40 +257,207 @@
 @z
 
 @x
-    <para>Install the GRUB files into <filename
-    class="directory">/boot/grub</filename> and set up the boot track:</para> 
+      The following sections go over how to boot with BIOS and UEFI.
+      The GRUB installations for BIOS, 64-bit UEFI, and 32-bit UEFI can
+      coexist and share the same configuration. The images and data live at
+      different locations, so you can create both the BIOS Boot Partition and
+      the EFI System Partition, and install GRUB for all the supported firmware
+      types (i.e. running three <command>grub-install</command> commands). If
+      you are unsure about your firmware type, or you plan to move the hard
+      drive to a different computer, this is something you can do as a blanket
+      strategy.
 @y
-    <para>
-    以下を実行して GRUB ファイル類を <filename
-    class="directory">/boot/grub</filename> にインストールし、ブートトラックを構築します。
-    </para>
+      これ以降の節では BIOS または UEFI を使ったブート方法について説明していきます。
+      BIOS、64 ビット UEFI、32 ビット UEFI のそれぞれに対する GRUB インストールは共存が可能であり、同一の設定を共有することができます。
+      GRUB イメージやデータは、それぞれに異なる場所に配置されるため、BIOS ブートパーティションと EFI システムパーティションを同時に生成しておくこともでき、サポートされるファームウェアのタイプすべてに対して GRUB をインストールすることができます (<command>grub-install</command> を 3 回実行することになります)。
+      利用しているファームウェアタイプが何かがよく分からない場合、またはハードディスクを別コンピューターに移転しようとしている場合は、共存させるという手法が必要になるかもしれません。
 @z
 
 @x
-      <para>The following command will overwrite the current boot loader. Do not
-      run the command if this is not desired, for example, if using a third party
-      boot manager to manage the Master Boot Record (MBR).</para> 
+      If you're doing UEFI boot but have created the Grub BIOS partition, it
+      may be a good idea to run the command for BIOS in case UEFI booting does
+      not work as expected.
+@y
+      UEFI ブートを行おうとしているのに Grub ブートパーティションを生成してしまった場合、UEFI ブートが思うように動かないかもしれないことから、BIOS 向けコマンドを実行しておくのが良いでしょう。
+@z
+
+@x
+      If you only need to install GRUB for one boot method, you don't have to
+      run commands for both methods. You can just run the command for the boot
+      method you need.
+@y
+      GRUB によるブートはただ一つの方法だけ実現すれば十分であるなら、複数に対処するために複数回コマンドを実行する必要はありません。
+      必要としているブート向けのコマンドだけを実行すれば十分です。
+@z
+
+@x
+      <title>Booting With BIOS</title>
+@y
+      <title>BIOS を使ったブート</title>
+@z
+
+@x
+      <para>For booting with BIOS, make sure the boot partition is mounted
+      (if using a separate one) and the BIOS Boot partition exists. After that,
+      install the GRUB files into <filename
+      class="directory">/boot/grub</filename> and set up the boot track:</para>
 @y
       <para>
-      以下に示すコマンドを実行すると、現在のブートローダーを上書きします。
-      上書きするのが不適当であるならコマンドを実行しないでください。
-      例えばマスターブートレコード (Master Boot Record; MBR) を管理するサードパーティ製のブートマネージャーソフトウェアを利用している場合などがこれに該当します。
+      BIOS を使ったブートでは、ブートパーティションがマウントされていて (個別のパーティションを用意している場合)、BIOS ブートパーティションが存在していることを確認してください。
+      GRUB ファイル類を <filename
+      class="directory">/boot/grub</filename> にインストールしたら、ブートトラックを設定します。
       </para>
 @z
 
 @x
-      <para>If the system has been booted using UEFI,
-      <command>grub-install</command> will try to install files for the
-      <emphasis>x86_64-efi</emphasis> target, but those files
-      have not been installed in <xref linkend="chapter-building-system"/>.
-      If this is the case, add <option>--target i386-pc</option> to the
-      command above.</para>
+        <para>The following command will overwrite the current boot loader. Do
+        not run the command if this is not desired, for example, if using a
+        third party boot manager to manage the MBR.</para>
+@y
+        <para>
+        以下のコマンドを実行すると、それまでのブートローダーを上書きします。
+        これを避けたい場合はコマンドを実行しないでください。
+        たとえば MBR の管理を行うサードパーティー製のブートマネージャーを利用している場合などです。
+        </para>
+@z
+
+@x
+      <title>Booting With UEFI</title>
+@y
+      <title>UEFI を使ったブート</title>
+@z
+
+@x
+      <para>For booting with UEFI, make sure the boot partition is mounted
+      (if using a separate one) and the EFI System Partition is mounted at
+      <filename class='directory'>/boot/efi</filename>. After that, install the
+      GRUB files into <filename class="directory">/boot/grub</filename> and the
+      main GRUB image at
+      <filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename>:</para>
 @y
       <para>
-      システムが UEFI を通じて起動されている時、<command>grub-install</command> は <emphasis>x86_64-efi</emphasis> ターゲットに対するファイルをインストールしようとします。
-      しかしそのようなファイルは <xref linkend="chapter-building-system"/> にてインストールしていません。
-      その場合は上のコマンドに対して <option>--target i386-pc</option> を追加してください。
+      UEFI を使ったブートでは、ブートパーティションがマウントされていて (個別のパーティションを用意している場合)、EFI システムパーティションが <filename class='directory'>/boot/efi</filename> にマウントされていることを確認してください。
+      その上で GRUB ファイル類を <filename class="directory">/boot/grub</filename> に、またメインの GRUB イメージを <filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename> にインストールします。
       </para>
+@z
+
+@x
+        <para>The following command will overwrite the
+        <filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename> file.
+        If it already exists, it's likely that it's the entry of another boot
+        loader (for example the GRUB installation from the host distro, or the
+        Windows Boot Manager). Backup the file so it can be restored later
+        or loaded as a secondary boot loader by the new GRUB installation
+        from LFS.</para>
+@y
+        <para>
+        以下のコマンドは <filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename> ファイルを上書きします。
+        すでにこのファイルが存在していたとしたら、それは別のブートローダー (たとえばホストディストロからの GRUB インストール、あるいは Windows ブートマネージャー) によって導入されているものかもしれません。
+        後々の復元のことを考慮して、あるいは新たな GRUB インストールによって構成される 2 つめのブートローダー用としてロードできるように、このファイルのバックアップを取っておいてください。
+        </para>
+@z
+
+@x
+        The command above assumes that you have 64-bit UEFI firmware.
+        If you want to make the system bootable on 32-bit UEFI firmware,
+        run the command with <literal>x86_64-efi</literal> replaced by
+        <literal>i386-efi</literal>.
+@y
+        上のコマンドは、64 ビット UEFI ファームウェアを利用している場合のものです。
+        32 ビット UEFI ファームウェア用としてシステムブートを行いたい場合は、<literal>x86_64-efi</literal> の部分を <literal>i386-efi</literal> に置き換えてコマンド実行してください。
+@z
+
+@x
+        The <parameter>--removable</parameter> option makes
+        <command>grub-install</command> use the standard location,
+        <filename>EFI/BOOT/BOOTX64.EFI</filename> (or
+        <filename>EFI/BOOT/BOOTIA32.EFI</filename> for
+        <literal>i386-efi</literal>), instead of the location GRUB prefers
+        (<filename>EFI/GRUB/GRUBX64.EFI</filename> or
+        <filename>EFI/GRUB/GRUBIA32.EFI</filename>).  Using a non-standard
+        location would result in the location in a EFI variable be recorded,
+        but LFS lacks the BLFS package <ulink
+        url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink>, which is
+        needed to manipulate EFI variables.
+@y
+        <parameter>--removable</parameter> オプションは <command>grub-install</command> が標準的なインストール場所 <filename>EFI/BOOT/BOOTX64.EFI</filename> (<literal>i386-efi</literal> の場合は <filename>EFI/BOOT/BOOTIA32.EFI</filename>) を用いるように指定するものです。
+        これを指定しなかった場合 GRUB は <filename>EFI/GRUB/GRUBX64.EFI</filename> または <filename>EFI/GRUB/GRUBIA32.EFI</filename> をインストール先とします。
+        標準的ではない場所を用いたとしても、EFI 変数が指定されていれば、その場所に正しくインストールされます。
+        しかし LFS では BLFS パッケージ <ulink
+        url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> が導入されていません。
+        これがないと EFI 変数を取り扱うことはできません。
+@z
+
+@x
+          Some UEFI bootloaders, while rare, skip the hardcoded EFI path. Such
+          systems most of the time are old, like Lenevo ThinkPads or HP
+          desktops/laptops. When the boot entry is missing in the BIOS, you
+          will need to install the BLFS package <ulink
+          url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> to create
+          a boot entry for UEFI. If it's easier, the package can be installed
+          via the distribution's package manager, if applicable, and used on
+          the host instead of on the LFS system. This can prevent the need for
+          downloading more tarballs onto the LFS system for now.
+@y
+          UEFI ブートローダーの中には、極めてまれな例として、ハードコーディングされた EFI パスを無視するものがあります。
+          そのようなシステムというのは、Lenevo ThinkPads とか HP デスクトップ/ノートパソコンに見られる、かなり古いものです。
+          ブートエントリが BIOS 内にない場合、BLFS パッケージ <ulink
+          url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> をインストールして UEFI 向けのブートエントリを生成しないといけないかもしれません。
+          簡易な方法として、ホストディストリビューションのパッケージマネージャーがそのパッケージに対応していて、それをインストールし、LFS システム上ではなくホストシステム上にて利用するということも考えられます。
+          これが可能であれば、LFS システムに別パッケージを導入しなくても済みます。
+@z
+
+@x
+          First install the package, then mount the EFI variable file system if
+          it isn't already mounted:
+@y
+          はじめにそのパッケージをインストールします。
+          そしてファイルシステムのマウントをまだ行っていないのであれば、EFI 変数を使ってファイルシステムをマウントします。
+@z
+
+@x
+          Now create a boot entry for the EFI:
+@y
+          そして EFI 向けのブートエントリを生成します。
+@z
+
+@x
+          The <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal>
+          drive should match the one you are installing LFS onto. The
+          <replaceable>&lt;y&gt;</replaceable> partition number should match
+          the number which the ESP is mounted. If the ESP is on
+          <literal>/dev/sda2</literal>, then the partition number would be
+          <literal>2</literal>. If you are using 32-bit UEFI, replace
+          <replaceable>&lt;X64&gt;</replaceable> with <literal>IA32</literal>.
+@y
+          <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal> の部分は LFS をインストールしている場所となるよう適切に記述してください。
+          またパーティション番号 <replaceable>&lt;y&gt;</replaceable> は、ESP をマウントしている番号に合わせてください。
+          ESP を <literal>/dev/sda2</literal> にしている場合、パーティション番号は <literal>2</literal> となります。
+          32 ビット UEFI の設定時は <replaceable>&lt;X64&gt;</replaceable> の部分を <literal>IA32</literal> に置き換えてください。
+@z
+
+@x
+          Some (broken) firmware may require additional parameters
+          for <command>efibootmgr</command>, like
+          <parameter>--full-dev-path</parameter> or
+          <parameter>-e 1 -E</parameter>.  Read the man page
+          <ulink role='man' url='&man;efibootmgr.8'>efibootmgr(8)</ulink>
+          for details.
+@y
+          (不具合のある) ファームウェアでは <command>efibootmgr</command> に対してさらなるパラメーターが必要になる場合があります。
+          たとえば <parameter>--full-dev-path</parameter> や <parameter>-e 1 -E</parameter> といったものです。
+          詳しくは man ページ <ulink
+          role='man' url='&man;efibootmgr.8'>efibootmgr(8)</ulink> を参照してください。
+@z
+
+@x
+          Now unmount the EFI variable file system<phrase revision='sysv'>,
+          which should no longer be needed for the boot process, as the file
+          system is only used for EFI variable manipulation</phrase>:
+@y
+          そして EFI 変数をアンマウントします。
+          <phrase revision='sysv'>これはこれ以降、ブート処理には不要です。
+          ファイルシステムは EFI 変数の操作に対してのみ用いられるからです。</phrase>
 @z
 
 @x
@@ -236,28 +477,34 @@
 @x
       The <command>insmod</command> commands load the
       <application>GRUB</application> modules named
-      <filename>part_gpt</filename> and <filename>ext2</filename>.
+      <filename>part_gpt</filename>, <filename>ext2</filename>,
+      <filename>efi_gop</filename>, and
+      <filename>efi_uga</filename>.
       Despite the naming, <filename>ext2</filename> actually supports
       <systemitem class='filesystem'>ext2</systemitem>,
       <systemitem class='filesystem'>ext3</systemitem>, and
       <systemitem class='filesystem'>ext4</systemitem> filesystems.
-      The <command>grub-install</command> command has embedded some modules
-      into the main <application>GRUB</application> image (installed into
-      the MBR or the GRUB BIOS partition) to access the other modules
-      (in <filename class='directory'>/boot/grub/i386-pc</filename>) without
-      a chicken-or-egg issue, so with a typical configuration these two
-      modules are already embedded and those two <command>insmod</command>
-      commands will do nothing.  But they do no harm anyway, and they may
-      be needed with some rare configurations.
+      On UEFI systems, <filename>efi_gop</filename> and
+      <filename>efi_uga</filename> are for video support. GOP, or Graphics
+      Output Protocol, is the modern approach. UGA, or UGA Draw Protocol, is
+      a legacy way of handling it.
+      In a typical configuration, the <filename>part_gpt</filename> and
+      <filename>ext2</filename> modules are already embedded in
+      the main GRUB image by <command>grub-install</command>, and the
+      <command>insmod</command> commands for them will do nothing. However,
+      they do no harm anyway, and they may be needed with some rare
+      configurations.
 @y
-      <command>insmod</command> コマンドは <application>GRUB</application> モジュールである <filename>part_gpt</filename> と <filename>ext2</filename> をロードします。
+      <command>insmod</command> コマンドは <application>GRUB</application> モジュールである <filename>part_gpt</filename>、<filename>ext2</filename>、<filename>efi_gop</filename>、<filename>efi_uga</filename> をロードします。
       そしてその名前こそ <filename>ext2</filename> となっていますが、このモジュールは実際には <systemitem
       class='filesystem'>ext2</systemitem>, <systemitem
       class='filesystem'>ext3</systemitem>, <systemitem
       class='filesystem'>ext4</systemitem> の各ファイルシステムをサポートしています。
-      <command>grub-install</command> コマンドによっていくつかのモジュールは、メインの（MBR または GRUB BIOS パーティションにインストールされる）<application>GRUB</application> イメージ内に埋め込まれており、鶏が先か卵が先かという問題を生じさせることなく、そこから（<filename class='directory'>/boot/grub/i386-pc</filename> にある）他モジュールへのアクセスを可能としています。
-      したがってごく普通の設定を行っていれば、上述の 2 つのもジュールはすでに埋め込まれていることとなり、<command>insmod</command> コマンドは何も行わないことになります。
-      そうなったとしても何も問題はありませんが、特殊な設定を行った際には必要となるかもしれません。
+      UEFI システムでは <filename>efi_gop</filename> と <filename>efi_uga</filename> がビデオ機能をサポートします。
+      具体的には GOP (Graphics Output Protocol) を用いるのが最新式であり、UGA (UGA Draw Protocol) を用いるのがレガシーな方式です。
+      通常の設定では <filename>part_gpt</filename> と <filename>ext2</filename> の各モジュールが、<command>grub-install</command> によって GRUB のメインイメージに埋め込まれています。
+      したがってこれらのモジュールを <command>insmod</command> に対して用いても何も起きません。
+      これは問題を引き起こすものではなく、特殊な設定を行った際には必要となるかもしれません。
 @z
 
 @x
@@ -265,11 +512,13 @@
       resolution and color depth of the VESA framebuffer to be passed to the
       kernel.  It's necessary for the kernel SimpleDRM driver to use the
       VESA framebuffer.  You can use a different resolution or color depth
-      value which better suits for your monitor.
+      value which better suits for your monitor.  This line does nothing
+      when the system is booted via UEFI, but it does no harm anyway.
 @y
       <command>set gfxpayload=1024x768x32</command> コマンドは VESA フレームバッファーの解像度と色の深さを設定するものであり、これがカーネルに受け渡されます。
       VESA フレームバッファー向けにカーネルの SimpleDRM ドライバーを用いる場合にこの指定が必要になります。
       モニター画面に最適な解像度や色深さを選んでください。
+      その指定行は、システムが UEFI 経由のブート時には何も行わず、書かれていても何も問題はありません。
 @z
 
 @x
@@ -336,15 +585,15 @@
 
 @x
       <para>The name of the device node for a partition in
-      <filename class='directory'>/dev</filename> may also change (this is less
-      likely than a GRUB designator change).  You can also replace
-      paths to device nodes like <literal>/dev/sda1</literal> with
+      <filename class='directory'>/dev</filename> may also change (very
+      frequently on some systems with multiple NVME disks).  You can also
+      replace paths to device nodes like <literal>/dev/sda1</literal> with
       <literal>PARTUUID=<replaceable>&lt;partition UUID&gt;</replaceable></literal>,
       in <filename>/etc/fstab</filename>, to avoid a potential boot failure
       in case the device node name has changed.</para>
 @y
       <para>
-      <filename class='directory'>/dev</filename> 内のパーティションに対するデバイスノード名も変わります（GRUB 指定子が変更される可能性よりは低いです）。
+      <filename class='directory'>/dev</filename> 内のパーティションに対するデバイスノード名も変わります（複数の NVME ディスクを有するシステムでは頻繁に発生することがあります）。
       <filename>/etc/fstab</filename> において記述するデバイスノードへのパスは、たとえば <literal>/dev/sda1</literal> を <literal>PARTUUID=<replaceable>&lt;パーティション UUID&gt;</replaceable></literal> に置き換えることができます。
       これによりデバイスノード名が変更になった場合の、潜在的な起動エラーを回避することができます。
       </para>
@@ -369,9 +618,10 @@
     <caution><para>There is a command, <application>grub-mkconfig</application>, that
     can write a configuration file automatically.  It uses a set of scripts in
     /etc/grub.d/ and will destroy any customizations that you make.  These scripts
-    are designed primarily for non-source distributions and are not recommended for 
-    LFS.  If you install a commercial Linux distribution, there is a good chance 
-    that this program will be run.  Be sure to back up your grub.cfg file.</para></caution> 
+    are designed primarily for non-source distributions and are not recommended for
+    LFS. If you install a commercial Linux distribution, there is a good chance
+    that this program will be run.  Be sure to back up your grub.cfg
+    file.</para></caution>
 @y
     <caution><para>
     <application>grub-mkconfig</application> というコマンドは、設定ファイルを自動的に生成するものです。

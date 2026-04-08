@@ -204,8 +204,29 @@
 @z
 
 @x
-      <para>While "The IPv6 Protocol" is not strictly
-      required, it is highly recommended by the systemd developers.</para>
+      <para>If you are booting with UEFI, adjust the kernel so it can have EFI
+      partition and runtime support, on top of supporting the DOS VFAT
+      filesystem which is needed for the EFI partition:</para>
+@y
+      <para>
+      UEFI を使ったブートを行う場合は、EFI パーティションのために必要となる DOS VFAT ファイルシステムのサポートを加えます。
+      その上でカーネル調整により EFI パーティションとランタイムサポートを有効にします。
+      </para>
+@z
+
+@x
+        If <literal>PARTITION_ADVANCED</literal> is not selected,
+        <literal>EFI_PARTITION</literal> will be hidden but implicitly
+        selected. Don't select <literal>PARTITION_ADVANCED</literal>
+        just because you need to boot via UEFI.
+@y
+        <literal>PARTITION_ADVANCED</literal> を選択しなかった場合、<literal>EFI_PARTITION</literal> が消えますが、ただし内部的では選択状態となります。
+        UEFI 経由でのブートを必要とするなら <literal>PARTITION_ADVANCED</literal> は選択しないでください。
+@z
+
+@x
+      <para>While "The IPv6 Protocol" is not strictly required, it is highly
+      recommended by the systemd developers.</para>
 @y
       <para>
       "The IPv6 Protocol" については厳密には不要としても良いものですが、システム開発者は強く推奨しているものです。</para>
@@ -226,20 +247,20 @@
     </para>
 @z
 
-@x
-      <para>If your host hardware is using UEFI and you wish to boot the
-      LFS system with it, you should adjust some kernel configuration
-      following <ulink url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
-      the BLFS page</ulink> <emphasis role='bold'>even if you'll use the
-      UEFI bootloader from the host distro</emphasis>.</para>
-@y
-      <para>
-      ホストが UEFI を利用していて、これを使って LFS システムのブートを行いたい場合は、<ulink
-      url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
-      BLFS ページ</ulink> に従って、カーネル設定を調整する必要があります。
-      <emphasis role='bold'>これは、ホストディストリビューションにて UEFI ブートローダーを利用している場合であっても同様です。</emphasis>
-      </para>
-@z
+%@x
+%      <para>If your host hardware is using UEFI and you wish to boot the
+%      LFS system with it, you should adjust some kernel configuration
+%      following <ulink url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
+%      the BLFS page</ulink> <emphasis role='bold'>even if you'll use the
+%      UEFI bootloader from the host distro</emphasis>.</para>
+%@y
+%      <para>
+%      ホストが UEFI を利用していて、これを使って LFS システムのブートを行いたい場合は、<ulink
+%      url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
+%      BLFS ページ</ulink> に従って、カーネル設定を調整する必要があります。
+%      <emphasis role='bold'>これは、ホストディストリビューションにて UEFI ブートローダーを利用している場合であっても同様です。</emphasis>
+%      </para>
+%@z
 
 @x
       <title>The rationale for the above configuration items:</title>
