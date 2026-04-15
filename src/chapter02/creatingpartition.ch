@@ -313,7 +313,7 @@
 @z
 
 @x
-    <para>For Grub, the EFI System Partion should be located at
+    <para>For Grub, the EFI System Partition should be located at
     <filename class="directory">/boot/efi</filename>.</para>
 @y
     <para>

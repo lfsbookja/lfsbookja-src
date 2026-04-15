@@ -390,7 +390,7 @@
 
 @x
           Some UEFI bootloaders, while rare, skip the hardcoded EFI path. Such
-          systems most of the time are old, like Lenevo ThinkPads or HP
+          systems most of the time are old, like Lenovo ThinkPads or HP
           desktops/laptops. When the boot entry is missing in the BIOS, you
           will need to install the BLFS package <ulink
           url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> to create
@@ -400,7 +400,7 @@
           downloading more tarballs onto the LFS system for now.
 @y
           UEFI ブートローダーの中には、極めてまれな例として、ハードコーディングされた EFI パスを無視するものがあります。
-          そのようなシステムというのは、Lenevo ThinkPads とか HP デスクトップ/ノートパソコンに見られる、かなり古いものです。
+          そのようなシステムというのは、Lenovo ThinkPads とか HP デスクトップ/ノートパソコンに見られる、かなり古いものです。
           ブートエントリが BIOS 内にない場合、BLFS パッケージ <ulink
           url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> をインストールして UEFI 向けのブートエントリを生成しないといけないかもしれません。
           簡易な方法として、ホストディストリビューションのパッケージマネージャーがそのパッケージに対応していて、それをインストールし、LFS システム上ではなくホストシステム上にて利用するということも考えられます。

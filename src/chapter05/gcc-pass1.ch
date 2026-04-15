@@ -49,14 +49,14 @@
 @z
 
 @x
-    <note><para>There are frequent misunderstandings about this chapter.  The
-    procedures are the same as every other chapter, as explained earlier (<xref
+    <note><para>There are frequent misunderstandings about the instructions here.  The
+    procedures are the same as every other package, as explained earlier (<xref
     linkend='buildinstr'/>).  First, extract the gcc-&gcc-version; tarball from the sources
     directory, and then change to the directory created.  Only then should you
     proceed with the instructions below.</para></note>
 @y
     <note><para>
-    本節においては誤解が多く発生しています。
+    ここにおいて示す手順には誤解がたくさん発生しています。
     ここでの手順は他のものと同様であり、手順の概要 (<xref linkend='buildinstr'/>) は説明済です。
     まず初めに gcc-&gcc-version; の tarball を伸張 (解凍) し、生成されたソースディレクトリに移動します。
     それに加えて本節では、以下の手順を行うものとなります。

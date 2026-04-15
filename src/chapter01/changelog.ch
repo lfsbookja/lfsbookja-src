@@ -38,6 +38,96 @@
 @z
 
 @x
+      <para>2026-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.11.0. Fixes
+          <ulink url='&lfs-ticket-root;5911'>#5911</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Move intltool and XML-Parser to BLFS. Fixes
+          <ulink url='&lfs-ticket-root;4964'>#4964</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.1.0340 (Security Update). Fixes
+          <ulink url='&lfs-ticket-root;5904'>#5904</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.42 (Security Update). Fixes
+          <ulink url='&lfs-ticket-root;5900'>#5900</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-3.53.0. Fixes
+          <ulink url='&lfs-ticket-root;5909'>#5909</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.14.4 (Security Update). Fixes
+          <ulink url='&lfs-ticket-root;5907'>#5907</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-3.6.2 (Security Update). Fixes
+          <ulink url='&lfs-ticket-root;5906'>#5906</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-6.19.12. Fixes
+          <ulink url='&lfs-ticket-root;5903'>#5903</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libcap-2.78 (Security Update). Fixes
+          <ulink url='&lfs-ticket-root;5905'>#5905</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20260409. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - meson-1.11.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5911'>#5911</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - intltool と XML-Parser を BLFS へ移行。
+          <ulink url='&lfs-ticket-root;4964'>#4964</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.1.0340 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5904'>#5904</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.42 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5900'>#5900</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sqlite-3.53.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5909'>#5909</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python3-3.14.4 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5907'>#5907</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-3.6.2 (Security Update) へのアップデート。
+          <ulink url='&lfs-ticket-root;5906'>#5906</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-6.19.12 へのアップデート。
+          <ulink url='&lfs-ticket-root;5903'>#5903</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap-2.78 (セキュリティアップデート) へのアップデート。
+          <ulink url='&lfs-ticket-root;5905'>#5905</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20260409 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-04-04</para>
       <itemizedlist>
         <listitem>
