@@ -211,12 +211,12 @@
       system to use that partition for
       <filename class="directory">/boot</filename> as well, just mount
       the partition at <filename class="directory">$LFS/boot</filename>
-      in the host distro. The Linux kernel supports mounting partitions
+      in the host distro. The Linux kernel supports mounting one partition
       at multiple mount points.</para>
 @y
       <para>
       ホストディストロが <filename class="directory">/boot</filename> に対して個別のパーティションを用いていて、かつ LFS も <filename class="directory">/boot</filename> に対してそのパーティションを利用したいのであれば、そのパーティションをホストディストロの <filename class="directory">$LFS/boot</filename> にマウントしてください。
-      Linux カーネルでは、複数のマウントポイントに対してパーティションをマウントする機能がサポートされています。
+      Linux カーネルでは、複数のマウントポイントに対して 1 つのパーティションをマウントする機能がサポートされています。
       </para>
 @z
 
@@ -378,20 +378,21 @@
         location would result in the location in a EFI variable be recorded,
         but LFS lacks the BLFS package <ulink
         url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink>, which is
-        needed to manipulate EFI variables.
+        needed by GRUB to record the location into the EFI variable.
 @y
         <parameter>--removable</parameter> オプションは <command>grub-install</command> が標準的なインストール場所 <filename>EFI/BOOT/BOOTX64.EFI</filename> (<literal>i386-efi</literal> の場合は <filename>EFI/BOOT/BOOTIA32.EFI</filename>) を用いるように指定するものです。
         これを指定しなかった場合 GRUB は <filename>EFI/GRUB/GRUBX64.EFI</filename> または <filename>EFI/GRUB/GRUBIA32.EFI</filename> をインストール先とします。
         標準的ではない場所を用いたとしても、EFI 変数が指定されていれば、その場所に正しくインストールされます。
         しかし LFS では BLFS パッケージ <ulink
         url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> が導入されていません。
-        これがないと EFI 変数を取り扱うことはできません。
+        これがないと GRUB がその位置を EFI 変数に保存しておくことができません。
 @z
 
 @x
-          Some UEFI bootloaders, while rare, skip the hardcoded EFI path. Such
+          Some UEFI firmware implementations, while rare, skip the standard
+          EFI path. Such
           systems most of the time are old, like Lenovo ThinkPads or HP
-          desktops/laptops. When the boot entry is missing in the BIOS, you
+          desktops/laptops. When the boot entry is missing in the firmware setup, you
           will need to install the BLFS package <ulink
           url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> to create
           a boot entry for UEFI. If it's easier, the package can be installed
@@ -399,9 +400,9 @@
           the host instead of on the LFS system. This can prevent the need for
           downloading more tarballs onto the LFS system for now.
 @y
-          UEFI ブートローダーの中には、極めてまれな例として、ハードコーディングされた EFI パスを無視するものがあります。
+          UEFI ファームウェアの中には、極めてまれな例として、標準的な EFI パスを無視するものがあります。
           そのようなシステムというのは、Lenovo ThinkPads とか HP デスクトップ/ノートパソコンに見られる、かなり古いものです。
-          ブートエントリが BIOS 内にない場合、BLFS パッケージ <ulink
+          ブートエントリがファームウェアセットアップ時にない場合、BLFS パッケージ <ulink
           url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> をインストールして UEFI 向けのブートエントリを生成しないといけないかもしれません。
           簡易な方法として、ホストディストリビューションのパッケージマネージャーがそのパッケージに対応していて、それをインストールし、LFS システム上ではなくホストシステム上にて利用するということも考えられます。
           これが可能であれば、LFS システムに別パッケージを導入しなくても済みます。
@@ -423,15 +424,15 @@
 
 @x
           The <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal>
-          drive should match the one you are installing LFS onto. The
+          drive should be the device node for the disk where the ESP exists. The
           <replaceable>&lt;y&gt;</replaceable> partition number should match
-          the number which the ESP is mounted. If the ESP is on
+          the number of the ESP. If the ESP is on
           <literal>/dev/sda2</literal>, then the partition number would be
           <literal>2</literal>. If you are using 32-bit UEFI, replace
           <replaceable>&lt;X64&gt;</replaceable> with <literal>IA32</literal>.
 @y
-          <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal> の部分は LFS をインストールしている場所となるよう適切に記述してください。
-          またパーティション番号 <replaceable>&lt;y&gt;</replaceable> は、ESP をマウントしている番号に合わせてください。
+          <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal> の部分は ESP が存在している場所となるよう適切に記述してください。
+          またパーティション番号 <replaceable>&lt;y&gt;</replaceable> は、ESP の番号に合わせてください。
           ESP を <literal>/dev/sda2</literal> にしている場合、パーティション番号は <literal>2</literal> となります。
           32 ビット UEFI の設定時は <replaceable>&lt;X64&gt;</replaceable> の部分を <literal>IA32</literal> に置き換えてください。
 @z
@@ -486,8 +487,8 @@
       <systemitem class='filesystem'>ext4</systemitem> filesystems.
       On UEFI systems, <filename>efi_gop</filename> and
       <filename>efi_uga</filename> are for video support. GOP, or Graphics
-      Output Protocol, is the modern approach. UGA, or UGA Draw Protocol, is
-      a legacy way of handling it.
+      Output Protocol, is the modern approach. UGA, or Universal Graphics
+      Adaptor, is a legacy way of handling it.
       In a typical configuration, the <filename>part_gpt</filename> and
       <filename>ext2</filename> modules are already embedded in
       the main GRUB image by <command>grub-install</command>, and the
@@ -501,7 +502,7 @@
       class='filesystem'>ext3</systemitem>, <systemitem
       class='filesystem'>ext4</systemitem> の各ファイルシステムをサポートしています。
       UEFI システムでは <filename>efi_gop</filename> と <filename>efi_uga</filename> がビデオ機能をサポートします。
-      具体的には GOP (Graphics Output Protocol) を用いるのが最新式であり、UGA (UGA Draw Protocol) を用いるのがレガシーな方式です。
+      具体的には GOP (Graphics Output Protocol) を用いるのが最新式であり、UGA (Universal Graphics Adaptor) を用いるのがレガシーな方式です。
       通常の設定では <filename>part_gpt</filename> と <filename>ext2</filename> の各モジュールが、<command>grub-install</command> によって GRUB のメインイメージに埋め込まれています。
       したがってこれらのモジュールを <command>insmod</command> に対して用いても何も起きません。
       これは問題を引き起こすものではなく、特殊な設定を行った際には必要となるかもしれません。

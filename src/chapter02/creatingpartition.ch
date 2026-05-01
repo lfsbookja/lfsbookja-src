@@ -323,13 +323,13 @@
 @z
 
 @x
-    <para>A lot of UEFI systems have a Compatibility Support Mode (CSM) or
+    <para>A lot of UEFI systems have a Compatibility Support Module (CSM) or
     Legacy Boot option, allowing to boot with BIOS. It could be a good idea to
     create a Grub BIOS partition if your system supports CSM in case UEFI
     booting does not work as expected.</para>
 @y
     <para>
-    多くの UEFI システムには Compatibility Support Mode (CSM) あるいは Legacy Boot オプションが用意されていて、これにより BIOS を使ったブートが可能となります。
+    多くの UEFI システムには Compatibility Support Module (CSM) あるいは Legacy Boot オプションが用意されていて、これにより BIOS を使ったブートが可能となります。
     もし UEFI によるブートがうまく動作しない場合であって、システムが CSM をサポートしているのであれば、Grub BIOS パーティションを生成するのが有効かもしれません。
     </para>
 @z
@@ -511,61 +511,72 @@
 @x
   <title>An Example Disk Layout</title>
 @y
-  <title>An Example Disk Layout</title>
+  <title>ディスクレイアウト例</title>
 @z
 
 @x
   <para>Below is an example layout for an empty disk drive.</para>
 @y
-  <para>Below is an example layout for an empty disk drive.</para>
+  <para>
+  以下は空のディスクドライブに対するレイアウト例です。
+  </para>
 @z
 
 @x
   <para>The above example makes a few assumptions:
 @y
-  <para>The above example makes a few assumptions:
+  <para>
+  この例は以下を前提としています。
 @z
 
 @x
          <para>The partition table is a GUID Partition Table (GPT).</para>
 @y
-         <para>The partition table is a GUID Partition Table (GPT).</para>
+         <para>
+         パーティションテーブルは GUID パーティションテーブル (GPT) です。
+         </para>
 @z
 
 @x
          <para>Both EFI and BIOS Boot partitions are present, although
-         only one will be used. Which is used depends on the system BIOS.
+         only one will be used. Which is used depends on the system firmware.
          If the system is old, it will not have UEFI capabilities at all.
-         Some later systems can disable UEFI through the BIOS by disabling
+         Some later systems can disable UEFI through the firmware setup by disabling
          "Secure Boot" and enabling "Legacy Support" or "CSM" (Compatibility
-         Support Mode).  If you know in advance which mode you will use,
+         Support Module).  If you know in advance which mode you will use,
          the other partition can be omitted.</para>
 @y
-         <para>Both EFI and BIOS Boot partitions are present, although
-         only one will be used. Which is used depends on the system BIOS.
-         If the system is old, it will not have UEFI capabilities at all.
-         Some later systems can disable UEFI through the BIOS by disabling
-         "Secure Boot" and enabling "Legacy Support" or "CSM" (Compatibility
-         Support Mode).  If you know in advance which mode you will use,
-         the other partition can be omitted.</para>
+         <para>
+         EFI と BIOS の両ブートパーティションが存在しますが、利用されるのはどちらか一方です。
+         どちらが利用されるかはシステムファームウェア次第です。
+         システムが旧式である場合、UEFI 機能は全く存在しないでしょう。
+         より最新のシステムであっても、ファームウェアの設定において "Secure Boot" が無効になっており "Legacy Support" や "CSM" (Compatibility Support Module) が有効になっていると、UEFI が利用できない場合があります。
+         どちらのパーティションが利用されるのか、あらかじめ分かっているのであれば、無用なパーティションの生成を省略することができます。
+         </para>
 @z
 
 @x
          <para>The EFI partition must be formatted as VFAT.</para>
 @y
-         <para>The EFI partition must be formatted as VFAT.</para>
+         <para>
+         EFI パーティションは VFAT によりフォーマットされています。
+         </para>
 @z
 
 @x
          <para>The BIOS partition is not formatted.</para>
 @y
-         <para>The BIOS partition is not formatted.</para>
+         <para>
+         BIOS パーティションはフォーマットされていません。
+         </para>
 @z
 
 @x
-         <para>The swap partition must be formatted as swap.</para>
+         <para>The swap partition must be initialized.</para>
 @y
-         <para>The swap partition must be formatted as swap.</para>
+         <para>
+         swap パーティションは初期化されています。
+         </para>
 @z
 
 @x
@@ -573,17 +584,19 @@
          it is rarely written (and then only by root) and does
          not need a journal.</para>
 @y
-         <para>The /boot partition can be formatted as ext2 since
-         it is rarely written (and then only by root) and does
-         not need a journal.</para>
+         <para>
+         /boot パーティションは ext2 によりフォーマットされています。
+         書き込みがほぼなく (あったとしても root であり) ジャーナルを必要としないためです。
+         </para>
 @z
 
 @x
          <para>The recommendation for all other partitions is to use ext4 
          formatting.</para>
 @y
-         <para>The recommendation for all other partitions is to use ext4 
-         formatting.</para>
+         <para>
+         その他のパーティションはすべて ext4 フォーマットであることを推奨するものです。
+         </para>
 @z
 
 @x
@@ -592,8 +605,9 @@
          sufficient. If you are building the system using a LiveCD, a host 
          partition may not be required.</para>
 @y
-         <para>Another partition can be added for installing the "host"
-         system for building LFS. A minimal sized partition, 10 GiB, should be
-         sufficient. If you are building the system using a LiveCD, a host 
-         partition may not be required.</para>
+         <para>
+         別のパーティションを追加して LFS 構築のための「ホスト」システムをインストールすることもできます。
+         最小限として 10 GiB もあれば十分でしょう。
+         LiveCD を利用してシステムビルドを行うのであれば、ホスト向けのパーティションは不要でしょう。
+         </para>
 @z

@@ -192,6 +192,17 @@
 @z
 
 @x
+    Additionally, if you need to create a new ESP (EFI System Partition,
+    read <xref linkend='ch-partitioning-creatingfilesystem'/> for details),
+    <ulink url='&blfs-book;postlfs/dosfstools.html'>dosfstools</ulink> is
+    needed.
+@y
+    ESP (EFI システムパーティション、<xref
+    linkend='ch-partitioning-creatingfilesystem'/> にて詳述) の生成を必要とする場合には <ulink
+    url='&blfs-book;postlfs/dosfstools.html'>dosfstools</ulink> が必要です。
+@z
+
+@x
     <para>Note that the symlinks mentioned above are required to build an LFS
     system using the instructions contained within this book. Symlinks that
     point to other software (such as dash, mawk, etc.) may work, but are not

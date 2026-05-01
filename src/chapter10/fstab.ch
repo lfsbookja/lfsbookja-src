@@ -96,20 +96,26 @@
 @z
 
 @x
-    When installing GRUB with UEFI, the ESP must be formatted as a FAT filesystem, most
-    commonly VFAT. This file sees it as VFAT regardless. An example of how you
-    would go about an entry for the ESP would look like this:
+    When installing GRUB with UEFI, the ESP must be formatted as a FAT file
+    system (EXFAT should not be considered one).
+    In the Linux kernel the VFAT driver handles all the FAT file systems,
+    so this file will contain <literal>vfat</literal> regardless.
+    An example of how you would go about an entry for the ESP would look
+    like this:
 @y
-    UEFI を使った GRUB をインストールしている場合、ESP は FAT ファイルシステムでフォーマットされていなければなりません。
-    ごく普通には VFAT とします。
-    このファイルは実際がどうであれ VFAT として認識します。
+    UEFI を使った GRUB をインストールしている場合、ESP は FAT ファイルシステムでフォーマットされていなければなりません (EXFAT は除きます)。
+    Linux カーネルにおける VFAT ドライバーは、あらゆる FAT ファイルシステムを取り扱います。
+    したがってこのファイルには <literal>vfat</literal> を含むことになります。
     ESP に対するエントリとして記述すべき内容は、およそ以下のようになります。
+
+    
 @z
 
 @x
     The <literal>iso8859-1</literal> IO charset is used here as we'll
     enable it as a part of the kernel UEFI configuration in
-    <xref linkend='ch-bootable-kernel'/>.  Technically the IO charset should
+    <xref linkend='ch-bootable-kernel' role='.'/>
+    Technically the IO charset should
     match your locale as we've discussed above.  However the name of all the
     files in the ESP only contains 7-bit ASCII characters, so things will
     be OK as long as the character set for your locale treats 7-bit ASCII
@@ -129,7 +135,7 @@
       The system uses this partition before the kernel is loaded and is not used
       otherwise.  An alternative to adding this entry to the fstab file is to
       manually mount it before running <command>grub-install</command> below
-      in <xref linkend="ch-bootable-grub"/>.
+      in <xref linkend="ch-bootable-grub" role='.'/>
 @y
       EFI ファイルシステムは GRUB のインストール時にのみマウントが必要となります。
       システムはこのパーティションを、カーネルがロードされる前に利用し、それ以降は利用しません。

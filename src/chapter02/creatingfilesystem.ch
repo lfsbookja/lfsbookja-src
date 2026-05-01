@@ -115,8 +115,9 @@
 @z
 
 @x
-  <para>If you are using an existing <systemitem class="filesystem">swap
-  </systemitem> partition, there is no need to format it. If a new
+  <para>If you are using an existing
+  <systemitem class="filesystem">swap</systemitem> partition, there is no
+  need to format it. If a new
   <systemitem class="filesystem">swap</systemitem> partition was created,
   it will need to be initialized with this command:</para>
 @y

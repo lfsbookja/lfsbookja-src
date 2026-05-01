@@ -143,19 +143,11 @@
 @z
 
 @x
-    <para>First, if you built GRUB from any of the sections above,
+    <para>First, if you built GRUB from the section above,
     clean the source tree:</para>
 @y
     <para>
     まず前節に示す GRUB ビルドを行っているなら、ソースツリーをきれいにしておきます。
-    </para>
-@z
-
-@x
-    <para>Fix a bug introduced in grub-2.14:</para>
-@y
-    <para>
-    はじめに grub-2.14 におけるバグを修正します。
     </para>
 @z
 
@@ -233,14 +225,6 @@
 @y
     <para>
     まず前節に示す GRUB ビルドを行っているなら、ソースツリーをきれいにしておきます。
-    </para>
-@z
-
-@x
-    <para>Fix a bug introduced in grub-2.14:</para>
-@y
-    <para>
-    はじめに grub-2.14 におけるバグを修正します。
     </para>
 @z
 
