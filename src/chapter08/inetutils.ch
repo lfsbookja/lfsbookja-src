@@ -102,15 +102,6 @@
 @z
 
 @x
-    <para>One test named <filename>libls.sh</filename> is known to
-    fail sometimes.</para>
-@y
-    <para>
-    <filename>libls.sh</filename> というテストが場合によっては失敗することがあります。
-    </para>
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

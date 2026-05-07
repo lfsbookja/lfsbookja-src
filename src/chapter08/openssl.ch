@@ -68,9 +68,14 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package (setting an empty
+    <envar>INSTALL_LIBS</envar> prevents the installation of static
+    libraries):</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    &InstallThePackage;
+    (<envar>INSTALL_LIBS</envar> を空に設定することで、スタティックライブラリをインストールしないようにします。)
+    </para>
 @z
 
 @x

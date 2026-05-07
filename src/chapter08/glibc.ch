@@ -245,10 +245,11 @@
         model (for example
         <emphasis>elf/tst-cpu-features-cpuinfo</emphasis>) or host kernel
         version (for example
-        <emphasis>stdlib/tst-arc4random-thread</emphasis>).</para>
+        <emphasis>stdlib/tst-arc4random-thread</emphasis>), or with a
+        host kernel newer than &linux-version;.</para>
 @y
         <para>
-        さらに CPU モデルが古い場合に (たとえば <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> が)、またホストのカーネルバージョンが古い場合に (たとえば <emphasis>stdlib/tst-arc4random-thread</emphasis> が)、それぞれ失敗することがあります。
+        さらに CPU モデルが古い場合に (たとえば <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> など)、ホストのカーネルバージョンが古い場合や (たとえば <emphasis>stdlib/tst-arc4random-thread</emphasis> など)、ホストのカーネルバージョンが &linux-version; よりも新しい場合に、失敗するテストが出てくることがあります。
         </para>
 @z
 

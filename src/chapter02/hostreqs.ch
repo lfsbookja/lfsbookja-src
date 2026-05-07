@@ -75,6 +75,28 @@
 @z
 
 @x
+   <warning><para>Be aware that GCC newer than &gcc-version; or Binutils
+   newer than &binutils-version; are not tested.  Especially, GCC newer than
+   &gcc-version; is expected to be highly likely to break the build of this
+   LFS release.  Do not report such a breakage to the LFS editors.  Try
+   reading a newer release of the LFS book (if one exists), or using an
+   older host distro, or downgrading GCC (if the host distro supports to do
+   so), or reading the latest LFS development book (if it still does not
+   support GCC &gcc-version; or newer, wait for the editors to update the
+   book for 2 or 4 weeks).</para></warning>
+@y
+   <warning><para>
+   GCC のバージョン &gcc-version; 以降、Binutils のバージョン &binutils-version; 以降はテストを行っていないため注意してください。
+   特に GCC バージョン &gcc-version; 以降は、LFS 本リリースのビルドに失敗する可能性が高くなっています。
+   この失敗に関しては LFS 編集者に報告しないでください。
+   その場合は、LFS の最新リリース (存在する場合) を試してみてください。
+   あるいは古いホストディストロを用いるか、(そのディストロが GCC のダウングレードに対応している場合に ) GCC をダウングレードして試してみてください。
+   また最新の LFS ブック開発版も試してください。
+   仮にその版が GCC &gcc-version; またはそれ以降に対応していなかった場合は、編集者が最新に更新するまで 2 週間あるいは 4 週間は待ってください。
+   </para></warning>
+@z
+
+@x
       <para><emphasis role="strong">Bash-3.2</emphasis> (/bin/sh
       should be a symbolic or hard link to bash)</para>
 @y
@@ -85,11 +107,11 @@
 
 @x
       <para><emphasis role="strong">Binutils-2.13.1</emphasis> (Versions
-      greater than &binutils-version; are not recommended as they have
+      greater than &binutils-version; may not work as they have
       not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">Binutils-2.13.1</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">Binutils-2.13.1</emphasis> (&binutils-version; 以上のバージョンは、テストしていないため動作しないかもしれません。)
       </para>
 @z
 
@@ -113,14 +135,14 @@
 
 @x
       <para><emphasis role="strong">GCC-5.4</emphasis> including the C++
-      compiler, <command>g++</command> (Versions greater than &gcc-version; are
-      not recommended as they have not been tested). C and C++ standard
+      compiler, <command>g++</command> (Versions greater than &gcc-version;
+      may not work as they have not been tested). C and C++ standard
       libraries (with headers) must also be present so the C++ compiler can
       build hosted programs</para>
 @y
       <para>
       <emphasis role="strong">GCC-5.4</emphasis> と C++ コンパイラーである <command>g++</command>
-      (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      (&gcc-version; 以上のバージョンは、テストしていないため動作しないかもしれません。)
       ホストされたプログラムを C++ コンパイラーがビルドできるように、C および C++ の標準ライブラリ（ヘッダーを含む）が存在しなければなりません。
       </para>
 @z

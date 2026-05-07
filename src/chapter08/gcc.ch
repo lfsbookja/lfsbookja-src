@@ -152,6 +152,19 @@
           </para>
 @z
 
+@x --enable-targets=all
+          <para>This switch tells GCC to enable 64-bit code generation
+          support even if we are building it for a 32-bit system.
+          It's needed to build GRUB for 64-bit UEFI.  This switch has no
+          effect if building for 64-bit.</para>
+@y
+          <para>
+          本スイッチは、32 ビット向けのシステムをビルドしている場合であっても、GCC に対して 64 ビットコードの生成を指示するものです。
+          これは GRUB の 64 ビット UEFI をビルドを行う場合に必要となります。
+          64 ビットシステムをビルドしている場合に、本スイッチは何の効果もありません。
+          </para>
+@z
+
 @x
     <note>
       <anchor id="pie-ssp-info" xreflabel="note on PIE and SSP"/>
@@ -295,7 +308,7 @@
     to fail.</para>
 @y
     <para>
-    <filename>analyzer/strchr-1.c</filename>> に関係するテスト 5 つが失敗します。
+    <filename>analyzer/strchr-1.c</filename> に関係するテスト 5 つが失敗します。
     </para>
 @z
 

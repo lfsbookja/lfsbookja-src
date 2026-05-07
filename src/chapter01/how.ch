@@ -50,6 +50,16 @@
 @z
 
 @x
+  <note><para>The host distro must satisfy
+  <xref linkend='ch-partitioning-hostreqs'/>.</para></note>
+@y
+  <note><para>
+  ホストディストリビューションは <xref
+  linkend='ch-partitioning-hostreqs'/> に示す要件を満たす必要があります。
+  </para></note>
+@z
+
+@x
     <para>The LFS LiveCD might not work on newer hardware configurations,
     failing to boot or failing to detect some devices such as some SATA hard
     drives.</para>
