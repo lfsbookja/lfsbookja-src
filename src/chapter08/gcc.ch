@@ -19,14 +19,6 @@
 @z
 
 @x
-    <para>First, make a fix required by glibc-2.43 and later:</para>
-@y
-    <para>
-    glibc-2.43 に対して必要となる修正を行います。
-    </para>
-@z
-
-@x
     <para>If building on x86_64, change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
@@ -240,14 +232,6 @@
 @z
 
 @x
-    <para>Now remove several known test failures:</para>
-@y
-    <para>
-    失敗するテストをいくつか削除します。
-    </para>
-@z
-
-@x
     <para>Test the results as a non-privileged user, but do not stop at errors:</para>
 @y
     <para>
@@ -286,44 +270,74 @@
 @z
 
 @x
-    <para>Four tests related to <filename>pr90579.c</filename> are known
-    to fail.</para>
+    <para>In the <filename class='directory'>gcc.target/i386</filename>
+    tests, the tests named
+    <filename>auto-init-padding-9.c</filename>,
+    <filename>builtin-memmove-*.c</filename>,
+    <filename>mem{cpy,set}-pr120683-*.c</filename>,
+    <filename>pr111657-1.c</filename>,
+    <filename>pr115102.c</filename>,
+    <filename>pr116896.c</filename>,
+    <filename>pr120881-2a.c</filename>, and
+    <filename>pr122343-4a.c</filename> are known to fail.
+    The test named <filename>shift-gf2p8affine-2.c</filename> is known
+    to fail if the processor does not support AVX512.</para>
 @y
     <para>
-    <filename>pr90579.c</filename> に関係するテスト 4 つが失敗します。
+    <filename class='directory'>gcc.target/i386</filename> テストの中で、
+    <filename>auto-init-padding-9.c</filename>,
+    <filename>builtin-memmove-*.c</filename>,
+    <filename>mem{cpy,set}-pr120683-*.c</filename>,
+    <filename>pr111657-1.c</filename>,
+    <filename>pr115102.c</filename>,
+    <filename>pr116896.c</filename>,
+    <filename>pr120881-2a.c</filename>,
+    <filename>pr122343-4a.c</filename> というテストが失敗します。
+    また <filename>shift-gf2p8affine-2.c</filename> というテストは、プロセッサーが AVX512 をサポートしていない場合に失敗します。
     </para>
 @z
 
 @x
-    <para>Eight tests related to <filename>builtin-math-6.c</filename> are
-    known to fail.</para>
+    <para>In the <filename class='directory'>g++.target/i386</filename>
+    tests, the tests named
+    <filename>memset-pr108585-1{a,b}.C</filename>,
+    <filename>mv{,c}-symbols*.C</filename>,
+    <filename>pr112824-2.C</filename>, and
+    <filename>pr116896-1.C</filename> are known to fail.</para>
 @y
     <para>
-    <filename>builtin-math-6.c</filename> に関連する 8 つのテストが失敗します。
+    <filename class='directory'>g++.target/i386</filename> テストの中で
+    <filename>memset-pr108585-1{a,b}.C</filename>,
+    <filename>mv{,c}-symbols*.C</filename>,
+    <filename>pr112824-2.C</filename>,
+    <filename>pr116896-1.C</filename> というテストが失敗します。
     </para>
 @z
 
 @x
-    <para>Five tests related to <filename>analyzer/strchr-1.c</filename> are known
-    to fail.</para>
+    <para>Additionally, the tests
+    <filename>gcc.dg/ipa/pr122458.c</filename>,
+    <filename>gcc.dg/lto/toplevel-*-asm-*</filename>, and
+    <filename>gcc.dg/plugin/crash-test-nested-*.c</filename> are known to
+    fail.</para>
 @y
     <para>
-    <filename>analyzer/strchr-1.c</filename> に関係するテスト 5 つが失敗します。
+    また
+    <filename>gcc.dg/ipa/pr122458.c</filename>,
+    <filename>gcc.dg/lto/toplevel-*-asm-*</filename>,
+    <filename>gcc.dg/plugin/crash-test-nested-*.c</filename> というテストが失敗します。
     </para>
 @z
 
 @x
-    <para>Four tests in libstdc++, <filename>17_intro/badnames.cc</filename>,
-    <filename>17_intro/names.cc</filename>,
-    <filename>17_intro/names_fortify.cc</filename>, and
-    <filename>experimental/names.cc</filename>, are known to fail due to changes
-    with glibc-2.43.</para>
+    <para>The LFS editors have investigated those failures and confirmed
+    none indicates a critical issue.  Most of them are because the test case
+    author did not anticipate <parameter>--enable-default-ssp</parameter> or
+    <parameter>--enable-default-pie</parameter>.</para>
 @y
     <para>
-    libstdc++ の中にある 4 つのテスト、<filename>17_intro/badnames.cc</filename>,
-    <filename>17_intro/names.cc</filename>,
-    <filename>17_intro/names_fortify.cc</filename>,
-    <filename>experimental/names.cc</filename> が glibc-2.43 への変更に伴って失敗します。
+    LFS 編集者による上記の失敗に対する調査においては、いずれも重大な問題はないことを確認しています。
+    そのほとんどはテストケースの作成者が、<parameter>--enable-default-ssp</parameter> または <parameter>--enable-default-pie</parameter> の指定を想定していないためです。
     </para>
 @z
 

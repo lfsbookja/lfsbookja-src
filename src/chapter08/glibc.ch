@@ -43,10 +43,10 @@
 @z
 
 @x
-    <para>Now fix an issue which may break Valgrind in BLFS:</para>
+    <para>Now add some fixes to address buildng and testing with Linux 7:</para>
 @y
     <para>
-    BLFS における Valgrind に不備を起こす問題を修正します。
+    Linux 7 でのビルドとテストに対処するための修正を追加します。
     </para>
 @z
 

@@ -23,10 +23,10 @@
 @z
 
 @x
-    <para>First, apply a security patch for issues identified upstream:</para>
+    <para>First, apply a patch for compatibility with OpenSSL 4:</para>
 @y
     <para>
-    はじめにアップストリームが認識する問題を修正するためのセキュリティパッチを適用します。
+    はじめに OpenSSL 4 との互換性のためパッチを適用します。
     </para>
 @z
 

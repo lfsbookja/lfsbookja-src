@@ -67,7 +67,7 @@
         <para>&Download;: <ulink url="&patches-root;&expect-gcc15-patch;"/></para>
 @z
 
-@x Glibc Upstream Fix Patch
+@x Glibc Linux7 Fix Patch
         <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
@@ -103,7 +103,7 @@
         <para>&Download;: <ulink url="&patches-root;&perl-upstream-fix-patch;"/></para>
 @z
 
-@x Python Security Fix Patch
+@x Python OpenSSL 4 Patch
         <para>Download: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
@@ -115,7 +115,7 @@
         <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
 @z
 
-@x Systemd Upstream Fixes Patch
+@x Systemd OpenSSL 4 Patch
         <para>Download: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>

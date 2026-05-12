@@ -19,6 +19,13 @@
 @z
 
 @x
+      First apply a patch to adjust the package to build and function 
+      against OpenSSL-4:
+@y
+      OpenSSL-4 に対応してパッケージをビルドできるように調整するパッチを適用します。
+@z
+
+@x
     <para>Remove two unneeded groups,
     <systemitem class="groupname">render</systemitem> and
     <systemitem class="groupname">sgx</systemitem>, from the default udev

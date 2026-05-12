@@ -38,6 +38,106 @@
 @z
 
 @x
+      <para>2026-05-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.2.0461 (Security Update). Fixes
+          <ulink url='&lfs-ticket-root;5938'>#5938</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-3.53.2. Fixes
+          <ulink url='&lfs-ticket-root;5929'>#5929</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.14.5. Fixes
+          <ulink url='&lfs-ticket-root;5931'>#5931</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-4.0.0. Fixes
+          <ulink url='&lfs-ticket-root;5912'>#5912</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.0.5. Fixes
+          <ulink url='&lfs-ticket-root;5917'>#5917</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20260604. Addresses
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add Python-3.14.5 linux7 build patch. Addresses
+          <ulink url='&lfs-ticket-root;5931'>#5931</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add glibc linux7 fixes patch (Security Fix). Fixes
+          <ulink url='&lfs-ticket-root;5930'>#5930</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add systemd openssl4 build patch. Addresses
+          <ulink url='&lfs-ticket-root;5912'>#5912</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-05-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-9.2.0461 (Security Update) へのアップデート。
+          <ulink url='&lfs-ticket-root;5938'>#5938</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sqlite-3.53.2 へのアップデート。
+          <ulink url='&lfs-ticket-root;5929'>#5929</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.14.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5931'>#5931</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-4.0.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5912'>#5912</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-7.0.5 へのアップデート。
+          <ulink url='&lfs-ticket-root;5917'>#5917</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20260604 へのアップデート。
+          <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.14.5 linux7 build patch の追加。
+          <ulink url='&lfs-ticket-root;5931'>#5931</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc linux7 fixes patch (セキュリティフィックス) の追加。
+          <ulink url='&lfs-ticket-root;5930'>#5930</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd openssl4 build patch の追加。
+          <ulink url='&lfs-ticket-root;5912'>#5912</ulink> にて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2026-05-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-16.1.0.  Fixes
+          <ulink url='&lfs-ticket-root;5927'>#5927</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-05-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gcc-16.1.0 へのアップデート。
+          <ulink url='&lfs-ticket-root;5927'>#5927</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-05-01</para>
       <itemizedlist>
         <listitem>

@@ -59,6 +59,14 @@
 @z
 
 @x
+    <para>Now fix glibc to build against Linux 7.</para>
+@y
+    <para>
+    Linux 7 を用いたビルドに対応するため glibc を修正します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc
     in a dedicated build directory:</para>
 @y

@@ -75,25 +75,46 @@
 @z
 
 @x
-   <warning><para>Be aware that GCC newer than &gcc-version; or Binutils
-   newer than &binutils-version; are not tested.  Especially, GCC newer than
-   &gcc-version; is expected to be highly likely to break the build of this
-   LFS release.  Do not report such a breakage to the LFS editors.  Try
-   reading a newer release of the LFS book (if one exists), or using an
-   older host distro, or downgrading GCC (if the host distro supports to do
-   so), or reading the latest LFS development book (if it still does not
-   support GCC &gcc-version; or newer, wait for the editors to update the
-   book for 2 or 4 weeks).</para></warning>
+       Be aware that GCC newer than &gcc-version;
+       or Binutils newer than &binutils-version; are not tested.
+       A newer GCC is highly likely to break the build of this
+       LFS release.  Do not report such a breakage to the LFS editors.
+       If your host distro has newer versions of these packages, you
+       have several options:
 @y
-   <warning><para>
-   GCC のバージョン &gcc-version; 以降、Binutils のバージョン &binutils-version; 以降はテストを行っていないため注意してください。
-   特に GCC バージョン &gcc-version; 以降は、LFS 本リリースのビルドに失敗する可能性が高くなっています。
-   この失敗に関しては LFS 編集者に報告しないでください。
-   その場合は、LFS の最新リリース (存在する場合) を試してみてください。
-   あるいは古いホストディストロを用いるか、(そのディストロが GCC のダウングレードに対応している場合に ) GCC をダウングレードして試してみてください。
-   また最新の LFS ブック開発版も試してください。
-   仮にその版が GCC &gcc-version; またはそれ以降に対応していなかった場合は、編集者が最新に更新するまで 2 週間あるいは 4 週間は待ってください。
-   </para></warning>
+       GCC のバージョン &gcc-version; 以降、Binutils のバージョン &binutils-version; 以降はテストを行っていないため注意してください。
+       より最新の GCC は LFS 本リリースのビルドに失敗する可能性が高くなっています。
+       この失敗に関しては LFS 編集者に報告しないでください。
+       利用しているホストディストリビューションがその最新版を提供しているのであれば、以下の方法を取ることができます。
+@z
+
+@x
+           <simpara>Use a newer release of the LFS book if one exists</simpara>
+@y
+           <simpara>最新版が存在するのであれば、より最新のものを利用します。</simpara>
+@z
+
+@x
+           <simpara>Use an older host distro</simpara>
+@y
+           <simpara>古いホストディストリビューションを利用します。</simpara>
+@z
+
+@x
+           <simpara>Downgrade GCC if that is supported by the host distro</simpara>
+@y
+           <simpara>ホストディストリビューションが GCC のダウングレードに対応している場合はダウングレードします。</simpara>
+@z
+
+@x
+           <simpara>Use the latest LFS development book. Updates to the
+           latest version of packages in LFS are usually added within two
+           to four weeks after release.</simpara>
+@y
+           <simpara>
+           最新の LFS 開発版を利用します。
+           LFS においては各種パッケージの最新版への更新は、そのリリースの 2 週間後、または 4 週間後以内に行われます。
+           </simpara>
 @z
 
 @x
