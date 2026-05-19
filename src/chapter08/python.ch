@@ -31,6 +31,14 @@
 @z
 
 @x
+    <para>Next, fix two security vulnerabilities:</para>
+@y
+    <para>
+    次に 2 つのセキュリティぜい弱性を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Python for compilation:</para>
 @y
     <para>&PreparePackage1;Python&PreparePackage2;</para>

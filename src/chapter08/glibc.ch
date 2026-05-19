@@ -22,14 +22,6 @@
 @z
 
 @x
-    <para>First, apply a fix to DNS processing from upstream:</para>
-@y
-    <para>
-    はじめにアップストリームによる DNS 処理への修正を適用します。
-    </para>
-@z
-
-@x
     <para>Some of the Glibc programs use the non-FHS compliant
     <filename class="directory">/var/db</filename> directory to store
     their runtime data. Apply the following patch to make such programs
@@ -43,10 +35,13 @@
 @z
 
 @x
-    <para>Now add some fixes to address buildng and testing with Linux 7:</para>
+    <para>Now add some fixes to address building and testing with Linux 7,
+    and fix 5 security vulnerabilities found after the glibc-2.43
+    release:</para>
 @y
     <para>
     Linux 7 でのビルドとテストに対処するための修正を追加します。
+    また glibc-2.43 のリリース以降に見つかった 5 つのセキュリティぜい弱性を修正します。
     </para>
 @z
 

@@ -59,10 +59,21 @@
 @z
 
 @x
-    <para>Now fix glibc to build against Linux 7.</para>
+    <para>Now fix glibc to build against Linux 7:</para>
 @y
     <para>
     Linux 7 を用いたビルドに対応するため glibc を修正します。
+    </para>
+@z
+
+@x
+    <para>The patch applied above also contains fixes of some security
+    vulnerabilities.  The fix is not needed but also harmless for a temporary
+    glibc installation.</para>
+@y
+    <para>
+    上で適用したパッチには、セキュリティぜい弱性への対処も含んでいます。
+    この一時システムにおける glibc のインストールにおいて、この修正は必要なものではありませんが、適用しても問題はありません。
     </para>
 @z
 

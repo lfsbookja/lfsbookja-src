@@ -104,6 +104,12 @@
 @z
 
 @x Python OpenSSL 4 Patch
+        <para>Download: <ulink url="&patches-root;&python-openssl4-fixes-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&python-openssl4-fixes-patch;"/></para>
+@z
+
+@x Python Security Fixes Patch
         <para>Download: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>

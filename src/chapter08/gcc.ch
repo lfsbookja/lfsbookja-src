@@ -319,13 +319,15 @@
     <filename>gcc.dg/ipa/pr122458.c</filename>,
     <filename>gcc.dg/lto/toplevel-*-asm-*</filename>, and
     <filename>gcc.dg/plugin/crash-test-nested-*.c</filename> are known to
-    fail.</para>
+    fail.  The test <filename>g++.dg/gomp/deprecate-1.C</filename> is known
+    to fail sometimes.</para>
 @y
     <para>
     また
     <filename>gcc.dg/ipa/pr122458.c</filename>,
     <filename>gcc.dg/lto/toplevel-*-asm-*</filename>,
     <filename>gcc.dg/plugin/crash-test-nested-*.c</filename> というテストが失敗します。
+    <filename>g++.dg/gomp/deprecate-1.C</filename> については失敗するときがあります。
     </para>
 @z
 
