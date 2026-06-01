@@ -67,7 +67,7 @@
         <para>&Download;: <ulink url="&patches-root;&expect-gcc15-patch;"/></para>
 @z
 
-@x Glibc Linux7 Fix Patch
+@x Glibc Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>

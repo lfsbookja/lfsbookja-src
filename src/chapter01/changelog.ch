@@ -38,6 +38,100 @@
 @z
 
 @x
+      <para>2026-06-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-260.2. Fixes
+          <ulink url="&lfs-ticket-root;5944">#5944</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kbd-2.10.0. Fixes
+          <ulink url="&lfs-ticket-root;5943">#5943</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.42.1. Fixes
+          <ulink url="&lfs-ticket-root;5939">#5939</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-702. Fixes
+          <ulink url="&lfs-ticket-root;5941">#5941</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.2.0567 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;5940">#5940</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20260529. Addresses
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-06-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd-260.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5944">#5944</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kbd-2.10.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5943">#5943</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.42.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5939">#5939</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-702 へのアップデート。
+          <ulink url="&lfs-ticket-root;5941">#5941</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.2.0567 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;5940">#5940</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20260529 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> にて言及。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2026-05-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.0.10 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;5942">#5942</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-05-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-7.0.10 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;5942">#5942</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2026-05-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.0.9 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;5928">#5928</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-05-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-7.0.9 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;5928">#5928</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-05-18</para>
       <itemizedlist>
         <listitem>
@@ -131,7 +225,7 @@
           <ulink url='&lfs-ticket-root;5917'>#5917</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to iana-etc-20260604. Addresses
+          <para>[bdubbs] - Update to iana-etc-20260504. Addresses
           <ulink url='&lfs-ticket-root;5006'>#5006</ulink>.</para>
         </listitem>
         <listitem>
@@ -170,7 +264,7 @@
           <ulink url='&lfs-ticket-root;5917'>#5917</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - iana-etc-20260604 へのアップデート。
+          <para>[bdubbs] - iana-etc-20260504 へのアップデート。
           <ulink url='&lfs-ticket-root;5006'>#5006</ulink> にて言及。</para>
         </listitem>
         <listitem>

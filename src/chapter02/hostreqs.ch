@@ -146,6 +146,14 @@
 @z
 
 @x
+      <para><emphasis role="strong">GNU Coreutils-8.1</emphasis> or
+            <emphasis role="strong">Uutils Coreutils-0.8</emphasis></para>
+@y
+      <para><emphasis role="strong">GNU Coreutils-8.1</emphasis> または
+            <emphasis role="strong">Uutils Coreutils-0.8</emphasis></para>
+@z
+
+@x
       <para><emphasis role="strong">Gawk-4.0.1</emphasis> (/usr/bin/awk
       should be a link to gawk)</para>
 @y
