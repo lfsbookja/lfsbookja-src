@@ -53,15 +53,6 @@
 @z
 
 @x
-    <para>Override the build rules of the libgcc and libstdc++ headers to
-    allow building these libraries with POSIX threads support:</para>
-@y
-    <para>
-    libgcc と libstdc++ のヘッダーのビルドルールを変更して、これらのライブラリに対して POSIX スレッドサポートを含めてビルドするようにします。
-    </para>
-@z
-
-@x
     <para>Create a separate build directory again:</para>
 @y
     <para>
@@ -90,24 +81,6 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title><!-- WIP -->
 @z
 
-@x -with-build-sysroot=$LFS
-          <para>Normally, using <parameter>--host</parameter> ensures that
-          a cross-compiler is used for building GCC, and that compiler knows
-          that it has to look for headers and libraries in <filename
-          class="directory">$LFS</filename>. However, the build system for GCC
-          uses additional tools which are not aware of this location. This
-          switch is needed so those tools will find the needed files in
-          <filename class="directory">$LFS</filename>, and not on the host.</para>
-@y
-          <para>
-          通常は <parameter>--host</parameter> を用いれば、GCC ビルドにクロスコンパイラーが用いられ、参照すべきヘッダーやライブラリも <filename
-          class="directory">$LFS</filename> にあるものが用いられるように指示されます。
-          しかし GCC 向けのビルドシステムは追加のツールを使っているので、上のような場所を認識できていません。
-          本スイッチは、そのツール類が必要とするファイルを、ホスト内からではなく、<filename
-          class="directory">$LFS</filename> から探し出すようにします。
-          </para>
-@z
-
 @x --target=$LFS_TGT
           <para>We are cross-compiling GCC, so it's impossible to build
           target libraries (<filename class="libraryfile">libgcc</filename>
@@ -132,6 +105,39 @@
           </para>
 @z
 
+
+@x -with-build-sysroot=$LFS
+          <para>Normally, using <parameter>--host</parameter> ensures that
+          a cross-compiler is used for building GCC, and that compiler knows
+          that it has to look for headers and libraries in <filename
+          class="directory">$LFS</filename>. However, the build system for GCC
+          uses additional tools which are not aware of this location. This
+          switch is needed so those tools will find the needed files in
+          <filename class="directory">$LFS</filename>, and not on the host.</para>
+@y
+          <para>
+          通常は <parameter>--host</parameter> を用いれば、GCC ビルドにクロスコンパイラーが用いられ、参照すべきヘッダーやライブラリも <filename
+          class="directory">$LFS</filename> にあるものが用いられるように指示されます。
+          しかし GCC 向けのビルドシステムは追加のツールを使っているので、上のような場所を認識できていません。
+          本スイッチは、そのツール類が必要とするファイルを、ホスト内からではなく、<filename
+          class="directory">$LFS</filename> から探し出すようにします。
+          </para>
+@z
+
+@x --disable-libsanitizer
+          <para>Disable GCC sanitizer runtime libraries.  They are not
+          needed for the temporary installation.  In
+          <xref linkend='ch-tools-gcc-pass1'/> it was implied by
+          <parameter>--disable-libstdcxx</parameter>, and now we can
+          explicitly pass it.</para>
+@y
+          <para>
+          GCC のサニタイザーランタイムライブラリを無効にします。
+          これはここでの一時的インストールにおいては不要です。
+          <xref linkend='ch-tools-gcc-pass1'/> においては、<parameter>--disable-libstdcxx</parameter> によって暗にそれを行っていましたが、ここではそれを明示的に行う必要があります。
+          </para>
+@z
+
 @x LDFLAGS_FOR_TARGET=...
           <para>Allow <filename class="libraryfile">libstdc++</filename> to
           use the <filename class="libraryfile">libgcc</filename> being
@@ -149,17 +155,17 @@
           </para>
 @z
 
-@x --disable-libsanitizer
-          <para>Disable GCC sanitizer runtime libraries.  They are not
-          needed for the temporary installation.  In
-          <xref linkend='ch-tools-gcc-pass1'/> it was implied by
-          <parameter>--disable-libstdcxx</parameter>, and now we can
-          explicitly pass it.</para>
+@x target_configargs=gcc_cv_target_thread_file=posix
+          <para>Build the target libraries libgcc and libstdc++ with POSIX
+          thread support enabled.  The default is following the
+          configuration of the compiler used for building the target library
+          (in this case, <xref linkend='ch-tools-gcc-pass1'/> which was
+          configured with none thread support).</para>
 @y
           <para>
-          GCC のサニタイザーランタイムライブラリを無効にします。
-          これはここでの一時的インストールにおいては不要です。
-          <xref linkend='ch-tools-gcc-pass1'/> においては、<parameter>--disable-libstdcxx</parameter> によって暗にそれを行っていましたが、ここではそれを明示的に行う必要があります。
+          ビルド対象ライブラリである libgcc と libstdc++ を POSIX スレッドサポートを有効にしてビルドします。
+          デフォルトは対象ライブラリのビルドに際して指定されたコンパイラー設定に従います。
+          (その場合は <xref linkend='ch-tools-gcc-pass1'/> に従うこととなり、それはスレッドサポートがないものとなります。)
           </para>
 @z
 

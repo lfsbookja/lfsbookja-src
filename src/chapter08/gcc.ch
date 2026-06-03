@@ -44,39 +44,40 @@
 @x
     <para>We only enable C and C++ here to save the build time as no
     packages in LFS and BLFS require GCC to compile other languages. Append
-    <literal>cobol</literal> for Cobol (note that it will cause GCC fail
-    to build on a 32-bit LFS system),
+    <literal>algol68</literal> for Algol 68,
     <literal>fortran</literal> for Fortran,
     <literal>go</literal> for Go,
     <literal>objc</literal> for Objective C,
     <literal>obj-c++</literal> for Objective C++, and/or
     <literal>m2</literal> for Modula 2 into the value of
     <parameter>--enable-languages</parameter> option if you want to compile
-    programs in one or more of those languages with GCC.  GCC also supports
-    Ada and D, but the code to support Ada or D is written in Ada or D
-    itself, so the support can only be built with an existing Ada or D
-    compiler installation and we cannot enable the support here.</para>
+    programs in one or more of those languages with GCC.</para>
 @y
-    <para>
-    GCC では 7 つのコンピューター言語をサポートしていますが、それらのほとんどが必要としている依存パッケージは、まだこの時点でインストールしていません。
-    GCC がサポートする他のコンピューター言語の構築方法については <ulink
-    url="&blfs-book;general/gcc.html">BLFS ブック</ulink> の説明を参照してください。
-    </para>
-
     <para>
     ここで有効にするのは C と C++ のみです。
     ビルド時間を節約する目的があり、また LFS や BLFS において GCC が他の言語を必要とするパッケージが存在しないからです。
     GCC においてさらに言語を増やしてプログラムコンパイルを行いたい場合は <parameter>--enable-languages</parameter> オプションにそれぞれ以下を追加してください。
-    Cobol に対して <literal>cobol</literal> (32 ビット LFS システム上においてビルドすると GCC がエラーとなります)、
+    Algol 68 に対して <literal>algol68</literal>、
     Fortran に対して <literal>fortran</literal>、
     Go に対して <literal>go</literal>、
     Objective C に対して <literal>objc</literal>、
     Objective C++ に対して <literal>obj-c++</literal>、
     Modula 2 に対して <literal>m2</literal>。
-    GCC ではさらに Ada と D をサポートします。
-    ただしそれをサポートするコードは Ada あるいは D そのものによって書かれています。
-    したがってこのサポートを含めてビルドするには、あらかじめ Ada あるいは D コンパイラーがインストールされていないければなりません。
-    ここではそのサポートを有効にすることはできません。
+    </para>
+@z
+
+@x
+    <para>GCC also supports the Ada, COBOL, and D languages.  But that would
+    require some dependencies which are not available in the base LFS system
+    and would exceed the scope of this book.  Read
+    <ulink url='https://gcc.gnu.org/install/prerequisites.html'>the upstream
+    documentation</ulink> for details.</para>
+@y
+    <para>
+    GCC では Ada、COBOL、D 言語もサポートしています。
+    ただしこれに対しては、LFS の基本システムでは採用していないもの、そして本ブックの範囲を超えるものを依存パッケージとして必要としています。
+    詳しくはアップストリームによる <ulink
+    url='https://gcc.gnu.org/install/prerequisites.html'>アップストリームのドキュメント</ulink> を参照してください。
     </para>
 @z
 
