@@ -124,6 +124,20 @@
           </para>
 @z
 
+@x --disable-fixincludes
+          <para>By default, during the installation of GCC some system
+          headers would be <quote>fixed</quote> to be used with GCC.  This
+          is not necessary for a modern Linux system, and potentially
+          harmful if a package is reinstalled after installing GCC.  This
+          switch prevents GCC from <quote>fixing</quote> the headers.</para>
+@y
+          <para>
+          GCC のインストール時に GCC が利用するヘッダーは <quote>fixed</quote> のものを利用するシステムがあります。
+          これは現代の Linux システムにおいては不要なものであり、GCC インストールの後にパッケージインストールを行う際の潜在的な弊害となり得ます。
+          本スイッチは GCC のヘッダーを<quote>fixing</quote>とならないようにします。
+          </para>
+@z
+
 @x --disable-libsanitizer
           <para>Disable GCC sanitizer runtime libraries.  They are not
           needed for the temporary installation.  In

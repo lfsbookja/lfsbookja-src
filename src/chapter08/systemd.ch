@@ -236,20 +236,25 @@
 @z
 
 @x
-    <para>One test named <literal>systemd:core / test-namespace</literal>
-    is known to fail in the LFS chroot environment.  Some other tests may
-    fail because they depend on various kernel configuration options.
-    The test named <literal>systemd:test / test-copy</literal> may time out
-    due to an I/O congestion with a large parallel job number, but it
-    would pass if running alone with
-    <command>meson test test-copy</command>.</para>
+      Three tests are known to fail in the LFS chroot environment but
+      pass in a full installation: 
+       <literal>core - systemd:test-namespace</literal>,
+       <literal>test - systemd:test-chase</literal>, and
+       <literal>tmpfiles - systemd:test-systemd-tmpfiles</literal>.
+      Some additional tests may fail because they depend on various 
+      kernel configuration options. The test named 
+       <literal>test - systemd:test-copy</literal> 
+      may time out due to I/O congestion with a large parallel job 
+      number, but will pass if running alone with
+        <command>meson test test-copy</command>.
 @y
-    <para>
-    <literal>systemd:core / test-namespace</literal> というテストが、LFS の chroot 環境内では失敗します。
-    また別のテストでも失敗するものがありますが、これはさまざまなカーネルオプションに依存しているためです。
-    <literal>systemd:test / test-copy</literal> という名前のテストは、多大な並行ジョブ数による I/O の複雑化によって失敗することがあります。
-    ただし単独で <command>meson test test-copy</command> を実行すれば成功するはずです。
-    </para>
+      LFS の chroot 環境において 3 つのテストが失敗しますが、完全なインストール環境下では失敗しません。
+      それは <literal>core - systemd:test-namespace</literal>,
+       <literal>test - systemd:test-chase</literal>,
+       <literal>tmpfiles - systemd:test-systemd-tmpfiles</literal> です。
+      またカーネル設定のさまざまなオプション次第では、さらに失敗するテストが出てくるかもしれません。
+      <literal>test - systemd:test-copy</literal> というテストではタイムアウトが発生することがあります。
+      これは並行ジョブ実行数が多いときに I/O エラーにより発生しますが、単独で <command>meson test test-copy</command> を実行すれば成功するはずです。
 @z
 
 @x

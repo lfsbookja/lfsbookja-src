@@ -121,20 +121,20 @@
           </para>
 @z
 
-@x --disable-fixincludes
-          <para>By default, during the installation of GCC some system
-          headers would be <quote>fixed</quote> to be used with GCC.  This
-          is not necessary for a modern Linux system, and potentially 
-          harmful if a package is reinstalled after installing GCC.  This
-          switch prevents GCC from <quote>fixing</quote> the headers.</para>
-@y
-          <para>
-          デフォルトにおいて、GCC のインストール中に GCC が利用するシステムヘッダーが<quote>固定される</quote>場合があります。
-          これは最近の Linux システムにおいては不要なことです。
-          また GCC のインストール後に何かのパッケージをインストールすることを考えると、潜在的な危険を生み出すことになります。
-          本スイッチは GCC がヘッダーファイルを <quote>固定 (fix)</quote> しないようにします。
-          </para>
-@z
+%@x --disable-fixincludes
+%          <para>By default, during the installation of GCC some system
+%          headers would be <quote>fixed</quote> to be used with GCC.  This
+%          is not necessary for a modern Linux system, and potentially 
+%          harmful if a package is reinstalled after installing GCC.  This
+%          switch prevents GCC from <quote>fixing</quote> the headers.</para>
+%@y
+%          <para>
+%          デフォルトにおいて、GCC のインストール中に GCC が利用するシステムヘッダーが<quote>固定される</quote>場合があります。
+%          これは最近の Linux システムにおいては不要なことです。
+%          また GCC のインストール後に何かのパッケージをインストールすることを考えると、潜在的な危険を生み出すことになります。
+%          本スイッチは GCC がヘッダーファイルを <quote>固定 (fix)</quote> しないようにします。
+%          </para>
+%@z
 
 @x --with-system-zlib
           <para>This switch tells GCC to link to the system installed copy of

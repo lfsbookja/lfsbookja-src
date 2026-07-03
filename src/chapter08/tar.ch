@@ -23,6 +23,14 @@
 @z
 
 @x
+    <para>First fix the package to build with acl-2.4.0:</para>
+@y
+    <para>
+    acl-2.4.0 とともにビルドする際の問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Tar for compilation:</para>
 @y
     <para>&PreparePackage1;Tar&PreparePackage2;</para>

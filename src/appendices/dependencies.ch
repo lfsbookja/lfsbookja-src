@@ -75,16 +75,16 @@
 
 %----------------------------------------------------------------------
 @x acl
-          <seg>Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
+          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
           Perl, Sed, and Texinfo</seg>
 @y
-          <seg>Attr, Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
+          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Grep, M4, Make,
           Perl, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Attr and Glibc</seg>
+          <seg>Glibc</seg>
 @y
-          <seg>Attr, Glibc</seg>
+          <seg>Glibc</seg>
 @z
 @x
           <seg>Automake, Diffutils, Findutils, and

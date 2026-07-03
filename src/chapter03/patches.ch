@@ -103,16 +103,10 @@
         <para>&Download;: <ulink url="&patches-root;&perl-upstream-fix-patch;"/></para>
 @z
 
-@x Python OpenSSL 4 Patch
-        <para>Download: <ulink url="&patches-root;&python-openssl4-fixes-patch;"/></para>
+@x Python Consolidated Patch
+        <para>Download: <ulink url="&patches-root;&python-consolidated-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&python-openssl4-fixes-patch;"/></para>
-@z
-
-@x Python Security Fixes Patch
-        <para>Download: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&python-security-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&python-consolidated-fixes-patch;"/></para>
 @z
 
 @x Sysvinit Consolidated Patch
@@ -125,6 +119,12 @@
         <para>Download: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
+@z
+
+@x Tar Upstream Patch
+        <para>Download: <ulink url="&patches-root;&tar-aclfix-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&tar-aclfix-patch;"/></para>
 @z
 
 @x Xz Upstream Fix Patch

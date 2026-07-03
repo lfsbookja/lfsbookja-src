@@ -181,6 +181,21 @@
           </para>
 @z
 
+@x --disable-fixincludes
+          <para>By default, during the installation of GCC some system
+          headers would be <quote>fixed</quote> to be used with GCC.  At
+          this point we've installed no headers for the cross-compiler to
+          use, so building the auxiliary programs for the <quote>fix</quote>
+          would just waste time.  This switch disables the
+          <quote>fix</quote> and skips the build of those programs.</para>
+@y
+          <para>
+          GCC のインストール時に GCC が利用するヘッダーは <quote>fixed</quote> のものを利用するシステムがあります。
+          本書のこの時点においてインストールするヘッダーはクロスコンパイラー用であるため、関連する補助プログラムを <quote>fix</quote> を用いてビルドするのは無駄な時間を要します。
+          本スイッチは <quote>fix</quote> を無効とし、関連するプログラムのビルドをスキップします。
+          </para>
+@z
+
 @x --disable-shared
           <para>This switch forces GCC to link its internal libraries
           statically. We need this because the shared libraries require Glibc,
