@@ -2090,11 +2090,9 @@
 <!-- Begin Pkg-config dependency info -->
 @z
 @x
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
-          Sed, and Sqlite</seg>
+          <seg>Binutils, GCC, Glibc, Meson, Ninja, and Python</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make,
-          Sed, Sqlite</seg>
+          <seg>Binutils, GCC, Glibc, Meson, Ninja, Python</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2198,11 +2196,11 @@
 @x
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
           Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed,
-          Util-linux, and Zstd</seg>
+          Util-linux, and Zlib</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
           Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed,
-          Util-linux, Zstd</seg>
+          Util-linux, Zlib</seg>
 @z
 @x
           <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Ncurses,
@@ -2224,15 +2222,13 @@
 @x
           <seg>
             &bdb;,
-            <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
-            <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>, and
+            <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>, and
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
           </seg>
 @y
           <seg>
             &bdb;,
             <ulink url="&blfs-book;basicnet/libnsl.html">libnsl</ulink>,
-            <ulink url="&blfs-book;server/sqlite.html">SQLite</ulink>,
             <ulink url="&blfs-book;general/tk.html">Tk</ulink>
           </seg>
 @z
@@ -2370,9 +2366,9 @@
 <!-- Begin Sqlite dependency info -->
 @z
 @x
-          <seg>Bash, Binutils, GCC, Glibc, Gzip, Make, Ncurses, and Readline</seg>
+          <seg>Bash, Binutils, GCC, Glibc, Gzip, Make, Ncurses, Readline, and Zlib</seg>
 @y
-          <seg>Bash, Binutils, GCC, Glibc, Gzip, Make, Ncurses, Readline</seg>
+          <seg>Bash, Binutils, GCC, Glibc, Gzip, Make, Ncurses, Readline, Zlib</seg>
 @z
 @x
           <seg>Glibc</seg>
@@ -2817,9 +2813,9 @@
           <seg>なし</seg>
 @z
 @x
-          <seg>File, Kmod, Libelf, Perl, and Util-linux</seg>
+          <seg>File, Kmod, Libelf, Perl, Python, and Util-linux</seg>
 @y
-          <seg>File, Kmod, Libelf, Perl, Util-linux</seg>
+          <seg>File, Kmod, Libelf, Perl, Python, Util-linux</seg>
 @z
 @x
           <seg>None</seg>

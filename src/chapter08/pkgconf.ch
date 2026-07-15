@@ -22,6 +22,14 @@
 @z
 
 @x
+    <para>First, work around a circular dependency on meson:</para>
+@y
+    <para>
+    まず meson との循環参照を回避します。
+    </para>
+@z
+
+@x
     <para>Prepare Pkgconf for compilation:</para>
 @y
     <para>&PreparePackage1;Pkgconf&PreparePackage2;</para>

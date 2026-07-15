@@ -52,6 +52,18 @@
 @z
 
 @x
+    <para>By default the test suite uses all available CPU cores.  If you
+    want to use less cores, prepend
+    <parameter>HARNESS_JOBS=<replaceable>&lt;N&gt;</replaceable></parameter>
+    with N replaced by the number of logic CPU cores you want to use.</para>
+@y
+    <para>
+    テストスイートでは、利用可能なコアをすべて利用するのがデフォルトです。
+    少なめのコアを利用したい場合は、<parameter>HARNESS_JOBS=<replaceable>&lt;N&gt;</replaceable></parameter> の指定を行い N には利用したい論理コア数を指定してください。
+    </para>
+@z
+
+@x
     <para>One test, 30-test_afalg.t, is known to fail if the host kernel
     does not have <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> enabled,
     or does not have any options providing an AES with CBC implementation

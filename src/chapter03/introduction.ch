@@ -223,7 +223,8 @@ Linux カーネルの入手先を www.kernel.org から ftp.riken.jp/Linux/kerne
 </para>
 
 <screen><userinput remap="sed-wgetlist">cat &gt; wl.sed &lt;&lt; "EOF"
-<literal>s|www\.kernel\.org/pub/linux/|ftp.riken.jp/Linux/kernel.org/linux/|g
+<literal>s|ftpmirror\.gnu\.org|ftp.riken.jp/GNU|g
+s|www\.kernel\.org/pub/linux/|ftp.riken.jp/Linux/kernel.org/linux/|g
 s|www\.cpan\.org|ftp.riken.jp/lang/CPAN|g
 s|ftp\.vim\.org|ftp.jp.vim.org|g</literal>
 EOF

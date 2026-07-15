@@ -38,6 +38,88 @@
 @z
 
 @x
+      <para>2026-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add mpdecimal-4.0.1. Fixes
+          <ulink url="&lfs-ticket-root;5963">#5963</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2026c. Fixes
+          <ulink url="&lfs-ticket-root;5971">#5971</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-83.0.0. Fixes
+          <ulink url="&lfs-ticket-root;5969">#5969</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-3.0.2. Fixes
+          <ulink url="&lfs-ticket-root;5962">#5962</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.11.2. Fixes
+          <ulink url="&lfs-ticket-root;5975">#5975</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libffi-3.7.1. Fixes
+          <ulink url="&lfs-ticket-root;5970">#5970</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.1.3. Fixes
+          <ulink url="&lfs-ticket-root;5968">#5968</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gawk-5.4.1. Fixes
+          <ulink url="&lfs-ticket-root;5973">#5973</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to findutils-4.11.0. Fixes
+          <ulink url="&lfs-ticket-root;5974">#5974</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-07-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - mpdecimal-4.0.1 の追加。
+          <ulink url="&lfs-ticket-root;5963">#5963</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2026c へのアップデート。
+          <ulink url="&lfs-ticket-root;5971">#5971</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-83.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5969">#5969</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-3.0.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5962">#5962</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.11.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5975">#5975</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libffi-3.7.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5970">#5970</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-7.1.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;5968">#5968</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gawk-5.4.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;5973">#5973</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - findutils-4.11.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5974">#5974</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-07-01</para>
       <itemizedlist>
         <listitem>

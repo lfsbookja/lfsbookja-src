@@ -3,20 +3,22 @@
 ##
 BOOKdir = @abs_bookdir@/chapter07
 CHANGE_FILES = \
-	bison.ch           \
-	changingowner.ch   \
-	chapter07.ch       \
-	chroot.ch          \
-	cleanup.ch         \
-	createfiles.ch     \
-	creatingdirs.ch    \
-	gettext.ch         \
-	introduction.ch    \
-	kernfs.ch          \
-	perl.ch            \
-	python.ch          \
-	texinfo.ch         \
-	util-linux.ch
+	bison.ch         \
+	changingowner.ch \
+	chapter07.ch     \
+	chroot.ch        \
+	cleanup.ch       \
+	createfiles.ch   \
+	creatingdirs.ch  \
+	gettext.ch       \
+	introduction.ch  \
+	kernfs.ch        \
+	mpdecimal.ch     \
+	perl.ch          \
+	python.ch        \
+	texinfo.ch       \
+	util-linux.ch    \
+	zlib.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

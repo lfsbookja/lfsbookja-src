@@ -60,6 +60,7 @@ CHANGE_FILES = \
 	markupsafe.ch     \
 	meson.ch          \
 	mpc.ch            \
+	mpdecimal.ch      \
 	mpfr.ch           \
 	ncurses.ch        \
 	ninja.ch          \

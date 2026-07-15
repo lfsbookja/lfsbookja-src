@@ -356,6 +356,28 @@
 @z
 
 @x
+      Finally, create the empty <filename>/etc/subuid</filename> and
+      <filename>/etc/subgid</filename> files:
+@y
+      最後に <filename>/etc/subuid</filename>、<filename>/etc/subgid</filename> という空のファイルを作ります。
+@z
+
+@x
+      The content of those files will be automatically updated by some
+      utilities provided by Shadow to allocate subordinate user and group
+      IDs.  Read the man pages
+      <ulink role='man' url='&man;subuid.5'>subuid(5)</ulink> and
+      <ulink role='man' url='&man;subgid.5'>subgid(5)</ulink> for the
+      details about the subordinate IDs.
+@y
+      このファイルに対しては Shadow が提供するユーティリティーによって、サブユーザー ID やグループが自動的に割り当てられることになります。
+      サブ ID に関する詳細は、以下の man ページ、
+      <ulink role='man' url='&man;subuid.5'>subuid(5)</ulink>、
+      <ulink role='man' url='&man;subgid.5'>subgid(5)</ulink>
+      を参照してください。
+@z
+
+@x
     <title>Setting the Root Password</title>
 @y
     <title>root パスワードの設定</title>

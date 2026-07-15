@@ -43,12 +43,12 @@
 @z
 
 @x
-    <para>One test named <filename>test/cp.test</filename> is known to
+    <para>One test named <filename>test/cp.run</filename> is known to
     fail because <application>Coreutils</application> is not built with
     the <application>Acl</application> support yet.</para>
 @y
     <para>
-    <filename>test/cp.test</filename> というテストが１つだけ失敗します。
+    <filename>test/cp.run</filename> というテストが１つだけ失敗します。
     これは <application>Coreutils</application> が <application>Acl</application> サポートつきでまだビルドできていないためです。
     </para>
 @z

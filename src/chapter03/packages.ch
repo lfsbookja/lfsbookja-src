@@ -562,6 +562,14 @@
         <para>&Download;: <ulink url="&mpc-url;"/></para>
 @z
 
+@x mpdecimal
+        <para>Home page: <ulink url="&mpdecimal-home;"/></para>
+        <para>Download: <ulink url="&mpdecimal-url;"/></para>
+@y
+        <para>&Homepage;: <ulink url="&mpdecimal-home;"/></para>
+        <para>&Download;: <ulink url="&mpdecimal-url;"/></para>
+@z
+
 @x mpfr
         <para>Home page: <ulink url="&mpfr-home;"/></para>
         <para>Download: <ulink url="&mpfr-url;"/></para>

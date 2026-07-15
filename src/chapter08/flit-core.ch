@@ -33,7 +33,7 @@
 @x
       <title>The meaning of the pip3 configuration options and commands:</title>
 @y
-      <title>pip3 の configure オプションとコマンドの意味</title>
+      <title>pip3 の設定オプションとコマンドの意味</title>
 @z
 
 @x wheel
