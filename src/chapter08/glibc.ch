@@ -171,6 +171,16 @@
 @z
 
 @x
+    <para>The <parameter>-k -i</parameter> switch combination is a
+    workaround for an issue potentially causing the entire test suite to
+    bail out early on a failed test.</para>
+@y
+    <para>
+    スイッチ <parameter>-k -i</parameter> の組み合わせは一時的対応であり、テストスイートがその初期の段階で失敗する可能性があるものを回避するためです。
+    </para>
+@z
+
+@x
     <para>You may see some test failures. The Glibc test suite is
     somewhat dependent on the host system. A few failures out of
     over 6000 tests can generally be ignored. This is a list of the

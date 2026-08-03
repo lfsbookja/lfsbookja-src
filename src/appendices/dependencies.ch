@@ -1789,6 +1789,41 @@
 @y
           <seg>なし</seg>
 @z
+
+%----------------------------------------------------------------------
+@x
+<!-- Begin Mpdecimal dependency info -->
+@y
+<!-- Begin Mpdecimal dependency info -->
+@z
+@x
+          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+          Make, and Sed</seg>
+@y
+          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+          Make, Sed</seg>
+@z
+@x
+          <seg>GCC <!-- for libstdc++ --> and Glibc</seg>
+@y
+          <seg>GCC, <!-- for libstdc++ -->Glibc</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>Python</seg>
+@y
+          <seg>Python</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
 %----------------------------------------------------------------------
 @x MPC
           <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
@@ -2195,19 +2230,19 @@
 @z
 @x
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
-          Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed,
-          Util-linux, and Zlib</seg>
+          Grep, Libffi, Libxcrypt, Make, Mpdecimal, Ncurses, OpenSSL,
+          Pkgconf, Sed, Util-linux, and Zlib</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Expat, GCC, Gdbm, Gettext, Glibc,
-          Grep, Libffi, Libxcrypt, Make, Ncurses, OpenSSL, Pkgconf, Sed,
-          Util-linux, Zlib</seg>
+          Grep, Libffi, Libxcrypt, Make, Mpdecimal, Ncurses, OpenSSL,
+          Pkgconf, Sed, Util-linux, Zlib</seg>
 @z
 @x
-          <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Ncurses,
-          OpenSSL, and Zlib</seg>
+          <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Mpdecimal,
+          Ncurses, OpenSSL, and Zlib</seg>
 @y
-          <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Ncurses,
-          OpenSSL, Zlib</seg>
+          <seg>Bzip2, Expat, Gdbm, Glibc, Libffi, Libxcrypt, Mpdecimal,
+          Ncurses, OpenSSL, Zlib</seg>
 @z
 @x
           <seg>GDB and Valgrind</seg>

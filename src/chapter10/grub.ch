@@ -478,17 +478,11 @@
 @x
       The <command>insmod</command> commands load the
       <application>GRUB</application> modules named
-      <filename>part_gpt</filename>, <filename>ext2</filename>,
-      <filename>efi_gop</filename>, and
-      <filename>efi_uga</filename>.
+      <filename>part_gpt</filename> and <filename>ext2</filename>.
       Despite the naming, <filename>ext2</filename> actually supports
       <systemitem class='filesystem'>ext2</systemitem>,
       <systemitem class='filesystem'>ext3</systemitem>, and
       <systemitem class='filesystem'>ext4</systemitem> filesystems.
-      On UEFI systems, <filename>efi_gop</filename> and
-      <filename>efi_uga</filename> are for video support. GOP, or Graphics
-      Output Protocol, is the modern approach. UGA, or Universal Graphics
-      Adaptor, is a legacy way of handling it.
       In a typical configuration, the <filename>part_gpt</filename> and
       <filename>ext2</filename> modules are already embedded in
       the main GRUB image by <command>grub-install</command>, and the
@@ -496,13 +490,11 @@
       they do no harm anyway, and they may be needed with some rare
       configurations.
 @y
-      <command>insmod</command> コマンドは <application>GRUB</application> モジュールである <filename>part_gpt</filename>、<filename>ext2</filename>、<filename>efi_gop</filename>、<filename>efi_uga</filename> をロードします。
+      <command>insmod</command> コマンドは <application>GRUB</application> モジュールである <filename>part_gpt</filename>、<filename>ext2</filename> をロードします。
       そしてその名前こそ <filename>ext2</filename> となっていますが、このモジュールは実際には <systemitem
       class='filesystem'>ext2</systemitem>, <systemitem
       class='filesystem'>ext3</systemitem>, <systemitem
       class='filesystem'>ext4</systemitem> の各ファイルシステムをサポートしています。
-      UEFI システムでは <filename>efi_gop</filename> と <filename>efi_uga</filename> がビデオ機能をサポートします。
-      具体的には GOP (Graphics Output Protocol) を用いるのが最新式であり、UGA (Universal Graphics Adaptor) を用いるのがレガシーな方式です。
       通常の設定では <filename>part_gpt</filename> と <filename>ext2</filename> の各モジュールが、<command>grub-install</command> によって GRUB のメインイメージに埋め込まれています。
       したがってこれらのモジュールを <command>insmod</command> に対して用いても何も起きません。
       これは問題を引き起こすものではなく、特殊な設定を行った際には必要となるかもしれません。

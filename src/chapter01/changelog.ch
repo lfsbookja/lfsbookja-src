@@ -38,6 +38,104 @@
 @z
 
 @x
+      <para>2026-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.20.0. Fixes
+          <ulink url="&lfs-ticket-root;5986">#5986</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.2.0858 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;5982">#5982</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-261.2. Fixes
+          <ulink url="&lfs-ticket-root;5981">#5981</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-3.53.4. Fixes
+          <ulink url="&lfs-ticket-root;5984">#5984</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-3.0.4. Fixes
+          <ulink url="&lfs-ticket-root;5977">#5977</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.44.0. Fixes
+          <ulink url="&lfs-ticket-root;5980">#5980</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.1.5. Fixes
+          <ulink url="&lfs-ticket-root;5979">#5979</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libtool-2.6.2. Fixes
+          <ulink url="&lfs-ticket-root;5978">#5978</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20260723. Addresss
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.44 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;5983">#5983</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.47. Fixes
+          <ulink url="&lfs-ticket-root;5985">#5985</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - shadow-4.20.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5986">#5986</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.2.0858 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;5982">#5982</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-261.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5981">#5981</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sqlite-3.53.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;5984">#5984</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-3.0.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;5977">#5977</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.44.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5980">#5980</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-7.1.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;5979">#5979</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtool-2.6.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;5978">#5978</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20260723 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glibc-2.44 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;5983">#5983</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - binutils-2.47 へのアップデート。
+          <ulink url="&lfs-ticket-root;5985">#5985</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-07-15</para>
       <itemizedlist>
         <listitem>

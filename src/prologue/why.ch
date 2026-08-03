@@ -609,6 +609,16 @@
         </para>
 @z
 
+@x Mpdecimal
+        <para>This package supplies arithmetic functions for decimal
+        float numbers. It is required by Python.</para>
+@y
+        <para>
+        このパッケージは 10 進浮動小数に対する演算関数を提供します。
+        これは Python が必要としているものです。
+        </para>
+@z
+
 @x MPFR
         <para>This package contains functions for multiple precision
         arithmetic.  It is required by GCC.</para>

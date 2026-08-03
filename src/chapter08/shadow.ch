@@ -110,6 +110,14 @@
 @z
 
 @x
+    <para>Now fix a problem with included headers:</para>
+@y
+    <para>
+    インクルードされているヘッダーに関する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Shadow for compilation:</para>
 @y
     <para>&PreparePackage1;Shadow&PreparePackage2;</para>

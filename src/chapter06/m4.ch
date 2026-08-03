@@ -22,6 +22,13 @@
 @z
 
 @x
+       Ensure packages that use gnulib detect some newer functions 
+       found in glibc-2.44.
+@y
+       glibc-2.44 における最新の関数を、gnulib を利用する各パッケージが検出できるようにします。
+@z
+
+@x
     <para>Prepare M4 for compilation:</para>
 @y
     <para>&PreparePackage1;M4&PreparePackage2;</para>

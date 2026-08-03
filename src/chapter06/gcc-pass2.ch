@@ -152,6 +152,26 @@
           </para>
 @z
 
+@x CXX="$LFS_TGT-gcc -nostdinc++"
+          <para>Specifies to use <command>$LFS_TGT-gcc</command> to compile
+          the C++ code like <xref linkend='ch-tools-libstdcpp'/> and prevent
+          the compiler from using the headers from the previous libstdc++
+          installation.  Mixing those headers and the C++ headers from the
+          current libstdc++ build can cause the
+          <literal>#include_next</literal> directives fail to find the C
+          headers.  In a normal build, this override is automatically passed
+          to the <command>configure</command> script from the top level
+          directory.  Here we explicitly pass it.</para>
+@y
+          <para>
+          <xref linkend='ch-tools-libstdcpp'/> と同様にして C++ コードのコンパイルには <command>$LFS_TGT-gcc</command> を用いることを指定します。
+          これは同時に、直前の libstdc++ のビルドによりインストールされたヘッダーを用いないことも指示します。
+          現時点でビルドされている libstdc++ の C++ ヘッダーなどを混在して利用すると、ディレクティブ <literal>#include_next</literal> が正しい C ヘッダーを探し出せなくなります。
+          通常のビルドであれば、最上位ディレクトリの <command>configure</command> スクリプトに対して、この設定が自動的にオーバーライドされます。
+          したがってここで明示的にこの設定を受け渡すことにします。
+          </para>
+@z
+
 @x LDFLAGS_FOR_TARGET=...
           <para>Allow <filename class="libraryfile">libstdc++</filename> to
           use the <filename class="libraryfile">libgcc</filename> being

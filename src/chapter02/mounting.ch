@@ -103,6 +103,18 @@
 @z
 
 @x
+  <para>If you have created and mounted more partitions for the LFS system
+  than the one mounted at <filename class='directory'>$LFS</filename>,
+  now you should fix up their ownership and permission mode and check the
+  mount options for them as well.</para>
+@y
+  <para>
+  LFS システムに対して <filename class='directory'>$LFS</filename> をマウントしたパーティション以外にも、複数のパーティションを生成およびマウントした場合は、
+  上と同様に、所有権やパーミッションモードを確認しマウントオプションを適切に設定する必要があります。
+  </para>
+@z
+
+@x
   <warning><para>The above instructions assume that you will not restart
   your computer throughout the LFS process.  If you shut down your system,
   you will either need to remount the LFS partition each time you restart

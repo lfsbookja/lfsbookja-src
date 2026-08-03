@@ -82,6 +82,30 @@
           </para>
 @z
 
+@x CXX=$LFS_TGT-gcc
+          <para>Specifies to use <command>$LFS_TGT-gcc</command> to compile
+          the C++ code.  The default, <command>$LFS_TGT-g++</command>,
+          would automatically specify linking against
+          <systemitem class='library'>libstdc++</systemitem> when invoking
+          the linker, but in our case
+          <systemitem class='library'>libstdc++</systemitem> is not
+          installed yet so some checks in the <command>configure</command>
+          script would misbehave with <command>$LFS_TGT-g++</command>.  In a
+          normal build, this override is automatically passed to the
+          <command>configure</command> script from the top level directory.
+          Here we explicitly pass it.</para>
+@y
+          <para>
+          C++ コードのコンパイルには <command>$LFS_TGT-gcc</command> を用いることを指定します。
+          デフォルトの <command>$LFS_TGT-g++</command> はリンカーの呼び出し時に <systemitem
+          class='library'>libstdc++</systemitem> に対するリンクを自動的に指定します。
+          しかしこの場面ではまだ <systemitem
+          class='library'>libstdc++</systemitem> がインストールされていないため、<command>configure</command> による <command>$LFS_TGT-g++</command> に関するチェックが誤動作する可能性があります。
+          通常のビルドであれば、最上位ディレクトリの <command>configure</command> スクリプトに対して、この設定が自動的にオーバーライドされます。
+          したがってここで明示的にこの設定を受け渡すことにします。
+          </para>
+@z
+
 @x --disable-libstdcxx-pch
           <para>This switch prevents the installation of precompiled
           include files, which are not needed at this stage.</para>

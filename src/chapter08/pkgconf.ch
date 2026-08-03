@@ -42,6 +42,14 @@
 @z
 
 @x
+    <para>To test the results, issue:</para>
+@y
+    <para>
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>

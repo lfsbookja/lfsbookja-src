@@ -58,7 +58,7 @@
 @z
 
 @x --enable-plugins
-          <para>Enables plugin support for the linker.</para>
+          <para>Enable plugin support for the linker.</para>
 @y
           <para>
           リンカーに対してプラグインサポートを有効にします。
@@ -71,6 +71,29 @@
 @y
           <para>
           本パッケージに含まれる zlib をビルドするのではなく、既にインストール済の zlib を用いるようにします。
+          </para>
+@z
+
+@x --with-lib-path=/usr/lib
+          <para>Specify the path for the linker (<command>ld</command>)
+          to search.  By default it searches several directories that do not exist
+          on LFS besides <filename class='directory'>/usr/lib</filename>,
+          especially the <filename class='directory'>/usr/lib64</filename>
+          directory that we deliberately avoid.  In the case where
+          <filename class='directory'>/usr/lib64</filename> has been mistakenly
+          created and populated with some libraries, making
+          <command>ld</command> not search the path can highlight the issue
+          earlier with a failure to find those libraries at build time 
+          instead of run time.</para>
+@y
+          <para>
+          リンカー (<command>ld</command>) を探し出すパスを指定します。
+          デフォルトではいくつものディレクトリを検索しますが、LFS において <filename
+          class='directory'>/usr/lib</filename> 以外のものはそもそも存在しません。
+          特に <filename
+          class='directory'>/usr/lib64</filename> は無用なものなので、そういったものは意図的に検索しないようにします。
+          この状況に際して仮に <filename
+          class='directory'>/usr/lib64</filename> が誤って生成されてしまっていて、そこにライブラリが存在している場合、<command>ld</command> がこのパスを検索しないようにしておけば、そのライブラリが実行時でなくビルド時に見つからないことになるため、早期に問題解決ができます。
           </para>
 @z
 
