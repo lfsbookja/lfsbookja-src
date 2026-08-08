@@ -38,6 +38,64 @@
 @z
 
 @x
+      <para>2026-08-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to flit_core-4.0.2 (Python module). Fixes
+          <ulink url="&lfs-ticket-root;5989">#5989</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-16.2.0. Fixes
+          <ulink url="&lfs-ticket-root;5992">#5992</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.1.7. Fixes
+          <ulink url="&lfs-ticket-root;5988">#5988</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to packaging-26.3 (Python module). Fixes
+          <ulink url="&lfs-ticket-root;5990">#5990</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-3.0.5. Fixes
+          <ulink url="&lfs-ticket-root;5987">#5987</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.14.7 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;5991">#5991</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-08-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - flit_core-4.0.2 (Python モジュール) へのアップデート。
+          <ulink url="&lfs-ticket-root;5989">#5989</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-16.2.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;5992">#5992</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-7.1.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;5988">#5988</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - packaging-26.3 (Python モジュール) へのアップデート。
+          <ulink url="&lfs-ticket-root;5990">#5990</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-3.0.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;5987">#5987</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.14.7 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;5991">#5991</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-08-01</para>
       <itemizedlist>
         <listitem>

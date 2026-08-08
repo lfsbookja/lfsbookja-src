@@ -35,13 +35,14 @@
 @z
 
 @x
-    <para>Now add some fixes to address building and testing with Linux 7,
-    and fix 5 security vulnerabilities found after the glibc-2.43
-    release:</para>
+    <para>Now fix an issue causing the
+    <ulink role='man' url='&man;tanh.3'>tanh(3)</ulink> function to crash
+    on some old x86_64 processors.  Newer x86_64 processors and 32-bit x86
+    processors are not affected but the patch makes no harm either:</para>
 @y
     <para>
-    Linux 7 でのビルドとテストに対処するための修正を追加します。
-    また glibc-2.43 のリリース以降に見つかった 5 つのセキュリティぜい弱性を修正します。
+    ここで <ulink role='man' url='&man;tanh.3'>tanh(3)</ulink> 関数が x86_64 の古いプロセッサー上においてクラッシュすることがあるため修正します。
+    より最新の x86_64 プロセッサーや 32 ビット x86 プロセッサーには無関係な修正であって、どちらに対してもこのパッチは影響を及ぼしません。
     </para>
 @z
 

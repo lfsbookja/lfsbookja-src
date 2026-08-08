@@ -67,7 +67,7 @@
         <para>&Download;: <ulink url="&patches-root;&expect-gcc15-patch;"/></para>
 @z
 
-@x Glibc Upstream Fixes Patch
+@x Glibc Upstream Fix Patch
         <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
@@ -103,10 +103,10 @@
         <para>&Download;: <ulink url="&patches-root;&perl-upstream-fix-patch;"/></para>
 @z
 
-@x Python Consolidated Patch
-        <para>Download: <ulink url="&patches-root;&python-consolidated-fixes-patch;"/></para>
+@x Python Openssl4 Patch
+        <para>Download: <ulink url="&patches-root;&python-openssl4-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&python-consolidated-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&python-openssl4-fixes-patch;"/></para>
 @z
 
 @x Sysvinit Consolidated Patch

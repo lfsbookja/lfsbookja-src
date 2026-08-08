@@ -28,6 +28,14 @@
 @z
 
 @x
+    <para>Remove a useless static library:</para>
+@y
+    <para>
+    スタティックライブラリは不要なので削除します。
+    </para>
+@z
+
+@x
     <para>Details on this package are located in
     <xref linkend="contents-zlib" role="."/></para>
 @y
