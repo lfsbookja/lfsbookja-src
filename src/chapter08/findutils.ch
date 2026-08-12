@@ -70,6 +70,12 @@
 @z
 
 @x
+      One test named <filename>test-regex-el</filename> is known to fail.
+@y
+      <filename>test-regex-el</filename> というテストは失敗します。
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
