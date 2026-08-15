@@ -35,12 +35,12 @@
       <para>The default settings of GMP produce libraries optimized for
       the host processor.  If libraries suitable for processors less
       capable than the host's CPU are desired, generic libraries can be
-      created by appending the <option>--host=none-linux-gnu</option> option
+      created by appending the <option>--disable-assembly</option> option
       to the <command>configure</command> command.</para>
 @y
       <para>
       GMP のデフォルト設定に従うと、ホストのプロセッサー向けに最適化したライブラリを生成してしまいます。
-      ホストに比べて、やや性能の劣るプロセッサーに向けたライブラリを必要とする場合は、汎用ライブラリを生成するために、<command>configure</command> コマンドに <option>--host=none-linux-gnu</option> オプションを加えます。
+      ホストに比べて、やや性能の劣るプロセッサーに向けたライブラリを必要とする場合は、汎用ライブラリを生成するために、<command>configure</command> コマンドに <option>--disable-assembly</option> オプションを加えます。
       </para>
 @z
 

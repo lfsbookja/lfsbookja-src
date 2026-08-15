@@ -64,9 +64,9 @@
 @z
 
 @x
-<!ENTITY gcc-fin-sbu "45 SBU (with tests)">
+<!ENTITY gcc-fin-sbu "53 SBU (with tests)">
 @y
-<!ENTITY gcc-fin-sbu "45 SBU (テスト込み)">
+<!ENTITY gcc-fin-sbu "53 SBU (テスト込み)">
 @z
 
 @x
@@ -139,6 +139,12 @@
 <!ENTITY meson-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY meson-fin-sbu "0.1 SBU 以下">
+@z
+
+@x
+<!ENTITY mpdecimal-tmp-sbu "less than 0.1 SBU">
+@y
+<!ENTITY mpdecimal-tmp-sbu "0.1 SBU 以下">
 @z
 
 @x

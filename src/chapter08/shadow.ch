@@ -408,8 +408,8 @@
 
 @x
       <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directories</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
@@ -417,23 +417,25 @@
 @z
 
 @x
-        <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
-        getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
-        grpconv, grpunconv, login, logoutd, newgidmap, newgrp,
-        newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
-        sg (link to newgrp), su, useradd, userdel, usermod,
-        vigr (link to vipw), and vipw</seg>
-      <seg>/etc/default and /usr/include/shadow</seg>
+        <seg>
+          chage, chfn, chgpasswd, chpasswd, chsh, faillog, getsubids, gpasswd, 
+          groupadd, groupdel, groupmod, grpck, grpconv, grpunconv, login, 
+          newgidmap, newgrp, newuidmap, newusers, nologin, passwd, pwck, 
+          pwconv, pwunconv, sg (link to newgrp), su, useradd, userdel, 
+          usermod, vigr (link to vipw), and vipw
+        </seg>
         <seg>libsubid.so</seg>
+        <seg>/etc/default and /usr/include/shadow</seg>
 @y
-        <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
-        getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
-        grpconv, grpunconv, login, logoutd, newgidmap, newgrp,
-        newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
-        sg (newgrp へのリンク), su, useradd, userdel, usermod,
-        vigr (vipw へのリンク), vipw</seg>
-        <seg>/etc/default, /usr/include/shadow</seg>
+        <seg>
+          chage, chfn, chgpasswd, chpasswd, chsh, faillog, getsubids, gpasswd, 
+          groupadd, groupdel, groupmod, grpck, grpconv, grpunconv, login, 
+          newgidmap, newgrp, newuidmap, newusers, nologin, passwd, pwck, 
+          pwconv, pwunconv, sg (newgrp へのリンク), su, useradd, userdel, 
+          usermod, vigr (vipw へのリンク), and vipw
+        </seg>
         <seg>libsubid.so</seg>
+        <seg>/etc/default, /usr/include/shadow</seg>
 @z
 
 @x
