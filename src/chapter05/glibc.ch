@@ -59,6 +59,19 @@
 @z
 
 @x
+    <para>Fix an issue causing the <ulink role='man'
+    url='&man;tanh.3'>tanh(3)</ulink> function to crash
+    on some old x86_64 processors, and to fix installing with multiple
+    <command>make</command> jobs:</para>
+@y
+    <para>
+    古い x86_64 プロセッサーにおいて <ulink role='man'
+    url='&man;tanh.3'>tanh(3)</ulink> 関数がクラッシュすることがあるので、これを修正します。
+    そして <command>make</command> のマルチジョブ処理でのインストールを行う修正も行います。
+    </para>
+@z
+
+@x
     <para>Now fix glibc to build against Linux 7:</para>
 @y
     <para>

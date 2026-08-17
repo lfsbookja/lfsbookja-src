@@ -35,14 +35,15 @@
 @z
 
 @x
-    <para>Now fix an issue causing the
-    <ulink role='man' url='&man;tanh.3'>tanh(3)</ulink> function to crash
-    on some old x86_64 processors.  Newer x86_64 processors and 32-bit x86
-    processors are not affected but the patch makes no harm either:</para>
+    <para>Fix an issue causing the <ulink role='man'
+    url='&man;tanh.3'>tanh(3)</ulink> function to crash
+    on some old x86_64 processors, and to fix installing with multiple
+    <command>make</command> jobs:</para>
 @y
     <para>
-    ここで <ulink role='man' url='&man;tanh.3'>tanh(3)</ulink> 関数が x86_64 の古いプロセッサー上においてクラッシュすることがあるため修正します。
-    より最新の x86_64 プロセッサーや 32 ビット x86 プロセッサーには無関係な修正であって、どちらに対してもこのパッチは影響を及ぼしません。
+    古い x86_64 プロセッサーにおいて <ulink role='man'
+    url='&man;tanh.3'>tanh(3)</ulink> 関数がクラッシュすることがあるので、これを修正します。
+    そして <command>make</command> のマルチジョブ処理でのインストールを行う修正も行います。
     </para>
 @z
 
