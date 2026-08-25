@@ -110,14 +110,6 @@
 @z
 
 @x
-    <para>Now fix a problem with included headers:</para>
-@y
-    <para>
-    インクルードされているヘッダーに関する問題を修正します。
-    </para>
-@z
-
-@x
     <para>Prepare Shadow for compilation:</para>
 @y
     <para>&PreparePackage1;Shadow&PreparePackage2;</para>
@@ -238,32 +230,27 @@
     groups; set and change their passwords; and perform other administrative
     tasks. For a full explanation of what <emphasis>password shadowing</emphasis>
     means, see the <filename>doc/HOWTO</filename> file within the unpacked
-    source tree. If you use Shadow support, keep in mind that programs which need
-    to verify passwords (display managers, FTP programs, pop3 daemons, etc.)
-    must be Shadow-compliant. That is, they must be able to work with
-    shadowed passwords.</para>
+    source tree.</para>
 @y
     <para>
     このパッケージには、ユーザーやグループの追加、修正、削除、そのパスワードの設定、変更、その他の管理操作を行うユーティリティが含まれます。
     <emphasis>パスワードのシャドウイング (password shadowing)</emphasis> というものが何を意味するのか、その詳細についてはこのパッケージのソース内にある <filename>doc/HOWTO</filename> を参照してください。
-    Shadow によるサポートを利用する場合、パスワード認証を必要とするプログラム (ディスプレイマネージャー、FTP プログラム、POP3、デーモン、など) は Shadow に準拠したものでなければなりません。
-    つまりそれらのプログラムが、シャドウ化された (shadowed) パスワードを受け入れて動作しなければならないということです。
     </para>
 @z
 
 @x
-    <para>To enable shadowed passwords, run the following command:</para>
+    <para>Enable shadowed passwords:</para>
 @y
     <para>
-    Shadow によるパスワードの利用を有効にするために、以下のコマンドを実行します。
+    shadow によるパスワードを有効にするには、以下のコマンドを実行します。
     </para>
 @z
 
 @x
-    <para>To enable shadowed group passwords, run:</para>
+    <para>Enable shadowed group passwords as well:</para>
 @y
     <para>
-    また Shadow によるグループパスワードを有効にするために、以下を実行します。
+    shadow によるグループパスワードを有効にするには、以下を実行します。
     </para>
 @z
 
