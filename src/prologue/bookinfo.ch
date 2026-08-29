@@ -15,19 +15,25 @@
       <firstname>Created by Gerard</firstname>
       <surname>Beekmans</surname>
     </author>
+
     <author>
       <firstname>Managing Editor: Bruce</firstname>
       <surname>Dubbs</surname>
     </author>
 
-    <author revision="systemd">
-      <firstname>Editor: Douglas R.</firstname>
-      <surname>Reno</surname>
+    <author>
+      <firstname>Editor: Xi</firstname>
+      <surname>Ruoyao</surname>
     </author>
 
-    <author revision="systemd">
-      <firstname>Editor: DJ</firstname>
-      <surname>Lucas</surname>
+    <author>
+      <firstname>Editor: Joe</firstname>
+      <surname>Locash</surname>
+    </author>
+
+    <author>
+      <firstname>Editor: Douglas R.</firstname>
+      <surname>Reno</surname>
     </author>
   </authorgroup>
 @y
@@ -36,20 +42,27 @@
       <firstname>製作： Gerard</firstname>
       <surname>Beekmans</surname>
     </author>
+
     <author>
       <firstname>編集総括： Bruce</firstname>
       <surname>Dubbs</surname>
     </author>
 
-    <author revision="systemd">
-      <firstname>編集： Douglas R.</firstname>
+    <author>
+      <firstname>編集： Xi</firstname>
+      <surname>Ruoyao</surname>
+    </author>
+
+    <author>
+      <firstname>編集： Joe</firstname>
+      <surname>Locash</surname>
+    </author>
+
+    <author>
+      <firstname>編集: Douglas R.</firstname>
       <surname>Reno</surname>
     </author>
 
-    <author revision="systemd">
-      <firstname>編集： DJ</firstname>
-      <surname>Lucas</surname>
-    </author>
     <author>
       <firstname>日本語訳： 松山 道夫</firstname>
     </author>

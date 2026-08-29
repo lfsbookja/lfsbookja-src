@@ -557,6 +557,16 @@
 @z
 
 @x
+      <para><ulink url="mailto:dj@lucasit.com">Anderson
+      Lizardo</ulink> &lt;dj@lucasit.com&gt; &ndash; LFS
+      Technical Writer</para>
+@y
+      <para><ulink url="mailto:dj@lucasit.com">Anderson
+      Lizardo</ulink> &lt;dj@lucasit.com&gt; &ndash; LFS
+      テクニカルライター</para>
+@z
+
+@x
     <listitem>
       <para><ulink url="mailto:randy@linuxfromscratch.org">Randy
       McMurchy</ulink> &lt;randy@linuxfromscratch.org&gt; &ndash; BLFS

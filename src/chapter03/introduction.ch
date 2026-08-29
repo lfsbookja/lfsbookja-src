@@ -75,31 +75,35 @@
 
 @x
       Listed on the next page are several important packages located at
-      <uri>ftpmirror.gnu.org</uri>.  The canonical location of the
-      subject packages are <uri>ftp.gnu.org</uri> but due to
+      <systemitem class='domainname'>ftpmirror.gnu.org</systemitem>.  The
+      canonical location of the subject packages are
+      <systemitem class='domainname'>ftp.gnu.org</systemitem> but due to
       a long term distributed denial of services (DDOS) attack the site
       administrator suggested the LFS editors to use
-      <uri>ftpmirror.gnu.org</uri> instead.  See
+      <systemitem class='domainname'>ftpmirror.gnu.org</systemitem> instead.
+      See
       <ulink url="https://news.slashdot.org/story/25/07/06/1737253/the-fsf-faces-active-ongoing-and-increasing-ddos-attacks">Slashdot News</ulink> for details.
 @y
-      次のページでは <uri>ftpmirror.gnu.org</uri> に存在する重要なパッケージをいくつも一覧に示しています。
-      対象パッケージの標準的な配布サイトは <uri>ftp.gnu.org</uri> ですが、長期にわたって DDOS (distributed denial of services) 攻撃にさらされています。
-      したがってサイト管理者は LFS 編集者に対して <uri>ftpmirror.gnu.org</uri> の利用を推奨しています。
+      次のページでは <systemitem class='domainname'>ftpmirror.gnu.org</systemitem> に存在する重要なパッケージをいくつも一覧に示しています。
+      対象パッケージの標準的な配布サイトは <systemitem class='domainname'>ftp.gnu.org</systemitem> ですが、長期にわたって DDOS (distributed denial of services) 攻撃にさらされています。
+      したがってサイト管理者は LFS 編集者に対して <systemitem class='domainname'>ftpmirror.gnu.org</systemitem> の利用を推奨しています。
       詳しくは <ulink
       url="https://news.slashdot.org/story/25/07/06/1737253/the-fsf-faces-active-ongoing-and-increasing-ddos-attacks">Slashdot ニュース</ulink> を参照してください。
 @z
 
 @x
-      The <uri>ftpmirror.gnu.org</uri> URL actually redirects to one of the
-      mirrors of the <uri>ftp.gnu.org</uri> site.  You may also select a
-      mirror manually instead of using <uri>ftpmirror.gnu.org</uri>.
+      The <systemitem class='domainname'>ftpmirror.gnu.org</systemitem> URL
+      actually redirects to one of the mirrors of the
+      <systemitem class='domainname'>ftp.gnu.org</systemitem> site.  You may
+      also select a mirror manually instead of using
+      <systemitem class='domainname'>ftpmirror.gnu.org</systemitem>.
       A list of mirrors is located at
       <ulink url="https://www.gnu.org/prep/ftp.en.html"/>.
       If you choose to use the wget list described below, that file also
       can be modified to use your desired mirror.
 @y
-      <uri>ftpmirror.gnu.org</uri> を利用すると、実際には <uri>ftp.gnu.org</uri> サイトのミラーのいずれかにリダイレクトされます。
-      <uri>ftpmirror.gnu.org</uri> を利用せずに、直接そのミラーサイトを指定しても構いません。
+      <systemitem class='domainname'>ftpmirror.gnu.org</systemitem> を利用すると、実際には <systemitem class='domainname'>ftp.gnu.org</systemitem> サイトのミラーのいずれかにリダイレクトされます。
+      <systemitem class='domainname'>ftpmirror.gnu.org</systemitem> を利用せずに、直接そのミラーサイトを指定しても構いません。
       ミラー一覧は <ulink url="https://www.gnu.org/prep/ftp.en.html"/> に示されています。
       以降に示している wget リストを利用する予定であれば、このファイルを修正して必要なミラーサイトを利用するようにしてください。
 @z

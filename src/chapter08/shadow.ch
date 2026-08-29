@@ -69,9 +69,8 @@
 
 @x
     <para id="shadow-login_defs">Instead of using the default
-    <emphasis>crypt</emphasis> method, use the much more secure
-    <emphasis>YESCRYPT</emphasis> method of password encryption, which also
-    allows passwords longer than 8 characters.
+    <emphasis>SHA512</emphasis> method, use the more secure
+    <emphasis>YESCRYPT</emphasis> method of password encryption.
     It is also necessary to change
     the obsolete <filename class="directory">/var/spool/mail</filename> location
     for user mailboxes that Shadow uses by default to the <filename
@@ -82,8 +81,7 @@
     <filename class="directory">/usr</filename>.</para>
 @y
     <para id="shadow-login_defs">
-    パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>YESCRYPT</emphasis> 手法を用いることにします。
-    こうしておくと 8文字以上のパスワード入力が可能となります。
+    パスワード暗号化に関して、デフォルトの <emphasis>SHA512</emphasis> 手法ではなく、より強力な <emphasis>YESCRYPT</emphasis> 手法を用いることにします。
     メールボックスを収めるディレクトリとして Shadow ではデフォルトで <filename
     class="directory">/var/spool/mail</filename> ディレクトリを利用していますが、これは古いものであるため <filename
     class="directory">/var/mail</filename> ディレクトリに変更します。
