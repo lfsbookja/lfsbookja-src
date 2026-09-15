@@ -25,12 +25,6 @@
 @z
 
 @x
-      <para>Libelf from Elfutils-&elfutils-version;</para>
-@y
-      <para>Elfutils-&elfutils-version; から Libelf</para>
-@z
-
-@x
       <para>Udev from Systemd-&systemd-version;</para>
 @y
       <para>Systemd-&systemd-version; から Udev</para>
@@ -46,16 +40,4 @@
     <title>Removed:</title>
 @y
     <title>削除:</title>
-@z
-
-@x
-    <listitem><para>XML-Parser (Moved to BLFS)</para></listitem> 
-@y
-    <listitem><para>XML-Parser (BLFS へ移動)</para></listitem> 
-@z
-
-@x
-    <listitem><para>intltool (Moved to BLFS)</para></listitem>  
-@y
-    <listitem><para>intltool (BLFS へ移動)</para></listitem>  
 @z

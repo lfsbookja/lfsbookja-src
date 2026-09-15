@@ -22,7 +22,7 @@
 @z
 
 @x
-  <para>A minimal system requires a partition of around 10 gigabytes (GB).
+  <para>A minimal system requires a partition of around 15 gigabytes (GB).
   This is enough to store all the source tarballs and compile the packages.
   However, if the LFS system is intended to be the primary Linux system,
   additional software will probably be installed which will require additional
@@ -34,7 +34,7 @@
   package is installed.</para>
 @y
   <para>
-  最小限のシステムであれば 10 GB 程度のディスク容量があれば十分です。
+  最小限のシステムであれば 15 GB 程度のディスク容量があれば十分です。
   これだけあればパッケージやソースの収容に十分で、そこでコンパイル作業を行っていくことができます。
   しかし主要なシステムとして LFS を構築するなら、さらにソフトウェアをインストールすることになるはずなので、さらなる容量が必要となります。
   30 GB ほどのパーティションがあれば、増量していくことを考えても十分な容量でしょう。
