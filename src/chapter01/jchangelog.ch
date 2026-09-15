@@ -55,9 +55,6 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          r13.1-4 (9a4ceea7b) までの対応。
-          </para>
-          <para>[matsuand] -
           LFS-13.1 リリース対応。
           </para>
         </listitem>

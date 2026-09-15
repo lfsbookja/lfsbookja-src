@@ -260,11 +260,13 @@
 
 @x
     <para>Results can be compared with those located at <ulink
-    url="&test-results;"/>.</para>
+    url="&test-results;"/> and
+    <ulink url="https://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
 @y
     <para>
     テスト結果については <ulink
-    url="&test-results;"/> にある情報と比較することができます。
+    url="&test-results;"/> と <ulink
+    url="https://gcc.gnu.org/ml/gcc-testresults/"/> にある情報と比較することができます。
     </para>
 @z
 
