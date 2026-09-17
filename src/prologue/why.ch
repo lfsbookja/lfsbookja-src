@@ -82,13 +82,13 @@
 @z
 
 @x Bash
-        <para>This package satisfies an LSB core requirement to provide
-        a Bourne Shell interface to the system.  It was chosen over
+        <para>This package provides a shell that can run in a mode
+        strictly conforming to the POSIX specification.  It was chosen over
         other shell packages because of its common usage and extensive
         capabilities.</para>
 @y
         <para>
-        このパッケージは、システムとのインターフェースを実現する Bourne シェルを提供し、LSB コア要件を満たします。
+        このパッケージは、POSIX 仕様に完全準拠したモードで実行できるシェルを提供します。
         他のシェルを選ばずにこれを選ぶのは、一般的に多用されていて拡張性が高いからです。
         </para>
 @z

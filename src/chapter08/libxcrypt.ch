@@ -99,15 +99,15 @@
       no package installed by compiling from sources would link against
       them at runtime. However, the only known binary-only applications
       that link against these functions require ABI version 1.  If you must
-      have such functions because of some binary-only application or to be
-      compliant with LSB, build the package again with the following
+      have such functions because of some binary-only application,
+      build the package again with the following
       commands:</para>
 @y
       <para>
       上に示した手順では、古い API 関数を無効にしました。
       このようにしても、ソースからコンパイルしてインストールしたパッケージ類は、実行時にそのライブラリにリンクされるものは一つもありません。
       ただし、バイナリでのみ提供されている特定のアプリケーションが、その関数ライブラリへのリンクを行い、そこでは ABI バージョン 1 を必要としています。
-      そういったバイナリのみで提供されているアプリケーションの利用においてその関数を必要とするか、あるいは LSB への準拠を必要とする場合には、以下のコマンドを使って本パッケージをもう一度ビルドしてください。
+      そういったバイナリのみで提供されているアプリケーションの利用においてその関数を必要とする場合には、以下のコマンドを使って本パッケージをもう一度ビルドしてください。
       </para>
 @z
 
