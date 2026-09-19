@@ -262,18 +262,22 @@
             <ulink url='https://sourceware.org/git/?p=glibc.git;a=shortlog;h=refs/heads/release/&glibc-version;/master'>Git
             branch</ulink> containing patches considered worthy for
             Glibc-&glibc-version; but unfortunately developed after
-            Glibc-&glibc-version; release.  The LFS editors will issue a
-            security advisory if any security fix is added into the branch,
-            but no actions will be taken for other newly added patches.  You
-            may review the patches yourself and incorporate some patches if
-            you consider them important.
+            Glibc-&glibc-version; release.  The LFS editors will add a glibc
+            upstream fixes patch (or update an existing one) for the LFS
+            development book to follow that branch if an important fix is
+            added (for example, a security fix) and maybe issue an errata
+            (or security advisory) if the fix is required for the recent
+            stable LFS release, but no actions will be taken for patches
+            with less importance.  You may review the patches yourself and
+            incorporate some patches if you consider them important.
 @y
-            Glibc の開発者は
-            <ulink url='https://sourceware.org/git/?p=glibc.git;a=shortlog;h=refs/heads/release/&glibc-version;/master'>Git
-            ブランチ</ulink> を管理しており、そこには Glibc-&glibc-version; に有用と思われるパッチを含んでいますが、それは残念ながら Glibc-&glibc-version; のリリース以降に開発されたものに限ります。
-            LFS 編集者は、そのブランチにセキュリティフィックスが加えられた際には、セキュリティアドバイザリーを発表することにしています。
-            ただしセキュリティ以外で新規追加されたパッチに関しては、何も作業は行いません。
-            したがって各パッチは自分で確認するようにし、また重要であると思われる場合は各自でそのパッチを適用してください。
+            Glibc の開発者は Glibc-&glibc-version; に必要となるパッチも <ulink
+            url='https://sourceware.org/git/?p=glibc.git;a=shortlog;h=refs/heads/release/&glibc-version;/master'>Git
+            ブランチ</ulink> において提供していますが、これを始めたのは残念ながら Glibc-&glibc-version; 以降です。
+            そこで LFS 編集者は LFS ブック開発版において、glibc アップストリームのフィックスパッチ (あるいはその更新パッチ) を追加しています。
+            これは重要なパッチ (たとえばセキュリティフィックス) が追加された時や errata (あるいはセキュリティアドバイザリ) で問題となった時であって、最新の LFS ブック安定版への追加が必要となる場合には、追加していかなければならないからです。
+            ただし重要性の低いパッチについては、特に手をつけていません。
+            そのようなパッチについては各自で確認して、重要だと思われるものについては適用を考えてください。
 @z
 
 @x gmp

@@ -38,6 +38,25 @@
 @z
 
 @x
+      <para>2026-09-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - Update glibc upstream fixes patch
+          (security update).  Fixes
+          <ulink url="&lfs-ticket-root;6023">#6023</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-09-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[xry111] - glibc のアップストリームによるフィックスパッチを更新 (セキュリティアップデート)。
+          <ulink url="&lfs-ticket-root;6023">#6023</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-09-15</para>
       <itemizedlist>
         <listitem>
@@ -93,7 +112,7 @@
           <ulink url="&lfs-ticket-root;4500">#4500</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to xz-5.8.4 (Securiry Update). Fixes
+          <para>[bdubbs] - Update to xz-5.8.4 (Security Update). Fixes
           <ulink url="&lfs-ticket-root;6016">#6015</ulink>.</para>
         </listitem>
       </itemizedlist>

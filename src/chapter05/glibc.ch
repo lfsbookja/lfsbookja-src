@@ -59,16 +59,21 @@
 @z
 
 @x
-    <para>Fix an issue causing the <ulink role='man'
+    <para>Fix various issues identified after the glibc 2.44 release,
+    including one causing the <ulink role='man'
     url='&man;tanh.3'>tanh(3)</ulink> function to crash
-    on some old x86_64 processors, and to fix installing with multiple
-    <command>make</command> jobs:</para>
+    on some old x86_64 processors, one causing some packages using gnulib
+    to hang indefinitely at runtime, some causing building or testing
+    failures with parallel <command>make</command> jobs, and six security
+    vulnerabilities (some of them may not really affect the temporary build
+    but the fixes make no harm anyway):</para>
 @y
     <para>
-    古い x86_64 プロセッサーにおいて <ulink role='man'
-    url='&man;tanh.3'>tanh(3)</ulink> 関数がクラッシュすることがあるので、これを修正します。
-    そして <command>make</command> のマルチジョブ処理でのインストールを行う修正も行います。
-    </para>
+    glibc 2.44 のリリース以降に認識されている不具合に対処します。
+    その不具合とは <ulink role='man'
+    url='&man;tanh.3'>tanh(3)</ulink> 関数が古い x86_64 プロセッサー上においてクラッシュするものであり、また gnulib を利用するパッケージの中には、実行時に永久にハングしてしまうものがあります。
+    さらに <command>make</command> による並行ジョブを行うとビルド時やテスト時に失敗し、また 6 つのセキュリティぜい弱性も含んでいます (この中のものすべてが、この時点の一時的ビルドには必要のないものかもしれません。ただし修正することに害はないため適用するものです)。
+     </para>
 @z
 
 @x
