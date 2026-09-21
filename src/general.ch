@@ -49,9 +49,9 @@
 <!ENTITY os-release-type "development"> <!-- used by /etc/os-release -->
 ]]>
 
-<!ENTITY jversion        "20260919">
-<!ENTITY jversiond       "20260919">
-<!ENTITY jcorrespondSHA  "cf491708f"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion        "20260921">
+<!ENTITY jversiond       "20260921">
+<!ENTITY jcorrespondSHA  "4e62a65c5"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
 <!ENTITY dir-jversion    "git-ja">
 <!ENTITY dir-jversiond   "git-sysdja">
 @z

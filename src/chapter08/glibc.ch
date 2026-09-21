@@ -54,11 +54,11 @@
 @x
         If rebuilding glibc for an existing LFS system with an ad-hoc
         workaround for the gnulib hanging issue at
-        <filename>/&#8288;usr/share/config.site</filename> (introduced with <ulink
+        <filename>/usr/share/config.site</filename> (introduced with <ulink
         url='&lfs-root;lfs/view/13.1-systemd/chapter06/m4.html'>cross-compiled
         M4 in LFS 13.1</ulink>), remove it:
 @y
-        既に構築済みの LFS システムのビルド時に、gnulib のハング問題を暫定的に対処しているもの (<ulink
+        既に構築済みの LFS システムのビルド時に、gnulib の <filename>/usr/share/config.site</filename> に関してハングする問題を暫定的に対処しているもの (<ulink
         url='&lfs-root;lfs/view/13.1-systemd/chapter06/m4.html'>LFS 13.1 におけるクロスコンパイルした m4</ulink> において導入したもの) であれば、以下を削除する必要があります。
 @z
 
