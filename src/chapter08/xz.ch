@@ -24,14 +24,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix an issue in xzgrep:</para>
-@y
-    <para>
-    xzgrep における問題を修正するためのパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Prepare Xz for compilation with:</para>
 @y
     <para>&PreparePackage1;Xz&PreparePackage2;</para>
@@ -57,50 +49,10 @@
     </para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Installation of Xz - 32bit</title>
+    <title>Installation of Xz - 32-bit</title>
 @y
     <title>Xz - 32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Prepare Xz for compilation:</para>
-@y
-    <para>&PreparePackage1;Xz&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of Xz - x32bit</title>
-@y
-    <title>Xz - x32 ビットのインストール</title>
 @z
 
 @x

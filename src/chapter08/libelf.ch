@@ -41,9 +41,9 @@
 @z
 
 @x
-    <para>Compile the package:</para>
+    <para>Compile only Libelf:</para>
 @y
-    <para>&CompileThePackage;</para>
+    <para>libelf のみをビルドします。</para>
 @z
 
 @x
@@ -60,12 +60,8 @@
     <para>Libelf のみをインストールします。</para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Installation of Libelf - 32bit</title>
+    <title>Installation of Libelf - 32-bit</title>
 @y
     <title>Libelf - 32 ビットのインストール</title>
 @z
@@ -85,45 +81,9 @@
 @z
 
 @x
-    <para>Compile the package:</para>
+    <para>Compile only Libelf:</para>
 @y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of Libelf - x32bit</title>
-@y
-    <title>Libelf - x32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Prepare Libelf for compilation:</para>
-@y
-    <para>&PreparePackage1;Libelf&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
+    <para>libelf のみをビルドします。</para>
 @z
 
 @x

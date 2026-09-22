@@ -22,7 +22,7 @@
 @z
 
 @x
-  <para>A minimal system requires a partition of around 10 gigabytes (GB).
+  <para>A minimal system requires a partition of around 15 gigabytes (GB).
   This is enough to store all the source tarballs and compile the packages.
   However, if the LFS system is intended to be the primary Linux system,
   additional software will probably be installed which will require additional
@@ -34,7 +34,7 @@
   package is installed.</para>
 @y
   <para>
-  最小限のシステムであれば 10 GB 程度のディスク容量があれば十分です。
+  最小限のシステムであれば 15 GB 程度のディスク容量があれば十分です。
   これだけあればパッケージやソースの収容に十分で、そこでコンパイル作業を行っていくことができます。
   しかし主要なシステムとして LFS を構築するなら、さらにソフトウェアをインストールすることになるはずなので、さらなる容量が必要となります。
   30 GB ほどのパーティションがあれば、増量していくことを考えても十分な容量でしょう。
@@ -228,7 +228,7 @@
 @z
 
 @x
-    <title>The Grub Bios Partition</title>
+    <title>The Grub BIOS Partition</title>
 @y
     <title>Grub バイオスパーティション</title>
 @z
@@ -236,14 +236,15 @@
 @x
     <para>If the <emphasis>boot disk</emphasis> has been partitioned with a
     GUID Partition Table (GPT), then a small, typically 1 MB, partition must be
-    created if it does not already exist.  This partition is not formatted, but
-    must be available for GRUB to use during installation of the boot
-    loader. This partition will normally be labeled 'BIOS Boot' if using
-    <command>fdisk</command> or have a code of <emphasis>EF02</emphasis> if
-    using the <command>gdisk</command> command.</para>
+    created if the system is being booted with BIOS and it does not already
+    exist.  This partition is not formatted, but must be available for GRUB to
+    use during installation of the boot loader.  This partition will normally
+    be labeled 'BIOS Boot' if using <command>fdisk</command> or have a code of
+    <emphasis>EF02</emphasis> if using the <command>gdisk</command>
+    command.</para>
 @y
     <para>
-    GUID パーティションテーブル (GUID Partition Table; GPT) を利用して <emphasis>ブートディスク</emphasis> をパーティショニングした場合、普通は 1 MB 程度の小さなパーティションをさらに用意しておくことが必要です。
+    GUID パーティションテーブル (GUID Partition Table; GPT) を利用して <emphasis>ブートディスク</emphasis> をパーティショニングした場合、BIOS 起動が必要なのであれば普通は 1 MB 程度の小さなパーティションを用意しておくことが必要です。
     このパーティションのフォーマットは不要であり、ブートローダーをインストールする際に GRUB が利用できるものでなければなりません。
     通常このパーティションは <command>fdisk</command> を用いた場合は 'BIOS Boot' と名付けられます。
     また <command>gdisk</command> コマンドを用いた場合は<emphasis>EF02</emphasis> というコード名が与えられます。
@@ -251,10 +252,10 @@
 @z
 
 @x
-    <note><para>The Grub Bios partition must be on the drive that the BIOS
+    <note><para>The Grub BIOS partition must be on the drive that the BIOS
     uses to boot the system.  This is not necessarily the drive that holds
     the LFS root partition. The disks on a system may use different
-    partition table types. The necessity of the Grub Bios partition depends
+    partition table types. The necessity of the Grub BIOS partition depends
     only on the partition table type of the boot disk.</para></note>
     </sect3>
 @y
@@ -265,6 +266,62 @@
     つまりこの Grub バイオスパーティションに必要なのは、ブートディスクのパーティションテーブルタイプに合わせることだけです。
     </para></note>
     </sect3>
+@z
+
+@x
+    <title>The EFI System Partition</title>
+@y
+    <title>EFI システムパーティション</title>
+@z
+
+@x
+    <para>This partition, also known as the <emphasis>ESP</emphasis>, is needed
+    when booting the system with UEFI.  It stores the EFI application that is
+    ran during bootup. The boot drive can be partitioned with MBR Partition
+    Table, or DOS, but compatibility issues will tend to arise as a result.
+    Therefore, it is always a good idea in this case to partition the boot
+    drive with a GUID Partition Table (GPT). If you're only booting LFS from
+    the partition, 20 MB or lower can suffice. The partition should be bigger
+    than the EFI image size because GRUB dumps a lot of data to the partition
+    before creating the EFI image. To be safe, 128 MB to 256 MB is recommended
+    but can be dropped much lower with some experimentation. The partition
+    label should be 'EFI System' if using <command>fdisk</command>.</para>
+@y
+    <para>
+    このパーティションは <emphasis>ESP</emphasis> とも呼ばれます。
+    これは UEFI を使ったシステムをブートするために必要となります。
+    ここにはブート時に実行される EFI アプリケーションが置かれます。
+    ブートドライブは MBR パーティションテーブル、つまりは DOS パーティションテーブルによってパーティショニングされている必要があります。
+    ただこのことにより、互換性の問題が発生する傾向にあります。
+    その場合には GUID パーティションテーブル (GPT) を使ってブートドライブをパーティショニングすることが推奨されます。
+    そのパーティションから LFS のブートだけを行うのであれば、その容量は 20 MB もあれば十分です。
+    しかしこのパーティションは EFI イメージサイズよりも大きくしなければなりません。
+    それは EFI イメージが生成される前に GRUB が大量のデータをこのパーティションに対して出力するためです。
+    安全を考えて 128 MB から 256 MB とすることが推奨されますが、実験的にこれより少なくすることもありえます。
+    <command>fdisk</command> を利用した場合、このパーティションは 'EFI System' と表されます。
+    </para>
+@z
+
+@x
+    <para>For Grub, the EFI System Partition should be located at
+    <filename class="directory">/boot/efi</filename>.</para>
+@y
+    <para>
+    GRUB を使うなら EFI システムパーティションは  <filename
+    class="directory">/boot/efi</filename> に配置する必要があります。
+    </para>
+@z
+
+@x
+    <para>A lot of UEFI systems have a Compatibility Support Module (CSM) or
+    Legacy Boot option, allowing to boot with BIOS. It could be a good idea to
+    create a Grub BIOS partition if your system supports CSM in case UEFI
+    booting does not work as expected.</para>
+@y
+    <para>
+    多くの UEFI システムには Compatibility Support Module (CSM) あるいは Legacy Boot オプションが用意されていて、これにより BIOS を使ったブートが可能となります。
+    もし UEFI によるブートがうまく動作しない場合であって、システムが CSM をサポートしているのであれば、Grub BIOS パーティションを生成するのが有効かもしれません。
+    </para>
 @z
 
 @x
@@ -297,19 +354,6 @@
       カーネルやブート情報を収納するために利用するパーティションです。
       容量の大きなディスクの場合、ブート時に問題が発生することがあるので、これを回避するには、一つ目のディスクドライブの物理的に一番最初のパーティションを選びます。
       パーティションサイズを 200MB とすればそれで十分です。
-      </para></listitem>
-@z
-
-@x
-      <listitem><para>/boot/efi &ndash; The EFI System Partition, which is
-      needed for booting the system with UEFI.  Read
-      <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>
-      for details.</para></listitem>
-@y
-      <listitem><para>
-      /boot/efi &ndash; EFI システムパーティションであり、UEFI を使ってシステム起動する場合に必要です。
-      詳しくは <ulink
-      url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> を参照してください。
       </para></listitem>
 @z
 
@@ -366,7 +410,6 @@
       BLFS, where multiple large packages like KDE or Texlive can
       be installed without embedding the files in the /usr hierarchy.  If
       used, 5 to 10 gigabytes is generally adequate.</para>
-      </listitem>
 @y
       <listitem><para>
       /opt &ndash; 
@@ -374,7 +417,6 @@
       /usr ディレクトリ以外にインストールする場合です。
       これを別パーティションとするなら、一般的には 5 ～ 10 GB 程度が適当でしょう。
       </para>
-      </listitem>
 @z
 
 @x
@@ -396,16 +438,23 @@
 @z
 
 @x
-      <listitem revision='systemd'><para>/tmp &ndash; By default, systemd
+      <listitem revision='systemd,openrc'><para>/tmp &ndash; By default,
+      <phrase revision="systemd">systemd</phrase>
+      <phrase revision="openrc">OpenRC</phrase>
       mounts a <systemitem class='filesystem'>tmpfs</systemitem> here.
+      <phrase revision="systemd">
       If you want to override that behavior, follow
       <xref linkend='systemd-no-tmpfs'/> when configuring the LFS
-      system.</para></listitem>
+      system.</phrase></para></listitem>
 @y
-      <listitem revision='systemd'><para>
+      <listitem revision='systemd,openrc'><para>
       /tmp &ndash;
-      systemd はデフォルトで <systemitem class='filesystem'>tmpfs</systemitem> をマウントします。
+      <phrase revision="systemd">systemd</phrase>
+      <phrase revision="openrc">OpenRC</phrase>
+      はデフォルトで <systemitem class='filesystem'>tmpfs</systemitem> をマウントします。
+      <phrase revision="systemd">
       この動作を上書きしたい場合は <xref linkend='systemd-no-tmpfs'/> に従って LFS システムを設定してください。
+      </phrase>
       </para></listitem>
 @z
 

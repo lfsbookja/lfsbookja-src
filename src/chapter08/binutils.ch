@@ -19,16 +19,6 @@
 @z
 
 @x
-    <para>First, apply a patch to prevent a bug that causing
-    unnecessary relinking with packages that depend on cmake-3.31.0
-    or newer:</para>
-@y
-    <para>
-    まずはパッチを適用して、cmake-3.31.0 またはそれ以降に依存しているパッケージを不必要にリンクしてしまうバグを解消します。
-    </para>
-@z
-
-@x
     <para>The Binutils documentation recommends building Binutils
     in a dedicated build directory:</para>
 @y
@@ -49,15 +39,6 @@
       <title>&MeaningOfParameter1;configure&MeaningOfParameter2;</title>
 @z
 
-@x --enable-gold
-          <para>Build the gold linker and install it as ld.gold (alongside the
-          default linker).</para>
-@y
-          <para>
-          ゴールドリンカー (gold linker) をビルドし ld.gold としてインストールします。
-          </para>
-@z
-
 @x --enable-ld=default
           <para>Build the original bfd linker and install it as both ld (the
           default linker) and ld.bfd.</para>
@@ -68,7 +49,7 @@
 @z
 
 @x --enable-plugins
-          <para>Enables plugin support for the linker.</para>
+          <para>Enable plugin support for the linker.</para>
 @y
           <para>
           リンカーに対してプラグインサポートを有効にします。
@@ -84,11 +65,26 @@
           </para>
 @z
 
-@x --enable-multilib
-          <para>Enables multilib support in bintutils.</para>
+@x --with-lib-path=/usr/lib
+          <para>Specify the path for the linker (<command>ld</command>)
+          to search.  By default it searches several directories that do not exist
+          on LFS besides <filename class='directory'>/usr/lib</filename>,
+          especially the <filename class='directory'>/usr/lib64</filename>
+          directory that we deliberately avoid.  In the case where
+          <filename class='directory'>/usr/lib64</filename> has been mistakenly
+          created and populated with some libraries, making
+          <command>ld</command> not search the path can highlight the issue
+          earlier with a failure to find those libraries at build time 
+          instead of run time.</para>
 @y
           <para>
-          binutils におけるマルチライブラリサポートを有効にします。
+          リンカー (<command>ld</command>) を探し出すパスを指定します。
+          デフォルトではいくつものディレクトリを検索しますが、LFS において <filename
+          class='directory'>/usr/lib</filename> 以外のものはそもそも存在しません。
+          特に <filename
+          class='directory'>/usr/lib64</filename> は無用なものなので、そういったものは意図的に検索しないようにします。
+          この状況に際して仮に <filename
+          class='directory'>/usr/lib64</filename> が誤って生成されてしまっていて、そこにライブラリが存在している場合、<command>ld</command> がこのパスを検索しないようにしておけば、そのライブラリが実行時でなくビルド時に見つからないことになるため、早期に問題解決ができます。
           </para>
 @z
 
@@ -154,12 +150,10 @@
 @z
 
 @x
-    <para>Twelve tests fail in the gold test suite when the
-    <option>--enable-default-pie</option> and
-    <option>--enable-default-ssp</option> options are passed to GCC.</para>
+    <para>One test related to gprofng is known to fail.</para>
 @y
     <para>
-    GCC に対して <option>--enable-default-pie</option> と <option>--enable-default-ssp</option> の両オプションを指定した場合には、gold テストスイートにおいて 12 個のテストが失敗します。
+    gprofng に関連するテストが 1 つ失敗します。
     </para>
 @z
 
@@ -170,10 +164,10 @@
 @z
 
 @x
-    <para>Remove useless static libraries:</para>
+    <para>Remove useless static libraries and other files:</para>
 @y
     <para>
-    不要なスタティックライブラリを削除します。
+    不要なスタティックライブラリなどのファイルを削除します。
     </para>
 @z
 
@@ -194,13 +188,13 @@
 @z
 
 @x
-        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, nm,
         objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
         <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
         libopcodes.so, and libsframe.so</seg>
         <seg>/usr/lib/ldscripts</seg>
 @y
-        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, ld.gold, nm,
+        <seg>addr2line, ar, as, c++filt, dwp, elfedit, gprof, gprofng, ld, ld.bfd, nm,
         objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
         <seg>libbfd.so, libctf.so, libctf-nobfd.so, libgprofng.so,
         libopcodes.so, libsframe.so</seg>
@@ -292,15 +286,6 @@
           <para>
           複数のオブジェクトファイルやアーカイブファイルから、一つのファイルを生成するリンカー。
           データの再配置やシンボル参照情報の結合を行います。
-          </para>
-@z
-
-@x ld.gold
-          <para>A cut down version of ld that only supports the
-          elf object file format</para>
-@y
-          <para>
-          elf オブジェクト向けファイルフォーマットのサポートにのみ特化した ld の限定バージョン。
           </para>
 @z
 

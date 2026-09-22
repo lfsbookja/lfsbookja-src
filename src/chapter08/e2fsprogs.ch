@@ -86,10 +86,14 @@
 
 @x
     <para>One test named <filename>m_assume_storage_prezeroed</filename>
-    is known to fail.</para>
+    is known to fail.  Another test named <filename>m_rootdir_acl</filename>
+    is known to fail if the file system used for the LFS system is not
+    <systemitem class='filesystem'>ext4</systemitem>.</para>
 @y
     <para>
     <filename>m_assume_storage_prezeroed</filename> というテストが１つだけ失敗します。
+    別のテスト <filename>m_rootdir_acl</filename> というものは、LFS システム向けに <systemitem
+    class='filesystem'>ext4</systemitem> 以外を利用している場合に失敗します。
     </para>
 @z
 
@@ -145,7 +149,7 @@
       For example, some utilities (not in LFS or BLFS) cannot recognize a
       <systemitem class='filesystem'>ext4</systemitem> file system with
       <literal>metadata_csum_seed</literal> feature enabled.
-      <emphasis role='bold'>If</emphasis> you need such an utility, you may
+      <emphasis role='bold'>If</emphasis> you need such a utility, you may
       remove the feature from the default
       <systemitem class='filesystem'>ext4</systemitem> feature list with the
       command:

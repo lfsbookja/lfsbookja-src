@@ -49,14 +49,8 @@ fi
 cp -p ${bookdir}/version.ent .
 if test -f ./version.ent; then
   rm -f version.tmp
-  if test "x$revspec" = "xsysv"; then
-    grep -A1 "%sysv" version.ent >version.tmp
-  elif test "x$revspec" = "xsystemd"; then
-    grep -A1 "%systemd" version.ent >version.tmp
-  else
-    echo >version.tmp
-  fi
-  GITVER=`grep 'ENTITY version ' version.tmp | sed -e 's/^<!ENTITY version[ ]*\"\([.]*\)\">/\1/'`
+  grep "version" version.ent >version.tmp
+  GITVER=`grep 'ENTITY version ' version.tmp | sed -e 's/^<!ENTITY version[ ]*\"#\(.*\)\">/\1/'`
 fi
 AC_MSG_CHECKING([for the original XML version])
 if test ! "$GITVER" = "$TARGETVER"; then

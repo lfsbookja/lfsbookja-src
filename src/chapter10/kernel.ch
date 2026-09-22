@@ -182,13 +182,11 @@
 @z
 
 @x
-      <para>If you are building a 32-bit system running on a hardware
-      with RAM more than 4GB, adjust the configuration so the kernel will
-      be able to use up to 64GB physical RAM:</para>
+        The kernel on a multilib system needs to be able to
+        identify and start binaries compiled for different architectures
+        than the default. Enable support for the 32-bit ABI.
 @y
-      <para>
-      32 ビットシステムの構築時にあたって 4GB 以上の RAM を必要とするハードウェアを稼働させる場合、カーネルが 64 GB までの物理 RAM を利用できるように設定することが必要です。
-      </para>
+        マルチライブラリシステム上のカーネルは、デフォルト状態とは異なりさまざまなアーキテクチャーに対してコンパイルされた実行バイナリを認識し起動する必要があります。
 @z
 
 @x
@@ -203,8 +201,30 @@
 @z
 
 @x
-      <para>While "The IPv6 Protocol" is not strictly
-      required, it is highly recommended by the systemd developers.</para>
+      <para>If you are booting with UEFI, adjust the kernel so it can have EFI
+      partition and runtime support, on top of supporting the DOS VFAT
+      filesystem which is needed for the EFI partition:</para>
+@y
+      <para>If you are booting with UEFI, adjust the kernel so it can have EFI
+      partition and runtime support, on top of supporting the DOS VFAT
+      filesystem which is needed for the EFI partition:</para>
+@z
+
+@x
+        If <literal>PARTITION_ADVANCED</literal> is not selected,
+        <literal>EFI_PARTITION</literal> will be hidden but implicitly
+        selected. Don't select <literal>PARTITION_ADVANCED</literal>
+        just because you need to boot via UEFI.
+@y
+        If <literal>PARTITION_ADVANCED</literal> is not selected,
+        <literal>EFI_PARTITION</literal> will be hidden but implicitly
+        selected. Don't select <literal>PARTITION_ADVANCED</literal>
+        just because you need to boot via UEFI.
+@z
+
+@x
+      <para>While "The IPv6 Protocol" is not strictly required, it is highly
+      recommended by the systemd developers.</para>
 @y
       <para>
       "The IPv6 Protocol" については厳密には不要としても良いものですが、システム開発者は強く推奨しているものです。</para>
@@ -223,57 +243,6 @@
     url="&lfs-root;blfs/view/&short-version;/longindex.html#kernel-config-index">BLFS 
     Index of Kernel Settings</ulink> を参照してください。
     </para>
-@z
-
-@x
-      <para>If your host hardware is using UEFI and you wish to boot the
-      LFS system with it, you should adjust some kernel configuration
-      following <ulink url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
-      the BLFS page</ulink> <emphasis role='bold'>even if you'll use the
-      UEFI bootloader from the host distro</emphasis>.</para>
-@y
-      <para>
-      ホストが UEFI を利用していて、これを使って LFS システムのブートを行いたい場合は、<ulink
-      url="&blfs-book;postlfs/grub-setup.html#uefi-kernel">
-      BLFS ページ</ulink> に従って、カーネル設定を調整する必要があります。
-      <emphasis role='bold'>これは、ホストディストリビューションにて UEFI ブートローダーを利用している場合であっても同様です。</emphasis>
-      </para>
-@z
-
-@x
-      <para>
-        The kernel on a multilib system needs to be able to
-        identify and start binaries compiled for different architectures
-        than the default.
-      </para>
-@y
-      <para>
-        マルチライブラリシステム上のカーネルは、デフォルト状態とは異なりさまざまなアーキテクチャーに対してコンパイルされた実行バイナリを認識し起動する必要があります。
-      </para>
-@z
-
-@x
-      <para arch="ml_32,ml_all">
-        If support for any 32bit ABI was built, make sure that the option
-        "IA32 Emulation" is selected. The option 'IA32 a.out support' is
-        optional.
-      </para>
-@y
-      <para arch="ml_32,ml_all">
-        32 ABI のいずれかをサポートするようにビルドを行っている場合は、オプション "IA32 Emulation" を選んでおく必要があります。
-        オプション 'IA32 a.out support' は任意です。
-      </para>
-@z
-
-@x
-      <para arch="ml_x32,ml_all">
-        If support for the x32bit ABI was built, make sure that the option
-        "x32 ABI for 64-bit mode" is selected.
-      </para>
-@y
-      <para arch="ml_x32,ml_all">
-        x32bit ABI のいずれかをサポートするようにビルドを行っている場合は、オプション "x32 ABI for 64-bit mode" を選んでおく必要があります。
-      </para>
 @z
 
 @x
@@ -744,41 +713,6 @@
 @z
 
 @x
-    <title>Configuring Linux Module Load Order</title>
-@y
-    <title>Linux モジュールのロード順の設定</title>
-@z
-
-@x
-    <para>Most of the time Linux modules are loaded automatically, but
-    sometimes it needs some specific direction.  The program that loads
-    modules, <command>modprobe</command> or <command>insmod</command>, uses
-    <filename>/etc/modprobe.d/usb.conf</filename> for this purpose.  This file
-    needs to be created so that if the USB drivers (ehci_hcd, ohci_hcd and
-    uhci_hcd) have been built as modules, they will be loaded in the correct
-    order; ehci_hcd needs to be loaded prior to ohci_hcd and uhci_hcd in order
-    to avoid a warning being output at boot time.</para>
-@y
-    <para>
-    たいていの場合 Linux モジュールは自動的にロードされます。
-    しかし中には特定の指示を必要とするものもあります。
-    モジュールをロードするプログラム、<command>modprobe</command> または <command>insmod</command> は、そのような指示を行う目的で <filename>/etc/modprobe.d/usb.conf</filename> を利用します。
-    USB ドライバー (ehci_hcd, ohci_hcd, uhci_hcd) がモジュールとしてビルドされていた場合には、それらを正しい順でロードしなければならず、そのために <filename>/etc/modprobe.d/usb.conf</filename> ファイルが必要となります。
-    ehci_hcd は ohci_hcd や uhci_hcd よりも先にロードしなければなりません。
-    これを行わないとブート時に警告メッセージが出力されます。
-    </para>
-@z
-
-@x
-    <para>Create a new file <filename>/etc/modprobe.d/usb.conf</filename> by running
-    the following:</para>
-@y
-    <para>
-    以下のコマンドを実行して <filename>/etc/modprobe.d/usb.conf</filename> ファイルを生成します。
-    </para>
-@z
-
-@x
     <title>Contents of Linux</title>
 @y
     <title>&ContentsOf1;Linux&ContentsOf2;</title>
@@ -794,13 +728,13 @@
 
 @x
         <seg>config-&linux-version;,
-        vmlinuz-&linux-version;-lfs-&version;,
+        vmlinuz-&linux-version;,
         and System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @y
         <seg>config-&linux-version;,
-        vmlinuz-&linux-version;-lfs-&version;,
-        and System.map-&linux-version;</seg>
+        vmlinuz-&linux-version;,
+        System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @z
 

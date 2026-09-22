@@ -103,9 +103,10 @@
         <listitem>
           <para>
             Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
-            GCC, Gettext, Glibc, Grep, Gzip, M4, Man-DB, Procps, Psmisc,
-            Sed, Shadow, <phrase revision='sysv'>SysVinit</phrase><phrase
-            revision='systemd'>Systemd</phrase>, Tar, Util-linux, Zlib
+            GCC, Gettext, Glibc, Grep, Gzip, M4, Man-DB, <phrase
+            revision='openrc'>OpenRC,</phrase> Procps, Psmisc,
+            Sed, Shadow, <phrase revision='sysv'>SysVinit,</phrase><phrase
+            revision='systemd'>Systemd,</phrase> Tar, Util-linux, Zlib
           </para>
         </listitem>
 @y
@@ -113,9 +114,10 @@
         <listitem>
           <para>
             Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
-            GCC, Gettext, Glibc, Grep, Gzip, M4, Man-DB, Procps, Psmisc,
-            Sed, Shadow, <phrase revision='sysv'>SysVinit</phrase><phrase
-            revision='systemd'>Systemd</phrase>, Tar, Util-linux, Zlib
+            GCC, Gettext, Glibc, Grep, Gzip, M4, Man-DB, <phrase
+            revision='openrc'>OpenRC,</phrase> Procps, Psmisc,
+            Sed, Shadow, <phrase revision='sysv'>SysVinit,</phrase><phrase
+            revision='systemd'>Systemd,</phrase> Tar, Util-linux, Zlib
           </para>
         </listitem>
 @z

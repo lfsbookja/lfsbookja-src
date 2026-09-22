@@ -32,105 +32,123 @@
 @z
 
 @x Autoconf Consolidated Fixes Patch
-        <para>Download: <ulink url="&patches-root;&autoconf-fixes-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;autoconf/&autoconf-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&autoconf-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;autoconf/&autoconf-fixes-patch;"/></para>
 @z
 
-@x Bash Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&bash-upstream-fixes-patch;"/></para>
+@x Bash Cross Compile Fix Patch
+        <para>Download: <ulink url="&patches-root;bash/&bash-crosscompile-fix-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&bash-upstream-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;bash/&bash-crosscompile-fix-patch;"/></para>
 @z
 
 @x Binutils Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;binutils/&binutils-upstream-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&binutils-upstream-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;binutils/&binutils-upstream-patch;"/></para>
 @z
 
 @x Bzip2 Documentation Patch
-        <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;bzip2/&bzip2-docs-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;bzip2/&bzip2-docs-patch;"/></para>
 @z
 
 @x Coreutils Internationalization Fixes Patch
-        <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;coreutils/&coreutils-i18n-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;coreutils/&coreutils-i18n-patch;"/></para>
 @z
 
-@x Expect GCC14 Patch
-        <para>Download: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
+@x Expect GCC15 Patch
+        <para>Download: <ulink url="&patches-root;expect/&expect-gcc15-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&expect-gcc14-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;expect/&expect-gcc15-patch;"/></para>
 @z
 
 @x Gcc glibc-2.36 Fixes Patch
-        <para>Download: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;gcc/&gcc-upstream-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&gcc-upstream-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;gcc/&gcc-upstream-fixes-patch;"/></para>
 @z
 
 @x Glibc Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;glibc/&glibc-upstream-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&glibc-upstream-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;glibc/&glibc-upstream-patch;"/></para>
 @z
 
 @x Glibc FHS Patch
-        <para>Download: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;glibc/&glibc-fhs-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&glibc-fhs-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;glibc/&glibc-fhs-patch;"/></para>
 @z
 
 @x Kbd Backspace/Delete Fix Patch
-        <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;kbd/&kbd-backspace-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;kbd/&kbd-backspace-patch;"/></para>
 @z
 
 @x Meson Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&meson-fix-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;meson/&meson-fix-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&meson-fix-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;meson/&meson-fix-patch;"/></para>
 @z
 
 @x Libpipeline Checks Patch
-        <para>Download: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;libpipeline/&libpipeline-checks-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&libpipeline-checks-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;libpipeline/&libpipeline-checks-patch;"/></para>
 @z
 
-@x Readline Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+@x OpenRC Lock Patch
+        <para>Download: <ulink url="&lfs-root;glfs/view/dev/download/openrc/&openrc-lock-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&lfs-root;glfs/view/dev/download/openrc/&openrc-lock-patch;"/></para>
 @z
 
-@x Sysvinit Consolidated Patch
-        <para>Download: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
+@x Perl Upstream Fix Patch
+        <para>Download: <ulink url="&patches-root;perl/&perl-upstream-fix-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&sysvinit-consolidated-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;perl/&perl-upstream-fix-patch;"/></para>
 @z
 
-@x Systemd Upstream Patch
-        <para>Download: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
+@x Python Openssl4 Patch
+        <para>Download: <ulink url="&patches-root;Python/&python-openssl4-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&systemd-upstream-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;Python/&python-openssl4-fixes-patch;"/></para>
+@z
+
+@x SysVinit Consolidated Patch
+        <para>Download: <ulink url="&patches-root;sysvinit/&sysvinit-consolidated-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;sysvinit/&sysvinit-consolidated-patch;"/></para>
+@z
+
+@x Systemd OpenSSL 4 Patch
+        <para>Download: <ulink url="&patches-root;systemd/&systemd-upstream-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;systemd/&systemd-upstream-patch;"/></para>
+@z
+
+@x Tar Upstream Patch
+        <para>Download: <ulink url="&patches-root;tar/&tar-aclfix-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;tar/&tar-aclfix-patch;"/></para>
 @z
 
 @x Xz Upstream Fix Patch
-        <para>Download: <ulink url="&patches-root;&xz-upstream-fix-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;xz/&xz-upstream-fix-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&xz-upstream-fix-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;xz/&xz-upstream-fix-patch;"/></para>
 @z
 
 @x Zstd Upstream Fixes Patch
-        <para>Download: <ulink url="&patches-root;&zstd-upstream-fixes-patch;"/></para>
+        <para>Download: <ulink url="&patches-root;zstd/&zstd-upstream-fixes-patch;"/></para>
 @y
-        <para>&Download;: <ulink url="&patches-root;&zstd-upstream-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;zstd/&zstd-upstream-fixes-patch;"/></para>
 @z
 
 @x

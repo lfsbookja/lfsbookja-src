@@ -97,74 +97,112 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Advantages</bridgehead>
+    <title>Advantages</title>
 @y
-    <bridgehead renderas="sect3">長所</bridgehead>
+    <title>長所</title>
 @z
 
 @x
-          <para>Established, well understood system.</para>
+        <para>Established, well understood system.</para>
 @y
-          <para>
-          確立されていて、十分に理解されているシステムであること。
-          </para>
+        <para>
+        確立されていて、十分に理解されているシステムであること。
+        </para>
 @z
 
 @x
-          <para>Easy to customize.</para>
+        <para>Easy to customize.</para>
 @y
-          <para>
-          容易にカスタマイズ可能であること。
-          </para>
+        <para>
+        容易にカスタマイズ可能であること。
+        </para>
 @z
 
 @x
-    <bridgehead renderas="sect3">Disadvantages</bridgehead>
+        <para>Well supported and backed by major Linux distributions.</para>
 @y
-    <bridgehead renderas="sect3">短所</bridgehead>
+        <para>主要 Linux ディストリビューションにより採用されサポートされていること。</para>
 @z
 
 @x
-          <para>May be slower to boot.  A medium speed base LFS system
-          takes 8-12 seconds where the boot time is measured from the
-          first kernel message to the login prompt.  Network
-          connectivity is typically established about 2 seconds
-          after the login prompt.</para>
+        <para>Parallelized.</para>
 @y
-          <para>
-          おそらく起動が遅いこと。
-          中程度の処理性能による LFS システムの場合、最初のカーネルメッセージの出力からログインプロンプトまでの処理時間は 8 から 12 秒程度。
-          ログイン後のネットワーク接続の確立に 2 秒ほど要する。
-          </para>
+        <para>並行処理。</para>
 @z
 
 @x
-          <para>Serial processing of boot tasks. This is related to the previous
-          point.  A delay in any process, such as a file system check, will
-          delay the entire boot process.</para>
+        <para>Cgroups support.</para>
 @y
-          <para>
-          起動タスクがすべて順番に行われること。
-          これは前項にも関係する。
-          ファイルシステムのチェックなどの処理に処理遅延があったとすると、起動処理全体の処理時間を遅らせることになる。
-          </para>
+        <para>Cgroups サポート。</para>
 @z
 
 @x
-          <para>Does not directly support advanced features like
-          control groups (cgroups) and per-user fair share scheduling.</para>
+    <title>Disadvantages</title>
 @y
-          <para>
-          コントロールグループ (control groups; cgroups) やユーザーごとの適正なスケジュール共有といった、最新機能には直接対応していないこと。
-          </para>
+    <title>短所</title>
 @z
 
 @x
-          <para>Adding scripts requires manual, static sequencing decisions.</para>
+        <para>It is not as convenient as Systemd.</para>
 @y
-          <para>
-          スクリプト追加にあたっては手作業を要し、固定的な順序を考慮しないといけないこと。
-          </para>
+        <para>It is not as convenient as Systemd.</para>
+@z
+
+@x
+        <para>It does not provide the amount of tooling Systemd does.</para>
+@y
+        <para>It does not provide the amount of tooling Systemd does.</para>
+@z
+
+@x
+        <para>Certain features that projects depend on that only exist in
+        Systemd may take a while before seeing parity in OpenRC.</para>
+@y
+        <para>Certain features that projects depend on that only exist in
+        Systemd may take a while before seeing parity in OpenRC.</para>
+@z
+
+@x
+        <para>May be slower to boot.  A medium speed base LFS system
+        takes 8-12 seconds where the boot time is measured from the
+        first kernel message to the login prompt.  Network
+        connectivity is typically established about 2 seconds
+        after the login prompt.</para>
+@y
+        <para>
+        おそらく起動が遅いこと。
+        中程度の処理性能による LFS システムの場合、最初のカーネルメッセージの出力からログインプロンプトまでの処理時間は 8 から 12 秒程度。
+        ログイン後のネットワーク接続の確立に 2 秒ほど要する。
+        </para>
+@z
+
+@x
+        <para>Serial processing of boot tasks. This is related to the previous
+        point. A delay in any process, such as a file system check, will
+        delay the entire boot process.</para>
+@y
+        <para>
+        起動タスクがすべて順番に行われること。
+        これは前項にも関係する。
+        ファイルシステムのチェックなどの処理に処理遅延があったとすると、起動処理全体の処理時間を遅らせることになる。
+        </para>
+@z
+
+@x
+        <para>Does not directly support advanced features like
+        control groups (cgroups) and per-user fair share scheduling.</para>
+@y
+        <para>
+        コントロールグループ (control groups; cgroups) やユーザーごとの適正なスケジュール共有といった、最新機能には直接対応していないこと。
+        </para>
+@z
+
+@x
+        <para>Adding scripts requires manual, static sequencing decisions.</para>
+@y
+        <para>
+        スクリプト追加にあたっては手作業を要し、固定的な順序を考慮しないといけないこと。
+        </para>
 @z
 
 %     <title>Systemd</title>

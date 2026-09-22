@@ -49,14 +49,14 @@
 @z
 
 @x
-    <note><para>There are frequent misunderstandings about this chapter.  The
-    procedures are the same as every other chapter, as explained earlier (<xref
+    <note><para>There are frequent misunderstandings about the instructions here.  The
+    procedures are the same as every other package, as explained earlier (<xref
     linkend='buildinstr'/>).  First, extract the gcc-&gcc-version; tarball from the sources
     directory, and then change to the directory created.  Only then should you
     proceed with the instructions below.</para></note>
 @y
     <note><para>
-    本節においては誤解が多く発生しています。
+    ここにおいて示す手順には誤解がたくさん発生しています。
     ここでの手順は他のものと同様であり、手順の概要 (<xref linkend='buildinstr'/>) は説明済です。
     まず初めに gcc-&gcc-version; の tarball を伸張 (解凍) し、生成されたソースディレクトリに移動します。
     それに加えて本節では、以下の手順を行うものとなります。
@@ -64,71 +64,89 @@
 @z
 
 @x
-    <para arch="default">On x86_64 hosts, set the default directory name for
-    64-bit libraries to <quote>lib</quote>:</para>
-@y
-    <para arch="default">
-    x86_64 ホストにおいて、64 ビットライブラリに対するデフォルトのディレクトリ名は<quote>lib</quote>です。
-    </para>
-@z
-
-@x
-    <para arch="ml_32,ml_x32,ml_all">Change the default directory name for
+    <para>Change the default directory name for
     libraries:</para>
 @y
-    <para arch="ml_32,ml_x32,ml_all">
-    各ライブラリ向けのデフォルトディレクトリ名を変更します。
-    </para>
+    <para>Change the default directory name for
+    libraries:</para>
 @z
 
 @x
-    <para arch="ml_32,ml_all">Make <literal>-mstackrealign</literal>
-      a default for 32bit objects:</para>
+        This example demonstrates the use of the
+        <parameter>-i.orig</parameter> switch.  It makes the
+        <command>sed</command> copy the <filename>t-linux64</filename> file
+        to <filename>t-linux64.orig</filename>, and then edit the original
+        <filename>t-linux64</filename> file inplace.  So you may run
+        <command>diff -u gcc/config/i386/t-linux64{.orig,}</command>
+        to visualize the change done by the <command>sed</command> command
+        afterwards. We'll simply use <parameter>-i</parameter> (which just
+        edits the original file inplace without copying it) for all other
+        packages in the book, but you can change it to
+        <parameter>-i.orig</parameter> in any case you want to keep a copy
+        of the original file.
 @y
-    <para arch="ml_32,ml_all">
-    32 ビットオブジェクト向けに <literal>-mstackrealign</literal> をデフォルトとします。
-    </para>
+        This example demonstrates the use of the
+        <parameter>-i.orig</parameter> switch.  It makes the
+        <command>sed</command> copy the <filename>t-linux64</filename> file
+        to <filename>t-linux64.orig</filename>, and then edit the original
+        <filename>t-linux64</filename> file inplace.  So you may run
+        <command>diff -u gcc/config/i386/t-linux64{.orig,}</command>
+        to visualize the change done by the <command>sed</command> command
+        afterwards. We'll simply use <parameter>-i</parameter> (which just
+        edits the original file inplace without copying it) for all other
+        packages in the book, but you can change it to
+        <parameter>-i.orig</parameter> in any case you want to keep a copy
+        of the original file.
 @z
 
 @x
-      <para>Adding the <literal>-mstackrealign</literal> flag by default
-        helps to overcome issues with old binaries which cannot be
-        recompiled on the actual OS.</para>
+    <para>Make <literal>-mstackrealign</literal> a default for 32-bit
+    objects:</para>
 @y
-      <para>
-        <literal>-mstackrealign</literal> フラグをデフォルトとして追加しておくと、実際の OS 上において古いバイナリが再コンパイルできない問題を解消できるかもしれません。
-      </para>
+    <para>Make <literal>-mstackrealign</literal> a default for 32-bit
+    objects:</para>
 @z
 
 @x
-      <para>Today the x86-32 SysV psABI (used by all Linux programs)
-        mandates a 16-byte alignment of the stack frame, so the routines
-        using SSE will save/load SSE vectors onto/from the stack using a
-        <literal>movaps</literal> instruction (which only works with
-        aligned addresses, but faster than its counterpart allowing
-        unaligned addresses, <literal>movups</literal>).</para>
+      <para>The <literal>-mstackrealign</literal> has a special purpose for
+        32-bit. All applications have a stack frame alignment.
+        Typically in old applications (and also some applications in today's
+        age) that are built for 32-bit, typically for Windows,
+        have a stack frame alignment of 4 bytes. The x86 System V ABI Processor
+        Supplement demands that both 32-bit and 64-bit applications have a
+        stack frame alignment of 16 bytes.</para>
+      <para>The stack frame alignment is necessary for the x86 assembly
+      <literal>movaps</literal> and <literal>movdqa</literal> instructions to
+      work, which are used as faster alternatives to <literal>movups</literal>.
+      When the stack frame alignment is not correct, those assembly
+      instructions will trigger a General Protection Error, leading to a
+      <literal>SIGSEGV</literal> kill signal.</para>
+      <para>In order to prevent this, <literal>-mstackrealign</literal> offers
+      different potential stack frame alignments if necessary. In order to
+      ensure that every piece of software has a good stack frame alignment,
+      every package is compiled with <literal>-mstackrealign</literal>, which
+      the above makes it the default for targeting 32-bit. Glibc is the main
+      one that needs it.</para>
 @y
-      <para>
-        最近の x86-32 SysV psABI (あらゆる Linux プログラムが利用) ではスタックフレームに 16 バイトアライメントを要請しています。
-        したがって SSE を利用する処理ルーチンは、<literal>movaps</literal>命令を利用して、スタックとの間での SSE ベクターのセーブ／ロードを行います (これはアラインされたアドレスにおいてのみ動作するものであり、それとは対照となる非アライメントアドレスの <literal>movups</literal> よりも高速に動作します )。
-      </para>
-@z
-
-@x
-      <para>But some really old x86-32 Linux binaries (compiled about
-        15 years ago), and all Windows x86-32 binaries which might be
-        run via <application>Wine</application> or <application>Steam</application>
-        only aligns the
-        stack frame to 4-byte. Thus, when it calls a SSE routine in LFS
-        built without <literal>-mstackrealign</literal>, the
-        <literal>movdqa</literal> instruction fails with a General
-        Protection Error and the Linux kernel terminates the process
-        with a SIGSEGV.</para>
-@y
-      <para>
-        しかし中には (15 年ほど前にコンパイルされたような) 古い Linux バイナリーが今も存在し、また <application>Wine</application> や <application>Steam</application> を通じて実行される Windows x86-32 であればそのすべてが スタックフレームに 4 バイトしか割り当てていません。
-        したがって <literal>-mstackrealign</literal> を指定せずに LFS をビルドしてしまうと、<literal>movdqa</literal> 命令は General Protection Error により失敗し、Linux カーネルは SIGSEGV によりプロセス終了します。
-      </para>
+      <para>The <literal>-mstackrealign</literal> has a special purpose for
+        32-bit. All applications have a stack frame alignment.
+        Typically in old applications (and also some applications in today's
+        age) that are built for 32-bit, typically for Windows,
+        have a stack frame alignment of 4 bytes. The x86 System V ABI Processor
+        Supplement demands that both 32-bit and 64-bit applications have a
+        stack frame alignment of 16 bytes.</para>
+      <para>The stack frame alignment is necessary for the x86 assembly
+      <literal>movaps</literal> and <literal>movdqa</literal> instructions to
+      work, which are used as faster alternatives to <literal>movups</literal>.
+      When the stack frame alignment is not correct, those assembly
+      instructions will trigger a General Protection Error, leading to a
+      <literal>SIGSEGV</literal> kill signal.</para>
+      <para>In order to prevent this, <literal>-mstackrealign</literal> offers
+      different potential stack frame alignments if necessary. In order to
+      ensure that every piece of software has a good stack frame alignment,
+      every package is compiled with <literal>-mstackrealign</literal>, which
+      the above makes it the default for targeting 32-bit. Glibc is the main
+      one that needs it.</para>
 @z
 
 @x
@@ -217,6 +235,21 @@
           </para>
 @z
 
+@x --disable-fixincludes
+          <para>By default, during the installation of GCC some system
+          headers would be <quote>fixed</quote> to be used with GCC.  At
+          this point we've installed no headers for the cross-compiler to
+          use, so building the auxiliary programs for the <quote>fix</quote>
+          would just waste time.  This switch disables the
+          <quote>fix</quote> and skips the build of those programs.</para>
+@y
+          <para>
+          GCC のインストール時に GCC が利用するヘッダーは <quote>fixed</quote> のものを利用するシステムがあります。
+          本書のこの時点においてインストールするヘッダーはクロスコンパイラー用であるため、関連する補助プログラムを <quote>fix</quote> を用いてビルドするのは無駄な時間を要します。
+          本スイッチは <quote>fix</quote> を無効とし、関連するプログラムのビルドをスキップします。
+          </para>
+@z
+
 @x --disable-shared
           <para>This switch forces GCC to link its internal libraries
           statically. We need this because the shared libraries require Glibc,
@@ -228,22 +261,12 @@
           </para>
 @z
 
-@x --disable-multilib
-          <para>On x86_64, LFS does not support a multilib configuration.
-          This switch is harmless for x86.</para>
-@y
-          <para>
-          x86_64 に対して LFS はマルチライブラリのサポートをしていません。
-          このオプション指定は x86 には無関係です。
-          </para>
-@z
 @x --enable-multilib --with-multilib-list=...
-          <para>LFS can be used to support multilib. Which they are is
-          specified in the multilib list.</para>
+          <para>These parameters both enable multilib and which architectures
+          to support.</para>
 @y
           <para>
-          LFS はマルチライブラリサポートを有効にできます。
-          どのライブラリを有効にするかは、マルチライブラリリストを使って指定します。
+          このパラメーターはマルチライブラリサポートを有効にし、どのアーキテクチャーをサポートするのかを指定します。
           </para>
 @z
 
@@ -306,21 +329,6 @@
     以下のようなコマンドを通じて、その内部ヘッダーファイルの完成版を作り出します。
     このコマンドは GCC ビルドが通常行っている方法と同じものです。
     </para>
-@z
-
-@x
-      <para>The command below shows an example of nested command substitution
-      using two methods: backquotes and a <literal>$()</literal> construct. 
-      It could be rewritten using the same method for both substitutions,
-      but is shown this way to demonstrate how they can be mixed.  Generally
-      the <literal>$()</literal> method is preferred.</para>
-@y
-      <para>
-      以下に示すコマンドは、2 つの手法、つまりバッククォートと <literal>$()</literal> 構文を使って、ネスト化したコマンド置換を行う例を示しています。
-      これは、両方の置換において一つの手法のみを使って書き換えることもできます。
-      ただしここでは、両者を混在させても実現できることを示すものです。
-      一般的には <literal>$()</literal> 構文による手法がよく用いられます。
-      </para>
 @z
 
 @x

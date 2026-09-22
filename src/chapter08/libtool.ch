@@ -33,24 +33,9 @@
 @z
 
 @x
-<para>To test the results<!--(about 11.0 SBU)-->, issue:</para>
+<para>To test the results, issue:</para>
 @y
-<para>コンパイル結果をテストするには以下を実行します。</para>
-@z
-
-@x
-    <para>Five tests are known to fail in the LFS build environment due
-    to a circular dependency, but these tests pass if rechecked after
-    automake has been installed.  Additionally, with grep-3.8 or newer,
-    two tests will trigger a warning for non-POSIX regular expressions and
-    fail.</para>
-@y
-    <para>
-    LFS ビルド環境下では５つのテストが失敗します。
-    これはパッケージ間の相互依存のためです。
-    automake をインストールした後に再テストすれば、全テストが成功します。
-    さらに grep-3.8 またはそれ以降を利用している場合は、2 つのテストにおいて非 POSIX 正規表現に対する警告メッセージが出力され失敗します。
-    </para>
+<para>ビルド結果をテストする場合は以下を実行します。</para>
 @z
 
 @x
@@ -60,57 +45,17 @@
 @z
 
 @x
-    <para>Remove a useless static library:</para>
+    <para>Remove a static library only useful for the test suite:</para>
 @y
     <para>
-    不要なスタティックライブラリを削除します。
+    テストスイートにおいてのみ必要であったスタティックライブラリを削除します。
     </para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Installation of Libtool - 32bit</title>
+    <title>Installation of Libtool - 32-bit</title>
 @y
     <title>Libtool - 32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Prepare Libtool for compilation:</para>
-@y
-    <para>&PreparePackage1;Libtool&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of Libtool - x32bit</title>
-@y
-    <title>Libtool - x32 ビットのインストール</title>
 @z
 
 @x

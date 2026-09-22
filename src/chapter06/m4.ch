@@ -22,11 +22,10 @@
 @z
 
 @x
-    <para>First, make some fixes introduced by glibc-2.28:</para>
+       Ensure packages that use gnulib detect some newer functions 
+       found in glibc-2.44.
 @y
-    <para>
-    glibc-2.28 に対して必要となる修正を行います。
-    </para>
+       glibc-2.44 における最新の関数を、gnulib を利用する各パッケージが検出できるようにします。
 @z
 
 @x

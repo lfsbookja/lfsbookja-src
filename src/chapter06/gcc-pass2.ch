@@ -34,14 +34,6 @@
 @z
 
 @x
-    <para>First fix a problem with the latest version of glibc:</para>
-@y
-    <para>
-    まずは glibc の最新版における問題を修正します。
-    </para>
-@z
-
-@x
     <para>As in the first build of GCC, the GMP, MPFR, and MPC packages are
     required. Unpack the tarballs and move them into the required directories:</para>
 @y
@@ -52,38 +44,20 @@
 @z
 
 @x
-    <para arch="default">If building on x86_64, change the default directory name for 64-bit
-    libraries to <quote>lib</quote>:</para>
-@y
-    <para arch="default">
-    x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を<quote>lib</quote>にします。
-    </para>
-@z
-
-@x
-    <para arch="ml_32,ml_x32,ml_all">Change the default directory name for the
+    <para>Change the default directory name for the
     libraries:</para>
 @y
-    <para arch="ml_32,ml_x32,ml_all">
-    各ライブラリ向けのデフォルトディレクトリ名を変更します。
+    <para>
+    ライブラリのデフォルトディレクトリ名を変更します。
     </para>
 @z
 
 @x
-    <para arch="ml_32,ml_all">Make <literal>-mstackrealign</literal> a default for 32bit
+    <para>Make <literal>-mstackrealign</literal> a default for 32-bit
       objects:</para>
 @y
-    <para arch="ml_32,ml_all">
-    32 ビットオブジェクト向けに <literal>-mstackrealign</literal> をデフォルトとします。
-    </para>
-@z
-
-@x
-    <para>Override the building rule of libgcc and libstdc++ headers, to
-    allow building these libraries with POSIX threads support:</para>
-@y
     <para>
-    libgcc と libstdc++ のヘッダーのビルドルールを変更して、これらのライブラリに対して POSIX スレッドサポートを含めてビルドするようにします。
+    32 ビットオブジェクト向けに <literal>-mstackrealign</literal> をデフォルトとします。
     </para>
 @z
 
@@ -116,24 +90,6 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title><!-- WIP -->
 @z
 
-@x -with-build-sysroot=$LFS
-          <para>Normally, using <parameter>--host</parameter> ensures that
-          a cross-compiler is used for building GCC, and that compiler knows
-          that it has to look for headers and libraries in <filename
-          class="directory">$LFS</filename>. But the build system for GCC uses
-          other tools, which are not aware of this location. This switch is
-          needed so those tools will find the needed files in <filename
-          class="directory">$LFS</filename>, and not on the host.</para>
-@y
-          <para>
-          通常は <parameter>--host</parameter> を用いれば、GCC ビルドにクロスコンパイラーが用いられ、参照すべきヘッダーやライブラリも <filename
-          class="directory">$LFS</filename> にあるものが用いられるように指示されます。
-          しかし GCC 向けのビルドシステムは別のツールを使っているので、上のような場所を認識できていません。
-          本スイッチは、そのツール類が必要とするファイルを、ホスト内からではなく、<filename
-          class="directory">$LFS</filename> から探し出すようにします。
-          </para>
-@z
-
 @x --target=$LFS_TGT
           <para>We are cross-compiling GCC, so it's impossible to build
           target libraries (<filename class="libraryfile">libgcc</filename>
@@ -158,20 +114,35 @@
           </para>
 @z
 
-@x LDFLAGS_FOR_TARGET=...
-          <para>Allow <filename class="libraryfile">libstdc++</filename> to
-          use the <filename class="libraryfile">libgcc</filename> being
-          built in this pass, instead of the previous version built in
-          <xref linkend='ch-tools-gcc-pass1'/>.  The previous version cannot
-          properly support C++ exception handling because it was built
-          without libc support.</para>
+@x -with-build-sysroot=$LFS
+          <para>Normally, using <parameter>--host</parameter> ensures that
+          a cross-compiler is used for building GCC, and that compiler knows
+          that it has to look for headers and libraries in <filename
+          class="directory">$LFS</filename>. However, the build system for GCC
+          uses additional tools which are not aware of this location. This
+          switch is needed so those tools will find the needed files in
+          <filename class="directory">$LFS</filename>, and not on the host.</para>
 @y
           <para>
-          <filename class="libraryfile">libstdc++</filename> が今回ビルドされたライブラリ <filename
-          class="libraryfile">libgcc</filename> を用いるようにします。
-          それは <xref linkend='ch-tools-gcc-pass1'/> においてビルドされた前回のバージョンではありません。
-          前回のバージョンは C++ 例外処理を適切に処理できません。
-          これは libc サポートを抜きにしてビルドされているためです。
+          通常は <parameter>--host</parameter> を用いれば、GCC ビルドにクロスコンパイラーが用いられ、参照すべきヘッダーやライブラリも <filename
+          class="directory">$LFS</filename> にあるものが用いられるように指示されます。
+          しかし GCC 向けのビルドシステムは別のツールを使っているので、上のような場所を認識できていません。
+          本スイッチは、そのツール類が必要とするファイルを、ホスト内からではなく、<filename
+          class="directory">$LFS</filename> から探し出すようにします。
+          </para>
+@z
+
+@x --disable-fixincludes
+          <para>By default, during the installation of GCC some system
+          headers would be <quote>fixed</quote> to be used with GCC.  This
+          is not necessary for a modern Linux system, and potentially
+          harmful if a package is reinstalled after installing GCC.  This
+          switch prevents GCC from <quote>fixing</quote> the headers.</para>
+@y
+          <para>
+          GCC のインストール時に GCC が利用するヘッダーは <quote>fixed</quote> のものを利用するシステムがあります。
+          これは現代の Linux システムにおいては不要なものであり、GCC インストールの後にパッケージインストールを行う際の潜在的な弊害となり得ます。
+          本スイッチは GCC のヘッダーを<quote>fixing</quote>とならないようにします。
           </para>
 @z
 
@@ -186,6 +157,23 @@
           GCC のサニタイザーランタイムライブラリを無効にします。
           これはここでの一時的インストールにおいては不要です。
           <xref linkend='ch-tools-gcc-pass1'/> においては、<parameter>--disable-libstdcxx</parameter> によって暗にそれを行っていましたが、ここではそれを明示的に行う必要があります。
+          </para>
+@z
+
+@x LDFLAGS_FOR_TARGET=...
+          <para>Allow <filename class="libraryfile">libstdc++</filename> to
+          use the <filename class="libraryfile">libgcc</filename> being
+          built in this pass, instead of the previous version built in
+          <xref linkend='ch-tools-gcc-pass1'/>.  The previous version cannot
+          properly support C++ exception handling because it was built
+          without libc support.</para>
+@y
+          <para>
+          <filename class="libraryfile">libstdc++</filename> が今回ビルドされたライブラリ <filename
+          class="libraryfile">libgcc</filename> を用いるようにします。
+          それは <xref linkend='ch-tools-gcc-pass1'/> においてビルドされた前回のバージョンではありません。
+          前回のバージョンは C++ 例外処理を適切に処理できません。
+          これは libc サポートを抜きにしてビルドされているためです。
           </para>
 @z
 

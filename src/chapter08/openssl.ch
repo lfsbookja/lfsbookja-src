@@ -68,9 +68,14 @@
 @z
 
 @x
-    <para>Install the package:</para>
+    <para>Install the package (setting an empty
+    <envar>INSTALL_LIBS</envar> prevents the installation of static
+    libraries):</para>
 @y
-    <para>&InstallThePackage;</para>
+    <para>
+    &InstallThePackage;
+    (<envar>INSTALL_LIBS</envar> を空定義とするのは、スタティックライブラリをインストールしないようにするためです)
+    </para>
 @z
 
 @x
@@ -119,50 +124,10 @@
         詳しくは関連する話が <xref linkend='pkgmgmt-upgrade-issues'/> にあるので参照してください。
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Installation of OpenSSL - 32bit</title>
+    <title>Installation of OpenSSL - 32-bit</title>
 @y
     <title>OpenSSL - 32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Prepare OpenSSL for compilation:</para>
-@y
-    <para>&PreparePackage1;OpenSSL&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of OpenSSL - x32bit</title>
-@y
-    <title>OpenSSL - x32 ビットのインストール</title>
 @z
 
 @x

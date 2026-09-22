@@ -20,20 +20,8 @@
 @z
 
 @x
-      <para>If you are building for 32-bit x86, but you have a CPU which is
-      capable of running 64-bit code <emphasis>and</emphasis> you have specified
-      <envar>CFLAGS</envar> in the environment, the configure script will
-      attempt to configure for 64-bits and fail.
-      Avoid this by invoking the configure command below with
-@y
-      <para>
-      32 ビット x86 CPU にて環境構築する際に、64 ビットコードを扱う CPU 環境であって <emphasis>かつ</emphasis> <envar>CFLAGS</envar> を指定していると、本パッケージの configure スクリプトは 64 ビット用の処理を行い失敗します。
-      これを回避するには、以下のように処理してください。
-@z
-
-@x
       <para>The default settings of GMP produce libraries optimized for
-      the host processor.  If libraries suitable for processors less
+      the host processor. If libraries suitable for processors less
       capable than the host's CPU are desired, generic libraries can be
       created by appending the <option>--host=none-linux-gnu</option> option
       to the <command>configure</command> command.</para>
@@ -126,12 +114,8 @@
     <para>パッケージと HTML ドキュメントをインストールします。</para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Installation of GMP - 32bit</title>
+    <title>Installation of GMP - 32-bit</title>
 @y
     <title>GMP - 32 ビットのインストール</title>
 @z
@@ -166,13 +150,19 @@
 @z
 
 @x --includedir=/usr/include/m32/gmp
-          <para>Some definitions in gmp.h differs for each arch but
-          has same name. Therefore, the headers must be separated from
-          each other.</para>
+          <para>The headers for GMP differ between architectures. Since dealing
+          with GMP is a delicate matter, the headers must be separated per
+          architecture. On a per-package basis, the header path for GMP will
+          overriden, like in the case of <ulink
+          url="/glfs/view/dev/shareddeps/nettle.html">Nettle</ulink> in
+          GLFS.</para>
 @y
           <para>
-          gmp.h の中の定義においては各アーキテクチャー向けに異なるものがありますが、ファイル名は同一のものとなっています。
-          したがってヘッダーファイルは区別して配置しなければなりません。
+          GMP のヘッダーファイルはアーキテクチャーにより異なります。
+          GMP の取り扱いは慎重に行う必要があるため、ヘッダーはアーキテクチャーごとに分けなければなりません。
+          パッケージ単位のインストール手法に従って、GMP のヘッダーパスは上書き更新されます。
+          ちょうど GLFS における <ulink
+          url="/glfs/view/dev/shareddeps/nettle.html">Nettle</ulink> と同様です。
           </para>
 @z
 
@@ -199,82 +189,11 @@
 @z
 
 @x
-    <para>Ensure that all 197 tests in the test suite passed.
+    <para>Ensure that all 199 tests in the test suite passed.
     Check the results by issuing the following command:</para>
 @y
     <para>
-    197 個のテストすべてが完了することを確認してください。
-    テスト結果は以下のコマンドにより確認することができます。
-    </para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of GMP - x32-bit</title>
-@y
-    <title>GMP - x32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Generic libraries can be created by running
-    the following:</para>
-@y
-    <para>
-    汎用ライブラリは以下を実行することで生成されます。
-    </para>
-@z
-
-@x
-    <para>Prepare GMP for compilation:</para>
-@y
-    <para>&PreparePackage1;GMP&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-      <para>The test suite for GMP in this section is considered critical.
-      Do not skip it under any circumstances.</para>
-@y
-      <para>
-      本節における GMP のテストスイートは極めて重要なものです。
-      したがってどのような場合であっても必ず実行してください。
-      </para>
-@z
-
-@x
-    <para>Test the results:</para>
-@y
-    <para>テストを実行します。</para>
-@z
-
-@x
-    <para>Ensure that all 197 tests in the test suite passed.
-    Check the results by issuing the following command:</para>
-@y
-    <para>
-    197 個のテストすべてが完了することを確認してください。
+    199 個のテストすべてが完了することを確認してください。
     テスト結果は以下のコマンドにより確認することができます。
     </para>
 @z

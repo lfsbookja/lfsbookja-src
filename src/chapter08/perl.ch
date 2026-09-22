@@ -19,15 +19,6 @@
 @z
 
 @x
-    <para>First, apply a patch that fixes an issue highlighted by recent
-    versions of gdbm:</para>
-@y
-    <para>
-    はじめに、gdbm の最新版において明らかになった問題を修正するためのパッチを適用します。
-    </para>
-@z
-
-@x
     <para>This version of Perl builds the Compress::Raw::Zlib and
     Compress::Raw::BZip2 modules. By
     default Perl will use an internal copy of the sources for the build.
@@ -94,10 +85,10 @@
 @z
 
 @x
-    <para>To test the results (approximately 11 SBU), issue:</para>
+    <para>To test the results, issue:</para>
 @y
     <para>
-    コンパイル結果をテストするには以下を実行します。(約 11 SBU)
+    ビルド結果をテストする場合は以下を実行します。
     </para>
 @z
 

@@ -86,8 +86,8 @@
   with a GID of 1 be present. The GID of 5 is widely used for the
   <systemitem class="groupname">tty</systemitem> group, and the number 5 is
   also used in <phrase revision="systemd">systemd</phrase>
-  <phrase revision="sysv"><filename>/etc/fstab</filename></phrase> for the
-  <systemitem class="filesystem">devpts</systemitem> filesystem.
+  <phrase revision="openrc,sysv"><filename>/etc/fstab</filename></phrase> for
+  the <systemitem class="filesystem">devpts</systemitem> filesystem.
   All other group names and GIDs can be chosen freely by the system
   administrator since well-written programs do not depend on GID numbers,
   but rather use the group's name.</para>
@@ -102,7 +102,7 @@
   GID 5 は <systemitem class="groupname">tty</systemitem> グループに対して広く用いられています。
   また数値 5 は <systemitem class="filesystem">devpts</systemitem> ファイルシステムに対して <phrase
   revision="systemd">systemd</phrase>
-  <phrase revision="sysv"><filename>/etc/fstab</filename></phrase> においても用いられています。
+  <phrase revision="openrc,sysv"><filename>/etc/fstab</filename></phrase> においても用いられています。
   他のグループとその GID はシステム管理者が自由に取り決めることができます。
   というのも通常のプログラムであれば GID の値に依存することはなく、あくまでグループ名を用いてプログラミングされているからです。
   </para>
@@ -191,27 +191,35 @@
 @z
 
 @x
-  <note revision='sysv'><para>The <filename>/run/utmp</filename> file
-  records the users that are currently logged in.  This file is created
-  dynamically in the boot scripts.</para></note>
+  <note><para>The <filename>/run/utmp</filename> file
+  records the users that are currently logged in.
+  This file is created dynamically
+  <phrase revision='sysv'>in the boot scripts.</phrase>
+  <phrase revision='openrc'>by the OpenRC services.</phrase>
+  <phrase revision='systemd'>when a user logs into the system.</phrase>
+  </para></note>
 @y
-  <note revision='sysv'><para>
+  <note><para>
   <filename>/run/utmp</filename> ファイルは現在ログインしているユーザーの情報を保持します。
-  このファイルはブートスクリプトが動的に生成します。
+  このファイルは<phrase revision='sysv'>ブートスクリプト内において</phrase>
+  <phrase revision='openrc'>OpenRC サービスによって</phrase>
+  <phrase revision='systemd'>ユーザーがシステムにログインした際に</phrase>動的に生成されます。
   </para></note>
 @z
 
 @x
-      The <phrase revision='sysv'><filename>utmp</filename>,
-      </phrase><filename>wtmp</filename>, <filename>btmp</filename>, and
+      The <filename>utmp</filename>,
+      <filename>wtmp</filename>, <filename>btmp</filename>, and
       <filename>lastlog</filename> files use 32-bit integers for timestamps
       and they'll be fundamentally broken after year 2038.  Many packages
       have stopped using them and other packages are going to stop using
       them.  It is probably best to consider them deprecated.
 @y
-      <phrase revision='sysv'><filename>utmp</filename>,
-      </phrase><filename>wtmp</filename>, <filename>btmp</filename>,
-      <filename>lastlog</filename> の各ファイルでは、32 ビットの整数値を使ってタイムスタンプを表現していますが、これは 2038 年以降には基本的に壊れるでしょう。
+      <filename>utmp</filename>,
+      <filename>wtmp</filename>,
+      <filename>btmp</filename>,
+      <filename>lastlog</filename>
+      の各ファイルでは、32 ビットの整数値を使ってタイムスタンプを表現していますが、これは 2038 年以降には基本的に壊れるでしょう。
       多くのパッケージにおいてはこういった利用を停止しており、その他についても順次停止予定です。
       したがってこういった表記は非推奨であると捉えるべきです。
 @z

@@ -18,7 +18,7 @@
 @z
 
 @x
-    <para>First, make the package build with gcc-14.1 or later::</para>
+    <para>First, make the package build with gcc-14.1 or later:</para>
 @y
     <para>
     gcc-14.1 以降を用いて本パッケージがビルドできるようにします。
@@ -99,19 +99,6 @@
     <para>To test the results, issue:</para>
 @y
     <para>コンパイル結果をテストするには以下を実行します。</para>
-@z
-
-@x
-    <note><para>One test, libls.sh, may fail in the initial chroot
-    environment but will pass if the test is rerun after the LFS system
-    is complete. One test, ping-localhost.sh, will fail if the host
-    system does not have ipv6 capability.</para></note>
-@y
-    <note><para>
-    libls.sh というテストは初めて chroot に入った状態の時には失敗します。
-    ただし LFS システムの構築を終えて再テストすれば成功します。
-    また ping-localhost.sh というテストは、ホストシステムが ipv6 に対応していない場合には失敗します。
-    </para></note>
 @z
 
 @x

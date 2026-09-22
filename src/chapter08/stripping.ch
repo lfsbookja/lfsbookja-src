@@ -54,14 +54,14 @@
 
 @x
   <para>The debugging symbols from selected libraries are compressed with
-  <application>Zlib</application> and preserved in separate files.  That
+  <application>Zstd</application> and preserved in separate files.  That
   debugging information is needed to run regression tests with <ulink
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> or <ulink
   url='&blfs-book;/general/gdb.html'>gdb</ulink> later, in BLFS.
   </para>
 @y
   <para>
-  選択したライブラリから得られたデバッグシンボルは、<application>Zlib</application> によって圧縮され、個別のファイルに保存されます。
+  選択したライブラリから得られたデバッグシンボルは、<application>Zstd</application> によって圧縮され、個別のファイルに保存されます。
   このデバッグ情報を必要とするのは BLFS における <ulink 
   url='&blfs-book;/general/valgrind.html'>valgrind</ulink> または <ulink 
   url='&blfs-book;/general/gdb.html'>gdb</ulink> の縮退テストを実施するのに必要であるからです。

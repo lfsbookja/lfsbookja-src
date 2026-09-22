@@ -28,7 +28,8 @@
 @z
 
 @x
-    <para>The files in <filename class="directory">/etc/sysconfig/</filename>
+    <para revision="sysv">The files in <filename
+    class="directory">/etc/sysconfig/</filename>
     usually determine which interfaces are brought up and down by the network
     script.  This directory should
     contain a file for each interface to be configured, such as
@@ -38,7 +39,7 @@
     address(es), subnet masks, and so forth.  The stem of
     the filename must be <emphasis>ifconfig</emphasis>.</para>
 @y
-    <para>
+    <para revision="sysv">
     <filename
     class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルは、どのネットワークインターフェースがネットワークスクリプトにより起動、停止されるかを取り決めます。
     このディレクトリには、設定を行ないたい各ネットワークインターフェースに対するファイル <filename>ifconfig.xyz</filename> を準備します。
@@ -84,32 +85,44 @@
 @z
 
 @x
-    <para>The following command creates a sample file for the
+    <para revision="openrc">To specify the interfaces you want to have brought
+    up, edit the <filename>/etc/conf.d/network</filename> configuration file,
+    which has plenty of comments.</para>
+@y
+    <para revision="openrc">
+    利用したいインターフェースを指定するには、設定ファイル <filename>/etc/conf.d/network</filename> を編集します。
+    このファイルにはあらかじめたくさんのコメントが記述されています。
+    </para>
+@z
+
+@x
+    <para revision="sysv">The following command creates a sample file for the
     <emphasis>eth0</emphasis> device with a static IP address:</para>
 @y
-    <para>
+    <para revision="sysv">
     以下のコマンドは、<emphasis>eth0</emphasis> デバイスに対して固定 IP アドレスを設定するファイルを生成する例です。
     </para>
 @z
 
 @x
-    <para>The values in italics must be changed in each file, to set
-    the interfaces up correctly.</para>
+    <para revision="sysv">The values in italics must be changed in each file,
+    to set the interfaces up correctly.</para>
 @y
-    <para>
+    <para revision="sysv">
     イタリックで示す変数の値は、各ファイルごとにインターフェースが起動するように適切に設定してください。
     </para>
 @z
 
 @x
-    <para>If the <envar>ONBOOT</envar> variable is set to <literal>yes</literal> the
-    System V network script will bring up the Network Interface Card (NIC) during
-    the system boot process. If set to anything besides <literal>yes</literal>, the NIC
-    will be ignored by the network script and will not be started automatically.
-    Interfaces can be manually started or stopped with the
-    <command>ifup</command> and <command>ifdown</command> commands.</para>
+    <para revision="sysv">If the <envar>ONBOOT</envar> variable is set to
+    <literal>yes</literal> the System V network script will bring up the Network
+    Interface Card (NIC) during the system boot process. If set to anything
+    besides <literal>yes</literal>, the NIC will be ignored by the network
+    script and will not be started automatically. Interfaces can be manually
+    started or stopped with the <command>ifup</command> and
+    <command>ifdown</command> commands.</para>
 @y
-    <para>
+    <para revision="sysv">
     <envar>ONBOOT</envar> 変数を <literal>yes</literal> に設定した場合、システム起動時に System V ネットワークスクリプトがネットワークインターフェースカード (network
     interface card; NIC) を起動します。
     <literal>yes</literal> 以外に設定すると、ネットワークスクリプトから NIC は無視され、NIC が自動的に起動することはなくなります。
@@ -118,11 +131,11 @@
 @z
 
 @x
-    <para>The <envar>IFACE</envar> variable defines the interface name,
-    for example, eth0.  It is required for all network device configuration
-    files. The filename extension must match this value.</para>
+    <para revision="sysv">The <envar>IFACE</envar> variable defines the
+    interface name, for example, eth0.  It is required for all network device
+    configuration files. The filename extension must match this value.</para>
 @y
-    <para>
+    <para revision="sysv">
     <envar>IFACE</envar> 変数は、インターフェース名を定義します。
     例えば eth0 といったものです。
     これはネットワークデバイスの設定を行うすべてのファイルにて必要な定義です。
@@ -131,14 +144,14 @@
 @z
 
 @x
-    <para>The <envar>SERVICE</envar> variable defines the method used for
-    obtaining the IP address. The LFS-Bootscripts package has a modular IP
-    assignment format, and creating additional files in the <filename
-    class="directory">/lib/services/</filename> directory allows other IP
-    assignment methods. This is commonly used for Dynamic Host Configuration
-    Protocol (DHCP), which is addressed in the BLFS book.</para>
+    <para revision="sysv">The <envar>SERVICE</envar> variable defines the
+    method used for obtaining the IP address. The LFS-Bootscripts package has
+    a modular IP assignment format, and creating additional files in the
+    <filename class="directory">/lib/services/</filename> directory allows
+    other IP assignment methods. This is commonly used for Dynamic Host
+    Configuration Protocol (DHCP), which is addressed in the BLFS book.</para>
 @y
-    <para>
+    <para revision="sysv">
     <envar>SERVICE</envar> 変数はIP アドレスの取得方法を指定します。
     LFS-ブートスクリプトは IP アドレス割り当て方法をモジュール化しています。
     そして <filename class="directory">/lib/services/</filename> ディレクトリに追加でファイルを生成すれば、他の IP アドレス割り当て方法をとることもできます。
@@ -148,28 +161,28 @@
 @z
 
 @x
-    <para>The <envar>GATEWAY</envar> variable should contain the default
-    gateway IP address, if one is present. If not, then comment out the
-    variable entirely.</para>
+    <para revision="sysv">The <envar>GATEWAY</envar> variable should contain
+    the default gateway IP address, if one is present. If not, then comment out
+    the variable entirely.</para>
 @y
-    <para>
+    <para revision="sysv">
     <envar>GATEWAY</envar> 変数は、デフォルトゲートウェイが存在するならその IP アドレスを指定します。
     存在しない場合は、の変数設定を行っている一行をコメントにします。
     </para>
 @z
 
 @x
-    <para>The <envar>PREFIX</envar> variable specifies the number of
-    bits used in the subnet. Each segment of an IP address is 8 bits. If the
-    subnet's netmask is 255.255.255.0, then it is using the first three segments
-    (24 bits) to specify the network number. If the netmask is 255.255.255.240,
-    the subnet is using the first 28 bits.  Prefixes longer than 24 bits are
-    commonly used by DSL and cable-based Internet Service Providers (ISPs).
-    In this example (PREFIX=24), the netmask is 255.255.255.0. Adjust the
-    <envar>PREFIX</envar> variable according to your specific subnet.
-    If omitted, the PREFIX defaults to 24.</para>
+    <para revision="sysv">The <envar>PREFIX</envar> variable specifies the
+    number of bits used in the subnet. Each segment of an IP address is 8 bits.
+    If the subnet's netmask is 255.255.255.0, then it is using the first three
+    segments (24 bits) to specify the network number. If the netmask is
+    255.255.255.240, the subnet is using the first 28 bits. Prefixes longer
+    than 24 bits are commonly used by DSL and cable-based Internet Service
+    Providers (ISPs). In this example (PREFIX=24), the netmask is
+    255.255.255.0. Adjust the <envar>PREFIX</envar> variable according to your
+    specific subnet. If omitted, the PREFIX defaults to 24.</para>
 @y
-    <para>
+    <para revision="sysv">
     <envar>PREFIX</envar> 変数はサブネットマスクにて用いられるビット数を指定します。
     IP アドレスの各セグメントは 8 ビットで構成されます。
     例えばサブネットマスクが 255.255.255.0 である場合、ネットワーク番号 (network number) を特定するには最初の 3 つのセグメント (24ビット) が用いられることを意味します。
@@ -182,9 +195,10 @@
 @z
 
 @x
-    <para>For more information see the <command>ifup</command> man page.</para>
+    <para revision="sysv">For more information see the <command>ifup</command>
+    man page.</para>
 @y
-    <para>
+    <para revision="sysv">
     より詳しくは <command>ifup</command> の man ページを参照してください。
     </para>
 @z

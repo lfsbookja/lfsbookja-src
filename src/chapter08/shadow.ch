@@ -21,11 +21,11 @@
 @x
         If you've installed Linux-PAM, you should follow
         <ulink url='&blfs-book;postlfs/shadow.html'>the BLFS
-        instruction</ulink> instead of this page to build (or, rebuild or
-        upgrade) shadow.
+        instructions</ulink> instead of this page to build, rebuild,
+        upgrade shadow.
 @y
         Linux-PAM をすでにインストールしている場合は、本ページではなく <ulink
-        url='&blfs-book;postlfs/shadow.xml'>BLFS の 手順</ulink> に従って shadow のビルド（または再ビルドやアップグレード）を行う必要があります。
+        url='&blfs-book;postlfs/shadow.xml'>BLFS の 手順</ulink> に従って shadow のビルド、再ビルド、アップグレードを行う必要があります。
 @z
 
 @x
@@ -60,9 +60,8 @@
 
 @x
     <para id="shadow-login_defs">Instead of using the default
-    <emphasis>crypt</emphasis> method, use the much more secure
-    <emphasis>YESCRYPT</emphasis> method of password encryption, which also
-    allows passwords longer than 8 characters.
+    <emphasis>SHA512</emphasis> method, use the more secure
+    <emphasis>YESCRYPT</emphasis> method of password encryption.
     It is also necessary to change
     the obsolete <filename class="directory">/var/spool/mail</filename> location
     for user mailboxes that Shadow uses by default to the <filename
@@ -73,8 +72,7 @@
     <filename class="directory">/usr</filename>.</para>
 @y
     <para id="shadow-login_defs">
-    パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>YESCRYPT</emphasis> 手法を用いることにします。
-    こうしておくと 8文字以上のパスワード入力が可能となります。
+    パスワード暗号化に関して、デフォルトの <emphasis>SHA512</emphasis> 手法ではなく、より強力な <emphasis>YESCRYPT</emphasis> 手法を用いることにします。
     メールボックスを収めるディレクトリとして Shadow ではデフォルトで <filename
     class="directory">/var/spool/mail</filename> ディレクトリを利用していますが、これは古いものであるため <filename
     class="directory">/var/mail</filename> ディレクトリに変更します。
@@ -98,23 +96,6 @@
       class="directory">/sbin</filename> を含めると、BLFS パッケージのビルドに失敗することがあります。
       したがって <filename>.bashrc</filename> ファイルをはじめ、どの設定ファイルでもその設定は行わないでください。
       </para>
-@z
-
-@x
-    <para>Make a minor change to make the first group number generated
-    by useradd 1000:</para>
-@y
-    <para>
-    useradd が生成する最初のグループ番号を 1000 とするような修正をします。
-    </para>
-@z
-
-@x
-    <para>Fix a simple programming error by modifying a file with following command:</para>
-@y
-    <para>
-    1 つのファイルにおいて単純なプログラミングエラーがあるため、これを修正するために以下のコマンドを実行します。
-    </para>
 @z
 
 @x
@@ -219,21 +200,16 @@
     groups; set and change their passwords; and perform other administrative
     tasks. For a full explanation of what <emphasis>password shadowing</emphasis>
     means, see the <filename>doc/HOWTO</filename> file within the unpacked
-    source tree. If you use Shadow support, keep in mind that programs which need
-    to verify passwords (display managers, FTP programs, pop3 daemons, etc.)
-    must be Shadow-compliant. That is, they must be able to work with
-    shadowed passwords.</para>
+    source tree.</para>
 @y
     <para>
     このパッケージには、ユーザーやグループの追加、修正、削除、そのパスワードの設定、変更、その他の管理操作を行うユーティリティが含まれます。
     <emphasis>パスワードのシャドウイング (password shadowing)</emphasis> というものが何を意味するのか、その詳細についてはこのパッケージのソース内にある <filename>doc/HOWTO</filename> を参照してください。
-    Shadow によるサポートを利用する場合、パスワード認証を必要とするプログラム (ディスプレイマネージャー、FTP プログラム、POP3、デーモン、など) は Shadow に準拠したものでなければなりません。
-    つまりそれらのプログラムが、シャドウ化された (shadowed) パスワードを受け入れて動作しなければならないということです。
     </para>
 @z
 
 @x
-    <para>To enable shadowed passwords, run the following command:</para>
+    <para>Enable shadowed passwords:</para>
 @y
     <para>
     Shadow によるパスワードの利用を有効にするために、以下のコマンドを実行します。
@@ -241,7 +217,7 @@
 @z
 
 @x
-    <para>To enable shadowed group passwords, run:</para>
+    <para>Enable shadowed group passwords as well:</para>
 @y
     <para>
     また Shadow によるグループパスワードを有効にするために、以下を実行します。
@@ -367,32 +343,32 @@
 
 @x
       <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directories</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
-      <segtitle>&InstalledDirectory;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
-        <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
-        getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
-        grpconv, grpunconv, login, logoutd, newgidmap, newgrp,
-        newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
-        sg (link to newgrp), su, useradd, userdel, usermod,
-        vigr (link to vipw), and vipw</seg>
-      <seg>/etc/default and /usr/include/shadow</seg>
+          chage, chfn, chgpasswd, chpasswd, chsh, faillog, getsubids, gpasswd, 
+          groupadd, groupdel, groupmod, grpck, grpconv, grpunconv, login, 
+          newgidmap, newgrp, newuidmap, newusers, nologin, passwd, pwck, 
+          pwconv, pwunconv, sg (link to newgrp), su, useradd, userdel, 
+          usermod, vigr (link to vipw), and vipw
+        </seg>
         <seg>libsubid.so</seg>
+        <seg>/etc/default and /usr/include/shadow</seg>
 @y
-        <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog,
-        getsubids, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck,
-        grpconv, grpunconv, login, logoutd, newgidmap, newgrp,
-        newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv,
-        sg (newgrp へのリンク), su, useradd, userdel, usermod,
-        vigr (vipw へのリンク), vipw</seg>
-      <seg>/etc/default and /usr/include/shadow</seg>
+          chage, chfn, chgpasswd, chpasswd, chsh, faillog, getsubids, gpasswd, 
+          groupadd, groupdel, groupmod, grpck, grpconv, grpunconv, login, 
+          newgidmap, newgrp, newuidmap, newusers, nologin, passwd, pwck, 
+          pwconv, pwunconv, sg (newgrp へのリンク), su, useradd, userdel, 
+          usermod, vigr (vipw へのリンク), vipw
+        </seg>
         <seg>libsubid.so</seg>
+        <seg>/etc/default, /usr/include/shadow</seg>
 @z
 
 @x

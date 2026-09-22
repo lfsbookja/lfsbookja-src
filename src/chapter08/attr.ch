@@ -47,50 +47,10 @@
     <para>&InstallThePackage;</para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Installation of Attr - 32bit</title>
+    <title>Installation of Attr - 32-bit</title>
 @y
     <title>Attr - 32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Prepare Attr for compilation:</para>
-@y
-    <para>&PreparePackage1;Attr&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of Attr - x32bit</title>
-@y
-    <title>Attr - x32 ビットのインストール</title>
 @z
 
 @x

@@ -13,10 +13,12 @@ CHANGE_FILES = \
 	gettext.ch         \
 	introduction.ch    \
 	kernfs.ch          \
+	mpdecimal.ch       \
 	perl.ch            \
 	python.ch          \
 	texinfo.ch         \
-	util-linux.ch
+	util-linux.ch      \
+	zlib.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

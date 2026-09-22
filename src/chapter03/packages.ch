@@ -121,14 +121,6 @@
         <para>&Download;: <ulink url="&bzip2-url;"/></para>
 @z
 
-@x check
-        <para>Home page: <ulink url="&check-home;"/></para>
-        <para>Download: <ulink url="&check-url;"/></para>
-@y
-        <para>&Homepage;: <ulink url="&check-home;"/></para>
-        <para>&Download;: <ulink url="&check-url;"/></para>
-@z
-
 @x coreutils
         <para>Home page: <ulink url="&coreutils-home;"/></para>
         <para>Download: <ulink url="&coreutils-url;"/></para>
@@ -462,10 +454,9 @@
 
 @x
           <para>The Linux kernel is updated quite frequently, many times due to
-          discoveries of security vulnerabilities.  The latest available
-          <!--&linux-major-version;.&linux-minor-version;.x--> stable kernel
-          version <!--should--> may be
-          used, unless the errata page says otherwise.</para>
+          discoveries of security vulnerabilities.  The latest available stable
+          kernel version may be used, unless the errata page says
+          otherwise.</para>
 @y
           <para>
           Linux カーネルはかなり頻繁に更新されます。
@@ -479,8 +470,8 @@
           <para>For users with limited speed or expensive bandwidth who wish to
           update the Linux kernel, a baseline version of the package and
           patches can be downloaded separately.  This may save some time or
-          cost for a subsequent patch level upgrade within a minor release.
-          </para>
+          cost for a subsequent patch level upgrade within a minor
+          release.</para>
 @y
           <para>
           低速度のネットワークや高負荷の帯域幅を利用するユーザーが Linux カーネルをアップデートしようとする場合は、同一バージョンのカーネルパッケージとそのパッチを個別に&Download;する方法もあります。

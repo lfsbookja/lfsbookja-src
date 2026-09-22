@@ -21,14 +21,6 @@
 @z
 
 @x
-    <para>First, disable a problematic test:</para>
-@y
-    <para>
-    はじめに問題のあるテストを無効にします。
-    </para>
-@z
-
-@x
     <para>Prepare Util-linux for compilation:</para>
 @y
     <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
@@ -80,18 +72,11 @@
 @z
 
 @x
-       The <emphasis>hardlink</emphasis> tests will fail if the host's kernel
-       does not have the option <option>CONFIG_CRYPTO_USER_API_HASH</option>
-       enabled or does not have any options providing a SHA256 implementation
-       (for example, <option>CONFIG_CRYPTO_SHA256</option>, or
-       <option>CONFIG_CRYPTO_SHA256_SSSE3</option> if the CPU supports
-       Supplemental SSE3) enabled. In addition, the lsfd: inotify test will
+       The lsfd: inotify test will
        fail if the kernel option <option>CONFIG_NETLINK_DIAG</option> is not
        enabled.
 @y
-       <emphasis>hardlink</emphasis>テストは失敗する場合があります。
-       それはカーネルオプションの <option>CONFIG_CRYPTO_USER_API_HASH</option> が有効でない場合、あるいは SHA256 機能を提供するオプション（たとえば <option>CONFIG_CRYPTO_SHA256</option> や CPU が Supplemental SSE3 をサポートする際の <option>CONFIG_CRYPTO_SHA256_SSSE3</option> など）が一つもない場合です。
-       さらにカーネルオプション <option>CONFIG_NETLINK_DIAG</option> が無効である場合、lsfd 内のテスト inotify が失敗します。
+       カーネルオプション <option>CONFIG_NETLINK_DIAG</option> が無効である場合、lsfd 内のテスト inotify が失敗します。
 @z
 
 @x
@@ -99,10 +84,6 @@
 @y
     <para>&InstallThePackage;</para>
 @z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
 
 @x
     <title>Installation of Util-linux - 32-bit</title>
@@ -120,61 +101,7 @@
 
 @x
     <para>Move a tool out of the way which is optionally used by
-    configure but will report invalid pathes for multilib builds.</para>
-@y
-    <para>
-    ツールを１つ移動させておきます。
-    これは configure が利用する場合があり、マルチビルドにおいてパスが不適切であると表示される場合があります。
-    </para>
-@z
-
-@x
-    <para>Prepare Util-linux for compilation:</para>
-@y
-    <para>&PreparePackage1;Util-linux&PreparePackage2;</para>
-@z
-
-@x
-    <para>Restore the tool previously moved away:</para>
-@y
-    <para>
-    前の手順にて移動させていたツールを元に戻します。
-    </para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of Util-linux - x32-bit</title>
-@y
-    <title>Util-linux - x32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Move a tool out of the way which is optionally used by
-    configure but will report invalid pathes for multilib builds.</para>
+    configure but will report invalid paths for multilib builds.</para>
 @y
     <para>
     ツールを１つ移動させておきます。

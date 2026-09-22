@@ -20,14 +20,6 @@
 @z
 
 @x
-    <para>First, apply a patch that fixes an issue identified upstream:</para>
-@y
-    <para>
-    まず初めに、アップストリームが認識する問題を修正するパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Compile Meson with the following command:</para>
 @y
     <para>

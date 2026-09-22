@@ -85,11 +85,11 @@
 
 @x
       <para><emphasis role="strong">Binutils-2.13.1</emphasis> (Versions
-      greater than &binutils-version; are not recommended as they have
+      greater than &binutils-version; may not work as they have
       not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">Binutils-2.13.1</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">Binutils-2.13.1</emphasis> (&binutils-version; 以上のバージョンは、テストしていないため動作しないかもしれません。)
       </para>
 @z
 
@@ -112,15 +112,15 @@
 @z
 
 @x
-      <para><emphasis role="strong">GCC-5.2</emphasis> including the C++
-      compiler, <command>g++</command> (Versions greater than &gcc-version; are
-      not recommended as they have not been tested). C and C++ standard
+      <para><emphasis role="strong">GCC-5.4</emphasis> including the C++
+      compiler, <command>g++</command> (Versions greater than &gcc-version;
+      may not work as they have not been tested). C and C++ standard
       libraries (with headers) must also be present so the C++ compiler can
       build hosted programs</para>
 @y
       <para>
-      <emphasis role="strong">GCC-5.2</emphasis> と C++ コンパイラーである <command>g++</command>
-      (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">GCC-5.4</emphasis> と C++ コンパイラーである <command>g++</command>
+      (&gcc-version; 以上のバージョンは、テストしていないため動作しないかもしれません。)
       ホストされたプログラムを C++ コンパイラーがビルドできるように、C および C++ の標準ライブラリ（ヘッダーを含む）が存在しなければなりません。
       </para>
 @z
@@ -228,37 +228,9 @@
   </para>
 @z
 
-@x ml_32,ml_x32,ml_all
-      Building the m32 multilib support requires the kernel of the host
-      system to have the 32-bit emulation support included:
+@x
+      You should also run the commands shown in <xref linkend="pre-multilib"/>
+      to ensure the toolchain can target 32-bit.
 @y
-      multilib の m32 ビルドサポートでは、ホストシステムのカーネルに 32 ビットエミュレーションサポートが含まれている必要があります。
-@z
-
-@x ml_x32,ml_all
-      Building the mx32 multilib support requires the kernel of the host
-      system to have the x32 ABI support included:
-@y
-      multilib の mx32 ビルドを行うには、ホストシステムのカーネルに x32 ABI サポートが含まれている必要があります。
-@z
-
-@x ml_all
-      In case your kernel does not have the x32 ABI support enabled but
-      only the 32-bit emulation support, you can continue to build your
-      system but you have to leave out any sections showing instructions
-      for building x32 objects, vice versa.
-@y
-      ホストシステムのカーネルにて x32 ABI サポートが無効となっていて 32 ビットエミュレーションのみがサポートされている場合、ビルド手順は進めていくことができますが、x32 オブジェクトをビルドする手順は抜かしていかなければなりません。
-      x32 ABI がサポートされ 32 ビットエミュレーションがサポートされていない場合も同様です。
-@z
-
-@x ml_32,ml_x32,ml_all
-      If the kernel feature required for a multilib architecture is not
-      enabled, building the multilib architecture for a package in
-      Chapter 8 may either fail immediately, or cause hidden breakages
-      because autoconf cannot probe the system features properly.
-@y
-      multilib アーキテクチャーに必要となるカーネル機能が有効になっていない場合、第 8 章での multilib アーキテクチャー向けビルドは、ただちに失敗する場合があります。
-      そうでなかったとしても、表立って出てこない不具合を引き起こす可能性があります。
-      これは autoconf がシステム機能を適切に判別することができないためです。
+      また <xref linkend="pre-multilib"/> に示されているコマンドも実行して、ツールチェーンが 32 ビットを取り扱い対象としているかどうかも確認してください。
 @z

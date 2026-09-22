@@ -47,19 +47,37 @@
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
+      <title>The meaning of the commands and configure options:</title>
 @y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+      <title>&MeaningOfOption1;コマンドと configure&MeaningOfOption2;</title>
 @z
 
-@x autoreconf
+@x autoreconf -fv
           <para>The patch for internationalization has modified the
           build system, so the configuration files must
-          be regenerated.</para>
+          be regenerated.  Normally we would use the
+          <parameter>-i</parameter> option to update the standard
+          auxiliary files, but for this package it does not work because
+          <filename>configure.ac</filename> specified an old gettext
+          version.</para>
 @y
           <para>
           国際化対応を行うパッチによってビルドシステムが修正されます。
           したがって設定ファイル類を再生成する必要があります。
+          通常なら <parameter>-i</parameter> オプションを使って標準的な補助 (auxilary) ファイルのアップデートを行うところですが、本パッケージに関してはそれが通用しません。
+          それは <filename>configure.ac</filename> が古い gettext バージョンを指定しているためです。
+          </para>
+@z
+
+@x automake -af
+	  <para>The automake auxiliary files were not updated by
+	  <command>autoreconf</command> due to the missing
+	  <parameter>-i</parameter> option.  This command updates them
+	  to prevent a build failure.</para>
+@y
+          <para>
+          automake の補助 (auxilary) ファイルは、<command>autoreconf</command> において <parameter>-i</parameter> オプションを指定しなかったため更新されていません。
+          以下のコマンドによってこれを更新し、ビルドが失敗しないようにします。
           </para>
 @z
 
@@ -156,15 +174,6 @@
 @z
 
 @x
-       Two tests, <filename>tests/cp/preserve-mode.sh</filename> and
-       <filename>tests/mv/acl.sh</filename>, are known to
-       fail in the chroot environment, but pass in a complete system.
-@y
-       <filename>tests/cp/preserve-mode.sh</filename>、<filename>tests/mv/acl.sh</filename> というテストは chroot 環境内では失敗します。
-       ただし完成したシステム内では成功します。
-@z
-
-@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
@@ -195,13 +204,13 @@
 @z
 
 @x
-        <seg>[, b2sum, base32, base64, basename, basenc, cat, chcon, chgrp, chmod, chown,
+        <seg>[, b2sum, base32, base64, basename, basenc, cat, chgrp, chmod, chown,
         chroot, cksum, comm, cp, csplit, cut, date, dd, df, dir, dircolors,
         dirname, du, echo, env, expand, expr, factor, false, fmt, fold, groups,
         head, hostid, id, install, join, link, ln, logname, ls, md5sum, mkdir,
         mkfifo, mknod, mktemp, mv, nice, nl, nohup, nproc, numfmt, od, paste,
         pathchk, pinky, pr, printenv, printf, ptx, pwd, readlink, realpath, rm,
-        rmdir, runcon, seq, sha1sum, sha224sum, sha256sum, sha384sum,
+        rmdir, seq, sha1sum, sha224sum, sha256sum, sha384sum,
         sha512sum, shred, shuf, sleep, sort, split, stat, stdbuf, stty, sum,
         sync, tac, tail, tee, test, timeout, touch, tr, true, truncate, tsort,
         tty, uname, unexpand, uniq, unlink, users, vdir, wc, who, whoami, and
@@ -209,13 +218,13 @@
         <seg>libstdbuf.so (in /usr/libexec/coreutils)</seg>
         <seg>/usr/libexec/coreutils</seg>
 @y
-        <seg>[, b2sum, base32, base64, basename, basenc, cat, chcon, chgrp, chmod, chown,
+        <seg>[, b2sum, base32, base64, basename, basenc, cat, chgrp, chmod, chown,
         chroot, cksum, comm, cp, csplit, cut, date, dd, df, dir, dircolors,
         dirname, du, echo, env, expand, expr, factor, false, fmt, fold, groups,
         head, hostid, id, install, join, link, ln, logname, ls, md5sum, mkdir,
         mkfifo, mknod, mktemp, mv, nice, nl, nohup, nproc, numfmt, od, paste,
         pathchk, pinky, pr, printenv, printf, ptx, pwd, readlink, realpath, rm,
-        rmdir, runcon, seq, sha1sum, sha224sum, sha256sum, sha384sum,
+        rmdir, seq, sha1sum, sha224sum, sha256sum, sha384sum,
         sha512sum, shred, shuf, sleep, sort, split, stat, stdbuf, stty, sum,
         sync, tac, tail, tee, test, timeout, touch, tr, true, truncate, tsort,
         tty, uname, unexpand, uniq, unlink, users, vdir, wc, who, whoami,

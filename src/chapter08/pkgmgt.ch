@@ -126,10 +126,25 @@
 
 @x
       <listitem> <para>If a package containing a shared library is updated, and
-      if the name of the library changes, then any packages dynamically
+      if the name of the library<footnote><para>The name of a shared library is
+      the string coded in the <constant>DT_SONAME</constant> entry of its
+      ELF dynamic section.  You can get it with the
+      <command>readelf -d <replaceable>&lt;library file&gt;</replaceable>
+      | grep SONAME</command> command.  In most cases it's suffixed with
+      <literal>.so.<replaceable>&lt;a version
+      number&gt;</replaceable></literal>, but there are some cases where
+      it contains multiple numbers for versioning (like
+      <filename>libbz2.so.1.0</filename>), contains the version number
+      before the <filename class='extension'>.so</filename> suffix (like
+      <filename>libbfd-&binutils-version;</filename>), or does not contain
+      any version number at all (for example
+      <filename>libmemusage.so</filename>).
+      Generally there is no correlation between the package version and the
+      version number(s) in the library name.</para></footnote>
+      changes, then any packages dynamically
       linked to the library must be recompiled, to link against the
-      newer library.  (Note that there is no correlation between the package
-      version and the name of the library.) For example, consider a package
+      newer library.
+      For example, consider a package
       foo-1.2.3 that installs a shared library with the name <filename
       class='libraryfile'>libfoo.so.1</filename>. Suppose you upgrade the package to
       a newer version foo-1.2.4 that installs a shared library with the name
@@ -142,9 +157,16 @@
       </listitem>
 @y
       <listitem> <para>
-      共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名が変更になったとします。
+      共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリ名<footnote>
+      <para>共有ライブラリの名前は、ELF の動的セクションの <constant>DT_SONAME</constant> エントリ内に文字列としてコーディングされています。
+      この名前は <command>readelf -d <replaceable>&lt;library file&gt;</replaceable>
+      | grep SONAME</command> というコマンドを使って得ることができます。
+      普通そのサフィックスは <literal>.so.<replaceable>&lt;バージョン文字列&gt;</replaceable></literal> ですが、場合によっては (<filename>libbz2.so.1.0</filename> などのように) バージョン番号を複数持つものもあります。
+      そこでは (<filename>libbfd-&binutils-version;</filename> のように) サフィックス <filename class='extension'>.so</filename> の前にバージョン番号があるものや、(<filename>libmemusage.so</filename> のように) バージョン番号をまったく含まないものもあります。
+      一般的に言うと、パッケージバージョンとライブラリ名内のバージョン番号は、厳密に関係づけがなされるものではありません。
+      </para></footnote>
+      が変更になったとします。
       この場合は、このライブラリに動的リンクを行っていたパッケージは、新たなライブラリに向けてのリンクとなるように再コンパイルすることが必要になります。
-      （なおパッケージバージョンとライブラリ名には関連性はありません。）
       たとえば foo-1.2.3 というパッケージがあって、これが共有ライブラリ <filename
       class='libraryfile'>libfoo.so.1</filename> をインストールしているとします。
       そして新バージョン foo-1.2.4 が共有ライブラリ <filename
@@ -671,7 +693,7 @@
     <filename>/etc/fstab</filename>,
     <filename>/etc/passwd</filename>,
     <filename>/etc/group</filename>,
-    <phrase revision="systemd">
+    <phrase revision="systemd,openrc">
       <filename>/etc/shadow</filename>, and
       <filename>/etc/ld.so.conf</filename>.
     </phrase>
@@ -719,16 +741,40 @@
 @z
 
 @x
-    <note><para>There have been some reports of issues when copying between
-    similar but not identical architectures. For instance, the instruction set
-    for an Intel system is not identical with the AMD processor's instructions, and later
-    versions of some processors may provide instructions that are unavailable with
-    earlier versions.</para></note>
+    <important><para>If you want to deploy the LFS system onto a system
+    with a different CPU, when you build <xref linkend='ch-system-gmp'/> and
+    <xref linkend='ch-system-libffi'/> you must follow the notes about
+    overriding the architecture-specific optimization to produce libraries
+    suitable for both the host system and the system(s) where you'll deploy
+    the LFS system.  Otherwise you'll get <computeroutput>Illegal
+    Instruction</computeroutput> errors running LFS.</para>
 @y
-    <note><para>
-    類似するアーキテクチャーのシステム間にてコピーを行う際には問題が生じるとの報告があります。
-    例えばインテルアーキテクチャーに対する命令セットは AMD プロセッサーに対するものと完全に一致しているわけではないため、一方の命令セットが後に他方で動作しなくなることも考えられます。
-    </para></note>
+    <important><para>
+    LFS システムを CPU の異なるシステム上にデプロイしたい場合、<xref
+    linkend='ch-system-gmp'/> と <xref linkend='ch-system-libffi'/> のビルドにあたっては、以下のメモ内容に従ってください。
+    つまりアーキテクチャー固有の最適化を通じて、ホストシステムと LFS デプロイ先のシステム双方に適したライブラリを生成するようにしてください。
+    これを行っていないと LFS 実行時に <computeroutput>Illegal
+    Instruction</computeroutput> エラーが発生することになります。
+    </para>
+@z
+
+@x
+    <para>The GMP build system stores the architecture-specific optimization
+    option used to build GMP into <filename>gmp.h</filename>, and the build
+    system of some package using GMP can read it from the header and use it
+    when building the package itself.  At least the MPFR build system is
+    known to do so.  Thus simply rebuilding GMP on a complete LFS system
+    is not enough: you'll need to recompile MPFR and maybe other packages
+    using GMP if you want to <quote>convert</quote> a complete LFS system
+    to be used for a different CPU.</para></important>
+@y
+    <para>
+    GMP ビルドシステムは GMP をビルドするために必要となる各アーキテクチャー特有の最適化オプションを <filename>gmp.h</filename> に保存します。
+    そして GMP を利用するパッケージでは、そのヘッダーファイルから最適化オプションを呼び込んで、パッケージビルドに利用するものがあります。
+    少なくとも MPFR のビルドシステムは、この仕組みを理解し利用しています。
+    完全な LFS システムにとって、GMP を単に再ビルドしようとする作業は不十分な事態を引き起こします。
+    もし他 CPU 向けに完全 LFS システムを<quote>移行</quote>しようとするなら、MPFR はもちろん、おそらく GMP を利用する他のパッケージもすべて再ビルドする必要があります。
+    </para></important>
 @z
 
 @x

@@ -11,14 +11,16 @@ bases = \
 	kernel_version.py \
 	multilib-32.toml  \
 	multilib-32.xml   \
-	multilib-x32.toml \
-	multilib-x32.xml  \
 	nvme.toml         \
 	nvme.xml          \
+	openrc.toml       \
+	openrc.xml        \
 	systemd.toml      \
 	systemd.xml       \
 	sysv.toml         \
 	sysv.xml          \
+	uefi.toml         \
+	uefi.xml          \
 	x2apic.toml       \
 	x2apic.xml
 
@@ -35,10 +37,14 @@ multilib-x32.toml: $(BOOKdir)/multilib-x32.toml
 multilib-x32.xml:  $(BOOKdir)/multilib-x32.xml
 nvme.toml:         $(BOOKdir)/nvme.toml
 nvme.xml:          $(BOOKdir)/nvme.xml
+openrc.toml:       $(BOOKdir)/openrc.toml
+openrc.xml:        $(BOOKdir)/openrc.xml
 systemd.toml:      $(BOOKdir)/systemd.toml
 systemd.xml:       $(BOOKdir)/systemd.xml
 sysv.toml:         $(BOOKdir)/sysv.toml
 sysv.xml:          $(BOOKdir)/sysv.xml
+uefi.toml:         $(BOOKdir)/uefi.toml
+uefi.xml:          $(BOOKdir)/uefi.xml
 x2apic.toml:       $(BOOKdir)/x2apic.toml
 x2apic.xml:        $(BOOKdir)/x2apic.xml
 

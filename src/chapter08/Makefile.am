@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	bison.ch          \
 	bzip2.ch          \
 	chapter08.ch      \
-	check.ch          \
 	cleanup.ch        \
 	coreutils.ch      \
 	dbus.ch           \
@@ -62,11 +61,15 @@ CHANGE_FILES = \
 	markupsafe.ch     \
 	meson.ch          \
 	mpc.ch            \
+	mpdecimal.ch      \
 	mpfr.ch           \
 	ncurses.ch        \
 	ninja.ch          \
+	openrc.ch         \
 	openssl.ch        \
+	packaging.ch      \
 	patch.ch          \
+	pcre.ch           \
 	perl.ch           \
 	pkgconf.ch        \
 	pkgmgt.ch         \
@@ -77,6 +80,7 @@ CHANGE_FILES = \
 	sed.ch            \
 	setuptools.ch     \
 	shadow.ch         \
+	sqlite.ch         \
 	stripping.ch      \
 	sysklogd.ch       \
 	systemd.ch        \

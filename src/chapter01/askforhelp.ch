@@ -101,9 +101,9 @@
 @z
 
 @x
-        <para>The version of the book being used (in this case &version;<phrase arch="ml_32,ml_x32,ml_all">-multilib</phrase>)</para>
+        <para>The version of the book being used (in this case &version;)</para>
 @y
-        <para>お使いの LFS ブックのバージョン。 (本書の場合 &version;<phrase arch="ml_32,ml_x32,ml_all">-multilib</phrase>)</para>
+        <para>お使いの LFS ブックのバージョン。 (本書の場合 &version;)</para>
 @z
 
 @x

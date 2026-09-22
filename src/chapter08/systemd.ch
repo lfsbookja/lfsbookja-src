@@ -111,7 +111,7 @@
           </para>
 @z
 
-@x -Drpmmacrosdir=no
+@x -D rpmmacrosdir=no
           <para>This switch disables installation of RPM Macros
           for use with systemd, because LFS does not support RPM.</para>
 @y
@@ -121,16 +121,16 @@
           </para>
 @z
 
-@x -D{userdb,homed}=false
-          <para>Remove two daemons with dependencies that do not fit
-          within the scope of LFS.</para>
+@x -D homed=disabled
+          <para>Remove a daemon which has dependencies that do not fit within
+          the scope of LFS.</para>
 @y
           <para>
           LFS が取り扱う範囲にそぐわない依存関係を持ったデーモンを削除します。
           </para>
 @z
 
-@x -Dman=false
+@x -D man=disabled
           <para>Prevent the generation of man pages to avoid extra
           dependencies.  We will install pre-generated man pages for systemd
           from a tarball.</para>
@@ -243,12 +243,13 @@
 @z
 
 @x
-        <seg>busctl, coredumpctl, halt (symlink to systemctl),
+        <seg>bootctl, busctl, coredumpctl, halt (symlink to systemctl),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
         machinectl, mount.ddi (symlink to systemd-dissect), networkctl,
         oomctl, portablectl, poweroff (symlink to
         systemctl), reboot (symlink to systemctl), resolvconf (symlink to
-        resolvectl), resolvectl, runlevel (symlink to systemctl), shutdown
+        resolvectl), resolvectl, run0 (symlink to systemd-run), runlevel
+        (symlink to systemctl), shutdown
         (symlink to systemctl), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-confext (symlink to systemd-sysext), systemd-creds,
@@ -256,30 +257,32 @@
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
         systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
-        systemd-repart, systemd-resolve (symlink to resolvectl), systemd-run,
-        systemd-socket-activate, systemd-stdio-bridge, systemd-sysext,
-        systemd-tmpfiles, systemd-tty-ask-password-agent,
+        systemd-pty-forward, systemd-repart, systemd-resolve
+        (symlink to resolvectl), systemd-run, systemd-socket-activate,
+        systemd-stdio-bridge, systemd-sysext, systemd-tmpfiles,
+        systemd-tty-ask-password-agent, systemd-vpick,
         systemd-umount (symlink to systemd-mount),
-        telinit (symlink to systemctl), timedatectl, and udevadm</seg>
+        timedatectl, udevadm, userdbctl, and varlinkctl</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2,
         libsystemd.so, libsystemd-shared-&systemd-version;.so (in /usr/lib/systemd),
         and libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
-        /etc/xdg/systemd, /usr/lib/systemd, /usr/lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel,
-        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd,
-        /usr/lib/tmpfiles.d,
+        /etc/xdg/systemd, /usr/include/systemd, /usr/lib/binfmt.d,
+        /usr/lib/credstore, /usr/lib/environment.d, /usr/lib/kernel,
+        /usr/lib/modprobe.d, /usr/lib/modules-load.d,  /usr/lib/systemd,
+        /usr/lib/udev, /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, and /var/log/journal</seg>
 @y
-        <seg>busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
+        <seg>bootctl, busctl, coredumpctl, halt (systemctl へのシンボリックリンク),
         hostnamectl, init, journalctl, kernel-install, localectl, loginctl,
         machinectl, mount.ddi (systemd-dissect へのシンボリックリンク), networkctl,
         oomctl, portablectl, poweroff (systemctl へのシンボリックリンク),
         reboot (systemctl へのシンボリックリンク), resolvconf (resolvectl へのシンボリックリンク),
-        resolvectl, runlevel (systemctl へのシンボリックリンク), shutdown
+        resolvectl, run0 (systemd-run へのシンボリックリンク), runlevel
+        (systemctl へのシンボリックリンク), shutdown
         (systemctl へのシンボリックリンク), systemctl, systemd-ac-power, systemd-analyze,
         systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
         systemd-confext (systemd-sysext へのシンボリックリンク), systemd-creds,
@@ -287,21 +290,22 @@
         systemd-dissect, systemd-escape, systemd-hwdb, systemd-id128,
         systemd-inhibit, systemd-machine-id-setup,
         systemd-mount, systemd-notify, systemd-nspawn, systemd-path,
-        systemd-repart, systemd-resolve (resolvectl へのシンボリックリンク), systemd-run,
-        systemd-socket-activate, systemd-stdio-bridge, systemd-sysext,
-        systemd-tmpfiles, systemd-tty-ask-password-agent,
+        systemd-pty-forward, systemd-repart, systemd-resolve
+        (resolvectl へのシンボリックリンク), systemd-run, systemd-socket-activate,
+        systemd-stdio-bridge, systemd-sysext, systemd-tmpfiles,
+        systemd-tty-ask-password-agent, systemd-vpick,
         systemd-umount (systemd-mount へのシンボリックリンク),
-        telinit (systemctl へのシンボリックリンク), timedatectl, udevadm</seg>
+        timedatectl, udevadm, userdbctl, varlinkctl</seg>
         <seg>libnss_myhostname.so.2, libnss_mymachines.so.2,
         libnss_resolve.so.2, libnss_systemd.so.2,
-        libsystemd.so, libsystemd-shared-&systemd-version;.so (in /usr/lib/systemd),
+        libsystemd.so, libsystemd-shared-&systemd-version;.so (/usr/lib/systemd 内),
         libudev.so</seg>
         <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
-        /etc/xdg/systemd, /usr/lib/systemd, /usr/lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/environment.d, /usr/lib/kernel,
-        /usr/lib/modules-load.d, /usr/lib/sysctl.d, /usr/lib/systemd,
-        /usr/lib/tmpfiles.d,
+        /etc/xdg/systemd, /usr/include/systemd, /usr/lib/binfmt.d,
+        /usr/lib/credstore, /usr/lib/environment.d, /usr/lib/kernel,
+        /usr/lib/modprobe.d, /usr/lib/modules-load.d,  /usr/lib/systemd,
+        /usr/lib/udev, /usr/lib/sysctl.d, /usr/lib/systemd, /usr/lib/tmpfiles.d,
         /usr/share/doc/systemd-&systemd-version;, /usr/share/factory,
         /usr/share/systemd, /var/lib/systemd, /var/log/journal</seg>
 @z

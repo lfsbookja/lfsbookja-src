@@ -37,30 +37,22 @@
       <para>Like GMP, Libffi builds with optimizations specific
       to the processor in use. If building for another system, change the
       value of the <parameter>--with-gcc-arch=</parameter> parameter in the
-      following command to an architecture name fully implemented by the
+      following command to an architecture name fully implemented by
+      <emphasis role='bold'>both</emphasis> the host CPU and the
       CPU on that system.
       If this is not done, all applications that link to
       <filename class='libraryfile'>libffi</filename> will trigger
-      Illegal Operation Errors.</para>
+      Illegal Operation Errors.  If you cannot figure out a value
+      safe for both the CPUs, replace the parameter with
+      <option>--without-gcc-arch</option> to produce a generic library.</para>
 @y
       <para>
       GMP と同じように Libffi では、利用中のプロセッサーに応じた最適化を行なってビルドされます。
-      異なるシステムに向けてのビルドを行う場合は、以下のコマンドにおいて <parameter>--with-gcc-arch=</parameter> を使って、そのシステム上の CPU の実装を完全に表すアーキテクチャー名に変更してください。
+      異なるシステムに向けてのビルドを行う場合は、以下のコマンドにおいて <parameter>--with-gcc-arch=</parameter> を使って、ホスト CPU とそのシステム上の CPU の <emphasis role='bold'>双方</emphasis> に対して、実装を完全に表すアーキテクチャー名に変更してください。
       そうしなかった場合には、<filename class='libraryfile'>libffi</filename> をリンクするアプリケーションにおいて Illegal Operation エラーを発生させることになります。
+      双方の CPU に対して適切な設定が分からない場合は <option>--without-gcc-arch</option> を指定して、汎用的なライブラリを生成してください。
       </para>
 @z
-
-%@x
-%    <para>Modify the Makefile to install headers into the standard
-%    <filename class="directory">/usr/include</filename> directory instead of
-%    <filename class="directory">/usr/lib/libffi-&libffi-version;/include</filename>.</para>
-%@y
-%    <para>
-%    Makefile を修正して、ヘッダーファイルのインストール先を <filename
-%    class="directory">/usr/lib/libffi-&libffi-version;/include</filename> でなく、標準的な <filename
-%    class="directory">/usr/include</filename> とします。
-%    </para>
-%@z
 
 @x
     <para>Prepare Libffi for compilation:</para>
@@ -115,58 +107,10 @@
     <para>&InstallThePackage;</para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Installation of Libffi - 32bit</title>
+    <title>Installation of Libffi - 32-bit</title>
 @y
     <title>Libffi - 32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Prepare Libffi for compilation:</para>
-@y
-    <para>&PreparePackage1;Libffi&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>To test the results, issue:</para>
-@y
-    <para>
-    ビルド結果をテストする場合は、以下を実行します。
-    </para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of Libffi - x32bit</title>
-@y
-    <title>Libffi - x32 ビットのインストール</title>
 @z
 
 @x

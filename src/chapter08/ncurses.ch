@@ -98,11 +98,12 @@
 
 @x
     <para>The installation of this package will overwrite
-    <filename class="libraryfile">libncursesw.so.&ncurses-version;</filename>
+    <filename class="libraryfile">libncursesw.so.&ncurses-base-version;</filename>
     in-place.  It may crash the shell process which is using code and data
     from the library file.  Install the package with
     <literal>DESTDIR</literal>, and replace the library file correctly using
-    <command>install</command> command (the header
+    the <parameter>--remove-destination</parameter> option of
+    <command>cp</command> (the header
     <filename>curses.h</filename> is also edited to ensure the
     wide-character ABI to be used as what we've done in
     <xref linkend='ch-tools-ncurses'/>):</para>
@@ -111,7 +112,7 @@
     本パッケージをインストールすると、所定位置にある <filename
     class="libraryfile">libncursesw.so.&ncurses-version;</filename> が上書きされます。
     このときに、そのライブラリファイルのコードやデータを利用しているシェルプロセスが、クラッシュする場合があります。
-    そこで本パッケージは <literal>DESTDIR</literal> を使ってインストールして、<command>install</command> コマンドによってライブラリファイルを正しく置き換えるようにします。
+    そこで本パッケージは <literal>DESTDIR</literal> を使ってインストールして、<parameter>--remove-destination</parameter> オプションを指定した <command>cp</command> コマンドによってライブラリファイルを正しく置き換えるようにします。
     (ヘッダーファイル <filename>curses.h</filename> も <xref linkend='ch-tools-ncurses'/> で行ったものと同様に、ワイドキャラクター ABI が確実に利用されるように修正されます。)
     </para>
 @z
@@ -166,50 +167,10 @@
       </para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Building Ncurses - 32bit</title>
+    <title>Building Ncurses - 32-bit</title>
 @y
     <title>Ncurses - 32 ビットのビルド</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Prepare Ncurses for compilation:</para>
-@y
-    <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Building Ncurses - x32bit</title>
-@y
-    <title>Ncurses - x32 ビットのビルド</title>
 @z
 
 @x

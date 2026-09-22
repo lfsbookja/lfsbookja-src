@@ -3,64 +3,70 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
+
 @x
+  <title>Multilib Linux From Scratch
+         <phrase revision='openrc'>(OpenRC Edition)</phrase>
+         <phrase revision='sysv'>(SysVinit Edition)</phrase></title>
+  <subtitle>Version &version;</subtitle>
   <subtitle>Published &releasedate;</subtitle>
 @y
+  <title>Multilib Linux From Scratch
+         <phrase revision='openrc'>(OpenRC 版)</phrase>
+         <phrase revision='sysv'>(SysVinit 版)</phrase></title>
+  <subtitle>バージョン &version;</subtitle>
   <subtitle>&releasedate; 公開</subtitle>
 @z
 
 @x
-  <authorgroup>
-    <author>
       <firstname>Created by Gerard</firstname>
       <surname>Beekmans</surname>
-    </author>
-    <author>
-      <firstname>Managing Editor: Bruce</firstname>
-      <surname>Dubbs</surname>
-    </author>
-
-    <author revision="systemd">
-      <firstname>Editor: Douglas R.</firstname>
-      <surname>Reno</surname>
-    </author>
-
-    <author revision="systemd">
-      <firstname>Editor: DJ</firstname>
-      <surname>Lucas</surname>
-    </author>
-
-    <author arch="ml_32,ml_x32,ml_all">
-      <firstname>Editor: Thomas</firstname>
-      <surname>Trepl</surname>
-    </author>
-  </authorgroup>
 @y
-  <authorgroup>
-    <author>
       <firstname>製作： Gerard</firstname>
       <surname>Beekmans</surname>
-    </author>
-    <author>
+@z
+
+@x
+      <firstname>Managing Editor: Bruce</firstname>
+      <surname>Dubbs</surname>
+@y
       <firstname>編集総括： Bruce</firstname>
       <surname>Dubbs</surname>
-    </author>
+@z
 
-    <author revision="systemd">
+@x
+      <firstname>Editor: Joe</firstname>
+      <surname>Locash</surname>
+@y
+      <firstname>編集： Joe</firstname>
+      <surname>Locash</surname>
+@z
+
+@x
+      <firstname>Editor: Douglas R.</firstname>
+      <surname>Reno</surname>
+@y
       <firstname>編集： Douglas R.</firstname>
       <surname>Reno</surname>
-    </author>
+@z
 
-    <author revision="systemd">
-      <firstname>編集： DJ</firstname>
-      <surname>Lucas</surname>
-    </author>
+@x
+      <firstname>Editor: Xi</firstname>
+      <surname>Ruoyao</surname>
+@y
+      <firstname>編集： Xi</firstname>
+      <surname>Ruoyao</surname>
+@z
 
-    <author arch="ml_32,ml_x32,ml_all">
-      <firstname>編集: Thomas</firstname>
-      <surname>Trepl</surname>
-    </author>
+@x
+      <firstname>Editor: Zeckma</firstname>
+@y
+      <firstname>編集： Zeckma</firstname>
+@z
 
+@x
+  </authorgroup>
+@y
     <author>
       <firstname>日本語訳： 松山 道夫</firstname>
     </author>
@@ -69,7 +75,7 @@
 
 @x
     <para>This book is licensed under a <xref linkend="CC"/>.</para>
-    <para>Computer instructions may be extracted from the book under the 
+    <para>Computer instructions may be extracted from the book under the
           <xref linkend="MIT"/>.</para>
 @y
     <para>

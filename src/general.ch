@@ -11,56 +11,16 @@
 @z
 
 @x
-<![ %rc; [
-<![ %sysv; [
-<!ENTITY version         "%relnum;-rc%rcnum;">
-<!ENTITY short-version   "svn">  <!-- Used below in &blfs-book; -->
-]]>
-<![ %systemd; [
-<!ENTITY version         "%relnum;-systemd-rc%rcnum;">
-<!ENTITY short-version   "systemd">  <!-- Used below in &blfs-book; -->
-]]>
-<!ENTITY errata          "&lfs-root;lfs/errata/&version;/">
-<!ENTITY generic-version "%relnum;-rc%rcnum;"> <!-- Used below in
-                                                    &patches-root;,
-                                                    &downloads-root;, and
-                                                    &test-results; -->
-<!ENTITY releasedate     "%reldate;">
-<!ENTITY copyrightdate   "%crdate;">
-<!ENTITY os-release-type "development"> <!-- used by /etc/os-release -->
-]]>
+<!ENTITY lfs-root        "https://www.linuxfromscratch.org/">
 @y
-<![ %rc; [
-<![ %sysv; [
-<!ENTITY version         "%relnum;-rc%rcnum;">
-<!ENTITY short-version   "svn">  <!-- Used below in &blfs-book; -->
-]]>
-<![ %systemd; [
-<!ENTITY version         "%relnum;-systemd-rc%rcnum;">
-<!ENTITY short-version   "systemd">  <!-- Used below in &blfs-book; -->
-]]>
-<!ENTITY errata          "&lfs-root;lfs/errata/&version;/">
-<!ENTITY generic-version "%relnum;-rc%rcnum;"> <!-- Used below in
-                                                    &patches-root;,
-                                                    &downloads-root;, and
-                                                    &test-results; -->
-<!ENTITY releasedate     "%reldate;">
-<!ENTITY copyrightdate   "%crdate;">
-<!ENTITY os-release-type "development"> <!-- used by /etc/os-release -->
-]]>
-
-<!ENTITY jversion        "20250107">
-<!ENTITY jversiond       "20250107">
-<!ENTITY jcorrespondSHA  "5605ef387"> <!-- lfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion        "20260922">
+<!ENTITY jversiond       "20260922">
+<!ENTITY jcorrespondSHA  "aaa69"> <!-- lfs-git SHA 値； version.ent -->
 <!ENTITY dir-jversion    "multilib-ja">
 <!ENTITY dir-jversiond   "multilib-sysdja">
-@z
 
-@x
 <!ENTITY lfs-root        "https://www.linuxfromscratch.org/">
-@y
-<!ENTITY lfs-root        "https://www.linuxfromscratch.org/">
-<!ENTITY lfs-rootja      "http://lfsbookja.osdn.jp/">
+<!ENTITY lfs-rootja      "http://matsuand.github.io/">
 @z
 
 @x

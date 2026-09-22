@@ -162,13 +162,13 @@
 @x
     <para>You may see some test failures. The Glibc test suite is
     somewhat dependent on the host system. A few failures out of
-    over 5000 tests can generally be ignored. This is a list of the
+    over 6000 tests can generally be ignored. This is a list of the
     most common issues seen for recent versions of LFS:</para>
 @y
     <para>
     テストに失敗する場合があります。
     これは Glibc のテストスイートがホストシステムにある程度依存しているためです。
-    5000 を超えるテストの中で、ほんの少数のテストは失敗しますが、無視できるものです。
+    6000 を超えるテストの中で、ほんの少数のテストは失敗しますが、無視できるものです。
     LFS の当バージョンにおいて発生しがちな問題を以下に示します。
     </para>
 @z
@@ -219,10 +219,11 @@
         model (for example
         <emphasis>elf/tst-cpu-features-cpuinfo</emphasis>) or host kernel
         version (for example
-        <emphasis>stdlib/tst-arc4random-thread</emphasis>).</para>
+        <emphasis>stdlib/tst-arc4random-thread</emphasis>), or with a
+        host kernel newer than &linux-version;.</para>
 @y
         <para>
-        さらに CPU モデルが古い場合に (たとえば <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> が)、またホストのカーネルバージョンが古い場合に (たとえば <emphasis>stdlib/tst-arc4random-thread</emphasis> が)、それぞれ失敗することがあります。
+        さらに CPU モデルが古い場合に (たとえば <emphasis>elf/tst-cpu-features-cpuinfo</emphasis> など)、ホストのカーネルバージョンが古い場合や (たとえば <emphasis>stdlib/tst-arc4random-thread</emphasis> など)、ホストのカーネルバージョンが &linux-version; よりも新しい場合に、失敗するテストが出てくることがあります。
         </para>
 @z
 
@@ -429,19 +430,6 @@
     <para>
     必要に応じて <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> に示されるすべてのロケールを同時にインストールしてください。(そこには上のロケールも含め、すべてのロケールが列記されています。) 以下のコマンドによりそれを実現します。
     ただしこれには相当な処理時間を要します。
-    </para>
-@z
-
-@x
-    <para>Then use the <command>localedef</command> command to create and
-    install locales not listed in the
-    <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> file
-    when you need them. For instance, the following two locales are
-    needed for some tests later in this chapter:</para>
-@y
-    <para>
-    さらに必要なら <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> ファイルに示されていないロケールは <command>localedef</command> コマンドを使って生成、インストールを行ってください。
-    たとえば以下の 2 つのロケールは、本章で後に実施するテストにおいて必要になります。
     </para>
 @z
 
@@ -660,25 +648,21 @@
   </para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Building Glibc - 32bit</title>
+    <title>Building Glibc - 32-bit</title>
 @y
     <title>Glibc - 32 ビットのビルド</title>
 @z
 
 @x
-    <para>Now recompile for m32. The extracted source can be
-    reused but needs to be cleaned before installing the m32
+    <para>Now build Glibc for 32-bit. The extracted source can be
+    reused but needs to be cleaned before installing the 32-bit
     version of Glibc.</para>
 @y
     <para>
-    ここから m32 向けに再コンパイルします。
+    ここから Glibc を 32 ビット向けにビルドします。
     展開済みのソースは再利用できます。
-    ただし m32 バージョンの Glibc のインストールを行う前には、すべてクリーンにしておくことが必要です。
+    ただし 32 ビットバージョンの Glibc のインストールを行う前には、すべてクリーンにしておくことが必要です。
     </para>
 @z
 
@@ -692,115 +676,10 @@
 @z
 
 @x
-    <para>Configure Glibc for m32 with the following commands:</para>
+    <para>Configure Glibc for 32-bit with the following commands:</para>
 @y
     <para>
-    以下のコマンドを実行して m32 向けの設定を行います。
-    </para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>
-    パッケージをコンパイルします。
-    </para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>
-    パッケージをインストールします。
-    </para>
-@z
-
-@x
-    <para>Add the library name to the dynamic loader config:</para>
-@y
-    <para>
-    動的ローダー設定にライブラリ名を追加します。
-    </para>
-@z
-
-@x
-      <para>At this point, it is imperative to stop and ensure that the basic
-      functions (compiling and linking) of the new toolchain are working as
-      expected. To perform a sanity check, run the following commands:</para>
-@y
-      <para>
-      この時点で以下を必ず実施します。
-      新しいツールチェーンの基本的な機能 (コンパイルやリンク) が正常に処理されるかどうかを確認することです。
-      健全性のチェック (sanity check) を行うものであり、以下のコマンドを実行します。
-      </para>
-@z
-
-@x
-      <para>If everything is working correctly, there should be no errors,
-      and the output of the last command will be of the form:</para>
-@y
-      <para>
-      すべてが正常に処理され、エラーが発生しなければ、最終のコマンドの実行結果として以下が出力されるはずです。
-      </para>
-@z
-
-@x
-      <para>If the output is not shown as above or there was no output at all,
-      then something is wrong. Investigate and retrace the steps to find out
-      where the problem is and correct it. This issue must be resolved before
-      continuing on.</para>
-@y
-      <para>
-      出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
-      どこに問題があるのか調査、再試行を行って解消してください。
-      解決せずにこの先に進まないでください。
-      </para>
-@z
-
-@x
-      <para>Once all is well, clean up the test files:</para>
-@y
-      <para>
-      すべてが完了したら、テストファイルを削除します。
-      </para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Building Glibc - x32bit</title>
-@y
-    <title>Glibc - x32 ビットのビルド</title>
-@z
-
-@x
-    <para>Now recompile for mx32. The extracted source can be
-    reused but needs to be cleaned before installing the mx32
-    version of Glibc.</para>
-@y
-    <para>
-    ここから mx32 向けに再コンパイルします。
-    展開済みのソースは再利用できます。
-    ただし mx32 バージョンの Glibc のインストールを行う前には、すべてクリーンにしておくことが必要です。
-    </para>
-@z
-
-@x
-    <para>Clear the build directory and remove artefacts from
-    previous build:</para>
-@y
-    <para>
-    ビルドディレクトリをクリアし、上のビルドで生成したものを削除します。
-    </para>
-@z
-
-@x
-    <para>Configure Glibc for mx32 with the following commands:</para>
-@y
-    <para>
-    以下のコマンドを実行して mx32 向けの設定を行います。
+    以下のコマンドを実行して 32 ビット向けの設定を行います。
     </para>
 @z
 

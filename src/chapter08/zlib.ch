@@ -50,12 +50,8 @@
     </para>
 @z
 
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - 32bit  -->
-% <!-- - - - - - - - - - -->
-
 @x
-    <title>Installation of Zlib - 32bit</title>
+    <title>Installation of Zlib - 32-bit</title>
 @y
     <title>Zlib - 32 ビットのインストール</title>
 @z
@@ -66,34 +62,6 @@
     <para>
     ここまでのビルドをクリアします。
     </para>
-@z
-
-@x
-    <para>Prepare Zlib for compilation:</para>
-@y
-    <para>&PreparePackage1;Zlib&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of Zlib - x32bit</title>
-@y
-    <title>Zlib - x32 ビットのインストール</title>
 @z
 
 @x

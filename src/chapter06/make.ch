@@ -28,24 +28,6 @@
 @z
 
 @x
-      <title>The meaning of the new configure option:</title>
-@y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
-@z
-
-@x --without-guile
-          <para>Although we are cross-compiling, configure tries to use
-          guile from the build host if it finds it. This makes compilation
-          fail, so this switch prevents using it.</para>
-@y
-          <para>
-          ここではクロスコンパイルをしているにもかかわらず、ビルドホスト内に guile が存在すると configure がそれを見つけて利用しようとします。
-          そうなってしまうとコンパイルが失敗します。
-          そこで本スイッチにより、そうならないようにします。
-          </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

@@ -19,30 +19,20 @@
 @z
 
 @x
-    <para>If building on x86_64, change the default directory name for 64-bit
+    <para>Change the default directory name for 64-bit
     libraries to <quote>lib</quote>:</para>
 @y
     <para>
-    x86_64 上でビルドしている場合は、64ビットライブラリのデフォルトディレクトリ名を "lib"にします。
+    64 ビット向けのデフォルトディレクトリ名を<quote>lib</quote>にします。
     </para>
 @z
 
 @x
-    <para arch="ml_32,ml_x32,ml_all">Change the default directory name for 64-bit
-    libraries to <quote>lib</quote>:</para>
-@y
-    <para arch="ml_32,ml_x32,ml_all">
-    64 ビット向けのデフォルトディレクトリ名を "lib" に変更します。
-    </para>
-@z
-
-@x
-    <para arch="ml_32,ml_all">Make <literal>-mstackrealign</literal> a default for 32bit
+    <para>Make <literal>-mstackrealign</literal> a default for 32-bit
       objects:</para>
 @y
-    <para arch="ml_32,ml_all">
-    32 ビットオブジェクト向けに <literal>-mstackrealign</literal> をデフォルトとします。
-    </para>
+    <para>Make <literal>-mstackrealign</literal> a default for 32-bit
+      objects:</para>
 @z
 
 @x
@@ -60,15 +50,42 @@
 @z
 
 @x
-    <para>GCC supports seven different computer languages, but the
-    prerequisites for most of them have not yet been installed. See the
-    <ulink url="&blfs-book;general/gcc.html">BLFS Book GCC page</ulink>
-    for instructions on how to build all of GCC's supported languages.</para>
+    <para>We only enable C and C++ here to save the build time as no
+    packages in LFS and BLFS require GCC to compile other languages. Append
+    <literal>algol68</literal> for Algol 68,
+    <literal>fortran</literal> for Fortran,
+    <literal>go</literal> for Go,
+    <literal>objc</literal> for Objective C,
+    <literal>obj-c++</literal> for Objective C++, and/or
+    <literal>m2</literal> for Modula 2 into the value of
+    <parameter>--enable-languages</parameter> option if you want to compile
+    programs in one or more of those languages with GCC.</para>
 @y
     <para>
-    GCC では 7 つのコンピューター言語をサポートしていますが、それらのほとんどが必要としている依存パッケージは、まだこの時点でインストールしていません。
-    GCC がサポートする他のコンピューター言語の構築方法については <ulink
-    url="&blfs-book;general/gcc.html">BLFS ブック</ulink> の説明を参照してください。
+    ここで有効にするのは C と C++ のみです。
+    ビルド時間を節約する目的があり、また LFS や BLFS において GCC が他の言語を必要とするパッケージが存在しないからです。
+    GCC においてさらに言語を増やしてプログラムコンパイルを行いたい場合は <parameter>--enable-languages</parameter> オプションにそれぞれ以下を追加してください。
+    Algol 68 に対して <literal>algol68</literal>、
+    Fortran に対して <literal>fortran</literal>、
+    Go に対して <literal>go</literal>、
+    Objective C に対して <literal>objc</literal>、
+    Objective C++ に対して <literal>obj-c++</literal>、
+    Modula 2 に対して <literal>m2</literal>。
+    </para>
+@z
+
+@x
+    <para>GCC also supports the Ada, COBOL, and D languages.  But that would
+    require some dependencies which are not available in the base LFS system
+    and would exceed the scope of this book.  Read
+    <ulink url='https://gcc.gnu.org/install/prerequisites.html'>the upstream
+    documentation</ulink> for details.</para>
+@y
+    <para>
+    GCC では Ada、COBOL、D 言語もサポートしています。
+    ただしこれに対しては、LFS の基本システムでは採用していないもの、そして本ブックの範囲を超えるものを依存パッケージとして必要としています。
+    詳しくはアップストリームによる <ulink
+    url='https://gcc.gnu.org/install/prerequisites.html'>アップストリームのドキュメント</ulink> を参照してください。
     </para>
 @z
 
@@ -89,18 +106,26 @@
           </para>
 @z
 
-@x --disable-fixincludes
-          <para>By default, during the installation of GCC some system
-          headers would be <quote>fixed</quote> to be used with GCC.  This
-          is not necessary for a modern Linux system, and potentially 
-          harmful if a package is reinstalled after installing GCC.  This
-          switch prevents GCC from <quote>fixing</quote> the headers.</para>
+@x --disable-bootstrap
+          <para>By default, the build system of GCC will bootstrap it in
+          3 stages unless it's built as a cross-compiler or it is being
+          cross-compiled.  The bootstrap process is needed for robustness,
+          especially when upgrading GCC to a new version.  In LFS we are
+          using a different method to bootstrap GCC (as we introduced in
+          <xref linkend='ch-tools-toolchaintechnotes'/>), so here we don't
+          need the bootstrap process provided by the build system and we
+          disable it to significantly reduce the build time.  Remove this
+          option when you upgrade GCC on a complete LFS system (instead of
+          building LFS).</para>
 @y
           <para>
-          デフォルトにおいて、GCC のインストール中に GCC が利用するシステムヘッダーが<quote>固定される</quote>場合があります。
-          これは最近の Linux システムにおいては不要なことです。
-          また GCC のインストール後に何かのパッケージをインストールすることを考えると、潜在的な危険を生み出すことになります。
-          本スイッチは GCC がヘッダーファイルを <quote>固定 (fix)</quote> しないようにします。
+          GCC のビルドシステムでは、クロスコンパイラーをビルドする場合、あるいはクロスコンパイルを行っている場合を除くと、デフォルトでは 3 ステージにおいてブートストラップを行います。
+          ブートストラップ処理は堅牢性のためであり、特に GCC をより新しいバージョンにアップグレードする際に必要となります。
+          LFS ではブートストラップとはことなる方法をとっています (<xref
+          linkend='ch-tools-toolchaintechnotes'/> において説明しています)。
+          したがってビルドシステムが提供するブートストラップ処理を必要としません。
+          この処理を用いないことからビルド時間を大幅に軽減しています。
+          完璧な (LFS のビルド中ではない) LFS システム上において GCC をアップグレードする場合は、本オプションを取り除いてください。
           </para>
 @z
 
@@ -188,14 +213,6 @@
 @z
 
 @x
-    <para>Now remove/fix several known test failures:</para>
-@y
-    <para>
-    テストスイートの不備をここで削除/修正します。
-    </para>
-@z
-
-@x
     <para>Test the results as a non-privileged user, but do not stop at errors:</para>
 @y
     <para>
@@ -223,13 +240,11 @@
 
 @x
     <para>Results can be compared with those located at <ulink
-    url="&test-results;"/> and
-    <ulink url="https://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
+    url="&test-results;"/>.</para>
 @y
     <para>
     テスト結果については <ulink
-    url="&test-results;"/> と <ulink
-    url="https://gcc.gnu.org/ml/gcc-testresults/"/> にある情報と比較することができます。
+    url="&test-results;"/> にある情報と比較することができます。
     </para>
 @z
 
@@ -398,29 +413,6 @@
   <para>
   '-linux-gnu' を含んだパスは無視すれば、最後のコマンドの出力は以下となるはずです。
   </para>
-@z
-
-%@x
-%    <note><para>As of version 4.3.0, GCC now unconditionally installs the
-%    <filename>limits.h</filename> file into the private
-%    <filename class="directory">include-fixed</filename> directory, and that
-%    directory is required to be in place.</para></note>
-%@y
-%    <note><para>
-%    GCC のバージョン 4.3.0 では <filename>limits.h</filename> ファイルを無条件に <filename
-%    class="directory">include-fixed</filename> ディレクトリにインストールします。
-%    したがってそのディレクトリは存在していなければなりません。
-%    </para></note>
-%@z
-
-@x
-   <para arch="default">A 32-bit system may use a few other directories. For example, here
-   is the output from an i686 machine:</para>
-@y
-   <para arch="default">
-   32ビットシステムではディレクトリが多少異なります。
-   以下は i686 マシンでの出力例です。
-   </para>
 @z
 
 @x

@@ -23,13 +23,13 @@
 
 @x
   <para>In <xref linkend="chapter-building-system"/>, we installed the udev
-  daemon when <phrase revision="sysv">udev</phrase>
+  daemon when <phrase revision="openrc,sysv">udev</phrase>
   <phrase revision="systemd">systemd</phrase> was built. Before we go into the
   details regarding how udev works, a brief history of previous methods of
   handling devices is in order.</para>
 @y
   <para>
-  <xref linkend="chapter-building-system"/>の <phrase revision="sysv">eudev</phrase>
+  <xref linkend="chapter-building-system"/>の <phrase revision="openrc,sysv">eudev</phrase>
   <phrase revision="systemd">systemd</phrase> のビルドを通じて udev デーモンをインストールしました。
   この udev がどのように動作するかの詳細を説明する前に、デバイスを取り扱うかつての方法について順を追って説明していきます。
   </para>
@@ -521,8 +521,8 @@
 @z
 
 @x
-      <para revision="sysv">If the module in question is not a wrapper and is
-      useful by itself, configure the <command>modules</command> bootscript to
+      <para revision="sysv">If the module in question is not a wrapper
+      and is useful by itself, configure the <command>modules</command> bootscript to
       load this module on system boot. To do this, add the module name to the
       <filename>/etc/sysconfig/modules</filename> file on a separate line.
       This works for wrapper modules too, but is suboptimal in that case.</para>

@@ -77,14 +77,12 @@
     limit and 1 SBU (measured when building Binutils pass 1 with one CPU
     core) should be enough.  Some tests are flaky, so the test suite will
     automatically re-run failed tests.  If a test failed but then passed
-    when re-run, it should be considered as passed.  One test, test_ssl,
-    is known to fail in the chroot environment.</para>
+    when re-run, it should be considered as passed.</para>
 @y
     <para>
     比較的遅いシステムの場合は、その時間制限を増やせば 1 SBU (1 コアを使った Binutils 1 回目のビルド時間) で処理できるはずです。
     テストの中には一風変わったものがあって、自動的に再実行された上で失敗するものがあります。
     一度失敗して再実行の際に成功したものは、テストが成功したものとみなすことができます。
-    test_ssl というテストが chroot 環境内では失敗します。
     </para>
 @z
 
@@ -197,20 +195,19 @@
 @z
 
 @x
-      <term><option>--no-same-owner</option> (tar) and <option>--no-preserve=mode</option> (cp)</term>
+      <term><option>--no-same-owner</option> and <option>--no-same-permissions</option></term>
 @y
-      <term><option>--no-same-owner</option> (tar) と <option>--no-same-permissions</option> (cp)</term>
+      <term><option>--no-same-owner</option> と <option>--no-same-permissions</option></term>
 @z
 @x
         <para>Ensure the installed files have the correct ownership and
         permissions.  Without these options, <application>tar</application>
-        will install the package files with the upstream creator's values
-        and files would have restrictive permissions.
+        will install the package files with the upstream creator's values.
         </para>
 @y
         <para>
         インストールするファイルの所有者とパーミッションを適切に設定します。
-        このオプションがないと <application>tar</application> によって展開されるファイルは、アップストリームが作り出した値になってしまい、またファイルのパーミッションが限定的になることがあります。
+        このオプションがないと <application>tar</application> によって展開されるファイルは、アップストリームが作り出した値になってしまうことがあります。
         </para>
 @z
 
@@ -232,7 +229,7 @@
 
 @x
         <seg>
-          2to3, idle3, pip3, pydoc3, python3, and python3-config
+          idle3, pip3, pydoc3, python3, and python3-config
         </seg>
         <seg>
           libpython&python-minor;.so and libpython3.so
@@ -244,7 +241,7 @@
         </seg>
 @y
         <seg>
-          2to3, idle3, pip3, pydoc3, python3, python3-config
+          idle3, pip3, pydoc3, python3, python3-config
         </seg>
         <seg>
           libpython&python-minor;.so, libpython3.so

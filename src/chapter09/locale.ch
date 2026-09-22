@@ -220,7 +220,7 @@
   <para><phrase revision='systemd'>The login shells are often unaffected by
   the settings in <filename>/etc/locale.conf</filename>. </phrase>Create the
   <filename>/etc/profile</filename>
-  <phrase revision='sysv'>once the proper locale settings have been
+  <phrase revision='openrc,sysv'>once the proper locale settings have been
   determined to set the desired locale</phrase><phrase
   revision='systemd'>to read the locale settings from
   <filename>/etc/locale.conf</filename> and export them</phrase>,
@@ -232,7 +232,7 @@
    <phrase revision='systemd'>
    ログインシェルは <filename>/etc/locale.conf</filename> における設定に影響を受けないこともあります。
    </phrase>
-   <phrase revision='sysv'>
+   <phrase revision='openrc,sysv'>
     適切なロケール設定が定まったら <filename>/etc/profile</filename> を生成してロケールを望みどおりに設定します。
    </phrase>
    <phrase revision='systemd'>

@@ -58,7 +58,7 @@
 @z
 
 @x
-    <listitem revision="sysv"><para>
+    <listitem revision="openrc,sysv"><para>
     If you are in a situation where static IP configuration
     does not meet your networking requirements, installing a package
     such as <ulink url='&blfs-book;basicnet/dhcpcd.html'>dhcpcd</ulink>
@@ -66,7 +66,7 @@
     url='&blfs-book;basicnet/dhcp.html'>dhcp</ulink> may be
     useful.</para></listitem>
 @y
-    <listitem revision="sysv"><para>
+    <listitem revision="openrc,sysv"><para>
     ネットワーク環境内にて固定 IP アドレスを用いることが適当ではない場合は、<ulink
     url='&blfs-book;basicnet/dhcpcd.html'>dhcpcd</ulink> パッケージや <ulink
     url='&blfs-book;basicnet/dhcp.html'>dhcp</ulink> パッケージのクライアントモジュール部分を利用することが考えられます。

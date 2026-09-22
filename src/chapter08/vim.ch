@@ -60,11 +60,13 @@
 @x
     <para>To prepare the tests, ensure that user
     <systemitem class="username">tester</systemitem> can write
-    to the source tree:</para>
+    to the source tree and exclude one file containing tests requiring
+    <command>curl</command> or <command>wget</command>:</para>
 @y
     <para>
     コンパイル結果をテストするために、<systemitem
     class="username">tester</systemitem> ユーザーがソースツリーに書き込みできるようにします。
+    また <command>curl</command> と <command>wget</command> を必要とする 1 つのテストを除外するようにします。
     </para>
 @z
 
@@ -83,15 +85,15 @@
     we are overriding the <envar>TERM</envar> variable to satisfy some
     assumptions of the test suite).  The problem can be
     avoided by redirecting the output to a log file as shown above.  A
-    successful test will result in the words <computeroutput>ALL
-    DONE</computeroutput> in the log file at completion.</para>
+    successful test will show <computeroutput>FAILED: 0</computeroutput> in the 
+    log file at completion.</para>
 @y
     <para>
     このテストスイートは数多くのバイナリデータを端末画面上に出力します。
     これは端末画面の設定によっては問題を引き起こします。
     (特にテストスイートの要請を満たすため <envar>TERM</envar> 変数を上書きしている場合などです。)
     これを避けるには、上に示すように出力をリダイレクトしてログファイルに出力するようにしてください。
-    テストが成功すれば、ログファイルの最後に <computeroutput>ALL DONE</computeroutput> と表示されます。
+    テストが成功すれば、ログファイルの最後に <computeroutput>FAILED: 0</computeroutput> と表示されます。
     </para>
 @z
 

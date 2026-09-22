@@ -81,14 +81,6 @@
           </para>
 @z
 
-@x --enable-multilib
-          <para>Enables multilib support in bintutils.</para>
-@y
-          <para>
-          binutils におけるマルチライブラリサポートを有効にします。
-          </para>
-@z
-
 @x
     <para>Compile the package:</para>
 @y

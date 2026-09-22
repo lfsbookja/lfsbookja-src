@@ -34,14 +34,22 @@
 
 @x
     <para>The Acl tests must be run on a filesystem that supports access
-    controls, but not until the <application>Coreutils</application> package has been built,
-    using the <application>Acl</application> libraries.  If desired, return to this package
-    and run <command>make check</command> after the <application>Coreutils</application>
-    package has been built.</para>
+    controls.  To test the results, issue:</para>
 @y
     <para>
-    Acl のテストは、<application>Acl</application> ライブラリを使うアクセス制御がサポートされたファイルシステム上にて実施する必要がありますが、<application>Coreutils</application> をビルドするまでは、その必要はありません。
-    テスト実施が必要である場合は、<application>Coreutils</application> のビルドが終わってから、再び本パッケージに戻って <command>make check</command> を実行してください。
+    Acl のテストは、アクセス制御がサポートされたファイルシステム上にて実施する必要があります。
+    ビルド結果をテストする場合は以下を実行します。
+    </para>
+@z
+
+@x
+    <para>One test named <filename>test/cp.run</filename> is known to
+    fail because <application>Coreutils</application> is not built with
+    the <application>Acl</application> support yet.</para>
+@y
+    <para>
+    <filename>test/cp.run</filename> というテストは失敗します。
+    これは <application>Coreutils</application> が <application>Acl</application> サポートをともなってビルドされていないからです。
     </para>
 @z
 
@@ -56,45 +64,9 @@
 % <!-- - - - - - - - - - -->
 
 @x
-    <title>Installation of Acl - 32bit</title>
+    <title>Installation of Acl - 32-bit</title>
 @y
     <title>Acl - 32 ビットのインストール</title>
-@z
-
-@x
-    <para>Clean previous build:</para>
-@y
-    <para>
-    ここまでのビルドをクリアします。
-    </para>
-@z
-
-@x
-    <para>Prepare Acl for compilation:</para>
-@y
-    <para>&PreparePackage1;Acl&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
-
-% <!-- - - - - - - - - - -->
-% <!-- Multilib - x32bit -->
-% <!-- - - - - - - - - - -->
-
-@x
-    <title>Installation of Acl - x32bit</title>
-@y
-    <title>Acl - x32 ビットのインストール</title>
 @z
 
 @x

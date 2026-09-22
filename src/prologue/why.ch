@@ -315,12 +315,12 @@
 @x Gperf
         <para>This package produces a program that generates a perfect hash
         function from a set of keys. It is required by
-        <phrase revision='sysv'>Udev</phrase>
+        <phrase revision='openrc,sysv'>Udev</phrase>
         <phrase revision='systemd'>Systemd</phrase>.</para>
 @y
         <para>
         このパッケージは、キーセットから完全なハッシュ関数を生成するプログラムを提供します。
-        <phrase revision='sysv'>Udev</phrase>
+        <phrase revision='openrc,sysv'>Udev</phrase>
         <phrase revision='systemd'>Systemd</phrase> がこれを必要としています。
         </para>
 @z
@@ -398,7 +398,7 @@
 @x IProute2
         <para>This package contains programs for basic and advanced IPv4 and
         IPv6 networking.  It was chosen over the other common network
-        tools package (net-tools) for its IPv6 capabilities.  </para>
+        tools package (net-tools) for its IPv6 capabilities.</para>
 @y
         <para>
         このパッケージは、IPv4、IPv6 による基本的な、あるいは拡張したネットワーク制御を行うプログラムを提供します。
@@ -772,11 +772,12 @@
 @x Systemd
         <para>This package provides an <application>init</application> program
         and several additional boot and system control capabilities as an
-        alternative to SysVinit.  It is used by many Linux distributions.
+        alternative to other init systems. It is used by many Linux
+        distributions.
         </para>
 @y
         <para>
-        このパッケージは SysVinit の代替として、<application>init</application> プログラムなど数種のプログラムにより、システム起動やシステム制御を実現します。
+        このパッケージは <application>init</application> プログラムなど数種のプログラムにより、init の代替となるものとして、システム起動やシステム制御を実現します。
         多くの Linux ディストリビューションにおいてもよく利用されています。
         </para>
 @z
@@ -784,7 +785,7 @@
 @x Sysvinit
         <para>This package provides the <application>init</application>
         program, the parent of all the other processes on a running Linux
-        system. </para>
+        system.</para>
 @y
         <para>
         このパッケージは <application>init</application> プログラムを提供します。

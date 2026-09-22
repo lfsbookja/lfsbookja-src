@@ -51,9 +51,9 @@
 @z
 
 @x
-          <para><ulink url="&lfs-root;lfs/advisories/">LFS Security Advisories</ulink></para>
+          <para><ulink url="&lfs-root;advisories/">LFS Security Advisories</ulink></para>
 @y
-          <para><ulink url="&lfs-root;lfs/advisories/">LFS セキュリティアドバイザリー</ulink></para>
+          <para><ulink url="&lfs-root;advisories/">LFS セキュリティアドバイザリー</ulink></para>
 @z
 
 @x
