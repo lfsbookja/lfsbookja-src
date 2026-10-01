@@ -76,12 +76,6 @@
 @z
 
 @x
-<!ENTITY intltool-fin-sbu "less than 0.1 SBU">
-@y
-<!ENTITY intltool-fin-sbu "0.1 SBU 以下">
-@z
-
-@x
 <!ENTITY jinja2-fin-sbu "less than 0.1 SBU">
 @y
 <!ENTITY jinja2-fin-sbu "0.1 SBU 以下">

@@ -176,6 +176,14 @@
 @z
 
 @x
+    <para>One test, test-regex-el, is known to fail.</para>
+@y
+    <para>
+    test-regex-el というテストが失敗します。
+    </para>
+@z
+
+@x
     <para>Remove the temporary group:</para>
 @y
     <para>

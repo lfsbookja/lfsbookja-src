@@ -38,6 +38,128 @@
 @z
 
 @x
+      <para>2026-10-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to coreutils-9.12. Fixes
+          <ulink url="&lfs-ticket-root;6020">#6020</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.8.5 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6027">#6027</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to flit_core-4.1.0 (Python module). Fixes
+          <ulink url="&lfs-ticket-root;6021">#6021</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to groff-1.24.2. Fixes
+          <ulink url="&lfs-ticket-root;6034">#6034</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gzip-1.15. Fixes
+          <ulink url="&lfs-ticket-root;6025">#6025</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-710. Fixes
+          <ulink url="&lfs-ticket-root;6024">#6024</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.2.8. Fixes
+          <ulink url="&lfs-ticket-root;6024">#6024</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to meson-1.12.1. Fixes
+          <ulink url="&lfs-ticket-root;6029">#6029</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-4.0.3 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6033">#6033</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pcre2-10.49 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6032">#6032</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shadow-4.20.3. Fixes
+          <ulink url="&lfs-ticket-root;6031">#6031</ulink>.</para>
+        </listitem>
+        <listitem>
+         <para>[bdubbs] - Update to systemd-262. Fixes
+          <ulink url="&lfs-ticket-root;6030">#6030</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata20263. Fixes
+          <ulink url="&lfs-ticket-root;6035">#6035</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.42.4 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6014">#6014</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-10-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - coreutils-9.12 へのアップデート。
+          <ulink url="&lfs-ticket-root;6020">#6020</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expat-2.8.5 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6027">#6027</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - flit_core-4.1.0 (Python モジュール) へのアップデート。
+          <ulink url="&lfs-ticket-root;6021">#6021</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - groff-1.24.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;6034">#6034</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gzip-1.15 へのアップデート。
+          <ulink url="&lfs-ticket-root;6025">#6025</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - less-710 へのアップデート。
+          <ulink url="&lfs-ticket-root;6024">#6024</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-7.2.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;6024">#6024</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - meson-1.12.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;6029">#6029</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-4.0.3 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6033">#6033</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pcre2-10.49 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6032">#6032</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - shadow-4.20.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;6031">#6031</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+         <para>[bdubbs] - systemd-262 へのアップデート。
+          <ulink url="&lfs-ticket-root;6030">#6030</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata20263 へのアップデート。
+          <ulink url="&lfs-ticket-root;6035">#6035</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.42.4 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6014">#6014</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-09-18</para>
       <itemizedlist>
         <listitem>

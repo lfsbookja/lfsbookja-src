@@ -213,10 +213,10 @@
 
 @x
       <para><ulink url="mailto:justin@knierim.org">Justin Knierim</ulink>
-      &lt;tim@idge.net&gt; &ndash; lfs-matrix.net mirror</para>
+      &lt;justin@knierim.org&gt; &ndash; lfs-matrix.net mirror</para>
 @y
       <para><ulink url="mailto:justin@knierim.org">Justin Knierim</ulink>
-      &lt;tim@idge.net&gt; &ndash; lfs-matrix.net ミラー</para>
+      &lt;justin@knierim.org&gt; &ndash; lfs-matrix.net ミラー</para>
 @z
 
 @x
