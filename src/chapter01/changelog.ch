@@ -38,6 +38,24 @@
 @z
 
 @x
+      <para>2026-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.14.8 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6007">#6007</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Python-3.14.8 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6007">#6007</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-10-01</para>
       <itemizedlist>
         <listitem>
@@ -85,7 +103,7 @@
           <ulink url="&lfs-ticket-root;6031">#6031</ulink>.</para>
         </listitem>
         <listitem>
-         <para>[bdubbs] - Update to systemd-262. Fixes
+          <para>[bdubbs] - Update to systemd-262. Fixes
           <ulink url="&lfs-ticket-root;6030">#6030</ulink>.</para>
         </listitem>
         <listitem>
@@ -145,7 +163,7 @@
           <ulink url="&lfs-ticket-root;6031">#6031</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-         <para>[bdubbs] - systemd-262 へのアップデート。
+          <para>[bdubbs] - systemd-262 へのアップデート。
           <ulink url="&lfs-ticket-root;6030">#6030</ulink> を Fix に。</para>
         </listitem>
         <listitem>
