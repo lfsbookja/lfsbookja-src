@@ -64,22 +64,6 @@
 @z
 
 @x
-    <para>One test, 30-test_afalg.t, is known to fail if the host kernel
-    does not have <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> enabled,
-    or does not have any options providing an AES with CBC implementation
-    (for example, the combination of <option>CONFIG_CRYPTO_AES</option>
-    and <option>CONFIG_CRYPTO_CBC</option>, or
-    <option>CONFIG_CRYPTO_AES_NI_INTEL</option> if the CPU supports AES-NI)
-    enabled.  If it fails, it can safely be ignored.</para>
-@y
-    <para>
-    30-test_afalg.t というテストが 1 つだけ失敗します。
-    それはカーネルオプションの <option>CONFIG_CRYPTO_USER_API_SKCIPHER</option> が有効でない場合、あるいは CBC が実装された AES 機能を提供するオプション（たとえば <option>CONFIG_CRYPTO_AES</option> と <option>CONFIG_CRYPTO_CBC</option> との組み合わせや、CPU が AES-NI をサポートする際の <option>CONFIG_CRYPTO_AES_NI_INTEL</option> など）が一つもない場合です。
-    失敗しても、無視してかまいません。
-    </para>
-@z
-
-@x
     <para>Install the package (setting an empty
     <envar>INSTALL_LIBS</envar> prevents the installation of static
     libraries):</para>
@@ -154,7 +138,7 @@
 
 @x
         <seg>
-          c_rehash and openssl
+          openssl
         </seg>
         <seg>
           libcrypto.so and libssl.so
@@ -167,7 +151,7 @@
         </seg>
 @y
         <seg>
-          c_rehash, openssl
+          openssl
         </seg>
         <seg>
           libcrypto.so, libssl.so
