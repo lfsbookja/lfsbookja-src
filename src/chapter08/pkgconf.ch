@@ -22,10 +22,18 @@
 @z
 
 @x
-    <para>First, work around a circular dependency on meson:</para>
+    <para>First, remove a test the causes the build to fail:</para>
 @y
     <para>
-    まず meson との循環参照を回避します。
+    ビルドの失敗原因となるテストを削除します。
+    </para>
+@z
+
+@x
+    <para>Now, work around a circular dependency on meson:</para>
+@y
+    <para>
+    meson との循環参照を一時的に回避します。
     </para>
 @z
 

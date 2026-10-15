@@ -9,19 +9,6 @@
   <title>GRUB を用いたブートプロセスの設定</title>
 @z
 
-%@x
-%      If your system has UEFI support and you wish to boot LFS with UEFI,
-%      you should skip the instructions in this page but still learn the
-%      syntax of <filename>grub.cfg</filename> and the method to specify
-%      a partition in the file from this page, and configure GRUB with UEFI
-%      support using the instructions provided in
-%      <ulink url="&blfs-book;postlfs/grub-setup.html">the BLFS page</ulink>.
-%@y
-%      UEFI サポートが有効なシステムにおいて UEFI を使って LFS をブートしたい場合は、本ページに示す手順は読み飛ばしてください。
-%      ただし <filename>grub.cfg</filename> の文法を学ぶ場合や、ファイル内にあるパーティションの指定方法を学ぶ場合は確認しておいてください。
-%      そして <ulink url="&blfs-book;postlfs/grub-setup.html">BLFS ページ</ulink> に示されている手順に従って、UEFI に対応するように GRUB 設定を行ってください。
-%@z
-
 @x
     <title>Introduction</title>
 @y
@@ -347,13 +334,14 @@
         If it already exists, it's likely that it's the entry of another boot
         loader (for example the GRUB installation from the host distro, or the
         Windows Boot Manager). Backup the file so it can be restored later
-        or loaded as a secondary boot loader by the new GRUB installation
+        or loaded as a secondary boot loader (via a GRUB functionality named
+        <quote>chainloading</quote>) by the new GRUB installation
         from LFS.</para>
 @y
         <para>
         以下のコマンドは <filename>/boot/efi/EFI/BOOT/BOOTX64.EFI</filename> ファイルを上書きします。
         すでにこのファイルが存在していたとしたら、それは別のブートローダー (たとえばホストディストロからの GRUB インストール、あるいは Windows ブートマネージャー) によって導入されているものかもしれません。
-        後々の復元のことを考慮して、あるいは新たな GRUB インストールによって構成される 2 つめのブートローダー用としてロードできるように、このファイルのバックアップを取っておいてください。
+        後々の復元のことを考慮して、あるいは新たな GRUB インストールによって構成される 2 つめのブートローダー用として (<quote>chainloading</quote>と呼ばれる GRUB 機能として) ロードできるように、このファイルのバックアップを取っておいてください。
         </para>
 @z
 
@@ -389,66 +377,92 @@
 @z
 
 @x
-          Some UEFI firmware implementations, while rare, skip the standard
-          EFI path. Such
-          systems most of the time are old, like Lenovo ThinkPads or HP
-          desktops/laptops. When the boot entry is missing in the firmware setup, you
-          will need to install the BLFS package <ulink
-          url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> to create
-          a boot entry for UEFI. If it's easier, the package can be installed
-          via the distribution's package manager, if applicable, and used on
-          the host instead of on the LFS system. This can prevent the need for
-          downloading more tarballs onto the LFS system for now.
+          The use of the standard location may not work on some scenarios:
 @y
-          UEFI ファームウェアの中には、極めてまれな例として、標準的な EFI パスを無視するものがあります。
-          そのようなシステムというのは、Lenovo ThinkPads とか HP デスクトップ/ノートパソコンに見られる、かなり古いものです。
-          ブートエントリがファームウェアセットアップ時にない場合、BLFS パッケージ <ulink
-          url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> をインストールして UEFI 向けのブートエントリを生成しないといけないかもしれません。
-          簡易な方法として、ホストディストリビューションのパッケージマネージャーがそのパッケージに対応していて、それをインストールし、LFS システム上ではなくホストシステム上にて利用するということも考えられます。
-          これが可能であれば、LFS システムに別パッケージを導入しなくても済みます。
+          特定の条件のもとでは、標準的なパスがうまく動作しないことがあります。
 @z
 
 @x
-          First install the package, then mount the EFI variable file system if
-          it isn't already mounted:
+              Some UEFI firmware implementations disregard the standard
+              EFI path at all
 @y
-          はじめにそのパッケージをインストールします。
+              UEFI ファームウェアの中には標準的な EFI パスを完全に無視する実装が存在しています。
+@z
+
+@x
+              If a <quote>well-known</quote> boot loader (notably, the
+              Windows Boot Manager) exists in the same ESP, some UEFI
+              firmware implementations will boot that boot loader instead
+              of the one at the standard path
+@y
+              <quote>有名な</quote>ブートローダー (特に Windows ブートマネージャー) が同一の EPS 内にある場合、UEFI ファームウェアによっては、標準的なパス上にはないブートローダーを代わりに起動するものがあります。
+@z
+
+@x
+              With a multi-boot configuration, the other operating systems
+              may overwrite the file at the standard EFI path (especially,
+              during a system update) and break the LFS grub installation
+@y
+              マルチブートの設定において、一方のオペレーティングシステムが、標準の EFI パス上にあるファイルを (特にシステムアップデートの際に) 上書きすることがあります。
+              これが起きると、LFS の grub インストールに支障が起きる可能性があります。
+@z
+
+@x
+          In those scenarios, you will need to install the BLFS package <ulink
+          url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> to create
+          a boot entry for UEFI.  First install the package, then mount the
+          EFI variable file system if it isn't already mounted:
+@y
+          上のような状況の場合、UEFI 向けのブートエントリを生成するために、BLFS パッケージである <ulink
+          url="&blfs-book;postlfs/efibootmgr.html">efibootmgr</ulink> をインストールすることが必要になるかもしれません。
+          その場合は、はじめにそのパッケージをインストールします。
           そしてファイルシステムのマウントをまだ行っていないのであれば、EFI 変数を使ってファイルシステムをマウントします。
 @z
 
 @x
-          Now create a boot entry for the EFI:
+          Now install GRUB into a LFS-specific location and add an
+          entry labeled <quote>LFS</quote> for the EFI:
 @y
-          そして EFI 向けのブートエントリを生成します。
+          LFS 固有のディレクトリに GRUB をインストール、EFI 向けに<quote>LFS</quote>と命名したエントリを追加します。
 @z
 
 @x
-          The <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal>
-          drive should be the device node for the disk where the ESP exists. The
-          <replaceable>&lt;y&gt;</replaceable> partition number should match
-          the number of the ESP. If the ESP is on
-          <literal>/dev/sda2</literal>, then the partition number would be
-          <literal>2</literal>. If you are using 32-bit UEFI, replace
-          <replaceable>&lt;X64&gt;</replaceable> with <literal>IA32</literal>.
+          The <command>efibootmgr -B</command> command removes the boot
+          entry from a previous LFS installation (if one exists).
+          You may replace <replaceable>LFS</replaceable> with another
+          identifer if you are installing multiple LFS systems on the
+          machine and you want to keep their boot loaders independent.
 @y
-          <literal>/dev/sd<replaceable>&lt;x&gt;</replaceable></literal> の部分は ESP が存在している場所となるよう適切に記述してください。
-          またパーティション番号 <replaceable>&lt;y&gt;</replaceable> は、ESP の番号に合わせてください。
-          ESP を <literal>/dev/sda2</literal> にしている場合、パーティション番号は <literal>2</literal> となります。
-          32 ビット UEFI の設定時は <replaceable>&lt;X64&gt;</replaceable> の部分を <literal>IA32</literal> に置き換えてください。
+          <command>efibootmgr -B</command> コマンドを実行すると、前回の LFS インストール (それが存在する場合) におけるブートエントリを削除します。
+          複数の LFS システムを同一マシン上にインストールしている場合は、<replaceable>LFS</replaceable> の部分を適切に書き換えてください。
+          そうしてブートローダーを個々に維持するようにしてください。
 @z
 
 @x
-          Some (broken) firmware may require additional parameters
-          for <command>efibootmgr</command>, like
+          Some (broken) firmware may require invoking the
+          <command>efibootmgr -c</command> command directly because those
+          firmware implementations need additional parameters those
+          <command>grub-install</command> does not pass, like
           <parameter>--full-dev-path</parameter> or
           <parameter>-e 1 -E</parameter>.  Read the man page
           <ulink role='man' url='&man;efibootmgr.8'>efibootmgr(8)</ulink>
-          for details.
+          for how to use the <command>efibootmgr -c</command> command.
+          It may be easier to append
+          <literal>--debug |&amp; efibootmgr</literal> to show the
+          <command>efibootmgr -c</command> command invoked by
+          <command>grub-install</command> and then edit it.  Remember to
+          run the <command>efibootmgr -B</command> command again to remove
+          the entry created by grub before running the edited
+          <command>efibootmgr -c</command> command.
 @y
-          (不具合のある) ファームウェアでは <command>efibootmgr</command> に対してさらなるパラメーターが必要になる場合があります。
-          たとえば <parameter>--full-dev-path</parameter> や <parameter>-e 1 -E</parameter> といったものです。
-          詳しくは man ページ <ulink
+          (不具合のある) ファームウェアでは <command>efibootmgr -c</command> コマンドの直接実行を必要とするものがあります。
+          そういったファームウェアの実装においては <command>grub-install</command> からは受け渡されないパラメーターを追加で指定する必要があるためです。
+          そのパラメーターとはたとえば <parameter>--full-dev-path</parameter> や <parameter>-e 1 -E</parameter> といったものです。
+          <command>efibootmgr -c</command> コマンドの実行方法については man ページ <ulink
           role='man' url='&man;efibootmgr.8'>efibootmgr(8)</ulink> を参照してください。
+          <command>grub-install</command> コマンドから呼び出される <command>efibootmgr -c</command> コマンドがどのようなものかは、<literal>--debug |&amp; efibootmgr</literal> を追加すれば分かります。
+          これを行えば編集に役立ちます。
+          編集した <command>efibootmgr -c</command> コマンドを実行するにあたっては、事前に <command>efibootmgr -B</command> コマンドを実行して、grub が生成したエントリを削除しておくことを忘れないでください。
 @z
 
 @x

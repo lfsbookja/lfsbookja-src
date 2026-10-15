@@ -38,6 +38,80 @@
 @z
 
 @x
+      <para>2026-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to expat-2.9.0 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6039">#6039</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grub-2.16. Fixes
+          <ulink url="&lfs-ticket-root;6038">#6038</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20261009. Addresses
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.2.10. Fixes
+          <ulink url="&lfs-ticket-root;6037">#6037</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to markupsafe-3.0.4. Fixes
+          <ulink url="&lfs-ticket-root;6036">#6036</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-3.0.8. Fixes
+          <ulink url="&lfs-ticket-root;6045">#6045</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-3.54.0. Fixes
+          <ulink url="&lfs-ticket-root;6047">#6047</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.2.1178 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6048">#6048</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - expat-2.9.0 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6039">#6039</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grub-2.16 へのアップデート。
+          <ulink url="&lfs-ticket-root;6038">#6038</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20261009 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-7.2.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;6037">#6037</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - markupsafe-3.0.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;6036">#6036</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-3.0.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;6045">#6045</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sqlite-3.54.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;6047">#6047</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.2.1178 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6048">#6048</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-10-02</para>
       <itemizedlist>
         <listitem>
