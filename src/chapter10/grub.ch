@@ -430,7 +430,7 @@
           The <command>efibootmgr -B</command> command removes the boot
           entry from a previous LFS installation (if one exists).
           You may replace <replaceable>LFS</replaceable> with another
-          identifer if you are installing multiple LFS systems on the
+          identifier if you are installing multiple LFS systems on the
           machine and you want to keep their boot loaders independent.
 @y
           <command>efibootmgr -B</command> コマンドを実行すると、前回の LFS インストール (それが存在する場合) におけるブートエントリを削除します。
