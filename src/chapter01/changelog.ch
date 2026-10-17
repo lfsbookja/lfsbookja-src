@@ -37,6 +37,24 @@
     <title>変更履歴</title>
 @z
 
+@x revision='sysv'
+      <para>2026-10-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[zeckma] - Update to sysklogd-2.8.0. Fixes
+          <ulink url="&lfs-ticket-root;6052">#6052</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-10-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[zeckma] - sysklogd-2.8.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;6052">#6052</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x
       <para>2026-10-15</para>
       <itemizedlist>

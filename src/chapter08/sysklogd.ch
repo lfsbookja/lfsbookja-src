@@ -77,14 +77,22 @@
 
 @x
       <segtitle>Installed program</segtitle>
+      <segtitle>Installed library</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
         <seg>syslogd</seg>
+        <seg>libsyslog.so</seg>
+        <seg>/usr/include/syslog</seg>
 @y
         <seg>syslogd</seg>
+        <seg>libsyslog.so</seg>
+        <seg>/usr/include/syslog</seg>
 @z
 
 @x
