@@ -95,13 +95,11 @@
 @z
 
 @x
-    <para>Two tests, <literal>test_urllib2</literal> and
-    <literal>test_urllibnet</literal>, are known to fail because name
-    resolution is not configured in the incomplete LFS environment.</para>
+    <para>Two tests, <literal>test_os2</literal> and
+    <literal>test_httplib</literal>, are known to fail.</para> 
 @y
     <para>
-    <literal>test_urllib2</literal>、<literal>test_urllibnet</literal> という 2 つのテストが失敗します。
-    これは現時点での不完全な LFS 環境においては名前解決が適切に設定されていないためです。
+    <literal>test_os2</literal>、<literal>test_httplib</literal> という 2 つのテストが失敗します。
     </para>
 @z
 

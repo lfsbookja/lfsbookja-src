@@ -37,6 +37,112 @@
     <title>変更履歴</title>
 @z
 
+@x
+      <para>2026-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to elfutils-0.197. Fixes
+          <ulink url="&lfs-ticket-root;6055">#6055</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iana-etc-20261015. Addresses
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-7.3.0. Fixes
+          <ulink url="&lfs-ticket-root;6057">#6057</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.3. Fixes
+          <ulink url="&lfs-ticket-root;6050">#6050</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-6.20. Fixes
+          <ulink url="&lfs-ticket-root;6058">#6058</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to openssl-4.1.0. Fixes
+          <ulink url="&lfs-ticket-root;6061">#6061</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkgconf-3.0.10. Fixes
+          <ulink url="&lfs-ticket-root;6051">#6051</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.15.1. Fixes
+          <ulink url="&lfs-ticket-root;6046">#6046</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to setuptools-84.2.1 (Python module). Fixes
+          <ulink url="&lfs-ticket-root;6056">#6056</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-3.54.1. Fixes
+          <ulink url="&lfs-ticket-root;6053">#6053</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-262.1. Fixes
+          <ulink url="&lfs-ticket-root;6054">#6054</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.2.1225 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6060">#6060</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-10-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - elfutils-0.197 へのアップデート。
+          <ulink url="&lfs-ticket-root;6055">#6055</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iana-etc-20261015 へのアップデート。
+          <ulink url="&lfs-ticket-root;5006">#5006</ulink> にて言及。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-7.3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;6057">#6057</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-7.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;6050">#6050</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-6.20 へのアップデート。
+          <ulink url="&lfs-ticket-root;6058">#6058</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openssl-4.1.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;6061">#6061</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkgconf-3.0.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;6051">#6051</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python3-3.15.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;6046">#6046</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - setuptools-84.2.1 (Python モジュール) へのアップデート。
+          <ulink url="&lfs-ticket-root;6056">#6056</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sqlite-3.54.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;6053">#6053</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-262.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;6054">#6054</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - vim-9.2.1225 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6060">#6060</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x revision='sysv'
       <para>2026-10-16</para>
       <itemizedlist>
