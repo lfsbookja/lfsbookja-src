@@ -38,6 +38,74 @@
 @z
 
 @x
+      <para>2026-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to flit_core-4.2.0 (Python module). Fixes
+          <ulink url="&lfs-ticket-root;6063">#6063</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-34.3. Fixes
+          <ulink url="&lfs-ticket-root;6065">#6065</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-7.3.1. Fixes
+          <ulink url="&lfs-ticket-root;6066">#6066</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata2026f. Fixes
+          <ulink url="&lfs-ticket-root;6064">#6064</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - flit_core-4.2.0 (Python モジュール) へのアップデート。
+          <ulink url="&lfs-ticket-root;6063">#6063</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kmod-34.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;6065">#6065</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-7.3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;6066">#6066</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata2026f へのアップデート。
+          <ulink url="&lfs-ticket-root;6064">#6064</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2026-10-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Python3-3.15.2 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6059">#6059</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to patch-2.8.1 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6062">#6062</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-10-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Python3-3.15.2 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6059">#6059</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - patch-2.8.1 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6062">#6062</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-10-25</para>
       <itemizedlist>
         <listitem>
@@ -305,7 +373,7 @@
           <ulink url="&lfs-ticket-root;6030">#6030</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to tzdata20263. Fixes
+          <para>[bdubbs] - Update to tzdata2026e. Fixes
           <ulink url="&lfs-ticket-root;6035">#6035</ulink>.</para>
         </listitem>
         <listitem>
@@ -365,7 +433,7 @@
           <ulink url="&lfs-ticket-root;6030">#6030</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - tzdata20263 へのアップデート。
+          <para>[bdubbs] - tzdata2026e へのアップデート。
           <ulink url="&lfs-ticket-root;6035">#6035</ulink> を Fix に。</para>
         </listitem>
         <listitem>
