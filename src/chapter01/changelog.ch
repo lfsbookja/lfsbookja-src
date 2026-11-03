@@ -38,6 +38,24 @@
 @z
 
 @x
+      <para>2026-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - Update to expat-2.10.0 (Security Update). Fixes
+          <ulink url="&lfs-ticket-root;6067">#6067</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - expat-2.10.0 (セキュリティアップデート) へのアップデート。
+          <ulink url="&lfs-ticket-root;6067">#6067</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-11-01</para>
       <itemizedlist>
         <listitem>
