@@ -64,7 +64,7 @@
     url='&man;tanh.3'>tanh(3)</ulink> function to crash
     on some old x86_64 processors, one causing some packages using gnulib
     to hang indefinitely at runtime, some causing building or testing
-    failures with parallel <command>make</command> jobs, and six security
+    failures with parallel <command>make</command> jobs, and seven security
     vulnerabilities (some of them may not really affect the temporary build
     but the fixes make no harm anyway):</para>
 @y
@@ -72,7 +72,9 @@
     glibc 2.44 のリリース以降に認識されている不具合に対処します。
     その不具合とは <ulink role='man'
     url='&man;tanh.3'>tanh(3)</ulink> 関数が古い x86_64 プロセッサー上においてクラッシュするものであり、また gnulib を利用するパッケージの中には、実行時に永久にハングしてしまうものがあります。
-    さらに <command>make</command> による並行ジョブを行うとビルド時やテスト時に失敗し、また 6 つのセキュリティぜい弱性も含んでいます (この中のものすべてが、この時点の一時的ビルドには必要のないものかもしれません。ただし修正することに害はないため適用するものです)。
+    さらに <command>make</command> による並行ジョブを行うとビルド時やテスト時に失敗し、また 7 つのセキュリティぜい弱性も含んでいます
+    (この中のものすべてが、この時点の一時的ビルドには必要のないものかもしれません。
+    ただし修正することに害はないため適用するものです)。
      </para>
 @z
 
@@ -205,6 +207,15 @@
 @z
 
 @x
+    <para>Fix a hard coded path to the executable loader in the
+    <command>ldd</command> script:</para>
+@y
+    <para>
+    <command>ldd</command> スクリプト内にある実行可能なローダーへのパスがハードコーディングされているので、これを修正します。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
@@ -248,15 +259,6 @@
           class="directory">$LFS</filename> とします。
           これは <xref linkend="ch-tools-chroot"/> に入ってからはルートディレクトリとなります。
           </para>
-@z
-
-@x
-    <para>Fix a hard coded path to the executable loader in the
-    <command>ldd</command> script:</para>
-@y
-    <para>
-    <command>ldd</command> スクリプト内にある実行可能なローダーへのパスがハードコーディングされているので、これを修正します。
-    </para>
 @z
 
 @x

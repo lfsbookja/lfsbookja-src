@@ -38,6 +38,35 @@
 @z
 
 @x
+      <para>2026-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - Update to zlib-1.4 (Security Update). Fixes <ulink
+          url="&lfs-ticket-root;6069">#6069</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - Update glibc upstream fixes patch (Security
+          Update). Fixes <ulink
+          url="&lfs-ticket-root;6070">#6070</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2026-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - zlib-1.4 (セキュリティアップデート) へのアップデート。
+          <ulink
+          url="&lfs-ticket-root;6069">#6069</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[xry111] - glibc upstream fixes patch (セキュリティアップデート) へのアップデート。
+          <ulink
+          url="&lfs-ticket-root;6070">#6070</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2026-11-02</para>
       <itemizedlist>
         <listitem>

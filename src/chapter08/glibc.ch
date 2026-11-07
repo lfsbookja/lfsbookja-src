@@ -40,14 +40,14 @@
     url='&man;tanh.3'>tanh(3)</ulink> function to crash
     on some old x86_64 processors, one causing some packages using gnulib
     to hang indefinitely at runtime, some causing building or testing
-    failures with parallel <command>make</command> jobs, and six security
+    failures with parallel <command>make</command> jobs, and seven security
     vulnerabilities:</para>
 @y
     <para>
     glibc 2.44 のリリース以降に認識されている不具合に対処します。
     その不具合とは <ulink role='man'
     url='&man;tanh.3'>tanh(3)</ulink> 関数が古い x86_64 プロセッサー上においてクラッシュするものであり、また gnulib を利用するパッケージの中には、実行時に永久にハングしてしまうものがあります。
-    さらに <command>make</command> による並行ジョブを行うとビルド時やテスト時に失敗し、また 6 つのセキュリティぜい弱性も含んでいます。
+    さらに <command>make</command> による並行ジョブを行うとビルド時やテスト時に失敗し、また 7 つのセキュリティぜい弱性も含んでいます。
      </para>
 @z
 
@@ -287,6 +287,15 @@
 @z
 
 @x
+    <para>Fix a hardcoded path to the executable loader in the
+    <command>ldd</command> script:</para>
+@y
+    <para>
+    <command>ldd</command> スクリプト内にある実行可能なローダーへのパスがハードコーディングされているので、これを修正します。
+    </para>
+@z
+
+@x
         If upgrading Glibc to a new minor version (for example, from
         Glibc-2.36 to Glibc-&glibc-version;) on a running LFS system, you
         need to take some extra precautions to avoid breaking the system:
@@ -376,13 +385,11 @@
 @z
 
 @x
-        Then continue to run the <command>make install</command> command,
-        the <command>sed</command> command against
-        <filename>/usr/bin/ldd</filename>, and the commands to install
-        the locales.  Once they are finished, reboot the system
-        immediately.
+        Then continue to run the <command>make install</command>
+        command and the commands to install the locales.  Once they are
+        finished, reboot the system immediately.
 @y
-        <command>make install</command> コマンド、<filename>/usr/bin/ldd</filename> に対する <command>sed</command> コマンド、ロケールをインストールするコマンドを順に実行します。
+        <command>make install</command> コマンドとロケールをインストールするコマンドを順に実行します。
         ここまで行ったら即座にシステムを再起動してください。
 @z
 
@@ -401,15 +408,6 @@
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
-@z
-
-@x
-    <para>Fix a hardcoded path to the executable loader in the
-    <command>ldd</command> script:</para>
-@y
-    <para>
-    <command>ldd</command> スクリプト内にある実行可能なローダーへのパスがハードコーディングされているので、これを修正します。
-    </para>
 @z
 
 @x
